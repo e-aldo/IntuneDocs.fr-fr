@@ -1,17 +1,33 @@
 ---
-title: Contacter le support par téléphone pour Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
+# required metadata
+
+title: Contacter le support par téléphone | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Contacter le support par téléphone pour Microsoft Intune
 
-## Les numéros de téléphone et les heures de bureau sont répertoriés dans le tableau suivant.
+## Numéros de téléphone et horaires de bureau
 
 |Pays/Région|Horaires du support technique|Horaires de bureau|Langues prises en charge|Numéros de téléphone gratuits|Numéros de téléphone locaux|
 |------------------|---------------------------|------------------|-----------------------|---------------------------|-----------------------|
@@ -107,6 +123,6 @@ author: Nbigman
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 
