@@ -159,7 +159,7 @@ Utilisez l’option **Stratégie d’importation Wi-Fi Windows** pour importer u
 
     -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
 
-    -   **Pour fermer la boîte de dialogue sans la déployer** : cliquez sur **Annuler**.
+    -   **Pour fermer la boîte de dialogue sans la déployer**, cliquez sur **Annuler**.
 
 
 Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'ensemble** de l'espace de travail **Stratégie** , les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le Tableau de bord contient un récapitulatif de l'état.

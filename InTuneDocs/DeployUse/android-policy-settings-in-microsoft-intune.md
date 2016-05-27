@@ -107,7 +107,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 |**Autoriser le stockage amovible**|Autorise l’appareil à utiliser du stockage amovible, comme une carte SD.|Non|Oui|
 |**Autoriser le Wi-Fi**|Autorise l’utilisation des fonctionnalités Wi-Fi de l’appareil.|Non|Oui|
 |**Autoriser la connexion Wi-Fi**|Autorise l’utilisation de la connexion Wi-Fi sur l’appareil.|Non|Oui|
-|**Autoriser la géolocalisation**|Permet à l'appareil d'utiliser les informations d'emplacement.|Non|Oui|
+|**Autoriser la géolocalisation**|Autorise l’appareil à utiliser les informations d’emplacement.|Non|Oui|
 |**Autoriser NFC**|Autorise les opérations qui utilisent la communication en champ proche si l’appareil la prend en charge.|Non|Oui|
 |**Autoriser Bluetooth**|Autorise l’utilisation de la fonction Bluetooth sur l’appareil.|Non|Oui|
 |**Autoriser l'extinction**|Autorise l’utilisateur à mettre l’appareil hors tension.<br /><br />Si ce paramètre est désactivé, le paramètre **Nombre d’échecs de connexion successifs autorisé avant réinitialisation de l’appareil** pour les appareils Samsung KNOX ne fonctionne pas.|Non|Oui|
@@ -131,7 +131,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 |**Autoriser YouTube**|Autoriser l’utilisation de YouTube sur l’appareil.|Non|Oui|
 
 ### Paramètres des applications conformes et non conformes
-Dans la liste **Applications conformes &amp; non conformes**, spécifiez une liste d’applications conformes ou non conformes à l’aide des informations suivantes :
+Dans la liste **Applications conformes &amp; non conformes**, spécifiez une liste d’applications conformes ou non conformes à l’aide des informations suivantes :
 
 > [!NOTE]
 > Une stratégie ne peut contenir qu'une liste d'applications conformes ou une liste d'applications non conformes. Vous ne pouvez pas spécifier les deux dans la même stratégie.

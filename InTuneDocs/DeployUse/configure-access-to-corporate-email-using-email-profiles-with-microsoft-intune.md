@@ -98,13 +98,13 @@ Comme le mot de passe n'est pas contenu dans le profil de messagerie, l'utilisat
 
 La nouvelle stratégie s'affiche sous le nœud **Stratégies de configuration** de l'espace de travail **Stratégie** .
 
-## Déploiement de la stratégie
+## Déployer la stratégie
 
-1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
+1.  Dans l’espace de travail **Stratégie** , sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
 
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
 
-    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
+    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes vers lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
 
     -   **Pour fermer la boîte de dialogue sans la déployer** : cliquez sur **Annuler**.
 

@@ -44,7 +44,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
    sur **Oui** pour permettre aux utilisateurs de créer des mots de passe simples,
    comme « **1234** » ou « **1111** ».
 
--  **Longueur minimale du mot de passe :**
+-  **Longueur minimale du mot de passe :**
   Spécifiez le nombre minimal de chiffres ou de caractères
   que le mot de passe de l’utilisateur doit contenir.
 - **Type de mot de passe requis :** spécifiez si les utilisateurs doivent créer

@@ -138,9 +138,9 @@ Vous déployez des profils de certificat de la même façon que vous déployez u
 
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
 
-    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
+    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes vers lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
 
-    -   **Pour fermer la boîte de dialogue sans la déployer**, cliquez sur **Annuler**.
+    -   **Pour fermer la boîte de dialogue sans la déployer** : cliquez sur **Annuler**.
 
 Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’autres informations sur le déploiement dans la partie inférieure de la liste de stratégies.
 ###  Étapes suivantes

@@ -1,20 +1,26 @@
-# [Understand and Explore](introduction-to-microsoft-intune.md)
-## [Introduction to Intune](introduction-to-microsoft-intune.md)
-## [Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)
-### [Sign in or sign up for a 30-day evaluation](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
-### [Add users](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
-### [Create groups to organize users & devices](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [Create policies and publish an app](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [Enroll mobile devices & install an app](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
-### [Other options and extras](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [Next steps](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-<!--- ## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
-### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [Set up email access for iOS devices](set-up-email-access-for-ios-devices-using-microsoft-intune.md)--->
-## [Common scenarios](common-ways-to-use-intune.md)
+# [Comprendre et explorer](introduction-to-microsoft-intune.md)
+## [Présentation d'Intune](introduction-to-microsoft-intune.md)
+## [Guide d'évaluation de Microsoft Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
+### [Se connecter ou s’inscrire à une évaluation de 30 jours](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
+### [Ajouter des utilisateurs](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
+### [Créer des groupes pour organiser les utilisateurs et les appareils](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
+### [créer des stratégies et publier une application](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
+### [Inscrire des appareils mobiles et installer une application](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
+### [Options et fonctionnalités supplémentaires](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
+### [Étapes suivantes](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [Tâches courantes pour l’évaluation d’Intune](common-microsoft-intune-evaluation-tasks.md)
+### [Démarrer une version d’évaluation et déployer une stratégie de code confidentiel iOS](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
+### [Configurer l’accès à la messagerie pour les appareils iOS](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
+## [Scénarios courants](common-ways-to-use-intune.md)
+
 <!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
 
-# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Mise en route](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
-# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Déployer et utiliser](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Dépannage](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+
+
+<!--HONumber=May16_HO1-->
+
+

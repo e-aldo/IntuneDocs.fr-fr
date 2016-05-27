@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Paramètres de stratégie de gestion des applications mobiles Android dans Microsoft Intune
 Vous pouvez [configurer](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) les paramètres décrits ci-dessous pour une stratégie de gestion des applications mobiles dans le panneau **Paramètres** du portail Azure.
-Il existe deux catégories de paramètres de stratégie : Réadressage des données et Accès :
+Il existe deux catégories de paramètres de stratégie : Réadressage des données et Accès.
 
 ##  Paramètres de réadressage des données
 On utilise le terme **Applications gérées par la stratégie** pour faire référence aux applications qui sont configurées avec des stratégies de gestion des applications mobiles.
@@ -52,8 +52,8 @@ On utilise le terme **Applications gérées par la stratégie** pour faire réf�
   **Valeur par défaut = Oui**
 - **Restreindre les opérations couper, copier et coller avec d’autres applications :** spécifiez quand les opérations Couper, Copier et Coller doivent être limitées. Choisissez parmi :
   -   **Bloqué** : interdire les opérations Couper, Copier et Coller entre les applications gérées par la stratégie.
-  -   **Applications gérées par la stratégie** : autoriser les opérations Couper, Copier et Coller seulement entre les applications gérées par la stratégie.
-  -   **Applications gérées par la stratégie avec Coller dans** : autoriser les opérations Couper et Copier entre les applications gérées par la stratégie. Autorisez le collage dans cette application des données coupées ou copiées depuis n’importe quelle application.
+  -   **Applications gérées par la stratégie** : autoriser uniquement les opérations Couper, Copier et Coller entre les applications gérées par la stratégie.
+  -   **Applications gérées par la stratégie avec Coller dans** : autoriser à couper et copier entre les applications gérées par la stratégie. Autoriser le collage dans cette application des données coupées ou copiées à partir de n’importe quelle application.
   -   **N’importe quelle application** : aucune restriction pour les opérations Couper, Copier et Coller entre toutes les applications.
 
     **Valeur par défaut = Applications gérées par la stratégie avec Coller dans**
@@ -84,7 +84,7 @@ On utilise le terme **Applications gérées par la stratégie** pour faire réf�
 - **Exiger des informations d’identification d’entreprise pour l’accès :** choisissez **Oui** pour exiger des informations d’identification d’entreprise au lieu d’un code confidentiel pour accéder à l’application.  Si vous affectez la valeur **Oui** à ce paramètre, il se substitue à l’obligation de recourir à un code confidentiel ou à un ID tactile.  L’utilisateur est invité à fournir ses informations d’identification d’entreprise.
 
   **Valeur par défaut = Non**
-- **Bloquer l’exécution des applications gérées sur les appareils jailbroken ou rootés :** choisissez **Oui** pour bloquer l’exécution des applications sur les appareils jailbroken ou rootés. L’utilisateur peut encore utiliser les applications pour des tâches personnelles, mais il doit utiliser un autre appareil pour le travail.
+- **Bloquer l’exécution des applications gérées sur les appareils jailbroken ou rootés :** choisissez **Oui** pour empêcher les applications de s’exécuter sur les appareils jailbroken ou rootés. L’utilisateur peut encore utiliser les applications pour des tâches personnelles, mais il doit utiliser un autre appareil pour le travail.
 
   **Valeur par défaut = Oui**
 - **Revérifier les exigences d’accès après (minutes)**-   **Délai :** durée (en minutes) au bout de laquelle les conditions d’accès à l’application sont revérifiées.

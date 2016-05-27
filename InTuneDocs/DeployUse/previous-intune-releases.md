@@ -55,10 +55,10 @@ ms.suite: ems
 |Android |Pris en charge|
 |iOS |Pris en charge|
 |Windows 10 Mobile |Pris en charge uniquement si le téléphone dispose d’un code secret|
-|Windows 10 Desktop |Non prise en charge|
+|Windows 10 Desktop |Non pris en charge|
 |Windows Phone 8.1 |Pris en charge uniquement si le téléphone dispose d’un code secret|
-|Windows Phone 8.0 |Non prise en charge|
-|PC (Windows 8.0 et versions antérieures) |Non prise en charge|
+|Windows Phone 8.0 |Non pris en charge|
+|PC (Windows 8.0 et versions antérieures) |Non pris en charge|
 |PC (Windows 8.1) |Non pris en charge|
 
 ### Nouveautés au 10 mars 2016

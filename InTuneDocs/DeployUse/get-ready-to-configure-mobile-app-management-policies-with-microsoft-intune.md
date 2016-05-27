@@ -29,7 +29,7 @@ ms.suite: ems
 Cette rubrique décrit ce que vous devez faire avant de pouvoir créer des stratégies de gestion des applications mobiles (GAM) dans le portail Azure.
 Si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer une stratégie GAM qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
-> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Le portail Azure est la nouvelle console d’administration pour créer des stratégies GAM.
+> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie GAM. Le portail Azure est la nouvelle console d’administration pour créer des stratégies GAM.
 
 ##  Plateformes prises en charge
 - iOS 8.1 ou version ultérieure

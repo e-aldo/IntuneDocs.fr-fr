@@ -54,7 +54,7 @@ Pour inscrire un appareil Mac OS X
     ![management-profile-verified](./media/4-macosx-enroll-done.png) 
 
 ### Voir aussi
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Utilisation de votre appareil iOS ou Mac OS X avec Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 <!--HONumber=May16_HO1-->
 

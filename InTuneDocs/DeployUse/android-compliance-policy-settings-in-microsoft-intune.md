@@ -52,7 +52,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
 
 - **Minutes d’inactivité avant demande du mot de passe :** spécifie la durée d’inactivité au terme de laquelle l’utilisateur doit réentrer son mot de passe.
 
-- **Expiration du mot de passe (jours) :** choisissez le nombre de jours avant que le mot de passe de l’utilisateur expire
+- **Expiration du mot de passe (jours) :** sélectionnez le nombre de jours avant que le mot de passe de l’utilisateur expire
   et qu’il doive en créer un autre.
 
 - **Mémoriser l’historique des mots de passe :** utilisez ce paramètre conjointement avec le paramètre **Empêcher la réutilisation des mots de passe précédents** pour empêcher l’utilisateur de
@@ -78,7 +78,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
 
 ## Paramètres de propriétés d’appareils
 - **Système d’exploitation minimal requis :** quand un appareil ne dispose pas de la version de système d’exploitation minimale
-  du système d’exploitation, il est considéré comme étant non conforme.
+  requise, il est signalé comme étant non conforme.
   Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
 - **Version maximale autorisée du système d’exploitation :** quand un appareil utilise une
