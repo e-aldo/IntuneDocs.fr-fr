@@ -2,6 +2,7 @@
 # [Mise en route](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Déployer et utiliser](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Développer et personnaliser des applications](/intune/develop/intune-app-sdk)
 
 # [Dépannage](how-to-get-support-for-microsoft-intune.md)
 ## [Comment obtenir un support technique](how-to-get-support-for-microsoft-intune.md)
@@ -15,6 +16,6 @@
 ## [Résoudre les problèmes de profil de messagerie](Troubleshoot-email-profiles-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

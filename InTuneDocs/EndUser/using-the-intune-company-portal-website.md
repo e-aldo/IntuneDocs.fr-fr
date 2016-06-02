@@ -52,9 +52,9 @@ Sur le **site web Portail d’entreprise** , vous pouvez faire à peu près les 
 
 - [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Utilisation de votre appareil Android avec Intune](using-your-windows-device-with-intune.md)
+- [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

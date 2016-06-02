@@ -63,11 +63,12 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 - [Envoyer les erreurs d’inscription à votre administrateur informatique](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [L'appareil n'est pas équipé de la version minimale requise du système d'exploitation](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [L’appareil n’est pas conforme à la version maximale du système d’exploitation](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [Votre appareil est rooté et vous ne pouvez pas vous connecter](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Un certificat obligatoire est manquant sur votre appareil](your-device-is-missing-a-required-certificate-android.md)
+- [Votre appareil est rooté et vous ne pouvez pas vous connecter](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [Un certificat obligatoire est manquant sur votre appareil](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO1-->
 
 
