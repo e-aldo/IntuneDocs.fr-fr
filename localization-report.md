@@ -4922,9 +4922,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr.fr-fr/blob/8e2ea029533391f6eb1b3069138537d1486b0f75/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
-* Current Handback File: [device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/8c6f8aa115726d81fac305edf2ad3c57ec7b2589/ol-handback/Microsoft/IntuneDocs-pr.fr-fr/master/device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.fr-fr.xlf)
-* Current Handback Datetime: 2016-05-27 00:17:08
+* Current Target File: [InTuneDocs\EndUser\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md](https://github.com/Microsoft/IntuneDocs-pr.fr-fr/blob/808ff0033a4b39537e6cf6fbfcc9ebb7a1fd5771/InTuneDocs/EndUser/device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+* Current Handback File: [device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/31c21150b35c063d7d6850b9d4eb80904c3b96b5/ol-handback/Microsoft/IntuneDocs-pr.fr-fr/master/device-doesnt-comply-with-the-maximum-operating-system-version-ios.83f9ec954240786563f2e48a7f354385d1a9cf01.fr-fr.xlf)
+* Current Handback Datetime: 2016-06-02 22:44:17
 * [Back to Top](#report-top)
 
 ##### <a name='31f562652d4c865a3f533cec05bf0214dda40c2e279'></a> Source: [InTuneDocs\EndUser\device-doesnt-have-antimalware-software-enabled-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/83f029c97cf34b6c96c6b2ef16cc65ab839c1d55/InTuneDocs/EndUser/device-doesnt-have-antimalware-software-enabled-windows.md)
