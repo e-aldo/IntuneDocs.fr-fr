@@ -1,42 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e64adaa5eaaf721cc519806856ac5a301f936e8/InTuneDocs/DeployUse/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#599e9e78474011076c5c66d399dafffeaeac8dc419)
- [InTuneDocs\GetStarted\choose-how-to-enroll-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9bdf751f0525e56b06355ef9413b1f9c31dca1c7/InTuneDocs/GetStarted/choose-how-to-enroll-devices.md) | HandedOffSuccess | [Details](#b9213a6a62379a531b87f63eeedae0fe20e6e2d0487)
 
 ## Item Details
-##### <a name='599e9e78474011076c5c66d399dafffeaeac8dc419'></a> Source: [InTuneDocs\DeployUse\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9e64adaa5eaaf721cc519806856ac5a301f936e8/InTuneDocs/DeployUse/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/a7d8b34fdb8d15cf829a4367c6b31eafaf1cc703/ol-handoff/Microsoft/IntuneDocs-pr.fr-fr/master/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.fr-fr.xlf)
-* Handoff Datetime: 2016-06-06 23:27:21
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.fr-fr/blob/8e2ea029533391f6eb1b3069138537d1486b0f75/InTuneDocs/DeployUse/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
-* Current Handback File: [configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/8c6f8aa115726d81fac305edf2ad3c57ec7b2589/ol-handback/Microsoft/IntuneDocs-pr.fr-fr/master/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.fr-fr.xlf)
-* Current Handback Datetime: 2016-05-27 00:17:08
-* [Back to Top](#report-top)
-
-##### <a name='b9213a6a62379a531b87f63eeedae0fe20e6e2d0487'></a> Source: [InTuneDocs\GetStarted\choose-how-to-enroll-devices.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9bdf751f0525e56b06355ef9413b1f9c31dca1c7/InTuneDocs/GetStarted/choose-how-to-enroll-devices.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/a7d8b34fdb8d15cf829a4367c6b31eafaf1cc703/ol-handoff/Microsoft/IntuneDocs-pr.fr-fr/master/choose-how-to-enroll-devices.9709d9a703247aec224c0d9748801283759de71d.fr-fr.xlf)
-* Handoff Datetime: 2016-06-06 23:27:21
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
