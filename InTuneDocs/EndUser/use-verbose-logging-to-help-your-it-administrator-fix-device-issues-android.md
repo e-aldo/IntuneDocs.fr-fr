@@ -18,7 +18,7 @@ ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,6 +35,6 @@ Pour activer ou désactiver la **Journalisation détaillée**, connectez-vous à
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
