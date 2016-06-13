@@ -36,15 +36,21 @@ Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareil
 
 -   Configurer l'accès aux données de l'entreprise
 
-Utilisez le compte de gestionnaire d’appareil uniquement pour les appareils qui ne recevront pas de courrier électronique ou sur lesquels aucune ouverture de session en tant qu’utilisateur spécifique ne sera effectuée. Les appareils gérés avec un compte de gestionnaire d’appareil ne peuvent pas être configurés avec l’accès conditionnel, car il s’agit également de scénarios basés sur l’utilisateur. Le directeur du magasin ne peut pas réinitialiser l'appareil à partir du portail d'entreprise.
 
-**Exemples de scénarios faisant intervenir un gestionnaire d'inscription d'appareil :**
-Un restaurant souhaite que son personnel de service utilise des tablettes et son personnel de cuisine des moniteurs de commande. Les employés n'ont jamais besoin d'accéder aux données de l'entreprise ni d'ouvrir de session en tant qu'utilisateur. L'administrateur Intune crée un compte de gestionnaire d'inscription d'appareil et inscrit les appareils d'entreprise à l'aide de ce compte. L'administrateur pourrait également donner les informations d'identification du gestionnaire d'inscription d'appareil au directeur du restaurant, puis lui permettre d'inscrire et de gérer les appareils.
+**Exemples de scénarios faisant intervenir un gestionnaire d’inscription d’appareil :** Un restaurant souhaite que son personnel de service utilise des tablettes et son personnel de cuisine des moniteurs de commande. Les employés n'ont jamais besoin d'accéder aux données de l'entreprise ni d'ouvrir de session en tant qu'utilisateur. L'administrateur Intune crée un compte de gestionnaire d'inscription d'appareil et inscrit les appareils d'entreprise à l'aide de ce compte. L'administrateur pourrait également donner les informations d'identification du gestionnaire d'inscription d'appareil au directeur du restaurant, puis lui permettre d'inscrire et de gérer les appareils.
 
 L'administrateur ou le directeur peuvent déployer des applications propres aux rôles sur les appareils du restaurant. Un administrateur peut également sélectionner un appareil dans la console Intune et le retirer de la gestion des appareils mobiles avec la console d'administration.
 
+Les appareils inscrits avec un compte de gestionnaire d’inscription d’appareil ont les restrictions suivantes :
+  - Aucun utilisateur spécifique, si bien que tous les appareils sont « sans utilisateur ». Par conséquent, pas d’accès aux e-mails ni aux données d’entreprise, même si un VPN, par exemple, pourrait fournir aux applications pour appareil un accès aux données
+  - Aucun accès conditionnel car il s’agit de scénarios par utilisateur
+  - Impossible de réinitialiser les appareils depuis le portail d’entreprise
+  - Aucune application du programme VPP (Volume Purchase Program) d’Apple en raison des exigences d’ID Apple par utilisateur pour la gestion des applications
+  - Ils ne peuvent pas également être inscrits avec Apple Configurator ni le programme d’inscription d’appareils Apple (appareils iOS)
+
 > [!NOTE]
 > Les comptes d’utilisateur de gestionnaire d’inscription d’appareil comptant plus de 20 appareils inscrits peuvent rencontrer des problèmes lors de l’utilisation de l’application Portail d’entreprise. Pour déployer des applications d’entreprise sur des appareils gérés avec le gestionnaire d’inscription d’appareil, déployez l’application Portail d’entreprise en tant qu’**Installation requise** sur le compte d’utilisateur du gestionnaire d’inscription d’appareil.
+> Pour améliorer les performances, l’affichage de l’application Portail d’entreprise sur un appareil DEM affiche uniquement les appareils locaux, et seulement s’il a été inscrit via l’application Portail d’entreprise. La gestion à distance d’autres appareils DEM est possible uniquement à partir de la console Intune.
 
 ## Créer des comptes de gestionnaire d’inscription d’appareil
 Les comptes de gestionnaire d'inscription d'appareil sont des comptes d'utilisateur autorisés à inscrire un grand nombre d'appareils d'entreprise. Seuls les utilisateurs existants dans la console Intune peuvent être gestionnaires d'inscription d'appareil.
@@ -90,6 +96,6 @@ La suppression d'un gestionnaire d'inscription d'appareil n'affecte pas les appa
 -   il existe toujours une relation entre le compte du gestionnaire d'inscription d'appareil supprimé et les appareils inscrits, mais aucun appareil supplémentaire ne peut être inscrit.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

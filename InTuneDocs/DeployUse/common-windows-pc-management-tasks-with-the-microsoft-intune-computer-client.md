@@ -56,7 +56,7 @@ Microsoft Intune Center est installé sur tous les ordinateurs gérés. Vous pou
 |**Remarques**|Remarque affichée pour les utilisateurs.<br /><br />Longueur maximale : 120 caractères|
 
 ### Gérer les paramètres des mises à jour logicielles
-Utilisez des stratégies pour configurer les paramètres que les ordinateurs gérés utilisent pour rechercher et télécharger des mises à jour logicielles publiées par Microsoft et d'autres parties. Pour plus d’informations, consultez [Maintenir des PC Windows à jour avec les mises à jour logicielles](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+Utilisez des stratégies pour configurer les paramètres que les ordinateurs gérés utilisent pour rechercher et télécharger des mises à jour logicielles publiées par Microsoft et d'autres parties. Pour plus d’informations, consultez [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
 ### Gérer les paramètres Endpoint Protection
 Utilisez des stratégies pour configurer les paramètres Endpoint Protection à déployer ensuite sur les ordinateurs gérés. Cela inclut les planifications de l'analyse, les actions à entreprendre lorsqu'un programme malveillant est détecté et bien plus encore. Pour plus d’informations, consultez [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
@@ -88,7 +88,7 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
 
 3.  Choisissez **Afficher le rapport** pour ouvrir le **Rapport de logiciels détectés** dans une nouvelle fenêtre.
 
-    Vous pouvez trier le rapport en fonction des différentes colonnes, telles que le **Nom**, l’**Éditeur** ou la **Catégorie** en sélectionnant chaque en-tête de colonne. Vous pouvez développer les mises à jour dans la liste pour afficher plus de détails (par exemple les ordinateurs sur lesquels elles sont installées) en cliquant sur la flèche directionnelle à côté de l'élément de liste.
+    Vous pouvez trier le rapport en fonction des différentes colonnes, telles que le **Nom**, l’**Éditeur** ou la **Catégorie** en sélectionnant chaque en-tête de colonne. Vous pouvez développer les mises à jour dans la liste pour afficher plus de détails (par exemple les ordinateurs sur lesquels elles sont installées) en choisissant la flèche directionnelle à côté de l’élément de liste.
 
 ### Pour actualiser les ressources de l'ordinateur pour vérifier qu'elles sont récentes
 
@@ -107,7 +107,7 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** (ou un autre groupe qui contient l’ordinateur que vous voulez redémarrer).
 
-2.  Sélectionnez un ou plusieurs ordinateurs, puis cliquez sur **Tâches à distance** &gt; **Redémarrer l’ordinateur**.
+2.  Sélectionnez un ou plusieurs ordinateurs, puis choisissez **Tâches à distance** &gt; **Redémarrer l’ordinateur**.
 
 3.  Pour afficher l’état des tâches, choisissez **Tâches à distance** dans le coin inférieur droit de la page.
 
@@ -117,7 +117,7 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** (ou un autre groupe qui contient l’ordinateur que vous voulez mettre hors service).
 
-2.  Sélectionnez les appareils que vous souhaitez mettre hors service, puis choisissez **Mettre hors service/Réinitialiser**.
+2.  Sélectionnez les appareils que vous souhaitez mettre hors service, puis choisissez **Mettre hors service/Réinitialiser**
 
 Pour réinscrire un ordinateur dans Intune, réinstallez le logiciel client sur l’ordinateur à l’aide des informations contenues dans la rubrique [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
@@ -139,8 +139,7 @@ Lorsque vous mettez hors service un ordinateur :
 
 -   Selon la façon dont ils sont configurés, les ordinateurs mis hors service peuvent continuer à recevoir des mises à jour à l'aide de Windows Server Update Services, Windows Update ou Microsoft Update.
 
-    > [!IMPORTANT]
-    > Si le logiciel client a été installé à l'aide d'un objet de stratégie de groupe, vous devez supprimer celui-ci pour pouvoir supprimer le logiciel client afin d'empêcher la réinstallation du logiciel.
+    > [!IMPORTANT] Si le logiciel client a été installé à l’aide d’un objet de stratégie de groupe, vous devez supprimer celui-ci pour pouvoir supprimer le logiciel client afin d’empêcher la réinstallation du logiciel.
 
     Si la désinstallation du client échoue, lisez [Résoudre les problèmes de protection de point de terminaison](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) pour obtenir une aide supplémentaire.
 
@@ -153,49 +152,71 @@ Avant de pouvoir déployer des logiciels vers un utilisateur, vous devez lier l'
 
 2.  Sélectionnez l’ordinateur que vous souhaitez lier à un utilisateur, puis choisissez **Lier un utilisateur**.
 
-    La boîte de dialogue **Lier un utilisateur** affiche une liste des utilisateurs disponibles avec leur nom complet, leur ID utilisateur, ainsi que le nombre d'ordinateurs lié à chacun. Si un utilisateur est déjà lié à l'ordinateur sélectionné, son nom et ID utilisateur s'affichent sous **Utilisateur actuel**. Si l’ordinateur n’est lié à aucun utilisateur, **Aucun utilisateur** est affiché sous **Utilisateur actuel**.
+    La boîte de dialogue **Lier un utilisateur** affiche une liste des utilisateurs disponibles avec leur nom complet, leur ID utilisateur, ainsi que le nombre d'ordinateurs lié à chacun. Si un utilisateur est déjà lié à l'ordinateur sélectionné, son nom et ID utilisateur s'affichent sous **Utilisateur actuel**. Si l'ordinateur n'est lié à aucun utilisateur, **Aucun utilisateur** n'apparaît sous **Utilisateur actuel**.
 
 3.  Effectuez l'une des opérations suivantes :
 
     -   Pour laisser l’ordinateur lié à son utilisateur actuel, le cas échéant, choisissez **Annuler**.
 
-    -   Pour supprimer le lien vers l’utilisateur actuel, le cas échéant, choisissez **Supprimer le lien**&gt;**OK**.
+    -   Pour supprimer le lien vers l’utilisateur actuel, le cas échéant, choisissez **Supprimer le lien **&gt; **OK**.
 
     -   Pour relier l'ordinateur à un nouvel utilisateur, sélectionnez un utilisateur dans la liste **Tous les utilisateurs** . Vérifiez que les données utilisateur sont correctes, puis choisissez **OK**.
 
-> [!TIP]
-> Si vous souhaitez limiter la capacité des utilisateurs finaux à se lier à des ordinateurs, activez l’option **Limiter la capacité des utilisateurs à se lier à des ordinateurs** dans la stratégie **Paramètres de l’Agent Microsoft Intune**.
+> [!TIP] Si vous souhaitez limiter la capacité des utilisateurs finaux à se lier à des ordinateurs, activez l’option **Limiter la capacité des utilisateurs à se lier à des ordinateurs** dans la stratégie **Paramètres de l’Agent Microsoft Intune**.
 
-## Répondre à une demande de support à distance
-Les utilisateurs peuvent demander une assistance en utilisant l'Assistance à distance via Microsoft Easy Assist qui est installé automatiquement sur les ordinateurs gérés. Quand une demande est faite, une alerte s’affiche dans la console Intune.
+## Demander et fournir une assistance à distance à des PC Windows qui utilisent le logiciel client Intune
 
 > [!IMPORTANT]
-> L'assistance à distance n'est pas prise en charge sur les ordinateurs exécutant Windows 8 ou version ultérieure.
->
-> Si vous acceptez une demande d'assistance à distance à partir d'un ordinateur qui ne dispose pas de Microsoft Easy Assist, l'utilisateur est invité à l'installer. L'ordinateur doit être redémarré après l'installation. Envisagez de précharger Microsoft Easy Assist sur les ordinateurs de vos utilisateurs afin d'éviter ce redémarrage.
+> Vous ne verrez peut-être pas les options permettant de configurer l’intégration de TeamViewer pour l’assistance à distance dans la console d’administration Intune. Cette fonctionnalité n’est pas disponible pour tous les clients, mais sera déployée bientôt plus largement.
+     
 
-### Pour gérer une demande d'assistance à distance
-
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Alertes** &gt; **Assistance à distance**.
-
-2.  Sélectionnez une demande d'assistance à distance dans la liste **Alertes** pour ouvrir la page de propriétés de la requête.
-
-3.  Choisissez **Approuver une demande et lancer l’assistance à distance** pour ouvrir une boîte de dialogue qui fournit des options pour la résolution de l’alerte.
-
-4.  Effectuez l'une des opérations suivantes :
-
-    -   **Accepter la demande** : pour participer à la session à distance, choisissez **Accepter la demande d’assistance à distance**.
-
-        L'utilisateur voit le message : **Votre demande a été acceptée. Suivez les instructions dans Easy Assist pour partager un programme ou votre bureau avec votre administrateur système**.
-
-        > [!IMPORTANT]
-        > Vous ne pouvez pas accepter une demande d’assistance à distance sur un ordinateur Mac qui exécute la console d’administration Intune.
-
-    -   **Refuser la demande** : fermez la fenêtre **Afficher les informations de dépannage**, puis choisissez **Fermer cette alerte** dans la fenêtre de propriétés des alertes.
-
-        La demande est fermée et l'utilisateur voit un message indiquant que la demande a été refusée. Pour demander à nouveau une assistance à distance, l'utilisateur doit envoyer une nouvelle demande d'assistance à distance. Si vous fermez accidentellement une alerte d'assistance à distance, contactez l'utilisateur qui l'avait envoyée et demandez-lui d'envoyer une nouvelle demande.
+Microsoft Intune peut utiliser le logiciel [TeamViewer](https://www.teamviewer.com) pour permettre aux utilisateurs de PC qui exécutent le logiciel client Intune d’obtenir votre aide via l’assistance à distance. Lorsqu’un utilisateur demande de l’aide à partir de Microsoft Intune Center, vous êtes informé par une alerte, vous pouvez accepter la demande, puis fournir une assistance.
+Cette fonctionnalité remplace la fonctionnalité Assistance à distance Windows existante dans Intune.
 
 
-<!--HONumber=May16_HO1-->
+### Avant de commencer
+
+Avant de pouvoir commencer à établir des demandes d’assistance à distance et répondre à de telles demandes, vous devez vous assurer que les conditions préalables suivantes sont respectées :
+
+- Vous devez avoir [souscrit un compte TeamViewer](https://login.teamviewer.com/LogOn#register) pour vous connecter au site web de TeamViewer.
+- Les PC Windows que vous souhaitez administrer doivent être [gérés par le client de PC Windows](manage-windows-pcs-with-microsoft-intune.md).
+- Tous les systèmes d’exploitation des PC Windows pris en charge par Intune peuvent être administrés.
+
+### Configurer le connecteur TeamViewer
+
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Administration**
+2. Dans l’espace de travail **Administration**, choisissez **TeamViewer**.
+3. Sur la page **TeamViewer**, sous **Connecteur TeamViewer**, choisissez **Activer**.
+4. Dans la boîte de dialogue **Activer TeamViewer**, consultez les termes du contrat de licence, puis choisissez **Accepter**. Si vous n’avez pas encore de licence TeamViewer, choisissez **Acheter une licence TeamViewer**.
+5. Après l’ouverture de la fenêtre du navigateur TeamViewer, connectez-vous au site avec vos informations d’identification TeamViewer.
+6. Sur le site TeamViewer, lisez et acceptez les options pour permettre à Intune de se connecter avec TeamViewer.
+7. Dans la console Intune, vérifiez que l’élément **Connecteur TeamViewer** apparaît comme **Activé**.
+
+
+### Ouvrir une demande d’assistance à distance (utilisateur final)
+
+1. Sur un PC Windows client, ouvrez **Microsoft Intune Center**.
+2. Sous **Assistance à distance**, choisissez **Demander une assistance à distance**.
+3. Une fois que vous avez approuvé la demande (voir ci-dessous), TeamViewer s’ouvre sur le client. L’utilisateur doit accepter les messages indiquant que le navigateur web tente d’ouvrir l’application TeamViewer.
+4. L’utilisateur voit un message lui demandant si vous pouvez contrôler son PC. Il doit accepter ce message pour continuer.
+5. Au cours de la session d’assistance à distance, l’utilisateur voit une fenêtre lui indiquant que vous êtes connecté. S’il ferme cette fenêtre, la session à distance se termine.
+
+### Répondre à une demande d’assistance à distance
+
+1. Lorsqu’un utilisateur soumet une demande d’assistance à distance, vous pouvez l’afficher dans l’espace de travail **Alertes**, sous **Analyse** > **Assistance à distance**. Exemple :
+> ![Capture d’écran d’une demande d’assistance à distance](./media/team-viewer.png)
+
+<br>Si une demande reste sans réponse plus de 4 heures, elle est supprimée.
+2. Pour accepter la demande, choisissez **Approuver une demande et lancer l’assistance à distance**.
+3. Dans la boîte de dialogue **Une nouvelle demande d’assistance à distance est en attente**, choisissez **Accepter la demande d’assistance à distance**. Si elles ne sont pas déjà installées, TeamViewer installe les applications nécessaires sur votre ordinateur.
+4. TeamViewer informe ensuite l’utilisateur final que vous souhaitez prendre le contrôle de son ordinateur. Une fois que l’utilisateur a accepté la demande, la fenêtre TeamViewer s’ouvre et vous pouvez contrôler le PC. 
+ 
+Au cours d’une session d’assistance à distance, vous pouvez utiliser toutes les commandes TeamViewer disponibles pour contrôler le PC distant. Pour obtenir de l’aide avec ces commandes, téléchargez le [Manuel pour le contrôle à distance](http://www.teamviewer.com/en/support/documents/) depuis le site web TeamViewer.
+
+### Fermer la session d’assistance à distance
+
+Dans le menu **Actions** de la fenêtre **TeamViewer**, choisissez **Fin de session**.
+
+<!--HONumber=Jun16_HO1-->
 
 

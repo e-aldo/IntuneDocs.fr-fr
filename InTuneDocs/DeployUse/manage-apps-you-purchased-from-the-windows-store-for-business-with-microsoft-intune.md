@@ -39,6 +39,8 @@ Passez en revue les informations suivantes avant de commencer la synchronisation
 * Une fois que vous avez associé un compte Windows Business Store avec Intune, vous ne pouvez pas basculer sur un autre compte ultérieurement.
 * Les applications achetées depuis le magasin ne peuvent pas être manuellement ajoutées ou supprimées d’Intune. Elles peuvent uniquement être synchronisées avec Windows Store pour Entreprises.
 * Intune synchronise uniquement les applications sous licence en ligne que vous avez achetées auprès de Windows Store pour Entreprises.
+* Les appareils doivent être joints à un domaine Active Directory ou à un espace de travail pour pouvoir utiliser cette fonctionnalité.
+* Les appareils inscrits doivent utiliser la version 1511 de Windows 10.
 
 ## Associer votre compte Windows Store pour Entreprises à Intune
 Avant d’activer la synchronisation dans la console Intune, vous devez configurer votre compte de magasin pour utiliser Intune comme outil de gestion :
@@ -50,12 +52,12 @@ Vous pouvez maintenant continuer et configurer la synchronisation dans la consol
 
 ## Configuration de la synchronisation
 
-1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Administration**.
-2. Dans l’espace de travail **Administration**, développez **Gestion des appareils mobiles**, puis cliquez sur **Store pour Entreprises**.
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Administration**.
+2. Dans l’espace de travail **Administration**, développez **Gestion des appareils mobiles**, puis cliquez sur **Store Pro**.
 3. Sur la page **Windows Store pour Entreprises**, procédez comme suit :
 * Si vous ne l’avez pas déjà fait, cliquez sur le lien pour vous inscrire pour Windows Store pour Entreprises
 * Une fois l’inscription effectuée, cliquez sur **Configurer la synchronisation**
-4. Dans la boîte de dialogue **Configurer la synchronisation des applications Windows Store pour Entreprises**, sélectionnez **Activer la synchronisation Windows Store pour Entreprises**.
+4. Dans la boîte de dialogue **Configurer la synchronisation des applications du Windows Store Pro**, sélectionnez **Activer la synchronisation du Windows Store Pro**.
 5. Dans la liste déroulante **Langue**, choisissez la langue dans laquelle les applications de Windows Store pour Entreprises s’afficheront dans la console Intune. Quelle que soit la langue dans laquelle elles sont affichées, elles seront installées dans la langue de l’utilisateur final lorsqu’elles sont disponibles.
 6. Cliquez sur **OK**.
 
@@ -80,6 +82,6 @@ Lorsque vous déployez une application Windows Store pour Entreprises, une licen
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

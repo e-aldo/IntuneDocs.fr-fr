@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,11 +56,11 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 ### Pour supprimer des appareils dans le portail Azure Active Directory
 
-1.  Accédez à [http://aka.ms/accessaad](http://aka.ms/accessaad) ou cliquez sur **Admin** &gt; **Azure AD** à partir de [https://portal.office.com](https://portal.office.com).
+1.  Accédez à [http://aka.ms/accessaad](http://aka.ms/accessaad) ou choisissez **Administration** &gt; **Azure AD** dans [https://portal.office.com](https://portal.office.com).
 
 2.  Connectez-vous avec l’ID de votre organisation en utilisant le lien sur le côté gauche de la page.
 
-3.  Créez un abonnement Azure si vous n’en avez pas. Vous ne devriez pas avoir besoin de carte de crédit ni d’effectuer un paiement si vous disposez d’un compte payant (cliquez sur le lien d’abonnement **Enregistrer votre abonnement Azure Active Directory gratuit** ).
+3.  Créez un abonnement Azure si vous n’en avez pas. Vous ne devriez pas avoir besoin de carte de crédit ni d’effectuer un paiement si vous disposez d’un compte payant (choisissez le lien d’abonnement **Enregistrer votre abonnement Azure Active Directory gratuit**).
 
 4.  Sélectionnez **Active Directory** , puis le nom de votre organisation.
 
@@ -68,13 +68,13 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 6.  Sélectionnez l’utilisateur dont vous voulez supprimer les appareils.
 
-7.  Cliquez sur **Appareils**.
+7.  Choisissez **Appareils**.
 
 8.  Supprimez les appareils appropriés, par exemple, ceux qui ne sont plus utilisés ou qui n’ont pas de définitions précises.
 
 > [!NOTE]
 
-> Pour éviter d’atteindre le plafond d’inscription d’appareils, vous pouvez utiliser le Gestionnaires d’inscription d’appareil, comme indiqué dans [Inscrire des appareils d’entreprise avec le Gestionnaire d’inscription d’appareil dans Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+> Pour éviter d’atteindre le plafond d’inscription d’appareils, vous pouvez utiliser les Gestionnaires d’inscription d’appareil, comme indiqué dans [Inscrire des appareils d’entreprise avec le Gestionnaire d’inscription d’appareil dans Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
 > Un compte d’utilisateur ajouté au groupe Gestionnaires d’inscription d’appareil ne peut pas effectuer d’inscription si la stratégie d’accès conditionnel a été appliquée à cette connexion d’utilisateur spécifique.
 
@@ -111,10 +111,9 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 ### Dépannage de l’erreur Autorité GPM non définie
 
-1.  Vérifiez que l’autorité GPM a été correctement définie pour la version du service Intune que vous utilisez, c’est-à-dire, pour Intune, GPM O365 ou System Center Configuration Manager avec Intune. Pour Intune, l’autorité de gestion des appareils mobiles est définie dans **Admin** &gt; **Gestion des appareils mobiles**. Pour Configuration Manager avec Intune, vous la définissez pendant que vous configurez le connecteur Intune. Dans O365, il s’agit du paramètre **Appareils mobiles**.
+1.  Vérifiez que l’autorité GPM a été correctement définie pour la version du service Intune que vous utilisez, c’est-à-dire, pour Intune, GPM O365 ou System Center Configuration Manager avec Intune. Pour Intune, l’autorité de gestion des appareils mobiles est définie dans **Administration** &gt; **Gestion des appareils mobiles**. Pour Configuration Manager avec Intune, vous la définissez pendant que vous configurez le connecteur Intune. Dans O365, il s’agit du paramètre **Appareils mobiles**.
 
-    > [!NOTE]
-    > Une fois que vous avez défini l’autorité de gestion des appareils mobiles, vous ne pouvez la modifier qu’en contactant le support technique, comme indiqué dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    > [!NOTE] Une fois que vous avez défini l’autorité de gestion des appareils mobiles, vous ne pouvez la modifier qu’en contactant le support technique, comme indiqué dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 2.  Vérifiez que les informations d’identification de l’utilisateur ont bien été synchronisées avec Azure Active Directory en vous assurant que son nom d’utilisateur principal (UPN) correspond aux informations Active Directory dans le portail de compte.
     Si l’UPN ne correspond pas aux informations Active Directory :
@@ -135,15 +134,13 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
     3.  Ouvrez le dossier de bases de données, recherchez et ouvrez le dossier **CM_DBName**, DBName représentant le nom de la base de données client.
 
-    4.  Dans la partie supérieure, cliquez sur Nouvelle requête et exécutez les requêtes suivantes :
+    4.  Dans la partie supérieure, choisissez **Nouvelle requête** et exécutez les requêtes suivantes :
 
-        -   Pour afficher tous les utilisateurs :
-            `select * from [CM_ DBName].[dbo].[User_DISC]`
+        -   Pour afficher tous les utilisateurs : `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Pour afficher des utilisateurs spécifiques, utilisez la requête suivante, où testuser1 % représente nom_utilisateur@domaine.com pour l’utilisateur que vous recherchez :
-            `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   Pour afficher des utilisateurs spécifiques, utilisez la requête suivante, où %testuser1% représente nom_utilisateur@domaine.com pour l’utilisateur que vous recherchez : `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        Après avoir écrit la requête, cliquez sur **!Exécuter**.
+        Après avoir écrit la requête, choisissez **!Execute**.
         Une fois que les résultats ont été retournés, recherchez l’ID d’utilisateur cloud.  Si vous n’en trouvez pas, c’est que l’utilisateur n’a pas de licence Intune.
 
 ## Les appareils mobiles disparaissent quand vous utilisez System Center Configuration Manager avec Intune
@@ -175,7 +172,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 **Résolution :** Effectuez les étapes suivantes :
 
 1. Désactivez iOS dans le connecteur Windows Intune. 
-    1. Cliquez avec le bouton droit sur l’abonnement à Intune et sélectionnez « Propriétés ».
+    1. Cliquez avec le bouton droit sur l’abonnement à Intune et sélectionnez **Propriétés**.
     1. Dans l’onglet « iOS », désactivez l’option « Activer l’inscription iOS ».
 
 
@@ -206,13 +203,13 @@ Cela peut être dû au fait que l’ordinateur avait déjà été inscrit préc�
 **Solution :** 
 
 1. À partir du menu **Démarrer**, **Exécuter** -> **MMC**. 
-1. **Fichier** -> **Ajouter ou supprimer des composants**.
+1. **Fichier** -> **Ajouter/supprimer des composants logiciels enfichables**.
 1. Double-cliquez sur **Certificats**, choisissez **Compte ordinateur**, **Suivant**, sélectionnez **Ordinateur local**.
 1. Double-cliquez sur **Certificats (ordinateur Local)**, choisissez **Personnel / certificats**. 
 1. Recherchez le certificat Intune émis par Sc_Online_Issuing et supprimez-le, le cas échéant
 1. Supprimez cette clé de registre si elle existe : **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** et toutes les sous-clés.
 1. Tentez la réinscription. 
-1. Si l’ordinateur ne peut toujours pas être inscrit, recherchez cette clé et supprimez-la, si elle existe : **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Si l’ordinateur ne peut toujours pas être inscrit, recherchez cette clé et supprimez-la, si elle existe : **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
 1. Tentez la réinscription. 
 
     > [!IMPORTANT]
@@ -248,20 +245,20 @@ Cela peut être dû au fait que l’ordinateur avait déjà été inscrit préc�
 |0x80043007, 0x80CF3007|Impossible de trouver le fichier de certificat dans le même dossier que le programme d'installation.|Extrayez tous les fichiers avant de commencer l'installation. Ne renommez pas et ne déplacez pas les fichiers extraits : tous les fichiers doivent se trouver dans le même dossier sans quoi l'installation échouera.|
 |0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|Le logiciel ne peut pas être installé, car un redémarrage de l'ordinateur client est en attente.|Redémarrez l'ordinateur, puis réessayez d'installer le logiciel client.|
 |0x80070032|Une ou plusieurs conditions requises pour l'installation du logiciel client n'ont pas été remplies au niveau de l'ordinateur.|Assurez-vous que toutes les mises à jour nécessaires sont installées sur l'ordinateur client, puis réessayez d'installer le logiciel client.|
-|0x80043008, 0x80CF3008|Échec du démarrage du service des mises à jour de gestion Microsoft Online.|Contactez le Support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
+|0x80043008, 0x80CF3008|Échec du démarrage du service des mises à jour de gestion Microsoft Online.|Contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
 |0x80043009, 0x80CF3009|L'ordinateur client est déjà inscrit dans le service.|Vous devez mettre hors service l'ordinateur client avant de le réinscrire dans le service.|
 |0x8004300B, 0x80CF300B|Impossible d'exécuter le package d'installation du logiciel client car la version de Windows en cours d'exécution sur le client n'est pas prise en charge.|Intune ne prend pas en charge la version de Windows en cours d’exécution sur l’ordinateur client.|
-|0xAB2|Windows Installer n'a pas pu accéder à l'exécution VBScript d'une action personnalisée.|Cette erreur est générée par une action personnalisée basée sur des DLL (Dynamic-Link Libraries). Pour résoudre les problèmes liés aux DLL, il peut s’avérer nécessaire d’utiliser les outils décrits dans l’article [Aide et support Microsoft KB198038 Informations : Outils utiles pour les problèmes de package et de déploiement](https://support.microsoft.com/en-us/kb/198038).|
+|0xAB2|Windows Installer n'a pas pu accéder à l'exécution VBScript d'une action personnalisée.|Cette erreur est générée par une action personnalisée basée sur des DLL (Dynamic-Link Libraries). Pour résoudre les problèmes liés aux DLL, il peut s’avérer nécessaire d’utiliser les outils décrits dans [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038) (KB198038 du support technique Microsoft : Outils utiles en cas de problèmes de package et de déploiement).|
 |0x80cf0440|La connexion au point de terminaison de service s'est terminée.|Le compte d’évaluation ou payant est suspendu. Créez un nouveau compte d’évaluation ou payant et recommencez l’inscription.|
 
 
 ## Erreurs d'inscription iOS
-Une liste d’autres erreurs d’inscription iOS est fournie dans la documentation de l’utilisateur de l’appareil, dans [Des erreurs se produisent pendant l’inscription de votre appareil dans Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)..
+Une liste d’autres erreurs d’inscription iOS est fournie dans la documentation de l’utilisateur de l’appareil, dans [Vous voyez des erreurs en tentant d’inscrire votre appareil dans Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
 
 ### Étapes suivantes
-Si ces informations de dépannage n’ont pas permis de vous aider, contactez le Support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

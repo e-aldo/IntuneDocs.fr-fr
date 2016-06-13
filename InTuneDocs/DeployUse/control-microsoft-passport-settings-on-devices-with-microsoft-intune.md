@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Contrôler les paramètres de Microsoft Passport sur les appareils avec Microsoft Intune | Microsoft Intune
+title: Contrôler les paramètres de Microsoft Passport sur les appareils | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,7 +34,7 @@ Intune s’intègre à Passport for Work de deux manières :
 
 -   Vous pouvez utiliser la stratégie Intune pour contrôler les mouvements que les utilisateurs peuvent et ne peuvent pas utiliser pour se connecter.
 
--   Vous pouvez stocker des certificats d’authentification dans le fournisseur de stockage de clés de Passport for Work. Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).
+-   Vous pouvez stocker des certificats d’authentification dans le fournisseur de stockage de clés de Passport for Work. Pour plus d’informations, consultez [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md) (Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune).
 
 ## Pour créer une stratégie Passport for Work
 
@@ -57,8 +57,7 @@ Intune s’intègre à Passport for Work de deux manières :
     - **Autorisé** : les utilisateurs peuvent utiliser le type de caractère dans leur code confidentiel, mais cela n’est pas obligatoire.
     - **Requis** : les utilisateurs doivent inclure au moins l’un des types de caractères dans leur code confidentiel. Par exemple, il est courant d’exiger au moins une majuscule et un caractère spécial.
     - **Non autorisé** (par défaut) : les utilisateurs ne doivent pas utiliser ces types de caractères dans leur code confidentiel (ce comportement vaut également si le paramètre n’est pas configuré).
-    > [!TIP]
-    > Les caractères spéciaux sont les suivants : **! " # $ % &amp; ’ ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP] Les caractères spéciaux sont les suivants : **! " # $ % &amp; ’ ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Expiration du code confidentiel (jours)** : nous vous conseillons de spécifier une période d’expiration pour un code confidentiel, après laquelle les utilisateurs finaux doivent le modifier. La valeur par défaut est 41 jours. 
 - **Conserver l’historique des codes confidentiels** : utilisez ce paramètre pour limiter la réutilisation des codes confidentiels précédemment utilisés. Par défaut, les cinq derniers codes confidentiels utilisés ne peuvent pas être réutilisés.
 
@@ -80,6 +79,6 @@ Pour plus d’informations sur Microsoft Passport, consultez [le guide](https://
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -37,7 +37,7 @@ Vous pouvez afficher des informations d'administrateur client dans la console d'
 ## Ajouter des comptes d'utilisateur individuels
 Pour créer des comptes d’utilisateur supplémentaires dans votre client d’évaluation, procédez comme indiqué ci-dessous. Pour rappel, chaque compte d’utilisateur que vous ajoutez représente l’une des 100 licences que vous obtenez dans le cadre de votre version d’évaluation gratuite d’Intune.
 
-1.  Dans le [Centre d’administration Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), choisissez **Ajouter des utilisateurs** &gt; **Nouveau**&gt; **Utilisateur** pour démarrer l’Assistant **New users** (Nouveaux utilisateurs).
+1.  Dans le [Centre d’administration Office 365](http://go.microsoft.com/fwlink/?LinkID=787455), choisissez **Ajouter des utilisateurs** &gt; **Nouveau**&gt; **Utilisateur** pour démarrer l’Assistant **Nouveaux utilisateurs**.
 
 2.  Dans la page **Détails** , renseignez les champs requis.
 
@@ -51,14 +51,14 @@ Pour créer des comptes d’utilisateur supplémentaires dans votre client d’�
 
 7.  Quand le nouvel utilisateur apparaît dans le Centre d’administration Office 365, vérifiez qu’il a été correctement créé :
 
-    1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), cliquez sur **Admin** &gt; **Portail d’entreprise**, puis faites défiler la fenêtre jusqu’au bas de l’écran. Copiez l’URL figurant sous **Portail d’entreprise Intune**..
+    1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Administration** &gt; **Portail d’entreprise**, puis faites défiler la fenêtre jusqu’au bas de l’écran. Copiez l’URL figurant sous **Portail d’entreprise Intune**.
 
-    2.  Ouvrez une nouvelle fenêtre de navigateur en « mode de confidentialité » (dans Internet Explorer, cliquez sur **Outils** &gt; **Navigation InPrivate**) ou sur un autre appareil, puis accédez à l’URL que vous avez copiée à l’étape précédente. À leur première connexion, les utilisateurs doivent définir un nouveau mot de passe pour le compte.
+    2.  Ouvrez une nouvelle fenêtre de navigateur en « mode de confidentialité » (dans Internet Explorer, choisissez **Outils** &gt; **Navigation InPrivate**) ou sur un autre appareil, puis accédez à l’URL que vous avez copiée à l’étape précédente. À leur première connexion, les utilisateurs doivent définir un nouveau mot de passe pour le compte.
 
 ## Ajouter des utilisateurs en bloc
-Pour ajouter des utilisateurs en bloc à Intune, utilisez l’Assistant **Ajouter des utilisateurs en bloc** pour charger un fichier de valeurs séparées par des virgules (CSV) qui contient les données de vos utilisateurs. Vous trouverez dans l'Assistant des liens qui vous permettront de télécharger un modèle vide et un exemple de fichier CSV. La première ligne de votre fichier CSV doit contenir, dans le bon ordre, chaque libellé de colonne de données utilisateur. Ensuite, pour chaque utilisateur mentionné dans le fichier CSV, vous devez inclure le **nom d’utilisateur** (par exemple, **bob@contoso.com**) et un **nom complet** (par exemple, **Bob Kelly**).).
+Pour ajouter des utilisateurs en bloc à Intune, utilisez l’Assistant **Ajouter des utilisateurs en bloc** pour charger un fichier de valeurs séparées par des virgules (CSV) qui contient les données de vos utilisateurs. Vous trouverez dans l'Assistant des liens qui vous permettront de télécharger un modèle vide et un exemple de fichier CSV. La première ligne de votre fichier CSV doit contenir, dans le bon ordre, chaque libellé de colonne de données utilisateur. Ensuite, pour chaque utilisateur mentionné dans le fichier CSV, vous devez inclure le **nom d'utilisateur** (par exemple, **bob@contoso.com**) et un **nom complet** (par exemple, **Bob Kelly**).
 
-1.  Dans le [Centre d’administration Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), choisissez **Utilisateurs** &gt; **Nouveau**.
+1.  Dans le [Centre d’administration Office 365](http://go.microsoft.com/fwlink/?LinkID=787455), choisissez **Utilisateurs** &gt; **Nouveau**.
 
 2.  Choisissez **Ajout en bloc** pour démarrer l’Assistant Ajouter des utilisateurs en bloc.
 
@@ -81,9 +81,9 @@ Félicitations ! Vous venez d’effectuer l’étape 2 de la procédure pas à
 
 >[!div class="step-by-step"]
 
->[&larr; **S’inscrire à une version d’évaluation**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Créer des groupes** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
+>[&larr;**S’inscrire à une version d’évaluation**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Créer des groupes** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

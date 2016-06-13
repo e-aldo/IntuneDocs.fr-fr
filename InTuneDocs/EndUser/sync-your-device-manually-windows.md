@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Synchroniser votre appareil manuellement
-Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil Windows, ce qui peut vous aider à accélérer l’installation. Suivez les instructions correspondant au type d’appareil que vous utilisez :
+Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil Windows, ce qui peut vous aider à accélérer l’installation. Les seules versions prises en charge sont celles qui sont répertoriées. Utilisez le lien répertorié dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous possédez :
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -66,7 +66,7 @@ Pour synchroniser manuellement votre appareil de bureau Windows 10 pour accélé
  
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
     
-3. Sur la page **Comptes**, sélectionnez **Accès professionnel**.
+3. Sur la page **Comptes**, sélectionnez **Accès professionnel**
     
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
     
@@ -102,6 +102,6 @@ Pour synchroniser manuellement votre appareil Windows Phone 8.1 pour accélérer
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

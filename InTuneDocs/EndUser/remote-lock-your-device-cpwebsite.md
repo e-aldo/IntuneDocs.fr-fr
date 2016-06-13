@@ -50,7 +50,7 @@ Pour utiliser le verrouillage à distance pour verrouiller votre appareil :
 
     Une fois que vous avez appuyé sur **Verrouillage à distance**, l’état « Verrouillage à distance en attente » apparaît.  Si le verrouillage à distance aboutit, l’état passe à « Verrouillage à distance réussi ».
 
-    L’état s’affiche à trois endroits :
+    L’état Verrouillage à distance s’affiche à trois emplacements :
 
     * La zone de notification du site web. 
     * La page Détails de l’appareil.
@@ -64,6 +64,6 @@ Pour utiliser le verrouillage à distance pour verrouiller votre appareil :
 ### Voir aussi
 [Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

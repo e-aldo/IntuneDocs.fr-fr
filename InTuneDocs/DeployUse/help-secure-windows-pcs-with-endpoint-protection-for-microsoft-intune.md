@@ -52,8 +52,7 @@ Pour passer de votre application de protection de point de terminaison actuelle 
 
     -   Supprimez manuellement l'application tierce de protection de point de terminaison.
 
-> [!NOTE]
-> Intune ne désinstalle pas automatiquement les applications tierces de protection de point de terminaison.
+> [!NOTE] Intune ne désinstalle pas automatiquement les applications tierces de protection de point de terminaison.
 
 ## Comment configurer Microsoft Intune Endpoint Protection
 Procédez comme suit pour configurer Endpoint Protection pour Microsoft Intune.
@@ -70,7 +69,7 @@ Vous pouvez afficher la stratégie Endpoint Protection déployée dans la page *
 
 |Paramètre de stratégie|Détails|
 |------------------|--------------------|
-|**Installer Endpoint Protection**|Attribuez la valeur **Oui** pour installer Endpoint Protection sur des ordinateurs gérés. Si une application tierce de protection de point de terminaison est détectée au cours de l’installation, Endpoint Protection n’est pas installé, sauf si le paramètre **Installer Endpoint Protection même si une application tierce de protection de point de terminaison est installée** a la valeur **Oui**. **Remarque :** Intune Endpoint Protection est installé sur les ordinateurs gérés par défaut. Si vous ne souhaitez pas qu’Endpoint Protection soit installé sur vos ordinateurs gérés, vous devez affecter explicitement à cette stratégie la valeur **Non**. Si Endpoint Protection a déjà été installé et que la stratégie est mise à jour sur **Non**, le client Endpoint Protection est désinstallé.<br />Valeur recommandée : **Oui**|
+|**Installer Endpoint Protection**|Attribuez la valeur **Oui** pour installer Endpoint Protection sur des ordinateurs gérés. Si une application de protection de point de terminaison tierce est détectée au cours de l’installation, Endpoint Protection n’est pas installé, sauf si le paramètre **Installer Endpoint Protection même si une application tierce de protection de point de terminaison est installée** est défini sur **Oui**. **Remarque :** Intune Endpoint Protection est installé sur les ordinateurs gérés par défaut. Si vous ne souhaitez pas qu’Endpoint Protection soit installé sur vos ordinateurs gérés, vous devez affecter explicitement à cette stratégie la valeur **Non**. Si Endpoint Protection a déjà été installé et que la stratégie est mise à jour sur **Non**, le client Endpoint Protection est désinstallé.<br />Valeur recommandée : **Oui**|
 |**Installer Endpoint Protection même si une application tierce de protection du point de terminaison est installée**|Attribuez la valeur **Oui** pour installer Microsoft Intune Endpoint Protection même si une application tierce de protection de point de terminaison est détectée.<br /><br />Valeur recommandée : **Oui**|
 |**Activer Endpoint Protection**|Attribuez la valeur **Oui** pour activer Microsoft Intune Endpoint Protection sur les ordinateurs avec le client Endpoint Protection.<br /><br />Si la valeur est **Non** et que Microsoft Intune Endpoint Protection est installé, l’interface utilisateur du client Endpoint Protection n’est pas accessible aux utilisateurs et toutes les fonctions de protection sont inactives.<br /><br />Valeur recommandée : **Oui**|
 |**Désactiver l'interface utilisateur du client**|Attribuez la valeur **Oui** pour masquer l’interface utilisateur du client Microsoft Intune Endpoint Protection aux utilisateurs (nécessite le redémarrage de l’ordinateur client pour entrer en vigueur).<br /><br />Valeur recommandée : **Non**|
@@ -128,7 +127,7 @@ Le paramètre **Fichiers et dossiers à exclure lors de l’exécution d’une a
 
 ### Paramètres de processus exclus
 
-Le paramètre **Processus à exclure pendant l’exécution d’une analyse ou l’utilisation de la protection en temps réel** vous permet d’exclure certains processus lors de l’exécution d’une analyse ou d’une protection en temps réel. Vous pouvez exclure uniquement les fichiers avec les extensions suivantes : **.exe**, **.com** ou **.scr**..
+Le paramètre **Processus à exclure pendant l’exécution d’une analyse ou l’utilisation de la protection en temps réel** vous permet d’exclure certains processus lors de l’exécution d’une analyse ou d’une protection en temps réel. Vous pouvez exclure uniquement les fichiers avec les extensions suivantes : **.exe**, **.com** ou **.scr**.
 
 ### Paramètres de types de fichier exclus
 
@@ -145,10 +144,10 @@ Vous pouvez également **recevoir les définitions dynamiques en fonction des ra
 Les tâches suivantes vous aident à effectuer différentes tâches de gestion sur les ordinateurs gérés qui exécutent Endpoint Protection :
  - Mettre à jour les définitions de programmes malveillants
   - Console Intune : dans l’espace de travail **Groupes**, sélectionnez les ordinateurs que vous souhaitez mettre à jour. Cliquez sur **Tâches à distance** &gt; **Mettre à jour les définitions de programmes malveillants**.
-  - Ordinateur géré : démarrez le logiciel client Endpoint Protection à partir de la zone de notification Windows. Cliquez sur l’onglet **Mettre à jour**, puis sur **Mettre à jour**..
+  - Ordinateur géré : démarrez le logiciel client Endpoint Protection à partir de la zone de notification Windows. Cliquez sur l'onglet **Mise à jour** , puis sur **Mettre à jour**.
  - Effectuer une analyse des programmes malveillants :
-  - Console Intune : dans l’espace de travail **Groupes**, sélectionnez les ordinateurs que vous souhaitez analyser. Cliquez sur **Effectuer une analyse complète des programmes malveillants** ou sur **Effectuer une analyse rapide des programmes malveillants**..
-  - Ordinateur géré : démarrez le logiciel client Endpoint Protection à partir de la zone de notification Windows. Sélectionnez **Rapide**, **Complète** ou **Personnalisée**, puis cliquez sur **Analyser maintenant**.
+  - Console Intune : dans l’espace de travail **Groupes**, sélectionnez les ordinateurs que vous souhaitez analyser. Cliquez sur **Effectuer une analyse complète des programmes malveillants** ou sur **Effectuer une analyse rapide des programmes malveillants**.
+  - Ordinateur géré : démarrez le logiciel client Endpoint Protection à partir de la zone de notification Windows. Sélectionnez **Rapide**, **Complète**ou **Personnalisée**, puis cliquez sur **Analyser maintenant**.
 
 Vous pouvez afficher l’état d’une tâche à distance en cliquant sur le lien **Tâches à distance** dans le coin inférieur droit de la console Intune. La boîte de dialogue **État de tâche à distance** répertorie les tâches à distance en cours, l'état de la tâche, le nom de l'appareil et toutes les erreurs signalées, et fournit un lien permettant de corriger ces informations, le cas échéant.
 
@@ -163,8 +162,7 @@ Vous pouvez contrôler l'état des logiciels malveillants sur vos ordinateurs en
   - **Afficher les propriétés** : ouvre une page qui contient plus d’informations sur le programme malveillant sélectionné.
   - **En savoir plus sur ce programme malveillant** : ouvre une rubrique du Centre de protection Microsoft contre les programmes malveillants qui contient plus d’informations sur le logiciel malveillant.
 
-> [!IMPORTANT]
-> L’espace de travail **Protection** n’est pas affiché dans la console Administrateur tant que vous n’y avez pas installé le client et que vous n’y gérez pas au moins un ordinateur client.
+> [!IMPORTANT] L’espace de travail **Protection** n’est pas affiché dans la console Administrateur tant que vous n’y avez pas installé le client et que vous n’y gérez pas au moins un ordinateur client.
 
   ![Surveiller Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
@@ -177,13 +175,23 @@ Intune peut afficher au maximum les chemins d'accès des 10 dernières instances
 
 3.  Cochez la case **Chemins d'accès de détection récents** dans la liste. La colonne **Chemins d'accès de détection récents** apparaît et affiche au maximum les 10 dernières instances de programme malveillant surveillées sur l'appareil.
 
+## Effectuer une analyse des programmes malveillants ou mettre à jour les définitions de programmes malveillants sur un ordinateur
+Intune peut effectuer une analyse complète ou rapide des programmes malveillants à l’aide d’Endpoint Protection ou de Windows Defender sur un PC géré à distance qui est installé avec le client Intune.
+
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), accédez à **Groupes** > **Présentation** > **Tous les appareils** > **Tous les ordinateurs**, puis sélectionnez l’ordinateur que vous souhaitez cibler.
+
+2. Cliquez sur la liste déroulante **Tâches à distance**, puis sélectionnez la tâche. La tâche s’exécute sur l’ordinateur distant.
+![Exécuter une analyse à distance des programmes malveillants](../media/ep_sa_malwarescan.png)
+
+
+
 ## Besoin d'aide ?
-Pour obtenir de l’aide et une assistance, consultez [Résoudre les problèmes liés à Endpoint Protection dans Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
+Pour obtenir de l’aide et une assistance, consultez [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) (Résoudre les problèmes liés à Endpoint Protection dans Microsoft Intune).
 
 ### Voir aussi
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

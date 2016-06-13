@@ -42,6 +42,7 @@ Les informations contenues dans cette section vous aideront à installer le Port
 Les informations contenues dans cette section vous indiqueront les actions que vous pourrez entreprendre après l’inscription de votre appareil Windows dans Intune.
 
 - [Chiffrer votre appareil](encrypt-your-device-windows.md)</br>
+- [Définir ou modifier votre mot de passe](set-or-change-your-password-windows.md)</br>
 - [Réinitialiser (effacer) votre appareil perdu ou volé](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [Désinscrire votre appareil d'Intune](unenroll-your-device-from-intune-windows.md)</br>
 - [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
@@ -54,7 +55,7 @@ Les informations contenues dans cette section vous indiqueront les actions que v
 Les informations contenues dans cette section vous aideront à résoudre les problèmes que vous pourriez rencontrer après l’inscription de votre appareil Windows dans Intune.
 
 - [L'appareil n'est pas équipé de la version minimale requise du système d'exploitation](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [L’appareil n’est pas conforme à la version maximale du système d’exploitation](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
+- [L’appareil n’est pas conforme à la version maximale du système d’exploitation](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
 - [BitLocker n’est pas activé sur l’appareil](device-doesnt-have-bitlocker-enabled-windows.md)</br>
 - [Un logiciel anti-programme malveillant n’est pas activé sur l’appareil](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
 - [Le démarrage sécurisé n’est pas activé sur l’appareil](device-doesnt-have-secure-boot-enabled-windows.md)</br>
@@ -63,6 +64,6 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

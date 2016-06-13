@@ -28,16 +28,19 @@ ms.suite: ems
 
 # Effets de la réinitialisation de votre appareil via le portail d’entreprise
 
-Quand vous réinitialisez votre appareil Android à partir du portail d’entreprise, certaines applications et certains paramètres de votre appareil risquent d’être supprimés, notamment certaines de vos données personnelles. Ce qu'il se passe sur chaque appareil dépend du type d'appareil que vous avez et de la façon dont vous l'utilisez, comme indiqué dans le tableau suivant.
+Lorsque vous utilisez le portail d’entreprise pour réinitialiser votre appareil Android, tous les paramètres, applications et données personnelles figurant sur votre appareil sont supprimés et les paramètres par défaut d’usine de votre appareil sont rétablis.
 
-|Configuration et gestion des appareils|Type d'appareil|
-|---------------------------------------|---------------|
-|Votre administrateur informatique gère votre appareil mobile|Quand vous réinitialisez votre appareil Android, il n’apparaît plus dans le portail d’entreprise, votre compte e-mail d’entreprise est supprimé, ainsi que les e-mails non enregistrés.|
-|Votre appareil peut accéder uniquement à la messagerie de l'entreprise|Quand vous réinitialisez votre appareil Android, il n’apparaît plus dans le portail d’entreprise, qui tente de réinitialiser l’appareil aux paramètres d’usine par défaut. Toutes vos données et vos paramètres personnels seront supprimés.|
+Si vous avez un appareil Samsung Knox, vous pouvez effectuer « réinitialisation sélective » en choisissant l’option **device remove** sur le portail d’entreprise. La réinitialisation sélective supprime uniquement les éléments suivants :
+
+- Les applications commerciales que votre administrateur met à votre disposition
+- L’e-mail, les données VPN et Wi-Fi
+- La capacité de votre administrateur d’appliquer certains paramètres
+
+
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

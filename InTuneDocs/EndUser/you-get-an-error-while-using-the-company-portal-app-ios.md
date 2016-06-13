@@ -15,7 +15,7 @@ ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -34,12 +34,12 @@ Si vous obtenez une erreur pendant que vous utilisez l’application Portail d�
 
 -   En appuyant sur **Envoyer un rapport de diagnostic** dans l’écran **À propos de** de l’application Portail d’entreprise
 
--   En secouant votre appareil alors que vous êtes dans l’application Portail d’entreprise, puis en appuyant sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** &gt; **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
+-   En secouant votre appareil alors que vous êtes dans l’application Portail d’entreprise, puis en appuyant sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** &gt; **Portail d’entreprise**, puis assurez-vous que l’option **Secouer** est activée.
 
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

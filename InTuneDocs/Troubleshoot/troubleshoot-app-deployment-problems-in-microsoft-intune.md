@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,13 +37,13 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 1.  Vérifiez si votre compte existe dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) ou s’il est désactivé.
 
-2.  Assurez-vous que vous êtes configuré sur ce compte dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
+2.  Assurez-vous que vous êtes configuré sur ce compte dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-3.  Dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), veillez à utiliser le nom d’utilisateur et le mot de passe appropriés pour vous connecter à Intune et vérifiez qu’il est au format : **jean@domaine.com**.
+3.  Dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), veillez à utiliser le nom d’utilisateur et le mot de passe appropriés pour vous connecter à Intune et vérifiez qu’il est au format : **jean@domaine.com**
 
 ### Si les informations de la page Contacter l'administrateur ne figurent pas sur le portail d'entreprise
 
-1.  Dans la console d’administration Intune, cliquez sur **Administration** &gt; **Portail d’entreprise**.
+1.  Dans la console d’administration Intune, choisissez **Administration** &gt; **Portail d’entreprise**
 
 2.  Définissez les détails de la page **Contacter l'administrateur** .
 
@@ -63,7 +63,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 4.  Si la barre de progression de téléchargement de l'application iOS est terminée, mais que l'installation de l'application échoue, les fichiers d'application que vous avez fournis sont peut-être erronés.
 
-### Si vous êtes dirigé vers un emplacement précédent de l'iTunes App Store quand vous cliquez sur un lien vers une application iOS
+### Si un lien iOS vous dirige vers un emplacement précédent de l’iTunes App Store
 
 1.  La session iTunes App Store actuelle s'ouvre sur la page précédente de l'application.
 
@@ -87,7 +87,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 ### Erreur : L’éditeur n’existe pas
 Vous utilisez **Ajouter un autre contrat logiciel** pour ajouter un contrat de licence de tiers. Vous essayez d’ajouter l’éditeur à partir de la page **Autres contrats de licence logicielle**. La page fournit une liste des éditeurs existants dans l’ordre alphabétique.
-Vous entrez l’éditeur manquant, mais l’erreur **L’éditeur n’existe pas** s’affiche. 
+Vous entrez l’éditeur manquant, mais recevez l’erreur **L’éditeur n’existe pas**. 
 
 Ceci est volontaire. Intune fournit le suivi de licence uniquement pour les logiciels les plus courants. Intune nécessite qu’au moins 4 comptes distincts signalent le logiciel avant que celui-ci ne soit disponible dans la charge de travail de licence.
 
@@ -109,6 +109,6 @@ Le tableau suivant répertorie les erreurs courantes qui peuvent se produire lor
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le Support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

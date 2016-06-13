@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de la stratégie de mise à niveau d’édition Windows dans Microsoft Intune | Microsoft Intune
+title: Paramètres de la stratégie de mise à niveau d’édition Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -44,11 +44,11 @@ Avant de commencer à mettre à niveau des appareils vers la dernière version, 
 |**Description**|Si vous le souhaitez, entrez une description pour la stratégie qui vous permet de l’identifier dans la console Intune.
 |**Édition vers laquelle mettre à niveau**|Dans la liste déroulante, sélectionnez la version de Windows 10 Desktop, Windows 10 Holographique ou Windows 10 Mobile vers laquelle vous voulez mettre à niveau les appareils ciblés.
 |**Clé du produit**|Spécifiez la clé de produit fournie par Microsoft, que vous pouvez utiliser pour mettre à niveau tous les appareils Windows 10 Desktop ciblés.<br>Une fois que vous avez créé une stratégie contenant une clé de produit, vous ne pouvez plus modifier la clé de produit. La raison en est que la clé est masquée pour des raisons de sécurité. Pour changer la clé de produit, vous devez entrer à nouveau toute la clé.
-|**Fichier de licence**|Cliquez sur **Parcourir** pour sélectionner le fichier de licence fournie par Microsoft qui contient des informations de licence pour l’édition Windows Holographique vers laquelle vous souhaitez mettre à niveau les appareils ciblés.
+|**Fichier de licence**|Cliquez sur **Parcourir** pour sélectionner le fichier de licence fournie par Microsoft qui contient des informations de licence pour l’édition Windows Holographique ou Windows 10 Mobile vers laquelle vous souhaitez mettre à niveau les appareils ciblés.
 
 ### Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

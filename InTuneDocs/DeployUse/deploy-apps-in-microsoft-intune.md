@@ -1,5 +1,5 @@
 ---
-title: Déployer des applications dans Microsoft Intune | Microsoft Intune
+title: Déployer des applications | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -52,9 +52,9 @@ Si vous avez déployé l’application comme application **Requise** sur un appa
 
 ## Étapes suivantes
 
-Après avoir déployé une application, vous pouvez surveiller sa progression. Pour plus d’informations, consultez [Surveiller des applications dans Microsoft Intune](monitor-apps-in-microsoft-intune.md).
+Après avoir déployé une application, vous pouvez surveiller sa progression. Pour plus d’informations, consultez [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Surveiller des applications dans Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

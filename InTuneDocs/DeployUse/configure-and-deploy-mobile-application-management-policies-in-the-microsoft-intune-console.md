@@ -34,10 +34,9 @@ Les stratégies de gestion des applications mobiles prennent en charge :
 
 -   les appareils qui exécutent iOS 7 et versions ultérieures.
 
-> [!TIP]
-> Les stratégies de gestion des applications mobiles prennent en charge les appareils inscrits avec Intune.
-> 
-> Si vous recherchez des informations sur la façon de créer des stratégies de gestion des applications pour les appareils qui ne sont pas gérés par Intune, consultez [Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+> [!TIP] Les stratégies de gestion des applications mobiles prennent en charge les appareils inscrits avec Intune.
+>
+> Si vous recherchez des informations sur la façon de créer des stratégies de gestion des applications pour les appareils qui ne sont pas gérés par Intune, consultez [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune).
 
 Contrairement à d’autres stratégies Intune, vous ne déployez pas directement une stratégie de gestion des applications mobiles. Au lieu de cela, vous associez la stratégie à l'application que vous voulez restreindre. Quand l'application est déployée et installée sur les appareils, les paramètres que vous spécifiez prennent effet.
 
@@ -45,7 +44,7 @@ Pour appliquer des restrictions à une application, celle-ci doit intégrer le K
 
 -   **Utiliser une application gérée par une stratégie** : intègre le SDK de l’application. Pour ajouter ce type d'application, spécifiez un lien vers l'application à partir d'un magasin d'applications tel que l'iTunes Store ou Google Play. Aucun traitement supplémentaire n'est nécessaire pour ce type d'application. Consultez la liste des [applications utilisables avec les stratégies de gestion des applications mobiles de Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
--   **Utiliser une application « encapsulée »** : il s’agit d’applications qui sont réempaquetées pour inclure le SDK d’application à l’aide de l’**outil de création de package de restrictions d’application Microsoft Intune**. On utilise généralement cet outil pour traiter les applications d'entreprise qui ont été créées en interne. Vous ne pouvez pas l'utiliser pour traiter les applications qui ont été téléchargées à partir du magasin d'applications. Consultez [Préparer des applications Android pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) et [Préparer des applications iOS pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Utiliser une application « encapsulée »** : il s’agit d’applications qui sont réempaquetées pour inclure le SDK d’application à l’aide de l’**outil de création de package de restrictions d’application Microsoft Intune**. On utilise généralement cet outil pour traiter les applications d'entreprise qui ont été créées en interne. Vous ne pouvez pas l'utiliser pour traiter les applications qui ont été téléchargées à partir du magasin d'applications. Consultez [Préparer des applications iOS pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) et [Préparer des applications Android pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 Certaines applications gérées, comme l’application Outlook pour iOS et Android, prennent en charge **plusieurs identités**. Autrement dit, Intune applique uniquement les paramètres de gestion aux comptes ou aux données d'entreprise dans l'application.
 
@@ -57,8 +56,7 @@ Par exemple, à l'aide de l'application Outlook :
 
 -   Le compte d’entreprise utilisé doit être le même compte que celui qui a été utilisé pour inscrire l’appareil avec Intune.
 
-> [!TIP]
-> Si vous utilisez Intune avec Configuration Manager, consultez [Comment contrôler des applications à l’aide de stratégies de gestion des applications mobiles dans Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP] Si vous utilisez Intune avec Configuration Manager, consultez [Comment contrôler des applications à l’aide de stratégies de gestion des applications mobiles dans Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Créer et déployer une application avec une stratégie de gestion des applications mobiles
 
@@ -87,9 +85,9 @@ Quand vous publiez une application gérée, les procédures diffèrent selon que
 
 #### Pour publier une application gérée par une stratégie
 
-1.  Quand vous êtes prêt à charger l’application sur votre espace de stockage cloud, suivez les instructions de la rubrique [Ajouter des applications pour des appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+1.  Quand vous êtes prêt à charger l’application sur votre espace de stockage cloud, suivez les instructions figurant dans [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Ajouter des applications pour des appareils mobiles dans Microsoft Intune).
 
-2.  Pour les applications iOS, sous **Spécifier comment ce logiciel doit être mis à disposition des appareils**, sélectionnez **Application iOS gérée à partir de l’App Store**.
+2.  Pour les applications iOS, sous **Spécifier comment ce logiciel doit être mis à disposition des appareils**, sélectionnez **Application iOS gérée à partir de l'App Store**.
 
     Pour les applications Android, sélectionnez **Lien externe**.
 
@@ -101,9 +99,9 @@ Une fois que vous avez vérifié que l'application a été téléchargée correc
 
 #### Pour publier une application qui a été traitée à l'aide de l'outil de création de package de restrictions d'application Microsoft Intune
 
-1.  Quand vous êtes prêt à charger l’application sur votre espace de stockage cloud, suivez les instructions de la rubrique [Ajouter des applications pour des appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+1.  Quand vous êtes prêt à charger l’application sur votre espace de stockage cloud, suivez les instructions figurant dans [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Ajouter des applications pour des appareils mobiles dans Microsoft Intune).
 
-2.  Sous **Spécifier comment ce logiciel doit être mis à disposition des appareils**, sélectionnez **Programme d’installation du logiciel**.
+2.  Sous **Spécifier comment ce logiciel doit être mis à disposition des appareils**, sélectionnez **Programme d'installation du logiciel**.
 
 3.  Sous **Sélectionnez le type de fichier du programme d’installation du logiciel**, sélectionnez **Package d’application pour iOS (fichier &#42;.ipa)**.
 
@@ -141,7 +139,7 @@ Une fois que vous avez vérifié que l'application a été téléchargée correc
     |**Exiger la conformité à la stratégie d'entreprise pour l'accès**|Autorise l'utilisation de l'application uniquement si l'appareil n'est pas jailbroken ou rooté.|
     |**Revérifier les exigences d'accès après (minutes)**|Dans le champ **Délai** , indiquez le délai au bout duquel les conditions d'accès pour l'application sont revérifiées après son démarrage.|
     |**Période de grâce hors connexion**|Si l'appareil est hors connexion, spécifiez le délai au bout duquel les conditions d'accès pour l'application sont revérifiées.|
-    |**Chiffrer les données de l'application**|Spécifie que toutes les données associées à cette application seront chiffrées, y compris les données stockées en externe, telles que les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil fourni par le système d’exploitation. Cette option est activée via la stratégie de code confidentiel d'appareil qui doit être définie par l'administrateur informatique. Quand un code confidentiel est nécessaire, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules utilisés par iOS 7 sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, le chiffrement est fourni par Microsoft. Les données sont chiffrées de manière synchrone durant les opérations d'E/S de fichier conformément au paramètre indiqué dans la stratégie de gestion des applications mobiles. Les applications gérées sur Android utilisent le chiffrement AES-128 en mode CBC, avec utilisation des bibliothèques de chiffrement de plateforme. La méthode de chiffrement n'est pas certifiée FIPS 140-2. Le contenu sur le stockage de l'appareil est toujours chiffré.|
+    |**Chiffrer les données de l'application**|Spécifie que toutes les données associées à cette application seront chiffrées, y compris les données stockées en externe, telles que les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil fourni par le système d’exploitation. Cette option est activée via la stratégie de code confidentiel d'appareil qui doit être définie par l'administrateur informatique. Quand un code confidentiel est nécessaire, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules utilisés par iOS 7 sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, le chiffrement est fourni par Microsoft. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier.  Le contenu sur le stockage de l'appareil est toujours chiffré. La méthode de chiffrement n'est pas certifiée FIPS 140-2.|
     |**Bloquer la capture d'écran** (appareils Android uniquement)|Spécifie que les fonctionnalités de capture d'écran de l'appareil sont bloquées lors de l'utilisation de cette application.|
 
 4.  Quand vous avez terminé, cliquez sur **Enregistrer la stratégie**.
@@ -153,9 +151,8 @@ Déployez l'application, en veillant à sélectionner la stratégie de gestion d
 
 Pour plus d’informations, consultez [Déployer des applications dans Microsoft Intune](deploy-apps.md).
 
-> [!IMPORTANT]
-> Pour les appareils qui exécutent des systèmes d'exploitation antérieurs à iOS 7.1, les stratégies associées ne sont pas supprimées lors de la désinstallation de l'application.
-> 
+> [!IMPORTANT] Pour les appareils qui exécutent des systèmes d’exploitation antérieurs à iOS 7.1, les stratégies associées ne sont pas supprimées lors de la désinstallation de l’application.
+>
 > Si l’appareil est désinscrit d’Intune, les stratégies ne sont pas supprimées des applications ; toute application à laquelle des stratégies étaient appliquées conservera les paramètres de stratégie, même après avoir été désinstallée et réinstallée.
 
 ### Que faire quand une application est déjà déployée sur des appareils
@@ -165,15 +162,14 @@ Dans ce cas, vous devez demander à l’utilisateur de désinstaller manuellemen
 
 Toutefois, pour les appareils qui exécutent iOS 9 et versions ultérieures, Intune demande automatiquement à l’utilisateur l’autorisation de reprendre la gestion de l’application existante. S’il est d’accord, l’application est alors gérée par Intune et les stratégies de gestion des applications mobiles que vous avez associées à l’application sont également appliquées.
 
-> [!TIP]
-> Si l’appareil est en mode supervisé, Intune reprend la gestion de l’application existante sans demander l’autorisation aux utilisateurs.
+> [!TIP] Si l’appareil est en mode supervisé, Intune reprend la gestion de l’application existante sans demander l’autorisation aux utilisateurs.
 
 ## **Étape 5 :** contrôler le déploiement de l’application.
 Une fois que vous avez créé et déployé une application associée à une stratégie de gestion des applications mobiles, appliquez les procédures suivantes pour analyser l'application et résoudre les éventuels conflits de stratégie.
 
 #### Pour afficher l'état du déploiement
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Groupes** &gt; **Vue d’ensemble**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Groupes** &gt; **Vue d’ensemble**.
 
 2.  Effectuez l'une des étapes suivantes :
 
@@ -201,9 +197,6 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 -   Si aucune stratégie n'a encore été déployée sur l'appareil et que deux paramètres en conflit sont déployés, le paramètre par défaut intégré à l'appareil est utilisé.
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

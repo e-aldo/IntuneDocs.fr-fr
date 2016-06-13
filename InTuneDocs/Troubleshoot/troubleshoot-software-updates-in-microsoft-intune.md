@@ -30,9 +30,9 @@ Aidez-vous des informations contenues dans cette section pour résoudre les prob
 
 Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
 
-Le tableau suivant répertorie les codes d’erreur de l’**agent de mise à jour** d’Intune. Si vous ne trouvez pas un code d’erreur spécifique dans ce tableau, consultez [Windows Update Agent Result Codes (Codes de résultat de l’agent de mise à jour de Windows)](http://go.microsoft.com/fwlink/?LinkID=221542).
+Le tableau suivant répertorie les codes d’erreur de l’**agent de mise à jour** d’Intune. Si vous ne trouvez pas un code d'erreur spécifique dans ce tableau, consultez [Windows Update Agent Result Codes (Codes de résultat de l'agent de mise à jour de Windows)](http://go.microsoft.com/fwlink/?LinkID=221542).
 
-|Code d’erreur|Nom symbolique|Plus d'informations|
+|Code d'erreur|Nom symbolique|Plus d'informations|
 |--------------|-----------------|--------------------|
 |**0x00cf0001**|OM_S_SERVICE_STOP|L'agent a été arrêté.|
 |**0x00cf0003**|OM_S_UPDATE_ERROR|L'opération a réussi, mais des erreurs se sont produites lors de l'application des mises à jour.|
@@ -249,25 +249,25 @@ Le tableau suivant répertorie les codes d’erreur de l’**agent de mise à jo
 - Ils cessent soudain de créer des rapports auprès de la console d’administration Microsoft.  
 - Ils subissent une utilisation élevée du processeur.
 - L’installation des applications via le portail Intune est lente. 
-- Microsoft Intune Center déclenche l’erreur suivante : *Une erreur s’est produite lors de la mise à jour de votre ordinateur. Erreur détectée : Code 0x800705b4*.
+- Microsoft Intune Center déclenche l’erreur suivante : *Une erreur s’est produite lors de la mise à jour de votre ordinateur. Erreur détectée : Code 0x800705b4*.
 - Le champ d’état dans la Console d’administration Intune > Groupes > Tous les appareils affiche ceci : *Un ou plusieurs agents installés sur cet ordinateur signalent des erreurs. Les informations de cet ordinateur sont peut-être incorrectes ou non à jour*.
 
 Ce problème peut se produire si des mises à jour remplacées (des mises à jour qui ont été remplacées par une autre mise à jour) n’ont pas été suspendues pendant une période prolongée. Au cours de certains processus, tels que l’installation d’une application, Windows vérifie toutes les mises à jour remplacées dans l’ordre afin que les mises à jour et celles qui leur succèdent puissent être correctement mappées. Si la liste des mises à jour remplacées devient trop importante, cette tâche de vérification peut entraîner une utilisation élevée du processeur en raison de la charge de traitement et du temps requis. Ce problème affecte principalement les clients qui exécutent Windows 7 en raison du grand nombre de mises à jour remplacées qui sont disponibles pour Windows 7. Windows 8 et les systèmes d’exploitation ultérieurs n’ont pas autant de mises à jour remplacées et par conséquent, ne sont pas vulnérables à ce problème.
 
 **Résolution** : pour résoudre ce problème, procédez comme suit :
-1. Connectez-vous à la [console d’administration Intune](https://manage.microsoft.com).
+1. Connectez-vous à la [console d’administration Intune](https://manage.microsoft.com)
 2. Sélectionnez **Mises à jour** > **Toutes les mises à jour**.
 3. Pour filtrer les mises à jour remplacées, utilisez l’option de filtre sur la barre d’outils supérieure.
 4. Refusez toutes les mises à jour remplacées qui peuvent s’appliquer à Windows 7 ou aux applications (par exemple, Microsoft Office) qui ont été installées sur les clients concernés. 
 5. Redémarrez les clients concernés.
 
-En outre, si vous utilisez Windows 7, assurez-vous que vous disposez de la mise à jour suivante installée :[3050265 Client de mise à jour Windows pour Windows 7 : juin 2015](https://support.microsoft.com/kb/3050265).
+En outre, si vous utilisez Windows 7, assurez-vous que vous disposez de la mise à jour suivante installée :[3050265 Client de mise à jour Windows pour Windows 7 : juin 2015](https://support.microsoft.com/kb/3050265).
 
 ### Étapes suivantes
-Si ces informations de dépannage n’ont pas permis de vous aider, contactez le Support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

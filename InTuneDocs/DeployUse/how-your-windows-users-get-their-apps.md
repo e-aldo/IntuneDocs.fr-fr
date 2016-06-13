@@ -32,17 +32,17 @@ Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux
 
 **Applications requises** : applications requises par l’administrateur qui sont installées sur l’appareil avec une intervention minime de l’utilisateur, qui varie selon la plateforme.
 
-**Applications requises** : applications fournies dans la liste de l’application Portail d’entreprise et qu’un utilisateur peut choisir d’installer.
+**Applications disponibles** : applications fournies dans la liste de l’application Portail d’entreprise et qu’un utilisateur peut choisir d’installer.
 
 **Applications gérées** : applications gérables par l’intermédiaire de stratégies et qui ont été « encapsulées » par Intune ou qui ont été créées à l’aide du Kit SDK de gestion des applications mobiles Intune. Ces applications peuvent être gérées par Intune et faire l'objet de stratégies d'application.
 
 **Applications non gérées** : applications gérables par l’intermédiaire de stratégies et qui n’ont pas été encapsulées par Intune ou qui n’intègrent pas le Kit SDK de gestion des applications mobiles Intune. Vous ne pouvez pas appliquer de stratégies d'application à ces applications.
 
-###Voir aussi
-[Comment vos utilisateurs Android obtiennent leurs applications](how-your-android-users-get-their-apps.md)</br>
-[Comment vos utilisateurs iOS obtiennent leurs applications](how-your-ios-users-get-their-apps.md)
+###Voir aussi [How your Android users get their apps](how-your-android-users-get-their-apps.md) (Comment vos utilisateurs Android obtiennent leurs applications)
+[Comment vos utilisateurs iOS obtiennent leurs applications](how-your-android-users-get-their-apps.md)</br>
+[How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

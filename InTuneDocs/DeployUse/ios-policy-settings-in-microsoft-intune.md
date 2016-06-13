@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de la stratégie d’iOS dans Microsoft Intune | Microsoft Intune
+title: Paramètres de la stratégie iOS | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ Utilisez la **stratégie de configuration générale iOS** de Microsoft Intune p
 -   **Applications conformes et non conformes** : spécifiez une liste d’applications conformes ou non conformes dans votre entreprise. Sur les appareils Android et iOS, le **Rapport sur les applications non conformes** peut être utilisé pour comparer la conformité des applications que vous avez spécifiées dans la liste aux applications que les utilisateurs ont installées (sans qu'il soit possible de bloquer l'installation de l'application).
 
 > [!TIP]
-> Vous pouvez configurer les conditions générales pour vous assurer que les utilisateurs reconnaissent le fait que des applications sur leurs appareils, y compris des applications personnelles, seront évaluées et que les applications non conformes seront bloquées signalées comme étant non conformes. Les utilisateurs doivent accepter ces conditions générales avant de pouvoir inscrire leur appareil et utiliser le portail d'entreprise pour obtenir des applications. Pour plus d’informations sur l’utilisation des conditions générales, consultez [Paramètres de stratégies associés aux conditions générales dans Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Vous pouvez configurer les conditions générales pour vous assurer que les utilisateurs reconnaissent le fait que des applications sur leurs appareils, y compris des applications personnelles, seront évaluées et que les applications non conformes seront bloquées signalées comme étant non conformes. Les utilisateurs doivent accepter ces conditions générales avant de pouvoir inscrire leur appareil et utiliser le portail d'entreprise pour obtenir des applications. Pour plus d’informations sur l’utilisation des conditions générales, consultez [Terms and conditions policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) (Paramètres de stratégies associés aux conditions générales dans Microsoft Intune).
 
 Si le paramètre que vous recherchez n’apparaît pas dans cette rubrique, vous pouvez peut-être le créer à l’aide d’une stratégie personnalisée iOS qui vous permet d’importer les paramètres vous avez créés à l’aide de l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Pour plus d’informations, consultez **Paramètres de stratégie personnalisée** plus loin dans cette rubrique.
 
@@ -160,7 +160,7 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 |**Autoriser la modification de sonnerie**|Active ou désactive le commutateur de sonnerie (désactivation du son) sur l'appareil.|
 |**Activer le bouton Veille/sortie de veille de l'écran**|Active ou désactive le bouton Veille/sortie de veille de l'écran sur l'appareil.|
 |**Autoriser le verrouillage automatique**|Active ou désactive le verrouillage automatique de l'appareil.|
-|**Activer Audio mono**|Active ou désactive le paramètre d’accessibilité **Audio mono**.|
+|**Activer Audio mono**|Active ou désactive le paramètre d'accessibilité **Audio mono**.|
 |**Activer VoiceOver**|Active ou désactive le paramètre d'accessibilité **VoiceOver** qui lit à haute voix le texte sur l'affichage de l'appareil.|
 |**Activer les réglages VoiceOver**|Active ou désactive les réglages VoiceOver qui vous permettent de régler la fonction VoiceOver (par exemple la vitesse de lecture à haute voix du texte à l'écran).|
 |**Activer le zoom**|Active ou désactive le paramètre d'accessibilité **Zoom** qui vous permet d'utiliser la fonctionnalité tactile pour agrandir l'affichage de l'appareil.|
@@ -170,8 +170,7 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 |**Activer l'assistance tactile**|Active ou désactive le paramètre d'accessibilité **Assistance tactile** qui aide les utilisateurs à effectuer des mouvements à l'écran qui peuvent être difficiles à effectuer.|
 |**Activer les réglages d'assistance tactile**|Active ou désactive les réglages d'assistance tactile qui vous permettent de régler la fonction tactile d'assistance.|
 |**Activer la sélection vocale**|Active ou désactive les paramètres d'accessibilité **Sélection Speak** qui peuvent lire à haute voix le texte que vous sélectionnez.|
-> [!NOTE]
-> Les remarques suivantes s'appliquent aux paramètres du mode plein écran pour les appareils iOS :
+> [!NOTE] Les remarques suivantes s’appliquent aux paramètres du mode plein écran pour les appareils iOS :
 > 
 > -   Avant de pouvoir configurer un appareil iOS pour le mode plein écran, vous devez utiliser l' [outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou le gestionnaire d'inscription d'appareil pour mettre l'appareil en mode supervisé. Pour plus d'informations sur l'outil Apple Configurator, consultez votre documentation pour développeurs Apple.
 > -   Si l'application iOS que vous spécifiez est installée après le déploiement de la stratégie de configuration, l'appareil ne bascule en mode plein écran qu'après son redémarrage.
@@ -185,7 +184,7 @@ Utilisez le **Rapport sur les applications non conformes** pour afficher la conf
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Rapports** &gt; **Rapport sur les applications non conformes**.
 
-2.  Sélectionnez les groupes d’appareils que vous souhaitez vérifier, si vous souhaitez vérifier les applications conformes, les applications non conformes ou les deux, puis cliquez sur **Afficher le rapport**.
+2.  Sélectionnez les groupes d'appareils que vous souhaitez vérifier, si vous souhaitez vérifier les applications conformes, les applications non conformes ou les deux, puis cliquez sur **Afficher le rapport**.
 
 #### Comment spécifier des URL de magasins d'applications
 Pour spécifier une URL d'application dans la liste des applications conformes et non conformes, ou dans l'option **Sélectionnez une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran** (iOS uniquement), utilisez le format suivant :
@@ -194,10 +193,9 @@ Pour spécifier une URL d'application dans la liste des applications conformes e
 
 Copiez l'URL de la page et utilisez-la en tant qu'URL permettant de configurer la liste des applications conformes ou non conformes, ou l'application à exécuter en mode plein écran.
 
-**Exemple :** rechercher **Microsoft Word pour iPad**. L’URL que vous utilisez sera **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Exemple :** rechercher **Microsoft Word pour iPad**. L'URL que vous utilisez sera **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE]
-> Vous pouvez également utiliser le logiciel iTunes pour rechercher l'application, puis la commande **Copier le lien** pour obtenir l'URL de l'application.
+> [!NOTE] Vous pouvez également utiliser le logiciel iTunes pour rechercher l’application, puis la commande **Copier le lien** pour obtenir l’URL de l’application.
 
 
 ## Paramètres de la stratégie personnalisée
@@ -232,6 +230,6 @@ Avant de commencer, vous devez installer l'outil Apple Configurator et créer un
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

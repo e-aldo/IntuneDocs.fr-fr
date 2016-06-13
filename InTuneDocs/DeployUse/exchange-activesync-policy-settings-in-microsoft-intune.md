@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de la stratégie Exchange ActiveSync dans Microsoft Intune | Microsoft Intune
+title: Paramètres de la stratégie Exchange ActiveSync | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -47,7 +47,7 @@ Utilisez la stratégie **Exchange ActiveSync** de Microsoft Intune pour configur
 
 |Nom du paramètre|Détails|
 |----------------|
-|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup>|Exige que les données sur l’appareil soit chiffrées quand cela est pris en charge.<br>Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.|
+|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup>|Exige que les données sur l’appareil soit chiffrées quand cela est pris en charge.<br>Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.|
 |**Exiger le chiffrement sur les cartes de stockage**|Exige que les données stockées sur un stockage externe tel qu’une carte SD soient chiffrées (sur les appareils pris en charge).
 <sup>1</sup> Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 
@@ -86,6 +86,6 @@ Utilisez la stratégie **Exchange ActiveSync** de Microsoft Intune pour configur
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

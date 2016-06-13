@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protéger des appareils avec Microsoft Intune | Microsoft Intune
+title: Protéger des appareils | Microsoft Intune
 description:
 keywords:
 author: Robstackmsft
@@ -41,9 +41,9 @@ L’[authentification multifacteur (MFA)](protect-windows-devices-with-multi-fac
 Intune vous permet d’intégrer [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) et de disposer ainsi d’une autre méthode de connexion pour Windows 10 et versions ultérieures utilisant Active Directory ou un compte Azure Active Directory pour remplacer un mot de passe, une carte à puce ou une carte à puce virtuelle.
 
 ## Protéger les PC Windows gérés avec le client Intune
-Intune continue à prendre en charge les stratégies de sécurité pour les PC Windows non inscrits mais gérés avec le logiciel client pour ordinateur Intune. Pour savoir comment ces stratégies peuvent vous aider à sécuriser vos PC Windows, consultez [Utiliser des stratégies pour protéger les PC Windows équipés du logiciel client Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md).
+Intune continue à prendre en charge les stratégies de sécurité pour les PC Windows non inscrits mais gérés avec le logiciel client pour ordinateur Intune. Pour savoir comment ces stratégies peuvent vous aider à sécuriser vos PC Windows, consultez [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Utiliser des stratégies pour protéger les PC Windows équipés du logiciel client Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

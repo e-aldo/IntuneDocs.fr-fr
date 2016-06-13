@@ -28,13 +28,13 @@ ms.suite: ems
 
 # Synchroniser votre appareil manuellement
 
-Si l’installation de votre application est trop longue, vous pouvez essayer de synchroniser votre appareil manuellement, ce qui peut vous aider à accélérer l’installation. Suivez les instructions correspondant au type d’appareil que vous utilisez :
+Si l’installation de votre application est trop longue, vous pouvez essayer de synchroniser votre appareil manuellement, ce qui peut vous aider à accélérer l’installation. Suivez les instructions ci-dessous qui correspondent au type d’appareil ou à la version de Windows que vous utilisez. Seules les versions répertoriées sont prises en charge.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
 * [iOS](sync-your-device-manually-ios.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

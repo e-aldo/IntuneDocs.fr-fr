@@ -29,11 +29,11 @@ ms.suite: ems
 
 Le cycle de vie des applications Intune commence lorsqu’une application est ajoutée et évolue en différentes phases jusqu’à sa suppression.
 
-![Le cycle de vie des applications](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![Le cycle de vie des applications](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Ajouter
 
-La première étape du déploiement d’applications consiste à ajouter celles que vous souhaitez gérer et déployer dans Intune. Il existe certes différents types d’applications avec lesquels vous pouvez travailler, mais les procédures de base sont les mêmes. Avec Intune, vous pouvez ajouter des applications pour des [appareils inscrits](add-apps-for-mobile-devices-in-microsoft-intune.md) et des [PC Windows que vous gérez avec le logiciel client Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)..
+La première étape du déploiement d’applications consiste à ajouter celles que vous souhaitez gérer et déployer dans Intune. Il existe certes différents types d’applications avec lesquels vous pouvez travailler, mais les procédures de base sont les mêmes. Avec Intune, vous pouvez ajouter des applications pour des [appareils inscrits](add-apps-for-mobile-devices-in-microsoft-intune.md) et des [PC Windows que vous gérez avec le logiciel client Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Déployer
 
@@ -53,9 +53,9 @@ Intune propose différentes manières de protéger les données dans vos applica
 
 ## Mettre hors service
 
-Enfin, il est probable que des applications que vous avez déployées deviennent obsolètes et doivent être supprimées. Intune facilite [la mise hors service d’applications](retire-apps-using-microsoft-intune.md)..
+Enfin, il est probable que des applications que vous avez déployées deviennent obsolètes et doivent être supprimées. Intune facilite [la mise hors service d’applications](retire-apps-using-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

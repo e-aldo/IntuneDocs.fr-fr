@@ -30,13 +30,13 @@ ms.suite: ems
 Le **portail Azure** permet de créer et de gérer des stratégies de gestion des applications mobiles.
 
 Il prend en charge la création de stratégies de gestion des applications mobiles pour :
-- Les applications qui s’exécutent sur des appareils **inscrits et gérés par Intune**.
+- Les applications qui s’exécutent sur des appareils **inscrits et gérés par Intune**
 - Les applications qui s’exécutent sur des appareils qui ne sont inscrits dans **aucune** solution de gestion des appareils mobiles.
 - Les applications qui s’exécutent sur des appareils qui sont **inscrits dans une solution de gestion des appareils mobiles tierce**.
 
 Si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer une stratégie de gestion des applications mobiles qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
-> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Le portail Azure est la nouvelle console d’administration pour créer des stratégies de gestion des applications mobiles.
+> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Le portail Azure est la nouvelle console d’administration pour créer des stratégies de gestion des applications mobiles. Si vous créez de telles stratégies sur la console d’administration Intune et le portail Azure, la stratégie dans le portail Azure est appliquée aux applications et déployée vers les utilisateurs.
 
 ## Se connecter au portail Azure et personnaliser la page de démarrage
 
@@ -64,6 +64,6 @@ Si vous utilisez actuellement la **console d’administration Intune** pour gér
 [Préparez-vous à configurer des stratégies de gestion des applications mobiles](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

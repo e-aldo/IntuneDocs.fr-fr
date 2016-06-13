@@ -48,12 +48,11 @@ Les stratégies de gestion des applications mobiles (GAM) sont appliquées uniqu
 
     ![Capture d’écran de l’application OneDrive demandant un code confidentiel](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  Une fois le code confidentiel défini et confirmé, vous pouvez accéder aux fichiers figurant dans votre espace **OneDrive Entreprise**.
+5.  Une fois que vous avez défini et confirmé le code confidentiel, vous êtes en mesure d’accéder aux fichiers figurant dans votre espace **OneDrive Entreprise**.
 
     ![Capture d’écran montrant l’emplacement de fichier à ouvrir avec la liste des fichiers existants](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE]
-    > Lorsque vous modifiez une stratégie déployée, les modifications sont appliquées la prochaine fois que vous ouvrez l’application.
+    > [!NOTE] Lorsque vous modifiez une stratégie déployée, les modifications sont appliquées la prochaine fois que vous ouvrez l’application.
 
 ##  Accès à OneDrive sur un appareil Android
 
@@ -141,7 +140,7 @@ Sur un appareil iOS, si vous essayez d’ajouter un deuxième compte professionn
 
 ![Capture d’écran de la boîte de dialogue avec le message de blocage et les options Oui et Non](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Sur un appareil Android, un message de blocage peut s’afficher avec des instructions permettant de supprimer le compte existant et d’en ajouter un nouveau.  Sur les appareils Android, pour supprimer le compte existant, accédez à **Paramètres &gt; Général &gt; Gestionnaire d’applications &gt; Portail d’entreprise et sélectionnez « Effacer les données »**.
+Sur un appareil Android, un message de blocage peut s’afficher avec des instructions permettant de supprimer le compte existant et d’en ajouter un nouveau.  Sur les appareils Android, pour supprimer le compte existant, accédez à **Paramètres &gt;Général &gt; Gestionnaire d’applications &gt;Portail d’entreprise et sélectionnez « Effacer les données »**.
 
 ![Capture d’écran du message d’erreur et des instructions pour supprimer le compte](../media/AppManagement/Android_SwitchUser.png)
 
@@ -150,11 +149,19 @@ Pour afficher les fichiers image, AV et PDF de la société sur des appareils An
 
 Vous pouvez télécharger cette application à partir de la boutique Google Play.  Une fois l’application installée sur votre appareil, lancez-la et authentifiez-vous avec vos informations d’identification professionnelles. Vous devriez maintenant pouvoir afficher les fichiers protégés et non protégés à partir d’autres applications gérées par une stratégie.
 
+**Appareils Android non inscrits dans Intune**
+
+Avant de pouvoir utiliser l’application de partage RMS pour afficher les fichiers à partir d’autres applications gérées par Intune, lancez l’application RMS et authentifiez-vous avec votre compte professionnel.  Lorsque vous vous connectez, vous voyez le message suivant **seulement si vous n’avez pas de licence RMS** :
+
+**Authentification réussie – Vous pouvez désormais afficher les fichiers d’entreprise, mais votre organisation n’est pas configurée pour vous permettre de protéger des fichiers. Contactez votre administrateur pour plus d’informations.**
+
+Cela ne vous empêche pas d’utiliser l’application de partage RMS pour afficher les fichiers de l’entreprise. Vous pouvez encore ouvrir et afficher les fichiers de l’entreprise à partir d’autres applications gérées par Intune, et les stratégies GAM s’appliquent encore.  Ce message stipule que vous ne serez pas en mesure d’ajouter les fonctionnalités de protection supplémentaires fournies par l’application de partage RMS.  Vous devez disposer d’une licence RMS pour ajouter une protection à vos fichiers. Pour en savoir plus sur les fonctionnalités de protection de fichiers RMS, consultez [Protéger un fichier sur un appareil](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) et [Protéger un fichier que vous partagez par courrier électronique](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
+
 
 ### Voir aussi
 [Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

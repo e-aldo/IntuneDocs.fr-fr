@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurer des applications iOS avec des stratégies de configuration des applications mobiles dans Microsoft Intune | Microsoft Intune
+title: Configurer des applications iOS avec des stratégies de configuration des applications mobiles | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -42,13 +42,12 @@ Les stratégies de configuration des applications mobiles peuvent vous aider à 
 
 Vous ne déployez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt la stratégie à une application que vous déployez ensuite. Les paramètres de stratégie sont utilisés chaque fois que l’application les vérifie (en général, lors de sa première exécution).
 
-> [!TIP]
-> Ce type de stratégie est actuellement disponible uniquement pour les appareils exécutant iOS 7.1 et versions ultérieures, et prend en charge les types d’installation d’application suivants :
+> [!TIP] Ce type de stratégie est actuellement disponible uniquement pour les appareils exécutant iOS 7.1 et versions ultérieures, et prend en charge les types d’installation d’application suivants :
 > 
 > -   **Application iOS gérée à partir de l'App Store**
 > -   **Package d'application pour iOS**
 > 
-> Pour plus d’informations sur les types d’installation d’application, consultez [Déployer des applications avec Microsoft Intune](deploy-apps.md).
+> Pour plus d’informations sur les types d’installation d’application, consultez [Deploy apps with Microsoft Intune](deploy-apps.md) (Déployer des applications avec Microsoft Intune).
 
 ## Configurer une stratégie de configuration des applications mobiles
 
@@ -63,8 +62,7 @@ Vous ne déployez pas ces stratégies directement sur les appareils et utilisate
 
 4.  Dans la section **Stratégie de configuration des applications mobiles** de la page, entrez ou collez dans la zone une liste de propriétés XML qui contient les paramètres de configuration d’application souhaités.
 
-    > [!TIP]
-    > Pour en savoir plus sur les listes de propriétés XML, consultez [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) sur le site iOS Developer Library.
+    > [!TIP] Pour en savoir plus sur les listes de propriétés XML, consultez [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Présentation des listes de propriétés XML) sur le site iOS Developer Library.
     > 
     > Le format de la liste de propriétés XML varie en fonction de l’application que vous configurez. Pour plus d’informations sur le format exact à utiliser, contactez le fournisseur de l’application.
     > 
@@ -81,15 +79,7 @@ Vous ne déployez pas ces stratégies directement sur les appareils et utilisate
     >
         > De plus, Intune prend en charge les types de jetons suivants dans la liste de propriétés :
     >    
-    > \{\{userprincipalname\}\} - (Exemple : **John@contoso.com**)
-    > \{\{mail\}\} - (Exemple : **John@contoso.com**)
-    > \{\{partialupn\}\} - (Exemple : **John**)
-    > \{\{accountid\}\} - (Exemple : **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-    > \{\{deviceid\}\} - (Exemple : **b9841cd9-9843-405f-be28-b2265c59ef97**)
-    > \{\{userid\}\} - (Exemple : **3ec2c00f-b125-4519-acf0-302ac3761822**)
-    > \{\{username\}\} - (Exemple : **John Doe**)
-    > \{\{serialnumber\}\} - (Exemple : **F4KN99ZUG5V2**) pour les appareils iOS
-    > \{\{serialnumberlast4digits\}\} - (Exemple : **G5V2**) pour les appareils iOS
+    > \{\{userprincipalname\}\} - (Exemple : **John@contoso.com**) \{\{mail\}\} - (Exemple : **John@contoso.com**) \{\{partialupn\}\} - (Exemple : **John**) \{\{accountid\}\} - (Exemple : **fc0dc142-71d8-4b12-bbea-bae2a8514c81**) \{\{deviceid\}\} - (Exemple : **b9841cd9-9843-405f-be28-b2265c59ef97**) \{\{userid\}\} - (Exemple : **3ec2c00f-b125-4519-acf0-302ac3761822**) \{\{username\}\} - (Exemple : **John Doe**) \{\{serialnumber\}\} - (Exemple : **F4KN99ZUG5V2**) pour les appareils iOS \{\{serialnumberlast4digits\}\} - (Exemple : **G5V2**) pour les appareils iOS
 >
 > Les caractères \{\{ et \}\} sont utilisés uniquement par les types de jetons. Ils ne doivent pas être utilisés à d’autres fins.
 
@@ -114,8 +104,7 @@ Ensuite, continuez le déploiement de l’application et surveillez-le comme d�
 
 Quand l’application déployée est exécutée sur un appareil, elle s’exécute avec les paramètres que vous avez configurés dans la stratégie de configuration des applications mobiles.
 
-> [!TIP]
-> Si une ou plusieurs stratégies de configuration des applications mobiles sont en conflit, aucune stratégie n’est appliquée et le conflit est signalé dans le **Tableau de bord** de la console d’administration Intune..
+> [!TIP] Si une ou plusieurs stratégies de configuration des applications mobiles sont en conflit, aucune stratégie n’est appliquée et le conflit est signalé dans le **Tableau de bord** de la console d’administration Intune.
 
 ## Exemple de format de fichier XML de configuration d’application mobile
 
@@ -150,6 +139,6 @@ Quand vous créez un fichier de configuration d’application mobile, vous pouve
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

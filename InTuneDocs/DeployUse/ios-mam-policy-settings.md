@@ -33,8 +33,7 @@ Il existe deux catégories de paramètres de stratégie : Réadressage des donn
 ##  Paramètres de réadressage des données
 Le terme **Applications gérées par la stratégie** est utilisé pour désigner les applications qui sont configurées avec des stratégies de gestion des applications mobiles.
 
-- **Interdire les sauvegardes iTunes et iCloud :**
-  Choisissez **Oui** pour interdire ou **Non** pour autoriser la sauvegarde des données d’entreprise à partir des applications gérées par la stratégie.
+- **Interdire les sauvegardes iTunes et iCloud :** choisissez **Oui** pour désactiver ou **Non** pour autoriser la sauvegarde des données d’entreprise à partir des applications gérées par la stratégie.
 
   **Valeur par défaut = Oui**
 
@@ -54,13 +53,11 @@ Le terme **Applications gérées par la stratégie** est utilisé pour désigner
 
   **Valeur par défaut = Toutes les applications**
 
-- **Interdire l’option Enregistrer sous :**
-  Sélectionnez **Oui** pour interdire l’utilisation de l’option Enregistrer sous dans toutes les applications utilisant cette stratégie. Choisissez **Non** pour autoriser l’utilisation de l’option Enregistrer sous.
+- **Empêcher Enregistrer sous :** sélectionnez **Oui** pour désactiver l’utilisation de l’option Enregistrer sous dans toute application qui utilise cette stratégie. Choisissez **Non** pour autoriser l’utilisation de l’option Enregistrer sous.
 
   **Valeur par défaut = Oui**
 
-- **Restreindre les opérations Couper, Copier et Coller avec d’autres applications :**
-Spécifiez quand les opérations couper, copier et coller doivent être limitées. Choisissez parmi :
+- **Restreindre les opérations couper, copier et coller avec d’autres applications :** spécifiez quand les opérations Couper, Copier et Coller doivent être limitées. Choisissez parmi :
   -   **Bloqué** : interdire les opérations Couper, Copier et Coller entre les applications gérées par la stratégie.
   -   **Applications gérées par la stratégie** : autoriser les opérations Couper, Copier et Coller seulement entre les applications gérées par la stratégie.
   -   **Applications gérées par la stratégie avec Coller dans** : autoriser les opérations Couper et Copier entre les applications gérées par la stratégie. Autorisez le collage dans cette application des données coupées ou copiées depuis n’importe quelle application.
@@ -72,11 +69,11 @@ Spécifiez quand les opérations couper, copier et coller doivent être limitée
 
   Pour les appareils non inscrits dans Intune, les liens web contenus dans les applications gérées par la stratégie peuvent s’ouvrir uniquement dans l’application Managed Browser qui utilise la stratégie de gestion des applications mobiles.
 
-  Si vous utilisez Intune pour gérer vos appareils, consultez [Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)..
+  Si vous utilisez Intune pour gérer vos appareils, consultez [Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Valeur par défaut = Oui**
 
-- **Chiffrer les données de l’application :** pour les applications associées à une stratégie de gestion des applications mobiles [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les données sont chiffrées au repos en utilisant le chiffrement au niveau de l’appareil fourni par le système d’exploitation. Quand un code confidentiel est nécessaire, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules utilisés par iOS 7 sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739)..
+- **Chiffrer les données de l’application :** pour les applications associées à une stratégie de gestion des applications mobiles [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les données sont chiffrées au repos en utilisant le chiffrement au niveau de l’appareil fourni par le système d’exploitation. Quand un code confidentiel est nécessaire, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules utilisés par iOS 7 sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).
 
   Dans les paramètres de stratégie, vous pouvez spécifier des valeurs de chiffrement de code confidentiel.  Ces valeurs déterminent quand les données sont chiffrées. Les options disponibles sont :
   - **Quand l’appareil est verrouillé :** toutes les données d’application associées à cette stratégie sont chiffrées pendant que l’appareil est verrouillé.
@@ -93,16 +90,18 @@ Spécifiez quand les opérations couper, copier et coller doivent être limitée
   **Valeur par défaut = Oui**
 ##  Paramètres de stratégie d’accès à iOS
 Le terme **Applications gérées par la stratégie** est utilisé pour désigner les applications qui sont configurées avec des stratégies de gestion des applications mobiles.
-- **Demander un code confidentiel simple pour l’accès :** choisissez **Oui** pour exiger un code confidentiel pour l’utilisation des applications gérées par la stratégie. L’utilisateur est invité à définir ce code lors de la première exécution de l’application dans un contexte de travail.
+- **Exiger un code confidentiel pour l’accès :** choisissez **Oui** pour exiger un code confidentiel pour l’utilisation des applications gérées par la stratégie. L’utilisateur est invité à définir ce code lors de la première exécution de l’application dans un contexte de travail.
 
   **Valeur par défaut = Oui**
-- **Nombre de tentatives avant réinitialisation du code confidentiel :** spécifiez le nombre de tentatives que peut effectuer l’utilisateur pour entrer le code confidentiel avant d’être obligé de le réinitialiser.
-
+    -  **Autoriser un code confidentiel simple :** spécifiez s’il faut autoriser les utilisateurs à utiliser des séquences de code confidentiel simples telles que 1234 ou 1111. **Valeur par défaut = Oui**.
+    - **Longueur du code confidentiel :** spécifiez le nombre minimal de chiffres ou de caractères d’un code confidentiel. **Valeur par défaut = 4**
+    - **Nombre de tentatives avant réinitialisation du code confidentiel :** spécifiez le nombre de tentatives que peut effectuer l’utilisateur pour entrer le code confidentiel avant d’être obligé de le réinitialiser.
   **Il n’existe pas de valeur par défaut pour ce paramètre**.
-- **Demander une empreinte digitale au lieu d’un code confidentiel (iOS 8.0 et ultérieur) :** choisissez **Oui** pour demander une identification par empreinte digitale à la place d’un code confidentiel pour accéder à l’application.
+
+  - **Demander une empreinte digitale au lieu d’un code confidentiel (iOS 8.0 et ultérieur) :** choisissez **Oui** pour demander une identification par empreinte digitale à la place d’un code confidentiel pour accéder à l’application.
 Sur les appareils iOS, vous pouvez autoriser les utilisateurs à s’identifier à l’aide d’une empreinte digitale sur des appareils iOS au lieu d’un code confidentiel. Quand l’utilisateur final tente d’accéder à l’application en utilisant son compte professionnel, il est invité à s’identifier par empreinte digitale au lieu d’entrer un code confidentiel.
 
-  **Valeur par défaut = Oui**
+    **Valeur par défaut = Oui**
 - **Exiger des informations d’identification d’entreprise pour l’accès :** choisissez **Oui** pour exiger des informations d’identification d’entreprise au lieu d’un code confidentiel pour accéder à l’application. **Si vous affectez la valeur Oui à ce paramètre, il se substitue à l’obligation de recourir à un code confidentiel ou à un ID tactile.** L’utilisateur est invité à fournir ses informations d’identification d’entreprise.
 
   **Valeur par défaut = Non**
@@ -113,11 +112,11 @@ Sur les appareils iOS, vous pouvez autoriser les utilisateurs à s’identifier 
   -   **Période de grâce hors connexion :** si l’appareil est hors connexion, spécifiez la période de temps (en minutes) au terme de laquelle les conditions d’accès à l’application sont revérifiées.
 
   **Valeur par défaut = délai d’attente de 30 minutes et période de grâce hors connexion de 720 minutes**
-  - **Intervalle en mode hors connexion avant la réinitialisation des données d’application (en jours) :** vous pouvez choisir de réinitialiser les données d’entreprise si un appareil est resté hors connexion pendant un certain temps.  Spécifiez le nombre de jours pendant lesquels un appareil peut rester hors connexion avant que les données d’entreprise soient supprimées de l’appareil. **Une valeur de 0 désactive ce paramètre.**.
+  - **Intervalle en mode hors connexion avant la réinitialisation des données d’application (en jours) :** vous pouvez choisir de réinitialiser les données d’entreprise si un appareil est resté hors connexion pendant un certain temps.  Spécifiez le nombre de jours pendant lesquels un appareil peut rester hors connexion avant que les données d’entreprise soient supprimées de l’appareil. **Une valeur de 0 désactive ce paramètre**.
 
   **Valeur par défaut = 90 jours**
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

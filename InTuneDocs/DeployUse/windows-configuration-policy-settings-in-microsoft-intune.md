@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de la stratégie Windows dans Microsoft Intune | Microsoft Intune
+title: Paramètres de la stratégie Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Paramètres de la stratégie Windows dans Microsoft Intune
-Utilisez la **stratégie de configuration générale Windows** Microsoft Intune pour configurer les paramètres des appareils Windows 8 et Windows 8.1 inscrits :
+Utilisez la **stratégie de configuration générale Windows (Windows 8.1 et versions ultérieures)** Microsoft Intune pour configurer les paramètres des appareils Windows 8 et Windows 8.1 inscrits :
+
+## Paramètres d’applicabilité
+
+|Nom du paramètre|Détails|
+|----------------|----------------------------------|
+|**Appliquer toutes les configurations à Windows 10**|Permet aux paramètres de cette stratégie d’être appliqués aux appareils Windows 10 en plus des appareils Windows 8 et Windows 8.1.|
 
 ## Paramètres de sécurité
 
@@ -119,6 +125,6 @@ Utilisez la **stratégie de configuration générale Windows** Microsoft Intune 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

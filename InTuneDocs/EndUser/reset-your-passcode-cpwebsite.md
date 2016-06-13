@@ -30,14 +30,13 @@ ms.suite: ems
 
 Si vous perdez le code confidentiel ou le mot de passe d’un appareil que vous avez inscrit dans Intune, vous pouvez utiliser le [site web du portail d’entreprise](http://portal.manage.microsoft.com) pour le réinitialiser. Le site web du portail d’entreprise est une page web que vous pouvez utiliser pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
 
-> [!NOTE] 
-> La présence du bouton Réinitialiser le mot de passe sur le site web du portail d’entreprise dépend de la façon dont votre administrateur informatique a configuré Intune. La réinitialisation du code d’accès n’est pas prise en charge sur les appareils Windows 8.1 et Windows RT.
+> [!NOTE] La présence du bouton Réinitialiser le code d’accès sur le site web Portail d’entreprise dépend de la façon dont votre administrateur a configuré Intune. La réinitialisation du code d’accès n’est pas prise en charge sur les appareils Windows 8.1 et Windows RT.
 
 Pour réinitialiser votre code d’accès
 
 1.  Ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com) sur l’appareil dont vous souhaitez réinitialiser le code d’accès.
 
-2.  Cliquez sur **Réinitialiser le code secret**.
+2.  Cliquez sur **Réinitialiser le code d’accès**.
 
     ![appuyer-code-secret-à-réinitialiser](./media/iwp-1-tap-reset-passcode.png)
 
@@ -45,7 +44,7 @@ Pour réinitialiser votre code d’accès
 
     ![déconnexion-reconnexion](./media/iwp-2-sign-out.png)
 
-4.  Cliquez sur **Réinitialiser le code secret**.
+4.  Cliquez sur **Réinitialiser le code d’accès**.
 
     ![appuyer-réinitialiser-code secret](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
@@ -66,6 +65,6 @@ Pour réinitialiser votre code d’accès
 ### Voir aussi
 [Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

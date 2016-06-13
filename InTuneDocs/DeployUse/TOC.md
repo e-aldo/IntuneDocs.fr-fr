@@ -30,7 +30,7 @@
 
 ### [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [Paramètres iOS](ios-policy-settings-in-microsoft-intune.md)
-#### [Paramètres Android](android-policy-settings-in-microsoft-intune.md)
+#### [Paramètres Android et Samsung KNOX](android-policy-settings-in-microsoft-intune.md)
 #### [Paramètres Windows 8 et Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Paramètres Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Paramètres Windows 10 Desktop et Mobile](windows-10-policy-settings-in-microsoft-intune.md)
@@ -106,6 +106,7 @@
 ### [Préparer des applications métier pour la gestion des appareils mobiles](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Encapsuler les applications iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Encapsuler les applications Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Applications métier sur des appareils non gérés par Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Utiliser le Kit de développement logiciel (SDK) lorsque vous écrivez une application](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
@@ -120,9 +121,11 @@
 
 ## [Nouveautés](whats-new-in-microsoft-intune.md)
 
+# [Développer et personnaliser des applications](/intune/develop/intune-app-sdk)
+
 # [Dépannage](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

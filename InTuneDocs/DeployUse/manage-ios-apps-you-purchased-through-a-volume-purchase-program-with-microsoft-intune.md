@@ -49,11 +49,11 @@ Avant de commencer, vous devez obtenir un jeton VPP auprès d’Apple et le char
 
 ## Pour obtenir et charger un jeton Apple VPP
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Admin** &gt; **iOS et Mac OS X** &gt;  **VPP (Volume Purchase Program)**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Administration** &gt; **iOS et Mac OS X** &gt; **VPP (Volume Purchase Program)**.
 
 2.  Cliquez sur le lien **Compte Apple VPP** et, si ce n’est déjà fait, inscrivez-vous au programme « Volume Purchase Program for Business ». Une fois inscrit, téléchargez le jeton Apple VPP pour votre compte.
 
-3.  Dans la page **Gérer un VPP (Volume Purchase Program) Apple** de la console Intune, cliquez sur **Charger le jeton VPP**.
+3.  Sur la page **Gérer un VPP (Volume Purchase Program) Apple** de la console Intune, cliquez sur **Charger le jeton VPP**.
 
 4.  Dans la boîte de dialogue **Charger le jeton VPP**, entrez ou collez le nom du jeton VPP et votre ID Apple, puis cliquez sur **Charger**.
 
@@ -61,13 +61,13 @@ Avant de commencer, vous devez obtenir un jeton VPP auprès d’Apple et le char
 
 Dans la page **VPP (Volume Purchase Program)**, vous pouvez maintenant voir des informations sur le jeton Apple VPP, notamment quand a eu lieu sa dernière mise à jour, ainsi que sa date d’expiration et la date de sa dernière synchronisation avec Intune.
 
-Vous pouvez synchroniser les données détenues par Apple avec Intune à tout moment en cliquant sur **Synchroniser maintenant**..
+Vous pouvez synchroniser les données détenues par Apple avec Intune à tout moment en cliquant sur **Synchroniser maintenant**.
 
-## Charger et déployer une application achetée en volume
+## Pour déployer une application achetée en volume
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Applications** &gt; **Logiciels gérés** &gt; **Applications achetées en volume**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Applications** &gt; **Logiciels gérés** &gt; **Applications achetées en volume**. Cette liste répertorie toutes les applications qui ont été synchronisées à partir du service Apple VPP.
 
-2.  Suivez les instructions de la rubrique [Ajouter des applications pour des appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) pour effectuer le chargement, la création et le déploiement de l’application.
+2.  Choisissez l’application que vous souhaitez déployer, cliquez sur **Gérer le déploiement**, puis suivez les instructions de la rubrique [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md) pour effectuer le chargement, la création et le déploiement de l’application.
 
 Quand vous déployez l’application comme **Installation requise**, une licence est utilisée par chaque utilisateur qui l’installe.
 
@@ -75,22 +75,20 @@ Pour récupérer une licence, remplacez l’action de déploiement par **Désins
 
 Quand un utilisateur avec un appareil éligible essaie pour la première fois d’installer une application VPP, il est invité à participer au programme VPP d’Apple. Il doit accepter pour que l’installation de l’application se poursuivre.
 
-> [!TIP]
-> Examinez la colonne **État des conditions d’utilisation du VPP** pour voir l’état d’acceptation de chaque utilisateur pour lequel l’application a été déployée.
+> [!TIP] Examinez la colonne **État des conditions d’utilisation du VPP** pour voir l’état d’acceptation de chaque utilisateur pour lequel l’application a été déployée.
 
 S’il n’y a plus de licence disponible, le déploiement échoue.
 
 ## Surveiller les applications Apple VPP
 Vous pouvez surveiller les applications VPP qui ont été déployées et le nombre de licences utilisées à partir de l’espace de travail **Applications**, dans le nœud **Logiciels gérés** &gt; **Applications achetées en volume**.
 
-> [!TIP]
-> Vous pouvez également utiliser des **Filtres** d’application pour examiner l’état de chaque installation d’application.
+> [!TIP] Vous pouvez également utiliser des **Filtres** d’application pour examiner l’état de chaque installation d’application.
 
 ### Voir aussi
-[Ajouter des applications pour des appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

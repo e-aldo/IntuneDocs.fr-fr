@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,14 +41,13 @@ Pour rechercher de l’aide sans assistance sur Intune, consultez [Conseils gén
 
     -   Pour tous les autres problèmes liés à Intune, sélectionnez **Gestion des appareils mobiles**. Cette option concerne aussi la gestion des appareils mobiles Office 365 et System Center Configuration Manager avec Intune.
 
-    > [!NOTE]
-    > Vous devez peut-être cliquer sur **plus** en bas de la liste pour afficher toutes les catégories.
+    > [!NOTE] Vous devrez peut-être cliquer sur **plus** en bas de la liste pour afficher toutes les catégories.
 
 3.  Dans la page **identifier le problème**, sélectionnez la **fonctionnalité** et le **symptôme** pour lesquels vous avez besoin d’aide. Vous serez invité à fournir un **récapitulatif du problème** et les **détails du problème**.
 
 4.  Dans la page **examiner les suggestions**, vous pouvez cliquer sur des liens vers du contenu susceptible de vous aider à résoudre le problème par vous-même.  Si vous ne parvenez pas à résoudre le problème, vous pouvez cliquer sur **Oui, continuer** en bas de la page pour envoyer votre demande de service.
 
-5.  Dans la page **ajouter des détails**, fournissez les informations demandées. Vous pouvez joindre des captures d’écran ou d’autres documents en cliquant sur **joindre un fichier**..
+5.  Dans la page **ajouter des détails**, fournissez les informations demandées. Vous pouvez joindre des captures d’écran ou d’autres documents en cliquant sur **joindre un fichier**.
 
 6.  Dans la page **confirmer et envoyer**, fournissez les coordonnées, examinez votre demande, puis cliquez sur **Envoyer la demande**. Une fois la demande envoyée, vous êtes redirigé vers la liste de vos demandes de service.
 
@@ -59,7 +58,7 @@ Consultez [Contacter le support par téléphone pour Microsoft Intune](contact-a
 Pour effectuer le suivi de vos demandes, accédez au [Centre d’administration Office 365](https://portal.office.com/admin/default.aspx). En bas de la liste **Créer une demande de service**, cliquez sur **Afficher tous les tickets de support**. Par défaut, toutes vos demandes de service à l’état ouvert sont affichées. Pour modifier le type de demande de service affiché, par exemple, pour voir les demandes fermées, cliquez sur l’icône de filtre dans le volet de navigation supérieur et sélectionnez votre affichage préféré.
 
 > [!NOTE]
-> **Si vous utilisez Microsoft System Center Configuration Manager** ou **Microsoft System Center Endpoint Protection** : pour obtenir du support technique sur Configuration Manager ou Endpoint Protection, contactez votre partenaire ou visitez le [Centre de solutions Microsoft System Center Configuration Manager et System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) qui propose des documents d’auto-assistance élaborés, avec la possibilité d’ouvrir une demande de support en ligne ou par téléphone.
+> **Si vous utilisez Microsoft System Center Configuration Manager** ou **Microsoft System Center Endpoint Protection :** pour bénéficier d’un support technique sur Configuration Manager ou Endpoint Protection, contactez votre partenaire ou visitez le [Centre de solutions Microsoft System Center Configuration Manager et System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) qui propose des documents d’auto-assistance élaborés, avec la possibilité d’ouvrir une demande de support en ligne ou par téléphone.
 >
 > Le support technique pour System Center Configuration Manager ou System Center Endpoint Protection nécessite un règlement ou est décrémenté de vos contrats de licence ou Premier Support existants.
 
@@ -148,6 +147,6 @@ Notre rôle est de :
 [Forum aux questions sur Microsoft Intune](/intune/understand-explore/frequently-asked-questions-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de la stratégie de configuration Android dans Microsoft Intune | Microsoft Intune
+title: Paramètres de la stratégie de configuration Android et Samsung KNOX | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Paramètres de la stratégie de configuration Android dans Microsoft Intune
+# Paramètres de la stratégie de configuration Android et Samsung KNOX dans Microsoft Intune
 
 ## Stratégie de configuration générale
 
@@ -38,7 +38,7 @@ Utilisez la **stratégie de configuration générale Android** de Microsoft Intu
 -   **Applications conformes et non conformes** : spécifiez une liste d’applications conformes ou non conformes dans votre entreprise. Sur les appareils Android et iOS, le **Rapport sur les applications non conformes** peut être utilisé pour comparer la conformité des applications que vous avez spécifiées dans la liste aux applications que les utilisateurs ont installées (sans qu'il soit possible de bloquer l'installation de l'application).
 
 > [!TIP]
-> Vous pouvez configurer les conditions générales pour vous assurer que les utilisateurs reconnaissent le fait que des applications sur leurs appareils, y compris des applications personnelles, seront évaluées et que les applications non conformes seront bloquées signalées comme étant non conformes. Les utilisateurs doivent accepter ces conditions générales avant de pouvoir inscrire leur appareil et utiliser le portail d'entreprise pour obtenir des applications. Pour plus d’informations sur l’utilisation des conditions générales, consultez [Paramètres de stratégies associés aux conditions générales dans Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Vous pouvez configurer les conditions générales pour vous assurer que les utilisateurs reconnaissent le fait que des applications sur leurs appareils, y compris des applications personnelles, seront évaluées et que les applications non conformes seront bloquées signalées comme étant non conformes. Les utilisateurs doivent accepter ces conditions générales avant de pouvoir inscrire leur appareil et utiliser le portail d'entreprise pour obtenir des applications. Pour plus d’informations sur l’utilisation des conditions générales, consultez [Paramètres de la stratégie de conditions générales dans Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique, vous pourrez peut-être le créer à l’aide d’une stratégie personnalisée Android qui vous permet d’utiliser des paramètres OMA-URI pour contrôler l’appareil. Pour plus d’informations, consultez **Paramètres de stratégie personnalisée** plus loin dans cette rubrique.
 
@@ -107,7 +107,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 |**Autoriser le stockage amovible**|Autorise l’appareil à utiliser du stockage amovible, comme une carte SD.|Non|Oui|
 |**Autoriser le Wi-Fi**|Autorise l’utilisation des fonctionnalités Wi-Fi de l’appareil.|Non|Oui|
 |**Autoriser la connexion Wi-Fi**|Autorise l’utilisation de la connexion Wi-Fi sur l’appareil.|Non|Oui|
-|**Autoriser la géolocalisation**|Autorise l’appareil à utiliser les informations d’emplacement.|Non|Oui|
+|**Autoriser la géolocalisation**|Permet à l'appareil d'utiliser les informations d'emplacement.|Non|Oui|
 |**Autoriser NFC**|Autorise les opérations qui utilisent la communication en champ proche si l’appareil la prend en charge.|Non|Oui|
 |**Autoriser Bluetooth**|Autorise l’utilisation de la fonction Bluetooth sur l’appareil.|Non|Oui|
 |**Autoriser l'extinction**|Autorise l’utilisateur à mettre l’appareil hors tension.<br /><br />Si ce paramètre est désactivé, le paramètre **Nombre d’échecs de connexion successifs autorisé avant réinitialisation de l’appareil** pour les appareils Samsung KNOX ne fonctionne pas.|Non|Oui|
@@ -131,7 +131,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 |**Autoriser YouTube**|Autoriser l’utilisation de YouTube sur l’appareil.|Non|Oui|
 
 ### Paramètres des applications conformes et non conformes
-Dans la liste **Applications conformes &amp; non conformes**, spécifiez une liste d’applications conformes ou non conformes à l’aide des informations suivantes :
+Dans la liste **Applications conformes &amp; non conformes**, spécifiez une liste d’applications conformes ou non conformes à l’aide des informations suivantes :
 
 > [!NOTE]
 > Une stratégie ne peut contenir qu'une liste d'applications conformes ou une liste d'applications non conformes. Vous ne pouvez pas spécifier les deux dans la même stratégie.
@@ -150,7 +150,7 @@ Spécifiez les paramètres suivants pour les **appareils Samsung KNOX** :
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
-|**Sélectionner une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran**|Cliquez sur **Parcourir**, puis sélectionnez l’application gérée ou une application dans un magasin dont l’exécution est autorisée quand l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil.<br /><br />Pour obtenir de l’aide, consultez Comment spécifier des URL de magasins d’applications plus loin dans cette rubrique.|
+|**Sélectionner une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran**|Cliquez sur **Parcourir**, puis sélectionnez l’application gérée qui sera autorisée à s’exécuter quand l’appareil sera en mode plein écran (les applications spécifiées comme un lien vers le magasin ne sont pas prises en charge actuellement). Aucune autre application ne pourra s'exécuter sur l'appareil.|
 |**Autoriser les boutons de volume**|Active ou désactive l'utilisation des boutons de volume sur l'appareil.|
 |**Activer le bouton Veille/sortie de veille de l'écran**|Active ou désactive le bouton Veille/sortie de veille de l'écran sur l'appareil.|
 
@@ -163,10 +163,10 @@ Utilisez le **Rapport sur les applications non conformes** pour afficher la conf
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Rapports** &gt; **Rapport sur les applications non conformes**.
 
-2.  Sélectionnez les groupes d’appareils que vous souhaitez vérifier, si vous souhaitez vérifier les applications conformes, les applications non conformes ou les deux, puis cliquez sur **Afficher le rapport**.
+2.  Sélectionnez les groupes d'appareils que vous souhaitez vérifier, si vous souhaitez vérifier les applications conformes, les applications non conformes ou les deux, puis cliquez sur **Afficher le rapport**.
 
 #### Comment spécifier des URL de magasins d'applications
-Pour spécifier une URL d'application dans la liste des applications conformes et non conformes, ou dans l'option **Sélectionnez une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran** (iOS uniquement), utilisez le format suivant :
+Pour spécifier une URL d'application dans la liste des applications conformes et non conformes, utilisez le format suivant :
 
 Dans la [section Applications de Google Play](https://play.google.com/store/apps), recherchez l’application à utiliser.
 
@@ -177,7 +177,7 @@ Ouvrez la page d'installation de l'application, puis copiez l'URL dans le Presse
 ## Paramètres de la stratégie personnalisée
 Utilisez la **stratégie de configuration personnalisée Android** de Microsoft Intune pour déployer des paramètres OMA-URI (Open Mobile Alliance Uniform Resource Identifier) qui peuvent être utilisés pour contrôler les fonctionnalités sur les appareils Android. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.
 
-Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Android qui ne sont pas configurables avec des stratégies Intune. Pour plus d’informations sur les paramètres que vous pouvez configurer avec ces stratégies, consultez [Gérer les paramètres et les fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Android qui ne sont pas configurables avec des stratégies Intune. Pour obtenir des informations sur les paramètres que vous pouvez configurer avec ces stratégies, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 > [!NOTE]
 > Actuellement, les stratégies personnalisées Android prennent uniquement en charge la configuration des paramètres Wi-Fi pour les appareils Android qui contiennent une clé prépartagée. Pour plus d’informations, consultez Configurer un profil Wi-Fi personnalisé avec une clé prépartagée plus loin dans cette rubrique.
@@ -258,6 +258,6 @@ Bien qu’Intune prenne en charge les profils Wi-Fi pour les appareils Android, 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

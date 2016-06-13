@@ -29,10 +29,10 @@ ms.suite: ems
 
 Le cycle de vie de l’appareil Intune commence par l’inscription initiale d’un appareil pour se terminer après différentes étapes par sa mise hors service lorsqu’il n’est plus nécessaire.
 
-![Le cycle de vie de l’appareil](./media/devicelifecycle_nobg.png "the Intune device lifecycle")
+![Le cycle de vie de l’appareil](./media/device-lifecycle.png "the Intune device lifecycle")
 
 ## Inscription
-De nos jours, les stratégies de gestion des appareils mobiles traitent une large gamme de téléphones, de tablettes et de PC (iOS, Android, Windows et Mac OS X). Si vous devez gérer un appareil, ce qui est généralement le cas pour les appareils professionnels, la première étape consiste à [configurer l’inscription de cet appareil](enroll-devices-in-microsoft-intune.md). Vous pouvez également gérer les PC Windows en les inscrivant auprès d'Intune (Gestion des appareils mobiles) ou en [installant le logiciel client Intune](manage-windows-pcs-with-microsoft-intune.md)..
+De nos jours, les stratégies de gestion des appareils mobiles traitent une large gamme de téléphones, de tablettes et de PC (iOS, Android, Windows et Mac OS X). Si vous devez gérer un appareil, ce qui est généralement le cas pour les appareils professionnels, la première étape consiste à [configurer l’inscription de cet appareil](enroll-devices-in-microsoft-intune.md). Vous pouvez également gérer les PC Windows en les inscrivant auprès d’Intune (Gestion des appareils mobiles) ou en [installant le logiciel client Intune](manage-windows-pcs-with-microsoft-intune.md).
 
 ## La configuration de
 L’inscription de vos appareils n’est que la première étape. Pour tirer parti de toutes les offres d’Intune et vous assurer que vos appareils sécurisés et conformes aux normes de l’entreprise, vous pouvez choisir parmi une large gamme de **stratégies** qui vous permettent de configurer presque chaque aspect de la gestion du fonctionnement des appareils. Par exemple, les utilisateurs doivent-ils avoir des mots de passe sur les appareils qui contiennent des données de l'entreprise ? Vous pouvez l'exiger. Avez-vous un Wi-Fi d’entreprise ? Vous pouvez le configurer automatiquement. Voici les types d’options de configuration disponibles :
@@ -51,6 +51,6 @@ Dans le monde informatique moderne, la protection des appareils contre tout acc�
 Quand un appareil est perdu ou volé, doit être remplacé, ou lorsque des utilisateurs changent de poste, il doit généralement être [mis hors service ou réinitialisé](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Pour ce faire, vous pouvez entre autres réinitialiser l’appareil, le supprimer de la gestion ou réinitialiser les données d’entreprise qu’il contient.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

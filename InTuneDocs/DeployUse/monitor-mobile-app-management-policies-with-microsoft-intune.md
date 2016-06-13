@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Analyser les stratégies de gestion des applications mobiles à l’aide de Microsoft Intune
-Après avoir configuré une stratégie MAM et avoir appliqué cette dernière aux utilisateurs, vous pouvez surveiller l’état de conformité dans le portail Azure. Le portail Azure inclut des informations sur les utilisateurs concernés par la stratégie, l’état de conformité et les problèmes que vos utilisateurs finaux pourraient rencontrer.
+Après avoir configuré une stratégie de gestion des applications mobiles et l’avoir appliquée aux utilisateurs, vous pouvez surveiller l’état de conformité sur le [portail Azure](https://portal.azure.com). Le portail Azure inclut des informations sur les utilisateurs concernés par la stratégie, l’état de conformité et les problèmes que vos utilisateurs finaux pourraient rencontrer.
 ## Vue Résumé
 Dans le panneau **Gestion des applications mobiles Intune**, vous pouvez voir un résumé de l’état de conformité, comme décrit ci-dessous :
 
@@ -39,7 +39,7 @@ Dans le panneau **Gestion des applications mobiles Intune**, vous pouvez voir un
 
 -   **AUCUNE STRATÉGIE :** le nombre d’utilisateurs qui utilisent les applications associées à la stratégie, mais ne sont pas affectés par votre stratégie.  Vous pouvez envisager d’ajouter ces utilisateurs à votre stratégie.
 
-- **Utilisateurs marqués d’un indicateur :** le nombre d’utilisateurs ayant rencontré des problèmes. Actuellement, seuls les utilisateurs avec des appareils jailbroken sont **marqués d’un indicateur**..
+- **Utilisateurs marqués d’un indicateur :** le nombre d’utilisateurs ayant rencontré des problèmes. Actuellement, seuls les utilisateurs avec des appareils jailbroken sont répertoriés sous **Utilisateurs marqués d’un indicateur**.
 
 
 ## Vue détaillée
@@ -77,6 +77,6 @@ La vue détaillée affiche le message d’erreur, l’application à laquelle l�
 [Expérience de l’utilisateur final pour des applications avec MAM activée](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

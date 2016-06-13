@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ Utilisez les informations suivantes pour vous aider à résoudre les problèmes 
 
 -   Intune affiche l’alerte critique **Échec de déploiement du logiciel client** si le déploiement du logiciel client échoue. Elle s’affiche dans la page **Vue d’ensemble du système** et les pages **Alertes** de la [ console d’administration Microsoft Intune](https://manage.microsoft.com/). Voici comment vérifier les alertes :
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Alertes** &gt; **Vue d’ensemble**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Alertes** &gt; **Vue d’ensemble**.
 
 2.  Dans la page **Vue d'ensemble des alertes** , vous pouvez vérifier les informations suivantes :
 
@@ -44,7 +44,7 @@ Utilisez les informations suivantes pour vous aider à résoudre les problèmes 
 
     -   Le nombre total d'alertes actives
 
-3.  Cliquez sur **Toutes les alertes** pour afficher les informations suivantes dans la page **Alertes** . Les alertes critiques sont affichées en premier :
+3.  Choisissez **Toutes les alertes** pour afficher les informations suivantes sur la page **Alertes**. Les alertes critiques sont affichées en premier :
 
     -   **Nom** : nom du type d'alerte qui a généré l'alerte.
 
@@ -72,8 +72,7 @@ Utilisez les informations suivantes pour vous aider à résoudre les problèmes 
 
 Cela peut être dû à l’absence de mises à jour logicielles critiques sur le PC.
 
-**Solution :** 
-Assurez-vous que votre stratégie de mise à jour logicielle permet d’installer les mises à jour critiques, comme décrit dans [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) 
+**Résolution :** Assurez-vous que votre stratégie de mise à jour logicielle permet d’installer les mises à jour critiques, comme décrit dans [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) 
 
 
 ## Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
@@ -85,8 +84,7 @@ Pour les appareils Windows non soumis à la gestion des appareils mobiles, les e
 
 2.  Attendez 20 minutes que le logiciel client soit supprimé.
 
-    > [!NOTE]
-    > N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
+    > [!NOTE] N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
 
 3.  Dans le menu Démarrer, tapez **UAC** pour ouvrir les paramètres de Contrôle de compte d’utilisateur.
 
@@ -120,18 +118,18 @@ Le tableau suivant décrit les codes d'erreur indiqués dans l'espace de travail
 |**0x80043007**|Impossible de trouver le fichier de certificat dans le même dossier que le programme d'installation.|Extrayez tous les fichiers avant de commencer l'installation. Ne renommez pas et ne déplacez pas les fichiers extraits : tous les fichiers doivent se trouver dans le même dossier sans quoi l'installation échouera. Pour plus d’informations, consultez [Installer le client de PC Windows avec Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).|
 |**0x8024D015**, **0x00240005**, **0x80070BC2**, **0x80070BC9**, **0x80CFD015**|Le logiciel ne peut pas être installé, car un redémarrage de l'ordinateur client est en attente.|Redémarrez l'ordinateur, puis réessayez d'installer le logiciel client.|
 |**0x80070032**|Une ou plusieurs conditions requises pour l'installation du logiciel client n'ont pas été remplies au niveau de l'ordinateur.|Assurez-vous que toutes les mises à jour nécessaires sont installées sur l'ordinateur client, puis réessayez d'installer le logiciel client. Pour plus d’informations sur la configuration requise pour installer le logiciel client, consultez [Configuration requise de l’infrastructure réseau pour Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
-|**0x80043008**|Impossible de démarrer le service des mises à jour de Microsoft Online Management.|Contactez le Support technique comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
+|**0x80043008**|Impossible de démarrer le service des mises à jour de Microsoft Online Management.|Contactez le support technique comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
 |**0x80043009**|L'ordinateur client est déjà inscrit dans le service.|Vous devez mettre hors service l'ordinateur client avant de le réinscrire dans le service. Pour obtenir des instructions, consultez [Mettre hors service des appareils en cas de gestion Microsoft Intune](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
-|**0x8004300B**|Impossible d'exécuter le package d'installation du logiciel client car la version de Windows en cours d'exécution sur le client n'est pas prise en charge.|Intune ne prend pas en charge la version de Windows en cours d’exécution sur l’ordinateur client. Pour obtenir une liste des systèmes d’exploitation pris en charge, consultez [Configuration requise de l’infrastructure réseau pour Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
-|**0xAB2**|Windows Installer n'a pas pu accéder à l'exécution VBScript d'une action personnalisée.|Cette erreur est générée par une action personnalisée basée sur des DLL (Dynamic-Link Libraries). Pour résoudre les problèmes liés aux DLL, il peut s’avérer nécessaire d’utiliser les outils décrits dans l’article [Aide et support Microsoft KB198038 Informations : Outils utiles pour les problèmes de package et de déploiement](http://go.microsoft.com/fwlink/?LinkID=234255).|
+|**0x8004300B**|Impossible d'exécuter le package d'installation du logiciel client car la version de Windows en cours d'exécution sur le client n'est pas prise en charge.|Intune ne prend pas en charge la version de Windows en cours d’exécution sur l’ordinateur client. Pour obtenir la liste des systèmes d’exploitation pris en charge, consultez [Configuration requise de l’infrastructure réseau pour Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
+|**0xAB2**|Windows Installer n'a pas pu accéder à l'exécution VBScript d'une action personnalisée.|Cette erreur est générée par une action personnalisée basée sur des DLL (Dynamic-Link Libraries). Pour résoudre les problèmes liés aux DLL, il peut s'avérer nécessaire d'utiliser les outils décrits dans l'article Aide et support Microsoft KB198038 [Informations : Outils utiles pour les problèmes de package et de déploiement](http://go.microsoft.com/fwlink/?LinkID=234255).|
 |**0x8004300f**|Le logiciel ne peut pas être installé, car le client System Center Configuration Manager est déjà installé.|Supprimez le client Configuration Manager, puis relancez l'installation du logiciel client.|
 |**0x80043010**|Le logiciel ne peut pas être installé car le client Open Mobile Alliance Device Management (OMADM) est déjà installé.|Désinscrivez le client OMADM, puis recommencez l'installation du logiciel client.|
 Si les problèmes d’installation persistent, contactez le Support technique comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md). Munissez-vous du journal d’inscription de l’ordinateur client (situé dans %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log et %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) et du journal de Windows Update (%*windir*%\windowsupdate.log) pour les communiquer aux ingénieurs du support.
 
 ### Étapes suivantes
-Si ces informations de dépannage n’ont pas permis de vous aider, contactez le Support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

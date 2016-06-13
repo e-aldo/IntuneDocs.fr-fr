@@ -15,7 +15,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -38,17 +38,17 @@ Quand vous désinscrivez votre appareil iOS d’Intune :
 
 -   Il se peut que vous n'ayez plus accès à certaines ressources de l'entreprise, telles que les partages de fichiers ou les sites Web internes.
 
--   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre périphérique.
+-   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre appareil.
 
 -   Vous ne pourrez peut-être plus vous connecter au réseau de votre entreprise via le Wi-Fi ou un réseau privé virtuel (VPN).
 
 -   Les profils de messagerie d'entreprise sont supprimés de l'appareil.
 
-Pour obtenir des instructions sur la désinscription, consultez [Désinscrire votre appareil d’Intune](unenroll-your-device-from-intune-ios.md).
+Pour obtenir des instructions sur la désinscription, consultez [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md) (Désinscrire votre appareil dans Intune).
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

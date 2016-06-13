@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de stratégie de sécurité des appareils mobiles dans Microsoft Intune | Microsoft Intune
+title: Paramètres de stratégie de sécurité des appareils mobiles | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -72,7 +72,7 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup><br /><br />Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**..|Oui|Non|Oui|Non|Oui|
+|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup><br /><br />Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.|Oui|Non|Oui|Non|Oui|
 |**Exiger le chiffrement sur les cartes de stockage**<br /><br />S’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable (chiffrement automatique des applications et données associées)|Non applicable|Oui|
 Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 
@@ -217,6 +217,6 @@ Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

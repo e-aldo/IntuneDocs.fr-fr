@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Désinscrire votre appareil d'Intune
 
-Si vous avez inscrit votre appareil Windows sur Intune, mais que vous ne voulez plus l’utiliser au travail ou à l’école et que vous n’avez plus besoin d’accéder à la messagerie électronique, aux applications ou aux autres ressources professionnelles ou scolaires, vous devez désinscrire votre appareil.   Une fois que vous aurez désinscrit votre appareil d'Intune, vous ne pourrez plus accéder à ces ressources. Pour plus d’informations sur ce qui se passe lors de la désinscription de votre appareil, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Si vous avez inscrit votre appareil Windows sur Intune, mais que vous ne voulez plus l’utiliser au travail ou à l’école et que vous n’avez plus besoin d’accéder à la messagerie électronique, aux applications ou aux autres ressources professionnelles ou scolaires, vous devez désinscrire votre appareil. Une fois que vous aurez désinscrit votre appareil d'Intune, vous ne pourrez plus accéder à ces ressources. Pour plus d’informations sur ce qui se passe lors de la désinscription de votre appareil, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
-Pour désinscrire votre appareil, suivez les étapes correspondant à l’appareil que vous utilisez :
+Pour désinscrire votre appareil, utilisez le lien répertorié dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous utilisez :
 
 -   [Désinscrire votre appareil Windows 10](#unenroll-your-windows-10-device)
 -   [Désinscrire votre appareil Windows 8.1](#unenroll-your-windows-8-1-computer)
@@ -69,6 +69,6 @@ Pour désinscrire votre appareil, suivez les étapes correspondant à l’appare
 ### Voir aussi
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

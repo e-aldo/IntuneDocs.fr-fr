@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de la stratégie Mac OS X dans Microsoft Intune | Microsoft Intune
+title: Paramètres de la stratégie Mac OS X | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -43,9 +43,9 @@ Si le paramètre que vous recherchez n’apparaît pas dans cette liste, essayez
 |----------------|---------------|
 |**Exiger un mot de passe pour déverrouiller des appareils**|Spécifie si l’utilisateur doit utiliser un mot de passe pour accéder à son ordinateur Mac. **Important :** Contrairement aux appareils iOS, sur les appareils Mac OS X l’utilisateur ne reçoit pas immédiatement une notification lui demandant de mettre à jour son mot de passe pour se conformer à ce paramètre.|
 |**Type de mot de passe requis**|Spécifie si le mot de passe peut être uniquement numérique ou s'il doit être **alphanumérique** (c’est-à-dire contenir des lettres et des chiffres). **Important :** Ce paramètre est pris en charge uniquement sur Mac OS X 10.10.3 et versions ultérieures.|
-|**Nombre de caractères complexes requis dans le mot de passe**|Spécifie le nombre de caractères complexes nécessaires dans le mot de passe (entre **0** - **4**).<br /><br />Un caractère complexe est un symbole, tel que « **?**'|
+|**Nombre de caractères complexes requis dans le mot de passe**|Spécifie le nombre de caractères complexes nécessaires dans le mot de passe (entre **0** - **4**).<br /><br />Un caractère complexe est un symbole, tel que «**?**».|
 |**Longueur minimale du mot de passe**|Spécifie la longueur minimale du mot de passe (entre **4** et **14** caractères).|
-|**Autoriser les mots de passe simples**|Permet d’utiliser des mots de passe simples, tels que «**0000**» ou «**1234**»'.|
+|**Autoriser les mots de passe simples**|Permet d'utiliser des mots de passe simples, tels que «**0000**» ou «**1234**».|
 |**Minutes d'inactivité avant demande du mot de passe**|Spécifie la durée pendant laquelle l’ordinateur doit être inactif avant qu’un mot de passe soit requis pour le déverrouiller.|
 |**Expiration du mot de passe (jours)**|Spécifie le nombre de jours qui s’écoule avant que l’utilisateur doive changer le mot de passe (entre **1** - **255** jours).|
 |**Mémoriser l'historique des mots de passe**|Ce paramètre permet d’empêcher l’utilisateur d’employer un mot de passe utilisé précédemment. Quand ce paramètre est défini, vous pouvez aussi définir le paramètre **Empêcher la réutilisation des mots de passe précédents** pour spécifier le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés (entre **1** - **24**).|
@@ -61,14 +61,13 @@ Dans la liste **Applications conformes &amp; non conformes pour Mac OS X**, ac
 
 |Nom du paramètre|Détails|
 |----------------|---------------|
-|**Signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications Mac OS X que les utilisateurs ne sont pas autorisés à installer. Si les utilisateurs installent une de ces applications, cela est signalé dans les **Rapports d’applications non conformes**.|
-|**Signaler une non-conformité quand les utilisateurs installent les applications non listées**|Répertorie les applications Mac OS X que les utilisateurs sont autorisés à installer. Si les utilisateurs installent d’autres applications, cela est signalé dans les **Rapports d’applications non conformes**.|
+|**Signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications Mac OS X que les utilisateurs ne sont pas autorisés à installer. Si les utilisateurs installent une de ces applications, cela est signalé dans les **Rapports d'applications non conformes**.|
+|**Signaler une non-conformité quand les utilisateurs installent les applications non listées**|Répertorie les applications Mac OS X que les utilisateurs sont autorisés à installer. Si les utilisateurs installent d’autres applications, cela est signalé dans les **Rapports d'applications non conformes**.|
 |**Ajouter**|Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, éventuellement l’éditeur de l’application, et l’ID d’offre groupée de l’application. **Astuce :** Pour rechercher l’ID d’offre groupée d’une application, effectuez les étapes suivantes sur un ordinateur Mac où l’application est installée :<ol><li>Ouvrez le dossier dans lequel l’application est installée (par exemple, **/Applications**)</li><li>Sélectionnez l’offre groupée *&lt;<Nom de l’application>&gt;***.app** et choisissez **Afficher le contenu du package**</li><li>Ouvrez le fichier **Info.plist**</li><li>Vérifiez la valeur associée à la clé **CFBundleIdentifier**</li></ol>L’ID d'offre groupée figure dans le format **com.contoso.nomapp**|
 |**Importer des applications**|Importe une liste d'applications que vous avez spécifiée dans un fichier de valeurs séparées par des virgules. Utilisez le format, le nom de l’application, l’éditeur et l’ID d’offre groupée dans le fichier.|
 |**Éditer**|Vous permet de modifier le nom, l’éditeur et l’ID d’offre groupée de l’application sélectionnée.|
 |**Supprimer**|Supprime l'application sélectionnée dans la liste.|
-> [!TIP]
-> Pour plus d’informations sur les rapports Intune, consultez [Présentation des opérations Microsoft Intune à l’aide de rapports](understand-microsoft-intune-operations-by-using-reports.md)..
+> [!TIP] Pour plus d’informations sur les rapports Intune, consultez [Présentation des opérations Microsoft Intune à l’aide de rapports](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Quand un appareil Mac OS X est en mode veille, il n’est pas possible de remettre ou d’inventorier les stratégies et les profils. Par conséquent, la console Intune peut afficher temporairement l’état **Paramètres de stratégie erronés** jusqu’à ce que l’appareil sorte du mode veille.
@@ -80,7 +79,7 @@ Utilisez le **Rapport sur les applications non conformes** pour afficher la conf
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Rapports** &gt; **Rapports sur les applications non conformes**.
 
-2.  Sélectionnez les groupes d’appareils que vous souhaitez vérifier, si vous souhaitez vérifier les applications conformes, les applications non conformes ou les deux, puis cliquez sur **Afficher le rapport**.
+2.  Sélectionnez les groupes d'appareils que vous souhaitez vérifier, si vous souhaitez vérifier les applications conformes, les applications non conformes ou les deux, puis cliquez sur **Afficher le rapport**.
 
 ## Paramètres de la stratégie personnalisée Mac OS X dans Microsoft Intune
 Utilisez la **stratégie de configuration personnalisée Mac OS X** Microsoft Intune pour déployer les paramètres que vous avez créés à l’aide de l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) sur des appareils Mac OS X. Cet outil vous permet de créer plusieurs paramètres qui contrôlent le fonctionnement de ces appareils et de les exporter vers un profil de configuration. Vous pouvez ensuite importer ce profil de configuration dans une stratégie personnalisée Mac OS X Intune et déployer les paramètres sur les utilisateurs et les appareils de votre organisation.
@@ -106,7 +105,7 @@ Avant de commencer, vous devez installer l'outil Apple Configurator et créer un
 |Nom du paramètre|Détails|
     |----------------|--------------------|
     |**Nom du profil de configuration personnalisé (montré aux utilisateurs)**|Entrez le nom de la stratégie tel qu’il sera affiché sur l’appareil et dans les rapports de stratégie Intune.|
-    |**Fichier de configuration de profil**|Cliquez sur **Importer**, puis recherchez le profil de configuration que vous avez créé à l'aide de l'outil Apple Configurator. Conseil : consultez Création d’un fichier de profil de configuration](#BKMK_Prof) dans cette rubrique pour de l’aide au sujet de la création du profil de configuration.|
+    |**Fichier de configuration de profil**|Cliquez sur **Importer**, puis recherchez le profil de configuration que vous avez créé à l'aide de l'outil Apple Configurator. **Conseil :** consultez [Création d’un fichier de profil de configuration](#BKMK_Prof) dans cette rubrique pour de l’aide au sujet de la création du profil de configuration.|
     |**Détails du profil de configuration**|Affiche le code XML du profil de configuration que vous avez importé.|
 
 
@@ -127,6 +126,6 @@ Vous pouvez créer le fichier de profil de configuration utilisé par la straté
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

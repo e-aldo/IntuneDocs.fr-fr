@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,24 +39,24 @@ Cela se produit lorsque l’option **Autoriser l’envoi de courrier électroniq
 
 1.  Ouvrez la console d’administration Microsoft Intune, sélectionnez **Stratégie** Charge de travail &gt; **Stratégie de configuration**.
 
-2.  Sélectionnez le profil de messagerie et cliquez sur **Modifier**.
+2.  Sélectionnez le profil de messagerie et choisissez **Modifier**.
 
 3.  Sélectionnez **Autoriser l’envoi de courrier électronique à partir d’applications tierces**.
 
 ### Configuration Manager intégré à la solution Intune
 
-1.  Dans la console Configuration Manager, cliquez sur &gt; **Ressources et Conformité**.
+1.  Dans la console Configuration Manager, ouvrez &gt; **Ressources et Conformité**.
 
 2.  Développez **Vue d’ensemble** -&gt; **Paramètres de conformité** -&gt; **Accès aux ressources d’entreprise**, puis sélectionnez **Profils de messagerie**.
 
 3.  Cliquez avec le bouton droit sur le profil de messagerie, puis ouvrez **Propriétés**.
 
-4.  Dans l’onglet **Paramètres de synchronisation**, sélectionnez **Autoriser l’envoi de courrier électronique à partir d’applications tierces**.
+4.  Sous l’onglet **Paramètres de synchronisation**, sélectionnez **Autoriser l’envoi de courrier électronique à partir d’applications tierces**.
 
 ## Étapes suivantes
-Si ces informations de dépannage n’ont pas permis de vous aider, contactez le Support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -374,9 +374,9 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 |-2016346011|0x87D10065|La commande SyncML spécifiée est en cours d'exécution, mais n'est pas encore finie.|
 
 ### Étapes suivantes
-Si ces informations de dépannage n’ont pas permis de vous aider, contactez le Support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

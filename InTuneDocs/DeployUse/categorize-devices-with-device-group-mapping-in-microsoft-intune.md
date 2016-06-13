@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Catégoriser les appareils avec le mappage de groupe d’appareils dans Microsoft Intune | Microsoft Intune
+title: Catégoriser les appareils avec le mappage de groupe d’appareils | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -45,8 +45,8 @@ Voici quelques exemples de catégories :
 Vous pouvez cependant configurer n’importe quelle catégorie.
 
 ## Comment configurer le mappage de groupe d’appareils
-1. Pour chaque catégorie que vous souhaitez utiliser, créez un groupe d’appareils Intune. Pour plus d’informations sur la façon de créer des groupes, consultez [Utiliser des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
-2. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Administration**.
+1. Pour chaque catégorie que vous souhaitez utiliser, créez un groupe d’appareils Intune. Pour plus d’informations sur la création de groupes, consultez [Utiliser des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+2. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Administration**.
 3. Dans l’espace de travail **Administration**, développez **Gestion des appareils mobiles**, puis cliquez sur **Mappage de groupe d’appareils**.
 4. Dans la page **Mappage de groupe d’appareils**, activez le mappage de groupe d’appareils.
 5. Cliquez sur **Ajouter** pour créer une règle de mappage.
@@ -58,6 +58,6 @@ Vous pouvez cependant configurer n’importe quelle catégorie.
 ### Voir aussi
 [Utiliser des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

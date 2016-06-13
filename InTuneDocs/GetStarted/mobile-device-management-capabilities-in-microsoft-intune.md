@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune | Microsoft Intune
+title: Fonctionnalités de gestion des appareils mobiles | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,12 +66,13 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 |Fonctionnalité|Détails|Plus d'informations|
 |--------------|-----------|--------------------|
-|Inventaire et rapports|Trouvez des informations sur les appareils que vous gérez et les logiciels qu'ils utilisent.<br /><br />Vous pouvez filtrer ces rapports de plusieurs façons, notamment selon la plateforme de l'appareil et selon que l'appareil est conforme ou non aux normes de l'entreprise.|[Présentation des opérations Microsoft Intune à l’aide de rapports](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
+|Inventaire et rapports|Trouvez des informations sur les appareils que vous gérez et les logiciels qu'ils utilisent.|[Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+
 
 ### Voir aussi
-[Fonctionnalités de gestion des PC Windows dans Microsoft Intune](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+[Fonctionnalités de gestion des PC Windows dans Microsoft Intune](./windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

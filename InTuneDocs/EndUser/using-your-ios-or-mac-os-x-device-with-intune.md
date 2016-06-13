@@ -15,7 +15,7 @@ ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -43,6 +43,7 @@ Les informations contenues dans cette section vous aideront à installer le Port
 Les informations contenues dans cette section vous indiqueront les actions que vous pourrez entreprendre après l’inscription de votre appareil iOS dans Intune.
 
 - [Utiliser des applications gérées sur votre appareil](use-managed-apps-on-your-device-ios.md)</br>
+- [Définir ou modifier votre code secret](set-or-change-your-passcode-ios.md)</br>
 - [Réinitialiser (effacer) votre appareil perdu ou volé](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [Désactiver la collecte de données d’utilisation Microsoft](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [Désinscrire votre appareil d'Intune](unenroll-your-device-from-intune-ios.md)</br>
@@ -65,6 +66,6 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

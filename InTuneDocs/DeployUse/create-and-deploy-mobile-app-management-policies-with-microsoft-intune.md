@@ -28,14 +28,14 @@ ms.suite: ems
 # Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune
 Les stratégies de gestion des applications mobiles (GAM) peuvent être appliquées à des applications qui s’exécutent sur des appareils gérés ou non par Intune. Pour obtenir une description plus détaillée du fonctionnement des stratégies GAM et des scénarios pris en charge par les stratégies GAM Intune, consultez la rubrique [Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-Cette rubrique décrit le processus de création d’une stratégie GAM dans le **portail Azure**. La stratégie GAM que vous créez dans le portail Azure est prise en charge pour tous les scénarios GAM :
+Cette rubrique décrit le processus de création d’une stratégie GAM dans le **portail Azure**. Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de gestion des appareils mobiles (GAM) et nous vous recommandons d’utiliser ce portail pour créer de telles stratégies. Le portail Azure prend en charge les scénarios GAM suivants :
 - Appareils inscrits dans Intune
 - Appareils gérés par une solution de gestion des appareils mobiles tierce
 - Appareils qui ne sont gérés par aucune solution de gestion des appareils mobiles (BYOD).
 
 Si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer une stratégie de gestion des applications mobiles qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
-> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Le portail Azure est la nouvelle console d’administration pour créer des stratégies de gestion des applications mobiles.
+> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Le portail Azure est la nouvelle console d’administration pour créer des stratégies de gestion des applications mobiles. Si vous créez de telles stratégies sur la console d’administration Intune et le portail Azure, la stratégie dans le portail Azure est appliquée aux applications et déployée vers les utilisateurs.
 
 Pour afficher la liste des paramètres de stratégie pris en charge pour les plateformes Android et iOS, sélectionnez l’un des éléments suivants :
 
@@ -49,8 +49,7 @@ Avant de créer une stratégie GAM, passez en revue les informations relatives a
 
     ![Capture d’écran du panneau Gestion des applications mobiles Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP]
-    > Si c’est la première fois que vous utilisez le portail Azure, commencez par lire [Portail Azure pour les stratégies de gestion des applications mobiles Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) pour vous familiariser avec le portail.
+    > [!TIP] Si c’est la première fois que vous utilisez le portail Azure, commencez par lire [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) (Portail Azure pour les stratégies de gestion des applications mobiles Microsoft Intune) pour vous familiariser avec le portail.
 
 2.  Dans le panneau **Paramètres**, choisissez **Stratégie d’application**.  Cette opération ouvre le panneau **Stratégie d’application** dans lequel vous allez créer des stratégies et modifier des stratégies existantes.
 
@@ -66,8 +65,7 @@ Avant de créer une stratégie GAM, passez en revue les informations relatives a
 
 5.  Choisissez **Applications** pour ouvrir le panneau **Applications** qui contient la liste des applications disponibles. Dans cette liste, vous pouvez sélectionner une ou plusieurs applications à associer à la stratégie que vous créez. Une fois que vous avez sélectionné les applications, choisissez le bouton **Sélectionner** en bas du panneau **Applications** pour enregistrer votre sélection.
 
-    > [!IMPORTANT]
-    > Vous devez sélectionner au moins une application pour créer une stratégie.
+    > [!IMPORTANT] Vous devez sélectionner au moins une application pour créer une stratégie.
 
 6.  Dans le panneau **Ajouter une stratégie**, choisissez **Configurer les paramètres requis** pour ouvrir le panneau des paramètres de stratégie.
 
@@ -169,6 +167,6 @@ Pour afficher une liste complète des paramètres de stratégie pour iOS et Andr
 [Expérience de l’utilisateur final pour des applications avec GAM activé](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

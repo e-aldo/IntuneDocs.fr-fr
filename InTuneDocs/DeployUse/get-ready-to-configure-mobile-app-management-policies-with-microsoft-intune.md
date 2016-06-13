@@ -27,9 +27,19 @@ ms.suite: ems
 
 # Se préparer à configurer des stratégies de gestion des applications mobiles avec Microsoft Intune
 Cette rubrique décrit ce que vous devez faire avant de pouvoir créer des stratégies de gestion des applications mobiles (GAM) dans le portail Azure.
-Si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer une stratégie GAM qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de gestion des appareils mobiles (GAM) et nous vous recommandons d’utiliser ce portail pour créer de telles stratégies. Le portail Azure prend en charge les scénarios GAM suivants :
+- Appareils inscrits dans Intune
+- Appareils gérés par une solution de gestion des appareils mobiles tierce
+- Appareils qui ne sont gérés par aucune solution de gestion des appareils mobiles (BYOD).
+
+Si vous ne connaissez pas le portail Azure, lisez la rubrique [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) (Portail Azure pour les stratégies de gestion des applications mobiles Microsoft Intune) pour bénéficier d’un aperçu rapide.
+
+Si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer des stratégies de gestion des applications mobiles qui prennent en charge des applications pour les appareils inscrits dans Intune à l’aide de la **console d’administration Intune**, mais il est recommandé d’utiliser le portail Azure même pour les appareils inscrits dans Intune. Pour obtenir des instructions sur la création d’une stratégie GAM à l’aide de la console d’administration Intune, cliquez [ici](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
 >[!IMPORTANT]
-> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie GAM. Le portail Azure est la nouvelle console d’administration pour créer des stratégies GAM.
+> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Si vous créez de telles stratégies sur la console d’administration Intune et le portail Azure, la stratégie dans le portail Azure est appliquée aux applications et déployée vers les utilisateurs.
+
 
 ##  Plateformes prises en charge
 - iOS 8.1 ou version ultérieure
@@ -37,23 +47,26 @@ Si vous utilisez actuellement la **console d’administration Intune** pour gér
 - Android 4 ou version ultérieure
 
 ##  Applications prises en charge
-Pour afficher la liste complète des applications prises en charge, accédez à la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) dans la page des partenaires de l’application Microsoft Intune.
-Cliquez sur l’application pour afficher les scénarios pris en charge, connaître les plateformes et savoir si l’application prend en charge plusieurs identités.
+* **Applications Microsoft :** ces applications intègrent le Kit de développement logiciel (SDK) d’application Intune et ne nécessitent aucun traitement supplémentaire avant d’appliquer les stratégies GAM.
+Pour afficher la liste complète des applications Microsoft prises en charge, accédez à la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) dans la page des partenaires d’application Microsoft Intune. Cliquez sur l’application pour afficher les scénarios pris en charge, connaître les plateformes et savoir si elle prend en charge les identités multiples.
+* Vos **applications métier** internes : elles requièrent la préparation de l’application pour inclure le Kit de développement logiciel (SDK) d’application Intune avant que vous puissiez appliquer les stratégies GAM.
+
+  * Pour les appareils gérés par Intune, consultez [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) (Décider comment préparer des applications pour la gestion des applications mobiles).
+  * Pour les appareils qui ne sont pas gérés comme des appareils d’employés ou pour les appareils qui sont gérés par une solution tierce de gestion des appareils mobiles, consultez [Protect line of business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) (Protéger les données et applications métier sur les appareils non inscrits dans Intune).
 
 **Avant** de pouvoir configurer des stratégies GAM, vous avez besoin des éléments suivants :
 
 -   **Un abonnement à Microsoft Intune**.    Les utilisateurs finaux ont besoin de licences [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour obtenir des applications avec une stratégie GAM.
 
--   L’**autorité de gestion des appareils mobiles** doit être définie sur **Intune** ou **Configuration Manager**, selon que vous utilisez uniquement Intune ou Configuration Manager intégré à Intune pour gérer vos appareils. Si vous utilisez la gestion des appareils mobiles intégrée à O365, vous devez acheter un abonnement Intune et [définir Intune comme autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)..
 -   Un abonnement **Office 365 (O365)** nécessaire pour :
   - Appliquer des stratégies GAM aux applications prenant en charge plusieurs identités.
   - Créer des comptes professionnels SharePoint Online et Exchange Online. Exchange et SharePoint en local ne sont pas pris en charge.
+-    **Authentification moderne activée** pour **Skype Entreprise Online**. Connectez-vous à Microsoft Connect et remplissez [ce formulaire](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) pour vous inscrire au programme d’authentification moderne.
 
 
 - **Azure Active Directory (Azure AD)** pour créer des utilisateurs. Azure AD authentifie l’utilisateur final quand il lance l’application et entre ses informations d’identification professionnelles.
 
-    > [!NOTE]
-    > Si vous configurez des utilisateurs à l’aide de la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], n’oubliez pas que la configuration de la stratégie GAM est désormais transmise au portail Azure et, pour utiliser ce portail, vous devez configurer des groupes d’utilisateurs Azure AD à l’aide du portail Office 365.
+    > [!NOTE] Si vous configurez des utilisateurs à l’aide de la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], n’oubliez pas que la configuration de la stratégie GAM figure désormais sur le portail Azure et que pour utiliser ce portail vous devez configurer des groupes d’utilisateurs Azure AD à l’aide du portail Office 365.
 
 
 ## Créer des utilisateurs et attribuer des licences Microsoft Intune
@@ -87,7 +100,7 @@ Le tableau suivant répertorie les rôles et autorisations que vous pouvez attri
 
 ## Affecter le rôle de collaborateur à un utilisateur
 
-Les**administrateurs généraux** ont accès au portail Azure.  Si vous voulez que d’autres utilisateurs administrateurs puissent configurer des stratégies et effectuer d’autres tâches de gestion des applications mobiles, vous pouvez leur affecter le **rôle de collaborateur** comme décrit ci-dessous :
+Les **administrateurs généraux** ont accès au [portail Azure](https://portal.azure.com).  Si vous voulez que d’autres utilisateurs administrateurs puissent configurer des stratégies et effectuer d’autres tâches de gestion des applications mobiles, vous pouvez leur affecter le **rôle de collaborateur** comme décrit ci-dessous :
 
 
 1.  Dans le panneau **Paramètres**, à partir de la section **Gestion des ressources**, cliquez sur **Utilisateurs**.
@@ -96,7 +109,7 @@ Les**administrateurs généraux** ont accès au portail Azure.  Si vous voulez q
 
 2.  Cliquez sur **Ajouter** pour ouvrir le panneau **Ajouter un accès** .
 
-3.  Cliquez sur **Sélectionner un rôle**, puis sur **Rôle Collaborateur**..
+3.  Cliquez sur **Sélectionner un rôle**, puis sur **Rôle Collaborateur**.
 
     ![Capture d’écran du panneau Sélectionner un rôle dans le portail Azure](../media/AppManagement/AzurePortal_MAM_AddRole.png)
 
@@ -104,13 +117,12 @@ Les**administrateurs généraux** ont accès au portail Azure.  Si vous voulez q
 
     ![Capture d’écran du panneau Ajouter des utilisateurs dans le portail Azure](../media/AppManagement/AzurePortal_MAM_AddusertoRole.png)
 
-    > [!IMPORTANT]
-    > Si vous sélectionnez un utilisateur qui n’a pas de licence [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], il ne pourra pas accéder au portail.
+    > [!IMPORTANT] Si vous sélectionnez un utilisateur qui n’a pas de licence [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], il ne pourra pas accéder au portail.
 
 ## Étapes suivantes
 [Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

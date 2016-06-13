@@ -55,7 +55,7 @@ Si les utilisateurs refusent l’accès, ils peuvent continuer à utiliser l’a
 Si les utilisateurs autorisent, puis refusent par la suite l’accès, le message s’affiche la prochaine fois qu’ils se connectent à l’application Portail d’entreprise après l’inscription.</br></br>Si les utilisateurs décident par la suite d’autoriser l’accès, ils peuvent accéder à **Paramètres** > **Applications** > **Portail d’entreprise** > **Autorisations** > **Téléphone**, puis activer l’autorisation.
 
 ### Où diriger vos utilisateurs pour plus d’informations
-[Se connecter à l’application Portail d’entreprise](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+Étape 5 dans [Inscrire un appareil Android dans Intune](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## Autoriser l’application Portail d’entreprise à accéder aux photos, aux fichiers multimédias et aux fichiers de votre appareil ?
 
@@ -83,6 +83,6 @@ La deuxième fois que les utilisateurs se connectent à l’application Portail 
 [Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation d'Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

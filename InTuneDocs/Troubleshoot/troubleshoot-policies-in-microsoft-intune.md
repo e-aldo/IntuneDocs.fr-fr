@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,19 +53,18 @@ La capture d’écran ci-dessous illustre clairement ce point à travers deux ex
 
 ![Stratégie des appareils Intune](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE]
-> N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
+> [!NOTE] N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
 
 ## Stratégie d’actualisation et intervalles de mise à jour
 Sachez que les stratégies sont actualisées et mises à jour à intervalles réguliers. En général, les stratégies doivent être inscrites sur les appareils dans les 15 minutes qui suivent une modification. Voici quelques détails supplémentaires sur les intervalles réguliers d’actualisation de stratégie :
 
 -   **Appareil Windows inscrit pour la gestion des appareils mobiles** : l’actualisation est déclenchée par une tâche planifiée à 03h00 heure locale sur l’appareil et se produit tous les jours.
 
--   **Windows Phone** : la stratégie est mise à jour toutes les huit heures. Vous pouvez forcer la mise à jour en effectuant une actualisation dans le Portail d’entreprise, sous **Paramètres**.
+-   **Windows Phone** : la stratégie est mise à jour toutes les huit heures. Vous pouvez forcer la mise à jour en effectuant une actualisation dans le portail d’entreprise, sous **Paramètres**.
 
--   **iOS** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le Portail d’entreprise, en sélectionnant l’appareil et en cliquant sur **Synchroniser**.
+-   **iOS** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le Portail d’entreprise, en sélectionnant l’appareil et en choisissant **Synchroniser**.
 
--   **Android** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le Portail d’entreprise, en sélectionnant l’appareil et en cliquant sur **Synchroniser**.
+-   **Android** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le Portail d’entreprise, en sélectionnant l’appareil et en choisissant **Synchroniser**.
 
 ## Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
 Pour les appareils Windows non soumis à la gestion des appareils mobiles, les erreurs de stratégie dans le fichier policyplatform.log peuvent être dues à des paramètres définis sur des valeurs autres que les valeurs par défaut dans le Contrôle de compte d’utilisateur Windows sur l’appareil. Certains paramètres de Contrôle de compte d’utilisateur autres que les paramètres par défaut peuvent affecter les installations du client Microsoft Intune et l’exécution des stratégies.
@@ -76,8 +75,7 @@ Pour les appareils Windows non soumis à la gestion des appareils mobiles, les e
 
 2.  Attendez 20 minutes que le logiciel client soit supprimé.
 
-    > [!NOTE]
-    > N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
+    > [!NOTE] N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
 
 3.  Dans le menu Démarrer, tapez **UAC** pour ouvrir les paramètres de Contrôle de compte d’utilisateur.
 
@@ -102,8 +100,8 @@ Pour résoudre ce problème, réglez l’heure du système local le plus proche 
 Les appareils Windows Phone et Windows RT n’autorisent pas d’assouplir les stratégies de sécurité définies via GPM ou EAS a posteriori. Tel est le cas, par exemple, si vous fixez le **nombre minimal de caractères des mots de passe** à 8, puis que vous essayez de le réduire à 4. La stratégie la plus restrictive a déjà été appliquée à l’appareil.
 
 Selon la plateforme d’appareil, si vous voulez attribuer à la stratégie une valeur moins sûre, vous devrez peut-être réinitialiser les stratégies de sécurité.
-Par exemple, dans Windows RT, sur le bureau, effectuez un balayage de droite à gauche pour ouvrir la barre **Icônes**, puis cliquez sur **Paramètres** &gt; **Panneau de configuration**.  Sélectionnez l’applet **Comptes d’utilisateurs** .
-Au bas du menu de navigation gauche figure le lien **Réinitialiser les stratégies de sécurité** . Cliquez dessus, puis cliquez sur le bouton **Réinitialiser les stratégies** .
+Par exemple, dans Windows RT, sur le bureau, effectuez un balayage de droite à gauche pour ouvrir la barre **Icônes**, puis choisissez **Paramètres** &gt; **Panneau de configuration**.  Sélectionnez l’applet **Comptes d’utilisateurs** .
+Au bas du menu de navigation gauche figure le lien **Réinitialiser les stratégies de sécurité** . Choisissez-le, puis choisissez le bouton **Réinitialiser les stratégies** .
 Pour pouvoir appliquer une stratégie moins restrictive, vous devrez peut-être retirer les autres appareils GPM (par exemple, Android, Windows Phone 8.1 et versions ultérieures et iOS), puis les réinscrire dans le service.
 
 ## Les appareils Android n’imposent pas les changements de stratégie de sécurité sans l’approbation de l’utilisateur final
@@ -115,9 +113,9 @@ La fonctionnalité GPM Android n’autorise pas le service à imposer des modifi
 **Résolution :** dans le [Centre d’administration Office 365](https://portal.office.com/), supprimez les caractères spéciaux du nom de l’entreprise et enregistrez les informations de l’entreprise.
 
 ### Étapes suivantes
-Si ces informations de dépannage n’ont pas permis de vous aider, contactez le Support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

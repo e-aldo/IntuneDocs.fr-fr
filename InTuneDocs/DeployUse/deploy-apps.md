@@ -61,10 +61,11 @@ Quand vous déployez des applications, vous pouvez choisir parmi les actions de 
 
 -   **Installation requise** : l’application est installée sur l’appareil, sans intervention de l’utilisateur final.
 
-    > [!TIP]
-    > Pour les appareils iOS qui ne sont pas en mode supervisé et pour tous les appareils Android, l’utilisateur doit accepter l’offre de l’application avant son installation.
+    > [!TIP] Pour les appareils iOS qui ne sont pas en mode supervisé et pour tous les appareils Android, l’utilisateur doit accepter l’offre de l’application avant son installation.
     >
     > Vous ne pouvez plus créer de déploiements d’applications à destination d’appareils iOS exécutant un système d’exploitation antérieur à iOS 7.1. Les déploiements d’applications existants à destination d’appareils exécutant un système d’exploitation antérieur à iOS 7.1 continuent de fonctionner et d’être gérés par Intune.
+    > 
+    >  Si un utilisateur final désinstalle une application que vous avez déployée comme installation requise, Intune réinstalle automatiquement l’application après le cycle d’inventaire suivant, qui se produit généralement tous les 7 jours.
 
 -   **Installation disponible** : l’application s’affiche sur le portail d’entreprise et les utilisateurs finaux peuvent l’installer à la demande.
 
@@ -86,8 +87,7 @@ Quand vous déployez des applications, vous pouvez choisir parmi les actions de 
 |Lien externe (déployé sur un groupe d'appareils)|Non|Non|Non|Non|
 |Application iOS gérée à partir de l'App Store (déployée sur un groupe d'utilisateurs)|Oui|Oui|Oui|Oui|
 |Application iOS gérée à partir de l'App Store (déployée sur un groupe d'appareils)|Oui|Non|Oui|Oui|
-> [!TIP]
-> Quand vous déployez des applications, si vous sélectionnez à la fois des groupes d’utilisateurs et des groupes d’appareils, vous pouvez déployer l’application seulement comme **Installation disponible**.
+> [!TIP] Quand vous déployez des applications, si vous sélectionnez à la fois des groupes d’utilisateurs et des groupes d’appareils, vous pouvez déployer l’application seulement comme **Installation disponible**.
 
 ## Conflits de déploiement
 Quand deux déploiements avec la même action de déploiement sont reçus par un appareil, les règles suivantes s'appliquent :
@@ -105,6 +105,6 @@ Quand deux déploiements avec la même action de déploiement sont reçus par un
 
 Découvrez comment [déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

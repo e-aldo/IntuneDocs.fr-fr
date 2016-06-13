@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choisir comment gérer des appareils avec Microsoft Intune | Microsoft Intune
+title: Choisir comment gérer des appareils | Microsoft Intune
 description:
 keywords:
 author: jeffgilb
@@ -31,12 +31,7 @@ ms.suite: ems
 ## Mode de gestion des appareils mobiles
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] peut gérer les plateformes d’appareils suivantes :
 
-- Apple iOS 7.1 et versions ultérieures
-- Google Android 4.0 et versions ultérieures (y compris Samsung KNOX)
-- Windows Phone 8.0 et versions ultérieures
-- Windows RT et Windows 8.1 RT
-- PC exécutant Windows 8.1 et versions ultérieures
-- Mac OS X 10.9 et versions ultérieures
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 <div class="alert alert-tip">
   <h5><span class="icon-tip"></span> Conseil</h5>
@@ -80,16 +75,16 @@ Utilisez le client Intune quand vous souhaitez :
 ## Gestion d’Exchange ActiveSync
 Vous pouvez aussi gérer des appareils par le biais d’Exchange ActiveSync. Vous devez pour cela installer le connecteur local ou utiliser le connecteur de service à service intégré pour vous connecter à votre instance d’Exchange Server.
 
-Pour en savoir plus sur la configuration matérielle et logicielle requise pour installer le connecteur local, consultez [Configuration requise pour le connecteur local](/Intune/network-infrastructure-requirements-for-microsoft-intune.md).
+Pour en savoir plus sur la configuration matérielle et logicielle requise pour installer le connecteur local, consultez [Requirements for the On-Premises Connector](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) (Configuration requise pour le connecteur local).
 
-Pour en savoir plus sur l’utilisation du connecteur local ou du connecteur de service à service avec Exchange, consultez [Gestion des appareils mobiles à l’aide d’Exchange ActiveSync et de Microsoft Intune](/Intune/get-started/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
+Pour en savoir plus sur l’utilisation du connecteur local ou du connecteur de service à service avec Exchange, consultez [Gestion des appareils mobiles à l’aide d’Exchange ActiveSync et de Microsoft Intune](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
 
 
 ## Étapes suivantes
-Maintenant que vous avez découvert certaines des fonctionnalités disponibles quand vous inscrivez vos appareils avec [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], vous devez vous [préparer à inscrire vos appareils](/Intune/get-started/get-ready-to-enroll-devices-in-microsoft-intune.md). Une fois les appareils inscrits, vous pourrez tirer parti de toutes les fonctionnalités décrites dans cette rubrique. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Maintenant que vous avez découvert certaines des fonctionnalités disponibles quand vous inscrivez vos appareils avec [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Ensuite, vous devrez [inscrire vos appareils](../deploy-use/enroll-devices-in-microsoft-intune). Une fois les appareils inscrits, vous pourrez tirer parti de toutes les fonctionnalités décrites dans cette rubrique. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

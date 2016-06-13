@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de la stratégie de configuration Windows Collaboration dans Microsoft Intune | Microsoft Intune
+title: Paramètres de la stratégie de configuration Windows Collaboration| Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -36,7 +36,7 @@ Utilisez la **stratégie de configuration générale de Windows 10 Collaboration
 |**Activer Azure Operational Insights**|Azure Operational Insights, qui fait partie de la suite Microsoft Operations Manager, collecte, stocke et analyse les données des fichiers journaux provenant d’appareils Windows 10 Collaboration.<br /><br />Pour vous connecter à Azure Operational insights, vous devez spécifier un **ID d’espace de travail** et une **Clé d’espace de travail**.|
 |**Activer la projection sans fil Miracast**|Activez cette option si vous voulez que l’appareil Windows 10 Collaboration utilise des appareils activés pour Miracast pour la projection.<br /><br />Si vous activez cette option, dans **Choisir un canal Miracast**, sélectionnez le canal Miracast utilisé pour projeter le contenu.|
 |**Choisir les informations de la réunion qui sont affichées sur l’écran d’accueil**|Si vous activez cette option, vous pouvez choisir les informations qui sont affichées sur la vignette **Réunions** de l’écran **Accueil**. Vous pouvez :<br /><br />-   **Afficher seulement l’organisateur et l’heure**<br />-   **Afficher l’organisateur, l’heure et l’objet (objet masqué pour les réunions privées)**|
-|**URL de l’image d’arrière-plan de l’écran de verrouillage**|Activez ce paramètre pour afficher un arrière-plan personnalisé sur l’écran **Accueil** des appareils Windows 10 collaboration à partir de l’URL que vous spécifiez.<br /><br />L’image doit être au format PNG et l’URL doit commencer par **https://**..|
+|**URL de l’image d’arrière-plan de l’écran de verrouillage**|Activez ce paramètre pour afficher un arrière-plan personnalisé sur l’écran **Accueil** des appareils Windows 10 collaboration à partir de l’URL que vous spécifiez.<br /><br />L’image doit être au format PNG et l’URL doit commencer par **https://**.|
 
 
 ### Voir aussi
@@ -44,6 +44,6 @@ Utilisez la **stratégie de configuration générale de Windows 10 Collaboration
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
