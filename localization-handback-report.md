@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\renew-a-symantec-code-signing-certificate.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/renew-a-symantec-code-signing-certificate.md) | InSyncHandedBackSuccess | [Details](#566a226c19825990c6a34bffbbd9d1cd6a242ddb226)
 
 ## Item Details
-##### <a name='566a226c19825990c6a34bffbbd9d1cd6a242ddb226'></a> Source: [InTuneDocs\DeployUse\renew-a-symantec-code-signing-certificate.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/renew-a-symantec-code-signing-certificate.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\renew-a-symantec-code-signing-certificate.md](https://github.com/Microsoft/IntuneDocs-pr.fr-fr/blob/07cfd76373a8a84190965ffe228b17002f1caa80/InTuneDocs/DeployUse/renew-a-symantec-code-signing-certificate.md)
-* Handoff File: [renew-a-symantec-code-signing-certificate.766f5519e37d8349b3f71ed0408a992ecdb90d5e.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/ef589e5e5b72e30d03d850f20e4cc25f534ebd61/ol-handoff/Microsoft/IntuneDocs-pr.fr-fr/master/renew-a-symantec-code-signing-certificate.766f5519e37d8349b3f71ed0408a992ecdb90d5e.fr-fr.xlf)
-* Handoff Datetime: 2016-05-01 17:19:51
-* Handoff Reason: Include
-* Archive File: [renew-a-symantec-code-signing-certificate.766f5519e37d8349b3f71ed0408a992ecdb90d5e.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/0a12d9cc03d96e8470c2b467eeadaf5c193ec0d3/ol-handoff/Microsoft/IntuneDocs-pr.fr-fr/master/archive/renew-a-symantec-code-signing-certificate.766f5519e37d8349b3f71ed0408a992ecdb90d5e.fr-fr.xlf)
-* Archive Datetime: 2016-05-07 18:16:23
-* Handback File: [renew-a-symantec-code-signing-certificate.766f5519e37d8349b3f71ed0408a992ecdb90d5e.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/46f3cd2d13af3b5946f05529bc76a9e2b4101416/ol-handback/Microsoft/IntuneDocs-pr.fr-fr/master/renew-a-symantec-code-signing-certificate.766f5519e37d8349b3f71ed0408a992ecdb90d5e.fr-fr.xlf)
-* Handback Datetime: 2016-06-14 02:39:18
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
