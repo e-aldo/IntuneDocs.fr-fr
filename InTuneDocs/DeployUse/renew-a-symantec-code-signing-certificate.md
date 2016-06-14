@@ -59,7 +59,7 @@ Le fichier SSP.xap signé est actuellement le seul moyen de fournir le certifica
 
 2.  Ouvrez la [console d’administration Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) et accédez à **Admin** &gt; **Gestion des appareils mobiles** &gt; **Windows Phone**, puis cliquez sur **Télécharger l’application signée**.
 
-3.  Téléchargez le portail d'entreprise nouvellement signé. You’ll need the newly signed SSP.xap and the new .PFX file you received from Symantec or the Application enrollment token that wsur created with this new .PFX file.
+3.  Téléchargez le portail d'entreprise nouvellement signé. Vous avez besoin du fichier SSP.xap qui vient d'être signé et du nouveau fichier .PFX que vous avez reçu de Symantec, ou du jeton d'inscription d'application qui a été créé avec ce nouveau fichier .PFX.
 
 4.  Une fois le chargement terminé, supprimez l'ancienne version de l'application Portail d'entreprise dans l'espace de travail **Logiciel**  .
 
