@@ -18,7 +18,7 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -57,6 +57,6 @@ Vous pouvez également [activer les stratégies de GAM sur vos applications mét
 En plus de restreindre le déplacement des données si un appareil est perdu ou volé ou que l’utilisateur ne travaille plus avec votre entreprise, vous pouvez [effacer de façon sélective des données de la société](wipe-managed-company-app-data-with-microsoft-intune.md) et laisser uniquement les données personnelles.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
