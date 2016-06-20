@@ -18,7 +18,7 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -43,8 +43,7 @@ Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’
 
 -  Il est possible de configurer le **connecteur de service à service Microsoft Intune** facultatif, qui connecte [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] à Microsoft Exchange Online et vous aide à gérer les informations sur les appareils avec la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Il n’est pas nécessaire d’utiliser le connecteur pour utiliser des stratégies de conformité ou d’accès conditionnel, mais il est obligatoire pour exécuter les rapports qui aident à évaluer l’impact de l’accès conditionnel.
 
-   > [!NOTE]
-   > Ne configurez pas le connecteur de service à service si vous prévoyez d’utiliser l’accès conditionnel à Exchange Online et Exchange sur site
+   > [!NOTE] Ne configurez pas le connecteur de service à service si vous prévoyez d’utiliser l’accès conditionnel pour Exchange Online et Microsoft Exchange sur site
 
    Pour obtenir des instructions sur la configuration du connecteur, consultez [Connecteur de service à service Intune](intune-service-to-service-exchange-connector.md)
 
@@ -78,8 +77,7 @@ Vous pouvez restreindre l’accès à la messagerie Exchange Online à partir d�
 
  L’**authentification moderne** permet aux clients Microsoft Office de bénéficier de la connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library).
 
-> -   L'authentification ADAL permet aux clients Office de procéder à une authentification basée sur un navigateur (également appelée authentification passive).  Pour s'authentifier, l'utilisateur est dirigé vers une page web de connexion. Cette nouvelle méthode d’authentification améliore la sécurité, avec par exemple l’**authentification multifacteur** et l’**authentification par certificat**
-> Cet [article](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) contient plus d’informations sur le fonctionnement de l’authentification moderne.
+> -   L'authentification ADAL permet aux clients Office de procéder à une authentification basée sur un navigateur (également appelée authentification passive).  Pour s'authentifier, l'utilisateur est dirigé vers une page web de connexion. Cette nouvelle méthode d’authentification améliore la sécurité, avec par exemple l’**authentification multifacteur** et l’**authentification par certificat**. Cet [article](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) contient plus d’informations sur le fonctionnement de l’authentification moderne.
 
 
 Vous pouvez restreindre l’accès à la messagerie Exchange à partir du **client de messagerie Exchange ActiveSync** intégré sur les plateformes suivantes :
@@ -104,7 +102,7 @@ Vous pouvez configurer l'accès conditionnel pour les PC qui exécutent des appl
 
 -   [L’authentification moderne Office 365 doit être activée](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) et toutes les mises à jour Office les plus récentes doivent être installées.
 
-    L’authentification moderne permet aux clients Windows Office 2013 d’utiliser une connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library) et permet de bénéficier d’une sécurité accrue, comme l’**authentification multifacteur** et l’**authentification par certificat**.
+    L’authentification moderne permet aux clients Windows Office 2013 d’utiliser une connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library) et permet de bénéficier d’une sécurité accrue, comme l’**authentification multifacteur** et l’**authentification basée sur certificat**.
 
 -   Configurez des règles de revendications AD FS pour bloquer les protocoles autres que l'authentification moderne. Des instructions détaillées sont fournies dans le scénario 3 : [bloquer tout accès à O365, à l’exception des applications basées sur un navigateur](https://technet.microsoft.com/library/dn592182.aspx).
 
@@ -113,8 +111,7 @@ Vous pouvez configurer l'accès conditionnel pour les PC qui exécutent des appl
 Assurez-vous de [créer](create-a-device-compliance-policy-in-microsoft-intune.md) et de [déployer](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) une stratégie de conformité pour les groupes d’utilisateurs qui recevront également la stratégie d’accès conditionnel.
 
 
-> [!IMPORTANT]
-> Si vous n’avez pas déployé de stratégie de conformité, les appareils seront considérés comme conformes et seront autorisés à accéder à Exchange.
+> [!IMPORTANT] Si vous n’avez pas déployé de stratégie de conformité, les appareils sont considérés comme conformes et sont autorisés à accéder à Exchange.
 
 ### Étape 2 : Évaluer l’impact de la stratégie d’accès conditionnel
 Vous pouvez utiliser les **Rapports d’inventaire des appareils mobiles** pour identifier les appareils qui sont susceptibles de ne pas pouvoir accéder à Exchange quand vous aurez configuré la stratégie d’accès conditionnel.
@@ -138,8 +135,7 @@ Après avoir exécuté le rapport, examinez ces quatre colonnes pour déterminer
 
 -   **ID Exchange ActiveSync** : l'ID ActiveSync Exchange des appareils iOS et Android doit être associé à l'enregistrement d'inscription de l'appareil dans Azure Active Directory. Ceci se produit quand l’utilisateur choisit le lien **Activer la messagerie** dans l’e-mail de mise en quarantaine.
 
-    > [!NOTE]
-    > Les appareils Windows Phone affichent toujours une valeur dans cette colonne.
+    > [!NOTE] Les appareils Windows Phone affichent toujours une valeur dans cette colonne.
 
 Les appareils qui font partie d'un groupe ciblé verront leur accès à Exchange bloqué, sauf si les valeurs de colonne correspondent à celles répertoriés dans le tableau suivant :
 
@@ -154,7 +150,7 @@ Vous pouvez exporter le contenu du rapport et utiliser la colonne **Adresse de m
 ### Étape 3 : Configurer des groupes d’utilisateurs pour la stratégie d’accès conditionnel
 Les stratégies d’accès conditionnel ciblent différents groupes de sécurité Azure Active Directory. Vous pouvez également exclure certains groupes d’utilisateurs de cette stratégie.  Quand un utilisateur est ciblé par une stratégie, chaque appareil qu'il utilise doit être conforme à cette stratégie pour qu'il puisse accéder à la messagerie.
 
-Vous pouvez configurer ces groupes dans le **Centre d’administration Office 365**ou dans le **Portail de compte Intune**.
+Vous pouvez configurer ces groupes dans le **Centre d'administration Office 365**ou dans le **Portail de compte Intune**.
 
 Vous pouvez spécifier deux types de groupes dans chaque stratégie :
 
@@ -171,12 +167,11 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie Exchange Online**.
 ![Capture d’écran de la page de stratégie d’accès conditionnel Exchange Online](../media/IntuneSA5dExchangeOnlinePolicy.png)
 
-2.  Sur la page **Stratégie Exchange Online**, sélectionnez **Activer la stratégie d’accès conditionnel à Exchange Online**.
+2.  Dans la page **Stratégie Exchange Online** , sélectionnez **Activer la stratégie d'accès conditionnel pour Exchange Online**.
 
-    > [!NOTE]
-    > Si vous n’avez pas déployé de stratégie de conformité, les appareils sont traités comme étant conformes.
+    > [!NOTE] Si vous n’avez pas déployé de stratégie de conformité, les appareils sont traités comme étant conformes.
     >
-    > Quel que soit l’état de conformité, tous les utilisateurs ciblés par la stratégie doivent inscrire leurs appareils auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+    > Quel que soit l'état de conformité, tous les utilisateurs ciblés par la stratégie doivent inscrire leurs appareils auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 3.  Sous **Accès aux applications**, pour les applications qui utilisent l’authentification moderne, vous avez deux moyens de choisir les plateformes auxquelles la stratégie doit s’appliquer. Les plateformes prises en charge sont Android, iOS, Windows et Windows Phone.
 
@@ -195,8 +190,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 
 5.  Sous **Groupes ciblés**, sélectionnez les groupes de sécurité Active Directory auxquels la stratégie sera appliquée. Vous pouvez choisir de cibler tous les utilisateurs ou une liste sélectionnée de groupes d’utilisateurs.
 ![Capture d’écran de la page de stratégie d’accès conditionnel à Exchange Online montrant les options Groupe ciblé et Groupe exempté](../media/IntuneSA5eTargetedExemptedGroups.PNG)
-    > [!NOTE]
-    > Pour les utilisateurs qui figurent dans les **Groupes ciblés**, les stratégies Intune remplacent les stratégies et les règles Exchange.
+    > [!NOTE] Pour les utilisateurs qui figurent dans les **Groupes ciblés**, les stratégies Intune remplacent les stratégies et les règles Exchange.
     >
     > Exchange n’applique les règles d’autorisation, de blocage et de mise en quarantaine d’Exchange, ainsi que les stratégies Exchange, que si :
     >
@@ -205,7 +199,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 
 6.  Sous **Groupes exemptés**, sélectionnez les groupes de sécurité Active Directory exemptés de cette stratégie. Si un utilisateur figure à la fois dans les groupes ciblés et exemptés, il sera exempt de la stratégie.
 
-7.  Quand vous avez terminé, choisissez **Enregistrer**.
+7.  Une fois terminé, choisissez **Enregistrer**.
 
 -   La stratégie d'accès conditionnel prend effet immédiatement. Il est donc inutile de la déployer.
 
@@ -215,7 +209,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 
 -   Si l’utilisateur désinscrit son appareil, la messagerie est bloquée après environ six heures.
 
-**Pour obtenir des exemples de scénarios décrivant comment configurer la stratégie d’accès conditionnel pour restreindre l’accès des appareils, consultez les [exemples de scénarios de restriction de l’accès à la messagerie](restrict-email-access-example-scenarios.md).**
+**Pour obtenir des exemples de scénarios décrivant comment configurer la stratégie d’accès conditionnel pour restreindre l’accès des appareils, consultez des [exemples de scénarios de restriction de l’accès à la messagerie](restrict-email-access-example-scenarios.md).**
 
 ## analyser la conformité et les stratégies d'accès conditionnel
 
@@ -230,6 +224,6 @@ Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], 
 [Restreindre l’accès à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

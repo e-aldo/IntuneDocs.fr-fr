@@ -18,7 +18,7 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,30 +26,30 @@ ms.suite: ems
 ---
 
 # Résoudre des conflits de stratégie entre les objets de stratégie de groupe (GPO) et Microsoft Intune
-Intune utilise des stratégies qui vous aident à gérer les paramètres sur les ordinateurs que vous gérez. Par exemple, vous pouvez utiliser une stratégie pour contrôler les paramètres du Pare-feu Windows sur les ordinateurs. La majorité des paramètres Intune sont identiques aux paramètres que vous pouvez configurer avec la stratégie de groupe Windows. Toutefois, il est possible que, dans certains cas, les deux méthodes entrent en conflit l'une avec l'autre.
+Intune utilise des stratégies qui vous aident à gérer les paramètres sur les PC Windows que vous gérez. Par exemple, vous pouvez utiliser une stratégie de contrôle des paramètres du Pare-feu Windows sur les PC. La majorité des paramètres Intune sont identiques aux paramètres que vous pouvez configurer avec la stratégie de groupe Windows. Toutefois, il est possible que, dans certains cas, les deux méthodes entrent en conflit l'une avec l'autre.
 
-Lorsque les conflits se produisent, la stratégie de groupe au niveau du domaine est prioritaire sur la stratégie Intune, sauf si l’ordinateur ne peut pas ouvrir de session sur le domaine. Dans ce cas, la stratégie Intune est appliquée à l’ordinateur client.
+Lorsque des conflits se produisent, la stratégie de groupe au niveau du domaine est prioritaire sur la stratégie Intune, sauf si le PC ne peut pas ouvrir de session sur le domaine. Dans ce cas, la stratégie Intune est appliquée au PC client.
 
 ## Que faire si vous utilisez la stratégie de groupe ?
 Vérifiez que toutes les stratégies que vous appliquez ne sont pas gérées par la stratégie de groupe. Pour mieux éviter les conflits, vous pouvez employer une ou plusieurs des méthodes suivantes :
 
--   Déplacez vos ordinateurs vers une unité d’organisation Active Directory à laquelle les paramètres de la stratégie de groupe ne sont pas appliqués avant d’installer le client Intune. Vous pouvez également bloquer l’héritage de la stratégie de groupe sur les unités d’organisation contenant les ordinateurs inscrits dans Intune auxquels vous ne voulez pas appliquer les paramètres de la stratégie de groupe.
+-   Déplacez vos PC vers une unité d’organisation Active Directory à laquelle les paramètres de la stratégie de groupe ne sont pas appliqués avant d’installer le client Intune. Vous pouvez également bloquer l’héritage de la stratégie de groupe sur les unités d’organisation contenant les PC inscrits dans Intune auxquels vous ne voulez pas appliquer les paramètres de la stratégie de groupe.
 
--   Utilisez un filtre WMI ou un filtre de sécurité pour restreindre les objets de stratégie de groupe aux seuls ordinateurs qui ne sont pas gérés par Intune. Pour obtenir des informations et des exemples sur la façon de procéder, consultez [Comment filtrer les objets de stratégie de groupe existants pour éviter les conflits avec la stratégie Microsoft Intune](resolve-gpo-and-microsoft-intune-policy-conflicts.md#BKMK_Filter) ci-après.
+-   Utilisez un filtre de groupe de sécurité pour restreindre les objets de stratégie de groupe aux seuls PC qui ne sont pas gérés par Intune. 
 
 -   Désactivez ou supprimez les objets de stratégie de groupe en conflit avec les stratégies Intune.
 
 Pour plus d'informations sur Active Directory et la stratégie de groupe Windows, consultez votre documentation Windows Server.
 
 ## Comment filtrer les objets de stratégie de groupe existants pour éviter les conflits avec la stratégie Intune
-Si vous avez identifié des objets de stratégie de groupe dont les paramètres sont en conflit avec les stratégies Intune, vous pouvez utiliser l’une des méthodes de filtrage suivantes pour restreindre ces objets aux seuls ordinateurs qui ne sont pas gérés par Intune.
+Si vous avez identifié des objets de stratégie de groupe dont les paramètres sont en conflit avec les stratégies Intune, vous pouvez utiliser des filtres de groupe de sécurité pour restreindre ces objets aux seuls PC qui ne sont pas gérés par Intune.
 
-### Utiliser les filtres WMI
-Les filtres WMI appliquent sélectivement les objets de stratégie de groupe aux ordinateurs répondant aux conditions d'une requête. Pour appliquer un filtre WMI, déployez une instance de classe WMI sur tous les ordinateurs de l’entreprise avant d’inscrire des ordinateurs dans le service Intune.
+<!--- ### Use WMI filters
+WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all PCs in the enterprise before you enroll any PCs in the Intune service.
 
-#### Application des filtres WMI à un GPO
+#### To apply WMI filters to a GPO
 
-1.  Créez un fichier objet de gestion en copiant et collant ce qui suit dans un fichier texte, puis enregistrez le fichier à un emplacement de votre choix sous le nom **WIT.mof**. Ce fichier contient l’instance de classe WMI que vous déployez aux ordinateurs à inscrire au service Intune.
+1.  Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
 
     ```
     //Beginning of MOF file.
@@ -79,36 +79,36 @@ Les filtres WMI appliquent sélectivement les objets de stratégie de groupe aux
     };
     ```
 
-2.  Utilisez un script de démarrage ou une stratégie de groupe pour déployer le fichier. Ce qui suit est la commande de déploiement pour le script de démarrage. L’instance de classe WMI doit être déployée avant d’inscrire les ordinateurs clients au service Intune.
+2.  Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
 
-    **C:/Windows/System32/Wbem/MOFCOMP &lt;chemin d’accès au fichier MOF&gt;\wit.mof**
+    **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  Exécutez l’une des deux commandes suivantes pour créer les filtres WMI selon que les objets de stratégie de groupe que vous voulez filtrer s’appliquent aux PC qui sont gérés avec Intune ou à ceux qui ne sont pas gérés à l’aide d’Intune.
+3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
 
-    -   Pour les GPO s’appliquant aux ordinateurs non gérés à l’aide d’Intune, utilisez les éléments suivants :
+    -   For GPOs that apply to PCs that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=0
         ```
 
-    -   Pour les GPO s’appliquant aux ordinateurs gérés à l’aide d’Intune, utilisez les éléments suivants :
+    -   For GPOs that apply to PCs that are managed by Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=1
         ```
 
-4.  Modifiez le GPO dans la console de gestion des stratégies de groupe pour appliquer le filtre WMI que vous avez créé à l'étape précédente.
+4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   Pour les GPO ne devant s’appliquer qu’aux ordinateurs que vous souhaitez gérer à l’aide d’Intune, appliquez le filtre **WindowsIntunePolicyEnabled=1**.
+    -   For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
-    -   Pour les GPO ne devant s’appliquer qu’aux ordinateurs que vous ne souhaitez pas gérer à l’aide d’Intune, appliquez le filtre **WindowsIntunePolicyEnabled=0**.
+    -   For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
-Pour plus d’informations sur l’application des filtres WMI dans la stratégie de groupe, consultez le billet de blog [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences (Filtrage de sécurité, filtrage WMI et ciblage au niveau de l’élément dans les préférences de la stratégie de groupe)](http://go.microsoft.com/fwlink/?LinkId=177883).
+For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
-### Utiliser des filtres de groupe de sécurité
-La stratégie de groupe vous permet d'appliquer des objets de stratégie de groupe (GPO) aux seuls groupes de sécurité spécifiés dans la zone **Filtrage de sécurité** de la console de gestion des stratégies de groupe d'un GPO sélectionné. Par défaut, les GPO s’appliquent aux **Utilisateurs authentifiés**.
+
+La stratégie de groupe vous permet d'appliquer des objets de stratégie de groupe (GPO) aux seuls groupes de sécurité spécifiés dans la zone **Filtrage de sécurité** de la console de gestion des stratégies de groupe d'un GPO sélectionné. Par défaut, les GPO s'appliquent aux **Utilisateurs authentifiés**.
 
 -   Dans le composant logiciel enfichable **Utilisateurs et ordinateurs Active Directory**, créez un groupe de sécurité contenant les ordinateurs et les comptes d’utilisateur que vous ne souhaitez pas gérer avec Intune. Par exemple, vous pouvez nommer le groupe **Pas dans Microsoft Intune**.
 
@@ -122,6 +122,6 @@ Le nouveau groupe de sécurité doit être maintenu comme inscription dans les m
 [Gérer des PC Windows avec Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

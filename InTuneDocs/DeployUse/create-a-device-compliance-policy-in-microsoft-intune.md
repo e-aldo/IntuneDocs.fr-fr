@@ -18,7 +18,7 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,7 +29,7 @@ ms.suite: ems
 Cette rubrique décrit les étapes que vous pouvez effectuer pour créer une stratégie de conformité qu’un appareil doit respecter pour être considéré comme conforme.
 
 ##  Étape 1 : ajouter une nouvelle stratégie
-  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Stratégies de conformité** &gt; **Ajouter**.
+  Dans la [console d'administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Stratégies de conformité** &gt; **Ajouter**.
 
   ![Capture d’écran de la page de stratégie de conformité dans la console d’administration Intune, affichant l’option Ajouter dans le menu en haut de la page](./media/intune-sa-3a-add-compliance-policy.png)
 
@@ -84,6 +84,6 @@ Sélectionnez l’une des options suivantes pour en savoir plus sur les paramèt
 [Introduction aux stratégies de conformité des appareils](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

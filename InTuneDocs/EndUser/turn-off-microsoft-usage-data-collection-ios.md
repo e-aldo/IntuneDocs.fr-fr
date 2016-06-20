@@ -32,9 +32,11 @@ Dans un souci d’améliorer ses produits et services, Microsoft recueille autom
 
 Vous pouvez désactiver la collecte de ces données sur votre appareil iOS à l’aide du paramètre **Données d’utilisation** dans l’application Portail d’entreprise. Les administrateurs informatiques n’ont aucun moyen de contrôler la collecte des données ni de modifier votre sélection pour ce paramètre.
 
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

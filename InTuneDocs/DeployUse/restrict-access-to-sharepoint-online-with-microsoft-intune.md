@@ -18,7 +18,7 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,7 +48,7 @@ Quand un utilisateur tente de se connecter à un fichier à l’aide d’une app
   Pour se connecter aux fichiers requis, l’appareil doit :
 -   Être **inscrit** auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou être un PC joint à un domaine.
 
--   **Inscrivez l’appareil** dans Azure Active Directory. Cela se produit automatiquement quand l’appareil est inscrit auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   **Inscrire l’appareil** dans Azure Active Directory (cela se produit automatiquement quand l’appareil est inscrit auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
 
 
 -   Être conforme à toutes les stratégies de conformité [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] déployées.
@@ -78,7 +78,7 @@ Le service AAD DRS sera activé automatiquement pour les clients Intune et Offi
   - Si la stratégie définie exige la jonction à un domaine ou la conformité et que le PC ne répond pas aux conditions, un message contenant des instructions sur la façon d’installer l’application du portail d’entreprise et d’inscrire l’appareil s’affiche.
 -    [L’authentification moderne Office 365 doit être activée](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) et toutes les mises à jour Office les plus récentes doivent être installées.
 
-    L’authentification moderne permet aux clients Windows Office 2013 d’utiliser une connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library) et permet de bénéficier d’une sécurité accrue, comme l’**authentification multifacteur** et l’**authentification par certificat**.
+    L’authentification moderne permet aux clients Windows Office 2013 d’utiliser une connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library) et permet de bénéficier d’une sécurité accrue, comme l’**authentification multifacteur** et l’**authentification basée sur certificat**.
 
 
 ## Configurer l’accès conditionnel à SharePoint Online
@@ -97,15 +97,13 @@ Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégi
 ### Étape 2 : configurer et déployer une stratégie de conformité
 Si ce n’est pas encore fait, créez une stratégie de conformité et déployez-la sur tous les utilisateurs qui seront ciblés par la stratégie d’accès conditionnel SharePoint Online.
 
-> [!NOTE]
-> Tandis que les stratégies de conformité sont déployées sur les groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
+> [!NOTE]Tandis que les stratégies de conformité sont déployées dans des groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
 
-Pour plus d’informations sur la configuration de la stratégie de conformité, consultez [Créer une stratégie de conformité](create-a-device-compliance-policy-in-microsoft-intune.md).
+Pour plus d’informations sur la configuration de la stratégie de conformité, consultez [Create a  compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md) (Créer une stratégie de conformité).
 
-> [!IMPORTANT]
-> Si vous n’avez pas déployé de stratégie de conformité, les appareils seront traités comme étant conformes.
+> [!IMPORTANT] Si vous n’avez pas déployé de stratégie de conformité, les appareils sont considérés comme conformes.
 
-Quand vous êtes prêt, passez à l’**Étape 3**.
+Quand vous êtes prêt, passez à l' **Étape 3**.
 
 ### Étape 3 : configurer la stratégie SharePoint Online
 Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePoint Online aux appareils gérés et conformes. Cette stratégie sera stockée dans Azure Active Directory.
@@ -115,7 +113,7 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 1.  Dans la [Console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Stratégie** > **Accès conditionnel** > **Stratégie SharePoint Online**.
 ![Capture d’écran de la page de stratégie SharePoint Online](../media/IntuneSASharePointOnlineCAPolicy.png)
 
-2.  Sélectionnez **Activer la stratégie d’accès conditionnel à SharePoint Online**.
+2.  Sélectionnez **Activer la stratégie d’accès conditionnel pour SharePoint Online**.
 
 3.  Sous **Accès aux applications**, vous pouvez choisir d’appliquer la stratégie d’accès conditionnel à :
 
@@ -141,7 +139,7 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 
 5.  Sous **Groupes exemptés**, vous pouvez éventuellement cliquez sur **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory exempts de cette stratégie.
 
-6.  Quand vous avez terminé, cliquez sur **Enregistrer**.
+6.  Une fois terminé, cliquez sur **Enregistrer**.
 
 La stratégie d'accès conditionnel prend effet immédiatement. Il est donc inutile de la déployer.
 
@@ -160,6 +158,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 [Restreindre l’accès aux services de messagerie et O365 avec Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

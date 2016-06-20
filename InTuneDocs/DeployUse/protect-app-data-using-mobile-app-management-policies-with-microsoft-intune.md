@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,8 +41,7 @@ Les stratégies de gestion des applications mobiles prennent en charge les appli
 
 -   **Les appareils gérés et inscrits dans le cadre d’une solution de gestion des appareils mobiles tierce**.   Les appareils de cette catégorie sont généralement des appareils d’entreprise.
 
-  > [!NOTE]
-  > Les stratégies de gestion des applications mobiles ne doivent pas être utilisées avec des solutions de gestion des applications mobiles tierces ni des solutions de conteneur sécurisé.
+  > [!NOTE] Les stratégies de gestion des applications mobiles ne doivent pas être utilisées avec des solutions de gestion des applications mobiles tierces ou des solutions de conteneur sécurisé.
 
 -   **Appareils non gérés**.  Les appareils de cette catégorie sont généralement la propriété d’employés et ne sont pas gérés ou inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
 
@@ -64,6 +63,7 @@ Il existe d’autres avantages à utiliser la gestion des appareils mobiles (MDM
 
 -   Android 4 ou version ultérieure
 
+Les appareils Windows ne sont pas pris en charge actuellement.
 ##  Comment les stratégies de gestion des applications mobiles protègent les données d’application
 
 ####  Applications sans stratégies de gestion des applications mobiles :
@@ -77,8 +77,7 @@ Lorsque les applications sont utilisées sans aucune restriction, les données d
 ![L’image qui montre comment les données d’entreprise sont protégées lorsque des stratégies de gestion des applications mobiles sont appliquées ](../media/Apps_with_mobile_app_policies.png)
 
 Vous pouvez utiliser des stratégies de gestion des applications mobiles pour empêcher l’enregistrement des sur le stockage local de l’appareil et limiter le déplacement des données vers d’autres applications qui ne sont pas protégés par des stratégies de gestion des applications mobiles. Les paramètres de stratégie de gestion des applications mobiles sont entre autres :
-- Stratégies de réadressage des données telles que
- **Interdire « Enregistrer sous »**, **restreindre les opérations couper, copier et coller**.
+- Stratégies de réadressage de données telles qu’**Interdire Enregistrer sous**, **Restreindre les opérations couper, copier et coller**.
 - Paramètres de stratégie d’accès tels que **Demander un code confidentiel simple pour l'accès** et **Bloquer l’exécution des applications gérées sur les appareils jailbroken ou rootés**.
 
 ### Protection des données avec des stratégies de gestion des applications mobiles sur des appareils gérés par une solution de gestion des appareils mobiles :
@@ -138,6 +137,6 @@ Toutes les applications mobiles Office prennent en charge plusieurs identités.
 [Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

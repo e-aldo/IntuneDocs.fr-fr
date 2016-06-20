@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -75,14 +75,12 @@ Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégi
 ### Étape 2 : configurer et déployer une stratégie de conformité
 [Créez](create-a-device-compliance-policy-in-microsoft-intune.md) et [déployez](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) une stratégie de conformité pour tous les appareils qui seront affectés par la stratégie. Il s’agit de tous les appareils utilisés par les utilisateurs des **Groupes ciblés**.
 
-> [!NOTE]
-> Tandis que les stratégies de conformité sont déployées sur les groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
+> [!NOTE]Tandis que les stratégies de conformité sont déployées dans des groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
 
 
-> [!IMPORTANT]
-> Si vous n’avez pas déployé de stratégie de conformité, les appareils seront traités comme étant conformes.
+> [!IMPORTANT] Si vous n’avez pas déployé de stratégie de conformité, les appareils sont considérés comme conformes.
 
-Quand vous êtes prêt, passez à l’**Étape 3**.
+Quand vous êtes prêt, passez à l' **Étape 3**.
 
 ### Étape 3: Configurer la stratégie Skype Entreprise Online
 Ensuite, configurez la stratégie de manière à restreindre l’accès à Skype Entreprise Online aux appareils gérés et conformes. Cette stratégie sera stockée dans Azure Active Directory.
@@ -104,7 +102,7 @@ Ensuite, configurez la stratégie de manière à restreindre l’accès à Skype
 
 5.  Sous **Groupes exemptés**, vous pouvez éventuellement cliquez sur **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory exempts de cette stratégie.
 
-6.  Quand vous avez terminé, cliquez sur **Enregistrer**.
+6.  Une fois terminé, cliquez sur **Enregistrer**.
 
 Vous avez maintenant configuré l’accès conditionnel à Skype Entreprise Online. La stratégie d'accès conditionnel prend effet immédiatement. Il est donc inutile de la déployer.
 
@@ -121,6 +119,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 * **Appareils enregistrés avec AAD et conformes** : ces appareils peuvent accéder à Skype Entreprise Online.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

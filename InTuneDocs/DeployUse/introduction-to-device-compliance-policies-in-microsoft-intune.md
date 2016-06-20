@@ -18,7 +18,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 Pour protéger les données de l’entreprise, vous devez vérifier que les appareils utilisés pour accéder aux applications et aux données de l’entreprise respectent certaines règles, comme utiliser un code confidentiel pour accéder à l’appareil et chiffrer les données qui y sont stockées. Un ensemble de règles de ce type est appelé une stratégie de conformité.
 
 ## Comment dois-je utiliser les stratégies de conformité ?
-Vous pouvez utiliser des stratégies de conformité avec des stratégies d’accès conditionnel pour restreindre l’accès aux appareils qui sont conformes aux règles de stratégie de conformité. Lisez l’article [Restreindre l’accès aux services de messagerie et O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) pour comprendre comment les deux stratégies peuvent être utilisées ensemble.
+Vous pouvez utiliser des stratégies de conformité avec des stratégies d’accès conditionnel pour permettre à des appareils qui sont conformes aux règles de stratégie de conformité d’accéder à des e-mails et à d’autres services. Lisez l’article [Restreindre l’accès aux services de messagerie et O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) pour comprendre comment les deux stratégies peuvent être utilisées ensemble.
 
 Vous pouvez également utiliser des stratégies de conformité indépendamment de l’accès conditionnel. Quand elles sont utilisées indépendamment, les appareils ciblés sont évalués et signalés avec leur état de conformité. Par exemple, vous voulez connaître le nombre d’appareils qui ne sont pas chiffrés, ou les appareils qui sont jailbroken ou rootés. Cependant, quand elles sont utilisées indépendamment, aucune restriction d’accès aux ressources de l’entreprise n’est appliquée.
 
@@ -67,6 +67,6 @@ Le tableau suivant répertorie les appareils pris en charge par les stratégies 
 [Restreindre l’accès aux services de messagerie et O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

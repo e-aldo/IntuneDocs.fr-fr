@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -70,7 +70,7 @@ Le flux suivant est utilisé pour déterminer quels sont les appareils qui peuve
 ## Aucun appareil Android ne peut accéder à Exchange sur site.
 ### Exigences du scénario
 - L’accès à Exchange doit être bloqué pour tous les appareils Android.
-- Tous les autres appareils pris en charge peuvent accéder à Exchange du moment qu’ils sont gérés par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Tous les autres appareils pris en charge peuvent accéder à Exchange du moment qu'ils sont gérés par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 Pour ce faire, configurez une stratégie d’accès conditionnel à Exchange sur site avec les paramètres suivants :
 
@@ -86,6 +86,6 @@ Le flux suivant est utilisé pour déterminer quels sont les appareils qui peuve
 ![Flux d’accès des appareils](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

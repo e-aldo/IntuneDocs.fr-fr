@@ -18,7 +18,7 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,8 +33,7 @@ Déployez la stratégie de conformité que vous avez [créée](create-a-device-c
 ![Capture d’écran de la page de stratégie de conformité montrant l’option de menu Gérer le déploiement en haut](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  Dans la boîte de dialogue **Gérer le déploiement**, choisissez un ou plusieurs groupes vers lesquels vous voulez déployer la stratégie, puis choisissez **Ajouter > OK**.
-![Capture d’écran de la boîte de dialogue Gérer le déploiement](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
-Vous pouvez déployer une stratégie de conformité vers des utilisateurs et/ou des appareils. Utilisez des groupes Active Directory que vous avez déjà créés et synchronisés avec Intune, ou créez ces groupes manuellement dans la console Intune. Pour en savoir plus sur la façon de déployer des stratégies, consultez [Déployer une stratégie de configuration](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+![Capture d’écran de la boîte de dialogue Gérer le déploiement](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Vous pouvez déployer une stratégie de conformité pour des utilisateurs et/ou des appareils. Utilisez des groupes Active Directory que vous avez déjà créés et synchronisés avec Intune, ou créez ces groupes manuellement dans la console Intune. Pour en savoir plus sur la manière de déployer des stratégies, consultez [Déployer une stratégie de configuration](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 Utilisez le récapitulatif de l’état et les alertes dans la page **Vue d’ensemble** de l’espace de travail **Stratégie** pour identifier les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le **Tableau de bord** contient un récapitulatif de l'état.
 
@@ -77,6 +76,6 @@ Vous pouvez désormais utiliser la stratégie de conformité avec des stratégie
 [Introduction aux stratégies de conformité des appareils dans Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

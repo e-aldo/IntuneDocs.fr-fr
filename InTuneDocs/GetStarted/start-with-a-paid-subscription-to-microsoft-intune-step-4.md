@@ -26,10 +26,10 @@ ms.suite: ems
 ---
 
 # gérer les licences Intune
-Un utilisateur doit avoir une licence de votre abonnement Intune pour pouvoir se connecter et utiliser le service ou pour inscrire des appareils afin de les gérer. Dès qu’il en obtient une, l’utilisateur devient membre du groupe d’utilisateurs [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)]. Ce groupe inclut tous les utilisateurs qui disposent d'une licence d'utilisation de l'abonnement. **Chaque licence utilisateur prend en charge l’inscription de 5 appareils maximum**.
+Avant que les utilisateurs puissent se connecter pour utiliser le service Intune ou inscrire leurs appareils dans la gestion, une licence doit être préalablement affectée à votre abonnement Intune depuis le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Une fois la licence attribuée, les noms d’utilisateurs sont affichés dans la console d’administration Intune. Les utilisateurs peuvent ensuite inscrire jusqu'à cinq appareils.
 
 ## Mode d’attribution des licences Intune
-Lorsque les comptes d’utilisateur sont synchronisés à partir de votre annuaire Active Directory local ou ajoutés manuellement à votre abonnement aux services cloud via le portail de compte, ils ne reçoivent pas automatiquement une licence Intune. Au lieu de cela, à une date ultérieure, un administrateur Intune doit modifier le compte d’utilisateur pour attribuer une licence à l’utilisateur à partir du portail de compte.
+Lorsque les comptes d’utilisateur sont synchronisés à partir de votre annuaire Active Directory local ou ajoutés manuellement à votre abonnement aux services cloud par le biais du [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), ils ne reçoivent pas automatiquement une licence Intune. Au lieu de cela, un administrateur Intune doit modifier le compte d’utilisateur à une date ultérieure pour attribuer une licence à l’utilisateur à partir du portail Office 365.
 
 Quand votre abonnement partage Azure AD avec d’autres services cloud associés à votre abonnement, vous avez également accès aux utilisateurs qui ont été ajoutés à ces services. Ces utilisateurs ne disposeront pas d'une licence [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] tant que vous n'aurez pas attribué une licence à chacun d'entre eux.
 
@@ -38,13 +38,13 @@ Quand votre abonnement partage Azure AD avec d’autres services cloud associés
 
 ## Attribuer une licence d’utilisateur Intune
 
-Vous utilisez **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD.
+Vous utilisez le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD.
 
-1.  Connectez-vous au portail de compte Intune à l’aide de vos informations d’identification d’administration de client.
+1.  Connectez-vous au [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) à l’aide de vos informations d’identification d’administrateur du locataire, puis sélectionnez **Personnes** > **Tous les utilisateurs**.
 
-2.  Sélectionnez le compte d’utilisateur auquel vous souhaitez attribuer une licence utilisateur Intune et cochez la case **Microsoft Intune** dans les propriétés du compte utilisateur.
+2.  Sélectionnez le compte d’utilisateur auquel vous souhaitez attribuer une licence utilisateur Intune et sélectionnez **Microsoft Intune** dans les propriétés du compte d’utilisateur.
 
-3.  Le compte d’utilisateur est alors ajouté au groupe d’utilisateurs Microsoft Intune qui autorise l’utilisateur à utiliser le service et à inscrire ses appareils pour les gérer.
+3.  Maintenant, le compte d’utilisateur dispose des autorisations nécessaires pour utiliser le service et inscrire des appareils dans la gestion.
 
 ### Utiliser PowerShell pour gérer de manière sélective les licences utilisateur EMS
 Les organisations qui utilisent Microsoft Enterprise Mobility Suite (EMS) peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un sous-ensemble de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx). 
@@ -57,8 +57,7 @@ Vous devez créer une nouvelle définition de référence (SKU) de licence qui s
 
 Vous pouvez exécuter la commande suivante pour exclure le plan de service Intune. Vous pouvez utiliser la même méthode pour étendre la procédure à un groupe de sécurité entier ou vous pouvez utiliser des filtres plus granulaires. 
 
-**Exemple 1**
-Créer un nouvel utilisateur sur la ligne de commande et affecter une licence EMS sans activer la partie Intune de la licence :
+**Exemple 1** Créer un nouvel utilisateur sur la ligne de commande et affecter une licence EMS sans activer la partie Intune de la licence :
 
     Connect-MsolService 
         
@@ -72,8 +71,7 @@ Vérification avec :
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-**Exemple 2**
-Désactiver la partie Intune de la licence EMS pour un utilisateur qui a déjà une licence :
+**Exemple 2** Désactiver la partie Intune de la licence EMS pour un utilisateur qui a déjà une licence :
 
     Connect-MsolService 
     
@@ -89,12 +87,12 @@ Vérification avec :
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
 ### Étapes suivantes
-Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage rapide Intune*.
+Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage rapide Intune*.
 >[!div class="step-by-step"]
 
->[&larr; **Synchroniser les utilisateurs avec Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organiser les utilisateurs et appareils** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr; **Synchroniser les utilisateurs avec Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organiser les utilisateurs et les appareils** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
