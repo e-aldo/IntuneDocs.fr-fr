@@ -4,7 +4,7 @@
 title: Planifier vos groupes d’utilisateurs et d’appareils | Microsoft Intune
 description:
 keywords:
-author: SanchuSa
+author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -40,7 +40,7 @@ Les groupes dans Intune permettent de gérer les utilisateurs et les appareils a
 
 La vue par défaut du nœud Groupes dans la console d’administration Intune est la suivante :
 
-![Capture d’écran de la vue par défaut du nœud Groupes dans la console Intune](/intune/media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Capture d’écran de la vue par défaut du nœud Groupes dans la console Intune](/intune/media/Intune_Planning_Groups_Default_small.png)
 
 Les stratégies étant déployées dans des groupes, la hiérarchie des groupes est l’une des principales considérations en matière de conception. Sachez également que vous ne pouvez plus modifier le groupe parent d’un groupe une fois que celui-ci a été créé. La conception de vos groupes est donc extrêmement importante dès le moment où vous commencez à utiliser le service Intune. Vous trouverez ci-dessous quelques-unes des pratiques recommandées pour la conception d’une hiérarchie de groupes basée sur les besoins de votre organisation.
 
@@ -92,7 +92,7 @@ Les stratégies étant déployées dans des groupes, la hiérarchie des groupes 
 
     * Le groupe **Utilisateurs d'ordinateurs portables** est membre du groupe de sécurité **Utilisateurs approuvés** .
 
-    * Vous créez un groupe dans Intune qui utilise une requête d'appartenance dynamique qui permet d'inclure les membres du groupe **Utilisateurs approuvés**. Le résultat est que votre groupe d'utilisateurs Intune inclut **Patrice**..
+    * Vous créez un groupe dans Intune qui utilise une requête d'appartenance dynamique qui permet d'inclure les membres du groupe **Utilisateurs approuvés**. Le résultat est que votre groupe d'utilisateurs Intune inclut **Patrice**.
 
 > [!TIP]
 > Quand vous créez vos groupes, réfléchissez à la manière dont vous allez appliquer la stratégie. Par exemple, vous pouvez définir des stratégies spécifiques aux systèmes d'exploitation de vos appareils et d'autres spécifiques aux différents rôles de votre organisation ou aux unités d'organisation vous avez déjà définies dans Active Directory. Certains estiment qu'il est utile d'avoir des groupes d'appareils spécifiques pour iOS, Android et Windows, ainsi que des groupes d'utilisateurs pour chaque rôle organisationnel.
@@ -131,22 +131,22 @@ Si votre organisation permet aux employés d’utiliser leurs propres appareils 
 
 Dans le cas du BYOD ou d’une combinaison, veillez à planifier les stratégies de manière à ce qu’elles ne transgressent pas des règles de confidentialité locales. Créez un groupe parent pour tous les utilisateurs qui utiliseront leurs propres appareils. Vous pouvez ensuite utiliser ce groupe pour appliquer des stratégies applicables à tous les utilisateurs de cette catégorie.
 
-![Capture d’écran de la création d’un groupe parent BYOD](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![Capture d’écran de la création d’un groupe parent BYOD](/intune/media/Intune_Planning_Groups_BYOD_small.png)
 
 De même, vous pouvez créer un groupe pour les utilisateurs d’appareils d’entreprise dans votre organisation :
 
-![Capture d’écran des groupes d’utilisateurs frères pour le BYOD et les appareils d’entreprise](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![Capture d’écran des groupes d’utilisateurs frères pour le BYOD et les appareils d’entreprise](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### Groupes pour des régions géographiques
 Si votre organisation a besoin de stratégies pour des régions spécifiques, vous pouvez créer des groupes en fonction de la région géographique. Vous pouvez les baser sur les groupes régionaux que vous avez déjà créés dans Active Directory (AD) et de les synchroniser sur Azure AD. Vous pouvez également les créer directement dans Azure AD.
 
-Ces captures d’écran montrent comment créer des groupes Intune basés sur des groupes synchronisés à partir de votre annuaire Active Directory local. Cet exemple part du principe que vous avez un groupe de sécurité AD nommé **US Users Group**..
+Ces captures d’écran montrent comment créer des groupes Intune basés sur des groupes synchronisés à partir de votre annuaire Active Directory local. Cet exemple part du principe que vous avez un groupe de sécurité AD nommé **US Users Group**.
 
 1. Tout d’abord, fournissez les informations générales.
 
-    ![Capture d’écran de la zone Modifier le groupe](/intune/media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+![Capture d’écran de la zone Modifier le groupe](/intune/media/Intune_Planning_Groups_AD_General_small.png)
 
 Sous Critères d’appartenance, sélectionnez **US Users Group**, synchronisé à partir d’Active Directory, comme groupe de sécurité à utiliser sous Règles d’adhésion.
 
@@ -158,8 +158,7 @@ Vérifiez si tout est correct, puis cliquez sur **Terminer** pour terminer la cr
 
 Dans notre exemple, nous avons également créé un groupe Middle East and Asia, MEA.
 
-> [!NOTE]
-> Si l’appartenance au groupe n’est pas remplie d’après l’appartenance au groupe de sécurité, vérifiez que vous avez affecté des licences Intune à ces membres.
+> [!NOTE] Si l’appartenance au groupe n’est pas remplie d’après l’appartenance au groupe de sécurité, vérifiez que vous avez affecté des licences Intune à ces membres.
 
 ### Groupes pour du matériel spécifique
 Si votre organisation impose d’avoir des stratégies applicables à des types de matériel spécifiques, vous pouvez créer des groupes sur la base de cette exigence. Vous pouvez les baser sur des groupes spécifiques que vous avez déjà créés dans votre AD local et les synchroniser sur Azure AD. Vous pouvez également les créer directement dans Azure AD. Dans cet exemple, nous utilisons **US Users Group** comme parent du groupe **Laptop Users**.
@@ -168,15 +167,14 @@ Si votre organisation impose d’avoir des stratégies applicables à des types 
 
 À ce stade, la hiérarchie des groupes doit ressembler à ce qui suit. Comme vous le voyez, le groupe Intune **Laptop Users** contient maintenant des membres. Les stratégies appliquées à ce groupe sont désormais appliquées aux utilisateurs d’ordinateurs portables BYOD de la région US.
 
-![Affichage du groupe d’utilisateurs d’ordinateurs portables](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![Affichage du groupe d’utilisateurs d’ordinateurs portables](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Groupes pour des systèmes d’exploitation spécifiques
 Si votre organisation impose d’avoir des stratégies applicables à des systèmes d’exploitation spécifiques comme Android, iOS ou Windows, vous pouvez créer des groupes en conséquence. Comme dans les exemples précédents, vous pouvez les baser sur des groupes de système d’exploitation spécifiques que vous avez déjà créés dans votre AD local et les synchroniser sur Azure AD. Vous pouvez également les créer directement dans Azure AD.
 
-En suivant la même méthode que dans les exemples précédents, nous pouvons créer des groupes basés sur les utilisateurs <!--devices?--> à l’aide de plates-formes de système d’exploitation spécifiques.
+En suivant la même méthode que dans les exemples précédents, nous pouvons créer des groupes basés sur les utilisateurs <!--devices?--> avec des plateformes de système d’exploitation spécifiques.
 
-> [!NOTE]
-> Si certains de vos utilisateurs utilisent plusieurs systèmes d’exploitation/plateformes mobiles et que vous n’avez pas de moyen automatisé pour classer les utilisateurs en tant qu’utilisateurs Android, iOS ou Windows, vous pouvez appliquer des stratégies au niveau de l’appareil pour disposer d’une meilleure flexibilité dans l’application de stratégies propres au système d’exploitation.
+> [!NOTE] Si certains de vos utilisateurs utilisent plusieurs systèmes d’exploitation/plateformes mobiles et que vous n’avez pas de moyen automatisé pour classer les utilisateurs en tant qu’utilisateurs Android, iOS ou Windows, vous pouvez appliquer des stratégies au niveau de l’appareil pour disposer d’une meilleure flexibilité dans l’application de stratégies propres au système d’exploitation.
 >
 > Vous ne pouvez pas approvisionner des groupes de manière dynamique en fonction du système d’exploitation de l’appareil. Vous devez pour cela utiliser des groupes de sécurité AD ou AAD.
 
@@ -208,8 +206,7 @@ Continuez à créer des groupes d’appareils jusqu’à ce que la hiérarchie d
 ## Hiérarchies de groupes et conventions d’affectation des noms
 Pour simplifier la gestion des stratégies, nous vous recommandons de nommer chaque stratégie selon la fonction, la plateforme et l’étendue auxquels elle s’applique. Cette norme de nommage doit suivre la structure des groupes que vous avez créée en vue de l’application de vos stratégies.
 
-Par exemple, pour une stratégie Android appliquée à tous les appareils mobiles Android de l’entreprise au niveau régional US, la stratégie peut se nommer
-**CO_US_Mob_Android_General**.
+Par exemple, pour une stratégie Android appliquée à tous les appareils mobiles Android de l’entreprise au niveau régional des États-Unis, la stratégie peut se nommer **CO_US_Mob_Android_General**.
 
 ![Créer des stratégies pour Android](/intune/media/Intune_planning_policy_android_small.png)
 
@@ -221,6 +218,6 @@ Le fait de nommer les stratégies de cette façon vous permet d’identifier rap
 [Créer des groupes](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

@@ -79,17 +79,16 @@ Voici une liste d’étapes de démarrage de la phase **Déploiement en entrepri
 
 -   Identifiez les groupes qui peuvent nécessiter des formations et des communications ciblées.
 
--   Personnalisez les communications par courrier électronique et mettez à jour le site intranet.
-    Identifiez le propriétaire actuel pour la mise à jour des communications/ressources.
+-   Personnalisez les e-mails de communication, mettez à jour le site intranet et identifiez le responsable des mises à jour des communications/ressources.
 
 -   Identifiez les méthodes de formation auxquelles vous aurez recours.
 
 -   Créez une liste de vérification de prise en main et un guide d’inscription pour les utilisateurs.
     Utilisez ces guides de l’utilisateur comme point de départ :
-    -  [Inscription d’un appareil Windows dans Intune](/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Inscription d’un appareil Android dans Intune](/intune/enduser/enroll-your-device-in-intune-android]
-    -  [Inscription d’un appareil iOS dans Intune](/intune/enduser/enroll-your-device-in-intune-ios]
-    -  [Inscription d’un appareil Mac OS X dans Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+    -  [Inscrire un appareil Windows dans Intune](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Inscrire un appareil Android dans Intune](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [Inscrire un appareil iOS dans Intune](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Inscrire un appareil Mac OS X dans Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Définissez un processus de mise à jour de la documentation de formation en fonction des besoins.
 
@@ -114,6 +113,6 @@ Voici les principaux défis que vous pouvez rencontrer lors de la phase de **dé
 [Opérations et maintenance](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
