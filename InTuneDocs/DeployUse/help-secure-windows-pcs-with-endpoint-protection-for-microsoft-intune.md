@@ -69,7 +69,7 @@ Vous pouvez afficher la stratégie Endpoint Protection déployée dans la page *
 
 |Paramètre de stratégie|Détails|
 |------------------|--------------------|
-|**Installer Endpoint Protection**|Attribuez la valeur **Oui** pour installer Endpoint Protection sur des ordinateurs gérés. Si une application de protection de point de terminaison tierce est détectée au cours de l’installation, Endpoint Protection n’est pas installé, sauf si le paramètre **Installer Endpoint Protection même si une application tierce de protection de point de terminaison est installée** est défini sur **Oui**. **Remarque :** Intune Endpoint Protection est installé sur les ordinateurs gérés par défaut. Si vous ne souhaitez pas qu’Endpoint Protection soit installé sur vos ordinateurs gérés, vous devez affecter explicitement à cette stratégie la valeur **Non**. Si Endpoint Protection a déjà été installé et que la stratégie est mise à jour sur **Non**, le client Endpoint Protection est désinstallé.<br />Valeur recommandée : **Oui**|
+|**Installer Endpoint Protection**|Attribuez la valeur **Oui** pour installer Endpoint Protection sur des ordinateurs gérés. Si une application de protection de point de terminaison tierce est détectée pendant l’installation, Endpoint Protection n’est pas installé, sauf si le paramètre **Installer Endpoint Protection même si une application tierce de protection de point de terminaison est installée** est défini sur **Oui**. **Remarque :** Intune Endpoint Protection est installé par défaut sur les ordinateurs gérés. Si vous ne souhaitez pas qu’Endpoint Protection soit installé sur vos ordinateurs gérés, vous devez affecter explicitement à cette stratégie la valeur **Non**. Si Endpoint Protection a déjà été installé et que la stratégie est mise à jour sur **Non**, le client Endpoint Protection est désinstallé.<br />Valeur recommandée : **Oui**|
 |**Installer Endpoint Protection même si une application tierce de protection du point de terminaison est installée**|Attribuez la valeur **Oui** pour installer Microsoft Intune Endpoint Protection même si une application tierce de protection de point de terminaison est détectée.<br /><br />Valeur recommandée : **Oui**|
 |**Activer Endpoint Protection**|Attribuez la valeur **Oui** pour activer Microsoft Intune Endpoint Protection sur les ordinateurs avec le client Endpoint Protection.<br /><br />Si la valeur est **Non** et que Microsoft Intune Endpoint Protection est installé, l’interface utilisateur du client Endpoint Protection n’est pas accessible aux utilisateurs et toutes les fonctions de protection sont inactives.<br /><br />Valeur recommandée : **Oui**|
 |**Désactiver l'interface utilisateur du client**|Attribuez la valeur **Oui** pour masquer l’interface utilisateur du client Microsoft Intune Endpoint Protection aux utilisateurs (nécessite le redémarrage de l’ordinateur client pour entrer en vigueur).<br /><br />Valeur recommandée : **Non**|
@@ -138,7 +138,7 @@ Microsoft Active Protection Service est une communauté en ligne qui vous aide �
   - **De base** : envoie des informations de base à Microsoft sur les logiciels malveillants détectés. Ces informations sont les suivantes : origine des logiciels détectés, actions appliquées par vous-même ou appliquées automatiquement par Endpoint Protection, indication de la réussite éventuelle de ces actions.
   - **Options avancées** : envoie plus d’informations à Microsoft sur les programmes malveillants, les logiciels espions et les logiciels potentiellement indésirables. Ces informations sont les suivantes : emplacement des logiciels détectés, noms de fichier, mode de fonctionnement des logiciels détectés et indication de leur impact sur votre ordinateur.
 
-Vous pouvez également **recevoir les définitions dynamiques en fonction des rapports Microsoft Active Protection Service**.
+Vous pouvez également **Recevoir des définitions dynamiques basées sur les rapports Microsoft Active Protection Service**.
 
 ## Tâches de gestion pour Endpoint Protection
 Les tâches suivantes vous aident à effectuer différentes tâches de gestion sur les ordinateurs gérés qui exécutent Endpoint Protection :
@@ -162,7 +162,7 @@ Vous pouvez contrôler l'état des logiciels malveillants sur vos ordinateurs en
   - **Afficher les propriétés** : ouvre une page qui contient plus d’informations sur le programme malveillant sélectionné.
   - **En savoir plus sur ce programme malveillant** : ouvre une rubrique du Centre de protection Microsoft contre les programmes malveillants qui contient plus d’informations sur le logiciel malveillant.
 
-> [!IMPORTANT] L’espace de travail **Protection** n’est pas affiché dans la console Administrateur tant que vous n’y avez pas installé le client et que vous n’y gérez pas au moins un ordinateur client.
+> [!IMPORTANT] L’espace de travail **Protection** n’est pas affiché dans la console d’administration tant que vous n’avez pas installé le client et que vous ne gérez pas au moins un ordinateur client.
 
   ![Surveiller Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
@@ -186,7 +186,7 @@ Intune peut effectuer une analyse complète ou rapide des programmes malveillant
 
 
 ## Besoin d'aide ?
-Pour obtenir de l’aide et une assistance, consultez [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) (Résoudre les problèmes liés à Endpoint Protection dans Microsoft Intune).
+Pour obtenir de l’aide et une assistance, consultez [Résoudre les problèmes liés à Endpoint Protection dans Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
 ### Voir aussi
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

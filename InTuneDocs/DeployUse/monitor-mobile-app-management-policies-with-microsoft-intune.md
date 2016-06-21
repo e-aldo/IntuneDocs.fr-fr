@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Analyser les stratégies de gestion des applications mobiles à l’aide de Microsoft Intune
-Après avoir configuré une stratégie de gestion des applications mobiles et l’avoir appliquée aux utilisateurs, vous pouvez surveiller l’état de conformité sur le [portail Azure](https://portal.azure.com). Le portail Azure inclut des informations sur les utilisateurs concernés par la stratégie, l’état de conformité et les problèmes que vos utilisateurs finaux pourraient rencontrer.
+Après avoir configuré une stratégie de gestion des applications mobiles et l’avoir appliquée aux utilisateurs, vous pouvez surveiller l’état de conformité dans le [portail Azure](https://portal.azure.com). Le portail Azure inclut des informations sur les utilisateurs concernés par la stratégie, l’état de conformité et les problèmes que vos utilisateurs finaux pourraient rencontrer.
 ## Vue Résumé
 Dans le panneau **Gestion des applications mobiles Intune**, vous pouvez voir un résumé de l’état de conformité, comme décrit ci-dessous :
 

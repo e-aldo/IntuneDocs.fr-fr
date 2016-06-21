@@ -38,11 +38,11 @@ Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’
 
 -   Votre version d’Exchange doit être **Exchange 2010 ou une version ultérieure**. Le groupe de serveurs d’accès au client (CAS) du serveur Exchange est pris en charge.
 
--   Vous devez utiliser le **connecteur Exchange local** qui connecte [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] à Microsoft Exchange sur site. Ceci vous permet de gérer les appareils avec la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Pour plus d’informations sur le connecteur, consultez [Intune on-premises Exchange connector](intune-on-premises-exchange-connector.md) (Connecteur Exchange local Intune)
+-   Vous devez utiliser le **connecteur Exchange local** qui connecte [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] à Microsoft Exchange sur site. Ceci vous permet de gérer les appareils avec la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Pour plus d’informations sur le connecteur, consultez [Connecteur Exchange sur site Intune](intune-on-premises-exchange-connector.md).
 
     -   Le connecteur Exchange local auquel vous avez accès dans la console Intune est propre à votre client Intune et ne peut pas être utilisé avec un autre client. Vous devez également vous assurer que le connecteur Exchange de votre client est installé **sur un seul ordinateur**.
 
-        Ce connecteur doit être téléchargé à partir de la console d’administration Intune.  Pour consulter une procédure pas à pas permettant de configurer le connecteur Exchange local, consultez [Configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md) (Configurer le connecteur Exchange local pour Exchange sur site ou hébergé).
+        Ce connecteur doit être téléchargé à partir de la console d’administration Intune.  Pour consulter une procédure pas à pas permettant de configurer le connecteur Exchange sur site, consultez [Configurer le connecteur Exchange sur site pour Exchange sur site ou hébergé](intune-on-premises-exchange-connector.md).
 
     -   Vous pouvez installer le connecteur sur n’importe quel ordinateur, tant que celui-ci peut communiquer avec le serveur Exchange.
 
@@ -86,7 +86,7 @@ Application **Courrier** sur Windows 8 et versions ultérieures (en cas d’ins
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie Exchange sur site**.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  Configurez la stratégie avec les paramètres requis : ![Capture d’écran de la page Stratégie Exchange sur site](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2.  Configurez la stratégie avec les paramètres nécessaires : ![Capture d’écran de la page Stratégie Exchange sur site](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
   - **Empêcher les applications de messagerie d’accéder à Exchange sur site si l’appareil n’est pas conforme ou n’est pas inscrit à Microsoft Intune :** lorsque vous sélectionnez cette option, les appareils qui ne sont pas gérés par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qui ne sont pas conformes à une stratégie de conformité n’ont pas accès aux services Exchange.
 
@@ -104,9 +104,9 @@ Application **Courrier** sur Windows 8 et versions ultérieures (en cas d’ins
 >Si vous avez l’intention de bloquer au préalable tous les appareils avant de leur accorder l’accès à la messagerie électronique, choisissez la règle de blocage d’accès ou de mise en quarantaine. La règle par défaut s’applique à tous les types d’appareils. Ainsi, les types d’appareils que vous configurez en tant qu’exceptions de plateforme et qui ne sont pas pris en charge par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sont également affectés.
 
   - **Notification utilisateur :** En plus du message électronique de notification envoyé par Exchange, Intune envoie un message électronique configurable qui contient les étapes à suivre pour débloquer l’appareil. Vous pouvez modifier le message par défaut pour le personnaliser selon vos besoins. Le message électronique de notification Intune contenant les instructions de correction est envoyé dans la boîte aux lettres Exchange de l’utilisateur. Par conséquent, si l’appareil de l’utilisateur est bloqué avant de recevoir le courrier électronique, l’utilisateur peut utiliser un appareil non bloqué ou recourir à une autre méthode pour accéder à Exchange et afficher le message. Cela est particulièrement vrai quand le blocage ou la mise en quarantaine est défini avec la **Règle par défaut**.  Dans ce cas, l’utilisateur final doit accéder à son magasin d’applications, télécharger l’application du portail d’entreprise Microsoft et inscrire son appareil. Cela s’applique aux appareils iOS, Windows et Samsung KNOX.  Pour les appareils qui n’exécutent pas Samsung KNOX, l’administrateur informatique doit envoyer le message électronique de mise en quarantaine à un autre compte de messagerie, que l’utilisateur final doit ensuite copier sur son appareil bloqué pour finaliser l’inscription et la mise en conformité.
-  > [!NOTE] Pour que le message électronique de notification puisse être envoyé par Exchange, vous devez spécifier le compte à utiliser pour l’envoyer.
+  > [!NOTE] Pour qu’Exchange puisse envoyer la notification par e-mail, vous devez spécifier le compte à utiliser.
   >
-  > Pour plus d’informations, consultez [Configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md) (Configurer le connecteur Exchange local pour Exchange sur site ou hébergé).
+  > Pour plus d’informations, consultez [Configurer le connecteur Exchange sur site pour Exchange sur site ou hébergé](intune-on-premises-exchange-connector.md).
 
 3.  Une fois terminé, choisissez **Enregistrer**.
 

@@ -34,7 +34,7 @@ Les journaux Android se trouvent dans *<Android Device>\Phone\Android\data\com.m
 
 ### Journaux iOS
 
-L’utilisateur peut vous envoyer les erreurs d’inscription comme décrit dans [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios) (Envoyer les erreurs d’inscription iOS à votre administrateur informatique)
+L’utilisateur peut vous envoyer les erreurs d’inscription comme décrit dans [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios) (Envoyer les erreurs d’inscription iOS à votre administrateur informatique).
 
 ### Appareils Mac OS X
 

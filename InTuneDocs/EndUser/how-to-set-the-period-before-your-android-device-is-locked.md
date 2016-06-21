@@ -18,7 +18,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,8 +36,8 @@ Pour vous reconnecter à votre travail, vous devez définir le délai d'expirati
 
 3.  Vérifiez que votre appareil est inscrit dans Intune en suivant les instructions fournies dans [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071) (Inscrire votre appareil pour l’utiliser au travail).
 
+Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

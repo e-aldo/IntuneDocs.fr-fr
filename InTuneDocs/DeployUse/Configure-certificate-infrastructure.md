@@ -18,7 +18,7 @@ ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -94,7 +94,7 @@ Dans cette tâche, vous allez :
 
 -   Créer un compte de service NDES
 
-    > [!NOTE] Pour révoquer des certificats, le compte de service NDES a besoin des droits *Émettre et gérer des certificats* pour chaque modèle de certificat utilisé par un profil de certificat.
+    > [!NOTE] Pour révoquer des certificats, le compte de service NDES a besoin des droits *Émettre et gérer des certificats* pour chaque modèle de certificat utilisé par un profil de certificat.
 
 -   Configurer un modèle de certificat pour NDES
 
@@ -114,7 +114,7 @@ Dans cette tâche, vous allez :
 
     -   Sous l'onglet **Extensions** , vérifiez que **Description des stratégies d'application** inclut **Authentification du client**.
 
-        > [!IMPORTANT] Pour les modèles de certificats iOS et Mac OS X, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et assurez-vous que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
+        > [!IMPORTANT] Pour les modèles de certificats iOS et Mac OS X, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
 
     -   Sous l’onglet **Sécurité** , ajoutez le compte de service NDES et attribuez-lui les autorisations **Inscription** sur le modèle.
 
@@ -232,7 +232,7 @@ Dans cette tâche, vous allez :
 
     3.  Pour **Certificat SSL**, spécifiez le certificat d'authentification serveur.
 
-        > [!NOTE] Si le serveur NDES utilise un nom interne et un nom externe pour une même adresse réseau, le certificat d’authentification serveur doit avoir un **Nom de l’objet** avec un nom de serveur public externe et un **Autre nom de l’objet** incluant le nom du serveur interne.
+        > [!NOTE] Si le serveur NDES utilise un nom interne et un nom externe pour une même adresse réseau, le certificat d’authentification serveur doit avoir un **Nom de l’objet** avec un nom de serveur public externe et un **Autre nom de l’objet** incluant le nom du serveur interne.
 
 2.  Sur votre serveur NDES, demandez et installez un certificat d' **authentification client** auprès de votre autorité de certification interne ou d'une autorité de certification publique. Cela peut être le même certificat que le certificat d'authentification serveur si ce certificat possède les deux fonctions.
 
@@ -285,7 +285,7 @@ Télécharger, installer et configurer Certificate Connector sur le serveur NDES
 
 2.  Une fois le téléchargement terminé, exécutez le programme d'installation téléchargé (**ndesconnectorssetup.exe**) :
 
-    -   Pour les certificats .PFX, exécutez le programme d'installation sur l'ordinateur en mesure de se connecter à l'autorité de certification. Choisissez l’option de distribution .PFX, puis cliquez sur Installer. Une fois l’installation terminée, créez un profil de certificat comme décrit dans [Configure certificate profiles](configure-intune-certificate-profiles.md) (Configurer les profils de certificat).
+    -   Pour les certificats .PFX, exécutez le programme d'installation sur l'ordinateur en mesure de se connecter à l'autorité de certification. Choisissez l’option de distribution .PFX, puis cliquez sur Installer. Une fois l’installation terminée, créez un profil de certificat comme décrit dans [Configurer les profils de certificat](configure-intune-certificate-profiles.md).
 
     -   Pour les certificats SCEP, exécutez le programme d'installation sur un serveur Windows Server 2012 R2.
 
@@ -321,7 +321,7 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
 **http:// &lt;nom_de_domaine_complet_de_votre_serveur_NDES&gt;/certsrv/mscep/mscep.dll**
 
 ### Étapes suivantes
-Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configure certificate profiles](configure-intune-certificate-profiles.md) (Configurer les profils de certificat).
+Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configurer les profils de certificat](configure-intune-certificate-profiles.md).
 
 
 <!--HONumber=Jun16_HO1-->

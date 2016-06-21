@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Configuration requise de l'infrastructure réseau pour Microsoft Intune
-Avant de configurer Microsoft Intune, consultez cette rubrique et les autres exigences recensées dans [Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Avant de configurer Microsoft Intune, consultez cette rubrique et les autres exigences indiquées dans [Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Cette rubrique répertorie les rubriques qui permettent à votre infrastructure réseau de transmettre les communications entre les appareils que vous gérez et utilisez pour gérer votre abonnement, et les sites web sur Internet que le service cloud utilise.
 
@@ -169,20 +169,10 @@ Vous pouvez modifier les paramètres du serveur proxy sur des ordinateurs client
 Vous pouvez également utiliser un serveur proxy qui met en cache le contenu pour [réduire l’utilisation de la bande passante réseau](network-bandwidth-use.md) par les clients Intune.
 
 
-
-## Conditions requises pour Service to Service Connector
-Service to Service Connector prend uniquement en charge Exchange basé sur le cloud et aucune configuration n’est requise pour l’infrastructure locale.
-
-Pour utiliser ce connecteur, les conditions suivantes doivent être remplies :
-
--   Vous avez un abonnement à Office 365 doté d'un client Exchange Server 2013. Tant que le client est Exchange Server 2013, le connecteur prend en charge Exchange Server 2010 dans ce même environnement.
-
--   Le compte d’utilisateur que vous utilisez pour installer le connecteur local doit être administrateur client de Intune et administrateur dans le locataire Exchange avec une licence d’utilisation d’Exchange Server 2013.
-
 ### Voir aussi
 [Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Paramètres de la stratégie Windows dans Microsoft Intune
-Utilisez la **stratégie de configuration générale Windows (Windows 8.1 et versions ultérieures)** Microsoft Intune pour configurer les paramètres des appareils Windows 8 et Windows 8.1 inscrits :
+Utilisez la **stratégie de configuration générale Windows (Windows 8.1 et versions ultérieures)** Microsoft Intune pour configurer les paramètres des appareils Windows 8 et Windows 8.1 inscrits :
 
 ## Paramètres d’applicabilité
 

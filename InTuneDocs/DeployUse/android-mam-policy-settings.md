@@ -65,7 +65,7 @@ On utilise le terme **Applications gérées par la stratégie** pour faire réf�
 
     **Valeur par défaut = Oui**
 - **Chiffrer les données de l’application :** choisissez **Oui** pour activer le chiffrement. Quand ce paramètre est activé, pour les applications associées à une stratégie de gestion des applications mobiles, le chiffrement est fourni par Microsoft. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier. Le contenu figurant sur le stockage de l’appareil est toujours chiffré.
-  >[!NOTE] La méthode de chiffrement n’est pas certifiée FIPS 140-2.
+  >[!NOTE] La méthode de chiffrement n’est pas certifiée FIPS 140-2
 
   **Valeur par défaut = Oui**
 
@@ -80,8 +80,8 @@ On utilise le terme **Applications gérées par la stratégie** pour faire réf�
 
  **Valeur par défaut = Oui**
 
- -  **Autoriser un code confidentiel simple :** spécifiez s’il faut autoriser les utilisateurs à utiliser des séquences de code confidentiel simples comme 1234 ou 1111. **Valeur par défaut = Oui**.
- - **Longueur du code confidentiel :** spécifiez le nombre minimal de chiffres ou de caractères d’un code confidentiel. **Valeur par défaut = 4**
+ -  **Autoriser un code confidentiel simple :** spécifiez s’il faut autoriser les utilisateurs à utiliser des séquences de code confidentiel simples telles que 1234 ou 1111. **Valeur par défaut = Oui**.
+ - **Longueur du code confidentiel :** spécifiez le nombre minimal de chiffres d’un code confidentiel. **Valeur par défaut = 4**
  - **Nombre de tentatives avant réinitialisation du code confidentiel :** spécifiez le nombre de tentatives que peut effectuer l’utilisateur pour entrer le code confidentiel avant d’être obligé de le réinitialiser. **Il n’existe pas de valeur par défaut pour ce paramètre.**
 - **Exiger des informations d’identification d’entreprise pour l’accès :** choisissez **Oui** pour exiger des informations d’identification d’entreprise au lieu d’un code confidentiel pour accéder à l’application.  Si vous affectez la valeur **Oui** à ce paramètre, il se substitue à l’obligation de recourir à un code confidentiel ou à un ID tactile.  L’utilisateur est invité à fournir ses informations d’identification d’entreprise.
 

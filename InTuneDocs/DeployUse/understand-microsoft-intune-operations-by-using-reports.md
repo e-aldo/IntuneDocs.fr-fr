@@ -18,7 +18,7 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -69,11 +69,11 @@ En outre, les rapports prennent en charge les actions suivantes :
 |**Chargement**|Sur la page **Créer un rapport** , cliquez sur **Charger** pour extraire tous les paramètres de rapport précédemment enregistrés.|
 |**Supprimer**|Dans l'espace de travail **Rapports** , sélectionnez le type de rapport souhaité, cliquez sur **Charger**, puis dans la liste des rapports, cliquez sur l'icône (x) en regard du rapport.|
 
-## Voir aussi
+### Voir aussi
 [Analyse et rapports avec Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

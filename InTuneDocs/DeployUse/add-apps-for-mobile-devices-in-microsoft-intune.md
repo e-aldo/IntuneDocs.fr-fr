@@ -38,12 +38,11 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Applications** &gt; **Ajouter des applications** pour démarrer l’Éditeur de logiciel Microsoft Intune.
 
-    > [!TIP]
-    > Vous devrez peut-être entrer votre nom d'utilisateur et votre mot de passe Intune avant le démarrage de l'éditeur.
+    > [!TIP]Vous devez peut-être entrer votre nom d’utilisateur et votre mot de passe Intune avant le démarrage de l’éditeur.
 
 2.  Dans la page **Installation du logiciel** de l’Éditeur de logiciel, choisissez l’une des options suivantes pour **Spécifier comment ce logiciel doit être mis à disposition des appareils** :
     - **Programme d’installation du logiciel**, pour les applications avec l’extension **.msi** ou **.exe**, spécifiez :
-        - **Sélectionnez le type de fichier du programme d’installation du logiciel** : indique le type de logiciel à déployer. Par exemple, si vous souhaitez installer une application iOS, choisissez **Package d’application pour iOS (fichier &#42;.ipa)**.
+        - **Sélectionnez le type de fichier du programme d’installation du logiciel** : indique le type de logiciel à déployer. Par exemple, si vous souhaitez installer une application iOS, sélectionnez **Package d’application pour iOS (fichier &#42;.ipa)**.
         - **Spécifier l’emplacement des fichiers d’installation du logiciel**  : entrez l’emplacement des fichiers d’installation ou cliquez sur **Parcourir** pour sélectionner l’emplacement dans une liste.
         - **Inclure les autres fichiers et sous-dossiers du dossier** : pour le type de fichier **Windows Installer** uniquement.<br>Certains logiciels qui utilisent Windows Installer requiert la prise en charge des fichiers qui se trouvent généralement dans le même dossier que les fichiers d'installation. Sélectionnez cette option si vous souhaitez également déployer ces fichiers.<br>Ce type d'installation utilise une partie de votre espace de stockage cloud.
 
@@ -65,8 +64,7 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 3.  Dans la page **Description du logiciel**, configurez ce qui suit :
 
-    > [!TIP]
-    > Selon le type de programme d'installation que vous utilisez, certaines de ces valeurs ont peut-être été entrées automatiquement ou peuvent ne pas apparaître.
+    > [!TIP] Selon le type de programme d’installation que vous utilisez, certaines de ces valeurs ont peut-être été entrées automatiquement.
 
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
     - **Nom** : entrez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise.<br>Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
@@ -83,8 +81,7 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 4.  Dans la page **Configuration requise**, sélectionnez les exigences à respecter pour que l’installation de l’application puisse commencer sur un appareil. Par exemple, pour un package d'application pour iOS, vous pouvez sélectionner la version minimale d'iOS requise et le type d’appareil requis, tel qu'un iPhone ou un iPad.
 
-    > [!TIP]
-    > La page **Configuration requise** n’est pas affichée pour tous les types d’applications.
+    > [!TIP] La page **Configuration requise** n’est pas affichée pour tous les types d’applications.
 
 5.  D’autres pages de l’Assistant s’affichent quand vous choisissez le type de fichier **Windows Installer**. Ce type de fichier est utilisé quand vous déployez des logiciels vers des PC exécutant Windows 10 ou version ultérieure qui sont inscrits sur Intune.
 
@@ -94,6 +91,12 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 L’application s’affiche sur le nœud **Applications** de l’espace de travail **Applications**.
 
+## Exemples
+
+### Déploiement d’applications MSI sur les appareils Windows 10
+Dans cette vidéo de quatre minutes, vous allez découvrir comment déployer des applications Microsoft Installer (msi) sur les appareils inscrits qui exécutent Windows 10.<br><br>
+
+<iframe src="https://channel9.msdn.com/Series/How-to-Control-the-Uncontrolled/6--How-to-Deploy-MSI-Applications-to-Windows-10-Using-Intune-and-Mobile-Device-Management-MDM/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## Étapes suivantes
 
@@ -103,6 +106,6 @@ Une fois que vous avez créé une application, l’étape suivante consiste à l
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -35,17 +35,17 @@ L’outil de création de package de restrictions d’application ne prend pas e
 
 Vous devez utiliser l’outil de création de package de restrictions d’application, plutôt que le Kit de développement logiciel (SDK), si l’application a déjà été écrite ou si le code source n’est pas disponible.
 
-## SDK de l’application Intune
-Le SDK de l’application est conçu principalement pour les clients qui ont des applications dans l’App Store ou dans le Play Store, et qui veulent gérer les applications avec Intune. Toute application peut cependant tirer parti de l’intégration du SDK, même s’il s’agit d’une application métier.
+## Kit de développement logiciel (SDK) d’application Intune
+Le Kit de développement logiciel (SDK) d’application est conçu principalement pour les clients qui ont des applications dans l’App Store ou dans le Play Store, et qui veulent gérer les applications avec Intune. Toute application peut cependant tirer parti de l’intégration du Kit de développement logiciel (SDK), même s’il s’agit d’une application métier.
 
 Pour en savoir plus sur le SDK, consultez sa [présentation](/intune/develop/intune-app-sdk). Pour prendre en main le Kit de développement logiciel, consultez [Prise en main du Kit de développement logiciel (SDK) d’application Microsoft Intune](/intune/develop/intune-app-sdk-get-started).
 
 ## Comparaison des fonctionnalités
-Ce tableau répertorie les paramètres que vous pouvez utiliser pour le SDK et pour l’outil de création de package de restrictions d’application.
+Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit de développement logiciel (SDK) et pour l’outil de création de package de restrictions d’application.
 
 > [!NOTE] Vous pouvez utiliser l’outil de création de package de restrictions d’application avec Intune autonome ou Intune avec Configuration Manager.
 
-|Fonction|SDK de l’application|Outil de création de package de restrictions d’application|
+|Fonction|Kit de développement logiciel (SDK) d’application|Outil de création de package de restrictions d’application|
 |-----------|---------------------|-----------|
 |Afficher le contenu web uniquement dans Managed Browser|X|X|
 |Empêcher les sauvegardes Android, iTunes ou iCloud|X|X|
@@ -70,7 +70,7 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le SDK et p
 ### Voir aussi
 [Outil de création de package de restrictions d’application Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [Outil de création de package de restrictions d’application iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
-[Utiliser le SDK pour activer des applications pour la gestion des applications mobiles](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
+[Utiliser le Kit de développement logiciel (SDK) pour activer des applications pour la gestion des applications mobiles](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
 <!--HONumber=Jun16_HO1-->

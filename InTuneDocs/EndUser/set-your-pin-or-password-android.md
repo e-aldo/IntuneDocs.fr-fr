@@ -18,7 +18,7 @@ ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,17 +30,19 @@ ms.suite: ems
 
 Votre administrateur informatique peut demander que vous définissiez un code confidentiel ou un mot de passe sur votre appareil Android lorsque vous utilisez Intune pour accéder à vos données professionnelles ou scolaires. Si vous voyez un message vous invitant à définir un code confidentiel ou un mot de passe, procédez comme suit.
 
-1.  Appuyez sur **Paramètres** &gt; **Sécurité** &gt; **Écran de verrouillage** &gt; **Mot de passe**..
+1.  Appuyez sur **Paramètres** &gt; **Sécurité** &gt; **Verrouillage d’écran** &gt; **Mot de passe**.
 
 2.  Choisissez votre nouveau mot de passe et confirmez-le.
 
-3.  Assurez-vous que votre appareil est bien inscrit sur Microsoft Intune en suivant les instructions de la rubrique [Inscrire votre appareil dans Microsoft Intune](enroll-your-device-in-Intune-android.md)..
+3.  Vérifiez que votre appareil est bien inscrit dans Microsoft Intune en suivant les instructions de la rubrique [Inscrire votre appareil dans Microsoft Intune](enroll-your-device-in-Intune-android.md).
 
-4.  Appuyez sur **OBTENIR** &gt; **INSTALLER**..
+4.  Appuyez sur **OBTENIR** &gt; **INSTALLER**.
+
+Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

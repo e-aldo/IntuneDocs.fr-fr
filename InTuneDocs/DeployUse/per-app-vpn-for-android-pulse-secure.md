@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [VPN par application pour Android utilisant Pulse Secure | Microsoft Intune]
+title: VPN par application pour Android à l’aide de Pulse Secure | Microsoft Intune
 description:
 keywords:
-author: [nbigman]
-manager: [jeffgilb]
+author: nbigman
+manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: chrisbal
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,7 +27,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 
 # Utiliser une stratégie personnalisée pour créer un profil VPN par application pour les appareils Android
 
-Vous pouvez créer un profil VPN par application pour les appareils Android gérés par Intune. Tout d’abord, vous allez créer un profil VPN qui utilise le type de connexion Pulse Secure, puis sur une stratégie de configuration personnalisée associant ce profil à des applications spécifiques. Une fois que vous avez déployé ces stratégies à vos groupes d’utilisateurs ou d’appareils Android, l’ouverture d’une des applications spécifiées sur ces appareils ouvre une connexion VPN pour cette application. 
+Vous pouvez créer un profil VPN par application pour les appareils Android gérés par Intune. Tout d’abord, vous allez créer un profil VPN qui utilise le type de connexion Pulse Secure, puis une stratégie de configuration personnalisée qui associe ce profil à des applications spécifiques. Une fois que vous avez déployé ces stratégies sur vos groupes d’utilisateurs ou d’appareils Android, l’ouverture d’une des applications spécifiées sur ces appareils ouvre une connexion VPN pour cette application. 
 
 ### Étape 1 : Créer un profil VPN
 
@@ -35,7 +35,7 @@ Vous pouvez créer un profil VPN par application pour les appareils Android gér
 2. Sélectionnez un modèle pour la nouvelle stratégie en développant **Android**, puis choisissez **Profil VPN (Android 4 et versions ultérieures)**.
 
 3. Dans le modèle, pour **Type de connexion**, choisissez **Pulse Secure**.
-4. Terminez et enregistrez le profil VPN. Pour plus d’informations sur les profils VPN, consultez [Profils VPN](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md).
+4. Renseignez et enregistrez le profil VPN. Pour plus d’informations sur les profils VPN, consultez [Profils VPN](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md).
 
 > [!NOTE]
 Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante. Par exemple, **MonProfilVpnApp**.
@@ -47,21 +47,21 @@ Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante. Par
    3. Sous **Paramètres OMA-URI**, cliquez sur **Ajouter**.
    4. Fournissez un nom de paramètre.
    5. Pour **Type de données**, spécifiez **Chaîne**.
-   6. Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/PackageList**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne sera **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/PackageList**.
-   7.   Dans **Valeur**, fournissez une liste délimitée par des points-virgules des packages qui doivent être associés au profil.  Par exemple, si vous souhaitez qu’Excel et le navigateur Google Chrome utilisent la connexion VPN, vous devez entrer : **com.microsoft.office.excel;com.android.chrome**.
+   6. Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/PackageList**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/PackageList**.
+   7.   Dans **Valeur**, fournissez une liste séparée par des points-virgules des packages qui doivent être associés au profil.  Par exemple, si vous souhaitez qu’Excel et le navigateur Google Chrome utilisent la connexion VPN, vous devez entrer : **com.microsoft.office.excel;com.android.chrome**.
   
 
    ![Exemple de stratégie personnalisée de VPN par application Android](..\media\android_per_app_vpn_oma_uri.png) 
 #### Définissez votre liste d’applications comme liste noire ou liste blanche (facultatif)
-Vous pouvez spécifier que votre liste d’applications *ne sera pas* autorisée à utiliser la connexion VPN, en utilisant la valeur **BLACKLIST**.  Toutes les autres applications se connecteront via VPN.
+Vous pouvez spécifier que votre liste d’applications *ne sera pas* autorisée à utiliser la connexion VPN, à l’aide de la valeur **BLACKLIST**.  Toutes les autres applications se connectent via VPN.
 
-Vous pouvez également spécifier que *seules* les applications spécifiées seront en mesure d’utiliser la connexion VPN, en utilisant la valeur **WHITELIST**.
+Vous pouvez également spécifier que *seules* les applications spécifiées sont en mesure d’utiliser la connexion VPN, à l’aide de la valeur **WHITELIST**.
  
 
 1.  Sous Paramètres OMA-URI, cliquez sur **Ajouter**.
 2.  Fournissez un nom de paramètre.
 3.  Pour **Type de données**, spécifiez **Chaîne**.
-4.  Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/Mode**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne sera **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/Mode**.
+4.  Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/Mode**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/Mode**.
 5.  Dans **Valeur**, entrez **BLACKLIST** ou **WHITELIST**. 
 
 

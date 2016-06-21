@@ -33,7 +33,7 @@ Cette rubrique vous indique comment ouvrir une demande de service ou appeler le 
 Pour rechercher de l’aide sans assistance sur Intune, consultez [Conseils généraux de dépannage pour Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) ou n’importe laquelle des rubriques de dépannage pour des problèmes spécifiques répertoriées dans la section **Voir aussi** de cette rubrique.
 ## Créer une demande de service en ligne
 
-1.  Connectez-vous à Intune, puis visitez le [Centre d’administration Office 365](https://portal.office.com/Support/SupportEntry.aspx).
+1.  Connectez-vous à Intune, puis visitez le [Centre d’administration Office 365](https://portal.office.com/Support/SupportEntry.aspx).
 
 2.  Sous l’intitulé **Créer une demande de service**, sélectionnez la catégorie du problème pour lequel vous voulez ouvrir un ticket :
 
@@ -58,7 +58,7 @@ Consultez [Contacter le support par téléphone pour Microsoft Intune](contact-a
 Pour effectuer le suivi de vos demandes, accédez au [Centre d’administration Office 365](https://portal.office.com/admin/default.aspx). En bas de la liste **Créer une demande de service**, cliquez sur **Afficher tous les tickets de support**. Par défaut, toutes vos demandes de service à l’état ouvert sont affichées. Pour modifier le type de demande de service affiché, par exemple, pour voir les demandes fermées, cliquez sur l’icône de filtre dans le volet de navigation supérieur et sélectionnez votre affichage préféré.
 
 > [!NOTE]
-> **Si vous utilisez Microsoft System Center Configuration Manager** ou **Microsoft System Center Endpoint Protection :** pour bénéficier d’un support technique sur Configuration Manager ou Endpoint Protection, contactez votre partenaire ou visitez le [Centre de solutions Microsoft System Center Configuration Manager et System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) qui propose des documents d’auto-assistance élaborés, avec la possibilité d’ouvrir une demande de support en ligne ou par téléphone.
+> **Si vous utilisez Microsoft System Center Configuration Manager** ou **Microsoft System Center Endpoint Protection :** pour bénéficier d’un support technique sur Configuration Manager ou Endpoint Protection, contactez votre partenaire ou visitez le [Centre de solutions Microsoft System Center Configuration Manager et System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) qui propose des documents d’auto-assistance élaborés, avec la possibilité d’ouvrir une demande de support en ligne ou par téléphone.
 >
 > Le support technique pour System Center Configuration Manager ou System Center Endpoint Protection nécessite un règlement ou est décrémenté de vos contrats de licence ou Premier Support existants.
 

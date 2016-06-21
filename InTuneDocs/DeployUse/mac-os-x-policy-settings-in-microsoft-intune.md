@@ -43,12 +43,12 @@ Si le paramètre que vous recherchez n’apparaît pas dans cette liste, essayez
 |----------------|---------------|
 |**Exiger un mot de passe pour déverrouiller des appareils**|Spécifie si l’utilisateur doit utiliser un mot de passe pour accéder à son ordinateur Mac. **Important :** Contrairement aux appareils iOS, sur les appareils Mac OS X l’utilisateur ne reçoit pas immédiatement une notification lui demandant de mettre à jour son mot de passe pour se conformer à ce paramètre.|
 |**Type de mot de passe requis**|Spécifie si le mot de passe peut être uniquement numérique ou s'il doit être **alphanumérique** (c’est-à-dire contenir des lettres et des chiffres). **Important :** Ce paramètre est pris en charge uniquement sur Mac OS X 10.10.3 et versions ultérieures.|
-|**Nombre de caractères complexes requis dans le mot de passe**|Spécifie le nombre de caractères complexes nécessaires dans le mot de passe (entre **0** - **4**).<br /><br />Un caractère complexe est un symbole, tel que «**?**».|
+|**Nombre de caractères complexes requis dans le mot de passe**|Spécifie le nombre de caractères complexes nécessaires dans le mot de passe (**0** - **4**).<br /><br />Un caractère complexe est un symbole, tel que «**?**».|
 |**Longueur minimale du mot de passe**|Spécifie la longueur minimale du mot de passe (entre **4** et **14** caractères).|
 |**Autoriser les mots de passe simples**|Permet d'utiliser des mots de passe simples, tels que «**0000**» ou «**1234**».|
 |**Minutes d'inactivité avant demande du mot de passe**|Spécifie la durée pendant laquelle l’ordinateur doit être inactif avant qu’un mot de passe soit requis pour le déverrouiller.|
 |**Expiration du mot de passe (jours)**|Spécifie le nombre de jours qui s’écoule avant que l’utilisateur doive changer le mot de passe (entre **1** - **255** jours).|
-|**Mémoriser l'historique des mots de passe**|Ce paramètre permet d’empêcher l’utilisateur d’employer un mot de passe utilisé précédemment. Quand ce paramètre est défini, vous pouvez aussi définir le paramètre **Empêcher la réutilisation des mots de passe précédents** pour spécifier le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés (entre **1** - **24**).|
+|**Mémoriser l'historique des mots de passe**|Ce paramètre permet d’empêcher l’utilisateur d’employer un mot de passe utilisé précédemment. Quand ce paramètre est défini, vous pouvez aussi définir **Empêcher la réutilisation des mots de passe précédents** pour spécifier le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés (**1** - **24**).|
 |**Minutes d’inactivité avant activation de l’écran de veille**|Spécifie la durée pendant laquelle l’ordinateur doit être inactif avant que l’écran de veille s’active.|
 
 ### Paramètres des applications conformes et non conformes

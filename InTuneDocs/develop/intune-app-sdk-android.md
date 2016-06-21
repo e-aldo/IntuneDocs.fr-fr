@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Guide du Kit de développement logiciel (SDK) d’application Microsoft Intune pour les développeurs Android | Microsoft Intune
+title: Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android | Microsoft Intune
 description:
 keywords:
 author: Msmbaldwin
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Guide du Kit de développement logiciel (SDK) de l’application Microsoft Intune pour les développeurs Android
 
-> [!NOTE] Vous pouvez d’abord consulter la [présentation du Kit de développement logiciel (SDK) d’application Intune](intune-app-sdk.md), qui aborde les fonctionnalités actuelles du SDK et la manière de préparer l’intégration sur chaque plateforme prise en charge. 
+> [!NOTE] Vous pouvez d’abord consulter la [Présentation du Kit SDK de l’application Intune](intune-app-sdk.md), qui aborde les fonctionnalités actuelles du SDK et la manière de préparer l’intégration sur chaque plateforme prise en charge. 
 
 # Contenu du SDK 
 
@@ -350,7 +350,7 @@ Quand vous incluez plusieurs projets, chaque android:package reçoit une copie d
 
 **Capture d’écran**: le SDK ne peut pas appliquer une nouvelle valeur de capture d’écran dans les activités qui sont déjà passées par Activity.onCreate. Il peut en résulter une période au cours de laquelle l’application est configurée pour désactiver les captures d’écran ; toutefois, il est toujours possible d’en prendre.
 
-**Utilisation de programmes de résolution de contenu* : la stratégie de transfert ou de réception peut bloquer ou partiellement bloquer l’utilisation d’un programme de résolution de contenu en vue d’accéder au fournisseur de contenu dans une autre application. Par conséquent, les méthodes ContentResolver retournent null ou lèvent une valeur d’échec (par exemple, `openOutputStream` lève `FileNotFoundException` en cas de blocage). L’application peut déterminer si l’échec de l’écriture des données par le biais d’un programme de résolution de contenu est causé par une stratégie (ou pourrait être causé par une stratégie) en appelant :
+**Utilisation de programmes de résolution de contenu* : la stratégie de transfert ou de réception peut bloquer entièrement ou en partie l’utilisation d’un programme de résolution de contenu pour accéder au fournisseur de contenu dans une autre application. Par conséquent, les méthodes ContentResolver retournent null ou lèvent une valeur d’échec (par exemple, `openOutputStream` lève `FileNotFoundException` en cas de blocage). L’application peut déterminer si l’échec de l’écriture des données par le biais d’un programme de résolution de contenu est causé par une stratégie (ou pourrait être causé par une stratégie) en appelant :
 
     MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI)
 

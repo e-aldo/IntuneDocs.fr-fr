@@ -38,9 +38,9 @@ Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux
 
 **Applications non gérées** : applications gérables par l’intermédiaire de stratégies et qui n’ont pas été encapsulées par Intune ou qui n’intègrent pas le Kit SDK de gestion des applications mobiles Intune. Vous ne pouvez pas appliquer de stratégies d'application à ces applications.
 
-###Voir aussi [How your Android users get their apps](how-your-android-users-get-their-apps.md) (Comment vos utilisateurs Android obtiennent leurs applications)
-[Comment vos utilisateurs iOS obtiennent leurs applications](how-your-android-users-get-their-apps.md)</br>
-[How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
+###Voir aussi
+[Comment vos utilisateurs Android obtiennent leurs applications](how-your-android-users-get-their-apps.md)</br>
+[Comment vos utilisateurs iOS obtiennent leurs applications](how-your-ios-users-get-their-apps.md)
 
 
 <!--HONumber=Jun16_HO1-->

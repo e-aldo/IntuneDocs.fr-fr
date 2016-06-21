@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Inscrire des appareils dans Microsoft Intune | Microsoft Intune
+title: Inscrire des appareils | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Inscrire des appareils pour la gestion dans Intune
 La gestion des appareils mobiles Microsoft Intune utilise l’inscription pour gérer les appareils et leur autoriser l’accès aux ressources. La façon dont vous inscrivez les appareils dépend du type d’appareil, de son propriétaire et du niveau de gestion souhaité. Les scénarios « Apportez votre propre appareil » (BYOD) et les scénarios d’appareils d’entreprise (COD) nécessitent un processus d’inscription. Les organisations qui utilisent Exchange ActiveSync (soit localement, soit hébergé dans le cloud) peuvent activer une gestion allégée sans conditions d’inscription. Vous pouvez également gérer des PC Windows à l’aide du logiciel client Intune.
+
+###  Plateformes d’appareil prises en charge
+
+Intune peut gérer les plateformes d’appareils suivantes :
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Activer l’inscription d’appareil  
  L’inscription permet aux utilisateurs d’accéder aux ressources de l’entreprise sur leurs appareils personnels et permet à l’administrateur de garantir que ces appareils sont conformes aux stratégies de protection des ressources d’entreprise. C’est le meilleur moyen d’activer des scénarios « Apportez votre propre appareil » avec Intune. L’administrateur doit activer l’inscription dans la console Intune, ce qui peut nécessiter la création d’une relation d’approbation avec l’appareil et l’attribution de licences aux utilisateurs. L’appareil est ensuite inscrit, généralement par les utilisateurs qui entrent leurs informations d’identification professionnelles ou scolaires. Ensuite, l’appareil reçoit une stratégie Intune et obtient l’accès aux ressources.
@@ -58,6 +64,6 @@ Les ordinateurs gérés avec le logiciel client Intune ne peuvent pas être réi
 [Gérer des PC Windows avec Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

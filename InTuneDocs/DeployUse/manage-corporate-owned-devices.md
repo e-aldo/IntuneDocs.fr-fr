@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Inscrire les appareils d’entreprise avec Microsoft Intune
-Les appareils d’entreprise (COD) ou d’organisation peuvent être placés sous gestion par Intune de diverses façons en fonction de l’appareil, de la méthode utilisée pour son achat et des besoins de l’organisation.
+Les appareils d’entreprise ou d’organisation peuvent être placés sous gestion par Intune de diverses façons en fonction de l’appareil, de la méthode utilisée pour son achat et des besoins de l’organisation.
 
 ## Appareils iOS d’entreprise
 Ces méthodes d’inscription sont adaptées aux scénarios CYOD (Choisissez votre propre appareil) dans lesquels l’organisation achète les appareils pour les utilisateurs mais souhaite conserver la gestion de l’appareil. Si votre organisation a acheté des appareils iOS, vous pouvez préconfigurer l’inscription afin que l’appareil soit géré dès la première fois que l’utilisateur l’allume. Intune prend en charge l’inscription à l’aide du programme d’inscription d’appareils (DEP, Device Enrollment Program) d’Apple ou de l’outil [Apple Configurator](ios-device-enrollment-program-in-microsoft-intune.md) à exécuter sur un ordinateur Mac pour l’inscription [directe](ios-direct-enrollment-in-microsoft-intune.md) ou avec l’[Assistant de configuration](ios-setup-assistant-enrollment-in-microsoft-intune.md).
@@ -52,9 +52,9 @@ Le tableau suivant présente les méthodes d’inscription d’appareils d’ent
 | **Méthode** |  **[Réinitialiser](#Reset)** |   **[Affinité](#Affinity)**   |   **[Verrouillé](#Locked)** |
 |:---:|:---:|:---:|:---:|
 |**[BYOD](#BYOD)** | Non|    Oui |   Non |
-|**[DEM](#DEM)**|   Non |Non |Non  |
-|**[DEP](#DEP)**|   Oui |   Opt |   Opt|
-|**[USB-SA](#USB-SA)**| Oui |   Opt |   Non|
+|**[Gestionnaire d’inscription d’appareil](#DEM)**|   Non |Non |Non  |
+|**[DEP](#DEP)**|   Oui |   Facultatif |   Facultatif|
+|**[USB-SA](#USB-SA)**| Oui |   Facultatif |   Non|
 |**[USB-Direct](#USB-Direct)**| Non |    Non  | Non|
 
 **Méthodes d’inscription Windows et Android**
@@ -62,18 +62,18 @@ Le tableau suivant présente les méthodes d’inscription d’appareils d’ent
 | **Méthode** |  **[Réinitialisation](#Wipe)** | **[Utilisateur](#User)**   |   **[Verrouillé](#Locked)** |
 |:---:|:---:|:---:|:---:|
 |**[BYOD](#BYOD)** | Non|    Oui |   Non |
-|**[DEM](#DEM)**|   Non |Non |Non  |
+|**[Gestionnaire d’inscription d’appareil](#DEM)**|   Non |Non |Non  |
 
 **Méthodes d’inscription d’appareils d’entreprise**
 
 ### BYOD
-« Apportez votre propre appareil ». Les utilisateurs installent l’application Portail d’entreprise et inscrivent leur propre appareil. L’inscription d’un appareil avec le portail d’entreprise joindra l’appareil au lieu de travail. L’inscription d’appareils iOS avec le portail d’entreprise nécessite un ID Apple. La méthode BYOD ne nécessite pas de configuration supplémentaire pour les appareils d’entreprise. Consultez la procédure [Set up device management](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md) (Configurer la gestion des appareils).
+« Apportez votre propre appareil ». Les utilisateurs installent l’application Portail d’entreprise et inscrivent leur propre appareil. L’inscription d’un appareil avec le portail d’entreprise joindra l’appareil au lieu de travail. L’inscription d’appareils iOS avec le portail d’entreprise nécessite un ID Apple. La méthode BYOD ne nécessite pas de configuration supplémentaire pour les appareils d’entreprise. Consultez la procédure [Configurer la gestion des appareils](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md). ([Retour au tableau](#overview-of corporate-owned-device-enrollment-methods))
 
-### DEM
-Gestionnaire d’inscription d’appareil. L’administrateur crée des comptes DEM. Les gestionnaires peuvent ensuite installer le portail d’entreprise et inscrire de nombreux appareils sans utilisateur. En savoir plus sur [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Retour au tableau](#overview-of corporate-owned-device-enrollment-methods))
+### Gestionnaire d’inscription d’appareil
+Gestionnaire d’inscription d’appareil. L’administrateur crée des comptes de gestionnaire d’inscription d’appareil. Les gestionnaires peuvent ensuite installer le portail d’entreprise et inscrire de nombreux appareils sans utilisateur. En savoir plus sur le [gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Retour au tableau](#overview-of corporate-owned-device-enrollment-methods))
 
 ### DEP
-Programme d’inscription d’appareils Apple. L’administrateur crée et déploie la stratégie « à distance » sur des appareils iOS achetés et gérés via le programme DEP. L’appareil est inscrit quand l’utilisateur exécute l’Assistant Configuration d’iOS. Cette méthode prend en charge le mode **iOS supervisé** qui permet à son tour :
+Programme d’inscription d’appareils d’Apple. L’administrateur crée et déploie la stratégie « à distance » sur des appareils iOS achetés et gérés via le programme DEP. L’appareil est inscrit quand l’utilisateur exécute l’Assistant Configuration d’iOS. Cette méthode prend en charge le mode **iOS supervisé** qui permet à son tour ce qui suit :
   - Inscription verrouillée
   - Accès conditionnel
   - Détection de jailbreak
@@ -82,7 +82,7 @@ Programme d’inscription d’appareils Apple. L’administrateur crée et dépl
 En savoir plus sur le programme [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Retour au tableau](#overview-of corporate-owned-device-enrollment-methods))
 
 ### USB-SA
-Connexion USB, inscription Assistant Configuration. L’administrateur crée une stratégie Intune et l’exporte vers Apple Configurator. Les appareils connectés par USB sont préparés à l’aide de la stratégie Intune. L’administrateur doit inscrire manuellement chaque appareil. Les utilisateurs reçoivent leur appareil et exécutent l’Assistant Configuration pour inscrire leur appareil. Cette méthode prend en charge le mode **iOS supervisé** qui permet à son tour :
+Connexion USB, inscription avec l’Assistant Configuration. L’administrateur crée une stratégie Intune et l’exporte vers Apple Configurator. Les appareils connectés par USB sont préparés à l’aide de la stratégie Intune. L’administrateur doit inscrire manuellement chaque appareil. Les utilisateurs reçoivent leur appareil et exécutent l’Assistant Configuration pour inscrire leur appareil. Cette méthode prend en charge le mode **iOS supervisé** qui permet à son tour ce qui suit :
   - Inscription verrouillée
   - Accès conditionnel
   - Détection de jailbreak
@@ -100,12 +100,12 @@ Indique si l’inscription de l’appareil nécessite le rétablissement des par
 ([Retour au tableau](#overview-of corporate-owned-device-enrollment-methods))
 
 ### Affinité
-Spécifie si la méthode d’inscription prend en charge l’« affinité utilisateur » qui connecte un appareil à un utilisateur spécifique. Les appareils « Opt » peuvent être inscrits avec ou sans affinité utilisateur. Une affinité utilisateur est requise pour prendre en charge les éléments suivants :
+Spécifie si la méthode d’inscription prend en charge l’« affinité utilisateur » qui connecte un appareil à un utilisateur spécifique. Les appareils « Facultatif » peuvent être inscrits avec ou sans affinité utilisateur. Une affinité utilisateur est nécessaire pour prendre en charge les éléments suivants :
   - Applications de gestion des applications mobiles (GAM)
   - Accès conditionnel aux données de messagerie et de l’entreprise
   - Application Portail d’entreprise
 
-([Retour au tableau](#overview-of corporate-owned-device-enrollment-methods)) ([Retour au tableau](#overview-of corporate-owned-device-enrollment-methods))
+([Retour au tableau](#overview-of corporate-owned-device-enrollment-methods))
 
 ### Verrouiller
 Spécifie s’il est possible de verrouiller l’appareil pour empêcher l’utilisateur de supprimer la stratégie Intune, supprimant ainsi l’appareil de la gestion. Pour un appareil iOS, le verrouillage de l’appareil nécessite qu’il soit en mode Supervisé.

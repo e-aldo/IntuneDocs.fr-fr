@@ -1,5 +1,5 @@
 ---
-title: Configurer l’infrastructure de certificat pour PFX |Microsoft Intune|
+title: Configurer l’infrastructure de certificat pour PFX |Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -16,7 +16,7 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: vinaybha
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ Pour utiliser des profils de certificat .PFX, en plus de l’autorité de certif
 
  -  **Un ordinateur capable de communiquer avec l’autorité de certification** : en guise d’alternative, utilisez l’ordinateur d’autorité de certification proprement dit.
 -  **Microsoft Intune Certificate Connector** : vous utilisez la console d’administration Intune pour télécharger le programme d’installation de **Certificate Connector** (**ndesconnectorssetup.exe**). Vous pouvez ensuite exécuter **ndesconnectorssetup.exe** sur l'ordinateur où vous souhaitez installer Certificate Connector. Pour les profils de certificat .PFX, installez Certificate Connector sur l'ordinateur qui communique avec l'autorité de certification.
--  **Serveur proxy d’application web** (facultatif) : vous pouvez utiliser un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web. Cette configuration :
+-  **Serveur proxy d’application web** (facultatif) : vous pouvez utiliser un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web. Cette configuration :
     -  Permet aux appareils de recevoir des certificats à l'aide d'une connexion Internet.
     -  Est une recommandation de sécurité lorsque les appareils se connectent via Internet pour recevoir et renouveler les certificats.
 
@@ -82,7 +82,7 @@ Dans cette tâche, vous allez publier le modèle de certificat.
 
     -   Sous l'onglet **Extensions** , vérifiez que **Description des stratégies d'application** inclut **Authentification du client**.
 
-        > [!IMPORTANT] Pour les modèles de certificats iOS et Mac OS X, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et assurez-vous que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
+        > [!IMPORTANT] Pour les modèles de certificats iOS et Mac OS X, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
 
 
 3.  Examinez la **Période de validité** sous l'onglet **Général** du modèle. Par défaut, Intune utilise la valeur configurée dans le modèle. Toutefois, vous pouvez configurer l’autorité de certification pour permettre au demandeur de spécifier une valeur différente, que vous pouvez alors définir à partir de la console d’administration Intune. Si vous souhaitez toujours utiliser la valeur du modèle, ignorez le reste de l'étape.
@@ -103,9 +103,9 @@ Dans cette tâche, vous allez publier le modèle de certificat.
 
     2.  Validez le modèle publié en l'affichant sous le dossier **Modèles de certificats** .
 
-5.  Sur l’ordinateur d’autorité de certification, assurez-vous que l’ordinateur qui héberge Intune Certificate Connector a l’autorisation Inscription qui lui permet d’accéder au modèle utilisé pour créer le profil .PFX. Définissez cette autorisation sous l'onglet **Sécurité** des propriétés de l'ordinateur d'autorité de certification.
+5.  Sur l’ordinateur d’autorité de certification, vérifiez que l’ordinateur qui héberge Intune Certificate Connector a l’autorisation Inscription qui lui permet d’accéder au modèle utilisé pour créer le profil .PFX. Définissez cette autorisation sous l'onglet **Sécurité** des propriétés de l'ordinateur d'autorité de certification.
 
-### Tâche 4 – Activer, installer et configurer Intune Certificate Connector
+### Tâche 2 : activer, installer et configurer Intune Certificate Connector
 Dans cette tâche, vous allez :
 
 télécharger, installer et configurer Certificate Connector.
@@ -124,7 +124,7 @@ télécharger, installer et configurer Certificate Connector.
 
 2.  Une fois le téléchargement terminé, exécutez le programme d'installation téléchargé (**ndesconnectorssetup.exe**) :
 
-  Exécutez le programme d’installation sur l’ordinateur en mesure de se connecter à l’autorité de certification. Choisissez l’option de distribution .PFX, puis cliquez sur Installer. Une fois l’installation terminée, créez un profil de certificat comme décrit dans [Configure certificate profiles](configure-intune-certificate-profiles.md) (Configurer les profils de certificat).
+  Exécutez le programme d’installation sur l’ordinateur qui peut se connecter à l’autorité de certification. Choisissez l’option de distribution .PFX, puis cliquez sur Installer. Une fois l’installation terminée, créez un profil de certificat comme décrit dans [Configurer les profils de certificat](configure-intune-certificate-profiles.md).
 
    <!-- Not sure about step 3 below -->
 
@@ -155,7 +155,7 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
 **http:// &lt;nom_de_domaine_complet_de_votre_serveur_NDES&gt;/certsrv/mscep/mscep.dll**
 
 ### Étapes suivantes
-Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurer les profils de certificat).
+Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configurer les profils de certificat](Configure-Intune-certificate-profiles.md).
 
 
 <!--HONumber=Jun16_HO1-->

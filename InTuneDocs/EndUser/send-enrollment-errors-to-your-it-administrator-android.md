@@ -18,7 +18,7 @@ ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Envoyer les erreurs d’inscription à votre administrateur informatique
 
-Si vous obtenez une erreur à l’inscription de votre appareil Android dans Intune, vous pouvez réessayer en appuyant sur **Réessayer** ou envoyer les informations d’erreur à votre administrateur informatique dans un e-mail en tapant **Envoyer les informations**. 
+Si vous recevez une erreur pendant l’inscription de votre appareil Android dans Intune, vous pouvez réessayer en appuyant sur **Réessayer** ou envoyer les informations d’erreur à votre administrateur informatique dans un e-mail en tapant **Envoyer les informations**. 
 
 Un e-mail adressé à votre administrateur informatique est automatiquement créé. Celui-ci contient les journaux dont il a besoin pour résoudre les problèmes liés à votre appareil.
 
@@ -40,6 +40,6 @@ Il existe différentes façons d’envoyer des journaux de données de votre app
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

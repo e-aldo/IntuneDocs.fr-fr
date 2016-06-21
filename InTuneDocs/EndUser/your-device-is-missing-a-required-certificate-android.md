@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,7 +33,7 @@ Si votre appareil Android n’est pas inscrit dans Intune et qu’il manque un c
 
 Pour résoudre ce problème et obtenir le certificat obligatoire :
 
-1.  Dans un navigateur, accédez à cette [page du certificat Digicert](https://www.digicert.com/digicert-root-certificates.htm)..
+1.  Dans un navigateur, accédez à cette [page du certificat Digicert](https://www.digicert.com/digicert-root-certificates.htm).
 
 2.  Recherchez et téléchargez le certificat Baltimore CyberTrust Root (https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt).
 
@@ -41,7 +41,7 @@ Pour résoudre ce problème et obtenir le certificat obligatoire :
 
 4.  Dans la boîte de dialogue **Name the certificate** (Nommer le certificat), acceptez le nom du certificat par défaut.
 
-5. Vérifiez que **Credential Use** (Utilisation des informations d’identification) a la valeur **Used for VPN and apps** (Utilisé pour le VPN et les applications), puis appuyez sur **OK**..
+5. Vérifiez que **Credential Use** (Utilisation des informations d’identification) a la valeur **Used for VPN and apps** (Utilisé pour le VPN et les applications), puis appuyez sur **OK**.
 
     ![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
 
@@ -49,6 +49,8 @@ Pour résoudre ce problème et obtenir le certificat obligatoire :
 
 7. Rouvrez l’application Portail d’entreprise. Vous devriez pouvoir vous connecter à l’application Portail d’entreprise. Si vous avez besoin d’aide, contactez votre administrateur informatique.
 
-<!--HONumber=May16_HO1-->
+Si vous avez besoin d’aide et si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas répertoriées sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO1-->
 
 

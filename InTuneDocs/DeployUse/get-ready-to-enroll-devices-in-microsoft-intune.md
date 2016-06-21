@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Se préparer à inscrire des appareils dans Microsoft Intune
-Pour permettre aux employés d’inscrire des appareils mobiles (dont [Android](set-up-android-management-with-microsoft-intune.md), [iOS et Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), ainsi que des [PC Windows](set-up-windows-device-management-with-microsoft-intune.md)) auprès d’Intune, vous devez activer l’inscription d’appareils. Pour autoriser l’inscription, vous devez définir une autorité de gestion des appareils mobiles, configurer le portail d’entreprise Intune, attribuer des licences et activer l’inscription pour la plateforme d’appareils.
+Pour permettre aux employés d’inscrire des appareils mobiles (notamment [Android](set-up-android-management-with-microsoft-intune.md), [iOS et Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), ainsi que des [PC Windows](set-up-windows-device-management-with-microsoft-intune.md)) dans Intune, vous devez activer l’inscription d’appareils. Pour autoriser l’inscription, vous devez définir une autorité de gestion des appareils mobiles, configurer le portail d’entreprise Intune, attribuer des licences et activer l’inscription pour la plateforme d’appareils.
 
-## <a name="BKMK_Set_MDM_Authority"></a>Définir l'autorité de gestion des appareils mobiles
+## Définir l'autorité de gestion des appareils mobiles
 L’autorité de gestion d’appareils mobiles définit le service de gestion habilité à gérer un ensemble d’appareils. Les options en matière d’autorité de gestion des appareils mobiles incluent Intune en version autonome et Configuration Manager avec Intune. Si vous définissez Configuration Manager en tant qu’autorité de gestion, aucun autre service ne peut être utilisé pour la gestion des appareils mobiles.
 
 >[!IMPORTANT]
@@ -45,11 +45,17 @@ L’autorité de gestion d’appareils mobiles définit le service de gestion ha
 3.  Intune vous invite à confirmer que vous souhaitez définir Intune comme autorité MDM. Cochez la case, puis choisissez **Oui** pour utiliser Microsoft Intune pour gérer les appareils mobiles.
 
 ## Configurer le portail d’entreprise Intune
-La personnalisation du Portail d’entreprise permet de fournir une expérience familière et utile à vos utilisateurs finaux. Pour ce faire, connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) en tant qu’administrateur du service ou client, choisissez **Administration** &gt; **Portail d’entreprise** et configurez les paramètres du portail d’entreprise.
 
-![admin-console-admin-workspace-comp-portal-settings](../media/cp_setup.png)
+Le portail d’entreprise Intune permet aux utilisateurs d’accéder aux données de l’entreprise et d’effectuer des tâches courantes, notamment l’inscription d’appareils, l’installation d’applications et d’accéder à des informations d’assistance fournies par le département informatique.
+
+> [!TIP]Quand vous personnalisez le portail d’entreprise, les configurations s’appliquent à la fois au site web du portail d’entreprise et aux applications Portail d’entreprise.
+
+La personnalisation du Portail d’entreprise permet de fournir une expérience familière et utile à vos utilisateurs finaux. Pour ce faire, connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) comme administrateur du service ou client, choisissez **Administration** &gt; **Portail d’entreprise** et configurez les paramètres du portail d’entreprise.
+
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 #### Informations de contact et déclaration de confidentialité de l'entreprise
+
 Le nom de l’entreprise s’affiche comme titre du Portail d’entreprise. Les informations de contact et les détails sont présentés aux utilisateurs dans l’écran Contacter le service informatique du Portail d’entreprise. La déclaration de confidentialité s’affiche lorsqu’un utilisateur clique sur le lien correspondant.
 
 |Nom du champ|Longueur maximale|Plus d'informations|
@@ -69,7 +75,9 @@ Les utilisateurs peuvent voir le lien du site web de support dans le Portail d�
     |URL du site Web de support technique|150|Si vous avez un site web de support technique auquel vous aimeriez que les utilisateurs accèdent, spécifiez cette URL ici. L’URL doit être au format https://www.contoso.com. Si vous ne spécifiez aucune URL, rien ne s’affiche pour le site web de support technique dans la page **Contacter le service informatique** du Portail d’entreprise.|
     |Nom du site web|40|Il s'agit du nom convivial qui s'affiche pour l'URL permettant d'accéder au site Web de support technique. Si vous spécifiez l’URL d’un site web de support technique sans aucun nom convivial, **Accéder au site web du service informatique** apparaît dans la page **Contacter le service informatique** du Portail d’entreprise.|
 
-## Personnalisation de l’image de la société
+
+#### Personnalisation de l’image de la société
+
 Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de votre société, un thème chromatique et un arrière-plan.
 
 |Nom du champ|Plus d'informations|
@@ -81,13 +89,11 @@ Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de
 
 Après avoir enregistré vos modifications, vous pouvez utiliser les liens proposés au bas de la page **Portail d’entreprise** de la console d’administration pour afficher le site web du Portail d’entreprise. Ces liens ne peuvent pas être modifiés. Lorsqu’un utilisateur se connecte, ces liens présentent vos abonnements dans le Portail d’entreprise.
 
-
-
 ## Attribuer une licence d’utilisateur Intune
 
-Vous utilisez **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD.
+Vous utilisez le **portail de gestion Office 365** pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD.
 
-1.  Connectez-vous au [portail de compte Intune](https://portal.office.com/Admin/Default.aspx) à l’aide de vos informations d’identification d’administration de client.
+1.  Connectez-vous au [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx) à l’aide de vos informations d’identification d’administrateur du client.
 
 2.  Sélectionnez le compte d’utilisateur auquel vous souhaitez attribuer une licence utilisateur Intune et cochez la case **Microsoft Intune** dans les propriétés du compte utilisateur.
 
@@ -100,7 +106,7 @@ Après avoir configuré l’autorité de gestion des appareils mobiles, vous dev
 - [Configuration de la gestion Android avec Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
 - [Configurer la gestion iOS et MAC avec Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Configurer la gestion de Windows Phone avec Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Configurer la gestion des appareils Windows avec Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+- [Configurer la gestion des périphériques Windows avec Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
 Vous pouvez également effectuer les opérations suivantes :
  - Utiliser le [compte de gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) pour inscrire de nombreux appareils

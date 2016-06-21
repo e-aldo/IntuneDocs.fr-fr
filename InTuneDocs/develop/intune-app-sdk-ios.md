@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Guide du Kit de développement logiciel (SDK) d’application Microsoft Intune pour les développeurs iOS | Microsoft Intune
+title: Guide du Kit SDK de l’application Microsoft Intune pour les développeurs iOS | Microsoft Intune
 description:
 keywords:
 author: Msmbaldwin
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Guide du Kit de développement logiciel (SDK) des applications Microsoft Intune pour les développeurs iOS
 
-> [!NOTE] Vous pouvez d’abord consulter le [Guide de prise en main du Kit de développement logiciel (SDK) d’application Intune](intune-app-sdk-get-started.md), qui explique comment préparer l’intégration sur chaque plateforme prise en charge.* 
+> [!NOTE] Vous pouvez d’abord consulter le [Guide de prise en main du Kit SDK de l’application Intune](intune-app-sdk-get-started.md), qui explique comment préparer l’intégration sur chaque plateforme prise en charge.* 
 
 Le Kit de développement logiciel (SDK) des applications Microsoft Intune pour iOS vous permet d’incorporer la gestion des applications mobiles Intune à votre application iOS. Une application de gestion des applications mobiles est une application intégrée au SDK des applications Intune. Elle permet aux administrateurs informatiques de déployer des stratégies sur votre application mobile quand l’application est gérée activement.
 

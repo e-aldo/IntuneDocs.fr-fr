@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # inscrire des appareils mobiles et installer une application
-Pour configurer la gestion des appareils mobiles avec Intune, vous devez d’abord définir l’autorité de gestion des appareils mobiles, activer la gestion des plateformes d’appareils, puis inscrire vos appareils à l’aide de l’application de portail d’entreprise. Vous pouvez ensuite déployer l’application Microsoft Skype que vous avez publiée à l’étape 6.
+Pour configurer la gestion des appareils mobiles avec Intune, vous devez d’abord définir l’autorité de gestion des appareils mobiles, activer la gestion des plateformes d’appareils, puis inscrire vos appareils à l’aide de l’application Portail d’entreprise. Vous pouvez ensuite déployer l’application Microsoft Skype que vous avez publiée à l’étape 6.
 
 ## Activer la gestion des appareils et inscrire des appareils
 
@@ -35,9 +35,9 @@ Pour configurer la gestion des appareils mobiles avec Intune, vous devez d’abo
 
 2.  **Activer la gestion des appareils mobiles pour votre plateforme d’appareils** Activez la gestion des appareils mobiles pour la plateforme d’appareils que vous souhaitez gérer. La configuration requise varie en fonction de la plateforme :
 
-    -   **iOS et Mac OS X** : consultez [Configurer la gestion iOS et MAC avec Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
+    -   **iOS et Mac OS X** : consultez [Configurer la gestion iOS et Mac avec Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
 
-    -   **Windows Phone** : consultez [Configurer la gestion de Windows Phone avec Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+    -   **Windows Phone** : consultez [Configurer la gestion Windows Phone avec Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
 
     -   **Android** : les appareils mobiles Android permettent aux utilisateurs de s’inscrire à l’aide de l’application Portail d’entreprise disponible sur [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider). Aucune configuration supplémentaire n'est nécessaire dans Intune.
 
@@ -66,7 +66,7 @@ Félicitations ! Vous venez d’effectuer la dernière étape du *guide de dém
 
 >[!div class="step-by-step"]
 
->[&larr; **Inscrire des appareils**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Tâches de post-configuration** &rarr;](.\post-configuration-tasks.md)  
+>[&larr; **Inscrire des appareils**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Tâches après la configuration** &rarr;](.\post-configuration-tasks.md)  
 
 
 <!--HONumber=Jun16_HO1-->

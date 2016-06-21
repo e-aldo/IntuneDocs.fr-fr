@@ -150,7 +150,7 @@ Spécifiez les paramètres suivants pour les **appareils Samsung KNOX** :
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
-|**Sélectionner une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran**|Cliquez sur **Parcourir**, puis sélectionnez l’application gérée qui sera autorisée à s’exécuter quand l’appareil sera en mode plein écran (les applications spécifiées comme un lien vers le magasin ne sont pas prises en charge actuellement). Aucune autre application ne pourra s'exécuter sur l'appareil.|
+|**Sélectionner une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran**|Cliquez sur **Parcourir**, puis sélectionnez l’application gérée qui sera autorisée à s’exécuter quand l’appareil sera en mode plein écran (les applications spécifiées comme un lien vers le Store ne sont pas prises en charge actuellement). Aucune autre application ne pourra s'exécuter sur l'appareil.|
 |**Autoriser les boutons de volume**|Active ou désactive l'utilisation des boutons de volume sur l'appareil.|
 |**Activer le bouton Veille/sortie de veille de l'écran**|Active ou désactive le bouton Veille/sortie de veille de l'écran sur l'appareil.|
 

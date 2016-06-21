@@ -62,9 +62,9 @@ Sachez que les stratégies sont actualisées et mises à jour à intervalles ré
 
 -   **Windows Phone** : la stratégie est mise à jour toutes les huit heures. Vous pouvez forcer la mise à jour en effectuant une actualisation dans le portail d’entreprise, sous **Paramètres**.
 
--   **iOS** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le Portail d’entreprise, en sélectionnant l’appareil et en choisissant **Synchroniser**.
+-   **iOS** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le portail d’entreprise, en sélectionnant l’appareil et en choisissant **Synchroniser**.
 
--   **Android** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le Portail d’entreprise, en sélectionnant l’appareil et en choisissant **Synchroniser**.
+-   **Android** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le portail d’entreprise, en sélectionnant l’appareil et en choisissant **Synchroniser**.
 
 ## Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
 Pour les appareils Windows non soumis à la gestion des appareils mobiles, les erreurs de stratégie dans le fichier policyplatform.log peuvent être dues à des paramètres définis sur des valeurs autres que les valeurs par défaut dans le Contrôle de compte d’utilisateur Windows sur l’appareil. Certains paramètres de Contrôle de compte d’utilisateur autres que les paramètres par défaut peuvent affecter les installations du client Microsoft Intune et l’exécution des stratégies.
@@ -100,7 +100,7 @@ Pour résoudre ce problème, réglez l’heure du système local le plus proche 
 Les appareils Windows Phone et Windows RT n’autorisent pas d’assouplir les stratégies de sécurité définies via GPM ou EAS a posteriori. Tel est le cas, par exemple, si vous fixez le **nombre minimal de caractères des mots de passe** à 8, puis que vous essayez de le réduire à 4. La stratégie la plus restrictive a déjà été appliquée à l’appareil.
 
 Selon la plateforme d’appareil, si vous voulez attribuer à la stratégie une valeur moins sûre, vous devrez peut-être réinitialiser les stratégies de sécurité.
-Par exemple, dans Windows RT, sur le bureau, effectuez un balayage de droite à gauche pour ouvrir la barre **Icônes**, puis choisissez **Paramètres** &gt; **Panneau de configuration**.  Sélectionnez l’applet **Comptes d’utilisateurs** .
+Par exemple, dans Windows RT, sur le bureau, balayez à partir de la droite pour ouvrir la barre **Icônes**, puis choisissez **Paramètres** &gt; **Panneau de configuration**.  Sélectionnez l’applet **Comptes d’utilisateurs** .
 Au bas du menu de navigation gauche figure le lien **Réinitialiser les stratégies de sécurité** . Choisissez-le, puis choisissez le bouton **Réinitialiser les stratégies** .
 Pour pouvoir appliquer une stratégie moins restrictive, vous devrez peut-être retirer les autres appareils GPM (par exemple, Android, Windows Phone 8.1 et versions ultérieures et iOS), puis les réinscrire dans le service.
 

@@ -27,9 +27,9 @@ ms.suite: ems
 
 # Configurer la gestion des appareils pour Windows Phone 8.0
 
-Windows Phone 8.0 requiert un certificat Symantec pour installer l’application Portail d’entreprise Intune et permettre la gestion de l’appareil. Un certificat est également requis pour signer les applications métier. La rubrique suivante est uniquement pour Windows Phone 8.0. Pour gérer Windows Phone 8.1 ou version ultérieure, y compris Windows 10 Mobile, consultez [Set up Windows Phone enrollment](set-up-windows-phone-management-with-microsoft-intune.md) (Configurer l’inscription de Windows Phone).
+Windows Phone 8.0 nécessite un certificat Symantec pour installer l’application Portail d’entreprise Intune et permettre la gestion de l’appareil. Un certificat est également requis pour signer les applications métier. La rubrique suivante concerne uniquement Windows Phone 8.0. Pour gérer Windows Phone 8.1 ou version ultérieure, y compris Windows 10 Mobile, consultez [Configurer l’inscription de Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md).
 
--   **Windows Phone 8** – Certificat requis
+-   **Windows Phone 8** – Certificat obligatoire
 -   **Windows Phone 8.1 et Windows 10 Mobile** exigent un certificat uniquement dans les cas suivants :
 
     -   Vous souhaitez déployer l’application Portail d’entreprise avec Intune
@@ -68,7 +68,7 @@ Les exigences de configuration de la gestion d'appareils mobiles Windows Phone v
 
     ![Boîte de dialogue Paramètres de la gestion des appareils mobiles Windows Phone](../media/windows-phone-enrollment.png)
 
-3.  **Gérer les certificats pour prendre en charge la signature des applications** [Requis pour les appareils Windows Phone 8.0 et Windows Phone 8.1 qui n’accèdent pas au Windows Phone Store et/ou qui n’ont pas besoin d’applications métier.]
+3.  **Gérer les certificats pour prendre en charge la signature des applications** [Obligatoire pour les appareils Windows Phone 8.0 et Windows Phone 8.1 qui n’accèdent pas au Windows Phone Store et/ou qui n’ont pas besoin d’applications métier.]
 
     Pour prendre en charge l'application Portail d'entreprise pour Windows Phone 8.0 et déployer des applications d'entreprise sur Windows Phone 8.1, vous devez obtenir un **certificat de signature de code Symantec Enterprise Mobile**. Vous ne pouvez pas utiliser un certificat émis par votre propre autorité de certification, car seul le certificat Symantec est approuvé par les appareils Windows Phone. Ce certificat est requis pour :
 
@@ -100,7 +100,7 @@ Les exigences de configuration de la gestion d'appareils mobiles Windows Phone v
 
         1.  **Télécharger l’application Portail d’entreprise** Téléchargez l’application [Portail d’entreprise Intune pour Windows Phone](http://go.microsoft.com/fwlink/?LinkId=268440) à partir du Centre de téléchargement. L'emplacement d'installation par défaut est `C:\Program Files (x86)\Microsoft Corporation\Windows Intune Company Portal for Windows Phone`.
 
-        2.  **Télécharger le Kit de développement logiciel (SDK) Windows Phone 8.0** Téléchargez le [Kit de développement logiciel (SDK) Windows Phone](http://go.microsoft.com/fwlink/?LinkId=615570).
+        2.  **Télécharger Windows Phone 8.0 SDK** Téléchargez le [SDK Windows Phone](http://go.microsoft.com/fwlink/?LinkId=615570).
 
         3.  **Signer le code de l’application Portail d’entreprise** Utilisez l’application XAPSignTool téléchargée avec le SDK pour signer l’application Portail d’entreprise avec le fichier .pfx créé à partir du certificat Symantec. Pour plus d'informations, consultez [Comment signer une application d'entreprise à l'aide de XapSignTool](http://go.microsoft.com/fwlink/?LinkID=280195).
 
@@ -134,11 +134,11 @@ Vous pouvez déployer l’application Portail d’entreprise sur les appareils W
 
     -   WinPhoneCompanyPortal.ps1 : script PowerShell que vous pouvez utiliser pour signer le fichier de l'application Portail d'entreprise à des fins de déploiement vers des appareils Windows Phone 8.1
 
-2.  **Télécharger le Kit de développement logiciel (SDK) Windows Phone** Téléchargez le [Kit de développement logiciel (SDK) Windows Phone 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) (http://go.microsoft.com/fwlink/?LinkId=268439) et installez-le sur votre ordinateur. Ce SDK est nécessaire pour générer un jeton d'inscription d'application.
+2.  **Télécharger le SDK Windows Phone** Téléchargez [Windows Phone 8.0 SDK](http://go.microsoft.com/fwlink/?LinkId=615570) (http://go.microsoft.com/fwlink/?LinkId=268439) et installez-le sur votre ordinateur. Ce SDK est nécessaire pour générer un jeton d'inscription d'application.
 
-3.  **Générer un fichier AETX** Générez un fichier de jeton d’inscription d’application (.aetx) à partir du fichier PFX Symantec. Pour cela, utilisez le fichier AETGenerator.exe inclus dans le SDK Windows Phone 8.0. Pour obtenir des instructions sur la création d'un fichier AETX, consultez [Comment générer un jeton d'inscription d'application pour Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx).
+3.  **Générer un fichier AETX** Générez un fichier de jeton d’inscription d’application (.aetx) à partir du fichier PFX Symantec. Pour cela, utilisez le fichier AETGenerator.exe inclus dans Windows Phone 8.0 SDK. Pour obtenir des instructions sur la création d'un fichier AETX, consultez [Comment générer un jeton d'inscription d'application pour Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx).
 
-4.  **Télécharger le Kit de développement logiciel (SDK) Windows pour Windows 8.1** Téléchargez et installez le [Kit de développement logiciel (SDK) Windows Phone](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Notez que le script PowerShell inclus avec l'application Portail d'entreprise utilise l'emplacement d'installation par défaut, à savoir `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Si vous effectuez l'installation à un autre emplacement, vous devez inclure celui-ci dans un paramètre d'applet de commande.
+4.  **Télécharger le SDK Windows pour Windows 8.1** Téléchargez et installez le [SDK Windows Phone](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Notez que le script PowerShell inclus avec l'application Portail d'entreprise utilise l'emplacement d'installation par défaut, à savoir `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Si vous effectuez l'installation à un autre emplacement, vous devez inclure celui-ci dans un paramètre d'applet de commande.
 
 5.  **Signer le code de l’application à l’aide de PowerShell** En tant qu’administrateur, ouvrez **Windows PowerShell** sur l’ordinateur hôte sur lequel sont installés le SDK Windows et le certificat de signature de code Symantec Enterprise Mobile, accédez au fichier Sign-WinPhoneCompanyPortal.ps1, puis exécutez le script.
 

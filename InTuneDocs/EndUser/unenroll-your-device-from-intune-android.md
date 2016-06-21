@@ -18,7 +18,7 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Désinscrire votre appareil d'Intune
 
-Quand vous désinscrivez votre appareil Android d’Intune, il ne peut plus accéder aux ressources d’entreprise.  Pour plus d’informations sur ce qui se passe lors d’une désinscription, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+Quand vous désinscrivez votre appareil Android d’Intune, il ne peut plus accéder aux ressources d’entreprise.  Pour plus d’informations sur ce qui se passe lors d’une désinscription, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
 Pour désinscrire votre appareil d’Intune, désinstallez l’application Portail d’entreprise, procédez comme suit ou regardez cette [vidéo](http://aka.ms/gyq2du) :
 
@@ -46,10 +46,11 @@ Pour désinscrire votre appareil d’Intune, désinstallez l’application Porta
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
+Si vous avez besoin d’aide et si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas répertoriées sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

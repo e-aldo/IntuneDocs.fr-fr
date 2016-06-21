@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Avantages du Kit de développement logiciel (SDK) d’application Intune | Microsoft Intune
+title: Avantages du SDK de l’application Intune | Microsoft Intune
 description:
 keywords:
 author: Msmbaldwin
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Présentation du Kit de développement logiciel (SDK) d’application Intune
+# Présentation du Kit SDK de l’application Intune
 Le Kit de développement logiciel (SDK) de l’application Intune est disponible pour les plateformes iOS et Android et permet d’utiliser les fonctionnalités de gestion des applications mobiles avec Microsoft Intune. De plus, nous nous efforçons de réduire le nombre de modifications de code nécessaires de la part du développeur. Comme vous pourrez le constater, il est possible d’activer la plupart des fonctionnalités du Kit de développement logiciel (SDK) sans modifier le comportement de votre application. Pour une expérience utilisateur et administrateur améliorée, vous pouvez utiliser nos API dans le but de personnaliser le comportement de votre application pour les fonctionnalités qui la sollicitent. Une fois que vous avez activé votre application, les administrateurs informatiques peuvent déployer des stratégies sur les applications gérées par Intune et tirer parti de ces fonctionnalités pour protéger leurs données d’entreprise.
 
 ## Fonctionnalités standard
@@ -49,7 +49,7 @@ Les administrateurs informatiques peuvent réinitialiser à distance les donnée
 Les administrateurs informatiques peuvent imposer l’utilisation de Managed Browser quand il s’agit d’ouvrir des liens à partir d’applications gérées par Intune. Microsoft Intune Managed Browser permet de garantir que les liens qui figurent dans les messages électroniques (dans un client de messagerie géré par Intune) restent dans le domaine des applications gérées par Intune.
 
 ### Appliquer une stratégie de code confidentiel
-Les administrateurs informatiques peuvent appliquer une stratégie de code confidentiel au démarrage d’une application gérée par Intune. Cette stratégie permet de s’assurer que les utilisateurs finaux qui ont inscrit leurs appareils auprès de Microsoft Intune sont les mêmes personnes qui démarrent les applications. Quand un utilisateur final configure son code confidentiel, le Kit de développement logiciel (SDK) d’application Intune utilise Azure Active Directory pour comparer les informations d’identification de l’utilisateur final à celles qui ont servi à inscrire l’appareil.
+Les administrateurs informatiques peuvent appliquer une stratégie de code confidentiel au démarrage d’une application gérée par Intune. Cette stratégie permet de s’assurer que les utilisateurs finaux qui ont inscrit leurs appareils auprès de Microsoft Intune sont les mêmes personnes qui démarrent les applications. Quand un utilisateur final configure son code confidentiel, le SDK de l’application Intune utilise Azure Active Directory pour comparer les informations d’identification de l’utilisateur final à celles qui ont servi à inscrire l’appareil
 
 ### Demander aux utilisateurs d’entrer des informations d’identification avant de pouvoir démarrer les applications
 Les administrateurs informatiques peuvent demander aux utilisateurs d’entrer leurs informations d’identification pour pouvoir démarrer une application gérée par Intune. Le Kit de développement logiciel (SDK) de l’application Intune utilise Azure Active Directory pour fournir une expérience d’authentification unique, dans laquelle les informations d’identification, une fois entrées, sont réutilisées pour les connexions suivantes. Nous prenons également en charge l’authentification des solutions de gestion d’identité [fédérées à l’aide d’Azure Active Directory](https://msdn.microsoft.com/library/azure/jj679342.aspx).

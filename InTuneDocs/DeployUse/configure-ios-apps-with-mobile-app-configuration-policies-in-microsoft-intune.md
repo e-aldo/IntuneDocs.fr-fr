@@ -42,7 +42,7 @@ Les stratégies de configuration des applications mobiles peuvent vous aider à 
 
 Vous ne déployez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt la stratégie à une application que vous déployez ensuite. Les paramètres de stratégie sont utilisés chaque fois que l’application les vérifie (en général, lors de sa première exécution).
 
-> [!TIP] Ce type de stratégie est actuellement disponible uniquement pour les appareils exécutant iOS 7.1 et versions ultérieures, et prend en charge les types d’installation d’application suivants :
+> [!TIP] Ce type de stratégie est disponible uniquement pour les appareils exécutant iOS 7.1 et versions ultérieures, et prend en charge les types d’installation d’application suivants :
 > 
 > -   **Application iOS gérée à partir de l'App Store**
 > -   **Package d'application pour iOS**

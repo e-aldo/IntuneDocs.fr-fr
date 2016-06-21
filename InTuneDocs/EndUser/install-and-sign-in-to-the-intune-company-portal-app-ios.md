@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/04/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,13 +36,15 @@ Le portail d’entreprise est une application que vous installez sur votre appar
 
     ![download-ios-comp-portal-app](./media/ios-cpinstall-1-cpinstore.png)
 
-3.  Ouvrez l’application Portail d’entreprise, entrez votre adresse de messagerie professionnelle ou scolaire ainsi que votre mot de passe, puis appuyez sur **Se connecter**..
+3.  Ouvrez l’application Portail d’entreprise, entrez votre adresse de messagerie professionnelle ou scolaire ainsi que votre mot de passe, puis appuyez sur **Se connecter**.
 
-    Si vous vous connectez à l’application Portail d’entreprise pour la première fois et que votre entreprise ou établissement scolaire utilise Intune, vous êtes invité à inscrire votre appareil dans Intune. Pour vous inscrire, suivez les étapes dans [Inscrire votre appareil iOS dans Intune](enroll-your-device-in-intune-ios.md) ou [Inscrire votre appareil de Mac OS X dans Intune](enroll-your-device-in-intune-mac-os-x.md)..
+    Si vous vous connectez à l’application Portail d’entreprise pour la première fois et que votre entreprise ou établissement scolaire utilise Intune, vous êtes invité à inscrire votre appareil dans Intune. Pour vous inscrire, suivez les étapes indiquées dans [Inscrire votre appareil iOS dans Intune](enroll-your-device-in-intune-ios.md) ou [Inscrire votre appareil Mac OS X dans Intune](enroll-your-device-in-intune-mac-os-x.md).
+
+Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

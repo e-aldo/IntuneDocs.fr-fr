@@ -49,7 +49,7 @@ Les étapes suivantes vous aideront à configurer une stratégie de configuratio
 
     ![admin-console-policy-workspace](./media/policy.png)
 
-3.  Dans la liste **Tâches** sur la page **Vue d’ensemble de la stratégie**, choisissez **Ajouter une stratégie**.
+3.  Dans la liste **Tâches** de la page **Vue d’ensemble de la stratégie**, choisissez **Ajouter une stratégie**.
 
 4.  Dans la liste des stratégies, développez la plateforme pour laquelle vous voulez créer une stratégie, puis choisissez **Configuration générale** > **Créer et déployer une stratégie avec les paramètres recommandés** > **Créer une stratégie**.
 
@@ -65,19 +65,19 @@ Votre stratégie s’affiche dans la liste des stratégies de configuration et a
 
     > [!NOTE] Quand vous démarrez l’**Éditeur de logiciel Intune** pour la première fois, un bref délai se produit pendant l’installation de l’application.
 
-2.  Examinez l’avertissement de sécurité, puis choisissez **Exécuter**.
+2.  Lisez l’avertissement de sécurité, puis choisissez **Exécuter**.
 
-3.  Sur la page **Avant de commencer**, choisissez **Suivant**.
+3.  Dans la page **Avant de commencer**, choisissez **Suivant**.
 
-4.  Sur la page **Installation du logiciel**, dans **Spécifier comment ce logiciel doit être mis à disposition des appareils**, choisissez **Lien externe**.
+4.  Dans la page **Installation du logiciel**, dans **Spécifier comment ce logiciel doit être mis à disposition des appareils**, choisissez **Lien externe**.
 
 5.  Entrez le lien externe pour le logiciel dans **Spécifiez l’URL**, puis cliquez sur **Suivant**. Veillez à faire précéder l’URL de **http://**. Pour l'application Skype, utilisez le lien ci-dessous qui correspond à la plateforme d'appareil mobile que vous utilisez :
 
-    -   **iOS :**   [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
+    -   **iOS :**   [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
-    -   **Android :**  [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
+    -   **Android :**  [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
 
-    -   **Windows Phone 8 ou Windows Phone 8.1 :**  [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
+    -   **Windows Phone 8 ou Windows Phone 8.1 :**  [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
 6.  Dans la page **Description du logiciel**, fournissez les informations que les utilisateurs pourront afficher pour le logiciel dans le portail d’entreprise, puis cliquez sur **Suivant**. Les paramètres suivants sont disponibles (cet exemple fait référence à Skype) :
 
@@ -95,9 +95,9 @@ Votre stratégie s’affiche dans la liste des stratégies de configuration et a
 
 7.  Dans la page **Résumé**, vérifiez les informations du logiciel, puis cliquez sur **Télécharger**. Cliquez sur **Fermer** pour quitter l’Assistant.
 
-8.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Applications** > **Applications** > **Skype** > **Gérer le déploiement**
+8.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Applications** > **Applications** > **Skype** > **Gérer le déploiement**.
 
-9. Sur la page **Sélectionner des groupes**, choisissez **Utilisateurs Intune** pour déployer le logiciel vers ce groupe d’utilisateurs, puis choisissez **Ajouter** > **Suivant**.
+9. Dans la page **Sélectionner des groupes**, choisissez **Utilisateurs Intune** pour déployer le logiciel sur ce groupe d’utilisateurs, puis choisissez **Ajouter** > **Suivant**.
 
 10. Dans la page **Action de déploiement** , sélectionnez **Installation disponible** dans la colonne **Approbation** pour chaque groupe.
 

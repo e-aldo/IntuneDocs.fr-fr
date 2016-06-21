@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Paramètres de la stratégie Windows Phone 8.1 dans Microsoft Intune | Microsoft Intune
+title: Paramètres de la stratégie Windows Phone 8.1 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## Paramètres de configuration généraux
 
-Utilisez la **stratégie de configuration générale Windows Phone** Microsoft Intune pour configurer les paramètres suivants des appareils Windows Phone 8.1 :
+Utilisez la **stratégie de configuration générale Windows Phone (Windows Phone 8.1 et versions ultérieures)** Microsoft Intune pour configurer les paramètres suivants des appareils Windows Phone 8.1 :
 
 -   **Paramètres de sécurité des appareils mobiles** : choisissez des paramètres dans une liste de paramètres prédéfinis qui vous permettent de contrôler diverses fonctions et fonctionnalités sur l'appareil.
 
 -   **Applications conformes et non conformes** : spécifiez une liste d’applications conformes ou non conformes dans votre entreprise. Les appareils Windows Phone peuvent bloquer ou autoriser l'installation de ces applications.
+
+### Paramètres d’applicabilité
+
+|Nom du paramètre|Détails|
+|----------------|----------------------------------|
+|**Appliquer toutes les configurations à Windows 10**|Permet aux paramètres de cette stratégie d’être appliqués aux appareils Windows 10 en plus des appareils Windows Phone 8.1.|
 
 ### Paramètres de mot de passe
 
@@ -121,8 +127,7 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 |**Importer des applications**|Importe une liste d'applications que vous avez spécifiée dans un fichier de valeurs séparées par des virgules. Utilisez le format Nom de l'application, Éditeur, URL de l'application dans le fichier.|
 |**Éditer**|Vous permet de modifier le nom, l'éditeur et l'URL de l'application sélectionnée.|
 |**Supprimer**|Supprime l'application sélectionnée dans la liste.|
-> [!IMPORTANT]
-> Si vous spécifiez une liste d'applications autorisées pour les appareils Windows Phone 8.1, vous devez ajouter l'application Portail d'entreprise à cette liste, sinon elle sera bloquée.
+> [!IMPORTANT] Si vous spécifiez une liste d’applications autorisées pour les appareils Windows Phone 8.1, vous devez ajouter l’application Portail d’entreprise à cette liste, sinon elle sera bloquée.
 
 
 ### Informations de référence pour les applications conformes et non conformes
@@ -139,7 +144,7 @@ Ouvrez la page de l'application, puis copiez l'URL dans le Presse-papiers. Vous 
 ## Paramètres de la stratégie personnalisée 
 Utilisez la **stratégie de configuration personnalisée Windows Phone** Microsoft Intune pour déployer des paramètres OMA-URI (Open Mobile Alliance Uniform Resource Identifier) permettant de contrôler les fonctionnalités des **appareils Windows Phone 8.1**. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.
 
-Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Windows Phone qui ne sont pas configurables avec une stratégie de configuration générale Intune. Pour plus d’informations sur les paramètres que vous pouvez configurer avec ces stratégies, consultez [Gérer les paramètres et les fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Windows Phone qui ne sont pas configurables avec une stratégie de configuration générale Intune. Pour obtenir des informations sur les paramètres que vous pouvez configurer avec ces stratégies, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 Pour obtenir de l’aide sur la création de paramètres OMA-URI pour les appareils Windows Phone, consultez la [documentation du protocole MDM Windows Phone 8.1](http://technet.microsoft.com/library/dn499787.aspx).
 
@@ -169,6 +174,6 @@ Dans la boîte de dialogue **Ajouter ou modifier un paramètre OMA-URI**, spéci
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

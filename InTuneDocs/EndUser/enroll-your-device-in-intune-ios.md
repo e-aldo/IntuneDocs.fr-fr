@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,11 +33,12 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 Si vous essayez d’inscrire un appareil Mac OS X, consultez [Inscrire votre appareil Mac OS X dans Intune](enroll-your-device-in-intune-mac-os-x.md).
 
 
+
 **Pour inscrire un appareil iOS**
 
 1.  Appliquez la procédure décrite dans [Installer l’application Portail d’entreprise Intune et s’y connecter](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
-2. Sur la page **Configuration de l’accès à l’entreprise**, appuyez sur **Commencer**.
+2. Dans la page **Configuration de l’accès à l’entreprise**, appuyez sur **Commencer**.
 
     ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png) 
 
@@ -79,7 +80,7 @@ Si vous essayez d’inscrire un appareil Mac OS X, consultez [Inscrire votre a
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png) 
 
-12. Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **Continuer**. Si votre administrateur a configuré des exigences de sécurité supplémentaires, telles que l’obligation de définir un mot de passe, suivez les instructions à l’écran jusqu’à ce que toutes les exigences de conformité soient satisfaites et que l’écran Configuration de l’accès à l’entreprise réapparaisse, puis appuyez sur **Continuer**.
+12. Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **Continuer**. Si votre administrateur informatique a configuré des exigences de sécurité supplémentaires, telles que l’obligation de définir un mot de passe, suivez les instructions à l’écran jusqu’à ce que toutes les exigences de conformité soient satisfaites et que l’écran Configuration de l’accès à l’entreprise réapparaisse, puis appuyez sur **Continuer**.
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png) 
 
@@ -89,13 +90,11 @@ Si vous essayez d’inscrire un appareil Mac OS X, consultez [Inscrire votre a
 
 Votre appareil est maintenant inscrit dans Intune, et l’application Portail d’entreprise réapparaît.
 
-    
-
-  
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

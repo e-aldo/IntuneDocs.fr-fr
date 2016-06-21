@@ -90,13 +90,13 @@ Les contrats de licence en volume Intune fournissent des informations de licence
 
         -   **Nom du contrat** : spécifiez un nom unique pour le contrat.
 
-            Le nom du contrat peut comprendre 256 caractères au maximum et ne peut pas contenir les caractères suivants : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ’ " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
+            Le nom du contrat peut comprendre 256 caractères au maximum et ne peut pas contenir les caractères suivants : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ’ " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
 
         -   **Numéro de contrat/d’autorisation** : entrez le numéro de contrat/d’autorisation de la paire de licence.
 
         -   **Numéro de client/d’inscription/de licence** : entrez le numéro de client/d’inscription/de licence de la paire de licence.
 
-        > [!NOTE] Si vous ajoutez plusieurs paires de numéros de contrats, Intune crée un contrat avec le nom que vous spécifiez, et toutes les paires que vous avez ajoutées feront partie de ce contrat.
+        > [!NOTE] Si vous ajoutez plusieurs paires de numéros de contrats, Intune crée un contrat avec le nom que vous spécifiez, et toutes les paires que vous avez ajoutées font partie de ce contrat.
 
     Vous pouvez cliquer sur **+** pour ajouter une autre paire de numéros de contrats ou sur **-** pour supprimer une paire de numéros de contrats que vous avez déjà entrée.
 
@@ -140,7 +140,7 @@ Vous pouvez aussi ajouter d’autres types de contrats de licence à Intune en p
 
 4.  Dans la zone **Ajouter des détails de contrat** , spécifiez les éléments suivants :
 
-    -   **Agreement name** (obligatoire). Le nom du contrat peut comprendre 256 caractères au maximum et ne peut pas contenir les caractères suivants : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ’ " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
+    -   **Agreement name** (obligatoire). Le nom du contrat peut comprendre 256 caractères au maximum et ne peut pas contenir les caractères suivants : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ’ " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
 
     -   **Éditeur** (obligatoire). Lorsque vous commencez à saisir un nom d'éditeur, le service récupère tous les noms d'éditeurs contenant les lettres que vous tapez. Par exemple, si vous tapez « soft », le service récupère tous les noms des éditeurs contenant « soft », tels que « Microsoft » et « Microsoft Research ». Les noms d'éditeurs sont extraits du catalogue de logiciels. Avant de saisir le nom de produit, vous devez sélectionner l'éditeur.
 
@@ -178,7 +178,7 @@ Des contrats de licence logicielle peuvent être ajoutés à des groupes de lice
 |Créer un groupe de licences|Dans la page **Vue d’ensemble** de l’espace de travail **Licences** , cliquez sur **Créer un groupe de licences** dans le menu **Tâches** . **Remarque :** Vous pouvez créer un nombre total maximum de 500 groupes de licences.|
 |Renommer un groupe de licences|Dans l’espace de travail **Licences** , choisissez un groupe de licences, puis cliquez sur **Modifier le groupe de licences** dans le menu **Tâches** .|
 |Supprimer un groupe de licences|Dans l’espace de travail **Licences** , choisissez un groupe de licences, puis cliquez sur **Supprimer le groupe de licences** dans le menu **Tâches** . **Conseil :** Les licences qui résidaient dans le groupe supprimé sont déplacées vers le groupe de licences **Contrats non attribués**.|
-|Supprimer un contrat de licence|Dans l’espace de travail **Licences** , choisissez un contrat, puis cliquez sur **Supprimer**. **Conseil :** Après avoir supprimé les contrats de licence en volume, pour mettre à jour les informations de licence, cliquez sur **Actualiser maintenant** sur la page **Vue d’ensemble des licences** ou sous l’onglet **Général** pour un groupe de licences spécifique.|
+|Supprimer un contrat de licence|Dans l’espace de travail **Licences** , choisissez un contrat, puis cliquez sur **Supprimer**. **Conseil :** Après avoir supprimé les contrats de licence en volume, pour mettre à jour les informations de licence, cliquez sur **Actualiser maintenant** dans la page **Vue d’ensemble des licences** ou sous l’onglet **Général** pour un groupe de licences spécifique.|
 
 
 

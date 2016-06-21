@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Synchroniser votre appareil manuellement
-Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil Windows, ce qui peut vous aider à accélérer l’installation. Les seules versions prises en charge sont celles qui sont répertoriées. Utilisez le lien répertorié dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous possédez :
+Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil Windows, ce qui peut vous aider à accélérer l’installation. Les seules versions prises en charge sont celles qui sont répertoriées. Utilisez le lien indiqué dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous possédez :
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -62,11 +62,11 @@ Pour synchroniser manuellement votre appareil de bureau Windows 10 pour accélé
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
-2. Sur la page **Paramètres**, sélectionnez **Comptes**.
+2. Dans la page **Paramètres**, sélectionnez **Comptes**.
  
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
     
-3. Sur la page **Comptes**, sélectionnez **Accès professionnel**
+3. Dans la page **Comptes**, sélectionnez **Accès professionnel**.
     
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
     

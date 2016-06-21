@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prise en main du Kit de développement logiciel (SDK) de l’application Microsoft Intune | Microsoft Intune
+title: Prise en main du Kit SDK de l’application Microsoft Intune | Microsoft Intune
 description:
 keywords:
 author: Msmbaldwin
@@ -59,12 +59,12 @@ Nous utilisons l’adresse de messagerie que vous avez entrée lors de l’inscr
 
 Pour activer votre application mobile iOS, vous avez besoin des éléments suivants :
 
-1. **[Guide du Kit de développement logiciel (SDK) d’application Intune pour les développeurs iOS](intune-app-sdk-ios.md)**: ce document vous guide tout au long des étapes à suivre pour activer votre application mobile iOS avec le Kit de développement logiciel (SDK) d’application Intune. Vous trouverez ce document dans le dossier de documentation que vous avez téléchargé avec le package SDK de l’application Intune.
+1. **[Guide du Kit SDK de l’application Intune pour les développeurs iOS](intune-app-sdk-ios.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application mobile iOS avec le Kit SDK de l’application Intune. Vous trouverez ce document dans le dossier de documentation que vous avez téléchargé avec le package SDK de l’application Intune.
 2. **SDK de l’application Intune pour iOS**: dans le cadre du package SDK de l’application Intune que vous avez téléchargé à partir de Microsoft Intune, vous trouverez un dossier signé intitulé « Intune App SDK for iOS ». Ce dossier comprend la totalité du contenu du SDK de l’application Intune pour iOS.
 
 Pour activer votre application mobile Android avec le SDK de l’application Intune, vous avez besoin des éléments suivants :
 
-1. **[Guide du Kit de développement logiciel (SDK) d’application Intune pour les développeurs Android](intune-app-sdk-android.md)**: ce document vous guide tout au long des étapes à suivre pour activer votre application mobile Android avec le Kit de développement logiciel (SDK) d’application Intune. Vous trouverez ce document dans le dossier de documentation que vous avez téléchargé avec le package SDK de l’application Intune.
+1. **[Guide du Kit SDK de l’application Intune pour les développeurs Android](intune-app-sdk-android.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application mobile Android avec le Kit SDK de l’application Intune. Vous trouverez ce document dans le dossier de documentation que vous avez téléchargé avec le package SDK de l’application Intune.
 2. **SDK de l’application Intune pour Android**: dans le cadre du package SDK de l’application Intune que vous avez téléchargé à partir de Microsoft Intune, vous trouverez un dossier signé intitulé « Intune App SDK for Android ». Ce dossier comprend la totalité du contenu du SDK de l’application Intune pour Android.
 
 ## Désactivation de la télémétrie pour votre application

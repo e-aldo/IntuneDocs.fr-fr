@@ -53,7 +53,7 @@ Pour en savoir plus sur les modifications du service Intune, consultez les [Nouv
 
 Les mises à jour importantes du service vous seront également communiquées dans le Centre de messages du [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx). Si vous installez l’[application mobile d’administration Office 365](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) d’accompagnement, vous pouvez recevoir des notifications sur votre appareil mobile.
 
-> [!NOTE] Vous pouvez surveiller l’état du service Intune sur le [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx). Choisissez **État du service** dans le volet gauche.  
+> [!NOTE] Vous pouvez surveiller l’état du service Intune dans le [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx). Choisissez **État du service** dans le volet gauche.  
 
 Voici les types de notifications que Microsoft fournit à propos du service Intune :
 -   Pour vous aider à planifier les modifications du service, nous vous notifions au moins 30 à 90 jours avant la mise à niveau du service selon l’impact de la modification. Ces communiqués empruntent des canaux de communication internes au produit, comme des alertes dans le panneau d’affichage. Ces modifications sont entre autres :
@@ -68,7 +68,7 @@ Voici les types de notifications que Microsoft fournit à propos du service Intu
 ## Choisissez la solution de gestion qui vous convient
 Vous pouvez configurer Intune de différentes manières pour gérer et protéger les appareils mobiles et les ordinateurs de votre entreprise (appelés **appareils** dans ce document).
 
--   **Configuration autonome d’Intune.** Utilisez la console d'administration Web intégrée à Intune pour gérer les appareils de votre organisation. Intune peut être utilisé sans infrastructure informatique locale. Mais si vous l’utilisez avec les services de domaine Active Directory, vous pouvez utiliser les comptes d'utilisateur de domaine que vous gérez avec les services de domaine avec Intune.
+-   **Configuration autonome d’Intune.** Utilisez la console d'administration Web intégrée à Intune pour gérer les périphériques de votre organisation. Intune peut être utilisé sans infrastructure informatique locale. Mais si vous l’utilisez avec les services de domaine Active Directory, vous pouvez utiliser les comptes d'utilisateur de domaine que vous gérez avec les services de domaine avec Intune.
 
 -   **Windows Intune avec System Center Configuration Manager :** Utilisez la console d’administration de Configuration Manager pour gérer les ordinateurs et les appareils mobiles de votre entreprise. Cette configuration peut vous aider à gérer tous les appareils de votre organisation par l’intermédiaire d’une seule console, la console d’administration de Configuration Manager. Configuration Manager prend en charge un très grand nombre d'appareils mobiles, de serveurs et d'ordinateurs. Pour plus d’informations, consultez [Gérer les appareils mobiles avec Configuration Manager et Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) dans [Bibliothèque de documentation pour System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  Pour connaître l’approche qui convient le mieux à vos besoins, consultez [Mobilité d’entreprise : mode d’emploi](/intune/plan-design/ways-to-do-enterprise-mobility.md).
 

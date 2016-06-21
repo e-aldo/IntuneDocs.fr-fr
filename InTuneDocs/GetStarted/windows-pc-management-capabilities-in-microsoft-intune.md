@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fonctionnalités de gestion des PC Windows dans Microsoft Intune | Microsoft Intune
+title: Fonctionnalités de gestion des PC Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -18,7 +18,7 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intu
 
 -   La **protection contre les programmes malveillants** Intune inclut Endpoint Protection qui veille à la protection de vos PC contre les logiciels malveillants.
 
--   **Assistance à distance** : Intune permet aux utilisateurs de contacter l'équipe du support informatique, qui peut vous aider via une fonctionnalité de Bureau à distance intégrée à Intune.
+-   **Assistance à distance** : Intune permet aux utilisateurs de contacter l’équipe du support informatique, qui peut vous aider via une fonctionnalité de Bureau à distance intégrée à Intune <!--- (requires TeamViewer software)--->.
 
 -   **Gestion des licences logicielles** : suivez le nombre de licences logicielles disponibles et le nombre de licences disponibles utilisé.
 -   **Déploiement d'applications** : déployez des logiciels sur les ordinateurs que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des ordinateurs avec le logiciel client.
@@ -46,11 +46,13 @@ Intune peut gérer des ordinateurs exécutant les versions de Windows suivantes 
 
 -   **Windows Vista** : Professionnel, Entreprise et Édition Intégrale.
 
--   **Windows 7** : Professionnel, Entreprise et Édition Intégrale (sans Service Pack ou avec SP1).
+-   **Windows 7** – versions Professionnel, Entreprise et Édition Intégrale (sans Service Pack ou avec SP1).
 
--   **Windows 8** : Professionnel et Entreprise.
+-   **Windows 8** – versions Professionnel et Entreprise.
 
--   **Windows 8.1** : Professionnel et Entreprise.
+-   **Windows 8.1** – versions Professionnel et Entreprise.
+
+- **Windows 10** – versions Famille, Professionnel, Éducation et Entreprise.
 
 
 ## Configuration matérielle minimale requise
@@ -72,9 +74,9 @@ Voici la configuration logicielle requise pour l’installation du client PC Int
 |Supprimer les logiciels clients incompatibles|Avant d’installer le logiciel client PC Intune , vous devez désinstaller le logiciel client suivant de ce PC :<br /><br />- Toute version de Configuration Manager<br />- Toute version de Microsoft Systems Management Server (SMS)|
 
 ### Voir aussi
-[Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](/intune/understand/mobile-device-management-capabilties-in-microsoft-intune.md)
+[Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

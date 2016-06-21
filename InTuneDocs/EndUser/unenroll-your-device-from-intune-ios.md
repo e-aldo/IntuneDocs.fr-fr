@@ -18,7 +18,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Pour désinscrire votre appareil d’Intune, suivez ces étapes ou regardez cett
 
 La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
--   Votre appareil n’apparaît plus dans le portail d’entreprise.
+-   Votre périphérique n’apparaît plus dans le portail d’entreprise.
 
 -   Vous ne pouvez plus installer d’applications à partir du portail d’entreprise.
 
@@ -46,7 +46,7 @@ La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
 -   Il se peut que vous n'ayez plus accès à certaines ressources de l'entreprise, telles que les partages de fichiers ou les sites Web internes.
 
--   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre appareil.
+-   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre périphérique.
 
 -   Vous ne pourrez peut-être plus vous connecter au réseau de votre entreprise via le Wi-Fi ou un réseau privé virtuel (VPN).
 
@@ -54,9 +54,11 @@ La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
 -   Les appareils configurés pour la messagerie uniquement n’apparaissent plus dans l’application ou le site web Portail d’entreprise.
 
+Si vous avez besoin d’aide et si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas répertoriées sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

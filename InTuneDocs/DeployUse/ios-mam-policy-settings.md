@@ -94,7 +94,7 @@ Le terme **Applications gérées par la stratégie** est utilisé pour désigner
 
   **Valeur par défaut = Oui**
     -  **Autoriser un code confidentiel simple :** spécifiez s’il faut autoriser les utilisateurs à utiliser des séquences de code confidentiel simples telles que 1234 ou 1111. **Valeur par défaut = Oui**.
-    - **Longueur du code confidentiel :** spécifiez le nombre minimal de chiffres ou de caractères d’un code confidentiel. **Valeur par défaut = 4**
+    - **Longueur du code confidentiel :** spécifiez le nombre minimal de chiffres d’un code confidentiel. **Valeur par défaut = 4**
     - **Nombre de tentatives avant réinitialisation du code confidentiel :** spécifiez le nombre de tentatives que peut effectuer l’utilisateur pour entrer le code confidentiel avant d’être obligé de le réinitialiser.
   **Il n’existe pas de valeur par défaut pour ce paramètre**.
 

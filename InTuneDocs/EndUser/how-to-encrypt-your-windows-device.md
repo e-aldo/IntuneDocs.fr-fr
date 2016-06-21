@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # Comment chiffrer votre appareil Windows
-Pour vous reconnecter à votre travail, vous devez chiffrer votre appareil en suivant ces instructions :
 
-## Option 1 : ajouter un compte Microsoft
+Pour protéger les données de votre entreprise ou de votre établissement scolaire, votre administrateur informatique peut exiger que vous chiffriez votre appareil Windows. Si vous avez un Windows Phone et que vous l’avez inscrit, votre appareil est chiffré automatiquement si le chiffrement est nécessaire.
 
-1.  Recherchez, puis démarrez l'application **Paramètres du PC** .
+Si vous disposez d’un poste de travail, suivez les instructions ci-dessous pour le chiffrer. 
 
-2.  Cliquez sur **Comptes** &gt; **Votre compte**, puis sur **Se connecter à un compte Microsoft**.
-
-3.  Suivez les instructions affichées.
-
-4.  Vérifiez que votre appareil est inscrit dans Intune en suivant les instructions fournies dans [Inscrire votre appareil pour l’utiliser au travail](http://go.microsoft.com/fwlink/?LinkId=519071).
-
-## Option 2 : activer BitLocker
-
-1.  Recherchez, puis démarrez l'application **Gérer BitLocker** .
+1.  Recherchez, puis démarrez l’application **Gérer BitLocker**.
 
 2.  Cliquez sur **Activer BitLocker**, puis suivez les instructions indiquées pour chiffrer chacun de vos lecteurs.
 
-3.  Vérifiez que votre appareil est inscrit dans Intune en suivant les instructions fournies dans [Inscrire votre appareil pour l’utiliser au travail](http://go.microsoft.com/fwlink/?LinkId=519071).
+Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

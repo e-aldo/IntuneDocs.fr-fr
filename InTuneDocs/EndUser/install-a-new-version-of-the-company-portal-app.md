@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,7 +19,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,9 +44,12 @@ L’App Store d’Apple vous avertit quand une nouvelle version du Portail d’e
 
 2.  Suivez les instructions d'installation.
 
-    > [!NOTE] Si vous ne parvenez pas à accéder au Windows Store, contactez votre administrateur.
+    > [!NOTE] Si vous ne parvenez pas à accéder au Windows Store, contactez votre administrateur informatique.
 
-Pour plus d’informations sur les autres tâches que vous pouvez effectuer avec votre appareil, cliquez sur le lien correspondant au type d’appareil que vous possédez :
+
+Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+
+Pour plus d’informations sur les autres tâches que vous pouvez effectuer avec votre appareil, cliquez sur le lien correspondant au type d’appareil que vous possédez :
 
 - [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)</br>
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
@@ -54,6 +57,6 @@ Pour plus d’informations sur les autres tâches que vous pouvez effectuer avec
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

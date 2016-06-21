@@ -75,14 +75,14 @@ Utilisez le client Intune quand vous souhaitez :
 ## Gestion d’Exchange ActiveSync
 Vous pouvez aussi gérer des appareils par le biais d’Exchange ActiveSync. Vous devez pour cela installer le connecteur local ou utiliser le connecteur de service à service intégré pour vous connecter à votre instance d’Exchange Server.
 
-Pour en savoir plus sur la configuration matérielle et logicielle requise pour installer le connecteur local, consultez [Requirements for the On-Premises Connector](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) (Configuration requise pour le connecteur local).
+Pour en savoir plus sur la configuration matérielle et logicielle requise pour installer le connecteur local, consultez [Configuration requise pour le connecteur local](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
 
 Pour en savoir plus sur l’utilisation du connecteur local ou du connecteur de service à service avec Exchange, consultez [Gestion des appareils mobiles à l’aide d’Exchange ActiveSync et de Microsoft Intune](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
 
 
 ## Étapes suivantes
-Maintenant que vous avez découvert certaines des fonctionnalités disponibles quand vous inscrivez vos appareils avec [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Ensuite, vous devrez [inscrire vos appareils](../deploy-use/enroll-devices-in-microsoft-intune). Une fois les appareils inscrits, vous pourrez tirer parti de toutes les fonctionnalités décrites dans cette rubrique. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Vous connaissez désormais certaines des fonctionnalités qui sont disponibles quand vous inscrivez vos appareils avec [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Ensuite, vous devrez [inscrire vos appareils](../deploy-use/enroll-devices-in-microsoft-intune). Une fois les appareils inscrits, vous pourrez tirer parti de toutes les fonctionnalités décrites dans cette rubrique. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
 <!--HONumber=Jun16_HO1-->

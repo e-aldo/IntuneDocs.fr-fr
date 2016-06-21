@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Navigateurs web pris en charge par Microsoft Intune
 
-Avant de configurer Intune, consultez cette rubrique et les autres conditions requises répertoriées dans [What to know before you start](what-to-know-before-you-start-microsoft-intune.md) (Éléments à connaître avant de commencer).
+Avant de configurer Intune, consultez cette rubrique et les autres conditions requises répertoriées dans [Éléments à connaître avant de commencer](what-to-know-before-you-start-microsoft-intune.md).
 
 |Fonctionnalité Intune |Navigateurs pris en charge|
 |---------|---------|
@@ -42,6 +42,6 @@ Avant de configurer Intune, consultez cette rubrique et les autres conditions re
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

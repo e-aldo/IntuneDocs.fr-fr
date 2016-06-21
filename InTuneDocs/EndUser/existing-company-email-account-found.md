@@ -18,7 +18,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,16 +30,16 @@ Vous disposez déjà d'un compte de messagerie d'entreprise. Pour continuer à s
 
 1.  Dans **paramètres** sur votre périphérique, supprimez la connexion que vous avez précédemment configuré pour votre adresse de messagerie d'entreprise.
 
-    Par exemple, sur un appareil iOS, appuyez sur **Paramètres** &gt; **Courrier, Contacts, calendrier**. Sélectionnez votre compte de messagerie d’entreprise, puis cliquez sur **Supprimer**.
+    Par exemple, sur un appareil iOS, cliquez sur **Paramètres** &gt; **Courrier, contacts, calendrier**. Sélectionnez votre compte de messagerie de travail, puis cliquez sur **Supprimer**.
 
-2.  Ouvrez l’application Portail d’entreprise sur votre appareil et appuyez sur **Vérifier la conformité**..
+2.  Ouvrez l'application portail d'entreprise sur votre périphérique et le drainage **vérifier la conformité**.
 
 3.  Patientez quelques secondes pour les nouveaux paramètres de courrier électronique à appliquer automatiquement à votre périphérique.
 
-Si les nouveaux paramètres de courrier électronique ne s'affichent pas après un certain temps, contactez votre administrateur de l'informatique.
+Si les nouveaux paramètres de messagerie ne s’affichent pas au bout d’un certain temps, contactez votre administrateur informatique. Si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -53,7 +53,7 @@ Avant de commencer, vous devez obtenir un jeton VPP auprès d’Apple et le char
 
 2.  Cliquez sur le lien **Compte Apple VPP** et, si ce n’est déjà fait, inscrivez-vous au programme « Volume Purchase Program for Business ». Une fois inscrit, téléchargez le jeton Apple VPP pour votre compte.
 
-3.  Sur la page **Gérer un VPP (Volume Purchase Program) Apple** de la console Intune, cliquez sur **Charger le jeton VPP**.
+3.  Dans la page **Gérer un VPP (Volume Purchase Program) Apple** de la console Intune, cliquez sur **Charger le jeton VPP**.
 
 4.  Dans la boîte de dialogue **Charger le jeton VPP**, entrez ou collez le nom du jeton VPP et votre ID Apple, puis cliquez sur **Charger**.
 

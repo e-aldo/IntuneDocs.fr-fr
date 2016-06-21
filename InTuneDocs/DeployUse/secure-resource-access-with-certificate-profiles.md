@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Activer l’accès aux ressources d’entreprise à l’aide de profils de certificat avec Microsoft Intune | Microsoft Intune
+title: Activer l’accès aux ressources d’entreprise à l’aide de profils de certificat | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -18,7 +18,7 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -53,7 +53,7 @@ Vous devez créer un profil distinct pour chaque plateforme. Quand vous créez l
 > -    Si vous n’avez pas d’autorité de certification d’entreprise, vous devez en créer une. 
 >- Si vous décidez, en fonction de vos plateformes d’appareils, d’utiliser le profil SCEP (Simplified Certificate Enrollment Protocol), vous devez également configurer un serveur NDES (Network Device Enrollment Service).
 >-  Si vous envisagez d’utiliser des profils SCEP ou .PFX, vous devez télécharger et configurer Microsoft Intune Certificate Connector.
-> La configuration de tous ces éléments est décrite dans la rubrique [Configurer l’infrastructure de certificat](configure-certificate-infrastructure.md)..
+> La configuration de tous ces éléments est décrite dans la rubrique [Configurer l’infrastructure de certificat](configure-certificate-infrastructure.md).
 
 ### Étapes suivantes
 - [Configurer l’infrastructure de certificat](configure-certificate-infrastructure.md)
@@ -61,6 +61,6 @@ Vous devez créer un profil distinct pour chaque plateforme. Quand vous créez l
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

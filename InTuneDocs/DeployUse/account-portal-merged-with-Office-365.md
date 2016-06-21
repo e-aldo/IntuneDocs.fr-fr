@@ -33,7 +33,7 @@ Les utilisateurs et les groupes sont gérés sous les onglets du même nom, tand
 
 Selon la façon dont vous avez effectué votre achat, vous accédez aux téléchargements de logiciels sur le portail de programme de licence en volume ou sur le [Portail Clients Microsoft Online Services](http://go.microsoft.com/fwlink/?LinkId=259567).
 
-Veillez à mettre à jour vos signets.
+Mettez à jour vos signets.
 
 Pour plus d’informations sur ce changement, consultez notre [blog Microsoft Intune](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/) ou accédez directement au nouveau [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx) à l’adresse https://portal.office.com/Admin/Default.aspx avec vos informations d’identification existantes.
 

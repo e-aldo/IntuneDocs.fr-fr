@@ -90,7 +90,7 @@ Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deu
 
 ### Voir aussi
 [Mettre des appareils hors service](retire-devices-from-microsoft-intune-management.md)
-[Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code d’accès](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
+[Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code secret](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 <!--HONumber=Jun16_HO1-->

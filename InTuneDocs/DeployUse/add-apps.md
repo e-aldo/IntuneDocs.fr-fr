@@ -33,7 +33,7 @@ Vous pouvez déployer des applications vers tous les types d’appareils pris en
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- Ce type d’application doit prendre en charge une installation sans assistance et sans entrée utilisateur. La documentation de votre application doit inclure les options de ligne de commande appropriées pour installer l’application sans assistance (par exemple, **/q**). La liste des options en ligne de commande courantes est disponible [ici](https://support.microsoft.com/en-us/kb/227091).
+- Ce type d’application doit prendre en charge une installation sans assistance et sans entrée utilisateur. La documentation de votre application doit inclure les options de ligne de commande appropriées pour installer l’application sans assistance (par exemple, **/q**). La liste des options de ligne de commande courantes est disponible [ici](https://support.microsoft.com/en-us/kb/227091).
 - Tous les fichiers et dossiers supplémentaires requis par le programme d'installation de l'application doivent être disponibles à l'emplacement que vous spécifiez pour les fichiers d'installation de l'application.
 - Dans la plupart des cas, les fichiers Windows Installer (.msi) et les fichiers du correctif Windows Installer (.msp) ne nécessitent pas d’arguments de ligne de commande pour être installés par Intune. Consultez la documentation de votre application. Si des arguments de ligne de commande sont requis, vous devez les entrer sous la forme de paires Nom=Valeur (telles que TRANSFORMS=custom_transform.mst).
 
@@ -52,14 +52,14 @@ Ce type d’application est chargé dans votre espace de stockage cloud.
 Actuellement, les utilisateurs finaux ne peuvent pas installer des applications d’entreprise directement à partir de l’application Portail d’entreprise Intune pour iOS. Cela est dû à des restrictions placées sur des applications sont publiées dans l'App Store iOS (voir [directives de révision App Store](https://developer.apple.com/app-store/review/guidelines/)). Les utilisateurs peuvent accéder aux applications d’entreprise (y compris les applications gérées de l’App Store et les packages d’application métier) en lançant l’application Portail d’entreprise sur leur appareil et en sélectionnant la vignette Applications d’entreprise, qui ouvre le navigateur et les redirige vers le portail web d’Intune.
 
 ### **Package d’application Windows Phone (&#42;.xap, .appx, .appxbundle)**
-- Pour déployer des applications, vous aurez besoin d’un certificat de signature de code mobile d’entreprise. Pour plus d’informations, consultez [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Configurer la gestion de Windows Phone avec Microsoft Intune).
+- Pour déployer des applications, vous aurez besoin d’un certificat de signature de code mobile d’entreprise. Pour plus d’informations, consultez [Configurer la gestion de Windows Phone avec Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
 Ce type d’application est chargé dans votre espace de stockage cloud.
 
 Vous trouverez ci-dessous des informations sur l’installation d’applications de plateforme Windows universelle (UWP) métier avec Intune.
 
 ### **Package d'application Windows (.appx, .appxbundle)**
-- Pour déployer des applications, vous aurez besoin d’un certificat de signature de code mobile d’entreprise. Pour plus d’informations, consultez [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md) (Configurer la gestion des appareils Windows avec Microsoft Intune).
+- Pour déployer des applications, vous aurez besoin d’un certificat de signature de code mobile d’entreprise. Pour plus d’informations, consultez [Configurer la gestion des appareils Windows avec Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).
 
 Ce type d’application est chargé dans votre espace de stockage cloud.
 ### **Windows Installer par le biais de la gestion des appareils mobiles (&#42;.msi)**

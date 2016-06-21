@@ -34,6 +34,8 @@ Utilisez ces liens et ces informations pour :
 - Comprendre les étapes que suivent vos utilisateurs pour effectuer différentes tâches dans Intune.
 - Aider vos utilisateurs à effectuer des tâches et à résoudre les problèmes qu'ils rencontrent lors de l'utilisation d'Intune.
 
+Veillez à inclure les coordonnées de l’administrateur informatique lorsque vous [personnalisez le Portail d’entreprise](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) pour que vos utilisateurs puissent le contacter en cas de besoin.
+
 
 ## Sources d’informations sur les tâches courantes à la disposition des utilisateurs finaux
 
@@ -59,11 +61,11 @@ Pour comprendre comment vos utilisateurs finaux obtiennent leurs applications, c
 - [Comment vos utilisateurs iOS obtiennent leurs applications](how-your-ios-users-get-their-apps.md)
 - [Comment vos utilisateurs Windows obtiennent leurs applications](how-your-windows-users-get-their-apps.md)
 
-## Aider vos utilisateurs finaux à comprendre les messages de l’application Portail d’entreprise
+## Aider les utilisateurs finaux à comprendre les messages de l’application Portail d’entreprise
 
-Pour aider vos utilisateurs à résoudre les problèmes qu'ils pourraient rencontrer lorsqu'ils utilisent le portail d'entreprise, vous pouvez consulter une [liste des messages que les utilisateurs peuvent voir dans le portail d'entreprise](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
+Pour aider vos utilisateurs à résoudre les problèmes qu’ils pourraient rencontrer lorsqu’ils utilisent le Portail d’entreprise, vous pouvez consulter une [liste des messages que les utilisateurs peuvent voir dans le Portail d’entreprise](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

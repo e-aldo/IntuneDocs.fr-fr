@@ -18,7 +18,7 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: vinaybha
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,21 +35,20 @@ Pour configurer l'authentification multifacteur, vous avez besoin des éléments
 
 -   **un serveur AD FS (Active Directory Federation Services), configuré pour l'authentification multifacteur ;** un serveur exécutant Windows Server 2012 R2, configuré en tant que serveur AD FS. Pour plus d’informations, consultez : [Sécuriser les ressources cloud et locales à l’aide du serveur Azure Multi-Factor Authentication avec Windows Server 2012 R2 AD FS](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-adfs-w2k12/)
 
-Tous les serveurs répertoriés ci-dessus doivent répondre à la configuration requise indiquée dans [Configuration requise et informations d’installation pour Windows Server 2012 R2](http://technet.microsoft.com/library/dn303418.aspx).
+Tous les serveurs répertoriés ci-dessus doivent répondre à la configuration requise indiquée dans [Configuration requise et informations d'installation pour Windows Server 2012 R2](http://technet.microsoft.com/library/dn303418.aspx).
 
 #### Authentification multifacteur dans Intune
 Si votre organisation a une infrastructure informatique locale qui comprend un domaine Active Directory avec les services AD FS (Active Directory Federation Services), vous pouvez configurer l’authentification multifacteur sur votre serveur de fédération, puis l’activer pour inscription auprès d’Intune. En configurant l’authentification multifacteur sur Intune, vous permettez aux utilisateurs de s’authentifier une seule fois, lors de l’inscription, puis d’accéder aux ressources de l’entreprise sans avoir à répéter le processus d’authentification multifacteur à chaque fois.
 
->[!NOTE]
->L’authentification multifacteur est requise par utilisateur ou par groupe sur le serveur AD FS.  
+>[!NOTE] L’authentification multifacteur est nécessaire par utilisateur ou par groupe sur le serveur AD FS.  
 
 #### Authentification multifacteur sans Intune
 Si vous configurez l’authentification MFA sur votre serveur de fédération, mais que vous ne l’activez pas pour l’inscription dans Intune, les utilisateurs doivent recourir à l’authentification MFA chaque fois qu’ils accèdent aux ressources d’entreprise (et pas seulement à l’inscription de l’appareil).
 
-Vous pouvez également utiliser l’authentification Azure Active Directory (AAD) MFA pour exiger l’authentification MFA chaque fois que les utilisateurs accèdent aux ressources de l’entreprise, pour chaque utilisateur. L'authentification multifacteur AAD est un service cloud qui ne nécessite aucune infrastructure informatique locale. Pour savoir comment configurer AAD MFA, consultez [Prise en main avec Azure Multi-Factor Authentication dans le cloud.](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-cloud/).
+Vous pouvez également utiliser l’authentification Azure Active Directory (AAD) MFA pour exiger l’authentification MFA chaque fois que les utilisateurs accèdent aux ressources de l’entreprise, pour chaque utilisateur. L'authentification multifacteur AAD est un service cloud qui ne nécessite aucune infrastructure informatique locale. Pour savoir comment configurer AAD MFA, consultez [Prise en main d’Azure Multi-Factor Authentication dans le cloud.](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-cloud/).
 
 ## Exiger l’authentification multifacteur AD FS pendant l’inscription d’appareils Windows
-Pour plus d’informations sur la façon d’activer l’authentification multifacteur dans les services AD FS, consultez [Gérer les risques avec une authentification multifacteur supplémentaire pour les applications sensibles](http://technet.microsoft.com/library/dn280949.aspx).
+Pour plus d'informations sur la façon d'activer l'authentification multifacteur dans les services AD FS, consultez [Gérer les risques avec une authentification multifacteur supplémentaire pour les applications sensibles](http://technet.microsoft.com/library/dn280949.aspx).
 
 ## Configurer l’authentification MFA à l’inscription des appareils dans Intune
 >[!Important]  
@@ -61,6 +60,6 @@ Pour plus d’informations sur la façon d’activer l’authentification multif
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -38,8 +38,7 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Applications** &gt; **Ajouter des applications** pour démarrer l’Éditeur de logiciel Microsoft Intune.
 
-    > [!TIP]
-    > Vous devrez peut-être entrer votre nom d'utilisateur et votre mot de passe Intune avant le démarrage de l'éditeur.
+    > [!TIP]Vous devez peut-être entrer votre nom d’utilisateur et votre mot de passe Intune avant le démarrage de l’éditeur.
 
 
 
@@ -47,9 +46,12 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
     **Spécifier comment ce logiciel doit être mis à disposition des appareils** : sélectionnez **Programme d’installation du logiciel**, puis spécifiez :
 
-    - **Sélectionnez le type de fichier du programme d’installation du logiciel**|Indique le type de logiciel à déployer. Pour un PC Windows, choisissez **Windows Installer**.|
-    - **Spécifier l’emplacement des fichiers d’installation du logiciel**|Entrez l’emplacement des fichiers d’installation ou cliquez sur **Parcourir** pour sélectionner l’emplacement dans une liste.|
-    - **Inclure les autres fichiers et sous-dossiers du dossier**|Certains logiciels qui utilisent Windows Installer nécessitent des fichiers de prise en charge qui se trouvent généralement dans le même dossier que les fichiers d’installation. Sélectionnez cette option si vous souhaitez également déployer ces fichiers de prise en charge.|
+    - **Sélectionnez le type de fichier du programme d’installation du logiciel** : indique le type de logiciel à déployer. Pour un PC Windows, choisissez **Windows Installer**.
+    - **Spécifier l’emplacement des fichiers d’installation du logiciel**  : entrez l’emplacement des fichiers d’installation ou cliquez sur **Parcourir** pour sélectionner l’emplacement dans une liste.
+    - **Inclure les autres fichiers et sous-dossiers du dossier** : certains logiciels qui utilisent Windows Installer nécessitent des fichiers de prise en charge qui se trouvent généralement dans le même dossier que les fichiers d’installation. Sélectionnez cette option si vous souhaitez également déployer ces fichiers de prise en charge.
+
+    Par exemple, si vous souhaitez publier une application nommée Application.msi dans Intune, la page ressemble à ceci : ![Éditeur de logiciel pour PC](./media/publisher-for-pc.png)
+
    Ce type d'installation utilise une partie de votre espace de stockage cloud.
 
 3.  Dans la page **Description du logiciel**, configurez ce qui suit :
@@ -57,15 +59,14 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
     Selon le fichier de programme d'installation que vous utilisez, certaines de ces valeurs ont peut-être été entrées automatiquement ou peuvent ne pas apparaître.
 
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **Nom** : entrez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise.<br /><br />Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d’application existe deux fois, seule l’une des applications sera proposée aux utilisateurs du portail d’entreprise.|
-    - **Description :** entrez la description de l’application. Ce libellé s’affichera dans le portail d’entreprise.|
-    - **URL des informations sur le logiciel**|(facultatif) Entrez l’URL d’un site web qui contient des informations sur cette application. Cette URL s'affichera dans le portail d'entreprise.
+    - **Nom** : entrez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise.<br /><br />Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
+    - **Description :** entrez la description de l’application. Ce libellé s'affichera dans le portail d'entreprise.
+    - **URL des informations sur le logiciel** : (facultatif) entrez l’URL d’un site web qui contient des informations sur cette application. Cette URL s'affichera dans le portail d'entreprise.
     - **Informations sur la confidentialité** : (facultatif) entrez l’URL d’un site web qui contient des informations de confidentialité sur cette application. Cette URL s'affichera dans le portail d'entreprise.
     - **Catégorie** : (facultatif) sélectionnez l’une des catégories d’applications intégrées. Cela permettra aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
     - **Icône** : (facultatif) chargez une icône qui sera associée à l’application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 
-    Par exemple, si vous souhaitez publier une application nommée Application.msi dans Intune, la page ressemble à ceci :
-    ![Éditeur de logiciel pour PC](./media/publisher-for-pc.png)
+
 
 4.  Dans la page **Configuration requise**, sélectionnez les exigences à respecter pour que l’installation de l’application puisse commencer sur un appareil. **Architecture** : sélectionnez si cette application peut être installée sur un système d’exploitation 32 bits, 64 bits ou les deux. **Système d’exploitation** : sélectionnez le système d’exploitation minimal sur lequel cette application peut être installée..
 
@@ -73,7 +74,7 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
     Les règles que vous pouvez configurer sont les suivantes :
     - **Le fichier existe** : spécifiez le chemin d’accès au fichier que vous souhaitez détecter. Vous pouvez effectuer une recherche sous **%ProgramFiles%** (c’est-à-dire dans **Program Files**\*&lt;chemin&gt;* et **Program Files (x86)**\*&lt;chemin&gt;*) sur le PC ou **%SystemDrive%** (la recherche s’effectue à partir du lecteur racine du PC, généralement C:)
     - **Le code de produit MSI existe déjà** : cliquez sur **Parcourir** pour choisir le fichier Windows Installer (msi) que vous souhaitez détecter. 
-    - **Cette clé du Registre existe** : spécifiez la clé du Registre qui commence par *HKEY_LOCAL_MACHINE\**. La recherche peut porter sur les chemins du Registre 32 bits et 64 bits. Si la clé spécifiée existe dans les deux emplacements, la règle de détection est satisfaite.
+    - **Cette clé du Registre existe** : spécifiez la clé du Registre qui commence par **HKEY_LOCAL_MACHINE\**. La recherche peut porter sur les chemins du Registre 32 bits et 64 bits. Si la clé spécifiée existe dans les deux emplacements, la règle de détection est satisfaite.
 
     Si l'application répond à l'une des règles que vous avez configurées, elle ne sera pas installée.
 
@@ -90,8 +91,8 @@ L’application s’affiche sur le nœud **Applications** de l’espace de trava
 
 ## Étapes suivantes
 
-Une fois que vous avez créé une application, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications dans Microsoft Intune.md](deploy-apps.md)
+Une fois que vous avez créé une application, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications dans Microsoft Intune](deploy-apps.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

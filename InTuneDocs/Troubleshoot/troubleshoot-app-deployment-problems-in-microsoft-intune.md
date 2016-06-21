@@ -39,11 +39,11 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 2.  Assurez-vous que vous êtes configuré sur ce compte dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-3.  Dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), veillez à utiliser le nom d’utilisateur et le mot de passe appropriés pour vous connecter à Intune et vérifiez qu’il est au format : **jean@domaine.com**
+3.  Dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), veillez à utiliser le nom d’utilisateur et le mot de passe appropriés pour vous connecter à Intune et vérifiez qu’il est au format : **jean@domaine.com**.
 
 ### Si les informations de la page Contacter l'administrateur ne figurent pas sur le portail d'entreprise
 
-1.  Dans la console d’administration Intune, choisissez **Administration** &gt; **Portail d’entreprise**
+1.  Dans la console d’administration Intune, choisissez **Administration** &gt; **Portail d’entreprise**.
 
 2.  Définissez les détails de la page **Contacter l'administrateur** .
 
@@ -63,7 +63,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 4.  Si la barre de progression de téléchargement de l'application iOS est terminée, mais que l'installation de l'application échoue, les fichiers d'application que vous avez fournis sont peut-être erronés.
 
-### Si un lien iOS vous dirige vers un emplacement précédent de l’iTunes App Store
+### Si un lien d’application iOS vous dirige vers un emplacement précédent de l’iTunes App Store
 
 1.  La session iTunes App Store actuelle s'ouvre sur la page précédente de l'application.
 

@@ -18,7 +18,7 @@ ms.assetid: 0f7dc155-cb8e-477b-ba02-2623194a9575
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,10 +33,10 @@ Votre rôle en tant qu'administrateur informatique est de surveiller l'état des
 
 -   Les **[alertes](get-notified-by-microsoft-intune-alerts.md)** vous aident à surveiller l’intégrité des appareils gérés par Intune (notamment l’état et les alertes d’Endpoint Protection, pour vous alerter à propos de logiciels malveillants, et les avertissements relatifs au manque d’espace disque ou à la connectivité réseau).
 
--   Les appareils et les ordinateurs gérés par Intune retournent des informations détaillées sur leurs propriétés et les logiciels installés.  Intune vous fournit des outils et des rapports destinés pour examiner et présenter ces données. Pour plus d’informations, consultez [Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md) (en anglais).
+-   Les appareils et les ordinateurs gérés par Intune retournent des informations détaillées sur leurs propriétés et les logiciels installés.  Intune vous fournit des outils et des rapports destinés pour examiner et présenter ces données. Pour plus d’informations, consultez [Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

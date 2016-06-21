@@ -100,10 +100,14 @@ Pour savoir comment réinitialiser votre appareil, choisissez l’un des liens s
 ## Je ne vois pas tous mes appareils dans le Portail d’entreprise
 Pour qu’un appareil soit visible, il doit être ajouté au Portail d’entreprise. Accédez au Portail d’entreprise comme indiqué par votre administrateur et suivez les étapes pour votre appareil. Vous ne verrez pas non plus les appareils détenus et gérés par votre entreprise.
 
+## Si vous avez des questions, contactez votre administrateur informatique.
+Si vous avez besoin d’aide, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Jun16_HO2-->
 
 

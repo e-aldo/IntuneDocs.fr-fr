@@ -18,7 +18,7 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,8 +40,11 @@ L’[authentification multifacteur (MFA)](protect-windows-devices-with-multi-fac
 ## Contrôler les paramètres de Microsoft Passport sur les appareils Windows
 Intune vous permet d’intégrer [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) et de disposer ainsi d’une autre méthode de connexion pour Windows 10 et versions ultérieures utilisant Active Directory ou un compte Azure Active Directory pour remplacer un mot de passe, une carte à puce ou une carte à puce virtuelle.
 
+## Contourner le verrou d’activation sur les appareils iOS
+Le verrou d’activation est une fonctionnalité qu permet de protéger les appareils des utilisateurs en demandant la saisie de leur ID Apple et de leur mot de passe avant d’effacer ou de réactiver l’appareil. Toutefois, cela peut engendrer des problèmes, par exemple, si l’utilisateur quitte l’entreprise sans supprimer le verrou. [Le contournement du verrou d’activation iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) peut vous aider en supprimant le verrou des appareils iOS supervisés pour vous permettre de les réaffecter ou de les effacer.
+
 ## Protéger les PC Windows gérés avec le client Intune
-Intune continue à prendre en charge les stratégies de sécurité pour les PC Windows non inscrits mais gérés avec le logiciel client pour ordinateur Intune. Pour savoir comment ces stratégies peuvent vous aider à sécuriser vos PC Windows, consultez [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Utiliser des stratégies pour protéger les PC Windows équipés du logiciel client Intune).
+Intune continue à prendre en charge les stratégies de sécurité pour les PC Windows non inscrits mais gérés avec le logiciel client pour ordinateur Intune. Pour savoir comment ces stratégies peuvent vous aider à sécuriser vos PC Windows, consultez [Utilisation de stratégies pour vous aider à protéger les PC Windows qui exécutent le logiciel client Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md).
 
 
 <!--HONumber=Jun16_HO1-->

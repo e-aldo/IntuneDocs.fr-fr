@@ -18,7 +18,7 @@ ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -70,11 +70,11 @@ Après avoir installé l’application Portail d’entreprise et inscrit avec ce
 
 -   réinitialiser les paramètres de votre téléphone en cas de perte ou de vol.
 
-Pour connaître les étapes d'inscription, consultez [Inscrire un appareil Windows dans Intune](enroll-your-device-in-intune-windows.md). Pour savoir ce que votre administrateur informatique peut voir sur votre appareil, consultez [What can your IT administrator see when you enroll your device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (Que peut voir votre administrateur informatique quand vous inscrivez votre appareil dans Intune ?).
+Pour connaître les étapes d'inscription, consultez [Inscrire un appareil Windows dans Intune](enroll-your-device-in-intune-windows.md). Pour savoir ce que votre administrateur informatique peut voir sur votre appareil, consultez [Que voit mon administrateur informatique quand j’inscris mon appareil dans Intune ?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Lorsque vous ajoutez votre appareil Windows Phone, vous autorisez votre administrateur informatique à accéder à l'appareil. Ils peuvent effectuer les opérations suivantes :
 
--   Réinitialiser votre appareil aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé.
+-   Réinitialiser votre périphérique aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé.
 
 -   Supprimer toutes les données relatives à l'entreprise, ainsi que les applications professionnelles qui ont été installées. Vos données et paramètres personnels ne sont pas supprimés.
 
@@ -107,7 +107,7 @@ Après avoir installé l’application Portail d’entreprise et inscrit avec ce
 
 -   réinitialiser les paramètres de votre téléphone en cas de perte ou de vol.
 
-Pour savoir ce que votre administrateur informatique peut voir sur votre appareil, consultez [What can your IT administrator see when you enroll your device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (Que peut voir votre administrateur informatique quand vous inscrivez votre appareil dans Intune ?).
+Pour savoir ce que votre administrateur informatique peut voir sur votre appareil, consultez [Que voit mon administrateur informatique quand j’inscris mon appareil dans Intune ?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 Lorsque vous ajoutez un ordinateur :
 
@@ -124,6 +124,8 @@ Lorsque vous ajoutez un ordinateur :
 -   Votre administrateur informatique peut installer des applications et des mises à jour sur votre ordinateur.
 
 -   Votre administrateur informatique peut appliquer des stratégies sur l'ordinateur. Par exemple, vous devrez peut-être définir un mot de passe ou un code PIN sur l'ordinateur, ce qui peut le bloquer, ou bien supprimer toutes les données du disque dur de votre ordinateur en cas de saisies multiples de mots de passe incorrects.
+
+Si vous avez des questions ou si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)

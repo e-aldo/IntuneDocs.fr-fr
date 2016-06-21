@@ -18,7 +18,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -51,7 +51,7 @@ Lorsque vous désinstallez l'application Portail d'entreprise de votre appareil,
 
 En outre, pour Windows 8.1 :
 
--   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre appareil.
+-   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre périphérique.
 
 -   Certaines applications de messagerie, telles que Windows Mail, ne pourront plus accéder à la messagerie d'entreprise stockée sur votre appareil.
 
@@ -63,7 +63,7 @@ En outre, pour Windows 8.1 :
 
 -   L’application Portail d’entreprise est désinstallée de votre appareil, ce qui signifie que votre appareil n’apparaît plus dans le portail d’entreprise. Vous ne pourrez pas installer des applications à partir de l’application Portail d’entreprise ou du site web du portail d’entreprise.
 
--   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre appareil.
+-   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre périphérique.
 
 -   Tous les paramètres qui ont été modifiés sur votre appareil lorsque vous l'avez ajouté, par exemple la désactivation de l'appareil photo ou l'exigence d'une certaine longueur de mot de passe, ne s'appliquent plus.
 
@@ -74,7 +74,7 @@ En outre, pour Windows 8.1 :
 
 -   L’application Portail d’entreprise est désinstallée de votre appareil, ce qui signifie que votre appareil n’apparaît plus dans le portail d’entreprise. Vous ne pourrez pas installer des applications à partir du portail d’entreprise.
 
--   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre appareil.
+-   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre périphérique.
 
 -   Tous les paramètres qui ont été modifiés sur votre appareil lorsque vous l'avez ajouté, par exemple la désactivation de l'appareil photo ou l'exigence d'une certaine longueur de mot de passe, ne s'appliquent plus.
 
@@ -88,14 +88,15 @@ Lorsque vous supprimez votre appareil Windows RT, voici ce qui se produit :
 
 -   L’application Portail d’entreprise est désinstallée de votre appareil, ce qui signifie que votre appareil n’apparaît plus dans le portail d’entreprise. Vous ne pourrez pas installer des applications à partir du portail d’entreprise.
 
--   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre appareil.
+-   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre périphérique.
 
 -   Tous les paramètres qui ont été modifiés sur votre appareil lorsque vous l'avez ajouté, par exemple la désactivation de l'appareil photo ou l'exigence d'une certaine longueur de mot de passe, ne s'appliquent plus.
 
+Si vous avez des questions ou si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

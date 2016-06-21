@@ -44,7 +44,7 @@ Utilisez les informations suivantes pour vous aider à résoudre les problèmes 
 
     -   Le nombre total d'alertes actives
 
-3.  Choisissez **Toutes les alertes** pour afficher les informations suivantes sur la page **Alertes**. Les alertes critiques sont affichées en premier :
+3.  Choisissez **Toutes les alertes** pour afficher les informations suivantes dans la page **Alertes**. Les alertes critiques sont affichées en premier :
 
     -   **Nom** : nom du type d'alerte qui a généré l'alerte.
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,11 +32,13 @@ Si vous essayez d’inscrire votre appareil iOS ou Mac OS X dans Intune et que v
 
 1. Si vous voyez votre appareil dans la liste, appuyez sur celui-ci. Si vous ne le voyez pas, appuyez sur **Nouvel appareil**.
 2. Appuyez sur **Continuer**.
-3. Entrez les quatre derniers caractères du numéro de série de votre appareil pour qu’Intune vérifie que votre appareil est inscrit. Pour rechercher votre numéro de série, consultez [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md) (Comment trouver le numéro de série sur mon appareil ?)
+3. Entrez les quatre derniers caractères du numéro de série de votre appareil pour qu’Intune vérifie que votre appareil est inscrit. Pour rechercher votre numéro de série, consultez [Comment trouver le numéro de série sur mon appareil ?](how-do-i-find-the-serial-number-on-my-device-ios.md).
+
+Si vous avez besoin d’aide et si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas répertoriées sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
-[Using your iOS or Mac OS X device with Intune (Utilisation de votre appareil iOS ou Mac OS avec Intune)](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -55,16 +55,16 @@ D'autres types d'alerte peuvent contenir d'autres éléments configurables, par 
 
 **Quand les critères d’un type d’alerte sont remplis, une alerte est générée et s’affiche dans la console d’administration Intune.**
 
-Par ailleurs, vous pouvez configurer Intune de façon à être averti par e-mail quand une alerte est générée.
+Par ailleurs, vous pouvez configurer Intune de façon à être averti par courrier électronique quand une alerte est générée.
 
 ## Configuration d'alertes
-Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Admin** &gt; **Alertes et notifications**, puis choisissez l’une des tâches de configuration suivantes :
+Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Administration** &gt; **Alertes et notifications**, puis choisissez l’une des tâches de configuration suivantes :
 
 |Tâche|Description|
 |--------|---------------|
 |**Types d’alerte**|Choisissez le type d'alerte que vous voulez configurer, puis procédez de l'une des façons suivantes :<br /><br />Choisissez **Configurer**. Dans la boîte de dialogue **Configurer le type d’alerte** , configurez les paramètres de votre choix, puis choisissez **OK**.<br /><br />**Activez** ou **désactivez** l’alerte.<br /><br />Développez le nœud **Types d’alerte** et choisissez une catégorie pour afficher uniquement les types d’alerte de cette catégorie.|
 |**Destinataires**|Choisissez **Ajouter** pour ajouter une nouvelle adresse e-mail destinée à recevoir les notifications par e-mail que vous configurez.<br /><br />Vous pouvez aussi **modifier** ou **supprimer** des destinataires existants.<br /><br />Pour recevoir des notifications, vous devez aussi ajouter cette adresse e-mail comme destinataire sous **Règles de notification**.|
-|**Règles de notification**|Permet de configurer des règles qui définissent le ou les destinataires d'une alerte par e-mail. Voici les possibilités qui s'offrent à vous :<br /><br />**Choisir une règle existante** : choisissez une règle, puis choisissez **Sélectionner les destinataires**. Vous pouvez ensuite sélectionner tous les destinataires appelés à recevoir un message électronique dès qu'une alerte conforme à cette règle est générée.<br /><br />**Créer une règle** : entrez un nom pour la règle, sélectionnez les catégories d’alerte et la gravité d’alerte qui s’appliquent aux règles, sélectionnez les groupes d’appareils auxquels la règle s’applique et sélectionnez les utilisateurs qui reçoivent un e-mail quand une alerte est générée.<br /><br />Vous pouvez aussi **activer**, **désactiver**, **modifier**ou **supprimer** une règle existante.|
+|**Règles de notification**|Permet de configurer des règles qui définissent le ou les destinataires d'une alerte par courrier électronique. Voici les possibilités qui s'offrent à vous :<br /><br />**Choisir une règle existante** : choisissez une règle, puis choisissez **Sélectionner les destinataires**. Vous pouvez ensuite sélectionner tous les destinataires appelés à recevoir un message électronique dès qu'une alerte conforme à cette règle est générée.<br /><br />**Créer une règle** : entrez un nom pour la règle, sélectionnez les catégories d’alerte et la gravité d’alerte qui s’appliquent aux règles, sélectionnez les groupes d’appareils auxquels la règle s’applique et sélectionnez les utilisateurs qui reçoivent un e-mail quand une alerte est générée.<br /><br />Vous pouvez aussi **activer**, **désactiver**, **modifier**ou **supprimer** une règle existante.|
 
 ## Utilisation d'alertes
 Utilisez les options suivantes pour gérer les alertes à partir de la console d'administration Intune.
@@ -72,8 +72,8 @@ Utilisez les options suivantes pour gérer les alertes à partir de la console d
 |Option|Description|
 |----------|---------------|
 |**Afficher les alertes actives**|Choisissez parmi :<br /><br />**Afficher une synthèse des alertes** : dans l’espace de travail **Tableau de bord**, les principales erreurs sont affichées dans le volet Alertes. Choisissez le volet pour afficher des informations plus détaillées.<br /><br />Par ailleurs, vous pouvez afficher une synthèse des alertes dans la page **Vue d'ensemble** de l'espace de travail **Alertes** .<br /><br />**Afficher toutes les alertes** : dans l’espace de travail **Alertes**, choisissez **Toutes les alertes**.|
-|**Consulter les remarques**|Choisissez parmi :<br /><br />Dans l’espace de travail **Tableau de bord**, choisissez **Avis**.<br /><br />Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes** &gt; **Avis**.|
-|**Fermeture d'une alerte**|Dans la liste des alertes, choisissez l’alerte à fermer, puis choisissez **Fermer l’alerte**.<br /><br />Les alertes fermées sont définitivement supprimées au bout de 90 jours.|
+|**Consulter les remarques**|Choisissez parmi :<br /><br />Dans l’espace de travail **Tableau de bord**, choisissez **Remarques**.<br /><br />Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes** &gt; **Remarques**.|
+|**Fermeture d'une alerte**|Dans la liste des alertes, sélectionnez l’alerte à fermer, puis choisissez **Fermer l’alerte**.<br /><br />Les alertes fermées sont définitivement supprimées au bout de 90 jours.|
 |**Réactiver une alerte fermée**|Dans la liste des alertes, définissez le menu déroulant **Filtres** sur **Fermé**.<br /><br />Dans la liste des alertes fermées, sélectionnez l’alerte que vous souhaitez réactiver, puis choisissez **Réactiver l’alerte**.|
 Les alertes Intune restent actives tant que :
 

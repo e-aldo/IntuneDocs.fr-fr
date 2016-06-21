@@ -18,7 +18,7 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Inscrire un appareil Windows Phone 8.1 dans Intune
 
-Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. L’inscription de vos appareils permet à votre organisation de sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il si vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et la liste de ce que [votre administrateur informatique peut voir et ne pas voir sur votre appareil](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. L’inscription de vos appareils permet à votre organisation de sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 Pour inscrire un appareil Phone 8.1 dans Intune, suivez les instructions qui s’appliquent à votre entreprise ou établissement scolaire :
@@ -40,7 +40,7 @@ Pour inscrire un appareil Phone 8.1 dans Intune, suivez les instructions qui s�
 ## Si votre entreprise vous autorise à utiliser le Portail d'entreprise à partir du Windows Store
 Installez l'application Portail d'entreprise sur votre appareil :
 
-1.  Appuyez sur **Démarrer** &gt; **Boutique**.
+1.  Appuyez sur **Démarrer** &gt; **Store**.
 
 2.  Appuyez sur **Rechercher** et tapez **portail d’entreprise**.
 
@@ -48,7 +48,7 @@ Installez l'application Portail d'entreprise sur votre appareil :
 
     ![Résultats de recherche du portail d’entreprise](./media/WP81-1-CP-search-store-v2.png)
 
-4.  Appuyez sur **Portail d’entreprise**  &gt; **Installer**.
+4.  Appuyez sur **Portail d’entreprise** &gt; **Installer**.
 
     ![Installation du portail d’entreprise](./media/WP81-2-CP-install-v2.png)
 
@@ -72,7 +72,7 @@ Inscrivez votre appareil :
 
     ![Écran de paramètres du poste de travail](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  Entrez les informations supplémentaires demandées, puis appuyez sur **Se connecter** pour terminer l’inscription. Votre compte Espace de travail doit maintenant être répertorié dans la page **Paramètres** &gt; **Espace de travail**.
+7.  Entrez les informations supplémentaires demandées, puis appuyez sur **Se connecter** pour terminer l’inscription. Votre compte d’espace de travail doit à présent être répertorié dans la page **Paramètres** &gt; **Espace de travail**.
 
     ![Écran de compte ajouté](./media/WP81-enroll-4-account-added.png)
 
@@ -88,7 +88,7 @@ Inscrivez votre appareil :
 
 Si votre administrateur informatique a configuré le Portail d'entreprise pour qu'il soit installé lors de l'inscription, il figurera dans votre liste d'applications.
 
-
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Inscrire un appareil Windows dans Intune](enroll-your-device-in-intune-windows.md)</br>
@@ -96,6 +96,6 @@ Si votre administrateur informatique a configuré le Portail d'entreprise pour q
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

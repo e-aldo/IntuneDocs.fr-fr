@@ -29,7 +29,7 @@ ms.suite: ems
 Après avoir déployé Microsoft Intune, il se peut que vous rencontriez quelques problèmes liés à la configuration ou aux clients. Les ressources ci-dessous peuvent vous aider à identifier la cause du problème.
 
 > [!NOTE]
-> Pour créer une demande de support technique ou examiner une demande existante, [visitez le centre d’administration Office 365](https://portal.office.com/admin/default.aspx). Pour plus d’informations sur les options de support technique, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+> Pour créer une demande de support technique ou examiner une demande existante, [visitez le centre d’administration Office 365](https://portal.office.com/admin/default.aspx). Pour plus d’informations sur les options de support technique, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 ## Définir le problème
 
 -   Quel est le comportement ?
@@ -46,7 +46,7 @@ Après avoir déployé Microsoft Intune, il se peut que vous rencontriez quelque
 
 -   Se pourrait-il que l’utilisateur rencontre un problème d’authentification ? Si c’est une éventualité, vérifiez si l’utilisateur peut se connecter à d’autres services qui utilisent Azure Active Directory. Vérifiez également si l’utilisateur peut se connecter à partir d’un autre appareil.
 
--   Avez-vous vérifié l’état du service ? Vous pouvez surveiller l’état du service Intune sur le [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx). Choisissez **État du service** dans le volet gauche. 
+-   Avez-vous vérifié l’état du service ? Vous pouvez surveiller l’état du service Intune dans le [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx). Choisissez **État du service** dans le volet gauche. 
 
 ## Collecter les données disponibles
 
@@ -66,7 +66,7 @@ Après avoir déployé Microsoft Intune, il se peut que vous rencontriez quelque
 
 -   Vous pouvez ouvrir une demande de support technique. Le Support technique Intune pourra mieux vous aider à résoudre votre problème si vous l’avez clairement défini et que vous avez recueilli les données disponibles.
 
-    Pour créer une demande de support technique, [visitez le centre d’administration Office 365](https://portal.office.com/admin/default.aspx). Pour plus d’informations sur les options de support technique, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    Pour créer une demande de support technique, [visitez le Centre d’administration Office 365](https://portal.office.com/admin/default.aspx). Pour plus d’informations sur les options de support technique, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## Ressources de la communauté
 Vous trouverez d’autres informations utiles dans ces ressources de communauté :

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Utiliser le SDK pour activer des applications pour la gestion des applications mobiles | Microsoft Intune
+title: Utiliser le Kit de développement logiciel (SDK) pour activer des applications pour la gestion des applications mobiles | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -25,8 +25,8 @@ ms.suite: ems
 
 ---
 
-# Utiliser le SDK pour activer des applications pour la gestion des applications mobiles
-Utilisez le SDK de l’application de Microsoft Intune pour permettre à Intune de gérer certaines fonctionnalités de vos applications mobiles iOS et Android. Une fois votre application activée, vous pouvez déployer des stratégies vers l’application. Ces stratégies utilisent ces fonctionnalités pour protéger vos données d’entreprise. Voici des exemples de types de protections que vous pouvez implémenter avec le SDK :
+# Utiliser le Kit de développement logiciel (SDK) pour activer des applications pour la gestion des applications mobiles
+Utilisez le Kit de développement logiciel (SDK) d’application de Microsoft Intune pour permettre à Intune gérer certaines fonctionnalités de vos applications mobiles iOS et Android. Une fois votre application activée, vous pouvez déployer des stratégies vers l’application. Ces stratégies utilisent ces fonctionnalités pour protéger vos données d’entreprise. Voici des exemples de types de protections que vous pouvez implémenter avec le Kit de développement logiciel (SDK) :
 
 -   Empêcher les utilisateurs de copier des documents d’entreprise vers le cloud
 
@@ -36,7 +36,7 @@ Utilisez le SDK de l’application de Microsoft Intune pour permettre à Intune 
 
 -   Effacer à distance les données d’entreprise de l’application
 
-Vous devez avoir accès au code source de l’application pour utiliser le SDK, mais vous pouvez activer la plupart des fonctionnalités du SDK sans avoir à modifier le comportement de l’application.
+Vous devez avoir accès au code source de l’application pour utiliser le Kit de développement logiciel (SDK), mais vous pouvez activer la plupart des fonctionnalités du SDK sans avoir à modifier le comportement de l’application.
 
 Pour une vue d’ensemble du SDK, consultez la page [Vue d’ensemble](/intune/develop/intune-app-sdk). Pour commencer à utiliser le SDK de l’application Intune, consultez [Prise en main du Kit de développement logiciel (SDK) de l’application Microsoft Intune](/intune/develop/intune-app-sdk-get-started).
 

@@ -35,10 +35,10 @@ Les stratégies Intune appartiennent aux catégories suivantes : La catégorie 
 
 - **Stratégies de configuration :** Ces stratégies sont couramment utilisées pour gérer les paramètres de sécurité et les fonctionnalités sur vos appareils. Utilisez les informations de cette rubrique pour en savoir plus sur la façon de créer et déployer ces stratégies et pour explorer les paramètres disponibles.
 - **Stratégies de conformité des appareils :** Ces stratégies de conformité définissent les règles et les paramètres auxquels un appareil doit se conformer pour être considéré comme conforme par les stratégies d’accès conditionnel. Vous pouvez également utiliser des stratégies de conformité pour surveiller et corriger les problèmes de conformité des appareils indépendamment de l’accès conditionnel.
-Pour plus d’informations, consultez [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) (Stratégies de conformité d’appareils dans Microsoft Intune).
+Pour plus d’informations, consultez [Stratégies de conformité d’appareils dans Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Stratégies d’accès conditionnel :** Ces stratégies vous aident à sécuriser la messagerie et d’autres services en fonction de conditions que vous spécifiez.
-Pour plus d’informations, consultez [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restreindre l’accès aux services de messagerie et O365 avec Microsoft Intune)
-- [Stratégies d’inscription des appareils d’entreprise :](set-up-ios-and-mac-management-with-microsoft-intune.md) Pour plus d’informations sur les stratégies d’inscription des appareils d’entreprise, consultez **Configurer la gestion iOS et MAC avec Microsoft Intune**.
+Pour plus d’informations, consultez [Limiter l’accès à la messagerie et aux services Office 365 avec Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+- [Stratégies d’inscription des appareils d’entreprise :](set-up-ios-and-mac-management-with-microsoft-intune.md) Pour plus d’informations sur les stratégies d’inscription des appareils d’entreprise, consultez **Configurer la gestion iOS et Mac avec Microsoft Intune**.
 - **Stratégies d’accès aux ressources :** Les stratégies de ce groupe œuvrent ensemble pour aider vos utilisateurs à accéder aux fichiers et aux ressources dont ils ont besoin pour effectuer leur travail, où qu’ils soient.
 Pour plus d’informations, consultez [Activer l’accès aux ressources de l’entreprise avec Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
@@ -107,7 +107,7 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 
 - **Modifier** - Ouvre les propriétés de la stratégie sélectionnée pour vous permettre d’apporter des modifications.
 - **Supprimer** - Supprime la stratégie sélectionnée.<br>Lorsque vous supprimez une stratégie, elle est supprimée de tous les groupes sur lesquels elle a été déployée.
-- **Gérer le déploiement** – Sélectionnez le groupe dans lequel vous souhaitez déployer la stratégie, puis cliquez sur **Ajouter**.
+- **Gérer le déploiement** : sélectionnez le groupe sur lequel vous souhaitez déployer la stratégie, puis cliquez sur **Ajouter**.
 
 ## Tâches des stratégies Intune
 
