@@ -26,7 +26,9 @@ ms.suite: ems
 ---
 
 # gérer les licences Intune
-Avant que les utilisateurs puissent se connecter pour utiliser le service Intune ou inscrire leurs appareils dans la gestion, une licence doit être préalablement affectée à votre abonnement Intune depuis le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Une fois la licence attribuée, les noms d’utilisateurs sont affichés dans la console d’administration Intune. Les utilisateurs peuvent ensuite inscrire jusqu'à cinq appareils.
+Avant que les utilisateurs puissent se connecter pour utiliser le service Intune ou inscrire leurs appareils dans la gestion, vous devez attribuer à chaque utilisateur une licence dans votre abonnement Intune via le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Une fois la licence attribuée, les noms d’utilisateurs sont affichés dans la console d’administration Intune. Les utilisateurs peuvent ensuite inscrire jusqu'à cinq appareils.
+
+Les organisations qui utilisent Microsoft Enterprise Mobility Suite (EMS) peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un sous-ensemble de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx). Pour plus d’informations, consultez [Gérer les licences Intune avec PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
 ## Mode d’attribution des licences Intune
 Lorsque les comptes d’utilisateur sont synchronisés à partir de votre annuaire Active Directory local ou ajoutés manuellement à votre abonnement aux services cloud par le biais du [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), ils ne reçoivent pas automatiquement une licence Intune. Au lieu de cela, un administrateur Intune doit modifier le compte d’utilisateur à une date ultérieure pour attribuer une licence à l’utilisateur à partir du portail Office 365.
@@ -42,7 +44,7 @@ Vous utilisez le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=6
 
 1.  Connectez-vous au [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) à l’aide de vos informations d’identification d’administrateur du locataire, puis sélectionnez **Personnes** > **Tous les utilisateurs**.
 
-2.  Sélectionnez le compte d’utilisateur auquel vous souhaitez attribuer une licence utilisateur Intune et sélectionnez **Microsoft Intune** dans les propriétés du compte d’utilisateur.
+2.  Sélectionnez le compte d’utilisateur auquel vous souhaitez attribuer une licence utilisateur Intune, puis sélectionnez **Microsoft Intune** (autonome) ou **Enterprise Mobility Suite**.
 
 3.  Maintenant, le compte d’utilisateur dispose des autorisations nécessaires pour utiliser le service et inscrire des appareils dans la gestion.
 
@@ -87,12 +89,12 @@ Vérification avec :
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
 ### Étapes suivantes
-Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage rapide Intune*.
+Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage rapide Intune*.
 >[!div class="step-by-step"]
 
 >[&larr; **Synchroniser les utilisateurs avec Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organiser les utilisateurs et les appareils** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
