@@ -9663,14 +9663,14 @@
 
 ##### <a name='8aa2bcd921254083fc05ad2768c0a69f9d96ba4f655'></a> Source: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d506cda103893489aa4b3e657ac9223ecc6d39c8/InTuneDocs/index.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr.fr-fr/blob/ed0d3f3ff71f19cec704e5aa8e12298b84b0d46b/InTuneDocs/index.md)
+* Target File: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr.fr-fr/blob/eb01b3fba133fc8045a6d067f1457afaf0d819c7/InTuneDocs/index.md)
 * Handoff File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/c10ee6caf5052072fd9abe3d0cea6bc7124a8685/ol-handoff/Microsoft/IntuneDocs-pr.fr-fr/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.fr-fr.xlf)
 * Handoff Datetime: 2016-06-14 16:58:19
 * Handoff Reason: Include
 * Archive File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.fr-fr.xlf](https://github.com/Microsoft/EM.handoff/blob/ae3c1e1987ec9c8bd9a8e9721587a4b4fcb6b42d/ol-handoff/Microsoft/IntuneDocs-pr.fr-fr/master/archive/index.404579aeff405d27d9820f60e5e015fb7352d33a.fr-fr.xlf)
 * Archive Datetime: 2016-06-16 01:38:12
-* Handback File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/bcd3a0ff55fda9c46faf07d1228c641e476c7a1a/ol-handback/Microsoft/IntuneDocs-pr.fr-fr/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.fr-fr.xlf)
-* Handback Datetime: 2016-06-20 12:44:19
+* Handback File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.fr-fr.xlf](https://github.com/Microsoft/EM.handback/blob/c9cf02c196ce483cfa6a28c09fef4f1ced504da6/ol-handback/Microsoft/IntuneDocs-pr.fr-fr/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.fr-fr.xlf)
+* Handback Datetime: 2016-06-23 10:11:43
 * [Back to Top](#report-top)
 
 ##### <a name='11fd1aed877c922967ea3e4f2cc115d4b8cc596a656'></a> Source: [InTuneDocs\intunefiles.txt](https://github.com/Microsoft/IntuneDocs-pr/blob/5be51d3c1f8e5a31618d25ad62bbe88b5bad827e/InTuneDocs/intunefiles.txt)
