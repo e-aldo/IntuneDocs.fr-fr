@@ -53,7 +53,7 @@ Les étapes suivantes vous aideront à configurer une stratégie de configuratio
 
 4.  Dans la liste des stratégies, développez la plateforme pour laquelle vous voulez créer une stratégie, puis choisissez **Configuration générale** > **Créer et déployer une stratégie avec les paramètres recommandés** > **Créer une stratégie**.
 
-5.  Lorsque vous êtes invité à **sélectionner les groupes sur lesquels vous souhaitez déployer cette stratégie**, choisissez **Utilisateurs Intune** (le groupe créé à l’étape précédente) dans la liste des groupes disponibles, puis choisissez **Ajouter** > **OK**.
+5.  Quand vous êtes invité à **Sélectionner les groupes sur lesquels vous souhaitez déployer cette stratégie**, choisissez un groupe dans la liste des groupes disponibles, puis sélectionnez **Ajouter** > **OK**.
 
 Votre stratégie s’affiche dans la liste des stratégies de configuration et a été déployée dans le groupe **Utilisateurs Intune**. Double-cliquez sur la stratégie pour afficher ses paramètres.
 
@@ -114,6 +114,6 @@ Félicitations ! Vous venez d’effectuer l’étape 6 du *guide de démarrage
 >[&larr;**Organiser les utilisateurs et les appareils**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Personnaliser le portail d’entreprise** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

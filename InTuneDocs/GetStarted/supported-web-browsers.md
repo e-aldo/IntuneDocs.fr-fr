@@ -31,8 +31,8 @@ Avant de configurer Intune, consultez cette rubrique et les autres conditions re
 
 |Fonctionnalité Intune |Navigateurs pris en charge|
 |---------|---------|
-|Console d’administration Intune     |  Internet Explorer 10 ou version ultérieure<br /><br />Google Chrome (versions antérieures à la version 42)<br /><br />Mozilla Firefox <br /><br />**Remarque :** Edge n’est actuellement pas pris en charge pour la console d’administration.                      
-|Centre d’administration Office 365     |Tous les navigateurs  |
+|Console d’administration Intune     |  Internet Explorer 10 ou version ultérieure<br /><br />Google Chrome (versions antérieures à la version 42)<br /><br />Mozilla Firefox <br /><br />**Remarque** : Microsoft Edge et les navigateurs mobiles ne sont pas pris en charge par la console d’administration.                      
+|Centre d’administration Office 365     |Tous les navigateurs, y compris les navigateurs mobiles et gérés  |
 |Site web Portail d’entreprise     |**Sur les appareils mobiles :** Utiliser le navigateur web par défaut pour chaque plateforme prise en charge   <br /><br />**Sur les PC Windows :** Internet Explorer 10 ou version ultérieure, ou Microsoft Edge<br /><br />**Sur Mac OS X 10.9 ou version ultérieure :** Apple Safari    |
 
 
@@ -42,6 +42,6 @@ Avant de configurer Intune, consultez cette rubrique et les autres conditions re
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

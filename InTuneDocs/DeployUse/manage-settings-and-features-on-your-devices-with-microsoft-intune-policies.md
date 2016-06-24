@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,17 +50,17 @@ Pour obtenir la liste complète des stratégies Intune, consultez le [Guide de r
 
 ## Créer une stratégie de configuration
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Stratégie** &gt; **Stratégies de configuration** &gt; **Ajouter**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), sélectionnez **Stratégie** &gt; **Stratégies de configuration** &gt; **Ajouter**.
 
 2.  Sélectionnez la stratégie souhaitée, choisissez d’utiliser les paramètres recommandés pour la stratégie (le cas échéant, mais vous pouvez les modifier plus tard) ou de créer une stratégie personnalisée avec vos propres paramètres.
 
     > [!TIP] Pour choisir la bonne stratégie, consultez le [Guide de référence des stratégies Microsoft Intune](microsoft-intune-policy-reference.md).
 
-3.  Quand vous êtes prêt, cliquez sur **Créer une stratégie**.
+3.  Quand vous êtes prêt, sélectionnez **Créer une stratégie**.
 
 4.  Dans l’écran **Créer une stratégie** , configurez un nom et une description facultative de la stratégie.
 
-5.  Configurez les paramètres de stratégie obligatoires, puis cliquez sur **Enregistrer la stratégie**.
+5.  Configurez les paramètres de stratégie nécessaires, puis sélectionnez **Enregistrer la stratégie**.
 
     Si vous avez besoin d’aide avec les paramètres de stratégie, choisissez votre type de stratégie à partir de la liste suivante :
 
@@ -76,7 +76,7 @@ Pour obtenir la liste complète des stratégies Intune, consultez le [Guide de r
     - [Paramètres pour la stratégie de conditions générales](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Paramètres généraux pour les appareils mobiles (hérité)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  Dans la boîte de dialogue de confirmation, cliquez sur **Oui** pour déployer la stratégie maintenant ou sur **Non** pour créer la stratégie sans la déployer.
+4.  Dans la boîte de dialogue de confirmation, sélectionnez **Oui** pour déployer la stratégie ou sur **Non** pour créer la stratégie sans la déployer.
 
 Vous pouvez afficher et modifier la nouvelle stratégie en parcourant les sections de chaque type de stratégie dans l’espace de travail **Stratégie** .
 
@@ -89,35 +89,26 @@ Maintenant que vous avez créé une stratégie, vous voulez probablement la dép
 
 ## Déployer une stratégie de configuration
 
-1.  Dans l’espace de travail **Stratégie** , sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
+1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis choisissez **Gérer le déploiement**.
 
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
 
-    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
+    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis choisissez **Ajouter** &gt; **OK**.
 
-    -   **Pour fermer la boîte de dialogue sans la déployer**, cliquez sur **Annuler**.
+    -   **Pour fermer la boîte de dialogue sans la déployer**, choisissez **Annuler**.
 
 Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’autres informations sur le déploiement dans la partie inférieure de la liste de stratégies.
 
 ## Gérer les stratégies
 
-1.  Dans la [console d'administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Stratégie**, puis recherchez et sélectionnez la stratégie que vous souhaitez gérer.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), sélectionnez **Stratégie**, puis recherchez et sélectionnez la stratégie que vous voulez gérer.
 
 2.  Sélectionnez une des opérations suivantes :
 
 - **Modifier** - Ouvre les propriétés de la stratégie sélectionnée pour vous permettre d’apporter des modifications.
 - **Supprimer** - Supprime la stratégie sélectionnée.<br>Lorsque vous supprimez une stratégie, elle est supprimée de tous les groupes sur lesquels elle a été déployée.
-- **Gérer le déploiement** : sélectionnez le groupe sur lequel vous souhaitez déployer la stratégie, puis cliquez sur **Ajouter**.
+- **Gérer le déploiement** : sélectionnez le groupe sur lequel vous voulez déployer la stratégie, puis sélectionnez **Ajouter**.
 
-## Tâches des stratégies Intune
-
-### Pour actualiser les stratégies sur un appareil pour vérifier qu’elles sont à jour (s’applique aux ordinateurs Windows exécutant le logiciel client Intune uniquement)
-
-1.  Dans la [console d'administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Groupes**, puis sélectionnez un groupe d'appareils.
-
-2.  Sélectionnez les appareils sur lesquels vous souhaitez actualiser les stratégies, puis cliquez sur **Tâches à distance** &gt; **Actualiser les stratégies**.
-
-3.  Cliquez sur **Tâches à distance** dans le coin inférieur droit de la console d’administration Intune pour vérifier l’état de la tâche.
 
 ## Forum aux questions sur les stratégies Intune
 
@@ -187,25 +178,7 @@ Quand vous supprimez une stratégie ou retirez un appareil d'un groupe sur leque
         - Type de mot de passe requis
         - Expiration du mot de passe (jours)
         - Mémoriser l'historique des mots de passe
-        - Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil
-        - Minutes d'inactivité avant demande du mot de passe
-        - Type de mot de passe requis - Nombre minimum de jeux de caractères
-        - Autoriser l'appareil photo
-        - Exiger le chiffrement sur l'appareil mobile
-        - Autoriser le stockage amovible
-        - Autoriser le navigateur web
-        - Autoriser la boutique d'applications
-        - Autoriser la capture d'écran
-        - Autoriser la géolocalisation
-        - Autoriser un compte Microsoft
-        - Autoriser la fonction copier-coller
-        - Autoriser la connexion Wi-Fi
-        - Autoriser la connexion automatique aux points d'accès Wi-Fi gratuits
-        - Autoriser l'indication des points d'accès Wi-Fi
-        - Autoriser la réinitialisation aux paramètres d'usine
-        - Autoriser Bluetooth
-        - Autoriser NFC
-        - Autoriser le Wi-Fi
+        - Nombre d'échecs de connexion successifs autorisé avant réinitialisation de l'appareil – Minutes d’inactivité avant demande du mot de passe – Type de mot de passe requis – Nombre minimum de jeux de caractères – Autoriser l’appareil photo – Exiger le chiffrement sur l’appareil mobile – Autoriser le stockage amovible – Autoriser le navigateur web – Autoriser la boutique d’applications – Autoriser la capture d’écran – Autoriser la géolocalisation – Autoriser un compte Microsoft – Autoriser la fonction copier-coller – Autoriser la connexion Wi-Fi – Autoriser la connexion automatique aux points d’accès Wi-Fi gratuits – Autoriser l’indication des points d’accès Wi-Fi – Autoriser la réinitialisation aux paramètres d’usine – Autoriser Bluetooth – Autoriser NFC – Autoriser le Wi-Fi
     
     - **iOS** - Tous les paramètres sont supprimés, sauf :
         - Autoriser l'itinérance vocale
@@ -220,9 +193,16 @@ Quand vous supprimez une stratégie ou retirez un appareil d'un groupe sur leque
 - **Paramètres du Pare-feu Windows** : les paramètres sont réinitialisés sur les valeurs par défaut du système d’exploitation. Pour plus d’informations, consultez [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
+### Comment actualiser les stratégies sur un appareil pour vérifier qu’elles sont à jour ? (s’applique aux ordinateurs Windows exécutant le logiciel client Intune uniquement)
+
+1.  Dans un groupe d’appareils, sélectionnez les appareils sur lesquels vous voulez actualiser les stratégies, puis sélectionnez **Tâches à distance** &gt; **Actualiser les stratégies**.
+2.  Sélectionnez **Tâches à distance** dans le coin inférieur droit de la console d’administration Intune pour vérifier l’état de la tâche.
+
+### Où puis-je trouver de l’aide concernant mes problèmes de stratégies ?
+
+Consultez [Résoudre les problèmes de stratégie dans Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
