@@ -63,11 +63,11 @@ En inscrivant votre appareil Windows dans Intune, vous autorisez votre administr
 -   Fabricant
 
 
-Si vous avez des questions ou si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

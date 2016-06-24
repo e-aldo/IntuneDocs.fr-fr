@@ -36,11 +36,11 @@ Si vous avez un appareil Samsung Knox, vous pouvez effectuer « réinitialisati
 - L’e-mail, les données VPN et Wi-Fi
 - La capacité de votre administrateur d’appliquer certains paramètres
 
-Si vous avez des questions ou si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

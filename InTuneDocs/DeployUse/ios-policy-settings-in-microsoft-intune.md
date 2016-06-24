@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -99,7 +99,7 @@ Si le paramètre que vous recherchez n’apparaît pas dans cette rubrique, vous
 |**Autoriser la boutique d'applications**|Autorise l’accès à l’App Store depuis l’appareil.|Oui|
 |**Demander un mot de passe pour accéder à la boutique d'applications**|Oui|
 |**Autoriser les achats dans l'application**|Autoriser les achats depuis une application en cours d’exécution.|Oui|
-|**Autoriser les documents gérés dans d'autres applications non gérées**|Autoriser la visualisation des documents d’entreprise depuis toute application.|OS 7.1 et versions ultérieures|
+|**Autoriser les documents gérés dans d'autres applications non gérées**|Autoriser la visualisation des documents d’entreprise depuis toute application.<br>**Exemple** : Vous voulez empêcher les utilisateurs d’enregistrer des fichiers de OneDrive vers Dropbox. Attribuez la valeur Non à ce paramètre. Une fois que l’appareil a reçu la stratégie (par exemple, après un redémarrage), il cesse d’autoriser l’enregistrement.|iOS 7.1 et versions ultérieures|
 |**Autoriser les documents non gérés dans d'autres applications gérées**|Autoriser tout document à être affiché dans les applications d’entreprise gérées.|iOS 7.1 et versions ultérieures|
 |**Autoriser la vidéoconférence**|Autoriser les applications de vidéoconférence comme Facetime sur l’appareil.|Oui|
 |**Autoriser le contenu pour adultes dans la boutique multimédia**|Autoriser l’appareil à accéder au contenu réservé aux adultes depuis le magasin.|Oui|
@@ -153,7 +153,7 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
-|**Sélectionner une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran**|Cliquez sur **Parcourir**, puis spécifiez l'application gérée ou une application d'un magasin qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran. Aucune autre application ne peut s’exécuter sur l’appareil. Pour plus d’aide, consultez **Comment spécifier des URL de magasins d’applications** plus loin dans cette rubrique.|
+|**Sélectionner une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran**|Sélectionnez **Parcourir**, puis spécifiez l’application gérée ou une application d’un Store qui est autorisée à s’exécuter quand l’appareil est en mode plein écran. Aucune autre application ne peut s’exécuter sur l’appareil. Pour plus d’aide, consultez **Comment spécifier des URL de magasins d’applications** plus loin dans cette rubrique.|
 |**Autoriser l'interaction tactile**|Active ou désactive l'écran tactile sur l'appareil.|
 |**Autoriser la rotation d'écran**|Active ou désactive la modification de l'orientation de l'écran quand vous faites pivoter l'appareil.|
 |**Autoriser les boutons de volume**|Active ou désactive l'utilisation des boutons de volume sur l'appareil.|
@@ -182,9 +182,9 @@ Utilisez le **Rapport sur les applications non conformes** pour afficher la conf
 
 ##### Pour exécuter le rapport sur les applications non conformes
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Rapports** &gt; **Rapport sur les applications non conformes**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Rapports** &gt; **Rapport sur les applications non conformes**.
 
-2.  Sélectionnez les groupes d'appareils que vous souhaitez vérifier, si vous souhaitez vérifier les applications conformes, les applications non conformes ou les deux, puis cliquez sur **Afficher le rapport**.
+2.  Sélectionnez les groupes d’appareils que vous voulez vérifier, qu’il s’agisse des applications conformes, non conformes ou des deux, puis sélectionnez **Afficher le rapport**.
 
 #### Comment spécifier des URL de magasins d'applications
 Pour spécifier une URL d'application dans la liste des applications conformes et non conformes, ou dans l'option **Sélectionnez une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran** (iOS uniquement), utilisez le format suivant :
@@ -222,7 +222,7 @@ Avant de commencer, vous devez installer l'outil Apple Configurator et créer un
 |Nom du paramètre|Détails|
     |----------------|--------------------|
 |**Nom du profil de configuration personnalisé (montré aux utilisateurs)**|Entrez le nom de la stratégie tel qu’il sera affiché sur l’appareil et dans les rapports de stratégie Intune.|
-|**Fichier de configuration de profil**|Cliquez sur **Importer**, puis recherchez le profil de configuration que vous avez créé à l'aide de l'outil Apple Configurator. **Remarque :** Vérifiez que les paramètres que vous exportez à partir de l’outil Apple Configurator sont compatibles avec la version d’iOS sur les appareils sur lesquels vous déployez la stratégie personnalisée iOS. Pour plus d’informations sur la résolution des paramètres incompatibles, recherchez **Configuration Profile Reference** et **Mobile Device Management Protocol Reference** sur le site web [Apple Developer](https://developer.apple.com/).|
+|**Fichier de configuration de profil**|Sélectionnez **Importer**, puis recherchez le profil de configuration que vous avez créé à l’aide de l’outil Apple Configurator. **Remarque :** Vérifiez que les paramètres que vous exportez à partir de l’outil Apple Configurator sont compatibles avec la version d’iOS sur les appareils sur lesquels vous déployez la stratégie personnalisée iOS. Pour plus d’informations sur la résolution des paramètres incompatibles, recherchez **Configuration Profile Reference** et **Mobile Device Management Protocol Reference** sur le site web [Apple Developer](https://developer.apple.com/).|
     |**Détails du profil de configuration**|Affiche le code XML du profil de configuration que vous avez importé.|
 
 ### Voir aussi
@@ -230,6 +230,6 @@ Avant de commencer, vous devez installer l'outil Apple Configurator et créer un
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

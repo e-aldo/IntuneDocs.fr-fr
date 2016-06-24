@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?
 
-Lorsque vous désinstallez l'application Portail d'entreprise de votre appareil, votre appareil est également désinscrit d’Intune. Pour plus d’informations sur ce processus, utilisez le lien répertorié dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous utilisez.
+Pour plus d’informations sur ce processus, utilisez le lien répertorié dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous utilisez.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 ou Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,11 +92,11 @@ Lorsque vous supprimez votre appareil Windows RT, voici ce qui se produit :
 
 -   Tous les paramètres qui ont été modifiés sur votre appareil lorsque vous l'avez ajouté, par exemple la désactivation de l'appareil photo ou l'exigence d'une certaine longueur de mot de passe, ne s'appliquent plus.
 
-Si vous avez des questions ou si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

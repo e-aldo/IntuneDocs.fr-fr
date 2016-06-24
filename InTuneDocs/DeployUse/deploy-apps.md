@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ Les règles suivantes s’appliquent à l’achat de stockage cloud supplémenta
 
 -   Vous devez disposer d'un abonnement payant actif pour acheter du stockage supplémentaire.
 
--   Seuls les administrateurs de facturation ou généraux de Microsoft Online Services peuvent acheter du stockage supplémentaire via le portail des comptes Intune. Pour ajouter, supprimer ou gérer ces administrateurs, vous devez être administrateur général et vous connecter au portail des comptes Intune.
+-   Seuls les administrateurs de facturation et les administrateurs généraux de Microsoft Online Services peuvent acheter du stockage supplémentaire via le portail de gestion Office 365. Pour ajouter, supprimer ou gérer ces administrateurs, vous devez être administrateur général et vous connecter au portail de gestion Office 365.
 
 -   Si vous êtes un client de licences en volume qui a acheté Intune ou le composant additionnel de Microsoft Intune via le contrat d’entreprise, contactez votre responsable de compte Microsoft ou votre partenaire Microsoft afin d’obtenir des informations tarifaires et acheter du stockage supplémentaire.
 
@@ -105,6 +105,6 @@ Quand deux déploiements avec la même action de déploiement sont reçus par un
 
 Découvrez comment [déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

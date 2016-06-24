@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,22 +66,22 @@ Voici quelques exemples d’options que votre administrateur informatique peut g
 
 Voici quelques applications courantes que votre service informatique peut gérer :
 
--   Navigateur web géré
+-   Intune Managed Browser
 
--   Afficheur d'images géré
+-   Intune Image Viewer
 
--   Managé visionneuse PDF
+-   Intune PDF Viewer
 
--   Lecteur AV géré
+-   Intune AV player
 
 -   Microsoft Word, Excel, PowerPoint
 
-Pour plus d’informations sur les applications gérées sur votre appareil, contactez votre administrateur informatique. Si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Pour plus d’informations sur les applications gérées sur votre appareil, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

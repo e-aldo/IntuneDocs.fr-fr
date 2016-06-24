@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Configurer la gestion de Windows Phone 8.0 avec Microsoft Intune | Microsoft Intune
+title: Configurer la gestion de Windows Phone 8.0 | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,8 @@ ms.suite: ems
 # Configurer la gestion des appareils pour Windows Phone 8.0
 
 Windows Phone 8.0 nécessite un certificat Symantec pour installer l’application Portail d’entreprise Intune et permettre la gestion de l’appareil. Un certificat est également requis pour signer les applications métier. La rubrique suivante concerne uniquement Windows Phone 8.0. Pour gérer Windows Phone 8.1 ou version ultérieure, y compris Windows 10 Mobile, consultez [Configurer l’inscription de Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md).
+
+> [!IMPORTANT] À partir de septembre 2016, l’application Portail d’entreprise pour Windows 8.0 et Windows Phone 8.0 ne sera plus disponible en téléchargement.
 
 -   **Windows Phone 8** – Certificat obligatoire
 -   **Windows Phone 8.1 et Windows 10 Mobile** exigent un certificat uniquement dans les cas suivants :
@@ -184,6 +186,6 @@ Vous pouvez déployer l’application Portail d’entreprise sur les appareils W
     > -   Si des applications faisant l'objet d'un chargement de version test doivent être installées et si des appareils Windows Phone 8.0 doivent s'inscrire et recevoir le fichier ssp.xap, créez un déploiement logiciel du fichier ssp.xap, puis déployez ce dernier avec l'action **désinstaller** . Dans la mesure où les appareils Windows Phone 8.0 ne prennent pas en charge l'installation ou la désinstallation forcée des applications, ils ignorent le déploiement. Les appareils Windows Phone 8.1 prennent en charge l'action de désinstallation et suppriment ssp.xap.
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

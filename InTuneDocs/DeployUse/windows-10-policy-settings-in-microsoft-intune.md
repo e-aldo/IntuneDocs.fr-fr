@@ -31,7 +31,7 @@ Utilisez les paramètres de la stratégie de cette rubrique pour configurer les 
 
 ## Paramètres de la stratégie de configuration générale
 
-Utilisez la **stratégie de configuration générale** Microsoft Intune pour Windows 10 afin de configurer les paramètres généraux des appareils Windows 10 Mobile et Windows 10 Desktop inscrits :
+Utilisez la **stratégie de configuration générale** Microsoft Intune pour Windows 10 afin de configurer les paramètres généraux des appareils Windows 10 Mobile et Windows 10 Desktop inscrits. Cette stratégie ne peut pas être utilisée si vous gérez des PC Windows 10 avec le logiciel client Intune.
 
 
 ### Mot de passe
@@ -332,6 +332,6 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

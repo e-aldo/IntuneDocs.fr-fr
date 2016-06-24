@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -84,7 +84,7 @@ Vous permet de gérer et de déployer des applications iOS gratuites à partir d
 > [!TIP] Les options pour les appareils mobiles ne sont pas disponibles tant que vous n’avez pas [configuré Intune comme autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md).
 
 ## Prise en charge des applications de plateforme Windows universelle (UWP)
-Les appareils Windows 10 n’ont pas besoin d’une clé de sideloading pour installer des applications métier. Cependant, la clé de Registre **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** doit avoir la valeur **1** pour activer le chargement indépendant.
+Les PC Windows 10 n’ont pas besoin d’une clé de chargement indépendant pour installer des applications métier. Cependant, la clé de Registre **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** doit avoir la valeur **1** pour activer le chargement indépendant.
 
 Si cette clé de Registre n’est pas configurée, Intune lui attribue automatiquement la valeur **1** la première fois que vous déployez une application sur l’appareil. Si vous avez défini la valeur **0**, Intune ne peut pas modifier automatiquement la valeur et le déploiement d’applications métier échoue.
 
@@ -96,6 +96,6 @@ Sur les appareils Windows 10 Mobile, vous pouvez utiliser un certificat de code
 
 Ensuite, vous devez ajouter les applications à la console Intune avant de les déployer. Vous pouvez ajouter des applications pour des [appareils inscrits](add-apps-for-mobile-devices-in-microsoft-intune.md) ou pour des [PC Windows que vous gérez avec le logiciel client Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -144,29 +144,6 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 **Résolution :** les clients Microsoft Office 365 qui utilisent l’authentification unique (SSO) via les services ADFS 2.0 et qui disposent de plusieurs domaines de niveau supérieur pour les suffixes UPN des utilisateurs au sein de leur entreprise (par exemple, @contoso.com ou @fabrikam.com) doivent déployer une instance distincte d’ADFS 2.0 Federation Service pour chaque suffixe.  Il existe désormais un [correctif cumulatif pour ADFS 2.0](http://support.microsoft.com/kb/2607496) qui fonctionne conjointement avec le commutateur **SupportMultipleDomain** pour permettre au serveur ADFS de prendre en charge ce scénario sans nécessiter d’autres serveurs ADFS 2.0. Pour plus d’informations, consultez [ce blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
-### L’ordinateur est déjà inscrit - Erreur hr 0x8007064c
-**Problème :** L’inscription échoue avec l’erreur **L’ordinateur est déjà inscrit**. Le journal d’inscription affiche l’erreur **hr 0x8007064c**.
-  
-Cela peut être dû au fait que l’ordinateur avait déjà été inscrit précédemment ou qu’il a l’image clonée d’un ordinateur qui avait été inscrit. Le certificat de compte du compte précédent est toujours présent sur l’ordinateur.
-
-
-
-**Solution :** 
-
-1. Dans le menu **Démarrer**, **Exécuter** -> **MMC**. 
-1. **Fichier** -> **Ajouter/supprimer des composants logiciels enfichables**.
-1. Double-cliquez sur **Certificats**, choisissez **Compte ordinateur**, **Suivant**, sélectionnez **Ordinateur local**.
-1. Double-cliquez sur **Certificats (ordinateur local)**, choisissez **Personnel / certificats**. 
-1. Recherchez le certificat Intune émis par Sc_Online_Issuing et supprimez-le, le cas échéant
-1. Supprimez cette clé de Registre si elle existe : **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** et toutes les sous-clés.
-1. Tentez la réinscription. 
-1. Si l’ordinateur ne peut toujours pas être inscrit, recherchez cette clé et supprimez-la, si elle existe : **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Tentez la réinscription. 
-
-    > [!IMPORTANT]
-    > Cette section, méthode ou tâche contient des étapes qui vous indiquent comment modifier le registre. Toutefois, des problèmes importants peuvent survenir si vous modifiez le registre de façon incorrecte. Par conséquent, assurez-vous de suivre les étapes avec précaution. Pour plus de protection, sauvegardez le registre avant de le modifier. Vous pourrez ainsi restaurer le Registre en cas de problème.
-    > Pour plus d’informations sur la procédure de sauvegarde et de restauration du registre, consultez [Procédure de sauvegarde et de restauration du registre dans Windows](https://support.microsoft.com/en-us/kb/322756)
-
 
 ## Problèmes Android
 ### Échec de l’installation du profil
@@ -248,6 +225,31 @@ Cela peut être dû au fait que l’ordinateur avait déjà été inscrit préc�
 
 ### Autres erreurs d’inscription iOS
 Une liste des erreurs d’inscription iOS est fournie dans la documentation de l’utilisateur de l’appareil, dans [Des erreurs se produisent pendant l’inscription de votre appareil dans Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
+
+## Problèmes liés aux PC
+
+### L’ordinateur est déjà inscrit - Erreur hr 0x8007064c
+**Problème :** L’inscription échoue avec l’erreur **L’ordinateur est déjà inscrit**. Le journal d’inscription affiche l’erreur **hr 0x8007064c**.
+  
+Cela peut être dû au fait que l’ordinateur avait déjà été inscrit précédemment ou qu’il a l’image clonée d’un ordinateur qui avait été inscrit. Le certificat de compte du compte précédent est toujours présent sur l’ordinateur.
+
+
+
+**Solution :** 
+
+1. Dans le menu **Démarrer**, **Exécuter** -> **MMC**. 
+1. **Fichier** -> **Ajouter/supprimer des composants logiciels enfichables**.
+1. Double-cliquez sur **Certificats**, choisissez **Compte ordinateur**, **Suivant**, sélectionnez **Ordinateur local**.
+1. Double-cliquez sur **Certificats (ordinateur local)**, choisissez **Personnel / certificats**. 
+1. Recherchez le certificat Intune émis par Sc_Online_Issuing et supprimez-le, le cas échéant
+1. Supprimez cette clé de Registre si elle existe : **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** et toutes les sous-clés.
+1. Tentez la réinscription. 
+1. Si l’ordinateur ne peut toujours pas être inscrit, recherchez cette clé et supprimez-la, si elle existe : **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Tentez la réinscription. 
+
+    > [!IMPORTANT]
+    > Cette section, méthode ou tâche contient des étapes qui vous indiquent comment modifier le registre. Toutefois, des problèmes importants peuvent survenir si vous modifiez le registre de façon incorrecte. Par conséquent, assurez-vous de suivre les étapes avec précaution. Pour plus de protection, sauvegardez le registre avant de le modifier. Vous pourrez ainsi restaurer le Registre en cas de problème.
+    > Pour plus d’informations sur la procédure de sauvegarde et de restauration du registre, consultez [Procédure de sauvegarde et de restauration du registre dans Windows](https://support.microsoft.com/en-us/kb/322756)
 
 ## Codes généraux des erreurs d’inscription
 

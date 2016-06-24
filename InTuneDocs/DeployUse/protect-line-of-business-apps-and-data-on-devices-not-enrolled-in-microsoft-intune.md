@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [Protéger les données et applications métier sur des appareils non inscrits | Microsoft Intune]
+title: Protéger les données et applications métier sur des appareils non inscrits | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -52,6 +52,11 @@ Pour associer votre application métier aux stratégies GAM, vous devez ajouter 
 
 ## Étape 3 : Appliquer des stratégies GAM
 Une fois que les métadonnées de l’application sont chargées sur le service, l’application s’affiche dans la liste des applications.  Vous pouvez à présent [créer une stratégie ou utiliser une stratégie existante](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) et l’appliquer à l’application métier que vous avez ajoutée à l’étape 2.
+
+>[!IMPORTANT]
+>La stratégie GAM doit être appliquée pour les utilisateurs qui s’apprêtent à utiliser l’application encapsulée.  Les utilisateurs pour lesquels cette stratégie n’a pas été déployée ne peuvent pas utiliser cette application.
+
+
   ![Capture d’écran du panneau des applications ciblées avec la nouvelle application métier](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## Étape 4 : Distribuer l’application
 Vous pouvez déployer des applications sur vos utilisateurs finaux de diverses manières :
@@ -75,6 +80,6 @@ Vous pouvez supprimer une application métier de la liste des applications.  Cel
   Cela supprime les applications de la liste des applications métier et de la liste des applications ciblées dans la stratégie GAM.
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,28 +46,29 @@ Avant de commencer, vous devez obtenir un jeton VPP auprès d’Apple et le char
 * Par défaut, Intune se synchronise avec le service Apple VPP deux fois par jour. Vous pouvez, toutefois, lancer une synchronisation manuelle à tout moment.
 * Après avoir importé le jeton VPP dans Intune, n’importez pas le même jeton dans une autre solution de gestion d’appareils, car cela peut entraîner la perte des enregistrements utilisateur et de l’attribution de licence.
 * Avant de commencer à utiliser iOS VPP avec Intune, supprimez les comptes d’utilisateur VPP existants créés avec d’autres fournisseurs de gestion des appareils mobiles. En guise de mesure de sécurité, Intune ne synchronise pas ces comptes d’utilisateur dans Intune. Intune synchronise à partir du service Apple VPP uniquement les données qui ont été créées par Intune. 
+* Vous ne pouvez pas déployer des applications VPP iOS sur des appareils qui ont été inscrits à l’aide du protocole d’inscription d’appareils (DEP).
 
 ## Pour obtenir et charger un jeton Apple VPP
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Administration** &gt; **iOS et Mac OS X** &gt; **VPP (Volume Purchase Program)**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Administration** &gt; **iOS et Mac OS X** &gt; **VPP (Volume Purchase Program)**.
 
-2.  Cliquez sur le lien **Compte Apple VPP** et, si ce n’est déjà fait, inscrivez-vous au programme « Volume Purchase Program for Business ». Une fois inscrit, téléchargez le jeton Apple VPP pour votre compte.
+2.  Cliquez sur le lien **Compte Apple VPP** et, si ce n’est pas déjà fait, inscrivez-vous au programme « Volume Purchase Program for Business ». Une fois inscrit, téléchargez le jeton Apple VPP pour votre compte.
 
-3.  Dans la page **Gérer un VPP (Volume Purchase Program) Apple** de la console Intune, cliquez sur **Charger le jeton VPP**.
+3.  Dans la page **Gérer un VPP (Volume Purchase Program) Apple** de la console Intune, sélectionnez **Charger le jeton VPP**.
 
-4.  Dans la boîte de dialogue **Charger le jeton VPP**, entrez ou collez le nom du jeton VPP et votre ID Apple, puis cliquez sur **Charger**.
+4.  Dans la boîte de dialogue **Charger le jeton VPP**, entrez ou collez le nom du jeton VPP et votre ID Apple, puis sélectionnez **Charger**.
 
-5.  Dans la boîte de dialogue d’avertissement, cochez la case pour indiquer que vous comprenez que vous ne pourrez pas basculer ultérieurement vers un autre compte VPP, puis cliquez sur **Oui**.
+5.  Dans la boîte de dialogue d’avertissement, cochez la case pour indiquer que vous comprenez que vous ne pourrez pas basculer ultérieurement vers un autre compte VPP, puis sélectionnez **Oui**.
 
 Dans la page **VPP (Volume Purchase Program)**, vous pouvez maintenant voir des informations sur le jeton Apple VPP, notamment quand a eu lieu sa dernière mise à jour, ainsi que sa date d’expiration et la date de sa dernière synchronisation avec Intune.
 
-Vous pouvez synchroniser les données détenues par Apple avec Intune à tout moment en cliquant sur **Synchroniser maintenant**.
+Vous pouvez synchroniser les données détenues par Apple avec Intune à tout moment en sélectionnant **Synchroniser maintenant**.
 
 ## Pour déployer une application achetée en volume
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Applications** &gt; **Logiciels gérés** &gt; **Applications achetées en volume**. Cette liste répertorie toutes les applications qui ont été synchronisées à partir du service Apple VPP.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications** &gt; **Logiciels gérés** &gt; **Applications achetées en volume**. Cette liste répertorie toutes les applications qui ont été synchronisées à partir du service Apple VPP.
 
-2.  Choisissez l’application que vous souhaitez déployer, cliquez sur **Gérer le déploiement**, puis suivez les instructions de la rubrique [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md) pour effectuer le chargement, la création et le déploiement de l’application.
+2.  Choisissez l’application que vous voulez déployer, sélectionnez **Gérer le déploiement**, puis suivez les instructions de la rubrique [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md) pour effectuer le chargement, la création et le déploiement de l’application.
 
 Quand vous déployez l’application comme **Installation requise**, une licence est utilisée par chaque utilisateur qui l’installe.
 
@@ -89,6 +90,6 @@ Vous pouvez surveiller les applications VPP qui ont été déployées et le nomb
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

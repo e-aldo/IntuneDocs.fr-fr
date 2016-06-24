@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Votre ordinateur est déjà inscrit
 
-Si vous recevez une erreur indiquant que l’ordinateur est déjà inscrit, cela signifie que votre ordinateur a déjà été ajouté sur le portail d’entreprise, mais qu’il n’est pas encore lié à votre compte d’utilisateur. Suivez cette procédure pour lier votre ordinateur à votre compte d'utilisateur et terminer le processus.
+Si vous recevez une erreur indiquant que l’ordinateur est déjà inscrit, cela signifie que votre ordinateur a déjà été ajouté sur le portail d’entreprise, mais qu’il n’est pas encore lié à votre compte d’utilisateur. Suivez cette procédure pour lier votre ordinateur à votre compte d'utilisateur et terminer le processus.  
 
 Pour lier votre ordinateur :
 
@@ -38,8 +38,10 @@ Pour lier votre ordinateur :
 
 3.  Suivez les invites pour lier l'ordinateur à votre compte d'utilisateur.
 
-Si vous avez besoin d’aide et si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas répertoriées sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous voulez désinscrire votre appareil, suivez les instructions correspondant au type d’appareil que vous avez : [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) ou [Windows](unenroll-your-device-from-intune-windows.md).
 
-<!--HONumber=Jun16_HO1-->
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO2-->
 
 

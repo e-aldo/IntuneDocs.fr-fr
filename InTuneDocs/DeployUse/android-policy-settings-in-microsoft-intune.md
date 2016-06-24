@@ -18,7 +18,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -138,8 +138,8 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
-|**Signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter.|
-|**Ne pas signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications que les utilisateurs sont autorisés à installer. Pour rester conformes, les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement.|
+|**Signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter. Si les utilisateurs installent l’une de ces applications, elle apparaîtra dans le rapport sur les applications non conformes.|
+|**Ne pas signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications que vous voulez autoriser au sein de l’entreprise. Pour rester conformes, les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement.|
 |**Ajouter**|Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans le magasin d'applications.<br /><br />Pour obtenir de l’aide, consultez Comment spécifier des URL de magasins d’applications plus loin dans cette rubrique.|
 |**Importer des applications**|Importe une liste d'applications que vous avez spécifiée dans un fichier de valeurs séparées par des virgules. Utilisez le format Nom de l'application, Éditeur, URL de l'application dans le fichier.|
 |**Éditer**|Vous permet de modifier le nom, l'éditeur et l'URL de l'application sélectionnée.|
@@ -150,7 +150,7 @@ Spécifiez les paramètres suivants pour les **appareils Samsung KNOX** :
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
-|**Sélectionner une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran**|Cliquez sur **Parcourir**, puis sélectionnez l’application gérée qui sera autorisée à s’exécuter quand l’appareil sera en mode plein écran (les applications spécifiées comme un lien vers le Store ne sont pas prises en charge actuellement). Aucune autre application ne pourra s'exécuter sur l'appareil.|
+|**Sélectionner une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran**|Sélectionnez **Parcourir**, puis choisissez l’application gérée qui peut s’exécuter quand l’appareil est en mode plein écran (les applications spécifiées sous la forme d’un lien vers le Store ne sont pas prises en charge). Aucune autre application ne pourra s'exécuter sur l'appareil.|
 |**Autoriser les boutons de volume**|Active ou désactive l'utilisation des boutons de volume sur l'appareil.|
 |**Activer le bouton Veille/sortie de veille de l'écran**|Active ou désactive le bouton Veille/sortie de veille de l'écran sur l'appareil.|
 
@@ -161,9 +161,9 @@ Utilisez le **Rapport sur les applications non conformes** pour afficher la conf
 
 ###### Pour exécuter le rapport sur les applications non conformes
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Rapports** &gt; **Rapport sur les applications non conformes**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Rapports** &gt; **Rapport sur les applications non conformes**.
 
-2.  Sélectionnez les groupes d'appareils que vous souhaitez vérifier, si vous souhaitez vérifier les applications conformes, les applications non conformes ou les deux, puis cliquez sur **Afficher le rapport**.
+2.  Sélectionnez les groupes d’appareils que vous voulez vérifier, qu’il s’agisse des applications conformes, non conformes ou des deux, puis sélectionnez **Afficher le rapport**.
 
 #### Comment spécifier des URL de magasins d'applications
 Pour spécifier une URL d'application dans la liste des applications conformes et non conformes, utilisez le format suivant :
@@ -177,10 +177,9 @@ Ouvrez la page d'installation de l'application, puis copiez l'URL dans le Presse
 ## Paramètres de la stratégie personnalisée
 Utilisez la **stratégie de configuration personnalisée Android** de Microsoft Intune pour déployer des paramètres OMA-URI (Open Mobile Alliance Uniform Resource Identifier) qui peuvent être utilisés pour contrôler les fonctionnalités sur les appareils Android. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.
 
-Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Android qui ne sont pas configurables avec des stratégies Intune. Pour obtenir des informations sur les paramètres que vous pouvez configurer avec ces stratégies, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Android qui ne sont pas configurables avec des stratégies Intune.
 
-> [!NOTE]
-> Actuellement, les stratégies personnalisées Android prennent uniquement en charge la configuration des paramètres Wi-Fi pour les appareils Android qui contiennent une clé prépartagée. Pour plus d’informations, consultez Configurer un profil Wi-Fi personnalisé avec une clé prépartagée plus loin dans cette rubrique.
+> [!NOTE] Les stratégies personnalisées Android prennent uniquement en charge la configuration des paramètres Wi-Fi pour les appareils Android qui ont une clé prépartagée.
 
 ### Paramètres généraux :
 
@@ -258,6 +257,6 @@ Bien qu’Intune prenne en charge les profils Wi-Fi pour les appareils Android, 
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

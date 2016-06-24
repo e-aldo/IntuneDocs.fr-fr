@@ -18,7 +18,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,7 +56,7 @@ Avant de pouvoir inscrire des appareils iOS d'entreprise à l'aide du programme 
 5.  **Ajouter la stratégie d’inscription d’appareils d’entreprise** Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d’appareil d’entreprise**, puis cliquez sur **Ajouter**.
 
     Remplissez la section **Général**, notamment les champs **Nom** et **Description**, et spécifiez si les appareils attribués au profil ont une affinité utilisateur ou s’ils appartiennent à un groupe.
-      - **Demander l’affinité utilisateur** : l’appareil doit être affilié à un utilisateur lors de l’installation initiale. Il peut ensuite être autorisé à accéder aux données et aux e-mails de l’entreprise pour le compte de cet utilisateur.  L’**affinité utilisateur** doit être configurée pour les appareils gérés par DEP qui appartiennent à des utilisateurs et doivent utiliser le portail d’entreprise (par exemple, pour installer des applications). 
+      - **Demander l’affinité utilisateur** : l’appareil doit être affilié à un utilisateur lors de l’installation initiale. Il peut ensuite être autorisé à accéder aux données et aux e-mails de l’entreprise pour le compte de cet utilisateur.  L’**affinité utilisateur** doit être configurée pour les appareils gérés par DEP qui appartiennent à des utilisateurs et doivent utiliser le portail d’entreprise (par exemple, pour installer des applications).
       - **Aucune affinité utilisateur** : l’appareil n’est pas affilié à un utilisateur. Utilisez cette affiliation pour les appareils qui effectuent des tâches sans accéder aux données de l'utilisateur local. Les applications qui nécessitent l’affiliation d’un utilisateur, y compris l’application Portail d’entreprise utilisée pour l’installation des applications métier, ne fonctionneront pas.
 
     Ensuite, activez **Configurez les paramètres DEP (Device Enrollment Program) pour cette stratégie** pour prendre en charge le programme DEP.
@@ -78,16 +78,8 @@ Avant de pouvoir inscrire des appareils iOS d'entreprise à l'aide du programme 
         - **Services de localisation** : si activé, l’Assistant Installation vous invite à spécifier le service pendant l’activation
         - **Restaurer** : si activé, l’Assistant Installation invite à spécifier la sauvegarde iCloud pendant l’activation
         - **ID Apple** : un ID Apple est nécessaire pour télécharger des applications App Store iOS, y compris celles qui sont installées par Intune. Si cette option est activée, iOS demande un ID Apple aux utilisateurs quand Intune tente d’installer une application sans ID.
-        - **Termes et conditions** : si cette option est activée, l’Assistant Installation invite l’utilisateur à accepter les conditions générales d’Apple pendant l’activation
-        - **ID tactile** : si cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation
-        - **Apple Pay** : si cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation
-        - **Zoom** : si cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation
-        - **Siri** : si cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation
-        - **Envoyer les données de diagnostic à Apple** : si cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation
-     -  **Activez la gestion supplémentaire via Apple Configurator** : spécifiez **Interdire** pour empêcher la synchronisation des fichiers avec iTunes ou la gestion via Apple Configurator. Microsoft vous recommande de définir la valeur **Interdire**, d’exporter toute configuration supplémentaire d’Apple Configurator, puis de déployer en tant que profil de configuration iOS personnalisé via Intune, au lieu d’utiliser ce paramètre pour permettre un déploiement manuel avec ou sans un certificat.
-        - **Interdire** : empêche l’appareil de communiquer via USB (désactive l’appariement)
-        - **Autoriser** : autorise l’appareil à communiquer via une connexion USB pour n’importe quel PC ou Mac
-        - **Demander un certificat** : permet un appariement avec un Mac avec un certificat importé dans le profil d’inscription
+        - **Conditions générales** : Quand cette option est activée, l’Assistant Configuration invite les utilisateurs à accepter les conditions générales d’Apple lors de l’activation - **Touch ID** :Quand cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation - **Apple Pay** : Quand cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation - **Zoom** : Quand cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation - **Siri** : Quand cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation - **Envoyer les données de diagnostic à Apple** : Quand cette option est activée , L’Assistant Installation vous invite à spécifier ce service pendant l’activation -  **Activez la gestion supplémentaire via Apple Configurator** : définissez cette option sur **Interdire** pour empêcher la synchronisation des fichiers avec iTunes ou leur gestion via Apple Configurator. Microsoft vous recommande de définir la valeur **Interdire**, d’exporter toute configuration supplémentaire d’Apple Configurator, puis de déployer en tant que profil de configuration iOS personnalisé via Intune, au lieu d’utiliser ce paramètre pour permettre un déploiement manuel avec ou sans un certificat.
+        - **Interdire** : empêche l’appareil de communiquer via une connexion USB (désactive le pairage) - **Autoriser** : autorise l’appareil à communiquer via une connexion USB avec n’importe quel PC ou Mac - **Demander un certificat** : autorise le pairage avec un Mac pour lequel un certificat a été importé dans le profil d’inscription
 
 6.  **Attribuer des appareils DEP pour la gestion** Accédez au [portail du Programme DEP](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise. Accédez à **Programme de déploiement** &gt; **Programme d’inscription d’appareils** &gt; **Gérer les appareils**. Spécifiez la façon dont vous allez **Choisir des appareils**, fournissez les informations relatives aux appareils et spécifiez les détails par appareil : **Numéro de série**, **Numéro de commande**ou **Télécharger un fichier CSV**. Ensuite, choisissez **Affecter au serveur** et sélectionnez le &lt;nom_serveur&gt; spécifié pour Microsoft Intune, puis cliquez sur **OK**.
 
@@ -105,6 +97,6 @@ Avant de pouvoir inscrire des appareils iOS d'entreprise à l'aide du programme 
 [Se préparer à inscrire des appareils](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

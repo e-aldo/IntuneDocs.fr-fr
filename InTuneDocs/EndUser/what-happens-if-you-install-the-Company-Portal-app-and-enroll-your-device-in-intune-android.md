@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ Après avoir installé l’application Portail d’entreprise et inscrit votre a
 
 -   réinitialiser les paramètres de votre téléphone en cas de perte ou de vol.
 
-Lorsque vous ajoutez votre appareil Android, vous autorisez votre administrateur informatique à accéder à l'appareil. Ils peuvent effectuer les opérations suivantes :
+Quand vous inscrivez votre appareil Android, vous autorisez votre administrateur informatique à accéder à l’appareil. Ils peuvent effectuer les opérations suivantes :
 
 -   Réinitialiser votre appareil aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé.
 
@@ -60,11 +60,11 @@ Lorsque vous ajoutez votre appareil Android, vous autorisez votre administrateur
 
     -   Envoyer des mises à jour de l'inventaire des applications de l'entreprise (ces mises à jour ne contiennent pas d'informations personnelles).
 
-Si vous avez des questions ou si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Envoyer les journaux de données de diagnostic à votre administrateur informatique par e-mail
 
-Si vous obtenez une erreur sur votre appareil Android pendant que vous utilisez les applications de votre établissement scolaire ou de votre entreprise ou pendant que vous êtes sur l’application du portail d’entreprise, vous pouvez envoyer des journaux de données de diagnostic pour aider votre administrateur informatique à identifier et corriger l’erreur. Pour inclure tous les détails dans les journaux, ce qui facilitera la tâche de l’administrateur informatique chargé d’identifier le problème, activez la journalisation documentée.
+Si vous obtenez une erreur sur votre appareil Android pendant que vous utilisez les applications de votre établissement scolaire ou de votre entreprise ou pendant que vous êtes sur l’application du portail d’entreprise, vous pouvez envoyer des journaux de données de diagnostic pour aider votre administrateur informatique à identifier et corriger l’erreur. Pour inclure tous les détails dans les journaux, ce qui facilitera la tâche de l’administrateur informatique chargé d’identifier le problème, activez la journalisation documentée. Pour plus d’informations sur la journalisation documentée, [cliquez ici](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 Pour activer la journalisation détaillée :
 
@@ -54,6 +54,6 @@ Pour activer la journalisation détaillée :
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

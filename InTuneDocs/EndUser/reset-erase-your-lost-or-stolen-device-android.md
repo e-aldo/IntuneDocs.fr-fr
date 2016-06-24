@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/20/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,21 +32,21 @@ En cas de perte ou de vol de votre téléphone Android, vous avez la possibilit�
 
 Pour savoir ce qui se passe quand vous réinitialisez votre appareil, consultez [Que se passe-t-il quand vous réinitialisez votre appareil à l’aide du portail d’entreprise](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] Le rétablissement des paramètres d’usine d’un appareil supprime vos données personnelles et professionnelles de l’appareil.
+> [!WARNING] Le rétablissement des paramètres d’usine a pour effet de supprimer de l’appareil vos données personnelles et celles de votre compte professionnel ou scolaire.
 
-1.  Dans votre navigateur, ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com) et connectez-vous à votre compte professionnel.
+1.  Dans votre navigateur, ouvrez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) et connectez-vous à votre compte professionnel ou scolaire.
 
 2.  Appuyez sur **Mes appareils** et sélectionnez le nom de l’appareil perdu ou volé.
 
 3.  Cliquez sur **Réinitialiser** &gt; **Réinitialiser**.
 
-Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demandez à votre administrateur informatique de le faire à votre place. Si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demandez à votre administrateur informatique de le faire à votre place. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
