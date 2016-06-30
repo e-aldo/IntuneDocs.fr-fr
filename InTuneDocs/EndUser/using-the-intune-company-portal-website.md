@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Utilisation du site web Portail d’entreprise Intune | Microsoft Intune
-description:
-keywords:
+title: "Utilisation du site web Portail d’entreprise Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 06/03/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 79e8d7da83997dc9c89b95097ca50493af1f9f6b
+
 
 ---
 
@@ -42,7 +35,7 @@ Vous pouvez utiliser le site web Portail d’entreprise pour :
 
 -   [Synchroniser votre appareil manuellement pour accélérer les installations lentes d’applications](sync-your-device-manually-cpwebsite.md)
 
--   Rechercher les coordonnées de votre administrateur informatique, si celui-ci les a configurées Si vous ne les trouvez pas, regardez si elles ne figurent pas sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+-   Rechercher les coordonnées de votre administrateur informatique, si celui-ci les a configurées 
 
 -   Afficher les détails de votre appareil, notamment s’il est conforme aux stratégies de votre entreprise ou établissement scolaire
 
@@ -55,6 +48,7 @@ Sur le **site web Portail d’entreprise** , vous pouvez faire à peu près les 
 - [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 
