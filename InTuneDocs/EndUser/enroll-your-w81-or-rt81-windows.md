@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune | Microsoft Intune
-description:
-keywords:
+title: "Inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 6607ea6c355e0ec767e514ac0097789b83c5d8c7
+
 
 ---
 
@@ -67,13 +61,14 @@ Nous vous recommandons aussi d'installer l'application Portail d'entreprise. Ell
 
 4.  Appuyez sur **Installer** ou **Gratuit**. L'option affichée dépend de la façon dont votre société a configuré l'application.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Inscrire un appareil Windows dans Intune](enroll-your-device-in-intune-windows.md)</br>
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

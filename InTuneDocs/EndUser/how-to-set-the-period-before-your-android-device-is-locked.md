@@ -13,6 +13,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 00fca8673ff1b52535fb6c06a02b38b7879f204f
 
@@ -33,6 +34,6 @@ Pour vous reconnecter à votre travail, vous devez définir le délai d'expirati
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

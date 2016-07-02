@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Étapes suivantes à la fin de la version d’évaluation d’Intune | Microsoft Intune
-description:
-keywords:
+title: "Étapes suivantes à la fin de la version d’évaluation d’Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1a5d9e44ae524f9f8ca3cfe9912e6dae2d1a7d49
+ms.openlocfilehash: 5ae133583311963d5a3b8c55d8caf43453b3aedf
+
 
 ---
 
@@ -39,6 +33,7 @@ Vous pouvez convertir votre version d’évaluation gratuite d’Intune en abonn
 -   **Programme d’abonnement en ligne** (&lt;250 utilisateurs) : programme de [licence en volume Online Services](http://www.microsoft.com/licensing/online-services/default.aspx) spécifiquement conçu pour les organisations de moins de 250 utilisateurs. Utilisez ce programme pour vous abonner aux services Intune, les gérer et les déployer.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
