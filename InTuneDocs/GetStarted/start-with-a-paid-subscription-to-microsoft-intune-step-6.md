@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Créer des stratégies et publier une application | Microsoft Intune
-description:
-keywords:
+title: "Créer des stratégies et publier une application | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+
 
 ---
 
@@ -63,7 +57,8 @@ Votre stratégie s’affiche dans la liste des stratégies de configuration et a
 
     ![admin-console-apps-workspace](./media/apps.png)
 
-    > [!NOTE] Quand vous démarrez l’**Éditeur de logiciel Intune** pour la première fois, un bref délai se produit pendant l’installation de l’application.
+    > [!NOTE]
+    > Quand vous démarrez l' **Éditeur de logiciel Intune** pour la première fois, un bref délai se produit pendant l'installation de l'application.
 
 2.  Lisez l’avertissement de sécurité, puis choisissez **Exécuter**.
 
@@ -114,6 +109,7 @@ Félicitations ! Vous venez d’effectuer l’étape 6 du *guide de démarrage
 >[&larr;**Organiser les utilisateurs et les appareils**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Personnaliser le portail d’entreprise** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

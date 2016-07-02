@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 ms.reviewer: arnab
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
 ms.openlocfilehash: 6e887d226228d073dc136b50ba9320ada996a6cd
 
@@ -45,6 +46,6 @@ Pour résoudre ce problème et obtenir le certificat obligatoire :
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

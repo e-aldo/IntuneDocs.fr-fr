@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Comprendre vos appareils grâce à l’inventaire | Microsoft Intune
-description:
-keywords:
+title: "Comprendre vos appareils grâce à l’inventaire | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 55b99e326e4f22aee62b207eb2e976a8d52e70c3
+
 
 ---
 
@@ -66,7 +60,8 @@ Pour afficher l’inventaire recueilli par les appareils mobiles, exécutez les 
 |**Chiffrement activé**|Tous les appareils|
 
 ## Qu’est-ce qui est collecté auprès des PC Windows ?
-> [!IMPORTANT] Cette section s’applique uniquement aux ordinateurs Windows qui exécutent le logiciel client Intune pour PC Windows.
+> [!IMPORTANT]
+> Cette section s’applique uniquement aux ordinateurs Windows qui exécutent le logiciel client Intune Windows PC.
 
 Pour afficher l’inventaire recueilli par les ordinateurs Windows, exécutez les [rapports d’inventaire des ordinateurs](understand-microsoft-intune-operations-by-using-reports.md). Intune collecte l’inventaire suivant auprès des PC Windows :
 
@@ -118,6 +113,7 @@ Pour afficher l’inventaire recueilli par les ordinateurs Windows, exécutez le
 -->
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

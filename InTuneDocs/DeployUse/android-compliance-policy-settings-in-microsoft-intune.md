@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Paramètres de stratégie de conformité pour les appareils Android | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de stratégie de conformité pour les appareils Android | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+
 
 ---
 
@@ -30,7 +23,7 @@ ms.suite: ems
 
 Les paramètres de stratégie décrits dans cette rubrique s’appliquent aux appareils exécutant Android 4.0 et versions ultérieures ou Samsung KNOX 4.0 et versions ultérieures.
 
-Si vous recherchez des informations sur d’autres plateformes, sélectionnez l’un des éléments suivants :
+Si vous recherchez des informations sur d’autres plateformes, sélectionnez un des éléments suivants :
 > [!div class="op_single_selector"]
 - [Paramètres de stratégie de conformité pour les appareils iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Paramètres de stratégie de conformité pour les appareils Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -73,6 +66,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
 - **Version maximale autorisée du système d’exploitation :** quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur informatique. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
