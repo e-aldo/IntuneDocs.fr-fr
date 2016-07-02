@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Recevoir des alertes | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e929a95d95b71e22d46e124f1a423af7046b0539
+ms.openlocfilehash: f1dd166b7b1278003ac8785b8be07c29396dfe8c
+
 
 ---
 
@@ -83,12 +77,14 @@ Les alertes Intune restent actives tant que :
 
 -   les 45 jours suivant la génération de l'alerte ne sont pas écoulés.
 
-> [!TIP] Si une même alerte est générée par des appareils qui exécutent des systèmes d’exploitation différents, vous risquez de voir plusieurs versions de la même alerte dans la liste des alertes.
+> [!TIP]
+> Si une même alerte est générée par des appareils qui exécutent des systèmes d'exploitation différents, vous risquez de voir apparaître plusieurs versions de la même alerte dans la liste des alertes.
 
 ### Voir aussi
 [Analyse et rapports avec Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
