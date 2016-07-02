@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Se préparer à inscrire des appareils | Microsoft Intune
-description:
-keywords:
+title: "Se préparer à inscrire des appareils | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
+ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+
 
 ---
 
@@ -48,7 +42,8 @@ L’autorité de gestion d’appareils mobiles définit le service de gestion ha
 
 Le portail d’entreprise Intune permet aux utilisateurs d’accéder aux données de l’entreprise et d’effectuer des tâches courantes, notamment l’inscription d’appareils, l’installation d’applications et d’accéder à des informations d’assistance fournies par le département informatique.
 
-> [!TIP]Quand vous personnalisez le portail d’entreprise, les configurations s’appliquent à la fois au site web du portail d’entreprise et aux applications Portail d’entreprise.
+> [!TIP]
+> Quand vous personnalisez le Portail d’entreprise, les configurations s’appliquent au site web du Portail d’entreprise et aux applications du Portail d’entreprise.
 
 La personnalisation du Portail d’entreprise permet de fournir une expérience familière et utile à vos utilisateurs finaux. Pour ce faire, connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) comme administrateur du service ou client, choisissez **Administration** &gt; **Portail d’entreprise** et configurez les paramètres du portail d’entreprise.
 
@@ -113,6 +108,7 @@ Vous pouvez également effectuer les opérations suivantes :
  - [Indiquer les appareils d’entreprise avec des numéros IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) pour mieux inscrire les appareils et cibler la stratégie
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
