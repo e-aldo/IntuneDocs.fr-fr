@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 09e97df0-d032-48ff-ab8a-8c2c4ec29897
 ms.reviewer: chrisgre
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 4b83e426e440928fea5308223764716a4ee77456
 
@@ -26,6 +27,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 
