@@ -1,27 +1,19 @@
 ---
-# required metadata
-
-title: Votre abonnement Microsoft Intune ou Enterprise Mobility payé peut inclure une licence pour utiliser certains logiciels téléchargeables | Microsoft Intune
-description:
-keywords:
+title: "Votre abonnement Microsoft Intune ou Enterprise Mobility payé peut inclure une licence pour utiliser certains logiciels téléchargeables | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/08/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 9d031fa7-9c07-48c5-b915-6525aea54870
+translationtype: Human Translation
+ms.sourcegitcommit: 4b4371fd7c505db75e18505160de88456fceece2
+ms.openlocfilehash: de8d822c9df7aa0235a998a64b412afd6fc48bd5
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: amyro
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -47,6 +39,7 @@ Si vous ne savez pas pour quels logiciels vous êtes éligible, contactez votre 
 Si vous avez installé une version d’évaluation, vous pouvez obtenir des versions d’évaluation de ces services en vous rendant sur le [Centre d’évaluation TechNet](https://www.microsoft.com/evalcenter/try).
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
