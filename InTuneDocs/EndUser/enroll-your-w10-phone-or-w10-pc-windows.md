@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune | Microsoft Intune
-description:
-keywords:
+title: "Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 543f0acd6fb3691ba31e9da6fec49b3f30f67613
+
 
 ---
 
@@ -65,7 +59,7 @@ Nous vous recommandons aussi d'installer l'application Portail d'entreprise. Ell
 
 4.  Appuyez sur **Installer** ou **Gratuit**. L'option affichée dépend de la façon dont votre société a configuré l'application.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Inscrire un appareil Windows dans Intune](enroll-your-device-in-intune-windows.md)</br>
@@ -73,6 +67,7 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

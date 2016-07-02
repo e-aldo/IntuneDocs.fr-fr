@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: Inscrire un appareil Mac OS X dans Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: b85d2ac62ca313f0740c68ff6d85918ff7bcd55a
+
 
 ---
 
@@ -53,11 +48,12 @@ Pour inscrire un appareil Mac OS X
 
     ![management-profile-verified](./media/4-macosx-enroll-done.png) 
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
