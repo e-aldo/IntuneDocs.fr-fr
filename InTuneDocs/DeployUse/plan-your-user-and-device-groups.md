@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Planifier vos groupes d’utilisateurs et d’appareils | Microsoft Intune
-description:
-keywords:
+title: "Planifier vos groupes d’utilisateurs et d’appareils | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Vérifiez si tout est correct, puis cliquez sur **Terminer** pour terminer la cr
 
 Dans notre exemple, nous avons également créé un groupe Middle East and Asia, MEA.
 
-> [!NOTE] Si l’appartenance au groupe n’est pas remplie d’après l’appartenance au groupe de sécurité, vérifiez que vous avez affecté des licences Intune à ces membres.
+> [!NOTE]
+> Si l’appartenance au groupe n’est pas remplie d’après l’appartenance au groupe de sécurité, vérifiez que vous avez affecté des licences Intune à ces membres.
 
 ### Groupes pour du matériel spécifique
 Si votre organisation impose d’avoir des stratégies applicables à des types de matériel spécifiques, vous pouvez créer des groupes sur la base de cette exigence. Vous pouvez les baser sur des groupes spécifiques que vous avez déjà créés dans votre AD local et les synchroniser sur Azure AD. Vous pouvez également les créer directement dans Azure AD. Dans cet exemple, nous utilisons **US Users Group** comme parent du groupe **Laptop Users**.
@@ -174,7 +169,8 @@ Si votre organisation impose d’avoir des stratégies applicables à des systè
 
 En suivant la même méthode que dans les exemples précédents, nous pouvons créer des groupes basés sur les utilisateurs <!--devices?--> avec des plateformes de système d’exploitation spécifiques.
 
-> [!NOTE] Si certains de vos utilisateurs utilisent plusieurs systèmes d’exploitation/plateformes mobiles et que vous n’avez pas de moyen automatisé pour classer les utilisateurs en tant qu’utilisateurs Android, iOS ou Windows, vous pouvez appliquer des stratégies au niveau de l’appareil pour disposer d’une meilleure flexibilité dans l’application de stratégies propres au système d’exploitation.
+> [!NOTE]
+> Si certains de vos utilisateurs utilisent plusieurs systèmes d’exploitation/plateformes mobiles et que vous n’avez pas de moyen automatisé pour classer les utilisateurs en tant qu’utilisateurs Android, iOS ou Windows, vous pouvez appliquer des stratégies au niveau de l’appareil pour disposer d’une meilleure flexibilité dans l’application de stratégies propres au système d’exploitation.
 >
 > Vous ne pouvez pas approvisionner des groupes de manière dynamique en fonction du système d’exploitation de l’appareil. Vous devez pour cela utiliser des groupes de sécurité AD ou AAD.
 
@@ -218,6 +214,7 @@ Le fait de nommer les stratégies de cette façon vous permet d’identifier rap
 [Créer des groupes](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

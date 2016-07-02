@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ? | Microsoft Intune
-description:
-keywords:
+title: "Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ? | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
+ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+
 
 ---
 
@@ -43,7 +37,8 @@ Pour plus d’informations sur ce processus, utilisez le lien répertorié dans 
 
 -   Le logiciel Intune Endpoint Protection est supprimé de votre ordinateur. Si votre ordinateur dispose d'un autre logiciel antivirus et qu'il est désactivé, ce logiciel peut être réactivé après la suppression d’Intune Endpoint Protection. Vous devez vérifier votre ordinateur après l'avoir supprimé du portail d'entreprise.
 
-    > [!IMPORTANT] Si l’autre logiciel de protection antivirus n’est pas réactivé ou si aucun autre logiciel antivirus n’est installé, votre ordinateur peut être vulnérable aux virus et aux logiciels malveillants.
+    > [!IMPORTANT]
+    > Si l'autre logiciel de protection antivirus n'est pas réactivé ou si aucun autre logiciel antivirus n'est installé, votre ordinateur peut être vulnérable aux virus et aux logiciels malveillants.
 
 -   Tous les paramètres qui ont été modifiés sur votre appareil quand vous l’avez ajouté, par exemple la désactivation de l’appareil photo, ne s’appliquent plus.
 
@@ -97,6 +92,7 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 ### Voir aussi
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
