@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Ajouter des utilisateurs à votre version d’évaluation de 30 jours de Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Ajouter des utilisateurs à votre version d’évaluation de 30 jours de Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6cb729533107d511fa0cc863ec6ab842e7624982
+ms.openlocfilehash: 15e641f4f5f60c4a3eb3a7b09cab8cb9ef788cba
+
 
 ---
 
@@ -84,6 +78,7 @@ Félicitations ! Vous venez d’effectuer l’étape 2 de la procédure pas à
 >[&larr;**S’inscrire à une version d’évaluation**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Créer des groupes** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
