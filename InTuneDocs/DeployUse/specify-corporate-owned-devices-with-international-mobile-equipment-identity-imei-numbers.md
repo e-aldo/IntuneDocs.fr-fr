@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Spécifier des appareils d’entreprise avec des numéros IMEI (International Mobile Equipment Identity) | Microsoft Intune
-description:
-keywords:
+title: "Spécifier des appareils d’entreprise avec des numéros IMEI (International Mobile Equipment Identity) | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
+ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+
 
 ---
 
@@ -39,8 +32,8 @@ Microsoft Intune permet aux administrateurs d’importer les numéros (IMEI) pou
         Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **Ajouter manuellement les détails des appareils** : entrez le numéro IMEI et les détails de cinq appareils au maximum.
@@ -54,6 +47,7 @@ Microsoft Intune permet aux administrateurs d’importer les numéros (IMEI) pou
 Quand l’appareil avec ce numéro IMEI s’inscrit, généralement quand un utilisateur installe l’application Portail d’entreprise et termine le processus d’inscription, l’appareil est étiqueté comme appareil d’entreprise et apparaît inscrit dans le groupe **Appareils IMEI**.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 
