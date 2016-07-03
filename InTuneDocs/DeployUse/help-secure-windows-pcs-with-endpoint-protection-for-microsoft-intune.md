@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Endpoint Protection pour PC Windows| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
@@ -52,7 +46,8 @@ Pour passer de votre application de protection de point de terminaison actuelle 
 
     -   Supprimez manuellement l'application tierce de protection de point de terminaison.
 
-> [!NOTE] Intune ne désinstalle pas automatiquement les applications tierces de protection de point de terminaison.
+> [!NOTE]
+> Intune ne désinstalle pas automatiquement les applications tierces de protection de point de terminaison.
 
 ## Comment configurer Microsoft Intune Endpoint Protection
 Procédez comme suit pour configurer Endpoint Protection pour Microsoft Intune.
@@ -162,7 +157,8 @@ Vous pouvez contrôler l'état des logiciels malveillants sur vos ordinateurs en
   - **Afficher les propriétés** : ouvre une page qui contient plus d’informations sur le programme malveillant sélectionné.
   - **En savoir plus sur ce programme malveillant** : ouvre une rubrique du Centre de protection Microsoft contre les programmes malveillants qui contient plus d’informations sur le logiciel malveillant.
 
-> [!IMPORTANT] L’espace de travail **Protection** n’est pas affiché dans la console d’administration tant que vous n’avez pas installé le client et que vous ne gérez pas au moins un ordinateur client.
+> [!IMPORTANT]
+> L’espace de travail **Protection** n’est pas affiché dans la console Administrateur tant que vous n’y avez pas installé le client et que vous n’y gérez pas au moins un ordinateur client.
 
   ![Surveiller Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
@@ -181,7 +177,7 @@ Intune peut effectuer une analyse complète ou rapide des programmes malveillant
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), accédez à **Groupes** > **Présentation** > **Tous les appareils** > **Tous les ordinateurs**, puis sélectionnez l’ordinateur que vous souhaitez cibler.
 
 2. Cliquez sur la liste déroulante **Tâches à distance**, puis sélectionnez la tâche. La tâche s’exécute sur l’ordinateur distant.
-![Exécuter une analyse à distance des programmes malveillants](../media/ep_sa_malwarescan.png)
+
 
 
 
@@ -192,6 +188,7 @@ Pour obtenir de l’aide et une assistance, consultez [Résoudre les problèmes 
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 

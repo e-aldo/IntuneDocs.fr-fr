@@ -1,26 +1,21 @@
 ---
-title: Configurer l’infrastructure de certificat pour SCEP | Microsoft Intune
-description:
-keywords:
+title: "Configurer l’infrastructure de certificat pour SCEP | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0ca06fa26127935e08f35006730dd367fb8f6669
+ms.openlocfilehash: 942bdc4e1629a9d7e16d0994f27dab4424670a4f
+
 ---
 # Configurer l’infrastructure de certificat pour SCEP
 Cette rubrique décrit l’infrastructure dont vous avez besoin pour créer et déployer des profils de certificat.
@@ -42,7 +37,7 @@ I
  > [!NOTE]           
 > -    Le serveur qui héberge le proxy d'application web [doit installer une mise à jour](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) qui permet la prise en charge des longues URL utilisées par le service d'inscription d'appareil réseau. Cette mise à jour est incluse dans le [correctif cumulatif de décembre 2014](http://support.microsoft.com/kb/3013769), ou individuellement à partir de l'article [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  En outre, le serveur qui héberge le proxy d’application web doit avoir un certificat SSL qui correspond au nom publié sur les clients externes, et approuver le certificat SSL utilisé sur le serveur NDES. Ces certificats permettent au serveur du proxy d'application web de mettre fin à la connexion SSL à partir des clients et de créer une nouvelle connexion SSL au serveur NDES.
-Pour plus d’informations sur les certificats du proxy d’application web, consultez la section **Planifier des certificats** dans [Planification de publication des applications à l’aide du proxy d’application web](https://technet.microsoft.com/library/dn383650.aspx) Pour obtenir des informations générales sur les serveurs proxy d’application web, consultez [Utilisation d’un proxy d’application web](http://technet.microsoft.com/library/dn584113.aspx).|
+    Pour plus d’informations sur les certificats du proxy d’application web, consultez la section **Planifier des certificats** dans [Planification de publication des applications à l’aide du proxy d’application web](https://technet.microsoft.com/library/dn383650.aspx) Pour obtenir des informations générales sur les serveurs proxy d’application web, consultez [Utilisation d’un proxy d’application web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 ### Conditions requises en matière de réseau
 
@@ -107,15 +102,18 @@ Dans cette tâche, vous allez :
 
     -   Sous l'onglet **Extensions** , vérifiez que **Description des stratégies d'application** inclut **Authentification du client**.
 
-        > [!IMPORTANT] Pour les modèles de certificats iOS et Mac OS X, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
+        > [!IMPORTANT]
+        > Pour les modèles de certificats iOS et Mac OS XOS, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
 
     -   Sous l’onglet **Sécurité** , ajoutez le compte de service NDES et attribuez-lui les autorisations **Inscription** sur le modèle. Les administrateurs Intune qui créent des profils SCEP exigent des droits **en lecture** afin de pouvoir accéder au modèle lors de la création des profils SCEP.
     
-    > [!NOTE] Pour révoquer des certificats, le compte de service NDES a besoin des droits *Émettre et gérer des certificats* pour chaque modèle de certificat utilisé par un profil de certificat.
+    > [!NOTE]
+    > Pour révoquer des certificats, le compte de service NDES a besoin de droits *Émettre et gérer des certificats* pour chaque modèle de certificat utilisé par un profil de certificat.
 
 3.  Examinez la **Période de validité** sous l'onglet **Général** du modèle. Par défaut, Intune utilise la valeur configurée dans le modèle. Toutefois, vous pouvez configurer l’autorité de certification pour permettre au demandeur de spécifier une valeur différente, que vous pouvez alors définir à partir de la console d’administration Intune. Si vous souhaitez toujours utiliser la valeur du modèle, ignorez le reste de l'étape.
 
-    > [!IMPORTANT] Les plateformes iOS et Mac OS X utilisent toujours la valeur définie dans le modèle, indépendamment des autres configurations que vous effectuez.
+    > [!IMPORTANT]
+    > Les plateforme iOS et Mac OS X utilisent toujours la valeur définie dans le modèle, indépendamment des autres configurations que vous effectuez.
 
 Voici les captures d’écran d’un exemple de configuration de modèle.
 
@@ -260,7 +258,8 @@ Dans cette tâche, vous allez :
 
     3.  Pour **Certificat SSL**, spécifiez le certificat d'authentification serveur.
 
-        > [!NOTE] Si le serveur NDES utilise un nom interne et un nom externe pour une même adresse réseau, le certificat d’authentification serveur doit avoir un **Nom de l’objet** avec un nom de serveur public externe et un **Autre nom de l’objet** incluant le nom du serveur interne.
+        > [!NOTE]
+        > Si le serveur NDES utilise un nom interne et un nom externe pour une même adresse réseau, le certificat d'authentification serveur doit avoir un **Nom de l'objet** avec un nom de serveur public externe et un **Autre nom de l'objet** incluant le nom du serveur interne.
 
 2.  Sur votre serveur NDES, demandez et installez un certificat d' **authentification client** auprès de votre autorité de certification interne ou d'une autorité de certification publique. Cela peut être le même certificat que le certificat d'authentification serveur si ce certificat possède les deux fonctions.
 
@@ -322,7 +321,8 @@ télécharger, installer et configurer Certificate Connector sur le serveur NDE
 
 4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
 
-    > [!TIP] Si vous fermez l’Assistant avant de lancer l’interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
+    > [!TIP]
+    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
     >
     > **&lt;chemin_installation&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -346,6 +346,7 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
 Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configurer les profils de certificat](Configure-Intune-certificate-profiles.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
