@@ -1,27 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\media\android_per_app_vpn_oma_uri.PNG](https://github.com/Microsoft/IntuneDocs-pr/blob/d5c48a4cead6250864f5b10444d99d062441bd99/InTuneDocs/media/android_per_app_vpn_oma_uri.PNG) | InSyncHandedBackSuccess | [Details](#3d897adfae78fa4be7946051155da197121b1213716)
 
 ## Item Details
-##### <a name='3d897adfae78fa4be7946051155da197121b1213716'></a> Source: [InTuneDocs\media\android_per_app_vpn_oma_uri.PNG](https://github.com/Microsoft/IntuneDocs-pr/blob/d5c48a4cead6250864f5b10444d99d062441bd99/InTuneDocs/media/android_per_app_vpn_oma_uri.PNG)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\media\android_per_app_vpn_oma_uri.PNG](https://github.com/Microsoft/IntuneDocs-pr.fr-fr/blob/eb905dc67623248b51ee2a9080e814928096040e/InTuneDocs/media/android_per_app_vpn_oma_uri.PNG)
-* Handoff File: [3d897adfae78fa4be7946051155da197121b1213.PNG](https://github.com/Microsoft/EM.handoff/blob/566bad5e9b31bef82bd806a48887af7f9268fe2f/ol-handoff/Microsoft/IntuneDocs-pr.fr-fr/master/3d897adfae78fa4be7946051155da197121b1213.PNG)
-* Handoff Datetime: 2016-05-22 17:07:39
-* Handoff Reason: IsDependency
-* Dependency From: InTuneDocs\DeployUse\per-app-vpn-for-android-pulse-secure.md
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [3d897adfae78fa4be7946051155da197121b1213.PNG](https://github.com/Microsoft/EM.handback/blob/c4704514adf7fb225cb085aad27454a07cc40347/ol-handback/Microsoft/IntuneDocs-pr.fr-fr/master/3d897adfae78fa4be7946051155da197121b1213.PNG)
-* Handback Datetime: 2016-07-05 03:13:51
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
