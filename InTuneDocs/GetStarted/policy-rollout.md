@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Déploiement de stratégies | Microsoft Intune
-description:
-keywords:
+title: "Déploiement de stratégies | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # Déploiement de stratégies
 Cette rubrique fournit des recommandations spécifiques pour un déploiement échelonné de stratégies dans Microsoft Intune. Cette approche est valable pour les premières stratégies que vous appliquez dans un nouveau déploiement Intune ou pour des stratégies que vous ajoutez à un déploiement existant.
 
-Pour obtenir des informations générales sur les phases de déploiement, consultez les [phases de déploiement Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md).
+Pour obtenir des informations générales sur les phases de déploiement, consultez [Phases de déploiement Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### Phases de déploiement d’une stratégie
 Les phases de déploiement d’une stratégie sont :
@@ -63,7 +57,7 @@ Durant la phase de preuve de concept, vous devez tester votre déploiement de st
 
 -   Faites participer votre personnel de support technique à cette phase pour qu’il connaisse les problèmes qui peuvent survenir pendant le déploiement pilote et de production. Vous trouverez des informations de dépannage dans [Résoudre les problèmes de stratégie dans Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
--   À ce stade du processus, vous devez développer des plans de communication pour les utilisateurs participant aux phases de pilote et de production. Au minimum, le plan doit préciser quel appareil est modifié et quand, l’objectif métier du déploiement, et que faire si les utilisateurs ou le personnel informatique rencontrent des problèmes (à la fois des informations d’auto-assistance et de contact du support technique).
+-   À ce stade du processus, vous devez développer des plans de communication pour les utilisateurs pilotes et de production. Au minimum, le plan doit préciser quel appareil est modifié et quand, l’objectif métier du déploiement, et que faire si les utilisateurs ou le personnel informatique rencontrent des problèmes (à la fois des informations d’auto-assistance et de contact du support technique).
 
 ## Pilote
 Pendant la phase pilote, vous allez déployer la stratégie dans un petit groupe test d’utilisateurs et d’appareils. Vous devez tenir compte de certains points pour le pilote de la stratégie dans Intune :
@@ -102,6 +96,7 @@ Pendant la phase pilote, vous allez déployer la stratégie dans un petit groupe
 [Résoudre les problèmes de stratégie dans Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,36 +1,28 @@
 ---
-# required metadata
-
 title: Configurer les profils de certificat | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
+ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+
 
 ---
 
 # Configurer les profils de certificats Intune
-Une fois l’infrastructure et les certificats configurés comme décrit dans [Configurer l’infrastructure de certificat](configure-certificate-infrastructure.md), vous pouvez configurer les profils de certificat :
+Une fois l’infrastructure et les certificats configurés comme décrit dans [Configurer l’infrastructure de certificat pour SCEP](configure-certificate-infrastructure-for-scep.md) ou [Configurer l’infrastructure de certificat pour PFX](configure-certificate-infrastructure-for-pfx.md), vous pouvez configurer les profils de certificat :
 
-**Tâche 1** : exporter le certificat d’autorité de certification racine approuvée
-**Tâche 2** : créer des profils de certificat d’autorité de certification approuvée
-**Tâche 3** : l’une ou l’autre des opérations suivantes :
+**Tâche 1** : exporter le certificat d’autorité de certification racine approuvé **Tâche 2** : créer des profils de certificat d’autorité de certification approuvé **Tâche 3** : choisir entre :
 
 Créer des profils de certificat SCEP
 
@@ -74,7 +66,7 @@ Après avoir créé un profil de certificat d'autorité de certification approuv
 
 ##### Pour créer un profil de certificat SCEP
 
-1.  Ouvrez la [console d’administration Intune](https://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Ajouter une stratégie**.
+1.  Ouvrez la [console d’administration Intune](https://manage.microsoft.com), puis cliquez sur **Stratégie** &gt; **Ajouter une stratégie**.
 
 2.  Configurez l'un des types de stratégies suivants :
 
@@ -98,7 +90,7 @@ La nouvelle stratégie s'affiche dans l'espace de travail **Stratégie** et peut
 
 ##### Pour créer un profil de certificat .PFX
 
-1.  Ouvrez la [console d’administration Intune](https://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Ajouter une stratégie**.
+1.  Ouvrez la [console d’administration Intune](https://manage.microsoft.com), puis cliquez sur **Stratégie** &gt; **Ajouter une stratégie**.
 
 2.  Configurez l'un des types de stratégies suivants :
 
@@ -134,13 +126,13 @@ Les profils de certificat s'installent uniquement sur les appareils applicables,
 
 Vous déployez des profils de certificat de la même façon que vous déployez une autre stratégie pour Intune :
 
-1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
+1.  Dans l’espace de travail **Stratégie** , sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
 
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
 
-    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes vers lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
+    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
 
-    -   **Pour fermer la boîte de dialogue sans la déployer** : cliquez sur **Annuler**.
+    -   **Pour fermer la boîte de dialogue sans la déployer**, cliquez sur **Annuler**.
 
 Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’autres informations sur le déploiement dans la partie inférieure de la liste de stratégies.
 ###  Étapes suivantes
@@ -152,6 +144,7 @@ Vous pouvez maintenant utiliser des certificats pour aider à sécuriser les pro
 -  [Connexions VPN dans Microsoft Intune](vpn-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

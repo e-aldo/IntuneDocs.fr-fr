@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Options et fonctionnalités supplémentaires pour les abonnements à la version d’évaluation d’Intune | Microsoft Intune
-description:
-keywords:
+title: "Options et fonctionnalités supplémentaires pour les abonnements à la version d’évaluation d’Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: 0574891a021d43f54ef78ded20d6cf19c18eb25b
+
 
 ---
 
@@ -48,8 +42,8 @@ Intune possède un large éventail de fonctionnalités au-delà de celles prése
 -   **Contrôle de l'accès aux ressources d'entreprise.** Vous pouvez déployer des certificats, des profils de messagerie, des profils VPN et des profils Wi-Fi sur des appareils mobiles pour en faciliter la configuration rapide. Pour plus d’informations, consultez [Activer l’accès aux ressources de l’entreprise avec Microsoft Intune](/Intune/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
 Pour découvrir les fonctionnalités complètes d’Intune, consultez :
-- [Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md)
-- [Fonctionnalités de gestion des PC Windows dans Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
+- [Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+- [Fonctionnalités de gestion des PC Windows dans Microsoft Intune](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)
 
 Pour en savoir plus sur les dernières fonctionnalités introduites dans Intune, consultez [Nouveautés de Microsoft Intune](/Intune/Deploy-Use/whats-new-in-microsoft-intune).
 
@@ -63,6 +57,7 @@ Félicitations ! Vous venez d’effectuer la procédure pas à pas de la *versi
 >[&larr; **Inscrire des appareils**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)     [**Étapes suivantes** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

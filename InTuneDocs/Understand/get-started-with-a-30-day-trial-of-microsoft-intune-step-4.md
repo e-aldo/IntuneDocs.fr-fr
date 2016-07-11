@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Créer des stratégies et publier une application pour les utilisateurs de la version d’évaluation | Microsoft Intune
-description:
-keywords:
+title: "Créer des stratégies et publier une application pour les utilisateurs de la version d’évaluation | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+
 
 ---
 
@@ -37,13 +31,13 @@ Dans ces étapes, vous allez configurer une stratégie de configuration d'appare
 
 ## Créer et déployer une stratégie de configuration d'appareil mobile
 
-1.  Ouvrez la [console d’administration Intune](https://manage.microsoft.com/).
+1.  Ouvrez la [console d'administration Intune](https://manage.microsoft.com/).
 
 2.  Dans le volet de gauche, cliquez sur l’icône **Stratégie**.
 
-3.  Dans la liste des **Tâches** de la page **Vue d’ensemble de la stratégie**, cliquez sur **Ajouter une stratégie**.
+3.  Dans la liste **Tâches** de la page **Vue d’ensemble de la stratégie**, choisissez **Ajouter une stratégie**.
 
-4.  Dans la liste des stratégies, développez la plateforme pour laquelle vous voulez créer une stratégie, sélectionnez **Configuration générale**, choisissez **Créer et déployer une stratégie avec les paramètres recommandés**, puis cliquez sur **Créer une stratégie**..
+4.  Dans la liste des stratégies, développez la plateforme pour laquelle vous voulez créer une stratégie, sélectionnez **Configuration générale**, choisissez **Créer et déployer une stratégie avec les paramètres recommandés**, puis cliquez sur **Créer une stratégie**.
 
 5.  Quand vous êtes invité à **Sélectionner les groupes sur lesquels vous souhaitez déployer cette stratégie**, sélectionnez **Utilisateurs de mon évaluation** dans la liste, puis cliquez sur **Ajouter** &gt; **OK**.
 
@@ -56,9 +50,9 @@ Votre stratégie s'affiche dans la liste des stratégies de configuration et a �
     > [!NOTE]
     > Quand vous démarrez l' **Éditeur de logiciel Intune** pour la première fois, un bref délai se produit pendant l'installation de l'application.
 
-2.  Examinez l’avertissement de sécurité, puis cliquez sur **Exécuter**.
+2.  Lisez l’avertissement de sécurité, puis choisissez **Exécuter**.
 
-3.  Dans la page **Avant de commencer**, cliquez sur **Suivant**.
+3.  Dans la page **Avant de commencer**, choisissez **Suivant**.
 
 4.  Dans la page **Installation du logiciel** dans **Spécifier comment ce logiciel doit être mis à disposition des appareils**, sélectionnez **Lien externe**.
 
@@ -86,13 +80,13 @@ Votre stratégie s'affiche dans la liste des stratégies de configuration et a �
 
 7.  Dans la page **Résumé**, vérifiez les informations du logiciel, puis cliquez sur **Télécharger**. Cliquez sur **Fermer** pour quitter l’Assistant.
 
-8.  Dans la [console d’administration Intune](https://manage.microsoft.com/), cliquez sur **Applications** &gt; **Applications** &gt; **Skype** &gt; **Gérer le déploiement**.
+8.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Applications** &gt; **Applications** &gt; **Skype** &gt; **Gérer le déploiement**.
 
 9. Dans la page **Sélectionner des groupes**, sélectionnez **Utilisateurs de mon évaluation** pour déployer le logiciel vers ce groupe d’utilisateurs, puis cliquez sur **Ajouter** &gt; **Suivant**.
 
 10. Dans la page **Action de déploiement** , sélectionnez **Installation disponible** dans la colonne **Approbation** pour chaque groupe.
 
-11. Cliquez sur **Terminer**.
+11. Choisissez **Terminer**.
 
 L’application Skype peut maintenant être installée sur des appareils mobiles à partir du portail d’entreprise, mais vous devez d’abord installer le logiciel Intune sur les PC et les appareils mobiles.
 
@@ -104,6 +98,7 @@ Félicitations ! Vous venez d’effectuer l’étape 4 de la procédure pas à
 >[&larr; **Créer des groupes**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Inscrire des appareils** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

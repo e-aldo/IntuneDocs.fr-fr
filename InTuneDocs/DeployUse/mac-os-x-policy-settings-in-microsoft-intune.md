@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Paramètres de la stratégie Mac OS X | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de la stratégie Mac OS X | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+
 
 ---
 
@@ -67,7 +60,8 @@ Dans la liste **Applications conformes &amp; non conformes pour Mac OS X**, ac
 |**Importer des applications**|Importe une liste d'applications que vous avez spécifiée dans un fichier de valeurs séparées par des virgules. Utilisez le format, le nom de l’application, l’éditeur et l’ID d’offre groupée dans le fichier.|
 |**Éditer**|Vous permet de modifier le nom, l’éditeur et l’ID d’offre groupée de l’application sélectionnée.|
 |**Supprimer**|Supprime l'application sélectionnée dans la liste.|
-> [!TIP] Pour plus d’informations sur les rapports Intune, consultez [Présentation des opérations Microsoft Intune à l’aide de rapports](understand-microsoft-intune-operations-by-using-reports.md).
+> [!TIP]
+> Pour plus d’informations sur les rapports Intune, consultez [Présentation des opérations Microsoft Intune à l’aide de rapports](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Quand un appareil Mac OS X est en mode veille, il n’est pas possible de remettre ou d’inventorier les stratégies et les profils. Par conséquent, la console Intune peut afficher temporairement l’état **Paramètres de stratégie erronés** jusqu’à ce que l’appareil sorte du mode veille.
@@ -105,7 +99,7 @@ Avant de commencer, vous devez installer l'outil Apple Configurator et créer un
 |Nom du paramètre|Détails|
     |----------------|--------------------|
     |**Nom du profil de configuration personnalisé (montré aux utilisateurs)**|Entrez le nom de la stratégie tel qu’il sera affiché sur l’appareil et dans les rapports de stratégie Intune.|
-    |**Fichier de configuration de profil**|Cliquez sur **Importer**, puis recherchez le profil de configuration que vous avez créé à l'aide de l'outil Apple Configurator. **Conseil :** consultez [Création d’un fichier de profil de configuration](#BKMK_Prof) dans cette rubrique pour de l’aide au sujet de la création du profil de configuration.|
+    |**Fichier de configuration de profil**|Cliquez sur **Importer**, puis recherchez le profil de configuration que vous avez créé à l'aide de l'outil Apple Configurator. **Conseil :** Consultez **Création d’un fichier de profil de configuration** dans cette rubrique pour de l’aide au sujet de la création du profil de configuration.|
     |**Détails du profil de configuration**|Affiche le code XML du profil de configuration que vous avez importé.|
 
 
@@ -126,6 +120,7 @@ Vous pouvez créer le fichier de profil de configuration utilisé par la straté
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

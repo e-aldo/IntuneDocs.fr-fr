@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Mises à jour logicielles pour PC Windows | Microsoft Intune
-description:
-keywords:
+title: "Mises à jour logicielles pour PC Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: d650eea62be0c00c414b51ed5c49310c5175acd7
+
 
 ---
 
@@ -44,7 +37,7 @@ Avant de commencer à créer et à approuver les mises à jour logicielles, conf
 
 ### Pour configurer les paramètres de la stratégie de mise à jour
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Stratégie** &gt; **Vue d’ensemble** &gt; **Ajouter une stratégie**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), sélectionnez **Stratégie** &gt; **Vue d’ensemble** &gt; **Ajouter une stratégie**.
 
 2.  Configurez et déployez une stratégie **Paramètres de l'Agent Microsoft Intune** pour les paramètres de mise à jour. Vous pouvez utiliser les paramètres recommandés ou personnaliser les paramètres. Pour plus d’informations sur la création et le déploiement des stratégies, consultez [Tâches courantes de gestion des PC Windows avec le client Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -88,7 +81,7 @@ Utilisez les deux procédures suivantes pour vous aider à préparer l'utilisati
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Administration** &gt; **Mises à jour**.
 
-2.  Dans la section **Règles d’approbation automatique** de la page **Paramètres du serveur : mises à jour**, choisissez **Nouveau**.
+2.  Dans la section **Règles d’approbation automatique** de la page **Paramètres du serveur : mises à jour**, choisissez **Nouveau**.
 
 3.  Dans la page **Général** de l'Assistant Créer une règle d'approbation automatique, spécifiez un nom et éventuellement une description pour la règle.
 
@@ -98,7 +91,7 @@ Utilisez les deux procédures suivantes pour vous aider à préparer l'utilisati
 
 6.  Dans la page **Déploiement** , procédez comme suit :
 
-    -   Sélectionnez le groupe d’ordinateurs sur lesquels vous souhaitez déployer la nouvelle règle, puis choisissez sur **Ajouter**.
+    -   Sélectionnez le groupe d’ordinateurs sur lesquels vous souhaitez déployer la nouvelle règle, puis choisissez **Ajouter**.
 
     -   Pour spécifier un délai d'installation des mises à jour, cochez la case **Imposer une échéance d'installation pour ces mises à jour** , puis, dans la liste **Délai d'installation** , sélectionnez un délai d'installation.
 
@@ -107,7 +100,7 @@ Utilisez les deux procédures suivantes pour vous aider à préparer l'utilisati
 
     -   Quand vous avez terminé, choisissez **Suivant**.
 
-7.  Sur la page **Résumé** , passez en revue les paramètres de la nouvelle règle, puis choisissez **Terminer**..
+7.  Dans la page **Résumé**, passez en revue les paramètres de la nouvelle règle, puis choisissez **Terminer**.
 
 La nouvelle règle est affichée dans la section **Règles d’approbation automatique** de la page **Paramètres du service : mises à jour** .
 
@@ -135,7 +128,7 @@ Vous pouvez déployer des mises à jour pour des logiciels qui n'ont pas été c
 
 ### Pour télécharger et configurer une mise à jour tierce
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Administration** &gt; **Vue d’ensemble** &gt; **Télécharger**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Mises à jour** &gt; **Vue d’ensemble** &gt; **Télécharger**.
 
 2.  Sur la page **Fichiers de mise à jour**, choisissez **Parcourir** pour sélectionner les fichiers d’installation requis pour installer le package de mise à jour. Il peut s'agir d'un fichier Windows Installer (.msi), d'un fichier correctif (.msp) de Windows Installer ou d'un fichier programme .exe. Vous pouvez également inclure des fichiers ou dossiers supplémentaires qui se trouvent dans le même dossier que le fichier d'installation.
 
@@ -158,7 +151,7 @@ Vous pouvez déployer des mises à jour pour des logiciels qui n'ont pas été c
 
     -   **Cette clé du Registre existe**
 
-6.  Spécifiez toute information supplémentaire requise pour configurer la règle de détection, notamment un nom de fichier et un chemin d’accès à celui-ci, le code de produit Windows Installer ou une clé de Registre, puis choisissez **Suivant**..
+6.  Spécifiez toute information supplémentaire requise pour configurer la règle de détection, notamment un nom de fichier et un chemin d’accès à celui-ci, le code de produit Windows Installer ou une clé de Registre, puis choisissez **Suivant**.
 
 7.  Dans la page **Conditions préalables** de l'Assistant, vous spécifiez un logiciel qui doit déjà être installé pour pouvoir installer cette mise à jour. Vous pouvez spécifier la valeur **Aucune**, sélectionner un package logiciel qui a déjà été ajouté à Intune et qui est géré par celui-ci. Vous pouvez aussi spécifier l’une des règles suivantes pour décrire le logiciel :
 
@@ -168,7 +161,7 @@ Vous pouvez déployer des mises à jour pour des logiciels qui n'ont pas été c
 
     -   **Cette clé du Registre existe**
 
-8.  Spécifiez toute information supplémentaire requise pour configurer la règle de détection, par exemple un nom de fichier est un chemin d’accès à celui-ci, le code de produit Windows Installer ou une clé de Registre, puis choisissez **Suivant**..
+8.  Spécifiez toute information supplémentaire requise pour configurer la règle de détection, par exemple un nom de fichier est un chemin d’accès à celui-ci, le code de produit Windows Installer ou une clé de Registre, puis choisissez **Suivant**.
 
 9. Dans la page **Arguments de ligne de commande** de l'Assistant, vous pouvez ajouter toutes les propriétés d'installation requises à la ligne de commande d'installation pour modifier le comportement du fichier d'installation. Par exemple, certains logiciels prennent en charge la propriété **/q** afin d’activer l’installation en mode silencieux. Reportez-vous à la documentation de votre package logiciel pour obtenir des informations sur les arguments de ligne de commande pris en charge. Spécifiez les arguments de ligne de commande dont vous avez besoin, puis choisissez **Suivant**.
 
@@ -204,14 +197,14 @@ Lorsque vous sélectionnez une mise à jour dans la liste, d'autres commandes so
 |--------|--------------------|
 |**Afficher les propriétés**|Affiche des informations détaillées sur la mise à jour, y compris le nombre d'ordinateurs auxquels elle s'applique.|
 |**Éditer**|Pour les mises à jour non Microsoft uniquement. Vous permet de modifier les propriétés de la mise à jour.|
-|**Approuver**|Approuve la mise à jour sélectionnée et vous permet de configurer les groupes sur lesquels elle va être déployée. Pour plus d’informations, voir la procédure [Pour approuver des mises à jour](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve) de cette rubrique.|
+|**Approuver**|Approuve la mise à jour sélectionnée et vous permet de configurer les groupes sur lesquels elle va être déployée. Pour plus d’informations, voir la procédure **Pour approuver des mises à jour** de cette rubrique.|
 |**Refuser**|Supprime les approbations précédentes de la mise à jour et masque la mise à jour des vues par défaut. En outre, les données du rapport pour la mise à jour seront supprimées.<br /><br />Si vous voulez localiser plus tard une mise à jour refusée, définissez le filtre sur la valeur **Refusé** dans la page **Toutes les mises à jour**. Vous pouvez ensuite approuver cette mise à jour si nécessaire.<br /><br />Si une mise à jour a été refusée en raison de son expiration dans Microsoft Update, vous ne pouvez pas l’approuver dans la console d’administration d’Intune.<br /><br />Si vous supprimez une stratégie de mise à jour déployée sur des ordinateurs, les valeurs de ces paramètres sont rétablies à leur état par défaut prévu pour le système d'exploitation installé sur les ordinateurs.|
 |**Supprimer**|Pour les mises à jour non Microsoft uniquement. Supprime la mise à jour sélectionnée.|
 |**Télécharger**|Démarre l’Assistant **Télécharger la mise à jour** qui vous permet de télécharger des mises à jour non-Microsoft que vous souhaitez déployer.|
 
 ### Pour approuver des mises à jour
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Mises à jour** &gt; **Vue d’ensemble** &gt; **Nouvelles mises à jour à approuver**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Mises à jour** &gt; **Vue d’ensemble** &gt; **Nouvelles mises à jour à approuver**.
 
     Dans l’espace de travail **Mises à jour**, choisissez **Vue d’ensemble** &gt; **Nouvelles mises à jour à approuver**.
 
@@ -220,7 +213,7 @@ Lorsque vous sélectionnez une mise à jour dans la liste, d'autres commandes so
 
 2.  Sélectionnez une mise à jour, examinez ses propriétés en bas de la page pour vous assurer que vous souhaitez bien l’approuver, puis choisissez **Approuver**. Vous pouvez sélectionner plusieurs mises à jour en maintenant la touche **CTRL** enfoncée quand vous sélectionnez chaque élément.
 
-3.  Dans la page **Sélectionner des groupes** , sélectionnez un groupe sur lequel vous souhaitez déployer les mises à jour, puis choisissez **Ajouter**. Une fois la sélection des groupes terminée, choisissez **Suivant**..
+3.  Dans la page **Sélectionner des groupes** , sélectionnez un groupe sur lequel vous souhaitez déployer les mises à jour, puis choisissez **Ajouter**. Une fois la sélection des groupes terminée, choisissez **Suivant**.
 
 4.  Sur la page **Action de déploiement** , procédez comme suit pour chaque groupe de la liste :
 
@@ -259,6 +252,7 @@ Lorsque vous sélectionnez une mise à jour dans la liste, d'autres commandes so
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

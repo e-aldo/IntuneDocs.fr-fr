@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gérer des PC Windows avec Intune | Microsoft Intune
-description:
-keywords:
+title: "Gérer des PC Windows avec Intune | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0335b80afa8e330263baad054f0e902f019f75bb
+ms.openlocfilehash: 92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f
+
 
 ---
 
@@ -35,8 +29,7 @@ Intune gère les PC Windows avec des stratégies semblables aux objets de strat�
 
 ## Configuration requise pour la gestion des PC Intune
 
-**Matériel**:
-Voici la configuration matérielle minimale requise pour l’installation du client Intune :
+**Matériel** : voici la configuration matérielle minimale requise pour l’installation du client Intune :
 
 |Condition requise|Plus d'informations|
 |---------------|--------------------|
@@ -44,8 +37,7 @@ Voici la configuration matérielle minimale requise pour l’installation du cli
 |Processeur et mémoire|Reportez-vous à la configuration requise du processeur et de la RAM pour le système d’exploitation du PC.|
 |Espace disque|200 Mo d'espace disponible sur le disque avant l'installation du logiciel client.|
 
-**Logiciels**:
-Voici la configuration logicielle requise pour l’installation du client :
+**Logiciel** : voici la configuration logicielle requise pour l’installation du client :
 
 |Condition requise|Plus d'informations|
 |---------------|--------------------|
@@ -64,7 +56,7 @@ La première étape de la gestion des PC Windows avec Intune consiste à install
 
 -   [Les utilisateurs finaux peuvent inscrire eux-mêmes chacun de leurs ordinateurs](install-the-windows-pc-client-with-microsoft-intune.md#how-users-can-self-enroll-their-computers) par le biais du portail d’entreprise Intune. Chaque ordinateur inscrit est automatiquement lié au compte d’utilisateur qui a été utilisé pour installer le logiciel client Intune.
 
--   Enfin, vous pouvez également déployer le logiciel client Intune sur des ordinateurs dans le cadre d’un [déploiement de système d’exploitation](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image)..
+-   Enfin, vous pouvez également déployer le logiciel client Intune sur des ordinateurs dans le cadre d’un [déploiement de système d’exploitation](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
 
 ## Gestion des ordinateurs avec le client d’ordinateur Intune
 Une fois le client Intune installé, le logiciel client active plusieurs fonctionnalités de gestion des ordinateurs, notamment : la [gestion des applications](deploy-apps-in-microsoft-intune.md), Endpoint Protection, l’inventaire matériel et logiciel, le contrôle à distance (par le biais des demandes d’assistance à distance), les mises à jour logicielles et les rapports sur les paramètres de compatibilité.
@@ -92,6 +84,7 @@ Outre les actions de l’agent client Intune exécutées localement sur des ordi
 L’agent client Intune s’exécute généralement en mode silencieux en arrière-plan sans avoir besoin de l’interaction de l’utilisateur ou de résoudre des problèmes. Toutefois, si vous avez besoin d’aide pour résoudre des problèmes liés à la gestion des ordinateurs, plusieurs [ressources sont disponibles](/intune/troubleshoot/troubleshoot-client-setup-in-microsoft-intune).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

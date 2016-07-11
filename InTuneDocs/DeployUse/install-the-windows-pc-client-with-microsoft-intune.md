@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Installer le client PC Windows avec Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -102,13 +96,13 @@ Les utilisateurs finaux peuvent inscrire eux-mêmes chacun de leurs ordinateurs 
 
 1.  Ouvrez une session sur le portail d'entreprise à partir de l'ordinateur que vous souhaitez inscrire.
 
-2.  Cliquez sur **Ajouter un appareil**..
+2.  Cliquez sur **Ajouter un appareil**.
 
-3.  Cliquez sur **Télécharger le logiciel**, puis sur **Exécuter**..
+3.  Cliquez sur **Télécharger le logiciel** , puis sur **Exécuter**.
 
 4.  Cliquez sur **Suivant** pour démarrer l’Assistant d’installation de Microsoft Intune.
 
-5.  Une fois l’Assistant Installation terminé, cliquez sur **Terminer**..
+5.  Une fois l'Assistant Installation terminé, cliquez sur **Terminer**.
 
 ### Installer le logiciel client Microsoft Intune dans le cadre d'une image
 Vous pouvez déployer le logiciel client Intune sur des ordinateurs dans le cadre d’une image de système d’exploitation en utilisant la procédure suivante comme exemple :
@@ -145,7 +139,7 @@ Utilisez l'une des procédures suivantes pour vous analyser et valider la réuss
 
 ### Pour vérifier l'installation du logiciel client depuis la console d'administration Microsoft Intune
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Groupes** &gt; **Tous les appareils** &gt; **Tous les ordinateurs**..
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Groupes** &gt; **Tous les appareils** &gt; **Tous les ordinateurs**.
 
 2.  Faites défiler la liste des ordinateurs vers le bas pour accéder aux ordinateurs gérés qui communiquent avec Intune, ou pour rechercher un ordinateur géré spécifique en tapant le nom de l’ordinateur ou une partie de son nom dans la zone **Rechercher des appareils**.
 
@@ -153,9 +147,9 @@ Utilisez l'une des procédures suivantes pour vous analyser et valider la réuss
 
 ### Pour créer un rapport d'inventaire informatique afin d'afficher tous les ordinateurs inscrits
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Rapports** &gt; **Rapports d’inventaire des ordinateurs**..
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Rapports** &gt; **Rapports d’inventaire informatique**.
 
-2.  Dans la page **Créer un rapport**, laissez les valeurs par défaut de tous les champs (sauf si vous voulez appliquer des filtres), puis cliquez sur **Afficher le rapport**..
+2.  Dans la page **Créer un rapport** , ne modifiez pas les valeurs par défaut renseignées dans les champs (sauf si vous voulez appliquer des filtres), puis cliquez sur **Afficher le rapport**.
 
 3.  La page **Rapport d’inventaire des ordinateurs** s’ouvre dans une nouvelle fenêtre et affiche tous les ordinateurs inscrits avec succès dans Intune.
 
@@ -167,6 +161,7 @@ Utilisez l'une des procédures suivantes pour vous analyser et valider la réuss
 [Gérer des PC Windows avec Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

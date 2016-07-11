@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Installer le connecteur Exchange de Microsoft Intune pour Exchange local | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+
 
 ---
 
@@ -43,7 +36,7 @@ Le tableau suivant indique la configuration requise pour l’ordinateur où vous
 |Logiciels supplémentaires|Une installation complète de Microsoft .NET Framework 4 et Windows PowerShell 2.0 doit exister sur l’ordinateur qui héberge le connecteur.|
 |Réseau|L'ordinateur sur lequel vous installez le connecteur doit être dans un domaine qui entretient une relation d'approbation avec le domaine qui héberge votre instance d'Exchange Server.<br /><br />L’ordinateur nécessite des configurations qui lui permettent d’accéder au service Intune à travers les pare-feu et les serveurs proxy sur les ports 80 et 443. Les domaines utilisés par Intune comprennent manage.microsoft.com, &#42;manage.microsoft.com et &#42;.manage.microsoft.com.|
 |Le serveur Exchange hébergé configuré et en cours d’exécution|Pour plus d’informations, consultez [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx). |
-|Définir Intune comme autorité de gestion des appareils mobiles|[Définir Intune comme autorité de vos appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
+|Définir Intune comme autorité de gestion des appareils mobiles|[Définir Intune comme autorité de vos appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Spécifications des applets de commande Exchange
 
@@ -68,11 +61,11 @@ Vous devez créer un compte d’utilisateur Active Directory utilisé par le con
 1. Sur un système d’exploitation pris en charge pour le connecteur Exchange local, ouvrez la [console d’administration Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) avec un compte d’utilisateur qui est administrateur dans le client Exchange avec une licence d’utilisation d’Exchange Server.
 ![Ouvrir la configuration de la connexion Exchange](../media/ExchangeConnector.gif)
 
-2.  Dans le volet des raccourcis de l’espace de travail, choisissez **ADMIN**..
+2.  Dans le volet de raccourcis de l’espace de travail, choisissez **ADMIN**.
 
 3.  Dans le volet de navigation, sous **Gestion des appareils mobiles**, développez **Microsoft Exchange**, puis choisissez **Configurer la connexion Exchange**.
 
-4.  Dans la page **Configurer la connexion Exchange**, choisissez **Télécharger On-Premises Connector**..
+4.  Dans la page **Configurer la connexion Exchange**, choisissez **Télécharger On-Premises Connector**.
 
 5.  Le connecteur Exchange local se trouve dans un dossier compressé (.zip) que vous pouvez ouvrir ou enregistrer. Dans la boîte de dialogue **Téléchargement de fichier**, choisissez **Enregistrer** pour stocker le dossier compressé dans un emplacement sécurisé.
 
@@ -89,7 +82,7 @@ Procédez comme suit pour installer le connecteur Exchange local d’Intune. Le 
     > [!IMPORTANT]
     > Si le dossier de destination n’est pas un emplacement sécurisé, vous devez supprimer le fichier de certificat **WindowsIntune.accountcert** après l’installation d’On-Premises Connector.
 
-3.  Dans le champ **Serveur Exchange**, sélectionnez le type d’environnement de votre serveur Exchange : **Serveur Microsoft Exchange local** ou **Serveur Microsoft Exchange hébergé**..
+3.  Dans le champ **Serveur Exchange**, sélectionnez le type d’environnement de votre serveur Exchange : **Serveur Microsoft Exchange local** ou **Serveur Microsoft Exchange hébergé**.
 
   ![Choisir le type de votre serveur Exchange](../media/IntuneSA1dconfigureExchConnector.png)
 
@@ -99,28 +92,28 @@ Procédez comme suit pour installer le connecteur Exchange local d’Intune. Le 
 
       1.  Ouvrez Outlook Web App pour Office 365.
 
-      2.  Choisissez l’icône «? » en haut à gauche et sélectionnez **À propos de**..
+      2.  Choisissez l’icône «? » en haut à gauche et sélectionnez **À propos de**.
 
       3.  Recherchez la valeur **Serveur externe POP** .
 
       4.  Choisissez **Serveur proxy** pour spécifier les paramètres du serveur proxy pour votre serveur Exchange hébergé.
-        1.  Sélectionnez **Utiliser un serveur proxy lors de la synchronisation des informations de l’appareil mobile**..
+        1.  Sélectionnez **Utiliser un serveur proxy lors de la synchronisation des informations de l'appareil mobile**.
 
         2.  Entrez le **nom du serveur proxy** et le **numéro de port** à utiliser pour accéder au serveur.
 
-        3.  S’il est nécessaire de fournir des informations d’identification utilisateur pour accéder au serveur proxy, sélectionnez Utiliser les informations d’identification pour la connexion au serveur proxy, puis entrez le **domaine\utilisateur** et le **mot de passe**..
+        3.  S’il est nécessaire de fournir des informations d’identification d’utilisateur pour accéder au serveur proxy, sélectionnez Utiliser les informations d’identification pour la connexion au serveur proxy, puis entrez le **domaine\utilisateur** et le **mot de passe**.
 
-        4.  Choisissez **OK**..
+        4.  Choisissez **OK**.
 
 5.  Spécifiez les informations d’identification, l’**Utilisateur (Domaine\utilisateur)** et le **Mot de passe** nécessaires pour la connexion à votre serveur Exchange.
 
 6.  Fournissez les informations d'identification administratives nécessaires pour envoyer des notifications à la boîte aux lettres Exchange de l'utilisateur. Ces notifications sont configurables via les stratégies d'accès conditionnel Intune.
 
-    Vérifiez que le service de découverte automatique et les services web Exchange sont configurés sur le serveur d'accès au client Exchange. Pour plus d’informations à ce sujet, consultez [Serveur d’accès au client](https://technet.microsoft.com/library/dd298114.aspx).
+    Vérifiez que le service de découverte automatique et les services web Exchange sont configurés sur le serveur d'accès au client Exchange. Pour plus d'informations à ce sujet, consultez [Serveur d'accès au client](https://technet.microsoft.com/library/dd298114.aspx).
 
 7.  Dans le champ **Mot de passe** , entrez le mot de passe de ce compte pour permettre à Intune d’accéder au serveur Exchange Server.
 
-8. Choisissez **Se connecter**..
+8. Choisissez **Se connecter**.
 
     La configuration de la connexion peut prendre quelques minutes.
 
@@ -133,12 +126,13 @@ Une fois la connexion configurée par le connecteur Exchange, les appareils mobi
 
 ## Valider la connexion Exchange
 
-Une fois que vous avez correctement configuré le connecteur Exchange, vous pouvez afficher l’état de la connexion et la dernière tentative de synchronisation réussie. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), choisissez l’espace de travail **ADMIN** et, sous **Gestion des appareils mobiles**, choisissez **Microsoft Exchange** et vérifiez que les détails que vous avez fournis apparaissent sous **Informations de connexion à Exchange**..
+Une fois que vous avez correctement configuré le connecteur Exchange, vous pouvez afficher l’état de la connexion et la dernière tentative de synchronisation réussie. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), choisissez l’espace de travail **ADMIN** et, sous **Gestion des appareils mobiles**, choisissez **Microsoft Exchange** et vérifiez que les détails que vous avez fournis apparaissent sous **Informations de connexion à Exchange**.
 
 
 Vous pouvez également vérifier la date et l'heure de la dernière tentative de synchronisation réussie.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

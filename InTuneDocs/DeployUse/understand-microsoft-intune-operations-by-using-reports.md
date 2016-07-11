@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Présentation des opérations à l’aide de rapports | Microsoft Intune
-description:
-keywords:
+title: "Présentation des opérations à l’aide de rapports | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -41,10 +34,11 @@ Les rapports Intune fournissent des informations sur les logiciels, le matériel
 |**Rapports d'inventaire des appareils mobiles**|Affiche des informations sur les appareils mobiles de votre organisation. Vous pouvez filtrer les informations qui s'affichent en fonction des groupes, du caractère « jailbroken » (débridé) ou rooté de l'appareil et du système d'exploitation.|
 |**Rapports d'achat de licence**|Affichent les titres de tous les logiciels sous licence dans les groupes de licences sélectionnés, en fonction de leurs contrats de licence. Si les informations de licence logicielle n'ont pas été actualisées dans plus de 24 heures, elles sont actualisées lorsque vous générez un rapport de licence. Un rapport de licence n'est pas un calcul exact des titres de logiciel utilisés ou une preuve de la conformité aux contrats. Le rapport est un outil pour vous aider à prendre des décisions sur les licences pour votre organisation. Intune peut ne pas détecter certains produits pouvant avoir une licence en volume Microsoft. Les filtres disponibles sont les suivants :<br /><br />**Tous les contrats** affiche tous les produits logiciels sous licence qui sont gérés par Intune.<br /><br />**Contrats de licence en volume** affiche uniquement les produits logiciels provenant du Centre de gestion des licences en volume.<br /><br />**Autres contrats de licence logicielle** affiche les produits logiciels qui sont gérés en dehors du Centre de gestion des licences en volume.|
 |**Rapports d'installation de licence**|Comparez les logiciels installés sur les ordinateurs de votre organisation à la couverture de contrat de licence actuelle selon le Centre de gestion des licences en volume. Les filtres incluent :<br /><br />**Tous les contrats** affiche tous les produits logiciels sous licence qui sont gérés par Intune.<br /><br />**Contrats de licence en volume** affiche uniquement les produits logiciels provenant du Centre de gestion des licences en volume.<br /><br />**Autres contrats de licence logicielle** affiche les produits logiciels qui sont gérés en dehors du Centre de gestion des licences en volume.|
-|**Rapports sur les conditions générales**|Affichent les utilisateurs qui ont accepté les conditions générales que vous avez déployées, ainsi que la version qu’ils ont acceptée. Vous pouvez spécifier jusqu’à 10 utilisateurs ayant accepté les conditions générales qui ont été déployées, ou afficher l’état d’acceptation pour une condition particulière déployée.|
+|**Rapports sur les conditions générales**|Montrez si les utilisateurs ont accepté les conditions générales que vous avez déployées, ainsi que la version qu’ils ont acceptée. Vous pouvez spécifier jusqu’à 10 utilisateurs ayant accepté les conditions générales qui ont été déployées, ou afficher l’état d’acceptation pour une condition particulière déployée.|
 |**Rapports d'applications non conformes**|Affichent des informations sur les utilisateurs qui disposent d'applications installées figurant sur vos listes d'applications conformes et non conformes. Ce rapport permet de rechercher des utilisateurs et des appareils qui ne sont pas compatibles avec les stratégies d'application de votre société.|
-|**Rapports de conformité du certificat**|Affichent les certificats délivrés aux utilisateurs et aux appareils via SCEP ou PKCS #12 (.PFX). Utilisez ce rapport pour rechercher les certificats émis, expirés et révoqués.|
-|**Rapports d'historique de l'appareil**|Affiche l'historique des actions de mise hors service, de réinitialisation et de suppression. Utilisez ce rapport pour déterminer qui a initié des actions sur les appareils par le passé.|
+|**Rapports de conformité du certificat**|Montrez quels certificats ont été délivrés aux utilisateurs et aux appareils via SCEP ou PKCS #12 (.PFX). Utilisez ce rapport pour rechercher les certificats émis, expirés et révoqués.|
+|**Rapports d'historique de l'appareil**|Affichez le journal de l’historique des actions de mise hors service, de réinitialisation et de suppression. Utilisez ce rapport pour déterminer qui a initié des actions sur les appareils par le passé.|
+|**Rapports d’attestation d’intégrité**|Affichez l’état des appareils mobiles.|
 |**Rapport matériel Mac OS X**|Affiche les détails matériels de tous les appareils Mac OS X inscrits dans les groupes que vous sélectionnez. Pour plus d’informations sur l’inventaire matériel collecté à partir de ces appareils, consultez [Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Rapport logiciel Mac OS X**|Affiche les logiciels installés sur tous les appareils Mac OS X dans les groupes que vous avez sélectionnés. Le rapport répertorie le nom du logiciel (comme ID de groupe), le nom de la version abrégée (ou nom convivial), la version et le nombre d’appareils où le logiciel est installé.|
 
@@ -52,7 +46,7 @@ Les rapports Intune fournissent des informations sur les logiciels, le matériel
 
 1.  Dans la console d’administration Intune, cliquez sur **Rapports**, puis cliquez sur le type de rapport que vous voulez générer, tel que décrit dans le tableau ci-dessus.
 
-2.  Dans la page **Créer un rapport** , acceptez les valeurs par défaut ou personnalisez-les pour filtrer les résultats qui seront renvoyés par le rapport. Par exemple, vous pouvez décider que seuls les logiciels publiés par Microsoft seront affichés dans le rapport de logiciels détectés.
+2.  Dans la page **Créer un rapport**, acceptez les valeurs par défaut ou personnalisez-les pour filtrer les résultats qui seront renvoyés par le rapport. Par exemple, vous pouvez décider que seuls les logiciels publiés par Microsoft seront affichés dans le rapport de logiciels détectés.
 
 3.  Cliquez sur **Afficher le rapport** pour ouvrir le rapport dans une nouvelle fenêtre.
 
@@ -65,15 +59,16 @@ En outre, les rapports prennent en charge les actions suivantes :
 |----------|--------------------|
 |**Imprimer**|Dans un rapport ouvert, cliquez sur l'icône d'impression et suivez les instructions.|
 |**Exporter**|Dans un rapport ouvert, cliquez sur l'icône exportation et suivez les instructions. Vous pouvez exporter un rapport vers un fichier de valeurs séparées par des virgules (.csv) ou au format HTML.|
-|**Enregistrer**|Sur la page **Créer un rapport** , chaque utilisateur peut enregistrer jusqu'à 100 rapports. Configurez les paramètres du rapport selon vos besoins, puis cliquez sur **Enregistrer**ou **Enregistrer sous** si vous voulez utiliser un autre nom.|
-|**Chargement**|Sur la page **Créer un rapport** , cliquez sur **Charger** pour extraire tous les paramètres de rapport précédemment enregistrés.|
-|**Supprimer**|Dans l'espace de travail **Rapports** , sélectionnez le type de rapport souhaité, cliquez sur **Charger**, puis dans la liste des rapports, cliquez sur l'icône (x) en regard du rapport.|
+|**Enregistrer**|Sur la page **Créer un rapport**, chaque utilisateur peut enregistrer jusqu'à 100 rapports. Configurez les paramètres du rapport selon vos besoins, puis cliquez sur **Enregistrer**ou **Enregistrer sous** si vous voulez utiliser un autre nom.|
+|**Chargement**|Sur la page **Créer un rapport**, cliquez sur **Charger** pour extraire tous les paramètres de rapport précédemment enregistrés.|
+|**Supprimer**|Dans l'espace de travail **Rapports**, sélectionnez le type de rapport souhaité, cliquez sur **Charger**, puis dans la liste des rapports, cliquez sur l'icône (x) en regard du rapport.|
 
 ### Voir aussi
 [Analyse et rapports avec Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

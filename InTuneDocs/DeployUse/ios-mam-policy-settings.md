@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Paramètres de stratégie de gestion des applications mobiles iOS | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de stratégie de gestion des applications mobiles iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+
 
 ---
 
@@ -83,7 +77,7 @@ Le terme **Applications gérées par la stratégie** est utilisé pour désigner
   Quand vous activez ce paramètre, l’utilisateur final doit configurer et utiliser un code confidentiel pour accéder à son appareil.  S’il n’existe pas de code confidentiel, les applications ne démarrent pas et l’utilisateur final est invité à définir un code confidentiel par le message « Votre entreprise exige que vous activiez d’abord un code confidentiel sur l’appareil pour accéder à cette application. ».
 
   **Valeur par défaut : l’option de chiffrement n’est pas sélectionnée**
-- **ContactSyncDisabled :** choisissez **Oui** pour interdire la synchronisation des informations de contact avec l’application de carnet d’adresses native sur l’appareil. Si vous choisissez **Non**, l’application enregistre les informations de contact dans l’application de carnet d’adresses native sur l’appareil.
+- **Désactiver la synchronisation des contacts :** choisissez **Oui** pour empêcher que les informations de contact soient synchronisées avec l’application de carnet d’adresses native sur l’appareil. Si vous choisissez **Non**, l’application enregistre les informations de contact dans l’application de carnet d’adresses native sur l’appareil.
 
   Quand vous effectuez une réinitialisation sélective pour supprimer les données d’entreprise, les contacts synchronisés directement à partir de l’application de carnet d’adresses native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, ceci s’applique uniquement à l’application **Microsoft Outlook**.
 
@@ -117,6 +111,7 @@ Sur les appareils iOS, vous pouvez autoriser les utilisateurs à s’identifier 
   **Valeur par défaut = 90 jours**
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,41 +1,34 @@
 ---
-# required metadata
-
-title: Archive des nouveautés | Microsoft Intune
-description:
-keywords:
+title: "Archive des nouveautés | Microsoft Intune"
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 051d06afb0f29f2a97c1f06dc1102138e5f2be8f
+
 
 ---
 
 
 ## Septembre 2015
 ### Mises à jour relatives à la gestion des applications et des appareils mobiles
-**Toutes les fonctionnalités de gestion iOS Intune prennent désormais en charge iOS 9**
-Pour plus d’informations sur les fonctionnalités de gestion d’iOS 9, consultez [ce billet de blog](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx).
+**Toutes les fonctionnalités de gestion iOS d’Intune prennent désormais en charge iOS 9** Pour plus d’informations sur les fonctionnalités de gestion d’iOS 9, consultez [ce billet de blog](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx).
 
-**Nouvelle stratégie de configuration des applications mobiles pour iOS**
-La nouvelle stratégie de configuration des applications mobiles vous permet de fournir automatiquement les paramètres dont peut avoir besoin une application iOS au moment de son exécution. Par exemple, vous pouvez fournir un port réseau ou un nom d’utilisateur. Pour plus d’informations, consultez [Configurer des applications avec des stratégies de configuration des applications mobiles dans Microsoft Intune](https://technet.microsoft.com/library/mt481447.aspx).
+**Nouvelle stratégie de configuration des applications mobiles pour iOS** La nouvelle stratégie de configuration des applications mobiles vous permet de fournir automatiquement les paramètres dont peut avoir besoin une application iOS au moment de son exécution. Par exemple, vous pouvez fournir un port réseau ou un nom d’utilisateur. Pour plus d’informations, consultez [Configurer des applications avec des stratégies de configuration des applications mobiles dans Microsoft Intune](https://technet.microsoft.com/library/mt481447.aspx).
 
-**Gestion des applications plus facile pour les utilisateurs iOS 9**
- Dans cette version, vous pouvez intégrer des applications déjà déployées à la gestion Intune pour les utilisateurs iOS 9. Pour les versions antérieures d’iOS, quand vous déployez une application alors qu’une version non gérée de l’application est déjà installée sur un appareil, vous devez quand même demander à l’utilisateur de désinstaller l’application manuellement pour qu’Intune puisse installer l’application gérée.
+**Une gestion des applications simplifiée pour les utilisateurs d’iOS 9**
+ Dans cette version, vous pouvez intégrer les applications déjà déployées à la gestion Intune pour les utilisateurs d’iOS 9. Pour les versions antérieures d’iOS, quand vous déployez une application alors qu’une version non gérée de l’application est déjà installée sur un appareil, vous devez quand même demander à l’utilisateur de désinstaller l’application manuellement pour qu’Intune puisse installer l’application gérée.
 
  À compter de cette version d’Intune, vous pouvez inviter les utilisateurs d’appareils iOS 9 à autoriser Intune à contrôler la gestion de l’application et à appliquer des stratégies de gestion des applications mobiles pertinentes.
 
@@ -115,6 +108,7 @@ The following changes have been made to the company portal apps in this release.
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.--->
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

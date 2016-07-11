@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Paramètres de stratégie de conformité pour les appareils iOS | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de stratégie de conformité pour les appareils iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: 591023ea08b669ca69e8cac45e37b5fb2689ddcd
+
 
 ---
 
@@ -72,7 +65,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 - **Sélectionnez le profil de messagerie géré par Intune :**
    si vous sélectionnez l’option **Le compte de messagerie doit être géré par Intune**, choisissez **Sélectionner** pour spécifier le profil de messagerie Intune. Le profil de messagerie doit être présent sur l'appareil.
 
-     Pour plus d’informations sur les profils de messagerie, consultez [Configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) (Activer l’accès à la messagerie professionnelle à l’aide de profils de messagerie avec Microsoft Intune).
+     Pour plus d’informations sur les profils de messagerie, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
 ## Paramètres d’intégrité des appareils
 
@@ -85,6 +78,7 @@ Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur
 - **Version maximale autorisée du système d’exploitation :** quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur informatique. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

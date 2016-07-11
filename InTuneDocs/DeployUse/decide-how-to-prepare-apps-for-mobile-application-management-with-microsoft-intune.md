@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+
 
 ---
 
@@ -29,7 +22,7 @@ ms.suite: ems
 Vous pouvez activer vos applications pour l’utilisation des stratégies de gestion des applications mobiles en utilisant l’outil de création de package de restrictions d’application Intune ou le Kit de développement logiciel (SDK) d’application Intune. Utilisez ces informations pour en savoir plus sur ces deux méthodes et quand les utiliser.
 
 ## Outil de création de package de restrictions d’application Intune
-L’outil de création de package de restrictions d’application est utilisé principalement pour les applications métier internes. L’outil est une application de ligne de commande qui crée un wrapper autour de l’application, ce qui permet ensuite à l’application d’être gérée par une stratégie de gestion des applications mobiles Intune. Vous n’avez pas besoin du code source pour utiliser l’outil, mais vous avez besoin des informations d’identification de signature.  Pour plus d’informations sur les informations d’identification de signature, consultez le [blog Intune](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). Pour obtenir la documentation de l’outil de création de package de restrictions d’application, consultez [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Outil de création de package de restrictions d’application Android) et [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Outil de création de package de restrictions d’application iOS).
+L’outil de création de package de restrictions d’application est utilisé principalement pour les applications métier internes. L’outil est une application de ligne de commande qui crée un wrapper autour de l’application, ce qui permet ensuite à l’application d’être gérée par une stratégie de gestion des applications mobiles Intune. Vous n’avez pas besoin du code source pour utiliser l’outil, mais vous avez besoin des informations d’identification de signature.  Pour plus d’informations sur les informations d’identification de signature, consultez le [blog Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Pour obtenir la documentation de l’outil de création de package de restrictions d’application, consultez [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Outil de création de package de restrictions d’application Android) et [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Outil de création de package de restrictions d’application iOS).
 
 L’outil de création de package de restrictions d’application ne prend pas en charge les applications de l’App Store ou du Play Store, ni les fonctionnalités qui nécessitent une intégration des temps de développement (voir le tableau comparatif des fonctions suivant).
 
@@ -43,7 +36,8 @@ Pour en savoir plus sur le SDK, consultez sa [présentation](/intune/develop/int
 ## Comparaison des fonctionnalités
 Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit de développement logiciel (SDK) et pour l’outil de création de package de restrictions d’application.
 
-> [!NOTE] Vous pouvez utiliser l’outil de création de package de restrictions d’application avec Intune autonome ou Intune avec Configuration Manager.
+> [!NOTE]
+> Vous pouvez utiliser l’outil de création de package de restrictions d’application avec Intune autonome ou Intune avec Configuration Manager.
 
 |Fonction|Kit de développement logiciel (SDK) d’application|Outil de création de package de restrictions d’application|
 |-----------|---------------------|-----------|
@@ -73,6 +67,7 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit de d
 [Utiliser le Kit de développement logiciel (SDK) pour activer des applications pour la gestion des applications mobiles](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

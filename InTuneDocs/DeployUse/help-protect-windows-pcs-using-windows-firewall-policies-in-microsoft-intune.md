@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Stratégies de pare-feu pour PC Windows | Microsoft Intune
-description:
-keywords:
+title: "Stratégies de pare-feu pour PC Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
@@ -48,7 +42,7 @@ La stratégie du Pare-feu Windows vous permet de créer et de déployer les para
 
 ## Configurer une stratégie du Pare-feu Windows
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Stratégie** &gt; **Ajouter une stratégie**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
 
 2.  Configurez et déployez une stratégie **Paramètres du Pare-feu Windows** . Vous pouvez utiliser les paramètres recommandés ou personnaliser les paramètres. Pour plus d’informations sur la création et le déploiement des stratégies, consultez [Tâches courantes de gestion des PC Windows avec le client Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -124,6 +118,7 @@ Après avoir configuré les valeurs de base ci-dessus, vous pouvez configurer de
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

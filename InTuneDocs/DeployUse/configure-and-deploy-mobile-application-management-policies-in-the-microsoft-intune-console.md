@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
@@ -34,7 +28,8 @@ Les stratégies de gestion des applications mobiles prennent en charge :
 
 -   les appareils qui exécutent iOS 7 et versions ultérieures.
 
-> [!TIP] Les stratégies de gestion des applications mobiles prennent en charge les appareils inscrits avec Intune.
+> [!TIP]
+> Les stratégies de gestion des applications mobiles prennent en charge les appareils inscrits avec Intune.
 >
 > Si vous recherchez des informations sur la façon de créer des stratégies de gestion des applications pour les appareils qui ne sont pas gérés par Intune, consultez [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune).
 
@@ -46,9 +41,9 @@ Pour appliquer des restrictions à une application, celle-ci doit intégrer le S
 
 -   **Utiliser une application « encapsulée »** : il s’agit d’applications qui sont réempaquetées pour inclure le SDK d’application à l’aide de l’**outil de création de package de restrictions d’application Microsoft Intune**. On utilise généralement cet outil pour traiter les applications d'entreprise qui ont été créées en interne. Vous ne pouvez pas l'utiliser pour traiter les applications qui ont été téléchargées à partir du magasin d'applications. Consultez [Préparer des applications iOS pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) et [Préparer des applications Android pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
-- **Écrire votre propre application en y intégrant le SDK d’application Intune**. Le SDK d’application Intune permet d’intégrer des fonctionnalités de gestion des applications à une application pendant que vous l’écrivez. Pour plus d’informations, consultez [Présentation du Kit SDK de l’application Intune](/develop/intune-app-sdk).
+- **Écrire votre propre application en y intégrant le SDK d’application Intune**. Le SDK d’application Intune permet d’intégrer des fonctionnalités de gestion des applications à une application pendant que vous l’écrivez. Pour plus d’informations, consultez [Présentation du Kit SDK de l’application Intune](/intune/develop/intune-app-sdk).
 
-Pour savoir si vous devez utiliser l’outil de création de package de restrictions d’application ou le SDK d’application Intune, consultez [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+Pour savoir si vous devez utiliser l’outil de création de package de restrictions d’application ou le SDK d’application Intune, consultez [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 Certaines applications gérées, comme l’application Outlook pour iOS et Android, prennent en charge **plusieurs identités**. Autrement dit, Intune applique uniquement les paramètres de gestion aux comptes ou aux données d'entreprise dans l'application.
 
@@ -60,7 +55,8 @@ Par exemple, à l'aide de l'application Outlook :
 
 -   Le compte d’entreprise utilisé doit être le même compte que celui qui a été utilisé pour inscrire l’appareil avec Intune.
 
-> [!TIP] Si vous utilisez Intune avec Configuration Manager, consultez [Comment contrôler des applications à l’aide de stratégies de gestion des applications mobiles dans Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP]
+> Si vous utilisez Intune avec Configuration Manager, consultez [Comment contrôler des applications à l’aide de stratégies de gestion des applications mobiles dans Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Créer et déployer une application avec une stratégie de gestion des applications mobiles
 
@@ -152,7 +148,8 @@ Déployez l'application, en veillant à sélectionner la stratégie de gestion d
 
 Pour plus d’informations, consultez [Déployer des applications dans Microsoft Intune](deploy-apps.md).
 
-> [!IMPORTANT] Pour les appareils qui exécutent des systèmes d’exploitation antérieurs à iOS 7.1, les stratégies associées ne sont pas supprimées lors de la désinstallation de l’application.
+> [!IMPORTANT]
+> Pour les appareils qui exécutent des systèmes d'exploitation antérieurs à iOS 7.1, les stratégies associées ne sont pas supprimées lors de la désinstallation de l'application.
 >
 > Si l’appareil est désinscrit d’Intune, les stratégies ne sont pas supprimées des applications ; toute application à laquelle des stratégies étaient appliquées conservera les paramètres de stratégie, même après avoir été désinstallée et réinstallée.
 
@@ -163,7 +160,8 @@ Dans ce cas, vous devez demander à l’utilisateur de désinstaller manuellemen
 
 Toutefois, pour les appareils qui exécutent iOS 9 et versions ultérieures, Intune demande automatiquement à l’utilisateur l’autorisation de reprendre la gestion de l’application existante. S’il est d’accord, l’application est alors gérée par Intune et les stratégies de gestion des applications mobiles que vous avez associées à l’application sont également appliquées.
 
-> [!TIP] Si l’appareil est en mode supervisé, Intune reprend la gestion de l’application existante sans demander l’autorisation aux utilisateurs.
+> [!TIP]
+> Si l’appareil est en mode supervisé, Intune reprend la gestion de l’application existante sans demander l’autorisation aux utilisateurs.
 
 ## **Étape 5 :** contrôler le déploiement de l’application.
 Une fois que vous avez créé et déployé une application associée à une stratégie de gestion des applications mobiles, appliquez les procédures suivantes pour analyser l'application et résoudre les éventuels conflits de stratégie.
@@ -198,6 +196,7 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 -   Si aucune stratégie n'a encore été déployée sur l'appareil et que deux paramètres en conflit sont déployés, le paramètre par défaut intégré à l'appareil est utilisé.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

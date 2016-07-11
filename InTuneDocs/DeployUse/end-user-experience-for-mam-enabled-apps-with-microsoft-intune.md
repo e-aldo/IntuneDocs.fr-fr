@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Expérience de l’utilisateur final pour des applications avec GAM activé | Microsoft Intune
-description:
-keywords:
+title: "Expérience de l’utilisateur final pour des applications avec GAM activé | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -29,7 +22,7 @@ ms.suite: ems
 Les stratégies de gestion des applications mobiles (GAM) sont appliquées uniquement lorsque les applications sont utilisées dans le contexte de travail.  Lisez les scénarios suivants pour comprendre le fonctionnement des applications gérées.
 ##  Accès à OneDrive sur un appareil iOS
 
-1.  Lancez l’application  **OneDrive** pour afficher la page de connexion.
+1.  Lancez l’application **OneDrive** pour afficher la page de connexion.
 
     ![Capture d’écran de la page de connexion à OneDrive](../media/AppManagement/iOS_OneDriveLaunch.png)
 
@@ -41,6 +34,7 @@ Les stratégies de gestion des applications mobiles (GAM) sont appliquées uniqu
     ![Capture d’écran de la page de connexion à O365](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Une fois vos informations d’identification correctement authentifiées par Azure AD, les stratégies GAM sont appliquées et il vous est demandé de redémarrer l’application **OneDrive** .
+  >[REMARQUE !] La boîte de dialogue Redémarrage requis s’affiche uniquement sur les appareils qui ne sont pas inscrits dans Intune.
 
     ![Capture d’écran de la boîte de dialogue Redémarrage requis](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -79,7 +73,7 @@ Les stratégies de gestion des applications mobiles (GAM) sont appliquées uniqu
 
     ![Capture d’écran de l’application du portail d’entreprise](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  Une fois l’installation terminée, cliquez sur **Accepter** pour accepter les termes du contrat.
+5.  Une fois l’installation terminée, choisissez **Accepter** pour accepter les termes du contrat.
 
 6.  L’application **OneDrive** démarre automatiquement.
 
@@ -136,7 +130,7 @@ Lisez l’exemple de scénario ci-dessous pour mieux comprendre le comportement 
 L’utilisateur A travaille pour deux sociétés : **Société X** et **Société Y**. L’utilisateur A a un compte professionnel pour chaque société, et tous deux utilisent Intune pour déployer des stratégies GAM. **Société X** déploie des stratégies GAM **avant** **Société Y**. Le compte associé à **Société X** est soumis à la stratégie GAM, contrairement au compte associé à Société Y. Si vous souhaitez que le compte d’utilisateur associé à Société Y soit géré par les stratégies GAM, vous devez supprimer le compte d’utilisateur associé à Société X.
 ### Ajout d’un deuxième compte
 #### IOS
-Sur un appareil iOS, si vous essayez d’ajouter un deuxième compte professionnel, un message de blocage peut s’afficher.  Une option permettant de supprimer le compte existant et d’en ajouter un nouveau apparaît également. Vous pouvez procéder ainsi en cliquant sur **Oui**.
+Sur un appareil iOS, si vous essayez d’ajouter un deuxième compte professionnel, un message de blocage peut s’afficher.  Une option permettant de supprimer le compte existant et d’en ajouter un nouveau apparaît également. Pour cela, choisissez **Oui**.
 
 ![Capture d’écran de la boîte de dialogue avec le message de blocage et les options Oui et Non](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +143,18 @@ Pour afficher les fichiers image, AV et PDF de la société sur des appareils An
 
 Vous pouvez télécharger cette application à partir de la boutique Google Play.  Une fois l’application installée sur votre appareil, lancez-la et authentifiez-vous avec vos informations d’identification professionnelles. Vous devriez maintenant pouvoir afficher les fichiers protégés et non protégés à partir d’autres applications gérées par une stratégie.
 
+Les types de fichiers suivants sont pris en charge :
+
+* **Audio :** AAC-LC, HE-AACv1 (AAC+), HE-AACv2 (AAC+ amélioré), AAC-ELD (AAC avec délai court amélioré), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Vidéo :** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Image :** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
+* PDF, PPDF
+
+------------
+|**pfile**|**texte**|
+|----|----|
+|Pfile est un format « wrapper » générique pour les fichiers protégés qui encapsulent le contenu chiffré et les licences RMS, et qui permet de protéger n’importe quel type de fichier.|Les fichiers texte, notamment XML, CSV, etc., peuvent être ouverts pour être affichés dans l’application même quand ils sont protégés. Types de fichiers : txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+---------------
 **Appareils Android non inscrits dans Intune**
 
 Avant de pouvoir utiliser l’application de partage RMS pour afficher les fichiers à partir d’autres applications gérées par Intune, lancez l’application RMS et authentifiez-vous avec votre compte professionnel.  Lorsque vous vous connectez, vous voyez le message suivant **seulement si vous n’avez pas de licence RMS** :
@@ -162,6 +168,7 @@ Cela ne vous empêche pas d’utiliser l’application de partage RMS pour affic
 [Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

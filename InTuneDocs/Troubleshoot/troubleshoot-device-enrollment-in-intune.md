@@ -1,43 +1,47 @@
 ---
-# required metadata
-
-title: Résoudre les problèmes d’inscription d’appareils | Microsoft Intune
-description:
-keywords:
+title: "Résoudre les problèmes d’inscription d’appareils | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
+ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+
 
 ---
 
 # Résoudre les problèmes d’inscription d’appareils dans Intune
 
-Vous trouverez ici quelques exemples de problèmes d’inscription d’appareils et des instructions pour les résoudre.
-
-> [!NOTE]
-> Les utilisateurs d’appareils gérés peuvent recueillir des journaux d’inscription et de diagnostic qui peuvent vous être utiles. Les instructions destinées aux utilisateurs permettant de recueillir les journaux sont fournies dans :
->- [Envoyer les journaux de données de diagnostic Android à votre administrateur informatique par câble USB](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
->- [Envoyer les journaux de données de diagnostic Android à votre administrateur informatique par e-mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
->- [Envoyer les erreurs d’inscription Android à votre administrateur informatique](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
->- [Envoyer les erreurs d’inscription iOS à votre administrateur informatique](/intune/enduser/send-errors-to-your-it-admin-ios)
+Cette rubrique fournit des suggestions pour résoudre les problèmes liés à l’inscription d’appareils. Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
 
 
-Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
+## Étapes initiales de dépannage
+
+Avant de commencer le dépannage, vérifiez que vous avez configuré Intune correctement pour activer l’inscription. Vous pouvez consulter ces exigences de configuration dans les rubriques suivantes :
+
+-   [Se préparer à inscrire des appareils dans Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [Configurer la gestion des appareils iOS et Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Configurer la gestion de Windows 10 Mobile et Windows Phone avec Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-   [Configurer la gestion des appareils Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+
+
+Les utilisateurs d’appareils gérés peuvent recueillir des journaux d’inscription et de diagnostic qui peuvent vous être utiles. Les instructions destinées aux utilisateurs permettant de recueillir les journaux sont fournies dans :
+
+- [Envoyer les journaux de données de diagnostic Android à votre administrateur informatique par câble USB](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [Envoyer les journaux de données de diagnostic Android à votre administrateur informatique par e-mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [Envoyer les erreurs d’inscription Android à votre administrateur informatique](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+- [Envoyer les erreurs d’inscription iOS à votre administrateur informatique](/intune/enduser/send-errors-to-your-it-admin-ios)
+
+
 
 ## Problèmes généraux d’inscription
 Ces problèmes peuvent se produire sur toutes les plateformes.
@@ -103,7 +107,8 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 1.  Vérifiez que l’autorité GPM a été correctement définie pour la version du service Intune que vous utilisez, c’est-à-dire, pour Intune, GPM O365 ou System Center Configuration Manager avec Intune. Pour Intune, l’autorité de gestion des appareils mobiles est définie dans **Administration** &gt; **Gestion des appareils mobiles**. Pour Configuration Manager avec Intune, vous la définissez pendant que vous configurez le connecteur Intune. Dans Office 365, il s’agit du paramètre **Appareils mobiles**.
 
-    > [!NOTE] Une fois que vous avez défini l’autorité de gestion des appareils mobiles, vous ne pouvez la modifier qu’en contactant le support technique, comme indiqué dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    > [!NOTE]
+    > Une fois que vous avez défini l’autorité de gestion des appareils mobiles, vous ne pouvez la modifier qu’en contactant le support technique, comme indiqué dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 2.  Vérifiez que les informations d’identification de l’utilisateur ont bien été synchronisées avec Azure Active Directory en vous assurant que son nom d’utilisateur principal (UPN) correspond aux informations Active Directory dans le portail de compte.
     Si l’UPN ne correspond pas aux informations Active Directory :
@@ -255,8 +260,7 @@ Cela peut être dû au fait que l’ordinateur avait déjà été inscrit préc�
 
 |Code d’erreur|Problème possible|Solution suggérée|
 |--------------|--------------------|----------------------------------------|
-|0x80CF0437 |L'horloge de l'ordinateur client n'est pas réglée sur l'heure correcte.|Assurez-vous que l'horloge et le fuseau horaire de l'ordinateur client sont correctement réglés.
-|
+|0x80CF0437 |L'horloge de l'ordinateur client n'est pas réglée sur l'heure correcte.|Assurez-vous que l'horloge et le fuseau horaire de l'ordinateur client sont correctement réglés.|
 |0x80240438, 0x80CF0438, 0x80CF402C|Impossible de se connecter au service Intune. Vérifiez les paramètres de proxy du client.|Vérifiez que la configuration du proxy sur l’ordinateur client est prise en charge par Intune et que l’ordinateur client dispose d’un accès à Internet.|
 |0x80240438, 0x80CF0438|Les paramètres de proxy dans Internet Explorer et le système local ne sont pas configurés.|Impossible de se connecter au service Intune. Vérifiez les paramètres de proxy du client et assurez-vous que la configuration proxy sur l’ordinateur client est prise en charge par Intune et que l’ordinateur client a accès à Internet.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Le package d'inscription n'est plus à jour.|Téléchargez et installez le package de logiciel client le plus récent à partir de l’espace de travail Administration.|
@@ -280,6 +284,7 @@ Cela peut être dû au fait que l’ordinateur avait déjà été inscrit préc�
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

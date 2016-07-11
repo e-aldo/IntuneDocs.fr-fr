@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: Restreindre l’accès aux services de messagerie et O365 | Microsoft Intune
-description:
-keywords:
+title: "Restreindre l’accès aux services de messagerie et O365 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# Restreindre l’accès aux services de messagerie et O365 avec Microsoft Intune
+# Restreindre l’accès aux services de messagerie, O365 et autres avec Microsoft Intune
 Vous pouvez restreindre l’accès à votre messagerie d’entreprise et aux services O365 avec l’accès conditionnel d’Intune. La capacité d’accès conditionnel d’Intune vous permet de vous assurer que l’accès à la messagerie de votre entreprise et aux services O365 est limité aux appareils qui respectent les règles que vous avez définies.
 ## Comment fonctionne l’accès conditionnel ?
 Les paramètres de la stratégie de conformité sont utilisés pour évaluer la conformité de l’appareil. La stratégie d’accès conditionnel utilise l’évaluation pour bloquer ou autoriser l’accès à un service spécifique. Lorsqu’une stratégie d’accès conditionnel est utilisée en association avec une stratégie de conformité, seuls les appareils conformes pourront accéder au service.
@@ -37,7 +30,7 @@ Quand un appareil ne remplit pas les conditions définies dans les stratégies, 
 
 Voici un flux typique d’accès conditionnel :
 
-![Le diagramme montre les points de décision utilisés pour déterminer si un appareil est autorisé ou non à accéder à un service](./media/ConditionalAccess4.png)
+![Le diagramme montre les points de décision utilisés pour déterminer si un appareil est autorisé ou non à accéder à un service](../media/ConditionalAccess4.png)
 
 ## Comment configurer l’accès conditionnel ?
 Utilisez l’accès conditionnel pour gérer l’accès à Microsoft **Exchange sur site**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online** et **Skype Entreprise Online**.
@@ -67,8 +60,10 @@ Contrairement à d’autres stratégies Intune, vous ne déployez pas de straté
   - [Créer une stratégie d’accès conditionnel à Exchange Online Dedicated (environnement hérité)](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel à SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Créer une stratégie d’accès conditionnel à Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

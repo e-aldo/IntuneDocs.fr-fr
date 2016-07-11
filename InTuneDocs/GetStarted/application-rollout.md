@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Déploiement d’application | Microsoft Intune
-description:
-keywords:
+title: "Déploiement d’application | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+
 
 ---
 
@@ -55,6 +49,9 @@ Considérez les points suivants :
 -   Vérifiez que le type d’application est pris en charge par Intune.
 
 -   Vérifiez que vous disposez d’un espace de stockage cloud suffisant pour charger l’application. Vous trouverez des instructions pour l’achat de stockage supplémentaire dans [Ajouter des applications avec Microsoft Intune](/intune/deploy-use/add-apps).
+
+> [!NOTE]           
+> Vous pouvez télécharger ce [modèle de planification pour les applications mobiles](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59) pour faciliter votre processus de déploiement.
 
 ## Preuve de concept
 Durant la phase de preuve de concept, vous devez tester votre déploiement d’application dans un environnement de laboratoire sur des appareils et des utilisateurs que vous avez configurés strictement à des fins de test.
@@ -97,6 +94,7 @@ Pendant la phase pilote, vous allez déployer l’application vers un petit grou
 [Résoudre les problèmes de déploiement d’applications dans Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

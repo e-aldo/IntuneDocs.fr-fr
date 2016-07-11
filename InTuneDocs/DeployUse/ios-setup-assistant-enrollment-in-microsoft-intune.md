@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Assistant de configuration pour les appareils iOS avec Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
+ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+
 
 ---
 
@@ -67,6 +61,9 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’a
             -   **Pas d’affinité utilisateur** : l’appareil n’est affilié à aucun utilisateur. Utilisez cette affiliation pour les appareils qui effectuent des tâches sans accéder aux données de l'utilisateur local. Les applications nécessitant une affiliation utilisateur sont désactivées ou ne fonctionnent pas.
 
         -   **Affectation préalable du groupe d’appareils** : tous les appareils déployés dans ce profil appartiennent initialement à ce groupe. Vous pouvez réaffecter les appareils après l'inscription.
+
+        >[!Important]
+        >Les affectations de groupe passeront d’Intune à Azure Active Directory. [En savoir plus](http://go.microsoft.com/fwlink/?LinkID=787064)
 
           -  **Device Enrollment Program (DEP)** : vous ne pouvez pas utiliser Apple Device Enrollment Program (DEP) avec l’inscription par le biais de l’Assistant de configuration. Vérifiez que ce commutateur est **désactivé**.
 
@@ -155,6 +152,7 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’a
 [Se préparer à inscrire des appareils](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

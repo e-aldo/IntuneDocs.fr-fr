@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies | Microsoft Intune
-description:
-keywords:
+title: "Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Pour obtenir la liste complète des stratégies Intune, consultez le [Guide de r
 
 2.  Sélectionnez la stratégie souhaitée, choisissez d’utiliser les paramètres recommandés pour la stratégie (le cas échéant, mais vous pouvez les modifier plus tard) ou de créer une stratégie personnalisée avec vos propres paramètres.
 
-    > [!TIP] Pour choisir la bonne stratégie, consultez le [Guide de référence des stratégies Microsoft Intune](microsoft-intune-policy-reference.md).
+    > [!TIP]
+    > Pour choisir la bonne stratégie, consultez le [Guide de référence des stratégies Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Quand vous êtes prêt, sélectionnez **Créer une stratégie**.
 
@@ -119,7 +114,7 @@ Si un appareil ne se manifeste pas pour obtenir la stratégie après l’envoi d
 
 Dans ce cas, l’appareil obtiendra la stratégie lors de son prochain enregistrement planifié auprès du service Intune, de la manière suivante :
 
-- iOS - Toutes les 6 heures
+- iOS et Mac OS X - Toutes les 6 heures
 - Android - Toutes les 8 heures
 - Windows Phone - Toutes les 8 heures
 - Appareils Windows RT inscrits – Toutes les 24 heures
@@ -127,10 +122,10 @@ Dans ce cas, l’appareil obtiendra la stratégie lors de son prochain enregistr
 
 Si l’appareil vient d’être inscrit, la fréquence d’enregistrement est plus fréquente :
 
-- iOS - Toutes les 15 minutes pendant 6 heures, puis toutes les 6 heures
+- iOS et Mac OS X- Toutes les 15 minutes pendant 6 heures, puis toutes les 6 heures
 - Android - Toutes les 3 minutes pendant 15 minutes, puis toutes les 15 minutes pendant 2 heures, puis toutes les 8 heures
 - Windows Phone - Toutes les 5 minutes pendant 15 minutes, puis toutes les 15 minutes pendant 2 heures, puis toutes les 8 heures
-- PC Windows inscrits en tant qu’appareils - Toutes les 3 minutes pendant 30 minutes, puis toutes les 24 heures
+- PC Windows inscrits en tant qu’appareils - Toutes les 3 minutes pendant 30 minutes, puis toutes les 8 heures
 
 Les utilisateurs peuvent également lancer l’application Portail d’entreprise et synchroniser l’appareil pour qu’il recherche immédiatement les stratégies à tout moment.
 
@@ -149,7 +144,7 @@ Quand plus de deux stratégies sont déployées sur le même utilisateur ou appa
 
 -   En présence de deux stratégies de conformité, c’est le paramètre de la stratégie de conformité la plus restrictive qui est appliqué
 
--   En présence de deux stratégies de configuration, c’est le paramètre de la stratégie de configuration la plus restrictive qui est appliqué
+-   Si un paramètre de stratégie de configuration entre en conflit avec un paramètre dans une autre stratégie de configuration, ce conflit apparaît dans la console Intune. Vous devez corriger ces conflits manuellement.
 
 ### Que se passe-t-il quand des stratégies de gestion des applications mobiles (MAM) entrent en conflit ? Laquelle est appliquée à l’application ?
 Les valeurs en conflit sont les paramètres les plus restrictifs disponibles dans une stratégie de gestion des applications mobiles, à l’exception des champs d’entrée numérique (comme le nombre de tentatives autorisées avant la réinitialisation du code confidentiel).  Les champs d’entrée numérique sont définis sur les mêmes valeurs que quand vous créez une stratégie MAM dans la console en choisissant les paramètres recommandés.
@@ -178,7 +173,25 @@ Quand vous supprimez une stratégie ou retirez un appareil d'un groupe sur leque
         - Type de mot de passe requis
         - Expiration du mot de passe (jours)
         - Mémoriser l'historique des mots de passe
-        - Nombre d'échecs de connexion successifs autorisé avant réinitialisation de l'appareil – Minutes d’inactivité avant demande du mot de passe – Type de mot de passe requis – Nombre minimum de jeux de caractères – Autoriser l’appareil photo – Exiger le chiffrement sur l’appareil mobile – Autoriser le stockage amovible – Autoriser le navigateur web – Autoriser la boutique d’applications – Autoriser la capture d’écran – Autoriser la géolocalisation – Autoriser un compte Microsoft – Autoriser la fonction copier-coller – Autoriser la connexion Wi-Fi – Autoriser la connexion automatique aux points d’accès Wi-Fi gratuits – Autoriser l’indication des points d’accès Wi-Fi – Autoriser la réinitialisation aux paramètres d’usine – Autoriser Bluetooth – Autoriser NFC – Autoriser le Wi-Fi
+        - Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil
+        - Minutes d'inactivité avant demande du mot de passe
+        - Type de mot de passe requis - Nombre minimum de jeux de caractères
+        - Autoriser l'appareil photo
+        - Exiger le chiffrement sur l'appareil mobile
+        - Autoriser le stockage amovible
+        - Autoriser le navigateur web
+        - Autoriser la boutique d'applications
+        - Autoriser la capture d'écran
+        - Autoriser la géolocalisation
+        - Autoriser un compte Microsoft
+        - Autoriser la fonction copier-coller
+        - Autoriser la connexion Wi-Fi
+        - Autoriser la connexion automatique aux points d'accès Wi-Fi gratuits
+        - Autoriser l'indication des points d'accès Wi-Fi
+        - Autoriser la réinitialisation aux paramètres d'usine
+        - Autoriser Bluetooth
+        - Autoriser NFC
+        - Autoriser le Wi-Fi
     
     - **iOS** - Tous les paramètres sont supprimés, sauf :
         - Autoriser l'itinérance vocale
@@ -200,9 +213,10 @@ Quand vous supprimez une stratégie ou retirez un appareil d'un groupe sur leque
 
 ### Où puis-je trouver de l’aide concernant mes problèmes de stratégies ?
 
-Consultez [Résoudre les problèmes de stratégie dans Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
+Consultez [Résoudre les problèmes de stratégie dans Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
