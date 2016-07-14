@@ -46,6 +46,7 @@ Les stratégies de gestion des applications mobiles (GAM) sont appliquées uniqu
 
     ![Capture d’écran montrant l’emplacement de fichier à ouvrir avec la liste des fichiers existants](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] Lorsque vous modifiez une stratégie déployée, les modifications sont appliquées la prochaine fois que vous ouvrez l’application.
 
 ##  Accès à OneDrive sur un appareil Android
@@ -169,6 +170,6 @@ Cela ne vous empêche pas d’utiliser l’application de partage RMS pour affic
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

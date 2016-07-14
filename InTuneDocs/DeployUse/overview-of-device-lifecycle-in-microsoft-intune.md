@@ -45,6 +45,6 @@ Quand un appareil est perdu ou volé, doit être remplacé, ou lorsque des utili
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

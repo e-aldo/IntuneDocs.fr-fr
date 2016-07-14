@@ -33,6 +33,6 @@ Appuyez sur **Paramètres** &gt; **Général** &gt; **Mise à jour logicielle*
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
