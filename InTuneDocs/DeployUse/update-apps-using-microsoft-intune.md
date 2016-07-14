@@ -49,6 +49,6 @@ Pour les applications déployées via un lien redirigeant vers un magasin, la mi
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

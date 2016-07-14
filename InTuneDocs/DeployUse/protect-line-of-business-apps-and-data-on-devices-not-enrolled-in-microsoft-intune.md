@@ -74,6 +74,6 @@ Vous pouvez supprimer une application métier de la liste des applications.  Cel
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
