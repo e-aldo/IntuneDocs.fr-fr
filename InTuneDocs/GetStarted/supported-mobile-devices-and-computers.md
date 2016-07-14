@@ -33,6 +33,6 @@ Vous pouvez gérer ces appareils et PC même s’ils ne sont pas joints à un do
 [Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

@@ -79,6 +79,6 @@ Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
