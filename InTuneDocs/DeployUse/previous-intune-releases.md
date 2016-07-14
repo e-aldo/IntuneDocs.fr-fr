@@ -420,10 +420,10 @@ Les modifications suivantes ont été apportées aux applications Portail d’en
 
 >[!div class="step-by-step"]
 
->[&larr; **Nouveautés d'Intune**](whats-new-in-microsoft-intune.md)    
+>[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 
