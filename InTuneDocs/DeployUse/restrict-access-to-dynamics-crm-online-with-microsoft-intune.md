@@ -54,8 +54,10 @@ Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégi
 ### Étape 2 : configurer et déployer une stratégie de conformité
 [Créez](create-a-device-compliance-policy-in-microsoft-intune.md) et [déployez](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) une stratégie de conformité pour tous les appareils qui seront affectés par la stratégie. Il s’agit de tous les appareils utilisés par les utilisateurs des groupes ciblés.
 
+> [!NOTE]
 > [!NOTE]Tandis que les stratégies de conformité sont déployées sur des groupes Microsoft Intune, les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
 
+> [!IMPORTANT]
 > [!IMPORTANT] Si vous n’avez pas déployé de stratégie de conformité, les appareils sont considérés comme conformes.
 
 Quand vous êtes prêt, passez à l’Étape 3.
@@ -94,6 +96,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
