@@ -28,6 +28,7 @@ Quand vous déployez des applications, vous pouvez choisir parmi les actions de 
 
 -   **Installation requise** : l’application est installée sur l’appareil, sans intervention de l’utilisateur final.
 
+    > [!TIP]
     > [!TIP] Pour les appareils iOS qui ne sont pas en mode supervisé et pour tous les appareils Android, l’utilisateur doit accepter l’offre de l’application avant son installation.
     > 
     >  Si un utilisateur final désinstalle une application que vous avez déployée comme installation requise, Intune réinstalle automatiquement l’application après le cycle d’inventaire suivant, qui se produit généralement tous les 7 jours.
@@ -52,6 +53,7 @@ Quand vous déployez des applications, vous pouvez choisir parmi les actions de 
 |Lien externe (déployé sur un groupe d'appareils)|Non|Non|Non|Non|
 |Application iOS gérée à partir de l'App Store (déployée sur un groupe d'utilisateurs)|Oui|Oui|Oui|Oui|
 |Application iOS gérée à partir de l'App Store (déployée sur un groupe d'appareils)|Oui|Non|Oui|Oui|
+> [!TIP]
 > [!TIP] Quand vous déployez des applications, si vous sélectionnez à la fois des groupes d’utilisateurs et des groupes d’appareils, vous pouvez déployer l’application seulement comme **Installation disponible**.
 
 ## Conflits de déploiement
@@ -70,6 +72,6 @@ Découvrez comment [déployer des applications dans Microsoft Intune](deploy-app
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

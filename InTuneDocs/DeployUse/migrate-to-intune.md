@@ -72,6 +72,6 @@ Pour obtenir une copie téléchargeable de ce guide dans son intégralité, acc�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
