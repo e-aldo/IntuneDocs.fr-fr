@@ -46,6 +46,7 @@ La capture d’écran ci-dessous illustre clairement ce point à travers deux ex
 
 ![Stratégie des appareils Intune](../media/Intune-Device-Policy-v.2.jpg)
 
+> [!NOTE]
 > [!NOTE] N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
 
 ## Stratégie d’actualisation et intervalles de mise à jour
@@ -68,6 +69,7 @@ Pour les appareils Windows non soumis à la gestion des appareils mobiles, les e
 
 2.  Attendez 20 minutes que le logiciel client soit supprimé.
 
+    > [!NOTE]
     > [!NOTE] N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
 
 3.  Dans le menu Démarrer, tapez **UAC** pour ouvrir les paramètres de Contrôle de compte d’utilisateur.
@@ -110,6 +112,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
