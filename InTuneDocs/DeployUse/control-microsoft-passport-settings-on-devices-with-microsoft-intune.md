@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Contrôler les paramètres de Microsoft Passport sur les appareils | Microsoft Intune
-description:
-keywords:
+title: "Contrôler les paramètres de Microsoft Passport sur les appareils | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+
 
 ---
 
@@ -57,7 +51,8 @@ Intune s’intègre à Passport for Work de deux manières :
     - **Autorisé** : les utilisateurs peuvent utiliser le type de caractère dans leur code confidentiel, mais cela n’est pas obligatoire.
     - **Requis** : les utilisateurs doivent inclure au moins l’un des types de caractères dans leur code confidentiel. Par exemple, il est courant d’exiger au moins une majuscule et un caractère spécial.
     - **Non autorisé** (par défaut) : les utilisateurs ne doivent pas utiliser ces types de caractères dans leur code confidentiel (ce comportement vaut également si le paramètre n’est pas configuré).
-    > [!TIP] Les caractères spéciaux sont les suivants : **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP]
+    > Les caractères spéciaux sont les suivants : **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Expiration du code confidentiel (jours)** : nous vous conseillons de spécifier une période d’expiration pour un code confidentiel, après laquelle les utilisateurs finaux doivent le modifier. La valeur par défaut est 41 jours. 
 - **Conserver l’historique des codes confidentiels** : utilisez ce paramètre pour limiter la réutilisation des codes confidentiels précédemment utilisés. Par défaut, les cinq derniers codes confidentiels utilisés ne peuvent pas être réutilisés.
 
@@ -79,6 +74,7 @@ Pour plus d’informations sur Microsoft Passport, consultez [le guide](https://
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Renouveler un certificat de signature de code d’entreprise Symantec à utiliser avec Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Renouveler un certificat de signature de code d’entreprise Symantec à utiliser avec Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -41,7 +35,7 @@ Le certificat Symantec utilisé pour gérer certains appareils mobiles Windows e
 
 ## Comment installer le certificat mis à jour pour Windows Phone 8.0
 
-1.  Téléchargez et signez l’application du portail d’entreprise Windows Phone la plus récente à l’adresse suivante : [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
+1.  Téléchargez et signez l'application Portail d'entreprise Windows Phone la plus récente à l'adresse suivante : [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
 2.  Ouvrez la console d’administration Intune ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) et accédez à **Admin**, **Gestion des appareils mobiles** &gt; **Windows Phone**, puis cliquez sur **Télécharger l’application signée**.
 
@@ -55,7 +49,7 @@ Le fichier SSP.xap signé est actuellement le seul moyen de fournir le certifica
 
 ## Comment installer le certificat mis à jour pour Windows Phone 8.1 et versions ultérieures
 
-1.  Téléchargez et signez l’application du portail d’entreprise Windows Phone la plus récente à partir du Centre de téléchargement à l’adresse suivante : [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
+1.  Téléchargez et signez l'application Portail d'entreprise Windows Phone la plus récente à partir du Centre de téléchargement à l'adresse suivante : [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
 2.  Ouvrez la [console d’administration Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) et accédez à **Admin** &gt; **Gestion des appareils mobiles** &gt; **Windows Phone**, puis cliquez sur **Télécharger l’application signée**.
 
@@ -67,10 +61,11 @@ Le fichier SSP.xap signé est actuellement le seul moyen de fournir le certifica
 
 
 ### Voir aussi
-[Configurer la gestion de Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+[Configurer la gestion de Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 [Configurer la gestion de Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

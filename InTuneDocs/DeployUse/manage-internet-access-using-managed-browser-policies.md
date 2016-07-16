@@ -1,38 +1,30 @@
 ---
-# required metadata
-
-title: Gérer l’accès à Internet à l’aide de stratégies Managed Browser | Microsoft Intune
-description:
-keywords:
+title: "Gérer l’accès à Internet à l’aide de stratégies Managed Browser | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 2df44199ecd904dcfb6774a942244338c1384186
+ms.openlocfilehash: c4462af584d54225084159dfa35f5e1d07c36397
+
 
 ---
 
 # Gérer l'accès à Internet à l'aide de stratégies Managed Browser avec Microsoft Intune
 Managed Browser est une application de navigation web que vous pouvez déployer dans votre organisation à l’aide de Microsoft Intune. Une stratégie Managed Browser configure une liste autorisée ou une liste bloquée qui restreint les sites web auxquels les utilisateurs de Managed Browser ont accès.
 
-Comme il s'agit d'une application gérée, vous pouvez aussi lui appliquer des stratégies de gestion des applications mobiles, notamment pour contrôler l'utilisation des fonctions couper, copier et coller, pour empêcher les captures d'écran ou encore pour vous assurer que les liens vers du contenu sur lesquels les utilisateurs cliquent s'ouvrent uniquement dans d'autres applications gérées. Pour plus d’informations, consultez [Configurer et déployer des données à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) (en anglais).
+Comme il s'agit d'une application gérée, vous pouvez aussi lui appliquer des stratégies de gestion des applications mobiles, notamment pour contrôler l'utilisation des fonctions couper, copier et coller, pour empêcher les captures d'écran ou encore pour vous assurer que les liens vers du contenu sur lesquels les utilisateurs cliquent s'ouvrent uniquement dans d'autres applications gérées. Pour plus d’informations, consultez [Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
->Si des utilisateurs installent Managed Browser à partir de l’App Store et qu’il n’est pas géré par Intune, le comportement suivant s’applique :
-iOS : l’application Managed Browser peut être utilisée comme navigateur web de base, mais certaines fonctionnalités ne seront pas disponibles et il ne pourra pas accéder à des données d’autres applications gérées par Intune.
+>Si des utilisateurs installent Managed Browser à partir de l’App Store et qu’il n’est pas géré par Intune, le comportement suivant s’applique : iOS : l’application Managed Browser peut être utilisée comme navigateur web de base, mais certaines fonctionnalités ne seront pas disponibles et elle ne pourra pas accéder à des données d’autres applications gérées par Intune.
 Android : l’application Managed Browser ne peut pas être utilisée.
 Si des utilisateurs installent eux-mêmes Managed Browser sur un appareil iOS dont la version est inférieure à iOS 9, il ne sera pas géré par les stratégies que vous créez. Pour s'assurer que le navigateur est géré par Intune, les utilisateurs doivent désinstaller l'application avant de la déployer en tant qu'application gérée. Sur iOS 9 et versions ultérieures, si l’utilisateur installe lui-même Managed Browser, il sera invité à autoriser sa gestion par la stratégie.
 
@@ -40,7 +32,7 @@ Vous pouvez créer des stratégies Managed Browser pour les types d'appareils su
 
 -   les appareils qui exécutent Android 4 et versions ultérieures ;
 
--   appareils qui exécutent iOS 7.1 et versions ultérieures ;
+-   Appareils qui exécutent iOS 7.1 et versions ultérieures
 
 Intune Managed Browser prend en charge l’ouverture de contenu web des [partenaires de l’application Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
@@ -76,7 +68,7 @@ Après avoir défini la stratégie Managed Browser, vous pouvez créer un déplo
 
 Déployez l'application en veillant à sélectionner la stratégie Managed Browser dans la page **Gestion des applications mobiles** pour associer la stratégie à l'application.
 
-Pour plus d’informations sur la façon de déployer des applications, consultez la page [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md)..
+Pour plus d’informations sur la façon de déployer des applications, consultez la page [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 ## Sécurité et confidentialité de Managed Browser
 
@@ -108,7 +100,7 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
     -   Port 443 pour https
 
-    Vous ne pouvez pas utiliser de caractères génériques pour le numéro de port. Par exemple, **http://www.contoso.com:*;** et **http://www.contoso.com: /*;**
+    Vous ne pouvez pas utiliser de caractères génériques pour le numéro de port. Par exemple, **http&colon;//www&period;contoso&period;com:*;** et **http&colon;//www&period;contoso&period;com: /*;**
 
 -   Utilisez le tableau suivant pour en savoir plus sur les modèles autorisés que vous pouvez utiliser pour spécifier des URL :
 
@@ -157,6 +149,7 @@ Si plusieurs stratégies Managed Browser sont déployées sur un appareil et qu'
 -   Si un appareil a déjà reçu une stratégie Managed Browser et qu'une deuxième stratégie est déployée avec des paramètres en conflit, les paramètres d'origine restent sur l'appareil. Utilisez le nœud **Conflits de stratégies** de l'espace de travail **Stratégie** pour afficher les conflits.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
 ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
 
@@ -71,6 +72,6 @@ La vue détaillée affiche le message d’erreur, l’application à laquelle l�
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

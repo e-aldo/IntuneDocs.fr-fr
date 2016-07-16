@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 ms.reviewer: arnab
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: c94414ee28e8fa808ba08a5c97624d3d9b95fecb
 
@@ -29,6 +30,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Fonctionnalités de gestion des PC Windows | Microsoft Intune
-description:
-keywords:
+title: "Fonctionnalités de gestion des PC Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -39,6 +33,8 @@ Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intu
 -   **Gestion des licences logicielles** : suivez le nombre de licences logicielles disponibles et le nombre de licences disponibles utilisé.
 -   **Déploiement d'applications** : déployez des logiciels sur les ordinateurs que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des ordinateurs avec le logiciel client.
 
+
+Intune prend en charge l’installation du logiciel client PC sur un maximum de 7 000 appareils Windows.
 
 ## Conditions du système d'exploitation
 Intune peut gérer des ordinateurs exécutant les versions de Windows suivantes (x86 et x64) :
@@ -71,12 +67,13 @@ Voici la configuration logicielle requise pour l’installation du client PC Int
 |---------------|--------------------|
 |Autorisations administratives|Le compte qui installe le logiciel client doit disposer des autorisations d’administrateur local sur ce PC.|
 |Windows Installer 3.1|Windows Installer 3.1 au minimum doit être installé sur le PC.|
-|Supprimer les logiciels clients incompatibles|Avant d’installer le logiciel client PC Intune , vous devez désinstaller le logiciel client suivant de ce PC :<br /><br />- Toute version de Configuration Manager<br />- Toute version de Microsoft Systems Management Server (SMS)|
+|Supprimer les logiciels clients incompatibles|Avant d’installer le logiciel client PC Intune, vous devez désinstaller le logiciel client suivant de ce PC :<br /><br />- Toute version de Configuration Manager<br />- Toute version de Microsoft Systems Management Server (SMS)|
 
 ### Voir aussi
 [Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Restreindre l’accès à Skype Entreprise Online | Microsoft Intune
-description:
-keywords:
+title: "Restreindre l’accès à Skype Entreprise Online | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
+ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+
 
 ---
 
@@ -39,7 +32,7 @@ Lorsqu’un utilisateur ciblé tente d’utiliser Skype Entreprise Online sur so
 **Avant** de configurer une stratégie d’accès conditionnel à Skype Entreprise Online, vous devez :
 - Disposer d’un **abonnement Skype Entreprise Online** et affecter une licence Skype Entreprise Online aux utilisateurs.
 - Disposer d’un abonnement à **Enterprise Mobility Suite** ou **Azure Active Directory Premium**.
--   **Activer l’authentification moderne** pour Skype Entreprise Online. Connectez-vous à Microsoft Connect et remplissez [ce formulaire](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) pour vous inscrire au programme d’authentification moderne.
+-   [Authentification moderne activée](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) pour Skype Entreprise Online. 
 -  Tous vos utilisateurs finaux doivent utiliser **Skype Entreprise Online**. Si votre déploiement comprend à la fois Skype Entreprise Online et Skype Entreprise local, la stratégie d’accès conditionnel n’est pas appliquée aux utilisateurs finaux.
 
     Pour accéder à Skype Entreprise Online, un appareil doit être :
@@ -119,6 +112,7 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 * **Appareils enregistrés avec AAD et conformes** : ces appareils peuvent accéder à Skype Entreprise Online.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

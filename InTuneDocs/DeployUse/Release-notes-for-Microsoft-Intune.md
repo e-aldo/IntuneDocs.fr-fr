@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Notes de publication pour Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 1906f14568484ebbf23ac7c4350964fb2d5d508f
+
 
 ---
 
@@ -65,7 +59,7 @@ Dans les deux cas ci-dessus, le profil d’accès aux ressources (profil de mess
 
 1.  Sur l’appareil Windows 8.1, ouvrez **Internet Explorer**.
 
-2.  Lorsque vous y êtes invité, entrez les informations d’identification du serveur proxy, puis sélectionnez l’option **Mémoriser mes informations d’identification**..
+2.  Lorsque vous y êtes invité, entrez les informations d'identification du serveur proxy, puis sélectionnez l'option **Mémoriser mes informations d'identification**.
 
 3.  Inscrivez l'appareil.
 
@@ -78,7 +72,7 @@ Dans les deux cas ci-dessus, le profil d’accès aux ressources (profil de mess
 ## L'outil de création de package de restrictions d'application Microsoft Intune pour Android n'intègre aucune fonctionnalité de désinstallation
 **Problème :** l’outil **Microsoft App Wrapping Tool for Android** n’intègre aucune fonctionnalité permettant de le désinstaller.
 
-**Solution de contournement :** accédez à l’emplacement où vous avez installé l’outil, puis supprimez le répertoire. L’emplacement d’installation par défaut est : **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. Pour plus d’informations sur App Wrapping Tool, consultez [Préparer des applications Android pour la gestion avec App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)..
+**Solution de contournement :** accédez à l’emplacement où vous avez installé l’outil, puis supprimez le répertoire. L’emplacement d’installation par défaut est : **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. Pour plus d’informations sur App Wrapping Tool, consultez [Préparer des applications Android pour la gestion avec App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool).
 
 ## L'assistance à distance n'est pas disponible sur les ordinateurs qui exécutent Windows 8 ou Windows 8.1
 **Problème :** dans cette version, la fonctionnalité d’assistance à distance n’est pas disponible sur les ordinateurs qui exécutent Windows 8 ou Windows 8.1.
@@ -96,6 +90,7 @@ Le portail Azure en version préliminaire repose sur une nouvelle plateforme et 
 L’expérience mobile visible par l’utilisateur final et la console d’administration Intune prennent en charge le danois, le grec, le finnois, le norvégien et le roumain, en plus des langues prises en charge par le portail Azure en version préliminaire.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

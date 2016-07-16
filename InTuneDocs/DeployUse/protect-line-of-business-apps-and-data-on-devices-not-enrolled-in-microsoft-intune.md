@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Protéger les données et applications métier sur des appareils non inscrits | Microsoft Intune
-description:
-keywords:
+title: "Protéger les données et applications métier sur des appareils non inscrits | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ Vous pouvez déployer des applications sur vos utilisateurs finaux de diverses m
 * Pour les appareils gérés par aucune solution de gestion des appareils mobiles, vous avez besoin d’une solution personnalisée. Les utilisateurs finaux doivent télécharger et installer l’application sur leur appareil.
 
 ## Modification des métadonnées
-Si vous devez modifier les détails de l’application, tels que le nom de l’application ou l’identificateur de lot, vous devez [supprimer l’application](#remove-apps) et [l’ajouter](#add-the-app) avec les nouvelles métadonnées.
+Si vous devez modifier les détails de l’application, tels que le nom de l’application ou l’identificateur de lot, vous devez [supprimer l’application](#remove-apps) et [l’ajouter](#step-2-add-the-app) avec les nouvelles métadonnées.
 
 ##  Supprimer des applications
 Vous pouvez supprimer une application métier de la liste des applications.  Cela supprime l’application de la liste ainsi que l’association avec les stratégies GAM, mais ne supprime pas et ne désinstalle pas l’application sur l’appareil de l’utilisateur final.  
@@ -80,6 +73,7 @@ Vous pouvez supprimer une application métier de la liste des applications.  Cel
   Cela supprime les applications de la liste des applications métier et de la liste des applications ciblées dans la stratégie GAM.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

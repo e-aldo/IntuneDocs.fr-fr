@@ -1,33 +1,28 @@
 ---
-# required metadata
-
-title: Guide du Kit SDK de l’application Microsoft Intune pour les développeurs iOS | Microsoft Intune
-description:
-keywords:
+title: "Guide du Kit SDK de l’application Microsoft Intune pour les développeurs iOS | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+
 
 ---
 
 # Guide du Kit de développement logiciel (SDK) des applications Microsoft Intune pour les développeurs iOS
 
-> [!NOTE] Vous pouvez d’abord consulter le [Guide de prise en main du Kit SDK de l’application Intune](intune-app-sdk-get-started.md), qui explique comment préparer l’intégration sur chaque plateforme prise en charge.* 
+> [!NOTE]
+> Vous pouvez d’abord consulter le [Guide de prise en main du Kit SDK de l’application Intune](intune-app-sdk-get-started.md), qui explique comment préparer l’intégration sur chaque plateforme prise en charge.* 
 
 Le Kit de développement logiciel (SDK) des applications Microsoft Intune pour iOS vous permet d’incorporer la gestion des applications mobiles Intune à votre application iOS. Une application de gestion des applications mobiles est une application intégrée au SDK des applications Intune. Elle permet aux administrateurs informatiques de déployer des stratégies sur votre application mobile quand l’application est gérée activement.
 
@@ -232,7 +227,8 @@ Avant de tester votre application compatible avec la gestion des applications mo
 
 * Lancez l’application (soit dans, soit en dehors de Xcode). Vérifiez que PIN fonctionne comme prévu.
 
-> [!NOTE] Vous pouvez maintenant utiliser « Paramètres -> nom_de_votre_application -> Activer les stratégies de test » pour activer et désactiver des paramètres.
+> [!NOTE]
+> Vous pouvez maintenant utiliser « Paramètres -> nom_de_votre_application -> Activer les stratégies de test » pour activer et désactiver des paramètres.
 
 # Pratiques recommandées pour iOS
 
@@ -244,6 +240,7 @@ Si Xcode a des difficultés à trouver `libIntuneMAM.a`, vous pouvez résoudre c
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

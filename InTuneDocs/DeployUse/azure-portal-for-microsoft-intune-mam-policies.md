@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
 ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
 
@@ -58,6 +59,6 @@ Si vous utilisez actuellement la **console d’administration Intune** pour gér
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

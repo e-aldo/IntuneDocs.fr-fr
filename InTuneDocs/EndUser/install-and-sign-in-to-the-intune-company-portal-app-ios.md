@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
 ms.reviewer: esmich
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: d59ee373d4b5b90442bdf0a282cf37e76c013e44
 
@@ -39,6 +40,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Protéger les appareils Windows avec l’authentification multifacteur | Microsoft Intune
-description:
-keywords:
+title: "Protéger les appareils Windows avec l’authentification multifacteur | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
+ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+
 
 ---
 
@@ -40,7 +34,8 @@ Tous les serveurs répertoriés ci-dessus doivent répondre à la configuration 
 #### Authentification multifacteur dans Intune
 Si votre organisation a une infrastructure informatique locale qui comprend un domaine Active Directory avec les services AD FS (Active Directory Federation Services), vous pouvez configurer l’authentification multifacteur sur votre serveur de fédération, puis l’activer pour inscription auprès d’Intune. En configurant l’authentification multifacteur sur Intune, vous permettez aux utilisateurs de s’authentifier une seule fois, lors de l’inscription, puis d’accéder aux ressources de l’entreprise sans avoir à répéter le processus d’authentification multifacteur à chaque fois.
 
->[!NOTE] L’authentification multifacteur est nécessaire par utilisateur ou par groupe sur le serveur AD FS.  
+>[!NOTE]
+>L’authentification multifacteur est requise par utilisateur ou par groupe sur le serveur AD FS.  
 
 #### Authentification multifacteur sans Intune
 Si vous configurez l’authentification MFA sur votre serveur de fédération, mais que vous ne l’activez pas pour l’inscription dans Intune, les utilisateurs doivent recourir à l’authentification MFA chaque fois qu’ils accèdent aux ressources d’entreprise (et pas seulement à l’inscription de l’appareil).
@@ -60,6 +55,7 @@ Pour plus d'informations sur la façon d'activer l'authentification multifacteur
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

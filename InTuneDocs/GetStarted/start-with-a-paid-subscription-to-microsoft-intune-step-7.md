@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Personnaliser le Portail d’entreprise | Microsoft Intune
-description:
-keywords:
+title: "Personnaliser le Portail d’entreprise | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 45f574a975c94338c4543c0cdbc3aef549030601
+
 
 ---
 
@@ -32,7 +26,7 @@ Le [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] est l'emplacemen
 > [!TIP]
 > Quand vous personnalisez le Portail d’entreprise, les configurations s’appliquent au site web du Portail d’entreprise et aux applications du Portail d’entreprise.
 
-La personnalisation du Portail d’entreprise permet de fournir une expérience familière et utile à vos utilisateurs finaux. Pour ce faire, connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) en tant qu’administrateur du service ou que client, choisissez **Administrateur** &gt; **Portail d’entreprise** et configurez les paramètres du Portail d’entreprise.
+La personnalisation du Portail d’entreprise permet de fournir une expérience familière et utile à vos utilisateurs finaux. Pour ce faire, connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) comme administrateur du service ou client, choisissez **Administration** &gt; **Portail d’entreprise** et configurez les paramètres du portail d’entreprise.
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
@@ -62,19 +56,20 @@ Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de
 |Nom du champ|Plus d'informations|
     |----------|----------------|
     |Couleur de thème|Sélectionnez une couleur de thème à appliquer au Portail d’entreprise.|
-    |Inclure le logo de l'entreprise|Lorsque vous activez cette option, vous pouvez télécharger le logo de votre entreprise pour qu’il apparaisse sur le Portail de celle-ci. Vous pouvez télécharger deux logos : un qui s’affiche quand l’arrière-plan du Portail d’entreprise est blanc, et un autre qui s’affiche quand l’arrière-plan du Portail d’entreprise utilise la couleur de thème que vous avez sélectionnée. Chaque logo doit être un fichier de type .png ou .jpg, et avoir une résolution maximale de 400 x 100 pixels et une taille inférieure ou égale à 750 Ko .|
+    |Inclure le logo de l'entreprise|Lorsque vous activez cette option, vous pouvez télécharger le logo de votre entreprise pour qu’il apparaisse sur le Portail de celle-ci. Vous pouvez télécharger deux logos : un qui s’affiche quand l’arrière-plan du Portail d’entreprise est blanc, et un autre qui s’affiche quand l’arrière-plan du Portail d’entreprise utilise la couleur de thème que vous avez sélectionnée. Chaque logo doit être un fichier de type .png ou .jpg, et avoir une résolution maximale de 400 x 100 pixels et une taille inférieure ou égale à 750 Ko.|
     |Choisir un arrière-plan pour l'application Portail d'entreprise [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)]|Ce paramètre affecte l’arrière-plan de l’application Portail d’entreprise [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] uniquement.|
 
 
 Après avoir enregistré vos modifications, vous pouvez utiliser les liens proposés au bas de la page **Portail d’entreprise** de la console d’administration pour afficher le site web du Portail d’entreprise. Ces liens ne peuvent pas être modifiés. Lorsqu’un utilisateur se connecte, ces liens présentent vos abonnements dans le Portail d’entreprise.
 
 ### Étapes suivantes
-Félicitations ! Vous venez d’effectuer l’étape 7 du *guide de démarrage rapide Intune*.
+Félicitations ! Vous venez d’effectuer l’étape 7 du *Guide de démarrage rapide pour Intune*.
 >[!div class="step-by-step"]
 
->[&larr; **Créer des applications et des stratégies**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Inscrire des appareils** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr;**Créer des applications et des stratégies**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)[       **Inscrire des appareils**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

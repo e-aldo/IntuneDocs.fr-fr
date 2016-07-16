@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Wi-Fi à l’aide d’une PSK (clé prépartagée) | Microsoft Intune
+title: "Wi-Fi à l’aide d’une PSK (clé prépartagée) | Microsoft Intune"
 description: 
-keywords:
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
+ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+
 
 
 ---
@@ -188,7 +182,7 @@ Vous pouvez également créer un du fichier XML à partir d’une connexion Wi-F
 
 ## Déploiement de la stratégie
 
-1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
+1.  Dans l’espace de travail **Stratégie** , sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
 
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
 
@@ -202,6 +196,7 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 [Connexions Wi-Fi dans Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

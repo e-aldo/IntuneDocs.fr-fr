@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Guide de référence des stratégies Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Guide de référence des stratégies Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+
 
 ---
 
@@ -30,7 +24,7 @@ ms.suite: ems
 Utilisez les informations de cette rubrique pour vous aider à déterminer la stratégie Microsoft Intune à utiliser pour gérer vos appareils.
 
 > [!TIP]
-> Pour plus d’informations sur la façon d’utiliser les stratégies, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+> Pour plus d’informations sur la façon d’utiliser les stratégies, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 
 ## Stratégies de configuration Android
@@ -38,7 +32,7 @@ Utilisez les informations de cette rubrique pour vous aider à déterminer la st
 |Nom de la stratégie|À utiliser pour|
 |---------------|------------------------|
 |**Configuration personnalisée (Android 4 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures)**|Déployer les paramètres OMA-URI, par exemple, les paramètres Wi-Fi, qui peuvent être utilisés pour contrôler les fonctionnalités de l'appareil. Cela est utile quand le paramètre dont vous avez besoin n'est pas disponible dans une stratégie de configuration.<br /><br />Pour plus d’informations, consultez [Paramètres de stratégie Android dans Microsoft Intune](android-policy-settings-in-microsoft-intune.md).|
-|**Profil de messagerie (Samsung Knox Standard 4.0 et versions ultérieures)**|Créez, déployez et analysez les paramètres de messagerie Exchange Active Sync sur les appareils gérés. L'utilisateur peut ainsi accéder à sa messagerie professionnelle sur son appareil personnel sans aucune autre configuration de sa part.<br /><br />Pour plus d’informations, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)..|
+|**Profil de messagerie (Samsung Knox Standard 4.0 et versions ultérieures)**|Créez, déployez et analysez les paramètres de messagerie Exchange Active Sync sur les appareils gérés. L'utilisateur peut ainsi accéder à sa messagerie professionnelle sur son appareil personnel sans aucune autre configuration de sa part.<br /><br />Pour plus d’informations, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Configuration générale (Android 4 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles.<br />Spécifier les applications qui sont conformes ou non conformes et signaler quand elles sont utilisées.<br />Configurer le mode plein écran qui verrouille les appareils pour autoriser uniquement certaines fonctionnalités, par exemple, autoriser l'appareil à n'exécuter qu'une seule application ou désactiver les boutons de volume.<br /><br />Pour plus d’informations, consultez [Paramètres de stratégie Android dans Microsoft Intune](android-policy-settings-in-microsoft-intune.md).|
 |**Profil de certificat PKCS #12 (.PFX) (Android 4 et versions ultérieures)**|Utilisez ce profil pour créer et déployer des paramètres PFX pour les demandes de certificat d’appareil.<br /><br />Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profil de certificat SCEP (Android 4 et versions ultérieures)**|Configurez un certificat SCEP (Simple Certificate Enrollment Protocol) utilisable avec un certificat d'appareil mobile approuvé pour authentifier les appareils mobiles et les autoriser à accéder à des ressources réseau telles que celles configurées par les profils VPN et Wi-Fi.<br /><br />Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
@@ -50,9 +44,9 @@ Utilisez les informations de cette rubrique pour vous aider à déterminer la st
 
 |Nom de la stratégie|À utiliser pour|
 |---------------|------------------------|
-|**Configuration personnalisée (iOS 7.1 et versions ultérieures)**|Déployez des profils de configuration que vous avez créés à l'aide de l'outil Apple Configurator sur des appareils iOS. Cela est utile quand le paramètre dont vous avez besoin n'est pas disponible dans une stratégie de configuration.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie iOS dans Microsoft Intune](ios-policy-settings-in-microsoft-intune.md)..|
-|**Profil de messagerie (iOS 7.1 et versions ultérieures)**|Créez, déployez et analysez les paramètres de messagerie Exchange Active Sync sur les appareils gérés. L'utilisateur peut ainsi accéder à sa messagerie professionnelle sur son appareil personnel sans aucune autre configuration de sa part.<br /><br />Pour plus d’informations, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)..|
-|**Configuration générale (iOS 7.1 et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles.<br />-   Spécifier les applications qui sont conformes ou non conformes et signaler quand elles sont utilisées.<br />Configurer le mode plein écran qui verrouille les appareils pour autoriser uniquement certaines fonctionnalités, par exemple, autoriser l'appareil à n'exécuter qu'une seule application ou désactiver les boutons de volume.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie iOS dans Microsoft Intune](ios-policy-settings-in-microsoft-intune.md)..|
+|**Configuration personnalisée (iOS 7.1 et versions ultérieures)**|Déployez des profils de configuration que vous avez créés à l'aide de l'outil Apple Configurator sur des appareils iOS. Cela est utile quand le paramètre dont vous avez besoin n'est pas disponible dans une stratégie de configuration.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie iOS dans Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
+|**Profil de messagerie (iOS 7.1 et versions ultérieures)**|Créez, déployez et analysez les paramètres de messagerie Exchange Active Sync sur les appareils gérés. L'utilisateur peut ainsi accéder à sa messagerie professionnelle sur son appareil personnel sans aucune autre configuration de sa part.<br /><br />Pour plus d’informations, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
+|**Configuration générale (iOS 7.1 et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles.<br />-   Spécifier les applications qui sont conformes ou non conformes et signaler quand elles sont utilisées.<br />Configurer le mode plein écran qui verrouille les appareils pour autoriser uniquement certaines fonctionnalités, par exemple, autoriser l'appareil à n'exécuter qu'une seule application ou désactiver les boutons de volume.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie iOS dans Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
 |**Profil de certificat SCEP (iOS 7.1 et versions ultérieures)**|Configurez un certificat SCEP (Simple Certificate Enrollment Protocol) utilisable avec un certificat d'appareil mobile approuvé pour authentifier les appareils mobiles et les autoriser à accéder à des ressources réseau telles que celles configurées par les profils VPN et Wi-Fi.<br /><br />Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profil de certificat approuvé (iOS 7.1 et versions ultérieures)**|Configurez un certificat d'appareil mobile approuvé qui peut être utilisé pour authentifier les appareils mobiles et les autoriser à accéder à des ressources réseau telles que celles configurées par les profils VPN et Wi-Fi.<br /><br />Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profil VPN (iOS 7.1 et versions ultérieures)**|Configurez et déployez des paramètres qui octroient aux utilisateurs un accès sécurisé à votre réseau d'entreprise à partir de leur appareil mobile. En déployant ces paramètres, vous réduisez l'effort que doit fournir l'utilisateur final pour se connecter à son travail.<br /><br />Pour plus d’informations, consultez [Connexions VPN dans Microsoft Intune.md](vpn-connections-in-microsoft-intune.md).|
@@ -75,17 +69,17 @@ S'applique uniquement à Windows Phone et aux appareils Windows inscrits.
 
 |Nom de la stratégie|À utiliser pour|
 |---------------|------------------------|
-|**Configuration personnalisée (Windows 10 Desktop et Mobile, et versions ultérieures)**|Déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités de l'appareil. Cela est utile quand le paramètre dont vous avez besoin n'est pas disponible dans une stratégie de configuration.<br />    Pour plus d’informations, consultez [Paramètres de la stratégie Windows 10 dans Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md)..|
-|**Configuration personnalisée (Windows Phone 8.1 et versions ultérieures)**|Déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités de l'appareil. Cela est utile quand le paramètre dont vous avez besoin n'est pas disponible dans une stratégie de configuration.<br /><br />Pour plus d’informations, consultez [Paramètres de Windows Phone 8.1 dans Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md)..|
+|**Configuration personnalisée (Windows 10 Desktop et Mobile, et versions ultérieures)**|Déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités de l'appareil. Cela est utile quand le paramètre dont vous avez besoin n'est pas disponible dans une stratégie de configuration.<br />    Pour plus d’informations, consultez [Paramètres de la stratégie Windows 10 dans Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
+|**Configuration personnalisée (Windows Phone 8.1 et versions ultérieures)**|Déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités de l'appareil. Cela est utile quand le paramètre dont vous avez besoin n'est pas disponible dans une stratégie de configuration.<br /><br />Pour plus d’informations, consultez [Paramètres de Windows Phone 8.1 dans Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
 |**Stratégie de mise à niveau d’édition (Windows 10 Desktop et versions ultérieures)**<br><br>**Stratégie de mise à niveau d’édition (Windows 10 Holographique et versions ultérieures)**|Configurer et déployer des stratégies contenant des informations sur les licences ou les clés de produits qui sont utilisées pour mettre à jour des appareils Windows 10 vers une version plus récente.<br><br>Pour plus d’informations, consultez [Stratégie de mise à niveau d’édition](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
-|**Profil de messagerie (Windows Phone 8 et versions ultérieures)**<br /><br />**Profil de messagerie (Windows 10 Desktop et Mobile, et versions ultérieures)**|Créez, déployez et analysez les paramètres de messagerie Exchange Active Sync sur les appareils gérés. L'utilisateur peut ainsi accéder à sa messagerie professionnelle sur son appareil personnel sans aucune autre configuration de sa part.<br /><br />Pour plus d’informations, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)..|
-|**Configuration générale (Windows 10 Desktop et Mobile, et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles pour les appareils Windows 10 Desktop et Mobile inscrits.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie Windows 10 dans Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md)..|
+|**Profil de messagerie (Windows Phone 8 et versions ultérieures)**<br /><br />**Profil de messagerie (Windows 10 Desktop et Mobile, et versions ultérieures)**|Créez, déployez et analysez les paramètres de messagerie Exchange Active Sync sur les appareils gérés. L'utilisateur peut ainsi accéder à sa messagerie professionnelle sur son appareil personnel sans aucune autre configuration de sa part.<br /><br />Pour plus d’informations, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
+|**Configuration générale (Windows 10 Desktop et Mobile, et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles pour les appareils Windows 10 Desktop et Mobile inscrits.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie Windows 10 dans Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configuration générale (Windows 10 Collaboration et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils pour les appareils Windows 10 Collaboration inscrits (par exemple, un appareil Surface Hub).<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie de configuration Windows Collaboration dans Microsoft Intune](windows-team-configuration-policy-settings-in-microsoft-intune.md).|
-|**Configuration générale (Windows 8.1 et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles pour les appareils Windows inscrits.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie Windows dans Microsoft Intune](windows-configuration-policy-settings-in-microsoft-intune.md)..|
-|**Configuration générale (Windows Phone 8.1 et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles.<br />Spécifiez les applications que les utilisateurs peuvent ou ne peuvent pas utiliser, et bloquez l'installation ou l'utilisation des applications non conformes.<br /><br />Pour plus d’informations, consultez [Paramètres de Windows Phone 8.1 dans Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md)..|
+|**Configuration générale (Windows 8.1 et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles pour les appareils Windows inscrits.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie Windows dans Microsoft Intune](windows-configuration-policy-settings-in-microsoft-intune.md).|
+|**Configuration générale (Windows Phone 8.1 et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles.<br />Spécifiez les applications que les utilisateurs peuvent ou ne peuvent pas utiliser, et bloquez l'installation ou l'utilisation des applications non conformes.<br /><br />Pour plus d’informations, consultez [Paramètres de Windows Phone 8.1 dans Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
 |**Profil de certificat PKCS #12 (.PFX) (Windows 10 Desktop et Mobile, et versions ultérieures)**|Utilisez ce profil pour créer et déployer des paramètres PFX pour les demandes de certificat d’appareil.<br /><br />Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profil de certificat SCEP (Windows 8.1 et versions ultérieures)**<br /><br />**Profil de certificat SCEP (Windows Phone 8.1 et versions ultérieures)**|Configurez un certificat SCEP (Simple Certificate Enrollment Protocol) utilisable avec un certificat d'appareil mobile approuvé pour authentifier les appareils mobiles et les autoriser à accéder à des ressources réseau telles que celles configurées par les profils VPN et Wi-Fi.<br /><br />Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
-|**Profil de certificat approuvé (Windows 8.1 et versions ultérieures)**<br /><br />**Profil de certificat approuvé (Windows Phone 8.1 et versions ultérieures)**|Configurez un certificat d'appareil mobile approuvé qui peut être utilisé pour authentifier les appareils mobiles et les autoriser à accéder à des ressources réseau telles que celles configurées par les profils VPN et Wi-Fi.<br /><br />Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md)).|
+|**Profil de certificat approuvé (Windows 8.1 et versions ultérieures)**<br /><br />**Profil de certificat approuvé (Windows Phone 8.1 et versions ultérieures)**|Configurez un certificat d'appareil mobile approuvé qui peut être utilisé pour authentifier les appareils mobiles et les autoriser à accéder à des ressources réseau telles que celles configurées par les profils VPN et Wi-Fi.<br /><br />Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profil VPN (Windows 10 Desktop et Mobile, et versions ultérieures)**<br /><br />**Profil VPN (Windows 8.1 et versions ultérieures)**<br /><br />**Profil VPN (Windows Phone 8.1 et versions ultérieures)**|Configurez et déployez des paramètres qui octroient aux utilisateurs un accès sécurisé à votre réseau d'entreprise à partir de leur appareil mobile. En déployant ces paramètres, vous réduisez l'effort que doit fournir l'utilisateur final pour se connecter à son travail.<br /><br />Pour plus d’informations, consultez [Connexions VPN dans Microsoft Intune.md](vpn-connections-in-microsoft-intune.md).|
 |**Importation Wi-Fi**|Importer et déployer des configurations Wi-Fi Windows que vous avez précédemment exportées vers un fichier.<br /><br />Pour plus d’informations, consultez [Connexions Wi-Fi dans Microsoft Intune](wi-fi-connections-in-microsoft-intune.md).|
 
@@ -110,8 +104,8 @@ S'applique uniquement à Windows Phone et aux appareils Windows inscrits.
 |Nom de la stratégie|À utiliser pour|
 |---------------|------------------------|
 |**Stratégie Exchange Online**<br /><br />**Stratégie Exchange On-Premises**|Bloquer l’accès à la messagerie Microsoft Exchange à partir des appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité que vous avez créée.<br /><br />Pour plus d’informations, consultez [Restreindre l’accès à Exchange Online et au nouvel environnement Exchange Online Dedicated avec Intune](restrict-access-to-exchange-online-with-microsoft-intune.md).|
-|**Stratégies SharePoint Online**|Bloquer l’accès à SharePoint Online à partir des appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité que vous avez créée.<br /><br />Pour plus d’informations, consultez [Restreindre l’accès à SharePoint Online avec Microsoft Intune](restrict-access-to-sharepoint-online-with-microsoft-intune.md)..|
-|**Skype pour Entreprises**|Bloquer l’accès à Skype pour Entreprises à partir des appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité que vous avez créée.<br /><br />Pour plus d’informations, consultez [Restreindre l’accès à Skype pour Entreprises avec Microsoft Intune](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)..|
+|**Stratégies SharePoint Online**|Bloquer l’accès à SharePoint Online à partir des appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité que vous avez créée.<br /><br />Pour plus d’informations, consultez [Restreindre l’accès à SharePoint Online avec Microsoft Intune](restrict-access-to-sharepoint-online-with-microsoft-intune.md).|
+|**Skype pour Entreprises**|Bloquer l’accès à Skype pour Entreprises à partir des appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité que vous avez créée.<br /><br />Pour plus d’informations, consultez [Restreindre l’accès à Skype pour Entreprises avec Microsoft Intune](restrict-access-to-skype-for-business-online-with-microsoft-intune.md).|
 > [!NOTE]
 > Vous ne déployez pas de stratégies d'accès conditionnel pour les utilisateurs et les appareils. Au lieu de cela, vous configurez la stratégie requise, qui s'applique à tous les groupes ciblés dans la stratégie.
 
@@ -119,7 +113,7 @@ S'applique uniquement à Windows Phone et aux appareils Windows inscrits.
 
 |Nom de la stratégie|À utiliser pour|
 |---------------|------------------------|
-|**Stratégies de conformité**|Définir le niveau de conformité des appareils, puis signaler les appareils non conformes. Ces stratégies sont utilisées avec un accès conditionnel pour aider à évaluer les appareils qui ne doivent pas recevoir les services.<br /><br />Pour plus d’informations, consultez [Stratégies de conformité d’appareils dans Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)..|
+|**Stratégies de conformité**|Définir le niveau de conformité des appareils, puis signaler les appareils non conformes. Ces stratégies sont utilisées avec un accès conditionnel pour aider à évaluer les appareils qui ne doivent pas recevoir les services.<br /><br />Pour plus d’informations, consultez [Stratégies de conformité d’appareils dans Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).|
 
 ## Gestion des PC Windows
 
@@ -135,6 +129,7 @@ S'applique uniquement à Windows Phone et aux appareils Windows inscrits.
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

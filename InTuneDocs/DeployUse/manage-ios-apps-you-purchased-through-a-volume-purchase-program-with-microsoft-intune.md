@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gérer les applications iOS que vous avez achetées par le biais d’un programme d’achat en volume | Microsoft Intune
-description:
-keywords:
+title: "Gérer les applications iOS que vous avez achetées par le biais d’un programme d’achat en volume | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Pour récupérer une licence, remplacez l’action de déploiement par **Désins
 
 Quand un utilisateur avec un appareil éligible essaie pour la première fois d’installer une application VPP, il est invité à participer au programme VPP d’Apple. Il doit accepter pour que l’installation de l’application se poursuivre.
 
-> [!TIP] Examinez la colonne **État des conditions d’utilisation du VPP** pour voir l’état d’acceptation de chaque utilisateur pour lequel l’application a été déployée.
+> [!TIP]
+> Examinez la colonne **État des conditions d’utilisation du VPP** pour voir l’état d’acceptation de chaque utilisateur pour lequel l’application a été déployée.
 
 S’il n’y a plus de licence disponible, le déploiement échoue.
 
 ## Surveiller les applications Apple VPP
 Vous pouvez surveiller les applications VPP qui ont été déployées et le nombre de licences utilisées à partir de l’espace de travail **Applications**, dans le nœud **Logiciels gérés** &gt; **Applications achetées en volume**.
 
-> [!TIP] Vous pouvez également utiliser des **Filtres** d’application pour examiner l’état de chaque installation d’application.
+> [!TIP]
+> Vous pouvez également utiliser des **Filtres** d’application pour examiner l’état de chaque installation d’application.
 
 ### Voir aussi
 [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

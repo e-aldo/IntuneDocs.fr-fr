@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Description du service | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
+ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+
 
 ---
 
@@ -38,7 +32,7 @@ Vous pouvez commencer à utiliser Intune avec une version d'évaluation gratuite
 
 Pour obtenir une liste des paramètres que vous pouvez configurer sur les appareils mobiles, consultez :
 
--   [Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
 -   [Paramètres généraux des appareils mobiles dans Configuration Manager](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
@@ -62,7 +56,7 @@ Voici les types de notifications que Microsoft fournit à propos du service Intu
 * API nouvelles ou modifiées : vous êtes invité à tester la compatibilité descendante des applications personnalisées.
 * Évolution de la configuration requise, par exemple, la version minimale requise du navigateur.
 * Mises à jour nécessitant de votre part des mesures pour activer la fonctionnalité ou éviter une interruption du service liée à cette fonctionnalité.
--   Microsoft fournit des informations sur les nouvelles fonctions, les nouvelles fonctionnalités et les améliorations apportées aux fonctionnalités existantes de notre mise à jour mensuelle du service. En général, Microsoft déploie les mises à jour du service aux alentours du 15 de chaque mois. Les mises à jour sont décrites dans [Nouveautés de Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md).
+-   Microsoft fournit des informations sur les nouvelles fonctions, les nouvelles fonctionnalités et les améliorations apportées aux fonctionnalités existantes de notre mise à jour mensuelle du service. En général, Microsoft déploie les mises à jour du service aux alentours du 15 de chaque mois. Les mises à jour sont décrites dans [Nouveautés de Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune).
 -   En cas de suppression du service Intune, vous êtes notifié 12 mois à l’avance.
 
 ## Choisissez la solution de gestion qui vous convient
@@ -70,24 +64,24 @@ Vous pouvez configurer Intune de différentes manières pour gérer et protéger
 
 -   **Configuration autonome d’Intune.** Utilisez la console d'administration Web intégrée à Intune pour gérer les périphériques de votre organisation. Intune peut être utilisé sans infrastructure informatique locale. Mais si vous l’utilisez avec les services de domaine Active Directory, vous pouvez utiliser les comptes d'utilisateur de domaine que vous gérez avec les services de domaine avec Intune.
 
--   **Windows Intune avec System Center Configuration Manager :** Utilisez la console d’administration de Configuration Manager pour gérer les ordinateurs et les appareils mobiles de votre entreprise. Cette configuration peut vous aider à gérer tous les appareils de votre organisation par l’intermédiaire d’une seule console, la console d’administration de Configuration Manager. Configuration Manager prend en charge un très grand nombre d'appareils mobiles, de serveurs et d'ordinateurs. Pour plus d’informations, consultez [Gérer les appareils mobiles avec Configuration Manager et Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) dans [Bibliothèque de documentation pour System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  Pour connaître l’approche qui convient le mieux à vos besoins, consultez [Mobilité d’entreprise : mode d’emploi](/intune/plan-design/ways-to-do-enterprise-mobility.md).
+-   **Windows Intune avec System Center Configuration Manager :** Utilisez la console d’administration de Configuration Manager pour gérer les ordinateurs et les appareils mobiles de votre entreprise. Cette configuration peut vous aider à gérer tous les appareils de votre organisation par l’intermédiaire d’une seule console, la console d’administration de Configuration Manager. Configuration Manager prend en charge un très grand nombre d'appareils mobiles, de serveurs et d'ordinateurs. Pour plus d’informations, consultez [Gérer les appareils mobiles avec Configuration Manager et Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) dans [Bibliothèque de documentation pour System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  Pour déterminer l’approche la plus appropriée pour vous, consultez [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx) (Choisir entre une gestion des appareils mobiles Microsoft Intune autonome et une gestion des appareils mobiles hybride avec Configuration Manager).
 
--   Gestion des appareils mobiles proposée par Office 365, comme indiqué dans [Mobilité d’entreprise : mode d’emploi](/intune/plan-design/ways-to-do-enterprise-mobility.md).
 
 ## En savoir plus sur Intune
 Découvrez plus en détail Intune par le biais de ces ressources :
 
 -   Le Centre de gestion de la confidentialité Microsoft Intune ([Microsoft Intune Trust Center](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)) fournit des informations sur les pratiques de sécurité, de confidentialité et de conformité d’Intune et décrit certaines certifications d’Intune.
 
--   [Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
 
 ### Voir aussi
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [Bibliothèque de documentation pour System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
-[Nouveautés de Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md)
+[Nouveautés de Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 

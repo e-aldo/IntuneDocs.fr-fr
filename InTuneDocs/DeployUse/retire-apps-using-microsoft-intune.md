@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Mettre hors service des applications | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 4857e2ff34175ee6daa64e6f95a59faaaaa3b322
+
 
 ---
 
@@ -33,7 +27,7 @@ Pour mettre une application hors service, il vous suffit de la désinstaller. Qu
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications** &gt; **Applications**.
 
-2.  Sélectionnez l’application que vous souhaitez désinstaller (que vous avez déployée auparavant), puis sélectionnez **Gérer le déploiement**.
+2.  Sélectionnez l’application que vous souhaitez désinstaller (que vous avez déployée auparavant), puis choisissez **Gérer le déploiement**.
 
 3.  Dans la page **Action de déploiement** , sélectionnez **Désinstaller** dans la colonne **Approbation** .
 
@@ -43,6 +37,7 @@ L'application sera désinstallée la prochaine fois que l'appareil ou l'ordinate
 [Ajouter des applications dans Microsoft Intune](add-apps.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

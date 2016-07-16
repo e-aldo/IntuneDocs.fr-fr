@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Utiliser des groupes pour gérer les utilisateurs et les appareils | Microsoft Intune
-description:
-keywords:
+title: "Utiliser des groupes pour gérer les utilisateurs et les appareils | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
+ms.openlocfilehash: a1f6dfc7629481403c40a1ce927b588f67e5fa74
+
 
 ---
 
@@ -50,11 +44,11 @@ En outre, votre hiérarchie de groupe s’affiche avec des récapitulatifs d’�
 
 ## Créer un groupe d'appareils
 
-1.  Dans la console d’administration Intune, cliquez sur **Groupes** &gt; **Vue d’ensemble** &gt; **Créer un groupe**.
+1.  Dans la console d’administration Intune, choisissez **Groupes** &gt; **Vue d’ensemble** &gt; **Créer un groupe**.
 
-2.  Spécifiez un nom et une éventuelle description pour le groupe, sélectionnez un groupe d’appareils en tant que groupe parent. Sélectionnez **Suivant**.
+2.  Spécifiez un nom et une éventuelle description pour le groupe, sélectionnez un groupe d’appareils en tant que groupe parent. Choisissez **Suivant**.
 
-3.  Dans la page **Définir les critères d'appartenance** , sélectionnez le type des appareils que le groupe va inclure. Les options supplémentaires pour configurer le groupe varient selon le type des appareils que vous sélectionnez :
+3.  Dans la page **Définir les critères d'appartenance**, sélectionnez le type des appareils que le groupe va inclure. Les options supplémentaires pour configurer le groupe varient selon le type des appareils que vous sélectionnez :
 
     -   **Ordinateur** : indiquez si vous souhaitez inclure tous les membres du groupe parent, et spécifiez les unités d’organisation (UO) et les domaines que vous voulez inclure ou exclure. Les informations sur les unités d'organisation et les domaines d'un ordinateur sont obtenues à partir de l'inventaire.
 
@@ -62,20 +56,20 @@ En outre, votre hiérarchie de groupe s’affiche avec des récapitulatifs d’�
 
     -   **Tous les appareils** : cette option permet d’inclure tous les appareils sans exclusions basées sur des critères.
 
-4.  Dans la page **Définir l'appartenance directe** , incluez et excluez les appareils individuels que vous spécifiez en cliquant sur **Parcourir**. Si vous utilisez l'option pour sélectionner des appareils qui ne sont pas dans le groupe parent que vous avez spécifié, ces appareils sont automatiquement ajoutés au groupe parent.
+4.  Dans la page **Définir l'appartenance directe**, incluez et excluez les appareils individuels que vous spécifiez en cliquant sur **Parcourir**. Si vous utilisez l'option pour sélectionner des appareils qui ne sont pas dans le groupe parent que vous avez spécifié, ces appareils sont automatiquement ajoutés au groupe parent.
 
 
-5.  Sur la page **Résumé**, passez en revue les actions à entreprendre. Cliquez sur **Terminer**.
+5.  Sur la page **Résumé**, passez en revue les actions à entreprendre. Choisissez **Terminer**.
 
 Le groupe récemment créé est disponible dans la liste **Groupes**, dans l’espace de travail **Groupes**, sous le groupe parent. À ce stade, vous pouvez également modifier ou supprimer le groupe.
 
 ## Créer un groupe d'utilisateurs
 
-1.  Dans la console d’administration Intune, cliquez sur **Groupes** &gt; **Vue d’ensemble** &gt; **Créer un groupe**.
+1.  Dans la console d’administration Intune, choisissez **Groupes** &gt; **Vue d’ensemble** &gt; **Créer un groupe**.
 
-2.  Spécifiez un nom et une éventuelle description pour le groupe, sélectionnez un groupe d’utilisateurs en tant que groupe parent. Sélectionnez **Suivant**.
+2.  Spécifiez un nom et une éventuelle description pour le groupe, sélectionnez un groupe d’utilisateurs en tant que groupe parent. Choisissez **Suivant**.
 
-3.  Dans la page **Définir les critères d'appartenance** , indiquez si vous souhaitez inclure tous les membres du groupe parent ou démarrer avec un groupe vide.  Vous pouvez alors inclure ou exclure des membres en fonction des **groupes de sécurité** d’utilisateurs que vous configurez manuellement dans le [Centre d’administration Office 365](http://go.microsoft.com/fwlink/?LinkId=698854) ou qui se synchronisent à partir de votre annuaire Active Directory local. Si l'appartenance à un groupe de sécurité change, l'appartenance des groupes d'utilisateurs en fonction de ce groupe de sécurité peut également changer.
+3.  Dans la page **Définir les critères d'appartenance**, indiquez si vous souhaitez inclure tous les membres du groupe parent ou démarrer avec un groupe vide.  Vous pouvez alors inclure ou exclure des membres en fonction des **groupes de sécurité** d’utilisateurs que vous configurez manuellement dans le [Centre d’administration Office 365](http://go.microsoft.com/fwlink/?LinkId=698854) ou qui se synchronisent à partir de votre annuaire Active Directory local. Si l'appartenance à un groupe de sécurité change, l'appartenance des groupes d'utilisateurs en fonction de ce groupe de sécurité peut également changer.
 
     > [!IMPORTANT]
     > À l’heure actuelle, si votre groupe inclut des membres issus de groupes de sécurité ou de responsables spécifiques et que vous excluez aussi des membres de groupes spécifiques, les membres que vous avez inclus au départ sont supprimés. Pour créer un groupe comprenant à la fois des membres inclus et des membres exclus, nous vous recommandons de créer d’abord un groupe parent contenant les membres inclus, puis de créer un enfant de ce groupe dans lequel vous répertorierez les membres exclus. Vous pourrez dès lors utiliser ce groupe enfant selon les besoins pour les stratégies et profils Intune et la distribution d’applications.
@@ -84,10 +78,10 @@ Le groupe récemment créé est disponible dans la liste **Groupes**, dans l’e
     > Dans le portail de gestion Azure, vous pouvez créer un groupe basé sur le responsable des utilisateurs. Le groupe sera dynamique, changeant à mesure que des employés sont ajoutés ou supprimés dans l’équipe du responsable dans Azure Active Directory. La procédure à suivre pour créer un groupe Azure basé sur un responsable est décrite à la page [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) dans la section intitulée **Pour configurer un groupe en tant que groupe « Responsable »**.
 
 
-4.  Dans la page **Définir l'appartenance directe** , incluez et excluez les utilisateurs individuels que vous spécifiez en cliquant sur **Parcourir**. Si vous utilisez l'option pour sélectionner des utilisateurs qui ne sont pas dans le groupe parent que vous avez spécifié, ces appareils sont automatiquement ajoutés au groupe parent. En bas de la boîte de dialogue **Sélectionner les membres**, vous trouverez l’option pour ajouter un utilisateur manuellement. Cela est utile si vous souhaitez ajouter un utilisateur qui ne dispose pas encore d’un appareil inscrit.
+4.  Dans la page **Définir l'appartenance directe**, incluez et excluez les utilisateurs individuels que vous spécifiez en cliquant sur **Parcourir**. Si vous utilisez l'option pour sélectionner des utilisateurs qui ne sont pas dans le groupe parent que vous avez spécifié, ces appareils sont automatiquement ajoutés au groupe parent. En bas de la boîte de dialogue **Sélectionner les membres**, vous trouverez l’option pour ajouter un utilisateur manuellement. Cela est utile si vous souhaitez ajouter un utilisateur qui ne dispose pas encore d’un appareil inscrit.
 
 
-5.  Sur la page **Résumé**, passez en revue les actions à entreprendre. Cliquez sur **Terminer**.
+5.  Sur la page **Résumé**, passez en revue les actions à entreprendre. Choisissez **Terminer**.
 
 Le groupe récemment créé est disponible dans la liste **Groupes**, dans l’espace de travail **Groupes**, sous le groupe parent. À ce stade, vous pouvez également modifier ou supprimer le groupe.
 
@@ -101,7 +95,7 @@ Les vues de groupes filtrées vous permettent de personnaliser la vue que les ad
 
 -   vous souhaitez afficher uniquement les groupes appropriés à chaque administrateur informatique.
 
-Vous pouvez configurer des vues de groupes filtrées pour les administrateurs de service dans la console d’administration Intune. Pour plus d’informations, consultez [Éléments à connaître avant de démarrer Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
+Vous pouvez configurer des vues de groupes filtrées pour les administrateurs de service dans la console d’administration Intune. Pour plus d’informations, consultez [Informations à connaître avant de commencer à utiliser Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
 Une fois que vous avez configuré des vues de groupes filtrées pour un administrateur de service, celui-ci :
 
@@ -123,11 +117,11 @@ Une fois que vous avez configuré des vues de groupes filtrées pour un administ
 
 ### Configurer des vues de groupes filtrées
 
-1.  Dans la console d’administration Intune, cliquez sur **Administration** &gt; **Gestion des administrateurs** &gt; **Administrateurs de service**.
+1.  Dans la console d’administration Intune, choisissez **Administration** &gt; **Gestion des administrateurs** &gt; **Administrateurs de service**.
 
-2.  Sélectionnez l’administrateur de service pour lequel vous souhaitez filtrer des groupes, puis cliquez sur **Gérer les groupes**.
+2.  Sélectionnez l'administrateur de service pour lequel vous souhaitez filtrer des groupes, puis cliquez sur **Gérer les groupes**.
 
-3.  Dans la boîte de dialogue **Sélectionner les groupes qui seront visibles pour cet administrateur de service** , ajoutez les groupes auxquels l’administrateur de service sélectionné pourra accéder, puis cliquez sur **OK**.
+3.  Dans la boîte de dialogue **Sélectionner les groupes qui seront visibles pour cet administrateur de service**, ajoutez les groupes auxquels l'administrateur de service sélectionné pourra accéder, puis cliquez sur **OK**.
 
 Une fois les vues de groupes filtrées configurées, l'administrateur informatique pourra afficher et sélectionner uniquement les groupes que vous avez sélectionnés.
 
@@ -150,7 +144,7 @@ Après avoir configuré vos groupes et stratégies, vérifiez les implications p
 
 Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur prévue est la valeur que vous souhaitez obtenir lors de l'attribution de la stratégie. L’état est ce vous obtenez au bout du compte quand toutes les stratégies qui s’appliquent à l’appareil, ainsi que les restrictions et les conditions requises du matériel et du système d’exploitation, sont regroupées.  La capture d'écran illustre clairement ce point à travers deux exemples :
 
--   **Autoriser les mots de passe simples** est défini avec la valeur **Oui**, comme indiqué dans la colonne **Valeur prévue** , mais son **État** a la valeur **Non applicable**. Cela est dû au fait que les mots de passe simples ne sont pas pris en charge par les appareils Android.
+-   **Autoriser les mots de passe simples** est défini avec la valeur **Oui**, comme indiqué dans la colonne **Valeur prévue**, mais son **État** a la valeur **Non applicable**. Cela est dû au fait que les mots de passe simples ne sont pas pris en charge par les appareils Android.
 
 -   De même, l’élément de stratégie développé **Paramètres de messagerie pour les appareils iOS** n’est pas appliqué à cet appareil, car il s’agit d’un appareil Android.
 
@@ -158,6 +152,7 @@ Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur pr�
 > N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Commencer une évaluation de Microsoft Intune et déployer une stratégie de code confidentiel iOS | Microsoft Intune
-description:
-keywords:
+title: "Commencer une évaluation de Microsoft Intune et déployer une stratégie de code confidentiel iOS | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
 # Commencer une évaluation de Microsoft Intune et déployer une stratégie de code confidentiel iOS
-Ces instructions pas à pas vous permettent de configurer une évaluation d’Intune et de configurer une stratégie de code confidentiel pour des appareils iOS. Pour obtenir une liste d’autres tâches d’évaluation d’Intune courantes, consultez [Tâches d’évaluation de Microsoft Intune courantes](common-microsoft-intune-evaluation-tasks.md).
+Ces instructions pas à pas vous permettent de configurer une évaluation d’Intune et de configurer une stratégie de code confidentiel pour des appareils iOS. Pour obtenir une liste d’autres tâches d’évaluation d’Intune courantes, consultez [Tâches courantes pour l’évaluation d’Intune](common-microsoft-intune-evaluation-tasks.md).
 
 
 
@@ -84,7 +78,7 @@ Ces instructions pas à pas vous permettent de configurer une évaluation d’In
 
     ![Créer un nouveau compte d’utilisateur](../media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
 
-4.  Sur la page de confirmation de création de l’utilisateur, cliquez sur **Fermer**.
+4.  Dans la page de confirmation de création de l’utilisateur, cliquez sur **Fermer**.
 
     ![Page de confirmation de création de l’utilisateur](../media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
 
@@ -242,7 +236,7 @@ Ces instructions pas à pas vous permettent de configurer une évaluation d’In
 
 1.  Sur un iPad, lancez l’App Store iOS, installez l’application gratuite **Portail d’entreprise Microsoft Intune**, puis ouvrez-la.
 
-    ![Installation du Portail d’entreprise](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
+    ![Installation du portail d’entreprise](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
 
 2.  Entrez le nom de compte et le mot de passe de votre utilisateur de test, puis appuyez sur **Se connecter**.
 
@@ -290,6 +284,7 @@ Ces instructions pas à pas vous permettent de configurer une évaluation d’In
 [Guide d'évaluation de Microsoft Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

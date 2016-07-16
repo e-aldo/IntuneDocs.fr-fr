@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurer des applications iOS avec des stratégies de configuration des applications mobiles | Microsoft Intune
-description:
-keywords:
+title: "Configurer des applications iOS avec des stratégies de configuration des applications mobiles | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ Les stratégies de configuration des applications mobiles peuvent vous aider à 
 
 Vous ne déployez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt la stratégie à une application que vous déployez ensuite. Les paramètres de stratégie sont utilisés chaque fois que l’application les vérifie (en général, lors de sa première exécution).
 
-> [!TIP] Ce type de stratégie est disponible uniquement pour les appareils exécutant iOS 7.1 et versions ultérieures, et prend en charge les types d’installation d’application suivants :
+> [!TIP]
+> Ce type de stratégie est actuellement disponible uniquement pour les appareils exécutant iOS 7.1 et versions ultérieures, et prend en charge les types d’installation d’application suivants :
 > 
 > -   **Application iOS gérée à partir de l'App Store**
 > -   **Package d'application pour iOS**
@@ -62,7 +57,8 @@ Vous ne déployez pas ces stratégies directement sur les appareils et utilisate
 
 4.  Dans la section **Stratégie de configuration des applications mobiles** de la page, entrez ou collez dans la zone une liste de propriétés XML qui contient les paramètres de configuration d’application souhaités.
 
-    > [!TIP] Pour en savoir plus sur les listes de propriétés XML, consultez [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Présentation des listes de propriétés XML) sur le site iOS Developer Library.
+    > [!TIP]
+    > Pour en savoir plus sur les listes de propriétés XML, consultez [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) sur le site iOS Developer Library.
     > 
     > Le format de la liste de propriétés XML varie en fonction de l’application que vous configurez. Pour plus d’informations sur le format exact à utiliser, contactez le fournisseur de l’application.
     > 
@@ -104,7 +100,8 @@ Ensuite, continuez le déploiement de l’application et surveillez-le comme d�
 
 Quand l’application déployée est exécutée sur un appareil, elle s’exécute avec les paramètres que vous avez configurés dans la stratégie de configuration des applications mobiles.
 
-> [!TIP] Si une ou plusieurs stratégies de configuration des applications mobiles sont en conflit, aucune stratégie n’est appliquée et le conflit est signalé dans le **Tableau de bord** de la console d’administration Intune.
+> [!TIP]
+> Si une ou plusieurs stratégies de configuration des applications mobiles sont en conflit, aucune stratégie n’est appliquée et le conflit est signalé dans le **Tableau de bord** de la console d’administration Intune.
 
 ## Exemple de format de fichier XML de configuration d’application mobile
 
@@ -139,6 +136,7 @@ Quand vous créez un fichier de configuration d’application mobile, vous pouve
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

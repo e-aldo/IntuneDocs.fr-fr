@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Se préparer à configurer des stratégies de gestion des applications mobiles | Microsoft Intune
-description:
-keywords:
+title: "Se préparer à configurer des stratégies de gestion des applications mobiles | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -37,6 +30,8 @@ Si vous ne connaissez pas le portail Azure, lisez la rubrique [Portail Azure pou
 
 Si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer des stratégies de gestion des applications mobiles qui prennent en charge des applications pour les appareils inscrits dans Intune à l’aide de la **console d’administration Intune**, mais il est recommandé d’utiliser le portail Azure même pour les appareils inscrits dans Intune. Pour obtenir des instructions sur la création d’une stratégie GAM à l’aide de la console d’administration Intune, cliquez [ici](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
+Les stratégies de gestion des applications mobiles créées dans la console d’administration Intune ne peuvent pas être importées dans le portail Azure.  Les stratégies de gestion des applications mobiles doivent être recréées dans le portail Azure.
+
 >[!IMPORTANT]
 > La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Si vous créez ces stratégies à la fois sur la console d’administration Intune et le portail Azure, la stratégie dans le portail Azure est appliquée aux applications et déployée sur les utilisateurs.
 
@@ -46,6 +41,7 @@ Si vous utilisez actuellement la **console d’administration Intune** pour gér
 
 - Android 4 ou version ultérieure
 
+Les appareils Windows ne sont pas pris en charge actuellement.
 ##  Applications prises en charge
 * **Applications Microsoft :** ces applications intègrent le SDK de l’application Intune et ne nécessitent aucun traitement supplémentaire avant d’appliquer les stratégies GAM.
 Pour afficher la liste complète des applications Microsoft prises en charge, accédez à la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) dans la page des partenaires d’application Microsoft Intune. Cliquez sur l’application pour afficher les scénarios pris en charge, connaître les plateformes et savoir si elle prend en charge plusieurs identités.
@@ -61,7 +57,7 @@ Pour afficher la liste complète des applications Microsoft prises en charge, ac
 -   Un abonnement **Office 365 (O365)** nécessaire pour :
   - Appliquer des stratégies GAM aux applications prenant en charge plusieurs identités.
   - Créer des comptes professionnels SharePoint Online et Exchange Online. Exchange et SharePoint en local ne sont pas pris en charge.
--    **Authentification moderne activée** pour **Skype Entreprise Online**. Connectez-vous à Microsoft Connect et remplissez [ce formulaire](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) pour vous inscrire au programme d’authentification moderne.
+-    [Authentification moderne activée](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) pour **Skype Entreprise Online**.
 
 
 - **Azure Active Directory (Azure AD)** pour créer des utilisateurs. Azure AD authentifie l’utilisateur final quand il lance l’application et entre ses informations d’identification professionnelles.
@@ -123,6 +119,7 @@ Les **administrateurs généraux** ont accès au [portail Azure](https://portal.
 [Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

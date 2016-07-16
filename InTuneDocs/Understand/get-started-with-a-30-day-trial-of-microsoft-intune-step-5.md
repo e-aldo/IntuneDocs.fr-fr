@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Inscrire des appareils mobiles pour évaluation | Microsoft Intune
-description:
-keywords:
+title: "Inscrire des appareils mobiles pour évaluation | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: f26b64015f483eb5b6a6efbaa6fe6730dde7dac9
+
 
 ---
 
@@ -38,11 +32,11 @@ Pour configurer la gestion des appareils mobiles avec Intune, vous devez d’abo
 
     Activez la gestion des appareils mobiles pour la plateforme d'appareils que vous souhaitez gérer. La configuration requise varie en fonction de la plateforme :
 
-    -   **iOS et Mac OS X** : consultez [Configurer la gestion iOS et MAC avec Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).
+    -   **iOS et Mac OS X** : consultez [Configurer la gestion iOS et Mac avec Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).
 
     -   **Android** : les appareils mobiles Android permettent aux utilisateurs de s’inscrire à l’aide de l’application de portail d’entreprise disponible sur Google Play. Aucune configuration supplémentaire n'est nécessaire dans Intune.
 
-    -   **Windows Phone** : consultez [Configurer la gestion de Windows Phone avec Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).
+    -   **Windows Phone** : consultez [Configurer la gestion Windows Phone avec Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).
 
 ## Inscrire des appareils de test
 
@@ -74,6 +68,7 @@ Félicitations ! Vous venez d’effectuer l’étape 5 de la procédure pas à
 >[&larr; **Créer des stratégies**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Options et fonctionnalités supplémentaires** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

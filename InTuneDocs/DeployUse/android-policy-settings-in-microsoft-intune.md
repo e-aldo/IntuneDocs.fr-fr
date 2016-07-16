@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Paramètres de la stratégie de configuration Android et Samsung KNOX | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de la stratégie de configuration Android et Samsung KNOX | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -55,6 +49,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 |**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Empêche la réutilisation des mots de passe déjà utilisés.|Oui|Oui|
 |**Qualité du mot de passe**|Sélectionnez le niveau de complexité du mot de passe requis et spécifiez si les appareils biométriques peuvent être utilisés.|Oui|Oui|
 |**Autoriser le déverrouillage par empreinte digitale**|Autoriser l’utilisation d’une empreinte digitale pour déverrouiller l’appareil.|Non|Oui|
+|**Autoriser Smart Lock et d’autres agents de confiance**<br>(Android 5 et versions ultérieures)|Permet de contrôler la fonctionnalité Smart Lock sur les appareils Android compatibles. Cette fonctionnalité du téléphone, parfois appelée agents de confiance, vous permet de désactiver ou de contourner le mot de passe de l’écran de verrouillage de l’appareil si celui-ci se trouve dans un emplacement approuvé, comme quand il est connecté à un appareil Bluetooth spécifique, ou quand il se trouve à proximité d’une balise NFC. Vous pouvez utiliser ce paramètre pour empêcher des utilisateurs finaux de configurer Smart Lock.|Oui|Non|
 
 ### Paramètres de chiffrement
 
@@ -73,7 +68,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 
 ### Paramètres du cloud - documents et données
 
-|Nom du paramètre|Détails|Android et Samsung KNOX|Android 4.0+|
+|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Autoriser la sauvegarde Google**|Autorise l’utilisation de la sauvegarde de Google.|Non|Oui|
 
@@ -95,7 +90,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 
 ### Paramètres de l'application - applications
 
-|Nom du paramètre|Android 4.0+|Samsung KNOX|
+|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Autoriser la boutique Google Play**|Autoriser l’utilisateur à accéder à la Boutique Google Play sur l’appareil.|Non|Oui|
 
@@ -179,7 +174,8 @@ Utilisez la **stratégie de configuration personnalisée Android** de Microsoft 
 
 Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Android qui ne sont pas configurables avec des stratégies Intune.
 
-> [!NOTE] Les stratégies personnalisées Android prennent uniquement en charge la configuration des paramètres Wi-Fi pour les appareils Android qui ont une clé prépartagée.
+> [!NOTE]
+> Actuellement, les stratégies personnalisées Android prennent uniquement en charge la configuration des paramètres Wi-Fi pour les appareils Android qui contiennent une clé prépartagée.
 
 ### Paramètres généraux :
 
@@ -257,6 +253,7 @@ Bien qu’Intune prenne en charge les profils Wi-Fi pour les appareils Android, 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

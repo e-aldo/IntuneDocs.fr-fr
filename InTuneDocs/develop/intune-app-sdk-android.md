@@ -1,33 +1,28 @@
 ---
-# required metadata
-
-title: Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android | Microsoft Intune
-description:
-keywords:
+title: "Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Guide du Kit de développement logiciel (SDK) de l’application Microsoft Intune pour les développeurs Android
 
-> [!NOTE] Vous pouvez d’abord consulter la [Présentation du Kit SDK de l’application Intune](intune-app-sdk.md), qui aborde les fonctionnalités actuelles du SDK et la manière de préparer l’intégration sur chaque plateforme prise en charge. 
+> [!NOTE]
+> Vous pouvez d’abord consulter la [Présentation du Kit SDK de l’application Intune](intune-app-sdk.md), qui aborde les fonctionnalités actuelles du SDK et la manière de préparer l’intégration sur chaque plateforme prise en charge. 
 
 # Contenu du SDK 
 
@@ -369,6 +364,7 @@ Le SDK Intune respecte le contrat fourni par l’API Android, bien que des condi
 * Évitez d’utiliser les API de façon ambiguë. Par exemple, l’utilisation d’ `Activity.startActivityForResult/onActivityResult` sans vérifier requestCode entraîne un comportement étrange.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

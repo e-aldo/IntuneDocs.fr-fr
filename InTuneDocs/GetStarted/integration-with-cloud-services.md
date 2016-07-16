@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intégration d’Intune avec les produits et services cloud Microsoft | Microsoft Intune
-description:
-keywords:
+title: "Intégration d’Intune avec les produits et services cloud Microsoft | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: e58b295bf89e200c7c986902c9b4408d23e67c64
+
 
 ---
 
@@ -36,7 +30,7 @@ Avant de configurer [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], co
 En savoir plus sur l’[administration d’Azure AD](http://technet.microsoft.com/library/hh967611.aspx) dans la bibliothèque TechNet.
 
 ## Intégration dans d'autres produits Microsoft
-Vous pouvez utiliser [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] en tant que service cloud autonome ou en tant que service cloud intégré à d'autres produits. Actuellement, seul [!INCLUDE[cmshort](../includes/cmshort_md.md)] peut être intégré directement à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+Vous pouvez utiliser [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] en tant que service cloud autonome ou en tant que service cloud intégré à d'autres produits. Actuellement, seul [!INCLUDE[cmshort](../includes/cmshort_md.md)] peut s'intégrer directement dans [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 La décision d'intégrer [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] avec [!INCLUDE[cmshort](../includes/cmshort_md.md)] est un choix définitif qui vous oblige à définir l'autorité de gestion des appareils mobiles à partir de la console [!INCLUDE[cmshort](../includes/cmshort_md.md)] et non depuis le [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]. Une fois que l'autorité de gestion des appareils mobiles est définie, vous ne pouvez pas modifier ni inverser cette configuration.
 
@@ -47,6 +41,7 @@ Pour plus d’informations, consultez [Gérer les appareils mobiles avec Configu
 ### Voir aussi
 [Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

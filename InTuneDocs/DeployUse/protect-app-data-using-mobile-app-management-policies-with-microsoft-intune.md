@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles | Microsoft Intune
-description:
-keywords:
+title: "Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+
 
 ---
 
@@ -33,15 +27,16 @@ Vos employés utilisent des appareils mobiles pour des tâches à la fois person
 Vous pouvez utiliser des stratégies de gestion des applications mobiles Intune pour protéger les données de votre entreprise. Étant donné que les stratégies de gestion des applications mobiles sont indépendantes de toute solution de gestion des appareils mobiles, vous pouvez les utiliser pour protéger les données de votre entreprise en inscrivant ou non les appareils dans une solution de gestion des appareils. En implémentant des **stratégies au niveau de l’application**, vous pouvez restreindre l’accès aux ressources d’entreprise et conserver les données au sein de votre département informatique.
 
 Les stratégies de gestion des applications mobiles prennent en charge les applications qui s’exécutent sur :
+> [!IMPORTANT]
+> Vous pouvez créer des stratégies de gestion des applications mobiles pour les applications mobiles Office qui se connectent aux services Office 365. Les stratégies de gestion des applications mobiles ne sont pas prises en charge pour les applications qui se connectent à des services Exchange ou SharePoint locaux.
 
--   **Appareils gérés et inscrits** dans [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Les appareils de cette catégorie sont généralement des appareils d’entreprise.
 
-  > [!IMPORTANT]
-  > Si vous utilisez Intune pour gérer vos appareils iOS et Android, vous pouvez créer des stratégies de gestion des applications mobiles pour les applications mobiles Office qui se connectent aux services Office 365. Les stratégies de gestion des applications mobiles ne sont pas prises en charge pour les applications qui se connectent à des services Exchange ou SharePoint locaux.
+- **Appareils gérés et inscrits dans Microsoft Intune**. Les appareils de cette catégorie sont généralement des appareils d’entreprise.
 
 -   **Les appareils gérés et inscrits dans le cadre d’une solution de gestion des appareils mobiles tierce**.   Les appareils de cette catégorie sont généralement des appareils d’entreprise.
 
-  > [!NOTE] Les stratégies de gestion des applications mobiles ne doivent pas être utilisées avec des solutions de gestion des applications mobiles tierces ou des solutions de conteneur sécurisé.
+  > [!NOTE]
+  > Les stratégies de gestion des applications mobiles ne doivent pas être utilisées avec des solutions de gestion des applications mobiles tierces ni des solutions de conteneur sécurisé.
 
 -   **Appareils non gérés**.  Les appareils de cette catégorie sont généralement la propriété d’employés et ne sont pas gérés ou inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
 
@@ -137,6 +132,7 @@ Toutes les applications mobiles Office prennent en charge plusieurs identités.
 [Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,25 +1,21 @@
 ---
-title: Configurer l’infrastructure de certificat pour PFX |Microsoft Intune
-description:
-keywords:
+title: "Configurer l’infrastructure de certificat pour PFX |Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6edb37708d26033358af30c47e955b20caedb6fd
+ms.openlocfilehash: 51def9dc80043bbf5a71578fb44cae9259fd48b1
+
 
 
 ---
@@ -51,7 +47,7 @@ Pour utiliser des profils de certificat .PFX, en plus de l’autorité de certif
  > [!NOTE]           
 > -    Le serveur qui héberge le proxy d'application web [doit installer une mise à jour](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) qui permet la prise en charge des longues URL utilisées par le service d'inscription d'appareil réseau. Cette mise à jour est incluse dans le [correctif cumulatif de décembre 2014](http://support.microsoft.com/kb/3013769), ou individuellement à partir de l'article [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  En outre, le serveur qui héberge le proxy d’application web doit avoir un certificat SSL qui correspond au nom publié sur les clients externes, et approuver le certificat SSL utilisé sur le serveur NDES. Ces certificats permettent au serveur du proxy d'application web de mettre fin à la connexion SSL à partir des clients et de créer une nouvelle connexion SSL au serveur NDES.
-Pour plus d’informations sur les certificats du proxy d’application web, consultez la section **Planifier des certificats** dans [Planification de publication des applications à l’aide du proxy d’application web](https://technet.microsoft.com/library/dn383650.aspx) Pour obtenir des informations générales sur les serveurs proxy d’application web, consultez [Utilisation d’un proxy d’application web](http://technet.microsoft.com/library/dn584113.aspx).|
+    Pour plus d’informations sur les certificats du proxy d’application web, consultez la section **Planifier des certificats** dans [Planification de publication des applications à l’aide du proxy d’application web](https://technet.microsoft.com/library/dn383650.aspx) Pour obtenir des informations générales sur les serveurs proxy d’application web, consultez [Utilisation d’un proxy d’application web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
 ### Certificats et modèles
@@ -82,12 +78,14 @@ Dans cette tâche, vous allez publier le modèle de certificat.
 
     -   Sous l'onglet **Extensions** , vérifiez que **Description des stratégies d'application** inclut **Authentification du client**.
 
-        > [!IMPORTANT] Pour les modèles de certificats iOS et Mac OS X, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
+        > [!IMPORTANT]
+        > Pour les modèles de certificats iOS et Mac OS XOS, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
 
 
 3.  Examinez la **Période de validité** sous l'onglet **Général** du modèle. Par défaut, Intune utilise la valeur configurée dans le modèle. Toutefois, vous pouvez configurer l’autorité de certification pour permettre au demandeur de spécifier une valeur différente, que vous pouvez alors définir à partir de la console d’administration Intune. Si vous souhaitez toujours utiliser la valeur du modèle, ignorez le reste de l'étape.
 
-    > [!IMPORTANT] Les plateformes iOS et Mac OS X utilisent toujours la valeur définie dans le modèle, indépendamment des autres configurations que vous effectuez.
+    > [!IMPORTANT]
+    > Les plateforme iOS et Mac OS X utilisent toujours la valeur définie dans le modèle, indépendamment des autres configurations que vous effectuez.
 
     Pour configurer l'autorité de certification et permettre au demandeur de spécifier la période de validité, sur l'autorité de certification, exécutez les commandes suivantes :
 
@@ -134,7 +132,8 @@ télécharger, installer et configurer Certificate Connector.
 
 4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
 
-    > [!TIP] Si vous fermez l’Assistant avant de lancer l’interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
+    > [!TIP]
+    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
     >
     > **&lt;chemin_installation&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -158,6 +157,7 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
 Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configurer les profils de certificat](Configure-Intune-certificate-profiles.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

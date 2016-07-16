@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
 ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
 
@@ -63,6 +64,6 @@ Après avoir déployé une application, vous pouvez surveiller sa progression. P
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

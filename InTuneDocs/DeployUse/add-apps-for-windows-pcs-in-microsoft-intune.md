@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Ajouter des applications pour des PC Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
+ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+
 
 ---
 
@@ -38,7 +32,8 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications** &gt; **Ajouter des applications** pour démarrer l’éditeur de logiciel Microsoft Intune.
 
-    > [!TIP]Vous devez peut-être entrer votre nom d’utilisateur et votre mot de passe Intune avant le démarrage de l’éditeur.
+    > [!TIP]
+    > Vous devrez peut-être entrer votre nom d'utilisateur et votre mot de passe Intune avant le démarrage de l'éditeur.
 
 
 
@@ -94,6 +89,7 @@ L’application s’affiche sur le nœud **Applications** de l’espace de trava
 
 Une fois que vous avez créé une application, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications dans Microsoft Intune](deploy-apps.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

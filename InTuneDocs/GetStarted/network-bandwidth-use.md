@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Utilisation de la bande passante réseau Intune | Microsoft Intune
-description:
-keywords:
+title: "Utilisation de la bande passante réseau Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12
+
 
 ---
 
@@ -83,15 +77,16 @@ Pour en savoir plus sur BITS et les ordinateurs Windows, consultez [Background I
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-Pour utiliser BranchCache, il doit être activé sur l’ordinateur client et ce dernier doit être configuré pour le **mode cache distribué**..
+Pour utiliser BranchCache, il doit être activé sur l’ordinateur client et ce dernier doit être configuré pour le **mode cache distribué**.
 
 Par défaut, BranchCache et le mode cache distribué sont activés sur un ordinateur lors de l'installation du client [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Toutefois, si le client a déjà une stratégie de groupe qui désactive BranchCache, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ne remplace pas cette stratégie et BranchCache reste désactivé sur cet ordinateur.
 
-Si vous utilisez BranchCache, vous devez communiquer avec les autres administrateurs de votre organisation qui gèrent la stratégie de groupe et la stratégie du pare-feu [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] pour vérifier qu'elles ne déploient pas une stratégie qui désactive BranchCache ou des exceptions de pare-feu. Pour plus d'informations sur BranchCache, voir [Vue d’ensemble de BranchCache](http://technet.microsoft.com/library/hh831696.aspx)..
+Si vous utilisez BranchCache, vous devez communiquer avec les autres administrateurs de votre organisation qui gèrent la stratégie de groupe et la stratégie du pare-feu [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] pour vérifier qu'elles ne déploient pas une stratégie qui désactive BranchCache ou des exceptions de pare-feu. Pour plus d’informations sur BranchCache, consultez [Vue d’ensemble de BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
 
 ### Voir aussi
 [Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

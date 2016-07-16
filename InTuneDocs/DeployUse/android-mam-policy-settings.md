@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Paramètres de stratégie de gestion des applications mobiles Android | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de stratégie de gestion des applications mobiles Android | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ On utilise le terme **Applications gérées par la stratégie** pour faire réf�
 
     **Valeur par défaut = Oui**
 - **Chiffrer les données de l’application :** choisissez **Oui** pour activer le chiffrement. Quand ce paramètre est activé, pour les applications associées à une stratégie de gestion des applications mobiles, le chiffrement est fourni par Microsoft. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier. Le contenu figurant sur le stockage de l’appareil est toujours chiffré.
-  >[!NOTE] La méthode de chiffrement n’est pas certifiée FIPS 140-2
+  >[!NOTE]
+  >La méthode de chiffrement n’est pas certifiée FIPS 140-2
 
   **Valeur par défaut = Oui**
 
-- **ContactSyncDisabled :** choisissez **Oui** pour empêcher que les informations de contact soient synchronisées avec l’application de carnet d’adresses native sur l’appareil. Si vous choisissez **Non**, l’application enregistre les informations de contact dans l’application de carnet d’adresses native sur l’appareil.<br/>Quand vous effectuez une réinitialisation sélective pour supprimer les données d’entreprise, les contacts synchronisés directement à partir de l’application de carnet d’adresses native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, ceci s’applique uniquement à l’application **Microsoft Outlook**.
+- **Désactiver la synchronisation des contacts :** choisissez **Oui** pour empêcher que les informations de contact soient synchronisées avec l’application de carnet d’adresses native sur l’appareil. Si vous choisissez **Non**, l’application enregistre les informations de contact dans l’application de carnet d’adresses native sur l’appareil.<br/>Quand vous effectuez une réinitialisation sélective pour supprimer les données d’entreprise, les contacts synchronisés directement à partir de l’application de carnet d’adresses native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, ceci s’applique uniquement à l’application **Microsoft Outlook**.
 
   **Valeur par défaut = Oui**
 
@@ -100,6 +95,7 @@ On utilise le terme **Applications gérées par la stratégie** pour faire réf�
 - **Bloquer la capture d’écran et l’Assistant Android (Android 6 Marshmallow ou version ultérieure) :** choisissez **Oui** pour bloquer la capture d’écran et les fonctionnalités **Assistant Android** de l’appareil lors de l’utilisation de cette application.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Aider à protéger les appareils iOS avec le contournement du verrou d’activation | Microsoft Intune
-description:
-keywords:
+title: "Aider à protéger les appareils iOS avec le contournement du verrou d’activation | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 496679a196dc3e84c6b16ad0d3b830c81f12631b
+ms.openlocfilehash: 7bbd761b13f110297959a036ec15cafe1396377e
+
 
 ---
 
@@ -93,6 +87,7 @@ Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deu
 [Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code secret](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

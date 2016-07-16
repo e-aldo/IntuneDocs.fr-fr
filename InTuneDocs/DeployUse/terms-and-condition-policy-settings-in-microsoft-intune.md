@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Paramètres de la stratégie de conditions générales dans Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de la stratégie de conditions générales dans Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8079ca5abcedbe024fb6347e02c7cf61ae541a30
+
 
 ---
 
@@ -32,7 +26,7 @@ Vous pouvez créer et déployer plusieurs stratégies contenant différentes con
 
 ## Créer une stratégie de conditions générales
 
-1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
+1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
     ![Capture d’écran de la stratégie de conditions générales](./media/pol-sa-terms-conditions.png)
 
@@ -48,13 +42,13 @@ Vous pouvez créer et déployer plusieurs stratégies contenant différentes con
 
     -   **Titre** : titre affiché pour les utilisateurs dans le portail d’entreprise.
 
-    -   **Texte expliquant ce que cela signifie si l’utilisateur accepte** : étiquette informant les utilisateurs des conséquence de l’acceptation. **Exemple** : « J’accepte les conditions générales. »
+    -   **Texte expliquant ce que cela signifie si l’utilisateur accepte** : étiquette informant les utilisateurs des conséquences de l’acceptation. **Exemple** : « J’accepte les conditions générales. »
 
 4.  Quand vous avez terminé, cliquez sur **Enregistrer**. La nouvelle stratégie s’affiche dans le nœud **Conditions générales** de l’espace de travail **Stratégie**.
 
 ## Déployer une stratégie de conditions générales
 
-1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
+1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
 2.  Dans la liste **Stratégies associées aux conditions générales**, sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
 
@@ -64,16 +58,16 @@ Vous pouvez créer et déployer plusieurs stratégies contenant différentes con
 
 ## Surveiller une stratégie associée aux conditions générales
 
-1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
+1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
 2.  Dans la fenêtre **Créer un rapport**, cliquez sur **Afficher le rapport**. Le rapport dresse la liste des utilisateurs qui ont accepté les conditions générales que vous avez déployées.
 
 ### Mises à jour et contrôle de version pour les conditions générales
-Quand vous modifiez une stratégie existante associée à des conditions générales, vous pouvez choisir le comportement lors du déploiement de la stratégie. Appliquez la procédure suivante pour vous aider à mettre à jour des stratégie de conditions générales existantes.
+Quand vous modifiez une stratégie existante associée à des conditions générales, vous pouvez choisir le comportement lors du déploiement de la stratégie. Appliquez la procédure suivante pour vous aider à mettre à jour des stratégies de conditions générales existantes.
 
 ## Utilisation de plusieurs versions des conditions générales
 
-1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
+1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
 2.  Sélectionnez la stratégie de conditions générales à modifier, puis cliquez sur **Modifier**.
 
@@ -85,6 +79,7 @@ Quand vous modifiez une stratégie existante associée à des conditions génér
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
