@@ -66,6 +66,6 @@ Le fichier SSP.xap signé est actuellement le seul moyen de fournir le certifica
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

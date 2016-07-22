@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise | Microsoft Intune
-description:
-keywords:
+title: "Réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
+
 
 ---
 
@@ -30,7 +25,8 @@ ms.suite: ems
 
 Si vous perdez le code confidentiel ou le mot de passe d’un appareil que vous avez inscrit dans Intune, vous pouvez utiliser le [site web du portail d’entreprise](http://portal.manage.microsoft.com) pour le réinitialiser. Le site web du portail d’entreprise est une page web que vous pouvez utiliser pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
 
-> [!NOTE] La présence du bouton Réinitialiser le code d’accès sur le site web du portail d’entreprise dépend de la façon dont votre administrateur informatique a configuré Intune. La réinitialisation du code d’accès n’est pas prise en charge sur les appareils Windows 8.1 et Windows RT.
+> [!NOTE] 
+> La présence du bouton Réinitialiser le code d’accès sur le site web du portail d’entreprise dépend de la façon dont votre administrateur informatique a configuré Intune. La réinitialisation du code d’accès n’est pas prise en charge sur les appareils Windows 8.1 et Windows RT.
 
 Pour réinitialiser votre code d’accès
 
@@ -62,11 +58,12 @@ Pour réinitialiser votre code d’accès
 
     Pour afficher une notification confirmant que votre code d’accès a été réinitialisé avec succès, cliquez sur l’indicateur de notification en haut à droite du site web du portail d’entreprise.
 
-Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

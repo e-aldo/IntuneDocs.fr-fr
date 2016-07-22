@@ -3,16 +3,18 @@ title: "Restreindre l’accès aux réseaux avec Cisco ISE | Microsoft Intune"
 description: "Utilisez Cisco ISE avec Intune pour que les appareils soient inscrits auprès d’Intune et conformes aux stratégies avant d’accéder aux infrastructures Wi-Fi et VPN contrôlées par Cisco ISE."
 keywords: 
 author: nbigman
-manager: jeffgilb
+manager: Arob98
 ms.date: 06/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
+ms.reviewer: muhosabe
+ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 78945498a951e7b897164ae6f33c4e87d521ca5b
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: 9e90971a9997e65e98a8c55b24fb70a42da93702
 
 
 ---
@@ -52,8 +54,8 @@ Pour activer cette intégration, aucune configuration particulière n’est néc
     d. Choisissez le certificat, puis **Exporter**.  
 
 
-> [!IMPORTANT]
-> Vérifiez la date d’expiration du certificat, car vous devrez en exporter et en importer un nouveau quand celui-ci arrivera à expiration.
+    > [!IMPORTANT]
+    > Vérifiez la date d’expiration du certificat, car vous devrez en exporter et en importer un nouveau quand celui-ci arrivera à expiration.
 
     
 
@@ -126,10 +128,10 @@ Quand un utilisateur tente d’accéder à des ressources à l’aide d’un app
 
 Quand l’utilisateur choisit de s’inscrire, il est redirigé vers le processus d’inscription Intune. L’expérience utilisateur de l’inscription pour Intune est décrite dans les rubriques suivantes :
 
-- [Inscrire un appareil Android dans Intune](/intune/end-user/enroll-your-device-in-Intune-android)</br>
-- [Inscrire un appareil iOS dans Intune](/intune/end-user/enroll-your-device-in-intune-ios)</br>
-- [Inscrire un appareil Mac OS X dans Intune](/intune/end-user/enroll-your-device-in-intune-mac-os-x)</br>
-- [Inscrire un appareil Windows dans Intune](/intune/end-user/enroll-your-device-in-intune-windows)</br> 
+- [Inscrire un appareil Android dans Intune](/intune/enduser/enroll-your-device-in-Intune-android)</br>
+- [Inscrire un appareil iOS dans Intune](/intune/enduser/enroll-your-device-in-intune-ios)</br>
+- [Inscrire un appareil Mac OS X dans Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)</br>
+- [Inscrire un appareil Windows dans Intune](/intune/enduser/enroll-your-device-in-intune-windows)</br> 
 
 Vous pouvez également [télécharger un ensemble d’instructions d’inscription](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) et l’adapter pour vos utilisateurs.
 
@@ -141,6 +143,6 @@ Vous pouvez également [télécharger un ensemble d’instructions d’inscripti
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

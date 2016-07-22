@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Définir le délai avant le verrouillage de l’appareil | Microsoft Intune
-description:
-keywords:
+title: "Définir le délai avant le verrouillage de l’appareil | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/10/2016
+manager: arob98
+ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: fe54897fe42d07040b873d6112e34830652fdf20
+
 
 ---
 
@@ -34,14 +29,13 @@ Pour sécuriser les données sur votre appareil Android, votre administrateur in
 
 2.  Spécifiez la valeur du délai d'expiration du mot de passe.
 
-3.  Vérifiez que votre appareil est inscrit dans Intune en suivant les instructions fournies dans [Inscrire votre appareil dans Intune](enroll-your-device-in-Intune-android.md).
-
-Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

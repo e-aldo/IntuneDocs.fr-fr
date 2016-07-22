@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Définir ou modifier votre code secret | Microsoft Intune
-description:
-keywords:
+title: "Définir ou modifier votre code secret | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 5/25/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 25c1da243f5d0ccde54a9b1c70c300e64f76ea34
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: esmich
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -46,11 +39,12 @@ Si vous rencontrez des difficultés à définir un code secret qui répond à to
 2. Appuyez sur **Changer le code secret** et entrez votre ancien mot de passe.
 3. Entrez un nouveau code secret qui répond aux exigences de votre administrateur informatique, puis entrez-le à nouveau pour le confirmer.
 
-Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

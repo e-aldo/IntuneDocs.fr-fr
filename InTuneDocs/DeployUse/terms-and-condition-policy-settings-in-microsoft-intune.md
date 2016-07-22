@@ -1,20 +1,20 @@
 ---
 title: "Paramètres de la stratégie de conditions générales dans Microsoft Intune | Microsoft Intune"
-description: 
+description: "Vous pouvez déployer les conditions générales d’Intune pour des groupes d’utilisateurs pour expliquer comment l’inscription, l’accès aux ressources de travail et l’utilisation de l’application Portail d’entreprise affectent les utilisateurs et les appareils."
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 8079ca5abcedbe024fb6347e02c7cf61ae541a30
+ms.sourcegitcommit: ac41e0e65a4687262d76b01ee4e1b7356c76650c
+ms.openlocfilehash: c805d664fe85b206fc1019114ee17514ef49df0f
 
 
 ---
@@ -80,6 +80,6 @@ Quand vous modifiez une stratégie existante associée à des conditions génér
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

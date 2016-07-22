@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Définir votre code confidentiel ou votre mot de passe | Microsoft Intune
-description:
-keywords:
+title: "Définir votre code confidentiel ou votre mot de passe | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 17fcba3bd413e11e154731679e10e79fcda83620
+
 
 ---
 
@@ -34,15 +29,13 @@ Votre administrateur informatique peut demander que vous définissiez un code co
 
 2.  Choisissez votre nouveau mot de passe et confirmez-le.
 
-3.  Vérifiez que votre appareil est bien inscrit dans Microsoft Intune en suivant les instructions de la rubrique [Inscrire votre appareil dans Microsoft Intune](enroll-your-device-in-Intune-android.md).
 
-4.  Appuyez sur **OBTENIR** &gt; **INSTALLER**.
-
-Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

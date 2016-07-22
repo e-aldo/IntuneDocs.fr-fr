@@ -16,6 +16,6 @@
 ## [Résoudre les problèmes de profil de messagerie](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [Résoudre les problèmes d’accès conditionnel](troubleshoot-conditional-access.md)
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Définir ou modifier votre code secret | Microsoft Intune
-description:
-keywords:
+title: "Définir ou modifier votre code secret | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 5/25/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 4ea67ffbc51a359723411938f95697cfeaf6fc3f
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: priyar
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -48,11 +41,12 @@ Si vous rencontrez des difficultés à définir un mot de passe qui répond à t
 4. Entrez votre nouveau mot de passe dans le champ **Nouveau mot de passe**, puis entrez de nouveau le nouveau mot de passe dans le champ **Confirmer le mot de passe**.
 4. Appuyez sur **Terminé**.
 
-Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

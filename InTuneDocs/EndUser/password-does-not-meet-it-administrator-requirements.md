@@ -1,28 +1,20 @@
 ---
-# required metadata
-
-title: Le mot de passe ne répond pas aux exigences de l’administrateur informatique | Microsoft Intune
-description:
-keywords:
+title: "Le mot de passe ne répond pas aux exigences de l’administrateur informatique | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
+ms.openlocfilehash: ac4515df3acae5e73a9682c189ef22a38cd84789
 
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: chrisgre
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -44,8 +36,9 @@ Pour plus d’informations sur la définition d’un code confidentiel ou d’un
 - [Définir ou modifier votre mot de passe d’appareil iOS](set-or-change-your-passcode-ios.md)
 - [Définir ou modifier votre mot de passe d’appareil Windows](set-or-change-your-password-windows.md)
 
-Si vous avez des difficultés à déterminer comment rendre votre mot de passe conforme aux exigences, contactez votre administrateur informatique. Si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des difficultés à déterminer comment rendre votre mot de passe conforme aux exigences, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

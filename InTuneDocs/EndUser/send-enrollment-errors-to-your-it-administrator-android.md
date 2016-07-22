@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Envoyer les erreurs d’inscription à votre administrateur informatique | Microsoft Intune
-description:
-keywords:
+title: "Envoyer les erreurs d’inscription à votre administrateur informatique | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d0a81ec5aeb2dac4d7647586f8179715d0b2ba7a
+
 
 ---
 
@@ -40,6 +35,7 @@ Il existe différentes façons d’envoyer des journaux de données de votre app
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

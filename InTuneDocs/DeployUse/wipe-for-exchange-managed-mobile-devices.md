@@ -31,6 +31,6 @@ Microsoft Intune vous permet d’effacer ou de réinitialiser des appareils mobi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

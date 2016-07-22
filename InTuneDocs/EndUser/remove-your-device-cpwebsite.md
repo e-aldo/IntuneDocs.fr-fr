@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Supprimer votre appareil du portail d’entreprise | Microsoft Intune
-description:
-keywords:
+title: "Supprimer votre appareil du portail d’entreprise | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 80912ee8c78e00ae090d21259dfa780cc8d220a2
+
 
 ---
 
@@ -42,11 +37,12 @@ Pour supprimer votre appareil :
 
 Votre appareil a été supprimé.
 
-Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -16,6 +16,6 @@ Vous pouvez consulter le [détail des conditions générales ](https://technet.m
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

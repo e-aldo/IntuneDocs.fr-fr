@@ -30,6 +30,6 @@ Après avoir effectué les étapes de configuration initiale pour un abonnement 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Phases de lancement pour les déploiements Microsoft Intune | Microsoft Intune"
-description: 
+description: "Les phases d’un déploiement technique sont en général les suivantes : portée du projet, preuve de concept, pilote, lancement à l’échelle de l’entreprise et état d’exécution."
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 9f3fcead3c41506734508d588ad180d17cc901ee
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: c20f96481916d5e9468eade65d8aa0c1133646ef
 
 
 ---
@@ -62,6 +62,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
