@@ -241,6 +241,6 @@ Si Xcode a des difficultés à trouver `libIntuneMAM.a`, vous pouvez résoudre c
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

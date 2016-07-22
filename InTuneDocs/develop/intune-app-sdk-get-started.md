@@ -79,6 +79,6 @@ Après avoir terminé les étapes nécessaires pour vérifier la compatibilité 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
