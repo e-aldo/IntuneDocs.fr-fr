@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Aider les utilisateurs finaux à comprendre les messages de l’application Portail d’entreprise | Microsoft Intune
-description:
-keywords:
+title: "Aider les utilisateurs finaux à comprendre les messages de l’application Portail d’entreprise | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
+ms.openlocfilehash: 40f2ead80326a451dfd59a4969191009dc35deef
+
 
 ---
 
@@ -80,9 +74,10 @@ La deuxième fois que les utilisateurs se connectent à l’application Portail 
 
 
 ### Voir aussi
-[Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation d'Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
+[Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation d'Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

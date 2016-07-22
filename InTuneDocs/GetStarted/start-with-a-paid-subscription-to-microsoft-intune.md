@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Guide de démarrage rapide pour Intune | Microsoft Intune
-description:
-keywords:
+title: "Guide de démarrage rapide pour Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: ca0ca74357b59d9cc6fbf4ec7eb237dff972c411
+
 
 ---
 
@@ -55,7 +49,7 @@ Utilisez ce guide si vous débutez avec un abonnement payant et que vous êtes p
 Prêt à vous lancer ? Voici les éléments dont vous aurez besoin au début de l’utilisation de votre abonnement payant Intune :
 
 ### Un appareil avec un navigateur web compatible Silverlight
-Vous en aurez besoin pour accéder à la console d’administration Intune où vous pourrez gérer les appareils, les applications et les stratégies. Vous aurez également besoin d’un navigateur web pour accéder au Portail d’entreprise basé sur le web si vous n’accédez pas à l’application Portail d’entreprise sur un appareil mobile. Pour simplifier les choses, vous pouvez utiliser le paramètre « mode de confidentialité » sur le navigateur dont vous vous servez pour administrer Intune (par exemple : dans Internet Explorer, vous pouvez cliquer sur **Outils** &gt; **Navigation InPrivate**).).
+Vous en aurez besoin pour accéder à la console d’administration Intune où vous pourrez gérer les appareils, les applications et les stratégies. Vous aurez également besoin d’un navigateur web pour accéder au Portail d’entreprise basé sur le web si vous n’accédez pas à l’application Portail d’entreprise sur un appareil mobile. Pour simplifier les choses, vous pouvez utiliser le paramètre « mode de confidentialité » sur le navigateur dont vous vous servez pour administrer Intune (par exemple : dans Internet Explorer, vous pouvez cliquer sur **Outils** &gt; **Navigation InPrivate**).
 
 >[!TIP]
 >En raison de cette exigence, le navigateur Edge de Microsoft n’est pas pris en charge pour l’accès à la console d’administration Intune.
@@ -67,11 +61,11 @@ Si vous prévoyez de gérer des appareils iOS ou Windows Phone avec Intune, vous
 - Aucun certificat n’est nécessaire pour les utilisateurs **Windows Phone 8.1** qui installent l’application Portail d’entreprise à partir du Store. Toutefois, un [certificat de signature de code Symantec](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do) est nécessaire pour **Windows Phone 8.0** ou pour déployer l’application Portail d’entreprise sur des appareils Windows Phone 8.1 à l’aide d’Intune.
 
 >[!NOTE]
->Ce guide de démarrage rapide part du principe que vos utilisateurs se procurent l’application Portail d’entreprise via le Store sur un appareil Windows Phone version 8.1 ou ultérieure. Pour plus d’informations sur la prise en charge de Windows Phone 8.0, consultez [Configurer la gestion de Windows Phone 8.0 avec Microsoft Intune](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
+>Ce guide de démarrage rapide part du principe que vos utilisateurs se procurent l’application Portail d’entreprise via le Store sur un appareil Windows Phone version 8.1 ou ultérieure. Pour plus d’informations sur la prise en charge de Windows Phone 8.0, consultez [Configurer la gestion de Windows Phone 8.0 avec Microsoft Intune](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
 
-- Il n’existe aucune exigence de certificat pour les **ordinateurs Windows** ou les **appareils Windows RT** lors de l’inscription d’ordinateurs Windows en tant qu’appareils ou l’[installation du client PC de Windows pour Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
+- Il n’existe aucune exigence de certificat pour les **PC Windows** ou les **appareils Windows RT** lors de l’inscription de PC Windows en tant qu’appareils ou l’[installation du client PC Windows pour Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
 
-- Pour les appareils **iOS** ou **Mac OS X**, vous devrez demander un certificat de service de notifications Push Apple auprès d’Apple, comme décrit à l’étape 3 de la rubrique [Configurer la gestion iOS et Mac avec Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
+- Pour les appareils **iOS** ou **Mac OS X**, vous devrez demander un certificat de service de notifications Push Apple auprès d’Apple, comme décrit à l’étape 3 de la rubrique [Configurer la gestion des appareils iOS et Mac avec Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
 
 ### Étapes suivantes
 Il est temps de vous familiariser avec le guide de démarrage rapide Intune !
@@ -80,6 +74,7 @@ Il est temps de vous familiariser avec le guide de démarrage rapide Intune !
 [**Se connecter à Intune** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

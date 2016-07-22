@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Installer l’application Portail d’entreprise Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Installer l’application Portail d’entreprise Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: dca5c066a11fb0363ea7b2e548cde2ec37b731e0
+
 
 ---
 
@@ -48,9 +42,12 @@ Le portail d’entreprise est une application que vous installez sur votre appar
 
 Pour inscrire votre appareil dans Intune afin d’accéder à des données et des ressources de l’entreprise ou de l’établissement scolaire, consultez [Inscrire votre appareil dans Intune](enroll-your-device-in-Intune-android.md).
 
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

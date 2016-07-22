@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Gérer les transferts de données entre applications iOS | Microsoft Intune
-description:
-keywords:
+title: "Gérer les transferts de données entre applications iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -39,7 +32,7 @@ Les stratégies de gestion des applications mobiles (MAM) peuvent être utilisé
 
 -   **Appareils appartenant à l’entreprise non gérés par une solution MDM :** vous pouvez définir les paramètres de la stratégie de gestion des applications mobiles pour **Autoriser l’application à transférer des données uniquement vers des applications gérées**. Quand l’utilisateur final ouvre un fichier protégé dans une application non gérée, le fichier n’est pas lisible.
 
--   **Appareils gérés par Intune :** pour les appareils inscrits dans Intune, le transfert de données entre les applications avec les stratégies MAM et les autres applications iOS gérées déployées via Intune est autorisé automatiquement. Pour permettre le transfert de données entre les applications avec les stratégies MAM, activez le paramètre Autoriser l’application à transférer des données uniquement vers des applications gérées**. Vous pouvez utiliser la fonctionnalité **Ouvrir dans la gestion** pour contrôler le transfert de données entre les applications qui sont déployées via Intune.   
+-   **Appareils gérés par Intune :** pour les appareils inscrits dans Intune, le transfert de données entre les applications avec les stratégies MAM et les autres applications iOS gérées déployées via Intune est autorisé automatiquement. Pour permettre le transfert de données entre les applications avec les stratégies MAM, activez le paramètre **Autoriser l’application à transférer des données uniquement vers des applications gérées**. Vous pouvez utiliser la fonctionnalité **Ouvrir dans la gestion** pour contrôler le transfert de données entre les applications qui sont déployées via Intune.   
 
 -   **Appareils gérés par une solution MDM tierce** : vous pouvez limiter le transfert de données uniquement à des applications gérées en utilisant la fonctionnalité **Ouvrir d’iOS dans la gestion**.
 Pour vous assurer que les applications que vous déployez à l’aide de votre solution MDM tierce sont également associées aux stratégies que vous avez configurées dans Intune, vous devez configurer le paramètre de nom UPN d’utilisateur comme décrit dans la procédure [Configurer le paramètre de nom d’UPN utilisateur](#configure-user-upn-setting).  Quand les applications sont déployées avec le paramètre Nom UPN d’utilisateur, les stratégies MAM sont appliquées à l’application quand l’utilisateur final se connecte en utilisant son compte professionnel.
@@ -51,9 +44,9 @@ Pour vous assurer que les applications que vous déployez à l’aide de votre s
 Cette configuration est requise pour les appareils qui sont gérés par une solution MDM tierce. La procédure décrite ci-dessous est un flux général indiquant comment implémenter le paramètre UPN et l’expérience utilisateur final obtenue :
 
 
-1.  Configurez une stratégie de gestion des applications mobiles pour la plateforme iOS. Configurez les paramètres de stratégie selon les besoins de votre entreprise et sélectionnez les applications qui doivent disposer de cette stratégie.
+1.  Dans le portail Azure, [configurez une stratégie de gestion des applications mobiles](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) pour la plateforme iOS. Configurez les paramètres de stratégie selon les besoins de votre entreprise et sélectionnez les applications qui doivent disposer de cette stratégie.
 
-2.  Déployez les applications et le profil de messagerie que vous souhaitez gérer avec votre solution MDM tierce à l’aide du paramètre décrit dans les étapes 3 et 4.
+2.  Déployez les applications et le profil de messagerie que vous souhaitez gérer **avec votre solution MDM tierce** à l’aide du paramètre décrit dans les étapes 3 et 4.
 
 3.  Déployez l’application avec les paramètres de configuration d’application suivants : clé=IntuneMAMUPN, valeur=<nom_utilisateur@entreprise.com> [exemple : ’IntuneMAMUPN’, ’noel_belisle@microsoft.com’]
 
@@ -80,6 +73,7 @@ Cette configuration est requise pour les appareils qui sont gérés par une solu
 [Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

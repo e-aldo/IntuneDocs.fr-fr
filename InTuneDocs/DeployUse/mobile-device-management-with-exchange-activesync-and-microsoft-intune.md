@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gestion des appareils mobiles à l’aide d’Exchange ActiveSync et de Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Gestion des appareils mobiles à l’aide d’Exchange ActiveSync et de Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+
 
 ---
 
@@ -41,7 +35,7 @@ Le connecteur Exchange vous permet de gérer votre déploiement Exchange dans la
 -   [Configuration du connecteur de service à service Microsoft Intune pour Exchange hébergé](intune-service-to-service-exchange-connector.md)
 
 ## Mise en œuvre d’une stratégie pour des appareils mobiles gérés par Exchange
-Vous pouvez appliquer des paramètres de stratégie par le biais de la console Intune. Consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Pour obtenir une liste des paramètres de stratégie et des fonctionnalités Exchange ActiveSync prises en charge par des appareils mobiles spécifiques, consultez [Tableau de comparaison du client Exchange ActiveSync (en anglais)](http://go.microsoft.com/fwlink/?LinkId=247270)..
+Vous pouvez appliquer des paramètres de stratégie par le biais de la console Intune. Consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Pour obtenir une liste des paramètres de stratégie et des fonctionnalités Exchange ActiveSync prises en charge par des appareils mobiles spécifiques, consultez [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270) (Tableau de comparaison du client Exchange ActiveSync).
 
 > [!NOTE]
 > Lors de la connexion d’Intune à un environnement Microsoft Exchange, la stratégie EAS pour tous les utilisateurs gérés par Intune est réinitialisée sur la stratégie par défaut du serveur Microsoft Exchange, sauf si une stratégie plus spécifique a été définie dans Intune.
@@ -50,6 +44,7 @@ Vous pouvez appliquer des paramètres de stratégie par le biais de la console I
 Enfin, vous pouvez [effacer des données d’entreprise d’appareils mobiles gérés par EAS](wipe-for-exchange-managed-mobile-devices.md) lorsqu’ils ne sont plus en cours d’utilisation, ou si les appareils sont perdus ou volés.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

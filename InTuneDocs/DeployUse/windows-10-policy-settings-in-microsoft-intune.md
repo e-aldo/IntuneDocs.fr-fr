@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Paramètres de la stratégie dans Windows 10 | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de la stratégie dans Windows 10 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
+ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+
 
 ---
 
@@ -42,7 +35,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple, numérique uniquement ou alphanumérique|
 |**Type de mot de passe requis** - **Nombre minimum de jeux de caractères**|Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Ce paramètre spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe.|
 |**Longueur minimale du mot de passe**|Spécifie le nombre minimal de caractères que le mot de passe de l’appareil doit contenir.<br>(Windows 10 Mobile uniquement)|
-|**Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil**|Réinitialise l'appareil si le nombre d'échecs de tentative de est atteint.|
+|**Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil**|Réinitialise l'appareil si le nombre d'échecs de tentative est atteint.|
 |**Minutes d'inactivité avant arrêt de l'écran**|Spécifie la durée pendant laquelle l’appareil doit être inactif avant que l’écran de veille se verrouille.|
 |**Expiration du mot de passe (jours)**|Spécifie la durée après laquelle le mot de passe d'un appareil doit être modifié.|
 |**Mémoriser l'historique des mots de passe**|Spécifie si vous souhaitez empêcher l'utilisateur final de créer des mots de passe utilisés précédemment.|
@@ -168,6 +161,7 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 |**Intervalle de mise à jour des signatures**|Spécifiez l'intervalle auquel Defender vérifie les nouveaux fichiers de signatures.|
 |**Autoriser la protection de cloud**|Autorisez ou empêchez Microsoft Active Protection Service de recevoir des informations sur l'activité des logiciels malveillants à partir des appareils que vous gérez. Ces informations serviront à améliorer le service.|
 |**Demander aux utilisateurs d'envoyer des exemples**|Contrôle si les fichiers susceptibles de nécessiter une analyse plus approfondie de la part de Microsoft pour déterminer s’il s’agit de logiciels malveillants sont automatiquement envoyés à Microsoft.|
+|**Détection des applications potentiellement indésirables**|Ce paramètre permet d’empêcher les postes de travail Windows inscrits d’exécuter des logiciels considérés par Windows Defender comme potentiellement indésirables. Vous pouvez empêcher ces applications d’être exécutées ou utiliser le mode Audit pour être informé lorsqu’une application potentiellement indésirable est installée.|
 |**Fichiers et dossiers à exclure lors de l'exécution d'une analyse ou de l'utilisation de la protection en temps réel**|Ajoutez un ou plusieurs fichiers et dossiers comme **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à la liste des exclusions. Ces fichiers et dossiers ne seront pas inclus dans les analyses en temps réel ou planifiées.|
 |**Extensions de fichier à exclure lors d'une analyse ou de la protection en temps réel**|Ajoutez une ou plusieurs extensions de fichier comme **jpg** ou **txt** à la liste des exclusions. Tous les fichiers avec ces extensions ne seront pas inclus dans les analyses en temps réel ou planifiées.|
 |**Processus à exclure lors d'une analyse ou de la protection en temps réel**|Ajoutez un ou plusieurs processus du type **.exe**, **.com**, ou **.scr** à la liste des exclusions. Ces processus ne seront pas inclus dans les analyses en temps réel ou planifiées.| 
@@ -280,7 +274,7 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 |**Update/RequireDeferUpgrade**<br>(Poste de travail et Mobile)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** : ne pas reporter la mise à niveau (rester dans la branche active, CB – par défaut)<br>**1** : activer le report des mises à jour et des mises à niveau (l’appareil suit les règles de la branche actuelle d’entreprise, CBB)<br /><br />Pour plus d'informations, voir :<br>[Introduction à la maintenance de Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan de déploiement de Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/DeferUpdatePeriod**<br>(Poste de travail et Mobile)|**Description :** stratégie de report des mises à jour logicielles pendant quatre semaines<br /><br />**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br> **0** : appliquer immédiatement les mises à jour (par défaut)<br>**1**-**4** : nombre de semaines de report des mises à jour logicielles.<br /><br />Pour plus d'informations, voir :<br>[Introduction à la maintenance de Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan de déploiement de Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/DeferUpgradePeriod**<br>(Poste de travail et Mobile)|**Description :** stratégie de report des mises à niveau des fonctionnalités jusqu’à huit mois<br /><br />**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** : appliquer immédiatement les mises à jour (par défaut)<br>**1**-**8** : nombre de mois de report des mises à niveau des fonctionnalités.<br /><br />Pour plus d'informations, voir :<br>[Introduction à la maintenance de Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan de déploiement de Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/PauseDeferrals**<br>(Poste de travail et Mobile)|**Description :** autorise un ordinateur CBB à arrêter de recevoir des mises à jour et des mises à niveau pendant cinq semaines. Cela doit être utilisé en cas de problème avec une mise à jour.<br /><br />**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** : appliquer immédiatement les mises à jour (par défaut)<br>**1**: suspendre les mises à jour et les mises à niveau (expire au bout de cinq semaines)|
+|**Update/PauseDeferrals**<br>(Poste de travail et Mobile)|**Description :** autorise un ordinateur CBB à arrêter de recevoir des mises à jour et des mises à niveau pendant cinq semaines. Cela doit être utilisé en cas de problème avec une mise à jour.<br /><br />**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** : appliquer immédiatement les mises à jour (par défaut)<br>**1** : suspendre les mises à jour et les mises à niveau (expire au bout de cinq semaines)|
 
 ### Paramètres URI de Windows Defender
 
@@ -324,7 +318,7 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 |**Autoriser les fenêtres contextuelles**<br>(Poste de travail uniquement)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Bloquer les fenêtres contextuelles (par défaut)<br>**1** – Autoriser les fenêtres contextuelles|
 |**Autoriser les cookies**<br>(Poste de travail et Mobile)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowCookies<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Ne pas bloquer. Autoriser les cookies de tous les sites web (par défaut)<br>**1** – Bloquer uniquement les cookies tiers<br>**2** – Bloquer tous les cookies|
 |**Autoriser l'enregistrement du mot de passe**<br>(Poste de travail et Mobile)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Le gestionnaire de mots de passe est désactivé <br>**1** – Le gestionnaire de mots de passe est activé (par défaut)|
-|**Autoriser le remplissage automatique**<br>(Poste de travail uniquement)|**Chemin complet de l’URI :** .//Vendor/MSFT/Policy/Config/Browser/AllowAutofill<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Désactivé (par défaut)<br>**1** – Activé|
+|**Autoriser le remplissage automatique**<br>(Poste de travail uniquement)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Désactivé (par défaut)<br>**1** – Activé|
 |**Configurer la liste des sites d’entreprise**<br>(Poste de travail uniquement)|**Chemin d’accès complet des URI :** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList<br /><br />**Type de données : ** Chaîne<br /><br />**Valeurs autorisées :<br>0** – Non configuré<br>**1** – Utiliser la liste des sites d’entreprise d’Internet Explorer si configuré (par défaut)<br>**2** – Spécifier l’emplacement de la liste des sites d’entreprise|
 
 ### Voir aussi
@@ -332,6 +326,7 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

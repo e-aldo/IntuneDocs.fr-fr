@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Ajouter des applications pour des appareils mobiles | Microsoft Intune
-description:
-keywords:
+title: Ajouter des applications pour les appareils inscrits | Microsoft Intune
+description: "Avant de déployer une application, vous devez l’ajouter à Intune. Vous la retrouverez ensuite dans la console Intune, où vous pourrez la déployer et la gérer."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 795843f012434e1a50cd6abab05b6af2c811cf3e
+
 
 ---
 
-# Ajouter des applications pour des appareils mobiles dans Microsoft Intune
+# Ajouter des applications pour les appareils inscrits à Intune
 
-Cette rubrique montre comment ajouter des applications à Intune avant de les déployer.
+Avant de déployer ou de gérer une application, vous devez l’ajouter à Microsoft Intune. Cette rubrique vous montre comment ajouter des applications pour les appareils inscrits.
 
 
 > [!IMPORTANT]
@@ -36,14 +29,15 @@ Cette rubrique montre comment ajouter des applications à Intune avant de les d�
 ## Ajouter l’application
 Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les propriétés de l’application et, le cas échéant, effectuer son chargement vers votre espace de stockage cloud. Voici la procédure à suivre :
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Applications** &gt; **Ajouter des applications** pour démarrer l’Éditeur de logiciel Microsoft Intune.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications** &gt; **Ajouter des applications** pour démarrer l’éditeur de logiciel Microsoft Intune.
 
-    > [!TIP]Vous devez peut-être entrer votre nom d’utilisateur et votre mot de passe Intune avant le démarrage de l’éditeur.
+    > [!TIP]
+    > Vous devrez peut-être entrer votre nom d'utilisateur et votre mot de passe Intune avant le démarrage de l'éditeur.
 
 2.  Dans la page **Installation du logiciel** de l’Éditeur de logiciel, choisissez l’une des options suivantes pour **Spécifier comment ce logiciel doit être mis à disposition des appareils** :
     - **Programme d’installation du logiciel**, pour les applications avec l’extension **.msi** ou **.exe**, spécifiez :
         - **Sélectionnez le type de fichier du programme d’installation du logiciel** : indique le type de logiciel à déployer. Par exemple, si vous souhaitez installer une application iOS, sélectionnez **Package d’application pour iOS (fichier &#42;.ipa)**.
-        - **Spécifier l’emplacement des fichiers d’installation du logiciel**  : entrez l’emplacement des fichiers d’installation ou cliquez sur **Parcourir** pour sélectionner l’emplacement dans une liste.
+        - **Spécifier l’emplacement des fichiers d’installation du logiciel** : entrez l’emplacement des fichiers d’installation ou sélectionnez **Parcourir** pour sélectionner l’emplacement dans une liste.
         - **Inclure les autres fichiers et sous-dossiers du dossier** : pour le type de fichier **Windows Installer** uniquement.<br>Certains logiciels qui utilisent Windows Installer requiert la prise en charge des fichiers qui se trouvent généralement dans le même dossier que les fichiers d'installation. Sélectionnez cette option si vous souhaitez également déployer ces fichiers.<br>Ce type d'installation utilise une partie de votre espace de stockage cloud.
 
   -   **Lien externe**, pour les applications que vous souhaitez créer en spécifiant un lien vers un magasin d’applications, spécifiez :
@@ -64,7 +58,8 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 3.  Dans la page **Description du logiciel**, configurez ce qui suit :
 
-    > [!TIP] Selon le type de programme d’installation que vous utilisez, certaines de ces valeurs ont peut-être été entrées automatiquement.
+    > [!TIP]
+    > Selon le type de programme d’installation que vous utilisez, certaines de ces valeurs ont peut-être été entrées automatiquement.
 
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
     - **Nom** : entrez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise.<br>Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
@@ -81,13 +76,14 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 4.  Dans la page **Configuration requise**, sélectionnez les exigences à respecter pour que l’installation de l’application puisse commencer sur un appareil. Par exemple, pour un package d'application pour iOS, vous pouvez sélectionner la version minimale d'iOS requise et le type d’appareil requis, tel qu'un iPhone ou un iPad.
 
-    > [!TIP] La page **Configuration requise** n’est pas affichée pour tous les types d’applications.
+    > [!TIP]
+    > La page **Configuration requise** n’est pas affichée pour tous les types d’applications.
 
 5.  D’autres pages de l’Assistant s’affichent quand vous choisissez le type de fichier **Windows Installer**. Ce type de fichier est utilisé quand vous déployez des logiciels vers des PC exécutant Windows 10 ou version ultérieure qui sont inscrits sur Intune.
 
-6.  Dans la page **Résumé**, passez en revue les informations que vous avez spécifiées. Quand vous êtes prêt, cliquez sur **Télécharger**.
+6.  Dans la page **Résumé**, passez en revue les informations que vous avez spécifiées. Quand vous êtes prêt, sélectionnez **Télécharger**.
 
-7.  Cliquez sur **Fermer** pour terminer.
+7.  Sélectionnez **Fermer** pour terminer.
 
 L’application s’affiche sur le nœud **Applications** de l’espace de travail **Applications**.
 
@@ -106,6 +102,7 @@ Une fois que vous avez créé une application, l’étape suivante consiste à l
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

@@ -1,13 +1,21 @@
 ---
-title: Déployer des applications | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
+title: "Déployer des applications | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
+ms.reviewer: mghadial
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
+ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+
 ---
 # Déployer des applications dans Microsoft Intune
 
@@ -55,6 +63,7 @@ Si vous avez déployé l’application comme application **Requise** sur un appa
 Après avoir déployé une application, vous pouvez surveiller sa progression. Pour plus d’informations, consultez [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Surveiller des applications dans Microsoft Intune).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

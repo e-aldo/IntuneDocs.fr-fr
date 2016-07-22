@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Résolution des problèmes d’installation du client | Microsoft Intune
-description:
-keywords:
+title: "Résolution des problèmes d’installation du client | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
+ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+
 
 ---
 
@@ -32,13 +26,13 @@ Utilisez les informations suivantes pour vous aider à résoudre les problèmes 
 
 -   Si aucune alerte de déploiement du logiciel client pour l’ordinateur n’est affichée dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), vérifiez la connectivité Internet et la configuration du proxy de l’ordinateur, puis assurez-vous que ce dernier peut communiquer avec l’URL du service, [https://manage.microsoft.com](https://manage.microsoft.com/). Ensuite, réessayez d'installer le logiciel client.
 
--   Vous pouvez envoyer un message électronique à une sélection de destinataires quand une alerte relative à l'échec du déploiement du logiciel client se produit en configurant une règle de notification dans l'espace de travail **Admin** . Pour plus d’informations, consultez [Recevoir des alertes Microsoft Intune](/intune/deploy-use/get-notified-by-microsoft-intune-alerts).
+-   Vous pouvez envoyer un message électronique à une sélection de destinataires quand une alerte relative à l'échec du déploiement du logiciel client se produit en configurant une règle de notification dans l'espace de travail **Admin**. Pour plus d’informations, consultez [Recevoir des alertes Microsoft Intune](/intune/deploy-use/get-notified-by-alerts).
 
 -   Intune affiche l’alerte critique **Échec de déploiement du logiciel client** si le déploiement du logiciel client échoue. Elle s’affiche dans la page **Vue d’ensemble du système** et les pages **Alertes** de la [ console d’administration Microsoft Intune](https://manage.microsoft.com/). Voici comment vérifier les alertes :
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Alertes** &gt; **Vue d’ensemble**.
 
-2.  Dans la page **Vue d'ensemble des alertes** , vous pouvez vérifier les informations suivantes :
+2.  Dans la page **Vue d'ensemble des alertes**, vous pouvez vérifier les informations suivantes :
 
     -   Les trois alertes principales, qui peuvent être triées par date, catégorie ou gravité
 
@@ -56,23 +50,23 @@ Utilisez les informations suivantes pour vous aider à résoudre les problèmes 
 
 ## Le package d’inscription de l’ordinateur ne se télécharge pas
 **Problème :** lors de la tentative d’inscription d’un ordinateur, vous rencontrez les problèmes suivants :
--  Le package d’inscription ne parvient pas à se télécharger 
+-  Le package d’inscription ne parvient pas à se télécharger
 -  La boîte de dialogue de téléchargement s’affiche mais arrive à expiration
 
 **Résolution :** dans le navigateur que vous utilisez pour le téléchargement, au moment où le téléchargement a lieu, vérifiez que les téléchargements sont activés et que les fichiers chiffrés peuvent être enregistrés sur votre disque local.
 
 ## L’installation du client se bloque avec le code d’erreur 0x80040154
 **Problème :**
- 
+
 -  L’installation du client pendant l’inscription se bloque
 
--  Impossible d’inscrire l’appareil 
+-  Impossible d’inscrire l’appareil
 
 -  Erreur 0x80040154 dans WindowsUpdate.log
 
 Cela peut être dû à l’absence de mises à jour logicielles critiques sur le PC.
 
-**Résolution :** Assurez-vous que votre stratégie de mise à jour logicielle permet d’installer les mises à jour critiques, comme décrit dans [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) 
+**Résolution :** Assurez-vous que votre stratégie de mise à jour logicielle permet d’installer les mises à jour critiques, comme décrit dans [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
 ## Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
@@ -84,7 +78,8 @@ Pour les appareils Windows non soumis à la gestion des appareils mobiles, les e
 
 2.  Attendez 20 minutes que le logiciel client soit supprimé.
 
-    > [!NOTE] N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
+    > [!NOTE]
+    > N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
 
 3.  Dans le menu Démarrer, tapez **UAC** pour ouvrir les paramètres de Contrôle de compte d’utilisateur.
 
@@ -109,7 +104,7 @@ Le tableau suivant décrit les codes d'erreur indiqués dans l'espace de travail
 |**0x80240438**, **0x80CF0438**, **0x80CF401B**|Impossible de se connecter au service Intune. Vérifiez les paramètres de proxy du client.|Vérifiez que la configuration du proxy sur l’ordinateur client est prise en charge par Intune et que l’ordinateur client dispose d’un accès à Internet. Pour plus d’informations sur les configurations de proxy prises en charge, consultez la page [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 |**0x80CF402C**|Impossible de se connecter au service Intune. Vérifiez la connexion réseau.|Vérifiez que l'ordinateur dispose d'une connectivité réseau. Assurez-vous que le câble réseau est connecté ou que le réseau sans fil est activé.|
 |**0x80240438, 0x80CF0438**|Les paramètres de proxy dans Internet Explorer et le système local ne sont pas configurés.|Vérifiez les paramètres de proxy du client et assurez-vous que la configuration proxy sur l’ordinateur client est prise en charge par Intune et que l’ordinateur client a accès à Internet. Pour plus d’informations sur les configurations de proxy prises en charge, consultez la page [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
-|**0x80043001**|Le package d'inscription n'est plus à jour.|Téléchargez et installez le package logiciel client le plus récent à partir de l'espace de travail **Admin** . Pour obtenir des instructions, consultez la rubrique [Installer le client de PC Windows avec Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).|
+|**0x80043001**|Le package d'inscription n'est plus à jour.|Téléchargez et installez le package logiciel client le plus récent à partir de l'espace de travail **Admin**. Pour obtenir des instructions, consultez la rubrique [Installer le client de PC Windows avec Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).|
 |**0x80043004**|L'abonnement n'existe pas ou est désactivé.|Vérifiez que votre compte et votre abonnement à Intune sont toujours actifs. Pour afficher les paramètres de votre compte, connectez-vous à votre compte dans le [Centre d’administration Office 365](http://go.microsoft.com/fwlink/?LinkId=698854%20).|
 |**0x80043002**|Le compte est en mode de maintenance.|Vous ne pouvez pas inscrire de nouveaux ordinateurs clients lorsque le compte est en mode de maintenance. Pour afficher les paramètres de votre compte, connectez-vous à votre compte dans le [Centre d’administration Office 365](http://go.microsoft.com/fwlink/?LinkId=698854%20).|
 |**0x80043003**|Le compte a été supprimé.|Vérifiez que votre compte et votre abonnement à Intune sont toujours actifs. Pour afficher les paramètres de votre compte, connectez-vous à ce dernier.|
@@ -130,6 +125,7 @@ Si les problèmes d’installation persistent, contactez le Support technique co
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

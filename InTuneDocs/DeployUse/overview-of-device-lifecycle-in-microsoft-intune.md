@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Vue d’ensemble du cycle de vie des appareils | Microsoft Intune
-description:
-keywords:
+title: "Vue d’ensemble du cycle de vie de la gestion des appareils mobiles | Microsoft Intune"
+description: "Découvrez comment Intune vous aide à gérer les appareils tout au long de leur cycle de vie, de l’inscription au retrait éventuel, en passant par la configuration."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # Vue d’ensemble du cycle de vie de la gestion des appareils mobiles.
 
-Le cycle de vie de l’appareil Intune commence par l’inscription initiale d’un appareil pour se terminer après différentes étapes par sa mise hors service lorsqu’il n’est plus nécessaire.
+Tous les appareils que vous gérez ont un *cycle de vie*. Intune peut vous aider à gérer ce cycle de vie, de l’inscription de l’appareil à son retrait quand il n’est plus nécessaire :
 
 ![Le cycle de vie de l’appareil](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +44,7 @@ Dans le monde informatique moderne, la protection des appareils contre tout acc�
 Quand un appareil est perdu ou volé, doit être remplacé, ou lorsque des utilisateurs changent de poste, il doit généralement être [mis hors service ou réinitialisé](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Pour ce faire, vous pouvez entre autres réinitialiser l’appareil, le supprimer de la gestion ou réinitialiser les données d’entreprise qu’il contient.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

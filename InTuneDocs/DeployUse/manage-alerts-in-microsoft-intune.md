@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Gérer les alertes | Microsoft Intune
-description:
-keywords:
+title: "Gérer les alertes | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+
 
 ---
 
@@ -99,19 +94,20 @@ Les alertes qui sont marquées comme fermées sont définitivement supprimées a
 
 #### Pour afficher et réactiver des alertes fermés
 
-1.  Dans la console d’administration Intune, cliquez sur **Alertes&gt; Toutes les alertes**.
+1.  Dans la console d’administration Intune, cliquez sur **Alertes &gt; Toutes les alertes**.
 
-2.  Dans la liste **Filtres**, cliquez sur **Fermée**..
+2.  Dans la liste **Filtres**, cliquez sur **Fermée**.
 
     Les noms et les informations supplémentaires sur les alertes apparaissent dans le volet de la liste de gestion. Les détails de l'alerte sélectionnée apparaissent dans le volet de visualisation.
 
 3.  Pour réactiver l’alerte sélectionnée, cliquez sur **Réactiver l’alerte**.
 
 ### Voir aussi
-[Recevoir des alertes Microsoft Intune](get-notified-by-microsoft-intune-alerts.md)
+[Recevoir des alertes Microsoft Intune](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

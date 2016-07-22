@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Connexions Wi-Fi | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 910ccd7c91593114ddf57c842c0bf9c9ffa54fdc
+ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
+
 
 ---
 
@@ -44,7 +38,7 @@ Vous pouvez déployer les profils Wi-Fi sur les plateformes suivantes :
 
 -   Mac OS X 10.9 et versions ultérieures
 
-Pour les appareils qui exécutent Windows 8.1 ou version ultérieure, vous pouvez importer un profil de configuration Wi-Fi précédemment exporté vers un fichier. Pour plus d'informations, consultez Importer un profil Wi-Fi plus loin dans cette rubrique.
+Pour les appareils qui exécutent un appareil de bureau ou mobile Windows 8.1 ou Windows 10 , vous pouvez importer un profil de configuration Wi-Fi précédemment exporté vers un fichier. Pour plus d’informations, consultez **Importer un profil Wi-Fi**, plus loin dans cette rubrique.
 
 ## Comment créer un profil Wi-Fi
 
@@ -64,20 +58,39 @@ Pour les appareils qui exécutent Windows 8.1 ou version ultérieure, vous pouv
 
 4. Spécifiez les valeurs **Connexions réseau** :
 
-  |Paramètre|Plus d’informations| |-----------|--------------------|
-|**Nom réseau**|Spécifiez un nom descriptif pour le réseau sans fil. Il s’agit du nom qui s’affiche sur l’appareil de l’utilisateur quand il choisit un réseau sans fil.| |**SSID (Service Set Identifier)**|Spécifiez le (SSID) du réseau sans fil auquel les appareils doivent se connecter. Le SSID respecte la casse et n’est pas visible aux utilisateurs.| |**Me connecter automatiquement lorsque ce réseau est à portée**|Sélectionnez cette option pour connecter automatiquement les appareils au réseau sans fil lorsqu’il est à portée.| |**Se connecter quand le réseau ne diffuse pas son nom (SSID)**|Sélectionnez cette option pour permettre aux appareils de se connecter au réseau lorsque celui-ci n’est pas visible dans la liste des réseaux (il est masqué et ne diffuse pas son nom).|
+  |Paramètre|Plus d'informations|
+|-----------|--------------------|
+|**Nom réseau**|Spécifiez un nom descriptif pour le réseau sans fil. Il s'agit du nom qui s'affiche sur l'appareil de l'utilisateur quand il choisit un réseau sans fil.|
+|**SSID (Service Set Identifier)**|Spécifiez le (SSID) du réseau sans fil auquel les appareils doivent se connecter. Le SSID respecte la casse et n'est pas visible aux utilisateurs.|
+|**Me connecter automatiquement lorsque ce réseau est à portée**|Sélectionnez cette option pour connecter automatiquement les appareils au réseau sans fil lorsqu'il est à portée.|
+|**Se connecter quand le réseau ne diffuse pas son nom (SSID)**|sélectionnez cette option pour permettre aux appareils de se connecter au réseau lorsque celui-ci n'est pas visible dans la liste des réseaux (il est masqué et ne diffuse pas son nom).|
 
 5. Configurez les **Paramètres de sécurité** de la plateforme sélectionnée. Les paramètres disponibles varient selon le type de sécurité que vous sélectionnez.
 
   #### Pour les appareils Android
 
-  |Nom du paramètre|Plus d’informations|Contexte d’utilisation :| |----------------|--------------------|-------------|
-|**Type de sécurité**|Sélectionnez le protocole de sécurité du réseau sans fil :<br /><br />-   **WPA-Entreprise/WPA2-Entreprise**<br />-   **Aucune authentification (ouvert)** si le réseau n’est pas sécurisé.|Toujours| |**Type EAP**|Choisissez le type de protocole EAP (Extensible Authentication Protocol) utilisé pour authentifier les connexions sans fil sécurisées :<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|Vous avez sélectionné le type de sécurité **WPA-Enterprise/WPA2-Enterprise**.| |**Sélectionner les certificats racines pour la validation du serveur**|Cliquez sur **Sélectionner**, puis choisissez le profil de certificat racine approuvé utilisé pour authentifier la connexion. **Important :** Pour créer le profil de certificat racine de confiance, consultez [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Sécuriser l’accès aux ressources avec des profils de certificat).|N’importe quel **type EAP** est sélectionné.| |**Méthode d’authentification**|Sélectionnez la méthode d’authentification de la connexion :<br /><br />-   **Certificats** pour spécifier le certificat client<br />-   **Nom d’utilisateur et mot de passe** pour spécifier une autre méthode d’authentication| Le **type EAP** est **PEAP** ou **EAP-TTLS**.| |**Sélectionner une méthode non-EAP pour l’authentification (identité interne)**|Sélectionnez la façon dont vous allez authentifier la connexion :<br /><br />-   **aucune.**<br />-   **Mot de passe non chiffré (PAP)**<br />-   **Protocole CHAP (Challenge Handshake Authentication Protocol)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP Version 2 (MS-CHAP v2)**<br /><br />Les options disponibles dépendent du type EAP sélectionné.|La **méthode d’authentification** est **Nom d’utilisateur et mot de passe**.| |**Autoriser la confidentialité de l’identité (identité externe)**|Spécifiez le texte envoyé en réponse à une demande d’identité EAP. Ce texte peut être n'importe quelle valeur. Lors de l’authentification, cette identité anonyme est envoyée en premier, suivie de l’identification réelle adressée dans un tunnel sécurisé.|Le **type EAP** est **PEAP** ou **EAP-TTLS**.| |**Sélectionner un certificat client pour l’authentification client (certificat d’identité)**|Cliquez sur **Sélectionner**, puis choisissez le profil de certificat SCEP utilisé pour authentifier la connexion. **Important :** pour créer un profil de certificat SCEP, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md).|Le type de sécurité est **WPA-Enterprise/WPA2-Enterprise**, et n’importe quel **type EAP** est sélectionné.|
+  |Nom du paramètre|Plus d'informations|Contexte d'utilisation :|
+|----------------|--------------------|-------------|
+|**Type de sécurité**|Sélectionnez le protocole de sécurité du réseau sans fil :<br /><br />-   **WPA-Entreprise/WPA2-Entreprise**<br />-   **Aucune authentification (ouvert)** si le réseau n’est pas sécurisé.|Toujours|
+|**Type EAP**|Choisissez le type de protocole EAP (Extensible Authentication Protocol) utilisé pour authentifier les connexions sans fil sécurisées :<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|Vous avez sélectionné le type de sécurité **WPA-Entreprise/WPA2-Entreprise**.|
+|**Sélectionner les certificats racines pour la validation du serveur**|Cliquez sur **Sélectionner**, puis choisissez le profil de certificat racine approuvé utilisé pour authentifier la connexion. **Important :** Pour créer le profil de certificat racine approuvé, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md).|N'importe quel **Type EAP** est sélectionné.|
+|**Méthodes d'authentification**|Sélectionnez la méthode d'authentification de la connexion :<br /><br />-   **Certificats** pour spécifier le certificat client<br />-   **Nom d’utilisateur et mot de passe** pour spécifier une autre méthode d’authentification|Le **Type EAP** est **PEAP** ou **EAP-TTLS**.|
+|**Sélectionner une méthode non-EAP pour l'authentification (identité interne)**|Sélectionnez la façon dont vous allez authentifier la connexion :<br /><br />-   **Aucune.**<br />-   **Mot de passe non chiffré (PAP)**<br />-   **Protocole CHAP (Challenge Handshake Authentication Protocol)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP Version 2 (MS-CHAP v2)**<br /><br />Les options disponibles dépendent du type EAP sélectionné.|La **Méthode d'authentification** est **Nom d'utilisateur et mot de passe**.|
+|**Autoriser la confidentialité de l'identité (identité externe)**|Spécifiez le texte envoyé en réponse à une demande d'identité EAP. Ce texte peut être n'importe quelle valeur. Lors de l'authentification, cette identité anonyme est envoyée en premier, suivie de l'identification réelle adressée dans un tunnel sécurisé.|Le **Type EAP** est **PEAP** ou **EAP-TTLS**.|
+|**Sélectionner un certificat client pour l'authentification client (certificat d'identité)**|Cliquez sur **Sélectionner**, puis choisissez le profil de certificat SCEP utilisé pour authentifier la connexion. **Important :** Pour créer un profil de certificat SCEP, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md).|Le type de sécurité est **WPA-Entreprise/WPA2-Entreprise** et n’importe quel **Type EAP** est sélectionné.|
 
   #### Pour les appareils iOS et Mac OS X
 
-  |Nom du paramètre|Plus d’informations|Contexte d’utilisation :| |----------------|--------------------|-------------|
-|**Type de sécurité**|Sélectionnez le protocole de sécurité du réseau sans fil :<br /><br />-   **WPA-Personnel/WPA2-Personnel**<br />-   **WPA-Entreprise/WPA2-Entreprise**<br />-   **WEP**<br />-   **Aucune authentification (ouvert)** si le réseau n’est pas sécurisé.|Toujours| |**Type EAP**|Choisissez le type de protocole EAP (Extensible Authentication Protocol) utilisé pour authentifier les connexions sans fil sécurisées :<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|Vous avez sélectionné un type de sécurité **WPA-Enterprise/WPA2-Enterprise**.| |**Noms de certificat de serveur approuvé**|Sélectionnez le profil de certificat racine approuvé utilisé pour authentifier la connexion. **Important :** pour créer le profil de certificat racine de confiance, consultez [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Sécuriser l’accès aux ressources avec des profils de certificat).|Vous avez sélectionné un type EAP **EAP-TLS**, **PEAP**, **EAP-TTLS** ou **EAP-FAST**.| |**Utiliser le PAC (Protected Access Credential (informations d’identification d’accès protégé))**|Sélectionnez cette option si vous voulez utiliser les informations d’identification d’accès protégé pour établir un tunnel authentifié entre le client et le serveur d’authentification. Un fichier PAC existant est utilisé s’il est présent.|Le **type EAP** est **EAP-FAST**.| |**Configurer les informations d’identification de l’accès protégé**|Configure le fichier PAC sur vos appareils.<br /><br />Quand cette option est utilisée, vous pouvez également sélectionner **Configurer anonymement le fichier PAC** pour vous assurer que le fichier PAC est configuré sans authentifier le serveur.|L’option **Utiliser le PAC (Protected Access Credential (informations d’identification d’accès protégé))** est sélectionnée.| |**Méthode d’authentification**|Sélectionnez la méthode d’authentification utilisée pour la connexion :<br /><br /><ul><li>**Certificats** pour spécifier le certificat client</li><li>**Nom d’utilisateur et mot de passe** pour spécifier une des méthodes non-EAP suivantes pour l’authentification (également appelée Identité interne) :<br /><br /><ul><li>**aucune.**</li><li>**Mot de passe non chiffré (PAP)**</li><li>**Protocole CHAP (Challenge Handshake Authentication Protocol)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP Version 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|Le **type EAP** est **PEAP** ou **EAP-TTLS**.| |**Sélectionner un certificat client pour l’authentification client (certificat d’identité)**|Sélectionnez le profil de certificat SCEP utilisé pour authentifier la connexion. **Important :** Pour créer un profil de certificat SCEP, consultez [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Sécuriser l’accès aux ressources avec des profils de certificat).|Quand le type de sécurité est **WPA-Enterprise/WPA2-Enterprise** et que le **type EAP** est **EAP-TLS**, **PEAP** ou **EAP-TTLS**.| |**Autoriser la confidentialité de l’identité (identité externe)**|Spécifiez le texte envoyé en réponse à une demande d’identité EAP. Ce texte peut être n'importe quelle valeur.<br /><br />Lors de l’authentification, cette identité anonyme est envoyée en premier, suivie de l’identification réelle adressée dans un tunnel sécurisé.|Quand le **type EAP** est défini sur **PEAP**, **EAP-TTLS** ou **EAP-FAST**.|
+  |Nom du paramètre|Plus d'informations|Contexte d'utilisation :|
+|----------------|--------------------|-------------|
+|**Type de sécurité**|Sélectionnez le protocole de sécurité réseau sans fil :<br /><br />-   **WPA-Personnel/WPA2-Personnel**<br />-   **WPA-Entreprise/WPA2-Entreprise**<br />-   **WEP**<br />-   **Aucune authentification (ouvert)** si le réseau n’est pas sécurisé.|Toujours|
+|**Type EAP**|Choisissez le type de protocole EAP (Extensible Authentication Protocol) utilisé pour authentifier les connexions sans fil sécurisées :<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|Vous avez sélectionné un type de sécurité **WPA-Enterprise/WPA2-Enterprise**.|
+|**Noms de certificat de serveur approuvé**|Sélectionnez le profil de certificat racine approuvé utilisé pour authentifier la connexion. **Important :** Pour créer le profil de certificat racine approuvé, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md).|Vous avez sélectionné un type EAP **EAP-TLS**, **PEAP**, **EAP-TTLS** ou **EAP-FAST**.|
+|**Utiliser le PAC (Protected Access Credential (informations d'identification d'accès protégé))**|Sélectionnez cette option si vous voulez utiliser les informations d'identification d'accès protégé pour établir un tunnel authentifié entre le client et le serveur d'authentification. Un fichier PAC existant est utilisé s'il est présent.|Le **Type EAP** est **EAP-FAST**.|
+|**Configurer les informations d'identification de l'accès protégé**|Configure le fichier PAC sur vos appareils.<br /><br />Quand cette option est utilisée, vous pouvez également sélectionner **Configurer anonymement le fichier PAC** pour vous assurer que le fichier PAC est configuré sans authentifier le serveur.|**Utiliser les informations d'identification de l'accès protégé** est sélectionné.|
+|**Méthodes d'authentification**|Sélectionnez la méthode d'authentification utilisée pour la connexion :<br /><br /><ul><li>**Certificats** pour spécifier le certificat client</li><li>**Nom d’utilisateur et mot de passe** pour spécifier une des méthodes non-EAP suivantes pour l’authentification (également appelée Identité interne) :<br /><br /><ul><li>**Aucune**</li><li>**Mot de passe non chiffré (PAP)**</li><li>**Protocole CHAP (Challenge Handshake Authentication Protocol)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP Version 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|Le **Type EAP** est **PEAP** ou **EAP-TTLS**.|
+|**Sélectionner un certificat client pour l'authentification client (certificat d'identité)**|Sélectionnez le profil de certificat SCEP utilisé pour authentifier la connexion. **Important :** Pour créer un profil de certificat SCEP, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md).|Quand le type de sécurité est **WPA-Enterprise/WPA2-Enterprise** et que le **Type EAP** est **EAP-TLS**, **PEAP** ou **EAP-TTLS**.|
+|**Autoriser la confidentialité de l'identité (identité externe)**|Spécifiez le texte envoyé en réponse à une demande d'identité EAP. Ce texte peut être n'importe quelle valeur.<br /><br />Lors de l'authentification, cette identité anonyme est envoyée en premier, suivie de l'identification réelle adressée dans un tunnel sécurisé.|Quand le **Type EAP** est **PEAP**, **EAP-TTLS** ou **EAP-FAST**.|
 
 6. (iOS et MAC OS X uniquement) Configurer les **paramètres du proxy**
 
@@ -104,14 +117,17 @@ Dans Windows, vous pouvez recourir à l’utilitaire **netsh wlan** pour exporte
 
 4.  Exécutez la commande suivante : `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Celle-ci crée un fichier de profil Wi-Fi nommé « Wi-Fi-WiFiName.xml » dans le dossier de destination.
 
-## Importer un profil Wi-Fi
-Utilisez l’option **Stratégie d’importation Wi-Fi Windows** pour importer un ensemble de paramètres Wi-Fi que vous pouvez ensuite déployer sur les groupes d’utilisateurs ou d’appareils requis. La procédure d’exportation d’un profil Wi-Fi est décrite dans
+### Importer un profil Wi-Fi
+Utilisez l’option **Stratégie d’importation Wi-Fi Windows** pour importer un ensemble de paramètres Wi-Fi que vous pouvez ensuite déployer sur les groupes d’utilisateurs ou d’appareils requis.
+
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Ajouter une stratégie**.
 
-2.  Configurez une stratégie du type **Windows** &gt; **Stratégie d’importation Wi-Fi Windows**.
+2.  Configurez une stratégie du type **Windows** &gt; **Importation Wi-Fi (Windows 8.1 et versions ultérieures)**.
 
-    Vous pouvez uniquement créer et déployer une stratégie d'importation Wi-Fi Windows personnalisée. Les paramètres recommandés ne sont pas disponibles.
+    Cette stratégie peut être appliquée aux appareils de bureau et mobiles Windows 8.1 et Windows 10. 
+    
+    Vous pouvez uniquement créer et déployer une stratégie d’importation Wi-Fi Windows *personnalisée*. Les paramètres recommandés ne sont pas disponibles.
 
 3.  Spécifiez les valeurs générales suivantes pour la stratégie d'importation Wi-Fi Windows :
 
@@ -149,6 +165,7 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 Découvrez comment créer un profil Wi-Fi avec une clé prépartagée dans [Profil Wi-Fi à clé prépartagée](pre-shared-key-wi-fi-profile.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Vue d’ensemble du Kit de développement logiciel (SDK) de l’application Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Vue d’ensemble du Kit de développement logiciel (SDK) de l’application Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8a9dfe8224b4e0e441691043eaffea73c456b3ec
+
 
 ---
 
@@ -53,7 +47,7 @@ Les administrateurs informatiques peuvent imposer l’utilisation de Managed Bro
 Les administrateurs informatiques peuvent appliquer une stratégie de code confidentiel au démarrage d’une application gérée par Intune. Cette stratégie permet de s’assurer que les utilisateurs finaux qui ont inscrit leurs appareils auprès de Microsoft Intune sont les mêmes personnes qui démarrent les applications. Quand un utilisateur final configure son code confidentiel, le SDK d’application Intune utilise Azure Active Directory pour comparer les informations d’identification de l’utilisateur final à celles qui ont servi à inscrire l’appareil. 
 
 ## Demander aux utilisateurs d’entrer des informations d’identification avant de pouvoir démarrer les applications
-Les administrateurs informatiques peuvent demander aux utilisateurs d’entrer leurs informations d’identification pour pouvoir démarrer une application gérée par Intune. Le Kit de développement logiciel (SDK) de l’application Intune utilise Azure Active Directory pour fournir une expérience d’authentification unique, dans laquelle les informations d’identification, une fois entrées, sont réutilisées pour les connexions suivantes. Nous prenons également en charge l’authentification des solutions de gestion d’identité [fédérées à l’aide d’Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx).. 
+Les administrateurs informatiques peuvent demander aux utilisateurs d’entrer leurs informations d’identification pour pouvoir démarrer une application gérée par Intune. Le Kit de développement logiciel (SDK) de l’application Intune utilise Azure Active Directory pour fournir une expérience d’authentification unique, dans laquelle les informations d’identification, une fois entrées, sont réutilisées pour les connexions suivantes. Nous prenons aussi en charge l’authentification des solutions de gestion d’identité [fédérées à l’aide d’Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx). 
 
 ## Vérifier l’intégrité et la conformité des appareils
 Les administrateurs informatiques peuvent vérifier l’intégrité de l’appareil et sa conformité aux stratégies d’entreprise avant que les utilisateurs finaux accèdent aux applications gérées par Intune. Sur la plateforme iOS, cette stratégie vérifie si l’appareil est jailbroken. Sur la plateforme Android, cette stratégie vérifie si l’appareil est rooté.  
@@ -61,6 +55,7 @@ Les administrateurs informatiques peuvent vérifier l’intégrité de l’appar
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

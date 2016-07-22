@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Réinitialiser des appareils mobiles gérés par Exchange | Microsoft Intune
-description:
-keywords:
+title: "Réinitialiser des appareils mobiles gérés par Exchange | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e116b620-1e12-4b5c-9905-2f7acf2ae530
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 47e4533b6f97ff711c2efbeb6102f497af615871
+
 
 ---
 
@@ -36,6 +30,7 @@ Microsoft Intune vous permet d’effacer ou de réinitialiser des appareils mobi
 |Réinitialisation sélective/Stratégies|Les stratégies appliquées sont supprimées, mais les paramètres ne sont pas modifiés.|Les stratégies appliquées sont supprimées, mais les paramètres ne sont pas modifiés.|Les stratégies appliquées sont supprimées, mais les paramètres ne sont pas modifiés.|Les stratégies appliquées sont supprimées, mais les paramètres sont inchangés.|Les stratégies appliquées sont supprimées, mais les paramètres ne sont pas modifiés.|
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

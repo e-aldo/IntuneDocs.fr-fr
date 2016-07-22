@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Définition de la portée du projet | Microsoft Intune
-description:
-keywords:
+title: "Définition de la portée du projet | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
+ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+
 
 ---
 
@@ -63,6 +57,14 @@ Consultez cette section pour obtenir des conseils sur les activités clés de ce
 ### Planification
 
 La plupart de vos efforts dans la phase de définition de la portée du projet sont axés sur la planification et la préparation. Lorsque vous définissez la portée de votre projet, tenez compte de la technologie et des problèmes d’organisation, ainsi que de la manière dont les utilisateurs travaillent aujourd’hui et de la modification nécessaire de leur comportement. Ciblez globalement votre objectif final, puis créez des objectifs plus petits dans les phases suivantes pour que votre projet reste sur la bonne voie.
+
+
+ > [!NOTE]
+ > 
+ > Ces modèles peuvent être utiles quand vous travaillez sur la portée du projet :
+ > > - [Modèle de décision Intune ou Intune avec Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [Modèle de planification pour applications mobiles](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [Modèle de planification de la gestion générale des appareils](https://gallery.technet.microsoft.com/General-device-management-334c3792)
 
 ### Support technique
 Pour que les utilisateurs spécialistes puissent bénéficier d’une expérience Intune productive, le support technique doit être préparé en conséquence. Au cours de la phase de définition de la portée de votre projet, tenez compte du rôle que le support technique jouera dans chaque phase et des ressources que vous devez utiliser et assurez-vous que le support technique est prêt à prendre en charge les utilisateurs finaux.
@@ -110,6 +112,7 @@ Voici des défis que vous pouvez rencontrer au cours de la phase de **définitio
 [Preuve de concept](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

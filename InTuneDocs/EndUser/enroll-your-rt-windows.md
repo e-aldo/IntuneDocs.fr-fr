@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Inscrire un appareil Windows RT dans Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ca6519e8-d0da-4314-b0bc-1753784d7969
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 47341626bceaa5d4ad0775c3d22d80985ce699cc
+
 
 ---
 
@@ -51,7 +45,7 @@ Nous vous recommandons aussi d'installer l'application Portail d'entreprise. Ell
 
 4.  Appuyez sur **Portail d’entreprise** &gt; **Installer**.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Inscrire un appareil Windows dans Intune](enroll-your-device-in-intune-windows.md)</br>
@@ -59,6 +53,7 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Compte de messagerie d’entreprise existant détecté | Microsoft Intune
-description:
-keywords:
+title: "Compte de messagerie d’entreprise existant détecté | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 02a07a6017ed2bb569dd9d3756f84b7b8078f630
+
 
 ---
 
@@ -36,10 +30,11 @@ Vous disposez déjà d'un compte de messagerie d'entreprise. Pour continuer à s
 
 3.  Patientez quelques secondes pour les nouveaux paramètres de courrier électronique à appliquer automatiquement à votre périphérique.
 
-Si les nouveaux paramètres de messagerie ne s’affichent pas au bout d’un certain temps, contactez votre administrateur informatique. Si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Si les nouveaux paramètres de messagerie ne s’affichent pas au bout d’un certain temps, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

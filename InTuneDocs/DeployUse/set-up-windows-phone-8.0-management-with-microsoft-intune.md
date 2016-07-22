@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurer la gestion de Windows Phone 8.0 | Microsoft Intune
-description:
-keywords:
+title: "Configurer la gestion de Windows Phone 8.0 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
+ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Windows Phone 8.0 nécessite un certificat Symantec pour installer l’application Portail d’entreprise Intune et permettre la gestion de l’appareil. Un certificat est également requis pour signer les applications métier. La rubrique suivante concerne uniquement Windows Phone 8.0. Pour gérer Windows Phone 8.1 ou version ultérieure, y compris Windows 10 Mobile, consultez [Configurer l’inscription de Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md).
 
-> [!IMPORTANT] À partir de septembre 2016, l’application Portail d’entreprise pour Windows 8.0 et Windows Phone 8.0 ne sera plus disponible en téléchargement.
+> [!IMPORTANT]
+> À partir de septembre 2016, l’application Portail d’entreprise pour Windows 8.0 et Windows Phone 8.0 ne sera plus disponible en téléchargement.
 
 -   **Windows Phone 8** – Certificat obligatoire
 -   **Windows Phone 8.1 et Windows 10 Mobile** exigent un certificat uniquement dans les cas suivants :
@@ -41,7 +36,8 @@ Windows Phone 8.0 nécessite un certificat Symantec pour installer l’applicat
 
 ![Diagramme des certificats requis](../media/wpcertreqs.png)
 
-  > [!IMPORTANT] Le certificat Symantec utilisé pour gérer certains appareils mobiles Windows et Windows Phone [doit être renouvelé régulièrement](renew-a-symantec-code-signing-certificate.md).
+  > [!IMPORTANT]
+  > Le certificat Symantec utilisé pour gérer certains appareils mobiles Windows et Windows Phone [doit être renouvelé régulièrement](renew-a-symantec-code-signing-certificate.md).
 
 Les exigences de configuration de la gestion d'appareils mobiles Windows Phone varient en fonction du mode de gestion prévu des appareils.  Le fait de définir deux enregistrements CNAME dans l'enregistrement DNS de votre entreprise a pour effet de faciliter l'inscription des utilisateurs. Si vos utilisateurs sont appelés à télécharger l'application Portail d'entreprise depuis le Store, dès lors que vous aurez configuré les paramètres DNS, il vous suffira de configurer le Portail d'entreprise et d'indiquer aux utilisateurs la procédure d'inscription.  Dans le cas de Windows Phone 8.0 ou de Windows Phone 8.1, là où vous déploierez le Portail d’entreprise, vous aurez besoin d’un certificat Symantec pour signer le code de l’application.
 
@@ -86,7 +82,7 @@ Les exigences de configuration de la gestion d'appareils mobiles Windows Phone v
 
     3.  **Importer les certificats** Une fois la demande approuvée, vous recevrez un e-mail contenant des instructions pour importer les certificats. Suivez les instructions de l'e-mail pour importer les certificats.
 
-    4.  **Vérifier les certificats importés** Pour vérifier que les certificats ont été importés correctement, accédez au composant logiciel enfichable **Certificats**, cliquez avec le bouton droit sur **Certificats**, puis sélectionnez **Rechercher des certificats**. Dans le champ **Contient** , indiquez « Symantec » et cliquez sur **Rechercher**. Les certificats que vous avez importés doivent apparaître dans les résultats.
+    4.  **Vérifier les certificats importés** Pour vérifier que les certificats ont été importés correctement, accédez au composant logiciel enfichable **Certificats**, cliquez avec le bouton droit sur **Certificats**, puis sélectionnez **Rechercher des certificats**. Dans le champ **Contient**, indiquez « Symantec » et cliquez sur **Rechercher**. Les certificats que vous avez importés doivent apparaître dans les résultats.
 
         ![Rechercher le certificat Symantec](../media/wit.gif)
 
@@ -94,7 +90,7 @@ Les exigences de configuration de la gestion d'appareils mobiles Windows Phone v
 
         ![Exporter le certificat de signature](../media/wit-walk-cert2.gif)
 
-        Dans l' **Assistant Exportation de certificat**, sélectionnez **Oui, exporter la clé privée** , puis cliquez sur **Suivant**. Sélectionnez **Échange d’informations personnelles - PKCS #12 (.PFX)** et activez **Inclure tous les certificats dans le chemin d’accès de certification si possible**. Effectuez toutes les étapes de l'Assistant. Pour plus d'informations, voir [Comment exporter un certificat avec la clé privée](http://go.microsoft.com/fwlink/?LinkID=203031).
+        Dans l' **Assistant Exportation de certificat**, sélectionnez **Oui, exporter la clé privée**, puis cliquez sur **Suivant**. Sélectionnez **Échange d’informations personnelles - PKCS #12 (.PFX)** et activez **Inclure tous les certificats dans le chemin d’accès de certification si possible**. Effectuez toutes les étapes de l'Assistant. Pour plus d'informations, voir [Comment exporter un certificat avec la clé privée](http://go.microsoft.com/fwlink/?LinkID=203031).
 
     6.  **Télécharger et signer l'application Portail d'entreprise**
 
@@ -118,7 +114,7 @@ Les exigences de configuration de la gestion d'appareils mobiles Windows Phone v
 
         4.  Ajoutez le fichier du certificat (.pfx) que vous avez exporté à **Certificat de signature de code** et créez un mot de passe pour le certificat.
 
-        5.  Dans la page **Description du logiciel** , renseignez les champs sans oublier que les utilisateurs voient ces informations sur leurs appareils quand ils affichent les détails de l'application sur le portail d'entreprise.
+        5.  Dans la page **Description du logiciel**, renseignez les champs sans oublier que les utilisateurs voient ces informations sur leurs appareils quand ils affichent les détails de l'application sur le portail d'entreprise.
 
         6.  Effectuez toutes les étapes de l'Assistant. Les utilisateurs qui inscrivent un appareil Windows Phone 8.0 reçoivent à présent l'application Portail d'entreprise sur leurs appareils durant l'inscription. Les utilisateurs Windows Phone 8.1 peuvent installer l'application Portail d'entreprise à partir de la version du Store de l'application Portail d'entreprise.  Si l'accès au Windows Phone Store par les appareils Windows Phone 8.1 est bloqué ou que vous souhaitez déployer l'application Portail d'entreprise avec Intune, vous devez télécharger et signer l'application Portail d'entreprise Windows Phone 8.1 (SSP.appx).
 
@@ -183,9 +179,10 @@ Vous pouvez déployer l’application Portail d’entreprise sur les appareils W
     >
     > -   Si vous n'effectuez pas de chargement de version test des applications et si vous n'avez pas besoin d'assurer la prise en charge de Windows Phone 8.0, ne téléchargez pas le fichier ssp.xap signé.
     > -   Si des applications faisant l'objet d'un chargement de version test sont nécessaires, et s'il n'y a aucun appareil Windows Phone 8 en cours d'inscription, changez le déploiement de ssp.xap créé automatiquement en remplaçant « disponible » par « désinstaller ».
-    > -   Si des applications faisant l'objet d'un chargement de version test doivent être installées et si des appareils Windows Phone 8.0 doivent s'inscrire et recevoir le fichier ssp.xap, créez un déploiement logiciel du fichier ssp.xap, puis déployez ce dernier avec l'action **désinstaller** . Dans la mesure où les appareils Windows Phone 8.0 ne prennent pas en charge l'installation ou la désinstallation forcée des applications, ils ignorent le déploiement. Les appareils Windows Phone 8.1 prennent en charge l'action de désinstallation et suppriment ssp.xap.
+    > -   Si des applications faisant l'objet d'un chargement de version test doivent être installées et si des appareils Windows Phone 8.0 doivent s'inscrire et recevoir le fichier ssp.xap, créez un déploiement logiciel du fichier ssp.xap, puis déployez ce dernier avec l'action **désinstaller**. Dans la mesure où les appareils Windows Phone 8.0 ne prennent pas en charge l'installation ou la désinstallation forcée des applications, ils ignorent le déploiement. Les appareils Windows Phone 8.1 prennent en charge l'action de désinstallation et suppriment ssp.xap.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie | Microsoft Intune
-description:
-keywords:
+title: "Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/05/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
+ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+
 
 ---
 
@@ -89,9 +83,10 @@ Comme le mot de passe n'est pas contenu dans le profil de messagerie, l'utilisat
     |**Planification de la synchronisation** (Samsung KNOX, Windows Phone 8 et versions ultérieures, Windows 10)|Sélectionnez la planification selon laquelle les appareils vont synchroniser les données d'Exchange Server. Vous pouvez également sélectionner **À mesure que les messages arrivent** pour synchroniser les données dès qu’elles arrivent ou **Manuel** pour que ce soit l’utilisateur de l’appareil qui lance la synchronisation.|
     |**Utiliser SSL**|Utilisez la communication SSL (Secure Sockets Layer) pour envoyer des messages électroniques, en recevoir et communiquer avec Exchange Server.<br /><br />Pour les appareils qui exécutent Samsung KNOX 4.0 ou vers ultérieure, vous devez exporter le certificat SSL de votre serveur Exchange et le déployer comme profil de certificat approuvé par Android dans Intune. Intune ne prend pas en charge l’accès à ce certificat s’il est installé sur le serveur Exchange par d’autres moyens.|
     |**Type de contenu à synchroniser**|Sélectionnez les types de contenu à synchroniser avec des appareils.| 
-    |**Autoriser l’envoi de courrier électronique à partir d’applications tierces** (iOS uniquement)|Autoriser les applications tierces à ouvrir le courrier électronique dans l’application de messagerie native, par exemple à joindre des fichiers au courrier.|
+    |**Autoriser l’envoi de courrier électronique à partir d’applications tierces** (iOS uniquement)|Autoriser l’utilisateur à sélectionner ce profil en tant que compte par défaut pour l’envoi d’e-mails et autoriser les applications tierces à ouvrir les e-mails dans l’application de messagerie native, par exemple pour y joindre des fichiers.|
 
-    > [!IMPORTANT] Si vous avez déployé un profil de messagerie et que vous souhaitez ensuite modifier les valeurs **Hôte** ou **Adresse de messagerie**, vous devez supprimer le profil de messagerie existant et en créer un avec les valeurs requises.
+    > [!IMPORTANT]
+    > Si vous avez déployé un profil de messagerie et que vous souhaitez ensuite modifier les valeurs **Hôte** ou **Adresse de messagerie**, vous devez supprimer le profil de messagerie existant et en créer un avec les valeurs requises.
 
 4.  Quand vous avez terminé, cliquez sur **Enregistrer la stratégie**.
 
@@ -109,11 +104,13 @@ La nouvelle stratégie s'affiche sous le nœud **Stratégies de configuration** 
 
 Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'ensemble** de l'espace de travail **Stratégie** , les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le Tableau de bord contient un récapitulatif de l'état.
 
-> [!NOTE] Si vous souhaitez supprimer un profil de messagerie d’un appareil, modifiez le déploiement et supprimez les groupes dont l’appareil est membre.
+> [!NOTE]
+> Si vous souhaitez supprimer un profil de messagerie d'un appareil, modifiez le déploiement et supprimez les groupes dont l'appareil est membre.
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

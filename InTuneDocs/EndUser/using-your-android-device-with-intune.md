@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Utilisation de votre appareil Android avec Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
+ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+
 
 ---
 
@@ -52,6 +46,7 @@ Les informations contenues dans cette section vous indiqueront les actions que v
 - [Annuler l’inscription de votre appareil si vous avez refusé les conditions d’utilisation](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Que se passe-t-il si vous réinitialisez votre appareil Android à l’aide de l’application Portail d’entreprise ?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
 ## Résoudre les problèmes rencontrés avec votre appareil
 
@@ -65,10 +60,16 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 - [L’appareil n’est pas conforme à la version maximale du système d’exploitation](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [Votre appareil est rooté et vous ne pouvez pas vous connecter](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Un certificat obligatoire est manquant sur votre appareil](your-device-is-missing-a-required-certificate-android.md)
+- [Vous êtes invité à désactiver les sources inconnues](you-are-asked-to-turn-off-unknown-sources-android.md)
+- [Vous êtes invité à désactiver le débogage USB](you-are-asked-to-turn-off-usb-debugging-android.md)
+- [Vous êtes invité à activer le paramètre Rechercher les menaces de sécurité sur l’appareil](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Votre appareil n’est pas au niveau minimal du correctif de sécurité](your-device-does-not-meet-the-minimum-security-patch-android.md)
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO5-->
 
 

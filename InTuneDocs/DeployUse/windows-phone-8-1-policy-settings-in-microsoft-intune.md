@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Paramètres de la stratégie Windows Phone 8.1 | Microsoft Intune
-description:
-keywords:
+title: "Paramètres de la stratégie Windows Phone 8.1 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+
 
 ---
 
@@ -127,7 +121,8 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 |**Importer des applications**|Importe une liste d'applications que vous avez spécifiée dans un fichier de valeurs séparées par des virgules. Utilisez le format Nom de l'application, Éditeur, URL de l'application dans le fichier.|
 |**Éditer**|Vous permet de modifier le nom, l'éditeur et l'URL de l'application sélectionnée.|
 |**Supprimer**|Supprime l'application sélectionnée dans la liste.|
-> [!IMPORTANT] Si vous spécifiez une liste d’applications autorisées pour les appareils Windows Phone 8.1, vous devez ajouter l’application Portail d’entreprise à cette liste, sinon elle sera bloquée.
+> [!IMPORTANT]
+> Si vous spécifiez une liste d'applications autorisées pour les appareils Windows Phone 8.1, vous devez ajouter l'application Portail d'entreprise à cette liste, sinon elle sera bloquée.
 
 
 ### Informations de référence pour les applications conformes et non conformes
@@ -174,6 +169,7 @@ Dans la boîte de dialogue **Ajouter ou modifier un paramètre OMA-URI**, spéci
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

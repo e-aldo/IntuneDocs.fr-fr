@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Créer et déployer des stratégies GAM | Microsoft Intune
-description:
-keywords:
+title: "Créer et déployer des stratégies GAM | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
+ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+
 
 ---
 
@@ -33,7 +26,9 @@ Cette rubrique décrit le processus de création d’une stratégie GAM dans le 
 - Appareils gérés par une solution de gestion des appareils mobiles tierce
 - Appareils qui ne sont gérés par aucune solution de gestion des appareils mobiles (BYOD).
 
-Si vous utilisez la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer une stratégie de gestion des applications mobiles qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer une stratégie de gestion des applications mobiles qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Les stratégies de gestion des applications mobiles créées dans la console d’administration Intune ne peuvent pas être importées dans le portail Azure.  Les stratégies de gestion des applications mobiles doivent être recréées dans le portail Azure.
+
 >[!IMPORTANT]
 > La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Le portail Azure est la nouvelle console d’administration pour créer des stratégies de gestion des applications mobiles. Si vous créez de telles stratégies sur la console d’administration Intune et le portail Azure, la stratégie dans le portail Azure est appliquée aux applications et déployée sur les appareils des utilisateurs.
 
@@ -49,7 +44,8 @@ Avant de créer une stratégie GAM, passez en revue les informations relatives a
 
     ![Capture d’écran du panneau Gestion des applications mobiles Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP] Si c’est la première fois que vous utilisez le portail Azure, commencez par lire [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) (Portail Azure pour les stratégies de gestion des applications mobiles Microsoft Intune) pour vous familiariser avec le portail.
+    > [!TIP]
+    > Si c’est la première fois que vous utilisez le portail Azure, commencez par lire [Portail Azure pour les stratégies de gestion des applications mobiles Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) pour vous familiariser avec le portail.
 
 2.  Dans le panneau **Paramètres**, choisissez **Stratégie d’application**.  Cette opération ouvre le panneau **Stratégie d’application** dans lequel vous allez créer des stratégies et modifier des stratégies existantes.
 
@@ -65,7 +61,8 @@ Avant de créer une stratégie GAM, passez en revue les informations relatives a
 
 5.  Choisissez **Applications** pour ouvrir le panneau **Applications** qui contient la liste des applications disponibles. Dans cette liste, vous pouvez sélectionner une ou plusieurs applications à associer à la stratégie que vous créez. Une fois que vous avez sélectionné les applications, choisissez le bouton **Sélectionner** en bas du panneau **Applications** pour enregistrer votre sélection.
 
-    > [!IMPORTANT] Vous devez sélectionner au moins une application pour créer une stratégie.
+    > [!IMPORTANT]
+    > Vous devez sélectionner au moins une application pour créer une stratégie.
 
 6.  Dans le panneau **Ajouter une stratégie**, choisissez **Configurer les paramètres requis** pour ouvrir le panneau des paramètres de stratégie.
 
@@ -108,7 +105,8 @@ Quand vous avez fini de créer une stratégie comme décrit dans la procédure p
 
 Seuls les utilisateurs en possession de licences [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sont affectés par la stratégie.  Les utilisateurs figurant dans le groupe de sécurité que vous avez sélectionné et qui n’ont pas de licence [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ne sont pas affectés.
 
-Si vous utilisez Intune avec Configuration Manager pour gérer vos appareils iOS et Android, la stratégie est appliquée uniquement aux utilisateurs figurant directement dans le groupe que vous avez sélectionné.  Les membres des groupes enfants imbriqués dans le groupe que vous avez sélectionné ne sont pas affectés.
+>[!IMPORTANT]
+> Si vous utilisez Intune avec Configuration Manager pour gérer vos appareils iOS et Android, la stratégie est appliquée uniquement aux utilisateurs figurant directement dans le groupe que vous avez sélectionné.  Les membres des groupes enfants imbriqués dans le groupe que vous avez sélectionné ne sont pas affectés.
 
 Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour obtenir une description détaillée de la façon dont la stratégie GAM protège les données d’entreprise sur l’appareil, consultez la rubrique [Expérience de l’utilisateur final pour des applications avec GAM activé](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md).
 
@@ -167,6 +165,7 @@ Pour afficher une liste complète des paramètres de stratégie pour iOS et Andr
 [Expérience de l’utilisateur final pour des applications avec GAM activé](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

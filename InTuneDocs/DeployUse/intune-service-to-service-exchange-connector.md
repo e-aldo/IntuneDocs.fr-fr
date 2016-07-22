@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurer le connecteur Exchange de Microsoft Intune pour Exchange hébergé | Microsoft Intune
-description:
-keywords:
+title: "Configurer le connecteur Exchange de Microsoft Intune pour Exchange hébergé | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
+ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+
 
 ---
 
@@ -54,21 +48,22 @@ Vous devez aussi créer un compte d’utilisateur Exchange Online utilisé par l
 
 1. Ouvrez la [console d’administration Microsoft Intune](http://manage.microsoft.com) avec un compte d’utilisateur disposant des droits d’administrateur Exchange et des autorisations pour les applets de commande [ci-dessus](#exchange-cmdlet-requirements). Microsoft Intune utilise l’adresse de messagerie de l’utilisateur actuellement connecté pour configurer la connexion.
 
-2.  Dans le volet des raccourcis de l’espace de travail, choisissez **ADMIN**, accédez **Gestion des appareils mobiles** > **Microsoft Exchange** > **Configurer la connexion Exchange**.
+2.  Dans le volet des raccourcis de l’espace de travail, choisissez **ADMIN**, puis accédez à **Gestion des appareils mobiles** > **Microsoft Exchange** > **Configurer la connexion Exchange**.
 ![Page Configurer le connecteur de service à service](../media/intunesa5cservicetoserviceconnector.png)
 
-3.  Dans la page **Configurer la connexion Exchange**, cliquez sur **Configurer le connecteur de service à service**..
+3.  Dans la page **Configurer la connexion Exchange**, cliquez sur **Configurer le connecteur de service à service**.
 
 
 Le connecteur de service à service se configure et se synchronise automatiquement avec votre environnement Exchange hébergé.
 
 ## Valider votre connexion Exchange
 
-Après avoir configuré avec succès le connecteur Exchange, dans la console d’administration Intune, choisissez l’espace de travail **ADMIN** et accédez à **Gestion des appareils mobiles** > **Microsoft Exchange** et vérifiez que les détails que vous avez fournis apparaissent sous **Informations de connexion à Exchange**..
+Après avoir configuré avec succès le connecteur Exchange, dans la console d’administration Intune, choisissez l’espace de travail **ADMIN** et accédez à **Gestion des appareils mobiles** > **Microsoft Exchange** et vérifiez que les détails que vous avez fournis apparaissent sous **Informations de connexion à Exchange**.
 
 Vous pouvez également vérifier la date et l'heure de la dernière tentative de synchronisation réussie.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

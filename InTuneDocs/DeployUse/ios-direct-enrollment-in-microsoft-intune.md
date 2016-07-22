@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Inscription directe pour les appareils iOS | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+
 
 ---
 
@@ -46,6 +40,8 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise avec l�
 
         -   **Affectation préalable du groupe d’appareils** : tous les appareils déployés dans ce profil appartiennent initialement à ce groupe. Vous pouvez réaffecter les appareils après l'inscription.
 
+        >[!Important]
+        >Les affectations de groupe passeront d’Intune à Azure Active Directory. [En savoir plus](http://go.microsoft.com/fwlink/?LinkID=787064)
     3.  Choisissez **Enregistrer le profil** pour ajouter le profil.
 
 5.  **Exporter un profil comme .mobileconfig à déployer sur des appareils iOS** Sélectionnez le profil d’appareil que vous avez créé. Choisissez **Exporter...** dans la barre des tâches. Choisissez **Télécharger le profil** et enregistrez le fichier .mobileconfig téléchargé.
@@ -89,6 +85,7 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise avec l�
 [Se préparer à inscrire des appareils](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

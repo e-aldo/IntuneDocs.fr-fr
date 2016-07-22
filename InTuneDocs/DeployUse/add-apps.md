@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Ajouter des applications | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ Les applications basées sur les liens externes ne sont pas stockées dans votre
 Vous permet de gérer et de déployer des applications iOS gratuites à partir de l’App Store. Vous permet également d’associer des [stratégies de gestion des applications mobiles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) à des [applications compatibles](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) et de consulter leur état dans la console Administrateur.<br /><br />Les applications iOS gérées ne sont pas stockées dans votre espace de stockage cloud Intune.
 > [!TIP] Les options pour les appareils mobiles ne sont pas disponibles tant que vous n’avez pas [configuré Intune comme autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md).
 
+## Éditeur de logiciel Intune
+L’**Éditeur de logiciel Microsoft Intune** démarre quand vous ajoutez ou modifiez des applications à partir de la console d’administration Microsoft Intune. Dans l’éditeur, vous sélectionnez et configurez un type de programme d’installation de logiciel qui permet de charger des applications (programmes pour des ordinateurs ou applications pour des appareils mobiles) à stocker dans l’espace de stockage cloud Intune ou d’établir un lien vers une boutique en ligne ou une application web.
+
+### Configuration requise
+Avant de commencer à utiliser l’Éditeur de logiciel Microsoft Intune, vous devez installer la version complète du [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). Après l’installation, il peut-être nécessaire de redémarrer votre ordinateur pour que l’éditeur de logiciel s’ouvre correctement.
+
+## Espace de stockage cloud
+Toutes les applications que vous créez en utilisant le type d’installation de programme d’installation de logiciel (par exemple, une application métier) sont mises en package et chargées sur le stockage de cloud Microsoft Intune. Un abonnement d’essai à Intune inclut 2 Go de stockage cloud, utilisé pour stocker les applications gérées et les mises à jour. Un abonnement payant inclut 20 Go, avec la possibilité d’acheter du stockage supplémentaire.
+
+Vous pouvez voir combien d’espace vous utilisez et acheter du stockage supplémentaire dans le nœud **Utilisation du stockage** de l’espace de travail **Administration**.
+
+Les règles suivantes s’appliquent à l’achat de stockage cloud supplémentaire pour Intune :
+
+-   Vous devez disposer d'un abonnement payant actif pour acheter du stockage supplémentaire.
+
+-   Seuls les administrateurs de facturation et les administrateurs généraux de Microsoft Online Services peuvent acheter du stockage supplémentaire via le portail de gestion Office 365. Pour ajouter, supprimer ou gérer ces administrateurs, vous devez être administrateur général et vous connecter au portail de gestion Office 365.
+
+-   Si vous êtes un client de licences en volume qui a acheté Intune ou le composant additionnel de Microsoft Intune via le contrat d’entreprise, contactez votre responsable de compte Microsoft ou votre partenaire Microsoft afin d’obtenir des informations tarifaires et acheter du stockage supplémentaire.
+
+#### Configuration requise pour l’espace de stockage cloud
+
+-   Vérifiez que tous les fichiers d’installation de l’application se trouvent dans le même dossier.
+
+-   La taille maximale des fichiers que vous chargez est de 2 Go.
+
+
 ## Prise en charge des applications de plateforme Windows universelle (UWP)
 Les PC Windows 10 n’ont pas besoin d’une clé de chargement indépendant pour installer des applications métier. Cependant, la clé de Registre **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** doit avoir la valeur **1** pour activer le chargement indépendant.
 
@@ -96,6 +115,8 @@ Sur les appareils Windows 10 Mobile, vous pouvez utiliser un certificat de code
 
 Ensuite, vous devez ajouter les applications à la console Intune avant de les déployer. Vous pouvez ajouter des applications pour des [appareils inscrits](add-apps-for-mobile-devices-in-microsoft-intune.md) ou pour des [PC Windows que vous gérez avec le logiciel client Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 
