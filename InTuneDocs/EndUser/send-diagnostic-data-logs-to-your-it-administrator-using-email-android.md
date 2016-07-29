@@ -3,7 +3,7 @@ title: "Envoyer les journaux de données de diagnostic à votre administrateur i
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 30d325a9f5b920176ed5f4c9ce003564dcc6d3b5
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 00e23b0094ee03c2a54bf6d12295e9f38781373f
 
 
 ---
@@ -31,13 +31,13 @@ Pour activer la journalisation détaillée :
 
 2.  Cliquez sur **Menu** &gt; **Paramètres**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Le **menu** peut être un bouton à l’écran ou un bouton physique, selon le type d’appareil Android que vous utilisez.
 
 3.  Sous **Données de diagnostic**, appuyez sur **Envoyer les données**.
 
     > [!NOTE]
-    > **Pour les appareils Android 6.0 ou version ultérieure uniquement : ** Quand vous appuyez sur **Envoyer des données**, le message **Autoriser l’application Portail d’entreprise à accéder aux photos, aux fichiers multimédias et aux fichiers de votre appareil ?** s’affiche. 
+    > **Pour les appareils Android 6.0 ou version ultérieure uniquement : ** Quand vous appuyez sur **Envoyer des données**, le message **Autoriser l’application Portail d’entreprise à accéder aux photos, aux fichiers multimédias et aux fichiers de votre appareil ?** s’affiche.
 
     Ce message est trompeur, car **Microsoft n’accède jamais aux photos, aux fichiers multimédias ou aux fichiers de votre appareil.** Google contrôle le texte du message, par conséquent, Microsoft ne peut pas le modifier.  Quand vous autorisez l’accès, vous autorisez simplement votre appareil à écrire des journaux de données sur la carte SD de l’appareil, ce qui vous permet de déplacer ces journaux à l’aide d’un câble USB.
 
@@ -50,6 +50,7 @@ Pour activer la journalisation détaillée :
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

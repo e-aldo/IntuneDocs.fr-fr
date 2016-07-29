@@ -3,7 +3,7 @@ title: "À propos du portail d’entreprise | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 609ed567e40cc35a6e36539ca58165f9193cec65
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 299d45f707602cc547fbad4186b8c857864ee5c9
 Le portail d’entreprise Microsoft Intune vous permet d’accéder aux données et applications de votre entreprise ou de votre école. Vous pouvez obtenir le portail d’entreprise de deux façons différentes :
 
 - En installant l’application Portail d’entreprise sur votre appareil. Vous obtenez généralement l’application Portail d’entreprise en accédant au magasin d’applications de votre appareil, mais votre administrateur peut également installer l’application Portail d’entreprise pour vous à l’aide de différentes méthodes.
-- En accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com) que votre administrateur a configuré. 
+- En accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com) que votre administrateur a configuré.
 
 Il existe quelques différences mineures entre l’application Portail d’entreprise et le site web Portail d’entreprise, mais les deux permettent d’effectuer presque toutes les mêmes tâches . Voici quelques exemples :
 
@@ -100,10 +100,6 @@ Si vous avez besoin d’aide, contactez votre administrateur informatique. Pour 
 
 
 
-
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

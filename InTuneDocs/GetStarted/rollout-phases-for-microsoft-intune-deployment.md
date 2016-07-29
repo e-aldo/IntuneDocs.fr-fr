@@ -3,8 +3,8 @@ title: "Phases de lancement pour les déploiements Microsoft Intune | Microsoft 
 description: "Les phases d’un déploiement technique sont en général les suivantes : portée du projet, preuve de concept, pilote, lancement à l’échelle de l’entreprise et état d’exécution."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: c20f96481916d5e9468eade65d8aa0c1133646ef
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: fda1e32c2b1be260c1d2c1b26f2415105d3fc10a
 
 
 ---
@@ -26,11 +26,11 @@ Les phases d’un déploiement technique sont en général les suivantes : port�
 -   [Portée du projet](project-scope.md) : précisez vos objectifs, la chronologie et des critères de réussite, définissez des facteurs clés de disponibilité organisationnelle, assemblez votre équipe de projet et commencez les préparations initiales pour toutes les phases de déploiement de Microsoft Intune au sein de votre organisation.
      > [!NOTE]           
        Ces modèles peuvent être utiles quand vous travaillez sur la portée du projet :
-        
+
     >- [Modèle de décision Intune ou Intune avec Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
     >- [Modèle de planification pour applications mobiles](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
     >- [Modèle de planification de la gestion générale des appareils](https://gallery.technet.microsoft.com/General-device-management-334c3792)
-    
+
 
 -   [Preuve de concept](proof-of-concept.md) : testez le déploiement technique et l’architecture réseau, et déterminez la capacité de votre déploiement à répondre aux besoins de votre entreprise. Cette phase inclut une topologie simple, conçue pour valider des scénarios techniques spécifiques.  
 
@@ -62,6 +62,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

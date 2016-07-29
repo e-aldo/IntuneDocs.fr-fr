@@ -3,7 +3,7 @@ title: "Définir le délai avant le verrouillage de l’appareil | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: fe54897fe42d07040b873d6112e34830652fdf20
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: df24ef5c0562d04c1f9aaf08c5905e4928b6c4fa
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: fe54897fe42d07040b873d6112e34830652fdf20
 # Définir la période de temps qui doit s’écouler avant le verrouillage de l’appareil
 
 Pour sécuriser les données sur votre appareil Android, votre administrateur informatique peut définir une stratégie qui nécessite que vous définissiez la durée pendant laquelle votre appareil peut rester inactif avant d’être automatiquement verrouillé. Procédez comme suit pour définir le délai avant que votre appareil ne soit verrouillé.
- 
+
 1.  Dans **Paramètres** sur votre appareil, cliquez sur **Sécurité** &gt; **Verrouiller automatiquement** (sur certains appareils, l’option est **Verrouiller le téléphone au bout de**).
 
 2.  Spécifiez la valeur du délai d'expiration du mot de passe.
@@ -36,6 +36,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Vous êtes invité à désactiver le débogage USB | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -12,17 +12,17 @@ ms.technology:
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: eb3c46be463a355c920b4a5b5960464d2ab11f91
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: bfbeed3c09bdc93dfd3a8151d8107bdc6636e981
 
 
 ---
 
 # Vous êtes invité à désactiver le débogage USB
 
-Si le message « Le débogage USB doit être désactivé » s’affiche, vous devez accéder à **Paramètres** > **Options pour développeurs**, puis désactiver **Débogage USB**. 
+Si le message « Le débogage USB doit être désactivé » s’affiche, vous devez accéder à **Paramètres** > **Options pour développeurs**, puis désactiver **Débogage USB**.
 
-Votre administrateur informatique exige que ce paramètre soit désactivé pour protéger les données d’entreprise sur votre appareil Android. 
+Votre administrateur informatique exige que ce paramètre soit désactivé pour protéger les données d’entreprise sur votre appareil Android.
 
 Si le paramètre **Débogage USB** est activé, les données de votre appareil sont moins sécurisées quand un périphérique USB est connecté.
 
@@ -35,6 +35,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

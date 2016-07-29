@@ -3,7 +3,7 @@ title: Que peut voir votre administrateur informatique lorsque vous inscrivez vo
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: be6932d34d33439c628dc4a3ec8ec27fec428da2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c98a9c335c80cb8484009d4dced723758872b7db
 
 
 ---
@@ -64,6 +64,7 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 
