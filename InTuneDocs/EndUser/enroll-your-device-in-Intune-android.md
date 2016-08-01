@@ -1,10 +1,10 @@
 ---
 title: Inscrire un appareil Android dans Intune | Microsoft Intune
-description: 
+description: Cette rubrique explique comment inscrire un appareil Android dans Intune
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 76cc1a43e09039285be76858155ef22f7b41cf9b
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
 
 
 ---
@@ -44,7 +44,27 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Si vous utilisez Android 6.0 ou version ultérieure, effectuez cette étape. Sinon, passez à l'étape suivante. 
+5.  Connectez-vous à l’application Portail d’entreprise à l’aide de votre compte professionnel ou scolaire et de votre mot de passe, puis appuyez sur **Se connecter**.
+
+    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+
+6.  Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **COMMENCER**.
+
+    ![Écran de configuration de l’accès à l’entreprise](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  Dans l’écran **Pourquoi inscrire votre appareil ?**, découvrez ce que vous pouvez faire une fois votre appareil inscrit, puis appuyez sur **Continuer**.
+
+    ![Pourquoi inscrire votre appareil ?](./media/and-enroll-4b-why-enroll.png)
+
+8.  Consultez la liste de ce que votre administrateur informatique peut voir et ne pas voir sur votre appareil, puis appuyez sur **CONTINUER**.
+
+    ![Paramètres de confidentialité](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  Dans l’écran **Et ensuite ?**, découvrez ce qui se passe lors de l’inscription, puis appuyez sur **INSCRIRE**.
+
+    ![Écran Et ensuite](./media/and-enroll-4d-what-comes-next.png)
+
+10.  Si vous utilisez Android 6.0 ou version ultérieure, effectuez cette étape. Sinon, passez à l'étape suivante.
 
     Si votre administrateur informatique a configuré certaines stratégies, les messages suivants peuvent s’afficher :
     -   **Autoriser l’application Portail d’entreprise à passer et gérer des appels téléphoniques ?**
@@ -62,26 +82,6 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
     Si ce message s’affiche, appuyez sur **Autoriser** Vous pouvez appuyer sur Autoriser sans risque, car **Microsoft n’accède jamais à vos contacts**. Google contrôle le texte du message et Microsoft ne peut pas le modifier. Quand vous autorisez l’accès, l’application Portail d’entreprise est uniquement autorisée à créer, utiliser et gérer votre compte professionnel.
 
     Si vous refusez l’accès, le message apparaît la prochaine fois que vous appuyez sur **Envoyer des données**, mais vous pouvez désactiver les messages ultérieurs en cochant la case **Ne plus poser la question**. Si vous décidez ensuite d’autoriser l’accès, accédez à **Paramètres** &gt; **Applications** &gt; **Portail d’entreprise** &gt; **Autorisations** &gt; **Stockage**, puis activer l’autorisation.
-
-6.  Connectez-vous à l’application Portail d’entreprise à l’aide de votre compte professionnel ou scolaire et de votre mot de passe, puis appuyez sur **Se connecter**.
-
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
-
-7.  Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **COMMENCER**.
-
-    ![Écran de configuration de l’accès à l’entreprise](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  Dans l’écran **Pourquoi inscrire votre appareil ?**, découvrez ce que vous pouvez faire une fois votre appareil inscrit, puis appuyez sur **Continuer**.
-
-    ![Pourquoi inscrire votre appareil ?](./media/and-enroll-4b-why-enroll.png)
-
-9.  Consultez la liste de ce que votre administrateur informatique peut voir et ne pas voir sur votre appareil, puis appuyez sur **CONTINUER**.
-
-    ![Paramètres de confidentialité](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  Dans l’écran **Et ensuite ?**, découvrez ce qui se passe lors de l’inscription, puis appuyez sur **INSCRIRE**.
-
-    ![Écran Et ensuite](./media/and-enroll-4d-what-comes-next.png)
 
 11.  Dans l’écran **Activer l’administrateur d’appareils**, cliquez sur **Activer**.
 
@@ -115,13 +115,14 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
 
 Avant d’installer des applications d’entreprise, accédez à **Paramètres** &gt; **Sécurité** et activez **Sources inconnues**. Si vous n’activez pas cette option avant d’installer des applications, le message « Installation bloquée » s’affiche. Pour des raisons de sécurité, votre appareil est configuré pour bloquer les installations d’applications provenant de sources inconnues. Vous pouvez appuyer sur **Paramètres** dans la boîte de dialogue d’erreur pour accéder à l’option **Sources inconnues**.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
+
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

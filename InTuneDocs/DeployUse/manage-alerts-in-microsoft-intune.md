@@ -1,21 +1,21 @@
 ---
 title: "Gérer les alertes | Microsoft Intune"
-description: 
+description: "Utilisez l’espace de travail Alertes pour évaluer l’état d’intégrité global des appareils de votre organisation."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ Utilisez l’espace de travail **Alertes** de la console d’administration Intu
 
         > [!NOTE]
         > Dans certains cas, un type d’alerte peut apparaître plusieurs fois dans la liste **Résumé des types d’alerte**.
-        > 
+        >
         > Par exemple, les instances suivantes du type d'alerte Espace libre sur disque logique peuvent apparaître dans la liste :
-        > 
+        >
         > -   3 Espace libre sur disque logique
         > -   2 Espace libre sur disque logique
-        > 
+        >
         > Ce comportement se produit lorsque le même type d'alerte est généré pour les appareils exécutant différents systèmes d'exploitation. Dans l’exemple, la première instance du type d’alerte Espace libre sur disque logique, 3 Espace libre sur disque logique, peut avoir été générée par des ordinateurs exécutant Windows® 7. La deuxième instance du type d’alerte Espace libre sur disque logique peut avoir été générée par des ordinateurs exécutant Windows Vista®.
 
     -   **Pour afficher toutes les alertes actives**, cliquez sur **Alertes &gt; Toutes les alertes**. La page **Alertes** affiche une liste de toutes les alertes actives avec les colonnes suivantes :
@@ -107,7 +107,6 @@ Les alertes qui sont marquées comme fermées sont définitivement supprimées a
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

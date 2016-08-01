@@ -1,10 +1,10 @@
 ---
 title: "Déploiement d’application | Microsoft Intune"
-description: 
+description: "Recommandations pour un déploiement échelonné d’applications dans Microsoft Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 83306c0847eaf98d499e649308669a33306aa97e
 
 
 ---
@@ -44,7 +44,7 @@ Considérez les points suivants :
 
 -   Vérifiez que le programme d’installation de l’application que vous avez choisie est pris en charge par la distribution d’application Intune, comme décrit dans [Ajouter des applications avec Microsoft Intune](/intune/deploy-use/add-apps).
 
--   Vérifiez que les éléments prérequis pour la distribution d’application sont installés. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Vérifiez que les éléments prérequis pour la distribution d’application sont installés. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Vérifiez que le type d’application est pris en charge par Intune.
 
@@ -95,6 +95,6 @@ Pendant la phase pilote, vous allez déployer l’application vers un petit grou
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
