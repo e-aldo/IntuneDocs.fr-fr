@@ -1,10 +1,10 @@
 ---
 title: "Tâches d’évaluation d’Intune courantes | Microsoft Intune"
-description: 
+description: "Cette rubrique fournit des listes et des liens menant vers des tâches courantes que vous pouvez effectuer à l’aide d’Intune, telles que le déploiement d’un stratégie de code PIN iOS et la configuration d’un accès à une messagerie"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 05/5/2016
+manager: angrobe
+ms.date: 05/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c7c2d100-793a-4ed8-b1ac-1da637a1a19d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: d93ab710f6bc2bc62321be5f7079f6092c261284
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: 5ff17a245630746e68492d94a094ebfe3114300c
 
 
 ---
@@ -34,6 +34,6 @@ Revenez plus tard, car davantage de tâches seront ajoutées dans un avenir proc
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
