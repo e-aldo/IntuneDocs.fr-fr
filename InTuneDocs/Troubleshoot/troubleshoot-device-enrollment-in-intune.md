@@ -1,9 +1,9 @@
 ---
 title: "Résoudre les problèmes d’inscription d’appareils | Microsoft Intune"
-description: 
+description: "Suggestions pour résoudre les problèmes liés à l’inscription d’appareils."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
-ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: e10ef68d97127b848a7d624ba40d219ffed3d06d
 
 
 ---
@@ -144,7 +144,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 **Résolution :** dans le [Centre d’administration Office 365](https://portal.office.com/), supprimez les caractères spéciaux du nom de l’entreprise et enregistrez les informations de l’entreprise.
 
 ### Impossible de se connecter ou d’inscrire des appareils lorsque vous avez plusieurs domaines vérifiés
-**Problème :** Quand vous ajoutez un deuxième domaine vérifié à votre ADFS, les utilisateurs avec le suffixe de nom principal d’utilisateur (UPN) du deuxième domaine peuvent ne pas pouvoir se connecter aux portails ou inscrire des appareils. 
+**Problème :** Quand vous ajoutez un deuxième domaine vérifié à votre ADFS, les utilisateurs avec le suffixe de nom principal d’utilisateur (UPN) du deuxième domaine peuvent ne pas pouvoir se connecter aux portails ou inscrire des appareils.
 
 
 **Résolution :** les clients Microsoft Office 365 qui utilisent l’authentification unique (SSO) via les services ADFS 2.0 et qui disposent de plusieurs domaines de niveau supérieur pour les suffixes UPN des utilisateurs au sein de leur entreprise (par exemple, @contoso.com ou @fabrikam.com) doivent déployer une instance distincte d’ADFS 2.0 Federation Service pour chaque suffixe.  Il existe désormais un [correctif cumulatif pour ADFS 2.0](http://support.microsoft.com/kb/2607496) qui fonctionne conjointement avec le commutateur **SupportMultipleDomain** pour permettre au serveur ADFS de prendre en charge ce scénario sans nécessiter d’autres serveurs ADFS 2.0. Pour plus d’informations, consultez [ce blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
@@ -160,8 +160,29 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 2.  Vérifiez que l’appareil n’est pas déjà inscrit auprès d’un autre fournisseur GPM ou qu’il ne dispose pas déjà d’un profil de gestion.
 
-
 4.  Vérifiez que Chrome pour Android est le navigateur par défaut et que les cookies sont activés.
+
+### Problèmes touchant les certificats Android
+
+**Problème** : l’utilisateur reçoit le message suivant sur son appareil : *Vous ne pouvez pas vous connecter, car il manque un certificat obligatoire à votre appareil.*
+
+**Résolution** :
+
+- L’utilisateur peut récupérer le certificat manquant en suivant [ces instructions](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
+- Si l’utilisateur ne peut pas récupérer le certificat, il manque peut-être des certificats intermédiaires sur votre serveur ADFS. Les certificats intermédiaires sont requis par Android pour approuver le serveur.
+
+Vous pouvez importer ces certificats dans le magasin intermédiaire sur le serveur ADFS ou des proxy comme suit :
+
+1.  Sur le serveur ADFS, lancez **Microsoft Management Console** et ajoutez le composant logiciel enfichable Certificats pour le **Compte d’ordinateur**.
+5.  Recherchez le certificat que votre service ADFS utilise et affichez son certificat parent.
+6.  Copiez le certificat parent et collez-le sous **Ordinateur\Autorités de certification intermédiaires\Certificats**.
+7.  Copiez vos certificats ADFS, de déchiffrement ADFS et de signature ADFS et collez-les dans le magasin personnel du service ADFS.
+8.  Redémarrez les serveurs ADFS.
+
+L’utilisateur doit maintenant être en mesure de se connecter au site Portail d’entreprise sur l’appareil Android.
+
+
+
 ## Problèmes iOS
 ### Échec de l’installation du profil
 **Problème :** Un utilisateur reçoit l’erreur **Échec de l’installation du profil** sur un appareil iOS.
@@ -179,34 +200,34 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 ### L’appareil iOS inscrit n’apparaît pas dans la console lors de l’utilisation de System Center Configuration Manager avec Intune
 **Problème :** l’utilisateur inscrit l’appareil iOS, mais celui-ci n’apparaît pas dans la console d’administration de Configuration Manager. L’appareil n’indique pas qu’il a été inscrit. Causes possibles :
 
-- Vous avez peut-être inscrit votre connecteur Intune dans un compte, puis dans un autre compte. 
+- Vous avez peut-être inscrit votre connecteur Intune dans un compte, puis dans un autre compte.
 - Vous avez peut-être téléchargé le certificat de gestion des appareils mobiles à partir d’un compte et vous l’avez utilisé dans un autre compte.
 
 
 **Résolution :** Effectuez les étapes suivantes :
 
-1. Désactivez iOS dans le connecteur Windows Intune. 
+1. Désactivez iOS dans le connecteur Windows Intune.
     1. Cliquez avec le bouton droit sur l’abonnement Intune et sélectionnez **Propriétés**.
     1. Dans l’onglet « iOS », désactivez l’option « Activer l’inscription iOS ».
 
 
 
 1. Dans SQL, exécutez les étapes suivantes sur la base de données CAS
-  
-    1. mettre à jour SC_ClientComponent_Property set Value2 = '' où Name est similaire à '%APNS%' 
-    1. supprimer de MDMPolicy où PolicyType = 7 
+
+    1. mettre à jour SC_ClientComponent_Property set Value2 = '' où Name est similaire à '%APNS%'
+    1. supprimer de MDMPolicy où PolicyType = 7
     1. supprimer de MDMPolicyAssignment où PolicyType = 7
-    1. mettre à jour SC_ClientComponent_Property set Value2 = '' où Name est similaire à '%APNS%' 
-    1. supprimer de MDMPolicy où PolicyType = 11 
-    1. supprimer de MDMPolicyAssignment où PolicyType = 11 
+    1. mettre à jour SC_ClientComponent_Property set Value2 = '' où Name est similaire à '%APNS%'
+    1. supprimer de MDMPolicy où PolicyType = 11
+    1. supprimer de MDMPolicyAssignment où PolicyType = 11
     1. SUPPRIMER Drs_Signals
-1. Redémarrez le Service SMS Executive ou le serveur CM 
+1. Redémarrez le Service SMS Executive ou le serveur CM
 
 
 
 1. Obtenez un nouveau certificat APN et téléchargez-le : cliquez avec le bouton droit sur l’abonnement à Intune dans le volet gauche de Configuration Manager. Sélectionnez **Créer une demande de certificat APNs** et suivez les instructions.
 ## Problèmes quand vous utilisez System Center Configuration Manager avec Intune
-### Les appareils mobiles disparaissent 
+### Les appareils mobiles disparaissent
 **Problème :** après avoir inscrit un appareil mobile dans Configuration Manager, il disparaît du regroupement d’appareils mobiles, mais l’appareil possède toujours son profil de gestion et est répertorié dans la passerelle CSS.
 
 **Résolution :** cela peut être dû au fait qu’un processus personnalisé supprime les appareils non joints à un domaine ou que l’utilisateur a retiré l’appareil de l’abonnement. Pour identifier le processus ou le compte d’utilisateur qui a supprimé l’appareil de la console Configuration Manager, procédez comme suit.
@@ -235,22 +256,22 @@ Une liste des erreurs d’inscription iOS est fournie dans la documentation de l
 
 ### L’ordinateur est déjà inscrit - Erreur hr 0x8007064c
 **Problème :** L’inscription échoue avec l’erreur **L’ordinateur est déjà inscrit**. Le journal d’inscription affiche l’erreur **hr 0x8007064c**.
-  
+
 Cela peut être dû au fait que l’ordinateur avait déjà été inscrit précédemment ou qu’il a l’image clonée d’un ordinateur qui avait été inscrit. Le certificat de compte du compte précédent est toujours présent sur l’ordinateur.
 
 
 
-**Solution :** 
+**Solution :**
 
-1. Dans le menu **Démarrer**, **Exécuter** -> **MMC**. 
+1. Dans le menu **Démarrer**, **Exécuter** -> **MMC**.
 1. **Fichier** -> **Ajouter/supprimer des composants logiciels enfichables**.
 1. Double-cliquez sur **Certificats**, choisissez **Compte ordinateur**, **Suivant**, sélectionnez **Ordinateur local**.
-1. Double-cliquez sur **Certificats (ordinateur local)**, choisissez **Personnel / certificats**. 
+1. Double-cliquez sur **Certificats (ordinateur local)**, choisissez **Personnel / certificats**.
 1. Recherchez le certificat Intune émis par Sc_Online_Issuing et supprimez-le, le cas échéant
 1. Supprimez cette clé de Registre si elle existe : **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** et toutes les sous-clés.
-1. Tentez la réinscription. 
-1. Si l’ordinateur ne peut toujours pas être inscrit, recherchez cette clé et supprimez-la, si elle existe : **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Tentez la réinscription. 
+1. Tentez la réinscription.
+1. Si l’ordinateur ne peut toujours pas être inscrit, recherchez cette clé et supprimez-la, si elle existe : **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Tentez la réinscription.
 
     > [!IMPORTANT]
     > Cette section, méthode ou tâche contient des étapes qui vous indiquent comment modifier le registre. Toutefois, des problèmes importants peuvent survenir si vous modifiez le registre de façon incorrecte. Par conséquent, assurez-vous de suivre les étapes avec précaution. Pour plus de protection, sauvegardez le registre avant de le modifier. Vous pourrez ainsi restaurer le Registre en cas de problème.
@@ -285,6 +306,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

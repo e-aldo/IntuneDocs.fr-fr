@@ -1,36 +1,34 @@
 ---
-# required metadata
-
-title: Désinscrire votre appareil d’Intune | Microsoft Intune
-description:
-keywords:
+title: "Désinscrire votre appareil iOS d’Intune | Microsoft Intune"
+description: "Cette rubrique explique comment désinscrire un appareil iOS d’Intune"
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 940cf1a54ef91be14f7290bc303ee386d48a3147
+
 
 ---
 
 
-# Désinscrire votre appareil d'Intune
+# Désinscrire votre appareil iOS d’Intune
 
 Quand vous annulez l’inscription de votre appareil iOS sur Intune, ce dernier ne peut plus accéder aux ressources d’entreprise et n’est plus géré par Intune.
 
-Pour désinscrire votre appareil d’Intune, suivez ces étapes ou regardez cette [vidéo](http://aka.ms/kfz8j1) :
+Pour désinscrire votre appareil d’Intune, suivez ces étapes ou regardez cette vidéo :
+
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
+
 
 1.  Dans l’application Portail d’entreprise, sous **Mes appareils**, sélectionnez l’appareil que vous voulez désinscrire.
 
@@ -54,11 +52,13 @@ La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
 -   Les appareils configurés pour la messagerie uniquement n’apparaissent plus dans l’application ou le site web Portail d’entreprise.
 
-Si vous avez besoin d’aide et si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas répertoriées sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+
+<!--HONumber=Jul16_HO4-->
 
 

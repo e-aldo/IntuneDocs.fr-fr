@@ -1,10 +1,10 @@
 ---
 title: "Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles | Microsoft Intune"
-description: 
+description: "Cette rubrique explique comment les stratégies de gestion d’applications mobiles peuvent vous aider à protéger les données de votre entreprise, empêcher toute perte de données et séparer les informations personnelles des informations d’entreprise."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: b4cc44885683be0f6ef414b630571f3216248876
 
 
 ---
@@ -24,21 +24,21 @@ ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
 ## Comment protéger les données d’application
 Vos employés utilisent des appareils mobiles pour des tâches à la fois personnelles et professionnelles.  Tout en veillant à ce que vos employés soient productifs, vous voulez éviter toute perte de données, qu’elle soit intentionnelle ou non.  Vous devez également avoir la possibilité de protéger des données d’entreprise accessibles à l’aide de appareils même si vous ne les gérez pas.
 
-Vous pouvez utiliser des stratégies de gestion des applications mobiles Intune pour protéger les données de votre entreprise. Étant donné que les stratégies de gestion des applications mobiles sont indépendantes de toute solution de gestion des appareils mobiles, vous pouvez les utiliser pour protéger les données de votre entreprise en inscrivant ou non les appareils dans une solution de gestion des appareils. En implémentant des **stratégies au niveau de l’application**, vous pouvez restreindre l’accès aux ressources d’entreprise et conserver les données au sein de votre département informatique.
+Vous pouvez utiliser des stratégies de gestion des applications mobiles Intune pour protéger les données de votre entreprise. Étant donné que les stratégies de gestion des applications mobiles sont **indépendantes de toute solution de gestion des appareils mobiles**, vous pouvez les utiliser pour protéger les données de votre entreprise en inscrivant ou non les appareils dans une solution de gestion des appareils. En implémentant des **stratégies au niveau de l’application**, vous pouvez restreindre l’accès aux ressources d’entreprise et conserver les données au sein de votre département informatique.
 
-Les stratégies de gestion des applications mobiles prennent en charge les applications qui s’exécutent sur :
-> [!IMPORTANT]
-> Vous pouvez créer des stratégies de gestion des applications mobiles pour les applications mobiles Office qui se connectent aux services Office 365. Les stratégies de gestion des applications mobiles ne sont pas prises en charge pour les applications qui se connectent à des services Exchange ou SharePoint locaux.
+Vous pouvez configurer des stratégies de gestion des appareils mobiles pour les applications exécutées sur des appareils :
 
+- **inscrits dans Microsoft Intune :** les appareils de cette catégorie sont généralement ceux possédés par une entreprise ;
 
-- **Appareils gérés et inscrits dans Microsoft Intune**. Les appareils de cette catégorie sont généralement des appareils d’entreprise.
-
--   **Les appareils gérés et inscrits dans le cadre d’une solution de gestion des appareils mobiles tierce**.   Les appareils de cette catégorie sont généralement des appareils d’entreprise.
+-   **inscrits dans une solution de gestion de gestion d’appareils mobiles tierce :** les appareils de cette catégorie sont généralement des appareils possédés par une entreprise.
 
   > [!NOTE]
   > Les stratégies de gestion des applications mobiles ne doivent pas être utilisées avec des solutions de gestion des applications mobiles tierces ni des solutions de conteneur sécurisé.
 
--   **Appareils non gérés**.  Les appareils de cette catégorie sont généralement la propriété d’employés et ne sont pas gérés ou inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
+-   **non inscrits dans une solution de gestion d’appareils mobiles :** les appareils de cette catégorie sont généralement la propriété d’employés et ne sont pas gérés ou inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
+
+> [!IMPORTANT]
+> Vous pouvez créer des stratégies de gestion des applications mobiles pour les applications mobiles Office qui se connectent aux services Office 365. Les stratégies de gestion des applications mobiles ne sont pas prises en charge pour les applications qui se connectent à des services Exchange, Skype Entreprise ou SharePoint locaux.
 
 **Les principaux avantages de l’utilisation de stratégies de gestion des applications mobiles sont les suivants :**
 
@@ -133,6 +133,6 @@ Toutes les applications mobiles Office prennent en charge plusieurs identités.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

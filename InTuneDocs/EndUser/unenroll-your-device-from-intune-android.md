@@ -1,36 +1,32 @@
 ---
-# required metadata
-
-title: Désinscrire votre appareil d’Intune | Microsoft Intune
-description:
-keywords:
+title: "Désinscription d’un appareil Android d’Intune | Microsoft Intune"
+description: "Cette rubrique explique comment désinscrire un appareil Android d’Intune"
+keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 1586e72eef5afdc0baefde8e5a3c105af22edb62
+
 
 ---
 
 
-# Désinscrire votre appareil d'Intune
+# Désinscrire votre appareil Android d’Intune
 
 Quand vous désinscrivez votre appareil Android d’Intune, il ne peut plus accéder aux ressources d’entreprise.  Pour plus d’informations sur ce qui se passe lors d’une désinscription, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
-Pour désinscrire votre appareil d’Intune, désinstallez l’application Portail d’entreprise, procédez comme suit ou regardez cette [vidéo](http://aka.ms/gyq2du) :
+Pour désinscrire votre appareil d’Intune, désinstallez l’application Portail d’entreprise, procédez comme suit ou regardez cette vidéo :
+
+<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
 
 1.  Connectez-vous à l’application Portail d’entreprise.
 
@@ -46,11 +42,14 @@ Pour désinscrire votre appareil d’Intune, désinstallez l’application Porta
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
-Si vous avez besoin d’aide et si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas répertoriées sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
+
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+
+<!--HONumber=Jul16_HO4-->
 
 

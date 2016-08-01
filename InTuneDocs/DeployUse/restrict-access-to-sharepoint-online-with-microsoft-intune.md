@@ -1,10 +1,10 @@
 ---
 title: "Restreindre l’accès à SharePoint Online | Microsoft Intune"
-description: 
+description: "Protégez et contrôlez l’accès aux données de l’entreprise sur SharePoint Online avec l’accès conditionnel."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 54f5e95fc8992ee3a68fd7063bff7cdb90c308bb
 
 
 ---
@@ -25,6 +25,8 @@ L’accès conditionnel comprend deux composants :
 - La stratégie de conformité des appareils que l’appareil doit respecter pour être considéré comme conforme.
 - La stratégie d’accès conditionnel dans laquelle vous spécifiez les conditions que l’appareil doit remplir pour accéder au service.
 Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez la rubrique [Restreindre l’accès aux services de messagerie, O365 et autres ](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
+La conformité et les stratégies d’accès conditionnel sont déployées pour l’utilisateur. La conformité avec les stratégies de chaque appareil que l’utilisateur utilise pour accéder aux services est contrôlée.
 
 Quand un utilisateur tente de se connecter à un fichier à l’aide d’une application prise en charge, par exemple OneDrive, sur son appareil, l’évaluation suivante se produit :
 
@@ -55,6 +57,10 @@ Si une condition n'est pas remplie, l'utilisateur reçoit l'un des messages suiv
 
 -   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers le site web du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dans lequel il peut trouver des informations sur le problème et des solutions pour y remédier.
 
+**L’accès conditionnel est appliqué sur tous les sites SharePoint et le partage externe est bloqué**
+
+>[!NOTE]
+>Si vous activez l’accès conditionnel pour SharePoint Online, nous vous recommandons de désactiver le domaine dans la liste comme décrit dans la rubrique [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 ## Prise en charge des appareils mobiles
 - iOS 7.1 et versions ultérieures
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 ou versions ultérieures
@@ -183,6 +189,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

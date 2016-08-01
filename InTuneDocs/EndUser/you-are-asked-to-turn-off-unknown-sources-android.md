@@ -3,22 +3,24 @@ title: "Vous êtes invité à désactiver les sources inconnues | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
-ms.sourcegitcommit: b76c04545b9b26a0e2470b95a3f5ac0a81b07817
-ms.openlocfilehash: 7ea8494dacb3f9ccf3077c654801979bab9b096b
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 61910d5571e143b12af7b44895d80575cb9e4a70
 
 
 ---
 
 # Vous êtes invité à désactiver les sources inconnues
 
-Si le message « L’installation à partir de sources inconnues doit être désactivée » s’affiche, vous devez accéder à **Paramètres** > **Sécurité**, puis désactiver **Sources inconnues**. 
+Si le message « L’installation à partir de sources inconnues doit être désactivée » s’affiche, vous devez accéder à **Paramètres** > **Sécurité** (sur certains appareils, le nom de l’option peut être **Écran de verrouillage et sécurité**), puis désactiver **Sources inconnues**.
 
 Votre administrateur informatique exige que ce paramètre soit désactivé pour protéger les données d’entreprise sur votre appareil Android. Quand le paramètre **Sources inconnues** est activé, vous pouvez installer des applications à partir de sources inconnues, ce qui peut constituer un risque pour la sécurité.
 
@@ -31,6 +33,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

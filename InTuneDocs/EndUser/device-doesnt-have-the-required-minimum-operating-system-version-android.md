@@ -1,26 +1,27 @@
 ---
-title: "L’appareil n’est pas équipé de la version minimale requise du système d’exploitation | Microsoft Intune"
+title: "L’appareil Android n’est pas équipé de la version minimale requise du système d’exploitation | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 620078cdd6a6d918153ab5a9813a14406c11acb4
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 1deee9381a7fb55174600cc8824170f3b6e0887f
 
 
 ---
 
 
-# L'appareil n'est pas équipé de la version minimale requise du système d'exploitation
+# L’appareil Android n’est pas équipé de la version minimale requise du système d’exploitation
 
 Votre appareil Android ne répond pas aux exigences de votre service informatique pour ce qui est de la version minimale requise du système d’exploitation. Avant de mettre à jour votre appareil, vérifiez la version du système d’exploitation actuel en appuyant sur **Paramètres** &gt; **À propos du téléphone**, puis vérifiez si une mise à jour est disponible pour votre appareil en appuyant sur **Paramètres**, puis en recherchant l’option de mise à jour.
 
@@ -30,6 +31,7 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

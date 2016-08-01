@@ -1,10 +1,10 @@
 ---
 title: "Paramètres de stratégie de gestion des applications mobiles iOS | Microsoft Intune"
-description: 
+description: "Cette rubrique décrit les paramètres de stratégie de gestion des applications mobiles pour les appareils iOS."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 5f13b6b9df7218734e8b015e5ddb3f6ab2698cac
 
 
 ---
@@ -37,6 +37,8 @@ Le terme **Applications gérées par la stratégie** est utilisé pour désigner
   - **Aucune** : interdire le transfert de données vers n’importe quelle application, y compris d’autres applications gérées par la stratégie.
 
   En outre, si vous affectez à cette option la valeur **Applications gérées par la stratégie** ou **Aucune**, la fonctionnalité iOS 9 qui autorise la Recherche Spotlight à rechercher des données dans les applications est bloquée.
+
+  **Ce paramètre ne contrôle pas l’utilisation de la fonctionnalité « Ouvrir dans » sur les appareils mobiles. Pour gérer la fonctionnalité Ouvrir dans, consultez [cette rubrique](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.
 
   **Valeur par défaut = Applications gérées par la stratégie**
 
@@ -112,6 +114,6 @@ Sur les appareils iOS, vous pouvez autoriser les utilisateurs à s’identifier 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

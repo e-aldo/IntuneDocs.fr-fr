@@ -1,10 +1,10 @@
 ---
-title: "Protéger les données et applications métier sur des appareils non inscrits | Microsoft Intune"
-description: 
+title: "Protéger les applications métier sur les appareils non inscrits | Microsoft Intune"
+description: "Cette rubrique décrit la procédure à suivre pour préparer vos applications métier afin d’appliquer des stratégies de gestion des applications mobiles qui peuvent vous éviter de perdre de données."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 39908e4b08a7a7b0f058646a776a7c37de14b770
 
 
 ---
@@ -74,6 +75,6 @@ Vous pouvez supprimer une application métier de la liste des applications.  Cel
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

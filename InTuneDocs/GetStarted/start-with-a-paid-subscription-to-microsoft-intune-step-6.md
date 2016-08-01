@@ -1,9 +1,9 @@
 ---
 title: "Créer des stratégies et publier une application | Microsoft Intune"
-description: 
+description: "Explique comment créer des stratégies et publier un exemple d’application pour votre abonnement Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 539df37b239f61ab31e5994db00b46a9d5b6310c
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 Les stratégies Intune fournissent des paramètres qui vous permettent de contrôler les paramètres de sécurité des appareils mobiles, de gérer les paramètres du Pare-feu Windows et d’Endpoint Protection pour les ordinateurs, et de déployer des applications. Pour plus d’informations, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) et [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Vous pouvez effectuer deux types d'installations d'applications à l'aide d'Intune. La première est une **installation requise**, qui déploie automatiquement l'application sur les ordinateurs gérés. L’autre est une **installation disponible**, qui déploie l’application (ou un lien vers l’application) dans le portail d’entreprise Intune pour laisser le choix aux utilisateurs de l’installer sur leurs ordinateurs ou sur leurs appareils mobiles.
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 Les étapes suivantes vous aideront à configurer une stratégie de configuration d’appareil mobile, une stratégie de pare-feu d’ordinateur Windows et à configurer Skype en tant qu’installation disponible pour les appareils mobiles une fois ceux-ci inscrits.
 
@@ -46,6 +41,10 @@ Les étapes suivantes vous aideront à configurer une stratégie de configuratio
 3.  Dans la liste **Tâches** de la page **Vue d’ensemble de la stratégie**, choisissez **Ajouter une stratégie**.
 
 4.  Dans la liste des stratégies, développez la plateforme pour laquelle vous voulez créer une stratégie, puis choisissez **Configuration générale** > **Créer et déployer une stratégie avec les paramètres recommandés** > **Créer une stratégie**.
+
+> [!NOTE]
+> Il n’existe aucun paramètre recommandé pour les stratégies de configuration d’appareil, car vous pouvez choisir parmi de nombreuses options. Vous devez créer une stratégie de configuration d’appareil personnalisée.
+
 
 5.  Quand vous êtes invité à **Sélectionner les groupes sur lesquels vous souhaitez déployer cette stratégie**, choisissez un groupe dans la liste des groupes disponibles, puis sélectionnez **Ajouter** > **OK**.
 
@@ -110,6 +109,6 @@ Félicitations ! Vous venez d’effectuer l’étape 6 du *guide de démarrage
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

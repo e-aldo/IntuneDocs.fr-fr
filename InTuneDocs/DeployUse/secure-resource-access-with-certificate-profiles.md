@@ -1,10 +1,10 @@
 ---
-title: "Activer l’accès aux ressources de l’entreprise à l’aide de profils de certificat | Microsoft Intune"
-description: 
+title: "Profils de certificat pour l’accès aux ressources | Microsoft Intune"
+description: "Sécurisez l’accès à votre VPN, Wi-Fi et messagerie avec un certificat installé sur chaque appareil de l’utilisateur."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 98c32f924b60734d9a592ebdd7e00429dc32af26
 
 
 ---
@@ -47,7 +47,7 @@ Vous devez créer un profil distinct pour chaque plateforme. Quand vous créez l
 > -    Si vous n’avez pas d’autorité de certification d’entreprise, vous devez en créer une.
 >- Si vous décidez, en fonction de vos plateformes d’appareils, d’utiliser le profil SCEP (Simplified Certificate Enrollment Protocol), vous devez également configurer un serveur NDES (Network Device Enrollment Service).
 >-  Si vous envisagez d’utiliser des profils SCEP ou .PFX, vous devez télécharger et configurer Microsoft Intune Certificate Connector.
-> La configuration de tous ces éléments est décrite dans la rubrique [Configurer l’infrastructure de certificat](configure-certificate-infrastructure.md).
+> Cette configuration est décrite dans [Configurer l’infrastructure de certificat pour SCEP](configure-certificate-infrastructure-for-scep.md) et [Configurer l’infrastructure de certificat pour PFX](configure-certificate-infrastructure-for-pfx.md).
 
 ### Étapes suivantes
 - [Configurer l’infrastructure de certificat pour SCEP](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ Vous devez créer un profil distinct pour chaque plateforme. Quand vous créez l
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

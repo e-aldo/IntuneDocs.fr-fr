@@ -1,10 +1,10 @@
 ---
-title: "Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune | Microsoft Intune"
-description: 
+title: "Préparer les applications pour la gestion d’applications mobiles | Microsoft Intune"
+description: "Cette rubrique présente des informations pour vous aider à décider quand utiliser l’outil de création de package de restrictions d’application et le Kit de développement logiciel (SDK) d’application pour permettre à vos applications métier personnalisées d’utiliser les stratégies de gestion d’applications mobiles."
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: karthikaraman
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: a7aa32704a8eb33d20a3149941b3e6f2a91478a0
 
 
 ---
@@ -68,6 +69,6 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit de d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

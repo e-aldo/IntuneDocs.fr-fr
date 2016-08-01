@@ -1,10 +1,10 @@
 ---
 title: "Restreindre l’accès à la messagerie à Dynamics CRM Online | Microsoft Intune"
-description: 
+description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à Dynamics CRM Online."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 402ef2a65b45d8adcf36ddae5c935c52a516c8d5
 
 
 ---
@@ -55,10 +56,10 @@ Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégi
 [Créez](create-a-device-compliance-policy-in-microsoft-intune.md) et [déployez](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) une stratégie de conformité pour tous les appareils qui seront affectés par la stratégie. Il s’agit de tous les appareils utilisés par les utilisateurs des groupes ciblés.
 
 > [!NOTE]
-> [!NOTE]Tandis que les stratégies de conformité sont déployées sur des groupes Microsoft Intune, les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
+> Tandis que les stratégies de conformité sont déployées sur des groupes Microsoft Intune, les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
 
 > [!IMPORTANT]
-> [!IMPORTANT] Si vous n’avez pas déployé de stratégie de conformité, les appareils sont considérés comme conformes.
+> Si vous n’avez pas déployé de stratégie de conformité, les appareils seront traités comme étant conformes.
 
 Quand vous êtes prêt, passez à l’Étape 3.
 ### Étape 3 : Configurer la stratégie Dynamics CRM
@@ -96,6 +97,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

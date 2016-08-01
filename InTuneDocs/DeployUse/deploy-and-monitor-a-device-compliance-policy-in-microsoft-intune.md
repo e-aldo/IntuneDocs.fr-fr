@@ -1,10 +1,10 @@
 ---
-title: "Déployer et surveiller une stratégie de conformité dans Microsoft Intune | Microsoft Intune"
-description: 
+title: "Déployer et contrôler une stratégie de conformité | Microsoft Intune"
+description: "Suivez la procédure détaillée de cette rubrique pour déployer et surveiller une stratégie de conformité d’appareil."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 4345f46b67e1a2d77580fa87e4143bd96588f4e3
 
 
 ---
@@ -31,7 +31,8 @@ Déployez la stratégie de conformité que vous avez [créée](create-a-device-c
 
 Utilisez le récapitulatif de l’état et les alertes dans la page **Vue d’ensemble** de l’espace de travail **Stratégie** pour identifier les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le **Tableau de bord** contient un récapitulatif de l'état.
 
-> [!IMPORTANT]Si vous n'avez pas déployé de stratégie de conformité et que vous activez la stratégie d'accès conditionnel Exchange, l'accès sera autorisé à tous les appareils ciblés.
+> [!IMPORTANT]
+> Si vous n'avez pas déployé de stratégie de conformité et que vous activez la stratégie d'accès conditionnel Exchange, l'accès sera autorisé à tous les appareils ciblés.
 
 ## Résolution des conflits de stratégie Intune
 Des conflits de stratégie peuvent se produire quand plusieurs stratégies Intune sont appliquées à un appareil. Si les paramètres de stratégie se chevauchent, Intune résout les conflits en appliquant les règles suivantes :
@@ -71,6 +72,6 @@ Vous pouvez désormais utiliser la stratégie de conformité avec des stratégie
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

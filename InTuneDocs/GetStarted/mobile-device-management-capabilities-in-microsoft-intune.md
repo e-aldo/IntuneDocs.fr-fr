@@ -1,10 +1,10 @@
 ---
 title: "Fonctionnalités de gestion des appareils mobiles | Microsoft Intune"
-description: 
+description: "Lisez cette rubrique pour savoir comment Intune peut vous aider à gérer les appareils mobiles que vous inscrivez auprès du service."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 720112c7c20883200557510da2a42ee402eff50a
 
 
 ---
@@ -42,7 +42,8 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 |Déploiement et gestion d'applications|Fournit une gamme d'outils pour vous aider à gérer les applications mobiles tout au long de leur cycle de vie, notamment le déploiement d'applications à partir de fichiers d'installation ou de magasins d'applications, l'analyse détaillée de l'état des applications et la suppression d'applications.|[Déploiement d’applications dans Microsoft Intune](/intune/deploy-use/deploy-apps)|
 |Applications conformes et non conformes|Vous permet de spécifier des listes d'applications conformes (que les utilisateurs sont autorisés à installer) et non conformes (que les utilisateurs ne doivent pas installer).|[Paramètres de la stratégie d’iOS dans Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |Gestion des applications mobiles|Configurez des restrictions pour les applications à l’aide de la gestion des applications mobiles pour les appareils que vous gérez avec Intune et également pour les appareils qui ne sont pas gérés par Intune. Une telle stratégie vous permet de renforcer la sécurité de vos données d'entreprise en limitant les opérations de copie et collage, de sauvegarde externe des données et de transfert des données entre les applications notamment.|[Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[Préparer des applications iOS pour la gestion des applications mobiles avec l'outil de création de package de restrictions d'application Microsoft Intune](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[Préparer des applications Android pour la gestion des applications mobiles avec l'outil de création de package de restrictions d'application Microsoft Intune](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
-|Configuration des applications mobiles|Utilisez des stratégies de configuration des applications mobiles pour fournir les paramètres pour des applications iOS pouvant être nécessaires lors de l’exécution d’une application. Par exemple, une application peut nécessiter que l’utilisateur spécifie un numéro de port ou des informations de connexion. Cela peut simplifier la configuration de l’application et réduire le nombre d’appels au support technique.|[Configurer des applications iOS avec des stratégies de configuration des applications mobiles dans Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Configuration des applications mobiles iOS|Utilisez des stratégies de configuration des applications mobiles pour fournir les paramètres pour des applications iOS pouvant être nécessaires lors de l’exécution d’une application. Par exemple, une application peut nécessiter que l’utilisateur spécifie un numéro de port ou des informations de connexion. Cela peut simplifier la configuration de l’application et réduire le nombre d’appels au support technique.|[Configurer des applications iOS avec des stratégies de configuration des applications mobiles dans Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Profils de configuration d’application mobile iOS|Intune fournit les outils nécessaires pour déployer de façon proactive des profils de configuration pour les applications iOS qui approchent de leur date d’expiration.|[Utiliser les stratégies de profil de configuration iOS mobile pour empêcher l’expiration de vos applications](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Managed Browser|Après avoir déployé Managed Browser sur vos utilisateurs, vous pouvez configurer une stratégie Managed Browser pour contrôler les sites web qu'ils peuvent visiter. En outre, vous pouvez également appliquer des stratégies de gestion des applications mobiles à Managed Browser.|[Gérer l'accès à Internet à l'aide de stratégies Managed Browser avec Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|Intune vous permet d’intégrer Microsoft Passport for Work et de disposer ainsi d’une autre méthode de connexion pour Windows 10 utilisant Active Directory ou un compte Azure Active Directory pour remplacer un mot de passe, une carte à puce ou une carte à puce virtuelle.|[Contrôler les paramètres de Microsoft Passport sur les appareils avec Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 
@@ -68,6 +69,6 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

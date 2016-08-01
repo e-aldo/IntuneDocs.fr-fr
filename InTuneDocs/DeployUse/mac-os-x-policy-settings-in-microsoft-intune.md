@@ -1,24 +1,27 @@
 ---
 title: "Paramètres de la stratégie Mac OS X | Microsoft Intune"
-description: 
+description: "Intune fournit un éventail de paramètres généraux intégrés que vous pouvez configurer sur les appareils Mac OS X. En outre, vous pouvez utiliser l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 7765701b51d4b2c258e7e8f0c28d93c5c119102e
 
 
 ---
 
 # Paramètres de la stratégie de configuration Mac OS X dans Microsoft Intune
+
+Intune fournit un éventail de paramètres généraux intégrés que vous pouvez configurer sur les appareils Mac OS X. En outre, vous pouvez utiliser l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
 
 ## Paramètres de la stratégie de configuration générale
 
@@ -121,6 +124,6 @@ Vous pouvez créer le fichier de profil de configuration utilisé par la straté
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

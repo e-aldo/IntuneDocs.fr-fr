@@ -1,10 +1,10 @@
 ---
 title: "Protéger les données et les applications | Microsoft Intune"
 description: 
-keywords: 
+keywords: "Cette rubrique décrit diverses fonctionnalités Intune qui sont disponibles pour vous aider à protéger vos données et applications d’entreprise."
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: f60541c2e9284ea795c5e9811ef2663113af57cb
 
 
 ---
@@ -40,7 +40,9 @@ La sécurisation de l’accès aux ressources de l’entreprise n’est que la p
 - Sécuriser l’accès aux applications en demandant un code confidentiel/code secret ou des informations d’identification d’entreprise.
 - Ouvrir tous les liens web dans Intune Managed Browser.
 
-Ces règles sont appelées [stratégies de gestion des applications mobiles (GAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  Les stratégies de GAM peuvent être appliquées à des applications qui s’exécutent sur des appareils gérés ou non par vous.  Vous pouvez protéger vos données d’entreprise à l’aide de stratégies de GAM sur les appareils inscrits dans Intune, inscrits et gérés par un système de GPM tiers ou encore non gérés par vous, par exemple les appareils des employés.
+Ces règles sont appelées [stratégies de gestion des applications mobiles (GAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  Les stratégies de GAM peuvent être appliquées à des applications qui s’exécutent sur des appareils gérés ou non par vous.  
+
+Vous pouvez protéger vos données d’entreprise à l’aide de stratégies de gestion des applications mobiles sur les appareils **inscrits dans Intune**, **inscrits et gérés par un système de gestion des appareils mobiles tiers** ou encore un appareil **que vous ne gérez pas**, par exemple les appareils des employés.
 
 Pour associer une application à une stratégie de GAM, l’application doit intégrer le Kit de développement logiciel (SDK) Microsoft Intune App ou utiliser App Wrapping Tool.
 
@@ -52,6 +54,6 @@ En plus de restreindre le déplacement des données si un appareil est perdu ou 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

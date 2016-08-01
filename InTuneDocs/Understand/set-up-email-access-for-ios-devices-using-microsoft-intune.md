@@ -1,9 +1,9 @@
 ---
-title: "Configurer l’accès à la messagerie pour les appareils iOS à l’aide de Microsoft Intune | Microsoft Intune"
-description: 
+title: "Configurer l’accès à la messagerie pour les appareils iOS | Microsoft Intune"
+description: "Configurer l’accès à la messagerie pour les appareils iOS à l’aide d’Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: f132266939b70e87ce7fb36e42ef8b8c0777d55d
 
 
 ---
@@ -40,7 +40,7 @@ L’utilisation d’un profil de messagerie automatise l’accès à la messager
 Pour cette procédure pas à pas, nous utiliserons le serveur Exchange hébergé qui est fourni avec un abonnement d’évaluation.
 1. Dans la console Intune, cliquez sur **Stratégie**, puis sur **Ajouter une stratégie**.
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. Dans la boîte de dialogue **Créer une nouvelle stratégie**, développez **iOS**, sélectionnez **Profil de messagerie**, puis cliquez sur **Créer une stratégie**.
+2. Dans la boîte de dialogue **Créer une nouvelle stratégie**, développez **iOS**, sélectionnez **Profil de messagerie**, puis cliquez sur **Créer une stratégie**.  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. Sur la page Créer une stratégie, entrez un nom pour la stratégie, tel que **Profil de messagerie iOS - utilisateur-mot de passe** et une description. Vous pouvez avoir plusieurs profils de messagerie pour différents types d’appareils et différentes méthodes d’authentification. Ceci vous permet d’utiliser le nom pour connaître la finalité du profil.
 4. Entrez le nom d’hôte Exchange. Étant donné que nous utilisons le serveur Exchange hébergé sur Azure, pour le nom d’hôte nous entrons simplement : **outlook.office365.com**
@@ -51,21 +51,23 @@ Pour cette procédure pas à pas, nous utiliserons le serveur Exchange hébergé
 8. Cliquez sur **Enregistrer la stratégie**.
 9. Une boîte de dialogue s’affiche vous demandant si vous souhaitez déployer la stratégie maintenant. Cliquez sur **Oui**.
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. Dans la fenêtre qui s’affiche ensuite, sélectionnez le groupe d’utilisateurs vers lequel déployer le profil de messagerie, cliquez sur **Ajouter**, puis sur **OK**.
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png) Après avoir cliqué sur **OK**, la stratégie commence à se propager aux appareils inscrits dans un délai d’une ou deux minutes.
+10. Dans la fenêtre qui s’affiche ensuite, sélectionnez le groupe d’utilisateurs vers lequel déployer le profil de messagerie, cliquez sur **Ajouter**, puis sur **OK**.  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
+Après avoir cliqué sur **OK**, la stratégie commence à se propager aux appareils inscrits dans un délai d’une ou deux minutes.
 
 ## Procédure pour vérifier que le profil a été appliqué avec succès
 
 Pour vérifier que le profil a été appliqué, vous devez accéder à l’un des appareils sur lesquels vous avez déployé le profil de messagerie.
 1. Sur l’appareil iOS, ouvrez l’application de messagerie.
-L’application demande le nom d’utilisateur et le mot de passe de l’e-mail de l’utilisateur.
+L’application demande le nom d’utilisateur et le mot de passe de l’e-mail de l’utilisateur.  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. Entrez le nom d’utilisateur et le mot de passe du compte de messagerie Exchange de l’utilisateur, puis appuyez sur **OK**.
  L’application de messagerie s’ouvre sur le compte Exchange et la messagerie est synchronisée sur l’appareil.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Vérifiez les paramètres de compte pour l’application de messagerie pour vous assurer que le nom du compte est identique à celui saisi dans le profil de messagerie (par exemple, **Messagerie Contoso**) et que les paramètres de synchronisation sont correctement configurés.
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) S’il apparaît que le profil de messagerie n’a pas été appliqué automatiquement à l’appareil, vous pouvez appliquer manuellement la stratégie à l’aide de l’application Portail d’entreprise sur l’appareil.
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
+  S’il apparaît que le profil de messagerie n’a pas été appliqué automatiquement à l’appareil, vous pouvez appliquer manuellement la stratégie à l’aide de l’application Portail d’entreprise sur l’appareil.
 1. Ouvrez l'application Portail d'entreprise.
 2. Appuyez sur **Mes appareils**.
 3. Appuyez sur le nom de votre appareil.
@@ -78,6 +80,6 @@ L’application demande le nom d’utilisateur et le mot de passe de l’e-mail 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

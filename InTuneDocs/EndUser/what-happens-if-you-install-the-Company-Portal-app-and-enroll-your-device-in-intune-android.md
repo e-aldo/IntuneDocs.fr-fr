@@ -1,26 +1,27 @@
 ---
-title: "Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil dans Intune ? | Microsoft Intune"
+title: "Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Android dans Intune ? | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: e2f5849a63dceabb42b910b50f0257bc823a251a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6562ca63abb509bebe5fc8aa4764da8ed3a8e0f4
 
 
 ---
 
 
-# Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil dans Intune ?
+# Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Android dans Intune ?
 
 Après avoir installé l’application Portail d’entreprise et inscrit votre appareil Android dans Intune, vous pouvez utiliser l’application Portail d’entreprise pour :
 
@@ -54,12 +55,14 @@ Quand vous inscrivez votre appareil Android, vous autorisez votre administrateur
 
     -   Envoyer des mises à jour de l'inventaire des applications de l'entreprise (ces mises à jour ne contiennent pas d'informations personnelles).
 
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
+
 
 ### Voir aussi
 [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

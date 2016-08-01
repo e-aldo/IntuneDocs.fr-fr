@@ -1,10 +1,10 @@
 ---
-title: "Analyser les stratégies de gestion des applications mobiles à l’aide de Microsoft Intune | Microsoft Intune"
-description: 
+title: "Analyser les stratégies de gestion des applications mobiles avec Microsoft Intune | Microsoft Intune"
+description: "Découvrez à combien d’utilisateurs s’applique la stratégie, explorez pour accéder à plus d’informations."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
+ms.sourcegitcommit: 644860abcd351d24f08d7a517a3a4b5f44824689
+ms.openlocfilehash: 1d22d26c1a1c52dda4f9b01658d22f8de8187f0f
 
 
 ---
@@ -49,6 +49,9 @@ Vous pouvez rechercher un utilisateur et examiner son état de conformité. Le p
 
   **Non activé :** signifie que la stratégie a été déployée pour l’utilisateur, mais que l’application n’a pas été utilisée au moins une fois dans un contexte professionnel depuis.
 
+>[!NOTE]
+> Si la stratégie de gestion des applications mobiles n’est pas appliquée à l’utilisateur que vous recherchez, un message vous informe que l’utilisateur n’est ciblé par aucune des stratégies d’application.
+
 Pour afficher le rapport d’un utilisateur, procédez comme suit :
 
 **Étape 1 :** pour sélectionner un utilisateur, cliquez sur la vignette Résumé ou choisissez l’option **RAPPORT D’APPLICATION PAR L’UTILISATEUR** dans le panneau **Paramètres** comme indiqué ci-dessous :
@@ -72,6 +75,6 @@ La vue détaillée affiche le message d’erreur, l’application à laquelle l�
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

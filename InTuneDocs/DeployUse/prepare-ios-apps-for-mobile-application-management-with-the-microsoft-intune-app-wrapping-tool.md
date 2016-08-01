@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Préparer des applications iOS pour la gestion avec l'outil de création de package de restrictions d'application | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+title: "Inclure des applications iOS dans un wrapper avec l’outil de création de package de restrictions d’application | Microsoft Intune"
+description: "Cette rubrique explique comment inclure des applications iOS dans un wrapper sans modifier leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
+keywords: 
+author: karthikaraman
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
+ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+
 
 ---
 
@@ -30,14 +24,14 @@ Utilisez l’outil **Microsoft Intune App Wrapping Tool for iOS** pour modifier 
 
 L'outil est une application de ligne de commande Mac OS qui crée un « wrapper » autour d'une application. Une fois une application traitée, vous pouvez modifier sa fonctionnalité à l'aide de [stratégies de gestion des applications mobiles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) que vous configurez.
 
-Pour télécharger l’outil, consultez [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218)..
+Pour télécharger l’outil, consultez [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Étape 1 : remplir les conditions préalables requises pour l’utilisation de l’outil de création de package de restrictions d’application
 
 |Condition requise|Plus d'informations|
 |---------------|--------------------------------|
 |Système d’exploitation et boîte à outils pris en charge|Vous devez exécuter l'outil de création de package de restrictions d'application sur un ordinateur Mac OS X 10.8.5 ou version ultérieure sur lequel est installé la version 5 ou ultérieure de la boîte à outils XCode.|
-|Certificat de signature et profil de configuration|Vous devez disposer d’un certificat de signature Apple et d’un profil de configuration. Consultez votre [documentation pour développeurs Apple](https://developer.apple.com/)..|
+|Certificat de signature et profil de configuration|Vous devez disposer d’un certificat de signature Apple et d’un profil de configuration. Consultez votre [documentation pour développeurs Apple](https://developer.apple.com/).|
 |Traitement d’une application avec l’outil de création de package de restrictions d’application|Elle doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV). Vous ne pouvez pas utiliser cet outil pour traiter des applications de l'Apple Store. Les applications doivent être écrites pour iOS version 7.0 ou ultérieure. Elles doivent être également au format PIE (Position Independent Executable). Pour plus d'informations sur le format PIE, consultez votre documentation pour développeurs Apple. Enfin, l’application doit avoir l'extension **.app**ou **.ipa** .|
 |Applications que l’outil de création de package de restrictions d’application ne peut pas traiter|Applications chiffrées, applications non signées et applications avec des attributs de fichiers étendus.|
 |Applications qui utilisent la bibliothèque ADAL (Azure Active Directory Library)|Si votre application utilise la bibliothèque ADAL, elle doit intégrer une version de la bibliothèque ADAL supérieure ou égale à la version 1.0.2 et le développeur doit accorder à leur application l’accès à la ressource de gestion des applications mobiles Intune.<br /><br />Consultez la rubrique [Informations pour les applications utilisant la bibliothèque Azure Active Directory](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) dans cet article pour plus d’informations sur l’utilisation de la bibliothèque ADAL|
@@ -47,7 +41,7 @@ Pour télécharger l’outil, consultez [Microsoft Intune App Wrapping Tool for 
 
 1.  À partir de la page **Microsoft Intune App Wrapping Tool for iOS** du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=45218), téléchargez le fichier d'installation de l'outil de création de package de restrictions d'application sur un ordinateur Mac.
 
-2.  Sur l'ordinateur Mac, double-cliquez sur le fichier d'installation **Microsoft Intune App Wrapping Tool for iOS.dmg**..
+2.  Sur l’ordinateur Mac, double-cliquez sur le fichier d’installation **Microsoft Intune App Wrapping Tool for iOS.dmg**.
 
 3.  Choisissez **J'accepte** pour accepter le contrat de licence utilisateur final (CLUF). Le programme d'installation est monté et affiché sur l'ordinateur Mac.
 
@@ -59,7 +53,7 @@ Pour télécharger l’outil, consultez [Microsoft Intune App Wrapping Tool for 
 
 1.  Sur l'ordinateur Mac, ouvrez une fenêtre de terminal et accédez au dossier où vous avez enregistré les fichiers. Étant donné que le fichier exécutable se trouve dans le package, vous devez exécuter la commande qui suit :
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -126,9 +120,9 @@ Les applications qui ont été encapsulées à l'aide de l'outil de création de
 
 1.  Reproduisez le problème en exécutant l'application.
 
-2.  Collectez la sortie de console en suivant les instructions d'Apple pour le [débogage des applications iOS déployées](https://developer.apple.com/library/ios/qa/qa1747/_index.html)..
+2.  Recueillez la sortie de console en suivant les instructions d'Apple pour le [débogage des applications iOS déployées](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
-3.  Filtrez les journaux enregistrés pour la sortie de Restrictions d'application en entrant le script suivant dans la console :
+3.  Filtrez les journaux enregistrés pour la sortie de Restrictions d'application en entrant le script suivant dans la console :
 
     ```
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
@@ -170,9 +164,9 @@ Les applications qui utilisent la bibliothèque ADAL doivent être inscrites via
 
     2.  Cliquez sur **Inscription d'application métier existante** dans Azure Active Directory.
 
-    3.  Dans la section Configurer , choisissez **Configurer l'accès aux API web dans d'autres applications**..
+    3.  Dans la section de configuration, choisissez **Configurez l'accès aux API web dans d'autres applications**.
 
-    4.  Dans la section **Autorisations pour d'autres applications**, choisissez **Gestion des applications mobiles Intune** dans la première liste déroulante..
+    4.  Dans la section **Autorisations pour d’autres applications**, choisissez **Gestion des applications mobiles Intune** dans la première liste déroulante.
 
         Vous pouvez maintenant utiliser l’ID client de l’application dans l’outil de création de package de restrictions d’application. Vous trouverez l’ID client de l’application dans le portail de gestion Azure Active Directory, comme décrit dans la section [Vue d’ensemble des identificateurs que vous devez obtenir](#overview-of-identifiers-you-need-to-get).
 
@@ -199,7 +193,7 @@ Les applications qui utilisent la bibliothèque ADAL doivent être inscrites via
 -   Vous pouvez éviter les invites de connexion en double si vous fournissez l'ID client et l'URI de redirection de votre application cliente. Cet ID client doit être inscrit pour accéder à l'ID de ressource MAM [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] publiée dans le tableau de bord AAD. Si ce n'est pas le cas, un échec de connexion se produit lors de l'exécution de l'application.
 
 ## Définition des droits de l’application
-Avant d’encapsuler votre application, vous pouvez lui accorder des **droits** dans le but de lui octroyer des autorisations et des fonctionnalités supplémentaires qui vont au-delà de ce qu’une application peut généralement faire.  Un **fichier de droits** est utilisé pendant la signature du code pour spécifier des autorisations spéciales dans votre application (par exemple, l’accès à un trousseau partagé). Des services d’application spécifiques appelés **capabilities** (fonctionnalités) sont activés dans Xcode pendant le développement de l’application. Une fois activées, les fonctionnalités apparaissent dans votre fichier de droits. Pour plus d’informations sur les droits et les fonctionnalités, consultez [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Ajout de fonctionnalités) dans la bibliothèque du développeur iOS. Pour obtenir la liste complète des fonctionnalités prises en charge, consultez [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) (Fonctionnalités prises en charge)..
+Avant d’encapsuler votre application, vous pouvez lui accorder des **droits** dans le but de lui octroyer des autorisations et des fonctionnalités supplémentaires qui vont au-delà de ce qu’une application peut généralement faire.  Un **fichier de droits** est utilisé pendant la signature du code pour spécifier des autorisations spéciales dans votre application (par exemple, l’accès à un trousseau partagé). Des services d’application spécifiques appelés **capabilities** (fonctionnalités) sont activés dans Xcode pendant le développement de l’application. Une fois activées, les fonctionnalités apparaissent dans votre fichier de droits. Pour plus d’informations sur les droits et les fonctionnalités, consultez [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Ajout de fonctionnalités) dans la bibliothèque du développeur iOS. Pour obtenir la liste complète des fonctionnalités prises en charge, consultez [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) (Fonctionnalités prises en charge).
 
 ### Fonctionnalités prises en charge pour App Wrapping Tool for iOS
 
@@ -211,7 +205,7 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des **droits** 
 |In-App Purchase|In-App Purchase (achat dans l’application) incorpore un store directement dans votre application. Vous pouvez vous y connecter et traiter les paiements de l’utilisateur en toute sécurité. Vous pouvez utiliser In-App Purchase pour récupérer les paiements en contrepartie de fonctionnalités améliorées ou de contenu supplémentaire que votre application peut exploiter.||
 |Keychain Sharing|L’activation de Keychain Sharing (partage de trousseau) permet à votre application de partager des mots de passe dans le trousseau avec les autres applications développées par votre équipe.|Quand vous utilisez Keychain Sharing, utilisez la notation DNS inverse :<br /><br />*com.companyName.KeychainGroup*|
 |Personal VPN|Activez Personal VPN (VPN personnel) pour permettre à votre application de créer et contrôler une configuration VPN système personnalisée à l’aide de l’infrastructure Network Extension.||
-|Push Notifications|Le service de notification Push Apple (APN) permet à une application qui ne s’exécute pas au premier plan de notifier l’utilisateur que des informations sont à sa disposition.|Pour que les notifications Push fonctionnent, vous devez utiliser un profil de configuration spécifique à l’application.<br /><br />Suivez la procédure décrite dans la [documentation pour développeurs Apple](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)..|
+|Push Notifications|Le service de notification Push Apple (APN) permet à une application qui ne s’exécute pas au premier plan de notifier l’utilisateur que des informations sont à sa disposition.|Pour que les notifications Push fonctionnent, vous devez utiliser un profil de configuration spécifique à l’application.<br /><br />Suivez la procédure décrite dans la [documentation pour développeurs Apple](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html).|
 |Wireless Accessory Configuration|L’activation de Wireless Accessory Configuration (configuration d’accessoire sans fil) a pour effet d’ajouter l’infrastructure External Accessory à votre projet et permet à votre application de configurer les accessoires Wi-Fi MFi.||
 
 ### Étapes d’activation des droits
@@ -230,7 +224,7 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des **droits** 
 
     1.  Connectez-vous à l’Apple Developer Member Center.
 
-    2.  Créez un profil de configuration pour votre application. Pour obtenir des instructions, consultez la page [Comment obtenir la configuration requise pour Intune App Wrapping Tool for iOS](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx) (en anglais)..
+    2.  Créez un profil de configuration pour votre application. Pour obtenir des instructions, consultez la page [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Comment obtenir la configuration requise pour Intune App Wrapping Tool for iOS).
 
     3.  Dans votre profil de configuration, activez les mêmes droits que ceux que vous avez dans votre application. Vous devez fournir les mêmes ID que ceux que vous avez spécifiés pendant le développement de votre application.
 
@@ -271,7 +265,7 @@ Pour examiner les droits existants d’une application signée et le profil de c
 Cette commande supprime toutes les fonctionnalités activées dans l’application qui ne figurent pas dans le fichier de droits. Si vous supprimez des fonctionnalités qui sont utilisées par l’application, elle risque de se bloquer. Vous pourriez par exemple supprimer des fonctionnalités manquantes si vous avez une application générée par un fournisseur qui dispose de toutes les fonctionnalités par défaut.
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## Sécurité et confidentialité pour l'outil de création de package de restrictions d'application
@@ -297,6 +291,7 @@ Respectez les meilleures pratiques de sécurité et de confidentialité suivante
 - [Utiliser le Kit de développement logiciel (SDK) pour activer des applications pour la gestion des applications mobiles](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

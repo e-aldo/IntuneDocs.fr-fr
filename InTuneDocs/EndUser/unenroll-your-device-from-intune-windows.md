@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Désinscrire votre appareil d’Intune | Microsoft Intune
-description:
-keywords:
+title: "Désinscrire votre appareil Windows d’Intune | Microsoft Intune"
+description: "Cette rubrique explique comment désinscrire un appareil Windows d’Intune"
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 424890c84de5b42c9a490489b78d7b2408b47cef
+
 
 ---
 
 
-# Désinscrire votre appareil d'Intune
+# Désinscrire votre appareil Windows d’Intune
 
 Si vous avez inscrit votre appareil Windows sur Intune, mais que vous ne voulez plus l’utiliser au travail ou à l’école et que vous n’avez plus besoin d’accéder à la messagerie électronique, aux applications ou aux autres ressources professionnelles ou scolaires, vous devez désinscrire votre appareil. Une fois que vous aurez désinscrit votre appareil d'Intune, vous ne pourrez plus accéder à ces ressources. Pour plus d’informations sur ce qui se passe lors de la désinscription de votre appareil, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
@@ -66,11 +60,13 @@ Pour désinscrire votre appareil, utilisez le lien répertorié dans la section 
 
 4.  Dans la boîte de dialogue **Supprimer le compte**, appuyez sur **Supprimer**.
 
-Si vous avez besoin d’aide et si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas répertoriées sur le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+
+<!--HONumber=Jul16_HO4-->
 
 

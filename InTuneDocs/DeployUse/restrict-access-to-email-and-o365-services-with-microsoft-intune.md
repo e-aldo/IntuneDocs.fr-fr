@@ -1,9 +1,9 @@
 ---
 title: "Restreindre l’accès aux services de messagerie et O365 | Microsoft Intune"
-description: 
+description: "Cette rubrique décrit comment l’accès conditionnel peut servir à autoriser uniquement les appareils compatibles à accéder à la messagerie et aux données de votre entreprise sur SharePoint Online et d’autres services."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
-ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: bdf82d04f440d46e3d2f64259c7e39da9e5ff5ca
 
 
 ---
@@ -21,9 +22,9 @@ ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
 # Restreindre l’accès aux services de messagerie, O365 et autres avec Microsoft Intune
 Vous pouvez restreindre l’accès à votre messagerie d’entreprise et aux services O365 avec l’accès conditionnel d’Intune. La capacité d’accès conditionnel d’Intune vous permet de vous assurer que l’accès à la messagerie de votre entreprise et aux services O365 est limité aux appareils qui respectent les règles que vous avez définies.
 ## Comment fonctionne l’accès conditionnel ?
-Les paramètres de la stratégie de conformité sont utilisés pour évaluer la conformité de l’appareil. La stratégie d’accès conditionnel utilise l’évaluation pour bloquer ou autoriser l’accès à un service spécifique. Lorsqu’une stratégie d’accès conditionnel est utilisée en association avec une stratégie de conformité, seuls les appareils conformes pourront accéder au service.
+Les paramètres de la stratégie de conformité sont utilisés pour évaluer la conformité de l’appareil. La stratégie d’accès conditionnel utilise l’évaluation pour bloquer ou autoriser l’accès à un service spécifique. Lorsqu’une stratégie d’accès conditionnel est utilisée en association avec une stratégie de conformité, seuls les appareils conformes pourront accéder au service. La stratégie de conformité et la stratégie d’accès conditionnel sont déployées pour l’utilisateur. La conformité avec les stratégies de chaque appareil que l’utilisateur utilise pour accéder aux services est contrôlée.
 
-N’oubliez pas que l’utilisateur de l’appareil doit également déployer une stratégie de conformité sur l’appareil afin que sa conformité soit évaluée.
+N’oubliez pas que l’utilisateur de l’appareil doit déployer une stratégie de conformité sur l’appareil afin que sa conformité soit évaluée.
 Si aucune stratégie de conformité n’est déployée sur l’utilisateur, l’appareil est considéré comme conforme et aucune restriction d’accès ne s’applique.
 
 Quand un appareil ne remplit pas les conditions définies dans les stratégies, l’utilisateur final est guidé tout au long du processus d’inscription de cet appareil et du processus de résolution du problème qui empêche l’appareil d’être conforme.
@@ -64,6 +65,6 @@ Contrairement à d’autres stratégies Intune, vous ne déployez pas de straté
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

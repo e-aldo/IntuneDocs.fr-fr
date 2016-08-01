@@ -1,10 +1,10 @@
 ---
 title: "Expérience de l’utilisateur final pour des applications avec GAM activé | Microsoft Intune"
-description: 
+description: "Cette rubrique décrit ce qui se passe lorsque votre application est gérée par les stratégies de gestion des applications mobiles."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
-ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
-ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+translationtype: Human Translation
+ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
+ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
 
 
 ---
@@ -47,7 +48,7 @@ Les stratégies de gestion des applications mobiles (GAM) sont appliquées uniqu
     ![Capture d’écran montrant l’emplacement de fichier à ouvrir avec la liste des fichiers existants](../media/AppManagement/iOS_OneDriveSuccess.png)
 
     > [!NOTE]
-    > [!NOTE] Lorsque vous modifiez une stratégie déployée, les modifications sont appliquées la prochaine fois que vous ouvrez l’application.
+    > Lorsque vous modifiez une stratégie déployée, les modifications sont appliquées la prochaine fois que vous ouvrez l’application.
 
 ##  Accès à OneDrive sur un appareil Android
 
@@ -170,6 +171,6 @@ Cela ne vous empêche pas d’utiliser l’application de partage RMS pour affic
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

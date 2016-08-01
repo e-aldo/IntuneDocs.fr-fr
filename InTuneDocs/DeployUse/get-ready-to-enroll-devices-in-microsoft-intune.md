@@ -1,20 +1,20 @@
 ---
 title: "Se préparer à inscrire des appareils | Microsoft Intune"
-description: 
+description: "Configurez les conditions préalables à la gestion d’appareils mobiles, puis préparez-vous à inscrire différents systèmes d’exploitation."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
-ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
+ms.openlocfilehash: 24b8434993d7661e12172ac0e5fe58d1e6621558
 
 
 ---
@@ -49,7 +49,7 @@ La personnalisation du Portail d’entreprise permet de fournir une expérience 
 
 ![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
-#### Informations de contact et déclaration de confidentialité de l'entreprise
+### Informations de contact et déclaration de confidentialité de l'entreprise
 
 Le nom de l’entreprise s’affiche comme titre du Portail d’entreprise. Les informations de contact et les détails sont présentés aux utilisateurs dans l’écran Contacter le service informatique du Portail d’entreprise. La déclaration de confidentialité s’affiche lorsqu’un utilisateur clique sur le lien correspondant.
 
@@ -59,10 +59,10 @@ Le nom de l’entreprise s’affiche comme titre du Portail d’entreprise. Les 
     |Nom du contact du service informatique|40|Ce nom s’affiche dans la page **Contacter le service informatique**.|
     |Numéro de téléphone du service informatique|20|Ce numéro s’affiche dans la page **Contacter le service informatique**.|
     |Adresse de messagerie du service informatique|40|Cette adresse s’affiche dans la page **Contacter le service informatique**. Vous devez entrer une adresse de messagerie valide au format **alias@nomdedomaine.com**.|
-    |Informations supplémentaires|120|S’affiche dans la page **Contacter le service informatique**.|
+    |Informations supplémentaires|120|Ces informations s'affichent sur la page **Contacter l’administrateur**.|
     |URL de la déclaration de confidentialité de l'entreprise|79|Vous pouvez spécifier la déclaration de confidentialité de votre entreprise qui s’affiche lorsque les utilisateurs cliquent sur les liens de confidentialité à partir du Portail d’entreprise. Vous devez entrer une URL valide au format https://www.contoso.com.|
 
-#### Contacts du support
+### Contacts du support
 Les utilisateurs peuvent voir le lien du site web de support dans le Portail d’entreprise et l’utiliser pour accéder au support en ligne.
 
 |Nom du champ|Longueur maximale|Plus d'informations|
@@ -71,14 +71,14 @@ Les utilisateurs peuvent voir le lien du site web de support dans le Portail d�
     |Nom du site web|40|Il s'agit du nom convivial qui s'affiche pour l'URL permettant d'accéder au site Web de support technique. Si vous spécifiez l’URL d’un site web de support technique sans aucun nom convivial, **Accéder au site web du service informatique** apparaît dans la page **Contacter le service informatique** du Portail d’entreprise.|
 
 
-#### Personnalisation de l’image de la société
+### Personnalisation de l’image de la société
 
-Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de votre société, un thème chromatique et un arrière-plan.
+Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de votre entreprise, un thème chromatique et un arrière-plan.
 
 |Nom du champ|Plus d'informations|
     |----------|----------------|
     |Couleur de thème|Sélectionnez une couleur de thème à appliquer au Portail d’entreprise.|
-    |Inclure le logo de l'entreprise|Lorsque vous activez cette option, vous pouvez télécharger le logo de votre entreprise pour qu’il apparaisse sur le Portail de celle-ci. Vous pouvez télécharger deux logos : un qui s’affiche quand l’arrière-plan du Portail d’entreprise est blanc, et un autre qui s’affiche quand l’arrière-plan du Portail d’entreprise utilise la couleur de thème que vous avez sélectionnée. Chaque logo doit être un fichier de type .png ou .jpg, et avoir une résolution maximale de 400 x 100 pixels et une taille inférieure ou égale à 750 Ko .|
+    |Inclure le logo de l'entreprise|Lorsque vous activez cette option, vous pouvez télécharger le logo de votre entreprise pour qu’il apparaisse sur le Portail de celle-ci. Vous pouvez télécharger deux logos : un qui s’affiche quand l’arrière-plan du Portail d’entreprise est blanc, et un autre qui s’affiche quand l’arrière-plan du Portail d’entreprise utilise la couleur de thème que vous avez sélectionnée. Chaque logo doit être un fichier .png ou .jpg et avoir une résolution maximale de 400 x 100 pixels et une taille inférieure ou égale à 750 Ko.|
     |Choisir un arrière-plan pour l'application Portail d'entreprise [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)]|Ce paramètre affecte l’arrière-plan de l’application Portail d’entreprise [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] uniquement.|
 
 
@@ -86,9 +86,9 @@ Après avoir enregistré vos modifications, vous pouvez utiliser les liens propo
 
 ## Attribuer une licence d’utilisateur Intune
 
-Vous utilisez le **portail de gestion Office 365** pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD.
+Utilisez le **portail de gestion Office 365** pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD.
 
-1.  Connectez-vous au [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx) à l’aide de vos informations d’identification d’administrateur du client.
+1.  Connectez-vous au [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx) à l’aide de vos informations d’identification d’administrateur client.
 
 2.  Sélectionnez le compte d’utilisateur auquel vous souhaitez attribuer une licence utilisateur Intune et cochez la case **Microsoft Intune** dans les propriétés du compte utilisateur.
 
@@ -104,11 +104,11 @@ Après avoir configuré l’autorité de gestion des appareils mobiles, vous dev
 - [Configurer la gestion des périphériques Windows avec Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
 Vous pouvez également effectuer les opérations suivantes :
- - Utiliser le [compte de gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) pour inscrire de nombreux appareils
- - [Indiquer les appareils d’entreprise avec des numéros IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) pour mieux inscrire les appareils et cibler la stratégie
+ - Utilisez le [compte de gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) pour inscrire de nombreux appareils.
+ - [Indiquez les appareils d’entreprise avec des numéros IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) pour mieux inscrire les appareils et cibler la stratégie.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

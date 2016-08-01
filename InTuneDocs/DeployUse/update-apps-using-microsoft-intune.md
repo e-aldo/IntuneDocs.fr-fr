@@ -1,10 +1,10 @@
 ---
 title: "Mettre à jour des applications | Microsoft Intune"
-description: 
+description: "Utilisez les informations de cette rubrique pour découvrir comment mettre à jour des applications quand une nouvelle version est nécessaire."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
-ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 5e163cf4e8190d0bc967415f1d907465e4e13f36
 
 
 ---
@@ -23,6 +24,16 @@ Microsoft Intune peut vous aider à gérer les mises à jour des applications. U
 
 ## Mise à jour des applications
 Quand une nouvelle version d’une application que vous avez déployée est publiée, Intune vous permet de mettre à jour et de déployer la version la plus récente de l’application. Vous pouvez uniquement remplacer un déploiement par une version plus récente de la même application (en utilisant le même identificateur). Vous ne pouvez pas utiliser les mises à jour d'application pour mettre à jour un déploiement avec un package d'application différent.
+
+### Identificateurs d’application
+L’identificateur d’application est une propriété qui identifie une application de façon unique. Vous ne pouvez pas installer plusieurs copies d’une application ayant le même identificateur. Par exemple :
+
+- **iOS** : ID de lot (par exemple : com.microsoft.excel)
+- **Android** : ID de package (par exemple : com.microsoft.excel)
+- **Windows Phone** : (programme d’installation xap) ; utilisez l’ID de produit (GUID)
+- **Windows** : (appx/appxbundle) ; utilisez le nom complet du package
+
+
 
 > [!IMPORTANT]
 > Lorsque vous déployez une application avec une action de déploiement de type **Installation requise** et que vous changez ultérieurement l'action de déploiement en **Installation disponible**, les mises à jour de l'application ne sont pas installées automatiquement sur les appareils où l'application a été installée avant que la modification du déploiement n'ait eu lieu. Pour résoudre ce problème, vous pouvez procédez comme suit :
@@ -49,6 +60,6 @@ Pour les applications déployées via un lien redirigeant vers un magasin, la mi
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

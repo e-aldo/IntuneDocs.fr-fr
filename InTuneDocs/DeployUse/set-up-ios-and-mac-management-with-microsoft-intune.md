@@ -1,28 +1,26 @@
 ---
 title: Configurer la gestion iOS et Mac | Microsoft Intune
-description: 
+description: "Activez la gestion des appareils mobiles pour les appareils iOS, notamment iPad et iPhone, ainsi que les appareils Mac OS X avec Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb44d53c87bec1b6892bf49a65f3df684199ed08
-ms.openlocfilehash: 9766b6e64259d809b04e6f6004c25ed88ad72659
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 8a41c4c4f0ab4b4864fe366a2852046693b6baee
 
 
 ---
 
 # Configurer la gestion des appareils iOS et Mac
-Avec Microsoft Intune, vous pouvez activer le BYOD (« Apportez votre propre appareil ») pour l’inscription d’appareils iOS et Mac OS X afin d’accorder aux utilisateurs d’iPhone, iPad et Mac l’accès à la messagerie et aux applications de l’entreprise. Une fois activés, les utilisateurs peuvent installer l’application Portail d’entreprise Intune et leurs appareils peuvent être ciblés par la stratégie à l’aide de la console d’administration Intune.
-
-Pour pouvoir gérer des appareils iOS avec Intune, ceux-ci doivent être en mesure de communiquer avec Intune. Apple requiert l’établissement d’une relation de confiance avec Intune par l’importation d’un certificat Apple Push Notification Service (APNs).
+Utilisez la gestion des appareils mobiles Intune des iPad, iPhone et autres appareils Mac OS X et gérez l’accès à la messagerie et aux applications de l’entreprise. Intune requiert un certificat APNS (Apple Push Notification Service) pour gérer les appareils iOS et Mac. Une fois le certificat ajouté à Intune, les utilisateurs peuvent installer l’application Portail d’entreprise pour inscrire leurs appareils, ou l’administrateur peut configurer la [gestion des appareils iOS d’entreprise](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurer Intune**<br>
     Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) sur **Microsoft Intune** et en configurant la gestion des appareils mobiles.
@@ -50,6 +48,6 @@ Si votre entreprise ou organisation achète des appareils iOS pour les utilisate
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

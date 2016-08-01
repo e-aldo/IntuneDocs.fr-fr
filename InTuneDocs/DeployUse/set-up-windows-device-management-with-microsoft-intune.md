@@ -1,20 +1,20 @@
 ---
 title: Configurer la gestion des appareils Windows avec Microsoft Intune | Microsoft Intune
-description: 
+description: "Activez la gestion des appareils mobiles pour les ordinateurs Windows, y compris les appareils Windows 10 avec Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 79377078bf5b4c6dad0a3dc4a07a2e84aa2563f8
 
 
 ---
@@ -26,18 +26,20 @@ La création d’un enregistrement CNAME DNS permet aux utilisateurs de se conne
 
 ### Configurer la gestion des appareils Windows
 
-  1.  Créez un enregistrement de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME dans DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com. S’il existe plusieurs domaines vérifiés, créez un enregistrement CNAME pour chaque domaine. Ces enregistrements doivent contenir les informations suivantes :
+  1.  Créez un enregistrement de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME dans DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com. Même si l’entrée DNS CNAME est facultative pour l’inscription des appareils Windows, nous vous recommandons de créer un ou plusieurs enregistrements si nécessaire, pour faciliter le processus d’inscription de l’appareil Windows. Si aucun enregistrement CNAME n’est trouvé, l’utilisateur est invité à saisir manuellement le nom du serveur de gestion des appareils mobiles.
+
+  S'il existe plusieurs domaines vérifiés, créez un enregistrement CNAME pour chaque domaine. Ces enregistrements doivent contenir les informations suivantes :
 
   |TYPE|Nom d'hôte|Pointe vers|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 heure|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 heure|
 
-    La propagation des modifications DNS peut prendre jusqu’à 72 heures. Vous ne pouvez pas vérifier la modification DNS dans Intune tant que l’enregistrement DNS ne s’est pas propagé.
+  La propagation des modifications DNS peut prendre jusqu’à 72 heures. Vous ne pouvez pas vérifier la modification DNS dans Intune tant que l’enregistrement DNS ne s’est pas propagé.
 
-    **EnterpriseEnrollment-s.manage.microsoft.com** : prend en charge une redirection vers le service Intune avec reconnaissance du domaine à partir du nom de domaine de l’adresse de messagerie.
+  **EnterpriseEnrollment-s.manage.microsoft.com** : prend en charge une redirection vers le service Intune avec reconnaissance du domaine à partir du nom de domaine de l’adresse de messagerie.
 
-    **EnterpriseRegistration.windows.net** : prend en charge les appareils Windows 8.1 et Windows 10 Mobile qui s’inscrivent auprès d’Azure Active Directory avec leur compte professionnel ou scolaire.
+  **EnterpriseRegistration.windows.net** : prend en charge les appareils Windows 8.1 et Windows 10 Mobile qui s’inscrivent auprès d’Azure Active Directory avec leur compte professionnel ou scolaire.
 
   2.  Dans la [console d’administration Intune](http://manage.microsoft.com), cliquez sur **Administration**&gt; **Gestion des appareils mobiles**&gt; **Windows**.
   ![Boîte de dialogue Gestion des appareils Windows](../media/enroll-intune-winenr.png)
@@ -48,6 +50,6 @@ La création d’un enregistrement CNAME DNS permet aux utilisateurs de se conne
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

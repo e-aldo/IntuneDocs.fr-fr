@@ -1,10 +1,10 @@
 ---
-title: "Déployer des applications | Microsoft Intune"
-description: 
+title: "Comment déployer des applications | Microsoft Intune"
+description: "Utilisez les informations de cette rubrique pour déployer des applications avec Microsoft Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: f3a8492532f01c576b1abf3c3228ba99dbd0d547
 
 ---
-# Déployer des applications dans Microsoft Intune
+# Déploiement d’applications dans Microsoft Intune
 
-Utilisez les informations de cette rubrique pour vous aider à déployer des applications Microsoft Intune.
+Utilisez les informations de cette rubrique pour déployer des applications avec Microsoft Intune.
 
 
 ## Déployer une application
-Dans cette procédure, vous allez déployer l'application vers les appareils ou les utilisateurs sélectionnés.
+Dans cette procédure, vous allez déployer l’application vers des groupes d’appareils ou d’utilisateurs sélectionnés.
 
 ### Pour déployer une application
 
@@ -52,11 +52,11 @@ Dans cette procédure, vous allez déployer l'application vers les appareils ou 
 ## Exemple
 
 Dans cet exemple, vous avez déployé l’application en tant qu’application **Disponible** sur un appareil iOS.
-Elle s’affichera dans le portail d’entreprise, à partir duquel les utilisateurs pourront l’installer sur leur appareil. Par exemple, dans cette capture d’écran, l’application Bing pour iOS a été déployée à l’aide du type d’installation **Lien externe**, avec une icône personnalisée, et l’option **Affiche comme application proposée et la met en avant dans le portail d’entreprise** a été sélectionnée.
-    ![Application disponible iOS](./media/available-install-on-iOS.png)
+Elle s’affichera dans le portail d’entreprise, à partir duquel les utilisateurs pourront l’installer sur leur appareil. Par exemple, dans cette capture d’écran, l’application Bing pour iOS a été déployée à l’aide du type d’installation **Lien externe**, avec une icône personnalisée, et l’option **Affiche comme application proposée et la met en avant dans le portail d’entreprise** a été sélectionnée.  
+![Application disponible iOS](./media/available-install-on-iOS.png)
 
-Si vous avez déployé l’application comme application **Requise** sur un appareil iOS, l’utilisateur recevra une notification indiquant qu’une application est prête à être installée. Par exemple, dans cette capture d’écran, l’application Dossiers de travail pour iOS a été déployée à l’aide du type d’installation **Application iOS gérée à partir de l’App Store**.
-    ![Application requise iOS](./media/iOS-Required-install.PNG)
+Si vous avez déployé l’application comme application **Requise** sur un appareil iOS, l’utilisateur recevra une notification indiquant qu’une application est prête à être installée. Par exemple, dans cette capture d’écran, l’application Dossiers de travail pour iOS a été déployée à l’aide du type d’installation **Application iOS gérée à partir de l’App Store**.  
+![Application requise iOS](./media/iOS-Required-install.PNG)
 
 ## Étapes suivantes
 
@@ -64,6 +64,6 @@ Après avoir déployé une application, vous pouvez surveiller sa progression. P
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

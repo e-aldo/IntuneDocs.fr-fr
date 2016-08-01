@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Restreindre l’accès à la messagerie Exchange sur site et Exchange Online Dedicated (environnement hérité) | Microsoft Intune
-description:
-keywords:
+title: "Limiter l’accès à la messagerie sur la version locale d’Exchange | Microsoft Intune"
+description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à la messagerie de votre entreprise sur Exchange en local."
+keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 2913021daf5ee440d5d9b8e577ad0bac6bcb3511
+
 
 ---
 
@@ -75,7 +69,8 @@ Le diagramme suivant illustre le flux utilisé par les stratégies d’accès co
 -   Application de messagerie native sur iOS.
 
 -   Application de messagerie native sur Android 4 ou version ultérieure
-> [!NOTE] L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge.
+> [!NOTE]
+> L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge.
 
 ## Prise en charge des PC
 
@@ -104,7 +99,8 @@ Application **Courrier** sur Windows 8 et versions ultérieures (en cas d’ins
 >Si vous avez l’intention de bloquer au préalable tous les appareils avant de leur accorder l’accès à la messagerie électronique, choisissez la règle de blocage d’accès ou de mise en quarantaine. La règle par défaut s’applique à tous les types d’appareils. Ainsi, les types d’appareils que vous configurez en tant qu’exceptions de plateforme et qui ne sont pas pris en charge par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sont également affectés.
 
   - **Notification utilisateur :** En plus du message électronique de notification envoyé par Exchange, Intune envoie un message électronique configurable qui contient les étapes à suivre pour débloquer l’appareil. Vous pouvez modifier le message par défaut pour le personnaliser selon vos besoins. Le message électronique de notification Intune contenant les instructions de correction est envoyé dans la boîte aux lettres Exchange de l’utilisateur. Par conséquent, si l’appareil de l’utilisateur est bloqué avant de recevoir le courrier électronique, l’utilisateur peut utiliser un appareil non bloqué ou recourir à une autre méthode pour accéder à Exchange et afficher le message. Cela est particulièrement vrai quand le blocage ou la mise en quarantaine est défini avec la **Règle par défaut**.  Dans ce cas, l’utilisateur final doit accéder à son magasin d’applications, télécharger l’application du portail d’entreprise Microsoft et inscrire son appareil. Cela s’applique aux appareils iOS, Windows et Samsung KNOX.  Pour les appareils qui n’exécutent pas Samsung KNOX, l’administrateur informatique doit envoyer le message électronique de mise en quarantaine à un autre compte de messagerie, que l’utilisateur final doit ensuite copier sur son appareil bloqué pour finaliser l’inscription et la mise en conformité.
-  > [!NOTE] Pour qu’Exchange puisse envoyer la notification par e-mail, vous devez spécifier le compte à utiliser.
+  > [!NOTE]
+  > Pour que le message électronique de notification puisse être envoyé par Exchange, vous devez spécifier le compte à utiliser pour l’envoyer.
   >
   > Pour plus d’informations, consultez [Configurer le connecteur Exchange sur site pour Exchange sur site ou hébergé](intune-on-premises-exchange-connector.md).
 
@@ -126,6 +122,7 @@ Application **Courrier** sur Windows 8 et versions ultérieures (en cas d’ins
 [Restreindre l’accès à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

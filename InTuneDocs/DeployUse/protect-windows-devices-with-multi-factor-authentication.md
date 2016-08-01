@@ -1,10 +1,10 @@
 ---
-title: "Protéger les appareils Windows avec l’authentification multifacteur | Microsoft Intune"
-description: 
+title: Authentification multifacteur pour Windows | Microsoft Intune
+description: "Intune intègre l’authentification multifacteur (MFA) pour vous aider à sécuriser vos ressources d’entreprise."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2023d7bc1d35b423a216ece195cdca9a6a542446
-ms.openlocfilehash: 15e546b93c2a3aff551efa36ac80ff212ada5812
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: c1f9c60a1c79d23bab62617ed237ad982e82c39d
 
 
 ---
 
 # Protect Windows devices with multi-factor authentication
-Microsoft Intune intègre l’authentification multifacteur (MFA) pour vous aider à sécuriser vos ressources d’entreprise. L’authentification multifacteur requiert des facteurs d’authentification, notamment l’authentification textuelle, en plus des noms d’utilisateur et mots de passe. Intune prend en charge l’utilisation de l’authentification multifacteur lors de l’inscription d’appareils sous Windows 8.1 ou version ultérieure, Windows Phone 8.1 ou Windows 10 Desktop et Mobile. 
+Microsoft Intune intègre l’authentification multifacteur (MFA) pour vous aider à sécuriser vos ressources d’entreprise. L’authentification multifacteur requiert des facteurs d’authentification, notamment l’authentification textuelle, en plus des noms d’utilisateur et mots de passe. Intune prend en charge l’utilisation de l’authentification multifacteur lors de l’inscription d’appareils sous Windows 8.1 ou version ultérieure, Windows Phone 8.1 ou Windows 10 Desktop et Mobile.
 
 ## Conditions requises au niveau de l'infrastructure locale pour l'authentification multifacteur
 Pour configurer l'authentification multifacteur, vous avez besoin des éléments suivants :
@@ -55,7 +55,6 @@ Pour plus d'informations sur la façon d'activer l'authentification multifacteur
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

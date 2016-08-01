@@ -1,10 +1,10 @@
 ---
 title: "Paramètres de la stratégie dans Windows 10 | Microsoft Intune"
-description: 
+description: "Utilisez les paramètres de stratégie de cette rubrique pour configurer les paramètres intégrés et personnalisés des appareils Windows 10 Mobile et Windows 10 Desktop inscrits."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
 
 
 ---
 
 # Paramètres de la stratégie dans Windows 10
 
-Utilisez les paramètres de la stratégie de cette rubrique pour configurer les paramètres des appareils Windows 10 Mobile et Windows 10 Desktop inscrits.
+Utilisez les paramètres de stratégie de cette rubrique pour configurer les paramètres intégrés et personnalisés des appareils Windows 10 Mobile et Windows 10 Desktop inscrits.
+
+> [!IMPORTANT]
+> Il existe deux méthodes pour gérer des ordinateurs Windows 10 : en les inscrivant ou en installant le logiciel client Intune PC. Chaque méthode a ses avantages. Pour en savoir plus, consultez [Choisir comment gérer les appareils](/intune/get-started/choose-how-to-manage-devices).
+> Si vous gérez votre ordinateur Windows 10 avec le logiciel client Intune PC, vous ne pouvez pas utiliser les stratégies et paramètres décrits dans cette rubrique. Pour appliquer ces paramètres, vos appareils Windows 10 doivent être inscrits à Intune.
 
 ## Paramètres de la stratégie de configuration générale
 
-Utilisez la **stratégie de configuration générale** Microsoft Intune pour Windows 10 afin de configurer les paramètres généraux des appareils Windows 10 Mobile et Windows 10 Desktop inscrits. Cette stratégie ne peut pas être utilisée si vous gérez des PC Windows 10 avec le logiciel client Intune.
+Utilisez la **stratégie de configuration générale** Microsoft Intune pour Windows 10 afin de configurer les paramètres généraux des appareils Windows 10 Mobile et Windows 10 Desktop inscrits. 
 
 
 ### Mot de passe
@@ -161,7 +166,7 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 |**Intervalle de mise à jour des signatures**|Spécifiez l'intervalle auquel Defender vérifie les nouveaux fichiers de signatures.|
 |**Autoriser la protection de cloud**|Autorisez ou empêchez Microsoft Active Protection Service de recevoir des informations sur l'activité des logiciels malveillants à partir des appareils que vous gérez. Ces informations serviront à améliorer le service.|
 |**Demander aux utilisateurs d'envoyer des exemples**|Contrôle si les fichiers susceptibles de nécessiter une analyse plus approfondie de la part de Microsoft pour déterminer s’il s’agit de logiciels malveillants sont automatiquement envoyés à Microsoft.|
-|**Détection des applications potentiellement indésirables**|Ce paramètre permet d’empêcher les postes de travail Windows inscrits d’exécuter des logiciels considérés par Windows Defender comme potentiellement indésirables. Vous pouvez empêcher ces applications d’être exécutées ou utiliser le mode Audit pour être informé lorsqu’une application potentiellement indésirable est installée.|
+|**Détection des applications potentiellement indésirables**|Ce paramètre permet d’empêcher les appareils de bureau Windows inscrits d’exécuter des logiciels considérés par Windows Defender comme potentiellement indésirables. Vous pouvez empêcher ces applications d’être exécutées ou utiliser le mode Audit pour être informé lorsqu’une application potentiellement indésirable est installée.|
 |**Fichiers et dossiers à exclure lors de l'exécution d'une analyse ou de l'utilisation de la protection en temps réel**|Ajoutez un ou plusieurs fichiers et dossiers comme **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à la liste des exclusions. Ces fichiers et dossiers ne seront pas inclus dans les analyses en temps réel ou planifiées.|
 |**Extensions de fichier à exclure lors d'une analyse ou de la protection en temps réel**|Ajoutez une ou plusieurs extensions de fichier comme **jpg** ou **txt** à la liste des exclusions. Tous les fichiers avec ces extensions ne seront pas inclus dans les analyses en temps réel ou planifiées.|
 |**Processus à exclure lors d'une analyse ou de la protection en temps réel**|Ajoutez un ou plusieurs processus du type **.exe**, **.com**, ou **.scr** à la liste des exclusions. Ces processus ne seront pas inclus dans les analyses en temps réel ou planifiées.| 
@@ -327,6 +332,6 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

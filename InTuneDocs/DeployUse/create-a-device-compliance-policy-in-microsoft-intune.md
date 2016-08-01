@@ -1,10 +1,10 @@
 ---
-title: "Créer une stratégie de conformité des appareils dans Microsoft Intune | Microsoft Intune"
-description: 
+title: "Créer une stratégie de conformité des appareils | Microsoft Intune"
+description: "Créez une stratégie de conformité pour vous aider à sécuriser les appareils mobiles et ordinateurs utilisés pour accéder aux données de votre entreprise."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: da2059c476d91ac6729543f67fa11db85502f60d
 
 
 ---
@@ -32,12 +32,20 @@ Dans la page **Créer une stratégie**, activez les paramètres dont vous avez b
   -   Paramètres de sécurité système tels que le mot de passe et le chiffrement
   -   Paramètres d’intégrité des appareils, par exemple si un appareil est jailbroken ou signalé comme sain par le service d’attestation de l’intégrité des appareils Windows.
   -   Paramètres de propriété des appareils, tels que la version minimale du système d’exploitation requise ou la version maximale du système d’exploitation autorisée.
-![Capture d’écran de l’onglet Général de la page Créer une stratégie ](./media/intune-sa-3b-create-policy.png)
+![Onglet Général de la page Créer une stratégie ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  Étape 3 : enregistrer la stratégie
 Quand vous avez terminé, choisissez **Enregistrer la stratégie**.
 
 Vous pourrez déployer la stratégie immédiatement après l’avoir enregistrée, ou la déployer ultérieurement. La nouvelle stratégie s’affiche sous le nœud **Stratégies de conformité** de l’espace de travail **Stratégie**.
+
+##  Étape 4 : définir la période de validité des état de conformité
+Pour spécifier le délai d’enregistrement de l’appareil avant qu’un appareil soit considéré comme non conforme, accédez aux paramètres de stratégie de conformité et mettez le délai à jour.  La valeur par défaut est définie sur 30 jours.
+
+![Option de paramètres de stratégie de conformité dans la barre de menus de stratégie](../media/mdm-compliance-policy-settings.png)
+
+![Boîte de dialogue de stratégie de conformité](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## Paramètres de stratégie pris en charge
 Le tableau suivant répertorie les paramètres de stratégie de conformité et les plateformes sur lesquelles ils sont pris en charge.
@@ -79,6 +87,6 @@ Sélectionnez l’une des options suivantes pour en savoir plus sur les paramèt
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,20 +1,20 @@
 ---
-title: "Aider à protéger les appareils iOS avec le contournement du verrou d’activation | Microsoft Intune"
-description: 
+title: "Gérer le verrou d’activation iOS sur les appareils | Microsoft Intune"
+description: "Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fonctionnalité de l’application Rechercher mon iPhone pour les appareils iOS 7.1 et versions ultérieures."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 496679a196dc3e84c6b16ad0d3b830c81f12631b
-ms.openlocfilehash: 7bbd761b13f110297959a036ec15cafe1396377e
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 3980d1a498ccab3eb5683e03e0cce252959b89dc
 
 
 ---
@@ -82,12 +82,16 @@ Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deu
 
     Si vous sélectionnez un appareil dans le nœud **Tous les appareils d’entreprise** et que le verrou d’activation est activé pour l’appareil, le code de contournement est également visible. Vous pouvez utiliser ce code pour émettre manuellement un contournement du verrou d'activation.
 
+    > [!IMPORTANT]
+    >Intune récupère un inventaire des appareils pour le verrou d’activation tous les 7 jours. Pour cette raison, il est possible que l’état du verrou d’activation des appareils ne soit pas immédiatement actualisé dans la console Intune.
+
+
 ### Voir aussi
 [Mettre des appareils hors service](retire-devices-from-microsoft-intune-management.md)
 [Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code secret](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
