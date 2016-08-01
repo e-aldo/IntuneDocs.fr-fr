@@ -1,32 +1,27 @@
 ---
-# required metadata
-
-title: Synchroniser votre appareil manuellement | Microsoft Intune
-description:
-keywords:
+title: Synchroniser votre appareil iOS manuellement | Microsoft Intune
+description: 
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: d4758ec542585c718aff5a4115b825fe71b8073d
+
 
 ---
 
 
-# Synchroniser votre appareil manuellement
+# Synchroniser votre appareil iOS manuellement
 
 Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil iOS, ce qui peut vous aider à accélérer l’installation. La fonctionnalité de synchronisation s’applique uniquement à iOS, et pas à Mac OS X.
 
@@ -42,11 +37,13 @@ Si l’installation de votre application est trop longue, suivez ces instruction
 
 Un cercle en rotation s’affiche sur l’écran jusqu’à ce que la synchronisation soit terminée.
 
-Si vous avez besoin d’aide et que vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: Comment vos utilisateurs Windows obtiennent leurs applications | Microsoft Intune
-description: 
+description: "Méthodes de mise à disposition des applications Windows pour les utilisateurs finaux"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d867202b8b3cc5e6ed77d97bcfddce2beabdd40
-ms.openlocfilehash: f226ea2a7be64ef759f61c61903bb0dc964c1410
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 6e99ddf519a216d0772f69127f560034ca1895d0
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: f226ea2a7be64ef759f61c61903bb0dc964c1410
 
 # Comment vos utilisateurs Windows obtiennent leurs applications
 
-Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux obtiennent les applications que vous distribuez via Microsoft Intune. 
+Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux obtiennent les applications que vous distribuez via Microsoft Intune.
 
 **Applications requises** : applications requises par l’administrateur qui sont installées sur l’appareil avec une intervention minime de l’utilisateur, qui varie selon la plateforme.
 
@@ -38,6 +38,6 @@ Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,20 +1,20 @@
 ---
 title: "Configurations personnalisées pour les profils VPN | Microsoft Intune"
-description: 
+description: "Utilisez des configurations personnalisées pour créer des profils VPN dans Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5c48a4cead6250864f5b10444d99d062441bd99
-ms.openlocfilehash: 7e7c50552b5a61804e759a7ec5443029d4bd4584
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 
 
 ---
@@ -86,19 +86,19 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 Pour toute question sur la façon dont ces paramètres doivent être utilisés, ou pour plus d’informations sur ce qu’ils font, consultez la documentation du fournisseur de services de configuration (CSP) : https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
 
 ## Paramètres d’URI pour les VPN Android par application sur PulseSecure
-### URI PERSONNALISÉ POUR LA LISTE DES PACKAGES 
+### URI PERSONNALISÉ POUR LA LISTE DES PACKAGES
 -  Type de données = Chaîne
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
 -  Valeur = liste des packages séparés par des délimiteurs.
    - Délimiteurs : point-virgule (;), deux-points (:), virgule (,), barre verticale (|)
 
-Exemples : 
+Exemples :
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
 ### URI PERSONNALISÉ POUR LE MODE (FACULTATIF)
 - Type de données = Chaîne
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode 
+- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > Remarques
 > - Utilisez le même *nom* que celui que vous avez affecté au profil personnalisé
@@ -112,6 +112,6 @@ Exemples :
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

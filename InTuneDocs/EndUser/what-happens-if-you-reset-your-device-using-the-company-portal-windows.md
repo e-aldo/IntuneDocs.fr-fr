@@ -1,26 +1,27 @@
 ---
-title: "Effets de la réinitialisation de votre appareil via le portail d’entreprise | Microsoft Intune"
+title: "Que se passe-t-il si vous réinitialisez votre appareil Windows à l’aide du Portail d’entreprise ? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 33809dbb8ee297a7f88a9615d8cec128ceadc96e
 
 
 ---
 
 
-# Effets de la réinitialisation de votre appareil via le portail d’entreprise
+# Que se passe-t-il si vous réinitialisez votre appareil Windows à l’aide du Portail d’entreprise ?
 
 Quand vous utilisez l’application Portail d’entreprise ou le [site web Portail d’entreprise](reset-your-device-cpwebsite.md) pour réinitialiser votre appareil Windows, les paramètres d’usine sont rétablis et l’ensemble des applications, des paramètres et des données, y compris vos données personnelles, sont supprimés. Ce qu'il se passe sur chaque appareil dépend du type d'appareil que vous avez et de la façon dont vous l'utilisez, comme indiqué dans le tableau suivant. Pour obtenir des instructions sur la réinitialisation de votre appareil perdu ou volé, consultez [Réinitialiser (effacer) votre appareil perdu ou volé](reset-erase-your-lost-or-stolen-device-windows.md).
 
@@ -36,6 +37,7 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

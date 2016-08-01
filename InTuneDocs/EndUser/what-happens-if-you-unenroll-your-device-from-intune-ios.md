@@ -1,27 +1,27 @@
 ---
-title: "Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ? | Microsoft Intune"
+title: "Que se passe-t-il si vous désinscrivez votre appareil iOS d’Intune ? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 073c94e51f61e091f0055c96e8ad183e57fafabd
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 717285386b9573d1e302948dc2430b36e752430b
 
 
 ---
 
 
-# Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?
+# Que se passe-t-il si vous désinscrivez votre appareil iOS d’Intune ?
 
 Quand vous désinscrivez votre appareil iOS d’Intune :
 
@@ -47,6 +47,7 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

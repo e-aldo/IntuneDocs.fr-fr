@@ -1,9 +1,9 @@
 ---
 title: "Résoudre les problèmes de mise à jour logicielle | Microsoft Intune"
-description: 
+description: "Résoudre les problèmes de mise à jour logicielle dans Microsoft Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4d4197ac1ece3e9abf44ad462d8ec7a807b4b2
-ms.openlocfilehash: d8470be236ac7b7a9431e07c5ca651cb6bd9fbc0
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 1615f564891ddf720dc42b18a599921572fb2157
 
 
 ---
@@ -244,7 +244,7 @@ Le tableau suivant répertorie les codes d’erreur de l’**agent de mise à jo
 **Problème** : vous pouvez être confronté à la situation où les clients Microsoft Intune rencontrent un ou plusieurs des problèmes suivants :
 - Ils cessent soudain de créer des rapports auprès de la console d’administration Microsoft.  
 - Ils subissent une utilisation élevée du processeur.
-- L’installation des applications via le portail Intune est lente. 
+- L’installation des applications via le portail Intune est lente.
 - Microsoft Intune Center déclenche l’erreur suivante : *Une erreur s’est produite lors de la mise à jour de votre ordinateur. Erreur détectée : Code 0x800705b4*.
 - Le champ d’état dans la Console d’administration Intune > Groupes > Tous les appareils affiche ceci : *Un ou plusieurs agents installés sur cet ordinateur signalent des erreurs. Les informations de cet ordinateur sont peut-être incorrectes ou non à jour*.
 
@@ -254,7 +254,7 @@ Ce problème peut se produire si des mises à jour remplacées (des mises à jou
 1. Connectez-vous à la [console d’administration Intune](https://manage.microsoft.com).
 2. Sélectionnez **Mises à jour** > **Toutes les mises à jour**.
 3. Pour filtrer les mises à jour remplacées, utilisez l’option de filtre sur la barre d’outils supérieure.
-4. Refusez toutes les mises à jour remplacées qui peuvent s’appliquer à Windows 7 ou aux applications (par exemple, Microsoft Office) qui ont été installées sur les clients concernés. 
+4. Refusez toutes les mises à jour remplacées qui peuvent s’appliquer à Windows 7 ou aux applications (par exemple, Microsoft Office) qui ont été installées sur les clients concernés.
 5. Redémarrez les clients concernés.
 
 En outre, si vous utilisez Windows 7, vérifiez que vous disposez de la mise à jour suivante installée :[3050265 Client de mise à jour Windows pour Windows 7 : juin 2015](https://support.microsoft.com/kb/3050265).
@@ -264,7 +264,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

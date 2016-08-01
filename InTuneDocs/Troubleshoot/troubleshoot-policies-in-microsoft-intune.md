@@ -1,9 +1,9 @@
 ---
 title: "Résoudre les problèmes de stratégie | Microsoft Intune"
-description: 
+description: "Résolvez les problèmes de configuration de stratégie."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
 
 
 ---
@@ -47,7 +48,7 @@ La capture d’écran ci-dessous illustre clairement ce point à travers deux ex
 ![Stratégie des appareils Intune](../media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
-> [!NOTE] N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
+> N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
 
 ## Stratégie d’actualisation et intervalles de mise à jour
 Sachez que les stratégies sont actualisées et mises à jour à intervalles réguliers. En général, les stratégies doivent être inscrites sur les appareils dans les 15 minutes qui suivent une modification. Voici quelques détails supplémentaires sur les intervalles réguliers d’actualisation de stratégie :
@@ -70,7 +71,7 @@ Pour les appareils Windows non soumis à la gestion des appareils mobiles, les e
 2.  Attendez 20 minutes que le logiciel client soit supprimé.
 
     > [!NOTE]
-    > [!NOTE] N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
+    > N’essayez pas de supprimer le client à partir de Programmes et fonctionnalités.
 
 3.  Dans le menu Démarrer, tapez **UAC** pour ouvrir les paramètres de Contrôle de compte d’utilisateur.
 
@@ -112,6 +113,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

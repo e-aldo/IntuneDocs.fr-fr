@@ -1,10 +1,10 @@
 ---
 title: "Déploiement en entreprise | Microsoft Intune"
-description: 
+description: "Recommandations pour la phase de déploiement d’un déploiement Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 588d37ac5524c80da9082ee5b1af0e897e925ef9
+ms.sourcegitcommit: 0fff944e180bda99d70caafebe4ae69b6bd05b1b
+ms.openlocfilehash: aae62850d35aab6908cae2841988822911989a40
 
 
 ---
@@ -73,7 +73,9 @@ Voici une liste d’étapes de démarrage de la phase **Déploiement en entrepri
 
 -   Identifiez les groupes qui peuvent nécessiter des formations et des communications ciblées.
 
--   Personnalisez les e-mails de communication, mettez à jour le site intranet et identifiez le responsable des mises à jour des communications/ressources.
+-   Personnalisez les communications par courrier électronique et mettez à jour le site intranet.
+
+-   Identifiez le propriétaire actuel pour la mise à jour des communications/ressources.
 
 -   Identifiez les méthodes de formation auxquelles vous aurez recours.
 
@@ -108,6 +110,6 @@ Voici les principaux défis que vous pouvez rencontrer lors de la phase de **dé
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

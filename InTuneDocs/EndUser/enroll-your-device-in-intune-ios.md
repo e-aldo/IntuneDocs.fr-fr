@@ -1,9 +1,9 @@
 ---
 title: Inscrire un appareil iOS dans Intune | Microsoft Intune
-description: 
+description: Cette rubrique explique comment inscrire un appareil iOS dans Intune
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: 305308aa94a7650df8b44710025620906714421b
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 7bc57a9416023077d22323d4e88d1464304e21ea
 
 
 ---
@@ -35,53 +35,53 @@ Si vous essayez d’inscrire un appareil Mac OS X, consultez [Inscrire votre a
 
 2. Dans la page **Configuration de l’accès à l’entreprise**, appuyez sur **Commencer**.
 
-    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png) 
+    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
 
 3. Dans l’écran **Pourquoi inscrire votre appareil ?**, découvrez ce que vous pouvez faire une fois votre appareil inscrit, puis appuyez sur **Continuer**.
 
-    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png) 
+    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
 4. Consultez la liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil inscrit, puis appuyez sur **Continuer**.
 
-    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png) 
+    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
 5.  Dans l’écran **Et ensuite ?**, découvrez ce qui se passe lors de l’inscription, puis appuyez sur **Inscrire**.
 
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png) 
+    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  Dans l’écran **Installer un profil**, appuyez sur **Installer** et entrez votre code secret si vous y êtes invité.
 
-    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png) 
-  
+    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
+
 7.  Appuyez sur **Installer**.
 
     ![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
 
 8.  Appuyez sur **Installer** pour indiquer que vous avez lu l’avertissement.
 
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png) 
+    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  Appuyez sur **Confiance**.
 
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png) 
+    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  Quand l’écran change et indique que l’installation du profil est terminée, appuyez sur **Terminé**.
 
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png) 
+    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     Un message « Inscription de l’appareil » s’affiche à l’écran.
 
 11.  Quand un message vous invite à ouvrir la page sur le portail d’entreprise, appuyez sur **Ouvrir**.
 
-    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png) 
+    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
 12. Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **Continuer**. Si votre administrateur informatique a configuré des exigences de sécurité supplémentaires, telles que l’obligation de définir un mot de passe, suivez les instructions à l’écran jusqu’à ce que toutes les exigences de conformité soient satisfaites et que l’écran Configuration de l’accès à l’entreprise réapparaisse, puis appuyez sur **Continuer**.
 
-    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png) 
+    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
-13. Appuyez sur **Terminé**. 
+13. Appuyez sur **Terminé**.
 
-    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png) 
+    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
 
 Votre appareil est maintenant inscrit dans Intune, et l’application Portail d’entreprise réapparaît.
 
@@ -91,6 +91,7 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

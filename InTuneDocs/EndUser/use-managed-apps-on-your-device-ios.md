@@ -1,32 +1,27 @@
 ---
-# required metadata
-
-title: Utiliser des applications gérées sur votre appareil | Microsoft Intune
-description:
-keywords:
+title: "Utiliser des applications gérées sur votre appareil iOS | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: b8e8bc72012a19b309a7db6c8c562ff2cbec0933
+
 
 ---
 
 
-# Utiliser des applications gérées sur votre appareil
+# Utiliser des applications gérées sur votre appareil iOS
 
 Les applications gérées sont des applications que votre administrateur informatique peut configurer pour protéger les données d’entreprise auxquelles vous pouvez accéder dans cette application. Quand vous accédez à des données d’entreprise dans une application gérée sur votre appareil iOS, l’application peut ne pas fonctionner exactement comme prévu. Par exemple, vous ne pouvez pas copier et coller des données d’entreprise protégées, ou vous ne pouvez pas enregistrer ces données à certains emplacements.
 
@@ -64,23 +59,14 @@ Voici quelques exemples d’options que votre administrateur informatique peut g
 
 -   Cryptage des données
 
-Voici quelques applications courantes que votre service informatique peut gérer :
 
--   Navigateur web géré
-
--   Afficheur d'images géré
-
--   Managé visionneuse PDF
-
--   Lecteur AV géré
-
--   Microsoft Word, Excel, PowerPoint
-
-Pour plus d’informations sur les applications gérées sur votre appareil, contactez votre administrateur informatique. Si vous ne trouvez pas les coordonnées de votre administrateur informatique, regardez si elles ne sont pas indiquées dans le [site web Portail d’entreprise](http://portal.manage.microsoft.com).
+Pour plus d’informations sur les applications gérées sur votre appareil, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 ### Voir aussi
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+
+
+<!--HONumber=Jul16_HO4-->
 
 

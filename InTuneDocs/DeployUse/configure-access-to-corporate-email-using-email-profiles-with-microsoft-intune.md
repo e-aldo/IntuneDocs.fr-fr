@@ -1,10 +1,10 @@
 ---
-title: "Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie | Microsoft Intune"
-description: 
+title: "Accéder à la messagerie d’entreprise en utilisant des profils de messagerie | Microsoft Intune"
+description: "Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: angrobe
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
 
 
 ---
@@ -24,7 +24,7 @@ De nombreuses plateformes mobiles incluent un client de messagerie *natif* fourn
 
 Si vous avez besoin d’une protection supplémentaire contre la perte de données, choisissez l’[accès conditionnel](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) qui contrôle l’accès à la boîte aux lettres de l’utilisateur pour n’importe quel client de messagerie, notamment les clients de messagerie natifs.
 
-Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles.   La plupart des plateformes mobiles incluent un client de messagerie *natif* fourni avec le système d’exploitation.  Sur les plateformes prises en charge, les clients de messagerie natifs peuvent être configurés par Microsoft Intune pour permettre aux utilisateurs d’accéder à leur messagerie d’entreprise sur les appareils personnels sans aucune configuration supplémentaire.  
+Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles. La plupart des plateformes mobiles incluent un client de messagerie *natif* fourni avec le système d’exploitation.  Sur les plateformes prises en charge, les clients de messagerie natifs peuvent être configurés par Microsoft Intune pour permettre aux utilisateurs d’accéder à leur messagerie d’entreprise sur les appareils personnels sans aucune configuration supplémentaire.  
 
 Les administrateurs informatiques ou les utilisateurs peuvent choisir d’installer d’autres clients de messagerie, par exemple Microsoft Outlook pour Android ou iOS.  Ces clients de messagerie peuvent ne pas prendre en charge les profils de messagerie et ne sont pas configurables à l’aide des profils de messagerie Microsoft Intune.  
 
@@ -82,7 +82,7 @@ Comme le mot de passe n'est pas contenu dans le profil de messagerie, l'utilisat
     |**Nombre de jours de courrier électronique à synchroniser**|Nombre de jours de courrier électronique à synchroniser, ou sélectionnez **Illimité** pour synchroniser tous les messages disponibles.|
     |**Planification de la synchronisation** (Samsung KNOX, Windows Phone 8 et versions ultérieures, Windows 10)|Sélectionnez la planification selon laquelle les appareils vont synchroniser les données d'Exchange Server. Vous pouvez également sélectionner **À mesure que les messages arrivent** pour synchroniser les données dès qu’elles arrivent ou **Manuel** pour que ce soit l’utilisateur de l’appareil qui lance la synchronisation.|
     |**Utiliser SSL**|Utilisez la communication SSL (Secure Sockets Layer) pour envoyer des messages électroniques, en recevoir et communiquer avec Exchange Server.<br /><br />Pour les appareils qui exécutent Samsung KNOX 4.0 ou vers ultérieure, vous devez exporter le certificat SSL de votre serveur Exchange et le déployer comme profil de certificat approuvé par Android dans Intune. Intune ne prend pas en charge l’accès à ce certificat s’il est installé sur le serveur Exchange par d’autres moyens.|
-    |**Type de contenu à synchroniser**|Sélectionnez les types de contenu à synchroniser avec des appareils.| 
+    |**Type de contenu à synchroniser**|Sélectionnez les types de contenu à synchroniser avec des appareils.|
     |**Autoriser l’envoi de courrier électronique à partir d’applications tierces** (iOS uniquement)|Autoriser l’utilisateur à sélectionner ce profil en tant que compte par défaut pour l’envoi d’e-mails et autoriser les applications tierces à ouvrir les e-mails dans l’application de messagerie native, par exemple pour y joindre des fichiers.|
 
     > [!IMPORTANT]
@@ -109,8 +109,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

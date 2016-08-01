@@ -1,10 +1,10 @@
 ---
 title: Connexions Wi-Fi | Microsoft Intune
-description: 
+description: "Utilisez les profils VPN afin de déployer des paramètres VPN pour les utilisateurs et appareils de votre organisation."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 910ccd7c91593114ddf57c842c0bf9c9ffa54fdc
-ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 271d2be675ab808365cd6869c69d386058f76ae8
 
 
 ---
@@ -125,8 +125,8 @@ Utilisez l’option **Stratégie d’importation Wi-Fi Windows** pour importer u
 
 2.  Configurez une stratégie du type **Windows** &gt; **Importation Wi-Fi (Windows 8.1 et versions ultérieures)**.
 
-    Cette stratégie peut être appliquée aux appareils de bureau et mobiles Windows 8.1 et Windows 10. 
-    
+    Cette stratégie peut être appliquée aux appareils de bureau et mobiles Windows 8.1 et Windows 10.
+
     Vous pouvez uniquement créer et déployer une stratégie d’importation Wi-Fi Windows *personnalisée*. Les paramètres recommandés ne sont pas disponibles.
 
 3.  Spécifiez les valeurs générales suivantes pour la stratégie d'importation Wi-Fi Windows :
@@ -166,6 +166,6 @@ Découvrez comment créer un profil Wi-Fi avec une clé prépartagée dans [Prof
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

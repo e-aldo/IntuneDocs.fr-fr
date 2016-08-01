@@ -1,9 +1,9 @@
 ---
 title: Inscrire un appareil Mac OS X dans Intune | Microsoft Intune
-description: 
+description: "Cette rubrique décrit comment inscrire un appareil Mac OS X dans Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: b85d2ac62ca313f0740c68ff6d85918ff7bcd55a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e3c351591f496fbc7be3fefdc320af9caaae726
 
 
 ---
@@ -34,19 +34,19 @@ Pour inscrire un appareil Mac OS X
 
 2.  Appuyez sur **Cet appareil n’est pas inscrit ou bien le Portail d’entreprise ne peut pas l’identifier**.
 
-    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
+    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
 3.  Appuyez sur **Installer** pour commencer l’inscription de votre appareil.
 
-    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
+    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
 4.  Dans la boîte de dialogue **Installer un profil de gestion**, appuyez sur **Installer**. Si une boîte de dialogue s’affiche et vous demande d’entrer vos informations d’identification, entrez votre nom d’utilisateur et votre mot de passe, puis appuyez sur **Continuer** &gt; **Installer**.
 
-    ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
+    ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
     Quand vous avez terminé l’inscription, vous voyez une page Profil de gestion indiquant que votre profil a été vérifié.
 
-    ![management-profile-verified](./media/4-macosx-enroll-done.png) 
+    ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
@@ -54,6 +54,7 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

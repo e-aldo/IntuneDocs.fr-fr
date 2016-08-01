@@ -1,10 +1,10 @@
 ---
 title: "Restreindre l’accès à Skype Entreprise Online | Microsoft Intune"
-description: 
+description: "Protégez et contrôlez l’accès à Skype Entreprise Online avec l’accès conditionnel."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
-ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 6e32de28117f31ccd73418b4f0167e9e5971944a
 
 
 ---
@@ -32,7 +33,7 @@ Lorsqu’un utilisateur ciblé tente d’utiliser Skype Entreprise Online sur so
 **Avant** de configurer une stratégie d’accès conditionnel à Skype Entreprise Online, vous devez :
 - Disposer d’un **abonnement Skype Entreprise Online** et affecter une licence Skype Entreprise Online aux utilisateurs.
 - Disposer d’un abonnement à **Enterprise Mobility Suite** ou **Azure Active Directory Premium**.
--   [Authentification moderne activée](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) pour Skype Entreprise Online. 
+-   [Authentification moderne activée](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) pour Skype Entreprise Online.
 -  Tous vos utilisateurs finaux doivent utiliser **Skype Entreprise Online**. Si votre déploiement comprend à la fois Skype Entreprise Online et Skype Entreprise local, la stratégie d’accès conditionnel n’est pas appliquée aux utilisateurs finaux.
 
     Pour accéder à Skype Entreprise Online, un appareil doit être :
@@ -68,10 +69,12 @@ Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégi
 ### Étape 2 : configurer et déployer une stratégie de conformité
 [Créez](create-a-device-compliance-policy-in-microsoft-intune.md) et [déployez](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) une stratégie de conformité pour tous les appareils qui seront affectés par la stratégie. Il s’agit de tous les appareils utilisés par les utilisateurs des **Groupes ciblés**.
 
-> [!NOTE]Tandis que les stratégies de conformité sont déployées dans des groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
+> [!NOTE]
+> Tandis que les stratégies de conformité sont déployées sur les groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
 
 
-> [!IMPORTANT] Si vous n’avez pas déployé de stratégie de conformité, les appareils sont considérés comme conformes.
+> [!IMPORTANT]
+> Si vous n’avez pas déployé de stratégie de conformité, les appareils seront traités comme étant conformes.
 
 Quand vous êtes prêt, passez à l' **Étape 3**.
 
@@ -113,6 +116,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

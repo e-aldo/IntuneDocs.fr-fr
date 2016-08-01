@@ -1,9 +1,9 @@
 ---
 title: "Présentation des opérations à l’aide de rapports | Microsoft Intune"
-description: 
+description: "Créez et gérez des rapports sur les logiciels, le matériel et les licences logicielles de votre organisation."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/21/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
-ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
-ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+translationtype: Human Translation
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 8d5dd37c6e41c6c9bb40b9bff6696583d4215730
 
 
 ---
@@ -68,7 +69,6 @@ En outre, les rapports prennent en charge les actions suivantes :
 
 
 
-
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Comprendre vos appareils grâce à l’inventaire | Microsoft Intune"
-description: 
+description: "Cette rubrique explique comment utiliser Intune pour afficher des informations sur le matériel des appareils que vous gérez."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: 55b99e326e4f22aee62b207eb2e976a8d52e70c3
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
 
 
 ---
@@ -45,7 +45,7 @@ Pour afficher l’inventaire recueilli par les appareils mobiles, exécutez les 
 |**Numéro de série**|Appareils iOS, Mac OS X, Android, Windows 8.1, Windows 10|
 |**Espace de stockage total**|Appareils iOS, Mac OS X, Windows 8.1, Windows 10|
 |**Espace de stockage libre**|Appareils iOS, Mac OS X, Windows 8.1, Windows 10|
-|**Numéro de téléphone**<br>Les téléphones classés comme appartenant à l’entreprise sont identifiés avec leur numéro de téléphone complet, par exemple, lorsque vous exécutez un rapport d’inventaire des appareils mobiles. Les numéros de téléphone de type « BYOD » sont masqués avec & #42 ; seuls les 4 derniers chiffres s’affichent.|Appareils iOS, Android et Windows Phone|
+|**Numéro de téléphone**<br>Les téléphones classés comme appartenant à l’entreprise sont identifiés avec leur numéro de téléphone complet, par exemple, lorsque vous exécutez un rapport d’inventaire des appareils mobiles. Les numéros de téléphone de type « BYOD » sont masqués avec &#42 ; seuls les 4 derniers chiffres s’affichent.|Appareils iOS, Android et Windows Phone|
 |**IMEI**|Appareils Exchange ActiveSync, iOS, Android et Windows Phone|
 |**MEID**<br>MEID (Mobile Equipment Identifier)|Appareils iOS uniquement|
 |**Adresse MAC du réseau Wi-Fi**|Tous les appareils à l’exception d’Exchange ActiveSync|
@@ -114,6 +114,6 @@ Pour afficher l’inventaire recueilli par les ordinateurs Windows, exécutez le
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

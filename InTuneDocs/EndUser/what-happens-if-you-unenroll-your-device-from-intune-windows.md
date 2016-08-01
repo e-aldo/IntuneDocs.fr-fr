@@ -1,26 +1,27 @@
 ---
-title: "Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ? | Microsoft Intune"
+title: "Que se passe-t-il si vous désinscrivez votre appareil Windows d’Intune ? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 33bc0e494d1297421d253a9246175a18924c1c52
 
 
 ---
 
 
-# Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?
+# Que se passe-t-il si vous désinscrivez votre appareil Windows d’Intune ?
 
 Pour plus d’informations sur ce processus, utilisez le lien répertorié dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous utilisez.
 
@@ -93,6 +94,7 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 
