@@ -1,10 +1,10 @@
 ---
 title: Configurer les profils de certificat | Microsoft Intune
-description: 
+description: "Découvrez comment créer un profil de certificat Intune."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
-ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ Vous devez créer un **profil de certificat approuvé** pour pouvoir créer un p
 
     Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Fournissez les informations suivantes pour configurer les paramètres de profil de certificat approuvé pour Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. Dans le paramètre **Fichier de certificat**, importez le certificat d’autorité de certification racine approuvée (**.cer**) que vous avez exporté à partir de votre autorité de certification émettrice. Le paramètre **Banque d’informations de destination** s’applique uniquement aux appareils exécutant Windows 8.1 et versions ultérieures, et seulement si l’appareil a plusieurs magasins de certificats.
+3.  Fournissez les informations suivantes pour configurer les paramètres de profil de certificat approuvé pour Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. 
+
+    - Dans le paramètre **Fichier de certificat**, importez le certificat d’autorité de certification racine approuvée (**.cer**) que vous avez exporté à partir de votre autorité de certification émettrice. Le paramètre **Banque d’informations de destination** s’applique uniquement aux appareils exécutant Windows 8.1 et versions ultérieures, et seulement si l’appareil a plusieurs magasins de certificats.
+
+    
+    - Sous **Format du nom de l’objet**, sélectionnez **Personnalisé** pour fournir un format de nom d’objet personnalisé.  
+
+        Les deux variables actuellement prises en charge pour le format personnalisé sont **Nom courant (cn)** et **Message électronique (e)**. En combinant ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui montré dans cet exemple :  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        Dans l’exemple, l’administrateur a créé un format de nom d’objet qui, en plus des variables CN et E, utilise des chaînes pour l’unité d’organisation, l’organisation, l’emplacement, la région et le pays. Vous trouverez une liste des chaînes prises en charge dans la rubrique [CertStrToName, fonction](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
 
 
 4.  Quand vous avez terminé, cliquez sur **Enregistrer la stratégie**.
@@ -83,6 +94,15 @@ Après avoir créé un profil de certificat d'autorité de certification approuv
     Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Suivez les instructions de la page de configuration de profil pour configurer les paramètres de profil de certificat SCEP.
+    > [!NOTE]
+    > 
+    > Sous **Format du nom de l’objet**, sélectionnez **Personnalisé** pour fournir un format de nom d’objet personnalisé.
+    > 
+    >  Les deux variables actuellement prises en charge pour le format personnalisé sont Nom courant (cn) et Message électronique (e). En combinant ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui montré dans cet exemple :
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    Dans l’exemple, l’administrateur a créé un format de nom d’objet qui, en plus des variables *CN* et *E*, utilise des chaînes pour l’unité d’organisation, l’organisation, l’emplacement, la région et le pays. Vous trouverez une liste des chaînes prises en charge dans la rubrique [CertStrToName, fonction](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).
 
 4.  Quand vous avez terminé, cliquez sur **Enregistrer la stratégie**.
 
@@ -145,6 +165,6 @@ Vous pouvez maintenant utiliser des certificats pour aider à sécuriser les pro
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

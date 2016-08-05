@@ -1,10 +1,10 @@
 ---
 title: "Wi-Fi à l’aide d’une PSK (clé prépartagée) | Microsoft Intune"
-description: 
+description: "Utilisez une configuration personnalisée pour créer un profil Wi-Fi avec une clé prépartagée."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
-ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
+ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 
 
 
@@ -40,12 +40,15 @@ Remarque :
 
    c.   **Type de données**: définissez sur « String(XML) »
 
-   d.   **OMA-URI** : ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI** : 
+        
+- **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+- **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
 Remarque : veillez à inclure le point au début.
 
 Le SSID est l’identificateur SSID pour lequel vous créez la stratégie. Par exemple,
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e.    Champ de valeur : il s’agit de l’endroit dans lequel vous collez le code XML. Voici un exemple. Chaque valeur doit être adaptée à vos paramètres réseau. Consultez la section Commentaires du code pour certains pointeurs.
 
@@ -197,6 +200,6 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

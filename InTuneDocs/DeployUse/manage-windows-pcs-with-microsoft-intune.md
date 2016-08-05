@@ -1,33 +1,35 @@
 ---
-title: "Gérer des PC Windows avec Intune | Microsoft Intune"
-description: 
+title: "Gérer des PC Windows avec le client Intune | Microsoft Intune"
+description: "Gérer des PC Windows en installant le logiciel du client Intune."
 keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0335b80afa8e330263baad054f0e902f019f75bb
-ms.openlocfilehash: 92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
 
 
 ---
 
-# Gérer des PC Windows avec Microsoft Intune
-Outre l’inscription des appareils mobiles, vous pouvez utiliser Intune pour gérer des PC Windows exécutant des systèmes d’exploitation pris en charge à l’aide du logiciel client Intune pour PC Windows. La configuration matérielle et logicielle requise pour exécuter le client d’ordinateur est minimale : tout système capable d’exécuter Windows 7 ou ultérieur est pris en charge.  Le logiciel client peut également être facilement installé sur des ordinateurs joints ou non à un domaine (quel que soit le domaine).
+# Gestion des ordinateurs Windows avec le logiciel client Intune PC
+Au lieu d’[inscrire des ordinateurs Windows en tant qu’appareils mobiles](set-up-windows-device-management-with-microsoft-intune.md), vous pouvez gérer des ordinateurs Windows en installant le logiciel client Intune.
 
 Intune gère les PC Windows avec des stratégies semblables aux objets de stratégie de groupe (GPO) des services de domaine Active Directory de Windows Server. Si vous gérez des ordinateurs joints à un domaine Active Directory avec Intune, vous devez [vérifier que les stratégies Intune ne sont pas en conflit avec les objets de stratégie de groupe](resolve-gpo-and-microsoft-intune-policy-conflicts.md) en place dans votre organisation.
 
-> [!NOTE]
-> Microsoft Intune, en tant que service autonome, propose ces fonctionnalités pour la gestion des ordinateurs. Les appareils qui exécutent Windows 8.1 peuvent être gérés à l’aide du client Intune ou inscrits en tant qu’appareils mobiles. Les informations ci-dessous s’appliquent aux ordinateurs qui exécutent le client Intune.
+Bien que le client Intune prenne en charge des [stratégies qui aident à protéger vos ordinateurs](policies-to-protect-windows-pcs-in-microsoft-intune.md) en gérant des mises à jour logicielles, le Pare-feu Windows et Endpoint Protection, les ordinateurs gérés avec le client Intune ne peuvent pas être ciblés par d’autres stratégies Intune.
 
-## Configuration requise pour la gestion des PC Intune
+> [!NOTE]
+> Les appareils qui exécutent Windows 8.1 peuvent être gérés à l’aide du client Intune ou inscrits en tant qu’appareils mobiles. Les informations ci-dessous s’appliquent aux ordinateurs qui exécutent le client Intune. Les opérations simultanées d’installation du client Intune PC et d’inscription de l’appareil Windows pour la gestion d’appareils mobiles ne sont pas prises en charge.
+
+## Configuration requise pour la gestion du client Intune PC
 
 **Matériel** : voici la configuration matérielle minimale requise pour l’installation du client Intune :
 
@@ -41,20 +43,19 @@ Intune gère les PC Windows avec des stratégies semblables aux objets de strat�
 
 |Condition requise|Plus d'informations|
 |---------------|--------------------|
-|Autorisations administratives|Le compte qui installe le logiciel client doit disposer des autorisations d’administrateur local sur ce PC.|
+|Système d'exploitation | Appareil Windows exécutant Windows 7 ou une version ultérieure. |
+|Autorisations administratives|Le compte qui installe le logiciel client doit disposer des autorisations d’administrateur local sur cet ordinateur.|
 |Windows Installer 3.1|Le PC doit disposer de Windows Installer 3.1 au minimum.<br /><br />Pour afficher la version de Windows Installer sur un PC :<br /><br />-   Sur le PC, cliquez avec le bouton droit sur **%windir%\System32\msiexec.exe**, puis cliquez sur **Propriétés**.<br /><br />Vous pouvez télécharger la dernière version de Windows Installer à partir de [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) sur le site web Microsoft Developer Network.|
 |Supprimer les logiciels clients incompatibles|Avant d’installer le logiciel client Intune, vous devez désinstaller le gestionnaire de configuration ou le client du serveur de gestion du système du PC, s’ils sont présents.|
 
 ## Installer le client d’ordinateur Intune
-La première étape de la gestion des PC Windows avec Intune consiste à installer le client. Le logiciel client peut être installé quand un PC est inscrit dans la gestion par le service Intune de l’une des manières suivantes :
+Le logiciel client Intune peut être installé en suivant l’une de ces méthodes :
 
--   Vous pouvez [déployer manuellement le logiciel client Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Dans ce type de déploiement, un administrateur télécharge le logiciel client Intune et l’installe manuellement sur chaque PC.
+-   [Déployez manuellement le logiciel client Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). Dans ce type de déploiement, un administrateur télécharge le logiciel client Intune et l’installe manuellement sur chaque PC.
 
-    Pour télécharger le logiciel client Intune, ouvrez la console d’administration Intune et, dans la zone Téléchargement du logiciel client, téléchargez le package logiciel client. Une fois le logiciel client installé, Intune installe automatiquement les logiciels supplémentaires nécessaires pour gérer l’ordinateur.
+  Pour télécharger le logiciel client Intune, ouvrez la [console d’administration Intune](https://manage.microsoft.com), puis sélectionnez **Administrateur** > **Téléchargement du logiciel client** et cliquez sur **Télécharger le logiciel client**.
 
 -   Vous pouvez utiliser les mêmes fichiers que vous avez téléchargés pour l’installation manuelle du client Intune pour [déployer le client sur des ordinateurs joints à un domaine à l’aide d’objets de stratégie de groupe Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
-
--   [Les utilisateurs finaux peuvent inscrire eux-mêmes chacun de leurs ordinateurs](install-the-windows-pc-client-with-microsoft-intune.md#how-users-can-self-enroll-their-computers) par le biais du portail d’entreprise Intune. Chaque ordinateur inscrit est automatiquement lié au compte d’utilisateur qui a été utilisé pour installer le logiciel client Intune.
 
 -   Enfin, vous pouvez également déployer le logiciel client Intune sur des ordinateurs dans le cadre d’un [déploiement de système d’exploitation](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
 
@@ -85,6 +86,6 @@ L’agent client Intune s’exécute généralement en mode silencieux en arriè
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

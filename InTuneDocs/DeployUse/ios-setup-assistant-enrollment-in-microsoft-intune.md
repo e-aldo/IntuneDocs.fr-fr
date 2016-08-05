@@ -1,10 +1,10 @@
 ---
-title: Assistant de configuration pour les appareils iOS avec Microsoft Intune | Microsoft Intune
-description: 
+title: "Inscrire des appareils iOS avec l’Assistant Configuration | Microsoft Intune"
+description: "Inscrivez des appareils iOS d’entreprise en utilisant l’outil Apple Configurator pour réinitialiser vos appareils et les préparer à l’exécution de l’Assistant Configuration."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
-ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
 
 
 ---
@@ -27,6 +27,7 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’a
 À l’aide de l’outil Apple Configurator, vous pouvez rétablir les paramètres d’usine des appareils iOS et les préparer pour que le nouvel utilisateur des appareils puisse les configurer.  Cette méthode implique de connecter l’appareil iOS à un ordinateur Mac via une connexion USB pour configurer l’inscription d’entreprise. Elle suppose que vous utilisez Apple Configurator 2.0. La plupart des scénarios requièrent que la stratégie appliquée à l’appareil iOS comprenne *Affinité utilisateur* pour activer l’application Portail d’entreprise Intune.
 
 **Conditions préalables**
+* [Inscription iOS activée](set-up-ios-and-mac-management-with-microsoft-intune.md) en installant un certificat APNS
 * Accès physique aux appareils iOS : les appareils doivent être déconfigurés (réinitialisation aux paramètres d’usine) sans protection par mot de passe
 * Numéros de série des appareils : [Comment obtenir un numéro de série iOS](https://support.apple.com/en-us/HT204308)
 * Câbles de connexion USB
@@ -37,10 +38,7 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’a
 
 2.  **Créer un profil pour des appareils** Un profil d'inscription d'appareil définit les paramètres appliqués à un groupe d'appareils. Si ce n'est déjà fait, créez un profil d'inscription d'appareil pour les appareils iOS inscrits à l'aide d'Apple Configurator.
 
-    ###### Pour créer un profil
-
-    1.  Dans la [console d'administration Microsoft Intune](http://manage.microsoft.com), accédez à **Stratégie** &gt; **Appareils d'entreprise**, puis choisissez **Ajouter...**.
-
+    1.  Dans la [console d'administration Microsoft Intune](http://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d'appareil professionnel**, puis choisissez **Ajouter**.
     ![Création d’un profil d’inscription d’appareils](../media/pol-sa-corp-enroll.png)
 
     2.  Entrez les détails des profils d'appareils :
@@ -51,19 +49,13 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’a
 
         -   **Détails de l’inscription** : indique comment les appareils sont inscrits.
 
-            -   **Demander l’affinité utilisateur** : l’appareil iOS peut être affilié à un utilisateur durant la configuration initiale. Il peut ensuite être autorisé à accéder aux données de l’entreprise et à envoyer des messages électroniques au nom de cet utilisateur. Pour la plupart des scénarios de l’Assistant Configuration, utilisez **Demander l’affinité utilisateur**.
-            Ce mode prend en charge plusieurs scénarios :
+            -   **Demander l’affinité utilisateur** – L’appareil doit être affilié à un utilisateur lors de l’installation initiale. Il peut ensuite être autorisé à accéder aux données et aux e-mails de l’entreprise pour le compte de cet utilisateur. L’**affinité utilisateur** doit être configurée pour les appareils gérés par DEP qui appartiennent à des utilisateurs et doivent utiliser le portail d’entreprise (par exemple, pour installer des applications).
 
-                -   **Appareil personnel d’entreprise** : « Choisir votre propre appareil » (CYOD). Similaire aux appareils personnels ou qui nous appartiennent, mais l’administrateur possède certains privilèges, notamment l’autorisation de réinitialiser, d’administrer l’appareil et d’en annuler l’inscription. L'utilisateur de l'appareil peut installer des applications et a d'autres autorisations pour utiliser son appareil, s'il n'est pas bloqué par la stratégie de gestion.
-
-                -   **Compte de gestionnaire d'inscription d'appareil** : l'appareil est inscrit à l'aide d'un compte d'administrateur Intune spécial. Il peut être géré comme un compte privé, mais seul l'utilisateur qui connaît les informations d'identification du gestionnaire d'inscription peut installer des applications et réinitialiser, administrer l'appareil ou en annuler l'inscription. Pour plus d’informations sur l’inscription d’un appareil partagé par de nombreux utilisateurs par le biais d’un compte commun, consultez [Inscrire des appareils d’entreprise avec le Gestionnaire d’inscription d’appareil dans Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
-
-            -   **Pas d’affinité utilisateur** : l’appareil n’est affilié à aucun utilisateur. Utilisez cette affiliation pour les appareils qui effectuent des tâches sans accéder aux données de l'utilisateur local. Les applications nécessitant une affiliation utilisateur sont désactivées ou ne fonctionnent pas.
+            -   **Aucune affinité utilisateur** – L’appareil n’est pas affilié à un utilisateur. Utilisez cette affiliation pour les appareils qui effectuent des tâches sans accéder aux données de l'utilisateur local. Les applications qui nécessitent l’affiliation d’un utilisateur, y compris l’application Portail d’entreprise utilisée pour l’installation des applications métier, ne fonctionneront pas.
 
         -   **Affectation préalable du groupe d’appareils** : tous les appareils déployés dans ce profil appartiennent initialement à ce groupe. Vous pouvez réaffecter les appareils après l'inscription.
 
-        >[!Important]
-        >Les affectations de groupe passeront d’Intune à Azure Active Directory. [En savoir plus](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Device Enrollment Program (DEP)** : vous ne pouvez pas utiliser Apple Device Enrollment Program (DEP) avec l’inscription par le biais de l’Assistant de configuration. Vérifiez que ce commutateur est **désactivé**.
 
@@ -123,26 +115,24 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’a
 
     3. Saisissez le **Nom** et **l’URL d’inscription** pour le serveur de MDM de l’étape 6 ci-dessus. Pour l’URL d’inscription, saisissez l’URL du profil d’inscription exporté depuis Intune. Choisissez **Suivant**.  
 
-       Si vous recevez un avertissement à propos des exigences de profil de confiance pour Apple TV, vous pouvez désactiver l’option **Profil de confiance** sans risque en cliquant sur le « X » gris. Vous pouvez également ignorer tout avertissement de certificat d’ancrage. Pour continuer, cliquez sur **Suivant** jusqu’à ce que l’Assistant soit terminé.
+       Si vous recevez un avertissement indiquant « L’URL du serveur n’est pas vérifiée », vous pouvez l’ignorer sans risque. Pour continuer, cliquez sur **Suivant** jusqu’à ce que l’Assistant soit terminé.
 
-    4.  Dans le volet **Serveurs**, choisissez « Modifier » à côté du profil du nouveau serveur. Assurez-vous que l’URL d’inscription correspond exactement à l’URL exportée depuis Intune. Saisissez à nouveau l’URL d’origine si elle est différente, puis **Enregistrez** le profil d’inscription exporté depuis Intune.
-
-    5.  Connectez les appareils mobiles iOS à l'ordinateur Apple à l'aide d'un adaptateur USB.
+    4.  Connectez les appareils mobiles iOS à l'ordinateur Apple à l'aide d'un adaptateur USB.
 
         > [!WARNING]
         > Les paramètres d'usine des appareils sont rétablis pendant le processus d'inscription. En guise de bonne pratique, vous devez réinitialiser l’appareil et le mettre sous tension. En guise de bonne pratique, les appareils doivent afficher l’écran **Hello** quand vous lancez l’Assistant de configuration.
 
-    6.  Choisissez **Préparer**. Dans le volet **Prepare iOS Device** (Préparer l’appareil iOS), sélectionnez **Manual** (Manuel), puis **Next** (Suivant).
+    5.  Choisissez **Préparer**. Dans le volet **Prepare iOS Device** (Préparer l’appareil iOS), sélectionnez **Manual** (Manuel), puis **Next** (Suivant).
 
-    7. Dans le volet **Enroll in MDM Server** (Inscription dans un serveur MDM), sélectionnez le nom du serveur que vous avez créé, puis cliquez sur **Next** (Suivant).
+    6. Dans le volet **Enroll in MDM Server** (Inscription dans un serveur MDM), sélectionnez le nom du serveur que vous avez créé, puis cliquez sur **Next** (Suivant).
 
-    8. Dans le volet **Supervise Devices** (Surveiller les appareils), sélectionnez le niveau de surveillance, puis cliquez sur **Next** (Suivant).
+    7. Dans le volet **Supervise Devices** (Surveiller les appareils), sélectionnez le niveau de surveillance, puis cliquez sur **Next** (Suivant).
 
-    9. Dans le volet **Create an Organization** (Créer une organisation), choisissez l’organisation (**Organization**) ou créez-en une, puis cliquez sur **Next** (Suivant).
+    8. Dans le volet **Create an Organization** (Créer une organisation), choisissez l’organisation (**Organization**) ou créez-en une, puis cliquez sur **Next** (Suivant).
 
-    10. Dans le volet **Configure iOS Setup Assistant** (Configurer l’Assistant d’installation iOS), choisissez les étapes présentées à l’utilisateur, puis choisissez **Prepare** (Préparer). Si vous y êtes invité, authentifiez-vous pour mettre à jour les paramètres d’approbation.  
+    9. Dans le volet **Configure iOS Setup Assistant** (Configurer l’Assistant d’installation iOS), choisissez les étapes présentées à l’utilisateur, puis choisissez **Prepare** (Préparer). Si vous y êtes invité, authentifiez-vous pour mettre à jour les paramètres d’approbation.  
 
-    11. Une fois la préparation de l’appareil iOS terminée, vous pouvez déconnecter le câble USB.  
+    10. Une fois la préparation de l’appareil iOS terminée, vous pouvez déconnecter le câble USB.  
 
 8.  **Distribuer des appareils** Les appareils sont désormais prêts pour l'inscription d'entreprise. Éteignez les appareils et distribuez-les aux utilisateurs. Quand l’appareil est allumé, l’Assistant Installation démarre.
 
@@ -153,6 +143,6 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’a
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

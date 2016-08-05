@@ -1,20 +1,20 @@
 ---
 title: "Utiliser la réinitialisation à distance pour protéger les données | Microsoft Intune"
-description: 
+description: "Intune fournit des fonctionnalités de réinitialisation sélective et complète pour supprimer des données d’entreprise sensibles et supprimer l’accès à de nombreuses ressources d’entreprise."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
-ms.reviewer: jeffgilb
+ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa4dc77c66a34d9d50b83d072ed5e03674b4d293
-ms.openlocfilehash: bfb82684d8c4347297c3ed8659cc44e70ad4706c
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: c61fd1070f84f359ac6abe9ff48e51d2787c4eb4
 
 
 ---
@@ -29,6 +29,9 @@ Comme avec les appareils, à un moment donné, vous voulez ou devez [mettre hors
 
 
 **Une réinitialisation complète** rétablit les paramètres d’usine d’un appareil et supprime l’ensemble des données et des paramètres de l’entreprise et de l’utilisateur. L’appareil est supprimé d’Intune. La réinitialisation complète est utile pour réinitialiser un appareil avant de le transmettre à un nouvel utilisateur ou dans les cas où l’appareil a été perdu ou volé.  **Faites attention lors de la sélection de la réinitialisation complète. Les données sur l’appareil ne peuvent pas être récupérées**.
+
+> [!Warning]
+> Les appareils Windows 10 RTM (c'est-à-dire antérieurs à la version 1511 de Windows 10) ayant moins de 4 Go de RAM risquent de devenir inaccessibles en cas de réinitialisation. Pour accéder à un appareil Windows 10 qui ne répond plus, vous pouvez le démarrer à partir d’un lecteur USB ou utiliser une solution similaire.
 
 ## réinitialisation sélective
 
@@ -55,7 +58,7 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Applications Google Play non gérées|Les applications et les données sont toujours installées.|Les applications et les données sont toujours installées.|
 |Applications métier non gérées|Les applications et les données sont toujours installées.|Les applications sont désinstallées et les données locales propres aux applications sont supprimées en conséquence. Aucune donnée extérieure à l’application (carte SD, etc.) n’est supprimée.|
 |Applications Google Play gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (carte SD, etc.) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM en dehors de l’application (carte SD, etc.) restent chiffrées mais ne sont pas supprimées.|
-|Applications métier gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (carte SD, etc.) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM en dehors de l’application (carte SD, etc.) restent chiffrées mais ne sont pas supprimées.|
+|Applications métier gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (carte SD, etc.) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (carte SD, etc.) restent chiffrées et inutilisables, mais ne sont pas supprimées.|
 |Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|
 |Paramètres de profil Wi-Fi et VPN|Supprimé|Supprimé|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|
@@ -139,6 +142,6 @@ Pour obtenir un rapport sur les appareils qui ont été mis hors service, réini
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

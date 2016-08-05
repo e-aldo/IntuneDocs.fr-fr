@@ -1,20 +1,20 @@
 ---
-title: Configurer la gestion de Windows 10 Mobile et Windows Phone avec Microsoft Intune | Microsoft Intune
-description: 
+title: "Configurer la gestion de Windows 10 Mobile et Windows Phone | Microsoft Intune"
+description: "Activez la gestion des appareils mobiles pour les appareils Windows 10 Mobile ou Windows Phone avec Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
 
 
 ---
@@ -29,7 +29,7 @@ Dans la plupart des cas, les utilisateurs peuvent installer l’application Port
 
 2.  **Définir un alias DNS pour l'adresse du serveur d'inscription** (facultatif)
 
-    La création d’un alias DNS (type d’enregistrement CNAME) simplifie l’inscription des appareils pour les utilisateurs. Si vous ne créez pas un alias DNS, les utilisateurs doivent
+    La création d’un alias DNS (type d’enregistrement CNAME) simplifie l’inscription des appareils pour les utilisateurs. Même si l’entrée DNS CNAME est facultative pour l’inscription des appareils Windows, nous vous recommandons de créer un ou plusieurs enregistrements si nécessaire, pour faciliter le processus d’inscription de l’appareil Windows. Si aucun enregistrement CNAME n’est trouvé, l’utilisateur est invité à saisir manuellement le nom du serveur de gestion des appareils mobiles.
 
   1.  Créez des enregistrements de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME dans DNS qui redirige EnterpriseEnrollment.contoso.com vers manage.microsoft.com. S’il existe plusieurs domaines vérifiés, créez un enregistrement CNAME pour chaque domaine. Ces enregistrements doivent contenir les informations suivantes :
 
@@ -56,6 +56,6 @@ Aucun travail supplémentaire n’est requis sauf si vous déployez le Portail d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

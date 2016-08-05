@@ -1,10 +1,10 @@
 ---
 title: "Portail Azure pour les stratégies de gestion des applications mobiles | Microsoft Intune"
-description: 
+description: "Créez des stratégies de gestion des applications mobiles à l’aide du portail Azure. Les stratégies que vous créez ici sont applicables aux appareils, qu’ils soient inscrits à Intune ou non."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 22aea1a9a2ff55ae7a8a115fae31b1358305a4a5
 
 
 ---
@@ -28,8 +28,10 @@ Il prend en charge la création de stratégies de gestion des applications mobil
 - Les applications qui s’exécutent sur des appareils qui ne sont inscrits dans **aucune** solution de gestion des appareils mobiles.
 - Les applications qui s’exécutent sur des appareils qui sont **inscrits dans une solution de gestion des appareils mobiles tierce**.
 
-Si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils, vous pouvez créer une stratégie de gestion des applications mobiles qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
+
+> Si vous utilisez actuellement la console d’administration Intune pour gérer vos appareils, vous pouvez créer une stratégie de gestion des applications mobiles qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
 > La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Le portail Azure est la nouvelle console d’administration pour créer des stratégies de gestion des applications mobiles. Si vous créez ces stratégies à la fois dans la console d’administration Intune et le portail Azure, la stratégie dans le portail Azure est appliquée aux applications et déployée sur les utilisateurs.
 
 ## Se connecter au portail Azure et personnaliser la page de démarrage
@@ -38,13 +40,13 @@ Si vous utilisez actuellement la **console d’administration Intune** pour gér
 
     ![Capture d’écran de la page de connexion du portail Azure](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Une fois que vous êtes connecté, le **Tableau de bord** apparaît. La page **Tableau de bord** comporte un ensemble de vignettes par défaut que vous pouvez supprimer et compléter par de nouvelles vignettes à des fins de personnalisation.
+2.  Une fois que vous êtes connecté, le **Tableau de bord** apparaît. La page **Tableau de bord** peut être personnalisée.
 
     ![Capture d’écran du tableau de bord du portail Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  Dans le menu **Parcourir**, recherchez **Intune**.![Capture d’écran du menu Parcourir avec Intune mis en surbrillance](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Cliquez sur **Intune > Gestion des applications mobiles Intune > Paramètres**.
+4.  Choisissez **Intune > Gestion des applications mobiles Intune > Paramètres**.
 
     ![Capture d’écran du panneau Gestion des applications mobiles Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -59,6 +61,6 @@ Si vous utilisez actuellement la **console d’administration Intune** pour gér
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Paramètres de stratégie de conformité pour les appareils Android | Microsoft Intune"
-description: 
+description: "Cette rubrique décrit les paramètres de stratégie de conformité d’appareil pour les appareils Android."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
-ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+translationtype: Human Translation
+ms.sourcegitcommit: 465a5f305ac191fdf761997df565423f4349ff91
+ms.openlocfilehash: ed358c07594507d3a9144e9c686b54dcbd30aede
 
 
 ---
@@ -55,9 +56,17 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 ### Chiffrement
 - **Exiger le chiffrement sur l’appareil mobile :** affectez la valeur **Oui** pour exiger que les appareils soient chiffrés pour pouvoir se connecter aux ressources. Les appareils sont chiffrés quand vous configurez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.
 
-## Paramètres d’intégrité des appareils
+## Paramètres d’intégrité et de sécurité de l’appareil
 
-- **L’appareil ne doit pas être jailbroken ou rooté :** si vous activez ce paramètre, les appareils jailbroken ne sont pas détectés comme conformes.
+- **L’appareil ne doit pas être jailbreaké ou rooté :** si vous activez ce paramètre, les appareils jailbreakés ne sont pas détectés comme conformes.
+- **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues (Android 4.0+) :** pour bloquer les appareils qui ont **Sécurité > Sources inconnues** activé, activez ce paramètre et définissez-le sur **Oui**.  
+>[!IMPORTANT]
+>Pour les applications en chargement indépendant (sideloading), le paramètre **Sources inconnues** doit être activé.  Vous ne devez appliquer cette stratégie de conformité que si vous n’effectuez aucun chargement indépendant d’applications Android sur les appareils.
+
+- **Exiger que le débogage USB soit désactivé (Android 4.2 ou ultérieur)** : ce paramètre spécifie si la détection de l’option de débogage USB est activée sur l’appareil.
+- **Exiger que « Rechercher les menaces de sécurité sur l'appareil » soit activé sur les appareils (Android 4.2-4.4)** : ce paramètre spécifie si la fonctionnalité **Vérifier les applications** est activée sur l’appareil.
+- **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)** : utilisez ce paramètre pour spécifier le niveau de correctif Android minimal.  Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée au format suivant : AAAA-MM-JJ.
+
 
 ## Paramètres de propriétés d’appareils
 - **Système d’exploitation minimal requis :** quand un appareil ne satisfait pas la condition de version minimale du système d’exploitation, il est signalé comme non conforme.
@@ -67,6 +76,6 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Personnaliser les affichages de console pour les rôles d’administrateur | Microsoft Intune"
-description: 
+description: "Cette rubrique vous aidera à filtrer l’affichage de la console Intune pour autoriser vos administrateurs à afficher uniquement les éléments correspondant à leur rôle."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 52a77e50b3dde24ba270766d4472bdd6176cc415
+ms.sourcegitcommit: 217655d3c33ac88672f0739302f182cf6a6ae335
+ms.openlocfilehash: dc9bb2992d3e3ed8134cfa2146295e16edf4e459
 
 
 ---
 
 # Personnaliser les affichages de la console Intune en fonction des rôles d’administrateur
-Vous pouvez filtrer l’affichage de la console Microsoft Intune pour que vos administrateurs ne voient que les éléments correspondant à leur rôle. Par exemple, vous pouvez autoriser uniquement les opérateurs de la console d’administration à mettre à jour les définitions des programmes malveillants ou à réinitialiser le code secret sur les appareils. Pour cela, vous devez utiliser des **désignations** prédéfinies que vous attribuez à des utilisateurs spécifiques. Lorsque ces utilisateurs accèdent à la console d'administration, ils voient uniquement les éléments spécifiques à leur désignation.
+Vous pouvez filtrer l’affichage de la console d’administration Microsoft Intune pour autoriser vos administrateurs à ne voir que les éléments correspondant à leur rôle. Par exemple, vous pouvez autoriser uniquement les opérateurs de la console d’administration à mettre à jour les définitions des programmes malveillants ou à réinitialiser le code secret sur les appareils. Pour cela, vous devez utiliser des **désignations** prédéfinies que vous attribuez à des utilisateurs spécifiques. Quand ces utilisateurs accèdent à la console d’administration, ils ne peuvent voir que les éléments spécifiques à leur fonction.
 
-## Procédure de création d’affichage personnalisé
+## Pour créer un affichage personnalisé
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Administration** &gt; **Administrateurs de service**.
 
@@ -60,14 +60,14 @@ Vous pouvez filtrer l’affichage de la console Microsoft Intune pour que vos ad
 
         -   Actualiser l'inventaire
 
-        -   Verrouiller à distance un appareil
+        -   Verrouiller un appareil à distance
 
-        -   Réinitialiser le code secret
+        -   Réinitialiser un code secret
 
 Quand l’administrateur que vous avez configuré ouvre par la suite la console d’administration Intune, il reçoit le niveau d’accès que vous avez désigné.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

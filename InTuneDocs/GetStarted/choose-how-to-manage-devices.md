@@ -1,10 +1,10 @@
 ---
 title: "Choisir comment gérer des appareils | Microsoft Intune"
-description: 
+description: "Découvrez les différents modes d’inscription et de gestion des appareils."
 keywords: 
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: robstackmsft
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
+ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
 
 
 ---
@@ -69,7 +69,7 @@ Utilisez le client Intune quand vous souhaitez :
 ## Gestion d’Exchange ActiveSync
 Vous pouvez aussi gérer des appareils par le biais d’Exchange ActiveSync. Vous devez pour cela installer le connecteur local ou utiliser le connecteur de service à service intégré pour vous connecter à votre instance d’Exchange Server.
 
-Pour en savoir plus sur la configuration matérielle et logicielle requise pour installer le connecteur local, consultez [Configuration requise pour le connecteur local](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect).
+Pour en savoir plus sur la configuration matérielle et logicielle requise pour installer le connecteur local, consultez [Configuration requise pour le connecteur local](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
 
 Pour en savoir plus sur l’utilisation du connecteur local ou du connecteur de service à service avec Exchange, consultez [Gestion des appareils mobiles à l’aide d’Exchange ActiveSync et de Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
@@ -80,6 +80,6 @@ Vous connaissez désormais certaines des fonctionnalités qui sont disponibles q
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

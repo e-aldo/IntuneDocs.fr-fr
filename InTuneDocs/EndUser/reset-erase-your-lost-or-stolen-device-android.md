@@ -1,39 +1,54 @@
 ---
-title: "Réinitialiser (effacer) votre appareil perdu ou volé | Microsoft Intune"
+title: "Réinitialiser (effacer) votre appareil Android perdu ou volé | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/31/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 63799f8242db4618ea7b71af9608e30b98a8a27a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: d9f31b48fb1b44a0bdf07a6eee3fe5b19f7bf610
 
 
 ---
 
 
-# Réinitialiser (effacer) votre appareil perdu ou volé
+# Réinitialiser (effacer) votre appareil Android perdu ou volé
 
-En cas de perte ou de vol de votre téléphone Android, vous avez la possibilité de le réinitialiser sur le site web ou l’application Portail d’entreprise. Pour obtenir des instructions sur l’utilisation de l’application du portail d’entreprise, procédez comme suit ou regardez cette [vidéo](http://aka.ms/ly1x17). Vous pouvez également [réinitialiser votre appareil en utilisant le site web du portail d’entreprise](reset-your-device-cpwebsite.md).
+Si un téléphone inscrit dans Intune est perdu ou volé, vous pouvez rétablir ses paramètres d’usine par défaut à l’aide de l’application Portail d’entreprise à partir d’un autre appareil, ou en utilisant le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
 Pour savoir ce qui se passe quand vous réinitialisez votre appareil, consultez [Que se passe-t-il quand vous réinitialisez votre appareil à l’aide du portail d’entreprise](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] 
+> [!WARNING]
 > Le rétablissement des paramètres d’usine a pour effet de supprimer de l’appareil vos données personnelles et celles de votre compte professionnel ou scolaire.
 
-1.  Dans votre navigateur, ouvrez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) et connectez-vous à votre compte professionnel ou scolaire.
+## Pour réinitialiser votre appareil à partir de l’application Portail d’entreprise
+
+1.  À partir d’un autre appareil inscrit, ouvrez l’application Portail d’entreprise et connectez-vous avec votre compte professionnel ou scolaire.
 
 2.  Appuyez sur **Mes appareils** et sélectionnez le nom de l’appareil perdu ou volé.
 
 3.  Cliquez sur **Réinitialiser** &gt; **Réinitialiser**.
+
+## Pour réinitialiser votre appareil en utilisant le site web Portail d’entreprise
+
+Vous pouvez suivre cette procédure ou consulter cette vidéo :
+
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6e73o7f8gxE" frameborder="0" allowfullscreen></iframe>
+
+1.  Dans votre navigateur, ouvrez votre [site web Portail d’entreprise](http://portal.manage.microsoft.com) et connectez-vous à votre compte professionnel.
+
+2.  Sous **Mes appareils**, sélectionnez l’appareil perdu ou volé.
+
+3.  Appuyez sur **Réinitialiser** &gt; **Réinitialiser**.
 
 Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demandez à votre administrateur informatique de le faire à votre place. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
@@ -42,7 +57,6 @@ Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demande
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
