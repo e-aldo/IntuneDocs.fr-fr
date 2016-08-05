@@ -1,10 +1,10 @@
 ---
-title: "Spécifier des appareils d’entreprise avec des numéros IMEI (International Mobile Equipment Identity) | Microsoft Intune"
-description: 
+title: "Spécification de numéros IMEI | Microsoft Intune"
+description: "Microsoft Intune permet aux administrateurs d’importer des numéros IMEI pour les plates-formes d’appareils mobiles afin d’identifier les appareils d’entreprise mobiles"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 590b8bc5a307e238ba41d32f98f6878daebf1185
-ms.openlocfilehash: 7df281a3e35ac563f7b82e4b13407b413f8a7e4a
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 4e2092182dbda4523c19afeabc34aa0166962c40
 
 
 ---
 
 # Spécifier des appareils d’entreprise avec des numéros IMEI (International Mobile Equipment Identity)
-Microsoft Intune permet aux administrateurs d’importer les numéros (IMEI) pour les plateformes d’appareils mobiles disposant de ce type de numéro, pour faciliter l’identification des appareils mobiles d’entreprise. Une fois inscrit dans Intune, les appareils avec des numéros IMEI importés peuvent être affichés sous **Groupes** > **Présentation** > **Tous les appareils** > **Appareils d’entreprise préinscrits** > **Par IMEI (toutes les plateformes)**.
+Microsoft Intune permet aux administrateurs d’importer les numéros (IMEI) pour les plateformes d’appareils mobiles disposant de ce type de numéro, pour faciliter l’identification des appareils mobiles d’entreprise. Une fois inscrits auprès d’Intune, les appareils avec des numéros IMEI importés peuvent être affichés sous **Groupes** > **Présentation** > **Tous les appareils**. Les listes de**Groupe d’appareils** indiquent des appareils avec des numéros IMEI importés en tant que **Entreprise** dans la colonne **Propriété**.
 
 1. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), choisissez **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils d’entreprise préinscrits** &gt; **Par IMEI (toutes les plateformes)**, puis choisissez **Ajouter des appareils**. Vous pouvez ajouter des appareils de deux manières :
 
@@ -49,6 +49,6 @@ Quand l’appareil avec ce numéro IMEI s’inscrit, généralement quand un uti
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
