@@ -2,19 +2,19 @@
 title: "Résoudre les problèmes de stratégie | Microsoft Intune"
 description: "Résolvez les problèmes de configuration de stratégie."
 keywords: 
-author: Nbigman
+author: robstack
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
 
 
 ---
@@ -77,10 +77,6 @@ Pour les appareils Windows non soumis à la gestion des appareils mobiles, les e
 
 4.  Déplacez le curseur de notification sur le paramètre par défaut.
 
-## Erreur 0x87D1FDE8 pour appareil KNOX
-**Problème **: après avoir créé et déployé un profil de messagerie Exchange Active Sync pour Samsung KNOX pour différents appareils Android, ceux-ci font état de l’erreur **0x87D1FDE8** ou d’un **échec de la correction** dans l’onglet stratégie des propriétés de l’appareil &gt;.
-
-Examinez la configuration de votre profil EAS pour Samsung KNOX et la stratégie source. L’option de synchronisation Samsung Notes n’étant plus prise en charge, nous vous invitons à ne pas la sélectionner dans votre profil. Assurez-vous que les appareils ont eu suffisamment de temps pour traiter la stratégie (jusqu’à 24 heures).
 
 ## Alerte : L’enregistrement de règles d’accès dans Exchange a échoué
 **Problème**: vous recevez l’alerte **L’enregistrement de règles d’accès dans Exchange a échoué** dans la console d’administration.
@@ -113,6 +109,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 791d9e4d5817acfa8b11b1f5ed570df5e38718d7
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 0bfb636b68aa691234b51264d261888322dba11c
 
 
 ---
@@ -26,19 +26,19 @@ Votre administrateur informatique peut définir plusieurs exigences de mot de pa
 
 Si vous rencontrez des difficultés à définir un mot de passe qui répond à toutes les exigences de mot de passe, demandez de l’aide à votre administrateur informatique.
 
-## Pour définir votre mot de passe sur un appareil Windows Phone 8 ou 8.1 :
-
-1. Dans l’écran **d’accueil**, appuyez sur **Paramètres**, puis sélectionnez **écran de verrouillage**.
-2. Faites défiler l’affichage jusqu’à **Mot de passe** et faites glisser la barre **Mot de passe** sur **On**.
-3. Entrez votre nouveau mot de passe dans le champ **Nouveau mot de passe**, puis entrez-le de nouveau dans le champ **Confirmer le mot de passe**.
-4. Appuyez sur **Terminé**.
-
 ## Pour modifier votre mot de passe sur un appareil Windows Phone 8 ou 8.1 :
 
 1. Dans l’écran **d’accueil**, appuyez sur **Paramètres**, puis sélectionnez **écran de verrouillage**.
 2. Faites défiler l’affichage jusqu’à **Mot de passe** et appuyez sur **Modifier le mot de passe**.
 3. Entrez votre mot de passe actuel dans le champ **Mot de passe actuel**.
 4. Entrez votre nouveau mot de passe dans le champ **Nouveau mot de passe**, puis entrez de nouveau le nouveau mot de passe dans le champ **Confirmer le mot de passe**.
+4. Appuyez sur **Terminé**.
+
+## Pour définir votre mot de passe sur un appareil Windows Phone 8 ou 8.1 :
+
+1. Dans l’écran **d’accueil**, appuyez sur **Paramètres**, puis sélectionnez **écran de verrouillage**.
+2. Faites défiler l’affichage jusqu’à **Mot de passe** et faites glisser la barre **Mot de passe** sur **On**.
+3. Entrez votre nouveau mot de passe dans le champ **Nouveau mot de passe**, puis entrez-le de nouveau dans le champ **Confirmer le mot de passe**.
 4. Appuyez sur **Terminé**.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
@@ -48,6 +48,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

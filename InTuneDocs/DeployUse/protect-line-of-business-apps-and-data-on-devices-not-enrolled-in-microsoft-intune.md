@@ -3,7 +3,7 @@ title: "Protéger les applications métier sur les appareils non inscrits | Micr
 description: "Cette rubrique décrit la procédure à suivre pour préparer vos applications métier afin d’appliquer des stratégies de gestion des applications mobiles qui peuvent vous éviter de perdre de données."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 39908e4b08a7a7b0f058646a776a7c37de14b770
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
 
 
 ---
@@ -75,6 +75,6 @@ Vous pouvez supprimer une application métier de la liste des applications.  Cel
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 
