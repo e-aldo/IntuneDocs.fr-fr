@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
@@ -27,7 +27,7 @@ Intune gère les PC Windows avec des stratégies semblables aux objets de strat�
 Bien que le client Intune prenne en charge des [stratégies qui aident à protéger vos ordinateurs](policies-to-protect-windows-pcs-in-microsoft-intune.md) en gérant des mises à jour logicielles, le Pare-feu Windows et Endpoint Protection, les ordinateurs gérés avec le client Intune ne peuvent pas être ciblés par d’autres stratégies Intune.
 
 > [!NOTE]
-> Les appareils qui exécutent Windows 8.1 peuvent être gérés à l’aide du client Intune ou inscrits en tant qu’appareils mobiles. Les informations ci-dessous s’appliquent aux ordinateurs qui exécutent le client Intune. Les opérations simultanées d’installation du client Intune PC et d’inscription de l’appareil Windows pour la gestion d’appareils mobiles ne sont pas prises en charge.
+> Les appareils qui exécutent Windows 8.1 ou versions ultérieures peuvent être gérés à l’aide du client Intune ou inscrits en tant qu’appareils mobiles. Les informations ci-dessous s’appliquent aux ordinateurs qui exécutent le client Intune. Les opérations simultanées d’installation du client Intune PC et d’inscription de l’appareil Windows pour la gestion d’appareils mobiles ne sont pas prises en charge.
 
 ## Configuration requise pour la gestion du client Intune PC
 
@@ -86,6 +86,6 @@ L’agent client Intune s’exécute généralement en mode silencieux en arriè
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

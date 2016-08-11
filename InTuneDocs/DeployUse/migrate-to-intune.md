@@ -13,8 +13,8 @@ ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+ms.sourcegitcommit: 317b8cc277eb8dffc1cb29739f3f78cfa3241602
+ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 
 ---
@@ -44,7 +44,7 @@ Les appareils doivent être désinscrits de votre solution de gestion de mobilit
 
 ## Inscription des appareils à Intune
 
-Les utilisateurs planifiés pour la migration doivent immédiatement s’inscrire à Intune pour éviter la perte de l’accès aux ressources d’entreprise, aux e-mails et aux applications ou rétablir cet accès. Si vous avez configuré l’accès conditionnel et que les utilisateurs essaient de se connecter à la messagerie électronique avant de s’inscrire à Intune, leur accès est refusé et un e-mail d’inscription leur sera envoyé. Cet e-mail les guidera pour l’inscription de leur appareil à Intune.  Les utilisateurs peuvent également s’inscrire à Intune par le biais de l’application Portail d’entreprise Intune ou en mode natif par le biais des systèmes d’exploitation Windows 8.1 et Windows 10 Mobile. Reportez-vous à [Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md) pour obtenir des conseils supplémentaires sur les étapes d’inscription par plateforme.
+Les utilisateurs planifiés pour la migration doivent immédiatement s’inscrire à Intune pour éviter la perte de l’accès aux ressources d’entreprise, aux e-mails et aux applications ou rétablir cet accès. Si vous avez configuré l’accès conditionnel et que les utilisateurs essaient de se connecter à la messagerie électronique avant de s’inscrire auprès d’Intune, leur accès est refusé et un e-mail d’inscription leur est envoyé. Cet e-mail les guide lors du processus d’inscription de leur appareil auprès d’Intune.  Les utilisateurs peuvent également s’inscrire à Intune par le biais de l’application Portail d’entreprise Intune ou en mode natif par le biais des systèmes d’exploitation Windows 8.1 et Windows 10 Mobile. Reportez-vous à [Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md) pour obtenir des conseils supplémentaires sur les étapes d’inscription par plateforme.
 
 ## Configuration d’un accès conditionnel Intune (facultatif)
 
@@ -73,6 +73,6 @@ Pour obtenir une copie téléchargeable de ce guide dans son intégralité, acc�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

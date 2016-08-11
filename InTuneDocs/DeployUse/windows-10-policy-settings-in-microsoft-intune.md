@@ -4,7 +4,7 @@ description: "Utilisez les paramètres de stratégie de cette rubrique pour conf
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Expiration du mot de passe (jours)**|Spécifie la durée après laquelle le mot de passe d'un appareil doit être modifié.|
 |**Mémoriser l'historique des mots de passe**|Spécifie si vous souhaitez empêcher l'utilisateur final de créer des mots de passe utilisés précédemment.|
 |**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe précédemment utilisés conservés par l’appareil.|
-|**Autoriser un mot de passe image et un code confidentiel**|Vous permet d'utiliser des gestes simples sur une image ou un code confidentiel simple pour vous connecter.<br>(Windows 10 Desktop uniquement)|
 |**Exiger un mot de passe quand l'appareil quitte un état inactif**|Si cette option est activée, l'utilisateur doit entrer un mot de passe pour déverrouiller l’appareil pour qu’il quitte l’état inactif.<br>(Windows 10 Mobile uniquement)|
 
 ### Chiffrement
@@ -71,14 +70,6 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser le compte Microsoft**|Permet à l'utilisateur d'associer un compte Microsoft à l’appareil.|
 |**Autoriser l'ajout manuel de comptes non-Microsoft**|Permet à l'utilisateur d'ajouter des comptes de messagerie à l'appareil qui ne sont pas associés à un compte Microsoft.|
 |**Autoriser la synchronisation des paramètres pour les comptes Microsoft**|Permet aux paramètres d’appareil et d'application associés à un compte Microsoft de se synchroniser entre les appareils.|
-
-### Paramètres de messagerie
-
-|Nom du paramètre|Détails|
-|----------------|----------------------|---------------------|
-|**Rendre le compte Microsoft facultatif dans l'application Windows Mail**|Configurez cette option pour supprimer l'obligation d’utiliser un compte Microsoft dans Windows Mail.<br>Windows 10 Desktop uniquement|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser Bluetooth**|Permet d'utiliser les fonctionnalités Bluetooth de l'appareil.|
 |**Autoriser le mode découvrable Bluetooth**|Permet à cet appareil d’être découvert par d'autres appareils Bluetooth.|
 |**Autoriser la publicité Bluetooth**|Permet aux appareils de recevoir des publicités par Bluetooth.|
-|**Autoriser le mode connectable Bluetooth**|**Important :** Ce paramètre n’est plus pris en charge par Windows 10 et sera supprimé.|
 |**Autoriser la réinitialisation du téléphone**|Détermine si l'utilisateur peut rétablir les paramètres d'usine de son appareil.|
 |**Autoriser la connexion USB**|Contrôle si les appareils peuvent accéder à des périphériques de stockage externe via une connexion USB.|
 |**Autoriser le mode antivol**|Configurer si le mode antivol Windows est activé.|
@@ -177,6 +167,7 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 |Nom du paramètre|Détails|
 |----------------|---------------|
 |**Autoriser les mises à jour automatiques**|Activez ce paramètre pour autoriser les mises à jour automatiques. Ensuite, configurez l'un des paramètres suivants pour contrôler le comportement de mise à jour :<br /><br />**Notification de téléchargement**<br /><br />**Installer automatiquement au moment de la maintenance**<br /><br />**Installer et redémarrer automatiquement au moment de la maintenance**<br /><br />**Installer et redémarrer automatiquement au moment planifié** **Remarque :** Quand cette option est sélectionnée, vous pouvez aussi configurer les paramètres suivants : **Supprimer la notification à l’utilisateur final** et **Définir un jour d’installation pour les mises à jour planifiées**<br>(Windows 10 Desktop uniquement)|
+|**Autoriser les fonctionnalités préliminaires**|Permet à Microsoft de déployer des versions préliminaires de paramètres et de fonctionnalités sur des appareils dotés de Windows 10. Vous pouvez décider d’autoriser l’installation des paramètres uniquement, ou de toutes les versions préliminaires de paramètres et de fonctionnalités.|
 
 ## Paramètres de la stratégie personnalisée
 Utilisez la **stratégie de configuration personnalisée** Microsoft Intune pour Windows 10 et Windows 10 Mobile afin de déployer des paramètres OMA-URI (Open Mobile Alliance Uniform Resource Identifier) qui permettent de contrôler les fonctionnalités des appareils Windows 10 et Windows 10 Mobile. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.
@@ -332,6 +323,6 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

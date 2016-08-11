@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: ef0210d7ca2d44608c5baa8f48ef56a2b9b5ce3a
+ms.sourcegitcommit: b93c6fe16e598c6f4b0d87981de8655f3de9c8d3
+ms.openlocfilehash: 051f2994c59b2886a81a50d7c72f51627064bc6a
 
 
 ---
@@ -24,6 +24,15 @@ Découvrez les nouveautés de la version de Microsoft Intune de ce mois-ci. Vous
 
 Toutes ces fonctionnalités seront finalement prises en charge pour les déploiements de clients hybrides (Configuration Manager avec Intune). Pour plus d’informations sur les nouvelles fonctionnalités hybrides, consultez notre page [Nouveautés hybrides](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## Août 2016
+## Mises à jour du Portail d’entreprise
+
+### Android
+- **Application Portail d’entreprise Android**<br/>
+L’application Portail d’entreprise Intune pour Android assure la prise en charge dès le premier jour du système d’exploitation Android 7.0 pour les appareils mobiles, bientôt disponible.  
+
+- **Suppression par Google de la fonctionnalité de réinitialisation à distance du code secret sur les appareils Android 7.0**<br/>
+Sur les appareils Android 7.0, les administrateurs informatiques Intune et les utilisateurs finaux ne pourront pas réinitialiser à distance le code secret de leur appareil, car Google a supprimé cette fonction pour ces appareils. Cependant, pour les versions antérieures à 7.0, les administrateurs informatiques pourront continuer à réinitialiser à distance le code secret d’un utilisateur, et les utilisateurs finaux, à réinitialiser leur code secret à partir du site web du Portail d’entreprise.
 
 ## Juillet 2016
 ## Gestion d'applications
@@ -41,7 +50,9 @@ Le composant Xamarin SDK pour applications Intune vous permet d’activer les fo
 Intune augmente le nombre maximal d’inscriptions d’appareils configurables en repoussant leur limite de 5 appareils par utilisateur à 15.
 <!---TFS 1289896 --->
 
-
+### Intégration de TeamViewer sur les PC Windows exécutant le logiciel client Intune
+L’intégration de [TeamViewer](https://www.teamviewer.com) sur les PC Windows exécutant le client Intune vous permet d’établir des sessions d’assistance à distance avec des PC Windows, afin d’aider les départements de support technique des utilisateurs finaux. Cela inclut Windows 7, 8, 8.1 et Windows 10. Pour en savoir plus, voir [Tâches courantes de gestion des PC Windows avec le client Microsoft Intune](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+<!---TFS 1284856--->
 
 ## Mises à jour du Portail d’entreprise
 ### Site web Portail d’entreprise
@@ -93,7 +104,7 @@ Outre les modifications dans la gestion de groupe, les fonctionnalités suivante
 Nous publierons en août des informations supplémentaires sur la réduction de l’impact de ces obsolescences.
 
 ### Ajout de « Notifications » sur le portail d’entreprise pour Android
-En août, nous publierons une mise à jour du portail d’entreprise pour Android qui présente une nouvelle icône **Notifications** sur la page d’accueil. En appuyant sur cette icône, vous pourrez accéder à la page **Notifications** qui indiquera à votre utilisateur final tous les éléments qui nécessitent son attention particulière dans l’application de portail d’entreprise, tels que la non-conformité d’un appareil, ainsi que les mises à jour ou les activations d’inscriptions. Si vous utilisez également l’application de portail d’entreprise iOS, vous pouvez déjà utiliser ces notifications. Une fois la page **Notifications** en place, si votre appareil est déjà inscrit, vous ne verrez plus la page **Configuration de l’accès à l’entreprise** à chaque fois que vous accédez au portail d’entreprise pour Android ou que vous y revenez. Nous savons que beaucoup d’entre vous ont créé des conseils pour l’utilisateur final et que vous appréciez de recevoir des notifications avancées lorsque vos conseils/captures d’écrans doivent être mis à jour. Mettez à jour votre documentation pour refléter les modifications de l’expérience à venir. Vous trouverez des captures d’écran mises à jour ici : https://aka.ms/androidcpupdate.  
+En septembre, nous publierons une mise à jour du Portail d’entreprise pour Android, qui présentera la nouvelle icône **Notifications** de la page d’accueil. En appuyant sur cette icône, vous pourrez accéder à la page **Notifications** qui indiquera à votre utilisateur final tous les éléments qui nécessitent son attention particulière dans l’application de portail d’entreprise, tels que la non-conformité d’un appareil, ainsi que les mises à jour ou les activations d’inscriptions. Si vous utilisez également l’application de portail d’entreprise iOS, vous pouvez déjà utiliser ces notifications. Une fois la page **Notifications** en place, si votre appareil est déjà inscrit, vous ne verrez plus la page **Configuration de l’accès à l’entreprise** à chaque fois que vous accédez au portail d’entreprise pour Android ou que vous y revenez. Nous savons que beaucoup d’entre vous ont créé des conseils pour l’utilisateur final et que vous appréciez de recevoir des notifications avancées lorsque vos conseils/captures d’écrans doivent être mis à jour. Mettez à jour votre documentation pour refléter les modifications de l’expérience à venir. Vous trouverez des captures d’écran mises à jour ici : https://aka.ms/androidcpupdate.  
 
 
 
@@ -147,6 +158,6 @@ Les dernières améliorations apportées à Intune au cours des six derniers moi
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

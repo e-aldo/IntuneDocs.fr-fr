@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
+ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
+ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 
 ---
@@ -22,6 +22,11 @@ ms.openlocfilehash: d6d929b83b967cc4efdc84ecc3262c5c1f509351
 # Utiliser une stratégie personnalisée pour créer un profil VPN par application pour les appareils Android
 
 Vous pouvez créer un profil VPN par application pour les appareils Android gérés par Intune. Tout d’abord, vous allez créer un profil VPN qui utilise le type de connexion Pulse Secure, puis une stratégie de configuration personnalisée qui associe ce profil à des applications spécifiques. Une fois que vous avez déployé ces stratégies sur vos groupes d’utilisateurs ou d’appareils Android, l’ouverture d’une des applications spécifiées sur ces appareils ouvre une connexion VPN pour cette application.
+
+> [REMARQUE]
+> 
+> Seul le type de connexion sécurisé Pulse Secure est pris en charge pour ce profil.
+
 
 ### Étape 1 : Créer un profil VPN
 
@@ -76,6 +81,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Se préparer à configurer des stratégies de gestion des applications m
 description: "Cette rubrique décrit la configuration et le paramétrage des utilisateurs requis avant de pouvoir créer des stratégies de gestion des applications mobiles."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 39af738fe83ec6ea2e963d857cc233332063c80b
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: aeaa64124384a71126eeca7339416b80d395d07d
 
 
 ---
@@ -58,7 +58,7 @@ Pour afficher la liste complète des applications Microsoft prises en charge, ac
 -   Un abonnement Office 365, qui est requis pour les éléments suivants :
   - Appliquer des stratégies de gestion des applications mobiles aux applications prenant en charge plusieurs identités.
   - Créer des comptes professionnels SharePoint Online et Exchange Online. Les versions locales d’Exchange et de SharePoint ne sont pas prises en charge.
--   Configuration de Skype Entreprise Online pour l’authentification moderne. Pour plus d’informations, consultez [Activer l’authentification moderne](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md).
+-   Configuration de Skype Entreprise Online pour l’authentification moderne. Pour en savoir plus, voir [Activer l’authentification moderne](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) pour créer des utilisateurs. Azure AD authentifie les utilisateurs lorsqu’ils ouvrent l’application et entrent leurs informations d’identification professionnelles.
@@ -125,6 +125,6 @@ Les administrateurs généraux ont accès au [portail Azure](https://portal.azur
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 ---
@@ -34,9 +34,11 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 3.  Suivez les instructions à l'écran. Au cours du chiffrement, votre appareil peut redémarrer plusieurs fois.
 
 ### Réponse aux problèmes
-**Problème** : vous avez déjà chiffré votre appareil, et vous constatez l’un des problèmes suivants : - Le bouton de chiffrement est désactivé.
+**Problème** : vous avez déjà chiffré votre appareil, et vous constatez l’un des problèmes décrits ci-après.
+
+- Le bouton de chiffrement est désactivé.
 - Un message vous informe que vous devez chiffrer votre appareil.
-- Vous obtenez un message d’erreur quand vous tentez d’utiliser l’application Portail d’entreprise.
+- Vous obtenez un message d’erreur lorsque vous tentez d’utiliser l’application Portail d’entreprise.
 
 **Réponse** : assurez-vous d’avoir configuré un code confidentiel ou un mot de passe sur votre appareil.
 
@@ -47,6 +49,6 @@ Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

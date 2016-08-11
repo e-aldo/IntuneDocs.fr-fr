@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: cddc1a68b14520774555416dcd496a06a0f89385
 
 
 ---
@@ -36,6 +36,18 @@ Vous pouvez utiliser des profils de messagerie pour configurer le client de mess
 
 
 Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez configurer des paramètres de synchronisation tels que le volume de courrier électronique à synchroniser et, en fonction du type d’appareil, les types de contenu à synchroniser.
+>[!NOTE]
+>
+>Si l’utilisateur a installé un profil de messagerie avant de configurer un profil via Intune, le résultat du déploiement du profil de messagerie Intune dépend de la plate-forme d’appareil :
+
+>-**iOS**: Intune détecte un profil de messagerie existant en double, en fonction de l’adresse e-mail et du nom d’hôte. Le profil de messagerie en double que l’utilisateur a créé bloque le déploiement d’un profil créé par un administrateur Intune. Il s’agit d’un problème courant parce que les utilisateurs iOS créent généralement un profil de messagerie, puis s’inscrivent. Le portail d’entreprise informe les utilisateurs qu’ils ne sont pas conformes en raison de leur profil de messagerie configuré manuellement et les invite à supprimer ce profil. Les utilisateurs doivent supprimer leur profil de messagerie pour que le profil Intune puisse être déployé. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire avant d’installer le profil de messagerie et d’autoriser Intune à déployer le profil.
+
+>-**Windows** : Intune détecte un profil de messagerie existant en double, en fonction de l’adresse e-mail et du nom d’hôte. Intune remplace le profil de messagerie existant que l’utilisateur a créé.
+
+>-**Samsung KNOX** : Intune identifie un compte de messagerie en double en fonction de l’adresse e-mail et le remplace par le profil Intune. Si l’utilisateur configure ce compte, il est remplacé à nouveau par le profil Intune. Remarque : cela peut entraîner une certaine confusion pour l’utilisateur dont la configuration de compte est remplacée.
+
+>Étant donné que Samsung KNOX n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à déployer à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
+    
 
 ## Profils de messagerie sécurisés
 Vous pouvez sécuriser les profils de messagerie à l’aide de l’une des deux méthodes suivantes :
@@ -109,6 +121,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

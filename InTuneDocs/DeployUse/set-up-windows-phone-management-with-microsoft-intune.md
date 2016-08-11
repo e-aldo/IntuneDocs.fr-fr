@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # Configurer la gestion de Windows 10 Mobile et Windows Phone avec Microsoft Intune
+Vous pouvez cliquer [ici](../enduser/using-your-windows-device-with-intune.md) afin d’obtenir de l’aide sur la configuration de votre appareil Windows.
+
 Avant de pouvoir gérer des appareils mobiles Windows 10 ou Windows Phone avec Microsoft Intune, ceux-ci doivent être en mesure de communiquer avec Intune. Pour simplifier cela, vous pouvez créer un enregistrement DNS pour que les utilisateurs n’aient pas à entrer l’adresse du serveur. La procédure ci-dessous décrit comment simplifier l’inscription pour les utilisateurs.  
 
 Dans la plupart des cas, les utilisateurs peuvent installer l’application Portail d’entreprise à partir de Windows Store. Si vous gérez des appareils Windows Phone 8.0 ou si vous devez déployer le Portail d’entreprise sur des appareils Windows Phone, vous devez également télécharger et signer l’application Portail d’entreprise. Consultez [Configurer la gestion de Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
@@ -50,12 +52,16 @@ Dans la plupart des cas, les utilisateurs peuvent installer l’application Port
 
     3.  Tapez l’URL du domaine vérifié du site web de l’entreprise dans la zone **Spécifiez un nom de domaine vérifié**, puis cliquez sur **Auto-détection de test**.
 
+    4.  Vos utilisateurs doivent savoir comment inscrire leurs appareils et connaître les principes de la gestion d'appareils.
+        - [Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Conseils destinés aux utilisateurs relatifs aux appareils Windows](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 Aucun travail supplémentaire n’est requis sauf si vous déployez le Portail d’entreprise sur les appareils.  Les étapes 2 et 3 dans la console d’administration peuvent être ignorées en toute sécurité.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

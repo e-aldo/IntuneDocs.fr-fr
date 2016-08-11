@@ -1,36 +1,36 @@
 ---
-title: "Configurer le connecteur Exchange de Microsoft Intune pour Exchange hébergé | Microsoft Intune"
-description: 
+title: "Connecteur Exchange pour Exchange Online | Microsoft Intune"
+description: "Connectez Intune au service Office 365 Exchange pour prendre en charge la gestion des appareils mobiles via Exchange ActiveSync."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
 
 
 ---
 
 # Configurer le connecteur service à service d’Intune pour Exchange Online
 
-Utilisez ces informations pour connecter Microsoft Intune et le service Exchange Online hébergé par Office 365.
+Utilisez ces informations pour connecter Microsoft Intune et Exchange Online, ou un nouveau service Microsoft Exchange Online Dedicated. Pour déterminer si votre environnement Microsoft Exchange Online Dedicated présente la **nouvelle** configuration ou une configuration **héritée**, contactez votre responsable de comptes. Microsoft Intune prend en charge une seule connexion du connecteur Exchange par abonnement, quel que soit le type de connecteur.
 
 ## Conditions requises pour le connecteur service à service
-Le **connecteur service à service** prend en charge seulement Exchange hébergé et n’a pas de spécifications quant à l’infrastructure locale.
+Le **connecteur service à service** prend en charge Exchange Online ou un nouvel environnement Microsoft Exchange Online Dedicated uniquement et n’a pas de spécifications quant à l’infrastructure locale.
 
-|Condition requise|Plus d'informations|
+|Exigence|Plus d'informations|
 |---------------|--------------------|
-|Le serveur Exchange hébergé configuré et en cours d’exécution|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
+|Le serveur Exchange Online configuré et en cours d’exécution|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Autorité de gestion des appareils mobiles| [Définir Microsoft Intune comme autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
-|Version Microsoft Exchange|Vous devez avoir un abonnement Office 365 avec un client Exchange Server 2013 ou ultérieur. Si le client est Exchange Server 2013 ou ultérieur, le connecteur prend en charge Exchange Server 2010 dans ce même environnement.|
+|Version Microsoft Exchange|Exchange Online ou nouveau service Exchange Online Dedicated|
 |Synchronisation Active Directory|Avant de pouvoir utiliser le connecteur Intune, vous devez [configurer la synchronisation Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) pour que vos utilisateurs et groupes de sécurité locaux soient synchronisés avec votre instance d’Azure Active Directory.|
 
 ### Spécifications des applets de commande Exchange
@@ -54,16 +54,16 @@ Vous devez aussi créer un compte d’utilisateur Exchange Online utilisé par l
 3.  Dans la page **Configurer la connexion Exchange**, cliquez sur **Configurer le connecteur de service à service**.
 
 
-Le connecteur de service à service se configure et se synchronise automatiquement avec votre environnement Exchange hébergé.
+Le connecteur de service à service configure et se synchronise automatiquement avec votre environnement Exchange Online ou votre nouvel environnement Exchange Online Dedicated.
 
 ## Valider votre connexion Exchange
 
-Après avoir configuré avec succès le connecteur Exchange, dans la console d’administration Intune, choisissez l’espace de travail **ADMIN** et accédez à **Gestion des appareils mobiles** > **Microsoft Exchange** et vérifiez que les détails que vous avez fournis apparaissent sous **Informations de connexion à Exchange**.
+Après avoir configuré avec succès le connecteur Exchange, dans la [console d’administration Intune](http://manage.microsoft.com), sélectionnez **Admin**, accédez à **Gestion des appareils mobiles** > **Microsoft Exchange** et vérifiez que les détails que vous avez fournis apparaissent sous **Informations de connexion à Exchange**.
 
 Vous pouvez également vérifier la date et l'heure de la dernière tentative de synchronisation réussie.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

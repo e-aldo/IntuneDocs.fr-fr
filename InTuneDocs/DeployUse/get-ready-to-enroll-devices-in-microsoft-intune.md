@@ -3,7 +3,7 @@ title: "Se préparer à inscrire des appareils | Microsoft Intune"
 description: "Configurez les conditions préalables à la gestion d’appareils mobiles, puis préparez-vous à inscrire différents systèmes d’exploitation."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
-ms.openlocfilehash: 24b8434993d7661e12172ac0e5fe58d1e6621558
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
 
 
 ---
 
 # Se préparer à inscrire des appareils dans Microsoft Intune
-Pour permettre aux employés d’inscrire des appareils mobiles (notamment [Android](set-up-android-management-with-microsoft-intune.md), [iOS et Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), ainsi que des [PC Windows](set-up-windows-device-management-with-microsoft-intune.md)) dans Intune, vous devez activer l’inscription d’appareils. Pour autoriser l’inscription, vous devez définir une autorité de gestion des appareils mobiles, configurer le portail d’entreprise Intune, attribuer des licences et activer l’inscription pour la plateforme d’appareils.
+Pour permettre aux employés d’inscrire des appareils mobiles (notamment [Android](set-up-android-management-with-microsoft-intune.md), [iOS et Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), ainsi que des [PC Windows](set-up-windows-device-management-with-microsoft-intune.md)) auprès de Microsoft Intune ou pour gérer des appareils appartenant à l’entreprise, vous devez activer l’inscription d’appareils. Pour autoriser l’inscription, vous devez définir une autorité de gestion des appareils mobiles, configurer le portail d’entreprise Intune, attribuer des licences et activer l’inscription pour la plateforme d’appareils.
 
 ## Définir l'autorité de gestion des appareils mobiles
 L’autorité de gestion d’appareils mobiles définit le service de gestion habilité à gérer un ensemble d’appareils. Les options en matière d’autorité de gestion des appareils mobiles incluent Intune en version autonome et Configuration Manager avec Intune. Si vous définissez Configuration Manager en tant qu’autorité de gestion, aucun autre service ne peut être utilisé pour la gestion des appareils mobiles.
@@ -109,6 +109,6 @@ Vous pouvez également effectuer les opérations suivantes :
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

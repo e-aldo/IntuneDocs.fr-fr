@@ -1,10 +1,10 @@
 ---
 title: Inscription directe pour les appareils iOS | Microsoft Intune
-description: 
+description: "Utilisez l’outil Apple Configurator pour inscrire directement les appareils iOS d’entreprise avec une stratégie prédéfinie en vous connectant via USB à un ordinateur Mac."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,16 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+ms.sourcegitcommit: aabe68a3621a02b8f3142ab3f593190cc23053dd
+ms.openlocfilehash: 17836bc826bc89e3f041f7b369be09c1cce9ea4f
 
 
 ---
 
 # Inscrire directement des appareils iOS en utilisant Apple Configurator
-Intune prend en charge l’inscription d’appareils iOS d’entreprise avec l’outil [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) s’exécutant sur un ordinateur Mac. Ce processus ne réinitialise pas l’appareil aux paramètres d’usine et inscrit l’appareil avec une stratégie prédéfinie. Cette méthode est destinée aux appareils n’ayant **Aucune affinité utilisateur** et implique de connecter l’appareil iOS à un ordinateur Mac via une connexion USB pour configurer l’inscription d’entreprise. L’application Portail d’entreprise n’est pas prise en charge pour les appareils inscrits directement. Cette aide suppose que vous utilisez Apple Configurator 2.0 sur un ordinateur Mac.
+Intune prend en charge l’inscription d’appareils iOS d’entreprise avec l’outil [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) s’exécutant sur un ordinateur Mac. Ce processus ne réinitialise pas l’appareil aux paramètres d’usine et l’inscrit avec une stratégie prédéfinie. Cette méthode est destinée aux appareils n’ayant **Aucune affinité utilisateur** et implique de connecter l’appareil iOS à un ordinateur Mac via une connexion USB pour configurer l’inscription d’entreprise. Lors de l’inscription directe des appareils iOS, vous pouvez inscrire un appareil sans obtenir son numéro de série. Vous pouvez également nommer l’appareil à des fins d’identification avant qu’Intune capture son nom lors de l’inscription. L’application Portail d’entreprise n’est pas prise en charge pour les appareils inscrits directement. Cette aide suppose que vous utilisez Apple Configurator 2.0 sur un ordinateur Mac.
 
 1.  **Créer un profil pour des appareils** Un profil d'inscription d'appareil définit les paramètres appliqués aux appareils. Si ce n'est déjà fait, créez un profil d'inscription d'appareil pour les appareils iOS inscrits à l'aide d'Apple Configurator.
-
-    #### Pour créer un profil
 
     1.  Dans la [console d'administration Microsoft Intune](http://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d'appareil professionnel**, puis choisissez **Ajouter**.
 
@@ -40,8 +38,8 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise avec l�
 
         -   **Affectation préalable du groupe d’appareils** : tous les appareils déployés dans ce profil appartiennent initialement à ce groupe. Vous pouvez réaffecter les appareils après l'inscription.
 
-        >[!Important]
-        >Les affectations de groupe passeront d’Intune à Azure Active Directory. [En savoir plus](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     3.  Choisissez **Enregistrer le profil** pour ajouter le profil.
 
 5.  **Exporter un profil comme .mobileconfig à déployer sur des appareils iOS** Sélectionnez le profil d’appareil que vous avez créé. Choisissez **Exporter...** dans la barre des tâches. Choisissez **Télécharger le profil** et enregistrez le fichier .mobileconfig téléchargé.
@@ -61,8 +59,6 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise avec l�
 
 8.  **Installer le profil** Vous êtes prêt à installer le profil sur l’appareil iOS. L’appareil doit avoir terminé l’Assistant Configuration et être prêt à l’emploi.  Si l’inscription entraîne des déploiements d’applications, un ID Apple doit être configuré sur l’appareil, car les déploiements d’applications nécessitent de s’être connecté à l’APP Store avec un ID Apple.
 
-    ###### Acceptation de profil pour les appareils iOS non supervisés
-
     1.  Déverrouillez l’appareil iOS.
 
     2.  Dans la boîte de dialogue **Install profile** de **Management profile**, appuyez sur **Install**.
@@ -81,11 +77,7 @@ Intune prend en charge l’inscription d’appareils iOS d’entreprise avec l�
 10. **Distribuer les appareils** L’appareil iOS est maintenant inscrit et géré dans Intune.
 
 
-### Voir aussi
-[Se préparer à inscrire des appareils](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO1-->
 
 

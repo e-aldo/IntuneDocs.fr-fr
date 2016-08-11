@@ -4,7 +4,7 @@ description: "En savoir plus sur les fonctionnalités Intune lorsque vous gérez
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: b2e5b04df846db1a0076da7db63a5906fbd25558
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intu
 
 -   La **protection contre les programmes malveillants** Intune inclut Endpoint Protection qui veille à la protection de vos PC contre les logiciels malveillants.
 
--   **Assistance à distance** : Intune permet aux utilisateurs de contacter l’équipe du support informatique, qui peut vous aider via une fonctionnalité de Bureau à distance intégrée à Intune <!--- (requires TeamViewer software)--->.
+-   **Assistance à distance**: Intune permet aux utilisateurs de contacter l’équipe du support informatique, qui peut vous aider via une fonctionnalité de Bureau à distance intégrée à Intune (requiert le logiciel TeamViewer).
 
 -   **Gestion des licences logicielles** : suivez le nombre de licences logicielles disponibles et le nombre de licences disponibles utilisé.
 -   **Déploiement d'applications** : déployez des logiciels sur les ordinateurs que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des ordinateurs avec le logiciel client.
@@ -48,7 +48,7 @@ Intune peut gérer des ordinateurs exécutant les versions de Windows suivantes 
 
 -   **Windows 8.1** – versions Professionnel et Entreprise.
 
-- **Windows 10** – versions Famille, Professionnel, Éducation et Entreprise.
+- **Windows 10** – versions Professionnel, Éducation et Entreprise.
 
 
 ## Configuration matérielle minimale requise
@@ -74,6 +74,6 @@ Voici la configuration logicielle requise pour l’installation du client PC Int
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

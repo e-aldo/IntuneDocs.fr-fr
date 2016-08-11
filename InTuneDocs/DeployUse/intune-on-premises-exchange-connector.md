@@ -1,19 +1,20 @@
 ---
-title: Installer le connecteur Exchange de Microsoft Intune pour Exchange local | Microsoft Intune
-description: 
+title: Connecteur Exchange pour EAS local | Microsoft Intune
+description: "Utilisez l’outil Connecteur pour activer la communication entre la console d’administration Intune et votre version locale d’Exchange Server pour la gestion des appareils mobiles Exchange ActiveSync."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 18614cc272323b8031c94b8e582f80aa5c06d9d3
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
 # Installer le connecteur Exchange local de Microsoft Intune
 
 
-Pour configurer une connexion qui permet à Microsoft Intune de communiquer avec le serveur Exchange Server qui héberge les boîtes aux lettres des appareils mobiles, vous devez télécharger et configurer l’outil Connecteur local depuis la console Administrateur d’Intune.
+Pour configurer une connexion qui permet à Microsoft Intune de communiquer avec le serveur Exchange Server qui héberge les boîtes aux lettres des appareils mobiles, vous devez télécharger et configurer l’outil Connecteur local depuis la console Administrateur d’Intune. Microsoft Intune prend en charge une seule connexion du connecteur Exchange par abonnement, quel que soit le type de connecteur.
 
 ## Configuration requise pour le connecteur local
 Le tableau suivant indique la configuration requise pour l’ordinateur où vous installez le connecteur Exchange local.
@@ -29,14 +30,13 @@ Le tableau suivant indique la configuration requise pour l’ordinateur où vous
 |Condition requise|Plus d'informations|
 |---------------|--------------------|
 |Systèmes d'exploitation|Intune prend en charge le connecteur Exchange local sur un ordinateur qui exécute toutes les éditions de Windows Server 2008 SP2 64 bits, Windows Server 2008 R2, Windows Server 2012 ou Windows Server 2012 R2.<br /><br />Le connecteur n'est pas pris en charge sur une installation Server Core.|
-|Version Microsoft Exchange|Le connecteur local nécessite Microsoft Exchange 2010 SP1 ou ultérieur.|
+|Version Microsoft Exchange|Le connecteur local nécessite Microsoft Exchange 2010 SP1 ou une version ultérieure, ou la version de Microsoft Exchange Online Dedicated héritée. Pour déterminer si votre environnement Exchange Online Dedicated présente la **nouvelle** configuration ou une configuration **héritée**, contactez votre responsable de comptes.|
 |Autorité de gestion des appareils mobiles| [Définir Intune comme autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
 |Matériel|L’ordinateur sur lequel vous installez le connecteur nécessite un processeur 1,6 GHz avec 2 Go de mémoire RAM et 10 Go d’espace disque libre.|
 |Synchronisation Active Directory|Avant de pouvoir utiliser un des connecteurs pour connecter Intune à votre serveur Exchange Server, vous devez [configurer la synchronisation Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) pour que vos utilisateurs et groupes de sécurité locaux soient synchronisés avec votre instance d’Azure Active Directory.|
 |Logiciels supplémentaires|Une installation complète de Microsoft .NET Framework 4 et Windows PowerShell 2.0 doit exister sur l’ordinateur qui héberge le connecteur.|
 |Réseau|L'ordinateur sur lequel vous installez le connecteur doit être dans un domaine qui entretient une relation d'approbation avec le domaine qui héberge votre instance d'Exchange Server.<br /><br />L’ordinateur nécessite des configurations qui lui permettent d’accéder au service Intune à travers les pare-feu et les serveurs proxy sur les ports 80 et 443. Les domaines utilisés par Intune comprennent manage.microsoft.com, &#42;manage.microsoft.com et &#42;.manage.microsoft.com.|
 |Le serveur Exchange hébergé configuré et en cours d’exécution|Pour plus d’informations, consultez [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx). |
-|Définir Intune comme autorité de gestion des appareils mobiles|[Définir Intune comme autorité de vos appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Spécifications des applets de commande Exchange
 
@@ -58,16 +58,14 @@ Vous devez créer un compte d’utilisateur Active Directory utilisé par le con
 
 ## Télécharger le package d’installation du logiciel Connecteur Exchange local
 
-1. Sur un système d’exploitation pris en charge pour le connecteur Exchange local, ouvrez la [console d’administration Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) avec un compte d’utilisateur qui est administrateur dans le client Exchange avec une licence d’utilisation d’Exchange Server.
+1. Sur un système d’exploitation Windows Server pris en charge pour le connecteur Exchange local, ouvrez la [console d’administration Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) avec un compte d’utilisateur qui est administrateur dans le client Exchange avec une licence d’utilisation Exchange Server.
 ![Ouvrir la configuration de la connexion Exchange](../media/ExchangeConnector.gif)
 
-2.  Dans le volet de raccourcis de l’espace de travail, choisissez **ADMIN**.
+2.  Dans le volet des raccourcis de l’espace de travail, choisissez **Admin**, puis accédez à **Gestion des appareils mobiles** > **Microsoft Exchange**, puis sélectionnez **Configurer la connexion Exchange**.
 
-3.  Dans le volet de navigation, sous **Gestion des appareils mobiles**, développez **Microsoft Exchange**, puis choisissez **Configurer la connexion Exchange**.
+3.  Dans la page **Configurer la connexion Exchange**, choisissez **Télécharger On-Premises Connector**.
 
-4.  Dans la page **Configurer la connexion Exchange**, choisissez **Télécharger On-Premises Connector**.
-
-5.  Le connecteur Exchange local se trouve dans un dossier compressé (.zip) que vous pouvez ouvrir ou enregistrer. Dans la boîte de dialogue **Téléchargement de fichier**, choisissez **Enregistrer** pour stocker le dossier compressé dans un emplacement sécurisé.
+4.  Le connecteur Exchange local se trouve dans un dossier compressé (.zip) que vous pouvez ouvrir ou enregistrer. Dans la boîte de dialogue **Téléchargement de fichier**, choisissez **Enregistrer** pour stocker le dossier compressé dans un emplacement sécurisé.
 
 > [!IMPORTANT]
 > Ne renommez pas et ne déplacez pas les fichiers du dossier du connecteur Exchange local. Le fait de déplacer ou de renommer le contenu du dossier empêche l’installation.
@@ -133,6 +131,6 @@ Vous pouvez également vérifier la date et l'heure de la dernière tentative de
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO5-->
 
 

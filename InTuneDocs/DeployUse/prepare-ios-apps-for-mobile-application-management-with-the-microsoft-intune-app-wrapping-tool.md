@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
-ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ L'outil est une application de ligne de commande Mac OS qui crée un « wrapper
 Pour télécharger l’outil, consultez [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Étape 1 : remplir les conditions préalables requises pour l’utilisation de l’outil de création de package de restrictions d’application
+Lisez [ce billet de blog](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) pour en savoir plus sur les conditions préalables et comment les définir.
 
-|Condition requise|Plus d'informations|
+|Exigence|Plus d'informations|
 |---------------|--------------------------------|
 |Système d’exploitation et boîte à outils pris en charge|Vous devez exécuter l'outil de création de package de restrictions d'application sur un ordinateur Mac OS X 10.8.5 ou version ultérieure sur lequel est installé la version 5 ou ultérieure de la boîte à outils XCode.|
 |Certificat de signature et profil de configuration|Vous devez disposer d’un certificat de signature Apple et d’un profil de configuration. Consultez votre [documentation pour développeurs Apple](https://developer.apple.com/).|
-|Traitement d’une application avec l’outil de création de package de restrictions d’application|Elle doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV). Vous ne pouvez pas utiliser cet outil pour traiter des applications de l'Apple Store. Les applications doivent être écrites pour iOS version 7.0 ou ultérieure. Elles doivent être également au format PIE (Position Independent Executable). Pour plus d'informations sur le format PIE, consultez votre documentation pour développeurs Apple. Enfin, l’application doit avoir l'extension **.app**ou **.ipa** .|
+|Traitement d’une application avec l’outil de création de package de restrictions d’application|Elle doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV). Vous ne pouvez pas utiliser cet outil pour traiter des applications de l'Apple Store. Les applications doivent être écrites pour iOS version 7.1 ou version ultérieure. Elles doivent être également au format PIE (Position Independent Executable). Pour plus d'informations sur le format PIE, consultez votre documentation pour développeurs Apple. Enfin, l’application doit avoir l'extension **.app**ou **.ipa** .|
 |Applications que l’outil de création de package de restrictions d’application ne peut pas traiter|Applications chiffrées, applications non signées et applications avec des attributs de fichiers étendus.|
 |Applications qui utilisent la bibliothèque ADAL (Azure Active Directory Library)|Si votre application utilise la bibliothèque ADAL, elle doit intégrer une version de la bibliothèque ADAL supérieure ou égale à la version 1.0.2 et le développeur doit accorder à leur application l’accès à la ressource de gestion des applications mobiles Intune.<br /><br />Consultez la rubrique [Informations pour les applications utilisant la bibliothèque Azure Active Directory](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) dans cet article pour plus d’informations sur l’utilisation de la bibliothèque ADAL|
 |Définition de droits pour votre application|Avant d’encapsuler l’application, vous devez définir des droits qui confèrent à l’application des autorisations et des fonctionnalités supplémentaires qui vont au-delà de celles qui sont généralement accordées. Consultez [Définition des droits de l’application](#setting-app-entitlements) pour obtenir des instructions.|
@@ -292,6 +293,6 @@ Respectez les meilleures pratiques de sécurité et de confidentialité suivante
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

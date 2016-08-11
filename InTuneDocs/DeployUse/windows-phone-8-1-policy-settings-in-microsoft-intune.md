@@ -4,7 +4,7 @@ description: "Intune fournit un éventail de paramètres généraux intégrés q
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ Utilisez la **stratégie de configuration générale Windows Phone (Windows Phon
 |----------------|-----------------------------------------|
 |**Autoriser la fonction copier-coller**|Autoriser la fonction copier-coller sur les appareils.|Non|Oui|
 
-### Paramètres des applications conformes et non conformes
-Dans la liste **Applications conformes &amp; non conformes**, spécifiez une liste d’applications conformes ou non conformes à l’aide des informations suivantes :
+### Paramètres des applications autorisées et bloquées
+Dans la **liste des applications autorisées et bloquées**, spécifiez une liste des applications que vous souhaitez autoriser ou bloquer en utilisant les informations suivantes :
 
 > [!NOTE]
-> Une stratégie ne peut contenir qu'une liste d'applications conformes ou une liste d'applications non conformes. Vous ne pouvez pas spécifier les deux dans la même stratégie.
+> Une stratégie ne peut contenir qu’une liste d’applications autorisées ou une liste d’applications bloquées. Vous ne pouvez pas spécifier les deux dans la même stratégie.
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 > Si vous spécifiez une liste d'applications autorisées pour les appareils Windows Phone 8.1, vous devez ajouter l'application Portail d'entreprise à cette liste, sinon elle sera bloquée.
 
 
-### Informations de référence pour les applications conformes et non conformes
+### Informations de référence pour les applications autorisées et bloquées
 
 #### Comment spécifier des URL de magasins d'applications
-Pour spécifier une URL d'application dans la liste des applications conformes et non conformes, utilisez le format suivant :
+Pour insérer une URL d’application dans la liste des applications autorisées ou bloquées, utilisez le format suivant :
 
-Dans la page [Applications+Jeux Windows Phone](http://www.windowsphone.com/en-us/store/overview) , recherchez l'application à utiliser.
+Dans la page [Applications+Jeux Windows Phone](http://www.windowsphone.com/en-us/store/overview), recherchez l'application à utiliser.
 
-Ouvrez la page de l'application, puis copiez l'URL dans le Presse-papiers. Vous pouvez maintenant utiliser cette URL dans la liste des applications conformes ou non conformes.
+Ouvrez la page de l'application, puis copiez l'URL dans le Presse-papiers. Vous pouvez maintenant utiliser cette URL dans la liste des applications autorisées ou bloquées.
 
 **Exemple :** recherchez l'application Skype dans le Store. L’URL que vous utilisez est **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
@@ -172,6 +172,6 @@ Dans la boîte de dialogue **Ajouter ou modifier un paramètre OMA-URI**, spéci
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

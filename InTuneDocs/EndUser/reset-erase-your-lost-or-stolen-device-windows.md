@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 15db6064b9136be5a68bf5e414b0bcb6036fbc1e
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 083dd1a11e291ff0d92b1bfa3ec61033f26f3d4b
 
 
 ---
@@ -27,14 +27,14 @@ Si un téléphone inscrit dans Intune est perdu ou volé, vous pouvez rétablir 
 
 
 > [!WARNING]
-> Vous rétablirez ainsi ses paramètres d’usine, ce qui aura pour effet de supprimer vos données personnelles et professionnelles de l’appareil. Pour plus d’informations sur ce qui se passe quand vous réinitialisez votre appareil, consultez [Que se passe-t-il quand vous réinitialiser votre appareil à l’aide du portail d’entreprise ?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md).
+> Vous rétablirez ainsi ses paramètres d’usine, ce qui aura pour effet de supprimer vos données personnelles et professionnelles de l’appareil. Pour plus d’informations sur ce qui se passe quand vous réinitialisez votre appareil, consultez [Que se passe-t-il quand vous réinitialisez votre appareil à l’aide du portail d’entreprise ?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md).
 
 
 1.  Dans votre navigateur, ouvrez votre [site web Portail d’entreprise](http://portal.manage.microsoft.com) et connectez-vous à votre compte professionnel.
 
 2.  Sous **Mes appareils**, sélectionnez l’appareil perdu ou volé.
 
-3.  Appuyez sur **Réinitialiser** &gt; **Réinitialiser**.
+3.  Appuyez sur l’icône **Réinitialiser**, puis sur **Réinitialiser**.
 
 Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demandez à votre service informatique de le faire à votre place. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
@@ -43,6 +43,6 @@ Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demande
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

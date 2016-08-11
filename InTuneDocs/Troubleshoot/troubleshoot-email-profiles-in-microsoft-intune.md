@@ -4,17 +4,17 @@ description: "Cette rubrique présente des problèmes de profils de messagerie e
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 9b699229489be2f09ea4c7a80e1e80f6ec7b106e
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 79076b65fe85adeaffd5435915cb5eca2a15413f
 
 
 ---
@@ -47,11 +47,29 @@ Cela se produit lorsque l’option **Autoriser l’envoi de courrier électroniq
 
 4.  Sous l’onglet **Paramètres de synchronisation**, sélectionnez **Autoriser l’envoi de courrier électronique à partir d’applications tierces**.
 
+
+## Un profil de messagerie est déjà installé sur l’appareil
+
+Si l’utilisateur a installé un profil de messagerie avant de configurer un profil via Intune, le résultat du déploiement du profil de messagerie Intune dépend de la plate-forme d’appareil :
+
+-**iOS**: Intune détecte un profil de messagerie existant en double, en fonction de l’adresse e-mail et du nom d’hôte. Le profil de messagerie en double que l’utilisateur a créé bloque le déploiement d’un profil créé par un administrateur Intune. Il s’agit d’un problème courant parce que les utilisateurs iOS créent généralement un profil de messagerie, puis s’inscrivent. Le portail d’entreprise informe les utilisateurs qu’ils ne sont pas conformes en raison de leur profil de messagerie configuré manuellement et les invite à supprimer ce profil. Les utilisateurs doivent supprimer leur profil de messagerie pour que le profil Intune puisse être déployé. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire avant d’installer le profil de messagerie et d’autoriser Intune à déployer le profil.
+
+-**Windows** : Intune détecte un profil de messagerie existant en double, en fonction de l’adresse e-mail et du nom d’hôte. Intune remplace le profil de messagerie existant que l’utilisateur a créé.
+
+-**Samsung KNOX** : Intune identifie un compte de messagerie en double en fonction de l’adresse e-mail et le remplace par le profil Intune. Si l’utilisateur configure ce compte, il est remplacé à nouveau par le profil Intune. Remarque : cela peut entraîner une certaine confusion pour l’utilisateur dont la configuration de compte est remplacée.
+
+Étant donné que Samsung KNOX n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à déployer à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
+
+## Erreur 0x87D1FDE8 pour appareil KNOX
+**Problème **: après avoir créé et déployé un profil de messagerie Exchange Active Sync pour Samsung KNOX pour différents appareils Android, ceux-ci font état de l’erreur **0x87D1FDE8** ou d’un **échec de la correction** dans l’onglet stratégie des propriétés de l’appareil &gt;.
+
+Examinez la configuration de votre profil EAS pour Samsung KNOX et la stratégie source. L’option de synchronisation Samsung Notes n’étant plus prise en charge, nous vous invitons à ne pas la sélectionner dans votre profil. Assurez-vous que les appareils ont eu suffisamment de temps pour traiter la stratégie (jusqu’à 24 heures).
+
 ## Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
