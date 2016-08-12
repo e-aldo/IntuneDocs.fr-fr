@@ -2,9 +2,9 @@
 title: "Créer des groupes pour organiser les utilisateurs et les appareils | Microsoft Intune"
 description: "Comment créer des groupes d’appareils et d’utilisateurs lorsque vous vous inscrivez à un essai gratuit d’Intune de 30 jours"
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 4c0ccb2d27d90c4a3aeebb3129b9b13a707b26a0
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 6cab173d7ef4a1d7bcea3193265e0729c93a214e
 
 
 ---
 
 # Créer des groupes pour organiser les utilisateurs et les appareils de l’abonnement à la version d’évaluation
-Les groupes dans Intune vous permettent de gérer les utilisateurs et appareils avec une grande souplesse. Vous pouvez configurer des groupes qui répondent aux besoins de votre organisation (par exemple, en fonction de l'emplacement géographique, du service ou de caractéristiques matérielles) et les utiliser pour effectuer diverses tâches d'administration à grande échelle, de la définition de stratégies pour un ensemble d'utilisateurs au déploiement d'applications sur un ensemble d'appareils.
+Les groupes créés dans Intune vous permettent de gérer vos utilisateurs et appareils avec une grande souplesse. Vous pouvez configurer des groupes qui répondent aux besoins de votre organisation (par exemple, en fonction de l'emplacement géographique, du service ou de caractéristiques matérielles) et les utiliser pour effectuer diverses tâches d'administration à grande échelle, de la définition de stratégies pour un ensemble d'utilisateurs au déploiement d'applications sur un ensemble d'appareils.
 
 ## Créer un groupe d'appareils
 Les groupes d'appareils permettent de déployer des logiciels et des mises à jour, et de configurer des stratégies pour les paramètres de l'Agent Microsoft Intune et les paramètres du Pare-feu Windows. Par exemple, vous pouvez configurer un groupe « Appareils de mon évaluation » en procédant comme suit :
@@ -65,6 +65,6 @@ Félicitations ! Vous venez d’effectuer l’étape 3 de la procédure pas à
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

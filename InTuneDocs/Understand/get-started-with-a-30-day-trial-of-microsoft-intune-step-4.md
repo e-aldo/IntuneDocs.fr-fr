@@ -2,9 +2,9 @@
 title: "Créer des stratégies et publier une application pour les utilisateurs | Microsoft Intune"
 description: "Cette rubrique explique comment créer des stratégies et publier une application lorsque vous vous inscrivez à un essai gratuit de 30 jours d’Intune"
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: fb11c48b50e1aa8642a51a542baebe0d068ecda4
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1a41bfd926b1dac88ca8c8cd33483955f1150e34
 
 
 ---
@@ -56,7 +56,7 @@ Votre stratégie s'affiche dans la liste des stratégies de configuration et a �
 
 4.  Dans la page **Installation du logiciel** dans **Spécifier comment ce logiciel doit être mis à disposition des appareils**, sélectionnez **Lien externe**.
 
-5.  Entrez le lien externe pour le logiciel dans **Spécifiez l’URL**, puis cliquez sur **Suivant**. Veillez à faire précéder l’URL de **https://**. Pour l'application Skype, utilisez le lien ci-dessous qui correspond à la plateforme d'appareil mobile que vous utilisez :
+5.  Entrez le lien externe pour le logiciel dans **Spécifiez l’URL**, puis cliquez sur **Suivant**. Veillez à faire précéder l’URL de **https://**. Pour l'application Skype, utilisez le lien ci-dessous qui correspond à la plateforme d'appareil mobile que vous utilisez :
 
     -   **iOS :** [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
@@ -99,6 +99,6 @@ Félicitations ! Vous venez d’effectuer l’étape 4 de la procédure pas à
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

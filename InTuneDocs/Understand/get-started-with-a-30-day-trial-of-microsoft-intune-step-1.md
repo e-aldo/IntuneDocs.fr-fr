@@ -2,9 +2,9 @@
 title: "S’inscrire à une version d’évaluation de 30 jours de Microsoft Intune | Microsoft Intune"
 description: "Comment s’inscrire à un essai gratuit d’Intune de 30 jours et éléments à prendre en compte avant de s’inscrire"
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 5c36bac82389453d83504564cf26beb1027feefe
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
 
 
 ---
@@ -35,7 +35,7 @@ Avant de vous inscrire ou de vous connecter à Intune, vous devez vous poser les
 
 |Inscrivez-vous pour un NOUVEAU compte si vous remplissez l'une des conditions suivantes :|Connectez-vous avec votre compte PROFESSIONNEL ou SCOLAIRE si :|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**Vous n'avez pas de compte professionnel ou scolaire.** Un compte professionnel ou scolaire vous est fourni au moment où vous signez un contrat de licence en volume avec Microsoft ou que vous vous abonnez à Office 365. Si votre organisation n'a pas signé de Contrat Enterprise ou de contrat de licence en volume équivalent avec Microsoft (ou si elle ne dispose pas d'un compte Office 365), vous n'avez pas de compte Microsoft Online Services dont vous pouvez vous servir pour vous connecter à Microsoft Online Services.<br /><br />**Vous prévoyez d’abandonner votre client Intune à l’issue de la période d’évaluation de 30 jours.** Vous devez vous inscrire pour créer un compte si vous utilisez votre abonnement à la version d’évaluation de 30 jours d’Intune à des fins d’évaluation uniquement et si vous prévoyez de redéfinir la configuration de votre service Intune et la mise en service de vos appareils à l’issue de l’évaluation. Il s’agit de l’option recommandée si vous prévoyez d’utiliser Intune avec System Center 2012 Configuration Manager.<br /><br />Si vous vous inscrivez pour obtenir un nouveau compte, vous ne pourrez pas par la suite utiliser un compte professionnel ou scolaire existant pour gérer ce compte, ni l’associer à des contrats de licence en volume existants.|**Vous avez un compte professionnel ou scolaire fourni avec un contrat de licence en volume ou un abonnement Office 365 et vous utilisez cette version d’évaluation pour tester Intune.**<br /><br />Si vous configurez Intune sur un compte existant, nous vous recommandons de consulter [Choisir comment gérer des appareils](/intune/get-started/choose-how-to-manage-devices) avant de poursuivre cette procédure.|
+|**Vous n'avez pas de compte professionnel ou scolaire.** Un compte professionnel ou scolaire vous est fourni au moment où vous signez un contrat de licence en volume avec Microsoft ou que vous vous abonnez à Office 365. Si votre organisation n'a pas signé de Contrat Enterprise ou de contrat de licence en volume équivalent avec Microsoft (ou si elle ne dispose pas d'un compte Office 365), vous n'avez pas de compte Microsoft Online Services dont vous pouvez vous servir pour vous connecter à Microsoft Online Services.<br /><br />**Vous prévoyez d’abandonner votre client Intune à l’issue de la période d’évaluation de 30 jours.** Vous devez vous inscrire pour créer un compte si vous utilisez votre abonnement à la version d’évaluation de 30 jours d’Intune à des fins d’évaluation uniquement et si vous prévoyez de redéfinir la configuration de votre service Intune et la mise en service de vos appareils à l’issue de l’évaluation. Il s’agit de l’option recommandée si vous prévoyez d’utiliser Intune avec System Center 2012 Configuration Manager.<br /><br />Si vous vous inscrivez pour obtenir un nouveau compte, vous ne pourrez pas par la suite utiliser un compte professionnel ou scolaire existant pour gérer ce compte, ni l’associer à des contrats de licence en volume existants.|**Vous avez un compte professionnel ou scolaire fourni avec un contrat de licence en volume ou un abonnement Office 365 et vous utilisez cette version d’évaluation pour tester Intune.**<br /><br />Si vous configurez Intune sur un compte existant, nous vous recommandons de consulter [Choisir comment gérer des appareils](/intune/get-started/choose-how-to-manage-devices) avant de poursuivre cette procédure.|
 
 ## S'inscrire ou se connecter à Intune
 
@@ -43,7 +43,7 @@ Avant de vous inscrire ou de vous connecter à Intune, vous devez vous poser les
 
 2.  Deux options s'offrent à vous sur la page **S'inscrire** :
 
-    -   **S'abonner à l'aide de votre compte professionnel ou scolaire Microsoft Online Services**: cliquez sur **Se connecter** si vous disposez déjà d'un compte professionnel ou scolaire, et si vous souhaitez utiliser le même compte pour vous abonner aux deux services. Lorsque vous utilisez le même compte pour plusieurs services, ces services utilisent la même infrastructure Azure AD et sont clients d'Azure AD. Azure AD fournit les principales fonctionnalités d'annuaire et de gestion des identités pour les services cloud Microsoft.
+    -   **S'abonner à l'aide de votre compte professionnel ou scolaire Microsoft Online Services**: cliquez sur **Se connecter** si vous disposez déjà d'un compte professionnel ou scolaire, et si vous souhaitez utiliser le même compte pour vous abonner aux deux services. Lorsque vous utilisez le même compte pour plusieurs services, ces services utilisent la même infrastructure Azure AD et sont clients d'Azure AD. Azure AD fournit les principales capacités d'annuaires et de gestion des identités pour les services cloud Microsoft.
 
     -   **S’abonner à Intune uniquement** : si vous n’êtes pas encore abonné à un service cloud, remplissez le formulaire de la page d’inscription pour vous abonner à Intune.
 
@@ -61,6 +61,6 @@ Félicitations ! Vous venez d’effectuer l’étape 1 de la procédure pas à
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

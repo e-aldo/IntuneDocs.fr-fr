@@ -13,8 +13,8 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
-ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
+ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
+ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 Vous pouvez créer un profil VPN par application pour les appareils Android gérés par Intune. Tout d’abord, vous allez créer un profil VPN qui utilise le type de connexion Pulse Secure, puis une stratégie de configuration personnalisée qui associe ce profil à des applications spécifiques. Une fois que vous avez déployé ces stratégies sur vos groupes d’utilisateurs ou d’appareils Android, l’ouverture d’une des applications spécifiées sur ces appareils ouvre une connexion VPN pour cette application.
 
-> [REMARQUE]
+> [!NOTE]
 > 
 > Seul le type de connexion sécurisé Pulse Secure est pris en charge pour ce profil.
 
@@ -37,7 +37,8 @@ Vous pouvez créer un profil VPN par application pour les appareils Android gér
 4. Renseignez et enregistrez le profil VPN. Pour plus d’informations sur les profils VPN, consultez [Connexions VPN](vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
-Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante. Par exemple, **MonProfilVpnApp**.
+> 
+> Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante.   Par exemple, **MonProfilVpnApp**.
 
 ### Étape 2 : Créer une stratégie de configuration personnalisée
 
@@ -51,7 +52,7 @@ Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante. Par
 
 
    ![Exemple de stratégie personnalisée de VPN par application Android](..\media\android_per_app_vpn_oma_uri.png)
-#### Définissez votre liste d’applications comme liste noire ou liste blanche (facultatif)
+#### Définissez votre liste d’applications comme liste rouge ou liste verte (facultatif)
 Vous pouvez spécifier que votre liste d’applications *ne sera pas* autorisée à utiliser la connexion VPN, à l’aide de la valeur **BLACKLIST**.  Toutes les autres applications se connectent via VPN.
 
 Vous pouvez également spécifier que *seules* les applications spécifiées sont en mesure d’utiliser la connexion VPN, à l’aide de la valeur **WHITELIST**.
@@ -81,6 +82,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
