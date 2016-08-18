@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -108,7 +108,7 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 ## Forum aux questions sur les stratégies Intune
 
 ### Combien de temps faut-il pour que les appareils mobiles obtiennent une stratégie ou les applications une fois que celles-ci ont été déployées ?
-Quand une stratégie ou une application est déployée, Intune essaie d’envoyer immédiatement une notification à l’appareil pour qu’il s’enregistre auprès du service Intune. Cette opération prend généralement moins de cinq minutes.
+Quand une stratégie ou une application est déployée, Intune essaie d’envoyer immédiatement une notification à l’appareil pour qu’il s’enregistre auprès du service Intune. Cette opération prend généralement moins de 5 minutes.
 
 Si un appareil ne se manifeste pas pour obtenir la stratégie après l’envoi de la première notification, Intune effectue trois autres tentatives.  Si l’appareil est hors connexion (par exemple, s’il est éteint ou n’est pas connecté à un réseau), il ne peut pas recevoir de notifications. Dans ce cas, l’appareil obtiendra la stratégie lors de son prochain enregistrement planifié auprès du service Intune, de la manière suivante :
 
@@ -181,7 +181,7 @@ Quand vous supprimez une stratégie ou retirez un appareil d’un groupe sur leq
         - Autoriser la boutique d'applications
         - Autoriser la capture d'écran
         - Autoriser la géolocalisation
-        - Autoriser un compte Microsoft
+        - Autoriser le compte Microsoft
         - Autoriser la fonction copier-coller
         - Autoriser la connexion Wi-Fi
         - Autoriser la connexion automatique aux points d'accès Wi-Fi gratuits
@@ -215,6 +215,6 @@ Consultez [Résoudre les problèmes de stratégie dans Microsoft Intune](/intune
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

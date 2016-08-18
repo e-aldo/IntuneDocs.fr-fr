@@ -13,8 +13,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6ddb0fda0e818b09d274276076fd6310d29b99cb
-ms.openlocfilehash: 8ce6b10478927177e5d6d8de0677cf06bed00f08
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
 
 
 ---
@@ -119,7 +119,7 @@ Si un ordinateur ne peut pas se connecter à Intune, un message s’affiche dans
 
 Lorsque vous mettez hors service un ordinateur :
 
--   Il est supprimé de l’inventaire Intune et la licence associée à l’ordinateur devient disponible pour une réutilisation.
+-   Il est supprimé de la gestion et de l’inventaire Intune, et la licence associée à l’ordinateur devient disponible pour une réutilisation. La mise hors service et la réinitialisation ont pour effet de supprimer le logiciel client Intune, mais elles ne suppriment pas les données et les applications de l’ordinateur.
 
 -   Son état ne s’affiche plus dans la console Intune.
 

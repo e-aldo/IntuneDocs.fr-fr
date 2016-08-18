@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
+ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
+ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 
 ---
@@ -34,13 +34,29 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 3.  Suivez les instructions à l'écran. Au cours du chiffrement, votre appareil peut redémarrer plusieurs fois.
 
 ### Réponse aux problèmes
-**Problème** : vous avez déjà chiffré votre appareil, et vous constatez l’un des problèmes décrits ci-après.
+**Problème** : Vous avez déjà chiffré votre appareil, et vous constatez l’un des problèmes décrits ci-après.
 
 - Le bouton de chiffrement est désactivé.
 - Un message vous informe que vous devez chiffrer votre appareil.
 - Vous obtenez un message d’erreur lorsque vous tentez d’utiliser l’application Portail d’entreprise.
 
-**Réponse** : assurez-vous d’avoir configuré un code confidentiel ou un mot de passe sur votre appareil.
+**Solutions possibles** : 
+
+1. Vérifiez que votre appareil dispose de suffisamment de batterie ou qu’il est branché sur secteur.
+
+2. Vérifiez que vous avez configuré un code confidentiel ou un mot de passe sur votre appareil.
+
+3. Si vous avez déjà défini un code confidentiel ou un mot de passe sur votre appareil, essayez les étapes suivantes, que votre administrateur informatique peut vous demander de suivre pour renforcer la sécurité de votre appareil. Les noms de menus que vous voyez peuvent être légèrement différents de ceux mentionnés dans ces étapes, selon le type d’appareil Android dont vous disposez.
+
+    a. Accédez à **Paramètres** > **Sécurité** > **Écran de verrouillage**. Confirmez votre code confidentiel ou mot de passe actuel.
+
+    b. Dans l’écran **Choose screen lock** (Choisir un verrouillage d’écran), choisissez le type de verrouillage d’écran que vous voulez utiliser.
+
+    c. Dans l’écran **Secure start-up** (Démarrage sécurisé), cliquez sur **Require PIN to start device** (Exiger le code PIN pour démarrer l’appareil), puis appuyez sur **Continue** (Continuer).
+
+    d. Choisissez un code confidentiel (vous pouvez entrer le même que celui que vous avez entré précédemment), puis appuyez sur **Confirm your PIN** (Confirmer votre code PIN).
+
+    e. Ouvrez l’application Portail d’entreprise, sélectionnez votre appareil, puis appuyez sur **Vérifier la conformité**.
 
 Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
 
@@ -49,6 +65,6 @@ Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

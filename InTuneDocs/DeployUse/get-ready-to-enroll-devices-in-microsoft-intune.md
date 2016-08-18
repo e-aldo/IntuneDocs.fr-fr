@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
-ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 768dd08ad838b621f18a24747618ef1e37c5c804
 
 
 ---
@@ -55,7 +55,7 @@ Le nom de l’entreprise s’affiche comme titre du Portail d’entreprise. Les 
 
 |Nom du champ|Longueur maximale|Plus d'informations|
     |----------|------------------------|----------------|
-    |Nom de la société|40|Ce nom s’affiche comme titre du Portail d’entreprise.|
+    |Nom de la société|40|Ce nom s’affiche comme titre du Portail d’entreprise. **Remarque** : Seuls des caractères alphanumériques peuvent être utilisés. Ce champ n’accepte pas les caractères spéciaux.|
     |Nom du contact du service informatique|40|Ce nom s’affiche dans la page **Contacter le service informatique**.|
     |Numéro de téléphone du service informatique|20|Ce numéro s’affiche dans la page **Contacter le service informatique**.|
     |Adresse de messagerie du service informatique|40|Cette adresse s’affiche dans la page **Contacter le service informatique**. Vous devez entrer une adresse de messagerie valide au format **alias@nomdedomaine.com**.|
@@ -109,6 +109,6 @@ Vous pouvez également effectuer les opérations suivantes :
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

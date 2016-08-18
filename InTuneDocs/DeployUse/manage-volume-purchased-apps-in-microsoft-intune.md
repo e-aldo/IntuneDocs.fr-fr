@@ -13,8 +13,8 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 6da7393834b7cb14085e090a014e030d2df3ff2f
+ms.sourcegitcommit: 533163d58b3d5f838074c31832ea5500aaef36c2
+ms.openlocfilehash: 9735708dc636f015e259eb4a852ddd57b90f1b92
 
 
 ---
@@ -27,7 +27,7 @@ Microsoft Intune vous aide à gérer les applications que vous avez achetées pa
 
 ## Quels types d’applications peuvent être gérés ?
 
-Intune vous permet actuellement de gérer les applications achetées en volume à partir de l’App Store iOS et de Windows Store pour Entreprises.
+Intune vous permet de gérer les applications achetées en volume à partir de l’App Store iOS et de Windows Store pour Entreprises.
 Pour découvrir comment gérer les applications sous licence à partir de chaque magasin, choisissez une des rubriques ci-dessous :
 
 - [Gérer les applications achetées en volume](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -35,9 +35,6 @@ Pour découvrir comment gérer les applications sous licence à partir de chaque
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

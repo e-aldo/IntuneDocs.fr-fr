@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ Pour les systèmes d’exploitation d’appareils mobiles, notamment iOS, Androi
 |**Description**|Appareil personnel inscrit à l'aide de Microsoft Intune|Appareil d'entreprise pour un seul utilisateur|Appareil d'entreprise géré à l'aide d'un compte de gestionnaire partagé par de nombreux utilisateurs|Appareil d'entreprise sans utilisateur utilisé par de nombreux utilisateurs|
 |**Utilisateur de l'appareil**|Propriétaire|Utilisateur affecté|Aucun compte spécifique à l'utilisateur|Aucun utilisateur spécifique|
 |**Qui inscrit l’appareil ?**|Propriétaire|Administrateur|Gestionnaire d'appareils|Toute personne|
-|**Qui annule l’inscription ?**|Propriétaire ou administrateur|Administrateur|Administrateur|Administrateur|
+|**Qui annule l’inscription ?**|Propriétaire ou administrateur|Plate-forme |Administrateur ou utilisateur|Administrateur ou utilisateur|
 |**Qui peut réinitialiser ?**|Propriétaire ou administrateur|Administrateur|Administrateur|Administrateur|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ Vous connaissez désormais certaines des fonctionnalités qui sont disponibles q
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

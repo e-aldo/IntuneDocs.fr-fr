@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
-ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
@@ -32,7 +32,7 @@ Utilisez les paramètres de stratégie de cette rubrique pour configurer les par
 Utilisez la **stratégie de configuration générale** Microsoft Intune pour Windows 10 afin de configurer les paramètres généraux des appareils Windows 10 Mobile et Windows 10 Desktop inscrits. 
 
 
-### Mot de passe
+## - Mot de passe
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|
@@ -47,13 +47,13 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe précédemment utilisés conservés par l’appareil.|
 |**Exiger un mot de passe quand l'appareil quitte un état inactif**|Si cette option est activée, l'utilisateur doit entrer un mot de passe pour déverrouiller l’appareil pour qu’il quitte l’état inactif.<br>(Windows 10 Mobile uniquement)|
 
-### Chiffrement
+## - Chiffrement
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|
 |**Exiger le chiffrement sur l'appareil mobile**|Active le chiffrement sur les appareils ciblés.<br>(Windows 10 Mobile uniquement)|
 
-### Système
+## - Système
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|
@@ -63,7 +63,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser l'envoi des données de diagnostic et d'utilisation à Microsoft**|Détermine la quantité de données de diagnostic et d'utilisation envoyées à Microsoft à partir des appareils.<br><br>**Non** - Aucune donnée n’est envoyée à Microsoft<br>**De Base** - L'appareil envoie uniquement des informations limitées à Microsoft<br>**Amélioré** - Envoie des données de diagnostic améliorées à Microsoft<br>**Complète (recommandée)** - envoie les mêmes données que **Amélioré**, ainsi que des données supplémentaires sur l'état de l’appareil|
 
 
-### Compte et synchronisation
+## - Compte et synchronisation
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|---------------------|
@@ -71,7 +71,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser l'ajout manuel de comptes non-Microsoft**|Permet à l'utilisateur d'ajouter des comptes de messagerie à l'appareil qui ne sont pas associés à un compte Microsoft.|
 |**Autoriser la synchronisation des paramètres pour les comptes Microsoft**|Permet aux paramètres d’appareil et d'application associés à un compte Microsoft de se synchroniser entre les appareils.|
 
-### Microsoft Edge
+## - Microsoft Edge
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|
@@ -87,7 +87,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser le gestionnaire de mots de passe**|Activer ou désactiver la fonctionnalité Gestionnaire de mots de passe Edge.|
 |**Emplacement de la liste des sites en mode entreprise**|Indique où trouver la liste des sites web qui s'ouvrent en Mode entreprise. Les utilisateurs ne peuvent pas modifier cette liste.<br>(Windows 10 Desktop uniquement)|
 
-### Applications
+## - Applications
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|---------------------|
@@ -95,7 +95,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 
 
 
-### Cellulaire
+## - Cellulaire
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|---------------------|
@@ -103,7 +103,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser une connexion VPN sur un réseau cellulaire**|Contrôle si l’appareil peut accéder aux connexions VPN lorsqu'il est connecté à un réseau cellulaire.|
 |**Autoriser l'itinérance VPN sur un réseau cellulaire**|Contrôle si l’appareil peut accéder aux connexions VPN lorsqu'il est en itinérance sur un réseau cellulaire.|
 
-### Matériel
+## - Matériel
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|
@@ -122,7 +122,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser la connexion USB**|Contrôle si les appareils peuvent accéder à des périphériques de stockage externe via une connexion USB.|
 |**Autoriser le mode antivol**|Configurer si le mode antivol Windows est activé.|
 
-### Fonctionnalités
+## - Fonctionnalités
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|---------------------|
@@ -131,7 +131,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser Cortana**|Active ou désactive l'assistant vocal Cortana.|
 |**Autoriser les notifications du centre de notifications**|Active ou désactive les notifications du centre de notifications sur l'écran de verrouillage de l'appareil.<br>(Windows 10 Mobile uniquement)|
 
-### Defender
+## - Windows Defender
 
 Tous les paramètres sont pour Windows 10 Desktop uniquement.
 
@@ -162,7 +162,7 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 |**Processus à exclure lors d'une analyse ou de la protection en temps réel**|Ajoutez un ou plusieurs processus du type **.exe**, **.com**, ou **.scr** à la liste des exclusions. Ces processus ne seront pas inclus dans les analyses en temps réel ou planifiées.| 
 
 
-### Paramètres des mises à jour
+## - Mises à jour
 
 |Nom du paramètre|Détails|
 |----------------|---------------|
@@ -176,14 +176,14 @@ Cette fonctionnalité est conçue pour vous permettre de déployer les paramètr
 
 
 
-### Paramètres généraux de la stratégie personnalisée
+## - Général
 
 |Nom du paramètre|Détails|
     |----------------|--------------------|
     |**Nom**|Entrez un nom unique pour la stratégie afin de vous aider à l’identifier dans la console Intune.|
     |**Description**|Entrez une description générale de la stratégie et d'autres informations pertinentes pour faciliter sa localisation.|
 
-### Paramètres OMA-URI de la stratégie personnalisée
+## - Paramètres OMA-URI
 
 |Nom du paramètre|Détails|
     |--------|--------------------|
@@ -194,12 +194,12 @@ Cette fonctionnalité est conçue pour vous permettre de déployer les paramètr
     |**Valeur**|Spécifiez la valeur à associer à l'identificateur OMA-URI spécifié précédemment.|
 
 
-## Paramètres URI personnalisés pour les appareils Windows 10
+## Paramètres d’URI Windows 10
 Cette rubrique répertorie les paramètres que vous pouvez configurer sur les appareils Windows 10 et Windows 10 Mobile dans le cadre d’une **stratégie personnalisée Windows 10** Microsoft Intune.
 
 Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les appareils doivent être inscrits auprès d’Intune.
 
-### Paramètres URI de la stratégie
+## - Stratégie
 
 |Nom de la stratégie|Détails|
 |---------------|------------|-----------|
@@ -272,7 +272,7 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 |**Update/DeferUpgradePeriod**<br>(Poste de travail et Mobile)|**Description :** stratégie de report des mises à niveau des fonctionnalités jusqu’à huit mois<br /><br />**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** : appliquer immédiatement les mises à jour (par défaut)<br>**1**-**8** : nombre de mois de report des mises à niveau des fonctionnalités.<br /><br />Pour plus d'informations, voir :<br>[Introduction à la maintenance de Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan de déploiement de Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(Poste de travail et Mobile)|**Description :** autorise un ordinateur CBB à arrêter de recevoir des mises à jour et des mises à niveau pendant cinq semaines. Cela doit être utilisé en cas de problème avec une mise à jour.<br /><br />**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** : appliquer immédiatement les mises à jour (par défaut)<br>**1** : suspendre les mises à jour et les mises à niveau (expire au bout de cinq semaines)|
 
-### Paramètres URI de Windows Defender
+## - Windows Defender
 
 |Nom de la stratégie|Détails|
 |---------------|-----------|
@@ -302,7 +302,7 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 |**ExcludedPaths**<br>(Poste de travail uniquement)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Type de données : ** Chaîne<br /><br />**Valeurs autorisées :**<br /><br />*&lt;liste de chemins d'accès séparés par des points-virgules&gt;*<br /><br />Exemple : **c:\test;c:\test1.exe**<br /><br />**Valeur par défaut :** Aucun chemin n’est exclu.|
 |**ExcludedProcesses**<br>(Poste de travail uniquement)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Type de données : ** Chaîne<br /><br />**Valeurs autorisées :**<br>*&lt;liste de chemins d'accès séparés par des points-virgules&gt;*<br>Exemple : **c:\test.exe;c:\test1.exe**<br>**Valeur par défaut :** Aucun processus n’est exclu.|
 
-### Paramètres URI du navigateur Edge
+## -Navigateur Edge
 
 |Nom de la stratégie|Détails|
 |---------------|------------|-----------|
@@ -323,6 +323,6 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

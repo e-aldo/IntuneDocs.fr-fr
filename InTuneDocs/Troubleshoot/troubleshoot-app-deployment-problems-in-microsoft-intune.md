@@ -2,7 +2,7 @@
 title: "Résoudre les problèmes de déploiement d’applications | Microsoft Intune"
 description: "Cette rubrique vous aide à résoudre les problèmes de déploiement d’applications dans Microsoft Intune."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,24 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Résoudre les problèmes de déploiement d’applications dans Microsoft Intune
-Cette rubrique vous aide à résoudre les problèmes de déploiement d’applications dans Microsoft Intune.
+Si vous rencontrez des problèmes de déploiement et de gestion des applications avec Intune, lisez ce qui suit. Cette rubrique contient certains problèmes courants que vous pouvez rencontrer avec les solutions.
 
-Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
+## Problèmes courants liés au déploiement des applications
 
+### Les utilisateurs ne peuvent pas se connecter au Portail d’entreprise Intune
 
-## Problèmes courants de déploiement d’applications
+1.  Vérifiez que le compte d’utilisateur existe et qu’il est activé dans le [Portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-### Si vous ne pouvez pas vous connecter au Portail d’entreprise de Microsoft Intune
+3.  Dans le [Portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), assurez-vous que l’utilisateur entre le bon nom d’utilisateur pour se connecter à Intune. Le nom d’utilisateur doit être au format suivant : **jean@domaine.com**. Si l’utilisateur entre le mauvais mot de passe, demandez-lui de le réinitialiser.
 
-1.  Vérifiez si votre compte existe dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) ou s’il est désactivé.
-
-2.  Assurez-vous que vous êtes configuré sur ce compte dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  Dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), veillez à utiliser le nom d’utilisateur et le mot de passe appropriés pour vous connecter à Intune et vérifiez qu’il est au format : **jean@domaine.com**.
-
-### Si les informations de la page Contacter l'administrateur ne figurent pas sur le portail d'entreprise
+### Les informations de la page Contacter l’administrateur ne figurent pas sur le portail d’entreprise
 
 1.  Dans la console d’administration Intune, choisissez **Administration** &gt; **Portail d’entreprise**.
 
@@ -105,6 +100,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

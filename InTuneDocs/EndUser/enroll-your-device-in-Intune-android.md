@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
+ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
+ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
 
 ---
@@ -91,17 +91,11 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
 
     ![Entrer le code confidentiel ou le mot de passe](./media/and-enroll-6-PIN-native.png)
 
-13.  Suivez les instructions ci-dessous qui correspondent au type d’appareil que vous utilisez (Android natif ou Samsung Knox). Pour déterminer si vous disposez d’un appareil Samsung Knox, accédez à **Paramètres** &gt; **À propos de l’appareil**. Si « Version Knox » n’apparaît pas dans la liste, c’est que vous avez un appareil Android natif.
-
-    -   Appareil natif (autre que Samsung Knox) : dans l’écran **Nommer le certificat**, appuyez sur **OK** pour accepter le certificat par défaut.
-
-    ![Écran Nommer le certificat](./media/and-enroll-7-cert-native.png)
-
-    -   Appareil Samsung Knox : acceptez la politique de confidentialité et appuyez sur **CONFIRMER**.
+13.  Si vous utilisez un appareil Samsung Knox, appuyez sur **Confirmer**. Vous verrez ensuite un message vous informant que votre appareil est en cours d’inscription. Si vous utilisez un appareil Android natif, vous verrez l’écran ci-dessous qui indique que votre appareil est en cours d’inscription.
 
     ![Politique de confidentialité Samsung KNOX](./media/and-enroll-7-knox-privacy-policy.png)
 
-    Le message suivant apparaît à l’écran quand Intune inscrit votre appareil.
+    Cet écran montre que votre appareil est en cours d’inscription.
 
     ![Écran Inscription de l’appareil](./media/and-enroll-8-device-enrolling.png)
 
@@ -123,6 +117,6 @@ Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

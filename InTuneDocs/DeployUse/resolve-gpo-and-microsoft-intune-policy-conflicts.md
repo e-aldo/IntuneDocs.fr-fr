@@ -13,23 +13,23 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70e5920679149791c4856a1db905e564dc1278bd
+ms.sourcegitcommit: e64c4e077a3d2b75a8c246f097fcf7472d7edac6
+ms.openlocfilehash: 286f159e57820a8c8723004c167ae7296626894c
 
 
 ---
 
 # Résoudre des conflits de stratégie entre les objets de stratégie de groupe (GPO) et Microsoft Intune
-Intune utilise des stratégies qui vous aident à gérer les paramètres sur les PC Windows que vous gérez. Par exemple, vous pouvez utiliser une stratégie de contrôle des paramètres du Pare-feu Windows sur les PC. La majorité des paramètres Intune sont identiques aux paramètres que vous pouvez configurer avec la stratégie de groupe Windows. Toutefois, il est possible que, dans certains cas, les deux méthodes entrent en conflit l'une avec l'autre.
+Intune utilise des stratégies qui vous aident à gérer des paramètres sur les PC Windows. Par exemple, vous pouvez utiliser une stratégie de contrôle des paramètres du Pare-feu Windows sur les PC. De nombreux paramètres Intune sont identiques à ceux que vous pouvez configurer avec la stratégie de groupe Windows. Toutefois, il est possible que, dans certains cas, les deux méthodes entrent en conflit l’une avec l’autre.
 
-Lorsque des conflits se produisent, la stratégie de groupe au niveau du domaine est prioritaire sur la stratégie Intune, sauf si le PC ne peut pas ouvrir de session sur le domaine. Dans ce cas, la stratégie Intune est appliquée au PC client.
+Lorsque des conflits se produisent, la stratégie de groupe au niveau du domaine est prioritaire sur la stratégie Intune, sauf si le PC ne peut pas se connecter au domaine. Dans ce cas, la stratégie Intune est appliquée au PC client.
 
 ## Que faire si vous utilisez la stratégie de groupe ?
 Vérifiez que toutes les stratégies que vous appliquez ne sont pas gérées par la stratégie de groupe. Pour mieux éviter les conflits, vous pouvez employer une ou plusieurs des méthodes suivantes :
 
 -   Déplacez vos PC vers une unité d’organisation Active Directory à laquelle les paramètres de la stratégie de groupe ne sont pas appliqués avant d’installer le client Intune. Vous pouvez également bloquer l’héritage de la stratégie de groupe sur les unités d’organisation contenant les PC inscrits dans Intune auxquels vous ne voulez pas appliquer les paramètres de la stratégie de groupe.
 
--   Utilisez un filtre de groupe de sécurité pour restreindre les objets de stratégie de groupe aux seuls PC qui ne sont pas gérés par Intune. 
+-   Utilisez un filtre de groupe de sécurité pour restreindre les objets de stratégie de groupe aux seuls PC qui ne sont pas gérés par Intune.
 
 -   Désactivez ou supprimez les objets de stratégie de groupe en conflit avec les stratégies Intune.
 
@@ -102,13 +102,13 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-La stratégie de groupe vous permet d'appliquer des objets de stratégie de groupe (GPO) aux seuls groupes de sécurité spécifiés dans la zone **Filtrage de sécurité** de la console de gestion des stratégies de groupe d'un GPO sélectionné. Par défaut, les GPO s'appliquent aux **Utilisateurs authentifiés**.
+Vous ne pouvez appliquer des objets de stratégie de groupe (GPO) qu’aux groupes de sécurité qui sont spécifiés dans la zone **Filtrage de sécurité** de la console de gestion des stratégies de groupe d’un GPO sélectionné. Par défaut, les GPO s’appliquent aux *Utilisateurs authentifiés*.
 
--   Dans le composant logiciel enfichable **Utilisateurs et ordinateurs Active Directory**, créez un groupe de sécurité contenant les ordinateurs et les comptes d’utilisateur que vous ne souhaitez pas gérer avec Intune. Par exemple, vous pouvez nommer le groupe **Pas dans Microsoft Intune**.
+-   Dans le composant logiciel enfichable **Utilisateurs et ordinateurs Active Directory**, créez un groupe de sécurité contenant les ordinateurs et les comptes d’utilisateurs que vous ne voulez pas gérer avec Intune. Par exemple, vous pouvez nommer le groupe *Pas dans Microsoft Intune*.
 
 -   Dans la console de gestion des stratégies de groupe, sous l’onglet **Délégation** pour le GPO sélectionné, cliquez avec le bouton droit de la souris sur le nouveau groupe de sécurité pour déléguer les autorisations **Lecture** et **Appliquer la stratégie de groupe** appropriées aux utilisateurs et aux ordinateurs dans le groupe de sécurité. (Les autorisations**Appliquer stratégie de groupe** sont disponibles dans la boîte de dialogue **Options avancées** ).
 
--   Ensuite, appliquez le nouveau filtre de groupe de sécurité à un GPO sélectionné et supprimez le filtre par défaut **Utilisateurs authentifiés** .
+-   Ensuite, appliquez le nouveau filtre de groupe de sécurité à un GPO sélectionné et supprimez le filtre par défaut **Utilisateurs authentifiés**.
 
 Le nouveau groupe de sécurité doit être maintenu comme inscription dans les modifications de service Intune.
 
@@ -117,6 +117,6 @@ Le nouveau groupe de sécurité doit être maintenu comme inscription dans les m
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

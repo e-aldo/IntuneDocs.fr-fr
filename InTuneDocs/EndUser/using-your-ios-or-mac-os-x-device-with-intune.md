@@ -4,7 +4,7 @@ description: "Cette rubrique fournit une liste de liens menant aux tâches que v
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Cette page contient des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leurs appareils gérés par Intune. Les administrateurs informatiques peuvent faire référence à ces informations pour voir les étapes que suivent les utilisateurs pour effectuer diverses tâches, lesquelles sont regroupées en catégories : informations sur les inscriptions, tâches de gestion et problèmes de conformité.
+Cet article contient des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leurs appareils gérés par Intune. Les administrateurs informatiques peuvent consulter ces informations pour connaître les étapes que suivent les utilisateurs pour effectuer diverses tâches, lesquelles sont regroupées en plusieurs catégories : 
+- Installation de l’application Portail d’entreprise et inscription Intune 
+- Tâches liées à la gestion post-inscription
+- Problèmes de conformité
 
 ## Installation de l’application Portail d’entreprise et inscription Intune
 
@@ -35,7 +38,7 @@ Les informations contenues dans cette section vous aideront à installer le Port
 
 ## Ce que vous pouvez faire quand votre appareil est inscrit dans Intune
 
-Les informations contenues dans cette section vous indiqueront les actions que vous pourrez entreprendre après l’inscription de votre appareil iOS dans Intune.
+Les informations contenues dans cette section vous indiquent les actions que vous pourrez entreprendre après l’inscription de votre appareil iOS dans Intune.
 
 - [Utiliser des applications gérées sur votre appareil](use-managed-apps-on-your-device-ios.md)
 - [Définir ou modifier votre code secret](set-or-change-your-passcode-ios.md)
@@ -48,12 +51,12 @@ Les informations contenues dans cette section vous indiqueront les actions que v
 
 ## Résoudre les problèmes rencontrés avec votre appareil
 
-Les informations contenues dans cette section vous aideront à résoudre les problèmes que vous pourriez rencontrer après l’inscription de votre appareil iOS dans Intune.
+Les informations contenues dans cette section vous aideront à résoudre les problèmes que vous pouvez rencontrer après l’inscription de votre appareil iOS dans Intune.
 
 - [Comment reconnecter un appareil iOS endommagé](how-to-reconnect-a-compromised-ios-device.md)
 - [Envoyer les erreurs à votre administrateur informatique](send-errors-to-your-it-admin-ios.md)
 - [Vous recevez une erreur lors de l’utilisation de l’application Portail d’entreprise](you-get-an-error-while-using-the-company-portal-app-ios.md)
-- [Vous voyez des erreurs en tentant d’inscrire votre appareil dans Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
+- [Des erreurs se produisent pendant l’inscription de votre appareil dans Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
 - [Vous êtes invité à identifier votre appareil quand vous essayez d’inscrire](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 - [Comment trouver le numéro de série sur mon appareil ?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [L'appareil n'est pas équipé de la version minimale requise du système d'exploitation](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
@@ -61,6 +64,6 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

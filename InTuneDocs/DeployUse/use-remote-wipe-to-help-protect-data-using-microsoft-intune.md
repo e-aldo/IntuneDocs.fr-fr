@@ -13,25 +13,55 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c61fd1070f84f359ac6abe9ff48e51d2787c4eb4
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: a09c9b55d7906ab792bda90b172a36b3656ed6dd
 
 
 ---
 
 # Protégez vos données avec la réinitialisation complète ou sélective à l’aide de Microsoft Intune
-Comme avec les appareils, à un moment donné, vous voulez ou devez [mettre hors service des applications](retire-apps-using-microsoft-intune.md) que vous avez déployées pour des ordinateurs et des appareils mobiles, car elles ne sont plus nécessaires. Vous souhaitez peut-être aussi supprimer les données d’entreprise sur l’appareil. Pour ce faire, Intune propose des fonctionnalités de réinitialisation sélective et de réinitialisation complète. Comme les appareils mobiles peuvent stocker des données d’entreprise sensibles et donner accès à de nombreuses ressources d’entreprise, vous pouvez émettre une commande de réinitialisation d’appareil à distance à partir d’Intune pour réinitialiser un appareil perdu ou volé. Les utilisateurs peuvent émettre aussi une commande de réinitialisation d’appareil à distance à partir d’Intune sur les appareils privés inscrits dans Intune.
+Si un appareil géré n’est plus nécessaire, s’il doit changer de fonction ou s’il a été perdu, vous pouvez effacer les applications et les données qu’il contient avec Intune. Pour ce faire, Intune propose des fonctionnalités de réinitialisation sélective et de réinitialisation complète. Les utilisateurs peuvent également émettre une commande de réinitialisation d’appareil à distance à partir du portail d’entreprise Intune sur les appareils privés inscrits dans Intune.
 
   > [!NOTE]
-  > Cette rubrique concerne uniquement la réinitialisation d’appareils gérés par Intune. Vous pouvez aussi utiliser [le portail Azure en version préliminaire](https://portal.azure.com) pour [réinitialiser les données d’entreprise des applications](wipe-managed-company-app-data-with-microsoft-intune.md).
+  > Cette rubrique concerne uniquement la réinitialisation d’appareils gérés à l’aide de la gestion des appareils mobiles Intune. Vous pouvez aussi utiliser [le portail Azure en version préliminaire](https://portal.azure.com) pour [réinitialiser les données d’entreprise des applications](wipe-managed-company-app-data-with-microsoft-intune.md). Vous pouvez également [mettre hors service des ordinateurs gérés à l’aide du logiciel client Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
 ## réinitialisation complète
 
-
 **Une réinitialisation complète** rétablit les paramètres d’usine d’un appareil et supprime l’ensemble des données et des paramètres de l’entreprise et de l’utilisateur. L’appareil est supprimé d’Intune. La réinitialisation complète est utile pour réinitialiser un appareil avant de le transmettre à un nouvel utilisateur ou dans les cas où l’appareil a été perdu ou volé.  **Faites attention lors de la sélection de la réinitialisation complète. Les données sur l’appareil ne peuvent pas être récupérées**.
+
 
 > [!Warning]
 > Les appareils Windows 10 RTM (c'est-à-dire antérieurs à la version 1511 de Windows 10) ayant moins de 4 Go de RAM risquent de devenir inaccessibles en cas de réinitialisation. Pour accéder à un appareil Windows 10 qui ne répond plus, vous pouvez le démarrer à partir d’un lecteur USB ou utiliser une solution similaire.
+
+### Réinitialiser à distance un appareil à partir de la console d’administration Intune
+
+1.  Sélectionnez les appareils à réinitialiser. Vous les trouverez par utilisateur ou par appareil.
+
+    -   **Par utilisateur :**
+
+        1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les utilisateurs**.
+
+        2.  Cliquez sur le nom de l’utilisateur dont vous souhaitez réinitialiser l’appareil mobile. Choisissez **Afficher les propriétés**.
+
+        3.  Dans la page des **propriétés** de l’utilisateur, sélectionnez **Appareils**, puis le nom de l’appareil mobile à réinitialiser. Utilisez Ctrl + clic pour sélectionner plusieurs appareils.
+
+    -   **Par appareil :**
+
+        1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils mobiles**.
+
+      ![Démarrage d’une mise hors service ou d’une réinitialisation](../media/dev-sa-wipe.png)
+
+        2.  Sélectionnez **Appareils**, puis le nom de l’appareil mobile à réinitialiser. Utilisez Ctrl + clic pour sélectionner plusieurs appareils.
+
+2.  Choisissez **Mettre hors service/Réinitialiser**.
+
+3.  Un message s'affiche vous invitant à confirmer si vous voulez mettre l'appareil hors service ou non.
+
+    -   Pour effectuer une **réinitialisation sélective** qui supprime uniquement les applications et les données d’entreprise, choisissez **Oui**.
+
+    -   Pour effectuer une **Réinitialisation complète** qui efface toutes les applications et les données, puis rétablit les paramètres d’usine de l’appareil, sélectionnez **Réinitialiser l’appareil avant la mise hors service**. Cette action s'applique à toutes les plateformes sauf Windows 8.1. **Vous ne pouvez pas récupérer les données supprimées par une réinitialisation complète**.
+
+Une fois l’appareil allumé et connecté, la propagation de la commande de réinitialisation prend moins de 15 minutes, quel que soit le type de l’appareil.
 
 ## réinitialisation sélective
 
@@ -78,36 +108,6 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |E-mail|Supprime la messagerie électronique compatible avec EFS, qui inclut l'application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non prise en charge|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l'application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
 |Disjonction d'Azure Active Directory (AAD)|Non|Non|Enregistrement AAD supprimé|Non applicable. Windows 10 ne prend pas en charge la réinitialisation sélective pour appareils joints à Azure Active Directory|
 
-### Réinitialiser à distance un appareil à partir de la console d’administration Intune
-
-1.  Sélectionnez les appareils à réinitialiser. Vous les trouverez par utilisateur ou par appareil.
-
-    -   **Par utilisateur :**
-
-        1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les utilisateurs**.
-
-        2.  Cliquez sur le nom de l’utilisateur dont vous souhaitez réinitialiser l’appareil mobile. Choisissez **Afficher les propriétés**.
-
-        3.  Dans la page des **propriétés** de l’utilisateur, sélectionnez **Appareils**, puis le nom de l’appareil mobile à réinitialiser. Utilisez Ctrl + clic pour sélectionner plusieurs appareils.
-
-    -   **Par appareil :**
-
-        1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils mobiles**.
-
-      ![Démarrage d’une mise hors service ou d’une réinitialisation](../media/dev-sa-wipe.png)
-
-        2.  Sélectionnez **Appareils**, puis le nom de l’appareil mobile à réinitialiser. Utilisez Ctrl + clic pour sélectionner plusieurs appareils.
-
-2.  Choisissez **Mettre hors service/Réinitialiser**.
-
-3.  Un message s'affiche vous invitant à confirmer si vous voulez mettre l'appareil hors service ou non.
-
-    -   Pour effectuer une **réinitialisation sélective** qui supprime uniquement les applications et les données d’entreprise, choisissez **Oui**.
-
-    -   Pour effectuer une **Réinitialisation complète** qui efface toutes les applications et les données, puis rétablit les paramètres d’usine de l’appareil, sélectionnez **Réinitialiser l’appareil avant la mise hors service**. Cette action s'applique à toutes les plateformes sauf Windows 8.1. **Vous ne pouvez pas récupérer les données supprimées par une réinitialisation complète**.
-
-La propagation d'une réinitialisation sur tous les types d'appareil prend moins de 15 minutes.
-
 ## Réinitialiser le contenu EFS (Encryption File System)
 La réinitialisation sélective du contenu EFS est prise en charge par Windows 8.1 et Windows RT 8.1. Les éléments suivants s'appliquent à une réinitialisation sélective du contenu EFS :
 
@@ -142,6 +142,6 @@ Pour obtenir un rapport sur les appareils qui ont été mis hors service, réini
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

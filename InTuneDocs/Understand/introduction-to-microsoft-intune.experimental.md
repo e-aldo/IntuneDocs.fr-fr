@@ -1,5 +1,4 @@
 ---
-experimental: true
 experiment_id: kgremban_images_080416
 title: "Présentation de Microsoft Intune | Microsoft Intune"
 description: "Découvrez comment Intune est le composant de gestion des appareils mobiles de la solution Enterprise Mobility + Security."
@@ -15,8 +14,8 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: dbb8a8fdcc39aa91f4d2c0a671447e44daf8570d
+ms.openlocfilehash: 1b5549e4e0ad7652ed39659d7ebe7b95049dcbe6
 
 
 ---
@@ -25,8 +24,6 @@ ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
 Microsoft Intune est l’outil de gestion de Microsoft Enterprise Mobility + Security (EMS, anciennement « Enterprise Mobility Suite »). Grâce à la mobilité d’entreprise, vos employés peuvent travailler sur tous leurs appareils tout en gardant les informations de votre organisation protégées.  
 
 EMS est une suite intégrée complète qui est dédiée à la mobilité d’entreprise incluant la productivité, l’identité, le contrôle d’accès, la gestion et la protection des données. Elle constitue une méthode efficace pour déployer et utiliser une solution de mobilité dans votre organisation.  
-
-![Image de la vision de la mobilité d’entreprise](..\media\em-vision.png)
 
 Intune vous permet de gérer des appareils mobiles et des applications mobiles. Il s’intègre étroitement à Azure Active Directory (Azure AD) pour l’identité et le contrôle d’accès, et à Azure Rights Management (Azure RMS) pour la protection des données.  
 
@@ -38,6 +35,8 @@ Voici quelques-unes des solutions d’Intune pour votre entreprise :
 * Possibilité pour votre organisation de fournir des « appareils partagés » avec des limitations d’utilisation pour les employés
 * Possibilité pour votre organisation d’implémenter une stratégie d’appareils BYOD (Bring Your Own Device) ou personnelle
 * Possibilité pour votre organisation de prendre en charge l’accès des employés à Office 365 à partir d’appareils et d’applications que vous ne contrôlez pas, comme un kiosque à l’entrée d’un salon commercial
+
+![Image de la vision de la mobilité d’entreprise](..\media\em-vision.png)
 
 Voici quelques-uns des principaux outils fournis par Intune :
 * **Gestion des appareils mobiles** : possibilité d’inscrire des appareils dans Intune pour approvisionner, configurer, surveiller et effectuer des opérations sur ces appareils ( comme une réinitialisation)

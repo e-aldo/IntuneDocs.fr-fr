@@ -2,7 +2,7 @@
 title: "Résoudre les problèmes de stratégie | Microsoft Intune"
 description: "Résolvez les problèmes de configuration de stratégie."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,18 +13,15 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
+ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
+ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 
 ---
 
 # Résoudre les problèmes de stratégie dans Microsoft Intune
 
-Vous trouverez ici quelques exemples de problèmes qui peuvent survenir après avoir configuré vos stratégies Microsoft Intune, ainsi que des recommandations pour les résoudre.
-
-Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
-
+Si vous rencontrez des problèmes de déploiement et de gestion des stratégies avec Intune, lisez ce qui suit. Cette rubrique contient certains problèmes courants que vous pouvez rencontrer avec les solutions.
 
 ## La stratégie est-elle appliquée à l’appareil ?
 **Problème :** vous n’êtes pas certain qu’une stratégie est appliquée à un appareil, ou un appareil a un comportement contraire à une stratégie.
@@ -109,6 +106,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
