@@ -75,16 +75,16 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 
 |Nom du paramètre|Détails|
 |----------------|----------------------|
-|**Autoriser le navigateur web**|Permet d’utiliser le navigateur web Edge sur l’appareil.<br>(Windows 10 Mobile uniquement)|
+|**Autoriser le navigateur web**|Permet d’utiliser le navigateur web Microsoft Edge sur l’appareil.<br>(Windows 10 Mobile uniquement)|
 |**Autoriser les suggestions de recherche dans la barre d'adresse**|Permet à votre moteur de recherche de suggérer des sites à mesure que vous saisissez des expressions de recherche.|
 |**Autoriser l'envoi du trafic intranet vers Internet Explorer**|Permet aux utilisateurs d’ouvrir des sites web intranet dans Internet Explorer.<br>(Windows 10 Desktop uniquement)|
-|**Autoriser Do Not Track**|Configure le navigateur Edge pour envoyer des en-êtes Do Not Track aux sites Web que les utilisateurs visitent.|
+|**Autoriser Do Not Track**|Configure le navigateur Microsoft Edge pour envoyer des en-êtes Do Not Track aux sites web que les utilisateurs visitent.|
 |**Activer SmartScreen**|Active le paramètre de navigateur SmartScreen sur les appareils.|
-|**Autoriser les scripts actifs**|Autoriser l'exécution de scripts, tels que JavaScript, dans le navigateur Edge.|
+|**Autoriser les scripts actifs**|Autoriser l’exécution de scripts, tels que JavaScript, dans le navigateur Microsoft Edge.|
 |**Autoriser les fenêtres contextuelles**|Active ou désactive le bloqueur de fenêtres publicitaires du navigateur.<br>(Windows 10 Desktop uniquement)|
 |**Autoriser les cookies**|Autoriser ou désactiver les cookies.|
 |**Autoriser le remplissage automatique**|Autoriser les utilisateurs à modifier les paramètres de saisie semi-automatique dans le navigateur.<br>(Windows 10 Desktop uniquement)|
-|**Autoriser le gestionnaire de mots de passe**|Activer ou désactiver la fonctionnalité Gestionnaire de mots de passe Edge.|
+|**Autoriser le gestionnaire de mots de passe**|Activer ou désactiver la fonctionnalité Gestionnaire de mots de passe Microsoft Edge.|
 |**Emplacement de la liste des sites en mode entreprise**|Indique où trouver la liste des sites web qui s'ouvrent en Mode entreprise. Les utilisateurs ne peuvent pas modifier cette liste.<br>(Windows 10 Desktop uniquement)|
 
 ## - Applications
@@ -308,7 +308,7 @@ Si vous souhaitez utiliser la stratégie URI personnalisée Windows, tous les ap
 |---------------|------------|-----------|
 |**Autoriser ce navigateur**<br>(Mobile uniquement)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** : navigation désactivée<br>**1** : navigation activée (par défaut)|
 |**AllowSearchSuggestionsinAddressBar**<br>(Poste de travail et Mobile)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Ne pas afficher les suggestions de recherche<br>**1** – Afficher les suggestions de recherche (par défaut)|
-|**SendIntranetTraffictoInternetExplorer**<br>(Poste de travail uniquement)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Désactivé (ouvre les sites intranet dans le navigateur Edge – par défaut)<br>**1** – Activé (ouvre les sites intranet dans Internet Explorer)|
+|**SendIntranetTraffictoInternetExplorer**<br>(Poste de travail uniquement)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Désactivé (ouvre les sites intranet dans le navigateur Microsoft Edge – par défaut)<br>**1** – Activé (ouvre les sites intranet dans Internet Explorer)|
 |**Autoriser Do Not Track**<br>(Poste de travail et Mobile)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Désactivé (DNT non envoyé – par défaut)<br>**1** – Activé (envoyer DNT)|
 |**Configurer SmartScreen**<br>(Poste de travail et Mobile)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Ne pas autoriser<br>**1** – Autoriser (par défaut)|
 |**Autoriser les fenêtres contextuelles**<br>(Poste de travail uniquement)|**Chemin complet de l’URI :** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Type de données :** Entier<br /><br />**Valeurs autorisées :**<br>**0** – Bloquer les fenêtres contextuelles (par défaut)<br>**1** – Autoriser les fenêtres contextuelles|

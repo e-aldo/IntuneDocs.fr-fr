@@ -52,7 +52,7 @@ Prêt à vous lancer ? Voici les éléments dont vous avez besoin au début de 
 Vous en avez besoin pour accéder à la console d’administration Intune où vous pouvez gérer les appareils, les applications et les stratégies. Vous avez également besoin d’un navigateur web pour accéder au Portail d’entreprise Intune basé sur le web si vous n’accédez pas à l’application Portail d’entreprise sur un appareil mobile. Pour simplifier les choses, vous pouvez utiliser le paramètre « mode de confidentialité » sur le navigateur dont vous vous servez pour administrer Intune (par exemple : dans Internet Explorer, vous pouvez cliquer sur **Outils** &gt; **Navigation InPrivate**).
 
 >[!TIP]
->En raison de cette exigence, le navigateur Edge de Microsoft n’est pas pris en charge pour l’accès à la console d’administration Intune.
+>En raison de cette exigence, le navigateur Microsoft Edge n’est pas pris en charge pour l’accès à la console d’administration Intune.
 
 
 ### Certificats pour les appareils mobiles
