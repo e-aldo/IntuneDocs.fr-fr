@@ -13,17 +13,18 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 648cc02b47682a58195ee927560763818b6d32ac
+ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
+ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+
 
 
 ---
 
 # Paramètres de stratégie de sécurité des appareils mobiles dans Microsoft Intune
 > [!IMPORTANT]
-> Microsoft Intune offre désormais des stratégies de configuration distinctes pour chaque plateforme d’appareil. Elles contiennent les paramètres les plus récents que vous pouvez utiliser. Vous pouvez continuer à utiliser la stratégie de sécurité des appareils mobiles et tous les déploiements existants continueront de fonctionner. Toutefois, vous devez planifier la migration vers les nouvelles stratégies de configuration dès que possible, car la stratégie de sécurité des appareils mobiles sera bientôt supprimée.
+> Microsoft Intune propose désormais des stratégies de configuration distinctes pour chaque plateforme d’appareil. Ces stratégies contiennent les paramètres les plus récents que vous pouvez utiliser. Vous pouvez continuer à utiliser la stratégie de sécurité des appareils mobiles, tous les déploiements existants continueront de fonctionner. Toutefois, vous devez planifier la migration vers les nouvelles stratégies de configuration dès que possible, car la stratégie de sécurité des appareils mobiles sera bientôt supprimée.
 
-Utilisez des stratégies de sécurité des appareils mobiles Intune pour configurer une grande variété de paramètres que vous pouvez déployer sur les appareils gérés de votre organisation. Ces paramètres peuvent être utilisés pour contrôler les fonctionnalités et la sécurité de vos appareils.
+Vous pouvez utiliser des stratégies de sécurité des appareils mobiles Intune pour configurer une grande variété de paramètres que vous pouvez déployer sur les appareils gérés de votre organisation. Ces paramètres servent à contrôler les fonctionnalités et la sécurité de vos appareils.
 
 Vous pouvez créer et déployer des stratégies de sécurité des appareils mobiles pour les types d'appareils suivants :
 
@@ -38,15 +39,15 @@ Vous pouvez créer et déployer des stratégies de sécurité des appareils mobi
 -   Android et Samsung KNOX
 
 > [!NOTE]
-> Certains paramètres ne sont pas applicables à certains appareils. Consultez le tableau ci-dessous pour obtenir une liste complète des paramètres que vous pouvez configurer.
+> Certains paramètres ne sont pas applicables à certains appareils. Consultez le tableau ci-dessous pour obtenir une liste complète des paramètres configurables.
 
 ## Paramètres de sécurité
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Non|Non|Oui|Oui|Oui|
-|**Type de mot de passe requis**<br /><br />(spécifie le type de mot de passe requis, par exemple, numérique uniquement ou alphanumérique)|Oui|Oui|Oui|Oui|Non|
-|**Type de mot de passe requis - Nombre minimum de jeux de caractères**<br /><br />Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Ce paramètre spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe). Toutefois, pour les appareils iOS, il spécifie le nombre de caractères de symbole devant être inclus dans le mot de passe)|Oui|Oui|Oui|Oui|Non|
+|**Type de mot de passe requis**<br /><br />Ce paramètre spécifie le type de mot de passe exigé, par exemple numérique uniquement ou alphanumérique.|Oui|Oui|Oui|Oui|Non|
+|**Type de mot de passe requis - Nombre minimum de jeux de caractères**<br /><br />Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Ce paramètre spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Toutefois, pour les appareils iOS, il spécifie le nombre de caractères de symbole devant être inclus dans le mot de passe.|Oui|Oui|Oui|Oui|Non|
 |**Longueur minimale du mot de passe**|Oui|Oui|Oui|Oui|Oui|
 |**Autoriser les mots de passe simples**<br /><br />Exemples de mots de passe simples : « 0000 » et « 1234 ».|Non|Non|Oui|Oui|Non|
 |**Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil**|Oui|Oui|Oui|Oui|Oui|
@@ -58,25 +59,25 @@ Vous pouvez créer et déployer des stratégies de sécurité des appareils mobi
 |**Autoriser un mot de passe image et un code confidentiel**|Oui|Oui|Non|Non|Non|
 |**Minutes d'inactivité avant demande du mot de passe**|Non|Non|Non|Oui|Non|
 |**Autoriser le déverrouillage par empreinte digitale**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
-Pour les appareils iOS, quand vous configurez les paramètres **Minutes d’inactivité avant arrêt de l’écran** et **Minutes d’inactivité avant demande du mot de passe**, ils sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
+<sup>1</sup>Pour les appareils iOS, quand vous configurez les paramètres **Minutes d’inactivité avant arrêt de l’écran** et **Minutes d’inactivité avant demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
 
-Quand vous déployez une stratégie de longueur de mot de passe sur des appareils qui exécutent Windows RT, les utilisateurs sont obligés de réinitialiser leur mot de passe, même si leur mot de passe actuel est conforme aux exigences de la stratégie.
+Quand vous déployez une stratégie de longueur de mot de passe sur des appareils qui exécutent Windows RT, les utilisateurs sont obligés de réinitialiser leur mot de passe, même si leur mot de passe actuel est conforme aux exigences de la stratégie.
 
 ## Paramètres de chiffrement
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup><br /><br />Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.|Oui|Non|Oui|Non|Oui|
-|**Exiger le chiffrement sur les cartes de stockage**<br /><br />S’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable (chiffrement automatique des applications et données associées)|Non applicable|Oui|
-Informations supplémentaires pour les appareils qui exécutent Windows 8.1
+|**Exiger le chiffrement sur les cartes de stockage**<br /><br />Ce paramètre s’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable <br />Les données des applications et données associées sont chiffrées automatiquement.|Non applicable|Oui|
+<sup>1</sup>Voici des informations supplémentaires pour les appareils qui exécutent Windows 8.1 :
 
 -   Pour appliquer le chiffrement à des appareils exécutant Windows 8.1, vous devez installer la [Mise à jour du client MDM pour Windows publiée en décembre 2014](http://support.microsoft.com/kb/3013816) sur chaque appareil.
 
--   Si vous activez ce paramètre pour les appareils Windows 8.1, tous les utilisateurs de l'appareil doivent disposer d'un compte Microsoft.
+-   Si vous activez ce paramètre pour les appareils Windows 8.1, tous les utilisateurs de l’appareil doivent disposer d’un compte Microsoft.
 
 -   Pour que le chiffrement fonctionne, l'appareil doit répondre aux conditions de certification matérielle de la spécification [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) de Microsoft.
 
--   Quand vous appliquez le chiffrement à un appareil, vous pouvez uniquement obtenir la clé de récupération à partir du compte Microsoft de l'utilisateur auquel vous devez accéder à partir de son compte OneDrive. Vous ne pouvez pas récupérer cette clé au nom d'un utilisateur.
+-   Quand vous appliquez le chiffrement à un appareil, vous pouvez uniquement obtenir la clé de récupération à partir du compte Microsoft de l’utilisateur, accessible à partir de son compte OneDrive. Vous ne pouvez pas récupérer cette clé au nom d'un utilisateur.
 
 ## Paramètres anti-programme malveillant
 
@@ -90,7 +91,7 @@ Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Exiger les mises à jour automatiques**|Oui|Non|Non|Non|Non|
-|**Exiger les mises à jour automatiques – Classification minimale des mises à jour à installer automatiquement**<br /><br />Choisissez la classification des mises à jour à installer automatiquement :<br /><br />**Importantes** : installe toutes les mises à jour classifiées comme importantes.<br /><br />**Recommandées** : installe toutes les mises à jour classifiées comme importantes ou recommandées.|Oui|Non|Non|Non|Non|
+|**Exiger les mises à jour automatiques – Classification minimale des mises à jour à installer automatiquement**<br /><br />Choisissez la classification des mises à jour à installer automatiquement :<br /><br />- **Importantes**. Installe toutes les mises à jour classifiées comme importantes.<br /><br />- **Recommandées**. Installe toutes les mises à jour classées comme importantes ou recommandées.|Oui|Non|Non|Non|Non|
 |**Autoriser la capture d'écran**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX uniquement)|
 |**Autoriser le centre de contrôle sur l'écran verrouillé**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
 |**Autoriser l'affichage des notifications sur l'écran verrouillé**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
@@ -110,7 +111,7 @@ Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 |**Autoriser la synchronisation des documents dans iCloud**|Non|Non|Non|Oui|Non|
 |**Autoriser la synchronisation du flux de photos dans iCloud**|Non|Non|Non|Oui|Non|
 |**Exiger la sauvegarde chiffrée**|Non|Non|Non|Oui|Non|
-|**URL des dossiers de travail**<br /><br />(définit l'URL du dossier de travail pour autoriser la synchronisation des documents entre les appareils)|Oui|Non|Non|Non|Non|
+|**URL des dossiers de travail**<br /><br />Ce paramètre définit l’URL du dossier de travail pour autoriser la synchronisation des documents entre les appareils.|Oui|Non|Non|Non|Non|
 |**Autoriser la sauvegarde Google**|Non|Non|Non|Non|Oui (Samsung KNOX uniquement)|
 
 ## Paramètres du cloud - comptes et synchronisation
@@ -125,8 +126,8 @@ Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Autoriser les utilisateurs à télécharger des pièces jointes de messages électroniques**<sup>1</sup>|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
-|**Période de synchronisation des messages électroniques** S’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
-|**Autoriser les appareils mobiles qui ne prennent pas entièrement en charge ces paramètres pour se synchroniser avec Exchange (Exchange ActiveSync)** S’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
+|**Période de synchronisation des messages électroniques** <br /><br />Ce paramètre s’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
+|**Autoriser les appareils mobiles qui ne prennent pas entièrement en charge ces paramètres à se synchroniser avec Exchange (Exchange ActiveSync)** <br /><br />Ce paramètre s’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
 |**Rendre le compte Microsoft facultatif dans l'application Windows Mail**|Oui|Non|Non|Non|Non|
 |**Autoriser les comptes de messagerie personnalisés**|Non|Non|Windows Phone 8.1 uniquement|Non|Non|
 
@@ -141,7 +142,7 @@ Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 |**Autoriser les plug-ins**|Oui|Non|Non|Non|Non|
 |**Autoriser les scripts actifs**|Oui|Non|Non|Oui|Oui (Samsung KNOX uniquement)|
 |**Autoriser l'avertissement de fraudes**|Oui|Non|Non|Oui|Non|
-|**Autoriser les sites intranet avec entrée à mot unique**<br /><br />(permet l'utilisation d'un mot unique pour diriger Internet Explorer vers un site web, tel que « Bing »)|Oui|Non|Non|Non|Non|
+|**Autoriser les sites intranet avec entrée à mot unique**<br /><br />Ce paramètre autorise l’utilisation d’un mot unique pour diriger Internet Explorer vers un site web, par exemple « Bing ».)|Oui|Non|Non|Non|Non|
 |**Autoriser la détection automatique des réseaux intranet**|Oui|Non|Non|Non|Non|
 |**Niveau de sécurité pour Internet**|Oui|Non|Non|Non|Non|
 |**Niveau de sécurité pour intranet**|Oui|Non|Non|Non|Non|
@@ -180,11 +181,11 @@ Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 |**Autoriser le Wi-Fi**|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX uniquement)|
 |**Autoriser la connexion Wi-Fi**|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX uniquement)|
 |**Autoriser la connexion automatique aux points d'accès Wi-Fi gratuits**|Non|Non|Windows Phone 8.1 uniquement|Non|Non|
-|**Autoriser l'indication des points d'accès Wi-Fi**<br /><br />(envoyer des informations concernant les connexions Wi-Fi pour détecter les connexions proches)|Non|Non|Windows Phone 8.1 uniquement|Non|Non|
-|**Autoriser la géolocalisation**<br /><br />(permet à l'appareil d'utiliser les informations d'emplacement)|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX uniquement)|
-|**Autoriser NFC**<br /><br />(autorise les opérations qui utilisent la communication en champ proche)|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX uniquement)|
+|**Autoriser l'indication des points d'accès Wi-Fi**<br /><br />Ce paramètre envoie des informations concernant les connexions Wi-Fi pour détecter les connexions proches.|Non|Non|Windows Phone 8.1 uniquement|Non|Non|
+|**Autoriser la géolocalisation**<br /><br />Ce paramètre permet à l’appareil d’utiliser les informations d’emplacement.|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX uniquement)|
+|**Autoriser NFC**<br /><br />Ce paramètre autorise les opérations qui utilisent la communication en champ proche.|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX uniquement)|
 |**Autoriser Bluetooth**|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX uniquement)|
-|**Autoriser l'extinction**<br>Si ce paramètre est désactivé, le paramètre **Nombre d’échecs de connexion répétée autorisé avant réinitialisation de l’appareil** ne fonctionne pas pour les appareils Samsung KNOX.|Non|Non|Non|Non|Oui (Samsung KNOX uniquement)|
+|**Autoriser l'extinction**<br>Si ce paramètre est désactivé, le paramètre **Nombre d’échecs de connexion successifs autorisé avant réinitialisation de l’appareil** pour les appareils Samsung KNOX ne fonctionne pas.|Non|Non|Non|Non|Oui (Samsung KNOX uniquement)|
 
 ## Paramètres des fonctionnalités de l'appareil - cellulaire
 
@@ -207,11 +208,10 @@ Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 |**Autoriser YouTube**|Non|Non|Non|Non|Oui (Samsung KNOX uniquement)|
 
 ### Voir aussi
-[Gérer des paramètres et des fonctionnalités sur vos appareils avec Microsoft Intune policies.md](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

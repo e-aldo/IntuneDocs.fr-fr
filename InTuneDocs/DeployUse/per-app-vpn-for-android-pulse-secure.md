@@ -13,56 +13,53 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
-ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
+ms.sourcegitcommit: a2464a9d2276319f75a3da7db70c2613152bed9b
+ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
 
 
 ---
 
 # Utiliser une stratégie personnalisée pour créer un profil VPN par application pour les appareils Android
 
-Vous pouvez créer un profil VPN par application pour les appareils Android gérés par Intune. Tout d’abord, vous allez créer un profil VPN qui utilise le type de connexion Pulse Secure, puis une stratégie de configuration personnalisée qui associe ce profil à des applications spécifiques. Une fois que vous avez déployé ces stratégies sur vos groupes d’utilisateurs ou d’appareils Android, l’ouverture d’une des applications spécifiées sur ces appareils ouvre une connexion VPN pour cette application.
+Vous pouvez créer un profil VPN par application pour les appareils Android gérés par Intune. Tout d’abord, créez un profil VPN qui utilise le type de connexion Pulse Secure. Ensuite, créez une stratégie de configuration personnalisée qui associe le profil VPN à des applications spécifiques. Une fois que vous avez déployé la stratégie sur vos groupes d’utilisateurs ou d’appareils Android, quand un utilisateur ouvre l’une des applications spécifiées sur l’un de ces appareils, une connexion VPN pour cette application s’ouvre.
 
 > [!NOTE]
-> 
+>
 > Seul le type de connexion sécurisé Pulse Secure est pris en charge pour ce profil.
 
 
 ### Étape 1 : Créer un profil VPN
 
-1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Stratégie** > **Ajouter une stratégie**.
-2. Sélectionnez un modèle pour la nouvelle stratégie en développant **Android**, puis choisissez **Profil VPN (Android 4 et versions ultérieures)**.
-
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Ajouter une stratégie**.
+2. Pour sélectionner un modèle pour la nouvelle stratégie, développez **Android**, puis choisissez **Profil VPN (Android 4 et versions ultérieures)**.
 3. Dans le modèle, pour **Type de connexion**, choisissez **Pulse Secure**.
-4. Renseignez et enregistrez le profil VPN. Pour plus d’informations sur les profils VPN, consultez [Connexions VPN](vpn-connections-in-microsoft-intune.md).
+4. Terminez et enregistrez le profil VPN. Pour plus d’informations sur les profils VPN, consultez [Connexions VPN](../deploy-use/vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
-> 
-> Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante.   Par exemple, **MonProfilVpnApp**.
+>
+> Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante. Par exemple, MonProfilVpnApp.
 
 ### Étape 2 : Créer une stratégie de configuration personnalisée
 
-   1. Dans la console d’administration Intune **Stratégie** -> **Ajouter une stratégie** -> **Android** -> **Configuration personnalisée** -> **Créer une stratégie**.
-   2. Spécifiez un nom pour la stratégie.
-   3. Sous **Paramètres OMA-URI**, cliquez sur **Ajouter**.
-   4. Fournissez un nom de paramètre.
+   1. Dans la console d’administration Intune, choisissez **Stratégie** > **Ajouter une stratégie** > **Android** > **Configuration personnalisée** > **Créer une stratégie**.
+   2. Entrez un nom pour la stratégie.
+   3. Sous **Paramètres OMA-URI**, choisissez **Ajouter**.
+   4. Entrez un nom de paramètre.
    5. Pour **Type de données**, spécifiez **Chaîne**.
    6. Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/PackageList**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/PackageList**.
-   7.   Dans **Valeur**, fournissez une liste séparée par des points-virgules des packages qui doivent être associés au profil.  Par exemple, si vous souhaitez qu’Excel et le navigateur Google Chrome utilisent la connexion VPN, vous devez entrer : **com.microsoft.office.excel;com.android.chrome**.
+   7.   Pour **Valeur**, créez une liste délimitée par des points-virgules des packages à associer au profil. Par exemple, si vous souhaitez qu’Excel et le navigateur Google Chrome utilisent la connexion VPN, entrez : **com.microsoft.office.excel;com.android.chrome**.
 
 
-   ![Exemple de stratégie personnalisée de VPN par application Android](..\media\android_per_app_vpn_oma_uri.png)
-#### Définissez votre liste d’applications comme liste rouge ou liste verte (facultatif)
-Vous pouvez spécifier que votre liste d’applications *ne sera pas* autorisée à utiliser la connexion VPN, à l’aide de la valeur **BLACKLIST**.  Toutes les autres applications se connectent via VPN.
+    ![Exemple de stratégie personnalisée de VPN par application Android](..\media\android_per_app_vpn_oma_uri.png)
 
-Vous pouvez également spécifier que *seules* les applications spécifiées sont en mesure d’utiliser la connexion VPN, à l’aide de la valeur **WHITELIST**.
-
-
-1.  Sous Paramètres OMA-URI, cliquez sur **Ajouter**.
-2.  Fournissez un nom de paramètre.
-3.  Pour **Type de données**, spécifiez **Chaîne**.
-4.  Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/Mode**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/Mode**.
-5.  Dans **Valeur**, entrez **BLACKLIST** ou **WHITELIST**.
+#### Définir votre liste d’applications comme liste rouge ou liste verte (facultatif)
+  Vous pouvez spécifier une liste d’applications qui *ne peuvent pas* utiliser la connexion VPN en utilisant une valeur **BLACKLIST**. Toutes les autres applications se connecteront par le biais du VPN.
+Vous pouvez également utiliser la valeur **WHITELIST** pour spécifier une liste d’applications qui *peuvent* utiliser la connexion VPN. Les applications qui ne figurent pas dans la liste ne se connecteront pas par le biais du VPN.
+  1.    Sous **Paramètres OMA-URI**, choisissez **Ajouter**.
+  2.    Entrez un nom de paramètre.
+  3.    Pour **Type de données**, spécifiez **Chaîne**.
+  4.    Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/Mode**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/Mode**.
+  5.    Pour **Valeur**, entrez **BLACKLIST** ou **WHITELIST**.
 
 
 
@@ -70,18 +67,15 @@ Vous pouvez également spécifier que *seules* les applications spécifiées son
 
 Vous devez déployer *les deux* stratégies sur les *mêmes* groupes Intune.
 
-   1.  Dans l’espace de travail **Stratégie** , sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
-
+1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis choisissez **Gérer le déploiement**.
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
+    -   **Pour déployer la stratégie**, sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis choisissez **Ajouter** > **OK**.
+    -   **Pour fermer la boîte de dialogue sans déployer la stratégie**, choisissez **Annuler**.
 
-    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
-
-    -   **Pour fermer la boîte de dialogue sans la déployer**, cliquez sur **Annuler**.
-
-Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'ensemble** de l'espace de travail **Stratégie** , les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le Tableau de bord contient un récapitulatif de l'état.
+Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'ensemble** de l'espace de travail **Stratégie** , les problèmes liés à la stratégie qui nécessitent votre attention. Le **Tableau de bord** contient aussi un récapitulatif de l’état.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

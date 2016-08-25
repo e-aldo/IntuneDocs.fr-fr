@@ -13,8 +13,8 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 73756fbf4b2b433507ca0f855d0be73b41f6fa5c
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: d4fc57f50e2adf70a49f64174f85dd03709e8ce3
 
 
 ---
@@ -23,10 +23,10 @@ ms.openlocfilehash: 73756fbf4b2b433507ca0f855d0be73b41f6fa5c
 
 Vos réponses aux questions suivantes vous permettront de déterminer la méthode d’inscription qui convient le mieux pour les appareils que vous gérez.
 
-## **Les employés apportent-ils leurs propres appareils ou ceux-ci sont-ils fournis par l’entreprise ?**
+## **Les employés apportent-ils leurs propres appareils (BYOD) ou ceux-ci sont-ils fournis par l’entreprise (COD) ?**
 
 > [!div class="button"]
-[Inscription BYOD >](choose-how-to-enroll-devices2.md)   [Inscription d’un appareil d’entreprise >](choose-how-to-enroll-devices3.md)
+[BYOD >](choose-how-to-enroll-devices2.md)   [COD >](choose-how-to-enroll-devices3.md)
 
 - **Appareils personnels** : inscription de type « BYOD » (Apportez votre propre appareil). Les utilisateurs peuvent installer sur leur appareil l’application Portail d’entreprise Intune, puis inscrire leur appareil pour pouvoir accéder aux ressources d’entreprise telles que la messagerie, les applications d’entreprise, les données d’entreprise et le support.  
 

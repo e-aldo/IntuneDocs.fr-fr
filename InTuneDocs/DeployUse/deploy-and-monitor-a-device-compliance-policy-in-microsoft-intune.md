@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # Déployer et contrôler une stratégie de conformité d’appareils dans Microsoft Intune
 ## Déployer une stratégie de conformité
-Déployez la stratégie de conformité que vous avez [créée](create-a-device-compliance-policy-in-microsoft-intune.md) vers un ou plusieurs groupes d’utilisateurs ou d’appareils de votre organisation.
+Déployez la stratégie de conformité que vous avez [créée](create-a-device-compliance-policy-in-microsoft-intune.md) sur un ou plusieurs groupes d’utilisateurs de votre organisation. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée.
 
 1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis choisissez **Gérer le déploiement**.
 ![Capture d’écran de la page de stratégie de conformité montrant l’option de menu Gérer le déploiement en haut](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  Dans la boîte de dialogue **Gérer le déploiement**, choisissez un ou plusieurs groupes vers lesquels vous voulez déployer la stratégie, puis choisissez **Ajouter > OK**.
-![Capture d’écran de la boîte de dialogue Gérer le déploiement](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Vous pouvez déployer une stratégie de conformité pour des utilisateurs et/ou des appareils. Utilisez des groupes Active Directory que vous avez déjà créés et synchronisés avec Intune, ou créez ces groupes manuellement dans la console Intune. Pour en savoir plus sur la manière de déployer des stratégies, consultez [Déployer une stratégie de configuration](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+![Capture d’écran de la boîte de dialogue Gérer le déploiement](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Vous pouvez déployer une stratégie de conformité pour des utilisateurs. Utilisez des groupes Active Directory que vous avez déjà créés et synchronisés avec Intune, ou créez ces groupes manuellement dans la console Intune. Pour en savoir plus sur la manière de déployer des stratégies, consultez [Déployer une stratégie de configuration](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 Utilisez le récapitulatif de l’état et les alertes dans la page **Vue d’ensemble** de l’espace de travail **Stratégie** pour identifier les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le **Tableau de bord** contient un récapitulatif de l'état.
 
@@ -72,6 +72,6 @@ Vous pouvez désormais utiliser la stratégie de conformité avec des stratégie
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

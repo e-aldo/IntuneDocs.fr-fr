@@ -13,8 +13,8 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 5e163cf4e8190d0bc967415f1d907465e4e13f36
+ms.sourcegitcommit: ffc9a753f2f5ff2aa98a589b752936d67a0888b5
+ms.openlocfilehash: cefe90cdb0cda5ada259576af7cf477642860446
 
 
 ---
@@ -23,10 +23,10 @@ ms.openlocfilehash: 5e163cf4e8190d0bc967415f1d907465e4e13f36
 Microsoft Intune peut vous aider à gérer les mises à jour des applications. Utilisez les informations de cette rubrique pour découvrir comment mettre à jour des applications quand une nouvelle version est nécessaire.
 
 ## Mise à jour des applications
-Quand une nouvelle version d’une application que vous avez déployée est publiée, Intune vous permet de mettre à jour et de déployer la version la plus récente de l’application. Vous pouvez uniquement remplacer un déploiement par une version plus récente de la même application (en utilisant le même identificateur). Vous ne pouvez pas utiliser les mises à jour d'application pour mettre à jour un déploiement avec un package d'application différent.
+Quand une nouvelle version d’une application que vous avez déployée est publiée, Intune vous permet de mettre à jour et de déployer la version la plus récente de l’application. Vous pouvez uniquement remplacer un déploiement par une version plus récente de la même application (ayant le même identificateur). Vous ne pouvez pas utiliser les mises à jour d'application pour mettre à jour un déploiement avec un package d'application différent.
 
 ### Identificateurs d’application
-L’identificateur d’application est une propriété qui identifie une application de façon unique. Vous ne pouvez pas installer plusieurs copies d’une application ayant le même identificateur. Par exemple :
+L’identificateur d’application est une propriété qui identifie une application de façon unique. Vous ne pouvez pas installer plusieurs copies d’une application ayant le même identificateur. Voici quelques exemples d’identificateurs d’applications :
 
 - **iOS** : ID de lot (par exemple : com.microsoft.excel)
 - **Android** : ID de package (par exemple : com.microsoft.excel)
@@ -37,7 +37,7 @@ L’identificateur d’application est une propriété qui identifie une applica
 
 > [!IMPORTANT]
 > Lorsque vous déployez une application avec une action de déploiement de type **Installation requise** et que vous changez ultérieurement l'action de déploiement en **Installation disponible**, les mises à jour de l'application ne sont pas installées automatiquement sur les appareils où l'application a été installée avant que la modification du déploiement n'ait eu lieu. Pour résoudre ce problème, vous pouvez procédez comme suit :
-> 
+>
 > -   L’utilisateur de l’appareil doit accéder au portail d’entreprise, sélectionner l’application installée et choisir **Installer**.
 > -   Modifiez l'action de déploiement en **Désinstaller**et, une fois que l'application a été désinstallée, redéployez l'application avec une action de déploiement de type **Installation disponible**.
 
@@ -53,13 +53,11 @@ L’identificateur d’application est une propriété qui identifie une applica
 
 La prochaine fois que les appareils vérifient si des applications sont disponibles, l'application est automatiquement mise à jour vers la dernière version.
 Pour les applications installées à partir d’un package d’application (applications cœur de métier), l’application est automatiquement mise à niveau pour les déploiements obligatoires et disponibles, à condition que l’application ait le même identificateur.
+
 Pour les applications déployées via un lien redirigeant vers un magasin, la mise à jour est gérée par le magasin d’origine de l’application.
 
 
 
-
-
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

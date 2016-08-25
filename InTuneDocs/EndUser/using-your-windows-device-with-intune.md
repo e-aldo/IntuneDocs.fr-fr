@@ -13,15 +13,18 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 85e6b4c4e507b83ba4a5f104e552e5a4f1fd68f2
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 
 
 ---
 
 # Utilisation de votre appareil Windows avec Intune
 
-Cette page contient des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leurs appareils gérés par Intune. Les administrateurs informatiques peuvent faire référence à ces informations pour voir les étapes que suivent les utilisateurs pour effectuer diverses tâches, lesquelles sont regroupées en catégories : informations sur les inscriptions, tâches de gestion et problèmes de conformité.
+Cet article contient des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leurs appareils gérés par Intune. Les administrateurs informatiques peuvent consulter ces informations pour connaître les étapes que suivent les utilisateurs pour effectuer diverses tâches, lesquelles sont regroupées en plusieurs catégories : 
+- Installation de l’application Portail d’entreprise et inscription Intune 
+- Tâches liées à la gestion post-inscription
+- Problèmes de conformité
 
 ## Installation de l’application Portail d’entreprise et inscription Intune
 
@@ -57,6 +60,6 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

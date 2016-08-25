@@ -13,8 +13,8 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
+ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
+ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
 
 
 ---
@@ -32,7 +32,8 @@ La syntaxe de Get-AppxPackage est la suivante :
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> Remarque : Vous devez peut-être exécuter PowerShell en tant qu’administrateur pour récupérer le PFN
+> [!NOTE]
+Vous devrez peut-être exécuter PowerShell en tant qu’administrateur pour récupérer le PFN.
 
 Par exemple, pour obtenir des informations sur toutes les applications universelles installées sur l’ordinateur, utilisez `Get-AppxPackage`.
 
@@ -67,13 +68,12 @@ Voici les informations récupérées pour OneNote :
 
 ## Rechercher un PFN si l’application n’est pas installée sur un ordinateur
 
-1.  Accédez à https://www.microsoft.com/fr-fr/store/apps
+1.  Accédez à https://www.microsoft.com/fr-fr/store/apps.
 2.  Entrez le nom de l’application dans la barre de recherche. Dans notre exemple, recherchez OneNote.
-3.  Cliquez sur le lien vers l’application. Notez que l’URL à laquelle vous accédez se termine par une série de lettres. Dans notre exemple, l’URL ressemble à ceci :
-`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.  Sous un autre onglet, collez l’URL suivante, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`, en remplaçant `<app id>` par l’ID d’application que vous avez obtenu de https://www.microsoft.com/fr-fr/store/apps : la série de lettres à la fin de l’URL à l’étape 3. Dans notre exemple avec OneNote, vous devez coller : `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.  Choisissez le lien vers l’application. Notez que l’URL se termine par une série de lettres. Dans notre exemple, l’URL ressemble à ceci : `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
+4.  Sous un autre onglet, collez l’URL suivante : `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Remplacez `<app id>` par l’ID d’application que vous avez obtenu de https://www.microsoft.com/fr-fr/store/apps : la série de lettres à la fin de l’URL à l’étape 3. Dans notre exemple avec OneNote, vous devez coller : `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-Dans Microsoft Edge, les informations que vous voulez s’affichent. Dans Internet Explorer, cliquez sur **Ouvrir** pour visualiser les informations. La valeur du PFN figure sur la première ligne. Voici à quoi ressemblent les résultats pour notre exemple :
+Microsoft Edge affiche les informations souhaitées. Dans Internet Explorer, choisissez **Ouvrir** pour visualiser les informations. La valeur du PFN figure sur la première ligne. Voici les résultats de notre exemple :
 
 
 `{`
@@ -85,6 +85,6 @@ Dans Microsoft Edge, les informations que vous voulez s’affichent. Dans Intern
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

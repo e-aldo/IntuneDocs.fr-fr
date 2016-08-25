@@ -13,8 +13,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
-ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 ## Créer une configuration personnalisée
 Vous pouvez utiliser des configurations personnalisées pour créer des profils VPN dans Intune. Pour créer une configuration personnalisée
 
-   1. Dans la console d’administration Intune **Stratégie** -> **Ajouter une stratégie** -> *<Expand platform>* -> **Configuration personnalisée** -> **Créer une stratégie**.
+   1. Dans la console d’administration Intune, **Stratégie** > **Ajouter une stratégie** > *<Expand platform>* > **Configuration personnalisée** > **Créer une stratégie**.
    2. Spécifiez un nom pour la stratégie.
-   3. Pour chaque paramètre d’URI, cliquez sur **Ajouter** et fournissez les informations demandées. Voici un exemple :
+   3. Pour chaque paramètre d’URI, choisissez **Ajouter** et fournissez les informations demandées. Voici un exemple :
 
    ![Boîte de dialogue de configuration personnalisée de profil VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Une fois que vous avez entré tous les paramètres d’URI, cliquez sur **Enregistrer la stratégie**, puis déployez la stratégie.
+   4.  Une fois que vous avez entré tous les paramètres d’URI, choisissez **Enregistrer la stratégie**, puis déployez la stratégie.
 
 ## Déployer une stratégie de configuration
 
-1.  Dans l’espace de travail **Stratégie** , sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
+1.  Dans l’espace de travail **Stratégie**, choisissez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
 
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
 
-    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
+    -   **Pour déployer la stratégie** : choisissez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
 
-    -   **Pour fermer la boîte de dialogue sans la déployer**, cliquez sur **Annuler**.
+    -   **Pour fermer la boîte de dialogue sans la déployer**, choisissez **Annuler**.
 
-Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’autres informations sur le déploiement dans la partie inférieure de la liste de stratégies.
+Quand vous choisissez une stratégie déployée, vous pouvez afficher d’autres informations sur le déploiement dans la partie inférieure de la liste de stratégies.
 
 ##Exemple de paramètres d’URI pour une configuration de profil VPN personnalisée
-Voici des exemples d’entrées de valeurs d’URI pour créer une configuration personnalisée d’un VPN dans une société fictive nommée Contoso. Pour plus d’informations, telles que le type de données pour chaque entrée, consultez [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+Voici des exemples d’entrées de valeurs d’URI pour créer une configuration personnalisée d’un VPN dans une société fictive nommée Contoso. Pour plus d’informations, telles que le type de données pour chaque entrée, consultez [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 VPN Contoso natif (IKEv2) : ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,7 +83,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Pour toute question sur la façon dont ces paramètres doivent être utilisés, ou pour plus d’informations sur ce qu’ils font, consultez la documentation du fournisseur de services de configuration (CSP) : https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+Pour toute question sur la façon dont ces paramètres doivent être utilisés, ou pour plus d’informations sur ce qu’ils font, consultez la documentation du fournisseur de services de configuration (CSP) : https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## Paramètres d’URI pour les VPN Android par application sur PulseSecure
 ### URI PERSONNALISÉ POUR LA LISTE DES PACKAGES
@@ -112,6 +112,6 @@ Exemples :
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

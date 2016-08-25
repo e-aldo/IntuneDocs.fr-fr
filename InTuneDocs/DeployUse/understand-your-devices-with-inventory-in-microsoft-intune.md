@@ -4,7 +4,7 @@ description: "Cette rubrique explique comment utiliser Intune pour afficher des 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -42,10 +42,10 @@ Pour afficher l’inventaire recueilli par les appareils mobiles, exécutez les 
 |**ID Exchange ActiveSync**|Tous les appareils|
 |**Jailbroken ou rootés**|Appareils iOS et Android uniquement|
 |**ID d'appareil unique**|Tous les appareils à l’exception d’Exchange ActiveSync|
-|**Numéro de série**|Appareils iOS, Mac OS X, Android, Windows 8.1, Windows 10|
-|**Espace de stockage total**|Appareils iOS, Mac OS X, Windows 8.1, Windows 10|
-|**Espace de stockage libre**|Appareils iOS, Mac OS X, Windows 8.1, Windows 10|
-|**Numéro de téléphone**<br>Les téléphones classés comme appartenant à l’entreprise sont identifiés avec leur numéro de téléphone complet, par exemple, lorsque vous exécutez un rapport d’inventaire des appareils mobiles. Les numéros de téléphone de type « BYOD » sont masqués avec &#42 ; seuls les 4 derniers chiffres s’affichent.|Appareils iOS, Android et Windows Phone|
+|**Numéro de série**|Appareils iOS, Mac OS X, Android, Windows 8.1 et Windows 10|
+|**Espace de stockage total**|Appareils iOS, Mac OS X, Windows 8.1 et Windows 10|
+|**Espace de stockage libre**|Appareils iOS, Mac OS X, Windows 8.1 et Windows 10|
+|**Numéro de téléphone**<br>Les téléphones classés comme appartenant à l’entreprise sont identifiés avec leur numéro de téléphone complet (par exemple quand vous exécutez un rapport d’inventaire des appareils mobiles). Les numéros de téléphone de type « BYOD » sont masqués avec &#42;, et seuls les quatre derniers chiffres sont affichés.|Appareils iOS, Android et Windows Phone|
 |**IMEI**|Appareils Exchange ActiveSync, iOS, Android et Windows Phone|
 |**MEID**<br>MEID (Mobile Equipment Identifier)|Appareils iOS uniquement|
 |**Adresse MAC du réseau Wi-Fi**|Tous les appareils à l’exception d’Exchange ActiveSync|
@@ -59,11 +59,11 @@ Pour afficher l’inventaire recueilli par les appareils mobiles, exécutez les 
 |**Verrou d’activation activé**|Appareils iOS uniquement|
 |**Chiffrement activé**|Tous les appareils|
 
-## Qu’est-ce qui est collecté auprès des PC Windows ?
+## Qu’est-ce qui est collecté auprès des PC Windows ?
 > [!IMPORTANT]
 > Cette section s’applique uniquement aux ordinateurs Windows qui exécutent le logiciel client Intune Windows PC.
 
-Pour afficher l’inventaire recueilli par les ordinateurs Windows, exécutez les [rapports d’inventaire des ordinateurs](understand-microsoft-intune-operations-by-using-reports.md). Intune collecte l’inventaire suivant auprès des PC Windows :
+Pour afficher l’inventaire recueilli par les PC Windows, exécutez les [rapports d’inventaire des ordinateurs](understand-microsoft-intune-operations-by-using-reports.md). Intune collecte l’inventaire suivant auprès des PC Windows :
 
 -   **Nom**
 
@@ -114,6 +114,6 @@ Pour afficher l’inventaire recueilli par les ordinateurs Windows, exécutez le
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

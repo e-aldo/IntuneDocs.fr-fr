@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
-ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 31c91609b913034ad3aaae0950145d4db5f59a0a
 
 
 ---
@@ -201,12 +201,13 @@ Cette fonctionnalité est conçue pour vous permettre de déployer les paramètr
 
 - [Création d’un profil Wi-Fi avec une clé prépartagée](pre-shared-key-wi-fi-profile.md)
 - [Utiliser une stratégie personnalisée pour créer un profil VPN par application pour les appareils Android](per-app-vpn-for-android-pulse-secure.md)
+- [Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 
 ### Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

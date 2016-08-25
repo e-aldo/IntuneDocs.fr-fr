@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -233,6 +233,77 @@ Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS
 |**Autoriser l’utilisateur à installer des profils de configuration et des certificats**|Autoriser l’utilisateur à installer des profils de configuration et des certificats.|
 |**Autoriser l’utilisation de l’application Messages sur l’appareil**|Autoriser l’utilisation de l’application Messages pour envoyer des SMS.|
 
+### Afficher ou masquer des applications
+
+Utilisez la **Liste des applications masquées et affichées** pour contrôler les éléments suivants sur les appareils supervisés exécutant iOS 9.3 ou version ultérieure :
+
+- Spécifier une liste d’applications à masquer aux utilisateurs. Les utilisateurs ne peuvent pas afficher ou lancer ces applications.
+- Spécifier une liste d’applications que les utilisateurs peuvent afficher et lancer. Aucune autre application ne peut être affichée ou lancée.
+
+
+#### Comment créer une liste des applications masquées et affichées
+
+Spécifiez les paramètres suivants :
+
+|Nom du paramètre|Détails|
+|-|-|
+|**Liste des applications masquées et affichées**|Activez ce paramètre si vous souhaitez créer une liste des applications masquées ou affichées.|
+|**Masquer les applications répertoriées aux utilisateurs**|Sélectionnez cette option si vous souhaitez créer une liste d’applications qui ne seront pas visibles par les utilisateurs.|
+|**Afficher seulement les applications répertoriées aux utilisateurs**|Sélectionnez cette option si vous souhaitez créer une liste d’applications qui seront visibles par les utilisateurs.<br>Quand vous créez ce type de liste, toutes les autres applications à l’exception des applications iOS **Paramètres** et **Téléphone** (pour iPhone) sont masquées.<br>En outre, vous devez ajouter à la liste le Portail d’entreprise et les applications que vous avez déployées et que vous gérez avec Intune.|
+|**Ajouter**|Ajoute une application à la liste sélectionnée.<br>Pour la liste masquée, vous devez spécifier le **Nom**, l’**Éditeur** et l’**URL de l’application ou ID du lot** de chaque application que vous souhaitez masquer.<br>Pour la liste affichée, vous pouvez soit **Sélectionner une application gérée** (ce qui vous permet de sélectionner parmi la liste des applications que vous gérez avec Intune), soit Sélectionner une application du Store, après quoi vous devez spécifier le **Nom**, l’**Éditeur** et l’**URL de l’application ou ID du lot** de chaque application que vous souhaitez afficher.|
+|**Importer des applications**|Importe une liste d'applications que vous avez spécifiée dans un fichier de valeurs séparées par des virgules. Utilisez le format Nom de l'application, Éditeur, URL de l'application dans le fichier.|
+|**Éditer**|Vous permet de modifier le nom, l'éditeur et l'URL de l'application sélectionnée.|
+|**Supprimer**|Supprime l'application sélectionnée dans la liste.|
+
+#### Informations sur les applications iOS intégrées
+
+Utilisez les informations de cette liste pour identifier le nom, l’éditeur et l’ID de lot des applications iOS intégrées que vous pouvez afficher ou masquer. Si vous souhaitez afficher ou masquer toutes les applications de la liste, vous pouvez copier les données ci-dessous dans un fichier texte avec l’extension **.csv**, puis utiliser l’option **Importer des applications** pour importer toutes les applications simultanément.
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## Paramètres de la stratégie personnalisée
 
@@ -266,6 +337,6 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

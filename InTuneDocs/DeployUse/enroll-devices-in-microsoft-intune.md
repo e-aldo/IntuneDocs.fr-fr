@@ -13,14 +13,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: 41c21da7c95ef15f817aa344aa5b2d6479b65922
+ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
+ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
 
 
 ---
 
 # Inscrire des appareils pour la gestion dans Intune
 La gestion des appareils mobiles Microsoft Intune utilise l’inscription pour gérer les appareils et leur autoriser l’accès aux ressources. La façon dont vous inscrivez les appareils dépend du type d’appareil, de son propriétaire et du niveau de gestion souhaité. Les scénarios « Apportez votre propre appareil » (BYOD) et les scénarios d’appareils d’entreprise (COD) nécessitent un processus d’inscription. Les organisations qui utilisent Exchange ActiveSync (soit localement, soit hébergé dans le cloud) peuvent activer une gestion allégée sans conditions d’inscription. Vous pouvez également gérer des PC Windows à l’aide du logiciel client Intune.
+
+Pour obtenir de l’aide, consultez [Choisir comment inscrire des appareils](/intune/get-started/choose-how-to-enroll-devices1).
 
 ###  Plateformes d’appareil prises en charge
 
@@ -149,6 +151,6 @@ Les ordinateurs gérés avec le logiciel client Intune ne peuvent pas être réi
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

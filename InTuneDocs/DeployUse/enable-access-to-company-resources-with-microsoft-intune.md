@@ -13,8 +13,8 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: ae9b3be57e4008d25f5222025c057fc4211f1119
+ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
+ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
 
 
 ---
@@ -24,15 +24,15 @@ Les profils Wi-Fi, VPN et de messagerie œuvrent ensemble pour aider vos utilisa
 
 ## [Profils Wi-Fi](wi-fi-connections-in-microsoft-intune.md) et plateformes prises en charge
 
-Déployez les paramètres de réseau sans fil sur vos utilisateurs. En déployant ces paramètres, vous réduisez l'effort que doit fournir l'utilisateur final pour se connecter au réseau d'entreprise.
+Déployez les paramètres de réseau sans fil sur vos utilisateurs. Ces paramètres permettent à vos utilisateurs de se connecter facilement au réseau d’entreprise.
 #### Plateformes prises en charge
 
 |Windows 8.1 et versions ultérieures|Windows Phone 8.1 et versions ultérieures|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|Oui (vous pouvez importer un profil Wi-Fi Windows)|Oui (vous pouvez configurer OMA-URI) |Oui|Oui|Oui|
+|Oui (Vous pouvez importer un profil Wi-Fi Windows.)|Oui (Vous pouvez configurer OMA-URI.) |Oui|Oui|Oui|
 
 ## [Profils VPN](vpn-connections-in-microsoft-intune.md) et plateformes prises en charge
-Déployez les paramètres de réseau privé virtuel (VPN, Virtual Private Network) vers vos utilisateurs. En déployant ces paramètres, vous réduisez l'effort que doit fournir l'utilisateur final pour se connecter aux ressources du réseau d'entreprise.
+Déployez les paramètres de réseau privé virtuel (VPN, Virtual Private Network) sur vos utilisateurs. Ces paramètres permettent aux utilisateurs de se connecter facilement aux ressources sur le réseau d’entreprise.
 
 |Windows 8.1 et versions ultérieures|Windows Phone 8.1 et versions ultérieures|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
@@ -56,6 +56,6 @@ Contribuez à sécuriser l'accès aux ressources d'entreprise, notamment les ré
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
