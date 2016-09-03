@@ -13,8 +13,8 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: d321930262a9bcf9542c757fdf0b945d0419930c
+ms.sourcegitcommit: ab7ccf4c72f8e8f3c67c65d99563fe6fbfdd42b9
+ms.openlocfilehash: 94c761071f4b578440297859662102b2b3080899
 
 
 ---
@@ -24,6 +24,7 @@ Après avoir déployé Microsoft Intune, il se peut que vous rencontriez quelque
 
 > [!NOTE]
 > Pour créer une demande de support technique ou examiner une demande existante, [visitez le centre d’administration Office 365](https://portal.office.com/admin/default.aspx). Pour plus d’informations sur les options de support technique, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
 ## Définir le problème
 
 -   Quel est le comportement ?
@@ -92,6 +93,6 @@ Les rubriques répertoriées ci-dessous proposent une aide à la résolution de 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

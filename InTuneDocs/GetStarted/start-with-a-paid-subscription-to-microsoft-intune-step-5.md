@@ -2,7 +2,7 @@
 title: "Créer des groupes pour organiser les utilisateurs et les appareils | Microsoft Intune"
 description: "Cette rubrique explique comment créer des utilisateurs et des groupes pour votre abonnement Intune"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: afdff3d04fa0b6aeba44a3296147ebf207319c49
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 07a2de6922f6b3f3a2b56dfc6bbe4e5f09c7d976
 
 
 ---
@@ -60,7 +60,7 @@ Les groupes d'utilisateurs permettent de déployer des stratégies d'appareils e
 
 5.  Dans la page **Définir l’appartenance directe**, cliquez sur **Suivant**. Vous n'avez pas besoin de faire quoi que ce soit ici, car vous voulez que le groupe Utilisateurs Intune intègre tous les utilisateurs, à l'exception de l'administrateur de la société.
 
-6.  Dans la page **Résumé**, passez en revue les actions à entreprendre, puis choisissez **Terminer**.
+6.  Dans la page **Résumé**, passez en revue les actions à entreprendre, puis cliquez sur **Terminer**.
 
 Le groupe récemment créé est disponible dans la liste **Groupes**, dans l’espace de travail **Groupes**, sous **Tous les utilisateurs**. À ce stade, vous pouvez également modifier ou supprimer le groupe.
 
@@ -75,6 +75,6 @@ Félicitations ! Vous venez d’effectuer l’étape 5 du *Guide de démarrage
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
