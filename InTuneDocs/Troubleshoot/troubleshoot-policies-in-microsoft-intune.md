@@ -4,7 +4,7 @@ description: "Résolvez les problèmes de configuration de stratégie."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
-ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
@@ -46,17 +46,6 @@ La capture d’écran ci-dessous illustre clairement ce point à travers deux ex
 
 > [!NOTE]
 > N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
-
-## Stratégie d’actualisation et intervalles de mise à jour
-Sachez que les stratégies sont actualisées et mises à jour à intervalles réguliers. En général, les stratégies doivent être inscrites sur les appareils dans les 15 minutes qui suivent une modification. Voici quelques détails supplémentaires sur les intervalles réguliers d’actualisation de stratégie :
-
--   **Appareil Windows inscrit pour la gestion des appareils mobiles** : la stratégie est mise à jour toutes les 8 heures pour les appareils Windows 8.1 et Windows 10 et toutes les 24 heures pour les appareils Windows RT.
-
--   **Windows Phone** : la stratégie est mise à jour toutes les huit heures. Vous pouvez forcer la mise à jour en effectuant une actualisation dans le portail d’entreprise, sous **Paramètres**.
-
--   **iOS** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le portail d’entreprise, en sélectionnant l’appareil et en choisissant **Synchroniser**.
-
--   **Android** : la stratégie est mise à jour une fois par jour à un intervalle de temps aléatoire. Vous pouvez aussi forcer la mise à jour en ouvrant le portail d’entreprise, en sélectionnant l’appareil et en choisissant **Synchroniser**.
 
 ## Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
 Pour les appareils Windows non soumis à la gestion des appareils mobiles, les erreurs de stratégie dans le fichier policyplatform.log peuvent être dues à des paramètres définis sur des valeurs autres que les valeurs par défaut dans le Contrôle de compte d’utilisateur Windows sur l’appareil. Certains paramètres de Contrôle de compte d’utilisateur autres que les paramètres par défaut peuvent affecter les installations du client Microsoft Intune et l’exécution des stratégies.
@@ -93,9 +82,6 @@ Par exemple, dans Windows RT, sur le bureau, balayez à partir de la droite pour
 Au bas du menu de navigation gauche figure le lien **Réinitialiser les stratégies de sécurité**. Choisissez-le, puis choisissez le bouton **Réinitialiser les stratégies**.
 Pour pouvoir appliquer une stratégie moins restrictive, vous devrez peut-être retirer les autres appareils GPM (par exemple, Android, Windows Phone 8.1 et versions ultérieures et iOS), puis les réinscrire dans le service.
 
-## Les appareils Android n’imposent pas les changements de stratégie de sécurité sans l’approbation de l’utilisateur final
-La fonctionnalité GPM Android n’autorise pas le service à imposer des modifications à la stratégie initiale sur les appareils comme l’y autorisent d’autres plateformes. Cela est dû à une fonctionnalité Android et n’a pas de lien avec le service Intune. Les appareils Android affichent une invite à l’utilisateur final via la fenêtre qui notifie la modification de stratégie correspondante (par exemple, Mot de passe, Chiffrement, etc.).  L’utilisateur final doit répondre à l’invite et dès lors qu’il a accepté la stratégie, elle doit s’appliquer.
-
 ## Impossible de créer une stratégie ou d’inscrire des clients si le nom de l’entreprise contient des caractères spéciaux
 **Problème :** vous ne pouvez pas créer des stratégies, ni inscrire des clients.
 
@@ -106,6 +92,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

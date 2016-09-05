@@ -2,7 +2,7 @@
 title: "Intégration d’Intune avec les services cloud Microsoft | Microsoft Intune"
 description: "Intégration d’Intune avec les produits et services cloud Microsoft et d’autres produits Microsoft"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 6523c731e8351b121cba46f6c5d2ef46db656c2c
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 83020d347a4bc036778d830f5189e68e7f8d85da
 
 
 ---
@@ -25,7 +25,7 @@ Avant de configurer [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], co
 ##Intégration dans d'autres services cloud Microsoft
 
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] partage une base commune avec d'autres services cloud Microsoft. Lorsque vous utilisez le même compte pour vous abonner à plusieurs services cloud, ces services utilisent la même infrastructure Microsoft Azure AD et sont clients d'Azure AD. Azure AD fournit les principales fonctionnalités d'annuaire et de gestion des identités pour les services cloud Microsoft.
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] partage une base commune avec d'autres services cloud Microsoft. Lorsque vous utilisez le même compte pour vous abonner à plusieurs services cloud, ces services utilisent la même infrastructure Microsoft Azure AD et sont clients d'Azure AD. Azure AD fournit les principales capacités d'annuaires et de gestion des identités pour les services cloud Microsoft.
 
 En savoir plus sur l’[administration d’Azure AD](http://technet.microsoft.com/library/hh967611.aspx) dans la bibliothèque TechNet.
 
@@ -43,6 +43,6 @@ Pour plus d’informations, consultez [Gérer les appareils mobiles avec Configu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

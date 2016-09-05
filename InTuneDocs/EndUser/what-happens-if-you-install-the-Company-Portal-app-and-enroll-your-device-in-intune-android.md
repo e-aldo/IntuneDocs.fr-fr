@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 6562ca63abb509bebe5fc8aa4764da8ed3a8e0f4
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
 
 
 ---
@@ -35,7 +35,7 @@ Après avoir installé l’application Portail d’entreprise et inscrit votre a
 
 Quand vous inscrivez votre appareil Android, vous autorisez votre administrateur informatique à accéder à l’appareil. Ils peuvent effectuer les opérations suivantes :
 
--   Réinitialiser votre appareil aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé.
+-   Réinitialiser votre appareil aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé ;
 
 -   Supprimer toutes les données relatives à l'entreprise. Vos données et paramètres personnels ne sont pas supprimés.
 
@@ -63,6 +63,6 @@ Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site we
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 609ed567e40cc35a6e36539ca58165f9193cec65
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: fcc0395815499f3a46dafa55c0c74834e37bed97
 
 
 ---
@@ -96,10 +96,10 @@ Pour savoir comment réinitialiser votre appareil, choisissez l’un des liens s
 Pour qu’un appareil soit visible, il doit être ajouté au Portail d’entreprise. Accédez au Portail d’entreprise comme indiqué par votre administrateur et suivez les étapes pour votre appareil. Vous ne verrez pas non plus les appareils détenus et gérés par votre entreprise.
 
 ## Si vous avez des questions, contactez votre administrateur informatique.
-Si vous avez besoin d’aide, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez besoin d’aide, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
