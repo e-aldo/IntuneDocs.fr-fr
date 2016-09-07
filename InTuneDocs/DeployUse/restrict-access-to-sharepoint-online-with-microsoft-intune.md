@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
 
 
 ---
@@ -35,7 +35,7 @@ Quand un utilisateur tente de se connecter à un fichier à l’aide d’une app
 >[!IMPORTANT]
 >L’accès conditionnel des PC et des appareils Windows 10 Mobile avec des applications utilisant l’authentification moderne n’est actuellement pas disponible pour tous les clients Intune. Si vous utilisez déjà ces fonctionnalités, vous n’avez pas d’action particulière à effectuer. Vous pouvez continuer à les utiliser.
 
->Si vous n’avez pas créé de stratégies d’accès conditionnel pour PC ou appareils Windows 10 Mobile avec des applications utilisant l’authentification moderne et que vous souhaitez le faire, vous devez soumettre une demande.  Vous trouverez plus d’informations sur les problèmes connus et sur l’accès à cette fonctionnalité sur le [site Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+>Si vous n’avez pas créé de stratégies d’accès conditionnel pour des PC ou des appareils Windows 10 Mobile pour les applications utilisant l’authentification moderne et souhaitez le faire, inscrivez-vous à la version préliminaire publique d’Azure Active Directory qui inclut l’accès conditionnel basé sur des appareils pour des appareils Intune gérés ou des PC Windows joints à un domaine. Lisez [ce billet de blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) pour en savoir plus.
 
 **Avant** de configurer une stratégie d’accès conditionnel à SharePoint Online, vous devez :
 - Disposer d’un **abonnement SharePoint Online** ; les utilisateurs doivent disposer d’une licence pour SharePoint Online.
@@ -134,7 +134,7 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
         *   Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
         * Plateformes non prises en charge comme Mac.  Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
         >[!TIP]
-        >Vous ne verrez peut-être pas cette option si vous n’utilisez pas l’accès conditionnel pour PC.  Utilisez les **Plateformes spécifiques** à la place. L’accès conditionnel pour PC n’est actuellement pas disponible pour tous les clients Intune.   Vous trouverez plus d’informations sur les problèmes connus et sur l’accès à cette fonctionnalité sur le [site Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+        >Vous ne verrez peut-être pas cette option si vous n’utilisez pas l’accès conditionnel pour PC.  Utilisez les **Plateformes spécifiques** à la place. L’accès conditionnel pour PC n’est actuellement pas disponible pour tous les clients Intune.   Vous trouverez plus d’informations sur la manière d’accéder à cette fonctionnalité [dans ce billet de blog ](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **des plateformes spécifiques**
 
@@ -189,6 +189,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’
 >[!IMPORTANT]
 >L’accès conditionnel des PC et des appareils Windows 10 Mobile avec des applications utilisant l’authentification moderne n’est actuellement pas disponible pour tous les clients Intune. Si vous utilisez déjà ces fonctionnalités, vous n’avez pas d’action particulière à effectuer. Vous pouvez continuer à les utiliser.
 
->Si vous n’avez pas créé de stratégies d’accès conditionnel pour PC ou appareils Windows 10 Mobile avec des applications utilisant l’authentification moderne et que vous souhaitez le faire, vous devez soumettre une demande.  Vous trouverez plus d’informations sur les problèmes connus et sur l’accès à cette fonctionnalité sur le [site Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+>Si vous n’avez pas créé de stratégies d’accès conditionnel pour des PC ou des appareils Windows 10 Mobile pour les applications utilisant l’authentification moderne et souhaitez le faire, inscrivez-vous à la version préliminaire publique d’Azure Active Directory qui inclut l’accès conditionnel basé sur des appareils pour des appareils Intune gérés ou des PC Windows joints à un domaine. Lisez [ce billet de blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) pour en savoir plus.  
 
 **Avant** de configurer l’accès conditionnel, vous devez :
 
@@ -196,7 +196,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
         * Plateformes non prises en charge comme Mac OS.  Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
 
         >[!TIP]
-           Vous ne verrez peut-être pas cette option si vous n’utilisez pas l’accès conditionnel pour PC.  Utilisez les **Plateformes spécifiques** à la place. L’accès conditionnel pour PC n’est actuellement pas disponible pour tous les clients Intune.   Vous trouverez plus d’informations sur les problèmes connus et sur l’accès à cette fonctionnalité sur le [site Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+           Vous ne verrez peut-être pas cette option si vous n’utilisez pas l’accès conditionnel pour PC.  Utilisez les **Plateformes spécifiques** à la place. L’accès conditionnel pour PC n’est actuellement pas disponible pour tous les clients Intune.   Vous trouverez plus d’informations sur la manière d’accéder à cette fonctionnalité [dans ce billet de blog ](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **des plateformes spécifiques**
 
@@ -260,6 +260,6 @@ Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

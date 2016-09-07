@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# Utiliser des groupes pour gérer les utilisateurs et les appareils dans Microsoft Intune
+
+Cette rubrique explique comment créer des groupes dans Intune. Elle fournit également des informations sur l’évolution de la gestion des groupes dans mois à venir. Pour en savoir plus sur l’approche *actuelle* de la gestion des groupes, consultez la section [Créer des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) dans cette rubrique.
+
 ## Notice concernant les prochaines améliorations apportées à l’expérience d’administration pour les groupes
 
 Suite à vos commentaires concernant le souhait d’avoir une expérience de regroupement et de ciblage unique dans Enterprise Mobility + Security, nous avons décidé de convertir les groupes Intune en groupes de sécurité basés sur Azure Active Directory. Cela permet d’unifier la gestion des groupes dans Intune et Azure Active Directory (Azure AD). La nouvelle expérience vous évitera d’avoir à dupliquer les groupes entre les services, et fournit une extensibilité à l’aide de PowerShell et Graph. 
@@ -72,7 +76,7 @@ Malgré l’amélioration de l’expérience de groupe, certaines fonctionnalit�
 -  Si certains de vos administrateurs n’ont pas l’autorisation de créer des groupes dans Azure AD, demandez à votre administrateur Azure AD de les ajouter au rôle Azure AD **Administrateur de service Intune**.
 
 
-# Créer des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune
+## Créer des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune
 
 Cette section décrit comment créer des groupes Intune dans la console d’administration Intune.
 
@@ -208,6 +212,6 @@ Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur pr�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

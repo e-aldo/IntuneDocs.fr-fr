@@ -4,7 +4,7 @@ description: "Liens menant vers des informations à partager avec vos utilisateu
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: e904f7e7e91d86359a0fd818032833caa382edcc
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ Veillez à inclure les coordonnées de l’administrateur informatique lorsque v
 
 ## Sources d’informations sur les tâches courantes à la disposition des utilisateurs finaux
 
-Fournissez à vos utilisateurs finaux les liens d'aide suivants lorsqu'ils recherchent des informations concernant l'utilisation d'Intune sur leurs appareils. Grâce à ces liens, les utilisateurs pourront installer l'application Portail d'entreprise, inscrire leurs appareils, obtenir des applications gérées, résoudre les problèmes, et bien plus encore.
+Lorsque les utilisateurs inscrits ont besoin d’aide pour utiliser Intune, ils voient généralement un lien dans le site Web de Portail d’entreprise ou une application Portail d’entreprise qui pointe vers un article spécifique expliquant la procédure à suivre pour résoudre le problème ou terminer la tâche. Par exemple, si les utilisateurs Android voient un message indiquant qu’il manque un certificat obligatoire, ils peuvent appuyer sur un lien « Comment résoudre ce problème » pour accéder à un article décrivant les étapes pour obtenir le certificat. 
+
+Les liens ci-dessous sont pour les administrateurs informatiques. Ces pages contiennent des liens vers tous les articles auxquels les utilisateurs sont renvoyés depuis l’application ou le site Web Portail d’entreprise. Le lien sont divisé en sections : installation de l’application Portail d’entreprise et inscription à Intune ; les tâches que les utilisateurs peuvent exécuter sur leurs appareils, telles que l’utilisation d’applications gérées et la synchronisation manuelle de leurs appareils ; et le dépannage.
 
 - [Utilisation de votre appareil Android avec Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -59,8 +61,10 @@ Pour comprendre comment vos utilisateurs finaux obtiennent leurs applications, c
 
 Pour aider vos utilisateurs à résoudre les problèmes qu’ils pourraient rencontrer lorsqu’ils utilisent le Portail d’entreprise, vous pouvez consulter une [liste des messages que les utilisateurs peuvent voir dans le Portail d’entreprise](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
+S’il existe d’autres informations que vous aimeriez voir traitées dans cet article, ajoutez votre suggestion dans la zone de commentaire au bas de cette rubrique. Merci !
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

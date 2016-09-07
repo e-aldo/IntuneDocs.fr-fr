@@ -1,10 +1,10 @@
 ---
-title: "Fonctionnalités de gestion des appareils mobiles | Microsoft Intune"
-description: "Lisez cette rubrique pour savoir comment Intune peut vous aider à gérer les appareils mobiles que vous inscrivez auprès du service."
+title: "Fonctionnalités de gestion des appareils inscrits | Microsoft Intune"
+description: "Lisez cette rubrique pour savoir comment Intune peut vous aider à gérer les appareils que vous inscrivez."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2ef264e963f689bb5a47a795170e0b9915848eec
-ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
+ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
+ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 ---
-# Fonctionnalités Microsoft Intune de gestion des appareils mobiles
+# Fonctionnalités de gestion des appareils inscrits de Microsoft Intune
 
 Microsoft Intune vous permet de gérer une gamme d’appareils en les *inscrivant* auprès du service. Vous pouvez inscrire certains types d’appareils vous-même, ou les utilisateurs peuvent s’inscrire à l’aide de l’application *Portail d’entreprise*. Cela leur permet également d’effectuer des opérations telles que rechercher et installer des applications, vérifier la conformité de leurs appareils aux stratégies d’entreprise, et contacter leur support technique.
 
@@ -70,6 +70,6 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
