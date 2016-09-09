@@ -13,8 +13,8 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
-ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
 
 
 ---
@@ -31,7 +31,7 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 ## Paramètres de sécurité
 
 |Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple alphanumérique ou numérique uniquement.|Oui|Oui|
 |**Type de mot de passe requis - Nombre minimum de jeux de caractères**|Spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Toutefois, pour les appareils iOS, ce paramètre spécifie le nombre de symboles devant être inclus dans le mot de passe.|Oui|Oui|
 |**Longueur minimale du mot de passe**<sup>1</sup>|Configure la longueur minimale requise (en caractères) pour le mot de passe.|Oui|Oui|
@@ -46,7 +46,7 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 ## Paramètres de chiffrement
 
 |Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup>|Exige que les fichiers soient chiffrés sur le périphérique.<br>Pour les appareils Windows Phone 8, affectez la valeur **Oui**.|Oui|Non|
 <sup>1</sup> Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 
@@ -61,14 +61,14 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 ## Paramètres anti-programme malveillant
 
 |Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Exiger un pare-feu réseau**|Nécessite l’activation du Pare-feu Windows.|Oui|Non|
 |**Activer SmartScreen**|Nécessite l’utilisation de Windows SmartScreen.|Oui|Non|
 
 ## Paramètres système
 
 |Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Exiger les mises à jour automatiques**|Active le paramètre de mises à jour automatiques sur les appareils.|Oui|Non|
 |**Exiger les mises à jour automatiques – Classification minimale des mises à jour à installer automatiquement**|Choisit la classification des mises à jour à installer automatiquement :<br /><br />-   **Importantes** : installe toutes les mises à jour classifiées comme importantes.<br />-   **Recommandées** : installe toutes les mises à jour classées comme importantes ou recommandées.|Oui|Non|
 |**Contrôle de compte d'utilisateur**|Nécessite l’utilisation du contrôle de compte d’utilisateur (UAC) sur les appareils.|Oui|Non|
@@ -78,19 +78,19 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 ## Paramètres du cloud - documents et données
 
 |Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**URL des dossiers de travail**|Définit l’URL du dossier de travail pour autoriser la synchronisation des documents entre les appareils.|Oui|Non|
 
 ## Paramètres de messagerie
 
 |Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Rendre le compte Microsoft facultatif dans l'application Windows Mail**|Autorise l’accès à l’application Windows Mail sans compte Microsoft.|Oui|Non|
 
 ## Paramètres de l'application - navigateur
 
 |Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Autoriser le remplissage automatique**|Permet aux utilisateurs de modifier les paramètres de saisie semi-automatique dans le navigateur.|Oui|Non|
 |**Autoriser le bloqueur de fenêtres publicitaires**|Active ou désactive le bloqueur de fenêtres publicitaires du navigateur.|Oui|Non|
 |**Autoriser les plug-ins**|Permet aux utilisateurs d’ajouter des plug-ins à Internet Explorer.|Oui|Non|
@@ -109,7 +109,7 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 ## Paramètres des fonctionnalités de l'appareil - cellulaire
 
 |Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Autoriser l'itinérance des données**|Autorise l’itinérance des données quand l’appareil se trouve sur un réseau de téléphonie mobile.|Oui|Non|
 
 
@@ -119,6 +119,6 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

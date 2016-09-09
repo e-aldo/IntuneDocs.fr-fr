@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
+ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
+ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 ---
@@ -35,7 +35,7 @@ Le tableau suivant répertorie les appareils pris en charge par les stratégies 
 --------------
 
 |Paramètre de stratégie| Windows 8.1 et versions ultérieures| Windows Phone 8.1 et versions ultérieures| iOS 6.0 et versions ultérieures|Android 4.0 et versions ultérieures<br/>Samsung KNOX Standard 4.0 et versions ultérieures|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**Configuration d’un code confidentiel ou mot de passe** |Corrigé|Corrigé|Corrigé|En quarantaine|
 |**Chiffrement de l'appareil**|N/A|Corrigé|Corrigé (en définissant le code confidentiel)|En quarantaine|
 |**Appareil jailbroken ou rooté**|N/A|N/A|En quarantaine (pas un paramètre)|En quarantaine (pas un paramètre)|
@@ -62,6 +62,6 @@ Le tableau suivant répertorie les appareils pris en charge par les stratégies 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

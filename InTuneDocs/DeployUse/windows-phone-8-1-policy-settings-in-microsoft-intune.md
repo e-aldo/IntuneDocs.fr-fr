@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4279ecd098ddaa6d6eb239ee71f9c3f7d450ab3f
-ms.openlocfilehash: f2ccc52ceae6bbb63ea76ff4391922099c69f4dd
+ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
+ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
 
 
 ---
@@ -40,7 +40,7 @@ Utilisez la **stratégie de configuration générale Windows Phone (Windows Phon
 ### Paramètres de mot de passe
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Spécifie si les utilisateurs doivent saisir un mot de passe pour accéder à leurs appareils.|Oui|Oui|
 |**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple alphanumérique ou numérique uniquement.|Oui|Oui|
 |**Type de mot de passe requis - Nombre minimum de jeux de caractères**|Spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Toutefois, pour les appareils iOS, ce paramètre spécifie le nombre de symboles devant être inclus dans le mot de passe.|Oui|Oui|
@@ -55,44 +55,44 @@ Utilisez la **stratégie de configuration générale Windows Phone (Windows Phon
 ### Paramètres de chiffrement
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|------|-----------------------------|
 |**Exiger le chiffrement sur l'appareil mobile**|Exige que les données sur les appareils mobiles pris en charge soient chiffrées.<br>Pour les appareils Windows Phone 8, affectez la valeur **Oui**.|Oui|Oui|
 
 ### Paramètres système
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Autoriser la capture d'écran**|Permet à l'utilisateur de capturer le contenu de l'écran en tant qu'image.|Non|Oui|
 |**Autoriser la soumission des données de diagnostic**|Autorise l’appareil à soumettre des informations de diagnostic à Microsoft.|Non|Oui|
 
 ### Paramètres du cloud - comptes et synchronisation
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Autoriser le compte Microsoft**|Autorise la liaison d’un compte Microsoft à l’appareil.|Non|Oui|
 
 ### Paramètres de messagerie
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Autoriser les comptes de messagerie personnalisés**|Autorise l’appareil à se connecter à des comptes de messagerie non Microsoft.|Non|Oui|
 
 ### Paramètres de l'application - navigateur
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Autoriser le navigateur web**|Autorise ou bloque le navigateur web intégré sur les appareils.|Non|Oui|
 
 ### Paramètres de l'application - applications
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Autoriser la boutique d'applications**|Permet aux utilisateurs de se connecter à l'App Store depuis l'appareil.|Non|Oui|
 
 ### Paramètres des fonctionnalités de l'appareil - matériel
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|----|--------------------------------|
 |**Autoriser l'appareil photo**|Autorise ou bloque l’appareil photo de l’appareil.|Non|Oui|
 |**Autoriser le stockage amovible**|Autorise l’appareil à utiliser du stockage amovible, tel qu’une carte SD.|Oui|Oui|
 |**Autoriser le Wi-Fi**|Active ou désactive la fonctionnalité Wi-Fi de l'appareil.|Non|Oui|
@@ -106,7 +106,7 @@ Utilisez la **stratégie de configuration générale Windows Phone (Windows Phon
 ### Paramètres des fonctionnalités de l'appareil - fonctionnalités
 
 |Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|----|------|-------------------------------|
 |**Autoriser la fonction copier-coller**|Autorise la fonction copier-coller sur les appareils.|Non|Oui|
 
 ### Paramètres des applications autorisées et bloquées
@@ -171,6 +171,6 @@ Dans la boîte de dialogue **Ajouter ou modifier un paramètre OMA-URI**, spéci
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 
