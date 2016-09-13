@@ -1,20 +1,20 @@
 ---
-title: Installer le client PC Windows avec Microsoft Intune | Microsoft Intune
-description: 
+title: Installation du logiciel client PC | Microsoft Intune
+description: "Utilisez ce guide pour que votre PC Windows soit géré par le logiciel client Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
-ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
+ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 
 
 ---
@@ -35,8 +35,6 @@ Puis, utilisez une ou plusieurs des méthodes suivantes pour installer le client
 -   [Pour déployer manuellement le logiciel client](#to-manually-deploy-the-client-software)
 
 -   [Pour déployer automatiquement le logiciel client à l'aide d'une stratégie de groupe](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Procédure permettant aux utilisateurs d'inscrire automatiquement leurs ordinateurs](#how-users-can-self-enroll-their-computers)
 
 -   [Installer le logiciel client Microsoft Intune dans le cadre d'une image](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
@@ -81,28 +79,6 @@ Si vous n’avez plus besoin de gérer un ordinateur avec Intune, vous pouvez en
 3.  Utilisez la stratégie de groupe pour déployer les logiciels sur les ordinateurs de votre réseau.
 
     Pour plus d'informations sur l'utilisation d'une stratégie de groupe pour déployer automatiquement des logiciels, consultez la documentation de Windows Server.
-
-### Procédure permettant aux utilisateurs d'inscrire automatiquement leurs ordinateurs
-Les utilisateurs finaux peuvent inscrire eux-mêmes chacun de leurs ordinateurs via le portail d’entreprise Intune. Chaque ordinateur inscrit est lié au compte d'utilisateur qui a été utilisé pour installer le logiciel client.
-
-> [!NOTE]
-> -   L'utilisateur doit être administrateur sur l'ordinateur pour pouvoir installer le logiciel client.
-> -   L'inscription automatique nécessite qu'Internet Explorer soit installé sur l'ordinateur client.
-> -   Chaque fois qu’un utilisateur final inscrit lui-même un ordinateur, il utilise une licence Intune.
-> -   Vous devez utiliser un compte professionnel ou scolaire pour inscrire vous-même un ordinateur. Vous ne pouvez pas inscrire automatiquement un ordinateur à l'aide d'un compte Microsoft.
-> -   Si le logiciel client est déjà installé sur un ordinateur, une erreur s'affiche chez l'utilisateur final.
-
-### Pour inscrire automatiquement un ordinateur (informations destinées aux utilisateurs finaux)
-
-1.  Ouvrez une session sur le portail d'entreprise à partir de l'ordinateur que vous souhaitez inscrire.
-
-2.  Cliquez sur **Ajouter un appareil**.
-
-3.  Cliquez sur **Télécharger le logiciel** , puis sur **Exécuter**.
-
-4.  Cliquez sur **Suivant** pour démarrer l’Assistant d’installation de Microsoft Intune.
-
-5.  Une fois l'Assistant Installation terminé, cliquez sur **Terminer**.
 
 ### Installer le logiciel client Microsoft Intune dans le cadre d'une image
 Vous pouvez déployer le logiciel client Intune sur des ordinateurs dans le cadre d’une image de système d’exploitation en utilisant la procédure suivante comme exemple :
@@ -159,9 +135,10 @@ Utilisez l'une des procédures suivantes pour vous analyser et valider la réuss
 
 ### Voir aussi
 [Gérer des PC Windows avec Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
+[Résoudre les problèmes de configuration du client](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

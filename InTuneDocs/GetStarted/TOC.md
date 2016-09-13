@@ -9,7 +9,7 @@
 ### [Portail d'entreprise](microsoft-intune-company-portal.md)
 ### [Intégration avec les produits et services cloud Microsoft](integration-with-cloud-services.md)
 ### [Utilisation de la bande passante réseau](network-bandwidth-use.md)
-### [Noms de domaine](domain-names-for-microsoft-intune.md)
+### [Noms de domaines personnalisés](domain-names-for-microsoft-intune.md)
 
 ## [Guide de démarrage rapide pour Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Se connecter à Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -23,8 +23,8 @@
 ### [Tâches de post-configuration](post-configuration-tasks.md)
 
 ## [Choisir comment gérer des appareils](choose-how-to-manage-devices.md)
-### [Fonctionnalités de gestion des appareils mobiles](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Fonctionnalités de gestion des PC Windows](windows-pc-management-capabilities-in-microsoft-intune.md)
+### [Fonctionnalités de gestion des appareils inscrits](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Fonctionnalités du client logiciel PC Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Phases de déploiement pour les déploiements Intune](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Définition de la portée du projet](project-scope.md)
@@ -39,6 +39,6 @@
 # [Dépannage](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

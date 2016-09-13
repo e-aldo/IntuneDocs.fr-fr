@@ -1,10 +1,10 @@
 ---
-title: "Fonctionnalités de gestion des PC Windows | Microsoft Intune"
-description: "En savoir plus sur les fonctionnalités Intune lorsque vous gérez des ordinateurs Windows avec le logiciel client Intune."
+title: "Fonctionnalités du client logiciel PC Intune | Microsoft Intune"
+description: "En savoir plus sur les fonctionnalités Intune lorsque vous gérez des PC Windows avec le client logiciel Intune."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
-ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
+ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
+ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 
 
 ---
 
-# Fonctionnalités de gestion des PC Windows (avec le client PC Intune)
-Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intune car cette approche offre davantage de fonctionnalités que le recours au client PC Intune. Toutefois, vous pouvez également gérer des ordinateurs en utilisant le client Intune PC, qui fournit les fonctionnalités suivantes :
+# Fonctionnalités de gestion des PC Windows lorsque vous utilisez le client logiciel Intune
+Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intune, car cette approche offre davantage de fonctionnalités. Toutefois, vous pouvez également gérer des PC en utilisant le client logiciel Intune, qui fournit les fonctionnalités suivantes :
 
 -   **Gestion des mises à jour logicielles** : Vous pouvez maintenir les PC à jour et gérer les périodes d’application des mises à jour.
 
@@ -31,10 +31,10 @@ Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intu
 -   **Assistance à distance** : Intune permet aux utilisateurs de contacter l’équipe du support informatique qui peut vous aider via une fonctionnalité de Bureau à distance intégrée à Intune (nécessite le logiciel TeamViewer).
 
 -   **Gestion des licences logicielles** : suivez le nombre de licences logicielles disponibles et le nombre de licences disponibles utilisé.
--   **Déploiement d'applications** : déployez des logiciels sur les ordinateurs que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des ordinateurs avec le logiciel client.
+-   **Déploiement d'applications** : déployez des logiciels sur les ordinateurs que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des PC avec le client logiciel.
 
 
-Intune prend en charge l’installation du logiciel client PC sur un maximum de 7 000 appareils Windows.
+Intune prend en charge l’installation du client logiciel sur un maximum de 7 000 appareils Windows.
 
 ## Conditions du système d'exploitation
 Intune peut gérer des PC exécutant les versions suivantes de Windows (32 bits et 64 bits) :
@@ -52,7 +52,7 @@ Intune peut gérer des PC exécutant les versions suivantes de Windows (32 bits
 
 
 ## Configuration matérielle minimale requise
-Voici la configuration matérielle minimale requise pour l’installation du client PC Intune :
+Voici la configuration matérielle minimale requise pour l’installation du client logiciel Intune :
 
 |Condition requise|Détails|
 |---------------|--------------------|
@@ -61,7 +61,7 @@ Voici la configuration matérielle minimale requise pour l’installation du cli
 |Espace disque|200 Mo d'espace disponible sur le disque avant l'installation du logiciel client.|
 
 ## Autres conditions requises
-Voici la configuration logicielle requise pour l’installation du client PC Intune :
+Voici la configuration logicielle requise pour l’installation du client logiciel Intune :
 
 |Condition requise|Détails|
 |---------------|--------------------|
@@ -70,10 +70,10 @@ Voici la configuration logicielle requise pour l’installation du client PC Int
 |Supprimer les logiciels clients incompatibles|Avant d’installer le logiciel client PC Intune, vous devez désinstaller le logiciel client suivant de ce PC :<br /><br />- Toute version de Configuration Manager<br />- Toute version de Microsoft Systems Management Server (SMS)|
 
 ### Voir aussi
-[Fonctionnalités de gestion des appareils mobiles dans Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
+[Fonctionnalités de gestion des appareils inscrits de Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
