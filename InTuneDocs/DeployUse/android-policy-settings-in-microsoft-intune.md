@@ -5,7 +5,7 @@ description: "Créez des stratégies qui contrôlent les paramètres et fonction
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 31c91609b913034ad3aaae0950145d4db5f59a0a
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 ### Paramètres de chiffrement
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Exiger le chiffrement sur l'appareil mobile**|Requiert que les fichiers de l'appareil mobile soient chiffrés.|Oui|Oui|
 |**Exiger le chiffrement sur les cartes de stockage**|Spécifie si la carte de stockage de l’appareil doit être chiffrée.|Non|Oui|
 
 ### Paramètres système
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Autoriser la capture d'écran**|Autorise l’utilisateur à capturer le contenu de l’écran comme image.|Non|Oui|
 |**Autoriser la soumission des données de diagnostic**|Autorise l’appareil à soumettre des informations de diagnostic à Google.|Non|Oui|
 |**Autoriser la réinitialisation aux paramètres d'usine**|Autorise l’utilisateur à rétablir les paramètres d’usine sur l’appareil.|Non|Oui|
@@ -72,19 +72,19 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 ### Paramètres du cloud - documents et données
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Autoriser la sauvegarde Google**|Autorise l’utilisation de la sauvegarde de Google.|Non|Oui|
 
 ### Paramètres du cloud - comptes et synchronisation
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Autoriser la synchronisation automatique de compte Google**|Autorise la synchronisation automatique des paramètres du compte Google.|Non|Oui|
 
 ### Paramètres de l'application - navigateur
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Autoriser le navigateur web**|Spécifie si le navigateur web par défaut de l’appareil peut être utilisé.|Non|Oui|
 |**Autoriser le remplissage automatique**|Autorise l’utilisation de la fonction de remplissage automatique du navigateur web.|Non|Oui|
 |**Autoriser le bloqueur de fenêtres publicitaires**|Autoriser l’utilisation du bloqueur de fenêtres publicitaires dans le navigateur.|Non|Oui|
@@ -94,13 +94,13 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 ### Paramètres de l'application - applications
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Autoriser la boutique Google Play**|Autorise l’utilisateur à accéder à la Boutique Google Play sur l’appareil.|Non|Oui|
 
 ### Paramètres des fonctionnalités de l'appareil - matériel
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Autoriser l'appareil photo**|Autorise l’utilisation de l’appareil photo de l’appareil.|Oui|Oui|
 |**Autoriser le stockage amovible**|Autorise l’appareil à utiliser du stockage amovible, comme une carte SD.|Non|Oui|
 |**Autoriser le Wi-Fi**|Autorise l’utilisation des fonctionnalités Wi-Fi de l’appareil.|Non|Oui|
@@ -113,7 +113,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 ### Paramètres des fonctionnalités de l'appareil - cellulaire
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Autoriser l'itinérance vocale**|Autorise l’itinérance vocale quand l’appareil se trouve sur un réseau de téléphonie mobile.|Non|Oui|
 |**Autoriser l'itinérance des données**|Autorise l’itinérance des données quand l’appareil se trouve sur un réseau de téléphonie mobile.|Non|Oui|
 |**Autoriser les messages SMS/MMS**|Autorise l’utilisation de la messagerie SMS et MMS sur l’appareil.|Non|Oui|
@@ -121,7 +121,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 ### Paramètres des fonctionnalités de l'appareil - fonctionnalités
 
 |Nom du paramètre|Détails|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Autoriser l'assistant vocal**|Autorise l’utilisation du logiciel Assistant vocal sur l’appareil.|Non|Oui|
 |**Autoriser la composition vocale**|Active ou désactive la fonctionnalité de numérotation vocale sur l’appareil.|Non|Oui|
 |**Autoriser la fonction copier-coller**|Autorise les fonctions Copier et Coller sur l’appareil.|Non|Oui|
@@ -208,6 +208,6 @@ Cette fonctionnalité est conçue pour vous permettre de déployer les paramètr
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

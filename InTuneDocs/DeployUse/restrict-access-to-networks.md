@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ede9c4db136eb0498cad6d196488d03768741328
-ms.openlocfilehash: 382dd93a5aec7415e5fb738f3068820e36d8ae06
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -29,37 +29,41 @@ Pour activer cette intégration, aucune configuration particulière n’est néc
 ### Étape 1 : Gérer les certificats
 1. Dans la console Azure Active Directory (Azure AD), exportez le certificat.
 
-    #### Internet Explorer 11
+#### Internet Explorer 11
 
 
-    a. Exécutez Internet Explorer comme administrateur, puis connectez-vous à la console Azure AD.
+   a. Exécutez Internet Explorer comme administrateur, puis connectez-vous à la console Azure AD.
 
-    b. Choisissez l’icône en forme de verrou dans la barre d’adresse, puis **Afficher les certificats**.
+   b. Choisissez l’icône en forme de verrou dans la barre d’adresse, puis **Afficher les certificats**.
 
-    c. Sous l’onglet **Détails** des propriétés des certificats, choisissez **Copier dans un fichier**.
+   c. Sous l’onglet **Détails** des propriétés des certificats, choisissez **Copier dans un fichier**.
 
-    d. Dans la page **Assistant Exportation de certificat**, choisissez **Suivant**.
+   d. Dans la page **Assistant Exportation de certificat**, choisissez **Suivant**.
 
-    e. Dans la page **Format du fichier d’exportation**, laissez la valeur par défaut, **X.509 binaire encodé DER (*.cer)**, puis choisissez **Suivant**.  
+   e. Dans la page **Format du fichier d’exportation**, laissez la valeur par défaut, **X.509 binaire encodé DER (*.cer)**, puis choisissez **Suivant**.  
 
-    f. Dans la page **Fichier à exporter**, choisissez **Parcourir** pour choisir l’emplacement auquel enregistrer le fichier, puis fournissez un nom de fichier. Concrètement, cette opération consiste en fait à nommer le fichier dans lequel le certificat exporté sera enregistré. Choisissez **Suivant** &gt; **Terminer**.
+   f. Dans la page **Fichier à exporter**, choisissez **Parcourir** pour choisir l’emplacement auquel enregistrer le fichier, puis fournissez un nom de fichier. Concrètement, cette opération consiste en fait à nommer le fichier dans lequel le certificat exporté sera enregistré. Choisissez **Suivant** &gt; **Terminer**.
 
-    #### Safari
+#### Safari
 
-    a. Connectez-vous à la console Azure AD.
+ a. Connectez-vous à la console Azure AD.
 
-    b. Cliquez sur l’icône en forme de verrou &gt;  **Plus d’informations**.
+b. Cliquez sur l’icône en forme de verrou &gt;  **Plus d’informations**.
 
-    c. Choisissez **Afficher le certificat** &gt; **Détails**.
+   c. Choisissez **Afficher le certificat** &gt; **Détails**.
 
-    d. Choisissez le certificat, puis **Exporter**.  
+   d. Choisissez le certificat, puis **Exporter**.  
 
-    > [!IMPORTANT]
-    > Vérifiez la date d’expiration du certificat, car vous devrez en exporter et en importer un nouveau quand celui-ci arrivera à expiration.
+> [!IMPORTANT]
+>
+> Vérifiez la date d’expiration du certificat, car vous devrez en exporter et en importer un nouveau quand celui-ci arrivera à expiration.
 
 
 2. À partir de la console ISE, importez le certificat Intune (le fichier exporté) dans le magasin **Trusted Certificates** (Certificats approuvés).
+
+
 ### Obtenir un certificat auto-signé à partir d’ISE 
+
 1.  Dans la console ISE, accédez à **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate** (Générer un certificat auto-signé).  
 2.       Exportez le certificat auto-signé.
 3. Dans un éditeur de texte, modifiez le certificat exporté : [commentaire] : <> I’d rather not put a period at the end of these two statements, I think it could be confusing.
@@ -146,6 +150,6 @@ Vous pouvez également [télécharger un ensemble d’instructions d’inscripti
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

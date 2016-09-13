@@ -4,7 +4,7 @@ description: "Méthodes de mise à disposition des applications iOS pour les uti
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
-ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
 
 
 ---
@@ -32,12 +32,23 @@ Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux
 
 **Applications non gérées** : applications gérables par l’intermédiaire de stratégies et qui n’ont pas été encapsulées par Intune ou qui n’intègrent pas le Kit SDK de gestion des applications mobiles Intune. Vous ne pouvez pas appliquer de stratégies d'application à ces applications.
 
+Les restrictions d’Apple n’autorisent pas les applications métier et gérées de l’App store à être répertoriées dans l’application Portail d’entreprise, ce qui signifie que les utilisateurs doivent accéder à différentes vues pour rechercher toutes leurs applications. Les applications pour chaque mosaïque affichée à la page d’applications du Portail d’entreprise sont disponibles comme suit :
+
+- La mosaïque **Applications d’entreprise** pointe vers une liste de toutes les applications dans l’onglet **TOUT** du [site Web Portail d’entreprise](http://portal.manage.microsoft.com).
+
+- La mosaïque **Autres applications** pointe actuellement vers une vue située à l’intérieur de l’application Portail d’entreprise, qui répertorie toutes les applications que le Portail d’entreprise est autorisé à afficher par Apple. Cela inclut toutes les applications à l’exception des applications métier et gérées de l’App store.
+
+- La mosaïque **Catégories** pointe actuellement vers une vue située à l’intérieur de l’application Portail d’entreprise, qui répertorie les catégories d’applications.
+
+    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
+
+
 ###Voir aussi
 [Comment vos utilisateurs Android obtiennent leurs applications](how-your-android-users-get-their-apps.md)</br>
 [Comment vos utilisateurs Windows obtiennent leurs applications](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

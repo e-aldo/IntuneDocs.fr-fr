@@ -10,10 +10,10 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 927bf3c21f94ca311a7324d22f05f047dba94982
+ms.sourcegitcommit: 96e8db7415e48a77f3e789aecddebe407e9a4b00
+ms.openlocfilehash: 37c5809e86d466717268f6fdec0c22f6bad2ac61
 
 
 ---
@@ -30,7 +30,7 @@ Le mot de passe que vous utilisez pour accéder aux ressources de votre sociét�
 - Le mot de passe a été utilisé trop récemment
 - Le mot de passe n’est pas assez complexe pour répondre aux exigences
 
-Pour plus d’informations sur la définition d’un code confidentiel ou d’un mot de passe, ou pour d’autres tâches que vous pouvez effectuer avec votre appareil, cliquez sur le lien correspondant au type d’appareil que vous avez :
+Pour plus d’informations sur la définition d’un code PIN ou d’un mot de passe, ou pour plus d’informations sur d’autres tâches que vous pouvez effectuer avec votre appareil, cliquez sur le lien correspondant au type d’appareil que vous avez :
 
 - [Définir le code confidentiel ou le mot de passe de votre appareil Android](set-your-pin-or-password-android.md)
 - [Définir ou modifier votre mot de passe d’appareil iOS](set-or-change-your-passcode-ios.md)
@@ -40,6 +40,6 @@ Si vous avez des difficultés à déterminer comment rendre votre mot de passe c
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

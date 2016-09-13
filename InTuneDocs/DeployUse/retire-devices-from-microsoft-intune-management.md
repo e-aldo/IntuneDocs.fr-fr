@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Retirer des appareils de la gestion Intune
 
-Qu’ils soient personnels ou qu’ils appartiennent à l’entreprise, il arrive un moment où les appareils gérés doivent être supprimés du portail de gestion Intune. La mise hors service d’appareils est relativement simple. Vous pouvez effectuer une réinitialisation sélective ou complète sur des appareils gérés en tant qu’appareils mobiles. Vous pouvez également mettre hors service des ordinateurs gérés à l’aide du logiciel client Intune.
+Qu’ils soient personnels ou qu’ils appartiennent à l’entreprise, il arrive un moment où les appareils gérés doivent être supprimés du portail de gestion Intune. Un appareil peut devoir être mis hors service pour plusieurs raisons :
+
+-   l’utilisateur quitte une entreprise d’une manière planifiée (départ « géré ») ;
+-   l’utilisateur quitte l’entreprise brusquement (il est renvoyé, démissionne etc..) ;
+-   l’appareil est perdu ;
+-   un appareil est réaffecté (affecté à un autre utilisateur, réutilisé dans un autre contexte).
+
+Vous pouvez effectuer une réinitialisation sélective ou complète sur des appareils gérés en tant qu’appareils mobiles ou verrouiller un appareil et réinitialiser son mot de passe. En réinitialisant l’appareil, vous libérez l’abonnement de l’utilisateur pour ajouter un autre appareil. Vous pouvez également mettre hors service des ordinateurs gérés à l’aide du logiciel client Intune.
 
 ## Effacer les données et applications des appareils
 La réinitialisation sélective et la réinitialisation complète retirent l’appareil de la gestion Intune en supprimant leur stratégie et le portail d’entreprise, ce qui signifie que l’appareil n’a plus les informations d’identification nécessaires pour se connecter aux ressources d’entreprise comme Microsoft SharePoint, la messagerie électronique et Office 365.
@@ -62,6 +69,6 @@ Parfois c'est l'appareil lui-même qui arrive en fin de vie. Dans ce cas, la [r�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/02/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +14,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 8c271f284fbaa7a3704f862cf7d9ba8c6a353392
+ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
+ms.openlocfilehash: 934fba06d386a2b3128b9ea4e991b2d48820ffca
 
 
 ---
 
 # L’appareil Android n’est pas conforme à la version maximale du système d’exploitation
 
-Votre appareil Android n’est pas conforme à la stratégie de votre administrateur informatique pour la version maximale du système d’exploitation. Contactez votre administrateur informatique pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-### Voir aussi
-[Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
+Votre appareil Android n’est pas conforme à la stratégie de votre administrateur informatique pour la version maximale du système d’exploitation. Contactez votre administrateur informatique pour obtenir de l’aide. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Sep16_HO2-->
 
 
