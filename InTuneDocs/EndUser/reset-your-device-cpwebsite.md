@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
+ms.sourcegitcommit: 4386e9c545c3427060478e0fb3482074a8c1d5a0
+ms.openlocfilehash: ba1869e63d9c9e83199ecfde312129c548dd5f07
 
 
 ---
@@ -29,7 +29,7 @@ Si vous réinitialisez votre appareil, il ne sera plus répertorié dans le port
 
 Pour réinitialiser votre appareil :
 
-1.  Ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com) et appuyez sur le nom de l’appareil que vous souhaitez modifier.
+1.  Ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com) et appuyez sur l’appareil à réinitialiser.
 
 2.  Appuyez sur **Réinitialiser**.
 
@@ -41,11 +41,10 @@ Votre appareil a été réinitialisé.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO1-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: 7f84ad1566431a7a72897750fadbc90cb56ec5ce
+ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
+ms.openlocfilehash: f45fc02003c6b40cc15fabeffff35cf0cde1a830
 
 
 ---
@@ -102,7 +102,7 @@ Dans la version de septembre de l’application de Portail d’entreprise iOS, s
 
 ## Désapprobation du service
 ### Les applications Portail d’entreprise pour Windows 8 et Windows Phone 8 seront déconseillées dès le mois de septembre 2016.
-À compter de septembre 2016, les utilisateurs de l’application Portail d’entreprise Microsoft Intune pour plateformes Windows Phone 8 et Windows 8 ne pourront plus bénéficier du support Microsoft Intune. Mettez à jour vos appareils vers Windows 8.1 et Windows Phone 8.1, et utilisez les applications Portail d’entreprise Windows 8.1 et Windows Phone 8.1 correspondantes pour continuer la distribution des applications sur ces appareils.
+À partir d’octobre 2016, Microsoft Intune ne prendra plus en charge les applications Portail d’entreprise Windows 8 et Windows Phone 8. Microsoft Intune cessera également de prendre en charge la plateforme Windows Phone 8. Ainsi, vous ne pourrez plus inscrire ni mettre à jour des appareils Windows Phone 8. Néanmoins, vous pourrez continuer à gérer les appareils Windows Phone 8 et Windows 8 déjà inscrits. Mettez à jour les appareils Windows Phone 8 et Windows 8 vers Windows Phone 8.1 et Windows 8.1, et utilisez les applications Portail d’entreprise Windows 8.1 et Windows Phone 8.1 correspondantes pour continuer à distribuer des applications sur ces appareils sans interruption.
 <!---TFS 1255391--->
 
 ### Suppression du ciblage de groupe personnalisé pour les règles de notification
@@ -135,6 +135,6 @@ Voir [Nouveautés de Microsoft Intune](whats-new-in-microsoft-intune.md) pour e
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

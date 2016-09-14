@@ -4,7 +4,7 @@ description: "Découvrez les différents modes d’inscription et de gestion des
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,66 +13,58 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: cfd9df3814d0d306a254a5566155a91ce5d0ca16
+ms.sourcegitcommit: e3f27837195e5fdf58b9c13f38b0e5c0ad90d971
+ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
 
 
 ---
 
 # Choisir comment gérer des appareils
-Intune vous permet de gérer une gamme d’appareils en les *inscrivant* auprès du service. Les utilisateurs peuvent ensuite utiliser un *portail d’entreprise* pour effectuer différentes opérations telles que l’inscription de leur appareil, la recherche et l’installation d’applications, la vérification de la conformité de leur appareil aux stratégies d’entreprise et la prise de contact avec le service d’assistance informatique.
 
-## Mode de gestion des appareils mobiles
-Intune peut gérer les plateformes d’appareils suivantes :
+Pour exploiter les nombreuses fonctionnalités proposées par Intune comme le déploiement d’applications et le contrôle des paramètres des appareils, vos appareils doivent être *gérés*. La manière de gérer des appareils varie selon les fonctionnalités Intune que vous voulez utiliser.
+Cette rubrique vous aide à choisir la méthode qui répond à vos besoins.
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+Pour gérer des appareils qui exécutent iOS, Mac OS X, Android ou Windows Phone, vous devez les *inscrire*.
 
-> [!NOTE]
-> Si vous avez déjà inscrit des appareils exécutant une version d’iOS antérieure à la version prise en charge, ils resteront inscrits. Pour vérifier que la fonctionnalité prend en charge cette version d’iOS, consultez la documentation.
+Pour gérer des PC Windows, vous avez deux possibilités :
 
-Intune peut gérer les appareils des utilisateurs. Ce concept est communément appelé BYOD (« Apportez votre propre appareil »). Il peut également gérer les appareils appartenant à l'entreprise, notamment dans les scénarios où celle-ci fournit aux utilisateurs une liste d'appareils qu'ils peuvent utiliser. Il s'agit du concept CYOD (« choisissez votre propre appareil »).
+1. Inscrivez l’appareil **ou**
+2. Installez le *client logiciel Intune*.
 
-### Inscription des appareils pour la gestion
-Pour les systèmes d’exploitation d’appareils mobiles, notamment iOS, Android et Windows Phone, vous devez toujours inscrire les appareils. Le mode d’inscription des appareils varie en fonction des besoins de votre organisation :
+## Déterminer la méthode à utiliser
+Utilisez ce flux décisionnel pour déterminer la manière de gérer vos appareils.
 
-|Type d'inscription|BYOD|CYOD|Appareil partagé avec compte de gestionnaire|Appareil partagé sans compte d'utilisateur|
-|-------------------|--------|--------|--------------------------------------|----------------------------------------|
-|**Description**|Appareil personnel inscrit à l'aide de Microsoft Intune|Appareil d'entreprise pour un seul utilisateur|Appareil d'entreprise géré à l'aide d'un compte de gestionnaire partagé par de nombreux utilisateurs|Appareil d'entreprise sans utilisateur utilisé par de nombreux utilisateurs|
-|**Utilisateur de l'appareil**|Propriétaire|Utilisateur affecté|Aucun compte spécifique à l'utilisateur|Aucun utilisateur spécifique|
-|**Qui inscrit l’appareil ?**|Propriétaire|Administrateur|Gestionnaire d'appareils|Toute personne|
-|**Qui annule l’inscription ?**|Propriétaire ou administrateur|Plate-forme |Administrateur ou utilisateur|Administrateur ou utilisateur|
-|**Qui peut réinitialiser ?**|Propriétaire ou administrateur|Administrateur|Administrateur|Administrateur|
+![Flux décisionnel pour déterminer la manière de gérer vos appareils.](./media/choose-manage-method.png)
 
-Pour plus d’informations, consultez [Choisir comment inscrire des appareils mobiles](/intune/get-started/choose-how-to-enroll-devices1).
+Inscrivez les PC Windows pour obtenir le plus de fonctionnalités. Toutefois, le client logiciel Intune peut répondre davantage à vos besoins dans les situations suivantes :
 
-> [!NOTE]
-> Pour obtenir une liste complète des fonctionnalités offertes par l’inscription d’appareils, consultez [Fonctionnalités de gestion des appareils mobiles](mobile-device-management-capabilities-in-microsoft-intune.md).
+- Le PC exécute Windows 7.
+- Vous voulez gérer des mises à jour logicielles Windows et l’utilisation des licences.
+- Vous voulez gérer les logiciels malveillants avec Endpoint Protection et le pare-feu Windows.
+- Vous voulez assurer l’assistance à distance des utilisateurs à l’aide du logiciel TeamViewer.
 
-## Mode de gestion des PC Windows
-Intune peut gérer les PC Windows Vista et versions ultérieures à l’aide du client Intune. Toutefois, pour les PC Windows, vous pouvez soit les inscrire, soit installer le logiciel client PC Intune qui offre quelques fonctionnalités qui ne sont pas disponibles quand vous inscrivez les appareils. Dans la plupart des scénarios, vous inscrirez votre appareil Windows avec Intune car cette approche offre davantage de fonctionnalités que le recours au client.
 
-Utilisez le client Intune quand vous souhaitez :
+Pour obtenir la liste détaillée des fonctions de gestion que vous obtenez avec chaque méthode, consultez [Fonctionnalités de gestion des appareils mobiles](mobile-device-management-capabilities-in-microsoft-intune.md) et [Fonctionnalités du client logiciel PC Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
+Pour plus d’informations sur les appareils et PC pris en charge par Intune, consultez [Ordinateurs et appareils mobiles pris en charge](/intune/get-started/supported-mobile-devices-and-computers).
 
-- Utiliser l’une des fonctionnalités du client Microsoft Intune pour gérer vos PC Windows
-- Gérer un PC Windows qui exécute un système d’exploitation dont l’inscription n’est pas prise en charge
-
-> [!NOTE]
-> Pour obtenir une liste complète des fonctionnalités offertes par l’installation du client Intune sur les PC Windows pris en charge, consultez [Fonctionnalités de gestion des PC Windows](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ## Gestion d’Exchange ActiveSync
-Vous pouvez aussi gérer des appareils par le biais d’Exchange ActiveSync. Vous devez pour cela installer le connecteur local ou utiliser le connecteur de service à service intégré pour vous connecter à votre instance d’Exchange Server.
-
-Pour en savoir plus sur la configuration matérielle et logicielle requise pour installer le connecteur local, consultez [Configuration requise pour le connecteur local](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
-
-Pour en savoir plus sur l’utilisation du connecteur local ou du connecteur de service à service avec Exchange, consultez [Gestion des appareils mobiles à l’aide d’Exchange ActiveSync et de Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-
+En plus de l’inscription d’un appareil ou de l’installation du client logiciel Intune, vous pouvez également gérer des appareils en utilisant [Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune). Cette méthode vous oblige à installer le connecteur local ou à utiliser le connecteur de service à service intégré pour vous connecter à votre instance Exchange Server.
+Cette troisième méthode de gestion des appareils fournit néanmoins un ensemble limité de fonctionnalités de gestion par rapport aux autres méthodes.
 
 
 ## Étapes suivantes
-Vous connaissez désormais certaines des fonctionnalités qui sont disponibles quand vous inscrivez vos appareils avec [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Ensuite, vous devrez [inscrire vos appareils](/intune/deploy-use/enroll-devices-in-microsoft-intune). Une fois les appareils inscrits, vous pourrez tirer parti de toutes les fonctionnalités décrites dans cette rubrique. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+
+- [Choisir comment inscrire des appareils mobiles](/intune/get-started/choose-how-to-enroll-devices1)
+- [Gestion des ordinateurs Windows avec le logiciel client Intune PC](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
 
 
 
-<!--HONumber=Aug16_HO3-->
+- [Gestion des appareils mobiles Exchange ActiveSync avec Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+
+
+
+
+<!--HONumber=Aug16_HO5-->
 
 
