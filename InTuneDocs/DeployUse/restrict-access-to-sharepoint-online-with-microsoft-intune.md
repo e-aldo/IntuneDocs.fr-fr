@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
-ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
+ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
+ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
 
 
 ---
@@ -83,6 +83,9 @@ Le service AAD DRS sera activé automatiquement pour les clients Intune et Offi
   - Si la stratégie est définie de manière à exiger la jonction à un domaine et que le PC n’est pas joint à un domaine, un message invitant l’utilisateur à contacter l’administrateur informatique s’affiche.
 
   - Si la stratégie définie exige la jonction à un domaine ou la conformité et que le PC ne répond pas aux conditions, un message contenant des instructions sur la façon d’installer l’application du portail d’entreprise et d’inscrire l’appareil s’affiche.
+  >[!NOTE]
+  >L’accès conditionnel n’est pas pris en charge sur les ordinateurs qui exécutent le client Intune.
+
 -    [L’authentification moderne Office 365 doit être activée](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) et toutes les mises à jour Office les plus récentes doivent être installées.
 
     L’authentification moderne permet aux clients Windows Office 2013 d’utiliser une connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library) et permet de bénéficier d’une sécurité accrue, comme l’**authentification multifacteur** et l’**authentification basée sur certificat**.
@@ -189,6 +192,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

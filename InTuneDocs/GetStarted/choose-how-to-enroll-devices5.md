@@ -13,8 +13,8 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 825392d060229a6b3f3bd3e84ad4be127118aa21
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 026ac12f12046f59eaac6e8bedc0669bcd93fb75
 
 
 ---
@@ -26,7 +26,7 @@ Vos réponses aux questions suivantes vous permettront de déterminer la méthod
 ## **Comment allez-vous gérer vos appareils iOS partagés ?**
 
   > [!div class="button"]
-  [Inscription DEP iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Inscription directe iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [Inscription à l’aide du logiciel de gestion d’inscription d’appareil >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+  [Inscription DEP iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)<br>[Inscription directe iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)<br>[Inscription à l’aide du gestionnaire d’inscription d’appareil >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Programme d’inscription des appareils (DEP) d’Apple** : les appareils iOS achetés ou gérés à l’aide du programme d’inscription des appareils peuvent être ciblés avec un profil d’inscription. Lorsque les utilisateurs allument leur appareil pour la première fois, celui-ci télécharge le profil DEP et s’inscrit avec ce profil.
 
@@ -39,6 +39,6 @@ Vos réponses aux questions suivantes vous permettront de déterminer la méthod
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

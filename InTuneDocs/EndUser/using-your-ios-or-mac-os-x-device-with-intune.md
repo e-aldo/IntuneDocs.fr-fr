@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: 20101b6c65bcab413441e16b3ac6a08a982e6a28
+ms.openlocfilehash: 3794a610996f5001e52f4d19d4cdafd849de3455
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Cet article contient des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leurs appareils gérés par Intune. Les administrateurs informatiques peuvent consulter ces informations pour connaître les étapes que suivent les utilisateurs pour effectuer diverses tâches, lesquelles sont regroupées en plusieurs catégories : 
-- Installation de l’application Portail d’entreprise et inscription Intune 
+Cet article contient des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leurs appareils gérés par Intune. Les administrateurs informatiques peuvent consulter ces informations pour connaître les étapes que doivent suivre les utilisateurs pour effectuer diverses tâches, lesquelles sont regroupées dans les catégories suivantes :
+- Installation de l’application Portail d’entreprise et inscription Intune
 - Tâches liées à la gestion post-inscription
 - Problèmes de conformité
 
@@ -64,6 +64,6 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 
