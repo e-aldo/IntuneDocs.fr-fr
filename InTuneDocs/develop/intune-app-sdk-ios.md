@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
-ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 512ef2416e14f2a44e1c46e996c8519b5776581f
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
 
 Le Kit de développement logiciel (SDK) des applications Microsoft Intune pour iOS vous permet d’incorporer la gestion des applications mobiles Intune à votre application iOS. Une application de gestion des applications mobiles est une application intégrée au SDK des applications Intune. Elle permet aux administrateurs informatiques de déployer des stratégies sur votre application mobile quand l’application est gérée activement.
 
-# Contenu du Kit de développement logiciel (SDK)
+## Contenu du Kit de développement logiciel (SDK)
 
 Le SDK des applications Intune pour iOS inclut une bibliothèque statique, des fichiers de ressources, des en-têtes d’API, un fichier plist de paramètres de débogage et un outil de configuration. Les applications mobiles peuvent simplement inclure les fichiers de ressources et être liées aux bibliothèques de manière statique pour l’application de la plupart des stratégies. Les fonctionnalités de gestion des applications mobiles Intune avancées sont appliquées par le biais d’API.
 Ce guide couvre l’utilisation de ce qui suit lors de l’intégration du SDK des applications Intune pour iOS :
@@ -37,13 +37,13 @@ Ce guide couvre l’utilisation de ce qui suit lors de l’intégration du SDK d
 
 * **En-têtes**: expose les API du SDK des applications Intune. Si vous utilisez une API, vous devez inclure le fichier d’en-tête contenant l’API. 
 
-# Fonctionnement du SDK des applications Intune
+## Fonctionnement du SDK des applications Intune
 
 L’objectif du SDK des applications Intune pour iOS consiste à ajouter des fonctionnalités de gestion aux applications iOS par le biais de modifications minimales du code. Réduire la quantité de modifications de code permet d’accélérer la commercialisation, tout en améliorant la cohérence et la stabilité de votre application mobile. 
 
 L’application doit être liée à la bibliothèque statique et inclure le groupe de ressources. Le fichier MAMDebugSettings.plist est facultatif et peut être inclus dans le package pour simuler des stratégies de gestion des applications mobiles appliquées à l’application sans avoir à déployer l’application par le biais de Microsoft Intune. De plus, dans les versions de débogage, les stratégies incluses dans le fichier MAMDebugSettings.plist sont appliquées en transférant le fichier MAMDebugSettings.plist vers le répertoire Documents de l’application par le biais du partage de fichiers iTunes.
 
-# Génération de votre application avec le Kit de développement logiciel (SDK) des applications Intune 
+## Génération de votre application avec le Kit de développement logiciel (SDK) des applications Intune 
 
 Suivez les étapes ci-dessous pour activer le SDK des applications Intune :
 
@@ -133,7 +133,7 @@ Suivez les étapes ci-dessous pour activer le SDK des applications Intune :
 
 Si votre application mobile utilise la bibliothèque ADAL pour sa propre authentification, consultez la section « Configuration des paramètres de la bibliothèque d’authentification Azure Directory » située ici.
 
-## Télémétrie 
+### Télémétrie 
 
 Le SDK des applications Intune pour iOS consigne des données télémétriques sur les événements d’utilisation par défaut, lesquelles sont envoyées à Microsoft Intune.
 
@@ -155,15 +155,15 @@ Les étapes ci-dessous sont requises si l’application elle-même utilise la bi
 
 2. Dans le fichier `Info.plist`du projet, sous le dictionnaire `IntuneMAMSettings` portant le nom de clé `ADALRedirectUri`, indiquez que l’URI de redirection à utiliser pour les appels de la bibliothèque ADAL. Vous pouvez également spécifier `ADALRedirectScheme` selon le format de l’URI de redirection de votre application.
 
-## Génération de vos extensions (facultatif) 
+### Génération de vos extensions (facultatif) 
 
 Quand vous générez des extensions, suivez les mêmes instructions pour générer votre application mobile comme indiqué dans la section « Génération de votre application avec le SDK des applications Intune » située ici. De plus, mettez à jour le fichier info.plist de chaque extension pour ajouter une clé ContainingAppBundleId dans le dictionnaire IntuneMAMSettings avec la valeur de l’id d’offre groupée de l’application conteneur.
 
-## Génération de vos infrastructures (facultatif)
+### Génération de vos infrastructures (facultatif)
 
 Avec les dernières modifications apportées au SDK des applications Intune, vous n’avez pas à compiler votre application mobile avec des indicateurs de l’éditeur de liens spécifiques si votre application mobile contient des infrastructures d’applications incorporées. 
 
-## Fichiers image au démarrage (facultatif)
+### Fichiers image au démarrage (facultatif)
 
 Quand une application compatible avec la gestion des applications mobiles est activement gérée par Microsoft Intune, le SDK des applications Intune affiche un écran de démarrage au lancement des applications pour indiquer à l’utilisateur que l’application est gérée. Vous pouvez éventuellement ajouter des fichiers image à afficher sur la page de démarrage « Géré par votre entreprise ». Pour les images, respectez les instructions suivantes :
 
@@ -179,7 +179,7 @@ Quand une application compatible avec la gestion des applications mobiles est ac
 
 **Remarque**: cet écran est déclenché au lancement, mais il peut être désactivé définitivement par l’utilisateur.
 
-# Configurer les paramètres du SDK des applications Intune
+## Configurer les paramètres du SDK des applications Intune
 
 Le dictionnaire `IntuneMAMSettings` contenu dans le fichier `info.plist` de l’application sert à configurer le SDK des applications Intune. Voici la liste de tous les paramètres pris en charge. 
 
@@ -197,7 +197,7 @@ SplashIconFile <br>SplashIconFile~ipad  | Chaîne  | Spécifie le fichier d’ic
 SplashDuration | Nombre | Durée minimale en secondes d’affichage de l’écran de démarrage Intune au lancement de l’application. La valeur par défaut est 1,5. | Facultatif.
 ADALLogOverrideDisabled | Booléen  | Indique si le Kit de développement logiciel (SDK) achemine tous les journaux de la bibliothèque ADAL (y compris les appels de la bibliothèque ADAL depuis l’application le cas échéant) dans son propre fichier journal. La valeur par défaut est NON. Affectez la valeur OUI si l’application doit définir le rappel de son propre journal ADAL. | Facultatif.
 
-# En-têtes du SDK des applications Intune 
+## En-têtes du SDK des applications Intune 
 
 Les en-têtes suivants incluent les appels de fonction API requis pour activer la fonctionnalité du SDK des applications Intune. 
 
@@ -209,7 +209,7 @@ Les en-têtes suivants incluent les appels de fonction API requis pour activer l
     IntuneMAMPolicyDelegate.h
     IntuneMAMLogger.h
 
-# Débogage du Kit de développement logiciel (SDK) des applications Intune dans Xcode
+## Débogage du Kit de développement logiciel (SDK) des applications Intune dans Xcode
 
 Avant de tester votre application compatible avec la gestion des applications mobiles à l’aide de Microsoft Intune, vous pouvez utiliser `Settings.bundle` dans Xcode. Ainsi, vous pouvez définir des stratégies de test sans requérir de connexion à Intune. Pour l’activer :
 
@@ -230,7 +230,7 @@ Avant de tester votre application compatible avec la gestion des applications mo
 > [!NOTE]
 > Vous pouvez maintenant utiliser « Paramètres -> nom_de_votre_application -> Activer les stratégies de test » pour activer et désactiver des paramètres.
 
-# Pratiques recommandées pour iOS
+## Pratiques recommandées pour iOS
 
 Voici quelques pratiques recommandées dans le cadre du développement pour iOS :
 
@@ -241,6 +241,6 @@ Si Xcode a des difficultés à trouver `libIntuneMAM.a`, vous pouvez résoudre c
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
