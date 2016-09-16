@@ -4,7 +4,7 @@ description: "Inscrire des appareils iOS d’entreprise à l’aide du programme
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d81ef697518745b258598124d6e73899bdd76a0f
-ms.openlocfilehash: 00d7e73154bb293fec48b74b6f6454d67e5ef378
+ms.sourcegitcommit: bee93334e7b868ef6c827fba9efc3318c8419527
+ms.openlocfilehash: b295ee11d566fbfbe84513c045f3a76dfd51cda4
 
 
 ---
@@ -40,6 +40,11 @@ Le programme DEP déploie un profil d’inscription selon le procédé OTA (Over
 ## Utiliser le Portail d’entreprise sur des appareils inscrits via l’outil Apple Configurator ou DEP
 
 Les appareils qui sont configurés avec une affinité utilisateur peuvent installer et exécuter l’application Portail d’entreprise pour télécharger des applications et gérer des appareils. Une fois que les utilisateurs reçoivent leurs appareils, ils doivent effectuer un certain nombre d’étapes supplémentaires pour terminer l’exécution de l’Assistant Installation et installer l’application Portail d’entreprise.
+
+Une affinité utilisateur est nécessaire pour prendre en charge les éléments suivants :
+  - Applications de gestion des applications mobiles (GAM)
+  - Accès conditionnel aux données de messagerie et de l’entreprise
+  - Application Portail d’entreprise
 
 **Comment les utilisateurs inscrivent des appareils iOS d’entreprise avec l’affinité utilisateur**
 1. Quand les utilisateurs allument leur appareil, ils sont invités à terminer l’exécution de l’Assistant Installation. Pendant l’installation, les utilisateurs sont invités à fournir leurs informations d’identification. Ils doivent utiliser les informations d’identification (c’est-à-dire, le nom d’utilisateur principal ou UPN) associées à leur abonnement dans Intune.
@@ -75,6 +80,6 @@ Si une affinité utilisateur est obligatoire, vérifiez que l’option **Affinit
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
