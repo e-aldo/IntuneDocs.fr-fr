@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code d’accès
 Microsoft Intune fournit des fonctionnalités de verrouillage à distance et de réinitialisation du code d’accès.
 
 ## Verrouiller un appareil à distance
-Si un utilisateur perd son appareil, vous pouvez verrouiller celui-ci à distance. Le tableau ci-dessous indique la méthode de verrouillage à distance sur des plates-formes mobiles différentes.
+Si un utilisateur perd son appareil, vous pouvez verrouiller celui-ci à distance. Le tableau ci-dessous indique la méthode de verrouillage à distance sur des plates-formes mobiles différentes. Le verrouillage à distance n’est pas pris en charge
 
 |Plate-forme|Verrouillage à distance|
 |------------|---------------|
@@ -31,6 +31,7 @@ Si un utilisateur perd son appareil, vous pouvez verrouiller celui-ci à distanc
 |Windows RT 8.1 et Windows RT|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
 |Windows 8.1|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
 
+Le verrouillage à distance n’est pas pris en charge pour les PC Windows inscrits auprès du client logiciel Intune.
 
 ### Pour verrouiller un appareil mobile à distance par le biais de la console Intune
 
@@ -55,6 +56,8 @@ Si un utilisateur oublie son code d'accès, vous pouvez l'aider à résoudre ce 
 |Windows RT 8.1 et Windows RT|Non pris en charge|
 |Windows 8.1|Non pris en charge|
 
+La réinitialisation du code d’accès n’est pas prise en charge pour les PC Windows inscrits auprès du client logiciel Intune.
+
 ### Pour réinitialiser un code d’accès
 
 1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils mobiles**.
@@ -73,6 +76,6 @@ Si un utilisateur oublie son code d'accès, vous pouvez l'aider à résoudre ce 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
