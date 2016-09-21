@@ -4,7 +4,7 @@ description: "Cette rubrique explique comment utiliser Intune pour afficher des 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/17/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
-ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
+ms.sourcegitcommit: 18ef1ca18244b202a35fc8fc23fc994105b7b47e
+ms.openlocfilehash: ff55533499494488cd4cd692c6e36fe547ade3e4
 
 
 ---
 
 # Comprendre vos appareils grâce à l’inventaire de Microsoft Intune
 Microsoft Intune vous permet d’afficher l’inventaire des appareils inscrits et des ordinateurs Windows qui exécutent le logiciel client Intune.
+Généralement, Intune collecte l’inventaire auprès des appareils gérés tous les 7 jours. Pour cette raison, un certain délai peut être observé avant que les rapports ne reflètent les modifications récentes apportées aux appareils, par exemple, un changement de nom d’appareil ou une modification de l’espace de stockage disponible.
 
 ## Qu’est-ce qui est collecté auprès des appareils inscrits ?
 Pour afficher l’inventaire recueilli par les appareils mobiles, exécutez les [rapports d’inventaire des appareils mobiles](understand-microsoft-intune-operations-by-using-reports.md). Intune collecte l’inventaire suivant auprès des appareils inscrits :
@@ -114,6 +115,6 @@ Pour afficher l’inventaire recueilli par les PC Windows, exécutez les [rappor
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

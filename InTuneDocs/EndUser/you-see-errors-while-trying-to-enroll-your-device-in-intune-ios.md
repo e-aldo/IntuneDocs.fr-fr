@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/15/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e8b6da8348f9c4d8ba1b85687510388cd40eac8a
+ms.sourcegitcommit: f3ca61178e64feea30e8783f9a2471303dd68378
+ms.openlocfilehash: 191ff1347d31c9361a80d8a581ee90a03d02061c
 
 
 ---
@@ -32,14 +32,13 @@ Le tableau suivant répertorie les erreurs que vous pouvez rencontrer lors de l�
 |APNSCertificateNotValid|Il existe un problème avec le certificat qui autorise votre appareil mobile à communiquer avec le réseau de votre entreprise.<br /><br />Contactez vos administrateurs informatiques en leur indiquant que vous avez reçu le message **APNSCertificateNotValid** quand vous essayez d’inscrire votre appareil mobile et qu’ils peuvent trouver comment résoudre le problème dans ce tableau.|Les Services de notifications Push Apple (APNS) offrent un canal permettant d'atteindre les appareils iOS inscrits. Si les étapes permettant d’obtenir un certificat APNs n’ont pas été effectuées ou si le certificat APNs est expiré, les tentatives d’inscription échouent et ce message apparaît.<br /><br />Passez en revue les informations sur la configuration des utilisateurs dans les rubriques [Synchroniser Active Directory et ajouter des utilisateurs à Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) et [Organisation des utilisateurs et des appareils](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |AccountNotOnboarded|Il existe un problème avec le certificat qui autorise votre appareil mobile à communiquer avec le réseau de votre entreprise.<br /><br />Contactez vos administrateurs informatiques en leur indiquant que vous avez reçu le message **APNSNotOnboarded** quand vous essayez d’inscrire votre appareil mobile et qu’ils peuvent trouver comment résoudre le problème dans ce tableau.|Les Services de notifications Push Apple (APNS) offrent un canal permettant d'atteindre les appareils iOS inscrits. Si les étapes permettant d’obtenir un certificat APNs n’ont pas été effectuées ou si le certificat APNs est expiré, les tentatives d’inscription échouent et ce message apparaît.<br /><br />Pour plus d’informations, consultez [Configurer la gestion des appareils iOS et Mac avec Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceTypeNotSupported|Vous avez peut-être tenté une inscription en utilisant un appareil non-iOS. Le type d’appareil mobile que vous essayez d’inscrire n’est pas pris en charge.<br /><br />Vérifiez que votre appareil exécute iOS version 7.1 ou ultérieure.<br /><br />Contactez vos administrateurs informatiques en leur indiquant que vous avez reçu le message **DeviceTypeNotSupported** quand vous essayez d’inscrire votre appareil mobile et qu’ils peuvent trouver comment résoudre le problème dans ce tableau.|Vérifiez que l’appareil de votre utilisateur exécute iOS version 7.1 ou ultérieure.|
-|UserLicenseTypeInvalid|Vous ne pouvez pas inscrire votre appareil mobile, car votre compte d’utilisateur n’est pas encore membre d’un groupe d’utilisateurs requis.<br /><br />Contactez vos administrateurs informatiques en leur indiquant que vous avez reçu le message **UserLicenseTypeInvalid** quand vous essayez d’inscrire votre appareil mobile et qu’ils peuvent trouver comment résoudre le problème dans ce tableau.|Pour pouvoir inscrire leurs appareils, les utilisateurs doivent être membres du groupe d’utilisateurs approprié. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br /><br />Pour plus d’informations, consultez les éléments suivants :<br /><br />Consultez [Configurer la gestion iOS et Mac avec Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) et passez en revue les informations sur la configuration des utilisateurs dans les rubriques [Synchroniser Active Directory et ajouter des utilisateurs à Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3 et [Organisation des utilisateurs et des appareils](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|UserLicenseTypeInvalid|Vous ne pouvez pas inscrire votre appareil mobile, car votre compte d’utilisateur n’est pas encore membre d’un groupe d’utilisateurs requis.<br /><br />Contactez vos administrateurs informatiques en leur indiquant que vous avez reçu le message **UserLicenseTypeInvalid** quand vous essayez d’inscrire votre appareil mobile et qu’ils peuvent trouver comment résoudre le problème dans ce tableau.|Pour pouvoir inscrire leurs appareils, les utilisateurs doivent être membres du groupe d’utilisateurs approprié. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br /><br />Pour plus d’informations, consultez les éléments suivants :<br /><br />Consultez [Configurer la gestion des appareils iOS et Mac avec Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) et passez en revue les informations sur la configuration des utilisateurs dans [Synchroniser Active Directory et ajouter des utilisateurs à Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) et [Organisation des utilisateurs et des appareils](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|Votre administrateur informatique doit configurer la façon dont les appareils mobiles sont gérés dans votre entreprise.<br /><br />Contactez vos administrateurs informatiques en leur indiquant que vous avez reçu le message **MdmAuthorityNotDefined** quand vous essayez d’inscrire votre appareil mobile et qu’ils peuvent trouver comment résoudre le problème dans ce tableau.|L’autorité de gestion des appareils mobiles n’a pas été désignée dans Intune.<br /><br />Consultez l’élément 1 de la section « Étape 6 : Inscrire des appareils mobiles et installer une application » dans [Prise en main de la version d’évaluation de 30 jours de Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
-### Voir aussi
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO1-->
 
 

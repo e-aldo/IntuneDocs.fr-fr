@@ -4,7 +4,7 @@ description: Cette rubrique explique comment attribuer des licences aux utilisat
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 82b972d9a34d545099321fd64230aae36be7022e
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 564edd672052f41215294a9562101289f20128db
 
 
 ---
 
 # gérer les licences Intune
-Avant que les utilisateurs puissent se connecter pour utiliser le service Intune ou inscrire leurs appareils dans la gestion, vous devez attribuer à chaque utilisateur une licence dans votre abonnement Intune via le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Une fois la licence attribuée, les noms d’utilisateurs sont affichés dans la console d’administration Intune. Les utilisateurs peuvent ensuite inscrire jusqu'à cinq appareils.
+Pour que les utilisateurs puissent se connecter pour utiliser le service Intune ou inscrire leurs appareils dans la gestion, vous devez d’abord leur attribuer à chacun une licence dans votre abonnement Intune via le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-Les organisations qui utilisent Microsoft Enterprise Mobility Suite (EMS) peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un sous-ensemble de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx). Pour plus d’informations, consultez [Gérer les licences Intune avec PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
+Les organisations qui utilisent Microsoft Enterprise Mobility + Security (EMS) peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un groupe de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx). Pour plus d’informations, consultez [Gérer les licences Intune avec PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
 ## Mode d’attribution des licences Intune
 Lorsque les comptes d’utilisateur sont synchronisés à partir de votre annuaire Active Directory local ou ajoutés manuellement à votre abonnement aux services cloud par le biais du [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), ils ne reçoivent pas automatiquement une licence Intune. Au lieu de cela, un administrateur Intune doit modifier le compte d’utilisateur à une date ultérieure pour attribuer une licence à l’utilisateur à partir du portail Office 365.
@@ -42,8 +42,10 @@ Vous utilisez le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=6
 
 3.  Maintenant, le compte d’utilisateur dispose des autorisations nécessaires pour utiliser le service et inscrire des appareils dans la gestion.
 
+> [!NOTE] Les utilisateurs apparaissent dans la console une fois qu’ils ont inscrit un appareil. 
+
 ### Utiliser PowerShell pour gérer de manière sélective les licences utilisateur EMS
-Les organisations qui utilisent Microsoft Enterprise Mobility Suite (EMS) peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un sous-ensemble de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx).
+Les organisations qui utilisent Microsoft Enterprise Mobility + Security (anciennement Entreprise Mobility Suite) peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un groupe de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Pour assigner de manière sélective des licences utilisateur pour les services EMS, ouvrez PowerShell en tant qu’administrateur sur un ordinateur où le [module Azure Active Directory pour Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) est installé. Vous pouvez installer PowerShell sur un ordinateur local ou sur un serveur ADFS.
 
@@ -90,6 +92,6 @@ Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

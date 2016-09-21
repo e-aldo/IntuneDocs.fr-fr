@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
-ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
+ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
+ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
@@ -22,14 +22,14 @@ ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 # Création d’un profil Wi-Fi avec une clé prépartagée
 Voici comment utiliser la **configuration personnalisée** d’Intune pour créer un profil Wi-Fi avec une clé prépartagée. Cette rubrique comprend également un exemple de création d’un profil Wi-Fi basé sur EAP.
 
-Remarque :
+> [!NOTE]
 -   Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
 - Pour Android, vous avez également la possibilité d’utiliser ce [générateur de clés prépartagées Android](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fourni par Johnathon Biersack.
 -   Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
--  Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour configurer le profil. Vous pouvez également utiliser le [générateur de configuration mobile de clés prépartagées pour iOS](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fourni par Johnathon Biersack.
+-  Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Vous pouvez également utiliser le [générateur de configuration mobile de clés prépartagées pour iOS](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fourni par Johnathon Biersack.
 
 
-1.  Pour créer un profil Wi-Fi avec une clé prépartagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Configuration personnalisée** pour cette plateforme d’appareil au lieu d’un Wi-Fi de profil lorsque vous créez une stratégie.
+1.  Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Configuration personnalisée** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez une stratégie.
 
 2.  Fournissez un nom et une description.
 3.  Ajoutez un paramètre OMA-URI :
@@ -40,18 +40,27 @@ Remarque :
 
    c.   **Type de données**: définissez sur « String(XML) »
 
-   d.   **OMA-URI** : 
-        
-- **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-- **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   d.   **OMA-URI** :
 
-Remarque : veillez à inclure le point au début.
+    - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+    - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-Le SSID est l’identificateur SSID pour lequel vous créez la stratégie. Par exemple,
-`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    > [!NOTE]
+Veillez à inclure le point au début.
 
-  e.    Champ de valeur : il s’agit de l’endroit dans lequel vous collez le code XML. Voici un exemple. Chaque valeur doit être adaptée à vos paramètres réseau. Consultez la section Commentaires du code pour certains pointeurs.
+    Le SSID est l’identificateur SSID pour lequel vous créez la stratégie. Par exemple,
+    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
+  e. **Champ de valeur** correspond à l’endroit où vous collez le code XML. Voici un exemple. Chaque valeur doit être adaptée à vos paramètres réseau. Consultez la section Commentaires du code pour certains pointeurs.
+4. Choisissez **OK**, enregistrez et déployez la stratégie.
+
+    > [!NOTE]
+Cette stratégie ne peut être déployée que sur des groupes d’utilisateurs.
+
+La prochaine fois que chaque appareil s’enregistrera, la stratégie sera appliquée et un profil Wi-Fi sera créé sur l’appareil. L’appareil sera en mesure de se connecter automatiquement au réseau.
+## Profil Wi-Fi Android ou Windows
+
+Voici un exemple de code XML pour un profil Wi-Fi Android ou Windows :
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -173,25 +182,23 @@ Voici un exemple du code XML pour un profil Wi-Fi basé sur EAP :
       </MSM>
     </WLANProfile>
 
-4.  Cliquez sur OK, puis enregistrez et déployez la stratégie.
-REMARQUE. Cette stratégie ne peut être déployée que pour les groupes d’utilisateurs
-
-La prochaine fois que chaque appareil s’enregistrera, la stratégie sera appliquée et un profil Wi-Fi sera créé sur l’appareil. L’appareil sera en mesure de se connecter automatiquement au réseau.
 ## Création du fichier XML à partir d’une connexion Wi-Fi existante
 Vous pouvez également créer un du fichier XML à partir d’une connexion Wi-Fi existante :
-1.     Sur un ordinateur connecté au réseau sans fil ou qui s’y est connecté récemment, ouvrez le dossier suivant : C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}. Il est préférable d’utiliser un ordinateur qui n’est pas connecté à plusieurs réseaux sans fil, car vous devrez effectuer des recherches dans chaque profil pour trouver celui qui convient.
+1. Sur un ordinateur connecté au réseau sans fil ou qui s’y est connecté récemment, ouvrez le dossier suivant : C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
+
+    Il est préférable d’utiliser un ordinateur qui n’est pas connecté à plusieurs réseaux sans fil, car vous devrez effectuer des recherches dans chaque profil pour trouver celui qui convient.
 3.     Recherchez dans les fichiers XML pour trouver celui dont le nom est correct.
 4.     Une fois que vous avez localisé le fichier XML approprié, copiez et collez le code XML dans le champ de données de la page de paramètres OMA-URI.
 
 ## Déploiement de la stratégie
 
-1.  Dans l’espace de travail **Stratégie** , sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
+1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis choisissez **Gérer le déploiement**.
 
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
 
-    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis cliquez sur **Ajouter** &gt; **OK**.
+    -   **Pour déployer la stratégie** : sélectionnez un ou plusieurs groupes sur lesquels déployer la stratégie, puis choisissez **Ajouter** &gt; **OK**.
 
-    -   **Pour fermer la boîte de dialogue sans la déployer**, cliquez sur **Annuler**.
+    -   **Pour fermer la boîte de dialogue sans la déployer**, choisissez **Annuler**.
 
 Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’autres informations sur le déploiement dans la partie inférieure de la liste de stratégies.
 
@@ -200,6 +207,6 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

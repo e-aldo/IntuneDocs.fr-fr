@@ -4,7 +4,7 @@ description: "Découvrez comment utiliser Intune pour mettre à niveau automatiq
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/22/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4bed62ebe07d5470414183626b34e68dd91f2d01
-ms.openlocfilehash: 17933e41a646f305f9fb765e790c0de36a5036ba
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 45130e3e12968d9df579a7a9d0cade0343b7c165
 
 
 ---
@@ -23,6 +23,7 @@ ms.openlocfilehash: 17933e41a646f305f9fb765e790c0de36a5036ba
 La **stratégie de mise à niveau d’édition** Microsoft Intune vous permet de mettre automatiquement à niveau les appareils qui exécutent l’une des versions suivantes de Windows 10 vers une édition plus récente :
 * Windows 10 Desktop
 * Windows 10 Holographique
+* Windows 10 Mobile
 
 ## Avant de commencer
 Avant de commencer à mettre à niveau des appareils vers la dernière version, vous avez besoin d’un des éléments suivants :
@@ -45,6 +46,6 @@ Avant de commencer à mettre à niveau des appareils vers la dernière version, 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

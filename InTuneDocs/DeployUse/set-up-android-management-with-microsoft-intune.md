@@ -13,26 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
+ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 
 
 ---
 
 # Configuration de la gestion des appareils Android
-Vous pouvez cliquer [ici](../enduser/using-your-android-device-with-intune.md) pour obtenir de l’aide sur la configuration de votre appareil Android.
-
-Avec Microsoft Intune, vous pouvez activer le BYOD (« Apportez votre propre appareil ») pour les appareils Android sans aucun travail supplémentaire pour la plateforme.
-
-Sélectionnez l’une des options de plateforme d’appareil suivantes pour en savoir plus :
-
-> [!div class="op_single_selector"]
-- [Configuration de la gestion Android avec Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [Configurer la gestion iOS et MAC avec Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Configurer la gestion de Windows Phone avec Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Configurer la gestion des périphériques Windows avec Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
-
-Les appareils mobiles Android permettent aux utilisateurs de s’inscrire à l’aide de l’application Portail d’entreprise disponible sur Google Play. Pour permettre aux utilisateurs d’inscrire leurs appareils dans Intune, procédez comme suit.
+En tant qu’administrateur Intune, vous pouvez activer la gestion des appareils Android à partir du portail d’entreprise. Les utilisateurs peuvent alors inscrire leurs appareils à l’aide de l’application Portail d’entreprise disponible sur Google Play.
 
 1.  **Configurer Intune**<br>
     Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) sur **Microsoft Intune** et en configurant la gestion des appareils mobiles.
@@ -52,6 +40,6 @@ Les appareils mobiles Android permettent aux utilisateurs de s’inscrire à l�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

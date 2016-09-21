@@ -4,17 +4,17 @@ description: "Lisez cette rubrique pour savoir comment Intune peut vous aider à
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 |Configuration des applications mobiles iOS|Utilise des stratégies de configuration des applications mobiles pour fournir les paramètres des applications iOS pouvant être nécessaires lors de l’exécution d’une application. Par exemple, une application peut exiger que l’utilisateur spécifie un numéro de port ou des informations d’ouverture de session. Cela peut simplifier la configuration de l’application et réduire le nombre d’appels au support technique.|[Configurer des applications iOS avec des stratégies de configuration des applications mobiles dans Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |Profils de configuration d’application mobile iOS|Permet de déployer des profils de configuration pour les applications iOS qui approchent de leur date d’expiration. |[Utiliser les stratégies de profil de configuration iOS mobile pour empêcher l’expiration de vos applications](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Managed Browser|Configure des stratégies Managed Browser pour contrôler les sites web auxquels les utilisateurs de l’appareil peuvent accéder. En outre, vous pouvez également appliquer des stratégies de gestion des applications mobiles à Managed Browser.|[Gérer l'accès à Internet à l'aide de stratégies Managed Browser avec Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|Vous permet d’intégrer Microsoft Passport for Work et de disposer ainsi d’un autre mode de connexion pour Windows 10 qui fait appel à Active Directory local ou Azure Active Directory pour remplacer des mots de passe, des cartes à puce ou des cartes à puce virtuelles.|[Contrôler les paramètres de Microsoft Passport sur les appareils avec Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Windows Hello Entreprise|Vous permet d’intégrer Windows Hello Entreprise afin de disposer d’un autre mode de connexion pour Windows 10 qui fait appel à Active Directory local ou Azure Active Directory pour remplacer des mots de passe, des cartes à puce ou des cartes à puce virtuelles.|[Contrôler les paramètres Windows Hello Entreprise sur des appareils avec Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Applications achetées en volume|Vous permet de gérer les applications que vous avez achetées par le biais d’un programme d’achat en volume en important les informations de licence à partir du magasin d’applications, en effectuant le suivi du nombre de licences que vous avez utilisées et en vous empêchant d’installer un nombre de copies de l’application supérieur au nombre dont vous êtes propriétaire.|[Gérer les applications achetées en volume avec Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## Accès aux ressources d'entreprise
 
@@ -70,6 +71,6 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

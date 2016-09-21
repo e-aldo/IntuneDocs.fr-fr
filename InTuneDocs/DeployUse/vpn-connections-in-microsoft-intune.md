@@ -4,7 +4,7 @@ description: "Utilisez les profils VPN afin de déployer des paramètres VPN pou
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 475c68f8812627cd58f86bb74d8c48988f53f7ed
+ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
+ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
 
 
 ---
@@ -27,7 +27,7 @@ Par exemple, supposons que vous voulez approvisionner tous les appareils iOS en 
 Vous pouvez configurer les types d’appareil suivants avec des profils VPN :
 
 * Appareils qui exécutent Android 4 et versions ultérieures
-* Appareils qui exécutent iOS 7.1 et versions ultérieures
+* Appareils qui exécutent iOS 8.0 et versions ultérieures
 * Appareils qui exécutent Mac OS X 10.9 et versions ultérieures
 * Appareils inscrits qui exécutent Windows 8.1 et versions ultérieures
 * Appareils qui exécutent Windows Phone 8.1 et versions ultérieures
@@ -45,6 +45,8 @@ Intune prend en charge la création de profils VPN qui utilisent les types de co
 Type de connexion |iOS et Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop et Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Oui |Oui   |Non    |     Non    |Non  |Non    | Oui (OMA-URI, mobile uniquement)|     
+Cisco (IPsec)|Oui |Non   |Non  |  Non|Non  |Non | Non|
+Citrix|Oui |Non   |Non  |  Non|Non  |Non | Non|
 Pulse Secure|Oui  |Oui |Oui   |Non  |Oui  |Oui| Oui|        
 Client F5 Microsoft Edge|Oui |Oui |Oui |Non  |Oui  |   Oui |  Oui|   
 Dell SonicWALL Mobile Connect|Oui |Oui |Oui |Non  |Oui |Oui |Oui|         
@@ -83,7 +85,7 @@ L’utilisateur s’authentifie auprès du serveur VPN en fournissant un nom d�
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Ajouter une stratégie**.
 2. Sélectionnez un modèle pour la nouvelle stratégie en développant le type d’appareil approprié, puis choisissez le profil VPN pour cet appareil :
     * **Profil VPN (Android 4 et versions ultérieures)**
-    * **Profil VPN (iOS 7.1 et versions ultérieures)**
+    * **Profil VPN (iOS 8.0 et versions ultérieures)**
     * **Profil VPN (Mac OS X 10.9 et versions ultérieures)**
     * **Profil VPN (Windows 8.1 et versions ultérieures)**
     * **Profil VPN (Windows Phone 8.1 et versions ultérieures)**
@@ -111,6 +113,7 @@ Nom du paramètre  |Plus d'informations
 **Groupe de connexion ou domaine**|Spécifiez le nom du groupe de connexion ou domaine auquel vous souhaitez vous connecter. Cette option est visible uniquement quand le type de connexion est **Dell SonicWALL Mobile Connect**.
 **Empreinte digitale**|Spécifiez une chaîne (par exemple « Code d’empreinte digitale Contoso ») qui sera utilisée pour vérifier que le serveur VPN est digne de confiance. Une empreinte digitale peut être envoyée au client pour que celui-ci sache qu’il peut approuver n’importe quel serveur présentant cette même empreinte lors de la connexion. Si l’appareil n’a pas encore l’empreinte digitale, il invite l’utilisateur à approuver le serveur VPN auquel il se connecte en affichant l’empreinte digitale. (L’utilisateur vérifie manuellement l’empreinte digitale et choisit **confiance** pour se connecter.) Cette option est visible uniquement quand le type de connexion est **CheckPoint Mobile VPN**.
 **Par VPN d'application**|Sélectionnez cette option si vous souhaitez associer cette connexion VPN à une application iOS ou Mac OS X pour que la connexion s’ouvre quand l’application est exécutée. Vous pouvez associer le profil VPN à une application lors du déploiement du logiciel. Pour plus d’informations, consultez [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md).
+**VPN à la demande**|Vous pouvez configurer un VPN à la demande pour les appareils iOS 8.0 et versions ultérieures. Pour savoir comment procéder, consultez [VPN à la demande pour les appareils iOS](#on-demand-vpn-for-ios-devices).
 **Détecter automatiquement les paramètres du proxy** (iOS, Mac OS X, Windows 8.1 et Windows Phone 8.1 uniquement)|Si votre serveur VPN nécessite un serveur proxy pour la connexion, spécifiez si vous souhaitez que les appareils détectent automatiquement les paramètres de connexion. Pour plus d'informations, consultez la documentation de Windows Server.
 **Utiliser un script de configuration automatique** (iOS, Mac OS X, Windows 8.1 et Windows Phone 8.1 uniquement)|Si votre serveur VPN nécessite un serveur proxy pour la connexion, spécifiez si vous souhaitez utiliser un script de configuration automatique pour définir les paramètres, puis spécifiez une URL vers le fichier qui contient les paramètres. Pour plus d'informations, consultez la documentation de Windows Server.
 **Utiliser un serveur proxy** (iOS, Mac OS X, Windows 8.1 et Windows Phone 8.1 uniquement)|Si votre serveur VPN nécessite un serveur proxy pour la connexion, sélectionnez cette option, puis spécifiez l'adresse et le numéro de port du serveur proxy. Pour plus d'informations, consultez la documentation de Windows Server.
@@ -139,7 +142,33 @@ Vous pouvez définir des itinéraires dans les limites réseau de l’entreprise
 
 Vous pouvez limiter l’utilisation du VPN pour les appareils Windows 10 à des applications spécifiques en créant un paramètre OMA-URI personnalisé.
 
-La nouvelle stratégie apparaît sous le nœud **Stratégies de configuration** de l’espace de travail **Stratégie** .
+La nouvelle stratégie apparaît sous le nœud **Stratégies de configuration** de l’espace de travail **Stratégie**.
+
+### VPN à la demande pour les appareils iOS
+Vous pouvez configurer un VPN à la demande pour les appareils iOS 8.0 et versions ultérieures.
+
+> [!NOTE]
+>  
+> Par contre, vous ne pouvez pas utiliser un VPN par application et un VPN à la demande dans la même stratégie.
+ 
+1. Dans la page de configuration de la stratégie, recherchez **Règles à la demande pour cette connexion VPN**. Les colonnes sont intitulées **Correspondance** (condition vérifiée par les règles) et **Action** (action déclenchée par la stratégie quand la condition est remplie). 
+2. Choisissez **Ajouter** pour créer une règle. Vous pouvez configurer deux types de correspondances dans la règle. Vous ne pouvez configurer qu’un de ces types par règle.
+  - **SSID**, qui font référence aux réseaux sans fil. 
+  - **Domaines de recherche DNS**.  Vous pouvez utiliser des noms de domaine complets, tels que *team.corp.contoso.com*, ou des domaines tels que *contoso.com*, ce qui revient à utiliser * *.contoso.com*.
+3. Facultatif : fournissez une sonde de chaîne d’URL, qui est une URL que la règle utilise comme test. Si l’appareil sur lequel ce profil est installé peut accéder à cette URL sans redirection, la connexion VPN est établie et l’appareil se connecte à l’URL cible. L’utilisateur ne voit pas le site de la sonde de chaîne d’URL. Par exemple, une sonde de chaîne d’URL peut être l’adresse d’un serveur web d’audit qui vérifie la compatibilité de l’appareil avant la connexion du VPN. Autre exemple, l’URL teste la capacité du VPN à se connecter à un site avant de connecter l’appareil à l’URL cible via le VPN.
+4. Choisissez une des actions suivantes :
+  - **Se connecter**
+  - **Évaluer la connexion**, qui a trois paramètres. a. **Action de domaine** : Choisissez **Se connecter si nécessaire** ou **Ne jamais se connecter**
+    . b. **Liste des domaines séparés par une virgule** : Ne configurez cette option que si vous choisissez **Se connecter si nécessaire** comme **Action de domaine** 
+    . c. **Sonde de chaîne d’URL obligatoire** : URL HTTP ou HTTPS (recommandé) telle que *https://vpntestprobe.contoso.com*. La règle vérifie s’il existe une réponse en provenance de cette adresse. Si ce n’est pas le cas et que l’option **Action de domaine** est définie sur **Se connecter si nécessaire**, le VPN est déclenché.
+     > [!TIP]
+     >
+     >Par exemple, vous pouvez utiliser cette action si une partie des sites de votre réseau d’entreprise nécessite une connexion de réseau d’entreprise directe ou VPN. Si vous répertoriez *corp.contoso.com* dans **Liste des domaines de recherche DNS séparés par une virgule**, vous pouvez choisir **Se connecter si nécessaire**, puis répertorier des sites spécifiques au sein de ce réseau qui peuvent nécessiter un VPN, tels que *sharepoint.corp.contoso.com*. La règle vérifie si *vpntestprobe.contoso.com* est accessible. Si ce n’est pas le cas, le VPN est déclenché pour le site sharepoint.
+  - **Ignorer** : La connectivité VPN ne subit aucune modification. Si le VPN est connecté, laissez-le ainsi. S’il ne l’est pas, ne le connectez pas. Par exemple, vous avez peut-être une règle qui connecte le VPN pour tous vos sites web d’entreprise internes, mais vous souhaitez qu’un de ces sites internes ne soit accessible que quand l’appareil est effectivement connecté au réseau d’entreprise. Dans ce cas, vous devez créer une règle Ignorer pour ce site.
+  - **Déconnecter** : Les appareils sont déconnectés du VPN quand les conditions sont remplies. Par exemple, vous pouvez répertorier vos réseaux sans fil d’entreprise dans le champ **SSID** et créer une règle qui déconnecte les appareils du VPN quand ils se connectent à l’un de ces réseaux.
+
+Les règles propres à un domaine sont évaluées avant les règles relatives à tous les domaines. 
+
 
 ## Déploiement de la stratégie
 
@@ -163,6 +192,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

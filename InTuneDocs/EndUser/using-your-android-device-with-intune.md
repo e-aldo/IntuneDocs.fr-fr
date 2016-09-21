@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,9 +22,9 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Utilisation de votre appareil Android avec Intune
 
-Cet article contient des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leurs appareils gérés par Intune. Les administrateurs informatiques peuvent consulter ces informations pour connaître les étapes que suivent les utilisateurs pour effectuer diverses tâches, lesquelles sont regroupées en plusieurs catégories : 
+Cet article contient des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leurs appareils gérés par Intune. Les administrateurs informatiques peuvent consulter ces informations pour connaître les étapes que doivent suivre les utilisateurs pour effectuer diverses tâches, lesquelles sont regroupées dans les catégories suivantes :
 
-- Installation de l’application Portail d’entreprise et inscription Intune 
+- Installation de l’application Portail d’entreprise et inscription Intune
 - Tâches liées à la gestion post-inscription
 - Problèmes de conformité
 
@@ -37,7 +37,7 @@ Les informations contenues dans cette section vous aideront à installer le Port
 
 ## Ce que vous pouvez faire quand votre appareil est inscrit dans Intune
 
-Les informations contenues dans cette section vous indiqueront les actions que vous pourrez entreprendre après l’inscription de votre appareil Android dans Intune.
+Les informations contenues dans cette section vous indiquent les actions que vous pourrez entreprendre après l’inscription de votre appareil Android dans Intune.
 
 - [Utiliser des applications gérées sur votre appareil](use-managed-apps-on-your-device-android.md)
 - [Chiffrer votre appareil](encrypt-your-device-android.md)
@@ -54,7 +54,7 @@ Les informations contenues dans cette section vous indiqueront les actions que v
 
 ## Résoudre les problèmes rencontrés avec votre appareil
 
-Les informations contenues dans cette section vous aideront à résoudre les problèmes que vous pourriez rencontrer après l’inscription de votre appareil Android dans Intune.
+Les informations contenues dans cette section vous aideront à résoudre les problèmes que vous pouvez rencontrer après l’inscription de votre appareil Android dans Intune.
 
 - [Utiliser la journalisation détaillée pour aider votre administrateur informatique à résoudre les problèmes de l’appareil](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Envoyer les journaux de données de diagnostic à votre administrateur informatique par e-mail](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
@@ -71,6 +71,6 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

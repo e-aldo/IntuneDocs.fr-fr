@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: 7f84ad1566431a7a72897750fadbc90cb56ec5ce
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: 0949172a7b8517b12fb46e8fd1f8a3cd70d93099
 
 
 ---
@@ -78,31 +78,9 @@ Outre les modifications dans la gestion de groupe, **les fonctionnalités suivan
 - Glissement des groupes dans les rapports
 <!--- TFS 1295329--->
 
-## Portail d'entreprise
-
-### Lien des commentaires sur le Portail d’entreprise à l’attention de Microsoft
-Le site web du Portail d’entreprise permet aux utilisateurs finaux de sélectionner un nouveau lien « Commentaires », situé en bas de la page, pour envoyer des commentaires à Microsoft concernant leur expérience d’utilisation du site. Les commentaires regroupés sont anonymes et permettent à Microsoft d’améliorer le site web du Portail d’entreprise, afin d’optimiser cette expérience.
-<!--- TFS 1313657--->
-
-### Ajout de « Notifications » sur le portail d’entreprise pour Android
-En septembre, nous publierons une mise à jour du Portail d’entreprise pour Android, qui présentera la nouvelle icône **Notifications** de la page d’accueil. En appuyant sur cette icône, vous pourrez accéder à la page **Notifications** qui indiquera à votre utilisateur final tous les éléments qui nécessitent son attention particulière dans l’application de portail d’entreprise, tels que la non-conformité d’un appareil, ainsi que les mises à jour ou les activations d’inscriptions. Si vous utilisez également l’application de portail d’entreprise iOS, vous pouvez déjà utiliser ces notifications. Une fois la page **Notifications** en place, si votre appareil est déjà inscrit, vous ne verrez plus la page **Configuration de l’accès à l’entreprise** à chaque fois que vous accédez au portail d’entreprise pour Android ou que vous y revenez. Nous savons que beaucoup d’entre vous ont créé des conseils pour l’utilisateur final et que vous appréciez de recevoir des notifications avancées lorsque vos conseils/captures d’écrans doivent être mis à jour. Mettez à jour votre documentation pour refléter les modifications de l’expérience à venir. Vous trouverez des captures d’écran mises à jour ici : https://aka.ms/androidcpupdate.  
-
-### Améliorations apportées à l’accès des utilisateurs finaux iOS à leurs applications
-Les modifications suivantes seront appliquées en septembre pour les mosaïques d’applications de l’application Portail d’entreprise : iOS pointera les utilisateurs vers différentes vues dans un emplacement unique, le site Web de Portail d’entreprise, pour toutes leurs applications. Actuellement, les restrictions d’Apple n’autorisent pas les applications métier et gérées de l’App store à être répertoriées dans l’application Portail d’entreprise et obligent les utilisateurs à consulter différentes vues pour rechercher toutes leurs applications.
-
-- La mosaïque **Applications d’entreprise** pointe actuellement vers une liste de toutes les applications dans l’onglet TOUT du site Web Portail d’entreprise, et elle continuera de fonctionner de la même manière. Le nom de la mosaïque est modifié en **Toutes les applications**.
-- La mosaïque **Autres applications** pointe actuellement vers une vue située à l’intérieur de l’application Portail d’entreprise, qui répertorie toutes les applications que le Portail d’entreprise est autorisé à afficher par Apple. Le nom de la mosaïque est modifié en **Applications proposées**, et la sélection de cette mosaïque ouvre l’onglet SÉLECTION du site Web Portail d’entreprise.
--  La mosaïque **Catégories** pointe actuellement vers une vue située à l’intérieur de l’application Portail d’entreprise, qui répertorie les catégories d’applications. Le nom de la mosaïque ne change pas, mais elle pointe maintenant sur l’onglet CATÉGORIES du site Web Portail d’entreprise.
-Vous trouverez des captures d’écran mises à jour [ici](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
-<!---TFS 1317133--->
-
-### Invitation à l’installation de l’application Managed Browser iOS si IT Pro définit cette obligation pour une application
-Dans la version de septembre de l’application de Portail d’entreprise iOS, si vous avez défini qu’un clip web s’ouvre uniquement dans le navigateur géré, et que le navigateur géré n’est pas installé sur un appareil, l’application Portail d’entreprise sur l’appareil invite l’utilisateur à installer le navigateur géré avant que le clip web ne puisse être installé. 
-<!---TFS 1228570--->
-
 ## Désapprobation du service
 ### Les applications Portail d’entreprise pour Windows 8 et Windows Phone 8 seront déconseillées dès le mois de septembre 2016.
-À compter de septembre 2016, les utilisateurs de l’application Portail d’entreprise Microsoft Intune pour plateformes Windows Phone 8 et Windows 8 ne pourront plus bénéficier du support Microsoft Intune. Mettez à jour vos appareils vers Windows 8.1 et Windows Phone 8.1, et utilisez les applications Portail d’entreprise Windows 8.1 et Windows Phone 8.1 correspondantes pour continuer la distribution des applications sur ces appareils.
+À partir d’octobre 2016, Microsoft Intune ne prendra plus en charge les applications Portail d’entreprise Windows 8 et Windows Phone 8. Microsoft Intune cessera également de prendre en charge la plateforme Windows Phone 8. Ainsi, vous ne pourrez plus inscrire ni mettre à jour des appareils Windows Phone 8. Néanmoins, vous pourrez continuer à gérer les appareils Windows Phone 8 et Windows 8 déjà inscrits. Mettez à jour les appareils Windows Phone 8 et Windows 8 vers Windows Phone 8.1 et Windows 8.1, et utilisez les applications Portail d’entreprise Windows 8.1 et Windows Phone 8.1 correspondantes pour continuer à distribuer des applications sur ces appareils sans interruption.
 <!---TFS 1255391--->
 
 ### Suppression du ciblage de groupe personnalisé pour les règles de notification
@@ -135,6 +113,6 @@ Voir [Nouveautés de Microsoft Intune](whats-new-in-microsoft-intune.md) pour e
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

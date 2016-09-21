@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 
 ---
@@ -23,7 +23,9 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 # Synchroniser votre appareil manuellement à l’aide du site web Portail d’entreprise
 
-Si l’installation de votre application est trop longue, vous pouvez essayer de synchroniser votre appareil manuellement, ce qui peut vous aider à accélérer l’installation. Suivez les instructions ci-dessous qui correspondent au type d’appareil ou à la version de Windows que vous utilisez. La synchronisation de votre appareil pour accélérer les installations d’application fonctionne uniquement pour les versions répertoriées ci-dessous.
+Si l’installation de votre application ou toute autre tâche prend trop de temps, vous pouvez essayer de synchroniser votre appareil manuellement, ce qui peut vous aider à accélérer l’installation ou la tâche. Suivez les instructions ci-dessous correspondant à l’appareil que vous utilisez. 
+
+La fonctionnalité de synchronisation fonctionne uniquement pour les versions répertoriées ci-dessous.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -32,6 +34,6 @@ Si l’installation de votre application est trop longue, vous pouvez essayer de
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

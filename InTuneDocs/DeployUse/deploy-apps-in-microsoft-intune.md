@@ -4,7 +4,7 @@ description: "Utilisez les informations de cette rubrique pour déployer des app
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6f795031ec23ffe6f332b3510eea43d5fbdbcd
-ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
+ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
+ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
 
 ---
 # Déploiement d’applications dans Microsoft Intune
@@ -57,7 +57,7 @@ L’application s’affiche sur les appareils des utilisateurs dans le Portail d
 Par exemple, dans cette capture d’écran, l’application Bing pour iOS a été déployée via le type d’installation **Lien externe**, avec une icône personnalisée. L’option **Affiche comme application proposée et la met en avant dans le portail d’entreprise** a été sélectionnée.  
 ![Application disponible iOS](./media/available-install-on-iOS.png)
 
-Si vous avez déployé l’application comme application **Requise** sur un appareil iOS, l’utilisateur recevra une notification indiquant qu’une application est prête à être installée. Par exemple, dans cette capture d’écran, l’application Dossiers de travail pour iOS a été déployée via le type d’installation **Application iOS gérée à partir de l’App Store**.
+Si vous avez déployé l’application comme application **Requise** sur un appareil iOS, l’utilisateur recevra une notification indiquant qu’une application est prête à être installée. Par exemple, dans cette capture d’écran, l’application Dossiers de travail pour iOS a été déployée via le type d’installation **Application iOS gérée à partir de l’App Store**.  
 ![Application requise iOS](./media/iOS-Required-install.PNG)
 
 ## Étapes suivantes
@@ -66,6 +66,6 @@ Après avoir déployé une application, vous pouvez surveiller sa progression. P
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO5-->
 
 
