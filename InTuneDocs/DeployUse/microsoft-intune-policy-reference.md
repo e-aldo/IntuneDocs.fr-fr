@@ -4,7 +4,7 @@ description: "Utilisez les informations de cette rubrique pour vous aider à dé
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# Guide de référence des stratégies Microsoft Intune
+# Guide de référence des stratégies de configuration de Microsoft Intune
 
 Les informations de cette rubrique vous aideront à déterminer la stratégie de configuration de Microsoft Intune à utiliser pour gérer vos appareils.
 
@@ -74,7 +74,7 @@ S’applique uniquement à Windows Phone et aux appareils Windows inscrits.
 |---------------|------------------------|
 |**Configuration personnalisée (Windows 10 Desktop et Mobile, et versions ultérieures)**|Déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités de l'appareil. Cela est utile quand le paramètre dont vous avez besoin n’est pas disponible dans une stratégie de configuration.<br />    Pour plus d’informations, consultez [Paramètres de la stratégie Windows 10 dans Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configuration personnalisée (Windows Phone 8.1 et versions ultérieures)**|Déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités de l'appareil. Cela est utile quand le paramètre dont vous avez besoin n’est pas disponible dans une stratégie de configuration.<br /><br />Pour plus d’informations, consultez [Paramètres de Windows Phone 8.1 dans Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
-|**Stratégie de mise à niveau d’édition (Windows 10 Desktop et versions ultérieures)**<br><br>**Stratégie de mise à niveau d’édition (Windows 10 Holographique et versions ultérieures)**|Configurer et déployer des stratégies contenant des informations sur les licences ou les clés de produits qui sont utilisées pour mettre à jour des appareils Windows 10 vers une version plus récente.<br><br>Pour plus d’informations, consultez [Stratégie de mise à niveau d’édition](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
+|**Stratégie de mise à niveau d’édition (Windows 10 Desktop et versions ultérieures)**<br><br>**Stratégie de mise à niveau d’édition (Windows 10 Holographique et versions ultérieures)**<br><br>**Stratégie de mise à niveau d’édition (Windows 10 Mobile et versions ultérieures)**|Configurer et déployer des stratégies contenant des informations sur les licences ou les clés de produits qui sont utilisées pour mettre à jour des appareils Windows 10 vers une version plus récente.<br><br>Pour plus d’informations, consultez [Stratégie de mise à niveau d’édition](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
 |**Profil de messagerie (Windows Phone 8 et versions ultérieures)**<br /><br />**Profil de messagerie (Windows 10 Desktop et Mobile, et versions ultérieures)**|Créer, déployer et analyser les paramètres de messagerie Exchange ActiveSync sur les appareils gérés. L'utilisateur peut ainsi accéder à sa messagerie professionnelle sur son appareil personnel sans aucune autre configuration de sa part.<br /><br />Pour plus d’informations, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Configuration générale (Windows 10 Desktop et Mobile, et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles pour les appareils Windows 10 Desktop et Mobile inscrits.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie Windows 10 dans Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configuration générale (Windows 10 Collaboration et versions ultérieures)**|Configurer les paramètres fonctionnels et de sécurité des appareils pour les appareils Windows 10 Collaboration inscrits (par exemple, un appareil Surface Hub).<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie de configuration Windows Collaboration dans Microsoft Intune](windows-team-configuration-policy-settings-in-microsoft-intune.md).|
@@ -104,25 +104,7 @@ S’applique uniquement à Windows Phone et aux appareils Windows inscrits.
 > [!IMPORTANT]
 Microsoft Intune offre désormais des **stratégies de configuration** distinctes pour chaque plateforme d’appareil. Elles contiennent les paramètres les plus récents que vous pouvez utiliser. Vous pouvez continuer à utiliser la stratégie de sécurité des appareils mobiles et tous les déploiements existants continueront de fonctionner, mais vous devez planifier la migration vers les nouvelles stratégies de configuration dès que possible.<br />Pour plus d’informations, consultez [Paramètres de stratégie de sécurité des appareils mobiles dans Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).|
 
-## Stratégies d'accès conditionnel de conformité
-
-### Accès conditionnel
-
-|Nom de la stratégie|À utiliser pour|
-|---------------|------------------------|
-|**Stratégie Exchange Online**<br /><br />**Stratégie Exchange On-Premises**|Bloquer l’accès à la messagerie Microsoft Exchange à partir des appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité que vous avez créée.<br /><br />Pour plus d’informations, consultez [Restreindre l’accès à Exchange Online et au nouvel environnement Exchange Online Dedicated avec Intune](restrict-access-to-exchange-online-with-microsoft-intune.md).|
-|**Stratégies SharePoint Online**|Bloquer l’accès à SharePoint Online à partir des appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité que vous avez créée.<br /><br />Pour plus d’informations, consultez [Restreindre l’accès à SharePoint Online avec Microsoft Intune](restrict-access-to-sharepoint-online-with-microsoft-intune.md).|
-|**Skype pour Entreprises**|Bloquer l’accès à Skype Entreprise à partir des appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité que vous avez créée.<br /><br />Pour plus d’informations, consultez [Restreindre l’accès à Skype pour Entreprises avec Microsoft Intune](restrict-access-to-skype-for-business-online-with-microsoft-intune.md).|
-> [!NOTE]
-> Vous ne déployez pas de stratégies d'accès conditionnel pour les utilisateurs et les appareils. Au lieu de cela, vous configurez la stratégie requise, qui s’applique alors à tous les groupes ciblés dans la stratégie.
-
-### Stratégies de conformité
-
-|Nom de la stratégie|À utiliser pour|
-|---------------|------------------------|
-|**Stratégies de conformité**|Définir le niveau de conformité des appareils, puis signaler les appareils non conformes. Ces stratégies sont utilisées avec un accès conditionnel pour aider à évaluer les appareils qui ne doivent pas recevoir les services.<br /><br />Pour plus d’informations, consultez [Stratégies de conformité d’appareils dans Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).|
-
-## Gestion des PC Windows
+## Stratégies pour les PC Windows gérés par le logiciel client Intune
 
 |Nom de la stratégie|À utiliser pour|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ Microsoft Intune offre désormais des **stratégies de configuration** distincte
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Tâches courantes de gestion des PC Windows | Microsoft Intune"
-description: "Passez en revue les tâches de cette rubrique pour découvrir comment gérer vos ordinateurs qui exécutent le logiciel client Intune PC."
+description: "Passez en revue les tâches décrites dans cette rubrique pour découvrir comment gérer des PC Windows qui exécutent le client logiciel Intune."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Tâches courantes de gestion des PC Windows avec le client Microsoft Intune
-Passez en revue les tâches de cette rubrique pour découvrir comment gérer vos ordinateurs qui exécutent le logiciel client Intune PC. Si vous n’avez pas encore installé le client sur vos ordinateurs, consultez [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+# Tâches courantes de gestion des PC Windows avec le client logiciel Intune
+Passez en revue les tâches décrites dans cette rubrique pour découvrir comment gérer les ordinateurs qui exécutent le client logiciel Intune. Si vous n’avez pas encore installé le client sur vos ordinateurs, consultez [Installer le client logiciel Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Utiliser des stratégies pour simplifier la gestion des PC
-### Gérer le Pare-feu Windows
-Les stratégies simplifient l'administration des paramètres du Pare-feu Windows sur les ordinateurs gérés. Pour plus d’informations, consultez [Protéger les PC Windows à l’aide de stratégies de Pare-feu Windows dans Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+
+Les PC Windows qui exécutent le client logiciel Intune peuvent être gérés à l’aide des stratégies **Gestion des ordinateurs** d’Intune.
+
+![Modèle de stratégies pour les PC Windows](../media/pc_policy_template.png)
 
 ### Gérer Microsoft Intune Center
-Microsoft Intune Center permet aux utilisateurs d’effectuer les opérations suivantes :
+Pour les utilisateurs, le client logiciel Intune apparaît comme **Microsoft Intune Center**. Microsoft Intune Center permet aux utilisateurs d’effectuer les opérations suivantes :
 
 -   Obtenir des applications à partir du portail d'entreprise.
 
@@ -49,11 +51,14 @@ Microsoft Intune Center est installé sur tous les ordinateurs gérés. Vous pou
 |**URL du site web**|L'URL de votre site web de support.<br /><br />Longueur maximale : 150 caractères|
 |**Remarques**|Remarque affichée pour les utilisateurs.<br /><br />Longueur maximale : 120 caractères|
 
-### Gérer les paramètres des mises à jour logicielles
-Utilisez des stratégies pour configurer les paramètres que les ordinateurs gérés utilisent pour rechercher et télécharger des mises à jour logicielles publiées par Microsoft et d'autres parties. Pour plus d’informations, consultez [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+## Paramètres des mises à jour logicielles
+Utilisez des stratégies pour configurer les paramètres que les ordinateurs gérés utilisent pour rechercher et télécharger des mises à jour logicielles publiées par Microsoft et d'autres parties. Ces mises à jour ne comprennent pas les mises à niveau du système d’exploitation (c.-à-d. la mise à niveau de Windows 7 vers Windows 10 ou les mises à niveau d’une version de Windows 10 vers une version ultérieure). Pour plus d’informations, consultez [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Gérer les paramètres Endpoint Protection
+### Paramètres Endpoint Protection
 Utilisez des stratégies pour configurer les paramètres Endpoint Protection à déployer ensuite sur les ordinateurs gérés. Cela inclut les planifications de l'analyse, les actions à entreprendre lorsqu'un programme malveillant est détecté et bien plus encore. Pour plus d’informations, consultez [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+## Paramètres du Pare-feu Windows
+Les stratégies simplifient l'administration des paramètres du Pare-feu Windows sur les ordinateurs gérés. Pour plus d’informations, consultez [Protéger les PC Windows à l’aide de stratégies de Pare-feu Windows dans Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ## Afficher l'Inventaire matériel et logiciel
 Intune recueille des informations détaillées sur le matériel et les logiciels des ordinateurs gérés. Utilisez les informations contenues dans les procédures suivantes pour apprendre à créer :
@@ -113,17 +118,17 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
 
 2.  Sélectionnez les appareils que vous souhaitez mettre hors service, puis choisissez **Mettre hors service/Réinitialiser**.
 
-Pour réinscrire un ordinateur dans Intune, réinstallez le logiciel client sur l’ordinateur à l’aide des informations contenues dans la rubrique [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+Pour réinscrire un ordinateur dans Intune, réinstallez le client logiciel sur le PC en suivant les instructions données dans [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Si un ordinateur ne peut pas se connecter à Intune, un message s’affiche dans l’espace de travail **Tableau de bord**.
 
 Lorsque vous mettez hors service un ordinateur :
 
--   Il est supprimé de la gestion et de l’inventaire Intune, et la licence associée à l’ordinateur devient disponible pour une réutilisation. La mise hors service et la réinitialisation ont pour effet de supprimer le logiciel client Intune, mais elles ne suppriment pas les données et les applications de l’ordinateur.
+-   Il est supprimé de la gestion et de l’inventaire Intune, et la licence associée à l’ordinateur devient disponible pour une réutilisation. La mise hors service et la réinitialisation ont pour effet de supprimer le logiciel client Intune, mais elles ne suppriment pas les données et les applications de l’ordinateur. Cette mise hors service n’effectue pas une réinitialisation complète sur l’ordinateur.
 
 -   Son état ne s’affiche plus dans la console Intune.
 
--   Intune supprime le logiciel client de l’ordinateur. Si l’ordinateur n’est pas connecté au service Intune, le logiciel client sera supprimé la prochaine fois qu’il se connectera.
+-   Intune supprime le client logiciel de l’ordinateur. Si l’ordinateur n’est pas connecté au service Intune, le client logiciel est supprimé à la prochaine connexion.
 
 -   Microsoft Intune Endpoint Protection est supprimé de l’ordinateur. Si l’ordinateur dispose d’une autre application de point de terminaison installée et qu’elle est désactivée, cette application peut être réactivée après la suppression de Microsoft Intune Endpoint Protection pour garantir la protection de vos ordinateurs.
 
@@ -160,9 +165,9 @@ Avant de pouvoir déployer des logiciels vers un utilisateur, vous devez lier l'
 > [!TIP]
 > Si vous souhaitez limiter la capacité des utilisateurs finaux à se lier à des ordinateurs, activez l’option **Limiter la capacité des utilisateurs à se lier à des ordinateurs** dans la stratégie **Paramètres de l’Agent Microsoft Intune**.
 
-## Demander et fournir une assistance à distance à des PC Windows qui utilisent le logiciel client Intune
+## Demander et fournir une assistance à distance pour les PC Windows
 
-Microsoft Intune peut utiliser le logiciel [TeamViewer](https://www.teamviewer.com) pour permettre aux utilisateurs de PC qui exécutent le logiciel client Intune d’obtenir votre aide via l’assistance à distance. Lorsqu’un utilisateur demande de l’aide à partir de Microsoft Intune Center, vous êtes informé par une alerte, vous pouvez accepter la demande, puis fournir une assistance.
+Microsoft Intune peut utiliser le logiciel [TeamViewer](https://www.teamviewer.com), acheté séparément, pour permettre aux utilisateurs de PC qui exécutent le client logiciel Intune d’obtenir votre aide via l’assistance à distance. Lorsqu’un utilisateur demande de l’aide à partir de Microsoft Intune Center, vous êtes informé par une alerte, vous pouvez accepter la demande, puis fournir une assistance.
 Cette fonctionnalité remplace la fonctionnalité Assistance à distance Windows existante dans Intune.
 
 
@@ -211,6 +216,6 @@ Dans le menu **Actions** de la fenêtre **TeamViewer**, choisissez **Fin de sess
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

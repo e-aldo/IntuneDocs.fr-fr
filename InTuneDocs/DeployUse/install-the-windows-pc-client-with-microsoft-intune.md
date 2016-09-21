@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# Installer le client de PC Windows avec Microsoft Intune
-Utilisez ce guide pour que votre PC Windows soit géré par le logiciel client Microsoft Intune.
+# Installer le logiciel client Intune sur des PC Windows
+Les PC Windows peuvent être inscrits en installant le logiciel client Intune. Le logiciel client Intune peut être installé de l’une des façons suivantes :
 
-## Avant de commencer
-Avant de lancer l’installation du logiciel client Intune, lisez la rubrique [Résoudre des conflits de stratégie entre les objets de stratégie de groupe et Microsoft Intune](resolve-gpo-and-microsoft-intune-policy-conflicts.md) pour comprendre la configuration requise pour une installation correcte du client. Revenez ensuite à ces instructions.
+- Installation manuelle
+- Installation à l’aide d’une stratégie de groupe
+- Inclusion dans une image de disque
+- Installation par les utilisateurs
 
-## Installer le client
-Utilisez ces étapes pour installer le client :
+## Téléchargement du logiciel client Intune
 
--   [Pour télécharger le logiciel client](#to-download-the-client-software)
-
-Puis, utilisez une ou plusieurs des méthodes suivantes pour installer le client :
-
--   [Pour déployer manuellement le logiciel client](#to-manually-deploy-the-client-software)
-
--   [Pour déployer automatiquement le logiciel client à l'aide d'une stratégie de groupe](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Installer le logiciel client Microsoft Intune dans le cadre d'une image](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-Si vous n’avez plus besoin de gérer un ordinateur avec Intune, vous pouvez en retirer l’ordinateur, ce qui supprime également le logiciel client de cet ordinateur. Pour plus d’informations, consultez [Tâches courantes de gestion des PC Windows avec le client Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
-
-### Pour télécharger le logiciel client
+Toutes les méthodes, à l’exception de l’installation du client Intune par les utilisateurs eux-mêmes, nécessitent le téléchargement du logiciel pour son déploiement.
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Admin** &gt; **Téléchargement du logiciel client**.
 
-  ![Télécharger le client PC Intune](./media/pc-SA-client-download.png)
+  ![Télécharger le client PC Intune](../media/pc-sa-client-download.png)
 
 2.  Dans la page **Téléchargement du logiciel client**, cliquez sur **Télécharger le logiciel client**, puis enregistrez le package **Microsoft_Intune_Setup.zip** contenant le logiciel à un emplacement sécurisé de votre réseau.
 
@@ -56,14 +45,14 @@ Si vous n’avez plus besoin de gérer un ordinateur avec Intune, vous pouvez en
     > [!IMPORTANT]
     > Ne renommez pas ou ne supprimez pas le fichier **ACCOUNTCERT** extrait, au risque de faire échouer l’installation du logiciel client.
 
-### Pour déployer manuellement le logiciel client
+## Déploiement manuel
 
 1.  Sur un ordinateur, accédez au dossier dans lequel se trouvent les fichiers d’installation du logiciel client, puis exécutez **Microsoft_Intune_Setup.exe** pour installer le logiciel client.
 
     > [!NOTE]
     > L'état de l'installation s'affiche lorsque vous placez le curseur sur l'icône de la barre des tâches de l'ordinateur client.
 
-### Pour déployer automatiquement le logiciel client à l'aide d'une stratégie de groupe
+## Déploiement à l’aide d’une stratégie de groupe
 
 1.  Dans le dossier contenant les fichiers **Microsoft_Intune_Setup.exe** et **MicrosoftIntune.accountcert**, exécutez la commande suivante pour extraire les programmes d’installation Windows Installer des ordinateurs 32 et 64 bits :
 
@@ -80,7 +69,7 @@ Si vous n’avez plus besoin de gérer un ordinateur avec Intune, vous pouvez en
 
     Pour plus d'informations sur l'utilisation d'une stratégie de groupe pour déployer automatiquement des logiciels, consultez la documentation de Windows Server.
 
-### Installer le logiciel client Microsoft Intune dans le cadre d'une image
+## Installation dans le cadre d’une image
 Vous pouvez déployer le logiciel client Intune sur des ordinateurs dans le cadre d’une image de système d’exploitation en utilisant la procédure suivante comme exemple :
 
 1.  Copiez les fichiers d’installation du client **Microsoft_Intune_Setup.exe** et **MicrosoftIntune.accountcert** dans le dossier **%Systemdrive%\Temp\Microsoft_Intune_Setup** se trouvant sur l’ordinateur de référence.
@@ -109,6 +98,12 @@ Au redémarrage de l'ordinateur ciblé à la fin des opérations du programme d'
 Quand la tâche d’inscription automatique s’exécute à l’heure planifiée suivante, elle vérifie l’existence de la valeur de Registre **WindowsIntuneEnrollPending** et tente d’inscrire l’ordinateur ciblé dans Intune. Si l'inscription échoue pour une raison quelconque, l'inscription est tentée à nouveau lors de la prochaine exécution de la tâche. Les tentatives continuent pendant un mois.
 
 La tâche d’inscription automatique Intune, la valeur de Registre **WindowsIntuneEnrollPending** et le certificat de compte sont supprimés de l’ordinateur ciblé quand l’inscription est réussie ou après un délai d’un mois.
+
+## Indiquer à l’utilisateur de s’inscrire lui-même
+
+Les utilisateurs peuvent installer le logiciel client Intune en accédant à l’adresse [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com). Si le portail web peut détecter que l’appareil est un PC Windows, il invite à inscrire le PC en téléchargeant le logiciel client Intune. Une fois le logiciel téléchargé, les utilisateurs peuvent l’installer pour activer la gestion de leurs PC.
+
+![Portail Intune invitant à télécharger le logiciel client Intune](../media/software-client-download.png)
 
 ## Analyser et valider la réussite du déploiement du client
 Utilisez l'une des procédures suivantes pour vous analyser et valider la réussite du déploiement du client.
@@ -139,6 +134,6 @@ Utilisez l'une des procédures suivantes pour vous analyser et valider la réuss
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

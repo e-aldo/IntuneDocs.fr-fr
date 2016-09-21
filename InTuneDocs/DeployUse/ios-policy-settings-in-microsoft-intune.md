@@ -4,7 +4,7 @@ description: "Créez des stratégies qui contrôlent les paramètres et fonction
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
+ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
+ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
 
 
 ---
@@ -81,6 +81,8 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Exiger la sauvegarde chiffrée**|Exiger le chiffrement des sauvegardes d’appareil.|
 |**Autoriser les applications gérées à synchroniser des données sur iCloud**|Autorise les applications que vous gérez avec Intune à synchroniser les données sur le compte iCloud de l’utilisateur.|
 |**Autoriser la procédure de transfert à poursuivre sur un autre appareil**|Autorise l’utilisateur à reprendre le travail qu’il a commencé sur un appareil iOS, sur un autre appareil iOS ou Mac OS X.|
+|**Autoriser le partage de photos iCloud**|Autorise l’utilisation de la fonctionnalité de flux de photos partagé iOS.|
+|**Autoriser la photothèque iCloud**|Autorise l’utilisateur à stocker des photos dans iCloud. Si désactivé, les photos déjà stockées dans iCloud sont supprimées.|
 
 ### Paramètres d’application du navigateur
 Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
@@ -99,14 +101,14 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
-|**Autoriser la boutique d'applications**|Autorise l’accès à l’App Store depuis l’appareil.|
+|**Autoriser l’installation d’applications**|Autorise l’appareil à accéder à l’App Store et à installer des applications.|
 |**Demander un mot de passe pour accéder à la boutique d'applications**|Oblige l’utilisateur à saisir un mot de passe pour pouvoir visiter l’App Store.|
 |**Autoriser les achats dans l'application**|Autoriser les achats depuis une application en cours d’exécution.|
 |**Autoriser les documents gérés dans d'autres applications non gérées**|Autoriser les documents d'entreprise à être affichés dans toute application.<br>**Exemple** : Vous voulez empêcher les utilisateurs d’enregistrer des fichiers de OneDrive dans Dropbox. Attribuez la valeur Non à ce paramètre. Une fois que l’appareil a reçu la stratégie (par exemple, après un redémarrage), il cesse d’autoriser l’enregistrement.|
 |**Autoriser les documents non gérés dans d'autres applications gérées**|Autoriser tout document à être affiché dans les applications d’entreprise gérées.|
 |**Autoriser la vidéoconférence**|Autorise les applications de vidéoconférence comme FaceTime sur l’appareil.|
-|**Autoriser le contenu pour adultes dans la boutique multimédia**|Autoriser l’appareil à accéder au contenu réservé aux adultes depuis le magasin.|
-|**Autoriser l’utilisateur à télécharger du contenu indiqué comme étant « Littérature érotique » à partir de l’iBooks Store**|Autorise l’utilisateur à télécharger des livres de la catégorie « Littérature érotique ».|
+|**Autoriser l’utilisateur à faire confiance aux nouveaux créateurs d’applications d’entreprise**|Permet à l’utilisateur de choisir de faire confiance aux applications qui n’ont pas été téléchargées à partir de l’App Store.|
+
 
 ### Paramètres d’application relatifs aux jeux
 Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
@@ -116,12 +118,23 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Autoriser l'ajout d'amis Game Center**|Autoriser l’utilisateur à ajouter des amis dans le Game Center.|
 |**Autoriser les jeux multijoueur**|Autoriser l’utilisateur à jouer à des jeux multijoueur sur l’appareil.|
 
+### Paramètres d’application relatifs au contenu multimédia
+Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+
+|Nom du paramètre|Détails|
+|----------------|-------|
+|**Région des classifications**|Sélectionnez une région, puis sélectionnez l’évaluation maximale que les utilisateurs peuvent télécharger dans les catégories **Films**, **Séries TV** et **Applications**.|
+|**Autoriser le contenu pour adultes dans la boutique multimédia**|Autoriser l’appareil à accéder au contenu réservé aux adultes depuis le magasin.|
+|**Autoriser l’utilisateur à télécharger du contenu indiqué comme étant « Littérature érotique » à partir de l’iBooks Store**|Autorise l’utilisateur à télécharger des livres de la catégorie « Littérature érotique ».|
+
+
 ### Paramètres des fonctionnalités de l’appareil pour le matériel
 Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
 |**Autoriser l'appareil photo**|Spécifie si l’appareil photo de l’appareil peut être utilisé.|
+|**Forcer les montres Apple Watch jumelées à utiliser la détection de poignet**|Quand elle est activée, l’Apple Watch n’affiche pas de notification si elle n’est pas portée.|
 |**Exiger un mot de passe associé pour les demandes AirPlay sortantes**|Nécessite un mot de passe de jumelage lorsque l’utilisateur a recours à AirPlay pour diffuser le contenu vers d’autres appareils Apple.|
 
 ### Paramètres des fonctionnalités de l’appareil pour les appareils cellulaires
@@ -141,6 +154,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Autoriser Siri**|Autoriser l’utilisation de l’assistant vocal Siri sur l’appareil.|
 |**Autoriser Siri quand l'appareil est verrouillé**|Autoriser l’utilisation de l’assistant vocal Siri sur l’appareil lorsqu’il est verrouillé.|
 |**Autoriser la composition vocale**|Autoriser l’utilisation de la fonctionnalité de numérotation vocale sur l’appareil.|
+|**Ne pas autoriser AirDrop à partir des applications gérées**|Empêche les applications gérées d’envoyer des données via AirDrop.|
 
 
 ### Paramètres des applications conformes et non conformes
@@ -214,24 +228,55 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |----------------|--------------------|
 |**Autoriser le verrou d'activation quand l'appareil est en mode supervisé**|Active le verrou d’activation sur des appareils iOS supervisés.|
 
-### Surveillance
+### Paramètres du mode supervisé
 Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS 7.1 et versions ultérieures en mode supervisé.
+
+### Paramètres du mode supervisé pour les restrictions de l’appareil
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
-|**Autoriser la modification du compte**|Autoriser l’utilisateur à modifier les paramètres de compte tels que les configurations des e-mails.|
-|**Autoriser AirDrop**|Autoriser l’utilisation de la fonctionnalité AirDrop pour échanger du contenu avec des appareils proches.|
-|**Autoriser les modifications sur les paramètres d’utilisation des données cellulaires des applications**|Autoriser l’utilisateur à contrôler les applications qui sont autorisées à utiliser des données cellulaires.|
-|**Autoriser Siri à interroger le contenu généré par l’utilisateur à partir d’Internet**|Autoriser Siri à accéder à des sites web pour répondre à des questions.|
-|**Autoriser l’accès à l’IBooks Store**|Autoriser l’utilisateur à parcourir et à acheter des livres depuis l’IBooks Store.|
-|**Autoriser les modifications sur les paramètres de l’application Localiser mes amis**|Autoriser l’utilisateur à modifier les paramètres de l’application Localiser mes amis.|
-|**Autoriser l’utilisation de l’option d’effacement de tout le contenu et de tous les paramètres sur l’appareil**|Autoriser l’utilisateur à utiliser l’option d’effacement de l’ensemble du contenu et des paramètres sur l’appareil.|
-|**Autoriser l’utilisateur à activer des restrictions dans les paramètres de l’appareil**|Autoriser l’utilisateur à configurer des restrictions sur l’appareil (contrôle parental).|
-|**Autoriser la recherche Spotlight à retourner des résultats d’Internet**|Autoriser la recherche Spotlight à se connecter à Internet pour fournir des résultats supplémentaires.|
-|**Autoriser l’utilisation de l’application Game Center**|Autoriser l’utilisation de l’application Game Center.|
-|**Autoriser le jumelage d’hôtes pour contrôler les appareils avec lesquels un appareil iOS peut être jumelé**|Autoriser le jumelage d’hôtes pour aider l’administrateur à contrôler les appareils avec lesquels un appareil doté d’iOS 7 peut être jumelé.|
-|**Autoriser l’utilisateur à installer des profils de configuration et des certificats**|Autoriser l’utilisateur à installer des profils de configuration et des certificats.|
-|**Autoriser l’utilisation de l’application Messages sur l’appareil**|Autoriser l’utilisation de l’application Messages pour envoyer des SMS.|
+|**Autoriser la modification du compte**|Autorise l’utilisateur à modifier les paramètres de compte tels que les configurations des e-mails.|
+|**Autoriser les modifications sur les paramètres d’utilisation des données cellulaires des applications**|Autorise l’utilisateur à contrôler les applications qui sont autorisées à utiliser des données cellulaires.|
+|**Autoriser l’utilisation de l’option d’effacement de tout le contenu et de tous les paramètres sur l’appareil**|Autorise l’utilisateur à utiliser l’option d’effacement de l’ensemble du contenu et des paramètres sur l’appareil.|
+|**Autoriser l’utilisateur à activer des restrictions dans les paramètres de l’appareil**|Autorise l’utilisateur à configurer des restrictions sur l’appareil (contrôle parental).|
+|**Autoriser le jumelage d’hôtes pour contrôler les appareils avec lesquels un appareil iOS peut être jumelé**|Autorise le jumelage d’hôtes pour laisser l’administrateur contrôler les appareils avec lesquels un appareil iOS peut être jumelé.|
+|**Autoriser l’utilisateur à installer des profils de configuration et des certificats**|Autorise l’utilisateur à installer des profils de configuration et des certificats.|
+|**Autoriser le changement du nom d’appareil**|Autorise l’utilisateur à modifier le nom de l’appareil.|
+|**Autoriser le changement du code d’accès**|Autorise l’ajout, la modification ou la suppression du mot de passe de l’appareil.|
+|**Autoriser le jumelage à l’Apple Watch**|Autorise le jumelage de l’appareil avec une Apple Watch.|
+|**Autoriser le changement des paramètres de notification**|Autorise l’utilisateur à modifier les paramètres de notification de l’appareil.|
+|**Autoriser le changement du fond d’écran**|Autorise l’utilisateur à modifier le fond d’écran de l’appareil.|
+
+### Paramètres du mode supervisé pour les restrictions de fonctionnalités
+
+|Nom du paramètre|Détails|
+|----------------|--------------------|
+|**Autoriser AirDrop**|Autorise l’utilisation de la fonctionnalité AirDrop pour échanger du contenu avec des appareils proches.|
+|**Autoriser Siri à interroger le contenu généré par l’utilisateur à partir d’Internet**|Autorise Siri à accéder à des sites web pour répondre à des questions.|
+|**Utiliser le filtre d’obscénités de Siri**|Empêche Siri de dicter ou d’employer un langage obscène.|
+|**Autoriser la recherche Spotlight à retourner des résultats d’Internet**|Autorise la recherche Spotlight à se connecter à Internet pour fournir des résultats supplémentaires.|
+|**Autoriser la recherche de définition des mots**|Autorise la fonctionnalité iOS qui vous permet de sélectionner un mot et de rechercher sa définition.|
+|**Autoriser les claviers prédictifs**|Autorise l’utilisation de claviers prédictifs qui suggèrent des mots que l’utilisateur pourrait vouloir utiliser.|
+|**Autoriser la correction automatique**|Permet à l’appareil de corriger automatiquement les mots mal orthographiés.|
+|**Autoriser la correction orthographique du clavier**|Autorise le vérificateur orthographique de l’appareil.|
+|**Autoriser les raccourcis clavier**|Autorise les raccourcis clavier.|
+
+### Paramètres du mode supervisé pour les restrictions d’application
+
+|Nom du paramètre|Détails|
+|----------------|--------------------|
+|**Autoriser le changement des paramètres d’approbation des applications d’entreprise**||
+|**Autorise l’installation d’applications uniquement à l’aide de la configuration Apple et d’iTunes**||
+|**Autoriser les téléchargements d’applications automatiques**||
+|**Autoriser les modifications sur les paramètres de l’application Localiser mes amis**|Autorise l’utilisateur à modifier les paramètres de l’application Localiser mes amis.|
+|**Autoriser l’accès à l’IBooks Store**|Autorise l’utilisateur à parcourir et à acheter des livres depuis l’IBooks Store.|
+|**Autoriser l’utilisation de l’application Messages sur l’appareil**|Autorise l’utilisation de l’application Messages pour envoyer des SMS.|
+|**Autoriser l’utilisation de Podcasts**|Autorise l’utilisation de l’application Podcasts.|
+|**Autoriser l’utilisation du service Music**|Autorise l’utilisation de l’application Apple Music.|
+|**Autoriser le service iTunes Radio**|Autorise l’utilisation de l’application iTunes Radio.|
+|**Autoriser Apple News**|Autorise l’utilisation de l’application Apple News.|
+|**Autoriser Game Center**|Autorise l’utilisation de l’application Game Center.|
+
 
 ### Afficher ou masquer des applications
 
@@ -337,6 +382,6 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
