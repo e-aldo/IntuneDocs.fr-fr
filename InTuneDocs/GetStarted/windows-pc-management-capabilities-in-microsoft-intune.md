@@ -4,7 +4,7 @@ description: "En savoir plus sur les fonctionnalités Intune lorsque vous gérez
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,25 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
 
-# Fonctionnalités de gestion des PC Windows lorsque vous utilisez le client logiciel Intune
+# Fonctionnalités de gestion des PC Windows quand vous utilisez le client logiciel Intune
 Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intune, car cette approche offre davantage de fonctionnalités. Toutefois, vous pouvez également gérer des PC en utilisant le client logiciel Intune, qui fournit les fonctionnalités suivantes :
 
--   **Gestion des mises à jour logicielles** : Vous pouvez maintenir les PC à jour et gérer les périodes d’application des mises à jour.
+-   **[Gestion des mises à jour logicielles](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** : vous pouvez maintenir les PC à jour et gérer les périodes d’application des mises à jour.
 
--   **Stratégie de Pare-feu Windows** : Elle garantit qu’aucun PC utilisé dans votre entreprise n’a de Pare-feu Windows inactif ou mal configuré.
+-   **[Stratégie de Pare-feu Windows](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** : elle permet de garantir que tous les PC utilisés dans votre entreprise ont un Pare-feu Windows actif et correctement configuré.
 
--   La **protection contre les programmes malveillants** Intune inclut Endpoint Protection qui veille à la protection de vos PC contre les logiciels malveillants.
+-   **[Protection contre les programmes malveillants](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** : Intune inclut la fonctionnalité Endpoint Protection, qui vous aide à protéger les PC contre les programmes malveillants.
 
--   **Assistance à distance** : Intune permet aux utilisateurs de contacter l’équipe du support informatique qui peut vous aider via une fonctionnalité de Bureau à distance intégrée à Intune (nécessite le logiciel TeamViewer).
+-   **[Assistance à distance](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** : Intune permet aux utilisateurs de contacter l’équipe du support informatique, qui peut ensuite les aider via une fonctionnalité de Bureau à distance intégrée à Intune (nécessite le logiciel TeamViewer).
 
--   **Gestion des licences logicielles** : suivez le nombre de licences logicielles disponibles et le nombre de licences disponibles utilisé.
--   **Déploiement d'applications** : déployez des logiciels sur les ordinateurs que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des PC avec le client logiciel.
+-   **[Gestion des licences logicielles](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** : suivez le nombre de licences logicielles disponibles et le nombre de ces licences utilisé.
+-   **[Déploiement d’applications](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** : déployez des logiciels sur les PC que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des PC avec le client logiciel.
 
 
 Intune prend en charge l’installation du client logiciel sur un maximum de 7 000 appareils Windows.
@@ -74,6 +74,6 @@ Voici la configuration logicielle requise pour l’installation du client logici
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

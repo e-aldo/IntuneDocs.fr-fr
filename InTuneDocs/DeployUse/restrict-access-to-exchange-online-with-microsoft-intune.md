@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 2bbb17881a1e40cd6552fe4303d55bd0cb4ffcf6
 
 
 ---
@@ -67,7 +67,7 @@ Le diagramme ci-dessous illustre le flux utilisé par les stratégies d’accès
 Vous pouvez restreindre l’accès à la messagerie Exchange Online à partir d’**Outlook** et d’autres **applications qui utilisent l’authentification moderne** :
 
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures
-- iOS 7.1 et versions ultérieures
+- iOS 8.0 et versions ultérieures
 - Windows Phone 8.1 et versions ultérieures
 
 L’**authentification moderne** permet aux clients Microsoft Office de bénéficier de la connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library).
@@ -93,7 +93,7 @@ Vous pouvez restreindre l’accès à la messagerie Exchange à partir du **clie
 
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures
 
-- iOS 7.1 et versions ultérieures
+- iOS 8.0 et versions ultérieures
 
 - Windows Phone 8.1 et versions ultérieures
 
@@ -262,6 +262,6 @@ Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

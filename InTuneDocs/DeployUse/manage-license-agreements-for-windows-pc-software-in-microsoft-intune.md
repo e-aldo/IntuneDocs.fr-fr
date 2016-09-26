@@ -1,10 +1,10 @@
 ---
-title: "Gérer les contrats de licence des logiciels d’ordinateur | Microsoft Intune"
+title: "Gérer les contrats de licence logiciels pour les PC exécutant le logiciel client Intune | Microsoft Intune"
 description: "Intune vous permet d’ajouter et de gérer des contrats de licence pour les logiciels achetés par l’intermédiaire des contrats de licence en volume Microsoft et pour les logiciels achetés par d’autres moyens."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cf7e9b9638c82cba7640c2be54166ef5df581673
-ms.openlocfilehash: ae4ae586c020322f792817b25f8b1b6e2ee02cfd
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: e4febff0ede35f40fd2b0f96fab401a58fb5cb13
 
 
 ---
@@ -180,6 +180,6 @@ Des contrats de licence logicielle peuvent être ajoutés à des groupes de lice
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

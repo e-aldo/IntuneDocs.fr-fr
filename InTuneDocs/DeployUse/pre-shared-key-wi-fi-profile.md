@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
-ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
 
 
 
@@ -55,12 +55,18 @@ Veillez à inclure le point au début.
 4. Choisissez **OK**, enregistrez et déployez la stratégie.
 
     > [!NOTE]
-Cette stratégie ne peut être déployée que sur des groupes d’utilisateurs.
+    > Cette stratégie ne peut être déployée que sur des groupes d’utilisateurs.
 
 La prochaine fois que chaque appareil s’enregistrera, la stratégie sera appliquée et un profil Wi-Fi sera créé sur l’appareil. L’appareil sera en mesure de se connecter automatiquement au réseau.
 ## Profil Wi-Fi Android ou Windows
 
 Voici un exemple de code XML pour un profil Wi-Fi Android ou Windows :
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`: défini sur **false**, car la valeur **true** peut amener l’appareil à attendre un mot de passe chiffré et à tenter de le déchiffrer, ce qui risque d’entraîner un échec de connexion.
+> 
+>  `<hex>53534944</hex>` doit être défini sur la valeur hexadécimale de `<name><SSID of wifi profile></name>`.
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -70,6 +76,7 @@ Voici un exemple de code XML pour un profil Wi-Fi Android ou Windows :
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -207,6 +214,6 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

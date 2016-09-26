@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ Vous déployez les stratégies de conformité sur les utilisateurs. Quand une st
 
 Le tableau suivant répertorie les appareils pris en charge par les stratégies de conformité et la façon dont les paramètres de non-conformité sont gérés quand la stratégie est utilisée avec une stratégie d'accès conditionnel.
 
---------------
+-----------------------------
 
-|Paramètre de stratégie| Windows 8.1 et versions ultérieures| Windows Phone 8.1 et versions ultérieures| iOS 6.0 et versions ultérieures|Android 4.0 et versions ultérieures<br/>Samsung KNOX Standard 4.0 et versions ultérieures|
+|Paramètre de stratégie| Windows 8.1 et versions ultérieures| Windows Phone 8.1 et versions ultérieures| iOS 8.0 et versions ultérieures|Android 4.0 et versions ultérieures<br/>Samsung KNOX Standard 4.0 et versions ultérieures|
 |-----|----|----|----|----|
 |**Configuration d’un code confidentiel ou mot de passe** |Corrigé|Corrigé|Corrigé|En quarantaine|
 |**Chiffrement de l'appareil**|N/A|Corrigé|Corrigé (en définissant le code confidentiel)|En quarantaine|
@@ -43,7 +43,9 @@ Le tableau suivant répertorie les appareils pris en charge par les stratégies 
 |**Version minimale du système d’exploitation**|En quarantaine|En quarantaine|En quarantaine|En quarantaine|
 |**Version maximale du système d’exploitation**|En quarantaine| En quarantaine| En quarantaine| En quarantaine|
 |**Attestation de l’intégrité Windows**|Windows 10 et Windows 10 Mobile sont mis en quarantaine.<br /><br />Ce paramètre ne s’applique pas à Windows 8.1|N/A|N/A|N/A|
---------------
+
+------------------------------
+
 **Corrigé** = La conformité est appliquée par le système d’exploitation de l’appareil (par exemple, l’utilisateur est obligé de définir un code confidentiel).  Ce n’est jamais le cas quand la valeur est « non conforme ».
 
 **En quarantaine** = Le système d’exploitation de l’appareil n’applique pas la conformité (par exemple, les appareils Android ne forcent pas l’utilisateur à chiffrer l’appareil). Quand l’appareil n’est pas conforme, les actions suivantes se produisent :
@@ -62,6 +64,6 @@ Le tableau suivant répertorie les appareils pris en charge par les stratégies 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

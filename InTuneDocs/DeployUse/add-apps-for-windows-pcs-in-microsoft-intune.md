@@ -1,10 +1,10 @@
 ---
-title: Ajouter des applications pour des PC Windows | Microsoft Intune
+title: "Ajouter des applications pour les PC Windows exécutant le logiciel client Intune | Microsoft Intune"
 description: "Cette rubrique montre comment ajouter des applications pour ordinateurs Windows à Intune avant de les déployer."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: f7f43d3225d8fafc54cbc9043a2b67aca9e30c95
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Ajouter des applications pour des PC Windows dans Microsoft Intune
+# Ajouter des applications pour les PC Windows exécutant le logiciel client Intune
 
 Cette rubrique montre comment ajouter des applications à Intune avant de les déployer.
 
 > [!IMPORTANT]
-> Cette rubrique vous aide à ajouter des applications sur des PC Windows que vous gérez à l’aide du logiciel client PC Intune. Si vous souhaitez ajouter des applications pour des PC Windows inscrits et d’autres appareils mobiles, consultez [Ajouter des applications pour des appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+> Les informations de cette rubrique vous aident à ajouter des applications pour les PC Windows que vous gérez à l’aide du logiciel client Intune. Si vous souhaitez ajouter des applications pour des PC Windows inscrits et d’autres appareils mobiles, consultez [Ajouter des applications pour des appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
 ## Ajouter l’application
@@ -78,7 +78,7 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
     Par défaut, Intune utilise des codes de retour standard pour signaler l’échec ou la réussite de l’installation d’un package d’application : **0** (Réussite) ou **3010** (Réussite avec redémarrage). Vous pouvez aussi ajouter vos propres codes de retour à cette liste. Si vous spécifiez une liste de codes de retour et que l'installation de l'application renvoie un code qui ne figure pas dans la liste, il est interprété comme un échec.
 
-8.  Dans la page **Résumé**, passez en revue les informations que vous avez spécifiées. Quand vous êtes prêt, sélectionnez **Télécharger**.
+8.  Dans la page **Résumé**, passez en revue les informations que vous avez spécifiées. Quand vous êtes prêt, sélectionnez **Charger**.
 
 9. Sélectionnez **Fermer** pour terminer.
 
@@ -86,10 +86,10 @@ L’application s’affiche sur le nœud **Applications** de l’espace de trava
 
 ## Étapes suivantes
 
-Une fois l’application créée, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications dans Microsoft Intune](deploy-apps.md).
+Une fois l’application créée, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications avec Microsoft Intune](deploy-apps.md).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

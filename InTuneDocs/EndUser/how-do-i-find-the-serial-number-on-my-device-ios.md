@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
+ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
+ms.openlocfilehash: 4bab75748dc66ab675bab439863be8e9294b95c7
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
 
 # Comment trouver le numéro de série sur mon appareil ?
 
-Sur les appareils exécutant iOS 7.1 ou versions ultérieures, appuyez sur l’icône **Paramètres**, sur **Général** > **À propos de**, puis faites défiler vers le bas jusqu’à **Numéro de série**.
+Sur les appareils exécutant iOS 8.0 ou version ultérieure, appuyez sur l’icône **Paramètres**, appuyez sur **Général** > **À propos de**, puis faites défiler vers le bas jusqu’à **Numéro de série**.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
@@ -31,6 +31,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
