@@ -24,7 +24,7 @@ ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 Qu’ils soient personnels ou qu’ils appartiennent à l’entreprise, il arrive un moment où les appareils gérés doivent être supprimés du portail de gestion Intune. Un appareil peut devoir être mis hors service pour plusieurs raisons :
 
 -   l’utilisateur quitte une entreprise d’une manière planifiée (départ « géré ») ;
--   l’utilisateur quitte l’entreprise brusquement (il est renvoyé, démissionne etc..) ;
+-   l’utilisateur quitte l’entreprise brusquement (il est renvoyé, démissionne etc.) ;
 -   l’appareil est perdu ;
 -   un appareil est réaffecté (affecté à un autre utilisateur, réutilisé dans un autre contexte).
 
