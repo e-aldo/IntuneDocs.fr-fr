@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
+ms.sourcegitcommit: 777c0ac6ea309db81b127fb254e0c5f88444e475
+ms.openlocfilehash: cf1fde5b5ed55552e573c724b6165203033683da
 
 
 ---
@@ -66,7 +66,14 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 - **Exiger que le débogage USB soit désactivé (Android 4.2 ou ultérieur)** : ce paramètre spécifie si la détection de l’option de débogage USB est activée sur l’appareil.
 - **Exiger que « Rechercher les menaces de sécurité sur l'appareil » soit activé sur les appareils (Android 4.2-4.4)** : ce paramètre spécifie si la fonctionnalité **Vérifier les applications** est activée sur l’appareil.
 - **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)** : utilisez ce paramètre pour spécifier le niveau de correctif Android minimal.  Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée au format suivant : AAAA-MM-JJ.
+- **Exiger l’activation de la protection de l’appareil contre les menaces**: utilisez ce paramètre pour sélectionner l’évaluation des risques de la solution Lookout MTP comme une condition de conformité. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
 
+  - **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
+  - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
+  - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
+  - **Élevé** : cette option est la moins sécurisée. Les menaces de tout niveau sont fondamentalement autorisées. Cette option peut être utile uniquement si vous utilisez cette solution pour créer des rapports.
+
+  Pour plus d’informations, consultez [Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité](enable-device-threat-protection-rule-in-compliance-policy.md).
 
 ## Paramètres de propriétés d’appareils
 - **Système d’exploitation minimal requis :** quand un appareil ne satisfait pas la condition de version minimale du système d’exploitation, il est signalé comme non conforme.
@@ -76,6 +83,6 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

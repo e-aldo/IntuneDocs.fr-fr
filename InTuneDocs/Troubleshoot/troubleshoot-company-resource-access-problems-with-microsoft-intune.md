@@ -4,7 +4,7 @@ description: "Cette rubrique présente les codes d’erreur et d’état pour vo
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Extraction de contenu|Cause probable : L’état du travail 30 indique l’échec d’un téléchargement d’application lancé par un utilisateur.<br /><br />Les causes probables de ce problème sont les suivantes :<br /><br />La connexion Internet de l'appareil a été interrompue pendant le téléchargement.<br /><br />Le certificat émis à l'appareil au moment de l'inscription est peut-être arrivé à expiration.<br /><br />Prévention :<br /><br />Lancez l'application Applications d'entreprise à partir du Panneau de configuration de l'appareil pour vérifier que le certificat de l'appareil n'est pas arrivé à expiration ; s'il a expiré, vous devez réinscrire l'appareil.<br /><br />Vérifiez que l'appareil est connecté à Internet et réessayez de demander l'application.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Téléchargement de contenu terminé||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Installation en cours||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Une erreur d'installations'est produite|Échec de l'installation de l'application après le téléchargement.<br /><br />Le certificat de signature de code avec lequel l'application a été signée n'est pas présente sur l'appareil.<br /><br />Une infrastructure dont dépend l’application n’est pas installée sur l’appareil.<br /><br />Vérifiez que le certificat de signature de code avec lequel votre application a été signée est présent sur l'appareil et confirmez avec l'administrateur que tous les appareils Windows RT inscrits dans l'entreprise ciblent ce certificat.<br /><br />Si l'échec de l'installation est dû à une dépendance d'infrastructure manquante, l'administrateur doit republier l'application en empaquetant l'infrastructure dans le package d'application.<br /><br />Le package d'application téléchargé n'est pas un package valide, a peut-être été endommagé ou peut ne pas être compatible avec la version du système d'exploitation installé sur l'appareil.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Une erreur d’installation s'est produite|Échec de l'installation de l'application après le téléchargement.<br /><br />Le certificat de signature de code avec lequel l'application a été signée n'est pas présente sur l'appareil.<br /><br />Une infrastructure dont dépend l’application n’est pas installée sur l’appareil.<br /><br />Vérifiez que le certificat de signature de code avec lequel votre application a été signée est présent sur l'appareil et confirmez avec l'administrateur que tous les appareils Windows RT inscrits dans l'entreprise ciblent ce certificat.<br /><br />Si l'échec de l'installation est dû à une dépendance d'infrastructure manquante, l'administrateur doit republier l'application en empaquetant l'infrastructure dans le package d'application.<br /><br />Le package d'application téléchargé n'est pas un package valide, a peut-être été endommagé ou peut ne pas être compatible avec la version du système d'exploitation installé sur l'appareil.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Réussite de l'installation||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Désinstallation en cours||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Erreur de désinstallation||
@@ -127,7 +127,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 |-2016314112|0x87D17D00|22000 : utilisation de la clé non valide|
 |-2016315105|0x87D1791F|21007 : impossible de vérifier le compte|
 |-2016315106|0x87D1791E|21006 : impossible de déchiffrer le certificat|
-|-2016315107|0x87D1791D|21005 : le compte n'est pas unique|
+|-2016315107|0x87D1791D|21005 : le compte n’est pas unique (un profil de messagerie existe déjà sur l’appareil)|
 |-2016315108|0x87D1791C|21004 : impossible de créer le compte|
 |-2016315109|0x87D1791B|21003 : aucun nom d'hôte|
 |-2016315110|0x87D1791A|21002 : impossible de se conformer à la stratégie de chiffrement du serveur|
@@ -372,6 +372,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
