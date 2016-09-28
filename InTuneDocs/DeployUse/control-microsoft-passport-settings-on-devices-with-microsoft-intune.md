@@ -4,7 +4,7 @@ description: "Découvrez comment Intune s’intègre à Windows Hello Entreprise
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d212869051719b6b1f1d527ee52044420df0c14
-ms.openlocfilehash: c2c2774dd85d8ce9c056248f801220e06f17063b
+ms.sourcegitcommit: 73379311acad6f2a7054e262dea701d3e7b9ad45
+ms.openlocfilehash: 40344947d7c94c90258c967da36c09c95a54335c
 
 
 ---
@@ -29,6 +29,18 @@ Intune s’intègre à Hello Entreprise de deux manières :
 -   Vous pouvez utiliser la stratégie Intune pour contrôler les mouvements que les utilisateurs peuvent et ne peuvent pas utiliser pour se connecter.
 
 -   Vous pouvez stocker des certificats d’authentification dans le fournisseur de stockage de clés de Windows Hello Entreprise. Pour plus d’informations, consultez [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](secure-resource-access-with-certificate-profiles.md).
+
+> [!IMPORTANT]
+> Dans les versions Windows 10 Desktop et Mobile antérieures à la mise à jour anniversaire, vous pouviez définir deux différents codes confidentiels pour l’authentification auprès de ressources :
+- Le **code confidentiel de l’appareil** pouvait être utilisé pour déverrouiller l’appareil et se connecter aux ressources de cloud.
+- Le **code confidentiel professionnel** servait à accéder aux ressources Azure AD sur les appareils personnels de l’utilisateur (BYOD).
+
+>Dans la mise à jour anniversaire, ces deux codes confidentiels ont été fusionnés dans un même code confidentiel d’appareil.
+Les stratégies de configuration Intune que vous définissez pour contrôler le code confidentiel de l’appareil, ainsi que toutes les stratégies Windows Hello Entreprise que vous avez configurées, définissent à présent la valeur de ce nouveau code confidentiel.
+Si vous avez défini ces deux types de stratégie pour contrôler le code confidentiel, la stratégie Windows Hello Entreprise sera appliquée aux appareils Windows 10 Desktop et Mobile.
+Pour garantir la résolution des conflits de stratégie et l’application de la stratégie de code confidentiel, mettez à jour votre stratégie Windows Hello Entreprise en fonction des paramètres de votre stratégie de configuration, puis demandez à vos utilisateurs de synchroniser leurs appareils dans l’application Portail d’entreprise.
+
+
 
 ## Créer une stratégie Windows Hello Entreprise
 
@@ -67,6 +79,6 @@ Pour plus d’informations sur Microsoft Passport, consultez [le guide](https://
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

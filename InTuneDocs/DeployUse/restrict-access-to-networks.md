@@ -4,7 +4,7 @@ description: "Utilisez Cisco ISE avec Intune pour que les appareils soient inscr
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
-ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
+ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
+ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
 
 
 ---
@@ -27,7 +27,7 @@ L’intégration d’Intune à Cisco ISE (Identity Services Engine) vous permet 
 Pour activer cette intégration, aucune configuration particulière n’est nécessaire dans votre client Intune. Vous devrez fournir des autorisations à votre serveur Cisco ISE pour accéder à votre client Intune. Une fois cette opération effectuée, le reste de la configuration a lieu sur votre serveur Cisco ISE. Cet article indique comment fournir à votre serveur ISE des autorisations d’accès à votre client Intune.
 
 ### Étape 1 : Gérer les certificats
-1. Dans la console Azure Active Directory (Azure AD), exportez le certificat.
+Exportez le certificat à partir de la console Azure Active Directory (Azure AD) et importez-le dans le magasin Certificats approuvés de la console ISE :
 
 #### Internet Explorer 11
 
@@ -44,6 +44,8 @@ Pour activer cette intégration, aucune configuration particulière n’est néc
 
    f. Dans la page **Fichier à exporter**, choisissez **Parcourir** pour choisir l’emplacement auquel enregistrer le fichier, puis fournissez un nom de fichier. Concrètement, cette opération consiste en fait à nommer le fichier dans lequel le certificat exporté sera enregistré. Choisissez **Suivant** &gt; **Terminer**.
 
+   g. À partir de la console ISE, importez le certificat Intune (le fichier exporté) dans le magasin **Trusted Certificates** (Certificats approuvés).
+
 #### Safari
 
  a. Connectez-vous à la console Azure AD.
@@ -52,14 +54,13 @@ b. Cliquez sur l’icône en forme de verrou &gt;  **Plus d’informations**.
 
    c. Choisissez **Afficher le certificat** &gt; **Détails**.
 
-   d. Choisissez le certificat, puis **Exporter**.  
+   d. Choisissez le certificat, puis **Exporter**. 
+
+   e. À partir de la console ISE, importez le certificat Intune (le fichier exporté) dans le magasin **Trusted Certificates** (Certificats approuvés).
 
 > [!IMPORTANT]
 >
 > Vérifiez la date d’expiration du certificat, car vous devrez en exporter et en importer un nouveau quand celui-ci arrivera à expiration.
-
-
-2. À partir de la console ISE, importez le certificat Intune (le fichier exporté) dans le magasin **Trusted Certificates** (Certificats approuvés).
 
 
 ### Obtenir un certificat auto-signé à partir d’ISE 
@@ -97,8 +98,57 @@ Vérifiez que tout le texte contient sur une seule ligne.
 |Point de terminaison de jeton OAuth 2.0|Token Issuing URL (URL émettrice de jeton)|
 |Mettre à jour votre code avec votre ID client|ID client|
 
+### Étape 4 : Charger le certificat auto-signé de l’ISE dans l’application ISE que vous avez créée dans Azure AD
+1.     Récupérez l’empreinte numérique et la valeur de certificat codée en base64 d’un fichier de certificat public X509 (.cer). Cet exemple utilise PowerShell :
+   
+      
+    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
+     `$cer.Import(“mycer.cer”)`
+      `$bin = $cer.GetRawCertData()`
+      `$base64Value = [System.Convert]::ToBase64String($bin)`
+      `$bin = $cer.GetCertHash()`
+      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
+      `$keyid = [System.Guid]::NewGuid().ToString()`
+ 
+    Stockez les valeurs de $base64Thumbprint, $base64Value et $keyid à utiliser à l’étape suivante.
+2.       Chargez le certificat depuis le fichier manifeste. Connectez-vous au [Portail de gestion Azure](https://manage.windowsazure.com)
+2.      Dans le composant logiciel enfichable Azure AD, recherchez l’application que vous souhaitez configurer avec un certificat X.509.
+3.      Téléchargez le fichier manifeste d’application. 
+5.      Remplacez la propriété “KeyCredentials”: [], vide par le code JSON suivant.  Le type complexe KeyCredentials est documenté dans [Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) (Informations de référence sur les entités et les types complexes).
 
-### Étape 3 : Configurer les paramètres ISE
+ 
+    `“keyCredentials“: [`
+    `{`
+     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
+     `“keyId“: “$keyid_from_above“,`
+     `“type”: “AsymmetricX509Cert”,`
+     `“usage”: “Verify”,`
+     `“value”:  “$base64Value_from_above”`
+     `}2. `
+     `], `
+ 
+Exemple :
+ 
+    `“keyCredentials“: [`
+    `{`
+    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
+    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
+    `“type”: “AsymmetricX509Cert”,`
+    `“usage”: “Verify”,`
+    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
+    `}`
+    `],`
+ 
+6.      Enregistrez la modification dans le fichier manifeste d’application.
+7.      Chargez le fichier manifeste d’application modifié via le portail de gestion Azure.
+8.      (Facultatif) Rechargez le manifeste pour vérifier que votre certificat X.509 figure bien dans l’application.
+
+>[!NOTE]
+>
+> Comme KeyCredentials est une collection, vous pouvez charger plusieurs certificats X.509 pour les scénarios de substitution, ou supprimer des certificats dans des scénarios de compromission.
+
+
+### Étape 5 : Configurer les paramètres ISE
 Dans la console d’administration ISE, fournissez ces valeurs de paramètre :
   - **Server Type** (Type de serveur) : Mobile Device Manager
   - **Authentication type** (Type d’authentification) : OAuth – Client Credentials (OAuth – Informations d’identification du client)
@@ -150,6 +200,6 @@ Vous pouvez également [télécharger un ensemble d’instructions d’inscripti
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

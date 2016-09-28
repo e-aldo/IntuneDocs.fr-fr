@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 9a763e13818ec5c1708d121125cadd37e25e3193
 
 
 ---
@@ -96,11 +96,10 @@ Pour résoudre ce problème et obtenir le certificat requis, il existe deux éta
 
 Si un message « Certificat manquant » semblable à celui indiqué ci-dessus s’affiche alors que vous avez déjà suivi la procédure précédente, cela signifie généralement qu’il manque un autre certificat et vous devez demander à votre administrateur de vous aider à l’installer. Contactez votre administrateur et transmettez-lui ce [lien](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues) qui mène vers la procédure de résolution du problème.
 
-### Voir aussi
-[Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 

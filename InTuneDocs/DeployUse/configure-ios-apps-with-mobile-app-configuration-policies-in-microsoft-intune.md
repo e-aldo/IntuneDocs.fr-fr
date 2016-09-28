@@ -4,7 +4,7 @@ description: "Utilisez des stratégies de configuration d’application mobile d
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f8808c064589128f7daae810ffbcb3595270685d
-ms.openlocfilehash: 953bb702fde1d51303aceff6f84fa62999c5ab57
+ms.sourcegitcommit: 360865bcd97230e264ee3439407e8dd3017d0055
+ms.openlocfilehash: 1f239270c26a70b161e52c24e94ca5c2cae9ca3a
 
 
 ---
@@ -37,7 +37,7 @@ Les stratégies de configuration des applications mobiles peuvent vous aider à 
 Vous ne déployez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt la stratégie à une application, que vous déployez ensuite. Les paramètres de stratégie sont utilisés chaque fois que l’application les vérifie (en général, lors de sa première exécution).
 
 > [!TIP]
-> Ce type de stratégie est disponible uniquement pour les appareils exécutant iOS 7.1 et ultérieur. Elle prend en charge les types d’installation d’application suivants :
+> Ce type de stratégie est disponible uniquement pour les appareils exécutant iOS 8.0 ou version ultérieure. Elle prend en charge les types d’installation d’application suivants :
 >
 > -   **Application iOS gérée à partir de l'App Store**
 > -   **Package d'application pour iOS**
@@ -139,6 +139,6 @@ Quand vous créez un fichier de configuration d’application mobile, vous pouve
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

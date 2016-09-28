@@ -4,7 +4,7 @@ description: "Cette rubrique fournit une liste de liens menant aux tâches que v
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
-ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
 
 
 ---
@@ -68,9 +68,11 @@ Les informations contenues dans cette section vous aideront à résoudre les pro
 - [Vous êtes invité à désactiver le débogage USB](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [Vous êtes invité à activer le paramètre Rechercher les menaces de sécurité sur l’appareil](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [Votre appareil n’est pas au niveau minimal du correctif de sécurité](your-device-does-not-meet-the-minimum-security-patch-android.md)
+- [Vous êtes invité à installer Lookout for Work sur votre appareil Android](you-are-prompted-to-install-lookout-for-work-android.md)
+- [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

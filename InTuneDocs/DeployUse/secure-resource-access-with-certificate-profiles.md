@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
-ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 
 
 ---
@@ -25,7 +25,7 @@ Quand vous donnez un accès à des utilisateurs aux ressources d’entreprise pa
 1. Assurez-vous de disposer d’une infrastructure de certificat appropriée, comme décrit dans [Configurer l’infrastructure de certificat pour SCEP](configure-certificate-infrastructure-for-scep.md) et [Configurer l’infrastructure de certificat pour PFX](configure-certificate-infrastructure-for-pfx.md).
 
 2. Installez un certificat racine ou un certificat intermédiaire d’une autorité de certification sur chaque appareil pour qu’il reconnaisse la légitimité de votre autorité de certification. Pour ce faire, créez et déployez un **Profil de certificat approuvé**. Quand vous déployez ce profil, les appareils que vous gérez avec Intune demandent et reçoivent le certificat racine. Vous devez créer un profil distinct pour chaque plateforme. Le **Profil de certificat approuvé** est disponible pour ces plateformes :
- -  iOS 7.1 et versions ultérieures
+ -  iOS 8.0 et versions ultérieures
  -  Mac OS X 10.9 et versions ultérieures
  -  Android 4.0 et versions ultérieures
  -  Windows 8.1 et versions ultérieures
@@ -33,7 +33,7 @@ Quand vous donnez un accès à des utilisateurs aux ressources d’entreprise pa
 
 3. Créez des profils de certificat pour que les appareils demandent l’utilisation d’un certificat pour l’authentification pour l’accès au VPN, au Wi-Fi et aux e-mails, comme décrit dans [Configurer les profils de certificats Intune](configure-intune-certificate-profiles.md). Vous pouvez créer et déployer un **profil de certificat PKCS #12 (.PFX)** *ou* un **profil de certificat SCEP** pour les appareils exécutant ces plateformes :
 
-  -  iOS 7.1 et versions ultérieures
+  -  iOS 8.0 et versions ultérieures
   -  Android 4.0 et versions ultérieures
   -  Windows 10 (Desktop et Mobile) et versions ultérieures
 
@@ -56,6 +56,6 @@ Vous devez créer un profil distinct pour chaque plateforme. Quand vous créez l
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
