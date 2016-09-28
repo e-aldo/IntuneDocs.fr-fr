@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 472dc010232c6720873b4c2f697c853a410c72e1
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 14180d4dd324134f3b4e0a8d0241ccb61c3207e0
 
 
 ---
@@ -32,11 +32,9 @@ Si vous ne pensez pas avoir fait quelque chose pour rooter délibérément votre
 - Le fabricant de votre appareil a installé un logiciel sur l’appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Vous devez contacter votre administrateur pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
-### Voir aussi
-[Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

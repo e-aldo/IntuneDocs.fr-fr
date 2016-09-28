@@ -4,7 +4,7 @@ description: "Découvrir les nouveautés de la version de Microsoft Intune de ce
 keywords: 
 author: Lindavr
 manager: angrobe
-ms.date: 08/10/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,81 +13,93 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
-ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
+ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
+ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
 
 
 ---
 
-# Nouveautés de Microsoft Intune
+# Nouveautés de Microsoft Intune -- Septembre
 Découvrez les nouveautés de la version de Microsoft Intune de ce mois-ci. Vous pouvez également découvrir les modifications à venir que vous devez planifier, ainsi que des informations sur les versions précédentes.
 
-Toutes ces fonctionnalités seront finalement prises en charge pour les déploiements de clients hybrides (Configuration Manager avec Intune). Pour plus d’informations sur les nouvelles fonctionnalités hybrides, consultez notre page [Nouveautés hybrides](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
+Toutes ces fonctionnalités seront finalement prises en charge pour les déploiements de clients hybrides (Configuration Manager avec Intune). Pour plus d’informations sur les nouvelles fonctionnalités hybrides, consultez notre page [Nouveautés hybrides](https://technet.microsoft.com/library/mt718155.aspx).
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 >Billet de blog : S’assurer que les appareils mobiles sont à jour avec Microsoft Intune<br>
 >Suite aux récentes attaques des programmes malveillants « Trident » sur les appareils iOS, nous avons publié un nouveau billet de blog, [S’assurer que les appareils mobiles sont à jour avec Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/), pour vous permettre de découvrir comment Intune peut vous aider à garder des appareils sécurisés et à jour.
 
+## Prise en charge d’iOS 10
+Les scénarios existants pour la gestion Intune MDM et GAM sont compatibles avec iOS 10. Pour obtenir des conseils, consultez le [blog de l’équipe de support technique Intune](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/).
 
-## Août 2016
-## Gestion d'applications
-<!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
+## L’outil de création de package de restrictions d’application prend en charge la gestion des applications mobiles (GAM) sans inscription d’appareils pour Android et iOS
+Cet outil de ligne de commande permet d’activer la fonctionnalité GAM d’Intune dans les applications métier pour iOS et Android. C’est la façon la plus simple d’incorporer le SDK Intune MAM dans votre application, pour que celle-ci applique les stratégies de gestion des appareils mobiles déployées via Intune. Avec les stratégies de gestion des appareils mobiles, vous pouvez :
 
-### Applications affichées et masquées dans iOS 9.3
-Pour les appareils supervisés exécutant iOS 9.3 ou une version ultérieure, vous pouvez utiliser la liste des applications affichées et masquées dans la stratégie de configuration générale d’iOS pour :
-- Spécifier une liste d’applications à masquer aux utilisateurs. Les utilisateurs ne peuvent pas afficher ou lancer ces applications.
-- Spécifier une liste d’applications que les utilisateurs peuvent afficher et lancer. Aucune autre application ne peut être affichée ou lancée.
+1. Chiffrer les données de l’application.
+2. Exiger que l’utilisateur entre un code confidentiel au démarrage de l’application.
+3. Autoriser l’application à transférer des données uniquement vers d’autres applications gérées.
+4. Interdire à l’application de sauvegarder des données sur Android, iTunes et iCloud.
+5. Autoriser uniquement les opérations couper, copier et coller vers et depuis d’autres applications gérées.
 
-Les applications que vous pouvez spécifier incluent celles que vous avez déployées, ainsi que les applications iOS intégrées telles que Messages et Notes. Pour plus d’informations, consultez [Paramètres de la stratégie iOS dans Microsoft Intune]( https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune).
-<!---TFS 1279009 checked--->
-### Stratégie des applications autorisées et bloquées pour les appareils dotés de Samsung KNOX
-Vous pouvez désormais configurer une stratégie personnalisée pour les appareils dotés de Samsung KNOX, qui vous permet de créer l’un des éléments suivants :
-- Une liste d’applications qui sont bloquées sur l’appareil. Même si elle est installée, une application incluse dans la liste d’applications bloquées ne peut pas être activée sur l’appareil.
-- Une liste d’applications que les utilisateurs de l’appareil sont autorisés à installer à partir du magasin Google Play. Aucune autre application ne peut être installée à partir de ce magasin.
+La préversion publique du dernier outil de création de package de restrictions d’application Intune prend désormais en charge la gestion des applications mobiles (GAM) sans inscription des appareils dans des applications métier internes pour iOS et Android. Cela signifie que vos utilisateurs finaux n’ont pas besoin d’inscrire leurs appareils dans Intune pour utiliser des applications métier avec la fonctionnalité GAM.
 
-Ces paramètres peuvent uniquement être utilisés par les appareils qui exécutent Samsung KNOX.
-Pour plus d’informations, consultez [Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX]( custom-policy-to-allow-and-block-samsung-knox-apps.md).
-<!---TFS 1311629 checked --->
-### Nouvelles applications compatibles avec les stratégies de gestion des applications mobiles (MAM)
-L’application Yammer pour [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) et [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) est désormais compatible avec les [stratégies de gestion des applications mobiles (MAM) Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), que l’appareil soit inscrit ou non.
+Toute personne peut tester la préversion publique du logiciel et lire la documentation d’aide, disponible dans msintuneappsdk sur GitHub :
 
-Pour obtenir la liste complète des applications MAM compatibles, consultez le site des [partenaires des applications Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners).
-<!--- TFS 1252335 & 1252336 checked--->
+http://www.github.com/msintuneappsdk/intune-app-wrapper-ios-preview
 
+http://www.github.com/msintuneappsdk/intune-app-wrapper-android-preview
 
-<!--- I started putting TFS numbers in the What's Coming topic and found it helpful when updating the What's New. Up to you if you want to continue. --->
+Avant d’installer et d’utiliser la préversion de l’outil de création de package de restrictions d’application Microsoft Intune pour Android et iOS, effectuez les opérations suivantes :
 
-### Applications de visionneuse Intune
-Avec la publication de la nouvelle application de partage RMS, nous allons supprimer les applications de visionneuse Intune suivantes à compter du mois d’août 2016 :
-- Intune AV Viewer
-- Intune PDF Viewer
-- Intune Image Viewer pour Android depuis Google Play
+* Lisez les termes du contrat de licence Microsoft applicables à la préversion de l’outil de création de package de restrictions d’application Microsoft Intune pour Android et iOS.
+* Imprimez et conservez une copie des termes du contrat de licence pour vos archives. En téléchargeant et en utilisant la préversion de l’outil de création de package de restrictions d’application Microsoft Intune pour Android, vous reconnaissez accepter ces termes du contrat de licence. Si vous ne les acceptez pas, n'utilisez pas le logiciel.
+<!---TFS 1235607--->
 
-Au lieu d’utiliser les applications de visionneuse Intune, nous vous recommandons d’utiliser la nouvelle [application Rights Management (partage RMS) pour Android](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), qui vous permet de déployer une application unique à la place de trois applications distinctes pour afficher en toute sécurité les fichiers d’entreprise sur les appareils Android. Quand l’application de visionneuse Intune ne sera plus prise en charge, elle sera supprimée du Google Store et ne sera plus disponible pour une utilisation ultérieure.
+## Début de la transition des groupes Intune vers les groupes Azure Active Directory en septembre
+Certains nouveaux comptes Intune utiliseront les groupes de sécurité Active Directory Azure au lieu des groupes d’utilisateurs Intune. Vous serez averti que vous utilisez des groupes de sécurité par l’ajout d’un lien vers le Portail de gestion Azure dans la page Groupes du Portail Intune.
 
-## Gestion des appareils
-### Prise en charge d’Android 7.0
-Intune assure la prise en charge dès le premier jour du système d’exploitation Android 7.0 pour les appareils mobiles, bientôt disponible.
-<!---TFS 1262053--->
-### Suppression par Google de la fonctionnalité de réinitialisation à distance du code secret sur les appareils Android 7.0
-Google supprime la fonctionnalité permettant aux utilisateurs finaux et aux administrateurs informatiques de réinitialiser à distance le code secret de leurs appareils Android 7.0. Auparavant, les administrateurs informatiques pouvaient réinitialiser à distance le code secret d’un utilisateur, et les utilisateurs finaux pouvaient réinitialiser leur code secret depuis le site web du Portail d’entreprise.
+## Intégration de la protection Lookout pour les appareils Android
+Microsoft intègre la solution de protection contre les menaces mobiles de Lookout, qui permet de protéger les appareils mobiles Android en détectant les programmes malveillants, les applications à risque et autres menaces présents sur les appareils. La solution de Lookout vous aide à déterminer le niveau de menace et à le configurer. Vous pouvez créer une règle de stratégie de conformité dans Intune pour déterminer la conformité de l’appareil d’après l’évaluation du risque réalisée par Lookout. À l’aide de stratégies d’accès conditionnel, vous pouvez autoriser ou bloquer l’accès aux ressources d’entreprise en fonction de l’état de conformité de l’appareil.
 
+Les utilisateurs d’appareils non conformes seront invités à inscrire leurs appareils. Ils devront également installer l’application Lookout for Work sur les appareils Android, activer l’application et corriger les menaces signalées dans l’application Lookout for Work pour pouvoir accéder aux ressources. Pour plus d’informations, consultez [Restrict access based on device, network, and application risk](restrict-access-based-on-device-network-app-risk.md) (Restreindre l’accès en fonction du risque évalué pour l’appareil, le réseau et l’application).
 
 
 ## Mises à jour du Portail d’entreprise
-### Site web Portail d’entreprise
-- **Lien des commentaires sur le Portail d’entreprise à l’attention de Microsoft** <br/>
-Le site web du Portail d’entreprise permet aux utilisateurs finaux de sélectionner un nouveau lien « Commentaires », en bas de la page, pour envoyer des commentaires à Microsoft concernant leur expérience d’utilisation du site. Les commentaires regroupés sont anonymes et permettent à Microsoft d’améliorer le site web du Portail d’entreprise, afin d’optimiser cette expérience.
-<!--- TFS 1313657 checked--->
+
+### Android
+
+**Ajout de « Notifications » dans le Portail d’entreprise pour Android**<br/>
+Une nouvelle icône Notifications a été ajoutée dans la page d’accueil du Portail d’entreprise pour Android. En appuyant sur cette icône, vous accédez directement à la page Notifications. Cette page affiche aux utilisateurs finaux tous les éléments importants à examiner dans l’application Portail d’entreprise, par exemple, la non-conformité d’un appareil, une mise à jour de l’inscription ou l’activation d’une inscription. L’application Portail d’entreprise iOS offre déjà cette fonctionnalité de notifications. Avec la nouvelle page Notifications, si l’appareil est déjà inscrit, l’utilisateur ne verra pas la page Configuration de l’accès à l’entreprise s’afficher chaque fois qu’il accède ou revient au Portail d’entreprise. Si vous rédigez votre propre guide de l’utilisateur final, mettez à jour votre documentation pour refléter cette modification. Vous trouverez des captures d’écran mises à jour [ici](https://aka.ms/androidcpupdate).  
+<!---TFS 1095560--->
+
 
 ### iOS
-- **Mise à jour de la version minimale de Managed Browser pour iOS 8.0**<br/>
-L’application Microsoft Intune Managed Browser pour iOS a été mise à jour pour prendre en charge les appareils exécutant iOS 8.0 ou version ultérieure. Même si les appareils iOS 7.1 peuvent toujours utiliser l’application Managed Browser existante, nous vous recommandons d’inciter vos utilisateurs à procéder à la mise à jour pour iOS 8.0 ou version ultérieure. Ils pourront ainsi accéder aux nouvelles fonctionnalités de Managed Browser et en tirer pleinement parti.  
-<!---TFS 1313253 checked--->
+**Modifications apportées à la prise en charge de l’application Portail d’entreprise iOS**<br/>
+Tous les utilisateurs de l’application Portail d’entreprise Microsoft Intune pour iOS doivent maintenant utiliser la version la plus récente. Les nouveaux utilisateurs peuvent uniquement télécharger la dernière version, et les utilisateurs actuels doivent effectuer une mise à jour vers cette version. La nouvelle version nécessite iOS 8.0 ou version ultérieure. Les appareils qui exécutent des versions antérieures d’iOS ne pourront pas accéder au Portail d’entreprise ni être inscrits si les utilisateurs ne mettent pas à jour ces appareils vers iOS 8.0 ou une version ultérieure, et ne mettent pas à jour l’application Portail d’entreprise vers la nouvelle version. Les appareils inscrits qui exécutent les versions antérieures à iOS 8.0 continueront d’être gérés et répertoriés dans la Console d’administration Intune.
+<!---TFS 1283165--->
+
+**Améliorations apportées à l’accès des utilisateurs finaux iOS à leurs applications**<br/>
+Les modifications suivantes ont été apportées aux vignettes d’applications dans l’application Portail d’entreprise pour iOS. Ces vignettes dirigent les utilisateurs vers différentes vues dans un emplacement unique, à savoir le site web du Portail d’entreprise, pour toutes leurs applications. Les restrictions d’Apple n’autorisent pas l’affichage des applications métier et gérées de l’App Store dans l’application Portail d’entreprise, ce qui oblige les utilisateurs à consulter plusieurs vues pour trouver leurs différentes applications.
+
+- La vignette **Applications d’entreprise** pointait auparavant vers une liste de toutes les applications dans l’onglet TOUT du site web du Portail d’entreprise. Elle a toujours le même comportement, mais son nom a été remplacé par **Toutes les applications**.
+- La vignette **Autres applications** pointait auparavant vers une vue, dans l’application Portail d’entreprise, qui répertoriait toutes les applications dont l’affichage dans le Portail d’entreprise était autorisé par Apple. Cette vignette s’appelle maintenant **Applications proposées**. Quand l’utilisateur appuie dessus, il accède à l’onglet SÉLECTION du site web du Portail d’entreprise.
+-  La vignette **Catégories** pointait auparavant vers une vue, dans l’application Portail d’entreprise, qui répertoriait toutes les catégories d’applications. Son nom n’a pas changé, mais la vignette pointe maintenant vers l’onglet CATÉGORIES du site web du Portail d’entreprise.
+Vous trouverez des captures d’écran mises à jour [ici](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+<!---TFS 1317133--->
+
+**Invitation à l’installation de l’application Managed Browser iOS si IT Pro définit cette obligation pour une application**<br/>
+Si vous avez configuré un clip web pour qu’il s’ouvre uniquement dans le navigateur géré, et que ce navigateur n’est pas installé sur l’appareil, l’application Portail d’entreprise sur l’appareil invitera l’utilisateur à installer le navigateur géré pour permettre l’ouverture du clip web. 
+<!---TFS 1228570--->
+
+### Windows
+**Bouton Commentaires ajouté à l’application Portail d’entreprise Windows Phone 8.1**<br/>
+L’application Portail d’entreprise Windows Phone 8.1 comporte un nouveau bouton « Envoyer des commentaires » qui permet aux utilisateurs d’envoyer des commentaires sur l’application. Pour afficher le bouton, les utilisateurs appuient sur le menu « points de suspension » en bas à droite de l’écran de l’application Portail d’entreprise, puis sur **Envoyer des commentaires**. Les commentaires, après avoir été regroupés et rendus anonymes, sont utilisés par Microsoft pour améliorer l’expérience utilisateur dans l’application Portail d’entreprise.
+<!---TFS 1317806--->
+
 
 ## Nouveautés à venir
-### Début de la transition des groupes Intune vers les groupes Azure Active Directory dès septembre 2016
+
+### Transition des groupes Intune vers les groupes Azure Active Directory
 Intune crée une nouvelle expérience de gestion de groupe qui utilise les groupes de sécurité Azure Active Directory (AAD) en tant que groupes d’utilisateurs et d’appareils dans Intune. Ces groupes seront utilisés pour la gestion, le déploiement de stratégies et de profils de tous les groupes **lorsque nous introduirons le nouveau portail d’administration Intune basé sur Azure**.
 
 Grâce à cette nouvelle expérience, vous n’aurez plus besoin de dupliquer des groupes entre des services, **ce qui vous permet d’accéder à certaines fonctionnalités de groupes Azure Active Directory Premium (AADP)**, tout en bénéficiant d’une extensibilité lors de l’utilisation de PowerShell et Graph. La gestion des groupes sera également unifiée lors de la gestion de la mobilité d’entreprise.
@@ -104,49 +116,20 @@ Outre les modifications dans la gestion de groupe, **les fonctionnalités suivan
 - Glissement des groupes dans les rapports
 <!--- TFS 1295329--->
 
-### Ajout de « Notifications » sur le portail d’entreprise pour Android
-En septembre, nous publierons une mise à jour du Portail d’entreprise pour Android, qui présentera la nouvelle icône **Notifications** de la page d’accueil. En appuyant sur cette icône, vous pourrez accéder à la page **Notifications** qui indiquera à votre utilisateur final tous les éléments qui nécessitent son attention particulière dans l’application de portail d’entreprise, tels que la non-conformité d’un appareil, ainsi que les mises à jour ou les activations d’inscriptions. Si vous utilisez également l’application de portail d’entreprise iOS, vous pouvez déjà utiliser ces notifications. Une fois la page **Notifications** en place, si votre appareil est déjà inscrit, vous ne verrez plus la page **Configuration de l’accès à l’entreprise** à chaque fois que vous accédez au portail d’entreprise pour Android ou que vous y revenez. Nous savons que beaucoup d’entre vous ont créé des conseils pour l’utilisateur final et que vous appréciez de recevoir des notifications avancées lorsque vos conseils/captures d’écrans doivent être mis à jour. Mettez à jour votre documentation pour refléter les modifications de l’expérience à venir. Vous trouverez des captures d’écran mises à jour ici : https://aka.ms/androidcpupdate.  
+### Nouvelles stratégies d’accès conditionnel par les applications pour Exchange Online et SharePoint Online
+Vous pourrez restreindre l’accès à Exchange Online et à SharePoint Online en autorisant uniquement l’accès à partir d’applications Office Mobile, comme Outlook, Word, Excel et OneDrive. Cette nouvelle fonctionnalité est complémentaire des stratégies Intune de gestion des applications mobiles (GAM), car vous pouvez bloquer l’accès aux clients de messagerie intégrés ou autres applications qui n’ont pas été configurés avec les stratégies Intune GAM. Cela permet de vous assurer que tous les utilisateurs accèdent aux données de votre organisation à l’aide d’applications qui peuvent être protégées avec la gestion des applications mobiles Intune. Vous pouvez démarrer la gestion des applications mobiles Intune via le Portail Azure, dans la nouvelle section Accès conditionnel du panneau « Paramètres ».
 
-### Améliorations apportées à l’accès des utilisateurs finaux iOS à leurs applications
-Les modifications suivantes seront appliquées en septembre pour les mosaïques d’applications de l’application Portail d’entreprise : iOS pointera les utilisateurs vers différentes vues dans un emplacement unique, le site Web de Portail d’entreprise, pour toutes leurs applications. Actuellement, les restrictions d’Apple n’autorisent pas les applications métier et gérées de l’App store à être répertoriées dans l’application Portail d’entreprise et obligent les utilisateurs à consulter différentes vues pour rechercher toutes leurs applications.
 
-- La mosaïque **Applications d’entreprise** pointe actuellement vers une liste de toutes les applications dans l’onglet TOUT du site Web Portail d’entreprise, et elle continuera de fonctionner de la même manière. Le nom de la mosaïque est modifié en **Toutes les applications**.
-- La mosaïque **Autres applications** pointe actuellement vers une vue située à l’intérieur de l’application Portail d’entreprise, qui répertorie toutes les applications que le Portail d’entreprise est autorisé à afficher par Apple. Le nom de la mosaïque est modifié en **Applications proposées**, et la sélection de cette mosaïque ouvre l’onglet SÉLECTION du site Web Portail d’entreprise.
--  La mosaïque **Catégories** pointe actuellement vers une vue située à l’intérieur de l’application Portail d’entreprise, qui répertorie les catégories d’applications. Le nom de la mosaïque ne change pas, mais elle pointe maintenant sur l’onglet CATÉGORIES du site Web Portail d’entreprise. Vous trouverez des captures d’écran mises à jour [ici](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
-<!---TFS 1317133--->
-
-### Feuille de route du cloud
-Restez informé des développements à venir pour Intune avec la [Feuille de route de la plateforme cloud](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
 
 ### Désapprobation du service
-<!---@Barry, we started listing service deprecations earlier this summer. --->
-- **Modifications apportées à la prise en charge de l’application Portail d’entreprise iOS**<br/>
-En septembre, tous les utilisateurs de l’application Portail d’entreprise Microsoft Intune pour iOS devront utiliser la dernière version. Les nouveaux utilisateurs pourront uniquement télécharger la dernière version et les utilisateurs actuels devront effectuer une mise à jour vers cette version. La dernière version nécessite iOS 8.0 ou version ultérieure. Les appareils qui exécutent d’anciennes versions d’iOS ne pourront pas utiliser le portail d’entreprise ni être inscrits tant qu’ils n’auront pas été mis à jour vers iOS 8.0 ou version ultérieure, et que l’application Portail d’entreprise n’aura pas été mise à jour vers la dernière version. Les appareils inscrits qui exécutent les versions antérieures à iOS 8.0 continueront d’être gérés et répertoriés dans la Console d’administration Intune.  
-
-- **Mise à jour de la version minimale de Managed Browser pour iOS 8.0**<br/>
-En août, Intune publiera une mise à jour de l’application Microsoft Intune Managed Browser pour iOS qui prendra uniquement en charge les appareils exécutant iOS version 8.0 ou ultérieure. Même si les appareils iOS 7.1 pourront toujours utiliser l’application Managed Browser, nous vous recommandons d’inciter vos utilisateurs à procéder à la mise à jour pour iOS 8.0 ou ultérieure. Ils pourront ainsi accéder aux nouvelles fonctionnalités de Managed Browser et en tirer pleinement parti.  
-<!---TFS 1313253--->
 
 - **Les applications du portail d’entreprise pour Windows 8 et Windows Phone 8 sont obsolètes** <br/>
 À partir d’octobre 2016, Microsoft Intune ne prendra plus en charge les applications Portail d’entreprise Windows 8 et Windows Phone 8. Microsoft Intune cessera également de prendre en charge la plateforme Windows Phone 8. Ainsi, vous ne pourrez plus inscrire ni mettre à jour des appareils Windows Phone 8. Néanmoins, vous pourrez continuer à gérer les appareils Windows Phone 8 et Windows 8 déjà inscrits. Mettez à jour les appareils Windows Phone 8 et Windows 8 vers Windows Phone 8.1 et Windows 8.1, et utilisez les applications Portail d’entreprise Windows 8.1 et Windows Phone 8.1 correspondantes pour continuer à distribuer des applications sur ces appareils sans interruption.
-<!---TFS 1255391--->
 
-<!--- - **Custom Group Targeting of Notification Rules Removal.**<br/>
-Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
 
-    Today, to target a notification rule to a group you created from the Microsoft Intune administration console, you would take the following steps:
 
-    In the **Admin** workspace, click **Notification Rules** > **Create New Rule**
-
-    In step two of the Create Notification Rule Wizard, select the device groups which the rule will target. This step, “select device groups”, is being removed from the Intune Console.
-
-    The preliminary timeline for this change is as follows:
-    - In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
-    - Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
-    - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
-
---->
-
+### Feuille de route du cloud
+Restez informé des développements à venir pour Intune avec la [Feuille de route de la plateforme cloud](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
 
 
 ## Versions précédentes d’Intune
@@ -158,6 +141,6 @@ Les dernières améliorations apportées à Intune au cours des six derniers moi
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

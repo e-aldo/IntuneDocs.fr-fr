@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 8313430424acc13cf093665f886fdf05da7d75c8
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: e8558df80e36c15ab740f919eee98af9ab00b508
 
 
 ---
@@ -29,11 +29,10 @@ Vous pouvez désactiver la collecte de ces données sur votre appareil Windows �
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 

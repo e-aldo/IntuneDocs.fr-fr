@@ -4,7 +4,7 @@ description: "Comment exiger une authentification multifacteur dans Azure AD pou
 keywords: 
 author: nbigman
 manager: angerobe
-ms.date: 08/17/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
-ms.openlocfilehash: d65846b09ac33fa18db037a6a2c05963607ef53f
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 
 ---
@@ -41,12 +41,13 @@ Pour exiger l’authentification multifacteur lors de l’inscription de périph
     -  Exiger l’authentification multifacteur pour l’inscription d’un appareil lorsqu’il n’est pas en fonctionnement.
     -  Choisissez l’option de **blocage de l’accès aux ressources d’entreprise** pour empêcher l’inscription d’un appareil lorsqu’il n’est pas connecté au réseau d’entreprise. 
 4. Vous pouvez également cliquer sur le lien pour **définir/modifier l’emplacement de votre réseau professionnel**, pour configurer des exigences de connectivité réseau pour l’inscription d’appareils.
+
 > [!IMPORTANT]
 > 
 > Ne configurez pas les **règles d’accès basées sur les appareils** pour l’inscription à Microsoft Intune.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

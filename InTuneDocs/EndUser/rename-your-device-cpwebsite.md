@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 9e57883cabbf1e0b732265f107a89be00711f31f
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 905d29289f621bcfd4c7faccb119adcf5ce9ef63
 
 
 ---
@@ -37,11 +37,8 @@ Pour renommer votre appareil :
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
 
 
 ---
@@ -62,7 +62,7 @@ Si une condition n'est pas remplie, l'utilisateur reçoit l'un des messages suiv
 >[!NOTE]
 >Si vous activez l’accès conditionnel pour SharePoint Online, nous vous recommandons de désactiver le domaine dans la liste comme décrit dans la rubrique [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 ## Prise en charge des appareils mobiles
-- iOS 7.1 et versions ultérieures
+- iOS 8.0 et versions ultérieures
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 ou versions ultérieures
 - Windows Phone 8.1 et versions ultérieures
 
@@ -192,6 +192,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

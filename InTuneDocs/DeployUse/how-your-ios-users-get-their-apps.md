@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
 
 
 ---
@@ -32,15 +32,15 @@ Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux
 
 **Applications non gérées** : applications gérables par l’intermédiaire de stratégies et qui n’ont pas été encapsulées par Intune ou qui n’intègrent pas le Kit SDK de gestion des applications mobiles Intune. Vous ne pouvez pas appliquer de stratégies d'application à ces applications.
 
-Les restrictions d’Apple n’autorisent pas les applications métier et gérées de l’App store à être répertoriées dans l’application Portail d’entreprise, ce qui signifie que les utilisateurs doivent accéder à différentes vues pour rechercher toutes leurs applications. Les applications pour chaque mosaïque affichée à la page d’applications du Portail d’entreprise sont disponibles comme suit :
+Les restrictions d’Apple n’autorisent pas l’affichage des applications métier et gérées de l’App Store dans l’application Portail d’entreprise. Pour contourner ce problème, les vignettes d’applications dans l’application Portail d’entreprise pour iOS dirigent les utilisateurs vers différentes vues dans un emplacement unique (à savoir le site web du Portail d’entreprise) pour toutes leurs applications, comme expliqué ci-après :
 
-- La mosaïque **Applications d’entreprise** pointe vers une liste de toutes les applications dans l’onglet **TOUT** du [site Web Portail d’entreprise](http://portal.manage.microsoft.com).
+- La vignette **Applications d’entreprise** pointait auparavant vers une liste de toutes les applications dans l’onglet TOUT du [site web du Portail d’entreprise](http://portal.manage.microsoft.com). Elle a toujours le même comportement, mais son nom a été remplacé par **Toutes les applications**.
 
-- La mosaïque **Autres applications** pointe actuellement vers une vue située à l’intérieur de l’application Portail d’entreprise, qui répertorie toutes les applications que le Portail d’entreprise est autorisé à afficher par Apple. Cela inclut toutes les applications à l’exception des applications métier et gérées de l’App store.
+- La vignette **Autres applications** pointait auparavant vers une vue, dans l’application Portail d’entreprise, qui répertoriait toutes les applications dont l’affichage dans le Portail d’entreprise était autorisé par Apple. Cette vignette s’appelle maintenant **Applications proposées**. Quand l’utilisateur appuie dessus, il accède à l’onglet SÉLECTION du site web du Portail d’entreprise.
 
-- La mosaïque **Catégories** pointe actuellement vers une vue située à l’intérieur de l’application Portail d’entreprise, qui répertorie les catégories d’applications.
+-  La vignette **Catégories** pointait auparavant vers une vue, dans l’application Portail d’entreprise, qui répertoriait toutes les catégories d’applications. Son nom n’a pas changé, mais la vignette pointe maintenant vers l’onglet CATÉGORIES du site web du Portail d’entreprise.
+Vous trouverez des captures d’écran mises à jour [ici](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
 
-    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
 
 
 ###Voir aussi
@@ -49,6 +49,6 @@ Les restrictions d’Apple n’autorisent pas les applications métier et géré
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

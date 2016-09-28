@@ -13,14 +13,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d0e2b79a19dfce1541506bc1da89cb716a1d0af
-ms.openlocfilehash: c03c309e1e27a47b65a87aae8833b88680b0d8e8
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 2b44779fdac0764a3e7a18f1c365050e9800f902
 
 
 ---
 
 # Aider à protéger les appareils iOS avec le contournement du verrou d'activation pour Microsoft Intune
-Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fonctionnalité de l’application Rechercher mon iPhone pour les appareils iOS 7.1 et versions ultérieures. Le verrou d’activation est activé automatiquement lorsqu’un utilisateur ouvre l’application Rechercher mon iPhone sur un appareil. Une fois qu’il est activé, l’ID et le mot de passe Apple de l’utilisateur doivent être entrés pour pouvoir : 
+Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fonctionnalité de l’application Rechercher mon iPhone pour les appareils iOS 8.0 et versions ultérieures. Le verrou d’activation est activé automatiquement lorsqu’un utilisateur ouvre l’application Rechercher mon iPhone sur un appareil. Une fois qu’il est activé, l’ID et le mot de passe Apple de l’utilisateur doivent être entrés pour pouvoir : 
 
 -   désactiver Rechercher mon iPhone ;
 
@@ -43,7 +43,7 @@ Pour résoudre ces problèmes, Apple a introduit le contournement du verrou d'ac
 > Le mode supervisé pour les appareils iOS vous permet d’utiliser l’outil Apple Configurator pour verrouiller un appareil et limiter ainsi la fonctionnalité à des usages professionnels spécifiques. Le mode surveillé est généralement destiné uniquement aux appareils appartenant à l'entreprise.
 
 ## Gestion du verrou d'activation dans Intune
-Intune peut demander l’état du verrou d’activation des appareils supervisés et non supervisés qui exécutent iOS 7.1 et versions ultérieures. Pour les appareils supervisés uniquement, Intune peut récupérer le code de contournement du verrou d’activation et le transmettre directement à l’appareil. Si l’appareil a été réinitialisé, vous pouvez y accéder directement en utilisant le code comme nom d’utilisateur ainsi qu’un mot de passe vide.
+Intune peut demander l’état du verrou d’activation des appareils supervisés et non supervisés qui exécutent iOS 8.0 et versions ultérieures. Pour les appareils supervisés uniquement, Intune peut récupérer le code de contournement du verrou d’activation et le transmettre directement à l’appareil. Si l’appareil a été réinitialisé, vous pouvez y accéder directement en utilisant le code comme nom d’utilisateur ainsi qu’un mot de passe vide.
 
 **Les avantages sont les suivants** :
 
@@ -76,7 +76,7 @@ Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deu
 
     -   Non activé
 
-    Le champ **État du verrou d’activation** est vide pour les appareils qui n’exécutent pas iOS 7.1 ou une version ultérieure.
+    Le champ **État du verrou d’activation** est vide pour les appareils qui n’exécutent pas iOS 8.0 ou une version ultérieure.
 
 -   Sélectionnez un appareil dans un affichage de groupes pour faire apparaître l’état du verrou d’activation dans le volet d’informations de l’appareil.
 
@@ -92,6 +92,6 @@ Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deu
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

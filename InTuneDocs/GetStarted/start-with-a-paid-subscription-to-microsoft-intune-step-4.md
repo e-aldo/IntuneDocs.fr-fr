@@ -13,8 +13,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 564edd672052f41215294a9562101289f20128db
+ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
+ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
 
 
 ---
@@ -30,7 +30,7 @@ Lorsque les comptes d’utilisateur sont synchronisés à partir de votre annuai
 Quand votre abonnement partage Azure AD avec d’autres services cloud associés à votre abonnement, vous avez également accès aux utilisateurs qui ont été ajoutés à ces services. Ces utilisateurs ne disposeront pas d'une licence [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] tant que vous n'aurez pas attribué une licence à chacun d'entre eux.
 
 > [!TIP]
-> Si l’option permettant d’attribuer ou de retirer une licence [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] est désactivée, il se peut que votre abonnement inclue des options de licences en volume disponibles en cas d’utilisation d’[Enterprise Mobility Suite](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx). Consultez la documentation de vos options de licence pour plus d'informations sur l'attribution ou le retrait des licences.
+> Si l’option permettant d’attribuer ou de retirer une licence [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] est désactivée, il se peut que votre abonnement inclue des options de licences en volume disponibles en cas d’utilisation d’[Enterprise Mobility Suite + Security](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx). Consultez la documentation de vos options de licence pour plus d'informations sur l'attribution ou le retrait des licences.
 
 ## Attribuer une licence d’utilisateur Intune
 
@@ -92,6 +92,6 @@ Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

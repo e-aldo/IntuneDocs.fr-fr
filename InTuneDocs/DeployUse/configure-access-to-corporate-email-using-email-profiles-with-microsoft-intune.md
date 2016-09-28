@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ Les administrateurs informatiques ou les utilisateurs peuvent choisir d’instal
 Vous pouvez utiliser des profils de messagerie pour configurer le client de messagerie natif sur les types d’appareils suivants :
 -   Windows Phone 8 et versions ultérieures
 -   Windows 10 (pour le bureau), Windows 10 Mobile et versions ultérieures
--   iOS 7.1 et versions ultérieures
+-   iOS 8.0 et versions ultérieures
 -   Samsung KNOX Standard (4.0 et versions ultérieures)
 
 Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez configurer le volume d’e-mails à synchroniser et, en fonction du type d’appareil, les types de contenu à synchroniser.
@@ -71,7 +71,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
     -   **Profil de messagerie pour Samsung KNOX Standard (4.0 et versions ultérieures)**
 
-    -   **Profil de messagerie (iOS 7.1 et versions ultérieures)**
+    -   **Profil de messagerie (iOS 8.0 et versions ultérieures)**
 
     -   **Profil de messagerie (Windows Phone 8 et versions ultérieures)**
 
@@ -122,6 +122,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

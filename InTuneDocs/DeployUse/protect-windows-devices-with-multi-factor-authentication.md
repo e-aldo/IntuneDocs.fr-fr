@@ -4,7 +4,7 @@ description: "Intune intègre l’authentification multifacteur (MFA) pour vous 
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4993982adcfbc960ad71022268cc44d216d1c585
-ms.openlocfilehash: fb4ae43ffcbec24147e2e3ce3c96ec795289c925
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: 00d63fa55cd29c938dd082e2eff240f08319e01a
 
 
 ---
@@ -25,11 +25,15 @@ Microsoft Intune intègre l’authentification multifacteur (MFA) pour vous aide
 ## Conditions requises au niveau de l'infrastructure locale pour l'authentification multifacteur
 Pour configurer l'authentification multifacteur, vous avez besoin des éléments suivants :
 
+-   une inscription automatique, comme décrit dans [Configurer la gestion des appareils Windows](set-up-windows-device-management-with-microsoft-intune.md) ;
 -   **un domaine Active Directory dont le serveur AD FS est membre ;**
 
--   **un serveur AD FS (Active Directory Federation Services), configuré pour l'authentification multifacteur ;** Un serveur exécutant Windows Server 2012 R2 et configuré comme serveur AD FS. Pour plus d’informations, consultez : [Sécuriser les ressources cloud et locales à l’aide du serveur Azure Multi-Factor Authentication avec Windows Server 2012 R2 AD FS](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-adfs-w2k12/)
+-   **un serveur AD FS (Active Directory Federation Services), configuré pour l'authentification multifacteur ;** un serveur exécutant Windows Server 2012 R2 et configuré comme serveur AD FS. Pour plus d’informations, consultez : [Sécuriser les ressources cloud et locales à l’aide du serveur Azure Multi-Factor Authentication avec Windows Server 2012 R2 AD FS](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-adfs-w2k12/)
 
-Tous les serveurs répertoriés ci-dessus doivent répondre à la configuration requise indiquée dans [Configuration requise et informations d’installation pour Windows Server 2012 R2](http://technet.microsoft.com/library/dn303418.aspx)
+Les serveurs doivent répondre à la configuration requise indiquée dans [Configuration requise et informations d’installation pour Windows Server 2012 R2](http://technet.microsoft.com/library/dn303418.aspx).
+
+ 
+
 
 #### Authentification multifacteur dans Intune
 Si votre organisation a une infrastructure informatique locale qui comprend un domaine Active Directory avec les services AD FS (Active Directory Federation Services), vous pouvez configurer MFA sur votre serveur de fédération, puis l’activer pour inscription auprès d’Intune. Quand vous configurez MFA sur Intune, les utilisateurs peuvent s’authentifier une seule fois, lors de l’inscription, puis utiliser les ressources de l’entreprise sans avoir à répéter le processus MFA à chaque fois.
@@ -55,6 +59,6 @@ Pour plus d'informations sur la façon d'activer l'authentification multifacteur
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

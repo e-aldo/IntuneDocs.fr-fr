@@ -4,7 +4,7 @@ description: "Découvrez comment créer un profil de certificat Intune."
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,22 +41,16 @@ Vous devez créer un profil de certificat approuvé avant de créer un profil de
 1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
 2.  Ajoutez l’un de ces types de stratégie :
     - **Android &gt; Profil de certificat approuvé (Android 4 et versions ultérieures)**
-    - **iOS &gt; Profil de certificat approuvé (iOS 7.1 et versions ultérieures)**
+    - **iOS &gt; Profil de certificat approuvé (iOS 8.0 et versions ultérieures)**
     - **Mac OS X &gt; Profil de certificat approuvé (Mac OS X 10.9 et versions ultérieures)**
     - **Windows &gt; Profil de certificat approuvé (Windows 8.1 et versions ultérieures)**
     - **Windows &gt; Profil de certificat approuvé (Windows Phone 8.1 et versions ultérieures)**
 
     Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Entrez les informations suivantes pour configurer les paramètres de profil de certificat approuvé pour Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1.
-
-    - Dans le paramètre **Fichier de certificat**, importez le certificat d’autorité de certification racine approuvée (fichier .cer) que vous avez exporté à partir de votre autorité de certification émettrice. Le paramètre **Banque d’informations de destination** s’applique uniquement aux appareils exécutant Windows 8.1 et versions ultérieures, et seulement si l’appareil a plusieurs magasins de certificats.
-    -  Sous **Format du nom de l’objet**, sélectionnez **Personnalisé** pour entrer un format de nom d’objet personnalisé.  
-        Les deux variables actuellement prises en charge pour le format personnalisé sont `Common Name (CN)` et `Email (E)`. En combinant ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui-ci :  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        Dans cet exemple, l’administrateur a créé un format de nom d’objet qui, en plus des variables `CN` et `E`, utilise des chaînes pour les valeurs de l’unité d’organisation, de l’organisation, de l’emplacement, de la région et du pays. La [fonction CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) répertorie les chaînes prises en charge.  
+3.  Entrez les informations suivantes pour configurer les paramètres de profil de certificat approuvé pour Android, iOS, Mac OS X, Windows 8.1 ou Windows Phone 8.1. 
+4.  Dans le paramètre **Fichier de certificat**, importez le certificat d’autorité de certification racine approuvée (fichier .cer) que vous avez exporté à partir de votre autorité de certification émettrice. Le paramètre **Banque d’informations de destination** s’applique uniquement aux appareils exécutant Windows 8.1 et versions ultérieures, et seulement si l’appareil a plusieurs magasins de certificats.
+    
 4.  Choisissez **Enregistrer la stratégie**.
 
 La nouvelle stratégie apparaît dans l’espace de travail **Stratégie**. À présent, vous pouvez la déployer.
@@ -69,7 +63,7 @@ Après avoir créé un profil de certificat d’autorité de certification appro
 1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
 2.  Ajoutez l’un de ces types de stratégie :
     - **Android &gt; Profil de certificat SCEP (Android 4 et versions ultérieures)**
-    - **iOS &gt; Profil de certificat SCEP (iOS 7.1 et versions ultérieures)**
+    - **iOS &gt; Profil de certificat SCEP (iOS 8.0 et versions ultérieures)**
     - **Mac OS X &gt; Profil de certificat SCEP (Mac OS X 10.9 et versions ultérieures)**
     - **Windows &gt; Profil de certificat SCEP (Windows 8.1 et versions ultérieures)**
     - **Windows &gt; Profil de certificat SCEP (Windows Phone 8.1 et versions ultérieures)**
@@ -79,7 +73,7 @@ Après avoir créé un profil de certificat d’autorité de certification appro
 3.  Suivez les instructions de la page de configuration de profil pour configurer les paramètres de profil de certificat SCEP.
     > [!NOTE]
     >
-    > Sous **Format du nom de l’objet**, sélectionnez **Personnalisé** pour entrer un format de nom d’objet personnalisé.
+    > Sous **Format du nom de l’objet**, sélectionnez **Personnalisé** pour entrer un format de nom d’objet personnalisé (dans les profils iOS uniquement).
     >
     > Les deux variables actuellement prises en charge pour le format personnalisé sont `Common Name (CN)` et `Email (E)`. En combinant ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui-ci :
 
@@ -98,7 +92,7 @@ La nouvelle stratégie apparaît dans l’espace de travail **Stratégie**. À p
   - **Android &gt; Profil de certificat .PFX (Android 4 et versions ultérieures)**
   - **Windows &gt; Profil de certificat PKCS #12 (.PFX) (Windows 10 et versions ultérieures)**
   - **Windows &gt; Profil de certificat PKCS #12 (.PFX) (Windows Phone 10 et versions ultérieures)**
-  - **iOS > Profil de certificat PKCS #12 (.PFX) (iOS 7.1 et versions ultérieures)**    
+  - **iOS > Profil de certificat PKCS #12 (.PFX) (iOS 8.0 et versions ultérieures)**    
     Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Entrez les informations demandées dans le formulaire de stratégie.
 4.  Choisissez **Enregistrer la stratégie**.
@@ -136,6 +130,6 @@ Ensuite, découvrez comment utiliser des certificats pour sécuriser les profils
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

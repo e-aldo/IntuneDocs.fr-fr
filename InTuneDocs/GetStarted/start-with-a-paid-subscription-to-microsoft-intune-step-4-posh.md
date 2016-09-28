@@ -67,6 +67,6 @@ Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
