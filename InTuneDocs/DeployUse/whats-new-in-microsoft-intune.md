@@ -2,9 +2,9 @@
 title: "Nouveautés | Microsoft Intune"
 description: "Découvrir les nouveautés de la version de Microsoft Intune de ce mois-ci et des versions précédentes"
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -72,6 +72,11 @@ Les utilisateurs d’appareils non conformes seront invités à inscrire leurs a
 Une nouvelle icône Notifications a été ajoutée dans la page d’accueil du Portail d’entreprise pour Android. En appuyant sur cette icône, vous accédez directement à la page Notifications. Cette page affiche aux utilisateurs finaux tous les éléments importants à examiner dans l’application Portail d’entreprise, par exemple, la non-conformité d’un appareil, une mise à jour de l’inscription ou l’activation d’une inscription. L’application Portail d’entreprise iOS offre déjà cette fonctionnalité de notifications. Avec la nouvelle page Notifications, si l’appareil est déjà inscrit, l’utilisateur ne verra pas la page Configuration de l’accès à l’entreprise s’afficher chaque fois qu’il accède ou revient au Portail d’entreprise. Si vous rédigez votre propre guide de l’utilisateur final, mettez à jour votre documentation pour refléter cette modification. Vous trouverez des captures d’écran mises à jour [ici](https://aka.ms/androidcpupdate).  
 <!---TFS 1095560--->
 
+**Envoi de commentaires dans le portail d’entreprise pour Android**</br>
+Un nouvel élément a été ajouté au menu du portail d’entreprise pour Android. Quand vous appuyez sur **Aide et commentaires**, trois actions s’affichent :
+* Utilisez **Obtenir de l’aide** pour signaler un problème à votre service informatique au sujet du portail d’entreprise. Ce service crée un e-mail en utilisant votre client d’e-mail et y joint les journaux du portail d’entreprise. **Obtenir de l’aide** remplace la fonctionnalité **Envoyer les données** dans la page **paramètres**.
+* Utilisez **Commentaires** pour envoyer des commentaires à l’équipe du portail d’entreprise.
+* Utilisez **Évaluer notre application** pour laisser dans l’application du portail d’entreprise une évaluation ou un avis sur Google Play.
 
 ### iOS
 **Modifications apportées à la prise en charge de l’application Portail d’entreprise iOS**<br/>
@@ -88,7 +93,7 @@ Vous trouverez des captures d’écran mises à jour [ici](https://gallery.techn
 <!---TFS 1317133--->
 
 **Invitation à l’installation de l’application Managed Browser iOS si IT Pro définit cette obligation pour une application**<br/>
-Si vous avez configuré un clip web pour qu’il s’ouvre uniquement dans le navigateur géré, et que ce navigateur n’est pas installé sur l’appareil, l’application Portail d’entreprise sur l’appareil invitera l’utilisateur à installer le navigateur géré pour permettre l’ouverture du clip web. 
+Si vous avez configuré un clip web pour qu’il s’ouvre uniquement dans le navigateur géré, et que ce navigateur n’est pas installé sur l’appareil, l’application Portail d’entreprise sur l’appareil invitera l’utilisateur à installer le navigateur géré pour permettre l’ouverture du clip web.
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Les dernières améliorations apportées à Intune au cours des six derniers moi
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
