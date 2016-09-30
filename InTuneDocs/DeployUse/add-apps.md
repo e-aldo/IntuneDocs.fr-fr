@@ -4,7 +4,7 @@ description: "Avant de commencer à déployer des applications avec Intune, vous
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 8bc18a2f77a2ebcc4a3a2fc4d0902e745991dfae
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ Les applications basées sur les liens externes ne sont pas stockées dans votre
 Vous pouvez utiliser des applications iOS gérées pour gérer et déployer des applications iOS gratuites à partir de l’App Store. Vous pouvez aussi utiliser des applications iOS gérées pour associer des [stratégies de gestion d’applications mobiles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) aux [applications compatibles](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx), puis consulter leur état dans la console Administrateur.<br /><br />Les applications iOS gérées ne sont pas stockées dans votre espace de stockage cloud Intune.
 
 > [!TIP]
-> Les options pour les appareils mobiles ne sont pas disponibles tant que vous n’avez pas [défini l’autorité MDM](get-ready-to-enroll-devices-in-microsoft-intune.md) sur Intune.
+> Les options pour les appareils mobiles ne sont pas disponibles tant que vous n’avez pas [défini l’autorité MDM](prerequisites-for-enrollment.md) sur Intune.
 
 ## Éditeur de logiciel Intune
 L’Éditeur de logiciel Microsoft Intune démarre quand vous ajoutez ou modifiez des applications à partir de la console Administrateur Intune. Dans l’éditeur, sélectionnez et configurez un type de programme d’installation de logiciel qui :
@@ -82,6 +82,6 @@ Vous devez ajouter les applications à la console Intune avant de les déployer.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
