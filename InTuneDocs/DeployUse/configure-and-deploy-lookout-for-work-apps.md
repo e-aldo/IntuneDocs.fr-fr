@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4d05b9ba7249e4068d21480b1c9db342277757e
-ms.openlocfilehash: 687a102ccb34cb7acfaab1e8a1d4b67cb54b9e92
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 46a6b836e344c9cf876d633f868753a49c0cd440
 
 
 ---
@@ -37,9 +37,9 @@ Quand vous cliquez sur **Applications** dans la console Administrateur Intune, v
 
 **Pour déployer l’application pour des utilisateurs**, sélectionnez l’application Lookout for Work illustrée dans l’écran ci-dessus et sélectionnez **Gérer le déploiement**.
 
-Vous devez sélectionner les mêmes utilisateurs que ceux qui ont été ajoutés à l’option Gestion des inscriptions dans la console Lookout MTP.  Pour plus d’informations sur l’ajout de groupes d’utilisateurs dans Lookout MTP, consultez l’étape 3 dans la section [Configurer votre abonnement à Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp).
+Vous devez sélectionner les mêmes utilisateurs que ceux qui ont été ajoutés à l’option Gestion des inscriptions dans la console Lookout.  Pour plus d’informations sur l’ajout de groupes d’utilisateurs dans Lookout, consultez l’étape 3 de la section [Configurer votre abonnement avec le service Lookout de protection des appareils contre les menaces](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp).
 >[!IMPORTANT]
-> L’Assistant Déploiement d’application Intune n’a pas connaissance des groupes d’utilisateurs Azure AD et utilise les groupes d’utilisateurs Intune à la place. Vous devez donc créer un groupe d’utilisateurs Intune basé sur le groupe d’utilisateurs Azure AD qui est inscrit dans la console Lookout MTP, comme cela est décrit dans [cette](plan-your-user-and-device-groups.md) rubrique.
+> L’Assistant Déploiement d’application Intune n’a pas connaissance des groupes d’utilisateurs Azure AD et utilise les groupes d’utilisateurs Intune à la place. Vous devez donc créer un groupe d’utilisateurs Intune basé sur le groupe d’utilisateurs Azure AD qui est inscrit dans la console Lookout, comme cela est décrit dans [cette](plan-your-user-and-device-groups.md) rubrique.
 
 Choisissez l’option **Installation requise** pour exiger que l’application Lookout soit installée sur l’appareil de l’utilisateur.
 
@@ -57,6 +57,6 @@ Quand l’utilisateur ouvre l’application Lookout for Work sur l’appareil, i
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

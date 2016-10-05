@@ -13,8 +13,8 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa05027e1785bb27a607aa9e31b685107a84f63f
-ms.openlocfilehash: 3de68238515a2584b6f1a5785e13688097468415
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: c074dd8850aef8cec79a9362222c3678d679bf4f
 
 
 ---
@@ -22,18 +22,18 @@ ms.openlocfilehash: 3de68238515a2584b6f1a5785e13688097468415
 # Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité
 Avec la protection contre les menaces mobiles de Lookout, Intune vous donne la possibilité de détecter les menaces mobiles et d’évaluer le risque pour votre appareil. Vous pouvez créer une règle de stratégie de conformité pour inclure l’évaluation du risque afin de déterminer si l’appareil est conforme. Vous pouvez ensuite utiliser la stratégie d’accès conditionnel pour autoriser ou bloquer l’accès à Exchange, à SharePoint et à d’autres services basés sur la conformité de l’appareil.
 
-Conditions pour utiliser la détection des menaces de Lookout MTP dans la stratégie de conformité de l’appareil :
+Conditions pour utiliser le service Lookout de détection des menaces dans la stratégie de conformité de l’appareil :
 
 * La règle **Protection de l’appareil contre les menaces** doit être activée dans la stratégie de conformité.
 
 * La page **État de Lookout** dans la **console Administrateur Intune** doit afficher la valeur **Actif**. Pour plus d’informations et obtenir des instructions sur l’activation de l’intégration de Lookout, consultez la rubrique [Activer la connexion à Lookout MTP dans la console d’administration Intune](enable-lookout-mtp-connection-in-intune.md).
 
 
-Avant de créer la règle de protection de l’appareil contre les menaces dans la stratégie de conformité, nous vous recommandons de [configurer votre abonnement à Lookout MTP](set-up-your-subscription-with-lookout-mtp.md), d’[activer la connexion à Lookout dans Intune](enable-lookout-mtp-connection-in-intune.md) et de [configurer l’application Lookout for Work](configure-and-deploy-lookout-for-work-apps.md). La règle de conformité n’est appliquée qu’une fois la configuration terminée.
+Avant de créer la règle de protection de l’appareil contre les menaces dans la stratégie de conformité, nous vous recommandons [de configurer votre abonnement avec le service Lookout de protection des appareils contre les menaces](set-up-your-subscription-with-lookout-mtp.md), [d’activer la connexion à Lookout dans Intune](enable-lookout-mtp-connection-in-intune.md) et [de configurer l’application Lookout for Work](configure-and-deploy-lookout-for-work-apps.md). La règle de conformité n’est appliquée qu’une fois la configuration terminée.
 
 Pour activer la règle de protection de l’appareil contre les menaces, vous pouvez utiliser une stratégie de conformité existante ou en créer une autre.
 
-Lors de la configuration de Lookout MTP, dans la [console Lookout MTP](https://aad.lookout.com), vous avez créé une stratégie qui classifie les diverses menaces selon leur niveau (élevé, moyen et faible). Dans la stratégie de conformité Intune, vous utilisez le niveau de menace pour définir le niveau de menace maximal autorisé.
+Dans le cadre de la configuration du service Lookout de protection des appareils contre les menaces, dans la [console Lookout](https://aad.lookout.com), vous avez créé une stratégie qui classifie les diverses menaces selon leur niveau (élevé, moyen et faible). Dans la stratégie de conformité Intune, vous utilisez le niveau de menace pour définir le niveau de menace maximal autorisé.
 
 Dans la page **Stratégies de conformité** de la **console Administrateur Intune**, accédez à **Intégrité de l’appareil** et activez la règle **Protection de l’appareil contre les menaces** à l’aide du bouton bascule. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
 * **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut.  L’appareil ne peut présenter aucune menace.  Si un niveau de menaces est détecté, l’appareil est évalué comme non conforme.  
@@ -61,6 +61,6 @@ Vous pouvez voir l’état de conformité d’un appareil dans la page **Tous le
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
