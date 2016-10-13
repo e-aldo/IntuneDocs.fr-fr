@@ -4,7 +4,7 @@ description: "Créer et gérer des groupes à l’aide de l’espace de travail 
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ Cette rubrique explique comment créer des groupes dans Intune. Elle fournit ég
 
 >[!IMPORTANT]
 >
->Si vous ouvrez l’espace de travail Groupes dans le portail Intune et que vous voyez un lien vers le portail Azure Active Directory (Azure AD), cela signifie que vous utilisez déjà la *nouvelle* approche des groupes de sécurité Azure AD pour gérer les groupes dans Intune, comme cela est décrit dans [Note concernant les prochaines améliorations apportées à l’expérience d’administration pour les groupes](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Cliquez sur le lien vers le portail Azure AD pour créer et gérer vos groupes. Pour savoir comment utiliser les groupes de sécurité Azure AD, consultez [Gestion de l’accès aux ressources avec les groupes Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+>Si vous ouvrez l’espace de travail Groupes dans le portail Intune et que vous voyez un lien vers le portail Azure Active Directory (Azure AD), cela signifie que vous utilisez déjà la *nouvelle* approche des groupes de sécurité Azure AD pour gérer les groupes dans Intune, comme cela est décrit dans [Note concernant les prochaines améliorations apportées à l’expérience d’administration pour les groupes](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Cliquez sur le lien vers le portail Azure AD pour créer et gérer vos groupes.
+>
+>![Capture d’écran du lien vers la gestion de groupes Azure](../media/groups-link-azure.png) 
 >
 >Si vous ne voyez pas le lien vers le portail Azure AD, cela indique que vous utilisez encore l’approche *actuelle* pour gérer les groupes, tel que décrit dans la section [Créer des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) de cette rubrique.
 
@@ -42,7 +44,7 @@ Cette modification n’a pas d’incidence pour vous aujourd’hui, mais nous po
 
 
 ### Quand et comment serai-je migré vers la nouvelle expérience de groupes ?
-Nous allons effectuer la migration des clients Intune actuels sur une période donnée. Actuellement, nous finalisons la planification de cette migration et nous prévoyons de mettre à jour cette rubrique dans les semaines à venir pour vous donner plus de détails. Nous vous avertirons avant de commencer la migration. Si vous avez des questions concernant la migration, contactez notre équipe de migration à l’adresse <intunegrps@microsoft.com>.
+Nous allons effectuer la migration des clients Intune actuels sur une période donnée. Actuellement, nous finalisons la planification de cette migration et nous prévoyons de mettre à jour cette rubrique dans les semaines à venir pour vous donner plus de détails. Nous vous avertirons avant de commencer la migration. Si vous avez des questions concernant la migration, contactez notre équipe de migration à l’adresse [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com). Pour plus d’informations sur la façon dont les groupes seront migrés, consultez [Migration des groupes vers Azure Active Directory](migrating-groups-to-azure-active-directory.md).
 
 ### Qu’arrivera-t-il à mes groupes d’utilisateurs et d’appareils existants ?
  Les groupes d’utilisateurs et d’appareils que vous avez créés dans Intune seront migrés vers des groupes de sécurité Azure AD. Les groupes Intune par défaut, comme le groupe Tous les utilisateurs, seront migrés uniquement s’ils sont utilisés dans des déploiements au moment de la migration. Il est possible que la migration soit plus complexe pour certains groupes. Nous vous avertirons si des étapes supplémentaires sont nécessaires pour la migration dans votre organisation.
@@ -202,6 +204,6 @@ Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur pr�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
