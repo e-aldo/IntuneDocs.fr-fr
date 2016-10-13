@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/8/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 
 ---
@@ -23,10 +23,10 @@ ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
 
 # Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows dans Intune ?
 
-Lorsque vous installez l’application Portail d’entreprise et que vous l’utilisez pour inscrire un appareil Windows ou Windows Phone, vous permettez à votre administrateur de gérer votre appareil pour sécuriser les données de votre entreprise ou de votre établissement scolaire, comme décrit ci-dessous, pour les appareils antérieurs à Windows 10. Pour plus d’informations sur les appareils Windows 10, consultez [cette page](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Quand vous installez l’application Portail d’entreprise et que vous l’utilisez pour inscrire un appareil Windows ou Windows Phone, vous permettez à votre administrateur de gérer votre appareil pour sécuriser les données de votre entreprise ou de votre établissement scolaire, comme cela est décrit ci-dessous pour les appareils antérieurs à Windows 10. Consultez [cette page](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) pour les appareils Windows 10.
 
 ## Que se passe-t-il pour tous les appareils Windows après l’inscription ?
-Lorsque vous inscrivez votre appareil Windows ou Windows Phone dans Intune, vous pouvez :
+Quand votre appareil Windows ou Windows Phone est inscrit dans Intune, vous pouvez :
 
 -   accéder au réseau de l'entreprise, à votre messagerie et à vos fichiers de travail ;
 
@@ -38,21 +38,19 @@ Lorsque vous inscrivez votre appareil Windows ou Windows Phone dans Intune, vous
 
 Quand vous inscrivez votre appareil, vous autorisez votre administrateur à effectuer les opérations suivantes :
 
--   réinitialiser votre périphérique aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé ;
+-   Réinitialiser votre périphérique aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé.
 
--   supprimer toutes les données relatives à l’entreprise, ainsi que les applications professionnelles qui ont été installées. Vos données et paramètres personnels ne sont pas supprimés.
+-   Supprimer uniquement les fichiers relatifs à l’entreprise et les applications professionnelles. **Vos données et paramètres personnels ne sont pas supprimés.**
 
--   Votre administrateur informatique peut effectuer un inventaire de tous les logiciels installés sur l'ordinateur, y compris les logiciels que vous avez installés personnellement ;
+-   Votre administrateur informatique peut voir tous les logiciels installés sur l’appareil, y compris les logiciels que vous avez installés personnellement.
 
--   vous forcer à avoir un mot de passe ou un code PIN sur l’appareil, ce qui peut le bloquer, ou le réinitialiser selon les paramètres par défaut du fabricant, ce qui peut entraîner la suppression des données en cas de saisies successives de mots de passe incorrects ;
+-   Définir les exigences pour votre appareil, comme vous obliger à avoir un mot de passe ou un code PIN sur l’appareil pour protéger les données d’entreprise. Votre administrateur informatique peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’appareil si vous dépassez le nombre maximal autorisé.
 
--   forcer le chiffrement de toutes les données sur l’appareil, ce qui permet de protéger les données si l’appareil est perdu ou volé.
+-   Vous obliger à chiffrer les données sur votre appareil pour mieux protéger les données d’entreprise si l’appareil est perdu ou volé. 
 
 -   Vous êtes obligé d'accepter les conditions générales.
 
--   Votre administrateur informatique peut appliquer des stratégies sur l'ordinateur. Par exemple, vous devrez peut-être définir un mot de passe ou un code PIN sur l'ordinateur, ce qui peut le bloquer, ou bien supprimer toutes les données du disque dur de votre ordinateur en cas de saisies multiples de mots de passe incorrects.
-
--   Désactiver la carte SD.
+-   Vous empêcher de prendre des photos de données d’entreprise.
 
 ## Que se passe-t-il pour tous les ordinateurs Windows après l’inscription ?
 
@@ -60,35 +58,24 @@ Quand vous inscrivez votre appareil, vous autorisez votre administrateur à effe
 
 -  Intune Endpoint Protection peut être installé sur votre ordinateur. Il s'agit d'un logiciel qui recherche les virus et programmes malveillants.
 
--  Votre administrateur informatique peut effectuer un inventaire de tous les logiciels installés sur l'ordinateur, y compris les logiciels que vous avez installés personnellement.
-
--  Vous devez accepter les conditions générales.
-
--  Votre administrateur informatique peut collecter ou supprimer des données du disque dur de votre ordinateur. Votre administrateur peut également supprimer l’ensemble du disque dur.
+-  Votre administrateur informatique peut collecter ou supprimer des données du disque dur de votre ordinateur.
 
 -  Votre administrateur informatique peut installer des applications et des mises à jour sur votre ordinateur.
-
--  Votre administrateur informatique peut appliquer des stratégies sur l'ordinateur. Par exemple, vous pouvez être amené à définir un mot de passe ou un code PIN sur l’ordinateur, ce qui peut le bloquer, ou bien supprimer toutes les données du disque dur de votre ordinateur en cas de saisies successives de mots de passe incorrects.
-
 
 ## Que se passe-t-il toutes les huit heures après l’inscription d’appareils ?
 Environ toutes les huit heures, les appareils inscrits vont :
 
--   télécharger toute mise à jour d'une application ou d'une stratégie rendue disponible par votre administrateur informatique ;
+-   télécharger toute mise à jour d’une application ou d’une stratégie rendue disponible par votre administrateur informatique ;
 
 -   envoyer toute mise à jour de l'inventaire matériel ;
 
 -   envoyer toute mise à jour de l'inventaire d'applications de la société.
 
-Pour connaître les étapes d'inscription, consultez [Inscrire un appareil Windows dans Intune](enroll-your-device-in-intune-windows.md). Pour savoir ce que votre administrateur informatique peut voir sur votre appareil, consultez [Que voit mon administrateur informatique quand j’inscris mon appareil dans Intune ?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
-
 Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

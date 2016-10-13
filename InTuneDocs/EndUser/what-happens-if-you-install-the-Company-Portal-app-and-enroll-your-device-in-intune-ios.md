@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 3f9f985e2e40d67bedf8eb37125274ea029e602a
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 ---
@@ -75,7 +75,7 @@ Une fois votre appareil inscrit, votre administrateur informatique peut :
 
 -   Vous êtes obligé d'accepter les conditions générales.
 
--   Activer ou désactiver l'appareil photo sur votre appareil.
+-   Activer ou désactiver l’appareil photo sur votre appareil pour vous empêcher de prendre des photos de données d’entreprise sensibles.
 
 -   Activer ou désactiver la navigation Web sur votre appareil.
 
@@ -91,15 +91,10 @@ Une fois votre appareil inscrit, votre administrateur informatique peut :
 
 -   Activer ou désactiver la synchronisation automatique des fichiers en itinérance sur votre appareil. Si la synchronisation automatique des fichiers est autorisée, cela peut engendrer des frais d'itinérance.
 
-Pour savoir comment inscrire votre appareil, consultez [Inscrire un appareil iOS dans Intune](enroll-your-device-in-intune-ios.md) ou [Inscrire votre appareil Mac OS X dans Intune](enroll-your-device-in-intune-mac-os-x.md).
-
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-### Voir aussi
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
