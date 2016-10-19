@@ -4,7 +4,7 @@ description: "Vous pouvez utiliser des stratégies de gestion des applications m
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ Les stratégies de gestion des applications mobiles prennent en charge :
 
 -   Les appareils qui exécutent Android 4 et ultérieur
 
--   Les appareils qui exécutent iOS 7 et ultérieur
+-   Les appareils qui exécutent iOS 8.0 et versions ultérieures
 
 > [!TIP]
 > Les stratégies de gestion des applications mobiles prennent en charge les appareils inscrits avec Intune.
@@ -110,9 +110,9 @@ Une fois que vous avez vérifié que l’application a été chargée correcteme
 
 2.  Configurez et déployez l’une des stratégies **Logiciel** suivantes, selon le type d’appareil pour lequel vous souhaitez configurer des applications :
 
-    -   **Stratégie de gestion des applications mobiles (Android 4 et versions ultérieures)**
+    -   **Stratégie de gestion des applications mobiles (Android 4 et versions ultérieures)**
 
-    -   **Stratégie de gestion des applications mobiles (iOS 7 et versions ultérieures)**
+    -   **Stratégie de gestion des applications mobiles (iOS 8.0 et ultérieur)**
 
     Vous pouvez utiliser les paramètres recommandés ou personnaliser les paramètres. Pour plus d’informations, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -134,7 +134,7 @@ Une fois que vous avez vérifié que l’application a été chargée correcteme
     |**Exiger la conformité à la stratégie d'entreprise pour l'accès**|Ce paramètre autorise l’utilisation de l’application uniquement si l’appareil n’est pas jailbreaké ou rooté.|
     |**Revérifier les exigences d'accès après (minutes)**|Dans le champ **Délai** , indiquez le délai au bout duquel les conditions d’accès à l’application sont revérifiées une fois l’application ouverte.|
     |**Période de grâce hors connexion**|Si l'appareil est hors connexion, spécifiez le délai au bout duquel les conditions d'accès pour l'application sont revérifiées.|
-    |**Chiffrer les données de l'application**|Ce paramètre spécifie que toutes les données associées à cette application seront chiffrées. Cela inclut les données stockées en externe, comme par exemple les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil que fournit le système d’exploitation. Cette option est activée via une stratégie de code confidentiel d’appareil que définit l’administrateur informatique. Quand un code confidentiel est exigé, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules qu’utilise iOS 7 sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, Microsoft fournit le chiffrement. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier.  Le contenu sur le stockage de l'appareil est toujours chiffré. La méthode de chiffrement n'est pas certifiée FIPS 140-2.|
+    |**Chiffrer les données de l'application**|Ce paramètre spécifie que toutes les données associées à cette application seront chiffrées. Cela inclut les données stockées en externe, comme par exemple les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil que fournit le système d’exploitation. Cette option est activée via une stratégie de code confidentiel d’appareil que définit l’administrateur informatique. Quand un code confidentiel est exigé, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules qu’utilise iOS sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, Microsoft fournit le chiffrement. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier.  Le contenu sur le stockage de l'appareil est toujours chiffré. La méthode de chiffrement n'est pas certifiée FIPS 140-2.|
     |**Bloquer la capture d'écran** (appareils Android uniquement)|Ce paramètre spécifie que les fonctionnalités de capture d’écran de l’appareil sont bloquées quand une personne utilise cette application.|
     
 4. Quand vous avez terminé, choisissez **Enregistrer la stratégie**.
@@ -147,8 +147,6 @@ Veillez à sélectionner la stratégie de gestion des applications mobiles dans 
 Pour plus d’informations, consultez [Déployer des applications dans Microsoft Intune](deploy-apps.md).
 
 > [!IMPORTANT]
-> Pour les appareils qui exécutent des systèmes d'exploitation antérieurs à iOS 7.1, les stratégies associées ne sont pas supprimées lors de la désinstallation de l'application.
->
 > Si l’appareil est désinscrit d’Intune, les stratégies ne sont pas supprimées des applications. Les applications pour lesquelles des stratégies étaient appliquées conservent les paramètres de stratégie après la désinstallation et la réinstallation de l’application.
 
 ### Que faire quand une application est déjà déployée sur des appareils
@@ -195,6 +193,6 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

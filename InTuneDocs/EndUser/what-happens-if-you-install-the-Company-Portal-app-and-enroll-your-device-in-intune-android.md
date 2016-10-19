@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -35,17 +35,17 @@ Après avoir installé l’application Portail d’entreprise et inscrit votre a
 
 Quand vous inscrivez votre appareil Android, vous autorisez votre administrateur informatique à accéder à l’appareil. Ils peuvent effectuer les opérations suivantes :
 
--   Réinitialiser votre appareil aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé ;
+-   Réinitialiser votre appareil aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé.
 
--   Supprimer toutes les données relatives à l'entreprise. Vos données et paramètres personnels ne sont pas supprimés.
+-   Supprimer toutes les données relatives à l’entreprise. Vos données et paramètres personnels ne sont pas supprimés.
 
--   Vous forcer à avoir un mot de passe ou un code PIN sur l'appareil, ce qui peut le bloquer, ou le réinitialiser selon les paramètres par défaut du fabricant, ce qui peut entraîner la suppression des données en cas de saisies multiples de mots de passe incorrects.
+-   Définir les exigences pour votre appareil, comme vous obliger à avoir un mot de passe ou un code PIN sur l’appareil pour protéger les données d’entreprise. Votre administrateur informatique peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’appareil si vous dépassez le nombre maximal autorisé.
 
 -   Vous êtes obligé d'accepter les conditions générales.
 
--   Activer ou désactiver l'appareil photo sur votre appareil.
+-   Désactiver l’appareil photo (uniquement sur les appareils Samsung Knox, pas sur les appareils Nexus) pour vous empêcher de prendre des photos de données professionnelles sensibles qui ne doivent pas être partagées.
 
--   Forcer toutes les données, y compris les données personnelles et d'entreprise sur l'appareil à être cryptées. Cela permet de protéger les données si l'appareil est perdu ou volé.
+-   Imposer le chiffrement de toutes les données sur l’appareil pour mieux protéger les données si l’appareil est perdu ou volé.
 
 -   Une fois votre appareil ajouté au portail d’entreprise, voici ce qu’il va faire environ toutes les 8 heures :
 
@@ -58,11 +58,8 @@ Quand vous inscrivez votre appareil Android, vous autorisez votre administrateur
 Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
 
 
-### Voir aussi
-[Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

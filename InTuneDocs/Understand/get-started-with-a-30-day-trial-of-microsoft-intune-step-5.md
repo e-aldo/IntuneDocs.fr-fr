@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +49,10 @@ Installez l’application **Portail d’entreprise Intune** de Microsoft Corpora
 ### Windows Phone 8.1
 Les utilisateurs installent l’application **Portail d’entreprise** de Microsoft Corporation disponible dans le Windows Phone Store et se connectent avec les informations d’identification d’utilisateur Intune ajoutées ci-dessus.  Affichez **Appareils inscrits** pour ajouter votre appareil.
 
- ### Windows Phone 8.0
- Les utilisateurs cliquent sur **paramètres système** &gt; **applications de l’entreprise**, puis se connectent avec les informations d’identification d’utilisateur Intune ajoutées ci-dessus. L'application Portail d'entreprise est déployée sur votre téléphone.
-
-Si vous êtes invité à entrer une **Adresse du serveur**, tapez « manage.microsoft.com ».
-
-
 ## Installer l’application précédemment déployée
 Ouvrez le portail d’entreprise sur l’appareil mobile, choisissez **Applications**, puis installez **Microsoft Skype**.
 
-Pour en savoir plus sur la gestion des appareils mobiles à l’aide d’Intune, consultez [Se préparer à inscrire des appareils dans Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Pour en savoir plus sur la gestion des appareils mobiles à l’aide d’Intune, consultez [Se préparer à inscrire des appareils dans Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment).
 
 ### Étapes suivantes
 Félicitations ! Vous venez d’effectuer l’étape 5 de la procédure pas à pas de la *version d’évaluation de Microsoft Intune*.
@@ -69,6 +63,6 @@ Félicitations ! Vous venez d’effectuer l’étape 5 de la procédure pas à
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
