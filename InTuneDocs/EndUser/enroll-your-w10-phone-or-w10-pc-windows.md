@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb950108f3232af8049e90af977b0f3f9f2b3576
+ms.sourcegitcommit: 9e0321b23bbbaaa16c28c23e56b5fbcaee0d3c24
+ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 
 
 ---
@@ -43,7 +43,7 @@ Pour inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop
 
 ## Étapes à suivre si vous voyez Accès scolaire ou professionnel
 
-1.  Appuyez sur **Accès scolaire ou professionnel**.
+1.  Cliquez sur **Accès scolaire ou professionnel**, puis cliquez sur **Connecter**.
 
     ![Appuyer sur Accès au compte professionnel ou scolaire](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
@@ -106,6 +106,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

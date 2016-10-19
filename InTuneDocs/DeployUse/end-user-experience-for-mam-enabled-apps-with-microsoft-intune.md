@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
-ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Sur un appareil Android, un message de blocage peut s’afficher avec des instru
 
 ![Capture d’écran du message d’erreur et des instructions pour supprimer le compte](../media/AppManagement/Android_SwitchUser.png)
 
-##  Affichage de fichiers multimédias avec l’application de partage Rights Management
-Pour afficher les fichiers image, AV et PDF de la société sur des appareils Android, utilisez l’[application de partage Microsoft Rights Management (RMS)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+##  Affichage des fichiers multimédias avec l’application Azure Information Protection (anciennement Rights Management)
+Pour afficher les fichiers image, AV et PDF d’entreprise sur des appareils Android, utilisez l’[application Azure Information Protection](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
-Vous pouvez télécharger cette application à partir de la boutique Google Play.  Une fois l’application installée sur votre appareil, lancez-la et authentifiez-vous avec vos informations d’identification professionnelles. Vous devriez maintenant pouvoir afficher les fichiers protégés et non protégés à partir d’autres applications gérées par une stratégie.
+Vous pouvez télécharger cette application à partir de la boutique Google Play.  
 
 Les types de fichiers suivants sont pris en charge :
 
 * **Audio :** AAC-LC, HE-AACv1 (AAC+), HE-AACv2 (AAC+ amélioré), AAC-ELD (AAC avec délai court amélioré), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
 * **Vidéo :** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Image :** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
-* PDF, PPDF
+* **PDF, PPDF**
 
 ------------
 |**pfile**|**texte**|
 |----|----|
-|Pfile est un format « wrapper » générique pour les fichiers protégés qui encapsulent le contenu chiffré et les licences RMS, et qui permet de protéger n’importe quel type de fichier.|Les fichiers texte, notamment XML, CSV, etc., peuvent être ouverts pour être affichés dans l’application même quand ils sont protégés. Types de fichiers : txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile est un format « wrapper » générique pour les fichiers protégés qui encapsulent du contenu chiffré ainsi que des licences Azure Information Protection, et qui permet de protéger n’importe quel type de fichier.|Les fichiers texte, notamment XML, CSV, etc., peuvent être ouverts pour être affichés dans l’application même quand ils sont protégés. Types de fichiers : txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-**Appareils Android non inscrits dans Intune**
 
-Avant de pouvoir utiliser l’application de partage RMS pour afficher les fichiers à partir d’autres applications gérées par Intune, lancez l’application RMS et authentifiez-vous avec votre compte professionnel.  Lorsque vous vous connectez, vous voyez le message suivant **seulement si vous n’avez pas de licence RMS** :
-
-**Authentification réussie – Vous pouvez désormais afficher les fichiers d’entreprise, mais votre organisation n’est pas configurée pour vous permettre de protéger des fichiers. Contactez votre administrateur pour plus d’informations.**
-
-Cela ne vous empêche pas d’utiliser l’application de partage RMS pour afficher les fichiers de l’entreprise. Vous pouvez encore ouvrir et afficher les fichiers de l’entreprise à partir d’autres applications gérées par Intune, et les stratégies GAM s’appliquent encore.  Ce message stipule que vous ne serez pas en mesure d’ajouter les fonctionnalités de protection supplémentaires fournies par l’application de partage RMS.  Vous devez disposer d’une licence RMS pour ajouter une protection à vos fichiers. Pour en savoir plus sur les fonctionnalités de protection de fichiers RMS, consultez [Protéger un fichier sur un appareil](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) et [Protéger un fichier que vous partagez par courrier électronique](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Voir aussi
@@ -171,6 +165,6 @@ Cela ne vous empêche pas d’utiliser l’application de partage RMS pour affic
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -4,7 +4,7 @@ description: "Intune fournit un éventail de paramètres généraux intégrés q
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/30/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
-ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 3c9c75e5e9e19574a5b4525688103dc95e3d6b9b
 
 
 ---
@@ -39,75 +39,75 @@ Utilisez la **stratégie de configuration générale Windows Phone (Windows Phon
 
 ### Paramètres de mot de passe
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Spécifie si les utilisateurs doivent saisir un mot de passe pour accéder à leurs appareils.|Oui|Oui|
-|**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple alphanumérique ou numérique uniquement.|Oui|Oui|
-|**Type de mot de passe requis - Nombre minimum de jeux de caractères**|Spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Toutefois, pour les appareils iOS, ce paramètre spécifie le nombre de symboles devant être inclus dans le mot de passe.|Oui|Oui|
-|**Longueur minimale du mot de passe**|Spécifie le nombre minimal de caractères devant figurer dans le mot de passe.|Oui|Oui|
-|**Autoriser les mots de passe simples**|Indique que les mots de passe simples tels que « 0000 » et « 1234 » peuvent être utilisés.|Oui|Oui|
-|**Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil**|Spécifie le nombre de saisies possibles d’un mot de passe incorrect avant que l’appareil soit réinitialisé.|Oui|Oui|
-|**Minutes d’inactivité avant arrêt de l’écran.**|Indique la durée pendant laquelle l’appareil doit rester inactif avant que l’écran se verrouille automatiquement.|Oui|Oui|
+|Nom du paramètre|Détails|
+|----------------|------|
+|**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Spécifie si les utilisateurs doivent saisir un mot de passe pour accéder à leurs appareils.|
+|**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple alphanumérique ou numérique uniquement.|
+|**Type de mot de passe requis - Nombre minimum de jeux de caractères**|Spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Toutefois, pour les appareils iOS, ce paramètre spécifie le nombre de symboles devant être inclus dans le mot de passe.|
+|**Longueur minimale du mot de passe**|Spécifie le nombre minimal de caractères devant figurer dans le mot de passe.|
+|**Autoriser les mots de passe simples**|Indique que les mots de passe simples tels que « 0000 » et « 1234 » peuvent être utilisés.|
+|**Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil**|Spécifie le nombre de saisies possibles d’un mot de passe incorrect avant que l’appareil soit réinitialisé.|
+|**Minutes d’inactivité avant arrêt de l’écran.**|Indique la durée pendant laquelle l’appareil doit rester inactif avant que l’écran se verrouille automatiquement.|
 |**Expiration du mot de passe (jours)**|Spécifie le nombre de jours avant de devoir modifier le mot de passe de l’appareil.|Oui|Oui|
-|**Mémoriser l'historique des mots de passe**|Indique si les mots de passe précédemment utilisés sont mémorisés pour empêcher l'utilisateur de les réutiliser.|Oui|Oui|
-|**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe précédemment utilisés mémorisés.|Oui|Oui|
+|**Mémoriser l'historique des mots de passe**|Indique si les mots de passe précédemment utilisés sont mémorisés pour empêcher l'utilisateur de les réutiliser.|
+|**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe précédemment utilisés mémorisés.|
 
 ### Paramètres de chiffrement
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|------|-----------------------------|
-|**Exiger le chiffrement sur l'appareil mobile**|Exige que les données sur les appareils mobiles pris en charge soient chiffrées.<br>Pour les appareils Windows Phone 8, affectez la valeur **Oui**.|Oui|Oui|
+|Nom du paramètre|Détails|
+|----------------|------|
+|**Exiger le chiffrement sur l'appareil mobile**|Exige que les données sur les appareils mobiles pris en charge soient chiffrées.|
 
 ### Paramètres système
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Autoriser la capture d'écran**|Permet à l'utilisateur de capturer le contenu de l'écran en tant qu'image.|Non|Oui|
-|**Autoriser la soumission des données de diagnostic**|Autorise l’appareil à soumettre des informations de diagnostic à Microsoft.|Non|Oui|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Autoriser la capture d'écran**|Permet à l'utilisateur de capturer le contenu de l'écran en tant qu'image.|
+|**Autoriser la soumission des données de diagnostic**|Autorise l’appareil à soumettre des informations de diagnostic à Microsoft.|
 
 ### Paramètres du cloud - comptes et synchronisation
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Autoriser le compte Microsoft**|Autorise la liaison d’un compte Microsoft à l’appareil.|Non|Oui|
+|Nom du paramètre|Détails|
+|----------------|------|
+|**Autoriser le compte Microsoft**|Autorise la liaison d’un compte Microsoft à l’appareil.|
 
 ### Paramètres de messagerie
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Autoriser les comptes de messagerie personnalisés**|Autorise l’appareil à se connecter à des comptes de messagerie non Microsoft.|Non|Oui|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Autoriser les comptes de messagerie personnalisés**|Autorise l’appareil à se connecter à des comptes de messagerie non Microsoft.|
 
 ### Paramètres de l'application - navigateur
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Autoriser le navigateur web**|Autorise ou bloque le navigateur web intégré sur les appareils.|Non|Oui|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Autoriser le navigateur web**|Autorise ou bloque le navigateur web intégré sur les appareils.|
 
 ### Paramètres de l'application - applications
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Autoriser la boutique d'applications**|Permet aux utilisateurs de se connecter à l'App Store depuis l'appareil.|Non|Oui|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Autoriser la boutique d'applications**|Permet aux utilisateurs de se connecter à l'App Store depuis l'appareil.|
 
 ### Paramètres des fonctionnalités de l'appareil - matériel
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|----|--------------------------------|
-|**Autoriser l'appareil photo**|Autorise ou bloque l’appareil photo de l’appareil.|Non|Oui|
-|**Autoriser le stockage amovible**|Autorise l’appareil à utiliser du stockage amovible, tel qu’une carte SD.|Oui|Oui|
-|**Autoriser le Wi-Fi**|Active ou désactive la fonctionnalité Wi-Fi de l'appareil.|Non|Oui|
-|**Autoriser la connexion Wi-Fi**|Autorise l’utilisation de la connexion Wi-Fi sur l’appareil.|Non|Oui
-|**Autoriser la connexion automatique aux points d'accès Wi-Fi gratuits**|Autorise l’appareil à se connecter automatiquement aux points d’accès Wi-Fi gratuits et à accepter automatiquement les termes et conditions de la connexion.|Non|Oui|
-|**Autoriser l'indication des points d'accès Wi-Fi**|Envoie des informations concernant les connexions Wi-Fi pour aider l’utilisateur à détecter les connexions proches.|Non|Oui|
-|**Autoriser la géolocalisation**|Permet à l’appareil d’utiliser les informations d’emplacement.|Non|Oui|
-|**Autoriser NFC**|Autorise les opérations qui utilisent la communication en champ proche.|Non|Oui|
-|**Autoriser Bluetooth**|Active ou désactive la fonctionnalité Bluetooth de l’appareil.|Non|Oui|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Autoriser l'appareil photo**|Autorise ou bloque l’appareil photo de l’appareil.|
+|**Autoriser le stockage amovible**|Autorise l’appareil à utiliser du stockage amovible, tel qu’une carte SD.|
+|**Autoriser le Wi-Fi**|Active ou désactive la fonctionnalité Wi-Fi de l'appareil.|
+|**Autoriser la connexion Wi-Fi**|Autorise l’utilisation de la connexion Wi-Fi sur l’appareil.|
+|**Autoriser la connexion automatique aux points d'accès Wi-Fi gratuits**|Autorise l’appareil à se connecter automatiquement aux points d’accès Wi-Fi gratuits et à accepter automatiquement les termes et conditions de la connexion.|
+|**Autoriser l'indication des points d'accès Wi-Fi**|Envoie des informations concernant les connexions Wi-Fi pour aider l’utilisateur à détecter les connexions proches.|
+|**Autoriser la géolocalisation**|Permet à l’appareil d’utiliser les informations d’emplacement.|
+|**Autoriser NFC**|Autorise les opérations qui utilisent la communication en champ proche.|
+|**Autoriser Bluetooth**|Active ou désactive la fonctionnalité Bluetooth de l’appareil.|
 
 ### Paramètres des fonctionnalités de l'appareil - fonctionnalités
 
-|Nom du paramètre|Détails|Windows Phone 8|Windows Phone 8.1|
-|----------------|----|------|-------------------------------|
-|**Autoriser la fonction copier-coller**|Autorise la fonction copier-coller sur les appareils.|Non|Oui|
+|Nom du paramètre|Détails|
+|----------------|----|
+|**Autoriser la fonction copier-coller**|Autorise la fonction copier-coller sur les appareils.|
 
 ### Paramètres des applications autorisées et bloquées
 Dans la **Liste des applications autorisées et bloquées**, spécifiez une liste des applications que vous souhaitez autoriser ou bloquer en utilisant les informations suivantes :
@@ -171,6 +171,6 @@ Dans la boîte de dialogue **Ajouter ou modifier un paramètre OMA-URI**, spéci
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

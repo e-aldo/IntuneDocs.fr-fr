@@ -4,7 +4,7 @@ description: "Utilisez les paramètres de stratégie de cette rubrique pour conf
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ce69e8a22f1b25dac7060ff575bbd97934eff91
-ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
+ms.sourcegitcommit: b8522406a3c73746b09616c3ec917464cf751312
+ms.openlocfilehash: 6e482beb5e2edce648ecb6f1821baa6214fa0f2f
 
 
 ---
@@ -53,7 +53,7 @@ Pour chaque paramètre OMA-URI à ajouter, entrez les informations suivantes. Ut
 - **Valeur** : Spécifiez la valeur à associer à l’identificateur OMA-URI que vous avez entré.
 
 ### Exemple
-Dans la capture d’écran ci-dessous, le paramètre **Conectivity/AllowVPNOverCellular** a été activé. Il permet à un appareil Windows 10 d’ouvrir une connexion VPN sur un réseau de téléphonie mobile.
+Dans la capture d’écran ci-dessous, le paramètre **Connectivity/AllowVPNOverCellular** a été activé. Il permet à un appareil Windows 10 d’ouvrir une connexion VPN sur un réseau de téléphonie mobile.
 
 > ![Exemple de stratégie personnalisée contenant des paramètres VPN](./media/custom-policy-example.png)
 
@@ -326,6 +326,6 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 
