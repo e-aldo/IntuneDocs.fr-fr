@@ -4,7 +4,7 @@ description: "Créez des stratégies qui contrôlent les paramètres et fonction
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
-ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -39,7 +39,7 @@ Utilisez la **stratégie de configuration générale iOS** de Microsoft Intune p
 Si le paramètre que vous recherchez n’apparaît pas dans cette rubrique, vous pouvez peut-être le créer à l’aide d’une stratégie personnalisée iOS qui vous permet d’importer les paramètres que vous avez créés à l’aide de l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Pour en savoir plus, consultez la section « Paramètres de la stratégie personnalisée » de la présente rubrique.
 
 ### Paramètres de sécurité
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -58,7 +58,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 <sup>1</sup> Pour les appareils iOS, quand vous configurez les paramètres **Minutes d’inactivité avant arrêt de l’écran** et **Minutes d’inactivité avant demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
 
 ### Paramètres système
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -71,7 +71,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Autoriser le livret lors du verrouillage**|Autoriser l’utilisateur à accéder à l’application de livret lorsque l’appareil est verrouillé.|
 
 ### Paramètres du cloud pour les documents et les données
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -85,7 +85,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Autoriser la photothèque iCloud**|Autorise l’utilisateur à stocker des photos dans iCloud. Si désactivé, les photos déjà stockées dans iCloud sont supprimées.|
 
 ### Paramètres d’application du navigateur
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -97,7 +97,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Autoriser l'avertissement de fraudes**|Autoriser l’affichage d’avertissements antifraude dans le navigateur.|
 
 ### Paramètres d’application relatifs aux applications
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -111,7 +111,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 
 
 ### Paramètres d’application relatifs aux jeux
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -119,7 +119,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Autoriser les jeux multijoueur**|Autoriser l’utilisateur à jouer à des jeux multijoueur sur l’appareil.|
 
 ### Paramètres d’application relatifs au contenu multimédia
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -129,7 +129,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 
 
 ### Paramètres des fonctionnalités de l’appareil pour le matériel
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -138,7 +138,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Exiger un mot de passe associé pour les demandes AirPlay sortantes**|Nécessite un mot de passe de jumelage lorsque l’utilisateur a recours à AirPlay pour diffuser le contenu vers d’autres appareils Apple.|
 
 ### Paramètres des fonctionnalités de l’appareil pour les appareils cellulaires
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -147,7 +147,7 @@ Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
 |**Autoriser l'extraction en arrière-plan globale pendant l'itinérance**|Autoriser l’appareil à récupérer des données comme les courriers électroniques lorsqu’il est en mode itinérance sur un réseau cellulaire.|
 
 ### Paramètres des fonctionnalités de l’appareil pour les fonctions
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|-------|
@@ -196,7 +196,7 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 > [!NOTE]
 > Les remarques suivantes s'appliquent aux paramètres du mode plein écran pour les appareils iOS :
 >
-> -   Avant de pouvoir configurer un appareil iOS pour le mode plein écran, vous devez utiliser l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou le Gestionnaire d’inscription d’appareil pour mettre l’appareil en mode supervisé. Pour en savoir plus sur l’outil Apple Configurator, consultez votre documentation Apple.
+> -   Avant de pouvoir configurer un appareil iOS pour le mode plein écran, vous devez utiliser l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou le [Programme d’inscription des appareils Apple](ios-device-enrollment-program-in-microsoft-intune) pour mettre l’appareil en mode supervisé. Pour en savoir plus sur l’outil Apple Configurator, consultez votre documentation Apple.
 > -   Si l’application iOS que vous spécifiez est installée après le déploiement de la stratégie de configuration, l’appareil ne bascule en mode plein écran qu’après son redémarrage.
 
 ### Informations de référence pour les applications conformes et non conformes
@@ -222,14 +222,14 @@ Pour spécifier une URL d'application dans la liste des applications conformes e
 > Vous pouvez également utiliser le logiciel iTunes pour rechercher l'application, puis la commande **Copier le lien** pour obtenir l'URL de l'application.
 
 ### Paramètres d’inscription
-Tous les paramètres s’appliquent à iOS 7.1 et aux versions ultérieures.
+Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
 |**Autoriser le verrou d'activation quand l'appareil est en mode supervisé**|Active le verrou d’activation sur des appareils iOS supervisés.|
 
 ### Paramètres du mode supervisé
-Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS 7.1 et versions ultérieures en mode supervisé.
+Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS 8.0 et ultérieur en mode supervisé.
 
 ### Paramètres du mode supervisé pour les restrictions de l’appareil
 
@@ -265,9 +265,9 @@ Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
-|**Autoriser le changement des paramètres d’approbation des applications d’entreprise**||
-|**Autorise l’installation d’applications uniquement à l’aide de la configuration Apple et d’iTunes**||
-|**Autoriser les téléchargements d’applications automatiques**||
+|**Autoriser le changement des paramètres d’approbation des applications d’entreprise**|Permet aux utilisateurs de modifier les paramètres d’approbation pour les applications d’entreprise.|
+|**Autoriser l’installation d’applications uniquement à l’aide de la configuration Apple et d’iTunes**|Active ou désactive l’App Store de l’écran d’accueil de l’appareil. Les utilisateurs peuvent toujours utiliser iTunes ou l’outil Apple Configurator pour installer et mettre à jour les applications.|
+|**Autoriser les téléchargements d’applications automatiques**|Autorise les applications achetées sur d’autres appareils à être téléchargées automatiquement sur cet appareil. Ce paramètre n’a aucune incidence sur les mises à jour des applications.|
 |**Autoriser les modifications sur les paramètres de l’application Localiser mes amis**|Autorise l’utilisateur à modifier les paramètres de l’application Localiser mes amis.|
 |**Autoriser l’accès à l’IBooks Store**|Autorise l’utilisateur à parcourir et à acheter des livres depuis l’IBooks Store.|
 |**Autoriser l’utilisation de l’application Messages sur l’appareil**|Autorise l’utilisation de l’application Messages pour envoyer des SMS.|
@@ -382,6 +382,6 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
