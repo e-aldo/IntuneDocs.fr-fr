@@ -4,7 +4,7 @@ description: "Utilisez des profils Wi-Fi pour permettre aux utilisateurs de se c
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +29,7 @@ Par exemple, vous installez un nouveau réseau Wi-Fi nommé **Contoso Wi-Fi** et
 
 1.   Créez un profil Wi-Fi contenant les paramètres nécessaires à la connexion au réseau sans fil **Wi-Fi Contoso**.
 
-2. Déployez le profil sur le groupe d'utilisateurs avec des appareils iOS.
+2.   Déployez le profil sur le groupe d'utilisateurs avec des appareils iOS.
 
 3.   Les utilisateurs recherchent le nouveau réseau **Wi-Fi Contoso** dans la liste des réseaux sans fil et peuvent facilement s’y connecter.
 
@@ -39,6 +39,8 @@ Par exemple, vous installez un nouveau réseau Wi-Fi nommé **Contoso Wi-Fi** et
 Vous pouvez déployer les profils Wi-Fi sur les plateformes suivantes :
 
 -   Android 4.0 et versions ultérieures
+
+-   Android for Work   
 
 -   iOS 8.0 et versions ultérieures
 
@@ -52,10 +54,13 @@ Pour les appareils qui exécutent un appareil de bureau ou mobile Windows 8.1 o
 
     -   Profil Wi-Fi (Android 4 et versions ultérieures)
 
-    -   Profil Wi-Fi (iOS 8.0 et versions ultérieures)
+    -   Profil Wi-Fi (Android for Work)
+
+    -   Profil Wi-Fi (iOS 8.0 et ultérieur)
 
     -   Profil VPN (Mac OS X 10.9 et versions ultérieures)
-
+    
+    
     Il n'existe aucun paramètre recommandé pour ce type de stratégie. Vous devez créer une stratégie personnalisée.
 
 3.  Fournissez un nom et une description pour le profil.
@@ -128,7 +133,7 @@ Utilisez l’option **Stratégie d’importation Wi-Fi Windows** pour importer u
 
 Un profil étant un type de stratégie, utilisez alors l’espace de travail Stratégie pour le déployer.
 
-1.  Dans l’espace de travail **Stratégie** , sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
+1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
 
 2.  Dans la boîte de dialogue **Gérer le déploiement** :
 
@@ -173,6 +178,6 @@ Découvrez comment créer un profil Wi-Fi avec une clé prépartagée dans [Prof
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

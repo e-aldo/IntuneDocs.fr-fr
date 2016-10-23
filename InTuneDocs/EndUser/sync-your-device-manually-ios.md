@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: b178444418f783d4678c39c8c4c2156ed197de18
+ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
+ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
 
 
 ---
@@ -23,27 +23,24 @@ ms.openlocfilehash: b178444418f783d4678c39c8c4c2156ed197de18
 
 # Synchroniser votre appareil iOS manuellement
 
-Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil iOS, ce qui peut vous aider à accélérer l’installation. La fonctionnalité de synchronisation s’applique uniquement à iOS, et pas à Mac OS X.
+Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil iOS. La synchronisation manuelle peut vous aider à accélérer l’installation. La fonctionnalité de synchronisation s’applique uniquement à iOS, et pas à Mac OS X.
 
 1. Ouvrez l’application Portail d’entreprise iOS.
 
-2. Dans la section **Mes appareils**, cliquez sur l’appareil que vous utilisez actuellement. Il s’agit de la vignette d’appareil la plus à gauche qui affiche la case à cocher.
+2. Dans la section **Mes appareils**, choisissez l’appareil que vous utilisez actuellement. Il s’agit de la vignette d’appareil la plus à gauche qui affiche la case à cocher.
 
-    ![ios-sync-1-comp-portal-apps](./media/ios-sync-1-comp-portal-apps.png)
+    ![Écran de l’appareil avec la section Mes appareils](./media/ios-sync-1-comp-portal-apps.png)
 
-3.  Cliquez sur le bouton **Synchroniser** affiché en bas à droite de l’écran.
+3.  Choisissez le bouton **Synchroniser** en bas à droite de l’écran.
 
-    ![ios-sync-2-sync-button](./media/ios-sync-2-sync-button.png)
+    ![Détails de l’appareil avec le bouton Synchroniser](./media/ios-sync-2-sync-button.png)
 
 Un cercle en rotation s’affiche sur l’écran jusqu’à ce que la synchronisation soit terminée.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

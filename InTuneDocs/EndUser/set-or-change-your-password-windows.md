@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 5/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 74446336b98fb0c88617ac397bdafc022d39f6f6
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ Votre administrateur informatique peut définir plusieurs exigences de mot de pa
 
 Si vous rencontrez des difficultés à définir un mot de passe qui répond à toutes les exigences de mot de passe, demandez de l’aide à votre administrateur informatique.
 
-## Pour modifier votre mot de passe sur un appareil Windows Phone 8 ou 8.1 :
+## Pour modifier votre mot de passe sur Windows Phone 8.1 :
 
 1. Dans l’écran **d’accueil**, appuyez sur **Paramètres**, puis sélectionnez **écran de verrouillage**.
 2. Faites défiler l’affichage jusqu’à **Mot de passe** et appuyez sur **Modifier le mot de passe**.
@@ -34,7 +34,7 @@ Si vous rencontrez des difficultés à définir un mot de passe qui répond à t
 4. Entrez votre nouveau mot de passe dans le champ **Nouveau mot de passe**, puis entrez de nouveau le nouveau mot de passe dans le champ **Confirmer le mot de passe**.
 4. Appuyez sur **Terminé**.
 
-## Pour définir votre mot de passe sur un appareil Windows Phone 8 ou 8.1 :
+## Pour définir votre mot de passe sur Windows Phone 8.1 :
 
 1. Dans l’écran **d’accueil**, appuyez sur **Paramètres**, puis sélectionnez **écran de verrouillage**.
 2. Faites défiler l’affichage jusqu’à **Mot de passe** et faites glisser la barre **Mot de passe** sur **On**.
@@ -43,11 +43,10 @@ Si vous rencontrez des difficultés à définir un mot de passe qui répond à t
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 

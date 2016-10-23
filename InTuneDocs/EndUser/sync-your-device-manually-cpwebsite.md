@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
+ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
+ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 # Synchroniser votre appareil manuellement à l’aide du site web Portail d’entreprise
 
-Si l’installation de votre application ou toute autre tâche prend trop de temps, vous pouvez essayer de synchroniser votre appareil manuellement, ce qui peut vous aider à accélérer l’installation ou la tâche. Suivez les instructions ci-dessous correspondant à l’appareil que vous utilisez. 
+Si l’installation de votre application ou toute autre tâche prend trop de temps, vous pouvez essayer de synchroniser votre appareil manuellement. La synchronisation manuelle peut vous aider à accélérer l’installation ou la tâche.
 
-La fonctionnalité de synchronisation fonctionne uniquement pour les versions répertoriées ci-dessous.
+La fonctionnalité de synchronisation fonctionne uniquement pour les versions ci-après. Suivez les instructions correspondant à l’appareil que vous utilisez.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -34,6 +34,6 @@ La fonctionnalité de synchronisation fonctionne uniquement pour les versions r�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

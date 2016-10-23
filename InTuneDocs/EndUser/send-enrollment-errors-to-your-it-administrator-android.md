@@ -1,6 +1,6 @@
 ---
 title: "Envoyer les erreurs d’inscription à votre administrateur informatique | Microsoft Intune"
-description: 
+description: "Envoyer les erreurs d’inscription à votre administrateur"
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
+ms.sourcegitcommit: c10f9548c00972a018e742601586f6e03e1a05cc
+ms.openlocfilehash: 93f4d2c93f17146a704031dae0d35cfde077b384
 
 
 ---
@@ -23,18 +23,17 @@ ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
 
 # Envoyer les erreurs d’inscription à votre administrateur informatique
 
-Si vous recevez une erreur pendant l’inscription de votre appareil Android dans Intune, vous pouvez réessayer en appuyant sur **Réessayer** ou envoyer les informations d’erreur à votre administrateur informatique dans un e-mail en tapant **Envoyer les informations**.
+Si vous recevez une erreur pendant l’inscription de votre appareil Android dans Intune, vous pouvez essayer de renouveler l’inscription en appuyant sur **Réessayer**. Vous pouvez également envoyer les informations de l’erreur à votre administrateur informatique dans un e-mail en appuyant sur **Envoyer des informations**.
 
-Un e-mail adressé à votre administrateur informatique est automatiquement créé. Celui-ci contient les journaux dont il a besoin pour résoudre les problèmes liés à votre appareil.
+Le fait d’appuyer sur **Envoyer des informations** crée automatiquement un e-mail adressé à votre administrateur informatique, qui contient les journaux dont ce dernier a besoin pour résoudre les problèmes liés à votre appareil.
 
-Il existe différentes façons d’envoyer des journaux de données de votre appareil à votre administrateur informatique pour obtenir de l’aide avec des erreurs :
+Il existe différentes façons d’envoyer des journaux de données de votre appareil à votre administrateur informatique pour obtenir de l’aide sur des erreurs :
 
 - [Utiliser un câble USB pour envoyer des journaux](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [Utiliser les e-mails pour envoyer des journaux](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 
 
 
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

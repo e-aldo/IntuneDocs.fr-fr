@@ -13,8 +13,8 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c334b96134040fd124c348c6f2a4b2e5c85886a
-ms.openlocfilehash: d56d9b62a7df3a17b38b7ac01881245c079dc6d4
+ms.sourcegitcommit: de65f43ac83b25fa2dd1dacd2a7807668c2b6e9a
+ms.openlocfilehash: fa3230e1faf24bdbbd7e84a211ca95c1fd0fadfd
 
 
 ---
@@ -63,7 +63,7 @@ Les étapes suivantes décrivent les tâches que vous devez effectuer pour termi
 
 ### Étape 2 : Configurer le connecteur Intune
 
-1.  Dans la console Lookout, accédez au module **Système**, choisissez l’onglet **Connecteurs**, puis sélectionnez **Intune**.
+1.  Dans la console Lookout, à partir du module **Système**, choisissez l’onglet **Connecteurs**, puis sélectionnez **Intune**.
 
   ![capture d’écran de la console Lookout montrant l’onglet Connecteurs ouvert et l’option Intune mise en surbrillance](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
@@ -77,6 +77,7 @@ Dans l’option **Gestion des inscriptions**, définissez un ensemble d’utilis
 Pour commencer à utiliser les groupes d’inscription, définissez d’abord un groupe de sécurité Azure AD pour un ensemble initial d’utilisateurs que vous souhaitez inscrire dans le service Lookout de protection des appareils contre les menaces. Après avoir créé le groupe dans Azure AD, dans la console Lookout, accédez à l’option **Gestion des inscriptions** et ajoutez le **nom complet** du groupe de sécurité Azure AD à inscrire.
 
 Quand un utilisateur est membre d’un groupe d’inscription, tous ses appareils qui sont identifiés et pris en charge dans Azure AD sont inscrits et activables dans le service Lookout de protection des appareils contre les menaces.  La première fois que l’utilisateur ouvre l’application Lookout for Work sur un appareil pris en charge, ce dernier est activé dans Lookout.
+
 ![capture d’écran de la page d’inscription dans le connecteur Intune](../media/mtp/lookout-mtp-enrollment.png)
 
 La bonne pratique consiste à utiliser la valeur par défaut (5 minutes) pour l’incrément de durée de recherche de nouveaux appareils.
@@ -97,11 +98,16 @@ Dans l’option **Gestion des erreurs**, entrez l’adresse e-mail à laquelle d
 
 ![capture d’écran de la page Gestion des erreurs dans le connecteur Intune](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
-### Étape 6 : Configurer les notifications par e-mail
+### Étape 6. Configurer les paramètres d’inscription
+Dans le module **Système**, dans la page **Connecteurs**, spécifiez le nombre de jours au terme desquels un appareil est considéré comme déconnecté.  Les appareils déconnectés sont considérés comme non conformes et ne peuvent pas accéder à vos applications d’entreprise en fonction des stratégies d’accès conditionnel Intune. Vous pouvez spécifier des valeurs comprises entre 1 et 90 jours.
+
+![](../media/mtp/lookout-console-enrollment-settings.png)
+
+### Étape 7 : Configurer les notifications par e-mail
 Si vous souhaitez recevoir des alertes sur les menaces par e-mail, connectez-vous à la [console Lookout](https://aad.lookout.com) avec le compte d’utilisateur qui doit recevoir les notifications. Sous l’onglet **Préférences** du module **Système**, définissez les notifications souhaitées sur **ACTIVÉ**. Enregistrez vos modifications.
 
 ![capture d’écran de la page des préférences pour le compte d’utilisateur connecté](../media/mtp/lookout-mtp-email-notifications.png) Si vous ne souhaitez plus recevoir de notifications par e-mail, définissez les notifications sur **DÉSACTIVÉ**, puis enregistrez vos modifications.
-### Étape 7 : Configurer la classification des menaces
+### Étape 8 : Configurer la classification des menaces
 Le service Lookout de protection des appareils contre les menaces classe les différents types de menaces mobiles. Les [classifications des menaces dans Lookout](http://personal.support.lookout.com/hc/en-us/articles/114094130693) ont des niveaux de risque par défaut qui leur sont associés. Ces niveaux peuvent être modifiés à tout moment en fonction des besoins de votre entreprise.
 
 ![capture d’écran de la page de stratégie montrant des menaces et des classifications](../media/mtp/lookout-mtp-threat-classification.png)
@@ -116,6 +122,6 @@ Une fois la configuration terminée, le service Lookout de protection des appare
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

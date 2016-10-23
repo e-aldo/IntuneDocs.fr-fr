@@ -1,6 +1,6 @@
 ---
 title: "Supprimer votre appareil du portail d’entreprise | Microsoft Intune"
-description: 
+description: "Supprimer un appareil du portail d’entreprise"
 keywords: 
 author: Staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
+ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
+ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
 
 
 ---
@@ -23,28 +23,26 @@ ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
 
 # Supprimer votre appareil du portail d’entreprise
 
-Si vous ne souhaitez plus que votre appareil soit géré par Intune et votre administrateur informatique, vous pouvez le supprimer du portail d’entreprise à l’aide du [site web du portail d’entreprise](http://portal.manage.microsoft.com). Le site web du portail d’entreprise est une page web que vous pouvez utiliser pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
+Si vous ne souhaitez plus que votre appareil soit géré par Intune et votre administrateur informatique, vous pouvez le supprimer du portail d’entreprise à l’aide du [site web du portail d’entreprise](http://portal.manage.microsoft.com). Le site web du portail d’entreprise est une page web qui vous permet de gérer les ordinateurs et appareils que vous avez inscrits dans Intune. Sur le site web du portail d’entreprise, vous pouvez effectuer la plupart des tâches disponibles dans votre application Portail d’entreprise.
 
 Si vous supprimez votre appareil, il ne sera plus répertorié dans le portail d’entreprise et vous risquez de perdre également l’accès aux données, aux applications et à la messagerie de l’entreprise ou de l’établissement scolaire.
 
 Pour supprimer votre appareil :
 
-1.  Ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com) et appuyez sur le nom de l’appareil que vous souhaitez modifier.
+1.  Ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com), puis appuyez sur le nom de l’appareil que vous voulez supprimer.
 
 2.  Appuyez sur **Supprimer**.
 
-    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![Supprimer l’option d’appareil sur le site web du portail d’entreprise](./media/iwp-screen-with-all-options.png)
 
-3. Lisez le message d’avertissement qui indique ce qui se produira si vous supprimez votre appareil, puis cliquez sur **Supprimer** pour supprimer votre appareil du portail d’entreprise.
+3. Lisez le message d’avertissement, puis appuyez sur **Supprimer** pour supprimer votre appareil du portail d’entreprise.
 
 Votre appareil a été supprimé.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir les coordonnées de votre administrateur, consultez le site web [Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

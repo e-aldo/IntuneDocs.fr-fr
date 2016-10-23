@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Compte de messagerie d’entreprise existant détecté
-Vous disposez déjà d'un compte de messagerie d'entreprise. Pour continuer à se connecter à votre adresse de messagerie d'entreprise, vous devez procéder comme suit pour activer votre administrateur informatique de configurer correctement et gérer votre compte :
+Vous disposez déjà d'un compte de messagerie d'entreprise. Pour continuer à vous connecter à votre adresse e-mail d’entreprise, procédez comme suit pour permettre à votre administrateur informatique de configurer et de gérer votre compte correctement :
 
 1.  Dans **paramètres** sur votre périphérique, supprimez la connexion que vous avez précédemment configuré pour votre adresse de messagerie d'entreprise.
 
@@ -35,6 +35,6 @@ Si les nouveaux paramètres de messagerie ne s’affichent pas au bout d’un ce
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

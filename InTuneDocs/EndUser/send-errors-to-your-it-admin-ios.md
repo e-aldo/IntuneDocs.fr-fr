@@ -1,6 +1,6 @@
 ---
 title: "Envoyer les erreurs à votre administrateur informatique | Microsoft Intune"
-description: 
+description: "Envoyer les erreurs à votre administrateur"
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 8890929dc1338946dbaa9a3df2aec99df22c1a82
+ms.sourcegitcommit: 881a2d90a863f5c7f3809f890bb82850b6145982
+ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 
 
 ---
@@ -29,12 +29,10 @@ Si vous obtenez des erreurs sur votre appareil iOS pendant que vous utilisez l�
 
 -   Dans l’écran **À propos de** de l’application Portail d’entreprise, appuyez sur **Envoyer un rapport de diagnostic**.
 
--   Sur l’application du portail d’entreprise, secouez votre appareil puis appuyez sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** &gt; **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
+-   Sur l’application du portail d’entreprise, secouez votre appareil, puis appuyez sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** &gt; **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

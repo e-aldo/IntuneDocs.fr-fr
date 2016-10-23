@@ -1,6 +1,6 @@
 ---
 title: "Envoyer les journaux de données de diagnostic à votre administrateur informatique par câble USB | Microsoft Intune"
-description: 
+description: "Envoyer les journaux de données par câble USB"
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: e88afa6d8cc2720a001e7ee138e169bd3f1c67fa
+ms.sourcegitcommit: 42720b0e0613be10e83cb0e8aae7170a85f473e5
+ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 
 
 ---
@@ -23,24 +23,22 @@ ms.openlocfilehash: e88afa6d8cc2720a001e7ee138e169bd3f1c67fa
 
 # Envoyer les journaux de données de diagnostic à votre administrateur informatique par câble USB
 
-Si vous souhaitez envoyer des journaux de données à votre administrateur pour résoudre un problème, vous pouvez le faire en utilisant un câble USB et un ordinateur au lieu de passer par votre appareil mobile. Voici comment procéder :
+Si vous souhaitez envoyer des journaux de données à votre administrateur, vous pouvez le faire en utilisant un câble USB et un ordinateur au lieu de passer par votre appareil mobile.
+
+ Avant de commencer, assurez-vous d’avoir l’adresse e-mail de votre administrateur informatique. Elle se trouve généralement sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com) ou dans votre application Portail d’entreprise.
 
 1.  Dans l’écran de l’erreur, appuyez sur **Envoyer des informations**. Quand vous voyez un message vous demandant la méthode que vous souhaitez utiliser pour envoyer les journaux, choisissez l’option qui enregistre les fichiers sur votre appareil.
 
-2.  Avant de commencer, assurez-vous d’avoir l’adresse e-mail de votre administrateur informatique. Elle se trouve généralement sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com) ou dans votre application Portail d’entreprise.
-
 2.  Utilisez un câble USB pour connecter votre appareil Android à un ordinateur.
 
-3.  Sur l'ordinateur, recherchez un répertoire portant le nom de votre téléphone. Dans ce répertoire, recherchez &lt;Appareil Android&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
+3.  Sur l’ordinateur, recherchez un répertoire portant le nom de votre appareil. Dans ce répertoire, recherchez &lt;Appareil Android&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
 
-4.  Attachez tous les fichiers à un e-mail et envoyez-le à votre administrateur informatique.
+4.  Attachez les fichiers à un e-mail et envoyez-le à votre administrateur informatique.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

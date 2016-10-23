@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/01/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: fcc0395815499f3a46dafa55c0c74834e37bed97
+ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
+ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
 
 
 ---
@@ -25,10 +25,10 @@ ms.openlocfilehash: fcc0395815499f3a46dafa55c0c74834e37bed97
 ## Qu’est-ce que le portail d’entreprise et à quoi sert-il ?
 Le portail d’entreprise Microsoft Intune vous permet d’accéder aux données et applications de votre entreprise ou de votre école. Vous pouvez obtenir le portail d’entreprise de deux façons différentes :
 
-- En installant l’application Portail d’entreprise sur votre appareil. Vous obtenez généralement l’application Portail d’entreprise en accédant au magasin d’applications de votre appareil, mais votre administrateur peut également installer l’application Portail d’entreprise pour vous à l’aide de différentes méthodes.
+- En installant l’application Portail d’entreprise sur votre appareil. Vous obtenez généralement l’application Portail d’entreprise en accédant au magasin d’applications sur votre appareil, mais votre administrateur peut également installer l’application Portail d’entreprise pour vous.
 - En accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com) que votre administrateur a configuré.
 
-Il existe quelques différences mineures entre l’application Portail d’entreprise et le site web Portail d’entreprise, mais les deux permettent d’effectuer presque toutes les mêmes tâches . Voici quelques exemples :
+Il existe quelques différences mineures entre l’application Portail d’entreprise et le site web Portail d’entreprise, mais les deux permettent d’effectuer presque toutes les mêmes tâches . Voici quelques tâches que vous pouvez effectuer :
 
 - Inscrire les appareils
 - Consulter le statut des appareils
@@ -37,7 +37,7 @@ Il existe quelques différences mineures entre l’application Portail d’entre
 - Redéfinir votre code confidentiel ou mot de passe
 - Contacter votre service informatique pour obtenir de l’aide
 
-Pour voir ce que vous pouvez faire via le site web Portail d’entreprise par rapport à ce que vous pouvez faire dans l’application Portail d’entreprise sur votre appareil, choisissez l’un des liens suivants :
+Pour voir ce que vous pouvez faire par le biais du site web Portail d’entreprise par rapport à ce que vous pouvez faire à l’aide de l’application Portail d’entreprise sur votre appareil, choisissez l’un des liens suivants :
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
@@ -45,7 +45,7 @@ Pour voir ce que vous pouvez faire via le site web Portail d’entreprise par ra
 - [Windows](using-your-windows-device-with-intune.md)
 - [Site web Portail d’entreprise](using-the-intune-company-portal-website.md)
 
-## Que se passe-t-il quand j’ajoute un ordinateur ou un appareil au Portail d’entreprise ?
+## Que se passe-t-il quand vous ajoutez un ordinateur ou un appareil au Portail d’entreprise ?
 Quand vous ajoutez un ordinateur ou un appareil au portail d’entreprise, certains logiciels sont parfois installés ou une application est éventuellement téléchargée (en fonction de l’appareil).  Vous autorisez également votre administrateur informatique à gérer votre appareil pour protéger les informations de l'entreprise sur l'appareil.
 
 Pour savoir ce que votre administrateur peut voir ou non sur votre appareil, utilisez le lien correspondant au type d’appareil que vous utilisez :
@@ -55,9 +55,9 @@ Pour savoir ce que votre administrateur peut voir ou non sur votre appareil, uti
 - [iOS et Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
-## Quel type d’ordinateurs ou d’appareils puis-je ajouter au Portail d’entreprise ?
+## Quel type d’ordinateurs ou d’appareils pouvez-vous ajouter au Portail d’entreprise ?
 
--   iPhones, iPads et Mac OS X
+-   iPhones, iPads et appareils Mac OS X
 
 -   appareils mobiles Android ;
 
@@ -66,14 +66,12 @@ Pour savoir ce que votre administrateur peut voir ou non sur votre appareil, uti
     -   Windows 10 Desktop
     -   Windows Phone 8.1
     -   Windows 8.1
-    -   Appareils Windows RT
-    -   Windows Phone 8
     -   iPhones, iPads et Mac OS X
     -   appareils mobiles Android ;
 
 
-## Puis-je supprimer un ordinateur ou un appareil du Portail d’entreprise ?
-Oui, vous pouvez supprimer ou réinitialiser un ordinateur ou un appareil à partir du Portail d’entreprise. Il existe une différence entre **supprimer** et **réinitialiser**:
+## Pouvez-vous supprimer un ordinateur ou un appareil du Portail d’entreprise ?
+Vous pouvez supprimer ou réinitialiser un ordinateur ou un appareil à partir du Portail d’entreprise. Il existe une différence entre **supprimer** et **réinitialiser**.
 
 Lorsque vous *supprimez* un ordinateur ou un appareil, vous désinscrivez votre appareil dans Intune. Une fois l’appareil désinscrit, vous ne pouvez plus accéder au portail d’entreprise à partir de cet appareil et certaines données d’entreprise peuvent également être supprimées de l’appareil. Pour savoir comment supprimer votre appareil sur le portail d’entreprise, choisissez l’un des liens suivants :
 
@@ -92,14 +90,14 @@ Pour savoir comment réinitialiser votre appareil, choisissez l’un des liens s
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Réinitialiser votre appareil à partir du site web du portail d’entreprise](reset-your-device-cpwebsite.md)
 
-## Je ne vois pas tous mes appareils dans le Portail d’entreprise
-Pour qu’un appareil soit visible, il doit être ajouté au Portail d’entreprise. Accédez au Portail d’entreprise comme indiqué par votre administrateur et suivez les étapes pour votre appareil. Vous ne verrez pas non plus les appareils détenus et gérés par votre entreprise.
+## Vous ne voyez pas tous vos appareils dans le Portail d’entreprise
+Pour que vous puissiez voir un appareil, il doit d’abord être ajouté au Portail d’entreprise. Accédez au Portail d’entreprise comme indiqué par votre administrateur et suivez les étapes pour votre appareil. Vous ne verrez pas non plus les appareils détenus et gérés par votre entreprise.
 
 ## Si vous avez des questions, contactez votre administrateur informatique.
 Si vous avez besoin d’aide, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

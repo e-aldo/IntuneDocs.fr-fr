@@ -12,21 +12,21 @@ ms.technology:
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 15a685f4839cd1c4d60c1f99a6bd6d954352a60c
+ms.sourcegitcommit: 849632d4b07b2e4417fd955d945fed21461edc6a
+ms.openlocfilehash: e3ccc0fda42c00ced108401c31df4106fe4049a3
 
 
 ---
 
 # Installer une nouvelle version de l’application Portail d’entreprise
 
-Si votre version du Portail d’entreprise n’est plus prise en charge ou s’il existe une nouvelle version du Portail d’entreprise, vous devez mettre à jour l’application Portail d’entreprise vers la dernière version. Suivez la procédure ci-dessous qui correspond à votre type d’appareil :
+Si votre version de l’application Portail d’entreprise n’est plus prise en charge ou s’il existe une nouvelle version de l’application Portail d’entreprise, vous devez la mettre à jour vers la dernière version. Suivez la procédure qui correspond au type d’appareil que vous avez.
 
-## Pour mettre à jour l’application Portail d’entreprise d’Intune sur votre appareil Android
+## Mettre à jour l’application Portail d’entreprise d’Intune sur votre appareil Android
 
 Le Play Store vous avertit quand une nouvelle version du portail d’entreprise est disponible. Vous ne verrez pas d’invite de commandes dans l’application Portail d’entreprise elle-même. Suivez les instructions de l'alerte pour mettre à jour votre appareil.
 
-## Pour mettre à jour l’application Portail d’entreprise d’Intune sur votre appareil Android
+## Mettre à jour l’application Portail d’entreprise d’Intune sur votre appareil Android
 
 Quand une nouvelle version est disponible, l’option « update » s’affiche à côté de l’application dans la liste des applications installées.  
 
@@ -36,7 +36,7 @@ Pour mettre à jour l’application Portail d’entreprise :
 
 2. Lorsque vous trouvez l’application, appuyez sur le bouton **Mettre à jour** (Update) situé à droite du nom de l’application.
 
-## Pour mettre à jour l’application Portail d’entreprise d’Intune sur votre appareil Windows
+## Mettre à jour l’application Portail d’entreprise d’Intune sur votre appareil Windows
 
 1.  Naviguez jusqu'au Windows Store et recherchez le **portail d'entreprise**.
 
@@ -50,8 +50,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -13,15 +13,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
-ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
+ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
+ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
 
 
 ---
 
 
 # Comment vos utilisateurs Android obtiennent leurs applications
-Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux Android obtiennent les applications que vous distribuez via Microsoft Intune. Les informations peuvent être différentes pour les appareils Android natifs et les appareils Samsung Knox.
+Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux Android obtiennent les applications que vous distribuez via Microsoft Intune. Les informations peuvent différer selon le type d’appareil (appareils Android natifs ou appareils Samsung Knox).
 
 ## Appareils Android natifs (ne s’applique pas aux appareils Samsung Knox)
 
@@ -39,9 +39,9 @@ Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux
 
 Les applications peuvent être gérées ou non gérées, comme décrit ci-dessous. Le processus de fabrication d’applications gérées est le même pour tous les types d’appareil Android.
 
-**Applications gérées** : applications gérables par l’intermédiaire de stratégies et qui ont été « encapsulées » par Intune ou qui ont été créées à l’aide du Kit SDK de gestion des applications mobiles Intune. Ces applications peuvent être gérées par Intune et faire l'objet de stratégies d'application.
+**Applications gérées** - Il s’agit d’applications gérables par l’intermédiaire de stratégies. Elles ont été « encapsulées » par Intune ou ont été créées à l’aide du SDK Intune Mobile Application Management (MAM). Ces applications peuvent être gérées par Intune et faire l'objet de stratégies d'application.
 
-**Applications non gérées** : applications gérables par l’intermédiaire de stratégies et qui n’ont pas été encapsulées par Intune ou qui n’intègrent pas le Kit SDK de gestion des applications mobiles Intune. Vous ne pouvez pas appliquer de stratégies d'application à ces applications.
+**Applications non gérées** - Il s’agit d’applications qui ne sont pas gérables par l’intermédiaire de stratégies. Elles n’ont pas été encapsulées par Intune ou n’intègrent pas le SDK MAM Intune. Vous ne pouvez pas appliquer de stratégies d'application à ces applications.
 
 ### Voir aussi
 [Ajouter des applications avec Microsoft Intune](/intune/deploy-use/add-apps)
@@ -52,6 +52,6 @@ Les applications peuvent être gérées ou non gérées, comme décrit ci-dessou
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

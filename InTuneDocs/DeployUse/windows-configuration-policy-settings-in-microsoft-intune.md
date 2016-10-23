@@ -4,7 +4,7 @@ description: "Utilisez la stratégie de configuration générale Windows (Window
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
-ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
+ms.sourcegitcommit: 532bb416e1496fce02312e80eb4090fec9ed80ad
+ms.openlocfilehash: 7df712388e8d069667e8864284e38fb6c89012f7
 
 
 ---
 
 # Paramètres de la stratégie Windows dans Microsoft Intune
-Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et versions ultérieures) Microsoft Intune** pour configurer les paramètres suivants des appareils Windows 8 et Windows 8.1 inscrits :
+Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et versions ultérieures) Microsoft Intune** pour configurer les paramètres suivants des appareils Windows 8, Windows 8.1 et Windows RT 8.1 inscrits :
 
 ## Paramètres d’applicabilité
 
@@ -30,24 +30,23 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 
 ## Paramètres de sécurité
 
-|Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|------|----------------------------|--------------|
-|**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple alphanumérique ou numérique uniquement.|Oui|Oui|
-|**Type de mot de passe requis - Nombre minimum de jeux de caractères**|Spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Toutefois, pour les appareils iOS, ce paramètre spécifie le nombre de symboles devant être inclus dans le mot de passe.|Oui|Oui|
-|**Longueur minimale du mot de passe**<sup>1</sup>|Configure la longueur minimale requise (en caractères) pour le mot de passe.|Oui|Oui|
-|**Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil**|Réinitialise l’appareil si le nombre d’échecs de tentative spécifié est atteint.|Oui|Oui|
-|**Minutes d'inactivité avant arrêt de l'écran**|Spécifie le nombre de minutes pendant lesquelles un appareil doit être inactif avant qu’un mot de passe soit nécessaire pour le déverrouiller.| Oui|Oui|
-|**Expiration du mot de passe (jours)**|Spécifie le nombre de jours avant de devoir modifier le mot de passe de l’appareil.|Oui|Oui|
-|**Mémoriser l'historique des mots de passe**|Spécifie si l’utilisateur peut configurer des mots de passe précédemment utilisés.|Oui|Oui|
-|**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe précédemment utilisés conservés par l’appareil.|Oui|Oui|
-|**Autoriser un mot de passe image et un code confidentiel**|Permet l’utilisation d’un mot de passe image et d’un code confidentiel. Un mot de passe image permet à l’utilisateur de se connecter en effectuant des gestes sur une image. Un code confidentiel permet aux utilisateurs de se connecter rapidement à l’aide d’un code à quatre chiffres.|Oui|Oui|
-<sup>1</sup> Quand vous déployez une stratégie de longueur de mot de passe sur des appareils qui exécutent Windows RT, les utilisateurs sont obligés de réinitialiser leur mot de passe, même si leur mot de passe actuel est conforme aux exigences de la stratégie.
+|Nom du paramètre|Détails|
+|----------------|------|
+|**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple alphanumérique ou numérique uniquement.|
+|**Type de mot de passe requis - Nombre minimum de jeux de caractères**|Spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Toutefois, pour les appareils iOS, ce paramètre spécifie le nombre de symboles devant être inclus dans le mot de passe.|
+|**Longueur minimale du mot de passe**|Configure la longueur minimale requise (en caractères) pour le mot de passe.|
+|**Nombre d'échecs de connexion répétée autorisé avant réinitialisation de l'appareil**|Réinitialise l’appareil si le nombre d’échecs de tentative spécifié est atteint.|
+|**Minutes d'inactivité avant arrêt de l'écran**|Spécifie le nombre de minutes pendant lesquelles un appareil doit être inactif avant qu’un mot de passe soit nécessaire pour le déverrouiller.|
+|**Expiration du mot de passe (jours)**|Spécifie le nombre de jours avant de devoir modifier le mot de passe de l’appareil.|
+|**Mémoriser l'historique des mots de passe**|Spécifie si l’utilisateur peut configurer des mots de passe précédemment utilisés.|
+|**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe précédemment utilisés conservés par l’appareil.|
+|**Autoriser un mot de passe image et un code confidentiel**|Permet l’utilisation d’un mot de passe image et d’un code confidentiel. Un mot de passe image permet à l’utilisateur de se connecter en effectuant des gestes sur une image. Un code confidentiel permet aux utilisateurs de se connecter rapidement à l’aide d’un code à quatre chiffres.|
 
 ## Paramètres de chiffrement
 
-|Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|-----|-----------------------------|--------------|
-|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup>|Exige que les fichiers soient chiffrés sur le périphérique.<br>Pour les appareils Windows Phone 8, affectez la valeur **Oui**.|Oui|Non|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup>|Exige que les fichiers soient chiffrés sur le périphérique.|
 <sup>1</sup> Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 
 -   Pour appliquer le chiffrement à des appareils exécutant Windows 8.1, vous devez installer la [Mise à jour du client MDM pour Windows publiée en décembre 2014](http://support.microsoft.com/kb/3013816) sur chaque appareil.
@@ -60,57 +59,57 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 
 ## Paramètres anti-programme malveillant
 
-|Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|-----|-----------------------------|--------------|
-|**Exiger un pare-feu réseau**|Nécessite l’activation du Pare-feu Windows.|Oui|Non|
-|**Activer SmartScreen**|Nécessite l’utilisation de Windows SmartScreen.|Oui|Non|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Exiger un pare-feu réseau**|Nécessite l’activation du Pare-feu Windows.|
+|**Activer SmartScreen**|Nécessite l’utilisation de Windows SmartScreen.|
 
 ## Paramètres système
 
-|Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|-------|---------------------------|--------------|
-|**Exiger les mises à jour automatiques**|Active le paramètre de mises à jour automatiques sur les appareils.|Oui|Non|
-|**Exiger les mises à jour automatiques – Classification minimale des mises à jour à installer automatiquement**|Choisit la classification des mises à jour à installer automatiquement :<br /><br />-   **Importantes** : installe toutes les mises à jour classifiées comme importantes.<br />-   **Recommandées** : installe toutes les mises à jour classées comme importantes ou recommandées.|Oui|Non|
-|**Contrôle de compte d'utilisateur**|Nécessite l’utilisation du contrôle de compte d’utilisateur (UAC) sur les appareils.|Oui|Non|
-|**Autoriser la soumission des données de diagnostic**|Autorise l’appareil à soumettre des informations de diagnostic à Microsoft.|Oui|Non|
+|Nom du paramètre|Détails|
+|----------------|-------|
+|**Exiger les mises à jour automatiques**|Active le paramètre de mises à jour automatiques sur les appareils.|
+|**Exiger les mises à jour automatiques – Classification minimale des mises à jour à installer automatiquement**|Choisit la classification des mises à jour à installer automatiquement :<br /><br />-   **Importantes** : installe toutes les mises à jour classifiées comme importantes.<br />-   **Recommandées** : installe toutes les mises à jour classées comme importantes ou recommandées.|
+|**Contrôle de compte d'utilisateur**|Nécessite l’utilisation du contrôle de compte d’utilisateur (UAC) sur les appareils.|
+|**Autoriser la soumission des données de diagnostic**|Autorise l’appareil à soumettre des informations de diagnostic à Microsoft.|
 
 
 ## Paramètres du cloud - documents et données
 
-|Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|------|----------------------------|--------------|
-|**URL des dossiers de travail**|Définit l’URL du dossier de travail pour autoriser la synchronisation des documents entre les appareils.|Oui|Non|
+|Nom du paramètre|Détails|
+|----------------|------|
+|**URL des dossiers de travail**|Définit l’URL du dossier de travail pour autoriser la synchronisation des documents entre les appareils.|
 
 ## Paramètres de messagerie
 
-|Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|-----|-----------------------------|--------------|
-|**Rendre le compte Microsoft facultatif dans l'application Windows Mail**|Autorise l’accès à l’application Windows Mail sans compte Microsoft.|Oui|Non|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Rendre le compte Microsoft facultatif dans l'application Windows Mail**|Autorise l’accès à l’application Windows Mail sans compte Microsoft.|
 
 ## Paramètres de l'application - navigateur
 
-|Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|-----|-----------------------------|--------------|
-|**Autoriser le remplissage automatique**|Permet aux utilisateurs de modifier les paramètres de saisie semi-automatique dans le navigateur.|Oui|Non|
-|**Autoriser le bloqueur de fenêtres publicitaires**|Active ou désactive le bloqueur de fenêtres publicitaires du navigateur.|Oui|Non|
-|**Autoriser les plug-ins**|Permet aux utilisateurs d’ajouter des plug-ins à Internet Explorer.|Oui|Non|
-|**Autoriser les scripts actifs**|Permet au navigateur d’exécuter des scripts, tels que des scripts ActiveX.|Oui|Non|
-|**Autoriser l'avertissement de fraudes**|Active ou désactive les avertissements pour les sites web potentiellement frauduleux.|Oui|Non|
-|**Autoriser les sites intranet avec entrée à mot unique**|Permet l’utilisation d’un mot unique pour diriger Internet Explorer vers un site web, tel que Bing.|Oui|Non|
-|**Autoriser la détection automatique des réseaux intranet**|Facilite la configuration de la sécurité des sites intranet dans Internet Explorer.|Oui|Non|
-|**Niveau de sécurité pour Internet**|Définit le niveau de sécurité d’Internet Explorer pour les sites Internet.|Oui|Non|
-|**Niveau de sécurité pour intranet**|Définit le niveau de sécurité d’Internet Explorer pour les sites intranet.|Oui|Non|
-|**Niveau de sécurité pour les sites de confiance**|Configure le niveau de sécurité pour la zone Sites de confiance.|Oui|Non|
-|**Niveau de sécurité pour les sites sensibles**|Configure le niveau de sécurité pour la zone Sites sensibles.|Oui|Non|
-|**Envoyer un en-tête Do Not Track**|Envoie un en-tête Do Not Track aux sites visités dans Internet Explorer.|Oui|Non|
-|**Autoriser l'accès au menu Mode entreprise**|Permet aux utilisateurs d'accéder aux options du menu Mode entreprise à partir d'Internet Explorer.<br>Si vous sélectionnez ce paramètre, vous pouvez également spécifier un **Emplacement du rapport de journalisation**, qui contient une URL vers un rapport affichant les sites web pour lesquels les utilisateurs ont activé l’accès en Mode entreprise.|Oui|Non|
-|**Emplacement de la liste des sites en mode entreprise**|Spécifie l’emplacement de la liste des sites web qui utilisent le Mode entreprise quand il est actif.|Oui|Non|
+|Nom du paramètre|Détails|
+|----------------|-----|
+|**Autoriser le remplissage automatique**|Permet aux utilisateurs de modifier les paramètres de saisie semi-automatique dans le navigateur.|
+|**Autoriser le bloqueur de fenêtres publicitaires**|Active ou désactive le bloqueur de fenêtres publicitaires du navigateur.|
+|**Autoriser les plug-ins**|Permet aux utilisateurs d’ajouter des plug-ins à Internet Explorer.|
+|**Autoriser les scripts actifs**|Permet au navigateur d’exécuter des scripts, tels que des scripts ActiveX.|
+|**Autoriser l'avertissement de fraudes**|Active ou désactive les avertissements pour les sites web potentiellement frauduleux.|
+|**Autoriser les sites intranet avec entrée à mot unique**|Permet l’utilisation d’un mot unique pour diriger Internet Explorer vers un site web, tel que Bing.|
+|**Autoriser la détection automatique des réseaux intranet**|Facilite la configuration de la sécurité des sites intranet dans Internet Explorer.|
+|**Niveau de sécurité pour Internet**|Définit le niveau de sécurité d’Internet Explorer pour les sites Internet.|
+|**Niveau de sécurité pour intranet**|Définit le niveau de sécurité d’Internet Explorer pour les sites intranet.|
+|**Niveau de sécurité pour les sites de confiance**|Configure le niveau de sécurité pour la zone Sites de confiance.|
+|**Niveau de sécurité pour les sites sensibles**|Configure le niveau de sécurité pour la zone Sites sensibles.|
+|**Envoyer un en-tête Do Not Track**|Envoie un en-tête Do Not Track aux sites visités dans Internet Explorer.|
+|**Autoriser l'accès au menu Mode entreprise**|Permet aux utilisateurs d'accéder aux options du menu Mode entreprise à partir d'Internet Explorer.<br>Si vous sélectionnez ce paramètre, vous pouvez également spécifier un **Emplacement du rapport de journalisation**, qui contient une URL vers un rapport affichant les sites web pour lesquels les utilisateurs ont activé l’accès en Mode entreprise.|
+|**Emplacement de la liste des sites en mode entreprise**|Spécifie l’emplacement de la liste des sites web qui utilisent le Mode entreprise quand il est actif.|
 
 ## Paramètres des fonctionnalités de l'appareil - cellulaire
 
-|Nom du paramètre|Détails|Windows 8.1 et Windows RT 8.1|Windows RT|
-|----------------|----|------------------------------|--------------|
-|**Autoriser l'itinérance des données**|Autorise l’itinérance des données quand l’appareil se trouve sur un réseau de téléphonie mobile.|Oui|Non|
+|Nom du paramètre|Détails|
+|----------------|----|
+|**Autoriser l'itinérance des données**|Autorise l’itinérance des données quand l’appareil se trouve sur un réseau de téléphonie mobile.|
 
 
 
@@ -119,6 +118,6 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

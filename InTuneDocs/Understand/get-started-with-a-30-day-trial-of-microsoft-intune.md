@@ -13,8 +13,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -37,12 +37,12 @@ Avant de commencer à utiliser Intune, vous aurez besoin des éléments suivants
 
 -   Si vous avez un compte Microsoft Online Services, vous aurez besoin des informations d'identification de l'administrateur de ce compte. Si vous n'avez pas un tel compte ou si vous souhaitez utiliser ce client Intune à des fins d'évaluation, vous n'avez pas besoin de ces informations d'identification d'administrateur.
 
--   Si vous prévoyez de gérer des appareils iOS ou Windows Phone avec la version d’évaluation d’Intune, vous aurez besoin de certificats (ou clés) et de comptes pour récupérer ces certificats (consultez le tableau suivant). Les appareils Android n'ont pas besoin de certificats supplémentaires.
+-   Si vous prévoyez de gérer des appareils iOS ou Windows Phone 8.1 avec la version d’évaluation d’Intune, vous aurez besoin de certificats (ou clés) et de comptes pour récupérer ces certificats (consultez le tableau suivant). Les appareils Android n'ont pas besoin de certificats supplémentaires.
 
     |Plateforme|Certificats requis|Plus d'informations|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 et Windows Phone 8 |Aucun certificat n’est nécessaire pour les utilisateurs Windows Phone 8.1 qui installent l’application de portail d’entreprise à partir du Store. Un certificat Symantec est nécessaire pour Windows Phone 8.0 ou pour déployer l’application de portail d’entreprise sur des appareils Windows Phone 8.1 à l’aide d’Intune.|Cette recommandation part du principe que vos utilisateurs se procurent l’application de portail d’entreprise via le Store sur un appareil Windows Phone version 8.1 ou ultérieure. Pour plus d’informations sur la prise en charge de Windows Phone 8.0, consultez [Configurer la gestion de Windows Phone avec Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
-    |Windows 10, Windows RT 8.1, Windows RT, ou appareils Windows 8.1|Aucun certificat n'est requis pour l'inscription d'appareils Windows RT et Windows.|[Installer le client de PC Windows avec Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |Windows Phone 8.1 |Aucun certificat n’est nécessaire pour les utilisateurs Windows Phone 8.1 qui installent l’application de portail d’entreprise à partir du Store. |Cette recommandation part du principe que vos utilisateurs se procurent l’application de portail d’entreprise via le Store sur un appareil Windows Phone version 8.1 ou ultérieure. |
+    |Appareils Windows 10, Windows RT 8.1 ou Windows 8.1|Aucun certificat n'est requis pour l'inscription d'appareils Windows RT et Windows.|[Installer le client de PC Windows avec Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 ou version ultérieure|Obtenir un certificat des services de notification Push Apple.|Demandez un certificat de services de notifications Push Apple auprès d’Apple, comme décrit ici : [Configurer la gestion iOS et MAC avec Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Étapes de l’exécution d’une version d’évaluation de 30 jours d’Intune
@@ -66,6 +66,6 @@ Il est temps de prendre en main votre abonnement à la version d’évaluation d
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
