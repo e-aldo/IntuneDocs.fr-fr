@@ -4,17 +4,17 @@ description: "Cette rubrique explique comment inclure des applications iOS dans 
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
-ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
+ms.sourcegitcommit: c67a5042fd177a4c5bd897092e84281db0977f5e
+ms.openlocfilehash: 2c187b61b8fe25b2870d0cbc62f8352494583fc2
 
 
 ---
@@ -22,69 +22,98 @@ ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 # Préparer des applications iOS pour la gestion des applications mobiles avec l'outil de création de package de restrictions d'application Intune
 Utilisez l’outil **Microsoft Intune App Wrapping Tool for iOS** pour modifier le comportement des applications iOS internes en limitant les fonctionnalités de l’application sans modifier le code de l’application proprement dit.
 
-L'outil est une application de ligne de commande Mac OS qui crée un « wrapper » autour d'une application. Une fois une application traitée, vous pouvez modifier sa fonctionnalité à l'aide de [stratégies de gestion des applications mobiles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) que vous configurez.
+L’outil est une application en ligne de commande Mac OS qui crée un « wrapper » autour d’une application. Une fois qu’une application est traitée, vous pouvez modifier sa fonctionnalité à l’aide de [stratégies de gestion des applications mobiles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) Intune que vous configurez.
 
-Pour télécharger l’outil, consultez [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
+Pour télécharger l’outil, consultez [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) (Outil de création de package de restrictions d’application Microsoft Intune pour iOS).
 
-## Étape 1 : remplir les conditions préalables requises pour l’utilisation de l’outil de création de package de restrictions d’application
+
+
+## Étape 1. remplir les conditions préalables requises pour l'utilisation de l'outil de création de package de restrictions d'application
 Lisez [ce billet de blog](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) pour en savoir plus sur les conditions préalables et comment les définir.
 
 |Exigence|Plus d'informations|
 |---------------|--------------------------------|
-|Système d’exploitation et boîte à outils pris en charge|Vous devez exécuter l'outil de création de package de restrictions d'application sur un ordinateur Mac OS X 10.8.5 ou version ultérieure sur lequel est installé la version 5 ou ultérieure de la boîte à outils XCode.|
+|Système d’exploitation et boîte à outils pris en charge|Vous devez exécuter l’outil de création de package de restrictions d’application sur un ordinateur macOS exécutant la version X 10.8.5 ou ultérieure et sur lequel est installé l’ensemble d’outils XCode version 5 ou ultérieure.|
 |Certificat de signature et profil de configuration|Vous devez disposer d’un certificat de signature Apple et d’un profil de configuration. Consultez votre [documentation pour développeurs Apple](https://developer.apple.com/).|
-|Traitement d’une application avec l’outil de création de package de restrictions d’application|Elle doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV). Vous ne pouvez pas utiliser cet outil pour traiter des applications de l'Apple Store. Les applications doivent être écrites pour iOS version 7.1 ou version ultérieure. Elles doivent être également au format PIE (Position Independent Executable). Pour plus d'informations sur le format PIE, consultez votre documentation pour développeurs Apple. Enfin, l’application doit avoir l'extension **.app**ou **.ipa** .|
+|Traitement d’une application avec l’outil de création de package de restrictions d’application|Elle doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV). Vous ne pouvez pas utiliser cet outil pour traiter des applications de l'Apple Store. Les applications doivent être écrites pour iOS version 8.0 ou ultérieure. Elles doivent être également au format PIE (Position Independent Executable). Pour plus d'informations sur le format PIE, consultez votre documentation pour développeurs Apple. Enfin, l’application doit avoir l'extension **.app**ou **.ipa** .|
 |Applications que l’outil de création de package de restrictions d’application ne peut pas traiter|Applications chiffrées, applications non signées et applications avec des attributs de fichiers étendus.|
-|Applications qui utilisent la bibliothèque ADAL (Azure Active Directory Library)|Si votre application utilise la bibliothèque ADAL, elle doit intégrer une version de la bibliothèque ADAL supérieure ou égale à la version 1.0.2 et le développeur doit accorder à leur application l’accès à la ressource de gestion des applications mobiles Intune.<br /><br />Consultez la rubrique [Informations pour les applications utilisant la bibliothèque Azure Active Directory](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) dans cet article pour plus d’informations sur l’utilisation de la bibliothèque ADAL|
 |Définition de droits pour votre application|Avant d’encapsuler l’application, vous devez définir des droits qui confèrent à l’application des autorisations et des fonctionnalités supplémentaires qui vont au-delà de celles qui sont généralement accordées. Consultez [Définition des droits de l’application](#setting-app-entitlements) pour obtenir des instructions.|
 
-## Étape 2: installer l’outil de création de package de restrictions d’application
+## Étape 2. Installer l'outil de création de package de restrictions d'application
 
-1.  À partir de la page **Microsoft Intune App Wrapping Tool for iOS** du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=45218), téléchargez le fichier d'installation de l'outil de création de package de restrictions d'application sur un ordinateur Mac.
+1.  À partir du dépôt de **l’outil de création de package de restrictions d’application pour iOS** [hébergé sur GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), téléchargez les fichiers de l’outil de création de package de restrictions d’application localement sur un ordinateur Mac OS.
 
-2.  Sur l’ordinateur Mac, double-cliquez sur le fichier d’installation **Microsoft Intune App Wrapping Tool for iOS.dmg**.
+2.  Double-cliquez sur le fichier d’installation **Microsoft Intune App Wrapping Tool for iOS.dmg**. Une fenêtre présentant le Contrat de licence utilisateur final (CLUF) s’affiche. Lisez attentivement le document.
 
-3.  Choisissez **J'accepte** pour accepter le contrat de licence utilisateur final (CLUF). Le programme d'installation est monté et affiché sur l'ordinateur Mac.
+3. Choisissez **J’accepte** pour accepter le CLUF, qui monte le package sur votre ordinateur.
 
-4.  Ouvrez le programme d’installation et copiez les fichiers affichés dans un nouveau dossier sur l’ordinateur Mac. Vous pouvez maintenant déconnecter le lecteur du programme d’installation monté.
+4.  Ouvrez le package **IntuneMAMPackager** et enregistrez les fichiers dans un dossier local de votre ordinateur macOS. Vous êtes maintenant prêt à exécuter l'outil de création de package de restrictions d'application.
 
-    Vous êtes maintenant prêt à exécuter l'outil de création de package de restrictions d'application.
+## Étape 3. exécuter l'outil de création de package de restrictions d'application
+* Sur votre ordinateur macOS, ouvrez une fenêtre de terminal et accédez au dossier dans lequel vous avez enregistré les fichiers de l’outil de création de package de restrictions d’application. L’outil exécutable se nomme **IntuneMAMPackager** et se trouve dans **IntuneMAMPackager/Contents/MacOS**. Vous devez exécuter la commande comme suit :
 
-## Étape 3 : exécuter l’outil de création de package de restrictions d’application
+    ```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 
-1.  Sur l'ordinateur Mac, ouvrez une fenêtre de terminal et accédez au dossier où vous avez enregistré les fichiers. Étant donné que le fichier exécutable se trouve dans le package, vous devez exécuter la commande qui suit :
-```
-    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
-```
+    ```
+
     > [!NOTE]
-    > Some parameters are optional as shown in the table below.
+    > Certains paramètres sont facultatifs, comme indiqué dans le tableau ci-dessous.
 
-    **Example:** The following example command runs the app wrapping tool on an app named **MyApp.ipa**. A provisioning profile and SHA-1 hash are specified. The processed app is created and stored in the **/users/myadmin/Documents** on the Mac computer.
+    **Exemple :** l’exemple de commande suivant exécute l’outil de création de package de restrictions d’application sur une application nommée **MyApp.ipa**. Un profil de configuration et le hachage SHA-1 sont spécifiés. L’application traitée est créée, nommée **MyApp_Wrapped.ipa** et stockée dans le dossier Bureau de l’utilisateur.
 
     ```
-    /users/myadmin/Downloads/IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager -i /users/myadmin/Downloads/MyApp.ipa -o /users/myadmin/Documents/MyApp_Wrapped.ipa -p /users/myadmin/Downloads/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB –a 20e1cd0d-268e-4308-9583-02ae97dd353e –r https://contoso/ -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
     ```
-    You can use the following command line properties with the app wrapping tool:
+    Vous pouvez utiliser les propriétés de ligne de commande suivantes avec l'outil de création de package de restrictions d'application :
 
-|Propriété|Plus d'informations|
+    |Propriété|Comment l’utiliser|
   |------------|--------------------|
-  |**-h**|Affiche les propriétés de ligne de commande disponibles pour l'outil de création de package de restrictions d'application.|
-  |**-i**|Spécifie le chemin d'accès et le nom de fichier de l'application d'entrée.|
-  |**-o**|Spécifie le chemin d'accès où enregistrer l'application traitée.|
-  |**-p**|Spécifie le chemin d'accès à votre profil de configuration pour les applications iOS.|
-  |**-c**|Spécifie le hachage SHA1 du certificat de signature.|
-  |**-a**|ID de client de l'application d'entrée (au format GUID), si elle utilise les bibliothèques Azure Active Directory (facultatif).|
-  |**-r**|URI de redirection de l'application d'entrée, si elle utilise les bibliothèques Azure Active Directory (facultatif).|
-  |**-v**|Afficher des messages détaillés sur la console (facultatif).|
+  |**-i**|`<Path of the input native iOS application file>`. Le fichier doit se terminer par .app ou .ipa. |
+  |**-o**|`<Path of the wrapped output application>` |
+  |**-p**|`<Path of your provisioning profile for iOS apps>`|
+  |**-c**|`<SHA1 hash of the signing certificate>`|
+    |-h|Affiche des informations détaillées sur l’utilisation des propriétés de ligne de commande disponibles pour l’outil de création de package de restrictions d’application.|
+  |-v|(Facultatif mais utile) Affiche les messages détaillés sur la console.|
+  |-e | (Facultatif) Utilisez cet indicateur pour que l’outil de création de package de restrictions d’application supprime les droits manquants lors du traitement de l’application. Pour plus d’informations, consultez la section « Définition des droits de l’application ».|
+  |-xe| (Facultatif) Imprime des informations sur les extensions iOS dans l’application, et les droits qui sont nécessaires pour les utiliser. Pour plus d’informations, consultez la section « Définition des droits de l’application ». |
+  |-x| (Facultatif) `<An array of paths to extension provisioning profiles>`. À utiliser si votre application a besoin d’extension des profils d’approvisionnement d’extension.|
+  |-f |(Facultatif) `<Path to a plist file specifying arguments.>` Utilisez cet indicateur devant le fichier [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) si vous choisissez d’utiliser le modèle plist pour spécifier le reste des propriétés IntuneMAMPackager : -i, -o, -p, etc. Pour plus de détails, consultez la section « Utiliser un fichier plist pour les arguments d’entrée ». |
+  |-b|(Facultatif) Utilisez -b sans argument si vous voulez que l’application de sortie encapsulée ait la même version d’ensemble (bundle) que l’application d’entrée (non recommandé). <br/><br/> Utilisez `-b <custom bundle version>` si vous voulez que l’application encapsulée ait une valeur CFBundleVersion personnalisée. Si vous choisissez de spécifier une valeur CFBundleVersion personnalisée, nous vous recommandons d’incrémenter la valeur CFBundleVersion de l’application native sur le composant le moins significatif ; par exemple : 1.0.0 -> 1.0.1. |
 
-2. Une fois le traitement terminé, le message **The application was successfully wrapped** est affiché.
+
+###Utiliser un fichier plist pour les arguments d’entrée
+Placer tous les arguments de commande dans un fichier [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) constitue un moyen simple d’exécuter l’outil de création de package de restrictions d’application. Plist est un format de fichier similaire à XML que nous pouvons utiliser pour nos arguments de ligne de commande à l’aide d’une interface de formulaire.
+
+Dans le dossier **IntuneMAMPackager/contenu/MacOS**, ouvrez `Parameters.plist`, un modèle plist vide, à l’aide d’un éditeur de texte ou Xcode. Entrez vos arguments pour les clés suivantes :
+
+| Clé plist |  Valeur par défaut| Remarques |
+|------------------|--------------|-----|
+| Chemin du package d’application d’entrée  |empty| Identique à -i. |
+| Chemin du package d’application de sortie |empty| Identique à -o.|
+| Chemin du profil d’approvisionnement |empty| Identique à -p. |
+| Hachage du certificat SHA-1 |empty| Identique à -c. |
+| Mode détaillé activé |false| Identique à -v. |
+| Supprimer les droits manquants | false| Identique à -c.|
+| Empêcher la build par défaut |false | Équivaut à utiliser -b sans arguments. |
+|Générer le remplacement de chaîne | empty| Valeur CFBundleVersion personnalisée de l’application de sortie encapsulée |
+|Chemins des profils d’approvisionnement d’extension | empty| Tableau de profils d’approvisionnement d’extension pour l’application.
+  
+
+Enfin, exécutez la commande IntuneMAMPackager avec le fichier plist comme unique argument :
+
+```
+./IntuneMAMPackager –f Parameters.plist
+```
+
+* Une fois le traitement terminé, le message « **The application was successfully wrapped** » s’affiche.
 
     Si une erreur se produit, consultez [Messages d'erreur](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) pour obtenir de l'aide.
 
-3.  L'application encapsulée est enregistrée dans le dossier de sortie spécifié précédemment. Vous pouvez maintenant télécharger l'application dans [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et l'associer à une stratégie de gestion des applications mobiles.
+*   L'application encapsulée est enregistrée dans le dossier de sortie spécifié précédemment. Vous pouvez maintenant télécharger l'application dans [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et l'associer à une stratégie de gestion des applications mobiles.
 
     > [!IMPORTANT]
-    > Vous devez télécharger l'application comme nouvelle application. Vous ne pouvez pas mettre à jour une version plus ancienne et non encapsulée de l'application.
+    > Lors du chargement d’une application encapsulée, vous pouvez tenter de mettre à jour une version antérieure de l’application si telle version (encapsulée ou native) a déjà été déployée pour Intune. Si vous rencontrez une erreur, chargez l’application comme nouvelle application et supprimez l’ancienne version.
 
     Vous pouvez maintenant déployer l’application dans vos groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Elle s’exécutera désormais sur l’appareil selon les restrictions d’applications que vous spécifiez.
 
@@ -92,7 +121,7 @@ Lisez [ce billet de blog](http://social.technet.microsoft.com/wiki/contents/arti
 Aidez-vous des informations suivantes pour résoudre les problèmes que vous rencontrez avec l’outil de création de package de restrictions d’application.
 
 ### Messages d'erreur
-Si l'outil de création de package de restrictions d'application échoue, l'un des messages d'erreur suivants s'affiche :
+Si l’outil de création de package de restrictions d’application échoue, l’un des messages d’erreur suivants s’affiche dans la console :
 
 |Message d'erreur|Plus d'informations|
 |-----------------|--------------------|
@@ -104,20 +133,18 @@ Si l'outil de création de package de restrictions d'application échoue, l'un d
 |Le fichier de profil de configuration d'entrée spécifié est introuvable. Spécifiez un fichier de profil de configuration d'entrée valide.|Assurez-vous que le chemin d'accès au fichier de configuration d'entrée est valide et que le fichier spécifié existe.|
 |Le dossier d'application de sortie spécifié est introuvable. Spécifiez un chemin d'accès valide vers l'application de sortie.|Assurez-vous que le chemin de sortie spécifié est valide et qu'il existe.|
 |L'application de sortie n'a pas une extension .ipa.|Seules les applications avec les extensions **.app** et **.ipa** sont acceptées par l'outil de création de package de restrictions d'application. Assurez-vous que votre fichier de sortie a une extension valide.|
-|Un certificat de signature non valide a été spécifié. Spécifiez un certificat de signature Apple valide.|Assurez-vous d'avoir téléchargé le certificat de signature correct à partir du portail de développement Apple. Votre certificat a peut-être expiré. Si votre profil de configuration et votre certificat Apple peuvent être utilisés pour signer correctement une application dans Xcode, cela signifie qu'ils sont valides pour l'outil de création de package de restrictions d'application.|
+|Un certificat de signature non valide a été spécifié. Spécifiez un certificat de signature Apple valide.|Assurez-vous d'avoir téléchargé le certificat de signature correct à partir du portail de développement Apple. Votre certificat a peut-être expiré, ou une clé publique ou privée est peut-être manquante. Si votre profil de configuration et votre certificat Apple peuvent être utilisés pour signer correctement une application dans Xcode, cela signifie qu'ils sont valides pour l'outil de création de package de restrictions d'application.|
 |L'application d'entrée spécifiée n'est pas valide. Spécifiez une application valide.|Assurez-vous que votre application iOS est valide et qu'elle a été compilée sous forme de fichier .app ou .ipa.|
-|L'application d'entrée spécifiée est chiffrée. Spécifiez une application non chiffrée valide.|L'outil de création de package de restrictions d'application ne gère pas les applications chiffrées. Spécifiez une application non chiffrée.|
+|L'application d'entrée spécifiée est chiffrée. Spécifiez une application non chiffrée valide.|L'outil de création de package de restrictions d'application ne gère pas les applications chiffrées. Fournissez une application non chiffrée.|
 |L'application d'entrée spécifiée n'est pas au format PIE (Position Independent Executable). Spécifiez une application valide au format PIE.|Les applications PIE (Position Independent Executable) peuvent être chargées à une adresse mémoire aléatoire lors de l'exécution, ce qui peut offrir certains avantages en termes de sécurité. Pour plus d'informations, consultez votre documentation pour développeurs Apple.|
 |L'application d'entrée spécifiée a déjà été encapsulée. Spécifiez une application non encapsulée valide.|Vous ne pouvez pas traiter une application qui a déjà été traitée par l'outil. Si vous souhaitez retraiter une application, exécutez l'outil à l'aide de la version d'origine de l'application.|
 |L'application d'entrée spécifiée n'est pas signée. Spécifiez une application signée valide.|L'outil de création de package de restrictions d'application nécessite que les applications soient signées. Consultez votre documentation pour développeurs pour savoir comment signer une application encapsulée.|
 |L'application d'entrée spécifiée doit être au format .ipa ou .app.|Seules les extensions .app et .ipa sont acceptées par l'outil de création de package de restrictions d'application. Assurez-vous que votre fichier d'entrée a une extension valide et qu'il a été compilé sous forme de fichier .app ou .ipa.|
 |L'application d'entrée spécifiée a déjà été encapsulée et est à la dernière version de modèle de stratégie.|L'outil de création de package de restrictions d'application ne peut pas ré-encapsuler une application encapsulée existante avec la dernière version du modèle de stratégie.|
-|L'ID client Azure Active Directory donné n'est pas un GUID correctement formé. Veuillez spécifier un ID de client valide.|Lors de l'utilisation du paramètre Client ID, vérifiez que vous avez fourni un ID client valide au format GUID.|
-|L'URI de réponse Azure Active Directory donné n'est pas un URI correctement formé. Veuillez spécifier un URI de réponse valide.|Lors de l'utilisation de la propriété de ligne de commande d'URI de réponse, vérifiez que vous avez fourni un URI de réponse valide.|
-|AVERTISSEMENT : vous n’avez pas spécifié de hachage de certificat SHA1. Assurez-vous que votre application encapsulée est signée avant le déploiement.|Veillez à spécifier un hachage SHA valide (à l'aide de la propriété de ligne de commande **– c** ).|
+|AVERTISSEMENT : vous n’avez pas spécifié de hachage de certificat SHA1. Assurez-vous que votre application encapsulée est signée avant le déploiement.|Veillez à spécifier un hachage SHA1 valide à la suite de l’indicateur de ligne de commande **–c**. |
 
 ### Fichiers journaux de l'outil de création de package de restrictions d'application
-Les applications qui ont été encapsulées à l'aide de l'outil de création de package de restrictions d'application génèrent des journaux qui sont écrits dans la console de l'appareil iOS client. Ces informations sont utiles dans les situations où vous rencontrez des problèmes avec l'application et vous devez identifier si le problème est lié à l'outil de création de package de restrictions d'application. Pour récupérer ces informations, procédez comme suit :
+Les applications qui ont été encapsulées à l'aide de l'outil de création de package de restrictions d'application génèrent des journaux qui sont écrits dans la console de l'appareil iOS client. Ces informations sont utiles quand vous rencontrez des problèmes avec l’application et que vous devez identifier si le problème est lié à l’outil de création de package de restrictions d’application. Pour récupérer ces informations, procédez comme suit :
 
 1.  Reproduisez le problème en exécutant l'application.
 
@@ -133,65 +160,19 @@ Les applications qui ont été encapsulées à l'aide de l'outil de création de
     > [!NOTE]
     > Dans le fichier journal, l'élément « build version » représente le numéro de build de Xcode.
 
-    Les applications encapsulées offrent également aux utilisateurs la possibilité d'envoyer les journaux directement à partir de l'appareil par courrier électronique, après un blocage de l'application. Les utilisateurs peuvent vous envoyer le journal pour que vous l'examiniez et le transmettiez à Microsoft si nécessaire.
+    Les applications encapsulées offrent également aux utilisateurs la possibilité d'envoyer les journaux directement à partir de l'appareil par courrier électronique, après un blocage de l'application. Les utilisateurs peuvent vous envoyer les journaux pour que vous les examiniez et le transmettiez à Microsoft si nécessaire.
 
-## Informations pour les applications utilisant la bibliothèque Azure Active Directory
-Les informations contenues dans cette section concernent uniquement les applications qui utilisent la bibliothèque ADAL. Si vous ne savez pas si votre application utilise cette bibliothèque, contactez le développeur de l'application.
-
-L'application doit intégrer une version de la bibliothèque ADAL supérieure ou égale à la version 1.0.2.
-
-Pour les applications qui utilisent la bibliothèque ADAL, les conditions suivantes doivent être remplies :
-
--   L'application doit intégrer une version de la bibliothèque ADAL supérieure ou égale à la version 1.0.2.
-
--   Les développeurs doivent accorder à leur application l’accès à la ressource Gestion des applications mobiles Intune, comme décrit dans [Étapes à suivre pour les applications qui utilisent la bibliothèque ADAL](#steps-to-follow-for-apps-that-use-adal).
-
-### Vue d’ensemble des identificateurs que vous devez obtenir
-Les applications qui utilisent la bibliothèque ADAL doivent être inscrites via le portail de gestion Azure pour obtenir deux identificateurs uniques :
-
-|Identificateur|Plus d'informations|Valeur par défaut|
-|--------------|--------------------|-----------------|
-|**Client ID**|Un identificateur GUID unique est généré pour chaque application après son inscription auprès d'Azure Active Directory.<br /><br />Si vous connaissez l’ID client spécifique de l’application, vous pouvez spécifier cette valeur. Sinon, la valeur par défaut doit être utilisée.|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**Redirect URI**|Valeur d'URI que les développeurs peuvent fournir lors de l'inscription de leur application auprès d'Azure Active Directory pour s'assurer que les jetons d'authentification sont retournés spécifiquement à ce point de terminaison.<br /><br />L'URI de redirection est un paramètre facultatif pour l'outil de création de package de restrictions d'application. Si vous ne le spécifiez pas, un URI par défaut est utilisé.|urn:ietf:wg:oauth:2.0:oob|
-
-
-### Étapes à suivre pour les applications qui utilisent la bibliothèque ADAL
-
-1.  Consultez la [Vue d’ensemble des identificateurs que vous devez obtenir](#overview-of-identifiers-you-need-to-get) pour identifier les valeurs que vous devez obtenir.
-
-2.  Configurez l’accès à la gestion des applications mobiles dans Azure Active Directory en procédant comme suit :
-
-    1. Connectez-vous à un compte Azure Active Directory existant dans le portail de gestion Azure.
-
-    2.  Cliquez sur **Inscription d'application métier existante** dans Azure Active Directory.
-
-    3.  Dans la section de configuration, choisissez **Configurez l'accès aux API web dans d'autres applications**.
-
-    4.  Dans la section **Autorisations pour d’autres applications**, choisissez **Gestion des applications mobiles Intune** dans la première liste déroulante.
-
-        Vous pouvez maintenant utiliser l’ID client de l’application dans l’outil de création de package de restrictions d’application. Vous trouverez l’ID client de l’application dans le portail de gestion Azure Active Directory, comme décrit dans la section [Vue d’ensemble des identificateurs que vous devez obtenir](#overview-of-identifiers-you-need-to-get).
-
-3.  Utilisez les valeurs de **Client-ID** (en utilisant la propriété **–a**) et **Redirect-URI** comme propriétés de ligne de commande dans l’outil de création de package de restrictions d’application. Si vous n’avez pas ces valeurs, les valeurs par défaut sont utilisées. Vous devez spécifier les deux valeurs, sinon l’utilisateur final ne pourra pas s’authentifier auprès de l’application traitée.
 
 ### Exigences concernant le certificat, le profil de configuration et l’authentification
 
-|Exigence|Détails|
+L’outil de création de package de restrictions d’application présente des conditions qui doivent être remplies pour pouvoir bénéficier de toutes les fonctionnalités.
+
+|Configuration requise|Détails|
 |---------------|-----------|
-|Profil de configuration|**Vérifiez que le profil de configuration est valide avant de l’inclure** - L'outil de création de package de restrictions d'application ne vérifie pas si le profil de configuration a expiré lors du traitement d'une application iOS. Si vous spécifiez un profil de configuration ayant expiré, l’outil de création de package de restrictions d’application inclut le profil de configuration ayant expiré, et vous ne découvrez le problème qu’une fois que l’installation de l’application a échoué sur un appareil iOS.|
-|Certificat|**Assurez-vous que le certificat est valide avant de le spécifier** - L'outil ne vérifie pas si un certificat a expiré lors du traitement d’applications iOS. Si vous fournissez le hachage d'un certificat ayant expiré, l'outil traitera et signera l'application, mais l'installation sur les appareils échouera.<br /><br />**Assurez-vous que le certificat fourni pour signer l'application empaquetée a une correspondance dans le profil de configuration** - L'outil ne vérifie pas si le profil de configuration a une correspondance pour le certificat fourni pour signer l'application encapsulée.|
-|Authentification|Pour que le chiffrement fonctionne, un code confidentiel doit être défini pour l'appareil. Sur les appareils sur lesquels vous avez déployé une application encapsulée, une pression sur la barre d'état sur l'appareil exigera de l'utilisateur qu'il se réauthentifie auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. La stratégie par défaut dans une application encapsulée est l’*authentification lors du redémarrage*. iOS gère toutes les notifications externes (par exemple, un appel téléphonique) en quittant l’application, puis en la redémarrant.<br /><br />Pour les applications encapsulées, le premier utilisateur qui se connecte à une application encapsulée du même éditeur est mis en cache. Après cela, seul cet utilisateur est autorisé à accéder à l'application. Pour réinitialiser l'utilisateur, l'appareil doit être désinscrit puis réinscrit.|
+|Profil de configuration|**Vérifiez que le profil d’approvisionnement est valide avant de l’inclure**. L’outil de création de package de restrictions d’application ne vérifie pas si le profil d’approvisionnement a expiré lors du traitement d’une application iOS. Si vous spécifiez un profil de configuration ayant expiré, l’outil de création de package de restrictions d’application inclut le profil de configuration ayant expiré, et vous ne découvrez le problème qu’une fois que l’installation de l’application a échoué sur un appareil iOS.|
+|Certificat|**Vérifiez que le certificat est valide avant de le spécifier**. L’outil ne vérifie pas si un certificat a expiré lors du traitement des applications iOS. Si vous fournissez le hachage d'un certificat ayant expiré, l'outil traitera et signera l'application, mais l'installation sur les appareils échouera.<br /><br />**Vérifiez que le certificat fourni pour signer l’application empaquetée a une correspondance dans le profil d’approvisionnement**. L’outil ne vérifie pas si le profil d’approvisionnement a une correspondance avec le certificat fourni pour signer l’application encapsulée.|
+|Authentification|Pour que le chiffrement fonctionne, un code confidentiel doit être défini pour l’appareil. Sur les appareils sur lesquels vous avez déployé une application encapsulée, une pression sur la barre d’état sur l’appareil nécessite que l’utilisateur se réauthentifie auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. La stratégie par défaut dans une application encapsulée est l’*authentification lors du redémarrage*. iOS gère toutes les notifications externes (par exemple, un appel téléphonique) en quittant l’application, puis en la redémarrant.
 
-### Résolution des problèmes et notes techniques concernant la bibliothèque ADAL
-
--   Si aucune ressource ADAL n'est trouvée, l'outil inclut la bibliothèque dynamique ADAL. L'outil recherche la bibliothèque ADAL nommée **ADALiOS.bundle** dans le dossier racine.
-
--   L'outil ne recherche pas de binaires ADAL (le cas échéant) dans l'application. Si l'application est liée à une version obsolète, des erreurs d'exécution peuvent se produire pendant la connexion si des stratégies d'authentification sont activées.
-
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] extrait le jeton AAD dans l'ID de ressource MAM [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour l'authentification. Cependant, le jeton n’est pas utilisé dans les appels qui vérifieraient à leur tour la validité du jeton. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] lit uniquement le nom d’utilisateur principal (UPN) de l’utilisateur connecté pour déterminer l’accès de l’application. Le jeton AAD n'est utilisé pour aucun autre appel de service.
-
--   Les jetons d'authentification sont partagés entre les applications du même éditeur, car ils sont stockés dans un trousseau partagé. Si vous souhaitez isoler une application spécifique, vous devez utiliser un certificat de signature et un profil de configuration différents pour cette application.
-
--   Vous pouvez éviter les invites de connexion en double si vous fournissez l'ID client et l'URI de redirection de votre application cliente. Cet ID client doit être inscrit pour accéder à l'ID de ressource MAM [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] publiée dans le tableau de bord AAD. Si ce n'est pas le cas, un échec de connexion se produit lors de l'exécution de l'application.
 
 ## Définition des droits de l’application
 Avant d’encapsuler votre application, vous pouvez lui accorder des **droits** dans le but de lui octroyer des autorisations et des fonctionnalités supplémentaires qui vont au-delà de ce qu’une application peut généralement faire.  Un **fichier de droits** est utilisé pendant la signature du code pour spécifier des autorisations spéciales dans votre application (par exemple, l’accès à un trousseau partagé). Des services d’application spécifiques appelés **capabilities** (fonctionnalités) sont activés dans Xcode pendant le développement de l’application. Une fois activées, les fonctionnalités apparaissent dans votre fichier de droits. Pour plus d’informations sur les droits et les fonctionnalités, consultez [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Ajout de fonctionnalités) dans la bibliothèque du développeur iOS. Pour obtenir la liste complète des fonctionnalités prises en charge, consultez [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) (Fonctionnalités prises en charge).
@@ -201,7 +182,7 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des **droits** 
 |Fonctionnalité|Description|Recommandation|
 |--------------|---------------|------------------------|
 |App Groups|App Groups (groupes d’applications) permet d’autoriser plusieurs applications à accéder à des conteneurs partagés et d’autoriser une communication interprocessus supplémentaire entre les applications.<br /><br />Pour activer App Groups, ouvrez le volet **Capabilities**, puis cliquez sur le commutateur **ON** dans la section **App Groups**. Vous pouvez ajouter des groupes d’applications en ou sélectionner des existants.|Quand vous utilisez App Groups, utilisez la notation DNS inverse :<br /><br />*group.com.companyName.AppGroup*|
-|Background Modes|L'activation de Background Modes (modes d’arrière-plan) permet à votre application iOS de continer à s’exécuter en arrière-plan.||
+|Background Modes|L'activation de Background Modes (modes d’arrière-plan) permet à votre application iOS de continuer à s’exécuter en arrière-plan.||
 |Data Protection|Data Protection (protection des données) ajoute un niveau de sécurité aux fichiers stockés sur le disque par votre application iOS. Data Protection utilise le matériel de chiffrement intégré présent sur certains appareils pour stocker les fichiers dans un format chiffré sur disque. Votre application doit être configurée pour utiliser Data Protection.||
 |In-App Purchase|In-App Purchase (achat dans l’application) incorpore un store directement dans votre application. Vous pouvez vous y connecter et traiter les paiements de l’utilisateur en toute sécurité. Vous pouvez utiliser In-App Purchase pour récupérer les paiements en contrepartie de fonctionnalités améliorées ou de contenu supplémentaire que votre application peut exploiter.||
 |Keychain Sharing|L’activation de Keychain Sharing (partage de trousseau) permet à votre application de partager des mots de passe dans le trousseau avec les autres applications développées par votre équipe.|Quand vous utilisez Keychain Sharing, utilisez la notation DNS inverse :<br /><br />*com.companyName.KeychainGroup*|
@@ -272,17 +253,17 @@ Cette commande supprime toutes les fonctionnalités activées dans l’applicati
 ## Sécurité et confidentialité pour l'outil de création de package de restrictions d'application
 Respectez les meilleures pratiques de sécurité et de confidentialité suivantes lors de l'utilisation de l'outil de création de package de restrictions d'application.
 
--   Le certificat de signature, le profil de configuration et l'application métier que vous spécifiez doivent se trouver sur le même ordinateur Mac que celui que vous utilisez pour exécuter l'outil de création de package de restrictions d'application. Si les fichiers se trouvent sur un chemin UNC, assurez-vous qu'ils sont accessibles à partir de l'ordinateur Mac. Le chemin d'accès doit être sécurisé via la signature SMB ou la sécurité IPsec.
+-   Le certificat de signature, le profil d’approvisionnement et l’application métier que vous spécifiez doivent se trouver sur le même ordinateur macOS que celui que vous utilisez pour exécuter l’outil de création de package de restrictions d’application. Si les fichiers se trouvent sur un chemin UNC, vérifiez qu’ils sont accessibles à partir de l’ordinateur Mac OS. Le chemin d'accès doit être sécurisé via la signature SMB ou la sécurité IPsec.
 
     L'application encapsulée importée dans la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] doit se trouver sur le même ordinateur que celui sur lequel vous exécutez l'outil. Si le fichier se trouve dans un chemin UNC, assurez-vous qu'il est accessible sur l'ordinateur qui exécute la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Le chemin d'accès doit être sécurisé via la signature SMB ou la sécurité IPsec.
 
--   L'environnement où l'outil de création de package de restrictions d'application est téléchargé à partir du site du Centre de téléchargement Microsoft doit être sécurisé via la signature SMB ou la sécurité IPsec.
+-   L’environnement où l’outil de création de package de restrictions d’application est téléchargé à partir du site du dépôt GitHub doit être sécurisé par le biais de la signature SMB ou la sécurité IPsec.
 
--   L'application que vous traitez doit provenir d'une source digne de confiance, pour garantir la protection contre les attaques.
+-   L’application que vous traitez doit provenir d’une source digne de confiance pour garantir la protection contre les attaques.
 
 -   Assurez-vous que le dossier de sortie que vous spécifiez dans l'outil de création de package de restrictions d'application est sécurisé, en particulier s'il s'agit d'un dossier distant.
 
--   Les applications iOS qui incluent une boîte de dialogue de téléchargement de fichier peuvent permettre aux utilisateurs de contourner les restrictions relatives aux opérations couper, copier et coller appliquées à l'application. Par exemple, un utilisateur peut utiliser la boîte de dialogue de téléchargement de fichier pour télécharger une capture d'écran des données de l'application.
+-   Les applications iOS qui incluent une boîte de dialogue de chargement de fichier peuvent permettre aux utilisateurs de contourner les restrictions relatives aux opérations couper, copier et coller appliquées à l’application. Par exemple, un utilisateur peut utiliser la boîte de dialogue de téléchargement de fichier pour télécharger une capture d'écran des données de l'application.
 
 -   Quand les utilisateurs analysent le dossier de documents sur leur appareil depuis une application encapsulée, ils risquent de voir un dossier nommé **.msftintuneapplauncher**. Si ce dossier est modifié ou supprimé, cela peut affecter le bon fonctionnement des applications restreintes.
 
@@ -293,6 +274,6 @@ Respectez les meilleures pratiques de sécurité et de confidentialité suivante
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 
