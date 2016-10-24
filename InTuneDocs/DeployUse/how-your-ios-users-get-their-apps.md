@@ -3,6 +3,7 @@ title: Comment vos utilisateurs iOS obtiennent leurs applications | Microsoft In
 description: "Méthodes de mise à disposition des applications iOS pour les utilisateurs finaux"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

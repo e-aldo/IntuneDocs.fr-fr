@@ -3,6 +3,7 @@ title: "Restreindre l’accès aux services de messagerie et O365 | Microsoft In
 description: "Cette rubrique décrit comment l’accès conditionnel peut servir à autoriser uniquement les appareils compatibles à accéder à la messagerie et aux données de votre entreprise sur SharePoint Online et d’autres services."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

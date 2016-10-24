@@ -3,6 +3,7 @@ title: "Envoyer les erreurs à votre administrateur informatique | Microsoft Int
 description: "Envoyer les erreurs à votre administrateur"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

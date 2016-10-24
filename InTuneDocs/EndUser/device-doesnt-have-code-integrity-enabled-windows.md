@@ -3,6 +3,7 @@ title: "L’intégrité du code n’est pas activée sur l’appareil | Microsof
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

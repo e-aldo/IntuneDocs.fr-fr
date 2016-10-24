@@ -3,6 +3,7 @@ title: "Définir ou modifier votre code secret | Microsoft Intune"
 description: "Définir ou modifier votre code secret"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Guide d’évaluation de Microsoft Intune | Microsoft Intune"
 description: "Présentation et configuration requise pour l’installation d’un essai gratuit de 30 jours d’Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

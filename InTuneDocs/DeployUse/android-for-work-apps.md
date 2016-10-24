@@ -3,6 +3,7 @@ title: "Déployer des applications sur des appareils Android for Work| Microsoft
 description: "Utilisez cette rubrique pour synchroniser, puis déployer des applications sur des appareils Android for Work à partir du Google Play for Work Store."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

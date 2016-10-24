@@ -3,6 +3,7 @@ title: "Paramètres de stratégie de conformité pour Android for Work | Microso
 description: "Cette rubrique décrit les paramètres de stratégie de conformité d’appareil pour les appareils Android compatibles avec Android for Work."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

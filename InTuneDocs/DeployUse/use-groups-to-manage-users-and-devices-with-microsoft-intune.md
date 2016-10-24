@@ -3,6 +3,7 @@ title: "Utiliser des groupes pour gérer les utilisateurs et les appareils | Mic
 description: "Créer et gérer des groupes à l’aide de l’espace de travail Groupes."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

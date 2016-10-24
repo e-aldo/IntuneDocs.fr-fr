@@ -3,6 +3,7 @@ title: "Ressources concernant l’expérience utilisateur final avec Microsoft I
 description: "Liens menant vers des informations à partager avec vos utilisateurs finaux"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article

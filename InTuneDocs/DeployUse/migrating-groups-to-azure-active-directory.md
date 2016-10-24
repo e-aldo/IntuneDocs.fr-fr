@@ -3,6 +3,7 @@ title: Migration vers des groupes Azure Active Directory | Microsoft Intune
 description: "Comment vos groupes sont migrés d’Intune vers Azure AD"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 10/10/2016
 ms.topic: article

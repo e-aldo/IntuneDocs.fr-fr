@@ -3,6 +3,7 @@ title: "Utiliser la journalisation détaillée pour aider votre administrateur i
 description: "Aider votre administrateur informatique à résoudre les problèmes de l’appareil à l’aide de la journalisation détaillée"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

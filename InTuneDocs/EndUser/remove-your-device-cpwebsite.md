@@ -3,6 +3,7 @@ title: "Supprimer votre appareil du portail d’entreprise | Microsoft Intune"
 description: "Supprimer un appareil du portail d’entreprise"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

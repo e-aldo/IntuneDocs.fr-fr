@@ -7,6 +7,7 @@ title: Documentation Intune | Documents Microsoft
 description: Documentation technique pour Microsoft Intune - Gestion des applications et des appareils mobiles
 keywords: documentation Intune, gestion des applications, gestion des appareils, documentation MDM, documentation GAM
 author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 10/07/2016
 ms.topic: hubpage

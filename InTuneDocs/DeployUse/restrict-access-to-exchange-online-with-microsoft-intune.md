@@ -3,6 +3,7 @@ title: "Limiter l’accès à la messagerie sur Exchange Online | Microsoft Intu
 description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à la messagerie de votre entreprise sur Exchange Online."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

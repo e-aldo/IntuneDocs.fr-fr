@@ -3,6 +3,7 @@ title: "Nouveautés | Microsoft Intune"
 description: "Découvrir les nouveautés de la version de Microsoft Intune de ce mois-ci et des versions précédentes"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/13/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Inscrire un appareil Windows 8.1 ou Windows RT 8.1 | Microsoft Intune"
 description: "Cette rubrique explique comment inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

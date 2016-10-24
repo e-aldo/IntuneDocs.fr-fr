@@ -3,6 +3,7 @@ title: Comment vos utilisateurs Android obtiennent leurs applications | Microsof
 description: "Méthodes de mise à disposition des applications Android pour les utilisateurs finaux"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article

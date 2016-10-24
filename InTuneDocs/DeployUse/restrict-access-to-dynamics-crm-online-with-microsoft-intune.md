@@ -3,6 +3,7 @@ title: "Restreindre l’accès à la messagerie à Dynamics CRM Online | Microso
 description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à Dynamics CRM Online."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

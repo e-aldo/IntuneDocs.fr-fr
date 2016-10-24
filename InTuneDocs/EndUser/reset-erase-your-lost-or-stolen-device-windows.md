@@ -3,6 +3,7 @@ title: "Réinitialiser (effacer) votre appareil Windows perdu ou volé | Microso
 description: "Réinitialiser un appareil Windows perdu ou volé"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

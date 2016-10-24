@@ -3,6 +3,7 @@ title: "L’appareil iOS n’est pas équipé de la version minimale requise du 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

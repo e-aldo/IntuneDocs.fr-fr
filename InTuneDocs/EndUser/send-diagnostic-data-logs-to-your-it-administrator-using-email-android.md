@@ -3,6 +3,7 @@ title: "Envoyer les journaux de données de diagnostic à votre administrateur i
 description: "Envoyer les journaux de données par e-mail sur un appareil Android"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

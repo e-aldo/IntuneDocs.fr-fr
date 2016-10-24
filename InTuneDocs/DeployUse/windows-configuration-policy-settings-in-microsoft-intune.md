@@ -3,6 +3,7 @@ title: "Paramètres de la stratégie Windows | Microsoft Intune"
 description: "Utilisez la stratégie de configuration générale Windows (Windows 8.1 et versions ultérieures) Intune pour configurer les paramètres des appareils Windows 8 et Windows 8.1 inscrits."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

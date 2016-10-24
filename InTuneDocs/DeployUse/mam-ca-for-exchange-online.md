@@ -3,6 +3,7 @@ title: "Configurer l’accès aux applications pour Exchange Online | Microsoft 
 description: "Cette rubrique décrit comment vous pouvez configurer une stratégie d’accès conditionnel pour les applications GAM."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

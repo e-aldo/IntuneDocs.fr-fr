@@ -3,6 +3,7 @@ title: Configuration de la gestion Android for Work | Microsoft Intune
 description: Activez la gestion des appareils mobiles pour les appareils Android for Work avec Microsoft Intune.
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

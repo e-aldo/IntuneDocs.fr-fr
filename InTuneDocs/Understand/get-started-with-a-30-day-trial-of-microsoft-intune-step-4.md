@@ -3,6 +3,7 @@ title: "Créer des stratégies et publier une application pour les utilisateurs 
 description: "Cette rubrique explique comment créer des stratégies et publier une application lorsque vous vous inscrivez à un essai gratuit de 30 jours d’Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

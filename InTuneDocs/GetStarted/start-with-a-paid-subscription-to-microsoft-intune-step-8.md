@@ -3,6 +3,7 @@ title: Inscrire des appareils mobiles et installer une application | Microsoft I
 description: Cette rubrique explique comment inscrire des appareils mobiles et installer une application sur un appareil Intune inscrit
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

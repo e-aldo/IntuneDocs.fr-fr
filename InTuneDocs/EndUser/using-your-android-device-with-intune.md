@@ -3,6 +3,7 @@ title: Utilisation de votre appareil Android avec Intune | Microsoft Intune
 description: "Cette rubrique fournit une liste de liens menant aux tâches que vous pouvez effectuer sur votre appareil mobile Android lorsque ce dernier est inscrit dans Intune"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

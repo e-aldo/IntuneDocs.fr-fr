@@ -3,6 +3,7 @@ title: "Paramètres de stratégie de sécurité des appareils mobiles | Microsof
 description: "Utilisez Intune pour configurer une grande variété de paramètres que vous pouvez déployer sur les appareils gérés de votre organisation."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

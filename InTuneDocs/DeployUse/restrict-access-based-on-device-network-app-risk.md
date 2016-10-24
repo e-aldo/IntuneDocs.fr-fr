@@ -3,6 +3,7 @@ title: "Restreindre l’accès à l’aide de la protection contre les menaces s
 description: "Restreindre l’accès aux ressources d’entreprise en fonction du risque évalué pour l’appareil, le réseau et l’application."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

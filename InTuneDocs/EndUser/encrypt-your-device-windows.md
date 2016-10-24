@@ -3,6 +3,7 @@ title: Chiffrer votre appareil Windows | Microsoft Intune
 description: Cette rubrique explique comment chiffrer un appareil Windows
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

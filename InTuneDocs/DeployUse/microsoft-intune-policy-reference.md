@@ -3,6 +3,7 @@ title: "Référence de stratégie de configuration | Microsoft Intune"
 description: "Utilisez les informations de cette rubrique pour vous aider à déterminer la stratégie Microsoft Intune à utiliser pour gérer vos appareils."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

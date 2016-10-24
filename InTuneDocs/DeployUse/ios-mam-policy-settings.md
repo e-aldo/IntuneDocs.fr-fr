@@ -3,6 +3,7 @@ title: "Paramètres de stratégie de gestion des applications mobiles iOS | Micr
 description: "Cette rubrique décrit les paramètres de stratégie de gestion des applications mobiles pour les appareils iOS."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

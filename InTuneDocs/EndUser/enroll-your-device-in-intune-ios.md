@@ -3,6 +3,7 @@ title: Inscrire un appareil iOS dans Intune | Microsoft Intune
 description: Cette rubrique explique comment inscrire un appareil iOS dans Intune
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

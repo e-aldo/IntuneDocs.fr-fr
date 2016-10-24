@@ -3,6 +3,7 @@ title: "Résoudre les problèmes de stratégie | Microsoft Intune"
 description: "Résolvez les problèmes de configuration de stratégie."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

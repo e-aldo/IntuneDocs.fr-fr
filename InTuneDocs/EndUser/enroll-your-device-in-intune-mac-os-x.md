@@ -3,6 +3,7 @@ title: Inscrire un appareil Mac OS X dans Intune | Microsoft Intune
 description: "Cette rubrique décrit comment inscrire un appareil Mac OS X dans Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

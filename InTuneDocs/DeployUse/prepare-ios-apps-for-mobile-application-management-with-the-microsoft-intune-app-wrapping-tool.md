@@ -3,6 +3,7 @@ title: "Inclure des applications iOS dans un wrapper avec l’outil de création
 description: "Cette rubrique explique comment inclure des applications iOS dans un wrapper sans modifier leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

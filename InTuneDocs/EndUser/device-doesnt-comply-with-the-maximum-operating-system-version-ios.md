@@ -3,6 +3,7 @@ title: "L’appareil iOS n’est pas conforme à la version maximale du système
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

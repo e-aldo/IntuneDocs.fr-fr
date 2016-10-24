@@ -3,6 +3,7 @@ title: "Envoyer les erreurs d’inscription à votre administrateur informatique
 description: "Envoyer les erreurs d’inscription à votre administrateur"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

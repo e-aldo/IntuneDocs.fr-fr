@@ -4,6 +4,7 @@ title: "Paramètres de stratégie Android for Work | Microsoft Intune"
 description: "Créez des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils Android for Work que vous gérez avec Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

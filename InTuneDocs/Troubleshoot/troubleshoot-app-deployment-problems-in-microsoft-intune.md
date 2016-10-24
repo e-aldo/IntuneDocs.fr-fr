@@ -3,6 +3,7 @@ title: "Résoudre les problèmes de déploiement d’applications | Microsoft In
 description: "Cette rubrique vous aide à résoudre les problèmes de déploiement d’applications dans Microsoft Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Paramètres de la stratégie dans Windows 10 | Microsoft Intune"
 description: "Utilisez les paramètres de stratégie de cette rubrique pour configurer les paramètres intégrés et personnalisés des appareils Windows 10 Mobile et Windows 10 Desktop inscrits."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/03/2016
 ms.topic: article

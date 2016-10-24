@@ -3,6 +3,7 @@ title: "Que se passe-t-il si vous réinitialisez votre appareil iOS à l’aide 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

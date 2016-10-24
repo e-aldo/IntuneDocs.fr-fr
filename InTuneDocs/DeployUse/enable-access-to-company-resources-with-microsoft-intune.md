@@ -3,6 +3,7 @@ title: "Activer l’accès aux ressources de l’entreprise | Microsoft Intune"
 description: "Les profils Wi-Fi, VPN et de messagerie œuvrent ensemble pour aider vos utilisateurs à accéder aux fichiers et aux ressources dont ils ont besoin."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

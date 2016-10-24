@@ -3,6 +3,7 @@ title: "Désinscription d’un appareil Android d’Intune | Microsoft Intune"
 description: "Cette rubrique explique comment désinscrire un appareil Android d’Intune"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

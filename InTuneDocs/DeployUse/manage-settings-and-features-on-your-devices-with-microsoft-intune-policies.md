@@ -3,6 +3,7 @@ title: "Gérer des paramètres d’appareils avec des stratégies | Microsoft In
 description: "Utilisez Intune pour créer et déployer des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils inscrits que vous gérez."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

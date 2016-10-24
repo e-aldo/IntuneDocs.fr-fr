@@ -3,6 +3,7 @@ title: Comment vos utilisateurs Windows obtiennent leurs applications | Microsof
 description: "Méthodes de mise à disposition des applications Windows pour les utilisateurs"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

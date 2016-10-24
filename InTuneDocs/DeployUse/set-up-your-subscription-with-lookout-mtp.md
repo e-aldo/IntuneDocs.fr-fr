@@ -3,6 +3,7 @@ title: Configurer votre abonnement avec Lookout | Microsoft Intune
 description: "Cette rubrique décrit comment configurer le service Lookout de protection des appareils contre les menaces."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

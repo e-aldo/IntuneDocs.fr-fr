@@ -3,6 +3,7 @@ title: "Application du portail d’entreprise non prise en charge | Microsoft In
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

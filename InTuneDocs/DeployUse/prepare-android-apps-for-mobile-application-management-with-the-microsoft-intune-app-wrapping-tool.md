@@ -3,6 +3,7 @@ title: "Inclure des applications Android dans un wrapper avec l’outil de créa
 description: "Cette rubrique explique comment inclure des applications Android dans un wrapper sans modifier le code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
