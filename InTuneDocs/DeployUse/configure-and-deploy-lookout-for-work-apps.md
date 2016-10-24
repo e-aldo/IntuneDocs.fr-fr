@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99005e15268a60cd801ef1c717088dff2f82927b
-ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
+ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
+ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 
 ---
@@ -40,7 +40,7 @@ Choisissez l’option **Installation requise** pour exiger que l’application L
 
 ## iOS (version Enterprise signée de l’application Lookout)
 
-* **Étape 1 :** Vérifiez que la **gestion iOS** est configurée sur votre appareil. Pour obtenir des instructions sur la configuration de votre appareil relative à la gestion iOS, consultez [Configurer la gestion des appareils iOS et Mac](Set up iOS and Mac device management.md).
+* **Étape 1 :** Vérifiez que la **gestion iOS** est configurée sur votre appareil. Pour obtenir des instructions sur la configuration de votre appareil relative à la gestion iOS, consultez [Configurer la gestion des appareils iOS et Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 * **Étape 2 :** **Resignez** l’application iOS Lookout for Work. Lookout distribue son application iOS Lookout for Work en dehors de l’App Store iOS. **Avant de distribuer l’application**, vous devez resigner l’application avec votre certificat de développeur d’entreprise iOS. Pour obtenir des instructions détaillées pour resigner des applications iOS Lookout for Work, consultez [Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/en-us/articles/114094038714) (Processus pour resigner des applications iOS Lookout for Work) sur le site Lookout.
 
@@ -49,7 +49,7 @@ Choisissez l’option **Installation requise** pour exiger que l’application L
   1.  Connectez-vous au [portail de gestion Azure Active Directory](https://manage.windowsazure.com) et accédez à la page d’application.
   2.  Ajoutez l’**application iOS Lookout for Work ** comme **application cliente native**.
   ![Capture d’écran de la boîte de dialogue Ajouter des applications présentant l’option Application cliente native](../media/mtp/aad-add-app.png)
-  
+
   3. Remplacez **com.lookout.enterprise.nom_de_votre_entreprise** par l’ID d’ensemble client que vous avez sélectionné quand vous avez signé le package IPA.
   4.  Ajouter l’URI de redirection : **&lt;companyportal://code/ >** suivi d’une version codée URL de votre URI de redirection d’origine.
   5.  Ajoutez **Autorisations déléguées** à votre application.
