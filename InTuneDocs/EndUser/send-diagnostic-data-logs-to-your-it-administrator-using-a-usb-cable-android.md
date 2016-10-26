@@ -2,8 +2,8 @@
 title: "Envoyer les journaux de données de diagnostic à votre administrateur informatique par câble USB | Microsoft Intune"
 description: "Envoyer les journaux de données par câble USB"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "Envoyer les journaux de données de diagnostic à votre administrateur informatique par e-mail | Microsoft Intune"
 description: "Envoyer les journaux de données par e-mail sur un appareil Android"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

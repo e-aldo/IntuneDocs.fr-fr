@@ -2,8 +2,8 @@
 title: Inscrire un appareil Windows dans Intune | Microsoft Intune
 description: Cette rubrique explique comment inscrire un appareil Windows dans Intune
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

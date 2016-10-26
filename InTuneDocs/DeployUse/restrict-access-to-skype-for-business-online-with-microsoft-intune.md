@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ Lorsqu’un utilisateur ciblé tente d’utiliser Skype Entreprise Online sur so
 
 **Avant** de configurer une stratégie d’accès conditionnel à Skype Entreprise Online, vous devez :
 - Disposer d’un **abonnement Skype Entreprise Online** et affecter une licence Skype Entreprise Online aux utilisateurs.
-- Avoir **un abonnement Enterprise Mobility + Security ou Azure Active Directory Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+- Avoir **un abonnement Enterprise Mobility + Security ou Azure Active Directory Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -   [Authentification moderne activée](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) pour Skype Entreprise Online.
 -  Tous vos utilisateurs finaux doivent utiliser **Skype Entreprise Online**. Si votre déploiement comprend à la fois Skype Entreprise Online et Skype Entreprise local, la stratégie d’accès conditionnel n’est pas appliquée aux utilisateurs finaux.
