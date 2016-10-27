@@ -2,7 +2,8 @@
 title: "Inscrire un appareil Windows 8.1 ou Windows RT 8.1 | Microsoft Intune"
 description: "Cette rubrique explique comment inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune"
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: ce39a013186942e3d5a2b355d1425edbed4fa769
 
 # Inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune
 
-Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. L’inscription de vos appareils permet à votre organisation de sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, votre organisation peut sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 Pour inscrire un appareil Windows 8.1 ou Windows RT 8.1
@@ -33,9 +34,9 @@ Pour inscrire un appareil Windows 8.1 ou Windows RT 8.1
 
 2.  Si nécessaire, entrez votre adresse de messagerie professionnelle ou scolaire comme ID utilisateur, puis appuyez sur **Joindre**.
 
-    Si votre ID utilisateur n’est pas obligatoire, l’adresse de messagerie que vous avez entrée lors de votre connexion à cet appareil est utilisée.
+    Si votre ID utilisateur n’est pas obligatoire, l’adresse e-mail que vous avez entrée durant votre connexion à cet appareil est utilisée.
 
-3.  Tapez le mot de passe de votre messagerie professionnelle ou scolaire.
+3.  Entrez le mot de passe de votre e-mail professionnel ou scolaire.
 
     ![type-password](./media/W81-2-workplacesettings_signin.png)
 
@@ -51,21 +52,20 @@ Pour inscrire un appareil Windows 8.1 ou Windows RT 8.1
 
     ![enrollment-complete](./media/W81-5-enrolled-done.png)
 
-Nous vous recommandons aussi d'installer l'application Portail d'entreprise. Elle vous permet d'identifier et d'obtenir facilement les applications d'entreprise qui présentent un intérêt pour vous et votre rôle. En fonction de la façon dont votre entreprise a configuré Intune, l'application Portail d'entreprise a peut-être été installée dans le cadre de votre processus d'inscription. Pour vérifier si vous disposez de l’application, recherchez **Portail d’entreprise** dans votre liste d’applications. Si l'application Portail d'entreprise ne figure pas dans votre liste d'applications, procédez comme suit pour l'installer.
+Nous vous recommandons aussi d'installer l'application Portail d'entreprise. Elle vous permet d'identifier et d'obtenir facilement les applications d'entreprise qui présentent un intérêt pour vous et votre rôle. En fonction de la façon dont votre entreprise a configuré Intune, l’application Portail d’entreprise a peut-être été installée dans le cadre de votre processus d’inscription. Pour vérifier si vous disposez de l’application, recherchez **Portail d’entreprise** dans votre liste d’applications. Si l'application Portail d'entreprise ne figure pas dans votre liste d'applications, procédez comme suit pour l'installer.
 
 1.  Appuyez sur **Démarrer** &gt; **Store**.
 
-2.  Appuyez sur **Rechercher** et tapez **portail d’entreprise**.
+2.  Appuyez sur **Rechercher**, puis tapez **portail d’entreprise**.
 
 3.  Dans la liste des résultats, appuyez sur **Portail d’entreprise**.
 
-4.  Appuyez sur **Installer** ou **Gratuit**. L'option affichée dépend de la façon dont votre société a configuré l'application.
+4.  Appuyez sur **Installer** ou **Gratuit**. L’option affichée dépend de la façon dont votre société a configuré l’application.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

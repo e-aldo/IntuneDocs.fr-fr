@@ -3,6 +3,7 @@ title: Inscrire un appareil Mac OS X dans Intune | Microsoft Intune
 description: "Cette rubrique décrit comment inscrire un appareil Mac OS X dans Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,16 +15,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
 
 
 ---
 
 
-# Inscrire un appareil Mac OS X dans Intune
+# Inscrire votre appareil Mac OS X dans Intune
 
-L’inscription de votre appareil Mac OS X dans Intune vous donne accès au réseau de l’entreprise, à votre messagerie professionnelle et à vos fichiers de travail, et elle vous permet d’obtenir les applications de l’entreprise. Pour plus d’informations sur ce qui se passe quand vous inscrivez votre appareil, consultez [Que se passe-t-il quand vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Quand votre appareil Mac OS X est inscrit dans Intune, vous pouvez accéder au réseau de l’entreprise, à vos e-mails professionnels et à vos fichiers de travail. Vous pouvez également obtenir les applications de l’entreprise. Pour plus d’informations sur ce qui se passe quand vous inscrivez votre appareil, consultez [Que se passe-t-il quand vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 Si vous essayez d’inscrire un appareil iOS, consultez [Inscrire un appareil iOS dans Intune](enroll-your-device-in-intune-ios.md).
 
@@ -36,15 +37,15 @@ Pour inscrire un appareil Mac OS X
 
     ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
-3.  Appuyez sur **Installer** pour commencer l’inscription de votre appareil.
+3.  Appuyez sur **Installer** pour commencer à inscrire votre appareil.
 
     ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
-4.  Dans la boîte de dialogue **Installer un profil de gestion**, appuyez sur **Installer**. Si une boîte de dialogue s’affiche et vous demande d’entrer vos informations d’identification, entrez votre nom d’utilisateur et votre mot de passe, puis appuyez sur **Continuer** &gt; **Installer**.
+4.  Dans la boîte de dialogue **Installer un profil de gestion**, appuyez sur **Installer**. Si une boîte de dialogue vous demande d’entrer vos informations d’identification, entrez votre nom d’utilisateur et votre mot de passe, puis appuyez sur **Continuer** &gt; **Installer**.
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
-    Quand vous avez terminé l’inscription, vous voyez une page Profil de gestion indiquant que votre profil a été vérifié.
+    Quand vous avez terminé l’inscription, une page **Profil de gestion** apparaît indiquant que votre profil a été vérifié.
 
     ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
@@ -52,7 +53,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

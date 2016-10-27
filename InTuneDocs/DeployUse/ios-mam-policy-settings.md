@@ -3,8 +3,9 @@ title: "Paramètres de stratégie de gestion des applications mobiles iOS | Micr
 description: "Cette rubrique décrit les paramètres de stratégie de gestion des applications mobiles pour les appareils iOS."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,8 +85,13 @@ Le terme **Applications gérées par la stratégie** est utilisé pour désigner
   Quand vous effectuez une réinitialisation sélective pour supprimer les données d’entreprise, les contacts synchronisés directement à partir de l’application de carnet d’adresses native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, ceci s’applique uniquement à l’application **Microsoft Outlook**.
 
   **Valeur par défaut = Oui**
+  
+- **Désactiver l’impression :** choisissez **Oui** pour empêcher d’imprimer des données d’entreprise à partir d’applications qui sont associées à la stratégie GAM.
+
+    **Valeur par défaut : Oui**
+
 ##  Paramètres de stratégie d’accès à iOS
-Le terme **Applications gérées par la stratégie** est utilisé pour désigner les applications qui sont configurées avec des stratégies de gestion des applications mobiles.
+On utilise le terme **Applications gérées par la stratégie** pour faire référence aux applications qui sont configurées avec des stratégies de gestion des applications mobiles.
 - **Exiger un code confidentiel pour l’accès :** choisissez **Oui** pour exiger un code confidentiel pour l’utilisation des applications gérées par la stratégie. L’utilisateur est invité à définir ce code lors de la première exécution de l’application dans un contexte de travail.
 
   **Valeur par défaut = Oui**
@@ -114,6 +120,6 @@ Sur les appareils iOS, vous pouvez autoriser les utilisateurs à s’identifier 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

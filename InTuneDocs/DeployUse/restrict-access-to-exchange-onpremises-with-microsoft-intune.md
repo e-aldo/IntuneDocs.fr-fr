@@ -3,8 +3,9 @@ title: "Limiter l’accès à la messagerie sur la version locale d’Exchange |
 description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à la messagerie de votre entreprise sur Exchange en local."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +65,19 @@ Le diagramme suivant illustre le flux utilisé par les stratégies d’accès co
 -   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers l’application ou le site web du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], où il peut trouver des informations sur le problème et des solutions pour y remédier.
 
 ## Prise en charge des appareils mobiles
--   Windows Phone 8 et versions ultérieures
+-   Windows Phone 8.1 et versions ultérieures
 
 -   Application de messagerie native sur iOS.
 
--   Application de messagerie native sur Android 4 ou version ultérieure
+-   Clients de messagerie EAS, comme Gmail sur Android 4 ou ultérieur.
+- Clients de messagerie EAS sur les **appareils Android for Work :** seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne avec Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer ces applications comme installation obligatoire. 
+
 > [!NOTE]
 > L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge.
 
 ## Prise en charge des PC
 
-Application **Courrier** sur Windows 8 et versions ultérieures (en cas d’inscription avec [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+Application **Courrier** sur Windows 8.1 et versions ultérieures (en cas d’inscription avec [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Configurer une stratégie d’accès conditionnel
 
@@ -123,6 +126,6 @@ Application **Courrier** sur Windows 8 et versions ultérieures (en cas d’ins
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -2,9 +2,10 @@
 title: "Erreur lors de l’évaluation de l’appareil | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: a497a3e9372a89326f31d6eb869e38200ebe6802
+ms.sourcegitcommit: 703878a70227716213f5a25b1b5dfa99fce42ee5
+ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 
 
 ---
 
 
 # Erreur lors de l'évaluation de l’appareil
-Votre périphérique a été détecté non conforme avec l'une ou plusieurs des stratégies de votre société et une erreur s'est produite lors de l'évaluation de l'appareil pour cette condition.
+Votre appareil a été détecté comme étant non conforme à une ou plusieurs des stratégies de votre entreprise, mais nous ne pouvons pas afficher l’erreur dans l’immédiat, car le système a rencontré un problème durant l’évaluation de votre appareil.  
 
-Pour résoudre ce problème, patientez quelques minutes, puis cliquez sur **vérifier la conformité**.
-
-Si le problème persiste, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Pour résoudre ce problème, patientez quelques minutes, puis cliquez sur **vérifier la conformité**. Si le problème persiste, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,8 +3,9 @@ title: "Paramètres de stratégie de sécurité des appareils mobiles | Microsof
 description: "Utilisez Intune pour configurer une grande variété de paramètres que vous pouvez déployer sur les appareils gérés de votre organisation."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +41,7 @@ Vous pouvez créer et déployer des stratégies de sécurité des appareils mobi
 
 > [!NOTE]
 > Certains paramètres ne sont pas applicables à certains appareils. Consultez le tableau ci-dessous pour obtenir une liste complète des paramètres configurables.
+> À compter d’octobre 2016, Microsoft Intune ne prend plus en charge les applications du portail d’entreprise Windows 8. Microsoft Intune ne prend également plus en charge les plateformes Windows Phone 8 et WinRT. Ainsi, vous ne pouvez plus inscrire ni mettre à jour des appareils Windows Phone 8 ou WinRT. Néanmoins, vous pouvez continuer à gérer les appareils Windows Phone 8, WinRT et Windows 8 déjà inscrits. Mettez à jour les appareils Windows Phone 8 et Windows 8 vers Windows Phone 8.1 et Windows 8.1, et utilisez les applications Portail d’entreprise Windows 8.1 et Windows Phone 8.1 correspondantes pour continuer à distribuer des applications sur ces appareils sans interruption.
 
 ## Paramètres de sécurité
 
@@ -212,6 +214,6 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

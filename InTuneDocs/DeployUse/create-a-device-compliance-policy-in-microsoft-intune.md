@@ -3,6 +3,7 @@ title: "Créer une stratégie de conformité des appareils | Microsoft Intune"
 description: "Créez une stratégie de conformité pour vous aider à sécuriser les appareils mobiles et ordinateurs utilisés pour accéder aux données de votre entreprise."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Résoudre les problèmes de stratégie | Microsoft Intune"
 description: "Résolvez les problèmes de configuration de stratégie."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
-ms.openlocfilehash: 8b2f725dd71a9d5da5387c543261df8607be6d6f
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
 
 
 ---
@@ -56,10 +57,10 @@ La capture d’écran ci-dessous illustre clairement ce point à travers deux ex
 Si vous avez créé des stratégies dans l’espace de travail Stratégie Exchange sur site de la Console d’administration, mais que vous utilisez O365, les paramètres de stratégie configurés ne sont pas appliqués par Intune. Notez la source de la stratégie indiquée dans l’alerte.  Dans l’espace de travail Stratégie Exchange sur site, supprimez les règles existantes, car ce sont des règles Exchange globales qui se trouvent dans Intune et qui concernent Exchange sur site et non O365. Créez ensuite une stratégie pour O365.
 
 ### Impossible de modifier la stratégie de sécurité pour différents appareils inscrits
-Les appareils Windows Phone et Windows RT n’autorisent pas d’assouplir les stratégies de sécurité définies via GPM ou EAS a posteriori. Tel est le cas, par exemple, si vous fixez le **nombre minimal de caractères des mots de passe** à 8, puis que vous essayez de le réduire à 4. La stratégie la plus restrictive a déjà été appliquée à l’appareil.
+Les appareils Windows Phone n’autorisent pas d’assouplir les stratégies de sécurité définies via GPM ou EAS a posteriori. Tel est le cas, par exemple, si vous fixez le **nombre minimal de caractères des mots de passe** à 8, puis que vous essayez de le réduire à 4. La stratégie la plus restrictive a déjà été appliquée à l’appareil.
 
 Selon la plateforme d’appareil, si vous voulez attribuer à la stratégie une valeur moins sûre, vous devrez peut-être réinitialiser les stratégies de sécurité.
-Par exemple, dans Windows RT, sur le bureau, balayez à partir de la droite pour ouvrir la barre **Icônes**, puis choisissez **Paramètres** &gt; **Panneau de configuration**.  Sélectionnez l’applet **Comptes d’utilisateurs**.
+Par exemple, dans Windows, sur le Bureau, balayez à partir de la droite pour ouvrir la barre **Icônes**, puis choisissez **Paramètres** &gt; **Panneau de configuration**.  Sélectionnez l’applet **Comptes d’utilisateurs**.
 Au bas du menu de navigation gauche figure le lien **Réinitialiser les stratégies de sécurité**. Choisissez-le, puis choisissez le bouton **Réinitialiser les stratégies**.
 Pour pouvoir appliquer une stratégie moins restrictive, vous devrez peut-être retirer les autres appareils MDM (par exemple, Android, Windows Phone 8.1 et versions ultérieures et iOS), puis les réinscrire dans le service.
 
@@ -98,6 +99,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

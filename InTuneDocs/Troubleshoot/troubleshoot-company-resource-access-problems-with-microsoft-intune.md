@@ -3,6 +3,7 @@ title: "Résoudre les problèmes d’accès aux ressources d’entreprise | Micr
 description: "Cette rubrique présente les codes d’erreur et d’état pour vous aider à résoudre les problèmes d’accès aux ressources."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Résoudre les problèmes d’inscription d’appareils | Microsoft Intun
 description: "Suggestions pour résoudre les problèmes liés à l’inscription d’appareils."
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

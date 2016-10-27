@@ -3,6 +3,7 @@ title: "Comment reconnecter un appareil iOS endommagé | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,17 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c47a7097d86ded8e6f38f0270352a7c432110464
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: 166c0708645d191abaaa73aa3143ca558d64ffd0
 
 
 ---
 
 # Comment reconnecter un appareil iOS endommagé
-Votre administrateur informatique a détecté que vous utilisez un appareil débridé. « Jailbreaké » signifie que des restrictions logicielles imposées par iOS ont été supprimées, ce qui peut compromettre la sécurité et menacer les ressources de votre entreprise. Quand c’est le cas, vous ne pouvez plus accéder aux ressources de l’entreprise avec votre appareil et vous devez contacter votre administrateur pour obtenir de l’aide. Pour obtenir les coordonnées de l’administrateur, consultez le site web [Portail d’entreprise](http://portal.manage.microsoft.com).
+Votre administrateur informatique a détecté que vous utilisez un appareil « jailbreaké ». « Jailbreaké » signifie que des restrictions logicielles, imposées par iOS, ont été supprimées. La suppression de ces restrictions peut compromettre la sécurité et menacer les ressources de votre entreprise. 
+
+Quand c’est le cas, vous ne pouvez plus accéder aux ressources de l’entreprise avec votre appareil et vous devez contacter votre administrateur pour obtenir de l’aide. Pour obtenir les coordonnées de l’administrateur, consultez le site web [Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

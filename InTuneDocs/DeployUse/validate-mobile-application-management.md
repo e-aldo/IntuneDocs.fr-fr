@@ -4,6 +4,7 @@ title:
 description: "Cette rubrique décrit comment tester et valider la configuration et le bon fonctionnement de votre stratégie de gestion des applications mobiles."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

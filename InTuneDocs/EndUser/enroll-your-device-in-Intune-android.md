@@ -2,7 +2,8 @@
 title: Inscrire un appareil Android dans Intune | Microsoft Intune
 description: Cette rubrique explique comment inscrire un appareil Android dans Intune
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
-ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
 
 
 ---
@@ -22,13 +23,13 @@ ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 # Inscrire un appareil Android dans Intune
 
-Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil Android pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. L’inscription de vos appareils permet au service Informatique de gérer ces ressources professionnelles ou pédagogiques et de les sécuriser, tout en vous donnant la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil ?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
+Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil Android pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, le service Informatique peut gérer ces ressources professionnelles ou pédagogiques, les sécuriser et vous donner la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil ?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
-Ces instructions d’inscription concernent les appareils Samsung Knox Android et les appareils Android « natifs » (autres que Samsung Knox). Pour déterminer si vous disposez d’un appareil Samsung Knox, accédez à **Paramètres** &gt; **À propos de l’appareil**. Si « Version Knox » n’apparaît pas dans la liste, c’est que vous avez un appareil Android natif.
+Ces instructions d’inscription concernent les appareils Samsung Knox Android et les appareils Android « natifs » (autres que Samsung Knox). Pour vérifier si vous disposez d’un appareil Samsung Knox, accédez à **Paramètres** &gt; **À propos de l’appareil**. Si « Version Knox » n’apparaît pas dans la liste, c’est que vous avez un appareil Android natif.
 
-Avant ou après l’inscription, vous pouvez être invité à choisir une catégorie qui décrit le mieux votre utilisation de l’appareil. Votre administrateur informatique utilise cette catégorie pour déterminer les applications auxquelles vous avez accès.
+Avant ou après l’inscription, vous pouvez être invité à choisir une catégorie qui décrit le mieux votre utilisation de l’appareil. Votre administrateur informatique utilise cette catégorie pour vérifier les applications auxquelles vous avez accès.
 
-Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune, vous pouvez [envoyer les erreurs d’inscription à votre administrateur informatique](send-enrollment-errors-to-your-it-administrator-android.md).
+Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune, vous pouvez [envoyer les erreurs d’inscription à votre administrateur informatique](send-enrollment-errors-to-your-it-administrator-android.md).
 
 **Pour inscrire un appareil Android**
 
@@ -40,7 +41,7 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
 
     ![android-company-portal-sign-in](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Si votre administrateur informatique a établi des conditions générales, cliquez sur **ACCEPTER** pour en accepter les termes.
+4.  Si votre administrateur informatique a établi des conditions générales, appuyez sur **ACCEPTER** pour en accepter les termes.
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
@@ -69,19 +70,19 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
     Si votre administrateur informatique a configuré certaines stratégies, les messages suivants peuvent s’afficher :
     -   **Autoriser l’application Portail d’entreprise à passer et gérer des appels téléphoniques ?**
 
-    ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
+        ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Si ce message s’affiche, appuyez sur **Autoriser** Vous pouvez appuyer sur Autoriser sans risque, car **Microsoft ne passe jamais ni ne gère vos appels téléphoniques**. Google contrôle le texte du message et Microsoft ne peut pas le modifier. Quand vous autorisez l’accès, vous autorisez votre appareil à envoyer son numéro IMEI à Intune. Le numéro IMEI sert à identifier un appareil mobile de façon unique, à la manière d’un numéro de série.
+    Si ce message s’affiche, appuyez sur **Autoriser** Vous pouvez appuyer sur AUTORISER sans risques car **Microsoft ne passe jamais ni ne gère vos appels téléphoniques**. Google contrôle le texte du message et Microsoft ne peut pas le modifier. Quand vous autorisez l’accès, vous permettez simplement à votre appareil d’envoyer son numéro d’identité internationale d’équipement mobile (IMEI) à Intune. Le numéro IMEI est comparable à un numéro de série qui identifie un appareil mobile de façon unique.
 
-    Si vous refusez l’accès, le message apparaît la prochaine fois que vous vous connectez à l’application Portail d’entreprise, mais vous pouvez désactiver les futurs messages en cochant la case **Ne plus poser la question**.  Si vous décidez ensuite d’autoriser l’accès, accédez à **Paramètres** &gt; **Applications** &gt; **Portail d’entreprise** &gt; **Autorisations** &gt; **Téléphone**, puis activer l’autorisation.
+    Si vous refusez l’accès, le message apparaît la prochaine fois que vous vous connectez à l’application Portail d’entreprise, mais vous pouvez désactiver les futurs messages en cochant la case **Ne plus poser la question**. Si vous décidez ensuite d’autoriser l’accès, accédez à **Paramètres** &gt; **Applications** &gt; **Portail d’entreprise** &gt; **Autorisations** &gt; **Téléphone**, puis activer l’autorisation.
 
     -   **Autoriser le portail d’entreprise à accéder à vos contacts ?**
 
-    ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+        ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Si ce message s’affiche, appuyez sur **Autoriser** Vous pouvez appuyer sur Autoriser sans risque, car **Microsoft n’accède jamais à vos contacts**. Google contrôle le texte du message et Microsoft ne peut pas le modifier. Quand vous autorisez l’accès, l’application Portail d’entreprise est uniquement autorisée à créer, utiliser et gérer votre compte professionnel.
+    Si ce message s’affiche, appuyez sur **Autoriser** Vous pouvez appuyer sur AUTORISER sans risques car **Microsoft n’accède jamais à vos contacts**. Google contrôle le texte du message et Microsoft ne peut pas le modifier. Quand vous autorisez l’accès, l’application Portail d’entreprise est uniquement autorisée à créer, utiliser et gérer votre compte professionnel.
 
-    Si vous refusez l’accès, le message apparaît la prochaine fois que vous vous connectez à l’application Portail d’entreprise, mais vous pouvez désactiver les futurs messages en cochant la case **Ne plus poser la question**.  Si vous décidez ensuite d’autoriser l’accès, accédez à **Paramètres** &gt; **Applications** &gt; **Portail d’entreprise** &gt; **Autorisations** &gt; **Téléphone**, puis activer l’autorisation.
+    Si vous refusez l’accès, le message apparaît la prochaine fois que vous vous connectez à l’application Portail d’entreprise, mais vous pouvez désactiver les futurs messages en cochant la case **Ne plus poser la question**. Si vous décidez ensuite d’autoriser l’accès, accédez à **Paramètres** &gt; **Applications** &gt; **Portail d’entreprise** &gt; **Autorisations** &gt; **Téléphone**, puis activer l’autorisation.
 
 11.  Dans l’écran **Activer l’administrateur d’appareils**, cliquez sur **Activer**.
 
@@ -91,7 +92,7 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
 
     ![Entrer le code confidentiel ou le mot de passe](./media/and-enroll-6-PIN-native.png)
 
-13.  Si vous utilisez un appareil Samsung Knox, appuyez sur **Confirmer**. Vous verrez ensuite un message vous informant que votre appareil est en cours d’inscription. Si vous utilisez un appareil Android natif, vous verrez l’écran ci-dessous qui indique que votre appareil est en cours d’inscription.
+13.  Si vous utilisez un appareil Samsung Knox, appuyez sur **Confirmer**. Vous verrez ensuite un message vous informant que votre appareil est en cours d’inscription. Si vous utilisez un appareil Android natif, l’écran ci-dessous apparaît indiquant que votre appareil est en cours d’inscription.
 
     ![Politique de confidentialité Samsung KNOX](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -99,7 +100,7 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
 
     ![Écran Inscription de l’appareil](./media/and-enroll-8-device-enrolling.png)
 
-14. Quand l’écran **Configuration de l’accès à l’entreprise** s’affiche, appuyez sur **CONTINUER**. Si un message vous indique que votre appareil n’est pas conforme, suivez les instructions pour résoudre le problème, puis appuyez sur **CONTINUER**.
+14. Quand l’écran **Configuration de l’accès à l’entreprise** s’affiche, appuyez sur **CONTINUER**. Si un message indique que votre appareil n’est pas conforme, suivez les instructions pour résoudre le problème, puis appuyez sur **CONTINUER**.
 
     ![Écran de configuration de l’accès à l’entreprise](./media/and-enroll-9-comp-access-setup.png)  
 
@@ -107,15 +108,12 @@ Si vous recevez une erreur pendant l’inscription de votre appareil dans Intune
 
     ![Écran Configuration de l’accès à l’entreprise terminée](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Avant d’installer des applications d’entreprise, accédez à **Paramètres** &gt; **Sécurité** et activez **Sources inconnues**. Si vous n’activez pas cette option avant d’installer des applications, le message « Installation bloquée » s’affiche. Pour des raisons de sécurité, votre appareil est configuré pour bloquer les installations d’applications provenant de sources inconnues. Vous pouvez appuyer sur **Paramètres** dans la boîte de dialogue d’erreur pour accéder à l’option **Sources inconnues**.
+Avant d’installer des applications d’entreprise, accédez à **Paramètres** &gt; **Sécurité** et activez **Sources inconnues**. Si vous n’activez pas cette option avant d’installer des applications, apparaît le message : « Installation bloquée. Pour des raisons de sécurité, votre appareil est configuré pour bloquer les installations d’applications provenant de sources inconnues. Vous pouvez appuyer sur **Paramètres** dans la boîte de dialogue d’erreur pour accéder à l’option **Sources inconnues**.
 
 Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
 
 
 
-
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

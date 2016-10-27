@@ -3,6 +3,7 @@ title: Authentification multifacteur avec Azure AD | Microsoft Intune
 description: "Comment exiger une authentification multifacteur dans Azure AD pour l’inscription d’appareils."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

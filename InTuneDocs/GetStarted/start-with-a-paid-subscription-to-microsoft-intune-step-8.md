@@ -3,8 +3,9 @@ title: Inscrire des appareils mobiles et installer une application | Microsoft I
 description: Cette rubrique explique comment inscrire des appareils mobiles et installer une application sur un appareil Intune inscrit
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 0da8725262ba08b9345d3b7195a64faae13eaece
+ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
+ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
 
 
 ---
@@ -52,7 +53,7 @@ Dans l’[étape 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md
 
 Ouvrez le portail d’entreprise sur l’appareil mobile inscrit, choisissez **Applications**, puis installez **Microsoft Skype**.
 
-Pour en savoir plus sur la gestion des appareils mobiles à l’aide de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], consultez [Se préparer à inscrire des appareils dans Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Pour en savoir plus sur la gestion des appareils mobiles à l’aide de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], consultez [Conditions préalables pour l’inscription d’appareils dans Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment).
 
 
 ### Étapes suivantes
@@ -64,6 +65,6 @@ Félicitations ! Vous venez d’effectuer la dernière étape du *guide de dém
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -21,7 +21,7 @@ L’inscription automatique permet aux utilisateurs d’inscrire des PC Windows�
 
 5. Spécifiez les URL pour Intune :
 
-  - **URL d’inscription de GAM** – Utilisez `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` pour l’URL d’inscription de la gestion des appareils mobiles.
+  - **URL d’inscription MDM** – Utilisez la valeur par défaut.
   - **URL des conditions d’utilisation de GAM** – Utilisez la valeur par défaut. Cette URL affiche les conditions d’utilisation applicables aux utilisateurs quand ils inscrivent des appareils.
   - **URL de conformité GAM** – Utilisez la valeur par défaut. Si un appareil n’est pas conforme, un message **Accès refusé** s’affiche avec cette URL. L’URL pointe vers une page qui permet aux utilisateurs de comprendre pourquoi leur appareil n’est pas conforme à la stratégie et comment ils peuvent y remédier.
 
@@ -34,6 +34,6 @@ L’inscription automatique permet aux utilisateurs d’inscrire des PC Windows�
 7. Choisissez **Enregistrer**.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

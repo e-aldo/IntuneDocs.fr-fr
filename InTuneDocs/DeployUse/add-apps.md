@@ -3,6 +3,7 @@ title: Ajouter des applications | Microsoft Intune
 description: "Avant de commencer à déployer des applications avec Intune, vous devez vous familiariser avec les concepts présentés dans cette rubrique."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
