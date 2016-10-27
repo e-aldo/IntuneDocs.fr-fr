@@ -3,6 +3,7 @@ title: "Configurer des stratégies de gestion des applications mobiles dans la c
 description: "Vous pouvez utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
 
 
 ---
@@ -37,7 +38,7 @@ Contrairement à d’autres stratégies Intune, vous ne déployez pas directemen
 
 Pour appliquer des restrictions à une application, celle-ci doit intégrer le SDK d’application Microsoft Intune. Il existe trois méthodes pour obtenir ce type d’application :
 
--   **Utiliser une application gérée par une stratégie**. Une application gérée par une stratégie intègre le SDK d’application. Pour ajouter ce type d'application, spécifiez un lien vers l'application à partir d'un magasin d'applications tel que l'iTunes Store ou Google Play. Aucun traitement supplémentaire n'est nécessaire pour ce type d'application. Pour plus d’informations, consultez la [liste des applications que vous pouvez utiliser avec les stratégies de gestion des applications mobiles de Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Utiliser une application gérée par une stratégie**. Une application gérée par une stratégie intègre le SDK d’application. Pour ajouter ce type d'application, spécifiez un lien vers l'application à partir d'un magasin d'applications tel que l'iTunes Store ou Google Play. Aucun traitement supplémentaire n'est nécessaire pour ce type d'application. Pour plus d’informations, consultez la [liste des applications que vous pouvez utiliser avec les stratégies de gestion des applications mobiles de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
 
 -   **Utiliser une application encapsulée**. Une application encapsulée est une application que vous réempaquetez pour inclure le SDK d’application à l’aide de l’outil de création de package de restrictions d’application Microsoft Intune. Cet outil est généralement utilisé pour traiter les applications d’entreprise qui ont été créées en interne. Vous ne pouvez pas l’utiliser pour traiter les applications qui ont été téléchargées à partir de l’App Store. Pour plus d’informations, consultez [Préparer des applications iOS pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) et [Préparer des applications Android pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -136,7 +137,7 @@ Une fois que vous avez vérifié que l’application a été chargée correcteme
     |**Période de grâce hors connexion**|Si l'appareil est hors connexion, spécifiez le délai au bout duquel les conditions d'accès pour l'application sont revérifiées.|
     |**Chiffrer les données de l'application**|Ce paramètre spécifie que toutes les données associées à cette application seront chiffrées. Cela inclut les données stockées en externe, comme par exemple les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil que fournit le système d’exploitation. Cette option est activée via une stratégie de code confidentiel d’appareil que définit l’administrateur informatique. Quand un code confidentiel est exigé, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules qu’utilise iOS sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, Microsoft fournit le chiffrement. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier.  Le contenu sur le stockage de l'appareil est toujours chiffré. La méthode de chiffrement n'est pas certifiée FIPS 140-2.|
     |**Bloquer la capture d'écran** (appareils Android uniquement)|Ce paramètre spécifie que les fonctionnalités de capture d’écran de l’appareil sont bloquées quand une personne utilise cette application.|
-    
+
 4. Quand vous avez terminé, choisissez **Enregistrer la stratégie**.
 
 La nouvelle stratégie apparaît sous le nœud **Stratégies de configuration** de l’espace de travail **Stratégie**.
@@ -193,6 +194,6 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

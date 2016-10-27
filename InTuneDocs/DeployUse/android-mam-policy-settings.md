@@ -4,7 +4,7 @@ description: "Cette rubrique décrit les paramètres de stratégie de gestion de
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ On utilise le terme **Applications gérées par la stratégie** pour faire réf�
 - **Désactiver la synchronisation des contacts :** choisissez **Oui** pour empêcher que les informations de contact soient synchronisées avec l’application de carnet d’adresses native sur l’appareil. Si vous choisissez **Non**, l’application enregistre les informations de contact dans l’application de carnet d’adresses native sur l’appareil.<br/>Quand vous effectuez une réinitialisation sélective pour supprimer les données d’entreprise, les contacts synchronisés directement à partir de l’application de carnet d’adresses native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, ceci s’applique uniquement à l’application **Microsoft Outlook**.
 
   **Valeur par défaut = Oui**
+- **Désactiver l’impression :** choisissez **Oui** pour empêcher d’imprimer des données d’entreprise à partir d’applications qui sont associées à la stratégie GAM.
+
+  **Valeur par défaut : Oui**
 
 ##  Paramètres de stratégie d’accès à Android
 On utilise le terme **Applications gérées par la stratégie** pour faire référence aux applications qui sont configurées avec des stratégies de gestion des applications mobiles
@@ -96,6 +99,6 @@ On utilise le terme **Applications gérées par la stratégie** pour faire réf�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

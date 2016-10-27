@@ -1,10 +1,11 @@
 ---
-title: "Ce qu’il faut dire à vos utilisateurs finaux concernant l’utilisation d’Intune | Microsoft Intune"
+title: "Ressources concernant l’expérience utilisateur final avec Microsoft Intune | Microsoft Intune"
 description: "Liens menant vers des informations à partager avec vos utilisateurs finaux"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/20/2016
+ms.date: 10/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,56 +14,46 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
-ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
+ms.sourcegitcommit: 53f432e5fb63d89dc4d7494182f95aace6dd0918
+ms.openlocfilehash: ccee9e249224ded3700228bd09057875a7662c52
 
 
 ---
 
+# Ressources concernant l’expérience utilisateur final avec Microsoft Intune
 
+Utilisez les liens et informations ci-après pour comprendre les étapes suivies par vos utilisateurs finaux pour effectuer différentes tâches dans Intune.
 
-# Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation de Microsoft Intune
+Veillez à inclure les informations de contact de l’administrateur informatique quand vous [personnalisez le portail d’entreprise](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7), pour que vos utilisateurs puissent le contacter en cas de besoin.
 
-Utilisez ces liens et ces informations pour :
+## Guides d’inscription que vous pouvez personnaliser pour vos utilisateurs
 
-- Comprendre les étapes que suivent vos utilisateurs pour effectuer différentes tâches dans Intune.
-- Aider vos utilisateurs à effectuer des tâches et à résoudre les problèmes qu'ils rencontrent lors de l'utilisation d'Intune.
+Vous pouvez utiliser ce [modèle personnalisable d’inscription à Intune pour les administrateurs informatiques](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) afin de créer vos propres instructions d’inscription pour vos utilisateurs finaux. Ce document Microsoft Word contient des étapes détaillées et des captures d’écran de l’inscription des utilisateurs finaux pour les appareils Android, iOS et Mac OS X.
 
-Veillez à inclure les coordonnées de l’administrateur informatique lorsque vous [personnalisez le Portail d’entreprise](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) pour que vos utilisateurs puissent le contacter en cas de besoin.
+## Comment vos utilisateurs finaux recherchent des informations sur les procédures et sur la résolution des problèmes
 
-
-## Sources d’informations sur les tâches courantes à la disposition des utilisateurs finaux
-
-Lorsque les utilisateurs inscrits ont besoin d’aide pour utiliser Intune, ils voient généralement un lien dans le site Web de Portail d’entreprise ou une application Portail d’entreprise qui pointe vers un article spécifique expliquant la procédure à suivre pour résoudre le problème ou terminer la tâche. Par exemple, si les utilisateurs Android voient un message indiquant qu’il manque un certificat obligatoire, ils peuvent appuyer sur un lien « Comment résoudre ce problème » pour accéder à un article décrivant les étapes pour obtenir le certificat. 
-
-Les liens ci-dessous sont pour les administrateurs informatiques. Ces pages contiennent des liens vers tous les articles auxquels les utilisateurs sont renvoyés depuis l’application ou le site Web Portail d’entreprise. Le lien sont divisé en sections : installation de l’application Portail d’entreprise et inscription à Intune ; les tâches que les utilisateurs peuvent exécuter sur leurs appareils, telles que l’utilisation d’applications gérées et la synchronisation manuelle de leurs appareils ; et le dépannage.
+Utilisez les liens suivants pour afficher les étapes vers lesquelles les utilisateurs sont dirigés à partir du site web ou de l’application Portail d’entreprise. Les liens sont divisés en sections : installation de l’application Portail d’entreprise et inscription à Intune, tâches générales que les utilisateurs peuvent exécuter sur leurs appareils et résolution des problèmes.
 
 - [Utilisation de votre appareil Android avec Intune](/Intune/EndUser/using-your-android-device-with-intune)
-- [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [Utilisation de votre appareil iOS ou Mac OS X avec Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
 - [Utilisation de votre appareil Windows avec Intune](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Utilisation du site web Portail d’entreprise Intune](/Intune/EndUser/using-the-intune-company-portal-website)
 
 
-## Guides d'inscription et modèles que vous pouvez personnaliser pour vos utilisateurs
-
-- [Modèle d'inscription Intune personnalisable par utilisateur final pour les administrateurs informatiques](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) : document Word personnalisable avec des étapes détaillées et des captures d'écran expliquant l'inscription de l'utilisateur final pour les appareils Android, iOS et Mac OS X. Vous pouvez utiliser ce document tel quel, ou personnaliser les instructions avant de distribuer ce document à vos utilisateurs finaux.</br></br>
-- [Document personnalisable à deux pages, avec des étapes et des vidéos incorporées sur l'inscription, la désinscription, l’obtention d’applications, etc.](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c#content) : document que vous pouvez personnaliser et distribuer à vos utilisateurs finaux. Comporte des sections expliquant comment inscrire des appareils Android, iOS et Windows, obtenir des applications, les désinscrire, que faire si vous perdez votre appareil, et ce que les professionnels de l'informatique peuvent et ne peuvent pas voir sur votre appareil.
-
-##Comment vos utilisateurs finaux obtiennent leurs applications
+## Comment vos utilisateurs finaux obtiennent leurs applications
 
 Pour comprendre comment vos utilisateurs finaux obtiennent leurs applications, choisissez parmi les options de plateforme d’appareil suivantes :
 
-> [!div class="op_single_selector"]
-- [Comment vos utilisateurs Android obtiennent leurs applications](how-your-android-users-get-their-apps.md)
-- [Comment vos utilisateurs iOS obtiennent leurs applications](how-your-ios-users-get-their-apps.md)
-- [Comment vos utilisateurs Windows obtiennent leurs applications](how-your-windows-users-get-their-apps.md)
+- [Android](how-your-android-users-get-their-apps.md)
+- [iOS](how-your-ios-users-get-their-apps.md)
+- [Windows](how-your-windows-users-get-their-apps.md)
 
 
 
-S’il existe d’autres informations que vous aimeriez voir traitées dans cet article, ajoutez votre suggestion dans la zone de commentaire au bas de cette rubrique. Merci !
+Vous souhaitez que d’autres informations soient abordées dans cet article ? Ajoutez votre suggestion dans la zone de commentaire au bas de cette rubrique. Merci !
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

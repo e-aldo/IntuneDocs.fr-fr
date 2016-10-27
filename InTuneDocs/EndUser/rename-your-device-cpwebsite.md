@@ -3,6 +3,7 @@ title: "Renommer votre appareil à partir du site web du portail d’entreprise 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

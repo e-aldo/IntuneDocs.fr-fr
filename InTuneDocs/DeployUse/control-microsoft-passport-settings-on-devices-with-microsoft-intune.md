@@ -3,6 +3,7 @@ title: "Contrôler les paramètres Windows Hello Entreprise sur des appareils | 
 description: "Découvrez comment Intune s’intègre à Windows Hello Entreprise, autre méthode de connexion qui utilise Active Directory ou un compte Azure Active Directory pour remplacer un mot de passe, une carte à puce ou une carte à puce virtuelle."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

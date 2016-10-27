@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/18/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7798a186d7c7563b4b62bf87382b81f044635b87
+ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
+ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
 
 
 ---
 
 
 # Synchroniser votre appareil Windows manuellement
-Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil Windows, ce qui peut vous aider à accélérer l’installation. Les seules versions prises en charge sont celles qui sont répertoriées. Utilisez le lien indiqué dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous possédez :
+Si l’installation de votre application prend trop de temps, vous pouvez essayer de synchroniser votre appareil Windows manuellement. La synchronisation manuelle peut vous aider à accélérer l’installation.
+
+Seules les versions suivantes sont prises en charge. Suivez les instructions correspondant au type d’appareil que vous utilisez.
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -34,44 +36,44 @@ Pour synchroniser manuellement votre appareil mobile Windows 10 pour accélérer
 
 1. Accédez à **Toutes les applications** > **Paramètres** > **Comptes**.
 
-    ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
+    ![Choix de Comptes dans l’écran Paramètres](./media/win10m-sync-1-settings-accounts.png)
 
-2. Appuyez sur **Accès professionnel**.
+2. Choisissez **Accès professionnel**.
 
-    ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
+    ![Choix d’accès professionnel comme type de compte](./media/win10m-sync-2-work-access.png)
 
-3. Sous **Inscription à la gestion des appareils**, appuyez sur le nom de votre entreprise, comme indiqué ci-dessous.
+3. Sous **Inscription à la gestion des appareils**, choisissez le nom de votre entreprise.
 
-    ![win10m-sync-3-tap-comp-name](./media/win10m-sync-3-tap-comp-name.png)
+    ![Choix du nom de l’entreprise pour la gestion des appareils](./media/win10m-sync-3-tap-comp-name.png)
 
-4. Appuyez sur l’icône **Synchroniser**.
+4. Choisissez l’icône **Synchroniser**.
 
-    ![win10m-sync-4-tap-sync](./media/win10m-sync-4-tap-sync.png)
+    ![Choix de l’icône Synchroniser](./media/win10m-sync-4-tap-sync.png)
 
-    Le message « Nous synchronisons votre compte » s’affiche en haut de l’écran. Le bouton Synchroniser est grisé tant que la synchronisation n’est pas terminée sur votre appareil.
+    Le message « Nous synchronisons votre compte » apparaît en haut de l’écran. Le bouton **Synchroniser** est grisé tant que la synchronisation n’est pas terminée sur votre appareil.
 
-## Windows 10 Desktop
-Pour synchroniser manuellement votre appareil de bureau Windows 10 pour accélérer l’installation d’une application :
+## Poste de travail Windows 10
+Pour synchroniser manuellement votre poste de travail Windows 10 pour accélérer l’installation d’une application :
 
-1. Sélectionnez le bouton **Démarrer**, comme indiqué ci-dessous, puis sélectionnez **Paramètres**.
+1. Choisissez le bouton **Démarrer**, puis choisissez **Paramètres**.
 
-    ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
+    ![Bouton Démarrer](./media/win10pc-sync-1-start-button.png)
 
-2. Dans la page **Paramètres**, sélectionnez **Comptes**.
+2. Dans la page **Paramètres**, choisissez **Comptes**.
 
-    ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
+    ![Choix de Comptes dans la page Paramètres](./media/win10pc-sync-2-settings-accounts.png)
 
-3. Dans la page **Comptes**, sélectionnez **Accès professionnel**.
+3. Dans la page **Comptes**, choisissez **Accès professionnel**.
 
-    ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
+    ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png)
 
-4. Sous la section **Inscription à la gestion des appareils**, cliquez sur le nom de votre entreprise, comme illustré ci-dessous en surbrillance bleue.
+4. Dans la section **Inscription à la gestion des appareils**, choisissez le nom de votre entreprise.
 
-    ![win10pc-sync-4-tap-com-name](./media/win10pc-sync-4-tap-com-name.png)
+    ![Choix du nom de l’entreprise pour la gestion des appareils](./media/win10pc-sync-4-tap-com-name.png)
 
-5. Sélectionnez le bouton **Synchroniser**.
+5. Choisissez le bouton **Synchroniser**.
 
-    ![win10pc-sync-5-tap-sync](./media/win10pc-sync-5-tap-sync.png)
+    ![Choix du bouton Synchroniser](./media/win10pc-sync-5-tap-sync.png)
 
    Le bouton est grisé jusqu’à ce que la synchronisation se termine.
 
@@ -80,25 +82,22 @@ Pour synchroniser manuellement votre appareil Windows Phone 8.1 pour accélérer
 
 1. Accédez à **Toutes les applications** > **Paramètres** > **espace de travail**.
 
-    ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
+    ![Liste des paramètres](./media/wp81-1-sync-settings-workplace.png)
 
-2. Appuyez sur le nom de votre entreprise, comme indiqué ci-dessous en surbrillance bleue.
+2. Choisissez le nom de votre société.
 
-    ![wp81-2-sync-tap-compname](./media/wp81-2-sync-tap-compname.png)
+    ![Choix du nom de la société pour le compte de l’espace de travail](./media/wp81-2-sync-tap-compname.png)
 
-3. Appuyez sur l’icône **Synchroniser**.
+3. Choisissez l’icône **Synchroniser**.
 
-    ![wp81-3-sync-tap-sync-button](./media/wp81-3-sync-tap-sync-button.png)
+    ![Choix de l’icône Synchroniser](./media/wp81-3-sync-tap-sync-button.png)
 
-   Le message « Nous synchronisons votre compte » s’affiche en haut de l’écran jusqu’à la fin de la synchronisation de votre appareil.
+   Le message « Nous synchronisons votre compte » apparaît en haut de l’écran jusqu’à la fin de la synchronisation de votre appareil.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

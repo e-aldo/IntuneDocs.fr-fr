@@ -4,7 +4,7 @@ description: "Vous pouvez utiliser des paramètres de profil de messagerie pour 
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
+ms.sourcegitcommit: befe1b3446770509c83a360c854993d4aaada09d
+ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
 
 
 ---
@@ -33,13 +33,16 @@ Vous pouvez utiliser des profils de messagerie pour configurer le client de mess
 -   Windows 10 (pour le bureau), Windows 10 Mobile et versions ultérieures
 -   iOS 8.0 et versions ultérieures
 -   Samsung KNOX Standard (4.0 et versions ultérieures)
+-   Android for Work
+
+>[!NOTE]
+>Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store et prennent en charge les connexions à Exchange. Pour activer la connectivité d’e-mail, déployez une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié. 
 
 Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez configurer le volume d’e-mails à synchroniser et, en fonction du type d’appareil, les types de contenu à synchroniser.
+
 >[!NOTE]
 >
 >Si l’utilisateur a installé un profil de messagerie avant de configurer un profil via Intune, le résultat du déploiement du profil de messagerie Intune dépend de la plateforme d’appareil :
-
-[commentaire] : <> La construction passive dans les trois paragraphes suivants est nécessaire tant que le processus de détection des doublons n’a pas été clarifié par le PM.
 
 >**iOS** : Un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail et du nom d’hôte. Le profil de messagerie en double créé par l’utilisateur bloque le déploiement d’un profil créé par un administrateur Intune. Il s’agit d’un problème courant, car les utilisateurs iOS créent généralement un profil de messagerie, puis s’inscrivent. Le portail d’entreprise signale à l’utilisateur qu’il n’est pas conforme à cause de son profil de messagerie configuré manuellement, et invite l’utilisateur à supprimer ce profil. L’utilisateur doit supprimer son profil de messagerie pour que le profil Intune puisse être configuré. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire avant d’installer le profil de messagerie et d’autoriser Intune à configurer le profil.
 
@@ -49,6 +52,8 @@ Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez
 
 >Étant donné que Samsung KNOX n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à utiliser à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
 
+>**Android for Work** : le profil Intune est appliqué uniquement au profil professionnel de l’appareil et n’affecte pas les profils de messagerie sur le profil utilisateur de l’appareil.
+
 
 ## Profils de messagerie sécurisés
 Vous pouvez sécuriser les profils de messagerie à l’aide de deux méthodes : par le biais d’un certificat ou d’un mot de passe.
@@ -56,7 +61,7 @@ Vous pouvez sécuriser les profils de messagerie à l’aide de deux méthodes 
 ### Certificats
 Quand vous créez le profil de messagerie, vous choisissez un profil de certificat que vous avez créé précédemment dans Intune. Il s’agit du certificat d’identité, qui est utilisé pour l’authentification par rapport à un profil de certificat approuvé (ou un certificat racine) pour établir le fait que l’utilisateur est autorisé à se connecter. Le certificat approuvé est déployé sur l’ordinateur qui authentifie la connexion de messagerie, en général le serveur de messagerie natif.
 
-Pour plus d’informations sur la création et l’utilisation des profils de certificat dans Intune, consultez [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Sécuriser l’accès aux ressources avec des profils de certificat).
+Pour plus d’informations sur la création et l’utilisation des profils de certificat dans Intune, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md)).
 
 ### Nom d'utilisateur et mot de passe
 L’utilisateur s’authentifie auprès du serveur de messagerie natif en fournissant son nom d’utilisateur et son mot de passe.
@@ -76,6 +81,10 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
     -   **Profil de messagerie (Windows Phone 8 et versions ultérieures)**
 
     -   **Profil de messagerie (Windows 10 Desktop et Mobile, et versions ultérieures)**
+    
+    -   **Profil de messagerie (Android for Work - Gmail)**
+
+    -   **Profil de messagerie (Android for Work - Nine Work)**
 
     Vous pouvez uniquement créer et déployer une stratégie de profil de messagerie personnalisée. Les paramètres recommandés ne sont pas disponibles.
 
@@ -89,14 +98,14 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
     |**Nom du compte**|Nom complet du compte de messagerie, tel qu’il apparaîtra aux utilisateurs sur leurs appareils.|
     |**Nom d'utilisateur**|Indique comment le nom d’utilisateur du compte de messagerie sera obtenu. Sélectionnez **Nom d’utilisateur** pour un serveur Exchange local ou **Nom principal de l’utilisateur** pour Office 365.|
     |**Adresse de messagerie**|Façon dont l’adresse de messagerie de l’utilisateur est générée sur chaque appareil. Sélectionnez **Adresse SMTP principale** pour utiliser l’adresse SMTP principale pour vous connecter à Exchange ou **Nom principal de l’utilisateur** pour utiliser le nom principal complet comme adresse de messagerie.|
-    |**Méthode d’authentification** (Samsung KNOX et iOS)|Sélectionnez **Nom d’utilisateur et mot de passe** ou **Certificats** comme méthode d’authentification utilisée par le profil de messagerie.|
-    |**Sélectionner un certificat client pour l’authentification client (certificat d’identité)** (Samsung KNOX et iOS)|Sélectionnez le certificat SCEP client que vous avez créé précédemment qui servira à authentifier la connexion Exchange. Pour plus d’informations sur la façon de créer des profils de certificat dans Intune, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md). Cette option est visible uniquement quand la méthode d'authentification est **Certificats**.|
+    |**Méthode d’authentification** (Android for Work, Samsung KNOX et iOS)|Sélectionnez **Nom d’utilisateur et mot de passe** ou **Certificats** comme méthode d’authentification utilisée par le profil de messagerie.|
+    |**Sélectionner un certificat client pour l’authentification client (certificat d’identité)** (Android for Work, Samsung KNOX et iOS)|Sélectionnez le certificat SCEP client que vous avez créé précédemment qui servira à authentifier la connexion Exchange. Pour plus d’informations sur la façon de créer des profils de certificat dans Intune, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md). Cette option est visible uniquement quand la méthode d'authentification est **Certificats**.|
     |**Utiliser S/MIME** (Samsung KNOX et iOS)|Envoyez des messages électroniques en utilisant le chiffrement S/MIME.|
     |**Certificat de signature** (Samsung KNOX et iOS)|Sélectionnez le certificat de signature qui sera utilisé pour signer le courrier électronique sortant. Cette option est visible uniquement quand vous sélectionnez **Utiliser S/MIME**.|
     |**Nombre de jours de courrier électronique à synchroniser**|Nombre de jours d’e-mails à synchroniser, ou sélectionnez **Illimité** pour synchroniser tous les e-mails disponibles.|
-    |**Planification de la synchronisation** (Samsung KNOX, Windows Phone 8 et versions ultérieures, Windows 10)|Sélectionnez la planification selon laquelle les appareils vont synchroniser les données du serveur Exchange. Vous pouvez également sélectionner **À mesure que les messages arrivent** pour synchroniser les données dès qu’elles arrivent ou **Manuel** pour que ce soit l’utilisateur de l’appareil qui lance la synchronisation.|
+    |**Planification de la synchronisation** (Android for Work, Samsung KNOX, Windows Phone 8 et versions ultérieures, Windows 10)|Sélectionnez la planification selon laquelle les appareils vont synchroniser les données du serveur Exchange. Vous pouvez également sélectionner **À mesure que les messages arrivent** pour synchroniser les données dès qu’elles arrivent ou **Manuel** pour que ce soit l’utilisateur de l’appareil qui lance la synchronisation.|
     |**Utiliser SSL**|Utilisez la communication SSL (Secure Sockets Layer) pour envoyer et recevoir des e-mails, et communiquer avec le serveur Exchange. Pour les appareils qui exécutent Samsung KNOX 4.0 ou version ultérieure, vous devez exporter votre certificat SSL Exchange Server et le déployer comme profil de certificat approuvé par Android dans Intune. Intune ne prend pas en charge l’accès à ce certificat s’il est installé sur le serveur Exchange par d’autres moyens.|
-    |**Type de contenu à synchroniser**|Sélectionnez les types de contenu à synchroniser avec des appareils.|
+    |**Type de contenu à synchroniser** (toutes les plateformes sauf Android for Work Gmail)|Sélectionnez les types de contenu à synchroniser avec des appareils.|
     |**Autoriser l’envoi de courrier électronique à partir d’applications tierces** (iOS uniquement)|Autoriser l’utilisateur à sélectionner ce profil en tant que compte par défaut pour l’envoi d’e-mails et autoriser les applications tierces à ouvrir les e-mails dans l’application de messagerie native, par exemple pour y joindre des fichiers.|
     > [!IMPORTANT]
     > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
@@ -122,6 +131,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

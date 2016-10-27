@@ -3,6 +3,7 @@ title: "Activer une règle de protection de l’appareil dans la stratégie de c
 description: "Activer une règle de protection de l’appareil contre les menaces mobiles dans la stratégie de conformité."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

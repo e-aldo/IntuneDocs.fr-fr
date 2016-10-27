@@ -3,8 +3,9 @@ title: "Utiliser des groupes pour gérer les utilisateurs et les appareils | Mic
 description: "Créer et gérer des groupes à l’aide de l’espace de travail Groupes."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 896e8cf77c0898fca7838b24386db745b01f4022
 
 
 ---
@@ -36,11 +37,11 @@ Cette rubrique explique comment créer des groupes dans Intune. Elle fournit ég
 Vous avez exprimé le souhait d’avoir une expérience de regroupement et de ciblage unique dans Enterprise Mobility + Security. Nous avons donc décidé de convertir prochainement les groupes Intune en groupes de sécurité Azure Active Directory. Cette modification permettra d’unifier la gestion des groupes entre Intune et Azure Active Directory (Azure AD). La nouvelle expérience vous évitera d’avoir à dupliquer les groupes entre les services. Elle vous permettra aussi d’utiliser Windows PowerShell et Microsoft Graph pour améliorer l’extensibilité.
 
 ### Comment cela m’affecte-t-il aujourd’hui ?
-Cette modification n’a pas d’incidence pour vous aujourd’hui, mais nous pouvons vous indiquer les nouveautés à venir :
+Si vous êtes déjà client Intune, cette modification n’a pas d’incidence pour vous aujourd’hui, mais nous pouvons vous indiquer les nouveautés à venir :
 
--   À partir de septembre 2016, les nouveaux comptes qui sont approvisionnés après la mise à jour Service Release mensuelle utiliseront les groupes de sécurité Active AD au lieu des groupes d’utilisateurs Intune.   
--   À partir d’octobre 2016, les nouveaux comptes qui sont approvisionnés après la mise à jour Service Release mensuelle gèreront les groupes d’utilisateurs et les groupes d’appareils ensemble dans le portail Azure AD. Il n’y aura pas d’impact pour les clients existants.
--   En novembre 2016, l’équipe produit Intune commencera la migration des clients actuels vers la nouvelle expérience de gestion de groupes Azure AD. Tous les groupes d’utilisateurs et d’appareils figurant déjà dans Intune seront migrés vers des groupes de sécurité Azure AD. Nous effectuerons la migration par lots à partir de novembre 2016. Nous ne démarrerons pas la migration tant que nous ne serons pas sûrs de pouvoir minimiser l’impact sur votre travail quotidien et garantir qu’il n’y aura aucun impact sur les utilisateurs. Par ailleurs, nous vous avertirons avant d’effectuer la migration de votre compte.
+-   Les nouveaux comptes utiliseront des groupes de sécurité Azure AD au lieu de groupes d’*utilisateurs* Intune.   
+-   À partir de novembre 2016, les nouveaux comptes qui sont approvisionnés après la mise à jour Service Release mensuelle gèreront les groupes d’utilisateurs et les groupes d’appareils ensemble dans le portail Azure AD. Il n’y aura pas d’impact pour les clients existants.
+-   En décembre 2016, l’équipe produit Intune commencera la migration des clients actuels vers la nouvelle expérience de gestion de groupes Azure AD. Tous les groupes d’utilisateurs et d’appareils figurant déjà dans Intune seront migrés vers des groupes de sécurité Azure AD. Nous ne démarrerons pas la migration tant que nous ne serons pas sûrs de pouvoir minimiser l’impact sur votre travail quotidien et garantir qu’il n’y aura aucun impact sur les utilisateurs. Par ailleurs, nous vous avertirons avant d’effectuer la migration de votre compte.
 
 
 ### Quand et comment serai-je migré vers la nouvelle expérience de groupes ?
@@ -204,6 +205,6 @@ Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur pr�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

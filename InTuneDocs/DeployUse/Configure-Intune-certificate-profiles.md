@@ -4,7 +4,7 @@ description: "Découvrez comment créer un profil de certificat Intune."
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
 
 
 ---
@@ -38,13 +38,22 @@ Vous devez créer un profil de certificat approuvé avant de créer un profil de
 
 ### Pour créer un profil de certificat approuvé
 
-1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
-2.  Ajoutez l’un de ces types de stratégie :
-    - **Android &gt; Profil de certificat approuvé (Android 4 et versions ultérieures)**
-    - **iOS &gt; Profil de certificat approuvé (iOS 8.0 et versions ultérieures)**
-    - **Mac OS X &gt; Profil de certificat approuvé (Mac OS X 10.9 et versions ultérieures)**
-    - **Windows &gt; Profil de certificat approuvé (Windows 8.1 et versions ultérieures)**
-    - **Windows &gt; Profil de certificat approuvé (Windows Phone 8.1 et versions ultérieures)**
+1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**, puis choisissez une plateforme d’appareil. Vous pouvez créer un profil de certificat approuvé pour ces appareils :
+
+-  Android 4 et versions ultérieures
+
+-  Android for work
+
+-  iOS 7.1 et versions ultérieures
+
+-  Mac OS X 10.9 et versions ultérieures
+
+-  Windows 8.1 et versions ultérieures
+
+-  Windows Phone 8.1 et versions ultérieures
+
+
+2.  Ajouter une stratégie **Profil de certificat approuvé**.
 
     Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -60,14 +69,22 @@ Après avoir créé un profil de certificat d’autorité de certification appro
 
 ### Pour créer un profil de certificat SCEP
 
-1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
-2.  Ajoutez l’un de ces types de stratégie :
-    - **Android &gt; Profil de certificat SCEP (Android 4 et versions ultérieures)**
-    - **iOS &gt; Profil de certificat SCEP (iOS 8.0 et versions ultérieures)**
-    - **Mac OS X &gt; Profil de certificat SCEP (Mac OS X 10.9 et versions ultérieures)**
-    - **Windows &gt; Profil de certificat SCEP (Windows 8.1 et versions ultérieures)**
-    - **Windows &gt; Profil de certificat SCEP (Windows Phone 8.1 et versions ultérieures)**
+1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**, puis choisissez une plateforme d’appareil.  Vous pouvez créer un profil de certificat SCEP pour ces appareils :
 
+-  Android 4 et versions ultérieures
+
+-  Android for Work
+
+-  iOS 7.1 et versions ultérieures
+
+-  Mac OS X 10.9 et versions ultérieures
+
+-  Windows 8.1 et versions ultérieures
+
+-  Windows Phone 8.1 et versions ultérieures
+
+2.  Ajouter une stratégie **Profil de certificat SCEP**.
+    
     Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Suivez les instructions de la page de configuration de profil pour configurer les paramètres de profil de certificat SCEP.
@@ -87,13 +104,16 @@ La nouvelle stratégie apparaît dans l’espace de travail **Stratégie**. À p
 
 ### Pour créer un profil de certificat .PFX
 
-1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
-2.  Ajoutez l’un de ces types de stratégie :
-  - **Android &gt; Profil de certificat .PFX (Android 4 et versions ultérieures)**
-  - **Windows &gt; Profil de certificat PKCS #12 (.PFX) (Windows 10 et versions ultérieures)**
-  - **Windows &gt; Profil de certificat PKCS #12 (.PFX) (Windows Phone 10 et versions ultérieures)**
-  - **iOS > Profil de certificat PKCS #12 (.PFX) (iOS 8.0 et versions ultérieures)**    
-    Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**, puis choisissez une plateforme d’appareil. Les certificats .PFX sont pris en charge pour :
+  - Android 4 et versions ultérieures
+  - Android for Work
+  - Windows 10 et versions ultérieures
+  - Windows Phone 10 et versions ultérieures
+  - iOS 8.0 et versions ultérieures    
+
+    
+2.  Ajouter une stratégie **Profil de certificat PFX**. 
+      Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Entrez les informations demandées dans le formulaire de stratégie.
 4.  Choisissez **Enregistrer la stratégie**.
 
@@ -130,6 +150,6 @@ Ensuite, découvrez comment utiliser des certificats pour sécuriser les profils
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

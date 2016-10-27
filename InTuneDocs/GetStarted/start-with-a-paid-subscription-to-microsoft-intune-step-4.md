@@ -3,6 +3,7 @@ title: "Gérer les licences Intune | Microsoft Intune"
 description: Cette rubrique explique comment attribuer des licences aux utilisateurs de votre abonnement Intune
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

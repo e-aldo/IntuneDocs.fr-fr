@@ -3,6 +3,7 @@ title: "Réinitialiser (effacer) votre appareil iOS perdu ou volé | Microsoft I
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

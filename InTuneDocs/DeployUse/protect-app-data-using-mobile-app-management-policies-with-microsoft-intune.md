@@ -3,6 +3,7 @@ title: "Protéger les données d’application à l’aide des stratégies de ge
 description: "Cette rubrique explique comment les stratégies de gestion d’applications mobiles peuvent vous aider à protéger les données de votre entreprise, empêcher toute perte de données et séparer les informations personnelles des informations d’entreprise."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
@@ -122,8 +123,6 @@ Les applications qui prennent en charge plusieurs identités vous permettent d�
 
 Par exemple, lorsque l’utilisateur final lance l’application OneDrive à l’aide de son compte professionnel, il ne peut pas déplacer les fichiers vers un emplacement de stockage personnel. Toutefois, lorsque l’utilisateur final utilise OneDrive avec son compte personnel, ils peuvent copier et déplacer des données à partir de leur compte personnel OneDrive sans restriction.  
 
-Pour obtenir une explication détaillée de l’expérience de l’utilisation d’applications associées à des stratégies de gestion des applications mobiles et savoir comment les applications prenant en charge plusieurs identités permettent d’appliquer des stratégies de gestion des applications mobiles uniquement dans le contexte de travail, consultez [Utilisation d’applications avec prise en charge de plusieurs identités](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
-
 Toutes les applications mobiles Office prennent en charge plusieurs identités.
 
 ##  Étapes suivantes
@@ -133,6 +132,6 @@ Toutes les applications mobiles Office prennent en charge plusieurs identités.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

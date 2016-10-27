@@ -3,8 +3,9 @@ title: "Désinscription d’un appareil Android d’Intune | Microsoft Intune"
 description: "Cette rubrique explique comment désinscrire un appareil Android d’Intune"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 1586e72eef5afdc0baefde8e5a3c105af22edb62
+ms.sourcegitcommit: 891cf629725392beae1a6b8fbbb39f2bead8eb90
+ms.openlocfilehash: 17f7841daa79473b3c92cf50962b60b67224e4ee
 
 
 ---
@@ -32,24 +33,20 @@ Pour désinscrire votre appareil d’Intune, désinstallez l’application Porta
 
 2.  Appuyez sur **MES APPAREILS**, puis sélectionnez l’appareil que vous voulez désinscrire.
 
-    ![android-company-portal-unenroll-choose-device](./media/andr-1-my-devices-choose.png)
+    ![Choisissez l’appareil que vous souhaitez désinscrire.](./media/andr-1-my-devices-choose.png)
 
 3.  Appuyez sur l’icône de la Corbeille.
 
-    ![android-company-portal-unenroll-tap-trash](./media/andr-2-tap-trashcan.png)
+    ![Appuyez sur l’icône de la Corbeille.](./media/andr-2-tap-trashcan.png)
 
     Dans la page d’avertissement, appuyez sur **OK** pour désinscrire votre appareil.
 
-    ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
+    ![Supprimez l’appareil.](./media/andr-3-warning-about-remove.png)
 
-Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
-
-
-### Voir aussi
-[Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
+Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou envoyez un e-mail à l’équipe Microsoft Android à l’adresse wintunedroidfbk@microsoft.com.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

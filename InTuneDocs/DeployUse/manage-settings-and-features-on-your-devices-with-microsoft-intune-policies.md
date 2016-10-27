@@ -3,8 +3,9 @@ title: "Gérer des paramètres d’appareils avec des stratégies | Microsoft In
 description: "Utilisez Intune pour créer et déployer des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils inscrits que vous gérez."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +62,7 @@ Pour obtenir la liste complète des stratégies Intune, consultez le [Guide de r
 
     - [Paramètres pour les appareils iOS](ios-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour les appareils Android](android-policy-settings-in-microsoft-intune.md)
+    - [Paramètres pour les appareils Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour les appareils Windows 8 et Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour les appareils Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour les appareils de bureau et mobiles Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
@@ -115,7 +117,6 @@ Si un appareil ne se manifeste pas pour obtenir la stratégie après l’envoi d
 - iOS et Mac OS X : toutes les 6 heures.
 - Android  : toutes les 8 heures.
 - Windows Phone : toutes les 8 heures.
-- Appareils Windows RT inscrits : toutes les 24 heures.
 - PC Windows 8.1 et Windows 10 inscrits en tant qu’appareils : toutes les 8 heures.
 
 Si l’appareil vient d’être inscrit, la fréquence d’enregistrement est plus fréquente :
@@ -212,6 +213,6 @@ Consultez [Résoudre les problèmes de stratégie dans Microsoft Intune](/intune
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

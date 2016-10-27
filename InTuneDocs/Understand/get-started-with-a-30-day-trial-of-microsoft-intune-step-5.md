@@ -3,6 +3,7 @@ title: "Inscrire des appareils mobiles pour évaluation | Microsoft Intune"
 description: "Comment inscrire des appareils mobiles et installer une application lorsque vous vous inscrivez à un essai gratuit d’Intune de 30 jours"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

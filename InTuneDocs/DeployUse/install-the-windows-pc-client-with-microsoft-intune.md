@@ -3,6 +3,7 @@ title: Installation du logiciel client PC | Microsoft Intune
 description: "Utilisez ce guide pour que votre PC Windows soit géré par le logiciel client Microsoft Intune."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Utiliser des stratégies de configuration d’application mobile iOS | M
 description: "Utilisez des stratégies de configuration d’application mobile dans Intune pour fournir les paramètres pouvant être nécessaires quand les utilisateurs exécutent une application iOS."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Paramètres de la stratégie de mise à niveau d’édition Windows | Mi
 description: "Découvrez comment utiliser Intune pour mettre à niveau automatiquement vos appareils Windows 10 vers leur dernière version."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

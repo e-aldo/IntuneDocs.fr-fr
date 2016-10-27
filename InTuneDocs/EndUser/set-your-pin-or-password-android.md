@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7bfb853d86ebb8c66fd7932a9a0f1d1f0ff951ac
+ms.sourcegitcommit: e050c7b4947f0a3aae87c545ec8cca282c22fe55
+ms.openlocfilehash: 2c9fd5714f64477e7e07d66429ae68e17e2e1bb7
 
 
 ---
 
-
 # Définir votre code confidentiel ou mot de passe
 
-Votre administrateur informatique peut demander que vous définissiez un code confidentiel ou un mot de passe sur votre appareil Android lorsque vous utilisez Intune pour accéder à vos données professionnelles ou scolaires. Si vous voyez un message vous invitant à définir un code confidentiel ou un mot de passe, procédez comme suit.
+Votre administrateur informatique peut demander que vous définissiez un code confidentiel ou un mot de passe sur votre appareil Android quand vous utilisez Intune pour accéder à vos données professionnelles ou scolaires. Si vous voyez un message qui vous invite à définir un code confidentiel ou un mot de passe, procédez comme suit.
 
 1.  Appuyez sur **Paramètres** &gt; **Sécurité** &gt; **Verrouillage d’écran** &gt; **Mot de passe**.
 
@@ -32,11 +31,8 @@ Votre administrateur informatique peut demander que vous définissiez un code co
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

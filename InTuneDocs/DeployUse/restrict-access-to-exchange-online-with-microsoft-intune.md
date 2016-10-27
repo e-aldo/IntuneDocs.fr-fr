@@ -3,6 +3,7 @@ title: "Limiter l’accès à la messagerie sur Exchange Online | Microsoft Intu
 description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à la messagerie de votre entreprise sur Exchange Online."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +65,7 @@ Le diagramme ci-dessous illustre le flux utilisé par les stratégies d’accès
 ## Prise en charge des appareils mobiles
 Vous pouvez restreindre l’accès à la messagerie Exchange Online à partir d’**Outlook** et d’autres **applications qui utilisent l’authentification moderne** :
 
-- Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures
+- Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures et Android for Work
 - iOS 8.0 et versions ultérieures
 - Windows Phone 8.1 et versions ultérieures
 
@@ -225,6 +226,9 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 
 5.  Sous **Applications Exchange ActiveSync**, vous pouvez choisir d’empêcher les appareils non conformes d’accéder à Exchange Online. Vous pouvez également choisir d’autoriser ou de bloquer l’accès à la messagerie lorsque l’appareil ne fonctionne pas sur une plateforme prise en charge. Les plateformes prises en charge sont Android, iOS, Windows et Windows Phone.
 
+ Appareils **Android for Work** pour applications Exchange Active Sync :
+ -  Seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne sur les appareils Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer celle-ci comme installation **obligatoire**. 
+
 6.  Sous **Groupes ciblés**, sélectionnez les groupes de sécurité Active Directory auxquels la stratégie sera appliquée. Vous pouvez choisir de cibler tous les utilisateurs ou une liste sélectionnée de groupes d’utilisateurs.
 ![Capture d’écran de la page de stratégie d’accès conditionnel à Exchange Online montrant les options Groupe ciblé et Groupe exempté](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +267,6 @@ Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
