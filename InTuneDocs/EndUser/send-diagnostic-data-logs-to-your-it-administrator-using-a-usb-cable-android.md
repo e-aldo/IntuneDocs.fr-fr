@@ -2,8 +2,8 @@
 title: "Envoyer les journaux de données de diagnostic à votre administrateur informatique par câble USB | Microsoft Intune"
 description: "Envoyer les journaux de données par câble USB"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 ---
 
 
-# Envoyer les journaux de données de diagnostic à votre administrateur informatique par câble USB
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-a-usb-cable"></a>Envoyer les journaux de données de diagnostic à votre administrateur informatique par câble USB
 
 Si vous souhaitez envoyer des journaux de données à votre administrateur, vous pouvez le faire en utilisant un câble USB et un ordinateur au lieu de passer par votre appareil mobile.
 

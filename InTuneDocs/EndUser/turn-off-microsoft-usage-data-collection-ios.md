@@ -2,8 +2,8 @@
 title: "Désactiver la collecte de données d’utilisation pour iOS | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
 ---
 
 
-# Désactiver la collecte de données d’utilisation Microsoft
+# <a name="turn-off-microsoft-usage-data-collection"></a>Désactiver la collecte de données d’utilisation Microsoft
 
 Dans un souci d’améliorer ses produits et services, Microsoft recueille automatiquement des données anonymes sur la fiabilité et les performances de l’application Portail d’entreprise et sur la façon dont elles sont utilisées.
 

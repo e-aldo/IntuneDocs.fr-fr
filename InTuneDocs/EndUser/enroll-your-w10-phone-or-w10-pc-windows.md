@@ -2,8 +2,8 @@
 title: "Inscrire un appareil Windows 10 dans Intune | Microsoft Intune"
 description: "Cette rubrique explique comment inscrire un appareil Windows 10 Mobile ou Desktop dans Intune"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune
 
 Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. L’inscription de vos appareils permet à votre organisation de sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
@@ -42,7 +42,7 @@ Pour inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop
 
     ![Votre compte](./media/w10-enroll-2-accounts-your-account.png)
 
-## Étapes à suivre si vous voyez Accès scolaire ou professionnel
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Étapes à suivre si vous voyez Accès scolaire ou professionnel
 
 1.  Cliquez sur **Accès scolaire ou professionnel**, puis cliquez sur **Connecter**.
 
@@ -69,7 +69,7 @@ Pour inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop
 Si vous avez suivi les étapes précédentes, mais que vous ne pouvez toujours pas accéder à votre compte e-mail ou vos fichiers professionnels ou scolaires, consultez les [Étapes de dépannage à suivre si vous voyez Accès scolaire ou professionnel](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 
-## Étapes à suivre si vous voyez Votre compte
+## <a name="steps-to-follow-if-you-see-your-account"></a>Étapes à suivre si vous voyez Votre compte
 
 1.  Accédez aux **Paramètres** Windows, puis appuyez sur **Comptes**.
 

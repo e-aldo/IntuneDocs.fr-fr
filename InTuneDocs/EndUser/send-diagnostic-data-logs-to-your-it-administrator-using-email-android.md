@@ -2,8 +2,8 @@
 title: "Envoyer les journaux de données de diagnostic à votre administrateur informatique par e-mail | Microsoft Intune"
 description: "Envoyer les journaux de données par e-mail sur un appareil Android"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 ---
 
 
-# Envoyer des journaux de données de diagnostic à votre administrateur informatique par e-mail
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>Envoyer des journaux de données de diagnostic à votre administrateur informatique par e-mail
 
 Si vous obtenez une erreur sur votre appareil Android pendant que vous utilisez les applications de votre établissement scolaire ou de votre entreprise ou pendant que vous êtes sur l’application du portail d’entreprise, vous pouvez envoyer des journaux de données de diagnostic pour aider votre administrateur informatique à diagnostiquer et corriger l’erreur. Pour inclure tous les détails dans les journaux, ce qui facilitera la tâche de l’administrateur informatique chargé d’identifier le problème, activez la journalisation détaillée. Pour plus d’informations sur la journalisation détaillée, consultez [Use verbose logging to help your IT administrator fix device issues android](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md) (Utiliser la journalisation détaillée pour aider votre administrateur informatique à résoudre les problèmes de l’appareil Android).
 

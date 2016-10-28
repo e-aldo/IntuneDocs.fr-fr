@@ -2,8 +2,8 @@
 title: "Erreur lors de l’évaluation de l’appareil | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 ---
 
 
-# Erreur lors de l'évaluation de l’appareil
+# <a name="error-evaluating-device"></a>Erreur lors de l'évaluation de l’appareil
 Votre appareil a été détecté comme étant non conforme à une ou plusieurs des stratégies de votre entreprise, mais nous ne pouvons pas afficher l’erreur dans l’immédiat, car le système a rencontré un problème durant l’évaluation de votre appareil.  
 
 Pour résoudre ce problème, patientez quelques minutes, puis cliquez sur **vérifier la conformité**. Si le problème persiste, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
