@@ -3,7 +3,7 @@ title: "Ce qui se passe quand vous créez un profil professionnel | Microsoft In
 description: Cette rubrique explique comment chiffrer un appareil Android
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

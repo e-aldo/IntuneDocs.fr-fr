@@ -3,7 +3,7 @@ title: "Envoyer les journaux de données de diagnostic à votre administrateur i
 description: "Envoyer les journaux de données par câble USB"
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

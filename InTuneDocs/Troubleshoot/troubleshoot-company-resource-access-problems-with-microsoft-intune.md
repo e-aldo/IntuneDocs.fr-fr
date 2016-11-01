@@ -2,8 +2,8 @@
 title: "Résoudre les problèmes d’accès aux ressources d’entreprise | Microsoft Intune"
 description: "Cette rubrique présente les codes d’erreur et d’état pour vous aider à résoudre les problèmes d’accès aux ressources."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 |130 (APP_CI_ENFORCEMENT_ERROR)|Échec de l'installation de la licence MSADP||
 |Aucun état (APP_CI_ENFORCEMENT_UNKNOWN)|Non applicable|L'état est actuellement inconnu.|
 
-## <a name="company-resource-access-(common-errors)"></a>Accès aux ressources d'entreprise (erreurs fréquentes)
+## <a name="company-resource-access-common-errors"></a>Accès aux ressources d'entreprise (erreurs fréquentes)
 
 |Code d'état|Code d’erreur hexadécimal|Message d'erreur|
 |---------------|--------------------------|-----------------|

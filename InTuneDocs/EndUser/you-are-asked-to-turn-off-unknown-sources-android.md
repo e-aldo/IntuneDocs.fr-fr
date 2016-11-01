@@ -3,7 +3,7 @@ title: "Vous êtes invité à désactiver les sources inconnues | Microsoft Int
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
