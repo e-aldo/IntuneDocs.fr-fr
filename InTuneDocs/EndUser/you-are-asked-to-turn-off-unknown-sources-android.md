@@ -2,9 +2,10 @@
 title: "Vous êtes invité à désactiver les sources inconnues | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,13 +13,13 @@ ms.technology:
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: d7d43bf3727d58ae8ad821de34d2d328d6b0603a
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: a3264803b8581a5b6ccf627eb0d39d13b12c1cdd
 
 
 ---
 
-# Vous êtes invité à désactiver les sources inconnues
+# <a name="you-are-asked-to-turn-off-unknown-sources"></a>Vous êtes invité à désactiver les sources inconnues
 
 Si le message « L’installation à partir de sources inconnues doit être désactivée » s’affiche, vous devez accéder à **Paramètres** > **Sécurité** (sur certains appareils, le nom de l’option peut être **Écran de verrouillage et sécurité**), puis désactiver **Sources inconnues**.
 
@@ -30,8 +31,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

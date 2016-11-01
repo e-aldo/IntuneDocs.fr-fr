@@ -3,6 +3,7 @@ title: "Configurer la gestion de Windows Phone 8.0 | Microsoft Intune"
 description: "Activez la gestion des appareils mobiles pour les appareils Windows Phone 8.0 avec Microsoft Intune."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 5b659bb63c34887684f90fd56ea853bade8bf791
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 5b659bb63c34887684f90fd56ea853bade8bf791
 Windows Phone 8.0 nécessite un certificat Symantec pour installer l’application Portail d’entreprise Intune et permettre la gestion de l’appareil. Un certificat est également requis pour signer les applications métier. La rubrique suivante concerne uniquement Windows Phone 8.0. Pour gérer Windows Phone 8.1 ou version ultérieure, y compris Windows 10 Mobile, consultez [Configurer l’inscription de Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md).
 
 > [!IMPORTANT]
-> À partir de septembre 2016, l’application Portail d’entreprise pour Windows 8.0 et Windows Phone 8.0 ne sera plus disponible en téléchargement.
+> Depuis septembre 2016, l’application de portail d’entreprise pour Windows Phone 8 et Windows 8 ne peut plus être téléchargée.
 
 -   **Windows Phone 8** – Certificat obligatoire
 -   **Windows Phone 8.1 et Windows 10 Mobile** exigent un certificat uniquement dans les cas suivants :
@@ -42,7 +43,7 @@ Windows Phone 8.0 nécessite un certificat Symantec pour installer l’applicat
 Les exigences de configuration de la gestion d'appareils mobiles Windows Phone varient en fonction du mode de gestion prévu des appareils.  Le fait de définir deux enregistrements CNAME dans l'enregistrement DNS de votre entreprise a pour effet de faciliter l'inscription des utilisateurs. Si vos utilisateurs sont appelés à télécharger l'application Portail d'entreprise depuis le Store, dès lors que vous aurez configuré les paramètres DNS, il vous suffira de configurer le Portail d'entreprise et d'indiquer aux utilisateurs la procédure d'inscription.  Dans le cas de Windows Phone 8.0 ou de Windows Phone 8.1, là où vous déploierez le Portail d’entreprise, vous aurez besoin d’un certificat Symantec pour signer le code de l’application.
 
 ## Configurer les exigences de configuration pour activer la gestion de Windows Phone
-1.  **Configurer Intune** Si vous ne l’avez pas encore fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) sur **Microsoft Intune** et en configurant la gestion des appareils mobiles.
+1.  **Configurer Intune** Si vous ne l’avez pas encore fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles](prerequisites-for-enrollment.md#set-mobile-device-management-authority) sur **Microsoft Intune** et en configurant la gestion des appareils mobiles.
 
 2.  **Définir un alias DNS pour l'adresse du serveur d'inscription** (facultatif)
 
@@ -168,7 +169,7 @@ Vous pouvez déployer l’application Portail d’entreprise sur les appareils W
 
     -   `-PublisherId` – ID d’éditeur de l’entreprise. S'il n'est pas fourni, le champ 'Subject' du certificat de signature de code Symantec Enterprise Mobile est utilisé. Par exemple, 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1'.
 
-    -   `-SdkPath` – Chemin d’accès au dossier racine du Kit de développement logiciel (SDK) Windows pour Windows 8.1. Cet argument est facultatif et sa valeur par défaut est ${env:ProgramFiles(x86)}\Windows Kits\8.1.
+    -   `-SdkPath` – Chemin d’accès au dossier racine du SDK Windows pour Windows 8.1. Cet argument est facultatif et sa valeur par défaut est ${env:ProgramFiles(x86)}\Windows Kits\8.1.
 
     -   `-EnterpriseId` – ID d’entreprise. Vous devez spécifier cet argument ou 'AetxPath'. Si cet argument n'est pas fourni, l'ID d'entreprise est lu dans le fichier AETX. Par exemple, 1000000001.
 
@@ -183,6 +184,6 @@ Vous pouvez déployer l’application Portail d’entreprise sur les appareils W
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

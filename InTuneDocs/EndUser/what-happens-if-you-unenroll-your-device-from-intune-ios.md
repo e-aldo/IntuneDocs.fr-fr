@@ -3,6 +3,7 @@ title: "Que se passe-t-il si vous désinscrivez votre appareil iOS d’Intune ?
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05c94004bf8a4c26ad8063f3e5dc0ba581022e0a
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: a47d3fc5c3a2063e49e9f250e15eb8d6126bb903
 
 
 ---
@@ -29,11 +30,11 @@ Quand vous désinscrivez votre appareil iOS d’Intune :
 
 -   Vous ne pouvez plus installer d’applications à partir du portail d’entreprise.
 
--   Les paramètres que vous avez modifiés au moment d’ajouter l’appareil (par exemple, le fait de désactiver l’appareil photo ou d’imposer une certaine longueur de mot de passe) ne s’appliquent plus.
+-   Tous les paramètres qui ont été modifiés sur votre appareil quand vous l’avez ajouté (par exemple la désactivation de l’appareil photo ou l’exigence d’une certaine longueur de mot de passe) ne s’appliquent plus.
 
--   Il se peut que vous n'ayez plus accès à certaines ressources de l'entreprise, telles que les partages de fichiers ou les sites Web internes.
+-   Il se peut que vous n’ayez plus accès à certaines ressources de l’entreprise, telles que les partages de fichiers ou les sites web internes.
 
--   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre périphérique.
+-   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre appareil.
 
 -   Vous ne pourrez peut-être plus vous connecter au réseau de votre entreprise via le Wi-Fi ou un réseau privé virtuel (VPN).
 
@@ -45,8 +46,6 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

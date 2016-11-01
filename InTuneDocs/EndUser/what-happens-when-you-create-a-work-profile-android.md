@@ -2,7 +2,8 @@
 title: "Ce qui se passe quand vous créez un profil professionnel | Microsoft Intune"
 description: Cette rubrique explique comment chiffrer un appareil Android
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# Ce qui se passe quand vous créez un profil professionnel
+# <a name="what-happens-when-you-create-a-work-profile"></a>Ce qui se passe quand vous créez un profil professionnel
 
-Un profil professionnel est un profil que vous configurez sur votre appareil pour accéder à vos e-mails, applications et fichiers professionnels ou scolaires.
+Un profil professionnel est un profil que vous configurez sur votre appareil pour séparer vos e-mails, applications et données professionnels ou scolaires de vos données personnelles.
 
 Quand vous créez un profil professionnel :
 
-- Votre administrateur informatique peut gérer uniquement les applications, les paramètres et les configurations professionnels sur votre appareil, pas vos applications ou données personnelles.
+- Votre administrateur informatique peut gérer uniquement les e-mails, les applications, les paramètres et les données professionnels sur votre appareil, pas vos applications ou données personnelles.
 
 - Vous obtenez les applications professionnelles à partir du Play Store for Work. Pour obtenir les applications personnelles, vous continuez à accéder au Google Play Store que vous utilisez habituellement à cette fin. L’administrateur informatique ne peut pas voir ou gérer vos applications personnelles.
 

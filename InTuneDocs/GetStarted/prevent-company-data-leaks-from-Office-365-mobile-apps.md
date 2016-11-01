@@ -1,11 +1,11 @@
 ---
 title: "Éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365 | Microsoft Intune"
-description: 
+description: "Utilisez Intune pour sécuriser les données de votre organisation avec des stratégies de gestion des applications mobiles (GAM) qui permettent d’éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365 ou autres applications métier."
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cbb34c02e782248a5895a83fba6808f7fef0db9b
-ms.openlocfilehash: b28beb0219e1669e6cd7eacf03f3875b76cd6e27
+ms.sourcegitcommit: 84faafafb531f0f3599a2b0d81a4123c930852ec
+ms.openlocfilehash: e9ed47a6ced12f800bb5e75bc73d5404a9d5cbc0
 
 
 ---
@@ -31,7 +31,7 @@ Si c’est le cas, Microsoft Intune vous permet de définir des stratégies GAM 
 ## Comment procéder ?
 1.  Apprenez le [fonctionnement de base de la Gestion des applications mobiles (GAM) Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
 2.  Découvrez [ce que vous devez faire avant de pouvoir créer des stratégies de gestion des applications mobiles](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) dans le portail Azure.
-3.  [Créez et déployez des stratégies de gestion des applications mobiles](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) avec Intune.
+3.  [Créez et déployez des stratégies de gestion des applications mobiles](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) avec Intune.
 
 ### Informations supplémentaires :
 - [Expérience de l’utilisateur final](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) pour des applications avec la GAM activée.

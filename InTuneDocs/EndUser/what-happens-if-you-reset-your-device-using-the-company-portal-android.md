@@ -3,8 +3,9 @@ title: "Que se passe-t-il si vous réinitialisez votre appareil Android à l’a
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 05/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ad2dff616e4d76740d3fff0dbeb7dcbb308bb47b
+ms.sourcegitcommit: 3f531adc042677d12c64e2efb4f8e3401e4b5bd4
+ms.openlocfilehash: ff0dca484b7e7a75dcaff69c86985510ee17277e
 
 
 ---
@@ -23,9 +24,9 @@ ms.openlocfilehash: ad2dff616e4d76740d3fff0dbeb7dcbb308bb47b
 
 # Que se passe-t-il si vous réinitialisez votre appareil Android à l’aide du Portail d’entreprise ?
 
-Lorsque vous utilisez le portail d’entreprise pour réinitialiser votre appareil Android, tous les paramètres, applications et données personnelles figurant sur votre appareil sont supprimés et les paramètres par défaut d’usine de votre appareil sont rétablis.
+Quand vous utilisez le portail d’entreprise pour réinitialiser votre appareil Android, tous les paramètres, applications et données personnelles figurant sur votre appareil sont supprimés. Cette réinitialisation rétablit les paramètres d’usine de votre appareil.
 
-Si vous avez un appareil Samsung Knox, vous pouvez effectuer « réinitialisation sélective » en choisissant l’option **device remove** sur le portail d’entreprise. La réinitialisation sélective supprime uniquement les éléments suivants :
+Si vous avez un appareil Samsung Knox, vous pouvez effectuer une « réinitialisation sélective » en choisissant l’option **device remove** sur le portail d’entreprise. La réinitialisation sélective supprime uniquement :
 
 - Les applications commerciales que votre administrateur met à votre disposition
 - L’e-mail, les données VPN et Wi-Fi
@@ -33,11 +34,8 @@ Si vous avez un appareil Samsung Knox, vous pouvez effectuer « réinitialisati
 
 Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
