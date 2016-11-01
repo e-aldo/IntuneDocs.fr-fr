@@ -2,8 +2,8 @@
 title: Inscription directe pour les appareils iOS | Microsoft Intune
 description: "Utilisez l’outil Apple Configurator pour inscrire directement les appareils iOS d’entreprise avec une stratégie prédéfinie en vous connectant via USB à un ordinateur Mac."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -20,7 +20,7 @@ ms.openlocfilehash: 9526ac2eb902198597ba811c5d957d69e1b991c6
 
 ---
 
-# Inscrire directement des appareils iOS en utilisant Apple Configurator
+# <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>Inscrire directement des appareils iOS en utilisant Apple Configurator
 Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’aide de l’outil [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) s’exécutant sur un ordinateur Mac. Ce processus ne réinitialise pas l’appareil aux paramètres d’usine et l’inscrit avec une stratégie prédéfinie. Cette méthode est destinée aux appareils n’ayant **Aucune affinité utilisateur** et implique de connecter l’appareil iOS à un ordinateur Mac via une connexion USB pour configurer l’inscription d’entreprise.
 
 Quand vous inscrivez directement des appareils iOS, vous pouvez inscrire un appareil sans obtenir son numéro de série. Vous pouvez également nommer l’appareil à des fins d’identification avant qu’Intune capture son nom lors de l’inscription. L’application Portail d’entreprise n’est pas prise en charge pour les appareils inscrits directement. Cette aide suppose que vous utilisez Apple Configurator 2.0 sur un ordinateur Mac.
