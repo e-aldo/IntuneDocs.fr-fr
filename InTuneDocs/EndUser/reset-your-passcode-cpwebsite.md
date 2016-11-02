@@ -3,6 +3,7 @@ title: "Réinitialiser le code secret de votre appareil à partir du site web du
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: 381364e42430842032ced3b5c8c9cc8de19e8186
+ms.sourcegitcommit: 2aea845bc00c153f070e04abb67582a5d5a726ca
+ms.openlocfilehash: 47b36616f7a8ee23d4d47b41a1db2c41c185c6f5
 
 
 ---
@@ -23,30 +24,30 @@ ms.openlocfilehash: 381364e42430842032ced3b5c8c9cc8de19e8186
 
 # Réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise
 
-Si vous perdez le code confidentiel ou le mot de passe d’un appareil que vous avez inscrit dans Intune, vous pouvez utiliser le [site web du portail d’entreprise](http://portal.manage.microsoft.com) pour le réinitialiser. Le site web du portail d’entreprise est une page web que vous pouvez utiliser pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
+Si vous perdez le code confidentiel ou le mot de passe d’un appareil que vous avez inscrit dans Intune, vous pouvez utiliser le [site web du portail d’entreprise](http://portal.manage.microsoft.com) pour le réinitialiser. Vous pouvez utiliser le site web du portail d’entreprise pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
 
 > [!NOTE]
-> La présence du bouton Réinitialiser le code d’accès sur le site web du portail d’entreprise dépend de la façon dont votre administrateur informatique a configuré Intune. La réinitialisation du code d’accès n’est pas prise en charge sur les appareils Windows 8.1.
+> La présence du bouton **Réinitialiser le code d’accès** sur le site web du portail d’entreprise dépend de la façon dont votre administrateur informatique a configuré Intune. La réinitialisation du code d’accès n’est pas prise en charge sur les appareils Windows 8.1.
 
 Pour réinitialiser votre code d’accès
 
 1.  Ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com) sur l’appareil dont vous souhaitez réinitialiser le code d’accès.
 
-2.  Cliquez sur **Réinitialiser le code d’accès**.
+2.  Choisissez **Réinitialiser le code d’accès**.
 
-    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![Détails de l’appareil avec le bouton Réinitialiser le code d’accès](./media/iwp-screen-with-all-options.png)
 
-3.  Cliquez sur **Déconnexion**, puis reconnectez-vous avec vos informations d’identification professionnelles ou scolaires. Vous devez vous reconnecter dans les cinq minutes.
+3.  Choisissez **Déconnexion**, puis reconnectez-vous avec vos informations d’identification professionnelles ou scolaires. Vous devez vous reconnecter dans les cinq minutes.
 
-    ![déconnexion-reconnexion](./media/iwp-2-sign-out.png)
+    ![Message de réinitialisation avec bouton de déconnexion](./media/iwp-2-sign-out.png)
 
-4.  Cliquez sur **Réinitialiser le code d’accès**.
+4.  Choisissez **Réinitialiser le code d’accès**.
 
-    ![appuyer-réinitialiser-code secret](./media/iwp-3-tap-reset-passcode-after-signin.png)
+    ![Message qui explique ce qui se passe quand vous réinitialisez le code d’accès](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
-    Pour savoir comment la réinitialisation du code d’accès fonctionne sur votre appareil, consultez le tableau.
+    Pour savoir comment la **réinitialisation du code d’accès** fonctionne sur votre appareil, consultez le tableau.
 
-    |Plate-forme|Prise en charge|
+    |Plateforme|Prise en charge|
     |------------|-----------|
     |Android|Crée un code d’accès alphanumérique temporaire.|
     |iOS|Supprime le code d’accès de l’appareil et ne crée pas de code d’accès temporaire. Si vous utilisez Touch ID, vous devrez le reconfigurer sur votre appareil, car il est supprimé quand vous réinitialisez votre code d’accès.|
@@ -62,8 +63,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,8 +3,9 @@ title: Connexions VPN | Microsoft Intune
 description: "Utilisez les profils VPN afin de déployer des paramètres VPN pour les utilisateurs et appareils de votre organisation."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
@@ -44,20 +45,20 @@ Intune prend en charge la création de profils VPN qui utilisent les types de co
 
 
 
-Type de connexion |iOS et Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop et Mobile |
+Type de connexion |iOS et Mac OS X  |Android et Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop et Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|Oui |Oui   |Non    |     Non    |Non  |Non    | Oui (OMA-URI, mobile uniquement)|     
-Cisco (IPsec)|Oui |Non   |Non  |  Non|Non  |Non | Non|
-Citrix|Oui |Non   |Non  |  Non|Non  |Non | Non|
-Pulse Secure|Oui  |Oui |Oui   |Non  |Oui  |Oui| Oui|        
-Client F5 Microsoft Edge|Oui |Oui |Oui |Non  |Oui  |   Oui |  Oui|   
-Dell SonicWALL Mobile Connect|Oui |Oui |Oui |Non  |Oui |Oui |Oui|         
-CheckPoint Mobile VPN|Oui |Oui |Oui |Oui |Oui|Oui|Oui|
-Microsoft SSL (SSTP)|Non |Non |Non |Non |Non|Non|VPNv1 OMA-URI*|
-Microsoft Automatic|Non |Non |Non |Non |Non|Oui (OMA-URI)|Oui|
-IKEv2|Profil personnalisé iOS|Non |Non |Non |Non|Oui (OMA-URI)|Oui|
-PPTP|Profil personnalisé iOS|Non |Non |Non |Non|Non|Oui|
-L2TP|Profil personnalisé iOS|Non |Non |Non |Non|Oui (OMA-URI)|Oui|
+Cisco AnyConnect|Oui |Oui   |Non    |Non  |Non    | Oui (OMA-URI, mobile uniquement)|     
+Cisco (IPsec)|Oui |Non   |Non  |Non  |Non | Non|
+Citrix|Oui |Non   |Non  |Non  |Non | Non|
+Pulse Secure|Oui  |Oui |Oui   |Oui  |Oui| Oui|        
+Client F5 Microsoft Edge|Oui |Oui |Oui |Oui  |   Oui |  Oui|   
+Dell SonicWALL Mobile Connect|Oui |Oui |Oui |Oui |Oui |Oui|         
+CheckPoint Mobile VPN|Oui |Oui |Oui |Oui|Oui|Oui|
+Microsoft SSL (SSTP)|Non |Non |Non |Non|Non|VPNv1 OMA-URI*|
+Microsoft Automatic|Non |Non |Non |Non|Oui (OMA-URI)|Oui|
+IKEv2|Profil personnalisé iOS|Non |Non |Non|Oui (OMA-URI)|Oui|
+PPTP|Profil personnalisé iOS|Non |Non |Non|Non|Oui|
+L2TP|Profil personnalisé iOS|Non |Non |Non|Oui (OMA-URI)|Oui|
 
 \* Sans les paramètres supplémentaires qui sont disponibles pour Windows 10.
 
@@ -96,6 +97,8 @@ L’utilisateur s’authentifie auprès du serveur VPN en fournissant un nom d�
 
 > [!Note]
 > Un profil VPN pour les appareils Android for Work ne permet une connexion VPN que pour les applications qui sont installées sur le profil professionnel de l’appareil.
+>
+> Certains types de connexions VPN prennent en charge le mode VPN par application pour les appareils Android for Work et pour l’activation du mode VPN par application sur les applications distribuées via Intune.  
 
 3. Utilisez le tableau suivant pour vous aider à configurer les paramètres de profil VPN :
 

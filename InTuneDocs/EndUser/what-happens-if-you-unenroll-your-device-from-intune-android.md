@@ -3,6 +3,7 @@ title: "Que se passe-t-il si vous désinscrivez votre appareil Android d’Intun
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 Quand vous désinscrivez votre appareil Android d’Intune :
 
--   Vous désinscrivez votre appareil dans Intune, ce qui signifie que votre administrateur informatique cesse de gérer l’appareil.
+-   Votre administrateur informatique ne gère plus l’appareil.
 
--   Vous perdrez l’accès aux ressources et aux données de l’entreprise.
+-   Vous perdez l’accès aux ressources et aux données de l’entreprise.
 
 -   Votre appareil n’apparaît plus dans le portail d’entreprise.
 
 -   Vous ne pouvez plus installer d’applications à partir du portail d’entreprise.
 
--   Tous les paramètres qui ont été modifiés sur votre appareil lorsque vous l'avez ajouté, par exemple la désactivation de l'appareil photo ou l'exigence d'une certaine longueur de mot de passe, ne s'appliquent plus.
+-   Tous les paramètres qui ont été modifiés sur votre appareil quand vous l’avez ajouté (par exemple la désactivation de l’appareil photo ou l’exigence d’une certaine longueur de mot de passe) ne s’appliquent plus.
 
 Si votre appareil est configuré uniquement pour recevoir les e-mails d’entreprise et que vous désinscrivez votre appareil, ce dernier n’apparaît plus dans le portail d’entreprise.
 
@@ -43,7 +44,6 @@ Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site we
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

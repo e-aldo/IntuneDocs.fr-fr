@@ -3,6 +3,7 @@ title: "Éviter les fuites de données d’entreprise à partir d’applications
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eccef06d8ac2ac8b27b8695b9a0263794b615df
-ms.openlocfilehash: 0e72db79ca305f4d20fe3fd2f5c9954a04b0482d
+ms.sourcegitcommit: cbb34c02e782248a5895a83fba6808f7fef0db9b
+ms.openlocfilehash: b28beb0219e1669e6cd7eacf03f3875b76cd6e27
 
 
 ---
@@ -30,7 +31,7 @@ Si c’est le cas, Microsoft Intune vous permet de définir des stratégies GAM 
 ## Comment procéder ?
 1.  Apprenez le [fonctionnement de base de la Gestion des applications mobiles (GAM) Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
 2.  Découvrez [ce que vous devez faire avant de pouvoir créer des stratégies de gestion des applications mobiles](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) dans le portail Azure.
-3.  [Créez et déployez des stratégies de gestion des applications mobiles](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) avec Intune.
+3.  [Créez et déployez des stratégies de gestion des applications mobiles](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) avec Intune.
 
 ### Informations supplémentaires :
 - [Expérience de l’utilisateur final](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) pour des applications avec la GAM activée.
@@ -44,6 +45,6 @@ Si c’est le cas, Microsoft Intune vous permet de définir des stratégies GAM 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,6 +3,7 @@ title: "Vous recevez une erreur lors de l’utilisation de l’application Porta
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
 
 
 ---
@@ -25,17 +26,14 @@ ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
 
 Si vous obtenez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil iOS, vous pouvez envoyer des informations sur l’erreur pour aider votre administrateur informatique à résoudre le problème. Vous pouvez envoyer les informations d’erreur de différentes manières :
 
--   En appuyant sur **Rapport** dans les messages d’alerte d’erreur.
+-   Appuyez sur **Rapport** dans les messages d’alerte d’erreur.
 
--   En appuyant sur **Envoyer un rapport de diagnostic** dans l’écran **À propos de** de l’application Portail d’entreprise
+-   Appuyez sur **Envoyer un rapport de diagnostic** dans l’écran **À propos de** de l’application Portail d’entreprise.
 
--   En secouant votre appareil alors que vous êtes dans l’application Portail d’entreprise, puis en appuyant sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** &gt; **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
-
-
+-   Secouez votre appareil sur l’application du portail d’entreprise, puis appuyez sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** &gt; **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

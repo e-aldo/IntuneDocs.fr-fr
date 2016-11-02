@@ -3,6 +3,7 @@ title: "Définir votre code confidentiel ou votre mot de passe | Microsoft Intun
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,15 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e050c7b4947f0a3aae87c545ec8cca282c22fe55
-ms.openlocfilehash: 2c9fd5714f64477e7e07d66429ae68e17e2e1bb7
+ms.sourcegitcommit: 7f08be661936b092cfa100b2454a3f2a3dd24746
+ms.openlocfilehash: c2480f168d5ee06a8419c68d1b90bac62c2879b1
 
 
 ---
 
 # Définir votre code confidentiel ou mot de passe
 
-Votre administrateur informatique peut demander que vous définissiez un code confidentiel ou un mot de passe sur votre appareil Android quand vous utilisez Intune pour accéder à vos données professionnelles ou scolaires. Si vous voyez un message qui vous invite à définir un code confidentiel ou un mot de passe, procédez comme suit.
+Votre administrateur informatique peut demander que vous définissiez un code confidentiel ou un mot de passe sur votre appareil Android quand vous utilisez Intune pour accéder à vos données professionnelles ou scolaires. Vous pouvez également voir des messages qui vous demandent de rendre votre code confidentiel ou mot de passe plus long ou plus complexe afin qu’il soit plus sécurisé.  
+
+Vous pouvez utiliser la procédure suivante pour définir un code confidentiel ou un mot de passe.
 
 1.  Appuyez sur **Paramètres** &gt; **Sécurité** &gt; **Verrouillage d’écran** &gt; **Mot de passe**.
 
@@ -33,6 +36,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -2,7 +2,7 @@
 title: "Inscrire un appareil Windows 8.1 ou Windows RT 8.1 | Microsoft Intune"
 description: "Cette rubrique explique comment inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -21,7 +21,7 @@ ms.openlocfilehash: 53e9313bc85c149960fa985b655a22065b55b8a0
 ---
 
 
-# Inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune
+# <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune
 
 Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, votre organisation peut sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 

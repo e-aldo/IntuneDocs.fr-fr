@@ -3,8 +3,9 @@ title: "Désinscrire votre appareil iOS d’Intune | Microsoft Intune"
 description: "Cette rubrique explique comment désinscrire un appareil iOS d’Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 940cf1a54ef91be14f7290bc303ee386d48a3147
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: acd83d6cac946c7cc3c08bc179bf88dcc7475a69
 
 
 ---
@@ -36,7 +37,7 @@ Pour désinscrire votre appareil d’Intune, suivez ces étapes ou regardez cett
 
 La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
--   Votre périphérique n’apparaît plus dans le portail d’entreprise.
+-   Votre appareil n’apparaît plus dans le portail d’entreprise.
 
 -   Vous ne pouvez plus installer d’applications à partir du portail d’entreprise.
 
@@ -44,7 +45,7 @@ La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
 -   Il se peut que vous n'ayez plus accès à certaines ressources de l'entreprise, telles que les partages de fichiers ou les sites Web internes.
 
--   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre périphérique.
+-   Vous ne pouvez plus utiliser les applications et les données d'entreprise sur votre appareil.
 
 -   Vous ne pourrez peut-être plus vous connecter au réseau de votre entreprise via le Wi-Fi ou un réseau privé virtuel (VPN).
 
@@ -54,11 +55,8 @@ La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

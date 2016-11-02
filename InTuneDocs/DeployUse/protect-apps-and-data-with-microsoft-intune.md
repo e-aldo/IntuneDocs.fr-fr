@@ -1,8 +1,9 @@
 ---
 title: "Protéger les données et les applications | Microsoft Intune"
-description: 
-keywords: "Cette rubrique décrit diverses fonctionnalités Intune qui sont disponibles pour vous aider à protéger vos données et applications d’entreprise."
+description: "Cette rubrique décrit diverses fonctionnalités Intune qui sont disponibles pour vous aider à protéger vos données et applications d’entreprise."
+keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: cf2ef1510aa9dafeddf54855123c826c9ccc2fd0
+ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
+ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
 
 
 ---
@@ -22,8 +23,7 @@ ms.openlocfilehash: cf2ef1510aa9dafeddf54855123c826c9ccc2fd0
 # Protéger les données et les applications avec Microsoft Intune
 
 
-Intune protège les données d’entreprise à travers plusieurs couches de technologie.
-  Dans la couche d’identité, un accès conditionnel protège l’accès aux services en autorisant uniquement l’accès à partir d’appareils conformes et gérés.  Dans la couche d’application client, la gestion des applications mobiles (GAM) protège contre la perte de données en empêchant le déplacement de données vers des applications ou des emplacements de stockage non protégés et en effaçant les données lorsqu’un appareil est perdu ou volé.  Ces deux couches de protection doivent être utilisées ensemble afin de sécuriser les données tout en préservant la productivité de votre personnel mobile.
+Intune protège les données d’entreprise à travers plusieurs couches de technologie.  Dans la couche d’identité, un accès conditionnel protège l’accès aux services en autorisant uniquement l’accès à partir d’appareils conformes et gérés.  Dans la couche d’application client, la gestion des applications mobiles (GAM) protège contre la perte de données en empêchant le déplacement de données vers des applications ou des emplacements de stockage non protégés et en effaçant les données lorsqu’un appareil est perdu ou volé.  Ces deux couches de protection doivent être utilisées ensemble afin de sécuriser les données tout en préservant la productivité de votre personnel mobile.
 
 Une première étape importante pour la protection des données de l’entreprise consiste à implémenter un accès conditionnel en s’assurant que les appareils utilisés pour accéder à ces données utilisent des protections de sécurité (mot de passe fort, chiffrement) et ne sont pas jailbreakés. Microsoft Intune vous permet de définir les conditions auxquelles les appareils doivent se conformer pour être autorisés à accéder à la messagerie et aux données de l’entreprise.
 
@@ -54,6 +54,6 @@ En plus de restreindre le déplacement des données si un appareil est perdu ou 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
