@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
-ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
+ms.sourcegitcommit: 92e40930c0ccbeb3d98bef43b115fd92f24beaef
+ms.openlocfilehash: 93a29266ad9d18f444f0cc0c5aadf9b414eedfa2
 
 
 ---
@@ -24,23 +24,23 @@ Vous pouvez permettre aux employés d’inscrire leurs appareils mobiles auprès
 
 |Étapes|Détails|  
 |-----------|-------------|  
-|**Étape 1 :** [Dépendances de l’inscription des appareils](#step-1-device-enrollment-dependencies)|Vérifiez que votre nom de domaine personnalisé est configuré et que la communication réseau est prête.|  
-|**Étape 2 :** [Définir l’autorité de gestion des appareils mobiles](#step-2-set-mobile-device-management-authority)|L’autorité de gestion des appareils mobiles définit le service affecté à vos appareils.|
-|**Étape 3 :** [Configurer le portail d’entreprise Intune](#step-3-configure-the-intune-company-portal)|Configurer les paramètres utilisateur pour l’application Portail d’entreprise|  
-|**Étape 4 :** [Affecter des licences utilisateur Intune](#step-4-assign-intune-user-licenses)|Affecter des licences Intune aux utilisateurs pour qu’ils puissent inscrire des appareils|
-|**Étape 5 :** [Configurer la gestion des appareils](#step-5-set-up-device-management)|Activez les paramètres spécifiques à la plateforme pour la gestion d’iOS et de Windows. Les appareils Android ne nécessitent pas de configuration supplémentaire.|
+|**Étape 1 :** [Activer les connexions](#step-1-enable-connections)|Vérifiez que votre nom de domaine personnalisé est configuré et que la communication réseau est prête.|  
+|**Étape 2 :** [Définir l’autorité MDM](#step-2-set-mdm-authority)|L’autorité de gestion des appareils mobiles définit le service affecté à vos appareils.|
+|**Étape 3 :** [Configurer le portail d’entreprise](#step-3-configure-company-portal)|Configurer les paramètres utilisateur pour l’application Portail d’entreprise|  
+|**Étape 4 :** [Affecter des licences utilisateur](#step-4-assign-user-licenses)|Affecter des licences Intune aux utilisateurs pour qu’ils puissent inscrire des appareils|
+|**Étape 5 :** [Activer l’inscription](#step-5-enable-enrollment)|Activez les paramètres spécifiques à la plateforme pour la gestion d’iOS et de Windows. Les appareils Android ne nécessitent pas de configuration supplémentaire.|
 
 Vous recherchez Intune avec Configuration Manager ?
 > [!div class="button"]
 [Consultez les documents SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
-## Étape 1 : Dépendances de l’inscription des appareils
+## Étape 1 : Activer les connexions
 
 Avant d’activer l’inscription d’appareils mobiles, vérifiez que vous avez bien effectué les tâches suivantes :
 - [Passer en revue les URL et les ports du réseau](../get-started/network-infrastructure-requirements-for-microsoft-intune)
 - [Ajouter et vérifier votre nom de domaine](../get-started/domain-names-for-microsoft-intune)
 
-## Étape 2 : Définir l’autorité de gestion des appareils mobiles (MDM)
+## Étape 2 : Définir l’autorité MDM
 L’autorité MDM définit le service de gestion habilité à gérer un ensemble d’appareils. Les options en matière d’autorité de gestion des appareils mobiles incluent Intune en version autonome et Configuration Manager avec Intune. Si vous définissez Configuration Manager comme autorité de gestion, aucun autre service ne peut être utilisé pour la gestion des appareils mobiles.
 
 >[!IMPORTANT]
@@ -56,7 +56,7 @@ L’autorité MDM définit le service de gestion habilité à gérer un ensemble
 
 3.  Intune vous invite à confirmer que vous souhaitez définir Intune comme autorité MDM. Cochez la case, puis choisissez **Oui** pour utiliser Microsoft Intune pour gérer les appareils mobiles.
 
-## Étape 3 : Configurer le portail d’entreprise Intune
+## Étape 3 : Configurer le portail d’entreprise
 
 Le portail d’entreprise Intune permet aux utilisateurs d’accéder aux données de l’entreprise et d’effectuer des tâches courantes, notamment l’inscription d’appareils, l’installation d’applications et d’accéder à des informations d’assistance fournies par le département informatique.
 
@@ -102,7 +102,7 @@ Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de
 
 Après avoir enregistré vos modifications, vous pouvez utiliser les liens proposés au bas de la page **Portail d’entreprise** de la console d’administration pour afficher le site web du Portail d’entreprise. Ces liens ne peuvent pas être modifiés. Lorsqu’un utilisateur se connecte, ces liens présentent vos abonnements dans le Portail d’entreprise.
 
-## Étape 4 : Affecter des licences utilisateur Intune
+## Étape 4 : Affecter des licences utilisateur
 
 Utilisez le **portail de gestion Office 365** pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD. Vous pouvez [synchroniser des utilisateurs locaux avec Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
@@ -119,7 +119,7 @@ Utilisez le **portail de gestion Office 365** pour ajouter manuellement des uti
 3. Exécutez la [synchronisation Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) pour intégrer vos utilisateurs locaux à Azure AD.
 4. Une fois les informations sur le compte d’utilisateur correctement synchronisées, vous pouvez attribuer des licences Microsoft Intune à l’aide du [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx).
 
-## Étape 5 : Configurer la gestion des appareils
+## Étape 5 : Activer l’inscription
 Après avoir configuré l’autorité de gestion des appareils mobiles, vous devez configurer la gestion des appareils pour les systèmes d’exploitation que votre organisation souhaite prendre en charge. Les étapes requises pour configurer la gestion des appareils varient selon le système d’exploitation. Par exemple, le système d’exploitation Android ne vous demande d’effectuer aucune opération dans la console d’administration Intune. En revanche, iOS et Windows nécessitent une relation d’approbation entre les appareils et Intune pour autoriser la gestion.
 
 Configurez la gestion pour les plateformes suivantes :
@@ -134,6 +134,6 @@ Vous pouvez également effectuer les opérations suivantes :
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

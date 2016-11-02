@@ -3,6 +3,7 @@ title: Gestion des appareils mobiles avec Exchange ActiveSync | Microsoft Intune
 description: "Gérer les appareils mobiles avec la gestion de Microsoft Exchange ActiveSync (EAS) à l’aide du connecteur Exchange"
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 96d8911dafe7897458297867ddfef97206fdfc9c
+ms.sourcegitcommit: d5d5345dc6ef022e385a33ccc19b19cc022af2d5
+ms.openlocfilehash: c67ad198c1693f84c9e00d15da00a131f7d0af87
 
 
 ---
 
 # Gestion des appareils mobiles Microsoft Exchange ActiveSync avec Microsoft Intune
-Pour que Microsoft Intune gère directement des appareils mobiles, ces appareils doivent être [inscrits auprès de Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md). Les administrateurs ont également la possibilité d’activer une solution de gestion plus limitée qui utilise la gestion de Microsoft Exchange ActiveSync (EAS) avec un connecteur Exchange. Les appareils peuvent être gérés avec des serveurs Exchange locaux ou avec Exchange Online, à l’aide de Microsoft Office 365. Microsoft Intune prend en charge une seule connexion du connecteur Exchange par abonnement, quel que soit le type de connecteur.
+Pour que Microsoft Intune gère directement des appareils mobiles, ces appareils doivent être [inscrits dans Intune](prerequisites-for-enrollment.md). Les administrateurs ont également la possibilité d’activer une solution de gestion plus limitée qui utilise la gestion de Microsoft Exchange ActiveSync (EAS) avec un connecteur Exchange. Les appareils peuvent être gérés avec des serveurs Exchange locaux ou avec Exchange Online, à l’aide de Microsoft Office 365. Microsoft Intune prend en charge une seule connexion du connecteur Exchange par abonnement, quel que soit le type de connecteur.
 
 ## Règles d'accès Exchange pour les appareils mobiles ##
 
@@ -46,6 +47,6 @@ Enfin, vous pouvez [effacer des données d’entreprise d’appareils mobiles g�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

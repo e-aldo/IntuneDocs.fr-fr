@@ -2,9 +2,10 @@
 title: "Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil iOS et Mac OS X dans Intune ? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,23 +26,23 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 Après avoir installé l’application Portail d’entreprise et inscrit votre appareil iOS ou Mac OS X dans Intune, vous pouvez utiliser l’application Portail d’entreprise pour :
 
--   accéder au réseau de l'entreprise, à votre messagerie et à vos fichiers de travail ;
+-   accéder au réseau de l’entreprise, à votre messagerie et à vos fichiers de travail ;
 
--   obtenir des applications d'entreprise à partir du portail d'entreprise ;
+-   obtenir des applications d’entreprise à partir du portail d’entreprise ;
 
 -   réinitialiser à distance les paramètres de votre téléphone en cas de perte ou de vol ;
 
--   configurer automatiquement votre compte e-mail d'entreprise ;
+-   configurer automatiquement votre compte e-mail d’entreprise ;
 
-En inscrivant votre appareil dans Intune, vous autorisez votre administrateur informatique à gérer votre appareil pour protéger les informations de l’entreprise présentes sur l’appareil.
+En inscrivant votre appareil dans Intune, vous autorisez l’administrateur informatique à gérer votre appareil pour protéger les informations de l’entreprise présentes sur l’appareil.
 
 **Ce qu’il ne peut pas voir**
 
--   Historique des appels et pages Web
+-   Historique des appels et pages web
 
 -   Emplacement
 
--   Messages électroniques et texte
+-   E-mails et SMS
 
 -   Contacts
 
@@ -85,16 +86,16 @@ Une fois votre appareil inscrit, votre administrateur informatique peut :
 
 -   Activer ou désactiver le flux de photos vers iCloud.
 
--   Activer ou désactiver l'itinérance des données sur votre appareil. Si l'itinérance des données est autorisée, cela peut engendrer des frais d'itinérance.
+-   Activer ou désactiver l'itinérance des données sur votre appareil. Si l’itinérance des données est autorisée, cela peut engendrer des frais d’itinérance.
 
--   Activer ou désactiver l'itinérance vocale sur votre appareil. Si l'itinérance vocale est autorisée, cela peut engendrer des frais d'itinérance.
+-   Activer ou désactiver l'itinérance vocale sur votre appareil. Si l’itinérance vocale est autorisée, cela peut engendrer des frais d’itinérance.
 
--   Activer ou désactiver la synchronisation automatique des fichiers en itinérance sur votre appareil. Si la synchronisation automatique des fichiers est autorisée, cela peut engendrer des frais d'itinérance.
+-   Activer ou désactiver la synchronisation automatique des fichiers en itinérance sur votre appareil. Si la synchronisation automatique des fichiers est autorisée, cela peut engendrer des frais d’itinérance.
 
 Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -2,7 +2,8 @@
 title: "Créer un profil professionnel et inscrire votre appareil dans Intune | Microsoft Intune"
 description: Cette rubrique explique comment chiffrer un appareil Android
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 ---
 
 
-# Créer un profil professionnel et inscrire votre appareil dans Intune
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Créer un profil professionnel et inscrire votre appareil dans Intune
 
-Un profil professionnel est un profil que vous configurez sur votre appareil pour accéder à vos e-mails, applications et fichiers professionnels ou scolaires. Vous pouvez obtenir plus d’informations sur [ce qui se passe quand vous créez un profil professionnel](what-happens-when-you-create-a-work-profile-android.md).
+L’inscription de votre appareil Android vous donne accès aux e-mails, applications et autres données professionnelles de l’entreprise. Dans le cadre de l’inscription, vous définissez un profil professionnel, qui sépare les données personnelles sur votre appareil de vos données de travail. Votre administrateur informatique peut gérer uniquement le profil professionnel, qui contient vos données de travail. Il ne peut pas gérer les données personnelles sur votre appareil. Obtenez plus d’informations sur [ce qui se passe quand vous créez un profil professionnel](what-happens-when-you-create-a-work-profile-android.md).
 
 Pour créer un profil professionnel :
 
@@ -56,11 +57,11 @@ Pour créer un profil professionnel :
 
     Deux messages indiquant « Configuration de votre profil professionnel » et « Inscription de votre appareil » apparaissent.
 
-8. Dans l’écran **Vous avez fait la moitié du chemin !**, appuyez sur l’icône d’application Portail d’entreprise munie du badge.
+8. Dans l’écran **Vous avez fait la moitié du chemin !**, attendez quelques secondes, le temps que s’ouvre l’application Portail d’entreprise.
 
     ![Appuyer sur l’application Portail d’entreprise munie du badge](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. Dans l’écran de **bienvenue** du portail d’entreprise Android, appuyez sur **Se connecter**, puis connectez-vous avec votre compte professionnel ou scolaire.
+9. Dans l’écran de **bienvenue** du portail d’entreprise Android, appuyez sur **Se connecter**, puis connectez-vous avec le compte professionnel ou scolaire que vous avez utilisé pour vous connecter plus tôt au cours de ce processus.
 
 10. Dans l’écran **Configuration de l’accès à l’entreprise**, notez que la configuration de votre profil professionnel est terminée, puis appuyez sur **CONTINUER**.
 
@@ -72,11 +73,11 @@ Pour créer un profil professionnel :
 
     ![L’écran Configuration de l’accès à l’entreprise indique que le profil professionnel et l’inscription sont terminés](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. Dans l’écran **Fin de la configuration de l’accès à l’entreprise**, appuyez sur **TERMINÉ**.
+12. Dans l’écran **Fin de la configuration de l’accès à l’entreprise**, appuyez sur **TERMINÉ**. Vous devrez peut-être effectuer des étapes supplémentaires si votre administrateur informatique a ajouté d’autres exigences.
 
     ![La configuration de l’accès à l’entreprise est terminée](./media/andr-afw-company-access-setup-complete.png)
 
-    Vous êtes redirigé vers le Play Store for Work, où vous pouvez à présent obtenir des applications d’entreprise.
+    Vous pouvez à présent obtenir des applications d’entreprise à partir du Play Store for Work.
 
     ![Page des applications du Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 

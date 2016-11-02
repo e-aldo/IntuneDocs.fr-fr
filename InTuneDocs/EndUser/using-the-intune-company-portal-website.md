@@ -3,6 +3,7 @@ title: "Utilisation du site web Portail d’entreprise Intune | Microsoft Intune
 description: "Cette rubrique décrit le site web Portail d’entreprise et fournit des liens menant vers les procédures de réalisation des tâches que vous pouvez effectuer sur ce site web"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: f44f4785f768e6fea8532199b28d3621248e2dd4
+ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
+ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
 
 
 ---
 
 # Utilisation du site web Portail d’entreprise Intune
-Le [site web Portail d’entreprise](http://portal.manage.microsoft.com) est une page web qui vous permet de gérer les ordinateurs et appareils que vous avez inscrits dans Intune.
+Le [site web du portail d’entreprise](http://portal.manage.microsoft.com) est une page web qui vous permet de gérer les ordinateurs et appareils que vous avez inscrits dans Intune.
 
 Vous pouvez utiliser le site web Portail d’entreprise pour :
 
@@ -42,14 +43,14 @@ Vous pouvez utiliser le site web Portail d’entreprise pour :
 
 -   Gérer à distance votre PC (s’applique uniquement aux PC)
 
-Sur le **site web Portail d’entreprise** , vous pouvez faire à peu près les mêmes choses que dans l’ **application Portail d’entreprise** que vous installez sur votre appareil. Pour en savoir plus sur l’application Portail d’entreprise, sur l’inscription d’un appareil dans Intune, et plus encore, appuyez sur le lien correspondant au type d’appareil que vous possédez :
+Sur le **site web Portail d’entreprise** , vous pouvez faire à peu près les mêmes choses que dans l’ **application Portail d’entreprise** que vous installez sur votre appareil. Pour en savoir plus sur l’application Portail d’entreprise, sur la façon d’inscrire un appareil dans Intune, et plus encore, appuyez sur le lien correspondant au type d’appareil que vous possédez :
 
 - [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Utilisation de votre appareil iOS ou Mac OS X avec Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

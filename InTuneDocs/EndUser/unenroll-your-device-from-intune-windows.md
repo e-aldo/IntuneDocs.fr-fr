@@ -3,8 +3,9 @@ title: "Désinscrire votre appareil Windows d’Intune | Microsoft Intune"
 description: "Cette rubrique explique comment désinscrire un appareil Windows d’Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 424890c84de5b42c9a490489b78d7b2408b47cef
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 
 ---
@@ -44,11 +45,11 @@ Pour désinscrire votre appareil, utilisez le lien répertorié dans la section 
 
 1.  Accédez à **Paramètres du PC** &gt; **Réseau** &gt; **Espace de travail**.
 
-2.  Sous **Jonction d’espace de travail**, cliquez sur **Quitter**.
+2.  Sous **Jonction d’espace de travail**, sélectionnez **Quitter**.
 
-3.  Sous **Activer la gestion des appareils**, appuyez sur **Désactiver**.
+3.  Sous **Activer la gestion des appareils**, sélectionnez **Désactiver**.
 
-4.  Dans la fenêtre contextuelle qui s’ouvre, appuyez sur **Désactiver**.
+4.  Dans la fenêtre contextuelle qui s’ouvre, sélectionnez **Désactiver**.
 
 ## Désinscrire votre appareil Windows Phone 8.1
 
@@ -62,11 +63,8 @@ Pour désinscrire votre appareil, utilisez le lien répertorié dans la section 
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

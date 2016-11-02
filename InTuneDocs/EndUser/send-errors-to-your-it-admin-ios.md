@@ -2,7 +2,7 @@
 title: "Envoyer les erreurs à votre administrateur informatique | Microsoft Intune"
 description: "Envoyer les erreurs à votre administrateur"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 ---
 
 
-# Envoyer les erreurs à votre administrateur informatique
+# <a name="send-errors-to-your-it-admin"></a>Envoyer les erreurs à votre administrateur informatique
 
 Si vous obtenez des erreurs sur votre appareil iOS pendant que vous utilisez l’application du portail d’entreprise, vous pouvez envoyer des informations pour aider votre administrateur informatique à résoudre le problème. Vous pouvez envoyer les informations d’erreur de différentes manières :
 

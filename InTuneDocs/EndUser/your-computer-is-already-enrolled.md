@@ -3,8 +3,9 @@ title: "Votre ordinateur est déjà inscrit | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 6564736c208acbe7cb7441efcb87d7a608b3ac74
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
 
 
 ---
@@ -23,11 +24,11 @@ ms.openlocfilehash: 6564736c208acbe7cb7441efcb87d7a608b3ac74
 
 # Votre ordinateur est déjà inscrit
 
-Si vous recevez une erreur indiquant que l’ordinateur est déjà inscrit, cela signifie que votre ordinateur a déjà été ajouté sur le portail d’entreprise, mais qu’il n’est pas encore lié à votre compte d’utilisateur. Suivez cette procédure pour lier votre ordinateur à votre compte d'utilisateur et terminer le processus.  
+Si vous recevez une erreur indiquant que votre ordinateur est déjà inscrit, celui-ci a déjà été ajouté sur le portail d’entreprise, mais il n’est pas encore lié à votre compte d’utilisateur. Suivez cette procédure pour lier votre ordinateur à votre compte d’utilisateur et terminer le processus.  
 
 Pour lier votre ordinateur :
 
-1.  Sur l'ordinateur que vous souhaitez lier à votre compte, cliquez sur **Démarrer** , puis sur **Microsoft Intune Center**.
+1.  Sur l’ordinateur que vous souhaitez lier à votre compte, choisissez **Démarrer**, puis **Microsoft Intune Center**.
 
 2.  Ouvrez le Portail d’entreprise.
 
@@ -39,6 +40,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

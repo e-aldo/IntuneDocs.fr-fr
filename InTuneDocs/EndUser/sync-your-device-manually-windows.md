@@ -3,8 +3,9 @@ title: Synchroniser votre appareil Windows manuellement | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -52,8 +53,8 @@ Pour synchroniser manuellement votre appareil mobile Windows 10 pour accélérer
 
     Le message « Nous synchronisons votre compte » apparaît en haut de l’écran. Le bouton **Synchroniser** est grisé tant que la synchronisation n’est pas terminée sur votre appareil.
 
-## Poste de travail Windows 10
-Pour synchroniser manuellement votre poste de travail Windows 10 pour accélérer l’installation d’une application :
+## Windows 10 Desktop
+Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour connaître la procédure à exécuter, examinez les captures d’écran, puis suivez les étapes qui ressemblent à ce que vous voyez sur votre appareil. 
 
 1. Choisissez le bouton **Démarrer**, puis choisissez **Paramètres**.
 
@@ -63,15 +64,46 @@ Pour synchroniser manuellement votre poste de travail Windows 10 pour accélér
 
     ![Choix de Comptes dans la page Paramètres](./media/win10pc-sync-2-settings-accounts.png)
 
-3. Dans la page **Comptes**, choisissez **Accès professionnel**.
+3. Examinez les deux écrans suivants et déterminez celui qui ressemble à celui qui s’affiche sur votre appareil. Suivez les étapes correspondant à l’écran qui s’affiche sur votre appareil.
+
+    Si cet écran s’affiche, qui indique « Accès Professionnel ou Scolaire », suivez les instructions indiquées dans la section [Étapes à suivre si vous voyez Accès scolaire ou professionnel](#steps-to-follow-if-you-see-access-work-or-school).
+
+    ![Étapes de synchronisation à suivre si vous voyez Accès Professionnel ou Scolaire](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    Si vous voyez cet écran, qui indique « Accès professionnel », consultez les [étapes à suivre si vous voyez Accès professionnel](#steps-to-follow-if-you-see-your-account).
+
+    ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png) 
+
+### Étapes à suivre si vous voyez Accès scolaire ou professionnel
+
+1. Dans la page **Comptes**, choisissez **Accès Professionnel ou Scolaire**.
+
+    ![Choisir Accès Professionnel ou Scolaire](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. Choisissez votre compte professionnel ou scolaire. Selon la configuration effectuée par votre administrateur informatique, vous pouvez voir deux comptes similaires à l’exemple ci-dessous. Un compte est accompagné d’un porte-documents, l’autre du logo Microsoft. 
+
+    - Si vous voyez le compte avec le porte-documents, sélectionnez-le, puis recherchez un bouton **Info** sous celui-ci. 
+    - Si vous voyez uniquement le compte avec le logo Microsoft, sélectionnez le compte, puis recherchez un bouton **Info** sous celui-ci.
+
+    ![Choisissez votre nom de compte en regard du porte-documents ou du logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
+
+3. Choisissez le bouton **Info**. Une boîte de dialogue s’ouvre, similaire à l’exemple ci-dessous.
+
+    ![Choisissez votre nom de compte en regard du porte-documents ou du logo Microsoft](./media/win10pc-rs1-sync-button.png)
+
+4. Choisissez le bouton **Synchroniser**. Votre appareil sera synchronisé avec Intune.
+
+### Étapes à suivre si vous voyez Accès professionnel
+    
+1. Dans la page **Comptes**, choisissez **Accès professionnel**.
 
     ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png)
 
-4. Dans la section **Inscription à la gestion des appareils**, choisissez le nom de votre entreprise.
+2. Dans la section **Inscription à la gestion des appareils**, choisissez le nom de votre entreprise.
 
     ![Choix du nom de l’entreprise pour la gestion des appareils](./media/win10pc-sync-4-tap-com-name.png)
 
-5. Choisissez le bouton **Synchroniser**.
+3. Choisissez le bouton **Synchroniser**.
 
     ![Choix du bouton Synchroniser](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -125,7 +125,7 @@
 #### [Valider les stratégies de gestion des appareils mobiles](validate-mobile-application-management.md)
 #### [Surveiller la conformité des stratégies](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Gérer les transferts de données entre applications iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-#### [Expérience de l’utilisateur final](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 #### [Console d’administration Intune pour les stratégies de gestion des applications mobiles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Préparer des applications métier pour la gestion des appareils mobiles](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
@@ -141,12 +141,15 @@
 ### [Réinitialiser les données d’applications d’entreprise managées](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Ressources concernant l’expérience utilisateur final](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+### [Restaurer des appareils iOS gérés](restore-managed-ios-devices-from-backup.md)
+### [Applications Android avec stratégies GAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [Applications iOS avec stratégies GAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # [Développer et personnaliser des applications](/intune/develop/intune-app-sdk)
 
 # [Dépannage](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

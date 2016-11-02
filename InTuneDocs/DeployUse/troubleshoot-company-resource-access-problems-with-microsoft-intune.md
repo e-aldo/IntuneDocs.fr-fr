@@ -2,8 +2,8 @@
 title: "Résoudre les problèmes d’accès aux ressources d’entreprise | Microsoft Intune"
 description: "Cette rubrique présente les codes d’erreur et d’état pour vous aider à résoudre les problèmes d’accès aux ressources."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 ---
 
-# Résoudre les problèmes d’accès aux ressources d’entreprise avec Microsoft Intune
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Résoudre les problèmes d’accès aux ressources d’entreprise avec Microsoft Intune
 Utilisez les codes d’erreur et d’état de cette rubrique pour vous aider à résoudre les problèmes à l’origine des codes d’erreur retournés dans Microsoft Intune.
 
 Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
 
-## Codes d'état des appareils Windows gérés par MDM
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>Codes d'état des appareils Windows gérés par MDM
 
 |Code d'état|Message d'erreur|Procédure à suivre|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 |130 (APP_CI_ENFORCEMENT_ERROR)|Échec de l'installation de la licence MSADP||
 |Aucun état (APP_CI_ENFORCEMENT_UNKNOWN)|Non applicable|L'état est actuellement inconnu.|
 
-## Accès aux ressources d'entreprise (erreurs fréquentes)
+## <a name="company-resource-access-common-errors"></a>Accès aux ressources d'entreprise (erreurs fréquentes)
 
 |Code d'état|Code d’erreur hexadécimal|Message d'erreur|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 |-2016341111|0x87D11389|L'appareil iOS a retourné un état inactif inattendu|
 |-2016341112|0x87D11388|L'appareil iOS est actuellement occupé|
 
-## Erreurs retournées par les appareils iOS
+## <a name="errors-returned-by-ios-devices"></a>Erreurs retournées par les appareils iOS
 
 |Code d'état|Code d’erreur hexadécimal|Message d'erreur|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 |-2016335111|0x87D12AF9|1001 : version de profil non prise en charge|
 |-2016335112|0x87D12AF8|1000 : format de profil incorrect|
 
-## Codes de réponse OMA
+## <a name="oma-response-codes"></a>Codes de réponse OMA
 
 |Code d'état|Code d’erreur hexadécimal|Message d'erreur|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 |-2016345912|0x87D100C8|La commande SyncML s'est exécutée correctement.|
 |-2016346011|0x87D10065|La commande SyncML spécifiée est en cours d'exécution, mais n'est pas encore finie.|
 
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 

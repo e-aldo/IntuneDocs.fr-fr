@@ -3,6 +3,7 @@ title: "Que se passe-t-il si vous installez l’application Portail d’entrepri
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 
 ---
@@ -23,30 +24,30 @@ ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 # Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows dans Intune ?
 
-Quand vous installez l’application Portail d’entreprise et que vous l’utilisez pour inscrire un appareil Windows ou Windows Phone, vous permettez à votre administrateur de gérer votre appareil pour sécuriser les données de votre entreprise ou de votre établissement scolaire, comme cela est décrit ci-dessous pour les appareils antérieurs à Windows 10. Consultez [cette page](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) pour les appareils Windows 10.
+Quand vous installez l’application Portail d’entreprise et que vous l’utilisez pour inscrire un appareil Windows ou Windows Phone, vous permettez à l’administrateur informatique de gérer votre appareil pour sécuriser les données de votre entreprise ou établissement scolaire. Cette rubrique décrit ce qui se passe pour les appareils antérieurs à Windows 10. Pour les appareils Windows 10, consultez la [rubrique connexe](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## Que se passe-t-il pour tous les appareils Windows après l’inscription ?
 Quand votre appareil Windows ou Windows Phone est inscrit dans Intune, vous pouvez :
 
--   accéder au réseau de l'entreprise, à votre messagerie et à vos fichiers de travail ;
+-   accéder au réseau de l’entreprise, à votre messagerie et à vos fichiers de travail ;
 
--   obtenir des applications d’entreprise à partir du site web Portail d’entreprise (ce site web est d’ailleurs le seul moyen pour obtenir de telles applications pour Windows 7 et Vista) ;
+-   obtenir des applications d’entreprise à partir du site web du portail d’entreprise ; (Pour Windows 7 et Windows Vista, vous pouvez obtenir des applications d’entreprise à partir du site web du portail d’entreprise uniquement.)
 
--   configurer automatiquement votre compte de messagerie professionnelle ou scolaire ;
+-   configurer automatiquement votre compte e-mail d’entreprise ou scolaire ;
 
 -   réinitialiser les paramètres de votre téléphone en cas de perte ou de vol.
 
-Quand vous inscrivez votre appareil, vous autorisez votre administrateur à effectuer les opérations suivantes :
+Quand vous inscrivez votre appareil, vous autorisez l’administrateur informatique à effectuer les opérations suivantes :
 
--   Réinitialiser votre périphérique aux réglages par défaut d'origine. Ceci est utile si l'appareil est perdu ou volé.
+-   Réinitialiser votre appareil aux réglages par défaut d’origine. Ceci est utile si l'appareil est perdu ou volé.
 
--   Supprimer uniquement les fichiers relatifs à l’entreprise et les applications professionnelles. **Vos données et paramètres personnels ne sont pas supprimés.**
+-   Supprimer uniquement les fichiers relatifs à l’entreprise et les applications professionnelles. *Vos données et paramètres personnels ne sont pas supprimés.*
 
--   Votre administrateur informatique peut voir tous les logiciels installés sur l’appareil, y compris les logiciels que vous avez installés personnellement.
+-   Votre administrateur informatique peut voir les logiciels installés sur l’appareil, dont les logiciels que vous avez installés personnellement.
 
--   Définir les exigences pour votre appareil, comme vous obliger à avoir un mot de passe ou un code PIN sur l’appareil pour protéger les données d’entreprise. Votre administrateur informatique peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’appareil si vous dépassez le nombre maximal autorisé.
+-   Définir les exigences pour votre appareil, comme vous obliger à avoir un mot de passe ou un code confidentiel sur l’appareil pour protéger les données d’entreprise. Votre administrateur informatique peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’appareil si vous dépassez le nombre maximal autorisé.
 
--   Vous obliger à chiffrer les données sur votre appareil pour mieux protéger les données d’entreprise si l’appareil est perdu ou volé. 
+-   Vous obliger à chiffrer les données sur votre appareil pour mieux protéger les données d’entreprise si l’appareil est perdu ou volé.
 
 -   Vous êtes obligé d'accepter les conditions générales.
 
@@ -54,9 +55,9 @@ Quand vous inscrivez votre appareil, vous autorisez votre administrateur à effe
 
 ## Que se passe-t-il pour tous les ordinateurs Windows après l’inscription ?
 
--  Certains logiciels seront installés sur votre ordinateur pour permettre à votre administrateur informatique de gérer l'ordinateur et à vous d'obtenir des ressources d'entreprise telles que des applications et des informations de support. Votre administrateur informatique peut automatiquement mettre à jour ce logiciel.
+-  Certains logiciels seront installés sur votre ordinateur pour permettre à votre administrateur informatique de gérer l’ordinateur et à vous d’accéder aux ressources d’entreprise telles que des applications et des informations de support. Votre administrateur informatique peut automatiquement mettre à jour ces logiciels.
 
--  Intune Endpoint Protection peut être installé sur votre ordinateur. Il s'agit d'un logiciel qui recherche les virus et programmes malveillants.
+-  Intune Endpoint Protection peut être installé sur votre ordinateur. Ce logiciel recherche les virus et programmes malveillants.
 
 -  Votre administrateur informatique peut collecter ou supprimer des données du disque dur de votre ordinateur.
 
@@ -75,7 +76,6 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

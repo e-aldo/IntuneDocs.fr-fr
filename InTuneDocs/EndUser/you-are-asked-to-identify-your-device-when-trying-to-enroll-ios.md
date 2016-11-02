@@ -3,8 +3,9 @@ title: "Vous êtes invité à identifier votre appareil quand vous essayez de l�
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 05/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: b7274056dc47b59381088d8d7ac33758f2cc6334
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 852c02fabee7ec3551e34f92c5f9e44402d31ecb
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: b7274056dc47b59381088d8d7ac33758f2cc6334
 
 # Vous êtes invité à identifier votre appareil quand vous essayez d’inscrire
 
-Si vous essayez d’inscrire votre appareil iOS ou Mac OS X dans Intune et que vous voyez un écran vous demandant d’identifier votre appareil, cela signifie qu’au moins un de vos appareils a déjà été inscrit et affecté à votre compte à l’aide d’une méthode autre que l’application Portail d’entreprise. Pour que l’application Portail d’entreprise fonctionne correctement, vous devez déterminer si l’appareil que vous utilisez a déjà été inscrit dans Intune.
+Si vous essayez d’inscrire votre appareil iOS ou Mac OS X dans Intune et que vous voyez un écran vous demandant d’identifier votre appareil, au moins un de vos appareils a déjà été inscrit et affecté à votre compte à l’aide d’une méthode autre que l’application Portail d’entreprise. Pour que l’application Portail d’entreprise fonctionne correctement, vous devez déterminer si l’appareil que vous utilisez a déjà été inscrit dans Intune.
 
 1. Si vous voyez votre appareil dans la liste, appuyez sur celui-ci. Si vous ne le voyez pas, appuyez sur **Nouvel appareil**.
 2. Appuyez sur **Continuer**.
@@ -31,11 +32,8 @@ Si vous essayez d’inscrire votre appareil iOS ou Mac OS X dans Intune et que v
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
-### Voir aussi
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

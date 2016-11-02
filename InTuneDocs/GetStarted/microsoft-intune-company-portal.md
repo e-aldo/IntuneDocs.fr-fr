@@ -3,18 +3,19 @@ title: "Portail d’entreprise Microsoft Intune | Microsoft Intune"
 description: "Configurer le Portail d’entreprise Intune"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jeffgilb
+ms.reviewer: jve
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
+ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
+ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
 
 
 ---
@@ -48,11 +49,18 @@ Certaines des tâches que les utilisateurs peuvent effectuer dans le Portail d�
 
 Pour qu’un utilisateur puisse accéder au Portail d’entreprise, son compte doit d’abord obtenir une licence d’utilisation de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et avoir un état de connexion **Autorisé**. En savoir plus sur l’[ajout d’utilisateurs](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) et l’[affectation de licences pour votre abonnement](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Vous pouvez également [personnaliser le site web du Portail d’entreprise](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) avec le logo de votre entreprise, les conditions d’utilisation, et plus. Les utilisateurs accèdent au site web du Portail d’entreprise en visitant le site web et en se connectant avec leur compte de travail ou scolaire.
 
+> [!NOTE]
+> L’application Portail d’entreprise n’est pas encore disponible dans certains pays.
+
+> __iOS__ : l’application Portail d’entreprise pour iOS est publiée sur [tous les territoires disponibles](https://go.microsoft.com/fwlink/?linkid=831284) pour l’Apple iOS App Store.
+
+> __Android__ : Antigua-et-Barbuda, Aruba, Bénin, Burkina Faso, Cambodge, Chine, Cuba, Gabon, Guinée-Bissau, Haïti, Iran, Laos, Mali, Mozambique, Myanmar (Birmanie), Antilles néerlandaises, Niger, Papouasie Nouvelle Guinée, Soudan, Togo. Pour ces pays, une autre solution consiste à [charger la version de test Android de l’application Portail d’entreprise](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+
 ### Voir aussi
 [Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

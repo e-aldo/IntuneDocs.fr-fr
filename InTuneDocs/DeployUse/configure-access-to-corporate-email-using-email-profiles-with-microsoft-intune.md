@@ -3,8 +3,9 @@ title: "Accéder à la messagerie d’entreprise en utilisant des profils de mes
 description: "Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: befe1b3446770509c83a360c854993d4aaada09d
-ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
+ms.sourcegitcommit: 9f8767f191df76e8f166767c51fff357b251bbd4
+ms.openlocfilehash: f736c408f5a4ece65eeef35fb8d1be9a9b29c1b1
 
 
 ---
@@ -29,14 +30,14 @@ Si vous avez besoin d’une protection supplémentaire contre la perte de donné
 Les administrateurs informatiques ou les utilisateurs peuvent choisir d’installer d’autres clients de messagerie (par exemple Microsoft Outlook pour Android ou iOS). Ces clients de messagerie peuvent ne pas prendre en charge les profils de messagerie, et ne sont pas configurables à l’aide des profils de messagerie Intune.  
 
 Vous pouvez utiliser des profils de messagerie pour configurer le client de messagerie natif sur les types d’appareils suivants :
--   Windows Phone 8 et versions ultérieures
+-   Windows Phone 8.1 et versions ultérieures
 -   Windows 10 (pour le bureau), Windows 10 Mobile et versions ultérieures
 -   iOS 8.0 et versions ultérieures
 -   Samsung KNOX Standard (4.0 et versions ultérieures)
 -   Android for Work
 
 >[!NOTE]
->Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store et prennent en charge les connexions à Exchange. Pour activer la connectivité d’e-mail, déployez une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié. 
+>Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store et prennent en charge les connexions à Exchange. Pour activer la connectivité d’e-mail, déployez une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié.
 
 Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez configurer le volume d’e-mails à synchroniser et, en fonction du type d’appareil, les types de contenu à synchroniser.
 
@@ -52,11 +53,11 @@ Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez
 
 >Étant donné que Samsung KNOX n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à utiliser à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
 
->**Android for Work** : le profil Intune est appliqué uniquement au profil professionnel de l’appareil et n’affecte pas les profils de messagerie sur le profil utilisateur de l’appareil.
+>**Android for Work** : le profil Intune est appliqué uniquement à des applications de messagerie spécifiques du profil professionnel de l’appareil et n’affecte pas la configuration de messagerie sur le profil utilisateur de l’appareil.
 
 
 ## Profils de messagerie sécurisés
-Vous pouvez sécuriser les profils de messagerie à l’aide de deux méthodes : par le biais d’un certificat ou d’un mot de passe.
+Vous pouvez sécuriser les profils de messagerie à l’aide d’un certificat ou d’un mot de passe.
 
 ### Certificats
 Quand vous créez le profil de messagerie, vous choisissez un profil de certificat que vous avez créé précédemment dans Intune. Il s’agit du certificat d’identité, qui est utilisé pour l’authentification par rapport à un profil de certificat approuvé (ou un certificat racine) pour établir le fait que l’utilisateur est autorisé à se connecter. Le certificat approuvé est déployé sur l’ordinateur qui authentifie la connexion de messagerie, en général le serveur de messagerie natif.
@@ -76,12 +77,12 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
     -   **Profil de messagerie pour Samsung KNOX Standard (4.0 et versions ultérieures)**
 
-    -   **Profil de messagerie (iOS 8.0 et versions ultérieures)**
+    -   **Profil d'e-mail (iOS 8.0 et ultérieur)**
 
-    -   **Profil de messagerie (Windows Phone 8 et versions ultérieures)**
+    -   **Profil de messagerie (Windows Phone 8.1 et versions ultérieures)**
 
     -   **Profil de messagerie (Windows 10 Desktop et Mobile, et versions ultérieures)**
-    
+
     -   **Profil de messagerie (Android for Work - Gmail)**
 
     -   **Profil de messagerie (Android for Work - Nine Work)**
@@ -107,8 +108,10 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
     |**Utiliser SSL**|Utilisez la communication SSL (Secure Sockets Layer) pour envoyer et recevoir des e-mails, et communiquer avec le serveur Exchange. Pour les appareils qui exécutent Samsung KNOX 4.0 ou version ultérieure, vous devez exporter votre certificat SSL Exchange Server et le déployer comme profil de certificat approuvé par Android dans Intune. Intune ne prend pas en charge l’accès à ce certificat s’il est installé sur le serveur Exchange par d’autres moyens.|
     |**Type de contenu à synchroniser** (toutes les plateformes sauf Android for Work Gmail)|Sélectionnez les types de contenu à synchroniser avec des appareils.|
     |**Autoriser l’envoi de courrier électronique à partir d’applications tierces** (iOS uniquement)|Autoriser l’utilisateur à sélectionner ce profil en tant que compte par défaut pour l’envoi d’e-mails et autoriser les applications tierces à ouvrir les e-mails dans l’application de messagerie native, par exemple pour y joindre des fichiers.|
-    > [!IMPORTANT]
-    > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
+
+> [!IMPORTANT]
+>
+> Si vous avez déployé un profil de messagerie et que vous souhaitez ensuite modifier les valeurs **Hôte** ou **Adresse de messagerie**, vous devez supprimer le profil de messagerie existant et en créer un avec les valeurs requises.
 
 4.  Quand vous avez terminé, cliquez sur **Enregistrer la stratégie**.
 
@@ -127,10 +130,11 @@ La nouvelle stratégie s'affiche sous le nœud **Stratégies de configuration** 
 Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'ensemble** de l'espace de travail **Stratégie** , les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le Tableau de bord contient un récapitulatif de l'état.
 
 > [!NOTE]
-> Si vous souhaitez supprimer un profil de messagerie d'un appareil, modifiez le déploiement et supprimez les groupes dont l'appareil est membre.
+> - Pour Android for Work, vérifiez que vous déployez également les applications Gmail ou Nine Work en plus du profil de messagerie approprié.
+> - Si vous souhaitez supprimer un profil de messagerie d'un appareil, modifiez le déploiement et supprimez les groupes dont l'appareil est membre.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
