@@ -14,13 +14,13 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
-ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 3b8a263a45690c9bb213128b592e1ef9788cacd8
 
 
 ---
 
-# Protéger les données et les applications avec Microsoft Intune
+# <a name="protect-apps-and-data-with-microsoft-intune"></a>Protéger les données et les applications avec Microsoft Intune
 
 
 Intune protège les données d’entreprise à travers plusieurs couches de technologie.  Dans la couche d’identité, un accès conditionnel protège l’accès aux services en autorisant uniquement l’accès à partir d’appareils conformes et gérés.  Dans la couche d’application client, la gestion des applications mobiles (GAM) protège contre la perte de données en empêchant le déplacement de données vers des applications ou des emplacements de stockage non protégés et en effaçant les données lorsqu’un appareil est perdu ou volé.  Ces deux couches de protection doivent être utilisées ensemble afin de sécuriser les données tout en préservant la productivité de votre personnel mobile.
@@ -46,7 +46,7 @@ Vous pouvez protéger vos données d’entreprise à l’aide de stratégies de 
 
 Pour associer une application à une stratégie de GAM, l’application doit intégrer le Kit de développement logiciel (SDK) Microsoft Intune App ou utiliser App Wrapping Tool.
 
-Certaines applications, par exemple les applications Microsoft Office, intègrent le SDK App. Vous trouverez la liste complète des applications prises en charge dans la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) sur la page de d’applications partenaires de Microsoft Intune. Sélectionnez une application pour afficher les scénarios pris en charge, connaître les plateformes et savoir si elle prend en charge les identités multiples.
+Certaines applications, par exemple les applications Microsoft Office, intègrent le SDK App. Vous trouverez la liste complète des applications prises en charge dans la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) sur la page de d’applications partenaires de Microsoft Intune. Sélectionnez une application pour afficher les scénarios pris en charge, connaître les plateformes et savoir si elle prend en charge les identités multiples.
 
 Vous pouvez également [activer les stratégies de GAM sur vos applications métier personnalisées](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
@@ -54,6 +54,6 @@ En plus de restreindre le déplacement des données si un appareil est perdu ou 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

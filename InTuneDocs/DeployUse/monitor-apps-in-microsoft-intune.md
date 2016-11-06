@@ -3,6 +3,7 @@ title: "Surveillance de déploiements d’applications| Microsoft Intune"
 description: "Découvrez comment surveiller les applications déployées avec Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3412150f96f81937b6ea471d4a27ac42da875f8
-ms.openlocfilehash: a0fd24b430cce49cf7d3ba395341ed07912b9404
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 06a50371715a89961231b5810180ac459f05229e
 
 
 ---
@@ -46,6 +47,6 @@ Comme auparavant, vous pouvez utiliser la liste déroulante **Filtres** pour con
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 
