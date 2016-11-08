@@ -2,8 +2,8 @@
 title: "Gestion DEP d’Apple pour les appareils iOS | Microsoft Intune"
 description: "Déployez un profil d’inscription qui inscrit les appareils iOS achetés via le programme DEP iOS « à distance », afin de gérer les appareils Apple."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -14,16 +14,16 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 021c02c9a148746a76309efc819b9e28a2748c4f
-ms.openlocfilehash: b608d6353db2f37eed03d34c9216726fa7cd1cb2
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 1bc39e7e91b1511ffb99e92e569df0a7153cc06f
 
 
 ---
 
-# Inscrire des appareils iOS DEP d’entreprise
+# <a name="enroll-corporateowned-device-enrollment-program-ios-devices"></a>Inscrire des appareils iOS DEP d’entreprise
 Microsoft Intune peut déployer un profil d’inscription qui inscrit les appareils iOS qui ont été achetés via le programme DEP « à distance ». Le package d’inscription peut inclure des options d’Assistant de configuration pour l’appareil. Les appareils inscrits via le programme DEP ne peuvent pas être désinscrits par les utilisateurs.
 
-## Gestion DEP d’Apple pour les appareils iOS avec Microsoft Intune
+## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Gestion DEP d’Apple pour les appareils iOS avec Microsoft Intune
 Pour gérer les appareils iOS d’entreprise avec le programme d’inscription des appareils (DEP) d’Apple, votre organisation doit participer au programme et obtenir des appareils par le biais de ce programme. Les détails de cette procédure sont disponibles à l'adresse suivante :  [https://deploy.apple.com](https://deploy.apple.com). Les avantages du programme incluent la configuration automatique des appareils sans utiliser de câble USB pour connecter chaque appareil à un ordinateur.
 
 Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du programme DEP, vous devez obtenir un jeton approprié auprès d’Apple. Ce jeton permet à Intune de synchroniser les informations sur les appareils participant à ce programme et appartenant à votre entreprise. Il permet également à Intune d'effectuer des téléchargements de profil d'inscription sur Apple et d'attribuer des appareils à ces profils.
@@ -36,7 +36,7 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du progra
 
       ![Mettre à jour un jeton du programme d’inscription d’appareils](../media/dev-sa-ios-dep.png)
 
-3.  **Obtenir un jeton du programme d’inscription d’appareils**</br>
+3.  **Obtenir un jeton du programme d'inscription d'appareils**</br>
     Accédez au [portail du Programme DEP](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise. Cet ID Apple doit être utilisé par la suite pour renouveler votre jeton DEP.
 
     1.  Dans le [portail du Programme d’inscription d’appareils](https://deploy.apple.com), accédez à **Programme d’inscription d’appareils** &gt; **Gérer les serveurs**, puis choisissez **Ajouter un serveur MDM**.
@@ -52,7 +52,7 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du progra
 4.  **Ajouter le jeton DEP à Intune**</br>
     Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), accédez à **Admin** &gt; **Gestion des appareils mobiles** &gt; **iOS** &gt; **Programme d’inscription d’appareils**, puis choisissez **Charger le jeton DEP**. **Accédez** au fichier de certificat (.p7m), entrez votre **ID Apple**, puis choisissez **Télécharger**.
 
-5.  **Ajouter la stratégie Inscription d’appareil professionnel**</br>
+5.  **Ajouter la stratégie Inscription des appareils d’entreprise**</br>
     Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis choisissez **Ajouter**.
 
     Remplissez la section **Général**, notamment les champs **Nom** et **Description**, et spécifiez si les appareils attribués au profil ont une affinité utilisateur ou s’ils appartiennent à un groupe.
@@ -107,15 +107,15 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du progra
 
 8.  **Distribuer des appareils aux utilisateurs** Vos appareils d’entreprise peuvent désormais être distribués aux utilisateurs. Quand un appareil iOS est activé, il est inscrit pour être géré par Intune.
 
-## Modifications apportées aux affectations de groupe Intune
+## <a name="changes-to-intune-group-assignments"></a>Modifications apportées aux affectations de groupe Intune
 
 En novembre, la gestion des groupes d’appareils sera migrée vers Azure Active Directory. Après la transition vers des groupes Azure Active Directory, l’affectation de groupe n’apparaîtra pas dans les options de **profil d’inscription de l’entreprise**. Plusieurs mois pourront s’écouler avant que vous ne constatiez les effets de cette modification. Après le déplacement vers le nouveau portail, les attributions de groupes d’appareils dynamiques peuvent être définies en fonction des noms des profils d’inscription de l’entreprise. Ce processus garantit que les appareils déjà affectés à un groupe d’appareils sont inscrits automatiquement dans le groupe avec une stratégie et des applications déployées. [En savoir plus sur les groupes Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
-### Voir aussi
-[Configuration requise pour l’inscription des appareils](prerequisites-for-enrollment.md)
+### <a name="see-also"></a>Voir aussi
+[Prérequis pour l’inscription des appareils](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

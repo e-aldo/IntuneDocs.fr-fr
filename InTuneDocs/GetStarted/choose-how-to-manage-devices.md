@@ -3,6 +3,7 @@ title: "Choisir comment gérer des appareils | Microsoft Intune"
 description: "Découvrez les différents modes d’inscription et de gestion des appareils."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/31/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3f27837195e5fdf58b9c13f38b0e5c0ad90d971
-ms.openlocfilehash: 86b33ff528a2922e62c4c726bc8ce5f6bdbcfa38
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
 
 
 ---
 
-# Choisir comment gérer des appareils
+# <a name="choose-how-to-manage-devices"></a>Choisir comment gérer des appareils
 
 Pour exploiter les nombreuses fonctionnalités proposées par Intune comme le déploiement d’applications et le contrôle des paramètres des appareils, vos appareils doivent être *gérés*. La manière de gérer des appareils varie selon les fonctionnalités Intune que vous voulez utiliser.
 Cette rubrique vous aide à choisir la méthode qui répond à vos besoins.
@@ -31,7 +32,7 @@ Pour gérer des PC Windows, vous avez deux possibilités :
 1. Inscrivez l’appareil **ou**
 2. Installez le *client logiciel Intune*.
 
-## Déterminer la méthode à utiliser
+## <a name="decide-which-method-to-use"></a>Déterminer la méthode à utiliser
 Utilisez ce flux décisionnel pour déterminer la manière de gérer vos appareils.
 
 ![Flux décisionnel pour déterminer la manière de gérer vos appareils.](./media/choose-manage-method.png)
@@ -48,15 +49,15 @@ Pour obtenir la liste détaillée des fonctions de gestion que vous obtenez avec
 Pour plus d’informations sur les appareils et PC pris en charge par Intune, consultez [Ordinateurs et appareils mobiles pris en charge](/intune/get-started/supported-mobile-devices-and-computers).
 
 
-## Gestion d’Exchange ActiveSync
+## <a name="exchange-activesync-management"></a>Gestion d’Exchange ActiveSync
 En plus de l’inscription d’un appareil ou de l’installation du client logiciel Intune, vous pouvez également gérer des appareils en utilisant [Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune). Cette méthode vous oblige à installer le connecteur local ou à utiliser le connecteur de service à service intégré pour vous connecter à votre instance Exchange Server.
 Cette troisième méthode de gestion des appareils fournit néanmoins un ensemble limité de fonctionnalités de gestion par rapport aux autres méthodes.
 
 
-## Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Choisir comment inscrire des appareils mobiles](/intune/get-started/choose-how-to-enroll-devices1)
-- [Gestion des ordinateurs Windows avec le logiciel client Intune PC](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
+- [Gérer des PC Windows avec le logiciel client Intune PC](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
 
 
 
@@ -65,6 +66,6 @@ Cette troisième méthode de gestion des appareils fournit néanmoins un ensembl
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
