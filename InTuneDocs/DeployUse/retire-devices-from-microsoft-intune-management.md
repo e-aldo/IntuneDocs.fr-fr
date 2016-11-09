@@ -2,8 +2,8 @@
 title: Mettre hors service des appareils | Microsoft Intune
 description: "Intune prend en charge une réinitialisation sélective et une réinitialisation complète pour supprimer l’appareil de la gestion Intune en supprimant la stratégie et le portail d’entreprise."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
