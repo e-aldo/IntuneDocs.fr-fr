@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: a29473cb0931c01143614116ce0e99a579f35923
+ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
+ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
 
 
 ---
@@ -68,7 +68,8 @@ b. Cliquez sur l’icône en forme de verrou &gt;  **Plus d’informations**.
 
 1.  Dans la console ISE, accédez à **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate** (Générer un certificat auto-signé).  
 2.       Exportez le certificat auto-signé.
-3. Dans un éditeur de texte, modifiez le certificat exporté : [commentaire] : <> I’d rather not put a period at the end of these two statements, I think it could be confusing.
+3. Dans un éditeur de texte, modifiez le certificat exporté :
+
  - Supprimez ** -----BEGIN CERTIFICATE-----**.
  - Supprimez ** -----END CERTIFICATE-----**.
  
