@@ -194,6 +194,6 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

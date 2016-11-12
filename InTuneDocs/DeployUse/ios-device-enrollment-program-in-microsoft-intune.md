@@ -116,6 +116,6 @@ En novembre, la gestion des groupes d’appareils sera migrée vers Azure Active
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

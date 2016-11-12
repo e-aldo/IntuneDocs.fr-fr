@@ -54,6 +54,6 @@ En plus de restreindre le déplacement des données si un appareil est perdu ou 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -65,6 +65,6 @@ Pour plus d’informations sur les applications gérées sur votre appareil, con
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
