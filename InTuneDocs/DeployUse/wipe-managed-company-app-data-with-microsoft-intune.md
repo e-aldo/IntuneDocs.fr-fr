@@ -3,6 +3,7 @@ title: "Réinitialiser les données d’applications d’entreprise gérées | M
 description: "Découvrez comment sélectivement supprimer des données de votre entreprise à partir d’appareils à distance."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3d52345b043115185e667c41d3f09d8257792002
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 3ba40ad3a8c5eaba684d589c7526435ba87d0390
 
 
 ---
@@ -61,6 +62,6 @@ La vignette **Demande de réinitialisation** du panneau **Gestion des applicatio
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

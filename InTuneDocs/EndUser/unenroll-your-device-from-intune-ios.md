@@ -2,10 +2,10 @@
 title: "Désinscrire votre appareil iOS d’Intune | Microsoft Intune"
 description: "Cette rubrique explique comment désinscrire un appareil iOS d’Intune"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: acd83d6cac946c7cc3c08bc179bf88dcc7475a69
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5db58b87e5c48c40794315e7781d32b02a653b2b
 
 
 ---
 
 
-# Désinscrire votre appareil iOS d’Intune
+# <a name="unenroll-your-ios-device-from-intune"></a>Désinscrire votre appareil iOS d’Intune
 
 Quand vous annulez l’inscription de votre appareil iOS sur Intune, ce dernier ne peut plus accéder aux ressources d’entreprise et n’est plus géré par Intune.
 
@@ -53,10 +53,10 @@ La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
 -   Les appareils configurés pour la messagerie uniquement n’apparaissent plus dans l’application ou le site web Portail d’entreprise.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

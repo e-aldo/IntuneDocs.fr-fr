@@ -2,10 +2,10 @@
 title: "Vous êtes invité à identifier votre appareil quand vous essayez de l’inscrire | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 852c02fabee7ec3551e34f92c5f9e44402d31ecb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 
 ---
 
 
-# Vous êtes invité à identifier votre appareil quand vous essayez d’inscrire
+# <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>Vous êtes invité à identifier votre appareil quand vous essayez d’inscrire
 
 Si vous essayez d’inscrire votre appareil iOS ou Mac OS X dans Intune et que vous voyez un écran vous demandant d’identifier votre appareil, au moins un de vos appareils a déjà été inscrit et affecté à votre compte à l’aide d’une méthode autre que l’application Portail d’entreprise. Pour que l’application Portail d’entreprise fonctionne correctement, vous devez déterminer si l’appareil que vous utilisez a déjà été inscrit dans Intune.
 
@@ -30,10 +30,10 @@ Si vous essayez d’inscrire votre appareil iOS ou Mac OS X dans Intune et que v
 2. Appuyez sur **Continuer**.
 3. Entrez les quatre derniers caractères du numéro de série de votre appareil pour qu’Intune vérifie que votre appareil est inscrit. Pour rechercher votre numéro de série, consultez [Comment trouver le numéro de série sur mon appareil ?](how-do-i-find-the-serial-number-on-my-device-ios.md).
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

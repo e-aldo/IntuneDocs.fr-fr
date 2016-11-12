@@ -3,8 +3,9 @@ title: "Déploiement en entreprise | Microsoft Intune"
 description: "Recommandations pour la phase de déploiement d’un déploiement Intune."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0fff944e180bda99d70caafebe4ae69b6bd05b1b
-ms.openlocfilehash: aae62850d35aab6908cae2841988822911989a40
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: c7594bbb7edb236193618bea027ac426e5b9169d
 
 
 ---
@@ -84,7 +85,7 @@ Voici une liste d’étapes de démarrage de la phase **Déploiement en entrepri
     -  [Inscrire un appareil Windows dans Intune](/intune/enduser/enroll-your-device-in-intune-windows)
     -  [Inscrire un appareil Android dans Intune](/intune/enduser/enroll-your-device-in-intune-android)
     -  [Inscrire un appareil iOS dans Intune](/intune/enduser/enroll-your-device-in-intune-ios)
-    -  [Inscrire un appareil Mac OS X dans Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
+    -  [Inscrire votre appareil Mac OS X dans Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Définissez un processus de mise à jour de la documentation de formation en fonction des besoins.
 
@@ -110,6 +111,6 @@ Voici les principaux défis que vous pouvez rencontrer lors de la phase de **dé
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

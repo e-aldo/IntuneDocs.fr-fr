@@ -2,9 +2,10 @@
 title: "Résolution de problèmes liés à l’inscription de votre appareil Windows 10 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 8/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ecd84b62d34e22a72da87995ff0d62dad5e5a9ed
 
 
 ---
 
-# Résolution de problèmes liés à l’inscription de votre appareil Windows 10
+# <a name="troubleshoot-your-windows-10-device-enrollment"></a>Résolution de problèmes liés à l’inscription de votre appareil Windows 10
 Si vous avez suivi les étapes présentées dans la rubrique [Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mais que vous ne pouvez pas toujours accéder à vos e-mails et fichiers professionnels ou scolaires, essayez les étapes de dépannage suivantes.
 
 1.  Examinez les deux écrans suivants et déterminez celui qui ressemble à ce que vous voyez sur votre appareil. Suivez les étapes associées à l’écran que vous voyez sur votre appareil.
@@ -33,7 +34,7 @@ Si vous avez suivi les étapes présentées dans la rubrique [Inscrire un appare
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## Étapes de dépannage à suivre si vous voyez Accès scolaire ou professionnel
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Étapes de dépannage à suivre si vous voyez Accès scolaire ou professionnel
 
 1.  Si vous avez suivi les étapes ci-dessus, mais que vous ne pouvez toujours pas accéder à vos e-mails ou fichiers professionnels ou scolaires, retournez dans **Accès scolaire ou professionnel**.
 
@@ -45,7 +46,7 @@ Si vous avez suivi les étapes présentées dans la rubrique [Inscrire un appare
 
     - Si vous ne voyez pas les informations de connexion indiquées ci-dessus, ou si certaines de ces options manquent, appuyez sur **Connexion**, puis connectez-vous avec vos informations d’identification professionnelles ou scolaires. Vous devez à présent être connecté.
 
-## Étapes de dépannage à suivre si vous voyez Votre compte
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Étapes de dépannage à suivre si vous voyez Votre compte
 
 Si vous avez suivi les étapes ci-dessus mais que vous ne pouvez toujours pas accéder à vos e-mails, vos fichiers ou d’autres données professionnelles ou scolaires, retournez dans **Comptes** et appuyez sur **Accès professionnel**.
 
@@ -53,10 +54,10 @@ Si vous avez suivi les étapes ci-dessus mais que vous ne pouvez toujours pas ac
 
 - Si vous ne voyez pas votre compte professionnel ou scolaire, appuyez sur **Connexion**, puis connectez-vous avec vos informations d’identification professionnelles ou scolaires.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

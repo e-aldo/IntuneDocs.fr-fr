@@ -2,9 +2,10 @@
 title: Comment chiffrer votre appareil Windows | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3b775464b494f5d28c870df4b2c58bb59f58eb78
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 66edf19ad9cea6f49504b70946b4e0c02dcfc99f
 
 
 ---
 
-# Comment chiffrer votre appareil Windows
+# <a name="how-to-encrypt-your-windows-device"></a>Comment chiffrer votre appareil Windows
 
 Pour protéger les données de votre entreprise ou de votre établissement scolaire, votre administrateur informatique peut exiger que vous chiffriez votre appareil Windows. Si vous avez un Windows Phone et que vous l’avez inscrit, votre appareil est chiffré automatiquement si le chiffrement est nécessaire.
 
@@ -30,10 +31,10 @@ Si vous disposez d’un poste de travail, suivez les instructions ci-dessous pou
 
 2.  Cliquez sur **Activer BitLocker**, puis suivez les instructions indiquées pour chiffrer chacun de vos lecteurs.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
