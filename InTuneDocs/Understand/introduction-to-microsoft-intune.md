@@ -16,20 +16,20 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
-ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
+ms.sourcegitcommit: b3b46c1025ad0792ed4623656c878c53bd69d6cb
+ms.openlocfilehash: f2f5d901ae3b6ffb298b56eef4ae593842b80cfb
 
 
 ---
 
-# Présentation d'Intune
+# <a name="introduction-to-intune"></a>Présentation d'Intune
 Microsoft Intune est l’outil de gestion de Microsoft Enterprise Mobility + Security (EMS, anciennement « Enterprise Mobility Suite »). Grâce à la mobilité d’entreprise, vos employés peuvent travailler sur tous leurs appareils tout en gardant les informations de votre organisation protégées.  
 
 EMS est une suite intégrée complète qui est dédiée à la mobilité d’entreprise incluant la productivité, l’identité, le contrôle d’accès, la gestion et la protection des données. Elle constitue une méthode efficace pour déployer et utiliser une solution de mobilité dans votre organisation.  
 
 ![Image de la vision de la mobilité d’entreprise](..\media\em-vision.png)
 
-Intune vous permet de gérer des appareils mobiles et des applications mobiles. Il s’intègre étroitement à Azure Active Directory (Azure AD) pour l’identité et le contrôle d’accès, et à Azure Rights Management (Azure RMS) pour la protection des données.  
+Intune vous permet de gérer des appareils et des applications mobiles. Il s’intègre étroitement à Azure Active Directory (Azure AD) pour l’identité et le contrôle d’accès, et à Azure Rights Management (Azure RMS) pour la protection des données.  
 
 Voici quelques-unes des solutions d’Intune pour votre entreprise :
 
@@ -49,13 +49,13 @@ Ces outils sont utilisés selon différentes combinaisons qui permettent les sc�
 
 Dans cette documentation, nous expliquons comment l’utilisation des outils Intune permet de prendre en charge les scénarios de votre entreprise.  Nous expliquons également comment utiliser ces outils avec Office 365, Azure AD, Azure RMS et d’autres composants de la suite de mobilité Microsoft. Nous vous offrons une vue d’ensemble de l’utilisation courante de la technologie et de sa potentielle utilité dans votre environnement, ainsi que des procédures permettant de l’implémenter. La technologie elle-même est souple et peut être adaptée à toutes sortes de scénarios, au-delà de ceux que nous décrivons ici.
 
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 * En savoir plus sur certaines des [façons courantes d’utiliser Intune](common-ways-to-use-intune.md).
 * Se familiariser avec le produit [grâce à une période d’essai d’Intune de 30 jours](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Explorer [les spécifications techniques et les fonctionnalités](/intune/get-started/what-to-know-before-you-start-microsoft-intune) d’Intune.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 
