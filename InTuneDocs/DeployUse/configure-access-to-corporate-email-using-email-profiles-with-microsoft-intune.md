@@ -2,8 +2,8 @@
 title: "Accéder à la messagerie d’entreprise en utilisant des profils de messagerie | Microsoft Intune"
 description: "Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f8767f191df76e8f166767c51fff357b251bbd4
-ms.openlocfilehash: f736c408f5a4ece65eeef35fb8d1be9a9b29c1b1
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
 
 
 ---
 
-# Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune
+# <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 De nombreuses plateformes mobiles incluent un client de messagerie natif fourni avec le système d’exploitation. Certains de ces clients peuvent être configurés à l’aide de profils de messagerie, comme décrit dans cette rubrique.
 
 Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie pour des clients de messagerie spécifiques sur les appareils mobiles. Sur les plateformes prises en charge, les clients de messagerie natifs peuvent être configurés par Microsoft Intune pour permettre aux utilisateurs d’accéder à leur messagerie d’entreprise sur les appareils personnels sans aucune configuration supplémentaire.
@@ -56,20 +59,20 @@ Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez
 >**Android for Work** : le profil Intune est appliqué uniquement à des applications de messagerie spécifiques du profil professionnel de l’appareil et n’affecte pas la configuration de messagerie sur le profil utilisateur de l’appareil.
 
 
-## Profils de messagerie sécurisés
+## <a name="secure-email-profiles"></a>Profils de messagerie sécurisés
 Vous pouvez sécuriser les profils de messagerie à l’aide d’un certificat ou d’un mot de passe.
 
-### Certificats
+### <a name="certificates"></a>Certificats
 Quand vous créez le profil de messagerie, vous choisissez un profil de certificat que vous avez créé précédemment dans Intune. Il s’agit du certificat d’identité, qui est utilisé pour l’authentification par rapport à un profil de certificat approuvé (ou un certificat racine) pour établir le fait que l’utilisateur est autorisé à se connecter. Le certificat approuvé est déployé sur l’ordinateur qui authentifie la connexion de messagerie, en général le serveur de messagerie natif.
 
 Pour plus d’informations sur la création et l’utilisation des profils de certificat dans Intune, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md)).
 
-### Nom d'utilisateur et mot de passe
+### <a name="user-name-and-password"></a>Nom d'utilisateur et mot de passe
 L’utilisateur s’authentifie auprès du serveur de messagerie natif en fournissant son nom d’utilisateur et son mot de passe.
 
 Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’utilisateur doit le fournir quand il se connecte à sa messagerie.
 
-### Créer un profil de messagerie
+### <a name="create-an-email-profile"></a>Créer un profil de messagerie
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
 
@@ -77,15 +80,15 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
     -   **Profil de messagerie pour Samsung KNOX Standard (4.0 et versions ultérieures)**
 
-    -   **Profil d'e-mail (iOS 8.0 et ultérieur)**
+    -   **Profil d’e-mail (iOS 8.0 et ultérieur)**
 
-    -   **Profil de messagerie (Windows Phone 8.1 et versions ultérieures)**
+    -   **Profil d’e-mail (Windows Phone 8.1 et ultérieur)**
 
-    -   **Profil de messagerie (Windows 10 Desktop et Mobile, et versions ultérieures)**
+    -   **Profil de messagerie (Windows 10 Desktop et Mobile, et ultérieur)**
 
-    -   **Profil de messagerie (Android for Work - Gmail)**
+    -   **Profil d’e-mail (Android for Work - Gmail)**
 
-    -   **Profil de messagerie (Android for Work - Nine Work)**
+    -   **Profil d’e-mail (Android for Work - Nine Work)**
 
     Vous pouvez uniquement créer et déployer une stratégie de profil de messagerie personnalisée. Les paramètres recommandés ne sont pas disponibles.
 
@@ -97,7 +100,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
     |**Description**|Description qui vous aide à identifier ce profil.|
     |**Hôte**|Nom d’hôte du serveur de votre société qui héberge votre service de messagerie natif.|
     |**Nom du compte**|Nom complet du compte de messagerie, tel qu’il apparaîtra aux utilisateurs sur leurs appareils.|
-    |**Nom d'utilisateur**|Indique comment le nom d’utilisateur du compte de messagerie sera obtenu. Sélectionnez **Nom d’utilisateur** pour un serveur Exchange local ou **Nom principal de l’utilisateur** pour Office 365.|
+    |**Nom d’utilisateur**|Indique comment le nom d’utilisateur du compte de messagerie sera obtenu. Sélectionnez **Nom d’utilisateur** pour un serveur Exchange local ou **Nom principal de l’utilisateur** pour Office 365.|
     |**Adresse de messagerie**|Façon dont l’adresse de messagerie de l’utilisateur est générée sur chaque appareil. Sélectionnez **Adresse SMTP principale** pour utiliser l’adresse SMTP principale pour vous connecter à Exchange ou **Nom principal de l’utilisateur** pour utiliser le nom principal complet comme adresse de messagerie.|
     |**Méthode d’authentification** (Android for Work, Samsung KNOX et iOS)|Sélectionnez **Nom d’utilisateur et mot de passe** ou **Certificats** comme méthode d’authentification utilisée par le profil de messagerie.|
     |**Sélectionner un certificat client pour l’authentification client (certificat d’identité)** (Android for Work, Samsung KNOX et iOS)|Sélectionnez le certificat SCEP client que vous avez créé précédemment qui servira à authentifier la connexion Exchange. Pour plus d’informations sur la façon de créer des profils de certificat dans Intune, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md). Cette option est visible uniquement quand la méthode d'authentification est **Certificats**.|
@@ -117,7 +120,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
 La nouvelle stratégie s'affiche sous le nœud **Stratégies de configuration** de l'espace de travail **Stratégie** .
 
-## Déploiement de la stratégie
+## <a name="deploy-the-policy"></a>Déploiement de la stratégie
 
 1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis choisissez **Gérer le déploiement**.
 
@@ -135,6 +138,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
