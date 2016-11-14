@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,10 +20,10 @@ ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 ---
 
-# Restreindre l’accès à la messagerie avec Microsoft Intune : exemples de scénarios
+# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Restreindre l’accès à la messagerie avec Microsoft Intune : exemples de scénarios
 
-## Empêchez les utilisateurs d’accéder à Exchange Online avec des appareils non conformes.
-### Exigences du scénario
+## <a name="block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Empêchez les utilisateurs d’accéder à Exchange Online avec des appareils non conformes.
+### <a name="scenario-requirements"></a>Exigences du scénario
 - Tous les utilisateurs du groupe de sécurité Active Directory **Comptabilité** voient leur accès à Exchange Online bloqué si leur appareil n’est pas conforme à une stratégie de conformité que vous avez déployée.
 - S’il existe des utilisateurs dans ce groupe dont les appareils ne sont pas pris en charge par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], leur accès à Exchange Online doit être bloqué sur cet appareil.
 - Les utilisateurs qui se trouvent dans le groupe de sécurité Active Directory **Finance** doivent être exemptés de la stratégie, même s’ils se trouvent également dans le groupe de sécurité **Comptabilité**.
@@ -43,8 +43,8 @@ Le flux suivant est utilisé pour déterminer quels sont les appareils qui peuve
 
 ![Flux d’accès des appareils](./media/ConditionalAccess8-5.png)
 
-## Tous les appareils iOS qui accèdent à Exchange sur site doivent être gérés par Intune
-### Exigences du scénario
+## <a name="all-ios-devices-that-access-exchange-onpremises-must-be-managed-by-intune"></a>Tous les appareils iOS qui accèdent à Exchange sur site doivent être gérés par Intune
+### <a name="scenario-requirements"></a>Exigences du scénario
 - Seuls les appareils sous iOS doivent pouvoir accéder à Exchange sur site.
 - Les appareils doivent également être inscrits dans Intune et respecter les règles de stratégie de conformité pour pouvoir être utilisés pour accéder à Exchange.
 
@@ -62,8 +62,8 @@ Le flux suivant est utilisé pour déterminer quels sont les appareils qui peuve
 
 ![Flux d’accès des appareils](./media/ConditionalAccess8-3.png)
 
-## Aucun appareil Android ne peut accéder à Exchange sur site.
-### Exigences du scénario
+## <a name="no-android-devices-can-access-exchange-onpremises"></a>Aucun appareil Android ne peut accéder à Exchange sur site.
+### <a name="scenario-requirements"></a>Exigences du scénario
 - L’accès à Exchange doit être bloqué pour tous les appareils Android.
 - Tous les autres appareils pris en charge peuvent accéder à Exchange du moment qu'ils sont gérés par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
