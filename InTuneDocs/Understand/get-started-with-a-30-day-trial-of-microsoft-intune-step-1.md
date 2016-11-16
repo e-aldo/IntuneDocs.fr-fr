@@ -3,6 +3,7 @@ title: "S’inscrire à une version d’évaluation de 30 jours de Microsoft In
 description: "Comment s’inscrire à un essai gratuit d’Intune de 30 jours et éléments à prendre en compte avant de s’inscrire"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,17 +14,17 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 0eb72fba9bd299a29c8da1b3477582fb4a0a31ab
 
 
 ---
 
-# S’inscrire à une version d’évaluation de 30 jours de Microsoft Intune
+# <a name="sign-up-for-a-30day-evaluation-of-microsoft-intune"></a>S’inscrire à une version d’évaluation de 30 jours de Microsoft Intune
 
 La configuration d’une version d’évaluation gratuite de 30 jours de Microsoft Intune pour gérer vos ordinateurs et appareils mobiles est une tâche simple et rapide. Quelques étapes simples suffisent pour ajouter jusqu’à 100 utilisateurs et appareils, configurer des groupes, configurer des stratégies de conformité, et inscrire et gérer des ordinateurs et appareils mobiles. Dans cette rubrique, vous allez découvrir comment obtenir une version d’évaluation d’Intune opérationnelle, tandis qu’une vue d’ensemble du service vous aidera à évaluer au mieux les fonctionnalités d’Intune.
 
-## Éléments à prendre en compte avant de vous inscrire
+## <a name="what-to-consider-before-you-sign-up"></a>Éléments à prendre en compte avant de vous inscrire
 
 Avant de vous inscrire ou de vous connecter à Intune, vous devez vous poser les questions suivantes :
 
@@ -35,9 +36,9 @@ Avant de vous inscrire ou de vous connecter à Intune, vous devez vous poser les
 
 |Inscrivez-vous pour un NOUVEAU compte si vous remplissez l'une des conditions suivantes :|Connectez-vous avec votre compte PROFESSIONNEL ou SCOLAIRE si :|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**Vous n'avez pas de compte professionnel ou scolaire.** Un compte professionnel ou scolaire vous est fourni au moment où vous signez un contrat de licence en volume avec Microsoft ou que vous vous abonnez à Office 365. Si votre organisation n'a pas signé de Contrat Enterprise ou de contrat de licence en volume équivalent avec Microsoft (ou si elle ne dispose pas d'un compte Office 365), vous n'avez pas de compte Microsoft Online Services dont vous pouvez vous servir pour vous connecter à Microsoft Online Services.<br /><br />**Vous prévoyez d’abandonner votre client Intune à l’issue de la période d’évaluation de 30 jours.** Vous devez vous inscrire pour créer un compte si vous utilisez votre abonnement à la version d’évaluation de 30 jours d’Intune à des fins d’évaluation uniquement et si vous prévoyez de redéfinir la configuration de votre service Intune et la mise en service de vos appareils à l’issue de l’évaluation. Il s’agit de l’option recommandée si vous prévoyez d’utiliser Intune avec System Center 2012 Configuration Manager.<br /><br />Si vous vous inscrivez pour obtenir un nouveau compte, vous ne pourrez pas par la suite utiliser un compte professionnel ou scolaire existant pour gérer ce compte, ni l’associer à des contrats de licence en volume existants.|**Vous avez un compte professionnel ou scolaire fourni avec un contrat de licence en volume ou un abonnement Office 365 et vous utilisez cette version d’évaluation pour tester Intune.**<br /><br />Si vous configurez Intune sur un compte existant, nous vous recommandons de consulter [Choisir comment gérer des appareils](/intune/get-started/choose-how-to-manage-devices) avant de poursuivre cette procédure.|
+|**Vous n’avez pas de compte professionnel ou scolaire.** Un compte professionnel ou scolaire vous est fourni au moment où vous signez un contrat de licence en volume avec Microsoft ou que vous vous abonnez à Office 365. Si votre organisation n'a pas signé de Contrat Enterprise ou de contrat de licence en volume équivalent avec Microsoft (ou si elle ne dispose pas d'un compte Office 365), vous n'avez pas de compte Microsoft Online Services dont vous pouvez vous servir pour vous connecter à Microsoft Online Services.<br /><br />**Vous prévoyez d’abandonner votre client Intune à l’issue de la période d’évaluation de 30 jours.** Vous devez vous inscrire pour créer un compte si vous utilisez votre abonnement à la version d’évaluation de 30 jours d’Intune à des fins d’évaluation uniquement et si vous prévoyez de redéfinir la configuration de votre service Intune et la mise en service de vos appareils à l’issue de l’évaluation. Il s’agit de l’option recommandée si vous prévoyez d’utiliser Intune avec System Center 2012 Configuration Manager.<br /><br />Si vous vous inscrivez pour obtenir un nouveau compte, vous ne pourrez pas par la suite utiliser un compte professionnel ou scolaire existant pour gérer ce compte, ni l’associer à des contrats de licence en volume existants.|**Vous avez un compte professionnel ou scolaire fourni avec un contrat de licence en volume ou un abonnement Office 365, et vous utilisez cette version d’évaluation pour tester Intune.**<br /><br />Si vous configurez Intune sur un compte existant, nous vous recommandons de consulter [Choisir comment gérer des appareils](/intune/get-started/choose-how-to-manage-devices) avant de poursuivre cette procédure.|
 
-## S'inscrire ou se connecter à Intune
+## <a name="sign-up-or-sign-in-to-intune"></a>S'inscrire ou se connecter à Intune
 
 1.  Tout d’abord, [cliquez ici pour accéder à la page d’inscription Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
@@ -52,7 +53,7 @@ Avant de vous inscrire ou de vous connecter à Intune, vous devez vous poser les
 
 Dès lors que vous avez rempli le formulaire d’inscription et accepté le Contrat d’abonnement à Microsoft Online, vous êtes automatiquement connecté au Centre d’administration Office 365 avec le compte d’administrateur client. Un message électronique contenant vos informations de compte est aussi envoyé à l'adresse de messagerie que vous avez fournie pendant l'inscription. Ce message confirme que votre abonnement est actif.
 
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 Félicitations ! Vous venez d’effectuer l’étape 1 de la procédure pas à pas de la *version d’évaluation de Microsoft Intune*.
 
 >[!div class="step-by-step"]
@@ -61,6 +62,6 @@ Félicitations ! Vous venez d’effectuer l’étape 1 de la procédure pas à
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

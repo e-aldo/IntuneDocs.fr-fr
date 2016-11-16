@@ -2,27 +2,28 @@
 title: "Cette fonctionnalité n’a pas été activée | Microsoft Intune"
 description: 
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 08/15/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c87fe9d2-efe5-425d-99c5-3c71734e1d5d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 833d6d03f9b0926315668afc1c1dd5e40bfe68bc
-ms.openlocfilehash: 8c259a75192ef2a3f168262bb7837292a0f5e79c
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: bab0154d0218d9c27d1330a2119fdfb805ab7ff6
 
 
 ---
 
-# Cette fonctionnalité n’a pas été activée
+# <a name="this-feature-has-not-been-enabled"></a>Cette fonctionnalité n’a pas été activée
 Microsoft teste actuellement cette fonctionnalité. Si vous la configurez, il n’y aura aucun impact sur votre configuration car cette fonctionnalité n’a pas été activée.
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

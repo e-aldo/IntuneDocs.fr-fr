@@ -2,8 +2,8 @@
 title: Authentification multifacteur avec Azure AD | Microsoft Intune
 description: "Comment exiger une authentification multifacteur dans Azure AD pour l’inscription d’appareils."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -19,7 +19,7 @@ ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 ---
 
-# Authentification multifacteur pour Microsoft Intune
+# <a name="multifactor-authentication-for-microsoft-intune"></a>Authentification multifacteur pour Microsoft Intune
 
 Intune intègre l’authentification multifacteur (MFA) Azure AD pour l’inscription d’appareils afin de sécuriser vos ressources d’entreprise. MFA nécessite des facteurs d’authentification comme l’authentification textuelle, en plus des noms d’utilisateur et mots de passe. Ils sont pris en charge avec les appareils iOS, Android, Windows 8.1 ou version ultérieure, ou Windows Phone 8.1 ou version ultérieure.
 
@@ -27,7 +27,7 @@ Intune intègre l’authentification multifacteur (MFA) Azure AD pour l’inscri
 >
 > Dans les versions antérieures du Configuration Manager (antérieures à la version 1610), vous verrez toujours le paramètre MFA dans la console d’administration de Configuration Manager. N’essayez pas de configurer l’authentification multifacteur dans la console d’administration de Configuration Manager, car elle ne fonctionnera pas. Configurez l’authentification multifacteur comme décrit dans cette rubrique.
 
-### Configuration d’Intune pour exiger une authentification multifacteur pour l’inscription d’appareils
+### <a name="configuring-intune-to-require-multifactor-authentication-at-device-enrollment"></a>Configuration d’Intune pour exiger une authentification multifacteur pour l’inscription d’appareils
 Pour exiger l’authentification multifacteur lors de l’inscription de périphériques, procédez comme suit :
 
 1. Connectez-vous à votre [portail Microsoft Azure](https://manage.windowsazure.com) à l’aide de vos informations d’identification d’administrateur.

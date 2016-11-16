@@ -3,6 +3,7 @@ title: "Fonctionnalités du client logiciel PC Intune | Microsoft Intune"
 description: "En savoir plus sur les fonctionnalités Intune lorsque vous gérez des PC Windows avec le client logiciel Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/14/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
-ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: e786cd33b5c963fa373d281e93721d0dd0f5456c
 
 
 ---
@@ -74,6 +75,6 @@ Voici la configuration logicielle requise pour l’installation du client logici
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

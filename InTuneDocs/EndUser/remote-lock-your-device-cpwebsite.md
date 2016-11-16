@@ -2,8 +2,8 @@
 title: "Verrouiller à distance un appareil à partir du site web du portail d’entreprise | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 31b3f4c556c27de7a1793bfe84a1d3eb12302424
 
 
 ---
 
 
-# Verrouiller à distance un appareil à partir du site web du portail d’entreprise
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Verrouiller à distance un appareil à partir du site web du portail d’entreprise
 
 Si votre appareil a été perdu ou volé, vous pouvez le verrouiller à l’aide de l’option de verrouillage à distance sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com). Le verrouillage à distance fonctionne pour les types d’appareils suivants :
 
@@ -59,11 +59,11 @@ Pour utiliser le verrouillage à distance pour verrouiller votre appareil :
 
     Si la nouvelle tentative ne fonctionne pas, contactez votre administrateur informatique pour obtenir de l’aide. Si vous retrouvez votre appareil et que vous souhaitez le déverrouiller après avoir utilisé le verrouillage à distance, il vous suffit d’entrer votre code secret.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

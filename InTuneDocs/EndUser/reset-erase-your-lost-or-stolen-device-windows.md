@@ -2,8 +2,8 @@
 title: "Réinitialiser (effacer) votre appareil Windows perdu ou volé | Microsoft Intune"
 description: "Réinitialiser un appareil Windows perdu ou volé"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
-ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2af464dd1eb4fa97c6500131f51d48b6636b0cf2
 
 
 ---
 
 
-# Réinitialiser (effacer) votre appareil perdu ou volé
+# <a name="reset-erase-your-lost-or-stolen-device"></a>Réinitialiser (effacer) votre appareil perdu ou volé
 
 Si un appareil inscrit dans Intune est perdu ou volé, vous pouvez rétablir ses paramètres d’usine à l’aide du [site web Portail d’entreprise](http://portal.manage.microsoft.com).
 
@@ -37,10 +37,10 @@ Si un appareil inscrit dans Intune est perdu ou volé, vous pouvez rétablir ses
 
 3.  Appuyez sur l’icône **Réinitialiser**, puis sur **Réinitialiser**.
 
-Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demandez à votre service informatique de le faire à votre place. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demandez à votre service informatique de le faire à votre place. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

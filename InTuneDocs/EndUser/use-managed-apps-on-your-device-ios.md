@@ -2,10 +2,10 @@
 title: "Utiliser des applications gérées sur votre appareil iOS | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 509a0fda9355cc77a2f7690771dbe086c0cc59fc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c051fe1128f2156943eac7eb4d4fa5983ed90771
 
 
 ---
 
 
-# Utiliser des applications gérées sur votre appareil iOS
+# <a name="use-managed-apps-on-your-ios-device"></a>Utiliser des applications gérées sur votre appareil iOS
 
 Les applications gérées sont des applications que votre administrateur informatique peut configurer pour protéger les données d’entreprise auxquelles vous pouvez accéder dans cette application. Quand vous accédez à des données d’entreprise dans une application gérée sur votre appareil iOS, l’application peut ne pas fonctionner exactement comme prévu. Par exemple, vous ne pouvez pas copier et coller des données d’entreprise protégées, ou vous ne pouvez pas enregistrer ces données à certains emplacements.
 
@@ -32,14 +32,14 @@ Quand vous accédez à des données d’entreprise dans une application gérée,
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### Comment obtenir des applications gérées ?
+### <a name="how-do-i-get-managed-apps"></a>Comment obtenir des applications gérées ?
 Vous obtenez des applications gérées de deux façons différentes :
 
 -   Quand votre appareil est inscrit dans Microsoft Intune, vous installez l’application à partir de votre application Portail d’entreprise ou du site web du portail d’entreprise, ou bien votre administrateur informatique peut l’installer sur votre appareil. Pour en savoir plus sur l’inscription, consultez [Inscrire un appareil iOS dans Intune](enroll-your-device-in-intune-ios.md) ou [Inscrire votre appareil Mac OS X dans Intune](enroll-your-device-in-intune-mac-os-x.md).
 
 -   Vous installez une application à partir de l’App Store, puis vous vous connectez avec votre compte d’utilisateur d’entreprise qui est géré par Intune.
 
-### Que peut gérer mon administrateur informatique dans une application ?
+### <a name="what-can-my-it-admin-manage-in-an-app"></a>Que peut gérer mon administrateur informatique dans une application ?
 Voici quelques exemples d’options que votre administrateur informatique peut gérer dans une application et qui peuvent affecter vos interactions avec les données d’entreprise sur votre appareil :
 
 -   Accès à des sites Web spécifiques
@@ -61,10 +61,10 @@ Voici quelques exemples d’options que votre administrateur informatique peut g
 -   Cryptage des données
 
 
-Pour plus d’informations sur les applications gérées sur votre appareil, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Pour plus d’informations sur les applications gérées sur votre appareil, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

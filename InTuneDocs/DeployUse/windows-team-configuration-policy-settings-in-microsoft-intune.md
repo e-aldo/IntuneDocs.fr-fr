@@ -3,6 +3,7 @@ title: "Paramètres de la stratégie de configuration Windows Collaboration| Mic
 description: "Utilisez la **stratégie de configuration générale de Windows 10 Collaboration** Microsoft Intune pour configurer les paramètres des appareils Windows 10 Collaboration inscrits, comme Microsoft Surface Hub."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 38194ef3-e26e-4682-958d-14b395fccba1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: d1d84f1811d6768b7600856cabedd50ed7da72b1
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 75866e1854211ad42084f3ededaf1e3c0f6d5119
 
 
 ---
@@ -39,6 +40,6 @@ Utilisez la **stratégie de configuration générale de Windows 10 Collaboration
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

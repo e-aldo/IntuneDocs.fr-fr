@@ -2,10 +2,10 @@
 title: "Installer l’application Portail d’entreprise Intune et s’y connecter | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
-ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5633cc9b9a97211bd5ff6a2d876bdb36ee8888c9
 
 
 ---
 
 
-# Installer l’application Portail d’entreprise Intune et s’y connecter
+# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Installer l’application Portail d’entreprise Intune et s’y connecter
 
 Le portail d’entreprise est une application que vous installez sur votre appareil iOS pour avoir accès aux applications, à la messagerie et au réseau de votre entreprise ou établissement scolaire.  Pour obtenir cet accès, vous devez d’abord installer l’application Portail d’entreprise et, avec celle-ci, inscrire votre appareil dans Microsoft Intune. Pour plus d’informations, consultez [Que se passe-t-il si vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -36,10 +36,10 @@ Le portail d’entreprise est une application que vous installez sur votre appar
 
     Si vous vous connectez à l’application Portail d’entreprise pour la première fois et que votre entreprise ou établissement scolaire utilise Intune, vous êtes invité à inscrire votre appareil dans Intune. Pour vous inscrire, suivez les étapes indiquées dans [Inscrire votre appareil iOS dans Intune](enroll-your-device-in-intune-ios.md) ou [Inscrire votre appareil Mac OS X dans Intune](enroll-your-device-in-intune-mac-os-x.md).
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,9 +2,10 @@
 title: Rechercher un nom de famille de packages (PFN) pour le VPN par application | Microsoft Intune
 description: Recherchez un nom de famille de packages (PFN) pour configurer un VPN par application.
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +14,17 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
-ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: 6d3e43c1380114634c44bd364076df404bce95e3
 
 
 ---
 
-# Rechercher un nom de famille de packages (PFN) pour la configuration d’un VPN par application
+# <a name="find-a-package-family-name-pfn-for-perapp-vpn-configuration"></a>Rechercher un nom de famille de packages (PFN) pour la configuration d’un VPN par application
 
 Il existe deux façons de trouver un PFN pour pouvoir configurer un VPN par application.
 
-## Rechercher un PFN pour une application installée sur un ordinateur Windows 10
+## <a name="find-a-pfn-for-an-app-thats-installed-on-a-windows-10-computer"></a>Rechercher un PFN pour une application installée sur un ordinateur Windows 10
 
 Si l’application que vous utilisez est déjà installée sur un ordinateur Windows 10, vous pouvez utiliser l’applet de commande PowerShell [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) pour obtenir le PFN.
 
@@ -66,7 +67,7 @@ Voici les informations récupérées pour OneNote :
 
 
 
-## Rechercher un PFN si l’application n’est pas installée sur un ordinateur
+## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Rechercher un PFN si l’application n’est pas installée sur un ordinateur
 
 1.  Accédez à https://www.microsoft.com/fr-fr/store/apps.
 2.  Entrez le nom de l’application dans la barre de recherche. Dans notre exemple, recherchez OneNote.
@@ -85,6 +86,6 @@ Microsoft Edge affiche les informations souhaitées. Dans Internet Explorer, cho
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

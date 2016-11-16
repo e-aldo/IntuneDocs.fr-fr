@@ -2,7 +2,8 @@
 title: "Dépannage du connecteur Exchange | Microsoft Intune"
 description: "Résoudre des problèmes liés au connecteur Intune Exchange."
 keywords: 
-author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 04ac69a30f6c1d91fe755f9720fbc2adc51745f7
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: f6b673d05e385ddfe6ef3d3e63cf857439b164de
 
 
 ---
 
-# Dépannage du connecteur Exchange
+# <a name="troubleshoot-the-exchange-connector"></a>Dépannage du connecteur Exchange
 Cette rubrique décrit comment résoudre les problèmes éventuellement liés au connecteur Intune Exchange.
 
-## Étapes de vérification de la configuration du connecteur 
+## <a name="steps-for-checking-the-connector-configuration"></a>Étapes de vérification de la configuration du connecteur 
 
 Vérifiez la configuration du connecteur Exchange et regardez si le problème a été résolu.
 
@@ -31,7 +32,7 @@ Vérifiez la configuration du connecteur Exchange et regardez si le problème a 
 - Lorsque vous configurez le connecteur Exchange, spécifiez un serveur d’accès au client (CAS) qui est aussi proche que possible du serveur qui héberge le connecteur Exchange. La latence de communication entre le serveur d’accès au client et le connecteur Exchange peut entraîner des retards de découverte des appareils, en particulier lorsque vous utilisez O365 dédié.
 - N’oubliez pas qu’il existe un décalage dans les synchronisations du connecteur Exchange sur le serveur d’accès au client Exchange. Une synchronisation complète est effectuée une fois par jour et une synchronisation delta (rapide) a lieu toutes les deux heures. Il est probable qu’un utilisateur avec un appareil nouvellement inscrit connaisse un délai dans l’obtention de l’accès.
 - 
-## Appareil Exchange ActiveSync non découvert à partir d’Exchange
+## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Appareil Exchange ActiveSync non découvert à partir d’Exchange
 Vérifiez si le connecteur Exchange est synchronisé sur le serveur Exchange. Pour ce faire, recherchez les journaux d’une synchronisation complète ou delta. Référez-vous à Journaux du connecteur Exchange. Si une synchronisation complète ou delta a été effectuée depuis que l’appareil a été associé, il ne s’agit pas de la source du problème. Si aucune synchronisation n’a eu lieu, collectez les journaux de synchronisation et joignez-les à votre demande de support.
 
 - Si un utilisateur ne dispose pas d’une licence Intune, le connecteur Exchange ne détecte pas ses appareils.
@@ -40,16 +41,16 @@ Vérifiez si le connecteur Exchange est synchronisé sur le serveur Exchange. Po
 - Pour les environnements Exchange dédié (O365 dédié), vous devez faire pointer le connecteur Exchange vers un serveur d’accès au client Exchange 2013 (et non 2010) dans l’environnement dédié lors de l’installation initiale, car il communique uniquement avec ce serveur d’accès au client lors de l’exécution d’applets de commande PowerShell.
 
 
-## Utilisation de PowerShell pour obtenir plus de données sur les problèmes liés au connecteur Exchange
+## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>Utilisation de PowerShell pour obtenir plus de données sur les problèmes liés au connecteur Exchange
 - Pour obtenir une liste de tous les appareils mobiles d’une boîte aux lettres, utilisez Get-ActiveSyncDeviceStatistics -mailbox mbx
 - Pour obtenir une liste des adresses SMTP pour une boîte aux lettres, utilisez Get-Mailbox -Identity user | select emailaddresses | fl.
 - Pour obtenir des informations détaillées sur l’état de l’accès à un appareil, utilisez Get-CASMailbox <upn> | fl
 
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

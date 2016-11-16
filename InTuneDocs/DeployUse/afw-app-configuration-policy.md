@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Configurer des applications Android for Work avec des stratégies de configuration des applications mobiles dans Microsoft Intune
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurer des applications Android for Work avec des stratégies de configuration des applications mobiles dans Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Utilisez des stratégies de configuration des applications mobiles dans Microsoft Intune pour fournir les paramètres pouvant être nécessaires quand les utilisateurs exécutent une application. Par exemple, une application peut exiger que les utilisateurs spécifient les paramètres suivants :
 
 -   Un numéro de port personnalisé.
@@ -37,7 +40,7 @@ Pour utiliser les stratégies de configuration des applications, le développeur
 
 Vous déployez la stratégie de configuration des applications pour les utilisateurs pour lesquels vous avez déployé l’application que vous souhaitez configurer. Les paramètres de la stratégie sont utilisés à chaque exécution de l’application.
 
-## Configurer une stratégie de configuration des applications mobiles
+## <a name="configure-a-mobile-app-configuration-policy"></a>Configurer une stratégie de configuration des applications mobiles
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Stratégie** &gt; **Vue d’ensemble** &gt; **Ajouter une stratégie**.
 
@@ -61,7 +64,7 @@ Vous déployez la stratégie de configuration des applications pour les utilisat
 La nouvelle stratégie s’affiche dans le nœud **Stratégies de configuration** .
 
 
-## Déployer la stratégie de configuration des applications
+## <a name="deploy-the-app-configuration-policy"></a>Déployer la stratégie de configuration des applications
 Après avoir créé une stratégie de configuration des applications mobiles, vous devez la déployer pour les utilisateurs pour lesquels vous déployez l’application à laquelle s’appliquent les paramètres.
 
 Pour plus d’informations sur la manière de déployer des stratégies, consultez [Déployer une stratégie de configuration](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy).
@@ -72,10 +75,6 @@ Quand l’application déployée est exécutée sur un appareil, elle s’exécu
 
 > [!TIP]
 > Déployez uniquement une stratégie de configuration des applications par application sur un utilisateur.
-
-
-
-
 
 
 

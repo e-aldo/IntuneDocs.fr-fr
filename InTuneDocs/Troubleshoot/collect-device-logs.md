@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3a081109cd499d3bdda75cb6c8a4dab9d9d28fab
-ms.openlocfilehash: ec7d522e8dcff66d1b84fed3c4c0cc708e555e67
+ms.sourcegitcommit: 19b0b502d2c8c261947c461f27a0e8153df5b186
+ms.openlocfilehash: 1e65c1fa25e273ba03218f79ebeff611138e8013
 
 
 ---
@@ -24,14 +24,24 @@ ms.openlocfilehash: ec7d522e8dcff66d1b84fed3c4c0cc708e555e67
 
 Dans le cadre de vos efforts de dépannage, vous pouvez collecter les journaux des appareils utilisateur. Les instructions permettant de collecter ces journaux sont décrites ici. En règle générale, vous devrez peut-être accéder à l’appareil ou demander à l’utilisateur qu’il collecte les journaux et vous les envoie.
 
-### <a name="android-log-location"></a>Emplacement des journaux Android
-Les journaux Android se trouvent dans *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*. L’utilisateur peut également vous envoyer les fichiers journaux par e-mail, comme décrit dans [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android) (Envoyer les journaux de données de diagnostic Android à votre administrateur informatique par e-mail).
+### <a name="android-logs"></a>Journaux Android
+Les journaux Android se trouvent dans *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*. 
+
+Parfois, les fichiers n’apparaissent pas, surtout sur les appareils Android plus récents. Dans ce cas, demandez à vos utilisateurs finaux d’ouvrir l’application Portail d’entreprise pour Android, d’accéder à **Paramètres**, **Copier les journaux**, puis de redémarrer leur appareil. 
+
+Pour plus d’informations sur la façon dont les utilisateurs peuvent vous envoyer des journaux de données, consultez les articles suivants :
+
+- [Utiliser la journalisation détaillée pour aider votre administrateur informatique à résoudre les problèmes liés aux appareils](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) : décrit comment les utilisateurs peuvent activer la journalisation détaillée pour vous envoyer automatiquement tous les journaux de données. La journalisation détaillée est activée par défaut.
+
+- [Envoyer des journaux de données de diagnostic Android à votre administrateur informatique par e-mail](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android) 
+
+- [Envoyer les journaux de données de diagnostic à votre administrateur informatique par câble USB](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 
 ### <a name="ios-logs"></a>Journaux iOS
 
-L’utilisateur peut vous envoyer les erreurs d’inscription comme décrit dans [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios) (Envoyer les erreurs d’inscription iOS à votre administrateur informatique).
+Les utilisateurs peuvent vous envoyer les erreurs d’inscription, comme décrit dans [Envoyer les erreurs d’inscription iOS à votre administrateur informatique](/intune/enduser/send-errors-to-your-it-admin-ios).
 
-### <a name="mac-os-x-devices"></a>Appareils Mac OS X
+### <a name="mac-os-x-logs"></a>Journaux Mac OS X
 
 1. Ouvrez l’application **Console**.
 2. Sous **FICHIERS**, choisissez **system.log**.
@@ -39,7 +49,7 @@ L’utilisateur peut vous envoyer les erreurs d’inscription comme décrit dans
 
 ### <a name="windows-phone"></a>Windows Phone
 
-Sur le **portail d’entreprise Windows Phone**, l’utilisateur devra choisir **...** pour accéder au menu, puis choisir **Envoyer les journaux**. Cette option est disponible avant et après la connexion au portail.
+Dans l’application Portail d’entreprise Windows Phone, les utilisateurs doivent choisir **…** pour accéder au menu, puis choisir **Envoyer les journaux**. Cette option est disponible avant et après la connexion à l’application Portail d’entreprise.
 
 ### <a name="windows"></a>Windows
 
@@ -47,6 +57,6 @@ Pour le portail d’entreprise Windows, les journaux sont situés dans *%localap
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
