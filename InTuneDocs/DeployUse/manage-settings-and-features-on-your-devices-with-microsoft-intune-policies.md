@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
+ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
+ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
 
 
 ---
 
-# Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune
+# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune
 Les *stratégies* Microsoft Intune sont des groupes de paramètres qui contrôlent les fonctionnalités des appareils mobiles et des ordinateurs. Vous créez des stratégies en utilisant des modèles qui contiennent des paramètres recommandés ou personnalisés, puis vous les déployez sur l'appareil ou des groupes d’utilisateurs.
 
-## Types de stratégie
+## <a name="types-of-policies"></a>Types de stratégie
 
 Les stratégies Intune appartiennent aux catégories suivantes : La catégorie que vous utilisez affecte la façon de créer et de déployer la stratégie.
 
@@ -37,13 +37,11 @@ Pour plus d’informations, consultez [Limiter l’accès à la messagerie et au
 - **Stratégies d’accès aux ressources** : celles-ci œuvrent ensemble pour aider vos utilisateurs à accéder aux fichiers et aux ressources dont ils ont besoin pour effectuer leur travail, où qu’ils soient.
 Pour plus d’informations, consultez [Activer l’accès aux ressources de l’entreprise avec Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Pour obtenir la liste complète des stratégies Intune, consultez le [Guide de référence des stratégies Microsoft Intune](microsoft-intune-policy-reference.md).
 
-
-
-
-## Créer une stratégie de configuration
+## <a name="create-a-configuration-policy"></a>Créer une stratégie de configuration
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), sélectionnez **Stratégie** &gt; **Stratégies de configuration** &gt; **Ajouter**.
 
@@ -63,15 +61,15 @@ Pour obtenir la liste complète des stratégies Intune, consultez le [Guide de r
     - [Paramètres pour les appareils iOS](ios-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour les appareils Android](android-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour les appareils Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
-    - [Paramètres pour les appareils Windows 8 et Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
-    - [Paramètres pour les appareils Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
-    - [Paramètres pour les appareils de bureau et mobiles Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
+    - [Paramètres pour les appareils Windows 8 et Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
+    - [Paramètres pour les appareils Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
+    - [Paramètres pour les ordinateurs et les appareils mobiles Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour les appareils Windows Collaboration](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour la mise à niveau de la version de Windows](edition-upgrade-policy-settings-in-microsoft-intune.md)
-    - [Paramètres pour les appareils Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
+    - [Paramètres pour les appareils Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
     - [Paramètres pour la stratégie de conditions générales](terms-and-condition-policy-settings-in-microsoft-intune.md)
-    - [Paramètres généraux pour les appareils mobiles (hérité)](mobile-device-security-policy-settings-in-microsoft-intune.md)
+    - [Paramètres généraux pour les appareils mobiles (hérités)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
 4.  Dans la boîte de dialogue de confirmation, sélectionnez **Oui** pour déployer la stratégie ou sur **Non** pour créer la stratégie sans la déployer.
 
@@ -84,7 +82,7 @@ Maintenant que vous avez créé une stratégie, vous pouvez la déployer sur un 
 > [!TIP]
 > Vous ne pouvez pas déployer tous les types de stratégie. Par exemple, la stratégie de gestion des applications mobiles n’est pas déployée. Ce type de stratégie est plutôt associé à une application, que vous déployez ensuite.
 
-## Déployer une stratégie de configuration
+## <a name="deploy-a-configuration-policy"></a>Déployer une stratégie de configuration
 
 1.  Dans l’espace de travail **Stratégie**, sélectionnez la stratégie à déployer, puis choisissez **Gérer le déploiement**.
 
@@ -96,7 +94,7 @@ Maintenant que vous avez créé une stratégie, vous pouvez la déployer sur un 
 
 Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’autres informations sur le déploiement dans la partie inférieure de la liste de stratégies.
 
-## Gérer les stratégies
+## <a name="manage-policies"></a>Gérer les stratégies
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), sélectionnez **Stratégie**, puis recherchez et sélectionnez la stratégie que vous voulez gérer.
 
@@ -107,9 +105,9 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 - **Gérer le déploiement** : sélectionnez le groupe sur lequel vous voulez déployer la stratégie, puis sélectionnez **Ajouter**.
 
 
-## Forum aux questions sur les stratégies Intune
+## <a name="frequently-asked-questions-about-intune-policies"></a>Forum aux questions sur les stratégies Intune
 
-### Combien de temps faut-il pour que les appareils mobiles obtiennent une stratégie ou les applications une fois que celles-ci ont été déployées ?
+### <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>Combien de temps faut-il pour que les appareils mobiles obtiennent une stratégie ou les applications une fois que celles-ci ont été déployées ?
 Quand une stratégie ou une application est déployée, Intune essaie d’envoyer immédiatement une notification à l’appareil pour qu’il s’enregistre auprès du service Intune. Cette opération prend généralement moins de 5 minutes.
 
 Si un appareil ne se manifeste pas pour obtenir la stratégie après l’envoi de la première notification, Intune effectue trois autres tentatives.  Si l’appareil est hors connexion (par exemple, s’il est éteint ou n’est pas connecté à un réseau), il ne peut pas recevoir de notifications. Dans ce cas, l’appareil obtiendra la stratégie lors de son prochain enregistrement planifié auprès du service Intune, de la manière suivante :
@@ -128,12 +126,12 @@ Si l’appareil vient d’être inscrit, la fréquence d’enregistrement est pl
 
 Les utilisateurs peuvent également ouvrir l’application Portail d’entreprise et synchroniser l’appareil pour qu’il recherche immédiatement les stratégies à tout moment.
 
-### Quelles sont les actions qui déclenchent l’envoi immédiat d’une notification par Intune ?
+### <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Quelles sont les actions qui déclenchent l’envoi immédiat d’une notification par Intune ?
 Les appareils s’enregistrent auprès d’Intune quand ils reçoivent une notification leur demandant de s’enregistrer ou lors de leur enregistrement régulièrement planifié.  Quand vous ciblez un appareil ou un utilisateur spécifiquement avec une action de type réinitialisation, verrouillage, réinitialisation de code secret, déploiement d’application, déploiement de profil (Wi-Fi, VPN, messagerie, etc.) ou déploiement de stratégie, Intune essaie immédiatement d’indiquer à l’appareil qu’il doit s’enregistrer auprès du service Intune pour recevoir ces mises à jour.
 
 D’autres modifications, comme la modification des coordonnées dans le portail d’entreprise, ne déclenchent pas l’envoi immédiat d’une notification aux appareils.
 
-### Si plusieurs stratégies sont déployées sur le même utilisateur ou appareil, quels sont les paramètres appliqués ?
+### <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Si plusieurs stratégies sont déployées sur le même utilisateur ou appareil, quels sont les paramètres appliqués ?
 Quand plusieurs stratégies sont déployées sur le même utilisateur ou appareil, l’évaluation du paramètre à appliquer est effectuée au niveau de chaque paramètre :
 
 -   Les paramètres de stratégie de conformité ont toujours la priorité sur les paramètres de stratégie de configuration.
@@ -142,22 +140,22 @@ Quand plusieurs stratégies sont déployées sur le même utilisateur ou apparei
 
 -   Si un paramètre de stratégie de configuration entre en conflit avec un paramètre dans une autre stratégie de configuration, ce conflit apparaît dans la console Intune. Vous devez corriger ces conflits manuellement.
 
-### Que se passe-t-il quand des stratégies de gestion des applications mobiles entrent en conflit ? Laquelle est appliquée à l’application ?
+### <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Que se passe-t-il quand des stratégies de gestion des applications mobiles entrent en conflit ? Laquelle est appliquée à l’application ?
 Les valeurs en conflit sont les paramètres les plus restrictifs disponibles dans une stratégie de gestion des applications mobiles, à l’exception des champs d’entrée numérique (comme le nombre de tentatives autorisées avant la réinitialisation du code confidentiel).  Les champs d’entrée numérique sont définis sur les mêmes valeurs que quand vous créez une stratégie de gestion des applications mobiles dans la console en choisissant les paramètres recommandés.
 
 Des conflits se produisent quand deux paramètres de stratégie sont identiques.  Par exemple, vous avez configuré deux stratégies MAM identiques, à l’exception du paramètre de copier/coller.  Dans ce scénario, le paramètre de copier/coller est défini sur la valeur la plus restrictive, mais le reste des paramètres est appliqué selon leur configuration.
 
 Si une stratégie est déployée sur l’application et active, puis qu’une deuxième stratégie est déployée, la première est prioritaire et reste appliquée, tandis que la deuxième s’affiche comme étant en conflit. Si elles sont appliquées en même temps, ce qui signifie qu’il n’existe aucune stratégie précédente, elles sont alors en conflit. Tous les paramètres en conflit sont définis sur les valeurs les plus limitées.
 
-### Que se passe-t-il quand les stratégies personnalisées iOS entrent en conflit ?
+### <a name="what-happens-when-ios-custom-policies-conflict"></a>Que se passe-t-il quand les stratégies personnalisées iOS entrent en conflit ?
 Intune n’évalue pas la charge utile des fichiers de configuration Apple ni la stratégie OMA-URI personnalisée. Son rôle se limite simplement au mécanisme de livraison.
 
 Lorsque vous déployez une stratégie personnalisée, vérifiez que les paramètres configurés ne sont pas en conflit avec les stratégies de conformité, de configuration ou d’autres stratégies personnalisées. Dans le cas d’une stratégie personnalisée avec des paramètres en conflit, l’ordre dans lequel les paramètres sont appliqués est aléatoire.
 
-### Que se passe-t-il quand une stratégie est supprimée ou qu’elle n’est plus applicable ?
+### <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>Que se passe-t-il quand une stratégie est supprimée ou qu’elle n’est plus applicable ?
 Quand vous supprimez une stratégie ou retirez un appareil d’un groupe sur lequel une stratégie a été déployée, la stratégie et les paramètres sont supprimés de cet appareil conformément aux listes suivantes.
 
-#### Appareils inscrits
+#### <a name="enrolled-devices"></a>Appareils inscrits
 
 - Profils Wi-Fi, VPN, de certificat et de messagerie : ces profils sont supprimés de tous les appareils inscrits et pris en charge.
 - Tous les autres types de stratégie :
@@ -194,7 +192,7 @@ Quand vous supprimez une stratégie ou retirez un appareil d’un groupe sur leq
         - Autoriser l'itinérance des données
         - Autoriser la synchronisation automatique lors de l'itinérance
 
-#### PC Windows exécutant le logiciel client Intune
+#### <a name="windows-pcs-running-the-intune-client-software"></a>PC Windows exécutant le logiciel client Intune
 
 - **Paramètres Endpoint Protection** : les paramètres sont restaurés sur leurs valeurs recommandées. La seule exception est le paramètre **Rejoindre Microsoft Active Protection Service** pour lequel la valeur par défaut est **Non**. Pour plus d’informations, consultez [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 - **Paramètres de mises à jour logicielles** : les paramètres sont réinitialisés à l’état par défaut du système d’exploitation. Pour plus d’informations, consultez [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
@@ -202,17 +200,17 @@ Quand vous supprimez une stratégie ou retirez un appareil d’un groupe sur leq
 - **Paramètres du Pare-feu Windows** : les paramètres sont réinitialisés sur les valeurs par défaut du système d’exploitation. Pour plus d’informations, consultez [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
-### Comment actualiser les stratégies sur un appareil pour vérifier qu’elles sont à jour (s’applique aux ordinateurs Windows exécutant le logiciel client Intune uniquement) ?
+### <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>Comment actualiser les stratégies sur un appareil pour vérifier qu’elles sont à jour (s’applique aux ordinateurs Windows exécutant le logiciel client Intune uniquement) ?
 
 1.  Dans un groupe d’appareils, sélectionnez les appareils sur lesquels vous voulez actualiser les stratégies, puis sélectionnez **Tâches à distance** &gt; **Actualiser les stratégies**.
 2.  Sélectionnez **Tâches à distance** dans le coin inférieur droit de la console d’administration Intune pour vérifier l’état de la tâche.
 
-### Où puis-je trouver de l’aide concernant mes problèmes de stratégies ?
+### <a name="where-can-i-find-help-troubleshooting-policies"></a>Où puis-je trouver de l’aide concernant mes problèmes de stratégies ?
 
 Consultez [Résoudre les problèmes de stratégie dans Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

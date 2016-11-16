@@ -3,8 +3,9 @@ title: "Gérer les transferts de données entre applications iOS | Microsoft Int
 description: "Cette rubrique explique comment utiliser la fonctionnalité iOS Open In et les stratégies de gestion des applications mobiles pour gérer les transferts de données entre applications."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Gérer les transferts de données entre applications iOS avec Microsoft Intune
-## Gérer les applications iOS
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gérer les transferts de données entre applications iOS avec Microsoft Intune
+## <a name="manage-ios-apps"></a>Gérer les applications iOS
 La protection des données de votre entreprise nécessite notamment de vérifier que les transferts de fichiers sont limités aux applications que vous gérez.  Vous pouvez gérer les applications iOS comme suit :
 
 -   Empêchez la perte de données d’entreprise en configurant une stratégie MAM pour les applications. Nous appellerons cela les applications **gérées par une stratégie**.
@@ -28,7 +29,7 @@ La protection des données de votre entreprise nécessite notamment de vérifier
 -   Vous pouvez également déployer et gérer des applications via le **canal MDM**.  Ceci nécessite que les appareils soient inscrits dans la solution MDM. Il peut s’agir d’applications **gérées par une stratégie** ou d’autres applications gérées.
 
 La fonctionnalité **Ouvrir dans la gestion** pour les appareils iOS peut limiter les transferts de fichiers entre des applications déployées sur le **canal MDM**. Les restrictions de gestion de l’ouverture sont définies dans les paramètres de configuration et déployées à l’aide de votre solution de gestion des appareils mobiles (MDM).  Quand l’utilisateur installe l’application déployée, les restrictions que vous avez définies sont appliquées.
-##  Utilisation de MAM avec les applications iOS
+##  <a name="using-mam-with-ios-apps"></a>Utilisation de MAM avec les applications iOS
 Les stratégies de gestion des applications mobiles (MAM) peuvent être utilisées avec la fonctionnalité **Ouvrir dans la gestion** d’iOS pour protéger les données d’entreprise des façons suivantes :
 
 -   **Appareils appartenant à l’entreprise non gérés par une solution MDM :** vous pouvez définir les paramètres de la stratégie de gestion des applications mobiles pour **Autoriser l’application à transférer des données uniquement vers des applications gérées**. Quand l’utilisateur final ouvre un fichier protégé dans une application non gérée, le fichier n’est pas lisible.
@@ -41,7 +42,7 @@ Pour vous assurer que les applications que vous déployez à l’aide de votre s
 > [!IMPORTANT]
 > Le paramètre Nom UPN d’utilisateur est obligatoire seulement pour les applications déployées sur des appareils gérés par une gestion MDM tierce.  Pour les appareils gérés par Intune, ce paramètre n’est pas obligatoire.
 
-## Configurer le paramètre UPN d’utilisateur
+## <a name="configure-user-upn-setting"></a>Configurer le paramètre UPN d’utilisateur
 Cette configuration est requise pour les appareils qui sont gérés par une solution MDM tierce. La procédure décrite ci-dessous est un flux général indiquant comment implémenter le paramètre UPN et l’expérience utilisateur final obtenue :
 
 
@@ -49,11 +50,11 @@ Cette configuration est requise pour les appareils qui sont gérés par une solu
 
 2.  Déployez les applications et le profil de messagerie que vous souhaitez gérer **avec votre solution MDM tierce** à l’aide du paramètre décrit dans les étapes 3 et 4.
 
-3.  Déployez l’application avec les paramètres de configuration d’application suivants : clé=IntuneMAMUPN, valeur=<nom_utilisateur@entreprise.com> [exemple : ’IntuneMAMUPN’, ’noel_belisle@microsoft.com’]
+3.  Déployez l’application avec les paramètres de configuration d’application suivants : clé=IntuneMAMUPN, valeur=<username@company.com> [exemple: 'IntuneMAMUPN', ‘jondoe@microsoft.com’]
 
 4.  Déployez la stratégie Ouvrir dans la gestion sur les appareils inscrits.
 
-### Exemple d’expérience utilisateur final
+### <a name="example-end-user-experience"></a>Exemple d’expérience utilisateur final
 
 1.  L’utilisateur installe l’application Microsoft Word sur l’appareil.
 
@@ -70,11 +71,11 @@ Cette configuration est requise pour les appareils qui sont gérés par une solu
 
 6.  Le transfert de données se fait maintenant avec succès et le document est marqué avec l’identité de l’entreprise dans l’application. En outre, les données sont traitées dans un contexte de travail et les paramètres de stratégie sont donc appliqués.
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 [Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,7 +2,8 @@
 title: "Résolution des problèmes d’installation du client | Microsoft Intune"
 description: "Résolvez les problèmes de configuration de client courants."
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 3f7e5752780d7159ce3081ec7a194f4e81e4cd16
+ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
+ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 
 
 ---
 
-# Résolution des problèmes d’installation du client dans Microsoft Intune
+# <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Résolution des problèmes d’installation du client dans Microsoft Intune
 Utilisez les informations suivantes pour vous aider à résoudre les problèmes courants de configuration du client. Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
 
-## Échec de l’installation du client
+## <a name="client-installation-fails"></a>Échec de l’installation du client
 
 -   Si aucune alerte de déploiement du logiciel client pour l’ordinateur n’est affichée dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), vérifiez la connectivité Internet et la configuration du proxy de l’ordinateur, puis assurez-vous que ce dernier peut communiquer avec l’URL du service, [https://manage.microsoft.com](https://manage.microsoft.com/). Ensuite, réessayez d'installer le logiciel client.
 
@@ -48,14 +49,14 @@ Utilisez les informations suivantes pour vous aider à résoudre les problèmes 
 
     -   **Gravité** : indique la gravité de l'alerte
 
-## Le package d’inscription de l’ordinateur ne se télécharge pas
+## <a name="computer-enrollment-package-doesnt-download"></a>Le package d’inscription de l’ordinateur ne se télécharge pas
 **Problème :** lors de la tentative d’inscription d’un ordinateur, vous rencontrez les problèmes suivants :
 -  Le package d’inscription ne parvient pas à se télécharger
 -  La boîte de dialogue de téléchargement s’affiche mais arrive à expiration
 
 **Résolution :** dans le navigateur que vous utilisez pour le téléchargement, au moment où le téléchargement a lieu, vérifiez que les téléchargements sont activés et que les fichiers chiffrés peuvent être enregistrés sur votre disque local.
 
-## L’installation du client se bloque avec le code d’erreur 0x80040154
+## <a name="client-installation-hangs-with-error-code-0x80040154"></a>L’installation du client se bloque avec le code d’erreur 0x80040154
 **Problème :**
 
 -  L’installation du client pendant l’inscription se bloque
@@ -69,10 +70,10 @@ Cela peut être dû à l’absence de mises à jour logicielles critiques sur le
 **Résolution :** Assurez-vous que votre stratégie de mise à jour logicielle permet d’installer les mises à jour critiques, comme décrit dans [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
-## Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
+## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
 Pour les appareils Windows non soumis à la gestion des appareils mobiles, les erreurs de stratégie dans le fichier policyplatform.log peuvent être dues à des paramètres définis sur des valeurs autres que les valeurs par défaut dans le Contrôle de compte d’utilisateur Windows sur l’appareil. Certains paramètres de Contrôle de compte d’utilisateur autres que les paramètres par défaut peuvent affecter les installations du client Microsoft Intune et l’exécution des stratégies.
 
-### Pour résoudre les problèmes liés au Contrôle de compte d’utilisateur
+### <a name="to-resolve-uac-issues"></a>Pour résoudre les problèmes liés au Contrôle de compte d’utilisateur
 
 1.  Mettez hors service l’ordinateur, comme décrit dans [Mettre hors service des données et des appareils en cas de gestion Microsoft Intune](/intune/deploy-use/retire-devices-from-microsoft-intune-management).
 
@@ -85,9 +86,9 @@ Pour les appareils Windows non soumis à la gestion des appareils mobiles, les e
 
 4.  Déplacez le curseur de notification sur le paramètre par défaut.
 
-## Que faire si le client ne se désinstalle pas de la console d'administration Microsoft Intune ?
+## <a name="what-to-do-if-the-client-will-not-uninstall-from-the-microsoft-intune-administrator-console"></a>Que faire si le client ne se désinstalle pas de la console d'administration Microsoft Intune ?
 
-### Pour supprimer le logiciel client à l'aide de l'outil de ligne de commande de Microsoft Intune
+### <a name="to-remove-the-client-software-by-using-the-microsoft-intune-command-line-tool"></a>Pour supprimer le logiciel client à l'aide de l'outil de ligne de commande de Microsoft Intune
 
 1.  Ouvrez une invite de commande en mode administrateur.
 
@@ -95,7 +96,7 @@ Pour les appareils Windows non soumis à la gestion des appareils mobiles, les e
 
 3.  Exécutez la commande suivante : ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
 
-## Codes d'erreur d'installation du logiciel client
+## <a name="client-installation-error-codes"></a>Codes d'erreur d'installation du logiciel client
 Le tableau suivant décrit les codes d'erreur indiqués dans l'espace de travail **Alertes** en cas d'échec de l'installation du logiciel client. Il inclut des suggestions pour résoudre le problème identifié par chaque code d'erreur.
 
 |Code d'erreur|Problème possible|Solution suggérée|
@@ -116,16 +117,16 @@ Le tableau suivant décrit les codes d'erreur indiqués dans l'espace de travail
 |**0x80043008**|Impossible de démarrer le service des mises à jour de Microsoft Online Management.|Contactez le support technique comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
 |**0x80043009**|L'ordinateur client est déjà inscrit dans le service.|Vous devez mettre hors service l'ordinateur client avant de le réinscrire dans le service. Pour obtenir des instructions, consultez [Mettre hors service des appareils en cas de gestion Microsoft Intune](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
 |**0x8004300B**|Impossible d'exécuter le package d'installation du logiciel client car la version de Windows en cours d'exécution sur le client n'est pas prise en charge.|Intune ne prend pas en charge la version de Windows en cours d’exécution sur l’ordinateur client. Pour obtenir la liste des systèmes d’exploitation pris en charge, consultez [Configuration requise de l’infrastructure réseau pour Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
-|**0xAB2**|Windows Installer n'a pas pu accéder à l'exécution VBScript d'une action personnalisée.|Cette erreur est générée par une action personnalisée basée sur des DLL (Dynamic-Link Libraries). Pour résoudre les problèmes liés aux DLL, il peut s'avérer nécessaire d'utiliser les outils décrits dans l'article Aide et support Microsoft KB198038 [Informations : Outils utiles pour les problèmes de package et de déploiement](http://go.microsoft.com/fwlink/?LinkID=234255).|
+|**0xAB2**|Windows Installer n'a pas pu accéder à l'exécution VBScript d'une action personnalisée.|Cette erreur est générée par une action personnalisée basée sur des DLL (Dynamic-Link Libraries). Pour résoudre les problèmes liés aux DLL, vous pouvez avoir besoin d’utiliser les outils décrits dans [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255) (KB198038 du support technique Microsoft : Outils utiles en cas de problèmes de package et de déploiement).|
 |**0x8004300f**|Le logiciel ne peut pas être installé, car le client System Center Configuration Manager est déjà installé.|Supprimez le client Configuration Manager, puis relancez l'installation du logiciel client.|
 |**0x80043010**|Le logiciel ne peut pas être installé car le client Open Mobile Alliance Device Management (OMADM) est déjà installé.|Désinscrivez le client OMADM, puis recommencez l'installation du logiciel client.|
 Si les problèmes d’installation persistent, contactez le Support technique comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md). Munissez-vous du journal d’inscription de l’ordinateur client (situé dans %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log et %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) et du journal de Windows Update (%*windir*%\windowsupdate.log) pour les communiquer aux ingénieurs du support.
 
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

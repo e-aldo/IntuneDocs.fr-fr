@@ -2,10 +2,10 @@
 title: "Que se passe-t-il si vous désinscrivez votre appareil Windows d’Intune ? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8975e57c604565c57c86472564ab660aed560a7b
-ms.openlocfilehash: 22179d5d80d2b24e61778249367bec6845290206
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5cf2e7e821f962d2f12813062cc30b724e2fc45a
 
 
 ---
 
 
-# Que se passe-t-il si vous désinscrivez votre appareil Windows d’Intune ?
+# <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Que se passe-t-il si vous désinscrivez votre appareil Windows d’Intune ?
 
 Utilisez les liens à droite de cette page, sous **Dans cet article**, pour rechercher des informations sur le type d’appareil que vous utilisez.
 
 
-## Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista
+## <a name="windows-10-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
 -   Votre appareil n’apparaît plus dans le portail d’entreprise, et vous ne pouvez plus installer d’applications à partir du portail d’entreprise.
 
@@ -52,7 +52,7 @@ En outre, pour Windows 8.1 :
 
 -   Il se peut que vous n’ayez plus accès à certaines ressources de l’entreprise, telles que les partages de fichiers ou les sites web internes.
 
-## Windows 10 Mobile et Windows Phone 8.1
+## <a name="windows-10-mobile-and-windows-phone-81"></a>Windows 10 Mobile et Windows Phone 8.1
 
 -   L’application du portail d’entreprise est désinstallée de votre appareil. Cela signifie que votre appareil n’apparaît plus dans le portail d’entreprise, et que vous ne pouvez plus installer d’applications à partir de l’application Portail d’entreprise ou du site web Portail d’entreprise.
 
@@ -63,7 +63,7 @@ En outre, pour Windows 8.1 :
     > [!IMPORTANT]
     > Seules les stratégies de chiffrement continuent de s’appliquer. Si votre stratégie d’entreprise vous obligeait à chiffrer votre appareil Windows Phone, la seule façon de le déchiffrer est de le réinitialiser à l’aide du menu **Paramètres**.
 
-## Windows RT exécutant Windows 8.1
+## <a name="windows-rt-running-windows-81"></a>Windows RT exécutant Windows 8.1
 
 -   L’application du portail d’entreprise est désinstallée de votre appareil. Cela signifie que votre appareil n’apparaît plus dans le portail d’entreprise, et que vous ne pouvez pas installer d’applications à partir du portail d’entreprise.
 
@@ -85,10 +85,10 @@ Lorsque vous supprimez votre appareil Windows RT, voici ce qui se produit :
 
 -   Tous les paramètres qui ont été modifiés sur votre appareil quand vous l’avez ajouté (par exemple la désactivation de l’appareil photo ou l’exigence d’une certaine longueur de mot de passe) ne s’appliquent plus.
 
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,9 +2,10 @@
 title: Comment obtenir un support technique | Microsoft Intune
 description: "Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation."
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,28 +14,34 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
-ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
+ms.sourcegitcommit: d332e46b27bea274a38355dfb01806160b1041ee
+ms.openlocfilehash: 44069a34c1c9c2fb05f2b250188fe45a7d419911
 
 
 ---
 
-# Comment obtenir un support technique pour Microsoft Intune
- Le support technique Microsoft fournit un support technique global, préalable à la vente, pour la facturation et l’abonnement pour Microsoft Intune. Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support non technique est disponible dans d’autres langues.
+# <a name="how-to-get-admin-support-for-microsoft-intune"></a>Comment obtenir un support technique administrateur pour Microsoft Intune
 
-Cette rubrique vous indique comment ouvrir une demande de service ou appeler le support téléphonique dans de nombreuses langues.
+Microsoft fournit un support technique global, en avant-vente, pour la facturation et l’abonnement pour Microsoft Intune. Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support par téléphone et le support à la facturation en ligne sont disponibles dans d’autres langues.
 
-Pour rechercher de l’aide sans assistance sur Intune, consultez [Conseils généraux de dépannage pour Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) ou n’importe laquelle des rubriques de dépannage pour des problèmes spécifiques répertoriées dans la section **Voir aussi** de cette rubrique.
+Le support pour Intune et pour Intune quand il est utilisé avec Configuration Manager est gratuit. Les clients Support Premier sont facturés pour les questions liées à des procédures (comment configurer une fonctionnalité Intune).
 
->[!NOTE]
->
->Les clients Premier peuvent ouvrir un ticket de support Intune dans la [page de support Premier](https://support.microsoft.com/en-us/premier/contacts).
+## <a name="create-an-online-service-request"></a>Créer une demande de service en ligne
 
-## Créer une demande de service en ligne
+1.  Connectez-vous au [Centre d’administration Office 365](https://portal.office.com) en utilisant vos informations d’identification Intune. 
+    >[!NOTE]
+    >
+    >Les clients Support Premier peuvent ouvrir un ticket de support Intune dans la [page du Support Premier](https://support.microsoft.com/en-us/premier/contacts).
 
-1.  Connectez-vous au [Centre d’administration Office 365](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) en utilisant vos informations d’identification Intune.
+2.  Cliquez sur la vignette Administration.
+3.  Sur la gauche, en dessous de **Support**, choisissez **Support** pour ouvrir le ticket. Vous verrez probablement ceci :
 
-2.  Sous **Créer une demande de service**, sélectionnez la catégorie du problème pour lequel vous voulez ouvrir un ticket :
+    ![Ouvrir un nouveau ticket de support Intune](../media/suport-open-ticket.png)
+
+    >[!NOTE]
+    >
+    >  Les clients qui ont ou ont eu un compte O365 avec 100 licences ou moins voient ceci, et doivent se référer à [Méthode alternative pour ouvrir un ticket de support](#alternate-method-to-open-a-support-ticket).
+    > ![Support alternatif d’Intune](../media/alternate-support-ui.png)
 
     -   Pour les problèmes de facturation, de licences et de compte, sélectionnez **Informations de facturation et de produit**.
 
@@ -43,31 +50,60 @@ Pour rechercher de l’aide sans assistance sur Intune, consultez [Conseils gén
     > [!NOTE]
     > Vous devrez peut-être sélectionner **plus** en bas de la liste pour afficher toutes les catégories.
 
-3.  Dans la page **identifier le problème**, sélectionnez la **fonctionnalité** et le **symptôme** pour lesquels vous avez besoin d’aide. Vous serez invité à fournir un **récapitulatif du problème** et les **détails du problème**.
+3.  Suivez les instructions pour ouvrir votre demande. 
 
-4.  Dans la page **examiner les suggestions**, vous pouvez cliquer sur des liens vers du contenu susceptible de vous aider à résoudre le problème par vous-même.  Si vous ne parvenez pas à résoudre le problème, vous pouvez sélectionner **Oui, continuer** en bas de la page pour envoyer votre demande de service.
+### <a name="alternate-method-to-open-a-support-ticket"></a>Méthode alternative pour ouvrir un ticket de support
 
-5.  Dans la page **ajouter des détails**, fournissez les informations demandées. Vous pouvez joindre des captures d’écran ou d’autres documents en sélectionnant **Joindre un fichier**.
+Suivez cette procédure si votre page de support ressemble à ceci :
 
-6.  Dans la page **confirmer et envoyer**, fournissez les coordonnées, examinez votre demande, puis sélectionnez **Envoyer la demande**. Une fois la demande envoyée, vous êtes redirigé vers la liste de vos demandes de service.
+![Support alternatif d’Intune](../media/alternate-support-ui.png)
 
-## Support technique par téléphone
+
+1. Choisissez **Besoin d’aide**.
+2. Dans la zone de texte, entrez une description de votre problème et choisissez **Obtenir de l’aide**.
+
+    ![Ticket de support alternatif d’Intune](../media/support-need-help.png)
+
+3. Passez en revue les ressources en ligne suggérées pour de l’aide sans assistance, ou choisissez **Laissez-nous vous appeler** pour recevoir un appel du Support Microsoft.
+
+## <a name="support-by-phone"></a>Support technique par téléphone
 Consultez [Contacter le support par téléphone pour Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) pour obtenir la liste des numéros de téléphone par pays et par région, les horaires d’ouverture du support technique et les langues prises en charge pour chaque région.
 
-## Suivi de vos demandes de service
-Pour effectuer le suivi de vos demandes, accédez au [Centre d’administration Office 365](https://portal.office.com/admin/default.aspx). En bas de la liste **Créer une demande de service**, sélectionnez **Afficher tous les tickets de support**. Par défaut, toutes vos demandes de service à l’état ouvert sont affichées. Pour modifier le type de demande de service affiché, par exemple, pour voir les demandes fermées, sélectionnez l’icône de filtre dans le volet de navigation supérieur et sélectionnez votre affichage préféré.
+## <a name="track-your-service-requests"></a>Suivi de vos demandes de service
+1.  Connectez-vous au [Centre d’administration Office 365](https://portal.office.com) en utilisant vos informations d’identification Intune. 
+2.  Cliquez sur la vignette Administration.
+3.  Sur la gauche, en dessous de **Support**, choisissez **Demandes de service** pour passer en revue vos tickets. 
+
+Nos réponses initiales aux demandes de service dépendent de la gravité du problème. Pour les problèmes les plus graves, notre première réponse pour les clients professionnels est faite dans les deux heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support. Il s’agit de cas où :
+
+- Un ou plusieurs services ne sont pas accessibles ou sont inutilisables. 
+- Des délais de production, d'opérations ou de déploiement sont gravement affectés ou il y aura un impact majeur sur la production ou la rentabilité. 
+- Plusieurs utilisateurs ou services sont affectés.
+
+Pour les problèmes de gravité modérée, notre première réponse pour les clients professionnels est faite dans les quatre heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support.  Il s’agit de cas où :
+
+- Le service est utilisable, mais de manière affaiblie. 
+- La situation a un impact modéré sur l'activité et peut être traitée pendant les heures de bureau. 
+- Un utilisateur unique, un client ou un service est partiellement affecté.
+
+Pour les autres problèmes, notre première réponse pour les clients professionnels est faite dans les huit heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support.  Il s’agit de cas où :
+
+- La situation a un impact minimal sur l'activité. 
+- Le problème est important mais n'a actuellement aucun impact significatif sur la productivité ou le service du client. 
+- Un seul utilisateur rencontre une rupture partielle, mais il existe une solution acceptable.
 
 > [!NOTE]
 > **Si vous utilisez Microsoft System Center Configuration Manager** ou **Microsoft System Center Endpoint Protection** : pour obtenir du support technique sur Configuration Manager ou Endpoint Protection, contactez votre partenaire ou visitez le [Centre de solutions Microsoft System Center Configuration Manager et System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) qui propose des documents d’auto-assistance élaborés, avec la possibilité d’ouvrir une demande de support en ligne ou par téléphone.
 >
 > Le support technique pour System Center Configuration Manager ou System Center Endpoint Protection nécessite un règlement ou est décrémenté de vos contrats de licence ou Premier Support existants.
 
-## Options de support supplémentaires
+## <a name="self-help"></a>Aide sans assistance
 
-### Partenaires
-Vous pouvez choisir un partenaire Microsoft pour déléguer des fonctions administratives, y compris la création de tickets de demande de service.
+Vous pouvez peut-être résoudre votre problème sans ouvrir un ticket de support.
 
-### Licences en volume
+Pour de l’aide sans assistance sur Intune, consultez [Conseils généraux de résolution des problèmes pour Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) ou les rubriques de résolution de problèmes spécifiques. Vous pouvez également rechercher une solution ou publier votre question sur le [forum Intune](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod). 
+
+## <a name="support-for-volume-licensing-customers"></a>Support pour les clients ayant des licences en volume
 Si vous avez déjà acheté des licences auprès de Microsoft dans le cadre d'un programme de licence en volume, utilisez les liens suivants pour bénéficier du support technique :
 
 -   Pour un support relatif aux licences et à la localisation des clés, consultez le [Centre de gestion des licences en volume](http://go.microsoft.com/fwlink/p/?LinkID=282016).
@@ -76,75 +112,8 @@ Si vous avez déjà acheté des licences auprès de Microsoft dans le cadre d'un
 
 -   Pour obtenir des informations générales sur les licences en volume, consultez [Licences en volume](http://go.microsoft.com/fwlink/p/?LinkID=282015).
 
-## Réponse aux cas de support
-Nous établissons des priorités parmi les cas de support que nous recevons de façon à répondre au plus vite aux dossiers les plus urgents. Pour faciliter la hiérarchisation des cas de support, nous leur attribuons un des niveaux de gravité indiqués dans le tableau suivant. Vous pouvez aussi voir les temps de réponse correspondant à chaque niveau de gravité.
-
-**Temps de réponse initial :**
-
-|Niveau de gravité|Description des opérations et du support technique|Microsoft Intune / Enterprise Mobility Suite<br /><br />Premier|Microsoft Intune / Enterprise Mobility Suite<br /><br />Professionnel|
-|------------------|--------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-|Gravité A (critique)|Un ou plusieurs services ne sont pas accessibles ou sont inutilisables. Des délais de production, d'opérations ou de déploiement sont gravement affectés ou il y aura un impact majeur sur la production ou la rentabilité. Plusieurs utilisateurs ou services sont affectés.|1 heure|2 heures|
-|Gravité B (élevée)|Le service est utilisable, mais de manière affaiblie. La situation a un impact modéré sur l'activité et peut être traitée pendant les heures de bureau. Un utilisateur unique, un client ou un service est partiellement affecté.|2 heures|4 heures|
-|Gravité C (moyenne)|La situation a un impact minimal sur l'activité. Le problème est important mais n'a actuellement aucun impact significatif sur la productivité ou le service du client. Un seul utilisateur rencontre une rupture partielle, mais il existe une solution acceptable.|4 heures|8 heures|
-
-## Partenariat de support
-L’efficacité du support technique dépend du partenariat entre le Support Microsoft et le service informatique de votre organisation.  Les efforts de dépannage initiaux au sein de votre organisation, combinés à une communication efficace entre vos administrateurs et Microsoft, peuvent contribuer à une résolution rapide des problèmes.
-
-### Comment les administrateurs peuvent aider
-Les personnes ayant le rôle d’administrateur Intune (notamment les administrateurs clients et les administrateurs de services) sont autorisées à accéder à la console d’administration Intune et à communiquer directement avec Microsoft à propos des demandes de service Intune. Ces administrateurs peuvent également inclure les partenaires Microsoft que vous avez spécifiés en tant qu’administrateurs délégués.
-
-L’administrateur se charge de :
-
--   gérer l’administration des services et de la maintenance des comptes ;
-
--   soumettre les demandes de service à Microsoft ;
-
--   assurer la configuration des comptes d’utilisateurs pour permettre aux utilisateurs d’accéder aux services ;
-
--   gérer les problèmes de connectivité des clients et d’installation des logiciels ;
-
--   gérer les problèmes de disponibilité des services au sein de l’organisation ;
-
--   utiliser les ressources de support en libre-service de Microsoft pour résoudre les problèmes de support.
-
-Le Support Microsoft est là pour vous aider si le problème persiste en dépit de vos efforts de dépannage.
-
-### Comment le Support Microsoft peut aider
-Notre rôle est de :
-
--   traiter, gérer et résoudre les problèmes des clients et leurs réaffectations ;
-
--   rassembler et valider les informations relatives aux demandes de service spécifiques ;
-
--   assurer la coordination des problèmes et la gestion de leur résolution ;
-
--   maintenir la communication avec vos administrateurs pour garantir le traitement en continu des problèmes ;
-
--   fournir de l'aide pour les demandes liées aux licences, à la facturation et aux abonnements ;
-
--   fournir de l'aide pour les demandes liées aux achats et aux évaluations ;
-
--   collecter de manière continue les commentaires des clients sur la manière d'améliorer le service par le biais d'enquêtes.
-
-### Voir aussi
-[Conseils généraux de dépannage pour Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md)
-
-[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
-
-[Résoudre les problèmes d’accès aux ressources d’entreprise avec Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
-
-[Résoudre les problèmes de déploiement d’applications dans Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
-
-[Résoudre les problèmes d’inscription d’appareils dans Intune](troubleshoot-device-enrollment-in-intune.md)
-
-[Résoudre les problèmes de stratégie dans Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
-
-[Résolution des problèmes d’installation du client dans Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
-
-[Résoudre les problèmes de mise à jour logicielle dans Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

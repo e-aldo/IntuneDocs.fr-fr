@@ -2,8 +2,8 @@
 title: "Installer l’application Portail d’entreprise Microsoft Intune | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 734e58a590b6d6eab97379c10b7999d5560be225
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 1d0116a9ac57078cb5c546619ac8f3df7594d26d
 
 
 ---
 
 
-# Installer l’application Portail d’entreprise Microsoft Intune
+# <a name="install-the-microsoft-intune-company-portal-app"></a>Installer l’application Portail d’entreprise Microsoft Intune
 
 Le portail d’entreprise est une application que vous installez sur votre appareil Android pour avoir accès aux applications, à la messagerie et au réseau de votre entreprise ou établissement scolaire.  Pour pouvoir obtenir cet accès, vous devez installer l’application Portail d’entreprise et utiliser celle-ci pour inscrire votre appareil dans Microsoft Intune. Pour plus d’informations sur les inscriptions, consultez [Que se passe-t-il si vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
@@ -44,11 +44,11 @@ Le portail d’entreprise est une application que vous installez sur votre appar
 
 Pour inscrire votre appareil dans Intune afin d’accéder à des données et des ressources de l’entreprise ou de l’établissement scolaire, consultez [Inscrire votre appareil dans Intune](enroll-your-device-in-Intune-android.md).
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

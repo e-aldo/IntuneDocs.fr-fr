@@ -2,8 +2,8 @@
 title: "Renommer votre appareil à partir du site web du portail d’entreprise | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 905d29289f621bcfd4c7faccb119adcf5ce9ef63
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a7a5faffc77d1b55bcb0216f0c87aeba2e12bda7
 
 
 ---
 
 
-# Renommer votre appareil à partir du site web du portail d’entreprise
+# <a name="rename-your-device-from-the-company-portal-website"></a>Renommer votre appareil à partir du site web du portail d’entreprise
 
 Si vous souhaiter renommer votre appareil, vous pouvez le faire à distance à partir du [site web du portail d’entreprise](http://portal.manage.microsoft.com). Le site web du portail d’entreprise est une page web que vous pouvez utiliser pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
 
@@ -36,10 +36,10 @@ Pour renommer votre appareil :
 
 3.  Dans la zone où apparaît le nom actuel de votre appareil, tapez son nouveau nom et appuyez sur le bouton **Renommer**. Votre appareil s’affiche maintenant avec le nouveau nom.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

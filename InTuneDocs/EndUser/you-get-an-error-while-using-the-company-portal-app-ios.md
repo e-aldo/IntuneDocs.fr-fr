@@ -2,8 +2,8 @@
 title: "Vous recevez une erreur lors de l’utilisation de l’application Portail d’entreprise | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: fde8d231c9638f5923826942cadf1f9bad731f55
 
 
 ---
 
 
-# Vous recevez une erreur lors de l’utilisation de l’application Portail d’entreprise
+# <a name="you-get-an-error-while-using-the-company-portal-app"></a>Vous recevez une erreur lors de l’utilisation de l’application Portail d’entreprise
 
 Si vous obtenez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil iOS, vous pouvez envoyer des informations sur l’erreur pour aider votre administrateur informatique à résoudre le problème. Vous pouvez envoyer les informations d’erreur de différentes manières :
 
@@ -32,8 +32,10 @@ Si vous obtenez une erreur pendant que vous utilisez l’application Portail d�
 
 -   Secouez votre appareil sur l’application du portail d’entreprise, puis appuyez sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** &gt; **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
 
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Nov16_HO2-->
 
 

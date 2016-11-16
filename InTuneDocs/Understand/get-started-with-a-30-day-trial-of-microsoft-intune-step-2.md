@@ -3,6 +3,7 @@ title: "Ajouter des utilisateurs à votre version d’essai de 30 jours de Intu
 description: "Cette rubrique explique comment ajouter des utilisateurs individuellement ou en bloc, lorsque vous vous inscrivez pour un essai gratuite de 30 jours d’Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 4276d0fed0fc30490a640a067d78096ff0cf78ae
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: a49e3fc392b0319d977bce8476d838172e56fe74
 
 
 ---
@@ -79,6 +80,6 @@ Félicitations ! Vous venez d’effectuer l’étape 2 de la procédure pas à
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

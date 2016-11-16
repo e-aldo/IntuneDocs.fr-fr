@@ -2,10 +2,10 @@
 title: "Comment définir le délai de verrouillage de votre appareil Android | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
 
 
 ---
 
-# Comment définir le délai de verrouillage de votre appareil Android
+# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Comment définir le délai de verrouillage de votre appareil Android
 Pour vous reconnecter à votre travail, vous devez définir le délai d’expiration du mot de passe sur votre appareil en suivant les instructions correspondant à votre type d’appareil :
 
-## Appareils natifs (ne s’applique pas aux appareils Samsung Knox)
+## <a name="native-nonsamsung-knox-device"></a>Appareils natifs (ne s’applique pas aux appareils Samsung Knox)
 
 1.  Dans **Paramètres** sur votre appareil, appuyez sur **Sécurité** &gt; **Verrouiller automatiquement** (sur certains appareils, l’option est **Verrouiller le téléphone au bout de**).
 
@@ -32,7 +32,7 @@ Pour vous reconnecter à votre travail, vous devez définir le délai d’expira
 
 2.  Sélectionnez la valeur du délai d’expiration du mot de passe.
 
-## Appareil Samsung KNOX
+## <a name="samsung-knox-device"></a>Appareil Samsung KNOX
 
 1.  Sur votre appareil, dans **Paramètres**, appuyez sur **Écran de verrouillage et sécurité ** &gt; **Verrouiller automatiquement**.
 
@@ -40,10 +40,10 @@ Pour vous reconnecter à votre travail, vous devez définir le délai d’expira
 
 2.  Sélectionnez une valeur pour le délai d’expiration de mot de passe.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

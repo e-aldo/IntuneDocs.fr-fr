@@ -14,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune
 Vous pouvez utiliser des stratégies de gestion des applications mobiles (GAM) dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise. Par exemple, vous pouvez limiter les opérations Couper, Copier et Coller au sein d’une application gérée, ou configurer une application pour ouvrir tous les liens web dans Managed Browser.
 
 Les stratégies de gestion des applications mobiles prennent en charge :
@@ -59,7 +59,7 @@ Par exemple, à l'aide de l'application Outlook :
 > [!TIP]
 > Si vous utilisez Intune avec Configuration Manager, consultez [Comment contrôler des applications à l’aide de stratégies de gestion des applications mobiles dans Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
-## Créer et déployer une application avec une stratégie de gestion des applications mobiles
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Créer et déployer une application avec une stratégie de gestion des applications mobiles
 
 -   **Étape 1** : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM.
 
@@ -71,15 +71,15 @@ Par exemple, à l'aide de l'application Outlook :
 
 -   **Étape 5 :** Surveiller le déploiement de l’application.
 
-## Étape 1 : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Étape 1 : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM
 
 À partir de l’App Store, recherchez et notez l’URL de l’application gérée par une stratégie que vous souhaitez déployer. Par exemple, l’URL de l’application Microsoft Word pour iPad est **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## Étape 2 : Publier l’application dans votre espace de stockage cloud
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>Étape 2 : Publier l’application dans votre espace de stockage cloud
 Quand vous publiez une application gérée, les procédures diffèrent selon que vous publiez une application gérée par une stratégie ou une application qui a été traitée à l'aide de l'outil de création de package de restrictions d'application Microsoft Intune pour iOS.
 
-#### Pour publier une application gérée par une stratégie
+#### <a name="to-publish-a-policy-managed-app"></a>Pour publier une application gérée par une stratégie
 
 1.  Quand vous êtes prêt à charger l’application sur votre espace de stockage cloud, suivez les instructions figurant dans [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Ajouter des applications pour des appareils mobiles dans Microsoft Intune).
 
@@ -93,7 +93,7 @@ Une fois le téléchargement terminé, **Oui** s’affiche pour **Stratégies de
 
 Une fois que vous avez vérifié que l’application a été chargée correctement, passez à l’étape 3.
 
-#### Pour publier une application qui a été traitée à l’aide de l’outil de création de package de restrictions d’application Microsoft Intune
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>Pour publier une application qui a été traitée à l’aide de l’outil de création de package de restrictions d’application Microsoft Intune
 
 1.  Quand vous êtes prêt à charger l’application sur votre espace de stockage cloud, suivez les instructions figurant dans [Ajouter des applications aux appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
@@ -105,13 +105,13 @@ Une fois le téléchargement terminé, **Oui** s’affiche pour **Stratégies de
 
 Une fois que vous avez vérifié que l’application a été chargée correctement, passez à l’étape 3.
 
-## Étape 3 : Créer une stratégie de gestion des applications mobiles
+## <a name="step-3-create-a-mobile-application-management-policy"></a>Étape 3 : Créer une stratégie de gestion des applications mobiles
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Stratégie** &gt; **Vue d’ensemble** &gt; **Ajouter une stratégie**.
 
 2.  Configurez et déployez l’une des stratégies **Logiciel** suivantes, selon le type d’appareil pour lequel vous souhaitez configurer des applications :
 
-    -   **Stratégie de gestion des applications mobiles (Android 4 et versions ultérieures)**
+    -   **Stratégie de gestion des applications mobiles (Android 4 et versions ultérieures)**
 
     -   **Stratégie de gestion des applications mobiles (iOS 8.0 et ultérieur)**
 
@@ -127,8 +127,8 @@ Une fois que vous avez vérifié que l’application a été chargée correcteme
     |**Interdire les sauvegardes Android** ou **Interdire les sauvegardes iTunes et iCloud**|Ce paramètre désactive la sauvegarde de toutes les informations à partir de l’application.|
     |**Autoriser l'application à transférer des données vers d'autres applications**|Ce paramètre spécifie les applications auxquelles cette application peut envoyer des données. Vous pouvez choisir de n’autoriser le transfert de données vers aucune application, d’autoriser le transfert seulement vers d’autres applications gérées ou d’autoriser le transfert vers toutes les applications. <br /><br />Par exemple, quand vous n'autorisez pas le transfert de données, vous limitez le transfert de données à des services comme la messagerie SMS, l'affectation d'images à des contacts et la publication sur Facebook ou Twitter.<br /><br />Pour les appareils iOS, pour empêcher le transfert de documents entre les applications gérées et non gérées, vous devez aussi configurer et déployer une stratégie de sécurité d'appareil mobile qui désactive le paramètre **Autoriser les documents gérés dans d'autres applications non gérées**. Si vous choisissez d’autoriser le transfert seulement vers d’autres applications gérées, les visionneuses d’images et de PDF Intune (si elles sont déployées) seront utilisées pour ouvrir le contenu de ces types respectifs.<br /><br />En outre, si vous affectez à cette option la valeur **Applications gérées par la stratégie** ou **Aucune**, la fonctionnalité iOS 9 qui autorise la Recherche Spotlight à rechercher des données dans les applications est bloquée.<br><br>Ce paramètre ne contrôle pas l’utilisation de la fonctionnalité « Ouvrir dans » sur les appareils mobiles. Pour gérer la fonctionnalité « Ouvrir dans », consultez [Gérer les transferts de données entre applications iOS avec Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).|
     |**Autoriser l'application à recevoir des données d'autres applications**|Ce paramètre spécifie les applications à partir desquelles cette application peut recevoir des données. Vous pouvez choisir de n’autoriser le transfert de données à partir d’aucune application, d’autoriser le transfert seulement à partir d’autres applications gérées, ou d’autoriser le transfert à partir de toutes les applications.<br /><br />Quand un utilisateur accède aux données d’une application qui n’est pas gérée par une stratégie de gestion des applications mobiles, les données sont traitées comme des données d’entreprise et sont protégées par la stratégie. Cela s’applique aux applications iOS prenant en charge plusieurs identités (où Intune applique les paramètres de gestion uniquement aux comptes d’entreprise ou aux données dans l’application). Ou cela s’applique à un appareil inscrit avec une stratégie de gestion des applications mobiles appliquée.|
-    |**Interdire « Enregistrer sous »**|Ce paramètre désactive l’utilisation de l’option **Enregistrer sous** pour enregistrer des données à des emplacements de stockage cloud personnels (comme OneDrive ou Dropbox) dans les applications utilisant cette stratégie.|
-    |**Restreindre les opérations couper, copier et coller avec d'autres applications**|Ce paramètre spécifie comment les opérations couper, copier et coller peuvent être utilisées avec l’application. Choisissez parmi :<br /><br />**Bloqué**. N’autorise pas les opérations couper, copier et coller entre cette application et d’autres applications.<br /><br />**Applications gérées par la stratégie**. Autorise les opérations Couper, Copier et Coller seulement entre cette application et les autres applications gérées.<br /><br />**Applications gérées par la stratégie avec Coller dans**. Autorise les données coupées ou copiées dans cette application à être collées seulement dans d’autres applications gérées. Autoriser le collage dans cette application de données coupées ou copiées à partir de n'importe quelle application.<br /><br />**N’importe quelle application**. Ne met aucune restriction sur les opérations couper, copier et coller vers ou à partir de cette application.<br /><br />Pour copier et coller des données entre des applications gérées, le paramètre **Applications gérées par la stratégie** ou le paramètre **Applications gérées par la stratégie avec Coller dans** doit être configuré dans les deux applications.|
+    |**Interdire « Enregistrer sous »**|Ce paramètre désactive l’utilisation de l’option **Enregistrer sous** pour enregistrer des données à des emplacements de stockage cloud personnels (comme OneDrive ou Dropbox) dans les applications utilisant cette stratégie.|
+    |**Restreindre les opérations couper, copier et coller avec d'autres applications**|Ce paramètre spécifie comment les opérations couper, copier et coller peuvent être utilisées avec l’application. Choisissez parmi :<br /><br />**Bloqué**. N’autorise pas les opérations couper, copier et coller entre cette application et d’autres applications.<br /><br />**Applications gérées par la stratégie**. Autorise les opérations Couper, Copier et Coller seulement entre cette application et les autres applications gérées.<br /><br />**Applications gérées par la stratégie avec Coller dans**. Autorise les données coupées ou copiées dans cette application à être collées seulement dans d’autres applications gérées. Autoriser le collage dans cette application de données coupées ou copiées à partir de n'importe quelle application.<br /><br />**N’importe quelle application**. Ne met aucune restriction sur les opérations couper, copier et coller vers ou à partir de cette application.<br /><br />Pour copier et coller des données entre des applications gérées, le paramètre **Applications gérées par la stratégie** ou le paramètre **Applications gérées par la stratégie avec Coller dans** doit être configuré dans les deux applications.|
     |**Demander un code confidentiel simple pour l'accès**|Ce paramètre oblige l’utilisateur à entrer un code confidentiel qu’il spécifie pour utiliser cette application. L'utilisateur sera invité à définir ce code lors de la première exécution de l'application.|
     |**Nombre de tentatives avant réinitialisation du code confidentiel**|Spécifiez le nombre de tentatives dont dispose l’utilisateur pour saisir le code confidentiel avant d’être obligé de réinitialiser le code confidentiel.|
     |**Exiger des informations d'identification d'entreprise pour l'accès**|Ce paramètre exige que l’utilisateur entre ses informations de connexion d’entreprise pour accéder à l’application.|
@@ -142,7 +142,7 @@ Une fois que vous avez vérifié que l’application a été chargée correcteme
 
 La nouvelle stratégie apparaît sous le nœud **Stratégies de configuration** de l’espace de travail **Stratégie**.
 
-## Étape 4 : Associer l’application à une stratégie de gestion des applications mobiles et la déployer
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>Étape 4 : Associer l’application à une stratégie de gestion des applications mobiles et la déployer
 Veillez à sélectionner la stratégie de gestion des applications mobiles dans la page **Gestion des applications mobiles** de la boîte de dialogue **Gérer le déploiement** pour associer la stratégie à l’application.
 
 Pour plus d’informations, consultez [Déployer des applications dans Microsoft Intune](deploy-apps.md).
@@ -150,7 +150,7 @@ Pour plus d’informations, consultez [Déployer des applications dans Microsoft
 > [!IMPORTANT]
 > Si l’appareil est désinscrit d’Intune, les stratégies ne sont pas supprimées des applications. Les applications pour lesquelles des stratégies étaient appliquées conservent les paramètres de stratégie après la désinstallation et la réinstallation de l’application.
 
-### Que faire quand une application est déjà déployée sur des appareils
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>Que faire quand une application est déjà déployée sur des appareils
 Quand vous déployez une application, il peut arriver que l’un des utilisateurs ou des appareils ciblés dispose déjà d’une version non gérée de l’application. Par exemple, l’utilisateur peut avoir installé Microsoft Word à partir de l’App Store.
 
 Dans ce cas, vous devez demander à l’utilisateur de désinstaller manuellement la version non gérée pour pouvoir installer la version gérée que vous avez configurée.
@@ -160,10 +160,10 @@ Toutefois, pour les appareils qui exécutent iOS 9 et versions ultérieures, In
 > [!TIP]
 > Si l’appareil est en mode supervisé, Intune reprend la gestion de l’application existante sans demander l’autorisation aux utilisateurs.
 
-## Étape 5 : Surveiller le déploiement de l’application
+## <a name="step-5-monitor-the-app-deployment"></a>Étape 5 : Surveiller le déploiement de l’application
 Après avoir créé et déployé une application associée à une stratégie de gestion des applications mobiles, appliquez la procédure suivante pour analyser l’application et résoudre les éventuels conflits de stratégie.
 
-#### Pour afficher l'état du déploiement
+#### <a name="to-view-the-status-of-the-deployment"></a>Pour afficher l'état du déploiement
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Groupes** &gt; **Vue d’ensemble**.
 
@@ -181,7 +181,7 @@ Après avoir créé et déployé une application associée à une stratégie de 
 
 6.  Après avoir identifié un conflit, vous pouvez modifier les paramètres de stratégie en conflit pour utiliser le même paramètre ou vous pouvez déployer une seule stratégie vers l’application et l’utilisateur.
 
-### Résolution des conflits de stratégie
+### <a name="how-policy-conflicts-are-resolved"></a>Résolution des conflits de stratégie
 En cas de conflit de stratégie de gestion des applications mobiles lors du premier déploiement vers l’utilisateur ou l’appareil, la valeur de paramètre spécifique en conflit est supprimée de la stratégie déployée vers l’application. L’application utilise une valeur de conflit intégrée.
 
 En cas de conflit de stratégie de gestion des applications mobiles lors des prochains déploiements vers l’application ou l’utilisateur, la valeur de paramètre spécifique en conflit n’est pas mise à jour sur la stratégie de gestion des applications mobiles déployée vers l’application. L’application utilise la valeur existante pour ce paramètre.
@@ -194,6 +194,6 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

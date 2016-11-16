@@ -14,8 +14,8 @@ ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f78ece8bbaf813c0082e6b764d174cf25bcb618
-ms.openlocfilehash: 89f0bc5dd10c173718f9698e6e0342b5eb8c56e8
+ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
+ms.openlocfilehash: 8c2718da6f90f18ffbaa6a977dfca7fbc9a1bb09
 
 
 ---
@@ -27,11 +27,16 @@ Pour bloquer l’accès à ces applications, nous recommandons l’opération su
 
 * Configurez des règles de revendications AD FS pour bloquer les protocoles autres que l'authentification moderne. Des instructions détaillées sont fournies dans le scénario 3 : [bloquer tout accès à O365, à l’exception des applications basées sur un navigateur](https://technet.microsoft.com/library/dn592182.aspx).
 
+>[!IMPORTANT]
+>L’accès conditionnel pour la gestion des applications mobiles ne doit pas être utilisé avec l’authentification basée sur un certificat Azure Active Directory (Azure AD). Seule l’une ou l’autre peut être configurée à la fois.
+
+
+
 ### Voir aussi
 [Autoriser uniquement les applications prises en charge par Intune à accéder aux services O365](allow-policy-managed-apps-access-to-o365.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

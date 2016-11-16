@@ -14,13 +14,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: 40c63094f37fbffa62ea0d3e5b52ef1f3988e7e1
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Paramètres de stratégie de conformité pour les appareils Windows dans Microsoft Intune
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Windows dans Microsoft Intune
 
 Les paramètres de stratégie décrits dans cette rubrique s’appliquent aux appareils exécutant le système d’exploitation Windows. La version spécifique de Windows prise en charge est indiquée dans les sections ci-dessous.
 
@@ -28,12 +28,13 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 > [!div class="op_single_selector"]
 - [Paramètres de stratégie de conformité pour les appareils iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Paramètres de stratégie de conformité pour les appareils Android](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Paramètres de stratégie de conformité pour Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
 
-## Paramètres de stratégie de conformité pour les appareils Windows Phone
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Paramètres de stratégie de conformité pour les appareils Windows Phone
 Les paramètres répertoriés dans cette section sont pris en charge par Windows Phone 8.1 et versions ultérieures.
 
-## Paramètres de sécurité système
-### Mot de passe
+## <a name="system-security-settings"></a>Paramètres de sécurité système
+### <a name="password"></a>Mot de passe
 - **Exiger un mot de passe pour déverrouiller des appareils mobiles :** définissez cette option sur **Oui** pour obliger les utilisateurs à entrer un mot de passe pour accéder à leur appareil.
 
 - **Autoriser les mots de passe simples :** définissez cette option sur **Oui** pour permettre aux utilisateurs de créer des mots de passe simples tels que « **1234** » ou « **1111** ».
@@ -59,28 +60,28 @@ Les paramètres répertoriés dans cette section sont pris en charge par Windows
 - **Empêcher la réutilisation des mots de passe précédents :** si l’option **Mémoriser l’historique des mots de passe** est sélectionnée, spécifiez le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés.
 - **Exiger un mot de passe quand l'appareil quitte un état inactif :** ce paramètre doit être utilisé conjointement avec le paramètre **Minutes d’inactivité avant demande du mot de passe**. Les utilisateurs finaux sont invités à entrer un mot de passe pour accéder à un appareil qui a été inactif pendant la durée spécifiée par le paramètre **Minutes d’inactivité avant demande du mot de passe**.
 
-  **Ce paramètre s'applique uniquement aux appareils Windows 10 Mobile.**
-### Chiffrement
+  **Ce paramètre s’applique uniquement aux appareils Windows 10 Mobile.**
+### <a name="encryption"></a>Chiffrement
 - **Exiger le chiffrement sur l’appareil mobile :** affectez la valeur **Oui** pour exiger que l’appareil soit chiffré pour pouvoir se connecter aux ressources.
 
-## Paramètres d’intégrité des appareils
+## <a name="device-health-settings"></a>Paramètres d’intégrité des appareils
 - **Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité :** vous pouvez définir une règle pour exiger que les appareils **Windows 10 Mobile** soient signalés comme étant sains dans des stratégies de conformité nouvelles ou existantes.  Si ce paramètre est activé, les points de données suivants sont évalués sur les appareils Windows 10 à l’aide du service d’attestation de l’intégrité (HAS, Health Attestation Service) :
   -  **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le Chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume de système d’exploitation Windows. BitLocker utilise le module de plateforme sécurisée pour protéger le système d’exploitation Windows et les données de l’utilisateur. Il aide à s’assurer qu’un ordinateur n’a pas été falsifié, même en cas de perte ou de vol ou s’il a été laissé sans surveillance. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
   -  **L’intégrité du code est activée :** l’intégrité du code est une fonctionnalité qui valide l’intégrité d’un fichier de pilote ou d’un fichier système chaque fois qu’il est chargé en mémoire. Elle détecte si un fichier système ou un fichier de pilote non signé est chargé dans le noyau, ou si un fichier système a été modifié par un logiciel malveillant exécuté par un compte d’utilisateur avec des privilèges d’administrateur.
   - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser l’ordinateur démarrer. Si des fichiers ont été falsifiés et que leur signature a été rompue, le système ne démarre pas.
 
   Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-##  Paramètres de propriétés d’appareils
+##  <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
 - **Système d’exploitation minimal requis :** quand un appareil ne satisfait pas la condition de version minimale du système d’exploitation, il est signalé comme non conforme.
     Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
 - **Version maximale autorisée du système d’exploitation :** quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur informatique. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 
 
-## Paramètres de stratégie de conformité pour les PC Windows
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Paramètres de stratégie de conformité pour les PC Windows
 Les paramètres répertoriés dans cette section sont pris en charge par les ordinateurs Windows.
-## Paramètres de sécurité système
-### Mot de passe
+## <a name="system-security-settings"></a>Paramètres de sécurité système
+### <a name="password"></a>Mot de passe
 - **Longueur minimale du mot de passe :** prise en charge par Windows 8.1.
 
   Spécifiez le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l'utilisateur.
@@ -113,7 +114,7 @@ Les paramètres répertoriés dans cette section sont pris en charge par les ord
 
   Si l’option **Mémoriser l’historique des mots de passe** est sélectionnée, spécifiez le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés.
 
-## Paramètres d’intégrité des appareils
+## <a name="device-health-settings"></a>Paramètres d’intégrité des appareils
 - **Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité :** pris en charge sur les appareils Windows 10.
 Vous pouvez définir une règle pour exiger que les appareils Windows 10 soient signalés comme étant sains dans des stratégies de conformité nouvelles ou existantes.  Si ce paramètre est activé, les points de données suivants sont évalués sur les appareils Windows 10 à l’aide du service d’attestation de l’intégrité (HAS, Health Attestation Service) :
   -  **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le Chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume de système d’exploitation Windows. BitLocker utilise le module de plateforme sécurisée pour protéger le système d’exploitation Windows et les données de l’utilisateur. Il aide à s’assurer qu’un ordinateur n’a pas été falsifié, même en cas de perte ou de vol ou s’il a été laissé sans surveillance. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
@@ -123,7 +124,7 @@ Vous pouvez définir une règle pour exiger que les appareils Windows 10 soient 
 
   Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
-## Paramètres de propriétés d’appareils
+## <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
 - **Système d'exploitation minimal requis :** pris en charge sur Windows 8.1 et Windows 10.
 
   Indiquez ici le numéro major.minor.build. Le numéro de version doit correspondre à la version retournée par la commande winver.
@@ -141,6 +142,6 @@ Pour trouver la version du système d'exploitation à utiliser pour les paramèt
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
