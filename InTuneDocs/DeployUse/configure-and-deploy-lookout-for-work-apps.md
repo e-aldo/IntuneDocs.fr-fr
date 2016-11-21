@@ -2,43 +2,52 @@
 title: "Déployer l’application Lookout for Work | Microsoft Intune"
 description: "Configurer et déployer l’application Lookout for Work pour Android."
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
-ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
 
 
 ---
 
-# Configurer et déployer l’application Lookout for Work
+# <a name="configure-and-deploy-lookout-for-work-apps"></a>Configurer et déployer l’application Lookout for Work
 Cet article explique comment configurer et déployer l’application Lookout for Work pour les appareils Android et iOS.
 
-## Android (application Google Play Store)
+## <a name="android-google-play-store-app"></a>Android (application Google Play Store)
 
-* **Étape 1 :**   Chargez l’application Android Lookout for Work dans la [console Administrateur Microsoft Intune](https://manage.microsoft.com) comme décrit dans la rubrique [Ajouter des applications pour les appareils mobiles dans Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune).
+* **Étape 1** : Dans la [console Administrateur Microsoft Intune](https://manage.microsoft.com), accédez à **Applications** et choisissez **Ajouter des applications**.   
+* **Étape 2** : Dans la page **Installation du logiciel** du serveur de publication, choisissez **Lien externe**, puis indiquez l’URL suivante : https://play.google.com/store/apps/details?id=com.lookout.enterprise
 >[!NOTE]
-> Ne cliquez pas sur l’option pour obtenir Managed Browser.
+>Ne cliquez pas sur l’option pour obtenir Managed Browser.
 
-![Capture d’écran de la page d’applications de la console Administrateur Intune répertoriant les applications Lookout for work](../media/mtp/lookout-app-listed-intune-console.png)
+* **Étape 3** : Dans la page **Description du logiciel**, renseignez les informations suivantes :
+  * **Serveur de publication :** Lookout Mobile Security
+  * **Nom :** Lookout for Work
+  * **Description :** Lookout offre la meilleure protection contre les menaces mobiles pour sécuriser votre appareil. Quand l’application Lookout est installée sur l’appareil, elle protège votre appareil contre les menaces et elle vous avertit (ainsi que l’administrateur de votre entreprise) des menaces détectées.
+  * **Catégorie :** Gestion de l’ordinateur
+* **Étape 4** : En cas de réussite de l’opération, le message **Le téléchargement des données s’est terminé correctement dans Microsoft Intune** s’affiche.
 
-* **Étape 2 :** Déployez l’application pour les utilisateurs. Sélectionnez l’application Lookout for Work illustrée dans l’écran ci-dessus et sélectionnez **Gérer le déploiement**.
+Dans la console Intune, quand vous cliquez sur **Applications**, vous voyez maintenant l’application Lookout for Work dans la liste. ![Capture d’écran de la page Applications dans la console Administrateur Intune montrant l’application Lookout for Work dans la liste](../media/mtp/lookout-app-listed-intune-console.png)
 
-  Vous devez sélectionner les mêmes utilisateurs que ceux qui ont été ajoutés à l’option Gestion des inscriptions dans la console Lookout.  Pour plus d’informations sur l’ajout de groupes d’utilisateurs dans Lookout, consultez l’étape 3 de la section [Configurer votre abonnement avec le service Lookout de protection des appareils contre les menaces](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp).
->[!IMPORTANT]
-> L’Assistant Déploiement d’application Intune n’a pas connaissance des groupes d’utilisateurs Azure AD et utilise les groupes d’utilisateurs Intune à la place. Vous devez donc créer un groupe d’utilisateurs Intune basé sur le groupe d’utilisateurs Azure AD qui est inscrit dans la console Lookout, comme cela est décrit dans [cette](plan-your-user-and-device-groups.md) rubrique.
+* **Étape 5** : Déployez l’application pour les utilisateurs en sélectionnant l’application Lookout for Work et en choisissant **Gérer le déploiement**.
 
-Choisissez l’option **Installation requise** pour exiger que l’application Lookout soit installée sur l’appareil de l’utilisateur.
+  Vous devez sélectionner les mêmes utilisateurs que ceux qui ont été ajoutés à l’option Gestion des inscriptions dans la console Lookout MTP.  Pour plus d’informations sur l’ajout de groupes d’utilisateurs dans Lookout MTP, consultez l’étape 3 dans la section [Configurer votre abonnement à Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp).
+  >[!IMPORTANT]
+  > L’Assistant Déploiement d’application Intune n’a pas connaissance des groupes d’utilisateurs Azure AD et utilise les groupes d’utilisateurs Intune à la place. Vous devez donc créer un groupe d’utilisateurs Intune basé sur le groupe d’utilisateurs Azure AD qui est inscrit dans la console Lookout MTP, comme cela est décrit dans [cette](plan-your-user-and-device-groups.md) rubrique.
+
+* **Étape 6** : Choisissez l’option **Installation requise** pour exiger que l’application Lookout soit installée sur l’appareil de l’utilisateur.
 
 
-## iOS (version Enterprise signée de l’application Lookout)
+## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS (version Enterprise signée de l’application Lookout)
 
 * **Étape 1 :** Vérifiez que la **gestion iOS** est configurée sur votre appareil. Pour obtenir des instructions sur la configuration de votre appareil relative à la gestion iOS, consultez [Configurer la gestion des appareils iOS et Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
@@ -73,7 +82,7 @@ Choisissez l’option **Installation requise** pour exiger que l’application L
 
 Choisissez l’option **Installation requise** pour exiger que l’application Lookout soit installée sur l’appareil de l’utilisateur.
 
-## Que se passe-t-il quand l’application déployée est ouverte sur l’appareil ?
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Que se passe-t-il quand l’application déployée est ouverte sur l’appareil ?
 
 
 
@@ -84,11 +93,11 @@ Quand l’utilisateur ouvre l’application Lookout for Work sur l’appareil, i
 
 * [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 * [Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

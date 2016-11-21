@@ -2,9 +2,8 @@
 title: Configurer la gestion des appareils Windows avec Microsoft Intune | Microsoft Intune
 description: "Activez la gestion des appareils mobiles pour les ordinateurs Windows, y compris les appareils Windows 10 avec Microsoft Intune."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
@@ -14,13 +13,13 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dfc5241376033471a232b059ac07fa4488f05514
-ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
 
 
 ---
 
-# Configurer la gestion des appareils Windows
+# <a name="set-up-windows-device-management"></a>Configurer la gestion des appareils Windows
 
 En tant qu’administrateur Intune, vous pouvez activer l’inscription et la gestion des PC Windows de deux manières :
 
@@ -29,7 +28,7 @@ En tant qu’administrateur Intune, vous pouvez activer l’inscription et la ge
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Configurer l’inscription par le biais de l’application Portail d’entreprise
+## <a name="set-up-company-portal-app-enrollment"></a>Configurer l’inscription par le biais de l’application Portail d’entreprise
 Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appareils à l’aide de l’application Portail d’entreprise Intune. Si vous créez des enregistrements de ressources CNAME DNS, les utilisateurs se connectent et s’inscrivent à Intune sans entrer un nom de serveur.
 
 1. **Configurer Intune**<br>
@@ -42,9 +41,9 @@ Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [défin
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 heure|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 heure|
 
-  `EnterpriseEnrollment-s.manage.microsoft.com` – Prend en charge une redirection vers le service Intune avec reconnaissance du domaine à partir du nom de domaine de l’adresse de messagerie.
+  `EnterpriseEnrollment-s.manage.microsoft.com` : prend en charge une redirection vers le service Intune avec reconnaissance du domaine à partir du nom de domaine de l’e-mail.
 
-  `EnterpriseRegistration.windows.net` – Prend en charge les appareils Windows 8.1 et Windows 10 Mobile qui s’inscrivent auprès d’Azure Active Directory avec leur compte professionnel ou scolaire.
+  `EnterpriseRegistration.windows.net` : prend en charge les appareils Windows 8.1 et Windows 10 Mobile qui s’inscrivent auprès d’Azure Active Directory avec leur compte professionnel ou scolaire.
 
   Si votre entreprise utilise plusieurs domaines pour les informations d’identification de l’utilisateur, créez des enregistrements CNAME pour chaque domaine.
 
@@ -54,17 +53,21 @@ Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [défin
 
   ![Boîte de dialogue Gestion des appareils Windows](../media/enroll-intune-winenr.png)
 
-4.  **Étapes facultatives**<br>L’étape **Ajouter des clés de déploiement (sideloading)** n’est pas nécessaire pour Windows 10. L’étape **Télécharger un certificat de signature de code** est uniquement nécessaire si vous voulez distribuer des applications métier non disponibles depuis le Windows Store à des appareils. [En savoir plus](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
+4.  **Étapes facultatives**<br>L’étape **Ajouter des clés de déploiement (sideloading)** n’est pas nécessaire pour Windows 10. L’étape **Télécharger un certificat de signature de code** est uniquement nécessaire si vous voulez distribuer des applications métier non disponibles depuis le Windows Store à des appareils.
 
-6.  **Informer les utilisateurs**<br>Vous devez informer vos utilisateurs sur la manière d’inscrire leurs appareils et sur les principes de gestion des appareils :
-      - [Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+6.  **Informez vos utilisateurs sur la manière d’inscrire leurs appareils et sur les principes de gestion des appareils.**
+
+    Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](../enduser/enroll-your-device-in-intune-windows.md).
+
+    Pour plus d’informations sur les tâches de l’utilisateur final, consultez les articles suivants :
+      - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Conseils destinés aux utilisateurs relatifs aux appareils Windows](../enduser/using-your-windows-device-with-intune.md)
 
-### Voir aussi
-[Conditions préalables pour l’inscription d’appareils dans Microsoft Intune](prerequisites-for-enrollment.md)
+### <a name="see-also"></a>Voir aussi
+[Prérequis pour l’inscription d’appareils dans Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

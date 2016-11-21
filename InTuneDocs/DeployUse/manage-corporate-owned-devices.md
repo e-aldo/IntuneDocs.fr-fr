@@ -1,8 +1,9 @@
 ---
 title: "Gérer les appareils d’entreprise | Microsoft Intune"
-description: "Les appareils d’entreprise peuvent être placés sous gestion de diverses façons en fonction de l’appareil, de la méthode utilisée pour son achat et des besoins de l’organisation."
+description: "Inscrivez les appareils d’entreprise de différentes façons, selon le type d’appareil, la méthode utilisée pour son achat et les besoins de l’organisation."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -13,46 +14,53 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
-ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 7577cbab528d88635e8551bf8de1ffd49becaa84
 
 
 ---
 
-# Inscrire les appareils d’entreprise avec Microsoft Intune
-Les appareils d’entreprise ou d’organisation peuvent être placés sous gestion par Intune de diverses façons en fonction de l’appareil, de la méthode utilisée pour son achat et des besoins de l’organisation. Les appareils d’entreprise peuvent également être inscrits et gérés en installant l’application Portail d’entreprise comme dans les scénarios BYOD (Bring your own device).
+# <a name="enroll-corporateowned-devices-by-using-intune"></a>Inscrire des appareils d’entreprise à l’aide d’Intune
 
-## Appareils iOS d’entreprise
-Ces méthodes d’inscription sont adaptées aux scénarios CYOD (Choisissez votre propre appareil) dans lesquels l’organisation achète les appareils pour les utilisateurs mais souhaite conserver la gestion de l’appareil. Si votre organisation a acheté des appareils iOS, vous pouvez préconfigurer l’inscription afin que l’appareil soit géré dès la première fois que l’utilisateur l’allume. Intune prend en charge l’inscription à l’aide du programme d’inscription d’appareils (DEP, Device Enrollment Program) d’Apple ou de l’outil [Apple Configurator](ios-device-enrollment-program-in-microsoft-intune.md) à exécuter sur un ordinateur Mac pour l’inscription [directe](ios-direct-enrollment-in-microsoft-intune.md) ou avec l’[Assistant de configuration](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+Vous pouvez inscrire des appareils d’entreprise ou d’organisation en vue de les gérer avec Intune de diverses façons en fonction du type d’appareil, de la méthode utilisée pour son achat et des besoins de l’organisation. Vous pouvez également installer l’application Portail d’entreprise pour inscrire et gérer les appareils d’entreprise, comme dans un scénario BYOD (« Apportez votre propre appareil »).
 
-[Inscrire des appareils iOS d'entreprise](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+## <a name="enroll-corporateowned-ios-devices"></a>Inscrire des appareils iOS d'entreprise
 
-## Gestionnaire d'inscription d'appareil
-Les organisations peuvent utiliser Intune pour gérer un grand nombre d’appareils mobiles avec un seul compte de gestionnaire des inscriptions d’appareils. Après avoir créé un compte de gestionnaire d’inscription d’appareils, ce compte peut être utilisé par un gestionnaire pour inscrire plus que les cinq appareils standards autorisés par défaut pour les utilisateurs normaux. L’inscription d’appareils avec un gestionnaire d’inscription des appareils ne fonctionne que pour les appareils qui ne sont pas utilisés par un utilisateur spécifique. Ces appareils sont adaptés aux applications utilitaires ou de point de vente, par exemple, mais ne le sont pas pour les utilisateurs qui doivent accéder à des messages électroniques ou ressources de l’entreprise.
+Les méthodes d’inscription d’appareil d’entreprise constituent un bon choix dans le cadre des scénarios CYOD (« Choisissez votre propre appareil »). Dans un environnement CYOD, l’organisation paie pour un appareil que l’utilisateur sélectionne et elle gère l’appareil.
 
-[Inscrire des appareils d’entreprise avec le gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+Si vous proposez aux utilisateurs de choisir parmi des appareils iOS, vous pouvez préconfigurer l’inscription afin que l’appareil soit géré avec Intune dès que l’utilisateur l’allume pour la première fois. Intune prend en charge l’inscription à l’aide du service [Apple DEP (Device Enrollment Program)](ios-device-enrollment-program-in-microsoft-intune.md) ou de l’outil Apple Configurator sur un ordinateur Mac pour l’inscription [directe](ios-direct-enrollment-in-microsoft-intune.md) ou avec l’[Assistant de configuration](ios-setup-assistant-enrollment-in-microsoft-intune.md).
 
-## Inscrire des ordinateurs de bureau Windows 10 d’entreprise
+Découvrez comment [inscrire des appareils iOS d’entreprise](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
-Si votre organisation dispose d’Azure Active Directory Premium (AADP) ou Enterprise Management Suite (EMS), vous pouvez [inscrire ses ordinateurs Windows 10](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Ceux-ci seront automatiquement marqués comme « appartenant à l’entreprise » lorsque les utilisateurs ajouteront leur compte professionnel ou scolaire.
+## <a name="create-a-device-enrollment-manager-account"></a>Créer un compte de gestionnaire d’inscription d’appareil
 
-## Identifier les appareils comme appartenant à l’entreprise
+Vous pouvez créer un compte de gestionnaire d’inscription d’appareil pour utilisateur unique dans Intune pour gérer un grand nombre d’appareils mobiles pour votre organisation. Après avoir créé un compte de gestionnaire d’inscription d’appareil, un gestionnaire de compte désigné peut inscrire plus d’appareils que les 15 pouvant être inscrits par un utilisateur standard.
 
-Les appareils appartenant à l’entreprise sont répertoriés dans la catégorie **Entreprise** sous **Propriété** dans les listes d’appareils. Les appareils peuvent être identifiés comme appartenant à l’entreprise comme suit :
+Vous pouvez utiliser un compte de gestionnaire d’inscription d’appareil pour inscrire uniquement des appareils qui ne sont pas utilisés par un utilisateur spécifique. Ces types d’appareils sont adaptés aux applications utilitaires ou de point de vente, par exemple, mais ne le sont pas pour les utilisateurs qui doivent accéder à des e-mails ou ressources de l’entreprise.
 
- - [Inscription avec le gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
- - Inscription auprès du [programme d’inscription d’appareils](ios-device-enrollment-program-in-microsoft-intune.md) d’Apple ou d’[Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md)
- - [Prédéclaration des appareils avec des numéros IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
- - [Inscription des appareils Windows 10 Azure Active Directory/Enterprise Management Suite](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+Découvrez comment [inscrire des appareils d’entreprise en utilisant un compte de gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
-### Numéro d’identité internationale d’équipement mobile (IMEI, International Mobile Equipment Identity)
+## <a name="enroll-corporateowned-windows-10-enterprise-devices"></a>Inscrire des appareils d’entreprise Windows 10 Entreprise
 
-Les numéros IMEI uniques sont une propriété d’appareil commune pour de nombreux fabricants d’appareils mobiles. Les administrateurs Intune peuvent importer des numéros IMEI pour les appareils appartenant à l’entreprise. Quand l’appareil est géré par Intune, il est marqué comme appareil appartenant à l’entreprise.
+Si vous utilisez Azure Active Directory Premium ou Microsoft Enterprise Mobility Suite dans votre organisation, vous pouvez [inscrire des appareils Windows 10 Entreprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Quand un utilisateur ajoute un compte professionnel ou scolaire sur un appareil, celui-ci est automatiquement marqué comme « appartenant à l’entreprise ».
 
-[Spécifier des appareils d’entreprise avec des numéros IMEI (International Mobile Equipment Identity)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+## <a name="import-imei-numbers"></a>Importer des numéros IMEI
+
+De nombreux fabricants d’appareils mobiles utilisent un numéro unique appelé IMEI sur leurs appareils. Vous pouvez importer les numéros IMEI des appareils appartenant à votre organisation. Quand l’appareil est géré par Intune, il est marqué comme appareil appartenant à l’entreprise.
+
+Découvrez comment [marquer des appareils d’entreprise en utilisant des numéros IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+
+## <a name="identify-a-device-as-corporateowned"></a>Identifier un appareil comme appartenant à l’entreprise
+
+Dans une liste d’appareils, **Propriété** a pour valeur **Entreprise**. Un appareil d’entreprise a l’une des caractéristiques suivantes :
+
+ - Il a été [inscrit à l’aide d’un compte de gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+ - Il a été inscrit à l’aide du service [Apple DEP](ios-device-enrollment-program-in-microsoft-intune.md) ou de l’outil [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+ - Son fabricant l’a [prédéclaré à l’aide de numéros IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+ - Il est inscrit dans [Azure Active Directory ou Enterprise Mobility Suite comme appareil Windows 10 Entreprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

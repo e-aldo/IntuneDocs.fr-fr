@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,25 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
 
 
 ---
 
 
-# Paramètres de stratégie de conformité pour les appareils Android dans Microsoft Intune
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Android dans Microsoft Intune
 
-Les paramètres de stratégie décrits dans cette rubrique s’appliquent aux appareils exécutant Android 4.0 et versions ultérieures ou Samsung KNOX 4.0 et versions ultérieures.
+Les paramètres de stratégie décrits dans cette rubrique s’appliquent aux appareils exécutant Android 4.0 et versions ultérieures ou Samsung KNOX Standard 4.0 et versions ultérieures.
 
 Si vous recherchez des informations sur d’autres plateformes, sélectionnez un des éléments suivants :
-> [!div class="op_single_selector"]
+> [!div class = "op_single_selector"]
+- [Paramètres de stratégie de conformité pour Android for work](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [Paramètres de stratégie de conformité pour les appareils iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Paramètres de stratégie de conformité pour les appareils Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Paramètres de sécurité système
-### Mot de passe
+## <a name="system-security-settings"></a>Paramètres de sécurité système
+### <a name="password"></a>Mot de passe
 - **Exiger un mot de passe pour déverrouiller des appareils mobiles** : définissez cette option sur **Oui** pour obliger les utilisateurs à entrer un mot de passe pour accéder à leur appareil.
 
 -  **Longueur minimale du mot de passe** : spécifie le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l’utilisateur.
@@ -55,10 +56,10 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 
 - **Exiger un mot de passe quand l’appareil quitte un état inactif** : utilisez ce paramètre conjointement avec le paramètre **Minutes d’inactivité avant demande du mot de passe**. L’utilisateur est invité à entrer un mot de passe pour accéder à un appareil qui a été inactif pendant la durée spécifiée par le paramètre **Minutes d’inactivité avant demande du mot de passe**.
 
-### Chiffrement
+### <a name="encryption"></a>Chiffrement
 - **Exiger le chiffrement sur l’appareil mobile** : affectez la valeur **Oui** pour exiger que les appareils soient chiffrés pour pouvoir se connecter aux ressources. Les appareils sont chiffrés quand vous choisissez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.
 
-## Paramètres d’intégrité et de sécurité de l’appareil
+## <a name="device-health-and-security-settings"></a>Paramètres d’intégrité et de sécurité de l’appareil
 
 - **L’appareil ne doit pas être jailbreaké ou rooté** : si vous activez ce paramètre, les appareils jailbreakés ne sont pas détectés comme conformes.
 - **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues (Android 4.0+)** : pour bloquer les appareils qui ont **Sécurité** > **Sources inconnues** activé, activez ce paramètre et définissez-le sur **Oui**.  
@@ -77,7 +78,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 
   Pour plus d’informations, consultez [Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Paramètres de propriétés d’appareils
+## <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
 - **Système d’exploitation minimal requis** : quand un appareil ne satisfait pas la condition de version minimale du système d’exploitation, il est signalé comme non conforme.
   Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
@@ -85,6 +86,6 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

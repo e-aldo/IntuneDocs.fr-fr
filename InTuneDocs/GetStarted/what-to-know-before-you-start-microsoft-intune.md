@@ -1,10 +1,11 @@
 ---
 title: "Informations à connaître avant de commencer à utiliser Microsoft Intune | Microsoft Intune"
-description: "Page contenant des liens menant vers les conditions préalables et les conditions requises pour utiliser Intune"
+description: "Liens menant vers les prérequis et les conditions requises pour utiliser Intune"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 06/08/2016
+ms.date: 11/10/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +14,15 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: cd9c0a27a9cded6049b472a0327349a9c847ea35
+ms.sourcegitcommit: 1ed86339103f165092776ec94b50c5a02d054236
+ms.openlocfilehash: 7a5ff0f021b487f4586ca3199c6db2cb0ada3930
 
 
 ---
 
-# Informations à connaître avant de commencer à utiliser Microsoft Intune
+# <a name="what-to-know-before-you-start-microsoft-intune"></a>Informations à connaître avant de commencer à utiliser Microsoft Intune
 
-Avant de commencer la configuration de Microsoft Intune, passez en revue chacune des conditions suivantes :
+Avant de commencer la configuration de Microsoft Intune, passez en revue les conditions suivantes :
 
 - [Ordinateurs et appareils mobiles pris en charge](supported-mobile-devices-and-computers.md)
 - [Navigateurs web pris en charge par Intune](supported-web-browsers.md)
@@ -37,6 +38,6 @@ Avant d’utiliser Intune, vous pouvez passer en revue les [fonctionnalités de 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
