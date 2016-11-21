@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: 9929294dd93e7bad47e6674ccafab0c036a1f89c
 
 
 ---
@@ -34,7 +34,11 @@ Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appar
 1. **Configurer Intune**<br>
 Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles (MDM)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) sur **Microsoft Intune**, puis en configurant la gestion des appareils mobiles.
 
-2. **Créer des enregistrements CNAME** (facultatif)<br>Créez des enregistrements de ressources DNS **CNAME** pour le domaine de votre entreprise pour simplifier l’inscription. Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à entrer manuellement le nom du serveur de gestion des appareils mobiles, `https://manage.microsoft.com`. Les enregistrements de ressources CNAME doivent avoir les informations suivantes :
+2. **Créer des enregistrements CNAME** (facultatif)<br>Créez des enregistrements de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com.
+
+    Si vous avez un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers manage.microsoft.com. Nous vous recommandons donc de le remplacer par un CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers enterpriseenrollment-s.manage.microsoft.com. Cette modification est recommandée, car le point de terminaison manage.microsoft.com est désapprouvé pour les inscriptions dans une version ultérieure.
+
+    Les enregistrements de ressources CNAME doivent avoir les informations suivantes :
 
   |TYPE|Nom d'hôte|Pointe vers|TTL|
   |--------|-------------|-------------|-------|
@@ -68,6 +72,6 @@ Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [défin
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
