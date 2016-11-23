@@ -2,9 +2,10 @@
 title: "Configurations personnalisées pour les profils VPN | Microsoft Intune"
 description: "Utilisez des configurations personnalisées pour créer des profils VPN dans Intune."
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,26 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
 
-# Configurations personnalisées pour les profils VPN
+# <a name="custom-configurations-for-vpn-profiles"></a>Configurations personnalisées pour les profils VPN
 
-## Créer une configuration personnalisée
-Vous pouvez utiliser des configurations personnalisées pour créer des profils VPN dans Intune. Pour créer une configuration personnalisée
+## <a name="create-a-custom-configuration"></a>Créer une configuration personnalisée
+Vous pouvez utiliser des configurations personnalisées pour créer des profils VPN dans Intune pour :
 
-   1. Dans la console d’administration Intune, **Stratégie** > **Ajouter une stratégie** > *<Expand platform>* > **Configuration personnalisée** > **Créer une stratégie**.
+* Appareils qui exécutent Android 4 et versions ultérieures
+* Appareils Android for Work
+* Appareils inscrits qui exécutent Windows 8.1 et versions ultérieures
+* Appareils qui exécutent Windows Phone 8.1 et versions ultérieures
+* Appareils qui exécutent Windows 10 Desktop et Mobile
+
+Pour créer une configuration personnalisée
+
+   1. Dans la console d’administration Intune, **Stratégie** > **Ajouter une stratégie** > *Expand platform* (Développer la plateforme) > **Configuration personnalisée** > **Créer une stratégie**.
    2. Spécifiez un nom pour la stratégie.
    3. Pour chaque paramètre d’URI, choisissez **Ajouter** et fournissez les informations demandées. Voici un exemple :
 
@@ -32,7 +41,7 @@ Vous pouvez utiliser des configurations personnalisées pour créer des profils 
 
    4.  Une fois que vous avez entré tous les paramètres d’URI, choisissez **Enregistrer la stratégie**, puis déployez la stratégie.
 
-## Déployer une stratégie de configuration
+## <a name="deploy-a-configuration-policy"></a>Déployer une stratégie de configuration
 
 1.  Dans l’espace de travail **Stratégie**, choisissez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
 
@@ -44,7 +53,7 @@ Vous pouvez utiliser des configurations personnalisées pour créer des profils 
 
 Quand vous choisissez une stratégie déployée, vous pouvez afficher d’autres informations sur le déploiement dans la partie inférieure de la liste de stratégies.
 
-##Exemple de paramètres d’URI pour une configuration de profil VPN personnalisée
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>Exemple de paramètres d’URI pour une configuration de profil VPN personnalisée
 Voici des exemples d’entrées de valeurs d’URI pour créer une configuration personnalisée d’un VPN dans une société fictive nommée Contoso. Pour plus d’informations, telles que le type de données pour chaque entrée, consultez [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 VPN Contoso natif (IKEv2) : ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +94,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 Pour toute question sur la façon dont ces paramètres doivent être utilisés, ou pour plus d’informations sur ce qu’ils font, consultez la documentation du fournisseur de services de configuration (CSP) : https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
-## Paramètres d’URI pour les VPN Android par application sur PulseSecure
-### URI PERSONNALISÉ POUR LA LISTE DES PACKAGES
+## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>Paramètres d’URI pour les VPN Android par application sur PulseSecure
+### <a name="custom-uri-for-package-list"></a>URI PERSONNALISÉ POUR LA LISTE DES PACKAGES
 -  Type de données = Chaîne
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Valeur = liste des packages séparés par des délimiteurs.
    - Délimiteurs : point-virgule (;), deux-points (:), virgule (,), barre verticale (|)
 
@@ -96,7 +105,7 @@ Exemples :
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### URI PERSONNALISÉ POUR LE MODE (FACULTATIF)
+### <a name="custom-uri-for-mode-optional"></a>URI PERSONNALISÉ POUR LE MODE (FACULTATIF)
 - Type de données = Chaîne
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
@@ -107,11 +116,11 @@ Exemples :
 > - La valeur par défaut est *WHITELIST* si un PackageList est fourni.
 
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 (Connexions VPN dans Microsoft Intune)[vpn-connections-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,8 +2,8 @@
 title: "Paramètres de la stratégie de conditions générales | Microsoft Intune"
 description: "Vous pouvez déployer les conditions générales d’Intune pour des groupes d’utilisateurs pour expliquer comment l’inscription, l’accès aux ressources de travail et l’utilisation de l’application Portail d’entreprise affectent les utilisateurs et les appareils."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70fcc08a5619892387aaf8223e9a74661d9c90f6
-ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 ---
 
-# Paramètres de la stratégie de conditions générales dans Microsoft Intune
+# <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de conditions générales dans Microsoft Intune
 Vous pouvez déployer les conditions générales d’Intune sur des groupes d’utilisateurs pour expliquer comment l’inscription, l’accès aux ressources de travail et l’application Portail d’entreprise affectent les utilisateurs et les appareils. Les utilisateurs doivent accepter les conditions générales avant de pouvoir utiliser le Portail d’entreprise pour s’inscrire et accéder à leur travail.
 
 Vous pouvez créer et déployer plusieurs stratégies contenant différentes conditions générales. Vous pouvez également produire des versions des mêmes conditions générales dans différentes langues et les déployer pour les groupes appropriés.
 
-## Créer une stratégie de conditions générales
+## <a name="create-a-terms-and-conditions-policy"></a>Créer une stratégie de conditions générales
 
 1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
@@ -47,7 +47,7 @@ Vous pouvez créer et déployer plusieurs stratégies contenant différentes con
 
 4.  Quand vous avez terminé, cliquez sur **Enregistrer**. La nouvelle stratégie s’affiche dans le nœud **Conditions générales** de l’espace de travail **Stratégie**.
 
-## Déployer une stratégie de conditions générales
+## <a name="deploy-a-terms-and-conditions-policy"></a>Déployer une stratégie de conditions générales
 
 1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
@@ -57,16 +57,16 @@ Vous pouvez créer et déployer plusieurs stratégies contenant différentes con
 
     Quand des utilisateurs ciblés accèdent au portail d'entreprise, Intune affiche les conditions générales que vous avez déployées. Les utilisateurs doivent accepter ces conditions générales avant de pouvoir accéder aux ressources de l'entreprise.
 
-## Surveiller une stratégie associée aux conditions générales
+## <a name="monitor-a-terms-and-conditions-policy"></a>Surveiller une stratégie associée aux conditions générales
 
 1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
 2.  Dans la fenêtre **Créer un rapport**, cliquez sur **Afficher le rapport**. Le rapport dresse la liste des utilisateurs qui ont accepté les conditions générales que vous avez déployées.
 
-### Mises à jour et contrôle de version pour les conditions générales
+### <a name="updates-and-version-control-for-terms-and-conditions"></a>Mises à jour et contrôle de version pour les conditions générales
 Quand vous modifiez une stratégie existante associée à des conditions générales, vous pouvez choisir le comportement qui doit se produire pendant le déploiement de la stratégie. Appliquez la procédure suivante pour vous aider à mettre à jour des stratégies de conditions générales existantes.
 
-## Utiliser plusieurs versions des conditions générales
+## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Utiliser plusieurs versions des conditions générales
 
 1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
@@ -76,11 +76,11 @@ Quand vous modifiez une stratégie existante associée à des conditions génér
 
     Nous vous recommandons d’incrémenter le numéro de version et d’exiger l’acceptation chaque fois que vous apportez des modifications majeures à votre stratégie de conditions générales. Conservez le numéro de version actuel si vous corrigez des fautes de frappe ou si vous modifiez la mise en forme, par exemple.
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

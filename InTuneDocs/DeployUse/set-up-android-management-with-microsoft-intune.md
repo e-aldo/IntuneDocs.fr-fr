@@ -1,8 +1,9 @@
 ---
 title: Configuration de la gestion Android | Microsoft Intune
-description: Activez la gestion des appareils mobiles pour les appareils Android et KNOX avec Microsoft Intune.
+description: Activez la gestion des appareils mobiles pour les appareils Android et KNOX Standard avec Microsoft Intune.
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,33 +14,34 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
-ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
 
 
 ---
 
-# Configuration de la gestion des appareils Android
-En tant qu’administrateur Intune, vous pouvez activer la gestion des appareils Android à partir du portail d’entreprise. Les utilisateurs peuvent alors inscrire leurs appareils à l’aide de l’application Portail d’entreprise disponible sur Google Play.
+# <a name="set-up-android-device-management"></a>Configuration de la gestion des appareils Android
+En tant qu’administrateur Intune, vous pouvez activer la gestion des appareils Android, notamment les appareils Samsung Knox Standard, à partir du portail d’entreprise. Les utilisateurs peuvent alors inscrire leurs appareils à l’aide de l’application Portail d’entreprise disponible sur Google Play.
 
 1.  **Configurer Intune**<br>
-    Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) sur **Microsoft Intune** et en configurant la gestion des appareils mobiles.
+    Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles](prerequisites-for-enrollment.md#set-mobile-device-management-authority) sur **Microsoft Intune** et en configurant la gestion des appareils mobiles.
 
 2.  **Inscription sur Android activée**<br>
     Aucune configuration supplémentaire dans la console Intune n’est nécessaire pour activer l’inscription d’appareils mobiles Android.
 
-3.  **Indiquer aux utilisateurs comment accéder aux ressources d’entreprise avec le portail d’entreprise**<br>
-    Vos utilisateurs doivent savoir comment inscrire leurs appareils et connaître les principes de la gestion d'appareils. [Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+3.  **Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise.**
 
-4.  Vos utilisateurs doivent savoir comment inscrire leurs appareils et connaître les principes de la gestion d'appareils.
-  - [Ce qu'il faut dire à vos utilisateurs finaux concernant l'utilisation de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-  - [Conseils destinés aux utilisateurs relatifs aux appareils Windows](../enduser/using-your-android-device-with-intune.md)
+    Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Android dans Intune](../enduser/enroll-your-device-in-intune-android.md). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
 
-### Voir aussi
-[Se préparer à inscrire des appareils dans Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+    Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
+  - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Conseils destinés aux utilisateurs relatifs aux appareils Android](../enduser/using-your-android-device-with-intune.md)
+
+### <a name="see-also"></a>Voir aussi
+[Prérequis pour l’inscription d’appareils dans Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
