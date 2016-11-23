@@ -2,9 +2,10 @@
 title: "Configurer l’infrastructure de certificat pour PFX |Microsoft Intune"
 description: "Créez et déployez des profils de certificat .PFX."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ce620e073608f6bcbfc9d698255dd75deae4be
-ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
+ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
+ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
 ---
-# Configurer l’infrastructure de certificat
+# <a name="configure-certificate-infrastructure"></a>Configurer l’infrastructure de certificat
 Cette rubrique décrit les éléments dont vous avez besoin pour créer et déployer des profils de certificat .PFX.
 
 Pour effectuer une authentification basée sur certificat dans votre organisation, vous avez besoin d’une autorité de certification d’entreprise.
@@ -30,7 +31,7 @@ Pour utiliser des profils de certificat .PFX, en plus de l’autorité de certif
 
 -  Intune Certificate Connector, qui s'exécute sur l'ordinateur qui peut communiquer avec l'autorité de certification
 
-## Description de l’infrastructure locale
+## <a name="onpremises-infrastructure-description"></a>Description de l’infrastructure locale
 
 
 -    **Domaine Active Directory** : tous les serveurs répertoriés dans cette section (à l’exception du serveur du proxy d’application web) doivent être joints à votre domaine Active Directory.
@@ -50,24 +51,24 @@ Pour utiliser des profils de certificat .PFX, en plus de l’autorité de certif
     Pour plus d’informations sur les certificats du proxy d’application web, consultez la section **Planifier des certificats** dans [Planification de publication des applications à l’aide du proxy d’application web](https://technet.microsoft.com/library/dn383650.aspx) Pour obtenir des informations générales sur les serveurs proxy d’application web, consultez [Utilisation d’un proxy d’application web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
-### Certificats et modèles
+### <a name="certificates-and-templates"></a>Certificats et modèles
 
 |Objet|Détails|
 |----------|-----------|
 |**Modèle de certificat**|Vous configurez ce modèle sur votre autorité de certification émettrice.|
-|**Certificat d'autorité de certification racine approuvée**|Vous l'exportez en tant que fichier **.cer** à partir de l'autorité de certification émettrice ou de tout appareil qui approuve l'autorité de certification émettrice, puis le déployez sur des appareils à l'aide du profil de certificat d'autorité de certification approuvée.<br /><br />Vous utilisez un seul certificat d'autorité de certification racine approuvée par plateforme de système d'exploitation et l'associez à chaque profil de certificat racine approuvé que vous créez.<br /><br />Vous pouvez utiliser des certificats d'autorité de certification racine approuvée supplémentaires chaque fois que nécessaire. Par exemple, vous pouvez agir ainsi pour fournir une relation d'approbation à une autorité de certification qui signe les certificats d'authentification du serveur pour vos points d'accès Wi-Fi.|
+|**Certificat d’autorité de certification racine approuvée**|Vous l'exportez en tant que fichier **.cer** à partir de l'autorité de certification émettrice ou de tout appareil qui approuve l'autorité de certification émettrice, puis le déployez sur des appareils à l'aide du profil de certificat d'autorité de certification approuvée.<br /><br />Vous utilisez un seul certificat d'autorité de certification racine approuvée par plateforme de système d'exploitation et l'associez à chaque profil de certificat racine approuvé que vous créez.<br /><br />Vous pouvez utiliser des certificats d'autorité de certification racine approuvée supplémentaires chaque fois que nécessaire. Par exemple, vous pouvez agir ainsi pour fournir une relation d'approbation à une autorité de certification qui signe les certificats d'authentification du serveur pour vos points d'accès Wi-Fi.|
 
 
-## Configurer votre infrastructure
+## <a name="configure-your-infrastructure"></a>Configurer votre infrastructure
 Pour pouvoir configurer des profils de certificat, vous devez d’abord effectuer les tâches suivantes. Pour effectuer ces tâches, vous devez connaître Windows Server 2012 R2 et les services de certificats Active Directory (AD CS) :
 
 - **Tâche 1** : Configurer les modèles de certificats sur l’autorité de certification.
 - **Tâche 2** : Activer, installer et configurer Intune Certificate Connector.
 
-### Tâche 1 : Configurer les modèles de certificats sur l'autorité de certification
+### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Tâche 1 : Configurer les modèles de certificats sur l'autorité de certification
 Au cours de cette tâche, vous allez publier le modèle de certificat.
 
-##### Pour configurer l'autorité de certification
+##### <a name="to-configure-the-certification-authority"></a>Pour configurer l'autorité de certification
 
 1.  Sur l’autorité de certification émettrice, utilisez le composant logiciel enfichable Modèles de certificats pour créer un modèle personnalisé ou copiez un modèle existant, puis modifiez-le (par exemple le modèle Utilisateur), pour l’utiliser avec .PFX.
 
@@ -75,7 +76,7 @@ Au cours de cette tâche, vous allez publier le modèle de certificat.
 
     -   Spécifiez un **Nom complet du modèle** convivial pour le modèle.
 
-    -   Sous l'onglet **Nom de l'objet** , sélectionnez **Fournir dans la demande**. (La sécurité est appliquée par le module de stratégie Intune pour NDES.)
+    -   Sous l'onglet **Nom de l'objet** , sélectionnez **Fournir dans la demande**. 
 
     -   Sous l'onglet **Extensions** , vérifiez que **Description des stratégies d'application** inclut **Authentification du client**.
 
@@ -103,12 +104,12 @@ Au cours de cette tâche, vous allez publier le modèle de certificat.
 
 4.  Sur l’ordinateur de l’autorité de certification, vérifiez que l’ordinateur qui héberge Intune Certificate Connector a l’autorisation Inscription qui lui permet d’accéder au modèle utilisé pour créer le profil .PFX. Définissez cette autorisation sous l'onglet **Sécurité** des propriétés de l'ordinateur d'autorité de certification.
 
-### Tâche 2 : Activer, installer et configurer Intune Certificate Connector
+### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Tâche 2 : Activer, installer et configurer Intune Certificate Connector
 Dans cette tâche, vous allez :
 
 télécharger, installer et configurer Certificate Connector.
 
-##### Pour activer la prise en charge de Certificate Connector
+##### <a name="to-enable-support-for-the-certificate-connector"></a>Pour activer la prise en charge de Certificate Connector
 
 1.  Ouvrez la [console d’administration Intune](https://manage.microsoft.com) et choisissez **Administration** &gt; **Certificate Connector**.
 
@@ -116,7 +117,7 @@ télécharger, installer et configurer Certificate Connector.
 
 3.  Sélectionnez **Activer Certificate Connector**, puis choisissez **OK**.
 
-##### Pour télécharger, installer et configurer Certificate Connector
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Pour télécharger, installer et configurer Certificate Connector
 
 1.  Ouvrez la [console d’administration Intune](https://manage.microsoft.com), puis choisissez **Administration** &gt; **Gestion des appareils mobiles** &gt; **Certificate Connector** &gt; **Télécharger Certificate Connector**.
 
@@ -141,8 +142,6 @@ télécharger, installer et configurer Certificate Connector.
 
     a. Choisissez **Connexion** et entrez vos informations d’identification d’administrateur du service Intune ou les informations d’identification d’un administrateur client doté de l’autorisation d’administration globale.
 
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
     b. Sélectionnez l’onglet **Avancé** , puis fournissez les informations d’identification d’un compte qui possède l’autorisation **Émettre et gérer des certificats** sur votre autorité de certification émettrice.
 
     c. Choisissez **Appliquer**.
@@ -151,15 +150,12 @@ télécharger, installer et configurer Certificate Connector.
 
 6.  Ouvrez une invite de commandes et tapez **services.msc**. Appuyez ensuite sur **Entrée**, cliquez avec le bouton droit sur **Service du connecteur Intune**, puis choisissez **Redémarrer**.
 
-Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL suivante, ce qui doit retourner une erreur **403** :
 
-**http:// &lt;nom_de_domaine_complet_de_votre_serveur_NDES&gt;/certsrv/mscep/mscep.dll**
-
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configurer les profils de certificat](Configure-Intune-certificate-profiles.md).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

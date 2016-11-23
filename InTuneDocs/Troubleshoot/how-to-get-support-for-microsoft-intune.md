@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 10/31/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d332e46b27bea274a38355dfb01806160b1041ee
-ms.openlocfilehash: 44069a34c1c9c2fb05f2b250188fe45a7d419911
+ms.sourcegitcommit: 2c50c38843521dfc2c9df48305e619803f32b1e9
+ms.openlocfilehash: 8b0591195b58f5fa331d213cfe03a38aa5ffafdd
 
 
 ---
@@ -36,11 +36,12 @@ Le support pour Intune et pour Intune quand il est utilisé avec Configuration M
 2.  Cliquez sur la vignette Administration.
 3.  Sur la gauche, en dessous de **Support**, choisissez **Support** pour ouvrir le ticket. Vous verrez probablement ceci :
 
-    ![Ouvrir un nouveau ticket de support Intune](../media/suport-open-ticket.png)
+    ![Ouvrir un nouveau ticket de support Intune](../media/support-open-ticket.png)
 
     >[!NOTE]
     >
     >  Les clients qui ont ou ont eu un compte O365 avec 100 licences ou moins voient ceci, et doivent se référer à [Méthode alternative pour ouvrir un ticket de support](#alternate-method-to-open-a-support-ticket).
+    >  
     > ![Support alternatif d’Intune](../media/alternate-support-ui.png)
 
     -   Pour les problèmes de facturation, de licences et de compte, sélectionnez **Informations de facturation et de produit**.
@@ -114,6 +115,6 @@ Si vous avez déjà acheté des licences auprès de Microsoft dans le cadre d'un
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
