@@ -4,6 +4,7 @@ description:
 keywords: 
 author: Msmbaldwin
 manager: jeffgilb
+ms.author: oydang
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8bc2f6e8dcf9d0ac3e7fccec792c86ff1fd4131c
-ms.openlocfilehash: 15be877edbdeb827a4318af226ea8cde8c8e46f4
+ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
+ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
 
 
 ---
@@ -82,10 +83,18 @@ Pour intégrer le SDK d’application Intune à votre application Android native
 
 * **[Guide du Kit de développement logiciel (SDK) d’applications Intune pour les développeurs Android](intune-app-sdk-android.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application mobile Android avec le SDK d’application Intune.
 
-Vous trouverez la documentation pour le composant Xamarin du SDK d’application Intune et pour le plug-in Cordova du SDK d’application Intune dans leurs référentiels GitHub respectifs.
+Pour générer des applications Cordova avec le plug-in Cordova du SDK d’application Intune, vous avez besoin des éléments suivants :
+
+* **[Guide du plug-in Cordova du SDK d’application Intune](intune-app-sdk-cordova)** : ce document vous aide à générer des applications iOS et Android avec Cordova pour la gestion des applications mobiles Intune.
+
+Pour générer des applications Xamarin avec le composant Xamarin du SDK d’application Intune, vous avez besoin des éléments suivants :
+
+* **[Guide du composant Xamarin du SDK d’application Intune](intune-app-sdk-xamarin)** : ce document vous aide à générer des applications iOS et Android avec Cordova pour la gestion des applications mobiles Intune.
 
 
-## <a name="set-up-telemetry-for-your-app"></a>Configuration de la télémétrie pour votre application
+
+
+## <a name="configure-telemetry-for-your-app"></a>Configurer la télémétrie pour votre application
 
 Microsoft Intune collecte des données sur les statistiques d’utilisation pour votre application.
 
@@ -95,7 +104,7 @@ Microsoft Intune collecte des données sur les statistiques d’utilisation pour
 
 * **SDK d’application Intune pour Android** : les données de télémétrie ne sont pas enregistrées via le SDK.
 
-## <a name="test-your-mamenabled-app-with-microsoft-intune"></a>Tester votre application compatible avec la gestion des applications mobiles avec Microsoft Intune
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>Tester votre application compatible avec la gestion des applications mobiles avec Microsoft Intune
 
 Après avoir terminé les étapes nécessaires pour intégrer votre application iOS ou Android au SDK d’application Intune, vous devez vérifier que toutes les stratégies de gestion d’application sont activées et opérationnelles pour l’utilisateur final et l’administrateur informatique. Pour tester votre application intégrée, vous avez besoin des éléments suivants :
 
