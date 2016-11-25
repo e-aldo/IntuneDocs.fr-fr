@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
-ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
+ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
+ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
 
 
 ---
 
-# Restreindre l’accès à la messagerie Exchange Online et Exchange Online Dedicated (nouvel environnement) avec Intune
+# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Restreindre l’accès à la messagerie Exchange Online et Exchange Online Dedicated (nouvel environnement) avec Intune
 
 Si vous disposez d’un environnement Exchange Online Dedicated et que vous ne savez pas s’il s’agit de la nouvelle configuration ou d’une configuration héritée, contactez votre responsable de compte.
 
@@ -62,12 +62,14 @@ Le diagramme ci-dessous illustre le flux utilisé par les stratégies d’accès
 
 ![Diagramme illustrant les points de décision qui déterminent si l’accès est autorisé ou non à l’appareil](../media/ConditionalAccess8-1.png)
 
-## Prise en charge des appareils mobiles
+## <a name="support-for-mobile-devices"></a>Prise en charge des appareils mobiles
 Vous pouvez restreindre l’accès à la messagerie Exchange Online à partir d’**Outlook** et d’autres **applications qui utilisent l’authentification moderne** :
 
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures et Android for Work
 - iOS 8.0 et versions ultérieures
 - Windows Phone 8.1 et versions ultérieures
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 L’**authentification moderne** permet aux clients Microsoft Office de bénéficier de la connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library).
 
@@ -75,15 +77,15 @@ L’**authentification moderne** permet aux clients Microsoft Office de bénéfi
 Cet [article](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) contient plus d’informations sur le fonctionnement de l’authentification moderne.
 Configurez des règles de revendications AD FS pour bloquer les protocoles autres que l'authentification moderne. Des instructions détaillées sont fournies dans le scénario 3 : [bloquer tout accès à O365, à l’exception des applications basées sur un navigateur](https://technet.microsoft.com/library/dn592182.aspx).
 
-Vous pouvez restreindre l’accès à **Outlook Web Access (OWA)** sur Exchange Online depuis un navigateur sur les appareils **iOS** et **Android**.  L’accès ne sera autorisé qu’à partir des navigateurs pris en charge sur les appareils compatibles :
+Vous pouvez restreindre l’accès à **Outlook Web Access (OWA)** sur Exchange Online depuis un navigateur sur les appareils **iOS** et **Android**.  L’accès sera autorisé uniquement à partir des navigateurs pris en charge sur les appareils compatibles :
 
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS et Android)
+* Managed Browser (iOS et Android versions 5.0 et ultérieures)
 
 **Les navigateurs non pris en charge seront bloqués**.
 
-**L’application OWA pour iOS et Android peut être modifiée pour ne pas utiliser l’authentification moderne et n’est pas prise en charge.  L’accès à partir de l’application OWA doit être bloqué via des règles de revendication AD FS.**
+**L’application OWA pour iOS et Android peut être modifiée pour ne pas utiliser l’authentification moderne et n’est pas prise en charge.  L’accès à partir de l’application OWA doit être bloqué par le biais de règles de revendication AD FS.**
 
 
 Vous pouvez restreindre l’accès à la messagerie Exchange à partir du **client de messagerie Exchange ActiveSync** intégré sur les plateformes suivantes :
@@ -94,7 +96,7 @@ Vous pouvez restreindre l’accès à la messagerie Exchange à partir du **clie
 
 - Windows Phone 8.1 et versions ultérieures
 
-## Prise en charge des PC
+## <a name="support-for-pcs"></a>Prise en charge des PC
 
 Vous pouvez configurer l'accès conditionnel pour les PC qui exécutent des applications de bureau Office pour accéder à **Exchange Online** et **SharePoint Online** pour les PC qui répondent aux exigences suivantes :
 
@@ -118,15 +120,15 @@ Vous pouvez configurer l'accès conditionnel pour les PC qui exécutent des appl
 
 -   Configurez des règles de revendications AD FS pour bloquer les protocoles autres que l’authentification moderne. Des instructions détaillées sont fournies dans le scénario 3 : [bloquer tout accès à O365, à l’exception des applications basées sur un navigateur](https://technet.microsoft.com/library/dn592182.aspx).
 
-## Configurer l’accès conditionnel
-### Étape 1 : Configurer et déployer une stratégie de conformité
+## <a name="configure-conditional-access"></a>Configurer l’accès conditionnel
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>Étape 1 : Configurer et déployer une stratégie de conformité
 Assurez-vous de [créer](create-a-device-compliance-policy-in-microsoft-intune.md) et de [déployer](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) une stratégie de conformité pour les groupes d’utilisateurs qui recevront également la stratégie d’accès conditionnel.
 
 
 > [!IMPORTANT]
 > Si vous n’avez pas déployé de stratégie de conformité, les appareils seront considérés comme conformes et seront autorisés à accéder à Exchange.
 
-### Étape 2 : Évaluer l’impact de la stratégie d’accès conditionnel
+### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Étape 2 : Évaluer l’impact de la stratégie d’accès conditionnel
 Vous pouvez utiliser les **Rapports d’inventaire des appareils mobiles** pour identifier les appareils qui sont susceptibles de ne pas pouvoir accéder à Exchange quand vous aurez configuré la stratégie d’accès conditionnel.
 
 Pour ce faire, configurez une connexion entre [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et Exchange avec le [connecteur de service à service Microsoft Intune](intune-service-to-service-exchange-connector.md).
@@ -161,7 +163,7 @@ Les appareils qui font partie d'un groupe ciblé verront leur accès à Exchange
 ----------------------
 Vous pouvez exporter le contenu du rapport et utiliser la colonne **Adresse de messagerie** pour informer les utilisateurs qu’ils ne pourront pas accéder à la messagerie.
 
-### Étape 3 : Configurer des groupes d’utilisateurs pour la stratégie d’accès conditionnel
+### <a name="step-3-configure-user-groups-for-the-conditional-access-policy"></a>Étape 3 : Configurer des groupes d’utilisateurs pour la stratégie d’accès conditionnel
 Les stratégies d’accès conditionnel ciblent différents groupes de sécurité Azure Active Directory. Vous pouvez également exclure certains groupes d’utilisateurs de cette stratégie.  Quand un utilisateur est ciblé par une stratégie, chaque appareil qu'il utilise doit être conforme à cette stratégie pour qu'il puisse accéder à la messagerie.
 
 Vous pouvez configurer ces groupes dans le **Centre d'administration Office 365**ou dans le **Portail de compte Intune**.
@@ -176,14 +178,14 @@ Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégi
 
 Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel sont évalués.
 
-### Étape 4 : Configurer la stratégie d’accès conditionnel
+### <a name="step-4-configure-the-conditional-access-policy"></a>Étape 4 : Configurer la stratégie d’accès conditionnel
 
 >[!NOTE]
 > Vous pouvez également créer une stratégie d’accès conditionnel dans la console de gestion Azure AD. La console de gestion Azure AD permet de créer des stratégies d’accès conditionnel d’appareils Intune (appelées **stratégies d’accès conditionnel en fonction de l’appareil** dans Azure AD) en plus des autres stratégies d’accès conditionnel, comme l’authentification multifacteur.  Vous pouvez également définir des stratégies d’accès conditionnel pour les applications d’entreprise tierces, comme Salesforce et Box, prises en charge par Azure AD. Pour plus d’informations, consultez [Comment définir la stratégie d’accès conditionnel en fonction de l’appareil Azure Active Directory pour contrôler l’accès aux applications connectées Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie Exchange Online**.
-![Capture d’écran de la page de stratégie d’accès conditionnel Exchange Online](../media/mdm-ca-exo-policy-configuration.png)
+
 
 2.  Dans la page **Stratégie Exchange Online** , sélectionnez **Activer la stratégie d'accès conditionnel pour Exchange Online**.
 
@@ -202,23 +204,23 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
         *   Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
         * Plateformes non prises en charge comme Mac OS.  Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
 
-    -   **des plateformes spécifiques**
+    -   **Plateformes spécifiques**
 
          La stratégie d’accès conditionnel s’applique à toutes les applications clientes qui utilisent l’**authentification moderne** sur les plateformes d’appareils que vous spécifiez.
 
-4. Sous **Outlook Web Access (OWA)**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs est bloqué. Les restrictions de plateforme que vous avez sélectionnées pour Accès aux applications pour Outlook s’appliquent également ici.
+4. Sous **Outlook Web Access (OWA)**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs sera bloqué. Les mêmes restrictions de plateforme que celles que vous avez sélectionnées pour l’accès aux applications pour Outlook s’appliquent également ici.
 
-  Sur les appareils **Android**, les utilisateurs doivent activer l’accès au navigateur.  Pour ce faire, l’utilisateur final doit activer l’option « Activer l’accès du navigateur » sur l’appareil inscrit comme suit :
-  1.    Lancer l’**application Portail d’entreprise**.
-  2.    Accéder à la page **Paramètres** à partir des trois points (...) ou du bouton de menu matériel.
-  3.    Appuyer sur le bouton **Activer l’accès du navigateur**.
-  4.    Dans le navigateur Chrome, se déconnecter d’Office 365 et redémarrer Chrome.
+  Sur les appareils **Android** , les utilisateurs doivent activer l’accès du navigateur.  Pour cela, l’utilisateur final doit activer l’option « Activer l’accès du navigateur » sur l’appareil inscrit comme suit :
+  1.    Lancez **l’application Portail d’entreprise**.
+  2.    Accédez à la page **Paramètres** à partir des trois points (...) ou du bouton de menu matériel.
+  3.    Appuyez sur le bouton **Activer l’accès du navigateur** .
+  4.    Dans le navigateur Chrome, déconnectez-vous d’Office 365 et redémarrez Chrome.
 
-  Sur les plateformes **iOS et Android**, pour identifier l’appareil qui est utilisé pour accéder au service, Azure Active Directory émet un certificat TLS (Transport Layer Security) à destination de l’appareil.  L’appareil affiche le certificat avec une invite demandant à l’utilisateur final de sélectionner le certificat, comme indiqué dans les captures d’écran ci-dessous. L’utilisateur final doit sélectionner ce certificat pour continuer à utiliser le navigateur.
+  Sur les plateformes **iOS et Android** , pour identifier l’appareil utilisé pour accéder au service, Azure Active Directory émet un certificat TLS (Transport Layer Security) pour l’appareil.  L’appareil affiche le certificat et invite l’utilisateur final à le sélectionner, comme indiqué dans les captures d’écran ci-dessous. L’utilisateur final doit sélectionner ce certificat pour pouvoir continuer à utiliser le navigateur.
 
   **iOS**
 
-  ![Capture d’écran de l’invite de certificat sur un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![capture d’écran de l’invite de certificat sur un ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -227,7 +229,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 5.  Sous **Applications Exchange ActiveSync**, vous pouvez choisir d’empêcher les appareils non conformes d’accéder à Exchange Online. Vous pouvez également choisir d’autoriser ou de bloquer l’accès à la messagerie lorsque l’appareil ne fonctionne pas sur une plateforme prise en charge. Les plateformes prises en charge sont Android, iOS, Windows et Windows Phone.
 
  Appareils **Android for Work** pour applications Exchange Active Sync :
- -  Seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne sur les appareils Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer celle-ci comme installation **obligatoire**. 
+ -  Seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne sur les appareils Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer celle-ci comme installation **obligatoire**.
 
 6.  Sous **Groupes ciblés**, sélectionnez les groupes de sécurité Active Directory auxquels la stratégie sera appliquée. Vous pouvez choisir de cibler tous les utilisateurs ou une liste sélectionnée de groupes d’utilisateurs.
 ![Capture d’écran de la page de stratégie d’accès conditionnel à Exchange Online montrant les options Groupe ciblé et Groupe exempté](../media/IntuneSA5eTargetedExemptedGroups.PNG)
@@ -253,20 +255,20 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 
 **Pour obtenir des exemples de scénarios décrivant comment configurer la stratégie d’accès conditionnel pour restreindre l’accès des appareils, consultez des [exemples de scénarios de restriction de l’accès à la messagerie](restrict-email-access-example-scenarios.md).**
 
-## analyser la conformité et les stratégies d'accès conditionnel
+## <a name="monitor-the-compliance-and-conditional-access-policies"></a>analyser la conformité et les stratégies d'accès conditionnel
 
-#### Pour afficher les appareils avec accès bloqué à Exchange
+#### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Pour afficher les appareils avec accès bloqué à Exchange
 
 Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], choisissez la vignette **Appareils avec accès bloqué à Exchange** pour afficher le nombre d’appareils bloqués et des liens vers des informations supplémentaires.
 ![Capture d’écran du tableau de bord Intune indiquant le nombre d’appareils dont l’accès à Exchange est bloqué](../media/IntuneSA6BlockedDevices.PNG)
 
-## Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 [Restreindre l’accès à SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Restreindre l’accès à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
