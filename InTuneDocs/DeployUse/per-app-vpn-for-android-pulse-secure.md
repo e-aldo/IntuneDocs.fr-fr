@@ -2,9 +2,10 @@
 title: "VPN par application pour Android à l’aide de Pulse Secure | Microsoft Intune"
 description: "Vous pouvez créer un profil VPN par application pour les appareils Android gérés par Intune."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +14,35 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
-ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
 
 
 ---
 
-# Utiliser une stratégie personnalisée pour créer un profil VPN par application pour les appareils Android
+# <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utiliser une stratégie personnalisée pour créer un profil VPN par application pour les appareils Android
 
-Vous pouvez créer un profil VPN par application pour les appareils Android 5.0 et ultérieur gérés par Intune. Tout d’abord, créez un profil VPN qui utilise le type de connexion Pulse Secure. Ensuite, créez une stratégie de configuration personnalisée qui associe le profil VPN à des applications spécifiques. 
+Vous pouvez créer un profil VPN par application pour les appareils Android 5.0 et ultérieur gérés par Intune. Tout d’abord, créez un profil VPN qui utilise le type de connexion Pulse Secure ou Citrix. Ensuite, créez une stratégie de configuration personnalisée qui associe le profil VPN à des applications spécifiques. 
 
-Une fois que vous avez déployé la stratégie sur votre appareil Android ou vos groupes d’utilisateurs, les utilisateurs doivent démarrer le VPN PulseSecure. PulseSecure autorise alors uniquement le trafic provenant des applications spécifiées à utiliser la connexion VPN ouverte.
+Une fois que vous avez déployé la stratégie sur votre appareil Android ou vos groupes d’utilisateurs, les utilisateurs doivent démarrer le VPN Pulse Secure ou Citrix. La connexion autorise alors uniquement le trafic provenant des applications spécifiées à utiliser la connexion VPN ouverte.
 
 > [!NOTE]
 >
 > Seul le type de connexion sécurisé Pulse Secure est pris en charge pour ce profil.
 
 
-### Étape 1 : Créer un profil VPN
+### <a name="step-1-create-a-vpn-profile"></a>Étape 1 : Créer un profil VPN
 
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Ajouter une stratégie**.
 2. Pour sélectionner un modèle pour la nouvelle stratégie, développez **Android**, puis choisissez **Profil VPN (Android 4 et versions ultérieures)**.
-3. Dans le modèle, pour **Type de connexion**, choisissez **Pulse Secure**.
+3. Dans le modèle, pour **Type de connexion**, choisissez **Pulse Secure** ou **Citrix**.
 4. Terminez et enregistrez le profil VPN. Pour plus d’informations sur les profils VPN, consultez [Connexions VPN](../deploy-use/vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
 >
 > Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante. Par exemple, MonProfilVpnApp.
 
-### Étape 2 : Créer une stratégie de configuration personnalisée
+### <a name="step-2-create-a-custom-configuration-policy"></a>Étape 2 : Créer une stratégie de configuration personnalisée
 
    1. Dans la console d’administration Intune, choisissez **Stratégie** > **Ajouter une stratégie** > **Android** > **Configuration personnalisée** > **Créer une stratégie**.
    2. Entrez un nom pour la stratégie.
@@ -53,7 +54,7 @@ Une fois que vous avez déployé la stratégie sur votre appareil Android ou vos
 
 ![Exemple de stratégie personnalisée de VPN par application Android](./media/android_per_app_vpn_oma_uri.png)
 
-#### Définir votre liste d’applications comme liste rouge ou liste verte (facultatif)
+#### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Définir votre liste d’applications comme liste rouge ou liste verte (facultatif)
   Vous pouvez spécifier une liste d’applications qui *ne peuvent pas* utiliser la connexion VPN en utilisant une valeur **BLACKLIST**. Toutes les autres applications se connecteront par le biais du VPN.
 Vous pouvez également utiliser la valeur **WHITELIST** pour spécifier une liste d’applications qui *peuvent* utiliser la connexion VPN. Les applications qui ne figurent pas dans la liste ne se connecteront pas par le biais du VPN.
   1.    Sous **Paramètres OMA-URI**, choisissez **Ajouter**.
@@ -64,7 +65,7 @@ Vous pouvez également utiliser la valeur **WHITELIST** pour spécifier une list
 
 
 
-### Étape 3 : Déployer les deux stratégies
+### <a name="step-3-deploy-both-policies"></a>Étape 3 : Déployer les deux stratégies
 
 Vous devez déployer *les deux* stratégies sur les *mêmes* groupes Intune.
 
@@ -77,6 +78,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -14,32 +14,32 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
-ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
+ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
+ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Réinitialiser les données d’applications d’entreprise managées avec Microsoft Intune
-Lorsqu'un appareil est perdu ou volé, ou si l'employé quitte votre entreprise, vous devez vous assurer que les données de l'application d’entreprise sont supprimées de l'appareil. Toutefois, vous ne devez pas supprimer les données personnelles de l'appareil, en particulier si cet appareil appartient à un employé.
+Lorsqu'un appareil est perdu ou volé, ou si l'employé quitte votre entreprise, vous devez vous assurer que les données de l'application d’entreprise sont supprimées de l'appareil. Mais vous ne voulez peut-être pas supprimer les données personnelles de l’appareil, en particulier si cet appareil appartient à un employé.
 
-Pour supprimer de façon sélective les données de l'application d’entreprise, créez une demande de réinitialisation à l'aide de la procédure décrite à la section **Créer une demande de réinitialisation** de cette rubrique.  Une fois la demande remplie, les données d’entreprise sont supprimées de l’application lors de sa prochaine exécution sur l’appareil.
+Pour supprimer des données d’application d’entreprise de manière sélective, créez une demande de réinitialisation en suivant les étapes indiquées dans cette rubrique. Une fois la demande terminée, les données d’entreprise sont supprimées de l’application dès sa prochaine exécution sur l’appareil.
 >[!NOTE]
-> Les contacts synchronisés directement depuis l’application vers le carnet d’adresses natif sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, ceci s’applique uniquement à l’application Microsoft Outlook.
+> Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, ceci s’applique uniquement à l’application Microsoft Outlook.
 
 
 
 ## <a name="create-a-wipe-request"></a>Créer une demande de réinitialisation
 
-1.  Dans le panneau **Gestion des applications mobiles Intune** , choisissez la vignette **Demandes de réinitialisation** .
+1.  Dans le panneau **Gestion des applications mobiles Intune**, choisissez la vignette **Demandes de réinitialisation**.
 
-    ![Capture d’écran du panneau Gestion des applications mobiles Intune avec vignette Résumé](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+    ![Capture d’écran du panneau Gestion des applications mobiles Intune avec vignettes Résumé](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Choisissez **Nouvelles demandes de réinitialisation**.
+2.  Choisissez **Nouvelles demandes de réinitialisation**. Le panneau **Nouvelle demande de réinitialisation** s’ouvre.
 
     ![Capture d'écran du panneau Nouvelle demande de réinitialisation](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
-3.  Dans le panneau **Nouvelle demande de réinitialisation**, choisissez **Utilisateur** pour ouvrir le panneau **Utilisateur** et sélectionnez l’utilisateur possédant les données des applications à réinitialiser.
+3.  Choisissez **Utilisateur** pour ouvrir le panneau **Utilisateur** et sélectionnez l’utilisateur possédant les données des applications à réinitialiser.
 
 4.  Choisissez **Appareil**.  Cette opération ouvre le panneau **Appareil** qui répertorie tous les appareils associés à l’utilisateur sélectionné.  Sélectionnez l’appareil à réinitialiser.
 
@@ -49,11 +49,11 @@ Pour supprimer de façon sélective les données de l'application d’entreprise
 ![Capture d'écran de la mosaïque de demande de réinitialisation ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## <a name="monitor-your-wipe-requests"></a>Analyser vos demandes de réinitialisation
-La vignette **Demande de réinitialisation** du panneau **Gestion des applications mobiles Intune** propose un rapport de synthèse.  Ce dernier indique l’état général des demandes de réinitialisation, notamment le nombre de demandes en attente et d’échecs. Vous pouvez obtenir plus de détails en suivant les étapes décrites ci-dessous :
+La vignette **Demande de réinitialisation** du panneau **Gestion des applications mobiles Intune** propose un rapport de synthèse.  Ce dernier indique l’état général des demandes de réinitialisation, notamment le nombre de demandes en attente et d’échecs. Vous pouvez obtenir d’autres détails en procédant comme suit :
 
-1.  Dans le panneau **Gestion des applications mobiles Intune**, choisissez la vignette **Demande de réinitialisation** pour ouvrir le panneau **Demande de réinitialisation** .
+1.  Dans le panneau **Gestion des applications mobiles Intune**, choisissez la vignette **Demande de réinitialisation** pour ouvrir le panneau **Demande de réinitialisation**.
 
-2.  Le panneau **Demande de réinitialisation** affiche la liste de vos demandes regroupées par utilisateurs.  Étant donné que le système crée une demande de réinitialisation pour chaque application protégée en cours d’exécution sur l’appareil, vous pouvez voir plusieurs demandes pour un même utilisateur.  L’état de la demande de réinitialisation est indiquée : **en attente**, **échec**ou **réussite**.
+2.  Le panneau **Demande de réinitialisation** affiche la liste de vos demandes regroupées par utilisateurs. Étant donné que le système crée une demande de réinitialisation pour chaque application protégée en cours d’exécution sur l’appareil, vous pouvez voir plusieurs demandes pour un même utilisateur. L’état de la demande de réinitialisation est indiquée : **en attente**, **échec**ou **réussite**.
 
 L’utilisateur doit ouvrir l’application pour que la réinitialisation se produise. Cette opération peut prendre jusqu’à 30 minutes après l’envoi de la demande. 
 
@@ -66,6 +66,6 @@ Les réinitialisations en attente sont affichées jusqu’à ce que vous les sup
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

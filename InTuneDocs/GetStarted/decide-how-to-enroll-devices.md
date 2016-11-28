@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 02aed5f84340f7d64681e27f1e4312f7f927a6c1
 
 
 ---
 
-# Choisir comment inscrire des appareils mobiles
+# <a name="choose-how-to-enroll-mobile-devices"></a>Choisir comment inscrire des appareils mobiles
 
 L’inscription des appareils mobiles est le processus qui permet de gérer les smartphones, les tablettes et les ordinateurs portables dans Microsoft Intune. En tant qu’administrateur, vous devez déterminer la meilleure façon d’inscrire les appareils en fonction des éléments suivants :
 
@@ -29,7 +29,7 @@ L’inscription des appareils mobiles est le processus qui permet de gérer les 
 
 Vos réponses aux questions suivantes vous permettront de déterminer la méthode d’inscription qui convient le mieux pour les appareils que vous gérez.
 
-## **Les employés apportent-ils leurs propres appareils ou ceux-ci sont-ils fournis par l’entreprise ?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**Les employés apportent-ils leurs propres appareils ou ceux-ci sont-ils fournis par l’entreprise ?**
 
   - **Appareils personnels** : inscription de type « BYOD » (Apportez votre propre appareil). Les utilisateurs peuvent installer sur leur appareil l’application Portail d’entreprise Intune, puis inscrire leur appareil pour pouvoir accéder aux ressources d’entreprise telles que la messagerie, les applications d’entreprise, les données d’entreprise et le support.  
 
@@ -38,12 +38,12 @@ Vos réponses aux questions suivantes vous permettront de déterminer la méthod
 > [!div class="button"]
 [Inscription BYOD >](#what-byod-devices-can-your-users-enroll)   [Inscription d’un appareil d’entreprise >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **Quels sont les appareils BYOD que vos utilisateurs peuvent inscrire ?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**Quels sont les appareils BYOD que vos utilisateurs peuvent inscrire ?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS et Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile et Windows Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [PC Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **Vos appareils d’entreprise sont-ils partagés ou dédiés ?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**Vos appareils d’entreprise sont-ils partagés ou dédiés ?**
 
 - **Partage des appareils d’entreprise** : ces appareils n’ont pas d’utilisateur attitré et ne sont généralement pas configurés pour accéder à la messagerie. Il peut s’agir d’appareils de type bornes ou autres appareils à visée utilitaire que les utilisateurs empruntent, puis rendent quand ils ont terminé. Les méthodes d’inscription recommandées dépendent de la plateforme de l’appareil.
 
@@ -53,12 +53,12 @@ Vos réponses aux questions suivantes vous permettront de déterminer la méthod
 [Partagé >](#what-operating-system-are-your-shared-devices-running)   [Dédié >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **Quels systèmes d’exploitation sont exécutés sur vos appareils partagés ?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**Quels systèmes d’exploitation sont exécutés sur vos appareils partagés ?**
 
   > [!div class="button"]
   [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **Comment allez-vous gérer vos appareils iOS partagés ?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**Comment allez-vous gérer vos appareils iOS partagés ?**
 
 - **Programme d’inscription des appareils (DEP) d’Apple** : les appareils iOS achetés ou gérés à l’aide du programme d’inscription des appareils peuvent être ciblés avec un profil d’inscription. Quand les utilisateurs allument leur appareil pour la première fois, celui-ci télécharge le profil DEP et s’inscrit avec ce profil.
 
@@ -69,7 +69,7 @@ Vos réponses aux questions suivantes vous permettront de déterminer la méthod
   > [!div class="button"]
   [Inscription DEP iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Inscription directe iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Inscription à l’aide du logiciel de gestion d’inscription d’appareil >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
-## **Comment allez-vous gérer les appareils iOS dédiés ?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**Comment allez-vous gérer les appareils iOS dédiés ?**
 
 Vous pouvez inscrire des appareils appartenant à l’entreprise avec des utilisateurs dédiés de différentes manières :
 
@@ -84,6 +84,6 @@ Vous pouvez inscrire des appareils appartenant à l’entreprise avec des utilis
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,7 +100,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
     |**Description**|Description qui vous aide à identifier ce profil.|
     |**Hôte**|Nom d’hôte du serveur de votre société qui héberge votre service de messagerie natif.|
     |**Nom du compte**|Nom complet du compte de messagerie, tel qu’il apparaîtra aux utilisateurs sur leurs appareils.|
-    |**Nom d’utilisateur**|Indique comment le nom d’utilisateur du compte de messagerie sera obtenu. Sélectionnez **Nom d’utilisateur** pour un serveur Exchange local ou **Nom principal de l’utilisateur** pour Office 365.|
+    |**Nom d’utilisateur**|Il s’agit de l’attribut dans Active Directory (AD) ou Azure AD, qui doit être utilisé pour générer le nom d’utilisateur de ce profil de messagerie. Sélectionnez l’adresse SMTP principale, comme *user1@contoso.com* ou le nom d’utilisateur principal, comme *user1* ou *user1@contoso.com*.|
     |**Adresse de messagerie**|Façon dont l’adresse de messagerie de l’utilisateur est générée sur chaque appareil. Sélectionnez **Adresse SMTP principale** pour utiliser l’adresse SMTP principale pour vous connecter à Exchange ou **Nom principal de l’utilisateur** pour utiliser le nom principal complet comme adresse de messagerie.|
     |**Méthode d’authentification** (Android for Work, Samsung KNOX et iOS)|Sélectionnez **Nom d’utilisateur et mot de passe** ou **Certificats** comme méthode d’authentification utilisée par le profil de messagerie.|
     |**Sélectionner un certificat client pour l’authentification client (certificat d’identité)** (Android for Work, Samsung KNOX et iOS)|Sélectionnez le certificat SCEP client que vous avez créé précédemment qui servira à authentifier la connexion Exchange. Pour plus d’informations sur la façon de créer des profils de certificat dans Intune, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md). Cette option est visible uniquement quand la méthode d'authentification est **Certificats**.|
@@ -138,6 +138,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
