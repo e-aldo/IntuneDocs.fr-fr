@@ -2,10 +2,10 @@
 title: "Gérer les licences Intune avec PowerShell | Microsoft Intune"
 description: "Gérer les licences Intune avec PowerShell"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
-ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
 
 
 ---
 
-# Gérer les licences Intune avec PowerShell
+# <a name="manage-intune-licenses-using-powershell"></a>Gérer les licences Intune avec PowerShell
 Avant que les utilisateurs puissent se connecter pour utiliser le service Intune ou inscrire leurs appareils dans la gestion, vous devez affecter à chaque utilisateur une licence dans votre abonnement Intune, comme décrit dans [Gérer les licences Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Toutefois, les organisations qui utilisent Microsoft Enterprise Mobility + Security peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un groupe de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Pour assigner de manière sélective des licences utilisateur pour les services EMS, ouvrez PowerShell en tant qu’administrateur sur un ordinateur où le [module Azure Active Directory pour Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) est installé. Vous pouvez installer PowerShell sur un ordinateur local ou sur un serveur ADFS.
@@ -60,7 +60,7 @@ Vérification avec :
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage rapide Intune*.
 >[!div class="step-by-step"]
 
@@ -68,6 +68,6 @@ Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

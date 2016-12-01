@@ -14,41 +14,41 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
-ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
+ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
+ms.openlocfilehash: 43c8d5e065e785269b9d0cbf1813dcea83464975
 
 
 ---
 
-# Créer une stratégie de conformité des appareils dans Microsoft Intune
+# <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Créer une stratégie de conformité des appareils dans Microsoft Intune
 Cette rubrique décrit les étapes que vous pouvez effectuer pour créer une stratégie de conformité qu’un appareil doit respecter pour être considéré comme conforme.
 
-##  Étape 1 : ajouter une nouvelle stratégie
+##  <a name="step-1-add-a-new-policy"></a>Étape 1 : ajouter une nouvelle stratégie
   Dans la [console d'administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Stratégies de conformité** &gt; **Ajouter**.
 
   ![Capture d’écran de la page de stratégie de conformité dans la console d’administration Intune, affichant l’option Ajouter dans le menu en haut de la page](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  Étape 2 : configurer les paramètres
+##  <a name="step-2-configure-settings"></a>Étape 2 : configurer les paramètres
 Dans la page **Créer une stratégie**, activez les paramètres dont vous avez besoin :
-  -   Paramètres de sécurité système tels que le mot de passe et le chiffrement
+  -   Paramètres de sécurité système tels que le mot de passe et le chiffrement.
   -   Paramètres d’intégrité des appareils, par exemple si un appareil est jailbroken ou signalé comme sain par le service d’attestation de l’intégrité des appareils Windows.
-  -   Paramètres de propriété des appareils, tels que la version minimale du système d’exploitation requise ou la version maximale du système d’exploitation autorisée.
-![Onglet Général de la page Créer une stratégie ](./media/intune-sa-3b-create-policy.png)
+  -   Paramètres de propriétés des appareils, comme la version minimale requise ou la version maximale autorisée du système d’exploitation.
+![Onglet Général de la page Créer une stratégie](./media/intune-sa-3b-create-policy.png)
 
 
-##  Étape 3 : enregistrer la stratégie
+##  <a name="step-3-save-the-policy"></a>Étape 3 : enregistrer la stratégie
 Quand vous avez terminé, choisissez **Enregistrer la stratégie**.
 
-Vous pourrez déployer la stratégie immédiatement après l’avoir enregistrée, ou la déployer ultérieurement. La nouvelle stratégie s’affiche sous le nœud **Stratégies de conformité** de l’espace de travail **Stratégie**.
+Vous pouvez déployer la stratégie immédiatement après l’avoir enregistrée, ou la déployer ultérieurement. La nouvelle stratégie s’affiche sous le nœud **Stratégies de conformité** de l’espace de travail **Stratégie**.
 
-##  Étape 4 : définir la période de validité des état de conformité
-Pour spécifier le délai d’enregistrement de l’appareil avant qu’un appareil soit considéré comme non conforme, accédez aux paramètres de stratégie de conformité et mettez le délai à jour.  La valeur par défaut est définie sur 30 jours.
+##  <a name="step-4-set-the-compliance-status-validity-period"></a>Étape 4 : définir la période de validité des état de conformité
+Pour spécifier le délai d’enregistrement de l’appareil avant qu’un appareil soit considéré comme non conforme, accédez aux paramètres de stratégie de conformité et mettez le délai à jour. La valeur par défaut est définie sur 30 jours.
 
 ![Option de paramètres de stratégie de conformité dans la barre de menus de stratégie](../media/mdm-compliance-policy-settings.png)
 
 ![Boîte de dialogue de stratégie de conformité](../media/mdm-ca-compliance-status-validity-period.png)
 
-## Paramètres de stratégie pris en charge
+## <a name="supported-policy-settings"></a>Paramètres de stratégie pris en charge
 Le tableau suivant répertorie les paramètres de stratégie de conformité et les plateformes sur lesquelles ils sont pris en charge.
 
 -------------
@@ -77,17 +77,17 @@ Sélectionnez l’une des options suivantes pour en savoir plus sur les paramèt
 > [!div class="op_single_selector"]
 - [Paramètres de stratégie de conformité pour les appareils iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Paramètres de stratégie de conformité pour les appareils Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Paramètres de stratégie de conformité pour les appareils Windows et Windows Phone ](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Paramètres de stratégie de conformité pour les appareils Windows et Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
-## Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 [Déployer et surveiller une stratégie de conformité](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 [Introduction aux stratégies de conformité des appareils](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

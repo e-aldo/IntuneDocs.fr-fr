@@ -14,14 +14,14 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: da42d3dc00ebeb145f668200dcc8b17b808c5e70
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: ea0e43d93a3e388d55329142292595a8b3b3dbd2
 
 
 ---
 
-# Étapes suivantes à la fin de la version d’évaluation d’Intune
-Si vous achetez au moins 150 licences pour Microsoft Intune dans un plan éligible, vous pouvez utiliser l’« offre du Centre FastTrack », un service qui vous permet d’obtenir l’aide de spécialistes Microsoft pour préparer votre environnement pour Intune. Consultez [Offre du Centre FastTrack pour Enterprise Mobility Suite (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
+# <a name="next-steps-after-your-intune-evaluation-is-completed"></a>Étapes suivantes à la fin de la version d’évaluation d’Intune
+Si vous achetez au moins 150 licences pour Microsoft Intune dans un plan éligible, vous pouvez utiliser l’« offre du Centre FastTrack », un service qui vous permet d’obtenir l’aide de spécialistes Microsoft pour préparer votre environnement pour Intune. Consultez [Offre Enterprise Mobility + Security (EMS) du Centre FastTrack](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 Vous pouvez convertir votre version d’évaluation gratuite d’Intune en abonnement payant de l’une des façons suivantes :
 
@@ -35,6 +35,6 @@ Vous pouvez convertir votre version d’évaluation gratuite d’Intune en abonn
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

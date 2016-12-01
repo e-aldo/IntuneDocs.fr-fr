@@ -5,33 +5,33 @@ layout: HubPage
 title: Documentation Intune - documentation MDM | Documents Microsoft
 description: Documentation technique pour Microsoft Intune - Gestion des applications et des appareils mobiles
 keywords: documentation Intune, documentation MDM, documentation sur la gestion des appareils mobiles, documentation sur la gestion des appareils des applications mobiles
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
+ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
+ms.openlocfilehash: 89789e5b5f7b5030f8ec1bd0c62e8e410b9ed8be
 
 
 ---
-# Documentation Intune
+# <a name="intune-documentation"></a>Documentation Intune
 <article id="main">
     <section id="hero-content">
       <h1>Documentation Intune</h1>
       <h2>Découvrez comment déployer et gérer Microsoft Intune, un service de gestion des appareils mobiles et des applications.</h2>
-      <h3>Gestion d’Intune avec Configuration Manager <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Afficher la documentation de Configuration Manager &rarr;</a></h3>
+      <h3>Gestion d’Intune avec Configuration Manager <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Afficher la documentation de Configuration Manager&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenu proposé</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Présentation de Microsoft Intune</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Plus de 150 licences ? Tirer profit de vos avantages FastTrack</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Scénarios courants s’appuyant sur Intune</a></li>
           <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Guide de démarrage rapide pour Intune</a></li>
         </ul>
@@ -119,7 +119,7 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
               <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">3</span>
-                  <p>Déployer et utiliser</p>
+                  <p>Déployer &amp; utiliser</p>
                 </div>
                 <p class="description column-two-thirds">Gérez des appareils, des applications et des données avec Intune.
                 </p>
@@ -285,6 +285,6 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

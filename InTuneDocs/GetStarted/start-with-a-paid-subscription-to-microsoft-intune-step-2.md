@@ -1,10 +1,11 @@
 ---
 title: "Configurer un nom de domaine personnalisé | Microsoft Intune"
-description: "Cette rubrique décrit la procédure d’ajout d’un nom de domaine personnalisé à votre abonnement Intune"
+description: "Ajouter un nom de domaine personnalisé à votre abonnement Intune"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,26 +14,59 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 60f96b21f9e8f6ce610c24c6078906f51e327cb7
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 9fe78bca15ffee1e5e0e7e3758ff70b6bc92b619
 
 
 ---
 
 
-# configurer un nom de domaine personnalisé
+# <a name="configure-a-custom-domain-name"></a>configurer un nom de domaine personnalisé
 
-Par défaut, Intune utilise le nom de domaine **<domain>.onmicrosoft.com** qui a été créé lors de votre première inscription au service. Si votre organisation possède un domaine personnalisé, vous pouvez configurer votre instance d’Intune de sorte qu’elle utilise ce nom de domaine à la place du domaine attribué avec votre abonnement.
+Quand votre organisation s’inscrit à un service cloud de Microsoft comme Intune, vous recevez un nom de domaine initial hébergé dans Azure Active Directory (AD) qui ressemble à celui-ci : **votre_domaine.onmicrosoft.com**. Dans cet exemple, **votre_domaine** est le nom de domaine que vous avez choisi lors de votre inscription, et **onmicrosoft.com** est le suffixe attribué aux comptes que vous ajoutez à votre abonnement. Si votre organisation possède un domaine personnalisé, vous pouvez configurer votre instance d’Intune de sorte qu’elle utilise ce nom de domaine à la place du domaine attribué avec votre abonnement.
 
-Avant de créer de nouveaux comptes d'utilisateur ou de synchroniser des comptes à partir de votre instance Active Directory locale, nous vous recommandons vivement de choisir entre l'utilisation seule du domaine .onmicrosoft.com et l'ajout d'un ou plusieurs de vos domaines personnalisés. Le fait de configurer un domaine personnalisé avant d'ajouter des utilisateurs peut simplifier la gestion des identités des utilisateurs de votre abonnement en permettant aux utilisateurs de se connecter à l'aide des informations d'identification qu'ils utilisent pour accéder aux autres ressources du domaine.
+Avant de créer des comptes d’utilisateur ou de synchroniser votre instance Active Directory locale, nous vous recommandons vivement de choisir entre l’utilisation seule du domaine .onmicrosoft.com et l’ajout d’un ou plusieurs de vos domaines personnalisés. Le fait de configurer un domaine personnalisé avant d'ajouter des utilisateurs peut simplifier la gestion des identités des utilisateurs de votre abonnement en permettant aux utilisateurs de se connecter à l'aide des informations d'identification qu'ils utilisent pour accéder aux autres ressources du domaine.
 
-Lorsque vous vous abonnez à un service cloud Microsoft, votre instance de ce service devient un client Microsoft [Azure AD](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant), qui fournit des services d’identité et d’annuaires à votre service cloud. Et puisque les tâches permettant de configurer Intune pour utiliser le nom de domaine personnalisé de votre organisation sont identiques à celles appliquées aux autres clients Azure AD, vous pouvez utiliser les informations et les procédures du document [Ajouter votre domaine](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
+Lorsque vous vous abonnez à un service cloud Microsoft, votre instance de ce service devient un client Microsoft [Azure AD](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant), qui fournit des services d’identité et d’annuaires à votre service cloud. Et puisque les tâches permettant de configurer Intune pour utiliser le nom de domaine personnalisé de votre organisation sont identiques à celles appliquées aux autres clients Azure AD, vous pouvez utiliser les informations et les procédures du document [Ajouter votre domaine](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 > [!TIP]
 > Pour plus d’informations sur l’utilisation de votre domaine personnalisé avec un service cloud Microsoft, consultez [Vue d’ensemble conceptuelle des noms de domaine personnalisés dans Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/).
 
-### Étapes suivantes
-Félicitations ! Vous venez d’effectuer l’étape 2 du *Guide de démarrage rapide Intune*.
+Vous ne pouvez pas renommer ou supprimer ce nom de domaine initial. Toutefois, vous pouvez ajouter, vérifier ou supprimer vos propres noms de domaines personnalisés à utiliser avec Intune, ce qui est utile si vous voulez conserver l’identité de votre entreprise.
+
+## <a name="to-add-and-verify-your-custom-domain"></a>Pour ajouter et vérifier votre domaine personnalisé
+
+1. Accédez au [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx) et connectez-vous à votre compte d’administrateur.
+
+2. Dans le volet de navigation, choisissez **Paramètres** &gt; **Domaines**.
+
+3. Choisissez **Ajouter un domaine**, puis tapez votre nom de domaine personnalisé.
+
+4. La boîte de dialogue **Vérifier le domaine** s’ouvre. Elle contient les valeurs permettant de créer l’enregistrement TXT dans votre fournisseur d’hébergement DNS.
+    - **Utilisateurs GoDaddy** : le portail de gestion Office 365 vous redirige vers la page de connexion de GoDaddy. L’enregistrement TXT est créé automatiquement une fois que vous entrez vos informations d’identification et que vous acceptez le contrat d’autorisation de modification de domaine. Vous pouvez également [créer un enregistrement TXT](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
+    - **Utilisateurs Register.com** : suivez les [instructions détaillées](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) pour créer l’enregistrement TXT.
+
+    > [!TIP]
+    > Prenez soin de créer un alias DNS (CNAME) pour [l’inscription des appareils Windows](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) lors de l’exécution de modifications dans votre fournisseur d’hébergement DNS.
+
+Les étapes permettant d’ajouter et de vérifier un domaine personnalisé peuvent également être [effectuées dans Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
+
+Dans un scénario de cloud hybride, une fois que vous avez ajouté votre nom de domaine personnalisé et vérifié que votre organisation le possède, vous pouvez continuer à gérer les comptes d’utilisateur dans votre annuaire Active Directory, puis le synchroniser avec Azure AD.
+
+## <a name="to-synchronize-on-premises-users-with-azure-ad"></a>Pour synchroniser des utilisateurs locaux avec Azure AD##
+
+1. [Ajoutez le suffixe UPN](https://technet.microsoft.com/en-us/library/cc772007.aspx) de votre domaine personnalisé dans votre annuaire Active Directory local.
+2. Définissez le nouveau suffixe UPN pour les utilisateurs locaux que vous voulez importer.
+3. Exécutez la [synchronisation Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) pour intégrer vos utilisateurs locaux à Azure AD.
+4. Une fois les informations sur le compte d’utilisateur correctement synchronisées, vous pouvez attribuer des licences Microsoft Intune à l’aide du [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx).
+
+### <a name="see-also"></a>Voir aussi
+
+[À propos de votre domaine onmicrosoft.com initial dans Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+
+[Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
+### <a name="next-steps"></a>Étapes suivantes
+Félicitations ! Vous venez d’effectuer l’étape 2 du *Guide de démarrage rapide Intune*.
 
 >[!div class="step-by-step"]
 
@@ -40,6 +74,6 @@ Félicitations ! Vous venez d’effectuer l’étape 2 du *Guide de démarrage
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
