@@ -1,11 +1,11 @@
 ---
-title: Inscrire des appareils mobiles et installer une application | Microsoft Intune
-description: Cette rubrique explique comment inscrire des appareils mobiles et installer une application sur un appareil Intune inscrit
+title: "Activer l’inscription d’appareils | Microsoft Intune"
+description: "Définissez l’autorité MDM et activez l’inscription des appareils iOS, Windows, Android et Mac."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,50 +14,51 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
-ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
 
 
 ---
 
-# inscrire des appareils mobiles et installer une application
-Pour configurer la gestion des appareils mobiles avec Intune, vous devez d’abord définir l’autorité de gestion des appareils mobiles, activer la gestion des plateformes d’appareils, puis inscrire vos appareils à l’aide de l’application Portail d’entreprise. Vous pouvez ensuite déployer l’application Microsoft Skype que vous avez publiée à l’étape 6.
+# <a name="enroll-mobile-devices-and-install-an-app"></a>inscrire des appareils mobiles et installer une application
+Pour configurer la gestion des appareils mobiles avec Intune, vous devez d’abord définir *l’autorité de gestion des appareils mobiles*, qui identifie le service permettant de gérer les appareils associés à votre compte. Cette aide suppose que vous allez utiliser le service Intune plutôt que System Center Configuration Manager. Une fois l’autorité MDM définie, vous pouvez activer la gestion des plateformes d’appareil et inscrire vos appareils auprès de l’application Portail d’entreprise.
 
-## Activer la gestion des appareils et inscrire des appareils
+## <a name="enable-device-enrollment"></a>Activer l’inscription d’appareil
 
-1.  **Utiliser Intune comme autorité de gestion des appareils mobiles** Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Administration** > **Gestion des appareils mobiles**, puis choisissez **Définir l’autorité MDM** sous **Tâches**.  Dans la boîte de dialogue Autorité de gestion des appareils mobiles, cliquez sur **Oui**.
+1. **Utiliser Intune comme autorité de gestion des appareils mobiles**
+    Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Administration** > **Gestion des appareils mobiles**, puis choisissez **Définir l’autorité MDM** sous **Tâches**.  
+
+2. Dans la boîte de dialogue Autorité de gestion des appareils mobiles, cliquez sur **Oui**.
+
     ![Console d’administration. Définir l’autorité de gestion des appareils mobiles sur Intune](./media/mdmAuthority.png)
 
-2.  **Activer la gestion des appareils mobiles pour votre plateforme d’appareils** Activez la gestion des appareils mobiles pour la plateforme d’appareils que vous souhaitez gérer. La configuration requise varie en fonction de la plateforme :
+## <a name="choose-how-to-enroll-devices"></a>Choisir comment inscrire des appareils
 
-    -   **iOS et Mac OS X** : consultez [Configurer la gestion iOS et Mac avec Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
+Intune peut gérer les appareils de différentes manières selon les besoins de votre entreprise. Les appareils BYOD (Apportez votre propre appareil), CYOD (Choisissez votre propre appareil), appartenant à l’entreprise et en mode plein écran font partie des scénarios d’inscription disponibles.
 
-    -   **Windows Phone** : consultez [Configurer la gestion Windows Phone avec Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+Suivez ces étapes pour [Choisir comment inscrire des appareils](choose-how-to-enroll-devices1.md).
 
-    -   **Android** : les appareils mobiles Android permettent aux utilisateurs de s’inscrire à l’aide de l’application Portail d’entreprise disponible sur [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider). Aucune configuration supplémentaire n'est nécessaire dans Intune.
+## <a name="enable-mdm-for-your-device-platform"></a>Activer la gestion des appareils mobiles pour votre plateforme d'appareils
+L’inscription doit être activée pour les appareils iOS, Mac et Android for Work établissant une relation entre le fournisseur de plateforme et votre client Intune. Les appareils Windows et Android ne nécessitent pas d’étapes supplémentaires, mais pour les appareils Windows, vous pouvez simplifier l’inscription d’appareils pour vos utilisateurs en créant une entrée de Registre DNS spéciale.
 
-3.  **Inscrire des appareils** :
+Activez l’inscription d’appareils pour la plateforme d’appareils que vous souhaitez gérer. La configuration requise varie en fonction de la plateforme :
 
-    -   **Android** : installez l’application **Portail d’entreprise Intune** de Microsoft Corporation disponible sur [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612) et connectez-vous avec les informations d’identification de l’utilisateur Intune ajoutées ci-dessus.
+-  [iOS et macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [PC Windows](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-  [Windows 10 Mobile et Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
-    -   **iOS et Mac OS X** : installez l’application **Portail d’entreprise Microsoft Intune** de Microsoft Corporation disponible dans l’App Store et connectez-vous avec les informations d’identification d’utilisateur Intune ajoutées ci-dessus. Affichez **Appareils inscrits** pour ajouter votre appareil.
+Une fois l’inscription activée, les utilisateurs peuvent télécharger l’application Portail d’entreprise sur leur appareil et terminer le processus d’inscription d’appareil.
 
-    -   **Windows Phone 8.1** : les utilisateurs installent l’application **Portail d’entreprise** de Microsoft Corporation disponible dans le Windows Phone Store et se connectent avec les informations d’identification d’utilisateur Intune ajoutées ci-dessus.  Affichez **Appareils inscrits** pour ajouter votre appareil.
+### <a name="enable-company-owned-device-enrollment"></a>Activer l’inscription d’un appareil d’entreprise
+Vous pouvez également activer plusieurs scénarios [d’inscription d’un appareil appartenant à l’entreprise](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices), notamment :
+- [Programme d’inscription d’appareils d’Apple](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+- [Inscription par le biais de l’Assistant Configuration Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+- [Inscription par le biais de l’Assistant Configuration Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Gestionnaire d’inscription d’appareil](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-    -   **Windows Phone 8.0** : les utilisateurs choisissent **paramètres système** &gt; **applications de l’entreprise**, puis se connectent avec les informations d’identification d’utilisateur Intune ajoutées ci-dessus. L'application Portail d'entreprise est déployée sur votre téléphone.
-
-    Si vous êtes invité à entrer une **Adresse du serveur**, tapez « manage.microsoft.com ».
-
-## Installer une application sur un appareil inscrit
-Dans l’[étape 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) de ce guide de démarrage rapide, vous avez publié l’application Skype pour votre groupe d’utilisateurs Intune personnalisé. Maintenant, vous allez installer cette application sur un appareil nouvellement inscrit.
-
-Ouvrez le portail d’entreprise sur l’appareil mobile inscrit, choisissez **Applications**, puis installez **Microsoft Skype**.
-
-Pour en savoir plus sur la gestion des appareils mobiles à l’aide de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], consultez [Conditions préalables pour l’inscription d’appareils dans Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment).
-
-
-### Étapes suivantes
-Félicitations ! Vous venez d’effectuer la dernière étape du *guide de démarrage rapide Intune*. Maintenant que votre configuration initiale est terminée, vous pouvez envisager d’activer des fonctionnalités supplémentaires de gestion des appareils mobiles.
+### <a name="next-steps"></a>Étapes suivantes
+Félicitations ! Vous venez d’effectuer la dernière étape du *guide de démarrage rapide Intune*. Maintenant que votre configuration initiale est terminée, vous pouvez envisager d’activer des fonctionnalités supplémentaires de gestion des appareils mobiles.
 
 >[!div class="step-by-step"]
 
@@ -65,6 +66,6 @@ Félicitations ! Vous venez d’effectuer la dernière étape du *guide de dém
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
