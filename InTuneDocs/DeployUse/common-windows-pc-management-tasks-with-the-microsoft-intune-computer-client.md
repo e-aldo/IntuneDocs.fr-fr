@@ -2,7 +2,8 @@
 title: "Tâches courantes de gestion des PC Windows | Microsoft Intune"
 description: "Passez en revue les tâches décrites dans cette rubrique pour découvrir comment gérer des PC Windows qui exécutent le client logiciel Intune."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
+ms.sourcegitcommit: cf6b4c0fbc8a739f205173f39093ce5550cb8321
+ms.openlocfilehash: 075ed3f7d8b5f8283b7936c1c89d20081a9264a6
 
 
 ---
 
-# Tâches courantes de gestion des PC Windows avec le client logiciel Intune
+# <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tâches courantes de gestion des PC Windows avec le client logiciel Intune
 Passez en revue les tâches décrites dans cette rubrique pour découvrir comment gérer les ordinateurs qui exécutent le client logiciel Intune. Si vous n’avez pas encore installé le client sur vos ordinateurs, consultez [Installer le client logiciel Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
-## Utiliser des stratégies pour simplifier la gestion des PC
+## <a name="use-policies-to-simplify-pc-management"></a>Utiliser des stratégies pour simplifier la gestion des PC
 
 Les PC Windows qui exécutent le client logiciel Intune peuvent être gérés à l’aide des stratégies **Gestion des ordinateurs** d’Intune.
 
 ![Modèle de stratégies pour les PC Windows](../media/pc_policy_template.png)
 
-### Gérer Microsoft Intune Center
+### <a name="manage-the-microsoft-intune-center"></a>Gérer Microsoft Intune Center
 Pour les utilisateurs, le client logiciel Intune apparaît comme **Microsoft Intune Center**. Microsoft Intune Center permet aux utilisateurs d’effectuer les opérations suivantes :
 
 -   Obtenir des applications à partir du portail d'entreprise.
@@ -44,23 +45,22 @@ Microsoft Intune Center est installé sur tous les ordinateurs gérés. Vous pou
 
 |Paramètre de stratégie|Détails|
 |------------------|--------------------|
-|**Nom**|Nom de l'administrateur responsable de la gestion de l'ordinateur.<br /><br />Longueur maximale : 40 caractères|
-|**Numéro de téléphone**|Numéro de téléphone de l'administrateur responsable de la gestion de l'ordinateur.<br /><br />Longueur maximale : 20 caractères|
-|**Adresse de messagerie**|Adresse e-mail de l'administrateur responsable de la gestion de l'ordinateur.<br /><br />Longueur maximale : 40 caractères|
-|**Nom du site web**|Nom de votre site web de support pour les utilisateurs.<br /><br />Longueur maximale : 40 caractères|
-|**URL du site web**|L'URL de votre site web de support.<br /><br />Longueur maximale : 150 caractères|
-|**Remarques**|Remarque affichée pour les utilisateurs.<br /><br />Longueur maximale : 120 caractères|
+|**Nom**|Nom de l'administrateur responsable de la gestion de l'ordinateur.<br />Longueur maximale : 40 caractères|
+|**Numéro de téléphone**|Numéro de téléphone de l'administrateur responsable de la gestion de l'ordinateur.<br />Longueur maximale : 20 caractères|
+|**Adresse de messagerie**|Adresse e-mail de l'administrateur responsable de la gestion de l'ordinateur.<br />Longueur maximale : 40 caractères|
+|**Nom du site web**|Nom de votre site web de support pour les utilisateurs.<br />>Longueur maximale : 40 caractères|
+|**URL du site web**|L'URL de votre site web de support.<br />Longueur maximale : 150 caractères|
+|**Remarques**|Remarque affichée pour les utilisateurs.<br />Longueur maximale : 120 caractères|
 
-## Paramètres des mises à jour logicielles
-Utilisez des stratégies pour configurer les paramètres que les ordinateurs gérés utilisent pour rechercher et télécharger des mises à jour logicielles publiées par Microsoft et d'autres parties. Ces mises à jour ne comprennent pas les mises à niveau du système d’exploitation (c.-à-d. la mise à niveau de Windows 7 vers Windows 10 ou les mises à niveau d’une version de Windows 10 vers une version ultérieure). Pour plus d’informations, consultez [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+Consultez les ressources suivantes pour plus d’informations sur les stratégies et les paramètres que vous pouvez configurer pour les PC Windows :
 
-### Paramètres Endpoint Protection
-Utilisez des stratégies pour configurer les paramètres Endpoint Protection à déployer ensuite sur les ordinateurs gérés. Cela inclut les planifications de l'analyse, les actions à entreprendre lorsqu'un programme malveillant est détecté et bien plus encore. Pour plus d’informations, consultez [Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- [Tenir à jour des PC Windows avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) : ces stratégies amènent les ordinateurs gérés à rechercher et télécharger les mises à jour logicielles auprès de Microsoft et de tiers. Ces mises à jour ne comprennent pas les mises à niveau du système d’exploitation (par exemple, la mise à niveau de Windows 7 vers Windows 10, ni les mises à niveau d’une version de Windows 10 vers une version ultérieure).
 
-## Paramètres du Pare-feu Windows
-Les stratégies simplifient l'administration des paramètres du Pare-feu Windows sur les ordinateurs gérés. Pour plus d’informations, consultez [Protéger les PC Windows à l’aide de stratégies de Pare-feu Windows dans Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+- [Mieux sécuriser les PC Windows avec Endpoint Protection pour Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) : ces paramètres incluent les planifications d’analyse et les mesures à prendre quand un programme malveillant est détecté.
 
-## Afficher l'Inventaire matériel et logiciel
+- [Protéger les PC Windows à l’aide des stratégies du Pare-feu Windows dans Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) : ces stratégies simplifient l’administration des paramètres du Pare-feu Windows sur les ordinateurs gérés.
+
+## <a name="view-hardware-and-software-inventory"></a>Afficher l'Inventaire matériel et logiciel
 Intune recueille des informations détaillées sur le matériel et les logiciels des ordinateurs gérés. Utilisez les informations contenues dans les procédures suivantes pour apprendre à créer :
 
 -   Un rapport qui répertorie les informations sur les capacités matérielles de vos ordinateurs.
@@ -69,7 +69,7 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
 
 -   Procédure d'actualisation d'un inventaire des ordinateurs pour vous assurer que les données du rapport sont récentes.
 
-### Pour afficher les informations concernant vos ordinateurs
+### <a name="to-display-information-about-your-computers"></a>Pour afficher les informations concernant vos ordinateurs
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Rapports** &gt; **Rapports d’inventaire des ordinateurs**.
 
@@ -79,7 +79,7 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
 
     Vous pouvez trier le rapport en fonction des différentes colonnes, telles que le **Nom**, le **Type de châssis** ou le **Fabricant** en sélectionnant chaque en-tête de colonne.
 
-### Pour afficher les logiciels installés sur vos ordinateurs
+### <a name="to-display-software-installed-on-your-computers"></a>Pour afficher les logiciels installés sur vos ordinateurs
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Rapports** &gt; **Rapports de logiciels détectés**.
 
@@ -89,7 +89,7 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
 
     Vous pouvez trier le rapport en fonction des différentes colonnes, telles que le **Nom**, l’**Éditeur** ou la **Catégorie** en sélectionnant chaque en-tête de colonne. Vous pouvez développer les mises à jour dans la liste pour afficher plus de détails (par exemple les ordinateurs sur lesquels elles sont installées) en choisissant la flèche directionnelle à côté de l’élément de liste.
 
-### Pour actualiser les ressources de l'ordinateur pour vérifier qu'elles sont récentes
+### <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Pour actualiser les ressources de l'ordinateur pour vérifier qu'elles sont récentes
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** (ou un autre groupe qui contient l’ordinateur pour lequel vous souhaitez actualiser l’inventaire).
 
@@ -102,7 +102,7 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
     La boîte de dialogue **État de la tâche** affiche les tâches à distance en cours, l'état de la tâche, le nom de l'appareil et toutes les erreurs signalées et fournit un lien permettant de corriger ces informations.
 
 
-## Redémarrer à distance un PC Windows
+## <a name="remotely-restart-a-windows-pc"></a>Redémarrer à distance un PC Windows
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** (ou un autre groupe qui contient l’ordinateur que vous voulez redémarrer).
 
@@ -112,7 +112,7 @@ Intune recueille des informations détaillées sur le matériel et les logiciels
 
 4.  Dans la boîte de dialogue **État de tâche** , passez en revue les tâches à distance en cours, l'état de la tâche, le nom d'appareil et les erreurs signalées.
 
-## Mettre hors service un ordinateur
+## <a name="retire-a-computer"></a>Mettre hors service un ordinateur
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** (ou un autre groupe qui contient l’ordinateur que vous voulez mettre hors service).
 
@@ -143,10 +143,10 @@ Lorsque vous mettez hors service un ordinateur :
 
     Si la désinstallation du client échoue, lisez [Résoudre les problèmes de protection de point de terminaison](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) pour obtenir une aide supplémentaire.
 
-## Gérer la liaison utilisateur-appareil
+## <a name="manage-user-device-linking"></a>Gérer la liaison utilisateur-appareil
 Avant de pouvoir déployer des logiciels vers un utilisateur, vous devez lier l'utilisateur à un ordinateur. Vous pouvez associer un utilisateur à plusieurs ordinateurs, mais chaque ordinateur ne peut être lié qu'à un seul utilisateur. Les utilisateurs sont automatiquement liés à tous les ordinateurs qu’ils inscrivent dans Intune à l’aide du portail de l’entreprise.
 
-### Pour lier un utilisateur à un ordinateur
+### <a name="to-link-a-user-to-a-computer"></a>Pour lier un utilisateur à un ordinateur
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** (ou un autre groupe qui contient l’ordinateur que vous voulez lier à un utilisateur).
 
@@ -165,13 +165,13 @@ Avant de pouvoir déployer des logiciels vers un utilisateur, vous devez lier l'
 > [!TIP]
 > Si vous souhaitez limiter la capacité des utilisateurs finaux à se lier à des ordinateurs, activez l’option **Limiter la capacité des utilisateurs à se lier à des ordinateurs** dans la stratégie **Paramètres de l’Agent Microsoft Intune**.
 
-## Demander et fournir une assistance à distance pour les PC Windows
+## <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Demander et fournir une assistance à distance pour les PC Windows
 
 Microsoft Intune peut utiliser le logiciel [TeamViewer](https://www.teamviewer.com), acheté séparément, pour permettre aux utilisateurs de PC qui exécutent le client logiciel Intune d’obtenir votre aide via l’assistance à distance. Lorsqu’un utilisateur demande de l’aide à partir de Microsoft Intune Center, vous êtes informé par une alerte, vous pouvez accepter la demande, puis fournir une assistance.
 Cette fonctionnalité remplace la fonctionnalité Assistance à distance Windows existante dans Intune.
 
 
-### Avant de commencer
+### <a name="before-you-start"></a>Avant de commencer
 
 Avant de pouvoir établir des demandes d’assistance à distance et d’y répondre, vous devez vous assurer que les conditions préalables suivantes sont respectées :
 
@@ -179,7 +179,7 @@ Avant de pouvoir établir des demandes d’assistance à distance et d’y répo
 - Les PC Windows que vous souhaitez administrer doivent être [gérés par le client de PC Windows](manage-windows-pcs-with-microsoft-intune.md).
 - Tous les systèmes d’exploitation des PC Windows pris en charge par Intune peuvent être administrés.
 
-### Configurer le connecteur TeamViewer
+### <a name="configure-the-teamviewer-connector"></a>Configurer le connecteur TeamViewer
 
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Administration**
 2. Dans l’espace de travail **Administration**, choisissez **TeamViewer**.
@@ -190,7 +190,7 @@ Avant de pouvoir établir des demandes d’assistance à distance et d’y répo
 7. Dans la console Intune, vérifiez que l’élément **Connecteur TeamViewer** apparaît comme **Activé**.
 
 
-### Ouvrir une demande d’assistance à distance (utilisateur final)
+### <a name="open-a-remote-assistance-request-end-user"></a>Ouvrir une demande d’assistance à distance (utilisateur final)
 
 1. Sur un PC Windows client, ouvrez **Microsoft Intune Center**.
 2. Sous **Assistance à distance**, choisissez **Demander une assistance à distance**.
@@ -198,7 +198,7 @@ Avant de pouvoir établir des demandes d’assistance à distance et d’y répo
 4. L’utilisateur voit un message lui demandant si vous pouvez contrôler son PC. Il doit accepter ce message pour continuer.
 5. Au cours de la session d’assistance à distance, l’utilisateur voit une fenêtre lui indiquant que vous êtes connecté. S’il ferme cette fenêtre, la session à distance se termine.
 
-### Répondre à une demande d’assistance à distance
+### <a name="respond-to-a-remote-assistance-request"></a>Répondre à une demande d’assistance à distance
 
 1. Lorsqu’un utilisateur soumet une demande d’assistance à distance, vous pouvez l’afficher dans l’espace de travail **Alertes**, sous **Analyse** > **Assistance à distance**. Exemple :
 > ![Capture d’écran d’une demande d’assistance à distance](./media/team-viewer.png)
@@ -210,12 +210,12 @@ Avant de pouvoir établir des demandes d’assistance à distance et d’y répo
 
 Au cours d’une session d’assistance à distance, vous pouvez utiliser toutes les commandes TeamViewer disponibles pour contrôler le PC distant. Pour obtenir de l’aide avec ces commandes, téléchargez le [Manuel pour le contrôle à distance](http://www.teamviewer.com/en/support/documents/) depuis le site web TeamViewer.
 
-### Fermer la session d’assistance à distance
+### <a name="close-the-remote-assistance-session"></a>Fermer la session d’assistance à distance
 
 Dans le menu **Actions** de la fenêtre **TeamViewer**, choisissez **Fin de session**.
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

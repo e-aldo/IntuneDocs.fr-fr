@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code d’accès
@@ -25,18 +25,19 @@ Si un utilisateur perd un appareil, vous pouvez verrouiller celui-ci à distance
 
 |Plateforme|Verrouillage à distance|
 |------------|---------------|
+|macOS|Non pris en charge|
 |iOS|Pris en charge|
 |Android|Pris en charge|
 |Windows 10 et Windows 10 Mobile|Pris en charge|
 |Windows Phone 8 et Windows Phone 8.1|Pris en charge|
-|Windows RT 8.1 et Windows RT|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
-|Windows 8.1|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
+|Windows RT 8.1 et Windows RT|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
+|Windows 8.1|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
 
 Le verrouillage à distance n’est pas pris en charge pour les PC Windows inscrits auprès du client logiciel Intune.
 
 ### <a name="lock-a-mobile-device-remotely-through-the-intune-console"></a>Verrouiller un appareil mobile à distance par le biais de la console Intune
 
-1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils mobiles**.
+1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils mobiles**.
 
 2.  Choisissez **Tous les appareils gérés par gestion directe** pour les appareils inscrits dans Intune ou **Tous les appareils gérés par Exchange ActiveSync**.
 
@@ -50,18 +51,20 @@ Si un utilisateur oublie un code d’accès, vous pouvez l’aider à résoudre 
 
 |Plateforme|Réinitialiser le code secret|
 |------------|------------------|
+|macOS|Non pris en charge|
 |iOS|Prise en charge de l'effacement du code d'accès d'un appareil. Ne crée pas un nouveau code d'accès temporaire.|
 |Android|Prise en charge sur les versions antérieures à Android 7.0. Crée un code d’accès temporaire.|
-|Windows 10 Mobile|Pris en charge|
+|Windows 10 Mobile|Pris en charge|
 |Windows Phone 8 et Windows Phone 8.1|Pris en charge|
-|Windows RT 8.1 et Windows RT|Non pris en charge|
-|Windows 8.1|Non pris en charge|
+|Windows RT 8.1|Non pris en charge|
+|Windows 8.1|Non pris en charge|
+|Windows 10 Desktop|Non pris en charge|
 
 La réinitialisation du code d’accès n’est pas prise en charge pour les PC Windows inscrits auprès du client logiciel Intune.
 
 ### <a name="reset-a-passcode"></a>Réinitialiser un code secret
 
-1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils mobiles**.
+1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils mobiles**.
 
 2.  Choisissez **Tous les appareils gérés par gestion directe** pour les appareils inscrits dans Intune ou **Tous les appareils gérés par Exchange ActiveSync**.
 
@@ -76,6 +79,6 @@ La réinitialisation du code d’accès n’est pas prise en charge pour les PC 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

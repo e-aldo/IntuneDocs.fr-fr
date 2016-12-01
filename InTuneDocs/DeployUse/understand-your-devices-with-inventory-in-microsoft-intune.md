@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,54 +14,54 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d01ec8c2b848b4fa1e507ec9e7a31125badf30e
+ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
+ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
 
 
 ---
 
-# Comprendre vos appareils grâce à l’inventaire de Microsoft Intune
+# <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Comprendre vos appareils grâce à l’inventaire de Microsoft Intune
 Microsoft Intune vous permet d’afficher l’inventaire des appareils inscrits et des ordinateurs Windows qui exécutent le logiciel client Intune.
 Généralement, Intune collecte l’inventaire auprès des appareils gérés tous les 7 jours. Pour cette raison, un certain délai peut être observé avant que les rapports ne reflètent les modifications récentes apportées aux appareils, par exemple, un changement de nom d’appareil ou une modification de l’espace de stockage disponible.
 
-## Qu’est-ce qui est collecté auprès des appareils inscrits ?
+## <a name="whats-collected-from-enrolled-devices"></a>Qu’est-ce qui est collecté auprès des appareils inscrits ?
 Pour afficher l’inventaire recueilli par les appareils mobiles, exécutez les [rapports d’inventaire des appareils mobiles](understand-microsoft-intune-operations-by-using-reports.md). Intune collecte l’inventaire suivant auprès des appareils inscrits :
 
 |Propriété|Collecte par|
 |------------|-----------------------|
 |**Nom**|Tous les appareils|
-|**Système d'exploitation**|Tous les appareils|
+|**Système d’exploitation**|Tous les appareils|
 |**Fabricant**|Tous les appareils|
 |**Modèle**|Tous les appareils|
 |**Canal de gestion**|Tous les appareils|
-|**Enregistré avec AAD**|Tous les appareils à l’exception de Mac OS X|
-|**Conforme**|Tous les appareils|
+|**Enregistré dans AAD**|Tous les appareils à l’exception de Mac OS X|
+|**Compatible**|Tous les appareils|
 |**EAS activé**|Tous les appareils à l’exception de Mac OS X|
 |**ID d’activation EAS**|Tous les appareils à l’exception de Mac OS X|
 |**Heure d’activation EAS**|Tous les appareils à l’exception de Mac OS X|
 |**État de gestion**|Tous les appareils|
-|**Adresse de messagerie**|Tous les appareils|
+|**Adresse e-mail**|Tous les appareils|
 |**ID Exchange ActiveSync**|Tous les appareils|
-|**Jailbroken ou rootés**|Appareils iOS et Android uniquement|
-|**ID d'appareil unique**|Tous les appareils à l’exception d’Exchange ActiveSync|
-|**Numéro de série**|Appareils iOS, Mac OS X, Android, Windows 8.1 et Windows 10|
-|**Espace de stockage total**|Appareils iOS, Mac OS X, Windows 8.1 et Windows 10|
-|**Espace de stockage libre**|Appareils iOS, Mac OS X, Windows 8.1 et Windows 10|
+|**Jailbreakés ou rootés**|Appareils iOS et Android uniquement|
+|**ID d’appareil unique**|Tous les appareils à l’exception d’Exchange ActiveSync|
+|**Numéro de série**|Appareils iOS, Mac OS X, Android, Windows 8.1 et Windows 10 Desktop|
+|**Espace de stockage total**|Appareils iOS, Mac OS X, Windows 8.1 et Windows 10 Desktop et Mobile|
+|**Espace de stockage libre**|Appareils iOS, Mac OS X, Windows 8.1 et Windows 10 Desktop|
 |**Numéro de téléphone**<br>Les téléphones classés comme appartenant à l’entreprise sont identifiés avec leur numéro de téléphone complet (par exemple quand vous exécutez un rapport d’inventaire des appareils mobiles). Les numéros de téléphone de type « BYOD » sont masqués avec &#42;, et seuls les quatre derniers chiffres sont affichés.|Appareils iOS, Android et Windows Phone|
 |**IMEI**|Appareils Exchange ActiveSync, iOS, Android et Windows Phone|
 |**MEID**<br>MEID (Mobile Equipment Identifier)|Appareils iOS uniquement|
 |**Adresse MAC du réseau Wi-Fi**|Tous les appareils à l’exception d’Exchange ActiveSync|
-|**Opérateur de l'abonné**|Appareils iOS et Android uniquement|
+|**Opérateur de l’abonné**|Appareils iOS et Android uniquement|
 |**Technologie cellulaire**|Appareils iOS et Android uniquement|
 |**Supervisé**|Appareils iOS uniquement|
 |**État du verrou d’activation**|Appareils iOS uniquement|
-|**Date d'inscription**|Tous les appareils|
+|**Date d’inscription**|Tous les appareils|
 |**Dernière mise à jour**|Tous les appareils|
 |**Ethernet MAC**|Appareils Mac OS X uniquement|
 |**Verrou d’activation activé**|Appareils iOS uniquement|
 |**Chiffrement activé**|Tous les appareils|
 
-## Qu’est-ce qui est collecté auprès des PC Windows ?
+## <a name="whats-collected-from-windows-pcs"></a>Qu’est-ce qui est collecté auprès des PC Windows ?
 > [!IMPORTANT]
 > Cette section s’applique uniquement aux ordinateurs Windows qui exécutent le logiciel client Intune Windows PC.
 
@@ -75,7 +75,7 @@ Pour afficher l’inventaire recueilli par les PC Windows, exécutez les [rappor
 
 -   **Modèle**
 
--   **Système d'exploitation**
+-   **Système d’exploitation**
 
 -   **Version de TPM**
 
@@ -116,6 +116,6 @@ Pour afficher l’inventaire recueilli par les PC Windows, exécutez les [rappor
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

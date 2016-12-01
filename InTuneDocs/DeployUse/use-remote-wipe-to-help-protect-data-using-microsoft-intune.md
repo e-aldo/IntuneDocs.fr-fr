@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ Vous pouvez réinitialiser les applications et les données à partir d’appare
 
 Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation prend moins de 15 minutes, quel que soit le type de l’appareil.
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Pour supprimer des appareils dans le portail Azure Active Directory
+
+1.  Accédez à [http://aka.ms/accessaad](http://aka.ms/accessaad) ou choisissez **Administration** &gt; **Azure AD** dans [https://portal.office.com](https://portal.office.com).
+
+2.  Connectez-vous avec l’ID de votre organisation en utilisant le lien sur le côté gauche de la page.
+
+3.  Créez un abonnement Azure si vous n’en avez pas. Vous ne devriez pas avoir besoin de carte de crédit ni d’effectuer un paiement si vous disposez d’un compte payant (choisissez le lien d’abonnement **Enregistrer votre abonnement Azure Active Directory gratuit**).
+
+4.  Sélectionnez **Active Directory** , puis le nom de votre organisation.
+
+5.  Sélectionnez l’onglet **Utilisateurs** .
+
+6.  Sélectionnez l’utilisateur dont vous voulez supprimer les appareils.
+
+7.  Choisissez **Appareils**.
+
+8.  Supprimez les appareils appropriés, par exemple, ceux qui ne sont plus utilisés ou qui n’ont pas de définitions précises.
+
+
 ## <a name="selective-wipe"></a>réinitialisation sélective
 
 La **réinitialisation sélective** supprime les données d’entreprise, notamment les données de gestion des applications mobiles (GAM) le cas échéant, les paramètres et les profils de messagerie d’un appareil. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil. L’appareil est supprimé d’Intune. Les tableaux suivants décrivent la nature des données supprimées et l’effet de cette opération sur les données qui restent sur l’appareil après une réinitialisation sélective. (Les tableaux sont organisés par plateforme.)
@@ -95,7 +114,7 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
-|Courrier électronique|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également. Si Microsoft Exchange est hébergé localement, les profils de messagerie électronique et les e-mails mis en cache ne sont pas supprimés.|
+|Courrier électronique|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|
 |Disjonction d'Azure Active Directory (AAD)|Enregistrement AAD supprimé.|Enregistrement AAD supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
@@ -111,7 +130,7 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Courrier électronique|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non pris en charge.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.</br>**Exception**: si Microsoft Exchange est hébergé localement, les comptes de messagerie ne sont pas supprimés.|
 |Disjonction d'Azure Active Directory (AAD)|Non.|Non.|Enregistrement AAD supprimé.|Non applicable. Windows 10 ne prend pas en charge la réinitialisation sélective pour appareils joints à Azure Active Directory.|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>Réinitialiser le contenu EFS (Encryption File System)
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Réinitialiser le contenu EFS (Encryption File System)
 La réinitialisation sélective du contenu EFS est prise en charge par Windows 8.1 et Windows RT 8.1. Les points suivants s’appliquent à une réinitialisation sélective du contenu EFS :
 
 -   Seules les applications et les données qui sont protégées par EFS et qui utilisent le même domaine Internet que le compte Intune sont réinitialisées de manière sélective. Pour plus d’informations, consultez la page relative à la [réinitialisation sélective de Windows pour la gestion des données d’appareil](http://technet.microsoft.com/library/dn486874.aspx).
@@ -146,6 +165,6 @@ Ce rapport indique également les personnes qui ont effectué les actions.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

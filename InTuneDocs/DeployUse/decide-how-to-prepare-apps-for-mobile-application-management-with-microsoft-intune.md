@@ -1,8 +1,9 @@
 ---
 title: "Préparer les applications pour la gestion d’applications mobiles | Microsoft Intune"
-description: "Cette rubrique présente des informations pour vous aider à décider quand utiliser l’outil de création de package de restrictions d’application et le Kit de développement logiciel (SDK) d’application pour permettre à vos applications métier personnalisées d’utiliser les stratégies de gestion d’applications mobiles."
+description: "Cette rubrique présente des informations pour vous aider à déterminer quand utiliser l’outil de création de package de restrictions d’application et le SDK d’application pour permettre à vos applications métier personnalisées d’utiliser les stratégies de gestion d’applications mobiles."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,48 +14,52 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70f9fb5580b114fe1ba14a1bd05de58467d5cd00
-ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
+ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
+ms.openlocfilehash: e145baf0f7366f331e8d1df994a8fa40ec693227
 
 
 ---
 
-# Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune
-Vous pouvez configurer vos applications pour utiliser des stratégies de gestion des applications mobiles (GAM) à l’aide de l’outil de création de package de restrictions d’application Intune ou du Kit de développement logiciel (SDK) d’application Intune. Utilisez ces informations pour en savoir plus sur ces deux méthodes et quand les utiliser.
+# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune
+Vous pouvez configurer vos applications pour utiliser des stratégies de gestion des applications mobiles (GAM) à l’aide de l’outil de création de package de restrictions d’application Intune ou du SDK d’application Intune. Utilisez ces informations pour en savoir plus sur ces deux méthodes et quand les utiliser.
 
-## Outil de création de package de restrictions d’application Intune
-L’outil de création de package de restrictions d’application est utilisé principalement pour les applications métier internes. L’outil est une application de ligne de commande qui crée un wrapper autour de l’application, ce qui permet ensuite à l’application d’être gérée par une stratégie de gestion des applications mobiles Intune. Vous n’avez pas besoin du code source pour utiliser l’outil, mais vous avez besoin des informations d’identification de signature.  Pour plus d’informations sur les informations d’identification de signature, consultez le [blog Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Pour obtenir la documentation de l’outil de création de package de restrictions d’application, consultez [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Outil de création de package de restrictions d’application Android) et [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Outil de création de package de restrictions d’application iOS).
+## <a name="intune-app-wrapping-tool"></a>Outil de création de package de restrictions d’application Intune
+L’outil de création de package de restrictions d’application est utilisé principalement pour les applications métier internes. L’outil est une application en ligne de commande qui crée un wrapper autour de l’application, ce qui permet ensuite à l’application d’être gérée par une stratégie GAM Intune.
 
-L’outil de création de package de restrictions d’application ne prend pas en charge les applications de l’App Store ou du Play Store, ni les fonctionnalités qui nécessitent une intégration des temps de développement (voir le tableau comparatif des fonctions suivant).
+Vous n’avez pas besoin du code source pour utiliser l’outil, mais vous avez besoin des informations d’identification de signature.  Pour plus d’informations sur les informations d’identification de signature, consultez le [blog Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Pour obtenir la documentation de l’outil de création de package de restrictions d’application, consultez [Android App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Outil de création de package de restrictions d’application Android) et [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Outil de création de package de restrictions d’application iOS).
 
-Vous devez utiliser l’outil de création de package de restrictions d’application, plutôt que le Kit de développement logiciel (SDK), si l’application a déjà été écrite ou si le code source n’est pas disponible.
+L’outil de création de package de restrictions d’application ne prend **pas** en charge les applications de l’Apple App Store ou du Google Play Store. Il ne prend pas non plus en charge certaines fonctionnalités qui nécessitent une intégration de développement (consultez le tableau comparatif des fonctionnalités suivant).
 
-**L’outil de création de package de restrictions d’application pour la gestion des applications mobiles sur des appareils non inscrits dans Intune est pris en charge dans la préversion publique actuelle. Pour plus d’informations, consultez [Protéger les données et applications métier sur des appareils non inscrits dans Microsoft Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)**.
+Vous devez utiliser l’outil de création de package de restrictions d’application, plutôt que le Kit SDK, si l’application a déjà été écrite ou si le code source n’est pas disponible.
 
-### Plateformes prises en charge
+Pour plus d’informations sur l’outil de création de package de restrictions d’application pour GAM sur les appareils qui ne sont pas inscrits dans Intune, consultez [Protéger les données et applications métier sur des appareils non inscrits dans Microsoft Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
+
+### <a name="supported-app-development-platforms"></a>Plateformes de développement d’applications prises en charge
 
 |**Outil de création de package de restrictions d’application** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |Oui|Oui|
 |**Android**| Non |Oui|
-## Kit de développement logiciel (SDK) d’application Intune
-Le Kit de développement logiciel (SDK) d’application est conçu principalement pour les clients qui ont des applications dans l’App Store ou dans le Play Store, et qui veulent gérer les applications avec Intune. Toute application peut cependant tirer parti de l’intégration du Kit de développement logiciel (SDK), même s’il s’agit d’une application métier.
 
-Pour en savoir plus sur le SDK, consultez sa [présentation](/intune/develop/intune-app-sdk). Pour prendre en main le Kit de développement logiciel, consultez [Prise en main du Kit de développement logiciel (SDK) d’application Microsoft Intune](/intune/develop/intune-app-sdk-get-started).
+## <a name="intune-app-sdk"></a>Kit SDK d’application Intune
+Le SDK d’application est conçu principalement pour les clients qui ont des applications dans l’Apple App Store ou dans le Google Play Store, et qui veulent gérer ces applications avec Intune. Cependant, toute application peut tirer parti de l’intégration du SDK, même s’il s’agit d’applications métier.
 
-### Plateformes prises en charge
-|**Kit de développement logiciel (SDK) d’application Intune** |**Xamarin** |**Cordova**
+Pour en savoir plus sur le SDK, consultez sa [présentation](/intune/develop/intune-app-sdk). Pour commencer à utiliser le SDK, consultez [Prise en main du Kit SDK d’application Microsoft Intune](/intune/develop/intune-app-sdk-get-started).
+
+### <a name="supported-app-development-platforms"></a>Plateformes de développement d’applications prises en charge
+
+|**SDK d’application Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Oui : utilisez le composant Xamarin du SDK d’application Intune|Oui : utilisez le plug-in Cordova du SDK d’application Intune|
-|**Android**| Oui : utilisez le composant Xamarin du SDK d’application Intune|Oui : utilisez le plug-in Cordova du SDK d’application Intune|
+|**iOS**|Oui : utilisez le composant Xamarin du SDK d’application Intune.|Oui : utilisez le plug-in Cordova du SDK d’application Intune.|
+|**Android**| Oui : utilisez le composant Xamarin du SDK d’application Intune.|Oui : utilisez le plug-in Cordova du SDK d’application Intune.|
 
-## Comparaison des fonctionnalités
-Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit de développement logiciel (SDK) et pour l’outil de création de package de restrictions d’application.
+## <a name="feature-comparison"></a>Comparaison des fonctionnalités
+Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK et pour l’outil de création de package de restrictions d’application.
 
 > [!NOTE]
 > Vous pouvez utiliser l’outil de création de package de restrictions d’application avec Intune autonome ou Intune avec Configuration Manager.
 
-|Fonction|Kit de développement logiciel (SDK) d’application|Outil de création de package de restrictions d’application|
+|Fonction|Kit SDK d’application|Outil de création de package de restrictions d’application|
 |-----------|---------------------|-----------|
 |Afficher le contenu web uniquement dans Managed Browser|X|X|
 |Empêcher les sauvegardes Android, iTunes ou iCloud|X|X|
@@ -75,14 +80,15 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit de d
 |Réinitialisation sélective <br></br>**Remarque :** pour iOS, quand le profil de gestion est supprimé, l’application est également supprimée.|X||
 |Empêcher « Enregistrer sous » |X||
 |Prise en charge des identités multiples|X||
-### Voir aussi
+|Prise en charge de GAM sans inscription de l’appareil|X|X|
+### <a name="see-also"></a>Voir aussi
 
 [Outil de création de package de restrictions d’application Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [Outil de création de package de restrictions d’application iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
-[Utiliser le Kit de développement logiciel (SDK) pour activer des applications pour la gestion des applications mobiles](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
+[Utiliser le SDK pour activer des applications pour la gestion des applications mobiles](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
