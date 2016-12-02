@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Les groupes créés dans Intune vous permettent de gérer vos utilisateurs et ap
 
 >[!IMPORTANT]
 >
->Si vous ouvrez l’espace de travail Groupes dans le portail Intune et que vous voyez le message **Les groupes d’utilisateurs Intune sont désormais gérés comme groupes dans Azure Active Directory** avec un lien vers le portail Azure Active Directory, cela signifie que vous utilisez la *nouvelle* approche des groupes de sécurité Azure AD pour gérer les groupes dans Intune. Pour savoir comment créer des groupes, voir [Gestion des groupes dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups).
+>Si vous ouvrez l’espace de travail Groupes dans le portail Intune et que vous voyez le message **Les groupes d’utilisateurs Intune sont désormais gérés comme groupes dans Azure Active Directory** avec un lien vers le portail Azure Active Directory, cela signifie que vous utilisez la *nouvelle* approche des groupes de sécurité Azure AD pour gérer les groupes dans Intune. Pour savoir comment créer des groupes, voir [Gestion des groupes dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
 >
 >Si vous ne voyez pas le lien vers le portail Azure AD, cela signifie que vous utilisez toujours le portail Intune pour la gestion des groupes.
 
@@ -89,6 +89,6 @@ Félicitations ! Vous venez d’effectuer l’étape 5 du *Guide de démarrage r
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

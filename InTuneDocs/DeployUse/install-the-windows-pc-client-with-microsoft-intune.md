@@ -3,8 +3,7 @@
 title: Installation du logiciel client PC | Microsoft Intune
 description: "Utilisez ce guide pour que votre PC Windows soit géré par le logiciel client Microsoft Intune."
 keywords: 
-author: NathBarn
-manager: arob98
+author: staciebarker
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +13,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
-ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
+ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
+ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
 
 
 ---
@@ -36,7 +35,7 @@ Cette série de téléchargements réduit le temps nécessaire pour inscrire ini
 
 Pour que le déploiement soit possible, toutes les méthodes, à l’exception de celles où les utilisateurs installent le logiciel client Intune eux-mêmes, nécessitent le téléchargement du logiciel.
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Admin** &gt; **Téléchargement du logiciel client**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Admin** &gt; **Téléchargement du logiciel client**.
 
   ![Télécharger le client PC Intune](../media/pc-sa-client-download.png)
 
@@ -75,7 +74,7 @@ Sur un ordinateur, accédez au dossier où se trouvent les fichiers d’installa
     Pour plus d'informations sur l'utilisation d'une stratégie de groupe pour déployer automatiquement des logiciels, consultez la documentation de Windows Server.
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Déployer le logiciel client comme partie d’une image
-Vous pouvez déployer le logiciel client Intune sur des ordinateurs dans le cadre d’une image de système d’exploitation en utilisant comme guide la procédure suivante :
+Vous pouvez déployer le logiciel client Intune sur des ordinateurs dans le cadre d’une image de système d’exploitation en utilisant comme guide la procédure suivante :
 
 1.  Copiez les fichiers d’installation du client, **Microsoft_Intune_Setup.exe** et **MicrosoftIntune.accountcert**, dans le dossier **%Systemdrive%\Temp\Microsoft_Intune_Setup** sur l’ordinateur de référence.
 
@@ -104,7 +103,7 @@ Quand la tâche d’inscription automatique s’exécute à l’heure planifiée
 
 La tâche d’inscription automatique Intune, la valeur de Registre **WindowsIntuneEnrollPending** et le certificat du compte sont supprimés de l’ordinateur ciblé quand l’inscription est réussie ou après un délai d’un mois (selon ce qui advient en premier).
 
-## <a name="instruct-users-to-selfenroll"></a>Indiquer aux utilisateurs de s’inscrire eux-mêmes
+## <a name="instruct-users-to-self-enroll"></a>Indiquer aux utilisateurs de s’inscrire eux-mêmes
 
 Les utilisateurs peuvent installer le logiciel client Intune en accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com). Si le portail web peut détecter que l’appareil est un PC Windows, il invite les utilisateurs à inscrire le PC en téléchargeant le logiciel client Intune. Une fois le logiciel téléchargé, les utilisateurs peuvent l’installer pour activer la gestion de leur PC.
 
@@ -115,7 +114,7 @@ Utilisez l'une des procédures suivantes pour vous analyser et valider la réuss
 
 ### <a name="to-verify-the-installation-of-the-client-software-from-the-microsoft-intune-administrator-console"></a>Pour vérifier l'installation du logiciel client depuis la console d'administration Microsoft Intune
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Groupes** &gt; **Tous les appareils** &gt; **Tous les ordinateurs**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Groupes** &gt; **Tous les appareils** &gt; **Tous les ordinateurs**.
 
 2.  Dans la liste, recherchez les ordinateurs qui communiquent avec Intune ou recherchez un ordinateur géré spécifique en tapant le nom de l’ordinateur (ou une partie de son nom) dans la zone **Rechercher des appareils**.
 
@@ -139,6 +138,6 @@ Utilisez l'une des procédures suivantes pour vous analyser et valider la réuss
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

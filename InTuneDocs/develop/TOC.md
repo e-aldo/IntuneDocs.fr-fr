@@ -1,5 +1,5 @@
 # [Comprendre et explorer](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Nouveautés](/intune/whats-new/whats-new-in-microsoft-intune)
+# [Bien démarrer](/intune/get-started/get-started)
 # [Nouveautés](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Déployer et utiliser](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # Développer et personnaliser des applications
@@ -12,6 +12,6 @@
 # [Dépannage](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

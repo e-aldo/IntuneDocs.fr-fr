@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: f1ef3603c074e0f746fc7126f85a6ab55095042e
+ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
+ms.openlocfilehash: 6ea001a00007a323c88f2f384bc768edc06eaa87
 
 
 ---
-
 
 # <a name="your-computer-is-already-enrolled"></a>Votre ordinateur est déjà inscrit
 
 Si vous recevez une erreur indiquant que votre ordinateur est déjà inscrit, celui-ci a déjà été ajouté sur le portail d’entreprise, mais il n’est pas encore lié à votre compte d’utilisateur. Suivez cette procédure pour lier votre ordinateur à votre compte d’utilisateur et terminer le processus.  
 
-Pour lier votre ordinateur :
+Pour lier votre ordinateur :
 
 1.  Sur l’ordinateur que vous souhaitez lier à votre compte, choisissez **Démarrer**, puis **Microsoft Intune Center**.
 
@@ -34,12 +33,12 @@ Pour lier votre ordinateur :
 
 3.  Suivez les invites pour lier l'ordinateur à votre compte d'utilisateur.
 
-Si vous voulez désinscrire votre appareil, suivez les instructions correspondant au type d’appareil que vous avez : [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) ou [Windows](unenroll-your-device-from-intune-windows.md).
+Si vous voulez désinscrire votre appareil, suivez les instructions correspondant au type d’appareil que vous avez : [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) ou [Windows](unenroll-your-device-from-intune-windows.md).
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 
