@@ -14,17 +14,17 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 83b89d06793f6f3934537408fb600b3b89afd35b
 
 
 ---
 
 
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscrire des appareils d’entreprise avec le gestionnaire d’inscription d’appareil dans Microsoft Intune
-Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du *gestionnaire d’inscription d’appareil* (DEM) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils. Chaque appareil inscrit utilise une seule licence. Nous vous recommandons d’utiliser des appareils inscrits par le biais de ce compte comme appareils partagés plutôt que comme appareils personnels (« BYOD »). Les utilisateurs ne pourront pas utiliser des applications de messagerie « natives », par exemple.
+Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du *gestionnaire d’inscription d’appareil* (DEM) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils. Chaque appareil inscrit utilise une seule licence. Nous vous recommandons d’utiliser des appareils inscrits par le biais de ce compte comme appareils partagés plutôt que comme appareils personnels (« BYOD »). Les utilisateurs ne pourront pas utiliser des applications de messagerie « natives », par exemple. Les licences pour DEM sont gérées par appareil, et non pas par utilisateur.
 
-Par exemple, vous pouvez affecter un compte de gestionnaire d’inscription d’appareil à un directeur ou responsable de magasin pour lui permettre d’effectuer les opérations suivantes :
+Par exemple, vous pouvez affecter un compte de gestionnaire d’inscription d’appareil à un directeur ou responsable de magasin pour lui permettre d’effectuer les opérations suivantes :
 
 -   Inscrire des appareils dans Intune
 
@@ -35,12 +35,12 @@ Par exemple, vous pouvez affecter un compte de gestionnaire d’inscription d’
 -   Configurer l’accès aux données de l’entreprise
 
 
-**Scénario faisant intervenir un gestionnaire d’inscription d’appareil :** Un restaurant souhaite que son personnel de service utilise des tablettes et son personnel de cuisine des écrans de commande. Les employés n’ont jamais besoin d’accéder aux données de l’entreprise ou de se connecter comme utilisateurs. L’administrateur Intune crée un compte de gestionnaire d’inscription d’appareil et inscrit les appareils d’entreprise à l’aide de ce compte. L’administrateur pourrait également donner les informations d’identification du gestionnaire d’inscription d’appareil au directeur du restaurant, ce qui permettrait à celui-ci d’inscrire et de gérer les appareils.
+**Scénario faisant intervenir un gestionnaire d’inscription d’appareil :** Un restaurant souhaite que son personnel de service utilise des tablettes et son personnel de cuisine des écrans de commande. Les employés n’ont jamais besoin d’accéder aux données de l’entreprise ou de se connecter comme utilisateurs. L’administrateur Intune crée un compte de gestionnaire d’inscription d’appareil et inscrit les appareils d’entreprise à l’aide de ce compte. L’administrateur pourrait également donner les informations d’identification du gestionnaire d’inscription d’appareil au directeur du restaurant, ce qui permettrait à celui-ci d’inscrire et de gérer les appareils.
 
 L’administrateur ou le directeur peuvent déployer des applications propres aux rôles sur les appareils du restaurant. Un administrateur peut également sélectionner un appareil dans la console Intune et le retirer de la gestion des appareils mobiles avec la console d’administration.
 
-Les appareils inscrits avec un compte de gestionnaire d’inscription d’appareil ont les limitations suivantes :
-  - L’absence « d’utilisateur » propre à l’appareil empêche tout accès aux données d’entreprise ou à la messagerie. Toutefois, le VPN, par exemple, peut toujours fournir aux applications d’appareil un accès aux données.
+Les appareils inscrits avec un compte de gestionnaire d’inscription d’appareil ont les limitations suivantes :
+  - L’absence « d’utilisateur » propre à l’appareil empêche tout accès aux données d’entreprise ou à la messagerie. Toutefois, le VPN, par exemple, peut toujours fournir aux applications d’appareil un accès aux données.
   - Il n’y a pas d’accès conditionnel, car il s’agit de scénarios par utilisateur.
   - Vous ne pouvez pas réinitialiser ces appareils à partir du Portail d’entreprise.
   - Seul l’appareil local s’affiche dans l’application Portail d’entreprise ou le site web.
@@ -70,7 +70,7 @@ Les comptes de gestionnaire d'inscription d'appareil sont des comptes d'utilisat
 
 7.  Entrez l’**ID d’utilisateur** du compte Intune, puis choisissez **OK**. Le gestionnaire d’inscription d’appareil ne peut pas être administrateur Intune.
 
-8.  À présent, le gestionnaire d’inscription d’appareil peut inscrire des appareils mobiles en suivant la même procédure qu’un utilisateur final pour un scénario BYOD dans le Portail d’entreprise.
+8.  À présent, le gestionnaire d’inscription d’appareil peut inscrire des appareils mobiles en suivant la même procédure qu’un utilisateur final pour un scénario BYOD dans le Portail d’entreprise. L’utilisateur final du gestionnaire peut installer l’application Portail d’entreprise et inscrire l’appareil à l’aide de ses informations d’identification DEM sur 1 000 appareils au maximum.
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Supprimer un gestionnaire d'inscription d'appareil d'Intune
 
@@ -82,7 +82,7 @@ Les comptes de gestionnaire d'inscription d'appareil sont des comptes d'utilisat
 
 4.  Choisissez **Oui** pour confirmer la suppression du gestionnaire d’inscription d’appareil.
 
-La suppression d'un gestionnaire d'inscription d'appareil n'affecte pas les appareils inscrits. Quand un gestionnaire d'inscription d'appareil est supprimé :
+La suppression d'un gestionnaire d'inscription d'appareil n'affecte pas les appareils inscrits. Quand un gestionnaire d'inscription d'appareil est supprimé :
 
 -   Aucun appareil inscrit n’est affecté.
 

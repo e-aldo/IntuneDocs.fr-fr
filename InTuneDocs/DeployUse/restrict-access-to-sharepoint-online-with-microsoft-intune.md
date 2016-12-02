@@ -14,8 +14,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
-ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
+ms.sourcegitcommit: 4f6e7525ae2a125851ad402644d5fbc8767c77dc
+ms.openlocfilehash: 9bfc8886b464452f8fe35d4b740607ef3bc07a71
 
 
 ---
@@ -36,7 +36,7 @@ Quand un utilisateur tente de se connecter à un fichier à l’aide d’une app
 
 **Avant** de configurer une stratégie d’accès conditionnel à SharePoint Online, vous devez :
 - Disposer d’un **abonnement SharePoint Online** ; les utilisateurs doivent disposer d’une licence pour SharePoint Online.
-- Avoir **un abonnement Enterprise Mobility + Security ou Azure Active Directory Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Avoir **un abonnement Enterprise Mobility + Security ou Azure Active Directory Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 
   Pour se connecter aux fichiers requis, l’appareil doit :
@@ -49,37 +49,37 @@ Quand un utilisateur tente de se connecter à un fichier à l’aide d’une app
 
 L'état de l'appareil est stocké dans Azure Active Directory, qui autorise ou bloque l'accès aux fichiers en fonction des conditions spécifiées.
 
-Si une condition n'est pas remplie, l'utilisateur reçoit l'un des messages suivants quand il tente de se connecter :
+Si une condition n'est pas remplie, l'utilisateur reçoit l'un des messages suivants quand il tente de se connecter :
 
 -   Si l’appareil n’est pas inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qu’il n’est pas inscrit dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application du portail d’entreprise et inscrire l’appareil.
 
 -   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers le site web du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dans lequel il peut trouver des informations sur le problème et des solutions pour y remédier.
 
-**L’accès conditionnel ne s’applique pas au partage externe**. Pour découvrir comment empêcher le partage externe dans votre locataire ou collection de sites, consultez [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**L’accès conditionnel ne s’applique pas au partage externe**. Pour découvrir comment empêcher le partage externe dans votre locataire ou collection de sites, consultez [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 >[!NOTE]
 >Si vous activez l’accès conditionnel pour SharePoint Online, nous vous recommandons de désactiver le domaine dans la liste comme décrit dans la rubrique [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 
 ## <a name="support-for-mobile-devices"></a>Prise en charge des appareils mobiles
-- iOS 8.0 et versions ultérieures
-- Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 ou versions ultérieures
+- iOS 8.0 et versions ultérieures
+- Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 ou versions ultérieures
 - Windows Phone 8.1 et versions ultérieures
 
-Vous pouvez restreindre l’accès à SharePoint Online depuis un navigateur sur les appareils **iOS** et **Android**.  L’accès ne sera autorisé qu’à partir des navigateurs pris en charge sur les appareils compatibles :
+Vous pouvez restreindre l’accès à SharePoint Online depuis un navigateur sur les appareils **iOS** et **Android**.  L’accès ne sera autorisé qu’à partir des navigateurs pris en charge sur les appareils compatibles :
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS et Android versions 5.0 et ultérieures)
+* Managed Browser (iOS et Android versions 5.0 et ultérieures)
 
 **Les navigateurs non pris en charge seront bloqués**.
 
 ## <a name="support-for-pcs"></a>Prise en charge des PC
-- Windows 8.1 et versions ultérieures (quand ils sont inscrits auprès de Microsoft Intune)
-- Windows 7.0, Windows 8.1 ou Windows 10 (quand ils sont joints au domaine)
+- Windows 8.1 et versions ultérieures (quand ils sont inscrits auprès de Microsoft Intune)
+- Windows 7.0, Windows 8.1 ou Windows 10 (quand ils sont joints au domaine)
 > [!NOTE]
->Pour utiliser l’accès conditionnel avec des PC Windows 10, vous devez mettre à jour ces PC avec la Mise à jour anniversaire Windows 10.
+>Pour utiliser l’accès conditionnel avec des PC Windows 10, vous devez mettre à jour ces PC avec la Mise à jour anniversaire Windows 10.
 
   - Les PC joints à un domaine doivent être configurés de manière à ce qu’ils [s’inscrivent automatiquement](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) dans Azure Active Directory.
-Le service AAD DRS sera activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service d'inscription d'appareils AD FS ne verront pas les appareils inscrits dans leur annuaire Active Directory local.
+Le service AAD DRS sera activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service d'inscription d'appareils AD FS ne verront pas les appareils inscrits dans leur annuaire Active Directory local.
 
   - Si la stratégie est définie de manière à exiger la jonction à un domaine et que le PC n’est pas joint à un domaine, un message invitant l’utilisateur à contacter l’administrateur informatique s’affiche.
 
@@ -94,7 +94,7 @@ Le service AAD DRS sera activé automatiquement pour les clients Intune et Offi
 
 ## <a name="configure-conditional-access-for-sharepoint-online"></a>Configurer l’accès conditionnel à SharePoint Online
 
-### <a name="step-1-configure-active-directory-security-groups"></a>Étape 1 : configurer les groupes de sécurité Active Directory
+### <a name="step-1-configure-active-directory-security-groups"></a>Étape 1 : configurer les groupes de sécurité Active Directory
 Avant de commencer, configurez les groupes de sécurité Azure Active Directory pour la stratégie d'accès conditionnel. Vous pouvez configurer ces groupes dans le **Centre d'administration Office 365**ou dans le **Portail de compte Intune**. Ces groupes seront utilisés pour cibler ou exempter les utilisateurs de la stratégie. Quand un utilisateur est ciblé par une stratégie, chaque appareil qu'il utilise doit être conforme à cette stratégie pour qu'il puisse accéder aux ressources.
 
 Vous pouvez spécifier deux types de groupes dans une stratégie SharePoint Online :
@@ -105,7 +105,7 @@ Vous pouvez spécifier deux types de groupes dans une stratégie SharePoint Onli
 
 Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégie.
 
-### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Étape 2 : configurer et déployer une stratégie de conformité
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Étape 2 : configurer et déployer une stratégie de conformité
 Si ce n’est pas encore fait, créez une stratégie de conformité et déployez-la sur tous les utilisateurs qui seront ciblés par la stratégie d’accès conditionnel SharePoint Online.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ Pour plus d’informations sur la configuration de la stratégie de conformité,
 
 Quand vous êtes prêt, passez à l' **Étape 3**.
 
-### <a name="step-3-configure-the-sharepoint-online-policy"></a>Étape 3 : configurer la stratégie SharePoint Online
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>Étape 3 : configurer la stratégie SharePoint Online
 Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePoint Online aux appareils gérés et conformes. Cette stratégie sera stockée dans Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
@@ -138,7 +138,7 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 
         Cette opération exige que tous les appareils utilisés pour accéder à **SharePoint Online** soient inscrits dans Intune et conformes aux stratégies.  Toute application cliente utilisant l’**authentification moderne** est soumise à la stratégie d’accès conditionnel. Si la plateforme n’est actuellement pas prise en charge par Intune, l’accès à **SharePoint Online** est bloqué.
 
-        Si vous sélectionnez l’option **Toutes plateformes**, Azure Active Directory applique cette stratégie à toutes les demandes d’authentification, quelle que soit la plateforme signalée par l’application cliente.  Toutes les plateformes doivent être inscrites et être conformes, sauf dans les cas suivants :
+        Si vous sélectionnez l’option **Toutes plateformes**, Azure Active Directory applique cette stratégie à toutes les demandes d’authentification, quelle que soit la plateforme signalée par l’application cliente.  Toutes les plateformes doivent être inscrites et être conformes, sauf dans les cas suivants :
         *   Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
         * Plateformes non prises en charge comme Mac.  Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
 
@@ -154,13 +154,13 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 
      -   **Les appareils doivent être conformes** Choisissez cette option pour spécifier que les PC doivent être inscrits auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et être conforme. Si le PC n'est pas inscrit, un message contenant des instructions sur la procédure d'inscription à suivre s'affiche.
 
-4.   Sous **Accès du navigateur à SharePoint et à OneDrive Entreprise**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs est bloqué.  Les restrictions de plateforme que vous avez sélectionnées pour Accès aux applications pour OneDrive s’appliquent également ici.
+4.   Sous **Accès du navigateur à SharePoint et à OneDrive Entreprise**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs est bloqué.  Les restrictions de plateforme que vous avez sélectionnées pour Accès aux applications pour OneDrive s’appliquent également ici.
 
-  Sur les appareils **Android**, les utilisateurs doivent activer l’accès au navigateur.  Pour ce faire, l’utilisateur final doit activer l’option « Activer l’accès du navigateur » sur l’appareil inscrit comme suit :
+  Sur les appareils **Android**, les utilisateurs doivent activer l’accès au navigateur.  Pour ce faire, l’utilisateur final doit activer l’option « Activer l’accès du navigateur » sur l’appareil inscrit comme suit :
   1.    Lancer l’**application Portail d’entreprise**.
   2.    Accéder à la page **Paramètres** à partir des trois points (...) ou du bouton de menu matériel.
   3.    Appuyer sur le bouton **Activer l’accès du navigateur**.
-  4.  Dans le navigateur Chrome, se déconnecter d’Office 365 et redémarrer Chrome.
+  4.  Dans le navigateur Chrome, se déconnecter d’Office 365 et redémarrer Chrome.
 
   Sur les plateformes **iOS et Android**, pour identifier l’appareil qui est utilisé pour accéder au service, Azure Active Directory émet un certificat TLS (Transport Layer Security) à destination de l’appareil.  L’appareil affiche le certificat avec une invite demandant à l’utilisateur final de sélectionner le certificat, comme indiqué dans les captures d’écran ci-dessous. L’utilisateur final doit sélectionner ce certificat pour pouvoir continuer à utiliser le navigateur.
 
@@ -195,6 +195,6 @@ Sélectionnez un groupe d'appareils mobiles quelconque, puis sous l'onglet **App
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
