@@ -2,10 +2,10 @@
 title: Synchroniser votre appareil iOS manuellement | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
-ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 
 ---
 
 
-# Synchroniser votre appareil iOS manuellement
+# <a name="sync-your-ios-device-manually"></a>Synchroniser votre appareil iOS manuellement
 
-Si l’installation de votre application est trop longue, suivez ces instructions pour synchroniser manuellement votre appareil iOS. La synchronisation manuelle peut vous aider à accélérer l’installation. La fonctionnalité de synchronisation s’applique uniquement à iOS, et pas à Mac OS X.
+Si l’installation de votre application prend trop de temps, vous pouvez essayer de synchroniser votre appareil manuellement. La synchronisation manuelle peut vous aider à accélérer l’installation. La fonctionnalité de synchronisation s’applique uniquement à iOS, et pas à Mac OS X.
 
 1. Ouvrez l’application Portail d’entreprise iOS.
 
@@ -38,10 +38,10 @@ Si l’installation de votre application est trop longue, suivez ces instruction
 
 Un cercle en rotation s’affiche sur l’écran jusqu’à ce que la synchronisation soit terminée.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
