@@ -2,7 +2,7 @@
 title: Que peut voir votre administrateur informatique lorsque vous inscrivez votre appareil dans Intune ? | Microsoft Intune
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
-ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 4563673f1c38cbe29e7cf27e94e8b32411c6c089
 
 
 ---
 
 
-# Que peut voir votre administrateur informatique lorsque vous inscrivez votre appareil dans Intune ?
+# <a name="what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune"></a>Que peut voir votre administrateur informatique lorsque vous inscrivez votre appareil dans Intune ?
 
 En inscrivant votre appareil Windows dans Intune, vous autorisez votre administrateur informatique à gérer votre appareil pour protéger les informations de l’entreprise présentes sur l’appareil.
 
@@ -62,6 +62,6 @@ Pour plus d’informations, consultez [Que se passe-t-il si vous installez l’a
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

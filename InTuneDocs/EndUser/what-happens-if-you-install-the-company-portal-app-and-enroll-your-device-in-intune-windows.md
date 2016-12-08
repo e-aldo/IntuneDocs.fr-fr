@@ -2,10 +2,10 @@
 title: "Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows dans Intune ? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows dans Intune ?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows dans Intune ?
 
 Quand vous installez l’application Portail d’entreprise et que vous l’utilisez pour inscrire un appareil Windows ou Windows Phone, vous permettez à l’administrateur informatique de gérer votre appareil pour sécuriser les données de votre entreprise ou établissement scolaire. Cette rubrique décrit ce qui se passe pour les appareils antérieurs à Windows 10. Pour les appareils Windows 10, consultez la [rubrique connexe](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
-## Que se passe-t-il pour tous les appareils Windows après l’inscription ?
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Que se passe-t-il pour tous les appareils Windows après l’inscription ?
 Quand votre appareil Windows ou Windows Phone est inscrit dans Intune, vous pouvez :
 
 -   accéder au réseau de l’entreprise, à votre messagerie et à vos fichiers de travail ;
@@ -53,7 +53,7 @@ Quand vous inscrivez votre appareil, vous autorisez l’administrateur informati
 
 -   Vous empêcher de prendre des photos de données d’entreprise.
 
-## Que se passe-t-il pour tous les ordinateurs Windows après l’inscription ?
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Que se passe-t-il pour tous les ordinateurs Windows après l’inscription ?
 
 -  Certains logiciels seront installés sur votre ordinateur pour permettre à votre administrateur informatique de gérer l’ordinateur et à vous d’accéder aux ressources d’entreprise telles que des applications et des informations de support. Votre administrateur informatique peut automatiquement mettre à jour ces logiciels.
 
@@ -63,7 +63,7 @@ Quand vous inscrivez votre appareil, vous autorisez l’administrateur informati
 
 -  Votre administrateur informatique peut installer des applications et des mises à jour sur votre ordinateur.
 
-## Que se passe-t-il toutes les huit heures après l’inscription d’appareils ?
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Que se passe-t-il toutes les huit heures après l’inscription d’appareils ?
 Environ toutes les huit heures, les appareils inscrits vont :
 
 -   télécharger toute mise à jour d’une application ou d’une stratégie rendue disponible par votre administrateur informatique ;
@@ -72,10 +72,10 @@ Environ toutes les huit heures, les appareils inscrits vont :
 
 -   envoyer toute mise à jour de l'inventaire d'applications de la société.
 
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

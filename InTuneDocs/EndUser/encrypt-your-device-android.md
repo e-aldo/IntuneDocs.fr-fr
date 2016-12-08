@@ -2,10 +2,10 @@
 title: Chiffrer votre appareil | Microsoft Intune
 description: Cette rubrique explique comment chiffrer un appareil Android
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
 
 
-# Chiffrer votre appareil
+# <a name="encrypt-your-device"></a>Chiffrer votre appareil
 
 Si votre entreprise vous demande de chiffrer votre appareil Android avant de pouvoir accéder aux fichiers, à la messagerie ou aux données de l’entreprise, chiffrez votre appareil comme suit : Vous devrez peut-être définir un code confidentiel ou un mot de passe avant de chiffrer votre appareil, à la demande de votre administrateur informatique.
 
@@ -34,7 +34,7 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 
 3.  Suivez les instructions à l'écran. Au cours du chiffrement, votre appareil peut redémarrer plusieurs fois.
 
-### Réponse aux problèmes
+### <a name="what-to-do-if-you-have-issues"></a>Réponse aux problèmes
 **Problème** : Vous avez déjà chiffré votre appareil, et vous constatez l’un des problèmes décrits ci-après.
 
 - Le bouton de chiffrement est désactivé.
@@ -57,10 +57,10 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 
     5. Ouvrez l’application Portail d’entreprise, sélectionnez votre appareil, puis appuyez sur **Vérifier la conformité**.
 
-Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
+Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’[équipe Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

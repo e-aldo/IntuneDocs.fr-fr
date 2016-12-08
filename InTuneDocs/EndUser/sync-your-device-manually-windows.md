@@ -2,8 +2,8 @@
 title: Synchroniser votre appareil Windows manuellement | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -15,24 +15,24 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
-ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 
 ---
 
 
-# Synchroniser votre appareil Windows manuellement
+# <a name="sync-your-windows-device-manually"></a>Synchroniser votre appareil Windows manuellement
 Si l’installation de votre application prend trop de temps, vous pouvez essayer de synchroniser votre appareil Windows manuellement. La synchronisation manuelle peut vous aider à accélérer l’installation.
 
-Seules les versions suivantes sont prises en charge. Suivez les instructions correspondant au type d’appareil que vous utilisez.
+Seules les versions suivantes sont prises en charge. Si votre appareil n’est pas répertorié, la synchronisation n’est pas prise en charge. Suivez les instructions correspondant au type d’appareil que vous utilisez.
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-8-1)
 
 
-## Windows 10 Mobile
+## <a name="windows-10-mobile"></a>Windows 10 Mobile
 Pour synchroniser manuellement votre appareil mobile Windows 10 pour accélérer l’installation d’une application :
 
 1. Accédez à **Toutes les applications** > **Paramètres** > **Comptes**.
@@ -53,7 +53,7 @@ Pour synchroniser manuellement votre appareil mobile Windows 10 pour accélérer
 
     Le message « Nous synchronisons votre compte » apparaît en haut de l’écran. Le bouton **Synchroniser** est grisé tant que la synchronisation n’est pas terminée sur votre appareil.
 
-## Windows 10 Desktop
+## <a name="windows-10-desktop"></a>Windows 10 Desktop
 Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour connaître la procédure à exécuter, examinez les captures d’écran, puis suivez les étapes qui ressemblent à ce que vous voyez sur votre appareil. 
 
 1. Choisissez le bouton **Démarrer**, puis choisissez **Paramètres**.
@@ -74,7 +74,7 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 
     ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png) 
 
-### Étapes à suivre si vous voyez Accès scolaire ou professionnel
+### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Étapes à suivre si vous voyez Accès scolaire ou professionnel
 
 1. Dans la page **Comptes**, choisissez **Accès Professionnel ou Scolaire**.
 
@@ -93,7 +93,7 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 
 4. Choisissez le bouton **Synchroniser**. Votre appareil sera synchronisé avec Intune.
 
-### Étapes à suivre si vous voyez Accès professionnel
+### <a name="steps-to-follow-if-you-see-work-access"></a>Étapes à suivre si vous voyez Accès professionnel
     
 1. Dans la page **Comptes**, choisissez **Accès professionnel**.
 
@@ -109,7 +109,7 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 
    Le bouton est grisé jusqu’à ce que la synchronisation se termine.
 
-## Windows Phone 8.1
+## <a name="windows-phone-81"></a>Windows Phone 8.1
 Pour synchroniser manuellement votre appareil Windows Phone 8.1 pour accélérer l’installation d’une application :
 
 1. Accédez à **Toutes les applications** > **Paramètres** > **espace de travail**.
@@ -126,10 +126,10 @@ Pour synchroniser manuellement votre appareil Windows Phone 8.1 pour accélérer
 
    Le message « Nous synchronisons votre compte » apparaît en haut de l’écran jusqu’à la fin de la synchronisation de votre appareil.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

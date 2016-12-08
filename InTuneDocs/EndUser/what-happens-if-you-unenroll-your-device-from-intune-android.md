@@ -2,10 +2,10 @@
 title: "Que se passe-t-il si vous désinscrivez votre appareil Android d’Intune ? | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
-ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
 
 
 ---
 
 
-# Que se passe-t-il si vous désinscrivez votre appareil Android d’Intune ?
+# <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Que se passe-t-il si vous désinscrivez votre appareil Android d’Intune ?
 
 Quand vous désinscrivez votre appareil Android d’Intune :
 
@@ -40,10 +40,10 @@ Si votre appareil est configuré uniquement pour recevoir les e-mails d’entrep
 
 Pour obtenir des instructions sur la désinscription, consultez [Annuler l’inscription de votre appareil dans Intune à l’aide de l’application Portail d’entreprise](unenroll-your-device-from-intune-android.md).
 
-Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’équipe Microsoft Android wintunedroidfbk@microsoft.com.
+Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’[équipe Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
