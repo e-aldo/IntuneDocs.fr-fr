@@ -2,7 +2,7 @@
 title: "Vous êtes invité à installer Lookout for Work sur votre appareil iOS | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
 
 ---
 
-# Vous êtes invité à installer Lookout for Work sur votre appareil iOS
+# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>Vous êtes invité à installer Lookout for Work sur votre appareil iOS
 
 Pour pouvoir accéder à vos ressources de travail, votre administrateur informatique vous demande d’installer l’application Lookout for Work, qui vous aide à protéger votre appareil en détectant les menaces à la sécurité potentielles. Vous pouvez voir différentes invites sur votre appareil, suivant la façon dont votre administrateur informatique a configuré Lookout for Work.
 
@@ -55,6 +55,6 @@ Les installations peuvent parfois échouer en raison de problèmes techniques ho
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
