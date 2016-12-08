@@ -2,10 +2,10 @@
 title: Inscrire un appareil iOS dans Intune | Microsoft Intune
 description: Cette rubrique explique comment inscrire un appareil iOS dans Intune
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 
 ---
 
 
-# Inscrire un appareil iOS dans Intune
+# <a name="enroll-your-ios-device-in-intune"></a>Inscrire un appareil iOS dans Intune
 
 Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil iOS pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, le service Informatique peut gérer ces ressources professionnelles ou pédagogiques, les sécuriser et vous donner la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -35,7 +35,7 @@ Si vous essayez d’inscrire un appareil Mac OS X, consultez [Inscrire votre a
 - Si vous avez bloqué Safari sur votre appareil, débloquez-le. Vous devez utiliser Safari pour effectuer l’inscription.
 
 
-**Pour inscrire un appareil iOS**
+**Pour inscrire un appareil iOS :**
 
 1.  Appliquez la procédure décrite dans [Installer l’application Portail d’entreprise Intune et s’y connecter](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
@@ -92,10 +92,10 @@ Si vous essayez d’inscrire un appareil Mac OS X, consultez [Inscrire votre a
 Votre appareil est maintenant inscrit dans Intune, et l’application Portail d’entreprise réapparaît.
 
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
