@@ -2,8 +2,8 @@
 title: "Protéger les applications métier sur des appareils non inscrits | Microsoft Intune"
 description: "Cette rubrique décrit la procédure à suivre pour préparer vos applications métier personnalisées afin d’appliquer des stratégies de gestion des applications mobiles qui peuvent éviter de perdre des données."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ Cette rubrique décrit les étapes nécessaires pour appliquer des stratégies d
 
 ##  <a name="step-1-prepare-the-app"></a>Étape 1: Préparer l’application
 
-Avant de pouvoir appliquer les stratégies de gestion des applications mobiles à une application, vous devez tout d’abord encapsuler l’application à l’aide de l’outil de création de package de restrictions d’application Microsoft Intune pour [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) et [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool), ou utiliser le [SDK d’application Intune](/../develop/intune-app-sdk) pour intégrer les fonctionnalités de protection des applications Intune manuellement.
+Avant de pouvoir appliquer les stratégies de gestion des applications mobiles à une application, vous devez tout d’abord encapsuler l’application à l’aide de l’outil de création de package de restrictions d’application Microsoft Intune pour [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) et [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md), ou utiliser le [SDK d’application Intune](../develop/intune-app-sdk.md) pour intégrer les fonctionnalités de protection des applications Intune manuellement.
 
-Pour plus d’informations sur l’utilisation de l’outil de création de package de restrictions d’application par rapport au SDK d’application Intune, consultez [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+Pour plus d’informations sur l’utilisation de l’outil de création de package de restrictions d’application par rapport au SDK d’application Intune, consultez [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 ## <a name="step-2-add-the-app"></a>Étape 2 : Ajouter l’application
 
@@ -81,6 +81,6 @@ Vous pouvez supprimer une application métier de la liste des applications. Cela
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
