@@ -2,7 +2,8 @@
 title: "Résoudre les problèmes d’accès conditionnel | Microsoft Intune"
 description: "Cette rubrique décrit les actions à entreprendre quand vos utilisateurs ne parviennent pas à accéder à des ressources par le biais de l’accès conditionnel Intune."
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ Un appareil peut être bloqué au niveau de l’accès conditionnel sans recevoi
 - Examinez les journaux du connecteur Exchange pour l’activité sendemail et recherchez les éventuelles erreurs. Un exemple de la commande à rechercher est SendEmail à partir du compte de notification jusqu’à useremail.
 - Avant que le connecteur Exchange bloque l’appareil, il envoie l’e-mail d’activation. Si l’appareil est hors connexion, il peut ne pas recevoir l’e-mail d’activation. Vérifiez si le client d’e-mail de l’appareil récupère les e-mails avec Push au lieu de Poll, car cela pourrait également expliquer que l’utilisateur ne reçoit pas l’e-mail. Basculez sur Poll et regardez si l’appareil reçoit l’e-mail.
 
-## <a name="noncompliant-device-not-blocked"></a>Appareil non conforme non bloqué
+## <a name="non-compliant-device-not-blocked"></a>Appareil non conforme non bloqué
 
 Si vous constatez qu’un appareil continue à avoir un accès alors qu’il n’est pas conforme, procédez comme suit.
 
@@ -158,6 +159,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

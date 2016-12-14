@@ -2,8 +2,8 @@
 title: "Inclure des applications iOS dans un wrapper avec l’outil de création de package de restrictions d’application Intune | Microsoft Intune"
 description: "Cette rubrique explique comment inclure des applications iOS dans un wrapper sans changer leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,30 +14,30 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba4ace8106e83f3579cbaf98dcea8ef240a202a9
-ms.openlocfilehash: d150c97197e11d4a81727dca5ddd8eb1310aa193
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Préparer des applications iOS pour la gestion des applications mobiles avec l'outil de création de package de restrictions d'application Intune
 
-Utilisez l’outil de création de package de restrictions d’application Microsoft Intune pour iOS pour changer le comportement des applications iOS internes en activant les fonctionnalités de protection sans modifier le code de l’application proprement dit.
+Utilisez l’outil de création de package de restrictions d’application Microsoft Intune pour iOS pour changer le comportement des applications iOS internes en activant les fonctionnalités de protection sans modifier le code de l’application proprement dit.
 
 L’outil est une application en ligne de commande macOS qui crée un wrapper autour d’une application. Une fois qu’une application est traitée, vous pouvez modifier sa fonctionnalité à l’aide de [stratégies de gestion des applications mobiles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) Intune déployées par l’administrateur informatique.
 
-Pour télécharger l’outil, consultez la section [Outil de création de package de restrictions d’application Microsoft Intune pour iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) sur GitHub.
+Pour télécharger l’outil, consultez la section [Outil de création de package de restrictions d’application Microsoft Intune pour iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) sur GitHub.
 
 
 
 ## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Remplir les conditions préalables pour l’outil de création de package de restrictions d’application
-Pour en savoir plus sur l’obtention de la configuration requise, consultez le billet de blog [How to obtain prerequisites for the Intune App Wrapping Tool for iOS (Comment obtenir la configuration requise pour l’outil de création de package de restrictions d’application Microsoft Intune pour iOS)](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
+Pour en savoir plus sur l’obtention de la configuration requise, consultez le billet de blog [How to obtain prerequisites for the Intune App Wrapping Tool for iOS (Comment obtenir la configuration requise pour l’outil de création de package de restrictions d’application Microsoft Intune pour iOS)](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
 |Situation|Plus d'informations|
 |---------------|--------------------------------|
-|Système d’exploitation et boîte à outils pris en charge | Vous devez exécuter l’outil de création de package de restrictions d’application sur un ordinateur macOS exécutant la version X 10.8.5 ou ultérieure et sur lequel est installé l’ensemble d’outils XCode version 5 ou ultérieure.|
+|Système d’exploitation et boîte à outils pris en charge | Vous devez exécuter l’outil de création de package de restrictions d’application sur un ordinateur macOS exécutant la version X 10.8.5 ou ultérieure et sur lequel est installé l’ensemble d’outils XCode version 5 ou ultérieure.|
 |Certificat de signature et profil de configuration | Vous devez disposer d’un certificat de signature Apple et d’un profil de configuration. Consultez votre [documentation pour développeurs Apple](https://developer.apple.com/).|
-|Traitement d’une application avec l’outil de création de package de restrictions d’application  |Elle doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV). Vous ne pouvez pas utiliser cet outil pour traiter des applications de l'Apple Store. Les applications doivent être écrites pour iOS version 8.0 ou ultérieure. Elles doivent être également au format PIE (Position Independent Executable). Pour plus d’informations sur le format PIE, consultez votre documentation pour développeurs Apple. Enfin, l’application doit avoir l’extension **.app** ou **.ipa**.|
+|Traitement d’une application avec l’outil de création de package de restrictions d’application  |Elle doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV). Vous ne pouvez pas utiliser cet outil pour traiter des applications de l'Apple Store. Les applications doivent être écrites pour iOS version 8.0 ou ultérieure. Elles doivent être également au format PIE (Position Independent Executable). Pour plus d’informations sur le format PIE, consultez votre documentation pour développeurs Apple. Enfin, l’application doit avoir l’extension **.app** ou **.ipa**.|
 |Applications que l’outil ne peut pas traiter | Applications chiffrées, applications non signées et applications avec des attributs de fichiers étendus.|
 |Définition de droits pour votre application|Avant d’encapsuler l’application, vous devez définir des droits qui confèrent à l’application des autorisations et des fonctionnalités supplémentaires qui vont au-delà de celles qui sont généralement accordées. Consultez [Définition des droits de l’application](#setting-app-entitlements) pour obtenir des instructions.|
 
@@ -55,7 +55,7 @@ Pour en savoir plus sur l’obtention de la configuration requise, consultez le 
 
 ### <a name="use-terminal"></a>Utiliser un terminal
 
-Ouvrez le programme de terminal macOS et accédez au dossier dans lequel vous avez enregistré les fichiers de l’outil de création de package de restrictions d’application. L’outil exécutable se nomme IntuneMAMPackager et se trouve dans IntuneMAMPackager/Contents/MacOS. Exécutez la commande suivante :
+Ouvrez le programme de terminal macOS et accédez au dossier dans lequel vous avez enregistré les fichiers de l’outil de création de package de restrictions d’application. L’outil exécutable se nomme IntuneMAMPackager et se trouve dans IntuneMAMPackager/Contents/MacOS. Exécutez la commande suivante :
 
 ```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
@@ -64,18 +64,18 @@ Ouvrez le programme de terminal macOS et accédez au dossier dans lequel vous av
 > [!NOTE]
 > Certains paramètres sont facultatifs, comme indiqué dans le tableau suivant.
 
-**Exemple :** l’exemple de commande suivant exécute l’outil de création de package de restrictions d’application sur une application nommée MyApp.ipa. Un profil de configuration et le hachage SHA-1 du certificat de signature sont spécifiés et utilisés pour signer l’application encapsulée. L’application de sortie (MyApp_Wrapped.ipa) est créée et stockée dans votre dossier Bureau.
+**Exemple :** l’exemple de commande suivant exécute l’outil de création de package de restrictions d’application sur une application nommée MyApp.ipa. Un profil de configuration et le hachage SHA-1 du certificat de signature sont spécifiés et utilisés pour signer l’application encapsulée. L’application de sortie (MyApp_Wrapped.ipa) est créée et stockée dans votre dossier Bureau.
 
 ```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
 ```
 
 ### <a name="command-line-parameters"></a>Paramètres de ligne de commande
-Vous pouvez utiliser les paramètres de ligne de commande suivants avec l’outil de création de package de restrictions d’application :
+Vous pouvez utiliser les paramètres de ligne de commande suivants avec l’outil de création de package de restrictions d’application :
 
 |Propriété|Comment l’utiliser|
 |---------------|--------------------------------|
-|**-i**|`<Path of the input native iOS application file>`. Le nom de fichier doit se terminer par .app ou .ipa. |
+|**-i**|`<Path of the input native iOS application file>`. Le nom de fichier doit se terminer par .app ou .ipa. |
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
@@ -85,27 +85,27 @@ Vous pouvez utiliser les paramètres de ligne de commande suivants avec l’outi
 |**-xe**| (Facultatif) Imprime des informations sur les extensions iOS dans l’application et les droits qui sont nécessaires pour les utiliser. Pour plus d’informations, consultez Définition des droits de l’application. |
 |**-x**| (Facultatif) `<An array of paths to extension provisioning profiles>`. À utiliser si votre application a besoin d’extension des profils d’approvisionnement d’extension.|
 |**-f**|(Facultatif) `<Path to a plist file specifying arguments.>` Utilisez cet indicateur devant le fichier [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) si vous choisissez d’utiliser le modèle plist pour spécifier le reste des propriétés IntuneMAMPackager telles que -i, -o et -p. Consultez Utiliser un fichier plist pour les arguments d’entrée. |
-|**-b**|(Facultatif) Utilisez -b sans argument si vous voulez que l’application de sortie encapsulée ait la même version d’ensemble (bundle) que l’application d’entrée (non recommandé). <br/><br/> Utilisez `-b <custom bundle version>` si vous voulez que l’application encapsulée ait une valeur CFBundleVersion personnalisée. Si vous choisissez de spécifier une valeur CFBundleVersion personnalisée, pensez à incrémenter la valeur CFBundleVersion de l’application native sur le composant le moins significatif, par exemple, 1.0.0 -> 1.0.1. |
+|**-b**|(Facultatif) Utilisez -b sans argument si vous voulez que l’application de sortie encapsulée ait la même version d’ensemble (bundle) que l’application d’entrée (non recommandé). <br/><br/> Utilisez `-b <custom bundle version>` si vous voulez que l’application encapsulée ait une valeur CFBundleVersion personnalisée. Si vous choisissez de spécifier une valeur CFBundleVersion personnalisée, pensez à incrémenter la valeur CFBundleVersion de l’application native sur le composant le moins significatif, par exemple, 1.0.0 -> 1.0.1. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Utiliser un fichier plist pour les arguments d’entrée
 Placer tous les arguments de commande dans un fichier [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) constitue un moyen simple d’exécuter l’outil de création de package de restrictions d’application. Plist est un format de fichier similaire à XML que vous pouvez utiliser pour vos arguments de ligne de commande à l’aide d’une interface de formulaire.
 
-Dans le dossier IntuneMAMPackager/contenu/MacOS, ouvrez `Parameters.plist` (un modèle plist vide) à l’aide d’un éditeur de texte ou Xcode. Entrez vos arguments pour les clés suivantes :
+Dans le dossier IntuneMAMPackager/contenu/MacOS, ouvrez `Parameters.plist` (un modèle plist vide) à l’aide d’un éditeur de texte ou Xcode. Entrez vos arguments pour les clés suivantes :
 
 | Clé plist |  Valeur par défaut| Remarques |
 |------------------|--------------|-----|
-| Chemin du package d’application d’entrée  |empty| Identique à -i|
-| Chemin du package d’application de sortie |empty| Identique à -o|
-| Chemin du profil d’approvisionnement |empty| Identique à -p|
-| Hachage du certificat SHA-1 |empty| Identique à -c|
-| Mode détaillé activé |false| Identique à -v|
-| Supprimer les droits manquants | false| Identique à -c|
-| Empêcher la build par défaut |false | Équivaut à utiliser -b sans arguments|
+| Chemin du package d’application d’entrée  |empty| Identique à -i|
+| Chemin du package d’application de sortie |empty| Identique à -o|
+| Chemin du profil d’approvisionnement |empty| Identique à -p|
+| Hachage du certificat SHA-1 |empty| Identique à -c|
+| Mode détaillé activé |false| Identique à -v|
+| Supprimer les droits manquants | false| Identique à -c|
+| Empêcher la build par défaut |false | Équivaut à utiliser -b sans arguments|
 |Générer le remplacement de chaîne | empty| Valeur CFBundleVersion personnalisée de l’application de sortie encapsulée |
 |Chemins des profils d’approvisionnement d’extension | empty| Tableau de profils d’approvisionnement d’extension pour l’application.
 
 
-Exécutez la commande IntuneMAMPackager avec le fichier plist comme unique argument :
+Exécutez la commande IntuneMAMPackager avec le fichier plist comme unique argument :
 
 ```bash
 ./IntuneMAMPackager –f Parameters.plist
@@ -113,7 +113,7 @@ Exécutez la commande IntuneMAMPackager avec le fichier plist comme unique argum
 
 ### <a name="post-wrapping"></a>Après l’habillage
 
-Une fois le processus d’habillage terminé, le message « L’application a été encapsulée correctement » s’affiche. Si une erreur se produit, consultez [Messages d'erreur](#error-messages-and-log-files) pour obtenir de l'aide.
+Une fois le processus d’habillage terminé, le message « L’application a été encapsulée correctement » s’affiche. Si une erreur se produit, consultez [Messages d'erreur](#error-messages-and-log-files) pour obtenir de l'aide.
 
 L'application encapsulée est enregistrée dans le dossier de sortie spécifié précédemment. Vous pouvez maintenant charger l’application sur la console d’administration Intune et l’associer à une stratégie de gestion des applications mobiles.
 
@@ -126,7 +126,7 @@ Vous pouvez désormais déployer l’application vers vos groupes d’utilisateu
 Aidez-vous des informations suivantes pour résoudre les problèmes que vous rencontrez avec l’outil de création de package de restrictions d’application.
 
 ### <a name="error-messages"></a>Messages d'erreur
-Si l’outil de création de package de restrictions d’application échoue, l’un des messages d’erreur suivants s’affiche dans la console :
+Si l’outil de création de package de restrictions d’application échoue, l’un des messages d’erreur suivants s’affiche dans la console :
 
 |Message d'erreur|Plus d'informations|
 |-----------------|--------------------|
@@ -146,10 +146,10 @@ Si l’outil de création de package de restrictions d’application échoue, l�
 |L'application d'entrée spécifiée n'est pas signée. Spécifiez une application signée valide.|L'outil de création de package de restrictions d'application nécessite que les applications soient signées. Consultez votre documentation pour développeurs pour savoir comment signer une application encapsulée.|
 |L'application d'entrée spécifiée doit être au format .ipa ou .app.|Seules les extensions .app et .ipa sont acceptées par l'outil de création de package de restrictions d'application. Assurez-vous que votre fichier d'entrée a une extension valide et qu'il a été compilé sous forme de fichier .app ou .ipa.|
 |L'application d'entrée spécifiée a déjà été encapsulée et est à la dernière version de modèle de stratégie.|L’outil de création de package de restrictions d’application ne peut pas ré-encapsuler une application encapsulée existante avec la dernière version du modèle de stratégie.|
-|AVERTISSEMENT : vous n’avez pas spécifié de hachage de certificat SHA1. Assurez-vous que votre application encapsulée est signée avant le déploiement.|Veillez à spécifier un hachage SHA1 valide à la suite de l’indicateur de ligne de commande –c. |
+|AVERTISSEMENT : vous n’avez pas spécifié de hachage de certificat SHA1. Assurez-vous que votre application encapsulée est signée avant le déploiement.|Veillez à spécifier un hachage SHA1 valide à la suite de l’indicateur de ligne de commande –c. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Fichiers journaux de l’outil de création de package de restrictions d’application
-Les applications qui ont été encapsulées à l’aide de l’outil de création de package de restrictions d’application génèrent des journaux qui sont écrits dans la console de l’appareil iOS client. Ces informations sont utiles quand vous rencontrez des problèmes avec l’application et que vous devez déterminer si le problème est lié à l’outil de création de package de restrictions d’application. Pour récupérer ces informations, procédez comme suit :
+Les applications qui ont été encapsulées à l’aide de l’outil de création de package de restrictions d’application génèrent des journaux qui sont écrits dans la console de l’appareil iOS client. Ces informations sont utiles quand vous rencontrez des problèmes avec l’application et que vous devez déterminer si le problème est lié à l’outil de création de package de restrictions d’application. Pour récupérer ces informations, procédez comme suit :
 
 1.  Reproduisez le problème en exécutant l'application.
 
@@ -163,7 +163,7 @@ Les applications qui ont été encapsulées à l’aide de l’outil de créatio
     Vous pouvez envoyer les journaux filtrés à Microsoft.
 
     > [!NOTE]
-    > Dans le fichier journal, l'élément « build version » représente le numéro de build de Xcode.
+    > Dans le fichier journal, l'élément « build version » représente le numéro de build de Xcode.
 
     Les applications encapsulées offrent également aux utilisateurs la possibilité d'envoyer les journaux directement à partir de l'appareil par courrier électronique, après un blocage de l'application. Les utilisateurs peuvent vous envoyer les journaux pour que vous les examiniez et le transmettiez à Microsoft si nécessaire.
 
@@ -174,8 +174,8 @@ L’outil de création de package de restrictions d’application pour iOS prés
 
 |Situation|Détails|
 |---------------|-----------|
-|Profil de configuration iOS|Vérifiez que le profil d’approvisionnement est valide avant de l’inclure. L’outil de création de package de restrictions d’application ne vérifie pas si le profil d’approvisionnement a expiré pendant le traitement d’une application iOS. Si vous spécifiez un profil de configuration ayant expiré, l’outil de création de package de restrictions d’application inclut le profil de configuration ayant expiré, et vous ne découvrez le problème qu’une fois que l’installation de l’application a échoué sur un appareil iOS.|
-|Certificat de signature iOS|Vérifiez que le certificat de signature est valide avant de le spécifier. L’outil ne vérifie pas si un certificat a expiré lors du traitement des applications iOS. Si vous fournissez le hachage d'un certificat ayant expiré, l'outil traitera et signera l'application, mais l'installation sur les appareils échouera.<br /><br />Vérifiez que le certificat fourni pour signer l’application encapsulée a une correspondance dans le profil d’approvisionnement. L’outil ne vérifie pas si le profil d’approvisionnement a une correspondance avec le certificat fourni pour signer l’application encapsulée.|
+|Profil de configuration iOS|Vérifiez que le profil d’approvisionnement est valide avant de l’inclure. L’outil de création de package de restrictions d’application ne vérifie pas si le profil d’approvisionnement a expiré pendant le traitement d’une application iOS. Si vous spécifiez un profil de configuration ayant expiré, l’outil de création de package de restrictions d’application inclut le profil de configuration ayant expiré, et vous ne découvrez le problème qu’une fois que l’installation de l’application a échoué sur un appareil iOS.|
+|Certificat de signature iOS|Vérifiez que le certificat de signature est valide avant de le spécifier. L’outil ne vérifie pas si un certificat a expiré lors du traitement des applications iOS. Si vous fournissez le hachage d'un certificat ayant expiré, l'outil traitera et signera l'application, mais l'installation sur les appareils échouera.<br /><br />Vérifiez que le certificat fourni pour signer l’application encapsulée a une correspondance dans le profil d’approvisionnement. L’outil ne vérifie pas si le profil d’approvisionnement a une correspondance avec le certificat fourni pour signer l’application encapsulée.|
 |Authentification|Pour que le chiffrement fonctionne, un code confidentiel doit être défini pour l’appareil. Sur les appareils sur lesquels vous avez déployé une application encapsulée, une pression sur la barre d’état sur l’appareil nécessite que l’utilisateur se reconnecte avec un compte professionnel ou scolaire. La stratégie par défaut dans une application encapsulée est l’*authentification lors du redémarrage*. iOS gère toutes les notifications externes (telles qu’un appel téléphonique) en quittant l’application, puis en la redémarrant.
 
 
@@ -186,18 +186,18 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des *droits* da
 
 |Fonctionnalité|Description|Recommandation|
 |--------------|---------------|------------------------|
-|Groupes d’applications|Utilisez des groupes d’applications pour autoriser plusieurs applications à accéder à des conteneurs partagés et autoriser une communication interprocessus supplémentaire entre les applications.<br /><br />Pour activer les groupes d’applications, ouvrez le volet **Capabilities** (Fonctionnalités), puis cliquez sur **ON** (Activer) dans **App Groups** (Groupes d’applications). Vous pouvez ajouter des groupes d’applications en ou sélectionner des existants.|Quand vous utilisez App Groups, utilisez la notation DNS inverse :<br /><br />*group.com.companyName.AppGroup*|
+|Groupes d’applications|Utilisez des groupes d’applications pour autoriser plusieurs applications à accéder à des conteneurs partagés et autoriser une communication interprocessus supplémentaire entre les applications.<br /><br />Pour activer les groupes d’applications, ouvrez le volet **Capabilities** (Fonctionnalités), puis cliquez sur **ON** (Activer) dans **App Groups** (Groupes d’applications). Vous pouvez ajouter des groupes d’applications en ou sélectionner des existants.|Quand vous utilisez App Groups, utilisez la notation DNS inverse :<br /><br />*group.com.companyName.AppGroup*|
 |Modes d’arrière-plan|L’activation des modes d’arrière-plan permet à votre application iOS de continuer à s’exécuter en arrière-plan.||
 |Protection des données|Data Protection (protection des données) ajoute un niveau de sécurité aux fichiers stockés sur le disque par votre application iOS. Data Protection utilise le matériel de chiffrement intégré présent sur certains appareils pour stocker les fichiers dans un format chiffré sur disque. Votre application doit être configurée pour utiliser Data Protection.||
 |Achat dans l’application|L’achat dans l’application incorpore un store directement dans votre application. Vous pouvez vous y connecter et traiter les paiements de l’utilisateur en toute sécurité. Vous pouvez utiliser l’achat dans l’application pour récupérer les paiements en contrepartie de fonctionnalités améliorées ou de contenu supplémentaire que votre application peut exploiter.||
-|Partage de trousseau|Le partage de trousseau permet à votre application de partager des mots de passe dans le trousseau avec les autres applications développées par votre équipe.|Quand vous utilisez le partage de trousseau, utilisez la notation DNS inverse :<br /><br />*com.companyName.KeychainGroup*|
+|Partage de trousseau|Le partage de trousseau permet à votre application de partager des mots de passe dans le trousseau avec les autres applications développées par votre équipe.|Quand vous utilisez le partage de trousseau, utilisez la notation DNS inverse :<br /><br />*com.companyName.KeychainGroup*|
 |Personal VPN|Activez Personal VPN (VPN personnel) pour permettre à votre application de créer et contrôler une configuration VPN système personnalisée à l’aide de l’infrastructure Network Extension.||
 |Notifications push|Le service de notification Push Apple (APN) permet à une application qui ne s’exécute pas au premier plan de notifier l’utilisateur que des informations sont à sa disposition.|Pour que les notifications Push fonctionnent, vous devez utiliser un profil de configuration spécifique à l’application.<br /><br />Suivez la procédure décrite dans la [documentation pour développeurs Apple](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html).|
 |Configuration d’accessoire sans fil|L’activation de la configuration d’accessoire sans fil a pour effet d’ajouter le framework External Accessory à votre projet et permet à votre application de configurer les accessoires Wi-Fi MFi.||
 
 ### <a name="steps-to-enable-entitlements"></a>Étapes d’activation des droits
 
-1.  Activez les fonctionnalités dans votre application :
+1.  Activez les fonctionnalités dans votre application :
 
     a.  Dans Xcode, accédez à la cible de votre application, puis cliquez sur **Capabilities** (Fonctionnalités).
 
@@ -207,7 +207,7 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des *droits* da
 
     d.  Générer et signez votre application à encapsuler.
 
-2.  Activez les droits dans votre profil de configuration :
+2.  Activez les droits dans votre profil de configuration :
 
     a.  Connectez-vous à l’Apple Developer Member Center.
 
@@ -228,13 +228,13 @@ Si App Wrapping Tool for iOS affiche une erreur de droit, essayez d’exécuter 
 |Il manque des droits dans le profil de configuration (les droits manquants sont répertoriés). Recréez le package de l’application avec un profil de configuration qui contienne ces droits.|Il y a une incohérence entre les droits activés dans le profil de configuration et les fonctionnalités activées dans l’application. Cette incohérence vaut aussi pour les ID associés à des fonctionnalités particulières (telles que les groupes d’applications et l’accès à un trousseau).|En règle générale, vous pouvez créer un nouveau profil de configuration qui active les mêmes fonctionnalités que l’application. Quand les ID du profil et de l’application ne correspondent pas, l’outil de création de package de restrictions d’application remplace les ID, dans la mesure du possible. Si vous obtenez encore cette erreur après avoir créé un profil de configuration, vous pouvez essayer de supprimer les droits de l’application à l’aide du paramètre –e (voir la section Utilisation du paramètre –e pour supprimer les droits d’accès).|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>Rechercher les droits existants d’une application signée
-Pour examiner les droits existants d’une application signée et le profil de configuration :
+Pour examiner les droits existants d’une application signée et le profil de configuration :
 
 1.  Recherchez le fichier .ipa et remplacez son extension par .zip.
 
 2.  Développez le fichier .zip. Un dossier Payload contenant votre ensemble .app est alors généré.
 
-3.  Utilisez l’outil codesign pour vérifier les droits de l’ensemble .app, où `YourApp.app` correspond au nom réel de votre ensemble .app :
+3.  Utilisez l’outil codesign pour vérifier les droits de l’ensemble .app, où `YourApp.app` correspond au nom réel de votre ensemble .app :
 
     ```
     $ codesign -d --entitlements :- "Payload/YourApp.app"
@@ -277,6 +277,6 @@ Respectez les bonnes pratiques de sécurité et de confidentialité suivantes qu
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

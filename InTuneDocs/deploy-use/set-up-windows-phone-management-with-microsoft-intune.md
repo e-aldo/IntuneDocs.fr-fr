@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: ce460c1b87b4759dcdeed061c2342b68dd491820
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
 
 
 ---
@@ -33,11 +33,11 @@ En tant qu’administrateur Intune, vous pouvez activer l’inscription et la ge
 ## <a name="company-portal-app-enrollment"></a>Inscription par le biais de l’application Portail d’entreprise
 Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appareils à l’aide de l’application Portail d’entreprise Intune. Si vous créez des enregistrements de ressources CNAME DNS, les utilisateurs se connectent et s’inscrivent à Intune sans entrer un nom de serveur.
 
-1.  **Configurer Intune**<br>Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles (MDM)](prerequisites-for-enrollment.md#set-mobile-device-management-authority) sur **Microsoft Intune**, puis en configurant la gestion des appareils mobiles.
+1.  **Configurer Intune**<br>Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles (MDM)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) sur **Microsoft Intune**, puis en configurant la gestion des appareils mobiles.
 
 2.  **Créer des enregistrements CNAME** (facultatif)<br>Créez des enregistrements de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com.
 
-    Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à entrer manuellement le nom du serveur de gestion des appareils mobiles (https://manage.microsoft.com). 
+    Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à entrer manuellement le nom du serveur de gestion des appareils mobiles (https://manage.microsoft.com).
 
     Si vous avez un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers manage.microsoft.com. Nous vous recommandons donc de le remplacer par un CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers enterpriseenrollment-s.manage.microsoft.com. Cette modification est recommandée, car le point de terminaison manage.microsoft.com est désapprouvé pour les inscriptions dans une version ultérieure.
 
@@ -64,7 +64,7 @@ Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appar
 
 5.  **Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise.**
 
-    Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](../enduser/enroll-your-device-in-intune-windows.md). Vos utilisateurs peuvent également se référer à [Que peut voir votre administrateur informatique lorsque vous inscrivez votre appareil dans Intune ?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+    Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](../enduser/enroll-your-device-in-intune-windows.md). Vos utilisateurs peuvent également se référer à [Que peut voir votre administrateur informatique lorsque vous inscrivez votre appareil dans Intune ?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
     Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
     - [Ce qu’il faut dire à vos utilisateurs finaux concernant l’utilisation de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -74,6 +74,6 @@ Aucun travail supplémentaire n’est requis sauf si vous déployez le Portail d
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

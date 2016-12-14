@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ Pour les appareils devant changer de fonction, vous pouvez également utiliser l
 8.  Choisissez les appareils, puis **Supprimer l’appareil**. L’appareil sera supprimé lors de la prochaine synchronisation avec Active Directory. La synchronisation a lieu généralement toutes les quatre heures. Après la synchronisation, l’appareil est supprimé du portail de gestion. L’un des appareils de l’utilisateur est donc supprimé, et un autre pourra être ajouté, dans la limite autorisée pour cet utilisateur.
 
 ## <a name="retire-managed-computers"></a>Mettre hors service des ordinateurs gérés
-Les ordinateurs que gère le logiciel client Intune peuvent être supprimés de la gestion dans la console d’administration Intune. Dans ce cas, le logiciel client est désinstallé et la stratégie Intune supprimée de l’ordinateur. Pour plus d’informations, consultez la section concernant la [mise hors service d’ordinateurs gérés à l’aide du logiciel client Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+Les ordinateurs que gère le logiciel client Intune peuvent être supprimés de la gestion dans la console d’administration Intune. Dans ce cas, le logiciel client est désinstallé et la stratégie Intune supprimée de l’ordinateur. Pour plus d’informations, consultez la section concernant la [mise hors service d’ordinateurs gérés à l’aide du logiciel client Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="block-access-a-device"></a>Bloquer l’accès à un appareil
 Si un appareil est perdu ou si vous devez mettre un appareil hors service parce qu’un employé a quitté l’entreprise sans le rendre, vous pouvez également [réinitialiser le code d’accès et verrouiller à distance](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) l’appareil. Ces opérations empêchent que les informations d’entreprise ne soient utilisées à mauvais escient, même si vous devrez peut-être considérer l’appareil comme perdu et inutilisable.
@@ -70,6 +70,6 @@ Parfois c'est l'appareil lui-même qui arrive en fin de vie. Dans ce cas, la [r�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

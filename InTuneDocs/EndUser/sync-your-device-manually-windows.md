@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ Seules les versions suivantes sont prises en charge. Si votre appareil n’est p
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 Mobile
@@ -54,7 +54,7 @@ Pour synchroniser manuellement votre appareil mobile Windows 10 pour accélérer
     Le message « Nous synchronisons votre compte » apparaît en haut de l’écran. Le bouton **Synchroniser** est grisé tant que la synchronisation n’est pas terminée sur votre appareil.
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour connaître la procédure à exécuter, examinez les captures d’écran, puis suivez les étapes qui ressemblent à ce que vous voyez sur votre appareil. 
+Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour connaître la procédure à exécuter, examinez les captures d’écran, puis suivez les étapes qui ressemblent à ce que vous voyez sur votre appareil.
 
 1. Choisissez le bouton **Démarrer**, puis choisissez **Paramètres**.
 
@@ -72,7 +72,7 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 
     Si vous voyez cet écran, qui indique « Accès professionnel », consultez les [étapes à suivre si vous voyez Accès professionnel](#steps-to-follow-if-you-see-your-account).
 
-    ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png) 
+    ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Étapes à suivre si vous voyez Accès scolaire ou professionnel
 
@@ -80,9 +80,9 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 
     ![Choisir Accès Professionnel ou Scolaire](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Choisissez votre compte professionnel ou scolaire. Selon la configuration effectuée par votre administrateur informatique, vous pouvez voir deux comptes similaires à l’exemple ci-dessous. Un compte est accompagné d’un porte-documents, l’autre du logo Microsoft. 
+2. Choisissez votre compte professionnel ou scolaire. Selon la configuration effectuée par votre administrateur informatique, vous pouvez voir deux comptes similaires à l’exemple ci-dessous. Un compte est accompagné d’un porte-documents, l’autre du logo Microsoft.
 
-    - Si vous voyez le compte avec le porte-documents, sélectionnez-le, puis recherchez un bouton **Info** sous celui-ci. 
+    - Si vous voyez le compte avec le porte-documents, sélectionnez-le, puis recherchez un bouton **Info** sous celui-ci.
     - Si vous voyez uniquement le compte avec le logo Microsoft, sélectionnez le compte, puis recherchez un bouton **Info** sous celui-ci.
 
     ![Choisissez votre nom de compte en regard du porte-documents ou du logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 4. Choisissez le bouton **Synchroniser**. Votre appareil sera synchronisé avec Intune.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Étapes à suivre si vous voyez Accès professionnel
-    
+
 1. Dans la page **Comptes**, choisissez **Accès professionnel**.
 
     ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

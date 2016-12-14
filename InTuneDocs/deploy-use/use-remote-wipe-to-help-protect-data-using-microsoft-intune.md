@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 Vous pouvez réinitialiser les applications et les données à partir d’appareils gérés par Intune qui ne sont plus nécessaires, qui ont été réaffectés ou ont disparu. Pour ce faire, Intune propose des fonctionnalités de réinitialisation sélective et de réinitialisation complète. Les utilisateurs peuvent également émettre une commande de réinitialisation d’appareil à distance à partir de l’application Portail d’entreprise Intune sur les appareils privés inscrits dans Intune.
 
   > [!NOTE]
-  > Cette rubrique concerne uniquement la réinitialisation d’appareils gérés à l’aide de la gestion des appareils mobiles Intune. Vous pouvez aussi utiliser le [portail Azure](https://portal.azure.com) pour [réinitialiser les données d’entreprise des applications](wipe-managed-company-app-data-with-microsoft-intune.md). Vous pouvez également [mettre hors service des ordinateurs gérés à l’aide du logiciel client Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > Cette rubrique concerne uniquement la réinitialisation d’appareils gérés à l’aide de la gestion des appareils mobiles Intune. Vous pouvez aussi utiliser le [portail Azure](https://portal.azure.com) pour [réinitialiser les données d’entreprise des applications](wipe-managed-company-app-data-with-microsoft-intune.md). Vous pouvez également [mettre hors service des ordinateurs gérés à l’aide du logiciel client Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="full-wipe"></a>réinitialisation complète
 
@@ -165,6 +165,6 @@ Ce rapport indique également les personnes qui ont effectué les actions.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
