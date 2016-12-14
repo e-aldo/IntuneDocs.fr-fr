@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 1c4f44619f025b5a35a089c0970188b989b710e6
+ms.sourcegitcommit: b99c90bfafd65e87e258e1e0ac01691e83581659
+ms.openlocfilehash: 9915f85e6bc2dc20b061618fc8ccc6da8f3cec36
 
 
 ---
 
-# Fonctionnalités d'accessibilité de Microsoft Intune
+# <a name="accessibility-features-of-microsoft-intune"></a>Fonctionnalités d'accessibilité de Microsoft Intune
 Outre les fonctionnalités d'accessibilité et les outils de Microsoft Windows, les fonctionnalités suivantes rendent [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] plus accessible aux personnes en situation de handicap :
 
 -   Utilisation des raccourcis clavier
@@ -28,7 +28,7 @@ Outre les fonctionnalités d'accessibilité et les outils de Microsoft Windows, 
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Utilisation des raccourcis clavier
+## <a name="using-keyboard-shortcuts"></a>Utilisation des raccourcis clavier
 
 |Tâche|Utiliser ce raccourci clavier|
 |--------------|------------------------------|
@@ -44,11 +44,10 @@ Outre les fonctionnalités d'accessibilité et les outils de Microsoft Windows, 
 |Passer au groupe d'applications suivant|Flèche vers le haut|
 |Afficher les actions pour un périphérique sélectionné|Flèche droite|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] peuvent être parcourus en utilisant les raccourcis clavier standard d’Internet Explorer.
+> Les portails [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] sont explorables en utilisant les raccourcis clavier standard d'Internet Explorer.
 
 
 
-
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

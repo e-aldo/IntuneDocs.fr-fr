@@ -1,7 +1,7 @@
 ---
-title: Inscrire un appareil macOS dans Intune | Microsoft Intune
+title: "Inscrire un appareil macOS dans Intune | Microsoft Intune"
 description: Cette rubrique explique comment inscrire un appareil macOS dans Intune
-keywords: Mac OS X, macOS, OS X
+keywords: "Mac OS X, macOS, OS X"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
@@ -15,15 +15,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
 
 # <a name="enroll-your-macos-device-in-intune"></a>Inscrire votre appareil macOS dans Intune
 
-L’accès aux applications, aux données et aux ressources de votre organisation est essentiel pour que vous puissiez travailler. Si vous utilisez un appareil macOS au travail, cela signifie que vous devez installer un __profil de gestion__. Il s’agit simplement d’un fichier configuré par votre administrateur informatique qui charge les paramètres et les informations d’accès sur votre Mac. Vous voulez en savoir plus ? Découvrez [ce qui se passe lorsque vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+L’accès aux applications, aux données et aux ressources de votre organisation est essentiel pour que vous puissiez travailler. Si vous utilisez un appareil macOS au travail, cela signifie que vous devez installer un __profil de gestion__. Il s’agit simplement d’un fichier configuré par votre administrateur informatique qui charge les paramètres et les informations d’accès sur votre Mac. Vous voulez en savoir plus ? Découvrez [ce qui se passe lorsque vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
   > [!NOTE]
   > Si vous essayez d’inscrire un appareil iOS, tel qu’un iPhone ou un iPad, [suivez plutôt ces instructions](enroll-your-device-in-intune-ios.md).
@@ -46,9 +46,9 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
  ![Inscrire cet appareil macOS](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune doit avoir accès à votre ordinateur pour vérifier que votre appareil est suffisamment sécurisé pour accéder aux ressources de votre organisation. Découvrez [ce qui se produit lorsque vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios).
+  > Intune doit avoir accès à votre ordinateur pour vérifier que votre appareil est suffisamment sécurisé pour accéder aux ressources de votre organisation. Découvrez [ce qui se produit lorsque vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
-6. __Préférences système__ s’ouvre et vous demande si vous souhaitez __Installer le « Profil de gestion » ?__ Cliquez sur __Installation__ pour continuer ou obtenez plus de détails en cliquant sur __Afficher le profil__.
+6. __Préférences système__ s’ouvre et vous demande si vous souhaitez __Installer le « Profil de gestion » ?__ Cliquez sur __Installation__ pour continuer ou obtenez plus de détails en cliquant sur __Afficher le profil__.
 
  ![Installer le profil de gestion](./media/macOS_enroll_004_sysprefs_mgmt_profile.png)
 
@@ -60,10 +60,10 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
 
  ![Profil macOS installé](./media/macOS_enroll_006_sysprefs_installed_profile.png)
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur informatique. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "Limiter l’accès à la messagerie sur Exchange Online | Microsoft Intune"
 description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à la messagerie de votre entreprise sur Exchange Online."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/22/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
-ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: 7ef78fb253ca88d63a550d5c54448103e6790574
 
 
 ---
@@ -210,13 +210,13 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 
 4. Sous **Outlook Web Access (OWA)**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs sera bloqué. Les mêmes restrictions de plateforme que celles que vous avez sélectionnées pour l’accès aux applications pour Outlook s’appliquent également ici.
 
-  Sur les appareils **Android** , les utilisateurs doivent activer l’accès du navigateur.  Pour cela, l’utilisateur final doit activer l’option « Activer l’accès du navigateur » sur l’appareil inscrit comme suit :
-  1.    Lancez **l’application Portail d’entreprise**.
-  2.    Accédez à la page **Paramètres** à partir des trois points (...) ou du bouton de menu matériel.
-  3.    Appuyez sur le bouton **Activer l’accès du navigateur** .
-  4.    Dans le navigateur Chrome, déconnectez-vous d’Office 365 et redémarrez Chrome.
+  Sur les appareils **Android** , les utilisateurs doivent activer l’accès du navigateur.  Pour ce faire, l’utilisateur final doit activer l’option « Activer l’accès du navigateur » sur l’appareil inscrit comme suit :
+  1.    Lancer l’**application Portail d’entreprise**.
+  2.    Accéder à la page **Paramètres** à partir des trois points (...) ou du bouton de menu matériel.
+  3.    Appuyer sur le bouton **Activer l’accès du navigateur**.
+  4.    Dans le navigateur Chrome, se déconnecter d’Office 365 et redémarrer Chrome.
 
-  Sur les plateformes **iOS et Android** , pour identifier l’appareil utilisé pour accéder au service, Azure Active Directory émet un certificat TLS (Transport Layer Security) pour l’appareil.  L’appareil affiche le certificat et invite l’utilisateur final à le sélectionner, comme indiqué dans les captures d’écran ci-dessous. L’utilisateur final doit sélectionner ce certificat pour pouvoir continuer à utiliser le navigateur.
+  Sur les plateformes **iOS et Android**, pour identifier l’appareil qui est utilisé pour accéder au service, Azure Active Directory émet un certificat TLS (Transport Layer Security) à destination de l’appareil.  L’appareil affiche le certificat avec une invite demandant à l’utilisateur final de sélectionner le certificat, comme indiqué dans les captures d’écran ci-dessous. L’utilisateur final doit sélectionner ce certificat pour pouvoir continuer à utiliser le navigateur.
 
   **iOS**
 
@@ -269,6 +269,6 @@ Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
