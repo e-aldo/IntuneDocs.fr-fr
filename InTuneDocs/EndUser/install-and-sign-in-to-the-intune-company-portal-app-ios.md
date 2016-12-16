@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 5633cc9b9a97211bd5ff6a2d876bdb36ee8888c9
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: ebb2a164e631388d073d11440eb6072ae4d90468
 
 
 ---
@@ -34,12 +34,12 @@ Le portail d’entreprise est une application que vous installez sur votre appar
 
 3.  Ouvrez l’application Portail d’entreprise, entrez votre adresse e-mail professionnelle ou scolaire ainsi que votre mot de passe, puis appuyez sur **Se connecter**.
 
-    Si vous vous connectez à l’application Portail d’entreprise pour la première fois et que votre entreprise ou établissement scolaire utilise Intune, vous êtes invité à inscrire votre appareil dans Intune. Pour vous inscrire, suivez les étapes indiquées dans [Inscrire votre appareil iOS dans Intune](enroll-your-device-in-intune-ios.md) ou [Inscrire votre appareil Mac OS X dans Intune](enroll-your-device-in-intune-mac-os-x.md).
+    Si vous vous connectez à l’application Portail d’entreprise pour la première fois et que votre entreprise ou établissement scolaire utilise Intune, vous êtes invité à inscrire votre appareil dans Intune. Pour vous inscrire, suivez les étapes indiquées dans [Inscrire votre appareil iOS dans Intune](enroll-your-device-in-intune-ios.md) ou [Inscrire votre appareil macOS dans Intune](enroll-your-device-in-intune-macos.md).
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

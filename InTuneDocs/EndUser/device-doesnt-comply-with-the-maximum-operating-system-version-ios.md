@@ -1,11 +1,11 @@
 ---
-title: "L’appareil iOS n’est pas conforme à la version maximale du système d’exploitation | Microsoft Intune"
+title: "Votre appareil n’est pas conforme à la version maximale du système d’exploitation | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2292c3c22671e5e4ea593a1f379ea5ffd4d67d14
+ms.sourcegitcommit: 308706452538ea6d87546d72ca4478b227ced0d6
+ms.openlocfilehash: 928845c6e0bc21ae678fd6ba31c3bd0bbde5d338
 
 
 ---
 
 
-# <a name="ios-device-doesnt-comply-with-the-setting-for-the-latest-operating-system-version"></a>L’appareil iOS n’est pas conforme au paramètre de la dernière version du système d’exploitation
+# <a name="your-devices-operating-system-version-isnt-yet-supported"></a>La version du système d’exploitation de votre appareil n’est pas encore prise en charge.
 
-Votre appareil iOS n’est pas conforme à la stratégie de votre administrateur informatique pour la dernière version du système d’exploitation que vous pouvez utiliser. Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Avec le développement rapide des technologies mobiles, il se peut parfois que votre appareil soit en avance par rapport à ce que votre administrateur informatique a eu l’occasion de tester. Il est possible que la version la plus récente d’iOS ne fonctionne pas avec certains autres outils de votre entreprise.
+
+Pour résoudre ce problème, vous devez contacter votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
