@@ -1,21 +1,21 @@
 ---
-title: "Composant Xamarin du SDK d’application Microsoft Intune | Microsoft Intune"
+title: "Composant Xamarin du SDK d’application Microsoft Intune | Documentation Microsoft"
 description: 
 keywords: sdk, Xamarin, intune
-author: oydang
-manager: karthikaraman
-ms.author: oydang
+author: mtillman
+manager: angrobe
+ms.author: mtillman
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
-ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 
 ---
@@ -61,7 +61,7 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
 
 2. Lisez les [termes du contrat de licence](https://components.xamarin.com/license/microsoft.intune.mam) du composant Xamarin de la GAM Microsoft Intune.
 
-3.  Téléchargez le dossier Composant Xamarin du SDK d’application Intune depuis [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) ou [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) et extrayez-le. Les deux fichiers téléchargés aux étapes 1 et 2 doivent être dans le même niveau de répertoire.
+3.  Téléchargez le dossier Composant Xamarin du SDK d’application Intune depuis [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) ou [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) et extrayez-le. Les deux fichiers téléchargés aux étapes 1 et 2 doivent être dans le même niveau de répertoire.
 
 4.  Dans la ligne de commande, exécutez `Xamain.Component.exe install <.xam> file` comme administrateur.
 
@@ -72,7 +72,7 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
 
 
 ## <a name="enabling-intune-mam-in-your-ios-mobile-app"></a>Activation de la GAM Intune dans votre application mobile iOS
-1.  Pour initialiser le SDK d’application Intune, vous devez appeler une API dans la classe `AppDelegate.cs`. Exemple :
+1.  Pour initialiser le SDK d’application Intune, vous devez appeler une API dans la classe `AppDelegate.cs`. Exemple :
 
       ```csharp
       public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
@@ -83,8 +83,8 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
 
       ```
 
-2.  Maintenant que le composant est ajouté et initialisé, vous pouvez suivre les étapes générales requises pour intégrer le SDK d’application à une application mobile iOS. Vous trouverez la documentation complète pour l’activation des applications natives iOS dans le [Guide du SDK d’application Intune pour les développeurs iOS](intune-app-sdk-ios).
-3. **Important** : Il existe plusieurs modifications propres aux applications iOS basées sur Xamarin. Par exemple, quand vous activez des groupes de trousseaux, vous devez ajouter le code suivant pour inclure l’exemple d’application Xamarin que nous avons inclus dans le composant. Voici un exemple des groupes requis dans vos groupes de trousseaux d’accès :
+2.  Maintenant que le composant est ajouté et initialisé, vous pouvez suivre les étapes générales requises pour intégrer le SDK d’application à une application mobile iOS. Vous trouverez la documentation complète pour l’activation des applications natives iOS dans le [Guide du SDK d’application Intune pour les développeurs iOS](intune-app-sdk-ios.md).
+3. **Important** : Il existe plusieurs modifications propres aux applications iOS basées sur Xamarin. Par exemple, quand vous activez des groupes de trousseaux, vous devez ajouter le code suivant pour inclure l’exemple d’application Xamarin que nous avons inclus dans le composant. Voici un exemple des groupes requis dans vos groupes de trousseaux d’accès :
 
       ```xml
       <?xml version="1.0" encoding="UTF-8"?>
@@ -102,16 +102,16 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
       </plist>
       ```
 
-Vous avez terminé les étapes nécessaires pour générer le composant dans votre application iOS basée sur Xamarin. Si vous utilisez Xcode pour générer votre projet, vous pouvez utiliser `Intune App SDK Settings.bundle`. Ainsi, vous pouvez activer et désactiver les paramètres de stratégie Intune quand vous générez votre projet à des fins de test et de débogage. Pour tirer parti de cet ensemble d’applications, suivez les étapes décrites dans le [Guide du SDK d’application Intune pour les développeurs iOS](intune-app-sdk-ios) et lisez la section sur le [débogage dans Xcode](intune-app-sdk-ios#debug-information).
+Vous avez terminé les étapes nécessaires pour générer le composant dans votre application iOS basée sur Xamarin. Si vous utilisez Xcode pour générer votre projet, vous pouvez utiliser `Intune App SDK Settings.bundle`. Ainsi, vous pouvez activer et désactiver les paramètres de stratégie Intune quand vous générez votre projet à des fins de test et de débogage. Pour tirer parti de cet ensemble d’applications, suivez les étapes décrites dans le [Guide du SDK d’application Intune pour les développeurs iOS](intune-app-sdk-ios.md) et lisez la section sur le [débogage dans Xcode](intune-app-sdk-ios.md#status-result-and-debug-notifications).
 
 ## <a name="enabling-mam-in-your-android-mobile-app"></a>Activation de la GAM dans votre application mobile Android
-Pour les applications Android basées sur Xamarin qui n’utilisent pas un framework d’interface utilisateur, vous devez lire et suivre le [guide du SDK d’application Intune pour les développeurs Android]. Pour votre application Android basée sur Xamarin, vous devez remplacer la classe, les méthodes et les activités par leurs équivalents GAM selon le [tableau](intune-app-sdk-android#replace-classes-methods-and-activities-with-their-mam-equivalent-required) inclus dans le guide. Si votre application ne définit pas de classe `android.app.Application`, vous devrez en créer une et vérifier que vous héritez de `MAMApplication`.
+Pour les applications Android basées sur Xamarin qui n’utilisent pas un framework d’interface utilisateur, vous devez lire et suivre le [guide du SDK d’application Intune pour les développeurs Android]. Pour votre application Android basée sur Xamarin, vous devez remplacer la classe, les méthodes et les activités par leurs équivalents GAM selon le [tableau](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent-required) inclus dans le guide. Si votre application ne définit pas de classe `android.app.Application`, vous devrez en créer une et vérifier que vous héritez de `MAMApplication`.
 
-Pour les formulaires Xamarin et d’autres framework d’interface utilisateur, nous avons fourni un outil appelé `MAM.Remapper`. L’outil exécutera le remplacement de la classe pour vous. Toutefois, vous devrez effectuer les étapes suivantes :
+Pour les formulaires Xamarin et d’autres framework d’interface utilisateur, nous avons fourni un outil appelé `MAM.Remapper`. L’outil exécutera le remplacement de la classe pour vous. Toutefois, vous devrez effectuer les étapes suivantes :
 
-1.  Ajoutez une référence au package nuget ` Microsoft.Intune.MAM.Remapper.Tasks` version 0.1.0.0 ou supérieure.
+1.  Ajoutez une référence au package nuget ` Microsoft.Intune.MAM.Remapper.Tasks` version 0.1.0.0 ou supérieure.
 
-2.  Ajoutez la ligne suivante à votre csproj Android :
+2.  Ajoutez la ligne suivante à votre csproj Android :
   ```xml
   <Import
   Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
@@ -125,6 +125,6 @@ Vous avez terminé les étapes élémentaires de la génération du composant da
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Résoudre les problèmes d’intégration de Lookout | Microsoft Intune"
+title: "Résoudre les problèmes d’intégration de Lookout | Documentation Microsoft"
 description: "Cette rubrique décrit comment résoudre des problèmes courants liés à l’intégration de Lookout"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ L’erreur suivante peut se produire si l’administrateur général Azure AD n
 
 ![Capture de l’écran de connexion à Lookout montrant l’échec de la connexion](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Pour résoudre ce problème, l’administrateur général doit se connecter à https://aad.lookout.com/les?action=consent et accepter l’invite à lancer le programme d’installation. Pour plus d’informations, consultez la rubrique [Configurer votre abonnement à Lookout MTP](set-up-your-subscription-with-lookout-mtp.md).
+Pour résoudre ce problème, l’administrateur général doit se connecter à https://aad.lookout.com/les?action=consent et accepter l’invite à lancer le programme d’installation. Pour plus d’informations, consultez la rubrique [Configurer votre abonnement à Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md).
 
 ## <a name="troubleshoot-device-status-issues"></a>Résoudre les problèmes liés à l’état de l’appareil
 
@@ -90,6 +90,6 @@ Si le nouvel utilisateur est membre d’un des groupes d’inscription spécifi�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

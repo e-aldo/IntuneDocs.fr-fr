@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 12/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b00e171bf7f4fb8401c77b9409c1747f08a158c
+ms.sourcegitcommit: 57b6bb6076b24299fb54626aa55850bf8c0c2428
+ms.openlocfilehash: df491807386c80dce0f45822fbc64acefda59eb3
 
 
 ---
 
-
 # <a name="you-see-errors-while-trying-to-enroll-your-ios-device-in-intune"></a>Des erreurs se produisent pendant l’inscription de votre appareil iOS dans Intune
 
-Le tableau suivant répertorie les erreurs que vous pouvez rencontrer lors de l’inscription de votre appareil iOS dans Intune. Partagez ce lien avec votre service administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Le tableau suivant répertorie les erreurs que vous pouvez rencontrer lors de l’inscription de votre appareil iOS dans Intune. Partagez ce lien avec votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 |Message d'erreur|Problème|Informations à communiquer à votre administrateur informatique|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -38,6 +37,6 @@ Le tableau suivant répertorie les erreurs que vous pouvez rencontrer lors de l�
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

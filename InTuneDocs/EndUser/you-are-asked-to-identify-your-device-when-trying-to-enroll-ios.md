@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 52633b881b0fb4c22848e8e408de7cd183db12df
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 # <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>Vous êtes invité à identifier votre appareil quand vous essayez d’inscrire
 
-Si vous essayez d’inscrire votre appareil iOS ou Mac OS X dans Intune et que vous voyez un écran vous demandant d’identifier votre appareil, au moins un de vos appareils a déjà été inscrit et affecté à votre compte à l’aide d’une méthode autre que l’application Portail d’entreprise. Pour que l’application Portail d’entreprise fonctionne correctement, vous devez déterminer si l’appareil que vous utilisez a déjà été inscrit dans Intune.
+Si vous essayez d’inscrire votre appareil iOS ou macOS dans Intune et que vous voyez un écran vous demandant d’identifier votre appareil, au moins un de vos appareils a déjà été inscrit et affecté à votre compte à l’aide d’une méthode autre que l’application Portail d’entreprise. Pour que l’application Portail d’entreprise fonctionne correctement, vous devez déterminer si l’appareil que vous utilisez a déjà été inscrit dans Intune.
 
 1. Si vous voyez votre appareil dans la liste, appuyez sur celui-ci. Si vous ne le voyez pas, appuyez sur **Nouvel appareil**.
 2. Appuyez sur **Continuer**.
@@ -34,6 +34,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 
