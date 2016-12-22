@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
+ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Votre appareil Android étant rooté, vous ne pouvez pas vous connecter
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Votre appareil Android est rooté et vous ne pouvez pas vous connecter
+Vous avez été redirigé ici car vous avez reçu un message vous signalant que votre appareil avait été _rooté_.
 
-Quand votre appareil Android est rooté, il a été modifié pour activer certaines fonctionnalités susceptibles de compromettre la sécurité et les ressources de l’entreprise. Si ce message s’affiche, vous ne pouvez pas accéder aux ressources d’entreprise tant que le problème n’a pas été résolu.
+Si un appareil Android a été « rooté », cela signifie que certaines parties du logiciel de l’appareil ont été modifiées pour activer des fonctionnalités qui ne seraient normalement pas présentes. Ces modifications peuvent souvent compromettre l’accès sécurisé aux ressources de l’organisation, telles que les e-mails et les documents. Les appareils rootés ne peuvent donc pas être utilisés pour accéder à ces ressources tant que le problème n’a pas été résolu.  
 
-Si vous pensez n’avoir rien fait pour rooter délibérément votre appareil, consultez ces autres raisons expliquant pourquoi votre appareil peut être rooté :
+Votre appareil a peut être été rooté pour l’une des deux raisons suivantes :
 
-- Vous avez peut-être installé une application sur votre appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Si ce message s’affiche une fois que vous avez installé une application, nous vous conseillons d’essayer de la désinstaller pour voir si cela résout le problème.
+- Vous avez peut-être installé une application sur votre appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Si vous voyez ce message immédiatement après l’installation d’une application, essayez de désinstaller cette application.
 
-- Le fabricant de votre appareil a installé un logiciel sur l’appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Vous devez contacter votre administrateur pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+- Le fabricant de votre appareil a installé un logiciel sur l’appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Dans ce cas, vous devez contacter votre administrateur informatique pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+
+Si vous avez rooté vous-même votre appareil, vous devez inverser le processus et restaurer l’appareil à son état non rooté.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
