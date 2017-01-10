@@ -21,6 +21,9 @@ ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
 ---
 
 # <a name="what-is-intune"></a>Qu’est-ce qu’Intune ?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune est un service de gestion de la mobilité en entreprise basé sur le cloud qui permet à votre personnel de rester productif tout en protégeant vos données d’entreprise. Avec Intune, vous pouvez :
 * gérer les appareils mobiles que votre personnel utilise pour accéder aux données d’entreprise ;
 * gérer les applications mobiles que votre personnel utilise ;
