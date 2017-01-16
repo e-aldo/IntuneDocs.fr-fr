@@ -1,11 +1,11 @@
 ---
-title: Mettre hors service un PC Windows | Microsoft Intune
+title: Mettre hors service un PC Windows | Microsoft Docs
 description: "Comment mettre hors service un PC Windows géré par Intune."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 19e8e2b6a7eaa3cf02e4296a6fd147baa1472b61
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: fbf188be16ca4a47ee369e3fdde8c0a7f799beab
 
 
 ---
 
 # <a name="retire-a-windows-pc"></a>Mettre hors service un PC Windows
-Procédez comme suit pour mettre hors service les PC qui sont gérés par Intune.
+Procédez comme suit pour mettre hors service les ordinateurs de bureau que vous gérez comme PC en y exécutant le client logiciel Intune. Lorsque vous mettez un PC hors service, celui-ci est supprimé de la gestion Intune. Vous ne pouvez pas réinitialiser les paramètres d'usine d'un PC depuis Intune.
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils** (ou un autre groupe qui contient l’ordinateur que vous voulez mettre hors service).
 
@@ -50,13 +50,13 @@ Lorsque vous mettez hors service un ordinateur :
     > [!IMPORTANT]
     > Si le logiciel client a été installé à l'aide d'un objet de stratégie de groupe, vous devez supprimer celui-ci pour pouvoir supprimer le logiciel client afin d'empêcher la réinstallation du logiciel.
 
-    Si la désinstallation du client échoue, lisez [Résoudre les problèmes de protection de point de terminaison](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) pour obtenir une aide supplémentaire.
+    Si la désinstallation du client Endpoint Protection échoue, lisez [Résoudre les problèmes de protection de point de terminaison](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) pour obtenir une aide supplémentaire.
 
 ### <a name="see-also"></a>Voir aussi
 
 [Tâches courantes de gestion des PC Windows avec le client logiciel Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

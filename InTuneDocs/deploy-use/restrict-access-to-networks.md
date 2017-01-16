@@ -1,5 +1,5 @@
 ---
-title: "Restreindre l’accès aux réseaux avec Cisco ISE | Microsoft Intune"
+title: "Restreindre l’accès aux réseaux avec Cisco ISE | Microsoft Docs"
 description: "Utilisez Cisco ISE avec Intune pour que les appareils soient inscrits auprès d’Intune et conformes aux stratégies avant d’accéder aux infrastructures Wi-Fi et VPN contrôlées par Cisco ISE."
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
 
 
 ---
@@ -64,7 +64,7 @@ b. Cliquez sur l’icône en forme de verrou &gt;  **Plus d’informations**.
 > Vérifiez la date d’expiration du certificat, car vous devrez en exporter et en importer un nouveau quand celui-ci arrivera à expiration.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>Obtenir un certificat auto-signé à partir d’ISE 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>Obtenir un certificat auto-signé à partir d’ISE 
 
 1.  Dans la console ISE, accédez à **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate** (Générer un certificat auto-signé).  
 2.       Exportez le certificat auto-signé.
@@ -100,7 +100,7 @@ Vérifiez que tout le texte contient sur une seule ligne.
 |Point de terminaison de jeton OAuth 2.0|Token Issuing URL (URL émettrice de jeton)|
 |Mettre à jour votre code avec votre ID client|ID client|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Étape 4 : Charger le certificat auto-signé de l’ISE dans l’application ISE que vous avez créée dans Azure AD
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Étape 4 : Charger le certificat auto-signé de l’ISE dans l’application ISE que vous avez créée dans Azure AD
 1.     Récupérez l’empreinte numérique et la valeur de certificat codée en base64 d’un fichier de certificat public X509 (.cer). Cet exemple utilise PowerShell :
    
       
@@ -189,6 +189,6 @@ Vous pouvez également [télécharger un ensemble d’instructions d’inscripti
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Résoudre les problèmes de mise à jour logicielle | Microsoft Intune"
+title: "Résolution des problèmes de mise à jour logicielle | Microsoft Docs"
 description: "Résoudre les problèmes de mise à jour logicielle dans Microsoft Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +14,25 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 9c08ebe1a4cf1a7768b5dbecf7ffccdd7c8d8006
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
 
 
 ---
 
-# Résoudre les problèmes de mise à jour logicielle dans Microsoft Intune
+# <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Résoudre les problèmes de mise à jour logicielle dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Aidez-vous des informations contenues dans cette section pour résoudre les problèmes de mise à jour logicielle dans Microsoft Intune.
 
 Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
 
-## Mettre à jour les codes d’erreur de l’agent
+## <a name="update-agent-error-codes"></a>Mettre à jour les codes d’erreur de l’agent
 
 Le tableau suivant répertorie les codes d’erreur de l’**agent de mise à jour** d’Intune. Si vous ne trouvez pas un code d'erreur spécifique dans ce tableau, consultez [Windows Update Agent Result Codes (Codes de résultat de l'agent de mise à jour de Windows)](http://go.microsoft.com/fwlink/?LinkID=221542).
 
-|Code d'erreur|Nom symbolique|Plus d'informations|
+|Code d'erreur|Nom symbolique|Plus d’informations|
 |--------------|-----------------|--------------------|
 |**0x00cf0001**|OM_S_SERVICE_STOP|L'agent a été arrêté.|
 |**0x00cf0003**|OM_S_UPDATE_ERROR|L'opération a réussi, mais des erreurs se sont produites lors de l'application des mises à jour.|
@@ -241,7 +244,7 @@ Le tableau suivant répertorie les codes d’erreur de l’**agent de mise à jo
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|L'installation a échoué car un redémarrage obligatoire est en attente.|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|Le téléchargement a été annulé.|
 
-## Les ordinateurs Windows 7 avec un grand nombre de mises à jour remplacées cessent de communiquer avec la console Microsoft Intune
+## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>Les ordinateurs Windows 7 avec un grand nombre de mises à jour remplacées cessent de communiquer avec la console Microsoft Intune
 **Problème** : vous pouvez être confronté à la situation où les clients Microsoft Intune rencontrent un ou plusieurs des problèmes suivants :
 - Ils cessent soudain de créer des rapports auprès de la console d’administration Microsoft.  
 - Ils subissent une utilisation élevée du processeur.
@@ -260,11 +263,11 @@ Ce problème peut se produire si des mises à jour remplacées (des mises à jou
 
 En outre, si vous utilisez Windows 7, vérifiez que vous disposez de la mise à jour suivante installée :[3050265 Client de mise à jour Windows pour Windows 7 : juin 2015](https://support.microsoft.com/kb/3050265).
 
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

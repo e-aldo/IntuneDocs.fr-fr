@@ -1,5 +1,5 @@
 ---
-title: "Utilisation d’applications avec accès conditionnel pour la gestion des applications mobiles | Microsoft Intune"
+title: "Utilisation d’applications avec accès conditionnel pour la gestion des applications mobiles | Microsoft Docs"
 description: "Découvrez dans quelle mesure l’accès conditionnel pour la gestion des applications mobiles peut aider à contrôler les applications qui ont accès aux services O365."
 keywords: 
 author: andredm7
@@ -14,12 +14,15 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 317d101c34854fdf4913adcf53bdef614599deb7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 22746475bf50f8e4775c81e6833428c7f2ef9eba
 
 
 ---
 # <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>Ce qui se passe quand une application est utilisée dans le cadre de l’accès conditionnel pour la gestion des applications mobiles
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 L’accès conditionnel pour la gestion des applications mobiles vérifie l’identité de l’application approuvée au moyen d’une application broker qui doit être présente sur l’appareil :
 *  Sur **iOS**, l’**application Azure Authenticator** est l’application broker.
 * Sur **Android**, l’**application Portail d’entreprise Intune** est l’application broker. 

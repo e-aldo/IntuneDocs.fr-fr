@@ -1,11 +1,11 @@
 ---
-title: "Résoudre les problèmes de profil de messagerie | Microsoft Intune"
+title: "Résolution de problèmes de profils de messagerie | Microsoft Docs"
 description: "Cette rubrique présente des problèmes de profils de messagerie et fournit des instructions pour les résoudre."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
-ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
 
 
 ---
 
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Résoudre les problèmes de profil de messagerie dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous trouverez ici quelques exemples de problèmes de profils de messagerie et des instructions pour les résoudre.
 
 Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
 
 
-## <a name="unable-to-send-images-from-email-account"></a>Impossible d’envoyer des images à partir du compte de messagerie
+## <a name="unable-to-send-images-from--email-account"></a>Impossible d’envoyer des images à partir du compte de messagerie
 Les utilisateurs qui disposent de comptes de messagerie configurés automatiquement ne peuvent pas envoyer des photos ou des images à partir de leur appareil.
 Cela se produit lorsque l’option **Autoriser l’envoi de courrier électronique à partir d’applications tierces** n’est pas activée.
 
@@ -61,7 +64,7 @@ Si l’utilisateur a installé un profil de messagerie avant de configurer un pr
 
 Étant donné que Samsung KNOX n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à déployer à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Erreur 0x87D1FDE8 pour appareil KNOX Standard
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>Erreur 0x87D1FDE8 pour appareil KNOX Standard
 **Problème ** : Après la création et le déploiement d’un profil de messagerie Exchange Active Sync pour Samsung KNOX Standard pour différents appareils Android, l’erreur **0x87D1FDE8** ou un **échec de la correction** est signalé sous l’onglet de stratégie des propriétés de l’appareil &gt;.
 
 Examinez la configuration de votre profil EAS pour Samsung KNOX et la stratégie source. L’option de synchronisation Samsung Notes n’étant plus prise en charge, nous vous invitons à ne pas la sélectionner dans votre profil. Assurez-vous que les appareils ont eu suffisamment de temps pour traiter la stratégie (jusqu’à 24 heures).
@@ -71,6 +74,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

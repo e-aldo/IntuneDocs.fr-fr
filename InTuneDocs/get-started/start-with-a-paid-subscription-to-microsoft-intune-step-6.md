@@ -1,5 +1,5 @@
 ---
-title: "Déployer des stratégies et des applications | Microsoft Intune"
+title: "Déploiement de stratégies et d’applications | Microsoft Docs"
 description: "Vous pouvez activer des paramètres de stratégie et déployer des applications qui seront appliquées dès que les appareils sont inscrits dans la gestion."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>Créer des stratégies et publier des applications
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Avant de commencer l’inscription des applications dans Intune, vous pouvez activer les paramètres de stratégie et les applications qui seront déployées dès que ces appareils passent en gestion. Les stratégies Intune fournissent des paramètres qui vous permettent de contrôler les paramètres de sécurité des appareils mobiles, de gérer les paramètres du Pare-feu Windows et d’Endpoint Protection pour les ordinateurs, et de déployer des applications. Vous pouvez configurer la stratégie, ajouter des applications et déployer ces applications afin que les appareils reçoivent les paramètres et les applications dès leur inscription dans Intune.
 
 Les stratégies et les applications sont spécifiques à la plateforme.

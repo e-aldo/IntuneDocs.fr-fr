@@ -1,5 +1,5 @@
 ---
-title: "Définir ou modifier votre code secret | Microsoft Intune"
+title: "Définir ou modifier votre code secret | Microsoft Docs"
 description: "Définir ou modifier votre code secret"
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 6e941b8ac3d26afce65eb5a7d60f7c56dbbdbe87
+ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
+ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
 
 
 ---
@@ -27,13 +29,13 @@ Votre administrateur peut définir plusieurs exigences de code secret. Par exemp
 
 Si vous rencontrez des difficultés à définir un code secret qui répond aux exigences de code secret, demandez de l’aide à votre administrateur informatique.
 
-## <a name="set-your-passcode"></a>Définir votre code d’accès##
+## <a name="set-your-passcode"></a>Définir votre code d’accès
 
 1. Appuyez sur **Paramètres** > **ID tactile et code secret**.
 2. Dans le menu **ID tactile et code secret**, appuyez sur **Activer le code secret**.
 3. Entrez un nouveau code secret qui répond aux exigences de votre administrateur informatique, puis réentrez-le pour le confirmer.
 
-## <a name="change-your-passcode"></a>Modifier votre code secret##
+## <a name="change-your-passcode"></a>Modifier votre code secret
 
 1. Appuyez sur **Paramètres** > **ID tactile et code secret**.
 2. Saisissez votre code secret. Le menu **ID tactile et code secret** s’ouvre.
@@ -44,6 +46,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
