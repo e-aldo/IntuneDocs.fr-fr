@@ -14,15 +14,15 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 53bb650bbb20d5efae0ba53f0c0bc257a19cbaae
-ms.openlocfilehash: 96f6ca25229244a9cde24609e0c4c37412a3eb01
+ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
+ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 
 ---
 
 # <a name="develop-an-intune-support-plan"></a>Développer un plan de support Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
 Un plan de support Intune peut être encore plus efficace pour identifier et résoudre les problèmes affectant Intune et améliorer ainsi l’expérience Intune globale de l’utilisateur final. Voici quelques questions à prendre en compte lorsque vous développez votre plan de support Intune :
 
@@ -38,7 +38,7 @@ Un plan de support Intune peut être encore plus efficace pour identifier et ré
 
 Examinons chacun de ces domaines.
 
-## <a name="which-teams-are-responsible-for-providing-support"></a>Quelles équipes assurent le support ? 
+## <a name="which-teams-are-responsible-for-providing-support"></a>Quelles équipes assurent le support ?
 
 Les organisations peuvent avoir différents niveaux (1-3) de support. Par exemple, les niveaux 1 et 2 peuvent faire partie de l’équipe de support et le niveau 3 incluent des membres de l’équipe de gestion des appareils mobiles chargée du déploiement Intune.
 
@@ -46,7 +46,7 @@ Les organisations peuvent avoir différents niveaux (1-3) de support. Par exempl
 
 Le niveau 1 est généralement le premier niveau de support et le premier niveau que l’utilisateur contacte pour les demandes de support. Si le niveau 1 est incapable de résoudre le problème de l’utilisateur final, le problème est transmis au niveau 2 qui le retransmet au niveau 3, si nécessaire. En outre, un support Microsoft peut-être utilisé comme niveau 4.
 
--   En savoir plus sur le [support Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.md).
+-   En savoir plus sur le [support Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 Pour les phases de déploiement de production initiales, les trois niveaux de support peuvent participer à une conférence téléphonique ou une conversation Skype. Voici un exemple montrant comment une organisation peut implémenter ses flux de travail de support/assistance informatique :
 
@@ -84,10 +84,10 @@ Vous trouverez ci-dessous un exemple de calendrier de formation au support Intun
 
 -   Questions-réponses
 
->[!TIP] 
+>[!TIP]
 > La section [Ressources supplémentaires](additional-resources.md) fournit des ressources techniques qui peuvent aider votre équipe de support à étudier et à exploiter la prise en main de Microsoft Intune.
 
-## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Quelles opportunités permettent d’impliquer en amont l’équipe de support ? 
+## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Quelles opportunités permettent d’impliquer en amont l’équipe de support ?
 
 Impliquer le personnel de support/assistance informatique dans les premières phases de planification du déploiement Intune et diriger les efforts peut être très utile pour les organisations. Cela offre au personnel de support des opportunités de mettre en avant la solution et de garantir une expérience optimale. Cela prépare également le personnel de support/assistance informatique à gérer le déploiement de production complet des organisations.
 
@@ -97,6 +97,6 @@ La section suivante fournit des conseils sur la [conception Intune](section-7-cr
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
