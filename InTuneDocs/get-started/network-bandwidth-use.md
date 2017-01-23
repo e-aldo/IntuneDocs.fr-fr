@@ -1,12 +1,12 @@
 ---
-title: "Utilisation de la bande passante réseau Intune | Microsoft Intune"
+title: "Utilisation de la bande passante réseau Intune | Microsoft Docs"
 description: "Utilisation de la bande passante réseau Intune"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 363300f04480a9ed80bd710db5c4ec7c90dd8be3
+ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
+ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
 
 
 ---
 
 # <a name="intune-network-bandwidth-use"></a>Utilisation de la bande passante réseau Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Avant de configurer Microsoft Intune, consultez cette rubrique et les autres exigences indiquées dans [Informations à connaître avant de commencer à utiliser Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
@@ -106,7 +108,9 @@ Le tableau suivant répertorie les ports et services auxquels le client Intune a
 
 |**Domaine**|**Ports**|**Adresse IP**|
 |------|----|---|
-|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>m.manage.microsoft.com<br>p.manage.microsoft.com<br>portal.manage.microsoft.com<br>r.manage.microsoft.com|80 et 443|134.170.168.254<br>134.170.51.126
+|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>p.manage.microsoft.com<br>r.manage.microsoft.com|80 et 443|134.170.168.254<br>134.170.51.126
+|m.manage.microsoft.com|80 et 443| 13.91.59.243<br>40.68.30.140
+|portal.manage.microsoft.com|80 et 443|40.121.50.69<br>52.169.30.159
 |account.manage.microsoft.com|80 et 443|157.56.13.59
 |fef.msua01.manage.microsoft.com|80 et 443|138.91.243.97
 |fef.msua02.manage.microsoft.com|80 et 443|23.96.112.46
@@ -223,10 +227,10 @@ Le tableau suivant répertorie les ports et services auxquels le client Intune a
 
 >[!div class="step-by-step"]
 
->[&larr; **Prérequis**](supported-mobile-devices-and-computers.md)     [**Mise en réseau** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
+>[&larr; **Conditions préalables**](what-to-know-before-you-start-microsoft-intune.md)     [**Abonnement** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Charger la version test des applications pour Windows et Windows Phone | Microsoft Intune"
+title: Chargement de la version test des applications pour Windows et Windows Phone | Microsoft Docs
 description: "Découvrez comment connecter des applications métier afin de pouvoir utiliser Intune pour les déployer."
 keywords: 
 author: robstackmsft
@@ -11,12 +11,14 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signer des applications métier afin de pouvoir les déployer sur des appareils Windows avec Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 En tant qu’administrateur Intune, vous pouvez déployer des applications métier sur des appareils Windows et Windows 10 Mobile, y compris l’application Portail d’entreprise. Pour déployer des applications .appx ou .xap sur des appareils Windows 10 et Windows 10 Mobile, ou déployer n’importe quelle application métier sur des appareils Windows 8.1 ou Windows Phone 8.1, vous devez obtenir un **certificat de signature de Code Symantec Enterprise Mobile**. Seul le certificat Symantec est approuvé pour ces applications pour les appareils Windows respectifs. Vous pouvez utiliser votre propre autorité de certification pour les applications Windows 10 et « universelles ». Ce certificat est requis pour :
 

@@ -1,5 +1,5 @@
 ---
-title: "Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows 10 dans Intune ? | Microsoft Intune"
+title: "Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows 10 dans Intune ? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1f872d245144727406d926b0c9401827939470f1
 
 
 ---
@@ -56,6 +58,6 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

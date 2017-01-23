@@ -1,12 +1,12 @@
 ---
-title: Simplification de la configuration des e-mails sur des appareils mobiles | Microsoft Intune
+title: Simplification de la configuration des e-mails sur des appareils mobiles | Microsoft Docs
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 12/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: a2ddf2b972f90aea6ac0e47372bd4f0b4de5cf19
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
 
 
 ---
 
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Guide de démarrage rapide : Simplification de la configuration des e-mails sur des appareils mobiles | Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune permet à votre entreprise d’économiser du temps et des ressources par le déploiement de profils de messagerie (ainsi que pour le VPN et le Wi-Fi) sur les appareils mobiles Windows, iOS et Android gérés par le service Intune. La configuration automatique de profils de messagerie peut améliorer considérablement l’expérience de l’utilisateur final et augmenter les niveaux de satisfaction tout en réduisant les coûts liés au support technique.
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Ce Guide de démarrage rapide est-il fait pour moi ?
@@ -38,15 +41,15 @@ Une fois le profil de messagerie configuré, vous pouvez facilement restreindre 
 ### <a name="additional-information"></a>Informations complémentaires :
 [Paramètres d’appareils Intune et sécurité](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
 
-## <a name="what-should-i-do-next"></a>Que dois-je faire ensuite ?
+## <a name="what-should-i-do-next"></a>Que dois-je faire ensuite ?
 [Déployer des profils VPN pour les appareils gérés](/intune/deploy-use/vpn-connections-in-microsoft-intune)
 
 [Déployer des profils Wi-Fi pour les appareils gérés](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)
 
-[Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](/intune/deploy-use/secure-resource-access-with-certificate-profiles)
+[Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](/intune/deploy-use/secure-resource-access-with-certificate-profiles)
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

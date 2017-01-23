@@ -1,11 +1,11 @@
 ---
-title: "Résoudre les problèmes de stratégie | Microsoft Intune"
+title: "Résolution des problèmes de stratégie | Microsoft Docs"
 description: "Résolvez les problèmes de configuration de stratégie."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2a620d1e499e286365e5913be0ceb3d1efe3b846
 
 
 ---
 
-# Résoudre les problèmes de stratégie dans Microsoft Intune
+# <a name="troubleshoot-policies-in-microsoft-intune"></a>Résoudre les problèmes de stratégie dans Microsoft Intune
 
 Si vous rencontrez des problèmes de déploiement et de gestion des stratégies avec Intune, lisez ce qui suit. Cette rubrique contient certains problèmes courants que vous pouvez rencontrer avec les solutions.
 
-## Problèmes généraux
+## <a name="general-issues"></a>Problèmes généraux
 
-### Une stratégie déployée a-t-elle été appliquée à l’appareil ?
+### <a name="was-a-deployed-policy-applied-to-the-device"></a>Une stratégie déployée a-t-elle été appliquée à l’appareil ?
 **Problème : ** Vous ne savez pas si une stratégie a été correctement appliquée.
 
 Dans la console d’administration Intune, à chaque appareil correspond un onglet Stratégie en dessous de **Propriétés de l’appareil**. Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur prévue est la valeur que vous souhaitez obtenir lors de l'attribution de la stratégie. L’état est ce que vous appliquez au bout du compte quand toutes les stratégies qui s’appliquent à l’appareil, ainsi que les restrictions et les conditions requises du matériel et du système d’exploitation, sont regroupées. Les états possibles sont :
@@ -49,14 +49,14 @@ La capture d’écran ci-dessous illustre clairement ce point à travers deux ex
 > N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
 
 
-## Problèmes liés aux appareils inscrits
+## <a name="issues-with-enrolled-devices"></a>Problèmes liés aux appareils inscrits
 
-### Alerte : L’enregistrement de règles d’accès dans Exchange a échoué
+### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerte : L’enregistrement de règles d’accès dans Exchange a échoué
 **Problème**: vous recevez l’alerte **L’enregistrement de règles d’accès dans Exchange a échoué** dans la console d’administration.
 
 Si vous avez créé des stratégies dans l’espace de travail Stratégie Exchange sur site de la Console d’administration, mais que vous utilisez O365, les paramètres de stratégie configurés ne sont pas appliqués par Intune. Notez la source de la stratégie indiquée dans l’alerte.  Dans l’espace de travail Stratégie Exchange sur site, supprimez les règles existantes, car ce sont des règles Exchange globales qui se trouvent dans Intune et qui concernent Exchange sur site et non O365. Créez ensuite une stratégie pour O365.
 
-### Impossible de modifier la stratégie de sécurité pour différents appareils inscrits
+### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>Impossible de modifier la stratégie de sécurité pour différents appareils inscrits
 Les appareils Windows Phone n’autorisent pas d’assouplir les stratégies de sécurité définies via GPM ou EAS a posteriori. Tel est le cas, par exemple, si vous fixez le **nombre minimal de caractères des mots de passe** à 8, puis que vous essayez de le réduire à 4. La stratégie la plus restrictive a déjà été appliquée à l’appareil.
 
 Selon la plateforme d’appareil, si vous voulez attribuer à la stratégie une valeur moins sûre, vous devrez peut-être réinitialiser les stratégies de sécurité.
@@ -64,12 +64,12 @@ Par exemple, dans Windows, sur le Bureau, balayez à partir de la droite pour ou
 Au bas du menu de navigation gauche figure le lien **Réinitialiser les stratégies de sécurité**. Choisissez-le, puis choisissez le bouton **Réinitialiser les stratégies**.
 Pour pouvoir appliquer une stratégie moins restrictive, vous devrez peut-être retirer les autres appareils MDM (par exemple, Android, Windows Phone 8.1 et versions ultérieures et iOS), puis les réinscrire dans le service.
 
-## Problèmes liés aux ordinateurs qui exécutent le client logiciel Intune
+## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Problèmes liés aux ordinateurs qui exécutent le client logiciel Intune
 
-### Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Erreurs liées aux stratégies Microsoft Intune dans policyplatform.log
 Pour les appareils Windows gérés avec le client logiciel Intune, les erreurs de stratégie dans le fichier policyplatform.log peuvent être dues à des paramètres définis sur des valeurs autres que les valeurs par défaut dans le Contrôle de compte d’utilisateur Windows sur l’appareil. Certains paramètres de Contrôle de compte d’utilisateur autres que les paramètres par défaut peuvent affecter les installations du client Microsoft Intune et l’exécution des stratégies.
 
-#### Pour résoudre les problèmes liés au Contrôle de compte d’utilisateur
+#### <a name="to-resolve-uac-issues"></a>Pour résoudre les problèmes liés au Contrôle de compte d’utilisateur
 
 1.  Mettez hors service l’ordinateur, comme décrit dans [Mettre hors service des appareils en cas de gestion Microsoft Intune](/intune/deploy-use/retire-devices-from-microsoft-intune-management).
 
@@ -82,7 +82,7 @@ Pour les appareils Windows gérés avec le client logiciel Intune, les erreurs d
 
 4.  Déplacez le curseur de notification sur le paramètre par défaut.
 
-### Erreur : Impossible d’obtenir la valeur de l’ordinateur, 0x80041013
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>Erreur : Impossible d’obtenir la valeur de l’ordinateur, 0x80041013
 Cela peut se produire si l’heure sur le système local présente un écart de synchronisation d’au moins cinq minutes. Si l’heure sur l’ordinateur local n’est pas synchronisée, les transactions sécurisées échouent car que les horodatages ne sont pas valides.
 
 Pour résoudre ce problème, réglez l’heure du système local le plus proche possible de l’heure Internet ou à l’heure définie sur les contrôleurs de domaine du réseau.
@@ -94,11 +94,11 @@ Pour résoudre ce problème, réglez l’heure du système local le plus proche 
 
 
 
-### Étapes suivantes
+### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

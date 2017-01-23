@@ -10,18 +10,17 @@
 ## [Glossaire](understand-explore/intune-glossary.md)
 
 # [Bien démarrer](get-started/get-started.md)
-## [Guide de démarrage rapide](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Configurer Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Conditions préalables](get-started/what-to-know-before-you-start-microsoft-intune.md)
-#### [Appareils et navigateurs pris en charge](get-started/supported-mobile-devices-and-computers.md)
-#### [Utilisation de la bande passante réseau](get-started/network-bandwidth-use.md)
+#### [Utilisation du réseau](get-started/network-bandwidth-use.md)
 ### [Se connecter à Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Configurer un nom de domaine](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [Configurer des domaines](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Ajouter des utilisateurs](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Gérer les licences Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Gérer des licences](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Organiser les utilisateurs et les appareils](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Déployer des stratégies et des applications](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Personnaliser le portail d’entreprise](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Inscrire des appareils mobiles](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Inscrire des appareils](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Tâches de post-configuration](get-started/post-configuration-tasks.md)
 ## [Migrer vers Intune](get-started/migrate-to-intune.md)
 ## Étapes suivantes
@@ -30,14 +29,22 @@
 ### [Publication d’applications mobiles pour vos utilisateurs](get-started/publish-mobile-apps-to-users.md)
 ### [Simplification de la configuration des e-mails sur des appareils mobiles](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Protection des PC Windows contre les menaces de programmes malveillants](get-started/protect-pcs-against-malware-threats.md)
-## [Phases de déploiement Intune](get-started/rollout-phases-for-microsoft-intune-deployment.md)
-### [Définition de la portée du projet](get-started/project-scope.md)
-### [Preuve de concept](get-started/proof-of-concept.md)
-### [Pilote](get-started/pilot.md)
-### [Déploiement en entreprise](get-started/enterprise-rollout.md)
-### [Opérations et maintenance](get-started/operations-and-maintenance.md)
 
-# [Nouveautés](whats-new/whats-new-in-microsoft-intune.md)
+# [Planifier et concevoir](plan-design/introduction.md)
+## [Section 1 : déterminer les objectifs et les défis liés au déploiement](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
+## [Section 2 : identifier des scénarios d’utilisation](plan-design/section-2-identify-use-case-scenarios.md)
+## [Section 3 : déterminer les exigences du scénario d’utilisation](plan-design/section-3-determine-use-case-requirements.md)
+## [Section 4 : développer un plan de déploiement](plan-design/section-4-develop-a-rollout-plan.md)
+## [Section 5 : développer un plan de communication](plan-design/section-5-develop-a-rollout-communication-plan.md)
+## [Section 6 : développer un plan de support](plan-design/section-6-develop-a-support-plan.md)
+## [Section 7 : créer une conception Intune](plan-design/section-7-create-an-intune-design.md)
+## [Section 8 . implémentation d'Intune](plan-design/section-8-onboarding-process.md)
+## [Section 9 : test et validation](plan-design/section-9-test-and-validation.md)
+## [Ressources supplémentaires](plan-design/additional-resources.md)
+
+# Nouveautés
+## [Nouveautés](whats-new/whats-new-in-microsoft-intune.md)
+## [Archive des nouveautés](whats-new/whats-new-archive.md)
 
 # Déployer et utiliser
 ## [Vue d’ensemble des cycles de vie des appareils et des applications](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -209,6 +216,6 @@
 ## [Résoudre les problèmes d’intégration de Lookout](troubleshoot/troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

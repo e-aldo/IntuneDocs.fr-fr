@@ -1,5 +1,5 @@
 ---
-title: Utilisation de votre appareil Windows avec Intune | Microsoft Intune
+title: Utilisation de votre appareil Windows avec Intune | Microsoft Docs
 description: "Cette rubrique fournit une liste de liens menant aux tâches que les utilisateurs peuvent effectuer sur leur appareil mobile Windows quand ce dernier est inscrit dans Intune"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: a3433e1976063513ee836189738ff02d85d40044
 
 
 ---
@@ -52,15 +54,15 @@ Les informations contenues dans cette section indiquent aux utilisateurs les act
 
 Les informations contenues dans cette section aident les utilisateurs à résoudre les problèmes qu’ils peuvent rencontrer après l’inscription de leur appareil Windows dans Intune.
 
-- [L’appareil n’est pas équipé de la version minimale requise du système d’exploitation](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
-- [L’appareil n’est pas conforme à la version maximale du système d’exploitation](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-- [BitLocker n’est pas activé sur l’appareil](device-doesnt-have-bitlocker-enabled-windows.md)
-- [Un logiciel anti-programme malveillant n’est pas activé sur l’appareil](device-doesnt-have-antimalware-software-enabled-windows.md)
-- [Le démarrage sécurisé n’est pas activé sur l’appareil](device-doesnt-have-secure-boot-enabled-windows.md)
-- [L’intégrité du code n’est pas activée sur l’appareil](device-doesnt-have-code-integrity-enabled-windows.md)
+- [L’appareil n’est pas équipé de la version minimale requise du système d’exploitation](you-need-to-update-your-windows-device.md)
+- [L’appareil n’est pas conforme à la version maximale du système d’exploitation](your-windows-version-isnt-yet-supported.md)
+- [BitLocker n’est pas activé sur l’appareil](you-need-to-enable-windows-encryption.md)
+- [Un logiciel anti-programme malveillant n’est pas activé sur l’appareil](your-device-needs-antimalware-software.md)
+- [Le démarrage sécurisé n’est pas activé sur l’appareil](you-need-to-enable-secure-boot-windows.md)
+- [L’intégrité du code n’est pas activée sur l’appareil](you-need-to-enable-code-integrity.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Utilisation de votre appareil iOS ou macOS avec Intune | Microsoft Intune
+title: Utilisation de votre appareil iOS ou macOS avec Intune | Microsoft Docs
 description: "Cette rubrique fournit une liste de liens menant aux tâches que vous pouvez effectuer sur votre appareil mobile iOS ou macOS quand l’appareil est inscrit dans Intune."
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
+searchScope:
+- Company Portal
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: e10c0eb3000bcf3a98a0cab891c40d32fe06d335
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: 8e6aaaa40b28b1d3f61399c695530321824c2a05
 
 
 ---
@@ -60,13 +62,13 @@ Les informations contenues dans cette section aident les utilisateurs à résoud
 - [Des erreurs se produisent pendant l’inscription de votre appareil dans Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
 - [Vous êtes invité à identifier votre appareil quand vous essayez d’inscrire](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 - [Comment trouver le numéro de série sur mon appareil ?](how-do-i-find-the-serial-number-on-my-device-ios.md)
-- [L’appareil n’est pas équipé de la version minimale requise du système d’exploitation](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
-- [L’appareil n’est pas conforme à la version maximale du système d’exploitation](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+- [L’appareil n’est pas équipé de la version minimale requise du système d’exploitation](you-need-to-update-your-ios-device.md)
+- [L’appareil n’est pas conforme à la version maximale du système d’exploitation](you-need-to-update-your-ios-device.md)
 - [Vous êtes invité à installer Lookout for Work sur votre appareil iOS](you-are-prompted-to-install-lookout-for-work-ios.md)
 - [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil iOS](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 
