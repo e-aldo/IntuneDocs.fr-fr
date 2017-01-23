@@ -1,11 +1,11 @@
 ---
-title: "Mettre à jour des applications | Microsoft Intune"
+title: "Mise à jour d’applications | Microsoft Docs"
 description: "Utilisez les informations de cette rubrique pour découvrir comment mettre à jour des applications quand une nouvelle version est nécessaire."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e78642494356038d4dff259ca54030122fd90819
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 824605544487c987c8726e0efe91d06a597fadb2
 
 
 ---
 
-# Mettre à jour des applications à l'aide de Microsoft Intune
+# <a name="update-apps-using-microsoft-intune"></a>Mettre à jour des applications à l'aide de Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune peut vous aider à gérer les mises à jour des applications. Utilisez les informations de cette rubrique pour découvrir comment mettre à jour des applications quand une nouvelle version est nécessaire.
 
-## Mise à jour des applications
+## <a name="how-to-update-apps"></a>Mise à jour des applications
 Quand une nouvelle version d’une application que vous avez déployée est publiée, Intune vous permet de mettre à jour et de déployer la version la plus récente de l’application. Vous pouvez uniquement remplacer un déploiement par une version plus récente de la même application (ayant le même identificateur). Vous ne pouvez pas utiliser les mises à jour d'application pour mettre à jour un déploiement avec un package d'application différent.
 
-### Identificateurs d’application
+### <a name="app-identifiers"></a>Identificateurs d’application
 L’identificateur d’application est une propriété qui identifie une application de façon unique. Vous ne pouvez pas installer plusieurs copies d’une application ayant le même identificateur. Voici quelques exemples d’identificateurs d’applications :
 
 - **iOS** : ID de lot (par exemple : com.microsoft.excel)
@@ -42,7 +45,7 @@ L’identificateur d’application est une propriété qui identifie une applica
 > -   L’utilisateur de l’appareil doit accéder au portail d’entreprise, sélectionner l’application installée et choisir **Installer**.
 > -   Modifiez l'action de déploiement en **Désinstaller**et, une fois que l'application a été désinstallée, redéployez l'application avec une action de déploiement de type **Installation disponible**.
 
-### Pour mettre à jour une application
+### <a name="to-update-an-app"></a>Pour mettre à jour une application
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Applications** &gt; **Applications**.
 
@@ -59,6 +62,6 @@ Pour les applications déployées via un lien redirigeant vers un magasin, la mi
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

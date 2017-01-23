@@ -1,5 +1,5 @@
 ---
-title: "Applications Android avec les stratégies de gestion des applications mobiles | Microsoft Intune"
+title: "Applications Android avec les stratégies GAM | Microsoft Docs"
 description: "Cette rubrique décrit ce qui se passe lorsque votre application est gérée par les stratégies de gestion des applications mobiles."
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 945c9f48846fc37358c44b83990feed1f3694966
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: aeacfddb3ed42938dd9443e2734222c977436430
 
 
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-mam-policies"></a>Ce qui se passe quand votre application Android est gérée par des stratégies GAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Cette rubrique décrit l’expérience de l’utilisateur des applications avec des stratégies GAM (gestion des applications mobiles). Les stratégies GAM ne sont appliquées que quand les applications sont utilisées dans un contexte professionnel, par exemple quand l’utilisateur accède à des applications à l’aide d’un compte professionnel ou accède à des fichiers stockés à l’emplacement OneDrive Entreprise d’une société.
 ##  <a name="access-apps"></a>Accéder aux applications
 

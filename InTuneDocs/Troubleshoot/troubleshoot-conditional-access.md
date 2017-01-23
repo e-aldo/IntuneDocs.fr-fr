@@ -1,5 +1,5 @@
 ---
-title: "Résoudre les problèmes d’accès conditionnel | Microsoft Intune"
+title: "Résolution de problèmes d’accès conditionnel | Microsoft Docs"
 description: "Cette rubrique décrit les actions à entreprendre quand vos utilisateurs ne parviennent pas à accéder à des ressources par le biais de l’accès conditionnel Intune."
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
-ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
 
 
 ---
 
 # <a name="troubleshoot-conditional-access"></a>Résoudre les problèmes d’accès conditionnel
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 En général, l’utilisateur tente d’accéder à ses e-mails ou à SharePoint et reçoit une invitation à s’inscrire. Cette invitation le conduit au portail d’entreprise.
 

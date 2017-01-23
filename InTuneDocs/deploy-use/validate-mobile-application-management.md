@@ -21,6 +21,8 @@ ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
 
 # <a name="validating-your-mobile-application-management-setup"></a>Validation de la configuration de la gestion des applications mobiles
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Cette rubrique fournit des informations sur la manière de vérifier s’il existe des problèmes après avoir configuré la gestion des applications mobiles. Ces instructions s’appliquent aux stratégies de gestion des applications mobiles dans le portail Azure.
 
 ### <a name="checking-for-symptoms"></a>Recherche de symptômes

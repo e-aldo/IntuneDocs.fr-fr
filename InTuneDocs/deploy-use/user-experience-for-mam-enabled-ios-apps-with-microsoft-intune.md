@@ -1,11 +1,11 @@
 ---
-title: "Applications iOS avec les stratégies de gestion des applications mobiles | Microsoft Intune"
+title: "Applications iOS avec les stratégies GAM | Microsoft Docs"
 description: "Cette rubrique décrit ce qui se passe quand votre application iOS est gérée par les stratégies de gestion des applications mobiles."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,26 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>Ce qui se passe quand votre application iOS est gérée par des stratégies GAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  Cette rubrique décrit l’expérience de l’utilisateur des applications avec des stratégies GAM (gestion des applications mobiles). Les stratégies GAM ne sont appliquées que quand les applications sont utilisées dans le contexte professionnel, par exemple quand l’utilisateur accède à des applications à l’aide d’un compte professionnel ou accède à des fichiers stockés à l’emplacement OneDrive Entreprise d’une société.
 
 ##  <a name="access-apps"></a>Accéder aux applications
 
-Si l’appareil **n’est pas inscrit dans Intune**, l’utilisateur est invité à redémarrer l’application quand il l’utilise pour la première fois.  Un redémarrage est nécessaire pour que les stratégies GAM soient appliquées à l’application. La capture d’écran suivante de l’application Skype illustre cette demande de redémarrage :
+Si l’appareil **n’est pas inscrit dans Intune**, l’utilisateur est invité à redémarrer l’application quand il l’utilise pour la première fois.  Un redémarrage est nécessaire pour que les stratégies GAM soient appliquées à l’application. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![Capture d’écran de l’appareil iOS affichant l’invite du code confidentiel](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 Si l’appareil est **inscrit pour la gestion dans Intune**, l’utilisateur voit un message indiquant que son application est désormais gérée :
 
@@ -47,7 +52,7 @@ Intune prend en charge le déploiement de stratégies GAM sur un seul compte d�
 * Il est possible que le deuxième utilisateur soit bloqué sur l’appareil, mais cela dépend de l’application utilisée. Toutefois, dans tous les cas, seul le premier utilisateur sujet aux stratégies GAM est affecté par la stratégie.
   * **Microsoft Word**, **Excel** et **PowerPoint** ne bloquent pas un deuxième compte d’utilisateur, mais celui-ci n’est pas affecté par les stratégies GAM.  
 
-  * Pour les **applications OneDrive** et **Outlook**, vous ne pouvez utiliser qu’un seul compte professionnel. Vous ne pouvez pas ajouter plusieurs comptes professionnels pour ces applications. Toutefois, vous pouvez supprimer un utilisateur et en ajouter un autre sur l’appareil.
+  * Pour les applications **OneDrive** et **Outlook**, vous ne pouvez utiliser qu’un seul compte professionnel. Vous ne pouvez pas ajouter plusieurs comptes professionnels pour ces applications. Toutefois, vous pouvez supprimer un utilisateur et en ajouter un autre sur l’appareil.
 
 * Si un appareil a plusieurs comptes d’utilisateur existants avant le déploiement des stratégies, le premier compte sur lequel les stratégies GAM sont déployées est géré par les stratégies GAM Intune.
 
@@ -68,6 +73,6 @@ Sur un appareil iOS, si vous essayez d’ajouter un deuxième compte professionn
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

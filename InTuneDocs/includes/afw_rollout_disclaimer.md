@@ -5,6 +5,6 @@
 > Pour plus d’informations sur l’état de la prise en charge d’Android for Work, lisez la publication Android for Work de l’édition d’octobre 2016 dans [Nouveautés de Microsoft Intune](/intune/whats-new/whats-new-archive#october-2016).
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

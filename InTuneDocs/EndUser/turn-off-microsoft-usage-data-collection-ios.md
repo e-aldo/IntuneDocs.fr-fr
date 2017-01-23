@@ -1,40 +1,38 @@
 ---
-title: "Désactiver la collecte de données d’utilisation pour iOS | Microsoft Intune"
+title: "Guide de désactivation de la collecte de données | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 29fb52fd86aa84a2c5bab6be14d71d198d6b8deb
 
 
 ---
 
-
 # <a name="turn-off-microsoft-usage-data-collection"></a>Désactiver la collecte de données d’utilisation Microsoft
 
-Dans un souci d’améliorer ses produits et services, Microsoft recueille automatiquement des données anonymes sur la fiabilité et les performances de l’application Portail d’entreprise et sur la façon dont elles sont utilisées.
+Microsoft collecte automatiquement certaines données sur nos produits et services. Nous faisons cela pour améliorer la fiabilité et les performances de nos produits, notamment l’application Portail d’entreprise. Bien que ces données soient anonymes, certains utilisateurs peuvent porter un regard négatif sur cette collecte. Vos administrateurs informatiques n’ont aucun moyen de contrôler la collecte des données ni de modifier votre sélection pour ce paramètre.
 
-Pour désactiver la collecte des données d’utilisation sur votre appareil iOS, accédez à **Paramètres**, appuyez sur **Portail d’entreprise**, puis désactivez le paramètre **Données d’utilisation**.
-
-Les administrateurs informatiques n’ont aucun moyen de contrôler la collecte des données ni de modifier votre sélection pour ce paramètre.
+Si vous souhaitez désactiver la collecte des données d’utilisation sur votre appareil iOS, ouvrez **Paramètres**, appuyez sur **Portail d’entreprise**, puis désactivez **Données d’utilisation**.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

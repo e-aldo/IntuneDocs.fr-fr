@@ -1,11 +1,11 @@
 ---
-title: "Personnaliser le Portail d’entreprise | Microsoft Intune"
+title: "Personnaliser le Portail d’entreprise | Microsoft Docs"
 description: "Le portail d’entreprise Intune permet aux utilisateurs d’effectuer des tâches courantes comme inscrire des appareils, installer des applications et trouver des informations concernant le service informatique."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 12/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 
 
 ---
 
 # <a name="customize-the-company-portal"></a>Personnaliser le portail d'entreprise
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Le portail d’entreprise Intune permet aux utilisateurs d’accéder aux données de l’entreprise et d’effectuer des tâches courantes, notamment l’inscription d’appareils, l’installation d’applications et d’accéder à des informations d’assistance fournies par le département informatique.
 
 Le Portail d’entreprise Intune permet aux utilisateurs d’accéder aux données et applications de l’entreprise. Le Portail d’entreprise est disponible sous deux formes :
 
--   **L’application Portail d’entreprise** : disponible sur les appareils que vous gérez avec Intune. En savoir plus sur les applications Portail d’entreprise pour [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) et [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+-   **L’application Portail d’entreprise** : disponible sur les appareils que vous gérez avec Intune. En savoir plus sur les applications Portail d’entreprise pour [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) et [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
 - **Le site web du portail d’entreprise** : site web permettant aux utilisateurs finaux d’effectuer la plupart des tâches à partir de l’application Portail d’entreprise. L’URL du portail d’entreprise Intune est [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Pour en savoir plus sur ce site web, consultez [Utiliser le site web du portail d’entreprise Intune](/Intune/EndUser/using-the-intune-company-portal-website).
@@ -42,11 +45,6 @@ Certaines des tâches que les utilisateurs peuvent effectuer dans le Portail d�
 -   Verrouiller leur appareil à distance
 -   télécharger les logiciels déployés par votre organisation ;
 -   Contacter le service informatique pour obtenir de l’aide
-
-> [!NOTE]
-> L’application Portail d’entreprise n’est pas encore disponible dans certains pays.
-> __iOS__ : l’application Portail d’entreprise pour iOS est publiée sur [tous les territoires disponibles](https://go.microsoft.com/fwlink/?linkid=831284) pour l’Apple iOS App Store.
-> __Android__ : l’application Portail d’entreprise pour Android n’est pas disponible en Chine. Pour ces pays, une autre solution consiste à [charger la version de test Android de l’application Portail d’entreprise](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ## <a name="customize-company-portal-settings"></a>Personnaliser les paramètres du portail d’entreprise
 La personnalisation du Portail d’entreprise permet de fournir une expérience familière et utile à vos utilisateurs finaux. Connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) comme administrateur du service ou client, choisissez **Administration** &gt; **Portail d’entreprise** et configurez les paramètres du portail d’entreprise.
@@ -91,6 +89,6 @@ Après avoir enregistré vos modifications, vous pouvez utiliser les liens propo
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
