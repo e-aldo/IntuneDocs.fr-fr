@@ -1,5 +1,5 @@
 ---
-title: Utilisation de votre appareil Android avec Intune | Microsoft Intune
+title: Utilisation de votre appareil Android avec Intune | Microsoft Docs
 description: "Cette rubrique fournit une liste de liens menant aux tâches que les utilisateurs finaux peuvent effectuer sur leur appareil mobile Android quand ce dernier est inscrit dans Intune"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: b264ea53e727f706bc635ed9c738ad605e1ac750
+ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
 
 
 ---
@@ -59,13 +59,13 @@ Les informations contenues dans cette section indiquent aux utilisateurs les act
 Les informations contenues dans cette section aident les utilisateurs à résoudre les problèmes qu’ils peuvent rencontrer après l’inscription de leur appareil Android dans Intune.
 
 - [Utiliser la journalisation détaillée pour aider votre administrateur informatique à résoudre les problèmes de l’appareil](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Envoyer les journaux de données de diagnostic à votre administrateur informatique par e-mail](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [Envoyer les journaux de données de diagnostic à votre administrateur informatique par câble USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [Envoyer les erreurs d’inscription à votre administrateur informatique](send-enrollment-errors-to-your-it-administrator-android.md)
-- [L’appareil n’est pas équipé de la version minimale requise du système d’exploitation](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [L’appareil n’est pas conforme à la version maximale du système d’exploitation](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Envoyer des journaux à votre administrateur informatique par e-mail](send-logs-to-your-it-admin-by-email-android.md)
+- [Envoyer des journaux à votre administrateur informatique par câble USB](send-logs-to-your-it-admin-using-cable-android.md)
+- [Envoyer les erreurs d’inscription à votre administrateur informatique](send-enrollment-errors-to-your-it-admin-android.md)
+- [L’appareil n’est pas équipé de la version minimale requise du système d’exploitation](you-need-to-update-your-android-device.md)
+- [L’appareil n’est pas conforme à la version maximale du système d’exploitation](your-android-version-isnt-yet-supported.md)
 - [Votre appareil est rooté et vous ne pouvez pas vous connecter](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Un certificat obligatoire est manquant sur votre appareil](your-device-is-missing-a-required-certificate-android.md)
+- [Un certificat obligatoire est manquant sur votre appareil](your-device-is-missing-a-required-certificate-landing-android.md)
 - [Vous êtes invité à désactiver les sources inconnues](you-are-asked-to-turn-off-unknown-sources-android.md)
 - [Vous êtes invité à désactiver le débogage USB](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [Vous êtes invité à activer le paramètre Rechercher les menaces de sécurité sur l’appareil](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
@@ -75,6 +75,6 @@ Les informations contenues dans cette section aident les utilisateurs à résoud
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

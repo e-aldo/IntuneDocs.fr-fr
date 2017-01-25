@@ -1,5 +1,5 @@
 ---
-title: "S’inscrire ou se connecter à Intune | Microsoft Intune"
+title: "S’inscrire ou se connecter à Intune | Microsoft Docs"
 description: "Guide pratique pour vous inscrire à un abonnement Intune ou pour vous connecter et démarrer votre abonnement"
 keywords: 
 author: nathbarn
@@ -14,14 +14,17 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bf4a57146a77ce83a86112e08f5e839cf5f9eaf6
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>S'inscrire ou se connecter à Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Avant de pouvoir vous connecter ou vous inscrire à Intune, vous devez déterminer si votre organisation possède déjà un compte professionnel ou scolaire Microsoft Online Services, ou si votre organisation dispose d’un accord Enterprise Agreement ou d’un accord de licence en volume équivalent conclu avec Microsoft. Un compte professionnel ou scolaire vous est fourni au moment où vous signez un contrat de licence en volume avec Microsoft ou que vous vous abonnez à des services cloud Microsoft, comme Office 365.
 
 Si vous avez déjà un compte professionnel ou scolaire, vous pourrez simplement vous **connecter** avec ce compte pour ajouter Intune à votre environnement d’abonnement existant. Dans le cas contraire, vous devrez vous **inscrire** pour créer un nouveau compte à utiliser pour gérer Intune pour votre organisation.
@@ -50,6 +53,6 @@ Après vous être inscrit pour obtenir un nouvel abonnement, vous recevrez un me
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

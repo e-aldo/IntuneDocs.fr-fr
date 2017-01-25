@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code d’accès
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune fournit des fonctionnalités de verrouillage à distance et de réinitialisation du code d’accès.
 
 ## <a name="lock-a-device-remotely"></a>Verrouiller un appareil à distance
-Si un utilisateur perd un appareil, vous pouvez verrouiller celui-ci à distance. Le tableau ci-dessous illustre le fonctionnement du verrouillage à distance sur différentes plateformes mobiles.
+Si un utilisateur perd un appareil, vous pouvez verrouiller celui-ci à distance. Vous devez avoir défini un code confidentiel ou un code PIN sur l’appareil avant de pouvoir utiliser le verrouillage à distance. 
+
+Le tableau ci-dessous illustre le fonctionnement du verrouillage à distance sur différentes plateformes mobiles.
 
 |Plateforme|Verrouillage à distance|
 |------------|---------------|
@@ -79,6 +84,6 @@ La réinitialisation du code d’accès n’est pas prise en charge pour les PC 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -7,7 +7,7 @@
 ### [Options et fonctionnalités supplémentaires](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convertir en abonnement payant](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Scénarios courants](understand-explore/common-ways-to-use-intune.md)
-## [Glossaire](understand-explore/intune-glossary.md)
+
 
 # [Bien démarrer](get-started/get-started.md)
 ## [Configurer Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -37,13 +37,14 @@
 ## [Section 4 : développer un plan de déploiement](plan-design/section-4-develop-a-rollout-plan.md)
 ## [Section 5 : développer un plan de communication](plan-design/section-5-develop-a-rollout-communication-plan.md)
 ## [Section 6 : développer un plan de support](plan-design/section-6-develop-a-support-plan.md)
-## [Section 7 : créer une conception Intune](plan-design/section-7-create-an-intune-design.md)
-## [Section 8 . implémentation d'Intune](plan-design/section-8-onboarding-process.md)
+## [Section 7 : créer une conception Intune](plan-design/section-7-create-an-intune-design.md)
+## [Section 8 : implémentation d'Intune](plan-design/section-8-onboarding-process.md)
 ## [Section 9 : test et validation](plan-design/section-9-test-and-validation.md)
 ## [Ressources supplémentaires](plan-design/additional-resources.md)
 
-# Nouveautés
+# [Nouveautés](whats-new/whats-new-in-microsoft-intune.md)
 ## [Nouveautés](whats-new/whats-new-in-microsoft-intune.md)
+## [Nouveautés de la préversion Azure](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Archive des nouveautés](whats-new/whats-new-archive.md)
 
 # Déployer et utiliser
@@ -142,20 +143,20 @@
 #### [Windows & Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Déployer une stratégie de conformité des appareils](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Restreindre l’accès en fonction de la conformité des appareils](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Protéger l’accès en fonction de la conformité des appareils](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online et nouvel Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange local et Exchange Online Dedicated hérité](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype Entreprise Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [Restreindre l’accès à la messagerie : exemples](deploy-use/restrict-email-access-example-scenarios.md)
+#### [Protéger l’accès à la messagerie : exemples](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Autoriser uniquement l’accès aux services O365 avec les applications gérées par une stratégie](deploy-use/allow-policy-managed-apps-access-to-o365.md)
 #### [Applications avec accès conditionnel pour la gestion des applications mobiles](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Bloquer les applications sans ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
-### [Restreindre l’accès à des réseaux (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Restreindre l’accès en fonction du risque évalué pour l’appareil, le réseau et l’application](deploy-use/restrict-access-based-on-device-network-app-risk.md)
+### [Protéger l’accès à des réseaux (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [Protéger l’accès en fonction du risque évalué pour l’appareil, le réseau et l’application](deploy-use/restrict-access-based-on-device-network-app-risk.md)
 #### [Configurer la protection contre les menaces sur les appareils Lookout](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 #### [Activer Lookout dans Intune](deploy-use/enable-lookout-mtp-connection-in-intune.md)
 #### [Déployer l’application Lookout for Work](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
@@ -179,6 +180,7 @@
 #### [Applications métier sur des appareils non gérés par Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Utiliser le SDK quand vous écrivez une application](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [Forum aux questions sur la protection des applications et GAM](deploy-use/mam-faq.md)
 
 ## Mettre des applications et des données hors service
 ### [Utiliser la réinitialisation sélective ou complète](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -215,7 +217,9 @@
 
 ## [Résoudre les problèmes d’intégration de Lookout](troubleshoot/troubleshooting-lookout-integration.md)
 
+# [Glossaire](understand-explore/intune-glossary.md)
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Jan17_HO2-->
 
 
