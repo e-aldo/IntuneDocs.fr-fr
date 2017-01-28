@@ -1,11 +1,11 @@
 ---
-title: "Restreindre l’accès à Dynamics CRM Online | Microsoft Intune"
+title: "Protéger l’accès à Dynamics CRM Online | Microsoft Docs"
 description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à Dynamics CRM Online."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Restreindre l’accès à Dynamics CRM Online avec Intune
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Protéger l’accès à Dynamics CRM Online avec Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous pouvez contrôler l’accès à Microsoft Dynamics CRM Online à partir des appareils iOS et Android avec l’accès conditionnel Microsoft Intune.  L’accès conditionnel Intune comprend deux composants :
 * Une [stratégie de conformité des appareils](introduction-to-device-compliance-policies-in-microsoft-intune.md) que l’appareil doit respecter pour être considéré comme conforme.
 * Une [stratégie d’accès conditionnel](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) dans laquelle vous spécifiez les conditions que l’appareil doit remplir pour accéder au service.
 
-Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’article [Restreindre l’accès aux services de messagerie, O365 et autres](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’article [Protéger l’accès à la messagerie, à Office 365 et à d’autres services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!IMPORTANT]
 > Pour déployer l’accès conditionnel, vous devez avoir des abonnements à Intune et Azure Active Directory Premium, et les utilisateurs doivent avoir une licence pour chacun des deux produits. L’**abonnement Enterprise Mobility + Security (EMS)** comprend un abonnement à Intune et un abonnement à Azure Active Directory Premium. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Si vous n’avez pas d’abonnement EMS, vous pouvez obtenir un abonnement à Azure Active Directory Premium. Consultez la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
@@ -92,15 +95,15 @@ Choisissez un groupe d’appareils mobiles puis, sous l’onglet **Appareils**, 
 * **Appareils enregistrés avec AAD et conformes**. Ces appareils peuvent accéder à Dynamics CRM.
 
 ##  <a name="next-steps"></a>Étapes suivantes
-* [Restreindre l’accès à Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [Protéger l’accès à Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Restreindre l’accès à Exchange sur site](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [Restreindre l’accès à SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Protéger l’accès à Exchange sur site](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [Protéger l’accès à SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Restreindre l’accès à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Protéger l’accès à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

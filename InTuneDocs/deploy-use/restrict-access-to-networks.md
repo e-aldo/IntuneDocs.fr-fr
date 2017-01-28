@@ -1,11 +1,11 @@
 ---
-title: "Restreindre l’accès aux réseaux avec Cisco ISE | Microsoft Docs"
+title: "Protéger l’accès aux réseaux avec Cisco ISE | Microsoft Docs"
 description: "Utilisez Cisco ISE avec Intune pour que les appareils soient inscrits auprès d’Intune et conformes aux stratégies avant d’accéder aux infrastructures Wi-Fi et VPN contrôlées par Cisco ISE."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Utilisation de Cisco ISE avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 L’intégration d’Intune à Cisco ISE (Identity Services Engine) vous permet de créer des stratégies réseau dans votre environnement ISE faisant appel à l’état de conformité et à l’inscription d’appareils Intune. Vous pouvez utiliser ces stratégies pour vous assurer que l’accès à votre réseau d’entreprise est limité aux appareils gérés par Intune et conformes aux stratégies Intune.
 
 ## <a name="configuration-steps"></a>Étapes de configuration
@@ -189,6 +192,6 @@ Vous pouvez également [télécharger un ensemble d’instructions d’inscripti
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

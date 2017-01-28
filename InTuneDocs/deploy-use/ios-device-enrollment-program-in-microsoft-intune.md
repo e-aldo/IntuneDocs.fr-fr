@@ -1,11 +1,11 @@
 ---
-title: "Gestion DEP d’Apple pour les appareils iOS | Microsoft Intune"
+title: "Gestion DEP d’Apple pour les appareils iOS | Microsoft Docs"
 description: "Déployez un profil d’inscription qui inscrit les appareils iOS achetés via le programme DEP iOS « à distance », afin de gérer les appareils Apple."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 07/19/2016
+ms.date: 12/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+ms.sourcegitcommit: 8063b933a767740a7951fa69a918a8677b664d02
+ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
 
 
 ---
 
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrire des appareils iOS DEP d’entreprise
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune peut déployer un profil d’inscription qui inscrit les appareils iOS qui ont été achetés via le programme DEP « à distance ». Le package d’inscription peut inclure des options d’Assistant de configuration pour l’appareil. Les appareils inscrits via le programme DEP ne peuvent pas être désinscrits par les utilisateurs.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Gestion DEP d’Apple pour les appareils iOS avec Microsoft Intune
@@ -109,13 +112,13 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du progra
 
 ## <a name="changes-to-intune-group-assignments"></a>Modifications apportées aux affectations de groupe Intune
 
-En novembre, la gestion des groupes d’appareils sera migrée vers Azure Active Directory. Après la transition vers des groupes Azure Active Directory, l’affectation de groupe n’apparaîtra pas dans les options de **profil d’inscription de l’entreprise**. Plusieurs mois pourront s’écouler avant que vous ne constatiez les effets de cette modification. Après le déplacement vers le nouveau portail, les attributions de groupes d’appareils dynamiques peuvent être définies en fonction des noms des profils d’inscription de l’entreprise. Ce processus garantit que les appareils déjà affectés à un groupe d’appareils sont inscrits automatiquement dans le groupe avec une stratégie et des applications déployées. [En savoir plus sur les groupes Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Depuis décembre 2016, la gestion des groupes d’appareils est déplacée vers Azure Active Directory. Après la transition vers des groupes Azure Active Directory, l’affectation de groupe n’apparaîtra pas dans les options de **profil d’inscription de l’entreprise**. Plusieurs mois pourront s’écouler avant que vous ne constatiez les effets de cette modification. Après le déplacement vers le nouveau portail, les attributions de groupes d’appareils dynamiques peuvent être définies en fonction des noms des profils d’inscription de l’entreprise. Ce processus garantit que les appareils déjà affectés à un groupe d’appareils sont inscrits automatiquement dans le groupe avec une stratégie et des applications déployées. [En savoir plus sur les groupes Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>Voir aussi
 [Prérequis pour l’inscription des appareils](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

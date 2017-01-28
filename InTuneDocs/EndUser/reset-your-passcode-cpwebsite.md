@@ -1,33 +1,34 @@
 ---
-title: "Réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise | Microsoft Intune"
+title: "Guide pratique pour réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b3a3b7c2a983776f79ffa8562e130bb11e714e29
+ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
+ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
 
 
 ---
 
-
-# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>Réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Guide pratique pour réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise
 
 Si vous perdez le code confidentiel ou le mot de passe d’un appareil que vous avez inscrit dans Intune, vous pouvez utiliser le [site web du portail d’entreprise](http://portal.manage.microsoft.com) pour le réinitialiser. Vous pouvez utiliser le site web du portail d’entreprise pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
 
 > [!NOTE]
-> La présence du bouton **Réinitialiser le code d’accès** sur le site web du portail d’entreprise dépend de la façon dont votre administrateur informatique a configuré Intune. La réinitialisation du code d’accès n’est pas prise en charge sur les appareils Windows 8.1.
+> Il est possible que le bouton **Réinitialiser le code secret** ne soit pas visible sur le site web du portail d’entreprise. Dans ce cas, vous devez contacter votre administrateur informatique pour obtenir de l’aide via le site web du portail d’entreprise.
 
 Pour réinitialiser votre code d’accès
 
@@ -47,15 +48,14 @@ Pour réinitialiser votre code d’accès
 
     Pour savoir comment la **réinitialisation du code d’accès** fonctionne sur votre appareil, consultez le tableau.
 
-    |Plateforme|Prise en charge|
+    |Type d'appareil|Ce qui se produit lors de la réinitialisation|
     |------------|-----------|
-    |Android|Crée un code d’accès alphanumérique temporaire.|
-    |iOS|Supprime le code d’accès de l’appareil et ne crée pas de code d’accès temporaire. Si vous utilisez Touch ID, vous devrez le reconfigurer sur votre appareil, car il est supprimé quand vous réinitialisez votre code d’accès.|
-    |Windows 10 (appareils mobiles uniquement)|Crée un code d’accès alphanumérique temporaire. Windows Hello est pris en charge.|
-    |Windows Phone 8.1|Crée un code d’accès numérique temporaire.|
-    Une fois que vous avez déverrouillé votre appareil, vous pouvez définir un nouveau code d’accès en accédant à **Paramètres** sur votre appareil.
+    |Android|Supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres|
+    |iOS|Supprime le code secret existant et ne crée pas de code secret temporaire. Si vous utilisez le scanneur d’empreinte digitale Touch ID pour ouvrir votre appareil ou effectuer des achats, vous devrez le reconfigurer.|
+    |Windows 10 Mobile|Supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres. Si vous utilisez la reconnaissance faciale Windows Hello pour vous connecter, elle sera toujours prise en charge.|
+    |Windows Phone 8.1|Supprime le code secret existant et crée un code secret temporaire avec des chiffres.|
 
-5.  Déverrouillez votre appareil et définissez un nouveau code d’accès, ou modifiez le code d’accès temporaire en accédant à **Paramètres** sur votre appareil.
+    5.  Déverrouillez votre appareil et définissez un nouveau code secret, ou modifiez le code secret temporaire en accédant à **Paramètres** sur votre appareil.
 
     Pour afficher une notification confirmant que votre code d’accès a été réinitialisé avec succès, cliquez sur l’indicateur de notification en haut à droite du site web du portail d’entreprise.
 
@@ -63,6 +63,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

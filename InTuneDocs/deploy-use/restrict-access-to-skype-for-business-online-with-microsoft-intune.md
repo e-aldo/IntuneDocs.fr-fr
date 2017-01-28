@@ -1,11 +1,11 @@
 ---
-title: "Restreindre l’accès à Skype Entreprise Online | Microsoft Intune"
+title: "Protéger l’accès à Skype Entreprise Online | Microsoft Docs"
 description: "Protégez et contrôlez l’accès à Skype Entreprise Online en utilisant l’accès conditionnel."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 04fcdceb593051a32b715cb39b53cc328f167d09
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 37915fcfc0f10e65aa65d400422d72adc63513fa
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>Restreindre l’accès à Skype Entreprise Online avec Microsoft Intune
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Protéger l’accès à Skype Entreprise Online avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous pouvez utiliser une stratégie d’accès conditionnel à **Skype Entreprise Online** pour contrôler l’accès à Skype Entreprise Online.
 L’accès conditionnel comprend deux composants :
 - Une stratégie de conformité des appareils que l’appareil doit respecter pour être considéré comme conforme.
 - Une stratégie d’accès conditionnel dans laquelle vous spécifiez les conditions que l’appareil doit remplir pour que vous puissiez accéder au service.
-Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’article [Restreindre l’accès à la messagerie et aux services O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’article [Protéger l’accès à la messagerie et aux services O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Lorsqu’un utilisateur ciblé tente d’utiliser Skype Entreprise Online sur son appareil, l’évaluation suivante se produit :
 
@@ -117,6 +120,6 @@ Sélectionnez un groupe d’appareils mobiles. Ensuite, sous l’onglet **Appare
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

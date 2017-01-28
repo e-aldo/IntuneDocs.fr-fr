@@ -1,11 +1,11 @@
 ---
-title: "Restreindre l’accès à SharePoint Online | Microsoft Docs"
+title: "Protéger l’accès à SharePoint Online | Microsoft Docs"
 description: "Protégez et contrôlez l’accès aux données de l’entreprise sur SharePoint Online en utilisant l’accès conditionnel."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6b900f2bf41ea84088f8453f59b71136e013a884
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Restreindre l’accès à SharePoint Online avec Microsoft Intune
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Protéger l’accès à SharePoint Online avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Utilisez l’accès conditionnel [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] pour contrôler l’accès aux fichiers situés sur SharePoint Online.
 L’accès conditionnel comprend deux composants :
 - Une stratégie de conformité des appareils que l’appareil doit respecter pour être considéré comme conforme.
 - Une stratégie d’accès conditionnel dans laquelle vous spécifiez les conditions que l’appareil doit remplir pour accéder au service.
-Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez la rubrique [Restreindre l’accès aux services de messagerie, O365 et autres ](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez la rubrique [Protéger l’accès à la messagerie, à Office 365 et à d’autres services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Vous déployez les stratégies de conformité et d’accès conditionnel sur les utilisateurs. La conformité avec les stratégies de chaque appareil qu’un utilisateur utilise pour accéder aux services est contrôlée.
 
@@ -64,9 +67,9 @@ Si une condition n’est pas remplie, l’utilisateur reçoit l’un des message
 Les éléments suivants sont pris en charge :
 - iOS 8.0 et versions ultérieures
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 ou versions ultérieures
-- Windows Phone 8.1 et versions ultérieures
+- Windows Phone 8.1 et versions ultérieures
 
-Vous pouvez restreindre l’accès à SharePoint Online quand les appareils **iOS** et **Android** y accèdent à partir d’un navigateur. L’accès est autorisé uniquement à partir des navigateurs pris en charge sur les appareils conformes :
+Vous pouvez protéger l’accès à SharePoint Online quand les appareils **iOS** et **Android** y accèdent à partir d’un navigateur. L’accès est autorisé uniquement à partir des navigateurs pris en charge sur les appareils conformes :
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS et Android versions 5.0 et ultérieures)
@@ -192,10 +195,10 @@ Sélectionnez un groupe d’appareils mobiles. Ensuite, sous l’onglet **Appare
 -   **Appareils enregistrés avec AAD et conformes**. Ces appareils peuvent accéder à SharePoint Online.
 
 ### <a name="see-also"></a>Voir aussi
-[Restreindre l’accès aux services de messagerie et O365 avec Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Protéger l’accès à la messagerie et aux services O365 avec Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

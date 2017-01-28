@@ -1,22 +1,24 @@
 ---
-title: "Qu’est-ce que le Portail d’entreprise ? | Microsoft Intune"
+title: "Qu’est-ce que le Portail d’entreprise ? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 # <a name="about-the-company-portal"></a>À propos du portail d’entreprise
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>Qu’est-ce que le portail d’entreprise et à quoi sert-il ?
-Le portail d’entreprise Microsoft Intune vous permet d’accéder aux données et applications de votre entreprise ou de votre école. Vous pouvez obtenir le portail d’entreprise de deux façons différentes :
+Le portail d’entreprise vous permet d’accéder aux données et applications de votre entreprise ou de votre école. Vous pouvez obtenir le portail d’entreprise de deux façons différentes :
 
 - En installant l’application Portail d’entreprise sur votre appareil. Vous obtenez généralement l’application Portail d’entreprise en accédant au magasin d’applications sur votre appareil, mais votre administrateur peut également installer l’application Portail d’entreprise pour vous.
 - En accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com) que votre administrateur a configuré.
@@ -41,10 +43,10 @@ Il existe quelques différences mineures entre l’application Portail d’entre
 Pour voir ce que vous pouvez faire par le biais du site web Portail d’entreprise par rapport à ce que vous pouvez faire à l’aide de l’application Portail d’entreprise sur votre appareil, choisissez l’un des liens suivants :
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS et macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Site web Portail d’entreprise](using-the-intune-company-portal-website.md)
+- [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
+- [Utilisation de vos appareils iOS et macOS avec Intune](using-your-ios-or-macOS-device-with-intune.md)
+- [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
+- [Utilisation du site web du portail de l'entreprise](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Que se passe-t-il quand vous ajoutez un ordinateur ou un appareil au Portail d’entreprise ?
 Quand vous ajoutez un ordinateur ou un appareil au portail d’entreprise, certains logiciels sont parfois installés ou une application est éventuellement téléchargée (en fonction de l’appareil).  Vous autorisez également votre administrateur informatique à gérer votre appareil pour protéger les informations de l'entreprise sur l'appareil.
@@ -58,9 +60,9 @@ Pour savoir ce que votre administrateur peut voir ou non sur votre appareil, uti
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Quel type d’ordinateurs ou d’appareils pouvez-vous ajouter au Portail d’entreprise ?
 
--   Périphériques iPhone, iPad et macOS
+-   Appareils Apple utilisant iOS (iPhone, iPad) et macOS (iMac, MacBook)
 
--   appareils mobiles Android ;
+-   Appareils Android
 
 -   Appareils Windows
     -   Windows 10 Mobile
@@ -96,6 +98,6 @@ Si vous avez besoin d’aide, contactez votre administrateur informatique. Pour 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
