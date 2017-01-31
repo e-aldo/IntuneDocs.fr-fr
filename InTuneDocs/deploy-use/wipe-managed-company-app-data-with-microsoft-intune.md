@@ -5,7 +5,7 @@ keywords:
 author: stabar
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89f5dc1581571cfcb6e03b5dce740bc7f8a8a9ce
-ms.openlocfilehash: a02a015ce1208ee5fa081e60ce0b88c69d4efa50
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: 3417d2966dea166c96a2b727977e8c85a63af80c
 
 
 ---
@@ -36,9 +36,9 @@ Pour supprimer des données d’application d’entreprise de manière sélectiv
 
 1.  Connectez-vous au portail Azure, puis choisissez **Plus de services** > **Autre** > **Intune**.
 
-2.  Dans le panneau Intune, choisissez **Gérer les applications**.
+2.  Dans le panneau Intune, choisissez **Gérer les applications** > **Réinitialisation sélective d’application**.
 
-3.  Choisissez **Nouvelles demandes de réinitialisation**. Le panneau **Nouvelle demande de réinitialisation** s’ouvre.
+3.  Choisissez **Nouvelle demande de réinitialisation**. Le panneau **Nouvelle demande de réinitialisation** s’ouvre.
 
     ![Capture d'écran du panneau Nouvelle demande de réinitialisation](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -71,6 +71,6 @@ Les réinitialisations en attente sont affichées jusqu’à ce que vous les sup
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

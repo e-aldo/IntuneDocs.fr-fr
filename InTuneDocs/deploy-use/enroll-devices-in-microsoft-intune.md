@@ -1,11 +1,11 @@
 ---
-title: Inscrire des appareils | Microsoft Intune
+title: Inscrire des appareils | Microsoft Docs
 description: "La gestion des appareils mobiles utilise l’inscription pour gérer les appareils et leur autoriser l’accès aux ressources."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: a6e5148996b1010f0248f5b122246e38c3aa0464
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
 
 
 ---
 
 # <a name="enroll-devices-for-management-in-intune"></a>Inscrire des appareils pour la gestion dans Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous pouvez inscrire des appareils, y compris des PC Windows, pour utiliser la gestion des appareils mobiles avec Microsoft Intune. Cette rubrique décrit différentes façons d’inscrire des appareils mobiles dans la gestion Intune. La façon dont vous inscrivez vos appareils dépend du type d’appareil, de son propriétaire et du niveau de gestion souhaité. L’inscription BYOD (« Bring your own device ») permet aux utilisateurs d’inscrire leurs téléphones, tablettes ou PC personnels. L’inscription COD (« Corporate-owned device ») permet de gérer des appareils d’entreprise en utilisant des fonctionnalités telles que la réinitialisation à distance, le partage d’appareils ou l’affinité utilisateur.
 
 Si vous utilisez [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) (soit localement, soit hébergé dans le cloud), vous pouvez choisir la gestion Intune simple sans inscription. Vous pouvez également gérer des PC Windows à l’aide du [logiciel client Intune](#manage-windows-pcs-with-intune).
@@ -31,7 +34,7 @@ Le tableau suivant présente les méthodes d’inscription Intune, ainsi que les
 
 - **Réinitialisation** : indique si l’appareil doit être réinitialisé pour que les utilisateurs puissent inscrire l’appareil. Le terme « réinitialiser » implique une réinitialisation des paramètres d’usine de l’appareil, laquelle supprime toutes les données. Pour plus d’informations, consultez [Retirer des appareils](retire-devices-from-microsoft-intune-management.md).
 - **Affinité** : associe les appareils à des utilisateurs. Fonctionnalité nécessaire pour la gestion des applications mobiles (GAM) et l’accès conditionnel aux données d’entreprise. Pour plus d’informations, consultez [Affinité utilisateur](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Verrouillage** : empêche les utilisateurs de retirer leur appareil de la gestion. Les appareils iOS nécessitent le mode de verrouillage Supervisé. Pour plus d’informations, consultez [Verrouillage à distance](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
+- **Verrou**: indique que les utilisateurs ne peuvent pas désinscrire leurs appareils de la gestion. Les utilisateurs peuvent désinscrire leurs appareils sur toutes les plateformes à l’aide de l’application Portail d’entreprise. Ils ne peuvent pas utiliser les menus du système d’exploitation natif pour les désinscrire. 
 
 **Méthodes d’inscription iOS**
 
@@ -120,6 +123,6 @@ Intune peut gérer les plateformes d’appareils suivantes :
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

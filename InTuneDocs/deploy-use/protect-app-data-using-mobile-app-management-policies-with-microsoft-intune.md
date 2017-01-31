@@ -1,9 +1,9 @@
 ---
-title: "Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles | Microsoft Intune"
+title: "Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles | Microsoft Docs"
 description: "Cette rubrique explique comment les stratégies de gestion des applications mobiles peuvent vous aider à protéger les données de votre entreprise, empêcher toute perte de données et séparer les informations personnelles des informations professionnelles."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 40298ae2de5f3bc8090e19882e039c5ec6471820
+ms.openlocfilehash: 3d3c3e0b5fa68f838b8cf1d72346d7abb140073a
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Comment protéger les données d’application
 Vos employés utilisent des appareils mobiles pour des tâches à la fois personnelles et professionnelles. Vous voulez qu’ils restent productifs, mais vous voulez éviter toute perte de données intentionnelle ou non.  Vous voulez aussi pouvoir protéger les données de votre entreprise auxquelles les employés accèdent sur des appareils que vous ne gérez pas.
@@ -58,7 +60,10 @@ Les stratégies de gestion des applications mobiles sont prises en charge sur :
 -   iOS 8.1 ou version ultérieure
 -   Android 4 ou version ultérieure
 
-Les appareils Windows ne sont pas pris en charge actuellement.
+>[!NOTE]
+>Le scénario MAM sans inscription ne prend pas en charge les appareils Windows. Toutefois, quand vous >inscrivez des appareils Windows 10 auprès d’Intune, vous pouvez utiliser la Protection des informations Windows, qui >offre des fonctionnalités similaires. Pour plus d’informations, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+
+
 ##  <a name="how-mam-policies-protect-app-data"></a>Comment les stratégies de gestion des applications mobiles protègent les données d’application
 
 ###  <a name="apps-without-mam-policies"></a>Applications sans stratégies de gestion des applications mobiles
@@ -130,6 +135,6 @@ Toutes les applications mobiles Office prennent en charge l’accès de plusieur
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

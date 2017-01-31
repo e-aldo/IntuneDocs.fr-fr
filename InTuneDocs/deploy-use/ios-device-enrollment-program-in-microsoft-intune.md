@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 12/31/2016
+ms.date: 1/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8063b933a767740a7951fa69a918a8677b664d02
-ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: 05b714e1aef180a65b7b203d5a04c0eeaf288257
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune peut déployer un profil d’inscription qui inscrit les appareils iOS qui ont été achetés via le programme DEP « à distance ». Le package d’inscription peut inclure des options d’Assistant de configuration pour l’appareil. Les appareils inscrits via le programme DEP ne peuvent pas être désinscrits par les utilisateurs.
+Microsoft Intune peut déployer un profil d’inscription qui inscrit les appareils iOS qui ont été achetés via le programme DEP « à distance ». Le package d’inscription peut inclure des options d’Assistant de configuration pour l’appareil.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Gestion DEP d’Apple pour les appareils iOS avec Microsoft Intune
 Pour gérer les appareils iOS d’entreprise avec le programme d’inscription des appareils (DEP) d’Apple, votre organisation doit participer au programme et obtenir des appareils par le biais de ce programme. Les détails de cette procédure sont disponibles à l'adresse suivante :  [https://deploy.apple.com](https://deploy.apple.com). Les avantages du programme incluent la configuration automatique des appareils sans utiliser de câble USB pour connecter chaque appareil à un ordinateur.
@@ -83,9 +83,9 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du progra
         - **Supervisé** : active plusieurs options de gestion et désactive le verrou d’activation par défaut
      - **Verrouiller le profil d’inscription de l’appareil** : défini pendant l’activation et ne peut pas être modifié sans rétablir les paramètres d’usine
         - **Désactiver** : permet de supprimer le profil de gestion à partir du menu **Paramètres**
-        - **Activer** : (nécessite le **Mode de préparation** = **Supervisé**) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion
+        - **Activer** : (nécessite le **Mode de préparation** = **Supervisé**) désactive l’option du menu Paramètres iOS permettant de supprimer le profil de gestion
      - **Options de l’Assistant Installation** : ces paramètres facultatifs peuvent être configurés plus tard dans le menu **Paramètres** d’iOS.
-        - **Code secret** : demande un code secret pendant l’activation. Exige toujours un code secret, sauf si l’appareil doit être sécurisé ou si son accès doit être contrôlé d’une autre façon (c’est-à-dire, en mode plein écran qui limite l’appareil à une seule application).
+        - **Code secret** : demande un code secret pendant l’activation. Exige toujours un code secret, sauf si l’appareil doit être sécurisé ou si son accès doit être contrôlé d’une autre façon (c’est-à-dire, en mode plein écran qui limite l’appareil à une seule application)
         - **Services de localisation** : si activé, l’Assistant Installation vous invite à spécifier le service pendant l’activation
         - **Restaurer** : si activé, l’Assistant Installation invite à spécifier la sauvegarde iCloud pendant l’activation
         - **ID Apple** : si cette option est activée, iOS demande un ID Apple aux utilisateurs quand Intune tente d’installer une application sans ID. Un ID Apple est nécessaire pour télécharger des applications App Store iOS, y compris celles qui sont installées par Intune.
@@ -119,6 +119,6 @@ Depuis décembre 2016, la gestion des groupes d’appareils est déplacée vers
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
