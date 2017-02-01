@@ -4,7 +4,7 @@ description: "Activez la gestion des appareils mobiles pour les ordinateurs Wind
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 11/29/2016
+ms.date: 01/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 31d58d9973cca4023186731a5411c9c9e830e32a
-ms.openlocfilehash: e24251a066349e23beb94b75a66c5710ba7e41f1
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: f4f3b89cf066bcc98d043f66d4d40fd9d9ca3fd5
 
 
 ---
@@ -37,7 +37,9 @@ Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appar
 1. **Configurer Intune**<br>
 Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles (MDM)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) sur **Microsoft Intune**, puis en configurant la gestion des appareils mobiles.
 
-2. **Créer des enregistrements CNAME** (facultatif)<br>Créez des enregistrements de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers enterpriseenrollment.manage.microsoft.com.
+2. **Créer des enregistrements CNAME** (facultatif)<br>Créez des enregistrements de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com.
+
+    Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à taper le nom du serveur de gestion des appareils mobiles (https://enrollment.manage.microsoft.com). 
 
     Si vous avez un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers manage.microsoft.com. Nous vous recommandons donc de le remplacer par un CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers enterpriseenrollment-s.manage.microsoft.com. Cette modification est recommandée, car le point de terminaison manage.microsoft.com est désapprouvé pour les inscriptions dans une version ultérieure.
 
@@ -58,9 +60,7 @@ Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [défin
 
 3.  **Vérifier un enregistrement CNAME**<br>Dans la [console d’administration Intune](http://manage.microsoft.com), cliquez sur **Admin** &gt; **Gestion des appareils mobiles** &gt; **Windows**. Entrez l’URL du domaine vérifié du site web de l’entreprise dans la zone **Spécifiez un nom de domaine vérifié**, puis choisissez **Auto-détection de test**.
 
-4.  **Étapes facultatives**<br>L’étape **Ajouter des clés de déploiement (sideloading)** n’est pas nécessaire pour Windows 10. L’étape **Télécharger un certificat de signature de code** est uniquement nécessaire si vous voulez distribuer des applications métier non disponibles depuis le Windows Store à des appareils.
-
-6.  **Informez vos utilisateurs sur la manière d’inscrire leurs appareils et sur les principes de gestion des appareils.**
+4.  **Informez vos utilisateurs sur la manière d’inscrire leurs appareils et sur les principes de gestion des appareils.**
 
     Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows).
 
@@ -72,6 +72,6 @@ Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [défin
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

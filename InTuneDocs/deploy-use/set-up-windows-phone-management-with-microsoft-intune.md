@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d58b2d57ec99add7bbc372584f0ecc430830530a
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: ac22478c1de2421e1a7345aca92510fbda73f7e8
 
 
 ---
@@ -39,7 +39,7 @@ Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appar
 
 2.  **Créer des enregistrements CNAME** (facultatif)<br>Créez des enregistrements de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com.
 
-    Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à entrer manuellement le nom du serveur de gestion des appareils mobiles (https://manage.microsoft.com).
+    Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à taper le nom du serveur de gestion des appareils mobiles (https://enrollment.manage.microsoft.com).
 
     Si vous avez un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers manage.microsoft.com. Nous vous recommandons donc de le remplacer par un CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers enterpriseenrollment-s.manage.microsoft.com. Cette modification est recommandée, car le point de terminaison manage.microsoft.com est désapprouvé pour les inscriptions dans une version ultérieure.
 
@@ -62,9 +62,7 @@ Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appar
 
     ![Boîte de dialogue Configurer la gestion des appareils mobiles pour Windows](../media/windows-phone-enrollment.png)
 
-4.  **Étapes facultatives**<br>L’étape **Ajouter des clés de déploiement (sideloading)** n’est pas nécessaire pour Windows 10. L’étape de **chargement de certificat de signature de code** est uniquement nécessaire si vous voulez distribuer des applications métier non disponibles depuis le Windows Store pour des appareils.
-
-5.  **Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise.**
+4.  **Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise.**
 
     Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](../enduser/enroll-your-device-in-intune-windows.md). Vos utilisateurs peuvent également se référer à [Que peut voir votre administrateur informatique lorsque vous inscrivez votre appareil dans Intune ?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
@@ -76,6 +74,6 @@ Aucun travail supplémentaire n’est requis sauf si vous déployez le Portail d
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
