@@ -2,8 +2,8 @@
 title: "Protéger l’accès à l’aide de la protection de l’appareil contre les menaces | Microsoft Docs"
 description: "Protégez l’accès aux ressources d’entreprise en fonction du risque évalué pour l’appareil, le réseau et l’application."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
