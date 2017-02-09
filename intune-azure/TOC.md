@@ -42,7 +42,7 @@
 ### Gérer l’inscription des appareils
 #### [Créer des conditions générales](enroll-devices/create-terms-and-conditions.md)
 #### [Définir des restrictions d’inscription](enroll-devices/set-enrollment-restrictions.md)
-#### [Mapper des groupes d’appareils](enroll-devices/how-to-use-device-group-mapping.md)
+#### [Mapper des appareils à des groupes](enroll-devices/how-to-use-device-group-mapping.md)
 #### [Ajouter des identificateurs d’entreprise](enroll-devices/add-corporate-identifiers.md)
 #### [Utiliser Windows Hello Entreprise](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
