@@ -1,4 +1,3 @@
-
 ---
 title: "Contacter le support par téléphone | Microsoft Docs"
 description: "Numéros de téléphone de l’assistance Microsoft Intune."
