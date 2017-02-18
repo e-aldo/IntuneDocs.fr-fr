@@ -1,5 +1,5 @@
 ---
-title: "Inclure des applications iOS dans un wrapper avec l’outil de création de package de restrictions d’application Intune | Microsoft Intune"
+title: "Inclure des applications iOS dans un wrapper avec l’outil de création de package de restrictions d’application Intune | Microsoft Docs"
 description: "Cette rubrique explique comment inclure des applications iOS dans un wrapper sans changer leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
 keywords: 
 author: mtillman
@@ -13,35 +13,161 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Préparer des applications iOS pour la gestion des applications mobiles avec l'outil de création de package de restrictions d'application Intune
 
-Utilisez l’outil de création de package de restrictions d’application Microsoft Intune pour iOS pour changer le comportement des applications iOS internes en activant les fonctionnalités de protection sans modifier le code de l’application proprement dit.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-L’outil est une application en ligne de commande macOS qui crée un wrapper autour d’une application. Une fois qu’une application est traitée, vous pouvez modifier sa fonctionnalité à l’aide de [stratégies de gestion des applications mobiles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) Intune déployées par l’administrateur informatique.
+Utilisez l’outil de création de package de restrictions d’application Microsoft Intune pour iOS pour activer les stratégies de protection des applications Intune sans modifier le code de l’application proprement dit.
+
+L’outil est une application en ligne de commande macOS qui crée un wrapper autour d’une application. Lorsqu'une application est traitée, vous pouvez modifier la fonctionnalité de cette application en y déployant [des stratégies de protection des applications](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 Pour télécharger l’outil, consultez la section [Outil de création de package de restrictions d’application Microsoft Intune pour iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) sur GitHub.
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Remplir les conditions préalables pour l’outil de création de package de restrictions d’application
-Pour en savoir plus sur l’obtention de la configuration requise, consultez le billet de blog [How to obtain prerequisites for the Intune App Wrapping Tool for iOS (Comment obtenir la configuration requise pour l’outil de création de package de restrictions d’application Microsoft Intune pour iOS)](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Conditions préalables générales pour l’outil de création de package de restrictions d’application
 
-|Situation|Plus d'informations|
-|---------------|--------------------------------|
-|Système d’exploitation et boîte à outils pris en charge | Vous devez exécuter l’outil de création de package de restrictions d’application sur un ordinateur macOS exécutant la version X 10.8.5 ou ultérieure et sur lequel est installé l’ensemble d’outils XCode version 5 ou ultérieure.|
-|Certificat de signature et profil de configuration | Vous devez disposer d’un certificat de signature Apple et d’un profil de configuration. Consultez votre [documentation pour développeurs Apple](https://developer.apple.com/).|
-|Traitement d’une application avec l’outil de création de package de restrictions d’application  |Elle doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV). Vous ne pouvez pas utiliser cet outil pour traiter des applications de l'Apple Store. Les applications doivent être écrites pour iOS version 8.0 ou ultérieure. Elles doivent être également au format PIE (Position Independent Executable). Pour plus d’informations sur le format PIE, consultez votre documentation pour développeurs Apple. Enfin, l’application doit avoir l’extension **.app** ou **.ipa**.|
-|Applications que l’outil ne peut pas traiter | Applications chiffrées, applications non signées et applications avec des attributs de fichiers étendus.|
-|Définition de droits pour votre application|Avant d’encapsuler l’application, vous devez définir des droits qui confèrent à l’application des autorisations et des fonctionnalités supplémentaires qui vont au-delà de celles qui sont généralement accordées. Consultez [Définition des droits de l’application](#setting-app-entitlements) pour obtenir des instructions.|
+Avant d’exécuter l’outil de création de package de restrictions d’application, vous devez remplir certaines conditions préalables générales :
 
-## <a name="install-the-app-wrapping-tool"></a>installer l'outil de création de package de restrictions d'application
+* Téléchargez l’outil [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) (Outil de création de package de restrictions d’application Microsoft Intune pour iOS) à partir de GitHub.
+
+* Un ordinateur macOS qui exécute OS X 10.8.5 ou ultérieur et sur lequel est installé l’ensemble d’outils Xcode version 5 ou ultérieure.
+
+* L'application iOS d'entrée doit être développée et signée par votre entreprise ou par un éditeur de logiciels indépendant (ISV).
+
+  * Le fichier de l'application d’entrée doit avoir l’extension **.ipa** ou **.app**.
+
+  * L’application d’entrée doit être compilée pour iOS 8.0. ou version ultérieure.
+
+  * L’application d’entrée ne peut pas être chiffrée.
+
+  * L’application d’entrée ne peut pas contenir des attributs de fichiers étendus.
+
+  * L’application d’entrée doit disposer de droits définis avant d’être traitée par l’outil de création de package de restrictions d’application Intune. Ces [droits](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) confèrent à l’application des autorisations et des fonctionnalités supplémentaires qui vont au-delà de celles qui sont généralement accordées. Consultez [Définition des droits de l’application](#setting-app-entitlements) pour obtenir des instructions.
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Conditions préalables pour développeur Apple pour l’outil de création de package de restrictions d’application
+
+
+Pour distribuer des applications encapsulées exclusivement aux utilisateurs de votre organisation, vous avez besoin d’un compte de type [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) et de plusieurs entités pour la signature des applications liées à votre compte de développeur Apple.
+
+Pour en savoir plus sur la distribution d'applications iOS en interne pour les utilisateurs de votre organisation, lisez le guide officiel [Distributing Apple Developer Enterprise Program Apps](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1).
+
+Vous aurez besoin des éléments suivants pour distribuer des applications encapsulées par Intune :
+
+* Un compte de développeur de type Apple Developer Enterprise Program.
+
+* Un certificat de signature de distribution en interne et ad-hoc avec identificateur d’équipe valide.
+
+  * Vous aurez besoin du hachage SHA1 du certificat de signature comme paramètre pour l’outil de création de package de restrictions d’application Intune.
+
+
+* Profil de configuration de distribution interne.
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Étapes de création d’un compte Apple Developer Enterprise
+1. Accédez au [site Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/).
+
+2. Dans le coin supérieur droit de la page, cliquez sur **Enroll** (Inscription).
+
+3. Lisez la checklist des éléments requis pour l'inscription. Cliquez sur **Start Your Enrollment** (Démarrer votre inscription) en bas de la page.
+
+4. **Connectez-vous** avec l’ID Apple de votre organisation. Si vous n’en avez pas, cliquez sur **Create Apple ID** (Créer un identifiant Apple).
+
+5. Sélectionnez votre **type d’entité** puis cliquez sur **Continue** (Continuer).
+
+6. Remplissez le formulaire avec les informations de votre organisation. Cliquez sur **Continue**(Continuer). À ce stade, Apple vous contacte pour vérifier que vous êtes autorisé à inscrire votre organisation.
+
+8. Après vérification, cliquez sur **Agree to License** (Accepter la licence).
+
+9. Après avoir accepté la licence, terminez en **achetant et en activant le programme**.
+
+10. Si vous êtes l’agent de l’équipe (la personne qui rejoint le programme Apple Developer Enterprise Program au nom de votre organisation), constituez d’abord votre équipe en invitant les membres de l’équipe et en leur attribuant des rôles. Pour savoir comment gérer votre équipe, lisez la documentation d’Apple sur [la gestion de votre équipe de compte développeur](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1).
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Étapes de création d'un certificat de signature Apple
+
+1. Accédez au [portail des développeurs Apple](https://developer.apple.com/).
+
+2. Dans le coin supérieur droit de la page, cliquez sur **Account** (Compte).
+
+3. **Connectez-vous** à l'aide de l'identifiant Apple de votre entreprise.
+
+4. Cliquez sur **Certificates, IDs & Profiles** (Certificats, identifiants et profils).
+
+  ![Portail des développeurs Azure](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. Cliquez sur l’onglet ![signe plus du portail des développeurs Apple](../media/app-wrapper/iOS-signing-cert-2.png) dans le coin supérieur droit pour ajouter un certificat iOS.
+
+6. Choisissez de créer un certificat **In-House and Ad Hoc** (interne et ad-hoc) sous **Production**.
+
+  ![Sélectionnez le certificat interne et ad-hoc](../media/app-wrapper/iOS-signing-cert-3.png)
+
+>[!NOTE]
+>Si vous n’envisagez pas de distribuer l’application et souhaitez uniquement la tester en interne, vous pouvez utiliser un certificat de développement d’applications iOS au lieu d’un certificat pour la production. Si vous utilisez un certificat de développement, vérifiez que le profil de configuration mobile fait référence aux appareils sur lesquels l’application doit être installée.
+
+7. Cliquez sur **Next** (Suivant) en bas de la page.
+
+8. Lisez les instructions sur la création d’une **demande de signature de certificat (CSR)** à l’aide de l’application Trousseau d’accès sur votre ordinateur macOS.
+
+  ![Lisez les instructions pour créer une demande de signature de certificat](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. Suivez les instructions ci-dessus pour créer une demande de signature de certificat. Sur votre ordinateur macOS, lancez l'application **Trousseau d’accès**.
+
+10. Dans le menu macOS en haut de l’écran, accédez à **Trousseau d’accès > Assistant de certification
+ > Demander un certificat à une autorité de certificat**.  
+
+  ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. Suivez les instructions du site des développeur Apple ci-dessus pour créer un fichier CSR. Enregistrez le fichier CSR sur votre ordinateur macOS.
+
+  ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Retourner sur le site des développeurs Apple. Cliquez sur **Continue**(Continuer). Puis téléchargez le fichier CSR.
+
+13. Apple génère votre certificat de signature. Téléchargez et enregistrez-le sur un emplacement facile à mémoriser sur votre ordinateur macOS.
+
+  ![Télécharger votre certificat de signature](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. Double-cliquez sur le fichier de certificat que vous venez de télécharger afin d'ajouter le certificat à un trousseau d’accès.
+
+15. Ouvrez à nouveau **Trousseau d’accès**. Localisez votre certificat en recherchant son nom dans la barre de recherche en haut à droite. Cliquez avec le bouton droit sur l’élément pour afficher le menu, puis cliquez sur **Lire les informations**. Dans les exemples d’écrans, nous utilisons un certificat de développement au lieu d’un certificat de production.
+
+
+  ![Ajouter votre certificat à un trousseau d’accès](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. Une fenêtre d’information s’affiche. Faites défiler vers le bas et regardez sous l'étiquette **Empreintes**. Copiez la chaîne **SHA1** (floue) à utiliser comme paramètre pour « -c » pour l’outil de création de package de restrictions d’application.
+
+  ![Ajouter votre certificat à un trousseau d’accès](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Étapes de création d’un profil de configuration de distribution interne
+
+1. Revenez au [portail du compte des développeurs Apple](https://developer.apple.com/account/) et **connectez-vous** avec l'identifiant Apple de votre organisation.
+
+2. Cliquez sur **Certificates, IDs & Profiles** (Certificats, identifiants et profils).
+
+3. Cliquez sur l’onglet ![signe plus du portail des développeurs Apple](../media/app-wrapper/iOS-signing-cert-2.png) dans le coin supérieur droit pour ajouter un profil de configuration iOS.
+
+4. Choisissez de créer un profil de configuration **In House** (interne) sous **Distribution**.
+
+  ![Sélectionner un profil d’approvisionnement interne](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. Cliquez sur **Continue**(Continuer). Veillez à lier le certificat de signature généré précédemment au profil de configuration.
+
+6. Suivez les étapes pour télécharger votre profil (avec l’extension .mobileprovision) sur votre ordinateur macOS.
+
+7. Enregistrez le fichier dans un emplacement facile à mémoriser. Ce fichier servira pour le paramètre -p lors de l’utilisation de l'outil de création de package de restrictions d'application.
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>Télécharger l'outil de création de package de restrictions d'application
 
 1.  Téléchargez les fichiers de l’outil de création de package de restrictions d’application depuis [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) vers un ordinateur macOS.
 
@@ -277,6 +403,6 @@ Respectez les bonnes pratiques de sécurité et de confidentialité suivantes qu
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

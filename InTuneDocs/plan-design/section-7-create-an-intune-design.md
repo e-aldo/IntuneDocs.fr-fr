@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -135,7 +136,7 @@ Examinons plus en détail les dépendances externes courantes ci-dessous
 
 ### <a name="identity"></a>Fournisseur
 
-L'identité est la façon dont nous identifions les utilisateurs au sein de votre organisation et qui inscrivent un appareil. Intune nécessite Azure Active Directory (Azure AD) comme fournisseur d’identité d'utilisateur. Si vous utilisez déjà ce service, vous pourrez tirer parti de votre identité déjà présente dans le cloud. En outre, Azure AD Connect est l’outil recommandé pour synchroniser les identités de vos utilisateurs locaux avec les services de cloud Microsoft. Si votre organisation utilise déjà Office 365, il est important qu'Intune utilise le même environnement Azure Active Directory.
+L’identité est la façon dont nous identifions les utilisateurs qui appartiennent à votre organisation et inscrivent un appareil. Intune nécessite Azure Active Directory (Azure AD) comme fournisseur d’identité d'utilisateur. Si vous utilisez déjà ce service, vous pourrez tirer parti de votre identité déjà présente dans le cloud. En outre, Azure AD Connect est l’outil recommandé pour synchroniser les identités de vos utilisateurs locaux avec les services de cloud Microsoft. Si votre organisation utilise déjà Office 365, il est important qu'Intune utilise le même environnement Azure Active Directory.
 
 Vous trouverez ci-dessous plus d’informations sur les spécifications d’identité d'Intune.
 
@@ -147,7 +148,7 @@ Vous trouverez ci-dessous plus d’informations sur les spécifications d’iden
 
 ### <a name="user-and-device-groups"></a>Groupes d’utilisateurs et d’appareils
 
-Les groupes d’utilisateurs et d'appareils déterminent la cible d’un déploiement. Cela peut inclure la cible d'un déploiement des stratégies, des applications et des profils. Le cloud Intune prend uniquement en charge des groupes d'utilisateurs et d'appareils – vous devez donc choisir les groupes d'utilisateurs et d'appareils qui seront nécessaires. Il est recommandé de créer tous les groupes dans Active Directory en local, puis de les synchroniser avec Azure Active Directory. Vous trouverez ci-dessous plus d’informations sur la planification et la création de groupes d'utilisateurs et d'appareils.
+Les groupes d’utilisateurs et d'appareils déterminent la cible d’un déploiement. Cela peut inclure la cible d'un déploiement des stratégies, des applications et des profils. Le cloud Intune prend uniquement en charge des groupes d’utilisateurs et d’appareils : vous devez donc choisir les groupes d’utilisateurs et d’appareils qui seront nécessaires. Il est recommandé de créer tous les groupes dans Active Directory en local, puis de les synchroniser avec Azure Active Directory. Vous trouverez ci-dessous plus d’informations sur la planification et la création de groupes d'utilisateurs et d'appareils.
 
 -   En savoir plus sur la [planification de vos groupes d’utilisateurs et d'appareils](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
@@ -411,6 +412,6 @@ La section suivante fournit des conseils sur le [processus d’implémentation I
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 

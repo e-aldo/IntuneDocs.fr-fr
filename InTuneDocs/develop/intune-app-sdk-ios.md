@@ -1,5 +1,5 @@
 ---
-title: "Guide du Kit SDK d’application Microsoft Intune pour les développeurs iOS | Documentation Microsoft"
+title: "Guide du Kit SDK d’application Microsoft Intune pour les développeurs iOS | Microsoft Docs"
 description: "Le SDK d’application Microsoft Intune pour iOS vous permet d’incorporer des stratégies de protection des applications Intune, sous la forme de stratégies de gestion des applications mobiles (GAM), à votre application iOS."
 keywords: 
 author: mtillman
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: cb80d531a28eaccbd26bc53df3e13ad233522dcf
+ms.sourcegitcommit: 3fdbf7f561f526b68972c6f66d1b72b56f7fa8ad
+ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
 
 
 ---
@@ -119,7 +120,8 @@ Pour activer le SDK d’application Intune, procédez comme suit :
 6. Activez le partage de trousseau (s’il ne l’est pas déjà) en cliquant sur **Fonctionnalités** dans chaque cible du projet et en activant le commutateur **Partage de trousseau**. Le partage de trousseau est nécessaire pour passer à l’étape suivante.
 
     > [!NOTE]
-    > Votre profil d’approvisionnement doit prendre en charge de nouvelles valeurs de partage de trousseau. Les groupes de trousseau d’accès doivent prendre en charge un caractère générique. Vous pouvez le vérifier en ouvrant le fichier .mobileprovision dans un éditeur de texte, en recherchant **keychain-access-groups** et en vérifiant que vous avez un caractère générique. Par exemple :     ```xml
+    > Votre profil d’approvisionnement doit prendre en charge de nouvelles valeurs de partage de trousseau. Les groupes de trousseau d’accès doivent prendre en charge un caractère générique. Vous pouvez le vérifier en ouvrant le fichier .mobileprovision dans un éditeur de texte, en recherchant **keychain-access-groups** et en vérifiant que vous avez un caractère générique. Exemple :
+    ```xml
     <key>keychain-access-groups</key>
     <array>
     <string>YOURBUNDLESEEDID.*</string>
@@ -150,7 +152,7 @@ Pour activer le SDK d’application Intune, procédez comme suit :
 
 9. Pour les applications mobiles développées pour iOS 9+, incluez chaque protocole que votre application mobile passe à `UIApplication canOpenURL` dans le tableau `LSApplicationQueriesSchemes` du fichier Info.plist de votre application. Par ailleurs, pour chaque protocole répertorié, ajoutez un nouveau protocole et insérez `-intunemam` à la fin. Vous devez également inclure `http-intunemam`, `https-intunemam`et `ms-outlook-intunemam` dans le tableau.
 
-10. Si l’application a des groupes d’applications définis dans ses droits, ajoutez ces groupes au dictionnaire IntuneMAMSettings sous la clé `AppGroupIdentitifiers`sous la forme d’un tableau de chaînes.
+10. Si l’application a des groupes d’applications définis dans ses droits, ajoutez ces groupes au dictionnaire IntuneMAMSettings sous la clé `AppGroupIdentifiers`sous la forme d’un tableau de chaînes.
 
 11. Liez votre application mobile à Azure Active Authentication Library (ADAL). La bibliothèque ADAL pour Objective C est [disponible sur Github](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
@@ -604,6 +606,12 @@ Voici les bonnes pratiques recommandées dans le cadre du développement pour iO
 
 ## <a name="faq"></a>FAQ
 
+
+**Est-ce que toutes les API sont adressables via le code Swift natif ou l’interopérabilité Objective-C et Swift ?**
+
+Les API du kit SDK d’application Intune se présentent en Objective-C uniquement et ne prennent pas en charge le code Swift natif.  
+
+
 **Tous les utilisateurs de mon application doivent-ils être inscrits auprès du service GAM ?**
 
 Non. En fait, seuls les comptes professionnels ou scolaires doivent être inscrits auprès du SDK d’application Intune. Les applications doivent déterminer si un compte est utilisé dans un contexte professionnel ou scolaire.   
@@ -637,6 +645,8 @@ Cette méthode doit être appelée avant que l’utilisateur soit déconnecté d
 
 Oui, l’administrateur informatique peut envoyer une commande de réinitialisation sélective à l’application qui désinscrit l’utilisateur et réinitialise ses données. Le SDK gère automatiquement ce scénario et envoie une notification par le biais de la méthode déléguée de désinscription.
 
+
+
 ## <a name="submit-your-app-to-the-app-store"></a>Soumettre votre application à l’App Store
 
 Les générations de la bibliothèque statique et de l’infrastructure du SDK d’application Intune sont des binaires universels. Cela signifie qu’ils contiennent le code pour toutes les architectures d’appareils et de simulateurs. Apple rejette les applications soumises à l’App Store si elles ont du code de simulateur. Lors de la compilation avec la bibliothèque statique pour les builds destinées seulement aux appareils, l’éditeur de liens supprime automatiquement le code du simulateur. Suivez les étapes ci-dessous pour vous assurer que tout le code du simulateur est supprimé avant de charger votre application dans l’App Store.
@@ -656,6 +666,6 @@ Les générations de la bibliothèque statique et de l’infrastructure du SDK d
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

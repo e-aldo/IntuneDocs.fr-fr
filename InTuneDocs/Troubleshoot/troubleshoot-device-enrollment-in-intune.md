@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/10/17
+ms.date: 01/24/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
 
 
 ---
@@ -31,10 +32,10 @@ Cette rubrique fournit des suggestions pour résoudre les problèmes liés à l�
 
 Avant de commencer le dépannage, vérifiez que vous avez configuré Intune correctement pour activer l’inscription. Vous pouvez consulter ces exigences de configuration dans les rubriques suivantes :
 
--   [Se préparer à inscrire des appareils dans Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
--   [Configurer la gestion des appareils iOS et Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--   [Configurer la gestion de Windows 10 Mobile et Windows Phone avec Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
--   [Configurer la gestion des appareils Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-    [Se préparer à inscrire des appareils dans Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
+-    [Configurer la gestion des appareils iOS et Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-    [Configurer la gestion de Windows 10 Mobile et Windows Phone avec Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-    [Configurer la gestion des appareils Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 Les utilisateurs d’appareils gérés peuvent recueillir des journaux d’inscription et de diagnostic qui peuvent vous être utiles. Les instructions destinées aux utilisateurs permettant de recueillir les journaux sont fournies dans :
@@ -227,16 +228,16 @@ L’erreur de certificat se produit car les appareils Android nécessitent l’i
 
 Pour résoudre ce problème, importez les certificats dans les certificats personnels de l’ordinateur sur les proxys ou le serveur AD FS en procédant comme suit :
 
-1.  Sur les serveurs ADFS et proxy, lancez la console de gestion des certificats pour l’ordinateur local en cliquant avec le bouton droit sur le bouton **Démarrer**, en choisissant **Exécuter** et en tapant **certlm.msc**.
-2.  Développez **Personnel** et sélectionnez **Certificats**.
-3.  Recherchez le certificat pour votre communication avec le service AD FS (un certificat signé publiquement) et double-cliquez dessus pour afficher ses propriétés.
-4.  Sélectionnez l’onglet **Chemin d’accès de certification** pour afficher les certificats parents du certificat.
-5.  Sur chaque certificat parent, sélectionnez **Afficher le certificat**.
-6.  Sélectionnez l’onglet **Détails** et choisissez **Copier dans un fichier**.
-7.  Suivez les invites de l’Assistant pour exporter ou enregistrer la clé publique du certificat à l’emplacement de fichier souhaité.
-8.  Importez les certificats parents qui ont été exportés à l’étape 3 dans Ordinateur local\Personnel\Certificats en double-cliquant sur **Certificats**, en sélectionnant **Toutes les tâches** > **Importer**, puis en suivant les invites de l’Assistant pour importer les certificats.
-9.  Redémarrez les serveurs AD FS.
-10. Répétez les étapes ci-dessus sur tous les serveurs proxy et AD FS.
+1.    Sur les serveurs ADFS et proxy, lancez la console de gestion des certificats pour l’ordinateur local en cliquant avec le bouton droit sur le bouton **Démarrer**, en choisissant **Exécuter** et en tapant **certlm.msc**.
+2.    Développez **Personnel** et sélectionnez **Certificats**.
+3.    Recherchez le certificat pour votre communication avec le service AD FS (un certificat signé publiquement) et double-cliquez dessus pour afficher ses propriétés.
+4.    Sélectionnez l’onglet **Chemin d’accès de certification** pour afficher les certificats parents du certificat.
+5.    Sur chaque certificat parent, sélectionnez **Afficher le certificat**.
+6.    Sélectionnez l’onglet **Détails** et choisissez **Copier dans un fichier**.
+7.    Suivez les invites de l’Assistant pour exporter ou enregistrer la clé publique du certificat à l’emplacement de fichier souhaité.
+8.    Importez les certificats parents qui ont été exportés à l’étape 3 dans Ordinateur local\Personnel\Certificats en double-cliquant sur **Certificats**, en sélectionnant **Toutes les tâches** > **Importer**, puis en suivant les invites de l’Assistant pour importer les certificats.
+9.    Redémarrez les serveurs AD FS.
+10.    Répétez les étapes ci-dessus sur tous les serveurs proxy et AD FS.
 L’utilisateur doit maintenant être en mesure de se connecter au site Portail d’entreprise sur l’appareil Android.
 
 **Pour vérifier que le certificat a été installé correctement** :
@@ -294,32 +295,20 @@ Une fois inscrits, les appareils retrouvent un état d’intégrité correct et 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>L’appareil iOS inscrit n’apparaît pas dans la console lors de l’utilisation de System Center Configuration Manager avec Intune
 **Problème :** l’utilisateur inscrit l’appareil iOS, mais celui-ci n’apparaît pas dans la console d’administration de Configuration Manager. L’appareil n’indique pas qu’il a été inscrit. Causes possibles :
 
-- Vous avez peut-être inscrit votre connecteur Intune dans un compte, puis dans un autre compte.
+- Le connecteur Microsoft Intune sur votre site Configuration Manager ne communique pas avec le service Intune.
+- Le composant Data Discovery Manager (ddm) ou le composant State Manager (statmgr) ne traite pas les messages du service Intune.
 - Vous avez peut-être téléchargé le certificat de gestion des appareils mobiles à partir d’un compte et vous l’avez utilisé dans un autre compte.
 
 
-**Résolution :** Effectuez les étapes suivantes :
+**Résolution :** Passez en revue les fichiers journaux suivants pour détecter les erreurs possibles :
 
-1. Désactivez iOS dans le connecteur Windows Intune.
-    1. Cliquez avec le bouton droit sur l’abonnement Intune et sélectionnez **Propriétés**.
-    1. Dans l’onglet « iOS », désactivez l’option « Activer l’inscription iOS ».
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. Dans SQL, exécutez les étapes suivantes sur la base de données CAS
-
-    1. mettre à jour SC_ClientComponent_Property set Value2 = '' où Name est similaire à '%APNS%'
-    1. supprimer de MDMPolicy où PolicyType = 7
-    1. supprimer de MDMPolicyAssignment où PolicyType = 7
-    1. mettre à jour SC_ClientComponent_Property set Value2 = '' où Name est similaire à '%APNS%'
-    1. supprimer de MDMPolicy où PolicyType = 11
-    1. supprimer de MDMPolicyAssignment où PolicyType = 11
-    1. SUPPRIMER Drs_Signals
-1. Redémarrez le Service SMS Executive ou le serveur CM
+Des exemples seront bientôt ajoutés concernant les éléments à rechercher dans ces fichiers journaux.
 
 
-
-1. Obtenez un nouveau certificat APN et téléchargez-le : cliquez avec le bouton droit sur l’abonnement à Intune dans le volet gauche de Configuration Manager. Sélectionnez **Créer une demande de certificat APNs** et suivez les instructions.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problèmes quand vous utilisez System Center Configuration Manager avec Intune
 ### <a name="mobile-devices-disappear"></a>Les appareils mobiles disparaissent
 **Problème :** Après avoir inscrit un appareil mobile dans Configuration Manager, il disparaît du regroupement d’appareils mobiles, mais l’appareil a toujours son profil de gestion et est répertorié dans la passerelle CSS.
@@ -400,6 +389,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
