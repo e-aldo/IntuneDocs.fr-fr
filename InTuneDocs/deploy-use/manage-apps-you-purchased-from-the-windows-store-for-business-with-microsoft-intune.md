@@ -1,26 +1,30 @@
 ---
-title: "Gérer le Windows Store pour les applications d’entreprise | Microsoft Intune"
+title: "Gérer le Windows Store pour les applications d’entreprise | Microsoft Docs"
 description: "Connectez Microsoft Intune au Windows Store pour les entreprises si vous souhaitez gérer et déployer des applications achetées en volume à partir de la console Intune"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
+ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
+ms.openlocfilehash: 34e9ce6a5c0b7cb912a54644e6323574c2e041a7
 
 
 ---
 
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Gérer les applications que vous avez achetées dans le Windows Store pour Entreprises avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [Windows Store pour Entreprises](https://www.microsoft.com/business-store) propose un lieu dans lequel vous pouvez trouver et acheter des applications pour votre organisation, individuellement ou par lots. En connectant le magasin à Microsoft Intune, vous pouvez gérer les applications achetées en volume depuis la console Intune. Exemple :
 * Vous pouvez synchroniser la liste des applications que vous avez achetées dans le magasin avec Intune.
 * Les applications qui sont synchronisées apparaissent dans la console d’administration Intune et vous pouvez les déployer comme toute autre application.
@@ -42,6 +46,9 @@ Avant d’activer la synchronisation dans la console Intune, vous devez configur
 1. Veillez à vous connecter à Business Store avec le compte de locataire que vous utilisez pour accéder à Intune.
 2. Dans Business Store, choisissez **Paramètres** > **Outils de gestion**.
 3. Sur la page Outils de gestion, choisissez **Ajouter un outil de gestion**, puis sélectionnez **Microsoft Intune**.
+
+> [!NOTE]
+> Si vous utilisez plusieurs outils de gestion pour déployer des applications Windows Store pour Entreprises, vous ne pouviez associer qu’un seul outil au Windows Store pour Entreprises. Désormais, vous pouvez associer plusieurs outils de gestion au Windows Store, par exemple, Intune et Configuration Manager.
 
 Vous pouvez maintenant continuer et configurer la synchronisation dans la console Intune.
 
@@ -80,6 +87,6 @@ Lorsque vous déployez une application Windows Store pour Entreprises, une licen
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 
