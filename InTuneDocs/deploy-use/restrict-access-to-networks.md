@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
 ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
@@ -154,7 +155,7 @@ Dans la console d’administration ISE, fournissez ces valeurs de paramètre :
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informations partagées entre votre client Intune et votre serveur Cisco ISE
 Ce tableau répertorie les informations partagées entre votre client Intune et votre serveur Cisco ISE pour les appareils gérés par Intune.
 
-|Propriété|  Description|
+|Propriété|    Description|
 |---------------|------------------------------------------------------------|
 |complianceState|La chaîne vrai ou faux indique si l’appareil est conforme ou non.|
 |isManaged|La chaîne vrai ou faux indique si le client est géré par Intune ou non.|

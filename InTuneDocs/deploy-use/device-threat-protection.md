@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 931f222898a224c2f646ad203f12676c39b78946
 ms.openlocfilehash: aaa0965c2bd4d4093da0c57eaa2e3bd05eb6779a
@@ -97,11 +98,11 @@ Détectez les menaces pour votre réseau, telles que les attaques de l’interce
 
 ## <a name="next-steps"></a>Étapes suivantes
 Voici les principales étapes à effectuer pour implémenter cette solution :
-1.  [Configurer votre abonnement avec la protection des appareils contre les menaces](device-threat-protection-subscription-setup.md)
-2.  [Activer la connexion de la protection des appareils contre les menaces dans Intune](device-threat-protection-enable.md)
+1.    [Configurer votre abonnement avec la protection des appareils contre les menaces](device-threat-protection-subscription-setup.md)
+2.    [Activer la connexion de la protection des appareils contre les menaces dans Intune](device-threat-protection-enable.md)
 3.  [Configurer et déployer l’application de protection des appareils contre les menaces](device-threat-protection-apps.md)
-4.  [Configurer une stratégie de conformité pour la protection des appareils contre les menaces](device-threat-protection-policy.md)
-5.  [Résoudre les problèmes d’intégration de la protection des appareils contre les menaces](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+4.    [Configurer une stratégie de conformité pour la protection des appareils contre les menaces](device-threat-protection-policy.md)
+5.    [Résoudre les problèmes d’intégration de la protection des appareils contre les menaces](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
 
 
 

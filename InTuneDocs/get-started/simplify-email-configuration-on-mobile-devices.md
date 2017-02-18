@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
@@ -34,8 +35,8 @@ Si c’est le cas, Microsoft Intune peut configurer automatiquement les e-mails 
 Une fois le profil de messagerie configuré, vous pouvez facilement restreindre l’accès à la messagerie d’entreprise et aux services Office 365 grâce à des stratégies d’accès conditionnel Intune. Ces stratégies vous permettent de vous assurer que l’accès à la messagerie de votre entreprise et aux services Office 365 est limité aux appareils qui respectent les règles que vous avez définies dans Intune.
 
 ## <a name="how-do-i-do-it"></a>Comment procéder ?
-1.  Configurez automatiquement [ des profils de messagerie d’utilisateur final](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) sur des appareils Windows, iOS et Android.
-2.  [Contrôlez l’accès à la messagerie d’entreprise](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) à l’aide de stratégies d’accès conditionnel.
+1.    Configurez automatiquement [ des profils de messagerie d’utilisateur final](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) sur des appareils Windows, iOS et Android.
+2.    [Contrôlez l’accès à la messagerie d’entreprise](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) à l’aide de stratégies d’accès conditionnel.
 
 
 ### <a name="additional-information"></a>Informations complémentaires :
