@@ -1,30 +1,34 @@
 ---
-title: "Comment définir le délai de verrouillage de votre appareil Android | Microsoft Intune"
+title: "Configurer le délai de verrouillage de l’écran | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: be3307165b420ef0fe9c143a3a55f88285a344da
 
 
 ---
 
-# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Comment définir le délai de verrouillage de votre appareil Android
+# <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Guide pratique pour configurer le délai de verrouillage de l’écran des appareils Android
+
 Pour vous reconnecter à votre travail, vous devez définir le délai d’expiration du mot de passe sur votre appareil en suivant les instructions correspondant à votre type d’appareil :
 
-## <a name="native-nonsamsung-knox-device"></a>Appareils natifs (ne s’applique pas aux appareils Samsung Knox)
+## <a name="native-non-samsung-knox-device"></a>Appareils natifs (ne s’applique pas aux appareils Samsung Knox)
 
 1.  Dans **Paramètres** sur votre appareil, appuyez sur **Sécurité** &gt; **Verrouiller automatiquement** (sur certains appareils, l’option est **Verrouiller le téléphone au bout de**).
 
@@ -44,6 +48,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

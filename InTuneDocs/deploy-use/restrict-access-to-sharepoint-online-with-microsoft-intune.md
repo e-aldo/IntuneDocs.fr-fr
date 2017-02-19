@@ -1,5 +1,5 @@
 ---
-title: "Protéger l’accès à SharePoint Online | Microsoft Docs"
+title: "Protéger SharePoint Online | Microsoft Docs"
 description: "Protégez et contrôlez l’accès aux données de l’entreprise sur SharePoint Online en utilisant l’accès conditionnel."
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 ---
@@ -143,7 +144,7 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
         Cette opération exige que tous les appareils utilisés pour accéder à **SharePoint Online** soient inscrits dans Intune et conformes aux stratégies. Toute application cliente qui utilise l’**authentification moderne** est soumise à la stratégie d’accès conditionnel. Si la plateforme n’est pas prise en charge actuellement par Intune, l’accès à **SharePoint Online** est bloqué.
 
         Si vous sélectionnez l’option **Toutes plateformes**, Azure Active Directory applique cette stratégie à toutes les demandes d’authentification, quelle que soit la plateforme signalée par l’application cliente. Toutes les plateformes doivent être inscrites et être conformes, sauf dans les cas suivants :
-        *   Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
+        *    Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
         * Plateformes non prises en charge comme Mac. Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
 
     -   **Plateformes spécifiques**
@@ -199,6 +200,6 @@ Sélectionnez un groupe d’appareils mobiles. Ensuite, sous l’onglet **Appare
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

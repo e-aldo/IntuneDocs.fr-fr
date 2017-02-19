@@ -1,5 +1,5 @@
 ---
-title: "Protéger l’accès à la messagerie et aux services Office 365 | Microsoft Docs"
+title: "Protéger l’accès à la messagerie et à Office 365 | Microsoft Docs"
 description: "Cette rubrique décrit comment utiliser l’accès conditionnel pour autoriser uniquement les appareils compatibles à accéder à la messagerie et aux données de votre entreprise sur SharePoint Online et d’autres services."
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 911c97a724c28b97bb2bc6e236532e4e0d89c7b1
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
 
 
 ---
@@ -47,13 +48,13 @@ Les **licences Azure AD Premium** peuvent être achetées en tant que service au
 
 - Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
-En outre, assurez-vous que les utilisateurs auxques vous envisagez d’appliquer des stratégies d’accès conditionnel [disposent de licences Azure AD Premium ou EMS](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+En outre, assurez-vous que les utilisateurs pour lesquels vous envisagez d’appliquer des stratégies d’accès conditionnel [disposent de licences Azure AD Premium ou EMS](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 
 ### <a name="device-compliance-settings"></a>Paramètres de conformité des appareils
 
 Pour mettre en place l’accès conditionnel, configurez une stratégie de conformité des appareils et une stratégie d’accès conditionnel. La stratégie de conformité inclut des paramètres tels que le mot de passe, le chiffrement et le jailbreak de l’appareil. L’appareil doit respecter ces règles pour être considéré comme conforme.
 
-- En savoir plus sur la [stratégie de conformité des appareils et son fonctionnement](introduction-to-device-compliance-policies-in-microsoft-intune.md).
+- Découvrez plus en détail la [stratégie de conformité des appareils et son fonctionnement](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 
 ### <a name="conditional-access-policy"></a>Stratégie d’accès conditionnel
 
@@ -82,6 +83,6 @@ Contrairement à d’autres stratégies Intune, vous ne déployez pas de straté
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

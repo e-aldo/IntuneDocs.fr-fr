@@ -1,5 +1,5 @@
 ---
-title: "Verrouiller à distance un appareil à partir du site web du portail d’entreprise | Microsoft Docs"
+title: "Verrouiller votre appareil dans le Portail d’entreprise | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 
 ---
@@ -39,13 +40,13 @@ Pour plus de sécurité, vous pouvez le verrouiller en utilisant l’option Verr
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Pour utiliser l’option Verrouillage à distance pour verrouiller votre appareil
 
-1.  Sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com), appuyez sur le nom de l’appareil que vous voulez verrouiller.
+1.    Sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com), appuyez sur le nom de l’appareil que vous voulez verrouiller.
 
-2.  Appuyez sur **Verrouillage à distance**.
+2.    Appuyez sur **Verrouillage à distance**.
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Une notification s’affiche pour vous informer que vous êtes sur le point de verrouiller votre appareil. Appuyez sur **Verrouillage à distance** et le site web du portail d’entreprise tente de verrouiller votre appareil.
+3.    Une notification s’affiche pour vous informer que vous êtes sur le point de verrouiller votre appareil. Appuyez sur **Verrouillage à distance** et le site web du portail d’entreprise tente de verrouiller votre appareil.
 
     Une fois que vous avez appuyé sur **Verrouillage à distance**, le message « Verrouillage à distance en attente » apparaît.  Si le verrouillage à distance aboutit, l’état passe à « Verrouillage à distance réussi ».
 
@@ -64,6 +65,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
