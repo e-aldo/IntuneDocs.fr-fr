@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
-ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
@@ -55,7 +56,7 @@ Pour plus d’informations sur l’outil de création de package de restrictions
 ## <a name="intune-app-sdk"></a>Kit SDK d’application Intune
 Le SDK d’application est conçu principalement pour les clients qui ont des applications dans l’Apple App Store ou dans le Google Play Store, et qui veulent gérer ces applications avec Intune. Cependant, toute application peut tirer parti de l’intégration du SDK, même s’il s’agit d’applications métier.
 
-Pour en savoir plus sur le SDK, consultez sa [présentation](/intune/develop/intune-app-sdk). Pour commencer à utiliser le SDK, consultez [Prise en main du Kit SDK d’application Microsoft Intune](/intune/develop/intune-app-sdk-get-started).
+Pour en savoir plus sur le SDK, consultez sa [présentation](../develop/intune-app-sdk.md). Pour commencer à utiliser le SDK, consultez [Prise en main du Kit SDK d’application Microsoft Intune](../develop/intune-app-sdk-get-started.md).
 
 ### <a name="reasons-to-use-the-sdk"></a>Raisons d’utiliser le SDK
 * Votre application n’a pas de fonctionnalités de protection des données intégrées.
@@ -69,8 +70,8 @@ Pour en savoir plus sur le SDK, consultez sa [présentation](/intune/develop/int
 
 |**SDK d’application Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Oui : utilisez le [composant Xamarin du SDK d’application Intune](/../develop/intune-app-sdk-xamarin).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](/../develop/intune-app-sdk-cordova).|
-|**Android**| Oui : utilisez le [composant Xamarin du SDK d’application Intune](/../develop/intune-app-sdk-xamarin).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](/../develop/intune-app-sdk-cordova).|
+|**iOS**|Oui : utilisez le [composant Xamarin du SDK d’application Intune](../develop/intune-app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](../develop/intune-app-sdk-cordova.md).|
+|**Android**| Oui : utilisez le [composant Xamarin du SDK d’application Intune](../develop/intune-app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](../develop/intune-app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Comparaison des fonctionnalités
 Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK et pour l’outil de création de package de restrictions d’application.

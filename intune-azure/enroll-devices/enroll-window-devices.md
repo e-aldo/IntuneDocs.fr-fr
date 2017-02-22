@@ -4,7 +4,7 @@ description: "Version préliminaire  d’Intune Azure : activez la gestion des 
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 02/09/17
+ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
-ms.openlocfilehash: ec623e7d102e8a8ddf1cc86a750f592ca765cfce
+ms.sourcegitcommit: a4103a4cef393df585b9b9daa92ab63dd7805e9e
+ms.openlocfilehash: a55118e60750616f8b058846148364cbeccb5784
 
 
 ---
@@ -25,13 +25,12 @@ ms.openlocfilehash: ec623e7d102e8a8ddf1cc86a750f592ca765cfce
 
 Pour configurer l’inscription pour les appareils Windows, utilisez l’une des méthodes suivantes :
 
-- **[Inscription automatique de Windows 10 et Windows 10 Mobile avec Azure Active Directory Premium](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+- [**Inscription automatique de Windows 10 et Windows 10 Mobile avec Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
  -  Cette méthode s’applique uniquement aux appareils Windows 10 et Windows 10 Mobile.
  -  Vous devez disposer d’Azure Active Directory Premium pour utiliser cette méthode. Sinon, utilisez la méthode d’inscription pour Windows 8.1 et Windows Phone 8.1.
  -  Si vous choisissez de ne pas activer l’inscription automatique, utilisez la méthode d’inscription pour Windows 8.1 et Windows Phone 8.1.
 
-
-- **[Inscription Windows 8.1 et Windows Phone 8.1 en configurant l’enregistrement CNAME](#set-up-windows-8.1-and-windows-phone-8.1-enrollment-by-configuring-cname)** 
+- [**Inscription Windows 8.1 et Windows Phone 8.1 en configurant l’enregistrement CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - Vous devez utiliser cette méthode pour inscrire des appareils Windows 8.1 et Windows Phone 8.1.
 
 
@@ -55,16 +54,14 @@ Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appar
 
     Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à taper le nom du serveur de gestion des appareils mobiles (enrollment.manage.microsoft.com).
 
-    Si vous avez un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers manage.microsoft.com. Nous vous recommandons donc de le remplacer par un CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers enterpriseenrollment-s.manage.microsoft.com. Cette modification est recommandée, car le point de terminaison manage.microsoft.com est désapprouvé pour les inscriptions dans une version ultérieure.
-
     S'il existe plusieurs domaines vérifiés, créez un enregistrement CNAME pour chaque domaine. Ces enregistrements doivent contenir les informations suivantes :
 
     Les enregistrements de ressources CNAME doivent avoir les informations suivantes :
 
   |TYPE|Nom d'hôte|Pointe vers|TTL|
   |--------|-------------|-------------|-------|
-  |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 heure|
-  |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 heure|
+  |CNAME|enterpriseenrollment.domaine_entreprise.com|EnterpriseEnrollment-s.manage.microsoft.com |1 heure|
+  |CNAME|EnterpriseRegistration.domaine_entreprise.com|EnterpriseRegistration.windows.net|1 heure|
 
   `EnterpriseEnrollment-s.manage.microsoft.com` : prend en charge une redirection vers le service Intune avec reconnaissance du domaine à partir du nom de domaine de l’e-mail.
 
@@ -88,6 +85,6 @@ Aucun travail supplémentaire n’est requis sauf si vous déployez le Portail d
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
