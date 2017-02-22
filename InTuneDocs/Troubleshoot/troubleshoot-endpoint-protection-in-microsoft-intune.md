@@ -2,10 +2,10 @@
 title: "Résolution des problèmes liés à Endpoint Protection | Microsoft Docs"
 description: "Cette rubrique explique comment résoudre les problèmes en utilisant Microsoft Intune Endpoint Protection."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Utilisez les informations indiquées dans cette section pour vous aider à résoudre les problèmes liés à l’utilisation de Microsoft Intune Endpoint Protection.
+Utilisez les informations indiquées dans cette section pour vous aider à résoudre les problèmes liés à l’utilisation de Microsoft Intune Endpoint Protection. Vous pouvez également consulter des informations sur la [résolution des problèmes pour Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10).
 
 Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
-
 
 ### <a name="endpoint-protection-error-messages"></a>Messages d'erreur d'Endpoint Protection
 Cette section décrit les causes et solutions possibles pour les erreurs et avertissements suivants, qui apparaissent dans le volet **État Endpoint Protection** de la [console d’administration Intune](https://manage.microsoft.com).
@@ -52,6 +52,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

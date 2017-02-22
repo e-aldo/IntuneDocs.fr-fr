@@ -1,11 +1,11 @@
 ---
-title: "Préparer les applications pour la gestion d’applications mobiles | Microsoft Intune"
+title: "Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune | Microsoft Docs"
 description: "Cette rubrique présente des informations pour vous aider à déterminer quand utiliser l’outil de création de package de restrictions d’application et le SDK d’application pour permettre à vos applications métier personnalisées d’utiliser les stratégies de gestion d’applications mobiles."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
+ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune
+# <a name="prepare-line-of-business-apps-for-mam"></a>Préparer des applications métier pour la gestion des appareils mobiles
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous pouvez configurer vos applications pour utiliser des stratégies de gestion des applications mobiles (GAM) à l’aide de l’outil de création de package de restrictions d’application Intune ou du SDK d’application Intune. Utilisez ces informations pour en savoir plus sur ces deux méthodes et quand les utiliser.
 
 ## <a name="intune-app-wrapping-tool"></a>Outil de création de package de restrictions d’application Intune
@@ -106,6 +109,6 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

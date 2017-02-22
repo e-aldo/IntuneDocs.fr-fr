@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
+ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
+ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Analyser les stratégies de gestion des applications mobiles à l’aide de Microsoft Intune
-Vous pouvez surveiller l’état de conformité des stratégies de gestion des applications mobiles (GAM) que vous avez appliquées aux utilisateurs dans le panneau de protection des applications Intune dans le [portail Azure](https://portal.azure.com). Vous pouvez y trouver des informations sur les utilisateurs concernés par les stratégies GAM, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
+Vous pouvez surveiller l’état de conformité des stratégies de gestion des applications mobiles (MAM) que vous avez appliquées aux utilisateurs. Vous pouvez y trouver des informations sur les utilisateurs concernés par les stratégies GAM, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
 
 Vous pouvez surveiller l’état de conformité à trois endroits différents :
 
@@ -36,8 +36,8 @@ Vous pouvez surveiller l’état de conformité à trois endroits différents :
 Suivez les trois étapes ci-dessous pour ouvrir la vue Résumé :
 
 1. Accédez au [portail Azure](https://portal.azure.com) et entrez vos informations d’identification.
-2. Choisissez **Plus de services** et tapez « Intune ».
-3. Choisissez **Intune App Protection** (Protection des applications Intune).
+2. Choisissez **Plus de services** et saisissez **Intune** dans la zone de texte de filtre.
+3. Choisissez **Protection des applications Intune**.
 
 Dans le panneau **Gestion des applications mobiles Intune**, vous pouvez voir un résumé de l’état de conformité :
 
@@ -95,8 +95,6 @@ Vous trouverez les mêmes rapports dans la vue détaillée, plus d’autres rapp
 
 -   **Rapport d’application de protection des applications :** il fournit deux états de protection des applications différents que les administrateurs peuvent sélectionner avant de générer le rapport. Les états peuvent être protégés ou non protégés.
 
-    ![Capture d’écran 1](../media/MAM-reporting-1.png)
-
     -   État de l’utilisateur pour l’activité GAM gérée (protégé) : ce rapport présente l’activité de chaque application GAM gérée, par utilisateur.
 
         -   Il affiche toutes les applications ciblées par les stratégies GAM de chaque utilisateur et détaille l’état de chaque application enregistrée dans les stratégies GAM ou ciblée par une stratégie GAM mais jamais enregistrée.
@@ -109,6 +107,27 @@ Vous trouverez les mêmes rapports dans la vue détaillée, plus d’autres rapp
 
 ![Capture d’écran 2](../media/MAM-reporting-4.png)
 
+## <a name="table-grouping"></a>Regroupement de tables
+
+Une fois que les données du **rapport d’utilisateur de la protection des applications** s’affichent, vous pouvez les regrouper selon les éléments suivants :
+
+- **Résultat de la validation :** les données s’affichent groupées selon l'état de protection de l’application, qui peut être réussite, avertissement ou échec.
+- **Nom de l’application :** les données s’affichent regroupées par applications (le véritable nom de l’application) avec succès, avertissement ou échec.
+
+## <a name="export-app-protection-activities-to-csv"></a>Exportation des activités de protection d’application au format CSV
+
+Vous pouvez exporter toutes vos activités de stratégie de protection des applications vers un fichier .csv. Cela peut être utile pour analyser tous les états de protection des applications signalés par les utilisateurs.
+
+Suivez ces étapes pour générer le rapport de protection des applications :
+
+1. Dans le panneau Gestion des applications mobiles Intune, choisissez le rapport de protection des applications.
+
+    ![Capture d’écran&6;](../media/app-protection-report-csv-2.png)
+
+2. Choisissez Oui pour enregistrer votre rapport, puis cliquez sur Enregistrer sous et sélectionnez le dossier dans lequel vous souhaitez enregistrer le rapport.
+
+    ![Capture d’écran&7;](../media/app-protection-report-csv-1.png)
+
 ## <a name="see-also"></a>Voir aussi
 [Gérer les transferts de données entre applications iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
@@ -117,6 +136,6 @@ Vous trouverez les mêmes rapports dans la vue détaillée, plus d’autres rapp
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

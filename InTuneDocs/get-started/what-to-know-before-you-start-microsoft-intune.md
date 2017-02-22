@@ -1,11 +1,11 @@
 ---
-title: Configuration requise | Microsoft Docs
-description: "Liens menant vers les prérequis et les conditions requises pour utiliser Intune"
+title: "Appareils pris en charge - Microsoft Intune | Microsoft Docs"
+description: "Répertorie les plateformes d’appareils et navigateurs pris en charge par pour la gestion des appareils Intune"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a567d55141c4510a5c81861df1522f118104de61
-ms.openlocfilehash: 900b3a9bcc9ce58cd165b14592c850b50739a33a
+ms.sourcegitcommit: b3732d0c6461f9fb8462ae5584055204d597aae0
+ms.openlocfilehash: 0af4f49713a65900079d69a09f20d210797c935c
 
 
 ---
 
-# <a name="prerequisites-to-getting-started-with-intune"></a>Conditions préalables à la prise en main de Microsoft Intune
+# <a name="supported-devices-and-browsers"></a>Appareils et navigateurs pris en charge
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Cet article est destiné aux administrateurs système responsables de la gestion des appareils de l’entreprise. Pour de l’aide sur l’installation de Intune sur votre téléphone, consultez [Utilisation d’appareils gérés pour votre travail](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Avant de commencer la configuration de Microsoft Intune, passez en revue les conditions suivantes :
 
@@ -43,7 +46,7 @@ La gestion des appareils Intune fournit [ces fonctionnalités](mobile-device-man
 
 ### <a name="windows-pc-software-client"></a>Logiciel client pour PC Windows
 
-Vous pouvez déployer et installer un [logiciel client Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) sur les PC Windows en guise d’alternative à l’inscription. Vous pouvez utiliser le client logiciel Intune pour gérer des PC Windows 7 et versions ultérieures. La gestion des PC avec le logiciel client fournit [ces fonctionnalités](windows-pc-management-capabilities-in-microsoft-intune.md).
+Vous pouvez déployer et installer un [logiciel client Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) sur les PC Windows en guise d’alternative à l’inscription. Vous pouvez utiliser le logiciel client Intune pour gérer des PC Windows 7 et versions ultérieures, à l’exception de Windows 10 Édition familiale. La gestion des PC avec le logiciel client fournit [ces fonctionnalités](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ### <a name="exchange-activesync-management"></a>Gestion d’Exchange ActiveSync
 
@@ -74,6 +77,6 @@ Seuls les utilisateurs disposant d’autorisations d’administrateur de service
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

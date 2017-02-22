@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
@@ -117,10 +118,14 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
-|Courrier électronique|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
-|Outlook|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|
+|Courrier électronique|N/A. Consultez l’élément Outlook.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
+|Outlook|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|
 |Disjonction d'Azure Active Directory (AAD)|Enregistrement AAD supprimé.|Enregistrement AAD supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
+
+**Android for Work**
+
+Une réinitialisation sélective sur un appareil Android for Work supprime l’ensemble des données, applications et paramètres dans le profil professionnel de l’appareil. L’appareil n’est plus géré par Intune. La réinitialisation complète n’est pas prise en charge pour Android for Work.
 
 **Windows**
 
@@ -168,6 +173,6 @@ Ce rapport indique également les personnes qui ont effectué les actions.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

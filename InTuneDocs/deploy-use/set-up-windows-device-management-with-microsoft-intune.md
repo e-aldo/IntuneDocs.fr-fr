@@ -1,10 +1,10 @@
 ---
 title: Configurer la gestion des appareils Windows avec Microsoft Intune | Microsoft Docs
-description: "Activez la gestion des appareils mobiles pour les ordinateurs Windows, y compris les appareils Windows 10 avec Microsoft Intune."
+description: Activez la gestion des appareils mobiles pour les appareils Windows avec Microsoft Intune.
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 01/26/2016
+ms.date: 02/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: f4f3b89cf066bcc98d043f66d4d40fd9d9ca3fd5
+ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
+ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
 
 
 ---
@@ -23,23 +23,29 @@ ms.openlocfilehash: f4f3b89cf066bcc98d043f66d4d40fd9d9ca3fd5
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-En tant qu’administrateur Intune, vous pouvez activer l’inscription et la gestion des PC Windows de deux manières :
+Pour configurer l’inscription pour les appareils Windows, utilisez une des méthodes suivantes :
 
-- **[Inscription automatique auprès d’Azure Active Directory](#azure-active-directory-enrollment)** - Les utilisateurs Windows 10 et Windows 10 Mobile inscrivent leurs appareils en y ajoutant un compte professionnel ou scolaire.
+- **[Inscription automatique de Windows 10 et Windows 10 Mobile avec Azure Active Directory Premium](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+ -  Cette méthode s’applique uniquement aux appareils Windows 10 et Windows 10 Mobile.
+ -  Vous devez disposer d’Azure Active Directory Premium pour utiliser cette méthode. Sinon, utilisez la méthode d’inscription pour Windows 8.1 et Windows Phone 8.1.
+ -  Si vous choisissez de ne pas activer l’inscription automatique, utilisez la méthode d’inscription pour Windows 8.1 et Windows Phone 8.1.
 
-- **[Inscription par le biais du portail d’entreprise](#set-up-company-portal-app-enrollment)** - Les utilisateurs Windows 8.1 et versions ultérieures inscrivent leurs appareils en téléchargeant et installant l’application Portail d’entreprise, puis en entrant les informations d’identification de leur compte professionnel ou scolaire dans l’application.
+
+- **[Inscription Windows 8.1 et Windows Phone 8.1 en configurant l’enregistrement CNAME](#set-up-windows-8--1-and-windows-phone-8--1-enrollment-by-configuring-cname)** 
+ - Vous devez utiliser cette méthode pour inscrire des appareils Windows 8.1 et Windows Phone 8.1.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="set-up-company-portal-app-enrollment"></a>Configurer l’inscription par le biais de l’application Portail d’entreprise
-Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appareils à l’aide de l’application Portail d’entreprise Intune. Si vous créez des enregistrements de ressources CNAME DNS, les utilisateurs se connectent et s’inscrivent à Intune sans entrer un nom de serveur.
+## <a name="set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname"></a>Configuration de l’inscription Windows 8.1 et Windows Phone 8.1 en configurant l’enregistrement CNAME
+Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appareils à l’aide du Portail d’entreprise Intune. Si vous créez des enregistrements de ressources CNAME DNS, les utilisateurs se connectent et s’inscrivent à Intune sans entrer un nom de serveur.
 
 1. **Configurer Intune**<br>
 Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [définissant l’autorité de gestion des appareils mobiles (MDM)](prerequisites-for-enrollment.md#step-2-set-mdm-authority) sur **Microsoft Intune**, puis en configurant la gestion des appareils mobiles.
 
-2. **Créer des enregistrements CNAME** (facultatif)<br>Créez des enregistrements de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com.
+2. **Créer des enregistrements CNAME** (facultatif)<br>
+Créez des enregistrements de ressources **CNAME** DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com.
 
-    Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à taper le nom du serveur de gestion des appareils mobiles (https://enrollment.manage.microsoft.com). 
+    Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à taper le nom du serveur de gestion des appareils mobiles (enrollment.manage.microsoft.com).    
 
     Si vous avez un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers manage.microsoft.com. Nous vous recommandons donc de le remplacer par un CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers enterpriseenrollment-s.manage.microsoft.com. Cette modification est recommandée, car le point de terminaison manage.microsoft.com est désapprouvé pour les inscriptions dans une version ultérieure.
 
@@ -72,6 +78,6 @@ Si ce n’est déjà fait, préparez la gestion des appareils mobiles en [défin
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

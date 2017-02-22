@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -25,24 +26,26 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Vous pouvez configurer l’accès conditionnel pour Exchange Online et Exchange Online Dedicated à l’aide de Microsoft Intune. Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’article [Protéger l’accès à la messagerie, à Office 365 et à d’autres services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
 > [!NOTE]
 >Si vous disposez d’un environnement Exchange Online Dedicated et que vous ne savez pas s’il s’agit de la nouvelle configuration ou d’une configuration héritée, contactez votre responsable de compte.
 
-Pour contrôler l’accès à la messagerie Exchange Online ou Exchange Online Dedicated (nouvel environnement), vous pouvez configurer l’accès conditionnel à Exchange Online à l'aide de Microsoft Intune. Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’article [Protéger l’accès à la messagerie, à Office 365 et à d’autres services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+## <a name="before-you-begin"></a>Avant de commencer
 
-
-**Avant** de configurer l’accès conditionnel, vous devez :
+Pour configurer l’accès conditionnel, vous devez :
 
 -   Disposer d’un **abonnement Office 365 qui inclut Exchange Online (comme E3)** ; les utilisateurs doivent disposer d’une licence pour Exchange Online.
 
 - Avoir un **abonnement Enterprise Mobility + Security (EMS)** ou un **abonnement Azure Active Directory (Azure AD)  Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Il est possible de configurer le **connecteur de service à service Intune** facultatif, qui connecte [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] à Exchange Online et vous aide à gérer les informations sur les appareils avec la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Il n’est pas nécessaire d’utiliser le connecteur pour utiliser des stratégies de conformité ou d’accès conditionnel, mais il est obligatoire pour exécuter les rapports qui aident à évaluer l’impact de l’accès conditionnel.
+    -  Découvrez plus en détail le [connecteur service à service Intune](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
-   > Ne configurez pas le connecteur de service à service si vous prévoyez d’utiliser l’accès conditionnel à Exchange Online et Exchange sur site.
+   > Ne configurez pas le connecteur service à service si vous prévoyez d’utiliser l’accès conditionnel à la fois pour Exchange Online et Exchange sur site.
 
-   Pour obtenir des instructions sur la configuration du connecteur, consultez [Connecteur de service à service Intune](intune-service-to-service-exchange-connector.md).
+### <a name="device-compliance-requirements"></a>Exigences de conformité des appareils
 
 Lorsque vous configurez des stratégies d’accès conditionnel et les ciblez sur un utilisateur, l’**appareil** dont l’utilisateur se sert pour se connecter à sa messagerie doit :
 
@@ -54,12 +57,15 @@ Lorsque vous configurez des stratégies d’accès conditionnel et les ciblez su
 
 -   Être **compatible** avec n’importe quelle stratégie de conformité [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] déployée sur cet appareil ou joint à un domaine local.
 
-Si une stratégie d'accès conditionnel n’est pas remplie, l’utilisateur reçoit l’un des messages suivants quand il tente de se connecter :
+### <a name="when-the-device-is-not-compliant"></a>Lorsque l'appareil n’est pas conforme
+
+Si les conditions d'une stratégie d’accès conditionnel ne sont pas remplies, l’appareil est mis en quarantaine immédiatement et l’utilisateur reçoit par e-mail l'une des notifications de mise en quarantaine suivantes :
 
 - Si l’appareil n’est pas inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qu’il n’est pas inscrit dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application du portail d’entreprise, inscrire l’appareil et activer la messagerie. Ce processus associe également l’ID Exchange ActiveSync de l’appareil à l’enregistrement dans Azure Active Directory.
 
 -   Si l’appareil est considéré comme non conforme aux règles de stratégie de conformité, l’utilisateur final est dirigé vers le site web ou l’application du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] où il trouvera des informations sur le problème et sa résolution.
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>Fonctionnement de l’accès conditionnel avec Exchange Online
 
 Le diagramme ci-dessous illustre le flux utilisé par les stratégies d’accès conditionnel à Exchange Online.
 
@@ -70,7 +76,6 @@ Vous pouvez protéger l’accès à la messagerie Exchange Online à partir d’
 
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures et Android for Work
 - iOS 8.0 et versions ultérieures
-- Windows Phone 8.1 et versions ultérieures
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,7 +90,8 @@ Vous pouvez protéger l’accès à **Outlook Web Access (OWA)** sur Exchange On
 * Chrome (Android)
 * Intune Managed Browser (iOS, Android versions 5.0 et ultérieures)
 
-**Les navigateurs non pris en charge sont bloqués**.
+   > [!IMPORTANT]
+   > **Les navigateurs non pris en charge sont bloqués**.
 
 **L’application OWA pour iOS et Android peut être modifiée pour ne pas utiliser l’authentification moderne et n’est pas prise en charge. L’accès à partir de l’application OWA doit être bloqué par le biais de règles de revendication AD FS.**
 
@@ -204,7 +210,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
         Cette opération exige que tous les appareils utilisés pour accéder à **Exchange Online** soient inscrits dans Intune et conformes aux stratégies. Toute application cliente qui utilise l’**authentification moderne** est soumise à la stratégie d’accès conditionnel. Si la plateforme n’est actuellement pas prise en charge par Intune, l’accès à **Exchange Online** est bloqué.
 
         Si vous sélectionnez l’option **Toutes plateformes**, Azure Active Directory applique cette stratégie à toutes les demandes d’authentification, quelle que soit la plateforme signalée par l’application cliente. Toutes les plateformes doivent être inscrites et être conformes, sauf dans les cas suivants :
-        *   Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
+        *    Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
         * Plateformes non prises en charge comme Mac OS. Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
 
     -   **Plateformes spécifiques**
@@ -272,6 +278,6 @@ Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], 
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

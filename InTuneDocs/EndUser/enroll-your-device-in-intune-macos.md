@@ -1,5 +1,5 @@
 ---
-title: "Inscrire un appareil macOS dans Intune | Microsoft Intune"
+title: "Inscrire un appareil macOS dans Intune | Microsoft Docs"
 description: Cette rubrique explique comment inscrire un appareil macOS dans Intune
 keywords: "Mac OS X, macOS, OS X"
 author: barlanmsft
@@ -11,19 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-ROBOTS: 
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
 
 
 ---
 
 # <a name="enroll-your-macos-device-in-intune"></a>Inscrire votre appareil macOS dans Intune
 
-L’accès aux applications, aux données et aux ressources de votre organisation est essentiel pour que vous puissiez travailler. Si vous utilisez un appareil macOS au travail, cela signifie que vous devez installer un __profil de gestion__. Il s’agit simplement d’un fichier configuré par votre administrateur informatique qui charge les paramètres et les informations d’accès sur votre Mac. Vous voulez en savoir plus ? Découvrez [ce qui se passe lorsque vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+L’accès aux applications, aux données et aux ressources de votre organisation est essentiel pour que vous puissiez travailler. Si vous utilisez un appareil macOS au travail, cela signifie que vous devez installer un __profil de gestion__. Il s’agit simplement d’un fichier configuré par votre administrateur informatique qui charge les paramètres et les informations d’accès sur votre Mac. Vous voulez en savoir plus ? Découvrez [ce qui se passe lorsque vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > Si vous essayez d’inscrire un appareil iOS, tel qu’un iPhone ou un iPad, [suivez plutôt ces instructions](enroll-your-device-in-intune-ios.md).
@@ -64,6 +67,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Vous trou
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
