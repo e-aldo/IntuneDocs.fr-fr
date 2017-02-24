@@ -1,11 +1,11 @@
 ---
-title: Mettre hors service des appareils | Microsoft Intune
+title: Mettre hors service des appareils | Microsoft Docs
 description: "Intune prend en charge une réinitialisation sélective et une réinitialisation complète pour supprimer l’appareil de la gestion Intune en supprimant la stratégie et le portail d’entreprise."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,28 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Retirer des appareils de la gestion Intune
 
-Qu’ils soient personnels ou qu’ils appartiennent à l’entreprise, les appareils gérés sont appelés à être supprimés du portail de gestion Intune. Vous pouvez être amené à mettre un appareil hors service pour plusieurs raisons :
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
--   l’utilisateur quitte une entreprise d’une manière planifiée (départ « géré ») ;
--   l’utilisateur quitte l’entreprise brusquement (il est renvoyé, démissionne etc.) ;
--   l’appareil est perdu ;
--   un appareil est réaffecté (affecté à un autre utilisateur, réutilisé dans un autre contexte).
+Qu’ils soient personnels ou qu’ils appartiennent à l’entreprise, les appareils gérés sont appelés à être supprimés du portail de gestion Intune.
+
+Les appareils ne sont jamais supprimés d'Intune sans votre intervention, même si les appareils n'ont pas été connectés au service Intune pendant un certain temps.
+
+Vous pouvez être amené à mettre un appareil hors service pour plusieurs raisons :
+
+-    l’utilisateur quitte une entreprise d’une manière planifiée (départ « géré ») ;
+-    l’utilisateur quitte l’entreprise brusquement (il est renvoyé, démissionne etc.) ;
+-    l’appareil est perdu ;
+-    un appareil est réaffecté (affecté à un autre utilisateur, réutilisé dans un autre contexte).
 
 Vous pouvez effectuer une réinitialisation sélective ou complète sur un appareil géré en tant qu’appareil mobile ou vous pouvez verrouiller un appareil et réinitialiser son mot de passe. En réinitialisant l’appareil, vous libérez l’abonnement de l’utilisateur pour ajouter un autre appareil. Vous pouvez également mettre hors service des ordinateurs gérés à l’aide du logiciel client Intune.
 
@@ -37,6 +44,9 @@ Une réinitialisation sélective et une réinitialisation complète suppriment l
 L’[effacement sélectif](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) est l’action à privilégier pour les employés qui ont inscrit leurs propres appareils dans Intune, car elle n’affecte pas les informations personnelles sur l’appareil. Seules les données d’entreprise sont supprimées.
 
 Pour les appareils devant changer de fonction, vous pouvez également utiliser la [réinitialisation complète](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe), qui réinitialise l’appareil aux paramètres d’usine.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>Suppression de licences utilisateur et d’appareils gérés
+Quand vous supprimez la licence d’un utilisateur, les appareils inscrits de cet utilisateur sont désinscrits. Nous vous conseillons d’utiliser la réinitialisation sélective pour supprimer les données d’entreprise des appareils gérés avant de supprimer la licence Intune d’un utilisateur. Une fois la licence de l’utilisateur supprimée, l’appareil ne peut plus être la cible d’actions à distance.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Pour supprimer des appareils dans le portail Azure Active Directory
 
@@ -70,6 +80,6 @@ Parfois c'est l'appareil lui-même qui arrive en fin de vie. Dans ce cas, la [r�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

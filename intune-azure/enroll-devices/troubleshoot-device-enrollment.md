@@ -1,11 +1,11 @@
 ---
-title: "Résolution des problèmes d’inscription d’appareils | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment résoudre les problèmes d’inscription d’appareil."
+title: "Résoudre les problèmes d’inscription d’appareils | Intune Azure (préversion) | Microsoft Docs"
+description: "Intune Azure (préversion) : découvrez comment résoudre les problèmes d’inscription d’appareils."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
 
 
 ---
@@ -29,7 +29,7 @@ Cette rubrique fournit des suggestions pour résoudre les problèmes liés à l�
 
 ## <a name="initial-troubleshooting-steps"></a>Étapes initiales de dépannage
 
-Avant de commencer le dépannage, vérifiez que vous avez configuré Intune correctement pour activer l’inscription. Consultez la page [Inscription d’appareils Knox standard et Android](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices.md) pour des liens vers les étapes d’inscription pour chaque plateforme.
+Avant de commencer le dépannage, vérifiez que vous avez configuré Intune correctement pour activer l’inscription. Consultez la page [Inscription d’appareils Knox standard et Android](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices.md) pour obtenir des liens vers les étapes d’inscription pour chaque plateforme.
 
 Les utilisateurs d’appareils gérés peuvent recueillir des journaux d’inscription et de diagnostic qui peuvent vous être utiles. Les instructions destinées aux utilisateurs permettant de recueillir les journaux sont fournies dans :
 
@@ -46,7 +46,7 @@ Ces problèmes peuvent se produire sur toutes les plateformes.
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Vérifier le nombre d’appareils inscrits et le nombre autorisé
 
-Dans le panneau Intune du portail Azure, accédez à **Inscrire des appareils** > **Restrictions d’inscription** et confirmez que l’utilisateur n’a pas plus de 15 appareils affectés autorisés au maximum.
+Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**. Dans le panneau Intune du portail Azure, accédez à **Inscrire des appareils** > **Restrictions d’inscription** et vérifiez que le nombre d’appareils affectés à l’utilisateur ne dépasse pas 15 (valeur maximale autorisée).
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -72,7 +72,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 > [!NOTE]
 
-> Pour éviter d’atteindre le plafond d’inscription d’appareils, vous pouvez utiliser les Gestionnaires d’inscription d’appareil, comme indiqué dans [Inscrire des appareils avec le gestionnaire d’inscription d’appareil](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md).
+> Pour éviter d’atteindre le plafond d’inscription d’appareils, vous pouvez utiliser les gestionnaires d’inscription d’appareil, comme indiqué dans [Inscrire des appareils avec le gestionnaire d’inscription d’appareil](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md).
 >
 > Un compte d’utilisateur ajouté au groupe Gestionnaires d’inscription d’appareil ne peut pas effectuer d’inscription si la stratégie d’accès conditionnel a été appliquée à cette connexion d’utilisateur spécifique.
 
@@ -96,7 +96,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 **Résolution :**
 
-1.  Vérifiez que l’autorité MDM a été correctement définie pour le type de service Intune que vous utilisez (autrement dit pour Intune, Office 365 ou System Center Configuration Manager avec Intune). Consultez [Définir l'autorité de gestion des appareils mobiles](https://docs.microsoft.com/en-us/intune-azure/enroll-devices/set-mdm-authority) pour plus d’instructions.
+1.  Vérifiez que l’autorité MDM a été correctement définie pour le type de service Intune que vous utilisez (autrement dit pour Intune, Office 365 ou System Center Configuration Manager avec Intune). Pour obtenir des instructions, consultez [Définir l’autorité de gestion des appareils mobiles](https://docs.microsoft.com/en-us/intune-azure/enroll-devices/set-mdm-authority).
 
     > [!NOTE]
     > Une fois que vous avez défini l’autorité MDM, vous ne pouvez la modifier qu’en contactant le support technique, comme indiqué dans [Comment obtenir un support technique pour Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
@@ -218,16 +218,16 @@ L’erreur de certificat se produit car les appareils Android nécessitent l’i
 
 Pour résoudre ce problème, importez les certificats dans les certificats personnels de l’ordinateur sur les proxys ou le serveur AD FS en procédant comme suit :
 
-1.  Sur les serveurs ADFS et proxy, lancez la console de gestion des certificats pour l’ordinateur local en cliquant avec le bouton droit sur le bouton **Démarrer**, en choisissant **Exécuter** et en tapant **certlm.msc**.
-2.  Développez **Personnel** et sélectionnez **Certificats**.
-3.  Recherchez le certificat pour votre communication avec le service AD FS (un certificat signé publiquement) et double-cliquez dessus pour afficher ses propriétés.
-4.  Sélectionnez l’onglet **Chemin d’accès de certification** pour afficher les certificats parents du certificat.
-5.  Sur chaque certificat parent, sélectionnez **Afficher le certificat**.
-6.  Sélectionnez l’onglet **Détails** et choisissez **Copier dans un fichier**.
-7.  Suivez les invites de l’Assistant pour exporter ou enregistrer la clé publique du certificat à l’emplacement de fichier souhaité.
-8.  Importez les certificats parents qui ont été exportés à l’étape 3 dans Ordinateur local\Personnel\Certificats en double-cliquant sur **Certificats**, en sélectionnant **Toutes les tâches** > **Importer**, puis en suivant les invites de l’Assistant pour importer les certificats.
-9.  Redémarrez les serveurs AD FS.
-10. Répétez les étapes ci-dessus sur tous les serveurs proxy et AD FS.
+1.    Sur les serveurs ADFS et proxy, lancez la console de gestion des certificats pour l’ordinateur local en cliquant avec le bouton droit sur le bouton **Démarrer**, en choisissant **Exécuter** et en tapant **certlm.msc**.
+2.    Développez **Personnel** et sélectionnez **Certificats**.
+3.    Recherchez le certificat pour votre communication avec le service AD FS (un certificat signé publiquement) et double-cliquez dessus pour afficher ses propriétés.
+4.    Sélectionnez l’onglet **Chemin d’accès de certification** pour afficher les certificats parents du certificat.
+5.    Sur chaque certificat parent, sélectionnez **Afficher le certificat**.
+6.    Sélectionnez l’onglet **Détails** et choisissez **Copier dans un fichier**.
+7.    Suivez les invites de l’Assistant pour exporter ou enregistrer la clé publique du certificat à l’emplacement de fichier souhaité.
+8.    Importez les certificats parents qui ont été exportés à l’étape 3 dans Ordinateur local\Personnel\Certificats en double-cliquant sur **Certificats**, en sélectionnant **Toutes les tâches** > **Importer**, puis en suivant les invites de l’Assistant pour importer les certificats.
+9.    Redémarrez les serveurs AD FS.
+10.    Répétez les étapes ci-dessus sur tous les serveurs proxy et AD FS.
 L’utilisateur doit maintenant être en mesure de se connecter au site Portail d’entreprise sur l’appareil Android.
 
 **Pour vérifier que le certificat a été installé correctement** :
@@ -306,17 +306,17 @@ Une fois inscrits, les appareils retrouvent un état d’intégrité correct et 
     1. supprimer de MDMPolicy où PolicyType = 11
     1. supprimer de MDMPolicyAssignment où PolicyType = 11
     1. SUPPRIMER Drs_Signals
-3. Redémarrez le Service SMS Executive ou le serveur CM.
+3. Redémarrez le service SMS Executive ou le serveur CM.
 
-4. Obtenez un nouveau certificat APN et téléchargez-le. Pour faire cela, cliquez avec le bouton droit sur l’abonnement à Intune dans le volet gauche de Configuration Manager. Sélectionnez **Créer une demande de certificat APNs** et suivez les instructions.
+4. Obtenez un nouveau certificat APN et chargez-le. Pour cela, cliquez avec le bouton droit sur l’abonnement à Intune dans le volet gauche de Configuration Manager. Sélectionnez **Créer une demande de certificat APNs** et suivez les instructions.
 5. 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problèmes quand vous utilisez System Center Configuration Manager avec Intune
 
 ### <a name="mobile-devices-disappear"></a>Les appareils mobiles disparaissent
 
-**Problème :** Après avoir inscrit un appareil mobile dans Configuration Manager, il disparaît du regroupement d’appareils mobiles, mais l’appareil a toujours son profil de gestion et est répertorié dans la passerelle CSS.
+**Problème :** Après l’inscription d’un appareil mobile dans Configuration Manager, celui-ci disparaît du regroupement d’appareils mobiles, mais son profil de gestion est toujours répertorié dans la passerelle CSS.
 
-**Résolution :** Ce problème peut survenir lorsqu’un processus personnalisé supprime les appareils non joints à un domaine ou que l’utilisateur a retiré l’appareil de l’abonnement. Pour identifier le processus ou le compte d’utilisateur qui a supprimé l’appareil de la console Configuration Manager, procédez comme suit pour vérifier la façon dont l’appareil a été retiré.
+**Résolution :** Ce problème peut se produire quand un processus personnalisé supprime les appareils non joints à un domaine ou que l’utilisateur a retiré l’appareil de l’abonnement. Pour identifier le processus ou le compte d’utilisateur ayant supprimé l’appareil de la console Configuration Manager, procédez comme suit pour vérifier la façon dont l’appareil a été retiré.
 
 1.  Dans la console d’administration Configuration Manager, sélectionnez **Analyse** &gt; **État du système** &gt; **Requêtes sur les messages d’état**.
 
@@ -324,7 +324,7 @@ Une fois inscrits, les appareils retrouvent un état d’intégrité correct et 
 
 3.  Choisissez une heure/date appropriée ou les 12 dernières heures.
 
-4.  Recherchez l’appareil en question et vérifiez comment l’appareil a été supprimé. L’exemple ci-dessous indique que le compte SCCMInstall a supprimé l’appareil via une application inconnue.
+4.  Recherchez l’appareil en question et vérifiez comment l’appareil a été supprimé. L’exemple ci-dessous indique que le compte SCCMInstall a supprimé l’appareil par le biais d’une application inconnue.
 
     ![Capture d’écran du diagnostic de suppression d’appareil](./media/cm-with-intune-unknown-app-deleted-device.png)
 
@@ -335,18 +335,18 @@ Une fois inscrits, les appareils retrouvent un état d’intégrité correct et 
 
 ### <a name="other-ios-enrollment-errors"></a>Autres erreurs d’inscription iOS
 
-Vous pouvez afficher une liste [d’erreurs d’inscription iOS](https://docs.microsoft.com/intune/enduser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios) que les utilisateurs finaux peuvent voir. Cette liste fournit des informations sur les messages d’erreur que les utilisateurs finaux peuvent voir et les étapes à suivre pour résoudre le problème.
+Vous pouvez afficher la liste des [erreurs d’inscription iOS](https://docs.microsoft.com/intune/enduser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios) présentées aux utilisateurs finaux. Cette liste fournit des informations sur les messages d’erreur que les utilisateurs finaux peuvent voir et les étapes à suivre pour résoudre le problème.
 
 ## <a name="pc--issues"></a>Problèmes liés aux PC
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>L’ordinateur est déjà inscrit - Erreur hr 0x8007064c
 **Problème :** L’inscription échoue avec l’erreur **L’ordinateur est déjà inscrit**. Le journal d’inscription affiche l’erreur **hr 0x8007064c**.
 
-Cette erreur peut survenir en raison du fait que l’ordinateur avait déjà été inscrit précédemment ou qu’il a l’image clonée d’un ordinateur qui avait été inscrit. Le certificat de compte du compte précédent est toujours présent sur l’ordinateur.
+Cela peut être dû au fait que l’ordinateur a déjà été inscrit ou qu’il a l’image clonée d’un ordinateur qui a été inscrit. Le certificat de compte du compte précédent est toujours présent sur l’ordinateur.
 
 **Résolution :**
 
-1.. Dans le menu **Démarrer**, tapez **Exécuter** -> **MMC**.
+1. Dans le menu **Démarrer**, tapez **Exécuter** -> **MMC**.
 1. Choisissez **Fichier** > **Ajouter/supprimer des composants logiciels enfichables**.
 1. Double-cliquez sur **Certificats**, choisissez **Compte ordinateur** > **Suivant**, puis sélectionnez **Ordinateur local**.
 1. Double-cliquez sur **Certificats (ordinateur local)**, puis choisissez **Personnel / certificats**.
@@ -358,7 +358,7 @@ Cette erreur peut survenir en raison du fait que l’ordinateur avait déjà ét
 
     > [!IMPORTANT]
     > Cette section, méthode ou tâche contient des étapes qui vous indiquent comment modifier le registre. Toutefois, des problèmes importants peuvent survenir si vous modifiez le registre de façon incorrecte. Par conséquent, assurez-vous de suivre les étapes avec précaution. Pour plus de protection, sauvegardez le registre avant de le modifier. Vous pourrez ainsi restaurer le Registre en cas de problème.
-    > Pour plus d’informations sur la procédure de sauvegarde et de restauration du registre, consultez [Procédure de sauvegarde et de restauration du registre dans Windows](https://support.microsoft.com/en-us/kb/322756).
+    > Pour plus d’informations sur la sauvegarde et la restauration du Registre, consultez [Guide pratique pour sauvegarder et restaurer le Registre dans Windows](https://support.microsoft.com/en-us/kb/322756).
 
 ## <a name="general-enrollment-error-codes"></a>Codes généraux des erreurs d’inscription
 
@@ -389,6 +389,6 @@ Si ces informations de dépannage n’ont pas permis de vous aider, contactez le
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

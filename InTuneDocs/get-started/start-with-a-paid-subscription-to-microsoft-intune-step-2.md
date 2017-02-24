@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
 
 
 ---
@@ -25,6 +26,7 @@ ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Cette rubrique explique aux administrateurs comment créer un enregistrement CNAME DNS pour simplifier et personnaliser la procédure d’ouverture de session.
 
 Quand votre organisation s’inscrit à un service cloud de Microsoft comme Intune, vous recevez un nom de domaine initial hébergé dans Azure Active Directory (AD) qui ressemble à celui-ci : **votre_domaine.onmicrosoft.com**. Dans cet exemple, **votre_domaine** est le nom de domaine que vous avez choisi lors de votre inscription, et **onmicrosoft.com** est le suffixe attribué aux comptes que vous ajoutez à votre abonnement. Si votre organisation possède un domaine personnalisé, vous pouvez configurer votre instance d’Intune de sorte qu’elle utilise ce nom de domaine à la place du domaine attribué avec votre abonnement.
 
@@ -62,6 +64,6 @@ Pour plus d’informations, consultez [À propos de votre domaine onmicrosoft.co
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

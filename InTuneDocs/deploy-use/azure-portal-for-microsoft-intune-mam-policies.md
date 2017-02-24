@@ -13,18 +13,19 @@ ms.technology:
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: fa8d839da1cf0b2d207edc0b28de8a714ba0df02
+ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
+ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
 
 ---
 
-# <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Portail Azure pour les stratégies de gestion des applications mobiles Microsoft Intune
+# <a name="azure-portal-for-intune-app-protection-policies"></a>Portail Azure pour les stratégies de protection des applications
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Le portail Azure permet de créer et de gérer des stratégies de gestion des applications mobiles (GAM) pour :
+Le portail Azure permet de créer et de gérer des stratégies de protection des applications pour :
 
 - Les applications qui s’exécutent sur des appareils **inscrits et gérés dans Intune**.
 
@@ -32,9 +33,9 @@ Le portail Azure permet de créer et de gérer des stratégies de gestion des ap
 - Les applications qui s’exécutent sur des appareils qui sont **inscrits dans une solution de gestion des appareils mobiles tierce**.
 
 >[!IMPORTANT]
-> Le portail Azure est la nouvelle console d’administration pour créer des stratégies GAM, mais vous pouvez également créer une stratégie GAM qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) pour les scénarios de gestion des appareils mobiles.
+> Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de protection des applications, mais vous pouvez également créer une stratégie de protection des applications qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) pour les scénarios de gestion des appareils mobiles.
 
-> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles disponibles. En outre, si vous créez des stratégies GAM à la fois dans la console d’administration Intune et le portail Azure, les stratégies créées dans le portail Azure remplacent celles créées dans la console d’administration Intune. Dans ce scénario, les stratégies GAM du portail Azure sont appliquées aux applications et déployées pour les utilisateurs.
+> La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de protection des applications disponibles. En outre, si vous créez des stratégies de protection des applications dans la console d’administration Intune et le portail Azure, les stratégies créées dans le portail Azure remplacent celles créées dans la console d’administration Intune. Dans ce scénario, les stratégies de protection des applications du portail Azure sont appliquées aux applications et déployées sur les utilisateurs.
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Se connecter au portail Azure et personnaliser la page de démarrage
@@ -47,11 +48,11 @@ Le portail Azure permet de créer et de gérer des stratégies de gestion des ap
 
     ![Capture d’écran du tableau de bord du portail Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Dans le menu **Parcourir**, recherchez **Intune**.
+3.  Choisissez **Plus de services** dans le menu gauche, puis tapez **Intune** dans le filtre de zone de texte.
 
     ![Capture d’écran du menu Parcourir avec Intune mis en surbrillance](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-4.  Choisissez **Intune** > **Gestion des applications mobiles Intune** > **Paramètres**.
+4.  Choisissez **Protection des applications Intune** > **Gestion des applications mobiles Intune** > **Tous les paramètres**.
 
     ![Capture d’écran du panneau Gestion des applications mobiles Intune](../media/AppManagement/MAM-Azure-Portal-2.png)
 
@@ -62,10 +63,10 @@ Le portail Azure permet de créer et de gérer des stratégies de gestion des ap
     ![Capture d’écran du tableau de bord avec la vignette Intune épinglée](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Se préparer à configurer des stratégies de gestion des applications mobiles](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Préparation à la configuration de stratégies de protection d’applications](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

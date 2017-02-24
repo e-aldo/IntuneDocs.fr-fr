@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
@@ -24,13 +25,15 @@ ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Cette rubrique explique aux administrateurs Intune comment créer des stratégies et comment publier des applications qu’ils peuvent ensuite déployer sur des appareils gérés.
+
 Avant de commencer l’inscription des applications dans Intune, vous pouvez activer les paramètres de stratégie et les applications qui seront déployées dès que ces appareils passent en gestion. Les stratégies Intune fournissent des paramètres qui vous permettent de contrôler les paramètres de sécurité des appareils mobiles, de gérer les paramètres du Pare-feu Windows et d’Endpoint Protection pour les ordinateurs, et de déployer des applications. Vous pouvez configurer la stratégie, ajouter des applications et déployer ces applications afin que les appareils reçoivent les paramètres et les applications dès leur inscription dans Intune.
 
 Les stratégies et les applications sont spécifiques à la plateforme.
 
 ## <a name="manage-device-settings"></a>Gérer les paramètres de l’appareil
 
- Les paramètres de stratégie de l’appareil sont configurés et gérés sur une base par plateforme. Vous pouvez configurer la stratégie pour les plateformes suivantes :
+ Les paramètres de stratégie de l’appareil sont configurés et gérés sur une base par plateforme. Les liens suivants fournissent les listes des paramètres disponibles pour chaque plateforme :
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android et Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -72,6 +75,6 @@ Maintenant que l’application est disponible dans Intune, vous pouvez la déplo
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Définir l’autorité de gestion des appareils mobiles | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Appareil : découvrez comment configurer l’autorité de gestion d’appareils mobiles dans Intune. "
+title: "Définir l’autorité de gestion des appareils mobiles | Intune Azure (préversion) | Microsoft Docs"
+description: "Intune Azure (préversion) : découvrez comment définir l’autorité de gestion des appareils mobiles dans Intune. "
 keywords: 
 author: staciebarker
 ms.author: stabar
@@ -14,8 +14,8 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 72a162175e278faa236add5698d65233fa851c7b
 
 ---
 
@@ -23,27 +23,27 @@ ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Le paramètre d’autorité de gestion des appareils mobiles détermine la façon dont vous gérez vos appareils. Les configurations possibles sont :
+Le paramètre d’autorité de gestion des appareils mobiles détermine la façon dont vous gérez vos appareils. Les configurations possibles sont les suivantes :
 
-- **Intune autonome** : gestion cloud uniquement, que vous configurez à l’aide du portail Azure. Inclut l’ensemble complet de fonctionnalités d’Intune.
+- **Intune autonome** : gestion cloud uniquement, que vous configurez à l’aide du portail Azure. Inclut l’ensemble complet de fonctionnalités d’Intune.
 
-- **Intune hybride** : intégration de la solution cloud Intune avec System Center Configuration Manager. Vous pouvez configurer Intune en utilisant la console Configuration Manager.
+- **Intune hybride** : intégration de la solution cloud Intune à System Center Configuration Manager. Vous configurez Intune à l’aide de la console Configuration Manager.
 
-- **Gestion des appareils mobiles pour Office 365** : intégration d’Office 365 avec la solution cloud Intune. Vous configurez Intune depuis votre centre d’administration Office 365. Comprend un sous-ensemble des fonctionnalités disponibles avec Intune autonome.
+- **Gestion des appareils mobiles pour Office 365** : intégration d’Office 365 à la solution cloud Intune. Vous configurez Intune à partir de votre Centre d’administration Office 365. Comprend un sous-ensemble des fonctionnalités disponibles avec Intune autonome.
 
 >[!IMPORTANT]
->Une fois que vous définissez l’autorité de gestion des appareils mobiles, vous devez contacter le [Support Microsoft](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) pour la modifier, par conséquent, faites votre choix avec soin.
+>Une fois l’autorité de gestion des appareils mobiles définie, vous devez contacter le [Support Microsoft](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) pour la modifier. Réfléchissez donc bien à votre choix.
 
-**Pour définir l'autorité de gestion des appareils mobiles :**
+**Pour définir l’autorité de gestion des appareils mobiles :**
 
-1. Dans le portail Azure, choisissez **Plus de services**, entrez **Intune** dans la zone de texte, puis choisissez **Autres** > **Intune**.
+1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
 
-2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis choisissez **Vue d’ensemble**.
+2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis **Vue d’ensemble**.
 
-3. Dans le panneau **Démarrer la gestion des appareils**, choisissez **Définir l’autorité MDM sur Intune**. Un message indique que vous avez défini correctement votre autorité de MDM sur Intune.
+3. Dans le panneau **Démarrer la gestion des appareils**, choisissez **Définir l’autorité MDM sur Intune**. Un message indique que vous avez défini Intune comme autorité de gestion des appareils mobiles.
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

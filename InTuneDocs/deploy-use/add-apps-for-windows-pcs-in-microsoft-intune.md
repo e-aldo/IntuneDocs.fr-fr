@@ -1,11 +1,11 @@
 ---
-title: "Ajouter des applications pour les PC Windows exécutant le logiciel client Intune | Microsoft Intune"
+title: "Ajouter des applications pour les PC Windows exécutant le logiciel client Intune | Microsoft Docs"
 description: "Cette rubrique montre comment ajouter des applications pour ordinateurs Windows à Intune avant de les déployer."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,25 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 
 
 ---
 
-# Ajouter des applications pour les PC Windows exécutant le logiciel client Intune
+# <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Ajouter des applications pour les PC Windows exécutant le logiciel client Intune
 
 Cette rubrique montre comment ajouter des applications à Intune avant de les déployer.
 
 > [!IMPORTANT]
 > Les informations de cette rubrique vous aident à ajouter des applications pour les PC Windows que vous gérez à l’aide du logiciel client Intune. Si vous souhaitez ajouter des applications pour des PC Windows inscrits et d’autres appareils mobiles, consultez [Ajouter des applications pour des appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
+Les applications que vous installez sur des PC doivent prendre en charge l’installation sans assistance (sans aucune intervention de l’utilisateur). Dans le cas contraire, l’installation échoue.
 
-## Ajouter l’application
+
+## <a name="add-the-app"></a>Ajouter l’application
 Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les propriétés de l’application et la charger vers votre espace de stockage cloud. Voici la procédure à suivre :
 
 1.  Dans la [console Administrateur Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications** &gt; **Ajouter des applications** pour démarrer l’éditeur de logiciel Intune.
@@ -40,7 +43,7 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
     - **Sélectionnez le type de fichier du programme d’installation du logiciel**. Indique le type de logiciel que vous souhaitez déployer. Pour un PC Windows, choisissez **Windows Installer**.
     - **Spécifier l’emplacement des fichiers d’installation du logiciel**. Entrez l’emplacement des fichiers d’installation ou choisissez **Parcourir** pour sélectionner l’emplacement dans la liste.
-    - **Inclure les autres fichiers et sous-dossiers du dossier**. Certains logiciels qui utilisent Windows Installer nécessitent des fichiers de prise en charge. Vous les trouverez généralement dans le même dossier que les fichiers d’installation. Sélectionnez cette option si vous souhaitez également déployer ces fichiers de prise en charge.
+    - **Inclure les autres fichiers et sous-dossiers du dossier**. Certains logiciels qui utilisent Windows Installer nécessitent des fichiers de prise en charge. Il doivent se trouver dans le même dossier que le fichier d’installation. Sélectionnez cette option si vous souhaitez également déployer ces fichiers de prise en charge.
 
     Par exemple, si vous souhaitez publier une application nommée Application.msi dans Intune, la page ressemble à ceci : ![Page d’installation du logiciel de l’éditeur](./media/publisher-for-pc.png)
 
@@ -73,7 +76,11 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
     Si l’application répond à l’une des règles que vous avez configurées, elle ne sera pas installée.
 
-6.  Pour le type de fichier **Windows Installer** uniquement (.msi et .exe) : dans la page **Arguments de ligne de commande**, indiquez si vous souhaitez fournir des arguments de ligne de commande facultatifs pour le programme d’installation. Par exemple, certains programmes d’installation peuvent prendre en charge l’argument **/q** pour effectuer une installation en mode silencieux sans intervention de l’utilisateur.
+6.  Pour le type de fichier **Windows Installer** uniquement (.msi et .exe) : dans la page **Arguments de ligne de commande**, indiquez si vous souhaitez fournir des arguments de ligne de commande facultatifs pour le programme d’installation.
+    Les paramètres suivants sont ajoutés automatiquement par Intune :
+    - **/install** pour les fichiers .exe ;
+    - **/quiet** pour les fichiers .msi.
+    Notez que ces options ne fonctionnent que si le créateur du package de l’application a activé les fonctionnalités correspondantes.
 
 7.  Pour le type de fichier **Windows Installer** uniquement (.exe uniquement) : dans la page **Codes de retour**, vous pouvez ajouter de nouveaux codes d’erreur qu’Intune interprète quand l’application est installée sur un PC Windows géré.
 
@@ -85,12 +92,14 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
 
 L’application s’affiche sur le nœud **Applications** de l’espace de travail **Applications**.
 
-## Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois l’application créée, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications avec Microsoft Intune](deploy-apps.md).
 
+Pour obtenir des conseils et des astuces à propos du déploiement de logiciels sur des PC Windows, consultez le billet de blog [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
 
 
-<!--HONumber=Oct16_HO4-->
+
+<!--HONumber=Feb17_HO3-->
 
 
