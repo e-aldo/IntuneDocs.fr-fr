@@ -1,11 +1,11 @@
 ---
 title: "Guide pratique pour inscrire un appareil Windows 8.1 ou Windows RT 8.1 | Microsoft Docs"
-description: "Découvrez comment inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune"
+description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,20 @@ ms.technology:
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: 70a7f590ba19cc672086671edfdaa5faf5f3e568
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: 8e030c7b4b4aad7793b55e274a4d022bcf098611
 
 
 ---
 
-# <a name="enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune
+# <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Guide pratique pour inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune
 
-Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, votre organisation peut sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, votre organisation peut sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 Pour inscrire un appareil Windows 8.1 ou Windows RT 8.1
@@ -67,6 +69,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jieyan
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
-ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 L’inscription de vos appareils à Microsoft Intune permet à vos appareils Windows 10 d’avoir accès aux données sécurisées de votre organisation, comme les e-mails, les fichiers et d’autres ressources. Sont à la fois concernés les appareils Windows 10 Desktop et Windows 10 Mobile. L’inscription de vos appareils permet de sécuriser cet accès pour vous et votre organisation. Elle vous permet de séparer vos données professionnelles de vos données personnelles.
 
-Vous voulez en savoir plus ? Découvrez ce qui se passe quand vous [inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et ce que cela signifie pour les [informations contenues dans votre appareil](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Vous voulez en savoir plus ? Découvrez ce qui se passe quand vous [inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et ce que cela signifie pour les [informations contenues dans votre appareil](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## <a name="windows-10-desktop-devices"></a>Appareils Windows 10 Desktop
 1.    Accédez à __Démarrer__.
@@ -56,6 +57,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

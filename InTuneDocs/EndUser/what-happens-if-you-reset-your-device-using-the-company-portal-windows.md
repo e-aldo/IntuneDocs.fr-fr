@@ -18,8 +18,8 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil Windows à l’aide du Portail d’entreprise ?
 
-Quand vous utilisez l’application Portail d’entreprise ou le [site web Portail d’entreprise](reset-your-device-cpwebsite.md) pour réinitialiser votre appareil Windows, les paramètres d’usine sont rétablis et l’ensemble des applications, des paramètres et des données, y compris vos données personnelles, sont supprimés. Ce qu’il se passe sur chaque appareil dépend du type d’appareil que vous avez et de la façon dont vous l’utilisez (comme indiqué dans le tableau suivant). Pour obtenir des instructions sur la réinitialisation de votre appareil perdu ou volé, consultez [Réinitialiser (effacer) votre appareil perdu ou volé](reset-erase-your-lost-or-stolen-device-windows.md).
+Quand vous utilisez l’application Portail d’entreprise ou le [site web Portail d’entreprise](reset-erase-your-device-cpwebsite.md) pour réinitialiser votre appareil Windows, les paramètres d’usine sont rétablis et l’ensemble des applications, des paramètres et des données, y compris vos données personnelles, sont supprimés. Ce qu’il se passe sur chaque appareil dépend du type d’appareil que vous avez et de la façon dont vous l’utilisez (comme indiqué dans le tableau suivant). Pour obtenir des instructions sur la réinitialisation de votre appareil perdu ou volé, consultez [Réinitialiser (effacer) votre appareil perdu ou volé](reset-erase-your-device-cpwebsite.md).
 
 |Configuration et gestion des appareils|Type d'appareil|
 |---------------------------------------|---------------|
@@ -39,6 +39,6 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

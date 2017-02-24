@@ -18,8 +18,8 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -38,36 +38,6 @@ Après avoir installé l’application Portail d’entreprise et inscrit votre a
 -   configurer automatiquement votre compte e-mail d’entreprise ;
 
 En inscrivant votre appareil dans Intune, vous autorisez l’administrateur informatique à gérer votre appareil pour protéger les informations de l’entreprise présentes sur l’appareil.
-
-**Ce qu’il ne peut pas voir**
-
--   Historique des appels et pages web
-
--    Emplacement
-
--   E-mails et SMS
-
--   Contacts
-
--    Mots de passe
-
--   Calendrier
-
--   Pellicule
-
-**Ce qu’il peut voir**
-
--   Modèle
-
--   Numéro de série
-
--   Système d'exploitation
-
--   Noms d'applications
-
--   Propriétaire
-
--   Nom de l'appareil
 
 Une fois votre appareil inscrit, votre administrateur informatique peut :
 
@@ -99,6 +69,6 @@ Si vous avez des questions, contactez votre administrateur informatique. Pour ob
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

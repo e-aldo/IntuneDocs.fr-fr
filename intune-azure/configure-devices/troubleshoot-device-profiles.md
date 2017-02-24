@@ -1,5 +1,6 @@
 ---
-title: "Résolution des problèmes avec les profils d’appareils dans Microsoft Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
+title: "Résoudre les problèmes de profil d’appareil dans Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Version préliminaire d&quot;Intune Azure : si vous ne savez pas comment vous y prendre, utilisez cette rubrique pour vous aider à résoudre les problèmes de profils d’appareil Intune."
 keywords: 
 author: robstackmsft
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 132c0b308031a57277c20cedd5b4ad37bfdf92e6
-ms.openlocfilehash: fe2a694d7b6135b4e8f7aaf1c863bc1685e93ea6
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 
 ---
@@ -499,6 +501,6 @@ Pour pouvoir appliquer une stratégie moins restrictive, vous devrez peut-être 
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

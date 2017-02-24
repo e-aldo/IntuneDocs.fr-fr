@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 
      -   **Les appareils doivent être joints à un domaine ou conformes.** Choisissez cette option pour exiger que les PC soient joints à un domaine ou conformes aux stratégies définies dans [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Si un PC ne remplit pas l’une de ces conditions, l’utilisateur est invité à inscrire l’appareil auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-     -   **Les appareils doivent être joints à un domaine** Choisissez cette option pour spécifier que les PC doivent être joints à un domaine pour accéder à Exchange Online. Si un PC n’est pas joint à un domaine, l’accès à la messagerie électronique est bloqué et l’utilisateur est invité à contacter l’administrateur informatique.
-
      -   **Les appareils doivent être conformes** Choisissez cette option pour spécifier que les PC doivent être inscrits auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et être conformes. Si un PC n’est pas inscrit, un message contenant des instructions sur la procédure d’inscription à suivre s’affiche.
 
 4.   Sous **Accès du navigateur à SharePoint et à OneDrive Entreprise**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs est bloqué. Les restrictions de plateforme que vous avez sélectionnées pour Accès aux applications pour OneDrive s’appliquent également ici.
@@ -200,6 +198,6 @@ Sélectionnez un groupe d’appareils mobiles. Ensuite, sous l’onglet **Appare
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
