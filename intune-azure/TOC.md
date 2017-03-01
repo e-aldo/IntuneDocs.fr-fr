@@ -5,7 +5,9 @@
 ### [S’inscrire à une évaluation gratuite](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [Nouveautés](introduction/whats-new.md)
 ## [Problèmes connus](introduction/known-issues-in-the-intune-preview.md)
-<!--- ## [Get support](introduction/get-support.md)
+## [Obtenir un support](introduction/how-to-get-support-for-microsoft-intune.md)
+<!--- 
+
 ## [Related resources](introduction/related-resources.md)
 
 ## [Get started](plan-and-design/get-started.md) --->
@@ -185,8 +187,3 @@
 ### [Outil de création de package de restrictions d’application pour Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=%2fintune-azure%2ftoc.json)
 ## [SDK d’application Intune](/intune/develop/intune-app-sdk?toc=%2fintune-azure%2ftoc.json)
 ## [API Graph Intune](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
-
-<!--HONumber=Feb17_HO2-->
-
-
