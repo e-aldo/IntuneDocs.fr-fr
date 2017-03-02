@@ -1,11 +1,11 @@
 ---
-title: "Paramètres personnalisés d’Intune pour les appareils Android | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Android."
+title: "Paramètres personnalisés d’Intune pour les appareils Android | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Android."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: 3a80a69a27b540b66fb96e098c0b0f66a0854297
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6a49a87984a465c6a656ad40122d0e64b23599fc
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-settings-for-android-devices-in-intune-azure-preview"></a>Paramètres personnalisés pour les appareils Android dans la version préliminaire d'Intune Azure
+# <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Paramètres personnalisés pour les appareils Android dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -30,7 +31,7 @@ Cette fonctionnalité est conçue pour vous permettre de déployer les paramètr
 
 ## <a name="custom-profile-settings-for-android-devices"></a>Paramètres de profil personnalisés pour les appareils Android
 
-1. Suivez les instructions figurant dans le [Guide pratique pour la configuration des paramètres d’appareils personnalisés](how-to-configure-custom-settings.md) pour commencer.
+1. Suivez les instructions figurant dans le [Guide pratique pour configurer des paramètres d’appareils personnalisés](how-to-configure-custom-settings.md) pour commencer.
 2. Dans le panneau **Créer un profil**, choisissez **Paramètres** pour ajouter un ou plusieurs paramètres OMA-URI.
 3. Sur le panneau **Modifier une ligne**, configurez les valeurs suivantes pour chaque paramètre :
     - **Nom** : affectez un nom unique au paramètre OMA-URI pour vous aider à l'identifier dans la liste des paramètres.
@@ -39,9 +40,4 @@ Cette fonctionnalité est conçue pour vous permettre de déployer les paramètr
     - **OMA-URI** : spécifiez l'identificateur OMA-URI pour lequel vous souhaitez fournir un paramètre.
     - **Valeur** : entrez la valeur à associer à l’identificateur OMA-URI que vous avez entré.
 4. Cliquez sur **OK** lorsque vous avez terminé, puis continuez à ajouter d’autres paramètres si nécessaire.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

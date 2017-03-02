@@ -14,8 +14,9 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -31,7 +32,7 @@ Pour gérer les appareils iOS d’entreprise avec le programme d’inscription d
 > Lisez cette note uniquement si vous êtes un client qui a été migré de la console d’administration Intune vers le portail Azure. Si vous avez supprimé un jeton DEP Apple de la console d’administration Intune pendant la période de migration, il est possible que le jeton DEP ait été restauré dans votre compte Intune. Dans ce cas, supprimez simplement le jeton DEP à partir du portail Azure. 
 
 **Pour obtenir le certificat DEP Apple**</br>
-Dans le portail Azure, choisissez **Plus de services**, entrez **Intune** dans la zone de texte, puis choisissez **Autres** > **Intune**. Dans le panneau Intune, choisissez **Inscrire des appareils** > **Jeton DEP Apple**, puis suivez les étapes numérotées dans le portail Azure, qui sont présentées ci-dessous.
+Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**. Dans le panneau Intune, choisissez **Inscrire des appareils** > **Jeton DEP Apple**, puis suivez les étapes numérotées dans le portail Azure, qui sont présentées ci-dessous.
 
 **Étape 1. Téléchargez un certificat de clé publique Intune nécessaire à la création d’un jeton DEP Apple.**<br>
 Sélectionnez **Télécharger votre clé publique** pour télécharger et enregistrer le fichier de clé de chiffrement (.pem) en local. Le fichier .pem est utilisé pour demander un certificat de relation d'approbation à partir du portail du programme d'inscription d'appareils d'Apple.
@@ -53,9 +54,4 @@ Sélectionnez [Créer un jeton DEP via les programmes de déploiement Apple](htt
 
 **Étape 4 :. Accédez à votre jeton DEP Apple à télécharger. Intune se synchronise automatiquement avec votre compte DEP.**<br>
 Accédez au fichier du certificat (.pem), choisissez **Ouvrir**, puis **Télécharger**. Avec le certificat Push, Intune peut inscrire et gérer des appareils iOS en envoyant la stratégie aux appareils mobiles inscrits.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

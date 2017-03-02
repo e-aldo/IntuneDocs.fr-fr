@@ -1,11 +1,11 @@
 ---
-title: "Stratégie Intune autorisant/bloquant des apps pour Samsung KNOX | Intune Azure en version préliminaire | Microsoft Docs"
-description: "Intune Azure en version préliminaire : Créer un profil personnalisé pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard."
+title: "Stratégie Intune autorisant/bloquant des applications pour Samsung KNOX | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Créez un profil personnalisé pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c2b49fb985290b2806e172543f95db21727c113e
-ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-intune-azure-preview"></a>Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard dans la version préliminaire d’Intune Azure
-[!INCLUDE[azure_preview](../includes/azure_preview.md)] Appliquez les procédures de cette rubrique pour créer une stratégie personnalisée Microsoft Intune qui crée l’un des éléments suivants Intune Azure en version préliminaire :
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard dans Microsoft Intune
+[!INCLUDE[azure_preview](../includes/azure_preview.md)] Appliquez les procédures de cette rubrique pour créer une stratégie personnalisée Microsoft Intune qui crée l’un des éléments suivants Intune Azure en préversion :
 
 - Une liste d’applications qui sont bloquées sur l’appareil. Les applications figurant dans cette liste ne peuvent pas s’exécuter, même si elles étaient déjà installées quand la stratégie a été appliquée.
 - Une liste d’applications que les utilisateurs de l’appareil sont autorisés à installer à partir du magasin Google Play. Seules les applications figurant dans la liste peuvent être installées. Aucune autre application ne peut être installée à partir de ce magasin.
@@ -45,9 +46,9 @@ Ces paramètres peuvent uniquement être utilisés par les appareils qui exécut
 
 - **Nom** - Entrez **PreventStartPackages**.
 - **Description** - Entrez une description facultative, comme « Liste des applications dont l’exécution est bloquée ».
--   **Type de données** - Dans la liste déroulante, choisissez **Chaîne**.
--   **OMA-URI** - Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
--   **Valeur** - Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
+-     **Type de données** - Dans la liste déroulante, choisissez **Chaîne**.
+-     **OMA-URI** - Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+-     **Valeur** - Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>Pour obtenir la liste des applications que les utilisateurs sont autorisés à installer à partir du Google Play Store tout en excluant toutes les autres applications :
 - **Nom** - Entrez **AllowInstallPackages**.
@@ -65,9 +66,4 @@ La prochaine fois que chaque appareil ciblé se connectera, les paramètres d’
 
 
 <!---## Assign the custom profile--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

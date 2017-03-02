@@ -1,11 +1,12 @@
 ---
-title: "Guide pratique pour la configuration de certificats avec Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment utiliser Intune pour créer et attribuer des certificats qui vous aident à sécuriser les connexions Wi-Fi, VPN et autres."
+title: Guide pratique pour configurer des certificats avec Intune
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour créer et attribuer des certificats qui vous aident à sécuriser les connexions Wi-Fi, VPN et autres."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>Guide pratique pour la configuration de certificats avec la version préliminaire d’Intune Azure
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>Guide pratique pour configurer des certificats dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ Quand vous donnez un accès à des utilisateurs aux ressources d’entreprise pa
 
     Vous pouvez seulement utiliser un profil de certificat SCEP avec ces plateformes :
 
--   macOS 10.9 et versions ultérieures
--   Windows Phone 8.1 et versions ultérieures
+-     macOS 10.9 et versions ultérieures
+-     Windows Phone 8.1 et versions ultérieures
 
 Vous devez créer un profil distinct pour chaque plateforme d’appareil. Quand vous créez le profil, associez-le au profil de certificat racine approuvé que vous avez déjà créé.
 
@@ -96,7 +99,7 @@ Vous devez créer un profil de certificat approuvé pour pouvoir créer un profi
 8. Lorsque vous avez terminé, cliquez sur **OK**, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
-Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](how-to-assign-device-profiles.md).
+Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareils](how-to-assign-device-profiles.md).
 
 
 > [!Note]
@@ -195,10 +198,5 @@ Considérez les éléments suivants avant d’attribuer des profils de certifica
 - Même si vous déployez chaque profil séparément, vous devez également déployer l’autorité de certification racine approuvée et le profil SCEP ou PKCS. Dans le cas contraire, la stratégie de certificat SCEP ou PKCS échoue.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations générales sur la façon d’attribuer des profils d’appareils, consultez [Guide pratique pour l’attribution de profils d’appareils](how-to-assign-device-profiles.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+Pour plus d’informations générales sur la façon d’attribuer des profils d’appareils, consultez [Guide pratique pour attribuer des profils d’appareils](how-to-assign-device-profiles.md).
 

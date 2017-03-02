@@ -1,11 +1,11 @@
 ---
-title: "Guide pratique d’ajout d’applications métier iOS à Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : en savoir plus sur l’ajout des applications métier iOS à Intune."
+title: "Guide pratique pour ajouter des applications métier iOS à Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : en savoir plus sur l’ajout des applications métier iOS à Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: d8615611eb715da66b1cf0972b885fbccb12fe6a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6d41adabfab178daa7f6fce3d86bc8216bf4ab29
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-ios-line-of-business-lob-apps-to-intune"></a>Guide pratique d’ajout d’applications métier (LOB) iOS à Intune
+# <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier iOS à Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: d8615611eb715da66b1cf0972b885fbccb12fe6a
 ## <a name="step-1---specify-the-software-setup-file"></a>Étape 1 : spécifier le fichier d’installation de logiciel
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Analyse + Gestion** > **Intune**.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau Intune, choisissez **Gérer les applications**.
 4. Dans la charge de travail **Mobile Apps**, cliquez sur Gérer > **Applications**.
 5. Au-dessus de la liste des applications, choisissez **Ajouter**.
@@ -52,9 +53,4 @@ ms.openlocfilehash: d8615611eb715da66b1cf0972b885fbccb12fe6a
     - **Télécharger icône** : téléchargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 2. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
 
-L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique d’affectation d’applications à des groupes](/intune-azure/manage-apps/deploy-apps).
-
-
-<!--HONumber=Feb17_HO1-->
-
-
+L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](/intune-azure/manage-apps/deploy-apps).

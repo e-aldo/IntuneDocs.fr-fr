@@ -1,11 +1,11 @@
 ---
-title: "Paramètres de messagerie Intune pour les appareils Android | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : en savoir plus sur les paramètres Intune que vous pouvez utiliser pour configurer les connexions à la messagerie sur les appareils Android."
+title: "Paramètres de messagerie Intune pour les appareils Android | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez les paramètres Intune que vous pouvez utiliser pour configurer les connexions à la messagerie sur les appareils Android."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: 38858170e50add07f41138848e49e97bde8ac1b2
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 29a4346a04470192553ad2d4f0962a2a21d637ec
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="email-profile-settings-for-android-devices-in-intune-azure-preview"></a>Paramètres de profil de messagerie pour les appareils Android dans la version préliminaire d’Intune Azure
+# <a name="email-profile-settings-for-android-devices-in-microsoft-intune"></a>Paramètres de profil de messagerie pour les appareils Android dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -50,9 +51,4 @@ ms.openlocfilehash: 38858170e50add07f41138848e49e97bde8ac1b2
     - **Contacts**
     - **Calendrier**
     - **Tâches**
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

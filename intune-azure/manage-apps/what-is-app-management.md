@@ -1,11 +1,11 @@
 ---
-title: "Qu’est-ce que la gestion des applications | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : utilisez cette rubrique pour apprendre les notions de gestion des applications avec Microsoft Intune"
+title: "Qu’est-ce que la gestion des applications | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Utilisez cette rubrique pour apprendre les notions de gestion des applications avec Microsoft Intune"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 33bc87d16834cb2950cc7c66ad4887dddb12e811
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d3be47257556e8bfa331cebf68baa43524690d1a
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-is-app-management"></a>Qu’est-ce que la gestion des applications ?
+# <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -64,7 +65,7 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 Vous trouverez la plupart des éléments liés à l’application dans la charge de travail **Mobile Apps**, à laquelle vous pouvez accéder comme suit :
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Analyse + Gestion** > **Intune**.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
 
     ![La charge de travail Mobile Apps](./media/apps-workload.png)
@@ -97,9 +98,4 @@ Pour plus d’informations, consultez [Surveiller des applications](monitor-apps
     - [Applications achetées en volume à partir du Windows Store pour Entreprises](wsfb-apps.md)
 - **Personnalisation du portail d’entreprise** : personnalisez le portail d’entreprise pour lui donner une image proche de votre société. 
     - [Configuration du portail d’entreprise](company-portal-app.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

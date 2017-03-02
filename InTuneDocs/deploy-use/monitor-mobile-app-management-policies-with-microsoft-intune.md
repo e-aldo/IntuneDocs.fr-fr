@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Analyser les stratégies de gestion des applications mobiles à l’aide de Microsoft Intune
-Vous pouvez surveiller l’état de conformité des stratégies de gestion des applications mobiles (MAM) que vous avez appliquées aux utilisateurs. Vous pouvez y trouver des informations sur les utilisateurs concernés par les stratégies GAM, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Surveiller les stratégies de protection des applications avec Microsoft Intune
+Vous pouvez surveiller l’état de conformité des stratégies de protection des applications que vous avez appliquées aux utilisateurs. Vous pouvez trouver des informations sur les utilisateurs concernés par les stratégies de protection des applications, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
 
 Vous pouvez surveiller l’état de conformité à trois endroits différents :
 
@@ -59,7 +61,7 @@ Vous pouvez accéder à la vue détaillée du résumé en choisissant les vignet
 Vous pouvez rechercher un utilisateur et vérifier son état de conformité. Le panneau **Rapport d’application** montre les informations suivantes sur un utilisateur sélectionné :
 - Les appareils associés au compte d’utilisateur
 
-- Applications avec une stratégie GAM sur l’appareil
+- Applications avec une stratégie de protection des applications sur l’appareil
 
 - État :
 
@@ -68,7 +70,7 @@ Vous pouvez rechercher un utilisateur et vérifier son état de conformité. Le 
   - **Non activé** : la stratégie a été déployée pour l’utilisateur, mais l’application n’a pas été utilisée au moins une fois dans le contexte professionnel depuis.
 
 >[!NOTE]
-> Si la stratégie de gestion des applications mobiles n’est pas déployée sur l’utilisateur que vous recherchez, un message vous informe que l’utilisateur n’est ciblé par aucune des stratégies GAM.
+> Si la stratégie de protection des applications n’est pas déployée sur l’utilisateur que vous recherchez, un message vous informe que l’utilisateur n’est ciblé par aucune des stratégies de protection des applications.
 
 Pour afficher le rapport d’un utilisateur, procédez comme suit :
 
@@ -87,7 +89,7 @@ La vue détaillée montre le message d’erreur, l’application à laquelle l�
 
 ## <a name="reporting-view"></a>Vue Rapports
 
-Vous trouverez les mêmes rapports dans la vue détaillée, plus d’autres rapports qui vous aideront pour l’état de conformité de la stratégie GAM :
+Vous trouverez les mêmes rapports dans la vue détaillée, plus d’autres rapports qui vous aideront pour l’état de conformité de la stratégie de protection des applications :
 
 ![Capture d’écran 4](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ Vous trouverez les mêmes rapports dans la vue détaillée, plus d’autres rapp
 
     -   État de l’utilisateur pour l’activité GAM gérée (protégé) : ce rapport présente l’activité de chaque application GAM gérée, par utilisateur.
 
-        -   Il affiche toutes les applications ciblées par les stratégies GAM de chaque utilisateur et détaille l’état de chaque application enregistrée dans les stratégies GAM ou ciblée par une stratégie GAM mais jamais enregistrée.
+        -   Il affiche toutes les applications ciblées par les stratégies de protection des applications de chaque utilisateur et détaille l’état de chaque application enregistrée dans les stratégies de protection des applications ou ciblée par une stratégie de protection des applications mais jamais enregistrée.
 <br></br>
     -   État de l’utilisateur pour l’activité GAM non gérée (non protégé) : ce rapport présente l’activité des applications compatibles avec GAM qui ne sont actuellement pas gérées, par utilisateur. Cela peut se produire pour les raisons suivantes :
 
-        -   Ces applications sont utilisées par un utilisateur ou une application qui n’est actuellement pas ciblée par une stratégie GAM.
+        -   Ces applications sont utilisées par un utilisateur ou une application qui n’est actuellement pas ciblée par une stratégie de protection des applications.
 
-        -   Toutes les applications sont enregistrées, mais ne reçoivent aucune stratégie GAM.
+        -   Toutes les applications sont enregistrées, mais ne reçoivent aucune stratégie de protection des applications.
 
 ![Capture d’écran 2](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ Suivez ces étapes pour générer le rapport de protection des applications :
 ## <a name="see-also"></a>Voir aussi
 [Gérer les transferts de données entre applications iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Ce qui se passe quand votre application Android est gérée par des stratégies GAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Ce qui se passe quand votre application iOS est gérée par des stratégies GAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

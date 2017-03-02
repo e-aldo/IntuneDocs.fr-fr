@@ -3,9 +3,9 @@ title: "Ajout d’identificateurs IMEI à Intune | Version préliminaire d’Int
 description: "Version préliminaire d’Intune Azure : découvrez comment ajouter des identificateurs d’entreprise (numéros IMEI) à Microsoft Intune. "
 keywords: 
 author: staciebarker
-ms.author: stabark
+ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: e134a6e3ff143dacce1d70ef0ab44ade0722ed57
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8667f063de65fd5fa86149ac124b236a432eecef
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -34,7 +35,7 @@ Dans un éditeur de texte, la liste .csv ressemble à ceci :
 
 **Pour ajouter une liste .csv d’identificateurs d’entreprise**
 
-1. Dans le portail Azure, choisissez **Plus de services**, entrez **Intune** dans la zone de texte, puis choisissez **Autres** > **Intune**.
+1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
 
 2. Dans le panneau Intune, choisissez **inscrire des appareils**, puis choisissez **Identificateurs d’appareil d’entreprise**.
 
@@ -44,12 +45,9 @@ Dans un éditeur de texte, la liste .csv ressemble à ceci :
 
 **Pour supprimer une liste .csv d’identificateurs d’entreprise**
 
-1. Dans le panneau Intune, choisissez **inscrire des appareils**, puis choisissez **Identificateurs d’appareil d’entreprise**.
+1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
 
-2. Choisissez **Supprimer**.
+2. Dans le panneau Intune, choisissez **inscrire des appareils**, puis choisissez **Identificateurs d’appareil d’entreprise**.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+3. Choisissez **Supprimer**.
 

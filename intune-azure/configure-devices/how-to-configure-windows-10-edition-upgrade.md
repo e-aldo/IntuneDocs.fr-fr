@@ -1,11 +1,11 @@
 ---
-title: "Configuration des mises à niveau vers l’édition Windows 10 avec Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : apprenez à utiliser Intune pour mettre à niveau les appareils Windows 10 que vous gérez."
+title: "Configurer des mises à niveau vers l’édition Windows 10 avec Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Apprenez à utiliser Intune pour mettre à niveau les appareils Windows 10 que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 9ce16ea61da87aa5087fafeb5c1eaf743fef4a14
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 49da713cfe61ce21501e0a8e0f6e0c225b2bc291
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-windows-10-edition-upgrades"></a>Guide pratique de configuration des mises à niveau Windows 10 
+# <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Guide pratique pour configurer des mises à niveau de l’édition Windows 10 dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -32,9 +33,9 @@ Utilisez les informations de cette rubrique pour découvrir comment configurer u
 
 Les chemins de mise à niveau pris en charge sont les suivants :
 
-- De Windows 10 Professionnel vers Windows 10 Entreprise
-- De Windows 10 Famille vers Windows 10 Éducation
-- De Windows 10 Mobile vers Windows 10 Mobile Entreprise
+- De Windows 10 Professionnel vers Windows 10 Entreprise
+- De Windows 10 Famille vers Windows 10 Éducation
+- De Windows 10 Mobile vers Windows 10 Mobile Entreprise
 - De Windows 10 Holographique Professionnel vers Windows 10 Holographique Entreprise
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -60,12 +61,7 @@ Avant de commencer à mettre à niveau des appareils vers la dernière version, 
     - **Fichier de licence** : choisissez **Parcourir** pour sélectionner le fichier de licence que vous avez obtenu auprès de Microsoft contenant les informations de licence pour la version de Windows Holographique ou Windows 10 Mobile que vous souhaitez mettre à niveau sur les appareils ciblés.
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
-Le profil est créé et s’affiche dans le volet de la liste des profils.
-Si vous souhaitez continuer et affecter ce profil à des groupes, consultez [Guide pratique d’affectation des profils d'appareil](how-to-assign-device-profiles.md).
-
-
-
-
-<!--HONumber=Feb17_HO1-->
+Le profil est créé et s’affiche dans le panneau de la liste des profils.
+Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](how-to-assign-device-profiles.md).
 
 

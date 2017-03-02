@@ -2,10 +2,10 @@
 title: "Qu’est-ce que la charge de travail Gestion des utilisateurs ? | Version préliminaire d’Intune Azure | Microsoft Docs"
 description: "Version préliminaire d’Intune Azure : découvrez comment afficher et gérer les utilisateurs à l’aide de Microsoft Intune et Azure."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/18/2017
+ms.date: 02/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: d778e7d1dee49da4155b109692b80b23489f0ae8
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: 9c9a10dc47dc6a8fc38ac197230c3c131d5aff03
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,12 +25,13 @@ ms.openlocfilehash: d778e7d1dee49da4155b109692b80b23489f0ae8
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Si vous débutez avec Intune dans le portail Azure, n’oubliez pas que vous ne créez plus de groupes propres à Intune. Intune utilise les groupes Azure AD de la même façon que de nombreuses autres applications que vous utilisez.
-Pour savoir comment utiliser les groupes de sécurité Azure AD, consultez [Gestion de l’accès aux ressources avec les groupes Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups).
+Si vous débutez avec Intune dans le portail Azure, gardez à l’esprit que vous ne créez plus de groupes pour Intune. Intune utilise les groupes Azure AD de la même façon que de nombreuses autres applications que vous utilisez.
 
-Lorsque vous choisissez **Gérer les utilisateurs**, vous accédez à la charge de travail Utilisateurs et groupes Microsoft Azure, où vous pouvez effectuer les actions suivantes :
+Pour en savoir plus sur l’utilisation des groupes dans Azure AD, consultez [Gestion de l’accès aux ressources avec les groupes Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups).
 
-1. Consulter des informations générales sur les utilisateurs et les groupes que vous gérez.
+Pour gérer des groupes dans le [portail Azure](https://portal.azure.com), recherchez **Intune**, choisissez **Gérer les utilisateurs** et vous accédez à la charge de travail **Utilisateurs et groupes** où vous pouvez effectuer les actions suivantes :
+
+1. Consultez des informations **générales** sur les utilisateurs et les groupes que vous gérez.
 2. Voir des informations sur tous les utilisateurs que vous gérez avec Azure.
 3. Créez des groupes d’utilisateurs et d’appareils.
 4. Afficher l’activité d’audit pour les actions de groupe.
@@ -40,9 +42,4 @@ Lorsque vous choisissez **Gérer les utilisateurs**, vous accédez à la charge 
 ## <a name="next-step"></a>Étape suivante
 
 [Prise en main des groupes](/intune-azure/manage-users/get-started-with-groups)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

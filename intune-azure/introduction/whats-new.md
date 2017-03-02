@@ -1,11 +1,11 @@
 ---
-title: "Quelles sont les nouveautés dans la version préliminaire de Microsoft Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : découvrez les nouveautés de la version préliminaire d’Intune Azure"
+title: "Quelles sont les nouveautés de la préversion de Microsoft Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Découvrez les nouveautés de la préversion d’Intune Azure"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,28 +14,40 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e405363f9d0a89b1589b01d18ee8d2861b07ec60
-ms.openlocfilehash: 70007f5501fba37964a0a54807c0e0f565510a74
-
+ms.sourcegitcommit: 9852fdb9d1bfeede4931f0ead2fa0898dfcacb0b
+ms.openlocfilehash: a05c7464b3f2fbca467d44218904671529320dda
+ms.lasthandoff: 02/15/2017
 
 ---
 
-# <a name="whats-new-in-the-microsoft-intune-preview"></a>Nouveautés de la version préliminaire de Microsoft Intune
-
+# <a name="whats-new-in-the-microsoft-intune-preview"></a>Nouveautés de la préversion de Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-
 Nous partagerons ici les avancées faites avec la version préliminaire et les fonctionnalités ajoutées.
 
-<!--## February 2017-->
+## <a name="february-2017"></a>Février 2017
 
-<!--### Custom app categories <!--748805
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+### <a name="ability-to-restrict-mobile-device-enrollment---747600-795782--"></a>Possibilité de limiter l’inscription des appareils mobiles <!--747600, 795782-->
+Intune ajoute de nouvelles restrictions d’inscription qui contrôlent les plateformes d’appareils mobiles autorisées à être inscrites. Intune sépare les plateformes d’appareils mobiles comme iOS, MacOS, Android, Windows et Windows Mobile.
 
-<!--### Display device categories <!--814654
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+* La restriction de l’inscription d’appareils mobiles ne limite pas l’inscription des clients de PC.  
+* Pour iOS et Android uniquement, il existe une option supplémentaire pour bloquer l’inscription des appareils personnels.
+
+Intune marque tous les nouveaux appareils comme personnels, sauf si l’administrateur prend des mesures pour les marquer comme appareils d’entreprise, comme expliqué dans [cet article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+### <a name="view-all-actions-on-managed-devices---677150--"></a>Afficher toutes les actions sur les appareils gérés <!--677150-->
+Un nouveau rapport __Actions de l’appareil__ indique l’utilisateur qui a effectué des actions à distance, comme un rétablissement des paramètres d’usine sur les appareils, et montre également l’état de cette action. Consultez [Qu’est-ce que la gestion des appareils ?](https://docs.microsoft.com/intune-azure/manage-devices/what-is).
+
+### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Les appareils non gérés peuvent accéder aux applications attribuées <!--664691-->
+Dans le cadre des modifications conceptuelles du site web du portail d’entreprise, les utilisateurs iOS et Android peuvent installer les applications attribuées indiquées comme « disponibles sans inscription » sur leurs appareils non gérés. À l’aide de leurs informations d’identification Intune, les utilisateurs peuvent se connecter au site web du portail d’entreprise et afficher la liste des applications qui leur sont attribuées. Les packages des applications « disponibles sans inscription » peuvent être téléchargés sur le site web du portail d’entreprise. Les applications dont l’installation nécessite une inscription ne sont pas affectées par cette modification, car les utilisateurs sont invités à inscrire leur appareil s’ils souhaitent installer ces applications.
+
+### <a name="custom-app-categories---748805--"></a>Catégories d’applications personnalisées <!--748805-->
+Vous pouvez désormais créer, modifier et attribuer des catégories pour les applications que vous ajoutez à Intune. Actuellement, les catégories ne peuvent être spécifiées qu'en anglais.
+Consultez [Guide pratique pour ajouter une application à Intune](/intune-azure/manage-apps/add-apps).
+
+### <a name="display-device-categories---814654--"></a>Afficher des catégories d’appareils <!--814654-->
+Vous pouvez maintenant afficher la catégorie d’appareil sous forme de colonne dans la liste des appareils. Vous pouvez également modifier la catégorie dans la section des propriétés du panneau Propriétés de l’appareil. Consultez [Guide pratique pour ajouter une application à Intune](/intune-azure/manage-apps/add-apps). 
 
 ## <a name="january-2017"></a>Janvier 2017
 
@@ -71,7 +83,7 @@ Le portail Azure ne prend pas en charge l’analyse ligne par ligne des identifi
 #### <a name="how-this-affects-you"></a>Comment cela vous affecte
 Dans le portail Azure, vous ne serez pas en mesure de choisir, ligne par ligne, les appareils International Mobile Equipment Identity (IMEI) à mettre à jour. La console Intune classique continuera à prendre en charge cette fonctionnalité.
 
-#### <a name="how-to-get-ready-for-this-change"></a>Guide pratique de préparation à cette modification
+#### <a name="how-to-get-ready-for-this-change"></a>Comment se préparer à cette modification
 Nous fournissons ces informations à l’avance. Ainsi, si elles vous concernent, vous pouvez informer vos administrateurs de cette modification. Cette modification coïncide avec la migration vers le portail Azure, attendu pour la première moitié de 2017.
 
 
@@ -81,11 +93,6 @@ Le portail Azure ne prend pas en charge le profil d’inscription d’appareil d
 #### <a name="how-this-affects-you"></a>Comment cela vous affecte
 Dans le portail Azure, vous ne serez pas en mesure de définir une stratégie de profil par défaut sur tous les appareils Apple. La console Intune classique continuera à prendre en charge cette fonctionnalité.
 
-#### <a name="how-to-get-ready-for-this-change"></a>Guide pratique de préparation à cette modification
+#### <a name="how-to-get-ready-for-this-change"></a>Comment se préparer à cette modification
 Nous fournissons ces informations à l’avance. Ainsi, si elles vous concernent, vous pouvez informer vos administrateurs de cette modification. Cela coïncide avec la migration vers le portail Azure, attendue pour la première moitié de 2017.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

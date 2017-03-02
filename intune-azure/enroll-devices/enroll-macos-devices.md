@@ -1,11 +1,11 @@
 ---
-title: "Inscrire des appareils macOS dans Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment inscrire des appareils macOS dans la version préliminaire d’Intune Azure."
+title: "Inscrire des appareils macOS dans Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment inscrire des appareils macOS dans la préversion d’Intune Azure."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 1/3/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,18 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba2affcdbcdfcd690d671c7b20f9d1e14a74f764
-ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: f217988313debd33bcba3f8168aa03b6dbf8586e
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="enroll-macos-devices-in-intune-azure-preview"></a>Inscrire des appareils macOS dans la version préliminaire d’Intune Azure
+# <a name="enroll-macos-devices-in-intune-azure-preview"></a>Inscrire des appareils macOS dans la préversion d’Intune Azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-En tant qu’administrateur Intune, vous pouvez gérer les appareils macOS. Par défaut, le portail Azure permet aux utilisateurs d’inscrire leurs appareils macOS. Il vous suffit d’indiquer à vos utilisateurs d’accéder au [site web Portail d’entreprise](http://portal.manage.microsoft.com) et d’inscrire leur appareil macOS. 
+Intune vous permet de gérer les appareils Mac OS. Pour activer la gestion des appareils, vos utilisateurs doivent inscrire leurs appareils en accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com), puis en suivant les invites. Une fois que les appareils Mac OS sont gérés, vous pouvez [créer des paramètres personnalisés pour les appareils Mac OS](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). D’autres fonctionnalités seront bientôt disponibles.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -39,20 +40,17 @@ Avant de configurer l’inscription des appareils macOS, effectuez les préparat
 
 ## <a name="set-up-macos-enrollment"></a>Configurer l’inscription macOS
 
-Par défaut, Intune est déjà configuré pour autoriser l’inscription des appareils macOS. 
+Par défaut, Intune autorise déjà l’inscription des appareils Mac OS. 
 
-Pour afficher le paramètre permettant d’autoriser ou de bloquer l’inscription d’appareils macOS, accédez au panneau Intune dans le portail Azure, puis choisissez **Inscription** > **Restrictions d’inscription**. 
+Pour empêcher l’inscription des appareils Mac OS, consultez [Définir des restrictions de type d’appareil](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
+
+Pour définir le nombre maximal d’appareils qu’un utilisateur peut inscrire, consultez [Définir des restrictions de limite d’appareil](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise
 
-Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire votre appareil macOS dans Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
+Vous devez indiquer à vos utilisateurs finaux d’accéder au [site web Portail d’entreprise](http://portal.manage.microsoft.com) et de suivre les invites pour inscrire leurs appareils. Vous pouvez également leur envoyer un lien vers les étapes d’inscription en ligne : [Inscrire votre appareil Mac OS dans Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). 
 
 Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
 
 - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [Utilisation de votre appareil iOS ou MacOS avec Intune](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

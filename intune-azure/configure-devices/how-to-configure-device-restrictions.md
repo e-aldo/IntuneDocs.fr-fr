@@ -1,11 +1,11 @@
 ---
-title: "Configurer les paramètres de restriction de l’appareil Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment utiliser Intune pour configurer des paramètres et des fonctionnalités sur les appareils que vous gérez."
+title: "Configurer les paramètres de restriction de l’appareil Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour configurer des paramètres et des fonctionnalités sur les appareils que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67e3481f9cf01bd1b298cfb26f25d1a3205e0f29
-ms.openlocfilehash: 0c22d8a85d90139b3ac17c54668890d5b4c0afe6
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: c6293e9c669266203705a8fe06c323869dc7881f
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-device-restriction-settings-in-intune-azure-preview"></a>Comment configurer les paramètres de restriction de l’appareil dans la version préliminaire d’Intune Azure
+# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de restriction d’appareils dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -62,10 +63,5 @@ Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Gu
 Dans cet exemple de haut niveau, vous allez créer une stratégie de restriction de l’appareil qui bloque l’utilisation de l’application d’appareil photo intégrée sur les appareils Android.
 
 ![Comment désactiver l’appareil photo sur les appareils Android](./media/disable-android-camera.png)
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

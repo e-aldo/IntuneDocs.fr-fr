@@ -19,21 +19,16 @@ L’inscription automatique permet aux utilisateurs d’inscrire des PC Windows�
 
 4. Sélectionnez **Configurer** pour démarrer la configuration de l’inscription automatique de la gestion des appareils mobiles auprès de Microsoft Intune.
 
-5. Spécifiez les URL pour Intune :
+5. Utilisez les valeurs par défaut pour les URL suivantes :
 
-  - **URL d’inscription MDM** – Utilisez la valeur par défaut.
-  - **URL des conditions d’utilisation de GAM** – Utilisez la valeur par défaut. Cette URL affiche les conditions d’utilisation applicables aux utilisateurs quand ils inscrivent des appareils.
-  - **URL de conformité GAM** – Utilisez la valeur par défaut. Si un appareil n’est pas conforme, un message **Accès refusé** s’affiche avec cette URL. L’URL pointe vers une page qui permet aux utilisateurs de comprendre pourquoi leur appareil n’est pas conforme à la stratégie et comment ils peuvent y remédier.
+  - **Inscription MDM**
+  - **Conditions d’utilisation de MDM** 
+  - **Conformité MDM**
 
-6.  Spécifiez les appareils d’utilisateurs qui doivent être gérés par Microsoft Intune. Les appareils Windows 10 de ces utilisateurs sont automatiquement inscrits à la gestion avec Microsoft Intune.
+6.  Spécifiez les appareils des utilisateurs qui doivent être gérés par Microsoft Intune. Les appareils Windows 10 de ces utilisateurs sont automatiquement inscrits à la gestion avec Microsoft Intune.
 
   - **Tous**
   - **Groupes**
   - **Aucun**
 
 7. Choisissez **Enregistrer**.
-
-
-<!--HONumber=Feb17_HO2-->
-
-

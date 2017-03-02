@@ -1,11 +1,11 @@
 ---
-title: "Guide pratique pour la configuration des paramètres VPN Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment utiliser Intune pour configurer des connexions VPN sur les appareils que vous gérez."
+title: "Guide pratique pour configurer des paramètres VPN Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour configurer des connexions VPN sur les appareils que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 6ec26a2d3e0566a5c96e39d2b7e37fdad8a3780b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: ff05d9ed7bae2742de8dbbe908f2c92d2459a7f4
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-vpn-settings"></a>Guide pratique pour la configuration des paramètres VPN 
+# <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres VPN dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -80,7 +81,7 @@ Découvrez comment créer des profils VPN personnalisés à l’aide des paramè
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
-Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](how-to-assign-device-profiles.md).
+Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareils](how-to-assign-device-profiles.md).
 
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Méthodes de sécurisation des profils VPN
@@ -91,14 +92,9 @@ Les profils VPN peuvent utiliser différents types de connexion et protocole de 
 
 Quand vous créez le profil VPN, vous choisissez un profil de certificat SCEP ou PKCS que vous avez créé précédemment dans Intune. Il s’agit du certificat d’identité. Il est utilisé pour effectuer une authentification auprès d’un profil de certificat approuvé (ou *certificat racine*) que vous avez créé pour établir que l’utilisateur est autorisé à se connecter. Le certificat approuvé est déployé sur l'ordinateur qui authentifie la connexion VPN, en règle générale le serveur VPN.
 
-Pour plus d’informations sur la création et l’utilisation des profils de certificat dans Intune, consultez [Guide pratique pour la configuration de certificats avec Microsoft Intune](how-to-configure-certificates.md).
+Pour plus d’informations sur la création et l’utilisation des profils de certificat dans Intune, consultez [Guide pratique pour configurer des certificats avec Microsoft Intune](how-to-configure-certificates.md).
 
 ### <a name="user-name-and-password"></a>Nom d'utilisateur et mot de passe
 
 L’utilisateur s’authentifie auprès du serveur VPN en fournissant un nom d’utilisateur et un mot de passe.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

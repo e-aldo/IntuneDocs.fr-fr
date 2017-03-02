@@ -1,11 +1,11 @@
 ---
-title: "Paramètres VPN d’Intune pour les appareils Windows 8.1 | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : en savoir plus sur les paramètres Windows Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils Windows 8.1."
+title: "Paramètres VPN Intune pour les appareils Windows 8.1 | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez les paramètres Windows Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils Windows 8.1."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 31a7779537062a63fac1fb512a7cf4b9033368f7
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-81-devices-in-intune-azure-preview"></a>Paramètres VPN pour les appareils Windows 8.1 dans la version préliminaire d'Intune Azure
+# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils Windows 8.1 dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -93,9 +94,4 @@ Pour plus d’informations sur l’écriture des commandes XML personnalisées, 
     - **Adresse** : saisissez l’adresse du serveur proxy (comme une adresse IP).
     - **Numéro de port** : saisissez le numéro de port associé au serveur proxy.
 - **Contourner le proxy pour les adresses locales** : si votre serveur VPN nécessite un serveur proxy pour la connexion, sélectionnez cette option si vous ne souhaitez pas utiliser le serveur proxy pour les adresses locales que vous spécifiez. Pour plus d'informations, consultez la documentation de Windows Server.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

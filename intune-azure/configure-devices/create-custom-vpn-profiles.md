@@ -1,11 +1,11 @@
 ---
-title: "Guide de création de profils VPN personnalisés avec Microsoft Intune | Microsoft Docs"
+title: "Guide pratique pour créer des profils VPN personnalisés avec Microsoft Intune | Microsoft Docs"
 description: "Utilisez des configurations personnalisées pour créer des profils VPN dans Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2b364b2c57adab33df2a8e6b34c1f30c02988d3
-ms.openlocfilehash: e92593062ad2ed7a4098922715106f47f4e78d4f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 968932c07d2c68003b61c0cc554b43b348385d1e
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-create-custom-vpn-profiles-with-microsoft-intune"></a>Guide de création de profils VPN personnalisés avec Microsoft Intune
+# <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Guide pratique pour créer des profils VPN personnalisés dans Microsoft Intune
 
 ## <a name="create-a-custom-configuration"></a>Créer une configuration personnalisée
 Vous pouvez utiliser des stratégies de configuration personnalisées Intune afin de créer des profils VPN pour :
@@ -55,7 +56,7 @@ Ce type de stratégie peut être utile lorsque les stratégies VPN Intune standa
 4.  Une fois que vous avez entré tous les paramètres des URI dont vous avez besoin, choisissez **OK**, puis, dans le panneau **Créer un profil**, choisissez **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
-Si vous souhaitez continuer et affecter ce profil à des groupes, consultez le [Guide pratique d’attribution des profils d’appareils](how-to-assign-device-profiles.md).
+Si vous souhaitez continuer et affecter ce profil à des groupes, consultez le [Guide pratique pour attribuer des profils d’appareils](how-to-assign-device-profiles.md).
 
 ## <a name="example-uri-settings"></a>Exemples de paramètres URI
 
@@ -122,10 +123,5 @@ Exemples :
 > - La valeur par défaut est *WHITELIST* si un PackageList est fourni.
 
 
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

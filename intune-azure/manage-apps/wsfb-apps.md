@@ -1,11 +1,11 @@
 ---
-title: "Gérer les applications à partir du Windows Store pour Entreprises | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : découvrez comment synchroniser les applications dans Intune depuis Windows Store pour Entreprises, puis les affecter et assurer leur suivi."
+title: "Gérer les applications à partir du Windows Store pour Entreprises | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment synchroniser les applications dans Intune depuis Windows Store pour Entreprises, puis les affecter et assurer leur suivi."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
-ms.openlocfilehash: 2acb58a8fc71ae7f2e0bce127e709a678faa27cb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: b213fcaae8f17af412687d01df6ea27b39b3edb9
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business"></a>Guide pratique de gestion des applications que vous avez achetées dans Windows Store pour Entreprises
+# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Guide pratique pour gérer les applications que vous avez achetées dans le Windows Store pour Entreprises avec Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -69,7 +70,7 @@ Vous pouvez maintenant continuer et configurer la synchronisation dans la consol
 
 ## <a name="assign-apps"></a>Attribuer des applications
 
-Vous affectez des applications à partir du magasin de la même façon que vous déploieriez toute autre application Intune. Pour plus d’informations, consultez [Guide pratique d’affectation d’applications à des groupes avec Microsoft Intune](deploy-apps.md). Toutefois, au lieu d’affecter les applications à partir de la page **Toutes les applications**, affectez-les à partir de la page **Applications sous licence**.
+Vous affectez des applications à partir du magasin de la même façon que vous déploieriez toute autre application Intune. Pour plus d’informations, consultez [Guide pratique pour attribuer des applications à des groupes avec Microsoft Intune](deploy-apps.md). Toutefois, au lieu d’affecter les applications à partir de la page **Toutes les applications**, affectez-les à partir de la page **Applications sous licence**.
 
 Lorsque vous affectez une application Windows Store pour Entreprises, une licence est utilisée par chaque utilisateur qui installe l’application. Si vous utilisez toutes les licences disponibles pour une application déployée, vous ne pourrez plus déployer d’autres copies. Vous devrez prendre l’une des actions suivantes :
 * Désinstallez l’application de certains appareils.
@@ -78,9 +79,4 @@ Lorsque vous affectez une application Windows Store pour Entreprises, une licenc
 
 > [!Important]
 > Les applications déployées sont uniquement disponibles pour l’utilisateur qui a inscrit l’appareil à l’origine. Aucun autre utilisateur ne peut accéder à l’application.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

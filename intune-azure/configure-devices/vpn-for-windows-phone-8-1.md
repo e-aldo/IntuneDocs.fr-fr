@@ -1,11 +1,11 @@
 ---
-title: "Paramètres VPN d’Intune pour les appareils Windows Phone 8.1 | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : en savoir plus sur les paramètres Windows Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils Windows Phone 8.1."
+title: "Paramètres VPN Intune pour les appareils Windows Phone 8.1 | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez les paramètres Windows Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils Windows Phone 8.1."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: abe6fb1a5684cbeb0b893793a1932652b7ec1c16
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 674a806b16d1f88413c1d1bbda1fb1d4f3363771
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-phone-81-devices-in-intune-azure-preview"></a>Paramètres VPN pour les appareils Windows Phone 8.1 la version préliminaire d'Intune Azure
+# <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils Windows Phone 8.1 dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -31,7 +32,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-d
 - **Appliquer tous les paramètres à Windows Phone 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail Intune classique. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est définie sur **Configuré**, les paramètres seront uniquement appliqués aux appareils Windows Phone 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliqueront également aux appareils Windows 10 Mobile.
 - **Nom de connexion** : saisissez un nom pour cette connexion. Les utilisateurs finaux voient ce nom lorsqu’ils consultent leur appareil pour obtenir la liste des connexions VPN disponibles.
 - **Méthode d’authentification** : choisissez la façon dont les appareils s’authentifient auprès du serveur VPN à partir de :
-    - **Certificats** : sous **Certificat d’authentification**, choisissez le profil de certificat SCEP ou PKCS que vous avez créé précédemment pour authentifier la connexion. Pour plus d’informations sur les profils de certificat, consultez [Guide pratique de configuration des certificats](how-to-configure-certificates.md).
+    - **Certificats** : sous **Certificat d’authentification**, choisissez le profil de certificat SCEP ou PKCS que vous avez créé précédemment pour authentifier la connexion. Pour plus d’informations sur les profils de certificat, consultez [Guide pratique pour configurer des certificats](how-to-configure-certificates.md).
     - **Nom d’utilisateur et mot de passe** : les utilisateurs finaux doivent fournir un nom d’utilisateur et un mot de passe pour se connecter au serveur VPN.
 - **Serveurs** : ajoutez un ou plusieurs serveurs VPN auxquels les appareils se connectent.
     - **Ajouter** : ouvre le panneau **Ajouter une ligne** dans lequel vous pouvez spécifier les informations suivantes :
@@ -98,9 +99,4 @@ Pour plus d’informations sur l’écriture des commandes XML personnalisées, 
     - **Adresse** : saisissez l’adresse du serveur proxy (comme une adresse IP).
     - **Numéro de port** : saisissez le numéro de port associé au serveur proxy.
 - **Contourner le proxy pour les adresses locales** : si votre serveur VPN nécessite un serveur proxy pour la connexion, sélectionnez cette option si vous ne souhaitez pas utiliser le serveur proxy pour les adresses locales que vous spécifiez. Pour plus d'informations, consultez la documentation de Windows Server.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

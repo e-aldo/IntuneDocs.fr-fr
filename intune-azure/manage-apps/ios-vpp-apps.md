@@ -1,11 +1,11 @@
 ---
-title: "Gestion des applications iOS achetées en volume | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : découvrez comment vous pouvez synchroniser les applications que vous avez achetées en volume à partir de la boutique iOS dans Intune et ensuite gérer et suivre leur utilisation."
+title: "Gérer des applications iOS achetées en volume | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment synchroniser les applications que vous avez achetées en volume à partir de l’App Store iOS dans Intune et ensuite gérer et suivre leur utilisation."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87250baede6c86e7ac5c402e79026908e712f48c
-ms.openlocfilehash: 809fe8d8eea7e472d80f6ee22e26c1f376e870eb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7a2d494a995072c6fa61cf99aa5f841256e86885
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program"></a>Guide pratique de gestion des applications iOS que vous avez achetées via un programme d’achat de volume
+# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les applications iOS que vous avez achetées par le biais d’un programme d’achat en volume avec Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -72,7 +73,7 @@ Vous pouvez synchroniser les données détenues par Apple avec Intune à tout mo
 Vous devez choisir une action d’affectation **Requise**. Les installations disponibles ne sont pas prises en charge.
 5. Une fois que vous avez terminé, choisissez **Enregistrer**.
 
-Consultez la page [Guide pratique de surveillance des applications](monitor-apps.md) pour plus d’informations pour vous aider à contrôler les affectations de l’application.
+Consultez la page [Guide pratique pour surveiller des applications](monitor-apps.md) pour plus d’informations pour vous aider à contrôler les affectations de l’application.
 
 ## <a name="further-information"></a>Informations supplémentaires
 
@@ -81,9 +82,4 @@ Lorsque vous affectez l’application comme une installation **Requise**, chaque
 Pour libérer une licence, vous devez modifier l’action d’affectation sur **Désinstallation**. La licence est récupérée une fois l’application désinstallée.
 
 Quand un utilisateur avec un appareil éligible essaie pour la première fois d’installer une application VPP, il est invité à participer au programme VPP d’Apple. Il doit accepter pour que l’installation de l’application se poursuivre.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

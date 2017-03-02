@@ -1,11 +1,11 @@
 ---
-title: "Importation des paramètres Wi-Fi pour Windows 8.1 et versions ultérieures | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : guide pratique d’importation des paramètres Wi-Fi de Windows dans un profil Wi-Fi Intune."
+title: "Importer des paramètres Wi-Fi pour Windows 8.1 et versions ultérieures | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Comment importer des paramètres Wi-Fi de Windows dans un profil Wi-Fi Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: 132ce1c8e6ad69c5d8998f233c114f912cb4bf8b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 2600c8363c677465e29af382fa5ef4a921048fef
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-intune-azure-preview"></a>Guide pratique d’importation des paramètres Wi-Fi pour appareils Windows 8.1 et versions ultérieures dans la version préliminaire d’Intune Azure
+# <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Guide pratique pour importer des paramètres Wi-Fi pour appareils Windows 8.1 et versions ultérieures dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -50,10 +51,5 @@ Dans Windows, recourez à l’utilitaire **netsh wlan** pour exporter un profil 
     - **Contenu du fichier** : affiche le code XML du profil de configuration que vous avez sélectionné.
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
-Le profil est créé et s’affiche dans le volet de la liste des profils.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+Le profil est créé et s’affiche dans le panneau de la liste des profils.
 

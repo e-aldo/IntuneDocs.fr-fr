@@ -1,11 +1,11 @@
 ---
-title: "Paramètres de messagerie Intune pour les appareils iOS | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : en savoir plus sur les paramètres Intune que vous pouvez utiliser pour configurer les connexions à la messagerie sur les appareils iOS."
+title: "Paramètres de messagerie Intune pour les appareils iOS | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez les paramètres Intune que vous pouvez utiliser pour configurer les connexions à la messagerie sur les appareils iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 186630903a606842406ff1d76115c1fa7d1c962e
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="email-profile-settings-for-ios-devices-in-intune-azure-preview"></a>Paramètres de profil de messagerie pour les appareils iOS dans la version préliminaire d’Intune Azure
+# <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Paramètres de profil de messagerie pour les appareils iOS dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -39,9 +40,4 @@ ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
 - **Autoriser le déplacement des messages vers d’autres comptes de messagerie** : cette option permet aux utilisateurs de déplacer les e-mails entre les différents comptes configurés sur l’appareil.
 - **Autoriser l’envoi de courrier électronique à partir d’applications tierces** : autorisez l’utilisateur à sélectionner ce profil en tant que compte par défaut pour l’envoi d’e-mails et autorisez les applications tierces à ouvrir les e-mails dans l’application de messagerie native, par exemple pour y joindre des fichiers.
 - **Synchroniser les adresses de messagerie récemment utilisées** : cette option permet aux utilisateurs de synchroniser la liste des adresses de messagerie qui ont été récemment utilisées sur l’appareil.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

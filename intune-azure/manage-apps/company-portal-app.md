@@ -1,11 +1,11 @@
 ---
-title: "Guide de configuration de l&quot;application Portail d’entreprise | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment vous pouvez appliquer un logo spécifique d&quot;entreprise à l’application Portail d’entreprise Intune. "
+title: "Guide pratique pour configurer l’application Portail d’entreprise | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment appliquer un logo spécifique d&quot;entreprise à l’application Portail d’entreprise Intune. "
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: f27eacc8a8282c9216f8983db32dc5e4e8bc7006
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 142b57f48c2950f6eecc228decfa06ce44c76319
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-configure-the-company-portal-app"></a>Guide de configuration de l'application Portail d’entreprise
+# <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Guide pratique pour configurer l’application Portail d’entreprise Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -64,9 +65,4 @@ Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de
 |**Afficher le logo de la société**|Lorsque vous activez cette option, vous pouvez télécharger le logo de votre entreprise pour qu’il apparaisse sur le Portail de celle-ci. Vous pouvez télécharger deux logos : un qui s’affiche quand l’arrière-plan du Portail d’entreprise est blanc, et un autre qui s’affiche quand l’arrière-plan du Portail d’entreprise utilise la couleur de thème que vous avez sélectionnée. Chaque logo doit être un fichier de type .png ou .jpg, et avoir une résolution maximale de 400 x 100 pixels et une taille inférieure ou égale à 750 Ko.<br>Vous pouvez également afficher le nom de société que vous avez entré à côté du logo chargé.|
 
 Après avoir enregistré vos modifications, vous pouvez choisir **Affichez un aperçu de vos paramètres dans le portail web Intune** pour voir l'aspect de vos configurations.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

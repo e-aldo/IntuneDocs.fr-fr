@@ -1,11 +1,11 @@
 ---
-title: "Guide pratique pour l’attribution de profils d’appareils avec Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : une fois que vous avez créé un profil d’appareil Intune, utilisez cette rubrique pour apprendre à l’attribuer à des appareils."
+title: "Guide pratique pour attribuer des profils d’appareil avec Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Une fois que vous avez créé un profil d’appareil Intune, apprenez à l’attribuer à des appareils dans cette rubrique."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: dcd7ea8d11d3dedb3ae98f5cd678393107f14d3f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 0bc43e59c63fb07b07187bd9b8ae78fbc3aa0557
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-assign-intune-device-profiles"></a>Guide pratique pour l’attribution de profils d’appareils Intune
+# <a name="how-to-assign-microsoft-intune-device-profiles"></a>Guide pratique pour attribuer des profils d’appareil Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -34,10 +35,5 @@ ms.openlocfilehash: dcd7ea8d11d3dedb3ae98f5cd678393107f14d3f
 4. Lorsque vous avez terminé, dans le panneau **Sélectionner des groupes**, choisissez **Sélectionner**.
 
 ### <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations sur la surveillance des attributions de profils d’appareils, consultez [Guide pratique pour la surveillance des profils d’appareils](how-to-monitor-device-profiles.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+Pour plus d’informations sur la surveillance des attributions de profils d’appareils, consultez [Guide pratique pour surveiller des profils d’appareils](how-to-monitor-device-profiles.md).
 

@@ -1,11 +1,11 @@
 ---
-title: "Paramètres Intune personnalisés pour les appareils Windows 10 | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : en savoir plus sur les paramètres que vous pouvez utiliser dans un profil personnalisé Windows 10."
+title: "Paramètres personnalisés Intune pour les appareils Windows 10 | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Windows 10."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Paramètres d'appareils personnalisés pour les appareils Windows 10 dans la version préliminaire d’Intune Azure
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres des appareils personnalisés pour les appareils Windows 10 dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -133,7 +134,7 @@ Dans la capture d’écran ci-dessous, le paramètre **Connectivity/AllowVPNOver
 |**AllowIOAVProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowIOAVProtection|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :** **0** – non autorisé, **1** – autorisé (valeur par défaut)|
 |**AllowScriptScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowScriptScanning|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :** **0** – non autorisé, **1** – autorisé (valeur par défaut)|
 |**AllowOnAccessProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowOnAccessProtection|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :** **0** – non autorisé, **1** – autorisé (valeur par défaut)|
-|**RealTimeScanDirection**<br>./Vendor/MSFT/Policy/Config/Defender/RealTimeScanDirection|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Analyser tous les fichiers (valeur par défaut)<br>**1** – Analyser les fichiers entrants<br>**2** – Analyser les fichiers sortants|
+|**RealTimeScanDirection**<br>./Vendor/MSFT/Policy/Config/Defender/RealTimeScanDirection|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Surveiller tous les fichiers (valeur par défaut)<br>**1** – Surveiller les fichiers entrants<br>**2** – Surveiller les fichiers sortants|
 |**DaysToRetainCleanedMalware**<br>./Vendor/MSFT/Policy/Config/Defender/DaysToRetainCleanedMalware|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** - **90** – Représente la durée pendant laquelle les logiciels malveillants sont conservés.<br>**Valeur par défaut :** **0** – Les logiciels malveillants sont conservés indéfiniment dans le dossier de quarantaine et ne sont pas supprimés automatiquement.|
 |**AllowUserUIAccess**<br>./Vendor/MSFT/Policy/Config/Defender/AllowUserUIAccess|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :** **0** – non autorisé, **1** – autorisé (valeur par défaut)|
 |**ScanParameter**<br>./Vendor/MSFT/Policy/Config/Defender/ScanParameter|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :**<br>**1** – Analyse rapide (par défaut)<br>**2** – Analyse complète|
@@ -167,9 +168,4 @@ Dans la capture d’écran ci-dessous, le paramètre **Connectivity/AllowVPNOver
 |**Autoriser l’enregistrement du mot de passe**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Desktop et mobile<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Le gestionnaire de mots de passe est désactivé <br>**1** – Le gestionnaire de mots de passe est activé (par défaut)|
 |**Autoriser le remplissage automatique**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :** **0** – Désactivé (valeur par défaut), **1** – Activé|
 |**Configurer la liste des sites d’entreprise**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :<br> **0** – Non configuré<br>**1** – Utiliser la liste des sites d’entreprise d’Internet Explorer si elle est configurée (valeur par défaut)<br>**2** – Spécifier l’emplacement de la liste des sites d’entreprise|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

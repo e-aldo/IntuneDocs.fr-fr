@@ -1,11 +1,11 @@
 ---
-title: "Guide pratique d’ajout d’applications du Windows Store à Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : en savoir plus sur l’ajout d’applications du Windows Store à Intune."
+title: "Guide pratique pour ajouter des applications du Windows Store à Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment ajouter des applications du Windows Store à Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,24 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: ee0079d7b1098c2c9a2a679c46336e2fb8e09585
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 80fe042dbdc909d1c81098567b1a87d8b089cc19
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-windows-store-apps-to-intune"></a>Guide pratique d’ajout d’applications du Windows Store à Intune
+# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications du Windows Store à Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Analyse + Gestion** > **Intune**.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
 4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
 5. Au-dessus de la liste des applications, choisissez **Ajouter**.
 6. Dans le panneau **Ajouter une application**, choisissez **Informations de l’application**.
-7. Dans le panneau **Modifier l’application**, configurez les informations suivantes. Quand vous avez terminé, cliquez sur **Ajouter**. Selon l’application choisie, certaines valeurs de ce panneau peuvent avoir été renseignées automatiquement :
+7. Dans le panneau **Modifier l’application**, configurez les informations suivantes. Une fois cela fait, cliquez sur **Ajouter**. Selon l’application choisie, certaines valeurs de ce panneau peuvent avoir été renseignées automatiquement :
     - **Nom de l’application** : saisissez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
     - **Description de l’application :** saisissez la description de l’application. Ce libellé s'affichera dans le portail d'entreprise.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
@@ -46,9 +47,4 @@ ms.openlocfilehash: ee0079d7b1098c2c9a2a679c46336e2fb8e09585
     - **Télécharger icône** : téléchargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 8. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
 
-L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique d’affectation d’applications à des groupes](/intune-azure/manage-apps/deploy-apps).
-
-
-<!--HONumber=Feb17_HO1-->
-
-
+L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](/intune-azure/manage-apps/deploy-apps).

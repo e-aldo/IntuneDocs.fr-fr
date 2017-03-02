@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ Utilisez les informations suivantes pour déterminer la méthode à utiliser pou
 
 ## <a name="user-owned-ios-devices-byod"></a>Appareils iOS de l’utilisateur (BYOD)
 
-Si les utilisateurs souhaitent inscrire leurs appareils BYOD (appareils personnels), la seule méthode d’inscription disponible pour les utilisateurs est de télécharger l’application de portail d’entreprise pour iOS depuis l’App Store et de suivre les instructions d’inscription de l’application. Une fois inscrits, les utilisateurs peuvent se connecter au réseau d’entreprise, rejoindre le domaine ou Azure Active Directory et obtenir l’accès aux ressources d’entreprise.
+Si les utilisateurs souhaitent inscrire leurs appareils BYOD (appareils personnels), la seule méthode d’inscription disponible pour les utilisateurs est de télécharger l’application de portail d’entreprise pour iOS depuis l’App Store et de suivre les instructions d’inscription de l’application. Une fois inscrits, les utilisateurs peuvent se connecter au réseau d’entreprise, rejoindre le domaine ou Azure Active Directory et obtenir l’accès aux ressources d’entreprise. Vous pouvez bloquer l’inscription d’appareils personnels iOS. Consultez la page [Définir des restrictions de type d’appareil](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) pour obtenir des instructions.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ Le programme DEP déploie un profil d’inscription selon le procédé OTA (Over
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>Utilisation du gestionnaire d’inscription d’appareil (DEM)
 Le gestionnaire d’inscription est un type de compte d’utilisateur qui peut inscrire et gérer jusqu’à 1 000 appareils. Vous ajoutez des utilisateurs existants au compte de gestionnaire d’inscription d’appareil afin qu’ils puissent bénéficier de ces fonctionnalités. Chaque appareil que l’utilisateur DEM inscrit utilise une seule licence Intune. Pour plus d’informations, consultez [Inscrire des appareils avec le gestionnaire d’inscription d’appareils](enroll-devices-using-device-enrollment-manager.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

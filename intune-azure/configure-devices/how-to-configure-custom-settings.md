@@ -1,11 +1,11 @@
 ---
-title: "Guide pratique pour la configuration des paramètres d’appareils personnalisés Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment utiliser Intune pour configurer des paramètres personnalisés sur les appareils que vous gérez."
+title: "Guide pratique pour configurer des paramètres d’appareils personnalisés Intune | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour configurer des paramètres personnalisés sur les appareils que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/23/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: b404df57e94afe7b80dd39163ed72a24d8b05508
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d9da3f1c2ccade5391e2e874336802602a016700
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-custom-device-settings"></a>Guide pratique pour la configuration des paramètres d’appareils personnalisés
+# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres d’appareils personnalisés dans Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -44,7 +45,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
     - **iOS**
     - **MacOS**
     - **Windows Phone 8.1**
-    - **Windows 10 et versions ultérieures**
+    - **Windows 10 et versions ultérieures**
 6. Dans la liste déroulante **Type de profil**, choisissez **Personnalisé**.
 7. Selon la plateforme que vous choisissez, les paramètres que vous pouvez configurer diffèrent. Accédez à l’une des rubriques suivantes pour obtenir les paramètres détaillés pour chaque plateforme :
     - [Paramètres Android](custom-for-android.md)
@@ -55,11 +56,6 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
-Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](how-to-assign-device-profiles.md).
-
-
-
-
-<!--HONumber=Feb17_HO1-->
+Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareils](how-to-assign-device-profiles.md).
 
 
