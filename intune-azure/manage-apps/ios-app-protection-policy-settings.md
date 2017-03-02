@@ -1,5 +1,6 @@
 ---
-title: "Paramètres de stratégie de protection d’application iOS | Version préliminaire d’Intune Azure | Microsoft Docs"
+title: "Paramètres de stratégie de protection d’application iOS"
+titleSuffix: Intune Azure preview
 description: "Version préliminaire d&quot;Intune Azure : cette rubrique décrit les paramètres de stratégie de protection d’application pour les appareils iOS."
 keywords: 
 author: NathBarn
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: c169ed02e707d605f2b3108bcf955b41d7e48918
-ms.openlocfilehash: 451e4c396bc9384172592a159acab1af620e6007
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a391f9e16faf315c5fb88191f3de3f8f2f3d5178
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -82,5 +84,5 @@ Si vous décidez d’empêcher vos utilisateurs d’accéder à et d’installer
 Ces instructions s’appliquent à Office 365, Exchange 2016, Exchange 2013 pour les versions web, Windows, Mac et mobiles d’Outlook.
 
 - En savoir plus sur les [compléments pour Outlook](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx).
-- Découvrez-en plus sur la [façon de spécifier des administrateurs et des utilisateurs pouvant installer et gérer des compléments pour l’application Outlook](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
+- Lisez-en davantage avec le [Guide pratique de spécification des administrateurs et utilisateurs pouvant installer et gérer les compléments d’application Outlook](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
 

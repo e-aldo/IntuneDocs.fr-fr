@@ -1,11 +1,11 @@
 ---
-title: "Configuration de l’infrastructure de certificat Intune pour PKCS | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment configurer votre infrastructure pour utiliser des certificats PKCS avec Intune."
+title: "Configurer l’infrastructure de certificat Intune pour PKCS | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Découvrez comment configurer votre infrastructure pour utiliser des certificats PKCS avec Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: 74f2cc7221e737371d7db97ec25d872578df273d
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6f08dc63a9afaa5e92b188883d160d0b76f3631f
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="configure-your-intune-certificate-infrastructure-for-pkcs"></a>Configuration de votre infrastructure de certificat pour PKCS
+# <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>Configurer votre infrastructure de certificats Microsoft Intune pour PKCS
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Cette rubrique décrit les éléments dont vous avez besoin pour créer et déployer des profils de certificat PKCS avec Intune.
@@ -157,9 +158,4 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
 
 ### <a name="next-steps"></a>Étapes suivantes
 Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configuration de certificats avec Microsoft Intune](how-to-configure-certificates.md).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

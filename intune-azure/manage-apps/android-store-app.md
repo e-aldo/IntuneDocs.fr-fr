@@ -1,5 +1,6 @@
 ---
-title: "Guide pratique pour ajouter des applications Android Store à Intune | Préversion Intune Azure | Microsoft Docs"
+title: "Guide pratique d’ajout d’applications de la boutique d’applications Android à Intune"
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment ajouter des applications Android Store à Intune."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: bb31b9fac5b6ab7dd26425f5520cb3fb694bf4e7
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: e885b0be6d8782f6dd20f395a7792839f20e1adc
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -35,11 +37,11 @@ ms.lasthandoff: 02/16/2017
     - **Nom de l’application** : saisissez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
     - **Description de l’application :** saisissez la description de l’application. Ce libellé s'affichera dans le portail d'entreprise.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **URL de l’App Store** : saisissez l’URL de la boutique d’applications que vous souhaitez créer.
+    - **URL de la boutique d’applications** : saisissez l’URL de la boutique d’applications que vous souhaitez créer.
     - **Système d’exploitation minimal** : dans la liste, choisissez le système d’exploitation minimal sur lequel l’application peut être installée. Si vous affectez l’application à un appareil avec un système d’exploitation antérieur, elle ne sera pas installée.
     - **Catégorie** : (facultatif) sélectionnez une ou plusieurs des catégories d’applications intégrées ou que vous avez créées. Cela permettra aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
     - **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
-    - **URL d’informations** : si vous le souhaitez, saisissez l’URL d’un site web qui contient des informations sur cette application. Cette URL s'affichera dans le portail d'entreprise.
+    - **URL d’informations** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations sur cette application. Cette URL s'affichera dans le portail d'entreprise.
     - **URL de confidentialité** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations de confidentialité pour cette application. Cette URL s'affichera dans le portail d'entreprise.
     - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
     - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.

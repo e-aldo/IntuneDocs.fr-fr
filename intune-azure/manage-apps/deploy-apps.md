@@ -1,11 +1,11 @@
 ---
-title: "Guide pratique d’attribution d’applications aux groupes | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : une fois que vous avez ajouté une application à Intune, vous souhaiterez l’attribuer à des groupes d’utilisateurs ou d&quot;appareils."
+title: "Guide pratique pour attribuer des applications à des groupes | Préversion Intune Azure | Microsoft Docs"
+description: "Préversion Intune Azure : Une fois que vous avez ajouté une application à Intune, vous souhaiterez l’attribuer à des groupes d’utilisateurs ou d’appareils."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 145f27e44d57e0f5ff7bbed76e14db713dd75286
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-assign-apps-to-groups"></a>Guide pratique d’affectation d’applications aux groupes
+# <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Guide pratique pour attribuer des applications à des groupes avec Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,10 +43,10 @@ Les applications peuvent être affectées aux appareils, qu’ils soient gérés
 > [!NOTE]
 > Actuellement, vous pouvez affecter des applications iOS et Android (applications métier ou achetées sur une boutique) pour les appareils qui ne sont pas inscrits avec Intune.
 
-## <a name="how-to-assign-an-app"></a>Guide pratique d’affectation d’une application
+## <a name="how-to-assign-an-app"></a>Comment affecter une application
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Analyse + Gestion** > **Intune**.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
 1. Dans la charge de travail **Gérer les applications**, choisissez **Gérer** > **Applications**.
 2. Dans la liste du panneau d’applications, cliquez sur l’application que vous souhaitez affecter.
@@ -61,10 +62,5 @@ Les applications peuvent être affectées aux appareils, qu’ils soient gérés
 
 L’application est maintenant affectée au groupe que vous avez choisi.
 
-Consultez la page [Guide pratique de surveillance des applications](monitor-apps.md) pour plus d’informations pour vous aider à contrôler les affectations de l’application.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+Consultez la page [Guide pratique pour surveiller des applications](monitor-apps.md) pour plus d’informations pour vous aider à contrôler les affectations de l’application.
 
