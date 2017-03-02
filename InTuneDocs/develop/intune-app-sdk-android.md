@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: ddfd4e8a23f1a7e20230c188ac8203a11e48c4a6
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 178fbaeb1d3235a81cb4da49b7a955f6999c49a2
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 
-# <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit de développement logiciel (SDK) de l’application Microsoft Intune pour les développeurs Android
+# <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
 > [!NOTE]
 > Vous pouvez d’abord consulter la [Présentation du SDK de l’application Intune](intune-app-sdk.md), qui aborde les fonctionnalités actuelles du SDK et la manière de préparer l’intégration sur chaque plateforme prise en charge.
@@ -127,7 +129,7 @@ Les classes de base Android doivent être remplacées par leurs équivalents MAM
 
 **Microsoft.Intune.MAM.SDK.Suppou det.v4.jar**:
 
-| Classe Android (MAM Intune) | Classe de remplacement (SDK de l’application Intune) |
+| Classe Android (GAM Intune) | Classe de remplacement (SDK de l’application Intune) |
 |--|--|
 | android.support.v4.app.DialogFragment | MAMDialogFragment
 | android.support.v4.app.FragmentActivity | MAMFragmentActivity
@@ -376,7 +378,7 @@ Avant de lancer la sauvegarde, vous devez vérifier que les mémoires tampons de
 
 Le SDK utilise la bibliothèque ADAL pour ses scénarios d’authentification et de lancement conditionnel. Ces scénarios exigent que les applications aient une certaine part de configuration Azure Active Directory (Azure AD). Les valeurs de configuration sont communiquées au SDK par le biais de métadonnées `AndroidManifest` .
 
-Pour configurer votre application et mettre en œuvre une authentification approprié, ajoutez le code suivant au nœud de l’application dans `AndroidManifest`. Certaines de ces configurations sont nécessaires uniquement si votre application utilise la bibliothèque ADAL pour l’authentification en général. Dans ce cas, vous aurez besoin des valeurs spécifiques utilisées par votre application pour s’inscrire auprès d’Azure AD. Ainsi, l’utilisateur n’est pas invité à s’authentifier à deux reprises car Azure AD détecte deux valeurs d’inscription distinctes : l’une provenant de l’application et l’autre du SDK.
+Pour configurer votre application et mettre en œuvre une authentification appropriée, ajoutez le code suivant au nœud de l’application dans `AndroidManifest`. Certaines de ces configurations sont nécessaires uniquement si votre application utilise la bibliothèque ADAL pour l’authentification en général. Dans ce cas, vous aurez besoin des valeurs spécifiques utilisées par votre application pour s’inscrire auprès d’Azure AD. Ainsi, l’utilisateur n’est pas invité à s’authentifier à deux reprises car Azure AD détecte deux valeurs d’inscription distinctes : l’une provenant de l’application et l’autre du SDK.
 
         <meta-data
             android:name="com.microsoft.intune.mam.aad.Authority"
@@ -425,7 +427,7 @@ Voici les configurations courantes pour les valeurs expliquées ci-dessus.
 
 #### <a name="logging-in-the-sdk"></a>Journalisation dans le SDK
 
-La journalisation est effectuée par le biais de infrastructure `java.util.logging` . Pour recevoir les journaux, configurez la journalisation globale comme décrit dans le [guide technique Java](http://docs.oracle.com/javase/6/docs/technotes/guides/logging/overview.html). En fonction de l’application, `App.onCreate` est généralement le meilleur endroit pour lancer la journalisation. Notez que les messages du journal sont indexés par le nom de la classe, qui peut être masqué.
+La journalisation est effectuée par le biais de l’infrastructure `java.util.logging` . Pour recevoir les journaux, configurez la journalisation globale comme décrit dans le [guide technique Java](http://docs.oracle.com/javase/6/docs/technotes/guides/logging/overview.html). En fonction de l’application, `App.onCreate` est généralement le meilleur endroit pour lancer la journalisation. Notez que les messages du journal sont indexés par le nom de la classe, qui peut être masqué.
 
 ###<a name="multi-identity"></a>Prise en charge de plusieurs identités
 
@@ -677,7 +679,7 @@ public final class MAMDataProtectionManager {
      * @param input
      *            Input stream to get information on. Either this input
  *            stream must have been returned by a previous call to
-     *            protect OR input.markSupported() must return true.
+      *            protect OR input.markSupported() must return true.
  *            Otherwise it will be impossible to get protection info
  *            without advancing the stream position. The stream must be
  *            positioned at the beginning of the protected data.
@@ -739,7 +741,7 @@ Quand vous incluez plusieurs projets, chaque `android:package` reçoit une copie
 
     MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI)
 
-**Services exportés** : le fichier `AndroidManifest.xml` inclus dans le SDK d’application Intune a `MAMNotificationReceiverService`. Il doit s’agir d’un service exporté pour permettre à l’application Portail d’entreprise d’envoyer des notifications à une application compatible. Le service vérifie l’appelant pour s’assurer que seul l’application Portail d’entreprise est autorisé à envoyer des notifications.
+**Services exportés** : le fichier `AndroidManifest.xml` inclus dans le SDK d’application Intune a `MAMNotificationReceiverService`. Il doit s’agir d’un service exporté pour permettre à l’application Portail d’entreprise d’envoyer des notifications à une application compatible. Le service vérifie l’appelant pour s’assurer que seule l’application Portail d’entreprise est autorisée à envoyer des notifications.
 
 ### <a name="android-best-practices"></a>Bonnes pratiques pour Android
 
@@ -752,9 +754,4 @@ Le SDK Intune respecte le contrat fourni par l’API Android, bien que des condi
 * Les appels des fonctions dérivées doivent être acheminés aux versions de leurs superclasses.
 
 * Évitez d’utiliser les API de façon ambiguë. Par exemple, l’utilisation d’`Activity.startActivityForResult/onActivityResult` sans vérifier `requestCode` entraîne un comportement étrange.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

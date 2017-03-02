@@ -1,6 +1,7 @@
 ---
-title: "Applications avec iOS avec stratégies de protection d’application | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : cette rubrique décrit ce qui se passe quand votre application iOS est gérée par les stratégies de protection d’application."
+title: "Applications iOS avec stratégies de protection des applications | Préversion Intune Azure"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Cette rubrique décrit ce qui se passe quand votre application iOS est gérée par les stratégies de protection d’application."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: ae646cf3dd1b1469b9f87ac66ad7171d77ef6518
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a4ce6d6248378ba48cddeaefb941c139dd990f6
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -63,9 +66,4 @@ Sur un appareil iOS, si vous essayez d’ajouter un deuxième compte professionn
 [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](app-protection-enabled-android-apps.md)
 ### <a name="see-also"></a>Voir aussi
 [Créer et déployer des stratégies de protection d’application à l’aide de Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

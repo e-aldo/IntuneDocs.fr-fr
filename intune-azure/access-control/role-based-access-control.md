@@ -1,11 +1,12 @@
 ---
-title: "Le contrôle d’accès en fonction du rôle (RBAC) pour Microsoft Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment le contrôle d’accès en fonction du rôle (RBAC) vous permet de contrôler qui peut exécuter des actions et apporter des modifications."
+title: "Contrôle d’accès en fonction du rôle (RBAC) pour Microsoft Intune"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Découvrez comment le contrôle d’accès en fonction du rôle (RBAC) vous permet de contrôler qui peut exécuter des actions et apporter des modifications."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
+ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
+ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,7 +43,7 @@ Les rôles suivants sont intégrés dans Intune et vous pouvez personnaliser ces
 - **Administrateur Intune** : dispose d’autorisations complètes pour toutes les opérations Intune.
 - **Gestionnaire d’applications** : gestion et déploiement d'applications et de profils.
 - **Gestionnaire de stratégie de configuration** : gestion et déploiement de paramètres de configuration et de profils.
-- **Opérateur de support technique** : exécution de tâches à distance et affichage d'informations sur l'utilisateur et l'appareil.
+- **Opérateur de support technique** : exécution de tâches à distance et affichage d’informations sur l’utilisateur et l’appareil.
 - **Opérateur en lecture seule** : affichage d'informations dans le portail Intune sans la possibilité d’apporter des modifications.
 
 
@@ -171,8 +174,3 @@ Lorsque vous créez un rôle personnalisé, vous pouvez configurer un ou plusieu
 |**Supprimer**|Supprimer des paramètres de conditions générales.|
 |**Lire**|Lire les paramètres des conditions générales dans le portail Intune.|
 |**Mettre à jour**|Mettre à jour les paramètres des conditions générales.|
-
-
-<!--HONumber=Feb17_HO1-->
-
-

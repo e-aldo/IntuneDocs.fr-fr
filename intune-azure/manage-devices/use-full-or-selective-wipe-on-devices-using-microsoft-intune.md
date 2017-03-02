@@ -1,6 +1,7 @@
 ---
-title: "Réinitialisation complète ou sélective des appareils utilisant Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : apprenez à effectuer une réinitialisation sélective de données d’entreprise sur un appareil ou effectuer une réinitialisation complète pour réinitialiser l’appareil aux paramètres d’usine."
+title: "Réinitialisation complète ou sélective sur des appareils à l’aide d’Intune"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Apprenez à effectuer une réinitialisation sélective de données d’entreprise sur un appareil ou effectuer une réinitialisation complète pour réinitialiser l’appareil aux paramètres d’usine."
 keywords: 
 author: staciebarker
 ms.author: stabar
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -66,7 +69,7 @@ Si l’appareil est allumé et connecté, la propagation de la commande de réin
 8.  Supprimez les appareils appropriés, par exemple, ceux qui ne sont plus utilisés ou qui n’ont pas de définitions précises.
 
 
-## <a name="selective-wipe"></a>réinitialisation sélective
+## <a name="selective-wipe"></a>Réinitialisation sélective
 
 La **réinitialisation sélective** supprime les données d’entreprise, notamment les données de gestion des applications mobiles (GAM) le cas échéant, les paramètres et les profils de messagerie d’un appareil. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil. L’appareil est supprimé d’Intune. Les tableaux suivants décrivent la nature des données supprimées et l’effet de cette opération sur les données qui restent sur l’appareil après une réinitialisation sélective. (Les tableaux sont organisés par plateforme.)
 
@@ -122,9 +125,4 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 3.  Dans le panneau présentant le nom de l’appareil, choisissez **Supprimer donn... ** (signifie Supprimer données de l’entreprise), puis **Oui** pour confirmer la réinitialisation.
 
 Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation prend moins de 15 minutes, quel que soit le type de l’appareil.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

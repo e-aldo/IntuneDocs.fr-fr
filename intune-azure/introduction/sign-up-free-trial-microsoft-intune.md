@@ -1,6 +1,7 @@
 ---
-title: "S’inscrire à une version d’évaluation gratuite de 30 jours | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : guide pratique d’inscription d’Intune sur Azure."
+title: "S’inscrire à une évaluation gratuite de 30 jours"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Guide pratique pour s’inscrire à Intune sur Azure."
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -12,18 +13,20 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cd98141b4b377f0013607f2a2ebb93a93cd7f0ce
-ms.openlocfilehash: ce69e7efbee286839a1bf3440db692bd237b0e06
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 29b33341b136c8e8d76b666f94a9f620212944c5
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal-preview"></a>Inscrivez-vous pour une version d’évaluation gratuite de Microsoft Intune pour la version préliminaire du portail Azure
+# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal-preview"></a>Inscrivez-vous pour une version d’évaluation gratuite de Microsoft Intune pour la préversion du portail Azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Cet article vous guide tout au long l’inscription pour une version d’évaluation d’Intune autonome pour la version préliminaire du portail Azure. <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
+Cet article vous guide tout au long l’inscription pour une version d’évaluation d’Intune autonome pour la préversion du portail Azure. <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
 
 <!--- ## Assumptions
 This sign-up article and the evaluation guide assume you are using the trial for evaluation purposes only and intend to start with a clean environment when you subscribe.
@@ -40,9 +43,9 @@ You can do everything in the trial version that you can do in a subscription ver
  > [!TIP]
 > Si la plupart des utilisateurs et opérations informatiques ont des paramètres régionaux différents des vôtres, vous pouvez définir ces paramètres régionaux dans **Où votre société se situe-t-elle ?**.
 
-2. À la fin de la procédure d’inscription, vous recevrez un message avec vos nouvelles informations de compte. <br/> ![Image d’informations de compte](./media/2-end-of-sign-up-process.png) <br/>À ce stade, si vous cliquez sur **Vous êtes prêt**, vous êtes dirigé vers le centre d’administration Office 365, où vous pouvez ajouter des utilisateurs à votre environnement de test. <br/><br/>Toutefois, si vous souhaitez accéder directement à la version préliminaire du portail Intune Azure, ouvrez une nouvelle fenêtre de navigateur et saisissez **https://portal.azure.com** dans la barre d’adresse. Vous êtes alors redirigé vers la page de connexion Azure où vous pouvez utiliser les informations d’identification que vous avez reçues pour vous connecter. Utilisez cette adresse chaque fois que vous souhaitez vous connecter à votre version d’évaluation d’Intune. <br/> ![Image de page de connexion au portail Azure](./media/azure-portal-signin.png)
+2. À la fin de la procédure d’inscription, vous recevrez un message avec vos nouvelles informations de compte. <br/> ![Image d’informations de compte](./media/2-end-of-sign-up-process.png) <br/>À ce stade, si vous cliquez sur **Vous êtes prêt**, vous êtes dirigé vers le centre d’administration Office 365, où vous pouvez ajouter des utilisateurs à votre environnement de test. <br/><br/>Toutefois, si vous souhaitez accéder directement à la préversion du portail Intune Azure, ouvrez une nouvelle fenêtre de navigateur et saisissez **https://portal.azure.com** dans la barre d’adresse. Vous êtes alors redirigé vers la page de connexion Azure où vous pouvez utiliser les informations d’identification que vous avez reçues pour vous connecter. Utilisez cette adresse chaque fois que vous souhaitez vous connecter à votre version d’évaluation d’Intune. <br/> ![Image de page de connexion au portail Azure](./media/azure-portal-signin.png)
 
-La première fois que vous vous connectez à Intune dans la version préliminaire d’Azure, il est possible vous ne voyiez pas Intune dans votre tableau de bord Azure. Pour ajouter le service Intune à votre tableau de bord Azure :
+La première fois que vous vous connectez à Intune dans la préversion d’Azure, il est possible vous ne voyiez pas Intune dans votre tableau de bord Azure. Pour ajouter le service Intune à votre tableau de bord Azure :
 1. Choisissez **Autres services >** dans la liste des services Azure à gauche du tableau de bord, puis entrez **Intune** dans la zone de recherche.
 2. Choisissez **Intune** dans la liste, puis sélectionnez l’étoile pour ajouter le service à la liste des services.<br/> ![Image de la sélection d’Intune dans la liste des services](./media/azure-add-intune1.png)
 3. Choisissez ensuite **Intune** dans la liste des services pour ouvrir le tableau de bord Intune.
@@ -108,7 +111,7 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 ![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)--->
 
 <!---### Intune Azure preview--->
-Il existe trois portails que vous pouvez utiliser pour la version préliminaire d’Intune Azure :
+Il existe trois portails que vous pouvez utiliser pour la préversion d’Intune Azure :
 - Le tableau de bord Intune dans Azure ([portal.azure.com](https://portal.azure.com)) où vous pouvez explorer les [fonctionnalités d’Intune dans le portail Azure](what-is-microsoft-intune.md).
 - Le centre d’administration d’Office 365 ([portal.office.com](https://portal.office.com)) où vous pouvez ajouter et gérer des utilisateurs si vous n’utilisez pas Azure Active Directory pour cela. Vous pouvez également gérer d’autres aspects de votre compte, y compris la facturation et le support.
 - La console d’administration Intune classique ([manage.microsoft.com](https://manage.microsoft.com)) où vous pouvez explorer les fonctionnalités qui n’ont pas encore été ajoutées à Azure.
@@ -117,7 +120,7 @@ Normalement, vous effectuez votre travail dans le tableau de bord Intune, comme 
 
 Vous pouvez accéder à la console d’administration Intune classique à partir du tableau de bord en choisissant la vignette **Ouvrir le portail Intune classique**.
 
-Pour revenir à la version préliminaire d’Intune Azure, entrez https://portal.azure.com dans la barre d’adresse de votre navigateur, puis choisissez **Intune** dans la liste des services.
+Pour revenir à la préversion d’Intune Azure, entrez https://portal.azure.com dans la barre d’adresse de votre navigateur, puis choisissez **Intune** dans la liste des services.
 
  ![Image du tableau de bord Intune](./media/intune-azure-dashboard.png)
 
@@ -133,7 +136,7 @@ Pour revenir d’Intune au Centre d’administration Office 365, entrez https://
 ## <a name="next-steps"></a>Étapes suivantes
 
 ### <a name="intune-azure-preview"></a>Intune Azure (préversion)
-En savoir plus sur [Intune dans le portail Azure en version préliminaire](what-is-microsoft-intune.md)
+En savoir plus sur [Intune dans le portail Azure en préversion](what-is-microsoft-intune.md)
 ### <a name="classic-intune"></a>Intune classique
 Scénario d’évaluation : [Évaluer la gestion des appareils mobiles dans Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 
@@ -144,9 +147,4 @@ En savoir plus sur l’utilisation de vos comptes d’utilisateur Azure Active D
 - [Configuration requise pour l’authentification multifacteur](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 En savoir plus sur l’utilisation d’[Intune avec System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

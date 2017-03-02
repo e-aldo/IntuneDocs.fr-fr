@@ -1,5 +1,6 @@
 ---
-title: "Validation de vos stratégies de protection d’application | Version préliminaire d’Intune Azure | Microsoft Docs"
+title: "Valider vos stratégies de protection des applications"
+titleSuffix: Intune Azure preview
 description: "Intune Azure (préversion) : cette rubrique décrit comment tester et valider la configuration et le bon fonctionnement de votre stratégie de protection d’application."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: e0d5b4b0c3557c1d8158f9e0ea6e33c426dba925
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 086ea61de3423be254d3d8f2224c4ad96d90385d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -25,7 +28,7 @@ ms.openlocfilehash: e0d5b4b0c3557c1d8158f9e0ea6e33c426dba925
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-Cette rubrique fournit des informations sur la manière de vérifier s’il existe des problèmes après avoir configuré une stratégie de protection d’application. Ces instructions s’appliquent aux stratégies de protection d’application dans la **version préliminaire** du portail Azure.
+Cette rubrique fournit des informations sur la manière de vérifier s’il existe des problèmes après avoir configuré une stratégie de protection d’application. Ces instructions s’appliquent aux stratégies de protection des applications dans la **préversion** du portail Azure.
 
 ### <a name="checking-for-symptoms"></a>Recherche de symptômes
 Les utilisateurs ont peu de chances de signaler des problèmes étant donné que la protection d’application est un outil de protection des données. En cas de problème avec la configuration de la protection d’application, l’utilisateur dispose d’un accès illimité, comme il en disposerait sans la protection d’application, et il n’aura pas conscience de l’existence d’un problème. C’est pourquoi nous vous recommandons de valider la configuration de votre protection d’application en pilotant vos stratégies de protection d’application avec un petit groupe d’utilisateurs à même d’en tester délibérément les restrictions.
@@ -57,9 +60,4 @@ Voici les actions à exécuter selon l’état de l’utilisateur :
 ### <a name="see-also"></a>Voir aussi
 
 [Qu’est ce qu’une stratégie de protection d’application Intune ?](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

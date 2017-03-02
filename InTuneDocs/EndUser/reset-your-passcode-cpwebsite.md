@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: a8ce59755a74199eda6865feda68c0613d10c2a7
+ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
+ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -33,21 +34,26 @@ Si vous perdez le code confidentiel ou le mot de passe d’un appareil que vous 
 
 Pour réinitialiser votre code d’accès
 
-1.  Ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com) sur l’appareil dont vous souhaitez réinitialiser le code d’accès.
+1.    Sur le [site web Portail d’entreprise](http://portal.manage.microsoft.com), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
 
-2.  Choisissez **Réinitialiser le code d’accès**.
+2. Dans la page __Mes appareils__, sélectionnez le nom de l’appareil dont vous voulez réinitialiser le code secret.
 
-    ![Détails de l’appareil avec le bouton Réinitialiser le code d’accès](./media/iwp-screen-with-all-options.png)
+  ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Choisissez **Déconnexion**, puis reconnectez-vous avec vos informations d’identification professionnelles ou scolaires. Vous devez vous reconnecter dans les cinq minutes.
+3.    L’appareil s’ouvre dans une fenêtre contextuelle. Sélectionnez le bouton **Réinitialiser le code secret**.
 
-    ![Message de réinitialisation avec bouton de déconnexion](./media/iwp-2-sign-out.png)
+    ![Toutes les options disponibles pour un appareil sélectionné sur le site web Portail d’entreprise, notamment Renommer, Supprimer, Réinitialiser l’appareil, Réinitialiser le code secret et Verrouillage à distance. ](./media/iwp-screen-with-all-options.png)
 
-4.  Choisissez **Réinitialiser le code d’accès**.
+4.  Une bannière s’affiche, vous demandant de confirmer que vous voulez réinitialiser votre code secret, après quoi votre appareil vous déconnecte. Vous devez alors attendre 5 minutes avant de vous reconnecter.
 
-    ![Message qui explique ce qui se passe quand vous réinitialisez le code d’accès](./media/iwp-3-tap-reset-passcode-after-signin.png)
+  ![Bannière de réinitialisation du code secret avec son avertissement concernant la réinitialisation du code secret et la façon dont l’utilisateur sera déconnecté. Les boutons disponibles pour l’utilisateur sont Se déconnecter et Annuler.](./media/iwp-reset-passcode-popup.png)
 
-    Pour savoir comment la **réinitialisation du code d’accès** fonctionne sur votre appareil, consultez le tableau.
+4.  Sélectionnez **Se déconnecter**. Un dernier message s’affiche, vous informant de la suppression du code secret de l’appareil. Si vous n’avez pas l’appareil avec vous, ne supprimez pas le code secret, car quiconque ayant un accès physique à l’appareil pourra accéder à la plupart des informations (personnelles ou professionnelles) contenues dans ce dernier.
+
+  ![Deuxième bannière de réinitialisation du code secret avec son avertissement concernant la réinitialisation du code secret et la façon dont ce dernier sera supprimé de l’appareil. Elle indique également la façon recommandée de définir un nouveau code secret en accédant aux paramètres de l’appareil.](./media/iwp-reset-passcode-2nd-popup.png)
+
+
+Les types de codes secrets varient en fonction des appareils. Pour déterminer comment la réinitialisation de votre code secret peut affecter votre appareil spécifique, consultez le tableau ci-dessous. 
 
     |Type d'appareil|Ce qui se produit lors de la réinitialisation|
     |------------|-----------|
@@ -61,9 +67,4 @@ Pour réinitialiser votre code d’accès
     Pour afficher une notification confirmant que votre code d’accès a été réinitialisé avec succès, cliquez sur l’indicateur de notification en haut à droite du site web du portail d’entreprise.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

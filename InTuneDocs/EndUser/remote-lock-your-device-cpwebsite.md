@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
+ms.sourcegitcommit: 7f2bd282056b035b6f7008db4159d1e2f44953a5
+ms.openlocfilehash: 424d3deedbec2ba28d6c92d0ccd1cb8dc26845b4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,15 +41,21 @@ Pour plus de sécurité, vous pouvez le verrouiller en utilisant l’option Verr
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Pour utiliser l’option Verrouillage à distance pour verrouiller votre appareil
 
-1.    Sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com), appuyez sur le nom de l’appareil que vous voulez verrouiller.
+1.    Sur le [site web Portail d’entreprise](http://portal.manage.microsoft.com), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
 
-2.    Appuyez sur **Verrouillage à distance**.
+  ![Image du site web Portail d’entreprise avec un menu latéral développé sur le côté gauche de l’écran, contenant les boutons Accueil, Toutes les applications, Mes appareils, Support technique et Déconnexion.](/media/iwp-expanded-sidebar.png)
 
-    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+2. Dans la page __Mes appareils__, sélectionnez le nom de l’appareil à verrouiller.
 
-3.    Une notification s’affiche pour vous informer que vous êtes sur le point de verrouiller votre appareil. Appuyez sur **Verrouillage à distance** et le site web du portail d’entreprise tente de verrouiller votre appareil.
+  ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
 
-    Une fois que vous avez appuyé sur **Verrouillage à distance**, le message « Verrouillage à distance en attente » apparaît.  Si le verrouillage à distance aboutit, l’état passe à « Verrouillage à distance réussi ».
+3.    L’appareil s’ouvre dans une fenêtre contextuelle. Appuyez sur le bouton **Verrouillage à distance**.
+
+    ![Toutes les options disponibles pour un appareil sélectionné sur le site web Portail d’entreprise, notamment Renommer, Supprimer, Réinitialiser l’appareil, Réinitialiser le code secret et Verrouillage à distance. ](./media/iwp-screen-with-all-options.png)
+
+4.    Une notification s’affiche pour vous informer que vous êtes sur le point de verrouiller votre appareil. Appuyez sur **Verrouillage à distance** et le site web du portail d’entreprise tente de verrouiller votre appareil.
+
+    Une fois que vous avez sélectionné **Verrouillage à distance**, le message « Verrouillage à distance en attente » s’affiche.  Si le verrouillage à distance aboutit, l’état passe à « Verrouillage à distance réussi ».
 
     L’état Verrouillage à distance s’affiche à trois emplacements :
 
@@ -62,9 +69,4 @@ Pour plus de sécurité, vous pouvez le verrouiller en utilisant l’option Verr
 Si vous retrouvez votre appareil et que vous souhaitez le déverrouiller après avoir utilisé le verrouillage à distance, il vous suffit d’entrer votre code secret.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

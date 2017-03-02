@@ -1,5 +1,6 @@
 ---
-title: "Guide pratique pour ajouter des applications web à Intune | Préversion Intune Azure | Microsoft Docs"
+title: "Guide pratique pour ajouter des applications web à Intune"
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment ajouter des applications web à Intune."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 8b14b9dfef7100a86c338c362ba56be329a8639c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c2e54d3e57a4b02ba277b88cc672d5587c449281
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -41,4 +43,4 @@ ms.lasthandoff: 02/16/2017
     - **Télécharger icône** : téléchargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 8. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
 
-L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](/intune-azure/manage-apps/deploy-apps).
+L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique d’affectation d’applications à des groupes](/intune-azure/manage-apps/deploy-apps).

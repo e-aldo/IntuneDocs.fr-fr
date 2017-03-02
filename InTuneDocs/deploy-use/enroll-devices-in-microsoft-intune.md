@@ -2,10 +2,10 @@
 title: Inscrire des appareils | Microsoft Docs
 description: "La gestion des appareils mobiles utilise l’inscription pour gérer les appareils et leur autoriser l’accès aux ressources."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 483fd327be25a1cb08e5295d72a27987ab018062
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -37,7 +38,7 @@ Le tableau suivant présente les méthodes d’inscription Intune, ainsi que les
 
 - **Réinitialisation** : indique si l’appareil doit être réinitialisé pour que les utilisateurs puissent inscrire l’appareil. Le terme « réinitialiser » implique une réinitialisation des paramètres d’usine de l’appareil, laquelle supprime toutes les données. Pour plus d’informations, consultez [Retirer des appareils](retire-devices-from-microsoft-intune-management.md).
 - **Affinité** : associe les appareils à des utilisateurs. Fonctionnalité nécessaire pour la gestion des applications mobiles (GAM) et l’accès conditionnel aux données d’entreprise. Pour plus d’informations, consultez [Affinité utilisateur](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Verrou**: indique que les utilisateurs ne peuvent pas désinscrire leurs appareils de la gestion. Les utilisateurs peuvent désinscrire leurs appareils sur toutes les plateformes à l’aide de l’application Portail d’entreprise. Ils ne peuvent pas utiliser les menus du système d’exploitation natif pour les désinscrire. 
+- **Verrou** : indique si les utilisateurs ne sont pas autorisés à désinscrire leurs appareils à l’aide des menus du système d’exploitation natif. Les utilisateurs peuvent désinscrire leurs appareils sur toutes les plateformes à l’aide de l’application Portail d’entreprise. 
 
 **Méthodes d’inscription iOS**
 
@@ -130,9 +131,4 @@ Intune peut gérer les plateformes d’appareils suivantes :
 - [Prérequis pour l’inscription d’appareils](prerequisites-for-enrollment.md)
 - [Gérer les appareils d’entreprise](manage-corporate-owned-devices.md)
 - [Ordinateurs et appareils mobiles pris en charge](../get-started/supported-mobile-devices-and-computers.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

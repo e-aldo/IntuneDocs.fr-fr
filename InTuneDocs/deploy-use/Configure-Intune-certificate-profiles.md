@@ -1,5 +1,5 @@
 ---
-title: Configurer les profils de certificat | Microsoft Intune
+title: Configurer les profils de certificat | Microsoft Docs
 description: "Découvrez comment créer un profil de certificat Intune."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 70fba8f983efb245afc3fb19fa38287d1a84b1f4
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Configurer les profils de certificats Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Une fois que vous avez configuré l’infrastructure et les certificats comme décrit dans [Configurer l’infrastructure de certificat pour SCEP](configure-certificate-infrastructure-for-scep.md) ou [Configurer l’infrastructure de certificat pour PFX](configure-certificate-infrastructure-for-pfx.md), vous pouvez créer des profils de certificat. Voici le processus :
 
 - **Tâche 1** : Exporter le certificat d’autorité de certification racine approuvée
@@ -154,9 +159,4 @@ Ensuite, découvrez comment utiliser des certificats pour sécuriser les profils
 -  [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
 -  [Connexions Wi-Fi dans Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 -  [Connexions VPN dans Microsoft Intune](vpn-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

@@ -1,6 +1,7 @@
 ---
-title: "Création et déploiement de stratégies de protection d’application | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : découvrez comment les stratégies de protection d’application Intune peuvent vous aider à protéger les données utilisées par les applications que vous gérez."
+title: "Créer et déployer des stratégies de protection d’applications"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Découvrez comment les stratégies de protection d’application Intune peuvent vous aider à protéger les données utilisées par les applications que vous gérez."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -23,7 +26,7 @@ ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-**Si vous n’êtes pas dans le service Intune dans le programme de version préliminaire du portail Azure**, cette rubrique explique [comment créer des stratégies de protection d’application](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) dans la console Intune classique.
+**Si vous n’êtes pas dans le service Intune dans le programme de préversion du portail Azure**, cette rubrique explique [comment créer des stratégies de protection d’application](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) dans la console Intune classique.
 
 Les stratégies de protection d'application peuvent être appliquées à des applications qui s’exécutent sur des appareils gérés ou non par Intune. Pour une description plus détaillée du fonctionnement des stratégies de protection d’application et les scénarios pris en charge par les stratégies de protection d’application Intune, consultez [Nouveautés des stratégies de protection d’application Microsoft Intune](what-is-app-protection-policy.md).
 
@@ -122,9 +125,4 @@ Pour afficher la liste complète des paramètres de stratégie pour iOS et Andro
 ### <a name="see-also"></a>Voir aussi
 * [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](app-protection-enabled-android-apps.md)
 * [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,6 +1,7 @@
 ---
-title: "Stratégie d’accès conditionnel Exchange sur site | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : guide de configuration de l&quot;accès conditionnel Exchange sur site et Exchange Online Dedicated hérité dans Intune"
+title: "Stratégie d’accès conditionnel Exchange sur site"
+titleSuffix: Intune Azure preview
+description: "Préversion d’Intune Azure : guide de configuration de l’accès conditionnel Exchange sur site et Exchange Online Dedicated hérité dans Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -12,14 +13,16 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="how-to-create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Guide de création d'une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans la version préliminaire de Microsoft Intune Azure
+# <a name="how-to-create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Guide de création d’une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans la préversion de Microsoft Intune Azure
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -96,9 +99,4 @@ L'application **Courrier** sur Windows 8.1 et les versions ultérieures (en cas 
   - Lorsque vous définissez cette option pour bloquer l’accès, l'accès initial des appareils à Exchange sur site est immédiatement bloqué.  Les appareils qui appartiennent à des utilisateurs des **Groupes inclus** reçoivent un accès une fois que ces appareils sont inscrits auprès d'Intune et déterminés comme conformes. Les appareils Android qui n’exécutent pas Samsung KNOX standard seront toujours bloqués, car ils ne prennent pas en charge ce paramètre.
 10. Sous **Exceptions de la plateforme d'appareils**, choisissez **Ajouter** pour spécifier les plateformes. Si le paramètre **Accès aux appareils non gérés** est défini sur **Bloqué**, les appareils qui sont inscrits et conformes seront autorisés, même s’il existe une exception de plateforme qui bloque. Choisissez **OK** pour enregistrer les paramètres.
 11. Dans le panneau **Local**, cliquez sur **Enregistrer** pour enregistrer la stratégie d’accès conditionnel.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

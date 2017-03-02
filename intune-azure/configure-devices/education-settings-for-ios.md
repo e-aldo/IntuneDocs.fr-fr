@@ -1,6 +1,7 @@
 ---
-title: "Configurer les paramètres d’Intune Education pour iOS | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire  d’Intune Azure : en savoir plus sur les paramètres que vous pouvez utiliser pour contrôler les paramètres Education sur les appareils iOS."
+title: "Configurer les paramètres d’Intune Education pour iOS"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Découvrez les paramètres que vous pouvez utiliser pour contrôler les paramètres Education sur les appareils iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 44c427f8-0f22-43c2-8c29-e0f9fa533b1f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: e52fdf8c30a680d62071cd31e308dd0180e8b9dc
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 8d801c0b264e95348f55b1d4046c00e43ead5d10
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="how-to-configure-intune-education-settings-for-ios-devices-in-intune-azure-preview"></a>Guide pratique pour la configuration des paramètres d’Intune Education pour les appareils iOS dans la version préliminaire d’Intune Azure
+# <a name="how-to-configure-intune-education-settings-for-ios-devices-in-intune-azure-preview"></a>Guide pratique pour configurer des paramètres d’Intune Education pour les appareils iOS dans la préversion d’Intune Azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -43,9 +46,4 @@ ms.openlocfilehash: e52fdf8c30a680d62071cd31e308dd0180e8b9dc
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

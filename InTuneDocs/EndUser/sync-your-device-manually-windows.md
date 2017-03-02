@@ -1,5 +1,5 @@
 ---
-title: Synchroniser votre appareil Windows manuellement | Microsoft Docs
+title: "Synchroniser manuellement votre appareil Windows | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
-ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: ff5a4313337c89da00cb87e0f4dd6c8dcc233361
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 Parfois, une tentative d’installation d’une application sur votre appareil Windows peut durer plus longtemps que prévu. Dans ce cas, vous pouvez tenter de synchroniser manuellement votre appareil Windows. La synchronisation peut accélérer l’installation.
 
-> [!Note] 
+> [!Note]
 > L’installation d’applications peut prendre du temps si vous êtes sur un réseau avec des vitesses plus lentes ou des quantités plus élevées d’appareils téléchargeant du contenu en même temps.
 
 Les versions suivantes de Windows peuvent être synchronisées manuellement. Malheureusement, si votre appareil utilise une autre version de Windows, vous ne pouvez pas lancer une synchronisation manuelle.
@@ -131,9 +133,4 @@ Pour synchroniser manuellement votre appareil Windows Phone 8.1 pour accélérer
    Le message « Nous synchronisons votre compte » apparaît en haut de l’écran jusqu’à la fin de la synchronisation de votre appareil.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

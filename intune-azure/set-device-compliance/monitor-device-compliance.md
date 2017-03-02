@@ -1,6 +1,7 @@
 ---
-title: "Guide de surveillance de la conformité des appareils | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : découvrez comment surveiller la conformité des appareils."
+title: "Guide pratique pour surveiller la conformité des appareils"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Découvrez comment surveiller la conformité des appareils."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,18 +14,20 @@ ms.technology:
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: eb27002f449b3bbebb2a9b4ed780350c71eda881
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d59d94aafa71a9891a6746902339255ea7a9ad15
+ms.lasthandoff: 02/18/2017
 
 
 ---
-# <a name="how-to-monitor-compliance-in-intune-azure-preview"></a>Guide de surveillance de la conformité des appareils dans la version préliminaire d'Intune Azure
+# <a name="how-to-monitor-compliance-in-intune-azure-preview"></a>Guide pratique pour surveiller la conformité des appareils dans la préversion d’Intune Azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Vous pouvez afficher le résumé de l’état de vos **profils de conformité** dans le panneau **Vue d'ensemble**.
-Vous pouvez cliquer de manière interactive sur les graphiques pour explorer les détails. Si vous avez configuré plusieurs profils de conformité, vous pouvez également afficher l’état de chaque stratégie en accédant à son volet et en choisissant **Rapports** dans la section **Gérer**.  Vous trouverez ci-dessous les détails des rapports disponibles dans la version préliminaire.
+Vous pouvez cliquer de manière interactive sur les graphiques pour explorer les détails. Si vous avez configuré plusieurs profils de conformité, vous pouvez également afficher l’état de chaque stratégie en accédant à son volet et en choisissant **Rapports** dans la section **Gérer**.  Vous trouverez ci-dessous les détails des rapports disponibles dans la préversion.
 
 ##  <a name="device-compliance"></a>Conformité de l’appareil
 
@@ -44,9 +47,4 @@ Le rapport de conformité de configuration fournit des détails pour chaque para
 - La plateforme à laquelle le paramètre est appliqué.
 
 Vous pouvez rechercher dans chaque paramètre pour afficher plus d’informations sur les profils dans lesquels ces paramètres ont été activés, ainsi que la valeur du paramètre configurée.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

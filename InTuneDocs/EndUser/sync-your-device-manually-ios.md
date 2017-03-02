@@ -1,5 +1,5 @@
 ---
-title: Synchroniser votre appareil iOS manuellement | Microsoft Docs
+title: "Synchroniser manuellement votre appareil iOS | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 30695011befb8c590bbd90656843e38638759443
-ms.openlocfilehash: 148660008fbe0eeea3ee9f7d9490443f60abbf0c
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: a35fa4ed88f1cb0e0e4e96b26bb76c009a25e436
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -41,9 +43,4 @@ Le téléchargement d’une application à partir du portail d’entreprise peut
 Une barre de chargement apparaît à l’écran et affiche le chargement jusqu’à ce que la synchronisation soit terminée.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

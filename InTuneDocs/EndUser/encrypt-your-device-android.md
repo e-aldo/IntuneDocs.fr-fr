@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
-ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,6 +41,9 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
     (Sur certains téléphones, vous devrez choisir **Stockage** &gt; **Chiffrement de stockage** ou **Stockage** &gt; **Écran de verrouillage et sécurité** &gt; **Autres paramètres de sécurité** pour trouver l’option Chiffrer).
 
 3.  Suivez les instructions à l'écran. Au cours du chiffrement, votre appareil peut redémarrer plusieurs fois.
+
+> [!Note]
+> Certains appareils Android ne peuvent pas être chiffrés. Découvrez-en plus [ici](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>Réponse aux problèmes
 **Problème** : Vous avez déjà chiffré votre appareil, et vous constatez l’un des problèmes décrits ci-après.
@@ -64,10 +68,6 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 
     5. Ouvrez l’application Portail d’entreprise, sélectionnez votre appareil, puis appuyez sur **Vérifier la conformité**.
 
+
 Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’[équipe Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

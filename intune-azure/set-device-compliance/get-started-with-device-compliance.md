@@ -1,6 +1,7 @@
 ---
-title: "Bien démarrer avec la conformité des appareils | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : utilisez cette rubrique pour comprendre les conditions préalables requises pour créer des stratégies de conformité dans Microsoft Intune"
+title: "Bien démarrer avec la conformité des appareils"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Utilisez cette rubrique pour comprendre les prérequis nécessaires à la création des stratégies de conformité dans Microsoft Intune"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: c868bc9adc0afbc216d47530a7eace10f8ca2d9b
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Bien démarrer avec la conformité des appareils dans la version préliminaire d’Intune Azure
+# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Bien démarrer avec la conformité des appareils dans la préversion d’Intune Azure
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -79,9 +82,4 @@ Période de validité de l’état de conformité
 [Créer une stratégie de conformité pour iOS](create-a-compliance-policy-for-ios.md)
 
 [Créer une stratégie de conformité pour Windows](create-a-compliance-policy-for-windows.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

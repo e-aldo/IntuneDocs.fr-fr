@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ Quand votre appareil Windows ou Windows Phone est inscrit dans Intune, vous pouv
 
 -   accéder au réseau de l’entreprise, à votre messagerie et à vos fichiers de travail ;
 
--   obtenir des applications d’entreprise à partir du site web du portail d’entreprise ; (Pour Windows 7 et Windows Vista, vous pouvez obtenir des applications d’entreprise à partir du site web du portail d’entreprise uniquement.)
+-   obtenir des applications d’entreprise à partir du site web du portail d’entreprise ; (__Remarque__ : Pour Windows 7 et Windows Vista, vous ne pouvez obtenir des applications d’entreprise qu’à partir du site web du portail d’entreprise.)
 
 -   configurer automatiquement votre compte e-mail d’entreprise ou scolaire ;
 
@@ -67,6 +68,7 @@ Quand vous inscrivez votre appareil, vous autorisez l’administrateur informati
 -  Votre administrateur informatique peut installer des applications et des mises à jour sur votre ordinateur.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Que se passe-t-il toutes les huit heures après l’inscription d’appareils ?
+
 Environ toutes les huit heures, les appareils inscrits vont :
 
 -   télécharger toute mise à jour d’une application ou d’une stratégie rendue disponible par votre administrateur informatique ;
@@ -76,9 +78,4 @@ Environ toutes les huit heures, les appareils inscrits vont :
 -   envoyer toute mise à jour de l'inventaire d'applications de la société.
 
 Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

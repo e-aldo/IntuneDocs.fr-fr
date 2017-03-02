@@ -1,24 +1,28 @@
 ---
-title: Glossaire Intune | Microsoft Intune
+title: Glossaire Intune | Microsoft Docs
 description: En savoir plus sur la terminologie de Microsoft Intune
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/17/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6c9d44e6a328b4bfb3827f54ac35b83e3c7aac
-ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="microsoft-intune-glossary"></a>Glossaire Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>Objet
 
@@ -32,7 +36,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 ## <a name="b"></a>B
 |||
 |-|-|
-|BYOD|[Apportez votre propre appareil (Bring Your Own Device)](/intune/get-started/choose-how-to-enroll-devices1). Les utilisateurs peuvent installer sur leur appareil l’application Portail d’entreprise Intune, puis inscrire leur appareil pour pouvoir accéder aux ressources d’entreprise comme la messagerie, les applications d’entreprise, les données d’entreprise et le support.| 
+|BYOD|[Apportez votre propre appareil (Bring Your Own Device)](/intune/get-started/choose-how-to-enroll-devices1). Les utilisateurs peuvent installer sur leur appareil l’application Portail d’entreprise Intune, puis inscrire leur appareil pour pouvoir accéder aux ressources d’entreprise comme la messagerie, les applications d’entreprise, les données d’entreprise et le support.|
 
 ## <a name="c"></a>C
 |||
@@ -50,8 +54,8 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |||
 |-|-|
 |Déploiement|Fait d’envoyer une application ou une stratégie à un appareil ou à un utilisateur que vous gérez.|
-|Action de déploiement|Choix que vous faites quand vous [déployez une application](/intune/deploy-use/deploy-apps-in-microsoft-intune). Vous pouvez choisir de rendre l’installation de l’application obligatoire ou facultatif, ou vous pouvez désinstaller l’application.|
-|Gestionnaire d'inscription d'appareil|Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du [gestionnaire d’inscription d’appareils](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils.|
+|Action de déploiement|Choix que vous faites quand vous [déployez une application](/intune/deploy-use/deploy-apps-in-microsoft-intune). Vous pouvez choisir de rendre l’installation de l’application obligatoire ou facultative, ou vous pouvez désinstaller l’application.|
+|Gestionnaire d'inscription d'appareils|Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du [gestionnaire d’inscription d’appareils](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils.|
 |Mappage de groupe d’appareils|Vous aide à [ajouter automatiquement des appareils à des groupes](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) en fonction d’une catégorie d’appareils (comme « Personnel » ou « Ventes ») que vous ou l’utilisateur final pouvez affecter à l’appareil.|
 
 ## <a name="e"></a>E
@@ -59,7 +63,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |Profil de messagerie|Cette stratégie peut être utilisée pour configurer les [paramètres d’accès à la messagerie](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) pour des clients de messagerie spécifiques sur des appareils mobiles, en minimisant la configuration que l’utilisateur final doit effectuer.|
 |EMS|Microsoft Enterprise Mobility + Security (anciennement Enterprise Mobility Suite) conserve les données de votre entreprise protégées tout en permettant à vos utilisateurs d’[accéder aux applications et au contenu dont ils ont besoin](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
-|Utilisateur final|[Utilisateurs d’appareils comme des téléphones et des PC](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) que vous gérez à l’aide d’Intune.|
+|Utilisateur final|[Utilisateurs d’appareils comme des téléphones et des PC](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) gérés à l’aide d’Intune.|
 |Inscription|Microsoft Intune utilise l’[inscription](/intune/deploy-use/enroll-devices-in-microsoft-intune) pour intégrer des appareils dans la gestion et pour autoriser l’accès à des ressources.|
 
 ## <a name="f"></a>F
@@ -80,10 +84,10 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 ## <a name="i"></a>I
 |||
 |-|-|
-|console d'administration Intune|Console actuelle que vous utilisez pour la plupart des opérations de gestion Intune.|
+|Console d'administration Intune|Console actuelle que vous utilisez pour la plupart des opérations de gestion Intune.|
 |Client logiciel Intune|Autre moyen de [gérer des PC Windows](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune). Consultez [Choisir comment gérer des appareils](/intune/get-started/choose-how-to-manage-devices) pour déterminer la méthode à utiliser.|
 |Éditeur de logiciel Intune|Outil que vous utilisez pour [définir les applications que vous voulez déployer et les télécharger dans votre espace de stockage cloud](/intune/deploy-use/add-apps).|
-|inventaire|Utilisé pour afficher le [matériel et les logiciels installés](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) sur les appareils que vous gérez.|
+|Inventaire|Utilisé pour afficher le [matériel et les logiciels installés](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) sur les appareils que vous gérez.|
 
 ## <a name="k"></a>K
 |||
@@ -95,7 +99,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |Managed Browser|[Application de navigation web](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)que vous pouvez déployer dans votre organisation à l’aide de Microsoft Intune. Une stratégie Managed Browser configure une liste verte ou une liste rouge, qui restreint les sites web auxquels les utilisateurs de Managed Browser ont accès.|
 |Gestion des applications mobiles|La [gestion des applications mobiles (GAM)](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) vous permet de publier, envoyer des notifications Push, configurer, sécuriser, surveiller et mettre à jour des applications mobiles pour vos utilisateurs.
-|Gestion des appareils mobiles|La [gestion des appareils mobiles](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) vous permet d’inscrire des appareils dans Intune pour approvisionner, configurer, surveiller et effectuer des actions sur ces appareils. 
+|Gestion des appareils mobiles|La [gestion des appareils mobiles (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) vous permet d’inscrire des appareils dans Intune pour approvisionner, configurer, surveiller et effectuer des actions sur ces appareils.
 |Autorité MDM|L’[autorité de gestion d’appareils mobiles](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) définit le service de gestion habilité à gérer un ensemble d’appareils. Les options en matière d’autorité de gestion des appareils mobiles incluent Intune en version autonome et Configuration Manager avec Intune.|
 |Stratégie d’approvisionnement des applications mobiles|Stratégie iOS qui permet de garantir que les [profils de configuration](/intune/deploy-use/ios-mobile-app-provisioning-profiles) pour les applications iOS que vous n’expirent pas.|
 |Stratégies de configuration des applications mobiles|Stratégie iOS qui est utilisée pour [fournir des paramètres aux applications iOS compatibles](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) quand elles sont exécutées, par exemple un nom de société ou l’adresse d’un serveur.|
@@ -123,7 +127,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 ## <a name="s"></a>S
 |||
 |-|-|
-|réinitialisation sélective|Une [réinitialisation sélective](/intune/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune) supprime seulement les données d’entreprise, notamment les données de gestion des applications mobiles (GAM) (le cas échéant), les paramètres et les profils de messagerie sur un appareil. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil.|
+|Réinitialisation sélective|Une [réinitialisation sélective](/intune/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune) supprime seulement les données d’entreprise, notamment les données de gestion des applications mobiles (GAM) (le cas échéant), les paramètres et les profils de messagerie sur un appareil. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil.|
 |Abonnement|L’accord que vous acceptez qui vous permet d’accéder à un client Intune.|
 
 ## <a name="t"></a>T
@@ -131,7 +135,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |TeamViewer|Une application de tiers qui fonctionne avec Intune pour fournir [des fonctionnalités d’assistance à distance](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs) pour les PC Windows gérés avec le client logiciel Intune.|
 |Client|Une seule instance du service Intune auquel vous pouvez accéder à l’aide d’un abonnement.|
-|conditions générales|Type de stratégie que vous déployez sur les utilisateurs et qui contient des informations que les utilisateurs doivent [lire et accepter](/intune/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) avant de pouvoir utiliser le portail d’entreprise pour s’inscrire et accéder à leur travail.|
+|Conditions générales|Type de stratégie que vous déployez sur les utilisateurs et qui contient des informations que les utilisateurs doivent [lire et accepter](/intune/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) avant de pouvoir utiliser le portail d’entreprise pour s’inscrire et accéder à leur travail.|
 
 ## <a name="v"></a>V
 |||
@@ -143,12 +147,4 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |||
 |-|-|
 |Profil Wi-Fi|Stratégie qui déploie des [paramètres de réseau sans fil](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) sur les appareils pour permettre aux utilisateurs de se connecter à votre réseau d’entreprise sans avoir à connaître ou à configurer des paramètres.
-
-
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

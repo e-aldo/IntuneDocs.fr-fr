@@ -1,6 +1,7 @@
 ---
-title: "Guide de création d&quot;une stratégie de conformité pour iOS | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : apprenez à créer une stratégie de conformité pour les appareils iOS."
+title: "Guide pratique pour créer une stratégie de conformité pour iOS"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : apprenez à créer une stratégie de conformité pour les appareils iOS."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,21 +14,23 @@ ms.technology:
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: 334b22bedd0d08bb2294984b2ce5255029857700
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c2ace3061e175a6eefd864bdda176651cc09a5b1
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune-azure-preview"></a>Création d'une stratégie de conformité pour des appareils iOS dans la version préliminaire d’Intune Azure
+# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune-azure-preview"></a>Guide pratique pour créer une stratégie de conformité pour des appareils iOS dans la préversion d’Intune Azure
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Des stratégies de conformité sont créées pour chaque plateforme.  Vous pouvez créer une stratégie de conformité dans le portail Azure. Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](what-is-device-compliance.md). Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](get-started-with-device-compliance.md).
 
-La table ci-dessous décrit également la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
+Le tableau ci-dessous décrit également la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
 
 -------------------------------
 
@@ -120,9 +123,4 @@ Pour plus d’informations sur les profils de messagerie, consultez [Configurer 
 <!--- ## Next steps
 
 [How to monitor device compliance](monitor-device-compliance.md)--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

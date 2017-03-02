@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
+ms.sourcegitcommit: f413846b6f302502c31ca7b4178ebca4d1e0350e
+ms.openlocfilehash: 8d5165465e0e99462cefaae9494481d618acc80f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,17 @@ Vous pouvez décider que vous souhaitez renommer votre appareil pour faciliter s
 
 Pour renommer votre appareil :
 
-1.  Ouvrez le [site web du portail d’entreprise](http://portal.manage.microsoft.com) et appuyez sur le nom de l’appareil que vous souhaitez modifier.
+1.    Sur le [site web Portail d’entreprise](http://portal.manage.microsoft.com), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
 
-2.  Appuyez sur **Renommer**.
+2. Dans la page __Mes appareils__, sélectionnez le nom de l’appareil à renommer.
 
-    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Dans la zone où apparaît le nom de votre appareil, tapez son nouveau nom et appuyez sur le bouton **Renommer**. Votre appareil s’affiche maintenant avec le nouveau nom.
+3.    L’appareil s’ouvre dans une fenêtre contextuelle. Appuyez sur le bouton **Renommer**.
+
+    ![Toutes les options disponibles pour un appareil sélectionné sur le site web Portail d’entreprise, notamment Renommer, Supprimer, Réinitialiser l’appareil, Réinitialiser le code secret et Verrouillage à distance. ](./media/iwp-screen-with-all-options.png)
+
+4.  Dans la zone où apparaît le nom de votre appareil, tapez son nouveau nom et appuyez sur le bouton **Renommer**. Votre appareil s’affiche maintenant avec le nouveau nom.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

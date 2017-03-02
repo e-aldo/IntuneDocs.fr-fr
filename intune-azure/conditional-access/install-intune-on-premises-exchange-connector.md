@@ -1,6 +1,7 @@
 ---
-title: "Connecteur Exchange pour EAS local | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d&quot;Intune Azure : Exchange ActiveSync MDM - utilisation de l’outil Connector pour permettre la communication entre la console d’administration Intune et le serveur Exchange Server local"
+title: Connecteur Exchange pour EAS local
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Exchange ActiveSync MDM - utilisation de l’outil Connector pour permettre la communication entre la console d’administration Intune et le serveur Exchange Server local"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 2871136fc15f945fe5b757a6e4364d3980832e37
-ms.openlocfilehash: 92e4a15630c70ac80dd07684baafbbd15cd2f38c
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: d112f453302361ac95eb2c44d7440a72d212cc4a
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="install-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Installation du connecteur Intune local dans la version préliminaire de Microsoft Intune Azure
+# <a name="install-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Installation du connecteur Intune local dans la préversion de Microsoft Intune Azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -133,9 +136,4 @@ Vous pouvez également vérifier la date et l'heure de la dernière tentative de
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Création d’une stratégie d’accès conditionnel pour Exchange sur site](create-conditional-access-policy-for-exchange-on-premises.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

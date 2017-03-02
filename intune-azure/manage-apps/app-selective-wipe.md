@@ -1,6 +1,7 @@
 ---
-title: "Guide pratique de réinitialisation des données d’entreprise uniquement des applications | Version préliminaire d’Intune Azure | Microsoft Docs"
-description: "Version préliminaire d’Intune Azure : apprenez à effectuer une réinitialisation sélective des applications avec Microsoft Intune."
+title: "Guide pratique pour effacer uniquement les données d’entreprise des applications"
+titleSuffix: Intune Azure preview
+description: "Préversion Intune Azure : Apprenez à effectuer une réinitialisation sélective des applications avec Microsoft Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,13 +14,15 @@ ms.technology:
 ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 44aefa68761236b946f5ab1db678ecc4aa81e92b
-ms.openlocfilehash: ab2f9d065a1c4b0e0a016ff6195742cd09965191
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 0d5385583265800ccfbb7d57e3dd325d6c8283e7
+ms.lasthandoff: 02/18/2017
 
 ---
 
-# <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Guide pratique d’effacement des données d’entreprise uniquement sur les applications gérées par Intune
+# <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Guide pratique pour effacer uniquement les données d’entreprise des applications gérées par Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -28,13 +31,13 @@ Lorsqu'un appareil est perdu ou volé, ou si l'employé quitte votre entreprise,
 Pour supprimer des données d’application d’entreprise de manière sélective, créez une demande de réinitialisation en suivant les étapes indiquées dans cette rubrique. Une fois la demande terminée, les données d’entreprise sont supprimées de l’application dès sa prochaine exécution sur l’appareil.
 
 >[!IMPORTANT]
-> Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, cela s’applique uniquement à l’application Microsoft Outlook.
+> Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. Actuellement, cela s’applique uniquement à l’application Microsoft Outlook.
 
 ## <a name="create-a-wipe-request"></a>Créer une demande de réinitialisation
 
 1.  Connectez-vous au [portail Azure](https://portal.azure.com).
 
-2.  Choisissez **Plus de services**, saisissez **Intune** dans la zone de texte de filtre, puis sélectionnez **Intune**. Le panneau de la version préliminaire d’Intune s’ouvre, choisissez le panneau **Gérer les applications**.
+2.  Choisissez **Plus de services**, saisissez **Intune** dans la zone de texte de filtre, puis sélectionnez **Intune**. Le panneau de la préversion d’Intune s’ouvre. Choisissez le panneau **Gérer les applications**.
 
     ![Capture d'écran du panneau Nouvelle demande de réinitialisation](../media/intune-azure-preview-blade.png)
 
@@ -81,8 +84,3 @@ Les réinitialisations en attente sont affichées jusqu’à ce que vous les sup
 [Qu'est-ce qu'une stratégie de protection d’application](what-is-app-protection-policy.md)
 
 [Qu’est-ce que la gestion des applications](what-is-app-management.md)
-
-
-<!--HONumber=Feb17_HO2-->
-
-
