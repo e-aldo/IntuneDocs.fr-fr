@@ -1,9 +1,9 @@
 ---
-title: "Connecteur Exchange pour Exchange Online | Microsoft Intune"
+title: "Connecteur Exchange pour Exchange Online | Microsoft Docs"
 description: "Connectez Intune au service Office 365 Exchange pour prendre en charge la gestion des appareils mobiles via Exchange ActiveSync."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: b6d67391b50954e591817610164d8fe80fda8fd5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Configurer le connecteur service à service d’Intune pour Exchange Online
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Utilisez ces informations pour connecter Microsoft Intune et Exchange Online ou le nouveau service Microsoft Exchange Online Dedicated. Pour déterminer si votre environnement Microsoft Exchange Online Dedicated est la version **nouvelle** ou **héritée**, contactez votre responsable de comptes. Microsoft Intune prend en charge une seule connexion du connecteur Exchange par abonnement, quel que soit le type de connecteur.
 
@@ -62,9 +66,4 @@ Le connecteur de service à service configure et synchronise automatiquement vot
 Une fois que vous avez correctement configuré le connecteur Exchange, accédez à la [console d’administration Microsoft Intune](http://manage.microsoft.com). Choisissez **Admin**> **Gestion des appareils mobiles** > **Microsoft Exchange**. Vérifiez ensuite que les détails que vous avez fournis apparaissent sous **Informations de connexion à Exchange**.
 
 Vous pouvez également vérifier la date et l'heure de la dernière tentative de synchronisation réussie.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

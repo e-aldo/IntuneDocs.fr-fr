@@ -1,11 +1,11 @@
 ---
-title: "Stratégies de pare-feu pour PC Windows | Microsoft Intune"
+title: "Stratégies de pare-feu pour PC Windows | Microsoft Docs"
 description: "Intune peut vous aider à sécuriser les PC que vous gérez avec le client Intune de plusieurs façons, notamment en vous aidant à configurer les paramètres du Pare-feu Windows."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,23 @@ ms.technology:
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3faede4b60ac989e688b87ddb8112aebcf4c56ef
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: bad0d8867602baf69dc398cc06b91ca30b24c487
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Protéger les PC Windows à l'aide de stratégies de Pare-feu Windows dans Microsoft Intune
+# <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Protéger les PC Windows à l'aide de stratégies de Pare-feu Windows dans Microsoft Intune
 Microsoft Intune peut vous aider à sécuriser les PC Windows que vous gérez avec le client Intune et ce, de plusieurs façons. Par exemple, il peut fournir des stratégies vous permettant de configurer les paramètres du Pare-feu Windows sur des PC.
 
 Si vous n’avez pas encore installé le client de PC Windows Intune sur vos ordinateurs, consultez [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Utilisez les informations des sections suivantes pour configurer, déployer et surveiller les stratégies du Pare-feu Windows sur les PC Windows.
 
-## Utiliser des stratégies Intune pour gérer le Pare-feu Windows
+## <a name="use-intune-policies-to-manage-windows-firewall"></a>Utiliser des stratégies Intune pour gérer le Pare-feu Windows
 La stratégie du Pare-feu Windows vous permet de créer et de déployer les paramètres qui contrôlent le Pare-feu Windows sur les PC gérés. Vous ne pouvez pas gérer des exceptions personnalisées pour le Pare-feu Windows, et ces paramètres n’affectent pas les pare-feux tiers.
 
 > [!NOTE]
@@ -41,7 +43,7 @@ La stratégie du Pare-feu Windows vous permet de créer et de déployer les par
 > -   Pare-feu Windows
 > -   Agent de stratégie IPsec
 
-## Configurer une stratégie du Pare-feu Windows
+## <a name="configure-a-windows-firewall-policy"></a>Configurer une stratégie du Pare-feu Windows
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
 
@@ -51,9 +53,9 @@ La stratégie du Pare-feu Windows vous permet de créer et de déployer les par
 
 Après avoir déployé une stratégie du Pare-feu Windows, vous pouvez afficher son état dans la page **Toutes les stratégies** de l’espace de travail **Stratégie**.
 
-## Spécifier des paramètres de stratégie pour le Pare-feu Windows
+## <a name="specify-policy-settings-for-windows-firewall"></a>Spécifier des paramètres de stratégie pour le Pare-feu Windows
 
-### Activer le Pare-feu Windows
+### <a name="turn-on-windows-firewall"></a>Activer le Pare-feu Windows
 
 Ces paramètres de stratégie activent le Pare-feu Windows sur les ordinateurs gérés qui sont :
 - connectés à un domaine (par exemple, sur l’espace de travail) ;
@@ -64,7 +66,7 @@ La valeur par défaut pour chacun de ces paramètres est **Oui**, qui est la val
 
 
 
-### Bloquer toutes les connexions entrantes, y compris celles figurant dans la liste de programmes autorisés
+### <a name="block-all-incoming-connections-including-those-in-the-list-of-allowed-programs"></a>Bloquer toutes les connexions entrantes, y compris celles figurant dans la liste de programmes autorisés
 
 Ces paramètres de stratégie configurent le Pare-feu Windows pour bloquer le trafic réseau entrant sur les ordinateurs gérés qui sont :
 - connectés à un domaine (par exemple, sur l’espace de travail) ;
@@ -76,7 +78,7 @@ La valeur par défaut pour chacun de ces paramètres est **Oui**, qui est la val
 > [!IMPORTANT]
 > Si votre environnement comprend des ordinateurs gérés exécutant Windows Vista sans Service Pack installé, vous devez installer la mise à jour associée à l’[article 971800](http://go.microsoft.com/fwlink/?LinkId=188405) de la Base de connaissances Microsoft, ou bien désactiver les paramètres de la stratégie **Bloquer toutes les connexions entrantes** dans les stratégies déployées sur ces ordinateurs.
 
-### Informer l'utilisateur lorsque le Pare-feu Windows bloque un nouveau programme
+### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Informer l'utilisateur lorsque le Pare-feu Windows bloque un nouveau programme
 
 Ces paramètres de stratégie déterminent si le Pare-feu Windows doit avertir l’utilisateur du PC en cas de blocage du trafic réseau entrant lorsque les ordinateurs gérés sont :
 - connectés à un domaine (par exemple, sur l’espace de travail) ;
@@ -86,7 +88,7 @@ Ces paramètres de stratégie déterminent si le Pare-feu Windows doit avertir 
 La valeur par défaut pour chacun de ces paramètres est **Oui**.
 
 
-### Configurer des exceptions prédéfinies
+### <a name="configure-predefined-exceptions"></a>Configurer des exceptions prédéfinies
 
 Vous pouvez configurer des exceptions qui autorisent des types spécifiques de trafic réseau via le pare-feu, indépendamment des valeurs que vous avez configurées précédemment. Aucun de ces paramètres n’est configuré par défaut.
 
@@ -130,11 +132,6 @@ Vous pouvez configurer des exceptions qui autorisent des types spécifiques de t
 |**Windows Virtual PC**<br>(Windows 7 ou version ultérieure)|Ce paramètre permet à des machines virtuelles de communiquer avec d’autres ordinateurs.|
 |**Appareils mobiles sans fil**|Ce paramètre autorise le transfert de médias depuis un appareil multimédia ou une caméra compatible avec le réseau vers les ordinateurs gérés via le protocole MTP (Media Transfer Protocol). Ce paramètre utilise les protocoles de réseau SSDP et UPnP.|
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

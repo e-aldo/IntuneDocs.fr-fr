@@ -1,5 +1,5 @@
 ---
-title: "Stratégies de conformité d’appareils | Microsoft Intune"
+title: "Stratégies de conformité d’appareils | Microsoft Docs"
 description: "Cette rubrique explique la nature des stratégies de conformité des appareils et comment elles fonctionnent."
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b41307f620284315e4c71b0d0292b229753876ad
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Stratégies de conformité d’appareils dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="what-is-a-compliance-policy"></a>Qu’est-ce qu’une stratégie de conformité ?
 Pour protéger les données de l’entreprise, vous devez vérifier que les appareils utilisés pour accéder aux données et applications d’entreprise respectent certaines règles. Ces règles peuvent inclure l’utilisation d’un code confidentiel pour accéder aux appareils et le chiffrement des données stockées sur les appareils. Un ensemble de règles de ce type est appelé une stratégie de conformité.
 
@@ -63,9 +68,4 @@ Le tableau suivant répertorie les types d’appareils pris en charge par les st
 
 ### <a name="see-also"></a>Voir aussi
 [Restreindre l’accès aux services de messagerie et O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

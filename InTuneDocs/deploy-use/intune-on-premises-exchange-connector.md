@@ -1,5 +1,5 @@
 ---
-title: Connecteur Exchange pour EAS local | Microsoft Intune
+title: Connecteur Exchange pour EAS local | Microsoft Docs
 description: "Utilisez l’outil Connecteur pour activer la communication entre la console d’administration Intune et votre version locale d’Exchange Server pour la gestion des appareils mobiles Exchange ActiveSync."
 keywords: 
 author: andredm7
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Installer le connecteur Exchange local de Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 Pour configurer une connexion qui permet à Microsoft Intune de communiquer avec le serveur Exchange Server qui héberge les boîtes aux lettres des appareils mobiles, vous devez télécharger et configurer le connecteur Exchange local depuis la console d’administration d’Intune. Microsoft Intune prend en charge une seule connexion du connecteur Exchange par abonnement, quel que soit le type de connecteur.
@@ -129,9 +133,4 @@ Une fois que vous avez correctement configuré le connecteur Exchange, vous pouv
 
 
 Vous pouvez également vérifier la date et l'heure de la dernière tentative de synchronisation réussie.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

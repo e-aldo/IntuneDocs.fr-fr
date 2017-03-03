@@ -1,11 +1,11 @@
 ---
-title: "Gérer l’accès web avec le navigateur géré | Microsoft Intune"
+title: "Gérer l’accès web avec le navigateur géré | Microsoft Docs"
 description: "Déployez l’application de navigateur géré pour limiter la navigation sur le web et le transfert de données du web vers d’autres applications."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: a85aa3ce78425f2e00479ab0e48338e5eef8aec3
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Gérer l'accès à Internet à l'aide de stratégies Managed Browser avec Microsoft Intune
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l'accès à Internet à l'aide de stratégies Managed Browser avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Managed Browser est une application de navigation web que vous pouvez déployer dans votre organisation à l’aide de Microsoft Intune. Une stratégie Managed Browser configure une liste verte ou une liste rouge, qui restreint les sites web auxquels les utilisateurs de Managed Browser ont accès.
 
 Comme il s’agit d’une application gérée, vous pouvez également appliquer des stratégies de gestion des applications mobiles à Managed Browser. Ces stratégies peuvent porter sur le contrôle de l’utilisation des fonctions de type Copier, Couper et Coller et la prévention des captures d’écran ; elles peuvent également vérifier que les liens vers du contenu que les utilisateurs sélectionnent ne s’ouvrent que dans d’autres applications gérées. Pour plus d’informations, consultez [Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
@@ -39,7 +44,7 @@ Vous pouvez créer des stratégies Managed Browser pour les types d'appareils su
 
 Intune Managed Browser prend en charge l’ouverture de contenu web des [partenaires de l’application Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
-## Créer une stratégie Managed Browser
+## <a name="create-a-managed-browser-policy"></a>Créer une stratégie Managed Browser
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**.
 
@@ -65,7 +70,7 @@ Pour plus d’informations sur les formats d’URL que vous pouvez spécifier, c
 
 La nouvelle stratégie apparaît sous le nœud **Stratégies de configuration** de l’espace de travail **Stratégie**.
 
-## Créer un déploiement pour l’application Managed Browser
+## <a name="create-a-deployment-for-the-managed-browser-app"></a>Créer un déploiement pour l’application Managed Browser
 Après avoir défini la stratégie Managed Browser, vous pouvez créer un déploiement de logiciel pour l’application Managed Browser et l’associer à la stratégie Managed Browser que vous avez créée.
 
 > [!IMPORTANT]
@@ -75,7 +80,7 @@ Déployez l'application en veillant à sélectionner la stratégie Managed Brows
 
 Pour plus d’informations sur la façon de déployer des applications, consultez la page [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-## Sécurité et confidentialité de Managed Browser
+## <a name="security-and-privacy-for-the-managed-browser"></a>Sécurité et confidentialité de Managed Browser
 
 -   Sur les appareils iOS, les utilisateurs ne peuvent pas ouvrir les sites web possédant un certificat qui a expiré ou qui n’est pas approuvé.
 
@@ -87,12 +92,12 @@ Pour plus d’informations sur la façon de déployer des applications, consulte
 
 -   Pour permettre l’authentification et pour s’assurer que la documentation d’Intune est accessible, le site **&#42;.microsoft.com** n’est pas soumis aux paramètres de liste verte ou rouge. Ce site est toujours autorisé.
 
-### Désactiver les données d’utilisation
+### <a name="turn-off-usage-data"></a>Désactiver les données d’utilisation
 Microsoft recueille automatiquement des données anonymes sur les performances et l’utilisation de Managed Browser pour améliorer les produits et services Microsoft. Les utilisateurs peuvent désactiver la collecte de données à l’aide du paramètre **Données d’utilisation** de leurs appareils. Vous n’avez aucun contrôle sur la collecte de ces données.
 
-## Informations de référence
+## <a name="reference-information"></a>Informations de référence
 
-### Format des URL autorisées et des URL bloquées
+### <a name="url-format-for-allowed-and-blocked-urls"></a>Format des URL autorisées et des URL bloquées
 Utilisez les informations suivantes pour en savoir plus sur les formats et les caractères génériques que vous pouvez utiliser pour spécifier des URL dans les listes bloquées et autorisées :
 
 -   Vous pouvez utiliser le caractère générique (**&#42;**) en fonction des règles de la liste des modèles autorisés, ci-dessous.
@@ -142,7 +147,7 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
     -   http://www.contoso.com: /&#42;
 
-### Résolution des conflits entre la liste autorisée et la liste bloquée
+### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Résolution des conflits entre la liste autorisée et la liste bloquée
 Si plusieurs stratégies Managed Browser sont déployées sur un appareil et qu'un conflit se produit entre les paramètres, le mode (autorisé ou bloqué) et les listes d'URL sont évalués pour déterminer les conflits. En cas de conflit, le comportement suivant s'applique :
 
 -   Si les modes dans chaque stratégie sont les mêmes, mais que les listes d'URL sont différentes, les URL ne sont pas appliquées sur l'appareil.
@@ -152,9 +157,4 @@ Si plusieurs stratégies Managed Browser sont déployées sur un appareil et qu'
 -   Si un appareil reçoit des stratégies Managed Browser pour la première fois et qu'un conflit se produit entre deux stratégies, les URL ne sont pas appliquées sur l'appareil. Utilisez le nœud **Conflits de stratégies** de l'espace de travail **Stratégie** pour afficher les conflits.
 
 -   Si un appareil a déjà reçu une stratégie Managed Browser et qu'une deuxième stratégie est déployée avec des paramètres en conflit, les paramètres d'origine restent sur l'appareil. Utilisez le nœud **Conflits de stratégies** de l'espace de travail **Stratégie** pour afficher les conflits.
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

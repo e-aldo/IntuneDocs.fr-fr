@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de la stratégie dans Windows 10 | Microsoft Intune"
+title: "Paramètres de la stratégie dans Windows 10 | Microsoft Docs"
 description: "Utilisez les paramètres de stratégie indiqués dans cette rubrique pour configurer les paramètres intégrés et personnalisés des appareils Windows 10 Mobile et Windows 10 Desktop inscrits."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres de stratégie Intune pour les appareils Windows 10 dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique contient des informations qui vous aideront à comprendre les paramètres de stratégie Intune que vous pouvez utiliser pour gérer des appareils Windows 10. Lisez cette rubrique parallèlement aux procédures indiquées dans [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) pour configurer les paramètres intégrés et personnalisés sur des appareils Windows 10 Desktop et Windows 10 Mobile inscrits. Vous ne pouvez pas utiliser ces stratégies avec des ordinateurs qui exécutent le [logiciel client des PC Intune](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -322,9 +326,4 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

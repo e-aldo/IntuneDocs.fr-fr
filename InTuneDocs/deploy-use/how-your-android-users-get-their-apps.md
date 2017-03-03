@@ -1,5 +1,5 @@
 ---
-title: Comment vos utilisateurs Android obtiennent leurs applications | Microsoft Intune
+title: Comment vos utilisateurs Android obtiennent leurs applications | Microsoft Docs
 description: "Méthodes de mise à disposition des applications Android pour les utilisateurs finaux"
 keywords: 
 author: barlanmsft
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
-ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 370dd5d4a96253f0b7d208ef85659beeace18739
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 
 # <a name="how-your-android-users-get-their-apps"></a>Comment vos utilisateurs Android obtiennent leurs applications
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux Android obtiennent les applications que vous distribuez via Microsoft Intune. Les informations peuvent différer selon le type d’appareil (appareils Android natifs ou appareils Samsung Knox Standard).
 
 ## <a name="native-non-samsung-knox-standard-android-devices"></a>Appareils Android (non-Samsung Knox Standard) natifs
@@ -50,9 +55,4 @@ Les applications peuvent être gérées ou non gérées, comme décrit ci-dessou
 [Comment vos utilisateurs iOS obtiennent leurs applications](how-your-ios-users-get-their-apps.md)
 
 [Comment vos utilisateurs Windows obtiennent leurs applications](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

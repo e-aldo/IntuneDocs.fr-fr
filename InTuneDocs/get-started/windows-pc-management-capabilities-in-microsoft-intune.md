@@ -1,26 +1,31 @@
 ---
-title: "Fonctionnalités du client logiciel PC Intune | Microsoft Intune"
+title: "Fonctionnalités du client logiciel PC Intune | Microsoft Docs"
 description: "En savoir plus sur les fonctionnalités Intune lorsque vous gérez des PC Windows avec le client logiciel Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 36a20feed1756ea8dde2230db81099b6c5f8c7f6
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Fonctionnalités de gestion des PC Windows quand vous utilisez le client logiciel Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intune, car cette approche offre davantage de fonctionnalités. Toutefois, vous pouvez également gérer des PC en utilisant le client logiciel Intune, qui fournit les fonctionnalités suivantes :
 
 -   **[Gestion des mises à jour logicielles](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** : vous pouvez maintenir les PC à jour et gérer les périodes d’application des mises à jour.
@@ -72,9 +77,4 @@ Voici la configuration logicielle requise pour l’installation du client logici
 
 ### <a name="see-also"></a>Voir aussi
 [Fonctionnalités de gestion des appareils inscrits de Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

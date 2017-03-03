@@ -1,5 +1,5 @@
 ---
-title: "Gérer des paramètres d’appareils avec des stratégies | Microsoft Intune"
+title: "Gérer des paramètres d’appareils avec des stratégies | Microsoft Docs"
 description: "Utilisez Intune pour créer et déployer des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils inscrits que vous gérez."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Les *stratégies* Microsoft Intune sont des groupes de paramètres qui contrôlent les fonctionnalités des appareils mobiles et des ordinateurs. Vous créez des stratégies en utilisant des modèles qui contiennent des paramètres recommandés ou personnalisés, puis vous les déployez sur l'appareil ou des groupes d’utilisateurs.
 
 ## <a name="types-of-policies"></a>Types de stratégie
@@ -208,9 +213,4 @@ Quand vous supprimez une stratégie ou retirez un appareil d’un groupe sur leq
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>Où puis-je trouver de l’aide concernant mes problèmes de stratégies ?
 
 Consultez [Résoudre les problèmes de stratégie dans Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

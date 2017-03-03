@@ -1,5 +1,5 @@
 ---
-title: "Ce qui se passe quand vous créez un profil professionnel | Microsoft Intune"
+title: "Ce qui se passe quand vous créez un profil professionnel | Microsoft Docs"
 description: Cette rubrique explique comment chiffrer un appareil Android
 keywords: 
 author: barlanmsft
@@ -11,11 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 215e630141aa2739a2fe73926476db965c42922a
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -43,11 +48,4 @@ Quand vous créez un profil professionnel :
 Pour plus d’informations sur la création d’un profil professionnel, consultez [Créer un profil professionnel et inscrire votre appareil](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

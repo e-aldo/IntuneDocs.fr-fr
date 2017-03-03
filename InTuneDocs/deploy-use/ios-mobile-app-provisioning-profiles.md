@@ -1,11 +1,11 @@
 ---
-title: "Profils de configuration d’applications | Microsoft Intune"
+title: "Profils de configuration d’applications | Microsoft Docs"
 description: "Intune vous offre les outils pour déployer de façon proactive une nouvelle stratégie de profil de configuration pour les appareils qui disposent d’applications arrivant prochainement à expiration."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,18 @@ ms.technology:
 ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 409433dbe5ca777b33b21a2655e15cde8003b4a2
-ms.openlocfilehash: d67b26b23e65d4a144c1efda1494de1df94cc33c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>Utiliser les stratégies de profil de configuration iOS mobile pour empêcher l’expiration de vos applications
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Les applications métier Apple iOS déployées sur les iPhone et les iPad intègrent un profil de configuration et du code signé avec un certificat. Lorsque l’application iOS s’exécute, iOS confirme son intégrité et applique les stratégies définies par le profil de configuration. Les validations suivantes se produisent :
 
@@ -50,9 +53,4 @@ Après l’expiration du certificat, vous devez à nouveau signer l’applicatio
     - **Fichier de configuration de profil** : cliquez sur **Importer**, puis choisissez un fichier de profil de configuration mobile Apple (avec l’extension **.mobileprovision**) que vous avez téléchargé depuis le site web Apple Developer.
 4. Quand vous avez terminé, choisissez **Enregistrer la stratégie**.
 5. Maintenant, déployez la stratégie pour les appareils iOS requis. Pour plus d’informations, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "Gérer les contrats de licence logiciels pour les PC exécutant le logiciel client Intune | Microsoft Intune"
+title: "Gérer les contrats de licence logiciels pour les PC exécutant le logiciel client Intune | Microsoft Docs"
 description: "Intune vous permet d’ajouter et de gérer des contrats de licence pour les logiciels achetés par l’intermédiaire des contrats de licence en volume Microsoft et pour les logiciels achetés par d’autres moyens."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6eead7cd7f04641687b334c8f0c09a3af1f9b4ba
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Gérer les contrats de licence des logiciels de PC Windows dans Microsoft Intune
+# <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gérer les contrats de licence des logiciels de PC Windows dans Microsoft Intune
 Microsoft Intune permet d’ajouter et de gérer des informations de contrat de licence pour des logiciels achetés par l’intermédiaire de contrats de licence en volume Microsoft. Ceci est également possible pour les logiciels Microsoft et non-Microsoft achetés par d’autres moyens. Vous pouvez organiser ces informations en groupes logiques.
 
 > [!IMPORTANT]
@@ -43,7 +45,7 @@ De plus, vous pouvez générer des rapports qui indiquent le nombre d’installa
 > [!TIP]
 > L’espace de travail **Licences** ne s’affiche pas dans la console d’administration tant que vous ne gérez pas au moins un PC Windows avec le client PC Windows.
 
-## Ajouter des contrats de licence en volume Microsoft
+## <a name="add-microsoft-volume-licensing-agreements"></a>Ajouter des contrats de licence en volume Microsoft
 Les contrats de licence en volume Intune fournissent des informations de licence pour les logiciels achetés par le biais de contrats de licence en volume Microsoft. Vous pouvez ajouter des contrats de licence en volume Microsoft à Intune en fournissant des paires de numéros de contrats associées. Les numéros de contrat ou d'autorisation doivent correspondre aux numéros de licence ou d'inscription corrects. Les paires de numéros de contrats sont obtenues lorsque vous achetez vos contrats de licence depuis le [Centre de gestion des licences en volume Microsoft (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
 1.  Dans la [console d’administration Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx), choisissez **Licences**.
@@ -60,7 +62,7 @@ Les contrats de licence en volume Intune fournissent des informations de licence
 
         -   Les seuls caractères pris en charge sont les caractères ASCII.
 
-        -   Les caractères suivants ne sont pas autorisés dans les noms des contrats : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ’ " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
+        -   Les caractères suivants ne sont pas autorisés dans les noms des contrats : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
 
         -   Le nom du fichier ne doit pas contenir plus de 128 caractères.
 
@@ -86,7 +88,7 @@ Les contrats de licence en volume Intune fournissent des informations de licence
 
         -   **Nom du contrat** : spécifiez un nom unique pour le contrat.
 
-            Le nom du contrat peut comprendre 256 caractères au maximum et ne peut pas contenir les caractères suivants : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ’ " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
+            Le nom du contrat peut comprendre 256 caractères au maximum et ne peut pas contenir les caractères suivants : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
 
         -   **Numéro de contrat/d’autorisation** : entrez le numéro de contrat/d’autorisation de la paire de licence.
 
@@ -123,13 +125,13 @@ Une fois les informations de licence en volume actualisées, vous pouvez compare
 > [!NOTE]
 > Le **Nom du produit** affiché pour tous les contrats de licence en volume Microsoft est **Non disponible**.
 
-## Ajouter et modifier d’autres contrats de licence logicielle
+## <a name="add-and-edit-other-software-licensing-agreements"></a>Ajouter et modifier d’autres contrats de licence logicielle
 Vous pouvez aussi ajouter d’autres types de contrats de licence à Intune en plus des contrats de licence en volume Microsoft. Ces contrats peuvent inclure des logiciels non Microsoft ou des logiciels Microsoft achetés chez un revendeur.
 
 > [!IMPORTANT]
 > Vous devez avoir inscrit au moins un PC Windows dans Intune pour pouvoir ajouter un contrat.  De plus, vous devez avoir chargé un package logiciel sous licence que vous souhaitez utiliser sur au moins un ordinateur inscrit.
 
-### Pour ajouter d'autres contrats de licence logicielle
+### <a name="to-add-other-software-agreements"></a>Pour ajouter d'autres contrats de licence logicielle
 
 1.  Dans la [console d’administration Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx), choisissez **Licences**.
 
@@ -139,7 +141,7 @@ Vous pouvez aussi ajouter d’autres types de contrats de licence à Intune en p
 
 4.  Dans la zone **Ajouter des détails de contrat** , spécifiez les éléments suivants :
 
-    -   **Agreement name** (obligatoire). Le nom du contrat peut comprendre 256 caractères au maximum et ne peut pas contenir les caractères suivants : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ’ " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
+    -   **Agreement name** (obligatoire). Le nom du contrat peut comprendre 256 caractères au maximum et ne peut pas contenir les caractères suivants : **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Les espaces sont autorisés dans le nom.
 
     -   **Éditeur** (obligatoire). Lorsque vous commencez à saisir un nom d'éditeur, le service récupère tous les noms d'éditeurs contenant les lettres que vous tapez. Par exemple, si vous tapez « soft », le service récupère tous les noms des éditeurs contenant « soft », tels que « Microsoft » et « Microsoft Research ». Les noms d'éditeurs sont extraits du catalogue de logiciels. Avant de saisir le nom de produit, vous devez sélectionner l'éditeur.
 
@@ -168,7 +170,7 @@ Vous pouvez aussi ajouter d’autres types de contrats de licence à Intune en p
 
 La liste **Tous les contrats** s'affiche.
 
-## Gérer les contrats de licence
+## <a name="manage-license-agreements"></a>Gérer les contrats de licence
 Des contrats de licence logicielle peuvent être ajoutés à des groupes de licences. Vous pouvez utiliser des groupes de licences pour organiser vos contrats de licence en unités logiques pour votre organisation. De plus, vous pouvez supprimer des contrats de licence que vous avez créés précédemment.
 
 |||
@@ -178,9 +180,4 @@ Des contrats de licence logicielle peuvent être ajoutés à des groupes de lice
 |Renommer un groupe de licences|Dans l’espace de travail **Licences**, choisissez un groupe de licences, puis choisissez **Modifier le groupe de licences** dans le menu **Tâches**.|
 |Supprimer un groupe de licences|Dans l’espace de travail **Licences**, choisissez un groupe de licences, puis choisissez **Supprimer le groupe de licences** dans le menu **Tâches**. **Conseil :** Les licences qui résidaient dans le groupe supprimé sont déplacées vers le groupe de licences **Contrats non attribués**.|
 |Supprimer un contrat de licence|Dans l’espace de travail **Licences**, choisissez un contrat, puis cliquez sur **Supprimer**. **Conseil :** Après avoir supprimé les contrats de licence en volume, pour mettre à jour les informations de licence, choisissez **Actualiser maintenant** dans la page **Vue d’ensemble des licences** ou sous l’onglet **Général** pour un groupe de licences spécifique.|
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 
