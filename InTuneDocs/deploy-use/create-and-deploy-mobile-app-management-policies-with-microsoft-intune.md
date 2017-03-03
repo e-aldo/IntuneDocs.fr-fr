@@ -1,9 +1,9 @@
 ---
-title: "Créer et déployer des stratégies GAM | Microsoft Intune"
+title: "Créer et déployer des stratégies GAM | Microsoft Docs"
 description: "Suivez les instructions pas-à-pas de cette rubrique pour créer une stratégie de gestion des applications mobiles."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -13,32 +13,35 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Créer et déployer des stratégies de gestion des applications mobiles à l’aide de Microsoft Intune
-Les stratégies de gestion des applications mobiles (GAM) peuvent être appliquées à des applications qui s’exécutent sur des appareils gérés ou non par Intune. Pour obtenir une description plus précise du fonctionnement des stratégies GAM et des scénarios pris en charge par les stratégies GAM Intune, consultez [Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Créer et déployer des stratégies de protection des applications avec Microsoft Intune
 
-Cette rubrique décrit le processus de création d’une stratégie GAM dans le **portail Azure**. Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de gestion des appareils mobiles (GAM) et nous vous recommandons d’utiliser ce portail pour créer de telles stratégies. Le portail Azure prend en charge les scénarios GAM suivants :
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Cette rubrique décrit le processus de création d’une stratégie de protection des applications dans le **portail Azure**. Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de protection des applications. Nous vous recommandons de l’utiliser pour créer de telles stratégies. Le portail Azure prend en charge les scénarios GAM suivants :
+
 - Appareils inscrits dans Intune.
 - Appareils gérés par une solution de gestion des appareils mobiles (MDM) tierce.
 - Appareils qui ne sont gérés par aucune solution de gestion des appareils mobiles (BYOD).
 
 >[!IMPORTANT]
-Considérez les points suivants si vous utilisez actuellement la **console d’administration Intune** pour gérer vos appareils :
+Voici quelques points à prendre en compte si vous utilisez la **console d’administration Intune** pour gérer vos appareils :
 
-> * Vous pouvez créer une stratégie GAM qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-> * Les stratégies de gestion des applications mobiles créées dans la console d’administration Intune ne peuvent pas être importées dans le portail Azure.  Elles doivent être recréées dans le portail Azure.
+> * Vous pouvez créer une stratégie de protection des applications qui prend en charge les applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * Vous ne pouvez pas importer les stratégies de protection des applications créées dans la console d’administration Intune dans le portail Azure.  Vous devez les recréer dans le portail Azure.
 
-> * La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de gestion des applications mobiles. Le portail Azure est la nouvelle console d’administration pour créer des stratégies de gestion des applications mobiles.
+> * La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de protection des applications. Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de protection des applications.
 
-> * Pour déployer des applications gérées, vous devez créer une stratégie GAM dans la console d’administration Intune. Dans ce cas, vous souhaiterez peut-être créer des stratégies GAM à la fois dans la console d’administration Intune et dans le portail Azure : dans la console d’administration Intune pour être sûr de pouvoir déployer des applications gérées et dans le portail Azure car c’est la nouvelle console d’administration qui contient tous les paramètres de stratégie GAM.
+> * Pour déployer des applications gérées, vous devez créer une stratégie de protection des applications dans la console d’administration Intune. Dans ce cas, vous souhaiterez peut-être créer des stratégies de protection des applications dans la console d’administration Intune et dans le portail Azure : dans la console d’administration Intune pour être sûr de pouvoir déployer des applications gérées, et dans le portail Azure puisqu’il s’agit de la nouvelle console d’administration qui contient tous les paramètres des stratégies de protection des applications.
 
-> * Si vous créez des stratégies GAM dans la console d’administration Intune et dans le portail Azure, la stratégie créée dans le portail Azure est appliquée aux applications.
+> * Si vous créez des stratégies de protection des applications dans la console d’administration Intune et dans le portail Azure, la stratégie créée dans le portail est appliquée aux applications.
 
 Pour afficher la liste des paramètres de stratégie pris en charge pour les plateformes Android et iOS, sélectionnez l’un des éléments suivants :
 
@@ -46,16 +49,24 @@ Pour afficher la liste des paramètres de stratégie pris en charge pour les pla
 - [Stratégies iOS](ios-mam-policy-settings.md)
 - [Stratégies Android](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>Créer une stratégie GAM
-Avant de créer une stratégie GAM, passez en revue les informations relatives aux [conditions préalables et à la prise en charge](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
-1.  Choisissez **Gestion des applications mobiles Intune &gt; Paramètres** pour ouvrir le panneau **Paramètres**.
+- Pour obtenir une description plus détaillée du fonctionnement des stratégies de protection des applications et les scénarios pris en charge par les stratégies de protection des applications Intune, consultez [Protéger les données d’application à l’aide de stratégies de protection des applications](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-    ![Capture d’écran du panneau Gestion des applications mobiles Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>Créer une stratégie de protection des applications
+Les stratégies de protection des applications sont créées dans le portail Azure. Si vous utilisez le portail Azure pour la première fois, lisez [Portail Azure pour les stratégies de protection des applications Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) pour vous familiariser avec celui-ci. Avant de créer une stratégie de protection des applications, passez en revue les informations sur [les prérequis et la prise en charge](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
 
-    > [!TIP]
-    > Si c’est la première fois que vous utilisez le portail Azure, commencez par lire [Portail Azure pour les stratégies de gestion des applications mobiles Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) pour vous familiariser avec le portail.
+Pour créer des stratégies de protection des applications, procédez comme suit :
 
-2.  Dans le panneau **Paramètres**, choisissez **Stratégie d’application**. Cette opération ouvre le panneau **Stratégie d’application** dans lequel vous allez créer des stratégies et modifier des stratégies existantes. Choisissez **Ajouter une stratégie**.
+1. Accédez au [portail Azure](http://portal.azure.com) et entrez vos informations d’identification.
+
+2. Choisissez **Plus de services** et tapez « Intune ».
+
+3. Choisissez **Protection des applications Intune**.
+
+4. Choisissez **Gestion des applications mobiles Intune &gt; Paramètres** pour ouvrir le panneau **Tous les paramètres**.
+
+    ![Capture d’écran du panneau Gestion des applications mobiles Intune](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
+
+2.  Dans le panneau **Tous les paramètres**, choisissez **Stratégie d’application**. Cette opération ouvre le panneau **Stratégie d’application** dans lequel vous allez créer des stratégies et modifier des stratégies existantes. Choisissez **Ajouter une stratégie**.
 
     ![Capture d’écran du panneau Stratégie d’application avec l’option de menu Ajouter une stratégie mise en surbrillance ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -87,10 +98,10 @@ Avant de créer une stratégie GAM, passez en revue les informations relatives a
 Quand vous avez fini de créer une stratégie comme décrit dans la procédure précédente, elle n’est pas déployée sur les utilisateurs. Pour déployer une stratégie, consultez la section suivante, « Déployer une stratégie sur les utilisateurs ».
 
 > [!IMPORTANT]
-> Si vous créez une stratégie GAM pour une application à l’aide de la console d’administration Intune et une stratégie GAM à l’aide du portail Azure, la stratégie créée à l’aide du portail est prioritaire. Cependant, la création de rapports dans la console Intune ou Configuration Manager indique les paramètres de stratégie créés à partir de la console d’administration Intune. Exemple :
+> Si vous créez une stratégie de protection des applications pour une application à l’aide de la console d’administration Intune et une autre à l’aide du portail Azure, celle créée à l’aide du portail est prioritaire. Cependant, la création de rapports dans la console Intune ou Configuration Manager indique les paramètres de stratégie créés à partir de la console d’administration Intune. Exemple :
 >
-> -   Vous avez créé une stratégie GAM dans la console d’administration Intune qui bloque la copie à partir d’une application.
-> -   Vous avez créé une stratégie GAM dans la console Azure qui autorise la copie à partir d’une application.
+> -   Vous avez créé une stratégie de protection des applications dans la console d’administration Intune qui bloque la copie à partir d’une application.
+> -   Vous avez créé une stratégie de protection des applications dans la console Azure qui autorise la copie à partir d’une application.
 > -   Vous associez ces deux stratégies à la même application.
 > -   La stratégie créée à partir de la console Azure est prioritaire et que la copie est autorisée.
 > -   Cependant, l’état et les rapports dans la console Intune indiquent de façon erronée que la copie est bloquée.
@@ -113,8 +124,8 @@ Seuls les utilisateurs en possession de licences [!INCLUDE[wit_nextref](../inclu
 > Si vous utilisez Intune avec Configuration Manager pour gérer vos appareils iOS et Android, la stratégie est appliquée uniquement aux utilisateurs figurant directement dans le groupe que vous avez sélectionné. Les membres des groupes enfants imbriqués dans le groupe que vous avez sélectionné ne sont pas affectés.
 
 Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour plus d'informations, voir :
-* [Ce qui se passe quand votre application Android est gérée par des stratégies GAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Ce qui se passe quand votre application iOS est gérée par des stratégies GAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection des applications](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection des applications](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>Modifier des stratégies existantes
 Vous pouvez modifier une stratégie existante et l’appliquer aux utilisateurs ciblés. Toutefois, quand vous modifiez des stratégies existantes, les utilisateurs déjà connectés aux applications ne voient pas les modifications pendant une période de huit heures.
@@ -168,11 +179,11 @@ Pour afficher la liste complète des paramètres de stratégie pour iOS et Andro
 [Surveiller l’état de la conformité et des utilisateurs](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Voir aussi
-* [Ce qui se passe quand votre application Android est gérée par des stratégies GAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Ce qui se passe quand votre application iOS est gérée par des stratégies GAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection des applications](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection des applications](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Inscrire les appareils iOS d’entreprise | Microsoft Intune"
+title: "Inscrire les appareils iOS d’entreprise | Microsoft Docs"
 description: "Inscrire des appareils iOS d’entreprise à l’aide du programme d’inscription des appareils Apple ou d’Apple Configurator"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/07/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,33 @@ ms.technology:
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
-ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
+ms.lasthandoff: 02/21/2017
 
 
 ---
 
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Inscrire les appareils iOS d'entreprise dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune prend en charge l’inscription des appareils iOS qui appartiennent à l’entreprise par le biais du programme d’inscription des appareils (DEP, Device Enrollment Program) d’Apple ou de l’outil [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) à exécuter sur un ordinateur Mac.
 
-**Conditions préalables :** un [certificat des services de notification Push Apple](set-up-ios-and-mac-management-with-microsoft-intune.md) est obligatoire.
+**Prérequis :** [Certificat des services de notification Push Apple](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-Vous pouvez inscrire les appareils iOS d’entreprise de trois façons : en utilisant Apple Configurator, le programme d’inscription des appareils ou le Portail d’entreprise.
+Vous pouvez inscrire les appareils iOS d’entreprise de trois façons :
+
+- Apple Configurator, à l’aide de l’Assistant Configuration ou de l’inscription directe
+- Programme d’inscription des appareils
+- Application Portail d’entreprise
+
+>[!NOTE]
+>Les méthodes d’inscription Apple Configurator et Programme d’inscription des appareils ne peuvent pas être utilisées avec la méthode [Gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+
+Par défaut, tous les appareils iOS peuvent être inscrits dans Intune. Pour bloquer l’inscription des appareils personnels ou de l’entreprise, connectez-vous au [portail d’administration Microsoft Intune](http://manage.microsoft.com) avec vos informations d’identification d’administrateur. Choisissez **Admin** > **Gestion des appareils mobiles** > **Règles d’inscription**, puis décochez les options appropriées.
 
 ## <a name="use-apple-configurator"></a>Utiliser Apple Configurator
 
@@ -36,7 +50,7 @@ Vous pouvez inscrire des appareils iOS en exportant un profil d’inscription de
 - **Inscription directe** : crée un fichier compatible avec Apple Configurator, à utiliser durant la préparation de l’appareil. Les paramètres d’usine de l’appareil inscrit ne sont pas rétablis et aucun utilisateur n’y est affilié. Cette méthode oblige l’administrateur à connecter l’appareil iOS par voie USB à un ordinateur Mac qui exécute l’outil [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) pour inscrire l’appareil. Pour plus d’informations, consultez [Inscrire des appareils iOS en utilisant l’inscription directe Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md).
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Programme d’inscription des appareils (DEP)
-Le programme DEP déploie un profil d’inscription selon le procédé OTA (Over The Air) sur les appareils achetés par son biais. Quand un utilisateur exécute l’Assistant Configuration sur l’appareil, celui-ci est inscrit dans Intune.  Les appareils inscrits via le programme DEP ne peuvent pas être désinscrits par les utilisateurs. Pour plus d’informations, consultez [Inscrire des appareils iOS DEP](ios-device-enrollment-program-in-microsoft-intune.md).
+Le programme DEP déploie un profil d’inscription selon le procédé OTA (Over The Air) sur les appareils achetés par son biais. Quand un utilisateur exécute l’Assistant Configuration sur l’appareil, celui-ci est inscrit dans Intune. Pour plus d’informations, consultez [Inscrire des appareils iOS DEP](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Utiliser le Portail d’entreprise sur des appareils inscrits via l’outil Apple Configurator ou DEP
 
@@ -44,8 +58,8 @@ Les appareils qui sont configurés avec une affinité utilisateur peuvent instal
 
 Une affinité utilisateur est nécessaire pour prendre en charge les éléments suivants :
   - Applications de gestion des applications mobiles (GAM)
-  - Accès conditionnel aux données de messagerie et de l’entreprise
-  - Application Portail d’entreprise
+  -    Accès conditionnel aux données de messagerie et de l’entreprise
+  -    Application Portail d’entreprise
 
 **Comment les utilisateurs inscrivent des appareils iOS d’entreprise avec l’affinité utilisateur**
 1. Quand les utilisateurs allument leur appareil, ils sont invités à terminer l’exécution de l’Assistant Installation. Pendant l’installation, les utilisateurs sont invités à fournir leurs informations d’identification. Ils doivent utiliser les informations d’identification (c’est-à-dire, le nom d’utilisateur principal ou UPN) associées à leur abonnement dans Intune.
@@ -78,9 +92,4 @@ Si une affinité utilisateur est obligatoire, vérifiez que l’option **Affinit
 
 ### <a name="see-also"></a>Voir aussi
 [Prérequis pour l’inscription d’appareils dans Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

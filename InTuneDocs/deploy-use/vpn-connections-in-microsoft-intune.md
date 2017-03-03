@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
-ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
+ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
+ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
 
 
 ---
@@ -40,20 +41,16 @@ Vous pouvez configurer les types d’appareil suivants avec des profils VPN :
 
 Les options de configuration de profil VPN varient selon le type d’appareil sélectionné.
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 ## <a name="vpn-connection-types"></a>Types de connexions VPN
 
 Intune prend en charge la création de profils VPN qui utilisent les types de connexions suivants :
-
-
 
 
 Type de connexion |iOS et Mac OS X  |Android et Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop et Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Oui |Oui   |Non    |Non  |Non    | Oui (OMA-URI, mobile uniquement)|     
 Cisco (IPsec)|Oui |Oui   |Non  |Non  |Non | Non|
-Citrix|Oui |Non   |Non  |Non  |Non | Non|
+Citrix|Oui |Oui (Android uniquement)   |Non  |Non  |Non | Non|
 Pulse Secure|Oui  |Oui |Oui   |Oui  |Oui| Oui|        
 Client F5 Microsoft Edge|Oui |Oui |Oui |Oui  |   Oui |  Oui|   
 Dell SonicWALL Mobile Connect|Oui |Oui |Oui |Oui |Oui |Oui|         
@@ -198,8 +195,6 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

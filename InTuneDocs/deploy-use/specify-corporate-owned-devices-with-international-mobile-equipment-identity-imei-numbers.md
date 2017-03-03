@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 588674c38a5e54f6b762ac044457110a361e6969
+ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
+ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
 
 
 ---
@@ -51,8 +52,11 @@ Microsoft Intune permet aux administrateurs d’importer des numéros d’identi
 
 Quand un appareil avec un numéro IMEI s’inscrit dans Intune, généralement quand un utilisateur installe l’application Portail d’entreprise et termine le processus d’inscription, l’appareil est étiqueté comme appareil d’entreprise et apparaît inscrit dans le groupe **Appareils IMEI**.
 
+>[!NOTE] 
+> Dès que votre organisation aura migré vers le nouveau portail Azure, vous constaterez que cette fonctionnalité a été modifiée. Dans la console Administrateur Intune, les administrateurs peuvent accepter les détails associés à partir d’un fichier CSV chargé et remplacer les détails existants de chaque identificateur matériel. Dans le nouveau portail Azure, vous pouvez remplacer automatiquement les détails de tous les identificateurs matériels ou ignorer tous les nouveaux détails des identificateurs existants.
 
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Feb17_HO1-->
 
 

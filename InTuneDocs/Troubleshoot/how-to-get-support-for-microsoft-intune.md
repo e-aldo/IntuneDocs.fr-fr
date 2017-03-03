@@ -1,11 +1,11 @@
 ---
-title: Comment obtenir un support technique | Microsoft Intune
+title: Comment obtenir un support technique | Microsoft Docs
 description: "Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 01/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,51 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c97ecfbb7b8ec7d76bead6a553df402f24296307
-ms.openlocfilehash: 9e976973b6230b985a6e9ae4331f452bc43e1a9a
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>Comment obtenir un support technique administrateur pour Microsoft Intune
+# <a name="how-admins-get-support-for-microsoft-intune"></a>Comment les administrateurs obtiennent un support technique sur Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft fournit un support technique global, en avant-vente, pour la facturation et l’abonnement pour Microsoft Intune. Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support par téléphone et le support à la facturation en ligne sont disponibles dans d’autres langues.
 
 Le support pour Intune et pour Intune quand il est utilisé avec Configuration Manager est gratuit. Les clients Support Premier sont facturés pour les questions liées à des procédures (par exemple, comment faire pour configurer une fonctionnalité Intune).
 
-## <a name="create-an-online-service-ticket"></a>Créer un ticket de service en ligne
+## <a name="find-help-without-opening-a-support-ticket"></a>Trouver de l’aide sans ouvrir un ticket de support
+
+Avant de créer un ticket de support, consultez les ressources suivantes pour obtenir des réponses et des informations. Vous serez peut-être aussi intéressé par des [conseils généraux de dépannage pour Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
+
+### <a name="microsoft-intune-technet-forums"></a>Forums TechNet Microsoft Intune
+
+Posez une question ou lancez une discussion avec les experts techniques Microsoft ! Nous fournissons des réponses et des informations sur le [forum TechNet Microsoft Intune](https://social.technet.microsoft.com/Forums/home) dans lequel vous pouvez effectuer des recherches.
+
+![Forum TechNet Microsoft Intune](./media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Site de commentaires sur les produits Microsoft Intune UserVoice
+
+Avez-vous des commentaires qui permettraient à Microsoft d’améliorer Intune encore davantage ? Partagez vos idées sur le site web de commentaires Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas). Vous pouvez également voter pour des idées que d’autres utilisateurs ont ajoutées dans UserVoice. 
+
+![Page de commentaires Microsoft Intune UserVoice](./media/intune-uservoice-feedback-page.png)
+
+## <a name="create-an-online-support-ticket"></a>Créer un ticket de support en ligne
+
+Si vous ne parvenez pas à trouver de réponses dans les ressources d’aide autonome, vous pouvez créer un ticket de support en ligne.
+
+**Veuillez limiter chaque ticket de support à un seul problème** pour nous permettre de mieux vous aider. Voici pourquoi :
+
+- Les ingénieurs du support technique qui fournissent une assistance sont susceptibles d’être spécialisés dans des domaines précis, et il est plus facile d’identifier les experts pouvant vous aider à résoudre votre problème.
+- Les équipes techniques peuvent donner la priorité à des aspects du produit pour lesquels sont générés la plupart des incidents.
+- Il est plus facile de remonter les problèmes les plus épineux à la bonne ressource.
+
+Consultez la [définition d’un incident de support](#definition-of-a-support-incident) avant de créer un ticket de support.
+
+**Pour créer un ticket de support en ligne** :
 
 1.  Connectez-vous au [Centre d’administration Office 365](https://portal.office.com) en utilisant vos informations d’identification Intune.
     >[!NOTE]
@@ -69,12 +100,12 @@ Suivez cette procédure si votre page de support ressemble à ceci :
 ## <a name="get-phone-support"></a>Support technique par téléphone
 Consultez [Contacter le support par téléphone pour Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) pour obtenir la liste des numéros de téléphone par pays et par région, les horaires d’ouverture du support technique et les langues prises en charge pour chaque région.
 
-## <a name="track-your-service-requests"></a>Suivi de vos demandes de service
+## <a name="track-your-support-requests"></a>Effectuer le suivi de vos demandes de support
 1.  Connectez-vous au [Centre d’administration Office 365](https://portal.office.com) en utilisant vos informations d’identification Intune.
 2.  Cliquez sur la vignette **Administration**.
 3.  Sur la gauche, en dessous de **Support**, choisissez **Demandes de service**. Vous pouvez alors passer en revue vos demandes.
 
-Nos réponses initiales aux demandes de service dépendent de la gravité du problème. Pour les problèmes les plus graves, notre première réponse pour les clients professionnels est donnée dans les deux heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support. Il s’agit de cas où :
+Nos réponses initiales aux demandes de support dépendent de la gravité du problème. Pour les problèmes les plus graves, notre première réponse pour les clients professionnels est donnée dans les deux heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support. Il s’agit de cas où :
 
 - Un ou plusieurs services ne sont pas accessibles ou sont inutilisables.
 - Des délais de production, d'opérations ou de déploiement sont gravement affectés ou il y aura un impact majeur sur la production ou la rentabilité.
@@ -97,12 +128,6 @@ Pour les autres problèmes, notre première réponse pour les clients profession
 >
 > Le support technique pour System Center Configuration Manager ou System Center Endpoint Protection nécessite un règlement ou est décrémenté de vos contrats de licence ou Premier Support existants.
 
-## <a name="resolve-issues-without-opening-a-support-ticket"></a>Résoudre les problèmes sans ouvrir un ticket de support
-
-Vous pouvez peut-être résoudre votre problème sans ouvrir un ticket de support.
-
-Pour rechercher de l’aide sans assistance sur Intune, consultez [Conseils généraux de dépannage pour Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) ou les rubriques de dépannage spécifiques. Vous pouvez également rechercher une solution ou publier votre question sur le [forum Intune](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
-
 ## <a name="find-support-for-volume-licensing"></a>Trouver du support pour les licences en volume
 Si vous avez déjà acheté des licences auprès de Microsoft dans le cadre d’un programme de licence en volume, utilisez les ressources suivantes pour bénéficier du support technique :
 
@@ -112,8 +137,18 @@ Si vous avez déjà acheté des licences auprès de Microsoft dans le cadre d’
 
 -   Pour obtenir des informations générales sur les licences en volume, consultez [Licences en volume](http://go.microsoft.com/fwlink/p/?LinkID=282015).
 
+## <a name="definition-of-a-support-incident"></a>Définition d’un incident de support
+
+Un incident de support est un problème de support unique et le travail nécessaire pour le résoudre. Un problème de support unique ne peut pas être divisé en problèmes subordonnés. Si vous identifiez des problèmes subordonnés, chacun d’eux est considéré comme un incident distinct. Pour résoudre un problème donné, plusieurs contacts et des recherches externes peuvent se révéler nécessaires. Le temps passé pour trouver la solution est indépendant du montant qui vous sera facturé.
+
+Le support « Break-fix » est compris dans les abonnements Microsoft Intune et Gestion des appareils mobiles pour Office 365, donc vous ne serez pas facturé si vous ouvrez d’autres incidents de support.
+
+Si un ingénieur du support technique vous demande d’ouvrir d’autres incidents pour d’autres problèmes, comprenez que c’est dans l’intérêt général. Merci de votre compréhension et de votre concours qui nous permet de fournir des expériences de support de classe mondiale !
+
+Pour connaître les prix par incident et les niveaux de sévérité, consultez [Options de support professionnel](https://support.microsoft.com/gp/offerprophone).
 
 
-<!--HONumber=Dec16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 

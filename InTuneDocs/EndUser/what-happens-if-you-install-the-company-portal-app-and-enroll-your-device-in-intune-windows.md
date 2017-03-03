@@ -1,11 +1,11 @@
 ---
-title: "Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows dans Intune ? | Microsoft Docs"
+title: "Installation de l’application Portail d’entreprise pour Windows | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -33,7 +35,7 @@ Quand votre appareil Windows ou Windows Phone est inscrit dans Intune, vous pouv
 
 -   accéder au réseau de l’entreprise, à votre messagerie et à vos fichiers de travail ;
 
--   obtenir des applications d’entreprise à partir du site web du portail d’entreprise ; (Pour Windows 7 et Windows Vista, vous pouvez obtenir des applications d’entreprise à partir du site web du portail d’entreprise uniquement.)
+-   obtenir des applications d’entreprise à partir du site web du portail d’entreprise ; (__Remarque__ : Pour Windows 7 et Windows Vista, vous ne pouvez obtenir des applications d’entreprise qu’à partir du site web du portail d’entreprise.)
 
 -   configurer automatiquement votre compte e-mail d’entreprise ou scolaire ;
 
@@ -66,6 +68,7 @@ Quand vous inscrivez votre appareil, vous autorisez l’administrateur informati
 -  Votre administrateur informatique peut installer des applications et des mises à jour sur votre ordinateur.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Que se passe-t-il toutes les huit heures après l’inscription d’appareils ?
+
 Environ toutes les huit heures, les appareils inscrits vont :
 
 -   télécharger toute mise à jour d’une application ou d’une stratégie rendue disponible par votre administrateur informatique ;
@@ -75,9 +78,4 @@ Environ toutes les huit heures, les appareils inscrits vont :
 -   envoyer toute mise à jour de l'inventaire d'applications de la société.
 
 Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

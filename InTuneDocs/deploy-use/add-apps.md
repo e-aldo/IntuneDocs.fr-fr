@@ -1,11 +1,11 @@
 ---
-title: Ajouter des applications | Microsoft Intune
+title: Ajouter des applications | Microsoft Docs
 description: "Avant de commencer à déployer des applications avec Intune, vous devez vous familiariser avec les concepts présentés dans cette rubrique."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
+ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>Ajouter des applications avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Avant de commencer à déployer des applications avec Microsoft Intune, vous devez vous familiariser avec les concepts présentés dans cette rubrique. Ces concepts vous permettent de comprendre quelles applications vous pouvez déployer sur quelle plateforme. Ils vous permettent aussi de comprendre les conditions préalables qui doivent être mises en place avant de déployer les applications.
 
 ## <a name="app-types-that-you-can-deploy"></a>Types d’application que vous pouvez déployer
@@ -60,7 +64,7 @@ Avant de commencer à utiliser l'éditeur de logiciel, vous devez installer la v
 ## <a name="cloud-storage-space"></a>Espace de stockage cloud
 Toutes les applications que vous créez en utilisant le type d’installation de programme d’installation de logiciel (par exemple, une application métier) sont empaquetées et chargées dans le stockage cloud Microsoft Intune. Un abonnement d’essai à Intune inclut 2 Go de stockage cloud, utilisé pour stocker les applications gérées et les mises à jour. Votre abonnement complet inclut 20 Go d’espace de stockage.
 
-Vous pouvez voir combien d’espace vous utilisez dans le nœud **Utilisation du stockage** de l’espace de travail **Administration**.
+Vous pouvez voir combien d’espace vous utilisez dans le nœud **Utilisation du stockage** de l’espace de travail **Administration**. Vous pouvez utiliser la méthode de paiement d’origine pour acheter du stockage supplémentaire pour Intune.  Si vous avez payé par facture ou carte de crédit, visitez le [portail Gestion des abonnements](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Dans le cas contraire, contactez votre partenaire ou vendeur.
 
 La configuration requise pour l’espace de stockage cloud est la suivante :
 
@@ -93,6 +97,6 @@ Vous devez ajouter les applications à la console Intune avant de les déployer.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

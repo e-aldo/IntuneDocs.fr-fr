@@ -1,11 +1,11 @@
 ---
-title: "Préparer les applications pour la gestion d’applications mobiles | Microsoft Intune"
+title: "Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune | Microsoft Docs"
 description: "Cette rubrique présente des informations pour vous aider à déterminer quand utiliser l’outil de création de package de restrictions d’application et le SDK d’application pour permettre à vos applications métier personnalisées d’utiliser les stratégies de gestion d’applications mobiles."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune
+# <a name="prepare-line-of-business-apps-for-mam"></a>Préparer des applications métier pour la gestion des appareils mobiles
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous pouvez configurer vos applications pour utiliser des stratégies de gestion des applications mobiles (GAM) à l’aide de l’outil de création de package de restrictions d’application Intune ou du SDK d’application Intune. Utilisez ces informations pour en savoir plus sur ces deux méthodes et quand les utiliser.
 
 ## <a name="intune-app-wrapping-tool"></a>Outil de création de package de restrictions d’application Intune
@@ -52,7 +56,7 @@ Pour plus d’informations sur l’outil de création de package de restrictions
 ## <a name="intune-app-sdk"></a>Kit SDK d’application Intune
 Le SDK d’application est conçu principalement pour les clients qui ont des applications dans l’Apple App Store ou dans le Google Play Store, et qui veulent gérer ces applications avec Intune. Cependant, toute application peut tirer parti de l’intégration du SDK, même s’il s’agit d’applications métier.
 
-Pour en savoir plus sur le SDK, consultez sa [présentation](/intune/develop/intune-app-sdk). Pour commencer à utiliser le SDK, consultez [Prise en main du Kit SDK d’application Microsoft Intune](/intune/develop/intune-app-sdk-get-started).
+Pour en savoir plus sur le SDK, consultez sa [présentation](../develop/intune-app-sdk.md). Pour commencer à utiliser le SDK, consultez [Prise en main du Kit SDK d’application Microsoft Intune](../develop/intune-app-sdk-get-started.md).
 
 ### <a name="reasons-to-use-the-sdk"></a>Raisons d’utiliser le SDK
 * Votre application n’a pas de fonctionnalités de protection des données intégrées.
@@ -66,8 +70,8 @@ Pour en savoir plus sur le SDK, consultez sa [présentation](/intune/develop/int
 
 |**SDK d’application Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Oui : utilisez le [composant Xamarin du SDK d’application Intune](/../develop/intune-app-sdk-xamarin).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](/../develop/intune-app-sdk-cordova).|
-|**Android**| Oui : utilisez le [composant Xamarin du SDK d’application Intune](/../develop/intune-app-sdk-xamarin).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](/../develop/intune-app-sdk-cordova).|
+|**iOS**|Oui : utilisez le [composant Xamarin du SDK d’application Intune](../develop/intune-app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](../develop/intune-app-sdk-cordova.md).|
+|**Android**| Oui : utilisez le [composant Xamarin du SDK d’application Intune](../develop/intune-app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](../develop/intune-app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Comparaison des fonctionnalités
 Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK et pour l’outil de création de package de restrictions d’application.
@@ -106,6 +110,6 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

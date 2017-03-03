@@ -1,11 +1,11 @@
 ---
-title: "Gérer les licences Intune avec PowerShell | Microsoft Intune"
+title: "Gérer les licences Intune avec PowerShell | Microsoft Docs"
 description: "Gérer les licences Intune avec PowerShell"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,20 @@ ms.technology:
 ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: dd71cc8f0d1fc5802f7f24e5f275089ffa24a1c5
 
 
 ---
 
 # <a name="manage-intune-licenses-using-powershell"></a>Gérer les licences Intune avec PowerShell
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Cette rubrique explique aux administrateurs comment utiliser PowerShell pour gérer les licences utilisateur Intune.
+
 Avant que les utilisateurs puissent se connecter pour utiliser le service Intune ou inscrire leurs appareils dans la gestion, vous devez affecter à chaque utilisateur une licence dans votre abonnement Intune, comme décrit dans [Gérer les licences Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Toutefois, les organisations qui utilisent Microsoft Enterprise Mobility + Security peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un groupe de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Pour assigner de manière sélective des licences utilisateur pour les services EMS, ouvrez PowerShell en tant qu’administrateur sur un ordinateur où le [module Azure Active Directory pour Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) est installé. Vous pouvez installer PowerShell sur un ordinateur local ou sur un serveur ADFS.
@@ -68,6 +74,6 @@ Félicitations ! Vous venez d’effectuer l’étape 4 du *guide de démarrage 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

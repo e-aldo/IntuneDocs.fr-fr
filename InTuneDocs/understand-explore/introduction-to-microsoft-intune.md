@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
 
 
 ---
@@ -71,7 +72,7 @@ Cette dernière, combinée avec les fonctionnalités du système d’exploitatio
 Quand vous utilisez Intune avec les autres services dans EMS, vous pouvez accroître la sécurité des applications mobiles de votre organisation bien au-delà de celle fournie par le système d’exploitation mobile et les applications mobiles elles-mêmes par le biais de la configuration des applications. Une application gérée avec EMS a accès à un ensemble plus large de mesures de protection des applications mobiles et des données :
 
 * [Authentification unique](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Authentification multifacteur](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
+*    [Authentification multifacteur](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
 * [Accès conditionnel aux applications (autoriser l’accès si l’application mobile contient des données d’entreprise)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
 * [Isolement des données d’entreprise des données personnelles dans la même application](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Stratégie de protection des applications (code confidentiel, chiffrement, Enregistrer sous, Presse-papiers, etc.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -95,7 +96,7 @@ La plupart des solutions de gestion de la mobilité d’entreprise prennent en c
 
 Les organisations se distinguent selon qu’elles adoptent ou non des scénarios « sans inscription ». Certaines organisations en font leur norme. D’autres les autorisent pour les appareils personnels comme les tablettes. D’autres encore ne les prennent pas du tout en charge. Même dans ce dernier cas, où une organisation exige que tous les appareils de son personnel soient inscrits dans MDM, sont généralement pris en charge des scénarios « sans inscription » pour les sous-traitants, les fournisseurs et d’autres appareils bénéficiant d’une exemption spécifique.
 
-Vous pouvez même utiliser la technologie « sans inscription » d’Intune sur des appareils inscrits. Par exemple, un appareil inscrit dans MDM peut bénéficier de protections ouvertes fournies par le système d’exploitation mobile. De plus, le service informatique peut appliquer la stratégie de protection des applications aux applications mobiles gérées par EMS pour contrôler la fonctionnalité Enregistrer sous ou fournir une authentification multifacteur.
+Vous pouvez même utiliser la technologie « sans inscription » d’Intune sur des appareils inscrits. Par exemple, un appareil inscrit dans MDM peut bénéficier de protections ouvertes fournies par le système d’exploitation mobile. (La protection Open In est une fonctionnalité iOS qui vous empêche d’ouvrir un document à partir d’une application, comme Outlook, dans une autre application, comme Word, sauf si les deux applications sont gérées par le fournisseur de gestion des appareils mobiles.) De plus, le service informatique peut appliquer la stratégie de protection des applications aux applications mobiles gérées par EMS pour contrôler la fonctionnalité Enregistrer sous ou fournir une authentification multifacteur.
 
 Quelle que soit la position de votre organisation vis-à-vis des appareils et applications mobiles inscrits et non inscrits, Intune, dans le cadre d’EMS, dispose d’outils qui vous permettent d’augmenter la productivité de votre personnel tout en protégeant les données de votre entreprise.
 
@@ -116,6 +117,6 @@ La liste suivante de problématiques d’entreprise permet d’accéder à des i
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

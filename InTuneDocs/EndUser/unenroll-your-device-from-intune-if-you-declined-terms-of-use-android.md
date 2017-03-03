@@ -1,11 +1,11 @@
 ---
-title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Docs
+title: "Annuler l’inscription de votre appareil si vous avez refusé les conditions d’utilisation | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1d91847166f0e2da22a322ac1a1483266b46d8ed
-ms.openlocfilehash: e8dbf10fcc649bd71ac33bd07d1d79f825a91f73
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 73dfec1fe1a0a027aa560de62b6bd7ed7732faa0
 
 
 ---
 
 
-# <a name="unenroll-your-device-from-intune-if-you-declined-terms-of-use"></a>Annuler l’inscription de votre appareil dans Intune si vous avez refusé les « conditions d’utilisation »
+# <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>Annuler l’inscription de votre appareil si vous avez refusé les conditions d’utilisation
 
 La meilleure façon de désinscrire votre appareil Android est d’accepter les conditions d’utilisation, de se connecter à l’application Portail d’entreprise, puis d’utiliser [ces instructions](unenroll-your-device-from-intune-android.md) pour le désinscrire. Toutefois, si vous avez refusé les conditions d’utilisation durant la tentative de connexion à l’application Portail d’entreprise, vous ne pourrez pas vous connecter à l’application Portail d’entreprise à l’avenir. Vous devez donc utiliser ces instructions de résolution pour annuler l’inscription de votre appareil.
 
@@ -45,6 +47,6 @@ Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

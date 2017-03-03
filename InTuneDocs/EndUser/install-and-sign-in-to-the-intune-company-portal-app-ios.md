@@ -1,28 +1,31 @@
 ---
-title: "Installer l’application Portail d’entreprise Intune et s’y connecter | Microsoft Intune"
+title: "Installer l’application Portail d’entreprise et s’y connecter | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: ebb2a164e631388d073d11440eb6072ae4d90468
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
 
 
 ---
 
 
-# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Installer l’application Portail d’entreprise Intune et s’y connecter
+# <a name="install-and-sign-in-to-the-company-portal-app"></a>Installer l’application Portail d’entreprise et s’y connecter
 
 Le portail d’entreprise est une application que vous installez sur votre appareil iOS pour avoir accès aux applications, à la messagerie et au réseau de votre entreprise ou établissement scolaire.  Pour obtenir cet accès, vous devez d’abord installer l’application Portail d’entreprise et, avec celle-ci, inscrire votre appareil dans Microsoft Intune. Pour plus d’informations, consultez [Que se passe-t-il si vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -40,6 +43,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

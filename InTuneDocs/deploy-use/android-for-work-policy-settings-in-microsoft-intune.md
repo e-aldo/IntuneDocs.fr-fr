@@ -1,12 +1,12 @@
 ---
 
-title: "Paramètres de stratégie Android for Work | Microsoft Intune"
+title: "Paramètres de stratégie Android for Work | Microsoft Docs"
 description: "Créez des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils Android for Work que vous gérez avec Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,19 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Paramètres de stratégie Android for Work dans Microsoft Intune
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune fournit un éventail de paramètres généraux intégrés que vous pouvez configurer sur les appareils Android for Work.
+Intune fournit un certain nombre de paramètres généraux intégrés que vous pouvez configurer sur les [appareils Android for Work](android-for-work.md).
 
 ## <a name="general-configuration-policy"></a>Stratégie de configuration générale
 
@@ -60,15 +61,11 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 |**Définir une stratégie d’autorisation d’application par défaut**<br>(Android 6 et versions ultérieures)|Définit la stratégie d’autorisation par défaut pour toutes les applications dans le profil professionnel.|
 
 
-
-
 ## <a name="custom-policy-settings"></a>Paramètres de la stratégie personnalisée
 Utilisez la **stratégie de configuration personnalisée Android for Work** de Microsoft Intune pour déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités sur les appareils Android for Work. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.
 
 Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Android qui ne sont pas configurables avec des stratégies Intune.
-
-> [!NOTE]
-> Actuellement, les stratégies personnalisées Android prennent uniquement en charge la configuration des paramètres Wi-Fi pour les appareils Android qui contiennent une clé prépartagée.
+Intune prend en charge un nombre limité de stratégies personnalisées Android à l’heure actuelle. Consultez les exemples de cette rubrique pour savoir quelles stratégies vous pouvez configurer.
 
 ### <a name="general-settings"></a>Paramètres généraux :
 
@@ -97,6 +94,6 @@ Cette fonctionnalité est conçue pour vous permettre de déployer les paramètr
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

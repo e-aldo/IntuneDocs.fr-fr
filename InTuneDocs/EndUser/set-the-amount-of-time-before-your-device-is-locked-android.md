@@ -1,11 +1,11 @@
 ---
-title: "Définir le délai avant le verrouillage de l’appareil | Microsoft Docs"
+title: "Guide pratique pour configurer le délai de verrouillage d’un appareil | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 336a71888b729869be5fc325bd82d841f59428de
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: eab9321df021972c91af66ca8b4dc69c8cc8795b
 
 
 ---
 
 
-# <a name="set-the-amount-of-time-before-your-device-is-locked"></a>Définir la période de temps qui doit s’écouler avant le verrouillage de l’appareil
+# <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Guide pratique pour configurer le délai de verrouillage d’un appareil
 
 Pour sécuriser les données sur votre appareil Android, votre administrateur informatique peut définir une stratégie qui nécessite que vous définissiez la durée pendant laquelle votre appareil peut rester inactif avant d’être automatiquement verrouillé. Procédez comme suit pour définir le délai avant que votre appareil ne soit verrouillé.
 
@@ -36,8 +37,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
