@@ -1,11 +1,11 @@
 ---
-title: "Utilisation de la journalisation détaillée pour aider votre administrateur informatique à résoudre les problèmes de l’appareil | Microsoft Docs"
+title: "Aider votre administrateur informatique à résoudre les problèmes de l’appareil grâce à la journalisation détaillée | Microsoft Docs"
 description: "Aider votre administrateur informatique à résoudre les problèmes de l’appareil à l’aide de la journalisation détaillée"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 501b2c5990acce9bc2f8c5efd1efc07fbee1606f
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
 
 
 ---
 
 
-# <a name="use-verbose-logging-to-help-your-it-admin-fix-device-issues"></a>Utiliser la journalisation détaillée pour aider votre administrateur informatique à résoudre les problèmes
+# <a name="help-your-it-admin-fix-device-issues-with-verbose-logging"></a>Aider votre administrateur informatique à résoudre les problèmes de l’appareil grâce à la journalisation détaillée
 
 Une fois votre appareil Android inscrit dans Intune, vous pouvez utiliser la *journalisation détaillée* pour faire en sorte que l’application Portail d’entreprise et les applications gérées par Intune enregistrent des journaux détaillés de l’activité de votre appareil. Ces journaux aident votre administrateur informatique à résoudre les problèmes que vous êtes susceptible de rencontrer en utilisant le portail d’entreprise ou une application gérée par Intune. La journalisation détaillée est activée par défaut sur votre appareil, et les journaux envoyés à votre administrateur informatique incluent votre adresse e-mail.
 
@@ -34,6 +35,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

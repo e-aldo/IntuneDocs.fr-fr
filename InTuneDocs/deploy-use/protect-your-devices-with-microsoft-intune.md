@@ -1,11 +1,11 @@
 ---
-title: "Protéger des appareils | Microsoft Intune"
+title: "Protéger des appareils avec Microsoft Intune | Microsoft Docs"
 description: "Découvrez certaines méthodes permettant à Intune de vous aider à protéger vos appareils contre les accès non autorisés et d’autres menaces."
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 235db7eb1036bfccd074fd83b4b59e75529a5e34
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
 
 # <a name="protect-devices-with-microsoft-intune"></a>Protéger des appareils avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune offre un ensemble complet de fonctionnalités qui vous permettent de protéger les appareils que vous gérez et les données stockées sur ces appareils. Lisez cette rubrique pour apprendre l’essentiel de ces fonctionnalités et découvrir comment procéder pour en savoir plus.
 
@@ -43,10 +47,10 @@ Intune comprend des [stratégies de conformité des appareils](introduction-to-d
 ### <a name="protect-apps-and-the-data-they-use"></a>Protéger les applications et les données qu’elles utilisent
 Intune vous propose tout un éventail de fonctionnalités pour vous permettre de protéger les applications et leurs données. Par exemple, les stratégies de gestion des applications mobiles (GAM) peuvent empêcher des données d’être sauvegardées à partir d’une application protégée, limiter la copie et le collage vers d’autres applications, exiger un code confidentiel pour accéder à une application, etc. Pour plus d’informations sur la protection des applications, consultez [Protéger les applications et les données avec Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md).
 
-## <a name="further-capabilities-for-windows-devices"></a>Fonctions supplémentaires pour les appareils Windows
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>Ajouter une couche supplémentaire de protection sur des appareils
+L’[authentification multifacteur (MFA)](multi-factor-authentication-azure-active-directory.md) est un moyen plus sûr d’authentifier les utilisateurs d’appareils sur le réseau.  Avec MFA, les utilisateurs doivent confirmer leur identité au-delà du nom d’utilisateur et du mot de passe, via un appel téléphonique ou un message texte.
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>Ajouter une couche supplémentaire de protection sur des appareils Windows
-L’[authentification multifacteur (MFA)](protect-windows-devices-with-multi-factor-authentication.md) est un moyen plus sûr d’authentifier les utilisateurs d’appareils Windows et Windows Phone sur le réseau.  Avec MFA, les utilisateurs doivent confirmer leur identité au-delà du nom d’utilisateur et du mot de passe, via un appel téléphonique ou un message texte.
+## <a name="further-capabilities-for-windows-devices"></a>Fonctions supplémentaires pour les appareils Windows
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Contrôler les paramètres Windows Hello Entreprise sur des appareils Windows
 Intune vous permet d’intégrer [Windows Hello Entreprise](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (anciennement Microsoft Passport) et de disposer ainsi d’une autre méthode de connexion pour Windows 10 et versions ultérieures utilisant Active Directory ou un compte Azure Active Directory pour remplacer un mot de passe, une carte à puce ou une carte à puce virtuelle.
@@ -60,9 +64,4 @@ Le verrou d’activation est une fonctionnalité qui permet de protéger les app
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Protéger les PC Windows gérés avec le client Intune
 Intune continue à prendre en charge les stratégies de sécurité pour les PC Windows non inscrits mais gérés avec le logiciel client pour ordinateur Intune. Pour savoir comment ces stratégies peuvent vous aider à sécuriser vos PC Windows, consultez [Utilisation de stratégies pour vous aider à protéger les PC Windows qui exécutent le logiciel client Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

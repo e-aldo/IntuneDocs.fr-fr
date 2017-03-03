@@ -9,14 +9,14 @@ keywords: documentation Intune, gestion des applications, gestion des appareils,
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/7/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
-ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -25,20 +25,20 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
     <section id="hero-content">
       <h1>Documentation Intune</h1>
       <h2>Gestion d’applications et d’appareils mobiles, et gestion de PC à partir du cloud. </h2>
-      <h3>Vous souhaitez gérer Intune avec Configuration Manager ? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">En savoir plus sur la gestion hybride des appareils mobiles&rarr;</a></h3>
+      <h3>Vous souhaitez gérer Intune avec Configuration Manager ? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">En savoir plus sur la gestion hybride des appareils mobiles &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenu proposé</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">Plus de 150 licences ? Tirer profit de vos avantages FastTrack</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Plus de&150; licences ? Tirer profit de vos avantages FastTrack</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Utilisations courantes d’Intune</a></li>
-          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune dans le portail Azure en version préliminaire</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune dans le portail Azure en préversion</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Protéger l’accès aux ressources de l’entreprise</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">Guide du Kit SDK d’application Microsoft Intune pour les développeurs iOS</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">Guide du Kit de développement logiciel (SDK) de l’application Microsoft Intune pour les développeurs Android</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Utilisation d’Intune dans Microsoft Graph</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Ressources concernant l’expérience utilisateur final avec Microsoft Intune</a></li>
         </ul>
       </div>
     </section>
@@ -61,13 +61,13 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Présentation d'Intune</h3>
+                    <h3>Qu’est-ce qu’Intune ?</h3>
                     <p>Découvrez comment Intune fournit des fonctionnalités de gestion d’appareils, d’applications et de données pour des appareils mobiles (appareils iOS, Android, Windows Phone) et des PC Windows.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Guide d'évaluation de Microsoft Intune</h3>
+                    <h3>La solution Intune répond-elle à vos besoin ?</h3>
                     <p>Utilisez le guide d’évaluation pour les différentes étapes de configuration de votre version d’évaluation avec jusqu’à 100 utilisateurs et appareils.</p>
                   </a>
                 </li>
@@ -94,21 +94,21 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>Éléments à connaître avant de commencer</h3>
-                    <p>Familiarisez-vous rapidement avec les exigences de configuration de base pour n’importe quel déploiement Intune.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Guide de démarrage rapide pour Intune</h3>
-                    <p>Sur la base du guide de l’évaluation de 30 jours, cette rubrique vous guide à travers la synchronisation d’Azure Active Directory, les considérations liées aux domaines et au DNS et autres personnalisations d’Intune.</p>
+                    <h3>Guide de mise en route</h3>
+            <p>Sur la base du guide de l’évaluation de 30 jours, cette rubrique vous guide à travers la synchronisation d’Azure Active Directory, les considérations liées aux domaines et au DNS et autres personnalisations d’Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Phases de déploiement</h3>
-                    <p>Définissez vos objectifs, votre architecture, votre pilote et vos plans de déploiement de production Intune.</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>Éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365</h3>
+                    <p>Sécurisez les données de votre organisation à l’aide de stratégies de protection des applications qui évitent les fuites de données d’entreprise.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>Simplification de la configuration des e-mails sur des appareils mobiles</h3>
+                    <p>Votre entreprise peut économiser du temps et des ressources en déployant des profils de messagerie (ainsi que pour le VPN et le Wi-Fi) sur les appareils mobiles Windows, iOS et Android gérés par le service Intune.</p>
                   </a>
                 </li>
               </ul>
@@ -140,7 +140,7 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>Que dire à vos utilisateurs finaux</h3>
                     <p>Comprenez les étapes que vos utilisateurs finaux doivent effectuer pour utiliser leurs appareils avec Intune et partagez ces informations avec eux pour leur permettre de réaliser leurs tâches eux-mêmes.</p>
                   </a>
@@ -155,8 +155,8 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Restreindre l’accès aux services de messagerie et O365</h3>
-                    <p>Utilisez la fonctionnalité d’accès conditionnel d’Intune pour restreindre l’accès à la messagerie d’entreprise et aux services Office 365.</p>
+                    <h3>Protéger l’accès aux services de messagerie et O365</h3>
+                    <p>Utilisez la fonctionnalité d’accès conditionnel d’Intune pour protéger l’accès à la messagerie d’entreprise et aux services Office 365.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -277,7 +277,7 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
     <aside class="alert alert-social">
       <p>Tenez-vous informé des actualités d’Intune</p>
       <ol class="action-list">
-        <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Blog de l'équipe Intune</a></li>
+        <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Blog de l’équipe Intune</a></li>
         <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune sur Twitter</a></li>
       </ol>
     </aside>
@@ -285,6 +285,6 @@ ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

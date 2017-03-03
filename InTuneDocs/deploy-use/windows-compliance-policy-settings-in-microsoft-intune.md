@@ -1,11 +1,11 @@
 ---
-title: "Paramètres de stratégie de conformité pour les appareils Windows | Microsoft Intune"
+title: "Paramètres de stratégie de conformité pour les appareils Windows | Microsoft Docs"
 description: "Cette rubrique décrit les règles et les paramètres que vous pouvez configurer pour une stratégie de conformité des appareils Windows."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Windows dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Les paramètres de stratégie décrits dans cette rubrique s’appliquent aux appareils exécutant le système d’exploitation Windows. Les sections suivantes décrivent les versions de Windows prises en charge :
 
@@ -72,6 +76,9 @@ Les paramètres répertoriés dans cette section sont pris en charge par Windows
   -  **BitLocker est activé** : quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le Chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume de système d’exploitation Windows. BitLocker utilise le module de plateforme sécurisée (TPM) pour protéger le système d’exploitation Windows et les données utilisateur. BitLocker permet également de vérifier qu’un ordinateur n’a pas été compromis, même s’il est resté allumé sans assistance, s’il est perdu ou s’il a été volé. Si l’ordinateur est équipé d’un module de plateforme sécurisée (TPM) compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur.
   -  **L’intégrité du code est activée :** l’intégrité du code est une fonctionnalité qui valide l’intégrité d’un fichier de pilote ou d’un fichier système chaque fois qu’il est chargé en mémoire. L’intégrité du code détecte si un fichier système ou un pilote non signé est chargé dans le noyau. Il détecte également si un fichier système a été modifié par des logiciels malveillants exécutés par un compte d’utilisateur doté de privilèges d’administrateur.
   - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état approuvé par défaut. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser l’ordinateur démarrer. Si des fichiers ont été falsifiés et que leur signature a été rompue, le système ne démarre pas.
+
+  > [!IMPORTANT]
+  > Les appareils Windows ne prennent pas en charge le logiciel tiers **anti-programme malveillant à lancement anticipé** (ELAM) installé dans le cadre de l’attestation de l’intégrité de l’appareil.
 
   Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
@@ -148,9 +155,4 @@ Pour trouver la version du système d’exploitation à utiliser pour les param�
 
 - Pour les PC Windows exécutant Windows 10, la version doit être **10.0** à laquelle s’ajoute le numéro de la build du système d’exploitation que la commande **winver** retourne. Par exemple, il peut s’agir de 10.0.10586.
 > ![Version de la build du système d’exploitation mis en surbrillance dans la boîte de dialogue « À propos de Windows »](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

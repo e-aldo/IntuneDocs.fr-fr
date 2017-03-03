@@ -1,11 +1,11 @@
 ---
-title: "Gérer les appareils d’entreprise | Microsoft Intune"
+title: "Gérer les appareils d’entreprise | Microsoft Docs"
 description: "Inscrivez les appareils d’entreprise de différentes façons, selon le type d’appareil, la méthode utilisée pour son achat et les besoins de l’organisation."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,21 @@ ms.technology:
 ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
+ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
+ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
 
 
 ---
 
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Inscrire des appareils d’entreprise à l’aide d’Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous pouvez inscrire des appareils d’entreprise ou d’organisation en vue de les gérer avec Intune de diverses façons en fonction du type d’appareil, de la méthode utilisée pour son achat et des besoins de l’organisation. Vous pouvez également installer l’application Portail d’entreprise pour inscrire et gérer les appareils d’entreprise, comme dans un scénario BYOD (« Apportez votre propre appareil »).
+
+Par défaut, les appareils de toutes les plateformes peuvent être inscrits dans Intune. Pour bloquer l’inscription des appareils, connectez-vous au [portail d’administration Microsoft Intune](http://manage.microsoft.com) avec vos informations d’identification d’administrateur. Choisissez **Admin** > **Gestion des appareils mobiles** > **Règles d’inscription**, puis décochez les cases appropriées pour les plateformes que vous souhaitez bloquer.
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>Inscrire des appareils iOS d'entreprise
 
@@ -63,6 +68,6 @@ Quand un appareil est marqué comme appartenant à l’entreprise, la colonne **
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

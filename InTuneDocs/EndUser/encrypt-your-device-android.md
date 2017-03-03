@@ -1,29 +1,37 @@
 ---
-title: Chiffrer votre appareil | Microsoft Intune
-description: Cette rubrique explique comment chiffrer un appareil Android
+title: "Comment protéger votre appareil Android à l’aide du chiffrement | Microsoft Docs"
+description: "Protéger votre appareil Android"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
-ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>Chiffrer votre appareil
+# <a name="how-to-protect-your-android-device-using-encryption"></a>Comment protéger votre appareil Android à l’aide du chiffrement
 
-Si votre entreprise vous demande de chiffrer votre appareil Android avant de pouvoir accéder aux fichiers, à la messagerie ou aux données de l’entreprise, chiffrez votre appareil comme suit : Vous devrez peut-être définir un code confidentiel ou un mot de passe avant de chiffrer votre appareil, à la demande de votre administrateur informatique.
+Lorsque vous chiffrez un appareil, vous encapsulez les informations qu'il contient dans un code de couche de protection qui empêche les personnes non autorisées d’y accéder. Dans le cadre de la protection de vos informations, votre organisation vous demande de chiffrer votre appareil Android pour pouvoir accéder aux fichiers, à la messagerie et aux données de l’entreprise.
+
+> [!Note]
+> Vous devrez peut-être définir un code confidentiel ou un mot de passe avant de chiffrer votre appareil, à la demande de votre administrateur informatique.
 
 Si vous désinscrivez votre téléphone, il restera chiffré.
 
@@ -33,6 +41,9 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
     (Sur certains téléphones, vous devrez choisir **Stockage** &gt; **Chiffrement de stockage** ou **Stockage** &gt; **Écran de verrouillage et sécurité** &gt; **Autres paramètres de sécurité** pour trouver l’option Chiffrer).
 
 3.  Suivez les instructions à l'écran. Au cours du chiffrement, votre appareil peut redémarrer plusieurs fois.
+
+> [!Note]
+> Certains appareils Android ne peuvent pas être chiffrés. Découvrez-en plus [ici](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>Réponse aux problèmes
 **Problème** : Vous avez déjà chiffré votre appareil, et vous constatez l’un des problèmes décrits ci-après.
@@ -57,10 +68,6 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 
     5. Ouvrez l’application Portail d’entreprise, sélectionnez votre appareil, puis appuyez sur **Vérifier la conformité**.
 
+
 Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’[équipe Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

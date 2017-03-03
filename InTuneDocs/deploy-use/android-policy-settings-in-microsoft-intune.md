@@ -1,12 +1,12 @@
 ---
 
-title: "Paramètres de la stratégie de configuration Android et Samsung KNOX Standard | Microsoft Intune"
+title: "Paramètres de stratégie Android et Samsung KNOX | Microsoft Docs"
 description: "Créez des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils Android que vous gérez avec Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.technology:
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de configuration Android et Samsung KNOX Standard dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune fournit un éventail de paramètres généraux intégrés que vous pouvez configurer sur les appareils Android. Vous pouvez aussi spécifier des valeurs OMA-URI (Open Mobile Alliance Uniform Resource Identifier) pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
 
@@ -144,6 +147,8 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 |**Éditer**|Vous permet de modifier le nom, l’éditeur et l’URL de l’application sélectionnée.|
 |**Supprimer**|Supprime l'application sélectionnée dans la liste.|
 
+Les stratégies contenant des paramètres d’application conformes et non conformes doivent être déployés sur des groupes d’utilisateurs.
+
 ### <a name="kiosk-mode-settings"></a>Paramètres du mode plein écran
 Spécifiez les paramètres suivants pour les **appareils Samsung KNOX Standard** :
 
@@ -177,9 +182,7 @@ Exemple : Recherchez Microsoft Office Mobile dans Google Play. L’URL que vous
 Utilisez la **stratégie de configuration personnalisée Android** de Microsoft Intune pour déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités sur les appareils Android. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.
 
 Cette fonctionnalité est conçue pour vous permettre de déployer les paramètres Android qui ne sont pas configurables avec des stratégies Intune.
-
-> [!NOTE]
-> Actuellement, les stratégies personnalisées Android prennent uniquement en charge la configuration des paramètres Wi-Fi pour les appareils Android qui contiennent une clé prépartagée.
+Intune prend en charge un nombre limité de stratégies personnalisées Android à l’heure actuelle. Consultez les exemples de cette rubrique pour savoir quelles stratégies vous pouvez configurer.
 
 ### <a name="general-settings"></a>Paramètres généraux :
 
@@ -209,6 +212,6 @@ Cette fonctionnalité est conçue pour vous permettre de déployer les paramètr
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

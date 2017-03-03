@@ -1,28 +1,31 @@
 ---
-title: "Installer le réseau privé virtuel (VPN) de votre entreprise | Microsoft Intune"
+title: "Installer le réseau privé virtuel (VPN) de votre entreprise | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: f82bc74083f522498425af3a01bf11300b8133ea
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 009b86dd581b01464b72bdbd0107d08ee6645f03
 
 
 ---
 
 
-# <a name="install-your-companys-virtual-private-network-vpn"></a>Installer le réseau privé virtuel (VPN) de votre entreprise
+# <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Guide pratique pour installer le réseau privé virtuel (VPN) de votre entreprise
 
 Si votre administrateur informatique a configuré une application VPN pour vous permettre de vous connecter aux ressources de l’entreprise, vous recevrez une notification sur votre appareil Android indiquant que vous devez installer une application VPN. Pour installer l’application VPN, procédez comme suit :
 
@@ -37,8 +40,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -6,12 +6,14 @@
 ### [Créer des stratégies et publier une application](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Options et fonctionnalités supplémentaires](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convertir en abonnement payant](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [Forum aux questions sur la protection des applications et GAM](understand-explore/mam-faq.md)
 ## [Scénarios courants](understand-explore/common-ways-to-use-intune.md)
-## [Glossaire](understand-explore/intune-glossary.md)
+
 
 # [Bien démarrer](get-started/get-started.md)
 ## [Configurer Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Conditions préalables](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Conditions préalables]
+#### [Appareils pris en charge](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Utilisation du réseau](get-started/network-bandwidth-use.md)
 ### [Se connecter à Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configurer des domaines](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -37,13 +39,14 @@
 ## [Section 4 : développer un plan de déploiement](plan-design/section-4-develop-a-rollout-plan.md)
 ## [Section 5 : développer un plan de communication](plan-design/section-5-develop-a-rollout-communication-plan.md)
 ## [Section 6 : développer un plan de support](plan-design/section-6-develop-a-support-plan.md)
-## [Section 7 : créer une conception Intune](plan-design/section-7-create-an-intune-design.md)
-## [Section 8 . implémentation d'Intune](plan-design/section-8-onboarding-process.md)
+## [Section 7 : créer une conception Intune](plan-design/section-7-create-an-intune-design.md)
+## [Section 8 : implémentation d'Intune](plan-design/section-8-onboarding-process.md)
 ## [Section 9 : test et validation](plan-design/section-9-test-and-validation.md)
 ## [Ressources supplémentaires](plan-design/additional-resources.md)
 
-# Nouveautés
-## [Nouveautés](whats-new/whats-new-in-microsoft-intune.md)
+# [Nouveautés](whats-new/whats-new-in-microsoft-intune.md)
+## [Nouveautés de l’interface utilisateur des applications](whats-new/whats-new-in-intune-app-ui.md)
+## [Nouveautés de la préversion Azure](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Archive des nouveautés](whats-new/whats-new-archive.md)
 
 # Déployer et utiliser
@@ -56,7 +59,6 @@
 #### [Gestion Android](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Gestion Android for Work](deploy-use/set-up-android-for-work.md)
 #### [Gérer les appareils Windows](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile et Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Gérer les appareils d’entreprise](deploy-use/manage-corporate-owned-devices.md)
 #### [Inscrire des appareils iOS d’entreprise](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Inscription Assistant de configuration](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -72,10 +74,12 @@
 #### [Installer le client PC](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Tâches courantes de gestion des PC](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Résoudre les conflits de stratégie de l’ordinateur](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Gérer Android for Work](deploy-use/android-for-work.md)
 
 ## Configurer des appareils
 ### [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [Paramètres iOS](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [Restaurer des appareils iOS gérés](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Paramètres Android et Samsung KNOX](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Utiliser une stratégie personnalisée pour créer un profil Wi-Fi avec une clé prépartagée](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [Utiliser une stratégie personnalisée pour créer un profil VPN par application pour les appareils Android](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -97,13 +101,14 @@
 #### [Connexions VPN dans Intune](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Profils de messagerie dans Intune](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Utiliser des groupes pour gérer les utilisateurs et les appareils](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [Migration de groupes dans Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Mapper des appareils à des groupes](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Comprendre vos appareils grâce à l’inventaire](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
 
 ## [Protéger les appareils](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Verrouillage à distance et réinitialisation du mot de passe](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Protéger les appareils Windows avec l’authentification multifacteur](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [Protéger les appareils avec l’authentification multifacteur](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Contrôler les paramètres Windows Hello Entreprise](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Contourner le verrou d’activation sur iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Stratégies pour protéger les PC Windows](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -142,33 +147,34 @@
 #### [Windows & Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Déployer une stratégie de conformité des appareils](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Restreindre l’accès en fonction de la conformité des appareils](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Protéger l’accès en fonction de la conformité des appareils](deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 #### [Exchange Online et nouvel Exchange Online Dedicated](deploy-use/restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange local et Exchange Online Dedicated hérité](deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype Entreprise Online](deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-#### [Restreindre l’accès à la messagerie : exemples](deploy-use/restrict-email-access-example-scenarios.md)
+#### [Protéger l’accès à la messagerie : exemples](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Autoriser uniquement l’accès aux services O365 avec les applications gérées par une stratégie](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [Applications avec accès conditionnel pour la gestion des applications mobiles](deploy-use/use-apps-with-mam-ca.md)
+#### [Utiliser des applications avec l’accès conditionnel basé sur les applications](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Bloquer les applications sans ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
-### [Restreindre l’accès à des réseaux (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Restreindre l’accès en fonction du risque évalué pour l’appareil, le réseau et l’application](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [Configurer la protection contre les menaces sur les appareils Lookout](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [Activer Lookout dans Intune](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Déployer l’application Lookout for Work](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Activer une stratégie de conformité pour la protection de l’appareil contre les menaces](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Protéger l’accès à des réseaux (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
+### [Protéger l’accès en fonction du risque évalué pour l’appareil, le réseau et l’application](deploy-use/device-threat-protection.md)
+#### [Définir la protection des appareils contre les menaces](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Activer la protection des appareils contre les menaces](deploy-use/device-threat-protection-enable.md)
+#### [Déployer les applications de protection des appareils contre les menaces](deploy-use/device-threat-protection-apps.md)
+#### [Activer une stratégie de conformité pour la protection de l’appareil contre les menaces](deploy-use/device-threat-protection-policy.md)
 
 ### [Protéger les données d’application avec la gestion des applications mobiles](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Portail Azure pour les stratégies de gestion des applications mobiles](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Se préparer à configurer des stratégies de gestion des applications mobiles](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Créer et déployer des stratégies de gestion des applications mobiles](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Stratégies de gestion des applications mobiles pour Android](deploy-use/android-mam-policy-settings.md)
-#### [Stratégies de gestion des applications mobiles pour iOS](deploy-use/ios-mam-policy-settings.md)
-#### [Valider les stratégies de gestion des applications mobiles](deploy-use/validate-mobile-application-management.md)
-#### [Surveiller la conformité des stratégies](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Portail Azure pour les stratégies de protection d’applications](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Préparation à la configuration de stratégies de protection d’applications](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Créer et déployer des stratégies de protection d’applications](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Stratégies de protection d’applications pour Android](deploy-use/android-mam-policy-settings.md)
+#### [Stratégies de protection d’applications pour iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Valider des stratégies de protection des applications](deploy-use/validate-mobile-application-management.md)
+#### [Surveiller la conformité des stratégies de protection d’applications](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [Gérer les transferts de données entre applications iOS](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Console d’administration Intune pour les stratégies de gestion des applications mobiles](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -185,10 +191,10 @@
 ### [Mettre hors service des applications](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Réinitialiser les données d’applications d’entreprise managées](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Ressources concernant l’expérience utilisateur final](deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
-### [Restaurer des appareils iOS gérés](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [Applications Android avec stratégies GAM](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [Applications iOS avec stratégies GAM](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+## [Comment former vos utilisateurs finaux à Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+### [Comment vos utilisateurs Android obtiennent leurs applications](deploy-use/how-your-android-users-get-their-apps.md)
+### [Comment vos utilisateurs iOS obtiennent leurs applications](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Comment vos utilisateurs Windows obtiennent leurs applications](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Développer et personnaliser des applications
 ## [Vue d’ensemble du SDK d’application Microsoft Intune](develop/intune-app-sdk.md)
@@ -200,6 +206,7 @@
 
 # [Dépannage](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [Guide pratique pour obtenir un support technique](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Surveiller Intune à l’aide de rapports](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Résoudre les problèmes liés à Endpoint Protection](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Résoudre les problèmes d’accès aux ressources d’entreprise](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [Résoudre les problèmes de déploiement d’applications](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
@@ -213,9 +220,6 @@
 
 ## [Résoudre les problèmes de gestion des applications mobiles](troubleshoot/troubleshoot-mam.md)
 
-## [Résoudre les problèmes d’intégration de Lookout](troubleshoot/troubleshooting-lookout-integration.md)
+## [Résoudre les problèmes de protection des appareils contre les menaces](troubleshoot/device-threat-protection-troubleshooting.md)
 
-
-<!--HONumber=Dec16_HO5-->
-
-
+# [Glossaire](understand-explore/intune-glossary.md)

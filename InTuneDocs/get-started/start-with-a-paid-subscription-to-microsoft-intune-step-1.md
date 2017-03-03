@@ -1,11 +1,11 @@
 ---
-title: "S’inscrire ou se connecter à Intune | Microsoft Intune"
+title: "S’inscrire ou se connecter à Intune | Microsoft Docs"
 description: "Guide pratique pour vous inscrire à un abonnement Intune ou pour vous connecter et démarrer votre abonnement"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,21 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bf4a57146a77ce83a86112e08f5e839cf5f9eaf6
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>S'inscrire ou se connecter à Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Cette rubrique explique aux administrateurs système comment ouvrir un compte Intune.
+
 Avant de pouvoir vous connecter ou vous inscrire à Intune, vous devez déterminer si votre organisation possède déjà un compte professionnel ou scolaire Microsoft Online Services, ou si votre organisation dispose d’un accord Enterprise Agreement ou d’un accord de licence en volume équivalent conclu avec Microsoft. Un compte professionnel ou scolaire vous est fourni au moment où vous signez un contrat de licence en volume avec Microsoft ou que vous vous abonnez à des services cloud Microsoft, comme Office 365.
 
 Si vous avez déjà un compte professionnel ou scolaire, vous pourrez simplement vous **connecter** avec ce compte pour ajouter Intune à votre environnement d’abonnement existant. Dans le cas contraire, vous devrez vous **inscrire** pour créer un nouveau compte à utiliser pour gérer Intune pour votre organisation.
@@ -50,6 +56,6 @@ Après vous être inscrit pour obtenir un nouvel abonnement, vous recevrez un me
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

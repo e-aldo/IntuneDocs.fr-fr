@@ -1,11 +1,11 @@
 ---
-title: "Accéder à la messagerie d’entreprise en utilisant des profils de messagerie | Microsoft Intune"
+title: "Accéder à la messagerie d’entreprise en utilisant des profils de messagerie | Microsoft Docs"
 description: "Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
-ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
 
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 De nombreuses plateformes mobiles incluent un client de messagerie natif fourni avec le système d’exploitation. Certains de ces clients peuvent être configurés à l’aide de profils de messagerie, comme décrit dans cette rubrique.
 
@@ -33,11 +34,11 @@ Si vous avez besoin d’une protection supplémentaire contre la perte de donné
 Les administrateurs informatiques ou les utilisateurs peuvent choisir d’installer d’autres clients de messagerie (par exemple Microsoft Outlook pour Android ou iOS). Ces clients de messagerie peuvent ne pas prendre en charge les profils de messagerie, et ne sont pas configurables à l’aide des profils de messagerie Intune.  
 
 Vous pouvez utiliser des profils de messagerie pour configurer le client de messagerie natif sur les types d’appareils suivants :
--   Windows Phone 8.1 et versions ultérieures
--   Windows 10 (pour le bureau), Windows 10 Mobile et versions ultérieures
--   iOS 8.0 et versions ultérieures
--   Samsung KNOX Standard (4.0 et versions ultérieures)
--   Android for Work
+-    Windows Phone 8.1 et versions ultérieures
+-    Windows 10 (pour le bureau), Windows 10 Mobile et versions ultérieures
+-    iOS 8.0 et versions ultérieures
+-    Samsung KNOX Standard (4.0 et versions ultérieures)
+-    Android for Work
 
 >[!NOTE]
 >Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store et prennent en charge les connexions à Exchange. Pour activer la connectivité d’e-mail, déployez une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié.
@@ -88,7 +89,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
     -   **Profil d’e-mail (Android for Work - Gmail)**
 
-    -   **Profil d’e-mail (Android for Work - Nine Work)**
+    -    **Profil d’e-mail (Android for Work - Nine Work)**
 
     Vous pouvez uniquement créer et déployer une stratégie de profil de messagerie personnalisée. Les paramètres recommandés ne sont pas disponibles.
 
@@ -134,10 +135,10 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 
 > [!NOTE]
 > - Pour Android for Work, vérifiez que vous déployez également les applications Gmail ou Nine Work en plus du profil de messagerie approprié.
-> - Si vous souhaitez supprimer un profil de messagerie d'un appareil, modifiez le déploiement et supprimez les groupes dont l'appareil est membre.
+> - Si vous souhaitez supprimer un profil de messagerie d'un appareil, modifiez le déploiement et supprimez les groupes dont l'appareil est membre. Notez que vous ne pouvez pas supprimer un profil de messagerie de cette manière s’il s'agit du seul profil de messagerie sur un appareil.
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

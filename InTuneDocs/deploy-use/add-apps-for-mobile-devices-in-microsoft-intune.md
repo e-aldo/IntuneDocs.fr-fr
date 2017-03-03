@@ -1,11 +1,11 @@
 ---
-title: Ajouter des applications pour les appareils inscrits | Microsoft Intune
+title: Ajouter des applications pour les appareils inscrits | Microsoft Docs
 description: "Avant de déployer une application, vous devez l’ajouter à Intune. Vous la retrouverez ensuite dans la console Intune, où vous pourrez la déployer et la gérer."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
+ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
+ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
 
 
 ---
 
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Ajouter des applications pour les appareils inscrits à Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Avant de déployer ou de gérer une application, vous devez l’ajouter à Microsoft Intune. Cette rubrique vous montre comment ajouter des applications pour les appareils inscrits.
 
@@ -57,6 +60,9 @@ Vous utiliserez l'Éditeur de logiciel Intune pour configurer les propriétés d
         Par exemple, si vous souhaitez déployer l’application Microsoft Word à partir du magasin iTunes vers des appareils, la page ressemble à ceci :
 
         ![Éditeur de logiciel Intune](./media/publisher-for-mobile.png)
+
+> [!NOTE]
+> Quand vous ajoutez et déployez une application à partir d’un app store, les utilisateurs finaux doivent avoir un compte sur ce store pour pouvoir installer l’application.
 
 3.  Dans la page **Description du logiciel**, configurez ce qui suit :
 
@@ -100,6 +106,6 @@ Une fois l’application créée, l’étape suivante consiste à la déployer. 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

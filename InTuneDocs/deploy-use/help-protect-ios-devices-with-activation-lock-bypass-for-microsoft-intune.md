@@ -1,11 +1,11 @@
 ---
-title: "Gérer le verrou d’activation iOS sur les appareils | Microsoft Intune"
+title: "Gérer le verrou d’activation iOS sur les appareils | Microsoft Docs"
 description: "Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fonctionnalité de l’application Rechercher mon iPhone pour les appareils iOS 7.1 et versions ultérieures."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,23 +13,27 @@ ms.technology:
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 4e19836f4ce30434bb7d34db8323f811adf5d770
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
 
 
 ---
 
-# Aider à protéger les appareils iOS avec le contournement du verrou d'activation pour Microsoft Intune
+# <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Aider à protéger les appareils iOS avec le contournement du verrou d'activation pour Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fonctionnalité de l’application Rechercher mon iPhone pour les appareils iOS 8.0 et versions ultérieures. Le verrou d’activation est activé automatiquement lorsqu’un utilisateur ouvre l’application Rechercher mon iPhone sur un appareil. Une fois qu’il est activé, l’ID et le mot de passe Apple de l’utilisateur doivent être entrés pour pouvoir : 
 
--   désactiver Rechercher mon iPhone ;
+-   Désactiver Rechercher mon iPhone
 
--   effacer l'appareil ;
+-   Effacer l'appareil
 
--   réactiver l'appareil.
+-   Réactiver l'appareil
 
-## Impact du verrou d'activation
+## <a name="how-activation-lock-affects-you"></a>Impact du verrou d'activation
 Bien qu’il permette de sécuriser les appareils iOS et améliore les chances de récupération des données d’un appareil perdu ou volé, le verrou d’activation peut présenter quelques défis pour les administrateurs informatiques. Exemple :
 
 -   Un utilisateur configure le verrou d’activation sur un appareil. L'utilisateur quitte ensuite l'entreprise et rend l'appareil. Sans l’ID Apple et le mot de passe de l’utilisateur, il n’existe aucun moyen de réactiver l’appareil.
@@ -43,8 +47,8 @@ Pour résoudre ces problèmes, Apple a introduit le contournement du verrou d'ac
 > [!TIP]
 > Le mode supervisé pour les appareils iOS vous permet d’utiliser l’outil Apple Configurator pour verrouiller un appareil et limiter ainsi la fonctionnalité à des usages professionnels spécifiques. Le mode surveillé est généralement destiné uniquement aux appareils appartenant à l'entreprise.
 
-## Gestion du verrou d'activation dans Intune
-Intune peut demander l’état du verrou d’activation des appareils supervisés et non supervisés qui exécutent iOS 8.0 et versions ultérieures. Pour les appareils supervisés uniquement, Intune peut récupérer le code de contournement du verrou d’activation et le transmettre directement à l’appareil. Si l’appareil a été réinitialisé, vous pouvez y accéder directement en utilisant le code comme nom d’utilisateur ainsi qu’un mot de passe vide.
+## <a name="how-intune-helps-you-manage-activation-lock"></a>Gestion du verrou d'activation dans Intune
+Intune peut demander l’état du verrou d’activation des appareils supervisés qui exécutent iOS 8.0 et versions ultérieures. Pour les appareils supervisés uniquement, Intune peut récupérer le code de contournement du verrou d’activation et le transmettre directement à l’appareil. Si l’appareil a été réinitialisé, vous pouvez y accéder directement en utilisant un mot de passe vide et le code comme nom d'utilisateur.
 
 **Les avantages sont les suivants** :
 
@@ -52,7 +56,7 @@ Intune peut demander l’état du verrou d’activation des appareils supervisé
 
 -   Vous pouvez permettre à l’utilisateur d’effectuer son travail en sachant que l’appareil peut être mis hors service ou déverrouillé lorsque vous devez le réaffecter.
 
-## Utilisation du contournement du verrou d'activation à partir de la console d'administration Intune
+## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Utilisation du contournement du verrou d'activation à partir de la console d'administration Intune
 > [!IMPORTANT]
 > Une fois que vous avez contourné le verrou d’activation sur un appareil, un nouveau verrou d’activation est automatiquement appliqué lorsque l’application Rechercher mon iPhone est lancée. Pour cette raison, **vous devez être en possession physique de l’appareil avant d’appliquer cette procédure**.
 
@@ -64,7 +68,7 @@ Intune peut demander l’état du verrou d’activation des appareils supervisé
 
 Vous pouvez examiner l'état de la demande de déverrouillage dans la page de détails de l'appareil.
 
-## Identification des appareils qui utilisent le verrou d'activation
+## <a name="how-to-see-which-devices-are-using-activation-lock"></a>Identification des appareils qui utilisent le verrou d'activation
 Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deux manières :
 
 -   Exécutez les **Rapports d'inventaire des appareils mobiles**. Ces rapports contiennent les colonnes **État du verrou d’activation** et **Supervisé**, qui indiquent l’état des appareils. Les valeurs possibles de **Supervisé** sont **Oui** ou **non**et les valeurs possibles de **État du verrou d'activation** sont les suivantes :
@@ -87,12 +91,12 @@ Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deu
     >Intune récupère un inventaire des appareils pour le verrou d’activation tous les 7 jours. Pour cette raison, il est possible que l’état du verrou d’activation des appareils ne soit pas immédiatement actualisé dans la console Intune.
 
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 [Mettre des appareils hors service](retire-devices-from-microsoft-intune-management.md)
 [Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code secret](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

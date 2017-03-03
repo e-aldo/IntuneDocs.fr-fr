@@ -1,21 +1,25 @@
 ---
-title: "Créer un profil professionnel et inscrire votre appareil dans Intune | Microsoft Intune"
-description: Cette rubrique explique comment chiffrer un appareil Android
+title: "Inscrire un appareil à l’aide d’un profil professionnel | Microsoft Docs"
+description: "Guide pratique pour sécuriser les appareils Android avec des profils professionnels."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 2384889d377713757b6172a12d608b32a1756978
 
 
 ---
@@ -69,7 +73,7 @@ Pour créer un profil professionnel :
 
     Vous verrez brièvement le message « Inscription de votre appareil ».
 
-11. Quand l’écran **Configuration de l’accès à l’entreprise** montre que tout a été configuré correctement, appuyer sur **CONTINUER**. 
+11. Quand l’écran **Configuration de l’accès à l’entreprise** montre que tout a été configuré correctement, appuyer sur **CONTINUER**.
 
     ![L’écran Configuration de l’accès à l’entreprise indique que le profil professionnel et l’inscription sont terminés](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -85,8 +89,6 @@ Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obte
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

@@ -1,19 +1,20 @@
 ---
-title: Configuration de la gestion Android for Work | Microsoft Docs
+title: Configurer Android for Work | Microsoft Docs
 description: Activez la gestion des appareils mobiles pour les appareils Android for Work avec Microsoft Intune.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
@@ -21,8 +22,6 @@ ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Activer l’inscription des appareils Android for Work
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Pour activer la gestion des appareils Android for Work, vous devez ajouter une liaison Android for Work à Intune. Pour inscrire des appareils qui prennent en charge Android for Work, mais qui étaient inscrits comme des appareils Android ordinaires, les appareils doivent être désinscrits, puis réinscrits.
 
@@ -54,7 +53,7 @@ Après avoir configuré la liaison et les paramètres Android for Work, vous pou
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Séparation de votre compte administratif Android for Work
 
-Vous pouvez désactiver l’inscription et la gestion Android for Work. Cliquer sur **Séparer** supprime tout appareil Android for Work de l’inscription, ainsi que la relation entre le compte Android for Work et Intune.
+Vous pouvez désactiver l’inscription et la gestion Android for Work. En cliquant sur **Séparer** dans la console d’administration Intune, vous supprimez tous les appareils Android for Work inscrits, ainsi que la relation entre le compte Android for Work et Intune.
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Comment séparer un compte Android for Work
 
@@ -66,6 +65,6 @@ Vous pouvez désactiver l’inscription et la gestion Android for Work. Cliquer 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

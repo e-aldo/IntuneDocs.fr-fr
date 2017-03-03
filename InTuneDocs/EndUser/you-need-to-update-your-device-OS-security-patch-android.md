@@ -5,16 +5,19 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f6fe6f76a700137914ef9cea7ce02753882e2fa3
-ms.openlocfilehash: 8893b397f5a29568ab5d4238e56d7e9806633e30
+ms.sourcegitcommit: 440d0e75c9373d5de44897b8a997da6c24de4e3c
+ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
 
 
 ---
@@ -27,18 +30,20 @@ Si vous avez un appareil Samsung, accédez à **Paramètres** > **À propos du t
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-## <a name="if-you-have-a-samsung-knox-device"></a>Si vous avez un appareil Samsung Knox
+## <a name="for-most-android-devices-non-samsung-knox"></a>Pour la plupart des appareils Android (ne s’applique pas aux appareils Samsung Knox)
+
+Accédez à **Paramètres** > **À propos de** > **Mises à jour logicielles**. Installez la mise à jour et votre appareil disposera du correctif de sécurité approprié.
+
+## <a name="for-samsung-knox-android-devices"></a>Pour les appareils Android Samsung Knox
 
 Accédez à **Paramètres** > **Mises à jour système** > **Rechercher les nouvelles mises à jour système**. Installez la mise à jour et votre appareil Samsung Knox disposera du correctif de sécurité approprié.
 
-## <a name="if-you-do-not-have-a-samsung-knox-device"></a>Si vous n’avez pas d’appareil Samsung Knox
 
-Accédez à **Paramètres** > **À propos de** > **Mises à jour logicielles**. Installez la mise à jour et votre appareil disposera du correctif de sécurité approprié. 
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

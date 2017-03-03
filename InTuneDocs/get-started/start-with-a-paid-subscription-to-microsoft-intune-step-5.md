@@ -1,11 +1,11 @@
 ---
-title: "Créer des groupes pour organiser les utilisateurs et les appareils | Microsoft Intune"
+title: "Créer des groupes pour organiser les utilisateurs et les appareils | Microsoft Docs"
 description: "Créer des utilisateurs et des groupes pour votre abonnement Intune"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,21 @@ ms.technology:
 ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 85b2e7c50f4ea1e07bd1474e3902cebcbccc1467
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
 
 
 ---
 
 
 # <a name="create-groups-to-organize-users-and-devices"></a>Créer des groupes pour organiser les utilisateurs et les appareils
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Cette rubrique explique aux administrateurs comment créer des groupes d’utilisateurs dans Intune.
+
 Les groupes créés dans Intune vous permettent de gérer vos utilisateurs et appareils avec une grande souplesse. Vous pouvez configurer des groupes qui répondent aux besoins de votre organisation (par exemple, en fonction de l'emplacement géographique, du service ou de caractéristiques matérielles) et les utiliser pour effectuer diverses tâches d'administration, du déploiement de stratégies pour un ensemble d'utilisateurs au déploiement d'applications sur un ensemble d'appareils.
 
 ## <a name="group-management-moving-to-azure-ad"></a>Déplacement de la gestion des groupes vers Azure AD
@@ -84,6 +90,6 @@ Le groupe récemment créé est disponible dans la liste **Groupes**, dans l’e
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

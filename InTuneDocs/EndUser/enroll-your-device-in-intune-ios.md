@@ -1,22 +1,25 @@
 ---
-title: Inscrire un appareil iOS dans Intune | Microsoft Intune
+title: Inscrire un appareil iOS dans Intune | Microsoft Docs
 description: Cette rubrique explique comment inscrire un appareil iOS dans Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-ROBOTS: 
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: c7fa06ea443523c51a79c33af7e8094d7a7777c5
 
 
 ---
@@ -24,9 +27,12 @@ ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 # <a name="enroll-your-ios-device-in-intune"></a>Inscrire un appareil iOS dans Intune
 
-Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil iOS pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, le service Informatique peut gérer ces ressources professionnelles ou pédagogiques, les sécuriser et vous donner la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil iOS pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, le service Informatique peut gérer ces ressources professionnelles ou pédagogiques, les sécuriser et vous donner la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il si vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-Si vous essayez d’inscrire un appareil macOS, consultez [Inscrire un appareil macOS dans Intune](enroll-your-device-in-intune-macos.md).
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+> [!NOTE]
+> Si vous essayez d’inscrire un appareil macOS, tel qu’un MacBook Pro ou un iMac, [suivez plutôt ces instructions](enroll-your-device-in-intune-macos.md).
 
 **Avant de commencer :**
 
@@ -53,7 +59,7 @@ Si vous essayez d’inscrire un appareil macOS, consultez [Inscrire un appareil 
 
 5.  Dans l’écran **Et ensuite ?**, découvrez ce qui se passe lors de l’inscription, puis appuyez sur **Inscrire**.
 
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
+     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  Dans l’écran **Installer un profil**, appuyez sur **Installer** et entrez votre code secret si vous y êtes invité.
 
@@ -65,15 +71,15 @@ Si vous essayez d’inscrire un appareil macOS, consultez [Inscrire un appareil 
 
 8.  Appuyez sur **Installer** pour indiquer que vous avez lu l’avertissement.
 
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
+       ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  Appuyez sur **Confiance**.
 
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
+       ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  Quand l’écran change et indique que l’installation du profil est terminée, appuyez sur **Terminé**.
 
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
+     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     Un message « Inscription de l’appareil » s’affiche à l’écran.
 
@@ -91,11 +97,10 @@ Si vous essayez d’inscrire un appareil macOS, consultez [Inscrire un appareil 
 
 Votre appareil est maintenant inscrit dans Intune, et l’application Portail d’entreprise réapparaît.
 
-
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Migrer vers Intune | Microsoft Intune
-description: 
+title: Migrer vers Intune | Microsoft Docs
+description: "Vous pouvez procéder comme suit pour migrer vers Intune depuis votre solution de gestion de mobilité d’entreprise."
 keywords: 
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 11/22/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
 
 # <a name="migrate-to-intune"></a>Migrer vers Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez procéder comme suit pour migrer vers Intune depuis votre solution de gestion de mobilité d’entreprise :
 
@@ -45,7 +47,7 @@ Les appareils doivent être désinscrits de votre solution de gestion de mobilit
 
 ## <a name="enrolling-devices-in-intune"></a>Inscription des appareils à Intune
 
-Les utilisateurs planifiés pour la migration doivent immédiatement s’inscrire à Intune pour éviter la perte de l’accès aux ressources d’entreprise, aux e-mails et aux applications ou rétablir cet accès. Si vous avez configuré l’accès conditionnel et que les utilisateurs essaient de se connecter à la messagerie électronique avant de s’inscrire auprès d’Intune, leur accès est refusé et un e-mail d’inscription leur est envoyé. Cet e-mail les guide lors du processus d’inscription de leur appareil auprès d’Intune.  Les utilisateurs peuvent également s’inscrire à Intune par le biais de l’application Portail d’entreprise Intune ou en mode natif par le biais des systèmes d’exploitation Windows 8.1 et Windows 10 Mobile. Reportez-vous à [Ce qu’il faut dire à vos utilisateurs finaux concernant l’utilisation de Microsoft Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) pour obtenir des conseils supplémentaires sur les étapes d’inscription par plateforme.
+Les utilisateurs planifiés pour la migration doivent immédiatement s’inscrire à Intune pour éviter la perte de l’accès aux ressources d’entreprise, aux e-mails et aux applications ou rétablir cet accès. Si vous avez configuré l’accès conditionnel et que les utilisateurs essaient de se connecter à la messagerie électronique avant de s’inscrire auprès d’Intune, leur accès est refusé et un e-mail d’inscription leur est envoyé. Cet e-mail les guide lors du processus d’inscription de leur appareil auprès d’Intune.  Les utilisateurs peuvent également s’inscrire à Intune par le biais de l’application Portail d’entreprise Intune ou en mode natif par le biais des systèmes d’exploitation Windows 8.1 et Windows 10 Mobile. Reportez-vous à [Ce qu’il faut dire à vos utilisateurs finaux concernant l’utilisation de Microsoft Intune](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) pour obtenir des conseils supplémentaires sur les étapes d’inscription par plateforme.
 
 ## <a name="configure-intune-conditional-access-optional"></a>Configuration d’un accès conditionnel Intune (facultatif)
 
@@ -74,6 +76,6 @@ Pour obtenir une copie téléchargeable de ce guide dans son intégralité, acc�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

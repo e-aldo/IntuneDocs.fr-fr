@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Ajouter des utilisateurs et accorder une autorisation d’administration à Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Cette rubrique explique aux administrateurs comment ajouter des utilisateurs à Intune et décrit les autorisations d’administration disponibles dans le service Intune.
 
 En tant qu’administrateur, vous pouvez ajouter directement des utilisateurs ou synchroniser des utilisateurs à partir de votre annuaire Active Directory local. Une fois ajoutés, les utilisateurs peuvent inscrire des appareils et accéder aux ressources de l’entreprise. Vous pouvez également attribuer aux utilisateurs des autorisations supplémentaires, notamment celles d’*administrateur client*, d’*administrateur de service* et de *gestionnaire d’inscription d’appareil*.
 
@@ -33,7 +38,7 @@ Cette rubrique vous aide à effectuer les tâches suivantes :
   - [Gestionnaires d’inscription d’appareil](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Ajouter des utilisateurs à Intune
-Vous pouvez ajouter manuellement des utilisateurs à votre abonnement Intune par le biais du [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Une licence Intune ne leur est pas attribuée automatiquement. Au lieu de cela, un administrateur Intune doit modifier le compte d’utilisateur à une date ultérieure pour attribuer une licence à l’utilisateur à partir du portail Office 365. Pour obtenir des instructions, consultez [Ajouter des utilisateurs individuellement ou en bloc à Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Vous pouvez ajouter manuellement des utilisateurs à votre abonnement Intune par le biais du [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), mais une licence Intune ne leur est pas attribuée automatiquement. Au lieu de cela, un administrateur Intune doit modifier le compte d’utilisateur à une date ultérieure pour attribuer une licence à l’utilisateur à partir du portail Office 365. Pour obtenir des instructions, consultez [Ajouter des utilisateurs individuellement ou en bloc à Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Synchroniser Active Directory et ajouter des utilisateurs à Intune
 Vous pouvez configurer la synchronisation d’annuaires pour importer des comptes d’utilisateur de votre instance Active Directory locale vers Microsoft Azure Active Directory (Azure AD), qui comprend les utilisateurs Intune. Le fait que votre service Active Directory local soit connecté à tous vos services Azure Active Directory facilite grandement la gestion des identités des utilisateurs. Vous pouvez aussi configurer les fonctionnalités d'authentification unique pour permettre à vos utilisateurs de s'authentifier de manière simple et naturelle. Si vous liez le même [locataire Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) à plusieurs services, les comptes d’utilisateur que vous avez précédemment synchronisés sont accessibles à tous les services cloud.
@@ -93,7 +98,7 @@ En tant qu’administrateur de service, utilisez ce portail pour gérer les opé
 
 ### <a name="device-enrollment-managers"></a>Gestionnaires d’inscription d’appareil
 
-Les gestionnaires d’inscription d’appareil sont des comptes d’utilisateur standard dotés d’autorisations supplémentaires pour inscrire davantage d’appareils sans utilisateur. Par défaut, chaque utilisateur Intune peut inscrire jusqu’à 15 appareils. En tant qu’administrateur, vous pouvez accorder à un compte d’utilisateur l’autorisation Gestionnaire d’inscription d’appareil. Ce compte peut inscrire un grand nombre d’appareils d’entreprise. Cela s’avère utile quand les appareils doivent être affectées aux utilisateurs de façon temporaire ou sont utilisés en mode plein écran alors qu’aucune association n’est requise entre un utilisateur et un appareil. Pour plus d’informations, consultez [Gestionnaire d’inscription d’appareil](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+Les gestionnaires d’inscription d’appareil sont des comptes d’utilisateur standard dotés d’autorisations supplémentaires pour inscrire davantage d’appareils sans utilisateur. Par défaut, chaque utilisateur Intune peut inscrire jusqu’à&15; appareils. En tant qu’administrateur, vous pouvez accorder à un compte d’utilisateur l’autorisation Gestionnaire d’inscription d’appareil. Ce compte peut inscrire un grand nombre d’appareils d’entreprise. Cela s’avère utile quand les appareils doivent être affectées aux utilisateurs de façon temporaire ou sont utilisés en mode plein écran alors qu’aucune association n’est requise entre un utilisateur et un appareil. Pour plus d’informations, consultez [Gestionnaire d’inscription d’appareil](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
 >[!div class="step-by-step"]
 
@@ -101,6 +106,6 @@ Les gestionnaires d’inscription d’appareil sont des comptes d’utilisateur 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
