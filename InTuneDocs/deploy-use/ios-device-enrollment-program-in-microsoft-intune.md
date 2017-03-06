@@ -4,7 +4,7 @@ description: "Déployez un profil d’inscription qui inscrit les appareils iOS 
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
