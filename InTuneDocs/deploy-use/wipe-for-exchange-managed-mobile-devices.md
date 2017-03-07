@@ -2,8 +2,8 @@
 title: "Réinitialiser des appareils mobiles gérés par Exchange | Microsoft Docs"
 description: "Microsoft Intune vous permet d’effacer ou de réinitialiser des appareils mobiles gérés à l&quot;aide d&quot;Exchange ActiveSync (EAS) avec Intune Exchange Connector"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
