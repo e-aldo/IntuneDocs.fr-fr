@@ -2,8 +2,8 @@
 title: "Gestion DEP d’Apple pour les appareils iOS | Microsoft Docs"
 description: "Déployez un profil d’inscription qui inscrit les appareils iOS achetés via le programme DEP iOS « à distance », afin de gérer les appareils Apple."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

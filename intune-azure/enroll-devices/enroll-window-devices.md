@@ -3,8 +3,8 @@ title: Inscrire des appareils Windows
 titleSuffix: Intune Azure preview
 description: "Version préliminaire  d’Intune Azure : activez la gestion des appareils mobiles (MDM) pour les appareils Windows."
 keywords: 
-author: staciebarker
-manager: stabar
+author: nathbarn
+manager: nathbarn
 ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 7262093700dab3a7befd5b82ac9f8ee3dde22dcf
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -84,9 +85,4 @@ Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appar
     Pour plus d’informations sur les tâches de l’utilisateur final, consultez [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
 Aucun travail supplémentaire n’est requis sauf si vous déployez le Portail d’entreprise sur les appareils.  Les étapes 2 et 3 dans la console d’administration peuvent être ignorées en toute sécurité.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

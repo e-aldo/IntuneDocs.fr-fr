@@ -2,8 +2,8 @@
 title: "Conditions préalables à l’inscription d’appareils mobiles | Microsoft Docs"
 description: "Configurez les conditions préalables à la gestion d’appareils mobiles, puis préparez-vous à inscrire différents systèmes d’exploitation."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article

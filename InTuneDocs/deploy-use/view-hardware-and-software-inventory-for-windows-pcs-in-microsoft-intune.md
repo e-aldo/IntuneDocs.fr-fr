@@ -2,8 +2,8 @@
 title: "Afficher l’inventaire logiciel et matériel pour les PC Windows | Microsoft Docs"
 description: "Comment afficher les informations matérielles et logicielles sur les ordinateurs de bureau Windows que vous gérez comme PC avec le client logiciel Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

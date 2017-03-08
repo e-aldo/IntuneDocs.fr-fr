@@ -3,8 +3,8 @@ title: "Configurer un service de gestion des dépenses en télécommunications"
 titleSuffix: Intune Azure preview
 description: "Préversion d’Intune Azure : configuration du service de gestion de frais de télécommunications Saaswedo pour l’intégration à Intune."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article

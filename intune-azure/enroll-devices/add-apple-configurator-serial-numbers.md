@@ -3,8 +3,8 @@ title: "Ajouter des numéros de série Apple Configurator"
 titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment ajouter des numéros de série pour les appareils iOS d’entreprise à l’aide de l’outil Apple Configurator."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

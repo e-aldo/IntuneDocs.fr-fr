@@ -2,8 +2,8 @@
 title: "S’inscrire avec le gestionnaire d’inscription d’appareil | Microsoft Docs"
 description: "Le compte de gestionnaire d’inscription d’appareil peut gérer un grand nombre d’appareils mobiles d’entreprise partagés avec un seul compte d’utilisateur."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -106,9 +107,4 @@ La suppression d'un gestionnaire d'inscription d'appareil n'affecte pas les appa
 -   La suppression du gestionnaire d’inscription d’appareil n’entraîne pas la réinitialisation ou la mise hors service des appareils.
 
 -   Il existe toujours une relation entre le compte du gestionnaire d’inscription d’appareil supprimé et les appareils inscrits, mais aucun appareil supplémentaire ne peut être inscrit.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

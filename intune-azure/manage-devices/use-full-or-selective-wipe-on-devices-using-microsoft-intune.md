@@ -3,8 +3,8 @@ title: "Réinitialisation complète ou sélective sur des appareils à l’aide 
 titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Apprenez à effectuer une réinitialisation sélective de données d’entreprise sur un appareil ou effectuer une réinitialisation complète pour réinitialiser l’appareil aux paramètres d’usine."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

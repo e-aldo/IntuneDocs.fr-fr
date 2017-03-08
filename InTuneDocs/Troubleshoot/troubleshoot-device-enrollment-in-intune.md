@@ -2,8 +2,8 @@
 title: "Résoudre les problèmes d’inscription d’appareils | Microsoft Docs"
 description: "Suggestions pour résoudre les problèmes liés à l’inscription d’appareils."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article

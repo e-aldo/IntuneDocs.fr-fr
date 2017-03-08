@@ -2,8 +2,8 @@
 title: "Gérer la liaison utilisateur-appareil pour les PC Windows | Microsoft Docs"
 description: "Comment lier un utilisateur à un PC Windows géré par Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

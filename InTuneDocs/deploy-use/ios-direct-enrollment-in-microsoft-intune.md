@@ -2,8 +2,8 @@
 title: Inscription directe pour les appareils iOS | Microsoft Docs
 description: "Utilisez l’outil Apple Configurator pour inscrire directement les appareils iOS d’entreprise avec une stratégie prédéfinie en vous connectant via USB à un ordinateur Mac."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article

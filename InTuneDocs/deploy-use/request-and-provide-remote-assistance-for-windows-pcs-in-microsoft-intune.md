@@ -2,8 +2,8 @@
 title: "Demander et fournir une assistance à distance pour les PC Windows | Microsoft Docs"
 description: "Décrit les étapes de l’utilisateur final et de l’administrateur informatique permettant de fournir une assistance à distance pour les bureaux Windows gérés et de démarrer un PC à distance."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

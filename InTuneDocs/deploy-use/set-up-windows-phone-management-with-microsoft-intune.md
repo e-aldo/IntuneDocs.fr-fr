@@ -2,7 +2,8 @@
 title: "Configurer la gestion de Windows 10 Mobile et Windows Phone | Microsoft Docs"
 description: "Activez la gestion des appareils mobiles pour les appareils Windows 10 Mobile ou Windows Phone avec Microsoft Intune."
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

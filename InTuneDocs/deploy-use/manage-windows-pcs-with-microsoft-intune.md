@@ -2,8 +2,8 @@
 title: Gestion de PC avec logiciel client | Microsoft Docs
 description: "Gérer des PC Windows en installant le logiciel du client Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

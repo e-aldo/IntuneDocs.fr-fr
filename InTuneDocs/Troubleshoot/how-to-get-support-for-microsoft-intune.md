@@ -2,8 +2,8 @@
 title: Comment obtenir un support technique | Microsoft Docs
 description: "Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 01/28/2017
 
 
 ---
@@ -146,9 +147,4 @@ Le support « Break-fix » est compris dans les abonnements Microsoft Intune e
 Si un ingénieur du support technique vous demande d’ouvrir d’autres incidents pour d’autres problèmes, comprenez que c’est dans l’intérêt général. Merci de votre compréhension et de votre concours qui nous permet de fournir des expériences de support de classe mondiale !
 
 Pour connaître les prix par incident et les niveaux de sévérité, consultez [Options de support professionnel](https://support.microsoft.com/gp/offerprophone).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

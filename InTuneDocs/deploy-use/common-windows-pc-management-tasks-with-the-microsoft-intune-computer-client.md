@@ -2,8 +2,8 @@
 title: "Tâches courantes de gestion des PC Windows | Microsoft Docs"
 description: "Découvrez différentes façons de gérer les PC Windows qui exécutent le client logiciel Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
