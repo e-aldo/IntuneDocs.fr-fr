@@ -11,11 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1314fad0c387224302a4c2b67c913f9d2ec6c5d4
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -35,7 +40,7 @@ Voici les tâches que les utilisateurs peuvent effectuer à partir du site web P
 
 -   [Verrouiller un appareil à distance](remote-lock-your-device-cpwebsite.md)
 
--   [Synchroniser votre appareil manuellement pour accélérer les installations lentes d’applications](sync-your-device-manually-cpwebsite.md)
+-    [Synchroniser votre appareil manuellement pour accélérer les installations lentes d’applications](sync-your-device-manually-cpwebsite.md)
 
 -   Rechercher les coordonnées de l’administrateur informatique, si vous les avez configurées
 
@@ -46,11 +51,6 @@ Voici les tâches que les utilisateurs peuvent effectuer à partir du site web P
 Sur le **site web Portail d’entreprise**, les utilisateurs finaux peuvent faire à peu près les mêmes choses que dans l’**application Portail d’entreprise** qu’ils installent sur leur appareil. Consultez les pages suivantes, qui contiennent des liens vers toutes les tâches que les utilisateurs finaux peuvent effectuer sur leur appareil :
 
 - [Utilisation de votre appareil Android avec Intune](using-your-android-device-with-intune.md)
-- [Utilisation de votre appareil iOS ou MacOS avec Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Utilisation de votre appareil iOS ou MacOS avec Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Utilisation de votre appareil Windows avec Intune](using-your-windows-device-with-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
