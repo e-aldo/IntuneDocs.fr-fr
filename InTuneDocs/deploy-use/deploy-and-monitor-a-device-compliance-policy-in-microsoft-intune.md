@@ -1,5 +1,5 @@
 ---
-title: "Déployer et contrôler une stratégie de conformité | Microsoft Intune"
+title: "Déployer et contrôler une stratégie de conformité | Microsoft Docs"
 description: "Suivez la procédure détaillée de cette rubrique pour déployer et surveiller une stratégie de conformité d’appareil."
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c5c7ed25942a2f7c570bd81aa1e6c08483c0417b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 59c107b9431d4e2925b13d09ab3e01a25c8351fa
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Déployer et contrôler une stratégie de conformité d’appareils dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="deploy-a-compliance-policy"></a>Déployer une stratégie de conformité
 Déployez la stratégie de conformité que vous avez [créée](create-a-device-compliance-policy-in-microsoft-intune.md) sur un ou plusieurs groupes d’utilisateurs de votre organisation. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée.
 
@@ -67,9 +72,4 @@ Pour savoir comment utiliser la stratégie de conformité avec des stratégies d
 
 ### <a name="see-also"></a>Voir aussi
 [Introduction aux stratégies de conformité des appareils dans Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

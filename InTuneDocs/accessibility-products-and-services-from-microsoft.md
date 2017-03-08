@@ -1,20 +1,23 @@
 ---
-title: "Produits et services d’accessibilité Microsoft | Microsoft Intune"
-description: 
+title: "Produits et services d’accessibilité Microsoft | Microsoft Docs"
+description: "Détails sur les produits et services d&quot;accessibilité de Microsoft."
 keywords: 
-author: 
-manager: jeffgilb
-ms.date: 12/05/2016
-ms.topic: article
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 12/30/2016
+ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b23d4007-1866-42e9-b6cb-d45408562da4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b99c90bfafd65e87e258e1e0ac01691e83581659
-ms.openlocfilehash: d5f2f9a641089bb67cee525e05abffec5c92c577
+ms.sourcegitcommit: 9e3d509cf404c89b27f92ad54c900e927ce3878b
+ms.openlocfilehash: a848e92be9896016159533c0ba7291fe193a217a
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -66,9 +69,4 @@ ms.openlocfilehash: d5f2f9a641089bb67cee525e05abffec5c92c577
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 [!INCLUDE[accessibility17](./includes/accessibility17_md.md)]
-
-
-
-<!--HONumber=Dec16_HO1-->
-
 

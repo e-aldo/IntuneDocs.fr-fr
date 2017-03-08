@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi à l’aide d’une PSK (clé prépartagée) | Microsoft Intune"
+title: "Wi-Fi à l’aide d’une PSK (clé prépartagée) | Microsoft Docs"
 description: "Utilisez une configuration personnalisée pour créer un profil Wi-Fi avec une clé prépartagée."
 keywords: 
 author: robstackmsft
@@ -13,35 +13,40 @@ ms.technology:
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
+ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
+ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
+ms.lasthandoff: 12/15/2016
 
 
 
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utiliser une stratégie personnalisée pour créer un profil Wi-Fi avec une clé prépartagée
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Voici comment utiliser la **configuration personnalisée** d’Intune pour créer un profil Wi-Fi avec une clé prépartagée. Cette rubrique comprend également un exemple de création d’un profil Wi-Fi basé sur EAP.
 
 > [!NOTE]
--   Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
+-    Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
 - Pour Android, vous avez également la possibilité d’utiliser ce [générateur de clés prépartagées Android](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fourni par Johnathon Biersack.
--   Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
+-    Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
 -  Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Vous pouvez également utiliser le [générateur de configuration mobile de clés prépartagées pour iOS](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fourni par Johnathon Biersack.
 
 
-1.  Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Configuration personnalisée** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez une stratégie.
+1.    Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Configuration personnalisée** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez une stratégie.
 
-2.  Fournissez un nom et une description.
-3.  Ajoutez un paramètre OMA-URI :
+2.    Fournissez un nom et une description.
+3.    Ajoutez un paramètre OMA-URI :
 
-   a.   Entrez un nom pour ce paramètre de réseau Wi-Fi.
+   a.    Entrez un nom pour ce paramètre de réseau Wi-Fi.
 
-   b.   Entrez une description du paramètre OMA-URI ou laissez-la vide.
+   b.    Entrez une description du paramètre OMA-URI ou laissez-la vide.
 
-   c.   **Type de données**: définissez sur « String(XML) »
+   c.    **Type de données**: définissez sur « String(XML) »
 
-   d.   **OMA-URI** :
+   d.    **OMA-URI** :
 
     - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -69,24 +74,24 @@ Voici un exemple de code XML pour un profil Wi-Fi Android ou Windows :
 >  `<hex>53534944</hex>` doit être défini sur la valeur hexadécimale de `<name><SSID of wifi profile></name>`.
 >  Les appareils Windows 10 peuvent retourner une fausse erreur *0x87D1FDE8 Échec de la correction* et être néanmoins configurés avec le profil.
 
-    <!--
-    <Name of wifi profile> = Name of profile
-    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-    <nonBroadcast><true/false></nonBroadcast>
-    <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
-    <Type of encryption> = Type of encryption used by the network
-    <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-    <password> = Password to connect to the network
-    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <hex>53534944</hex>
-        <name><SSID of wifi profile></name>
-        </SSID>
+```
+<!--
+<Name of wifi profile> = Name of profile
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+<nonBroadcast><true/false></nonBroadcast>
+<Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
+<Type of encryption> = Type of encryption used by the network
+<protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+<password> = Password to connect to the network
+<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+-->
+<WLANProfile
+xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+  <name><Name of wifi profile></name>
+  <SSIDConfig>
+    <SSID>
+      <hex>53534944</hex>
+ <name><SSID of wifi profile></name>        </SSID>
         <nonBroadcast>false</nonBroadcast>
       </SSIDConfig>
       <connectionType>ESS</connectionType>
@@ -108,10 +113,12 @@ Voici un exemple de code XML pour un profil Wi-Fi Android ou Windows :
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="eap-based-wi-fi-profile"></a>Profil Wi-Fi basé sur EAP
 Voici un exemple du code XML pour un profil Wi-Fi basé sur EAP :
 
+```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -189,6 +196,7 @@ Voici un exemple du code XML pour un profil Wi-Fi basé sur EAP :
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Création du fichier XML à partir d’une connexion Wi-Fi existante
 Vous pouvez également créer un du fichier XML à partir d’une connexion Wi-Fi existante :
@@ -212,9 +220,4 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 
 ### <a name="see-also"></a>Voir aussi
 [Connexions Wi-Fi dans Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

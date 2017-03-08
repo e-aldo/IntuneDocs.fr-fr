@@ -1,5 +1,5 @@
 ---
-title: "Applications autorisées et bloquées pour KNOX | Microsoft Intune"
+title: "Applications autorisées et bloquées pour KNOX | Microsoft Docs"
 description: "Profil personnalisé pour créer une liste d’applications autorisées et bloquées pour KNOX."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Appliquez les procédures de cette rubrique pour créer une stratégie personnalisée Microsoft Intune qui crée l’un des éléments suivants :
 
@@ -38,9 +42,9 @@ Ces paramètres peuvent uniquement être utilisés par les appareils qui exécut
     
     - **Nom du paramètre**. Entrez **PreventStartPackages**.
     - **Description du paramètre**. Entrez une description facultative, comme « Liste des applications dont l’exécution est bloquée ».
-    -   **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
-    -   **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
-    -   **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
+    -     **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
+    -     **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
+    -     **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
 
     Pour obtenir la liste des applications que les utilisateurs sont autorisés à installer à partir du Google Play Store tout en excluant toutes les autres applications :
 
@@ -69,9 +73,4 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 
 ### <a name="see-also"></a>Voir aussi
 [Paramètres de la stratégie de configuration Android et Samsung KNOX dans Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

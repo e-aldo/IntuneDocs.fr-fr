@@ -1,11 +1,11 @@
 ---
-title: "Protéger les données et les applications | Microsoft Intune"
+title: "Protéger les données et les applications | Microsoft Docs"
 description: "Cette rubrique décrit diverses fonctionnalités Intune qui sont disponibles pour vous aider à protéger vos données et applications d’entreprise."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,18 @@ ms.technology:
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 4f8cb86126a982b21ad3288108295d1784f08df3
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.lasthandoff: 12/20/2016
 
 
 ---
 
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Protéger les données et les applications avec Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune protège les données d’entreprise à travers plusieurs couches de technologie. Dans la couche d’identité, un accès conditionnel protège l’accès aux services en autorisant uniquement l’accès à partir d’appareils conformes et gérés. Dans la couche d’application cliente, la gestion des applications mobiles assure une protection contre la perte de données en empêchant le déplacement de données vers des applications ou des emplacements de stockage non protégés et en effaçant les données quand un appareil est perdu ou volé. Nous vous conseillons d’utiliser ces deux couches de protection ensemble afin de sécuriser les données tout en préservant la productivité de votre personnel mobile.
 
@@ -51,9 +54,4 @@ Certaines applications, par exemple les applications Microsoft Office, intègren
 Vous pouvez également [activer les applications métier intégrées personnalisées](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) à utiliser avec les stratégies de gestion des applications mobiles.
 
 En plus de restreindre le déplacement des données, si un appareil est perdu ou volé ou que l’utilisateur ne travaille plus avec votre entreprise, vous pouvez [effacer de façon sélective des données d’entreprise](wipe-managed-company-app-data-with-microsoft-intune.md) et laisser uniquement les données personnelles.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

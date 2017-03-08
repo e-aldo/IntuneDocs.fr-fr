@@ -1,11 +1,11 @@
 ---
-title: "Configurer des stratégies de gestion des applications mobiles dans la console Intune | Microsoft Intune"
+title: "Configurer des stratégies de gestion des applications mobiles dans la console Intune | Microsoft Docs"
 description: "Vous pouvez utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous pouvez utiliser des stratégies de gestion des applications mobiles (GAM) dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise. Par exemple, vous pouvez limiter les opérations Couper, Copier et Coller au sein d’une application gérée, ou configurer une application pour ouvrir tous les liens web dans Managed Browser.
 
 Les stratégies de gestion des applications mobiles prennent en charge :
@@ -71,7 +76,7 @@ Par exemple, à l'aide de l'application Outlook :
 
 -   **Étape 5 :** Surveiller le déploiement de l’application.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Étape 1 : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>Étape 1 : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM
 
 À partir de l’App Store, recherchez et notez l’URL de l’application gérée par une stratégie que vous souhaitez déployer. Par exemple, l’URL de l’application Microsoft Word pour iPad est **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -191,9 +196,4 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 -   Si une stratégie a déjà été déployée sur l'appareil, les paramètres de stratégie existants ne sont pas remplacés.
 
 -   Si aucune stratégie n'a encore été déployée sur l'appareil et que deux paramètres en conflit sont déployés, le paramètre par défaut intégré à l'appareil est utilisé.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

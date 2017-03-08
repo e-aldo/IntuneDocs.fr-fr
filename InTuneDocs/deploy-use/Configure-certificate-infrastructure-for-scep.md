@@ -1,5 +1,5 @@
 ---
-title: "Configurer l’infrastructure de certificat pour SCEP | Microsoft Intune"
+title: "Configurer l’infrastructure de certificat pour SCEP | Microsoft Docs"
 description: "Infrastructure de création et de déploiement des profils de certificats SCEP."
 keywords: 
 author: robstackmsft
@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
+ms.lasthandoff: 12/10/2016
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurer l’infrastructure de certificat pour SCEP
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Cette rubrique décrit l’infrastructure dont vous avez besoin pour créer et déployer des profils de certificat SCEP.
 
 ### <a name="on-premises-infrastructure"></a>Infrastructure locale
@@ -49,7 +54,7 @@ Depuis le réseau de périmètre jusqu’au réseau approuvé, autorisez tous le
 Nous vous recommandons de publier le serveur NDES via un proxy, comme le [proxy de l’application Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), le [proxy de l’accès web](https://technet.microsoft.com/en-us/library/dn584107.aspx) ou un proxy tiers.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a> Certificats et modèles
+### <a name="BKMK_CertsAndTemplates"></a> Certificats et modèles
 
 |Objet|Détails|
 |----------|-----------|
@@ -58,13 +63,13 @@ Nous vous recommandons de publier le serveur NDES via un proxy, comme le [proxy 
 |**Certificat d’authentification serveur**|Demandé auprès de votre autorité de certification émettrice ou autorité de certification publique, ce certificat doit être installé et lié dans IIS sur le serveur NDES.|
 |**Certificat d’autorité de certification racine approuvée**|Vous l’exportez en tant que fichier **.cer** à partir de l’autorité de certification racine ou de tout appareil qui approuve l’autorité de certification racine, puis le déployez sur des appareils à l’aide du profil de certificat d’autorité de certification approuvée.<br /><br />Vous utilisez un seul certificat d'autorité de certification racine approuvée par plateforme de système d'exploitation et l'associez à chaque profil de certificat racine approuvé que vous créez.<br /><br />Vous pouvez utiliser des certificats d'autorité de certification racine approuvée supplémentaires chaque fois que nécessaire. Par exemple, vous pouvez agir ainsi pour fournir une relation d'approbation à une autorité de certification qui signe les certificats d'authentification du serveur pour vos points d'accès Wi-Fi.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Comptes
+### <a name="BKMK_Accounts"></a>Comptes
 
 |Nom|Détails|
 |--------|-----------|
 |**Compte de service NDES**|Vous spécifiez un compte d'utilisateur de domaine à utiliser comme compte de service NDES.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Configurer votre infrastructure
+## <a name="BKMK_ConfigureInfrastructure"></a>Configurer votre infrastructure
 Avant de configurer les profils de certificat, vous devez effectuer les tâches suivantes, ce qui nécessite la connaissance de Windows Server 2012 R2 et des services de certificats Active Directory :
 
 **Tâche 1** : Créer un compte de service NDES
@@ -93,7 +98,7 @@ Dans cette tâche, vous allez :
 
 ##### <a name="to-configure-the-certification-authority"></a>Pour configurer l'autorité de certification
 
-1.  Ouvrez une session en tant qu’administrateur d’entreprise. 
+1.  Ouvrez une session en tant qu’administrateur d’entreprise.
 
 2.  Sur l'autorité de certification émettrice, utilisez le composant logiciel enfichable Modèles de certificats pour créer un modèle personnalisé ou copier un modèle existant, puis modifiez un modèle existant (comme le modèle de l'utilisateur), pour l'utiliser avec NDES.
 
@@ -109,7 +114,7 @@ Dans cette tâche, vous allez :
         > Pour les modèles de certificats iOS et Mac OS XOS, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
 
     -   Sous l’onglet **Sécurité** , ajoutez le compte de service NDES et attribuez-lui les autorisations **Inscription** sur le modèle. Les administrateurs Intune qui créent des profils SCEP exigent des droits **en lecture** afin de pouvoir accéder au modèle lors de la création des profils SCEP.
-    
+
     > [!NOTE]
     > Pour révoquer des certificats, le compte de service NDES a besoin de droits *Émettre et gérer des certificats* pour chaque modèle de certificat utilisé par un profil de certificat.
 
@@ -120,19 +125,19 @@ Dans cette tâche, vous allez :
 
 Voici les captures d’écran d’un exemple de configuration de modèle.
 
-![Onglet Modèle, Traitement de la demande](..\media\scep_ndes_request_handling.png) 
+![Onglet Modèle, Traitement de la demande](..\media\scep_ndes_request_handling.png)
 
-![Onglet Modèle, Nom du sujet](..\media\scep_ndes_subject_name.jpg) 
+![Onglet Modèle, Nom du sujet](..\media\scep_ndes_subject_name.jpg)
 
-![Onglet Modèle, Sécurité](..\media\scep_ndes_security.jpg) 
+![Onglet Modèle, Sécurité](..\media\scep_ndes_security.jpg)
 
-![Onglet Modèle, Extensions](..\media\scep_ndes_extensions.jpg) 
+![Onglet Modèle, Extensions](..\media\scep_ndes_extensions.jpg)
 
-![Onglet Modèle, Conditions d’émission](..\media\scep_ndes_issuance_reqs.jpg) 
+![Onglet Modèle, Conditions d’émission](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > Pour les stratégies d’application (dans la 4e capture d’écran), ajoutez uniquement les stratégies d’application requises. Confirmez vos choix avec vos administrateurs de sécurité.
-   
+
 
 
 Pour configurer l'autorité de certification et permettre au demandeur de spécifier la période de validité, sur l'autorité de certification, exécutez les commandes suivantes :
@@ -239,12 +244,12 @@ Dans cette tâche, vous allez :
 
 4. Dans le Gestionnaire IIS, cliquez sur **Site Web par défaut** -> **Filtrage des demandes** -> **Modifier un paramètre de fonction**, et modifiez **Longueur maximale des URL** et **Longueur maximale des chaînes de requête** en spécifiant *65534*, comme indiqué.
 
-    ![Longueur maximale des URL et des requêtes IIS](..\media\SCEP_IIS_max_URL.png) 
+    ![Longueur maximale des URL et des requêtes IIS](..\media\SCEP_IIS_max_URL.png)
 
 5.  Redémarrez le serveur. L’exécution de **iisreset** sur le serveur ne suffira pas pour finaliser ces modifications.
 6. Accédez à http://*FQDN*/certsrv/mscep/mscep.dll. Vous devez voir une page NDES similaire à la suivante :
 
-    ![Page NDES test](..\media\SCEP_NDES_URL.png) 
+    ![Page NDES test](..\media\SCEP_NDES_URL.png)
 
     Si vous obtenez une erreur **503 Service indisponible**, consultez l’Observateur d’événements. Il est probable que le pool d’applications soit arrêté en raison de l’absence d’un droit pour l’utilisateur NDES. Ces droits sont décrits dans la tâche 1.
 
@@ -347,9 +352,4 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
 
 ## <a name="next-steps"></a>Étapes suivantes
 Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configurer les profils de certificat](Configure-Intune-certificate-profiles.md).
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

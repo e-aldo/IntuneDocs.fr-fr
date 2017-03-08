@@ -1,11 +1,11 @@
 ---
-title: "Déployer des applications | Microsoft Intune"
+title: "Déployer des applications | Microsoft Docs"
 description: "Cette rubrique décrit des concepts que vous devez comprendre avant de commencer à déployer des applications avec Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: efa8245020b961797405a6f8b90df7e7b172b4c3
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Déployer des applications avec Microsoft Intune
+# <a name="deploy-apps-with-microsoft-intune"></a>Déployer des applications avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique décrit certains des concepts que vous devez comprendre avant de commencer à déployer des applications avec Microsoft Intune.
 
 
-## Actions de déploiement d’applications
+## <a name="app-deployment-actions"></a>Actions de déploiement d’applications
 Quand vous déployez des applications, vous pouvez choisir parmi les actions de déploiement suivantes :
 
 -   **Installation requise** : l’application est installée sur l’appareil sans intervention de l’utilisateur.
@@ -41,7 +45,7 @@ Quand vous déployez des applications, vous pouvez choisir parmi les actions de 
 
 -   **Non applicable** : l’application n'est pas affichée dans le portail d'entreprise et n’est pas installée sur les appareils.
 
-#### Comprendre quelles actions de déploiement sont disponibles pour chaque type de programme d’installation
+#### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Comprendre quelles actions de déploiement sont disponibles pour chaque type de programme d’installation
 
 |Type de programme d’installation|Installation requise|Installation disponible|Désinstaller|Non applicable|
 |------------------|--------------------|---------------------|-------------|------------------|
@@ -58,7 +62,7 @@ Quand vous déployez des applications, vous pouvez choisir parmi les actions de 
 > [!TIP]
 > Quand vous déployez des applications, si vous sélectionnez à la fois des groupes d’utilisateurs et des groupes d’appareils, vous pouvez déployer l’application seulement comme **Installation disponible**.
 
-## Conflits de déploiement
+## <a name="deployment-conflicts"></a>Conflits de déploiement
 Quand un appareil reçoit deux déploiements avec la même action de déploiement, les règles suivantes s'appliquent :
 
 -   Les déploiements sur un groupe d'appareils ont la priorité sur les déploiements sur un groupe d'utilisateurs. Toutefois, si une application est déployée sur un groupe d’utilisateurs avec une action de déploiement **Disponible** et que la même application est également déployée sur un groupe d’appareils avec une action de déploiement **Non applicable**, l’application est disponible sur le portail d’entreprise pour que les utilisateurs puissent l’installer.
@@ -68,12 +72,7 @@ Quand un appareil reçoit deux déploiements avec la même action de déploiemen
 -   Si un appareil reçoit une installation requise et une installation disponible, les actions sont combinées. En d’autres termes, l’utilisateur peut installer l’application disponible à partir du portail d’entreprise avant que l’installation requise ne commence.
 
 
-## Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 Découvrez comment [déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 
