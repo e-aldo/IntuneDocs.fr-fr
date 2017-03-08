@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: 34ad0d3c65230d4d296027e8431f1087c59f289a
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ Si vous obtenez une erreur pendant que vous utilisez l’application Portail d�
 -   Secouez votre appareil sur l’application du portail d’entreprise, puis appuyez sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** > **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

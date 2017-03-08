@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: df53feab-4f5e-46ae-b1e8-9adb048711e5
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: b2554e66150f8b6d61f184bf739750c482b3058e
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -31,9 +32,4 @@ Microsoft collecte automatiquement certaines données sur nos produits et servic
 Si vous souhaitez désactiver la collecte de ces données sur votre appareil Android, ouvrez le paramètre **Données d’utilisation** dans l’application Portail d’entreprise.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

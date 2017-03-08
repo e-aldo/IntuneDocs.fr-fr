@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
 ms.openlocfilehash: 011bdf38327319358a364a17fa82c03f1320ab63
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -46,9 +47,4 @@ Le portail d’entreprise est une application vous donnant accès à des applica
 Après avoir téléchargé l’application Portail d’entreprise, vous [inscrirez probablement votre appareil dans Intune](enroll-your-device-in-Intune-android.md) pour obtenir un accès total à vos informations professionnelles.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

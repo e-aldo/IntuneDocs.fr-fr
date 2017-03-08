@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
 ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ Votre appareil a peut être été rooté pour l’une des deux raisons suivantes
 - Le fabricant de votre appareil a installé un logiciel sur l’appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Dans ce cas, vous devez contacter votre administrateur informatique pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 
 Si vous avez rooté vous-même votre appareil, vous devez inverser le processus et restaurer l’appareil à son état non rooté.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -32,9 +33,4 @@ Une fois votre appareil Android inscrit dans Intune, vous pouvez utiliser la *jo
 Pour activer ou désactiver la journalisation détaillée, connectez-vous à l’application Portail d’entreprise à l’aide de vos informations d’identification professionnelles ou scolaires, appuyez sur **Paramètres**, puis sur le bouton d’activation/de désactivation à côté de **Journalisation détaillée**.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

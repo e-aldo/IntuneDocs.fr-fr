@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
 ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ Quand vous utilisez l’application Portail d’entreprise ou le [site web Porta
 |PC et ordinateurs portables|**Windows 8.1 et Windows 8**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 8 ou Windows 8.1 sauf s’il est utilisé pour le courrier électronique uniquement.<br /><br />**Windows 7 ou Windows Vista**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 7 ou une version antérieure.|
 
 Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

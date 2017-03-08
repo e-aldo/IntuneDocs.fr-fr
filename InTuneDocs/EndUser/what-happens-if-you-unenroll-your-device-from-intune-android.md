@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 16d970e13bfac29460bab885188f45df1202a4d9
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -44,9 +45,4 @@ Si votre appareil est configuré uniquement pour recevoir les e-mails d’entrep
 Pour obtenir des instructions sur la désinscription, consultez [Annuler l’inscription de votre appareil dans Intune à l’aide de l’application Portail d’entreprise](unenroll-your-device-from-intune-android.md).
 
 Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’[équipe Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

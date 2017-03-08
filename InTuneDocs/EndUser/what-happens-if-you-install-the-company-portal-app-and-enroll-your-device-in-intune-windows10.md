@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
 ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -55,9 +56,4 @@ Lorsque vous ajoutez un ordinateur :
 -   Votre administrateur informatique peut appliquer des stratégies sur l’ordinateur. Par exemple, il peut vous être demandé de définir un mot de passe ou un code confidentiel sur l’ordinateur. Votre administrateur informatique peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’ordinateur ou supprimer toutes les données du disque dur si vous dépassez le nombre maximal autorisé.
 
 Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

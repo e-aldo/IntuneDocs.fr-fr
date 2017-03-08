@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
 ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -49,9 +50,4 @@ Descriptions des problèmes liés au code confidentiel ou mot de passe :
 - **Le mot de passe n’est pas assez complexe pour répondre aux exigences**. Votre administrateur informatique requiert que vous utilisiez davantage de caractères complexes dans votre mot de passe. Essayez d’utiliser des caractères tels que des nombres, des lettres majuscules et des symboles comme $, % et #. Cela peut aussi concerner d’autres comptes sur votre appareil. Passez en revue tous les comptes professionnels pour vérifier que votre mot de passe répond aux exigences définies par l’administrateur informatique pour votre appareil.
 
 Si vous avez des difficultés à déterminer comment rendre votre mot de passe conforme aux exigences, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

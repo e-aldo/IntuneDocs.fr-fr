@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d6fcfac7c8bd469f5163ec9b4017ae8c3d486428
 ms.openlocfilehash: 88770ba06718a767f8229e1b5aa4d543c87bc852
+ms.lasthandoff: 01/05/2017
 
 ---
 
@@ -71,9 +72,4 @@ Pour résoudre ce problème et obtenir le certificat requis, il existe deux éta
 7. Rouvrez l’application Portail d’entreprise. Vous devriez pouvoir vous connecter à l’application Portail d’entreprise. Si vous avez besoin d’aide, contactez votre administrateur informatique.
 
 Si un message « Certificat manquant » semblable à celui indiqué précédemment s’affiche alors que vous avez déjà suivi la procédure, il manque probablement un autre certificat. Vous devez demander à votre administrateur de vous aider à l’installer. Contactez votre administrateur informatique pour obtenir de l’aide sur les informations de contact disponibles sur le [site Web de l’application Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
