@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
-ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code d’accès
@@ -34,6 +35,7 @@ Le tableau ci-dessous illustre le fonctionnement du verrouillage à distance sur
 |macOS|Non pris en charge|
 |iOS|Pris en charge|
 |Android|Pris en charge|
+|Android for Work|Pris en charge|
 |Windows 10 (Mobile)|Pris en charge|
 |Windows 10 (Desktop)|Non pris en charge|
 |Windows Phone 8 et Windows Phone 8.1|Pris en charge|
@@ -61,6 +63,7 @@ Si un utilisateur oublie un code d’accès, vous pouvez l’aider à résoudre 
 |macOS|Non pris en charge|
 |iOS|Prise en charge de l'effacement du code d'accès d'un appareil. Ne crée pas un nouveau code d'accès temporaire.|
 |Android|Prise en charge sur les versions antérieures à Android 7.0. Crée un code d’accès temporaire.|
+|Android for Work|Non prise en charge|
 |Windows 10 Mobile|Pris en charge|
 |Windows Phone 8 et Windows Phone 8.1|Pris en charge|
 |Windows RT 8.1|Non pris en charge|
@@ -83,9 +86,4 @@ La réinitialisation du code d’accès n’est pas prise en charge pour les PC 
 
 ### <a name="see-also"></a>Voir aussi
 [Mettre des appareils hors service](retire-devices-from-microsoft-intune-management.md) et [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (Réinitialisation sélective de Windows pour la gestion des données d’appareils)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

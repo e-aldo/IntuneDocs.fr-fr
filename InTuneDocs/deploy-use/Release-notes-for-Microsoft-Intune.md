@@ -2,10 +2,10 @@
 title: Notes de publication pour Microsoft Intune | Microsoft Docs
 description: Notes de publication Intune
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: f0e027d1c63435084c434c591fed7bb71b5c07f2
+ms.openlocfilehash: 8369cc039ac1c4c24b29927a96360cd872f8e9bc
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -28,21 +28,21 @@ ms.lasthandoff: 12/10/2016
 
 Microsoft Intune est une solution cloud intégrée de gestion de clients qui fournit des outils, des rapports et des licences de mise à niveau vers la dernière version de Windows. Elle vous aide également à maintenir vos ordinateurs à jour et sécurisés. De plus, Intune vous permet de gérer des appareils mobiles sur le réseau avec Exchange ActiveSync ou directement par le biais d’Intune. Les notes de publication suivantes décrivent les informations importantes et les problèmes connus dans Microsoft Intune.
 
+<!-- 3-6-17: customer asked if this is still current; Stacie asked Chris Baldwin about it. Chris said it's a Samsung issue, but that he hasn't heard any reports about it for months, so he suggested that I share that with the customer and remove this item from the release notes. I'm only going to comment it out in case it resurfaces.
+## Android users can’t send email when conditional access for Exchange Online is implemented
 
-## <a name="android-users-cant-send-email-when-conditional-access-for-exchange-online-is-implemented"></a>Les utilisateurs Android ne peuvent pas envoyer de courriers électroniques lorsque l’accès conditionnel à Exchange Online est mis en place
+**Issue:** Users running Samsung Android 5.1.1 and later on their devices can't send email when conditional access for Exchange Online has been set up. Samsung acknowledges that the issue is in its built-in email client in Android 5.1.1 and later, and is investigating a fix.
 
-**Problème :** Les utilisateurs d’appareils Samsung Android 5.1.1 et versions ultérieures ne peuvent pas envoyer d’e-mails quand l’accès conditionnel à Exchange Online est configuré. Samsung reconnaît que le problème se trouve dans son client de messagerie intégré dans Android 5.1.1 et versions ultérieures et étudie la possibilité d’un correctif.
+**Workaround 1:** Advise users to use the Outlook app for Android.
 
-**Solution de contournement 1 :** Conseiller aux utilisateurs d’utiliser l’application Outlook pour Android.
+**Workaround 2:** To let affected users send email, you can follow these steps:
 
-**Solution de contournement 2 :** Pour permettre aux utilisateurs concernés d’envoyer des e-mails, vous pouvez suivre les étapes suivantes :
+1. Put each affected user in a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Let the user temporarily sync email on the built-in email client.
+3. Remove the affected user from the exempted group, and confirm that the user can now send email.
 
-1. Placez chaque utilisateur concerné dans un groupe de sécurité de la section « groupes exemptés » de la stratégie d’accès conditionnel à Exchange Online.
-2. Laissez l’utilisateur synchroniser temporairement la messagerie sur le client de messagerie intégré.
-3. Supprimer l’utilisateur concerné du groupe exempté et vérifiez que l’utilisateur peut maintenant envoyer des e-mails.
-
-Microsoft continuera à travailler étroitement avec Samsung sur un correctif ou d’autres solutions de contournement.
-
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+-->
 
 
 ## <a name="changing-resource-access-profiles-between-groups-for-ios-and-android-might-fail"></a>La modification des profils d’accès aux ressources entre les groupes pour iOS et Android peut échouer.

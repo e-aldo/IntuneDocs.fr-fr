@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: a49f27dd42d2c9d16be49cb222e56147c4699208
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: e60b049e9dd137993d38b822f6268419a27bdc2a
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -47,9 +48,4 @@ Si vous avez installé une application que Lookout for Work considère comme une
 Après avoir désinstallé l’application, vous récupérez immédiatement l’accès aux e-mails et données de votre entreprise. Si vous ignorez la demande de désinstallation de l’application, vous perdez l’accès à vos e-mails et données jusqu’à ce que vous désinstalliez l’application.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

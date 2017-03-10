@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 0e47c60c8cbbd635427916b84690959d2c69ce31
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: b9d7c7970ddc334dd6c500105b250d516a60a6d4
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -49,9 +50,4 @@ Si vous voyez quelque chose comme ceci, appuyez sur le nom de l’application qu
 Après avoir désinstallé l’application, vous récupérez immédiatement l’accès à vos e-mails et autres données de votre entreprise ou établissement scolaire. Si vous ignorez la demande de désinstallation de l’application, vous perdez l’accès à vos e-mails et données d’entreprise jusqu’à ce que vous désinstalliez l’application.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
