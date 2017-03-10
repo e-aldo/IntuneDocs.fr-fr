@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ Vous pouvez effectuer un certain nombre d’opérations avec Intune qui facilite
 
 - [Utiliser des applications gérées sur votre appareil](use-managed-apps-on-your-device-ios.md)
 - [Définir ou modifier votre code secret](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Réinitialiser (effacer) votre appareil perdu ou volé](reset-erase-your-device-cpwebsite.md)
 - [Désactiver la collecte de données d’utilisation Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Désinscrire votre appareil d’Intune](unenroll-your-device-from-intune-ios.md)

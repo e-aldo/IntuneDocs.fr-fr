@@ -43,7 +43,6 @@ Vous pouvez effectuer un certain nombre d’opérations avec Intune qui facilite
 - [Définir votre code confidentiel ou mot de passe](set-your-pin-or-password-android.md)
 - [Installer le réseau privé virtuel (VPN) de votre entreprise](install-your-companys-virtual-private-network-VPN-android.md)
 - [Définir la période de temps qui doit s’écouler avant le verrouillage de l’appareil](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Réinitialiser (effacer) votre appareil perdu ou volé](reset-erase-your-device-cpwebsite.md)
 - [Désactiver la collecte de données d’utilisation Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Désinscrire votre appareil d’Intune](unenroll-your-device-from-intune-android.md)
