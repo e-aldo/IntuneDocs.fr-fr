@@ -1,9 +1,10 @@
 ---
-title: "Inscrire des appareils Android dans Intune | Préversion Intune Azure | Microsoft Docs"
+title: Inscrire des appareils Android dans Intune
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment inscrire des appareils Android dans la préversion d’Intune Azure."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 99b790e33843efcf83a4687490b186a6e174bd81
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b7188dd8163334429396e7b7c8687810a6e63bb2
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.lasthandoff: 02/15/2017
 
 Intune vous permet de gérer des appareils Android, dont les appareils Samsung KNOX Standard. Pour activer la gestion des appareils, vos utilisateurs doivent inscrire leurs appareils en téléchargeant l’application Portail d’entreprise Intune, qui est disponible à partir de Google Play, puis en ouvrant l’application et en suivant les invites d’inscription. Une fois que les appareils Android sont gérés, vous pouvez [créer des stratégies de conformité](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android), [gérer les applications](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management), et bien plus encore.
 
-## <a name="prerequisite"></a>Configuration requise
+## <a name="prerequisite"></a>Prérequis
 
 Vous devez définir l’autorité MDM sur **Microsoft Intune** pour préparer la gestion des appareils mobiles. Consultez la page [Configurer l’autorité MDM](set-mdm-authority.md) pour obtenir des instructions. Cet élément ne se définit qu’une seule fois, lorsque vous configurez pour la première fois Intune pour la gestion des appareils mobiles, donc vous l’avez peut-être déjà défini. 
 

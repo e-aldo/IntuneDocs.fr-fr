@@ -1,9 +1,10 @@
 ---
-title: "Inscrire des appareils iOS - Programme d’inscription d’appareils | Version préliminaire d’Intune Azure | Microsoft Docs"
+title: "Inscrire des appareils iOS - Programme d’inscription d’appareils"
+titleSuffix: Intune Azure preview
 description: "Version préliminaire d’Intune Azure : découvrez comment inscrire des appareils iOS d’entreprise à l’aide du programme d’inscription d’appareils (DEP)."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
+ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -36,9 +38,9 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du progra
 
 Les autres méthodes d’inscription d’appareils iOS sont décrites dans [Choisir comment inscrire des appareils iOS dans Intune](choose-ios-enrollment-method.md).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
-Avant de configurer l’inscription des appareils iOS, effectuez les préparatifs suivants :
+Avant de configurer l’inscription des appareils iOS, effectuez les prérequis suivants :
 
 - [Configurer des domaines](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Configurer l’autorité MDM](set-mdm-authority.md)
@@ -63,7 +65,7 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
 6. Pour **Affinité utilisateur**, choisissez si les appareils avec ce profil seront inscrits avec ou sans affinité utilisateur.
 
- - **Inscrire avec l’affinité utilisateur** : l’appareil doit être affilié à un utilisateur pendant l’installation initiale. Il peut ensuite être autorisé à accéder aux données et aux e-mails de l’entreprise. Choisissez l’affinité utilisateur pour les appareils gérés par DEP qui appartiennent à des utilisateurs et qui doivent utiliser le portail d’entreprise pour les services tels que l’installation d’applications. Notez que l’authentification multifacteur (MFA) ne fonctionne pas lors de l’inscription sur les appareils DEP avec l’affinité utilisateur. Après l’inscription, l’authentification multifacteur fonctionne comme prévu sur ces appareils.
+ - **Inscrire avec l’affinité utilisateur** : l’appareil doit être affilié à un utilisateur pendant l’installation initiale. Il peut ensuite être autorisé à accéder aux données et aux e-mails de l’entreprise. Choisissez l’affinité utilisateur pour les appareils gérés par DEP qui appartiennent à des utilisateurs et qui doivent utiliser le portail d’entreprise pour les services tels que l’installation d’applications. Notez que l’authentification multifacteur (MFA) ne fonctionne pas lors de l’inscription sur les appareils DEP avec l’affinité utilisateur. Après l’inscription, l’authentification multifacteur fonctionne comme prévu sur ces appareils. Les nouveaux utilisateurs qui doivent changer leur mot de passe lors de leur première connexion ne peuvent pas y être invités pendant l’inscription sur des appareils DEP. De plus, les utilisateurs dont les mots de passe ont expiré ne sont pas invités à réinitialiser leur mot de passe lors de l’inscription DEP et doivent le faire à partir d’un autre appareil.
 
     >[!NOTE]
     >Dans le cas de DEP avec affinité utilisateur, un point de terminaison WS-Trust 1.3 Username/Mixed doit être activé pour demander un jeton utilisateur.
@@ -101,11 +103,11 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>Affecter des numéros de série Apple DEP à votre serveur MDM
 
-1. Accédez au [portail du Programme DEP](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise. 
+1. Accédez au [portail du Programme DEP](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise.
 
-2. Accédez à **Programme de déploiement** &gt; **Programme d’inscription d’appareils** &gt; **Gérer les appareils**. 
+2. Accédez à **Programme de déploiement** &gt; **Programme d’inscription d’appareils** &gt; **Gérer les appareils**.
 
-3. Spécifiez la façon dont vous allez **Choisir des appareils**, puis fournissez les informations relatives aux appareils et spécifiez les détails par appareil : **Numéro de série**, **Numéro de commande** ou **Télécharger un fichier CSV**. 
+3. Spécifiez la façon dont vous allez **Choisir des appareils**, puis fournissez les informations relatives aux appareils et spécifiez les détails par appareil : **Numéro de série**, **Numéro de commande** ou **Télécharger un fichier CSV**.
 
 4. Choisissez **Attribuer au serveur** et le &lt;nom_serveur&gt; spécifié pour Microsoft Intune, puis **OK**.
 
@@ -137,7 +139,7 @@ Vous pouvez maintenant distribuer les appareils d’entreprise aux utilisateurs.
 
 Les appareils qui sont configurés avec une affinité utilisateur peuvent installer et exécuter l’application Portail d’entreprise pour télécharger des applications et gérer des appareils. Une fois que les utilisateurs reçoivent leurs appareils, ils doivent effectuer les étapes supplémentaires décrites ci-dessous pour terminer l’exécution de l’Assistant Configuration et installer l’application Portail d’entreprise.
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Comment les utilisateurs inscrivent des appareils iOS d’entreprise avec l’affinité utilisateur 
+### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Comment les utilisateurs inscrivent des appareils iOS d’entreprise avec l’affinité utilisateur
 
 1. Quand les utilisateurs allument leur appareil, ils sont invités à terminer l’exécution de l’Assistant Installation. Pendant l’installation, les utilisateurs sont invités à fournir leurs informations d’identification. Ils doivent utiliser les informations d’identification (c’est-à-dire, le nom d’utilisateur principal ou UPN) associées à leur abonnement dans Intune.
 

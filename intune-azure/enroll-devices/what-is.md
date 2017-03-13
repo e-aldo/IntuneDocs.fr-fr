@@ -1,9 +1,10 @@
 ---
-title: "Qu’est-ce que l’inscription des appareils Microsoft Intune | Version préliminaire d’Intune Azure | Microsoft Docs"
+title: "Qu’est-ce que l’inscription des appareils Microsoft Intune ?"
+titleSuffix: Intune Azure preview
 description: "Version préliminaire d&quot;Intune Azure : en savoir plus sur l’inscription pour les appareils iOS, Android et Windows."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 Cette rubrique décrit l’inscription et répertorie différentes façons d’inscrire des appareils mobiles dans la gestion Intune.
 
-Vous inscrivez des appareils, notamment des PC Windows, dans Intune afin de pouvoir gérer ces appareils. Nous appelons cette fonctionnalité « gestion des appareils mobiles (MDM) » dans la documentation Intune . Lorsque les appareils sont inscrits en tant qu’appareils mobiles (et non comme PC), ils se voient remettre un certificat MDM, que les appareils utilisent ensuite pour communiquer avec le service Intune. 
+Vous inscrivez des appareils, notamment des PC Windows, dans Intune afin de pouvoir gérer ces appareils. Nous appelons cette fonctionnalité « gestion des appareils mobiles (MDM) » dans la documentation Intune . Lorsque les appareils sont inscrits en tant qu’appareils mobiles (et non comme PC), ils se voient remettre un certificat MDM, que les appareils utilisent ensuite pour communiquer avec le service Intune.
 
 La façon dont vous inscrivez vos appareils dépend du type d’appareil, de son propriétaire et du niveau de gestion souhaité. L’inscription BYOD (« Bring your own device ») permet aux utilisateurs d’inscrire leurs téléphones, tablettes ou PC personnels. Vous pouvez gérer l’inscription des appareils d’entreprise (COD) de plusieurs façons : inscription automatique, appareils partagés ou inscription pré-autorisée.
 
@@ -76,7 +77,7 @@ Les utilisateurs d’appareils personnels installent l’application Portail d�
 Vous pouvez gérer les appareils d’entreprise (COD, Corporate-Owned Devices) à l’aide du portail Azure. Vous pouvez inscrire les appareils iOS directement par le biais des outils fournis par Apple. Tous les types d’appareils peuvent être inscrits par un administrateur ou un gestionnaire à l’aide du Gestionnaire d’inscription d’appareil. Les appareils dotés d’un numéro IMEI peuvent également être identifiés et référencés comme appartenant à l’entreprise pour activer des scénarios COD.
 
 ### <a name="dem"></a>Gestionnaire d’inscription d’appareil
-Le gestionnaire d’inscription d’appareil est un compte utilisateur spécial permettant d’inscrire et de gérer plusieurs appareils d’entreprise. Les responsables peuvent installer le Portail d’entreprise et inscrire de nombreux appareils sans utilisateur. En savoir plus sur le [gestionnaire d’inscription d’appareil](enroll-devices-using-device-enrollment-manager.md). ([Retour au tableau](#overview-of-device-enrollment-methods))
+Le gestionnaire d’inscription d’appareil est un compte d’utilisateur spécial permettant d’inscrire et de gérer plusieurs appareils d’entreprise. Les responsables peuvent installer le Portail d’entreprise et inscrire de nombreux appareils sans utilisateur. En savoir plus sur le [gestionnaire d’inscription d’appareil](enroll-devices-using-device-enrollment-manager.md). ([Retour au tableau](#overview-of-device-enrollment-methods))
 
 ### <a name="dep"></a>DEP
 Le programme d’inscription d’appareils Apple (ou DEP) vous permet de créer et déployer une stratégie « à distance » sur des appareils iOS achetés et gérés avec DEP. L’appareil est inscrit quand l’utilisateur le démarre pour la première fois et exécute l’Assistant d’installation iOS. Cette méthode prend en charge le mode **iOS supervisé** qui permet à son tour ce qui suit :
@@ -87,7 +88,7 @@ Le programme d’inscription d’appareils Apple (ou DEP) vous permet de créer 
 Pour en savoir plus sur l’inscription d’appareils iOS, consultez :
 
 - [Choisir comment inscrire des appareils iOS](choose-ios-enrollment-method.md)
-- [Inscrire des appareils iOS à l’aide du programme d’inscription des appareils](enroll-ios-devices-using-device-enrollment-program.md). 
+- [Inscrire des appareils iOS à l’aide du programme d’inscription d’appareils](enroll-ios-devices-using-device-enrollment-program.md)
 - [Retour au tableau ci-dessus](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
@@ -98,10 +99,10 @@ Les administrateurs utilisent Apple Configurator, via un port USB, pour prépare
 Pour en savoir plus sur l’inscription d’appareils iOS, consultez :
 
 - [Choisir la méthode d’inscription des appareils iOS](choose-ios-enrollment-method.md)
-- [Inscrire des appareils iOS avec Configurator et l’Assistant Configuration](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). 
+- [Inscrire des appareils iOS avec Configurator et l’Assistant Configuration](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-Pour les inscriptions directes, l’administrateur doit inscrire manuellement chaque appareil en créant une stratégie d’inscription et en l’exportant vers Apple Configurator. Les appareils d’entreprise connectés par USB sont inscrits directement et aucune réinitialisation aux paramètres d’usine n’est nécessaire. Les appareils sont gérés comme des appareils sans utilisateur. Ils ne sont pas verrouillés ni supervisés et ne peuvent pas prendre en charge l’accès conditionnel, la détection de jailbreak ou la gestion des applications mobiles. 
+Pour les inscriptions directes, l’administrateur doit inscrire manuellement chaque appareil en créant une stratégie d’inscription et en l’exportant vers Apple Configurator. Les appareils d’entreprise connectés par USB sont inscrits directement et aucune réinitialisation aux paramètres d’usine n’est nécessaire. Les appareils sont gérés comme des appareils sans utilisateur. Ils ne sont pas verrouillés ni supervisés et ne peuvent pas prendre en charge l’accès conditionnel, la détection de jailbreak ou la gestion des applications mobiles.
 
 Pour en savoir plus sur l’inscription d’appareils iOS, consultez :
 

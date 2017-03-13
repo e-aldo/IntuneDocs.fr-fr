@@ -1,9 +1,10 @@
 ---
-title: "Inscrire des appareils macOS dans Intune | Préversion Intune Azure | Microsoft Docs"
+title: Inscrire des appareils macOS dans Intune
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment inscrire des appareils macOS dans la préversion d’Intune Azure."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: f217988313debd33bcba3f8168aa03b6dbf8586e
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 63ac5ecf6fbe9ae66c879466c7785b051dfb7a61
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,9 +29,9 @@ ms.lasthandoff: 02/14/2017
 
 Intune vous permet de gérer les appareils Mac OS. Pour activer la gestion des appareils, vos utilisateurs doivent inscrire leurs appareils en accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com), puis en suivant les invites. Une fois que les appareils Mac OS sont gérés, vous pouvez [créer des paramètres personnalisés pour les appareils Mac OS](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). D’autres fonctionnalités seront bientôt disponibles.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
-Avant de configurer l’inscription des appareils macOS, effectuez les préparatifs suivants :
+Avant de configurer l’inscription des appareils macOS, effectuez les prérequis suivants :
 
 - [Configurer des domaines](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Configurer l’autorité MDM](set-mdm-authority.md)
