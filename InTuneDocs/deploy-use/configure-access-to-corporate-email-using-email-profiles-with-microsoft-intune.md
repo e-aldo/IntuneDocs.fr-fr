@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ Vous pouvez utiliser des profils de messagerie pour configurer le client de mess
 -    Android for Work
 
 >[!NOTE]
->Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store et prennent en charge les connexions à Exchange. Pour activer la connectivité d’e-mail, déployez une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié.
+>Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store et prennent en charge les connexions à Exchange. Pour activer la connectivité d’e-mail, déployez une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié. Les applications de messagerie telles que Nine Work peuvent ne pas être gratuites. Vérifiez les détails de licence de l’application ou contactez le fabricant de l’application si vous avez des questions.
 
 Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez configurer le volume d’e-mails à synchroniser et, en fonction du type d’appareil, les types de contenu à synchroniser.
 
@@ -105,7 +106,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
     |**Adresse de messagerie**|Façon dont l’adresse de messagerie de l’utilisateur est générée sur chaque appareil. Sélectionnez **Adresse SMTP principale** pour utiliser l’adresse SMTP principale pour vous connecter à Exchange ou **Nom principal de l’utilisateur** pour utiliser le nom principal complet comme adresse de messagerie.|
     |**Méthode d’authentification** (Android for Work, Samsung KNOX et iOS)|Sélectionnez **Nom d’utilisateur et mot de passe** ou **Certificats** comme méthode d’authentification utilisée par le profil de messagerie.|
     |**Sélectionner un certificat client pour l’authentification client (certificat d’identité)** (Android for Work, Samsung KNOX et iOS)|Sélectionnez le certificat SCEP client que vous avez créé précédemment qui servira à authentifier la connexion Exchange. Pour plus d’informations sur la façon de créer des profils de certificat dans Intune, consultez [Sécuriser l’accès aux ressources avec des profils de certificat](secure-resource-access-with-certificate-profiles.md). Cette option est visible uniquement quand la méthode d'authentification est **Certificats**.|
-    |**Utiliser S/MIME** (Samsung KNOX et iOS)|Envoyez des messages électroniques en utilisant le chiffrement S/MIME.|
+    |**Utiliser S/MIME** (Samsung KNOX et iOS)|Envoyez des e-mails en utilisant la signature S/MIME.|
     |**Certificat de signature** (Samsung KNOX et iOS)|Sélectionnez le certificat de signature qui sera utilisé pour signer le courrier électronique sortant. Cette option est visible uniquement quand vous sélectionnez **Utiliser S/MIME**.|
     |**Nombre de jours de courrier électronique à synchroniser**|Nombre de jours d’e-mails à synchroniser, ou sélectionnez **Illimité** pour synchroniser tous les e-mails disponibles.|
     |**Planification de la synchronisation** (Android for Work, Samsung KNOX, Windows Phone 8 et versions ultérieures, Windows 10)|Sélectionnez la planification selon laquelle les appareils vont synchroniser les données du serveur Exchange. Vous pouvez également sélectionner **À mesure que les messages arrivent** pour synchroniser les données dès qu’elles arrivent ou **Manuel** pour que ce soit l’utilisateur de l’appareil qui lance la synchronisation.|
@@ -136,9 +137,4 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 > [!NOTE]
 > - Pour Android for Work, vérifiez que vous déployez également les applications Gmail ou Nine Work en plus du profil de messagerie approprié.
 > - Si vous souhaitez supprimer un profil de messagerie d'un appareil, modifiez le déploiement et supprimez les groupes dont l'appareil est membre. Notez que vous ne pouvez pas supprimer un profil de messagerie de cette manière s’il s'agit du seul profil de messagerie sur un appareil.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

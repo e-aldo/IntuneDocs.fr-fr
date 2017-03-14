@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ Vous pouvez supprimer l’inscription de l’appareil par le biais de la console
 * **Appareil iOS** : ouvrez l’application Azure Authenticator, faites défiler vers la gauche jusqu’au compte et choisissez d’annuler l’inscription.  
 * **Appareil Android** : désinstallez l’application Portail d’entreprise ou supprimez le compte des **paramètres système**.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>Accès conditionnel basé sur les applications avec accès conditionnel basé sur la conformité des appareils  
+## <a name="app-based-ca-with-device-based-ca"></a>Accès conditionnel basé sur l’application avec accès conditionnel basé sur l’appareil  
 
 Vous pouvez configurer l’[accès conditionnel basé sur la conformité des appareils](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)**** dans la [console Administrateur Intune](https://manage.microsoft.com) ou la [console de gestion Azure AD Premium] (https://manage.windowsazure.com). L’accès conditionnel basé sur la conformité des appareils oblige les utilisateurs à se connecter à Exchange Online uniquement via les appareils gérés par Intune qui sont compatibles avec la stratégie de conformité des appareils Intune ou des PC joints au domaine.  Si un utilisateur appartient à un ou plusieurs groupes de sécurité ciblés par des stratégies d’accès conditionnel basé à la fois sur les applications et les appareils, l’utilisateur doit remplir l’une des deux conditions suivantes :
 * L’application utilisée pour accéder au service est une application mobile prise en charge par l’accès conditionnel basé sur les applications. 
@@ -63,9 +62,4 @@ Vous pouvez configurer l’[accès conditionnel basé sur la conformité des app
 ### <a name="see-also"></a>Voir aussi
 
 [Protéger les données d’application à l’aide de stratégies de protection des applications](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
