@@ -6,7 +6,7 @@
 ## [Nouveautés](introduction/whats-new.md)
 ## [Problèmes connus](introduction/known-issues-in-the-intune-preview.md)
 ## [Obtenir un support](introduction/how-to-get-support-for-microsoft-intune.md)
-<!--- 
+<!---
 
 ## [Related resources](introduction/related-resources.md)
 
@@ -138,6 +138,7 @@
 #### [Windows 8.1 et Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Configurer les paramètres de mise à niveau Windows 10](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Configurer les paramètres Window Update Entreprise](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configurer des certificats](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
@@ -178,7 +179,7 @@
 ### [Installer le connecteur Exchange sur site](conditional-access/install-intune-on-premises-exchange-connector.md)
 ### [Créer une stratégie d’accès conditionnel](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
 
-# Contrôle d'accès
+# Contrôle d’accès
 ## [Qu’est-ce que le contrôle d’accès en fonction du rôle ?](access-control/role-based-access-control.md)
 
 # Développer et personnaliser
