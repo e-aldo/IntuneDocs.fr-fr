@@ -12,7 +12,7 @@
 
 # [Bien démarrer](get-started/get-started.md)
 ## [Configurer Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Conditions préalables]
+### [Prérequis]
 #### [Appareils pris en charge](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Utilisation du réseau](get-started/network-bandwidth-use.md)
 ### [Se connecter à Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -193,12 +193,10 @@
 ### [Réinitialiser les données d’applications d’entreprise managées](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Comment former vos utilisateurs finaux à Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Utilisation de votre appareil Android avec Intune](EndUser/using-your-android-device-with-intune.md)
-#### [Comment vos utilisateurs Android obtiennent leurs applications](deploy-use/how-your-android-users-get-their-apps.md)
-### [Utilisation d’un appareil iOS avec Intune](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [Comment vos utilisateurs iOS obtiennent leurs applications](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Utilisation de votre appareil Windows avec Intune](EndUser/using-your-windows-device-with-intune.md)
-#### [Comment vos utilisateurs Windows obtiennent leurs applications](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Messages du portail d’entreprise que les utilisateurs voient](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Comment vos utilisateurs Android obtiennent leurs applications](deploy-use/how-your-android-users-get-their-apps.md)
+### [Comment vos utilisateurs iOS obtiennent leurs applications](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Comment vos utilisateurs Windows obtiennent leurs applications](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Développer et personnaliser des applications
 ## [Vue d’ensemble du SDK d’application Microsoft Intune](develop/intune-app-sdk.md)
