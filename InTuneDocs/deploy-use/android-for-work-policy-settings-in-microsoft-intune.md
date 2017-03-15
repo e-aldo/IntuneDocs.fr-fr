@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 |----------------|-|
 |**Autoriser le partage de données entre profils professionnels et personnels**|Permet aux applications dans le profil professionnel de partager des données avec les applications dans le profil personnel des utilisateurs. Choisissez parmi :<br><br>- **Empêcher tout partage en dehors des limites**<br>- **Les applications du profil professionnel peuvent gérer une demande de partage venant d’un profil personnel**<br>- **Aucune restriction de partage**|
 |**Masquer les notifications du profil professionnel quand l’appareil est verrouillé**<br>(Android 6 et versions ultérieures)|Contrôler s’il faut afficher des notifications du profil professionnel quand l’appareil est verrouillé.|
-|**Définir une stratégie d’autorisation d’application par défaut**<br>(Android 6 et versions ultérieures)|Définit la stratégie d’autorisation par défaut pour toutes les applications dans le profil professionnel.|
+|**Définir une stratégie d’autorisation d’application par défaut**<br>(Android 6 et versions ultérieures)|Définit la stratégie d’autorisation par défaut pour toutes les applications dans le profil professionnel. À partir d’Android 6, certaines autorisations requises par les applications sont demandées à l’utilisateur final au moment de l’exécution.  Ce paramètre de stratégie permet au service informatique de décider comment ou si les utilisateurs sont invités à accorder des autorisations pour les applications dans le profil professionnel. <br/><br/>Par exemple, le service informatique peut transmettre au profil professionnel une application qui nécessite un accès à l’emplacement.  Habituellement, cette application affiche une boîte de dialogue demandant à l’utilisateur s’il souhaite autoriser l’application à accéder à l’emplacement. L’utilisateur peut alors approuver ou refuser cette autorisation.  Cette stratégie permet au service informatique de décider si toutes les autorisations doivent être accordées automatiquement sans invite, refusées automatiquement sans invite ou déterminées par l’utilisateur.|
 
 
 ## <a name="custom-policy-settings"></a>Paramètres de la stratégie personnalisée
@@ -91,9 +92,4 @@ Intune prend en charge un nombre limité de stratégies personnalisées Android 
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords: "définition d’Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -31,7 +32,7 @@ Intune est un service de gestion de la mobilité en entreprise basé sur le clou
 * protéger vos informations d’entreprise en contrôlant la façon dont votre personnel y accède et les partage ;
 * vérifier que les appareils et les applications sont conformes aux exigences de sécurité de l’entreprise.
 
-Intune s’intègre étroitement à Azure Active Directory (Azure AD) pour le contrôle de l’identité et de l’accès, ainsi qu’à Azure Rights Management (Azure RMS) pour la protection des données. Il s’agit de l’*entité de gestion* de Microsoft Enterprise Mobility + Security (EMS), tandis qu’Office 365 constitue l’*entité de productivité* de la solution de mobilité de Microsoft.  
+Intune s’intègre étroitement à Azure Active Directory (Azure AD) pour le contrôle d’identité et d’accès, ainsi qu’à Azure Information Protection pour la protection des données. Il s’agit de l’*entité de gestion* de Microsoft Enterprise Mobility + Security (EMS), tandis qu’Office 365 constitue l’*entité de productivité* de la solution de mobilité de Microsoft.  
 
 Ensemble, Office 365 et EMS permettent à votre personnel d’être productif sur tous ses appareils tout en assurant la protection des informations de votre organisation. Office 365 avec EMS est une suite intégrée complète qui est dédiée à la mobilité en entreprise incluant la productivité, l’identité, le contrôle d’accès, la gestion et la protection des données. Elle constitue une méthode efficace pour déployer et utiliser une solution de mobilité dans votre organisation.
 
@@ -114,9 +115,4 @@ La liste suivante de problématiques d’entreprise permet d’accéder à des i
 * En savoir plus sur certaines des [façons courantes d’utiliser Intune](common-ways-to-use-intune.md).
 * Se familiariser avec le produit [grâce à une période d’essai d’Intune de 30 jours](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Explorer [les spécifications techniques et les fonctionnalités](/intune/get-started/what-to-know-before-you-start-microsoft-intune) d’Intune.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

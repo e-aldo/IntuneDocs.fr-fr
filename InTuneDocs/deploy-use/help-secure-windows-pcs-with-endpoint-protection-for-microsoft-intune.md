@@ -4,8 +4,8 @@ description: "Sécurisez vos ordinateurs gérés avec Endpoint Protection, qui f
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
-ms.date: 01/31/2017
+manager: arob98
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -172,11 +172,12 @@ Vous pouvez contrôler l'état des logiciels malveillants sur vos ordinateurs en
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Comment afficher les chemins d'accès de détection récents pour les programmes malveillants sur des ordinateurs
 Intune peut afficher au maximum les chemins des 10 dernières instances de programme malveillant détectées sur un appareil. L'option **Chemins d'accès de détection récents** est désactivée par défaut. Pour activer cet affichage :
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** > **Tous les appareils** > **Programme malveillant**.
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Groupes** > **Tous les appareils** > **Tous les ordinateurs**.
+2. Cliquez avec le bouton droit sur l’ordinateur dont vous souhaitez visualiser les chemins d’accès de détection récents, puis sélectionnez **Propriétés**.
+3. Sélectionnez **Programme malveillant** parmi les onglets situés dans la partie supérieure.
 
-2.  Cliquez sur un en-tête de colonne. Une liste des colonnes disponibles s'affiche.
-
-3.  Cochez la case **Chemins d’accès de détection récents** dans la liste. La colonne **Chemins d’accès de détection récents** apparaît et affiche au maximum les 10 dernières instances de programme malveillant surveillées sur l’appareil.
+   ![Sélection de l’onglet Programme malveillant, puis clic sur la case à cocher Chemins d’accès de détection récents](../media/malware-path-column.png)
+4. Cliquez avec le bouton droit sur l’en-tête de colonne. Une liste des colonnes disponibles s'affiche. Cochez la case **Chemins d’accès de détection récents** dans la liste. La colonne **Chemins d’accès de détection récents** apparaît et affiche au maximum les 10 dernières instances de programme malveillant surveillées sur l’appareil.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Effectuer une analyse des programmes malveillants ou mettre à jour les définitions de programmes malveillants sur un ordinateur
 Intune peut effectuer une analyse complète ou rapide des programmes malveillants en utilisant Endpoint Protection ou Windows Defender sur un PC géré à distance où le client Intune est installé.
@@ -184,9 +185,6 @@ Intune peut effectuer une analyse complète ou rapide des programmes malveillant
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), accédez à **Groupes** > **Présentation** > **Tous les appareils** > **Tous les ordinateurs**, puis sélectionnez l’ordinateur que vous souhaitez cibler.
 
 2. Choisissez la liste déroulante **Tâches à distance**, puis sélectionnez la tâche à exécuter sur l’ordinateur distant.
-
-
-
 
 ## <a name="need-more-help"></a>Besoin d'aide ?
 Pour obtenir de l’aide et une assistance, consultez [Résoudre les problèmes liés à Endpoint Protection dans Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).

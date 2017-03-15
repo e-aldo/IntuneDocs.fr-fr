@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: 434eea4244931f0708eb05cfc39d0c97b4936830
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -32,7 +33,7 @@ Les groupes créés dans Intune vous permettent de gérer vos utilisateurs et ap
 
 ## <a name="group-management-moving-to-azure-ad"></a>Déplacement de la gestion des groupes vers Azure AD
 
-**À compter de novembre 2016**, les nouveaux comptes géreront les groupes d’utilisateurs et d’appareils dans le portail Azure Active Directory (AD). En décembre 2016, l’équipe produit Intune commencera la migration des clients actuels vers la nouvelle expérience de gestion de groupes Azure AD. Tous les groupes d’utilisateurs et d’appareils Intune seront migrés vers les groupes de sécurité Azure AD. Nous ne démarrerons pas la migration tant que nous ne serons pas sûrs de pouvoir minimiser l’impact sur votre travail quotidien et garantir qu’il n’y aura aucun impact sur les utilisateurs. Par ailleurs, nous vous avertirons avant d’effectuer la migration de votre compte.
+**Depuis novembre 2016**, les nouveaux comptes gèrent les groupes d’utilisateurs et d’appareils dans le portail Azure Active Directory (AD). En décembre 2016, l’équipe produit Intune commencera la migration des clients actuels vers la nouvelle expérience de gestion de groupes Azure AD. Tous les groupes d’utilisateurs et d’appareils Intune seront migrés vers les groupes de sécurité Azure AD. Nous ne démarrerons pas la migration tant que nous ne serons pas sûrs de pouvoir minimiser l’impact sur votre travail quotidien et garantir qu’il n’y aura aucun impact sur les utilisateurs. Par ailleurs, nous vous avertirons avant d’effectuer la migration de votre compte.
 
 
 >[!IMPORTANT]
@@ -87,9 +88,4 @@ Le groupe récemment créé est disponible dans la liste **Groupes**, dans l’e
 >[!div class="step-by-step"]
 
 >[&larr; **Gérer les licences Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Créer des stratégies et des applications** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
