@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ Vous pouvez configurer un VPN à la demande pour les appareils iOS 8.0 et versi
   - **Évaluer la connexion**, qui a trois paramètres. a. **Action de domaine** : Choisissez **Se connecter si nécessaire** ou **Ne jamais se connecter**
     . b. **Liste des domaines séparés par une virgule** : Ne configurez cette option que si vous choisissez **Se connecter si nécessaire** comme **Action de domaine**
     . c. **Sonde de chaîne d’URL obligatoire** : URL HTTP ou HTTPS (recommandé) telle que *https://vpntestprobe.contoso.com*. La règle vérifie s’il existe une réponse en provenance de cette adresse. Si ce n’est pas le cas et que l’option **Action de domaine** est définie sur **Se connecter si nécessaire**, le VPN est déclenché.
+      
      > [!TIP]
      >
      >Par exemple, vous pouvez utiliser cette action si une partie des sites de votre réseau d’entreprise nécessite une connexion de réseau d’entreprise directe ou VPN. Si vous répertoriez *corp.contoso.com* dans **Liste des domaines de recherche DNS séparés par une virgule**, vous pouvez choisir **Se connecter si nécessaire**, puis répertorier des sites spécifiques au sein de ce réseau qui peuvent nécessiter un VPN, tels que *sharepoint.corp.contoso.com*. La règle vérifie si *vpntestprobe.contoso.com* est accessible. Si ce n’est pas le cas, le VPN est déclenché pour le site sharepoint.
@@ -192,9 +194,4 @@ Les règles propres à un domaine sont évaluées avant les règles relatives à
 Une fois le déploiement réussi, les utilisateurs voient le nom de la connexion VPN que vous avez spécifié dans la liste des connexions VPN sur leur appareil.
 
 Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'ensemble** de l'espace de travail **Stratégie** , les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le Tableau de bord contient un récapitulatif de l'état.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
