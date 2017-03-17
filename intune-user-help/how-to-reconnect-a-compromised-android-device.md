@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 0909ac3e5eeefb0d137cba6b7c7c43e1cdff12dc
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: a51857a6e5ffd020888af6a7c0a3b85efa91fe20
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -29,5 +29,5 @@ ms.lasthandoff: 12/21/2016
 
 Votre administrateur informatique a détecté que vous utilisez un appareil rooté. « Rooté » signifie que l’appareil a été modifié pour autoriser l’accès au système d’exploitation, ce qui peut compromettre la sécurité et constituer une menace pour les ressources de votre entreprise. Dans ce cas, votre appareil ne peut plus accéder aux ressources d’entreprise.
 
-Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’[équipe Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
+Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
 
