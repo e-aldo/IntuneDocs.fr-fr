@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
+ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Les paramètres de profil de messagerie peuvent être utilisés pour configurer les appareils que vous gérez avec les paramètres requis pour la connexion à la messagerie d’entreprise et sa synchronisation. Cela peut aider à garantir que les paramètres sont standard sur l’ensemble de vos appareils et également à réduire les appels au support technique des utilisateurs finaux qui ne connaissent pas les paramètres de messagerie corrects.
+Des profils de messagerie peuvent être utilisés pour configurer les appareils que vous gérez avec les paramètres requis pour la connexion à la messagerie d’entreprise et sa synchronisation. Cela peut aider à garantir que les paramètres sont standard sur l’ensemble de vos appareils et également à réduire les appels au support technique des utilisateurs finaux qui ne connaissent pas les paramètres de messagerie corrects.
 
 Le client de messagerie intégré est pris en charge par la plupart des plateformes. La plupart des applications de messagerie tierces ne sont pas prises en charge actuellement.
 
