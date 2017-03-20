@@ -169,6 +169,8 @@
 ### [Créer une stratégie de compatibilité Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Créer une stratégie de compatibilité iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Créer une stratégie de compatibilité Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Créer des Actions en cas de non-conformité](set-device-compliance/actions-for-noncompliance.md)
+### [Surveiller la conformité des appareils](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
