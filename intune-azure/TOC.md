@@ -108,6 +108,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## Guide pratique
 ### [Configurer un profil d’appareil](configure-devices/how-to-create-device-profiles.md)
+
+### [Configurer des fonctionnalités d’appareil](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [MacOS](configure-devices/device-features-for-macos.md)
+
 ### [Configurer des restrictions sur les appareils](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
