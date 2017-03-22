@@ -74,7 +74,7 @@ Contrairement à d’autres stratégies Intune, vous ne déployez pas de straté
 2. [Créer une stratégie de conformité des appareils](create-a-device-compliance-policy-in-microsoft-intune.md).
 
 2.  Créer une stratégie d’accès conditionnel pour l’un des services cloud/produits Microsoft suivants :
-> [!div class="op_single_selector"]
+
   - [Créer une stratégie d’accès conditionnel à Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel à Exchange sur site](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel à Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
