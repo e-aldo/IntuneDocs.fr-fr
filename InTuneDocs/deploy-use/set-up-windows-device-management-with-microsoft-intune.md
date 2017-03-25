@@ -4,7 +4,7 @@ description: Activez la gestion des appareils mobiles pour les appareils Windows
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 02/26/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 255c3e47464ac7670a971881cf399e8e2bb17044
-ms.openlocfilehash: 4acbae2aba4cff21286d45cb7cb1691864c281dc
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: f66bc5a26f137f62defef4a83a36b22247be4ec1
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -73,9 +73,9 @@ Dans la [console d’administration Intune](http://manage.microsoft.com), clique
 
 ### <a name="step-4-tell-your-users-how-to-enroll-their-devices-and-what-to-expect-after-theyre-brought-into-management"></a>Étape 4 : Dire à vos utilisateurs comment inscrire leurs appareils et quels sont les principes de gestion des appareils.
 
-   Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows).
+   Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows).
 
-   Pour plus d’informations sur les tâches de l’utilisateur final, consultez [Guide pratique pour former vos utilisateurs finaux à Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) et [Conseils destinés aux utilisateurs relatifs aux appareils Windows](../enduser/using-your-windows-device-with-intune.md).
+   Pour plus d’informations sur les tâches de l’utilisateur final, consultez [Guide pratique pour former vos utilisateurs finaux à Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) et [Conseils destinés aux utilisateurs relatifs aux appareils Windows](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune).
 
 ### <a name="see-also"></a>Voir aussi
 [Prérequis pour l’inscription d’appareils dans Microsoft Intune](prerequisites-for-enrollment.md)
