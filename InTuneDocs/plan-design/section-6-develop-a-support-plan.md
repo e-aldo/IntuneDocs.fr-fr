@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
-ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: e21b088dbb7fdcef9996e2b970bb406cab5ee0aa
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,9 +28,9 @@ ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 Un plan de support Intune peut être encore plus efficace pour identifier et résoudre les problèmes affectant Intune et améliorer ainsi l’expérience Intune globale de l’utilisateur final. Voici quelques questions à prendre en compte lorsque vous développez votre plan de support Intune :
 
--   Quelles équipes seront chargées du support Intune ?
+-   Quelles équipes sont chargées du support Intune ?
 
--   Si le support de votre entreprise comporte plusieurs niveaux (par exemple, des niveaux 1-3), quelles sont les responsabilités du support Intune pour chaque niveau ?
+-   Si le support de votre entreprise comporte plusieurs niveaux (par exemple, des niveaux 1 à 3), quelles sont les responsabilités du support Intune pour chaque niveau ?
 
 -   Quel processus sera utilisé pour le support Intune ?
 
@@ -95,9 +96,4 @@ Impliquer le personnel de support/assistance informatique dans les premières ph
 ## <a name="next-section"></a>Section suivante
 
 La section suivante fournit des conseils sur la [conception Intune](section-7-create-an-intune-design.md).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="make-your-device-safer-with-the-right-password"></a>Sécuriser votre appareil avec le mot de passe approprié
 
-L’accès aux ressources d’entreprise, telles que les e-mails et les documents, est une opération que les personnes effectuent tous les jours à partir de leurs appareils Windows. Votre organisation souhaite s’assurer que votre appareil procède à cette opération en toute sécurité. L’un des moyens de vérifier que votre appareil accède en toute sécurité à ces ressources consiste à exiger que les appareils utilisent un mot de passe.
+L’accès aux ressources d’entreprise, telles que les e-mails et les documents, est une opération que les personnes effectuent tous les jours à partir de leurs appareils Windows. Votre organisation souhaite s’assurer que votre appareil procède à cette opération en toute sécurité. L’un des moyens de vérifier que votre appareil accède en toute sécurité à ces ressources consiste à exiger que les appareils utilisent un mot de passe. Ces mots de passe sont utilisés, par exemple, pour accéder à votre appareil à partir de l’écran verrouillé.
 
 Si votre appareil Windows n’est pas conforme à la stratégie de mot de passe de votre administrateur, un message s’affiche qui décrit brièvement le problème et explique ce que vous devez faire pour que votre mot de passe soit conforme aux exigences.
 

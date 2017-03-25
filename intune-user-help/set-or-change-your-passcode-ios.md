@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
-ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/21/2016
 
 Si votre appareil iOS n’est pas conforme à la stratégie de code secret de votre administrateur informatique, un message s’affiche qui décrit brièvement le problème et explique ce que vous devez faire pour que votre code secret soit conforme aux exigences.
 
-Votre administrateur peut définir plusieurs exigences de code secret. Par exemple, le code secret peut devoir contenir un certain nombre de caractères et comporter une combinaison de chiffres, de lettres et de caractères. Comme plusieurs exigences peuvent être définies, ces instructions peuvent expliquer uniquement comment définir ou modifier votre code secret. Elles n’expliquent pas toutes les combinaisons possibles d’exigences.
+Votre administrateur peut définir plusieurs exigences de code secret. Par exemple, le code secret peut devoir contenir un certain nombre de caractères et comporter une combinaison de chiffres, de lettres et de caractères. Comme plusieurs exigences peuvent être définies, ces instructions peuvent expliquer uniquement comment définir ou modifier votre code secret. Elles n’expliquent pas toutes les combinaisons possibles d’exigences. Ces codes secrets sont utilisés, par exemple, pour accéder à votre appareil à partir de l’écran verrouillé.
 
 Si vous rencontrez des difficultés à définir un code secret qui répond aux exigences de code secret, demandez de l’aide à votre administrateur informatique.
 

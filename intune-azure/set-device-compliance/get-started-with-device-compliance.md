@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Dans cette rubrique, vous allez en apprendre plus sur les éléments dont vous avez besoin avant de commencer à créer une stratégie de conformité d’appareil. Vous obtiendrez également un aperçu de ce que vous pouvez voir et faire dans le portail Azure. Si vous ne connaissez pas la conformité des appareils, nous vous conseillons de lire cette rubrique pour savoir en quoi elle consiste et comment l’utiliser dans votre entreprise.
+Voici ce qui est présenté dans cette rubrique : 
+
+- Ce dont vous avez besoin avant de commencer à créer une stratégie de conformité d’appareil.
+- Un coup d’œil rapide sur ce que vous pouvez voir et faire dans le portail Intune Azure en préversion. 
+
+Si vous ne connaissez pas la conformité des appareils, nous vous conseillons de lire [cette rubrique](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) pour savoir en quoi elle consiste et comment l’utiliser dans votre entreprise.
 
 ##  <a name="pre-requisites"></a>Conditions préalables
-
 
 -   Un abonnement à Intune.
 
 -   Un abonnement à Azure Active Directory
 
-
-
 ##  <a name="supported-platforms"></a>Plateformes prises en charge :
-
 
 -   Android
 
@@ -54,8 +55,7 @@ Dans cette rubrique, vous allez en apprendre plus sur les éléments dont vous a
 
 ##  <a name="azure-portal-workflow"></a>Flux de travail de portail Azure
 
-
-Voici une présentation de la façon dont vous pouvez créer et gérer la conformité des appareils dans le portail Azure.
+Voici une présentation de la façon dont vous pouvez créer et gérer la conformité des appareils dans le portail Intune Azure en préversion.
 
 <!---### Overview
 

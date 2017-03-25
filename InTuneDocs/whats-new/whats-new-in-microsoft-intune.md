@@ -2,10 +2,10 @@
 title: "Nouveautés | Microsoft Docs"
 description: "Découvrir les nouveautés de la version de Microsoft Intune de ce mois-ci et des versions précédentes"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a9336e3d230de962d2623dd627e45c6e9262a822
-ms.openlocfilehash: cfe4a0bb802956278387ac2a39d5316482e09332
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: 2a602b351cf7f345bd56f20394943ea25f2d2060
+ms.lasthandoff: 03/15/2017
 
 
 ---
-# <a name="whats-new-in-microsoft-intune---february-2017"></a>Nouveautés de Microsoft Intune : février 2017
+# <a name="whats-new-in-microsoft-intune---march-2017"></a>Nouveautés de Microsoft Intune - Mars 2017
 Découvrez les nouveautés de la version de Microsoft Intune de ce mois-ci. Vous pouvez également découvrir les modifications à venir que vous devez planifier, ainsi que des informations sur les versions précédentes.
 
 > [!Note]
@@ -29,45 +29,52 @@ Découvrez les nouveautés de la version de Microsoft Intune de ce mois-ci. Vous
 
 ## <a name="new-capabilities"></a>Nouvelles fonctionnalités
 
-### <a name="modernizing-the-company-portal-website---753980--"></a>Modernisation du site web du portail d’entreprise <!--753980-->
-Le site web du portail d’entreprise prend en charge les applications destinées aux utilisateurs qui n’ont pas d’appareils gérés. Le site web s’aligne sur les autres produits et services Microsoft et utilise un nouveau modèle de couleurs contrastées, des illustrations dynamiques et un « menu hamburger », ![Petite image du menu hamburger désormais en haut à gauche du site web du portail d’entreprise](./media/CP_hamburger_menu.png) qui contient les coordonnées du support technique et des informations sur les appareils gérés existants. Nous avons réorganisé la page d’accueil pour mettre en évidence les applications disponibles en les affichant dans des carrousels sous Applications proposées et Applications récemment mises à jour. Des images « Avant » et « Après » sont disponibles dans la [page des mises à jour de l’interface utilisateur](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
+### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nouvelle expérience utilisateur dans l’application Portail d’entreprise pour Android <!--621622-->
 
-### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Nouvelle expérience interactive pour le portail d’entreprise Windows 10 <!--713927-->
-À compter du mois de mars, le portail d’entreprise pour Windows 10 inclura une expérience de procédure pas à pas Intune interactive pour les appareils qui n’ont pas été identifiés ou inscrits. La nouvelle expérience fournit des instructions détaillées, adaptées à la version Windows 10 de l’utilisateur, qui guident les utilisateurs pour effectuer l’inscription AAD (obligatoire pour l’identification pour les fonctionnalités d’accès conditionnel) et l’inscription MDM (obligatoire pour les fonctionnalités de gestion des appareils). L’expérience interactive est accessible à partir de la page d’accueil du portail d’entreprise et est facultative. Les utilisateurs peuvent continuer à utiliser l’application s’ils n’effectuent pas l’enregistrement et l’inscription, mais les fonctionnalités peuvent être limitées.
+L’application Portail d’entreprise pour Android a mis à jour son interface utilisateur afin d’en moderniser l’aspect et d’améliorer l’expérience utilisateur. Les mises à jour notables sont les suivantes :
+
+- Couleurs : les en-têtes de l’onglet Portail d’entreprise sont colorés selon une personnalisation définie par le service informatique.
+- Applications : dans l’onglet **Applications**, les boutons **Applications proposées** et **Toutes les applications** sont mis à jour.
+- Recherche : dans l’onglet **Applications**, le bouton **Rechercher** est un bouton d’action flottant.
+- Navigation dans les applications : la vue **Toutes les applications** affiche une vue comprenant les onglets **Applications proposées**, **Toutes les applications** et **Catégories** pour faciliter la navigation.
+- Support : les onglets **Mes appareils** et **Contacter le service informatique** sont mis à jour pour améliorer la lisibilité.
+
+Pour plus d’informations sur ces modifications, consultez [Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune](whats-new-in-intune-app-ui.md).
+
+### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Les appareils non gérés peuvent accéder aux applications attribuées <!--664691-->
+
+Dans le cadre des modifications conceptuelles du site web du portail d’entreprise, les utilisateurs iOS et Android peuvent installer les applications attribuées indiquées comme « disponibles sans inscription » sur leurs appareils non gérés. À l’aide de leurs informations d’identification Intune, les utilisateurs peuvent se connecter au site web du portail d’entreprise et afficher la liste des applications qui leur sont attribuées. Les packages des applications « disponibles sans inscription » peuvent être téléchargés sur le site web du portail d’entreprise. Les applications dont l’installation nécessite une inscription ne sont pas affectées par cette modification, car les utilisateurs sont invités à inscrire leur appareil s’ils souhaitent installer ces applications.
+
+### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Script de signature pour le portail d’entreprise Windows 10 <!--941642-->
+
+Si vous avez besoin de télécharger de l’application Portail d’entreprise Windows 10 et d’en charger une version test, vous pouvez à présent utiliser un script qui simplifie le processus de signature d’application pour votre organisation.   Pour télécharger le script et les instructions d’utilisation, consultez [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Script de signature Microsoft Intune pour le portail d’entreprise Windows 10) sur la galerie TechNet. Pour plus d’informations sur cette annonce, consultez [Mise à jour de votre application de portail d’entreprise Windows 10](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) sur le blog de l’équipe de support technique Intune.
+
 
 ## <a name="notices"></a>Remarques
 
-### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>La migration de groupe n’implique pas la mise à jour des groupes ou des stratégies pour les appareils iOS<!--898837-->
-Pour chaque groupe d’appareils Intune préattribué par un profil d’inscription des appareils de l’entreprise, un groupe d’appareils dynamique correspondant est créé dans AAD à partir du nom du profil d’inscription des appareils de l’entreprise pendant la migration vers des groupes d’appareils Azure Active Directory. De cette façon, les appareils inscrits sont automatiquement regroupés et reçoivent les mêmes stratégies et applications que le groupe Intune d’origine.
+### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Amélioration du support pour les utilisateurs Android basés en Chine <!--720444-->
 
-Dès qu’un client entre dans l’étape de regroupement et de ciblage du processus de migration, Intune crée automatiquement un groupe AAD dynamique qui correspond à un groupe Intune ciblé par un profil d’inscription des appareils de l’entreprise. Si l’administrateur Intune supprime le groupe Intune cible, le groupe AAD dynamique correspondant n’est pas supprimé. Les membres du groupe et la requête dynamique disparaissent, mais le groupe lui-même est conservé jusqu’à ce que l’administrateur informatique le supprime dans le portail AAD.
+En l’absence de Google Play Store en Chine, les appareils Android doivent obtenir les applications sur les places de marché chinoises. L’application Portail d’entreprise prendra en charge ce flux de travail en redirigeant les utilisateurs Android en Chine vers le téléchargement des applications Portail d’entreprise et Outlook à partir des boutiques d’applications locales. Cette approche améliorera l’expérience utilisateur lorsque les stratégies d’accès conditionnel seront activées, à la fois pour la gestion des appareils mobiles et pour la gestion des applications mobiles. Les applications Portail d’entreprise et Outlook pour Android sont disponibles dans les boutiques d’applications chinoises suivantes :
 
-De même, si l’administrateur informatique change le groupe Intune qui est ciblé par un profil d’inscription des appareils de l’entreprise, Intune crée un groupe dynamique qui reflète la nouvelle attribution de profil, mais ne supprime pas le groupe dynamique créé pour l’ancienne attribution.
+- [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+- [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+- [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+- [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 
-### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Gestion par défaut des appareils de bureau Windows via les paramètres Windows <!--663050-->
-Le comportement par défaut pour l’inscription d'ordinateurs de bureau Windows 10 change. Les nouvelles inscriptions se feront via le flux d'inscription d'agent MDM classique plutôt que via l’agent PC. Le site Web du portail d’entreprise fournira aux utilisateurs d'ordinateurs de bureau Windows 10 des instructions d’inscription qui les guideront tout au long du processus d’ajout d’ordinateurs de bureau Windows 10 comme appareils mobiles. Cela n’affectera pas les ordinateurs actuellement inscrits, et votre organisation pourra toujours gérer des ordinateurs de bureau Windows 10 à l’aide de l’agent PC [si vous préférez](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>Meilleures pratiques : vérifiez que vos applications Portail d’entreprise sont à jour <!--879465-->
 
-### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Amélioration de la prise en charge de la gestion des applications mobiles pour la réinitialisation sélective <!--581242-->
-Les utilisateurs finaux recevront des instructions supplémentaires sur la façon de récupérer l’accès aux données professionnelles ou scolaires si ces données sont supprimées automatiquement en raison de la stratégie de « Intervalle en mode hors connexion avant la réinitialisation des données d’application ».<!--, or the removal of the Intune Company Portal on Android.-->
+En décembre 2016, nous avons publié une mise à jour qui a activé l’authentification multifacteur (MFA) sur un groupe d’utilisateurs lorsque ceux-ci inscrivent un appareil iOS, Android, Windows 8.1+ ou Windows Phone 8.1+. Cette fonctionnalité ne peut pas fonctionner sans certaines versions de ligne de base de l’application Portail d’entreprise pour Android (v5.0.3419.0 +) et iOS (v2.1.17+).
 
-### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Le portail d’entreprise pour obtenir des liens iOS s'ouvrir au sein de l’application<!--665954-->
-Les liens au sein de l’application Portail d’entreprise pour iOS, y compris ceux vers la documentation et les applications, s’ouvriront directement dans l’application Portail d’entreprise à l’aide d’une vue dans l’application de Safari. Cette mise à jour sera disponible séparément à partir de la mise à jour de service de janvier.
+Microsoft améliore en permanence Intune en ajoutant de nouvelles fonctions aussi bien à la console qu’aux applications Portail d’entreprise sur toutes les plateformes prises en charge. Par conséquent, Microsoft publie uniquement des correctifs pour les problèmes que nous trouvons dans la version actuelle de l’application Portail d’entreprise. Il est donc recommandé d’utiliser les dernières versions des applications Portail d’entreprise pour bénéficier d’une expérience utilisateur optimale.
 
-### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Nouvelle adresse du serveur MDM pour les appareils Windows <!--893007-->
-Les utilisateurs de Windows et Windows Phone ne parviennent pas à inscrire un appareil s’ils entrent __manage.microsoft.com__ comme adresse du serveur MDM (s’ils y sont invités). L’adresse du serveur MDM __manage.microsoft.com__ devient __enrollment.manage.microsoft.com__. Demandez à vos utilisateurs d’utiliser __enrollment.manage.microsoft.com__ comme adresse du serveur MDM, s’ils y sont invités lors de l’inscription d’un appareil Windows ou Windows Phone. Aucune modification de votre configuration CNAME n’est nécessaire. Pour plus d’informations sur cette modification, visitez [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
+>[!Tip]
+> Demandez à vos utilisateurs de définir leurs appareils de façon à ce qu’ils mettent à jour automatiquement les applications à partir de l’App Store approprié. Si vous avez partagé l’application Portail d’entreprise Android sur un partage réseau, vous pouvez télécharger la dernière version à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=49140).
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nouvelle expérience utilisateur dans l’application Portail d’entreprise pour Android <!--621622-->
-À compter de mars, l’application Portail d’entreprise pour Android suit les [directives de conception matérielle](https://material.io/guidelines/material-design/introduction.html) pour créer une apparence plus moderne. Cette expérience utilisateur améliorée inclut les éléments suivants :
+### <a name="microsoft-teams-is-now-enabled-for-mam-on-ios-and-android"></a>Microsoft Teams est maintenant activé pour MAM sur iOS et Android
 
-* __Couleurs__ : La couleur de l’en-tête des onglets peut être assortie à votre palette de couleurs personnalisée.
-* __Interface__ : Les boutons Applications proposées et Toutes les applications ont été mis à jour sous l’onglet Applications. Le bouton Rechercher est désormais un bouton d’action flottant.
-* __Navigation__ : Le bouton Toutes les applications propose une vue comprenant les onglets Applications proposées, Toutes les applications et Catégories pour faciliter la navigation.
-* __Service__ : Les onglets Mes appareils et Contacter le service informatique sont plus lisibles.
+Microsoft a annoncé la disponibilité générale de Microsoft Teams. Les applications Microsoft Teams mises à jour pour iOS et Android sont maintenant activées avec les fonctionnalités de gestion des applications mobiles Intune (MAM). Vous donnez ainsi la possibilité à vos équipes de travailler librement sur les appareils, tout en veillant à ce que les conversations et les données d’entreprise soient protégées en permanence. Pour plus d’informations, consultez l’[annonce Microsoft Teams](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/) sur le blog Enterprise Mobility and Security.
 
-Des images « Avant » et « Après » sont disponibles dans la [page des mises à jour de l’interface utilisateur](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
-
-### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>Associer plusieurs outils de gestion à Windows Store pour Entreprises <!--926135-->
-Si vous utilisez plusieurs outils de gestion pour déployer des applications Windows Store pour Entreprises, vous ne pouviez associer qu’un seul outil au Windows Store pour Entreprises. Désormais, vous pouvez associer plusieurs outils de gestion au Windows Store, par exemple, Intune et Configuration Manager. Pour plus d’informations, consultez [Gérer les applications que vous avez achetées dans le Windows Store pour Entreprises avec Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Nouveautés de la préversion publique de l’expérience d’administrateur Intune sur Azure <!--736542-->
 
@@ -77,15 +84,14 @@ Les nouveaux locataires de test pourront accéder à la préversion publique de 
 
 L’expérience administrateur dans le portail Azure utilisera la nouvelle fonctionnalité de regroupement et de ciblage précédemment annoncée ; lorsque votre client existant est migré vers la nouvelle expérience de regroupement, vous le serez également afin d’afficher un aperçu de la nouvelle expérience administrateur sur votre client. En attendant, si vous souhaitez tester ou examiner toute nouvelle fonctionnalité avant la migration du client, inscrivez-vous à un nouveau compte d’évaluation Intune ou consultez la [nouvelle documentation](https://docs.microsoft.com/intune-azure/introduction/whats-new).
 
-Si vous avez des questions concernant la chronologie de la migration de votre client, contactez notre équipe de migration à l’adresse suivante : [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
-
-Vous pouvez découvrir les nouveautés de la préversion Intune dans Azure [ici](https://docs.microsoft.com/intune-azure/introduction/whats-new).
+> [!Note]
+> En ce qui concerne la préversion du portail Azure, nous déployons actuellement les mises à jour pour ce mois. Toutefois, il se peut que les modifications ne soient pas disponibles immédiatement selon la façon dont le service Intune est mis à jour.  Plusieurs composants du service doivent être actualisés de façon séquentielle avant que les nouvelles fonctionnalités du portail soient disponibles. Recherchez les modifications dans la préversion du portail Azure qui seront publiées à une date ultérieure ce mois-ci. Pour obtenir la liste complète des modifications, consultez [Nouveautés de la préversion de Microsoft Intune](/intune-azure/introduction/whats-new).
 
 ## <a name="whats-coming"></a>Nouveautés à venir
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Mises à jour requises par Apple pour Application Transport Security <!--748318-->
 
-La société Apple a annoncé qu’à compter du printemps 2017, elle appliquera des exigences de sécurité spécifiques pour Application Transport Security (ATS). ATS est utilisé pour renforcer la sécurité de toutes les communications d’application via le protocole HTTPS. Cette modification a une incidence sur les clients Intune qui utilisent les applications de portail d’entreprise iOS. Pour plus d’informations, consultez notre [blog de support Intune](https://aka.ms/compportalats). 
+La société Apple a annoncé qu’à compter du printemps 2017, elle appliquera des exigences de sécurité spécifiques pour Application Transport Security (ATS). ATS est utilisé pour renforcer la sécurité de toutes les communications d’application via le protocole HTTPS. Cette modification a une incidence sur les clients Intune qui utilisent les applications de portail d’entreprise iOS. Pour plus d’informations, consultez notre [blog de support Intune](https://aka.ms/compportalats).
 
 ### <a name="see-also"></a>Voir aussi
 * [Blog Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)

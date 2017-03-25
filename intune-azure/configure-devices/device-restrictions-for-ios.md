@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a062b92cba0042153ffe22b949ce8a3b7b740b3f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -222,7 +222,7 @@ Utilisez les informations de cette liste pour identifier le nom, l’éditeur et
 -     **Photothèque iCloud** : si définie sur **Non**, désactive l’utilisation de la photothèque iCloud qui permet aux utilisateurs de stocker des photos et des vidéos dans le cloud.    Toutes les photos qui ne sont pas entièrement téléchargées de la Photothèque iCloud sur l'appareil seront supprimées de l'appareil si cette valeur est définie sur **Non**.
 -     **Applications gérées synchronisées avec le cloud** : autorisez les applications que vous gérez avec Intune à synchroniser les données sur le compte iCloud de l’utilisateur.
 -     **Flux de photos partagé** : choisissez **Non** pour désactiver le **partage de photos iCloud** sur l'appareil.
--     **Continuation d’activité** : autorise l’utilisateur à reprendre le travail qu’il a commencé sur un appareil iOS, sur un autre appareil iOS ou Mac OS X (transfert).
+-     **Continuation de l’activité** : autorise l’utilisateur à reprendre le travail qu’il a commencé sur un appareil iOS sur un autre appareil iOS ou macOS (continuité).
 
 ## <a name="kiosk"></a>Kiosque
 -     **Verrou d’activation** : active le verrou d’activation sur des appareils iOS supervisés.

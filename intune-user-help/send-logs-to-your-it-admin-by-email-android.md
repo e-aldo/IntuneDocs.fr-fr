@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
-ms.openlocfilehash: 5ce680b35ff2a931b13e0395d7bb550f534d2b29
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/30/2016
 
 # <a name="send-logs-to-your-it-admin-using-email"></a>Envoyer des journaux à votre administrateur informatique par e-mail
 
-Si vous obtenez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider votre administrateur informatique à résoudre le problème en lui envoyant les informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé un _journal de diagnostic__.
+Si vous obtenez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider votre administrateur informatique à résoudre le problème en lui envoyant les informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
 
 > [!Note]
 > Pour faciliter la tâche de l’administrateur informatique chargé d’identifier le problème, vous devriez activer la _journalisation détaillée_. La journalisation détaillée inclut tous les détails pertinents dans le rapport. Découvrez comment [activer la journalisation détaillée ici](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).

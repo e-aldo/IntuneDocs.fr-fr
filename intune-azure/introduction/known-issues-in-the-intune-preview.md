@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ Si vous souhaitez ajouter une nouvelle fonctionnalité à Intune, envisagez d’
 ## <a name="administration-and-accounts"></a>Administration et comptes
 
 - Les administrateurs globaux (également appelés administrateurs de clients) peuvent continuer à effectuer des tâches d’administration quotidiennes sans licence Intune ou Enterprise Mobility Suite (EMS) distincte. Toutefois, si les administrateurs généraux souhaitent utiliser le service, par exemple pour inscrire leur propre appareil ou un appareil d’entreprise, ou pour utiliser le portail d’entreprise Intune, ils doivent avoir une licence Intune ou EMS comme tout autre utilisateur.
+
+## <a name="apple-enrollment-profile-migration"></a>Migration d’un profil d’inscription Apple
+- Dans quelques mois, Intune vous permettra de gérer les inscriptions au programme DEP (Device Enrollment Program) et à Apple Configurator par le biais du nouveau portail Azure. Si vous supprimez le jeton du programme DEP d’Apple et que vous ne chargez pas de jeton mis à jour, le jeton d’origine est restauré dans le nouveau portail Azure dans le cadre de la migration de votre compte Intune. Pour supprimer ce jeton et empêcher l’inscription au programme DEP, supprimez simplement le jeton dans le portail Azure. 
 

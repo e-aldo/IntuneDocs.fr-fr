@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 9862ef9fd1d4827ae99480cd2cf2eac8dfca54d8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,6 +28,7 @@ ms.lasthandoff: 02/21/2017
 
 Parfois, des problèmes peuvent se produire avec votre appareil Android et peuvent être corrigés. Voici quelques problèmes courants dont nous avons connaissance et que vous pouvez d’abord essayer de résoudre vous-même. Pour les problèmes plus complexes, nous vous recommandons de contacter votre administrateur informatique via leurs informations de contact sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
 
+- [Vérifier la conformité de votre appareil Android](check-compliance-on-your-device-android.md)
 - [Utiliser la journalisation détaillée pour aider votre administrateur informatique à résoudre les problèmes de l’appareil](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Envoyer des journaux à votre administrateur informatique par e-mail](send-logs-to-your-it-admin-by-email-android.md)
 - [Envoyer des journaux à votre administrateur informatique par câble USB](send-logs-to-your-it-admin-using-cable-android.md)

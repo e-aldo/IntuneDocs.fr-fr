@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2b60f327c2e48c3c933a6cff0a68df138df4dd3d
-ms.openlocfilehash: ffc912af791c4b243877f026a554cc14b614ffa0
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/05/2017
 
 # <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Envoyer des journaux à votre administrateur informatique par câble USB
 
-Si vous obtenez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider votre administrateur informatique à résoudre le problème en lui envoyant les informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé un _journal de diagnostic__.
+Si vous obtenez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider votre administrateur informatique à résoudre le problème en lui envoyant les informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
 
 > [!Note]
 > Avant de commencer, assurez-vous d’avoir l’adresse e-mail de votre administrateur informatique à disposition. Vous la trouverez sur le [site web Portail d’entreprise](http://portal.manage.microsoft.com) ou dans votre application Portail d’entreprise.

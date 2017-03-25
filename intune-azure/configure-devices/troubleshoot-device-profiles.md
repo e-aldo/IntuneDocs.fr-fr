@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ Quand une stratégie ou une application est déployée, Intune essaie d’envoye
 
 Si un appareil ne se manifeste pas pour obtenir la stratégie après l’envoi de la première notification, Intune effectue trois autres tentatives.  Si l’appareil est hors connexion (par exemple, s’il est éteint ou n’est pas connecté à un réseau), il ne peut pas recevoir de notifications. Dans ce cas, l’appareil obtiendra la stratégie lors de son prochain enregistrement planifié auprès du service Intune, de la manière suivante :
 
-- iOS et Mac OS X : toutes les 6 heures.
+- iOS et macOS : toutes les 6 heures.
 - Android  : toutes les 8 heures.
 - Windows Phone : toutes les 8 heures.
 - PC Windows 8.1 et Windows 10 inscrits en tant qu’appareils : toutes les 8 heures.
 
 Si l’appareil vient d’être inscrit, la fréquence d’enregistrement est plus fréquente :
 
-- iOS et Mac OS X : toutes les 15 minutes pendant 6 heures, puis toutes les 6 heures.
+- iOS et macOS : toutes les 15 minutes pendant 6 heures, puis toutes les 6 heures.
 - Android : toutes les 3 minutes pendant 15 minutes, puis toutes les 15 minutes pendant 2 heures, puis toutes les 8 heures.
 - Windows Phone : toutes les 5 minutes pendant 15 minutes, puis toutes les 15 minutes pendant 2 heures, puis toutes les 8 heures.
 - PC Windows inscrits en tant qu’appareils : toutes les 3 minutes pendant 30 minutes, puis toutes les 8 heures.
@@ -499,8 +500,3 @@ Pour pouvoir appliquer une stratégie moins restrictive, vous devrez peut-être 
 
 ### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
-
-
-<!--HONumber=Feb17_HO3-->
-
-

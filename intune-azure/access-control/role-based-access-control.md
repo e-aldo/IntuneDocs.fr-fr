@@ -1,12 +1,12 @@
 ---
-title: "Contrôle d’accès en fonction du rôle (RBAC) pour Microsoft Intune"
+title: "Rôles Intune (RBAC) pour Microsoft Intune"
 titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment le contrôle d’accès en fonction du rôle (RBAC) vous permet de contrôler qui peut exécuter des actions et apporter des modifications."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/22/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
-ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: e60edd86289e0fca2aa03660d8ce782e373c0236
+ms.lasthandoff: 03/15/2017
 
 
 ---
 
-# <a name="role-based-access-control-rbac-for-microsoft-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) pour Microsoft Intune
+# <a name="intune-roles-rbac-for-microsoft-intune"></a>Rôles Intune (RBAC) pour Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -67,8 +67,8 @@ Vous engagez un nouvel administrateur informatique qui se chargera de déployer 
 ### <a name="how-to-create-a-custom-role"></a>Procédure de création d'un rôle personnalisé
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Analyse + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Contrôle d'accès**.
+2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le panneau **Intune**, choisissez **Rôles Intune**.
 ![Charge de travail de contrôle d’accès](./media/axxess-control.png)
 1. Dans le panneau **Rôles** de la charge de travail **Contrôle d’accès**, choisissez **Ajouter un élément personnalisé**.
 2. Dans le panneau **Ajouter un élément personnalisé**, entrez un nom et une description pour le nouveau rôle, puis cliquez sur **Autorisations**.

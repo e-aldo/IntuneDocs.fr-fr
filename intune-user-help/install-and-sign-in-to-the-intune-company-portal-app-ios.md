@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d4491a6068ebde632b8af0dfa6bee500def8e4b2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 
 Le portail d’entreprise est une application que vous installez sur votre appareil iOS pour avoir accès aux applications, à la messagerie et au réseau de votre entreprise ou établissement scolaire.  Pour obtenir cet accès, vous devez d’abord installer l’application Portail d’entreprise et, avec celle-ci, inscrire votre appareil dans Microsoft Intune. Pour plus d’informations, consultez [Que se passe-t-il si vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-1.  Ouvrez l’**App Store** et recherchez **intune**.
+1.  Ouvrez l’**App Store** et recherchez **portail d’entreprise Intune**.
 
 2.  Téléchargez l’application **Portail d’entreprise Microsoft Intune**.
 
