@@ -41,7 +41,7 @@
 #### [Inscrire des appareils iOS à l’aide du programme d’inscription des appareils](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Inscrire des appareils avec le gestionnaire d’inscription d’appareil](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Inscrire des appareils macOS](enroll-devices/enroll-macos-devices.md)
-### [Inscrire des appareils Windows](enroll-devices/enroll-window-devices.md)
+### [Inscrire des appareils Windows](enroll-devices/enroll-windows-devices.md)
 ### Gérer l’inscription des appareils
 #### [Créer des conditions générales](enroll-devices/create-terms-and-conditions.md)
 #### [Définir des restrictions d’inscription](enroll-devices/set-enrollment-restrictions.md)
