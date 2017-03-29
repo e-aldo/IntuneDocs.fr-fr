@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
 ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.lasthandoff: 02/10/2017
 
 
 ---
@@ -100,7 +101,7 @@ Les éléments suivants sont pris en charge :
 
   - **Empêcher les applications de messagerie d’accéder à Exchange sur site si l’appareil n’est pas conforme ou n’est pas inscrit à Microsoft Intune :** lorsque vous sélectionnez cette option, les appareils qui ne sont pas gérés par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qui ne sont pas conformes à une stratégie de conformité n’ont pas accès aux services Exchange.
 
-  - **Substitution de règle par défaut - Toujours autoriser les appareils inscrits et conformes pour l’accès à Exchange : ** Quand vous activez cette option, les appareils inscrits dans Intune et conformes aux stratégies de conformité sont autorisés à accéder à Exchange.
+  - **Substitution de règle par défaut - Toujours autoriser les appareils inscrits et conformes pour l’accès à Exchange :** Quand vous activez cette option, les appareils inscrits dans Intune et conformes aux stratégies de conformité sont autorisés à accéder à Exchange.
   Cette règle se substitue à la **Règle par défaut**, ce qui signifie que même si vous définissez la mise en quarantaine ou un blocage de l’accès par le biais de la **Règle par défaut**, les appareils inscrits et conformes peuvent toujours accéder à Exchange.
 
   - **Groupes ciblés** : Sélectionnez les groupes d’utilisateurs [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] qui doivent inscrire leurs appareils auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour pouvoir accéder à Exchange.
@@ -139,9 +140,4 @@ Les éléments suivants sont pris en charge :
 -   [Protéger l’accès à SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Protéger l’accès à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
