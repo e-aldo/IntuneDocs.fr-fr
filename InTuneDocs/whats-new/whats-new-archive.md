@@ -2,8 +2,8 @@
 title: "Archive des nouveautés | Microsoft Docs"
 description: "Nouveautés archivées de Microsoft Intune"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
