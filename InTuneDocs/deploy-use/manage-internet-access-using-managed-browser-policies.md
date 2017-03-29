@@ -110,7 +110,7 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
     -   Port 443 pour https
 
-    L’utilisation de caractères génériques n’est pas prise en charge pour les numéros de port. Par exemple, les chaînes suivantes ne sont pas gérées : **http&colon;//www&period;contoso&period;com:*;** et **http&colon;//www&period;contoso&period;com: /*;**.
+    L’utilisation de caractères génériques n’est pas prise en charge pour les numéros de port. Par exemple, les chaînes suivantes ne sont pas gérées : **http&colon;//www&period;contoso&period;com:*;**et**http&colon;//www&period;contoso&period;com: /*;**.
 
 -   Utilisez le tableau suivant pour en savoir plus sur les modèles autorisés que vous pouvez utiliser pour spécifier des URL :
 
