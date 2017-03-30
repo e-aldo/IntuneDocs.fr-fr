@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Raccourcis clavier (mode supervisé uniquement)** : permet d’utiliser les raccourcis clavier.
 -     **Détection du poignet pour une Apple Watch appairée** : quand elle est activée, l’Apple Watch n’affiche pas de notification si elle n’est pas portée.
 - **Exiger un mot de passe associé pour les demandes AirPlay sortantes** : nécessite un mot de passe de jumelage lorsque l’utilisateur a recours à AirPlay pour diffuser le contenu vers d’autres appareils Apple.
-- **Modification de compte (en mode supervisé uniquement)** : autorisez l’utilisateur à modifier les paramètres de compte tels que les configurations des e-mails.
+- **Modification de compte (en mode supervisé uniquement)** - Si désactivée, cette option empêche l’utilisateur de modifier les paramètres spécifiques à l’appareil à partir de l’application des paramètres iOS, par exemple la création de nouveaux comptes d’appareils et la modification du nom d’utilisateur ou du mot de passe.
+Cette restriction s’applique également aux options accessibles à partir des applications iOS comme Mail, Contacts, Calendrier, Facebook et Twitter. Elle ne s’applique pas aux applications avec des paramètres de compte qui ne sont pas configurables à partir des applications iOS comme Microsoft Outlook.
 - **Appariement Apple Watch (mode supervisé uniquement)** : autorise l’appareil à s’associer avec une Apple Watch.
 - **Modification Bluetooth (mode supervisé uniquement)** : empêche l’utilisateur final de modifier les paramètres Bluetooth sur l’appareil.
 - **Observation de l’écran à distance avec l’application Classroom (mode supervisé uniquement)** : autorisez ou bloquez l’application Classroom pour l’observation de l’écran sur des appareils distants.

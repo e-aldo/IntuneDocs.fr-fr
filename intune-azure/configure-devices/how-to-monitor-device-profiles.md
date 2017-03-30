@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c6bf134ad49edb64e994b95bf7378602042052e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: ae5cf453d578dd7df4ce0590b14e97468c893093
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -32,7 +32,7 @@ Vous pouvez surveiller la progression de l’affectation de profils d’appareil
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 2. Dans le panneau de liste de profils, sélectionnez le profil que vous souhaitez gérer, puis, au choix :
     - Dans le panneau <*Nom du profil*> **Rapports**, choisissez **Vue d’ensemble** pour afficher des informations sur le profil et ses affectations.

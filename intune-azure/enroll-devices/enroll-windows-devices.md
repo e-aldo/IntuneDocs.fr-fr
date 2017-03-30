@@ -5,7 +5,7 @@ description: "Version préliminaire  d’Intune Azure : activez la gestion des 
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ Pour configurer l’inscription pour les appareils Windows, utilisez l’une des
  -  Vous devez disposer d’Azure Active Directory Premium pour utiliser cette méthode. Sinon, utilisez la méthode d’inscription pour Windows 8.1 et Windows Phone 8.1.
  -  Si vous choisissez de ne pas activer l’inscription automatique, utilisez la méthode d’inscription pour Windows 8.1 et Windows Phone 8.1.
 
-- [**Inscription Windows 8.1 et Windows Phone 8.1 en configurant l’enregistrement CNAME**](#simplify-enrollment-by-configuring-cname)
+- [**Inscription sans inscription automatique d’Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
  - Vous devez utiliser cette méthode pour inscrire des appareils Windows 8.1 et Windows Phone 8.1.
- - Vous pouvez également utiliser cette méthode si vous n’avez pas de compte Azure Active Directory (AD) Premium.
-
-
-## <a name="prerequisites"></a>Conditions préalables
-
-Si certaines des conditions préalables suivantes ne sont pas encore dans la version préliminaire d’Intune Azure, vous devrez les exécuter à partir de la console d’administration Intune classique.
-
-- [Configurer un nom de domaine personnalisé](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Définir l’autorité de gestion des appareils mobiles](set-mdm-authority.md) sur **Microsoft Intune**
-- [Configurer l’application Portail d’entreprise](/intune-azure/manage-apps/company-portal-app.md)
-- Affecter des licences aux utilisateurs
+ - Vous pouvez utiliser cette méthode pour les appareils Windows 8.1 et versions ultérieures si vous ne souhaitez pas utiliser Azure Active Directory (AD) Premium.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Activer l’inscription des espaces de travail Windows
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Activer l’inscription Windows sans Azure AD Premium
 
 Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appareils sans passer par l’inscription automatique Azure AD Premium. Si vous créez des enregistrements de ressources CNAME DNS, les utilisateurs se connectent et s’inscrivent à Intune sans entrer un nom de serveur.
 
@@ -79,7 +69,7 @@ Vous pouvez permettre aux utilisateurs d’installer et d’inscrire leurs appar
 
     Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). Vous pouvez également diriger les utilisateurs vers la rubrique [Que voit mon administrateur informatique quand j’inscris mon appareil ?](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-    Pour plus d’informations sur les tâches de l’utilisateur final, consultez [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+    Pour plus d’informations sur les tâches de l’utilisateur final, consultez [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 
 Aucun travail supplémentaire n’est requis sauf si vous déployez le Portail d’entreprise sur les appareils.  Les étapes 2 et 3 dans la console d’administration peuvent être ignorées en toute sécurité.
 

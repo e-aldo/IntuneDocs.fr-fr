@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Utilisez la charge de travail **Configurer des appareils** de Microsoft Intune pour gérer les paramètres et fonctionnalités sur tous les appareils que vous gérez. Vous utiliserez généralement cette charge de travail pour créer des profils d’appareil qui vous permettent de gérer et contrôler tout un ensemble de fonctions et fonctionnalités différentes sur les appareils que vous gérez.
+Utilisez la charge de travail **Configuration de l’appareil** Microsoft Intune pour gérer les paramètres et fonctionnalités sur tous les appareils que vous gérez. Vous utiliserez généralement cette charge de travail pour créer des profils d’appareil qui vous permettent de gérer et contrôler tout un ensemble de fonctions et fonctionnalités différentes sur les appareils que vous gérez.
 
 Lorsque vous ouvrez cette charge de travail, vous verrez les options suivantes :
 
@@ -41,8 +41,13 @@ Le flux de travail pour la création de profils d’appareil est identique pour 
 
 Vous pouvez gérer les fonctionnalités suivantes sur vos appareils :
 
+## <a name="device-features"></a>Fonctionnalités de l’appareil
+
+Les fonctionnalités de l’appareil vous permettent de contrôler les fonctionnalités iOS et MacOS comme AirPrint, les notifications et les configurations d’appareils partagés.
+Pour plus d’informations, consultez [Configuration des paramètres de fonctionnalité de l’appareil](how-to-configure-device-features.md) Prend en charge : iOS et MacOS.
+
 ## <a name="device-restrictions"></a>Limites des appareils
-Les restrictions d’appareil vous permettent de contrôler un large éventail de paramètres et fonctionnalités que vous gérez sur diverses catégories, dont la sécurité, le navigateur, le matériel et les paramètres de partage de données. Par exemple, vous pouvez créer un profil de restriction d’appareil qui empêche les utilisateurs d’appareils iOS d’accéder à l’appareil photo.
+Les limites des appareils vous permettent de contrôler une grande variété de paramètres sur les appareils que vous gérez sur un large éventail de catégories, notamment la sécurité, le navigateur, le matériel et les paramètres de partage de données. Par exemple, vous pouvez créer un profil de restriction de l’appareil qui empêche les utilisateurs d’appareils iOS d’accéder à l’appareil photo.
 Pour plus d’informations, consultez [Guide pratique pour configurer des paramètres de restriction d’appareil](how-to-configure-device-restrictions.md) Prend en charge : Android, iOS, Mac OS, Windows 10 et Windows 10 Collaboration.
 
 ## <a name="email"></a>Courrier électronique
@@ -57,6 +62,10 @@ Pour plus d’informations, consultez [Guide pratique pour configurer des param�
 Les réseaux privés virtuels (ou VPN) donnent à vos utilisateurs un accès distant sécurisé à votre réseau d’entreprise. Les appareils utilisent un profil de connexion VPN pour établir une connexion avec le serveur VPN. Utilisez les profils VPN pour déployer des paramètres VPN sur les utilisateurs et appareils de votre organisation, afin qu’ils puissent se connecter au réseau facilement et en toute sécurité.
 Pour plus d'informations, consultez [Guide pratique pour configurer des paramètres VPN](how-to-configure-vpn-settings.md).
 Prend en charge : Android, iOS, Mac OS, Windows Phone 8.1, Windows 8.1 et Windows 10.
+
+## <a name="education"></a>Éducation
+Vous permet de configurer les options pour l’application Windows Take a Test. Lorsque vous configurez ces options, aucune autre application ne peut s’exécuter sur l’appareil tant que le test n’est pas terminé.
+Pour en savoir plus, voir [Configuration des paramètres d’éducation](how-to-configure-education-settings.md)
 
 ## <a name="certificates"></a>Certificats
 Ce type de profil permet de configurer des certificats de confiance, SCEP et PKCS qui peuvent être affectés aux appareils et utilisés pour authentifier le Wi-Fi, le VPN, et les profils de messagerie.

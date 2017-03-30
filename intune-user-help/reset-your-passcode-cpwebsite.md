@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
-ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,23 +48,23 @@ Pour réinitialiser votre code d’accès
 
   ![Bannière de réinitialisation du code secret avec son avertissement concernant la réinitialisation du code secret et la façon dont l’utilisateur sera déconnecté. Les boutons disponibles pour l’utilisateur sont Se déconnecter et Annuler.](./media/iwp-reset-passcode-popup.png)
 
-4.  Sélectionnez **Se déconnecter**. Un dernier message s’affiche, vous informant de la suppression du code secret de l’appareil. Si vous n’avez pas l’appareil avec vous, ne supprimez pas le code secret, car quiconque ayant un accès physique à l’appareil pourra accéder à la plupart des informations (personnelles ou professionnelles) contenues dans ce dernier.
+5.  Sélectionnez **Se déconnecter**. Un dernier message s’affiche, vous informant de la suppression du code secret de l’appareil. Si vous n’avez pas l’appareil avec vous, ne supprimez pas le code secret, car quiconque ayant un accès physique à l’appareil pourra accéder à la plupart des informations (personnelles ou professionnelles) contenues dans ce dernier.
 
   ![Deuxième bannière de réinitialisation du code secret avec son avertissement concernant la réinitialisation du code secret et la façon dont ce dernier sera supprimé de l’appareil. Elle indique également la façon recommandée de définir un nouveau code secret en accédant aux paramètres de l’appareil.](./media/iwp-reset-passcode-2nd-popup.png)
 
+  Les différents appareils ont différents types de code secret.
 
-Les types de codes secrets varient en fonction des appareils. Pour déterminer comment la réinitialisation de votre code secret peut affecter votre appareil spécifique, consultez le tableau ci-dessous. 
+  **Android** : supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres.
 
-    |Type d'appareil|Ce qui se produit lors de la réinitialisation|
-    |------------|-----------|
-    |Android|Supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres|
-    |iOS|Supprime le code secret existant et ne crée pas de code secret temporaire. Si vous utilisez le scanneur d’empreinte digitale Touch ID pour ouvrir votre appareil ou effectuer des achats, vous devrez le reconfigurer.|
-    |Windows 10 Mobile|Supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres. Si vous utilisez la reconnaissance faciale Windows Hello pour vous connecter, elle sera toujours prise en charge.|
-    |Windows Phone 8.1|Supprime le code secret existant et crée un code secret temporaire avec des chiffres.|
+  **iOS** : supprime le code secret existant et ne crée pas de code secret temporaire. Si vous utilisez le scanneur d’empreinte digitale Touch ID pour ouvrir votre appareil ou effectuer des achats, vous devrez le reconfigurer.
 
-    5.  Déverrouillez votre appareil et définissez un nouveau code secret, ou modifiez le code secret temporaire en accédant à **Paramètres** sur votre appareil.
+  **Windows 10 Mobile** : supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres. Si vous utilisez la reconnaissance faciale Windows Hello pour vous connecter, elle sera toujours prise en charge.
+    
+  **Windows Phone 8.1** : supprime le code secret existant et crée un code secret temporaire avec des chiffres.
 
-    Pour afficher une notification confirmant que votre code d’accès a été réinitialisé avec succès, cliquez sur l’indicateur de notification en haut à droite du site web du portail d’entreprise.
+6.  Déverrouillez votre appareil et définissez un nouveau code secret, ou modifiez le code secret temporaire en accédant à **Paramètres** sur votre appareil.
+
+Pour afficher une notification confirmant que votre code d’accès a été réinitialisé avec succès, cliquez sur l’indicateur de notification en haut à droite du site web du portail d’entreprise.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
 

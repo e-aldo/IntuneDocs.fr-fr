@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
-ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 786028412ca46d07e5180f469d07f9103f956033
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -44,7 +44,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
 4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de messagerie.

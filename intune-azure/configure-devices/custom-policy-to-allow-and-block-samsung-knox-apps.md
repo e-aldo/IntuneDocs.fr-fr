@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: f7680666ca466bd37711eeb363fe2c1f9d52e371
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: a47ea4c8d3027cb34fd8ecd8324fac52c9846a77
+ms.lasthandoff: 03/17/2017
 
 
 
@@ -35,7 +35,7 @@ Ces paramètres peuvent uniquement être utilisés par les appareils qui exécut
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 2. Dans le panneau de la liste des profils, sélectionnez **Créer un profil**.
 3. Dans le panneau **Créer un profil**, entrez un **nom** et éventuellement une **description** pour ce profil d'appareil.

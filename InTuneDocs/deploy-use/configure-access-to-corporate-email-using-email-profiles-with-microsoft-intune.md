@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
+ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -39,27 +39,21 @@ Vous pouvez utiliser des profils de messagerie pour configurer le client de mess
 -    Windows 10 (pour le bureau), Windows 10 Mobile et versions ultérieures
 -    iOS 8.0 et versions ultérieures
 -    Samsung KNOX Standard (4.0 et versions ultérieures)
--    Android for Work
-
->[!NOTE]
->Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store et prennent en charge les connexions à Exchange. Pour activer la connectivité d’e-mail, déployez une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié. Les applications de messagerie telles que Nine Work peuvent ne pas être gratuites. Vérifiez les détails de licence de l’application ou contactez le fabricant de l’application si vous avez des questions.
+-    Android for Work (applications de messagerie tierces, l’application de messagerie native repose uniquement sur un profil personnel)
 
 Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez configurer le volume d’e-mails à synchroniser et, en fonction du type d’appareil, les types de contenu à synchroniser.
 
->[!NOTE]
->
->Si l’utilisateur a installé un profil de messagerie avant de configurer un profil via Intune, le résultat du déploiement du profil de messagerie Intune dépend de la plateforme d’appareil :
+Si l’utilisateur a installé un profil de messagerie avant de configurer un profil via Intune, le résultat du déploiement du profil de messagerie Intune dépend de la plateforme d’appareil :
 
->**iOS** : Un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail et du nom d’hôte. Le profil de messagerie en double créé par l’utilisateur bloque le déploiement d’un profil créé par un administrateur Intune. Il s’agit d’un problème courant, car les utilisateurs iOS créent généralement un profil de messagerie, puis s’inscrivent. Le portail d’entreprise signale à l’utilisateur qu’il n’est pas conforme à cause de son profil de messagerie configuré manuellement, et invite l’utilisateur à supprimer ce profil. L’utilisateur doit supprimer son profil de messagerie pour que le profil Intune puisse être configuré. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire avant d’installer le profil de messagerie et d’autoriser Intune à configurer le profil.
+**iOS**<br>Un profil de messagerie en double existant est détecté en fonction du nom d’hôte et de l’adresse e-mail. Le profil de messagerie en double créé par l’utilisateur bloque le déploiement d’un profil créé par un administrateur Intune. Il s’agit d’un problème courant, car les utilisateurs iOS créent généralement un profil de messagerie, puis s’inscrivent. Le portail d’entreprise signale à l’utilisateur qu’il n’est pas conforme à cause de son profil de messagerie configuré manuellement, et invite l’utilisateur à supprimer ce profil. L’utilisateur doit supprimer son profil de messagerie pour que le profil Intune puisse être configuré. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire avant d’installer le profil de messagerie et d’autoriser Intune à configurer le profil.
 
->**Windows** : Un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail et du nom d’hôte. Intune remplace le profil de messagerie existant créé par l’utilisateur.
+**Windows**<br>Un profil de messagerie en double existant est détecté en fonction du nom d’hôte et de l’adresse e-mail. Intune remplace le profil de messagerie existant créé par l’utilisateur.
 
->**Samsung KNOX** : Un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail, et est remplacé par le profil Intune. Si l’utilisateur configure ce compte, il est remplacé à nouveau par le profil Intune. Notez que cela peut entraîner une certaine confusion pour l’utilisateur.
+**Samsung KNOX**<br>Un profil de messagerie en double existant est détecté en fonction de l’adresse e-mail et le remplace par le profil Intune. Si l’utilisateur configure ce compte, il est remplacé à nouveau par le profil Intune. Notez que cela peut entraîner une certaine confusion pour l’utilisateur.
 
->Étant donné que Samsung KNOX n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à utiliser à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
+Étant donné que Samsung KNOX n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à utiliser à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
 
->**Android for Work** : le profil Intune est appliqué uniquement à des applications de messagerie spécifiques du profil professionnel de l’appareil et n’affecte pas la configuration de messagerie sur le profil utilisateur de l’appareil.
-
+**Android for Work**<br>Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store, s’installent dans le profil de travail de l’appareil, et prennent en charge les connexions à Exchange. Pour activer la connectivité d’e-mail, déployez une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié. Les applications de messagerie telles que Nine Work peuvent ne pas être gratuites. Vérifiez les détails de licence de l’application ou contactez le fabricant de l’application si vous avez des questions.
 
 ## <a name="secure-email-profiles"></a>Profils de messagerie sécurisés
 Vous pouvez sécuriser les profils de messagerie à l’aide d’un certificat ou d’un mot de passe.

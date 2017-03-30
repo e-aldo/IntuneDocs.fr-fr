@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 464b9b60e9e8a5cb3e195bbec88d496eb4dc9ecf
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -60,10 +60,10 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 
     ![Écran de configuration de l’accès à l’entreprise](./media/and-enroll-4a-comp-access-setup.png)
 
-> [!NOTE]
-> Les triangles jaunes ne signifient pas que vous avez déjà rencontré une erreur. Ces icônes indiquent qu’il existe toujours des étapes à effectuer dans le processus d’inscription.
+    > [!NOTE]
+    > Les triangles jaunes ne signifient pas que vous avez déjà rencontré une erreur. Ces icônes indiquent qu’il existe toujours des étapes à effectuer dans le processus d’inscription.
 
-7.  Dans l’écran **Pourquoi inscrire votre appareil ?**, découvrez ce que vous pouvez faire une fois votre appareil inscrit, puis appuyez sur **Continuer**.
+7. Dans l’écran **Pourquoi inscrire votre appareil ?**, découvrez ce que vous pouvez faire une fois votre appareil inscrit, puis appuyez sur **Continuer**.
 
     ![Pourquoi inscrire votre appareil ?](./media/and-enroll-4b-why-enroll.png)
 
@@ -90,13 +90,19 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Si ce message s’affiche, appuyez sur **Autoriser** Vous pouvez appuyer sur AUTORISER sans risques car **Microsoft n’accède jamais à vos contacts**. Google contrôle le texte du message et Microsoft ne peut pas le modifier. Quand vous autorisez l’accès, l’application Portail d’entreprise est uniquement autorisée à créer, utiliser et gérer votre compte professionnel.
+        Si ce message s’affiche, appuyez sur **Autoriser** Vous pouvez appuyer sur AUTORISER sans risques car **Microsoft n’accède jamais à vos contacts**. Google contrôle le texte du message et Microsoft ne peut pas le modifier. Quand vous autorisez l’accès, l’application Portail d’entreprise est uniquement autorisée à créer, utiliser et gérer votre compte professionnel.
 
-    Si vous refusez l’accès, le message apparaît la prochaine fois que vous vous connectez à l’application Portail d’entreprise, mais vous pouvez désactiver les futurs messages en cochant la case **Ne plus poser la question**. Si vous décidez ensuite d’autoriser l’accès, accédez à **Paramètres** &gt; **Applications** &gt; **Portail d’entreprise** &gt; **Autorisations** &gt; **Téléphone**, puis activer l’autorisation.
+        Si vous refusez l’accès, le message apparaît la prochaine fois que vous vous connectez à l’application Portail d’entreprise, mais vous pouvez désactiver les futurs messages en cochant la case **Ne plus poser la question**. Si vous décidez ensuite d’autoriser l’accès, accédez à **Paramètres** &gt; **Applications** &gt; **Portail d’entreprise** &gt; **Autorisations** &gt; **Téléphone**, puis activer l’autorisation.
 
 11.  Dans l’écran **Activer l’administrateur d’appareils**, cliquez sur **Activer**.
 
     ![Écran Activer l’administrateur d’appareils](./media/and-enroll-5-activate.png)
+
+    Le rôle d’administrateur d’appareils est un rôle dont le portail d’entreprise a besoin pour gérer votre appareil. Il permet à votre administrateur d’afficher certaines informations, notamment le nombre de fois que vous avez essayé de déverrouiller l’écran, et d’effectuer certaines actions.
+
+    Il est important de noter que ces actions sont effectuées au nom de la sécurité. Votre administrateur informatique n’essaie pas de violer votre vie privée ou d’effacer vos informations sans raison, mais il veut s’assurer que les données d’entreprise sont conservées en toute sécurité.
+
+    Microsoft ne contrôle pas ce message, et nous sommes conscients que sa formulation peut sembler quelque peu radicale. Il n’existe pas de moyen pour le portail d’entreprise d’afficher uniquement les restrictions et les informations d’accès pertinentes pour votre organisation. Toutes ces autorisations sont accordées simultanément dans cet écran. Contactez votre administrateur informatique pour plus d’informations sur l’utilisation des informations de contact sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com) si vous avez des questions spécifiques concernant votre propre utilisation.
 
 12.  Suivez les invites pour entrer un code confidentiel ou un mot de passe. Si vous avez déjà configuré un code confidentiel ou un mot de passe sur cet appareil, cet écran ne s’affiche pas ou vous n’êtes pas invité à entrer un nouveau code confidentiel ou mot de passe.
 
@@ -108,21 +114,21 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 
     Cet écran montre que votre appareil est en cours d’inscription.
 
-      ![Écran Inscription de l’appareil](./media/and-enroll-8-device-enrolling.png)
+    ![Écran Inscription de l’appareil](./media/and-enroll-8-device-enrolling.png)
 
 14. Quand l’écran **Configuration de l’accès à l’entreprise** s’affiche, appuyez sur **CONTINUER**. Si un message indique que votre appareil n’est pas conforme, suivez les instructions pour résoudre le problème, puis appuyez sur **CONTINUER**.
 
-  ![L’appareil n’est pas conforme mais il est inscrit](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![L’appareil n’est pas conforme mais il est inscrit](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![Les problèmes de conformité de l’appareil devant être corrigés s’affichent](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Les problèmes de conformité de l’appareil devant être corrigés s’affichent](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-Vous trouverez plus d’informations sur les problèmes en appuyant dessus. 
+    Vous trouverez plus d’informations sur les problèmes en appuyant dessus.
 
-  ![Problèmes de conformité des appareils développés](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Problèmes de conformité des appareils développés](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-    ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+    ![Écran de configuration de l’accès à l’entreprise](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. Dans l’écran **Fin de la configuration de l’accès à l’entreprise**, appuyez sur **TERMINÉ**. Votre appareil est maintenant inscrit.
+15. Dans l’écran **Fin de la configuration de l’accès à l’entreprise**, appuyez sur **TERMINÉ**. Votre appareil est maintenant inscrit.
 
     ![Écran Configuration de l’accès à l’entreprise terminée](./media/and-enroll-10-comp-access-setup-complete.png)
 

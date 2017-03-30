@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: cc9ef6777f06aca5ef93154c38e12520ab9ed348
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -39,6 +39,7 @@ ms.lasthandoff: 02/18/2017
     - **Plateforme** : sélectionnez le type de plateforme pour le profil que vous souhaitez créer.
     - **Type de profil** : sélectionnez le type de profil que vous souhaitez créer. La liste des types disponibles varie selon la plateforme que vous avez choisie.
     - **Paramètres** : consultez les rubriques suivantes pour plus d’informations sur les paramètres pour chaque type de profil :
+        -  [Paramètres de fonctionnalité d’appareil](/intune-azure/configure-devices/how-to-configure-device-features)
         -  [Paramètres de restriction d'appareil](/intune-azure/configure-devices/how-to-configure-device-restrictions)
         -  [Paramètres de courrier électronique](/intune-azure/configure-devices/how-to-configure-email-settings)
         -  [Paramètres VPN](/intune-azure/configure-devices/how-to-configure-vpn-settings)
@@ -46,7 +47,7 @@ ms.lasthandoff: 02/18/2017
         -  [Paramètres de mise à niveau Windows 10](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
         -  [Paramètres de certificat](/intune-azure/configure-devices/how-to-configure-certificates)
         -  [Paramètres de Windows Information Protection](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [Paramètres de formation](/intune-azure/configure-devices/education-settings-for-ios.md)
+        -  [Paramètres de formation](/intune-azure/configure-devices/how-to-configure-education-settings)
         -  [Paramètres personnalisés](/intune-azure/configure-devices/how-to-configure-custom-settings)
 
     ![Créer un profil d’appareil](./media/create-device-profile.png)

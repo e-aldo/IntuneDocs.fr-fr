@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: 1e501c1a94a44c677569b8b85be7704844587694
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -33,7 +33,7 @@ Si vous obtenez des erreurs sur votre appareil iOS pendant que vous utilisez l�
 
 -   Dans l’écran **À propos de** de l’application Portail d’entreprise, appuyez sur **Envoyer un rapport de diagnostic**.
 
--   Sur l’application du portail d’entreprise, secouez votre appareil, puis appuyez sur **E-mail** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** > **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
+-   Sur l’application du portail d’entreprise, secouez votre appareil, puis appuyez sur **Envoyer un rapport de diagnostic** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** > **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
 
 Si vous rencontrez des difficultés avec cette façon d’envoyer des journaux, vous pouvez également essayer d’[envoyer des journaux d’administration par e-mail](send-logs-to-your-it-admin-by-email-iOS.md).
 

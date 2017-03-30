@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ Si un appareil iOS a été volé ou perdu, vous pouvez activer le mode Perdu. Ce
 2.    Dans le panneau **Mode Perdu**, activez le mode Perdu, entrez le message qui s’affiche et éventuellement un numéro de téléphone de contact.
 3.    Cliquez sur **OK**.
 Lorsque vous activez le mode Perdu, vous bloquez l’utilisation de l’appareil. L’utilisateur final ne peut pas accéder à l’appareil tant que vous n’avez pas désactivé le mode Perdu. Quand le mode Perdu est activé, vous pouvez utiliser l’action **Localiser l’appareil** pour rechercher l’emplacement de l’appareil.
+Pour utiliser le mode Perdu, l’appareil doit être un appareil iOS d’entreprise, inscrit via le programme DEP, qui est en mode supervisé.
 
 ### <a name="locate-device"></a>**Localiser l’appareil**
-Utilisez cette action à distance pour afficher l’emplacement d’un appareil iOS perdu ou volé sur une carte. L’appareil doit être un appareil iOS d’entreprise qui est en mode supervisé. Avant que vous puissiez utiliser cette action, l’appareil doit être configuré en mode Perdu.
+Utilisez cette action à distance pour afficher l’emplacement d’un appareil iOS perdu ou volé sur une carte. L’appareil doit être un appareil iOS d’entreprise, inscrit via le programme DEP, qui est en mode supervisé. Avant que vous puissiez utiliser cette action, l’appareil doit être configuré en mode Perdu.
 1.    Dans le volet Propriétés d’un appareil iOS, choisissez **Plus** > **Localiser l’appareil**.
 2.    Une fois que l’appareil a été localisé, son emplacement s’affiche dans le panneau **Localiser l’appareil**. 
     ![Panneau Localiser l’appareil](./media/locate-device.png)

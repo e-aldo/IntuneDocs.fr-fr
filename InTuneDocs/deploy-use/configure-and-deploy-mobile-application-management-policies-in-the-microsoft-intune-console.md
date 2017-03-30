@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -140,7 +140,7 @@ Une fois que vous avez vérifié que l’application a été chargée correcteme
     |**Exiger la conformité à la stratégie d'entreprise pour l'accès**|Ce paramètre autorise l’utilisation de l’application uniquement si l’appareil n’est pas jailbreaké ou rooté.|
     |**Revérifier les exigences d'accès après (minutes)**|Dans le champ **Délai** , indiquez le délai au bout duquel les conditions d’accès à l’application sont revérifiées une fois l’application ouverte.|
     |**Période de grâce hors connexion**|Si l'appareil est hors connexion, spécifiez le délai au bout duquel les conditions d'accès pour l'application sont revérifiées.|
-    |**Chiffrer les données de l'application**|Ce paramètre spécifie que toutes les données associées à cette application seront chiffrées. Cela inclut les données stockées en externe, comme par exemple les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil que fournit le système d’exploitation. Cette option est activée via une stratégie de code confidentiel d’appareil que définit l’administrateur informatique. Quand un code confidentiel est exigé, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules qu’utilise iOS sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, Microsoft fournit le chiffrement. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier.  Le contenu sur le stockage de l'appareil est toujours chiffré. La méthode de chiffrement n'est pas certifiée FIPS 140-2.|
+    |**Chiffrer les données de l'application**|Ce paramètre spécifie que toutes les données associées à cette application seront chiffrées. Cela inclut les données stockées en externe, comme par exemple les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil que fournit le système d’exploitation. Cette option est activée via une stratégie de code confidentiel d’appareil que définit l’administrateur informatique. Quand un code confidentiel est exigé, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules qu’utilise iOS sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, Microsoft fournit le chiffrement. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier.  Le contenu sur le stockage de l'appareil est toujours chiffré. La méthode de chiffrement est la norme FIPS 140-2 compatible uniquement avec les appareils Samsung KNOX.|
     |**Bloquer la capture d'écran** (appareils Android uniquement)|Ce paramètre spécifie que les fonctionnalités de capture d’écran de l’appareil sont bloquées quand une personne utilise cette application.|
 
 4. Quand vous avez terminé, choisissez **Enregistrer la stratégie**.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 0cf638348df2f01d70c0765a4932abc3eb801f23
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 2c79f5f796152e930c4a952388541383ab50e595
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -41,7 +41,7 @@ Une fois que vous avez déployé la stratégie sur votre appareil Android ou vos
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 2. Dans le panneau de la liste des profils, sélectionnez **Créer un profil**.
 3. Dans le panneau **Créer un profil**, entrez un **nom** et éventuellement une **description** pour le profil VPN.
@@ -55,7 +55,7 @@ Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante. Par
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau de profils, cliquez sur **Créer un profil**.
 4. Dans le panneau **Créer un profil**, saisissez un **Nom** et une **Description** pour votre profil personnalisé.
@@ -65,7 +65,7 @@ Notez le nom du profil VPN pour pouvoir l’utiliser à l’étape suivante. Par
 3. Dans le panneau **Paramètres OMA-URI personnalisés**, choisissez **Ajouter**.
     - Entrez un nom de paramètre.
     - Pour **Type de données**, spécifiez **Chaîne**.
-    - Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/PackageList**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans cet exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/PackageList**.
+    - Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/PackageList**, où*Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans cet exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/PackageList**.
     - Pour **Valeur**, créez une liste délimitée par des points-virgules des packages à associer au profil. Par exemple, si vous souhaitez qu’Excel et le navigateur Google Chrome utilisent la connexion VPN, entrez : **com.microsoft.office.excel;com.android.chrome**.
 
 ![Exemple de stratégie personnalisée de VPN par application Android](./media/android_per_app_vpn_oma_uri.png)
@@ -76,7 +76,7 @@ Vous pouvez également utiliser la valeur **WHITELIST** pour spécifier une list
   1.    Dans le panneau **Paramètres OMA-URI personnalisés**, choisissez **Ajouter**.
   2.    Entrez un nom de paramètre.
   3.    Pour **Type de données**, spécifiez **Chaîne**.
-  4.    Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/Mode**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/Mode**.
+  4.    Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/Mode**, où*Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/Mode**.
   5.    Pour **Valeur**, entrez **BLACKLIST** ou **WHITELIST**.
 
 
