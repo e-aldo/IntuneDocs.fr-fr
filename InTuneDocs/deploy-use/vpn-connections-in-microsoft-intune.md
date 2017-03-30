@@ -163,7 +163,7 @@ Vous pouvez configurer un VPN à la demande pour les appareils iOS 8.0 et versi
 1. Dans la page de configuration de la stratégie, recherchez **Règles à la demande pour cette connexion VPN**. Les colonnes sont intitulées **Correspondance** (condition vérifiée par les règles) et **Action** (action déclenchée par la stratégie quand la condition est remplie).
 2. Choisissez **Ajouter** pour créer une règle. Vous pouvez configurer deux types de correspondances dans la règle. Vous ne pouvez configurer qu’un de ces types par règle.
   - **SSID**, qui font référence aux réseaux sans fil.
-  - **Domaines de recherche DNS**.  Vous pouvez utiliser des noms de domaine complets, tels que *team.corp.contoso.com*, ou des domaines tels que *contoso.com*, ce qui revient à utiliser * *.contoso.com*.
+  - **Domaines de recherche DNS**.  Vous pouvez utiliser des noms de domaine complets, tels que *team.corp.contoso.com*, ou des domaines tels que *contoso.com*, ce qui revient à utiliser **.contoso.com*.
 3. Facultatif : fournissez une sonde de chaîne d’URL, qui est une URL que la règle utilise comme test. Si l’appareil sur lequel ce profil est installé peut accéder à cette URL sans redirection, la connexion VPN est établie et l’appareil se connecte à l’URL cible. L’utilisateur ne voit pas le site de la sonde de chaîne d’URL. Par exemple, une sonde de chaîne d’URL peut être l’adresse d’un serveur web d’audit qui vérifie la compatibilité de l’appareil avant la connexion du VPN. Autre exemple, l’URL teste la capacité du VPN à se connecter à un site avant de connecter l’appareil à l’URL cible via le VPN.
 4. Choisissez une des actions suivantes :
   - **Se connecter**
