@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 Votre organisation peut utiliser un logiciel de gestion des dépenses de télécommunications pour garantir l’utilisation de ses forfaits de données et d’appels vocaux dans des limites acceptables. Une fois que vous aurez fini d’inscrire votre appareil, vous serez invité à sélectionner la catégorie qui lui convient le mieux.
 
-  ![Capture de l’écran de sélection de la catégorie adaptée à un appareil iOS permettant de choisir entre une inscription d’entreprise et une inscription personnelle](./media/and-enroll-11-tem-select-best-category.png)
+![Capture de l’écran de sélection de la catégorie adaptée à un appareil iOS permettant de choisir entre une inscription d’entreprise et une inscription personnelle](./media/and-enroll-11-tem-select-best-category.png)
 
 1. Sélectionnez l’option appropriée. Vous recevrez alors une notification vous invitant à installer l’application [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) à partir de Google Play Store. L’application Datalert permet à votre organisation de mesurer sa consommation des données. Appuyez sur la flèche __Suivant__ dans le coin supérieur droit de l’écran pour continuer.
 

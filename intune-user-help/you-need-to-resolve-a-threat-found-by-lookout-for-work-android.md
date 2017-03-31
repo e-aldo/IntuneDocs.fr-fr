@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: e60b049e9dd137993d38b822f6268419a27bdc2a
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -35,7 +35,7 @@ Pour résoudre ce problème, ouvrez l’application Lookout for Work et suivez l
 
 Si un virus ou une autre menace de sécurité est présent sur votre appareil inscrit et que vous essayez d’accéder aux e-mails ou fichiers de votre entreprise, vous pouvez voir un message comme celui-ci :
 
-![Message d’erreur Lookout for Work avec un lien vers le site web du Portail d’entreprise](./media/lookout-go-to-device-management-portal-android.png)
+![Message d’erreur Lookout for Work avec un lien vers le site web du Portail d’entreprise](./media/mtd-go-to-device-management-portal-android.png)
 
 Appuyez sur le lien **portail de gestion des appareils** pour accéder au [site web du Portail d’entreprise](http://portal.manage.microsoft.com), où vous pouvez obtenir des instructions sur la façon de résoudre le problème.
 

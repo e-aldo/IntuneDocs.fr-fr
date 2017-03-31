@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 6157cef87c5cdad6d0e293946321fa8bdf18e61a
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -31,24 +31,23 @@ Pour pouvoir accéder à vos ressources de travail, votre administrateur informa
 
 1.    Si vous voyez l’invite suivante, appuyez sur **Installer** pour autoriser l’installation de Lookout for Work sur votre appareil.
 
-    ![Appuyer sur Installer pour installer Lookout for Work](./media/ios-lfw-install-app-request.png)
+  ![Appuyer sur Installer pour installer Lookout for Work](./media/ios-mtd-install-app-request.png)
 
 2. Quand vous voyez le message suivant, appuyez sur **Paramètres**, activez **Services de localisation**, puis cliquez sur **Continuer**.
 
-    ![Appuyer sur Paramètres, puis sur Services de localisation](./media/ios-lfw-allow-location-services.png)
+  ![Appuyer sur Paramètres, puis sur Services de localisation](./media/ios-lfw-allow-location-services.png)
 
 3. Passez en revue les autorisations dont Lookout for Work a besoin, puis appuyez sur **Continuer**.
 
-    ![vous êtes maintenant connecté à Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
+  ![vous êtes maintenant connecté à Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. À l’invite vous demandant d’autoriser Lookout for Work à vous envoyer des notifications, appuyez sur **Autoriser**.
 
-    ![Appuyer sur Paramètres, puis sur Services de localisation](./media/ios-lfw-allow-notifications.png)
-
+  ![Appuyer sur Paramètres, puis sur Services de localisation](./media/ios-lfw-allow-notifications.png)
 
 Lookout for Work termine son installation, et vous voyez l’écran suivant si aucune menace de sécurité n’est détectée sur votre appareil.
 
-![Lookout for Work n’a détecté aucune menace de sécurité](./media/ios-lfw-no-threats-found.png)
+  ![Lookout for Work n’a détecté aucune menace de sécurité](./media/ios-lfw-no-threats-found.png)
 
 Si Lookout for Work détecte une menace de sécurité sur votre appareil, il affiche des instructions pour résoudre le problème.
 
