@@ -2,8 +2,8 @@
 title: "Applications iOS avec stratégies de protection d’application | Microsoft Docs"
 description: "Cet article décrit ce qui se produit lorsque votre application iOS est gérée par des stratégies de protection d’application."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
