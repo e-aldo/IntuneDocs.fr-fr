@@ -154,7 +154,8 @@ Vous pouvez déployer manuellement l’application Portail d’entreprise Window
 2. Une fois que l’application a été acquise, sélectionnez l’application dans la page **Inventorier**.  
 3. Sélectionnez **Tous les appareils Windows 10** comme **plateforme**, puis l’**architecture** appropriée et procédez au téléchargement. Un fichier de licence d’application n’est pas nécessaire pour cette application.
 ![Image de tous les appareils Windows 10 et des détails du package d’architecture X86 à télécharger](../media/Win10CP-all-devices.png)
-4. Téléchargez tous les packages sous « Infrastructures requises ». Vous devez effectuer cette opération pour les architectures x86, x64 et ARM, soit un total de 9 packages, comme indiqué ci-dessous.  
+4. Téléchargez tous les packages sous « Infrastructures requises ». Vous devez effectuer cette opération pour les architectures x86, x64 et ARM, soit un total de 9 packages, comme indiqué ci-dessous.
+
 ![Image des fichiers de dépendance à télécharger ](../media/Win10CP-dependent-files.png)
 5. Avant de charger l’application Portail d’entreprise dans Intune, créez un dossier (par exemple, C:/Portail Entreprise) avec les packages structurés de la manière suivante :
   1. Placez le package Portail d’entreprise dans C:\Portail Entreprise. Créez un sous-dossier Dépendances dans cet emplacement également.  
