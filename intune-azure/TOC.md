@@ -1,5 +1,6 @@
 # Introduction
 ## [Qu’est-ce que la préversion du portail Azure ?](introduction/what-is-microsoft-intune.md)
+## [Fonctionnalités d’Intune dans Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Prise en main
 <!---(introduction/get-started.md) --->
 ### [S’inscrire à une évaluation gratuite](introduction/sign-up-free-trial-microsoft-intune.md)
