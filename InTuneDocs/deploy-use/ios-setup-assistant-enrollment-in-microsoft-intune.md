@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -85,7 +85,7 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Ajouter des appareils iOS à inscrire avec l’Assistant Configuration
 
-1. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), accédez à **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils d’entreprise** &gt; **Tous les appareils**, puis choisissez **Ajouter des appareils**. 
+1. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), accédez à **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils d’entreprise** &gt; **Tous les appareils**, puis choisissez **Ajouter des appareils**.
 
    Vous pouvez ajouter des appareils de deux manières :
 
@@ -107,13 +107,13 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
   -  **Ajouter manuellement les détails des appareils** &mdash; Entrez le numéro de série et des remarques ou détails pour 15 appareils au maximum.
 
-  Dans le panneau **Passer en revue les appareils**, vous pouvez vérifier les numéros de série. Vous pouvez également décider s’il faut remplacer les **Détails** des numéros de série réimportés, ou vous pouvez décocher la case **Remplacer** pour conserver les détails actuels. 
+  Dans le panneau **Passer en revue les appareils**, vous pouvez vérifier les numéros de série. Vous pouvez également décider s’il faut remplacer les **Détails** des numéros de série réimportés, ou vous pouvez décocher la case **Remplacer** pour conserver les détails actuels.
 
-> [!NOTE] 
+> [!NOTE]
 > Dans la console Administrateur Intune, les administrateurs peuvent accepter les détails associés à partir d’un fichier CSV chargé et remplacer les détails existants de chaque numéro de série. Dans le nouveau portail Azure, vous pouvez uniquement remplacer les détails de tous les numéros de série ou ignorer les nouveaux détails de tous les numéros de série.
 
-  > [!NOTE]
-  > Si, par la suite, vous voulez supprimer des appareils d’entreprise de la gestion Intune, vous devrez peut-être accéder au groupe d’appareils **Par numéro de série iOS** sous **Appareils d’entreprise préinscrits** et supprimer le numéro de série des appareils dans Intune pour désactiver leur inscription. Si Intune effectue une procédure de récupération d’urgence pendant que vous supprimez des numéros de série ou aux environs de cette période, vous devez vérifier que seuls les numéros de série des appareils actifs sont présents dans ce groupe.
+> [!NOTE]
+> Si, par la suite, vous voulez supprimer des appareils d’entreprise de la gestion Intune, vous devrez peut-être accéder au groupe d’appareils **Par numéro de série iOS** sous **Appareils d’entreprise préinscrits** et supprimer le numéro de série des appareils dans Intune pour désactiver leur inscription. Si Intune effectue une procédure de récupération d’urgence pendant que vous supprimez des numéros de série ou aux environs de cette période, vous devez vérifier que seuls les numéros de série des appareils actifs sont présents dans ce groupe.
 
 2. Choisissez **Suivant**.
 
@@ -128,23 +128,22 @@ Spécifiez le profil à attribuer aux appareils ajoutés de la liste des profils
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Exporter un profil à déployer sur des appareils iOS
 
-1. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com) accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis sélectionnez le profil d’appareil à déployer sur les appareils mobiles. 
+1. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com) accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis sélectionnez le profil d’appareil à déployer sur les appareils mobiles.
 
 2. Choisissez **Exporter** dans la barre des tâches. Copiez et enregistrez la valeur **URL de profil**. Vous la chargerez dans Apple Configurator plus tard pour définir le profil Intune utilisé par les appareils iOS.
 
   Vous devez modifier l’URL du profil 2.0 pour prendre en charge Apple Configurator 2. Pour cela, remplacez ce code :
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    Par celui-ci :
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  Par celui-ci :
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    Vous allez télécharger l’URL de ce profil sur le service Apple DEP avec Apple Configurator au cours de la procédure suivante pour définir le profil Intune utilisé par les appareils iOS.
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>Préparer l’appareil avec Apple Configurator
 
@@ -180,9 +179,10 @@ Les appareils iOS sont connectés à l'ordinateur Mac et inscrits pour la gestio
 
 ### <a name="distribute-devices"></a>Distribuer des appareils
 
-Les appareils sont désormais prêts pour l'inscription d'entreprise. 
+Les appareils sont désormais prêts pour l'inscription d'entreprise. Éteignez les appareils et distribuez-les aux utilisateurs. Quand les utilisateurs allument leur appareil, l’Assistant Configuration démarre.
 
-Éteignez les appareils et distribuez-les aux utilisateurs. Quand les utilisateurs allument leur appareil, l’Assistant Configuration démarre.
+>[!NOTE]
+>Si un utilisateur tente d’inscrire un appareil inscrit au programme DEP, mais a dépassé le nombre limite d’appareils pouvant être inscrits, l’inscription échoue en mode silencieux, sans qu’il en soit averti.
 
 
 ### <a name="see-also"></a>Voir aussi

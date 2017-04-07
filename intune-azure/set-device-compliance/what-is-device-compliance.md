@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -87,6 +87,12 @@ Si vous utilisiez la console d’administration Intune classique, notez les diff
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migration depuis la console classique Intune vers le portail en préversion Azure Intune
+
+Les stratégies de conformité d’appareils créées dans la [console Intune classique](https://manage.microsoft.com) n’apparaissent pas dans le nouveau [portail Intune](https://portal.azure.com). Toutefois, elles continuent de cibler des utilisateurs et peuvent être gérées via la console classique Intune.
+
+Si vous souhaitez tirer parti des nouvelles fonctionnalités liées à la conformité des appareils dans le portail Intune Azure, vous devez créer des stratégies de conformité sur le portail lui-même. Si, dans le portail Intune Azure, vous affectez une nouvelle stratégie de conformité des appareils à un utilisateur déjà associé à une stratégie de ce type dans le portail Intune classique, les stratégies du portail Intune Azure sont prioritaires par rapport à celles qui sont créées depuis la console Intune classique.
 
 ##  <a name="next-steps"></a>Étapes suivantes
 

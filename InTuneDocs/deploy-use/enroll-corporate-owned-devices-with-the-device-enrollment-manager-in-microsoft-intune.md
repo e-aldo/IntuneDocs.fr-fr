@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
-ms.lasthandoff: 02/04/2017
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareil
 Les utilisateurs doivent figurer dans le portail Azure pour être ajoutés comme gestionnaires d’inscription d’appareil. Pour une sécurité optimale, l’utilisateur du gestionnaire d’inscription d’appareil ne doit pas être également un administrateur Intune.
 
 >[!NOTE]
->La méthode d’inscription via le gestionnaire d’inscription d’appareil ne peut pas être utilisée avec l’[Assistant de configuration Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou [inscription directe](ios-direct-enrollment-in-microsoft-intune.md), ni avec la [méthode d’inscription DEP](ios-device-enrollment-program-in-microsoft-intune.md). 
+>La méthode d’inscription via le gestionnaire d’inscription d’appareil ne peut pas être utilisée avec l’[Assistant de configuration Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou [inscription directe](ios-direct-enrollment-in-microsoft-intune.md), ni avec la [méthode d’inscription DEP](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemple d’un scénario faisant intervenir un gestionnaire d’inscription d’appareil
 
@@ -42,9 +42,9 @@ Seuls les utilisateurs existants dans la console Intune peuvent être gestionnai
 
 L’utilisateur du gestionnaire d’inscription d’appareil peut :
 
--   Inscrire jusqu’à 1 000 appareils dans Intune.
--   Se connecter au Portail d’entreprise pour obtenir des applications d’entreprise
--   Configurer l’accès aux données de l’entreprise en déployant des applications spécifiques aux rôles sur les tablettes.
+-   Inscrire jusqu’à 1 000 appareils dans Intune
+-   Accéder au portail d’entreprise pour obtenir des applications d’entreprise
+-   Configurer l’accès aux données de l’entreprise en déployant des applications spécifiques aux rôles sur les tablettes
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Limitations des appareils qui sont inscrits avec un compte de gestionnaire d’inscription d’appareil
 
@@ -57,9 +57,9 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
   - L’utilisateur du gestionnaire d’inscription d’appareil ne peut pas annuler l’inscription des appareils inscrits auprès du gestionnaire d’inscription d’appareil sur l’appareil lui-même à l’aide du portail d’entreprise. L’administrateur Intune a cette capacité, mais pas l’utilisateur du gestionnaire d’inscription d’appareil.
 
   - Seul l’appareil local s’affiche dans l’application Portail d’entreprise ou le site web.
- 
+
   - Les utilisateurs ne peuvent pas utiliser les applications du programme d’achat en volume (VPP) Apple en raison des critères des identifiants Apple par utilisateur pour la gestion des applications.
- 
+
   - (iOS uniquement) Si vous utilisez le gestionnaire d’inscription d’appareil pour inscrire des appareils iOS, vous ne pouvez pas utiliser Apple Configurator ni le programme d’inscription des appareils Apple pour inscrire des appareils.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
 
 4.  Choisissez **Ajouter...** La boîte de dialogue **Ajouter un gestionnaire d'inscription d'appareil** s'ouvre.
 
-5.  Entrez l’**ID d’utilisateur** du compte Intune, puis choisissez **OK**. 
+5.  Entrez l’**ID d’utilisateur** du compte Intune, puis choisissez **OK**.
 
     À présent, l’utilisateur du gestionnaire d’inscription d’appareil peut inscrire des appareils mobiles en suivant la même procédure qu’un utilisateur final pour un scénario BYOD dans le portail d’entreprise. L’utilisateur final du gestionnaire peut installer l’application Portail d’entreprise et inscrire l’appareil à l’aide de ses informations d’identification DEM sur 1 000 appareils au maximum. Pour connaître les étapes d’inscription de l’utilisateur final pour chaque plateforme, consultez :
 

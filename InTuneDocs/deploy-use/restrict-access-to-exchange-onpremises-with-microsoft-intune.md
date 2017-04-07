@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -81,11 +81,12 @@ Les éléments suivants sont pris en charge :
 -   Application de messagerie native sur iOS.
 
 -   Clients de messagerie Exchange ActiveSync, comme Gmail sur Android 4 ou ultérieur.
-- Clients de messagerie Exchange ActiveSync sur les **appareils Android for Work :** seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne avec Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer ces applications comme installation obligatoire. 
+-   Clients de messagerie Exchange ActiveSync sur les **appareils Android for Work :** seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne avec Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer ces applications comme installation obligatoire. 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge.
 
 ## <a name="support-for-pcs"></a>Prise en charge des PC
@@ -111,14 +112,12 @@ Les éléments suivants sont pris en charge :
   - **Exceptions de plateforme** : Choisissez **Ajouter une règle** pour configurer une règle qui définit des niveaux d’accès pour les familles et modèles d’appareils mobiles spécifiés. Étant donné que ces appareils peuvent être de n’importe quel type, vous pouvez également configurer des types d’appareils non pris en charge par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Règle par défaut** : Si vous avez un appareil qui n’est pas couvert par d’autres règles, vous pouvez choisir de l’autoriser à accéder à Exchange, de le bloquer ou de le mettre en quarantaine. Quand vous définissez la règle de façon à autoriser l’accès aux appareils inscrits et conformes, l’accès à la messagerie est accordé automatiquement aux appareils iOS, Windows et Samsung KNOX. L’utilisateur n’a pas besoin de suivre un processus quelconque pour accéder à sa messagerie électronique.
-
-        Sur les appareils Android qui n’exécutent pas Samsung KNOX, les utilisateurs obtiennent un message électronique de mise en quarantaine comprenant une procédure pas à pas guidée qu’ils doivent suivre pour vérifier l’inscription et la conformité avant de pouvoir accéder à la messagerie. Si vous définissez la règle de blocage d’accès ou de mise en quarantaine des appareils, aucun appareil ne peut accéder à Exchange, qu’il soit ou non déjà inscrit dans Intune. Pour éviter que les appareils inscrits et conformes soient affectés par cette règle, cochez la case **Substitution de règle par défaut**.
+      - Sur les appareils Android qui n’exécutent pas Samsung KNOX, les utilisateurs obtiennent un message électronique de mise en quarantaine comprenant une procédure pas à pas guidée qu’ils doivent suivre pour vérifier l’inscription et la conformité avant de pouvoir accéder à la messagerie. Si vous définissez la règle de blocage d’accès ou de mise en quarantaine des appareils, aucun appareil ne peut accéder à Exchange, qu’il soit ou non déjà inscrit dans Intune. Pour éviter que les appareils inscrits et conformes soient affectés par cette règle, cochez la case **Substitution de règle par défaut**.
 >[!TIP]
 >Si vous avez l’intention de bloquer au préalable tous les appareils avant de leur accorder l’accès à la messagerie électronique, choisissez la règle de blocage d’accès ou de mise en quarantaine. La règle par défaut s’applique à tous les types d’appareils. Ainsi, les types d’appareils que vous configurez en tant qu’exceptions de plateforme et qui ne sont pas pris en charge par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sont également affectés.
 
   - **Notification utilisateur :** en plus du message électronique de notification envoyé par Exchange, Intune envoie un message électronique qui contient les étapes à suivre pour débloquer l’appareil. Vous pouvez modifier le message par défaut pour le personnaliser selon vos besoins. Si l’appareil de l’utilisateur est bloqué avant de recevoir le courrier électronique de notification Intune contenant des instructions de correction (ce courrier est envoyé dans la boîte aux lettres Exchange de l’utilisateur), l'utilisateur peut utiliser un appareil non bloqué ou recourir à une autre méthode pour accéder à Exchange et afficher le message.
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - Cela est particulièrement vrai quand le blocage ou la mise en quarantaine est défini avec la **Règle par défaut**. Dans ce cas, l’utilisateur doit accéder à son magasin d’applications, télécharger l’application du portail d’entreprise Microsoft et inscrire son appareil. Cela s’applique aux appareils iOS, Windows et Samsung KNOX. Sur les appareils qui n’exécutent pas Samsung KNOX, vous devez envoyer l’e-mail de quarantaine à un autre compte de messagerie. L’utilisateur doit copier l’e-mail sur l’appareil bloqué pour terminer le processus d’inscription et de mise en conformité.
   > [!NOTE]
   > Pour que le message électronique de notification puisse être envoyé par Exchange, vous devez spécifier le compte à utiliser pour l’envoyer.
   >
