@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
+ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -27,6 +27,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 En tant qu’administrateur informatique, vous pouvez créer et importer un fichier de valeurs séparées par des virgules (.csv) qui répertorie les numéros International Mobile Equipment Identity (IMEI) afin d’identifier les appareils d’entreprise. Chaque numéro IMEI peut contenir des détails spécifiés dans la liste pour des raisons administratives.
+
+Lorsque vous téléchargez des numéros de série d’appareils iOS appartenant à l’entreprise, ils doivent être associés à un profil d’inscription d’entreprise. Les appareils doivent être ensuite inscrits à l’aide du programme d’inscription des appareils Apple (DEP) ou d’Apple Configurator pour qu’ils apparaissent comme appartenant à l’entreprise. 
 
 ## <a name="create-a-csv-file"></a>Créer un fichier .csv
 Pour créer la liste, préparez une liste à deux colonnes de valeurs séparées par des virgules (.csv), sans en-tête. Ajoutez l’identificateur IMEI dans la colonne de gauche et les détails dans la colonne de droite. Les détails sont limités à 128 caractères. La limite actuelle est de 500 lignes par fichier .csv.
