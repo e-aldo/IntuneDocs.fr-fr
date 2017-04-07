@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
 ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
+ms.lasthandoff: 01/04/2017
 
 
 ---
@@ -74,8 +75,8 @@ b. Cliquez sur l’icône en forme de verrou &gt;  **Plus d’informations**.
 2.       Exportez le certificat auto-signé.
 3. Dans un éditeur de texte, modifiez le certificat exporté :
 
- - Supprimez ** -----BEGIN CERTIFICATE-----**.
- - Supprimez ** -----END CERTIFICATE-----**.
+ - Supprimez **-----BEGIN CERTIFICATE-----**.
+ - Supprimez **-----END CERTIFICATE-----**.
  
 Vérifiez que tout le texte contient sur une seule ligne.
 
@@ -190,9 +191,4 @@ Vous pouvez également [télécharger un ensemble d’instructions d’inscripti
 ### <a name="see-also"></a>Voir aussi
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
