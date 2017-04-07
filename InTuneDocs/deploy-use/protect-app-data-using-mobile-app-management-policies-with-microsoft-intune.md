@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ Vous pouvez configurer des stratégies de protection des applications pour les a
 
 -   **Inscrits dans une solution de gestion des appareils mobiles tierce :** les appareils de cette catégorie sont généralement des appareils qui appartiennent à une entreprise.
 
-  > [!NOTE]
-  > Nous ne recommandons pas d’utiliser des stratégies de protection des applications avec des solutions de gestion des applications mobiles tierces ou des solutions de conteneur sécurisé.
+      > [!NOTE]
+      > Nous ne recommandons pas d’utiliser des stratégies de protection des applications avec des solutions de gestion des applications mobiles tierces ou des solutions de conteneur sécurisé.
 
 -   **Non inscrits dans une solution de gestion des appareils mobiles :** les appareils de cette catégorie sont généralement des appareils qui appartiennent à des employés et ne sont pas gérés ni inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
 
@@ -133,9 +134,4 @@ Toutes les applications mobiles Office prennent en charge l’accès de plusieur
 - [Préparation à la configuration de stratégies de protection d’applications](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Créer et déployer des stratégies de protection des applications avec Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

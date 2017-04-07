@@ -1,11 +1,11 @@
 ---
-title: "Mises à jour logicielles pour PC Windows | Microsoft Intune"
+title: "Mises à jour logicielles pour PC Windows | Microsoft Docs"
 description: "Intune vous aide à maintenir à jour vos ordinateurs gérés en s’assurant que les derniers correctifs et mises à jour logicielles sont rapidement installés."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6878d8a4e95280cfd8a919efa4c2f1651ca14024
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 14ef9f901969449ca8b3c60a187da6b6e654bd67
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune
+# <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune
 Microsoft Intune peut vous aider à sécuriser vos ordinateurs gérés de plusieurs façons, notamment en gérant les mises à jour logicielles qui maintiennent votre ordinateur à jour et en garantissant une installation rapide des derniers correctifs et mises à jour logicielles.
 
 Si vous n’avez pas encore installé le client Intune sur vos ordinateurs, consultez [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -34,10 +36,10 @@ Quand de nouvelles mises à jour sont disponibles via Microsoft Update ou que vo
 
 Les sections suivantes vous aideront à maintenir à jour les logiciels installés sur vos ordinateurs gérés.
 
-## Avant de commencer
+## <a name="before-you-start"></a>Avant de commencer
 Avant de commencer à créer et à approuver les mises à jour logicielles, configurez et déployez des stratégies sur vos ordinateurs afin de contrôler quand et comment les mises à jour sont installées.
 
-### Pour configurer les paramètres de la stratégie de mise à jour
+### <a name="to-configure-update-policy-settings"></a>Pour configurer les paramètres de la stratégie de mise à jour
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), sélectionnez **Stratégie** &gt; **Vue d’ensemble** &gt; **Ajouter une stratégie**.
 
@@ -57,7 +59,7 @@ Le tableau suivant montre les valeurs que vous pouvez configurer dans la straté
     |**Planification de l'installation des mises à jour obligatoires des agents clients Microsoft Intune** |Planifie le moment où l'installation des mises à jour du client a lieu.<br /><br />Valeur recommandée : non configuré|
     |**Attente entre les invites pour le redémarrage de Windows après l'installation de mises à jour planifiées et d'applications (minutes)** |Spécifie la fréquence (entre 1 et 1440 minutes) à laquelle l'utilisateur est invité à redémarrer Windows lorsqu'une mise à jour ou une application planifiée nécessitant un redémarrage de Windows est installée et que l'utilisateur retarde ce redémarrage.<br /><br />Valeur recommandée : **30 minutes** |
 
-## Mise à jour de logiciels Microsoft
+## <a name="update-software-made-by-microsoft"></a>Mise à jour de logiciels Microsoft
 La mise à jour de logiciels Microsoft requiert très peu de travail de votre part. Toutefois, avant de commencer, il existe deux éléments que vous devez configurer :
 
 -   **Catégories de produits et classifications des mises à jour** : définit les catégories et classifications des mises à jour que vous souhaitez rendre disponibles pour les ordinateurs. Par exemple, vous pouvez décider que seules les mises à jour critiques de Microsoft Office doivent être installées.
@@ -66,7 +68,7 @@ La mise à jour de logiciels Microsoft requiert très peu de travail de votre pa
 
 Utilisez les deux procédures suivantes pour vous aider à préparer l'utilisation des mises à jour logicielles :
 
-### Configurer les catégories de produit et les classifications de mise à jour que vous souhaitez rendre disponibles sur les ordinateurs gérés
+### <a name="configure-the-product-categories-and-update-classifications-you-want-to-make-available-to-managed-computers"></a>Configurer les catégories de produit et les classifications de mise à jour que vous souhaitez rendre disponibles sur les ordinateurs gérés
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Administration** &gt; **Mises à jour**.
 
@@ -79,7 +81,7 @@ Utilisez les deux procédures suivantes pour vous aider à préparer l'utilisati
 
 4.  Choisissez**Enregistrer** pour stocker vos sélections.
 
-### Pour configurer des règles d'approbation automatique pour les mises à jour logicielles
+### <a name="to-configure-automatic-approval-rules-for-software-updates"></a>Pour configurer des règles d'approbation automatique pour les mises à jour logicielles
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Administration** &gt; **Mises à jour**.
 
@@ -110,7 +112,7 @@ La nouvelle règle est affichée dans la section **Règles d’approbation autom
 > La création d’une règle d’approbation automatique ne concerne que les mises à jour à venir et non les mises à jour préexistantes dans Intune. Pour approuver ces mises à jour, vous devez exécuter la règle d'approbation automatique.
 
 
-### Pour modifier, exécuter ou supprimer une règle de mise à jour approuvée automatiquement
+### <a name="to-edit-run-or-delete-an-automatically-approved-update-rule"></a>Pour modifier, exécuter ou supprimer une règle de mise à jour approuvée automatiquement
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Administration** &gt; **Mises à jour**.
 
@@ -125,10 +127,10 @@ La nouvelle règle est affichée dans la section **Règles d’approbation autom
         > [!NOTE]
         > La suppression d'une règle n'affecte pas les mises à jour précédentes approuvées par la règle supprimée.
 
-## Mise à jour de logiciels non Microsoft
+## <a name="update-software-not-made-by-microsoft"></a>Mise à jour de logiciels non Microsoft
 Vous pouvez déployer des mises à jour pour des logiciels qui n'ont pas été créés par Microsoft. Pour ce faire, utilisez l'Assistant **Télécharger mis à jour** pour ajouter la mise à jour à votre espace de stockage en cloud. Après cela, vous pouvez approuver ou refuser la mise à jour de la même façon que pour un logiciel Microsoft.
 
-### Pour télécharger et configurer une mise à jour tierce
+### <a name="to-upload-and-configure-a-third-party-update"></a>Pour télécharger et configurer une mise à jour tierce
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Mises à jour** &gt; **Vue d’ensemble** &gt; **Télécharger**.
 
@@ -188,7 +190,7 @@ La mise à jour téléchargée est enregistrée dans votre stockage cloud Intune
 
 Quand une mise à jour tierce est téléchargée dans Intune, elle s’affiche dans l’espace de travail **Mises à jour** du volet **Toutes les mises à jour**. Vous pouvez ensuite approuver et déployer la mise à jour. Pour plus d’informations, consultez la section « Approuver et refuser des mises à jour » suivante.
 
-## Approuver ou refuser des mises à jour
+## <a name="approve-and-decline-updates"></a>Approuver ou refuser des mises à jour
 Lorsque des mises à jour sont prêtes à être installées, un message s'affiche sur la page **Vue d'ensemble des mises à jour** de l'espace de travail **Mises à jour** sous **État de la mise à jour**. Choisissez ce message pour ouvrir la page **Toutes les mises à jour** pour voir les mises à jour prêtes pour l’approbation.
 
 Vous pouvez utiliser la liste **Filtres** pour faciliter la recherche des mises à jour. Par exemple, vous pouvez afficher uniquement les mises à jour qui ont échoué ou les mises à jour qui sont remplacées.
@@ -204,7 +206,7 @@ Lorsque vous sélectionnez une mise à jour dans la liste, d'autres commandes so
 |**Supprimer**|Pour les mises à jour non Microsoft uniquement. Supprime la mise à jour sélectionnée.|
 |**Télécharger**|Démarre l’Assistant **Télécharger la mise à jour** qui vous permet de télécharger des mises à jour non-Microsoft que vous souhaitez déployer.|
 
-### Pour approuver des mises à jour
+### <a name="to-approve-updates"></a>Pour approuver des mises à jour
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), choisissez **Mises à jour** &gt; **Vue d’ensemble** &gt; **Nouvelles mises à jour à approuver**.
 
@@ -250,11 +252,6 @@ Lorsque vous sélectionnez une mise à jour dans la liste, d'autres commandes so
 6.  Vous pouvez consulter le volet des détails au bas de la page **Toutes les mises à jour** pour connaître les messages de rappel relatifs à la mise à jour.
 
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

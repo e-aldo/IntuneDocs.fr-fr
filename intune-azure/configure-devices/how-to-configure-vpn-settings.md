@@ -1,11 +1,12 @@
 ---
-title: "Guide pratique pour configurer des paramètres VPN Intune | Préversion Intune Azure | Microsoft Docs"
+title: "Guide pratique pour configurer des paramètres VPN Intune"
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour configurer des connexions VPN sur les appareils que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: ff05d9ed7bae2742de8dbbe908f2c92d2459a7f4
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 96756c4aa5afa52821614d5f7fbc6d0bca15895b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -33,8 +35,8 @@ Par exemple, supposons que vous voulez approvisionner tous les appareils iOS en 
 
 Vous pouvez créer des profils VPN à l’aide des types de connexions suivants :
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Type de connexion|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Oui|Oui|Oui|Oui|Oui|Oui|
 |Cisco (IPSec)|Non|Oui|Non|Non|Non|Non|
@@ -59,7 +61,7 @@ Découvrez comment créer des profils VPN personnalisés à l’aide des paramè
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
 4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour votre profil VPN.

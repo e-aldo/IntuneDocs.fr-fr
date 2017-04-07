@@ -1,11 +1,11 @@
 ---
-title: "Utiliser des stratégies pour simplifier la gestion des PC Windows | Microsoft Intune"
+title: "Utiliser des stratégies pour simplifier la gestion des PC Windows | Microsoft Docs"
 description: "Décrit les stratégies de gestion des PC Windows et les paramètres de Microsoft Intune Center."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,18 @@ ms.technology:
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Utiliser des stratégies pour simplifier la gestion des PC Windows
 
-Les PC Windows qui exécutent le client logiciel Intune peuvent être gérés à l’aide des stratégies **Gestion des ordinateurs** d’Intune. Utilisez les stratégies de **gestion de l’ordinateur** d’Intune pour configurer les paramètres de Microsoft Intune Center, contrôler les mises à jour apportées aux PC et configurer le Pare-feu Windows pour les PC.
+Pour gérer les ordinateurs de bureau Windows en tant que PC en y exécutant le client logiciel Intune, vous pouvez utiliser uniquement les stratégies qui se trouvent sous **Gestion de l'ordinateur** dans la console d’administration Intune. Toutes les autres stratégies répertoriées dans la console d’administration sont réservés aux appareils mobiles uniquement. Utilisez les stratégies de la **Gestion de l’ordinateur** pour configurer les paramètres de Microsoft Intune Center, contrôler les mises à jour apportées aux PC et configurer le Pare-feu Windows pour les PC.
 
 ![Modèle de stratégies pour les PC Windows](../media/pc_policy_template.png)
 
@@ -60,9 +62,4 @@ Consultez les ressources suivantes pour plus d’informations sur les stratégie
 ### <a name="see-also"></a>Voir aussi
 
 [Tâches courantes de gestion des PC Windows avec le client logiciel Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

@@ -1,11 +1,11 @@
 ---
-title: "Paramètres de la stratégie Mac OS X | Microsoft Intune"
+title: "Paramètres de la stratégie Mac OS X | Microsoft Docs"
 description: "Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils Mac OS X. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,22 @@ ms.technology:
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: ce30ab0e5a4ce709aafa5892789590b42b484db4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 58dc1d872e7e12978652542d80061dd7ed86aeb2
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Paramètres de la stratégie de configuration Mac OS X dans Microsoft Intune
+# <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de configuration Mac OS X dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils Mac OS X. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
 
-## Paramètres de la stratégie de configuration générale
+## <a name="general-configuration-policy-settings"></a>Paramètres de la stratégie de configuration générale
 
 Utilisez la **stratégie de configuration générale Mac OS X** de Microsoft Intune pour configurer les paramètres suivants :
 
@@ -34,7 +38,7 @@ Utilisez la **stratégie de configuration générale Mac OS X** de Microsoft Int
 
 Si le paramètre que vous recherchez n’apparaît pas dans cette liste, vous pourrez peut-être le créer à l’aide d’une stratégie Mac OS X personnalisée, qui vous permet d’importer les paramètres créés avec l’outil Apple Configurator. Pour en savoir plus, consultez la section « Paramètres de la stratégie personnalisée » de la présente rubrique.
 
-### Paramètres de mot de passe
+### <a name="password-settings"></a>Paramètres de mot de passe
 
 |Nom du paramètre|Détails|
 |----------------|---------------|
@@ -43,12 +47,12 @@ Si le paramètre que vous recherchez n’apparaît pas dans cette liste, vous po
 |**Nombre de caractères complexes requis dans le mot de passe**|Spécifie le nombre de caractères complexes nécessaires dans le mot de passe (de **0** à **4**).<br /><br />Un caractère complexe est un symbole, tel que **?**.|
 |**Longueur minimale du mot de passe**|Définit la longueur minimale du mot de passe (entre **4** et **14** caractères).|
 |**Autoriser les mots de passe simples**|Permet d’utiliser des mots de passe simples, tels que **0000** ou **1234**.|
-|**Minutes d'inactivité avant demande du mot de passe**|Indique la durée pendant laquelle l’ordinateur doit être inactif avant qu’un mot de passe soit requis pour le déverrouiller.|
+|**Minutes d’inactivité avant demande du mot de passe**|Indique la durée pendant laquelle l’ordinateur doit être inactif avant qu’un mot de passe soit requis pour le déverrouiller.|
 |**Expiration du mot de passe (jours)**|Spécifie le nombre de jours qui s’écoule avant que l’utilisateur ne doive changer le mot de passe (entre **1** et **255** jours).|
-|**Mémoriser l'historique des mots de passe**|Ce paramètre permet d’empêcher l’utilisateur d’employer un mot de passe utilisé précédemment. Lorsque ce paramètre est défini, vous pouvez aussi définir l’option **Empêcher la réutilisation des mots de passe précédents** pour spécifier le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés (entre **1** et **24**).|
+|**Mémoriser l’historique des mots de passe**|Ce paramètre permet d’empêcher l’utilisateur d’employer un mot de passe utilisé précédemment. Lorsque ce paramètre est défini, vous pouvez aussi définir l’option **Empêcher la réutilisation des mots de passe précédents** pour spécifier le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés (entre **1** et **24**).|
 |**Minutes d’inactivité avant activation de l’écran de veille**|Spécifie la durée pendant laquelle l’ordinateur doit être inactif avant que l’écran de veille ne s’active.|
 
-### Paramètres des applications conformes et non conformes
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>Paramètres des applications conformes et non conformes
 Dans la liste **Applications conformes &amp; non conformes pour Mac OS X**, activez l’option **Paramètres gérés pour les appareils**, puis spécifiez une liste d’applications conformes ou non conformes à l’aide des informations ci-après.
 
 > [!NOTE]
@@ -70,27 +74,27 @@ Dans la liste **Applications conformes &amp; non conformes pour Mac OS X**, ac
 > [!IMPORTANT]
 > Lorsqu’un appareil Mac OS X est en mode veille, il n’est pas possible de livrer ou d’inventorier les stratégies et les profils. Par conséquent, la console Intune peut afficher temporairement l’état **Paramètres de stratégie erronés** jusqu’à ce que l’appareil sorte du mode veille.
 
-### Contrôler les applications conformes et non conformes
+### <a name="monitor-compliant-and-noncompliant-apps"></a>Contrôler les applications conformes et non conformes
 Utilisez les **rapports sur les applications non conformes** pour afficher la conformité des applications que vous avez spécifiées.
 
-#### Pour exécuter un rapport
+#### <a name="to-run-a-report"></a>Pour exécuter un rapport
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Rapports** &gt; **Rapports sur les applications non conformes**.
 
 2.  Sélectionnez les groupes d’appareils que vous voulez vérifier, en indiquant si vous voulez vérifier les applications conformes, non conformes ou les deux, puis choisissez **Afficher le rapport**.
 
-## Paramètres de la stratégie personnalisée Mac OS X dans Microsoft Intune
+## <a name="mac-os-x-custom-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie personnalisée Mac OS X dans Microsoft Intune
 Utilisez la **stratégie de configuration personnalisée Mac OS X** de Microsoft Intune pour déployer les paramètres que vous avez créés à l’aide de l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) sur des appareils Mac OS X. Cet outil vous permet de créer plusieurs paramètres qui contrôlent le fonctionnement de ces appareils et de les exporter vers un profil de configuration. Vous pouvez ensuite importer ce profil de configuration dans une stratégie personnalisée Mac OS X Intune et déployer les paramètres sur les utilisateurs et les appareils de votre organisation.
 
 Cette fonctionnalité vous permet de déployer les paramètres Mac OS X qui ne sont pas configurables avec la stratégie de configuration générale Mac OS X Intune.
 
-### Conditions préalables
+### <a name="prerequisites"></a>Conditions préalables
 Avant de commencer, vous devez installer l’outil Apple Configurator et créer un fichier de configuration contenant les paramètres que vous souhaitez déployer sur les systèmes des utilisateurs ou les appareils. Visitez le [Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) pour télécharger l’outil Apple Configurator et en savoir plus à son sujet.
 
 > [!NOTE]
 > Intune ne signale pas la conformité des paramètres individuels dans une stratégie personnalisée Mac OS X. Toutefois, la conformité d'ensemble de la stratégie est signalée.
 
-### Paramètres généraux :
+### <a name="general-settings"></a>Paramètres généraux :
 
 |Nom du paramètre|Détails|
     |----------------|--------------------|
@@ -98,7 +102,7 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer
     |**Description**|Fournissez une description générale de la stratégie personnalisée Mac OS X et d'autres informations pertinentes pour mieux la localiser.|
 
 
-### Configuration personnalisée
+### <a name="custom-settings"></a>Configuration personnalisée
 
 |Nom du paramètre|Détails|
     |----------------|--------------------|
@@ -108,7 +112,7 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer
 
 
 
-### Création d’un fichier de profil de configuration
+### <a name="how-to-create-a-configuration-profile-file"></a>Création d’un fichier de profil de configuration
 Vous pouvez créer le fichier de profil de configuration utilisé par la stratégie personnalisée de deux manières :
 
 -   Exportez le fichier (avec l'extension **.mobileconfig**) à partir de l'outil Apple Configurator.
@@ -116,11 +120,6 @@ Vous pouvez créer le fichier de profil de configuration utilisé par la straté
 -   Créez le fichier en utilisant le schéma approprié à partir de la [Référence des clés de profil de configuration Apple](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

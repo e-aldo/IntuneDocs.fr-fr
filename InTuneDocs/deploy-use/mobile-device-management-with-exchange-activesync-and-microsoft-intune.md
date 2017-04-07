@@ -1,9 +1,9 @@
 ---
-title: Gestion des appareils mobiles avec Exchange ActiveSync | Microsoft Intune
+title: Gestion des appareils mobiles avec Exchange ActiveSync | Microsoft Docs
 description: "Gérer les appareils mobiles avec la gestion de Microsoft Exchange ActiveSync (EAS) à l’aide du connecteur Exchange"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1b26e1298cf0b65f99219338b7ba59987e70c3ab
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4d1fc1af29dbd42c639afe079020d35a92360eb3
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Gestion des appareils mobiles Microsoft Exchange ActiveSync avec Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Pour que Microsoft Intune gère directement des appareils mobiles, ces appareils doivent être [inscrits dans Intune](prerequisites-for-enrollment.md). Les administrateurs ont également la possibilité d’activer une solution de gestion plus limitée qui utilise la gestion de Microsoft Exchange ActiveSync (EAS) avec un connecteur Exchange. Les appareils peuvent être gérés avec des serveurs Exchange locaux ou avec Exchange Online, à l’aide de Microsoft Office 365. Microsoft Intune prend en charge une seule connexion du connecteur Exchange par abonnement, quel que soit le type de connecteur.
 
 ## <a name="exchange-access-rules-for-mobile-devices"></a>Règles d'accès Exchange pour les appareils mobiles ##
@@ -44,9 +49,4 @@ La console Intune peut être utilisée pour gérer [les paramètres de stratégi
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>Effacement de données d’entreprise d’appareils mobiles
 Enfin, vous pouvez [effacer des données d’entreprise d’appareils mobiles gérés par EAS](wipe-for-exchange-managed-mobile-devices.md) lorsqu’ils ne sont plus en cours d’utilisation, ou si les appareils sont perdus ou volés.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

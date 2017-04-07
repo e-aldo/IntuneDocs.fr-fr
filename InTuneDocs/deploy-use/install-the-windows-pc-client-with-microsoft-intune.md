@@ -3,9 +3,9 @@
 title: Installation du logiciel client PC | Microsoft Docs
 description: "Utilisez ce guide pour que votre PC Windows soit géré par le logiciel client Microsoft Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
-ms.date: 02/14/2017
+author: nathbarn
+ms.author: nathbarn
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -106,7 +106,7 @@ Vous pouvez déployer le logiciel client Intune sur des ordinateurs dans le cadr
 
 ## <a name="instruct-users-to-self-enroll"></a>Indiquer aux utilisateurs de s’inscrire eux-mêmes
 
-Les utilisateurs installent le logiciel client Intune en accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com). Les informations exactes que les utilisateurs voient dans le portail web varient selon l’autorité MDM de votre compte et la plateforme/version du système d’exploitation du PC de l’utilisateur. 
+Les utilisateurs installent le logiciel client Intune en accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com). Les informations exactes que les utilisateurs voient dans le portail web varient selon l’autorité MDM de votre compte et la plateforme/version du système d’exploitation du PC de l’utilisateur.
 
 Si aucune licence Intune n’a été attribuée aux utilisateurs ou si l’autorité MDM de l’organisation n’a pas été définie sur Intune, aucune option d’inscription n’est visible par les utilisateurs.
 
@@ -179,6 +179,83 @@ Utilisez l'une des procédures suivantes pour surveiller et valider la réussite
     > [!TIP]
     > Cliquez sur n'importe quel en-tête de colonne dans le rapport pour trier la liste en fonction du contenu de cette colonne.
 
+## <a name="uninstall-the-windows-client-software"></a>Désinstaller le logiciel client Windows
+
+Il existe deux façons d’annuler l’inscription du logiciel client Windows :
+
+- À partir de la console d’administration Intune (méthode recommandée)
+- À partir d’une invite de commandes sur le client
+
+### <a name="unenroll-by-using-the-intune-admin-console"></a>Annuler l’inscription à l’aide de la console d’administration Intune
+
+Pour annuler l’inscription du logiciel client à l’aide de la console d’administration Intune, accédez à **Groupes** > **Tous les ordinateurs** > **Appareils**. Cliquez avec le bouton droit sur le client, puis sélectionnez **Mettre hors service/Réinitialiser**.
+
+### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>Annuler l’inscription à l’aide d’une invite de commandes sur le client
+
+À partir d’une invite de commandes avec élévation de privilèges, exécutez l’une des commandes suivantes.
+
+**Méthode 1** :
+
+    ```
+    "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
+    ```
+
+**Méthode 2**<br>Notez que ces agents ne sont pas tous installés sur chaque référence Windows :
+
+    ```
+    wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Microsoft Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Microsoft Policy Platform" call uninstall<br>
+    wmic product where name="Microsoft Security Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client Service" call uninstall<br>
+    wmic product where name="Microsoft Easy Assist v2" call uninstall<br>
+    wmic product where name="Microsoft Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Microsoft Intune Center" call uninstall<br>
+    wmic product where name="Microsoft Online Management Update Manager" call uninstall<br>
+    wmic product where name="Microsoft Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Microsoft Intune" call uninstall<br>
+    wmic product where name="Windows Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Windows Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Windows Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Windows Policy Platform" call uninstall<br>
+    wmic product where name="Windows Security Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client Service" call uninstall<br>
+    wmic product where name="Windows Easy Assist v2" call uninstall<br>
+    wmic product where name="Windows Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Windows Intune Center" call uninstall<br>
+    wmic product where name="Windows Online Management Update Manager" call uninstall<br>
+    wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Windows Intune" call uninstall
+    ```
+
+> [!TIP]
+> L’annulation de l’inscription du client laisse un enregistrement obsolète côté serveur pour le client concerné. Le processus d’annulation de l’inscription est asynchrone. Il y a neuf agents à désinstaller, et cette opération peut prendre jusqu'à 30 minutes.
+
+### <a name="check-the-unenrollment-status"></a>Vérifier l’état de l’annulation de l’inscription
+
+Consultez « %ProgramFiles%\Microsoft\OnlineManagement » et vérifiez que seuls les répertoires suivants sont affichés sur la gauche :
+
+- AgentInstaller
+- Logs
+- Updates
+- Common
+
+### <a name="remove-the-onlinemanagement-folder"></a>Supprimer le dossier OnlineManagement
+
+Le processus d’annulation de l’inscription ne supprime pas le dossier OnlineManagement. Attendez 30 minutes après la désinstallation, puis exécutez cette commande. Si vous l’exécutez trop tôt, la désinstallation peut rester dans un état inconnu. Pour supprimer le dossier, démarrez une invite de commandes avec élévation des privilèges et exécutez :
+
+    ```
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    ```
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des PC Windows avec Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)

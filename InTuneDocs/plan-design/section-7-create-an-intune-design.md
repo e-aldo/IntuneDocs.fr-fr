@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-La section du guide doit être utilisée en parallèle avec d’autres rubriques de la section 2. Cette conception sera basée sur les informations que vous collectez et les décisions que vous prendrez, complétant ainsi les sections précédentes de ce guide. Dans cette section de conception, nous allons nous concentrer sur Intune autonome, un service de cloud Microsoft résidant dans le cloud.
+La section du guide doit être utilisée en parallèle avec d’autres rubriques de la section 2. Cette conception sera basée sur les informations que vous collectez et les décisions que vous prendrez, complétant ainsi les sections précédentes de ce guide. Dans cette section traitant de la conception, nous allons nous concentrer sur la version autonome d’Intune, qui est un service cloud Microsoft.
 
-Bien qu’il existe des conditions minimales concernant l’infrastructure en local, il est recommandé de toujours travailler sur un plan de conception pour vous assurer de disposer de la solution de gestion d'appareils mobiles adéquate qui répond à vos objectifs et exigences.
+Bien qu’il existe des conditions minimales concernant l’infrastructure en local, travaillez toujours sur un plan de conception pour vous assurer de disposer de la solution de gestion d’appareils mobiles adéquate qui répond à vos objectifs et exigences.
 
-En outre, il est courant d'apporter des modifications de conception lors de l’implémentation et des phases de test. Veillez à documenter toutes ces modifications en les justifiant à mesure qu'elles se produisent. Nous allons aborder les domaines suivants :
+En outre, il est courant d’apporter des modifications de conception lors des phases d’implémentation et de test. Veillez à documenter ces modifications en les justifiant à mesure qu’elles se produisent. Nous allons aborder les domaines suivants :
 
 -   L'environnement actuel
 
@@ -409,9 +410,4 @@ Voici un exemple montrant comment documenter des stratégies d’accès conditio
 ## <a name="next-section"></a>Section suivante
 
 La section suivante fournit des conseils sur le [processus d’implémentation Intune](section-8-onboarding-process.md).
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

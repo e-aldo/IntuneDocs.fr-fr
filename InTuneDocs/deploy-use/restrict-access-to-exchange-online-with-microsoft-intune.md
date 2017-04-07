@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -59,7 +60,7 @@ Lorsque vous configurez des stratégies d’accès conditionnel et les ciblez su
 
 ### <a name="when-the-device-is-not-compliant"></a>Lorsque l'appareil n’est pas conforme
 
-Si les conditions d'une stratégie d’accès conditionnel ne sont pas remplies, l’appareil est mis en quarantaine immédiatement et l’utilisateur reçoit par e-mail l'une des notifications de mise en quarantaine suivantes :
+Si une stratégie d’accès conditionnel n’est pas remplie, l’appareil est immédiatement placé en quarantaine. L’utilisateur reçoit un e-mail et l’une des notifications de mise en quarantaine suivantes lorsqu’il se connecte :
 
 - Si l’appareil n’est pas inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qu’il n’est pas inscrit dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application du portail d’entreprise, inscrire l’appareil et activer la messagerie. Ce processus associe également l’ID Exchange ActiveSync de l’appareil à l’enregistrement dans Azure Active Directory.
 
@@ -275,9 +276,4 @@ Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], 
 - [Protéger l’accès à SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Protéger l’accès à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

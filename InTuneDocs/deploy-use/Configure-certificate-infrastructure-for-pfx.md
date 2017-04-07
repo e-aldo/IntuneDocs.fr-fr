@@ -1,5 +1,5 @@
 ---
-title: "Configurer l’infrastructure de certificat pour PFX |Microsoft Intune"
+title: "Configurer l’infrastructure de certificat pour PFX | Microsoft Docs"
 description: "Créez et déployez des profils de certificat .PFX."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>Configurer l’infrastructure de certificat
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Cette rubrique décrit les éléments dont vous avez besoin pour créer et déployer des profils de certificat .PFX.
 
 Pour effectuer une authentification basée sur certificat dans votre organisation, vous avez besoin d’une autorité de certification d’entreprise.
@@ -31,7 +36,7 @@ Pour utiliser des profils de certificat .PFX, en plus de l’autorité de certif
 
 -  Intune Certificate Connector, qui s'exécute sur l'ordinateur qui peut communiquer avec l'autorité de certification
 
-## <a name="onpremises-infrastructure-description"></a>Description de l’infrastructure locale
+## <a name="on-premises-infrastructure-description"></a>Description de l’infrastructure locale
 
 
 -    **Domaine Active Directory** : tous les serveurs répertoriés dans cette section (à l’exception du serveur du proxy d’application web) doivent être joints à votre domaine Active Directory.
@@ -65,7 +70,7 @@ Pour pouvoir configurer des profils de certificat, vous devez d’abord effectue
 - **Tâche 1** : Configurer les modèles de certificats sur l’autorité de certification.
 - **Tâche 2** : Activer, installer et configurer Intune Certificate Connector.
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Tâche 1 : Configurer les modèles de certificats sur l'autorité de certification
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Tâche 1 : Configurer les modèles de certificats sur l'autorité de certification
 Au cours de cette tâche, vous allez publier le modèle de certificat.
 
 ##### <a name="to-configure-the-certification-authority"></a>Pour configurer l'autorité de certification
@@ -104,7 +109,7 @@ Au cours de cette tâche, vous allez publier le modèle de certificat.
 
 4.  Sur l’ordinateur de l’autorité de certification, vérifiez que l’ordinateur qui héberge Intune Certificate Connector a l’autorisation Inscription qui lui permet d’accéder au modèle utilisé pour créer le profil .PFX. Définissez cette autorisation sous l'onglet **Sécurité** des propriétés de l'ordinateur d'autorité de certification.
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Tâche 2 : Activer, installer et configurer Intune Certificate Connector
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Tâche 2 : Activer, installer et configurer Intune Certificate Connector
 Dans cette tâche, vous allez :
 
 télécharger, installer et configurer Certificate Connector.
@@ -153,9 +158,4 @@ télécharger, installer et configurer Certificate Connector.
 
 ### <a name="next-steps"></a>Étapes suivantes
 Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configurer les profils de certificat](Configure-Intune-certificate-profiles.md).
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

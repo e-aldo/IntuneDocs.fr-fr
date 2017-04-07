@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,8 +30,9 @@ Vous pouvez protéger l’accès à la messagerie de votre entreprise, aux servi
 ## <a name="how-does-conditional-access-work"></a>Comment fonctionne l’accès conditionnel ?
 Vous pouvez utiliser les paramètres de la stratégie de conformité pour évaluer la conformité d’un appareil. Une stratégie d’accès conditionnel utilise l’évaluation pour bloquer ou autoriser l’accès à un service spécifique. Quand vous utilisez une stratégie d’accès conditionnel avec une stratégie de conformité d'appareil, seuls les appareils conformes peuvent accéder au service. La stratégie de conformité et la stratégie d’accès conditionnel sont déployées pour l’utilisateur. La conformité avec les stratégies de chaque appareil que l’utilisateur utilise pour accéder aux services est contrôlée.
 
-Gardez à l’esprit que l’utilisateur de l’appareil doit déployer une stratégie de conformité sur l’appareil afin que sa conformité soit évaluée.
-Si aucune stratégie de conformité n’est déployée sur l’utilisateur, l’appareil est considéré comme conforme et aucune restriction d’accès ne s’applique.
+> [!IMPORTANT] 
+> Gardez à l’esprit que l’utilisateur de l’appareil doit déployer une stratégie de conformité sur l’appareil afin que sa conformité soit évaluée.
+> Si aucune stratégie de conformité n’est déployée sur l’utilisateur, l’appareil est considéré comme conforme et aucune restriction d’accès ne s’applique.
 
 Quand un appareil ne remplit pas les conditions définies dans les stratégies, l’utilisateur final est guidé tout au long du processus d’inscription de cet appareil et du processus de résolution du problème qui empêche l’appareil d’être conforme.
 
@@ -72,7 +74,7 @@ Contrairement à d’autres stratégies Intune, vous ne déployez pas de straté
 2. [Créer une stratégie de conformité des appareils](create-a-device-compliance-policy-in-microsoft-intune.md).
 
 2.  Créer une stratégie d’accès conditionnel pour l’un des services cloud/produits Microsoft suivants :
-> [!div class="op_single_selector"]
+
   - [Créer une stratégie d’accès conditionnel à Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel à Exchange sur site](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel à Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -80,9 +82,4 @@ Contrairement à d’autres stratégies Intune, vous ne déployez pas de straté
   - [Créer une stratégie d’accès conditionnel pour SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel pour Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel pour Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

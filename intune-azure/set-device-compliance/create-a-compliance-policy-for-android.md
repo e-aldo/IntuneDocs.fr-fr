@@ -16,45 +16,24 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Android dans la préversion d’Intune Azure
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Android dans le portail Intune Azure en préversion
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Des stratégies de conformité sont créées pour chaque plateforme.  Vous pouvez créer une stratégie de conformité dans le portail Azure. Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](what-is-device-compliance.md). Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](get-started-with-device-compliance.md).
+Des stratégies de conformité des appareils sont créées pour chaque plateforme à partir du portail Intune Azure en préversion. 
 
-La table ci-dessous décrit également la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
+- Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](what-is-device-compliance.md).
+- Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](get-started-with-device-compliance.md).
 
---------------------
-
-|**paramètre de stratégie**| **Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures** |
-| --- | ----|
-| **Configuration d’un code confidentiel ou mot de passe** |  En quarantaine |
-| **Chiffrement de l’appareil** | En quarantaine |
-| **Appareil jailbroken ou rooté** | En quarantaine (pas un paramètre) |
-| **profil de messagerie** | Non applicable |
-| **Version minimale du système d’exploitation** | En quarantaine |
-| **Version maximale du système d’exploitation** |   En quarantaine |
-| **Attestation de l’intégrité Windows** | Non applicable |
-
---------------------------
-
-
-**Corrigé** : le système d’exploitation de l’appareil applique la conformité. (Par exemple, l’utilisateur est obligé de définir un code PIN.)+
-
-**En quarantaine** : le système d’exploitation de l’appareil n’applique pas la conformité. (Par exemple, les appareils Android n’obligent pas l’utilisateur à chiffrer l’appareil.) Quand l’appareil n’est pas conforme, les actions suivantes se produisent :+
-
-- L’appareil est bloqué si une stratégie d’accès conditionnel s’applique à l’utilisateur.
-- Le portail d’entreprise informe l’utilisateur des problèmes de conformité.
-
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Création d'une stratégie de conformité dans le portail Azure
+## <a name="to-create-a-device-compliance-policy"></a>Pour créer une stratégie de conformité de l’appareil
 
 1. Dans le panneau **Intune**, choisissez **Définir la conformité des appareils**. Sous **Gérer**, choisissez **Toutes les stratégies de conformité d'appareil**, puis **Créer**.
 2. Tapez un nom et une description, puis sélectionnez la plateforme à laquelle vous souhaitez appliquer cette stratégie.
@@ -67,7 +46,7 @@ La table ci-dessous décrit également la façon dont les paramètres non confor
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
+## <a name="to-assign-user-groups"></a>Pour affecter des groupes d’utilisateurs
 
 Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le panneau **Stratégie de conformité**.
 
@@ -77,6 +56,26 @@ Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une
 Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie de conformité sera évaluée.
 
 <!---##  Compliance policy settings--->
+
+## <a name="device-health-and-security-settings"></a>Paramètres d’intégrité et de sécurité de l’appareil
+
+- **L’appareil ne doit pas être jailbreaké ou rooté :** si vous activez ce paramètre, les appareils jailbreakés ne sont pas détectés comme conformes.
+- **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues (Android 4.0 ou ultérieur)** : pour bloquer les appareils sur lesquels l’option **Sécurité** > **Sources inconnues** est sélectionnée, activez ce paramètre et affectez-lui la valeur **Oui**.
+
+### <a name="important"></a>Important
+
+Pour les applications en chargement indépendant, le paramètre **Sources inconnues** doit être activé. Appliquez cette stratégie de conformité uniquement si vous n’effectuez aucun chargement indépendant d’applications Android sur les appareils.
+
+- **Exiger que le débogage USB soit désactivé (Android 4.2 ou ultérieur)** : ce paramètre spécifie si la détection de l’option de débogage USB est activée sur l’appareil.
+- **Exiger que « Rechercher les menaces de sécurité sur l'appareil » soit activé sur les appareils (Android 4.2-4.4)** : ce paramètre spécifie si la fonctionnalité **Vérifier les applications** est activée sur l’appareil.
+- **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)** : utilisez ce paramètre pour spécifier le niveau de correctif Android minimal. Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée dans le format AAAA-MM-JJ.
+- **Exiger l’activation de la protection de l’appareil contre les menaces** : utilisez ce paramètre pour sélectionner l’évaluation des risques de la solution Lookout MTP comme condition de conformité. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
+  - **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
+  - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
+  - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
+  - **Élevé** : cette option est la moins sécurisée. Essentiellement, elle autorise tous les niveaux de menace. Elle peut s’avérer utile si vous ne recourez à cette solution qu’à des fins de création de rapport.
+
+Pour plus d’informations, consultez [Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Paramètres de sécurité système
 
@@ -101,30 +100,35 @@ Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appar
 
 - **Exiger le chiffrement sur l’appareil mobile** : affectez la valeur **Oui** pour exiger que les appareils soient chiffrés pour pouvoir se connecter aux ressources. Les appareils sont chiffrés quand vous choisissez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.
 
-## <a name="device-health-and-security-settings"></a>Paramètres d’intégrité et de sécurité de l’appareil
-
-- **L’appareil ne doit pas être jailbreaké ou rooté :** si vous activez ce paramètre, les appareils jailbreakés ne sont pas détectés comme conformes.
-- **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues (Android 4.0 ou ultérieur)** : pour bloquer les appareils sur lesquels l’option **Sécurité** > **Sources inconnues** est sélectionnée, activez ce paramètre et affectez-lui la valeur **Oui**.
-
-### <a name="important"></a>Important
-
-Pour les applications en chargement indépendant, le paramètre **Sources inconnues** doit être activé. Appliquez cette stratégie de conformité uniquement si vous n’effectuez aucun chargement indépendant d’applications Android sur les appareils.
-
-- **Exiger que le débogage USB soit désactivé (Android 4.2 ou ultérieur)** : ce paramètre spécifie si la détection de l’option de débogage USB est activée sur l’appareil.
-- **Exiger que « Rechercher les menaces de sécurité sur l'appareil » soit activé sur les appareils (Android 4.2-4.4)** : ce paramètre spécifie si la fonctionnalité **Vérifier les applications** est activée sur l’appareil.
-- **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)** : utilisez ce paramètre pour spécifier le niveau de correctif Android minimal. Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée dans le format AAAA-MM-JJ.
-- **Exiger l’activation de la protection de l’appareil contre les menaces** : utilisez ce paramètre pour sélectionner l’évaluation des risques de la solution Lookout MTP comme condition de conformité. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
-  - **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
-  - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
-  - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
-  - **Élevé** : cette option est la moins sécurisée. Essentiellement, elle autorise tous les niveaux de menace. Elle peut s’avérer utile si vous ne recourez à cette solution qu’à des fins de création de rapport.
-
-Pour plus d’informations, consultez [Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
-
 ## <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
 
 - **Système d’exploitation minimal requis** : quand un appareil ne satisfait pas à la condition de version minimale du système d’exploitation, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 - **Version maximale autorisée du système d’exploitation** : quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur informatique. Jusqu’à ce qu’il y ait une modification des règles pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
+
+## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>Comment fonctionnent les paramètres non conformes avec les stratégies d’accès conditionnel ?
+
+Le tableau ci-dessous décrit la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
+
+--------------------
+
+|**Paramètre de stratégie**| **Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures** |
+| --- | ----|
+| **Configuration d’un code confidentiel ou mot de passe** |  En quarantaine |
+| **Chiffrement de l’appareil** | En quarantaine |
+| **Appareil jailbroken ou rooté** | En quarantaine (pas un paramètre) |
+| **profil de messagerie** | Non applicable |
+| **Version minimale du système d’exploitation** | En quarantaine |
+| **Version maximale du système d’exploitation** |   En quarantaine |
+| **Attestation de l’intégrité Windows** | Non applicable |
+
+--------------------------
+
+**Corrigé** : le système d’exploitation de l’appareil applique la conformité. (Par exemple, l’utilisateur est obligé de définir un code PIN.)+
+
+**En quarantaine** : le système d’exploitation de l’appareil n’applique pas la conformité. (Par exemple, les appareils Android n’obligent pas l’utilisateur à chiffrer l’appareil.) Quand l’appareil n’est pas conforme, les actions suivantes se produisent :+
+
+- L’appareil est bloqué si une stratégie d’accès conditionnel s’applique à l’utilisateur.
+- Le portail d’entreprise informe l’utilisateur des problèmes de conformité.
 
 <!--- ## Next steps
 

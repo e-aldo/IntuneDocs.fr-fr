@@ -2,8 +2,3 @@
 |--|
 |Vous recherchez de la documentation sur la version préliminaire du portail Intune Azure ? [Cliquez ici](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).|
 | |
-
-
-<!--HONumber=Jan17_HO2-->
-
-

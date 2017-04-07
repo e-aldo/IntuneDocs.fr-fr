@@ -1,11 +1,11 @@
 ---
-title: "Demander et fournir une assistance à distance pour les PC Windows | Microsoft Intune"
-description: "Décrit les étapes de l’utilisateur final et de l’administrateur informatique permettant de fournir une assistance à distance pour les PC Windows et démarrer un PC à distance."
+title: "Demander et fournir une assistance à distance pour les PC Windows | Microsoft Docs"
+description: "Décrit les étapes de l’utilisateur final et de l’administrateur informatique permettant de fournir une assistance à distance pour les bureaux Windows gérés et de démarrer un PC à distance."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,20 @@ ms.technology:
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab954204fffa6ad67a4a0d0f5e2e521c795eae31
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Demander et fournir une assistance à distance pour les PC Windows
 
-Microsoft Intune peut utiliser le logiciel [TeamViewer](https://www.teamviewer.com), acheté séparément, pour vous permettre de fournir une assistance à distance aux utilisateurs qui exécutent le client logiciel Intune. Lorsqu’un utilisateur demande de l’aide à partir de Microsoft Intune Center, vous êtes informé par une alerte, vous pouvez accepter la demande, puis fournir une assistance. Cette fonctionnalité remplace la fonctionnalité Assistance à distance Windows existante dans Intune.
+Les informations de cette rubrique s’appliquent uniquement aux bureaux Windows que vous gérez en tant que PC à l’aide du client logiciel Intune.
+
+Intune peut utiliser le logiciel [TeamViewer](https://www.teamviewer.com), acheté séparément, pour vous permettre de fournir une assistance à distance aux utilisateurs qui exécutent le client logiciel Intune. Lorsqu’un utilisateur demande de l’aide à partir de Microsoft Intune Center, vous êtes informé par une alerte, vous pouvez accepter la demande, puis fournir une assistance. Cette fonctionnalité remplace la fonctionnalité Assistance à distance Windows existante dans Intune.
 
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -30,7 +34,7 @@ Microsoft Intune peut utiliser le logiciel [TeamViewer](https://www.teamviewer.c
 Avant de pouvoir établir des demandes d’assistance à distance et d’y répondre, vérifiez que les conditions préalables suivantes sont respectées :
 
 - Vous devez vous être [inscrit pour obtenir un compte TeamViewer](https://login.teamviewer.com/LogOn#register) permettant de vous connecter au site web TeamViewer.
-- Les PC Windows que vous souhaitez administrer doivent être [gérés par le client de PC Windows](manage-windows-pcs-with-microsoft-intune.md).
+- Les PC Windows que vous souhaitez administrer doivent être [gérés par le client logiciel Windows](manage-windows-pcs-with-microsoft-intune.md)
 - Tous les systèmes d’exploitation des PC Windows pris en charge par Intune peuvent être administrés.
 
 ## <a name="configure-the-teamviewer-connector"></a>Configurer le connecteur TeamViewer
@@ -82,8 +86,3 @@ Quand vous aidez les utilisateurs à résoudre leurs problèmes, vous pouvez êt
 ### <a name="see-also"></a>Voir aussi
 
 [Tâches courantes de gestion des PC Windows avec le client logiciel Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Nov16_HO4-->
-
-

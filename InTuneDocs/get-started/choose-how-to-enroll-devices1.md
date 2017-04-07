@@ -1,26 +1,30 @@
 ---
-title: Choisir comment inscrire des appareils mobiles | Microsoft Intune
+title: Choisir comment inscrire des appareils mobiles | Microsoft Docs
 description: "Décider comment inscrire des appareils mobiles dans Intune en répondant à quelques questions simples"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
-ms.topic: article
+ms.date: 02/16/2017
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
+ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 09c2940a99577769df1482314c488acf5823b51f
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 0b368ad490672c3d554dcb004e07b883e4851ee1
+ms.lasthandoff: 12/16/2016
 
 
 ---
 
 # <a name="choose-how-to-enroll-mobile-devices"></a>Choisir comment inscrire des appareils mobiles
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Vos réponses aux questions suivantes vous permettront de déterminer la méthode d’inscription qui convient le mieux pour les appareils que vous gérez.
 
@@ -34,9 +38,4 @@ Vos réponses aux questions suivantes vous permettront de déterminer la méthod
 - **Appareils personnels** : inscription de type « BYOD » (Apportez votre propre appareil). Les utilisateurs peuvent installer sur leur appareil l’application Portail d’entreprise Intune, puis inscrire leur appareil pour pouvoir accéder aux ressources d’entreprise telles que la messagerie, les applications d’entreprise, les données d’entreprise et le support.  
 
 - **Appareils d’entreprise** : les appareils d’entreprise peuvent être inscrits de différentes façons, selon les besoins de l’entreprise et les types d’appareils gérés.
-
-
-
-<!--HONumber=Nov16_HO4-->
-
 

@@ -2,8 +2,8 @@
 title: "Utilisation de la réinitialisation à distance pour protéger les données | Microsoft Docs"
 description: "Intune fournit des fonctionnalités de réinitialisation sélective et complète pour supprimer des données d’entreprise sensibles et supprimer l’accès à de nombreuses ressources d’entreprise."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
 ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
+ms.lasthandoff: 02/08/2017
 
 
 ---
@@ -170,9 +171,4 @@ Ce rapport indique également les personnes qui ont effectué les actions.
 [Mettre des appareils hors service](retire-devices-from-microsoft-intune-management.md)
 
 [Réinitialisation sélective de Windows pour la gestion des données d’appareil](http://technet.microsoft.com/library/dn486874.aspx)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

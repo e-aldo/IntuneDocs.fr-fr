@@ -1,22 +1,24 @@
 ---
-title: "Configurer des mises à niveau vers l’édition Windows 10 avec Intune | Préversion Intune Azure | Microsoft Docs"
+title: "Configurer des mises à niveau Windows 10 avec Intune"
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Apprenez à utiliser Intune pour mettre à niveau les appareils Windows 10 que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 49da713cfe61ce21501e0a8e0f6e0c225b2bc291
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,9 +29,10 @@ ms.lasthandoff: 02/16/2017
 
 Utilisez les informations de cette rubrique pour découvrir comment configurer un profil de mise à niveau Windows 10. Ce profil vous permet de mettre à niveau automatiquement les appareils qui exécutent les versions suivantes de Windows 10 vers une version plus récente :
 
-- Windows 10 Desktop
+- Windows 10 Famille
 - Windows 10 Holographique
 - Windows 10 Mobile
+
 
 Les chemins de mise à niveau pris en charge sont les suivants :
 
@@ -37,6 +40,7 @@ Les chemins de mise à niveau pris en charge sont les suivants :
 - De Windows 10 Famille vers Windows 10 Éducation
 - De Windows 10 Mobile vers Windows 10 Mobile Entreprise
 - De Windows 10 Holographique Professionnel vers Windows 10 Holographique Entreprise
+
 
 ## <a name="before-you-start"></a>Avant de commencer
 Avant de commencer à mettre à niveau des appareils vers la dernière version, vous avez besoin d’un des éléments suivants :
@@ -48,7 +52,7 @@ Avant de commencer à mettre à niveau des appareils vers la dernière version, 
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
 4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de mise à niveau d’édition.

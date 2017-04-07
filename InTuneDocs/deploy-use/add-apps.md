@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
-ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -33,10 +34,10 @@ Avant de commencer à déployer des applications avec Microsoft Intune, vous dev
 
 |Type d’application|Détails|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Ce type d’application doit prendre en charge une installation sans assistance et sans entrée utilisateur. La documentation de votre application doit inclure les options de ligne de commande appropriées pour installer l’application sans assistance (par exemple, **/q**). Vous trouverez une liste des options de ligne de commande courantes dans [Commutateurs de ligne de commande pour l’outil Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Tous les fichiers et dossiers supplémentaires qu’exige le programme d’installation de l’application doivent être disponibles à l’emplacement que vous spécifiez pour les fichiers d’installation de l’application.<br><br>Dans la plupart des cas, les fichiers Windows Installer (.msi) et les fichiers du correctif Windows Installer (.msp) n’ont pas besoin d’Intune pour installer des arguments de ligne de commande. Consultez la documentation de votre application.<br><br>Si des arguments de ligne de commande sont requis, vous devez les entrer sous la forme de paires Nom=Valeur (telles que TRANSFORMS=custom_transform.mst).|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Ce type d’application doit prendre en charge une installation sans assistance et sans entrée utilisateur. La documentation de votre application doit inclure les options de ligne de commande appropriées pour installer l’application sans assistance (par exemple, **/q**). Vous trouverez une liste des options de ligne de commande courantes dans [Commutateurs de ligne de commande pour l’outil Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Tous les fichiers et dossiers supplémentaires qu’exige le programme d’installation de l’application doivent être disponibles à l’emplacement que vous spécifiez pour les fichiers d’installation de l’application.<br><br>Dans la plupart des cas, les fichiers Windows Installer (.msi) et les fichiers du correctif Windows Installer (.msp) n’ont pas besoin d’Intune pour installer des arguments de ligne de commande. Consultez la documentation de votre application.<br><br>Si des arguments de ligne de commande sont requis, vous devez les entrer sous la forme de paires Nom=Valeur (telles que TRANSFORMS=custom_transform.mst).<br><br>Ce type d’application s’applique uniquement aux ordinateurs qui exécutent le client logiciel Intune.|
 |**Package d’application pour Android (&#42;.apk)**|Pour déployer des applications Android, vous devez disposer d’un package .apk valide.|
 |**Package d’application pour iOS (&#42;.ipa)**|Pour déployer des applications iOS, vous devez disposer d’un package .ipa valide.<br><br>Le package .ipa doit être signé par Apple et la date d’expiration dans le profil de configuration doit être valide. Intune peut distribuer des applications iOS de certificat d’entreprise.<br><br>Toutes les applications de certificat du développeur Apple ne sont pas prises en charge.<br><br>Votre entreprise doit être inscrite au programme iOS Developer Enterprise Program.<br><br>Assurez-vous que le pare-feu de votre organisation autorise l’accès aux sites web de configuration et de certification iOS.<br><br>Vous n’avez pas besoin de déployer un fichier manifeste (.plist) avec l’application.|
-|**Package d’application Windows Phone (&#42;.xap, .appx, .appxbundle)**|Pour déployer des applications, vous aurez besoin d’un certificat de signature de code mobile d’entreprise. Pour plus d’informations, consultez [Configurer la gestion de Windows Phone avec Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).|
+|**Package d’application Windows Phone (&#42;.xap, .appx, .appxbundle)**|Pour déployer des applications, vous aurez besoin d’un certificat de signature de code mobile d’entreprise. Pour plus d’informations, consultez [Configurer la gestion de Windows Phone avec Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Package d’application Windows (.appx, .appxbundle)**|Pour déployer des applications, vous aurez besoin d’un certificat de signature de code mobile d’entreprise. Pour plus d’informations, consultez [Configurer la gestion des appareils Windows avec Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows Installer par le biais de la gestion des appareils mobiles (&#42;.msi)**|Vous utilisez cette application pour créer et déployer des applications Windows Installer sur des PC inscrits qui exécutent Windows 10. Ces PC sont gérés via la gestion des appareils mobiles (MDM).<br /><br />Vous ne pouvez charger qu’un seul fichier avec l’extension .msi.<br><br>Le code de produit et la version de produit du fichier sont utilisés pour la détection d’applications.<br><br>Le comportement de redémarrage par défaut de l’application sera utilisé. Intune ne contrôle pas ceci.<br><br>Les packages MSI par utilisateur sont installés pour un utilisateur unique.<br><br>Les packages MSI par ordinateur sont installés pour tous les utilisateurs de l’appareil.<br><br>Les packages MSI en mode double sont actuellement installés pour tous les utilisateurs de l’appareil uniquement.<br><br>Les mises à jour d’application sont prises en charge quand les codes de produit MSI de toutes les versions sont identiques.<br>
 Tous les types d’application de programme d’installation de logiciel sont téléchargés vers votre espace de stockage cloud.
@@ -94,9 +95,4 @@ Ainsi, quand vous chargerez l’application sur Intune, tous les fichiers conten
 ## <a name="next-steps"></a>Étapes suivantes
 
 Vous devez ajouter les applications à la console Intune avant de les déployer. Vous pouvez ajouter des applications pour des [appareils inscrits](add-apps-for-mobile-devices-in-microsoft-intune.md) ou pour des [PC Windows que vous gérez avec le logiciel client Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

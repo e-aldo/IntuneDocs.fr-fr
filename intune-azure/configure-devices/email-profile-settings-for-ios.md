@@ -1,11 +1,12 @@
 ---
-title: "Paramètres de messagerie Intune pour les appareils iOS | Préversion Intune Azure | Microsoft Docs"
+title: "Paramètres de messagerie Intune pour les appareils iOS"
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez les paramètres Intune que vous pouvez utiliser pour configurer les connexions à la messagerie sur les appareils iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 186630903a606842406ff1d76115c1fa7d1c962e
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 78f99bba07180c06f979fec997a7bfb749d879c8
+ms.openlocfilehash: f18fd3ceee5c73a96444092691c590c7d9a7419c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -34,7 +36,7 @@ ms.lasthandoff: 02/16/2017
 - **Méthode d’authentification** : sélectionnez **Nom d’utilisateur et mot de passe** ou **Certificats** comme méthode d’authentification utilisée par le profil de messagerie.
     - Si vous avez sélectionné **Certificats**, sélectionnez un profil de certificat SCEP ou PKCS client que vous avez créé précédemment qui servira à authentifier la connexion Exchange.
 - **SSL** : utilisez la communication SSL (Secure Sockets Layer) pour envoyer et recevoir des e-mails, et communiquer avec le serveur Exchange.
-- **S/MIME** : envoyez le courrier électronique sortant à l’aide du chiffrement S/MIME.
+- **S/MIME** : envoyez des e-mails en utilisant la signature S/MIME.
     - Si vous avez sélectionné **Certificats**, sélectionnez un profil de certificat SCEP ou PKCS client que vous avez créé précédemment qui servira à authentifier la connexion Exchange.
 - **Nombre d’e-mails à synchroniser** : sélectionnez le nombre de jours de courrier électronique à synchroniser ou sélectionnez **Illimité** pour synchroniser tous les messages disponibles.
 - **Autoriser le déplacement des messages vers d’autres comptes de messagerie** : cette option permet aux utilisateurs de déplacer les e-mails entre les différents comptes configurés sur l’appareil.

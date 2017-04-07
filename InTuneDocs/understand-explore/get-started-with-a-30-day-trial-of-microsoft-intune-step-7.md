@@ -1,5 +1,5 @@
 ---
-title: Convertir en abonnement payant | Microsoft Intune
+title: Convertir en abonnement payant | Microsoft Docs
 description: "Ce que vous devez savoir sur les abonnements et licences après avoir configuré votre essai gratuit d’Intune de 30 jours."
 keywords: 
 author: lindavr
@@ -12,14 +12,19 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a2b037e0c066422d53d71ffd401deb3e48a2ba7f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="ways-to-subscribe-to-microsoft-intune"></a>Moyens de s’abonner à Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Si vous achetez au moins 150 licences pour Microsoft Intune dans un plan éligible, vous pouvez utiliser l’« offre du Centre FastTrack », un service qui vous permet d’obtenir l’aide de spécialistes Microsoft pour préparer votre environnement pour Intune. Consultez [Offre Enterprise Mobility + Security (EMS) du Centre FastTrack](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 Vous pouvez convertir votre version d’évaluation gratuite d’Intune en abonnement payant de l’une des façons suivantes :
@@ -31,9 +36,4 @@ Vous pouvez convertir votre version d’évaluation gratuite d’Intune en abonn
 -   **Contrat Entreprise** (&gt;250 utilisateurs) : programme de gestion de licences idéal pour les organisations de plus de 250 utilisateurs. Il offre la possibilité de choisir entre un logiciel sur site et des services en ligne pour mieux répondre aux besoins de vos utilisateurs et vous permet d'optimiser vos dépenses technologiques. Pour plus d'informations, contactez votre responsable de compte Microsoft ou un revendeur local, ou reportez-vous au [site dédié aux licences en volume pour les entreprises](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 
 -   **Programme d’abonnement en ligne** (&lt; 250 utilisateurs) : [programme de licence en volume Online Services](http://www.microsoft.com/licensing/online-services/default.aspx) spécifiquement conçu pour les organisations de moins de 250 utilisateurs. Utilisez ce programme pour vous abonner aux services Intune, les gérer et les déployer.
-
-
-
-<!--HONumber=Nov16_HO5-->
-
 

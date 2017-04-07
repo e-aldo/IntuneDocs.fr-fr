@@ -1,12 +1,13 @@
 # Introduction
 ## [Qu’est-ce que la préversion du portail Azure ?](introduction/what-is-microsoft-intune.md)
+## [Fonctionnalités d’Intune dans Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Prise en main
 <!---(introduction/get-started.md) --->
 ### [S’inscrire à une évaluation gratuite](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [Nouveautés](introduction/whats-new.md)
 ## [Problèmes connus](introduction/known-issues-in-the-intune-preview.md)
 ## [Obtenir un support](introduction/how-to-get-support-for-microsoft-intune.md)
-<!--- 
+<!---
 
 ## [Related resources](introduction/related-resources.md)
 
@@ -33,6 +34,7 @@
 ### [Obtenir un jeton DEP Apple](enroll-devices/get-apple-dep-token.md)
 ### [Choisir comment inscrire des appareils iOS](enroll-devices/choose-ios-enrollment-method.md)
 ## Guide pratique
+### [Affecter des licences aux utilisateurs](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Inscrire des appareils Android](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Inscrire des appareils iOS
 #### [Inscrire des appareils iOS à l’aide de l’Assistant Configuration](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
@@ -41,7 +43,7 @@
 #### [Inscrire des appareils iOS à l’aide du programme d’inscription des appareils](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Inscrire des appareils avec le gestionnaire d’inscription d’appareil](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Inscrire des appareils macOS](enroll-devices/enroll-macos-devices.md)
-### [Inscrire des appareils Windows](enroll-devices/enroll-window-devices.md)
+### [Inscrire des appareils Windows](enroll-devices/enroll-windows-devices.md)
 ### Gérer l’inscription des appareils
 #### [Créer des conditions générales](enroll-devices/create-terms-and-conditions.md)
 #### [Définir des restrictions d’inscription](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +110,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## Guide pratique
 ### [Configurer un profil d’appareil](configure-devices/how-to-create-device-profiles.md)
+
+### [Configurer des fonctionnalités d’appareil](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [MacOS](configure-devices/device-features-for-macos.md)
+
 ### [Configurer des restrictions sur les appareils](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
@@ -138,6 +145,7 @@
 #### [Windows 8.1 et Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Configurer les paramètres de mise à niveau Windows 10](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Configurer les paramètres Windows Update Entreprise](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configurer des certificats](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
@@ -168,6 +176,8 @@
 ### [Créer une stratégie de compatibilité Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Créer une stratégie de compatibilité iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Créer une stratégie de compatibilité Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Créer des Actions en cas de non-conformité](set-device-compliance/actions-for-noncompliance.md)
+### [Surveiller la conformité des appareils](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
@@ -178,7 +188,7 @@
 ### [Installer le connecteur Exchange sur site](conditional-access/install-intune-on-premises-exchange-connector.md)
 ### [Créer une stratégie d’accès conditionnel](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
 
-# Contrôle d'accès
+# Contrôle d’accès
 ## [Qu’est-ce que le contrôle d’accès en fonction du rôle ?](access-control/role-based-access-control.md)
 
 # Développer et personnaliser

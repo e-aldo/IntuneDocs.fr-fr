@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -162,13 +163,14 @@ Vous pouvez configurer un VPN à la demande pour les appareils iOS 8.0 et versi
 1. Dans la page de configuration de la stratégie, recherchez **Règles à la demande pour cette connexion VPN**. Les colonnes sont intitulées **Correspondance** (condition vérifiée par les règles) et **Action** (action déclenchée par la stratégie quand la condition est remplie).
 2. Choisissez **Ajouter** pour créer une règle. Vous pouvez configurer deux types de correspondances dans la règle. Vous ne pouvez configurer qu’un de ces types par règle.
   - **SSID**, qui font référence aux réseaux sans fil.
-  - **Domaines de recherche DNS**.  Vous pouvez utiliser des noms de domaine complets, tels que *team.corp.contoso.com*, ou des domaines tels que *contoso.com*, ce qui revient à utiliser * *.contoso.com*.
+  - **Domaines de recherche DNS**.  Vous pouvez utiliser des noms de domaine complets, tels que *team.corp.contoso.com*, ou des domaines tels que *contoso.com*, ce qui revient à utiliser **.contoso.com*.
 3. Facultatif : fournissez une sonde de chaîne d’URL, qui est une URL que la règle utilise comme test. Si l’appareil sur lequel ce profil est installé peut accéder à cette URL sans redirection, la connexion VPN est établie et l’appareil se connecte à l’URL cible. L’utilisateur ne voit pas le site de la sonde de chaîne d’URL. Par exemple, une sonde de chaîne d’URL peut être l’adresse d’un serveur web d’audit qui vérifie la compatibilité de l’appareil avant la connexion du VPN. Autre exemple, l’URL teste la capacité du VPN à se connecter à un site avant de connecter l’appareil à l’URL cible via le VPN.
 4. Choisissez une des actions suivantes :
   - **Se connecter**
   - **Évaluer la connexion**, qui a trois paramètres. a. **Action de domaine** : Choisissez **Se connecter si nécessaire** ou **Ne jamais se connecter**
     . b. **Liste des domaines séparés par une virgule** : Ne configurez cette option que si vous choisissez **Se connecter si nécessaire** comme **Action de domaine**
     . c. **Sonde de chaîne d’URL obligatoire** : URL HTTP ou HTTPS (recommandé) telle que *https://vpntestprobe.contoso.com*. La règle vérifie s’il existe une réponse en provenance de cette adresse. Si ce n’est pas le cas et que l’option **Action de domaine** est définie sur **Se connecter si nécessaire**, le VPN est déclenché.
+      
      > [!TIP]
      >
      >Par exemple, vous pouvez utiliser cette action si une partie des sites de votre réseau d’entreprise nécessite une connexion de réseau d’entreprise directe ou VPN. Si vous répertoriez *corp.contoso.com* dans **Liste des domaines de recherche DNS séparés par une virgule**, vous pouvez choisir **Se connecter si nécessaire**, puis répertorier des sites spécifiques au sein de ce réseau qui peuvent nécessiter un VPN, tels que *sharepoint.corp.contoso.com*. La règle vérifie si *vpntestprobe.contoso.com* est accessible. Si ce n’est pas le cas, le VPN est déclenché pour le site sharepoint.
@@ -192,9 +194,4 @@ Les règles propres à un domaine sont évaluées avant les règles relatives à
 Une fois le déploiement réussi, les utilisateurs voient le nom de la connexion VPN que vous avez spécifié dans la liste des connexions VPN sur leur appareil.
 
 Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'ensemble** de l'espace de travail **Stratégie** , les problèmes liés à la stratégie qui nécessitent votre attention. En outre, le Tableau de bord contient un récapitulatif de l'état.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

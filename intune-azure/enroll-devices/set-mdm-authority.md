@@ -3,8 +3,8 @@ title: "Définir l’autorité de gestion des appareils mobiles"
 titleSuffix: Intune Azure preview
 description: "Intune Azure (préversion) : découvrez comment définir l’autorité de gestion des appareils mobiles dans Intune. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -43,9 +44,4 @@ Le paramètre d’autorité de gestion des appareils mobiles détermine la faço
 2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis **Vue d’ensemble**.
 
 3. Dans le panneau **Démarrer la gestion des appareils**, choisissez **Définir l’autorité MDM sur Intune**. Un message indique que vous avez défini Intune comme autorité de gestion des appareils mobiles.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

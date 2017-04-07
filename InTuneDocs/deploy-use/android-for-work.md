@@ -4,7 +4,7 @@ description: "Intune gère Android for Work pour renforcer la confidentialité e
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a5c024c2139536f004799b18a0f6d1d1eb4875b2
-ms.openlocfilehash: bdacb61d1713bf24b2f33f144afa0db356e10ee0
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: e04ab9c14ea6e7cc38430ec6a4d478a65e23ba96
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,9 +41,9 @@ Intune fournit un éventail de paramètres généraux intégrés que vous pouvez
 
 ## <a name="app-publishing-and-distribution"></a>Distribution et publication des applications
 
-Le service Google Play for Work fait partie intégrante de la gestion et de la distribution des applications Android for Work. Toutes les applications déployées sur les appareils Android for Work dans le profil professionnel proviennent du service Play for Work. Pour gérer et déployer des applications dans le Play Store, vous vous connectez comme administrateur Intune au site web Play for Work et approuvez les applications pour votre client Intune. Ces applications se synchronisent avec la console Intune, où elles peuvent ensuite être déployées et gérées à l’aide d’Intune. Les applications métier développées par votre organisation doivent être publiées sur Play for Work à l’aide de la console de publication d’applications Android de Google. Les applications métier doivent être configurées dans la console de publication d’applications Android pour restreindre l’accès à votre organisation.
+Le service Google Play for Work fait partie intégrante de la gestion et de la distribution des applications Android for Work. Toutes les applications déployées sur les appareils Android for Work dans le profil professionnel proviennent du service Play for Work. Pour gérer et déployer des applications dans le Play Store, vous vous connectez au site web de Google Play en tant qu’administrateur de votre entreprise pour la gestion de Google. Vous pouvez approuver des applications pour le un déploiement Android for Work afin qu’elles apparaissent dans les profils de travail des appareils. Ces applications peuvent alors se synchroniser à la console Intune où elles peuvent ensuite être déployées et gérées à l’aide d’Intune. Les applications métier développées par votre organisation doivent être publiées sur Play for Work à l’aide de la console de publication d’applications Android de Google. Les applications métier doivent être configurées dans la console de publication d’applications Android pour restreindre l’accès à votre organisation.
 
-Les applications peuvent être installées sans que l’utilisateur n’intervienne ni n’autorise une **installation provenant de sources inconnues**. Pour rechercher et installer des applications facultatives ou disponibles, l’utilisateur peut utiliser l’application Play Store sur son appareil. En savoir plus sur le [déploiement d’applications pour Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
+Les applications peuvent être installées sans que l’utilisateur n’intervienne ni n’autorise une **installation provenant de sources inconnues**. Pour rechercher et installer des applications facultatives ou disponibles, l’utilisateur peut parcourir le magasin Play for Work sur son appareil. En savoir plus sur le [déploiement d’applications pour Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
 
 ## <a name="app-configuration"></a>Configuration de l’application
 
@@ -51,15 +51,15 @@ Android for Work fournit une infrastructure pour le déploiement de valeurs de c
 
 ## <a name="email-configuration"></a>Configuration de la messagerie
 
-Android for Work ne fournit pas d’application de messagerie par défaut ou de profil de messagerie natif, contrairement à iOS. Par contre, vous pouvez définir les configurations de messagerie en appliquant les paramètres de configuration d’application aux applications de messagerie qui les prennent en charge. Gmail et Nine Work sont deux applications clientes Exchange ActiveSync (EAS) dans le Play Store qui prennent en charge la configuration avec la configuration d’applications Android for Work.
+Android for Work ne fournit pas d’application de messagerie par défaut ou d’objet de profil de messagerie natif comme celui fourni par iOS. Par contre, vous pouvez définir les configurations de messagerie en appliquant les paramètres de configuration d’application aux applications de messagerie qui les prennent en charge. Gmail et Nine Work sont deux applications clientes Exchange ActiveSync (EAS) dans le Play Store qui prennent en charge la configuration avec la configuration d’applications Android for Work.
 
-Intune fournit des modèles de configuration pour les applications Gmail et Nine Work. Les autres applications de messagerie qui prennent en charge les profils de configuration d’application peuvent être configurées avec des stratégies de configuration d’application mobile.
+Intune fournit des modèles de configuration pour les applications Gmail et Nine Work gérées en tant qu’applications de travail. Les autres applications de messagerie qui prennent en charge les profils de configuration d’application peuvent être configurées avec des stratégies de configuration d’application mobile.
 
 Si vous utilisez un accès conditionnel Exchange ActiveSync pour des appareils Android for Work, vous devez utiliser l’application de messagerie Gmail ou Nine Work. L’application Microsoft Outlook pour Android, ou toute autre application de messagerie qui utilise l’authentification moderne par le biais d’ADAL, est également prise en charge. En savoir plus sur les [profils de messagerie pour l’e-mail d’entreprise](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
-## <a name="mobile-app-management-policies"></a>Stratégies de gestion des applications mobiles
+## <a name="app-protection-policies"></a>Stratégies de protection des applications
 
-Les stratégies de restriction appliquées aux applications activées pour la gestion des applications mobiles (GAM) sont entièrement prises en charge dans le profil professionnel et dans le profil personnel. Vous pouvez publier des applications métier dans la console de publication d’applications Android à l’adresse https://play.google.com/apps/publish. Cette console inclut une option permettant de réserver les applications à votre organisation. Explorez les [paramètres de stratégie de conformité d’Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md). Pour obtenir des informations générales sur les stratégies de gestion des applications mobiles, consultez [Stratégies de gestion des applications mobiles](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+Les stratégies de protection des applications sont entièrement prises en charge dans le profil de travail du profil personnel. Vous pouvez publier des applications métier dans la console de publication d’applications Android à l’adresse https://play.google.com/apps/publish. Cette console inclut une option permettant de réserver les applications à votre organisation. Explorez les [paramètres de stratégie de conformité d’Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md). Pour obtenir des informations générales sur les stratégies de protection des applications, consultez [Stratégies d’application](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 ## <a name="vpn-profiles"></a>Profils VPN
 

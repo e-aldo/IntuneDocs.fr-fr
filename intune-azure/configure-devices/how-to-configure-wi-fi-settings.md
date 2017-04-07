@@ -1,11 +1,12 @@
 ---
-title: "Guide pratique pour configurer des paramètres Wi-Fi d’Intune | Préversion Intune Azure | Microsoft Docs"
+title: "Guide pratique pour configurer des paramètres Wi-Fi Intune"
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Apprenez à utiliser Intune pour configurer des connexions Wi-Fi sur les appareils que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: bc7d94f70c65f06d10fffa04788072e504a2d071
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 34b906301fca2e91f2c014b9959c305a39f46af1
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -47,7 +49,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
 4. Dans le panneau **Créer un profil** , saisissez un **Nom** et une **Description** pour votre profil Wi-Fi.
@@ -67,6 +69,6 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
-Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareils](how-to-assign-device-profiles.md).
+Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](how-to-assign-device-profiles.md).
 
 

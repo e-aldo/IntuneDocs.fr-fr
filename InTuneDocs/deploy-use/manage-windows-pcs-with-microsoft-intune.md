@@ -2,10 +2,10 @@
 title: Gestion de PC avec logiciel client | Microsoft Docs
 description: "Gérer des PC Windows en installant le logiciel du client Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Gestion des ordinateurs Windows avec le logiciel client Intune PC
-L’[inscription de PC Windows en tant qu’appareils mobiles](set-up-windows-device-management-with-microsoft-intune.md) est la méthode préférée d’inscription de PC Windows dans Intune, mais vous pouvez aussi choisir d’inscrire et de gérer des PC Windows en installant le logiciel client Intune, comme décrit dans cette rubrique.
+L’[inscription de PC Windows en tant qu’appareils mobiles](set-up-windows-device-management-with-microsoft-intune.md) est la méthode préférée d’inscription de PC Windows dans Intune. Cependant, en tant qu’administrateur informatique, vous pouvez aussi choisir d’inscrire et de gérer des PC Windows en installant le logiciel client Intune, comme décrit dans cette rubrique. Le client logiciel Intune n’est pas pris en charge dans le cadre de l’inscription en tant qu’appareil mobile.
 
 Intune gère les PC Windows avec des stratégies semblables aux objets de stratégie de groupe (GPO) des services de domaine Active Directory de Windows Server. Si vous gérez des ordinateurs joints à un domaine Active Directory avec Intune, [vérifiez que les stratégies Intune ne sont pas en conflit avec les objets de stratégie de groupe](resolve-gpo-and-microsoft-intune-policy-conflicts.md) en place dans votre organisation. Vous pouvez en savoir plus sur les [GPO](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Stratégies et déploiements d’applications pour le logiciel client Intune
 
-Bien que le logiciel client Intune prenne en charge des [fonctionnalités de gestion qui protègent vos PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) en gérant les mises à jour logicielles, le Pare-feu Windows et Endpoint Protection, les PC gérés avec le logiciel client Intune ne peuvent pas être ciblés par d’autres stratégies Intune, notamment les paramètres de stratégie **Windows** spécifiques à la gestion des appareils mobiles. 
+Bien que le logiciel client Intune prenne en charge des [fonctionnalités de gestion qui protègent vos PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) en gérant les mises à jour logicielles, le Pare-feu Windows et Endpoint Protection, les PC gérés avec le logiciel client Intune ne peuvent pas être ciblés par d’autres stratégies Intune, notamment les paramètres de stratégie **Windows** spécifiques à la gestion des appareils mobiles.
 
 Quand vous utilisez le logiciel client Intune pour gérer des PC Windows, vous pouvez utiliser uniquement les stratégies figurant dans la section **Gestion de l’ordinateur**.
 
@@ -70,7 +70,7 @@ En outre, lors du déploiement d’applications, vous pouvez utiliser uniquement
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Fonctionnalités de gestion des ordinateurs avec le logiciel client Intune
 
-Une fois le logiciel client Intune installé, les fonctionnalités de gestion sont les suivantes : 
+Une fois le logiciel client Intune installé, les fonctionnalités de gestion sont les suivantes :
 
 - [Gestion des applications](deploy-apps-in-microsoft-intune.md)
 

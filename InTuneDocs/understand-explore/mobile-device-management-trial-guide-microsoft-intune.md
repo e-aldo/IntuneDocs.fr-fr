@@ -16,6 +16,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -80,9 +81,8 @@ Avant que les utilisateurs ne puissent inscrire leurs appareils iOS, vous devez 
 1. **Obtenir une demande de signature de certificat**<br/>
 Connectez-vous à Intune avec votre compte d’administrateur et accédez à **Administration** > **Gestion des appareils mobiles** > **iOS et Mac OS X** > **Télécharger un certificat APNs**, puis cliquez sur **Télécharger la demande de certificat APNs**. Enregistrez localement le fichier de demande de signature de certificat (.csr). Le fichier .csr est utilisé pour demander un certificat de relation d'approbation à partir du portail Apple Push Certificates. <!--- screen shot--->
 2.    **Obtenir un certificat du service Apple Push Notification**<BR/>
-Accédez au [portail Apple Push Certificates](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2) et connectez-vous avec votre ID Apple d’entreprise pour créer le certificat APNs à l’aide du fichier .csr. Après avoir choisi **Upload on Apple’s Push Certificate Portal** (Télécharger sur le portail Apple Push Certificate), vous recevrez un fichier .json qui ne peut pas être utilisé pour APNs. Terminez le téléchargement, revenez au portail Apple Push Certificate pour obtenir des certificats pour serveurs tiers, puis choisissez **Télécharger**.
-
- Téléchargez le certificat APNs (.pem) et enregistrez le fichier localement. Cet ID Apple doit être utilisé ultérieurement pour renouveler votre certificat APNs.
+Accédez au [portail Apple Push Certificates](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2) et connectez-vous avec votre ID Apple d’entreprise pour créer le certificat APNs à l’aide du fichier .csr. Après avoir choisi **Upload on Apple’s Push Certificate Portal** (Télécharger sur le portail Apple Push Certificate), vous recevrez un fichier .json qui ne peut pas être utilisé pour APNs. Terminez le téléchargement, revenez au portail Apple Push Certificate pour obtenir des certificats pour serveurs tiers, puis choisissez **Télécharger**.<br/>
+Téléchargez le certificat APNs (.pem) et enregistrez le fichier localement. Cet ID Apple doit être utilisé ultérieurement pour renouveler votre certificat APNs.
 3.    **Ajouter le certificat APNs à Intune**<BR/>
 Dans la console d’administration Microsoft Intune, accédez à **Administration** > **Gestion des appareils mobiles** > **iOS et Mac OS X** > **Télécharger un certificat APNs**, puis choisissez **Télécharger le certificat APNs**. Accédez au fichier de certificat (.pem), choisissez **Ouvrir**, puis entrez votre ID Apple. Avec le certificat APNs. Intune peut inscrire et gérer des appareils iOS en envoyant la stratégie aux appareils mobiles inscrits.
 4.    **Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise.**<br/>
@@ -118,9 +118,4 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer des groupes pour organiser les utilisateurs et les appareils](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

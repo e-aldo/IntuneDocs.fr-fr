@@ -1,120 +1,94 @@
 ---
-title: Migration vers des groupes Azure Active Directory | Microsoft Intune
+title: Migration vers des groupes Azure Active Directory | Microsoft Docs
 description: "Comment vos groupes sont migrés d’Intune vers Azure AD"
 keywords: 
-author: Mtillman
-ms.author: mtillman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
-ms.date: 10/10/2016
+ms.date: 12/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e14bbadc4293b7b963197b35704a7170e4fc29e8
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
+ms.lasthandoff: 03/11/2017
 
 
 ---
 
-## <a name="the-new-admin-experience-for-groups"></a>Nouvelle expérience d’administration pour les groupes
-    
-Suite à vos commentaires concernant le souhait d’avoir une expérience de regroupement et de ciblage unique dans Enterprise Mobility & Security, nous avons décidé de convertir les groupes Intune en groupes de sécurité basés sur Azure Active Directory. Cela permet d’unifier la gestion des groupes dans Intune et Azure Active Directory (Azure AD). La nouvelle expérience vous évitera d’avoir à dupliquer les groupes entre les services, et fournit une extensibilité à l’aide de PowerShell et Graph. 
+# <a name="a-new-way-of-using-groups-in-intune"></a>Une nouvelle façon d’utiliser les groupes dans Intune
 
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>Quand et comment serai-je migré vers la nouvelle expérience de groupes ?
-Les clients actuels seront migrés sur une période donnée, qui ne commencera pas avant décembre 2016. Vous recevrez un avis avant la migration de vos groupes. Si vous avez des questions concernant la migration, contactez notre équipe de migration à l’adresse [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-### <a name="what-new-features-will-be-available-to-me"></a>Quelles seront les nouvelles fonctionnalités à ma disposition ?
-Voici les nouvelles fonctionnalités introduites : 
- 
--    Les groupes de sécurité Azure AD seront pris en charge dans Intune pour tous les types de déploiements. 
--    Les groupes de sécurité Azure AD prendront en charge le regroupement d’appareils et d’utilisateurs.
--    Les groupes de sécurité Azure AD prendront en charge les groupes dynamiques avec des attributs d’appareils Intune. Par exemple, vous pourrez regrouper des appareils de manière dynamique en fonction de la plateforme (comme iOS). Ainsi, quand un nouvel appareil iOS sera inscrit dans votre organisation, il sera ajouté automatiquement au groupe d’appareils dynamique iOS.
--    Partage des expériences d’administration pour la gestion de groupe entre Azure AD et Intune.
-- Le *rôle d’administrateur de Service Intune* sera ajouté à Azure AD pour permettre aux administrateurs de service dans Intune d’effectuer des tâches de gestion de groupe dans Azure AD.
+Nous avez tenu compte de vos commentaires et apporté des modifications à l’utilisation des groupes dans Microsoft Intune.
+Nous migrons actuellement tous les groupes Intune de nos clients vers des groupes de sécurité Azure Active Directory.
 
- 
-### <a name="what-intune-functionality-wont-be-available"></a>Quelles seront les fonctionnalités Intune qui ne seront pas disponibles ?
-Malgré l’amélioration de l’expérience de groupe, certaines fonctionnalités Intune ne seront pas disponibles après la migration.
+Vous pourrez ainsi utiliser la même expérience de groupes dans l’ensemble des applications Enterprise Mobility + Security et Azure AD. En outre, vous pourrez utiliser PowerShell et l’API Graph pour étendre et personnaliser cette nouvelle fonctionnalité.
 
-#### <a name="group-management-functionality"></a>Fonctionnalité de gestion de groupe
+Les groupes de sécurité Azure AD prennent en charge tous les types de déploiements Intune pour les utilisateurs et les appareils. En outre, vous pouvez utiliser des groupes dynamiques Azure AD qui se mettent automatiquement à jour en fonction des attributs que vous fournissez. Par exemple, vous pouvez créer un groupe d'appareils exécutant iOS 9. Chaque fois qu’un nouvel appareil fonctionnant sous iOS 9 est inscrit, il sera automatiquement ajouté au groupe dynamique.
 
--   Vous ne pourrez pas exclure des membres ou des groupes lors de la création d’un groupe. Cependant, les groupes dynamiques Azure AD vous permettent d’utiliser des attributs pour créer des règles avancées permettant d’exclure les membres en fonction de critères. Par exemple, vous pouvez créer une règle avancée qui inclut toutes les personnes de votre service Ventes dans un groupe de sécurité, mais pas celles qui contiennent le mot « Assistant » dans le titre de leur fonction, avec cette règle avancée : `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`. Pour plus d’informations, consultez [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
--   Les groupes **Utilisateurs non groupés** et **Appareils non groupés** ne seront pas pris en charge. Ces groupes ne seront pas migrés.
+## <a name="when-is-this-happening"></a>Quand cela se passe-t-il ?
 
-#### <a name="group-dependent-functionality"></a>Fonctionnalités dépendantes de groupe
+Le processus de migration est en cours d’exécution en ce moment même. Vous serez averti quand votre tour viendra.
+Si votre migration a déjà eu lieu, vous verrez un message ressemblant à ceci lorsque vous essayez d’accéder à des groupes à partir de la console Intune classique :
 
--   Le rôle Administrateur de service n’aura pas les autorisations **Gérer les groupes**.
--   Vous ne pourrez pas regrouper d’appareils Exchange ActiveSync.  Votre groupe **Tous les appareils gérés par EAS** sera converti de groupe en affichage de rapport.
--  Le glissement des groupes dans les rapports ne sera pas disponible.
--  Le ciblage de groupe personnalisé des règles de notification ne sera pas disponible.
+![Message indiquant que les groupes ont été migrés.](http://i.imgur.com/72KRaXj.png)
 
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>Que dois-je faire pour me préparer à cette modification ?
- Voici quelques recommandations qui vous aideront à effectuer cette transition :
- 
-- Nettoyez les groupes Intune dont vous n’avez plus besoin avant la migration.
-- Évaluez votre utilisation de l’exclusion dans les groupes et pensez à reconcevoir vos groupes pour ne plus avoir besoin d’utiliser l’exclusion ou pour pouvoir utiliser des règles avancées pour atteindre le même objectif.
--  Si certains de vos administrateurs n’ont pas l’autorisation de créer des groupes dans Azure AD, demandez à votre administrateur Azure AD de les ajouter au rôle Azure AD **Administrateur de service Intune**.
+## <a name="what-wont-be-available"></a>Qu'est-ce qui ne sera plus disponible ?
 
-Vous pouvez également en savoir plus sur les groupes de sécurité Azure AD :
--  Pour une vue d’ensemble, lisez [Gestion de l’accès aux ressources avec les groupes Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
--  Pour plus d’informations sur la façon de créer et de gérer des groupes Azure AD, consultez [Gestion des groupes dans Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
--  Pour plus d’informations sur les règles avancées des groupes de sécurité, consultez [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+Certaines fonctionnalités existantes des groupes Intune ne sont pas disponibles dans Azure AD :
 
-> [!NOTE]
-Vous remarquerez peut-être que la documentation sur les groupes de sécurité Azure AD ne traite pas de la création de groupes pour les appareils. Cette fonctionnalité sera activée dans Azure AD avant le début de la migration des groupes Intune.
+- Les groupes Intune **Utilisateurs non groupés** et **Appareils non groupés** ne seront pas pris migrés.
+- L’option permettant d'**exclure des membres spécifiques** d’un groupe existant dans la console Intune n’existe pas dans le portail Azure. Toutefois, vous pouvez utiliser un groupe de sécurité Azure AD avec des règles avancées pour répliquer ce comportement. Par exemple, vous pouvez créer une règle avancée qui inclut toutes les personnes de votre service Ventes dans un groupe de sécurité, mais pas celles qui contiennent le mot « Assistant » dans le titre de leur fonction, en utilisant cette règle avancée : `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`.
+- Le groupe **Tous les appareils gérés par Exchange ActiveSync** intégré à la console Intune ne sera pas migré vers Azure AD. Toutefois, vous pouvez toujours accéder aux informations sur les appareils EAS gérés à partir du portail Azure.
+- Vous ne pourrez pas filtrer les rapports par groupes dans la console Intune classique.
+<!--- - Custom group targeting of notification rules will not be available. ROB I took this out as I couldn't replicate the behavior. --->
 
-## <a name="migration-details"></a>Informations détaillées sur la migration
-Voici les informations détaillées sur la façon dont vos groupes Intune seront migrés vers des groupes de sécurité Azure AD.
+## <a name="how-to-get-ready"></a>Mise en route
 
-### <a name="migration-of-existing-groups"></a>Migration des groupes existants
+- Lisez les rubriques Azure AD suivantes pour en savoir plus sur les groupes de sécurité Azure AD et leur fonctionnement :
+    -  [Gestion de l’accès aux ressources avec les groupes Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+    -  [Gestion des groupes dans Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+- Vous pouvez supprimer les groupes Intune que vous n’utilisez plus avant de migrer.
+-  Assurez-vous que les administrateurs qui ont besoin de créer des groupes sont ajoutés au rôle Azure AD **Administrateur de service Intune**. Notez que le rôle d’administrateur de service Azure AD n’a pas d'autorisations **Gérer des groupes**.
+-  Si vous utilisez des groupes avec l’option **Exclure des membres spécifiques**, vous pouvez modifier ces groupes afin qu'ils n'aient pas besoin d'exclusions, ou utiliser des règles avancées dans votre requête Azure AD afin d'obtenir le même résultat.
 
-| Le groupe Intune devient...|...groupe de sécurité Azure AD|
+
+## <a name="what-happens-to-intune-groups"></a>Qu'advient-il aux groupes Intune ?
+
+| Groupes dans Intune|Groupe dans Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
-|Groupes d’utilisateurs statiques ciblés par la stratégie Intune|Groupes de sécurité Azure AD statiques contenant les mêmes utilisateurs|
-|Groupes d’utilisateurs dynamiques ciblés par la stratégie Intune|Groupes de sécurité Azure AD statiques avec une hiérarchie de groupes de sécurité Azure AD|
-|Groupes d’appareils statiques ciblés par la stratégie Intune|Groupes de sécurité Azure AD statiques avec des appareils|
-|Groupes d’appareils dynamiques avec des attributs d’appareils, qui sont ciblés par la stratégie Intune|Groupes de sécurité Azure AD dynamiques avec des attributs d’appareils|
-|Groupe avec une condition d’inclusion|Groupe de sécurité Azure AD statique distinct qui contient un groupe + tous les membres statiques/dynamiques que la condition d’inclusion avait autorisés dans Intune|
-|Un groupe avec une condition d’exclusion|...ne sera pas migré. Les conditions d’exclusion ne sont pas prises en charge lors de la création de groupes statiques dans Azure AD. Une condition d’exclusion peut être utilisée lors de la création d’un groupe dynamique dans Azure AD.|
-|Groupes par défaut **Tous les utilisateurs**, **Utilisateurs non groupés**, **Tous les appareils**, **Appareils non groupés**, **Tous les ordinateurs**, **Tous les appareils mobiles**, **Tous les appareils gérés par la gestion des appareils mobiles** et **Tous les appareils gérés par EAS**, que vous utilisez dans la stratégie Intune  |Groupes de sécurité Azure AD. Les groupes par défaut qui ne sont pas utilisés doivent être créés par le client quand ils sont nécessaires, en utilisant des groupes dynamiques.|
+|Groupe d’utilisateurs statique|Groupe de sécurité Azure AD statique|
+|Groupe d’utilisateurs dynamique|Groupes de sécurité Azure AD statiques avec une hiérarchie de groupes de sécurité Azure AD|
+|Groupe d'appareils statique|Groupe de sécurité Azure AD statique|
+|Groupe d'appareils dynamique|Groupe de sécurité Azure AD dynamique|
+|Groupe avec une condition d’inclusion|Groupe de sécurité Azure AD statique contenant des membres statiques ou dynamiques de la condition d'inclusion dans Intune.|
+|Un groupe avec une condition d’exclusion|Non migré|
+|Les groupes intégrés **Tous les utilisateurs**, **Utilisateurs non groupés**, **Tous les appareils**, **Appareils non groupés**, **Tous les ordinateurs**, **Tous les appareils mobiles**, **Tous les appareils gérés par la gestion des appareils mobiles** et **Tous les appareils gérés par EAS**|Groupes de sécurité Azure AD.|
 
-### <a name="changes-in-hierarchical-views"></a>Modifications dans les vues hiérarchiques
-Vue hiérarchique des groupes dans Intune : une relation parent-enfant dans Intune était une relation de sur-ensemble – sous-ensemble, alors que ce n’est pas le cas dans Azure AD. Un enfant peut avoir des membres que n’avait pas le parent. Les groupes peuvent également être cycliques par nature dans Azure AD : un groupe parent peut être un enfant d’un groupe enfant.
+Dans Intune, tous les groupes doivent avoir un groupe parent. Les groupes peuvent contenir uniquement des membres de leur groupe parent. Dans Azure AD, les groupes enfants peuvent contenir des membres qui n'appartiennent pas au groupe parent.
 
-### <a name="attribute-conversion-during-migration"></a>Conversion des attributs lors de la migration
 Les attributs sont des propriétés d’appareils qui peuvent être utilisés dans la définition de groupes. Ce tableau décrit comment ces critères sont migrés vers les groupes de sécurité Azure AD.
 
-| Attribut Intune|Attribut Azure AD|
+| Attribut dans Intune|Attribut dans Azure AD|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
-|Attribut d’unité d’organisation pour les groupes d’appareils|Attribut d’unité d’organisation pour les groupes dynamiques. Valeurs d’attributs mises à la disposition de l’administrateur appartenant à chaque locataire en l’ajoutant comme un des composants du locataire pour affichage.|
-|Attribut de nom de domaine pour les groupes d’appareils|Attribut de nom de domaine pour les groupes dynamiques. Valeurs d’attributs mises à la disposition de l’administrateur appartenant à chaque locataire en l’ajoutant comme un des composants du locataire pour affichage|
+|Attribut d’unité d’organisation pour les groupes d’appareils|Attribut d’unité d’organisation pour les groupes dynamiques.|
+|Attribut de nom de domaine pour les groupes d’appareils|Attribut de nom de domaine pour les groupes dynamiques.|
 |Groupe de sécurité comme attribut pour les groupes d’utilisateurs|Les groupes ne peuvent pas être des attributs dans les requêtes dynamiques Azure AD. Les groupes dynamiques peuvent contenir seulement des attributs spécifiques à des utilisateurs ou à des appareils.|
 |Attribut de gestionnaire pour les groupes d’utilisateurs|Règle avancée pour l’attribut *gestionnaire* dans les groupes dynamiques|
 |Tous les utilisateurs du groupe d’utilisateurs parent|Groupe statique avec ce groupe comme membre|
 |Tous les appareils mobiles du groupe d’appareils parent|Groupe statique avec ce groupe comme membre|
-|Tous les appareils mobiles gérés par Microsoft Intune Direct Management|Attribut de type de gestion avec « MDM » comme valeur pour le groupe dynamique|
-|Tous les appareils mobiles gérés par EAS|Les appareils EAS ne peuvent pas être regroupés dans Azure AD. Votre groupe **Tous les appareils gérés par EAS** sera converti de groupe en affichage de rapport.|
+|Tous les appareils mobiles gérés par Intune|Attribut de type de gestion avec « MDM » comme valeur pour le groupe dynamique|
 |Groupes imbriqués dans des groupes statiques |Groupes imbriqués dans des groupes statiques|
 |Groupes imbriqués dans des groupes dynamiques|Groupe dynamique avec un seul niveau d’imbrication|
 
+## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>Que se passe-t-il pour les stratégies et les applications que vous avez déjà déployées ?
 
-## <a name="migration-of-policies"></a>Migration des stratégies
-Pendant la migration des groupes, vous continuez à gérer vos stratégies dans la console Intune. Dans la console Intune, un lien vous dirige vers votre console de gestion Azure, où vous allez gérer vos groupes. Vos stratégies continuent d’être déployées sur les groupes de sécurité Azure AD qui existent parallèlement à vos anciens groupes Intune.
-
-Une fois toutes les fonctionnalités Intune migrées vers le portail de gestion Azure (autour du premier trimestre 2017), vous pourrez y gérer les stratégies et les groupes.
-
-     
-### <a name="see-also"></a>Voir aussi
-[Gestion de l’accès aux ressources avec les groupes Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)
-
-[Gestion des groupes dans Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)
-
-[Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
+Les applications et les stratégies continuent d'être déployées sur les groupes, comme avant. Toutefois, vous devrez désormais gérer ces groupes à partir du portail Azure au lieu de la console Intune classique.
+ 
 

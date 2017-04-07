@@ -2,8 +2,8 @@
 title: "Gérer les appareils d’entreprise | Microsoft Docs"
 description: "Inscrivez les appareils d’entreprise de différentes façons, selon le type d’appareil, la méthode utilisée pour son achat et les besoins de l’organisation."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -65,9 +66,4 @@ Intune reconnaît un appareil comme « appartenant à l’entreprise » quand 
  - Il est inscrit dans [Azure Active Directory ou Enterprise Mobility Suite comme appareil Windows 10 Entreprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (Windows 10 uniquement).
 
 Quand un appareil est marqué comme appartenant à l’entreprise, la colonne **Propriété** de cet enregistrement d’appareil indique **Entreprise** dans la Console Administrateur. 
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Créer une stratégie de conformité des appareils | Microsoft Intune"
+title: "Créer une stratégie de conformité des appareils | Microsoft Docs"
 description: "Créez une stratégie de conformité pour vous aider à sécuriser les appareils mobiles et ordinateurs utilisés pour accéder aux données de votre entreprise."
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Créer une stratégie de conformité des appareils dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Cette rubrique décrit les étapes que vous pouvez effectuer pour créer une stratégie de conformité qu’un appareil doit respecter pour être considéré comme conforme.
 
 ##  <a name="step-1-add-a-new-policy"></a>Étape 1 : ajouter une nouvelle stratégie
@@ -28,7 +33,7 @@ Cette rubrique décrit les étapes que vous pouvez effectuer pour créer une str
 
   ![Capture d’écran de la page de stratégie de conformité dans la console d’administration Intune, affichant l’option Ajouter dans le menu en haut de la page](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>Étape 2 : configurer les paramètres
+##  <a name="step-2--configure-settings"></a>Étape 2 : configurer les paramètres
 Dans la page **Créer une stratégie**, activez les paramètres dont vous avez besoin :
   -   Paramètres de sécurité système tels que le mot de passe et le chiffrement.
   -   Paramètres d’intégrité des appareils, par exemple si un appareil est jailbroken ou signalé comme sain par le service d’attestation de l’intégrité des appareils Windows.
@@ -85,9 +90,4 @@ Sélectionnez l’une des options suivantes pour en savoir plus sur les paramèt
 
 ### <a name="see-also"></a>Voir aussi
 [Introduction aux stratégies de conformité des appareils](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

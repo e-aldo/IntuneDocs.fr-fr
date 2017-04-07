@@ -1,5 +1,5 @@
 ---
-title: Recevoir des alertes | Microsoft Intune
+title: Recevoir des alertes | Microsoft Docs
 description: "Découvrez comment les alertes vous tiennent informé de ce qu’il se passe dans Microsoft Intune."
 keywords: 
 author: arob98
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 27aed0126b8aac032f334c712108b23482ef70d7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: efad781dca4a759335b67126026bf4fed127380e
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="get-notified-by-microsoft-intune-alerts"></a>Recevoir des alertes Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Les alertes vous tiennent informé de ce qu’il se passe dans Microsoft Intune.
 
 Par exemple, les alertes peuvent vous informer des événements suivants :
@@ -83,9 +88,4 @@ Les alertes Intune restent actives tant que :
 
 ### <a name="see-also"></a>Voir aussi
 [Analyse et rapports avec Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de la stratégie dans Windows 10 | Microsoft Intune"
+title: "Paramètres de la stratégie dans Windows 10 | Microsoft Docs"
 description: "Utilisez les paramètres de stratégie indiqués dans cette rubrique pour configurer les paramètres intégrés et personnalisés des appareils Windows 10 Mobile et Windows 10 Desktop inscrits."
 keywords: 
 author: robstackmsft
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres de stratégie Intune pour les appareils Windows 10 dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique contient des informations qui vous aideront à comprendre les paramètres de stratégie Intune que vous pouvez utiliser pour gérer des appareils Windows 10. Lisez cette rubrique parallèlement aux procédures indiquées dans [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) pour configurer les paramètres intégrés et personnalisés sur des appareils Windows 10 Desktop et Windows 10 Mobile inscrits. Vous ne pouvez pas utiliser ces stratégies avec des ordinateurs qui exécutent le [logiciel client des PC Intune](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -160,9 +164,9 @@ Utilisez cette section pour en savoir plus sur les paramètres OMA-URI que vous 
 |**SignatureUpdateInterval**<br>./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Ne pas vérifier les signatures par intervalle<br>**1** – Vérifier les signatures toutes les heures<br>**2** – Vérifier toutes les deux heures <br>**24** – Vérifier tous les jours<br>**8** – Vérifier toutes les huit heures (par défaut)|
 |**AllowCloudProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowCloudProtection|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :<br>** **0** – Non autorisé<br> **1** – Autorisé (par défaut)|
 |**SubmitSamplesConsent**<br>./Vendor/MSFT/Policy/Config/Defender/SubmitSamplesConsent|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Toujours demander (par défaut)<br>**1** – Envoyer automatiquement des échantillons sécurisés<br>**2** – Ne jamais envoyer<br>**3** – Envoyer automatiquement tous les échantillons|
-|**ExcludedExtensions**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :**<br>*&lt;Liste d’extensions séparées par des points-virgules&gt;* Par exemple : **obj;lib**<br>**Par défaut :** Aucune extension n’est exclue|
-|**ExcludedPaths**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :**<br />*&lt;Liste de chemins séparés par des points-virgules&gt;*<br />Exemple : **c:\test;c:\test1.exe**<br />**Par défaut :** Aucun chemin n’est exclu|
-|**ExcludedProcesses**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :**<br>*&lt;Liste de chemins séparés par des points-virgules&gt;*<br>Exemple : **c:\test.exe;c:\test1.exe**<br>**Par défaut :** Aucun processus n’est exclu|
+|**ExcludedExtensions**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions|Desktop uniquement<br />**Type de données :** Chaîne<br />**Valeurs :**<br>*&lt;Liste d’extensions séparées par des points-virgules&gt;* Par exemple : **obj;lib**<br>**Par défaut :** Aucune extension n’est exclue|
+|**ExcludedPaths**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths|Desktop uniquement<br />**Type de données :** Chaîne<br />**Valeurs :**<br />*&lt;Liste de chemins séparés par des points-virgules&gt;*<br />Exemple : **c:\test;c:\test1.exe**<br />**Par défaut :** Aucun chemin n’est exclu|
+|**ExcludedProcesses**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses|Desktop uniquement<br />**Type de données :** Chaîne<br />**Valeurs :**<br>*&lt;Liste de chemins séparés par des points-virgules&gt;*<br>Exemple : **c:\test.exe;c:\test1.exe**<br>**Par défaut :** Aucun processus n’est exclu|
 
 ### <a name="edge-browser"></a>Navigateur Edge
 
@@ -177,7 +181,7 @@ Utilisez cette section pour en savoir plus sur les paramètres OMA-URI que vous 
 |**Autoriser les cookies**<br>./Vendor/MSFT/Policy/Config/Browser/AllowCookies|Desktop et mobile<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Autoriser les cookies de tous les sites web (valeur par défaut)<br>**1** – Bloquer uniquement les cookies tiers<br>**2** – Bloquer tous les cookies|
 |**Autoriser l’enregistrement du mot de passe**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Desktop et mobile<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Le gestionnaire de mots de passe est désactivé <br>**1** – Le gestionnaire de mots de passe est activé (par défaut)|
 |**Autoriser le remplissage automatique**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs** :<br> **0** – Désactivé (par défaut)<br> **1** – Activé|
-|**Configurer la liste des sites d’entreprise**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :**<br>**0** – Non configuré<br>**1** – Utiliser la liste des sites d’entreprise d’Internet Explorer si configuré (par défaut)<br>**2** – Spécifier l’emplacement de la liste des sites d’entreprise|
+|**Configurer la liste des sites d’entreprise**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Desktop uniquement<br />**Type de données :** Chaîne<br />**Valeurs :**<br>**0** – Non configuré<br>**1** – Utiliser la liste des sites d’entreprise d’Internet Explorer si configuré (par défaut)<br>**2** – Spécifier l’emplacement de la liste des sites d’entreprise|
 
 ## <a name="general-configuration-policy-settings"></a>Paramètres de la stratégie de configuration générale
 
@@ -322,9 +326,4 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

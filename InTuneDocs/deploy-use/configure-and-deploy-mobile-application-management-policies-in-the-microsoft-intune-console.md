@@ -1,11 +1,11 @@
 ---
-title: "Configurer des stratégies de gestion des applications mobiles dans la console Intune | Microsoft Intune"
+title: "Configurer des stratégies de gestion des applications mobiles dans la console Intune | Microsoft Docs"
 description: "Vous pouvez utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Vous pouvez utiliser des stratégies de gestion des applications mobiles (GAM) dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise. Par exemple, vous pouvez limiter les opérations Couper, Copier et Coller au sein d’une application gérée, ou configurer une application pour ouvrir tous les liens web dans Managed Browser.
 
 Les stratégies de gestion des applications mobiles prennent en charge :
@@ -71,7 +76,7 @@ Par exemple, à l'aide de l'application Outlook :
 
 -   **Étape 5 :** Surveiller le déploiement de l’application.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Étape 1 : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>Étape 1 : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM
 
 À partir de l’App Store, recherchez et notez l’URL de l’application gérée par une stratégie que vous souhaitez déployer. Par exemple, l’URL de l’application Microsoft Word pour iPad est **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -135,7 +140,7 @@ Une fois que vous avez vérifié que l’application a été chargée correcteme
     |**Exiger la conformité à la stratégie d'entreprise pour l'accès**|Ce paramètre autorise l’utilisation de l’application uniquement si l’appareil n’est pas jailbreaké ou rooté.|
     |**Revérifier les exigences d'accès après (minutes)**|Dans le champ **Délai** , indiquez le délai au bout duquel les conditions d’accès à l’application sont revérifiées une fois l’application ouverte.|
     |**Période de grâce hors connexion**|Si l'appareil est hors connexion, spécifiez le délai au bout duquel les conditions d'accès pour l'application sont revérifiées.|
-    |**Chiffrer les données de l'application**|Ce paramètre spécifie que toutes les données associées à cette application seront chiffrées. Cela inclut les données stockées en externe, comme par exemple les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil que fournit le système d’exploitation. Cette option est activée via une stratégie de code confidentiel d’appareil que définit l’administrateur informatique. Quand un code confidentiel est exigé, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules qu’utilise iOS sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, Microsoft fournit le chiffrement. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier.  Le contenu sur le stockage de l'appareil est toujours chiffré. La méthode de chiffrement n'est pas certifiée FIPS 140-2.|
+    |**Chiffrer les données de l'application**|Ce paramètre spécifie que toutes les données associées à cette application seront chiffrées. Cela inclut les données stockées en externe, comme par exemple les cartes SD.<br /><br />**Chiffrement pour iOS**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, les données sont chiffrées au repos à l’aide du chiffrement au niveau de l’appareil que fournit le système d’exploitation. Cette option est activée via une stratégie de code confidentiel d’appareil que définit l’administrateur informatique. Quand un code confidentiel est exigé, les données sont chiffrées selon les paramètres de la stratégie de gestion des applications mobiles. Comme indiqué dans la documentation Apple, [les modules qu’utilise iOS sont certifiés FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Chiffrement pour Android**<br /><br />Pour les applications associées à une stratégie de gestion des applications mobiles Intune, Microsoft fournit le chiffrement. Les données sont chiffrées de façon synchrone durant les opérations d’E/S de fichier.  Le contenu sur le stockage de l'appareil est toujours chiffré. La méthode de chiffrement est la norme FIPS 140-2 compatible uniquement avec les appareils Samsung KNOX.|
     |**Bloquer la capture d'écran** (appareils Android uniquement)|Ce paramètre spécifie que les fonctionnalités de capture d’écran de l’appareil sont bloquées quand une personne utilise cette application.|
 
 4. Quand vous avez terminé, choisissez **Enregistrer la stratégie**.
@@ -191,9 +196,4 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 -   Si une stratégie a déjà été déployée sur l'appareil, les paramètres de stratégie existants ne sont pas remplacés.
 
 -   Si aucune stratégie n'a encore été déployée sur l'appareil et que deux paramètres en conflit sont déployés, le paramètre par défaut intégré à l'appareil est utilisé.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

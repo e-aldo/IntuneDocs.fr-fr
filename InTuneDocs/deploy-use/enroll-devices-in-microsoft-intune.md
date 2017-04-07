@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -38,11 +38,11 @@ Le tableau suivant présente les méthodes d’inscription Intune, ainsi que les
 
 - **Réinitialisation** : indique si l’appareil doit être réinitialisé pour que les utilisateurs puissent inscrire l’appareil. Le terme « réinitialiser » implique une réinitialisation des paramètres d’usine de l’appareil, laquelle supprime toutes les données. Pour plus d’informations, consultez [Retirer des appareils](retire-devices-from-microsoft-intune-management.md).
 - **Affinité** : associe les appareils à des utilisateurs. Fonctionnalité nécessaire pour la gestion des applications mobiles (GAM) et l’accès conditionnel aux données d’entreprise. Pour plus d’informations, consultez [Affinité utilisateur](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Verrou** : indique si les utilisateurs ne sont pas autorisés à désinscrire leurs appareils à l’aide des menus du système d’exploitation natif. Les utilisateurs peuvent désinscrire leurs appareils sur toutes les plateformes à l’aide de l’application Portail d’entreprise. 
+- **Verrou** : indique si les utilisateurs ne sont pas autorisés à désinscrire leurs appareils à l’aide des menus du système d’exploitation natif. Les utilisateurs peuvent désinscrire leurs appareils sur toutes les plateformes à l’aide de l’application Portail d’entreprise.
 
 **Méthodes d’inscription iOS**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouiller** | **Détails** |
+| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails** |
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
 |**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|    Non |Non |Non    | [Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
@@ -52,30 +52,30 @@ Le tableau suivant présente les méthodes d’inscription Intune, ainsi que les
 
 **Méthodes d’inscription de Windows**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouiller** | **Détails**|
+| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Oui|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
 |**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|    Non |Non |Non    |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Méthodes d’inscription d’Android**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouiller** | **Détails**|
+| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
 |**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|    Non |Non |Non    |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Méthodes d’inscription Android for Work**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouiller** | **Détails**|
+| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
 |**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|    Non |Non |Non    |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Méthodes d’inscription macOS**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouiller** | **Détails**|
+| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Oui|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
 
 
 Pour répondre à une série de questions qui vous aideront à déterminer la méthode appropriée, consultez [Choisir comment inscrire des appareils](/intune/get-started/choose-how-to-enroll-devices1).

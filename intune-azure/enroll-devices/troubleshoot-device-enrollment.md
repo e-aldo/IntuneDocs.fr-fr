@@ -3,8 +3,8 @@ title: "Résoudre les problèmes d’inscription d’appareils"
 titleSuffix: Intune Azure preview
 description: "Intune Azure (préversion) : découvrez comment résoudre les problèmes d’inscription d’appareils."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -388,9 +389,4 @@ Cela peut être dû au fait que l’ordinateur a déjà été inscrit ou qu’il
 
 ### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

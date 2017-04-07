@@ -2,8 +2,8 @@
 title: Comment obtenir un support technique | Microsoft Docs
 description: "Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -41,15 +42,13 @@ Posez une question ou lancez une discussion avec les experts techniques Microsof
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Site de commentaires sur les produits Microsoft Intune UserVoice
 
-Avez-vous des commentaires qui permettraient à Microsoft d’améliorer Intune encore davantage ? Partagez vos idées sur le site web de commentaires Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas). Vous pouvez également voter pour des idées que d’autres utilisateurs ont ajoutées dans UserVoice. 
+Avez-vous des commentaires qui permettraient à Microsoft d’améliorer Intune encore davantage ? Partagez vos idées sur le site web de commentaires Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas). Vous pouvez également voter pour des idées que d’autres utilisateurs ont ajoutées dans UserVoice.
 
 ![Page de commentaires Microsoft Intune UserVoice](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>Créer un ticket de support en ligne
+## <a name="create-a-support-ticket"></a>Créer un ticket de support
 
-Si vous ne parvenez pas à trouver de réponses dans les ressources d’aide autonome, vous pouvez créer un ticket de support en ligne.
-
-**Veuillez limiter chaque ticket de support à un seul problème** pour nous permettre de mieux vous aider. Voici pourquoi :
+Si vous ne parvenez pas à trouver de réponses dans les ressources d’aide autonome, vous pouvez créer un ticket de support en ligne. **Veuillez limiter chaque ticket de support à un seul problème** pour nous permettre de mieux vous aider. Voici pourquoi :
 
 - Les ingénieurs du support technique qui fournissent une assistance sont susceptibles d’être spécialisés dans des domaines précis, et il est plus facile d’identifier les experts pouvant vous aider à résoudre votre problème.
 - Les équipes techniques peuvent donner la priorité à des aspects du produit pour lesquels sont générés la plupart des incidents.
@@ -57,12 +56,15 @@ Si vous ne parvenez pas à trouver de réponses dans les ressources d’aide aut
 
 Consultez la [définition d’un incident de support](#definition-of-a-support-incident) avant de créer un ticket de support.
 
-**Pour créer un ticket de support en ligne** :
+### <a name="steps-to-create-an-online-support-ticket"></a>Procédure de création d’un ticket de support en ligne
 
 1.  Connectez-vous au [Centre d’administration Office 365](https://portal.office.com) en utilisant vos informations d’identification Intune.
+
+    Si vous êtes un client Support Premier, vous devez plutôt ouvrir un ticket de support Intune sur la [page du Support Premier](https://support.microsoft.com/en-us/premier/contacts).
+
     >[!NOTE]
     >
-    >Les clients Support Premier peuvent ouvrir un ticket de support Intune dans la [page du Support Premier](https://support.microsoft.com/en-us/premier/contacts).
+    >Les clients Support Premier doivent ouvrir un ticket de support Intune sur la [page du Support Premier](https://support.microsoft.com/en-us/premier/contacts).
 
 2.  Cliquez sur la vignette **Administration**.
 3.  Sur la gauche, en dessous de **Support**, choisissez **Support** pour ouvrir un ticket.
@@ -83,9 +85,9 @@ Consultez la [définition d’un incident de support](#definition-of-a-support-i
 
 3.  Suivez les instructions pour ouvrir votre demande.
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>Méthode alternative pour ouvrir un ticket de support
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>Procédure alternative de création d’un ticket de support
 
-Suivez cette procédure si votre page de support ressemble à ceci :
+Suivez cette procédure si votre page de support dans le Centre d’administration Office 365 ressemble à ceci :
 
 ![Support alternatif d’Intune](../media/alternate-support-ui.png)
 
@@ -101,30 +103,30 @@ Suivez cette procédure si votre page de support ressemble à ceci :
 Consultez [Contacter le support par téléphone pour Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) pour obtenir la liste des numéros de téléphone par pays et par région, les horaires d’ouverture du support technique et les langues prises en charge pour chaque région.
 
 ## <a name="track-your-support-requests"></a>Effectuer le suivi de vos demandes de support
-1.  Connectez-vous au [Centre d’administration Office 365](https://portal.office.com) en utilisant vos informations d’identification Intune.
+1.  Connectez-vous au [Centre d’administration Office 365](https://portal.office.com) en utilisant vos informations d’identification d’administrateur Intune.
 2.  Cliquez sur la vignette **Administration**.
 3.  Sur la gauche, en dessous de **Support**, choisissez **Demandes de service**. Vous pouvez alors passer en revue vos demandes.
 
-Nos réponses initiales aux demandes de support dépendent de la gravité du problème. Pour les problèmes les plus graves, notre première réponse pour les clients professionnels est donnée dans les deux heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support. Il s’agit de cas où :
+Nos réponses initiales aux demandes de support dépendent de la gravité du problème. Pour les problèmes les plus graves, notre première réponse pour les clients professionnels est donnée dans les deux heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support. Les cas **les plus graves** sont les suivants :
 
 - Un ou plusieurs services ne sont pas accessibles ou sont inutilisables.
 - Des délais de production, d'opérations ou de déploiement sont gravement affectés ou il y aura un impact majeur sur la production ou la rentabilité.
 - Plusieurs utilisateurs ou services sont affectés.
 
-Pour les problèmes de gravité modérée, notre première réponse pour les clients professionnels est donnée dans les quatre heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support.  Il s’agit de cas où :
+Pour les problèmes de gravité modérée, notre première réponse pour les clients professionnels est donnée dans les quatre heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support. Les cas **moyennement graves** sont les suivants :
 
 - Le service est utilisable, mais ne fonctionne pas aussi bien que d’habitude.
 - La situation a un impact modéré sur l'activité et peut être traitée pendant les heures de bureau.
 - Un utilisateur unique, un client ou un service est partiellement affecté.
 
-Pour les autres problèmes, notre première réponse pour les clients professionnels est donnée dans les huit heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support.  Il s’agit de cas où :
+Pour les autres problèmes, nous donnons notre première réponse aux clients professionnels dans les huit heures. Pour les clients Support Premier, la réponse varie en fonction de votre contrat de support. Les cas les moins graves sont les suivants :
 
 - La situation a un impact minimal sur l'activité.
 - Le problème est important, mais n’a pas d’impact immédiat ni significatif sur la productivité ou le service du client.
 - Un seul utilisateur rencontre une rupture partielle, mais il existe une solution acceptable.
 
 > [!NOTE]
-> **Si vous utilisez Microsoft System Center Configuration Manager** ou **Microsoft System Center Endpoint Protection** : pour obtenir du support technique sur Configuration Manager ou Endpoint Protection, contactez votre partenaire ou visitez le [Centre de solutions Microsoft System Center Configuration Manager et System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) qui propose des documents d’aide sans assistance élaborés. Vous avez également la possibilité d’ouvrir une demande de support en ligne ou par téléphone.
+> **Si vous utilisez Microsoft System Center Configuration Manager** ou **Microsoft System Center Endpoint Protection** : pour obtenir un support technique sur Configuration Manager ou Endpoint Protection, contactez votre partenaire ou consultez la documentation de [Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) et de [Microsoft System Center Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) qui propose des documents d’aide sans assistance élaborés. Vous avez également la possibilité d’ouvrir une demande de support en ligne ou par téléphone.
 >
 > Le support technique pour System Center Configuration Manager ou System Center Endpoint Protection nécessite un règlement ou est décrémenté de vos contrats de licence ou Premier Support existants.
 
@@ -146,9 +148,4 @@ Le support « Break-fix » est compris dans les abonnements Microsoft Intune e
 Si un ingénieur du support technique vous demande d’ouvrir d’autres incidents pour d’autres problèmes, comprenez que c’est dans l’intérêt général. Merci de votre compréhension et de votre concours qui nous permet de fournir des expériences de support de classe mondiale !
 
 Pour connaître les prix par incident et les niveaux de sévérité, consultez [Options de support professionnel](https://support.microsoft.com/gp/offerprophone).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

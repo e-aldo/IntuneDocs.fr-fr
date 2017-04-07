@@ -2,10 +2,10 @@
 title: Configuration de la gestion Android | Microsoft Docs
 description: Activez la gestion des appareils mobiles pour les appareils Android et KNOX Standard avec Microsoft Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: a5a4f11ae341480b2e674ca55a514b62831bdd60
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -37,11 +38,11 @@ Par défaut, les appareils Android peuvent être inscrits dans Intune. Pour bloq
 
 3.  **Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise.**
 
-    Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Android dans Intune](../enduser/enroll-your-device-in-intune-android.md). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
+    Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Android dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
 
     Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
   - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-  - [Conseils destinés aux utilisateurs relatifs aux appareils Android](../enduser/using-your-android-device-with-intune.md)
+  - [Conseils destinés aux utilisateurs relatifs aux appareils Android](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 En l’absence de Google Play Store en Chine, les appareils Android doivent obtenir l’application Portail d’entreprise dans les places de marché des applications chinoises. L’application Portail d’entreprise pour Android sera disponible en téléchargement dans les boutiques suivantes :
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
@@ -50,21 +51,16 @@ En l’absence de Google Play Store en Chine, les appareils Android doivent ob
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 * [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
 
-L’application Portail d’entreprise pour Android utilise les services Google Play pour communiquer avec le service Microsoft Intune. Étant donné que les services Google Play ne sont pas encore disponibles en Chine, le traitement des tâches suivantes peut prendre jusqu’à 8 heures. 
+L’application Portail d’entreprise pour Android utilise Google Play Services pour communiquer avec le service Microsoft Intune. Étant donné que les services Google Play ne sont pas encore disponibles en Chine, le traitement des tâches suivantes peut prendre jusqu’à 8 heures. 
 
 |Console d’administration Intune| Application Portail d’entreprise Intune pour Android |Site web du portail d’entreprise Intune|   
 |---|---|---|
 |réinitialisation complète| Supprimer un appareil distant| Supprimer l’appareil (local et distant)|
-|réinitialisation sélective| Réinitialiser l’appareil| Réinitialiser l’appareil|
-|Déploiements d’applications nouvelles ou mises à jour| Installation des applications métier disponibles| Réinitialisation du code d’accès de l’appareil|
+|réinitialisation sélective| Réinitialiser l’appareil| Réinitialiser un appareil|
+|Déploiements d’applications nouvelles ou mises à jour| Installer des applications métier disponibles| Réinitialisation du code secret d’un appareil|
 |Verrouillage à distance|||
 |Réinitialiser le code secret|||
 
 ### <a name="see-also"></a>Voir aussi
 [Prérequis pour l’inscription d’appareils dans Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -1,11 +1,12 @@
 ---
-title: "Guide pratique pour configurer des paramètres de messagerie Intune | Préversion Intune Azure | Microsoft Docs"
+title: "Guide pratique pour configurer des paramètres de messagerie Intune"
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : découvrez comment configurer Intune pour créer des connexions à la messagerie d’entreprise sur les appareils que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 70d013768c07f1782255a309b5941f05c2222912
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -25,13 +27,14 @@ ms.lasthandoff: 02/16/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Les paramètres de profil de messagerie peuvent être utilisés pour configurer les appareils que vous gérez avec les paramètres requis pour la connexion à la messagerie d’entreprise et sa synchronisation. Cela peut aider à garantir que les paramètres sont standard sur l’ensemble de vos appareils et également à réduire les appels au support technique des utilisateurs finaux qui ne connaissent pas les paramètres de messagerie corrects.
+Des profils de messagerie peuvent être utilisés pour configurer les appareils que vous gérez avec les paramètres requis pour la connexion à la messagerie d’entreprise et sa synchronisation. Cela peut aider à garantir que les paramètres sont standard sur l’ensemble de vos appareils et également à réduire les appels au support technique des utilisateurs finaux qui ne connaissent pas les paramètres de messagerie corrects.
 
 Le client de messagerie intégré est pris en charge par la plupart des plateformes. La plupart des applications de messagerie tierces ne sont pas prises en charge actuellement.
 
 Vous pouvez utiliser des profils de messagerie pour configurer le client de messagerie natif sur les types d’appareils suivants :
 
-- Android 4.0 et versions ultérieures
+- Android Samsung KNOX Standard 4.0 et versions ultérieures
+- Android for Work
 - iOS 8.0 et versions ultérieures
 - Windows Phone 8.1 et versions ultérieures
 - Windows 10 Desktop et Windows 10 Mobile
@@ -42,7 +45,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
 4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de messagerie.

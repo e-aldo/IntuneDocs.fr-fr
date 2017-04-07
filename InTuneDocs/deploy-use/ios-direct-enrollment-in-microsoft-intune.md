@@ -2,9 +2,9 @@
 title: Inscription directe pour les appareils iOS | Microsoft Docs
 description: "Utilisez l’outil Apple Configurator pour inscrire directement les appareils iOS d’entreprise avec une stratégie prédéfinie en vous connectant via USB à un ordinateur Mac."
 keywords: 
-author: staciebarker
-ms.author: stabar
-manager: arob98
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ Quand vous inscrivez directement des appareils iOS, vous pouvez inscrire un appa
 9.  Sur l’appareil iOS, ouvrez **Settings** (Réglages) et accédez à **General** (Général) &gt; **Device Management**(Gestion des appareils) &gt; **Management Profile** (Profil de gestion). Assurez-vous que l’installation du profil est répertoriée, puis vérifiez les restrictions de stratégie iOS et les applications installées. L’affichage des applications et des restrictions de stratégie sur l’appareil peut prendre jusqu’à dix minutes.
 
 10.  Distribuez des appareils. L’appareil iOS est maintenant inscrit et géré dans Intune.
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de stratégie de sécurité des appareils mobiles | Microsoft Intune"
+title: "Paramètres de stratégie de sécurité des appareils mobiles | Microsoft Docs"
 description: "Utilisez Intune pour configurer une grande variété de paramètres que vous pouvez déployer sur les appareils gérés de votre organisation."
 keywords: 
 author: robstackmsft
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
+ms.lasthandoff: 12/10/2016
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Paramètres de stratégie de sécurité des appareils mobiles dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Microsoft Intune propose désormais des stratégies de configuration distinctes pour chaque plateforme d’appareil. Ces stratégies contiennent les paramètres les plus récents que vous pouvez utiliser. Vous pouvez continuer à utiliser la stratégie de sécurité des appareils mobiles, tous les déploiements existants continueront de fonctionner. Toutefois, vous devez planifier la migration vers les nouvelles stratégies de configuration dès que possible, car la stratégie de sécurité des appareils mobiles sera bientôt supprimée.
 
@@ -53,7 +58,7 @@ Vous pouvez créer et déployer des stratégies de sécurité des appareils mobi
 |**Longueur minimale du mot de passe**|Oui|Oui|Oui|Oui|Oui|
 |**Autoriser les mots de passe simples**<br /><br />Exemples de mots de passe simples : « 0000 » et « 1234 ».|Non|Non|Oui|Oui|Non|
 |**Nombre d’échecs de connexion répétée autorisé avant réinitialisation de l’appareil**|Oui|Oui|Oui|Oui|Oui|
-|**Minutes d’inactivité avant arrêt de l’écran**1|Oui|Oui|Oui|Oui|Oui|
+|**Minutes d’inactivité avant arrêt de l’écran**<sup>1</sup>|Oui|Oui|Oui|Oui|Oui|
 |**Expiration du mot de passe (jours)**|Oui|Oui|Oui|Oui|Oui|
 |**Mémoriser l’historique des mots de passe**|Oui|Oui|Oui|Oui|Oui|
 |**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Oui|Oui|Oui|Oui|Oui|
@@ -61,7 +66,7 @@ Vous pouvez créer et déployer des stratégies de sécurité des appareils mobi
 |**Autoriser un mot de passe image et un code confidentiel**|Oui|Oui|Non|Non|Non|
 |**Minutes d’inactivité avant demande du mot de passe**|Non|Non|Non|Oui|Non|
 |**Autoriser le déverrouillage par empreinte digitale**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
-1Pour les appareils iOS, quand vous configurez les paramètres **Minutes d’inactivité avant arrêt de l’écran** et **Minutes d’inactivité avant demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
+<sup>1</sup> Pour les appareils iOS, quand vous configurez les paramètres **Minutes d’inactivité avant arrêt de l’écran** et **Minutes d’inactivité avant demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
 
 Quand vous déployez une stratégie de longueur de mot de passe sur des appareils qui exécutent Windows RT, les utilisateurs sont obligés de réinitialiser leur mot de passe, même si leur mot de passe actuel est conforme aux exigences de la stratégie.
 
@@ -69,9 +74,9 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exiger le chiffrement sur l’appareil mobile**1<br /><br />Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.|Oui|Non|Oui|Non|Oui|
+|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup><br /><br />Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.|Oui|Non|Oui|Non|Oui|
 |**Exiger le chiffrement sur les cartes de stockage**<br /><br />Ce paramètre s’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable <br />Les données des applications et données associées sont chiffrées automatiquement.|Non applicable|Oui|
-1Voici des informations supplémentaires pour les appareils qui exécutent Windows 8.1 :
+<sup>1</sup>Voici des informations supplémentaires pour les appareils qui exécutent Windows 8.1 :
 
 -   Pour appliquer le chiffrement à des appareils exécutant Windows 8.1, vous devez installer la [Mise à jour du client MDM pour Windows publiée en décembre 2014](http://support.microsoft.com/kb/3013816) sur chaque appareil.
 
@@ -105,7 +110,7 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 |**Autoriser la réinitialisation aux paramètres d’usine**|Non|Non|Non|Non|Oui (Samsung KNOX Standard uniquement)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Paramètres du cloud - documents et données
+## <a name="cloud-settings--documents-and-data"></a>Paramètres du cloud - documents et données
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +121,7 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 |**URL des dossiers de travail**<br /><br />Ce paramètre définit l’URL du dossier de travail pour autoriser la synchronisation des documents entre les appareils.|Oui|Non|Non|Non|Non|
 |**Autoriser la sauvegarde Google**|Non|Non|Non|Non|Oui (Samsung KNOX Standard uniquement)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Paramètres du cloud - comptes et synchronisation
+## <a name="cloud-settings--accounts-and-synchronization"></a>Paramètres du cloud - comptes et synchronisation
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -127,7 +132,7 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Autoriser les utilisateurs à télécharger des pièces jointes de messages électroniques**1|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
+|**Autoriser les utilisateurs à télécharger des pièces jointes de messages électroniques**<sup>1</sup>|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
 |**Période de synchronisation des messages électroniques** <br /><br />Ce paramètre s’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
 |**Autoriser les appareils mobiles qui ne prennent pas entièrement en charge ces paramètres à se synchroniser avec Exchange (Exchange ActiveSync)** <br /><br />Ce paramètre s’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable|Non applicable|Non applicable|
 |**Rendre le compte Microsoft facultatif dans l’application Windows Mail**|Oui|Non|Non|Non|Non|
@@ -211,9 +216,4 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

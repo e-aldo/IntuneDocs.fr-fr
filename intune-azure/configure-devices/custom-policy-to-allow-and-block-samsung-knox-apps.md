@@ -1,5 +1,6 @@
 ---
-title: "Stratégie Intune autorisant/bloquant des applications pour Samsung KNOX | Préversion Intune Azure | Microsoft Docs"
+title: "Stratégie Intune Autoriser ou bloquer des applications pour Samsung KNOX"
+titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Créez un profil personnalisé pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: a47ea4c8d3027cb34fd8ecd8324fac52c9846a77
+ms.lasthandoff: 03/17/2017
 
 
 
@@ -33,7 +35,7 @@ Ces paramètres peuvent uniquement être utilisés par les appareils qui exécut
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 2. Dans le panneau de la liste des profils, sélectionnez **Créer un profil**.
 3. Dans le panneau **Créer un profil**, entrez un **nom** et éventuellement une **description** pour ce profil d'appareil.

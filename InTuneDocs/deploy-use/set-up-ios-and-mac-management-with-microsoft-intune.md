@@ -2,10 +2,10 @@
 title: Configurer la gestion iOS et Mac | Microsoft Docs
 description: "Activez la gestion des appareils mobiles pour les appareils iOS, notamment iPad et iPhone, ainsi que les appareils Mac OS X avec Microsoft Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
-ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,19 +49,14 @@ Intune permet la gestion des appareils mobiles (MDM) pour les appareils iPad, iP
 
 5.  **Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise.**
 
-    Pour obtenir des instructions sur l’inscription des utilisateurs finaux, consultez [Inscrire votre appareil iOS dans Intune](../enduser/enroll-your-device-in-intune-ios.md) et [Inscrire votre appareil Mac OS dans Intune](../enduser/enroll-your-device-in-intune-macos.md). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
+    Pour obtenir des instructions sur l’inscription des utilisateurs finaux, consultez [Inscrire votre appareil iOS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) et [Inscrire votre appareil Mac OS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
 
     Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
     - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-    - [Conseils destinés aux utilisateurs finaux pour les appareils iOS et Mac](../enduser/using-your-ios-or-macOS-device-with-intune.md)
+    - [Conseils destinés aux utilisateurs finaux pour les appareils iOS et Mac](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Si votre entreprise ou organisation achète des appareils iOS pour les utilisateurs, ils peuvent également être inscrits pour être gérés en tant qu’[appareils iOS appartenant à l’entreprise](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 ### <a name="see-also"></a>Voir aussi
 [Prérequis pour l’inscription d’appareils auprès de Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

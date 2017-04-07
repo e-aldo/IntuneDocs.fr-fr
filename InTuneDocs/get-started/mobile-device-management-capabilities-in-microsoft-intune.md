@@ -1,25 +1,29 @@
 ---
-title: "Fonctionnalités de gestion des appareils inscrits | Microsoft Intune"
+title: "Fonctionnalités de gestion des appareils inscrits | Microsoft Docs"
 description: "Lisez cette rubrique pour savoir comment Intune peut vous aider à gérer les appareils que vous inscrivez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
-ms.topic: article
+ms.date: 12/12/2016
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 710295f0eaeee71bba549c22706ecbfd062ffcb1
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 898975338edcd3267fd47d62d23b35e295f0d99b
+ms.lasthandoff: 12/16/2016
 
 
 ---
-# Fonctionnalités de gestion des appareils inscrits de Microsoft Intune
+# <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Fonctionnalités de gestion des appareils inscrits de Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune vous permet de gérer une gamme d’appareils en les *inscrivant* auprès du service. Vous pouvez inscrire certains types d’appareils vous-même, ou les utilisateurs peuvent s’inscrire à l’aide de l’application *Portail d’entreprise*. Cela leur permet également d’effectuer des opérations telles que rechercher et installer des applications, vérifier la conformité de leurs appareils aux stratégies d’entreprise, et contacter leur support technique.
 
@@ -29,7 +33,7 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 
 
-## Configuration et sécurité des appareils
+## <a name="device-security-and-configuration"></a>Configuration et sécurité des appareils
 
 |Fonctionnalité|Détails|Plus d'informations|
 |--------------|-----------|--------------------|
@@ -37,7 +41,7 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 |Réinitialisation à distance, verrouillage à distance et réinitialisation du code d'accès|Supprime les données sensibles en cas de perte ou de vol d’un appareil. Par exemple, vous pouvez verrouiller l'appareil à distance, restaurer ses paramètres d'usine ou effacer uniquement les données d'entreprise.<br><br>Vous pouvez réinitialiser les codes secrets si les utilisateurs ne peuvent plus accéder à leur appareil, verrouiller des appareils perdus ou volés ou supprimer les données d'appareils perdus ou volés.|[Protégez vos appareils avec le verrouillage à distance et la réinitialisation du mot de passe](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) et [Retirer des appareils de la gestion Intune](/intune/deploy-use/retire-devices-from-microsoft-intune-management)|
 |Mode plein écran|Permet de verrouiller certaines fonctionnalités des appareils mobiles, comme la capture d’écran et les boutons d’alimentation. Vous permet également de limiter les appareils à l'exécution d'une seule application que vous spécifiez.|[Paramètres de la stratégie de configuration iOS dans Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
-## Gestion d'applications
+## <a name="app-management"></a>Gestion d'applications
 
 |Fonctionnalité|Détails|Plus d'informations|
 |--------------|-----------|--------------------|
@@ -50,28 +54,23 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 |Windows Hello Entreprise|Vous permet d’intégrer Windows Hello Entreprise afin de disposer d’un autre mode de connexion pour Windows 10 qui fait appel à Active Directory local ou Azure Active Directory pour remplacer des mots de passe, des cartes à puce ou des cartes à puce virtuelles.|[Contrôler les paramètres Windows Hello Entreprise sur des appareils avec Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 |Applications achetées en volume|Vous permet de gérer les applications que vous avez achetées par le biais d’un programme d’achat en volume en important les informations de licence à partir du magasin d’applications, en effectuant le suivi du nombre de licences que vous avez utilisées et en vous empêchant d’installer un nombre de copies de l’application supérieur au nombre dont vous êtes propriétaire.|[Gérer les applications achetées en volume avec Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
-## Accès aux ressources d'entreprise
+## <a name="company-resource-access"></a>Accès aux ressources d'entreprise
 
 |Fonctionnalité|Détails|Plus d'informations|
 |--------------|-----------|--------------------|
-|Profils de certificat|Crée et déploie des profils de certificat approuvés et des certificats SCEP (Simple Certificate Enrollment Protocol) qui peuvent être utilisés pour sécuriser et authentifier des profils Wi-Fi, VPN et de messagerie.|[Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](/intune/deploy-use/secure-resource-access-with-certificate-profiles)|
+|Profils de certificat|Crée et déploie des profils de certificat approuvés et des certificats SCEP (Simple Certificate Enrollment Protocol) qui peuvent être utilisés pour sécuriser et authentifier des profils Wi-Fi, VPN et de messagerie.|[Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](/intune/deploy-use/secure-resource-access-with-certificate-profiles)|
 |Profils Wi-Fi|Déploie des paramètres de réseau sans fil sur vos utilisateurs. En déployant ces paramètres, vous réduisez l’effort que doit fournir l’utilisateur pour se connecter au réseau d’entreprise.|[Connexions Wi-Fi dans Microsoft Intune](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)|
 |Profils de messagerie|Crée et déploie des paramètres de messagerie sur les appareils. Les utilisateurs peuvent ainsi accéder à leur messagerie professionnelle sur leur appareil personnel sans aucune autre configuration de leur part.|[Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |Profils VPN|Déploie des paramètres VPN sur les utilisateurs et les appareils de votre organisation. En déployant ces paramètres, vous réduisez l’effort que doit fournir l’utilisateur pour se connecter aux ressources du réseau d’entreprise.|[Connexions VPN dans Microsoft Intune](/intune/deploy-use/vpn-connections-in-microsoft-intune)|
 |Stratégies d'accès conditionnel|Gère l’accès à la messagerie Microsoft Exchange et à SharePoint Online à partir des appareils qui ne sont pas gérés par Intune.|[Restreindre l’accès à la messagerie et à SharePoint avec Microsoft Intune](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)|
 
-## Inventaire et rapports
+## <a name="inventory-and-reporting"></a>Inventaire et rapports
 
 |Fonctionnalité|Détails|Plus d'informations|
 |--------------|-----------|--------------------|
 |Inventaire et rapports|Recherche des informations sur les appareils que vous gérez et sur les logiciels utilisés par les appareils.|[Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
-### Voir aussi
+### <a name="see-also"></a>Voir aussi
 [Fonctionnalités de gestion des PC Windows dans Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

@@ -3,8 +3,8 @@ title: "Configurer un service de gestion des dépenses en télécommunications"
 titleSuffix: Intune Azure preview
 description: "Préversion d’Intune Azure : configuration du service de gestion de frais de télécommunications Saaswedo pour l’intégration à Intune."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
@@ -16,16 +16,16 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
+ms.lasthandoff: 03/17/2017
 
 ---
 
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Configurer un service de gestion des dépenses en télécommunications dans la préversion d’Intune Azure
+# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Configurer un service de gestion des dépenses de télécommunications dans la préversion d’Intune Azure
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune vous permet de gérer les dépenses en télécommunications inhérentes à l’utilisation des données sur les appareils mobiles d’entreprise. Pour activer cette fonctionnalité, Intune est intégré à la solution de gestion des dépenses en télécommunications Datalert du développeur de logiciels tiers Saaswedo. Datalert est un logiciel de gestion des frais de télécommunications en temps réel qui vous permet de gérer l’utilisation des données de télécommunications et éviter de des dépassements inattendus et coûteux de données d’itinérance pour vos appareils gérés par Intune. 
+Intune vous permet de gérer les dépenses de télécommunications inhérentes à l’utilisation des données sur les appareils mobiles d’entreprise. Pour activer cette fonctionnalité, Intune est intégré à la solution de gestion des dépenses de télécommunications Datalert du développeur de logiciels tiers Saaswedo. Datalert est un logiciel de gestion des frais de télécommunications en temps réel qui vous permet de gérer l’utilisation des données de télécommunications et éviter de des dépassements inattendus et coûteux de données d’itinérance pour vos appareils gérés par Intune. 
 
 L’intégration d’Intune avec Datalert vous permet de définir, surveiller et appliquer de façon centralisée des limites d’utilisation de données d’itinérance et locales à l’aide d’alertes automatiques lorsque les limites dépassent des seuils définis. Vous pouvez configurer le service pour appliquer différentes actions à des individus ou des groupes d’utilisateurs finaux, notamment la désactivation de l’itinérance, lorsque les utilisateurs dépassent le seuil. Des rapports qui fournissent des informations de surveillance et d’utilisation des données sont disponibles à partir de la console de gestion Datalert.
 
@@ -65,7 +65,7 @@ Avant de commencer, vérifiez que vous avez déjà un abonnement à Intune et à
 
 4. Pour **serveur MDM**, choisissez **Microsoft Intune**.
 
-5. Pour **Domaine Azure AD**, entrez votre ID de client Azure, puis sélectionnez le bouton **Connexion**.
+5. Pour **Domaine Azure AD**, entrez votre ID de locataire Azure, puis sélectionnez le bouton **Connexion**.
 
     Sélectionnez **Connexion** pour que le service Datalert vérifie auprès d’Intune qu’il n’existe aucune connexion Datalert préexistante avec Intune. Après quelques secondes, une page de connexion de Microsoft s’affiche, suivie de l’authentification Datalert Azure.
 
@@ -81,9 +81,9 @@ Une fois l’étape 1 ci-dessus effectuée, votre connexion doit être automati
 
 1. Connectez-vous au portail Azure.
 
-2. Choisissez **Plus de services** > **Analyse + Gestion** > **Intune**.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
+3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 
 4. Dans le panneau **Configuration de l’appareil**, choisissez **Installation** > **Gestion des dépenses de télécommunications**. 
 
@@ -91,7 +91,7 @@ Une fois l’étape 1 ci-dessus effectuée, votre connexion doit être automati
 
   ![Portail Azure affichant l’état de connexion Actif de Datalert](../media/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Étape 3 : Déployer l’application Datalert sur des appareils inscrits par l’entreprise
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Étape 3 : Déployer l’application Datalert sur des appareils inscrits de l’entreprise
 
 Pour vérifier que l’utilisation des données à partir de lignes appartenant uniquement à l’entreprise est collectée, vous devez créer des catégories d’appareils dans Intune, puis cibler l’application Datalert uniquement sur les téléphones d’entreprise. Exécutez les étapes des sous-sections suivantes.
 
@@ -105,7 +105,7 @@ Ces catégories s’affichent aux utilisateurs lors de l’inscription. En fonct
 
 #### <a name="create-the-datalert-app-in-intune"></a>Créer l’application Datalert dans Intune
 
-Procédez comme suit pour créer l’application Datalert dans Intune pour chaque plateforme. iOS est utilisé comme exemple dans ces étapes.
+Effectuez les étapes suivantes pour créer l’application Datalert dans Intune pour chaque plateforme. iOS est utilisé comme exemple dans ces étapes.
 
 1. Dans le panneau **Intune** du portail Azure, choisissez **Gérer les applications**.
 
@@ -117,7 +117,7 @@ Procédez comme suit pour créer l’application Datalert dans Intune pour chaqu
 
 5. Dans **Rechercher dans l’App Store**, recherchez l’application Datalert en tapant **Datalert** dans la fenêtre de recherche.
 
-6. Sélectionnez l’application **Datalert**, puis sélectionnez **OK**.
+6. Sélectionnez l’application **Datalert**, puis **OK**.
 
   ![Capture d’écran du panneau Ajouter une stratégie](../media/tem-select-app-from-apple-app-store.png)
 

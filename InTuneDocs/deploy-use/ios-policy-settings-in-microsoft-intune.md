@@ -1,11 +1,11 @@
 ---
-title: "Paramètres de la stratégie iOS | Microsoft Intune"
+title: "Paramètres de la stratégie iOS | Microsoft Docs"
 description: "Créez des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils iOS que vous gérez avec Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie d’iOS dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils iOS. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
 
@@ -78,12 +82,12 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |----------------|-------|
 |**Autoriser la sauvegarde dans iCloud**|Autorise l’utilisateur à sauvegarder les données de l’appareil dans iCloud.|
 |**Autoriser la synchronisation des documents dans iCloud**|Autoriser la synchronisation des documents et des clés-valeurs sur votre espace de stockage iCloud.|
-|**Autoriser la synchronisation du flux de photos dans iCloud**|Autoriser la synchronisation des photos de votre appareil sur iCloud.|
+|**Autoriser la synchronisation du flux de photos dans iCloud**|Permet aux utilisateurs d’activer **Mon flux de photos** sur leur appareil afin de synchroniser les photos avec iCloud et de les mettre à la disposition de tous les appareils des utilisateurs.|
 |**Exiger la sauvegarde chiffrée**|Exiger le chiffrement des sauvegardes d’appareil.|
 |**Autoriser les applications gérées à synchroniser des données sur iCloud**|Autorise les applications que vous gérez avec Intune à synchroniser les données sur le compte iCloud de l’utilisateur.|
 |**Autoriser la procédure de transfert à poursuivre sur un autre appareil**|Autorise l’utilisateur à reprendre le travail qu’il a commencé sur un appareil iOS, sur un autre appareil iOS ou Mac OS X.|
-|**Autoriser le partage de photos iCloud**|Autorise l’utilisation de la fonctionnalité de flux de photos partagé iOS.|
-|**Autoriser la photothèque iCloud**|Autorise l’utilisateur à stocker des photos dans iCloud. Si désactivé, les photos déjà stockées dans iCloud sont supprimées.|
+|**Autoriser le partage de photos iCloud**|Choisissez **Non** pour désactiver le **partage de photos iCloud** sur l'appareil.|
+|**Autoriser la photothèque iCloud**|Si définie sur **Non**, désactive l’utilisation de la photothèque iCloud qui permet aux utilisateurs de stocker des photos et des vidéos dans le cloud.    Toutes les photos qui ne sont pas entièrement téléchargées de la Photothèque iCloud sur l'appareil seront supprimées de l'appareil si cette valeur est définie sur **Non**.|
 
 ### <a name="application-settings-for-the-browser"></a>Paramètres d’application du navigateur
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
@@ -172,6 +176,8 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 |**Importer des applications**|Importe la liste d’applications que vous avez spécifiées dans un fichier de valeurs séparées par des virgules. Dans ce fichier, utilisez le format suivant : nom de l’application, éditeur, URL de l’application.|
 |**Éditer**|Permet de modifier le nom, l’éditeur et l’URL de l’application sélectionnée.|
 |**Supprimer**|Supprime l’application sélectionnée dans la liste.|
+
+Les stratégies contenant des paramètres d’application conformes et non conformes doivent être déployés sur des groupes d’utilisateurs.
 
 ### <a name="kiosk-mode-settings"></a>Paramètres du mode plein écran
 
@@ -380,9 +386,4 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer 
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -2,10 +2,10 @@
 title: "Résoudre les problèmes d’inscription d’appareils | Microsoft Docs"
 description: "Suggestions pour résoudre les problèmes liés à l’inscription d’appareils."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ Avant de commencer le dépannage, vérifiez que vous avez configuré Intune corr
 
 -    [Se préparer à inscrire des appareils dans Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -    [Configurer la gestion des appareils iOS et Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Configurer la gestion de Windows 10 Mobile et Windows Phone avec Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Configurer la gestion des appareils Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Configurer la gestion des appareils Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) -aucune étape supplémentaire requise
+-    [Configurer la gestion des appareils Android for Work](/intune/deploy-use/set-up-android-for-work)
 
 Les utilisateurs d’appareils gérés peuvent recueillir des journaux d’inscription et de diagnostic qui peuvent vous être utiles. Les instructions destinées aux utilisateurs permettant de recueillir les journaux sont fournies dans :
 
@@ -149,7 +149,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 **Problème :** Quand vous ajoutez un deuxième domaine vérifié à votre ADFS, les utilisateurs avec le suffixe de nom principal d’utilisateur (UPN) du deuxième domaine peuvent ne pas pouvoir se connecter aux portails ou inscrire des appareils.
 
 
-**Solution :** Les clients Microsoft Office 365 qui utilisent l’authentification unique (SSO) par le biais des services AD FS 2.0 et qui disposent de plusieurs domaines de niveau supérieur pour les suffixes UPN des utilisateurs au sein de leur entreprise (par exemple, @contoso.com ou @fabrikam.com)) doivent déployer une instance distincte du service FS (Federation Service) AD FS 2.0 pour chaque suffixe. Il existe désormais un [correctif cumulatif pour ADFS 2.0](http://support.microsoft.com/kb/2607496) qui fonctionne conjointement avec le commutateur **SupportMultipleDomain** pour permettre au serveur ADFS de prendre en charge ce scénario sans nécessiter d’autres serveurs ADFS 2.0. Pour plus d’informations, consultez [ce blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+**Solution :** Les clients Microsoft Office 365 qui utilisent l’authentification unique (SSO) par le biais des services AD FS 2.0 et qui disposent de plusieurs domaines de niveau supérieur pour les suffixes UPN des utilisateurs au sein de leur entreprise (par exemple, @contoso.com ou @fabrikam.com) doivent déployer une instance distincte du service FS (Federation Service) AD FS 2.0 pour chaque suffixe. Il existe désormais un [correctif cumulatif pour ADFS 2.0](http://support.microsoft.com/kb/2607496) qui fonctionne conjointement avec le commutateur **SupportMultipleDomain** pour permettre au serveur ADFS de prendre en charge ce scénario sans nécessiter d’autres serveurs ADFS 2.0. Pour plus d’informations, consultez [ce blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problèmes Android
@@ -279,6 +279,18 @@ Pour résoudre le problème, les utilisateurs doivent sélectionner le bouton **
   ![Écran de configuration de l’accès à l’entreprise](./media/ios_cp_app_company_access_setup.png)
 
 Une fois inscrits, les appareils retrouvent un état d’intégrité correct et récupèrent l’accès aux ressources d’entreprise.
+
+### <a name="verify-ws-trust-13-is-enabled"></a>Vérifier que WS-Trust 1.3 est activé
+**Problème** Les appareils iOS Programme d’inscription d’appareils (DEP) Apple ne peuvent pas être inscrits
+
+L’inscription des appareils Programme d’inscription d’appareils (DEP) avec affinité utilisateur nécessite l’activation d’un point de terminaison WS-Trust 1.3 Username/mixte pour demander des jetons utilisateur. Active Directory active ce point de terminaison par défaut. Vous obtenez une liste de points de terminaison activés à l’aide de l’applet de commande PowerShell Get-AdfsEndpoint et recherchez le point de terminaison trust/13/UsernameMixed. Exemple :
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+Pour plus d’informations, consultez la [documentation Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+Pour plus d’informations, consultez [Meilleures pratiques pour la sécurisation des services de fédération Active Directory](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Si vous avez besoin d’aide pour déterminer si WS-Trust 1.3 Username/Mixed est activé dans votre fournisseur de fédération d’identité, veuillez contacter le support Microsoft si vous utilisez ADFS, ou votre fournisseur d’identité tiers.
+
 
 ### <a name="profile-installation-failed"></a>Échec de l’installation du profil
 **Problème :** Un utilisateur reçoit l’erreur **Échec de l’installation du profil** sur un appareil iOS.
