@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
 ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
+ms.lasthandoff: 01/13/2017
 
 
 ---
@@ -30,7 +31,7 @@ Si vous rencontrez des problèmes de déploiement et de gestion des stratégies 
 ## <a name="general-issues"></a>Problèmes généraux
 
 ### <a name="was-a-deployed-policy-applied-to-the-device"></a>Une stratégie déployée a-t-elle été appliquée à l’appareil ?
-**Problème : ** Vous ne savez pas si une stratégie a été correctement appliquée.
+**Problème :** Vous ne savez pas si une stratégie a été correctement appliquée.
 
 Dans la console d’administration Intune, à chaque appareil correspond un onglet Stratégie en dessous de **Propriétés de l’appareil**. Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur prévue est la valeur que vous souhaitez obtenir lors de l'attribution de la stratégie. L’état est ce que vous appliquez au bout du compte quand toutes les stratégies qui s’appliquent à l’appareil, ainsi que les restrictions et les conditions requises du matériel et du système d’exploitation, sont regroupées. Les états possibles sont :
 
@@ -99,9 +100,4 @@ Pour résoudre ce problème, réglez l’heure du système local le plus proche 
 
 ### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
