@@ -100,7 +100,7 @@ En outre, vous avez besoin de [Microsoft Authenticator](https://docs.microsoft.c
 
 3.  Dans la section **Général** de la page **Créer une stratégie**, fournissez un nom et éventuellement une description de la stratégie de configuration d’applications iOS.
 
-    a.  Ouvrir le fichier **skycure\_configuration.plist** à l’aide d’un éditeur de texte comme le bloc-notes, copiez le contenu et collez-la dans la zone **Stratégie de configuration d’applications mobiles**, choisissez **Valider**, puis **Enregistrer la stratégie**.
+    a.  Ouvrez le fichier **skycure\_configuration.plist** à l’aide d’un éditeur de texte comme le bloc-notes, copiez le contenu et collez-le dans la zone **Stratégie de configuration d’applications mobiles**, choisissez **Valider**, puis **Enregistrer la stratégie**.
 
        ![Stratégie de configuration d’applications iOS 2](../media/mtp/skycure-add-apps-8.png)
 

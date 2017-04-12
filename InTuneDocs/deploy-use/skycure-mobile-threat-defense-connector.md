@@ -1,6 +1,6 @@
 ---
 title: Connecteur Skycure Mobile Threat Defense | Microsoft Docs
-description: "Protégez l’accès aux ressources d’entreprise en fonction du risque au niveau de l’appareil, du réseau et de l’application avec le connecteur Skycure Mobile Threat Defense et Intune."
+description: "Protégez l’accès aux ressources de l’entreprise en fonction du risque au niveau de l’appareil, du réseau et de l’application avec le connecteur Skycure Mobile Threat Defense et Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Vous pouvez contrôler l’accès des appareils mobiles aux ressources d’entreprise à l’aide d’un accès conditionnel basé sur une évaluation des risques effectuée par Skycure, une solution de protection contre les menaces mobiles qui s’intègre à Microsoft Intune. Le risque est évalué en fonction des données de télémétrie recueillies par les appareils exécutant Skycure, notamment :
+Vous pouvez contrôler l’accès des appareils mobiles aux ressources de l’entreprise à l’aide d’un accès conditionnel basé sur une évaluation des risques effectuée par Skycure, une solution de protection contre les menaces mobiles qui s’intègre à Microsoft Intune. Le risque est évalué en fonction des données de télémétrie recueillies par les appareils exécutant Skycure, notamment :
 
 -   Défense physique
 
@@ -36,7 +36,7 @@ Vous pouvez contrôler l’accès des appareils mobiles aux ressources d’entre
 
 -   Défense contre les vulnérabilités
 
-Vous pouvez configurer des stratégies d’accès conditionnel basées sur l’évaluation des risques Skycure par le biais des stratégies de conformité d’appareil Intune, permettant d’autoriser ou d’empêcher des appareils non conformes d’accéder aux ressources d’entreprise en fonction des menaces détectées.
+Vous pouvez configurer des stratégies d’accès conditionnel basées sur l’évaluation des risques Skycure par le biais des stratégies de conformité d’appareil Intune, permettant d’autoriser ou d’empêcher des appareils non conformes d’accéder aux ressources de l’entreprise en fonction des menaces détectées.
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Comment Intune et Skycure aident-ils à protéger les ressources de votre entreprise ?
 
@@ -44,7 +44,7 @@ L’application mobile Skycure pour Android ou iOS capture le système de fichie
 
 La stratégie de conformité d’appareil Intune inclut une règle pour Skycure Mobile Threat Defense, basée sur l’évaluation des risques Skycure. Quand cette règle est activée, Intune évalue si l’appareil est conforme à la stratégie activée.
 
-Si l’appareil est détecté non conforme, l’accès aux ressources comme Exchange Online et SharePoint Online est bloqué. Les utilisateurs d’appareils bloqués reçoivent des conseils à partir de l’application mobile Skycure pour résoudre le problème et récupérer l’accès aux ressources d’entreprise.
+Si l’appareil est détecté non conforme, l’accès aux ressources comme Exchange Online et SharePoint Online est bloqué. Les utilisateurs d’appareils bloqués reçoivent de l’aide à partir de l’application mobile Skycure pour résoudre le problème et récupérer l’accès aux ressources de l’entreprise.
 
 Intune prend en charge deux modes d’intégration avec Skycure :
 
@@ -58,7 +58,7 @@ Voici quelques scénarios courants :
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>Contrôler l’accès en fonction des menaces émanant des applications malveillantes
 
-Lorsque des applications malveillantes comme des logiciels malveillants sont détectées sur des appareils, vous pouvez bloquer ces appareils jusqu'à ce que la menace soit écartée :
+Lorsque des applications malveillantes, des logiciels malveillants par exemple, sont détectées sur des appareils, vous pouvez bloquer ces appareils jusqu'à ce que la menace soit écartée :
 
 -   Connexion à la messagerie de l’entreprise
 
@@ -76,7 +76,7 @@ Lorsque des applications malveillantes comme des logiciels malveillants sont dé
 
 ### <a name="control-access-based-on-threat-to-network"></a>Contrôler l’accès en fonction de la menace pour le réseau
 
-Détecter les menaces, par exemple les interceptions (**Man-in-the-middle**), sur le réseau et protéger l’accès aux réseaux Wi-Fi en fonction du risque de l’appareil.
+Détectez les menaces, par exemple les interceptions (**Man-in-the-middle**), sur le réseau et protégez l’accès aux réseaux Wi-Fi compte tenu du risque de l’appareil.
 
 **Bloquer l’accès au réseau via le Wi-Fi :**
 
@@ -88,7 +88,7 @@ Détecter les menaces, par exemple les interceptions (**Man-in-the-middle**), su
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Contrôler l’accès à SharePoint Online en fonction de la menace pour le réseau
 
-Détecter les menaces, par exemple les interceptions (**Man-in-the-middle**), sur le réseau et empêcher la synchronisation des fichiers d’entreprise selon le risque de l’appareil.
+Détectez les menaces, par exemple les interceptions (**Man-in-the-middle**), sur le réseau et empêchez la synchronisation des fichiers d’entreprise compte tenu du risque de l’appareil.
 
 **Bloquer SharePoint Online lorsque des menaces réseau sont détectées :**
 
