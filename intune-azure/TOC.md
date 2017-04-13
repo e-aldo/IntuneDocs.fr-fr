@@ -31,17 +31,16 @@
 ### [Configurer l’autorité MDM](enroll-devices/set-mdm-authority.md)
 ## Planification et conception
 ### [Obtenir un certificat Push MDM Apple](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Obtenir un jeton DEP Apple](enroll-devices/get-apple-dep-token.md)
 ### [Choisir comment inscrire des appareils iOS](enroll-devices/choose-ios-enrollment-method.md)
 ## Guide pratique
 ### [Affecter des licences aux utilisateurs](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Inscrire des appareils Android](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Inscrire des appareils iOS
-#### [Inscrire des appareils iOS à l’aide de l’Assistant Configuration](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Inscrire des appareils iOS en utilisant l’inscription directe](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator - Assistant Configuration](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator - Inscription directe](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Ajouter des numéros de série Apple Configurator](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [Inscrire des appareils iOS à l’aide du programme d’inscription des appareils](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Inscrire des appareils avec le gestionnaire d’inscription d’appareil](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Gestionnaire d’inscription d’appareil](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Inscrire des appareils macOS](enroll-devices/enroll-macos-devices.md)
 ### [Inscrire des appareils Windows](enroll-devices/enroll-windows-devices.md)
 ### Gérer l’inscription des appareils
