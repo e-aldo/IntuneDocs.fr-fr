@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -91,12 +92,7 @@ Les défis liés au déploiement représentent des problèmes cruciaux pour une 
 <br>
     -   **Solution :** même si vous êtes très heureux de développer votre projet, assurez-vous de définir précisément vos objectifs. Incluez ces éléments dans toutes les activités de formation afin de garantir que les utilisateurs comprennent pourquoi votre organisation a sélectionné Intune.
 
-## <a name="next-section"></a>Section suivante
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez identifié vos objectifs de déploiement et les défis potentiels, passons à la section suivante : [Identifier les scénarios de cas d'utilisation](section-2-identify-use-case-scenarios.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
