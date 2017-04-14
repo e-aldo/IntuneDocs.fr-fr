@@ -217,7 +217,7 @@ Si la résolution #2 ne fonctionne pas, indiquez à vos utilisateurs de suivre 
 
 **Problème** : Les utilisateurs reçoivent le message suivant sur leur appareil : *Vous ne pouvez pas vous connecter, car il manque un certificat obligatoire à votre appareil.*
 
-**Résolution 1 **:
+**Résolution 1**:
 
 Demandez à vos utilisateurs de suivre les instructions fournies dans [Un certificat obligatoire est manquant sur votre appareil](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Si après cela l’erreur persiste, essayez la Résolution 2.
 

@@ -129,7 +129,7 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
   ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](../media/app-wrapper/iOS-signing-cert-6.png)
 
-12. Retourner sur le site des développeurs Apple. Cliquez sur **Continue**(Continuer). Puis téléchargez le fichier CSR.
+12. Retourner sur le site des développeurs Apple. Cliquez sur **Continue** (Continuer). Puis téléchargez le fichier CSR.
 
 13. Apple génère votre certificat de signature. Téléchargez et enregistrez-le sur un emplacement facile à mémoriser sur votre ordinateur macOS.
 
