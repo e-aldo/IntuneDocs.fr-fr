@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ Configurez la gestion pour les plateformes suivantes :
 - [iOS et Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [PC et ordinateurs portables Windows](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile et Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile et Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [PC et ordinateurs portables Windows](manage-windows-pcs-with-microsoft-intune.md) (Logiciel client Intune)
 
 Vous pouvez également activer l’[inscription d’appareils d’entreprise](manage-corporate-owned-devices.md).
 
@@ -170,7 +170,7 @@ En cas de coexistence, vous devez vérifier les deux listes de contrôle Intune 
 Effectuez les étapes suivantes avant de contacter le Support Microsoft pour réinitialiser votre autorité MDM.
 
 - Mettez hors service tous les appareils à partir de la console d’administration Intune. N’essayez pas de mettre hors service un appareil à partir de l’appareil lui-même. 
-- Supprimez le connecteur de service à service (sous **Administration** > **Gestion des appareils mobiles** > **Microsoft Exchange**), ou désactivez le connecteur Exchange si vous l’avez configuré. 
+- Supprimez le connecteur de service à service (sous **Administration** > **Gestion des appareils mobiles** > **Microsoft Exchange**), ou désactivez le connecteur Exchange si vous l’avez configuré.
 - Supprimez le rôle Gestionnaire d’inscription d’appareil à partir d’**Administrateur** > **Gestionnaire d’inscription d’appareil**.
 - Désactivez le mappage de groupe d’appareils dans **Administrateur** > **Gestion des appareils mobiles** > **Mappage de groupe d’appareils**.
 - Supprimez les clés de chargement indépendant (sideloading) à partir d’**Administrateur** > **Gestion des appareils mobiles** > **Windows** > **Clés de chargement indépendant**.
@@ -187,7 +187,7 @@ Effectuez les étapes suivantes avant de contacter le Support Microsoft pour ré
 - Supprimez tous les utilisateurs du groupe d’utilisateurs Intune. Faites pointer l’abonnement Intune sur un regroupement d’utilisateurs vide, ou supprimez tous les utilisateurs du regroupement ciblé.  Vérifiez dans le fichier CloudUserSync.log que les utilisateurs sont supprimés. 
 - Décochez la plateforme iOS pour vider le certificat APNs.
 - Supprimez toutes les applications publiées destinées aux appareils MDM.
-- Supprimez toutes les stratégies destinées aux appareils MDM. 
+- Supprimez toutes les stratégies destinées aux appareils MDM.
 - Supprimez le connecteur Windows Intune à partir de la console Configuration Manager (applicable uniquement à R2 SP1 ou versions antérieures).
 Supprimez l’abonnement Intune en double-cliquant sur l’abonnement, puis en sélectionnant **Supprimer**.
 - Redémarrez le service SMS Executive.
@@ -196,18 +196,18 @@ Supprimez l’abonnement Intune en double-cliquant sur l’abonnement, puis en s
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Réinitialiser l’autorité MDM sur Configuration Manager à la place d’Office 365
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
-2. Sélectionnez l’onglet **Stratégies de sécurité**, puis **Gestion des appareils**. 
+2. Sélectionnez l’onglet **Stratégies de sécurité**, puis **Gestion des appareils**.
 3. Mettez hors service tous les appareils en choisissant **Réinitialisation sélective**. N’essayez pas de mettre hors service un appareil à partir de l’appareil lui-même. Si la réinitialisation sélective est désactivée, aucune action supplémentaire n’est nécessaire.
-4. Sélectionnez l’onglet **Stratégies de sécurité**, puis **Stratégies de sécurité des appareils**. 
+4. Sélectionnez l’onglet **Stratégies de sécurité**, puis **Stratégies de sécurité des appareils**.
 5. Sélectionnez **Supprimer** pour toutes les stratégies existantes. Si les stratégies sont en état d’attente, aucune action supplémentaire n’est nécessaire.
 
 >[!NOTE]
->Le certificat APNs iOS ne peut pas être supprimé et reste attaché au compte. 
+>Le certificat APNs iOS ne peut pas être supprimé et reste attaché au compte.
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>Étapes suivantes pour les réinitialisations d’autorité MDM
 
-Une fois que le Support Microsoft vérifie les éléments de la liste de contrôle applicable, la réinitialisation de l’autorité MDM peut prendre jusqu’à trois jours ouvrés, mais elle s’effectue généralement en une journée. 
+Une fois que le Support Microsoft vérifie les éléments de la liste de contrôle applicable, la réinitialisation de l’autorité MDM peut prendre jusqu’à trois jours ouvrés, mais elle s’effectue généralement en une journée.
 
 >[!IMPORTANT]
->N’essayez pas de configurer votre abonnement tant que le Support Microsoft n’a pas confirmé que la réinitialisation est terminée. Une configuration prématurée peut entraîner des dysfonctionnements et/ou affecter votre possibilité d’utiliser le service Intune. 
+>N’essayez pas de configurer votre abonnement tant que le Support Microsoft n’a pas confirmé que la réinitialisation est terminée. Une configuration prématurée peut entraîner des dysfonctionnements et/ou affecter votre possibilité d’utiliser le service Intune.
 

@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: a2f8067bc169147a60db582d796631bea1ea5a8d
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Cette rubrique explique aux administrateurs Intune comment activer l’inscription des appareils mobiles. Pour obtenir de l’aide sur l’utilisation d’Intune sur votre téléphone, consultez [Utilisation d’appareils gérés pour votre travail](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions). 
+Cette rubrique explique aux administrateurs Intune comment activer l’inscription des appareils mobiles. Pour obtenir de l’aide sur l’utilisation d’Intune sur votre téléphone, consultez [Utilisation d’appareils gérés pour votre travail](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Pour configurer la gestion des appareils mobiles avec Intune, vous devez d’abord définir *l’autorité de gestion des appareils mobiles*, qui identifie le service permettant de gérer les appareils associés à votre compte. Cette aide suppose que vous allez utiliser le service Intune plutôt que System Center Configuration Manager. Une fois l’autorité MDM définie, vous pouvez activer la gestion des plateformes d’appareil et inscrire vos appareils auprès de l’application Portail d’entreprise.
 
@@ -49,9 +50,9 @@ L’inscription doit être activée pour les appareils iOS, Mac et Android for W
 
 Activez l’inscription d’appareils pour la plateforme d’appareils que vous souhaitez gérer. La configuration requise varie en fonction de la plateforme :
 
--  [iOS et macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--  [PC Windows](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Windows 10 Mobile et Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS et macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Windows 10 et Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [PC Windows](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) (client de logiciel Intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 Une fois l’inscription activée, les utilisateurs peuvent télécharger l’application Portail d’entreprise sur leur appareil et terminer le processus d’inscription d’appareil.
@@ -60,18 +61,12 @@ Une fois l’inscription activée, les utilisateurs peuvent télécharger l’ap
 Vous pouvez également activer plusieurs scénarios [d’inscription d’un appareil appartenant à l’entreprise](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices), notamment :
 - [Programme d’inscription d’appareils d’Apple](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Inscription par le biais de l’Assistant Configuration Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Inscription par le biais de l’Assistant Configuration Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Inscription directe Apple Configurator](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [Gestionnaire d’inscription d’appareil](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### <a name="next-steps"></a>Étapes suivantes
 Félicitations ! Vous venez d’effectuer la dernière étape du *guide de démarrage rapide Intune*. Maintenant que votre configuration initiale est terminée, vous pouvez envisager d’activer des fonctionnalités supplémentaires de gestion des appareils mobiles.
 
 >[!div class="step-by-step"]
-
 >[&larr; **Inscrire des appareils**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Tâches après la configuration** &rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

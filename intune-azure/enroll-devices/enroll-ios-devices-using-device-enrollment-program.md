@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
-ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
+ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -27,48 +27,64 @@ ms.lasthandoff: 02/23/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Microsoft Intune peut déployer un profil d’inscription qui inscrit les appareils iOS qui ont été achetés via le programme DEP « à distance ». Un profil contient les paramètres de gestion que vous souhaitez appliquer aux appareils. Le package d’inscription peut inclure des options d’Assistant Configuration pour l’appareil. Les appareils inscrits via le programme DEP ne peuvent pas être désinscrits par les utilisateurs.
+Cette rubrique aide les administrateurs informatiques à inscrire des appareils d’entreprise iOS achetés dans le cadre du [Programme d’inscription des appareils (DEP) Apple](https://deploy.apple.com). Microsoft Intune peut déployer un profil d’inscription qui inscrit les appareils DEP « à distance » afin que l’administrateur n’ait jamais à toucher aucun des appareils gérés. Un profil DEP contient les paramètres de gestion que vous souhaitez appliquer aux appareils durant l’inscription. Le package d’inscription peut inclure des options d’Assistant Configuration pour l’appareil.
 
 >[!NOTE]
->Cette méthode d’inscription ne peut pas être utilisée avec celle du [gestionnaire d’inscription d’appareil](enroll-devices-using-device-enrollment-manager.md).
+>L’inscription au programme DEP ne peut pas être utilisée avec le [gestionnaire d’inscription d’appareil](enroll-devices-using-device-enrollment-manager.md).
+>De plus, si les utilisateurs inscrivent leurs appareils iOS à l’aide de l’application Portail d’entreprise et que les numéros de série de ces appareils sont ensuite importés et affectés à un profil DEP, les appareils seront désinscrits de Microsoft Intune.
 
-Pour gérer les appareils iOS d’entreprise avec le programme d’inscription des appareils (DEP) d’Apple, votre organisation doit participer au programme et obtenir des appareils par le biais de ce programme. Les détails de cette procédure sont disponibles à l'adresse suivante :  [https://deploy.apple.com](https://deploy.apple.com). Les avantages du programme incluent la configuration automatique des appareils sans utiliser de câble USB pour connecter chaque appareil à un ordinateur.
+**Étapes d’inscription DEP**
+1. [Obtenir un jeton DEP Apple](#get-the-apple-dep-certificate)
+2. [Créer un profil DEP](#create-anapple-dep-profile)
+3. [Affecter des numéros de série Apple DEP à votre serveur Intune](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+4. [Synchroniser les appareils gérés par le programme DEP](#synchronize-dep-managed-devices)
+5. Distribuer des appareils aux utilisateurs
 
-Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du programme DEP, vous devez [obtenir un jeton approprié](get-apple-dep-token.md) auprès d’Apple. Ce jeton permet à Intune de synchroniser les informations sur les appareils participant à ce programme et appartenant à votre entreprise. Il permet également à Intune d'effectuer des téléchargements de profil d'inscription sur Apple et d'attribuer des appareils à ces profils.
 
-Les autres méthodes d’inscription d’appareils iOS sont décrites dans [Choisir comment inscrire des appareils iOS dans Intune](choose-ios-enrollment-method.md).
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="get-the-apple-dep-certificate"></a>Obtenir le certificat DEP Apple
+Avant de pouvoir inscrire des appareils d’entreprise iOS à l’aide du programme DEP d’Apple, vous devez obtenir un fichier de certificat DEP (.p7m) auprès d’Apple. Ce jeton permet à Intune de synchroniser les informations sur les appareils participant à ce programme et appartenant à votre entreprise. Il permet également à Intune d'effectuer des chargements de profil d'inscription vers Apple et d'attribuer des appareils à ces profils.
 
-Avant de configurer l’inscription des appareils iOS, effectuez les prérequis suivants :
+Pour gérer les appareils iOS d’entreprise avec le programme DEP, votre organisation doit participer au programme et obtenir des appareils par le biais de ce programme. Les détails de cette procédure sont disponibles à l’adresse suivante : https://deploy.apple.com. Les avantages du programme incluent la configuration automatique des appareils sans utiliser de câble USB pour connecter chaque appareil à un ordinateur.
 
-- [Configurer des domaines](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Configurer l’autorité MDM](set-mdm-authority.md)
-- [Créer des groupes](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- Attribuer des licences utilisateur dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Obtenir un certificat Push MDM Apple](get-an-apple-mdm-push-certificate.md)
-- [Obtenir un jeton DEP Apple](get-apple-dep-token.md)
+> [!NOTE]
+> Si votre client Intune a été migré de la console classique Intune vers le portail Azure et que vous avez supprimé un jeton DEP Apple de la console d’administration Intune pendant la période de migration, ce jeton DEP peut avoir été restauré dans votre compte Intune. Vous pouvez supprimer à nouveau le jeton DEP du portail Azure.
 
-## <a name="create-an-apple-dep-profile-for-devices"></a>Créer un profil Apple DEP pour les appareils
+
+
+
+**Étape 1. Téléchargez un certificat de clé publique Intune nécessaire à la création d’un jeton DEP Apple.**<br>
+1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**. Dans le panneau Intune, choisissez **Inscription de l’appareil** > **Jeton Apple DEP**.
+2. Sélectionnez **Télécharger votre clé publique** pour télécharger et enregistrer le fichier de clé de chiffrement (.pem) en local. Le fichier .pem est utilisé pour demander un certificat de relation d'approbation à partir du portail du programme d'inscription d'appareils d'Apple.
+
+**Étape 2 : Téléchargez un jeton DEP Apple à partir du site web Apple approprié.**<br>
+Sélectionnez [Créer un jeton DEP via les programmes de déploiement Apple](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise. Vous pouvez utiliser cet ID Apple pour renouveler votre jeton DEP.
+
+   1.  Dans le [Portail Programme d’inscription des appareils Apple](https://deploy.apple.com), accédez à **Programme d’inscription d’appareils** &gt; **Gérer les serveurs**, puis choisissez **Ajouter un serveur MDM**.
+   2.  Entrez le **Nom du serveur MDM**, puis choisissez **Suivant**. Le nom du serveur vous permet d’identifier le serveur de gestion des appareils mobiles (MDM) uniquement. Il ne s’agit pas du nom ou de l’URL du serveur Microsoft Intune.
+   3.  La boîte de dialogue **Ajouter&lt;nom_serveur&gt;** s’ouvre. Choisissez **Choisir un fichier** pour charger le fichier .pem, puis choisissez **Suivant**.
+   4.  La boîte de dialogue **Ajouter&lt;nom_serveur&gt;** affiche un lien **Votre jeton de serveur**. Téléchargez le fichier de jeton de serveur (.p7m) sur votre ordinateur, puis choisissez **Terminé**.
+
+**Étape 3 : Entrez l’ID Apple utilisé pour créer votre jeton DEP Apple. Cet ID peut être utilisé pour renouveler votre jeton DEP Apple.**
+
+**Étape 4 :. Accédez à votre jeton DEP Apple à télécharger. Intune se synchronise automatiquement avec votre compte DEP.**<br>
+Accédez au fichier du certificat (.pem), choisissez **Ouvrir**, puis **Télécharger**. Avec le certificat Push, Intune peut inscrire et gérer des appareils iOS en envoyant la stratégie aux appareils mobiles inscrits.
+
+## <a name="create-an-apple-dep-profile"></a>Créer un profil DEP Apple
 
 Un profil d'inscription d'appareil définit les paramètres appliqués à un groupe d'appareils. Les étapes suivantes montrent comment créer un profil d’inscription d’appareil pour les appareils iOS inscrits à l’aide du programme DEP.
 
 1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
-
 2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis choisissez **Inscription Apple**.
-
 3. Sous **Gérer les paramètres du programme Apple DEP**, sélectionnez **Profils DEP**.
-
 4. Dans le panneau **Profils Apple DEP**, sélectionnez **Créer**.
-
 5. Dans le panneau **Créer un profil d’inscription**, entrez un nom et une description pour le profil.
-
 6. Pour **Affinité utilisateur**, choisissez si les appareils avec ce profil seront inscrits avec ou sans affinité utilisateur.
 
  - **Inscrire avec l’affinité utilisateur** : l’appareil doit être affilié à un utilisateur pendant l’installation initiale. Il peut ensuite être autorisé à accéder aux données et aux e-mails de l’entreprise. Choisissez l’affinité utilisateur pour les appareils gérés par DEP qui appartiennent à des utilisateurs et qui doivent utiliser le portail d’entreprise pour les services tels que l’installation d’applications. Notez que l’authentification multifacteur (MFA) ne fonctionne pas lors de l’inscription sur les appareils DEP avec l’affinité utilisateur. Après l’inscription, l’authentification multifacteur fonctionne comme prévu sur ces appareils. Les nouveaux utilisateurs qui doivent changer leur mot de passe lors de leur première connexion ne peuvent pas y être invités pendant l’inscription sur des appareils DEP. De plus, les utilisateurs dont les mots de passe ont expiré ne sont pas invités à réinitialiser leur mot de passe lors de l’inscription DEP et doivent le faire à partir d’un autre appareil.
 
     >[!NOTE]
-    >Dans le cas de DEP avec affinité utilisateur, un point de terminaison WS-Trust 1.3 Username/Mixed doit être activé pour demander un jeton utilisateur.
+    >Dans le cas de DEP avec affinité utilisateur, un [point de terminaison WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) doit être activé pour demander un jeton utilisateur. [En savoir plus sur WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Inscrire sans affinité utilisateur** : l’appareil n’est pas affilié à un utilisateur. Utilisez cette affiliation pour les appareils qui effectuent des tâches sans accéder aux données de l'utilisateur local. Les applications qui nécessitent l’affiliation d’un utilisateur (y compris l’application Portail d’entreprise utilisée pour l’installation des applications métier) ne fonctionneront pas.
 
@@ -111,7 +127,7 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
 4. Choisissez **Attribuer au serveur** et le &lt;nom_serveur&gt; spécifié pour Microsoft Intune, puis **OK**.
 
-## <a name="synchronize-dep-managed-devices"></a>Synchroniser des appareils gérés par le programme DEP
+## <a name="synchronize-dep-managed-devices"></a>Synchroniser les appareils gérés par le programme DEP
 
 1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
 

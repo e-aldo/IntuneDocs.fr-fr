@@ -15,9 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
+ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.lasthandoff: 03/31/2017
 
 
 
@@ -44,7 +44,7 @@ Ces paramètres peuvent uniquement être utilisés par les appareils qui exécut
     - **Description du paramètre**. Entrez une description facultative, comme « Liste des applications dont l’exécution est bloquée ».
     -     **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
     -     **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
-    -     **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
+    -     **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez bloquer. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
 
     Pour obtenir la liste des applications que les utilisateurs sont autorisés à installer à partir du Google Play Store tout en excluant toutes les autres applications :
 
