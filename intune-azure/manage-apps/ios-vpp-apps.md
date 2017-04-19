@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e75ab41176f2aa1feac98fcf067349b132d4d61b
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -30,9 +30,6 @@ ms.lasthandoff: 02/18/2017
 L’App Store iOS vous permet d’acheter plusieurs licences pour une application que vous souhaitez exécuter dans votre entreprise. Vous pouvez ainsi réduire les coûts d’administration liés au suivi de plusieurs copies d’application achetées.
 
 Microsoft Intune vous aide à gérer les applications que vous avez achetées par le biais de ce programme, en important les informations de licence à partir du magasin d’applications, en effectuant le suivi du nombre de licences que vous avez utilisées, et en vous empêchant d’installer un nombre de copies de l’application supérieur au nombre dont vous êtes propriétaire.
-
-> [!Important]
-> Intune affecte des licences d’application VPP iOS aux utilisateurs, et non aux appareils. Pour cette raison, les utilisateurs doivent saisir leur mot de passe ID Apple pour installer l’application.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gérer les applications pour appareils iOS achetées en volume
 Vous achetez plusieurs licences pour des applications iOS via le [Programme d’achat en volume Apple pour les entreprises](http://www.apple.com/business/vpp/) ou [Programme d’achat en volume Apple pour les organismes éducatifs](http://volume.itunes.apple.com/us/store). Cela implique la configuration d’un compte Apple VPP à partir du site web Apple et l’importation du jeton Apple VPP dans Intune.  Vous pouvez ensuite synchroniser vos informations d’achat en volume avec Intune et suivre votre utilisation des applications achetées en volume.
@@ -69,10 +66,10 @@ Vous pouvez synchroniser les données détenues par Apple avec Intune à tout mo
 ## <a name="to-assign-a-volume-purchased-app"></a>Pour affecter une application achetée en volume
 
 1. Dans la charge de travail **Gérer les applications**, choisissez **Gérer** > **Applications sous licence**.
-2. Dans le panneau de liste d’applications, choisissez l’application que vous souhaitez affecter, puis choisissez «**... ** » > **Affecter des groupes**.
+2. Dans le panneau de liste d’applications, choisissez l’application que vous souhaitez affecter, puis choisissez «**...** » > **Affecter des groupes**.
 3. Dans le panneau <*Nom de l’application*> - **Groupes affectés**, choisissez **Gérer** > **Groupes affectés**.
-4. Choisissez **Affecter des groupes** puis, dans le panneau **Sélectionner des groupes**, sélectionnez les groupes Azure Active Directory auxquels vous souhaitez affecter l’application.
-Vous devez choisir une action d’affectation **Requise**. Les installations disponibles ne sont pas prises en charge.
+4. Choisissez **Affecter des groupes** puis, dans le panneau **Sélectionner des groupes**, choisissez les groupes d’utilisateurs ou d’appareils Azure AD auxquels vous souhaitez affecter l’application.
+Vous devez choisir une action d’affectation **Requise**. Les installations disponibles ne sont pas prises en charge. En outre, les affectations à des groupes d’appareils sont disponibles pour les nouveaux clients créés après le mois de janvier 2017. Si votre client a été créé avant cette date et que vous ne pouvez pas affecter des applications VPP à des groupes d’appareils, contactez le support technique Intune.
 5. Une fois que vous avez terminé, choisissez **Enregistrer**.
 
 Consultez la page [Guide pratique pour surveiller des applications](monitor-apps.md) pour plus d’informations pour vous aider à contrôler les affectations de l’application.
