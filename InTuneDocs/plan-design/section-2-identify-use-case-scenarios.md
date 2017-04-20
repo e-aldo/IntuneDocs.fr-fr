@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
+ms.sourcegitcommit: 3c5744e7c1290bf9016bc03dcb2db9a1bd9f43dd
+ms.openlocfilehash: 031820d505e0e9cb007e47a5397934d0e505aed4
+ms.lasthandoff: 04/10/2017
 
 
 ---
@@ -25,13 +26,13 @@ ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Les scénarios de cas d'utilisation de gestion d'appareils mobiles décrivent le type d’utilisateur ou rôle ainsi que la propriété de son appareil (par exemple, professionnel ou personnel). Les scénarios de cas d'utilisation sont utiles car ils vous permettent de segmenter vos utilisateurs en groupes gérables. Identifier vos scénarios de cas d'utilisation représente une partie importante du processus de planification pour un déploiement Intune réussi.
+Les scénarios de cas d'utilisation de gestion d'appareils mobiles décrivent le type d’utilisateur ou rôle ainsi que la propriété de son appareil (par exemple, professionnel ou personnel). Les scénarios de cas d’utilisation sont utiles car ils vous permettent de segmenter vos utilisateurs en groupes gérables. Identifier vos scénarios de cas d'utilisation représente une partie importante du processus de planification pour un déploiement Intune réussi.
 
 Examinons quelques exemples qui aideront votre organisation à identifier les scénarios de cas d'utilisation Intune, ainsi que les groupes organisationnels et les plateformes d’appareils mobiles associés à chaque cas d’utilisation.
 
 ## <a name="use-case-scenarios"></a>Scénarios de cas d’utilisation
 
-Vous pouvez commencer en vous reportant aux objectifs de déploiement Intune de votre organisation afin d'identifier les principaux scénarios de cas d'utilisation pour votre déploiement. Dans le cadre de votre plan de déploiement Intune, vous devrez répondre aux questions suivantes :
+Vous pouvez commencer en vous reportant aux objectifs de déploiement Intune de votre organisation afin d’identifier les principaux scénarios de cas d’utilisation pour votre déploiement. Dans le cadre de votre plan de déploiement Intune, vous devrez répondre aux questions suivantes :
 
 -   Envisagez-vous de prendre en charge des appareils appartenant à l’entreprise ?
 
@@ -47,7 +48,7 @@ Après avoir identifié vos principaux scénarios de cas d’utilisation, vous d
 
 -   Kiosque
 
-Voici quelques exemples de scénarios de cas d’utilisation et cas d'utilisation secondaires. Vous pouvez utiliser le tableau ci-dessous pour entrer les scénarios de cas d’utilisation et cas d'utilisation secondaires de votre organisation :
+Voici quelques exemples de scénarios de cas d’utilisation et cas d'utilisation secondaires. Vous pouvez utiliser le tableau ci-dessous pour entrer les scénarios de cas d’utilisation et cas d’utilisation secondaires de votre organisation :
 
 | **Scénarios d'utilisation** | **Cas d'utilisation secondaires** |
 |:---:|:---:|
@@ -81,12 +82,7 @@ Ici, vous allez identifier les plateformes d'appareils mobiles associés à chaq
 | BYOD | Travailleur de l'information | Marketing, Ventes | iOS |                                                           
 | BYOD | Cadres | Marketing, Ventes | iOS |
 
-## <a name="next-section"></a>Section suivante
+## <a name="next-steps"></a>Étapes suivantes
 
 La section suivante fournit des conseils sur [l'identification des exigences Intune pour chaque scénario de cas d’utilisation](section-3-determine-use-case-requirements.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
