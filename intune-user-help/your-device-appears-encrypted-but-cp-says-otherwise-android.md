@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/22/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: ed878327650b4560a891f9acb470b31aa64fbfa6
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: 6da1d00ce654add003a2f8e39b1a1c987d96e5a4
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -33,7 +33,7 @@ Quand vous chiffrez un appareil, vous encodez les informations qu’il contient 
 Certains appareils Android sur la version 7.0+ chiffrent les données de manière non conforme à certains standards de la plateforme Android. Ces appareils peuvent sembler être chiffrés par défaut, mais Intune reconnaît les méthodes utilisées quand les informations de l’appareil sont menacées par des utilisateurs malveillants ayant un accès physique à l’appareil.
 
 > [!Note]
-> Microsoft travaille avec tous les fabricants répertoriés pour essayer de résoudre ces problèmes, et mettra cette liste à jour en conséquence. 
+> Microsoft travaille avec tous les fabricants répertoriés pour résoudre ce problème, et mettra cette liste à jour en conséquence une fois les correctifs appliqués.
 
 ## <a name="an-incomplete-list-of-devices"></a>Liste non exhaustive d’appareils
 

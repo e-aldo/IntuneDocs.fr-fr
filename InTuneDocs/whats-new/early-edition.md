@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
-ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ Microsoft MyApps bénéficie d’une meilleure prise en charge dans Managed Brow
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nouvelles icônes pour Managed Browser et le portail d’entreprise <!--918433, 918431-->
 
-Managed Browser reçoit des icônes mises à jour pour les versions iOS et Android de l’application. La nouvelle icône contient le badge Intune mis à jour, pour une meilleure cohérence avec d’autres applications Enterprise Mobility + Security (EM+S).
+Managed Browser reçoit des icônes mises à jour pour les versions iOS et Android de l’application. La nouvelle icône contient le badge Intune mis à jour, pour une meilleure cohérence avec d’autres applications Enterprise Mobility + Security (EM+S). Vous pouvez voir la nouvelle icône de Managed Browser sur la [page Nouveautés de l’interface utilisateur des applications Intune](whats-new-in-intune-app-ui.md).
 
 Le portail d’entreprise reçoit également des icônes mises à jour pour les versions Android, iOS et Windows de l’application, afin d’améliorer la cohérence avec d’autres applications dans EM + S. Ces icônes seront publiées progressivement sur toutes les plateformes du mois d’avril jusqu’à fin mai.
 
@@ -59,7 +59,7 @@ Les utilisateurs n’ont plus besoin de se connecter à l’application Outlook 
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicateur de progression de connexion dans le portail d’entreprise Android <!--953374-->
 
-Une mise à jour de l’application Portail d’entreprise Android affiche un indicateur de progression de connexion quand l’utilisateur lance l’application ou effectue une reprise. L’indicateur affiche successivement les nouveaux états, en commençant par « Connexion... », puis « Connexion en cours », puis « Vérification des exigences de sécurité... », avant d’autoriser l’utilisateur à accéder à l’application.
+Une mise à jour de l’application Portail d’entreprise Android affiche un indicateur de progression de connexion quand l’utilisateur lance l’application ou effectue une reprise. L’indicateur affiche successivement les nouveaux états, en commençant par « Connexion... », puis « Connexion en cours », puis « Vérification des exigences de sécurité... », avant d’autoriser l’utilisateur à accéder à l’application. Vous pouvez voir les nouveaux écrans de l’application Portail d’entreprise pour Android sur la [page Nouveautés de l’interface utilisateur des applications Intune](whats-new-in-intune-app-ui.md). 
 
 
 ## <a name="notices"></a>Remarques
@@ -175,11 +175,6 @@ Vous pouvez affecter des applications achetées en volume (VPP) iOS comme instal
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Synchroniser des livres électroniques à partir de l’Apple VPP Store <!-- 800878 -->
 
 Vous pouvez synchroniser les livres que vous avez achetés dans la boutique VPP (Programme d’achat en volume) d’Apple avec Intune, et les attribuer à des utilisateurs.
-
-### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Partage des appareils Samsung KNOX Standard <!-- 773753 -->
-
-Vous pouvez configurer un appareil Samsung KNOX Standard comme appareil partagé dans le portail Intune. Une fois l’appareil en mode partagé, les stratégies, les applications et les e-mails sur cet appareil sont liés à l’identité de l’utilisateur qui se connecte au portail d’entreprise.
-Les utilisateurs peuvent se connecter à l’application Portail d’entreprise à l’aide de leurs informations d’identification Azure Active Directory, et leurs applications, stratégies et paramètres de messagerie électronique seront appliqués automatiquement à l’appareil.
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Gestion des utilisateurs multiples pour les appareils Samsung KNOX Standard <!-- 971988 -->
 
