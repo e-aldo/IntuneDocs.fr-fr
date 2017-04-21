@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -44,7 +45,7 @@ Si vous avez déjà un compte professionnel ou scolaire, vous pourrez simplement
 ## <a name="post-sign-up-considerations"></a>Éléments à prendre en considération après l’inscription
 Après vous être inscrit pour obtenir un nouvel abonnement, vous recevrez un message électronique contenant les informations de votre compte à l’adresse de messagerie que vous avez fournie lors de l’inscription. Ce message confirme que votre abonnement est actif.
 
-À la fin du processus d’inscription, vous serez redirigé vers une page permettant d’ajouter des utilisateurs et de leur attribuer des licences à l’aide du centre d’administration Office 365. Si vous voulez uniquement des comptes cloud utilisant votre nom de domaine onmicrosoft.com par défaut, vous pouvez poursuivre et ajouter des utilisateurs et leur attribuer des licences à ce stade. Toutefois, si vous voulez utiliser le nom de domaine personnalisé de votre organisation ou si vous voulez synchroniser les informations du compte utilisateur à partir d’un Active Directory local, vous pouvez fermer cette fenêtre de navigateur et passer à l’étape 2 de ce guide de démarrage rapide. Pour plus d’informations, consultez [À propos de votre domaine onmicrosoft.com initial dans Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US).
+À la fin du processus d’inscription, vous serez redirigé vers une page permettant d’ajouter des utilisateurs et de leur attribuer des licences à l’aide du centre d’administration Office 365. Si vous voulez uniquement des comptes cloud utilisant votre nom de domaine onmicrosoft.com par défaut, vous pouvez poursuivre et ajouter des utilisateurs et leur attribuer des licences à ce stade. Toutefois, si vous voulez utiliser le nom de domaine personnalisé de votre organisation ou si vous voulez synchroniser les informations du compte utilisateur à partir d’un Active Directory local, vous pouvez fermer cette fenêtre de navigateur et passer à l’étape 2 de ce guide de démarrage rapide. Pour plus d’informations, consultez [À propos de votre domaine onmicrosoft.com initial dans Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A).
 
 >[!TIP]
 > La prochaine fois que vous vous connecterez à Intune, vous serez automatiquement dirigé vers la console d’administration Intune.
@@ -53,9 +54,4 @@ Après vous être inscrit pour obtenir un nouvel abonnement, vous recevrez un me
 >[!div class="step-by-step"]
 
 >[&larr; **Prérequis**](.\what-to-know-before-you-start-microsoft-intune.md)     [**Paramètres de domaine** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

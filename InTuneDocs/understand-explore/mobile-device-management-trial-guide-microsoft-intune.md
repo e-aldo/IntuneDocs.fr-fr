@@ -14,9 +14,9 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9a988945c499c3145208b86d6832d02c28136ece
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,8 +43,8 @@ Dans la version d’évaluation, vous pouvez effectuer les mêmes opérations qu
 ## <a name="whats-not-covered"></a>Sujets non abordés
 |Si vous êtes intéressé par |Lisez |
 |------------------------|----------|
-|Gestion des appareils mobiles dans un environnement autre qu’un environnement de test | [Bien démarrer](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|Gestion des appareils mobiles avec Intune et System Center Configuration Manager | [Gestion des appareils mobiles hybride](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|Gestion des appareils mobiles dans un environnement autre qu’un environnement de test | [Bien démarrer](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|Gestion des appareils mobiles avec Intune et System Center Configuration Manager | [Gestion des appareils mobiles hybride](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Comme les guides ci-dessus vous aident à configurer Intune dans les environnements de production, ils sont plus volumineux et comptent plus de points de décision à considérer que dans le guide d’évaluation.
 
@@ -61,7 +61,7 @@ La première étape à effectuer pour gérer des appareils mobiles avec Intune c
 
 Si vous utilisez Intune autonome, comme supposé dans cette version d’évaluation, ou si vous utilisez Intune dans le cadre d’un abonnement EMS (Enterprise Mobility + Security), vous devez définir Intune comme votre autorité de gestion des appareils mobiles. Autrement dit, vous désignez Intune comme le service que vous utilisez pour gérer les appareils mobiles de votre organisation.
 
-Les clients qui souhaitent utiliser Intune avec System Center Configuration Manager pour gérer les appareils mobiles doivent décider s’il faut utiliser Intune ou Configuration Manager comme leur autorité de gestion des appareils mobiles. Il s’agit d’une décision importante à prendre dans un environnement de production, car il est actuellement très difficile de modifier ce paramètre une fois que vous l’avez défini, mais cela dépasse le cadre de ce guide d’évaluation. Pour en savoir plus sur les implications de la définition d’Intune ou de Configuration Manager comme autorité de gestion des appareils mobiles, consultez [Choisir entre Intune autonome et une gestion des appareils mobiles hybride](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Les clients qui souhaitent utiliser Intune avec System Center Configuration Manager pour gérer les appareils mobiles doivent décider s’il faut utiliser Intune ou Configuration Manager comme leur autorité de gestion des appareils mobiles. Il s’agit d’une décision importante à prendre dans un environnement de production, car il est actuellement très difficile de modifier ce paramètre une fois que vous l’avez défini, mais cela dépasse le cadre de ce guide d’évaluation. Pour en savoir plus sur les implications de la définition d’Intune ou de Configuration Manager comme autorité de gestion des appareils mobiles, consultez [Choisir entre Intune autonome et une gestion des appareils mobiles hybride](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 Nous allons définir Intune comme autorité de gestion des appareils mobiles pour la version d’évaluation ; cela n’affectera pas votre environnement de production, sauf si vous décidez d’utiliser votre version d’évaluation pour votre environnement de production.
 
@@ -86,7 +86,7 @@ Téléchargez le certificat APNs (.pem) et enregistrez le fichier localement. Ce
 3.    **Ajouter le certificat APNs à Intune**<BR/>
 Dans la console d’administration Microsoft Intune, accédez à **Administration** > **Gestion des appareils mobiles** > **iOS et Mac OS X** > **Télécharger un certificat APNs**, puis choisissez **Télécharger le certificat APNs**. Accédez au fichier de certificat (.pem), choisissez **Ouvrir**, puis entrez votre ID Apple. Avec le certificat APNs. Intune peut inscrire et gérer des appareils iOS en envoyant la stratégie aux appareils mobiles inscrits.
 4.    **Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise.**<br/>
-Pour obtenir des instructions sur l’inscription des utilisateurs finaux, consultez [Inscrire un appareil iOS dans Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios) et [Inscrire votre appareil Mac OS X dans Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
+Pour obtenir des instructions sur l’inscription des utilisateurs finaux, consultez [Inscrire un appareil iOS dans Intune](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios) et [Inscrire votre appareil Mac OS X dans Intune](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
 
 
 ### <a name="learn-more-about-device-enrollment"></a>En savoir plus sur l’inscription d’appareils

@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
-ms.lasthandoff: 12/20/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -49,7 +49,7 @@ Vous pouvez protéger vos données d’entreprise à l’aide de stratégies de 
 
 Pour associer une application à une stratégie de gestion des applications mobiles, l’application doit intégrer le Kit SDK d’application Microsoft Intune, ou vous pouvez utiliser l’outil de création de package de restrictions d’application.
 
-Certaines applications, par exemple les applications Microsoft Office, intègrent le SDK d’application Intune. Vous pouvez afficher la liste complète des applications prises en charge dans la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) dans la page des partenaires de l’application Microsoft Intune. Sélectionnez l’application pour afficher les plateformes et scénarios pris en charge, et pour savoir si elle prend en charge plusieurs identités.
+Certaines applications, par exemple les applications Microsoft Office, intègrent le SDK d’application Intune. Vous pouvez afficher la liste complète des applications prises en charge dans la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) dans la page des partenaires de l’application Microsoft Intune. Sélectionnez l’application pour afficher les plateformes et scénarios pris en charge, et pour savoir si elle prend en charge plusieurs identités.
 
 Vous pouvez également [activer les applications métier intégrées personnalisées](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) à utiliser avec les stratégies de gestion des applications mobiles.
 

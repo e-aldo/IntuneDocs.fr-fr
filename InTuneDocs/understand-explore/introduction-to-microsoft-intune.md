@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,13 +72,13 @@ Cette dernière, combinée avec les fonctionnalités du système d’exploitatio
 
 Quand vous utilisez Intune avec les autres services dans EMS, vous pouvez accroître la sécurité des applications mobiles de votre organisation bien au-delà de celle fournie par le système d’exploitation mobile et les applications mobiles elles-mêmes par le biais de la configuration des applications. Une application gérée avec EMS a accès à un ensemble plus large de mesures de protection des applications mobiles et des données :
 
-* [Authentification unique](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*    [Authentification multifacteur](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
-* [Accès conditionnel aux applications (autoriser l’accès si l’application mobile contient des données d’entreprise)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [Isolement des données d’entreprise des données personnelles dans la même application](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Stratégie de protection des applications (code confidentiel, chiffrement, Enregistrer sous, Presse-papiers, etc.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Réinitialisation des données d’entreprise à partir d’une application mobile](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Prise en charge de la gestion des droits](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+* [Authentification unique](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
+*    [Authentification multifacteur](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+* [Accès conditionnel aux applications (autoriser l’accès si l’application mobile contient des données d’entreprise)](https://docs.microsoft.com/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
+* [Isolement des données d’entreprise des données personnelles dans la même application](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Stratégie de protection des applications (code confidentiel, chiffrement, Enregistrer sous, Presse-papiers, etc.)](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Réinitialisation des données d’entreprise à partir d’une application mobile](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Prise en charge de la gestion des droits](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Image qui présente les niveaux de sécurité des données de gestion des applications](./media/managing-mobile-apps.png)
 

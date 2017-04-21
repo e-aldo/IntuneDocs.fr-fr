@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ Vous pouvez protéger l’accès à la messagerie de votre entreprise, aux servi
 ## <a name="how-does-conditional-access-work"></a>Comment fonctionne l’accès conditionnel ?
 Vous pouvez utiliser les paramètres de la stratégie de conformité pour évaluer la conformité d’un appareil. Une stratégie d’accès conditionnel utilise l’évaluation pour bloquer ou autoriser l’accès à un service spécifique. Quand vous utilisez une stratégie d’accès conditionnel avec une stratégie de conformité d'appareil, seuls les appareils conformes peuvent accéder au service. La stratégie de conformité et la stratégie d’accès conditionnel sont déployées pour l’utilisateur. La conformité avec les stratégies de chaque appareil que l’utilisateur utilise pour accéder aux services est contrôlée.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Gardez à l’esprit que l’utilisateur de l’appareil doit déployer une stratégie de conformité sur l’appareil afin que sa conformité soit évaluée.
 > Si aucune stratégie de conformité n’est déployée sur l’utilisateur, l’appareil est considéré comme conforme et aucune restriction d’accès ne s’applique.
 
@@ -48,7 +48,7 @@ Microsoft Intune et Azure Active Directory (Azure AD) Premium fonctionnent en pa
 
 Les **licences Azure AD Premium** peuvent être achetées en tant que service autonome ou dans le cadre de l’accord d’entreprise (avec Intune). Si vous avez déployé des stratégies d’accès conditionnel avec Intune, veuillez vous assurer que vous avez obtenu les bonnes licences Azure AD Premium ou **EMS**.
 
-- Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 En outre, assurez-vous que les utilisateurs pour lesquels vous envisagez d’appliquer des stratégies d’accès conditionnel [disposent de licences Azure AD Premium ou EMS](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 

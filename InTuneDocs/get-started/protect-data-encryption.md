@@ -15,9 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c47106ddfebcd1df8c1bc5090bf3f047015b6c45
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -41,7 +41,7 @@ Ce guide de démarrage rapide est une bonne ressource si vous satisfaites aux co
 > [!NOTE]
 > Windows n’est pas encore une plateforme prise en charge pour les applications mobiles Office. La gestion des applications mobiles sans inscription n’est pas encore compatible avec Exchange ou SharePoint localement. Vous pouvez uniquement protéger les données hébergées dans des versions en ligne.
 
-Ce guide peut vous aider à protéger votre entreprise contre la perte de données en imposant des codes secrets et le chiffrement des données à l’aide de stratégies sur les applications mobiles que vos employés utilisent pour accéder aux données sensibles, sans nécessiter d’inscription complète auprès d’une solution de gestion d’appareils. Microsoft Intune vous permet de définir des stratégies de gestion des applications mobiles (GAM) sur les applications mobiles Office pour [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) et [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android). Cette approche protège les données O365 sans obliger les utilisateurs à inscrire leurs appareils auprès d’une solution de gestion des appareils mobiles, tout en conservant une expérience utilisateur de pointe avec les applications mobiles Office.
+Ce guide peut vous aider à protéger votre entreprise contre la perte de données en imposant des codes secrets et le chiffrement des données à l’aide de stratégies sur les applications mobiles que vos employés utilisent pour accéder aux données sensibles, sans nécessiter d’inscription complète auprès d’une solution de gestion d’appareils. Microsoft Intune vous permet de définir des stratégies de gestion des applications mobiles (GAM) sur les applications mobiles Office pour [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) et [Android](https://products.office.com/mobile/office-mobile-apps-for-android). Cette approche protège les données O365 sans obliger les utilisateurs à inscrire leurs appareils auprès d’une solution de gestion des appareils mobiles, tout en conservant une expérience utilisateur de pointe avec les applications mobiles Office.
 
 ## <a name="how-do-i-do-it"></a>Comment procéder ?
 1.    [Découvrez comment protéger les données d’application](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -51,5 +51,5 @@ Ce guide peut vous aider à protéger votre entreprise contre la perte de donné
 ## <a name="additional-information"></a>Informations complémentaires :
 - [Découvrez l’expérience de l’utilisateur final pour des applications avec GAM activé avec Microsoft Intune.](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [Décidez comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune.](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- [Consulter la liste des partenaires Microsoft Intune fournissant des applications](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)
+- [Consulter la liste des partenaires Microsoft Intune fournissant des applications](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
 

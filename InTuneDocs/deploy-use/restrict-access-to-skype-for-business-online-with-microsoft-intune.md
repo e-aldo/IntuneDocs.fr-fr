@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,9 +38,9 @@ Lorsqu’un utilisateur ciblé tente d’utiliser Skype Entreprise Online sur so
 
 **Avant** de configurer une stratégie d’accès conditionnel à Skype Entreprise Online, vous devez :
 - Disposer d’un **abonnement Skype Entreprise Online** et affecter une licence Skype Entreprise Online aux utilisateurs.
-- Avoir un **abonnement Enterprise Mobility + Security (EMS)** ou un **abonnement Azure Active Directory (Azure AD) Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez [Tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou [Tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Avoir un **abonnement Enterprise Mobility + Security (EMS)** ou un **abonnement Azure Active Directory (Azure AD) Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez [Tarification d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou [Tarification d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
--   [Authentification moderne activée](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) pour Skype Entreprise Online.
+-   [Authentification moderne activée](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) pour Skype Entreprise Online.
 -  Faire en sorte que tous vos utilisateurs utilisent **Skype Entreprise Online**. Si votre déploiement comprend à la fois Skype Entreprise Online et Skype Entreprise local, la stratégie d’accès conditionnel n’est pas appliquée aux utilisateurs.
 
 Pour accéder à Skype Entreprise Online, un appareil doit être :
@@ -118,9 +119,4 @@ Sélectionnez un groupe d’appareils mobiles. Ensuite, sous l’onglet **Appare
 * **Appareils non conformes** : l’accès à Skype Entreprise Online est bloqué pour ces appareils.
 
 * **Appareils enregistrés avec AAD et conformes** : ces appareils peuvent accéder à Skype Entreprise Online.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

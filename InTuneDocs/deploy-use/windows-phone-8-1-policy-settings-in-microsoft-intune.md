@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2fd7ebc53c3b033982297dbce4a091cd9336fbb1
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -137,7 +137,7 @@ Dans la **Liste des applications autorisées et bloquées**, spécifiez une list
 #### <a name="how-to-specify-urls-to-app-stores"></a>Comment spécifier des URL de magasins d'applications
 Pour insérer une URL d’application dans la liste des applications autorisées ou bloquées, utilisez le format suivant :
 
-Dans la page [Applications+Jeux Windows Phone](http://www.windowsphone.com/en-us/store/overview), recherchez l’application à utiliser.
+Dans la page [Applications+Jeux Windows Phone](http://www.windowsphone.com/store/overview), recherchez l’application à utiliser.
 
 Ouvrez la page de l'application, puis copiez l'URL dans le Presse-papiers. Vous pouvez maintenant utiliser cette URL dans la liste des applications autorisées ou bloquées.
 

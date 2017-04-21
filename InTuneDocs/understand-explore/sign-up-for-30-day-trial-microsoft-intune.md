@@ -14,8 +14,9 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
-ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 55556d781149b97af3556f3a6774b4bc5b3b76ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 Cet article vous explique comment vous inscrire à une version d’évaluation Intune et comment préparer votre version d’évaluation avec quelques utilisateurs afin que vous puissiez ensuite suivre le guide d’évaluation associé pour voir comment Intune gère les appareils mobiles. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> À compter de décembre 2016, Microsoft Intune sera migré vers le portail Azure et certaines inscriptions à des évaluations gratuites se trouveront dans Intune dans le portail Azure et d’autres dans l’Intune classique. Si votre version d’évaluation se trouve dans le portail Azure, vous trouverez le [contenu Intune Azure en version préliminaire](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) plus utile si vous avez terminé les étapes décrites dans cet article.
+> À compter de décembre 2016, Microsoft Intune sera migré vers le portail Azure et certaines inscriptions à des évaluations gratuites se trouveront dans Intune dans le portail Azure et d’autres dans l’Intune classique. Si votre version d’évaluation se trouve dans le portail Azure, vous trouverez le [contenu Intune Azure en version préliminaire](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) plus utile si vous avez terminé les étapes décrites dans cet article.
 
 ## <a name="assumptions"></a>Hypothèses
 Cet article d’inscription et le guide d’évaluation partent du principe que vous utilisez la version d’évaluation uniquement à des fins d’évaluation et que vous envisagez de démarrer avec un environnement propre quand vous allez vous abonner.
@@ -39,7 +40,7 @@ Dans la version d’évaluation, vous pouvez effectuer les mêmes opérations qu
 ## <a name="sign-up-for-your-trial"></a>S’inscrire à votre version d’évaluation
 Visitez la page d’[inscription Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) et remplissez le formulaire pour vous inscrire afin d’obtenir un abonnement d’évaluation.
 
-Si vous avez un compte professionnel ou scolaire que vous voulez utiliser pour votre version d’évaluation Intune, suivez plutôt ces [instructions de connexion](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). Toutefois, cet article et ses guides d’évaluation supposent que vous n’utilisez pas un tel compte.
+Si vous avez un compte professionnel ou scolaire que vous voulez utiliser pour votre version d’évaluation Intune, suivez plutôt ces [instructions de connexion](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). Toutefois, cet article et ses guides d’évaluation supposent que vous n’utilisez pas un tel compte.
 
 > [!TIP]
 > Si la plupart des utilisateurs et opérations informatiques ont des paramètres régionaux différents des vôtres, vous pouvez définir ces paramètres régionaux pour votre version d’évaluation afin de tester les performances.
@@ -54,7 +55,7 @@ Si votre version d’évaluation se trouve dans le **portail Azure**, accédez �
 ## <a name="add-users"></a>Ajouter des utilisateurs
 Avant de quitter le Centre d’administration Office 365 pour Intune, vous devez ajouter des utilisateurs à votre compte d’évaluation.
 
-Dans le Centre d’administration Office 365, vous pouvez ajouter des utilisateurs individuellement ou en bloc en chargeant un fichier .csv. Nous effectuerons les deux opérations pour configurer votre version d’évaluation. Toutefois, dans votre environnement de production, vous souhaiterez probablement tirer parti de vos comptes d’utilisateur Azure Active Directory. Pour en savoir plus, consultez notre [Guide de prise en main](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) et la section [Étapes suivantes](#Next-steps) de cet article.
+Dans le Centre d’administration Office 365, vous pouvez ajouter des utilisateurs individuellement ou en bloc en chargeant un fichier .csv. Nous effectuerons les deux opérations pour configurer votre version d’évaluation. Toutefois, dans votre environnement de production, vous souhaiterez probablement tirer parti de vos comptes d’utilisateur Azure Active Directory. Pour en savoir plus, consultez notre [Guide de prise en main](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) et la section [Étapes suivantes](#Next-steps) de cet article.
 
 ### <a name="add-an-individual-user"></a>Ajouter un utilisateur individuel
 1. Choisissez l’une des options d’ajout d’un utilisateur pour ouvrir un formulaire qui vous permet de créer un utilisateur. Seuls les éléments marqués d’un astérisque (\*) sont obligatoires.
@@ -119,7 +120,7 @@ La première fois que vous vous connectez à Intune dans Azure, il est possible 
 2. Choisissez **Intune** dans la liste, puis sélectionnez l’étoile pour ajouter le service à la liste des services.<br/> ![Image de la sélection d’Intune dans la liste des services](./media/sign-up/azure-add-intune1.png)
 3. Choisissez **Intune** dans la liste des services pour ouvrir le tableau de bord Intune.
 
-Normalement, vous effectuez votre travail dans le tableau de bord Intune, comme indiqué ci-dessous. Il s’agit du site où vous configurez et gérez vos groupes, stratégies, appareils et applications. Vous pouvez accéder à la console d’administration Intune classique à partir du tableau de bord en choisissant la vignette **Ouvrir le portail Intune classique**. Pour revenir à la version préliminaire d’Intune Azure, entrez https://portal.azure.com dans la barre d’adresse de votre navigateur, puis choisissez **Intune** dans la liste des services.
+Normalement, vous effectuez votre travail dans le tableau de bord Intune, comme indiqué ci-dessous. Il s’agit du site où vous configurez et gérez vos groupes, stratégies, appareils et applications. Vous pouvez accéder à la console d’administration Intune classique à partir du tableau de bord en choisissant la vignette **Ouvrir le portail Intune classique**. Pour revenir à la préversion d’Intune Azure, entrez https://portal.azure.com dans la barre d’adresse de votre navigateur, puis choisissez **Intune** dans la liste des services.
 
  ![Image du tableau de bord Intune](./media/sign-up/intune-azure-dashboard.png)
 
@@ -137,18 +138,13 @@ Pour revenir d’Intune au Centre d’administration Office 365, entrez https://
 Scénario d’évaluation : [Évaluer la gestion des appareils mobiles dans Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
 ### <a name="intune-azure-preview"></a>Intune Azure (préversion)
-En savoir plus sur [Intune dans le portail Azure en version préliminaire](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)
+En savoir plus sur [Intune dans le portail Azure en version préliminaire](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>Intégration dans d'autres produits
 En savoir plus sur l’utilisation de vos comptes d’utilisateur Azure Active Directory avec Intune :
-- [Configuration requise pour les identités](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [Configuration requise pour la synchronisation d’annuaires](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Configuration requise pour l’authentification multifacteur](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [Configuration requise pour les identités](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [Configuration requise pour la synchronisation d’annuaires](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Configuration requise pour l’authentification multifacteur](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-En savoir plus sur l’utilisation d’[Intune avec System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+En savoir plus sur l’utilisation d’[Intune avec System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
 

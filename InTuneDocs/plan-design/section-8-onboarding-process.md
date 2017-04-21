@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,7 +62,7 @@ Voici une vue d’ensemble de chaque tâche de l’implémentation Intune.
 
 Comme indiqué dans la section de configuration précédente, un abonnement EMS ou Intune est requis. Si votre organisation ne dispose pas d’un abonnement EMS ou Intune, veuillez contacter votre équipe des comptes Microsoft pour lui signifier votre souhait d’acheter Enterprise Mobility + Security (EMS) ou Intune.
 
--   En savoir plus sur [comment acheter Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing).
+-   En savoir plus sur [comment acheter Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 #### <a name="task-2-add-office-365-subscription"></a>Tâche 2 : Ajouter un abonnement Office 365
 
@@ -115,7 +116,7 @@ Microsoft Intune prend en charge les profils de messagerie, Wi-Fi et VPN. L'ajou
 
 Microsoft Intune prend en charge le déploiement d'applications Web, métier et de banque publique. En outre, la gestion d’applications que vous avez intégrées au SDK Intune en les associant à des stratégies MAM est prise en charge. L'ajout et le déploiement d'applications s'effectuent dans l'espace de travail Application du portail d'administration Intune. L'ajout de stratégies MAM s'effectue dans l'espace de travail Stratégie du portail d'administration Intune. Ajoutez les applications adéquates et déployez-les sur des groupes ciblés en fonction des cas d'utilisation et exigences de votre déploiement Intune.
 
--   En savoir plus sur l'[ajout et le déploiement des applications](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps).
+-   En savoir plus sur l'[ajout et le déploiement des applications](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>Tâche 11 : Ajouter et déployer des stratégies de conformité
 
@@ -141,9 +142,4 @@ Intune prend en charge les plateformes d'appareils iOS, macOS, Android, Windows 
 ## <a name="next-section"></a>Section suivante
 
 La section suivante fournit des conseils sur le [test et la validation de votre déploiement Intune](section-9-test-and-validation.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
