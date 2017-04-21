@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Déploiement d’applications dans Microsoft Intune
@@ -49,7 +49,7 @@ Dans cette procédure, vous allez déployer une application sur des groupes d’
 
 5. Si l’application que vous déployez peut être configurée par une stratégie de gestion des applications mobiles, la page **Gestion des applications mobiles** s’affiche. Dans cette page, choisissez la stratégie de gestion des applications mobiles que vous souhaitez associer à cette application.
 
-    [Découvrez quelles applications Microsoft sont compatibles avec les stratégies de gestion des applications mobiles.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [Découvrez quelles applications Microsoft sont compatibles avec les stratégies de gestion des applications mobiles.](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Si l’application que vous déployez est compatible avec les profils VPN Intune, la page **Profil VPN** s’affiche. Dans cette page, vous pouvez choisir d’associer des applications iOS à un profil VPN que vous avez déployé. La connexion VPN s’ouvre automatiquement lorsque l’application est lancée. Pour rendre un profil VPN disponible, le paramètre de profil **Par VPN d’application** doit être activé.
  Pour obtenir des informations sur la configuration des profils VPN, y compris sur l’association de profils à des applications, consultez la page [Connexions VPN dans Microsoft Intune](vpn-connections-in-microsoft-intune.md).

@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dc059b2865cef32091582b0f0d2a2ced8b35e8fa
-ms.openlocfilehash: 55e4be001c3ff946b8a63291ed9227bc3d185001
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 95c12111693e00fb6f67d20464dd159aeb4bb609
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,14 +38,14 @@ Vous *n’avez pas besoin* d’inscrire votre application. Pour les applications
 
 Vous _**devez**_ d’abord inscrire votre application auprès de Microsoft Intune et accepter les conditions d’inscription. Les administrateurs informatiques peuvent ensuite appliquer une stratégie de protection des applications à l’application concernée, qui apparaît comme un partenaire d’application Intune.
 
-Tant que l’inscription n’est pas terminée et confirmée par l’équipe de Microsoft Intune, les administrateurs Intune ne peuvent pas appliquer une stratégie de protection des applications au lien ciblé de votre application. Microsoft ajoute également vos applications à sa [page de partenaires Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). L’icône de l’application y est affichée pour montrer qu’elle prend en charge les stratégies de protection des applications Intune.
+Tant que l’inscription n’est pas terminée et confirmée par l’équipe de Microsoft Intune, les administrateurs Intune ne peuvent pas appliquer une stratégie de protection des applications au lien ciblé de votre application. Microsoft ajoute également vos applications à sa [page de partenaires Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). L’icône de l’application y est affichée pour montrer qu’elle prend en charge les stratégies de protection des applications Intune.
 
 Pour commencer le processus d’inscription, remplissez le [questionnaire de partenariat d’application Microsoft Intune](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
 
 Nous utilisons les adresses e-mail répertoriées dans les réponses du questionnaire pour communiquer et continuer le processus d’inscription. Nous utilisons également l’adresse e-mail d’inscription pour vous contacter en cas de problème.
 
 > [!NOTE]
-> Toutes les informations collectées dans le questionnaire ci-dessus et par le biais des e-mails échangés avec l’équipe Microsoft Intune respectent la [déclaration de confidentialité Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+> Toutes les informations collectées dans le questionnaire ci-dessus et par le biais des e-mails échangés avec l’équipe Microsoft Intune respectent la [déclaration de confidentialité Microsoft](https://www.microsoft.com/privacystatement/default.aspx).
 
 **Ce qui se passe dans le processus d’inscription** :
 
@@ -53,7 +53,7 @@ Nous utilisons les adresses e-mail répertoriées dans les réponses du question
 
 2. Une fois reçues toutes les informations nécessaires de votre part, nous vous enverrons le contrat de partenariat de l’application Microsoft Intune à signer. Ce contrat décrit les conditions que votre entreprise doit accepter avant de devenir partenaire de l’application Microsoft Intune.
 
-3. Microsoft vous avertira également quand votre application sera inscrite auprès du service Microsoft Intune et quand elle sera proposée sur le site des [partenaires Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+3. Microsoft vous avertira également quand votre application sera inscrite auprès du service Microsoft Intune et quand elle sera proposée sur le site des [partenaires Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 4. Enfin, le lien ciblé de votre application est ajouté à la prochaine mise à jour mensuelle du service Intune. Par exemple, si les informations d’inscription sont complétées en juillet, le lien ciblé est pris en charge à la mi-août.
 

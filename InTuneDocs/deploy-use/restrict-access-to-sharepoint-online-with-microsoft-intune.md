@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Quand un utilisateur tente de se connecter à un fichier à l’aide d’une app
 
 **Avant** de configurer une stratégie d’accès conditionnel à SharePoint Online, vous devez :
 - Disposer d’un **abonnement SharePoint Online** ; les utilisateurs doivent disposer d’une licence pour SharePoint Online.
-- Avoir un **abonnement Enterprise Mobility + Security (EMS)** ou un **abonnement Azure Active Directory (Azure AD)  Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Avoir un **abonnement Enterprise Mobility + Security (EMS)** ou un **abonnement Azure Active Directory (Azure AD)  Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
   Pour se connecter aux fichiers obligatoires, un appareil doit être :
@@ -59,10 +60,10 @@ Si une condition n’est pas remplie, l’utilisateur reçoit l’un des message
 
 -   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers le site web du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dans lequel il peut trouver des informations sur le problème et des solutions pour y remédier.
 
-**L’accès conditionnel ne s’applique pas au partage externe**. Pour découvrir comment empêcher le partage externe dans votre locataire ou collection de sites, consultez [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**L’accès conditionnel ne s’applique pas au partage externe**. Pour découvrir comment empêcher le partage externe dans votre locataire ou collection de sites, consultez [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
 >[!NOTE]
->Si vous activez l’accès conditionnel pour SharePoint Online, nous vous recommandons de désactiver le domaine dans la liste, comme décrit dans la rubrique [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
+>Si vous activez l’accès conditionnel pour SharePoint Online, nous vous recommandons de désactiver le domaine dans la liste, comme décrit dans la rubrique [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx).  
 
 ## <a name="support-for-mobile-devices"></a>Prise en charge des appareils mobiles
 Les éléments suivants sont pris en charge :
@@ -84,7 +85,7 @@ Les éléments suivants sont pris en charge :
 > [!NOTE]
 >Pour utiliser l’accès conditionnel avec des PC Windows 10, vous devez mettre à jour ces PC avec la Mise à jour anniversaire Windows 10.
 
-  - Vous devez configurer les PC joints à un domaine pour qu’ils [s’inscrivent automatiquement](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) dans Azure Active Directory. Le service d’inscription Azure Active Directory pour appareils sera activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service d’inscription d’appareils AD FS ne verront pas les appareils inscrits dans l’annuaire Active Directory local.
+  - Vous devez configurer les PC joints à un domaine pour qu’ils [s’inscrivent automatiquement](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) dans Azure Active Directory. Le service d’inscription Azure Active Directory pour appareils sera activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service d’inscription d’appareils AD FS ne verront pas les appareils inscrits dans l’annuaire Active Directory local.
 
   - Si la stratégie est définie pour exiger l’appartenance à un domaine et que le PC n’est pas joint à un domaine, un message invitant l’utilisateur à contacter l’administrateur informatique s’affiche.
 
@@ -92,7 +93,7 @@ Les éléments suivants sont pris en charge :
   >[!NOTE]
   >L’accès conditionnel n’est pas pris en charge sur les PC qui exécutent le client Intune.
 
-[L’authentification moderne Office 365 doit être activée](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) et toutes les mises à jour Office les plus récentes doivent être installées.
+[L’authentification moderne Office 365 doit être activée](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) et toutes les mises à jour Office les plus récentes doivent être installées.
 
 L’authentification moderne permet aux clients Windows Office 2013 d’utiliser une connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library) et permet de bénéficier d’une sécurité accrue, comme l’**authentification multifacteur** et l’**authentification basée sur certificat**.
 
@@ -129,7 +130,7 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> Vous pouvez également créer une stratégie d’accès conditionnel pour des appareils Intune dans la console de gestion Azure AD (la stratégie est appelée **stratégie d’accès conditionnel basée sur les appareils** dans Azure AD). En outre, vous pouvez créer d’autres stratégies d’accès conditionnel telles que l’authentification multifacteur. Vous pouvez aussi définir des stratégies d’accès conditionnel pour des applications d’entreprise tierces prises en charge par Azure AD, comme Salesforce et Box. Pour plus d’informations, consultez [Comment définir la stratégie d’accès conditionnel en fonction de l’appareil Azure Active Directory pour contrôler l’accès aux applications connectées Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> Vous pouvez également créer une stratégie d’accès conditionnel pour des appareils Intune dans la console de gestion Azure AD (la stratégie est appelée **stratégie d’accès conditionnel basée sur les appareils** dans Azure AD). En outre, vous pouvez créer d’autres stratégies d’accès conditionnel telles que l’authentification multifacteur. Vous pouvez aussi définir des stratégies d’accès conditionnel pour des applications d’entreprise tierces prises en charge par Azure AD, comme Salesforce et Box. Pour plus d’informations, consultez [Comment définir la stratégie d’accès conditionnel en fonction de l’appareil Azure Active Directory pour contrôler l’accès aux applications connectées Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Dans la [Console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie SharePoint Online**.
@@ -195,9 +196,4 @@ Sélectionnez un groupe d’appareils mobiles. Ensuite, sous l’onglet **Appare
 
 ### <a name="see-also"></a>Voir aussi
 [Protéger l’accès à la messagerie et aux services O365 avec Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Pour obtenir des instructions sur la création d’une stratégie de protection 
 - Windows 10
 
 >[!NOTE]
->Depuis la version 1703, vous pouvez définir les stratégies de protection des applications pour les appareils Windows 10 dans la GAM sans scénario d’inscription. Pour plus d’informations, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>Depuis la version 1703, vous pouvez définir les stratégies de protection des applications pour les appareils Windows 10 dans la GAM sans scénario d’inscription. Pour plus d’informations, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Applications prises en charge
 * **Applications Microsoft :** ces applications intègrent le SDK d’application Intune et ne nécessitent aucun traitement supplémentaire avant la mise en œuvre des stratégies de protection des applications.
-Pour afficher la liste complète des applications Microsoft prises en charge, accédez à la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) dans la page des partenaires d’application Microsoft Intune. Cliquez sur l’application pour afficher les scénarios et les plateformes pris en charge et savoir si l’application prend en charge plusieurs identités.
+Pour afficher la liste complète des applications Microsoft prises en charge, accédez à la [Galerie d’applications mobiles Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) dans la page des partenaires d’application Microsoft Intune. Cliquez sur l’application pour afficher les scénarios et les plateformes pris en charge et savoir si l’application prend en charge plusieurs identités.
 
 * **Applications métier de votre organisation :** vous devez préparer ces applications pour qu’elles incluent le SDK d’application Intune avant la mise en œuvre des stratégies de protection des applications.
 
@@ -76,7 +76,7 @@ Pour afficher la liste complète des applications Microsoft prises en charge, ac
 ## <a name="prerequisites"></a>Conditions préalables
 
 -   **Un abonnement Microsoft Intune**. Les utilisateurs ont besoin de licences [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour obtenir les applications avec des stratégies de protection des applications.
-Vous êtes déjà inscrit à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si vous utilisez actuellement [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour gérer vos appareils. Vous êtes également inscrit à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si vous avez acheté une licence Enterprise Mobility Suite (EMS). Si vous essayez [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour tester les fonctionnalités de gestion des applications mobiles, vous pouvez obtenir un compte d’essai sur la [page Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+Vous êtes déjà inscrit à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si vous utilisez actuellement [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour gérer vos appareils. Vous êtes également inscrit à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si vous avez acheté une licence Enterprise Mobility Suite (EMS). Si vous essayez [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour tester les fonctionnalités de gestion des applications mobiles, vous pouvez obtenir un compte d’essai sur la [page Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
     Pour vérifier si vous avez un abonnement à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], dans le portail Office, accédez à la page de **facturation**.  Si vous avez un abonnement, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] doit être indiqué comme **Actif** dans les abonnements.
 
@@ -98,13 +98,13 @@ Vous êtes déjà inscrit à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.m
 
 1.  Connectez-vous au [portail Office](http://portal.office.com) à l’aide de vos informations d’identification d’administrateur.
 
-2.  Ajoutez des utilisateurs comme décrit dans la section **Étapes de l’exécution d’une version d’évaluation de 30 jours d’Intune** du [Guide d’évaluation de Microsoft Intune](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune), puis attribuez des licences Intune. Pour permettre à un utilisateur d’accéder au portail Office, au portail Azure AD et au portail Azure, affectez-lui le **rôle d’administrateur général**.
+2.  Ajoutez des utilisateurs comme décrit dans la section **Étapes de l’exécution d’une version d’évaluation de 30 jours d’Intune** du [Guide d’évaluation de Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune), puis attribuez des licences Intune. Pour permettre à un utilisateur d’accéder au portail Office, au portail Azure AD et au portail Azure, affectez-lui le **rôle d’administrateur général**.
 
-5.  Les stratégies de protection des applications sont déployées sur des groupes d’utilisateurs dans Azure Active Directory. Pour créer des groupes d’utilisateurs pour vos stratégies de protection des applications, créez un groupe d’utilisateurs comme décrit dans la section **Créer un groupe d’utilisateurs** de la rubrique [Créer des groupes pour organiser les utilisateurs et les appareils de l’abonnement à la version d’évaluation](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
+5.  Les stratégies de protection des applications sont déployées sur des groupes d’utilisateurs dans Azure Active Directory. Pour créer des groupes d’utilisateurs pour vos stratégies de protection des applications, créez un groupe d’utilisateurs comme décrit dans la section **Créer un groupe d’utilisateurs** de la rubrique [Créer des groupes pour organiser les utilisateurs et les appareils de l’abonnement à la version d’évaluation](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>Attribuer des rôles à des utilisateurs administrateurs non généraux
 
-Les administrateurs généraux ont accès au [portail Azure](https://portal.azure.com).  Si vous voulez que les utilisateurs qui ne sont pas des administrateurs généraux puissent configurer des stratégies et effectuer d’autres tâches de gestion des applications mobiles, lisez l’article [Utiliser des attributions de rôle pour gérer l’accès aux ressources de votre abonnement Azure](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/).
+Les administrateurs généraux ont accès au [portail Azure](https://portal.azure.com).  Si vous voulez que les utilisateurs qui ne sont pas des administrateurs généraux puissent configurer des stratégies et effectuer d’autres tâches de gestion des applications mobiles, lisez l’article [Utiliser des attributions de rôle pour gérer l’accès aux ressources de votre abonnement Azure](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer et déployer des stratégies de protection des applications avec Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

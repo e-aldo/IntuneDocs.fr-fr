@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 35543604ed68393e859517e32f5186247be001df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f30ab8799b2e049372139c7f9ee7213547736bb0
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ Les stratégies de protection des applications mettent en œuvre des mécanismes
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Stratégies de protection des applications et applications métiers
 
-Vous pouvez également étendre les stratégies de protection des applications à vos applications métiers en tirant parti du [Kit de développement logiciel (SDK) des applications Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) ou de l’outil de création de package de restrictions d’application Microsoft Intune App Wrapping Tool, pour [iOS](https://www.microsoft.com/en-us/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) et [Android](https://www.microsoft.com/en-us/download/details.aspx?id=47267).
+Vous pouvez également étendre les stratégies de protection des applications à vos applications métiers en tirant parti du [Kit de développement logiciel (SDK) des applications Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) ou de l’outil de création de package de restrictions d’application Microsoft Intune App Wrapping Tool, pour [iOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) et [Android](https://www.microsoft.com/download/details.aspx?id=47267).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>De quelle manière les stratégies de protection des applications facilitent-elles la migration ?
 
@@ -46,9 +46,9 @@ Lorsque vous désactivez l’accès conditionnel au sein du fournisseur GPM de 
 
 ## <a name="task-list-for-app-protection-policies"></a>Liste des tâches associées aux stratégies de protection des applications
 
--   Tâche 1 : Procédez aux [préparatifs avant la configuration de stratégies de protection des applications](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+-   Tâche 1 : Procédez aux [préparatifs avant la configuration de stratégies de protection des applications](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
 
--   Tâche 2 : Découvrez comment [créer et déployer des stratégies de protection des applications avec Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+-   Tâche 2 : Découvrez comment [créer et déployer des stratégies de protection des applications avec Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Étapes suivantes 
 

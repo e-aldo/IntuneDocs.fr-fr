@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 1781600f82b37ba76fe072d3a0e6557504de3b46
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +35,7 @@ Les étapes ci-dessous vous aideront à obtenir les certificats requis et à sig
    Rejoignez le [Centre de développement Windows Phone](http://go.microsoft.com/fwlink/?LinkId=268442) en utilisant des informations de compte d'entreprise quand vous vous connectez pour acheter votre compte d'entreprise. Cette demande devra être autorisée par un responsable de l'entreprise avant que vous ne receviez un certificat de signature de code.
 
 2. **Obtenir un certificat Symantec d'entreprise**<br>
-  Achetez un certificat sur le [site web de Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) à l'aide de votre identifiant Symantec. Après avoir acheté le certificat, l'approbateur d'entreprise que vous avez désigné dans votre compte Centre de développement Windows Phone recevra un e-mail lui demandant d'approuver la demande de certificat. Pour plus d’informations sur la nécessité d’obtenir un certificat Symantec, consultez la rubrique [Pourquoi Windows Phone requiert-il un certificat Symantec ?](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec) Forum Aux Questions sur l'inscription des appareils Windows.
+  Achetez un certificat sur le [site web de Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) à l'aide de votre identifiant Symantec. Après avoir acheté le certificat, l'approbateur d'entreprise que vous avez désigné dans votre compte Centre de développement Windows Phone recevra un e-mail lui demandant d'approuver la demande de certificat. Pour plus d’informations sur la nécessité d’obtenir un certificat Symantec, consultez la rubrique [Pourquoi Windows Phone requiert-il un certificat Symantec ?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Forum Aux Questions sur l'inscription des appareils Windows.
 
 3.  **Importer les certificats**<br>
     Une fois la demande approuvée, vous recevrez un e-mail contenant des instructions pour importer les certificats. Suivez les instructions de l'e-mail pour importer les certificats.

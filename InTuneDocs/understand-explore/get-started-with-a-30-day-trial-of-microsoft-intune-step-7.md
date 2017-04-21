@@ -14,9 +14,9 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 08b5b555ed44275c428c15fe3529bd683dc8c004
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,9 +29,9 @@ Si vous achetez au moins 150 licences pour Microsoft Intune dans un plan éligi
 
 Vous pouvez convertir votre version d’évaluation gratuite d’Intune en abonnement payant de l’une des façons suivantes :
 
--   **Abonnement Intune** : licence attribuée par utilisateur. Pour plus d'informations, consultez [Comment acheter Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx). Après avoir effectué votre achat, suivez les étapes décrites dans [Commencer avec un abonnement payant Microsoft Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) et examinez les étapes de configuration supplémentaires durant votre prise en main d’Intune.
+-   **Abonnement Intune** : licence attribuée par utilisateur. Pour plus d'informations, consultez [Comment acheter Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/Purchasing.aspx). Après avoir effectué votre achat, suivez les étapes décrites dans [Commencer avec un abonnement payant Microsoft Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) et examinez les étapes de configuration supplémentaires durant votre prise en main d’Intune.
 
--   **Enterprise Mobility + Security** : fournit Intune, Azure Active Directory Premium et les services Azure RMS. Pour plus de détails, contactez votre responsable de compte Microsoft ou votre revendeur local, ou [renseignez-vous sur les fonctionnalités EMS](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) et la [tarification](http://www.microsoft.com/en-us/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
+-   **Enterprise Mobility + Security** : fournit Intune, Azure Active Directory Premium et les services Azure RMS. Pour plus de détails, contactez votre responsable de compte Microsoft ou votre revendeur local, ou [renseignez-vous sur les fonctionnalités EMS](https://www.microsoft.com/server-cloud/enterprise-mobility/overview.aspx) et la [tarification](https://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
 
 -   **Contrat Entreprise** (&gt;250 utilisateurs) : programme de gestion de licences idéal pour les organisations de plus de 250 utilisateurs. Il offre la possibilité de choisir entre un logiciel sur site et des services en ligne pour mieux répondre aux besoins de vos utilisateurs et vous permet d'optimiser vos dépenses technologiques. Pour plus d'informations, contactez votre responsable de compte Microsoft ou un revendeur local, ou reportez-vous au [site dédié aux licences en volume pour les entreprises](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 

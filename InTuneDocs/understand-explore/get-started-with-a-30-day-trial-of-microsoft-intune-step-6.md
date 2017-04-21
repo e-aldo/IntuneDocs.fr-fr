@@ -14,9 +14,9 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 31788f18d983ab6b0fc57a93566bd43e6606f10f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,7 +37,7 @@ Pour en savoir plus sur les alertes, les notifications et les rapports, consulte
 ## <a name="intune-capabilities"></a>Fonctionnalités Intune
 Intune possède un large éventail de fonctionnalités au-delà de celles présentées dans ces brèves étapes de configuration. En voici quelques exemples :
 
--   **Contrôle de l’accès à Exchange et Office 365.** Pour plus d’informations, consultez [Gérer l’accès de l’application à Exchange Online](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) et [Gérer l’accès de l’application aux services Office 365](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   **Contrôle de l’accès à Exchange et Office 365.** Pour plus d’informations, consultez [Gérer l’accès de l’application à Exchange Online](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) et [Gérer l’accès de l’application aux services Office 365](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 -   **Gestion des appareils iOS d’entreprise.** Pour plus d’informations, consultez [Inscrire les appareils iOS d’entreprise dans Microsoft Intune](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 

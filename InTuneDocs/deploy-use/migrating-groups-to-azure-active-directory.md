@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -51,9 +51,9 @@ Certaines fonctionnalités existantes des groupes Intune ne sont pas disponibles
 ## <a name="how-to-get-ready"></a>Mise en route
 
 - Lisez les rubriques Azure AD suivantes pour en savoir plus sur les groupes de sécurité Azure AD et leur fonctionnement :
-    -  [Gestion de l’accès aux ressources avec les groupes Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
-    -  [Gestion des groupes dans Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
-    -  [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+    -  [Gestion de l’accès aux ressources avec les groupes Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+    -  [Gestion des groupes dans Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 - Vous pouvez supprimer les groupes Intune que vous n’utilisez plus avant de migrer.
 -  Assurez-vous que les administrateurs qui ont besoin de créer des groupes sont ajoutés au rôle Azure AD **Administrateur de service Intune**. Notez que le rôle d’administrateur de service Azure AD n’a pas d'autorisations **Gérer des groupes**.
 -  Si vous utilisez des groupes avec l’option **Exclure des membres spécifiques**, vous pouvez modifier ces groupes afin qu'ils n'aient pas besoin d'exclusions, ou utiliser des règles avancées dans votre requête Azure AD afin d'obtenir le même résultat.

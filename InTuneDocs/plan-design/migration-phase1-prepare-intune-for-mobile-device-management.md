@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: 2e7bcedebdf777db64a9ec90aa758822634ed435
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4bf9bd15f3f22e0609c4f56f5651454a62dbb7a8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -58,7 +58,7 @@ Avant d’étudier plus en détail la configuration de Microsoft Intune, passon
 
 -   Les utilisateurs sont-ils familiarisés avec la technologie et l’informatique en général ?
 
-### <a name="what-is-your-device-security-policy"></a>Quelle stratégie de sécurité des appareils mobiles comptez-vous appliquer ? 
+### <a name="what-is-your-device-security-policy"></a>Quelle stratégie de sécurité des appareils mobiles comptez-vous appliquer ?
 
 -   Devez-vous appliquer un chiffrement au niveau des appareils ?
 
@@ -84,7 +84,7 @@ Avant d’étudier plus en détail la configuration de Microsoft Intune, passon
 
 ## <a name="additional-information"></a>Informations supplémentaires
 
--   Pour obtenir des exemples plus détaillés, consultez ces [études de cas](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune), qui proviennent de différents secteurs professionnels, afin de savoir de quelle manière les organisations ont pu évaluer leurs besoins en matière de GPM.
+-   Pour obtenir des exemples plus détaillés, consultez ces [études de cas](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune), qui proviennent de différents secteurs professionnels, afin de savoir de quelle manière les organisations ont pu évaluer leurs besoins en matière de GPM.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

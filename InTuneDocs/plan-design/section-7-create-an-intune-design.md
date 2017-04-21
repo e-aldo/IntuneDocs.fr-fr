@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -153,7 +153,7 @@ Les groupes d’utilisateurs et d'appareils déterminent la cible d’un déploi
 
 -   En savoir plus sur la [planification de vos groupes d’utilisateurs et d'appareils](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   En savoir plus la [création de groupes d’utilisateurs et d'appareils](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   En savoir plus la [création de groupes d’utilisateurs et d'appareils](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### <a name="public-key-infrastructure-pki"></a>Infrastructure à clé publique (PKI)
 
@@ -326,7 +326,7 @@ Voici un exemple de documentation de la conception d’un profil VPN.
 
 Les profils de messagerie permettent de configurer automatiquement un client de messagerie à l'aide des informations de connexion et la configuration de la messagerie. Intune prend en charge les profils de messagerie sur certains appareils.
 
--   En savoir plus sur [profils de messagerie](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) et quelles plateformes sont prises en charge.
+-   En savoir plus sur [profils de messagerie](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) et quelles plateformes sont prises en charge.
 
 Voici un exemple de documentation de la conception de profils de messagerie :
 

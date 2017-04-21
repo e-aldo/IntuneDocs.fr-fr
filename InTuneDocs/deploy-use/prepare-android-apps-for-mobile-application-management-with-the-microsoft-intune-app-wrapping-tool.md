@@ -15,9 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
-ms.lasthandoff: 12/20/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: a89c2b26daf2b3b4da57e0c190f772e078681bee
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -131,7 +131,7 @@ Pour empêcher l'usurpation d'identité, la divulgation d'informations et les at
 
 -   Importez l’application de sortie dans la console Intune sur l’ordinateur où l’outil est en cours d’exécution. Pour plus d’informations sur l’utilitaire Java keytool, consultez [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html).
 
--   Si l’application de sortie et l’outil se trouvent sur un chemin d’accès UNC (Universal Naming Convention) et que vous n’exécutez pas l’outil et les fichiers d’entrée sur le même ordinateur, sécurisez l’environnement en utilisant la [sécurité du protocole Internet (IPsec)](http://en.wikipedia.org/wiki/IPsec) ou la [signature SMB (Server Message Block)](https://support.microsoft.com/en-us/kb/887429).
+-   Si l’application de sortie et l’outil se trouvent sur un chemin d’accès UNC (Universal Naming Convention) et que vous n’exécutez pas l’outil et les fichiers d’entrée sur le même ordinateur, sécurisez l’environnement en utilisant la [sécurité du protocole Internet (IPsec)](http://wikipedia.org/wiki/IPsec) ou la [signature SMB (Server Message Block)](https://support.microsoft.com/kb/887429).
 
 -   Vérifiez que l’application provient d’une source approuvée.
 

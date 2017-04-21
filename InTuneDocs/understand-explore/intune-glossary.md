@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |Profil de messagerie|Cette stratégie peut être utilisée pour configurer les [paramètres d’accès à la messagerie](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) pour des clients de messagerie spécifiques sur des appareils mobiles, en minimisant la configuration que l’utilisateur final doit effectuer.|
-|EMS|Microsoft Enterprise Mobility + Security (anciennement Enterprise Mobility Suite) conserve les données de votre entreprise protégées tout en permettant à vos utilisateurs d’[accéder aux applications et au contenu dont ils ont besoin](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
+|EMS|Microsoft Enterprise Mobility + Security (anciennement Enterprise Mobility Suite) conserve les données de votre entreprise protégées tout en permettant à vos utilisateurs d’[accéder aux applications et au contenu dont ils ont besoin](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
 |Utilisateur final|[Utilisateurs d’appareils comme des téléphones et des PC](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) gérés à l’aide d’Intune.|
 |Inscription|Microsoft Intune utilise l’[inscription](/intune/deploy-use/enroll-devices-in-microsoft-intune) pour intégrer des appareils dans la gestion et pour autoriser l’accès à des ressources.|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |Verrouillage à distance|Fonctionnalité Intune qui vous permet de [verrouiller des appareils pris en charge](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), même si vous n’êtes pas en possession de l’appareil.|
 |Les rapports|Intune offre un ensemble de [rapports prédéfinis](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports) qui fournissent des informations sur les appareils que vous gérez.|
 |Installation requise|Quand vous déployez une application avec cette action, elle est installée sur l’appareil sans [aucune intervention de l’utilisateur](/intune/deploy-use/deploy-apps) (bien que pour certaines plateformes, l’utilisateur final doive accepter l’installation).|
-|Configuration requise|[Opération de déploiement d’application](/en-us/intune/deploy-use/add-apps) qui vous permet de sélectionner les conditions qui doivent être remplies sur un appareil avant que l’application soit installée. Par exemple, vous pouvez spécifier la version du système d’exploitation iOS qui doit être installée avant que l’application soit installée.|
+|Configuration requise|[Opération de déploiement d’application](/intune/deploy-use/add-apps) qui vous permet de sélectionner les conditions qui doivent être remplies sur un appareil avant que l’application soit installée. Par exemple, vous pouvez spécifier la version du système d’exploitation iOS qui doit être installée avant que l’application soit installée.|
 
 ## <a name="s"></a>S
 |||

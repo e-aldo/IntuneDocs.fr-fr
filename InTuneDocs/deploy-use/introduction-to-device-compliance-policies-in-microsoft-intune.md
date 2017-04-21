@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2de9a7d639ee667ee195ded2875a8ac8e478fffb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +35,7 @@ Vous pouvez utiliser des stratégies de conformité avec des stratégies d’acc
 Vous pouvez également utiliser des stratégies de conformité indépendamment de l’accès conditionnel. Quand vous utilisez des stratégies de conformité indépendamment, les appareils ciblés sont évalués et signalés avec leur état de conformité. Par exemple, vous voulez connaître le nombre d’appareils qui ne sont pas chiffrés, ou les appareils qui sont jailbreakés ou rootés. Mais quand vous utilisez des stratégies de conformité indépendamment, aucune restriction d’accès aux ressources de l’entreprise n’est appliquée.
 
 Vous déployez les stratégies de conformité sur les utilisateurs. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée.
-Si vous voulez en savoir plus sur le temps nécessaire pour que les appareils mobiles reçoivent une stratégie une fois celle-ci déployée, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
+Si vous voulez en savoir plus sur le temps nécessaire pour que les appareils mobiles reçoivent une stratégie une fois celle-ci déployée, consultez [Gérer des paramètres et des fonctionnalités sur vos appareils](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
 
 Le tableau suivant répertorie les types d’appareils pris en charge par les stratégies de conformité. Il décrit également la façon dont les paramètres de non-conformité sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
 

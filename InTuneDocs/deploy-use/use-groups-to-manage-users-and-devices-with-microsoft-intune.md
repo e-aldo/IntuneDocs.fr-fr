@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ Le nouveau groupe s’affiche dans la liste **Groupes**, dans l’espace de trav
     > Actuellement, si votre groupe inclut des membres de groupes de sécurité ou de groupes de responsables spécifiques et que vous excluez des membres de certains groupes, les membres que vous avez inclus au départ sont supprimés. Pour créer un groupe contenant des membres inclus et des membres exclus, nous vous recommandons de créer d’abord un groupe parent avec les membres inclus, puis de créer un groupe enfant dans lequel vous ajoutez les membres exclus. Utilisez ensuite ce groupe enfant pour gérer les stratégies, les profils et la distribution d’applications Intune.
 
     > [!NOTE]
-    > Dans le portail Azure, vous pouvez créer des groupes en fonction des responsables des utilisateurs. Il s’agit de groupes dynamiques, dont le contenu change à mesure que des employés sont ajoutés ou supprimés dans l’équipe d’un responsable dans Azure Active Directory. Pour savoir comment créer un groupe Azure basé sur un nom de responsable, consultez [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/), à la section **Pour configurer un groupe en tant que groupe « Responsable »**.
+    > Dans le portail Azure, vous pouvez créer des groupes en fonction des responsables des utilisateurs. Il s’agit de groupes dynamiques, dont le contenu change à mesure que des employés sont ajoutés ou supprimés dans l’équipe d’un responsable dans Azure Active Directory. Pour savoir comment créer un groupe Azure basé sur un nom de responsable, consultez [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/), à la section **Pour configurer un groupe en tant que groupe « Responsable »**.
 
 4.  Dans la page **Définir l’appartenance directe**, choisissez **Parcourir** pour sélectionner individuellement les utilisateurs à inclure ou exclure. Si vous sélectionnez des utilisateurs qui ne sont pas dans le groupe parent que vous avez spécifié, Intune ajoute automatiquement ces utilisateurs au groupe parent. L’option permettant d’ajouter manuellement un utilisateur se trouve en bas de la boîte de dialogue **Sélectionner les membres**. Cela est utile si vous souhaitez ajouter un utilisateur qui ne dispose pas encore d’un appareil inscrit.
 
@@ -151,9 +152,4 @@ Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur pr�
 
 > [!NOTE]
 > N’oubliez pas que quand deux stratégies avec différents niveaux de restriction s’appliquent au même appareil ou utilisateur, la stratégie la plus restrictive prévaut dans la pratique.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
