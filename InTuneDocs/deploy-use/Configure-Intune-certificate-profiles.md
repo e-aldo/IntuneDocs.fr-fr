@@ -58,8 +58,6 @@ Vous devez créer un profil de certificat approuvé avant de créer un profil de
 
 -  Windows Phone 8.1 et versions ultérieures
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  Ajouter une stratégie **Profil de certificat approuvé**.
 
     Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).

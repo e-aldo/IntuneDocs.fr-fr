@@ -42,7 +42,6 @@ Pour plus d’informations, consultez [Limiter l’accès à la messagerie et au
 - **Stratégies d’accès aux ressources** : celles-ci œuvrent ensemble pour aider vos utilisateurs à accéder aux fichiers et aux ressources dont ils ont besoin pour effectuer leur travail, où qu’ils soient.
 Pour plus d’informations, consultez [Activer l’accès aux ressources de l’entreprise avec Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Pour obtenir la liste complète des stratégies Intune, consultez le [Guide de référence des stratégies Microsoft Intune](microsoft-intune-policy-reference.md).
 
