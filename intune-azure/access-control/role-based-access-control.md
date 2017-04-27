@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -81,9 +81,7 @@ Le nouveau rôle s’affiche dans la liste sur le panneau **Rôles**.
 ## <a name="how-to-assign-a-role"></a>Affectation d’un rôle
 
 1. Dans le panneau **Rôles** de la charge de travail **Contrôle d’accès**, choisissez le rôle intégré ou personnalisé que vous souhaitez affecter.
-2. Dans le panneau <*Nom de rôle*> - **Propriétés**, choisissez **Gérer** > **Affectations**.
-    >[!TIP]
-    >Dans ce panneau, vous pouvez aussi modifier ou supprimer des rôles existants.
+2. Dans le panneau <*Nom de rôle*> - **Propriétés**, choisissez **Gérer** > **Affectations**. Dans ce panneau, vous pouvez aussi modifier ou supprimer des rôles existants.
 3. Dans le panneau suivant, choisissez **Affecter**.
 4. Dans le panneau **Attributions de rôle**, entrez un **Nom** et éventuellement une **Description** pour l’attribution, puis choisissez les éléments suivants :
     - **Membres** : sélectionnez un groupe qui contient l’utilisateur auquel vous souhaitez accorder les autorisations.
