@@ -51,7 +51,7 @@ En outre, si vous avez créé vos propres applications métier, vous pouvez les 
 1. Accédez à la Console développeur Google Play, [play.google.com/apps/publish](https://play.google.com/apps/publish).
 2. Connectez-vous avec le compte que vous avez utilisé pour configurer la connexion entre Intune et Android for Work. Si vous vous connectez pour la première fois, vous devez vous inscrire et payer des frais pour devenir membre du programme de développement Google.
 3. Dans la console, sélectionnez **Ajouter une nouvelle application**.
-4. Vous chargez votre application et fournissez des informations la concernant de la même manière que vous publiez une application sur le Google Play Store. Toutefois, vous devez sélectionner le paramètre **(<*nom de l’organisation*>) ** comme indiqué ci-dessous.<br>
+4. Vous chargez votre application et fournissez des informations la concernant de la même manière que vous publiez une application sur le Google Play Store. Toutefois, vous devez sélectionner le paramètre **(<*nom de l’organisation*>)** comme indiqué ci-dessous.<br>
   ![Option permettant de mettre l’application à la disposition de votre organisation uniquement](media/restrict.png)<br>
 Ainsi, l’application est uniquement disponible pour votre organisation et n’est pas disponible dans le Google Play Store public.
 Pour plus d’informations sur la façon de charger et publier des applications Android, consultez l’[aide Google Developer Console](https://support.google.com/googleplay/android-developer/answer/113469).
