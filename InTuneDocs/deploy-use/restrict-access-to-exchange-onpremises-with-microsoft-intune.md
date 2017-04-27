@@ -83,10 +83,7 @@ Les éléments suivants sont pris en charge :
 -   Clients de messagerie Exchange ActiveSync, comme Gmail sur Android 4 ou ultérieur.
 -   Clients de messagerie Exchange ActiveSync sur les **appareils Android for Work :** seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne avec Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer ces applications comme installation obligatoire. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge.
 
 ## <a name="support-for-pcs"></a>Prise en charge des PC

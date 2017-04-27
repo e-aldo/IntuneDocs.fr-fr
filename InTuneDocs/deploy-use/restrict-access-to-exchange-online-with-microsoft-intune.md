@@ -78,8 +78,6 @@ Vous pouvez protéger l’accès à la messagerie Exchange Online à partir d’
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 et versions ultérieures et Android for Work
 - iOS 8.0 et versions ultérieures
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 L’**authentification moderne** permet aux clients Microsoft Office de bénéficier de la connexion basée sur la bibliothèque ADAL (Active Directory Authentication Library).
 
 -   L'authentification ADAL permet aux clients Office de procéder à une authentification basée sur un navigateur (également appelée authentification passive). Pour s'authentifier, un utilisateur est dirigé vers une page web de connexion.
