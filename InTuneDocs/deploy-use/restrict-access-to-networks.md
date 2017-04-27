@@ -46,7 +46,7 @@ Exportez le certificat à partir de la console Azure Active Directory (Azure AD
 
    d. Dans la page **Assistant Exportation de certificat**, choisissez **Suivant**.
 
-   e. Dans la page **Format du fichier d’exportation**, laissez la valeur par défaut, **X.509 binaire encodé DER (*.cer)**, puis choisissez **Suivant**.  
+   e. Dans la page **Format du fichier d’exportation** , laissez la valeur par défaut, **X.509 binaire encodé DER (.cer)** , puis choisissez **Suivant** .  
 
    f. Dans la page **Fichier à exporter**, choisissez **Parcourir** pour choisir l’emplacement auquel enregistrer le fichier, puis fournissez un nom de fichier. Concrètement, cette opération consiste en fait à nommer le fichier dans lequel le certificat exporté sera enregistré. Choisissez **Suivant** &gt; **Terminer**.
 
@@ -75,8 +75,8 @@ b. Cliquez sur l’icône en forme de verrou &gt;  **Plus d’informations**.
 2.       Exportez le certificat auto-signé.
 3. Dans un éditeur de texte, modifiez le certificat exporté :
 
- - Supprimez **-----BEGIN CERTIFICATE-----**.
- - Supprimez **-----END CERTIFICATE-----**.
+ - Supprimez  **-----BEGIN CERTIFICATE-----**
+ - Supprimez  **-----END CERTIFICATE-----**
  
 Vérifiez que tout le texte contient sur une seule ligne.
 
