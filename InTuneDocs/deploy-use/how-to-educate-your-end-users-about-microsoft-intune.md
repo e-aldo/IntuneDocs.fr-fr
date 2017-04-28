@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ L’apaisement des inquiétudes de ces utilisateurs améliorera votre déploieme
 
 * __Adaptez-vous.__ Si vous fournissez des instructions qui ne sont pas spécifiques à votre déploiement, les utilisateurs finaux peuvent penser que vous n’avez pas réfléchi à leur expérience. Vous pouvez utiliser ce [modèle personnalisable d’inscription à Intune de l’utilisateur final pour les administrateurs informatiques](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) afin de créer vos propres instructions d’inscription pour vos utilisateurs finaux.
 
-* __Trouvez différents moyens de communiquer.__ Comme avec les [différents styles de formation](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/), les utilisateurs ont des façons préférées d’utiliser les informations. Pour les utilisateurs qui préfèrent la vidéo plutôt que la documentation, nous proposons, entre autres, des [vidéos sur l’inscription des différents types d’appareils](https://channel9.msdn.com/Series/IntuneEnrollment) sur Channel 9. Ces vidéos peuvent être incorporées directement dans votre propre [site SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) ou téléchargées sous forme de copies locales (soit de la vidéo, soit simplement de la piste audio).
+* __Trouvez différents moyens de communiquer.__ Comme avec les [différents styles de formation](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/), les utilisateurs ont des façons préférées d’utiliser les informations. Pour les utilisateurs qui préfèrent la vidéo plutôt que la documentation, nous proposons, entre autres, des [vidéos sur l’inscription des différents types d’appareils](https://channel9.msdn.com/Series/IntuneEnrollment) sur Channel 9. Ces vidéos peuvent être incorporées directement dans votre propre [site SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) ou téléchargées sous forme de copies locales (soit de la vidéo, soit simplement de la piste audio).
 
 * __Soyez à l’écoute.__ L’expérience de vos utilisateurs finaux aura un impact sur votre productivité, et comprendre leur expérience vous permettra de résoudre plus facilement leurs problèmes quand ils s’adresseront à vous. En comprenant comment les utilisateurs finaux se procurent leurs applications, vous pouvez plus facilement diagnostiquer les problèmes qu’ils rencontrent, et les résoudre plus rapidement.
 

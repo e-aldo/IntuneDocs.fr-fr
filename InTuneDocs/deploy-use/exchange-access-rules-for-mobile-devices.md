@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -47,7 +47,7 @@ La procédure suivante décrit comment créer une règle personnalisée.
 
 ## <a name="create-a-default-access-rule"></a>Créer une règle d’accès par défaut
 
-1.  Dans la [Console d’administration Microsoft Intune](http://manage.microsoft.com), choisissez **Stratégie** &gt; **Exchange ActiveSync**.
+1.  Dans la [Console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Exchange ActiveSync**.
 
 2.  Dans la liste **Règle par défaut**, sélectionnez la règle d’accès à appliquer à tous les appareils mobiles non couverts par une règle ou une exemption personnelle. Choisissez **Enregistrer**.
 
@@ -55,7 +55,7 @@ La procédure suivante décrit comment créer une règle personnalisée :
 
 ## <a name="create-a-custom-access-rule"></a>Créer une règle d’accès personnalisée
 
-1. Dans la [Console d’administration Microsoft Intune](http://manage.microsoft.com), choisissez **Stratégie** &gt; **Exchange ActiveSync**.
+1. Dans la [Console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Exchange ActiveSync**.
 
 2.  Dans la liste **Exceptions de plateforme**, choisissez **Ajouter une règle**, puis créez une règle personnalisée. Choisissez **Enregistrer**.
 

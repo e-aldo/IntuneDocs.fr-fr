@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
-ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
-ms.lasthandoff: 03/24/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ea57a51f2855dea416ad4a76e657e1846ffe41f1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -69,9 +69,9 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
 
 ## <a name="add-a-device-enrollment-manager"></a>Ajouter un gestionnaire d’inscription d’appareil
 
-1.  Assurez-vous que l’utilisateur que vous souhaitez ajouter au compte de gestionnaire d’inscription d’appareil existe déjà. Si vous devez ajouter l’utilisateur, connectez-vous au [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) et suivez les étapes dans [Ajouter des utilisateurs individuellement ou en bloc à Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+1.  Assurez-vous que l’utilisateur que vous souhaitez ajouter au compte de gestionnaire d’inscription d’appareil existe déjà. Si vous devez ajouter l’utilisateur, connectez-vous au [portail Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) et suivez les étapes dans [Ajouter des utilisateurs individuellement ou en bloc à Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Connectez-vous à la [console d’administration Microsoft Intune](http://manage.microsoft.com) avec vos informations d’identification d’administrateur.
+2.  Connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) avec vos informations d’identification d’administrateur.
 
 3.  Dans le volet de navigation, choisissez **Admin**, puis accédez à **Gestion des administrateurs** et sélectionnez **Gestionnaires d’inscription d’appareil**. La page **Gestionnaires d’inscription d’appareil** s’ouvre.
 
@@ -88,7 +88,7 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Supprimer un gestionnaire d'inscription d'appareil d'Intune
 
-1.  Connectez-vous au [portail de compte Microsoft Intune](http://manage.microsoft.com) avec vos informations d’identification d’administrateur.
+1.  Connectez-vous au [portail de compte Microsoft Intune](https://manage.microsoft.com) avec vos informations d’identification d’administrateur.
 
 2.  Dans le volet de navigation, choisissez **Admin**, puis accédez à **Gestion des administrateurs** et sélectionnez **Gestionnaires d’inscription d’appareil**. La page **Gestionnaires d’inscription d’appareil** s’ouvre.
 

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Si votre entreprise a besoin de groupes d’appareils mobiles pour faciliter la 
 
 Un profil d'inscription d'appareil définit les paramètres appliqués à un groupe d'appareils.
 
-1. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis choisissez **Ajouter**.
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis choisissez **Ajouter**.
 
   ![Création d’un profil d’inscription d’appareils](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Ajouter des appareils iOS à inscrire avec l’Assistant Configuration
 
-1. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), accédez à **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils d’entreprise** &gt; **Tous les appareils**, puis choisissez **Ajouter des appareils**.
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), accédez à **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils d’entreprise** &gt; **Tous les appareils**, puis choisissez **Ajouter des appareils**.
 
    Vous pouvez ajouter des appareils de deux manières :
 
@@ -128,7 +128,7 @@ Spécifiez le profil à attribuer aux appareils ajoutés de la liste des profils
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Exporter un profil à déployer sur des appareils iOS
 
-1. Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com) accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis sélectionnez le profil d’appareil à déployer sur les appareils mobiles.
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com) accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis sélectionnez le profil d’appareil à déployer sur les appareils mobiles.
 
 2. Choisissez **Exporter** dans la barre des tâches. Copiez et enregistrez la valeur **URL de profil**. Vous la chargerez dans Apple Configurator plus tard pour définir le profil Intune utilisé par les appareils iOS.
 

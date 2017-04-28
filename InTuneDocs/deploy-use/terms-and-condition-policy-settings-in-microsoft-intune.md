@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Vous pouvez créer et déployer plusieurs stratégies contenant différentes con
 
 ## <a name="create-a-terms-and-conditions-policy"></a>Créer une stratégie de conditions générales
 
-1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
     ![Capture d’écran de la stratégie de conditions générales](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ Vous pouvez créer et déployer plusieurs stratégies contenant différentes con
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>Déployer une stratégie de conditions générales
 
-1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
 2.  Dans la liste **Stratégies associées aux conditions générales**, sélectionnez la stratégie à déployer, puis cliquez sur **Gérer le déploiement**.
 
@@ -64,7 +64,7 @@ Vous pouvez créer et déployer plusieurs stratégies contenant différentes con
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>Surveiller une stratégie associée aux conditions générales
 
-1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
 2.  Dans la fenêtre **Créer un rapport**, cliquez sur **Afficher le rapport**. Le rapport dresse la liste des utilisateurs qui ont accepté les conditions générales que vous avez déployées.
 
@@ -73,7 +73,7 @@ Quand vous modifiez une stratégie existante associée à des conditions génér
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Utiliser plusieurs versions des conditions générales
 
-1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), cliquez sur **Stratégie** &gt; **Conditions générales**.
 
 2.  Sélectionnez la stratégie de conditions générales à modifier, puis cliquez sur **Modifier**.
 

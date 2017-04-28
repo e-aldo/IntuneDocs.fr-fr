@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ Quand vous inscrivez directement des appareils iOS, vous pouvez inscrire un appa
 
 1.  Si ce n’est déjà fait, créez un profil d’inscription d’appareil pour les appareils iOS inscrits par le biais d’Apple Configurator. Un profil d'inscription d'appareil définit les paramètres appliqués aux appareils.
 
-    1.  Dans la [console d’administration Microsoft Intune](http://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis choisissez **Ajouter**.
+    1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis choisissez **Ajouter**.
 
         ![Page Créer un profil d’inscription d’appareils](../media/pol-sa-corp-enroll.png)
 
