@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Si vous avez attribué la valeur **Oui** aux paramètres de stratégie **Install
 |**Analyser l’activité des fichiers et des programmes sur les ordinateurs**|Permet d’analyser les fichiers entrants et sortants, ainsi que l’activité des programmes sur les ordinateurs. Grâce à ce paramètre, Endpoint Protection peut contrôler le moment où des fichiers et des programmes commencent à s’exécuter, et vous alerter s’ils effectuent des opérations ou si certaines opérations sont effectuées sur ceux-ci.<br /><br />Valeur recommandée : **Oui**|
 |**Fichiers surveillés**|Vous permet de choisir si seuls les fichiers entrants ou sortants, ou tous les fichiers, doivent être analysés.<br /><br />Valeur recommandée : **Contrôler tous les fichiers**|
 |**Activer l'analyse du comportement**|Permet à Microsoft Intune Endpoint Protection de rechercher certains schémas d’activité suspecte sur les ordinateurs clients.<br /><br />Valeur recommandée : **Oui**|
-|**Activer le système NIS (Network Inspection System)**|Active le Système NIS (Network Inspection System) sur les ordinateurs clients. Le système NIS utilise des signatures de vulnérabilités connues disponibles auprès du [Centre de protection Microsoft contre les programmes malveillants](http://go.microsoft.com/fwlink/?LinkId=234249) pour faciliter la détection et le blocage du trafic réseau malveillant.<br /><br />Valeur recommandée : **Oui**|
+|**Activer le système NIS (Network Inspection System)**|Active le Système NIS (Network Inspection System) sur les ordinateurs clients. Le système NIS utilise des signatures de vulnérabilités connues disponibles auprès du [Centre de protection Microsoft contre les programmes malveillants](https://go.microsoft.com/fwlink/?LinkId=234249) pour faciliter la détection et le blocage du trafic réseau malveillant.<br /><br />Valeur recommandée : **Oui**|
 
   ![Paramètres en temps réel pour Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 

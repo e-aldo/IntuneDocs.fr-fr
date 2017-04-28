@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Vous pouvez déployer le logiciel client Intune sur des ordinateurs dans le cadr
 
 ## <a name="instruct-users-to-self-enroll"></a>Indiquer aux utilisateurs de s’inscrire eux-mêmes
 
-Les utilisateurs installent le logiciel client Intune en accédant au [site web Portail d’entreprise](http://portal.manage.microsoft.com). Les informations exactes que les utilisateurs voient dans le portail web varient selon l’autorité MDM de votre compte et la plateforme/version du système d’exploitation du PC de l’utilisateur.
+Les utilisateurs installent le logiciel client Intune en accédant au [site web Portail d’entreprise](https://portal.manage.microsoft.com). Les informations exactes que les utilisateurs voient dans le portail web varient selon l’autorité MDM de votre compte et la plateforme/version du système d’exploitation du PC de l’utilisateur.
 
 Si aucune licence Intune n’a été attribuée aux utilisateurs ou si l’autorité MDM de l’organisation n’a pas été définie sur Intune, aucune option d’inscription n’est visible par les utilisateurs.
 

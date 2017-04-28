@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -51,7 +51,7 @@ Utilisez la stratégie **Exchange ActiveSync** de Microsoft Intune pour configur
 |**Exiger le chiffrement sur les cartes de stockage**|Exige que les données stockées sur un stockage externe tel qu’une carte SD soient chiffrées (sur les appareils pris en charge).
 <sup>1</sup> Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 
--   Si vous voulez appliquer le chiffrement à des appareils exécutant Windows 8.1, vous devez installer la [mise à jour du client MDM pour Windows, publiée en décembre 2014](http://support.microsoft.com/kb/3013816), sur chaque appareil.
+-   Si vous voulez appliquer le chiffrement à des appareils exécutant Windows 8.1, vous devez installer la [mise à jour du client MDM pour Windows, publiée en décembre 2014](https://support.microsoft.com/kb/3013816), sur chaque appareil.
 
 -   Si vous activez ce paramètre pour les appareils Windows 8.1, tous les utilisateurs de l’appareil doivent disposer d’un compte Microsoft.
 
