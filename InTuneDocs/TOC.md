@@ -12,7 +12,7 @@
 
 # [Bien démarrer](get-started/get-started.md)
 ## [Configurer Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Prérequis]
+### Prérequis
 #### [Appareils pris en charge](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Utilisation du réseau](get-started/network-bandwidth-use.md)
 ### [Se connecter à Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [Protéger les données d’application avec la gestion des applications mobiles](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Portail Azure pour les stratégies de protection d’applications](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Préparation à la configuration de stratégies de protection d’applications](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Créer et déployer des stratégies de protection d’applications](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Préparer la configuration des stratégies de protection d’applications pour iOS et Android](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Préparer la configuration des stratégies de protection d’application pour Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [Stratégies de protection d’applications pour Android](deploy-use/android-mam-policy-settings.md)
 #### [Stratégies de protection d’applications pour iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Stratégies de protection d’applications pour Windows](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Créer et déployer des stratégies de protection d’applications pour iOS et Android](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Créer et déployer des stratégies de protection d’application WIP pour Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Valider des stratégies de protection des applications](deploy-use/validate-mobile-application-management.md)
 #### [Surveiller la conformité des stratégies de protection d’applications](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 

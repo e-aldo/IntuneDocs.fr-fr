@@ -118,7 +118,6 @@
 #### [Disposition de l’écran d’accueil pour iOS](configure-devices/home-screen-settings-for-ios.md)
 #### [Notifications d’application pour iOS](configure-devices/app-notification-settings-for-ios.md)
 #### [Appareils partagés pour iOS](configure-devices/shared-device-settings-for-ios.md)
-#### [Filtrage de contenu Web pour iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Configurer des restrictions sur les appareils](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +193,8 @@
 ## [Qu’est-ce que l’accès conditionnel ?](conditional-access/what-is-conditional-access.md)
 ## Guide pratique
 ### [Installer le connecteur Exchange sur site](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [Créer une stratégie d’accès conditionnel](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Créer et attribuer la stratégie d’accès conditionnel](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [Surveiller la conformité de l’accès conditionnel](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # Contrôle d’accès
 ## [Qu’est-ce que le contrôle d’accès en fonction du rôle ?](access-control/role-based-access-control.md)
