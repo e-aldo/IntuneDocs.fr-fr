@@ -67,7 +67,7 @@ Si l’utilisateur a installé un profil de messagerie avant de configurer un pr
 Étant donné que Samsung KNOX n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à déployer à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
 
 ## <a name="error--0x87d1fde8-for-knox-standard-device"></a>Erreur 0x87D1FDE8 pour appareil KNOX Standard
-**Problème ** : Après la création et le déploiement d’un profil de messagerie Exchange Active Sync pour Samsung KNOX Standard pour différents appareils Android, l’erreur **0x87D1FDE8** ou un **échec de la correction** est signalé sous l’onglet de stratégie des propriétés de l’appareil &gt;.
+**Problème**: Après la création et le déploiement d’un profil de messagerie Exchange Active Sync pour Samsung KNOX Standard pour différents appareils Android, l’erreur **0x87D1FDE8** ou un **échec de la correction** est signalé sous l’onglet de stratégie des propriétés de l’appareil &gt;.
 
 Examinez la configuration de votre profil EAS pour Samsung KNOX et la stratégie source. L’option de synchronisation Samsung Notes n’étant plus prise en charge, nous vous invitons à ne pas la sélectionner dans votre profil. Assurez-vous que les appareils ont eu suffisamment de temps pour traiter la stratégie (jusqu’à 24 heures).
 
