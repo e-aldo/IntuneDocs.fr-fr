@@ -40,7 +40,7 @@ Vous pouvez filtrer l’affichage de la console d’administration Microsoft Int
     -   **Accès en lecture seule**
     -   **Support technique – Nœud Groupes**
 
-    L’accès complet et l’accès en lecture seule sont explicites. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    L’accès complet et l’accès en lecture seule sont explicites. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **Support technique - Nœud Groupes** limite ce que l’administrateur peut voir et faire à ce qui suit :
 

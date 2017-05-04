@@ -33,7 +33,7 @@ En tant qu’administrateur informatique, vous pouvez créer et importer un fich
 ## <a name="add-corporate-identifiers"></a>Ajouter des identificateurs d’entreprise
 Pour créer la liste, préparez une liste à deux colonnes de valeurs séparées par des virgules (.csv), sans en-tête. Ajoutez l’identificateur IMEI dans la colonne de gauche et les détails dans la colonne de droite. Les détails sont limités à 128 caractères et sont réservés à des fins d’administration. Les détails ne sont pas affichés sur l’appareil. La limite actuelle est de 500 lignes par fichier .csv.
 
-**Chargez un fichier .csv qui contient les numéros de série** : créez une liste de valeurs séparées par des virgules (.csv) de deux colonnes sans en-tête, limitée à 5 000 appareils ou à 5 Mo par fichier .csv.
+**Chargez un fichier .csv qui contient les numéros de série** : créez une liste de valeurs séparées par des virgules (.csv) de deux colonnes sans en-tête, limitée à 5 000 appareils ou à 5 Mo par fichier .csv. 
 
 |||
 |-|-|
@@ -43,8 +43,8 @@ Pour créer la liste, préparez une liste à deux colonnes de valeurs séparées
 Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
 
 ```
-01 234567 890123,device details
-02 234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 
