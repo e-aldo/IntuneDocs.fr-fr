@@ -1,12 +1,12 @@
 ---
-title: "Configurer l’infrastructure de certificat Intune pour PKCS"
+title: "Configurer et gérer les certificats PKCS avec Intune"
 titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Découvrez comment configurer votre infrastructure pour utiliser des certificats PKCS avec Intune."
+description: "Intune Azure en version préliminaire : découvrez comment configurer votre infrastructure avant de créer et affecter des certificats PKCS avec Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 11bb2cbcf14abe5966e0b203ba3466adc12bd4dd
+ms.lasthandoff: 04/24/2017
 
 
 
 ---
-# <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>Configurer votre infrastructure de certificats Microsoft Intune pour PKCS
+# <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurer et gérer les certificats PKCS avec Intune
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Cette rubrique décrit les éléments dont vous avez besoin pour créer et déployer des profils de certificat PKCS avec Intune.
+Cette rubrique vous explique comment configurer votre infrastructure, puis comment créer et affecter des profils de certificat PKCS avec Intune.
 
 Pour effectuer une authentification basée sur certificat dans votre organisation, vous avez besoin d’une autorité de certification d’entreprise.
 
@@ -61,17 +61,16 @@ Pour utiliser des profils de certificat PKCS en plus de l’autorité de certifi
 |Objet|Détails|
 |----------|-----------|
 |**Modèle de certificat**|Vous configurez ce modèle sur votre autorité de certification émettrice.|
-|**Certificat d’autorité de certification racine approuvée**|Vous l'exportez en tant que fichier **.cer** à partir de l'autorité de certification émettrice ou de tout appareil qui approuve l'autorité de certification émettrice, puis le déployez sur des appareils à l'aide du profil de certificat d'autorité de certification approuvée.<br /><br />Vous utilisez un seul certificat d'autorité de certification racine approuvée par plateforme de système d'exploitation et l'associez à chaque profil de certificat racine approuvé que vous créez.<br /><br />Vous pouvez utiliser des certificats d'autorité de certification racine approuvée supplémentaires chaque fois que nécessaire. Par exemple, vous pouvez agir ainsi pour fournir une relation d'approbation à une autorité de certification qui signe les certificats d'authentification du serveur pour vos points d'accès Wi-Fi.|
+|**Certificat d’autorité de certification racine approuvée**|Vous devez l’exporter en tant que fichier **.cer** à partir de l’autorité de certification émettrice ou de tout appareil qui approuve l’autorité de certification émettrice, puis l’affecter à des appareils à l’aide du profil de certificat d’autorité de certification approuvée.<br /><br />Vous utilisez un seul certificat d'autorité de certification racine approuvée par plateforme de système d'exploitation et l'associez à chaque profil de certificat racine approuvé que vous créez.<br /><br />Vous pouvez utiliser des certificats d'autorité de certification racine approuvée supplémentaires chaque fois que nécessaire. Par exemple, vous pouvez agir ainsi pour fournir une relation d'approbation à une autorité de certification qui signe les certificats d'authentification du serveur pour vos points d'accès Wi-Fi.|
 
 
 ## <a name="configure-your-infrastructure"></a>Configurer votre infrastructure
-Pour pouvoir configurer des profils de certificat, vous devez d’abord effectuer les tâches suivantes. Pour effectuer ces tâches, vous devez connaître Windows Server 2012 R2 et les services de certificats Active Directory (AD CS) :
+Pour pouvoir configurer des profils de certificat, vous devez d’abord effectuer les étapes suivantes. Pour suivre ces étapes, vous devez connaître Windows Server 2012 R2 et les services de certificats Active Directory (AD CS) :
 
-- **Tâche 1** : Configurer les modèles de certificats sur l’autorité de certification.
-- **Tâche 2** : Activer, installer et configurer Intune Certificate Connector.
+- **Étape 1** : configurer les modèles de certificats sur l’autorité de certification.
+- **Étape 2** : activer, installer et configurer Intune Certificate Connector.
 
-## <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Tâche 1 : Configurer les modèles de certificats sur l'autorité de certification
-Au cours de cette tâche, vous allez publier le modèle de certificat.
+## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>Étape 1 : configurer les modèles de certificats sur l’autorité de certification
 
 ### <a name="to-configure-the-certification-authority"></a>Pour configurer l'autorité de certification
 
@@ -109,10 +108,11 @@ Au cours de cette tâche, vous allez publier le modèle de certificat.
 
 4.  Sur l’ordinateur de l’autorité de certification, vérifiez que l’ordinateur qui héberge Intune Certificate Connector a l’autorisation Inscription qui lui permet d’accéder au modèle utilisé pour créer le profil de certificat PKCS. Définissez cette autorisation sous l'onglet **Sécurité** des propriétés de l'ordinateur d'autorité de certification.
 
-## <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Tâche 2 : Activer, installer et configurer Intune Certificate Connector
-Dans cette tâche, vous allez :
+## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>Étape 2 : activer, installer et configurer Intune Certificate Connector
+Au cours de cette étape, vous allez :
 
-télécharger, installer et configurer Certificate Connector.
+- activer la prise en charge de Certificate Connector ;
+- télécharger, installer et configurer Certificate Connector.
 
 ### <a name="to-enable-support-for-the-certificate-connector"></a>Pour activer la prise en charge de Certificate Connector
 
@@ -158,6 +158,53 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
 
 **http:// &lt;nom_de_domaine_complet_de_votre_serveur_NDES&gt;/certsrv/mscep/mscep.dll**
 
-### <a name="next-steps"></a>Étapes suivantes
-Vous êtes maintenant prêt à configurer des profils de certificat, comme décrit dans [Configuration de certificats avec Microsoft Intune](how-to-configure-certificates.md).
+
+### <a name="how-to-create-a-pkcs-certificate-profile"></a>Comment créer un profil de certificat PKCS
+
+Dans le portail Azure, sélectionnez la charge de travail **Configurer des appareils**.
+2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
+3. Dans le panneau de profils, cliquez sur **Créer un profil**.
+4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de certificat PKCS.
+5. Dans la liste déroulante **Plateforme**, sélectionnez la plateforme d’appareil pour ce certificat PKCS :
+    - **Android**
+    - **Android for Work**
+    - **iOS**
+    - **Windows 10 et versions ultérieures**
+6. Dans la liste déroulante **Type de profil**, choisissez **Certificat PKCS**.
+7. Dans le panneau **Certificat PKCS**, configurez les paramètres suivants :
+    - **Seuil de renouvellement (%)** : spécifiez le pourcentage de durée de vie restante du certificat avant que l’appareil ne demande le renouvellement du certificat.
+    - **Période de validité du certificat** : si vous avez exécuté la commande **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** sur l’autorité de certification émettrice, ce qui autorise une période de validité personnalisée, vous pouvez spécifier le temps restant avant l’expiration du certificat.<br>Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
+    - **Fournisseur de stockage de clés** (Windows 10) : spécifiez l’emplacement de stockage de la clé du certificat. Choisissez l'une des valeurs suivantes :
+        - **Inscrire auprès du fournisseur de stockage de clés (KSP) du module de plateforme sécurisée (TPM) s’il est présent ; sinon, inscrire auprès du fournisseur de stockage de clés du logiciel**
+        - **Inscrire auprès du fournisseur de stockage de clés (KSP) du module de plateforme sécurisée (TPM), sinon mettre en échec**
+        - **Inscrire auprès de Passport, sinon mettre en échec (Windows 10 et versions ultérieures)**
+        - **Inscrire auprès du fournisseur de stockage de clés du logiciel**
+    - **Autorité de certification** : autorité de certification d’entreprise qui s’exécute sur une édition Entreprise de Windows Server 2008 R2 ou version ultérieure. Une autorité de certification autonome n'est pas prise en charge. Pour savoir comment configurer une autorité de certification, consultez [Installer l'autorité de certification](http://technet.microsoft.com/library/jj125375.aspx). Si votre autorité de certification exécute Windows Server 2008 R2, vous devez [installer le correctif logiciel à partir de KB2483564](http://support.microsoft.com/kb/2483564/).
+    - **Nom de l’autorité de certification** : entrez le nom de votre autorité de certification.
+    - **Nom du modèle de certificat** : entrez le nom d’un modèle de certificat que doit utiliser le service d’inscription de périphériques réseau conformément à sa configuration et qui a été ajouté à une autorité de certification émettrice.
+    Assurez-vous que le nom correspond exactement à l’un des modèles de certificat figurant dans le registre du serveur exécutant le service d’inscription de périphériques réseau. Assurez-vous que vous spécifiez le nom du modèle de certificat et non le nom d'affichage du modèle de certificat. 
+    Pour rechercher les noms des modèles de certificats, accédez à la clé suivante : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. Les modèles de certificat s'affichent sous la forme des valeurs **EncryptionTemplate**, **GeneralPurposeTemplate**et **SignatureTemplate**. Par défaut, la valeur des trois modèles de certificat est IPSECIntermediateOffline, laquelle correspond au nom d’affichage du modèle **IPSec (requête hors connexion)**. 
+    - **Format du nom de l’objet** : dans la liste, sélectionnez comment Intune crée automatiquement le nom de l’objet dans la demande de certificat. Si le certificat est pour un utilisateur, vous pouvez également inclure l'adresse de messagerie de cet utilisateur dans le nom de l'objet. Choisissez parmi :
+        - **Non configuré**
+        - **Nom commun**
+        - **Nom commun (adresse e-mail incluse)**
+        - **Nom commun comme adresse e-mail**
+    - **Autre nom de l’objet** : spécifiez comment Intune crée automatiquement les valeurs pour l’autre nom de l’objet dans la demande de certificat. Par exemple, si vous avez sélectionné un type de certificat utilisateur, vous pouvez inclure le nom d'utilisateur principal (UPN) dans l'autre nom de l'objet. Si le certificat client est utilisé pour l'authentification sur un serveur de stratégie réseau, l'autre nom de l'objet doit être défini sur le nom d'utilisateur principal.
+    - **Utilisation de la clé étendue** (Android) : choisissez **Ajouter** pour ajouter des valeurs pour le rôle prévu du certificat. Dans la plupart des cas, le certificat demande une **Authentification client** afin que l'utilisateur ou l'appareil puisse être authentifié sur un serveur. Toutefois, vous pouvez ajouter d'autres utilisations de la clé en fonction de vos besoins. 
+    - **Certificat racine** (Android) : choisissez un profil de certificat d’autorité de certification racine que vous avez précédemment configuré et attribué à l’utilisateur ou à l’appareil. Ce certificat d'autorité de certification doit être le certificat racine de l'autorité de certification qui émet le certificat que vous configurez dans ce profil de certificat. Il s’agit du profil de certificat approuvé que vous avez créé précédemment.
+8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
+
+Le profil est créé et s’affiche dans le panneau de la liste des profils.
+
+## <a name="how-to-assign-the-certificate-profile"></a>Comment affecter le profil de certificat
+
+Considérez les éléments suivants avant d’attribuer des profils de certificat aux groupes :
+
+- Quand vous attribuez des profils de certificat aux groupes, le fichier de certificat issu du profil de certificat d’autorité de certification approuvée est installé sur l’appareil. L’appareil utilise le profil de certificat PKCS pour créer une demande de certificat par l’appareil.
+- Les profils de certificat s’installent uniquement sur les appareils exécutant la plateforme que vous utilisez quand vous créez le profil.
+- Vous pouvez affecter des profils de certificat sur des regroupements d’utilisateurs ou d’appareils.
+- Pour publier un certificat sur un appareil rapidement après l’inscription de l’appareil, affectez le profil de certificat à un groupe d’utilisateurs plutôt qu’à un groupe d’appareils. Si vous l’affectez à un groupe d’appareils, une inscription complète des appareils est préalablement nécessaire pour qu’ils puissent recevoir des stratégies.
+- Même si vous affectez chaque profil séparément, vous devez également affecter l’autorité de certification racine approuvée et le profil PKCS. Dans le cas contraire, la stratégie de certificat PKCS échoue.
+
+Pour plus d’informations sur la façon d’affecter des profils, consultez [Guide pratique pour attribuer des profils d’appareils](how-to-assign-device-profiles.md).
 

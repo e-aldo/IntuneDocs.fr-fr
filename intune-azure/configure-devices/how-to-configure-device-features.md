@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: fddd4963ceea09b37ad4d8c739f437dbcf3b053e
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -44,8 +44,11 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
     - **MacOS**
 6. Dans la liste déroulante **Type de profil**, choisissez **Fonctionnalités de l’appareil**. 
 7. Selon la plateforme que vous choisissez, les paramètres que vous pouvez configurer diffèrent. Accédez à l’une des rubriques suivantes pour obtenir les paramètres détaillés pour chaque plateforme :
-    - [Paramètres iOS](device-features-for-ios.md)
-    - [Paramètres macOS](device-features-for-macos.md)
+    - [Paramètres Intune AirPrint pour appareils iOS et Mac OS](air-print-settings-for-ios-and-macos.md)
+     - [Paramètres Intune AirPlay pour appareils iOS](airplay-settings-for-ios-devices.md)
+    - [Paramètres de disposition de l’écran d’accueil Intune pour les appareils iOS](home-screen-settings-for-ios.md)
+    - [Paramètres de notification des applications Intune pour les appareils iOS](app-notification-settings-for-ios.md)
+    - [Paramètres de configuration des appareils Intune partagés pour iOS](shared-device-settings-for-ios.md)
 
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
