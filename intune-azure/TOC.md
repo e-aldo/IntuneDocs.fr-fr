@@ -1,5 +1,6 @@
 # Introduction
 ## [Qu’est-ce que la préversion du portail Azure ?](introduction/what-is-microsoft-intune.md)
+## [Qu’est-ce qu’Intune pour l’Éducation ?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Fonctionnalités d’Intune dans Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Prise en main
 <!---(introduction/get-started.md) --->
@@ -82,10 +83,13 @@
 #### [Applications métier iOS](manage-apps/ios-lob-app.md)
 #### [Applications web](manage-apps/web-app.md)
 #### [Application du Windows Phone 8.1 Store](manage-apps/windows-phone-8-1-store-app.md)
+#### [Applications métier Windows Phone](manage-apps/windows-phone-line-of-business-app.md)
 #### [Applications Windows Store](manage-apps/windows-store-app.md)
+#### [Applications métier Windows](manage-apps/windows-line-of-business-app.md)
 ### [Attribuer des applications](manage-apps/deploy-apps.md)
 ### [Surveiller les applications](manage-apps/monitor-apps.md)
-### [Utiliser des stratégies de configuration des applications](manage-apps/app-configuration-policies.md)
+### [Utiliser des profils de configuration d’application](manage-apps/app-configuration-policies.md)
+### [Utiliser des profils d’approvisionnement d’application iOS](manage-apps/ios-app-provisioning-profile.md)
 ### [Réinitialiser des applications de manière sélective](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Utiliser des applications achetées en volume](manage-apps/volume-purchased-apps.md)
@@ -94,6 +98,8 @@
 ### [Configurer l’application Portail d’entreprise](manage-apps/company-portal-app.md)
 ## Guide pratique pour utiliser les stratégies de protection des applications
 ### [Créer et affecter des stratégies de protection des applications](manage-apps/app-protection-policies.md)
+### [Préparation aux stratégies de protection des applications WIP](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [Créer et affecter des stratégies de protection des applications WIP](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Paramètres Android](manage-apps/android-app-protection-policy-settings.md)
 #### [Paramètres iOS](manage-apps/ios-app-protection-policy-settings.md)
 ### [Valider des stratégies de protection des applications](manage-apps/validate-app-protection-policies.md)
@@ -151,6 +157,7 @@
 
 ### [Configurer les paramètres de mise à niveau Windows 10](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [Configurer les paramètres de Windows 10 Éducation](configure-devices/how-to-configure-education-settings.md)
+### [Configurer les paramètres d’éducation iOS](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [Configurer les paramètres Windows Update Entreprise](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configurer des certificats](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)

@@ -9,9 +9,9 @@ ms.topic: hub-page
 title: Documentation de Microsoft Intune | Microsoft Docs
 description: "Apprenez à utiliser Microsoft Intune."
 translationtype: Human Translation
-ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
-ms.openlocfilehash: af6af39a041582bd93bac6aad551881be4cf0291
-ms.lasthandoff: 04/24/2017
+ms.sourcegitcommit: 7db42e591df8ec6c21f73b7ce49be624e1e29690
+ms.openlocfilehash: 3d44038d316977ad0dedef2aee844a64ca24b744
+ms.lasthandoff: 05/02/2017
 
 ---
 <div id="main" class="v2">
@@ -40,6 +40,7 @@ ms.lasthandoff: 04/24/2017
                             </div>
                         </li>
                         <li>
+                        <a href="/intune-azure/introduction/what-is-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -49,14 +50,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune dans le portail Azure en préversion</a></h3>
+                                            <h3>Intune dans le portail Azure en version préliminaire</h3>
                                             <p>Avec la migration de Microsoft Intune vers le portail Azure, découvrez les modifications disponibles dans le nouveau portail. </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                        <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -66,14 +69,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/plan-design/introduction">Planification du déploiement et conception</a></h3>
+                                            <h3>Planification et conception du déploiement</h3>
                                             <p>Explorez le processus de développement d’un plan de déploiement, de création d’une conception, d'intégration d’Intune et de mise en place du déploiement de production.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune-education/what-is-intune-for-education">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -83,14 +88,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">Comment former vos utilisateurs finaux à Microsoft Intune</a></h3>
-                                            <p>Découvrez comment vous pouvez convaincre vos utilisateurs finaux d’adopter l’accès sécurisé fourni par Intune.</p>
+                                            <h3>Qu’est-ce qu’Intune pour l’Éducation ?</h3>
+                                            <p>Découvrez comme effectuer des tâches à faire tous les jours sur des appareils en classe.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -100,14 +107,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">Utiliser Intune dans Microsoft Graph</a></h3>
+                                            <h3>Utiliser Intune dans Microsoft Graph</h3>
                                             <p>Utilisez les API Microsoft Graph pour configurer les stratégies et les contrôles d’Intune.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -117,14 +126,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">Plus de 150 licences ? Tirer profit de vos avantages FastTrack</a></h3>
+                                            <h3>Plus de 150 licences ? Tirer profit de vos avantages FastTrack</h3>
                                             <p>Collaborez avec des spécialistes Microsoft pour accéder, corriger, activer et personnaliser l’utilisation de vos services.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune/understand-explore/mam-faq">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -134,12 +145,13 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/understand-explore/mam-faq">Forum Aux Questions sur la protection des applications et GAM</a></h3>
+                                            <h3>Forum aux questions sur la protection des applications et GAM</h3>
                                             <p>Trouvez des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles Intune et la protection des applications Intune.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
 <!--                        <li>
                             <div class="cardSize">
@@ -241,18 +253,18 @@ ms.lasthandoff: 04/24/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune">
-                            <div class="cardSize">
+                            <a href="/intune-education/what-is-intune-for-education">
+                           <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-intro-devicemgmt.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-featured-educateusers.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Gestion des appareils mobiles dans Microsoft Intune</h3>
-                                            <p>Évaluez le fonctionnement de la gestion des appareils mobiles dans Intune.</p>
+                                            <h3>Qu’est-ce qu’Intune pour l’Éducation ?</h3>
+                                            <p>Découvrez comme effectuer des tâches à faire tous les jours sur des appareils en classe.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -470,7 +482,7 @@ ms.lasthandoff: 04/24/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-2-identify-use-case-scenarios">
+                            <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -896,7 +908,7 @@ ms.lasthandoff: 04/24/2017
                                         </div>
                                         <div class="cardText">
                                             <h3>Présentation du Kit SDK d’application Intune</h3>
-                                            <p>Découvrez le Kit de développement logiciel (SDK) que vous pouvez utiliser pour appliquer les stratégies de protection des applications Intune à votre application.</p>
+                                            <p>Découvrez le kit SDK que vous pouvez utiliser pour appliquer les stratégies de protection des applications Intune à votre application.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -914,7 +926,7 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Prise en main du Kit de développement logiciel (SDK) d’applications Microsoft Intune</h3>
+                                            <h3>Prise en main du kit SDK d’application Microsoft Intune</h3>
                                             <p>Ce guide décrit les principales étapes nécessaires pour activer la gestion des applications mobiles dans votre application avec Microsoft Intune.</p>
                                         </div>
                                     </div>
@@ -933,8 +945,8 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Guide du Kit de développement logiciel (SDK) d’applications Intune pour les développeurs iOS</h3>
-                                            <p>Le Kit de développement logiciel (SDK) des applications Intune pour iOS inclut une bibliothèque statique, des fichiers de ressources, des en-têtes d’API, une liste de paramètres de débogage et un outil de configuration.</p>
+                                            <h3>Guide du kit SDK d’application Intune pour les développeurs iOS</h3>
+                                            <p>Le kit SDK d’application Intune pour iOS inclut une bibliothèque statique, des fichiers de ressources, des en-têtes d’API, une liste de paramètres de débogage et un outil de configuration.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -952,8 +964,8 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Guide du Kit de développement logiciel (SDK) d’applications Intune pour les développeurs Android</h3>
-                                            <p>Le SDK de l’application Intune pour Android est une bibliothèque Android standard sans dépendances externes.</p>
+                                            <h3>Guide du kit SDK d’application Intune pour les développeurs Android</h3>
+                                            <p>Le SDK d’application Intune pour Android est une bibliothèque Android standard sans dépendances externes.</p>
                                         </div>
                                     </div>
                                 </div>
