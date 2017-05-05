@@ -15,8 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 0b5586a06af7658c0c7a328ae1a824f88129039f
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ Lookout MTP autorise uniquement les utilisateurs d’un groupe Azure AD configur
 
 * E-mail : enterprisesupport@lookout.com
 * En vous connectant à la [console MTP](http://aad.lookout.com) et en accédant au module **Support**
-* En effectuant une demande de support sur le site https://enterprise.support.lookout.com/hc/en-us/requests
+* En effectuant une demande de support sur le site https://enterprise.support.lookout.com/hc/requests.
 
 ## <a name="unable-to-sign-in"></a>Connexion impossible
 L’erreur suivante se produit si l’administrateur général Azure AD n’a pas accepté l’installation initiale de Lookout.
@@ -55,7 +56,7 @@ Cette erreur peut se produire dans les scénarios suivants :
 
 ### <a name="device-reported-as-pending"></a>Appareil signalé comme **en attente**
 
-L’appareil s’affiche à l’état **en attente** si l’utilisateur final n’a pas ouvert l’application Lookout for Work ni appuyé sur le bouton **Activer**. Pour plus d’informations sur l’activation d’appareils avec l’application Lookout for Work, consultez [Vous êtes invité à installer Lookout for Work sur votre appareil Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) ou [Vous êtes invité à installer Lookout for Work sur votre appareil iOS](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios).
+L’appareil s’affiche à l’état **en attente** si l’utilisateur final n’a pas ouvert l’application Lookout for Work ni appuyé sur le bouton **Activer**. Pour plus d’informations sur l’activation d’appareils avec l’application Lookout for Work, consultez [Vous êtes invité à installer Lookout for Work sur votre appareil Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) ou [Vous êtes invité à installer Lookout for Work sur votre appareil iOS](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios).
 
 ## <a name="device-whos-active-but-has-no-device-id"></a>Appareil actif, mais ne possédant aucun ID d’appareil
 Dans la console Lookout MTP, l’utilisateur de l’appareil ne fait pas partie du groupe d’inscription si un périphérique actif ne comporte aucun ID d’appareil. Un appareil peut avoir cet état si son utilisateur été supprimé du groupe d’inscription ou si le groupe d’inscription a été supprimé.
@@ -83,14 +84,9 @@ Si le nouvel utilisateur est membre d’un groupe d’inscription Lookout MTP, l
 ## <a name="compliance-remediation-workflows"></a>Étapes de la correction de conformité
 - [Vous êtes invité à installer Lookout for Work sur votre appareil Android]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil iOS](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil iOS](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>Voir aussi
-[Configurer votre abonnement à Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[Configurer votre abonnement à Lookout MTP](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 
