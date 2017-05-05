@@ -9,9 +9,9 @@ ms.topic: hub-page
 title: Documentation de Microsoft Intune | Microsoft Docs
 description: "Apprenez à utiliser Microsoft Intune."
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 1f8b03315c6026a60ef25b1ee6946d4186c82b08
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: af6af39a041582bd93bac6aad551881be4cf0291
+ms.lasthandoff: 04/24/2017
 
 ---
 <div id="main" class="v2">
@@ -451,7 +451,7 @@ ms.lasthandoff: 04/14/2017
                     <a href="#manage-plan">Planifier un déploiement</a>
                     <ul id="manage-plan" class="cardsC">
                         <li>
-                            <a href="/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges">
+                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -461,8 +461,8 @@ ms.lasthandoff: 04/14/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Déterminer les objectifs et les défis</h3>
-                                            <p>Évaluez les objectifs et les défis à gérer lors du déploiement.</p>
+                                            <h3>Appareils et navigateurs pris en charge</h3>
+                                            <p>Plus d’informations sur les appareils et les navigateurs pris en charge par le service.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -476,12 +476,12 @@ ms.lasthandoff: 04/14/2017
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Identifier des scénarios d’utilisation</h3>
-                                            <p>Passez en revue quelques exemples d’utilisation lorsque vous avez identifié vos scénarios de déploiement. </p>
+                                            <h3>Guide de planification, de conception et d’implémentation du déploiement</h3>
+                                            <p>Développer un plan de déploiement, créer une conception, intégrer Intune et effectuer un déploiement de production.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -489,18 +489,18 @@ ms.lasthandoff: 04/14/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-4-develop-a-rollout-plan">
+                            <a href="/intune/plan-design/intune-mdm-migration-guide">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Développer un plan de déploiement</h3>
-                                            <p>Déterminez les groupes de l’organisation qui sont ciblés par votre déploiement Intune et le calendrier de déploiement pour chaque groupe.</p>
+                                            <h3>Guide de migration</h3>
+                                            <p>Obtenez tous les détails sur la migration à partir d’un fournisseur tiers de gestion des appareils mobiles vers Intune.</p>
                                         </div>
                                     </div>
                                 </div>
