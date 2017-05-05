@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 81761af5ab5aebe6abb44ff43a7df5a337d38fc7
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -27,11 +27,55 @@ Découvrez les mises à jour apportées à l’interface utilisateur des applica
 > [!Note]
 > Notez que les images ci-dessous sont en préversion. Le produit annoncé peut différer des versions présentées.
 
-## <a name="whats-coming-in-intune-app-ui"></a>Nouveautés dans l’interface utilisateur de l’application Intune
+## <a name="april-2017"></a>Avril 2017
 
-### <a name="april-2017"></a>Avril 2017
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Amélioration de l’expérience de connexion sur l’ensemble des applications du portail d’entreprise pour toutes les plates-formes<!--User Story 1132123-->
 
-#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nouvelles icônes pour Managed Browser et le portail d’entreprise <!--918433, 918431-->
+Nous améliorons l’expérience de connexion aux applications du portail d’entreprise Intune pour Android, iOS et Windows.  La nouvelle expérience utilisateur s’affiche automatiquement sur toutes les plates-formes utilisées pour l’application du portail d’entreprise lorsqu’Azure AD apporte cette modification. En outre, les utilisateurs peuvent désormais se connecter au portail d’entreprise à partir d’un autre appareil grâce à un code à usage unique automatiquement généré. Cette fonction se révèle particulièrement utile lorsque les utilisateurs doivent se connecter sans informations d’identification.  
+
+Vous trouverez ci-dessous des informations concernant l’expérience de connexion précédente, la nouvelle expérience de connexion avec informations d’identification, ainsi que la nouvelle expérience de connexion depuis un autre appareil.
+
+__Expérience de connexion précédente__
+
+![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Après avoir appuyé sur le bouton de connexion, l’utilisateur entre ses informations d’identification sur cette page (à savoir l’adresse e-mail et le mot de passe de l’utilisateur), qui indique également différents moyens de résoudre les problèmes de mot de passe.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Une fois le mot de passe saisi, l’application Portail d’entreprise se connecte et indique ce processus par une barre de chargement.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Nouvelle expérience de connexion__
+
+![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![L’utilisateur est invité à renseigner simplement son adresse e-mail, et non plus son adresse e-mail et son mot de passe sur le même écran.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![Une fois l’adresse e-mail validée, l’utilisateur est invité à saisir son mot de passe.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+__Nouvelle expérience de connexion lors d’une connexion à partir d’un autre appareil__
+
+![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Cliquez sur le lien __Se connecter à partir d’un autre appareil__.
+
+![L’utilisateur est invité à renseigner simplement son adresse e-mail, et non plus son adresse e-mail et son mot de passe sur le même écran. Vous trouverez sous le champ de messagerie un lien intitulé « Se connecter à partir d’un autre appareil ».](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+
+![Suivez les instructions fournies pour accéder à la page aka.ms/devicelogin avec un code d’accès unique à partir de votre ordinateur, puis utilisez le code pour vous connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Ouvrez un navigateur et accédez à [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![Une image du navigateur de l’utilisateur sur son ordinateur de travail plutôt sur son application Portail d’entreprise. La page « Connexion à l’appareil » invite l’utilisateur à saisir le code qu’il a reçu dans l’application Portail d’entreprise.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Entrez le code que vous avez reçu dans l’application Portail d’entreprise. Si vous sélectionnez __Continuer__, vous serez en mesure de vous authentifier à l’aide de n’importe quelle méthode prise en charge par votre entreprise, par exemple une carte à puce.
+
+![L’utilisateur a saisi son code unique dans le champ, et le site « Connexion à l’appareil » lui a demandé de confirmer que le portail d’entreprise Intune était l’application appropriée pour recevoir l’autorisation de se connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Une page de confirmation indiquant que l’utilisateur est maintenant connecté à l’application Portail d’entreprise sur son appareil et qu’il peut fermer cette page.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+L’application Portail d’entreprise commence la procédure de connexion.
+
+![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nouvelles icônes pour Managed Browser et le portail d’entreprise <!--918433, 918431-->
 
 Managed Browser reçoit des icônes mises à jour pour les versions iOS et Android de l’application. La nouvelle icône contient le badge Intune mis à jour, pour une meilleure cohérence avec d’autres applications Enterprise Mobility + Security (EM+S).
 
@@ -52,7 +96,7 @@ Managed Browser reçoit des icônes mises à jour pour les versions iOS et Andro
 
 Le portail d’entreprise reçoit également des icônes mises à jour pour les versions Android, iOS et Windows de l’application, afin d’améliorer la cohérence avec d’autres applications dans EM + S. Ces icônes seront publiées progressivement sur toutes les plateformes du mois d’avril jusqu’à fin mai.
 
-#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicateur de progression de connexion dans le portail d’entreprise Android <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicateur de progression de connexion dans le portail d’entreprise Android <!--953374-->
 
 Une mise à jour de l’application Portail d’entreprise Android affiche un indicateur de progression de connexion quand l’utilisateur lance l’application ou effectue une reprise. L’indicateur affiche successivement les nouveaux états, en commençant par « Connexion... », puis « Connexion en cours », puis « Vérification des exigences de sécurité... », avant d’autoriser l’utilisateur à accéder à l’application.
 
@@ -74,9 +118,25 @@ Une mise à jour de l’application Portail d’entreprise Android affiche un in
 </body>
 </html>
 
-## <a name="whats-been-announced-for-ui-updates-for-end-user-apps"></a>Nouveautés annoncées pour les mises à jour de l’interface utilisateur pour les applications de l’utilisateur final
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Amélioration de l’état d’installation de l’application pour l’application Portail d’entreprise Windows 10 <!--676495-->
+L’application Portail d’entreprise Windows 10 fournit désormais une barre de progression d’installation pour toutes les installations d’applications modernes démarrées à partir du portail d’entreprise.
 
-### <a name="february-2017"></a>Février 2017
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+## <a name="february-2017"></a>Février 2017
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Nouvelle expérience utilisateur dans l’application Portail d’entreprise pour Android <!--621622, announced 1702-->
 À compter de mars, l’application Portail d’entreprise pour Android suit les [directives de conception matérielle](https://material.io/guidelines/material-design/introduction.html) pour créer une apparence plus moderne. Cette expérience utilisateur améliorée inclut les éléments suivants :
@@ -113,7 +173,7 @@ Une mise à jour de l’application Portail d’entreprise Android affiche un in
 
 ### <a name="see-also"></a>Voir aussi
 * [Blog Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Feuille de route de la plateforme cloud](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Feuille de route de la plateforme cloud](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Nouveautés de la préversion Azure](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [Archive des nouveautés](whats-new-archive.md)
 

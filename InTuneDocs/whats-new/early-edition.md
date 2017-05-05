@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: d7f25657fc7cfb9298809f76f198810718e58c39
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -37,7 +37,7 @@ Cette page est mise à jour périodiquement. Consultez-la régulièrement pour s
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Amélioration de l’état d’installation de l’application pour l’application Portail d’entreprise Windows 10 <!--676495-->
 
-L’application Portail d’entreprise Windows 10 fournit désormais une barre de progression d’installation pour toutes les installations d’applications modernes démarrées à partir du portail d’entreprise.
+L’application Portail d’entreprise Windows 10 fournit désormais une barre de progression d’installation pour toutes les installations d’applications modernes démarrées à partir du portail d’entreprise. Vous pouvez voir les nouveaux messages d’état de l’application Portail d’entreprise pour Windows 10 sur la [page Nouveautés de l’interface utilisateur des applications Intune](whats-new-in-intune-app-ui.md).
 
 ### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>Amélioration de la messagerie d’état dans l’application Portail d’entreprise pour iOS <!--744866-->
 
@@ -59,7 +59,7 @@ Les utilisateurs n’ont plus besoin de se connecter à l’application Outlook 
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicateur de progression de connexion dans le portail d’entreprise Android <!--953374-->
 
-Une mise à jour de l’application Portail d’entreprise Android affiche un indicateur de progression de connexion quand l’utilisateur lance l’application ou effectue une reprise. L’indicateur affiche successivement les nouveaux états, en commençant par « Connexion... », puis « Connexion en cours », puis « Vérification des exigences de sécurité... », avant d’autoriser l’utilisateur à accéder à l’application. Vous pouvez voir les nouveaux écrans de l’application Portail d’entreprise pour Android sur la [page Nouveautés de l’interface utilisateur des applications Intune](whats-new-in-intune-app-ui.md). 
+Une mise à jour de l’application Portail d’entreprise Android affiche un indicateur de progression de connexion quand l’utilisateur lance l’application ou effectue une reprise. L’indicateur affiche successivement les nouveaux états, en commençant par « Connexion... », puis « Connexion en cours », puis « Vérification des exigences de sécurité... », avant d’autoriser l’utilisateur à accéder à l’application. Vous pouvez voir les nouveaux écrans de l’application Portail d’entreprise pour Android sur la [page Nouveautés de l’interface utilisateur des applications Intune](whats-new-in-intune-app-ui.md).
 
 
 ## <a name="notices"></a>Remarques
@@ -186,7 +186,7 @@ Nous avons ajouté la prise en charge de paramètres supplémentaires de restric
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Prise en charge multi-utilisateur pour Windows 10 Creators Update <!-- 822547 -->
 
-Nous avons ajouté la prise en charge de la gestion des utilisateurs multiples pour les appareils qui exécutent Windows 10 Creators Update et sont joints à un domaine Azure Active Directory. Cela signifie que quand différents utilisateurs ouvrent une session sur l’appareil avec leurs informations d’identification AAD, ils reçoivent les applications et les stratégies qui ont été affectées à leur nom d’utilisateur.
+Nous avons ajouté la prise en charge de la gestion des utilisateurs multiples pour les appareils qui exécutent Windows 10 Creators Update et sont joints à un domaine Azure Active Directory. Cela signifie que quand différents utilisateurs standard ouvrent une session sur l’appareil avec leurs informations d’identification Azure AD, ils reçoivent les applications et les stratégies qui ont été affectées à leur nom d’utilisateur. Les utilisateurs ne peuvent actuellement pas utiliser le portail d’entreprise pour les scénarios de libre-service tels que l’installation d’applications.
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Fresh Start pour les PC Windows 10<!-- 1004830 -->
 
@@ -203,7 +203,7 @@ Vous pouvez désormais créer une stratégie de mise à niveau d’édition pour
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Inscription en bloc des appareils Windows 10 <!-- 747607 -->
 
-Vous pouvez joindre un grand nombre d’appareils Windows 10 à Azure Active Directory et Intune avec les outils d’automatisation informatique. Pour activer l’inscription MDM automatique pour votre locataire Azure AD, créez un package de mise en service qui joint l’appareil à votre locataire Azure AD à l’aide du Concepteur de configuration Windows. Appliquez ce package aux appareils d’entreprise que vous souhaitez inscrire et gérer en bloc.  Une fois le package appliqué, les appareils se connectent à Azure AD et s’inscrivent dans Intune. Ils sont alors prêts pour que vos utilisateurs Azure AD s’y connectent.
+Vous pouvez joindre un grand nombre d’appareils qui exécutent la mise à jour Windows 10 Creators pour Azure Active Directory et Intune à l’aide du Concepteur de configuration Windows (WCD). Pour activer l’inscription MDM automatique pour votre client Azure AD, créez un package de configuration qui joint les périphériques à votre client Azure AD à l’aide du Concepteur de configuration Windows, puis appliquez le package aux appareils d’entreprise que vous souhaitez inscrire et gérer en bloc. Une fois le package appliqué à vos appareils, ceux-ci se connectent à Azure AD et s’inscrivent dans Intune. Ils sont alors prêts pour que vos utilisateurs Azure AD s’y connectent.  Les utilisateurs d’Azure AD agissent sur ces appareils en tant qu’utilisateurs standard ; ils reçoivent les stratégies qui leur sont affectées ainsi que les applications dont ils ont besoin. Les scénarios de libre-service et de portail d’entreprise ne sont pas pris en charge pour le moment.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>Nouveaux paramètres GAM pour les codes PIN et les emplacements de stockage géré <!-- 58112, 736644 -->
 
