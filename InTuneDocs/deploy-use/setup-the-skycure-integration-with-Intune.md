@@ -15,14 +15,14 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 6ff56f736c289dbc9a8340ad76e044363acbfea5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 18afa2b84c90e77280daf7ed9b1b8357365f7380
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="setup-the-skycure-integration-with-intune"></a>Configuration de l’intégration de Skycure avec Intune
+# <a name="set-up-the-skycure-integration-with-intune"></a>Configuration de l’intégration de Skycure avec Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -54,7 +54,7 @@ Skycure prend en charge deux modes d’intégration avec Intune :
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>Pour configurer l’intégration en lecture seule entre Intune et Skycure
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Les informations d’identification de l’administrateur figurent dans un message électronique qui doit appartenir à un utilisateur valide dans Azure Active Directory Skycure, sinon la connexion échouera. Skycure utilise Azure Active Directory pour authentifier ses administrateurs à l’aide d’une authentification unique Single Sign On (SSO).
 
 1.  Accédez à la [console de gestion Skycure](https://aad.skycure.com).
@@ -75,7 +75,7 @@ Skycure prend en charge deux modes d’intégration avec Intune :
 
     ![Écran de finalisation de l’application iOS](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > Répétez ce processus pour les applications **Skycure Android** et les applications de **gestion**.
 
 ### <a name="add-an-azure-ad-security-group-into-skycure"></a>Ajouter un groupe de sécurité Azure AD dans Skycure

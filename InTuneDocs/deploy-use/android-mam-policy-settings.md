@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 9f1d00d5773aa604ec039d6f64bb901a795468ba
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: f6e3783e2d30d26424f3876d8bd22e3d2c8ef630
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 9f1d00d5773aa604ec039d6f64bb901a795468ba
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez [configurer](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) les paramètres de la stratégie de protection des applications décrits dans cette rubrique dans le panneau **Paramètres** du portail Azure.
-Il existe deux catégories de paramètres de stratégie : réadressage des données et accès. Dans cette rubrique, le terme « _**applications gérées par une stratégie**_ » fait référence aux applications qui sont configurées avec des stratégies de protection des applications.
+Il existe deux catégories de paramètres de stratégie : réadressage des données et accès. Dans cette rubrique, le terme _**applications gérées par une stratégie**_ fait référence aux applications qui sont configurées avec des stratégies de protection des applications.
 
 ##  <a name="data-relocation-settings"></a>Paramètres de réadressage des données
 
@@ -35,13 +36,12 @@ Il existe deux catégories de paramètres de stratégie : réadressage des donn
 | **Interdire les sauvegardes Android** | Choisissez **Oui** pour empêcher cette application de sauvegarder les données professionnelles ou scolaires dans le [service de sauvegarde Android](https://developer.android.com/google/backup/index.html) Choisissez **Non** pour permettre à cette application de sauvegarder les données professionnelles ou scolaires.| Oui |
 | **Autoriser l'application à transférer des données vers d'autres applications** | Spécifiez les applications qui peuvent recevoir des données à partir de cette application : <ul><li> **Applications gérées par la stratégie** : autoriser le transfert uniquement vers d’autres applications gérées par la stratégie.</li> <li>**Toutes les applications** : autoriser le transfert vers n’importe quelle application. </li> <li>**Aucune** : interdire le transfert de données vers n’importe quelle application, y compris d’autres applications gérées par la stratégie.</li></ul> <p>Intune peut toutefois autoriser le transfert de données vers des applications et des services exemptés. Pour obtenir la liste complète de ces applications et services, consultez [Exemptions au transfert de données](#Data-transfer-exemptions).| Toutes les applications |
 | **Autoriser l'application à recevoir des données d'autres applications** | Spécifiez quelles applications peuvent transférer des données vers cette application : <ul><li>**Applications gérées par la stratégie** : autoriser le transfert uniquement à partir d’autres applications gérées par la stratégie.</li><li>**Toutes les applications** : autoriser le transfert de données à partir de n’importe quelle application.</li><li>**Aucune** : interdire le transfert de données depuis n’importe quelle application, y compris d’autres applications gérées par la stratégie. </li></ul> <p>Intune peut toutefois autoriser le transfert de données à partir d’applications et de services exemptés. Pour obtenir la liste complète de ces applications et services, consultez [Exemptions au transfert de données](#Data-transfer-exemptions). | Toutes les applications |
-| **Empêcher « Enregistrer sous »** | Sélectionnez **Oui** pour interdire l’utilisation de l’option Enregistrer sous dans cette application. Choisissez **Non** pour autoriser l’utilisation de l’option Enregistrer sous. | Non |
+| **Empêcher « Enregistrer sous »** | Sélectionnez **Oui** pour interdire l’utilisation de l’option Enregistrer sous dans cette application. Choisissez **Non** pour autoriser l’utilisation de l’option Enregistrer sous. <p>**Sélectionnez dans quels services de stockage les données d'entreprise peuvent être enregistrées** <br>Les utilisateurs peuvent enregistrer dans les services sélectionnés (OneDrive Entreprise, SharePoint et le stockage local). Tous les autres services seront bloqués.</p> | Non |
 | **Restreindre les opérations couper, copier et coller avec d'autres applications** | Spécifiez quand autoriser les actions couper, copier et coller avec cette application. Choisissez parmi : <ul><li>**Bloqué** : ne pas autoriser les actions couper, copier et coller entre cette application et une autre application.</li><li>**Applications gérées par la stratégie** : autoriser seulement les actions couper, copier et coller entre cette application et les autres applications gérées par la stratégie.</li><li>**Applications gérées par la stratégie avec Coller dans** : autoriser les actions couper et copier entre cette application et les autres applications gérées par la stratégie. Autoriser le collage dans cette application de données à partir de n'importe quelle application.</li><li>**N’importe quelle application** : aucune restriction pour les actions couper, copier et coller vers et depuis cette application. | N’importe quelle application |
 |**Limiter le contenu web à afficher dans Managed Browser** | Choisissez **Oui** pour appliquer des liens web dans l’application à ouvrir dans l’application Managed Browser. <br><br> Pour les appareils non inscrits dans Intune, les liens web contenus dans les applications gérées par la stratégie peuvent s’ouvrir uniquement dans l’application Managed Browser. <br><br> Si vous utilisez Intune pour gérer vos appareils, consultez [Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune](manage-internet-access-using-managed-browser-policies.md). | Non |
 | **Chiffrer les données de l'application** | Choisissez **Oui** pour activer le chiffrement des données professionnels ou scolaires dans cette application. Intune utilise un schéma de chiffrement AES 128 bits OpenSSL ainsi que le système Android Keystore pour chiffrer en toute sécurité les données de l’application. Les données sont chiffrées de façon synchrone durant les tâches d’E/S de fichier. Le contenu figurant sur le stockage de l’appareil est toujours chiffré. <br><br> La méthode de chiffrement n'est **pas** certifiée FIPS 140-2.  | Oui |
 | **Désactiver la synchronisation des contacts** | Choisissez **Oui** pour empêcher l’application d'enregistrer les données vers l’application Contacts native sur l'appareil. Si vous choisissez **Non**, l’application peut enregistrer des données vers l’application Contacts native sur l'appareil. <br><br>Lorsque vous effectuez une réinitialisation sélective pour supprimer des données professionnelles ou scolaires à partir de l’application, les contacts directement synchronisés à partir de l’application vers l'application Contacts native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Ceci s’applique uniquement à l’application Microsoft Outlook. | Non |
 | **Désactiver l’impression** | Choisissez **Oui** pour empêcher l’application d'imprimer des données professionnelles ou scolaires. | Non |
-
 
   >[!NOTE]
   >La méthode de chiffrement du paramètre **Chiffrer les données de l’application** n'est **pas** certifiée FIPS 140-2.
@@ -62,7 +62,7 @@ Il existe deux catégories de paramètres de stratégie : réadressage des donn
   | com.android.documentsui | Sélecteur de documents Android|
   | com.google.android.webview | [WebView](https://developer.android.com/reference/android/webkit/WebView.html), nécessaire pour de nombreuses applications, notamment Outlook. |
   | com.android.webview |[WebView](https://developer.android.com/reference/android/webkit/WebView.html), nécessaire pour de nombreuses applications, notamment Outlook.|
-  | com.google.android.tts | Synthèse vocale Google |
+  | com.google.android.tts | Synthèse vocale de Google |
   | com.android.providers.settings | Paramètres système Android |
   | com.azure.authenticator | Application Azure Authenticator, nécessaire pour l’authentification dans de nombreux scénarios. |
   | com.microsoft.windowsintune.companyportal | Portail d'entreprise Intune|
@@ -89,9 +89,5 @@ Il existe deux catégories de paramètres de stratégie : réadressage des donn
 | **Revérifier les exigences d'accès après (minutes)** | Configurez les paramètres suivants : <ul><li>**Délai** : il s’agit du nombre de minutes qui s’écoulent avant que les conditions d’accès (définies plus haut dans la stratégie) ne soient revérifiées. Par exemple, un administrateur active un code confidentiel dans la stratégie, un utilisateur ouvre une application GAM et doit entrer un code confidentiel. Quand ce paramètre est employé, l’utilisateur n’a pas à entrer un code confidentiel pour aucune application GAM pendant encore **30 minutes** (valeur par défaut).</li><li>**Période de grâce hors connexion** : il s’agit du nombre de minutes pendant lesquelles les applications GAM peuvent être exécutées hors connexion ; spécifiez la durée (en minutes) au bout de laquelle les conditions d’accès à l’application sont revérifiées. Valeur par défaut = **720** minutes (12 heures). Après l’expiration de cette période, l’application nécessite une authentification utilisateur auprès d’AAD pour poursuivre son exécution.</li></ul>| Délai d'expiration : 30 <br><br> Hors connexion : 720 |
 | **Intervalle en mode hors connexion avant la réinitialisation des données d’application (en jours)** | Après ce nombre de jours (défini par l’administrateur) d’exécution en mode hors connexion, l’application elle-même procède à une réinitialisation sélective. Cette réinitialisation sélective est identique à celle qui peut être lancée par l’administrateur dans le flux de travail de réinitialisation GAM. <br><br> | 90 jours |
 | **Bloquer la capture d'écran et l'Assistant Android (Android 6.0 et ultérieur)** | Sélectionnez **Oui** pour bloquer les fonctionnalités de capture d’écran et d’**Assistant Android** de l’appareil lors de l’utilisation de cette application. Si vous choisissez **Oui**, l’image d’aperçu du sélecteur d’application sera floue lors de l’utilisation de cette application avec un compte professionnel ou scolaire. | Non |
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+| **Désactiver le code PIN de l’application quand le code PIN de l’appareil est géré** | Choisissez **Oui** pour désactiver le code PIN de l’application lorsqu’un verrouillage d’appareil est détecté sur un appareil inscrit. | Non |
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Utilisez les informations de cette rubrique pour créer et gérer des rapports M
 ## <a name="using-reports"></a>Utilisation des rapports
 Les rapports Intune fournissent des informations sur les logiciels, le matériel et les licences logicielles de votre organisation. Ces rapports peuvent vous aider à confirmer les besoins actuels et à prévoir les futures dépenses. L'espace de travail **Rapports** vous donne les outils nécessaires pour créer et gérer les rapports. 
 
-### <a name="report-types"></a>Types de rapport
+## <a name="report-types"></a>Types de rapport
 
 |Type de rapport|Description|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Les rapports Intune fournissent des informations sur les logiciels, le matériel
 |**Rapports d’attestation d’intégrité**|Affichez l’état des appareils mobiles.|
 |**Rapport matériel Mac OS X**|Affiche les détails matériels de tous les appareils Mac OS X inscrits dans les groupes que vous sélectionnez. Pour plus d’informations sur l’inventaire matériel collecté à partir de ces appareils, consultez [Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Rapport logiciel Mac OS X**|Affiche les logiciels installés sur tous les appareils Mac OS X dans les groupes que vous avez sélectionnés. Le rapport répertorie le nom du logiciel (comme ID de groupe), le nom de la version abrégée (ou nom convivial), la version et le nombre d’appareils où le logiciel est installé.|
+|**Rapports de Protection des informations Windows**|Affiche des informations sur les opérations de Protection des informations Windows (WIP) sur les appareils que vous gérez.|
+|**Rapports d’attestation d’intégrité**|Affiche les informations signalées par le service d’Attestation d’intégrité Windows pour les appareils que vous gérez.|
 
-#### <a name="to-create-a-report"></a>Pour créer un rapport
+## <a name="to-create-a-report"></a>Pour créer un rapport
 
 1.  Dans la console d’administration Intune, choisissez **Rapports**. Choisissez ensuite le type de rapport à générer, comme décrit dans le tableau précédent.
 
