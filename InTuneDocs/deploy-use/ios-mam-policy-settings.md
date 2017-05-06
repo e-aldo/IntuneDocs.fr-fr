@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ Il existe deux catégories de paramètres de stratégie : réadressage des donn
 | **Chiffrer les données de l'application** | Pour les applications gérés par la stratégie, les données sont chiffrées au repos à l'aide du schéma de chiffrement au niveau de l'appareil fourni par iOS. Quand un code confidentiel est nécessaire, les données sont chiffrées selon les paramètres de la stratégie de protection des applications. <br><br> Accédez à la documentation officielle Apple [ici](https://support.apple.com/HT202739) pour savoir quels modules de chiffrement iOS sont certifiés FIPS 140-2 ou en attente de la certification FIPS 140-2. <br><br> Spécifiez quand les données professionnelles ou scolaires de cette application sont chiffrées. Choisissez parmi : <ul><li>**Quand l’appareil est verrouillé** : toutes les données d’application associées à cette stratégie sont chiffrées pendant que l’appareil est verrouillé.</li><li>**Quand l'appareil est verrouillé et que des fichiers sont ouverts** : toutes les données d’application associées à cette stratégie sont chiffrées pendant que l’appareil est verrouillé, à l’exception des données figurant dans les fichiers qui sont ouverts dans l’application.</li><li>**Après le redémarrage de l’appareil** : toutes les données d’application associées à cette stratégie sont chiffrées quand l’appareil est redémarré, jusqu’à ce que l’appareil soit déverrouillé pour la première fois.</li><li>**Utiliser les paramètres de l’appareil** : les données d’application sont chiffrées conformément aux paramètres par défaut de l’appareil. Quand vous activez ce paramètre, l’utilisateur doit configurer et utiliser un code confidentiel pour accéder à son appareil.  S’il n’existe pas de code confidentiel, les applications ne s’ouvrent pas et l’utilisateur est invité à définir un code confidentiel par le message « Votre entreprise exige que vous activiez d’abord un code confidentiel sur l’appareil pour accéder à cette application. ». </li></ul> | Quand l’appareil est verrouillé |
 | **Désactiver la synchronisation des contacts** | Choisissez **Oui** pour empêcher l’application d'enregistrer les données vers l’application Contacts native sur l'appareil. Si vous choisissez **Non**, l’application peut enregistrer des données vers l’application Contacts native sur l'appareil. <br><br>Lorsque vous effectuez une réinitialisation sélective pour supprimer des données professionnelles ou scolaires à partir de l’application, les contacts directement synchronisés à partir de l’application vers l'application Contacts native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Ceci s’applique uniquement à l’application Microsoft Outlook. | Non |
 | **Désactiver l’impression** | Choisissez **Oui** pour empêcher l’application d'imprimer des données professionnelles ou scolaires. | Non |
-
+| **Sélectionnez dans quels services de stockage les données d'entreprise peuvent être enregistrées** | Les utilisateurs peuvent enregistrer dans les services sélectionnés (OneDrive Entreprise, SharePoint et le stockage local). Tous les autres services seront bloqués. | OneDrive Entreprise et SharePoint |
 
 > [!NOTE]
 > Aucun des paramètres de réadressage des données ne contrôle la fonctionnalité Open In d'Apple sur les appareils iOS. Pour gérer la fonctionnalité « Open In », consultez [Gérer les transferts de données entre applications iOS avec Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
@@ -72,6 +72,7 @@ La stratégie de protection des applications Intune peut autoriser le transfert 
 | **Bloquer l’exécution des applications gérées sur les appareils jailbreakés ou rootés** |  Choisissez **Oui** pour empêcher l'exécution de cette application sur les appareils jailbreakés ou rootés. L’utilisateur peut encore utiliser cette application pour des tâches personnelles, mais il doit utiliser un autre appareil pour accéder aux données professionnelles ou scolaires dans cette application. | Oui |
 | **Revérifier les exigences d'accès après (minutes)** | Configurez les paramètres suivants : <ul><li>**Délai** : il s’agit du nombre de minutes qui s’écoulent avant que les conditions d’accès (définies plus haut dans la stratégie) ne soient revérifiées. Par exemple, un administrateur active un code confidentiel dans la stratégie, un utilisateur ouvre une application GAM et doit entrer un code confidentiel. Quand ce paramètre est employé, l’utilisateur n’a pas à entrer un code confidentiel pour aucune application GAM pendant encore **30 minutes** (valeur par défaut).</li><li>**Période de grâce hors connexion** : il s’agit du nombre de minutes pendant lesquelles les applications GAM peuvent être exécutées hors connexion ; spécifiez la durée (en minutes) au bout de laquelle les conditions d’accès à l’application sont revérifiées. Valeur par défaut = **720** minutes (12 heures). Après l’expiration de cette période, l’application nécessite une authentification utilisateur auprès d’AAD pour poursuivre son exécution.</li></ul>| Délai d'expiration : 30 <br><br> Hors connexion : 720 |
 | **Intervalle en mode hors connexion avant la réinitialisation des données d’application (en jours)** | Après ce nombre de jours (défini par l’administrateur) d’exécution en mode hors connexion, l’application elle-même procède à une réinitialisation sélective. Cette réinitialisation sélective est identique à celle qui peut être lancée par l’administrateur dans le flux de travail de réinitialisation GAM. <br><br> | 90 jours |
+| **Désactiver le code PIN de l’application quand le code PIN de l’appareil est géré** | Choisissez **Oui** pour désactiver le code PIN de l’application lorsqu’un verrouillage d’appareil est détecté sur un appareil inscrit. | Non |
 
 ##  <a name="add-ins-for-outlook-app"></a>Compléments d’application Outlook
 

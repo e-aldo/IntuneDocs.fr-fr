@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: a2597a43e48d8cdde6c29070986528dcba473d8e
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: c28ba63136c1037c8c8191e9a7f46fa9a4823b4e
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -56,7 +56,7 @@ Dans le cadre de la configuration de la défense contre les menaces mobiles Skyc
 
     d.  **Élevé** : cette option est la moins sécurisée. Cela active tous les niveaux de menace et utilise la défense contre les menaces mobiles Skycure uniquement à des fins de création de rapport.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Si vous créez des stratégies d’accès conditionnel pour Office 365 et d’autres services, l’évaluation de la conformité est effectuée, ce qui signifie que l’accès à ces services est bloqué pour les appareils non conformes tant que la menace n’est pas résolue.
 
 ## <a name="span-idmonitor-device-threats-classanchorspan-idnext-steps-classanchorspan-idtoc477360344-classanchorspanspanspannext-steps"></a><span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>Étapes suivantes

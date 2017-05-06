@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 **Quels sont les avantages de la protection des applications MAM ?** La MAM protège les données d’une organisation au sein d’une application. Avec la gestion des applications mobiles MAM sans inscription, une application professionnelle ou scolaire qui contient des données sensibles peuvent être gérées sur pratiquement n’importe quel appareil, notamment les appareils personnels dans les scénarios BYOD (apportez votre propre appareil). Plusieurs applications de productivité, telles que les applications Microsoft Office, peuvent être gérées par la MAM Intune. Consultez la liste officielle des [applications compatibles avec Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) accessibles au public.
 
 **Quelles configurations d’appareil la MAM prend-elle en charge ?** La MAM Intune prend en charge deux configurations :
-  1. **MDM + MAM Intune** : c’est la première configuration prise en charge par la MAM à son premier lancement. Les administrateurs informatiques peuvent uniquement gérer des applications à l’aide de la MAM et des stratégies de protection des applications sur des appareils inscrits à la gestion des périphériques mobiles (MDM). Pour gérer des applications à l’aide MDM + MAM, les clients doivent utiliser la console Intune autonome à l’adresse http://manage.microsoft.com.
+  1. **MDM + MAM Intune** : c’est la première configuration prise en charge par la MAM à son premier lancement. Les administrateurs informatiques peuvent uniquement gérer des applications à l’aide de la MAM et des stratégies de protection des applications sur des appareils inscrits à la gestion des périphériques mobiles (MDM). Pour gérer des applications à l’aide MDM + MAM, les clients doivent utiliser la console Intune autonome à l’adresse https://manage.microsoft.com.
 
   2. **MAM sans inscription d’appareils** : la MAM sans inscription d’appareils (ou MAM-WE en anglais), permet aux administrateurs informatiques de gérer des applications à l’aide de la MAM et de stratégies de protection des applications sur les appareils qui ne sont ne pas inscrits à la MDM Intune. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits avec des fournisseurs EMM tiers. Pour gérer des applications à l’aide de la MAMsans inscription d’appareils, les clients doivent utiliser la console Intune dans le portail Azure à l’adresse http://portal.azure.com.
 
@@ -133,7 +133,7 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 ## <a name="app-experience-on-ios"></a>Expérience d'application sur iOS
 
-**Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
+ **Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
 
 ### <a name="see-also"></a>Voir aussi
 - [Paramètres de stratégie de gestion des applications mobiles Android dans Microsoft Intune](../deploy-use/android-mam-policy-settings.md)

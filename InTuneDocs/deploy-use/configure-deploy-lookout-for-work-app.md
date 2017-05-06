@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 44429b8694d15006f77a9eb5206293a6bcc8090b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -61,7 +61,7 @@ Cet article explique comment configurer et déployer l’application Lookout for
 
 3. Activez l’authentification Azure Active Directory pour les utilisateurs iOS de la manière suivante :
   1.  Connectez-vous au [portail de gestion Azure Active Directory](https://manage.windowsazure.com) et accédez à la page d’application.
-  2.  Ajoutez l’**application iOS Lookout for Work** comme **application cliente native**.
+  2.  Ajoutez l’**application iOS Lookout for Work**  comme **application cliente native**.
   ![Capture d’écran de la boîte de dialogue Ajouter des applications présentant l’option Application cliente native](../media/mtp/aad-add-app.png)
   3. Remplacez **com.lookout.enterprise.nom_de_votre_entreprise** par l’ID d’ensemble client que vous avez sélectionné quand vous avez signé le package IPA.
   4.  Ajouter l’URI de redirection : **&lt;companyportal://code/ >** suivi d’une version codée URL de votre URI de redirection d’origine.
@@ -87,12 +87,11 @@ Cet article explique comment configurer et déployer l’application Lookout for
   Choisissez l’option **Installation requise** pour exiger que l’application Lookout soit installée sur l’appareil de l’utilisateur.
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Que se passe-t-il quand l’application déployée est ouverte sur l’appareil ?
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Quand l’utilisateur ouvre l’application Lookout for Work sur l’appareil, il est invité à activer l’application et à choisir l’option Se connecter avec Azure Active Directory. Une procédure pas à pas pour l’utilisateur final est décrite dans les rubriques suivantes :
 
-Quand l’utilisateur ouvre l’application Lookout for Work sur l’appareil, il est invité à activer l’application et à choisir l’option Se connecter avec Azure Active Directory. Une procédure pas à pas pour l’utilisateur final est décrite dans les rubriques suivantes :
+* [Vous êtes invité à installer Lookout for Work sur votre appareil Android](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [Vous êtes invité à installer Lookout for Work sur votre appareil Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-* [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil Android](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer une stratégie de conformité des appareils Lookout dans Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

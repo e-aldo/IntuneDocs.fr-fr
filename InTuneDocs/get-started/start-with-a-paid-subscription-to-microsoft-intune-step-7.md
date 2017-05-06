@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 3794981387e73176152c212854a97b4333023f5d
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -34,7 +35,7 @@ Le Portail d’entreprise Intune permet aux utilisateurs d’accéder aux donné
 -   **L’application Portail d’entreprise** : disponible sur les appareils que vous gérez avec Intune. En savoir plus sur les applications Portail d’entreprise pour [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) et [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **Le site web du portail d’entreprise** : site web permettant aux utilisateurs finaux d’effectuer la plupart des tâches à partir de l’application Portail d’entreprise. L’URL du portail d’entreprise Intune est [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Pour en savoir plus sur ce site web, consultez [Utiliser le site web du portail d’entreprise Intune](/Intune/EndUser/using-the-intune-company-portal-website).
+- **Le site web du portail d’entreprise** : site web permettant aux utilisateurs finaux d’effectuer la plupart des tâches à partir de l’application Portail d’entreprise. L’URL du portail d’entreprise Intune est [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Pour en savoir plus sur ce site web, consultez [Utiliser le site web du portail d’entreprise Intune](/Intune/EndUser/using-the-intune-company-portal-website).
 
 > [!TIP]
 > Quand vous personnalisez le Portail d’entreprise, les configurations s’appliquent au site web du Portail d’entreprise et aux applications du Portail d’entreprise.
@@ -89,9 +90,4 @@ Après avoir enregistré vos modifications, vous pouvez utiliser les liens propo
 >[!div class="step-by-step"]
 
 >[&larr;**Créer des applications et des stratégies**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)[       **Inscrire des appareils**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

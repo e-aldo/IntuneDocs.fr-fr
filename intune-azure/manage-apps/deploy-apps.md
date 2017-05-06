@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -75,9 +75,9 @@ Vous devez apporter des modifications aux groupes dans le [Portail Azure](https:
 ## <a name="how-to-assign-an-app"></a>Comment affecter une application
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
-1. Dans la charge de travail **Gérer les applications**, choisissez **Gérer** > **Applications**.
+2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
+1. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
 2. Dans la liste du panneau d’applications, cliquez sur l’application que vous souhaitez affecter.
 3. Dans le panneau <*Nom de l’application*> - **Vue d’ensemble**, choisissez **Gérer** > **Affectations**.
 4. Choisissez **Sélectionner des groupes** puis, dans le panneau **Sélectionner des groupes**, sélectionnez les groupes Azure AD auxquels vous souhaitez affecter l’application.

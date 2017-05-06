@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Vous pouvez surveiller l’état de conformité à trois endroits différents :
 
 1. Connectez-vous au portail Azure.
 2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
-4. Dans la charge de travail **Gérer les applications**, choisissez **Surveiller** > **État de l’utilisateur de la protection des applications** pour afficher la vue résumée :
+3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
+4. Dans la charge de travail **Applications mobiles**, choisissez **Surveiller** > **État de l’utilisateur de la protection des applications** pour afficher la vue résumée :
 
 ![Vignette Résumé sur le panneau Gestion des applications mobiles Intune](../media/app-protection-user-status-summary.png)
 
@@ -126,20 +127,15 @@ Suivez ces étapes pour générer le rapport de protection des applications :
 
 1. Dans le panneau Gestion des applications mobiles Intune, choisissez le rapport de protection des applications.
 
-    ![Capture d’écran&6;](../media/app-protection-report-csv-2.png)
+    ![Capture d’écran 6](../media/app-protection-report-csv-2.png)
 
 2. Choisissez Oui pour enregistrer votre rapport, puis cliquez sur Enregistrer sous et sélectionnez le dossier dans lequel vous souhaitez enregistrer le rapport.
 
-    ![Capture d’écran&7;](../media/app-protection-report-csv-1.png)
+    ![Capture d’écran 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Voir aussi
 [Gérer les transferts de données entre applications iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](app-protection-enabled-android-apps.md)
 * [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

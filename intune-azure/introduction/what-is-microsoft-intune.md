@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92e07a49205ffaf287fc3aa2da6a6376b75fda4f
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -80,20 +80,26 @@ Cette section contient des informations sur les [nouveautés](/intune-azure/intr
 Informations pour vous aider à [planifier et concevoir](/intune-azure/plan-and-design/get-started) votre environnement Intune.
 ### <a name="device-enrollment"></a>Inscription de périphériques
 [Apprenez à configurer la gestion de vos appareils par Intune](/intune-azure/enroll-devices/what-is).
-### <a name="devices"></a>Périphériques
-[Découvrez les appareils que vous gérez avec un inventaire et des rapports](/intune-azure/manage-devices/what-is).
-### <a name="manage-users-and-groups"></a>Gérer les utilisateurs et les groupes
-[Découvrez-en davantage sur les utilisateurs des appareils que vous gérez et triez les ressources en les regroupant en groupes](/intune-azure/manage-users/what-is).
-### <a name="manage-apps"></a>Gérer des applications
-[Apprenez à publier, gérer, configurer et protéger les applications](/intune-azure/manage-apps/what-is-app-management).
-### <a name="device-configuration"></a>Configuration des appareils
-[Apprenez-en davantage sur les profils que vous pouvez utiliser pour configurer les paramètres et fonctionnalités sur les appareils que vous gérez](/intune-azure/configure-devices/what-are-device-profiles).
 ### <a name="device-compliance"></a>Conformité de l’appareil
 [Définissez un niveau de conformité pour vos appareils, puis créez un rapport sur tous les appareils qui ne sont pas conformes](/intune-azure/set-device-compliance/what-is-device-compliance).
+### <a name="device-configuration"></a>Configuration des appareils
+[Apprenez-en davantage sur les profils que vous pouvez utiliser pour configurer les paramètres et fonctionnalités sur les appareils que vous gérez](/intune-azure/configure-devices/what-are-device-profiles).
+### <a name="devices"></a>Appareils
+[Découvrez les appareils que vous gérez avec un inventaire et des rapports](/intune-azure/manage-devices/what-is).
+### <a name="mobile-apps"></a>Applications mobiles
+[Apprenez à publier, gérer, configurer et protéger les applications](/intune-azure/manage-apps/what-is-app-management).
 ### <a name="conditional-access"></a>Accès conditionnel
 [Restreignez l’accès aux services Exchange en fonction des conditions que vous spécifiez](/intune-azure/conditional-access/what-is-conditional-access).
+### <a name="on-premises-access"></a>Accès local
+[Configurer l’accès à Exchange ActiveSync et Exchange sur site](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+### <a name="users"></a>Utilisateurs
+[Découvrez-en davantage sur les utilisateurs des appareils que vous gérez et triez les ressources en les regroupant en groupes](/intune-azure/manage-users/what-is).
+### <a name="groups"></a>Groupes
+[Découvrez comment vous pouvez utiliser des groupes Active Directory Azure avec Intune](/intune-azure/manage-users/get-started-with-groups)
 ### <a name="intune-roles"></a>Rôles Intune
 [Contrôlez les utilisateurs pouvant effectuer diverses actions Intune, et à qui ces actions s’appliquent](/intune-azure/access-control/role-based-access-control). Vous pouvez utiliser les rôles intégrés, qui couvrent des scénarios courants dans Intune, ou vous pouvez créer vos propres rôles.
+### <a name="software-updates"></a>Mises à jour logicielles
+[Découvrez comment configurer les mises à jour logicielles pour les appareils Windows 10](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
 
 
 

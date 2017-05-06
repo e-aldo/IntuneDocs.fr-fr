@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 742fac9c401c24bfc0f2500a238c41fa00c47fd3
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -47,6 +48,8 @@ Pour résoudre ces problèmes, Apple a introduit le contournement du verrou d'ac
 > [!TIP]
 > Le mode supervisé pour les appareils iOS vous permet d’utiliser l’outil Apple Configurator pour verrouiller un appareil et limiter ainsi la fonctionnalité à des usages professionnels spécifiques. Le mode surveillé est généralement destiné uniquement aux appareils appartenant à l'entreprise.
 
+Vous trouverez un complément d’information sur le verrou d’activation [ici](https://support.apple.com/en-us/HT201365).
+
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Gestion du verrou d'activation dans Intune
 Intune peut demander l’état du verrou d’activation des appareils supervisés qui exécutent iOS 8.0 et versions ultérieures. Pour les appareils supervisés uniquement, Intune peut récupérer le code de contournement du verrou d’activation et le transmettre directement à l’appareil. Si l’appareil a été réinitialisé, vous pouvez y accéder directement en utilisant un mot de passe vide et le code comme nom d'utilisateur.
 
@@ -55,6 +58,14 @@ Intune peut demander l’état du verrou d’activation des appareils supervisé
 -   L’utilisateur bénéficie des avantages en termes de sécurité offerts par l’application Rechercher mon iPhone.
 
 -   Vous pouvez permettre à l’utilisateur d’effectuer son travail en sachant que l’appareil peut être mis hors service ou déverrouillé lorsque vous devez le réaffecter.
+
+## <a name="before-you-start"></a>Avant de commencer
+
+Avant de pouvoir contourner le verrou d’activation sur les appareils, vous devez d’abord l’activer. Pour effectuer cette opération :
+
+1. Utilisez les informations de la rubrique [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) pour créer une [stratégie de configuration d’appareils](/intune/deploy-use/ios-policy-settings-in-microsoft-intune) iOS.
+2. Dans la section **Inscription** de la page Paramètres, configurez le paramètre **Autoriser le verrou d'activation quand l'appareil est en mode supervisé** sur **Oui**.
+3. Enregistrez la stratégie et déployez-la sur les appareils sur lesquels vous souhaitez gérer le contournement du verrou d’activation.
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Utilisation du contournement du verrou d'activation à partir de la console d'administration Intune
 > [!IMPORTANT]
@@ -94,9 +105,4 @@ Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deu
 ### <a name="see-also"></a>Voir aussi
 [Mettre des appareils hors service](retire-devices-from-microsoft-intune-management.md)
 [Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code secret](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

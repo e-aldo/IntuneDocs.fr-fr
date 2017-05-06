@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Vous pouvez synchroniser les données détenues par Apple avec Intune à tout mo
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>Pour déployer une application achetée en volume
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications** &gt; **Logiciels gérés** &gt; **Applications achetées en volume**. Cette liste répertorie toutes les applications qui ont été synchronisées à partir du service Apple VPP.
+1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications**&gt; **Applications** &gt; **Applications achetées en volume**. Cette liste répertorie toutes les applications qui ont été synchronisées à partir du service Apple VPP.
 
 2.  Choisissez l’application que vous voulez déployer, sélectionnez **Gérer le déploiement**, puis suivez les instructions de la rubrique [Déployer des applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md) pour effectuer le chargement, la création et le déploiement de l’application.
 
@@ -79,22 +80,14 @@ Pour récupérer une licence, remplacez l’action de déploiement par **Désins
 
 Quand un utilisateur avec un appareil éligible essaie pour la première fois d’installer une application VPP, il est invité à participer au programme VPP d’Apple. Il doit accepter pour que l’installation de l’application se poursuivre.
 
-> [!TIP]
-> Examinez la colonne **État des conditions d’utilisation du VPP** pour voir l’état d’acceptation de chaque utilisateur pour lequel l’application a été déployée.
-
 S’il n’y a plus de licence disponible, le déploiement échoue.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Surveiller les applications Apple VPP
-Vous pouvez surveiller les applications VPP qui ont été déployées et le nombre de licences utilisées à partir de l’espace de travail **Applications**, dans le nœud **Logiciels gérés** &gt; **Applications achetées en volume**.
+Vous pouvez surveiller les applications VPP qui ont été déployées et le nombre de licences utilisées à partir de l’espace de travail **Applications**, dans le nœud **Applications achetées en volume**.
 
 > [!TIP]
 > Vous pouvez également utiliser des **Filtres** d’application pour examiner l’état de chaque installation d’application.
 
 ### <a name="see-also"></a>Voir aussi
 [Déploiement d’applications dans Microsoft Intune](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 
