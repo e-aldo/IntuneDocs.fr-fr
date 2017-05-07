@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ Ces conditions sont visibles sur chaque appareil dans le portail de gestion Azur
     
         -    Pour ces appareils, l’utilisateur doit définir un code secret de démarrage sécurisé. L’utilisateur reçoit une notification d’appareil de l’application de portail d’entreprise lui demandant de définir un code secret de démarrage pour l’appareil. Après avoir appuyé sur la notification d’appareil et confirmé votre code confidentiel ou mot de passe existant, choisissez l’option **Exiger un code confidentiel pour démarrer l’appareil** dans l’écran **Démarrage sécurisé**. Ensuite, appuyez sur le bouton **Vérifier la conformité** pour l’appareil dans l’application de portail d’entreprise. L’appareil doit maintenant être détecté comme chiffré.
     
-        -     Certains fabricants d’appareils chiffrent leurs appareils à l’aide d’un code confidentiel par défaut à la place du code confidentiel secret défini par l’utilisateur. Intune considère le chiffrement au moyen du code confidentiel par défaut comme non sécurisé. En effet, cette méthode de chiffrement peut mettre en danger les données figurant sur l’appareil face à des utilisateurs mal intentionnés en mesure d’accéder physiquement à l’appareil. Si tel est le problème, envisagez d’utiliser les [stratégies de protection des applications](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+        -     Certains fabricants d’appareils chiffrent leurs appareils à l’aide d’un code confidentiel par défaut à la place du code confidentiel secret défini par l’utilisateur. Intune considère le chiffrement au moyen du code confidentiel par défaut comme non sécurisé. En effet, cette méthode de chiffrement peut mettre en danger les données figurant sur l’appareil face à des utilisateurs mal intentionnés en mesure d’accéder physiquement à l’appareil. Si tel est le problème, envisagez d’utiliser les [stratégies de protection des applications](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problèmes de stratégie
 
@@ -119,7 +119,7 @@ Si ces procédures de dépannage ne résolvent pas votre problème, le support M
 ### <a name="exchange-connector-logs"></a>Journaux du connecteur Exchange
 
 #### <a name="general-log-information"></a>Informations générales sur les journaux
-Pour afficher les journaux du connecteur Exchange, utilisez [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx'). Pour utiliser cet outil, vous devez télécharger le SDK de Windows Server.
+Pour afficher les journaux du connecteur Exchange, utilisez [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Pour utiliser cet outil, vous devez télécharger le SDK de Windows Server.
 
 >[!NOTE]
 >Les journaux sont dans C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Ils sont contenus dans une série de 30 fichiers journaux qui vont de *Connector0.log* à *Connector29.log*. Les journaux se remplacent les uns les autres dès que 10 Mo de données ont été accumulées dans un journal. Une fois que les journaux arrivent à Connector29, ils reviennent à Connector0 en remplaçant les fichiers journaux précédents.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -225,6 +225,67 @@ Utilisez les informations de cette liste pour identifier le nom, l’éditeur et
 -     **Flux de photos partagé** : choisissez **Non** pour désactiver le **partage de photos iCloud** sur l'appareil.
 -     **Continuation de l’activité** : autorise l’utilisateur à reprendre le travail qu’il a commencé sur un appareil iOS sur un autre appareil iOS ou macOS (continuité).
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>Mode Application unique autonome (mode supervisé uniquement)
+
+Utilisez ces paramètres pour configurer les appareils iOS pour qu’ils exécutent les applications spécifiées en mode Application unique autonome. Quand ce mode est configuré et que l’application est exécutée, l’appareil est verrouillé et il ne peut exécuter que cette application. Vous pouvez par exemple utiliser ce mode quand vous configurez une application qui permet aux utilisateurs d’effectuer un test sur l’appareil. Une fois les actions de l’application terminées, ou si vous supprimez cette stratégie, l’appareil retourne à son état normal.
+
+### <a name="settings"></a>Paramètres
+
+- **Nom de l’application** : entrez le nom de l’application tel qu’il apparaîtra dans la liste des applications sur ce panneau.
+- **ID d'ensemble d'applications** : entrez l’ID d’ensemble de l’application. Pour plus d’aide, consultez la section **Référence à un ID d’ensemble pour les applications iOS intégrées** de cette rubrique.
+
+Une fois que vous spécifiez le nom de chaque application et l’ID d’ensemble, cliquez sur **Ajouter** pour l’ajouter à la liste.
+
+- **Importer** : importez un fichier .csv contenant une liste de noms d’application et leurs ID d’ensemble associés.
+- **Exporter** : exportez les noms d’application et les ID d’ensemble associés que vous avez configurés dans un fichier .csv.
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Référence à un ID d’ensemble pour les applications iOS intégrées
+
+Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées parmi les plus courantes. Pour rechercher l’ID d’ensemble d’autres applications, contactez votre éditeur de logiciels.
+
+|||
+|-|-|
+|Nom de l’application|ID d’ensemble|
+|App Store|com.apple.AppStore|
+|Calculatrice|com.apple.calculator|
+|Calendrier|com.apple.mobilecal|
+|Appareil photo|com.apple.camera|
+|Horloge|com.apple.mobiletimer|
+|Boussole|com.apple.compass|
+|Contacts|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Trouver des amis|com.apple.mobileme.fmf1|
+|Trouver un iPhone|com.apple.mobileme.fmip1|
+|Centre de jeux|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Intégrité|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|Mappages|com.apple.Maps|
+|Messages|com.apple.MobileSMS|
+|Musique|com.apple.Music|
+|Actualités|com.apple.news|
+|Remarques|com.apple.mobilenotes|
+|Nombres|com.apple.Numbers|
+|Pages|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Photo|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Rappels|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Paramètres|com.apple.Preferences|
+|Bourse|com.apple.stocks|
+|Conseils|com.apple.tips|
+|Vidéos|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Portefeuille|com.apple.Passbook|
+|Regardez|com.apple.Bridge|
+|Météo|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Kiosque
 -     **Verrou d’activation** : active le verrou d’activation sur des appareils iOS supervisés.
 -     **Application s’exécutant en mode kiosque** : choisissez **Application gérée** pour sélectionner une application que vous avez ajoutée à Intune, ou **Application de boutique** pour spécifier l’URL d’une application dans la boutique. Aucune autre application ne pourra s'exécuter sur l'appareil. Pour obtenir de l’aide, consultez la section « Comment spécifier des URL de magasins d’applications » de la présente rubrique.
@@ -256,4 +317,21 @@ Utilisez les informations de cette liste pour identifier le nom, l’éditeur et
 -     **JavaScript** : autoriser l’exécution des scripts Java dans le navigateur.
 -     **Avertissement de fraude** : autoriser l’affichage d’avertissements antifraude dans le navigateur.
 -     **Fenêtres publicitaires** : activer ou désactiver le bloqueur de fenêtres publicitaires du navigateur.
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>Domaines de messagerie non marqués
+
+Dans le champ **URL de domaine d’e-mail**, ajoutez une ou plusieurs URL à la liste. Lorsque les utilisateurs finaux reçoivent un e-mail provenant d’un domaine autre que celui que vous avez configuré, l’e-mail est marqué comme non approuvé dans l’application de messagerie iOS.
+
+
+### <a name="managed-web-domains"></a>Domaines web gérés
+
+Dans le champ **URL de domaine web**, ajoutez une ou plusieurs URL à la liste. Les documents téléchargés à partir des domaines que vous spécifiez sont considérés comme gérés. Ce paramètre s’applique uniquement aux documents téléchargés à l’aide du navigateur Safari.
+
+
+### <a name="safari-password-auto-fill-domains"></a>Domaines de remplissage automatique des mots de passe Safari
+
+Dans le champ **URL de domaine**, ajoutez une ou plusieurs URL à la liste. Les utilisateurs peuvent uniquement enregistrer les mots de passe web à partir des URL de cette liste. Ce paramètre s’applique uniquement au navigateur Safari et aux appareils iOS 9.3 et versions ultérieures en mode supervisé. Si vous ne spécifiez aucune URL, les mots de passe peuvent être enregistrés à partir de tous les sites web.
 

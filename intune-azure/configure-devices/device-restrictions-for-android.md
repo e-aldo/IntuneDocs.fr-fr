@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -42,6 +42,7 @@ ms.lasthandoff: 03/30/2017
 |**Capture d'écran**|Autorise l’utilisateur à capturer le contenu de l’écran comme image.|Non|Oui|
 |**Assistant vocal**|Autorise l’utilisation du logiciel Assistant vocal sur l’appareil.|Non|Oui|
 |**YouTube**|Autorise l’utilisation de l’application YouTube sur l’appareil.|Non|Oui|
+|**Appareils partagés**|Configurer un appareil Samsung KNOX standard géré en tant qu’appareil partagé. Dans ce mode, les utilisateurs finaux peuvent se connecter et se déconnecter de l’appareil avec leurs informations d’identification Azure AD, et l’appareil est géré de façon centralisée qu’il soit en cours d’utilisation ou non.<br>Quand les utilisateurs finaux se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.|Non|Oui|
 
 ## <a name="password"></a>Mot de passe
 
@@ -53,11 +54,18 @@ ms.lasthandoff: 03/30/2017
 |**Nombre maximal de minutes d’inactivité avant le verrouillage de l’appareil**|Spécifie le nombre de minutes d’inactivité avant verrouillage automatique de l’appareil.|Oui|Oui|
 |**Nombre d’échecs de connexion avant réinitialisation de l’appareil**|Spécifie le nombre d’échecs de connexion à autoriser avant réinitialisation de l’appareil.|Oui|Oui|
 |**Expiration du mot de passe (jours)**|Spécifie le nombre de jours avant de devoir modifier le mot de passe de l’appareil.|Oui|Oui|
-|**Type de mot de passe requis**|Spécifie le niveau de complexité du mot de passe exigé et si les appareils biométriques peuvent être utilisés.|Oui|Oui|
+|**Type de mot de passe requis**|Spécifie le niveau de complexité du mot de passe exigé et si les appareils biométriques peuvent être utilisés. Choisissez parmi :<br><br>    -     **Paramètre par défaut de l’appareil**<br>-     **Sécurité biométrique faible**<br>    -     **Au moins numérique**<br>    -     **Chiffres complexes** (les chiffres répétés ou consécutifs tels que « 1111 » ou « 1234 » ne sont pas autorisés)<sup>1</sup><br>    -     **Au moins alphabétique**<br>    -     **Au moins alphanumérique**<br>    -     **Au moins alphanumérique avec des symboles**|Oui|Oui|
 |**Empêcher la réutilisation des mots de passe précédents**|Empêche l’utilisateur final de créer un mot de passe qu’il a déjà utilisé.|Oui|Oui|
 |**Déverrouillage par empreinte digitale**|Permet l’utilisation d’une empreinte digitale pour déverrouiller les appareils pris en charge.|Non|Oui|
 |**Smart Lock et autres agents de confiance**|Vous permet de contrôler la fonctionnalité Smart Lock sur les appareils Android compatibles (Samsung KNOX Standard 5.0 et plus). Cette fonctionnalité du téléphone, parfois appelée agent de confiance, vous permet de désactiver ou de contourner le mot de passe de l’écran de verrouillage de l’appareil si celui-ci se trouve dans un emplacement fiable (par exemple, quand il est connecté à un appareil Bluetooth spécifique ou qu’il se trouve à proximité d’une balise NFC). Vous pouvez utiliser ce paramètre pour empêcher les utilisateurs de configurer Smart Lock.|Oui (versions 5.0 et plus)|Non|
 |**Chiffrement**|Exige que les fichiers soient chiffrés sur le périphérique.|Oui|Oui|
+
+<sup>1</sup>avant d’affecter ce paramètre à des appareils, assurez-vous que l’application Portail d’entreprise a été mise à jour vers la dernière version sur les appareils ciblés.
+
+Si vous configurez le paramètre **Chiffres complexes** et l’affectez à un appareil qui exécute une version antérieure à la version 5.0 d’Android, le comportement suivant s’applique.
+- Si l’application Portail d’entreprise exécute une version antérieure à 1704, aucune stratégie de code PIN ne sera appliquée à l’appareil et une erreur s’affichera dans le portail Intune.
+- Si l’application Portail d’entreprise a été mise à jour vers la version 1704, un simple code PIN s’appliquera. Les versions d’Android antérieures à 5.0 ne gèrent pas ce paramètre. Aucune erreur ne s’affiche dans le portail Intune.
+
 
 ## <a name="google-play-store"></a>Google Play Store
 

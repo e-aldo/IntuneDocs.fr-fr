@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>Qu’est-ce que la gestion des appareils Microsoft Intune ? 
+# <a name="what-is-microsoft-intune-device-management"></a>Qu’est-ce que la gestion des appareils Microsoft Intune ?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ Maintenant, choisissez l’une des options suivantes :
 - **Vue d’ensemble** : obtenez des informations sur les appareils inscrits, et les systèmes d’exploitation que chaque appareil s’exécute.
 - **Gérer** : choisissez **Tous les appareils** pour afficher la liste de tous les appareils que vous gérez.
     Sélectionnez un de ces appareils dans la liste pour ouvrir le panneau <*Nom de l’appareil*> **Vue d’ensemble** où vous pouvez sélectionner un des éléments suivants :
-    - **Vue d’ensemble** : consultez des informations générales sur l’appareil, notamment des informations sur son nom, son propriétaire, s’il s’agit d’un appareil BYOD, son dernier archivage et bien plus encore. 
-                
+    - **Vue d’ensemble** : consultez des informations générales sur l’appareil, notamment des informations sur son nom, son propriétaire, s’il s’agit d’un appareil BYOD, son dernier archivage et bien plus encore.
+
     - **Matériel** : plus d’informations sur l’appareil, y compris son espace de stockage libre, son modèle et le fabricant, et bien plus encore.
     ![Inventaire matériel des appareils gérés](./media/hardware-inventory.png)
     - **Applications détectées** : affiche une liste de toutes les applications qu’Intune trouve installées sur l’appareil.
@@ -67,6 +67,12 @@ Génère un nouveau code pour l’appareil qui sera affiché dans le panneau <*N
 ### <a name="bypass-activation-lock"></a>**Contourner le verrou d’activation**
 Cela supprime le verrou d’activation des appareils iOS sans qu’il soit nécessaire d’avoir l’ID Apple et le mot de passe de l’utilisateur. Une fois que vous contournez le verrou d’activation, l’appareil l’active à nouveau au démarrage de l’application Trouver mon iPhone. Contournez le verrou d’activation uniquement si vous avez un accès physique à l’appareil.
 
+### <a name="fresh-start"></a>**Fresh Start**
+
+Supprime toutes les applications qui ont été installées sur un PC Windows 10 exécutant Creators Update, puis met à jour automatiquement le PC vers la dernière version de Windows.
+Vous pouvez ainsi supprimer des applications (OEM) préinstallées, comme celles qui sont souvent fournies avec un nouveau PC. Vous pouvez configurer si les données utilisateur sont conservées quand cette action est exécutée sur l’appareil. Dans ce cas, les applications et les paramètres sont supprimés, mais le contenu du dossier personnel des utilisateurs est conservé.
+
+
 ### <a name="lost-mode"></a>**Mode Perdu**
 Si un appareil iOS a été volé ou perdu, vous pouvez activer le mode Perdu. Cela vous permet de spécifier un message et un numéro de téléphone qui s’affichent sur l’écran de verrouillage de l’appareil. Pour cela :
 1.    Dans le volet Propriétés d’un appareil iOS, choisissez **Plus** > **Mode Perdu**.
@@ -78,7 +84,7 @@ Pour utiliser le mode Perdu, l’appareil doit être un appareil iOS d’entrepr
 ### <a name="locate-device"></a>**Localiser l’appareil**
 Utilisez cette action à distance pour afficher l’emplacement d’un appareil iOS perdu ou volé sur une carte. L’appareil doit être un appareil iOS d’entreprise, inscrit via le programme DEP, qui est en mode supervisé. Avant que vous puissiez utiliser cette action, l’appareil doit être configuré en mode Perdu.
 1.    Dans le volet Propriétés d’un appareil iOS, choisissez **Plus** > **Localiser l’appareil**.
-2.    Une fois que l’appareil a été localisé, son emplacement s’affiche dans le panneau **Localiser l’appareil**. 
+2.    Une fois que l’appareil a été localisé, son emplacement s’affiche dans le panneau **Localiser l’appareil**.
     ![Panneau Localiser l’appareil](./media/locate-device.png)
 
 >[!NOTE]

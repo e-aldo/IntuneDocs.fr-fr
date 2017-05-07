@@ -1,12 +1,12 @@
 ---
 title: "Configurer des mises à niveau Windows 10 avec Intune"
 titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Apprenez à utiliser Intune pour mettre à niveau les appareils Windows 10 que vous gérez."
+description: "Intune Azure en version préliminaire : apprenez à utiliser Intune pour mettre à niveau vers une version différente les appareils Windows 10 que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 0274a76fa7dd301ab19d1e8bc155c4ef2c79266f
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Utilisez les informations de cette rubrique pour découvrir comment configurer un profil de mise à niveau Windows 10. Ce profil vous permet de mettre à niveau automatiquement les appareils qui exécutent les versions suivantes de Windows 10 vers une version plus récente :
+Utilisez les informations de cette rubrique pour découvrir comment configurer un profil de mise à niveau Windows 10. Ce profil vous permet de mettre à niveau automatiquement les appareils qui exécutent les versions suivantes de Windows 10 vers une version différente :
 
 - Windows 10 Famille
 - Windows 10 Holographique

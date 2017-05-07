@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: be070e8bdb339cfea1dbc288923620c8604e9b30
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 84fb6c275995fc43226adbda5fc5c40344d6eb09
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -32,6 +32,9 @@ Avec l’augmentation du nombre d’appareils appartenant aux employés au sein 
 La **Protection des informations Windows** vous permet de vous protéger contre les fuites de données potentielles sans interférer avec l’expérience des employés. Il permet également de protéger les données et les applications d’entreprise contre des fuites accidentelles de données sur les appareils d’entreprise et les appareils personnels que les employés amènent sur leur lieu de travail, sans que cela entraîne nécessairement une modification de votre environnement ou d’autres applications.
 
 Cette stratégie Intune gère la liste des applications protégées par la Protection des informations Windows, les emplacements de réseau d’entreprise, le niveau de protection et les paramètres de chiffrement.
+
+>[!NOTE]
+> Pour utiliser l’application Portail d’entreprise de Windows 10 avec la Protection des informations Windows, vous devez ajouter cette application sous le mode **Exempté** de la Protection des informations Windows. 
 
 ### <a name="next-steps"></a>Étapes suivantes
 Pour en savoir plus, consultez [Protéger vos données d’entreprise à l’aide de Protection des informations Windows](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
