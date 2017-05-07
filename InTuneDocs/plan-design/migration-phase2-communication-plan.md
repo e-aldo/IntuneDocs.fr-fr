@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: d59ddb11ef96e90fdc47ad556c300cfa1dd53de5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9178404c1ed0b09ac4ae21c9c3a1b8d817241ea0
+ms.openlocfilehash: 4c5e436373303d44e01a9ee8d1474334cf8655db
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -42,7 +42,7 @@ Voici un exemple de mode de communication sur la migration dans votre entreprise
     -   [Téléchargez le modèle d’e-mail \#2 pour l’utiliser au sein de votre organisation.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **E-mail \#3 :** Indiquer aux utilisateurs la chronologie avant que l’accès ne soit affecté. Rappelez-leur à nouveau les avantages et motifs stratégiques de la migration. La synchronisation d’e-mail doit prévoir une fenêtre coulissante qui corresponde au pipelining des phases. Par exemple, envoyez l’e-mail \#1 aux utilisateurs de la phase 1, l’e-mail \#2 aux utilisateurs de la phase 2 et l’e-mail \#3 aux utilisateurs de la phase 3 au mois de juin.
+-   **E-mail \#3 :** Indiquer aux utilisateurs la chronologie avant que l’accès ne soit affecté. Rappelez-leur à nouveau les avantages et motifs stratégiques de la migration. La synchronisation d’e-mail doit prévoir une fenêtre coulissante qui corresponde au pipelining des phases. Par exemple, envoyez l’e-mail \#1 aux utilisateurs de la phase 1, l’e-mail \#2 aux utilisateurs de la phase 2 et l’e-mail \#1 aux utilisateurs de la phase 3 au mois de juin.
 
     -   [Téléchargez le modèle d’e-mail \#3 pour l’utiliser au sein de votre organisation](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5).
 
@@ -54,7 +54,7 @@ Après un certain temps, vous pouvez commencer à appliquer la conformité via d
 
 Intune dispose de ressources de modèles supplémentaires pour promouvoir l’inscription des appareils après des utilisateurs finaux :
 
--   Voir [Ce qu’il faut dire à vos utilisateurs finaux concernant l’utilisation de Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) pour obtenir des conseils supplémentaires sur les étapes d’inscription par plateforme de système d’exploitation mobile.
+-   Voir [Ce qu’il faut dire à vos utilisateurs finaux concernant l’utilisation de Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) pour obtenir des conseils supplémentaires sur les étapes d’inscription par plateforme de système d’exploitation mobile.
 
 -   Téléchargez un [modèle d’inscription Intune personnalisable pour les administrateurs informatiques, à l’attention de l’utilisateur final.](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)
 

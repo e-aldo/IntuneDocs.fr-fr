@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/06/17
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
-ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: f0a477c9eb1ed0580314e79135e377809eaab197
+ms.openlocfilehash: 9b0ae19b211373548061e2c2979620739a0bf0a0
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code d’accès
@@ -64,7 +64,7 @@ Si un utilisateur oublie un code d’accès, vous pouvez l’aider à résoudre 
 |iOS|Prise en charge de l'effacement du code d'accès d'un appareil. Ne crée pas un nouveau code d'accès temporaire.|
 |Android|Prise en charge sur les versions antérieures à Android 7.0. Crée un code d’accès temporaire.|
 |Android for Work|Non prise en charge|
-|Windows 10 Mobile|Pris en charge|
+|Windows 10 Mobile|Prise en charge sur les périphériques mobiles Windows 10 Creator et versions ultérieures qui disposent d’une connexion à Azure AD.|
 |Windows Phone 8 et Windows Phone 8.1|Pris en charge|
 |Windows RT 8.1|Non pris en charge|
 |Windows 8.1|Non pris en charge|

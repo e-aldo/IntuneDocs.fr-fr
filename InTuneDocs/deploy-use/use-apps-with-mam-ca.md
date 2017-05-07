@@ -1,5 +1,5 @@
 ---
-title: "Utilisation d’applications avec accès conditionnel pour la gestion des applications mobiles | Microsoft Docs"
+title: "Utilisation d’applications avec l’accès conditionnel pour la gestion des applications mobiles"
 description: "Découvrez dans quelle mesure l’accès conditionnel pour la gestion des applications mobiles peut aider à contrôler les applications qui ont accès aux services O365."
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ Voici une liste de propriétés qui proviennent directement de l’appareil :
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> Sur les appareils Android :
+  * L’application Portail d’entreprise doit être installée sur l’appareil, mais il n’est pas nécessaire que l’utilisateur final se connecte à l’application.
+  * L’inscription de l’appareil doit être effectuée via l’application OneDrive ou Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Supprimer un appareil de l’inscription dans Azure AD.
 Vous pouvez supprimer l’inscription de l’appareil par le biais de la console d’administration Azure AD, ce qui est généralement effectué par l’administrateur informatique.  L’utilisateur final peut également le faire lui-même sur l’appareil.

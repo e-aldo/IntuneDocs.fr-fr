@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e4a6aaa1a8e23dc2c58345f73ff8db86018843e1
-ms.openlocfilehash: fe12a6b890c2d5cba874e820afbe7671b754deb5
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: d85544bdfaa3a369e1d2d03e5454ff7aa2d75467
+ms.lasthandoff: 04/19/2017
 
 ---
 
@@ -28,20 +28,28 @@ ms.lasthandoff: 04/11/2017
 
 Avant de pouvoir gérer et attribuer des applications pour vos utilisateurs, vous devez les ajouter à Intune. Intune prend en charge un large éventail de types d’application différents, et les options peuvent être différentes pour chaque type.
 
-Intune prend en charge l’ajout et l’affectation de ces types d’application :
+Intune vous permet d’ajouter et d’affecter les types d’application suivants :
 
 ![Types d’applications pris en charge par Intune](./media/app-types.png)
 
 Les plateformes suivantes sont prises en charge. Cliquez sur une des rubriques pour plus d’informations sur l’ajout de chaque type d’application.
 
 - [Applications de l’App Store Android](/intune-azure/manage-apps/android-store-app)
+- [Applications métier Android](/intune-azure/manage-apps/android-lob-app)
 - [Applications de l’App Store iOS](/intune-azure/manage-apps/ios-store-app)
+- [Applications métier iOS](/intune-azure/manage-apps/ios-lob-app)
 - [Applications Web (pour toutes les plateformes)](/intune-azure/manage-apps/web-app)
 - [Application du Windows Phone 8.1 Store](/intune-azure/manage-apps/windows-phone-8-1-store-app)
 - [Applications Windows Store](/intune-azure/manage-apps/windows-store-app)
 
-> [!NOTE]
-> Quand vous ajoutez et déployez une application à partir d’un app store, les utilisateurs finaux doivent avoir un compte sur ce store pour pouvoir installer l’application.
+En outre, certaines applications Microsoft sont ajoutées automatiquement par Intune lorsque vous configurez votre client. Vous trouverez une liste de ces applications plus loin dans cette rubrique.
+
+## <a name="before-you-start"></a>Avant de commencer
+
+Tenez compte des points suivants avant de commencer à ajouter et affecter des applications.
+
+- Quand vous ajoutez et déployez une application à partir d’un app store, les utilisateurs finaux doivent avoir un compte sur ce store pour pouvoir installer l’application.
+- Certaines applications ou certains éléments que vous déployez peuvent dépendre d’applications iOS intégrées. Par exemple, si vous déployez un livre à partir de la boutique iOS, l’application iBook doit être installée sur l’appareil. Si vous avez supprimé l’application iBook intégrée, vous ne pouvez pas utiliser Intune pour la réactiver.
 
 ## <a name="cloud-storage-space"></a>Espace de stockage cloud
 Toutes les applications que vous créez en utilisant le type d’installation de programme d’installation de logiciel (par exemple, une application métier) sont empaquetées et chargées dans le stockage cloud Microsoft Intune. Un abonnement d’essai à Intune inclut 2 Go de stockage cloud, utilisé pour stocker les applications gérées et les mises à jour. Votre abonnement complet inclut 20 Go d’espace de stockage.
@@ -53,18 +61,48 @@ La configuration requise pour l’espace de stockage cloud est la suivante :
 -   Tous les fichiers d’installation de l’application doivent être dans le même dossier.
 -   La taille maximale de chaque fichier que vous chargez s’élève à 2 Go.
 
-## <a name="how-to-create-and-edit-categories-for-apps"></a>Comment créer et modifier des catégories pour les applications 
+## <a name="how-to-create-and-edit-categories-for-apps"></a>Comment créer et modifier des catégories pour les applications
 
-Les catégories d’applications peuvent être utilisées pour vous aider à trier les applications pour les rendre plus faciles finaux à rechercher pour les utilisateurs dans le portail d’entreprise. Vous pouvez affecter une ou plusieurs catégories à une application, par exemple, **Applications pour développeurs** ou **Applications de communication**. Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sélectionner la catégorie souhaitée. Utilisez les rubriques spécifiques à la plateforme pour ajouter une application et attribuer des catégories. Pour créer et modifier vos propres catégories, procédez comme suit : 
+Les catégories d’applications peuvent être utilisées pour vous aider à trier les applications pour les rendre plus faciles finaux à rechercher pour les utilisateurs dans le portail d’entreprise. Vous pouvez affecter une ou plusieurs catégories à une application, par exemple, **Applications pour développeurs** ou **Applications de communication**.
+Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sélectionner la catégorie souhaitée. Utilisez les rubriques spécifiques à la plateforme pour ajouter une application et attribuer des catégories. Pour créer et modifier vos propres catégories, procédez comme suit :
 
-1. Connectez-vous au portail Azure. 
-2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**. 
-3. Dans le panneau **Intune**, choisissez **Gérer les applications**. 
-4. Dans la charge de travail **Mobile Apps**, choisissez **Installation** > **Catégories d’application**. 
-5. Dans le panneau **Catégories d’application**, la liste des catégories actuelles s’affiche. Sélectionnez une des actions suivantes : 
+1. Connectez-vous au portail Azure.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
+4. Dans la charge de travail **Mobile Apps**, choisissez **Installation** > **Catégories d’application**.
+5. Dans le panneau **Catégories d’application**, la liste des catégories actuelles s’affiche. Sélectionnez une des actions suivantes :
     - **Créer une catégorie** : dans le panneau **Créer une catégorie**, saisissez un nom pour la nouvelle catégorie. Les noms peuvent être entrés dans une seule langue et ne sont pas traduits par Intune. Quand vous avez terminé, cliquez sur **Créer**.
-    - **Modifier une catégorie** : pour n’importe quelle catégorie dans la liste, choisissez «**...** ». Dans le panneau **Propriétés**, vous pouvez entrer un nouveau nom pour la catégorie, ou supprimer la catégorie.
+    - **Modifier une catégorie** : pour n’importe quelle catégorie dans la liste, choisissez «**...**  ». Dans le panneau **Propriétés**, vous pouvez entrer un nouveau nom pour la catégorie, ou supprimer la catégorie.
 
 
+## <a name="apps-added-automatically-by-intune"></a>Applications automatiquement ajoutées par Intune
 
+Les applications suivantes, publiées par Microsoft, sont intégrées à Intune et prêtes à être affectées :
+
+|||
+|-|-|
+|Nom|Plate-forme|Type d’application|
+|Azure Information Protection|Android|Managed Android store app|
+|Dynamics CRM for Phones|Android|Managed Android store app|
+|Dynamics CRM for Tablets|Android|Managed Android store app|
+|Excel|iOS|Managed iOS store app|
+|Excel|Android|Managed Android store app|
+|Managed Browser|Android|Managed Android store app|
+|Managed Browser|iOS|Managed iOS store app|
+|Microsoft Dynamics CRM on Phones|iOS|Managed iOS store app|
+|Microsoft Dynamics CRM on Tablets|iOS|Managed iOS store app|
+|Microsoft Power BI|iOS|Managed iOS store app|
+|Microsoft Power BI|Android|Managed Android store app|
+|Microsoft SharePoint|iOS|Managed iOS store app|
+|Microsoft SharePoint|Android|Managed Android store app|
+|Microsoft Teams|Android|Managed Android store app|
+|Microsoft Teams|iOS|Managed iOS store app|
+|OneDrive Entreprise|iOS|Managed iOS store app|
+|OneDrive Entreprise|Android|Managed Android store app|
+|OneNote|iOS|Managed iOS store app|
+|Outlook|Android|Managed Android store app|
+|Outlook|iOS|Managed iOS store app|
+|Groupes Outlook|Android|Managed Android store app|
+|Groupes Outlook|iOS|Managed iOS store app|
+|PowerPoint|iOS|Managed iOS store app|
 

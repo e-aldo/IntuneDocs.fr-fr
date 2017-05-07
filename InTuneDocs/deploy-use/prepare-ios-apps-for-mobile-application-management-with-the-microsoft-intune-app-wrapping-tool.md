@@ -15,9 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
-ms.lasthandoff: 01/14/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -109,8 +109,8 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
   ![Sélectionnez le certificat interne et ad-hoc](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->Si vous n’envisagez pas de distribuer l’application et souhaitez uniquement la tester en interne, vous pouvez utiliser un certificat de développement d’applications iOS au lieu d’un certificat pour la production. Si vous utilisez un certificat de développement, vérifiez que le profil de configuration mobile fait référence aux appareils sur lesquels l’application doit être installée.
+  >[!NOTE]
+  >Si vous n’envisagez pas de distribuer l’application et souhaitez uniquement la tester en interne, vous pouvez utiliser un certificat de développement d’applications iOS au lieu d’un certificat pour la production. Si vous utilisez un certificat de développement, vérifiez que le profil de configuration mobile fait référence aux appareils sur lesquels l’application doit être installée.
 
 7. Cliquez sur **Next** (Suivant) en bas de la page.
 
@@ -120,8 +120,7 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
 9. Suivez les instructions ci-dessus pour créer une demande de signature de certificat. Sur votre ordinateur macOS, lancez l'application **Trousseau d’accès**.
 
-10. Dans le menu macOS en haut de l’écran, accédez à **Trousseau d’accès > Assistant de certification
- > Demander un certificat à une autorité de certificat**.  
+10. Dans le menu macOS en haut de l’écran, accédez à **Trousseau d’accès > Assistant de certification > Demander un certificat à une autorité de certificat**.  
 
   ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](../media/app-wrapper/iOS-signing-cert-5.png)
 
@@ -138,7 +137,6 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 14. Double-cliquez sur le fichier de certificat que vous venez de télécharger afin d'ajouter le certificat à un trousseau d’accès.
 
 15. Ouvrez à nouveau **Trousseau d’accès**. Localisez votre certificat en recherchant son nom dans la barre de recherche en haut à droite. Cliquez avec le bouton droit sur l’élément pour afficher le menu, puis cliquez sur **Lire les informations**. Dans les exemples d’écrans, nous utilisons un certificat de développement au lieu d’un certificat de production.
-
 
   ![Ajouter votre certificat à un trousseau d’accès](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -207,7 +205,7 @@ Vous pouvez utiliser les paramètres de ligne de commande suivants avec l’outi
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Affiche des informations détaillées sur l’utilisation des propriétés de ligne de commande disponibles pour l’outil de création de package de restrictions d’application.|
-|**-v**|(Facultatif) Affiche les messages détaillés sur la console.|
+|**-v**|(Facultatif) Affiche les messages détaillés sur la console. Il est recommandé d’utiliser cet indicateur pour déboguer les éventuelles erreurs.|
 |**-e**| (Facultatif) Utilisez cet indicateur pour que l’outil de création de package de restrictions d’application supprime les droits manquants pendant le traitement de l’application. Pour plus d’informations, consultez Définition des droits de l’application.|
 |**-xe**| (Facultatif) Imprime des informations sur les extensions iOS dans l’application et les droits qui sont nécessaires pour les utiliser. Pour plus d’informations, consultez Définition des droits de l’application. |
 |**-x**| (Facultatif) `<An array of paths to extension provisioning profiles>`. À utiliser si votre application a besoin d’extension des profils d’approvisionnement d’extension.|
