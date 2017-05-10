@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: be3307165b420ef0fe9c143a3a55f88285a344da
-ms.lasthandoff: 01/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a1968bedeba42758c36e7b9bb9cddfc26309ca71
+ms.openlocfilehash: af2625387e6d2d454200e851ce5e64f8eb5607c7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -39,7 +40,7 @@ Pour vous reconnecter à votre travail, vous devez définir le délai d’expira
 
 ## <a name="samsung-knox-device"></a>Appareil Samsung KNOX
 
-1.  Sur votre appareil, dans **Paramètres**, appuyez sur **Écran de verrouillage et sécurité ** &gt; **Verrouiller automatiquement**.
+1.  Sur votre appareil, dans **Paramètres**, appuyez sur **Écran de verrouillage et sécurité** &gt; **Verrouiller automatiquement**.
 
     Si **Verrouiller automatiquement** (**Verrouiller le téléphone au bout de** sur certains appareils) n’apparaît pas, vérifiez que vous avez défini un mot de passe valide sous **Paramètres** &gt; **Verrouillage d’écran** &gt; **Mot de passe**.
 
