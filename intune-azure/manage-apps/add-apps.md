@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique pour ajouter des applications à Microsoft Intune"
+title: "Guide pratique pour ajouter des applications à Microsoft Intune | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Préversion Azure : Ces procédures vous aident à préparer vos applications dans Intune à être affectées aux utilisateurs et appareils. "
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: d85544bdfaa3a369e1d2d03e5454ff7aa2d75467
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: 20af19a2051a8ebb6f1b2103d761d87fbfdf5da2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 ---
 
@@ -32,27 +33,30 @@ Intune vous permet d’ajouter et d’affecter les types d’application suivant
 
 ![Types d’applications pris en charge par Intune](./media/app-types.png)
 
-Les plateformes suivantes sont prises en charge. Cliquez sur une des rubriques pour plus d’informations sur l’ajout de chaque type d’application.
+Les plateformes suivantes sont prises en charge.
 
-- [Applications de l’App Store Android](/intune-azure/manage-apps/android-store-app)
-- [Applications métier Android](/intune-azure/manage-apps/android-lob-app)
-- [Applications de l’App Store iOS](/intune-azure/manage-apps/ios-store-app)
-- [Applications métier iOS](/intune-azure/manage-apps/ios-lob-app)
-- [Applications Web (pour toutes les plateformes)](/intune-azure/manage-apps/web-app)
-- [Application du Windows Phone 8.1 Store](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Applications Windows Store](/intune-azure/manage-apps/windows-store-app)
+- Applications de l’App Store Android
+- Applications métier Android
+- Applications de l’App Store iOS
+- Applications métier iOS
+- Applications web
+- Application du Windows Phone 8.1 Store
+- Applications métier Windows Phone (fichiers .xap)
+- Applications du Windows Store
+- Applications métier Windows (fichiers .msi uniquement)
 
-En outre, certaines applications Microsoft sont ajoutées automatiquement par Intune lorsque vous configurez votre client. Vous trouverez une liste de ces applications plus loin dans cette rubrique.
+>[!TIP]
+> Une application métier est une application que vous n’installez pas à partir d’un magasin d’applications mais à partir du fichier d’installation de l’application. Par exemple, pour installer une application métier iOS, vous ajoutez le fichier d’archive de l’application (portant l’extension .ipa). Il s’agit généralement d’applications que vous avez développées en interne.
 
 ## <a name="before-you-start"></a>Avant de commencer
 
 Tenez compte des points suivants avant de commencer à ajouter et affecter des applications.
 
-- Quand vous ajoutez et déployez une application à partir d’un app store, les utilisateurs finaux doivent avoir un compte sur ce store pour pouvoir installer l’application.
-- Certaines applications ou certains éléments que vous déployez peuvent dépendre d’applications iOS intégrées. Par exemple, si vous déployez un livre à partir de la boutique iOS, l’application iBook doit être installée sur l’appareil. Si vous avez supprimé l’application iBook intégrée, vous ne pouvez pas utiliser Intune pour la réactiver.
+- Quand vous ajoutez et affectez une application à partir d’un Store, les utilisateurs finaux doivent avoir un compte sur ce Store pour pouvoir installer l’application.
+- Certaines applications ou certains éléments que vous affectez peuvent dépendre d’applications iOS intégrées. Par exemple, si vous affectez un livre à partir de l’App Store iOS, l’application iBooks doit être présente sur l’appareil. Si vous avez supprimé l’application iBook intégrée, vous ne pouvez pas utiliser Intune pour la réactiver.
 
 ## <a name="cloud-storage-space"></a>Espace de stockage cloud
-Toutes les applications que vous créez en utilisant le type d’installation de programme d’installation de logiciel (par exemple, une application métier) sont empaquetées et chargées dans le stockage cloud Microsoft Intune. Un abonnement d’essai à Intune inclut 2 Go de stockage cloud, utilisé pour stocker les applications gérées et les mises à jour. Votre abonnement complet inclut 20 Go d’espace de stockage.
+Toutes les applications que vous créez en utilisant le type d’installation de programme d’installation de logiciel (par exemple, une application métier) sont empaquetées et chargées dans le stockage cloud Intune. Un abonnement d’essai à Intune inclut 2 Go de stockage cloud, utilisé pour stocker les applications gérées et les mises à jour. Un abonnement complet inclut 20 Go d’espace de stockage.
 
 Vous pouvez utiliser la méthode de paiement d’origine pour acheter du stockage supplémentaire pour Intune.  Si vous avez payé par facture ou carte de crédit, visitez le [portail Gestion des abonnements](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Dans le cas contraire, contactez votre partenaire ou vendeur.
 
@@ -105,4 +109,18 @@ Les applications suivantes, publiées par Microsoft, sont intégrées à Intune 
 |Groupes Outlook|Android|Managed Android store app|
 |Groupes Outlook|iOS|Managed iOS store app|
 |PowerPoint|iOS|Managed iOS store app|
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Choisissez une des rubriques suivantes afin de savoir comment ajouter à Intune des applications pour chaque plateforme :
+
+- [Applications de l’App Store Android](/intune-azure/manage-apps/android-store-app)
+- [Applications métier Android](/intune-azure/manage-apps/android-lob-app)
+- [Applications de l’App Store iOS](/intune-azure/manage-apps/ios-store-app)
+- [Applications métier iOS](/intune-azure/manage-apps/ios-lob-app)
+- [Applications Web (pour toutes les plateformes)](/intune-azure/manage-apps/web-app)
+- [Application du Windows Phone 8.1 Store](/intune-azure/manage-apps/windows-phone-8-1-store-app)
+- [Applications métier Windows Phone](/intune-azure/manage-apps/windows-phone-line-of-business-app)
+- [Applications Windows Store](/intune-azure/manage-apps/windows-store-app)
+- [Application métier Windows](/intune-azure/manage-apps/windows-line-of-business-app)
 
