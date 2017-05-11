@@ -100,8 +100,8 @@
 ### [Créer et affecter des stratégies de protection des applications](manage-apps/app-protection-policies.md)
 ### [Préparation aux stratégies de protection des applications WIP](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 ### [Créer et affecter des stratégies de protection des applications WIP](manage-apps/create-windows-information-protection-policy-with-intune.md)
-#### [Paramètres Android](manage-apps/android-app-protection-policy-settings.md)
-#### [Paramètres iOS](manage-apps/ios-app-protection-policy-settings.md)
+### [Paramètres Android](manage-apps/android-app-protection-policy-settings.md)
+### [Paramètres iOS](manage-apps/ios-app-protection-policy-settings.md)
 ### [Valider des stratégies de protection des applications](manage-apps/validate-app-protection-policies.md)
 ### [Surveiller l’état de protection des utilisateurs d’applications](manage-apps/monitor-app-protection-policies-with-microsoft-intune.md)
 ### [Gérer les transferts de données entre applications iOS](manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -190,7 +190,7 @@
 ### [Créer une stratégie de compatibilité Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Créer une stratégie de compatibilité iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Créer une stratégie de compatibilité Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [Créer des Actions en cas de non-conformité](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [Surveiller la conformité des appareils](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
