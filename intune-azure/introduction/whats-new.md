@@ -6,7 +6,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 04/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: 9554a431859665312daf414f2c6cdfb47baf8547
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: f209429bbafe50530e90bbaf133f780f448a8c57
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -33,13 +34,18 @@ Nous partagerons ici les avancées faites avec la version préliminaire et les f
 
 ## <a name="april-2017"></a>Avril 2017
 
+### <a name="support-for-managing-the-apple-classroom-app"></a>Prise en charge de la gestion de l’application Apple Classroom
+
+Vous pouvez désormais gérer l’application iOS Classroom sur des appareils iPad. Configurez l’application Classroom sur l’iPad des enseignants avec les données sur les étudiants et les cours appropriées, puis configurez les iPad des étudiants inscrits à un cours, afin que vous puissiez les contrôler à l’aide de l’application.
+Pour plus d’informations, consultez [Configurer les paramètres d’éducation iOS](../configure-devices/how-to-configure-ios-edu-settings.md).
+
 ### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>Prise en charge des options de configuration gérées pour les applications Android <!-- 621621 -->
 
 Les applications Android dans le Play Store qui prennent en charge les options de configuration gérées peuvent désormais être configurées par Intune.  Cette fonctionnalité permet au personnel informatique d’afficher la liste des valeurs de configuration prises en charge par une application, et fournit une interface interactive et guidée de premier plan pour lui permettre de configurer ces valeurs.
 
 ### <a name="new-android-policy-for-complex-pins----722069---"></a>Nouvelle stratégie Android pour les codes PIN complexes <!-- 722069 -->
 
-Vous pouvez maintenant définir un type de [mot de passe](/intune-azure/configure-devices/device-restrictions-for-android#password) requis « Chiffres complexes » dans un profil d’appareil Android pour les appareils qui exécutent Android 5.0 et versions ultérieures.  Utilisez ce paramètre pour empêcher les utilisateurs d’appareils de créer un code PIN qui contient des nombres répétés ou consécutifs, tel que 1111 ou 1234.
+Vous pouvez maintenant définir un type de [mot de passe](../configure-devices/device-restrictions-for-android.md#password) requis « Chiffres complexes » dans un profil d’appareil Android pour les appareils qui exécutent Android 5.0 et versions ultérieures.  Utilisez ce paramètre pour empêcher les utilisateurs d’appareils de créer un code PIN qui contient des nombres répétés ou consécutifs, tel que 1111 ou 1234.
 
 ### <a name="additional-support-for-android-for-work-devices"></a>Prise en charge supplémentaire des appareils Android for Work
 
@@ -55,26 +61,26 @@ Ce profil de restriction d’appareil Android for Work a été enrichi de nouvel
 
   Ce nouveau profil d’appareil personnalisé pour les appareils Android for Work vous permet de désormais limiter les actions Copier et Coller entre applications professionnelles et personnelles.
 
-Pour plus d’informations, consultez [Device restrictions for Android for Work](/intune-azure/configure-devices/device-restrictions-for-afw) (Restrictions d’appareils pour Android for Work).
+Pour plus d’informations, consultez [Device restrictions for Android for Work](../configure-devices/device-restrictions-for-afw.md) (Restrictions d’appareils pour Android for Work).
 
 ### <a name="assign-lob-apps-to-ios-and-android-devices----1057568---"></a>Affecter des applications métier aux appareils iOS et Android <!-- 1057568 -->
 
-Vous pouvez désormais affecter des applications métier pour [iOS](/intune-azure/manage-apps/ios-lob-app) (fichiers .ipa) et [Android](/intune-azure/manage-apps/android-lob-app) (fichiers .apk) à des utilisateurs ou des appareils.
+Vous pouvez désormais affecter des applications métier pour [iOS](../manage-apps/ios-lob-app.md) (fichiers .ipa) et [Android](../manage-apps/android-lob-app.md) (fichiers .apk) à des utilisateurs ou des appareils.
 
 ###  <a name="new-device-policies-for-ios----723774-723815-723826-723830---"></a>Nouvelles stratégies d’appareil pour iOS <!-- 723774, 723815, 723826, 723830 -->
 
-- **Applications dans l’écran d’accueil** : contrôle les applications qui s’affichent dans [l’écran d’accueil de l’appareil iOS](/intune-azure/configure-devices/home-screen-settings-for-ios) d’un utilisateur. Cette stratégie change la disposition de l’écran d’accueil, mais ne déploie aucune application que vous avez spécifiée si elle n’est pas installée.
+- **Applications dans l’écran d’accueil** : contrôle les applications qui s’affichent dans [l’écran d’accueil de l’appareil iOS](../configure-devices/home-screen-settings-for-ios.md) d’un utilisateur. Cette stratégie change la disposition de l’écran d’accueil, mais ne déploie aucune application que vous avez spécifiée si elle n’est pas installée.
 
-- **Connexions aux appareils AirPrint** : contrôle les [appareils AirPrint](/intune-azure/configure-devices/air-print-settings-for-ios-and-macos) (imprimantes réseau) auxquels les utilisateurs finaux d’appareils iOS peuvent se connecter.
+- **Connexions aux appareils AirPrint** : contrôle les [appareils AirPrint](../configure-devices/air-print-settings-for-ios-and-macos.md) (imprimantes réseau) auxquels les utilisateurs finaux d’appareils iOS peuvent se connecter.
 
-- **Connexions aux appareils AirPlay** : contrôle les [appareils AirPlay](/intune-azure/configure-devices/airplay-settings-for-ios-devices) (comme Apple TV) auxquels les utilisateurs finaux d’appareils iOS peuvent se connecter.
+- **Connexions aux appareils AirPlay** : contrôle les [appareils AirPlay](../configure-devices/airplay-settings-for-ios-devices.md) (comme Apple TV) auxquels les utilisateurs finaux d’appareils iOS peuvent se connecter.
 
-- **Message d’écran de verrouillage personnalisé** : permet de configurer un message personnalisé qui s’affiche sur l’écran de verrouillage des appareils iOS à la place du message d’écran de verrouillage par défaut. Pour plus d’informations, consultez [Actions d’appareils disponibles](/intune-azure/manage-devices/what-is#available-device-actions).
+- **Message d’écran de verrouillage personnalisé** : permet de configurer un message personnalisé qui s’affiche sur l’écran de verrouillage des appareils iOS à la place du message d’écran de verrouillage par défaut. Pour plus d’informations, consultez [Actions d’appareils disponibles](../manage-devices/what-is.md#available-device-actions).
 
 
 ### <a name="restrict-push-notifications-for-ios-apps----723767---"></a>Restreindre les notifications Push pour les applications iOS <!-- 723767 -->
 
-Dans un profil de restriction d’appareil Intune, vous pouvez maintenant configurer les [paramètres de notification](/intune-azure/configure-devices/app-notification-settings-for-ios) suivants pour les appareils iOS :
+Dans un profil de restriction d’appareil Intune, vous pouvez maintenant configurer les [paramètres de notification](../configure-devices/app-notification-settings-for-ios.md) suivants pour les appareils iOS :
 
 - Activer ou désactiver entièrement la notification pour une application spécifiée.
 - Activer ou désactiver la notification dans le Centre de notification pour une application spécifiée.
@@ -84,11 +90,11 @@ Dans un profil de restriction d’appareil Intune, vous pouvez maintenant config
 
 ### <a name="configure-ios-apps-to-run-in-single-app-mode-autonomously----737837---"></a>Configurer les applications iOS pour s’exécuter en mode Application unique autonome <!-- 737837 -->
 
-Vous pouvez désormais utiliser un profil d’appareil Intune pour configurer les appareils iOS pour qu’ils exécutent les applications spécifiées en [mode Application unique autonome](/intune-azure/configure-devices/device-restrictions-for-ios#autonomous-single-app-mode-supervised-only). Quand ce mode est configuré et que l’application est exécutée, l’appareil est verrouillé et il ne peut exécuter que cette application. Vous pouvez par exemple utiliser ce mode quand vous configurez une application qui permet aux utilisateurs d’effectuer un test sur l’appareil. Une fois les actions de l’application terminées, ou si vous supprimez cette stratégie, l’appareil retourne à son état normal.
+Vous pouvez désormais utiliser un profil d’appareil Intune pour configurer les appareils iOS pour qu’ils exécutent les applications spécifiées en [mode Application unique autonome](../configure-devices/device-restrictions-for-ios.md#autonomous-single-app-mode-supervised-only). Quand ce mode est configuré et que l’application est exécutée, l’appareil est verrouillé et il ne peut exécuter que cette application. Vous pouvez par exemple utiliser ce mode quand vous configurez une application qui permet aux utilisateurs d’effectuer un test sur l’appareil. Une fois les actions de l’application terminées, ou si vous supprimez cette stratégie, l’appareil retourne à son état normal.
 
 ### <a name="configure-trusted-domains-for-email-and-web-browsing-on-ios-devices----723765---"></a>Configurer des domaines approuvés pour la messagerie électronique et la navigation web sur des appareils iOS <!-- 723765 -->
 
-À partir d’un profil de restriction d’appareil iOS, vous pouvez maintenant configurer les [paramètres de domaine suivants](/intune-azure/configure-devices/device-restrictions-for-ios#domains) :
+À partir d’un profil de restriction d’appareil iOS, vous pouvez maintenant configurer les [paramètres de domaine suivants](../configure-devices/device-restrictions-for-ios.md#domains) :
 
 - **Domaines d’e-mail non marqués** - Les e-mails reçus ou envoyés par l’utilisateur qui ne correspondent pas aux domaines que vous spécifiez ici sont marqués comme non approuvés.
 
@@ -103,27 +109,27 @@ Vous pouvez désormais affecter des applications achetées en volume (VPP) iOS c
 
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Synchroniser des livres électroniques à partir de l’Apple VPP Store <!-- 800878 -->
 
-Vous pouvez maintenant [synchroniser les livres](/intune-azure/manage-apps/ios-vpp-apps) que vous avez achetés dans la boutique VPP (Programme d’achat en volume) d’Apple avec Intune, et les attribuer à des utilisateurs.
+Vous pouvez maintenant [synchroniser les livres](../manage-apps/ios-vpp-apps.md) que vous avez achetés dans la boutique VPP (Programme d’achat en volume) d’Apple avec Intune, et les attribuer à des utilisateurs.
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Gestion des utilisateurs multiples pour les appareils Samsung KNOX Standard <!-- 971988 -->
 
-Les appareils qui exécutent Samsung KNOX Standard sont désormais pris en charge pour la [gestion des utilisateurs multiples](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices) par Intune. Cela signifie que les utilisateurs finaux peuvent se connecter et se déconnecter de l’appareil avec leurs informations d’identification Azure Active Directory, et que l’appareil est géré de façon centralisée qu’il soit en cours d’utilisation ou non.  Quand les utilisateurs finaux se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.
+Les appareils qui exécutent Samsung KNOX Standard sont désormais pris en charge pour la [gestion des utilisateurs multiples](../enroll-devices/enroll-android-and-knox-standard-devices.md) par Intune. Cela signifie que les utilisateurs finaux peuvent se connecter et se déconnecter de l’appareil avec leurs informations d’identification Azure Active Directory, et que l’appareil est géré de façon centralisée qu’il soit en cours d’utilisation ou non.  Quand les utilisateurs finaux se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.
 
 ### <a name="additional-windows-device-restriction-settings----818566---"></a>Paramètres supplémentaires de restriction d’appareil Windows <!-- 818566 -->
 
-Nous avons ajouté la prise en charge d’autres [paramètres de restriction d’appareil Windows](/intune-azure/configure-devices/device-restrictions-for-windows-10), comme une prise en charge supplémentaire du navigateur Edge, la personnalisation de l’écran de verrouillage d’appareil, la personnalisation du menu Démarrer, les papiers peints Windows à la une et les paramètres de proxy.
+Nous avons ajouté la prise en charge d’autres [paramètres de restriction d’appareil Windows](../configure-devices/device-restrictions-for-windows-10.md), comme une prise en charge supplémentaire du navigateur Edge, la personnalisation de l’écran de verrouillage d’appareil, la personnalisation du menu Démarrer, les papiers peints Windows à la une et les paramètres de proxy.
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Prise en charge multi-utilisateur pour Windows 10 Creators Update <!-- 822547 -->
 
-Nous avons ajouté la prise en charge de la [gestion des utilisateurs multiples](/intune-azure/enroll-devices/enroll-windows-devices) pour les appareils qui exécutent Windows 10 Creators Update et sont joints à un domaine Azure Active Directory. Cela signifie que quand différents utilisateurs standard ouvrent une session sur l’appareil avec leurs informations d’identification Azure AD, ils reçoivent les applications et les stratégies qui ont été affectées à leur nom d’utilisateur. Les utilisateurs ne peuvent actuellement pas utiliser le portail d’entreprise pour les scénarios de libre-service tels que l’installation d’applications.
+Nous avons ajouté la prise en charge de la [gestion des utilisateurs multiples](../enroll-devices/enroll-windows-devices.md) pour les appareils qui exécutent Windows 10 Creators Update et sont joints à un domaine Azure Active Directory. Cela signifie que quand différents utilisateurs standard ouvrent une session sur l’appareil avec leurs informations d’identification Azure AD, ils reçoivent les applications et les stratégies qui ont été affectées à leur nom d’utilisateur. Les utilisateurs ne peuvent actuellement pas utiliser le portail d’entreprise pour les scénarios de libre-service tels que l’installation d’applications.
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Fresh Start pour les PC Windows 10<!-- 1004830 -->
 
-Une nouvelle [action d’appareil Fresh Start](/intune-azure/manage-devices/what-is#available-device-actions) est maintenant disponible pour les PC Windows 10.  Quand vous exécutez cette action, les applications qui ont été installées sur l’ordinateur sont supprimées, et le PC est automatiquement mis à jour vers la dernière version de Windows. Vous pouvez ainsi supprimer des applications OEM préinstallées, comme celles qui sont souvent fournies avec un nouveau PC. Vous pouvez configurer si les données utilisateur sont conservées quand cette action est exécutée sur l’appareil.
+Une nouvelle [action d’appareil Fresh Start](../manage-devices/what-is.md#available-device-actions) est maintenant disponible pour les PC Windows 10.  Quand vous exécutez cette action, les applications qui ont été installées sur l’ordinateur sont supprimées, et le PC est automatiquement mis à jour vers la dernière version de Windows. Vous pouvez ainsi supprimer des applications OEM préinstallées, comme celles qui sont souvent fournies avec un nouveau PC. Vous pouvez configurer si les données utilisateur sont conservées quand cette action est exécutée sur l’appareil.
 
 ### <a name="additional-windows-10-upgrade-paths----903672---"></a>Chemins de mise à niveau Windows 10 supplémentaires <!-- 903672 -->
 
-Vous pouvez désormais créer une [stratégie de mise à niveau d’édition pour mettre à niveau les appareils](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade) vers les éditions Windows 10 supplémentaires suivantes :
+Vous pouvez désormais créer une [stratégie de mise à niveau d’édition pour mettre à niveau les appareils](../configure-devices/how-to-configure-windows-10-edition-upgrade.md) vers les éditions Windows 10 supplémentaires suivantes :
 
 - Windows 10 Professionnel
 - Windows 10 Professionnel N
@@ -132,7 +138,7 @@ Vous pouvez désormais créer une [stratégie de mise à niveau d’édition pou
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Inscription en bloc des appareils Windows 10 <!-- 747607 -->
 
-Vous pouvez désormais joindre un grand nombre d’appareils qui exécutent la mise à jour Windows 10 Creators pour Azure Active Directory et Intune à l’aide du Concepteur de configuration Windows (WCD). Pour activer [l’inscription MDM en bloc](/intune-azure/enroll-devices/bulk-enroll-windows) pour votre client Azure AD, créez un package de configuration qui joint les périphériques à votre client Azure AD à l’aide du Concepteur de configuration Windows, puis appliquez le package aux appareils d’entreprise que vous souhaitez inscrire et gérer en bloc. Une fois le package appliqué à vos appareils, ceux-ci se connectent à Azure AD et s’inscrivent dans Intune. Ils sont alors prêts pour que vos utilisateurs Azure AD s’y connectent.  Les utilisateurs d’Azure AD agissent sur ces appareils en tant qu’utilisateurs standard ; ils reçoivent les stratégies qui leur sont affectées ainsi que les applications dont ils ont besoin. Les scénarios de libre-service et de portail d’entreprise ne sont pas pris en charge pour le moment.
+Vous pouvez désormais joindre un grand nombre d’appareils qui exécutent la mise à jour Windows 10 Creators pour Azure Active Directory et Intune à l’aide du Concepteur de configuration Windows (WCD). Pour activer [l’inscription MDM en bloc](../enroll-devices/bulk-enroll-windows.md) pour votre client Azure AD, créez un package de configuration qui joint les périphériques à votre client Azure AD à l’aide du Concepteur de configuration Windows, puis appliquez le package aux appareils d’entreprise que vous souhaitez inscrire et gérer en bloc. Une fois le package appliqué à vos appareils, ceux-ci se connectent à Azure AD et s’inscrivent dans Intune. Ils sont alors prêts pour que vos utilisateurs Azure AD s’y connectent.  Les utilisateurs d’Azure AD agissent sur ces appareils en tant qu’utilisateurs standard ; ils reçoivent les stratégies qui leur sont affectées ainsi que les applications dont ils ont besoin. Les scénarios de libre-service et de portail d’entreprise ne sont pas pris en charge pour le moment.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>Nouveaux paramètres GAM pour les codes PIN et les emplacements de stockage géré <!-- 581122, 736644 -->
 
@@ -150,7 +156,7 @@ Deux nouveaux paramètres d’application sont désormais disponibles pour vous 
 
 ### <a name="help-desk-troubleshooting-portal----907448---"></a>Portail de dépannage du centre de support technique <!-- 907448 -->
 
-Le nouveau [portail de dépannage](/intune-azure/manage-users/help-desk) permet aux opérateurs du centre de support technique et aux administrateurs Intune de visualiser les utilisateurs et leurs appareils, et d’effectuer des tâches pour résoudre les problèmes techniques liés à Intune.
+Le nouveau [portail de dépannage](../manage-users/help-desk.md) permet aux opérateurs du centre de support technique et aux administrateurs Intune de visualiser les utilisateurs et leurs appareils, et d’effectuer des tâches pour résoudre les problèmes techniques liés à Intune.
 
 ## <a name="march-2017"></a>Mars 2017
 
@@ -162,7 +168,7 @@ L’utilisateur final ne peut pas déverrouiller l’appareil tant qu’un admin
 
 L’appareil doit être un appareil iOS d’entreprise, inscrit via le programme DEP, qui est en mode supervisé.
 
-Pour plus d’informations, consultez [Qu’est-ce que la gestion des appareils Microsoft Intune ?](/intune-azure/manage-devices/what-is)
+Pour plus d’informations, consultez [Qu’est-ce que la gestion des appareils Microsoft Intune ?](../manage-devices/what-is.md)
 
 ### <a name="improvements-to-device-actions-report---677150--"></a>Améliorations du rapport Actions de l’appareil <!--677150-->
 
@@ -176,7 +182,7 @@ Nous avons apporté des améliorations au rapport Actions de l’appareil afin d
 ### <a name="custom-app-categories---748805--"></a>Catégories d’applications personnalisées <!--748805-->
 
 Vous pouvez désormais créer, modifier et attribuer des catégories pour les applications que vous ajoutez à Intune. Actuellement, les catégories ne peuvent être spécifiées qu'en anglais.
-Consultez [Guide pratique pour ajouter une application à Intune](/intune-azure/manage-apps/add-apps).
+Consultez [Guide pratique pour ajouter une application à Intune](../manage-apps/add-apps.md).
 
 ### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>Attribuer des applications cœur de métier aux utilisateurs disposant d’appareils non inscrits <!--748823-->
 
@@ -212,34 +218,34 @@ Intune ajoute de nouvelles restrictions d’inscription qui contrôlent les plat
 * La restriction de l’inscription d’appareils mobiles ne limite pas l’inscription des clients de PC.  
 * Pour iOS et Android uniquement, il existe une option supplémentaire pour bloquer l’inscription des appareils personnels.
 
-Intune marque tous les nouveaux appareils comme personnels, sauf si l’administrateur prend des mesures pour les marquer comme appareils d’entreprise, comme expliqué dans [cet article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+Intune marque tous les nouveaux appareils comme personnels, sauf si l’administrateur prend des mesures pour les marquer comme appareils d’entreprise, comme expliqué dans [cet article](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices).
 
 ### <a name="view-all-actions-on-managed-devices---677150--"></a>Afficher toutes les actions sur les appareils gérés <!--677150-->
-Un nouveau rapport __Actions de l’appareil__ indique l’utilisateur qui a effectué des actions à distance, comme un rétablissement des paramètres d’usine sur les appareils, et montre également l’état de cette action. Consultez [Qu’est-ce que la gestion des appareils ?](https://docs.microsoft.com/intune-azure/manage-devices/what-is).
+Un nouveau rapport __Actions de l’appareil__ indique l’utilisateur qui a effectué des actions à distance, comme un rétablissement des paramètres d’usine sur les appareils, et montre également l’état de cette action. Consultez [Qu’est-ce que la gestion des appareils ?](https://docs.microsoft.com../manage-devices/what-is.md).
 
 ### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Les appareils non gérés peuvent accéder aux applications attribuées <!--664691-->
 Dans le cadre des modifications conceptuelles du site web du portail d’entreprise, les utilisateurs iOS et Android peuvent installer les applications attribuées indiquées comme « disponibles sans inscription » sur leurs appareils non gérés. À l’aide de leurs informations d’identification Intune, les utilisateurs peuvent se connecter au site web du portail d’entreprise et afficher la liste des applications qui leur sont attribuées. Les packages des applications « disponibles sans inscription » peuvent être téléchargés sur le site web du portail d’entreprise. Les applications dont l’installation nécessite une inscription ne sont pas affectées par cette modification, car les utilisateurs sont invités à inscrire leur appareil s’ils souhaitent installer ces applications.
 
 ### <a name="custom-app-categories---748805--"></a>Catégories d’applications personnalisées <!--748805-->
 Vous pouvez désormais créer, modifier et attribuer des catégories pour les applications que vous ajoutez à Intune. Actuellement, les catégories ne peuvent être spécifiées qu'en anglais.
-Consultez [Guide pratique pour ajouter une application à Intune](/intune-azure/manage-apps/add-apps).
+Consultez [Guide pratique pour ajouter une application à Intune](../manage-apps/add-apps.md).
 
 ### <a name="display-device-categories---814654--"></a>Afficher des catégories d’appareils <!--814654-->
-Vous pouvez maintenant afficher la catégorie d’appareil sous forme de colonne dans la liste des appareils. Vous pouvez également modifier la catégorie dans la section des propriétés du panneau Propriétés de l’appareil. Consultez [Guide pratique pour ajouter une application à Intune](/intune-azure/manage-apps/add-apps).
+Vous pouvez maintenant afficher la catégorie d’appareil sous forme de colonne dans la liste des appareils. Vous pouvez également modifier la catégorie dans la section des propriétés du panneau Propriétés de l’appareil. Consultez [Guide pratique pour ajouter une application à Intune](../manage-apps/add-apps.md).
 
 ### <a name="configure-windows-update-for-business-settings---776716--"></a>Configurer les paramètres Windows Update for Business <!--776716-->
 
 Windows en tant que service est la nouvelle façon de fournir des mises à jour pour Windows 10. À partir de Windows 10, les nouvelles mises à jour de fonctionnalités et qualité incluent le contenu de toutes les mises à jour précédentes. Cela signifie que tant que vous avez installé la dernière mise à jour, vous savez que vos appareils Windows 10 sont entièrement à jour. À la différence des versions précédentes de Windows, vous devez maintenant installer la mise à jour complète au lieu d’une partie seulement.
 
-En utilisant Windows Update for Business, vous pouvez simplifier l’expérience de gestion des mises à jour et vous ne devez plus approuver des mises à jour propres à des groupes d’appareils. Vous pouvez toujours gérer les risques dans votre environnement en configurant une stratégie de déploiement de mises à jour afin que Windows Update fasse en sorte que les mises à jour soient installées au moment opportun. Microsoft Intune permet de configurer les paramètres de mise à jour des appareils et vous donne la possibilité de reporter l’installation des mises à jour. Intune ne stocke pas les mises à jour, seulement l’attribution des stratégies de mise à jour. Les appareils accèdent directement à Windows Update. Utilisez Intune pour configurer et gérer les **anneaux de mise à jour Windows 10**. Un anneau de mise à jour contient un groupe de paramètres permettant de configurer le moment et la façon d’installer les mises à jour Windows 10. Pour plus d’informations, consultez [Configurer les paramètres Windows Update for Business](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
+En utilisant Windows Update for Business, vous pouvez simplifier l’expérience de gestion des mises à jour et vous ne devez plus approuver des mises à jour propres à des groupes d’appareils. Vous pouvez toujours gérer les risques dans votre environnement en configurant une stratégie de déploiement de mises à jour afin que Windows Update fasse en sorte que les mises à jour soient installées au moment opportun. Microsoft Intune permet de configurer les paramètres de mise à jour des appareils et vous donne la possibilité de reporter l’installation des mises à jour. Intune ne stocke pas les mises à jour, seulement l’attribution des stratégies de mise à jour. Les appareils accèdent directement à Windows Update. Utilisez Intune pour configurer et gérer les **anneaux de mise à jour Windows 10**. Un anneau de mise à jour contient un groupe de paramètres permettant de configurer le moment et la façon d’installer les mises à jour Windows 10. Pour plus d’informations, consultez [Configurer les paramètres Windows Update for Business](../configure-devices/how-to-configure-windows-update-for-business.md).
 
 ## <a name="january-2017"></a>Janvier 2017
 
 ### <a name="assign-line-of-business-apps-whether-or-not-devices-are-enrolled---748823--"></a>Attribuer des applications métier que les appareils soient inscrits ou non<!--748823-->
-Vous pouvez désormais attribuer aux utilisateurs des applications métier à partir du magasin, que leurs appareils soient inscrits ou non auprès d'Intune. Si l'appareil de l’utilisateur n’est pas inscrit auprès d'Intune, ce dernier doit se rendre sur le site Web du portail d’entreprise, au lieu de l’application du portail d’entreprise, pour l'installer. Consultez [Qu’est-ce que la gestion des applications](/intune-azure/manage-apps/what-is-app-management).
+Vous pouvez désormais attribuer aux utilisateurs des applications métier à partir du magasin, que leurs appareils soient inscrits ou non auprès d'Intune. Si l'appareil de l’utilisateur n’est pas inscrit auprès d'Intune, ce dernier doit se rendre sur le site Web du portail d’entreprise, au lieu de l’application du portail d’entreprise, pour l'installer. Consultez [Qu’est-ce que la gestion des applications](../manage-apps/what-is-app-management.md).
 
 ### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Résoudre le problème quand les appareils iOS sont inactifs ou que la console d’administration ne peut pas communiquer avec eux
-Quand les appareils des utilisateurs perdent le contact avec Intune, vous pouvez leur appliquer de nouvelles étapes de dépannage pour leur permettre de récupérer l’accès aux ressources d’entreprise. Consultez [Les appareils sont inactifs ou la console d’administration ne peut pas communiquer avec eux](/intune-azure/enroll-devices/troubleshoot-device-enrollment#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+Quand les appareils des utilisateurs perdent le contact avec Intune, vous pouvez leur appliquer de nouvelles étapes de dépannage pour leur permettre de récupérer l’accès aux ressources d’entreprise. Consultez [Les appareils sont inactifs ou la console d’administration ne peut pas communiquer avec eux](../enroll-devices/troubleshoot-device-enrollment.md#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 ## <a name="december-2016-initial-release"></a>Décembre 2016 (première version)
 
