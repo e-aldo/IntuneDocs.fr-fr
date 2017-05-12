@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: b464a07e701797d39b7f9f50d1854a9a2682ac8e
-ms.openlocfilehash: 3208e964f2676ebcc1e54e29f039c4965c20238f
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 02675b6fe9872cb634d0515172f696cedc7e6463
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,14 +38,14 @@ Quand vous inscrivez directement des appareils iOS, vous pouvez inscrire un appa
 Les autres méthodes d’inscription d’appareils iOS sont décrites dans [Choisir comment inscrire des appareils iOS dans Intune](choose-ios-enrollment-method.md).
 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
-Avant de configurer l’inscription des appareils iOS, effectuez les préparatifs suivants :
+Avant de configurer l’inscription des appareils iOS, effectuez les prérequis suivants :
 
 - [Configurer des domaines](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Configurer l’autorité MDM](set-mdm-authority.md)
 - [Créer des groupes](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Configurer le portail d’entreprise](/intune-azure/manage-apps/company-portal-app)
+- [Configurer le portail d’entreprise](../manage-apps/company-portal-app.md)
 - Attribuer des licences utilisateur dans le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obtenir un certificat Push MDM Apple](get-an-apple-mdm-push-certificate.md)
 - Assurez-vous d’avoir un accès physique aux appareils iOS

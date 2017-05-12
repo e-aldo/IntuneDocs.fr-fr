@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Si vous utilisez Exchange ActiveSync (soit localement, soit hébergé dans le cl
 
 Le tableau suivant présente les méthodes d’inscription Intune, ainsi que les fonctionnalités prises en charge et les exigences de chaque méthode. Les fonctionnalités et les exigences sont décrites ci-dessous. Les termes suivants sont utilisés dans le tableau :
 
-- **Réinitialisation** : indique si l’appareil doit être réinitialisé pour que les utilisateurs puissent inscrire l’appareil. Le terme « réinitialiser » implique une réinitialisation des paramètres d’usine de l’appareil, laquelle supprime toutes les données. Pour plus d’informations, consultez [Utilisation de la réinitialisation complète ou sélective sur les appareils](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
+- **Réinitialisation** : indique si l’appareil doit être réinitialisé pour que les utilisateurs puissent inscrire l’appareil. Le terme « réinitialiser » implique une réinitialisation des paramètres d’usine de l’appareil, laquelle supprime toutes les données. Pour plus d’informations, consultez [Utilisation de la réinitialisation complète ou sélective sur les appareils](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md).
 - **Affinité** : associe les appareils à des utilisateurs. Fonctionnalité nécessaire pour la gestion des applications mobiles (GAM) et l’accès conditionnel aux données d’entreprise. Pour plus d’informations, consultez [Affinité utilisateur](enroll-ios-devices-using-device-enrollment-program.md).
 - **Verrou**: indique que les utilisateurs ne peuvent pas désinscrire leurs appareils de la gestion. Les utilisateurs peuvent désinscrire leurs appareils sur toutes les plateformes à l’aide de l’application Portail d’entreprise. Ils ne peuvent pas utiliser les menus du système d’exploitation natif pour les désinscrire.
 
@@ -70,7 +71,7 @@ Le tableau suivant présente les méthodes d’inscription Intune, ainsi que les
 
 
 ## <a name="byod"></a>BYOD
-Les utilisateurs d’appareils personnels installent l’application Portail d’entreprise et inscrivent leurs propres appareils. Ils peuvent ensuite se connecter au réseau d’entreprise et rejoindre le domaine ou Azure Active Directory. Pour la plupart des plateformes, vous devez activer l’inscription BYOD pour de nombreux scénarios d’appareil d’entreprise. Vous pouvez bloquer l’inscription d’appareils personnels iOS et Android. Consultez la page [Définir des restrictions de type d’appareil](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) pour obtenir des instructions.
+Les utilisateurs d’appareils personnels installent l’application Portail d’entreprise et inscrivent leurs propres appareils. Ils peuvent ensuite se connecter au réseau d’entreprise et rejoindre le domaine ou Azure Active Directory. Pour la plupart des plateformes, vous devez activer l’inscription BYOD pour de nombreux scénarios d’appareil d’entreprise. Vous pouvez bloquer l’inscription d’appareils personnels iOS et Android. Consultez la page [Définir des restrictions de type d’appareil](set-enrollment-restrictions.md#set-device-type-restrictions) pour obtenir des instructions.
 
 ## <a name="corporate-owned-devices"></a>Appareils d’entreprise
 Vous pouvez gérer les appareils d’entreprise (COD, Corporate-Owned Devices) à l’aide du portail Azure. Vous pouvez inscrire les appareils iOS directement par le biais des outils fournis par Apple. Tous les types d’appareils peuvent être inscrits par un administrateur ou un gestionnaire à l’aide du Gestionnaire d’inscription d’appareil. Les appareils dotés d’un numéro IMEI peuvent également être identifiés et référencés comme appartenant à l’entreprise pour activer des scénarios COD.
