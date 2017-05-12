@@ -15,10 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 119c7172f8175d128c3e13d37bb9ec3c91719bcf
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/24/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-**Si vous n’êtes pas dans le service Intune dans le programme de préversion du portail Azure**, cette rubrique explique [comment créer des stratégies de protection d’application](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) dans la console Intune classique.
+**Si vous n’êtes pas dans le service Intune dans le programme de préversion du portail Azure**, cette rubrique explique [comment créer des stratégies de protection d’application](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) dans la console Intune classique.
 
 Les stratégies de protection d'application peuvent être appliquées à des applications qui s’exécutent sur des appareils gérés ou non par Intune. Pour une description plus détaillée du fonctionnement des stratégies de protection d’application et les scénarios pris en charge par les stratégies de protection d’application Intune, consultez [Nouveautés des stratégies de protection d’application Microsoft Intune](what-is-app-protection-policy.md).
 

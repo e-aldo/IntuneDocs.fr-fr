@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -28,7 +29,7 @@ ms.lasthandoff: 03/11/2017
 ## <a name="introduction"></a>Introduction
 Windows en tant que service est la nouvelle façon de fournir des mises à jour pour Windows 10. À partir de Windows 10, les nouvelles mises à jour de fonctionnalités et qualité incluent le contenu de toutes les mises à jour précédentes. Cela signifie que tant que vous avez installé la dernière mise à jour, vous savez que vos appareils Windows 10 sont entièrement à jour. À la différence des versions précédentes de Windows, vous devez maintenant installer la mise à jour complète au lieu d’une partie seulement.
 
-En utilisant Windows Update for Business, vous pouvez simplifier l’expérience de gestion des mises à jour et vous ne devez plus approuver des mises à jour propres à des groupes d’appareils. Vous pouvez toujours gérer les risques dans votre environnement en configurant une stratégie de déploiement des mises à jour afin que Windows Update fasse en sorte que les mises à jour soient installées au moment opportun. Microsoft Intune permet de configurer les paramètres de mise à jour des appareils et vous donne la possibilité de reporter l’installation des mises à jour. Intune ne stocke pas les mises à jour, seulement l’attribution des stratégies de mise à jour. Les appareils accèdent directement à Windows Update pour rechercher les mises à jour. Utilisez Intune pour configurer et gérer les **anneaux de mise à jour Windows 10**. Un anneau de mise à jour contient un groupe de paramètres permettant de configurer le moment et la façon d’installer les mises à jour Windows 10. Par exemple, vous pouvez configurer les paramètres suivants :
+En utilisant Windows Update for Business, vous pouvez simplifier l’expérience de gestion des mises à jour et vous ne devez plus approuver des mises à jour propres à des groupes d’appareils. Vous pouvez toujours gérer les risques dans votre environnement en configurant une stratégie de déploiement de mises à jour afin que Windows Update fasse en sorte que les mises à jour soient installées au moment opportun. Microsoft Intune permet de configurer les paramètres de mise à jour des appareils et vous donne la possibilité de reporter l’installation des mises à jour. Intune ne stocke pas les mises à jour, seulement l’attribution des stratégies de mise à jour. Les appareils accèdent directement à Windows Update. Utilisez Intune pour configurer et gérer les **anneaux de mise à jour Windows 10**. Un anneau de mise à jour contient un groupe de paramètres permettant de configurer le moment et la façon d’installer les mises à jour Windows 10. Par exemple, vous pouvez configurer les paramètres suivants :
 
 - **Branche de maintenance Windows 10** : indiquez si vous souhaitez que des groupes d’appareils reçoivent les mises à jour à partir de Current Branch ou de Current Branch for Business.  
 - **Deferral Settings (Paramètres de report)** : configurez les paramètres de report des mises à jour pour différer l’installation des mises à jour pour des groupes d’appareils. Vous avez alors un déploiement des mises à jour par étapes, ce qui vous permet d’examiner la progression tout au long du processus.
@@ -54,7 +55,7 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 
     ![Paramètre Windows pour les données de diagnostic et d’utilisation](./media/telemetry-basic.png)
 
-    Vous pouvez configurer ce paramètre manuellement, ou vous pouvez utiliser un profil de restriction d’appareils Intune pour Windows 10 et versions ultérieures. Pour ce faire, configurez le paramètre **Général** > **Envoi de données de diagnostic** sur au minimum **De base**. Pour plus d’informations sur les profils d’appareils, consultez [Guide pratique pour configurer des paramètres de restriction d’appareils](/intune-azure/configure-devices/how-to-configure-device-restrictions).
+    Vous pouvez configurer ce paramètre manuellement, ou vous pouvez utiliser un profil de restriction d’appareils Intune pour Windows 10 et versions ultérieures. Pour ce faire, configurez le paramètre **Général** > **Envoi de données de diagnostic** sur au minimum **De base**. Pour plus d’informations sur les profils d’appareils, consultez [Guide pratique pour configurer des paramètres de restriction d’appareils](how-to-configure-device-restrictions.md).
 
 - Dans la console d’administration Intune classique, quatre paramètres contrôlent le comportement des mises à jour logicielles. Ces paramètres font partie de la stratégie de configuration générale pour Windows 10 Desktop et les appareils mobiles :
     - **Autoriser les mises à jour automatiques**
@@ -118,7 +119,7 @@ Par exemple, vous pouvez utiliser les valeurs suivantes dans **Ajouter ou modifi
 
 - **Nom du paramètre** : ID commercial Windows Analytics
 - **Description du paramètre** : configuration d’un ID commercial pour les solutions Windows Analytics
-- **Type de données :** chaîne
+- **Type de données :**  chaîne
 - **OMA-URI** (sensible à la casse) : ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 - **Valeur** : *utilisez le GUID indiqué sous l’onglet Télémétrie Windows dans votre espace de travail OMS*>
 

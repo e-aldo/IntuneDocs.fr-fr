@@ -15,10 +15,11 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: c2ace3061e175a6eefd864bdda176651cc09a5b1
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fb4b81e11ae8c66341922898d9ecc4cce3a002d
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/18/2017
 
 Des stratégies de conformité sont créées pour chaque plateforme.  Vous pouvez créer une stratégie de conformité dans le portail Azure. Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](what-is-device-compliance.md). Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](get-started-with-device-compliance.md).
 
-Le tableau ci-dessous décrit également la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
+La table ci-dessous décrit également la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
 
 -------------------------------
 
@@ -109,7 +110,7 @@ Pour les appareils iOS, ce paramètre indique le nombre de caractères spéciaux
   - L’utilisateur a déjà configuré sur l’appareil un compte e-mail qui correspond au profil de messagerie Intune déployé sur l’appareil. Intune ne peut pas remplacer le profil configuré par l'utilisateur et ne peut donc pas le gérer. Pour assurer la conformité, l’utilisateur doit supprimer les paramètres d’e-mail existants. Ensuite, Intune peut installer le profil de messagerie géré.
 - **Sélectionnez le profil de messagerie géré par Intune** : si vous sélectionnez l’option **Le compte de messagerie doit être géré par Intune**, choisissez **Sélectionner** pour spécifier le profil de messagerie Intune. Le profil de messagerie doit être présent sur l'appareil.
 
-Pour plus d’informations sur les profils de messagerie, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
+Pour plus d’informations sur les profils de messagerie, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
 ## <a name="device-health-settings"></a>Paramètres d’intégrité des appareils
 

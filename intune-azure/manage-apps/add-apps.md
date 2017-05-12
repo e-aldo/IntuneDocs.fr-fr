@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
-ms.openlocfilehash: 20af19a2051a8ebb6f1b2103d761d87fbfdf5da2
+ms.sourcegitcommit: 529a3e91e1f86129de77df0529f48a42f86a6521
+ms.openlocfilehash: 69ae0926631edc00cc2dc12be559d366e1623140
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/11/2017
 
 ---
 
@@ -71,8 +71,8 @@ Les catégories d’applications peuvent être utilisées pour vous aider à tri
 Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sélectionner la catégorie souhaitée. Utilisez les rubriques spécifiques à la plateforme pour ajouter une application et attribuer des catégories. Pour créer et modifier vos propres catégories, procédez comme suit :
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
+2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
 4. Dans la charge de travail **Mobile Apps**, choisissez **Installation** > **Catégories d’application**.
 5. Dans le panneau **Catégories d’application**, la liste des catégories actuelles s’affiche. Sélectionnez une des actions suivantes :
     - **Créer une catégorie** : dans le panneau **Créer une catégorie**, saisissez un nom pour la nouvelle catégorie. Les noms peuvent être entrés dans une seule langue et ne sont pas traduits par Intune. Quand vous avez terminé, cliquez sur **Créer**.
@@ -114,13 +114,13 @@ Les applications suivantes, publiées par Microsoft, sont intégrées à Intune 
 
 Choisissez une des rubriques suivantes afin de savoir comment ajouter à Intune des applications pour chaque plateforme :
 
-- [Applications de l’App Store Android](/intune-azure/manage-apps/android-store-app)
-- [Applications métier Android](/intune-azure/manage-apps/android-lob-app)
-- [Applications de l’App Store iOS](/intune-azure/manage-apps/ios-store-app)
-- [Applications métier iOS](/intune-azure/manage-apps/ios-lob-app)
-- [Applications Web (pour toutes les plateformes)](/intune-azure/manage-apps/web-app)
-- [Application du Windows Phone 8.1 Store](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Applications métier Windows Phone](/intune-azure/manage-apps/windows-phone-line-of-business-app)
-- [Applications Windows Store](/intune-azure/manage-apps/windows-store-app)
-- [Application métier Windows](/intune-azure/manage-apps/windows-line-of-business-app)
+- [Applications de l’App Store Android](android-store-app.md)
+- [Applications métier Android](android-lob-app.md)
+- [Applications de l’App Store iOS](ios-store-app.md)
+- [Applications métier iOS](ios-lob-app.md)
+- [Applications Web (pour toutes les plateformes)](web-app.md)
+- [Application du Windows Phone 8.1 Store](windows-phone-8-1-store-app.md)
+- [Applications métier Windows Phone](windows-phone-line-of-business-app.md)
+- [Applications Windows Store](windows-store-app.md)
+- [Application métier Windows](windows-line-of-business-app.md)
 

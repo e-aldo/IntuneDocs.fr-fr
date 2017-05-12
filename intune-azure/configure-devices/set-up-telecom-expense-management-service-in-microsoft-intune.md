@@ -15,10 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -99,7 +100,7 @@ Pour vérifier que l’utilisation des données à partir de lignes appartenant 
 
 En fonction des besoins de votre organisation, vous devez créer au moins deux catégories d’appareils (par exemple, Entreprise et Personnels) et créer des groupes d’appareils dynamiques pour chaque catégorie. Si nécessaire, vous pouvez créer des catégories supplémentaires pour votre organisation.
 
-Ces catégories s’affichent aux utilisateurs lors de l’inscription. En fonction de la catégorie choisie par les utilisateurs, l’appareil inscrit est déplacé vers le groupe d’appareils correspondant. Pour connaître les étapes permettant de créer des catégories d’appareils, consultez [Mapper des appareils à des groupes](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping).
+Ces catégories s’affichent aux utilisateurs lors de l’inscription. En fonction de la catégorie choisie par les utilisateurs, l’appareil inscrit est déplacé vers le groupe d’appareils correspondant. Pour connaître les étapes permettant de créer des catégories d’appareils, consultez [Mapper des appareils à des groupes](../enroll-devices/how-to-use-device-group-mapping.md).
 
   ![Capture d’écran du panneau Ajouter une stratégie](../media/tem-dynamic-membership-rules.png)
 

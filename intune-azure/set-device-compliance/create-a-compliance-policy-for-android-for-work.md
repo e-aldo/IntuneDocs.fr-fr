@@ -15,10 +15,11 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 48eaa3cbe1ff4e3fb18bfa762a341dbe74a7adce
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 87ce81aaea38bf5a289b20b7eb3e83e916fc0e3f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -112,7 +113,7 @@ Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appar
   - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
   - **Élevé** : cette option est la moins sécurisée. Les menaces de tout niveau sont fondamentalement autorisées. Cette option peut être utile uniquement si vous utilisez cette solution pour créer des rapports.
 
-Pour plus d’informations, consultez [Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+Pour plus d’informations, consultez [Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité](https://docs.microsoft.com/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
 
