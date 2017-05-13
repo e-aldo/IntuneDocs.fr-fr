@@ -14,9 +14,10 @@ ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
 ms.openlocfilehash: 86a59771fc57971a626f71083e81cd4b7d858cfa
+ms.contentlocale: fr-fr
 ms.lasthandoff: 04/25/2017
 
 
@@ -41,7 +42,7 @@ Avant de créer une stratégie de protection d’application Windows 10, vous de
 
 3.  Le panneau **Azure AD** s’ouvre, choisissez **Mobilité (MDM et MAM)**, puis cliquez sur **Microsoft Intune**.
 
-    ![Mobilité (gestion des données de référence et gestion des applications mobiles)](../media/AppManagement/mam-provider-sc-1.png)
+    ![Mobilité (gestion des données de référence et gestion des applications mobiles)](../media/AppManagement/mam-provider-sc-2.png)
 
 4.  Le volet Configuration s’ouvre, choisissez d’abord **Restaurer les URL MAM par défaut**, puis configurez ce qui suit :
 
