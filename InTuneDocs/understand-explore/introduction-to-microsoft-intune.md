@@ -5,7 +5,7 @@ keywords: "définition d’Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/7/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 2552f84dc38c4453851167cd1570143c7a9820c2
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -32,7 +33,7 @@ Intune est un service de gestion de la mobilité en entreprise basé sur le clou
 * protéger vos informations d’entreprise en contrôlant la façon dont votre personnel y accède et les partage ;
 * vérifier que les appareils et les applications sont conformes aux exigences de sécurité de l’entreprise.
 
-Intune s’intègre étroitement à Azure Active Directory (Azure AD) pour le contrôle d’identité et d’accès, ainsi qu’à Azure Information Protection pour la protection des données. Il s’agit de l’*entité de gestion* de Microsoft Enterprise Mobility + Security (EMS), tandis qu’Office 365 constitue l’*entité de productivité* de la solution de mobilité de Microsoft.  
+Intune s’intègre étroitement à Azure Active Directory (Azure AD) pour le contrôle d’identité et d’accès, ainsi qu’à Azure Information Protection pour la protection des données.
 
 Ensemble, Office 365 et EMS permettent à votre personnel d’être productif sur tous ses appareils tout en assurant la protection des informations de votre organisation. Office 365 avec EMS est une suite intégrée complète qui est dédiée à la mobilité en entreprise incluant la productivité, l’identité, le contrôle d’accès, la gestion et la protection des données. Elle constitue une méthode efficace pour déployer et utiliser une solution de mobilité dans votre organisation.
 
