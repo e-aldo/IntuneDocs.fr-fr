@@ -14,10 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 7171dab36ace4915b51def2dd717e63df8438135
+ms.contentlocale: fr-fr
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +48,7 @@ La gestion des appareils Intune fournit [ces fonctionnalités](mobile-device-man
 
 ### <a name="windows-pc-software-client"></a>Logiciel client pour PC Windows
 
-Vous pouvez déployer et installer un [logiciel client Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) sur les PC Windows en guise d’alternative à l’inscription. Vous pouvez utiliser le logiciel client Intune pour gérer des PC Windows 7 et versions ultérieures, à l’exception de Windows 10 Édition familiale. La gestion des PC avec le logiciel client fournit [ces fonctionnalités](windows-pc-management-capabilities-in-microsoft-intune.md).
+Vous pouvez déployer et installer un [logiciel client Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) sur les PC Windows en guise d’alternative à l’inscription. Vous pouvez utiliser le logiciel client Intune pour gérer des PC Windows 7 et versions ultérieures, à l’exception de Windows 10 Édition familiale.
 
 ### <a name="exchange-activesync-management"></a>Gestion d’Exchange ActiveSync
 
