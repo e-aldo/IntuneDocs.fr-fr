@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique d’utilisation des stratégies de configuration d’application Intune"
+title: "Guide pratique pour utiliser des stratégies de configuration d’application Intune | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Apprenez à utiliser les stratégies de configuration d’application pour fournir des données de configuration à une application iOS lorsqu’elle est exécutée."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 847ddf08fdd7308475895af36f43c5391c9556fa
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -40,7 +41,7 @@ Si les utilisateurs n’entrent pas correctement ces paramètres, ils occasionne
 
 Les stratégies de configuration des applications peuvent vous aider à éliminer ces problèmes en vous permettant d’affecter ces paramètres dans une stratégie avant que les utilisateurs exécutent l’application. Les paramètres sont alors fournis automatiquement, les utilisateurs n’ont aucune action à effectuer.
 
-Vous n’affectez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt la stratégie à une application, que vous déployez ensuite. Les paramètres de stratégie sont utilisés chaque fois que l’application les vérifie (en général, lors de sa première exécution).
+Vous n’affectez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt une stratégie à une application que vous affectez ensuite. Les paramètres de stratégie sont utilisés chaque fois que l’application les vérifie (en général, lors de sa première exécution).
 
 > [!TIP]
 > Ce type de stratégie est disponible uniquement pour les appareils exécutant iOS 8.0 ou version ultérieure. Elle prend en charge les types d’installation d’application suivants :
@@ -48,7 +49,7 @@ Vous n’affectez pas ces stratégies directement sur les appareils et utilisate
 > -   **Application iOS gérée à partir de l’App Store**
 > -   **Package d'application pour iOS**
 >
-> Pour plus d’informations sur les types d’installation d’application, consultez [Guide pratique pour ajouter une application à Microsoft Intune](/intune-azure/manage-apps/add-apps).
+> Pour plus d’informations sur les types d’installation d’application, consultez [Guide pratique pour ajouter une application à Microsoft Intune](add-apps.md).
 
 ## <a name="create-an-app-configuration-policy"></a>Créer une stratégie de configuration des applications
 

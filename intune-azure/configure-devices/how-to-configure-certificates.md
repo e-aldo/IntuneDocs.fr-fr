@@ -1,12 +1,12 @@
 ---
-title: Guide pratique pour configurer des certificats avec Intune
+title: Guide pratique pour configurer des certificats avec Intune | Microsoft Docs
 titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour créer et attribuer des certificats qui vous aident à sécuriser les connexions Wi-Fi, VPN et autres."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 7d1d3c101aaa3832e36a0b9e9369fd1eeb0a6250
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: ecb6a806e7870fd2b1986c4247607c9374431151
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -47,7 +48,7 @@ Chacun de ces types de certificats est associé à sa propre configuration requi
     - Windows 8.1 et versions ultérieures
     - Windows Phone 8.1 et versions ultérieures
     - Windows 10 et versions ultérieures
-3. Créez des profils de certificat pour que les appareils demandent l’utilisation d’un certificat à des fins d’authentification pour l’accès au VPN, au Wi-Fi et aux e-mails. Vous pouvez créer et déployer un profil de certificat **PKCS** ou un profil de certificat **SCEP** pour les appareils exécutant ces plateformes :
+3. Créez des profils de certificat pour que les appareils demandent l’utilisation d’un certificat à des fins d’authentification pour l’accès au VPN, au Wi-Fi et aux e-mails. Vous pouvez créer et affecter un profil de certificat **PKCS** ou **SCEP** pour les appareils exécutant ces plateformes :
     - iOS 8.0 et versions ultérieures
     - Android 4.0 et versions ultérieures
     - Android for Work
@@ -71,8 +72,8 @@ Vous devez créer un profil distinct pour chaque plateforme d’appareil. Quand 
 
 Consultez l’une des rubriques suivantes pour vous aider à configurer l’infrastructure pour chaque type de profil de certificat :
 
-- [Configurer l’infrastructure de certificats pour SCEP dans Microsoft Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [Configurer votre infrastructure de certificats Microsoft Intune pour PKCS](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [Configurer l’infrastructure de certificats pour SCEP dans Microsoft Intune](configure-certificate-infrastructure-for-scep.md)
+- [Configurer votre infrastructure de certificats Microsoft Intune pour PKCS](configure-certificate-infrastructure-for-pfx.md)
 
 
 ## <a name="step-2---export-your-trusted-root-ca-certificate"></a>Étape 2 : exporter votre certificat d’autorité de certification racine approuvée
@@ -119,8 +120,8 @@ Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Gu
 
 Consultez l’une des rubriques suivantes pour vous aider à configurer et affecter chaque type de profil de certificat :
 
-- [Configurer et gérer les certificats SCEP avec Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [Configurer et gérer les certificats PKCS avec Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [Configurer et gérer les certificats SCEP avec Intune](configure-certificate-infrastructure-for-scep.md)
+- [Configurer et gérer les certificats PKCS avec Intune](configure-certificate-infrastructure-for-pfx.md)
 
 Après avoir créé un profil de certificat approuvé, créez des profils de certificat SCEP ou PKCS pour chaque plateforme que vous voulez utiliser. Quand vous créez un profil de certificat SCEP, vous devez spécifier un profil de certificat approuvé pour cette même plateforme. Cette opération lie les deux profils de certificat, mais vous devez quand même attribuer chaque profil séparément.
 
