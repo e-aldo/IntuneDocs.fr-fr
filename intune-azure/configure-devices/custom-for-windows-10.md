@@ -15,9 +15,10 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 647415914fb0f44807eff7baf7a56ea3a382f027
+ms.contentlocale: fr-fr
 ms.lasthandoff: 02/18/2017
 
 
@@ -152,9 +153,9 @@ Dans la capture d’écran ci-dessous, le paramètre **Connectivity/AllowVPNOver
 |**SignatureUpdateInterval**<br>./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Ne pas vérifier les signatures par intervalle<br>**1** – Vérifier les signatures toutes les heures<br>**2** – Vérifier toutes les 2 heures, etc.<br>**24** – Vérifier tous les jours<br>**Valeur par défaut :** 8 – vérifier toutes les 8 heures|
 |**AllowCloudProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowCloudProtection|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :** **0** – non autorisé, **1** – autorisé (valeur par défaut)|
 |**SubmitSamplesConsent**<br>./Vendor/MSFT/Policy/Config/Defender/SubmitSamplesConsent|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Toujours demander (par défaut)<br>**1** – Envoyer automatiquement des échantillons sécurisés<br>**2** – Ne jamais envoyer<br>**3** – Envoyer automatiquement tous les échantillons|
-|**ExcludedExtensions**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :**<br>*&lt;liste d’extensions séparées par des points-virgules&gt;* Par exemple : **obj;lib**<br>**Par défaut :** Aucune extension n’est exclue.|
-|**ExcludedPaths**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :**<br />*&lt;liste de chemins d'accès séparés par des points-virgules&gt;*<br />Exemple : **c:\test;c:\test1.exe**<br />**Valeur par défaut :** Aucun chemin n’est exclu.|
-|**ExcludedProcesses**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :**<br>*&lt;liste de chemins d'accès séparés par des points-virgules&gt;*<br>Exemple : **c:\test.exe;c:\test1.exe**<br>**Valeur par défaut :** Aucun processus n’est exclu.|
+|**ExcludedExtensions**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions|Desktop uniquement<br />**Type de données:** Chaîne<br />**Valeurs :**<br>*&lt;liste d’extensions séparées par des points-virgules&gt;* Par exemple : **obj;lib**<br>**Par défaut :** Aucune extension n’est exclue.|
+|**ExcludedPaths**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths|Desktop uniquement<br />**Type de données:** Chaîne<br />**Valeurs :**<br />*&lt;liste de chemins d'accès séparés par des points-virgules&gt;*<br />Exemple : **c:\test;c:\test1.exe**<br />**Valeur par défaut :** Aucun chemin n’est exclu.|
+|**ExcludedProcesses**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses|Desktop uniquement<br />**Type de données:** Chaîne<br />**Valeurs :**<br>*&lt;liste de chemins d'accès séparés par des points-virgules&gt;*<br>Exemple : **c:\test.exe;c:\test1.exe**<br>**Valeur par défaut :** Aucun processus n’est exclu.|
 
 ## <a name="edge-browser-settings"></a>Paramètres du navigateur Edge
 
@@ -169,5 +170,5 @@ Dans la capture d’écran ci-dessous, le paramètre **Connectivity/AllowVPNOver
 |**Autoriser les cookies**<br>./Vendor/MSFT/Policy/Config/Browser/AllowCookies|Desktop et mobile<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Autoriser les cookies de tous les sites web (valeur par défaut)<br>**1** – Bloquer uniquement les cookies tiers<br>**2** – Bloquer tous les cookies|
 |**Autoriser l’enregistrement du mot de passe**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Desktop et mobile<br />**Type de données :** Entier<br />**Valeurs :**<br>**0** – Le gestionnaire de mots de passe est désactivé <br>**1** – Le gestionnaire de mots de passe est activé (par défaut)|
 |**Autoriser le remplissage automatique**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Desktop uniquement<br />**Type de données :** Entier<br />**Valeurs :** **0** – Désactivé (valeur par défaut), **1** – Activé|
-|**Configurer la liste des sites d’entreprise**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Desktop uniquement<br />**Type de données : ** Chaîne<br />**Valeurs :<br> **0** – Non configuré<br>**1** – Utiliser la liste des sites d’entreprise d’Internet Explorer si elle est configurée (valeur par défaut)<br>**2** – Spécifier l’emplacement de la liste des sites d’entreprise|
+|**Configurer la liste des sites d’entreprise**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Desktop uniquement<br />**Type de données:** Chaîne<br />**Valeurs :<br>** 0 **– Non configuré<br>**1** – Utiliser la liste des sites d’entreprise d’Internet Explorer si elle est configurée (valeur par défaut)<br>**2** – Spécifier l’emplacement de la liste des sites d’entreprise|
 
