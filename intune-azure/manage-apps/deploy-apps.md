@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique d’affectation d’applications aux groupes"
+title: "Guide pratique pour attribuer des applications à des groupes | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Une fois que vous avez ajouté une application à Intune, vous souhaiterez l’attribuer à des groupes d’utilisateurs ou d’appareils."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 21ccb23023e9cb4f4b827887f8191ea73474c5de
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -38,7 +39,7 @@ Les applications peuvent être affectées aux appareils, qu’ils soient gérés
 |Attribuer des applications encapsulées ou incorporer le SDK Intune (pour les stratégies de protection d’application)|Oui|Oui|
 |Attribuer des applications en tant qu’applications disponibles|Oui|Oui|
 |Attribuer des applications en tant qu’applications requises|Oui|Non|
-|Désinstallation d’applications|Oui|Oui|
+|Désinstallation d’applications|Oui|Non|
 |Les utilisateurs finaux installent les applications disponibles à partir de l’application de portail d’entreprise|Oui|Non|
 |Les utilisateurs finaux installent les applications disponibles à partir du portail d’entreprise web|Oui|Oui|
 
@@ -53,21 +54,21 @@ Le plus important à noter est que le concept de groupes enfants n’existe pas 
 ||||||
 |-|-|-|-|-|
 |**Intune classique (avant la migration du locataire)**|-|**Intune Azure (une fois la migration du locataire terminée)**|-|**Plus d’informations**|
-|**Intention de déploiement de groupe parent**|**Intention de déploiement de groupe enfant**|**Intention d’affectation résultante pour les membres communs des groupes parents et enfants précédents**|**Action intentionnelle d’affectation résultante pour les membres du groupe parent**|-|    
+|**Intention d’attribution de groupe parent**|**Intention d’attribution de groupe enfant**|**Intention d’affectation résultante pour les membres communs des groupes parents et enfants précédents**|**Action intentionnelle d’affectation résultante pour les membres du groupe parent**|-|    
 |Disponible|Obligatoire|Obligatoire et disponible|Disponible|Obligatoire et disponible signifie que les applications affectées en fonction des besoins peuvent également être visibles dans l’application Portail d’entreprise.
-|Non applicable|Disponible|Non applicable|Non applicable|Solution de contournement : Supprimez l’intention de déploiement « Non Applicable » du groupe parent Intune.
+|Non applicable|Disponible|Non applicable|Non applicable|Solution de contournement : Supprimez l’intention d’attribution « Non Applicable » du groupe parent Intune.
 |Obligatoire|Disponible|Obligatoire et disponible|Obligatoire|-|
 |Obligatoire et disponible<sup>1</sup>|Disponible|Obligatoire et disponible|Obligatoire et disponible|-|    
 |Obligatoire|Non applicable|Obligatoire|Obligatoire|-|    
 |Obligatoire et disponible|Non applicable|Obligatoire et disponible|Obligatoire et disponible|-|    
 |Obligatoire|Désinstaller|Obligatoire|Obligatoire|-|    
 |Obligatoire et disponible|Désinstaller|Obligatoire et disponible|Obligatoire et disponible|-|
-<sup>1</sup> Pour les applications du Windows store iOS managées uniquement, quand vous les ajoutez à Intune et que vous les déployez en fonction des besoins, elles sont créées automatiquement avec des intentions Obligatoire et Disponible.
+<sup>1</sup> Pour les applications de l’App Store iOS gérées uniquement, quand vous les ajoutez à Intune et que vous les affectez en fonction des besoins, elles sont créées automatiquement avec des intentions Obligatoire et Disponible.
 
-Vous pouvez effectuer les actions suivantes pour éviter les conflits de déploiement :
+Vous pouvez effectuer les actions suivantes pour éviter les conflits d’attribution :
 
-1.    Si vous avez déployé précédemment des applications dans des groupes parents et enfants Intune associés, il peut être préférable de supprimer ces déploiements avant de commencer la migration de votre locataire.
-2.    Supprimez les groupes enfants des groupes parents et créez un groupe contenant les membres de l’ancien groupe enfant. Vous pouvez ensuite créer un déploiement d’application pour ce groupe.
+1.    Si vous avez affecté précédemment des applications à des groupes parents et enfants Intune associés, il peut être préférable de supprimer ces attributions avant de commencer la migration de votre locataire.
+2.    Supprimez les groupes enfants des groupes parents et créez un groupe contenant les membres de l’ancien groupe enfant. Vous pouvez ensuite créer une attribution d’application pour ce groupe.
 Remarques : Si le groupe parent précédent était « Tous les utilisateurs », vous devez créer un groupe dynamique qui ne contient pas de membre du groupe enfant.
 Vous devez apporter des modifications aux groupes dans le [Portail Azure](https://portal.azure.com/) pour les groupes d’utilisateurs et d’appareils. Le [Portail classique Azure](https://manage.windowsazure.com/) vous permet uniquement de modifier des groupes d’utilisateurs.
 

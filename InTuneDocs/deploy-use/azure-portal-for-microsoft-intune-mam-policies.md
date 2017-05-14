@@ -14,9 +14,11 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
-ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: e7fd0a83e21d499da39bd65502d8981bc3b1f61c
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -40,7 +42,7 @@ Le portail Azure permet de créer et de gérer des stratégies de protection des
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Se connecter au portail Azure et personnaliser la page de démarrage
 
-1.  Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+1.  Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification Intune.
 
     ![Capture d’écran de la page de connexion du portail Azure](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
@@ -48,7 +50,7 @@ Le portail Azure permet de créer et de gérer des stratégies de protection des
 
     ![Capture d’écran du tableau de bord du portail Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Choisissez **Plus de services** dans le menu gauche, puis tapez **Intune** dans le filtre de zone de texte.
+3.  Choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
 
     ![Capture d’écran du menu Parcourir avec Intune mis en surbrillance](../media/AppManagement/MAM-Azure-Portal-1.png)
 
@@ -64,9 +66,4 @@ Le portail Azure permet de créer et de gérer des stratégies de protection des
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Préparation à la configuration de stratégies de protection d’applications](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

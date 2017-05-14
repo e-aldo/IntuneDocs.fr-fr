@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
-ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 45b00ac17232aad7c404c7455fd10ca5cf8cb3f9
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -49,13 +50,13 @@ ms.lasthandoff: 04/04/2017
     - **Télécharger icône** : téléchargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 8. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
 
-L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](/intune-azure/manage-apps/deploy-apps).
+L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](deploy-apps.md).
 
-## <a name="manually-deploy-windows-10-company-portal-app"></a>Déployer manuellement l’application Portail d’entreprise Windows 10
-Les utilisateurs finaux peuvent installer l’application Portail d’entreprise à partir du Windows Store pour gérer des appareils et installer des applications. Si, toutefois, votre entreprise vous impose de déployer l’application Portail d’entreprise, vous pouvez déployer manuellement l’application Portail d’entreprise Windows 10 directement à partir d’Intune, même si vous n’avez pas encore intégré Intune avec Windows Store pour Entreprises.
+## <a name="manually-assign-windows-10-company-portal-app"></a>Affecter manuellement l’application Portail d’entreprise Windows 10
+Les utilisateurs finaux peuvent installer l’application Portail d’entreprise à partir du Windows Store pour gérer des appareils et installer des applications. Si, toutefois, votre entreprise vous impose d’affecter l’application Portail d’entreprise, vous pouvez affecter manuellement l’application Portail d’entreprise Windows 10 directement à partir d’Intune, même si vous n’avez pas intégré Intune à Windows Store pour Entreprises.
 
  > [!NOTE]
- > Cette option nécessite le déploiement manuel de mises à jour chaque fois qu’une mise à jour d’application est publiée.
+ > Cette option nécessite l’affectation de mises à jour manuelles chaque fois qu’une mise à jour d’application est publiée.
 
 1. Connectez-vous à votre compte dans [Windows Store pour Entreprises](https://www.microsoft.com/business-store) et acquérez la version avec **licence hors connexion** de l’application Portail d’entreprise.  
 2. Une fois que l’application a été acquise, sélectionnez l’application dans la page **Inventorier**.  
@@ -69,8 +70,8 @@ Les utilisateurs finaux peuvent installer l’application Portail d’entreprise
   ![Image du dossier Dépendances enregistré avec le fichier APPXBUN](../media/Win10CP-Dependencies-save.png)
   2. Placez les neuf packages de dépendances dans le dossier Dépendances.  
   Si les dépendances ne sont pas placées dans ce format, Intune ne peut pas les reconnaître ni les charger et le chargement du package échoue avec l’erreur suivante.  
-  ![La dépendance d’application Windows pour ce programme d’installation logicielle est introuvable dans le dossier de l’application. Vous pouvez poursuivre la création et le déploiement de l’application, mais cette dernière ne pourra pas fonctionner tant que la dépendance d’application Windows manquante ne sera pas spécifiée.](../media/Win10CP-error-message.png)
-6. Revenez à Intune, puis chargez l’application Portail d’entreprise en tant que nouvelle application. Déployez-la en tant qu’application requise pour l’ensemble souhaité d’utilisateurs cibles.  
+  ![La dépendance d’application Windows pour ce programme d’installation logicielle est introuvable dans le dossier de l’application. Vous pouvez poursuivre la création et l’affectation de l’application, mais cette dernière ne pourra pas fonctionner tant que la dépendance d’application Windows manquante ne sera pas spécifiée.](../media/Win10CP-error-message.png)
+6. Revenez à Intune, puis chargez l’application Portail d’entreprise en tant que nouvelle application. Affectez-la en tant qu’application requise pour l’ensemble souhaité d’utilisateurs cibles.  
 
 Pour plus d’informations sur la façon dont Intune gère les dépendances pour les applications universelles, consultez [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Déploiement d’un appxbundle avec dépendances via Microsoft Intune MDM).  
 
@@ -78,20 +79,20 @@ Pour plus d’informations sur la façon dont Intune gère les dépendances pour
 Si vos utilisateurs ont déjà installé les applications Portail d’entreprise Windows 8.1 ou Windows Phone 8.1 à partir du Windows Store, ils doivent être automatiquement mis à jour vers la nouvelle version sans que l’utilisateur ou vous-même n’ayez à intervenir. Si la mise à jour ne se produit pas, demandez à vos utilisateurs de vérifier s’ils ont activé les mises à jour automatiques pour les applications du Windows Store sur leurs appareils.   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Comment mettre à niveau mon application de portail d’entreprise Windows 8.1 chargée indépendamment vers l’application Portail d’entreprise Windows 10 ?
-Nous vous recommandons de supprimer le déploiement de l’application Portail d’entreprise Windows 8.1 en définissant l’action de déploiement sur « Désinstaller ». Une fois cette opération effectuée, l’application Portail d’entreprise Windows 10 peut être déployée à l’aide d’une des options ci-dessus.  
+Notre option de migration recommandée consiste à supprimer l’attribution de l’application Portail d’entreprise Windows 8.1 en définissant « Désinstaller » pour l’action d’attribution. Une fois cette opération effectuée, l’application Portail d’entreprise Windows 10 peut être affectée à l’aide de l’une des options ci-dessus.  
 
-Si vous avez besoin de charger indépendamment l’application et de déployer le portail d’entreprise Windows 8.1 sans le signer avec le certificat Symantec, suivez les étapes de la section Déployer directement via Intune ci-dessus pour terminer la mise à niveau.
+Si vous avez besoin de charger une version test de l’application et que vous avez affecté le portail d’entreprise Windows 8.1 sans le signer avec le certificat Symantec, suivez les étapes de la section Affecter directement via Intune ci-dessus pour terminer la mise à niveau.
 
-Si vous souhaitez charger indépendamment l’application et que vous avez signé et déployé le portail d’entreprise Windows 8.1 avec le certificat de signature de code Symantec, suivez les étapes décrites dans la section ci-dessous.  
+Si vous avez besoin de charger une version test de l’application et que vous avez signé et affecté le portail d’entreprise Windows 8.1 avec le certificat de signature de code Symantec, suivez les étapes décrites dans la section ci-dessous.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Comment mettre à niveau mon application Portail d’entreprise Windows 8.1 ou Windows Phone 8.1 chargée indépendamment et signée vers l’application Portail d’entreprise Windows 10 ?
-Nous vous recommandons de supprimer le déploiement existant de l’application Portail d’entreprise Windows Phone 8.1 ou Windows 8.1 en définissant l’action de déploiement sur « Désinstaller ». Une fois cette opération effectuée, l’application Portail d’entreprise Windows 10 peut être déployée normalement.  
+Notre option de migration recommandée consiste à supprimer l’attribution existante de l’application Portail d’entreprise Windows Phone 8.1 ou de l’application Portail d’entreprise Windows 8.1 en définissant « Désinstaller » pour l’action d’attribution. Une fois cette opération effectuée, l’application Portail d’entreprise Windows 10 peut être affectée normalement.  
 
 Sinon, l’application Portail d’entreprise Windows 10 doit être mise à jour et signée de façon adéquate afin de respecter la procédure de mise à niveau.  
 
-Si l’application Portail d’entreprise Windows 10 est signée et déployée de cette façon, vous devez répéter ce processus pour chaque nouvelle mise à jour de l’application lorsqu’elle est disponible dans le Windows Store. L’application ne se met pas automatiquement à jour lorsque le Windows Store est mis à jour.  
+Si l’application Portail d’entreprise Windows 10 est signée et affectée de cette façon, vous devez répéter ce processus pour chaque nouvelle mise à jour de l’application quand elle est disponible dans le Windows Store. L’application ne se met pas automatiquement à jour lorsque le Windows Store est mis à jour.  
 
-Voici comment signer et déployer l’application de cette façon :
+Voici comment signer et affecter l’application de cette façon :
 
 1. Téléchargez le script de signature de l’application Portail d’entreprise Windows 10 Microsoft Intune à partir de la page [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Ce script nécessite que le SDK Windows pour Windows 10 soit installé sur l’ordinateur hôte. Pour télécharger le SDK Windows pour Windows 10, visitez la page [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
 2. Téléchargez l’application Portail d’entreprise Windows 10 à partir du Windows Store pour Entreprises, comme indiqué ci-dessus.  
@@ -105,5 +106,5 @@ Voici comment signer et déployer l’application de cette façon :
 |PfxPassword| Mot de passe du fichier de signature de code Symantec Enterprise Mobile. |
 |PublisherId |ID d’éditeur de l’entreprise. S'il n'est pas fourni, le champ 'Subject' du certificat de signature de code Symantec Enterprise Mobile est utilisé.|
 |SdkPath | Chemin du dossier racine du SDK Windows pour Windows 10. Cet argument est facultatif et sa valeur par défaut est ${env:ProgramFiles(x86)}\Windows Kits\10.|
-Le script transmet la version de l’application Portail d’entreprise Windows 10 signée lorsque son exécution est terminée. Vous pouvez ensuite déployer la version signée de l’application en tant qu’application métier par le biais de Intune, ce qui met à niveau les versions actuellement déployées vers cette nouvelle application.  
+Le script transmet la version de l’application Portail d’entreprise Windows 10 signée lorsque son exécution est terminée. Vous pouvez ensuite affecter la version signée de l’application en tant qu’application métier via Intune, ce qui met à niveau les versions actuellement affectées vers cette nouvelle application.  
 

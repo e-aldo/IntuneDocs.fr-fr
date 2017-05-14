@@ -1,5 +1,5 @@
 ---
-title: "Que sont les profils d’appareil dans Microsoft Intune ?"
+title: "Que sont les profils d’appareil dans Microsoft Intune ? | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez plus d’informations sur les profils d’appareil Intune et comment ils peuvent vous aider à gérer et protéger les appareils de votre entreprise."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ Lorsque vous ouvrez cette charge de travail, vous verrez les options suivantes 
 
 ## <a name="getting-started"></a>Mise en route
 
-Le flux de travail pour la création de profils d’appareil est identique pour tous les profils. Lisez [Guide pratique pour créer des profils de configuration d’appareil Microsoft Intune](/intune-azure/configure-devices/how-to-create-device-profiles) pour plus d’informations sur la création de profils. Pour des informations spécifiques sur la création de paramètres pour chaque type de profil, lisez la suite.
+Le flux de travail pour la création de profils d’appareil est identique pour tous les profils. Lisez [Guide pratique pour créer des profils de configuration d’appareil Microsoft Intune](how-to-create-device-profiles.md) pour plus d’informations sur la création de profils. Pour des informations spécifiques sur la création de paramètres pour chaque type de profil, lisez la suite.
 
 Vous pouvez gérer les fonctionnalités suivantes sur vos appareils :
 
@@ -51,15 +52,15 @@ Les limites des appareils vous permettent de contrôler une grande variété de 
 Pour plus d’informations, consultez [Guide pratique pour configurer des paramètres de restriction d’appareil](how-to-configure-device-restrictions.md) Prend en charge : Android, iOS, Mac OS, Windows 10 et Windows 10 Collaboration.
 
 ## <a name="email"></a>Courrier électronique
-Les profils de messagerie vous permettent de créer, déployer et contrôler les paramètres de messagerie Exchange ActiveSync sur les appareils que vous gérez. En déployant ces paramètres, vous assurez la cohérence, réduisez les appels au support technique et permettez aux utilisateurs finaux d’accéder à la messagerie d’entreprise sur leurs appareils personnels sans aucune autre configuration de leur part.
+Les profils de messagerie vous permettent de créer, d’affecter et de surveiller les paramètres de messagerie Exchange ActiveSync sur les appareils que vous gérez. En affectant ces paramètres, vous assurez la cohérence, réduisez les appels au support technique et permettez aux utilisateurs finaux d’accéder à la messagerie d’entreprise sur leurs appareils personnels sans aucune autre configuration de leur part.
 Pour plus d’informations, consultez [Guide pratique pour configurer des paramètres de messagerie](how-to-configure-email-settings.md) Prend en charge : Android, iOS et Windows Phone 8.1 et Windows 10.
 
 ## <a name="wi-fi"></a>Wi-Fi
-Utilisez les profils Wi-Fi pour déployer les paramètres de réseau sans fil des utilisateurs et des appareils de votre organisation. Quand vous déployez un profil Wi-Fi, vos utilisateurs ont accès à votre Wi-Fi d’entreprise sans avoir à le configurer eux-mêmes.
+Utilisez les profils Wi-Fi pour affecter les paramètres de réseau sans fil aux utilisateurs et appareils de votre organisation. Quand vous affectez un profil Wi-Fi, vos utilisateurs ont accès à votre Wi-Fi d’entreprise sans avoir à le configurer eux-mêmes.
 Pour plus d’informations, consultez [Guide pratique pour configurer des paramètres Wi-Fi](how-to-configure-wi-fi-settings.md) Prend en charge : Android, iOS, Mac OS et Windows 8.1 (importation uniquement).
 
 ## <a name="vpn"></a>VPN
-Les réseaux privés virtuels (ou VPN) donnent à vos utilisateurs un accès distant sécurisé à votre réseau d’entreprise. Les appareils utilisent un profil de connexion VPN pour établir une connexion avec le serveur VPN. Utilisez les profils VPN pour déployer des paramètres VPN sur les utilisateurs et appareils de votre organisation, afin qu’ils puissent se connecter au réseau facilement et en toute sécurité.
+Les réseaux privés virtuels (ou VPN) donnent à vos utilisateurs un accès distant sécurisé à votre réseau d’entreprise. Les appareils utilisent un profil de connexion VPN pour établir une connexion avec le serveur VPN. Utilisez les profils VPN pour affecter des paramètres VPN aux utilisateurs et appareils de votre organisation, afin qu’ils puissent se connecter au réseau facilement et en toute sécurité.
 Pour plus d'informations, consultez [Guide pratique pour configurer des paramètres VPN](how-to-configure-vpn-settings.md).
 Prend en charge : Android, iOS, Mac OS, Windows Phone 8.1, Windows 8.1 et Windows 10.
 
