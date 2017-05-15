@@ -14,9 +14,10 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: dfc76481a673dff5dd8be40659cc267a792760ec
+ms.contentlocale: fr-fr
 ms.lasthandoff: 12/30/2016
 
 
@@ -104,7 +105,7 @@ Les caractères \{\{ et \}\} sont utilisés uniquement par les types de jetons. 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>Associer une stratégie de configuration des applications mobiles à une application
 Après avoir créé une stratégie de configuration des applications mobiles, vous devez l’associer à l’application iOS à laquelle vous voulez appliquer les paramètres de la stratégie de configuration.
 
-Pour cela, suivez les étapes de création d’un déploiement d’applications fournies dans [Ajouter des applications pour des appareils mobiles dans Microsoft Intune[ et ](deploy-apps-in-microsoft-intune.md)Déployer des applications avec Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md). Quand vous atteignez la page **Configuration des applications mobiles** de l’Assistant, sélectionnez la stratégie que vous voulez associer à l’application dans la liste déroulante **Stratégie de configuration des applications**.
+Pour cela, suivez les étapes de création d’un déploiement d’applications fournies dans [Ajouter des applications pour des appareils mobiles dans Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) et [Déployer des applications avec Microsoft Intune](deploy-apps-in-microsoft-intune.md). Quand vous atteignez la page **Configuration des applications mobiles** de l’Assistant, sélectionnez la stratégie que vous voulez associer à l’application dans la liste déroulante **Stratégie de configuration des applications**.
 
 Ensuite, continuez le déploiement de l’application et surveillez-le comme d’habitude.
 
