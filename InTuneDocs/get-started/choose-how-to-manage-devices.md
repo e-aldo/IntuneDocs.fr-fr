@@ -14,10 +14,11 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
-ms.lasthandoff: 12/20/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0ec828e881182dc0e0fb3bae671f0aec58f52aad
+ms.contentlocale: fr-fr
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +48,7 @@ Inscrivez les PC Windows pour obtenir le plus de fonctionnalités. Toutefois, le
 - Endpoint Protection et Pare-feu Windows
 - Assistance à distance des utilisateurs à l’aide du logiciel TeamViewer
 
-Pour obtenir la liste détaillée des fonctions de gestion que vous obtenez avec chaque méthode, consultez [Fonctionnalités de gestion des appareils mobiles](mobile-device-management-capabilities-in-microsoft-intune.md) et [Fonctionnalités du client logiciel PC Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
+Pour obtenir la liste détaillée des fonctionnalités de gestion que vous obtenez avec chaque méthode, consultez [Fonctionnalités de gestion des appareils mobiles](mobile-device-management-capabilities-in-microsoft-intune.md) et [Gérer des PC Windows avec le logiciel client de PC Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 Pour plus d’informations sur les appareils et PC pris en charge par Intune, consultez [Ordinateurs et appareils mobiles pris en charge](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## <a name="next-steps"></a>Étapes suivantes

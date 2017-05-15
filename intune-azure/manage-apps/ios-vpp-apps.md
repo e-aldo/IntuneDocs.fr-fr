@@ -1,12 +1,12 @@
 ---
-title: "Gérer les applications achetées en volume"
+title: "Gérer les applications iOS achetées en volume | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Préversion Intune Azure : Découvrez comment synchroniser les applications que vous avez achetées en volume à partir de l’App Store iOS dans Intune et ensuite gérer et suivre leur utilisation."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 1909549b321f51069bb6ad83f2f245afbf60b7dd
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -86,5 +87,5 @@ Pour libérer une licence, vous devez modifier l’action d’affectation sur **
 
 Quand un utilisateur avec un appareil éligible essaie pour la première fois d’installer une application VPP, il est invité à participer au programme VPP d’Apple. Il doit accepter pour que l’installation de l’application se poursuivre.
 
-Lorsque vous déployez une application VPP en tant que Disponible, le contenu et la licence de l’application sont déployés directement à partir de l’App Store.
+Quand vous attribuez une application VPP en tant que Disponible, le contenu et la licence de l’application sont attribués directement à partir de l’App Store.
 

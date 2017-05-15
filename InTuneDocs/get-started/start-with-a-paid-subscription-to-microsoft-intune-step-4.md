@@ -14,10 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: b2fc3a3dc47466313a54d2f6aef6b67dff8d7343
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7db42e591df8ec6c21f73b7ce49be624e1e29690
+ms.openlocfilehash: 793df9f3734b84c74ecac9b8192d0b06306607e8
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -42,6 +43,17 @@ Vous pouvez utiliser le [portail Office 365](http://go.microsoft.com/fwlink/p/?
 
 > [!NOTE]
 > Les utilisateurs apparaissent dans la console d’administration une fois qu’ils ont inscrit un appareil. En outre, vous pouvez sélectionner un groupe d’utilisateurs afin de les modifier tous en même temps, en sélectionnant l’ajout ou le remplacement d’une licence pour tous les utilisateurs sélectionnés.
+
+## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Utiliser School Data Sync pour affecter des licences aux utilisateurs dans Intune pour l’Éducation
+Si vous êtes une entreprise de formation, vous pouvez utiliser SDS (School Data Sync) pour affecter des licences Intune pour l’Éducation aux utilisateurs synchronisés. Sélectionnez simplement la case à cocher Intune pour l’Éducation quand vous configurez votre profil SDS.  
+
+![Image du paramètre de profil SDS](./media/i4e-sds-profile-setup-setting.png)
+
+Quand vous affectez une licence Intune pour l’Éducation, vérifiez que la licence Intune A Direct est également affectée.
+
+![Image de la configuration des licences des produits](./media/i4e-set-licenses.png)
+
+Pour en savoir plus sur SDS, consultez cette [vue d’ensemble de School Data Sync](https://support.office.com/en-us/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Utiliser PowerShell pour gérer de manière sélective les licences utilisateur EMS
 Les organisations qui utilisent Microsoft Enterprise Mobility + Security (anciennement Entreprise Mobility Suite) peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un groupe de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx).

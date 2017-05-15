@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Scénario 1 : Empêcher les utilisateurs d’accéder à Exchange Online avec des appareils non conformes
 ### <a name="scenario-requirements"></a>Exigences du scénario
 - Tous les utilisateurs du groupe de sécurité Azure Active Directory **Comptabilité** voient leur accès à Exchange Online bloqué si leur appareil n’est pas conforme à une stratégie de conformité que vous avez déployée.
-- S’il existe des utilisateurs dans ce groupe dont les appareils ne sont pas pris en charge par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], leur accès à Exchange Online doit être bloqué sur cet appareil.
+- S’il existe des utilisateurs dans ce groupe dont les appareils ne sont pas pris en charge par Intune, leur accès à Exchange Online doit être bloqué sur cet appareil.
 - Les utilisateurs qui figurent dans le groupe de sécurité Azure Active Directory **Finance** doivent être exemptés de la stratégie, même s’ils figurent également dans le groupe de sécurité **Comptabilité**.
 
 Pour ce faire, configurez une stratégie d’accès conditionnel à Exchange Online avec les paramètres suivants :
@@ -68,7 +70,7 @@ Vous utilisez le flux suivant pour déterminer quels sont les appareils qui peuv
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>Scénario 3 : Aucun appareil Android ne peut accéder à Exchange sur site
 ### <a name="scenario-requirements"></a>Exigences du scénario
 - L’accès à Exchange doit être bloqué pour tous les appareils Android.
-- Tous les autres appareils pris en charge peuvent accéder à Exchange du moment qu’ils sont gérés par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Tous les autres appareils pris en charge peuvent accéder à Exchange du moment qu’ils sont gérés par Intune.
 
 Pour ce faire, configurez une stratégie d’accès conditionnel à Exchange sur site avec les paramètres suivants :
 
@@ -82,9 +84,4 @@ Pour ce faire, configurez une stratégie d’accès conditionnel à Exchange sur
 Vous utilisez le flux suivant pour déterminer quels sont les appareils qui peuvent accéder à Exchange :
 
 ![Flux d’accès des appareils](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

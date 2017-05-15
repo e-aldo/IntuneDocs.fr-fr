@@ -14,10 +14,11 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +41,7 @@ Pour configurer l’accès conditionnel, vous devez :
 
 - Avoir un **abonnement Enterprise Mobility + Security (EMS)** ou un **abonnement Azure Active Directory (Azure AD)  Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
--  Il est possible de configurer le **connecteur de service à service Intune** facultatif, qui connecte [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] à Exchange Online et vous aide à gérer les informations sur les appareils avec la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Il n’est pas nécessaire d’utiliser le connecteur pour utiliser des stratégies de conformité ou d’accès conditionnel, mais il est obligatoire pour exécuter les rapports qui aident à évaluer l’impact de l’accès conditionnel.
+-  Il est possible de configurer le **connecteur de service à service Intune** facultatif, qui connecte Intune à Exchange Online et vous aide à gérer les informations sur les appareils avec la console Intune. Il n’est pas nécessaire d’utiliser le connecteur pour utiliser des stratégies de conformité ou d’accès conditionnel, mais il est obligatoire pour exécuter les rapports qui aident à évaluer l’impact de l’accès conditionnel.
     -  Découvrez plus en détail le [connecteur service à service Intune](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
@@ -50,21 +51,21 @@ Pour configurer l’accès conditionnel, vous devez :
 
 Lorsque vous configurez des stratégies d’accès conditionnel et les ciblez sur un utilisateur, l’**appareil** dont l’utilisateur se sert pour se connecter à sa messagerie doit :
 
--   Être un PC joint à un domaine ou **inscrit** auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Être **inscrit** auprès d’Intune ou être un PC joint à un domaine.
 
--  Être **inscrit dans Azure Active Directory**. Cela se produit automatiquement quand l’appareil est inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. En outre, l’ID Exchange ActiveSync du client doit être inscrit auprès d’Azure Active Directory.
+-  Être **inscrit dans Azure Active Directory**. Cela se produit automatiquement quand l’appareil est inscrit auprès d’Intune. En outre, l’ID Exchange ActiveSync du client doit être inscrit auprès d’Azure Active Directory.
 
   Le service d’inscription Azure Active Directory pour appareils est activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service d’inscription d’appareils AD FS ne verront pas les appareils inscrits dans l’annuaire Active Directory local.
 
--   Être **compatible** avec n’importe quelle stratégie de conformité [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] déployée sur cet appareil ou joint à un domaine local.
+-   Être **compatible** avec n’importe quelle stratégie de conformité Intune déployée sur cet appareil ou joint à un domaine local.
 
 ### <a name="when-the-device-is-not-compliant"></a>Lorsque l'appareil n’est pas conforme
 
 Si une stratégie d’accès conditionnel n’est pas remplie, l’appareil est immédiatement placé en quarantaine. L’utilisateur reçoit un e-mail et l’une des notifications de mise en quarantaine suivantes lorsqu’il se connecte :
 
-- Si l’appareil n’est pas inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qu’il n’est pas inscrit dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application du portail d’entreprise, inscrire l’appareil et activer la messagerie. Ce processus associe également l’ID Exchange ActiveSync de l’appareil à l’enregistrement dans Azure Active Directory.
+- Si l’appareil n’est pas inscrit auprès d’Intune ni dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application Portail d’entreprise, inscrire l’appareil et activer la messagerie. Ce processus associe également l’ID Exchange ActiveSync de l’appareil à l’enregistrement dans Azure Active Directory.
 
--   Si l’appareil est considéré comme non conforme aux règles de stratégie de conformité, l’utilisateur final est dirigé vers le site web ou l’application du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] où il trouvera des informations sur le problème et sa résolution.
+-   Si l’appareil est considéré comme non conforme aux règles de stratégie de conformité, l’utilisateur est dirigé vers l’application Portail d’entreprise ou le site web du portail d’entreprise Intune, où il peut trouver des informations sur le problème et des solutions pour y remédier.
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>Fonctionnement de l’accès conditionnel avec Exchange Online
 
@@ -114,7 +115,7 @@ Vous pouvez configurer l'accès conditionnel pour les PC qui exécutent des appl
 
   Le PC doit être joint à un domaine ou conforme aux règles de stratégie de conformité.
 
-  Pour être considéré comme conforme, le PC doit être inscrit dans [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et être conforme aux stratégies.
+  Pour être considéré comme conforme, le PC doit être inscrit dans Intune et être conforme aux stratégies.
 
   Pour les PC joints à un domaine, vous devez configurer l'accès conditionnel pour [inscrire automatiquement l’appareil](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) auprès d’Azure Active Directory.
 
@@ -138,11 +139,11 @@ Assurez-vous de [créer](create-a-device-compliance-policy-in-microsoft-intune.m
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Étape 2 : Évaluer l’impact de la stratégie d’accès conditionnel
 Vous pouvez utiliser les **Rapports d’inventaire des appareils mobiles** pour identifier les appareils qui sont susceptibles de ne pas pouvoir accéder à Exchange quand vous aurez configuré la stratégie d’accès conditionnel.
 
-Pour ce faire, configurez une connexion entre [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et Exchange avec le [connecteur de service à service Microsoft Intune](intune-service-to-service-exchange-connector.md).
+Pour ce faire, configurez une connexion entre Intune et Exchange avec le [connecteur de service à service Microsoft Intune](intune-service-to-service-exchange-connector.md).
 1.  Accédez à **Rapports** > **Rapports d’inventaire des appareils mobiles**.
 ![Capture d’écran de la page du rapport d’inventaire des appareils mobiles](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
-2.  Dans les paramètres de rapport, sélectionnez le groupe [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] à évaluer et, si nécessaire, les plateformes d’appareils auxquelles la stratégie sera appliquée.
+2.  Dans les paramètres de rapport, sélectionnez le groupe Intune à évaluer et, si nécessaire, les plateformes d’appareils auxquelles la stratégie sera appliquée.
 3.  Une fois que vous avez sélectionné les critères qui répondent aux besoins de votre organisation, choisissez **Afficher le rapport**.
 La visionneuse de rapports s’ouvre dans une nouvelle fenêtre.
 ![Capture d’écran d’un exemple de rapport d’inventaire des appareils mobiles](../media/IntuneSA2cViewReport.PNG)
@@ -200,7 +201,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
     > [!NOTE]
     > Si vous n’avez pas déployé de stratégie de conformité, les appareils sont traités comme étant conformes.
     >
-    > Quel que soit l'état de conformité, tous les utilisateurs ciblés par la stratégie doivent inscrire leurs appareils auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+    > Quel que soit l’état de conformité, tous les utilisateurs ciblés par la stratégie doivent inscrire leurs appareils auprès d’Intune.
 
 3.  Sous **Accès aux applications**, pour les applications qui utilisent l’authentification moderne, vous avez deux moyens de choisir les plateformes auxquelles la stratégie doit s’appliquer. Les plateformes prises en charge sont Android, iOS, Windows et Windows Phone.
 
@@ -257,7 +258,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
 
 -   Quand un utilisateur crée un compte de messagerie, l’appareil est bloqué immédiatement.
 
--   Si un utilisateur bloqué inscrit l’appareil auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et corrige les éventuels problèmes de non-conformité, l’accès à la messagerie est débloqué dans les deux minutes.
+-   Si un utilisateur bloqué inscrit l’appareil auprès d’Intune et corrige les éventuels problèmes de non-conformité, l’accès à la messagerie est débloqué dans les deux minutes.
 
 -   Si l’utilisateur désinscrit son appareil, la messagerie est bloquée après environ six heures.
 
@@ -267,7 +268,7 @@ Pour obtenir des **exemples de scénarios décrivant comment configurer une stra
 
 #### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Pour afficher les appareils avec accès bloqué à Exchange
 
-Dans le tableau de bord [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], choisissez la vignette **Appareils avec accès bloqué à Exchange** pour afficher le nombre d’appareils bloqués et des liens vers des informations supplémentaires.
+Dans le tableau de bord Intune, choisissez la vignette **Appareils avec accès bloqué à Exchange** pour afficher le nombre d’appareils bloqués et des liens vers des informations supplémentaires.
 ![Capture d’écran du tableau de bord Intune indiquant le nombre d’appareils dont l’accès à Exchange est bloqué](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Étapes suivantes

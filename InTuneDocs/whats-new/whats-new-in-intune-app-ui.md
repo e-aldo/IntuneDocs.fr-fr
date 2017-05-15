@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,26 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
-ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
-ms.lasthandoff: 04/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68dbaa2209ad1432279683a291734641e39ff736
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/05/2017
 
 
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
 
-> [!Note]
-> Notez que les images ci-dessous sont en préversion. Le produit annoncé peut différer des versions présentées.
+## <a name="coming-soon-in-the-ui"></a>Bientôt disponible dans l’interface utilisateur
+Voici les moyens envisagés pour améliorer l’expérience utilisateur en mettant à jour l’interface utilisateur.
 
-## <a name="april-2017"></a>Avril 2017
+> [!Note]
+> Notez que les images ci-dessous peuvent être en préversion. Le produit annoncé peut différer des versions présentées.
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Amélioration de l’expérience de connexion sur l’ensemble des applications du portail d’entreprise pour toutes les plates-formes<!--User Story 1132123-->
 
-Nous améliorons l’expérience de connexion aux applications du portail d’entreprise Intune pour Android, iOS et Windows.  La nouvelle expérience utilisateur s’affiche automatiquement sur toutes les plates-formes utilisées pour l’application du portail d’entreprise lorsqu’Azure AD apporte cette modification. En outre, les utilisateurs peuvent désormais se connecter au portail d’entreprise à partir d’un autre appareil grâce à un code à usage unique automatiquement généré. Cette fonction se révèle particulièrement utile lorsque les utilisateurs doivent se connecter sans informations d’identification.  
+Dans les mois à venir, nous introduirons des changements visant à améliorer l’expérience de connexion aux applications Portail d’entreprise Intune pour Android, iOS et Windows. La nouvelle expérience utilisateur s’affiche automatiquement sur toutes les plates-formes utilisées pour l’application du portail d’entreprise lorsqu’Azure AD apporte cette modification. En outre, les utilisateurs peuvent désormais se connecter au portail d’entreprise à partir d’un autre appareil grâce à un code à usage unique automatiquement généré. Cette fonction se révèle particulièrement utile lorsque les utilisateurs doivent se connecter sans informations d’identification.  
 
 Vous trouverez ci-dessous des informations concernant l’expérience de connexion précédente, la nouvelle expérience de connexion avec informations d’identification, ainsi que la nouvelle expérience de connexion depuis un autre appareil.
 
@@ -51,13 +53,13 @@ __Nouvelle expérience de connexion__
 
 ![Une fois l’adresse e-mail validée, l’utilisateur est invité à saisir son mot de passe.](./media/cp_ios_aad_signin_after_1704_003.png)
 
+![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
 __Nouvelle expérience de connexion lors d’une connexion à partir d’un autre appareil__
 
 ![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
 Cliquez sur le lien __Se connecter à partir d’un autre appareil__.
-
-![L’utilisateur est invité à renseigner simplement son adresse e-mail, et non plus son adresse e-mail et son mot de passe sur le même écran. Vous trouverez sous le champ de messagerie un lien intitulé « Se connecter à partir d’un autre appareil ».](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
 
 ![Suivez les instructions fournies pour accéder à la page aka.ms/devicelogin avec un code d’accès unique à partir de votre ordinateur, puis utilisez le code pour vous connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
@@ -74,6 +76,8 @@ Entrez le code que vous avez reçu dans l’application Portail d’entreprise. 
 L’application Portail d’entreprise commence la procédure de connexion.
 
 ![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="april-2017"></a>Avril 2017
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nouvelles icônes pour Managed Browser et le portail d’entreprise <!--918433, 918431-->
 
@@ -105,13 +109,13 @@ Une mise à jour de l’application Portail d’entreprise Android affiche un in
    <table id="wrapper">
       <tr>
          <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
           </td>
           <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
            </td>
            <td>
-              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
            </td>
       </tr>
    </table>
@@ -119,22 +123,13 @@ Une mise à jour de l’application Portail d’entreprise Android affiche un in
 </html>
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Amélioration de l’état d’installation de l’application pour l’application Portail d’entreprise Windows 10 <!--676495-->
-L’application Portail d’entreprise Windows 10 fournit désormais une barre de progression d’installation pour toutes les installations d’applications modernes démarrées à partir du portail d’entreprise.
+L’application Portail d’entreprise Windows 10 fournit désormais une barre de progression de l’installation dans la page des détails de l’application. Elle est prise en charge pour les applications modernes sur les appareils exécutant au minimum Mise à jour anniversaire Windows 10.
 
-<html>
-<body>
-   <table id="wrapper">
-      <tr>
-         <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
-          </td>
-          <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
-           </td>
-      </tr>
-   </table>
-</body>
-</html>
+__Avant__
+  ![Image de la version précédente de l’écran de chargement, où l’état indique simplement « installation ».](./media/cp_win10_install_status_before_1704.png)
+
+__Après__
+  ![Image de la version mise à jour de l’écran de chargement, qui affiche à présent une barre de progression de l’installation.](./media/cp_win10_install_status_after_1704.png)
 
 ## <a name="february-2017"></a>Février 2017
 
