@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
 ms.openlocfilehash: 6b723069108ff2cbe85951f7d65ef803323eceb9
+ms.contentlocale: fr-fr
 ms.lasthandoff: 03/13/2017
 
 
@@ -126,7 +127,7 @@ Une réinitialisation sélective sur un appareil Android for Work supprime l’e
 
 2.  Cliquez sur le nom de l’appareil à réinitialiser.
 
-3.  Dans le panneau présentant le nom de l’appareil, choisissez **Supprimer donn... ** (signifie Supprimer données de l’entreprise), puis **Oui** pour confirmer la réinitialisation.
+3.  Dans le panneau présentant le nom de l’appareil, choisissez **Supprimer donn...** (signifie Supprimer données de l’entreprise), puis **Oui** pour confirmer la réinitialisation.
 
 Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation prend moins de 15 minutes, quel que soit le type de l’appareil.
 
