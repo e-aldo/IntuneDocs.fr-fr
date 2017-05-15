@@ -14,10 +14,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7901508dc482af55f0ef2296cf35576f09340fb0
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -75,10 +76,10 @@ Pour afficher la liste complète des applications Microsoft prises en charge, ac
 
 ## <a name="prerequisites"></a>Conditions préalables
 
--   **Un abonnement Microsoft Intune**. Les utilisateurs ont besoin de licences [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour obtenir les applications avec des stratégies de protection des applications.
-Vous êtes déjà inscrit à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si vous utilisez actuellement [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour gérer vos appareils. Vous êtes également inscrit à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si vous avez acheté une licence Enterprise Mobility Suite (EMS). Si vous essayez [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour tester les fonctionnalités de gestion des applications mobiles, vous pouvez obtenir un compte d’essai sur la [page Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+-   **Un abonnement Microsoft Intune**. Les utilisateurs ont besoin de licences Intune pour obtenir les applications avec des stratégies de protection d’application.
+Vous disposez déjà d’un abonnement Intune si vous utilisez actuellement Intune pour gérer vos appareils. Vous disposez également d’un abonnement Intune si vous avez acheté une licence EMS (Enterprise Mobility Suite). Si vous essayez Intune pour tester les fonctionnalités de gestion des applications mobiles, vous pouvez obtenir un compte d’évaluation dans la [page Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Pour vérifier si vous avez un abonnement à [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], dans le portail Office, accédez à la page de **facturation**.  Si vous avez un abonnement, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] doit être indiqué comme **Actif** dans les abonnements.
+    Pour vérifier si vous avez un abonnement Intune, dans le portail Office, accédez à la page de **facturation**.  Si vous avez un abonnement, Intune doit être indiqué comme **Actif** dans les abonnements.
 
 -   **Un abonnement Office 365**, qui est nécessaire pour les opérations suivantes :
 

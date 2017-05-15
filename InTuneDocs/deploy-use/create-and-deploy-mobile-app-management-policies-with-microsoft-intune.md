@@ -14,10 +14,11 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: a7d38caac1cfd035c66d02579766d60d4394dd5e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -157,7 +158,7 @@ Quand vous avez fini de créer une stratégie comme décrit dans la procédure p
 
     Vous avez créé une stratégie et l’avez déployée pour les utilisateurs.
 
-Seuls les utilisateurs en possession de licences [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sont affectés par la stratégie. Les utilisateurs figurant dans le groupe de sécurité que vous avez sélectionné et qui n’ont pas de licence [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ne sont pas affectés.
+Seuls les utilisateurs en possession de licences Intune sont affectés par la stratégie. Les utilisateurs figurant dans le groupe de sécurité que vous avez sélectionné et qui n’ont pas de licence Intune ne sont pas affectés.
 
 >[!IMPORTANT]
 > Si vous utilisez Intune avec Configuration Manager pour gérer vos appareils iOS et Android, la stratégie est appliquée uniquement aux utilisateurs figurant directement dans le groupe que vous avez sélectionné. Les membres des groupes enfants imbriqués dans le groupe que vous avez sélectionné ne sont pas affectés.

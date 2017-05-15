@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68738f25393eec006a8bc7a78412669859f91c27
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -123,7 +124,7 @@ Pour insérer une URL d’application dans la liste des applications, utilisez l
 
 À l’aide d’un moteur de recherche, recherchez l’application à utiliser dans l’App Store iTunes, puis ouvrez la page de l’application.
 Copiez l’URL de la page et utilisez-la en tant qu’adresse permettant de configurer la liste des applications autorisées ou interdites, ou une application à exécuter en mode plein écran.
-Les profils d'appareil qui contiennent des paramètres d’applications restreintes doivent être déployés sur des groupes d’utilisateurs.
+Les profils d’appareil qui contiennent des paramètres d’applications restreintes doivent être attribués à des groupes d’utilisateurs.
 
 Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est la suivante : https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
@@ -160,52 +161,6 @@ Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est la 
 ### <a name="additional-options"></a>Options supplémentaires
 
 Vous pouvez également cliquer sur **Importer** pour remplir la liste à partir d’un fichier csv au format <*URL de l’application*>, <*Nom de l’application*>, <*Développeur de l’application*>, ou cliquer sur **Exporter** pour créer un fichier csv contenant le contenu de la liste des applications affichées ou masquées dans le même format.
-
-### <a name="app-information-for-built-in-ios-apps"></a>Informations sur les applications iOS intégrées
-Utilisez les informations de cette liste pour identifier le nom, l’éditeur et l’ID de lot des applications iOS intégrées que vous pouvez afficher ou masquer. Si vous souhaitez afficher ou masquer toutes les applications de la liste, vous pouvez copier les données ci-dessous dans un fichier texte avec l’extension **.csv**, puis utiliser l’option **Importer** pour importer toutes les applications simultanément.
-
-
-    App Store,Apple,com.apple.AppStore
-    Calculator,Apple,com.apple.calculator
-    Calendar,Apple,com.apple.mobilecal
-    Camera,Apple,com.apple.camera
-    Clock,Apple,com.apple.mobiletimer
-    Compass,Apple,com.apple.compass
-    Contacts,Apple,com.apple.MobileAddressBook
-    FaceTime,Apple,com.apple.facetime
-    Find Friends,Apple,com.apple.mobileme.fmf1
-    Find iPhone,Apple,com.apple.mobileme.fmip1
-    Game Center,Apple,com.apple.gamecenter
-    GarageBand,Apple,com.apple.mobilegarageband
-    Health,Apple,com.apple.Health
-    iBooks,Apple,com.apple.iBooks
-    iTunes Store,Apple,com.apple.MobileStore
-    iTunes U,Apple,com.apple.itunesu
-    Keynote,Apple,com.apple.Keynote
-    Mail,Apple,com.apple.mobilemail
-    Maps,Apple,com.apple.Maps
-    Messages,Apple,com.apple.MobileSMS
-    Music,Apple,com.apple.Music
-    News,Apple,com.apple.news
-    Notes,Apple,com.apple.mobilenotes
-    Numbers,Apple,com.apple.Numbers
-    Pages,Apple,com.apple.Pages
-    Photo Booth,Apple,com.apple.Photo-Booth
-    Photos,Apple,com.apple.mobileslideshow
-    Podcasts,Apple,com.apple.podcasts
-    Reminders,Apple,com.apple.reminders
-    Safari,Apple,com.apple.mobilesafari
-    Settings,Apple,com.apple.Preferences
-    Stocks,Apple,com.apple.stocks
-    Tips,Apple,com.apple.tips
-    Videos,Apple,com.apple.videos
-    VoiceMemos,Apple,com.apple.VoiceMemos
-    Wallet,Apple,com.apple.Passbook
-    Watch,Apple,com.apple.Bridge
-    Weather,Apple,com.apple.weather
-
-
-
 
 
 ## <a name="cellular"></a>Cellulaire
@@ -308,7 +263,7 @@ Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées
 
 >[!NOTE]
 > Avant de pouvoir configurer un appareil iOS pour le mode plein écran, vous devez utiliser l’outil Apple Configurator ou le Programme d’inscription des appareils Apple pour mettre l’appareil en mode supervisé. Pour en savoir plus sur l’outil Apple Configurator, consultez votre documentation Apple.
->Si l’application iOS que vous spécifiez est installée après le déploiement de la stratégie de configuration, l’appareil ne bascule en mode plein écran qu’après son redémarrage.
+>Si l’application iOS que vous spécifiez est installée après l’attribution du profil, l’appareil ne bascule en mode plein écran qu’après son redémarrage.
 
 ## <a name="safari"></a>Safari
 -     **Supervisé (en mode supervisé uniquement)** : spécifier si le navigateur Safari peut être utilisé sur l’appareil.

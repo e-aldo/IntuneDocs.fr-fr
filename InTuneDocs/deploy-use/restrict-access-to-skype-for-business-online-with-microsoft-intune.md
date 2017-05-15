@@ -14,10 +14,11 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 5888ffa6f16e9a9807ce1f9a9eb0594ed31b5b18
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -47,18 +48,18 @@ Pour accéder à Skype Entreprise Online, un appareil doit être :
 
 -   Un appareil **Android** ou **iOS**.
 
--   **Inscrit** auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   **inscrit** auprès d’Intune ;
 
--   **Conforme** à toutes les stratégies de conformité [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] déployées.
+-   **conforme** à toutes les stratégies de conformité Intune déployées.
 
 
 L’état de l’appareil est stocké dans Azure Active Directory, qui autorise ou bloque l’accès en fonction des conditions que vous spécifiez.
 
 Si une condition n’est pas remplie, l’utilisateur reçoit l’un des messages suivants quand il tente de se connecter :
 
--   Si l’appareil n’est pas inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qu’il n’est pas inscrit dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application Portail d’entreprise et inscrire l’appareil.
+-   Si l’appareil n’est pas inscrit auprès d’Intune ou dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application Portail d’entreprise et inscrire l’appareil.
 
--   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers l’application ou le site web du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], où il peut trouver des informations sur le problème et des solutions pour le résoudre.
+-   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers l’application Portail d’entreprise ou le site web du portail d’entreprise Intune, où il peut trouver des informations sur le problème et des solutions pour le résoudre.
 
 ## <a name="configure-conditional-access-for-skype-for-business-online"></a>Configurer l’accès conditionnel à Skype Entreprise Online
 
@@ -77,7 +78,7 @@ Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégi
 [Créez](create-a-device-compliance-policy-in-microsoft-intune.md) et [déployez](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) une stratégie de conformité pour tous les appareils qui seront affectés par la stratégie. Il s’agit de tous les appareils utilisés par les utilisateurs des **Groupes ciblés**.
 
 > [!NOTE]
-> Tandis que les stratégies de conformité sont déployées sur les groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
+> Tandis que les stratégies de conformité sont déployées sur les groupes Intune, les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
 
 
 > [!IMPORTANT]

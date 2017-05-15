@@ -14,10 +14,11 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 3098a301550413a982d3ce9664646f7dfc0b1d1f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -38,7 +39,7 @@ Vérifiez les éléments suivants :
 
 -   Votre version d’Exchange doit être **Exchange 2010 ou une version ultérieure**. Les groupes de serveurs d’accès au client (CAS) du serveur Exchange sont pris en charge.
 
--   Vous devez utiliser le [connecteur Exchange local d’Intune](intune-on-premises-exchange-connector.md) qui connecte [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] à Exchange sur site. Ceci vous permet de gérer les appareils avec la console [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Vous devez utiliser le [connecteur Exchange local d’Intune](intune-on-premises-exchange-connector.md) qui connecte Intune à Exchange sur site. Ceci vous permet de gérer les appareils avec la console Intune.
 
     -   Le connecteur Exchange local auquel vous avez accès dans la console Intune est propre à votre client Intune et ne peut pas être utilisé avec un autre client. Nous vous recommandons également de vérifier que le connecteur Exchange de votre client est installé **sur un seul ordinateur**.
 
@@ -54,13 +55,13 @@ Vérifiez les éléments suivants :
 
 Lorsque vous configurez des stratégies d’accès conditionnel et les ciblez sur un utilisateur, l’**appareil** dont l’utilisateur se sert pour se connecter à sa messagerie doit :
 
--  Être **inscrit** auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou être un PC joint à un domaine.
+-  Être **inscrit** auprès d’Intune ou être un PC joint à un domaine.
 
 -  Être **inscrit dans Azure Active Directory**. En outre, l’ID Exchange ActiveSync du client doit être inscrit auprès d’Azure Active Directory.
 
   Le service d’inscription Azure Active Directory pour appareils est activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service d’inscription d’appareils AD FS ne verront pas les appareils inscrits dans l’annuaire Active Directory local. **Cela ne s’applique pas aux PC Windows ni aux appareils Windows Phone**.
 
--   Être **conforme** à toutes les stratégies de conformité [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] déployées sur cet appareil.
+-   Être **conforme** à toutes les stratégies de conformité Intune déployées sur cet appareil.
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Fonctionnement de l’accès conditionnel avec Exchange sur site
 
@@ -70,9 +71,9 @@ Le diagramme suivant illustre le flux utilisé par les stratégies d’accès co
 
 Si une stratégie d’accès conditionnel n’est pas remplie, il existe un délai de 10 minutes avant le blocage de l'appareil si l’utilisateur reçoit l'un des messages de mise en quarantaine suivants lorsqu’il se connecte :
 
-- Si l’appareil n’est pas inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qu’il n’est pas inscrit dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application du portail d’entreprise, inscrire l’appareil et activer la messagerie. Ce processus associe également l’ID Exchange ActiveSync de l’appareil à l’enregistrement de l’appareil dans Azure Active Directory.
+- Si l’appareil n’est pas inscrit auprès d’Intune ni dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application Portail d’entreprise, inscrire l’appareil et activer la messagerie. Ce processus associe également l’ID Exchange ActiveSync de l’appareil à l’enregistrement de l’appareil dans Azure Active Directory.
 
--   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers l’application ou le site web du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], où il peut trouver des informations sur le problème et des solutions pour y remédier.
+-   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers l’application Portail d’entreprise ou le site web du portail d’entreprise Intune, où il peut trouver des informations sur le problème et des solutions pour y remédier.
 
 ## <a name="support-for-mobile-devices"></a>Prise en charge des appareils mobiles
 Les éléments suivants sont pris en charge :
@@ -88,7 +89,7 @@ Les éléments suivants sont pris en charge :
 
 ## <a name="support-for-pcs"></a>Prise en charge des PC
 Les éléments suivants sont pris en charge :
--   Application **Courrier** sur Windows 8.1 et versions ultérieures (en cas d’inscription de l'ordinateur avec [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   Application **Courrier** sur Windows 8.1 et versions ultérieures (quand le PC est inscrit auprès d’Intune).
 
 ##  <a name="configure-a-conditional-access-policy"></a>Configurer une stratégie d’accès conditionnel
 
@@ -97,21 +98,21 @@ Les éléments suivants sont pris en charge :
 
 2.  Configurez la stratégie avec les paramètres nécessaires : ![Capture d’écran de la page Stratégie Exchange sur site](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Empêcher les applications de messagerie d’accéder à Exchange sur site si l’appareil n’est pas conforme ou n’est pas inscrit à Microsoft Intune :** lorsque vous sélectionnez cette option, les appareils qui ne sont pas gérés par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou qui ne sont pas conformes à une stratégie de conformité n’ont pas accès aux services Exchange.
+  - **Empêcher les applications de messagerie d’accéder à Exchange sur site si l’appareil n’est pas conforme ou n’est pas inscrit à Microsoft Intune :** Quand vous sélectionnez cette option, les appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité n’ont pas accès aux services Exchange.
 
-  - **Substitution de règle par défaut - Toujours autoriser les appareils inscrits et conformes pour l’accès à Exchange :** Quand vous activez cette option, les appareils inscrits dans Intune et conformes aux stratégies de conformité sont autorisés à accéder à Exchange.
+  - **Substitution de règle par défaut - Toujours autoriser les appareils inscrits et conformes pour l’accès à Exchange :**  Quand vous activez cette option, les appareils inscrits dans Intune et conformes aux stratégies de conformité sont autorisés à accéder à Exchange.
   Cette règle se substitue à la **Règle par défaut**, ce qui signifie que même si vous définissez la mise en quarantaine ou un blocage de l’accès par le biais de la **Règle par défaut**, les appareils inscrits et conformes peuvent toujours accéder à Exchange.
 
-  - **Groupes ciblés** : Sélectionnez les groupes d’utilisateurs [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] qui doivent inscrire leurs appareils auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] pour pouvoir accéder à Exchange.
+  - **Groupes ciblés** : Sélectionnez les groupes d’utilisateurs Intune qui doivent inscrire leurs appareils auprès d’Intune pour pouvoir accéder à Exchange.
 
-  - **Groupes exemptés** : Sélectionnez les groupes d’utilisateurs [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] qui sont exempts de la stratégie d’accès conditionnel. Les utilisateurs de cette liste sont exemptés même s’ils se trouvent également dans la liste **Groupes ciblés**.
+  - **Groupes exemptés** : Sélectionnez les groupes d’utilisateurs Intune qui sont exempts de la stratégie d’accès conditionnel. Les utilisateurs de cette liste sont exemptés même s’ils se trouvent également dans la liste **Groupes ciblés**.
 
-  - **Exceptions de plateforme** : Choisissez **Ajouter une règle** pour configurer une règle qui définit des niveaux d’accès pour les familles et modèles d’appareils mobiles spécifiés. Étant donné que ces appareils peuvent être de n’importe quel type, vous pouvez également configurer des types d’appareils non pris en charge par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+  - **Exceptions de plateforme** : Choisissez **Ajouter une règle** pour configurer une règle qui définit des niveaux d’accès pour les familles et modèles d’appareils mobiles spécifiés. Étant donné que ces appareils peuvent être de n’importe quel type, vous pouvez également configurer des types d’appareils non pris en charge par Intune.
 
   - **Règle par défaut** : Si vous avez un appareil qui n’est pas couvert par d’autres règles, vous pouvez choisir de l’autoriser à accéder à Exchange, de le bloquer ou de le mettre en quarantaine. Quand vous définissez la règle de façon à autoriser l’accès aux appareils inscrits et conformes, l’accès à la messagerie est accordé automatiquement aux appareils iOS, Windows et Samsung KNOX. L’utilisateur n’a pas besoin de suivre un processus quelconque pour accéder à sa messagerie électronique.
       - Sur les appareils Android qui n’exécutent pas Samsung KNOX, les utilisateurs obtiennent un message électronique de mise en quarantaine comprenant une procédure pas à pas guidée qu’ils doivent suivre pour vérifier l’inscription et la conformité avant de pouvoir accéder à la messagerie. Si vous définissez la règle de blocage d’accès ou de mise en quarantaine des appareils, aucun appareil ne peut accéder à Exchange, qu’il soit ou non déjà inscrit dans Intune. Pour éviter que les appareils inscrits et conformes soient affectés par cette règle, cochez la case **Substitution de règle par défaut**.
 >[!TIP]
->Si vous avez l’intention de bloquer au préalable tous les appareils avant de leur accorder l’accès à la messagerie électronique, choisissez la règle de blocage d’accès ou de mise en quarantaine. La règle par défaut s’applique à tous les types d’appareils. Ainsi, les types d’appareils que vous configurez en tant qu’exceptions de plateforme et qui ne sont pas pris en charge par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sont également affectés.
+>Si vous avez l’intention de bloquer au préalable tous les appareils avant de leur accorder l’accès à la messagerie électronique, choisissez la règle de blocage d’accès ou de mise en quarantaine. La règle par défaut s’applique à tous les types d’appareils. Ainsi, les types d’appareils que vous configurez en tant qu’exceptions de plateforme et qui ne sont pas pris en charge par Intune sont également affectés.
 
   - **Notification utilisateur :** en plus du message électronique de notification envoyé par Exchange, Intune envoie un message électronique qui contient les étapes à suivre pour débloquer l’appareil. Vous pouvez modifier le message par défaut pour le personnaliser selon vos besoins. Si l’appareil de l’utilisateur est bloqué avant de recevoir le courrier électronique de notification Intune contenant des instructions de correction (ce courrier est envoyé dans la boîte aux lettres Exchange de l’utilisateur), l'utilisateur peut utiliser un appareil non bloqué ou recourir à une autre méthode pour accéder à Exchange et afficher le message.
       - Cela est particulièrement vrai quand le blocage ou la mise en quarantaine est défini avec la **Règle par défaut**. Dans ce cas, l’utilisateur doit accéder à son magasin d’applications, télécharger l’application du portail d’entreprise Microsoft et inscrire son appareil. Cela s’applique aux appareils iOS, Windows et Samsung KNOX. Sur les appareils qui n’exécutent pas Samsung KNOX, vous devez envoyer l’e-mail de quarantaine à un autre compte de messagerie. L’utilisateur doit copier l’e-mail sur l’appareil bloqué pour terminer le processus d’inscription et de mise en conformité.
@@ -124,11 +125,11 @@ Les éléments suivants sont pris en charge :
 
 -   La stratégie d’accès conditionnel prend effet immédiatement. Il est donc inutile de la déployer.
 
--   Une fois qu'un utilisateur a configuré un profil Exchange ActiveSync, le blocage de son appareil peut prendre entre une et trois heures (s'il n'est pas géré par [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   Une fois qu’un utilisateur a configuré un profil Exchange ActiveSync, le blocage de son appareil peut prendre entre une et trois heures (s’il n’est pas géré par Intune).
 
--   Si un utilisateur bloqué inscrit alors l’appareil auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et corrige la non-conformité, l’accès à la messagerie électronique est débloqué dans les deux minutes.
+-   Si un utilisateur bloqué inscrit alors l’appareil auprès d’Intune et corrige la non-conformité, l’accès à la messagerie électronique est débloqué dans les deux minutes.
 
--   Si l'utilisateur annule l'inscription auprès de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], le blocage de son appareil peut prendre entre une et trois heures.
+-   Si l’utilisateur annule l’inscription auprès d’Intune, le blocage de son appareil peut prendre entre une et trois heures.
 
 **Pour obtenir des exemples de scénarios décrivant comment configurer une stratégie d’accès conditionnel pour protéger l’accès des appareils, consultez [Exemples de scénarios de protection d’accès à la messagerie](restrict-email-access-example-scenarios.md).**
 

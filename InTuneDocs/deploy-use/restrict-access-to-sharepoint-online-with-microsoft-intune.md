@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Utilisez l’accès conditionnel [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] pour contrôler l’accès aux fichiers situés sur SharePoint Online.
+Utilisez l’accès conditionnel Microsoft Intune pour contrôler l’accès aux fichiers situés sur SharePoint Online.
 L’accès conditionnel comprend deux composants :
 - Une stratégie de conformité des appareils que l’appareil doit respecter pour être considéré comme conforme.
 - Une stratégie d’accès conditionnel dans laquelle vous spécifiez les conditions que l’appareil doit remplir pour accéder au service.
@@ -45,20 +46,20 @@ Quand un utilisateur tente de se connecter à un fichier à l’aide d’une app
 
 
   Pour se connecter aux fichiers obligatoires, un appareil doit être :
--   **Inscrit** auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou être un PC joint à un domaine.
+-   **Inscrit** auprès d’Intune ou d’un PC joint à un domaine.
 
--   **Inscrit** dans Azure Active Directory (cela se produit automatiquement quand l’appareil est inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   **Inscrit** dans Azure Active Directory (cela se produit automatiquement quand l’appareil est inscrit auprès d’Intune).
 
 
--   **Conforme** à toutes les stratégies de conformité [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] déployées.
+-   **Conforme** à toutes les stratégies de conformité Intune déployées.
 
 L’état de l’appareil est stocké dans Azure Active Directory, qui autorise ou bloque l’accès aux fichiers en fonction des conditions spécifiées.
 
 Si une condition n’est pas remplie, l’utilisateur reçoit l’un des messages suivants quand il tente de se connecter :
 
--   Si l’appareil n’est pas inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ou n’est pas inscrit dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application Portail d’entreprise et inscrire l’appareil.
+-   Si l’appareil n’est pas inscrit auprès d’Intune ni dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application Portail d’entreprise et inscrire l’appareil.
 
--   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers le site web du portail d’entreprise [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dans lequel il peut trouver des informations sur le problème et des solutions pour y remédier.
+-   Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers le site web du portail d’entreprise Intune, où il peut trouver des informations sur le problème et des solutions pour y remédier.
 
 **L’accès conditionnel ne s’applique pas au partage externe**. Pour découvrir comment empêcher le partage externe dans votre locataire ou collection de sites, consultez [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
@@ -115,7 +116,7 @@ Si un utilisateur se trouve dans les deux groupes, il est exempt de la stratégi
 Si ce n’est pas encore fait, créez une stratégie de conformité et déployez-la sur tous les utilisateurs ciblés par la stratégie d’accès conditionnel SharePoint Online.
 
 > [!NOTE]
-> Tandis que les stratégies de conformité sont déployées sur les groupes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
+> Tandis que les stratégies de conformité sont déployées sur les groupes Intune, les stratégies d’accès conditionnel sont destinées aux groupes de sécurité Azure Active Directory.
 
 Pour plus d’informations sur la façon de configurer la stratégie de conformité, consultez [Créer une stratégie de conformité](create-a-device-compliance-policy-in-microsoft-intune.md).
 
@@ -152,11 +153,11 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 
          La stratégie d’accès conditionnel s’applique à toutes les applications clientes qui utilisent l’authentification moderne sur les plateformes que vous spécifiez.
 
-     Pour les PC Windows, le PC doit être joint à un domaine ou inscrit auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et être conforme. Vous pouvez définir les conditions suivantes :
+     Pour les PC Windows, ceux-ci doivent être joints à un domaine ou inscrits auprès d’Intune et être conformes. Vous pouvez définir les conditions suivantes :
 
-     -   **Les appareils doivent être joints à un domaine ou conformes.** Choisissez cette option pour exiger que les PC soient joints à un domaine ou conformes aux stratégies définies dans [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Si un PC ne remplit pas l’une de ces conditions, l’utilisateur est invité à inscrire l’appareil auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+     -   **Les appareils doivent être joints à un domaine ou conformes.** Choisissez cette option pour exiger que les PC soient joints à un domaine ou conformes aux stratégies définies dans Intune. Si un PC ne remplit pas l’une de ces conditions, l’utilisateur est invité à inscrire l’appareil auprès d’Intune.
 
-     -   **Les appareils doivent être conformes** Choisissez cette option pour spécifier que les PC doivent être inscrits auprès d’[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] et être conformes. Si un PC n’est pas inscrit, un message contenant des instructions sur la procédure d’inscription à suivre s’affiche.
+     -   **Les appareils doivent être conformes** Choisissez cette option pour exiger que les PC soient inscrits auprès d’Intune et conformes. Si un PC n’est pas inscrit, un message contenant des instructions sur la procédure d’inscription à suivre s’affiche.
 
 4.   Sous **Accès du navigateur à SharePoint et à OneDrive Entreprise**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs est bloqué. Les restrictions de plateforme que vous avez sélectionnées pour Accès aux applications pour OneDrive s’appliquent également ici.
 
