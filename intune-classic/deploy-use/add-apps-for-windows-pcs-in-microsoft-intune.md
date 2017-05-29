@@ -14,9 +14,11 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
-ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 41823544901f0ae2c87cba4e8591446068b8d144
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -97,9 +99,4 @@ L’application s’affiche sur le nœud **Applications** de l’espace de trava
 Une fois l’application créée, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications avec Microsoft Intune](deploy-apps.md).
 
 Pour obtenir des conseils et des astuces à propos du déploiement de logiciels sur des PC Windows, consultez le billet de blog [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

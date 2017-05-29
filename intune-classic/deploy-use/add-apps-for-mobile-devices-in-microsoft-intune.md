@@ -14,9 +14,11 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
-ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 87d8af0c3e014a6c8bcf2cda72bc6815143c34a9
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -103,9 +105,4 @@ Dans cette vidéo de quatre minutes, vous allez découvrir comment déployer des
 ## <a name="next-steps"></a>Étapes suivantes
 
 Une fois l’application créée, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications avec Microsoft Intune](deploy-apps.md).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

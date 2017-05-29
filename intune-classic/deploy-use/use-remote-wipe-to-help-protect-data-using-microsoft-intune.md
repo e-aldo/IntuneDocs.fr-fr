@@ -14,10 +14,11 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
-ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
-ms.lasthandoff: 02/08/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: b3aeb3e81a14b0c5e461422741d62c02ab635f7e
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -88,7 +89,7 @@ Si l’appareil est allumé et connecté, la propagation de la commande de réin
 8.  Supprimez les appareils appropriés, par exemple, ceux qui ne sont plus utilisés ou qui n’ont pas de définitions précises.
 
 
-## <a name="selective-wipe"></a>réinitialisation sélective
+## <a name="selective-wipe"></a>Réinitialisation sélective
 
 La **réinitialisation sélective** supprime les données d’entreprise, notamment les données de gestion des applications mobiles (GAM) le cas échéant, les paramètres et les profils de messagerie d’un appareil. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil. L’appareil est supprimé d’Intune. Les tableaux suivants décrivent la nature des données supprimées et l’effet de cette opération sur les données qui restent sur l’appareil après une réinitialisation sélective. (Les tableaux sont organisés par plateforme.)
 
