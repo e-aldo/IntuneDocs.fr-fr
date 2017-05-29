@@ -1,11 +1,11 @@
 ---
 title: "Inscrire un appareil Windows 10 dans Intune | Microsoft Docs"
-description: "Inscrire un appareil Windows 10 1607 dans Intune"
+description: "Inscrire un appareil Windows 10 1607 ou supérieur dans Intune"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,21 +17,30 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 5cf93d5f29e7fa3b989b1a00070d620e06f720c4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrire votre appareil Windows 10 dans Intune
 
+> [!NOTE]
+> Windows 10 fonctionne sur tous les types d’appareils. Si vous utilisez un poste de travail, un téléphone ou une tablette, les étapes à suivre sont les mêmes, même si elles diffèrent légèrement des images de cette page.
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Pour ouvrir l’application **Paramètres** Windows, accédez au menu **Démarrer**, puis sélectionnez le bouton **Paramètres**. Vous pouvez également rechercher « paramètres » dans la barre de recherche.
+1. Accédez à **Démarrer**.
 
-2. Sélectionnez **Comptes** > **Accès Professionnel ou Scolaire** > **Se connecter**.
+  - Si vous utilisez un **poste de travail Windows 10**, accédez au **menu Démarrer**.
+  - Si vous utilisez un appareil **Windows 10 Mobile**, accédez à l’**écran d’accueil** et balayez pour afficher la liste **Toutes les applications**.
+
+2.  Ouvrez l’application **Paramètres** Windows en recherchant « paramètres » dans la barre de recherche.
+
+3. Sélectionnez **Comptes** > **Accès Professionnel ou Scolaire** > **Se connecter**.
 
     ![Sélectionner le compte Accès Professionnel ou Scolaire](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 

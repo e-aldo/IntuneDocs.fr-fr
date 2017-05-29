@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: e83299392fc516ed2b11248f28341403419d6758
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -76,7 +77,7 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 
     ![Choisissez votre nom de compte en regard du porte-documents ou du logo Microsoft](./media/win10pc-rs1-sync-button.png)
 
-4. Choisissez le bouton **Synchroniser**. Votre appareil sera synchronisé avec Intune.
+4. Choisissez le bouton **Synchroniser**. Votre appareil est synchronisé avec Intune.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Étapes à suivre si vous voyez Accès professionnel
 
@@ -94,8 +95,8 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 
    Le bouton est grisé jusqu’à ce que la synchronisation se termine.
 
-   ## <a name="windows-10-mobile"></a>Windows 10 Mobile
-   Pour synchroniser manuellement votre appareil mobile Windows 10 pour accélérer l’installation d’une application :
+### <a name="windows-10-mobile"></a>Windows 10 Mobile
+Pour synchroniser manuellement votre appareil mobile Windows 10 pour accélérer l’installation d’une application :
 
    1. Accédez à **Toutes les applications** > **Paramètres** > **Comptes**.
 

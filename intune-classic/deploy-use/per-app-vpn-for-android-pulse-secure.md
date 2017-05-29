@@ -14,9 +14,11 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
-ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -63,7 +65,7 @@ Vous pouvez également utiliser la valeur **WHITELIST** pour spécifier une list
   1.    Sous **Paramètres OMA-URI**, choisissez **Ajouter**.
   2.    Entrez un nom de paramètre.
   3.    Pour **Type de données**, spécifiez **Chaîne**.
-  4.    Pour **OMA-URI**, spécifiez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/Mode**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/Mode**.
+  4.    Pour **OMA-URI**, utilisez la chaîne suivante : **./Vendor/MSFT/VPN/Profile/*Nom*/Mode**, où *Nom* est le nom du profil VPN que vous avez noté à l’étape 1. Dans notre exemple, la chaîne est **./Vendor/MSFT/VPN/Profile/MonProfilVpnApp/Mode**.
   5.    Pour **Valeur**, entrez **BLACKLIST** ou **WHITELIST**.
 
 
@@ -78,9 +80,4 @@ Vous devez déployer *les deux* stratégies sur les *mêmes* groupes Intune.
     -   **Pour fermer la boîte de dialogue sans déployer la stratégie**, choisissez **Annuler**.
 
 Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'ensemble** de l'espace de travail **Stratégie** , les problèmes liés à la stratégie qui nécessitent votre attention. Le **Tableau de bord** contient aussi un récapitulatif de l’état.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

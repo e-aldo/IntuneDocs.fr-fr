@@ -14,9 +14,11 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8a3e8634769b05e6639f7efb6394b7333d998f06
-ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 6e935d74cbf75e18b9316741442dcfda16ead2e6
+ms.contentlocale: fr-fr
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -30,7 +32,7 @@ Lorsqu'un appareil est perdu ou volé, ou si l'employé quitte votre entreprise,
 Pour supprimer des données d’application d’entreprise de manière sélective, créez une demande de réinitialisation en suivant les étapes indiquées dans cette rubrique. Une fois la demande terminée, les données d’entreprise sont supprimées de l’application dès sa prochaine exécution sur l’appareil.
 
 >[!IMPORTANT]
-> Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Actuellement, cela s’applique uniquement à l’application Microsoft Outlook.
+> Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. Actuellement, cela s’applique uniquement à l’application Microsoft Outlook.
 
 ## <a name="create-a-wipe-request"></a>Créer une demande de réinitialisation
 
@@ -93,9 +95,4 @@ Les réinitialisations en attente sont affichées jusqu’à ce que vous les sup
 [Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Utilisation du portail Azure](azure-portal-for-microsoft-intune-mam-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
