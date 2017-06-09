@@ -127,7 +127,7 @@ Pour afficher les journaux du connecteur Exchange, utilisez [Server Trace Viewer
 
 #### <a name="locating-sync-logs"></a>Localisation des journaux de synchronisation
 
--    Localisez une synchronisation complète dans les journaux en recherchant **synchronisation complète**. Le début d’une synchronisation complète est marqué par ce texte :
+-    Localisez une synchronisation complète dans les journaux en recherchant **full sync**. Le début d’une synchronisation complète est marqué par ce texte :
 
     « Traitement de la commande : obtention de la liste des appareils mobiles sans filtre de temps (synchronisation complète) pour <number> utilisateurs »
 
@@ -135,7 +135,7 @@ Pour afficher les journaux du connecteur Exchange, utilisez [Server Trace Viewer
 
     Obtention de la liste des appareils mobiles sans filtre de temps (synchronisation complète) pour 4 utilisateurs réussie. Détails : Résultat de la commande d’inventaire - Appareils synchronisés : 0 ID de commande : commandIDGUID' Intégrité Exchange : 'Server health 'Nom : 'PowerShellExchangeServer: <Name=nomdemonserveurmail>' État : Connected','
 
--    Localisez une synchronisation (différentielle) rapide dans les journaux en recherchant **synchronisation rapide**.
+-    Localisez une synchronisation (différentielle) rapide dans les journaux en recherchant **quick sync**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Exceptions dans la commande Get next
 Recherchez les exceptions de la **commande get next** dans les journaux du connecteur Exchange et fournissez-les au support Microsoft.
