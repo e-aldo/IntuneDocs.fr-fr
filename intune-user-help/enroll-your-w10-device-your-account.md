@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/22/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/23/2017
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrire votre appareil Windows 10 dans Intune
 
-> [!NOTE]
-> Windows 10 fonctionne sur tous les types d’appareils. Si vous utilisez un poste de travail, un téléphone ou une tablette, les étapes à suivre sont les mêmes, même si elles diffèrent légèrement des images de cette page.
+  > [!NOTE]
+  > Windows 10 fonctionne sur tous les types d’appareils. Si vous utilisez un poste de travail, un téléphone ou une tablette, les étapes à suivre sont les mêmes, même si elles diffèrent légèrement des images de cette page.
 
 1.  Accédez à **Démarrer**.
 
