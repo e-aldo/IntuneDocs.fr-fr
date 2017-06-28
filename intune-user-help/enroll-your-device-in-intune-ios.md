@@ -39,7 +39,7 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 **Avant de commencer :**
 
 - Veillez à terminer l’inscription après avoir démarré la procédure. Une interruption de plus de quelques minutes arrête généralement le processus et vous oblige à effectuer un redémarrage.
-- Si votre inscription échoue pour une raison quelconque, vous devez revenir à l’application du portail d'entreprise et réessayer.
+- Si votre inscription échoue pour une raison quelconque, vous devez revenir à l’application Portail d’entreprise et réessayer.
 - Vérifiez que votre connexion Wi-Fi fonctionne. Si ce n’est pas le cas, l’inscription échoue.
 - Si vous avez bloqué Safari sur votre appareil, débloquez-le. Vous devez utiliser Safari pour effectuer l’inscription.
 

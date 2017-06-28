@@ -1,5 +1,5 @@
 ---
-title: "Mise à jour d’applications | Microsoft Docs"
+title: "Mettre à jour des applications"
 description: "Utilisez les informations de cette rubrique pour découvrir comment mettre à jour des applications quand une nouvelle version est nécessaire."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 512f19a1e894479404d25d2500b0db79ba0882cf
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d974a3c8fd69ee970991af96afe2011c6d07db2a
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Stratégies pour protéger les PC Windows | Microsoft Docs"
+title: "Stratégies pour protéger les PC Windows"
 description: "Utilisez ces stratégies pour garantir la sécurité des ordinateurs Windows quand ils sont gérés par le logiciel client Intune."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 36be534c800a4f053ffaf34efdbb1debec4978f3
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6f840cf1b9319cd3a7650f645e6148bb4e56cfa3
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Utilisation de stratégies pour vous aider à protéger les PC Windows qui exécutent le logiciel client Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune propose trois stratégies que vous pouvez utiliser pour garantir la sécurité des PC Windows gérés par le [logiciel client Intune](manage-windows-pcs-with-microsoft-intune.md).
 

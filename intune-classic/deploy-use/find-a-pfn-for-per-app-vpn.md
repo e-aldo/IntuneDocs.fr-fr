@@ -1,5 +1,5 @@
 ---
-title: Rechercher un nom de famille de packages (PFN) pour le VPN par application | Microsoft Docs
+title: Rechercher un nom de famille de packages (NFP) pour un VPN par application
 description: Recherchez un nom de famille de packages (PFN) pour configurer un VPN par application.
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0fd7d7e1e09f193479c6ad221c8ace7470942c5a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: eea3b9e2888f07399c8cda1e81ae8a5318d02d42
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -74,10 +74,10 @@ Voici les informations récupérées pour OneNote :
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Rechercher un PFN si l’application n’est pas installée sur un ordinateur
 
-1.    Accédez à https://www.microsoft.com/store/apps.
-2.    Entrez le nom de l’application dans la barre de recherche. Dans notre exemple, recherchez OneNote.
-3.    Choisissez le lien vers l’application. Notez que l’URL se termine par une série de lettres. Dans notre exemple, l’URL ressemble à ceci : `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`.
-4.    Sous un autre onglet, collez l’URL suivante : `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Remplacez `<app id>` par l’ID d’application que vous avez obtenu de https://www.microsoft.com/store/apps : la série de lettres à la fin de l’URL à l’étape 3. Dans notre exemple avec OneNote, vous devez coller : `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+1.  Accédez à https://www.microsoft.com/store/apps.
+2.  Entrez le nom de l’application dans la barre de recherche. Dans notre exemple, recherchez OneNote.
+3.  Choisissez le lien vers l’application. Notez que l’URL se termine par une série de lettres. Dans notre exemple, l’URL ressemble à ceci : `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`.
+4.  Sous un autre onglet, collez l’URL suivante : `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Remplacez `<app id>` par l’ID d’application que vous avez obtenu de https://www.microsoft.com/store/apps : la série de lettres à la fin de l’URL à l’étape 3. Dans notre exemple avec OneNote, vous devez coller : `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
 Microsoft Edge affiche les informations souhaitées. Dans Internet Explorer, choisissez **Ouvrir** pour visualiser les informations. La valeur du PFN figure sur la première ligne. Voici les résultats de notre exemple :
 

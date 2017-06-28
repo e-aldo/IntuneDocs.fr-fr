@@ -1,5 +1,5 @@
 ---
-title: Mettre hors service des appareils | Microsoft Docs
+title: Mettre des appareils hors service
 description: "Intune prend en charge une réinitialisation sélective et une réinitialisation complète pour supprimer l’appareil de la gestion Intune en supprimant la stratégie et le portail d’entreprise."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ Les appareils ne sont jamais supprimés d'Intune sans votre intervention, même 
 
 Vous pouvez être amené à mettre un appareil hors service pour plusieurs raisons :
 
--    l’utilisateur quitte une entreprise d’une manière planifiée (départ « géré ») ;
--    l’utilisateur quitte l’entreprise brusquement (il est renvoyé, démissionne etc.) ;
--    l’appareil est perdu ;
--    un appareil est réaffecté (affecté à un autre utilisateur, réutilisé dans un autre contexte).
+-   l’utilisateur quitte une entreprise d’une manière planifiée (départ « géré ») ;
+-   l’utilisateur quitte l’entreprise brusquement (il est renvoyé, démissionne etc.) ;
+-   l’appareil est perdu ;
+-   un appareil est réaffecté (affecté à un autre utilisateur, réutilisé dans un autre contexte).
 
 Vous pouvez effectuer une réinitialisation sélective ou complète sur un appareil géré en tant qu’appareil mobile ou vous pouvez verrouiller un appareil et réinitialiser son mot de passe. En réinitialisant l’appareil, vous libérez l’abonnement de l’utilisateur pour ajouter un autre appareil. Vous pouvez également mettre hors service des ordinateurs gérés à l’aide du logiciel client Intune.
 

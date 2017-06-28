@@ -1,5 +1,5 @@
 ---
-title: Simplification de la configuration des e-mails sur des appareils mobiles | Microsoft Docs
+title: Simplification de la configuration des e-mails sur des appareils mobiles
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Si c’est le cas, Microsoft Intune peut configurer automatiquement les e-mails 
 Une fois le profil de messagerie configuré, vous pouvez facilement restreindre l’accès à la messagerie d’entreprise et aux services Office 365 grâce à des stratégies d’accès conditionnel Intune. Ces stratégies vous permettent de vous assurer que l’accès à la messagerie de votre entreprise et aux services Office 365 est limité aux appareils qui respectent les règles que vous avez définies dans Intune.
 
 ## <a name="how-do-i-do-it"></a>Comment procéder ?
-1.    Configurez automatiquement [ des profils de messagerie d’utilisateur final](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) sur des appareils Windows, iOS et Android.
-2.    [Contrôlez l’accès à la messagerie d’entreprise](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) à l’aide de stratégies d’accès conditionnel.
+1.  Configurez automatiquement [ des profils de messagerie d’utilisateur final](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) sur des appareils Windows, iOS et Android.
+2.  [Contrôlez l’accès à la messagerie d’entreprise](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) à l’aide de stratégies d’accès conditionnel.
 
 
 ### <a name="additional-information"></a>Informations complémentaires :

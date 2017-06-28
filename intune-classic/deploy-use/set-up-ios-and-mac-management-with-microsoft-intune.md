@@ -1,5 +1,5 @@
 ---
-title: Configurer la gestion iOS et Mac | Microsoft Docs
+title: Configurer la gestion iOS et MAC
 description: "Activez la gestion des appareils mobiles pour les appareils iOS, notamment iPad et iPhone, ainsi que les appareils Mac OS X avec Microsoft Intune."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ef1fbee09172a89e0f83cbe905a00f3a3ef25b05
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: af300534b3868a829c0b648d4df2587886ef749b
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -53,7 +53,7 @@ Intune permet la gestion des appareils mobiles (MDM) pour les appareils iPad, iP
     Pour obtenir des instructions sur l’inscription des utilisateurs finaux, consultez [Inscrire votre appareil iOS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) et [Inscrire votre appareil Mac OS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
 
     Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
-    - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+    - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](/intune/end-user-educate)
     - [Conseils destinés aux utilisateurs finaux pour les appareils iOS et Mac](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Si votre entreprise ou organisation achète des appareils iOS pour les utilisateurs, ils peuvent également être inscrits pour être gérés en tant qu’[appareils iOS appartenant à l’entreprise](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).

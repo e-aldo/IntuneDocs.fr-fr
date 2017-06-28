@@ -1,5 +1,5 @@
 ---
-title: "Utiliser des groupes pour gérer les utilisateurs et les appareils | Microsoft Docs"
+title: "Utiliser des groupes pour gérer les utilisateurs et les appareils"
 description: "Créer et gérer des groupes à l’aide de l’espace de travail Groupes."
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ Avec les vues de groupes filtrées, vous pouvez personnaliser le contenu qui s�
 -   Vous souhaitez que vos administrateurs informatiques puissent déployer des éléments uniquement pour des utilisateurs et appareils spécifiques.
 -   Vous souhaitez afficher aux administrateurs informatiques uniquement les groupes qui les intéressent.
 
-Vous pouvez configurer des vues de groupes filtrées pour les administrateurs de service dans la console d’administration Intune. Pour plus d’informations, consultez [Informations à connaître avant de commencer à utiliser Microsoft Intune](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
+Vous pouvez configurer des vues de groupes filtrées pour les administrateurs de service dans la console d’administration Intune. Pour plus d’informations, consultez [Informations à connaître avant de commencer à utiliser Microsoft Intune](/intune/supported-devices-browsers).
 
 Une fois que vous avez configuré des vues de groupes filtrées pour un administrateur de service, cet administrateur peut uniquement afficher et sélectionner les groupes que vous avez spécifiés quand il déploie des logiciels ou des stratégies, ou génère des rapports. De plus, l’administrateur ne voit pas les informations d’état dans les pages suivantes de la console d’administration :
 

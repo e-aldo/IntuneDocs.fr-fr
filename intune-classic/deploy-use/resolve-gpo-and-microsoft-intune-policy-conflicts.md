@@ -1,5 +1,5 @@
 ---
-title: "Résoudre des conflits de stratégie entre les objets de stratégie de groupe et Intune | Microsoft Docs"
+title: "Résoudre des conflits de stratégie entre les objets de stratégie de groupe et Intune"
 description: "Découvrez comment résoudre les conflits entre les stratégies de configuration de la stratégie de groupe et Intune."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Résoudre des conflits de stratégie entre les objets de stratégie de groupe (GPO) et Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune utilise des stratégies qui vous aident à gérer des paramètres sur les PC Windows. Par exemple, vous pouvez utiliser une stratégie de contrôle des paramètres du Pare-feu Windows sur les PC. De nombreux paramètres Intune sont identiques à ceux que vous pouvez configurer avec la stratégie de groupe Windows. Toutefois, il est possible que, dans certains cas, les deux méthodes entrent en conflit l’une avec l’autre.
 
 Lorsque des conflits se produisent, la stratégie de groupe au niveau du domaine est prioritaire sur la stratégie Intune, sauf si le PC ne peut pas se connecter au domaine. Dans ce cas, la stratégie Intune est appliquée au PC client.
