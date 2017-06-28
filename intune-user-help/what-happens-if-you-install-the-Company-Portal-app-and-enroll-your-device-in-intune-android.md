@@ -18,10 +18,10 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 31e51e6fdf1bcbb17243425b69108ab433eb57c0
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -60,5 +60,5 @@ Une fois votre appareil ajouté au portail d’entreprise, voici ce qu’il va f
 
 -   envoyer toute mise à jour de l'inventaire d'applications de la société. (Ces mises à jour n’ont pas d’informations personnelles.)
 
-Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
+Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](https://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
 

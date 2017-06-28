@@ -1,5 +1,5 @@
 ---
-title: "Inscrire les appareils iOS d’entreprise | Microsoft Docs"
+title: Inscrire des appareils iOS d&quot;entreprise
 description: "Inscrire des appareils iOS d’entreprise à l’aide du programme d’inscription des appareils Apple ou d’Apple Configurator"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ Les appareils qui sont configurés avec une affinité utilisateur peuvent instal
 
 Une affinité utilisateur est nécessaire pour prendre en charge les éléments suivants :
   - Applications de gestion des applications mobiles (GAM)
-  -    Accès conditionnel aux données de messagerie et de l’entreprise
-  -    Application Portail d’entreprise
+  - Accès conditionnel aux données de messagerie et de l’entreprise
+  - Application Portail d’entreprise
 
 **Comment les utilisateurs inscrivent des appareils iOS d’entreprise avec l’affinité utilisateur**
 1. Quand les utilisateurs allument leur appareil, ils sont invités à terminer l’exécution de l’Assistant Installation. Pendant l’installation, les utilisateurs sont invités à fournir leurs informations d’identification. Ils doivent utiliser les informations d’identification (c’est-à-dire, le nom d’utilisateur principal ou UPN) associées à leur abonnement dans Intune.

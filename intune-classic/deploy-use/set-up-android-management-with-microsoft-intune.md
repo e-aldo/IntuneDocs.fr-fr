@@ -1,5 +1,5 @@
 ---
-title: Configuration de la gestion Android | Microsoft Docs
+title: Configuration de la gestion Android
 description: Activez la gestion des appareils mobiles pour les appareils Android et KNOX Standard avec Microsoft Intune.
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4042a22ecfbab7970ea4b3dab8ee6a82b0da5f78
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 927259d2f3b3078c9fdb0f1ba3bb22a69b555ab6
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -42,7 +42,7 @@ Par défaut, les appareils Android peuvent être inscrits dans Intune. Pour bloq
     Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Android dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). Le processus d’inscription indique aux utilisateurs ce qu’ils peuvent attendre, et ce que les administrateurs informatiques peuvent voir ou ne peuvent pas voir sur leurs appareils.
 
     Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
-  - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+  - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](/intune/end-user-educate)
   - [Conseils destinés aux utilisateurs relatifs aux appareils Android](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 En l’absence de Google Play Store en Chine, les appareils Android doivent obtenir l’application Portail d’entreprise dans les places de marché des applications chinoises. L’application Portail d’entreprise pour Android sera disponible en téléchargement dans les boutiques suivantes :

@@ -1,5 +1,5 @@
 ---
-title: "Demander et fournir une assistance à distance pour les PC Windows | Microsoft Docs"
+title: "Demander et fournir une assistance à distance pour les PC Windows"
 description: "Décrit les étapes de l’utilisateur final et de l’administrateur informatique permettant de fournir une assistance à distance pour les bureaux Windows gérés et de démarrer un PC à distance."
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 416fb7a4f4be0450dcfbd02b1fdb51097553df0a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3d173cf9a9ec8617cb7feec858b696aa0e80c12d
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Demander et fournir une assistance à distance pour les PC Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 Les informations de cette rubrique s’appliquent uniquement aux bureaux Windows que vous gérez en tant que PC à l’aide du client logiciel Intune.
 

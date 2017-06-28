@@ -1,5 +1,5 @@
 ---
-title: "Éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365 | Microsoft Docs"
+title: "Éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365"
 description: "Utilisez Intune pour sécuriser les données de votre organisation avec des stratégies de gestion des applications mobiles (GAM) qui permettent d’éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365 ou autres applications métier."
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ Vous voulez autoriser les utilisateurs finaux à accéder à vos données Office
 Si c’est le cas, Microsoft Intune vous permet de définir des stratégies GAM pour les applications mobiles Office 365 sur iOS et Android, notamment des restrictions des fonctions couper/copier/coller, la désactivation de la fonction Enregistrer sous, la définition de l’obligation d’un code PIN et la possibilité de réinitialiser des données protégées par GAM à distance.  Cela protège les données d’entreprise sans obliger les utilisateurs à inscrire leurs appareils auprès d’une solution MDM, tout en conservant une expérience utilisateur de pointe avec les applications mobiles Office.
 
 ## <a name="how-do-i-do-it"></a>Comment procéder ?
-1.    Comprenez les bases du fonctionnement de la [gestion des applications mobiles Intune /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
-2.    Découvrez [ce que vous devez faire avant de pouvoir créer des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) dans le portail Azure.
-3.    [Créez et déployez des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) avec Intune.
+1.  Apprenez le [fonctionnement de base de la Gestion des applications mobiles (GAM) Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
+2.  Découvrez [ce que vous devez faire avant de pouvoir créer des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) dans le portail Azure.
+3.  [Créez et déployez des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) avec Intune.
 
 ### <a name="additional-information"></a>Informations supplémentaires :
 - [Expérience de l’utilisateur final](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) pour des applications avec la GAM activée.
-- [Préparer des applications métier GAM avec Intune](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Préparer des applications métier GAM avec Intune](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">Liste des partenaires Microsoft Intune&rarr;</a> fournissant des applications prenant en charge la gestion des applications mobiles (GAM).
 
 ## <a name="what-should-i-do-next"></a>Que dois-je faire ensuite ?

@@ -1,5 +1,5 @@
 ---
-title: "Utiliser des stratégies pour simplifier la gestion des PC Windows | Microsoft Docs"
+title: "Utiliser des stratégies pour simplifier la gestion des PC Windows"
 description: "Décrit les stratégies de gestion des PC Windows et les paramètres de Microsoft Intune Center."
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a2b956f8c999ec5489152a63a9af6e24da8ec536
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e14b5c56356812fdc3ea775cddde0f668b344177
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Utiliser des stratégies pour simplifier la gestion des PC Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Pour gérer les ordinateurs de bureau Windows en tant que PC en y exécutant le client logiciel Intune, vous pouvez utiliser uniquement les stratégies qui se trouvent sous **Gestion de l'ordinateur** dans la console d’administration Intune. Toutes les autres stratégies répertoriées dans la console d’administration sont réservés aux appareils mobiles uniquement. Utilisez les stratégies de la **Gestion de l’ordinateur** pour configurer les paramètres de Microsoft Intune Center, contrôler les mises à jour apportées aux PC et configurer le Pare-feu Windows pour les PC.
 

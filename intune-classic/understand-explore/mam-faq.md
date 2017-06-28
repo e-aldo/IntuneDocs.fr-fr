@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a39f67a532f53ef6ab2e3cc5d17b2d593a3483ae
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 ## <a name="mam-basics"></a>Notions de base de la MAM
 
 
-**Qu’est-ce-que la MAM ?** La [gestion des applications mobiles Intune](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) se rapporte à la suite de fonctionnalités de gestion Intune qui vous permettent de publier, d’envoyer des notifications Push, de configurer, de sécuriser, de surveiller et de mettre à jour des applications mobiles pour vos utilisateurs.
+**Qu’est-ce-que la MAM ?** La [gestion des applications mobiles Intune](/intune/app-lifecycle) se rapporte à la suite de fonctionnalités de gestion Intune qui vous permettent de publier, d’envoyer des notifications Push, de configurer, de sécuriser, de surveiller et de mettre à jour des applications mobiles pour vos utilisateurs.
 
 **Quels sont les avantages de la protection des applications MAM ?** La MAM protège les données d’une organisation au sein d’une application. Avec la gestion des applications mobiles MAM sans inscription, une application professionnelle ou scolaire qui contient des données sensibles peuvent être gérées sur pratiquement n’importe quel appareil, notamment les appareils personnels dans les scénarios BYOD (apportez votre propre appareil). Plusieurs applications de productivité, telles que les applications Microsoft Office, peuvent être gérées par la MAM Intune. Consultez la liste officielle des [applications compatibles avec Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) accessibles au public.
 
@@ -50,12 +50,12 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Applications que vous pouvez gérer avec des stratégies de protection des applications
 
-**Quelles sont les applications qui peuvent être gérées par des stratégies de protection des applications ?** Toute application compatible avec le [Kit de développement logiciel (SDK) d’application Intune](../develop/intune-app-sdk.md) ou encapsulée par [l’outil de création de package de restrictions d’application Intune](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) peut être gérée à l’aide de stratégies de protection des applications Intune. Consultez la liste officielle des [applications compatibles avec Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) accessibles au public.
+**Quelles sont les applications qui peuvent être gérées par des stratégies de protection des applications ?** Toute application compatible avec le [Kit de développement logiciel (SDK) d’application Intune](/intune/app-sdk) ou encapsulée par [l’outil de création de package de restrictions d’application Intune](/intune/apps-prepare-mobile-application-management) peut être gérée à l’aide de stratégies de protection des applications Intune. Consultez la liste officielle des [applications compatibles avec Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) accessibles au public.
 
 **Quelles sont les exigences de base pour l’utilisation de stratégies de protection des applications sur une application compatibles avec Intune ?**
-  1. L’utilisateur final doit avoir un compte Azure Active Directory (AAD). Consultez la page [Ajouter des utilisateurs et accorder une autorisation d’administration à Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) pour apprendre à créer des utilisateurs Intune dans Azure Active Directory.
+  1. L’utilisateur final doit avoir un compte Azure Active Directory (AAD). Consultez la page [Ajouter des utilisateurs et accorder une autorisation d’administration à Intune](/intune/users-permissions-add) pour apprendre à créer des utilisateurs Intune dans Azure Active Directory.
 
-  2. L’utilisateur final doit disposer d’une licence pour Microsoft Intune attribuée à son compte Azure Active Directory. Consultez la page [Gérer les licences Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) pour apprendre à attribuer des licences Intune à des utilisateurs finaux.
+  2. L’utilisateur final doit disposer d’une licence pour Microsoft Intune attribuée à son compte Azure Active Directory. Consultez la page [Gérer les licences Intune](/intune/licenses-assign) pour apprendre à attribuer des licences Intune à des utilisateurs finaux.
 
   3. L’utilisateur final doit appartenir à un groupe de sécurité qui est ciblé par une stratégie de protection des applications. La même stratégie de protection des applications doit cibler l’application spécifique utilisée. Des stratégies de protection des applications peuvent être créées et déployées dans la console Intune dans le [portail Azure](http://portal.azure.com). Des groupes de sécurité peuvent actuellement être créés dans le [portail Office](http://portal.office.com).
 
@@ -134,7 +134,7 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 ## <a name="app-experience-on-ios"></a>Expérience d'application sur iOS
 
- **Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
+**Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
 
 ### <a name="see-also"></a>Voir aussi
 - [Paramètres de stratégie de gestion des applications mobiles Android dans Microsoft Intune](../deploy-use/android-mam-policy-settings.md)

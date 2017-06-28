@@ -1,5 +1,5 @@
 ---
-title: "Configurer l’infrastructure de certificat pour SCEP | Microsoft Docs"
+title: "Configurer l’infrastructure de certificat pour SCEP"
 description: "Infrastructure de création et de déploiement des profils de certificats SCEP."
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88fd05cf1ccaf2c033b737ce76a3ce5d83557313
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9b62e03d88055c19a04c3968a1f060e20ae4fc65
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurer l’infrastructure de certificat pour SCEP
@@ -48,7 +48,7 @@ I
 
 ### <a name="network-requirements"></a>Conditions requises en matière de réseau
 
-Depuis Internet jusqu’au réseau de périmètre, autorisez le port 443 depuis tous les hôtes/adresses IP sur Internet vers le serveur NDES.
+Depuis Internet jusqu’au réseau de périmètre, autorisez le port 443 depuis tous les hôtes/adresses IP sur Internet vers le serveur NDES.
 
 Depuis le réseau de périmètre jusqu’au réseau approuvé, autorisez tous les ports et protocoles requis pour l’accès au domaine sur le serveur NDES joint au domaine. Le serveur NDES a besoin d’un accès aux serveurs de certificats, aux serveurs DNS, aux serveurs Configuration Manager et aux contrôleurs de domaine.
 

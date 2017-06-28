@@ -1,5 +1,5 @@
 ---
-title: "Gérer les applications iOS achetées en volume | Microsoft Docs"
+title: "Gérer les applications iOS achetées en volume"
 description: "Utilisez Intune pour gérer les applications que vous avez achetées en volume auprès d’Apple, en important les informations de licence à partir du magasin d’applications, en effectuant le suivi du nombre de licences que vous avez utilisées, et en vous empêchant d’installer un nombre de copies de l’application supérieur au nombre dont vous êtes propriétaire."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c05c9cb1a0de468f1a6663a7870631af159d9b04
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f2600864eaf127810639e76932adbd422b4e0008
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

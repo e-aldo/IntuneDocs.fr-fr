@@ -1,5 +1,5 @@
 ---
-title: Inscrire des appareils | Microsoft Docs
+title: Inscrire des appareils
 description: "La gestion des appareils mobiles utilise l’inscription pour gérer les appareils et leur autoriser l’accès aux ressources."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e724e648dc8e768f11e51103a050665a60ffcb1a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -43,40 +43,40 @@ Le tableau suivant présente les méthodes d’inscription Intune, ainsi que les
 
 **Méthodes d’inscription iOS**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails** |
+| **Méthode** |  **Réinitialisation nécessaire ?** |    **Affinité**    |   **Verrouillage** | **Détails** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
-|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|    Non |Non |Non    | [Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|    Oui |    Facultatif |    Facultatif|[Plus d’informations](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**|    Oui |    Facultatif |    Non| [Plus d’informations](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**|    Non |    Non    | Non|[Plus d’informations](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Non|    Oui |   Non | [Plus d’informations](prerequisites-for-enrollment.md)|
+|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|   Non |Non |Non  | [Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|   Oui |   Facultatif |  Facultatif|[Plus d’informations](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**| Oui |   Facultatif |  Non| [Plus d’informations](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**| Non |    Non  | Non|[Plus d’informations](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Méthodes d’inscription de Windows**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails**|
+| **Méthode** |  **Réinitialisation nécessaire ?** |    **Affinité**    |   **Verrouillage** | **Détails**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
-|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|    Non |Non |Non    |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Non|    Oui |   Non | [Plus d’informations](prerequisites-for-enrollment.md)|
+|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|   Non |Non |Non  |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Méthodes d’inscription d’Android**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails**|
+| **Méthode** |  **Réinitialisation nécessaire ?** |    **Affinité**    |   **Verrouillage** | **Détails**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
-|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|    Non |Non |Non    |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Non|    Oui |   Non | [Plus d’informations](prerequisites-for-enrollment.md)|
+|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|   Non |Non |Non  |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Méthodes d’inscription Android for Work**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails**|
+| **Méthode** |  **Réinitialisation nécessaire ?** |    **Affinité**    |   **Verrouillage** | **Détails**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
-|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|    Non |Non |Non    |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | Non|    Oui |   Non | [Plus d’informations](prerequisites-for-enrollment.md)|
+|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#dem)**|   Non |Non |Non  |[Plus d’informations](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Méthodes d’inscription macOS**
 
-| **Méthode** |    **Réinitialisation nécessaire ?** |    **Affinité**    |    **Verrouillage** | **Détails**|
+| **Méthode** |  **Réinitialisation nécessaire ?** |    **Affinité**    |   **Verrouillage** | **Détails**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Non|    Oui |    Non | [Plus d’informations](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | Non|    Oui |   Non | [Plus d’informations](prerequisites-for-enrollment.md)|
 
 
 Pour répondre à une série de questions qui vous aideront à déterminer la méthode appropriée, consultez [Choisir comment inscrire des appareils](/intune-classic/get-started/choose-how-to-enroll-devices1).
@@ -94,15 +94,15 @@ Le gestionnaire d’inscription d’appareil est un compte Intune spécial perme
 
 ### <a name="dep"></a>DEP
 Le programme d’inscription d’appareils Apple (ou DEP) vous permet de créer et déployer une stratégie « à distance » sur des appareils iOS achetés et gérés avec DEP. L’appareil est inscrit quand l’utilisateur le démarre pour la première fois et exécute l’Assistant d’installation iOS. Cette méthode prend en charge le mode **iOS supervisé** qui permet à son tour ce qui suit :
-  -    Inscription verrouillée
-  -    Mode plein écran et autres configurations et restrictions avancées
+  - Inscription verrouillée
+  - Mode plein écran et autres configurations et restrictions avancées
 
 En savoir plus sur le programme [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Retour au tableau](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 Les administrateurs utilisent Apple Configurator, via un port USB, pour préparer manuellement chaque appareil d’entreprise à l’inscription à l’aide de l’Assistant Configuration. Ils créent un profil d’inscription et l’exportent vers Apple Configurator. Lorsque les utilisateurs reçoivent leurs appareils, ils sont invités à exécuter l’Assistant Configuration pour inscrire leurs appareils. Cette méthode prend en charge le mode **iOS supervisé** qui permet à son tour ce qui suit :
-  -    Inscription verrouillée
-  -    Mode plein écran et autres configurations et restrictions avancées
+  - Inscription verrouillée
+  - Mode plein écran et autres configurations et restrictions avancées
 
 En savoir plus sur l’[inscription de l’Assistant Configuration avec Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Retour au tableau](#overview-of-device-enrollment-methods))
 
@@ -131,5 +131,5 @@ Intune peut gérer les plateformes d’appareils suivantes :
 ## <a name="next-steps"></a>Étapes suivantes
 - [Prérequis pour l’inscription d’appareils](prerequisites-for-enrollment.md)
 - [Gérer les appareils d’entreprise](manage-corporate-owned-devices.md)
-- [Ordinateurs et appareils mobiles pris en charge](../get-started/what-to-know-before-you-start-microsoft-intune.md#intune-supported-devices)
+- [Ordinateurs et appareils mobiles pris en charge](/intune/supported-devices-browsers#intune-supported-devices)
 

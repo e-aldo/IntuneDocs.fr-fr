@@ -1,95 +1,108 @@
-# Introduction
-## [Qu’est-ce que la préversion du portail Azure ?](what-is-intune.md)
-## [Qu’est-ce qu’Intune pour l’Éducation ?](/intune-classic/understand-explore/introduction-to-intune-education?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+# [Introduction](introduction-intune.md)
+## [Qu’est-ce que le portail Azure ?](what-is-intune.md)
+## [Qu’est-ce qu’Intune pour l’Éducation ?](introduction-intune-education.md)
 ## [Fonctionnalités d’Intune dans Azure](ui-changes.md)
-## Prise en main
-<!---(get-started.md) --->
-### [S’inscrire à une évaluation gratuite](free-trial-sign-up.md)
+## [S’inscrire à une évaluation gratuite](free-trial-sign-up.md)
 ## [Nouveautés](whats-new.md)
+### [Nouveautés de l’interface utilisateur des applications](whats-new-app-ui.md)
+### [Qu’est-ce que la nouvelle archive (portail Azure)](whats-new-archive.md)
+### [Qu’est-ce que la nouvelle archive (portail classique)](whats-new-archive-classic.md)
+
+<!--## High-level architecture-->
+
+## [Cycles de vie des applications et des appareils](introduction-device-app-lifecycles.md)
+### [Cycle de vie de l’appareil](device-lifecycle.md)
+### [Cycle de vie de l’application](app-lifecycle.md)
+## [Scénarios courants](common-scenarios.md)
 ## [Problèmes connus](known-issues.md)
 ## [Obtenir un support](get-support.md)
-<!---
+## [Description du service Intune](microsoft-intune-service-description.md)
 
-## [Related resources](related-resources.md)
-
-## [Get started](plan-and-design/get-started.md) --->
-
-# Planifier et concevoir
-
-## [Planification du déploiement, conception et implémentation](/intune-classic/plan-design/introduction?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 1 : déterminer les objectifs et les défis liés au déploiement](/intune-classic/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 2 : identifier des scénarios d’utilisation](/intune-classic/plan-design/section-2-identify-use-case-scenarios?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 3 : déterminer les exigences du scénario d’utilisation](/intune-classic/plan-design/section-3-determine-use-case-requirements?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 4 : développer un plan de déploiement](/intune-classic/plan-design/section-4-develop-a-rollout-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 5 : développer un plan de communication](/intune-classic/plan-design/section-5-develop-a-rollout-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 6 : développer un plan de support](/intune-classic/plan-design/section-6-develop-a-support-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 7 : créer une conception Intune](/intune-classic/plan-design/section-7-create-an-intune-design?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 8 : implémentation d'Intune](/intune-classic/plan-design/section-8-onboarding-process?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Section 9 : test et validation](/intune-classic/plan-design/section-9-test-and-validation?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Ressources supplémentaires](/intune-classic/plan-design/additional-resources?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-
-## [Migrer](/intune-classic/plan-design/intune-mdm-migration-guide?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Phase 1 : Préparer Intune pour la Gestion des appareils mobiles](/intune-classic/plan-design/migration-phase1-prepare-intune-for-mobile-device-management?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Configuration de base](/intune-classic/plan-design/migration-phase1-basic-setup?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Configurer les stratégies de gestion des appareils mobiles et des applications](/intune-classic/plan-design/migration-phase1-configure-device-and-app-management-policies?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Configurer les stratégies de protection des applications](/intune-classic/plan-design/migration-phase1-configure-app-protection-policies?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Facteurs de migration spécifiques à prendre en compte](/intune-classic/plan-design/migration-phase1-special-migration-considerations?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Phase 2 : Campagne de migration](/intune-classic/plan-design/migration-phase2-migration-campaign?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Plan de communication](/intune-classic/plan-design/migration-phase2-communication-plan?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Adoption de lecteur](/intune-classic/plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-#### [Cycle de migration classique](/intune-classic/plan-design/migration-phase2-typical-migration-cycle?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+<!--# Get started
+## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
+## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
+## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
 
 
-# Inscrire des appareils
-## [Qu’est-ce que l’inscription d’appareils ?](device-enrollment.md)
-## Prise en main
+# Planifier un déploiement
+## [Guide de planification](planning-guide.md)
+### [Déterminer les buts et objectifs](planning-guide-deployment-goals.md)
+### [Identifier les scénarios](planning-guide-scenarios.md)
+### [Déterminer la configuration requise](planning-guide-requirements.md)
+### [Développer un plan de déploiement](planning-guide-rollout-plan.md)
+### [Développer un plan de communication](planning-guide-communication-plan.md)
+### [Développer un plan de support](planning-guide-support-plan.md)
+### [Conception](planning-guide-design.md)
+### [Implémentation](planning-guide-onboarding.md)
+### [Test et validation](planning-guide-test-validation.md)
+### [Ressources supplémentaires](planning-guide-resources.md)
+<!-- ## Scenario implementation guides
+### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
+### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
+### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
+### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
+### [Manage shared devices](/enterprise-mobility-security/solutions/limited-use-shared-devices?toc=/intune/toc.json) -->
+## [Guide de migration](migration-guide.md)
+### [Préparer Intune](migration-guide-prepare.md)
+#### [Configuration de base](migration-guide-setup.md)
+#### [Configurer les stratégies de gestion des appareils mobiles et des applications](migration-guide-configure-policies.md)
+#### [Configurer les stratégies de protection des applications](migration-guide-app-protection-policies.md)
+#### [Considérations relatives à la migration](migration-guide-considerations.md)
+### [Campagne de migration](migration-guide-campaign.md)
+#### [Planifier les communications](migration-guide-communication-plan.md)
+#### [Adoption de lecteur](migration-guide-drive-adoption.md)
+#### [Cycle de migration classique](migration-guide-cycle.md)
+
+
+# Guide pratique
+
+## [Configurer Intune](setup-steps.md)
+### [Conditions préalables](supported-devices-browsers.md)
+#### [Utilisation de la bande passante réseau](network-bandwidth-use.md)
+### [Connexion à Intune](account-sign-up.md)
+### [Configurer des domaines](custom-domain-name-configure.md)
+### [Ajouter des utilisateurs](users-permissions-add.md)
+### [Affecter des licences](licenses-assign.md)       
+### [Personnaliser le portail d’entreprise](company-portal-customize.md)     
 ### [Configurer l’autorité MDM](mdm-authority-set.md)
-## Planification et conception
-### [Obtenir un certificat Push MDM Apple](apple-mdm-push-certificate-get.md)
-### [Choisir comment inscrire des appareils iOS](enrollment-method-choose-ios.md)
-## Guide pratique
-### [Affecter des licences aux utilisateurs](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Inscrire des appareils Android](android-enroll.md)
-### Inscrire des appareils iOS
-#### [Apple Configurator - Assistant Configuration](apple-configurator-setup-assistant-enroll-ios.md)
-#### [Apple Configurator - Inscription directe](apple-configurator-direct-enroll-ios.md)
-#### [Ajouter des numéros de série Apple Configurator](apple-configurator-serial-numbers-add.md)
-#### [DEP](device-enrollment-program-enroll-ios.md)
-### [Gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md)
-### [Inscrire des appareils macOS](macos-enroll.md)
-### [Inscrire des appareils Windows](windows-enroll.md)
-### [Inscrire en bloc des appareils Windows](windows-bulk-enroll.md)
-### Gérer l’inscription des appareils
-#### [Créer des conditions générales](terms-and-conditions-create.md)
-#### [Définir des restrictions d’inscription](enrollment-restrictions-set.md)
+
+## [Inscrire des appareils](device-enrollment.md)
+### Options d’installation
+#### [Conditions générales](terms-and-conditions-create.md)
+#### [Restrictions](enrollment-restrictions-set.md)
+#### [Certificat Push MDM Apple](apple-mdm-push-certificate-get.md)
+#### [Identificateurs d’entreprise](corporate-identifiers-add.md)
+#### [Gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md)
 #### [Mapper des appareils à des groupes](device-group-mapping.md)
-#### [Ajouter des identificateurs d’entreprise](corporate-identifiers-add.md)
-#### [Utiliser Windows Hello Entreprise](windows-hello.md)
-<!--- ## [Troubleshoot](troubleshooting.md) --->
+### [Configurer l’inscription Windows](windows-enroll.md)
+#### [Inscription en bloc](windows-bulk-enroll.md)
+### [Configurer l’inscription Android](android-enroll.md)
+### Configurer l’inscription iOS
+#### [Avec le programme d’inscription des appareils](device-enrollment-program-enroll-ios.md)
+#### [Avec Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Avec Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+### [Configurer l’inscription macOS](macos-enroll.md)
 
-# Appareils et groupes
-## [Qu’est-ce que la gestion des appareils ?](device-management.md)
-<!--- ## [Get started](get-started.md) --->
-<!--- ## [Plan and design](plan-and-design.md) --->
-## Guide pratique
-### [Utiliser la réinitialisation sélective ou complète](devices-wipe.md)
-<!--- ## [Troubleshoot](troubleshooting.md) --->
+## [Gérer les appareils](device-management.md)
+### [Réinitialiser un appareil](devices-wipe.md)
+### [Contourner le verrou d’activation](device-activation-lock-bypass.md)
+### [Réinitialisation un appareil aux paramètres d’usine](device-factory-reset.md)
+### [Gérer Windows Fresh Start](device-fresh-start.md)
+### [Localiser un appareil iOS perdu](device-locate.md)
+### [Activer le mode Perdu d’iOS](device-lost-mode.md)
+### [Verrouiller un appareil](device-remote-lock.md)
+### [Supprimer les données d’entreprise](device-company-data-remove.md)
+### [Réinitialiser le code secret](device-passcode-reset.md)
+### [Redémarrer un appareil](device-restart.md)
+### [Contrôle à distance pour Android](device-profile-android-teamviewer.md)
+### [Examiner l’inventaire des appareils](device-inventory.md)
 
-# Gérer des utilisateurs
-## [Qu’est-ce que la gestion des utilisateurs ?](user-management.md)
-<!--- Was What is users & group management--->
-## [Prise en main](groups-get-started.md)
-## [Aider les utilisateurs](help-desk-operators.md)
-<!--- ## [Plan and design](plan-and-design.md) --->
+## [Gérer les utilisateurs](user-management.md)
+### [Prise en main des groupes](groups-get-started.md)
+<!--### Add and delete users -->
 
-<!--- ## [Troubleshoot](troubleshooting.md) --->
-
-# Gérer des applications
-## [Qu’est-ce que la gestion des applications ?](app-management.md)
-## [Que sont les stratégies de protection des applications ?](app-protection-policy.md)
-<!--- ## [Get started](get-started.md)
-## [Plan and design](plan-and-design.md) --->
-## Guide pratique pour gérer les applications
+## [Gérer les applications](app-management.md)
 ### [Ajouter des applications](apps-add.md)
 #### [Applications de l’App Store Android](store-apps-android.md)
 #### [Applications métier Android](lob-apps-android.md)
@@ -102,44 +115,37 @@
 #### [Applications métier Windows](lob-apps-windows.md)
 #### [Applications Android for Work](apps-add-android-for-work.md)
 ### [Attribuer des applications](apps-deploy.md)
-### [Surveiller les applications](apps-monitor.md)
-### [Utiliser des profils de configuration d’application](app-configuration-policies.md)
+### [Surveillance des applications](apps-monitor.md)
+### [Profils de configuration d’application iOS](app-configuration-policies-use-ios.md)
+### [Profils de configuration d’application Android](app-configuration-policies-use-android.md)
 ### [Utiliser des profils d’approvisionnement d’application iOS](app-provisioning-profile-ios.md)
 ### [Réinitialiser des applications de manière sélective](apps-selective-wipe.md)
-<!---Is this specific to app protection policy or more general app management?--->
-### [Utiliser des applications achetées en volume](vpp-apps.md)
+### [Utiliser des applications et livres achetés en volume](vpp-apps.md)
 #### [Applications VPP iOS](vpp-apps-ios.md)
 #### [Applications du Windows Store pour Entreprises](windows-store-for-business.md)
+#### [Livres électroniques iOS](vpp-ebooks-ios.md)
 ### [Configurer l’application Portail d’entreprise](company-portal-app.md)
-## Guide pratique pour utiliser les stratégies de protection des applications
-### [Créer et affecter des stratégies de protection des applications](app-protection-policies.md)
+### [Configurer Managed Browser](app-configuration-managed-browser.md)
+## [Utiliser les stratégies de protection des applications](app-protection-policies.md)
 ### [Préparation aux stratégies de protection des applications WIP](app-protection-policies-configure-windows-10.md)
 ### [Créer et affecter des stratégies de protection des applications WIP](windows-information-protection-policy-create.md)
 ### [Paramètres Android](app-protection-policy-settings-android.md)
 ### [Paramètres iOS](app-protection-policy-settings-ios.md)
 ### [Valider des stratégies de protection des applications](app-protection-policies-validate.md)
 ### [Surveiller l’état de protection des utilisateurs d’applications](app-protection-policies-monitor.md)
+### [Préparation aux stratégies de protection des applications WIP](app-protection-policies-configure-windows-10.md)
+### [Créer et affecter des stratégies de protection des applications WIP](windows-information-protection-policy-create.md)
 ### [Gérer les transferts de données entre applications iOS](data-transfer-between-apps-manage-ios.md)
-### [Applications Android avec stratégies de protection des applications](app-protection-enabled-apps-android.md)
-### [Applications iOS avec stratégies de protection des applications](app-protection-enabled-apps-ios.md)
 
-
-<!--- ##  [Troubleshoot apps](troubleshooting.md) --->
-
-# Configurer des appareils
-## [Qu’est-ce qu’un profil d’appareil ?](device-profiles.md)
-<!---## [Get started](get-started.md)
-## [Plan and design](plan-and-design.md) --->
-## Guide pratique
+## [Configurer des appareils](device-profiles.md)
 ### [Configurer un profil d’appareil](device-profile-create.md)
-
 ### [Configurer des fonctionnalités d’appareil](device-features-configure.md)
 #### [AirPrint pour iOS et Mac OS](air-print-settings-ios-macos.md)
 #### [AirPlay pour iOS](airplay-settings-ios.md)
 #### [Disposition de l’écran d’accueil pour iOS](home-screen-settings-ios.md)
 #### [Notifications d’application pour iOS](app-notification-settings-ios.md)
 #### [Appareils partagés pour iOS](shared-device-settings-ios.md)
-
+#### [Paramètres du filtre web pour iOS](web-content-filter-settings-ios.md)
 ### [Configurer des restrictions sur les appareils](device-restrictions-configure.md)
 #### [Android](device-restrictions-android.md)
 #### [iOS](device-restrictions-ios.md)
@@ -149,13 +155,11 @@
 #### [Windows 10](device-restrictions-windows-10.md)
 #### [Windows 10 Collaboration](device-restrictions-windows-10-teams.md)
 #### [Android for Work](device-restrictions-android-for-work.md)
-
 ### [Configurer les paramètres de messagerie](email-settings-configure.md)
 #### [Android](email-settings-android.md)
 #### [iOS](email-settings-ios.md)
 #### [Windows Phone 8.1](email-settings-windows-phone-8-1.md)
 #### [Windows 10](email-settings-windows-10.md)
-
 ### [Configurer les paramètres VPN](vpn-settings-configure.md)
 #### [Android](vpn-settings-android.md)
 #### [iOS](vpn-settings-ios.md)
@@ -163,13 +167,11 @@
 #### [Windows 8.1](vpn-settings-windows-8-1.md)
 #### [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
 #### [Windows 10](vpn-settings-windows-10.md)
-
 ### [Configurer les paramètres Wi-Fi](wi-fi-settings-configure.md)
 #### [Android](wi-fi-settings-android.md)
 #### [iOS](wi-fi-settings-ios.md)
 #### [MacOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 et Windows 10](wi-fi-settings-import-windows-8-1.md)
-
 ### [Configurer les paramètres de mise à niveau Windows 10](edition-upgrade-configure-windows-10.md)
 ### [Configurer les paramètres de Windows 10 Éducation](education-settings-configure.md)
 ### [Configurer les paramètres d’éducation iOS](education-settings-configure-ios.md)
@@ -177,53 +179,107 @@
 ### [Configurer des certificats](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
-
 ### [Configurer les paramètres de protection des informations Windows (WIP)](windows-information-protection-configure.md)
-<!--- ### [Configure iOS education settings](education-settings-for-ios.md) --->
+### [Affecter des profils](device-profile-assign.md)
+### [Profils d’analyse](device-profile-monitor.md)
+### [Dépanner les profils](device-profile-troubleshoot.md)
 
-### [Configurer des paramètres personnalisés](custom-settings-configure.md)
-#### [Android](custom-settings-android.md)
-##### [Profil Wi-Fi avec clé prépartagée](wi-fi-profile-shared-key.md)
-##### [Profil VPN par application](android-pulse-secure-per-app-vpn.md)
-##### [Autoriser ou bloquer des applications pour Samsung KNOX Standard](samsung-knox-apps-allow-block.md)
-#### [iOS](custom-settings-ios.md)
-#### [MacOS](custom settings-macos.md)
-#### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
-#### [Windows 10](custom-settings-windows-10.md)
-#### [Android for Work](custom-settings-android-for-work.md)
-
-### [Attribuer des profils d’appareils](device-profile-assign.md)
-### [Surveiller les profils d’appareils](device-profile-monitor.md)
-### [Configurer un service de gestion des dépenses en télécommunications](telecom-expenses-monitor.md)
-## [Dépannage](device-profile-troubleshoot.md)
-
-# Définir la conformité des appareils
-## [Qu’est-ce que la compatibilité des appareils ?](device-compliance.md)
-## [Prise en main](device-compliance-get-started.md)
-## Guide pratique
-### [Créer une stratégie de compatibilité Android](compliance-policy-create-android.md)
-### [Créer une stratégie de compatibilité Android for Work](compliance-policy-create-android-for-work.md)
-### [Créer une stratégie de compatibilité iOS](compliance-policy-create-ios.md)
-### [Créer une stratégie de compatibilité Windows](compliance-policy-create-windows.md)
-<!---### [Create Actions for noncompliance](actions-for-noncompliance.md)--->
+## [Définir la conformité des appareils](device-compliance.md)
+### [Conditions préalables](device-compliance-get-started.md)
+### [Créer une stratégie Android](compliance-policy-create-android.md)
+### [Créer une stratégie Android for Work](compliance-policy-create-android-for-work.md)
+### [Créer une stratégie iOS](compliance-policy-create-ios.md)
+### [Créer une stratégie Windows](compliance-policy-create-windows.md)
+<!--### Create Actions for noncompliance-->
 ### [Surveiller la conformité des appareils](compliance-policy-monitor.md)
-<!--- ### [Monitor device compliance](device-compliance-monitor.md)--->
 
-
-
-# Accès conditionnel
-## [Qu’est-ce que l’accès conditionnel ?](conditional-access.md)
-## Guide pratique
+## [Configurer l’accès conditionnel](conditional-access.md)
+### [Utilisations courantes de l’accès conditionnel](conditional-access-intune-common-ways-use.md)
+### [Accès conditionnel basé sur l’application](app-based-conditional-access-intune.md)
 ### [Installer le connecteur Exchange sur site](exchange-connector-install.md)
 ### [Créer et attribuer la stratégie d’accès conditionnel](conditional-access-exchange-create.md)
+### [Configurer l’accès conditionnel basé sur l’application pour Exchange Online](app-based-conditional-access-intune-exchange-online-create.md)
+### [Configurer l’accès conditionnel basé sur l’application pour SharePoint Online](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [ADAL et Intune](app-modern-authentication-block.md)
 ### [Surveiller la conformité de l’accès conditionnel](conditional-access-exchange-monitor.md)
 
-# Contrôle d’accès
-## [Qu’est-ce que le contrôle d’accès en fonction du rôle ?](role-based-access-control.md)
+## Protéger les données et les appareils
+
+### [Protection contre les menaces mobiles](mobile-threat-defense.md)
+
+#### [Configurer Lookout](lookout-mobile-threat-defense-connector.md)
+##### [Intégration de Lookout et Intune](lookout-mtd-connector-integration.md)
+#### [Configurer Skycure](skycure-mobile-threat-defense-connector.md)
+##### [Configurer l’authentification unique Azure AD](skycure-azure-sso-configure.md)
+##### [Télécharger la stratégie de configuration des applications iOS](skycure-ios-app-configuration-policy-download.md)
+##### [Intégration de Skycure et Intune](skycure-mtd-connector-integration.md)
+#### [Ajouter et affecter des applications MTD](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [Activer MTD dans Intune](mtd-connector-enable.md)
+#### [Créer et affecter une stratégie de conformité d’appareil MTD](mtd-device-compliance-policy-create.md)
+
+### [Contrôle d’accès réseau](network-access-control-integrate.md)
+
+### [Configurer Windows Hello](windows-hello.md)        
+<!-- ### Protect devices with remote actions        -->
+
+## [Gérer les rôles](role-based-access-control.md)
+<!-- ### Create a custom role
+### Assign a role -->
+### [Utiliser le rôle d’opérateur du support technique](help-desk-operators.md)
+<!-- ### Custom role settings -->
+
+## [Gérer les PC avec l’agent de logiciels](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+### [Comparer la gestion des PC](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
+### [Installer le client PC](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune?toc=/intune/toc.json)
+### [Tâches courantes de gestion des PC](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client?toc=/intune/toc.json)
+#### [Stratégies des PC](/intune-classic/deploy-use/use-policies-to-simplify-windows-pc-management?toc=/intune/toc.json)
+#### [Afficher l’inventaire](/intune-classic/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [Mettre hors service des PC](/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune?toc=/intune/toc.json)
+#### [Lier des PC à des utilisateurs](/intune-classic/deploy-use/manage-user-device-linking-for-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
+#### [Assistance à distance](/intune-classic/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [Stratégies pour protéger les PC Windows](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+#### [Mises à jour logicielles](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune?toc=/intune/toc.json)
+#### [Pare-feu Windows](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune?toc=/intune/toc.json)
+#### [Endpoint Protection](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune?toc=/intune/toc.json)
+### [Ajouter des applications pour les PC clients Intune](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune?toc=/intune/toc.json)
+### [Gérer les contrats de licence](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune?toc=/intune/toc.json)
+### [Résoudre les conflits de stratégie](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts?toc=/intune/toc.json)
+
+## [Former les utilisateurs](end-user-educate.md)
+### [Messages du portail d’entreprise](end-user-company-portal-messages.md)
+### [Applications compatibles MAM sur Android](end-user-mam-apps-android.md)
+### [Applications compatibles MAM sur iOS](end-user-mam-apps-ios.md)
+### [Guide pratique pour obtenir des applications Android](end-user-apps-android.md)
+### [Guide pratique pour obtenir des applications iOS](end-user-apps-ios.md)
+### [Guide pratique pour obtenir des applications Windows](end-user-apps-windows.md)
+
+# Surveiller et dépanner
+## [Surveiller les dépenses de télécommunications](telecom-expenses-monitor.md)
+
 
 # Développer et personnaliser
-## [Outil de création de package de restrictions d’application Intune](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Outil de création de package de restrictions d’application pour iOS](/intune-classic/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-### [Outil de création de package de restrictions d’application pour Android](/intune-classic/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
-## [SDK d’application Intune](/intune-classic/develop/intune-app-sdk?toc=/intune/toc.json&bc=/enterprise-mobility/toc.json)
+## [Configuration des paramètres d’appareils personnalisés](custom-settings-configure.md)
+### [Android](custom-settings-android.md)
+#### [Profil Wi-Fi avec clé prépartagée](wi-fi-profile-shared-key.md)
+#### [Profil VPN par application](android-pulse-secure-per-app-vpn.md)
+#### [Autoriser ou bloquer des applications pour Samsung KNOX Standard](samsung-knox-apps-allow-block.md)
+### [iOS](custom-settings-ios.md)
+### [MacOS](custom-settings-macos.md)
+### [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
+### [Windows 10](custom-settings-windows-10.md)
+### [Android for Work](custom-settings-android-for-work.md)
+## [Préparer des applications métier pour la gestion des applications mobiles](apps-prepare-mobile-application-management.md)
+### [Outil de création de package de restrictions d’application pour iOS](app-wrapper-prepare-ios.md)
+### [Outil de création de package de restrictions d’application pour Android](app-wrapper-prepare-android.md)
+## [Chargement indépendant d'applications Windows](app-sideload-windows.md)
+## [SDK d’application Intune](app-sdk.md)
+### [Prise en main du kit SDK d’application Intune](app-sdk-get-started.md)
+### [SDK d’application Intune pour iOS](app-sdk-ios.md)
+### [SDK d’application Intune pour Android](app-sdk-android.md)
+### [Plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md)
+### [Composant Xamarin du SDK d’application Intune](app-sdk-xamarin.md)
+## [Comment utiliser les API Graph Intune](intune-graph-apis.md)
 ## [API Graph Intune](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+
+
+# [Glossaire](intune-glossary.md)

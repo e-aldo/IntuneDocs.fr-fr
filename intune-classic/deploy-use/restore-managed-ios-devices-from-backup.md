@@ -1,5 +1,5 @@
 ---
-title: "Restaurer des appareils iOS gérés par Intune à partir d’une sauvegarde | Microsoft Docs"
+title: "Restaurer des appareils iOS gérés par Intune à partir d’une sauvegarde"
 description: "Indiquez aux utilisateurs finaux comment réinscrire leurs appareils après une restauration à partir d’une sauvegarde."
 keywords: "restauration, géré, iOS"
 author: barlanmsft
@@ -15,10 +15,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 438a478be79bb4def8675856075ecedfe8290bb7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
 ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
