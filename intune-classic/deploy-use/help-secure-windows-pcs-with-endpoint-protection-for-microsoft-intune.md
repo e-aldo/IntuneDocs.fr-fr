@@ -1,5 +1,5 @@
 ---
-title: Endpoint Protection pour PC Windows| Microsoft Docs
+title: Protection de point de terminaison pour PC Windows
 description: "Sécurisez vos ordinateurs gérés avec Endpoint Protection, qui fournit une protection en temps réel contre les menaces de logiciels malveillants."
 keywords: 
 author: nathbarn
@@ -14,16 +14,16 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 180da5e2e0d6980214fff1cfffa3fb1d5b0058d3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c51f9e471b432b13e0680538c5cf4ad68c1c12f1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Le service Endpoint Protection de Microsoft Intune vous aide à sécuriser vos ordinateurs gérés. Il offre une protection en temps réel contre les menaces posées par les programmes malveillants, maintient à jour les définitions de logiciels malveillants et analyse automatiquement les ordinateurs. Endpoint Protection fournit également des outils qui vous aident à gérer et à surveiller les attaques de logiciels malveillants.
 
 Si vous n’avez pas encore installé le client Intune sur vos ordinateurs, consultez [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -192,4 +192,3 @@ Pour obtenir de l’aide et une assistance, consultez [Résoudre les problèmes 
 
 ### <a name="see-also"></a>Voir aussi
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

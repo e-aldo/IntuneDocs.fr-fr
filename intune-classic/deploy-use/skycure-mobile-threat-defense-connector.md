@@ -1,5 +1,5 @@
 ---
-title: Connecteur Skycure Mobile Threat Defense | Microsoft Docs
+title: Connecteur de protection contre les menaces mobiles pour Skycure
 description: "Protégez l’accès aux ressources de l’entreprise en fonction du risque au niveau de l’appareil, du réseau et de l’application avec le connecteur Skycure Mobile Threat Defense et Intune."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 7a004e6c-604a-448c-bfb8-cfda63749f5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 15b00957f694863bb10ee32162eb20fc39bcda88
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d0b401babf356e44479229c3bea27c956926a6f9
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="skycure-mobile-threat-defense-connector"></a>Connecteur Skycure Mobile Threat Defense
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -119,7 +116,7 @@ Pour plus d'informations, consultez le [site web Skycure](https://www.skycure.co
 
 Voici les étapes que vous devez effectuer pour intégrer Intune à Skycure :
 
-1.  [Configurer Skycure pour utiliser l’authentification unique Azure Active Directory /intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
+1.  [Configurer Skycure pour utiliser Azure Active Directory Single Sign On (SSO)](/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
 2.  [Télécharger la stratégie de configuration d’application iOS Skycure](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 
@@ -132,4 +129,3 @@ Voici les étapes que vous devez effectuer pour intégrer Intune à Skycure :
 6.  [Activer Skycure Mobile Threat Defense dans Intune](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
 7.  [Créer la stratégie de conformité Skycure Mobile Threat Defense dans Intune](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
-

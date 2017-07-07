@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-macos-device-in-intune"></a>Inscrire votre appareil macOS dans Intune
 
 L’accès aux applications, aux données et aux ressources de votre organisation est essentiel pour que vous puissiez travailler. Si vous utilisez un appareil macOS au travail, cela signifie que vous devez installer un __profil de gestion__. Il s’agit simplement d’un fichier configuré par votre administrateur informatique qui charge les paramètres et les informations d’accès sur votre Mac. Vous voulez en savoir plus ? Découvrez [ce qui se passe lorsque vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -70,4 +66,3 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
  ![Profil macOS installé](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
-

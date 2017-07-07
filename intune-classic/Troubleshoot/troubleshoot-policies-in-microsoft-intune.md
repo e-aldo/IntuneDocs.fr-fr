@@ -14,15 +14,12 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 00f3487ed7f9fe920d89f449703723bfe80eb109
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Résoudre les problèmes de stratégie dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -101,4 +98,3 @@ Pour résoudre ce problème, réglez l’heure du système local le plus proche 
 
 ### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-

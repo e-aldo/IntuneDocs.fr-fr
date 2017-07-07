@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>Le mot de passe ne répond pas aux exigences de l’administrateur informatique
 
 Le mot de passe que vous utilisez pour accéder aux ressources de votre société ou établissement scolaire ne répond pas à au moins une exigence que votre administrateur informatique a configurée. Pour résoudre ce problème, suivez les instructions qui sont affichées sur votre appareil. Les descriptions des problèmes sont répertoriées ci-dessous.
@@ -51,4 +47,3 @@ Descriptions des problèmes liés au code confidentiel ou mot de passe :
 - **Le mot de passe n’est pas assez complexe pour répondre aux exigences**. Votre administrateur informatique requiert que vous utilisiez davantage de caractères complexes dans votre mot de passe. Essayez d’utiliser des caractères tels que des nombres, des lettres majuscules et des symboles comme $, % et #. Cela peut aussi concerner d’autres comptes sur votre appareil. Passez en revue tous les comptes professionnels pour vérifier que votre mot de passe répond aux exigences définies par l’administrateur informatique pour votre appareil.
 
 Si vous avez des difficultés à déterminer comment rendre votre mot de passe conforme aux exigences, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

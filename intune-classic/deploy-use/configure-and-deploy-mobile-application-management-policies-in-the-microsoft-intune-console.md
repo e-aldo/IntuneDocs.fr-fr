@@ -1,5 +1,5 @@
 ---
-title: "Configurer des stratégies de gestion des applications mobiles dans la console Intune | Microsoft Docs"
+title: "Configurer des stratégies de gestion des applications mobiles dans la console Intune"
 description: "Vous pouvez utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Pour appliquer des restrictions à une application, celle-ci doit intégrer le S
 
 -   **Utiliser une application gérée par une stratégie**. Une application gérée par une stratégie intègre le SDK d’application. Pour ajouter ce type d'application, spécifiez un lien vers l'application à partir d'un magasin d'applications tel que l'iTunes Store ou Google Play. Aucun traitement supplémentaire n'est nécessaire pour ce type d'application. Pour plus d’informations, consultez la [liste des applications que vous pouvez utiliser avec les stratégies de gestion des applications mobiles de Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
--   **Utiliser une application encapsulée**. Une application encapsulée est une application que vous réempaquetez pour inclure le SDK d’application à l’aide de l’outil de création de package de restrictions d’application Microsoft Intune. Cet outil est généralement utilisé pour traiter les applications d’entreprise qui ont été créées en interne. Vous ne pouvez pas l’utiliser pour traiter les applications qui ont été téléchargées à partir de l’App Store. Pour plus d’informations, consultez [Préparer des applications iOS pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) et [Préparer des applications Android pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Utiliser une application encapsulée**. Une application encapsulée est une application que vous réempaquetez pour inclure le SDK d’application à l’aide de l’outil de création de package de restrictions d’application Microsoft Intune. Cet outil est généralement utilisé pour traiter les applications d’entreprise qui ont été créées en interne. Vous ne pouvez pas l’utiliser pour traiter les applications qui ont été téléchargées à partir de l’App Store. Pour plus d’informations, consultez [Préparer des applications iOS pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](/intune/app-wrapper-prepare-ios) et [Préparer des applications Android pour la gestion des applications mobiles avec l’outil de création de package de restrictions d’application Microsoft Intune](/intune/app-wrapper-prepare-android).
 
-- **Écrivez votre propre application qui intègre le SDK d’application Intune**. Le SDK d’application Intune vous permet d’intégrer des fonctionnalités de gestion des applications à une application pendant que vous l’écrivez. Pour plus d’informations, consultez [Vue d’ensemble du Kit de développement logiciel (SDK) de l’application Microsoft Intune](/intune-classic/develop/intune-app-sdk).
-
-Pour savoir si vous devez utiliser l’outil de création de package de restrictions d’application et le SDK d’application Intune, consultez [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+- **Écrivez votre propre application qui intègre le SDK d’application Intune**. Le SDK d’application Intune vous permet d’intégrer des fonctionnalités de gestion des applications à une application pendant que vous l’écrivez. Pour plus d’informations, consultez [Vue d’ensemble du Kit de développement logiciel (SDK) de l’application Microsoft Intune](/intune/app-sdk).
+/intune/apps-prepare-mobile-application-management Pour savoir si vous devez utiliser l’outil de création de package de restrictions d’application et le SDK d’application Intune, consultez [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 Certaines applications gérées, comme l’application Outlook pour iOS et Android, prennent en charge *plusieurs identités*. Autrement dit, Intune applique les paramètres de gestion uniquement aux comptes ou aux données d’entreprise dans l’application.
 
@@ -197,4 +193,3 @@ Dans les cas où l'appareil ou l'utilisateur reçoit deux stratégies en conflit
 -   Si une stratégie a déjà été déployée sur l'appareil, les paramètres de stratégie existants ne sont pas remplacés.
 
 -   Si aucune stratégie n'a encore été déployée sur l'appareil et que deux paramètres en conflit sont déployés, le paramètre par défaut intégré à l'appareil est utilisé.
-

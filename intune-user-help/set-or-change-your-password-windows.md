@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="make-your-device-safer-with-the-right-password"></a>Sécuriser votre appareil avec le mot de passe approprié
 
 L’accès aux ressources d’entreprise, telles que les e-mails et les documents, est une opération que les personnes effectuent tous les jours à partir de leurs appareils Windows. Votre organisation souhaite s’assurer que votre appareil procède à cette opération en toute sécurité. L’un des moyens de vérifier que votre appareil accède en toute sécurité à ces ressources consiste à exiger que les appareils utilisent un mot de passe. Ces mots de passe sont utilisés, par exemple, pour accéder à votre appareil à partir de l’écran verrouillé.
@@ -49,4 +45,3 @@ Si votre appareil Windows n’est pas conforme à la stratégie de mot de passe 
 4. Choisissez **terminé**.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

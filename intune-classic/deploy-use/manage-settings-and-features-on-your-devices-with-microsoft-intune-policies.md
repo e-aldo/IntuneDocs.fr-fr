@@ -1,5 +1,5 @@
 ---
-title: "Gérer des paramètres d’appareils avec des stratégies | Microsoft Docs"
+title: "Gérer des paramètres d’appareils avec des stratégies"
 description: "Utilisez Intune pour créer et déployer des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils inscrits que vous gérez."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8f1a4cb3bcab4aee534fc5fb9a1f1a1eb5a6f3a1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f8ceb98181543d846934a16b8c9551207892ae0e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -213,4 +210,3 @@ Quand vous supprimez une stratégie ou retirez un appareil d’un groupe sur leq
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>Où puis-je trouver de l’aide concernant mes problèmes de stratégies ?
 
 Consultez [Résoudre les problèmes de stratégie dans Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-policies-in-microsoft-intune).
-

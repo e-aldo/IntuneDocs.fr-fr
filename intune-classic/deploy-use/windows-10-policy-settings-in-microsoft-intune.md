@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de la stratégie dans Windows 10 | Microsoft Docs"
+title: "Paramètres de la stratégie dans Windows 10"
 description: "Utilisez les paramètres de stratégie indiqués dans cette rubrique pour configurer les paramètres intégrés et personnalisés des appareils Windows 10 Mobile et Windows 10 Desktop inscrits."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dd81102eb768ab8ad5f9ee1d2f122f15a8e17b89
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres de stratégie Intune pour les appareils Windows 10 dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -214,4 +211,3 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

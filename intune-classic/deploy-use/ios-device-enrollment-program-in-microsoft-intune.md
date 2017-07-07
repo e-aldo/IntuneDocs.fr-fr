@@ -1,5 +1,5 @@
 ---
-title: "Gestion DEP d’Apple pour les appareils iOS | Microsoft Docs"
+title: "Gestion DEP d’Apple pour les appareils iOS"
 description: "Déployez un profil d’inscription qui inscrit les appareils iOS achetés via le programme DEP iOS « à distance », afin de gérer les appareils Apple."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d5facd519f53ea8534445ad95ae9221cf537b50a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrire des appareils iOS DEP d’entreprise
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -81,8 +78,8 @@ Les étapes suivantes décrivent la première inscription d’appareils iOS à l
 
    - **Demander l’affinité utilisateur** : l’appareil doit être affilié à un utilisateur durant l’installation initiale. Il peut ensuite être autorisé à accéder aux données et aux e-mails de l’entreprise pour le compte de cet utilisateur. L’**affinité utilisateur** doit être configurée pour les appareils gérés par DEP qui appartiennent à des utilisateurs et doivent utiliser le portail d’entreprise (c’est-à-dire, pour installer des applications). L’authentification multifacteur (MFA) ne fonctionne pas lors de l’inscription sur les appareils DEP avec l’affinité utilisateur. Après l’inscription, l’authentification multifacteur fonctionne comme prévu sur ces appareils. Les nouveaux utilisateurs qui doivent changer leur mot de passe lors de leur première connexion ne peuvent pas y être invités pendant l’inscription sur des appareils DEP. De plus, les utilisateurs dont les mots de passe ont expiré ne sont pas invités à réinitialiser leur mot de passe lors de l’inscription DEP et doivent le faire à partir d’un autre appareil.
 
-       >[!NOTE]
-       >Dans le cas de DEP avec affinité utilisateur, un [point de terminaison WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) doit être activé pour demander un jeton utilisateur. [En savoir plus sur WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    >[!NOTE]
+    >Dans le cas de DEP avec affinité utilisateur, un [point de terminaison WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) doit être activé pour demander un jeton utilisateur. [En savoir plus sur WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Aucune affinité utilisateur** : l’appareil n’est pas affilié à un utilisateur. Utilisez cette affiliation pour les appareils qui effectuent des tâches sans accéder aux données de l’utilisateur local. Les applications qui nécessitent l’affiliation d’un utilisateur, y compris l’application Portail d’entreprise utilisée pour installer les applications métier, ne fonctionneront pas.
 
@@ -173,4 +170,3 @@ Vous pouvez également chercher à [en savoir plus sur les groupes Azure Active 
 
 ### <a name="see-also"></a>Voir aussi
 [Prérequis pour l’inscription des appareils](prerequisites-for-enrollment.md)
-

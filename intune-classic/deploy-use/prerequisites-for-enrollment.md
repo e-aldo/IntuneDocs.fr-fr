@@ -1,11 +1,11 @@
 ---
-title: "Conditions préalables à l’inscription d’appareils mobiles | Microsoft Docs"
+title: "Conditions préalables pour l’inscription des appareils mobiles"
 description: "Configurez les conditions préalables à la gestion d’appareils mobiles, puis préparez-vous à inscrire différents systèmes d’exploitation."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6877c5263f3c97b9cff295d62d39a365027151eb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Conditions préalables à la gestion d’appareils mobiles dans Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,15 +43,14 @@ Vous recherchez Intune avec Configuration Manager ?
 ## <a name="step-1-enable-connections"></a>Étape 1 : Activer les connexions
 
 Avant d’activer l’inscription d’appareils mobiles, vérifiez que vous avez bien effectué les tâches suivantes :
-- [Passer en revue les URL et les ports du réseau](../get-started/network-bandwidth-use.md)
-- [Ajouter et vérifier votre nom de domaine](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [Passer en revue les URL et les ports du réseau](/intune/network-bandwidth-use)
+- [Ajouter et vérifier votre nom de domaine](/intune/custom-domain-name-configure)
 
 ## <a name="step-2-set-mdm-authority"></a>Étape 2 : Définir l’autorité MDM
 L’autorité MDM définit le service de gestion habilité à gérer un ensemble d’appareils. Les options en matière d’autorité de gestion des appareils mobiles incluent Intune en version autonome et Configuration Manager avec Intune. Si vous définissez Configuration Manager comme autorité de gestion, aucun autre service ne peut être utilisé pour la gestion des appareils mobiles.
 
 >[!IMPORTANT]
-> Réfléchissez bien avant de décider de gérer les appareils mobiles à l’aide d’Intune uniquement (service en ligne) ou à l’aide de System Center Configuration Manager avec Intune (solution logicielle locale avec service en ligne). Après avoir défini l’autorité de gestion des appareils mobiles, vous ne pouvez pas la modifier sans l’aide du Support Microsoft. Pour obtenir des instructions, consultez [Que faire si vous choisissez le paramètre d’autorité MDM incorrect](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
-
+> Dans Configuration Manager version 1610 ou ultérieure et Microsoft Intune version 1705, vous pouvez modifier l’autorité de GPM sans avoir à contacter le Support Microsoft où à désinscrire et réinscrire vos appareils déjà gérés. Pour plus d’informations, consultez la page [Que faire si vous choisissez le mauvais paramètre d’autorité de GPM](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Administration** &gt; **Gestion des appareils mobiles**.
 
@@ -116,7 +112,7 @@ Après avoir enregistré vos modifications, vous pouvez utiliser les liens propo
 
 ## <a name="step-5-assign-user-licenses"></a>Étape 5 : Affecter des licences utilisateur
 
-Utilisez le **portail de gestion Office 365** pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD. Vous pouvez [synchroniser des utilisateurs locaux avec Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
+Utilisez le **portail de gestion Office 365** pour ajouter manuellement des utilisateurs basés sur le cloud et attribuer des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés à partir de votre annuaire Active Directory local vers Azure AD. Vous pouvez [synchroniser des utilisateurs locaux avec Azure AD](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Connectez-vous au [portail de gestion Office 365](https://portal.office.com/Admin/Default.aspx) à l’aide de vos informations d’identification d’administrateur client.
 
@@ -154,7 +150,13 @@ L’inscription étant activée, vous devez configurer la gestion en fonction de
 
 ## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>Que faire si vous choisissez le mauvais paramètre d’autorité MDM
 
-Si vous pensez avoir choisi le mauvais paramètre d’autorité MDM et que vous devez le changer, vous devez contacter le Support Microsoft. Vous ne pouvez pas changer vous-même ce paramètre. Avant de contacter le Support Microsoft, consultez les informations suivantes, que le Support Microsoft vous demandera de lui indiquer pour effectuer le changement.
+Si vous pensez avoir choisi le mauvais paramètre d’autorité de GPM et que vous devez le changer, les options suivantes s’offrent à vous.
+
+### <a name="change-the-mdm-authority-yourself"></a>Modifier l’autorité de GPM vous-même
+À compter de Configuration Manager version 1610 et de Microsoft Intune version 1705, vous pouvez modifier l’autorité de GPM pour passer de Microsoft Intune à Configuration Manager (hybride) et vice versa sans avoir à contacter le Support Microsoft ou à désinscrire et réinscrire vos appareils déjà gérés. Pour plus d’informations, consultez la page [Modifier l’autorité de GPM]( /sccm/mdm/deploy-use/change-mdm-authority).
+
+### <a name="contact-microsoft-support"></a>Contacter le support Microsoft
+Si Configuration Manager est antérieur à la version 1610, vous devez contacter le Support Microsoft. Vous ne pouvez pas changer vous-même ce paramètre. Avant de contacter le Support Microsoft, consultez les informations suivantes, que le Support Microsoft vous demandera de lui indiquer pour effectuer le changement.
 
 Il existe trois façons possibles de réinitialiser votre autorité MDM. Dans votre demande de support, vous devez choisir celle qui s’applique à votre situation. Si le scénario que vous rencontrez n’est pas listé, poursuivrez avec le Support Microsoft.
 
@@ -166,7 +168,7 @@ Le Support Microsoft vous demandera de confirmer les informations suivantes :
 
 En cas de coexistence, vous devez vérifier les deux listes de contrôle Intune et Office 365.
 
-### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Réinitialiser l’autorité MDM à partir de Configuration Manager
+#### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Réinitialiser l’autorité MDM à partir de Configuration Manager
 
 Effectuez les étapes suivantes avant de contacter le Support Microsoft pour réinitialiser votre autorité MDM.
 
@@ -180,7 +182,7 @@ Effectuez les étapes suivantes avant de contacter le Support Microsoft pour ré
 - Supprimez toutes les stratégies destinées aux appareils MDM sous **Stratégie** > **Stratégies de configuration**.
 - Supprimez toutes les applications publiées destinées aux appareils MDM dans **Applications** > **Logiciels gérés**.
 
-### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Réinitialiser l’autorité MDM sur Intune à la place de Configuration Manager
+#### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Réinitialiser l’autorité MDM sur Intune à la place de Configuration Manager
 
 Effectuez les étapes suivantes avant de contacter le Support Microsoft pour réinitialiser votre autorité MDM.
 
@@ -194,7 +196,7 @@ Supprimez l’abonnement Intune en double-cliquant sur l’abonnement, puis en s
 - Redémarrez le service SMS Executive.
 - Fournissez-nous des exemples d’utilisateurs pour nous permettre de vérifier, une fois le processus terminé, que les licences Configuration Manager ont été supprimées.
 
-### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Réinitialiser l’autorité MDM sur Configuration Manager à la place d’Office 365
+#### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Réinitialiser l’autorité MDM sur Configuration Manager à la place d’Office 365
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
 2. Sélectionnez l’onglet **Stratégies de sécurité**, puis **Gestion des appareils**.
@@ -205,10 +207,9 @@ Supprimez l’abonnement Intune en double-cliquant sur l’abonnement, puis en s
 >[!NOTE]
 >Le certificat APNs iOS ne peut pas être supprimé et reste attaché au compte.
 
-### <a name="next-steps-for-mdm-authority-resets"></a>Étapes suivantes pour les réinitialisations d’autorité MDM
+#### <a name="next-steps-for-mdm-authority-resets"></a>Étapes suivantes pour les réinitialisations d’autorité MDM
 
 Une fois que le Support Microsoft vérifie les éléments de la liste de contrôle applicable, la réinitialisation de l’autorité MDM peut prendre jusqu’à trois jours ouvrés, mais elle s’effectue généralement en une journée.
 
 >[!IMPORTANT]
 >N’essayez pas de configurer votre abonnement tant que le Support Microsoft n’a pas confirmé que la réinitialisation est terminée. Une configuration prématurée peut entraîner des dysfonctionnements et/ou affecter votre possibilité d’utiliser le service Intune.
-

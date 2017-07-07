@@ -14,15 +14,12 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8fc53e8717277a4075bc7ecde31fd60c3539a5f7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Autoriser uniquement les applications mobiles prenant en charge les stratégies de protection des applications Intune à accéder aux services Office 365
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -70,4 +67,3 @@ Pour en savoir plus sur l’expérience utilisateur avec une application qui a d
 ### <a name="see-also"></a>Voir aussi
 
 [Protéger les données d’application à l’aide de stratégies de protection des applications](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

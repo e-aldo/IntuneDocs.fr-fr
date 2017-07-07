@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de compatibilité pour Android for Work | Microsoft Docs"
+title: "Paramètres de compatibilité pour Android for Work"
 description: "Cette rubrique décrit les paramètres de stratégie de conformité d’appareil pour les appareils Android compatibles avec Android for Work."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88774055297f06d6901f1a9eea8e6fd60a697e64
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 79be4993c9b23294d1f49743f863588f9d0cb9b5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Android for Work dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -85,4 +81,3 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
   Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
 - **Version maximale autorisée du système d’exploitation** : Quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur informatique. Tant que la règle permettant d’autoriser la version du système d’exploitation n’est pas modifiée, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
-

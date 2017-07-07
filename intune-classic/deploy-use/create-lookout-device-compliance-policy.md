@@ -1,5 +1,5 @@
 ---
-title: "Activer une règle de protection des appareils | Microsoft Docs"
+title: "Activer une règle de protection d’appareil"
 description: "Activer une règle de protection de l’appareil contre les menaces mobiles dans la stratégie de conformité."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67913bfcbca3cef52e309ad86bfe722db6e16895
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 28ae825a9e33547a1987989d38667417214b97b2
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Créer une stratégie de conformité des appareils Lookout dans Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -62,4 +59,3 @@ Pour voir l’état de conformité d’un appareil, ouvrez la [console d'adminis
   * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   * [Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

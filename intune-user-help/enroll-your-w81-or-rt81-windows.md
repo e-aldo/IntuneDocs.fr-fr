@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: afd9d8263deaeadfd802806167fbbaff730555c9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Guide pratique pour inscrire un appareil Windows 8.1 ou Windows RT 8.1 dans Intune
 
 Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire vos appareils pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, votre organisation peut sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que votre administrateur peut voir et ne pas voir sur votre appareil](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
@@ -68,4 +64,3 @@ Nous vous recommandons aussi d'installer l'application Portail d'entreprise. Ell
 4.  Appuyez sur **Installer** ou **Gratuit**. L’option affichée dépend de la façon dont votre société a configuré l’application.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

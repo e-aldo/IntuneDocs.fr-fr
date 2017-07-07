@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="sync-your-windows-device-manually"></a>Synchroniser votre appareil Windows manuellement
 
 Parfois, une tentative d’installation d’une application sur votre appareil Windows peut durer plus longtemps que prévu. Dans ce cas, vous pouvez tenter de synchroniser manuellement votre appareil Windows. La synchronisation peut accélérer l’installation.
@@ -134,4 +130,3 @@ Pour synchroniser manuellement votre appareil Windows Phone 8.1 pour accélérer
    Le message « Nous synchronisons votre compte » apparaît en haut de l’écran jusqu’à la fin de la synchronisation de votre appareil.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

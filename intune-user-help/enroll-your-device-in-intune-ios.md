@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-your-ios-device-in-intune"></a>Inscrire un appareil iOS dans Intune
 
 Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil iOS pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, le service Informatique peut gérer ces ressources professionnelles ou pédagogiques, les sécuriser et vous donner la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il si vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -65,7 +60,7 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 
 5.  Dans l’écran **Et ensuite ?**, découvrez ce qui se passe lors de l’inscription, puis appuyez sur **Inscrire**.
 
-     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
+    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  Dans l’écran **Installer un profil**, appuyez sur **Installer** et entrez votre code secret si vous y êtes invité.
 
@@ -77,15 +72,15 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 
 8.  Appuyez sur **Installer** pour indiquer que vous avez lu l’avertissement.
 
-       ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
+    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  Appuyez sur **Confiance**.
 
-       ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
+    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  Quand l’écran change et indique que l’installation du profil est terminée, appuyez sur **Terminé**.
 
-     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
+    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     Un message « Inscription de l’appareil » s’affiche à l’écran.
 
@@ -107,4 +102,3 @@ Votre appareil est maintenant inscrit dans Intune, et l’application Portail d�
 > Si votre organisation utilise un logiciel de gestion des dépenses de télécommunications, vous devrez exécuter une procédure supplémentaire pour finaliser l’inscription de votre appareil. Découvrez-en plus [ici](enroll-your-device-with-telecom-expense-management-ios.md).
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

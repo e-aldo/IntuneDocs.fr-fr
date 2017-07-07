@@ -1,5 +1,5 @@
 ---
-title: "Conseils généraux de dépannage | Microsoft Docs"
+title: "Conseils généraux de dépannage"
 description: "Cette rubrique contient des ressources générales pour vous aider à résoudre les problèmes touchant Intune."
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 63bb7ca097390582d85f3ea7daced42d2a97fbb4
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d348cc2850864206552bf53ab1beec9b9cb55bab
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Conseils généraux de dépannage pour Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -58,7 +55,7 @@ Après avoir déployé Microsoft Intune, vous rencontrerez peut-être quelques p
   - [Envoyer les erreurs d’inscription Android à votre administrateur informatique](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [Envoyer les erreurs d’inscription iOS à votre administrateur informatique](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   Avec les données de la console d’administration /intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Avec les données de la console d’administration (par exemple, pour les problèmes d’implémentation de stratégie), examinez la stratégie concernée et son état, comme décrit dans [Utiliser des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## <a name="research-the-solution"></a>Rechercher la solution
 
@@ -97,4 +94,3 @@ Les rubriques suivantes proposent une aide à la résolution de problèmes spéc
 [Résoudre les problèmes d’installation du client dans Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Résoudre les problèmes de mise à jour logicielle dans Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-

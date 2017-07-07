@@ -1,5 +1,5 @@
 ---
-title: Gestion de PC avec logiciel client | Microsoft Docs
+title: Gestion de PC avec des logiciels clients
 description: "Gérer des PC Windows en installant le logiciel du client Intune."
 keywords: 
 author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gérer des PC Windows en tant qu’ordinateurs via le logiciel client Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune fournit une solution complète aux organisations pour gérer les appareils mobiles. Intune peut gérer les PC Windows en tant qu’appareils mobiles en utilisant les fonctionnalités de gestion des appareils modernes intégrées au système d’exploitation Windows 10. Pour répondre aux besoins en matière de gestion de votre organisation, Intune peut également gérer les PC Windows en tant qu’ordinateurs via le logiciel client Intune. Cette méthode de gestion utilise des fonctionnalités de gestion des ordinateurs traditionnelles dans le système d’exploitation Windows hérité.
 
@@ -79,7 +78,7 @@ Bien que le logiciel client Intune prenne en charge des [fonctionnalités de ges
 
 Quand vous utilisez le logiciel client Intune pour gérer des PC Windows, vous pouvez utiliser uniquement les stratégies figurant dans la section **Gestion de l’ordinateur**.
 
-Intune gère les PC Windows avec des stratégies, ce qui s’apparente à la manière dont Windows Server Active Directory Domain Services /intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) est utilisé dans votre organisation. Pour en savoir plus, consultez [Stratégie de groupe pour les débutants](https://technet.microsoft.com/library/hh147307.aspx).
+Intune gère les PC Windows avec des stratégies, comme les objets de stratégie de groupe des services de domaine Active Directory de Windows Server. Si vous gérez des ordinateurs joints à un domaine Active Directory avec Intune, [vérifiez que les stratégies Intune ne sont pas en conflit avec d’autres objets de stratégie de groupe](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) utilisés dans votre organisation. Pour en savoir plus, consultez [Stratégie de groupe pour les débutants](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Sélection d'un modèle pour la nouvelle stratégie de PC Windows](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ Notez également que, dans la console d’administration Intune, certaines secti
 Le logiciel client Intune s’exécute généralement en mode silencieux en arrière-plan sans avoir besoin de l’intervention de l’utilisateur ni de dépannage. Si vous avez besoin de résoudre des problèmes de gestion de PC, vous pouvez vérifier les journaux. Le logiciel client Intune et les journaux correspondants sont installés dans le répertoire %Program Files%\Microsoft\OnlineManagement.
 
 Vous pouvez également consulter la rubrique [Résolution des problèmes d’installation du client dans Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) pour vérifier les problèmes qui peuvent se produire et les solutions proposées.
-

@@ -1,5 +1,5 @@
 ---
-title: Connexions Wi-Fi | Microsoft Docs
+title: Connexions Wi-Fi
 description: "Utilisez des profils Wi-Fi pour permettre aux utilisateurs de se connecter à vos réseaux Wi-Fi."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65fe17c42921d2c53153dca386ea40b9dea47d04
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b99762dfc8e527fc845755365a09fab8a0d3a0c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configurer des appareils pour qu’ils se connectent à vos réseaux Wi-Fi d’entreprise
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ Vous pouvez déployer les profils Wi-Fi sur les plateformes suivantes :
 
 -   Android 4.0 et versions ultérieures
 
--    Android for Work   
+-   Android for Work   
 
 -   iOS 8.0 et versions ultérieures
 
@@ -181,4 +178,3 @@ Ces tableaux indiquent les détails des paramètres de sécurité disponibles po
 
 ### <a name="see-also"></a>Voir aussi
 Découvrez comment créer un profil Wi-Fi avec une clé prépartagée dans [Profil Wi-Fi à clé prépartagée](pre-shared-key-wi-fi-profile.md).
-

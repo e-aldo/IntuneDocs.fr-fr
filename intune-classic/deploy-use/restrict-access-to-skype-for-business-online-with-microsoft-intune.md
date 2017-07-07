@@ -1,5 +1,5 @@
 ---
-title: "Protéger Skype Entreprise Online | Microsoft Docs"
+title: "Protéger Skype Entreprise Online"
 description: "Protégez et contrôlez l’accès à Skype Entreprise Online en utilisant l’accès conditionnel."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 46dc5bc7d7b4107b87a41aa8a454453d591d0ef9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c2d6a00f99047e4b18821e81da0c36b988e36c2a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Protéger l’accès à Skype Entreprise Online avec Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -120,4 +117,3 @@ Sélectionnez un groupe d’appareils mobiles. Ensuite, sous l’onglet **Appare
 * **Appareils non conformes** : l’accès à Skype Entreprise Online est bloqué pour ces appareils.
 
 * **Appareils enregistrés avec AAD et conformes** : ces appareils peuvent accéder à Skype Entreprise Online.
-

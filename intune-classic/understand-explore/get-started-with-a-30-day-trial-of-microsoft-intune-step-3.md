@@ -1,5 +1,5 @@
 ---
-title: "Créer des groupes pour organiser les utilisateurs et les appareils de l’abonnement à la version d’évaluation | Microsoft Docs"
+title: "Créer des groupes pour organiser les utilisateurs et les appareils de l’abonnement à la version d’évaluation"
 description: "Comment créer des groupes d’appareils et d’utilisateurs quand vous vous inscrivez à un essai gratuit de Microsoft Intune de 30 jours."
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f6a5926876bdd7224d0e9bfef55aa86f51c87aff
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 084cc155a64a58582e3008df10e86c1e5266054d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>Créer des groupes pour organiser les utilisateurs et les appareils de l’abonnement à la version d’évaluation
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ Pour en savoir plus sur l’utilisation des groupes, consultez [Créer des group
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer des stratégies](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
-

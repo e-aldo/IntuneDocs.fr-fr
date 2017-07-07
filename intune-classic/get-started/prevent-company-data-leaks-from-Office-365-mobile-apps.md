@@ -14,15 +14,12 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Guide de démarrage rapide : Éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,4 +45,3 @@ Si c’est le cas, Microsoft Intune vous permet de définir des stratégies GAM 
 [Migrer d’une solution MDM non-Microsoft vers Microsoft Intune](/intune-classic/deploy-use/migrate-to-intune)
 
 [Inscrire des appareils auprès de MDM Intune](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
-

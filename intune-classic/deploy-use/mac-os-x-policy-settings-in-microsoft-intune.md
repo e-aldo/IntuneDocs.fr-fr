@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de la stratégie Mac OS X | Microsoft Docs"
+title: "Paramètres de stratégie Mac OS X"
 description: "Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils Mac OS X. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 176f4343030c242d928aaeb486dfad78e1058644
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f4f1660f93724ee57f2d6567c2ac0f04660f49f8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de configuration Mac OS X dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -123,4 +120,3 @@ Vous pouvez créer le fichier de profil de configuration utilisé par la straté
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

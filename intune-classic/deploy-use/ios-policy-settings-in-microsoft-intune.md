@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de la stratégie iOS | Microsoft Docs"
+title: "Paramètres de stratégie iOS"
 description: "Créez des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils iOS que vous gérez avec Intune."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie d’iOS dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,7 +85,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser les applications gérées à synchroniser des données sur iCloud**|Autorise les applications que vous gérez avec Intune à synchroniser les données sur le compte iCloud de l’utilisateur.|
 |**Autoriser la procédure de transfert à poursuivre sur un autre appareil**|Autorise l’utilisateur à reprendre le travail qu’il a commencé sur un appareil iOS, sur un autre appareil iOS ou Mac OS X.|
 |**Autoriser le partage de photos iCloud**|Choisissez **Non** pour désactiver le **partage de photos iCloud** sur l'appareil.|
-|**Autoriser la photothèque iCloud**|Si définie sur **Non**, désactive l’utilisation de la photothèque iCloud qui permet aux utilisateurs de stocker des photos et des vidéos dans le cloud.    Toutes les photos qui ne sont pas entièrement téléchargées de la Photothèque iCloud sur l'appareil seront supprimées de l'appareil si cette valeur est définie sur **Non**.|
+|**Autoriser la photothèque iCloud**|Si définie sur **Non**, désactive l’utilisation de la photothèque iCloud qui permet aux utilisateurs de stocker des photos et des vidéos dans le cloud.   Toutes les photos qui ne sont pas entièrement téléchargées de la Photothèque iCloud sur l'appareil seront supprimées de l'appareil si cette valeur est définie sur **Non**.|
 
 ### <a name="application-settings-for-the-browser"></a>Paramètres d’application du navigateur
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
@@ -387,4 +384,3 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer 
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

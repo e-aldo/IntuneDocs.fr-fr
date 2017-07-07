@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Comment protéger votre appareil Android à l’aide du chiffrement
 
 Lorsque vous chiffrez un appareil, vous encapsulez les informations qu'il contient dans un code de couche de protection qui empêche les personnes non autorisées d’y accéder. Dans le cadre de la protection de vos informations, votre organisation vous demande de chiffrer votre appareil Android pour pouvoir accéder aux fichiers, à la messagerie et aux données de l’entreprise.
@@ -70,4 +65,3 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
     5. Ouvrez l’application Portail d’entreprise, sélectionnez votre appareil, puis appuyez sur **Vérifier la conformité**.
 
 Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
-

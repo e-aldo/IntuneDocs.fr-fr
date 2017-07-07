@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 9e70ef08eabb1595804f84247fc1663c5c6f985e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-your-android-device-in-intune"></a>Inscrire un appareil Android dans Intune
 
 Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil Android pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, le service Informatique peut gérer ces ressources professionnelles ou pédagogiques, les sécuriser et vous donner la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil ?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
@@ -79,7 +74,7 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 10.  Si vous utilisez Android 6.0 ou version ultérieure, effectuez cette étape. Sinon, passez à l'étape suivante.
 
     Si votre administrateur informatique a configuré certaines stratégies, les messages suivants peuvent s’afficher :
-    -    **Autoriser l’application Portail d’entreprise à passer et gérer des appels téléphoniques ?**
+    -   **Autoriser l’application Portail d’entreprise à passer et gérer des appels téléphoniques ?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
@@ -87,7 +82,7 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 
     Si vous refusez l’accès, le message apparaît la prochaine fois que vous vous connectez à l’application Portail d’entreprise, mais vous pouvez désactiver les futurs messages en cochant la case **Ne plus poser la question**. Si vous décidez ensuite d’autoriser l’accès, accédez à **Paramètres** &gt; **Applications** &gt; **Portail d’entreprise** &gt; **Autorisations** &gt; **Téléphone**, puis activer l’autorisation.
 
-    -    **Autoriser le portail d’entreprise à accéder à vos contacts ?**
+    -   **Autoriser le portail d’entreprise à accéder à vos contacts ?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -139,4 +134,3 @@ Avant d’installer des applications d’entreprise, accédez à **Paramètres**
 > Si votre organisation utilise un logiciel de gestion des dépenses de télécommunications, vous devrez exécuter une procédure supplémentaire pour finaliser l’inscription de votre appareil. Découvrez-en plus [ici](enroll-your-device-with-telecom-expense-management-android.md).
 
 Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
-

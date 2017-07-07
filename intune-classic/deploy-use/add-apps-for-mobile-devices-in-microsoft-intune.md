@@ -14,15 +14,12 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 98d0376ff02ea89e019fba6022de800f3ca84555
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Ajouter des applications pour les appareils inscrits à Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -105,4 +102,3 @@ Dans cette vidéo de quatre minutes, vous allez découvrir comment déployer des
 ## <a name="next-steps"></a>Étapes suivantes
 
 Une fois l’application créée, l’étape suivante consiste à la déployer. Pour en savoir plus, consultez [Déployer des applications avec Microsoft Intune](deploy-apps.md).
-

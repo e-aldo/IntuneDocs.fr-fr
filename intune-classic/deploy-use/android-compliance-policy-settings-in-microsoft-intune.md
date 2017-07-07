@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de stratégie de compatibilité pour Android | Microsoft Docs"
+title: "Paramètres de stratégie de conformité pour Android"
 description: "Cette rubrique décrit les paramètres de stratégie de conformité d’appareil pour les appareils Android."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 06996ca5d6c330357d6fdee19963d425bc353070
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc698998491fa56769376c013fb76ac75b5627bb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Android dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -90,4 +86,3 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
   Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
 - **Version maximale autorisée du système d’exploitation** : quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur informatique. Tant que la règle n’est pas modifiée pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
-

@@ -1,5 +1,5 @@
 ---
-title: Collecter les journaux des appareils | Microsoft Docs
+title: "Recueillir les journaux d’appareil"
 description: "Découvrez comment collecter des journaux à partir de vos appareils gérés."
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f75719a02e37f6285fb1d7c5de32bb7eb4b3a1ed
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b15e4b7fa0c650a85a080c42d00cd75cb8783c62
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="device-logs"></a>Journaux des appareils
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,7 +43,7 @@ Pour plus d’informations sur la façon dont les utilisateurs peuvent vous envo
 
 Les utilisateurs peuvent vous envoyer les erreurs d’inscription, comme décrit dans [Envoyer les erreurs d’inscription iOS à votre administrateur informatique](/intune-user-help/send-errors-to-your-it-admin-ios).
 
-Les utilisateurs peuvent envoyer des journaux d’appareil, comme décrit dans [Envoyer des journaux d’appareil iOS](/intune-user-help/send-logs-to-your-it-admin-by-email-ios).
+Les utilisateurs peuvent envoyer des journaux d’appareil, comme décrit dans [Envoyer des journaux d’appareil iOS](/intune-user-help/send-logs-to-microsoft-ios).
 
 ### <a name="mac-os-x-logs"></a>Journaux Mac OS X
 
@@ -61,4 +58,3 @@ Dans l’application Portail d’entreprise Windows Phone, les utilisateurs choi
 ### <a name="windows"></a>Windows
 
 Pour le portail d’entreprise Windows, les journaux sont situés dans *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState*.
-
