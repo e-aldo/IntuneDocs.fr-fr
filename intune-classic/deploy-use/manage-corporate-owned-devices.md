@@ -14,15 +14,12 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Inscrire des appareils d’entreprise à l’aide d’Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,4 +64,3 @@ Intune reconnaît un appareil comme « appartenant à l’entreprise » quand 
  - Il est inscrit dans [Azure Active Directory ou Enterprise Mobility Suite comme appareil Windows 10 Entreprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (Windows 10 uniquement).
 
 Quand un appareil est marqué comme appartenant à l’entreprise, la colonne **Propriété** de cet enregistrement d’appareil indique **Entreprise** dans la Console Administrateur. 
-

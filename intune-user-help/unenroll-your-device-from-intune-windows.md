@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>Désinscrire votre appareil Windows d’Intune
 
 Si vous avez inscrit votre appareil Windows sur Intune, mais que vous ne voulez plus l’utiliser au travail ou à l’école et que vous n’avez plus besoin d’accéder à la messagerie électronique, aux applications ou aux autres ressources professionnelles ou scolaires, vous devez désinscrire votre appareil. Une fois que vous aurez désinscrit votre appareil d'Intune, vous ne pourrez plus accéder à ces ressources. Pour plus d’informations sur ce qui se passe lors de la désinscription de votre appareil, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
 Pour désinscrire votre appareil, utilisez le lien répertorié dans la section ci-dessus « Dans cet article » correspondant au type d’appareil que vous utilisez :
 
--    [Désinscrire votre appareil Windows 10](#unenroll-your-windows-10-device)
--    [Désinscrire votre appareil Windows 8.1](#unenroll-your-windows-81-computer)
--    [Désinscrire votre appareil Windows Phone 8.1](#unenroll-your-windows-phone-81-device)
+-   [Désinscrire votre appareil Windows 10](#unenroll-your-windows-10-device)
+-   [Désinscrire votre appareil Windows 8.1](#unenroll-your-windows-81-computer)
+-   [Désinscrire votre appareil Windows Phone 8.1](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Désinscrire votre appareil Windows 10
 
@@ -68,4 +63,3 @@ Pour désinscrire votre appareil, utilisez le lien répertorié dans la section 
 4.  Dans la boîte de dialogue **Supprimer le compte**, appuyez sur **Supprimer**.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

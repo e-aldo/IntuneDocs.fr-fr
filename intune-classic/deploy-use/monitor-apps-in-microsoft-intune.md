@@ -1,5 +1,5 @@
 ---
-title: "Surveillance de déploiements d’applications| Microsoft Docs"
+title: "Déploiements d’applications de surveillance"
 description: "Découvrez comment surveiller les applications déployées avec Intune."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>Surveillance de déploiements d’applications dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -49,4 +45,3 @@ Dans la liste des applications, choisissez n’importe quelle application, puis 
 Dans la page **Propriétés du logiciel** de l’application, choisissez l’un des onglets suivants : **Général** - affiche des informations générales sur l’application et l’état de son installation, **Appareils** - affiche les appareils ayant installé avec succès un déploiement ciblé de l’application, **Utilisateurs** - affiche les utilisateurs dont les appareils ont correctement installé un déploiement ciblé de l’application.
 
 Comme auparavant, vous pouvez utiliser la liste déroulante **Filtres** pour configurer les valeurs affichées sous les onglets.
-

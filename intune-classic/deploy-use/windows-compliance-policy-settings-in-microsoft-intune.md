@@ -14,15 +14,12 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 67810c51c7a7b2ec1e1ff33c11a27a8757b2bcbd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Windows dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -156,4 +153,3 @@ Pour trouver la version du système d’exploitation à utiliser pour les param�
 
 - Pour les PC Windows exécutant Windows 10, la version doit être **10.0** à laquelle s’ajoute le numéro de la build du système d’exploitation que la commande **winver** retourne. Par exemple, il peut s’agir de 10.0.10586.
 > ![Version de la build du système d’exploitation mis en surbrillance dans la boîte de dialogue « À propos de Windows »](./media/ca_win10-os-version.png)
-

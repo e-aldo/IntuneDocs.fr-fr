@@ -1,12 +1,12 @@
 ---
 title: "Configurer les paramètres d’éducation Intune pour Windows 10"
-titleSuffix: Intune Azure preview
-description: "Intune Azure en version préliminaire : découvrez comment utiliser Intune pour configurer des paramètres d’éducation sur les appareils Windows 10 que vous gérez."
+titleSuffix: Intune on Azure
+description: "Découvrez comment utiliser Intune pour configurer des paramètres d’éducation sur les appareils Windows 10 que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3acb45ccc9e67fb410a9511f138d1558a49fadf9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 39aa668794280adc612122e9b2c3c4e7737b65e9
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres d’éducation Windows 10 dans Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Les profils d’éducation vous permettent de spécifier les détails qui configurent l’application Windows Take a Test, y compris les détails du compte et l’URL de test. Lorsque vous configurez cette option, l’application Take a Test s’ouvre avec le test que vous spécifiez, et aucune autre application ne peut être exécutée sur l’appareil jusqu'à ce que le test soit terminé.
 
@@ -35,7 +32,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Créer un profil d’appareil contenant les paramètres du profil d’éducation
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
+2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
@@ -51,7 +48,6 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
 Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
-
 
 
 
