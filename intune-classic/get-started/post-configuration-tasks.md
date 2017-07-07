@@ -14,15 +14,12 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="post-configuration-tasks"></a>Tâches de post-configuration
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,4 +31,3 @@ Après avoir effectué les étapes de configuration initiale pour un abonnement 
 -   **Rapports Intune :** Microsoft Intune vous permet de mieux surveiller les appareils par le biais d’alertes et de rapports, et en fournissant l’état des licences logicielles et des actions qui affectent les appareils (comme la réinitialisation d’un appareil).  Pour en savoir plus sur la création de rapports, consultez [Présentation des opérations Microsoft Intune à l’aide de rapports](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports).
 
 -   **Protection des ressources de la société :** après avoir configuré Intune et inscrit vos appareils, vous devez vérifier qu’ils sont protégés contre la perte de données et d’autres menaces. Pour en savoir plus sur la protection des ressources, consultez [Protéger les données et les applications avec Microsoft Intune](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune).
-

@@ -1,5 +1,5 @@
 ---
-title: "Scénarios de protection de la messagerie | Microsoft Docs"
+title: "Scénarios de protection de la messagerie"
 description: "Cette rubrique présente quelques exemples de scénarios en expliquant comment les implémenter avec un accès conditionnel."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: a60c41d5a35ee60677db3835818ca8b90420c715
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Protéger l’accès à la messagerie avec Microsoft Intune : exemples de scénarios
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,4 +81,3 @@ Pour ce faire, configurez une stratégie d’accès conditionnel à Exchange sur
 Vous utilisez le flux suivant pour déterminer quels sont les appareils qui peuvent accéder à Exchange :
 
 ![Flux d’accès des appareils](./media/ConditionalAccess8-4.png)
-

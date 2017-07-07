@@ -14,15 +14,12 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Protéger les données et les applications avec Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -55,4 +52,3 @@ Certaines applications, par exemple les applications Microsoft Office, intègren
 Vous pouvez également [activer les applications métier intégrées personnalisées](/intune/apps-prepare-mobile-application-management) à utiliser avec les stratégies de gestion des applications mobiles.
 
 En plus de restreindre le déplacement des données, si un appareil est perdu ou volé ou que l’utilisateur ne travaille plus avec votre entreprise, vous pouvez [effacer de façon sélective des données d’entreprise](wipe-managed-company-app-data-with-microsoft-intune.md) et laisser uniquement les données personnelles.
-

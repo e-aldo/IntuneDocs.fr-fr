@@ -14,13 +14,11 @@ ms.assetid: 0be369d5-d4ad-433a-8a81-c04b070d76e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 627d3f76b096b6dcdcee0b92c2d08a30c76bcb8a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Choisir comment inscrire des appareils mobiles
 
@@ -39,4 +37,3 @@ Vos réponses aux questions suivantes vous permettront de déterminer la méthod
 
 > [!div class="button"]
 [< Retour](choose-how-to-enroll-devices3.md)
-

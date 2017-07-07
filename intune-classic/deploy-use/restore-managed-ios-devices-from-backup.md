@@ -14,15 +14,12 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Restaurer des appareils iOS gérés par Intune à partir d’une sauvegarde
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -52,4 +49,3 @@ Lancez l’application Portail d’entreprise et annulez l’inscription en sél
 
 ### <a name="for-users-who-will-use-both-their-old-and-new-devices"></a>Pour les utilisateurs qui utilisent leurs appareils anciens et nouveaux
 Effacer les cookies de Safari en appuyant sur __Paramètres__ > __Safari__ > __Effacer l’historique et les données de site web__. Ensuite, désinstallez et réinstallez l’application Portail d’entreprise, puis suivez les étapes d’inscription standard pour [inscrire un appareil iOS dans Intune](/intune-user-help/enroll-your-device-in-intune-ios).
-

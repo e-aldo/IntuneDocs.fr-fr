@@ -1,5 +1,5 @@
 ---
-title: "Accès aux applications pour Exchange Online | Microsoft Docs"
+title: "Accès aux applications pour Exchange Online"
 description: "Cette rubrique décrit comment vous pouvez configurer une stratégie d’accès conditionnel pour les applications GAM."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: df84bdf2358b596905299c7099ce22e128e9d17d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ef4a0c0e642026d625d7139b2ea2629cdd96930
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>Créer un accès conditionnel à Exchange Online pour autoriser uniquement les applications prises en charge par la gestion des applications mobiles
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ Pour **supprimer un groupe d’utilisateurs** de la liste **Groupes d’utilisat
 [Bloquer les applications sans authentification moderne](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Voir aussi
 [Protéger les données d’application à l’aide de stratégies de protection des applications](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
