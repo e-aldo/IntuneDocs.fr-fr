@@ -1,7 +1,7 @@
 ---
-title: "Paramètres VPN Intune pour les appareils Mac OS | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils Mac OS."
+title: "Paramètres VPN Intune pour les appareils macOS"
+titleSuffix: Intune on Azure
+description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils macOS."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4737fc863e3eda92eafd0536a07abf4100ebe9cc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 83e3776aacbddc37e5e7586d8fd7580143dead64
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils Mac OS dans Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-dessous ne peuvent pas nécessairement être configurées.
 
@@ -61,4 +58,3 @@ Si vous avez sélectionné **VPN personnalisé**, configurez ces paramètres sup
 - **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Saisissez **l’URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier de configuration.
 - **Adresse** : saisissez l’adresse du serveur proxy (comme une adresse IP).
 - **Numéro de port** : saisissez le numéro de port associé au serveur proxy.
-

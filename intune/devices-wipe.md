@@ -1,12 +1,12 @@
 ---
 title: "Réinitialisation complète ou sélective sur des appareils à l’aide d’Intune"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Apprenez à effectuer une réinitialisation sélective de données d’entreprise sur un appareil ou effectuer une réinitialisation complète pour réinitialiser l’appareil aux paramètres d’usine."
+titleSuffix: Intune on Azure
+description: "Apprenez à effectuer une réinitialisation sélective de données d’entreprise sur un appareil ou effectuer une réinitialisation complète pour réinitialiser l’appareil aux paramètres d’usine."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>Utiliser la réinitialisation sélective ou complète
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Vous pouvez réinitialiser les applications et les données à partir d’appareils gérés par Intune qui ne sont plus nécessaires, qui ont été réaffectés ou ont disparu. Pour ce faire, Intune propose des fonctionnalités de réinitialisation sélective et de réinitialisation complète. Les utilisateurs peuvent également émettre une commande de réinitialisation d’appareil à distance à partir de l’application Portail d’entreprise Intune sur les appareils privés inscrits dans Intune.
 
@@ -101,8 +98,8 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
-|Courrier électronique|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
-|Outlook|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|
+|Courrier électronique|n/a (profils de messagerie non pris en charge par les appareils Android)|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
+|Outlook|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.</br>Exception : si Exchange est hébergé localement, la messagerie électronique n’est pas supprimée.|
 |Disjonction d'Azure Active Directory (AAD)|Enregistrement AAD supprimé.|Enregistrement AAD supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
 
@@ -130,4 +127,3 @@ Une réinitialisation sélective sur un appareil Android for Work supprime l’e
 3.  Dans le panneau présentant le nom de l’appareil, choisissez **Supprimer donn...** (signifie Supprimer données de l’entreprise), puis **Oui** pour confirmer la réinitialisation.
 
 Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation prend moins de 15 minutes, quel que soit le type de l’appareil.
-

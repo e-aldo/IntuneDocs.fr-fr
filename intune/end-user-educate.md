@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Comment former vos utilisateurs finaux à Microsoft Intune
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune vous permet de donner à votre personnel des appareils mobiles tout en protégeant vos données d’entreprise. Il existe de nombreuses étapes permettant de garantir un déploiement réussi, notamment l’évaluation d’Intune avec un [essai gratuit](app-sdk.md).
 
@@ -57,15 +56,15 @@ L’apaisement des inquiétudes de ces utilisateurs améliorera votre déploieme
 
 * **Android**
   * [Utilisation de votre appareil Android avec Intune](/intune-user-help/using-your-android-device-with-intune)
-  * [Comment vos utilisateurs Android obtiennent leurs applications](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Comment vos utilisateurs Android obtiennent leurs applications](end-user-apps-android.md)
 
 * **iOS**
   * [Utilisation d’un appareil iOS avec Intune](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [Comment vos utilisateurs iOS obtiennent leurs applications](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [Comment vos utilisateurs iOS obtiennent leurs applications](end-user-apps-ios.md)
 
 * **Windows**
   * [Utilisation de votre appareil Windows avec Intune](/intune-user-help/using-your-windows-device-with-intune)
-  * [Comment vos utilisateurs Windows obtiennent leurs applications](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Comment vos utilisateurs Windows obtiennent leurs applications](end-user-apps-windows.md)
 
 * __Soyez franc.__ Indiquez clairement à vos utilisateurs à ce que vous allez gérer sur leurs appareils. Dites-leur le type de données que vous collectez et pourquoi vous le faites. Informez-les de la façon dont vous avez l’intention d’utiliser toutes les données d’actif. [Microsoft pense que vous devez disposer de toutes les informations nécessaires sur notre façon de gérer vos données client dans le cloud](https://www.microsoft.com/trustcenter/about/transparency). Selon nous, cette philosophie peut considérablement améliorer la satisfaction de vos utilisateurs finaux concernant Intune.
 
@@ -73,4 +72,3 @@ L’apaisement des inquiétudes de ces utilisateurs améliorera votre déploieme
 > La transparence, chaque fois que cela est possible, est essentielle au succès de votre déploiement.
 
 Vous tentez de concilier la confiance avec des stratégies de conformité bien conçues permettant de garantir que les utilisateurs finaux savent que même si vous *pouvez* consulter certains types de données personnelles, vous ne *voulez* pas le faire, et la responsabilité que vous auriez à assumer de vous être immiscé dans leur vie privée. L’élaboration d’une déclaration avec le service juridique et le service des ressources humaines peut être utile avec les employés particulièrement difficiles.
-

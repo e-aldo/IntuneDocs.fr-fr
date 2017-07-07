@@ -1,7 +1,7 @@
 ---
 title: "Surveiller les stratégies de conformité d’appareils Intune"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : découvrez comment surveiller les stratégies de conformité des appareils."
+titleSuffix: Intune on Azure
+description: "Apprenez à surveiller les stratégies de conformité des appareils."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Surveiller les stratégies de conformité d’appareils Intune
 
@@ -123,8 +121,6 @@ Si vous cliquez sur le **bouton Filtrer**, le filtre volant s’ouvre avec les o
 
 Si vous cliquez sur le **bouton Mettre à jour**, le filtre volant doit se fermer et les résultats doivent se mettre à jour selon les critères de filtre sélectionnés.
 
-![Bouton de mise à jour de filtre](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Détails sur l'appareil
 
 Cliquez sur un appareil pour ouvrir le panneau **Appareils** avec l’appareil sélectionné. Cela fournit plus de détails sur le paramètre de stratégie de conformité d’appareil appliqué à cet appareil.
@@ -154,4 +150,3 @@ Ce rapport vous permet d’afficher, en fonction du paramètre de conformité ch
 Lorsque vous cliquez sur la vignette Définition de la conformité, puis sur l’un des paramètres de stratégie de conformité d’appareil, vous pouvez afficher l’**état de conformité**, l’**alias de messagerie de l’utilisateur**, le **modèle d’appareil** et l’**emplacement** de chaque appareil ciblé par le paramètre de stratégie de conformité d’appareil.
 
 ![Vignette Définition de la conformité](./media/idc-11.png)
-

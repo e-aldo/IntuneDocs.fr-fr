@@ -1,7 +1,7 @@
 ---
 title: "Configurer les paramètres de restriction d’appareil Intune"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour configurer des paramètres et des fonctionnalités sur les appareils que vous gérez."
+titleSuffix: Intune on Azure
+description: "Découvrez comment utiliser Intune pour configurer des paramètres et des fonctionnalités sur les appareils que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 600ff92bf1b53800712fc2e77fef7158ab765970
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de restriction d’appareils dans Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Les restrictions de l’appareil vous permettent de contrôler un large éventail de paramètres et de fonctionnalités que vous gérez dans diverses catégories, dont la sécurité, le navigateur, le matériel et les paramètres de partage de données. Par exemple, vous pouvez créer un profil de restriction de l’appareil qui empêche les utilisateurs d’appareils iOS d’accéder à l’appareil photo.
 
@@ -35,7 +32,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Créer un profil d’appareil contenant des paramètres de restriction de l’appareil
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
@@ -67,5 +64,4 @@ Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Gu
 Dans cet exemple de haut niveau, vous allez créer une stratégie de restriction de l’appareil qui bloque l’utilisation de l’application d’appareil photo intégrée sur les appareils Android.
 
 ![Comment désactiver l’appareil photo sur les appareils Android](./media/disable-android-camera.png)
-
 

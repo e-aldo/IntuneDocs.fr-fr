@@ -1,7 +1,7 @@
 ---
-title: "Guide pratique pour surveiller les affectations et les informations d’applications | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Une fois que vous avez affecté une application à des utilisateurs ou des appareils, utilisez ces informations pour surveiller son état."
+title: "Guide pratique pour surveiller les affectations et les informations d’applications"
+titleSuffix: Intune on Azure
+description: "Une fois que vous avez affecté une application à des utilisateurs ou des appareils, utilisez ces informations pour surveiller son état."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7c39c904cd2a7bd20525d9072067c6e484b4437a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: d588ecc8f2e211b5a8ccdfe7b7720869cc6327b8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Guide pratique pour surveiller les affectations et les informations d’applications avec Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune propose plusieurs façons de surveiller les propriétés des applications que vous gérez, ainsi que leur état d’affectation.
 

@@ -1,12 +1,12 @@
 ---
-title: "Qu’est-ce que l’accès conditionnel ?"
-titleSuffix: Intune Azure preview
-description: "Version préliminaire d’Intune Azure : apprenez à définir les conditions que les utilisateurs et appareils doivent respecter pour accéder aux ressources d’entreprise dans la version préliminaire de Microsoft Intune Azure."
+title: "Accès conditionnel avec Intune"
+titleSuffix: Intune on Azure
+description: "Apprenez à définir les conditions que les utilisateurs et appareils doivent respecter pour accéder aux ressources d’entreprise dans la Microsoft Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,44 +14,51 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8ab6d782460a857a0901abd9bd567365ee2e3f70
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: d3e6b720eeed65c81e5f3a4dbf06890ea8fd09ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="whats-conditional-access"></a>Qu’est-ce que l’accès conditionnel ?
 
-# <a name="what-is-conditional-access"></a>Qu’est-ce que l’accès conditionnel ?
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Cette rubrique décrit l’accès conditionnel qui s’applique à Enterprise Mobility + Security (EMS) puis présente des scénarios courants d’accès conditionnel avec Intune.
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+L’accès conditionnel d’Enterprise Mobility + Security (EMS) n’est pas un produit autonome, il s’agit d’une solution qui tire parti de tous les services et produits qui font partie de la suite EMS. Il offre un contrôle d’accès granulaire pour sécuriser vos données d’entreprise, tout en donnant aux utilisateurs une expérience qui leur permet d’effectuer leur travail au mieux à partir de n’importe quel appareil et de n’importe quel emplacement.
 
+Vous pouvez définir des conditions qui contrôlent l’accès à vos données d’entreprise en fonction de l’emplacement, l’état de l'appareil et de l’utilisateur, et la sensibilité de l’application.
 
-Dans cette rubrique, nous décrivons l’accès conditionnel tel qu’il s’applique à Enterprise Mobility + Security, ainsi que les fonctionnalités d’accès conditionnel dans Intune.
+> [!NOTE] 
+> L’accès conditionnel étend également ses fonctionnalités aux [services Office 365](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/).
 
-L’accès conditionnel d’Enterprise Mobility + Security (EMS) exploite la puissance d’Azure Active Directory Premium et Microsoft Intune pour vous fournir le contrôle dont vous avez besoin pour protéger vos données d’entreprise, tout en offrant à vos utilisateurs une expérience qui leur permettra d’effectuer leurs tâches efficacement à partir de n’importe quel appareil.
+![Diagramme architectural de l’accès conditionnel](./media/ca-diagram-1.png)
 
-Avec un accès conditionnel, vous pouvez définir des conditions qui limitent l’accès à vos données d’entreprise en fonction de l’emplacement, l’état de l'appareil et de l’utilisateur, et la sensibilité de l’application.
+## <a name="conditional-access-with-intune"></a>Accès conditionnel avec Intune
 
-Du point de vue de l’appareil, Intune et Azure Active Directory fonctionnent ensemble pour s’assurer que seuls les appareils gérés et compatibles sont autorisés à accéder à la messagerie et aux services Office 365. Par exemple, vous pouvez définir une stratégie dans Azure Active Directory pour autoriser uniquement les ordinateurs qui sont joints au domaine, ou les appareils mobiles qui sont inscrits dans une application de gestion d'appareils mobiles comme Intune, à pouvoir accéder aux services Office 365. Vous pouvez utiliser Intune pour définir un profil de conformité d'appareil qui évalue l’état de conformité de l’appareil. L’état de conformité est signalé à Azure Active Directory, qui l’utilise pour l’application de la stratégie lorsque l’utilisateur tente d’accéder aux ressources de votre entreprise. Pour en savoir plus sur la conformité des appareils dans Intune, consultez [Qu’est-ce que la conformité des appareils ?](device-compliance.md).
+Intune ajoute des fonctionnalités de conformité des appareils mobiles et de gestion des applications mobiles pour prendre en charge la solution d’accès conditionnel d’EMS.
 
-L’accès conditionnel pour les applications de cloud telles qu’Exchange Online peut être configuré via Azure Active Directory. Pour plus d'informations, consultez cet [article](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+![Intune et accès conditionnel lors de l’utilisation d’EMS](./media/intune-with-ca-1.png)
 
-## <a name="on-premises-conditional-access-in-intune"></a>Accès conditionnel local dans Intune
+Moyens d’utilisation de l’accès conditionnel avec Intune :
 
-L’accès conditionnel dans Intune peut servir à autoriser ou bloquer l’accès à **Exchange en local** en fonction de la gestion et de l’inscription des appareils.
+-   **Accès conditionnel basé sur l’appareil**
 
-Les paramètres de profil de conformité d’appareil sont utilisés pour évaluer la conformité de l’appareil. L’accès conditionnel utilise une formule d’évaluation pour autoriser ou bloquer l’accès à Exchange en local. Quand vous utilisez un accès conditionnel avec un profil de conformité d'appareil, seuls les appareils conformes peuvent accéder à Exchange en local. Vous pouvez configurer des paramètres avancés dans l’accès conditionnel pour un contrôle plus granulaire, par exemple : autoriser ou bloquer certaines plateformes ou bloquer immédiatement les appareils qui ne sont pas gérés par Intune.
+    -   Accès conditionnel pour Exchange sur site
 
-Le profil de conformité d'appareil et l’accès conditionnel sont affectés à l’utilisateur. La conformité de chaque appareil que l’utilisateur utilise pour accéder à Exchange en local est contrôlée. N’oubliez pas que l’utilisateur de l’appareil doit déployer un profil de conformité sur l’appareil afin que sa conformité soit évaluée. Si aucune stratégie de conformité n’est déployée sur l’utilisateur, l’appareil est considéré comme conforme et aucune restriction d’accès ne s’applique.
+    -   Accès conditionnel basé sur le contrôle d’accès réseau
 
-Quand un appareil ne remplit pas les conditions définies, l'utilisateur final est guidé tout au long du processus d'inscription de cet appareil et du processus de résolution du problème qui empêche l'appareil d'être conforme.
+    -   Accès conditionnel basé sur les risques que présente l’appareil
+
+    -   Accès conditionnel pour les PC Windows
+
+        -   Appartenant à l’entreprise
+
+        -   Apportez votre propre appareil (BYOD)
+
+-   **Accès conditionnel basé sur l’application**
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Guide de création d’une stratégie d’accès conditionnel à Exchange sur site](conditional-access-exchange-create.md)
-
-[Guide pratique de configuration de l’accès conditionnel dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
-
+[Utilisations courantes de l’accès conditionnel avec Intune](conditional-access-intune-common-ways-use.md)

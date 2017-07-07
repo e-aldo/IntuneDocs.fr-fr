@@ -1,7 +1,7 @@
 ---
 title: "Création d’un profil Wi-Fi avec une clé prépartagée"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : utiliser un profil personnalisé Intune pour créer un profil Wi-Fi avec une clé prépartagée."
+titleSuffix: Intune on Azure
+description: "Utiliser un profil personnalisé Intune pour créer un profil Wi-Fi avec une clé prépartagée."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,39 +15,36 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fe7d9e9998156825bfd9637c3f9d80df80b916cf
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utiliser un profil d’appareil personnalisé Microsoft Intune pour créer un profil Wi-Fi avec une clé prépartagée
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Voici comment utiliser les **Profils d’appareil personnalisés** d’Intune pour créer un profil Wi-Fi avec une clé prépartagée. Cette rubrique comprend également un exemple de création d’un profil Wi-Fi basé sur EAP.
 
 > [!NOTE]
--    Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
+-   Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
 - Pour Android, vous avez également la possibilité d’utiliser ce [générateur de clés prépartagées Android](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fourni par Johnathon Biersack.
--    Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
+-   Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
 -  Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Vous pouvez également utiliser le [générateur de configuration mobile de clés prépartagées pour iOS](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fourni par Johnathon Biersack.
 
 
-1.    Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Personnalisé** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez un profil d’appareil.
+1.  Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Personnalisé** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez un profil d’appareil.
 
-2.    Fournissez un nom et une description.
-3.    Ajoutez un paramètre OMA-URI :
+2.  Fournissez un nom et une description.
+3.  Ajoutez un paramètre OMA-URI :
 
-   a.    Entrez un nom pour ce paramètre de réseau Wi-Fi.
+   a.   Entrez un nom pour ce paramètre de réseau Wi-Fi.
 
-   b.    Entrez une description du paramètre OMA-URI ou laissez-la vide.
+   b.   Entrez une description du paramètre OMA-URI ou laissez-la vide.
 
-   c.    **Type de données** : définissez sur **String**.
+   c.   **Type de données** : définissez sur **String**.
 
-   d.    **OMA-URI** :
+   d.   **OMA-URI** :
 
     - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -208,4 +205,3 @@ Vous pouvez également créer un du fichier XML à partir d’une connexion Wi-F
     Il est préférable d’utiliser un ordinateur qui n’est pas connecté à plusieurs réseaux sans fil, car vous devrez effectuer des recherches dans chaque profil pour trouver celui qui convient.
 3.     Recherchez dans les fichiers XML pour trouver celui dont le nom est correct.
 4.     Une fois que vous avez localisé le fichier XML approprié, copiez et collez le code XML dans le champ de données de la page de paramètres OMA-URI.
-

@@ -1,7 +1,7 @@
 ---
 title: "Où se trouve ma fonctionnalité Intune dans Azure ?"
-titleSuffix: Intune Azure preview
-description: "Préversion d’Intune Azure : Vous aide à trouver les fonctionnalités Intune dans la console Azure."
+titleSuffix: Intune on Azure
+description: "Vous aide à trouver les fonctionnalités Intune dans la console Azure."
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,27 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9dd6e93108ffc46e9e52b6928cf513161d29f7a4
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Où se trouve ma fonctionnalité Intune dans Azure ?
 Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Nous avons donc créé ce guide de référence pour ceux d’entre vous qui connaissent parfaitement Intune dans la console classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune sur Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
 ## <a name="quick-reference-guide"></a>Guide de référence rapide
-|Fonctionnalité |Chemin dans la console classique|Chemin dans Intune sur Azure| |------------||---------------|---------------|
-|Programme d’inscription des appareils (DEP) |Administration > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils|[Inscription d’appareil > Inscription Apple > Jeton du Programme d’inscription](#where-did-apple-dep-go) |
-|Programme d’inscription des appareils (DEP)| Administration > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription d’appareil > Inscription Apple > Numéros de série de programme d’inscription](#where-did-apple-dep-go) |
-|Règles d’inscription |Administration > Gestion des appareils mobiles > Règles d’inscription|[Inscription d’appareil > Restrictions d’inscription](#where-did-enrollment-rules-go) |
-|Groupes par numéro de série iOS |Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par numéro de série iOS|[Inscription d’appareil > Inscription Apple > Numéros de série de programme d’inscription](#where-did-corporate-pre-enrolled-devices-go) |
-|Groupes par numéro de série iOS |Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par numéro de série iOS| [Inscription d’appareil > Inscription Apple > Numéros de série AC](#where-did-corporate-pre-enrolled-devices-go)|
-|Groupes par IMEI (toutes les plateformes)| Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par IMEI (toutes les plateformes) | [Inscription d’appareil > Identificateurs d’appareil d’entreprise](#by-imei-all-platforms)|
-| Profil d’inscription d’appareil professionnel| Stratégie > Inscription d’appareil professionnel | [Inscription d’appareil > Inscription Apple > Profils du programme d’inscription](#where-did-corporate-pre-enrolled-devices-go) |
-| Profil d’inscription d’appareil professionnel | Stratégie > Inscription d’appareil professionnel | [Inscription d’appareil > Inscription Apple > Profils AC](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Admin > Gestion des périphériques mobiles > Android for Work | Inscription d’appareil > Inscription d’Android for Work | | Conditions générales | Stratégie > Conditions générales | Inscription d’appareil > Conditions générales |
+|Fonctionnalité |Chemin dans la console classique|Chemin dans Intune sur Azure| |------------||---------------|---------------| |Programme d’inscription des appareils (DEP) |Administration > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils|[Inscription d’appareil > Inscription Apple > Jeton du Programme d’inscription](#where-did-apple-dep-go) | |Programme d’inscription des appareils (DEP)| Administration > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription d’appareil > Inscription Apple > Numéros de série de programme d’inscription](#where-did-apple-dep-go) | |Règles d’inscription |Administration > Gestion des appareils mobiles > Règles d’inscription|[Inscription d’appareil > Restrictions d’inscription](#where-did-enrollment-rules-go) | |Groupes par numéro de série iOS |Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par numéro de série iOS|[Inscription d’appareil > Inscription Apple > Numéros de série de programme d’inscription](#where-did-corporate-pre-enrolled-devices-go) | |Groupes par numéro de série iOS |Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par numéro de série iOS| [Inscription d’appareil > Inscription Apple > Numéros de série AC](#where-did-corporate-pre-enrolled-devices-go)| |Groupes par IMEI (toutes les plateformes)| Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par IMEI (toutes les plateformes) | [Inscription d’appareil > Identificateurs d’appareil d’entreprise](#by-imei-all-platforms)| |Profil d’inscription d’appareil professionnel| Stratégie > Inscription d’appareil professionnel | [Inscription d’appareil > Inscription Apple > Profils du programme d’inscription](#where-did-corporate-pre-enrolled-devices-go)| |Profil d’inscription d’appareil professionnel | Stratégie > Inscription d’appareil professionnel | [Inscription d’appareil > Inscription Apple > Profils AC](#where-did-corporate-pre-enrolled-devices-go)| |Android for Work | Admin > Gestion des périphériques mobiles > Android for Work | Inscription d’appareil > Inscription d’Android for Work | | Conditions générales | Stratégie > Conditions générales | Inscription d’appareil > Conditions générales |
 
 
 ## <a name="where-do-i-manage-groups"></a>Où gérer les groupes ?
@@ -117,4 +106,3 @@ Pour éviter toute confusion entre les deux types de profils et les éventuels n
 
 **Profils Apple Configurator**
 ![Image de profils Azure Apple Configurator](./media/16-azure-ac-profiles.png)
-

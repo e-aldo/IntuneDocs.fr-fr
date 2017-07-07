@@ -1,7 +1,7 @@
 ---
 title: "Inscrire des appareils iOS avec Apple Configurator et l’inscription directe"
-titleSuffix: Intune Azure preview
-description: "Version préliminaire d’Intune Azure : découvrez comment utiliser Apple Configurator pour inscrire des appareils iOS d’entreprise à l’aide de l’inscription directe."
+titleSuffix: Intune on Azure
+description: "Découvrez comment utiliser Apple Configurator pour inscrire des appareils iOS d’entreprise à l’aide de l’inscription directe."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5347e2023a9ce19f8e8ab960e2eebf8107530220
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>Inscrire des appareils iOS avec Apple Configurator et l’inscription directe 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’aide d’[Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) s’exécutant sur un ordinateur Mac. Ce processus ne réinitialise pas l’appareil aux paramètres d’usine et l’inscrit avec une stratégie prédéfinie. Cette méthode est destinée aux appareils n’ayant **aucune affinité utilisateur** et implique de connecter l’appareil iOS à un ordinateur Mac via une connexion USB pour configurer l’inscription d’entreprise.
 
@@ -42,7 +39,7 @@ Les autres méthodes d’inscription d’appareils iOS sont décrites dans [Choi
 
 Avant de configurer l’inscription des appareils iOS, effectuez les prérequis suivants :
 
-- [Configurer des domaines](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [Configurer des domaines](custom-domain-name-configure.md)
 - [Configurer l’autorité MDM](mdm-authority-set.md)
 - [Créer des groupes](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [Configurer le portail d’entreprise](company-portal-app.md)
@@ -102,4 +99,3 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 4. Sur l’appareil iOS, ouvrez **Settings** (Réglages) et accédez à **General (Général)** > **Device Management (Gestion des appareils)** > **Management Profile (Profil de gestion)**. Assurez-vous que l’installation du profil est répertoriée, puis vérifiez les restrictions de stratégie iOS et les applications installées. L’affichage des applications et des restrictions de stratégie sur l’appareil peut prendre jusqu’à dix minutes.
 
 5. Distribuez des appareils. L’appareil iOS est maintenant inscrit et géré dans Intune.
-

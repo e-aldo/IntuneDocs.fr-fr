@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="an-existing-company-email-account-was-found"></a>Compte de messagerie d’entreprise existant détecté
 
 Vous avez déjà un compte de messagerie avec votre organisation ou votre société, et vous souhaitez maintenant accéder à ce compte sur votre appareil mobile. L’administrateur a besoin de votre aide pour assurer la sécurité de l’accès à l’e-mail sur le trajet entre la personne qui l’envoie et votre appareil. Tout a peut-être bien fonctionné pour votre e-mail actuel, mais vos informations seront plus en sécurité en procédant comme suit.
@@ -39,4 +35,3 @@ Vous avez déjà un compte de messagerie avec votre organisation ou votre socié
 3.  Patientez quelques secondes pour les nouveaux paramètres de messagerie à appliquer automatiquement à votre appareil.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

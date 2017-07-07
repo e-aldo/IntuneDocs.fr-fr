@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 586a5355e2ee4b0dda6e0238628fa71bdce6f1a2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-update-the-company-portal-app"></a>Guide pratique pour mettre à jour l’application Portail d’entreprise
 
 Si votre version de l’application Portail d’entreprise n’est plus prise en charge ou s’il existe une nouvelle version de l’application Portail d’entreprise, vous devez la mettre à jour vers la dernière version. Suivez la procédure qui correspond au type d’appareil que vous avez.
@@ -53,4 +49,3 @@ Pour mettre à jour l’application Portail d’entreprise :
 
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

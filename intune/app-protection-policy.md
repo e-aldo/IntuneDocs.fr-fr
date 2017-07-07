@@ -1,7 +1,7 @@
 ---
 title: "Que sont les stratégies de protection des applications ?"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Utilisez cette rubrique pour apprendre à protéger les données de votre entreprise avec les stratégies de protection d’application Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Utilisez cette rubrique pour apprendre à protéger les données de votre entreprise avec les stratégies de protection d’application Microsoft Intune."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,19 +15,16 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="what-are-app-protection-policies"></a>Que sont les stratégies de protection des applications ?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Les stratégies de protection d’application Microsoft Intune vous aident à protéger vos données d’entreprise et éviter les pertes de données.
 
@@ -68,7 +65,7 @@ Il existe d’autres avantages à utiliser la gestion des appareils mobiles (MDM
 
 -   Android 4 ou version ultérieure
 
-Les appareils Windows ne sont pas pris en charge actuellement. Toutefois, quand vous inscrivez des appareils Windows 10 auprès d’Intune, vous pouvez utiliser la Protection des informations Windows, qui offre des fonctionnalités similaires. Pour plus d’informations, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Les appareils Windows ne sont pas pris en charge actuellement. Toutefois, quand vous inscrivez des appareils Windows 10 auprès d’Intune, vous pouvez utiliser la Protection des informations Windows, qui offre des fonctionnalités similaires. Pour plus d’informations, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Comment les stratégies de protection d’application protègent les données d’application
 
 ####  <a name="apps-without-app-protection-policies"></a>Applications sans stratégies de protection des applications
@@ -138,4 +135,3 @@ Par exemple, quand un utilisateur démarre l’application OneDrive à l’aide 
 ##  <a name="next-steps"></a>Étapes suivantes
 
 [Guide pratique de création et déploiement des stratégies de protection d’application à l’aide de Microsoft Intune](app-protection-policies.md)
-

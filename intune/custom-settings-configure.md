@@ -1,12 +1,12 @@
 ---
 title: "Guide pratique pour configurer des paramètres d’appareils personnalisés Intune"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour configurer des paramètres personnalisés sur les appareils que vous gérez."
+titleSuffix: Intune on Azure
+description: "Découvrez comment utiliser Intune pour configurer des paramètres personnalisés sur les appareils que vous gérez."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 40a37a02ac49a74e3f715b0e2191868ecf2e264b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 769c566c7ebb91743fc0f18ebf8f3e76377ca847
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres d’appareils personnalisés dans Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="when-to-use-custom-settings"></a>Quand utiliser des paramètres personnalisés
 
@@ -38,7 +35,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 ## <a name="create-a-device-profile-containing-custom-settings"></a>Créer un profil d’appareil contenant des paramètres personnalisés
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
+2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
@@ -53,7 +50,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 7. Selon la plateforme que vous choisissez, les paramètres que vous pouvez configurer diffèrent. Accédez à l’une des rubriques suivantes pour obtenir les paramètres détaillés pour chaque plateforme :
     - [Paramètres Android](custom-settings-android.md)
     - [Paramètres iOS](custom-settings-ios.md)
-    - [Paramètres macOS](custom settings-macos.md)
+    - [Paramètres macOS](custom-settings-macos.md)
     - [Paramètres Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
     - [Paramètres Windows 10](custom-settings-windows-10.md)
     - [Paramètres Android for Work](custom-settings-android-for-work.md)
@@ -61,4 +58,3 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
 Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
-

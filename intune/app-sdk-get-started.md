@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Prise en main du Kit de développement logiciel (SDK) d’applications Microsoft Intune
 
 Ce guide va vous permettre d’activer rapidement votre application mobile pour les stratégies de protection d'applications mobiles (MAM) avec Microsoft Intune. Il peut s’avérer utile de comprendre d’abord les avantages du SDK d’application Intune, tels qu’ils sont expliqués dans la [présentation du Kit SDK d’application Intune](app-sdk.md).
@@ -139,4 +136,3 @@ Le badge est une icône en forme de porte-documents, visible dans les exemples c
 * Une application de manipulation d’image qui peut lire les fichiers **.eps**, ou une application Adobe qui peut lire les fichiers **.ai**.
 
 * Vous trouverez les [ressources et directives du badge de l'application Intune](https://github.com/msintuneappsdk/intune-app-partner-badge) sur Microsoft Intune GitHub.
-

@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 9f3d03fe3c9da641f3c33d5d1e32032ac540adc9
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Vous devez résoudre une menace détectée par une application de protection contre les menaces mobiles
 
 L’application de protection contre les menaces mobiles a détecté la présence d’une menace potentielle sur votre appareil iOS, et vous devez corriger le problème pour récupérer l’accès aux e-mails, applications et fichiers de votre entreprise ou établissement scolaire. Selon la configuration de l’application de protection contre les menaces mobiles appliquée par l’administrateur, vous pourrez utiliser l’une des applications ci-après pour résoudre ce problème.
@@ -40,4 +36,3 @@ Si vous avez installé une application que la fonction de protection contre les 
 Après avoir désinstallé l’application, vous récupérez immédiatement l’accès à vos e-mails et autres données de votre entreprise ou établissement scolaire. Si vous ignorez la demande de désinstallation de l’application, vous perdez l’accès à vos e-mails et données d’entreprise jusqu’à ce que vous désinstalliez l’application.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

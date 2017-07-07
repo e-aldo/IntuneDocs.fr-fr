@@ -1,5 +1,5 @@
 ---
-title: "Accéder à la messagerie d’entreprise en utilisant des profils de messagerie | Microsoft Docs"
+title: "Accéder à la messagerie d’entreprise en utilisant des profils de messagerie"
 description: "Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,11 +33,11 @@ Si vous avez besoin d’une protection supplémentaire contre la perte de donné
 Les administrateurs informatiques ou les utilisateurs peuvent choisir d’installer d’autres clients de messagerie (par exemple Microsoft Outlook pour Android ou iOS). Ces clients de messagerie peuvent ne pas prendre en charge les profils de messagerie, et ne sont pas configurables à l’aide des profils de messagerie Intune.  
 
 Vous pouvez utiliser des profils de messagerie pour configurer le client de messagerie natif sur les types d’appareils suivants :
--    Windows Phone 8.1 et versions ultérieures
--    Windows 10 (pour le bureau), Windows 10 Mobile et versions ultérieures
--    iOS 8.0 et versions ultérieures
--    Samsung KNOX Standard (4.0 et versions ultérieures)
--    Android for Work (applications de messagerie tierces, l’application de messagerie native repose uniquement sur un profil personnel)
+-   Windows Phone 8.1 et versions ultérieures
+-   Windows 10 (pour le bureau), Windows 10 Mobile et versions ultérieures
+-   iOS 8.0 et versions ultérieures
+-   Samsung KNOX Standard (4.0 et versions ultérieures)
+-   Android for Work (applications de messagerie tierces, l’application de messagerie native repose uniquement sur un profil personnel)
 
 Outre la configuration d’un compte de messagerie sur l’appareil, vous pouvez configurer le volume d’e-mails à synchroniser et, en fonction du type d’appareil, les types de contenu à synchroniser.
 
@@ -85,7 +82,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
     -   **Profil d’e-mail (Android for Work - Gmail)**
 
-    -    **Profil d’e-mail (Android for Work - Nine Work)**
+    -   **Profil d’e-mail (Android for Work - Nine Work)**
 
     Vous pouvez uniquement créer et déployer une stratégie de profil de messagerie personnalisée. Les paramètres recommandés ne sont pas disponibles.
 
@@ -133,4 +130,3 @@ Un récapitulatif de l'état et des alertes identifient, dans la page **Vue d'en
 > - Pour Android for Work, vérifiez que vous déployez également les applications Gmail ou Nine Work en plus du profil de messagerie approprié.
 > - Si vous souhaitez supprimer un profil de messagerie d'un appareil, modifiez le déploiement et supprimez les groupes dont l'appareil est membre. Notez que vous ne pouvez pas supprimer un profil de messagerie de cette manière s’il est le seul profil de messagerie sur un appareil.
 > - Si vous apportez des modifications à un profil de messagerie que vous avez déployé précédemment, les utilisateurs finaux peuvent voir un message leur demandant d’approuver la reconfiguration de leurs paramètres de messagerie.
-

@@ -1,7 +1,7 @@
 ---
 title: "Guide pratique de surveillance des stratégies de protection des applications"
-titleSuffix: Intune Azure preview
-description: "Version préliminaire d’Intune Azure: découvrez à combien d’utilisateurs s’applique la stratégie et explorez pour accéder à plus d’informations."
+titleSuffix: Intune on Azure
+description: "Découvrez à combien d’utilisateurs s’applique la stratégie et explorez pour accéder à plus d’informations."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e7294e5c7bb1136718ca6d651d9375a22796fa7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-app-protection-policies"></a>Guide pratique de surveillance des stratégies de protection des applications
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Si vous n’êtes pas dans la version préliminaire d'Intune dans Azure**, cette rubrique explique [comment créer des stratégies de protection des applications](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) dans la console Intune classique.
+**Si vous n’êtes pas dans le portail Azure**, cette rubrique explique [comment créer des stratégies de protection des applications](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) dans la console Intune classique.
 
 
 Vous pouvez surveiller l’état de conformité des stratégies de gestion des applications mobiles (GAM) que vous avez appliquées aux utilisateurs dans le panneau de protection des applications Intune dans le [portail Azure](https://portal.azure.com). Vous pouvez y trouver des informations sur les utilisateurs concernés par les stratégies GAM, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
@@ -43,7 +40,7 @@ Vous pouvez surveiller l’état de conformité à trois endroits différents :
 ## <a name="summary-view"></a>Vue Résumé
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
+2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
 4. Dans la charge de travail **Applications mobiles**, choisissez **Surveiller** > **État de l’utilisateur de la protection des applications** pour afficher la vue résumée :
 
@@ -139,4 +136,3 @@ Suivez ces étapes pour générer le rapport de protection des applications :
 
 * [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](app-protection-enabled-apps-android.md)
 * [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](app-protection-enabled-apps-ios.md)
-

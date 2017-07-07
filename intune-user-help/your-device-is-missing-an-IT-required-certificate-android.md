@@ -11,20 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>Le certificat exigé par votre administrateur est absent de votre appareil Android
 
 Si votre appareil n’est pas inscrit dans Intune et qu’il manque un certificat exigé par votre administrateur informatique, vous ne pouvez pas vous connecter à l’application Portail d’entreprise. Quand vous essayez de vous connecter, le message suivant s’affiche :
@@ -73,4 +70,3 @@ Pour résoudre ce problème et obtenir le certificat requis, il existe deux éta
 7. Rouvrez l’application Portail d’entreprise. Vous devriez pouvoir vous connecter à l’application Portail d’entreprise. Si vous avez besoin d’aide, contactez votre administrateur informatique.
 
 Si un message « Certificat manquant » semblable à celui indiqué précédemment s’affiche alors que vous avez déjà suivi la procédure, il manque probablement un autre certificat. Vous devez demander à votre administrateur de vous aider à l’installer. Contactez votre administrateur informatique pour obtenir de l’aide sur les informations de contact disponibles sur le [site Web de l’application Portail d’entreprise](http://portal.manage.microsoft.com).
-

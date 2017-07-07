@@ -1,7 +1,7 @@
 ---
 title: "Paramètres personnalisés Intune pour les appareils Windows 10"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Windows 10."
+titleSuffix: Intune on Azure
+description: "Découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Windows 10."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 52ad4f141c3b2b73a400c69fb9d9beb174bbac64
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: bda9e939e2d4aba4c4d005ea55ba65bec9c6e217
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres des appareils personnalisés pour les appareils Windows 10 dans Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
  Utilisez le profil Microsoft Intune **personnalisé** pour Windows 10 et Windows 10 Mobile pour déployer des paramètres OMA-URI (Open Mobile Alliance Uniform Resource Identifier) qui peuvent être utilisés pour contrôler les fonctionnalités sur des appareils. Dans Windows 10, de nombreux paramètres CSP sont disponibles, par exemple le [fournisseur de services de configuration de stratégie](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 Si vous recherchez un paramètre particulier, n’oubliez pas que le [profil de restriction d’appareil Windows 10](device-restrictions-windows-10.md) contient de nombreux paramètres intégrés à Intune et ne nécessitant pas de spécifier des valeurs personnalisées.
@@ -62,6 +59,5 @@ Vous trouverez une liste complète de tous les fournisseurs de services de confi
 Les paramètres ne sont pas tous compatibles avec toutes les versions de Windows 10. Le tableau de la rubrique Windows indique quelles versions sont prises en charge pour chaque fournisseur de services de configuration.
 
 De plus, Intune ne prend pas en charge tous les paramètres mentionnés dans la rubrique. Pour savoir si Intune prend en charge le paramètre de votre choix, ouvrez la rubrique relative à ce paramètre. Chaque page de paramètre indique ses opérations prises en charge. Pour fonctionner avec Intune, le paramètre doit prendre en charge les opérations **Ajouter** ou **Remplacer**.
-
 
 

@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Android dans Intune ?
 
 Après avoir installé l’application Portail d’entreprise et inscrit votre appareil Android dans Intune, vous pouvez utiliser l’application Portail d’entreprise pour :
@@ -61,4 +57,3 @@ Une fois votre appareil ajouté au portail d’entreprise, voici ce qu’il va f
 -   envoyer toute mise à jour de l'inventaire d'applications de la société. (Ces mises à jour n’ont pas d’informations personnelles.)
 
 Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](https://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
-

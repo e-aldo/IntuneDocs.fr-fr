@@ -1,7 +1,7 @@
 ---
 title: "Bien démarrer avec la conformité des appareils"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Utilisez cette rubrique pour comprendre les prérequis nécessaires à la création des stratégies de conformité dans Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "Utilisez cette rubrique pour comprendre les prérequis nécessaires à la création des stratégies de conformité dans Microsoft Intune"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,24 +15,21 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f59801abf29d15581fcdc577c5320942208595b1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="get-started-with-device-compliance-in-intune"></a>Bien démarrer avec la conformité des appareils dans Intune
 
-# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Bien démarrer avec la conformité des appareils dans la préversion d’Intune Azure
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Voici ce qui est présenté dans cette rubrique : 
 
 - Ce dont vous avez besoin avant de commencer à créer une stratégie de conformité d’appareil.
-- Un coup d’œil rapide sur ce que vous pouvez voir et faire dans le portail Intune Azure en préversion. 
+- Un coup d’œil rapide sur ce que vous pouvez voir et faire dans le portail Intune Azure. 
 
 Si vous ne connaissez pas la conformité des appareils, nous vous conseillons de lire [cette rubrique](device-compliance.md) pour savoir en quoi elle consiste et comment l’utiliser dans votre entreprise.
 
@@ -56,7 +53,7 @@ Si vous ne connaissez pas la conformité des appareils, nous vous conseillons de
 
 ##  <a name="azure-portal-workflow"></a>Flux de travail de portail Azure
 
-Voici une présentation de la façon dont vous pouvez créer et gérer la conformité des appareils dans le portail Intune Azure en préversion.
+Voici une présentation de la façon dont vous pouvez créer et gérer la conformité des appareils dans le portail Intune Azure.
 
 <!---### Overview
 
@@ -83,4 +80,3 @@ Période de validité de l’état de conformité
 [Créer une stratégie de conformité pour iOS](compliance-policy-create-ios.md)
 
 [Créer une stratégie de conformité pour Windows](compliance-policy-create-windows.md)
-
