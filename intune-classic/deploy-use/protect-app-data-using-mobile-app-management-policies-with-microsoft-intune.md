@@ -1,5 +1,5 @@
 ---
-title: "Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles | Microsoft Docs"
+title: "Protéger les données d’application avec des stratégies de GAM"
 description: "Cette rubrique explique comment les stratégies de gestion des applications mobiles peuvent vous aider à protéger les données de votre entreprise, empêcher toute perte de données et séparer les informations personnelles des informations professionnelles."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Protéger les données d’application à l’aide de stratégies de protection des applications avec Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,8 +35,8 @@ Vous pouvez configurer des stratégies de protection des applications pour les a
 
 -   **Inscrits dans une solution de gestion des appareils mobiles tierce :** les appareils de cette catégorie sont généralement des appareils qui appartiennent à une entreprise.
 
-      > [!NOTE]
-      > Nous ne recommandons pas d’utiliser des stratégies de protection des applications avec des solutions de gestion des applications mobiles tierces ou des solutions de conteneur sécurisé.
+    > [!NOTE]
+    > Nous ne recommandons pas d’utiliser des stratégies de protection des applications avec des solutions de gestion des applications mobiles tierces ou des solutions de conteneur sécurisé.
 
 -   **Non inscrits dans une solution de gestion des appareils mobiles :** les appareils de cette catégorie sont généralement des appareils qui appartiennent à des employés et ne sont pas gérés ni inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
 
@@ -135,4 +132,3 @@ Par exemple, quand un utilisateur démarre l’application OneDrive à l’aide 
 - [Préparation à la configuration de stratégies de protection d’applications](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Créer et déployer des stratégies de protection des applications avec Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-

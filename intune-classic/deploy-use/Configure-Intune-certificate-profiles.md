@@ -14,15 +14,12 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: aaf7bf3cb05708457c57070f4a300ece987421c3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-intune-certificate-profiles"></a>Configurer les profils de certificats Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -158,4 +155,3 @@ Ensuite, découvrez comment utiliser des certificats pour sécuriser les profils
 -  [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
 -  [Connexions Wi-Fi dans Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 -  [Connexions VPN dans Microsoft Intune](vpn-connections-in-microsoft-intune.md)
-

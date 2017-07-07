@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="send-logs-to-your-it-admin-using-email"></a>Envoyer des journaux à votre administrateur informatique par e-mail
 
 Si vous obtenez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider votre administrateur informatique à résoudre le problème en lui envoyant les informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
@@ -46,4 +41,3 @@ Pour envoyer des journaux à votre administrateur informatique par e-mail :
 3.  Sous **Aide**, appuyez sur **Obtenir de l’aide**.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

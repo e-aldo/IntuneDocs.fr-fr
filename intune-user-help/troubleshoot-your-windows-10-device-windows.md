@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Résolution de problèmes liés à l’inscription de votre appareil Windows 10
 Si vous avez suivi les étapes présentées dans la rubrique [Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mais que vous ne pouvez pas toujours accéder à vos e-mails et fichiers professionnels ou scolaires, essayez les étapes de dépannage suivantes.
 
@@ -60,4 +56,3 @@ Si vous avez suivi les étapes ci-dessus mais que vous ne pouvez toujours pas ac
 - Si vous ne voyez pas votre compte professionnel ou scolaire, appuyez sur **Connexion**, puis connectez-vous avec vos informations d’identification professionnelles ou scolaires.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

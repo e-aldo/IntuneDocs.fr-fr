@@ -1,5 +1,5 @@
 ---
-title: "Inscrire des appareils iOS avec l’Assistant Configuration | Microsoft Docs"
+title: "Inscrire des appareils iOS avec l’Assistant Configuration"
 description: "Inscrivez des appareils iOS d’entreprise en utilisant l’outil Apple Configurator pour réinitialiser vos appareils aux paramètres d’usine et les préparer à l’exécution de l’Assistant de configuration."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 12466562ea8431156e9644e63fda16231ac70f32
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 402b5b469b1536e9f2ea13948e45c9232baca458
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Inscription des appareils iOS avec Apple Configurator à l’aide de l’Assistant de configuration
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -175,4 +172,3 @@ Les appareils sont désormais prêts pour l'inscription d'entreprise. Éteignez 
 
 ### <a name="see-also"></a>Voir aussi
 [Prérequis pour l’inscription des appareils](prerequisites-for-enrollment.md)
-

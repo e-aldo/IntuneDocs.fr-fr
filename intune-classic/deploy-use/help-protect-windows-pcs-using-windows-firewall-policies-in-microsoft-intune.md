@@ -1,5 +1,5 @@
 ---
-title: "Stratégies de pare-feu pour PC Windows | Microsoft Docs"
+title: "Stratégies de pare-feu pour PC Windows"
 description: "Intune peut vous aider à sécuriser les PC que vous gérez avec le client Intune de plusieurs façons, notamment en vous aidant à configurer les paramètres du Pare-feu Windows."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d96fd3cf4d8963f1e79ef4ed27c1b826c8893b5f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13ec6a424c3665e48938315d4af11cc986a83339
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Protéger les PC Windows à l'aide de stratégies de Pare-feu Windows dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune peut vous aider à sécuriser les PC Windows que vous gérez avec le client Intune et ce, de plusieurs façons. Par exemple, il peut fournir des stratégies vous permettant de configurer les paramètres du Pare-feu Windows sur des PC.
 
 Si vous n’avez pas encore installé le client de PC Windows Intune sur vos ordinateurs, consultez [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -135,4 +135,3 @@ Vous pouvez configurer des exceptions qui autorisent des types spécifiques de t
 
 ### <a name="see-also"></a>Voir aussi
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

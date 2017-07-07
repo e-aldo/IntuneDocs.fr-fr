@@ -1,11 +1,11 @@
 ---
-title: "Catégoriser les appareils avec le mappage de groupe d’appareils | Microsoft Docs"
+title: "Catégoriser les appareils avec le mappage de groupe d’appareils"
 description: "Le mappage de groupe d’appareils dans Microsoft Intune vous permet de regrouper des appareils dans des catégories que vous définissez afin d’en faciliter la gestion."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,12 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 618827ed6baf7a9dec6aef804f19bcbca08ed39f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ff136d430496392b6ca8e5b944820fe9e14553d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Catégoriser les appareils avec le mappage de groupe d’appareils dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -32,7 +30,7 @@ Le mappage de groupe d’appareils utilise le flux de travail suivant :
 1. Créez des catégories parmi lesquelles les utilisateurs effectuent leur choix quand ils inscrivent leurs appareils.
 2. Vous créez des groupes ou utilisez des groupes existants pour chaque catégorie que vous souhaitez utiliser. Selon la version d’Intune que vous utilisez, il s’agit de groupes Intune ou de groupes de sécurité Azure Active Directory.
 2. Vous configurez des règles qui mappent la catégorie choisie au groupe d’appareils que vous avez créé.
-3. Quand des utilisateurs finaux inscrivent leur appareil, ils doivent choisir une catégorie dans la liste des catégories que vous avez configurées. Une fois ce choix effectué, leur appareil est ajouté automatiquement au groupe correspondant que vous avez créé. Si un appareil est déjà inscrit, l’utilisateur final est invité à sélectionner une catégorie la prochaine fois qu’il accède à l’application Portail d’entreprise.
+3. Quand des utilisateurs finaux d’appareils iOS et Android inscrivent leur appareil, ils doivent choisir une catégorie dans la liste des catégories que vous avez configurées. Pour affecter une catégorie à un appareil Windows, les utilisateurs finaux doivent utiliser le site web du portail d’entreprise (voir **Après avoir configuré des groupes d’appareils** dans cette rubrique pour plus d’informations).
 4. Vous pouvez ensuite déployer des stratégies et des applications sur ces groupes.
 
 Vous pouvez créer toute catégorie d’appareils souhaitée, par exemple :
@@ -86,8 +84,13 @@ Par exemple (**device.deviceCategory -eq** "<*nom de catégorie d’appareil que
 
 ## <a name="after-you-configure-device-groups"></a>Après avoir configuré des groupes d’appareils
 
-Quand des utilisateurs inscrivent leur appareil, une liste des catégories que vous avez configurées leur est présentée. Une fois qu’ils ont choisi une catégorie et terminé l’inscription, leur appareil est ajouté au groupe d’appareils Intune ou au groupe de sécurité Active Directory correspondant à la catégorie choisie.
+Quand des utilisateurs finaux d’appareils iOS et Android inscrivent leur appareil, ils doivent choisir une catégorie dans la liste des catégories que vous avez configurées. Une fois qu’ils ont choisi une catégorie et terminé l’inscription, leur appareil est ajouté au groupe d’appareils Intune ou au groupe de sécurité Active Directory correspondant à la catégorie choisie.
+
+Pour affecter une catégorie à un appareil Windows, les utilisateurs finaux doivent utiliser le site web du portail d’entreprise (portal.manage.microsoft.com) après l’inscription de l’appareil. Sur un appareil Windows, accédez au site web et allez dans **Menu** > **Mes appareils**. Choisissez un appareil inscrit répertorié sur la page, puis sélectionnez une catégorie. 
+
+Une fois le choix de catégorie effectué, l’appareil est ajouté automatiquement au groupe correspondant que vous avez créé. Si un appareil est déjà inscrit avant de configurer les catégories, l’utilisateur final verra une notification sur l’appareil sur le site web du portail d’entreprise, et il est invité à sélectionner une catégorie la prochaine fois qu’il accède à l’application de portail d’entreprise sur iOS ou Android.
+
+
 
 ### <a name="see-also"></a>Voir aussi
 [Utiliser des groupes pour gérer les utilisateurs et les appareils avec Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-

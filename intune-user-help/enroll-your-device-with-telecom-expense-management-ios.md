@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: a71b8d1a100100e204eb7e90ba0ab00573ffc5c6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Inscrire votre appareil iOS pour la gestion des dépenses de télécommunications
 
 Votre organisation peut utiliser un logiciel de gestion des dépenses de télécommunications pour garantir l’utilisation de ses forfaits de données et d’appels vocaux dans des limites acceptables. Une fois que vous aurez fini d’inscrire votre appareil, vous serez invité à sélectionner la catégorie qui lui convient le mieux.
@@ -68,4 +64,3 @@ Sélectionnez l’option appropriée. Vous recevrez alors une notification vous 
 Une fois inscrit, vous commencerez à visualiser votre consommation des données dans l’application Datalert.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

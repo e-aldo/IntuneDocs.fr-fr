@@ -1,5 +1,5 @@
 ---
-title: "Gérer le verrou d’activation iOS sur les appareils | Microsoft Docs"
+title: "Gérer le verrou d’activation iOS sur les appareils"
 description: "Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fonctionnalité de l’application Rechercher mon iPhone pour les appareils iOS 7.1 et versions ultérieures."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 22ccccefae44190ffb2d65bdf475eaef1f9b8bd2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3695e4c047edd9b788768db36184460f0e27d3bc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Aider à protéger les appareils iOS avec le contournement du verrou d'activation pour Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -106,4 +103,3 @@ Vous pouvez identifier les appareils qui utilisent le verrou d'activation de deu
 ### <a name="see-also"></a>Voir aussi
 [Mettre des appareils hors service](retire-devices-from-microsoft-intune-management.md)
 [Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code secret](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-

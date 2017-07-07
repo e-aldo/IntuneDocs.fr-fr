@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
 ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrire votre appareil Windows 10 dans Intune
 
   > [!NOTE]
@@ -67,4 +63,3 @@ Si l'application Portail d'entreprise ne figure pas dans votre liste d'applicati
 3. Dans la liste des résultats, sélectionnez **Portail d’entreprise** > **Installer**.
 
 4. Sélectionnez **Installer** ou **Gratuit**. Il n’existe aucune différence entre ces deux options pour vous. Le choix proposé dépend de la façon dont votre organisation a configuré l’application Portail d’entreprise.
-

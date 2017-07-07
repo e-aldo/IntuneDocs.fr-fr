@@ -1,5 +1,5 @@
 ---
-title: "Mises à jour logicielles pour PC Windows | Microsoft Docs"
+title: "Mises à jour logicielles pour PC Windows"
 description: "Intune vous aide à maintenir à jour vos ordinateurs gérés en s’assurant que les derniers correctifs et mises à jour logicielles sont rapidement installés."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5530c1a85c53f76f94d5ebf6d356bfebd1aa2adb
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune peut vous aider à sécuriser vos ordinateurs gérés de plusieurs façons, notamment en gérant les mises à jour logicielles qui maintiennent votre ordinateur à jour et en garantissant une installation rapide des derniers correctifs et mises à jour logicielles.
 
 Si vous n’avez pas encore installé le client Intune sur vos ordinateurs, consultez [Installer le client de PC Windows avec Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -255,4 +255,3 @@ Lorsque vous sélectionnez une mise à jour dans la liste, d'autres commandes so
 
 ### <a name="see-also"></a>Voir aussi
 [Stratégies pour protéger les PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

@@ -1,5 +1,5 @@
 ---
-title: "Utilisation de la réinitialisation à distance pour protéger les données | Microsoft Docs"
+title: "Utiliser la réinitialisation à distance pour protéger les données"
 description: "Intune fournit des fonctionnalités de réinitialisation sélective et complète pour supprimer des données d’entreprise sensibles et supprimer l’accès à de nombreuses ressources d’entreprise."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b3aeb3e81a14b0c5e461422741d62c02ab635f7e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Protégez vos données avec la réinitialisation complète ou sélective à l’aide de Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -172,4 +169,3 @@ Ce rapport indique également les personnes qui ont effectué les actions.
 [Mettre des appareils hors service](retire-devices-from-microsoft-intune-management.md)
 
 [Réinitialisation sélective de Windows pour la gestion des données d’appareil](http://technet.microsoft.com/library/dn486874.aspx)
-

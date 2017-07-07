@@ -1,5 +1,5 @@
 ---
-title: "Protéger l’accès à la messagerie Exchange Online | Microsoft Docs"
+title: "Protéger l’accès à la messagerie Exchange Online"
 description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à la messagerie de votre entreprise sur Exchange Online."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: c428d7f01872c9f0968bb69dc4dc1886a7c1828b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Protéger l’accès à la messagerie Exchange Online et Exchange Online Dedicated (nouvel environnement) avec Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -210,7 +206,7 @@ Seuls les groupes qui sont ciblés par la stratégie d’accès conditionnel son
         Cette opération exige que tous les appareils utilisés pour accéder à **Exchange Online** soient inscrits dans Intune et conformes aux stratégies. Toute application cliente qui utilise l’**authentification moderne** est soumise à la stratégie d’accès conditionnel. Si la plateforme n’est actuellement pas prise en charge par Intune, l’accès à **Exchange Online** est bloqué.
 
         Si vous sélectionnez l’option **Toutes plateformes**, Azure Active Directory applique cette stratégie à toutes les demandes d’authentification, quelle que soit la plateforme signalée par l’application cliente. Toutes les plateformes doivent être inscrites et être conformes, sauf dans les cas suivants :
-        *    Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
+        *   Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
         * Plateformes non prises en charge comme Mac OS. Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
 
     -   **Plateformes spécifiques**
@@ -275,4 +271,3 @@ Dans le tableau de bord Intune, choisissez la vignette **Appareils avec accès b
 - [Protéger l’accès à SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Protéger l’accès à Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

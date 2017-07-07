@@ -1,5 +1,5 @@
 ---
-title: "Créer des stratégies et publier une application pour les utilisateurs | Microsoft Docs"
+title: "Créer des stratégies et publier une application auprès d’utilisateurs"
 description: "Cette rubrique explique comment créer des stratégies et publier une application lorsque vous vous inscrivez à un essai gratuit de 30 jours d’Intune"
 keywords: 
 author: lindavr
@@ -14,16 +14,12 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0e836571b869e7a32b19968da1d78035a6bae7f2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 335d91cd6583052bfcc72fc018b387eed8823b7e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Créer des stratégies et publier une application pour les utilisateurs de la version d’évaluation
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -102,7 +98,6 @@ Cette étape termine le guide de gestion des appareils mobiles Intune, mais vous
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur d’autres [fonctionnalités Intune](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 
-En savoir plus sur les [façons courantes d’utiliser Intune](common-ways-to-use-intune.md)
+En savoir plus sur les [façons courantes d’utiliser Intune](/intune/common-scenarios)
 
 Convertir en [abonnement payant](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-

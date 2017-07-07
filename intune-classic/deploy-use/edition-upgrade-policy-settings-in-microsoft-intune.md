@@ -1,5 +1,5 @@
 ---
-title: "Paramètres de la stratégie de mise à niveau d’édition Windows | Microsoft Docs"
+title: "Paramètres de stratégie de mise à niveau d’édition Windows"
 description: "Découvrez comment utiliser Intune pour mettre à niveau automatiquement vos appareils Windows 10 vers une autre version."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1505adb219c38d9a67f4fa276ca345f05a0df42a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de mise à niveau d’édition Windows dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -56,4 +53,3 @@ Avant de commencer à mettre à niveau des appareils vers la dernière version, 
 
 ### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="reset-your-device-from-the-company-portal-website"></a>Réinitialiser votre appareil à partir du site web du portail d’entreprise
 
 En cas de perte ou de vol de votre appareil, vous souhaiterez peut-être restaurer les paramètres d’usine pour empêcher tout accès non autorisé à vos données. Vous pouvez réinitialiser votre appareil à distance en utilisant le [site web du portail d’entreprise](http://portal.manage.microsoft.com). Le site web du portail d’entreprise est une page web qui vous permet de gérer les ordinateurs et appareils que vous avez inscrits dans Intune. Vous pouvez utiliser ce site web pour effectuer la plupart des tâches que vous pouvez effectuer avec votre application Portail d’entreprise.
@@ -38,13 +33,13 @@ Si vous réinitialisez votre appareil, il ne sera plus répertorié dans le port
 
 Pour réinitialiser votre appareil :
 
-1.    Sur le [site web Portail d’entreprise](http://portal.manage.microsoft.com), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
+1.  Sur le [site web Portail d’entreprise](http://portal.manage.microsoft.com), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
 
 2. Dans la page __Mes appareils__, sélectionnez le nom de l’appareil à renommer.
 
   ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    L’appareil s’ouvre dans une fenêtre contextuelle. Appuyez sur le bouton **Réinitialiser**.
+3.  L’appareil s’ouvre dans une fenêtre contextuelle. Appuyez sur le bouton **Réinitialiser**.
 
     ![Toutes les options disponibles pour un appareil sélectionné sur le site web Portail d’entreprise, notamment Renommer, Supprimer, Réinitialiser l’appareil, Réinitialiser le code secret et Verrouillage à distance. ](./media/iwp-screen-with-all-options.png)
 
@@ -53,4 +48,3 @@ Pour réinitialiser votre appareil :
 Votre appareil a été réinitialisé.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

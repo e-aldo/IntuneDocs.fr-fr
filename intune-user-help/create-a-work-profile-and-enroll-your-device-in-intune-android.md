@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Créer un profil professionnel et inscrire votre appareil dans Intune
 
 L’inscription de votre appareil Android vous donne accès aux e-mails, applications et autres données professionnelles de l’entreprise. Dans le cadre de l’inscription, vous définissez un profil professionnel, qui sépare les données personnelles sur votre appareil de vos données de travail. Votre administrateur informatique peut gérer uniquement le profil professionnel, qui contient vos données de travail. Il ne peut pas gérer les données personnelles sur votre appareil. Obtenez plus d’informations sur [ce qui se passe quand vous créez un profil professionnel](what-happens-when-you-create-a-work-profile-android.md).
@@ -88,4 +83,3 @@ Pour créer un profil professionnel :
     ![Page des applications du Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

@@ -1,5 +1,5 @@
 ---
-title: "Gérer les contrats de licence logiciels pour les PC exécutant le logiciel client Intune | Microsoft Docs"
+title: "Gérer les contrats de licence logiciels pour les PC exécutant le logiciel client Intune"
 description: "Intune vous permet d’ajouter et de gérer des contrats de licence pour les logiciels achetés par l’intermédiaire des contrats de licence en volume Microsoft et pour les logiciels achetés par d’autres moyens."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gérer les contrats de licence des logiciels de PC Windows dans Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune permet d’ajouter et de gérer des informations de contrat de licence pour des logiciels achetés par l’intermédiaire de contrats de licence en volume Microsoft. Ceci est également possible pour les logiciels Microsoft et non-Microsoft achetés par d’autres moyens. Vous pouvez organiser ces informations en groupes logiques.
 
 > [!IMPORTANT]
@@ -181,4 +181,3 @@ Des contrats de licence logicielle peuvent être ajoutés à des groupes de lice
 |Renommer un groupe de licences|Dans l’espace de travail **Licences**, choisissez un groupe de licences, puis choisissez **Modifier le groupe de licences** dans le menu **Tâches**.|
 |Supprimer un groupe de licences|Dans l’espace de travail **Licences**, choisissez un groupe de licences, puis choisissez **Supprimer le groupe de licences** dans le menu **Tâches**. **Conseil :** Les licences qui résidaient dans le groupe supprimé sont déplacées vers le groupe de licences **Contrats non attribués**.|
 |Supprimer un contrat de licence|Dans l’espace de travail **Licences**, choisissez un contrat, puis cliquez sur **Supprimer**. **Conseil :** Après avoir supprimé les contrats de licence en volume, pour mettre à jour les informations de licence, choisissez **Actualiser maintenant** dans la page **Vue d’ensemble des licences** ou sous l’onglet **Général** pour un groupe de licences spécifique.|
-

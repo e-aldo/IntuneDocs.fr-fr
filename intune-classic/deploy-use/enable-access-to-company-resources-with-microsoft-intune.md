@@ -1,5 +1,5 @@
 ---
-title: "Activer l&quot;accès aux ressources de l&quot;entreprise"
+title: "Activer l'accès aux ressources de l'entreprise"
 description: "Les profils Wi-Fi, VPN et de messagerie œuvrent ensemble pour aider vos utilisateurs à accéder aux fichiers et aux ressources dont ils ont besoin."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 18091d5dea0ff4b4519082973255a21e5cbc311e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Activer l'accès aux ressources de l'entreprise avec Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -60,4 +57,3 @@ Contribuez à sécuriser l'accès aux ressources d'entreprise, notamment les ré
 |Windows 8.1 et versions ultérieures|Windows Phone 8.1 et versions ultérieures|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Oui|Oui|Oui|Oui|Oui|
-

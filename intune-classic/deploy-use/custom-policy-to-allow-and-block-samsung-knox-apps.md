@@ -1,5 +1,5 @@
 ---
-title: "Applications autorisées et bloquées pour KNOX | Microsoft Docs"
+title: "Applications autorisées et bloquées pour KNOX"
 description: "Profil personnalisé pour créer une liste d’applications autorisées et bloquées pour KNOX."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard
 
@@ -43,9 +40,9 @@ Ces paramètres peuvent uniquement être utilisés par les appareils qui exécut
     
     - **Nom du paramètre**. Entrez **PreventStartPackages**.
     - **Description du paramètre**. Entrez une description facultative, comme « Liste des applications dont l’exécution est bloquée ».
-    -     **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
-    -     **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
-    -     **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez bloquer. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
+    -   **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
+    -   **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
+    -   **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez bloquer. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
 
     Pour obtenir la liste des applications que les utilisateurs sont autorisés à installer à partir du Google Play Store tout en excluant toutes les autres applications :
 
@@ -74,4 +71,3 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 
 ### <a name="see-also"></a>Voir aussi
 [Paramètres de la stratégie de configuration Android et Samsung KNOX dans Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b99ce8b30e25960e09e39b81f0f58aa09af2affa
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>Annuler l’inscription de votre appareil si vous avez refusé les conditions d’utilisation
 
 La meilleure façon de désinscrire votre appareil Android est d’accepter les conditions d’utilisation, de se connecter à l’application Portail d’entreprise, puis d’utiliser [ces instructions](unenroll-your-device-from-intune-android.md) pour le désinscrire. Toutefois, si vous avez refusé les conditions d’utilisation durant la tentative de connexion à l’application Portail d’entreprise, vous ne pourrez pas vous connecter à l’application Portail d’entreprise à l’avenir. Vous devez donc utiliser ces instructions de résolution pour annuler l’inscription de votre appareil.
@@ -46,4 +41,3 @@ Pour désinscrire votre appareil d’Intune à partir de l’application Portail
     Vous pouvez désormais désinstaller l’application Portail d’entreprise.
 
 Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
-

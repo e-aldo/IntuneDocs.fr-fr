@@ -14,15 +14,12 @@ ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Guide de démarrage rapide : Simplification de la configuration des e-mails sur des appareils mobiles | Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,4 +47,3 @@ Une fois le profil de messagerie configuré, vous pouvez facilement restreindre 
 [Déployer des profils Wi-Fi pour les appareils gérés](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)
 
 [Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)
-

@@ -1,5 +1,5 @@
 ---
-title: "Comment déployer des applications | Microsoft Docs"
+title: "Comment déployer des applications"
 description: "Utilisez les informations de cette rubrique pour déployer des applications avec Microsoft Intune."
 keywords: 
 author: robstackmsft
@@ -14,12 +14,11 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: f684a1b8d74f7625d3262d4f02eb9841a203e883
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Déploiement d’applications dans Microsoft Intune
 
@@ -74,4 +73,3 @@ Si vous avez déployé l’application comme application **Requise** sur un appa
 ## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir déployé une application, vous pouvez surveiller sa progression. Pour plus d’informations, consultez [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Surveiller des applications dans Microsoft Intune).
-

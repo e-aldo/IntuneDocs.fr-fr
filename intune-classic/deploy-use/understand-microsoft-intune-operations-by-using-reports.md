@@ -1,5 +1,5 @@
 ---
-title: "Présentation des opérations à l’aide de rapports | Microsoft Docs"
+title: "Présentation des opérations à l’aide de rapports"
 description: "Créez et gérez des rapports sur les logiciels, le matériel et les licences logicielles de votre organisation."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Présentation des opérations Microsoft Intune à l’aide de rapports
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Les rapports prennent aussi en charge les actions suivantes :
 |**Enregistrer**|Sur la page **Créer un rapport**, chaque utilisateur peut enregistrer jusqu'à 100 rapports. Configurez les paramètres du rapport selon vos besoins, puis choisissez **Enregistrer**ou **Enregistrer sous** (si vous voulez utiliser un autre nom).|
 |**Charger**|Dans la page **Créer un rapport**, cliquez sur **Charger** pour extraire tous les paramètres de rapport déjà enregistrés.|
 |**Supprimer**|Dans l’espace de travail **Rapports**, sélectionnez le type de rapport souhaité et choisissez **Charger**. Ensuite, dans la liste des rapports, choisissez l’icône Supprimer (x) à côté du rapport.|
-
 
 
