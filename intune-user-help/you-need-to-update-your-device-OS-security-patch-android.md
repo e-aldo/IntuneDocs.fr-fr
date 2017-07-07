@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Vous devez mettre à jour le système d’exploitation de votre appareil Android
 
 Si vous avez vu un message indiquant que le « niveau de correctif de sécurité Android minimum n’est pas configuré », vous devez installer une mise à jour pour vous assurer que votre appareil reste sécurisé. Un _correctif_ est mis à disposition pour actualiser le logiciel afin de le faire fonctionner correctement et qu’il soit à jour. Votre administrateur informatique vous oblige à installer ce correctif pour vous assurer que vos données d’entreprise sont protégées autant que possible sur votre appareil. L’emplacement du correctif de sécurité dont vous avez besoin varie selon que vous disposez d’un type spécifique d’appareil Samsung ou non.
@@ -43,4 +39,3 @@ Accédez à **Paramètres** > **Mises à jour système** > **Rechercher les nouv
 
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

@@ -14,16 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
-ms.openlocfilehash: 7dfcc0bf8f3da1e600df59927db6e78ec2021e0f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/12/2017
-
-
+ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/03/2017
 ---
-
-
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
 > [!NOTE]
@@ -80,7 +76,8 @@ Si [ProGuard](http://proguard.sourceforge.net/) (ou tout autre mécanisme de ré
 La bibliothèque d’authentification ADAL (Azure Active Directory Authentication Library) peut avoir ses propres restrictions ProGuard. Si votre application intègre la bibliothèque ADAL, vous devez suivre la documentation ADAL concernant ces restrictions.
 
 ### <a name="entry-points"></a>Points d’entrée
-======= La bibliothèque d’authentification Azure Active Directory ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) exige ces autorisations pour effectuer l’authentification répartie. Si ces autorisations ne sont pas accordées à l’application ou qu’elles sont révoquées par l’utilisateur, les flux d’authentification qui requièrent le service broker (l’application Portail d’entreprise) sont désactivés.
+
+La bibliothèque d’authentification Azure Active Directory ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) exige ces autorisations pour effectuer l’authentification répartie. Si ces autorisations ne sont pas accordées à l’application ou qu’elles sont révoquées par l’utilisateur, les flux d’authentification qui requièrent le service broker (l’application Portail d’entreprise) sont désactivés.
 
 Le SDK d’application Intune nécessite la modification du code source d’une application pour permettre l’activation des stratégies de protection des applications Intune. Pour cela, vous devez remplacer les classes de base Android par des classes de base Intune équivalentes, dont les noms portent le préfixe **MAM**. Les classes du SDK résident entre la classe de base Android et la propre version dérivée de cette classe de l’application. Si vous prenez l’exemple d’une activité, vous vous retrouvez avec une hiérarchie d’héritage qui ressemble à ceci : `Activity` > `MAMActivity` > `AppSpecificActivity`.
 
@@ -161,7 +158,7 @@ Le SDK d’application Intune nécessite trois [autorisations système Android](
 
 * `android.permission.USE_CREDENTIALS`
 
-La bibliothèque d’authentification Azure Active Directory ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) exige ces autorisations pour effectuer l’authentification répartie. Si ces autorisations ne sont pas accordées à l’application ou qu’elles sont révoquées par l’utilisateur, les flux d’authentification qui requièrent le service broker (l’application Portail d’entreprise) sont désactivés.
+La bibliothèque d’authentification Azure Active Directory ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) exige ces autorisations pour effectuer l’authentification répartie. Si ces autorisations ne sont pas accordées à l’application ou qu’elles sont révoquées par l’utilisateur, les flux d’authentification qui requièrent le service broker (l’application Portail d’entreprise) sont désactivés.
 
 ## <a name="logging"></a>Journalisation
 
@@ -410,7 +407,7 @@ Les notifications suivantes sont envoyées à l’application et certaines d’e
 
 Tout d’abord, lisez les instructions d’intégration de la bibliothèque ADAL dans le [dépôt ADAL sur GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-android).
 
-Le SDK s’appuie sur la bibliothèque [ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) pour ses scénarios d’[authentification](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/) et de lancement conditionnel, ce qui nécessite que les applications soient configurées avec [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). Les valeurs de configuration sont communiquées au SDK par le biais de métadonnées AndroidManifest.
+Le SDK s’appuie sur la bibliothèque [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) pour ses scénarios d’[authentification](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) et de lancement conditionnel, ce qui nécessite que les applications soient configurées avec [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Les valeurs de configuration sont communiquées au SDK par le biais de métadonnées AndroidManifest.
 
 Pour configurer votre application et mettre en œuvre une authentification approprié, ajoutez le code suivant au nœud de l’application dans AndroidManifest.xml. Certaines de ces configurations sont uniquement nécessaires si votre application utilise la bibliothèque ADAL pour l’authentification en général. Dans ce cas, vous avez besoin des valeurs spécifiques que votre application utilise pour s’inscrire auprès d’AAD. De cette façon, l’utilisateur final n’est pas invité à s’authentifier à deux reprises quand AAD détecte deux valeurs d’inscription distinctes : l’une provenant de l’application et l’autre du SDK.
 
@@ -1181,4 +1178,3 @@ Le SDK Intune respecte le contrat fourni par l’API Android, bien que des condi
 * Utilisez les outils de génération du SDK Android les plus récents.
 
 * Supprimez toutes les bibliothèques inutiles et inutilisées (par exemple, android.support.v4).
-

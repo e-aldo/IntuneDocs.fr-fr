@@ -1,7 +1,7 @@
 ---
-title: "Applications iOS avec stratégies de protection des applications | Préversion Intune Azure"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Cette rubrique décrit ce qui se passe quand votre application iOS est gérée par les stratégies de protection d’application."
+title: "Applications iOS avec stratégies de protection des applications"
+titleSuffix: Intune on Azure
+description: "Cet article décrit ce qui se produit lorsque votre application iOS est gérée par des stratégies de protection d’application."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5e172b940dfae32213c870b29f05f56573192704
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Cette rubrique décrit l’expérience de l’utilisateur des applications avec des stratégies de protection d'application. Les stratégies de protection d'application ne sont appliquées que quand les applications sont utilisées dans le contexte professionnel, par exemple dans le cadre de l’accès aux applications à l’aide de votre compte professionnel ou de l’accès aux fichiers stockés à l’emplacement OneDrive Entreprise de votre société.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Cette rubrique décrit l’expérience de l’utilisateur des applications avec des stratégies de protection d'application. Les stratégies de protection d'application ne sont appliquées que quand les applications sont utilisées dans le contexte professionnel, par exemple dans le cadre de l’accès aux applications à l’aide de votre compte professionnel ou de l’accès aux fichiers stockés à l’emplacement OneDrive Entreprise de votre société.
 ##  <a name="accessing-apps"></a>Accès aux applications
 
 Si l’appareil **n’est pas inscrit dans Intune**, l’utilisateur final est invité à redémarrer l’application quand il l’utilise pour la première fois.  Un redémarrage est nécessaire pour que les stratégies de protection d'application soient appliquées à l’application. La capture d’écran suivante illustre cela avec l’application Skype :
@@ -67,4 +64,3 @@ Sur un appareil iOS, si vous essayez d’ajouter un deuxième compte professionn
 [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](app-protection-enabled-apps-android.md)
 ### <a name="see-also"></a>Voir aussi
 [Créer et déployer des stratégies de protection d’application à l’aide de Microsoft Intune](app-protection-policies.md)
-

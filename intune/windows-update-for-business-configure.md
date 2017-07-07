@@ -1,6 +1,7 @@
 ---
-title: "Configurer les paramètres Windows Update for Business - Intune | Intune Azure en préversion | Microsoft Docs"
-description: "Intune Azure en préversion : découvrez comment configurer les paramètres Windows Update for Business dans Intune pour contrôler les mises à jour des appareils Windows 10."
+title: "Configurer les paramètres Windows Update for Business - Intune"
+titleSuffix: Intune on Azure
+description: "Découvrez comment configurer les paramètres Windows Update for Business dans Intune pour contrôler les mises à jour des appareils Windows 10."
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -13,18 +14,15 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Configurer les paramètres Windows Update for Business avec Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introduction
 Windows en tant que service est la nouvelle façon de fournir des mises à jour pour Windows 10. À partir de Windows 10, les nouvelles mises à jour de fonctionnalités et qualité incluent le contenu de toutes les mises à jour précédentes. Cela signifie que tant que vous avez installé la dernière mise à jour, vous savez que vos appareils Windows 10 sont entièrement à jour. À la différence des versions précédentes de Windows, vous devez maintenant installer la mise à jour complète au lieu d’une partie seulement.
@@ -87,7 +85,7 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
     - **Automatic update behavior (Comportement de mise à jour automatique)** : indiquez comment gérer le comportement de mise à jour automatique pour rechercher, télécharger et installer les mises à jour. Pour plus d’informations, consultez [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Quality update deferral period (days)** (Période de report des mises à jour qualité (jours)) : spécifiez le nombre de jours pendant lesquels les mises à jour qualité sont reportées. Vous pouvez différer la réception de ces mises à jour qualité pour une période allant jusqu’à 30 jours à partir de leur publication.  
 
-      Les mises à jour qualité sont en général des correctifs et des améliorations apportées aux fonctionnalités existantes de Windows. Elles sont généralement publiées le premier mardi de chaque mois, mais il se peut qu’elles le soient à d’autres moments par Microsoft. Vous pouvez définir si et pendant combien de temps vous souhaitez différer la réception des mises à jour qualité après leur disponibilité.
+    Les mises à jour qualité sont en général des correctifs et des améliorations apportées aux fonctionnalités existantes de Windows. Elles sont généralement publiées le premier mardi de chaque mois, mais il se peut qu’elles le soient à d’autres moments par Microsoft. Vous pouvez définir si et pendant combien de temps vous souhaitez différer la réception des mises à jour qualité après leur disponibilité.
     - **Feature update deferral period (days)** (Période de report des mises à jour de fonctionnalités (jours)) : spécifiez le nombre de jours pendant lesquels les mises à jour de fonctionnalités sont reportées. Vous pouvez différer la réception de ces mises à jour de fonctionnalités pour une période allant jusqu’à 180 jours à partir de leur publication.
 
     Les mises à jour de fonctionnalités correspondent généralement à de nouvelles fonctionnalités de Windows. Une fois que vous avez configuré le paramètre **Branche de maintenance** (**CB** ou **CBB**), vous pouvez définir si et pendant combien de temps vous souhaitez différer la réception des mises à jour de fonctionnalités après leur mise à disposition par Microsoft dans Windows Update.
@@ -148,4 +146,3 @@ Vous pouvez suspendre la réception des mises à jour qualité ou de fonctionnal
 > [!IMPORTANT]
 > Lorsque vous exécutez une commande de suspension, les appareils la reçoivent lorsqu’ils consultent à nouveau le service. Il se peut qu’ils installent une mise à jour planifiée avant d’effectuer la vérification auprès du service.
 > En outre, si un appareil cible est désactivé lorsque vous émettez la commande de suspension, lorsque vous l’allumez, il peut télécharger et installer les mises à jour planifiées avant d’effectuer les vérifications avec Intune.
-

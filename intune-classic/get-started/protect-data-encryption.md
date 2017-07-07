@@ -1,5 +1,5 @@
 ---
-title: "Protection des données d’entreprise avec le chiffrement de données | Microsoft Docs"
+title: "Protéger les données d’entreprise avec le chiffrement de données"
 description: "Ce guide peut vous aider à protéger votre entreprise contre la perte de données en imposant un code secret et le chiffrement des données à l’aide d’une stratégie sur les applications mobiles."
 keywords: "chiffrement, code confidentiel, données"
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1cffa0066ffcbb9f0aadcb387cefee1ffe1f47a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Guide de démarrage rapide : Protéger les données d’entreprise avec le chiffrement de données
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,12 +42,11 @@ Ce guide de démarrage rapide est une bonne ressource si vous satisfaites aux co
 Ce guide peut vous aider à protéger votre entreprise contre la perte de données en imposant des codes secrets et le chiffrement des données à l’aide de stratégies sur les applications mobiles que vos employés utilisent pour accéder aux données sensibles, sans nécessiter d’inscription complète auprès d’une solution de gestion d’appareils. Microsoft Intune vous permet de définir des stratégies de gestion des applications mobiles (GAM) sur les applications mobiles Office pour [iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) et [Android](https://products.office.com/mobile/office-mobile-apps-for-android). Cette approche protège les données O365 sans obliger les utilisateurs à inscrire leurs appareils auprès d’une solution de gestion des appareils mobiles, tout en conservant une expérience utilisateur de pointe avec les applications mobiles Office.
 
 ## <a name="how-do-i-do-it"></a>Comment procéder ?
-1.    [Découvrez comment protéger les données d’application](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.    [Se préparer à configurer des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.    [Créer et déployer des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.  [Découvrez comment protéger les données d’application](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.  [Se préparer à configurer des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.  [Créer et déployer des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Informations complémentaires :
-- [Découvrez l’expérience utilisateur final des applications MAM avec Microsoft Intune.]/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [Décidez du mode de préparation des applications pour la gestion des applications mobiles avec Microsoft Intune.]/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Découvrez l’expérience de l’utilisateur final pour des applications avec GAM activé avec Microsoft Intune.](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
+- [Décidez comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune.](/intune/apps-prepare-mobile-application-management)
 - [Consulter la liste des partenaires Microsoft Intune fournissant des applications](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
-

@@ -15,15 +15,12 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 11da0d31a9a00364a6105006c3e75b6bb6f2cb77
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Guide pratique pour créer des profils VPN personnalisés dans Microsoft Intune
 
 ## <a name="create-a-custom-configuration"></a>Créer une configuration personnalisée
@@ -60,7 +57,6 @@ Ce type de stratégie peut être utile lorsque les stratégies VPN Intune standa
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
 Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
-
 
 
 

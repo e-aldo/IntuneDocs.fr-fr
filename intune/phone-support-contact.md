@@ -1,7 +1,7 @@
 ---
 title: "Contacter le support Intune par téléphone"
-titleSuffix: Intune Azure preview
-description: "Préversion d’Intune Azure : numéros de téléphone de l’assistance Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Numéros de téléphone de l’assistance Microsoft Intune."
 keywords: heures de bureau
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e8d284e8bbcf472c4c03e6411902356ee42cd5a5
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a261e01b81e3ad1caa7d8b780a79004dfbbe6ecd
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contacter le support par téléphone pour Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="phone-numbers-and-business-hours"></a>Numéros de téléphone et horaires de bureau
 
@@ -121,4 +118,3 @@ ms.lasthandoff: 05/23/2017
 |Uruguay|24 x 7|Du lundi au vendredi,<br /><br />de 9:00 à 17:00 UYST (UTC -2)|Espagnol&#42;, anglais|000-411-002-7131||
 |Venezuela|24 x 7|Du lundi au vendredi,<br /><br />de 9:00 à 17:00 VET (UTC -4:30)|Espagnol&#42;, anglais|0-800-100-8763||
 &#42; Prise en charge avec interprétation par téléphone.
-

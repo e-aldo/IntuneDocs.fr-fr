@@ -1,5 +1,5 @@
 ---
-title: "Créer et déployer des stratégies GAM | Microsoft Docs"
+title: "Créer et déployer des stratégies de gestion des appareils mobiles"
 description: "Suivez les instructions pas-à-pas de cette rubrique pour créer une stratégie de gestion des applications mobiles."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Créer et déployer des stratégies de protection des applications avec Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,9 +106,9 @@ Quand vous avez fini de créer une stratégie comme décrit dans la procédure p
 ## <a name="line-of-business-lob-apps-optional"></a>Applications métier (facultatif)
 
 À compter de la version Intune 1703, vous pouvez ajouter des applications métier dans Intune de façon générale lors de la création d’une stratégie de protection des applications. Cela vous donne la possibilité de définir des stratégies de protection des applications pour les applications métier à l’aide du SDK GAM sans avoir besoin d’autorisations de déploiement d’application complètes.
-
+/intune/app-sdk-get-started
 > [!TIP]
-> Vous pouvez également ajouter des applications métier dans Intune pendant que vous parcourez le flux de travail du [SDK d’application Intune](/intune-classic/develop/intune-app-sdk-get-started).
+> Vous pouvez également ajouter des applications métier dans Intune pendant que vous parcourez le flux de travail du [SDK d’application Intune](/intune/app-sdk-get-started).
 
 > [!IMPORTANT]
 > Si les utilisateurs disposent uniquement des autorisations spécifiques pour déployer des applications GAM, et non des autorisations de déploiement d’application complètes (ce qui leur permettrait de déployer n’importe quelle application dans Intune), ils ne peuvent pas parcourir le flux de travail du SDK Intune, mais ils peuvent toujours ajouter leurs applications métier par l’intermédiaire du flux de travail de création de stratégie de protection des applications GAM.
@@ -164,8 +161,8 @@ Seuls les utilisateurs en possession de licences Intune sont affectés par la st
 > Si vous utilisez Intune avec Configuration Manager pour gérer vos appareils iOS et Android, la stratégie est appliquée uniquement aux utilisateurs figurant directement dans le groupe que vous avez sélectionné. Les membres des groupes enfants imbriqués dans le groupe que vous avez sélectionné ne sont pas affectés.
 
 Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour plus d'informations, voir :
-* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](/intune/end-user-mam-apps-android)
+* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>Modifier des stratégies existantes
 Vous pouvez modifier une stratégie existante et l’appliquer aux utilisateurs ciblés. Toutefois, quand vous modifiez des stratégies existantes, les utilisateurs déjà connectés aux applications ne voient pas les modifications pendant une période de huit heures.
@@ -219,6 +216,5 @@ Pour afficher la liste complète des paramètres de stratégie pour iOS et Andro
 [Surveiller l’état de la conformité et des utilisateurs](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Voir aussi
-* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](/intune/end-user-mam-apps-android)
+* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](/intune/end-user-mam-apps-ios)

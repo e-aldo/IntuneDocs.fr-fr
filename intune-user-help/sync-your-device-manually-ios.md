@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8b73f1f5c7b8beecdb336aba463f5494c4b99160
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="sync-your-ios-device-manually"></a>Synchroniser votre appareil iOS manuellement
 
 Le téléchargement d’une application à partir du portail d’entreprise peut parfois prendre trop de temps. Si cela vous arrive, vous pouvez tenter de synchroniser manuellement votre appareil. Cela signifie que vous demandez à votre appareil de réessayer d’obtenir les informations dont le téléchargement peut poser problème.
@@ -44,4 +39,3 @@ Le téléchargement d’une application à partir du portail d’entreprise peut
 Une barre de chargement apparaît à l’écran et affiche le chargement jusqu’à ce que la synchronisation soit terminée.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

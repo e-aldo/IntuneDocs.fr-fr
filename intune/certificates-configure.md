@@ -1,12 +1,12 @@
 ---
-title: Guide pratique pour configurer des certificats avec Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Découvrez comment utiliser Intune pour créer et attribuer des certificats qui vous aident à sécuriser les connexions Wi-Fi, VPN et autres."
+title: Guide pratique pour configurer des certificats avec Intune
+titleSuffix: Intune on Azure
+description: "Découvrez comment utiliser Intune pour créer et attribuer des certificats qui vous aident à sécuriser les connexions Wi-Fi, VPN et autres."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81c7e04d4b4cc7599b63917e5507775b38b65ba7
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Guide pratique pour configurer des certificats dans Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Quand vous donnez un accès à des utilisateurs aux ressources d’entreprise par le biais de profils VPN, Wi-Fi ou de messagerie, vous pouvez authentifier ces connexions à l’aide de certificats. L’utilisation de certificats évite à l’utilisateur d’avoir à saisir ses nom d’utilisateur et mot de passe pour authentifier les connexions.
 
@@ -56,8 +53,8 @@ Chacun de ces types de certificats est associé à sa propre configuration requi
 
     Vous pouvez seulement utiliser un profil de certificat SCEP avec ces plateformes :
 
--     macOS 10.9 et versions ultérieures
--     Windows Phone 8.1 et versions ultérieures
+-   macOS 10.9 et versions ultérieures
+-   Windows Phone 8.1 et versions ultérieures
 
 Vous devez créer un profil distinct pour chaque plateforme d’appareil. Quand vous créez le profil, associez-le au profil de certificat racine approuvé que vous avez déjà créé.
 
@@ -88,7 +85,7 @@ Vous devez créer un profil de certificat approuvé pour pouvoir créer un profi
 ### <a name="to-create-a-trusted-certificate-profile"></a>Pour créer un profil de certificat approuvé
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
+2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
@@ -128,4 +125,3 @@ Après avoir créé un profil de certificat approuvé, créez des profils de cer
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations générales sur la façon d’attribuer des profils d’appareils, consultez [Guide pratique pour attribuer des profils d’appareils](device-profile-assign.md).
-

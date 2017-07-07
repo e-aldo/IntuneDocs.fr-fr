@@ -1,7 +1,7 @@
 ---
 title: "Guide pratique pour créer une stratégie de conformité pour Android"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Apprenez à créer une stratégie de conformité pour les appareils Android."
+titleSuffix: Intune on Azure
+description: "Apprenez à créer une stratégie de conformité pour les appareils Android."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,21 +15,18 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 08d503fad2304b25e6feb7f41cf0b93546dd26fd
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Android dans Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Android dans le portail Intune Azure en préversion
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Des stratégies de conformité des appareils sont créées pour chaque plateforme à partir du portail Intune Azure en préversion. 
+Des stratégies de conformité des appareils sont créées pour chaque plateforme à partir du portail Intune Azure. 
 
 - Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](device-compliance.md).
 - Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
@@ -134,4 +131,3 @@ Le tableau ci-dessous décrit la façon dont les paramètres non conformes sont 
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

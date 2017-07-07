@@ -1,6 +1,6 @@
 ---
 title: "Surveiller la conformité des accès conditionnels pour Exchange local et Exchange Online"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Surveiller la conformité des accès conditionnels pour Exchange local et Exchange Online via le portail Intune Azure"
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Surveiller la conformité des accès conditionnels pour Exchange local et Exchange Online dans la version préliminaire d’Intune Azure
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Surveiller la conformité des accès conditionnels pour Exchange local et Exchange Online dans Intune
 
 À compter d’Intune version 1704, les administrateurs peuvent voir les informations de rapport liées aux enregistrements d’appareils Exchange ActiveSync qui sont synchronisés avec Intune via le Connecteur Exchange local ou le connecteur service à service Intune (connecteur Exchange Online). Les rapports de conformité de l’accès conditionnel offrent un résumé des appareils avec différents états de synchronisation :
 
@@ -70,4 +67,3 @@ Dans le panneau de détails de l’appareil, vous pouvez voir plus d’informati
 -   **Configuration de l’appareil :** affiche tous les détails de configuration de l’appareil.
 
 -   **Accès à Exchange :** ici, vous pouvez en savoir plus sur l’état de l’appareil après l’application des stratégies d’accès conditionnel.
-

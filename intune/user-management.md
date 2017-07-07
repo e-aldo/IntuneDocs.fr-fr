@@ -1,7 +1,7 @@
 ---
 title: "Qu’est-ce que la charge de travail Gestion des utilisateurs ?"
-titleSuffix: Intune Azure preview
-description: "Version préliminaire d’Intune Azure : découvrez comment afficher et gérer les utilisateurs à l’aide de Microsoft Intune et Azure."
+titleSuffix: Intune on Azure
+description: "Découvrez comment afficher et gérer les utilisateurs à l’aide de Microsoft Intune et d’Azure."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,19 +14,16 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 29c8f436d611e590ef1304d221e27da0ceef2450
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-user-management"></a>Qu’est-ce que la gestion des utilisateurs ?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Si vous débutez avec Intune dans le portail Azure, gardez à l’esprit que vous ne créez plus de groupes pour Intune. Intune utilise les groupes Azure AD de la même façon que de nombreuses autres applications que vous utilisez.
 
@@ -45,4 +42,3 @@ Pour gérer des groupes dans le [portail Azure](https://portal.azure.com), reche
 ## <a name="next-step"></a>Étape suivante
 
 [Prise en main des groupes](groups-get-started.md)
-

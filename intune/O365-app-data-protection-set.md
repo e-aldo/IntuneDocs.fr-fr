@@ -1,7 +1,7 @@
 ---
-title: "Définir la gestion des données de base sur des applications Office 365 - Préversion Intune Azure"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Documentation de prise en charge de l’Assistant Gestion des applications Office 365."
+title: "Définir la gestion des données de base sur des applications Office 365 dans Intune"
+titleSuffix: Intune on Azure
+description: "Documentation de prise en charge de l’Assistant Gestion des applications Office 365."
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Quelle sera l'expérience de protection de base de vos utilisateurs sur des applications Office 365 gérées ?
 
 L'Assistant **Gestion des applications Office 365** crée une stratégie de protection des applications pour chaque plateforme d'appareil.
@@ -129,9 +125,8 @@ Sur Android, pour les applications associées à une stratégie Intune GAM, les 
 Vous pouvez toujours modifier ces paramètres de stratégie pour répondre aux besoins de votre organisation.
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>Comment puis-je afficher et modifier les stratégies créées par l’Assistant ?
-Pour afficher ou mettre à jour ces stratégies ou des stratégies que vous créez dans la préversion d’Intune Azure, choisissez, dans le tableau de bord, **Gérer les applications** > **Stratégies de protection des applications**. La liste des stratégies s’ouvre à droite. Choisissez la stratégie que vous souhaitez afficher pour afficher et modifier les paramètres. <br/>
+Pour afficher ou mettre à jour ces stratégies ou des stratégies que vous créez dans le portail Intune Azure, choisissez, dans le tableau de bord, **Gérer les applications** > **Stratégies de protection des applications**. La liste des stratégies s’ouvre à droite. Choisissez la stratégie que vous souhaitez afficher pour afficher et modifier les paramètres. <br/>
 ![Image du chemin de l’interface utilisateur pour afficher les stratégies](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les [stratégies de protection des applications](https://docs.microsoft.comapp-protection-policy.md).
-

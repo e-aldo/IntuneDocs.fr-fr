@@ -1,7 +1,7 @@
 ---
-title: "Profils de configuration d’applications | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Intune vous offre les outils pour affecter de façon proactive un nouveau profil de configuration aux appareils qui disposent d’applications arrivant prochainement à expiration."
+title: "Profils de configuration d’applications"
+titleSuffix: Intune on Azure
+description: "Intune vous offre les outils pour affecter de façon proactive un nouveau profil de configuration pour les appareils qui disposent d’applications arrivant prochainement à expiration."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 966c097280ebebac68749e71c20381ee816360da
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Utiliser les profils de configuration iOS mobile pour empêcher l’expiration de vos applications
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introduction
 
@@ -42,7 +40,7 @@ Après l’expiration du certificat, vous devez à nouveau signer l’applicatio
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Comment créer un profil de configuration d’application mobile iOS
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
+2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
 1.  Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Profils de configuration iOS**.
 2.  Dans le panneau de la liste des profils, sélectionnez **Créer un profil**.
@@ -55,4 +53,3 @@ Après l’expiration du certificat, vous devez à nouveau signer l’applicatio
 ## <a name="next-steps"></a>Étapes suivantes
 
 Affectez le profil aux appareils iOS requis. Pour plus d’informations, suivez les étapes de [Guide pratique pour attribuer des profils d’appareil](device-profile-assign.md).
-

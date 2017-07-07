@@ -1,12 +1,12 @@
 ---
-title: "Gérer le transfert de données entre des applications iOS | Préversion Intune Azure"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Cette rubrique explique comment utiliser la fonctionnalité iOS Open In et les stratégies de gestion des applications mobiles pour gérer les transferts de données entre applications."
+title: "Gérer le transfert de données entre applications iOS"
+titleSuffix: Intune on Azure
+description: "Cette rubrique explique comment utiliser la fonctionnalité iOS Open In et les stratégies de gestion des applications mobiles pour gérer les transferts de données entre applications."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Guide pratique pour gérer le transfert de données entre applications iOS
 ## <a name="manage-ios-apps"></a>Gérer les applications iOS
 La protection des données de votre entreprise nécessite notamment de vérifier que les transferts de fichiers sont limités aux applications que vous gérez.  Vous pouvez gérer les applications iOS comme suit :
@@ -34,9 +31,9 @@ La protection des données de votre entreprise nécessite notamment de vérifier
 
 La fonctionnalité **Ouvrir dans la gestion** pour les appareils iOS peut limiter les transferts de fichiers entre des applications déployées sur le **canal MDM**. Les restrictions de gestion de l’ouverture sont définies dans les paramètres de configuration et déployées à l’aide de votre solution de gestion des appareils mobiles (MDM).  Quand l’utilisateur installe l’application déployée, les restrictions que vous avez définies sont appliquées.
 ##  <a name="using-app-protection-with-ios-apps"></a>Utilisation de la protection des applications avec des applications iOS
-Les stratégies de protection des applications peuvent être utilisées avec la fonctionnalité **d'ouverture dans la gestion** d’iOS pour protéger les données d’entreprise des façons suivantes :
+Vous pouvez utiliser les stratégies de protection des applications avec la fonctionnalité **Open in management** d’iOS pour protéger les données d’entreprise des façons suivantes :
 
--   **Appareils appartenant à l’entreprise non gérés par une solution MDM :** vous pouvez définir les paramètres de la stratégie de protection des applications pour **autoriser l’application à transférer des données uniquement vers des applications gérées**. L’utilisateur final ne peut pas ouvrir le fichier protégé dans une application non gérée par une stratégie.
+-   **Appareils appartenant à l’entreprise non gérés par une solution MDM :** vous pouvez définir les paramètres de la stratégie de protection des applications pour **autoriser l’application à transférer des données uniquement vers des applications gérées par une stratégie**. Le comportement Open In dans une application gérée par stratégie présente uniquement d’autres applications gérées par stratégie en tant qu’options de partage. Si un utilisateur tente d’envoyer un fichier protégé par stratégie en tant que pièce jointe de OneDrive vers la messagerie native, ce fichier sera illisible.
 
 -   **Appareils gérés par Intune :** pour les appareils inscrits dans Intune, le transfert de données entre les applications avec les stratégies de protection des applications et les autres applications iOS gérées déployées par le biais d'Intune est autorisé automatiquement. Pour permettre le transfert de données entre les applications avec les stratégies protection des applications, activez le paramètre **Autoriser l’application à transférer des données uniquement vers des applications gérées**. Vous pouvez utiliser la fonctionnalité **Ouvrir dans la gestion** pour contrôler le transfert de données entre les applications qui sont déployées via Intune.   
 
@@ -108,4 +105,3 @@ Tout d’abord, [créez et attribuez une stratégie de protection des applicatio
 
 ### <a name="see-also"></a>Voir aussi
 [Qu’est ce qu’une stratégie de protection d’application Intune ?](app-protection-policy.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "Conformité de l’appareil"
-titleSuffix: Intune Azure preview
-description: "Version préliminaire d&quot;Intune Azure : utilisez cette rubrique pour en savoir plus sur la conformité dans Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "Utilisez cette rubrique pour en savoir plus sur la conformité dans Microsoft Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,15 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="what-is-device-compliance-in-intune"></a>Quelle est la conformité des appareils dans Intune ?
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Quelle est la conformité des appareils dans la version préliminaire d'Intune Azure ?
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Les stratégies de conformité des appareils dans Intune définissent les règles et les paramètres qu’un appareil doit respecter pour être considéré comme conforme par les stratégies d’accès conditionnel EMS et Intune. Vous pouvez également utiliser des stratégies de conformité d’appareil pour surveiller et corriger les problèmes de conformité avec les appareils. 
 
@@ -79,7 +76,7 @@ Quand vous utilisez des stratégies de conformité indépendamment, les appareil
 
 Vous déployez les stratégies de conformité sur les utilisateurs. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée. Si vous voulez en savoir plus sur le temps nécessaire pour que les appareils mobiles reçoivent une stratégie une fois celle-ci déployée, consultez Gérer des paramètres et des fonctionnalités sur vos appareils.
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Console d’administration Intune classique et portail en préversion Azure Intune
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Console d’administration Intune classique et Intune sur le portail Azure
 
 Si vous utilisiez la console d’administration Intune classique, notez les différences suivantes pour vous aider à effectuer la transition vers le nouveau processus de stratégie de conformité d’appareil dans le portail Azure :
 
@@ -89,7 +86,7 @@ Si vous utilisiez la console d’administration Intune classique, notez les diff
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migration depuis la console classique Intune vers le portail en préversion Azure Intune
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>Migration depuis la console classique Intune vers le portail Azure
 
 Les stratégies de conformité d’appareils créées dans la [console Intune classique](https://manage.microsoft.com) n’apparaissent pas dans le nouveau [portail Intune](https://portal.azure.com). Toutefois, elles continuent de cibler des utilisateurs et peuvent être gérées via la console classique Intune.
 
@@ -103,4 +100,3 @@ Si vous souhaitez tirer parti des nouvelles fonctionnalités liées à la confor
 <!---### See also
 
 Conditional access--->
-

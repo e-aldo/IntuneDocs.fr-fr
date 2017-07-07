@@ -1,7 +1,7 @@
 ---
 title: "Guide pratique pour effacer uniquement les données d’entreprise des applications"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Apprenez à effectuer une réinitialisation sélective des applications avec Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Apprenez à effectuer une réinitialisation sélective des applications avec Microsoft Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Guide pratique pour effacer uniquement les données d’entreprise des applications gérées par Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Lorsqu'un appareil est perdu ou volé, ou si l'employé quitte votre entreprise, vous devez vous assurer que les données de l'application d’entreprise sont supprimées de l'appareil. Mais vous ne voulez peut-être pas supprimer les données personnelles de l’appareil, en particulier si cet appareil appartient à un employé.
 
@@ -38,7 +36,7 @@ Pour supprimer des données d’application d’entreprise de manière sélectiv
 
 1.  Connectez-vous au [portail Azure](https://portal.azure.com).
 
-2.  Choisissez **Plus de services**, saisissez **Intune** dans la zone de texte de filtre, puis sélectionnez **Intune**. Le panneau de la préversion d’Intune s’ouvre. Choisissez le panneau **Gérer les applications**.
+2.  Choisissez **Plus de services**, saisissez **Intune** dans la zone de texte de filtre, puis sélectionnez **Intune**. Le panneau d’Intune s’ouvre. Choisissez le panneau **Gérer les applications**.
 
     ![Capture d'écran du panneau Nouvelle demande de réinitialisation](./media/intune-azure-preview-blade.png)
 

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-when-you-create-a-work-profile"></a>Ce qui se passe quand vous créez un profil professionnel
 
 Un profil professionnel est un profil que vous configurez sur votre appareil pour séparer vos e-mails, applications et données professionnels ou scolaires de vos données personnelles.
@@ -49,4 +44,3 @@ Quand vous créez un profil professionnel :
 Pour plus d’informations sur la création d’un profil professionnel, consultez [Créer un profil professionnel et inscrire votre appareil](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

@@ -1,5 +1,5 @@
 ---
-title: "Protéger l’accès à la messagerie et à Office 365 | Microsoft Docs"
+title: "Protéger l’accès à la messagerie et à Office 365"
 description: "Cette rubrique décrit comment utiliser l’accès conditionnel pour autoriser uniquement les appareils compatibles à accéder à la messagerie et aux données de votre entreprise sur SharePoint Online et d’autres services."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Protéger l’accès à la messagerie, à Office 365 et à d’autres services avec Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -51,7 +48,7 @@ Les **licences Azure AD Premium** peuvent être achetées en tant que service au
 
 - Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
-En outre, assurez-vous que les utilisateurs pour lesquels vous envisagez d’appliquer des stratégies d’accès conditionnel [disposent de licences Azure AD Premium ou EMS](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+En outre, assurez-vous que les utilisateurs pour lesquels vous envisagez d’appliquer des stratégies d’accès conditionnel [disposent de licences Azure AD Premium ou EMS](/intune/licenses-assign).
 
 ### <a name="device-compliance-settings"></a>Paramètres de conformité des appareils
 
@@ -83,4 +80,3 @@ Contrairement à d’autres stratégies Intune, vous ne déployez pas de straté
   - [Créer une stratégie d’accès conditionnel pour SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel pour Skype Entreprise Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Créer une stratégie d’accès conditionnel pour Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

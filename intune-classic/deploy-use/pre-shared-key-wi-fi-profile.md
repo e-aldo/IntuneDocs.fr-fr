@@ -1,5 +1,5 @@
 ---
-title: "Wi-Fi à l’aide d’une PSK (clé prépartagée) | Microsoft Docs"
+title: "Wi-Fi avec une clé prépartagée"
 description: "Utilisez une configuration personnalisée pour créer un profil Wi-Fi avec une clé prépartagée."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6845097b768e67c7fbc6ff16bf41f27982c4b33e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 7f3432f914c2f4a76d7a9303924d106b270220a1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utiliser une stratégie personnalisée pour créer un profil Wi-Fi avec une clé prépartagée
 
@@ -30,24 +27,24 @@ ms.lasthandoff: 05/23/2017
 Voici comment utiliser la **configuration personnalisée** d’Intune pour créer un profil Wi-Fi avec une clé prépartagée. Cette rubrique comprend également un exemple de création d’un profil Wi-Fi basé sur EAP.
 
 > [!NOTE]
--    Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
+-   Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
 - Pour Android, vous avez également la possibilité d’utiliser ce [générateur de clés prépartagées Android](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fourni par Johnathon Biersack.
--    Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
+-   Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
 -  Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Vous pouvez également utiliser le [générateur de configuration mobile de clés prépartagées pour iOS](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fourni par Johnathon Biersack.
 
 
-1.    Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Configuration personnalisée** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez une stratégie.
+1.  Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Configuration personnalisée** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez une stratégie.
 
-2.    Fournissez un nom et une description.
-3.    Ajoutez un paramètre OMA-URI :
+2.  Fournissez un nom et une description.
+3.  Ajoutez un paramètre OMA-URI :
 
-   a.    Entrez un nom pour ce paramètre de réseau Wi-Fi.
+   a.   Entrez un nom pour ce paramètre de réseau Wi-Fi.
 
-   b.    Entrez une description du paramètre OMA-URI ou laissez-la vide.
+   b.   Entrez une description du paramètre OMA-URI ou laissez-la vide.
 
-   c.    **Type de données**: définissez sur « String(XML) »
+   c.   **Type de données**: définissez sur « String(XML) »
 
-   d.    **OMA-URI** :
+   d.   **OMA-URI** :
 
     - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -221,4 +218,3 @@ Quand vous sélectionnez une stratégie déployée, vous pouvez afficher d’aut
 
 ### <a name="see-also"></a>Voir aussi
 [Connexions Wi-Fi dans Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
-

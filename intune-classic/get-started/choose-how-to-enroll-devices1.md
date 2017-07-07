@@ -14,15 +14,12 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7d1e5fb629aaac768aefabad90caf98fc1cee37a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-enroll-mobile-devices"></a>Choisir comment inscrire des appareils mobiles
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,4 +36,3 @@ Vos réponses aux questions suivantes vous permettront de déterminer la méthod
 - **Appareils personnels** : inscription de type « BYOD » (Apportez votre propre appareil). Les utilisateurs peuvent installer sur leur appareil l’application Portail d’entreprise Intune, puis inscrire leur appareil pour pouvoir accéder aux ressources d’entreprise telles que la messagerie, les applications d’entreprise, les données d’entreprise et le support.  
 
 - **Appareils d’entreprise** : les appareils d’entreprise peuvent être inscrits de différentes façons, selon les besoins de l’entreprise et les types d’appareils gérés.
-

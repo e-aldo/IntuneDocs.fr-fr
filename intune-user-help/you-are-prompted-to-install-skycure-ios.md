@@ -11,26 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ca6072ce66482f5986d37b2f61a123587ad8313f
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-skycure-on-your-ios-device"></a>Vous devez installer Skycure sur votre appareil iOS
 
 Pour pouvoir accéder à vos ressources de travail, votre administrateur informatique vous demande d’installer l’application Skycure, qui vous aide à protéger votre appareil en détectant les menaces à la sécurité potentielles. Vous pouvez voir différentes invites sur votre appareil, suivant la façon dont votre administrateur informatique a configuré Skycure.
 
 **Opérations à effectuer :**
 
-1.    Si vous voyez apparaître l’invite suivante, appuyez sur **Installer** pour autoriser l’installation Skycure sur votre appareil.
+1.  Si vous voyez apparaître l’invite suivante, appuyez sur **Installer** pour autoriser l’installation Skycure sur votre appareil.
 
   ![Appuyez sur Installer pour installer Skycure](./media/ios-mtd-install-app-request.png)
 
@@ -57,4 +53,3 @@ Si l’application Skycure détecte une menace à la sécurité sur votre appar
 **Si l’installation ne fonctionne pas**
 
 Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Dans ce cas, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

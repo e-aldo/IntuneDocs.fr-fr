@@ -1,7 +1,7 @@
 ---
 title: "Guide pratique pour créer une stratégie de conformité pour iOS"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : apprenez à créer une stratégie de conformité pour les appareils iOS."
+titleSuffix: Intune on Azure
+description: "Apprenez à créer une stratégie de conformité pour les appareils iOS."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 423c6058c8a2803e62a90f309f4b9c9ad62f9ede
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils iOS dans Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune-azure-preview"></a>Guide pratique pour créer une stratégie de conformité pour des appareils iOS dans la préversion d’Intune Azure
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Des stratégies de conformité sont créées pour chaque plateforme.  Vous pouvez créer une stratégie de conformité dans le portail Azure. Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](device-compliance.md). Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
 
@@ -124,4 +121,3 @@ Pour plus d’informations sur les profils de messagerie, consultez [Configurer 
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

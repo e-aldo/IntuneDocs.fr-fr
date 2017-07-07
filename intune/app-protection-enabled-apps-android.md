@@ -1,7 +1,7 @@
 ---
 title: "Applications Android avec stratégies de protection des applications"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Cette rubrique explique ce qui se produit lorsque votre application Android est gérée par des stratégies de protection d’application."
+titleSuffix: Intune on Azure
+description: "Cet article décrit ce qui se produit lorsque votre application Android est gérée par des stratégies de protection d’application."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c1704e5e63be434eaacaeec6e575640310ce74b3
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Cette rubrique décrit l’expérience de l’utilisateur des applications avec des stratégies de protection d'application. Les stratégies de protection d'application ne sont appliquées que quand les applications sont utilisées dans le contexte professionnel, par exemple dans le cadre de l’accès aux applications à l’aide de votre compte professionnel ou de l’accès aux fichiers stockés à l’emplacement OneDrive Entreprise de votre société.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Cette rubrique décrit l’expérience de l’utilisateur des applications avec des stratégies de protection d'application. Les stratégies de protection d'application ne sont appliquées que quand les applications sont utilisées dans le contexte professionnel, par exemple dans le cadre de l’accès aux applications à l’aide de votre compte professionnel ou de l’accès aux fichiers stockés à l’emplacement OneDrive Entreprise de votre société.
 ##  <a name="accessing-apps"></a>Accès aux applications
 
 L’application Portail d’entreprise est obligatoire pour toutes les applications associées aux stratégies de protection d’application sur les appareils Android.
@@ -84,4 +81,3 @@ Les types de fichiers suivants sont pris en charge :
 
 ### <a name="see-also"></a>Voir aussi
 [Créer et déployer des stratégies de protection d’application à l’aide de Microsoft Intune](app-protection-policies.md)
-

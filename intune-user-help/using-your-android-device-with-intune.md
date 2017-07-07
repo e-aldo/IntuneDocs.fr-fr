@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: c3f1d42d5998e70982bc279ef99560c486412daf
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="using-your-android-device-with-intune"></a>Utilisation de votre appareil Android avec Intune
 
 Vous pouvez effectuer un certain nombre d’opérations avec Intune qui faciliteront votre travail. Voici la liste des opérations les plus courantes que votre entreprise peut vous demander d’effectuer.
@@ -56,4 +51,3 @@ Intune prend actuellement en charge Android 4.0 et versions ultérieures. Cela 
 - [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Que se passe-t-il si vous réinitialisez votre appareil Android à l’aide de l’application Portail d’entreprise ?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
-

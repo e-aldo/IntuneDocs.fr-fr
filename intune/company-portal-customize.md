@@ -1,5 +1,5 @@
 ---
-title: Personnaliser le portail d&quot;entreprise
+title: Personnaliser le portail d'entreprise
 description: "Le portail d’entreprise Intune permet aux utilisateurs d’effectuer des tâches courantes comme inscrire des appareils, installer des applications et trouver des informations concernant le service informatique."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e54f1a2ab0e62ab3ffcbf6fa1ae6f974c5f18717
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="customize-the-company-portal"></a>Personnaliser le portail d'entreprise
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -85,4 +82,3 @@ Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de
 
 
 Après avoir enregistré vos modifications, vous pouvez utiliser les liens proposés au bas de la page **Portail d’entreprise** de la console d’administration pour afficher le site web du Portail d’entreprise. Ces liens ne peuvent pas être modifiés. Lorsqu’un utilisateur se connecte, ces liens présentent vos abonnements dans le Portail d’entreprise.
-

@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows 10 dans Intune ?
 
 Après avoir installé l’application Portail d’entreprise et inscrit avec celle-ci votre appareil Windows 10 Entreprise ou Professionnel dans Intune, vous pouvez utiliser l’application Portail d’entreprise pour :
@@ -57,4 +53,3 @@ Lorsque vous ajoutez un ordinateur :
 -   Votre administrateur informatique peut appliquer des stratégies sur l’ordinateur. Par exemple, il peut vous être demandé de définir un mot de passe ou un code confidentiel sur l’ordinateur. Votre administrateur informatique peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’ordinateur ou supprimer toutes les données du disque dur si vous dépassez le nombre maximal autorisé.
 
 Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
-

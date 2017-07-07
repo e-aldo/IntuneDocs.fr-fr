@@ -1,5 +1,5 @@
 ---
-title: "Analyser les stratégies de gestion des applications mobiles avec Microsoft Intune | Microsoft Docs"
+title: "Analyser les stratégies de gestion des applications mobiles avec Microsoft Intune"
 description: "Découvrez à combien d’utilisateurs s’applique la stratégie et explorez pour accéder à plus d’informations."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Surveiller les stratégies de protection des applications avec Microsoft Intune
 Vous pouvez surveiller l’état de conformité des stratégies de protection des applications que vous avez appliquées aux utilisateurs. Vous pouvez trouver des informations sur les utilisateurs concernés par les stratégies de protection des applications, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
 
@@ -134,6 +131,5 @@ Suivez ces étapes pour générer le rapport de protection des applications :
 ## <a name="see-also"></a>Voir aussi
 [Gérer les transferts de données entre applications iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](/intune/end-user-mam-apps-android)
+* [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](/intune/end-user-mam-apps-ios)

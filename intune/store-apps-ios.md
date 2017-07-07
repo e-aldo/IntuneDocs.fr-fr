@@ -1,7 +1,7 @@
 ---
-title: "Guide pratique pour ajouter des applications de l’App Store iOS à Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Découvrez comment ajouter des applications de l’App Store iOS à Intune."
+title: "Guide pratique d’ajout d’applications de la boutique d’applications iOS à Intune"
+titleSuffix: Intune on Azure
+description: "Découvrez comment ajouter des applications de l’App Store iOS à Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d6da2bf1ebab609b8e9be4bec998d2f081600b
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 84c5b7c2d849fb39a9466d5b92eb4f2a4a411808
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications de l’App Store iOS à Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -63,4 +61,3 @@ Vous pouvez uniquement affecter des applications à l’aide de cette méthode s
 3. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
 
 L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
-

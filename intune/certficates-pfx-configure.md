@@ -1,12 +1,12 @@
 ---
 title: "Configurer et gérer les certificats PKCS avec Intune"
-titleSuffix: Intune Azure preview
-description: "Intune Azure en version préliminaire : découvrez comment configurer votre infrastructure avant de créer et affecter des certificats PKCS avec Intune."
+titleSuffix: Intune on Azure
+description: "Découvrez comment configurer votre infrastructure avant de créer et affecter des certificats PKCS avec Intune."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurer et gérer les certificats PKCS avec Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cette rubrique vous explique comment configurer votre infrastructure, puis comment créer et affecter des profils de certificat PKCS avec Intune.
 
@@ -118,7 +115,7 @@ Au cours de cette étape, vous allez :
 ### <a name="to-enable-support-for-the-certificate-connector"></a>Pour activer la prise en charge de Certificate Connector
 
 1.  Connectez-vous au portail Azure.
-2.  Choisissez **Plus de services** > **Autres** > **Intune**.
+2.  Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 3.  Dans le panneau **Intune**, choisissez **Configurer des appareils**.
 2.  Dans le panneau **Configuration de l’appareil**, choisissez **Configuration** > **Autorité de certification**.
 2.  Sous **Étape 1**, choisissez **Activer**.
@@ -190,10 +187,11 @@ Dans le portail Azure, sélectionnez la charge de travail **Configurer des appar
         - **Nom commun**
         - **Nom commun (adresse e-mail incluse)**
         - **Nom commun comme adresse e-mail**
-    - **Autre nom de l’objet** : spécifiez comment Intune crée automatiquement les valeurs pour l’autre nom de l’objet dans la demande de certificat. Par exemple, si vous avez sélectionné un type de certificat utilisateur, vous pouvez inclure le nom d'utilisateur principal (UPN) dans l'autre nom de l'objet. Si le certificat client est utilisé pour l'authentification sur un serveur de stratégie réseau, l'autre nom de l'objet doit être défini sur le nom d'utilisateur principal.
+    - **Autre nom de l’objet** : spécifiez comment Intune crée automatiquement les valeurs pour l’autre nom de l’objet dans la demande de certificat. Par exemple, si vous avez sélectionné un type de certificat utilisateur, vous pouvez inclure le nom d'utilisateur principal (UPN) dans l'autre nom de l'objet. Si le certificat client est utilisé pour l'authentification sur un serveur de stratégie réseau, l'autre nom de l'objet doit être défini sur le nom d'utilisateur principal. 
+    Vous pouvez également sélectionner **Attribut Azure AD personnalisé**. Lorsque vous sélectionnez cette option, un autre champ de liste déroulante s’affiche. À partir du champ de liste déroulante **Attribut Azure AD personnalisé**, une option est présente : **Service**. Lorsque vous sélectionnez cette option, si le service n’est pas identifié dans Azure AD, le certificat n’est pas émis. Pour résoudre ce problème, identifiez le service et enregistrez les modifications. Lors du prochain archivage de l’appareil, le problème est résolu et le certificat est émis. ASN.1 est la notation utilisée pour ce champ. 
     - **Utilisation de la clé étendue** (Android) : choisissez **Ajouter** pour ajouter des valeurs pour le rôle prévu du certificat. Dans la plupart des cas, le certificat demande une **Authentification client** afin que l'utilisateur ou l'appareil puisse être authentifié sur un serveur. Toutefois, vous pouvez ajouter d'autres utilisations de la clé en fonction de vos besoins. 
     - **Certificat racine** (Android) : choisissez un profil de certificat d’autorité de certification racine que vous avez précédemment configuré et attribué à l’utilisateur ou à l’appareil. Ce certificat d'autorité de certification doit être le certificat racine de l'autorité de certification qui émet le certificat que vous configurez dans ce profil de certificat. Il s’agit du profil de certificat approuvé que vous avez créé précédemment.
-8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
+8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et cliquez sur **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
 
@@ -208,4 +206,3 @@ Considérez les éléments suivants avant d’attribuer des profils de certifica
 - Même si vous affectez chaque profil séparément, vous devez également affecter l’autorité de certification racine approuvée et le profil PKCS. Dans le cas contraire, la stratégie de certificat PKCS échoue.
 
 Pour plus d’informations sur la façon d’affecter des profils, consultez [Guide pratique pour attribuer des profils d’appareils](device-profile-assign.md).
-

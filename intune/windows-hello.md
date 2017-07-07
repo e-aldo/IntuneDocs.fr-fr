@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour utiliser Windows Hello Entreprise
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Apprenez à créer une stratégie permettant de contrôler l’utilisation de Windows Hello Entreprise sur les appareils gérés."
+titleSuffix: Intune on Azure
+description: "Apprenez à créer une stratégie permettant de contrôler l’utilisation de Windows Hello Entreprise sur les appareils gérés."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,19 +15,16 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d375a40283a5f3c1e9b7302d659739d4ca3d508
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0ef9e70dc918b485f893cf3193f7e76f6084a896
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-windows-hello-for-business"></a>Utilisation de Windows Hello Entreprise
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune s’intègre à Windows Hello Entreprise (anciennement Microsoft Passport for Work), autre méthode de connexion qui utilise Active Directory ou un compte Azure Active Directory pour remplacer un mot de passe, une carte à puce ou une carte à puce virtuelle.
 
@@ -100,4 +97,3 @@ Pour garantir la résolution des conflits de stratégie et l’application de la
 
 ## <a name="further-information"></a>Informations supplémentaires
 Pour plus d’informations sur Microsoft Passport, consultez [le guide](https://technet.microsoft.com/library/mt589441.aspx) dans la documentation de Windows 10.
-

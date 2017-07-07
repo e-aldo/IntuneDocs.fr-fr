@@ -1,38 +1,36 @@
 ---
-title: Inscrire des appareils - Gestionnaire d&quot;inscription d&quot;appareil
-titleSuffix: Intune Azure preview
-description: "Version préliminaire d’Intune Azure : utilisez le compte de gestionnaire d’inscription d’appareil pour inscrire des appareils dans Intune. "
+title: Inscrire des appareils - Gestionnaire d'inscription d'appareil
+titleSuffix: Intune on Azure
+description: "Utilisez le compte de gestionnaire d’inscription d’appareil pour inscrire des appareils dans Intune. \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: aded0826c2628e4dc72859387fbe4a76d683db9e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscrire des appareils avec le gestionnaire d’inscription d’appareil
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du *gestionnaire d’inscription d’appareil* est un compte d’utilisateur spécial qui peut inscrire jusqu’à 1 000 appareils. Vous ajoutez des utilisateurs existants au compte de gestionnaire d’inscription d’appareil afin qu’ils puissent bénéficier des fonctionnalités associées. Chaque appareil inscrit utilise une seule licence. Nous vous recommandons d’utiliser des appareils inscrits par le biais de ce compte comme appareils partagés plutôt que comme appareils personnels (« BYOD »).  
 
 Les utilisateurs doivent figurer dans le portail Azure pour être ajoutés comme gestionnaires d’inscription d’appareil. Pour une sécurité optimale, l’utilisateur du gestionnaire d’inscription d’appareil ne doit pas être également un administrateur Intune.
 
 >[!NOTE]
->La méthode d’inscription DEM ne peut pas être utilisée avec ces autres méthodes d’inscription : [Apple Configurator avec l’Assistant Configuration](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator avec l’inscription directe](apple-configurator-direct-enroll-ios.md) ou le [Programme d’inscription des appareils](device-enrollment-program-enroll-ios.md). 
+>La méthode d’inscription DEM ne peut pas être utilisée avec ces autres méthodes d’inscription : [Apple Configurator avec l’Assistant Configuration](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator avec l’inscription directe](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) ou le [Programme d’inscription des appareils (DEP)](device-enrollment-program-enroll-ios.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemple d’un scénario faisant intervenir un gestionnaire d’inscription d’appareil
 
@@ -50,17 +48,13 @@ L’utilisateur du gestionnaire d’inscription d’appareil peut :
 
 Les appareils inscrits avec un compte de gestionnaire d’inscription d’appareil ont les limitations suivantes :
 
-  - Il n’existe aucun « utilisateur » propre à l’appareil. Par conséquent, aucun accès aux données d’entreprise ou à la messagerie n’est possible. Toutefois, le VPN, par exemple, peut toujours être utilisé pour fournir aux applications d’appareil un accès aux données.
-
-  - Il n’y a pas d’accès conditionnel, car il s’agit de scénarios par utilisateur.
-
-  - L’utilisateur du gestionnaire d’inscription d’appareil ne peut pas annuler l’inscription des appareils inscrits auprès du gestionnaire d’inscription d’appareil sur l’appareil lui-même à l’aide du portail d’entreprise. L’administrateur Intune a cette capacité, mais pas l’utilisateur du gestionnaire d’inscription d’appareil.
-
+  - Pas d’accès par utilisateur. Les appareils n’ayant pas d’utilisateur affecté, l’appareil n’a pas accès à la messagerie ou aux données de l’entreprise. Les configurations VPN, par exemple, peuvent toujours être utilisées pour fournir aux applications d’appareil un accès aux données.
+  - Aucun accès conditionnel car il s’agit de scénarios par utilisateur.
+  - L’utilisateur du gestionnaire d’inscription d’appareil ne peut pas annuler l’inscription des appareils inscrits auprès du gestionnaire d’inscription d’appareil sur l’appareil lui-même à l’aide du portail d’entreprise. L’administrateur Intune peut faire cela, mais pas l’utilisateur du gestionnaire d’inscription d’appareil.
   - Seul l’appareil local s’affiche dans l’application Portail d’entreprise ou le site web.
- 
   - Les utilisateurs ne peuvent pas utiliser les applications du programme d’achat en volume (VPP) Apple en raison des critères des identifiants Apple par utilisateur pour la gestion des applications.
- 
-  - (iOS uniquement) Si vous utilisez le gestionnaire d’inscription d’appareil pour inscrire des appareils iOS, vous ne pouvez pas utiliser Apple Configurator ni le programme d’inscription des appareils Apple pour inscrire des appareils.
+  - (iOS uniquement) Si vous utilisez le gestionnaire d’inscription d’appareil pour inscrire des appareils iOS, vous ne pouvez pas utiliser Apple Configurator, Apple School Manager (ASM) ou le programme d’inscription des appareils Apple pour inscrire des appareils.
+  - Chaque appareil nécessite une licence d’appareil. Apprenez-en davantage sur les [licences utilisateur et d’appareil](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]
@@ -78,31 +72,28 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
 
 4.  Dans le panneau **Ajouter un utilisateur**, entrez le nom d’utilisateur principal de l’utilisateur DEM, puis sélectionnez **Ajouter**. L’utilisateur DEM est ajouté à la liste des utilisateurs DEM.
 
+## <a name="permissions-for-dem"></a>Autorisations pour DEM
+
+Les rôles d’administrateur de service Intune ou global d’Azure AD sont requis pour effectuer les tâches d’inscription à la gestion de l’inscription des appareils (DEM). Ces rôles sont également requis pour afficher tous les utilisateurs DEM même si les autorisations RBAC sont répertoriées et disponibles sous le rôle Utilisateur personnalisé. Un utilisateur sans rôle d’administrateur de service Intune ou global affecté mais disposant des autorisations en lecture pour le rôle Gestionnaires d’inscription d’appareil peut voir uniquement les utilisateurs DEM qu’il a créés. La prise en charge des rôles RBAC pour ces fonctionnalités sera annoncée ultérieurement.
+
+Si un utilisateur n’a pas de rôle d’administrateur de service Intune ou global affecté à ceux-ci, mais dispose des autorisations en lecture pour le rôle Gestionnaires d’inscription d’appareil, il pourra uniquement voir les utilisateurs DEM qu’il a créés.
+
 ## <a name="remove-a-device-enrollment-manager"></a>Supprimer un gestionnaire d’inscription d’appareil
 
 La suppression d’un gestionnaire d’inscription d’appareil n’affecte pas les appareils inscrits. Quand un gestionnaire d’inscription d’appareil est supprimé :
 
--   La suppression d’un utilisateur de la liste des utilisateurs DEM n’affecte pas les appareils inscrits. Ceux-ci continuent à être entièrement gérés.
-
+-   Les appareils inscrits ne sont pas affectés et continuent à être entièrement gérés.
 -   Les informations d’identification du compte du gestionnaire d’inscription d’appareil supprimé restent valides.
-
 -   Le gestionnaire d’inscription d’appareil supprimé ne peut pas réinitialiser ni mettre hors service des appareils.
-
--   Le gestionnaire d’inscription d’appareil supprimé ne peut pas inscrire d’autres appareils, sauf si la limite par appareil, configurée par l’administrateur Intune, n’a pas été atteinte.
+-   Le gestionnaire d’inscription d’appareil supprimé peut inscrire uniquement un certain nombre d’appareils jusqu'à la limite par utilisateur configurée par l’administrateur d’Intune.
 
 **Pour supprimer un gestionnaire d’inscription d’appareil**
 
 1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
-
 2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis choisissez **Gestionnaires d’inscription d’appareil**.
-
 3. Dans le panneau **Gestionnaires d’inscription d’appareil**, cliquez avec le bouton droit sur l’utilisateur DEM, puis sélectionnez **Supprimer**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Afficher les propriétés d’un gestionnaire d’inscription d’appareil
 
-1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
-
-2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis choisissez **Gestionnaires d’inscription d’appareil**.
-
-3. Dans le panneau **Gestionnaires d’inscription d’appareil**, cliquez avec le bouton droit sur l’utilisateur DEM, puis sélectionnez **Propriétés**.
-
+1. Dans le portail Intune, choisissez **Inscription de l’appareil**, puis choisissez **Gestionnaires d’inscription d’appareil**.
+2. Dans le panneau **Gestionnaires d’inscription d’appareil**, cliquez avec le bouton droit sur l’utilisateur DEM, puis sélectionnez **Propriétés**.
