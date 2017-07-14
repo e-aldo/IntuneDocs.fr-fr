@@ -14,13 +14,14 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c094d59d7261b602c51196233286d10c27732236
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-is-intune-for-education"></a>Qu’est-ce qu’Intune pour l’Éducation ?
+# Qu’est-ce qu’Intune pour l’Éducation ?
+<a id="what-is-intune-for-education" class="xliff"></a>
 
 Intune pour l’Éducation est conçu pour permettre aux étudiants et enseignants d’être productifs tout en protégeant les données de l’établissement. Intune est un service de gestion EMM (Enterprise Mobility Management) basé sur le cloud et sur lequel repose Intune pour l’Éducation.
 
@@ -30,7 +31,7 @@ Intune pour l’Éducation vous permet de gérer des appareils Windows 10 en ut
 
 Intune pour l’Éducation peut être utilisé seul ou avec l’[intégralité de l’expérience de gestion des appareils disponible dans Intune](introduction-intune.md). Il peut également être utilisé en association avec les autres outils disponibles dans [Microsoft Éducation](https://microsoft.com/education), ce qui facilite votre utilisation d’Intune pour l’Éducation avec d’autres outils de formation utiles de Microsoft.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ukrnCwcLvV8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 Avec Intune et Intune pour l’Éducation, vous pouvez :
 * gérer les appareils mobiles que votre personnel utilise pour accéder aux données ;
@@ -38,7 +39,8 @@ Avec Intune et Intune pour l’Éducation, vous pouvez :
 * protéger vos informations d’entreprise en contrôlant la façon dont les utilisateurs y accèdent et les partagent ;
 * vérifier que les appareils et les applications sont conformes aux exigences de sécurité.
 
-### <a name="next-steps"></a>Étapes suivantes
+### Étapes suivantes
+<a id="next-steps" class="xliff"></a>
 * Se familiariser avec le produit [grâce à une période d’essai d’Intune de 30 jours](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
 * En savoir plus sur la façon la plus rapide de [commencer à utiliser Intune pour l’Éducation](/intune-education/what-is-express-configuration).
 * Explorer [les spécifications techniques et les fonctionnalités](/intune/supported-devices-browsers) d’Intune.
