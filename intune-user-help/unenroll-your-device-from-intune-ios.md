@@ -16,19 +16,20 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b2af07817b15c2afd2d2674aa0c6d8a403147421
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="unenroll-your-ios-device-from-intune"></a>Désinscrire votre appareil iOS d’Intune
+# Désinscrire votre appareil iOS d’Intune
+<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
 
 Quand vous annulez l’inscription de votre appareil iOS sur Intune, ce dernier ne peut plus accéder aux ressources d’entreprise et n’est plus géré par Intune.
 
 Pour désinscrire votre appareil d’Intune, suivez ces étapes ou regardez cette vidéo :
 
-<iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
 
 
 1.  Dans l’application Portail d’entreprise, sous **Mes appareils**, sélectionnez l’appareil que vous voulez désinscrire.
