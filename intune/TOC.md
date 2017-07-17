@@ -38,9 +38,9 @@
 ### [Implémentation](planning-guide-onboarding.md)
 ### [Test et validation](planning-guide-test-validation.md)
 ### [Ressources supplémentaires](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## Guides d’implémentation de scénarios
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -62,16 +62,15 @@
 ## [Configurer Intune](setup-steps.md)
 ### [Conditions préalables](supported-devices-browsers.md)
 #### [Utilisation de la bande passante réseau](network-bandwidth-use.md)
-### [Connexion à Intune](account-sign-up.md)
+### [Se connecter à Intune](account-sign-up.md)
 ### [Configurer des domaines](custom-domain-name-configure.md)
-### [Ajouter des utilisateurs](users-permissions-add.md)
+### [Ajouter des utilisateurs](users-add.md)
 ### [Ajouter des groupes](groups-add.md)
-### [Affecter des licences](licenses-assign.md)       
-### [Personnaliser le portail d’entreprise](company-portal-customize.md)     
+### [Affecter des licences](licenses-assign.md)
 ### [Configurer l’autorité MDM](mdm-authority-set.md)
 
 ## [Inscrire des appareils](device-enrollment.md)
-### Options d’installation
+### [Options d’inscription](enrollment-options.md)
 #### [Conditions générales](terms-and-conditions-create.md)
 #### [Restrictions](enrollment-restrictions-set.md)
 #### [Certificat Push MDM Apple](apple-mdm-push-certificate-get.md)
@@ -105,7 +104,6 @@
 ### [Réinitialisation du code PIN Windows 10](device-windows-pin-reset.md)
 ### [Examiner l’inventaire des appareils](device-inventory.md)
 
-## [Gérer les utilisateurs](user-management.md)
 <!--### Add and delete users -->
 
 ## [Gérer les applications](app-management.md)
@@ -219,32 +217,24 @@
 
 #### [Configurer Lookout](lookout-mobile-threat-defense-connector.md)
 ##### [Intégration de Lookout et Intune](lookout-mtd-connector-integration.md)
+
 #### [Configurer Skycure](skycure-mobile-threat-defense-connector.md)
-##### [Configurer l’authentification unique Azure AD](skycure-azure-sso-configure.md)
-##### [Télécharger une stratégie de configuration d’application iOS](skycure-ios-app-configuration-policy-download.md)
 ##### [Intégration de Skycure et Intune](skycure-mtd-connector-integration.md)
+
+#### [Configurer Check Point](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [Intégration de Check Point et Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [Ajouter des applications MTD](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [Activer MTD dans Intune](mtd-connector-enable.md)
 #### [Créer une stratégie de conformité de l’appareil MTD](mtd-device-compliance-policy-create.md)
 
 ### [Contrôle d’accès réseau](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection        
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [Configurer Windows Hello](windows-hello.md)        
 <!-- ### Protect devices with remote actions -->
 
 ## [Gérer les rôles](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [Gérer les PC avec l’agent de logiciels](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Comparer la gestion des PC](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
