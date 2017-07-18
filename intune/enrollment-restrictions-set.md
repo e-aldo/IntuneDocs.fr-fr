@@ -1,12 +1,12 @@
 ---
 title: "Définir des restrictions d’inscription dans Intune"
-titleSuffix: Intune Azure preview
-description: "Version préliminaire d&quot;Intune Azure : restriction de l’inscription par la plateforme et définition d’une limite d’inscriptions d’appareils dans Intune. "
+titleSuffix: Intune on Azure
+description: "Restriction de l’inscription par la plateforme et définition d’une limite d’inscriptions d’appareils dans Intune. \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,56 +15,54 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d99f7ca5b5e96a7ab113a14d36f0fef474411836
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 2dfcba8c788f262ce816dcd23dc2921fd57f331b
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/05/2017
 ---
+# <a name="set-enrollment-restrictions"></a>Définir des restrictions d’inscription
 
-# <a name="set-enrollment-restrictions"></a>Définir des restrictions d’inscription 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+En tant qu’administrateur Intune, vous pouvez déterminer les appareils qui peuvent s’inscrire à la gestion avec Intune. Utilisez le portail Intune afin de définir les restrictions suivantes pour l’inscription d’appareils :
 
-Vous pouvez définir les types et le nombre maximal d’appareils qui peuvent être inscrits. Dans le panneau Restrictions d’inscription, vous pouvez définir :
+- Nombre maximal d’appareils inscrits
+- Plateformes d’appareils qui peuvent s’inscrire :
+  - Android
+  - iOS
+  - macOS
+  - Windows
+- Appareils personnels (iOS et Android uniquement)
 
-- Les plateformes qui peuvent être inscrites et s’il convient de bloquer l’inscription d’appareils personnels iOS et Android.
-
-- Le nombre maximal d’appareils qu’un utilisateur est autorisé à inscrire.
+>[!NOTE]
+>Les restrictions d’inscription ne sont pas une fonctionnalité de sécurité. Des appareils compromis peuvent falsifier leur caractère. Ces restrictions représentent une barrière de meilleur effort pour les utilisateurs non malveillants.
 
 ## <a name="set-device-type-restrictions"></a>Définition des restrictions de type d'appareil
+Les restrictions d’inscription par défaut s’appliquent à tous les utilisateurs auxquels des restrictions d’inscription de priorité plus élevée ne sont pas affectées.  
+1. Dans le portail Intune, choisissez **Inscription de l’appareil**, puis **Restrictions d’inscription**.
+![Capture d’écran de l’espace de travail de restrictions sur les appareils avec les restrictions de type d’appareil par défaut et les restrictions de limite d’appareils.](media/device-restrictions-set-default.png)
+2. Sous **Restrictions d’inscription** > **Restrictions de type d’appareil**, sélectionnez **Par défaut**.
+3. Sous **Tous les utilisateurs**, sélectionnez **Plateformes**. Choisissez **Autoriser** ou **Bloquer** pour chaque plateforme :
+  - **Android**
+  - **iOS**
+  - **MacOS**
+  - **Windows**
 
-1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
+  Cliquez sur **Enregistrer**.
+4. Sous **Tous les utilisateurs**, sélectionnez **Configurations de plateforme**, puis les configurations suivantes :
+  - **Personally Owned** (Propriété personnelle) : indiquez s’il convient **d’autoriser** ou de **bloquer** les appareils Android et iOS.
+  ![Capture d’écran de l’espace de travail de restrictions sur les appareils avec les configurations de plateforme d’appareils par défaut indiquant les paramètres de propriété personnelle configurés.](media/device-restrictions-platform-configurations.png)
+  Cliquez sur **Enregistrer**.
 
-2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis choisissez **Restrictions d’inscription**.
-
-3. Sous **Restrictions de type d'appareil**, sélectionnez **Par défaut**.
-
-4. Dans le panneau **Tous les utilisateurs**, sélectionnez **plateformes**.
-
-5. Pour les plateformes qui sont autorisées à s’inscrire dans Intune, sélectionnez **Autoriser**. Pour les plateformes pour lesquelles vous souhaitez empêcher l’inscription, sélectionnez **Bloquer**. Les plateformes ont la valeur **Autoriser** par défaut. 
-
-    >[!NOTE]
-    >Ces paramètres ne s’appliquent pas aux inscriptions Windows qui utilisent le logiciel client Intune et ne les bloquent pas non plus. Ces paramètres affectent uniquement l’inscription avec la gestion des appareils mobiles. 
-
-6. Sélectionnez **Enregistrer**.
-
-7. Sélectionnez **Configurations des plateformes**.
-
-8. Choisissez **Autoriser** ou **Bloquer** en ce qui concerne l’inscription des appareils personnels iOS et Android.
-
-9. Sélectionnez **Enregistrer**.
+>[!NOTE]
+>Si vous empêchez des appareils Android personnels de s’inscrire, les appareils Android for Work peuvent toujours être inscrits.
 
 ## <a name="set-device-limit-restrictions"></a>Définition des restrictions de limite d'appareil
+Les restrictions d’inscription par défaut s’appliquent à tous les utilisateurs auxquels des restrictions d’inscription de priorité plus élevée ne sont pas affectées.  
+1. Dans le portail Intune, choisissez **Inscription de l’appareil**, puis **Restrictions d’inscription**.
+2. Choisissez **Restrictions d’inscription** > **Restrictions de limite d’appareils**.
+3. Sous **Tous les utilisateurs**, sélectionnez **Limite d’appareils**. Spécifiez le nombre maximal d’appareils inscrits par utilisateur.  
+![Capture d’écran du panneau des restrictions de limite d’appareils avec les restrictions de limite d’appareils.](./media/device-restrictions-limit.png)
 
-1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
-
-2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis choisissez **Restrictions d’inscription**.
-
-3. Sous **Restrictions de limite d’appareil**, sélectionnez **par défaut**.
-
-4. Dans le panneau **Tous les utilisateurs**, sélectionnez **Limite d’appareil**.
-
-5. Sélectionnez le nombre maximal d'appareils qu'un utilisateur peut inscrire, puis sélectionnez **Enregistrer**.
-
+  Cliquez sur **Enregistrer**.

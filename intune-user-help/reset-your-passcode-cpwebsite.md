@@ -5,43 +5,39 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Guide pratique pour réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise
 
 Si vous perdez le code confidentiel ou le mot de passe d’un appareil que vous avez inscrit dans Intune, vous pouvez utiliser le [site web du portail d’entreprise](http://portal.manage.microsoft.com) pour le réinitialiser. Vous pouvez utiliser le site web du portail d’entreprise pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
 
 > [!NOTE]
-> Il est possible que le bouton **Réinitialiser le code secret** ne soit pas visible sur le site web du portail d’entreprise. Dans ce cas, vous devez contacter votre administrateur informatique pour obtenir de l’aide via le site web du portail d’entreprise.
+> Le bouton Réinitialiser le code secret ne sera peut-être pas visible sur le site web du portail d’entreprise si vous utilisez un appareil d’entreprise inscrit. Si ce bouton n’est pas visible, vous devez contacter votre administrateur informatique pour qu’il réinitialise le code secret pour vous.
 
-Pour réinitialiser votre code d’accès
+Pour réinitialiser votre code secret
 
-1.    Sur le [site web Portail d’entreprise](http://portal.manage.microsoft.com), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
+1.  Sur le [site web Portail d’entreprise](http://portal.manage.microsoft.com), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/intune/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
 
 2. Dans la page __Mes appareils__, sélectionnez le nom de l’appareil dont vous voulez réinitialiser le code secret.
 
   ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    L’appareil s’ouvre dans une fenêtre contextuelle. Sélectionnez le bouton **Réinitialiser le code secret**.
+3.  L’appareil s’ouvre dans une fenêtre contextuelle. Sélectionnez le bouton **Réinitialiser le code secret**.
 
     ![Toutes les options disponibles pour un appareil sélectionné sur le site web Portail d’entreprise, notamment Renommer, Supprimer, Réinitialiser l’appareil, Réinitialiser le code secret et Verrouillage à distance. ](./media/iwp-screen-with-all-options.png)
 
@@ -55,7 +51,10 @@ Pour réinitialiser votre code d’accès
 
   Les différents appareils ont différents types de code secret.
 
-  **Android** : supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres.
+  **Android** : supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres. 
+  
+  > [!NOTE]
+  > Vous ne pouvez pas réinitialiser le code secret pour les appareils Android 7.0 et versions ultérieures. Si vous oubliez votre code secret, vous devez réinitialiser ces appareils avec les paramètres d’usine.
 
   **iOS** : supprime le code secret existant et ne crée pas de code secret temporaire. Si vous utilisez le scanneur d’empreinte digitale Touch ID pour ouvrir votre appareil ou effectuer des achats, vous devrez le reconfigurer.
 
@@ -70,4 +69,3 @@ Pour réinitialiser votre code d’accès
 Pour afficher une notification confirmant que votre code d’accès a été réinitialisé avec succès, cliquez sur l’indicateur de notification en haut à droite du site web du portail d’entreprise.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

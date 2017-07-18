@@ -1,12 +1,12 @@
 ---
-title: "Introduction à Intune dans la préversion du portail Azure"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Découvrez les bases d’Intune dans la préversion du portail Azure et comment celui-ci peut vous aider à gérer vos appareils."
+title: "Introduction à Intune dans le portail Azure"
+titleSuffix: Intune on Azure
+description: "Découvrez les bases d’Intune dans le portail Azure et comment celui-ci peut vous aider à gérer vos appareils."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,30 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7549f3277c23c3951090502f2babfe7c47b0a201
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introduction à Microsoft Intune dans le portail Azure
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Introduction à Microsoft Intune dans la préversion du portail Azure
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Microsoft Intune migre vers le portail Azure, et cela signifie que les flux de travail et fonctionnalités que vous utilisiez vont changer.
-Le nouveau portail vous offre un aperçu des fonctionnalités nouvelles et mises à jour dans le portail Azure, où vous pouvez gérer les appareils mobiles, PC et applications de votre entreprise.
-Toutes les fonctionnalités Intune finiront par être migrées vers Azure, mais vous pouvez effectuer de nombreuses tâches Intune dans le portail Azure dès aujourd’hui. Étant donné que cette nouvelle expérience est disponible en préversion, certaines fonctionnalités ne sont peut-être pas encore présentes dans le portail. Consultez la section [Nouveautés](#whats-new) pour plus d’informations.
+Microsoft Intune se trouve désormais dans le portail Azure, ce qui signifie que les flux de travail et fonctionnalités que vous utilisiez sont maintenant différents.
+Le nouveau portail vous offre des fonctionnalités nouvelles et mises à jour dans le portail Azure, où vous pouvez gérer les appareils mobiles, PC et applications de votre entreprise.
 
 > [!IMPORTANT]
 > **Vous ne voyez pas encore le nouveau portail ?**<br>
-> Nous avons déjà commencé à déployer la préversion pour certains clients. Les clients existants seront migrés vers la nouvelle expérience à compter du début de l’année civile 2017. Vous recevrez une notification dans le centre de messages Office avant la migration de votre client.
+> Les clients existants sont migrés vers la nouvelle expérience. Une notification s’affiche dans le centre de messages Office avant migration de votre client.
 >
-> Les comptes Intune créés avant janvier 2017 nécessiteront une migration unique pour que les workflows Apple Enrollment soient disponibles dans Azure. La planification de la migration n’a pas encore été annoncée, mais les détails correspondants seront diffusés dès que possible. Si votre compte existant ne peut pas accéder à la version préliminaire, nous vous recommandons vivement de créer un compte d’évaluation afin de tester la nouvelle expérience.
+> Les comptes Intune créés avant janvier 2017 nécessiteront une migration unique pour que les workflows Apple Enrollment soient disponibles dans Azure. Le calendrier de migration n’a pas encore été annoncé. Si votre compte ne peut pas accéder au portail Azure, nous vous recommandons de créer un compte d’évaluation.
+>
+> Passez en revue la liste des bloqueurs potentiels https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
-Vous trouverez la documentation du nouveau produit dans cette bibliothèque, et elle sera continuellement mise à jour pendant le développement de la préversion. Si vous avez des suggestions, n’hésitez pas à laisser des commentaires dans la section dédiée de la rubrique. Nous sommes à votre écoute.
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+Vous trouverez plus d’informations sur le nouveau portail dans cette bibliothèque, qui est continuellement mise à jour. Si vous avez des suggestions, n’hésitez pas à laisser des commentaires dans la section dédiée de la rubrique. Nous sommes à votre écoute.
 
 Points clés de la nouvelle expérience :
 
@@ -78,10 +73,10 @@ La documentation reflète la disposition du portail Intune faciliter la recherch
 ![Charges de travail sur le portail Azure](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>Introduction et prise en main
-Cette section contient des informations sur les [nouveautés](whats-new.md), les [problèmes connus](known-issues.md), [la façon de bénéficier du support](get-support.md) et comment [bien démarrer avec un essai gratuit](free-trial-sign-up.md) d’Intune.
+Cette section contient une [introduction](introduction-intune.md) qui vous explique comment prendre en main Intune.
 ### <a name="plan-and-design"></a>Planifier et concevoir
-Informations pour vous aider à [planifier et concevoir](/intune-classic/plan-and-design/introduction) votre environnement Intune.
-### <a name="device-enrollment"></a>Inscription de périphériques
+Informations pour vous aider à [planifier et concevoir](/intune-classic/plan-design/introduction) votre environnement Intune.
+### <a name="device-enrollment"></a>Inscription des appareils
 [Apprenez à configurer la gestion de vos appareils par Intune](device-enrollment.md).
 ### <a name="device-compliance"></a>Conformité de l’appareil
 [Définissez un niveau de conformité pour vos appareils, puis créez un rapport sur tous les appareils qui ne sont pas conformes](device-compliance.md).
@@ -108,5 +103,4 @@ Informations pour vous aider à [planifier et concevoir](/intune-classic/plan-an
 
 ## <a name="whats-new"></a>Nouveautés
 
-[Découvrez les nouveautés de la préversion](whats-new.md).
-
+[Découvrez les nouveautés d’Intune](whats-new.md).

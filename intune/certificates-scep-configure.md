@@ -1,12 +1,12 @@
 ---
 title: "Configurer et gérer les certificats SCEP avec Intune"
-titleSuffix: Intune Azure preview
-description: "Intune Azure en version préliminaire : découvrez comment configurer votre infrastructure avant de créer et affecter des profils de certificat Intune SCEP."
+titleSuffix: Intune on Azure
+description: "Découvrez comment configurer votre infrastructure avant de créer et affecter des profils de certificat Intune SCEP."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,14 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurer et gérer les certificats SCEP avec Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cette rubrique vous montre comment configurer votre infrastructure, puis comment créer et affecter des profils de certificat SCEP (Simple Certificate Enrollment Protocol) avec Intune.
 
@@ -84,6 +83,10 @@ Avant de configurer les profils de certificat, vous devez effectuer les tâches 
 
 **Étape 5** : activer, installer et configurer Intune Certificate Connector
 
+> [!NOTE]
+> En raison d’un problème connu, vous devez télécharger, installer et configurer le connecteur de certificat à l’aide de la procédure suivante : [Configurer l’infrastructure de certificat pour SCEP -> Configurer votre infrastructure -> Tâche 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>Étape 1 : créer un compte de service NDES
 
 Créez un compte d'utilisateur de domaine à utiliser comme compte de service NDES. Vous spécifiez ce compte lorsque vous configurez des modèles sur l'autorité de certification émettrice avant d'installer et de configurer NDES. Vérifiez que l’utilisateur a les droits par défaut **d’ouverture d’une session locale**, **d’ouverture d’une session en tant que service** et **d’ouverture d’une session en tant que tâche**. Certaines organisations disposent de stratégies de sécurisation renforcée qui désactivent ces droits.
@@ -100,6 +103,9 @@ Dans cette tâche, vous allez :
 1.  Ouvrez une session en tant qu’administrateur d’entreprise.
 
 2.  Sur l'autorité de certification émettrice, utilisez le composant logiciel enfichable Modèles de certificats pour créer un modèle personnalisé ou copier un modèle existant, puis modifiez un modèle existant (comme le modèle de l'utilisateur), pour l'utiliser avec NDES.
+
+    >[!NOTE]
+    > Le modèle de certificat NDES doit être basé sur un modèle de certificat v2 (avec compatibilité de Windows 2003).
 
     Le modèle doit avoir les configurations suivantes :
 
@@ -304,7 +310,7 @@ télécharger, installer et configurer Certificate Connector sur le serveur NDE
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>Pour activer la prise en charge de Certificate Connector
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
 4. Dans le panneau **Configuration de l’appareil**, choisissez **Autorité de certification**.
 5.  Sélectionnez **Activer Certificate Connector**.
@@ -312,10 +318,10 @@ télécharger, installer et configurer Certificate Connector sur le serveur NDE
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Pour télécharger, installer et configurer Certificate Connector
 
 > [!NOTE]
-> En raison d’un problème connu, vous devez télécharger, installer et configurer le connecteur de certificat à l’aide de la procédure suivante : [Configurer l’infrastructure de certificat pour SCEP -> Configurer votre infrastructure -> Tâche 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> En raison d’un problème connu, vous devez télécharger, installer et configurer le connecteur de certificat à l’aide de la procédure suivante : [Configurer l’infrastructure de certificat pour SCEP -> Configurer votre infrastructure -> Tâche 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
+2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
 4. Dans le panneau **Configuration de l’appareil**, choisissez **Autorité de certification**.
 5. Choisissez **Télécharger Certificate Connector**.
@@ -372,11 +378,13 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
         - **Inscrire auprès du fournisseur de stockage de clés (KSP) du module de plateforme sécurisée (TPM), sinon mettre en échec**
         - **Inscrire auprès de Passport, sinon mettre en échec (Windows 10 et versions ultérieures)**
         - **Inscrire auprès du fournisseur de stockage de clés du logiciel**
-    - **Format du nom de l’objet** : dans la liste, sélectionnez comment Intune crée automatiquement le nom de l’objet dans la demande de certificat. Si le certificat est pour un utilisateur, vous pouvez également inclure l'adresse de messagerie de cet utilisateur dans le nom de l'objet. Choisissez parmi :
+    - **Format du nom de l’objet** : dans la liste, sélectionnez comment Intune crée automatiquement le nom de l’objet dans la demande de certificat. Si le certificat est pour un utilisateur, vous pouvez également inclure l'adresse e-mail de cet utilisateur dans le nom de l'objet. Choisissez parmi :
         - **Non configuré**
         - **Nom commun**
         - **Nom commun (adresse e-mail incluse)**
         - **Nom commun comme adresse e-mail**
+        - **Personnalisé** : lorsque vous sélectionnez cette option, un autre champ de liste déroulante s’affiche. Ce champ vous permet d’entrer un format de nom d’objet personnalisé. Les deux variables prises en charge pour le format personnalisé sont **Nom courant (cn)** et **Message électronique (e)**. En combinant une ou plusieurs ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui-ci : **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** Dans cet exemple, vous avez créé un format de nom d’objet qui, en plus des variables CN et E, utilise des chaînes pour les valeurs Organizational Unit (Unité organisationnelle), Organization (Organisation), Location (Emplacement), State (État) et Country (Pays). [Cette rubrique](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) illustre la fonction **CertStrToName** et ses chaînes prises en charge.
+        
     - **Autre nom de l’objet** : spécifiez comment Intune crée automatiquement les valeurs pour l’autre nom de l’objet dans la demande de certificat. Par exemple, si vous avez sélectionné un type de certificat utilisateur, vous pouvez inclure le nom d'utilisateur principal (UPN) dans l'autre nom de l'objet. Si le certificat client est utilisé pour l'authentification sur un serveur de stratégie réseau, l'autre nom de l'objet doit être défini sur le nom d'utilisateur principal. 
     - **Utilisation de la clé** : spécifiez les options d’utilisation de la clé pour le certificat. Vous pouvez choisir parmi les options suivantes : 
         - **Chiffrage de clés** : autorisez l’échange de clés uniquement quand la clé est chiffrée. 
@@ -392,10 +400,6 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
 
->[!Note]
-> Pour les appareils iOS seulement : sous Format du nom de l’objet, sélectionnez Personnalisé pour entrer un format de nom d’objet personnalisé.
-> Les deux variables actuellement prises en charge pour le format personnalisé sont **Nom courant (cn)** et **Message électronique (e)**. En combinant ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui-ci : **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** Dans cet exemple, vous avez créé un format de nom d’objet qui, en plus des variables CN et E, utilise des chaînes pour les valeurs Organizational Unit (Unité organisationnelle), Organization (Organisation), Location (Emplacement), State (État) et Country (Pays). [Cette rubrique](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) illustre la fonction **CertStrToName** et ses chaînes prises en charge.
-
 ## <a name="how-to-assign-the-certificate-profile"></a>Comment affecter le profil de certificat
 
 Considérez les éléments suivants avant d’attribuer des profils de certificat aux groupes :
@@ -407,5 +411,4 @@ Considérez les éléments suivants avant d’attribuer des profils de certifica
 - Même si vous affectez chaque profil séparément, vous devez également affecter l’autorité de certification racine approuvée et le profil SCEP ou PKCS. Dans le cas contraire, la stratégie de certificat SCEP ou PKCS échoue.
 
 Pour plus d’informations sur la façon d’affecter des profils, consultez [Guide pratique pour attribuer des profils d’appareils](device-profile-assign.md).
-
 

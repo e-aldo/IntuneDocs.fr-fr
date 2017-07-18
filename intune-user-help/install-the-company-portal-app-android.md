@@ -5,25 +5,22 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d3401f32994fcd0e54d35a2615a636c5d06183d2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ab021708898fe87c2c5acf7d8b33df5a57e36c84
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Installation de l’application Portail d’entreprise pour Android
 
@@ -45,7 +42,6 @@ Le portail d’entreprise est une application vous donnant accès à des applica
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-Après avoir téléchargé l’application Portail d’entreprise, vous [inscrirez probablement votre appareil dans Intune](enroll-your-device-in-Intune-android.md) pour obtenir un accès total à vos informations professionnelles.
+Après avoir téléchargé l’application Portail d’entreprise, vous [inscrirez probablement votre appareil dans Intune](enroll-your-device-in-Intune-android.md) pour obtenir un accès total à vos informations professionnelles. Vous pouvez également [vous connecter à l’aide d’un autre appareil](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
-

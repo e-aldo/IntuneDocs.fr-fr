@@ -14,15 +14,12 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-conditional-access"></a>Résoudre les problèmes d’accès conditionnel
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -60,9 +57,9 @@ Ces conditions sont visibles sur chaque appareil dans le portail de gestion Azur
         En général, les appareils restent dans cet état parce qu’ils rencontrent des problèmes de connexion au service ou parce que la synchronisation prend beaucoup de temps.  Si le problème persiste sur différentes configurations réseau (téléphonie mobile, Wi-Fi, VPN), après redémarrage de l’appareil et après avoir vérifié que le fournisseur de services partagés est à jour sur l’appareil, contactez le support Microsoft comme décrit dans [Guide pratique pour obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
  - Pour les appareils Android :
-    - Certains appareils Android peuvent paraître chiffrés, alors que l’application de portail d’entreprise reconnaît ces appareils comme non chiffrés. 
+    - Certains appareils Android peuvent paraître chiffrés, alors que l’application Portail d’entreprise reconnaît ces appareils comme non chiffrés. 
     
-        -   Pour ces appareils, l’utilisateur doit définir un code secret de démarrage sécurisé. L’utilisateur reçoit une notification d’appareil de l’application de portail d’entreprise lui demandant de définir un code secret de démarrage pour l’appareil. Après avoir appuyé sur la notification d’appareil et confirmé votre code confidentiel ou mot de passe existant, choisissez l’option **Exiger un code confidentiel pour démarrer l’appareil** dans l’écran **Démarrage sécurisé**. Ensuite, appuyez sur le bouton **Vérifier la conformité** pour l’appareil dans l’application de portail d’entreprise. L’appareil doit maintenant être détecté comme chiffré.
+        -   Pour ces appareils, l’utilisateur doit définir un code secret de démarrage sécurisé. L’utilisateur reçoit une notification d’appareil de l’application Portail d’entreprise lui demandant de définir un code secret de démarrage pour l’appareil. Après avoir appuyé sur la notification d’appareil et confirmé votre code confidentiel ou mot de passe existant, choisissez l’option **Exiger un code confidentiel pour démarrer l’appareil** dans l’écran **Démarrage sécurisé**. Ensuite, appuyez sur le bouton **Vérifier la conformité** pour l’appareil dans l’application Portail d’entreprise. L’appareil doit maintenant être détecté comme chiffré.
     
         -   Certains fabricants d’appareils chiffrent leurs appareils à l’aide d’un code confidentiel par défaut à la place du code confidentiel secret défini par l’utilisateur. Intune considère le chiffrement au moyen du code confidentiel par défaut comme non sécurisé. En effet, cette méthode de chiffrement peut mettre en danger les données figurant sur l’appareil face à des utilisateurs mal intentionnés en mesure d’accéder physiquement à l’appareil. Si tel est le problème, envisagez d’utiliser les [stratégies de protection des applications](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
@@ -148,24 +145,10 @@ Pour activer la journalisation détaillée :
 2.  Recherchez TraceSourceLine avec la clé suivante : OnPremisesExchangeConnectorService
 3.  Remplacez la valeur du nœud **SourceLevel** **Warning ActivityTracing** (par défaut) par **Verbose ActivityTracing**, comme indiqué ci-dessous.
 
-    <TraceSourceLine>
-          <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
-          <Value xsi:type="TraceSource">
-            <SourceLevel>All</SourceLevel>
-            <Listeners>
-              <Listener>
-                <ListenerType>CircularTraceListener</ListenerType>
-                <SourceLevel>Verbose ActivityTracing</SourceLevel>
-                <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes>
-                <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName>
-                <FileQuota>30</FileQuota>
-              </Listener>
-            </Listeners>
-          </Value>
+    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
     </TraceSourceLine>
 
 
 
 ### <a name="next-steps"></a>Étapes suivantes
 Si ces informations de dépannage n’ont pas permis de vous aider, contactez le support Microsoft comme décrit dans [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-

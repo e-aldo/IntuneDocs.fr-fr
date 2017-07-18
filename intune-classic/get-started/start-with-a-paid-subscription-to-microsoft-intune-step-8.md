@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>Activer l’inscription des appareils mobiles
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ Pour configurer la gestion des appareils mobiles avec Intune, vous devez d’abo
 
 ## <a name="enable-device-enrollment"></a>Activer l’inscription d’appareil
 
-1. **Utiliser Intune comme autorité de gestion des appareils mobiles**
-    Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Administration** > **Gestion des appareils mobiles**, puis choisissez **Définir l’autorité MDM** sous **Tâches**.  
+1. **Utiliser Intune comme autorité de gestion des appareils mobiles** Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Administration**>**Gestion des appareils mobiles**, puis choisissez **Définir l’autorité MDM** sous **Tâches**.  
 
 2. Dans la boîte de dialogue Autorité de gestion des appareils mobiles, cliquez sur **Oui**.
 
@@ -70,4 +66,3 @@ Félicitations ! Vous venez d’effectuer la dernière étape du *guide de dém
 
 >[!div class="step-by-step"]
 >[&larr; **Inscrire des appareils**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Tâches après la configuration** &rarr;](.\post-configuration-tasks.md)  
-
