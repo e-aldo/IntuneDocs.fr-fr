@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 852997044cef22901e8133d76f327e98b2a1ee72
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Activer l’inscription des appareils Android for Work
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ Vous pouvez désactiver l’inscription et la gestion Android for Work. En cliqu
 
 2. **Confirmer la suppression de la liaison Android for Work**<br>
   Cliquez sur **Oui** pour supprimer la liaison et désinscrire tous les appareils Android for Work d’Intune.
-

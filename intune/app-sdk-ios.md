@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 9fad536aab83f0e8ae12aff8cab44943ae1ac82d
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guide du Kit SDK d’application Microsoft Intune pour les développeurs iOS
 
 > [!NOTE]
@@ -460,6 +457,17 @@ MAMTelemetryDisabled| Booléen| Spécifie si le SDK n’envoie pas de données d
 > [!NOTE]
 > Si votre application doit être publiée dans l’App Store, `MAMPolicyRequired` doit être défini sur « NO », conformément aux normes de l’App Store.
 
+## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Activation de la configuration ciblée de gestion des applications mobiles pour vos applications iOS
+La configuration ciblée de gestion des applications mobiles permet à une application de recevoir des données de configuration par le biais du SDK d’application Intune. Les variantes et le format de ces données doivent être définis et communiqués aux clients Intune par le propriétaire/développeur d’application. Les administrateurs Intune peuvent cibler et déployer des données de configuration par le biais de la console Intune Azure. À compter du SDK d’application Intune pour iOS (v 7.0.1), les applications qui participent à la configuration ciblée de gestion des applications mobiles peuvent recevoir des données de configuration ciblée de gestion des applications mobiles par le biais du service de gestion des applications mobiles. Les données de configuration d’application sont envoyées via notre service de gestion des applications mobiles directement à l’application au lieu de passer par le canal de gestion des appareils mobiles. Le SDK d’application Intune fournit une classe pour accéder aux données récupérées à partir de ces consoles. Considérez les éléments suivants comme des prérequis : <br>
+* L’application doit être inscrite pour la gestion des applications mobiles sans inscription avant que vous accédiez à l’interface utilisateur de configuration ciblée de gestion des applications mobiles. Pour plus d’informations sur la gestion des applications mobiles sans inscription, consultez [Stratégie de protection des applications sans inscription des appareils](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment) dans le Guide du Kit SDK d’application Microsoft Intune.
+* Incluez ```IntuneMAMAppConfigManager.h``` dans le fichier source de votre application.
+* Appelez ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` pour obtenir l’objet de configuration d’application.
+* Appelez le sélecteur approprié sur l’objet ```IntuneMAMAppConfig```. Par exemple, si la clé de votre application est une chaîne, vous devez utiliser ```stringValueForKey``` ou ```allStringsForKey```. Le fichier ```IntuneMAMAppConfig.h header``` aborde les conditions d’erreur/valeurs de retour.
+
+Pour plus d’informations sur les fonctionnalités de l’API Graph en ce qui concerne les valeurs de configuration ciblée de gestion des applications mobiles, consultez [Graph API Reference MAM Targeted Config (Référence de l’API Graph pour la configuration ciblée de gestion des applications mobiles)](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+Pour plus d’informations sur la façon de créer une stratégie de configuration ciblée de gestion des applications mobiles dans iOS, consultez la section sur la configuration ciblée de gestion des applications mobiles dans [How to use Microsoft Intune app configuration policies for iOS (Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour iOS)](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios).
+
 ## <a name="telemetry"></a>Télémétrie
 
 Par défaut, le SDK d’application Intune pour iOS enregistre des données de télémétrie sur les événements d’utilisation suivants. Ces données sont envoyées à Microsoft Intune.
@@ -656,4 +664,3 @@ Les générations de la bibliothèque statique et de l’infrastructure du SDK d
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     La première commande élimine les architectures de simulateur des fichiers DYLIB de l’infrastructure. La deuxième commande recopie les fichiers DYLIB pour appareils uniquement dans le répertoire de l’infrastructure.
-

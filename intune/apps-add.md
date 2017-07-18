@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique pour ajouter des applications à Microsoft Intune | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Préversion Azure : Ces procédures vous aident à préparer vos applications dans Intune à être affectées aux utilisateurs et appareils. "
+title: "Guide pratique pour ajouter des applications à Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "Ces procédures vous aident à préparer vos applications dans Intune à être affectées aux utilisateurs et appareils. \""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 36cafd2b943ab1dd5045a8ed1fe1fcf1b28af385
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Guide pratique pour ajouter une application à Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Avant de pouvoir gérer et attribuer des applications pour vos utilisateurs, vous devez les ajouter à Intune. Intune prend en charge un large éventail de types d’application différents, et les options peuvent être différentes pour chaque type.
 
@@ -46,7 +44,7 @@ Les plateformes suivantes sont prises en charge.
 - Applications métier Windows (fichiers .msi uniquement)
 
 >[!TIP]
-> Une application métier est une application que vous n’installez pas à partir d’un magasin d’applications mais à partir du fichier d’installation de l’application. Par exemple, pour installer une application métier iOS, vous ajoutez le fichier d’archive de l’application (portant l’extension .ipa). Il s’agit généralement d’applications que vous avez développées en interne.
+> Une application métier est une application que vous n’installez pas à partir d’un App Store mais à partir du fichier d’installation de l’application. Par exemple, pour installer une application métier iOS, vous ajoutez le fichier d’archive de l’application (portant l’extension .ipa). Il s’agit généralement d’applications que vous avez développées en interne.
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -67,7 +65,7 @@ La configuration requise pour l’espace de stockage cloud est la suivante :
 
 ## <a name="how-to-create-and-edit-categories-for-apps"></a>Comment créer et modifier des catégories pour les applications
 
-Les catégories d’applications peuvent être utilisées pour vous aider à trier les applications pour les rendre plus faciles finaux à rechercher pour les utilisateurs dans le portail d’entreprise. Vous pouvez affecter une ou plusieurs catégories à une application, par exemple, **Applications pour développeurs** ou **Applications de communication**.
+Vous pouvez utiliser les catégories d’applications pour trier les applications, afin que les utilisateurs finaux puissent les trouver plus facilement dans le portail d’entreprise. Vous pouvez affecter une ou plusieurs catégories à une application, par exemple, **Applications pour développeurs** ou **Applications de communication**.
 Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sélectionner la catégorie souhaitée. Utilisez les rubriques spécifiques à la plateforme pour ajouter une application et attribuer des catégories. Pour créer et modifier vos propres catégories, procédez comme suit :
 
 1. Connectez-vous au portail Azure.

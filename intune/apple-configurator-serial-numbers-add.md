@@ -1,7 +1,7 @@
 ---
 title: "Ajouter des numéros de série Apple Configurator"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : Découvrez comment ajouter des numéros de série pour les appareils iOS d’entreprise à l’aide de l’outil Apple Configurator."
+titleSuffix: Intune on Azure
+description: "Découvrez comment ajouter des numéros de série pour les appareils iOS d’entreprise à l’aide de l’outil Apple Configurator."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>Ajouter des numéros de série Apple Configurator
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Suivez ces étapes pour ajouter des numéros de série à Intune quand vous souhaitez [inscrire des appareils d’entreprise iOS à l’aide d’Apple Configurator avec l’Assistant Configuration](apple-configurator-setup-assistant-enroll-ios.md). Vous pouvez ajouter les numéros de série un par un, ou charger un fichier de valeurs séparées par des virgules (CSV) de numéros de série. Après avoir ajouté des numéros de série, vous pouvez leur attribuer un profil. Le profil contient les paramètres de gestion spécifiques que vous souhaitez appliquer aux appareils.
 
@@ -76,4 +73,3 @@ Les numéros de série de l’appareil peuvent avoir un des deux états suivants
 **Pour afficher l’état d’un numéro de série**
 
 Dans le panneau **Numéros de série Apple Configurator**, sélectionnez le numéro de série dont vous souhaitez voir l’état, puis regardez sous l’élément **État**.
-

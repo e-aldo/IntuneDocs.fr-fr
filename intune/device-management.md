@@ -1,32 +1,29 @@
 ---
 title: "Gérer des appareils avec Intune"
-titleSuffix: Intune Azure preview
-description: "Préversion Intune Azure : découvrez comment afficher les appareils que vous gérez avec Intune et effectuer diverses opérations dessus."
+titleSuffix: Intune on Azure
+description: "Découvrez comment afficher les appareils que vous gérez avec Intune et effectuer diverses opérations dessus."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/13/2017
+ms.date: 07/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 
+ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1fdb86184875d7082659d608b445b41b2ad9aa9e
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8f066e62e323fffb7c6954d83b2b55ee63f4be46
+ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/06/2017
 ---
-
 # <a name="what-is-microsoft-intune-device-management"></a>Qu’est-ce que la gestion des appareils Microsoft Intune ?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 La charge de travail **Appareils** vous donne des informations sur les appareils que vous gérez et vous permet de procéder à des tâches à distance sur ces appareils. Pour accéder à la charge de travail :
 
@@ -34,71 +31,46 @@ La charge de travail **Appareils** vous donne des informations sur les appareils
 2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
 
-Maintenant, choisissez l’une des options suivantes :
+Maintenant, vous pouvez effectuer les actions suivantes :
 
-- **Vue d’ensemble** : obtenez des informations sur les appareils inscrits, et les systèmes d’exploitation que chaque appareil s’exécute.
-- **Gérer** : choisissez **Tous les appareils** pour afficher la liste de tous les appareils que vous gérez.
-    Sélectionnez un de ces appareils dans la liste pour ouvrir le panneau <*Nom de l’appareil*> **Vue d’ensemble** où vous pouvez sélectionner un des éléments suivants :
-    - **Vue d’ensemble** : consultez des informations générales sur l’appareil, notamment des informations sur son nom, son propriétaire, s’il s’agit d’un appareil BYOD, son dernier archivage et bien plus encore.
+- [Afficher l’inventaire des appareils](device-inventory.md)
+- Effectuez les actions d’appareil à distance :
+    - [Supprimer les données d’entreprise](device-company-data-remove.md) 
+    - [Réinitialisation aux paramètres d’usine](device-factory-reset.md)
+    - [Verrouillage à distance](device-remote-lock.md)
+    - [Réinitialiser le code secret](device-passcode-reset.md)
+    - [Contourner le verrou d’activation](device-activation-lock-bypass.md)
+    - [Redémarrage à zéro](device-fresh-start.md)
+    - [Mode Perdu](device-lost-mode.md)
+    - [Localiser l’appareil](device-locate.md)
+    - [Redémarrer](device-restart.md)
+    - [Réinitialisation du code PIN Windows 10](device-windows-pin-reset.md)
+    - [Contrôle à distance pour Android](device-profile-android-teamviewer.md)
 
-    - **Matériel** : plus d’informations sur l’appareil, y compris son espace de stockage libre, son modèle et le fabricant, et bien plus encore.
-    ![Inventaire matériel des appareils gérés](./media/hardware-inventory.png)
-    - **Applications détectées** : affiche une liste de toutes les applications qu’Intune trouve installées sur l’appareil.
-    ![Nœud Applications détectées](./media/detected-applications.png)
-- **Moniteur** : choisissez **Actions d’appareil** pour afficher une liste d’actions d’appareil qui ont été effectuées sur les appareils que vous gérez et l’état actuel de ces actions.
+
+## <a name="support-for-each-device-action"></a>Prise en charge de chaque action de l’appareil
+
+Utilisez le tableau suivant pour connaître les plateformes d’appareils qui sont prises en charge par chaque action.
+
+|||||||
+|-|-|-|-|-|-|
+|Action de l’appareil|Windows|Windows Phone|iOS|macOS|Android|
+|**Supprimer les données d’entreprise**|Oui|Oui|Oui|Oui|Oui|
+|**Réinitialisation aux paramètres d’usine**|Windows 8.1 et versions ultérieures (pas les appareils gérés par EAS)|Oui|Oui|Non|Android for Work non pris en charge|
+|**Supprimer**|Oui|Oui|Oui|Oui|Oui|
+|**Verrouillage à distance**|Non|Windows Phone 8.1 et versions ultérieures|Oui|Non|Oui|
+|**Réinitialiser le code secret**|Non|Windows Phone 8.1 vers Windows 10 Creators Update non joint à Azure AD, Windows 10 Creators Update et versions ultérieures : tous|Oui|Non|Avant Android 7, Android for Work non pris en charge|
+|**Nouveau code secret** (pour les appareils Windows 10)|Non|Windows 10 Creators Update et versions ultérieures (joint à Azure AD)|Non|Non|Android for Work non pris en charge|
+|**Contourner le verrou d’activation**|Non|Non|Appareils appartenant à l’entreprise uniquement|Non|Non|
+|**Mode Perdu**|Non|Non|iOS 9.3 et versions ultérieures, supervisé et appartenant à l’entreprise|Non|Non|
+|**Localiser l’appareil**|Non|Non|iOS 9.3 et versions ultérieures en mode Perdu, supervisé et appartenant à l’entreprise|Non|Non|
+|**Déconnecter l’utilisateur actuel**|Non|Non|iOS 9.3 et versions ultérieures (appareils iPad partagés uniquement)|Non|Non|
+|**Redémarrer**|Windows 8.1 et versions ultérieures|Windows Phone 8.1 et versions ultérieures|Non|Non|Non|
+|**Redémarrage à zéro**|Windows 10 Creators Update et versions ultérieures|Non|Non|Non|Non|
+|**Nouvelle session d’assistance à distance**|Non|Non|Non|Non|Oui|
+|**Supprimer l’utilisateur**|Non|Non|iOS 9.3 et versions ultérieures (appareils iPad partagés uniquement)|Non|Non|
+
+## <a name="next-steps"></a>Étapes suivantes
+
+- Choisissez **Actions de l’appareil** pour connaître l’état des actions effectuées sur les appareils que vous gérez. 
 ![Surveiller les actions des appareils](./media/monitor-device-actions.png)
-- **Aide et support** : affiche les liens vers la documentation sur la résolution des problèmes et le support technique.
-
-## <a name="available-device-actions"></a>Actions d’appareils disponibles
-
-En outre, vous pouvez effectuer les actions suivantes à distance sur l’appareil (toutes les actions ne sont pas prises en charge par toutes les plateformes d’appareils) :
-
-### <a name="remove-company-data"></a>**Supprimer les données d’entreprise**
-Supprime uniquement les données d’entreprise gérées par Intune. Cela ne supprime pas les données personnelles de l’appareil. L’appareil ne sera plus géré par Intune et ne sera plus en mesure d’accéder aux ressources d’entreprise (non pris en charge pour les appareils Windows joints à Azure Active Directory).
-
-### <a name="factory-reset"></a>**Réinitialisation aux paramètres d’usine**
-Réinitialise l’appareil à ses paramètres par défaut. L’appareil ne sera plus géré par Intune et les données personnelles et d’entreprise seront supprimées. Vous ne pouvez pas annuler cette action.
-
-### <a name="remote-lock"></a>**Verrouillage à distance**
-Verrouille l’appareil. Le propriétaire de l’appareil doit utiliser son mot de passe pour le déverrouiller. Vous pouvez verrouiller à distance uniquement les appareils avec un code confidentiel ou un mot de passe défini.
-
-### <a name="reset-passcode"></a>**Réinitialiser le code secret**
-Génère un nouveau code pour l’appareil qui sera affiché dans le panneau <*Nom de l’appareil*> **Vue d’ensemble**.
-
-### <a name="bypass-activation-lock"></a>**Contourner le verrou d’activation**
-Cela supprime le verrou d’activation des appareils iOS sans qu’il soit nécessaire d’avoir l’ID Apple et le mot de passe de l’utilisateur. Une fois que vous contournez le verrou d’activation, l’appareil l’active à nouveau au démarrage de l’application Trouver mon iPhone. Contournez le verrou d’activation uniquement si vous avez un accès physique à l’appareil.
-
-### <a name="fresh-start"></a>**Fresh Start**
-
-Supprime toutes les applications qui ont été installées sur un PC Windows 10 exécutant Creators Update, puis met à jour automatiquement le PC vers la dernière version de Windows.
-Vous pouvez ainsi supprimer des applications (OEM) préinstallées, comme celles qui sont souvent fournies avec un nouveau PC. Vous pouvez configurer si les données utilisateur sont conservées quand cette action est exécutée sur l’appareil. Dans ce cas, les applications et les paramètres sont supprimés, mais le contenu du dossier personnel des utilisateurs est conservé.
-
-
-### <a name="lost-mode"></a>**Mode Perdu**
-Si un appareil iOS a été volé ou perdu, vous pouvez activer le mode Perdu. Cela vous permet de spécifier un message et un numéro de téléphone qui s’affichent sur l’écran de verrouillage de l’appareil. Pour cela :
-1.    Dans le volet Propriétés d’un appareil iOS, choisissez **Plus** > **Mode Perdu**.
-2.    Dans le panneau **Mode Perdu**, activez le mode Perdu, entrez le message qui s’affiche et éventuellement un numéro de téléphone de contact.
-3.    Cliquez sur **OK**.
-Lorsque vous activez le mode Perdu, vous bloquez l’utilisation de l’appareil. L’utilisateur final ne peut pas accéder à l’appareil tant que vous n’avez pas désactivé le mode Perdu. Quand le mode Perdu est activé, vous pouvez utiliser l’action **Localiser l’appareil** pour rechercher l’emplacement de l’appareil.
-Pour utiliser le mode Perdu, l’appareil doit être un appareil iOS d’entreprise, inscrit via le programme DEP, qui est en mode supervisé.
-
-### <a name="locate-device"></a>**Localiser l’appareil**
-Utilisez cette action à distance pour afficher l’emplacement d’un appareil iOS perdu ou volé sur une carte. L’appareil doit être un appareil iOS d’entreprise, inscrit via le programme DEP, qui est en mode supervisé. Avant que vous puissiez utiliser cette action, l’appareil doit être configuré en mode Perdu.
-1.    Dans le volet Propriétés d’un appareil iOS, choisissez **Plus** > **Localiser l’appareil**.
-2.    Une fois que l’appareil a été localisé, son emplacement s’affiche dans le panneau **Localiser l’appareil**.
-    ![Panneau Localiser l’appareil](./media/locate-device.png)
-
->[!NOTE]
->Pour des raisons de confidentialité, le degré de zoom sur le plan est limité.
-
-### <a name="restart"></a>**Redémarrer**
-Force le redémarrage de l’appareil. Le propriétaire de l’appareil n’est pas automatiquement informé du redémarrage, et peut ainsi perdre son travail.
-
-
-## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>Informations de sécurité et de confidentialité pour le mode Perdu et actions Localiser l’appareil
-- Aucune information d’emplacement de l’appareil n’est envoyée à Intune tant que vous n’activez pas cette action.
-- Lorsque vous utilisez l’action Localiser l’appareil, les coordonnées de latitude et de longitude de l’appareil sont envoyées à Intune et affichées dans le portail Azure.
-- Les données sont stockées pendant 24 heures avant d’être supprimées. Vous ne pouvez pas supprimer manuellement les données d’emplacement.
-- Les données d’emplacement sont chiffrées aussi bien pendant leur stockage que leur transmission.
-- Lorsque vous configurez le mode Perdu, nous vous recommandons de rédiger le message qui s’affiche sur l’écran de verrouillage de façon à ce qu’il inclue des informations qui permettent de déterminer l’emplacement de l’appareil.
-

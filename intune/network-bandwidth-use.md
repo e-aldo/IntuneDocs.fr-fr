@@ -14,15 +14,12 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 030aa380a1491eb3be4fd8f480b0ddc9a7860448
-ms.contentlocale: fr-fr
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="intune-network-bandwidth-use"></a>Utilisation de la bande passante réseau Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -95,7 +92,7 @@ Intune n’utilise aucune infrastructure locale (comme des serveurs exécutant l
 Pour gérer les ordinateurs qui se trouvent derrière des pare-feu et des serveurs proxy, vous devez configurer les pare-feu et les serveurs proxy afin d’autoriser les communications pour Intune. Pour gérer les ordinateurs qui se trouvent derrière un serveur proxy, gardez à l’esprit que :
 
 -   Le serveur proxy doit prendre en charge les protocoles **HTTP (80)** et **HTTPS (443)**, car les clients Intune utilisent ces deux protocoles
--   Intune prend en charge les serveurs proxy non authentifiés
+-   Intune nécessite un accès de serveur proxy non authentifié à manage.microsoft.com pour certaines opérations telles que le téléchargement de logiciels et de mises à jour
 
 Vous pouvez modifier les paramètres du serveur proxy sur des ordinateurs clients spécifiques ou utiliser des paramètres de stratégie de groupe pour modifier les paramètres pour tous les ordinateurs clients qui se trouvent derrière un serveur proxy spécifique.
 
@@ -140,4 +137,17 @@ Les tableaux suivants répertorient les ports et services auxquels le client Int
 |fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com |52.163.119.6|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.175.38.24|
 |fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com |52.163.119.3|
-
+|fef.msua01.manage.microsoft.com|138.91.243.97|
+|fef.msua02.manage.microsoft.com|52.177.194.236|
+|fef.msua04.manage.microsoft.com|23.96.112.28|
+|fef.msua05.manage.microsoft.com|138.91.244.151|
+|fef.msua06.manage.microsoft.com|13.78.185.97|
+|fef.msua07.manage.microsoft.com|52.175.208.218|
+|fef.msub01.manage.microsoft.com|137.135.128.214|
+|fef.msub02.manage.microsoft.com|137.135.130.29|
+|fef.msub03.manage.microsoft.com|23.97.165.17|
+|fef.msub05.manage.microsoft.com|23.97.166.52|
+|fef.msuc01.manage.microsoft.com|52.230.19.86|
+|fef.msuc02.manage.microsoft.com|23.98.66.118|
+|fef.msuc03.manage.microsoft.com|23.101.0.100|
+|fef.msuc05.manage.microsoft.com|52.230.16.180|

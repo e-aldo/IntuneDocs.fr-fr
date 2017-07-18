@@ -1,23 +1,29 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>métadonnées requises
-
-titre : Inscrire des appareils Android dans Intune titleSuffix : « Intune Azure en préversion » Description : « Intune Azure en préversion : Découvrez comment inscrire des appareils Android dans Intune Azure en préversion. »
-keywords: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04/12/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>métadonnées facultatives
-
-#<a name="robots"></a>ROBOTS :
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang :
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm :
-ms.custom: intune-azure
-
 ---
-
+title: Inscrire des appareils Android dans Intune
+titleSuffix: Intune on Azure
+description: "Apprenez à inscrire des appareils Android dans Intune."
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 06/28/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/01/2017
+---
 # <a name="enroll-android-devices"></a>Inscrire des appareils Android
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 En votre qualité d’administrateur Intune, Intune vous permet de gérer des appareils Android, notamment des appareils Samsung Knox Standard. Vous pouvez également gérer le profil professionnel sur les appareils [Android for Work](#enable-enrollment-of-android-for-work-devices).
 
@@ -25,15 +31,13 @@ Les appareils qui exécutent Samsung KNOX Standard sont pris en charge pour la g
 
 ## <a name="prerequisite"></a>Prérequis
 
-Vous devez définir l’autorité MDM sur **Microsoft Intune** pour préparer la gestion des appareils mobiles. Consultez la page [Configurer l’autorité MDM](mdm-authority-set.md) pour obtenir des instructions. Cet élément ne se définit qu’une seule fois, lorsque vous configurez pour la première fois Intune pour la gestion des appareils mobiles, donc vous l’avez peut-être déjà défini.
+Vous devez définir l’autorité MDM sur **Microsoft Intune** pour préparer la gestion des appareils mobiles. Consultez la page [Configurer l’autorité MDM](mdm-authority-set.md) pour obtenir des instructions. Cet élément ne se définit qu’une seule fois, quand vous configurez pour la première fois Intune pour la gestion des appareils mobiles.
 
 ## <a name="set-up-android-enrollment"></a>Configurer l’inscription Android
 
 Par défaut, Intune autorise l’inscription des appareils Android et Samsung Knox Standard.
 
-Pour empêcher l’inscription des appareils Android, ou uniquement des appareils personnels Android, consultez [Définir des restrictions de type d’appareil](enrollment-restrictions-set.md#set-device-type-restrictions).
-
-Pour définir le nombre maximal d’appareils qu’un utilisateur peut inscrire, consultez [Définir des restrictions de limite d’appareil](enrollment-restrictions-set.md#set-device-limit-restrictions).
+Pour empêcher l’inscription des appareils Android, ou uniquement des appareils personnels Android, consultez [Définir des restrictions de type d’appareil](enrollment-restrictions-set.md).
 
 Pour activer la gestion des appareils, vos utilisateurs doivent inscrire leurs appareils en téléchargeant l’application Portail d’entreprise Intune, qui est disponible à partir de Google Play, puis en ouvrant l’application et en suivant les invites d’inscription. Une fois que les appareils Android sont gérés, vous pouvez [affecter des stratégies de conformité](compliance-policy-create-android.md), [gérer les applications](app-management.md), et bien plus encore.
 
@@ -78,7 +82,7 @@ Vous pouvez également leur envoyer un lien vers les étapes d’inscription en 
 
 Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
 
-- [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](end-user-educate.md)
 - [Utilisation de votre appareil Android avec Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Séparation de votre compte administratif Android for Work

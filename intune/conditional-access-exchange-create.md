@@ -1,7 +1,7 @@
 ---
 title: "Créer et affecter une stratégie d’accès conditionnel Exchange sur site"
-titleSuffix: Intune Azure preview
-description: "Préversion d’Intune Azure : guide de configuration de l’accès conditionnel Exchange sur site et Exchange Online Dedicated hérité dans Intune"
+titleSuffix: Intune on Azure
+description: "Guide de configuration de l’accès conditionnel Exchange sur site et Exchange Online Dedicated hérité dans Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/03/2017
 ---
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Guide de création et d’affectation d’une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans Microsoft Intune Azure
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Guide de création et d’affectation d’une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans la préversion de Microsoft Intune Azure
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cette rubrique vous guide tout au long du processus de configuration de l’accès conditionnel pour Exchange sur site basé sur la compatibilité des appareils.
 
@@ -85,7 +82,7 @@ L'application native **Courrier** sur Windows 8.1 et les versions ultérieures (
 
 4. Choisissez **Intune**, vous voyez le **tableau de bord Intune**.
 
-5.  Choisissez **Accès conditionnel**, puis
+5. Choisissez **Accès sur site**, puis
 
 6. Le panneau **Local** affiche l’état de la stratégie d’accès conditionnel et les appareils qui en sont affectés.
 
@@ -93,8 +90,8 @@ L'application native **Courrier** sur Windows 8.1 et les versions ultérieures (
 
 8. Dans le panneau **Accès à Exchange sur site**, choisissez **Oui** pour activer le contrôle d’accès Exchange sur site.
 
-      > [!NOTE]
-      > Si vous n’avez pas configuré le connecteur Exchange Active Sync sur site, cette option est désactivée.  Vous devez tout d’abord installer et configurer ce connecteur avant d’activer l’accès conditionnel pour Exchange sur site. Pour plus de détails, consultez la rubrique [Installer le connecteur Exchange local de Microsoft Intune](exchange-connector-install.md)
+    > [!NOTE]
+    > Si vous n’avez pas configuré le connecteur Exchange Active Sync sur site, cette option est désactivée.  Vous devez tout d’abord installer et configurer ce connecteur avant d’activer l’accès conditionnel pour Exchange sur site. Pour plus de détails, consultez la rubrique [Installer le connecteur Exchange local de Microsoft Intune](exchange-connector-install.md)
 
 9. Sous **Affectation**, choisissez **Groupes inclus**.  Utilisez le groupe d’utilisateurs de sécurité auquel appliquer l'accès conditionnel. Dans ce cas, les utilisateurs doivent inscrire leurs appareils auprès d'Intune et se conformer aux profils de conformité.
 
@@ -114,12 +111,12 @@ L'application native **Courrier** sur Windows 8.1 et les versions ultérieures (
 
 15. Dans le panneau **Local**, cliquez sur **Enregistrer** pour enregistrer la stratégie d’accès conditionnel.
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>Création de stratégies d’accès conditionnel Azure AD dans la version préliminaire d’Intune Azure
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Création de stratégies d’accès conditionnel Azure AD dans Intune
 
 À compter d’Intune version 1704, les administrateurs peuvent créer des stratégies d’accès conditionnel Azure AD depuis la version préliminaire d’Intune Azure, ce qui leur offre plus de commodité, car il n’est plus nécessaire de basculer entre les charges de travail Azure et Intune.
 
 > [!IMPORTANT]
-> Vous devez disposer d’une licence Azure AD Premium pour créer des stratégies d’accès conditionnel Azure AD à partir du portail de la version préliminaire d’Intune Azure.
+> Vous devez disposer d’une licence Azure AD Premium pour créer des stratégies d’accès conditionnel Azure AD à partir du portail Intune Azure.
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>Pour créer une stratégie d’accès conditionnel Azure AD
 

@@ -7,13 +7,13 @@ L’inscription automatique permet aux utilisateurs d’inscrire leurs appareils
 - Abonnement Microsoft Intune
 
 
-### <a name="configure-automatic-mdm-enrollment"></a>Configurer l’inscription automatique de la gestion des appareils mobiles
+### <a name="configure-automatic-mdm-enrollment"></a>Configurer l’inscription automatique de MDM
 
 1. Connectez-vous au [Portail de gestion Azure](https://portal.azure.com) (https://manage.WindowsAzure.com), puis sélectionnez **Azure Active Directory**.
 
   ![Capture d’écran du portail Azure](../media/auto-enroll-azure-main.png)
 
-2. Sélectionnez **Mobilité (gestion des données de référence et gestion des applications mobiles)**.
+2. Sélectionnez **Mobilité (MDM et GAM)**.
 
   ![Capture d’écran du portail Azure](../media/auto-enroll-mdm.png)
 
@@ -21,18 +21,21 @@ L’inscription automatique permet aux utilisateurs d’inscrire leurs appareils
 
   ![Capture d’écran du portail Azure](../media/auto-enroll-intune.png)
 
-4. Configurez **Portée de l’utilisateur Gestion des données de référence**. Spécifiez les appareils des utilisateurs qui doivent être gérés par Microsoft Intune. Les appareils Windows 10 de ces utilisateurs sont automatiquement inscrits à la gestion avec Microsoft Intune.
+4. Configurez **Portée des utilisateurs MDM**. Spécifiez les appareils des utilisateurs qui doivent être gérés par Microsoft Intune. Les appareils Windows 10 de ces utilisateurs sont automatiquement inscrits à la gestion avec Microsoft Intune.
 
   - **Aucun**
-  - **Partiel**
+  - **Quelques-uns**
   - **Tous**
 
    ![Capture d’écran du portail Azure](../media/auto-enroll-scope.png)
 
 5. Utilisez les valeurs par défaut pour les URL suivantes :
-    - **URL des conditions d’utilisation de la gestion des données de référence**
-    - **URL de détection MDM**
-    - **URL de conformité GAM**
+    - **URL des conditions d'utilisation de MDM**
+    - **URL de détection de MDM**
+    - **URL de conformité de MDM**
+
+    > [!IMPORTANT]
+    > Si un utilisateur est membre d’un groupe pour lequel l’inscription automatique à MDM et la gestion des applications mobiles (GAM) sont toutes deux activées, et qu’il tente de joindre son appareil personnel à l’espace de travail, seul GAM est activé. 
 
 6. Sélectionnez **Enregistrer**.
 

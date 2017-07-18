@@ -1,12 +1,12 @@
 ---
 title: "Paramètres Intune AirPrint pour appareils iOS et Mac OS"
-titleSuffix: Intune Azure preview
-description: "Intune Azure en version préliminaire : découvrez comment utiliser Intune pour connecter automatiquement des appareils iOS et Mac OS à des imprimantes compatibles AirPrint."
+titleSuffix: Intune on Azure
+description: "Découvrez comment utiliser Intune pour connecter automatiquement des appareils iOS et Mac OS à des imprimantes compatibles AirPrint."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,26 +15,23 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 55486693e2f5678ceeb20dd3a0ef3c52553871d2
-ms.contentlocale: fr-fr
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 743eb9a71efe1a5ea18b15312fdd4fe684f0ff07
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>Paramètres AirPrint pour appareils iOS et Mac OS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Utilisez ces paramètres pour configurer les appareils iOS ou Mac OS afin qu’ils se connectent automatiquement aux imprimantes compatibles AirPrint sur votre réseau. Vous aurez besoin de l’adresse IP et du chemin d’accès de la ressource de vos imprimantes pour continuer.
+Utilisez ces paramètres pour configurer les appareils iOS ou Mac OS afin qu’ils se connectent automatiquement aux imprimantes compatibles AirPrint sur votre réseau. Vous avez besoin de l’adresse IP et du chemin de la ressource de vos imprimantes pour continuer.
 
 ## <a name="find-airprint-printer-information"></a>Rechercher les informations relatives à l’imprimante AirPrint
 
 Utilisez cette procédure pour ajouter des informations AirPrint à la charge utile AirPrint afin que les utilisateurs d’appareils iOS puissent effectuer des impressions sur des imprimantes AirPrint connues.
 
-1. Sur un Mac connecté au même réseau local (sous-réseau) que les imprimantes Airprint, ouvrez le Terminal (à partir de **/Applications/Utilities**)
+1. Sur un Mac connecté au même réseau local (sous-réseau) que les imprimantes AirPrint, ouvrez le Terminal (à partir de **/Applications/Utilities**)
 2. Dans le Terminal, tapez **ippfind**, puis appuyez sur Entrée.
 3. Notez toutes les informations sur l’imprimante retournées par la commande, par exemple : **ipp://myprinter.local.:631/ipp/port1**. La première partie des informations correspond au nom de votre imprimante, la dernière partie au chemin d’accès de la ressource.
 4. Dans le Terminal, tapez **ping myprinter.local**, puis appuyez sur Entrée.
@@ -49,3 +46,7 @@ Utilisez cette procédure pour ajouter des informations AirPrint à la charge ut
 
 Vous pouvez également importer une liste d’imprimantes à partir d’un fichier .csv, ou encore exporter la liste.
 
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Vous pouvez maintenant affecter le profil d’appareil aux groupes que vous choisissez. Pour plus d’informations, consultez [Guide pratique pour attribuer des profils d’appareils](device-profile-assign.md).
