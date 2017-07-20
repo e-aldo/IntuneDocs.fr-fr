@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/01/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f8be4f6bf47ceb966e9042465dc8839d9aa9119
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c01099888ed4cfd04264ad902c73cf475385f1e3
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier Windows à Microsoft Intune
 
@@ -38,31 +38,33 @@ ms.lasthandoff: 07/01/2017
 ## <a name="step-2---configure-the-app-package-file"></a>Étape 2 : configurer le fichier de package d’application
 
 1. Dans le panneau **Ajouter une application**, choisissez **Package d’application**.
-2. Dans le panneau de fichiers **Package d’application**, cliquez sur le bouton Parcourir et sélectionnez un fichier d’installation Windows avec l’extension **.msi** (les autres types de fichiers d’installation ne sont pas pris en charge).
+2. Dans le panneau de fichiers **Package d’application**, cliquez sur le bouton Parcourir et sélectionnez un fichier d’installation Windows avec l’extension **.msi**, **.appx** ou **.appxbundle**.
 3. Quand vous avez terminé, cliquez sur **OK**.
 
 
 ## <a name="step-3---configure-app-information"></a>Étape 3 : configurer les informations de l’application
 
 1. Dans le panneau **Ajouter une application**, choisissez **Package d’application**.
-2. Dans le panneau **Informations sur l’application**, configurez les informations suivantes. Selon l’application choisie, certaines valeurs de ce panneau peuvent avoir été renseignées automatiquement :
-    - **Nom** : entrez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
-    - **Description :** entrez la description de l’application. Ce libellé s'affichera dans le portail d'entreprise.
+2. Dans le panneau **Informations sur l’application**, configurez les informations suivantes (certaines valeurs de ce panneau peuvent être complétées automatiquement) :
+    - **Nom** : entrez le nom de l’application tel qu’il est affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d’application existe deux fois, une seule application est proposée aux utilisateurs du portail d’entreprise.
+    - **Description :** entrez la description de l’application. La description est présentée aux utilisateurs du portail d’entreprise.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **Catégorie** : sélectionnez une ou plusieurs des catégories d’applications intégrées ou une catégorie que vous avez créée. Cela permettra aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
+    - **Catégorie** : sélectionnez une ou plusieurs des catégories d’applications intégrées ou une catégorie que vous avez créée. En classant les applications par catégorie, vous facilitez la recherche de l’application pour les utilisateurs qui naviguent dans le portail d’entreprise.
     - **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
-    - **URL d’informations** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations sur cette application. Cette URL s'affichera dans le portail d'entreprise.
-    - **URL de confidentialité** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations de confidentialité pour cette application. Cette URL s'affichera dans le portail d'entreprise.
-    - **Arguments de ligne de commande** : si vous le souhaitez, entrez tous les arguments de ligne de commande que vous voulez appliquer au fichier .msi lors de son exécution, comme **/q**.
+    - **URL d’information** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations sur l’application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
+    - **URL de la déclaration de confidentialité** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations de confidentialité relatives à l’application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
+    - **Arguments de ligne de commande** : si vous le souhaitez, entrez tous les arguments de ligne de commande que vous voulez appliquer au fichier .msi pendant son exécution, comme **/q**.
     - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
     - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
     - **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-    - **Logo** : chargez une icône qui sera associée à l’application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
+    - **Logo** : chargez l’icône qui est associée à l’application. Cette icône s’affiche avec l’application quand les utilisateurs parcourent le portail d'entreprise.
 3. Quand vous avez terminé, cliquez sur **OK**.
 
 ## <a name="step-4---finish-up"></a>Étape 4 : terminer
 
-1. Dans le panneau **Ajouter une application**, vérifiez l’exactitude des informations que vous avez configurées.
+1. Dans le panneau **Ajouter une application**, vérifiez que vous avez correctement configuré les informations de l’application.
 2. Sélectionnez **Ajouter** pour charger l’application sur Intune.
 
-L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
+## <a name="next-steps"></a>Étapes suivantes
+
+L’application que vous avez créée s’affiche dans la liste des applications. Vous pouvez maintenant l’affecter aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).

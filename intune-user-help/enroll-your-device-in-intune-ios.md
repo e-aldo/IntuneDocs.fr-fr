@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,27 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Inscrire un appareil iOS dans Intune
 
 Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil iOS pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, le service Informatique peut gérer ces ressources professionnelles ou pédagogiques, les sécuriser et vous donner la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il si vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > Si vous essayez d’inscrire un appareil macOS, tel qu’un MacBook Pro ou un iMac, [suivez plutôt ces instructions](enroll-your-device-in-intune-macos.md).
 
 **Avant de commencer :**
 
-- Veillez à terminer l’inscription après avoir démarré la procédure. Une interruption de plus de quelques minutes arrête généralement le processus et vous oblige à effectuer un redémarrage.
+- Veillez à terminer l’inscription après avoir démarré la procédure. Une interruption de plusieurs minutes a généralement pour effet d’arrêter le processus et vous oblige à recommencer.
 - Si votre inscription échoue pour une raison quelconque, vous devez revenir à l’application Portail d’entreprise et réessayer.
 - Vérifiez que votre connexion Wi-Fi fonctionne. Si ce n’est pas le cas, l’inscription échoue.
-- Si vous avez bloqué Safari sur votre appareil, débloquez-le. Vous devez utiliser Safari pour effectuer l’inscription.
+- Si vous avez bloqué Safari sur votre appareil, débloquez-le. Safari est utilisé dans le processus d’inscription d’appareil.
 
 
 **Pour inscrire un appareil iOS :**
@@ -51,8 +51,8 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-> [!NOTE]
-> Les triangles jaunes ne signifient pas que vous avez déjà rencontré une erreur. Ces icônes indiquent qu’il existe toujours des étapes à effectuer dans le processus d’inscription.
+  > [!NOTE]
+  > Les triangles jaunes ne signifient pas que vous avez déjà rencontré une erreur. Ces icônes indiquent qu’il existe toujours des étapes à effectuer dans le processus d’inscription.
 
 4. Consultez la liste de ce que votre administrateur informatique peut voir et ne pas voir sur votre appareil inscrit, puis appuyez sur **Continuer**.
 
@@ -88,7 +88,7 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
-12. Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **Continuer**. Si votre administrateur informatique a configuré des exigences de sécurité supplémentaires, telles que l’obligation de définir un mot de passe, suivez les instructions à l’écran jusqu’à ce que toutes les exigences de conformité soient satisfaites et que l’écran Configuration de l’accès à l’entreprise réapparaisse, puis appuyez sur **Continuer**.
+12. Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **Continuer**. Cet écran vous indique les autres conditions à remplir pour rendre votre appareil compatible, comme définir un mot de passe. Suivez les instructions affichées à l’écran pour remplir toutes les conditions de conformité. Dès que vous avez terminé, vous revenez à l’écran Configuration de l’accès à l’entreprise. Appuyez sur **Continuer**.
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -99,6 +99,6 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 Votre appareil est maintenant inscrit dans Intune, et l’application Portail d’entreprise réapparaît.
 
 > [!Note]
-> Si votre organisation utilise un logiciel de gestion des dépenses de télécommunications, vous devrez exécuter une procédure supplémentaire pour finaliser l’inscription de votre appareil. Découvrez-en plus [ici](enroll-your-device-with-telecom-expense-management-ios.md).
+> Vous avez quelques étapes supplémentaires à effectuer avant que votre appareil ne soit totalement inscrit. Obtenez des informations supplémentaires sur l’[inscription de votre appareil en utilisant la gestion des dépenses de télécommunications](enroll-your-device-with-telecom-expense-management-ios.md). Si votre organisation utilise le Programme d’inscription des appareils (DEP) d’Apple, vous trouverez un complément d’informations [ici](enroll-your-device-dep-ios.md).
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).

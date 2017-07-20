@@ -1,6 +1,6 @@
 ---
 title: "Configuration de base d’Intune"
-description: "L’objectif de cet article est de décrire les étapes à suivre pour configurer Microsoft Intune."
+description: "Cet article décrit les étapes à suivre pour configurer Microsoft Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,46 +13,41 @@ ms.technology:
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3129b2a8d93e91493455da5f3e5fd1a59dd77bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9ea12f3707b830f0e3426526a7ae91d176d6e809
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="basic-setup"></a>Configuration de base
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Une fois l’environnement évalué, il est temps de configurer Intune.
+Une fois que vous avez évalué votre environnement, vous devez configurer Intune.
 
 ## <a name="external-dependencies-for-an-intune-deployment"></a>Dépendances externes d’un déploiement Intune
 
 ### <a name="identity"></a>Fournisseur
 
-Intune requiert l’utilisation d’Azure Active Directory (Azure AD) en tant que fournisseur de groupes d’utilisateurs et d’identités.
+Intune requiert l’utilisation d’Azure Active Directory (Azure AD) en tant que fournisseur de groupes d’utilisateurs et d’identités. Informations supplémentaires :
 
--   En savoir plus sur les [conditions requises pour les identités](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
+-  [Configuration requise pour les identités](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   En savoir plus sur les [conditions requises pour la synchronisation d’annuaires](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements).
+-   [Configuration requise pour la synchronisation d’annuaires](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   En savoir plus sur [les conditions requises pour l’authentification multifacteur](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
+-   [Configuration requise pour l’authentification multifacteur (MFA)](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
--   En savoir plus sur la [planification de vos groupes d’utilisateurs et d'appareils](/intune/users-permissions-add).
+-   [Planification de vos groupes d’utilisateurs et d’appareils](users-add.md)
 
--   En savoir plus la [création de groupes d’utilisateurs et d'appareils](/intune/groups-get-started).
+-   [Comment créer des groupes d’utilisateurs et d’appareils](groups-get-started.md)
 
-Si votre organisation utilise déjà Office 365, il est important qu'Intune utilise le même environnement Azure Active Directory.
+Si votre organisation utilise déjà Office 365, Intune doit utiliser le même environnement Azure Active Directory.
 
 ### <a name="pki-optional"></a>Infrastructure PKI (facultatif)
 
-Si vous comptez utiliser l’authentification basée sur un certificat pour valider des profils VPN, Wi-Fi ou de courrier électronique avec Intune, veillez à mettre en place une [infrastructure PKI](/intune/certificates-configure) prise en charge, prête à créer et à déployer des profils de certificat.
+Si vous comptez utiliser l’authentification basée sur un certificat pour valider des profils VPN, Wi-Fi ou de courrier électronique avec Intune, veillez à mettre en place une [infrastructure PKI](certificates-configure.md) prise en charge, prête à créer et à déployer des profils de certificat. Pour en savoir plus sur la configuration de certificats dans Intune, consultez les rubriques suivantes :
 
-Pour en savoir plus sur la configuration des certificats dans Intune, consultez les documents indiqués ci-dessous.
+-   [Comment configurer l’infrastructure de certificats pour SCEP](/intune/certificates-scep-configure)
 
--   [Configurer l’infrastructure de certificats pour SCEP](/intune/certificates-scep-configure).
-
--   [Configurer l’infrastructure de certificat pour PFX](/intune/certficates-pfx-configure).
+-   [Comment configurer l’infrastructure de certificats pour PFX](/intune/certficates-pfx-configure)
 
 
 ## <a name="task-list-for-an-intune-setup"></a>Liste des tâches de configuration de Microsoft Intune
@@ -73,17 +68,17 @@ Avant de pouvoir migrer vers Intune, vous devez créer un abonnement Intune.
 
 -   Si vous avez créé un locataire Azure Active Directory, découvrez comment [générer des utilisateurs ou synchroniser un utilisateur à partir de votre instance Active Directory locale.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
-### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tâche 3 : Définir l’autorité de gestion des périphériques mobiles sur Intune
+### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tâche 3 : Définir votre autorité MDM sur Intune
 
-Vous pouvez gérer Intune via le portail Azure ou la console Configuration Manager Current Branch. Nous vous recommandons de gérer ce logiciel via le [portail Azure](https://portal.azure.com), sauf si vous souhaitez l’intégrer dans un déploiement Configuration Manager Current Branch.
+Vous pouvez gérer Intune via le portail Azure ou la console Configuration Manager Current Branch. Nous vous recommandons de gérer Intune via le [portail Azure](https://portal.azure.com), sauf si vous avez besoin d’intégrer Intune dans un déploiement Configuration Manager Current Branch.
 
-Définissez l’autorité de gestion des périphériques mobiles (GPM) sur **Intune** pour activer le portail Intune Azure. Grâce à l’utilisation d’une autre autorité de gestion des périphériques mobiles (GPM), Intune peut transférer l’administration de ces données à d’autres consoles de gestion Microsoft. Cependant, ces cas sont rares.
+Définissez l’autorité MDM sur **Intune** pour activer le portail Intune Azure. En utilisant une autre autorité MDM, Intune peut transférer la gestion MDM à d’autres consoles de gestion Microsoft. Cependant, ces cas sont rares.
 
 > [!IMPORTANT]
-> Si vous transférez la fonction d’administration des appareils mobiles à Intune pour la première fois, vous devez définir l’autorité GPM sur Intune.
+> Si vous transférez la fonction d’administration des appareils mobiles à Intune pour la première fois, vous devez définir l’autorité MDM sur Intune.
 
--   Découvrez comment [définir l’autorité de gestion des appareils mobiles](/intune/mdm-authority-set).
+Découvrez comment [définir l’autorité de gestion des appareils mobiles](mdm-authority-set.md).
 
 ## <a name="next-step"></a>Étape suivante
 
-[Configurer les stratégies de gestion des appareils mobiles et des applications](migration-guide-configure-policies.md)
+Configurer des [stratégies de gestion des appareils mobiles et des applications](migration-guide-configure-policies.md).

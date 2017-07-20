@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 112f60ff208c27825ddd0f4c812535b255894333
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Utilisez des stratégies de configuration des applications dans Microsoft Intune pour fournir les paramètres pouvant être nécessaires quand les utilisateurs exécutent une application iOS. Par exemple, une application peut exiger que les utilisateurs spécifient les paramètres suivants :
+Utilisez des stratégies de configuration des applications dans Microsoft Intune pour fournir les paramètres nécessaires quand les utilisateurs exécutent une application iOS. Par exemple, une application peut exiger que les utilisateurs spécifient les paramètres suivants :
 
 -   Un numéro de port personnalisé.
 
@@ -35,7 +35,7 @@ Utilisez des stratégies de configuration des applications dans Microsoft Intune
 
 -   Des paramètres de personnalisation comme le logo de l’entreprise.
 
-Si les utilisateurs n’entrent pas correctement ces paramètres, ils occasionneront plus de travail à votre assistance technique et mettront plus de temps à adopter les nouvelles applications.
+Si les utilisateurs n’entrent pas correctement ces paramètres, cela peut occasionner plus de travail à votre assistance technique et ralentir l’adoption des nouvelles applications.
 
 Les stratégies de configuration des applications peuvent vous aider à éliminer ces problèmes en vous permettant d’affecter ces paramètres dans une stratégie avant que les utilisateurs exécutent l’application. Les paramètres sont alors fournis automatiquement, les utilisateurs n’ont aucune action à effectuer.
 
@@ -50,61 +50,39 @@ Vous n’affectez pas ces stratégies directement sur les appareils et utilisate
 > Pour plus d’informations sur les types d’installation d’application, consultez [Guide pratique pour ajouter une application à Microsoft Intune](apps-add.md).
 
 ## <a name="create-an-app-configuration-policy"></a>Créer une stratégie de configuration des applications
-
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
-1.  Dans la charge de travail **Applications mobiles**, choisissez **gérer** > **Stratégies de configuration d’application**.
-
-2.  Dans le panneau de liste de stratégies, choisissez **Ajouter**.
-
-3.  Dans le panneau **Ajouter une stratégie de configuration**, indiquez un nom et éventuellement une description pour la stratégie de configuration d’application.
-4.  Choisissez **Application associée**, puis, dans le panneau **Application associée**, choisissez l’application gérée pour laquelle vous souhaitez appliquer la configuration.
-5.  Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration** puis, dans le panneau Paramètres de configuration, choisissez la façon dont vous souhaitez spécifier les valeurs XML qui composent le profil de configuration à partir de :
-    - **Entrer des données XML** : entrez ou collez une liste de propriétés XML contenant les paramètres de configuration d’application souhaités. Le format de la liste de propriétés XML varie en fonction de l’application que vous configurez. Pour plus d’informations sur le format exact à utiliser, contactez le fournisseur de l’application.
-    Intune vérifie que le format du XML entré est valide. Il ne vérifie pas que la liste de propriétés XML fonctionne avec l’application à laquelle elle est associée.
-    Pour en savoir plus sur les listes de propriétés XML, consultez [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) sur le site iOS Developer Library.
-    - **Utiliser le concepteur de configuration** : vous permet de spécifier les paires clé / valeur XML directement dans le portail.
-8. Lorsque vous avez terminé, revenez au panneau **Ajouter une stratégie de configuration** et appuyez sur **Créer**.
+1.  Connectez-vous au portail Azure.
+2.  Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+3.  Dans le panneau **Intune**, choisissez **Applications mobiles**.
+4.  Dans la charge de travail **Applications mobiles**, choisissez **gérer** > **Stratégies de configuration d’application**.
+5.  Dans le panneau de liste de stratégies, choisissez **Ajouter**.
+6.  Dans le panneau **Ajouter une stratégie de configuration**, indiquez un **nom** et éventuellement une **description** pour la stratégie de configuration d’application.
+7.  Pour **Type d'inscription de l'appareil**, choisissez parmi :
+    - **Inscrit dans Intune** : pour les applications qui intègrent le Kit de développement logiciel (SDK) d’application Intune et qui sont gérées par Intune.
+    - **Non inscrit dans Intune** : pour les applications qui intègrent le Kit de développement logiciel (SDK) d’application Intune et qui ne sont pas gérées par Intune, ou qui sont gérées par une autre solution.
+8.  Pour **Plateforme**, choisissez **iOS** (pour les appareils inscrits dans Intune uniquement)
+9.  Choisissez **Application associée**, puis, dans le panneau **Application associée**, choisissez l’application gérée pour laquelle vous souhaitez appliquer la configuration.
+10. Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**
+11. Dans le panneau **Paramètres de configuration**, choisissez la façon dont vous souhaitez spécifier les valeurs XML qui composent le profil de configuration à partir de :
+    - **Entrer des données XML** (pour les appareils inscrits dans Intune uniquement) : entrez ou collez une liste de propriétés XML contenant les paramètres de configuration d’application souhaités. Le format de la liste de propriétés XML varie en fonction de l’application que vous configurez. Pour plus d’informations sur le format exact à utiliser, contactez le fournisseur de l’application.
+Intune vérifie que le format du XML entré est valide. Il ne vérifie pas que la liste de propriétés XML fonctionne avec l’application à laquelle elle est associée.
+Pour en savoir plus sur les listes de propriétés XML, consultez [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) sur le site iOS Developer Library.
+    - **Utiliser le concepteur de configuration** (que l’appareil soit inscrit ou non dans Intune) : vous permet de spécifier les paires clé / valeur XML directement dans le portail.
+11. Lorsque vous avez terminé, revenez au panneau **Ajouter une stratégie de configuration** et appuyez sur **Créer**.
 
 La stratégie est créée et s’affiche dans le panneau de liste des stratégies.
 
-Ensuite, continuez à [Affecter](apps-deploy.md) et [Surveiller](apps-monitor.md) l’application comme d’habitude.
+
+
+>[!Note]
+>Vous pouvez utiliser le [Kit de développement logiciel (SDK) d’application Intune](https://docs.microsoft.com/intune/app-sdk-ios) pour préparer les applications métier qui seront gérées par les stratégies de protection des applications Intune et les stratégies de configuration d’applications, que l’appareil soit inscrit ou non dans Intune. Par exemple, vous pouvez utiliser une stratégie de configuration d’applications afin de configurer les URL autorisées et bloquées pour [Intune Managed Browser](app-configuration-managed-browser.md). Une fois qu’une application est compatible avec ces stratégies, vous pouvez la configurer à l’aide d’une stratégie.
+
 
 Quand l’application affectée est exécutée sur un appareil, elle s’exécute avec les paramètres que vous avez configurés dans la stratégie de configuration des applications.
+Consultez la documentation de l’application que vous configurez pour plus d’informations sur ce qui se passe si une ou plusieurs stratégies de configuration d’applications sont en conflit.
 
-> [!TIP]
-> Si une ou plusieurs stratégies de configuration des applications sont en conflit, aucune stratégie n’est appliquée.
+>[!Tip]
+>En outre, vous pouvez utiliser l’API Graph pour accomplir ces tâches. Pour plus d’informations, consultez [Configuration ciblée de gestion des applications mobiles de référence pour API Graph](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
-## <a name="create-a-mam-targeted-configuration-policy"></a>Créer une stratégie de configuration de gestion des applications mobiles ciblée
-La configuration ciblée de gestion des applications mobiles permet à une application de recevoir des données de configuration par le biais du SDK d’application Intune. Les variantes et le format de ces données doivent être définis et communiqués aux clients Intune par le propriétaire/développeur d’application. Les administrateurs Intune peuvent cibler et déployer des données de configuration par le biais de la console Intune Azure. Les données de configuration de gestion des applications mobiles ciblée peuvent être fournies via le service de gestion des applications mobiles aux applications compatibles avec la gestion des applications mobiles sans inscription. Par exemple, [Intune Managed Browser](https://docs.microsoft.com/intune/app-configuration-managed-browser) a une liste d’URL autorisées/bloquées. Les données de configuration d’application sont envoyées via notre service de gestion des applications mobiles directement à l’application au lieu de passer par le canal de gestion des appareils mobiles. Les [stratégies de configuration d’application de gestion des appareils mobiles](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#create-an-app-configuration-policy) sont la solution native via la gestion des appareils mobiles. La principale différence avec la configuration ciblée de la gestion des applications mobiles est que l’appareil sur lequel s’exécute l’application n’a pas besoin être inscrit dans la gestion des appareils mobiles. La configuration ciblée de la gestion des applications mobiles est disponible sur iOS et Android. Pour iOS, l’application doit intégrer le SDK d’application Intune pour iOS (v 7.0.1) et participer aux paramètres de configuration d’application. Les étapes de création d’une stratégie de configuration ciblée de gestion des applications mobiles sont les suivantes : 
-
-1. Connectez-vous au **portail Azure**.
-
-2. Choisissez **Intune > Applications mobiles - Stratégies de configuration des applications**.
-
-3. Dans le panneau **Stratégies de configuration des applications**, choisissez **Ajouter**.
-
-4. Saisissez un **Nom** et éventuellement une **Description** pour les paramètres de configuration d’application, et choisissez **Non inscrit avec Intune**.
-
-5. Choisissez **Sélectionner les applications requises** puis, dans le panneau d’applications **Ciblé**, choisissez les applications pour les plateformes prévues. <br>
-**Remarque :** pour les applications métier, sélectionnez **Autres applications**. Saisissez l’ID de package pour votre application.
-
-6. Choisissez **OK** pour revenir au panneau **Ajouter une configuration d’application**.
-
-7. Choisissez **Définir la configuration**. Dans le panneau **Configuration**, vous définissez des paires clé / valeur pour fournir des configurations.
-
-8. Une fois que vous avez terminé, choisissez **Enregistrer**.
-
-9. Sur le **Panneau de configuration Ajouter une application**, choisissez **Créer**.
-
-La nouvelle configuration est créée et s’affiche dans le panneau de configuration des applications.
-
-Ensuite, continuez à [Affecter](apps-deploy.md) et [Surveiller](apps-monitor.md) l’application comme d’habitude.
-
-Quand l’application affectée (intégrée avec le SDK d’application Intune) est exécutée sur un appareil, elle s’exécute avec les paramètres que vous avez configurés dans la stratégie de configuration ciblée de gestion des applications mobiles. L’application affectée doit avoir intégré à la version prise en charge du SDK d’application Intune. Pour plus d’informations sur les conditions requises de développement d’application pour utiliser les stratégies de configuration ciblée de gestion des applications mobiles, consultez [Guide d’intégration du SDK d’application Intune iOS](https://docs.microsoft.com/intune/app-sdk-ios).
-
-Pour plus d’informations sur les fonctionnalités de notre API Graph en ce qui concerne les valeurs de configuration ciblée de gestion des applications mobiles, consultez [Configuration ciblée de gestion des applications mobiles de référence pour API Graph](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
 ## <a name="information-about-the-xml-file-format"></a>Informations sur le format de fichier XML
 
@@ -161,3 +139,7 @@ Quand vous créez un fichier de configuration d’application, vous pouvez spéc
 </dict>
 
 ```
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Continuez à [affecter](apps-deploy.md) et à [surveiller](apps-monitor.md) l’application comme d’habitude.

@@ -4,7 +4,7 @@ description: "Utilisez ce guide pour que votre PC Windows soit géré par le log
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installer le logiciel client Intune sur des PC Windows
 
@@ -32,6 +32,8 @@ Les PC Windows peuvent être inscrits en installant le logiciel client Intune. L
 Le logiciel client Intune contient la configuration logicielle minimale nécessaire pour inscrire le PC dans la gestion Intune. Une fois le PC inscrit, le logiciel client Intune télécharge le logiciel client complet nécessaire pour la gestion du PC.
 
 Cette série de téléchargements réduit l’impact sur la bande passante du réseau et réduit le temps nécessaire pour l'inscription initiale du PC dans Intune. Elle garantit également que le client dispose du logiciel plus récent disponible une fois le second téléchargement terminé.
+
+Une seule licence Intune permet d’installer le logiciel client Intune sur cinq PC au maximum.
 
 ## <a name="download-the-intune-client-software"></a>Téléchargement du logiciel client Intune
 

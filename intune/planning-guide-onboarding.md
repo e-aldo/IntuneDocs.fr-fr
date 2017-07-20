@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,28 +14,23 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ade7caf544d71c062c0fa251d7a113facb700a36
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="intune-implementation"></a>Implémentation d'Intune
+# <a name="implement-your-intune-plan"></a>Implémenter votre plan Intune
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
+Pendant la phase d’intégration, vous déployez Intune dans votre environnement de production. Le processus d’implémentation consiste à paramétrer et configurer Intune et les dépendances externes (si nécessaire) en fonction des [exigences de vos cas d’utilisation](planning-guide-requirements.md).
 
-Pendant la phase d’intégration, vous allez implémenter Intune dans votre environnement de production. Le processus d’implémentation se compose du paramétrage et de la configuration d'Intune et des dépendances externes (si nécessaire), selon vos [exigences de cas d'utilisation](planning-guide-requirements.md) qui ont été passées en revue dans les sections précédentes de ce guide.
+La section suivante fournit une vue d’ensemble du processus d'implémentation Intune qui englobe des éléments requis et des tâches générales.
 
-La section suivante fournit une vue d’ensemble du processus d'implémentation Intune incluant des exigences et des tâches de haut niveau.
+## <a name="intune-requirements"></a>Éléments requis Intune
 
->[!TIP]
-> Consultez la section [Ressources supplémentaires](planning-guide-resources.md) pour plus d’informations sur le processus d’implémentation Intune.
+Les principaux éléments requis autonomes pour Intune sont les suivants :
 
-## <a name="intune-requirements"></a>Configuration requise d'Intune
-
-Les principales exigences d'Intune autonome sont fournies ci-dessous :
-
--   Abonnement EMS/Intune
+-   Abonnement Enterprise Mobility + Security (EMS)/Intune
 
 -   Abonnement Office 365 (pour les applications Office et les applications gérées par la stratégie MAM)
 
@@ -43,100 +38,103 @@ Les principales exigences d'Intune autonome sont fournies ci-dessous :
 
 -   Azure AD Connect (pour la synchronisation d'annuaires)
 
--   Connecteur Intune sur site pour Exchange (pour l'autorité de certificat pour Exchange sur site, si nécessaire)
+-   Connecteur local Microsoft Intune pour Exchange (pour l’accès conditionnel pour Exchange sur site, si nécessaire)
 
--   Intune Certificate Connector (pour le déploiement dy certificat SCEP, si nécessaire)
+-   Intune Certificate Connector (pour le déploiement du certificat SCEP, si nécessaire)
 
 >[!TIP]
-> Vous trouverez [ici](/intune/supported-devices-browsers) plus d’informations sur la configuration Intune autonome requise.
+> Pour obtenir la liste complète des appareils que vous pouvez gérer avec Intune, consultez la liste [Appareils pris en charge](supported-devices-browsers.md).
 
 ## <a name="intune-implementation-process"></a>Processus d'implémentation d'Intune
 
-### <a name="overview-of-implementation-tasks"></a>Vue d’ensemble des tâches d’implémentation
+Nous avons identifié 13 tâches discrètes à effectuer pour implémenter un déploiement Intune. Selon vos besoins professionnels, votre infrastructure existante et votre stratégie de gestion d’appareils, certaines de ces tâches ont peut-être été déjà effectuées. D’autres peuvent ne pas être adaptées à votre plan.
 
-Voici une vue d’ensemble de chaque tâche de l’implémentation Intune.
+### <a name="task-1-get-an-intune-subscription"></a>Tâche 1 : Se procurer un abonnement Intune
 
-#### <a name="task-1-add-intune-subscription"></a>Tâche 1 : Ajouter un abonnement Intune
-
-Comme indiqué dans la section de configuration précédente, un abonnement EMS ou Intune est requis. Si votre organisation ne dispose pas d’un abonnement EMS ou Intune, veuillez contacter votre équipe des comptes Microsoft pour lui signifier votre souhait d’acheter Enterprise Mobility + Security (EMS) ou Intune.
+Comme nous l’avons vu dans la section précédente sur les éléments requis Intune, vous avez besoin d’un abonnement EMS ou Intune. Si votre organisation n’en a pas, contactez Microsoft ou votre équipe des comptes Microsoft pour lui signifier votre souhait d’acheter Enterprise Mobility + Security (EMS) ou Intune.
 
 -   En savoir plus sur [comment acheter Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
-#### <a name="task-2-add-office-365-subscription"></a>Tâche 2 : Ajouter un abonnement Office 365
+### <a name="task-2-add-office-365-subscription"></a>Tâche 2 : Ajouter un abonnement Office 365
 
-Cette étape est facultative. Comme indiqué dans la section de configuration précédente, un abonnement Office 365 est requis si vous envisagez d’utiliser Exchange Online et de gérer des applications mobiles Office avec la stratégie MAM. Si votre organisation ne dispose pas d’un abonnement Office 365, veuillez contacter Microsoft ou votre équipe des comptes Microsoft pour lui signifier votre souhait d’acheter Office 365.
+Cette étape est facultative. Si vous envisagez d’utiliser Exchange Online et de gérer les applications mobiles Office avec des stratégies de protection des applications, vous avez besoin d’un abonnement Office 365. Si votre organisation ne dispose pas d’un abonnement Office 365, contactez Microsoft ou votre équipe des comptes Microsoft pour lui signifier votre souhait d’acheter Office 365.
 
 -   En savoir plus sur [comment acheter Office 365](https://products.office.com/business/compare-office-365-for-business-plans).
 
-#### <a name="task-3-add-users-groups-in-azure-ad"></a>Tâche 3 : Ajouter des groupes d’utilisateurs dans Azure AD
+### <a name="task-3-add-users-groups-in-azure-ad"></a>Tâche 3 : Ajouter des groupes d’utilisateurs dans Azure AD
 
-Vous devrez peut-être ajouter des utilisateurs ou des groupes de sécurité à AD ou AAD selon les scénarios de cas d'utilisation et les exigences de votre déploiement Intune. Vous devez vérifier vos utilisateurs et groupes de sécurité actuels dans Active Directory ou Azure Active Directory et déterminer s'ils répondent totalement à vos besoins. De nouveaux utilisateurs et groupes de sécurité sont généralement ajoutées dans Active Directory puis synchronisés dans Azure Active Directory via Azure AD Directory Connect.
+Vous serez peut-être amené à ajouter des utilisateurs ou des groupes de sécurité dans Active Directory ou Azure Active Directory selon les scénarios de cas d’utilisation et les exigences de votre déploiement Intune. Passez en revue vos utilisateurs et groupes de sécurité actuels dans Active Directory ou Azure Active Directory et déterminez s’ils répondent entièrement à vos besoins. Si vous devez ajouter de nouveaux utilisateurs et groupes de sécurité, nous vous recommandons de le faire dans Active Directory et de procéder à une synchronisation avec Azure Active Directory via Azure AD Connect.
+
 
 -   En savoir plus sur [comment ajouter des utilisateurs/groupes dans Intune](users-permissions-add.md).
+<!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect--->
 
-#### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tâche 4 : Attribuer des licences utilisateur Intune et Office 365
 
-Tous les utilisateurs ciblés pour un déploiement EMS/Intune et Office 365 devront disposer d’une licence. L’attribution d'une licence EMS/Intune et Office 365 peut être effectuée dans le portail du Centre d'administration Office 365.
+
+### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tâche 4 : Attribuer des licences utilisateur Intune et Office 365
+
+Vous devez attribuer une licence à tous les utilisateurs que vous ciblez pour le déploiement EMS/Intune et Office 365. Vous pouvez attribuer les licences EMS/Intune et Office 365 dans le portail Centre d’administration Office 365.
 
 -   En savoir plus sur [comment attribuer des licences Intune](licenses-assign.md).
 
-#### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Tâche 5 : Définir Intune comme autorité de gestion des appareils mobiles
+### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Tâche 5 : Définir Intune comme autorité de gestion des appareils mobiles
 
-Avant de commencer l'installation, la configuration, la gestion et l'inscription des appareils avec Intune, vous devez définir Intune comme autorité de gestion des appareils. La tâche Définition de l’autorité de gestion des appareils est effectuée dans l'espace de travail Admin du portail d'administration Intune.
+Avant de commencer l’installation, la configuration, la gestion et l’inscription des appareils avec Intune, vous devez définir Intune comme autorité de gestion des appareils.
 
--   En savoir plus sur la [définition de l'autorité de gestion des appareils](/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority).
+-   En savoir plus sur la [définition de l’autorité de gestion des appareils](mdm-authority-set.md).
 
-#### <a name="task-6-enable-device-platforms"></a>Tâche 6 : Activer les plateformes d'appareils mobiles
+### <a name="task-6-enable-device-platforms"></a>Tâche 6 : Activer les plateformes d'appareils mobiles
 
-Par défaut, dans la console d’administration Intune, la plupart des plateformes d’appareils sont activées, à l’exception des appareils Apple (iOS et Mac). Avant de pouvoir inscrire et gérer les appareils iOS dans Intune, la plate-forme d'appareils doit être activée. L’activation de la plate-forme d'appareils iOS se déroule selon un processus en trois étapes : créer et télécharger le certificat des APN puis charger le certificat des APN dans Intune.
+Par défaut, la plupart des plateformes d’appareils sont activées, à l’exception des appareils Apple (iOS et Mac). Avant de pouvoir inscrire et gérer les appareils iOS dans Intune, la plateforme d'appareils doit être activée. Pour ce faire, vous devez créer un certificat Push MDM et l’ajouter à Intune.
 
--   En savoir plus sur le [fonctionnement de la gestion des appareils iOS et Mac.](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   En savoir plus sur l’[activation des appareils Apple pour l’inscription](apple-mdm-push-certificate-get.md).
 
-#### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>Tâche 7 : Ajouter et déployer des stratégies de conditions générales
+### <a name="task-7-add-and-deploy-terms-and-conditions-policies"></a>Tâche 7 : Ajouter et déployer des stratégies de conditions générales
 
-Microsoft Intune prend en charge l’ajout et le déploiement de stratégies de conditions générales. L'ajout et le déploiement de stratégies de conditions générales s'effectuent dans l'espace de travail Stratégie du portail d'administration Intune. Ajoutez les stratégies de conditions générales adéquates et déployez-les sur des groupes ciblés en fonction des cas d'utilisation et exigences de votre déploiement Intune.
+Intune prend en charge les stratégies de conditions générales. Ajoutez les stratégies de conditions générales adéquates et déployez-les sur des groupes ciblés en fonction des cas d’utilisation et exigences de votre déploiement Intune.
 
--   En savoir plus sur l'[ajout et le déploiement des stratégies de conditions générales](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune).
+-   En savoir plus sur l'[ajout et le déploiement des stratégies de conditions générales](terms-and-conditions-create.md).
 
-#### <a name="task-8-add-and-deploy-configuration-policies"></a>Tâche 8 : Ajouter et déployer des stratégies de configuration
+### <a name="task-8-add-and-deploy-configuration-policies"></a>Tâche 8 : Ajouter et déployer des stratégies de configuration
 
-Microsoft Intune prend en charge l’ajout et le déploiement de deux types de stratégies de configuration, Général et Personnalisé. L'ajout et le déploiement de stratégies de configuration s'effectuent dans l'espace de travail Stratégie du portail d'administration Intune. Ajoutez les stratégies de configuration adéquates et déployez-les sur des groupes ciblés en fonction des cas d'utilisation et exigences de votre déploiement Intune.
+Intune prend en charge deux types de stratégie de configuration : générale et personnalisée. Ajoutez les stratégies de configuration adéquates et déployez-les sur des groupes ciblés en fonction des cas d’utilisation et exigences de votre déploiement Intune.
 
--   En savoir plus sur l'[ajout et le déploiement des stratégies de configuration](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+-   En savoir plus sur l'[ajout et le déploiement des stratégies de configuration](device-profiles.md).
 
-#### <a name="task-9-add-and-deploy-resource-profiles"></a>Tâche 9 : Ajouter et déployer des profils de ressources
+### <a name="task-9-add-and-deploy-resource-profiles"></a>Tâche 9 : Ajouter et déployer des profils de ressources
 
-Microsoft Intune prend en charge les profils de messagerie, Wi-Fi et VPN. L'ajout et le déploiement de profils s'effectuent dans l'espace de travail Stratégie du portail d'administration Intune. Ajoutez les profils de messagerie/Wi-Fi/VPN adéquats et déployez-les sur des groupes ciblés en fonction des cas d'utilisation et exigences de votre déploiement Intune.
+Intune prend en charge les profils de messagerie, Wi-Fi et VPN. Ajoutez ces profils selon les besoins et déployez-les sur des groupes ciblés en fonction des cas d’utilisation et exigences de votre déploiement Intune.
 
--   En savoir plus sur [comment activer l’accès aux ressources d’entreprise avec Intune](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
+-   En savoir plus sur l’[activation de l’accès aux ressources d’entreprise avec Intune](device-profiles.md).
 
-#### <a name="task-10-add-and-deploy-apps"></a>Tâche 10 : Ajouter et déployer des applications
+### <a name="task-10-add-and-deploy-apps"></a>Tâche 10 : Ajouter et déployer des applications
 
-Microsoft Intune prend en charge le déploiement d'applications Web, métier et de banque publique. En outre, la gestion d’applications que vous avez intégrées au SDK Intune en les associant à des stratégies MAM est prise en charge. L'ajout et le déploiement d'applications s'effectuent dans l'espace de travail Application du portail d'administration Intune. L'ajout de stratégies MAM s'effectue dans l'espace de travail Stratégie du portail d'administration Intune. Ajoutez les applications adéquates et déployez-les sur des groupes ciblés en fonction des cas d'utilisation et exigences de votre déploiement Intune.
+Intune prend en charge le déploiement d’applications web, métier et de Store public. Vous pouvez aussi gérer les applications qui intègrent le SDK Intune en les associant à des stratégies GAM. Ajoutez les applications adéquates et déployez-les sur des groupes ciblés en fonction des cas d’utilisation et exigences de votre déploiement Intune.
 
--   En savoir plus sur l'[ajout et le déploiement des applications](/intune-classic/deploy-use/deploy-apps).
+-   En savoir plus sur l’[ajout et le déploiement d’applications](app-management.md).
 
-#### <a name="task-11-add-and-deploy-compliance-policies"></a>Tâche 11 : Ajouter et déployer des stratégies de conformité
+### <a name="task-11-add-and-deploy-compliance-policies"></a>Tâche 11 : Ajouter et déployer des stratégies de conformité
 
-Microsoft Intune prend en charge les stratégies de conformité. L'ajout et le déploiement de stratégies de conformité s'effectuent dans l'espace de travail Stratégie du portail d'administration Intune. Ajoutez les stratégies de conformité adéquates et déployez-les sur des groupes ciblés en fonction des cas d'utilisation et exigences de votre déploiement Intune.
+Intune prend en charge les stratégies de conformité. Ajoutez les stratégies de conformité adéquates et déployez-les sur des groupes ciblés en fonction des cas d’utilisation et exigences de votre déploiement Intune.
 
--   En savoir plus sur les [stratégies de conformité](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune).
+-   En savoir plus sur les [stratégies de conformité](device-compliance.md).
 
-#### <a name="task-12-enable-conditional-access-policies"></a>Tâche 12 : Activer les stratégie d’accès conditionnel
+### <a name="task-12-enable-conditional-access-policies"></a>Tâche 12 : Activer les stratégies d’accès conditionnel
 
-Microsoft Intune prend en charge l’accès conditionnel pour Exchange Online et sur site, SharePoint Online, Skype Entreprise Online et Dynamics CRM Online. Vous devez activer les stratégies d’accès conditionnel dans l'espace de travail Stratégie du portail d’administration Intune. Activez et configurez l'accès conditionnel adéquat en fonction des [cas d'utilisation et exigences de votre déploiement Intune](planning-guide-requirements.md).
+Intune prend en charge l’accès conditionnel pour Exchange Online, Exchange sur site, SharePoint Online, Skype Entreprise Online et Dynamics CRM Online. Activez et configurez l’accès conditionnel comme il se doit en fonction des cas d’utilisation et exigences de votre déploiement Intune.
 
--   En savoir plus sur l'[accès conditionnel](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   En savoir plus sur l'[accès conditionnel](conditional-access.md).
 
-#### <a name="task-13-enroll-devices"></a>Tâche 13 : Inscrire des appareils
+### <a name="task-13-enroll-devices"></a>Tâche 13 : Inscrire des appareils
 
-Intune prend en charge les plateformes d'appareils iOS, macOS, Android, Windows Desktop et Windows Mobile. Inscrivez les plateformes d'appareils mobiles adéquates en fonction des cas d'utilisation et exigences de votre déploiement Intune.
+Intune prend en charge les plateformes d’appareils iOS, Mac OS, Android, Windows Desktop et Windows Mobile. Inscrivez les plateformes d’appareils mobiles adéquates en fonction des cas d’utilisation et exigences de votre déploiement Intune.
 
--   En savoir plus sur [comment inscrire des appareils](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune).
+-   En savoir plus sur [comment inscrire des appareils](device-enrollment.md).
 
->[!TIP]
-> Consultez ce [module de session Microsoft Virtual Academy Intune](https://mva.microsoft.com/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=PPWNoZxvD_1404778676) pour plus d’informations sur le processus d’implémentation Intune.
 
-## <a name="next-section"></a>Section suivante
+## <a name="next-steps"></a>Étapes suivantes
 
-La section suivante fournit des conseils sur le [test et la validation de votre déploiement Intune](planning-guide-test-validation.md).
+Consultez ce [module de session Microsoft Virtual Academy Intune](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408) pour plus d’informations sur le processus d’implémentation Intune.
+
+
+Consultez les conseils en matière de [test et de validation des déploiements Intune](planning-guide-test-validation.md).
