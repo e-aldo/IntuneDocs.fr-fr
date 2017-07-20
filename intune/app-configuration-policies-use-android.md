@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour Android for Work
 
@@ -65,7 +65,7 @@ Vous n’affectez pas ces stratégies directement sur les appareils et utilisate
 
 La stratégie est créée et s’affiche dans le panneau de liste des stratégies.
 
-Ensuite, continuez à [Affecter](apps-deploy.md) et [Surveiller](apps-monitor.md) l’application comme d’habitude.
+
 
 Quand l’application affectée est exécutée sur un appareil, elle s’exécute avec les paramètres que vous avez configurés dans la stratégie de configuration des applications.
 
@@ -89,3 +89,8 @@ Vous pouvez également préconfigurer l’autorisation pour les applications d�
 8. Pour affecter la stratégie de configuration d’application, sélectionnez la stratégie de configuration d’application, sélectionnez **Affectation**, puis choisissez **Sélectionner des groupes**.
 9. Sélectionnez les groupes d’utilisateurs à affecter, puis choisissez **Sélectionner**.
 10. Choisissez **Enregistrer** pour affecter la stratégie.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Continuez à [affecter](apps-deploy.md) et [surveiller](apps-monitor.md) l’application comme d’habitude.
+

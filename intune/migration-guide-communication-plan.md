@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,48 +13,45 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: ba85331629f88a4fc6df9f7c2ee5fcf1eda2d8ee
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 59b978fa9c9084c5a70c912ca6a9b1e6c364722c
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="plan-communications"></a>Planifier les communications 
+# <a name="plan-communications"></a>Planifier les communications
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
+Le plan de communication est un élément clé de chaque migration Intune. Vous pouvez suivre le même plan de communication pour chaque phase de votre migration.
 
-Le plan de communication est un élément clé de chaque migration Intune. Vous pouvez suivre le même plan pour chaque phase, comme indiqué précédemment dans la section Garantir la réussite de la migration.
+## <a name="email-templates"></a>Modèles d’e-mail
 
-## <a name="e-mail-templates"></a>Modèles d’e-mail
+Nous vous recommandons le plan de communication par e-mail suivant. Nous mettons à votre disposition des modèles que vous pouvez adapter en fonction de votre plan de communication :
 
-Voici un exemple de mode de communication sur la migration dans votre entreprise :
+-   **E-mail \#1 :** expliquez les avantages, les attentes et le programme. Profitez de l’occasion pour présenter tout nouveau service auquel les appareils gérés par Intune auront accès.<br/><br/>
 
--   **E-mail \#1 :** Expliquer les avantages, les attentes et la planification. Profitez de cette occasion pour présenter tout nouveau service auquel l’accès sera autorisé sur les appareils gérés par Intune.
 
-    -   [Téléchargez le modèle d’e-mail \#1 pour l’utiliser au sein de votre organisation](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35).
+    -   [Télécharger le modèle d’e-mail \#1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
--   **E-mail \#2 :** Annoncer que les services sont prêts pour un accès via Intune. Demandez aux utilisateurs d’inscrire leurs appareils à cette étape. Rappelez-leur les avantages et motifs stratégiques de la migration.
+-   **E-mail \#2 :** Annoncer que les services sont prêts pour un accès via Intune. Demandez aux utilisateurs d’inscrire leurs appareils à cette étape. Rappelez-leur les avantages et motifs stratégiques de la migration.<br/><br/>
 
-    -   [Téléchargez le modèle d’e-mail \#2 pour l’utiliser au sein de votre organisation.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+
+    -   [Télécharger le modèle d’e-mail \#2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **E-mail \#3 :** Indiquer aux utilisateurs la chronologie avant que l’accès ne soit affecté. Rappelez-leur à nouveau les avantages et motifs stratégiques de la migration. La synchronisation d’e-mail doit prévoir une fenêtre coulissante qui corresponde au pipelining des phases. Par exemple, envoyez l’e-mail \#1 aux utilisateurs de la phase 1, l’e-mail \#2 aux utilisateurs de la phase 2 et l’e-mail \#1 aux utilisateurs de la phase 3 au mois de juin.
+-   **E-mail\#3 :** communiquez la chronologie aux utilisateurs avant que leur accès soit affecté. Rappelez-leur à nouveau les avantages et motifs stratégiques de la migration. Les e-mails doivent être échelonnés avec une fenêtre glissante pour correspondre à vos différentes phases. Par exemple, envoyez l’e-mail \#1 aux utilisateurs de la phase 1, l’e-mail \#2 aux utilisateurs de la phase 2 et l’e-mail \#3 aux utilisateurs de la phase 3 au mois de juin.<br/><br/>
 
-    -   [Téléchargez le modèle d’e-mail \#3 pour l’utiliser au sein de votre organisation](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5).
+    -   [Télécharger le modèle d’e-mail \#3](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 
-Après un certain temps, vous pouvez commencer à appliquer la conformité via des stratégies d’accès conditionnel et les utiliser comme critères pour l’accès aux données d’entreprise.
-
--   Pour en savoir plus, voir [Encourager l’adoption par les utilisateurs finaux avec l’accès conditionnel](migration-guide-drive-adoption.md).
+Après un certain laps de temps, vous pouvez commencer à appliquer la conformité via des stratégies d’accès conditionnel et les utiliser comme critères pour l’accès aux données d’entreprise, comme décrit dans [Encourager l’adoption par les utilisateurs finaux avec l’accès conditionnel](migration-guide-drive-adoption.md).
 
 ## <a name="additional-communication-templates"></a>Modèles de communication supplémentaires
 
-Intune dispose de ressources de modèles supplémentaires pour promouvoir l’inscription des appareils après des utilisateurs finaux :
+Intune propose des modèles supplémentaires dont vous pouvez vous servir pour encourager vos utilisateurs à inscrire leurs appareils :
 
--   Voir [Comment former vos utilisateurs finaux à Microsoft Intune](/intune/end-user-educate) pour obtenir des conseils supplémentaires sur les étapes d’inscription par plateforme de système d’exploitation mobile.
+-   [Comment former vos utilisateurs finaux à Microsoft Intune](end-user-educate.md) détaille les étapes d’inscription par plateforme de système d’exploitation mobile.
 
--   Téléchargez un [modèle d’inscription Intune personnalisable pour les administrateurs informatiques, à l’attention de l’utilisateur final.](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)
+-   Le [modèle d’inscription de l’utilisateur final Intune pour les administrateurs informatiques](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) est un document Word personnalisable qui explique comment inscrire les appareils Android, iOS et Mac dans Intune.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -1,11 +1,11 @@
 ---
 title: "Démarrer une campagne de migration Intune"
-description: "Cet article fournit des conseils sur la méthode à suivre pour démarrer une campagne de migration."
+description: Cet article donne des conseils pour lancer une campagne de migration.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,30 +13,27 @@ ms.technology:
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 9690572fd5f17fece0de7b533c98bfc52d77615b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a272d9c822a2c17592d7800c20278ce222d615bd
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="phase-2-migration-campaign"></a>Phase 2 : Campagne de migration
+# <a name="phase-2-migration-campaign"></a>Phase 2 : Campagne de migration
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Les organisations doivent choisir l’approche de migration qui convient le mieux à leurs besoins et ajuster leurs stratégies d’implémentation en fonction de leurs besoins spécifiques. Les autres sections de ce guide fournissent les outils vous permettant d’atteindre votre objectif, à savoir l’inscription des appareils des utilisateurs auprès de Microsoft Intune.
+Choisissez l’approche de migration qui répond le mieux aux besoins de votre organisation et ajustez les stratégies d’implémentation en fonction de vos exigences spécifiques. Les autres sections de ce guide vous procurent les outils dont vous avez besoin pour atteindre votre objectif, à savoir inscrire les appareils de vos utilisateurs sur Intune.
 
 ## <a name="keys-to-a-successful-migration"></a>Garantir la réussite de la migration
 
-Lorsque vous effectuez la migration depuis un fournisseur GPM tiers vers Intune, vous devez tenir compte des facteurs suivants :
+Les conditions de la réussite d’une migration d’un fournisseur MDM tiers vers Intune sont les suivantes :
 
--   Une bonne communication est essentielle pour minimiser les temps d’arrêt des utilisateurs finaux et optimiser leur taux de satisfaction.
+-   Une communication claire et utile peut limiter les temps d’arrêt et le mécontentement des utilisateurs finaux.
 
 -   Veillez à proposer des instructions de migration spécifiques et concrètes.
 
--   Tous les appareils gérés doivent être désinscrits de votre fournisseur GPM existant avant l’inscription auprès de Microsoft Intune.
+-   Tous les appareils gérés doivent être désinscrits de votre fournisseur MDM existant avant de pouvoir être inscrits dans Intune.
 
--   Fournissez aux utilisateurs finaux les instructions du fournisseur existant concernant la désinscription de leurs appareils.
+-   Donnez des conseils aux utilisateurs finaux pour désinscrire leurs appareils du fournisseur MDM existant.
 
 -   Utilisez une approche progressive. Commencez par un petit groupe d’utilisateurs pilotes, puis ajoutez des groupes supplémentaires de manière incrémentielle, jusqu’au niveau de déploiement à grande échelle.
 
@@ -52,21 +49,21 @@ Lorsque vous effectuez la migration depuis un fournisseur GPM tiers vers Intune
 
     -   Sécurité des données :
 
-        -   Création de rapports sur la conformité
+        -   Des rapports de conformité sont créés.
 
-        -   Application d’une protection aux applications mobiles
+        -   Les protections pour applications mobiles sont appliquées.
 
--   Lorsque vous êtes satisfait de la première phase de migration, répétez le cycle de migration (décrit sous Cycle de migration classique) pour la phase suivante.
+Dès que vous êtes satisfait de la première phase de migration, répétez le [cycle de migration](migration-guide-cycle.md) pour la phase suivante.
 
 -   Répétez chaque cycle progressif jusqu’à ce que tous les utilisateurs soient migrés vers Intune.
 
--   Assurez-vous que l’équipe du support technique est prête à prendre en charge les utilisateurs finaux à toutes les étapes de la campagne de migration. Exécutez une migration volontaire, afin de pouvoir estimer la charge de travail liée aux appels de support.
+-   Vérifiez que l’équipe de support technique est prête à porter assistance aux utilisateurs finaux tout au long de la campagne de migration. Exécutez une migration volontaire, afin de pouvoir estimer la charge de travail liée aux appels de support.
 
--   Ne définissez aucune échéance tant que le support technique n’a pas pu gérer tous les utilisateurs restants.
+-   Ne fixez pas d’échéances pour l’inscription tant que le support technique n’a pas pu prendre en charge tous les utilisateurs restants.
 
-> [!IMPORTANT] 
-> Ne configurez pas Intune et votre solution GPM tierce de façon à appliquer des contrôles d’accès aux ressources telles que Microsoft Exchange ou SharePoint Online. En outre, les appareils doivent uniquement être inscrits auprès d’une solution à la fois.
+> [!IMPORTANT]
+> Ne configurez pas Intune et votre solution MDM tierce de façon à appliquer des contrôles d’accès aux ressources telles que Microsoft Exchange ou SharePoint Online. En outre, les appareils doivent uniquement être inscrits auprès d’une solution à la fois.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Plan de communication](migration-guide-communication-plan.md)
+Créez votre [plan de communication](migration-guide-communication-plan.md).

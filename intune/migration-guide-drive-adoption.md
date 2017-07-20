@@ -1,6 +1,6 @@
 ---
 title: "Encourager l’adoption par les utilisateurs finaux avec l’accès conditionnel"
-description: "Cet article fournit des informations sur la façon de tirer parti de l’accès conditionnel pour permettre l’inscription d’appareils auprès de Microsoft Intune."
+description: "Cet article fournit des informations sur la façon d’utiliser l’accès conditionnel pour encourager l’inscription dans Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,24 +13,21 @@ ms.technology:
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 0b2fbcc1d63f229e1b63873841bc300bdde92fa3
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7a9c3bef955239ad653a9ca45c55c533be36c5ce
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="drive-end-user-adoption-with-conditional-access"></a>Encourager l’adoption par les utilisateurs finaux avec l’accès conditionnel
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-En activant les fonctionnalités d’accès conditionnel avec Intune (par exemple, le blocage des e-mails sur les appareils non inscrits), vous pouvez favoriser l’inscription des appareils et leur mise en conformité. Toutefois, ce n’est pas nécessaire pour assurer la réussite de la migration. En effet, ce sont les objectifs relatifs à l’adoption et les exigences en matière de sécurité qui déterminent sa réussite.
+En activant les fonctionnalités d’accès conditionnel avec Intune (par exemple, le blocage des e-mails sur les appareils non inscrits), vous pouvez encourager l’inscription des appareils et leur mise en conformité. Toutefois, ce n’est pas nécessaire pour assurer la réussite de la migration. En effet, ce sont les objectifs relatifs à l’adoption et les exigences en matière de sécurité qui déterminent sa réussite.
 
 ## <a name="migration-campaign-with-conditional-access"></a>Campagne de migration avec accès conditionnel
 
 Voici une méthode d’amélioration classique des campagnes de migration avec accès conditionnel :
 
-1.  Définissez les règles d’accès conditionnel à appliquer pour tous les utilisateurs, mais excluez spécifiquement ceux qui doivent effectuer la migration depuis l’ancien fournisseur de GPM. Vous pouvez créer un groupe d’utilisateurs Azure AD, qui rassemble tous les utilisateurs exclus avec accès conditionnel.
+1.  Définissez les règles d’accès conditionnel à appliquer pour tous les utilisateurs, mais excluez spécifiquement ceux qui doivent effectuer la migration depuis l’ancien fournisseur MDM. Vous pouvez créer un groupe d’utilisateurs Azure AD, qui rassemble tous les utilisateurs exclus avec accès conditionnel.
 
 2.  Au fur et à mesure que ces utilisateurs effectuent cette migration, retirez-les du groupe d’exclusion avec accès conditionnel.
 
@@ -46,18 +43,18 @@ Voici une méthode d’amélioration classique des campagnes de migration avec a
 
 ### <a name="disadvantages"></a>Inconvénients
 
--   Les utilisateurs de la solution précédente avaient la possibilité d’accéder aux ressources à l’aide d’appareils non gérés, jusqu’à ce que l’accès conditionnel soit activé sur leurs appareils.
+-   Les utilisateurs de la solution précédente avaient la possibilité d’accéder aux ressources à l’aide d’appareils non gérés tant que l’accès conditionnel n’était pas activé pour ces utilisateurs.
 
-> [!TIP]
-> Il s’agit d’une approche parmi d’autres. Vous pouvez choisir un processus plus simple, qui diffère tout accès conditionnel jusqu’à la fin de chaque phase de l’inscription, ou mettre en place un procédé plus strict, qui applique l’accès conditionnel dès le départ et requiert une conformité complète pour tout accès.
 
--   En savoir plus sur l'[accès conditionnel](/intune/conditional-access).
+Il s’agit d’une approche parmi d’autres. Vous pouvez choisir un processus plus simple, qui diffère tout accès conditionnel jusqu’à la fin de chaque phase de l’inscription, ou mettre en place un procédé plus strict, qui applique l’accès conditionnel dès le départ et requiert une conformité complète pour tout accès.
+
+-   En savoir plus sur l'[accès conditionnel](conditional-access.md).
 
 ## <a name="task-list-for-conditional-access"></a>Liste de tâches relatives à l’accès conditionnel
 
 ### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Tâche 1 : Définir la façon dont vous allez implémenter l’accès conditionnel
 
-[Utilisations courantes de l’accès conditionnel](/intune/conditional-access-intune-common-ways-use).
+[Utilisations courantes de l’accès conditionnel](conditional-access-intune-common-ways-use.md).
 
 ### <a name="task-2-set-up-intune-conditional-access"></a>Tâche 2 : Configuration de l’accès conditionnel Intune
 
@@ -65,14 +62,14 @@ Choisissez l'une des options suivantes :
 
 -   [Configuration de l’accès conditionnel dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Installer le connecteur Exchange local avec Intune](/intune/exchange-connector-install)
+-   [Installer le connecteur Exchange local avec Intune](exchange-connector-install.md)
 
--   [Configurer les stratégies d’accès conditionnel basé sur l’application pour Exchange Online](/intune/app-based-conditional-access-intune-exchange-online-create)
+-   [Configurer les stratégies d’accès conditionnel basé sur l’application pour Exchange Online](app-based-conditional-access-intune-create.md)
 
--   [Configurer des stratégies d’accès conditionnel basé sur l’application pour SharePoint Online](/intune/app-based-conditional-access-intune-sharepoint-online-create)
+-   [Configurer des stratégies d’accès conditionnel basé sur l’application pour SharePoint Online](app-based-conditional-access-intune-create.md)
 
--   [Bloquer les applications qui n’utilisent pas l’authentification moderne (ADAL)](/intune/app-modern-authentication-block)
+-   [Bloquer les applications qui n’utilisent pas l’authentification moderne (ADAL)](app-modern-authentication-block.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Cycle de migration classique](migration-guide-cycle.md)
+En savoir plus sur le [cycle de migration classique](migration-guide-cycle.md).

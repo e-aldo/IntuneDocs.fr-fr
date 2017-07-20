@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Guide pratique pour ajouter une application à Microsoft Intune
 
@@ -79,34 +79,9 @@ Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sé
 
 ## <a name="apps-added-automatically-by-intune"></a>Applications automatiquement ajoutées par Intune
 
-Les applications suivantes, publiées par Microsoft, sont intégrées à Intune et prêtes à être affectées :
-
-|||
-|-|-|
-|Nom|Plate-forme|Type d’application|
-|Azure Information Protection|Android|Managed Android store app|
-|Dynamics CRM for Phones|Android|Managed Android store app|
-|Dynamics CRM for Tablets|Android|Managed Android store app|
-|Excel|iOS|Managed iOS store app|
-|Excel|Android|Managed Android store app|
-|Managed Browser|Android|Managed Android store app|
-|Managed Browser|iOS|Managed iOS store app|
-|Microsoft Dynamics CRM on Phones|iOS|Managed iOS store app|
-|Microsoft Dynamics CRM on Tablets|iOS|Managed iOS store app|
-|Microsoft Power BI|iOS|Managed iOS store app|
-|Microsoft Power BI|Android|Managed Android store app|
-|Microsoft SharePoint|iOS|Managed iOS store app|
-|Microsoft SharePoint|Android|Managed Android store app|
-|Microsoft Teams|Android|Managed Android store app|
-|Microsoft Teams|iOS|Managed iOS store app|
-|OneDrive Entreprise|iOS|Managed iOS store app|
-|OneDrive Entreprise|Android|Managed Android store app|
-|OneNote|iOS|Managed iOS store app|
-|Outlook|Android|Managed Android store app|
-|Outlook|iOS|Managed iOS store app|
-|Groupes Outlook|Android|Managed Android store app|
-|Groupes Outlook|iOS|Managed iOS store app|
-|PowerPoint|iOS|Managed iOS store app|
+Intune contenait auparavant un nombre d’applications intégrées que vous pouviez affecter rapidement. Suite à vos commentaires, nous avons supprimé cette liste et ces applications intégrées n’apparaitront plus.
+Toutefois, si vous avez déjà affecté des applications intégrées, elles resteront visibles dans la liste des applications. Vous pouvez continuer à affecter ces applications en fonction de vos besoins.
+Dans une version ultérieure, nous prévoyons d’ajouter une méthode plus simple pour sélectionner et affecter les applications intégrées à partir du portail Intune.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
