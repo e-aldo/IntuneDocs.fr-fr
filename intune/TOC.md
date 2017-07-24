@@ -183,13 +183,12 @@
 ### [Profils d’analyse](device-profile-monitor.md)
 ### [Dépanner les profils](device-profile-troubleshoot.md)
 
-## [Définir la conformité des appareils](device-compliance.md)
-### [Conditions préalables](device-compliance-get-started.md)
+## [Définir la conformité des appareils](device-compliance-get-started.md)
 ### [Créer une stratégie Android](compliance-policy-create-android.md)
 ### [Créer une stratégie Android for Work](compliance-policy-create-android-for-work.md)
 ### [Créer une stratégie iOS](compliance-policy-create-ios.md)
+### [Créer une stratégie macOS](compliance-policy-create-mac-os.md)
 ### [Créer une stratégie Windows](compliance-policy-create-windows.md)
-### Créer des actions en cas de non-conformité
 ### [Surveiller la conformité des appareils](compliance-policy-monitor.md)
 
 ## [Configurer l’accès conditionnel](conditional-access.md)
