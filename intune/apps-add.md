@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c102e93738ca2da3c247ad364db160c812b91118
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Guide pratique pour ajouter une application à Microsoft Intune
 
@@ -79,7 +79,7 @@ Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sé
 
 ## <a name="apps-added-automatically-by-intune"></a>Applications automatiquement ajoutées par Intune
 
-Intune contenait auparavant un nombre d’applications intégrées que vous pouviez affecter rapidement. Suite à vos commentaires, nous avons supprimé cette liste et ces applications intégrées n’apparaitront plus.
+Intune contenait auparavant un nombre d’applications intégrées que vous pouviez affecter rapidement. En réponse à vos commentaires, nous avons supprimé cette liste et ces applications intégrées n’apparaîtront plus.
 Toutefois, si vous avez déjà affecté des applications intégrées, elles resteront visibles dans la liste des applications. Vous pouvez continuer à affecter ces applications en fonction de vos besoins.
 Dans une version ultérieure, nous prévoyons d’ajouter une méthode plus simple pour sélectionner et affecter les applications intégrées à partir du portail Intune.
 
@@ -96,4 +96,5 @@ Choisissez une des rubriques suivantes afin de savoir comment ajouter à Intune 
 - [Applications métier Windows Phone](lob-apps-windows-phone.md)
 - [Applications Windows Store](store-apps-windows.md)
 - [Application métier Windows](lob-apps-windows.md)
+- [Applications Office 365 pour Windows 10](apps-add-office365.md)
 

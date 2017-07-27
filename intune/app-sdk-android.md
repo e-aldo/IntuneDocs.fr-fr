@@ -5,7 +5,7 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 06/12/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
@@ -83,7 +83,7 @@ Le SDK d’application Intune nécessite la modification du code source d’une 
 
 Par exemple, quand `AppSpecificActivity` interagit avec son parent (par exemple, un appel à `super.onCreate()`), `MAMActivity` est la super classe.
 
-Les applications Android classiques ont un seul mode et peuvent accéder au système par l’intermédiaire de leur objet [**Context**](https://developer.android.com/reference/android/content/Context.html). En revanche, les applications qui intègrent le SDK d’application Intune ont deux modes. Ces applications continuent à accéder au système par le biais de l’objet `Context`. En fonction de l’`Activity` de base utilisée, l’objet `Context` sera fourni par Android ou sera multiplexé intelligemment entre une vue restreinte du système et le `Context` fourni par Android.
+Les applications Android classiques ont un seul mode et peuvent accéder au système par l’intermédiaire de leur objet [**Context**](https://developer.android.com/reference/android/content/Context.html). En revanche, les applications qui intègrent le SDK d’application Intune ont deux modes. Ces applications continuent à accéder au système par le biais de l’objet `Context`. En fonction de l’`Activity` de base utilisée, l’objet `Context` sera fourni par Android ou sera multiplexé intelligemment entre une vue restreinte du système et le `Context` fourni par Android. Une fois que vous avez dérivé de l’un des points d’entrée GAM, vous pouvez sans risque utiliser `Context` comme vous le feriez normalement (par exemple, démarrer des classes `Activity` et utiliser `PackageManager`).
 
 
 ## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>Remplacer les classes, méthodes et activités par leurs équivalents GAM
@@ -136,7 +136,7 @@ Les classes de base Android doivent être remplacées par leurs équivalents GAM
 
 
 ### <a name="renamed-methods"></a>Méthodes renommées
-Une fois que vous avez dérivé de l’un des points d’entrée GAM, vous pouvez sans risque utiliser `Context` comme vous le feriez normalement (par exemple, démarrer des classes `Activity` et utiliser `PackageManager`).
+
 
 Dans de nombreux cas, une méthode disponible dans la classe Android a été marquée comme finale dans la classe de remplacement GAM. Dans ce cas, la classe de remplacement GAM fournit une méthode portant un nom similaire (généralement avec le suffixe `MAM`) que vous devez remplacer. Par exemple, quand vous dérivez de `MAMActivity` au lieu de remplacer `onCreate()` et d’appeler `super.onCreate()`, `Activity` doit remplacer `onMAMCreate()` et appeler `super.onMAMCreate()`. Le compilateur Java doit appliquer les restrictions finales pour éviter que la méthode d’origine ne soit remplacée accidentellement à la place de l’équivalent GAM.
 
@@ -146,7 +146,7 @@ Au lieu de `PendingIntent.get*`, vous devez utiliser la méthode `MAMPendingInte
 ### <a name="manifest-replacements"></a>Remplacements de manifeste
 Notez qu’il peut être nécessaire d’effectuer certains des remplacements de classe ci-dessus dans le manifeste, ainsi que dans le code Java. À noter en particulier :
 * Les références de manifeste à `android.support.v4.content.FileProvider` doivent être remplacées par `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider`.
-
+* Si votre application n’a pas besoin de sa propre classe Application dérivée, `com.microsoft.intune.mam.client.app.MAMApplication` doit avoir comme valeur le nom de la classe Application utilisée dans le manifeste.
 
 ## <a name="sdk-permissions"></a>Autorisations du SDK
 
@@ -198,7 +198,7 @@ public interface MAMLogHandlerWrapper {
 
 ## <a name="enable-features-that-require-app-participation"></a>Activer les fonctionnalités qui nécessitent la participation de l’application
 
-Il existe plusieurs stratégies de protection des applications que le SDK ne peut pas implémenter seul. L’application peut contrôler son comportement pour avoir ces fonctionnalités à l’aide de plusieurs API que vous trouverez dans l’interface `AppPolicy` suivante.
+Il existe plusieurs stratégies de protection des applications que le SDK ne peut pas implémenter seul. L’application peut contrôler son comportement pour avoir ces fonctionnalités à l’aide de plusieurs API que vous trouverez dans l’interface `AppPolicy` suivante. Pour récupérer une instance `AppPolicy`, utilisez `MAMPolicyManager.getPolicy`.
 
 ```java
 /**
@@ -267,7 +267,7 @@ String toString();
 ```
 
 > [!NOTE]
-> `MAMComponents.get(AppPolicy.class)` retourne toujours une stratégie d’application non null, même si l’appareil ou l’application n’est pas placé sous une stratégie de gestion Intune.
+> `MAMPolicyManager.getPolicy` retourne toujours une stratégie d’application non null, même si l’appareil ou l’application n’est pas placé sous une stratégie de gestion Intune.
 
 ### <a name="example-determine-if-pin-is-required-for-the-app"></a>Exemple : Déterminer si le code PIN est nécessaire pour l’application
 
@@ -321,13 +321,13 @@ SaveLocation service, String username);
 
     * SaveLocation.ONEDRIVE_FOR_BUSINESS
     * SaveLocation.LOCAL
-    * SaveLocation.OTHER
+    * SaveLocation.SHAREPOINT
 
 La méthode précédente permettant de déterminer si la stratégie d’un utilisateur l’autorisait à enregistrer des données à différents emplacements était `getIsSaveToPersonalAllowed()` dans la même classe **AppPolicy**. Cette fonction est maintenant **dépréciée** et ne doit pas être utilisée. L’appel suivant équivaut à `getIsSaveToPersonalAllowed()` :
 
 ```java
 
-MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
+MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
 >[!NOTE]
@@ -745,16 +745,20 @@ Le guide de sauvegarde des données spécifie un algorithme général pour la re
 
 ## <a name="multi-identity-optional"></a>Multi-identité (facultatif)
 
-### <a name="overview"></a>Vue d’ensemble
-Par défaut, le SDK d’application Intune applique une stratégie à l’application comme un tout. La multi-identité est une fonctionnalité de protection des applications Intune qui peut être activée pour permettre d’appliquer la stratégie à un niveau par identité. Ceci nécessite une participation nettement accrue de l’application par rapport à d’autres fonctionnalités de protection des applications.
+### <a name="overview"></a>Vue d'ensemble
+Par défaut, le SDK d’application Intune applique une stratégie à l’application dans son ensemble. La multi-identité est une fonctionnalité de protection des applications Intune qui peut être activée pour permettre d’appliquer la stratégie à un niveau par identité. Ceci nécessite une participation nettement accrue de l’application par rapport à d’autres fonctionnalités de protection des applications.
 
-L’application _doit_ informer le SDK quand elle a l’intention de modifier l’identité active ; de même, le SDK notifie l’application quand un changement d’identité est nécessaire. Une fois que l’utilisateur inscrit l’appareil ou l’application, le SDK inscrit cette identité et la considère comme l’identité gérée Intune principale. Les autres utilisateurs de l’application sont considérés comme non gérés, avec des paramètres de stratégie non limités.
+L’application *doit* informer le SDK du moment où elle va changer l’identité active. Dans certains cas, le SDK notifie aussi l’application du moment où un changement d’identité est nécessaire. Toutefois, dans la plupart des cas, la gestion des applications mobiles n’a pas connaissance des données affichées dans l’interface utilisateur ou utilisées sur un thread à un moment donné. Elle s’appuie donc sur l’application pour définir l’identité appropriée afin d’éviter la fuite de données. Dans les sections suivants, certains scénarios nécessitant une action de l’application sont appelés.
+
+> [!NOTE]
+>  Toute participation incorrecte de l’application peut entraîner des fuites de données et d’autres problèmes de sécurité.
+
+Une fois que l’utilisateur inscrit l’appareil ou l’application, le SDK inscrit cette identité et la considère comme l’identité gérée Intune principale. Les autres utilisateurs de l’application sont considérés comme non gérés, avec des paramètres de stratégie non limités.
 
 > [!NOTE]
 > À l’heure actuelle, une seule identité gérée Intune est prise en charge par appareil.
 
 Notez qu’une identité est simplement définie sous la forme d’une chaîne. Les identités **ne respectent pas la casse** et les demandes d’une identité au SDK peuvent ne pas retourner la même casse que celle initialement utilisée lors de la définition de l’identité.
-
 
 ### <a name="enabling-multi-identity"></a>Activation de la multi-identité
 
@@ -774,7 +778,9 @@ Les développeurs peuvent définir l’identité de l’utilisateur d’applicat
   2. Contexte (en général, activité)
   3. Processus
 
-Une identité définie au niveau du thread remplace une identité définie au niveau du contexte, qui remplace elle-même une identité définie au niveau du processus. Une identité définie sur un contexte est utilisée uniquement dans les scénarios associés appropriés. Les opérations d’E/S de fichiers, par exemple, n’ont pas de contexte associé. Vous pouvez utiliser les méthodes suivantes dans `MAMPolicyManager` pour définir l’identité et extraire les valeurs d’identité définies précédemment.
+Une identité définie au niveau du thread remplace une identité définie au niveau du contexte, qui remplace elle-même une identité définie au niveau du processus. Une identité définie sur un contexte n’est utilisée que dans les scénarios associés appropriés. Par exemple, aucun contexte n’est associé aux opérations d’E/S de fichier. En règle générale, les applications définissent l’identité du contexte sur une activité. Une application *ne doit pas* afficher des données pour une identité gérée, sauf si l’identité de l’activité a pour valeur cette même identité. En règle générale, l’identité de niveau processus n’est utile que si l’application fonctionne avec un seul utilisateur à la fois sur tous les threads. Elle n’est pas nécessaire pour certaines applications.
+
+Vous pouvez utiliser les méthodes suivantes dans `MAMPolicyManager` pour définir l’identité et extraire les valeurs d’identité définies précédemment.
 
 ```java
   public static void setUIPolicyIdentity(final Context context, final String identity, final MAMSetUIIdentityCallback mamSetUIIdentityCallback);
@@ -797,8 +803,8 @@ Une identité définie au niveau du thread remplace une identité définie au ni
   public static AppPolicy getPolicy();
 
   /**
-   * Get the currently applicable app policy, taking the context
-   * identity into account.
+  * Get the current app policy. This does NOT take the UI (Context) identity into account.
+   * If the current operation has any context (e.g. an Activity) associated with it, use the overload below.
    */
   public static AppPolicy getPolicy(final Context context);
 
@@ -820,9 +826,11 @@ Toutes les méthodes utilisées pour définir l’identité transmettent les val
 | Valeur renvoyée | Scénario |
 |--|--|
 | SUCCEEDED | Le changement d’identité a réussi. |
-| NOT_ALLOWED | Le changement d’identité n’est pas autorisé. <br><br>Cela se produit en cas de tentative de changement en faveur d’un autre utilisateur géré appartenant à la même organisation que l’utilisateur inscrit. Cela se produit également si l’identité de l’interface utilisateur (contexte) fait l’objet d’une tentative de définition alors qu’une identité différente est définie sur le thread actuel. |
+| NOT_ALLOWED | Le changement d’identité n’est pas autorisé. Le changement d’identité n’est pas autorisé. Cela se produit si l’identité de l’interface utilisateur (contexte) fait l’objet d’une tentative de définition alors qu’une identité différente est définie sur le thread actuel. |
 | CANCELLED | L’utilisateur a annulé le changement d’identité, généralement en appuyant sur le bouton Précédent dans une invite de code PIN ou d’authentification. |
 | FAILED | Le changement d’identité a échoué pour une raison non précisée.|
+
+L’application *doit* vérifier qu’un changement d’identité a réussi avant d’afficher ou d’utiliser des données d’entreprise. À l’heure actuelle, les changements d’identité de thread et de processus n’échouent jamais pour une application prenant en charge plusieurs identités, mais nous nous réservons le droit d’ajouter des conditions d’échec. Le changement d’identité de l’interface utilisateur peut échouer pour des arguments non valides en cas de conflit avec l’identité du thread ou en cas d’annulation par l’utilisateur des exigences du lancement conditionnel (par exemple, si l’utilisateur appuie sur le bouton Précédent sur l’écran du code PIN).
 
 
 Dans le cas de la définition d’une identité de contexte, le résultat est signalé de manière asynchrone. Si le contexte est une activité, le SDK ne sait pas si le changement d’identité a réussi tant que le lancement conditionnel n’est pas effectué, ce qui peut nécessiter que l’utilisateur entre un code PIN ou des informations d’identification d’entreprise. L’application est censée implémenter un `MAMSetUIIdentityCallback` pour recevoir ce résultat. Vous pouvez passer la valeur null pour ce paramètre.
@@ -927,10 +935,10 @@ La méthode `onMAMIdentitySwitchRequired` est appelée pour toutes les modificat
 
   ```java
     public final class MAMFileProtectionManager {
+    /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
+           file, and will tag the file for future protection changes.
 
-        /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the file, and will tag the file for
-         * future protection changes.
          *
          * @param identity
          *            Identity to set.
@@ -940,23 +948,37 @@ La méthode `onMAMIdentitySwitchRequired` est appelée pour toutes les modificat
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
+        
+        /**
+        * Protect a file obtained from a content provider. This is intended to be used for
+        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+        * It may also be used with descriptors referring to private files owned by this app.
+        * It is not intended to be used for files owned by other apps and such usage will fail. If
+        * creating a new file via a content provider exposed by another MAM-integrated app, the new
+        * file identity will automatically be set correctly if the ContentResolver in use was
+        * obtained via a Context with an identity or if the thread identity is set.
+        *
+        * This will synchronously trigger whatever protection is required for the file, and will tag
+        * the file for future protection changes. If an identity is set on a directory, it is set
+        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+        * method will silently do nothing.
+        *
+        * @param identity
+        *       Identity to set.
+        * @param file
+        *       File to protect.
+        *
+        * @throws IOException
+        *       If the file cannot be protected.
+
+        */
+        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
         /**
          * Get the protection info on a file.
          *
          * @param file
          *            File or directory to get information on.
-         * @return File protection info, or null if there is no protection info.
-         * @throws IOException
-         *             If the file cannot be read or opened.
-         */
-        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
-
-        /**
-         * Get the protection info on a file.
-         *
-         * @param file
-         *            File to get information on.
          * @return File protection info, or null if there is no protection info.
          * @throws IOException
          *             If the file cannot be read or opened.
@@ -970,6 +992,19 @@ La méthode `onMAMIdentitySwitchRequired` est appelée pour toutes les modificat
     }
 
   ```
+#### <a name="app-responsibility"></a>Responsabilité de l’application
+La gestion des applications mobiles ne peut pas déduire automatiquement une relation entre les fichiers en cours de lecture et les données affichées dans `Activity`. Les applications *doivent* définir correctement l’identité de l’interface utilisateur avant d’afficher des données d’entreprise. Ceci inclut les données lues à partir de fichiers. Si un fichier est externe à l’application (qu’il soit issu d’un `ContentProvider` ou lu à partir d’un emplacement accessible publiquement en écriture), l’application *doit* tenter de déterminer l’identité du fichier (à l’aide de `MAMFileProtectionManager.getProtectionInfo`) avant d’afficher les informations lues à partir du fichier. Si `getProtectionInfo` signale une identité non Null et non vide, l’identité de l’interface utilisateur *doit* être définie de manière à correspondre à cette identité (à l’aide de `MAMActivity.switchMAMIdentity` ou de `MAMPolicyManager.setUIPolicyIdentity`). Si le changement d’identité échoue, les données du fichier *ne doivent pas* être affichées.
+
+Voici un exemple de flux :
+  * L’utilisateur sélectionne un document à ouvrir dans l’application.
+  * Pendant le flux d’ouverture, avant la lecture des données à partir du disque, l’application confirme l’identité à utiliser pour afficher le contenu.
+    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+    * L’application attend qu’un résultat soit signalé avant de procéder au rappel.
+    * Si le résultat signalé est un échec, l’application n’affiche pas le document.
+  * L’application s’ouvre et affiche le fichier.
+
+## <a name="offline-scenarios"></a>Scénarios hors connexion
 
 Le balisage de l’identité d’un fichier est sensible au mode hors connexion. Les points suivants doivent être pris en compte :
 
@@ -1093,6 +1128,150 @@ Si une application s’inscrit à la notification `WIPE_USER_DATA`, elle ne bén
 
 Si une application prenant en charge plusieurs identités souhaite que la réinitialisation sélective GAM par défaut soit effectuée _**et**_ souhaite effectuer ses propres actions de réinitialisation, elle doit s’inscrire pour les notifications `WIPE_USER_AUXILIARY_DATA`. Cette notification sera envoyée par le SDK juste avant d’effectuer la réinitialisation sélective par défaut GAM. Une application ne doit jamais s’inscrire à la fois pour WIPE_USER_DATA et WIPE_USER_AUXILIARY_DATA.
 
+## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Activation de la configuration ciblée de gestion des applications mobiles pour vos applications Android (facultatif)
+Vous pouvez configurer les paires clé-valeur spécifiques à une application dans la console Intune. Ces paires clé-valeur, qui ne sont pas du tout interprétées par Intune, sont simplement passées à l’application. Les applications qui souhaitent recevoir une telle configuration peuvent utiliser les classes `MAMAppConfigManager` et `MAMAppConfig`. Si plusieurs stratégies ciblent la même application, plusieurs valeurs en conflit peuvent être disponibles pour la même clé.
+
+### <a name="example"></a>Exemple
+```
+MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
+String identity = "user@contoso.com"
+MAMAppConfig appConfig = configManager.getAppConfig(identity);
+LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
+String valueToUse = null;
+if (appConfig.hasConflict("foo")) {
+    List<String> values = appConfig.getAllStringsForKey("foo");
+    for (String value : values) {
+        if (isCorrectValue(value)) {
+            valueToUse = value;
+        }
+    }
+} else {
+    valueToUse = appConfig.getStringForKey("foo", MAMAppConfig.StringQueryType.Any);
+}
+LOGGER.info("Found value " + valueToUse);
+```
+
+### <a name="mamappconfig-reference"></a>Référence MAMAppConfig
+
+```
+public interface MAMAppConfig {
+    /**
+     * Conflict resolution types for Boolean values.
+     */
+    enum BooleanQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns true if any of the values are true.
+         */
+        Or,
+        /**
+         * In case of conflict, returns false if any of the values are false.
+         */
+        And
+    }
+
+    /**
+     * Conflict resolution types for integer and double values.
+     */
+    enum NumberQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the minimum Integer.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the maximum Integer.
+         */
+        Max
+    }
+
+    /**
+     * Conflict resolution types for Strings.
+     */
+    enum StringQueryType {
+        /**
+         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
+         */
+        Any,
+        /**
+         * In case of conflict, returns the first result ordered alphabetically.
+         */
+        Min,
+        /**
+         * In case of conflict, returns the last result ordered alphabetically.
+         */
+        Max
+    }
+
+    /**
+     * Retrieve the List of Dictionaries containing all the custom
+     *  config data sent by the MAMService. This will return every
+     * Application Configuration setting available for this user, one
+     *  mapping for each policy applied to the user.
+     */
+    List<Map<String, String>> getFullData();
+
+    /**
+     * Returns true if there is more than one targeted custom config setting for the key provided. 
+     */
+    boolean hasConflict(String key);
+
+    /**
+     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
+     * null if none exists or it cannot be coerced.
+     */
+    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
+
+    /**
+     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
+     */
+    Long getIntegerForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
+     */
+    Double getDoubleForKey(String key, NumberQueryType queryType);
+
+    /**
+     * @return a String value for the given key, or null if none exists.
+     */
+    String getStringForKey(String key, StringQueryType queryType);
+
+    /**
+     * Like getBooleanForKey except returns all values if multiple are present.
+     */
+    List<Boolean> getAllBooleansForKey(String key);
+
+    /**
+     * Like getIntegerForKey except returns all values if multiple are present.
+     */
+    List<Long> getAllIntegersForKey(String key);
+
+    /**
+     * Like getDoubleForKey except returns all values if multiple are present.
+     */
+    List<Double> getAllDoublesForKey(String key);
+
+    /**
+     * Like getStringForKey except returns all values if multiple are present.
+     */
+    List<String> getAllStringsForKey(String key);
+}
+```
+
+### <a name="notification"></a>Notification
+La configuration de l’application ajoute un nouveau type de notification :
+* **REFRESH_APP_CONFIG** : cette notification est envoyée dans un `MAMUserNotification` et indique à l’application que de nouvelles données de configuration d’application sont disponibles.
+
+Pour plus d’informations sur les fonctionnalités de l’API Graph en ce qui concerne les valeurs de configuration ciblée de gestion des applications mobiles, consultez [Graph API Reference MAM Targeted Config (Référence de l’API Graph pour la configuration ciblée de gestion des applications mobiles)](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+Pour plus d’informations sur la création d’une stratégie de configuration d’application ciblée de gestion des applications mobiles dans Android, consultez la section correspondante dans [Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour Android](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android).
 
 ## <a name="style-customization-optional"></a>Personnalisation du style (facultatif)
 
@@ -1141,18 +1320,22 @@ Pour les grandes bases de code qui s’exécutent sans [ProGuard](http://proguar
 1.  Limite de 65 Ko sur les champs
 2.  Limite de 65 Ko sur les méthodes
 
-
-
 ### <a name="policy-enforcement-limitations"></a>Limitations concernant l’application de la stratégie
 
 * **Capture d’écran**: le SDK ne peut pas appliquer une nouvelle valeur de capture d’écran dans les activités qui sont déjà passées par Activity.onCreate. Il peut en résulter une période au cours de laquelle l’application est configurée pour désactiver les captures d’écran ; toutefois, il est toujours possible d’en prendre.
 
 * **Utilisation de programmes de résolution de contenu** : la stratégie Intune de transfert ou de réception peut bloquer entièrement ou en partie l’utilisation d’un programme de résolution de contenu pour accéder au fournisseur de contenu dans une autre application. Par conséquent, les méthodes ContentResolver retournent null ou lèvent une valeur d’échec (par exemple, `openOutputStream` lève `FileNotFoundException` en cas de blocage). L’application peut déterminer si l’échec de l’écriture des données par le biais d’un programme de résolution de contenu est causé par une stratégie (ou pourrait être causé par une stratégie) en appelant :
+    ```java
+    MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
+    ```
+    ou si aucune activité n’est associée
 
     ```java
-    MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI);
+    MAMPolicyManager.getPolicy().getIsSaveToLocationAllowed(contentURI);
     ```
 
+    Dans ce deuxième cas, les applications à plusieurs identités doivent définir correctement l’identité de thread (ou passer une identité explicite à l’appel `getPolicy`).
+    
 ### <a name="exported-services"></a>Services exportés
 
  Le fichier AndroidManifest.xml inclus dans le SDK d’application Intune contient **MAMNotificationReceiverService**. Il doit s’agir d’un service exporté pour autoriser le portail d’entreprise à envoyer des notifications à une application compatible. Le service vérifie l’appelant pour s’assurer que seul le Portail d’entreprise est autorisé à envoyer des notifications.
