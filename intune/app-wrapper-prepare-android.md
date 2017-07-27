@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 299e2ed0a84c7158a582ee874f0711eb3c379532
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Préparer des applications Android pour la gestion des applications mobiles avec l'outil de création de package de restrictions d'application
 
@@ -121,6 +121,17 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 Vous êtes ensuite invité à entrer des valeurs pour **KeyStorePassword** et **KeyPassword**. Entrez les informations d’identification que vous avez utilisées pour créer le fichier de magasin de clés.
 
 L’application encapsulée et un fichier journal sont générés et enregistrés dans le chemin de sortie spécifié.
+
+## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Réutilisation de certificats de signature et inclusion d’applications dans un wrapper
+Android exige que toutes les applications soient signées par un certificat valide pour être installées sur des appareils Android.
+
+Les applications incluses dans un wrapper peuvent être signées au cours du processus d’inclusion dans un wrapper ou *après* celui-ci à l’aide de vos outils de signature existants (toutes les informations de signature figurant dans l’application avant l’inclusion dans un wrapper sont ignorées).
+ 
+Si possible, les informations de signature utilisées pendant le processus de génération doivent être réutilisées durant l’inclusion dans un wrapper. Dans certaines organisations, il peut être nécessaire de contacter la personne qui détient les informations du magasin de clés (c’est-à-dire l’équipe de génération des applications). 
+
+Si le certificat de signature précédent ne peut pas être utilisé ou que l’application n’a pas encore été déployée, vous pouvez créer un certificat de signature en suivant les instructions du [Guide du développeur Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
+
+Si l’application a déjà été déployée avec un autre certificat de signature, elle ne peut pas être chargée dans la console Intune après la mise à niveau. Tout scénario de mise à niveau d’application est interrompu si votre application est signée avec un certificat différent de celui avec lequel elle a été générée. Tout nouveau certificat de signature doit donc être conservé pour les mises à niveau des applications. 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Considérations en matière de sécurité lors de l’exécution de l’outil de création de package de restrictions d’application
 Pour empêcher l'usurpation d'identité, la divulgation d'informations et les attaques par élévation de privilège, procédez comme suit :

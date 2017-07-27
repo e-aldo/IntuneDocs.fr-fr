@@ -1,7 +1,7 @@
 ---
-title: "S’inscrire à une évaluation gratuite de 30 jours"
-titleSuffix: Intune on Azure
-description: "Guide pratique pour s’inscrire à Intune sur Azure."
+title: "S’inscrire à une version d’évaluation gratuite de 30 jours de Microsoft Intune"
+titleSuffix: 
+description: "Comment s’inscrire à un essai gratuit de 30 jours d’Intune"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -13,22 +13,22 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 7dafdb974dd975eaa7f3268119de6c047c50f858
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal"></a>Inscrivez-vous pour une version d’évaluation gratuite de Microsoft Intune pour le portail Azure
+# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>S’inscrire à une version d’évaluation gratuite de Microsoft Intune
 
 
 Cet article vous guide tout au long l’inscription pour une version d’évaluation d’Intune autonome pour le portail Azure.
 
 1. Visitez la page d’[inscription Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) et remplissez le formulaire pour vous inscrire afin d’obtenir un abonnement d’évaluation.
-account-sign-up.md
+* Si vous avez un compte professionnel ou scolaire que vous voulez utiliser pour votre version d’évaluation Intune, suivez plutôt ces [instructions de connexion](/intune/account-sign-up).
 
-  Si la plupart des utilisateurs et opérations informatiques ont des paramètres régionaux différents des vôtres, vous pouvez définir ces paramètres régionaux dans **Où votre société se situe-t-elle ?**.
+* Si la plupart des utilisateurs et opérations informatiques ont des paramètres régionaux différents des vôtres, vous pouvez définir ces paramètres régionaux dans **Où votre société se situe-t-elle ?**.
 
 2. À la fin de la procédure d’inscription, vous recevez un message avec vos nouvelles informations de compte. <br/> ![Image d’informations de compte](./media/2-end-of-sign-up-process.png) <br/>À ce stade, si vous cliquez sur **Vous êtes prêt**, vous êtes dirigé vers le centre d’administration Office 365, où vous pouvez ajouter des utilisateurs à votre environnement de test. <br/><br/>Toutefois, si vous souhaitez accéder directement au portail Intune Azure, ouvrez une nouvelle fenêtre de navigateur et saisissez **https://portal.azure.com** dans la barre d’adresse. Vous êtes alors redirigé vers la page de connexion Azure où vous pouvez utiliser les informations d’identification que vous avez reçues pour vous connecter. Utilisez cette adresse chaque fois que vous souhaitez vous connecter à votre version d’évaluation d’Intune. <br/> ![Image de page de connexion au portail Azure](./media/azure-portal-signin.png)
 
@@ -70,8 +70,6 @@ Pour revenir d’Intune au Centre d’administration Office 365, entrez https://
 
 ### <a name="intune-on-azure"></a>Intune sur Azure
 En savoir plus sur [Intune dans le portail Azure](what-is-intune.md)
-### <a name="classic-intune"></a>Intune classique
-Scénario d’évaluation : [Évaluer la gestion des appareils mobiles dans Microsoft Intune](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>Intégration dans d'autres produits
 En savoir plus sur l’utilisation de vos comptes d’utilisateur Azure Active Directory avec Intune :

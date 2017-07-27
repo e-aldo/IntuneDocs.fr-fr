@@ -14,17 +14,17 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Protéger les données et applications métier sur des appareils non inscrits dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Les stratégies de gestion des applications mobiles protègent les données de l’entreprise en limitant les actions qui pourraient provoquer une fuite des données de l’entreprise et en appliquant des exigences pour l’accès aux données, comme le code confidentiel d’une application. Pour appliquer des stratégies de gestion des applications mobiles à des applications métier iOS et Android, vous devez d’abord encapsuler l’application avec l’outil de création de package de restrictions d’application Microsoft Intune. L’encapsulation d’applications est le processus qui consiste à appliquer une couche de gestion à une application mobile sans avoir à la modifier et à la distribuer à vos utilisateurs.  
+Les stratégies de gestion des applications mobiles protègent les données de l’entreprise en limitant les actions qui pourraient provoquer une fuite des données de l’entreprise et en appliquant des exigences pour l’accès aux données, comme le code confidentiel d’une application. Pour appliquer des stratégies de gestion des applications mobiles à des applications métier iOS et Android, vous devez d’abord encapsuler l’application avec l’outil de création de package de restrictions d’application Microsoft Intune. L’inclusion dans un wrapper d’une application est le processus qui consiste à appliquer une couche de gestion à une application mobile sans avoir à la changer et à la distribuer à vos utilisateurs.  
 
 Cette rubrique décrit les étapes nécessaires pour appliquer des stratégies de gestion des applications mobiles pour les applications accessibles sur les **appareils personnels des employés qui ne sont pas gérés** et les appareils qui sont gérés par une **solution de gestion des appareils mobiles tierce**.  Pour préparer vos applications métier qui s’exécutent sur des **appareils inscrits dans la gestion des appareils mobiles Intune**, consultez [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 

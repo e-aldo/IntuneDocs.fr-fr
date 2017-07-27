@@ -6,19 +6,19 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 7549f3277c23c3951090502f2babfe7c47b0a201
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
+ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introduction à Microsoft Intune dans le portail Azure
 
@@ -28,13 +28,10 @@ ms.lasthandoff: 07/01/2017
 Microsoft Intune se trouve désormais dans le portail Azure, ce qui signifie que les flux de travail et fonctionnalités que vous utilisiez sont maintenant différents.
 Le nouveau portail vous offre des fonctionnalités nouvelles et mises à jour dans le portail Azure, où vous pouvez gérer les appareils mobiles, PC et applications de votre entreprise.
 
-> [!IMPORTANT]
-> **Vous ne voyez pas encore le nouveau portail ?**<br>
-> Les clients existants sont migrés vers la nouvelle expérience. Une notification s’affiche dans le centre de messages Office avant migration de votre client.
->
-> Les comptes Intune créés avant janvier 2017 nécessiteront une migration unique pour que les workflows Apple Enrollment soient disponibles dans Azure. Le calendrier de migration n’a pas encore été annoncé. Si votre compte ne peut pas accéder au portail Azure, nous vous recommandons de créer un compte d’évaluation.
->
-> Passez en revue la liste des bloqueurs potentiels https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+* [Où se trouvent mes fonctionnalités dans Azure ?](ui-changes.md) est une référence qui vous montre les flux de travail et interfaces utilisateur spécifiques qui ont été modifiés au cours du passage à Azure.
+* [Groupes classiques Intune dans le portail Azure](groups-get-started.md) explique les implications du passage aux groupes de sécurité Azure Active Directory pour la gestion des groupes.
+
+
 
 
 Vous trouverez plus d’informations sur le nouveau portail dans cette bibliothèque, qui est continuellement mise à jour. Si vous avez des suggestions, n’hésitez pas à laisser des commentaires dans la section dédiée de la rubrique. Nous sommes à votre écoute.
@@ -47,7 +44,14 @@ Points clés de la nouvelle expérience :
 - Groupes Azure AD (Active Directory) pour assurer la compatibilité dans toutes vos applications Azure
 - Prise en charge des navigateurs web les plus récents
 
-Si vous recherchez une documentation pour la console Intune classique, consultez la [bibliothèque de documentation pour Intune](https://docs.microsoft.com/intune-classic/).
+> [!IMPORTANT]
+> **Vous ne voyez pas encore le nouveau portail ?**<br>
+> Les clients existants sont migrés vers la nouvelle expérience. Une notification s’affiche dans le centre de messages Office avant migration de votre client.
+>
+> Les comptes Intune créés avant janvier 2017 nécessiteront une migration unique pour que les workflows Apple Enrollment soient disponibles dans Azure. Le calendrier de migration n’a pas encore été annoncé. Si votre compte ne peut pas accéder au portail Azure, nous vous recommandons de créer un compte d’évaluation.
+>
+> Passez en revue la liste des bloqueurs potentiels https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
+
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -91,7 +95,7 @@ Informations pour vous aider à [planifier et concevoir](/intune-classic/plan-de
 ### <a name="on-premises-access"></a>Accès local
 [Configurer l’accès à Exchange ActiveSync et Exchange sur site](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### <a name="users"></a>Utilisateurs
-[Découvrez-en davantage sur les utilisateurs des appareils que vous gérez et triez les ressources en les regroupant en groupes](user-management.md).
+[Découvrez-en davantage sur les utilisateurs des appareils que vous gérez et triez les ressources en les regroupant en groupes](users-add.md).
 ### <a name="groups"></a>Groupes
 [Découvrez comment vous pouvez utiliser des groupes Active Directory Azure avec Intune](groups-get-started.md)
 ### <a name="intune-roles"></a>Rôles Intune
