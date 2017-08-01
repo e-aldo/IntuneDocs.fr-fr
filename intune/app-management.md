@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2017
 ---
-# Qu’est-ce que la gestion des applications Microsoft Intune ?
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ Vous pourrez également souhaiter affecter et gérer des applications sur les ap
 
 Intune propose une gamme de fonctionnalités pour vous aider à obtenir les applications dont vous avez besoin, sur les appareils de votre choix.
 
-## Fonctionnalités de gestion d’application par plateforme
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>Fonctionnalités de gestion d’application par plateforme
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 
 <sup>2</sup>S’applique aux appareils gérés par Intune uniquement.
 
-## Mise en route
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>Mise en route
 
 Vous trouverez la plupart des éléments liés à l’application dans la charge de travail **Mobile Apps**, à laquelle vous pouvez accéder comme suit :
 
@@ -73,8 +70,7 @@ Vous trouverez la plupart des éléments liés à l’application dans la charge
 
     ![La charge de travail Mobile Apps](./media/apps-workload.png)
 
-### Gestion
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>Gestion
 - **Applications** : c’est sur ce nœud que vous allez ajouter, affecter et surveiller la plupart de vos applications.
     - [Ajouter des applications](apps-add.md)
     - [Attribuer des applications](apps-deploy.md)
@@ -89,8 +85,7 @@ Vous trouverez la plupart des éléments liés à l’application dans la charge
 - **Profils de configuration iOS** : les applications iOS incluent un profil de configuration et du code signé par un certificat. Lors de l’expiration du certificat, l’application ne peut plus être exécutée. Intune vous offre les outils pour affecter de façon proactive une nouvelle stratégie de profil de configuration pour les appareils qui disposent d’applications arrivant prochainement à expiration.
     - [Profils de configuration d’applications iOS](app-provisioning-profile-ios.md)
 
-### Surveillance
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>Surveillance
 - **Applications sous licence** : affichez, affectez et surveillez les applications achetées en volume dans les App Stores.
     - [Applications achetées en volume à partir du Windows Store pour Entreprises](windows-store-for-business.md)
 - **Applications découvertes** : affiche toutes les applications qui ont été affectées par Intune et installées sur un appareil.
@@ -99,8 +94,7 @@ Vous trouverez la plupart des éléments liés à l’application dans la charge
 
 Pour plus d’informations, consultez [Surveiller des applications](apps-monitor.md)
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store pour Entreprises** : configurer l’intégration à Windows Store pour Entreprises. Après cela, vous pouvez synchroniser les applications achetées à Intune, et affecter puis suivre l’utilisation de votre licence.

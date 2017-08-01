@@ -20,13 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/11/2017
 ---
-# Développer un plan de déploiement
-<a id="develop-a-rollout-plan" class="xliff"></a>
+# <a name="develop-a-rollout-plan"></a>Développer un plan de déploiement
 
 Votre plan de déploiement identifie les groupes organisationnels que vous souhaitez cibler pour votre déploiement d’Intune, le délai de déploiement pour chaque groupe et les méthodes d’inscription que vous allez utiliser.
 
-## Groupes ciblés et plages de temps
-<a id="targeted-groups-and-timeframes" class="xliff"></a>
+## <a name="targeted-groups-and-timeframes"></a>Groupes ciblés et plages de temps
 
 Tout d’abord, passez en revue les groupes qui sont ciblés avec votre déploiement Intune et que vous avez identifiés dans vos [scénarios d’utilisation](planning-guide-scenarios.md).
 
@@ -38,20 +36,17 @@ Ensuite, déterminez la plage de temps pour chaque groupe ciblé. Cette tâche n
 * Emplacement géographique
 * Le risque pour l’entreprise
 
-## Phases de déploiement
-<a id="rollout-phases" class="xliff"></a>
+## <a name="rollout-phases"></a>Phases de déploiement
 Les organisations choisissent généralement de démarrer le déploiement Intune avec un pilote initial, en ciblant un petit groupe d’utilisateurs au sein du service informatique. Le pilote peut ensuite être étendu afin d'inclure un ensemble plus large d’utilisateurs et peut comprendre la participation d’autres groupes de l’organisation.
 
-### Pilote
-<a id="pilot" class="xliff"></a>
+### <a name="pilot"></a>Pilote
 La première phase de déploiement doit représenter des utilisateurs pilotes. Les utilisateurs pilotes doivent comprendre qu’ils sont les premiers utilisateurs d’une nouvelle solution. Ils doivent être prêts à fournir des commentaires afin d'améliorer la configuration, la documentation, les notifications et ouvrir ainsi la voie à tous les autres utilisateurs dans les phases de déploiement ultérieures. Ces utilisateurs ne doivent pas être des cadres ou des VIP.
 
 Le pilote est une bonne occasion de tester les [défis](planning-guide-deployment-goals.md) et d’affiner les [exigences](planning-guide-requirements.md) que vous avez collectées précédemment.
 
 Incluez votre plan de [communication](planning-guide-communication-plan.md), votre plan de [support](planning-guide-support-plan.md), et [le test et la validation](planning-guide-test-validation.md) pour résoudre les problèmes tant que l’impact sur les utilisateurs est encore modéré.
 
-### Déploiement de production
-<a id="production-rollout" class="xliff"></a>
+### <a name="production-rollout"></a>Déploiement de production
 Après la réussite d’un pilote, vous êtes prêt à commencer un déploiement en production, en ciblant le reste des groupes de votre organisation. Voici quelques exemples de groupes et phases de déploiement différents :
 
 -   **Services** <br/>Chaque service peut être une phase de déploiement. Vous ciblez un service à la fois. Dans ce type de déploiement, les utilisateurs de chaque service ont tendance à utiliser l’appareil mobile de la même manière et à accéder aux mêmes applications. Les utilisateurs auront probablement les mêmes types de stratégies.
@@ -71,26 +66,22 @@ Voici un exemple de plan de déploiement Intune incluant des groupes et des dél
 | Phase 3 du déploiement de production |  |  |  | Ressources humaines (50 utilisateurs), finances (40 utilisateurs), cadres (30 utilisateurs) |
 
 Vous pouvez [télécharger un modèle du tableau ci-dessus](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) pour saisir les phases de déploiement de votre organisation.
-## Faire correspondre les groupes de déploiement aux approches d’inscription
-<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
+## <a name="match-rollout-groups-to-enrollment-approaches"></a>Faire correspondre les groupes de déploiement aux approches d’inscription
 
 Maintenant que vous avez déterminé les groupes et les délais ciblés pour votre déploiement Intune, l’étape suivante consiste à choisir l’approche d’inscription Intune la plus appropriée pour chaque groupe. Il existe différentes approches d’inscription, notamment :
 * Libre-service pour utilisateur
 * Inscription avec assistance de l'utilisateur
 * Salon informatique
 
-### Libre-service pour utilisateur
-<a id="user-self-service" class="xliff"></a>
+### <a name="user-self-service"></a>Libre-service pour utilisateur
 
 Dans ce cas, l’utilisateur est responsable de l’inscription de ses propres appareils, généralement en suivant les instructions d’inscription fournies par son service informatique. Cette approche est plus couramment utilisée dans des organisations et elle est plus évolutive que l’inscription avec assistance de l'utilisateur.
 
-### Inscription avec assistance de l’utilisateur
-<a id="user-assisted-enrollment" class="xliff"></a>
+### <a name="user-assisted-enrollment"></a>Inscription avec assistance de l’utilisateur
 
 Il s’agit d’une approche dite de « Gant blanc ». Un membre de l’équipe informatique aide l’utilisateur via le processus d’inscription, en personne ou sur Skype. Cette approche est généralement utilisée avec les cadres et autres groupes qui peuvent nécessiter une assistance plus poussée pendant le processus d’inscription.
 
-### Salon informatique
-<a id="it-tech-fair" class="xliff"></a>
+### <a name="it-tech-fair"></a>Salon informatique
 
 Une autre option d’inscription de l'utilisateur Intune consiste à organiser un salon informatique. Au cours de cet événement, le service informatique installe un stand d'assistance pour l'inscription Intune d’inscription où les utilisateurs peuvent recevoir des informations sur l’inscription à Intune, poser des questions et recevoir de l’aide sur le processus d’inscription. Cette option peut être utile à la fois pour le service informatique et l’utilisateur, en particulier au cours des premières phases de déploiement Intune.
 
@@ -111,7 +102,6 @@ Voici un exemple de mis à jour du plan de déploiement Intune ci-dessus pour in
 | Libre-service |  |  |  | Ressources humaines, finances |
 | Gant blanc |  |  |  | Cadres |
 
-## Étapes suivantes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Étapes suivantes
 
 La section suivante fournit des conseils sur [le développement d'un plan de communication de déploiement Intune](planning-guide-communication-plan.md).
