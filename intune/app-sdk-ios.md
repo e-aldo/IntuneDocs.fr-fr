@@ -156,7 +156,7 @@ Pour activer le SDK d’application Intune, procédez comme suit :
 
 8. Si l’application définit des modèles d’URL dans son fichier info.plist, ajoutez un autre modèle avec un suffixe `-intunemam` pour chaque modèle d’URL.
 
-9. Si l’application définit les types de documents dans son fichier Info.plist, dans le tableau « UTI de type de contenu de document » de chaque élément, ajoutez une entrée dupliquée pour chaque chaîne comportant un préfixe « com.microsoft.intune.mam ». prefix.
+9. Si l’application définit les types de documents dans son fichier Info.plist, dans le tableau « UTI de type de contenu de document » de chaque élément, ajoutez une entrée dupliquée pour chaque chaîne comportant un « com.microsoft.intune.mam »  préfixe .
 
 10. Pour les applications mobiles développées sur iOS 9+, incluez chaque protocole que votre application mobile passe à `UIApplication canOpenURL` dans le tableau `LSApplicationQueriesSchemes` du fichier Info.plist de votre application. Par ailleurs, pour chaque protocole répertorié, ajoutez un nouveau protocole et insérez `-intunemam` à la fin. Vous devez également inclure `http-intunemam`, `https-intunemam`et `ms-outlook-intunemam` dans le tableau.
 
