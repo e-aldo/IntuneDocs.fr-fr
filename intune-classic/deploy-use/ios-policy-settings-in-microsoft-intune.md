@@ -20,15 +20,13 @@ ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2017
 ---
-# Paramètres de la stratégie d’iOS dans Microsoft Intune
-<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="ios-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie d’iOS dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils iOS. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
 
-## Paramètres de la stratégie de configuration générale
-<a id="general-configuration-policy-settings" class="xliff"></a>
+## <a name="general-configuration-policy-settings"></a>Paramètres de la stratégie de configuration générale
 
 Utilisez la **stratégie de configuration générale iOS** de Microsoft Intune pour configurer les paramètres suivants :
 
@@ -43,8 +41,7 @@ Utilisez la **stratégie de configuration générale iOS** de Microsoft Intune p
 
 Si le paramètre que vous recherchez n’apparaît pas dans cette rubrique, vous pouvez peut-être le créer à l’aide d’une stratégie personnalisée iOS qui vous permet d’importer les paramètres que vous avez créés à l’aide de l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Pour en savoir plus, consultez la section « Paramètres de la stratégie personnalisée » de la présente rubrique.
 
-### Paramètres de sécurité
-<a id="security-settings" class="xliff"></a>
+### <a name="security-settings"></a>Paramètres de sécurité
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -63,8 +60,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser le déverrouillage par empreinte digitale**|Autoriser le déverrouillage de l’appareil par empreinte digitale.|
 <sup>1</sup> Pour les appareils iOS, quand vous configurez les paramètres **Minutes d’inactivité avant arrêt de l’écran** et **Minutes d’inactivité avant demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
 
-### Paramètres système
-<a id="system-settings" class="xliff"></a>
+### <a name="system-settings"></a>Paramètres système
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -77,8 +73,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser la soumission des données de diagnostic**|Autoriser ou bloquer l’envoi de données de diagnostic à Apple depuis l’appareil.|
 |**Autoriser le livret lors du verrouillage**|Autoriser l’utilisateur à accéder à l’application de livret lorsque l’appareil est verrouillé.|
 
-### Paramètres du cloud pour les documents et les données
-<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
+### <a name="cloud-settings-for-documents-and-data"></a>Paramètres du cloud pour les documents et les données
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -92,8 +87,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser le partage de photos iCloud**|Choisissez **Non** pour désactiver le **partage de photos iCloud** sur l'appareil.|
 |**Autoriser la photothèque iCloud**|Si définie sur **Non**, désactive l’utilisation de la photothèque iCloud qui permet aux utilisateurs de stocker des photos et des vidéos dans le cloud.   Toutes les photos qui ne sont pas entièrement téléchargées de la Photothèque iCloud sur l'appareil seront supprimées de l'appareil si cette valeur est définie sur **Non**.|
 
-### Paramètres d’application du navigateur
-<a id="application-settings-for-the-browser" class="xliff"></a>
+### <a name="application-settings-for-the-browser"></a>Paramètres d’application du navigateur
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -105,8 +99,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser les scripts Java**|Autoriser l’exécution des scripts Java dans le navigateur.|
 |**Autoriser l’avertissement de fraudes**|Autoriser l’affichage d’avertissements antifraude dans le navigateur.|
 
-### Paramètres d’application relatifs aux applications
-<a id="application-settings-for-apps" class="xliff"></a>
+### <a name="application-settings-for-apps"></a>Paramètres d’application relatifs aux applications
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -120,8 +113,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser l’utilisateur à faire confiance aux nouveaux créateurs d’applications d’entreprise**|Permet à l’utilisateur de choisir de faire confiance aux applications qui n’ont pas été téléchargées à partir de l’App Store.|
 
 
-### Paramètres d’application relatifs aux jeux
-<a id="application-settings-for-games" class="xliff"></a>
+### <a name="application-settings-for-games"></a>Paramètres d’application relatifs aux jeux
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -129,8 +121,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser l’ajout d’amis Game Center**|Autoriser l’utilisateur à ajouter des amis dans le Game Center.|
 |**Autoriser les jeux multijoueur**|Autoriser l’utilisateur à jouer à des jeux multijoueur sur l’appareil.|
 
-### Paramètres d’application relatifs au contenu multimédia
-<a id="application-settings-for-media-content" class="xliff"></a>
+### <a name="application-settings-for-media-content"></a>Paramètres d’application relatifs au contenu multimédia
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -140,8 +131,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser l’utilisateur à télécharger du contenu indiqué comme étant « Littérature érotique » à partir de l’iBooks Store**|Autorise l’utilisateur à télécharger des livres de la catégorie « Littérature érotique ».|
 
 
-### Paramètres des fonctionnalités de l’appareil pour le matériel
-<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
+### <a name="device-capabilities-settings-for-hardware"></a>Paramètres des fonctionnalités de l’appareil pour le matériel
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -150,8 +140,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Forcer les montres Apple Watch jumelées à utiliser la détection de poignet**|Quand elle est activée, l’Apple Watch n’affiche pas de notification si elle n’est pas portée.|
 |**Exiger un mot de passe associé pour les demandes AirPlay sortantes**|Nécessite un mot de passe de jumelage lorsque l’utilisateur a recours à AirPlay pour diffuser le contenu vers d’autres appareils Apple.|
 
-### Paramètres des fonctionnalités de l’appareil pour les appareils cellulaires
-<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
+### <a name="device-capabilities-settings-for-cellular"></a>Paramètres des fonctionnalités de l’appareil pour les appareils cellulaires
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -160,8 +149,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser l’itinérance des données**|Autoriser l’itinérance des données quand l’appareil se trouve sur un réseau cellulaire.|
 |**Autoriser l’extraction en arrière-plan globale pendant l’itinérance**|Autoriser l’appareil à récupérer des données comme les courriers électroniques lorsqu’il est en mode itinérance sur un réseau cellulaire.|
 
-### Paramètres des fonctionnalités de l’appareil pour les fonctions
-<a id="device-capabilities-settings-for-features" class="xliff"></a>
+### <a name="device-capabilities-settings-for-features"></a>Paramètres des fonctionnalités de l’appareil pour les fonctions
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
@@ -172,8 +160,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Ne pas autoriser AirDrop à partir des applications gérées**|Empêche les applications gérées d’envoyer des données via AirDrop.|
 
 
-### Paramètres des applications conformes et non conformes
-<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>Paramètres des applications conformes et non conformes
 Dans la liste **Applications conformes &amp; non conformes**, spécifiez une liste d’applications conformes ou non conformes à l’aide des informations ci-après.
 
 > [!NOTE]
@@ -190,8 +177,7 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 
 Les stratégies contenant des paramètres d’application conformes et non conformes doivent être déployés sur des groupes d’utilisateurs.
 
-### Paramètres du mode plein écran
-<a id="kiosk-mode-settings" class="xliff"></a>
+### <a name="kiosk-mode-settings"></a>Paramètres du mode plein écran
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
@@ -218,20 +204,17 @@ Les stratégies contenant des paramètres d’application conformes et non confo
 > -   Avant de pouvoir configurer un appareil iOS pour le mode plein écran, vous devez utiliser l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) ou le [Programme d’inscription des appareils Apple](ios-device-enrollment-program-in-microsoft-intune.md) pour mettre l’appareil en mode supervisé. Pour en savoir plus sur l’outil Apple Configurator, consultez votre documentation Apple.
 > -   Si l’application iOS que vous spécifiez est installée après le déploiement de la stratégie de configuration, l’appareil ne bascule en mode plein écran qu’après son redémarrage.
 
-### Informations de référence pour les applications conformes et non conformes
-<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Informations de référence pour les applications conformes et non conformes
 
 Utilisez le **Rapport sur les applications non conformes** pour afficher la conformité des applications autorisées et bloquées.
 
-##### Pour exécuter le rapport sur les applications non conformes
-<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
+##### <a name="to-run-the-noncompliant-apps-report"></a>Pour exécuter le rapport sur les applications non conformes
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), sélectionnez **Rapports** &gt; **Rapport sur les applications non conformes**.
 
 2.  Sélectionnez les groupes d’appareils que vous voulez vérifier, en indiquant si vous voulez vérifier les applications conformes, non conformes ou les deux, puis choisissez **Afficher le rapport**.
 
-#### Comment spécifier des URL de magasins d'applications
-<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
+#### <a name="how-to-specify-urls-to-app-stores"></a>Comment spécifier des URL de magasins d'applications
 Pour spécifier une URL d'application dans la liste des applications conformes et non conformes, ou dans l'option **Sélectionnez une application gérée qui sera autorisée à s'exécuter quand l'appareil est en mode plein écran** (iOS uniquement), utilisez le format suivant :
 
 1. À l’aide d’un moteur de recherche, recherchez l’application à utiliser dans l’App Store iTunes, puis ouvrez la page de l’application.
@@ -243,20 +226,17 @@ Pour spécifier une URL d'application dans la liste des applications conformes e
 > [!NOTE]
 > Vous pouvez également utiliser le logiciel iTunes pour rechercher l'application, puis la commande **Copier le lien** pour obtenir l'URL de l'application.
 
-### Paramètres d’inscription
-<a id="enrollment-settings" class="xliff"></a>
+### <a name="enrollment-settings"></a>Paramètres d’inscription
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
 |**Autoriser le verrou d’activation quand l’appareil est en mode supervisé**|Active le verrou d’activation sur des appareils iOS supervisés.|
 
-### Paramètres du mode supervisé
-<a id="supervised-mode-settings" class="xliff"></a>
+### <a name="supervised-mode-settings"></a>Paramètres du mode supervisé
 Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS 8.0 et ultérieur en mode supervisé.
 
-### Paramètres du mode supervisé pour les restrictions de l’appareil
-<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-device-restrictions"></a>Paramètres du mode supervisé pour les restrictions de l’appareil
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
@@ -272,8 +252,7 @@ Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS
 |**Autoriser le changement des paramètres de notification**|Autorise l’utilisateur à modifier les paramètres de notification de l’appareil.|
 |**Autoriser le changement du fond d’écran**|Autorise l’utilisateur à modifier le fond d’écran de l’appareil.|
 
-### Paramètres du mode supervisé pour les restrictions de fonctionnalités
-<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-feature-restrictions"></a>Paramètres du mode supervisé pour les restrictions de fonctionnalités
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
@@ -287,8 +266,7 @@ Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS
 |**Autoriser la correction orthographique du clavier**|Autorise le vérificateur orthographique de l’appareil.|
 |**Autoriser les raccourcis clavier**|Autorise les raccourcis clavier.|
 
-### Paramètres du mode supervisé pour les restrictions d’application
-<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-app-restrictions"></a>Paramètres du mode supervisé pour les restrictions d’application
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
@@ -305,8 +283,7 @@ Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS
 |**Autoriser Game Center**|Autorise l’utilisation de l’application Game Center.|
 
 
-### Afficher ou masquer des applications
-<a id="show-or-hide-apps" class="xliff"></a>
+### <a name="show-or-hide-apps"></a>Afficher ou masquer des applications
 
 Utilisez la **Liste des applications masquées et affichées** pour contrôler les éléments suivants sur les appareils supervisés exécutant iOS 9.3 ou version ultérieure :
 
@@ -314,8 +291,7 @@ Utilisez la **Liste des applications masquées et affichées** pour contrôler l
 - Spécifier une liste d’applications que les utilisateurs peuvent afficher et lancer. Aucune autre application ne peut être affichée ou lancée.
 
 
-#### Comment créer une liste des applications masquées et affichées
-<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
+#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>Comment créer une liste des applications masquées et affichées
 
 Spécifiez les paramètres suivants :
 
@@ -329,8 +305,7 @@ Spécifiez les paramètres suivants :
 |**Éditer**|Vous permet de modifier le nom, l'éditeur et l'URL de l'application sélectionnée.|
 |**Supprimer**|Supprime l'application sélectionnée dans la liste.|
 
-#### Informations sur les applications iOS intégrées
-<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
+#### <a name="app-information-for-built-in-ios-apps"></a>Informations sur les applications iOS intégrées
 
 Utilisez les informations de cette liste pour identifier le nom, l’éditeur et l’ID de lot des applications iOS intégrées que vous pouvez afficher ou masquer. Si vous souhaitez afficher ou masquer toutes les applications de la liste, vous pouvez copier les données ci-dessous dans un fichier texte avec l’extension **.csv**, puis utiliser l’option **Importer des applications** pour importer toutes les applications simultanément.
 
@@ -380,30 +355,26 @@ Utilisez les informations de cette liste pour identifier le nom, l’éditeur et
 
 
 
-## Paramètres de la stratégie personnalisée
-<a id="custom-policy-settings" class="xliff"></a>
+## <a name="custom-policy-settings"></a>Paramètres de la stratégie personnalisée
 
 Utilisez la **stratégie de configuration personnalisée iOS** de Microsoft Intune pour déployer les paramètres que vous avez créés à l’aide de l’[outil Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) sur des appareils iOS. Cet outil vous permet de créer plusieurs paramètres qui contrôlent le fonctionnement de ces appareils et de les exporter vers un profil de configuration. Vous pouvez ensuite importer ce profil de configuration dans une stratégie personnalisée iOS d’Intune et déployer les paramètres sur les utilisateurs et les appareils de votre organisation.
 
 Cette fonctionnalité vous permet de déployer les paramètres iOS qui ne sont pas configurables avec des stratégies de configuration générales Intune.
 
-### Conditions préalables
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Conditions préalables
 Avant de commencer, vous devez installer l’outil Apple Configurator et créer un fichier de configuration contenant les paramètres que vous souhaitez déployer sur les utilisateurs ou les appareils. Visitez le [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) pour télécharger l’outil Apple Configurator et en savoir plus à ce sujet.
 
 > [!NOTE]
 > Intune ne signale pas la conformité de chaque paramètre dans une stratégie personnalisée iOS. Toutefois, la conformité d'ensemble de la stratégie est signalée.
 
-### Paramètres généraux :
-<a id="general-settings" class="xliff"></a>
+### <a name="general-settings"></a>Paramètres généraux :
 
 |Nom du paramètre|Détails|
     |----------------|--------------------|
     |**Nom**|Affectez un nom unique à la stratégie personnalisée iOS pour vous aider à l’identifier dans la console Intune.|
     |**Description**|Fournissez une description générale de la stratégie personnalisée iOS et d'autres informations pertinentes pour mieux la localiser.|
 
-### Configuration personnalisée
-<a id="custom-settings" class="xliff"></a>
+### <a name="custom-settings"></a>Configuration personnalisée
 
 |Nom du paramètre|Détails|
     |----------------|--------------------|
@@ -411,6 +382,5 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer 
 |**Fichier de configuration de profil**|Sélectionnez l’option **Importer**, puis accédez au profil de configuration que vous avez créé à l’aide de l’outil Apple Configurator. **Remarque :** Vérifiez que les paramètres que vous exportez à partir de l’outil Apple Configurator sont compatibles avec la version d’iOS sur les appareils sur lesquels vous déployez la stratégie personnalisée iOS. Pour en savoir plus sur la résolution des paramètres incompatibles, recherchez l’élément **Configuration Profile Reference** et **Mobile Device Management Protocol Reference** sur le site web [Apple Developer](https://developer.apple.com/).|
     |**Détails du profil de configuration**|Affichez le code XML du profil de configuration que vous avez importé.|
 
-### Voir aussi
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a>Voir aussi
 [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

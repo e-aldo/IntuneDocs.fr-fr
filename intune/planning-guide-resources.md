@@ -19,11 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/11/2017
 ---
-# Ressources supplémentaires pour la planification de votre déploiement Intune
-<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+# <a name="additional-resources-for-planning-your-intune-deployment"></a>Ressources supplémentaires pour la planification de votre déploiement Intune
 
-## Modèles
-<a id="templates" class="xliff"></a>
+## <a name="templates"></a>Modèles
 
 Des modèles Microsoft Excel pour les tables utilisées dans le guide de planification sont disponibles au [téléchargement](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
@@ -44,8 +42,7 @@ Voici une liste des modèles de table pour chaque section.
 | | Stratégie d’accès conditionnel|-|
 
 
-## Informations supplémentaires
-<a id="further-reading" class="xliff"></a>
+## <a name="further-reading"></a>Informations supplémentaires
 
 Consultez ces ressources pour obtenir des informations qui peuvent se révéler utiles lors du processus de planification, de consultez et d’implémentation du déploiement Intune.
 
