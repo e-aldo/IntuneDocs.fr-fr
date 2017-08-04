@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 8.1 et versions ultérieures dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Général
--   **Appliquer toutes les configurations à Windows 10** - Permet aux paramètres de cette stratégie d’être appliqués aux appareils Windows 10 en plus des appareils Windows 10 et Windows 8.1.
+
 -   **Envoi des données de diagnostic** - Autorise l’appareil à soumettre des informations de diagnostic à Microsoft.
 -   **Pare-feu** - Nécessite l’activation du Pare-feu Windows.
 -   **Contrôle de compte d'utilisateur** - Nécessite l’utilisation du contrôle de compte d’utilisateur (UAC) sur les appareils.
+
 ## <a name="password"></a>Mot de passe
 -   **Type de mot de passe requis** Oblige l’utilisateur final à saisir un mot de passe pour accéder à l’appareil.
 -   **Longueur minimale du mot de passe** - Configure la longueur minimale requise (en caractères) pour le mot de passe sur les appareils.
@@ -62,8 +63,10 @@ Quand vous appliquez le chiffrement à un appareil, vous pouvez uniquement obten
 -   **Accès au menu du mode Entreprise** - Permet aux utilisateurs d'accéder aux options du menu Mode entreprise à partir d'Internet Explorer.
 Si vous sélectionnez ce paramètre, vous pouvez également spécifier un **Emplacement du rapport de journalisation**, qui contient une URL vers un rapport affichant les sites web pour lesquels les utilisateurs ont activé l’accès en Mode entreprise.
 -   **Emplacement de la liste des sites en Mode entreprise** - Spécifie l'emplacement de la liste des sites web qui utilisent le mode entreprise quand il est actif.
+
 ## <a name="cellular"></a>Données mobiles
 -   **Itinérance des données** - Autorise l’itinérance des données quand l’appareil se trouve sur un réseau de téléphonie mobile.
+
 ## <a name="cloud-and-storage"></a>Cloud et stockage
 -   **URL des dossiers de travail** - Ce paramètre définit l’URL du dossier de travail pour autoriser la synchronisation des documents entre les appareils.
 -   **Accéder à l'application Windows Mail sans compte Microsoft** - Autorise l’accès à l’application Windows Mail sans compte Microsoft.    

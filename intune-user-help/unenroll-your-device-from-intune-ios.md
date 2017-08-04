@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/13/2017
 ---
-# Désinscrire votre appareil iOS d’Intune
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>Désinscrire votre appareil iOS d’Intune
 
 Quand vous annulez l’inscription de votre appareil iOS sur Intune, ce dernier ne peut plus accéder aux ressources d’entreprise et n’est plus géré par Intune.
 

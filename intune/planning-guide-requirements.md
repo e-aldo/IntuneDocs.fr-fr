@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/11/2017
 ---
-# Déterminer les exigences du scénario d’utilisation
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>Déterminer les exigences du scénario d’utilisation
 
 Dans cette section, vous déterminez les exigences de chaque groupe organisationnel pour chaque scénario de cas d’utilisation. Ce processus vous aidera à préparer les autres phases de planification du déploiement Intune comme l’architecture et la conception, l’intégration et le déploiement. Il peut également vous aider à identifier les lacunes potentielles et les difficultés liées à votre projet de déploiement Intune.
 
@@ -42,8 +41,7 @@ Voici quelques exemples d'exigences de cas d'utilisation d'une organisation, ill
 Vous pouvez [télécharger un modèle du tableau ci-dessus](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) pour saisir les exigences de cas d’utilisation et de cas d'utilisation secondaires de votre organisation.
 
 
-## Exemples d'exigences
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>Exemples d'exigences
 
 Voici quelques exemples supplémentaires qui peuvent être utilisés dans la colonne « Exigences » :
 
@@ -64,7 +62,6 @@ Voici quelques exemples supplémentaires qui peuvent être utilisés dans la col
     - Office 365 avec stratégies de protection des applications
     - Activité commerciale avec stratégies de protection des applications
 
-## Étapes suivantes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Étapes suivantes
 
 La section suivante fournit des conseils sur le [développement d'un plan de déploiement Intune](planning-guide-rollout-plan.md).
