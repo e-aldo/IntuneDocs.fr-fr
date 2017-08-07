@@ -8,9 +8,7 @@
 ### [Nouveautés de l’interface utilisateur des applications](whats-new-app-ui.md)
 ### [Qu’est-ce que la nouvelle archive (portail Azure)](whats-new-archive.md)
 ### [Qu’est-ce que la nouvelle archive (portail classique)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [Architecture de haut niveau](high-level-architecture.md)
 ## [Cycles de vie des applications et des appareils](introduction-device-app-lifecycles.md)
 ### [Cycle de vie de l’appareil](device-lifecycle.md)
 ### [Cycle de vie de l’application](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # Surveiller et dépanner
 ## [Utiliser le rôle d’opérateur du support technique](help-desk-operators.md)
+## [Utiliser l’entrepôt de données Intune](reports-nav-create-intune-reports.md)
+### [Se connecter à l’entrepôt de données avec Power BI](reports-proc-get-a-link-powerbi.md)
 
 # Développer et personnaliser
 ## [Configuration des paramètres d’appareils personnalisés](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Composant Xamarin du SDK d’application Intune](app-sdk-xamarin.md)
 ## [Comment utiliser les API Graph Intune](intune-graph-apis.md)
 ## [API Graph Intune](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [API d’entrepôt de données Intune](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Point de terminaison de l’API d’entrepôt de données](reports-api-url.md)
+### [Modèle de données de l’entrepôt de données](reports-ref-data-model.md)
+#### [Informations de référence sur l’entité de date](reports-ref-date.md)
+#### [Informations de référence sur l’entité d’utilisateur](reports-ref-user.md)
+#### [Informations de référence sur les entités de gestion des applications mobiles](reports-ref-mobile-app-management.md)
+#### [Informations de référence sur les entités d’appareils](reports-ref-devices.md)
+#### [Informations de référence sur les entités d’application](reports-ref-application.md)
+#### [Informations de référence sur les entités de stratégie](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossaire](intune-glossary.md)
