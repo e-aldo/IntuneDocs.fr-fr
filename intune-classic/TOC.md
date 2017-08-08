@@ -237,7 +237,7 @@
 ## [Composant Xamarin du SDK d’application Intune](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
 # [Dépannage](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
-## [Guide pratique pour obtenir un support technique](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Guide pratique pour obtenir un support technique](/intune/get-support?toc=/intune-classic/toc.json)
 ## [Surveiller Intune à l’aide de rapports](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Résoudre les problèmes liés à Endpoint Protection](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Résoudre les problèmes d’accès aux ressources d’entreprise](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
