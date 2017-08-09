@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Préparer des applications Android pour la gestion des applications mobiles avec l'outil de création de package de restrictions d'application
 
@@ -50,16 +50,7 @@ Avant d’exécuter l’outil, passez en revue les [considérations en matière 
     > [!NOTE]
     > Dans certains cas, la version 32 bits de Java peut occasionner des problèmes de mémoire. Nous vous conseillons d’installer la version 64 bits.
 
-- Android nécessite que tous les packages d’application (.apk) soient signés. Recourez à l’utilitaire Java keytool pour générer les informations d’identification nécessaires pour signer l’application de sortie encapsulée. Par exemple, la commande suivante utilise l’exécutable Java keytool.exe pour générer des clés qui peuvent être utilisées par l’outil de création de package de restrictions d’application pour signer l’application de sortie encapsulée.
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    Cet exemple génère une paire de clés (une clé publique et une clé privée associée de 2 048 bits) à l’aide de l’algorithme RSA. Elle encapsule ensuite la clé publique dans un certificat auto-signé X.509 v3, qui est stocké en tant que chaîne de certificats à élément unique. Cette chaîne de certificat et la clé privée sont stockées dans une nouvelle entrée de magasin de clés nommée « mykeystorefile » et identifiée par l’alias « mykeyalias ». L’entrée de magasin de clés est valide pendant 50 000 jours.
-
-    La commande vous invite à fournir des mots de passe pour le magasin de clés et la clé. Utilisez des mots de passe sécurisés, mais notez-les, car ils sont nécessaires pour exécuter l’outil de création de package de restrictions d’application.
-
-    Pour obtenir une documentation détaillée sur Java, consultez [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) et le [magasin de clés](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) Java sur le site web de la documentation Oracle.
+- Android nécessite que tous les packages d’application (.apk) soient signés. Pour obtenir de l’aide sur la**réutilisation** de certificats existants et sur les certificats de signature en général, consultez [Réutilisation de certificats de signature et inclusion d’applications dans un wrapper](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). L’exécutable Java keytool.exe permet de générer de **nouvelles** informations d’identification nécessaires pour signer l’application de sortie incluse dans un wrapper. Tous les mots de passe définis doivent être sécurisés, mais notez-les car ils sont nécessaires pour exécuter l’outil de création de package de restrictions d’application.
 
 ## <a name="install-the-app-wrapping-tool"></a>installer l'outil de création de package de restrictions d'application
 
@@ -95,7 +86,7 @@ Notez le dossier dans lequel vous avez installé l'outil. L’emplacement par d�
 |**-KeyStorePassword**&lt;SecureString&gt;|Mot de passe utilisé pour déchiffrer le magasin de clés. Android requiert la signature de tous les packages d’applications (.apk). Recourez à l’utilitaire Java keytool pour générer le mot de passe du magasin de clés (KeyStorePassword). Vous pouvez en savoir plus sur le [magasin de clés](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) Java ici.| |
 |**-KeyAlias**&lt;String&gt;|Nom de la clé à utiliser pour la signature.| |
 |**-KeyPassword**&lt;SecureString&gt;|Mot de passe utilisé pour déchiffrer la clé privée qui sera utilisée pour la signature.| |
-|**-SigAlg**&lt;SecureString&gt;| (Facultatif) Nom de l’algorithme de signature à utiliser pour la signature. L’algorithme doit être compatible avec la clé privée.|Exemples : SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Facultatif) Nom de l’algorithme de signature à utiliser pour la signature. L’algorithme doit être compatible avec la clé privée.|Exemples : SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (Facultatif) La commande prend en charge les paramètres PowerShell communs tels que verbose et debug. |
 
 

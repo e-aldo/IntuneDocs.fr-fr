@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour iOS
 
@@ -37,7 +37,7 @@ Utilisez des stratégies de configuration des applications dans Microsoft Intune
 
 Si les utilisateurs n’entrent pas correctement ces paramètres, cela peut occasionner plus de travail à votre assistance technique et ralentir l’adoption des nouvelles applications.
 
-Les stratégies de configuration des applications peuvent vous aider à éliminer ces problèmes en vous permettant d’affecter ces paramètres dans une stratégie avant que les utilisateurs exécutent l’application. Les paramètres sont alors fournis automatiquement, les utilisateurs n’ont aucune action à effectuer.
+Les stratégies de configuration des applications peuvent vous aider à éliminer ces problèmes en vous permettant d’affecter ces paramètres dans une stratégie avant que les utilisateurs exécutent l’application. Les paramètres sont alors fournis automatiquement, les utilisateurs n’ont aucune action à effectuer. Les applications doivent avoir été écrites pour prendre en charge l’utilisation des configurations d’application. Pour plus d’informations, consultez l’éditeur de l’application.
 
 Vous n’affectez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt une stratégie à une application que vous affectez ensuite. Les paramètres de stratégie sont utilisés chaque fois que l’application les vérifie (en général, lors de sa première exécution).
 
@@ -57,8 +57,8 @@ Vous n’affectez pas ces stratégies directement sur les appareils et utilisate
 5.  Dans le panneau de liste de stratégies, choisissez **Ajouter**.
 6.  Dans le panneau **Ajouter une stratégie de configuration**, indiquez un **nom** et éventuellement une **description** pour la stratégie de configuration d’application.
 7.  Pour **Type d'inscription de l'appareil**, choisissez parmi :
-    - **Inscrit dans Intune** : pour les applications qui intègrent le Kit de développement logiciel (SDK) d’application Intune et qui sont gérées par Intune.
-    - **Non inscrit dans Intune** : pour les applications qui intègrent le Kit de développement logiciel (SDK) d’application Intune et qui ne sont pas gérées par Intune, ou qui sont gérées par une autre solution.
+    - **Inscrit dans Intune** : pour les applications gérées par Intune.
+    - **Non inscrit dans Intune** : pour les applications qui ne sont pas gérées par Intune ou qui sont gérées par une autre solution.
 8.  Pour **Plateforme**, choisissez **iOS** (pour les appareils inscrits dans Intune uniquement)
 9.  Choisissez **Application associée**, puis, dans le panneau **Application associée**, choisissez l’application gérée pour laquelle vous souhaitez appliquer la configuration.
 10. Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**
