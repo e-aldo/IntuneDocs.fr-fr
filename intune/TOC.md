@@ -263,7 +263,7 @@
 ### [Guide pratique pour obtenir des applications Windows](end-user-apps-windows.md)
 
 # Surveiller et dépanner
-## [Utiliser le rôle d’opérateur du support technique](help-desk-operators.md)
+## [Aider les utilisateurs à résoudre les problèmes](help-desk-operators.md)
 ## [Utiliser l’entrepôt de données Intune](reports-nav-create-intune-reports.md)
 ### [Se connecter à l’entrepôt de données avec Power BI](reports-proc-get-a-link-powerbi.md)
 
