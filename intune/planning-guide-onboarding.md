@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="implement-your-intune-plan"></a>Implémenter votre plan Intune
 
@@ -32,7 +32,7 @@ Les principaux éléments requis autonomes pour Intune sont les suivants :
 
 -   Abonnement Enterprise Mobility + Security (EMS)/Intune
 
--   Abonnement Office 365 (pour les applications Office et les applications gérées par la stratégie MAM)
+-   Abonnement Office 365 (pour les applications Office et les applications gérées par la stratégie de protection des applications)
 
 -   Certificat d'APN Apple (pour permettre la gestion de la plate-forme d'appareils iOS)
 
@@ -109,7 +109,7 @@ Intune prend en charge les profils de messagerie, Wi-Fi et VPN. Ajoutez ces prof
 
 ### <a name="task-10-add-and-deploy-apps"></a>Tâche 10 : Ajouter et déployer des applications
 
-Intune prend en charge le déploiement d’applications web, métier et de Store public. Vous pouvez aussi gérer les applications qui intègrent le SDK Intune en les associant à des stratégies GAM. Ajoutez les applications adéquates et déployez-les sur des groupes ciblés en fonction des cas d’utilisation et exigences de votre déploiement Intune.
+Intune prend en charge le déploiement d’applications web, métier et de Store public. Vous pouvez aussi gérer les applications qui intègrent le kit SDK Intune en les associant à des stratégies de protection des applications. Ajoutez les applications adéquates et déployez-les sur des groupes ciblés en fonction des cas d’utilisation et exigences de votre déploiement Intune.
 
 -   En savoir plus sur l’[ajout et le déploiement d’applications](app-management.md).
 

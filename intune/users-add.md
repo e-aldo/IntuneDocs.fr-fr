@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 07/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4289fdbdadbef34f06514b62722f84354534ae65
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 7873481ccd33d2eaf4ec1a4c7fadf30c61b8d42e
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Ajouter des utilisateurs et accorder une autorisation d’administration à Intune
 
@@ -32,7 +32,7 @@ En tant qu’administrateur, vous pouvez ajouter directement des utilisateurs ou
 Vous pouvez ajouter manuellement des utilisateurs à votre abonnement Intune via le [portail Office 365](https://www.office.com/signin) ou le [portail Intune Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Un administrateur peut modifier les comptes d’utilisateurs pour attribuer des licences Intune. Vous pouvez attribuer des licences dans le portail Office 365 ou le portail Intune Azure. Pour plus d’informations sur l’utilisation du portail Office 365, consultez [Ajouter des utilisateurs individuellement ou en bloc au portail Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="add-intune-users-in-the-office-365-admin-center"></a>Ajouter des utilisateurs Intune dans le centre d’administration Office 365
-1. Connectez-vous au [portail Office 365](https://www.office.com/signin).
+1. Connectez-vous au [portail Office 365](https://www.office.com/signin) avec un compte d’administrateur général ou d’administrateur de gestion des utilisateurs.
 2. Dans le menu Office 365, sélectionnez **Admin**.
 3. Dans le centre d’administration, sélectionnez **Ajouter un utilisateur**.
 
@@ -41,21 +41,21 @@ Vous pouvez ajouter manuellement des utilisateurs à votre abonnement Intune via
 4. Spécifiez les détails d’utilisateur suivants :
   - **Prénom**
   - **Nom**
-  - **Nom d’affichage** : affiché dans le portail Intune
-  - **Nom d’utilisateur** : nom UPN dans le portail Intune
+  - **Nom d’affichage**
+  - **Nom d’utilisateur** : nom UPN stocké dans Azure Active Directory et utilisé pour accéder au service
   - **Emplacement**
   - **Coordonnées** (facultatives)
   - **Mot de passe** : généré automatiquement ou spécifié
 
      ![Capture d’écran Office 365 Admin](media/office-add-user-details.png)
 
-5. Attribuez une licence Intune. Sélectionnez **Licences de produit** et choisissez la licence de produit.
+5. Attribuez une licence Intune. Sélectionnez **Licences de produit** et choisissez la licence de produit. Une licence incluant Intune est nécessaire.
 6. Choisissez **Ajouter** pour créer l’utilisateur.
 
 ### <a name="add-intune-users-in-the-azure-intune-portal"></a>Ajouter des utilisateurs Intune dans le portail Azure Intune
-1. Connectez-vous au [portail Azure](https://portal.azure.com). et accédez à **Surveillance + gestion** > **Intune**. Vous pouvez aussi rechercher **Intune** dans les *ressources*.
+1. Connectez-vous au [portail Azure](https://portal.azure.com) et accédez à **Plus de services** > **Surveillance + gestion** > **Intune**. Vous pouvez aussi rechercher **Intune** dans les *ressources*.
 2. Sélectionnez **Utilisateurs**.
-3. Dans le centre d’administration, sélectionnez **Ajouter un utilisateur**.
+3. Dans le centre d’administration, sélectionnez **Nouvel utilisateur**.
   ![Capture d’écran Office 365 Admin](media/intune-add-user.png)
 4. Spécifiez les détails d’utilisateur suivants :
   - **Nom**
@@ -63,7 +63,7 @@ Vous pouvez ajouter manuellement des utilisateurs à votre abonnement Intune via
 5. Si vous le souhaitez, vous pouvez spécifier les propriétés utilisateur suivantes :
   - **Profil** : informations professionnelles, notamment la **Fonction** et le **Service**
   -  **Groupes** : sélectionnez les groupes à ajouter pour l’utilisateur
-  - **Rôle d’annuaire** : accordez à l’utilisateur des autorisations d’administration pour Intune
+  - **Rôle d’annuaire** : accordez à l’utilisateur des autorisations d’administration incluant un rôle Administrateur de services fédérés Intune.
 
   Sélectionnez **Créer** pour ajouter le nouvel utilisateur à Intune.
 6. Sélectionnez **Profil**, puis choisissez un **Lieu d’utilisation** pour le nouvel utilisateur. Le lieu d’utilisation est obligatoire pour pouvoir affecter une licence Intune au nouvel utilisateur. Choisissez **Enregistrer** pour continuer.
@@ -72,23 +72,37 @@ Vous pouvez ajouter manuellement des utilisateurs à votre abonnement Intune via
 
 ## <a name="grant-admin-permissions"></a>Accorder des autorisations d’administration
 
-Après avoir ajouté des utilisateurs à votre abonnement Intune, nous vous recommandons d’attribuer une autorisation d’administration à quelques utilisateurs :
--   [Administrateur général](#tenant-administrator) : utilisez le portail Office 365 pour affecter ce type d’administrateur. L’administrateur général peut gérer votre abonnement, y compris la facturation, le stockage cloud et les utilisateurs qui peuvent utiliser Intune.
--   [Administrateur personnalisé ou limité](#service-administrator) : utilisez la console Office 365 ou Azure Intune pour affecter ce type d’administrateur pour les tâches quotidiennes, notamment la gestion des appareils et des ordinateurs, le déploiement de stratégies ou d’applications et l’exécution de rapports.
+Après avoir ajouté des utilisateurs à votre abonnement Intune, nous vous recommandons d’attribuer une autorisation d’administration à quelques utilisateurs.  Pour accorder des autorisations d’administrateur, effectuez les étapes suivantes :
 
-![Image de l’affectation de rôles dans le portail Office 365.](./media/office-assign-roles.png)
+### <a name="give-admin-permissions-in-office-365"></a>Accorder des autorisations d’administrateur dans Office 365
+1. Connectez-vous au [portail Office 365](https://www.office.com/signin) avec un compte d’administrateur général.
+2. Dans le menu Office 365, sélectionnez **Admin**.
+3. Dans le centre d’administration, choisissez **Utilisateurs actifs**, puis l’utilisateur auquel accorder des autorisations d’administrateur.
+4. Dans la colonne **Rôles**, choisissez **Modifier**.
+  ![Capture de l’écran d’attribution des rôles dans Office 365](./media/office-assign-roles-open.png)
+5. Choisissez l’autorisation d’administrateur à accorder à partir de la liste des rôles disponibles.
+![Image de l’affectation de rôles dans le portail Office 365.](./media/office-assign-roles.png)
+6. Choisissez **Enregistrer**.
+
+### <a name="give-admin-permissions-in-the-intune-portal"></a>Accorder des autorisations d’administrateur dans le portail Intune
+1. Connectez-vous au [portail Intune](https://www.office.com/signin) avec un compte d’administrateur général.
+2. Dans le portail Intune, choisissez **Utilisateur**, puis l’utilisateur auquel vous voulez accorder des autorisations d’administrateur.
+3. Sélectionnez **Rôle d’annuaire**, puis l’autorisation.
+  ![Capture d’écran](./media/add-intune-directory-role.png)
+4. Choisissez **Enregistrer**.
 
 ### <a name="types-of-administrators"></a>Types d’administrateurs
 
-Affectez une ou plusieurs autorisations d’administrateur à des utilisateurs. Ces autorisations définissent l’étendue administrative des utilisateurs et les tâches qu’ils peuvent gérer. Les autorisations d’administrateur sont communes aux différents services cloud Microsoft, même si certains services peuvent ne pas prendre en charge certaines autorisations. Intune utilise les autorisations d’administrateur suivantes :
+Affectez une ou plusieurs autorisations d’administrateur à des utilisateurs. Ces autorisations définissent l’étendue administrative des utilisateurs et les tâches qu’ils peuvent gérer. Les autorisations d’administrateur sont communes aux différents services cloud Microsoft, même si certains services peuvent ne pas prendre en charge certaines autorisations. Le portail Office 365 et le portail Intune répertorient tous deux les rôles d’administrateur limités qui ne sont pas utilisés par Intune. Les autorisations d’administrateur Intune incluent les options suivantes :
 
 - **Administrateur général** (Office 365 et Intune) : accède à toutes les fonctionnalités d’administration dans Intune. Par défaut, la personne qui s’inscrit à Intune devient un administrateur général. Les administrateurs généraux sont les seuls administrateurs qui peuvent affecter d’autres rôles d’administrateur. Vous pouvez avoir plusieurs administrateurs généraux dans votre organisation. En guise de bonne pratique, nous vous recommandons d’attribuer ce rôle à seulement quelques personnes au sein de votre entreprise pour réduire les risques.
-- **Administrateur de facturation** (Office 365 et Intune) : effectue des achats, gère les abonnements et les tickets de support et surveille l’intégrité des services.
 - **Administrateur de mots de passe** (Office 365 et Intune) : réinitialise les mots de passe, gère les demandes de service et surveille l’intégrité des services. Les administrateurs de mots de passe sont limités à la réinitialisation des mots de passe des utilisateurs.
-- **Administrateur de service** (Office 365 et Intune) : ouvre les demandes de support auprès de Microsoft et visualise le tableau de bord du service et le centre de messages. Il dispose d’une autorisation « Afficher uniquement », sauf pour l’ouverture et la lecture des tickets de support.
-- **Administrateur de gestion des utilisateurs** (Office 365 et Intune) : réinitialise les mots de passe, surveille l’intégrité du service, ajoute et supprime des comptes d’utilisateurs et gère les demandes de service. L’administrateur de gestion des utilisateurs ne peut pas supprimer un administrateur général, créer d’autres rôles d’administrateur ou réinitialiser le mot de passe des autres administrateurs.
+- **Administrateur de service** (Office 365 et Intune) : ouvre les demandes de support auprès de Microsoft et visualise le tableau de bord du service et le centre de messages. Il dispose d’une autorisation « Afficher uniquement », sauf pour l’ouverture et la lecture des tickets de support.
+- **Administrateur de facturation** (Office 365 et Intune) : effectue des achats, gère les abonnements et les tickets de support et surveille l’intégrité des services.
+- **Administrateur d’utilisateurs** (Office 365 et Intune) : réinitialise les mots de passe, surveille l’intégrité du service, ajoute et supprime des comptes d’utilisateurs, et gère les demandes de service. L’administrateur de gestion des utilisateurs ne peut pas supprimer un administrateur général, créer d’autres rôles d’administrateur ou réinitialiser le mot de passe des autres administrateurs.
+- **Administrateur de services fédérés Intune** : toutes les autorisations d’administrateur général Intune, sauf celle de créer des administrateurs avec des options **Rôle d’annuaire**.
 
-Par défaut, le compte que vous utilisez pour créer votre abonnement Microsoft Intune est un administrateur général. Nous vous recommandons de ne pas utiliser un administrateur général pour les tâches de gestion quotidiennes. Un administrateur n’a pas besoin de licence Intune pour accéder à la console Administrateur Intune. Pour plus d’informations, consultez la section sur les locataires Azure AD dans [Qu’est-ce qu’un annuaire Azure AD ?](http://technet.microsoft.com/library/jj573650.aspx).
+Le compte que vous utilisez pour créer votre abonnement Microsoft Intune est un administrateur général. Nous vous recommandons de ne pas utiliser un administrateur général pour les tâches de gestion quotidiennes. Un administrateur n’a pas besoin d’une licence Intune pour accéder au portail Intune. 
 
 Pour accéder au portail Office 365, l’option **Connecter les utilisateurs autorisés** doit être activée pour votre compte. Dans le portail Intune, sous **Profil**, affectez la valeur **Non** à **Bloquer la connexion** pour autoriser l’accès. Cet état diffère de celui défini pour la possession d’une licence pour l’abonnement. Par défaut, tous les comptes d’utilisateur sont définis avec l’état **Autorisé**. Les utilisateurs sans autorisations d’administrateur peuvent utiliser le portail Office 365 pour réinitialiser les mots de passe Intune.
 

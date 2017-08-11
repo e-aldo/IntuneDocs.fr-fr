@@ -1,37 +1,35 @@
 ---
 title: Glossaire Intune
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: "En savoir plus sur la terminologie utilisée dans Microsoft Intune"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Glossaire Microsoft Intune
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>Objet
 
 |||
 |-|-|
 |Affectation d’applications|Permet aux utilisateurs de [rechercher, télécharger et installer](/intune/app-management) les applications dont ils ont besoin. Cela était précédemment appelé *déploiement d’applications*.|
-|Profil de configuration d’application|Configure une application [iOS](/intune/app-configuration-policies-use-ios) ou [Android](/intune/app-configuration-policies-use-android) avec des paramètres spécifiques avant son exécution.|
+|Profil de configuration d’application <br/><br/>Stratégie de configuration des applications|Disponible pour les applications mobiles présentant des configurations spécifiques à leur fournisseur. Configure une application [iOS](/intune/app-configuration-policies-use-ios) ou [Android](/intune/app-configuration-policies-use-android) avec des paramètres spécifiques avant son exécution.|
 |Surveillance des applications|Vous permet de [passer en revue les activités et l’état récents](/intune/apps-monitor) liés à l’affectation de l’application.|
 |Tâche de suppression des données de protection d’application|[Supprime les données d’application](/intune/app-protection-policies) de l’appareil de l’utilisateur.|
-|Stratégie de protection des applications|Permet de s’assurer que les applications de l’utilisateur sont conformes avec vos [stratégies de protection des données d’entreprise](/intune/app-protection-policies).|
+|Stratégie de protection des applications|Disponible pour les applications mobiles qui s’intègrent aux technologies Enterprise Mobility + Security (EMS). Permet de s’assurer que les applications de l’utilisateur sont conformes avec vos [stratégies de protection des données d’entreprise](/intune/app-protection-policies).|
 |SDK d’application|Le [SDK d’application Microsoft Intune](/intune/app-sdk) vous permet d’ajouter des fonctionnalités à vos applications développées en interne, qui leur permettent d’être gérées par des stratégies de protection des applications.|
 |Action de désinstallation d’application|Vous permet de [désinstaller des applications](/intune/apps-deploy) des appareils des utilisateurs.|
 |Outil de création de package de restrictions d’application|[Application de ligne de commande](/intune/apps-prepare-mobile-application-management) qui crée un wrapper autour d’une application métier, lui permettant ainsi d’être gérée par une stratégie de protection des applications Intune.|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Managed Browser|[Application de navigation web](/intune/app-configuration-managed-browser)que vous pouvez affecter dans votre organisation à l’aide de Intune. Une stratégie Managed Browser configure une liste verte ou une liste rouge, qui restreint les sites web auxquels les utilisateurs de Managed Browser ont accès.|
 |Autorité MDM|L’[autorité de gestion d’appareils mobiles](/intune/mdm-authority-set) définit le service de gestion habilité à gérer un ensemble d’appareils. Les options en matière d’autorité de gestion des appareils mobiles incluent Intune en version autonome et Configuration Manager avec Intune.|
-|Stratégies de configuration des applications mobiles|Stratégie [iOS](/intune/app-configuration-policies-use-ios) ou [Android](/intune/app-configuration-policies-use-android) qui est utilisée pour fournir des paramètres aux applications compatibles quand elles sont exécutées, par exemple un nom de société ou l’adresse d’un serveur.|
+|Stratégies de configuration des applications mobiles|Disponible pour les applications mobiles présentant des configurations spécifiques à leur fournisseur. Par exemple, une stratégie [iOS](/intune/app-configuration-policies-use-ios) ou [Android](/intune/app-configuration-policies-use-android) qui est utilisée pour fournir des paramètres aux applications compatibles quand celles-ci sont exécutées, comme un nom de société ou l’adresse d’un serveur.|
 |Stratégie d’approvisionnement des applications mobiles|Stratégie iOS qui permet de garantir que les [profils de configuration](/intune/app-provisioning-profile-ios) pour les applications iOS que vous affectez n’expirent pas.|
 |Gestion des applications mobiles|La [gestion des applications mobiles (GAM)](/intune/app-lifecycle) vous permet de publier, envoyer des notifications Push, configurer, sécuriser, surveiller et mettre à jour des applications mobiles pour vos utilisateurs.
 |Gestion des appareils mobiles|La [gestion des appareils mobiles (MDM)](/intune/device-lifecycle) vous permet d’inscrire des appareils dans Intune pour approvisionner, configurer, surveiller et gérer ces appareils.
@@ -131,8 +129,8 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|Réinitialisation sélective|Une [réinitialisation sélective](/intune/device-company-data-remove) supprime seulement les données d’entreprise, notamment les données de gestion des applications mobiles (GAM) (le cas échéant), les paramètres et les profils de messagerie sur un appareil. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil.|
-|Chargement indépendant|L’action d’installation d’une application métier sans y accéder sur un magasin d’applications.|
+|Réinitialisation sélective|Une [réinitialisation sélective](/intune/device-company-data-remove) ne supprime d’un appareil que les données d’entreprise protégées par une stratégie de protection des applications, notamment les paramètres et les profils de messagerie. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil.|
+|Chargement indépendant|L’action d’installer une application métier sans y accéder à partir d’un App Store.|
 |Abonnement|L’accord que vous acceptez qui vous permet d’accéder à un client Intune.|
 
 ## <a name="t"></a>T
@@ -145,7 +143,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="v"></a>V
 |||
 |-|-|
-|Applications et livres achetés en volume|Certains magasins d’applications vous permettent d’acheter plusieurs licences pour une application ou un livre que vous voulez utiliser dans votre entreprise. Intune vous permet de gérer des applications et livres que vous avez [achetés par le biais d’un tel programme](/intune/vpp-apps). Vous pouvez importer les informations de licence depuis n’importe quel magasin d’applications, suivre le nombre de licences utilisées et éviter d’installer plus de copies de l’application que vous n’en possédez.|
+|Applications et livres achetés en volume|Certains App Stores vous permettent d’acheter plusieurs licences pour une application ou un livre que vous voulez utiliser dans votre entreprise. Intune vous permet de gérer des applications et livres que vous avez [achetés par le biais d’un tel programme](/intune/vpp-apps). Vous pouvez importer les informations de licence depuis n’importe quel App Store, suivre le nombre de licences utilisées et éviter d’installer plus de copies de l’application que vous n’en possédez.|
 |Profil VPN|Stratégie qui affecte des [paramètres VPN](/intune/vpn-settings-configure) sur les appareils que vous gérez, qui réduit la configuration que les utilisateurs finaux doivent effectuer.|
 
 ## <a name="w"></a>W

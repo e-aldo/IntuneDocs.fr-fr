@@ -6,7 +6,7 @@ keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 01/09/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Quelle sera l'expérience de protection de base de vos utilisateurs sur des applications Office 365 gérées ?
 
@@ -48,15 +48,14 @@ Cet article utilise OneDrive Entreprise comme exemple pour montrer l’expérien
 
 1. Lancez l’application OneDrive Entreprise pour ouvrir la page de connexion.  <br/> ![Image de l’écran de connexion OneDrive pour iOS](./media/onedrive-ios-sign-in.png)
 2. Tapez votre nom d’utilisateur de compte professionnel. Vous êtes redirigé vers la page d’authentification Office 365 pour entrer vos informations d’identification professionnelles. <br/> ![Image de la page de connexion Office 365](./media/o365-sign-in-ios.png)
-3. Une fois vos informations d’identification correctement authentifiées par Azure Active Directory, les stratégies de gestion des applications mobiles (GAM) sont appliquées et il vous est demandé de redémarrer l’application OneDrive Entreprise.  <br/>![Image de l’invite de redémarrage pour iOS](./media/ios-restart-prompt.png)
->[!NOTE]
->Le message de redémarrage nécessaire s’affiche uniquement sur les appareils qui ne sont pas inscrits dans Intune.
+3. Une fois vos informations d’identification correctement authentifiées par Azure Active Directory, les stratégies de protection des applications sont appliquées et il vous est demandé de redémarrer l’application OneDrive Entreprise.  <br/>![Image de l’invite de redémarrage pour iOS](./media/ios-restart-prompt.png)    
+  > [!NOTE]
+  > Le message de redémarrage nécessaire s’affiche uniquement sur les appareils qui ne sont pas inscrits dans Intune.
 
 
-4. Redémarrez l’application OneDrive Entreprise. L’application démarre avec les stratégies GAM activée et vous êtes invité à définir un code PIN pour l'appareil (si vous ne disposez pas encore d’un code PIN pour l’appareil). <br/> ![Image de l’invite de commande de création d'un code confidentiel](./media/pin-prompt-ios.png)
-
->[!NOTE]
->La plupart de vos utilisateurs ne verront pas cette invite. Seuls les utilisateurs qui n’ont pas activé de code PIN sur leur appareil iOS voient cette invite.
+4. Redémarrez l’application OneDrive Entreprise. L’application démarre avec les stratégies de protection des applications activées et vous êtes invité à définir un code PIN pour l’appareil (si un code PIN n’est pas déjà configuré pour l’appareil). <br/> ![Image de l’invite de commande de création d'un code confidentiel](./media/pin-prompt-ios.png)    
+  > [!NOTE]
+  > La plupart de vos utilisateurs ne verront pas cette invite. Seuls les utilisateurs qui n’ont pas activé de code PIN sur leur appareil iOS voient cette invite.
 
 
 5. Une fois que vous avez défini le code PIN et l'avez confirmé, revenez à l’application OneDrive Entreprise. Vous verrez s'afficher un avertissement unique vous informant que votre administrateur informatique protège maintenant vos données de travail dans OneDrive. <br/> ![Image d’avis unique de votre administrateur informatique](./media/one-time-notice.png)
@@ -70,9 +69,9 @@ Cet article utilise OneDrive Entreprise comme exemple pour montrer l’expérien
 
 1. Lancez l’application OneDrive Entreprise pour ouvrir la page de connexion.  <br/> ![Image de l’écran de bienvenue de l’application OneDrive](./media/onedrive-android-welcome.png)
 2. Tapez votre nom d’utilisateur de compte professionnel. Vous êtes redirigé vers la page d’authentification Office 365 pour entrer vos informations d’identification professionnelles. <br/> ![Image de la connexion à O365 sur Android](./media/o365-sign-in-android.png)
-3. Une fois vos informations d’identification correctement authentifiées par Azure Active Directory, un message s’affiche, stipulant les instructions d’installation de l’application Portail d’entreprise, si celle-ci n’est pas encore installée sur l’appareil. Cliquez sur **Accéder au Store** pour continuer. <br/> ![Image du message permettant d'obtenir l’application Portail d’entreprise](./media/get-company-portal-android.png) <br/>Si vous avez déjà installé l’application Portail d’entreprise sur votre téléphone, l’application OneDrive Entreprise démarre automatiquement et vous pouvez ignorer la remarque finale.
->[!IMPORTANT]
->Sur Android, une fois que vous avez défini les applications Office devant être gérées par une stratégie GAM, l’utilisateur de l'appareil **doit** installer l’application Portail d’entreprise pour accéder à des e-mails et à des documents professionnels, même si l’utilisateur final n’a pas besoin d'ouvrir ou de se connecter à l’application pour lire des e-mails ou des documents.
+3. Une fois vos informations d’identification correctement authentifiées par Azure Active Directory, un message s’affiche, stipulant les instructions d’installation de l’application Portail d’entreprise, si celle-ci n’est pas encore installée sur l’appareil. Cliquez sur **Accéder au Store** pour continuer. <br/> ![Image du message permettant d'obtenir l’application Portail d’entreprise](./media/get-company-portal-android.png) <br/>Si vous avez déjà installé l’application Portail d’entreprise sur votre téléphone, l’application OneDrive Entreprise démarre automatiquement et vous pouvez ignorer la remarque finale.    
+  > [!IMPORTANT]
+  > Sur Android, une fois que vous avez défini les applications Office devant être gérées par une stratégie de protection des applications, l’utilisateur de l’appareil **doit** installer l’application Portail d’entreprise pour accéder à des e-mails et à des documents professionnels, même si l’utilisateur final n’a pas besoin d’ouvrir l’application ni de s’y connecter pour les lire vraiment.
 
 4. Vous êtes maintenant dans Google Play Store, où vous pouvez télécharger et installer l’application Portail d’entreprise. L’application permet de sécuriser et de protéger les données. <br/> ![Image de l’application dans Google Play Store](./media/google-play-get-app-android.png)
 5. Une fois l’installation de l'application terminée, choisissez **Accepter** pour accepter les termes du contrat. L’application OneDrive Entreprise démarre automatiquement.
@@ -118,9 +117,9 @@ Cet article utilise OneDrive Entreprise comme exemple pour montrer l’expérien
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Pourquoi une stratégie de code PIN d'application est-elle configurée uniquement pour les appareils Android ?
 Le chiffrement fonctionne différemment sur iOS et Android.
 
-Sur iOS, pour les applications associées à une stratégie GAM Intune, les données sont chiffrées au repos par le biais du chiffrement au niveau de l’appareil fourni par le système d’exploitation. Par conséquent, lorsque vous activez la stratégie de chiffrement d’application, vous obligez automatiquement également l’utilisateur à entrer un code PIN pour l'appareil afin d'accéder aux données de travail. Les utilisateurs qui n’ont pas déjà configuré un code PIN sur l'appareil seront invités à créer un code PIN pour l'appareil.
+Sur iOS, pour les applications associées à une stratégie de protection des applications Intune, les données sont chiffrées au repos par le biais du chiffrement au niveau de l’appareil fourni par le système d’exploitation. Par conséquent, lorsque vous activez la stratégie de chiffrement d’application, vous obligez automatiquement également l’utilisateur à entrer un code PIN pour l'appareil afin d'accéder aux données de travail. Les utilisateurs qui n’ont pas déjà configuré un code PIN sur l'appareil seront invités à créer un code PIN pour l'appareil.
 
-Sur Android, pour les applications associées à une stratégie Intune GAM, les données sont chiffrées de manière synchrone pour les tâches d’E/S de fichier. Le contenu figurant sur le stockage de l’appareil est toujours chiffré. Sur les appareils qui ne sont pas gérés par MDM, une stratégie GAM ne peut pas permettre d'exiger un code PIN de l'appareil. Pour vous assurer que les utilisateurs doivent utiliser un code PIN pour accéder à des données de travail, l'Assistant active la stratégie de code PIN d’application.
+Sur Android, pour les applications associées à une stratégie de protection des applications Intune, les données sont chiffrées de manière synchrone lors des tâches d’E/S de fichier. Le contenu figurant sur le stockage de l’appareil est toujours chiffré. Sur les appareils qui ne sont pas gérés par MDM, une stratégie de protection des applications ne peut pas imposer la nécessité d’un code PIN de l’appareil. Pour vous assurer que les utilisateurs doivent utiliser un code PIN pour accéder à des données de travail, l'Assistant active la stratégie de code PIN d’application.
 
 Vous pouvez toujours modifier ces paramètres de stratégie pour répondre aux besoins de votre organisation.
 

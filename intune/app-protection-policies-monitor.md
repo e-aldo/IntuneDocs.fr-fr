@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 978e32476069183865f7e729de9791e13bc81ebc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Guide pratique de surveillance des stratégies de protection des applications
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ Vous pouvez surveiller l’état de conformité à trois endroits différents :
 
 ![Vignette Résumé sur le panneau Gestion des applications mobiles Intune](./media/app-protection-user-status-summary.png)
 
--   **Utilisateurs** : le nombre total d’utilisateurs dans votre société qui utilisent les applications associées à la stratégie.
+-   **Utilisateurs** : nombre total d’utilisateurs dans votre société qui utilisent une application associée à une stratégie dans un contexte professionnel.
 
--   **GÉRÉ PAR STRATÉGIE** : le nombre d’utilisateurs ayant utilisé au moins l’une des applications dans un contexte professionnel.
+-   **GÉRÉ PAR STRATÉGIE** : nombre d’utilisateurs qui ont utilisé une application et auxquels une stratégie a été affectée dans un contexte professionnel.
 
--   **AUCUNE STRATÉGIE** : le nombre d’utilisateurs qui utilisent les applications associées à la stratégie, mais qui ne sont pas affectés par celle-ci. Vous pouvez envisager d’ajouter ces utilisateurs à la stratégie.
+-   **AUCUNE STRATÉGIE** : nombre d’utilisateurs qui utilisent une application qui n’est ciblée par aucune stratégie dans un contexte professionnel. Vous pouvez envisager d’ajouter ces utilisateurs à la stratégie.
+    > [!NOTE]
+    > Si vous avez plusieurs stratégies par plateforme, un utilisateur est considéré comme étant géré par une stratégie quand au moins une stratégie lui a été affectée.
 
 - **Utilisateurs marqués d’un indicateur** : le nombre d’utilisateurs ayant rencontré des problèmes. Seuls les utilisateurs avec des appareils jailbreakés sont répertoriés sous **Utilisateurs marqués d’un indicateur**.
 

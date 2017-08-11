@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les applications iOS que vous avez achetées par le biais d’un programme d’achat en volume avec Microsoft Intune
 
@@ -34,7 +34,20 @@ Microsoft Intune vous permet de gérer les applications que vous avez achetées 
 - Effectuant le suivi du nombre de licences que vous avez utilisées
 - Vous empêchant d’installer davantage de copies de l’application que vous n’en possédez
 
-Vous pouvez également synchroniser, gérer et affecter des livres que vous avez achetés dans la boutique VPP (Programme d’achat en volume) d’Apple avec Intune. Utilisez la charge de travail **Documentation** dans le portail Intune pour gérer la documentation. Les procédures de gestion de la documentation sont identiques à celles que vous utilisez pour gérer des applications.
+Vous pouvez utiliser deux méthodes pour affecter les applications achetées en volume :
+
+### <a name="device-licensing"></a>Gestion des licences des appareils
+
+Quand vous affectez une application à des appareils, une licence d’application est utilisée et reste associée à l’appareil auquel vous l’avez attribuée.
+Quand vous affectez des applications achetées en volume à un appareil, l’utilisateur final de l’appareil n’a pas à fournir un ID Apple pour accéder à l’App Store. 
+
+### <a name="user-licensing"></a>Licences utilisateur
+
+Quand vous affectez une application à des utilisateurs, une licence d’application est utilisée et est associée à l’utilisateur. L’application peut être exécutée sur plusieurs appareils détenus par l’utilisateur.
+Quand vous affectez une application achetée en volume à des utilisateurs, chaque utilisateur final doit avoir un ID Apple valide pour accéder à l’App Store.
+
+
+Vous pouvez également synchroniser, gérer et affecter des livres que vous avez achetés dans le Store VPP (Programme d’achat en volume) d’Apple avec Intune. Utilisez la charge de travail **Documentation** dans le portail Intune pour gérer la documentation. Les procédures de gestion de la documentation sont identiques à celles que vous utilisez pour gérer des applications.
 Vous devez avoir chargé un jeton Apple VPP avant de commencer. Vous ne pouvez actuellement affecter de la documentation qu’en tant qu’installation **Requise**.
 Lorsque vous affectez un livre à un appareil, celui-ci doit disposer de l’application iBook intégrée. Dans le cas contraire, l’utilisateur doit réinstaller l’application pour pouvoir lire le livre. Vous ne pouvez pas actuellement utiliser Intune pour restaurer les applications intégrées qui ont été supprimées.
 
@@ -81,24 +94,28 @@ Vous pouvez synchroniser les données détenues par Apple avec Intune à tout mo
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Pour affecter une application achetée en volume
 
-1. Dans la charge de travail **Mobile apps**, choisissez **Gérer** > **Applications sous licence**.
-2. Dans le panneau de liste d’applications, choisissez l’application que vous souhaitez affecter, puis choisissez «**...**  » > **Affecter des groupes**.
-3. Dans le panneau <*Nom de l’application*> - **Groupes affectés**, choisissez **Gérer** > **Groupes affectés**.
-4. Choisissez **Affecter des groupes** puis, dans le panneau **Sélectionner des groupes**, choisissez les groupes d’utilisateurs ou d’appareils Azure AD auxquels vous souhaitez affecter l’application.
-Vous devez choisir une action d’affectation **Requise**. En outre, les affectations à des groupes d’appareils sont disponibles pour les nouveaux clients créés après le mois de janvier 2017. Si votre client a été créé avant cette date et que vous ne pouvez pas affecter des applications VPP à des groupes d’appareils, contactez le support technique Intune.
-5. Une fois que vous avez terminé, choisissez **Enregistrer**.
+1.  Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **App Licenses** (Licences d’applications).
+2.  Dans le panneau de liste d’applications, choisissez l’application que vous souhaitez affecter, puis choisissez «**...**  » > **Affecter des groupes**.
+3.  Dans le panneau *<app name>* - **Affectations**, choisissez **Gérer** > **Affectations**.
+4.  Choisissez **Sélectionner des groupes** puis, dans le panneau **Sélectionner des groupes**, choisissez les groupes d’utilisateurs ou d’appareils Azure AD auxquels vous souhaitez affecter l’application.
+5.  Pour chaque groupe que vous avez sélectionné, choisissez les paramètres suivants :
+    - **Type** : indiquez si l’application sera **Disponible** (les utilisateurs finaux peuvent installer l’application à partir du portail d’entreprise) ou **Obligatoire** (l’application sera automatiquement installée sur les appareils des utilisateurs finaux).
+Quand vous attribuez une application VPP en tant que **Disponible**, le contenu et la licence de l’application sont attribués directement à partir de l’App Store.
+    - **Type de licence** : choisissez entre **Gestion des licences des utilisateurs** et **Gestion des licences des appareils**.
+6.  Une fois que vous avez terminé, choisissez **Enregistrer**.
+
 
 >[!NOTE]
 >La liste des applications affichées est associée à un jeton. Si vous avez une application qui est associée à plusieurs jetons VPP, la même application est affichée plusieurs fois (une fois pour chaque jeton).
 
-Consultez la page [Guide pratique pour surveiller des applications](apps-monitor.md) pour plus d’informations pour vous aider à contrôler les affectations de l’application.
-
 ## <a name="further-information"></a>Informations supplémentaires
 
-Lorsque vous affectez l’application comme une installation **Requise**, chaque utilisateur qui installe l’application utilise une licence.
-
-Pour libérer une licence, vous devez modifier l’action d’affectation sur **Désinstallation**. La licence est récupérée une fois l’application désinstallée.
+Pour récupérer une licence, vous devez remplacer l’action d’attribution par Désinstaller. La licence est récupérée une fois l’application désinstallée.
 
 Quand un utilisateur avec un appareil éligible essaie pour la première fois d’installer une application VPP, il est invité à participer au programme VPP d’Apple. Il doit accepter pour que l’installation de l’application se poursuive. L’invitation à participer au Programme d’achat en volume (VPP) Apple nécessite que l’utilisateur puisse utiliser l’application iTunes sur l’appareil iOS. Si vous avez défini une stratégie pour désactiver l’application iTunes Store, la gestion des licences par utilisateur pour le programme VPP ne fonctionne pas. La solution consiste à autoriser l’application iTunes en supprimant la stratégie ou à utiliser la gestion des licences par appareil.
 
-Quand vous attribuez une application VPP en tant que Disponible, le contenu et la licence de l’application sont attribués directement à partir de l’App Store.
+
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Consultez la page [Guide pratique pour surveiller des applications](apps-monitor.md) pour plus d’informations pour vous aider à contrôler les affectations de l’application.

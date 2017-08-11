@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e442a0ee7953fe5474d39e1a29a88dfcca58800d
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>Créer une stratégie de conformité des appareils pour les appareils macOS (préversion) avec Intune
 
@@ -104,6 +104,9 @@ Quand vous créez une stratégie de conformité des appareils avec Intune, vous 
 
 - **Nombre de mots de passe précédents avant d’autoriser leur réutilisation** : spécifiez le nombre de mots de passe précédents qui ne peuvent pas être réutilisés.
 
+    > [!IMPORTANT]
+    > Quand les exigences de mot de passe sont modifiées sur un appareil macOS, elles n’entrent pas en vigueur jusqu’au prochain changement de mot de passe de l’utilisateur. Par exemple, si vous définissez une restriction de longueur de mot de passe de huit chiffres et que l’appareil macOS possède actuellement un mot de passe de 6 chiffres, l’appareil reste conforme jusqu’à la prochaine mise à jour du mot de passe de l’utilisateur sur l’appareil.
+
 ## <a name="to-create-a-device-compliance-policy"></a>Pour créer une stratégie de conformité de l’appareil
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification Intune.
@@ -128,7 +131,7 @@ Quand vous créez une stratégie de conformité des appareils avec Intune, vous 
 
 ## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
 
-Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le panneau **Stratégie de conformité**.
+Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le panneau **Stratégies de conformité**.
 
 1. Choisissez la stratégie de conformité des appareils à affecter aux utilisateurs, puis **Affectations**. Cette opération ouvre le panneau dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous attribuez à la stratégie.
 

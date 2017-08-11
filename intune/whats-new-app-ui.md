@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,62 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
+
+## <a name="week-of-july-31-2017"></a>Semaine du 31 juillet 2017
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Amélioration de l’expérience de connexion sur l’ensemble des applications du portail d’entreprise pour toutes les plates-formes<!--User Story 1132123-->
+
+Dans les mois à venir, nous introduirons des changements visant à améliorer l’expérience de connexion aux applications Portail d’entreprise Intune pour Android, iOS et Windows. La nouvelle expérience utilisateur s’affiche automatiquement sur toutes les plates-formes utilisées pour l’application du portail d’entreprise lorsqu’Azure AD apporte cette modification. En outre, les utilisateurs peuvent désormais se connecter au portail d’entreprise à partir d’un autre appareil grâce à un code à usage unique automatiquement généré. Cette fonction se révèle particulièrement utile lorsque les utilisateurs doivent se connecter sans informations d’identification.  
+
+Vous trouverez ci-dessous des informations concernant l’expérience de connexion précédente, la nouvelle expérience de connexion avec informations d’identification, ainsi que la nouvelle expérience de connexion depuis un autre appareil.
+
+__Expérience de connexion précédente__
+
+![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Après avoir appuyé sur le bouton de connexion, l’utilisateur entre ses informations d’identification sur cette page (à savoir l’adresse e-mail et le mot de passe de l’utilisateur), qui indique également différents moyens de résoudre les problèmes de mot de passe.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Une fois le mot de passe saisi, l’application Portail d’entreprise se connecte et indique ce processus par une barre de chargement.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Nouvelle expérience de connexion__
+
+![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![L’utilisateur est invité à renseigner simplement son adresse e-mail, et non plus son adresse e-mail et son mot de passe sur le même écran.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![Une fois l’adresse e-mail validée, l’utilisateur est invité à saisir son mot de passe.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__Nouvelle expérience de connexion lors d’une connexion à partir d’un autre appareil__
+
+![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Cliquez sur le lien __Se connecter à partir d’un autre appareil__.
+
+![Suivez les instructions fournies pour accéder à la page aka.ms/devicelogin avec un code d’accès unique à partir de votre ordinateur, puis utilisez le code pour vous connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Ouvrez un navigateur et accédez à [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![Une image du navigateur de l’utilisateur sur son ordinateur de travail plutôt sur son application Portail d’entreprise. La page « Connexion à l’appareil » invite l’utilisateur à saisir le code qu’il a reçu dans l’application Portail d’entreprise.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Entrez le code que vous avez reçu dans l’application Portail d’entreprise. Si vous sélectionnez __Continuer__, vous serez en mesure de vous authentifier à l’aide de n’importe quelle méthode prise en charge par votre entreprise, par exemple une carte à puce.
+
+![L’utilisateur a saisi son code unique dans le champ, et le site « Connexion à l’appareil » lui a demandé de confirmer que le portail d’entreprise Intune était l’application appropriée pour recevoir l’autorisation de se connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Une page de confirmation indiquant que l’utilisateur est maintenant connecté à l’application Portail d’entreprise sur son appareil et qu’il peut fermer cette page.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+L’application Portail d’entreprise commence la procédure de connexion.
+
+![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="week-of-june-12-2017"></a>Semaine du 12 juin 2017
 
@@ -180,51 +228,12 @@ Voici les moyens envisagés pour améliorer l’expérience utilisateur en metta
 > [!Note]
 > Notez que les images ci-dessous peuvent être en préversion. Le produit annoncé peut différer des versions présentées.
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Amélioration de l’expérience de connexion sur l’ensemble des applications du portail d’entreprise pour toutes les plates-formes<!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Mises à jour apportées à l’interface utilisateur sur le site web Portail d’entreprise <!--1313244 part 2-->
 
-Dans les mois à venir, nous introduirons des changements visant à améliorer l’expérience de connexion aux applications Portail d’entreprise Intune pour Android, iOS et Windows. La nouvelle expérience utilisateur s’affiche automatiquement sur toutes les plates-formes utilisées pour l’application du portail d’entreprise lorsqu’Azure AD apporte cette modification. En outre, les utilisateurs peuvent désormais se connecter au portail d’entreprise à partir d’un autre appareil grâce à un code à usage unique automatiquement généré. Cette fonction se révèle particulièrement utile lorsque les utilisateurs doivent se connecter sans informations d’identification.  
+__Mises à jour des applications proposées__  Nous avons ajouté une page dédiée sur le site où les utilisateurs peuvent rechercher les applications que vous avez choisi de proposer, et nous avons apporté quelques ajustements à l’interface utilisateur de la section correspondante sur la page d’accueil.
 
-Vous trouverez ci-dessous des informations concernant l’expérience de connexion précédente, la nouvelle expérience de connexion avec informations d’identification, ainsi que la nouvelle expérience de connexion depuis un autre appareil.
+![Les vignettes de couleur qui signalent les applications. Il s’agit de grands carrés de couleur en dessous de chaque application, où la couleur est extraite de la teinte principale du logo de l’application. La section « Applications proposées » s’affiche dans la partie supérieure de l’application Portail d’entreprise.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__Expérience de connexion précédente__
-
-![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![Après avoir appuyé sur le bouton de connexion, l’utilisateur entre ses informations d’identification sur cette page (à savoir l’adresse e-mail et le mot de passe de l’utilisateur), qui indique également différents moyens de résoudre les problèmes de mot de passe.](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![Une fois le mot de passe saisi, l’application Portail d’entreprise se connecte et indique ce processus par une barre de chargement.](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__Nouvelle expérience de connexion__
-
-![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![L’utilisateur est invité à renseigner simplement son adresse e-mail, et non plus son adresse e-mail et son mot de passe sur le même écran.](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![Une fois l’adresse e-mail validée, l’utilisateur est invité à saisir son mot de passe.](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__Nouvelle expérience de connexion lors d’une connexion à partir d’un autre appareil__
-
-![Page de connexion du Portail d’entreprise, contenant une icône de personne devant une représentation graphique d’un site web. Le bouton de connexion se trouve en dessous. Un lien situé au bas de la page permet d’accéder aux informations Confidentialité et cookies de Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-Cliquez sur le lien __Se connecter à partir d’un autre appareil__.
-
-![Suivez les instructions fournies pour accéder à la page aka.ms/devicelogin avec un code d’accès unique à partir de votre ordinateur, puis utilisez le code pour vous connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-Ouvrez un navigateur et accédez à [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
-
-![Une image du navigateur de l’utilisateur sur son ordinateur de travail plutôt sur son application Portail d’entreprise. La page « Connexion à l’appareil » invite l’utilisateur à saisir le code qu’il a reçu dans l’application Portail d’entreprise.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-Entrez le code que vous avez reçu dans l’application Portail d’entreprise. Si vous sélectionnez __Continuer__, vous serez en mesure de vous authentifier à l’aide de n’importe quelle méthode prise en charge par votre entreprise, par exemple une carte à puce.
-
-![L’utilisateur a saisi son code unique dans le champ, et le site « Connexion à l’appareil » lui a demandé de confirmer que le portail d’entreprise Intune était l’application appropriée pour recevoir l’autorisation de se connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![Une page de confirmation indiquant que l’utilisateur est maintenant connecté à l’application Portail d’entreprise sur son appareil et qu’il peut fermer cette page.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-L’application Portail d’entreprise commence la procédure de connexion.
-
-![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### <a name="see-also"></a>Voir aussi
 * [Blog Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Feuille de route de la plateforme cloud](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)

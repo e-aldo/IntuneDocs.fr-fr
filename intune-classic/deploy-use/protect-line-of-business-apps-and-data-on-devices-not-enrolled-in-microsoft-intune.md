@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Protéger les données et applications métier sur des appareils non inscrits dans Microsoft Intune
 
@@ -31,7 +31,7 @@ Cette rubrique décrit les étapes nécessaires pour appliquer des stratégies d
 
 ##  <a name="step-1-prepare-the-app"></a>Étape 1: Préparer l’application
 
-Pour pouvoir appliquer les stratégies de GAM à une application, vous devez tout d’abord encapsuler l’application à l’aide de l’outil d’encapsulation d’applications de Microsoft Intune pour [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android), ou utiliser le [Kit SDK d’applications d’Intune](/intune/app-sdk) pour intégrer manuellement les fonctionnalités d’Intune App Protection.
+Avant de pouvoir appliquer les stratégies de gestion des applications mobiles à une application, vous devez tout d’abord encapsuler l’application à l’aide de l’outil de création de package de restrictions d’application Microsoft Intune pour [iOS](/intune/app-wrapper-prepare-ios) et [Android](/intune/app-wrapper-prepare-android), ou utiliser le [SDK d’application Intune](/intune/app-sdk) pour intégrer les fonctionnalités de protection des applications Intune manuellement.
 
 Pour plus d’informations sur l’utilisation de l’outil de création de package de restrictions d’application par rapport au SDK d’application Intune, consultez [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
