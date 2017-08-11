@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
+ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) avec Intune
 
@@ -44,7 +44,7 @@ Le RBAC permet de contrôler qui peut effectuer diverses tâches Intune au sein 
     > Le rôle d’administrateur du service Intune ne donne pas la possibilité de gérer les paramètres d’accès conditionnel d’Azure AD.
 
     > [!TIP]
-    > Intune présente également trois extensions d’Azure AD : **Utilisateurs**, **Groupes** et **Accès conditionnel**, qui sont contrôlés à l’aide du RBAC d’Azure AD. En outre, **l’administrateur de comptes d’utilisateurs** accomplit uniquement les activités relatives aux groupes et aux utilisateurs AAD ; il n’a pas l’autorisation d’effectuer toutes les activités possibles dans Intune. Reportez-vous à [RBAC avec Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) pour plus d’informations.
+    > Intune présente également trois extensions d’Azure AD, **Utilisateurs**, **Groupes** et **Accès conditionnel**, qui sont contrôlées à l’aide du contrôle d’accès en fonction du rôle (RBAC) d’Azure AD. En outre, **l’administrateur de comptes d’utilisateurs** accomplit uniquement les activités relatives aux groupes et aux utilisateurs AAD ; il n’a pas l’autorisation d’effectuer toutes les activités possibles dans Intune. Reportez-vous à [RBAC avec Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) pour plus d’informations.
 
 ## <a name="roles-created-in-the-intune-classic-console"></a>Rôles créés dans la console classique d’Intune
 
@@ -57,9 +57,9 @@ Seuls les utilisateurs de type **Administrateurs de Service** d’Intune disposa
 
 Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à des groupes sans configuration supplémentaire :
 
-- **Opérateur du support technique** : effectue des tâches à distance sur les utilisateurs et les appareils, et peut affecter des applications ou des stratégies aux utilisateurs ou aux appareils. 
-- **Gestionnaire de stratégie et de profils** : gère la stratégie de conformité, les profils de configuration, l’inscription auprès d’Apple et les identificateurs d’appareils professionnels.
-- **Opérateur en lecture seule** : affiche des informations sur les utilisateurs, les appareils, l’inscription, la configuration et les applications, mais ne peut pas apporter de modifications à Intune.
+- **Opérateur du support technique** : effectue des tâches à distance sur les utilisateurs et les appareils, et peut attribuer des applications ou des stratégies aux utilisateurs ou aux appareils.
+- **Gestionnaire de stratégie et de profils** : gère la stratégie de conformité, les profils de configuration, l’inscription auprès d’Apple et les identificateurs d’appareils d’entreprise.
+- **Opérateur en lecture seule** : affiche des informations sur les utilisateurs, les appareils, l’inscription, la configuration et les applications. Il ne peut pas apporter de modifications à Intune.
 - **Gestionnaire d’applications** : gère les applications mobiles et gérées, et peut lire les informations sur les appareils.
 
 ### <a name="to-assign-a-built-in-role"></a>Pour affecter un rôle intégré
@@ -68,9 +68,9 @@ Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à de
 
 2. Sur le panneau <*nom de rôle*> - **Propriétés**, choisissez **Gérer**, puis **Affectations**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Il n’est pas possible de supprimer ou de modifier les rôles intégrés.
-    
+
 3. Sur le panneau de rôle personnalisé, choisissez **Affecter**.
 
 4. Dans le panneau **Attributions de rôle**, entrez un **Nom** et éventuellement une **Description** pour l’attribution, puis choisissez les éléments suivants :
@@ -85,7 +85,7 @@ Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à de
 
 ## <a name="custom-roles"></a>Rôles personnalisés
 
-Vous pouvez créer un rôle personnalisé qui inclut toutes les autorisations requises pour une fonction de tâche donnée. Par exemple, si un groupe du service informatique gère les applications, les stratégies et les profils de configuration, vous pouvez ajouter toutes ces autorisations à un même rôle personnalisé.
+Vous pouvez créer un rôle personnalisé qui inclut toutes les autorisations requises pour une fonction de tâche donnée. Par exemple, si un groupe du service informatique gère les applications, les stratégies et les profils de configuration, vous pouvez ajouter toutes ces autorisations ensemble à un même rôle personnalisé.
 
 > [!IMPORTANT]
 > Pour créer, modifier ou affecter des rôles, votre compte doit posséder l'une des autorisations suivantes dans Azure AD :

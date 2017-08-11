@@ -14,11 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5be08d2535acefe099429ab732d6d5d99205b2e7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Surveiller les stratégies de protection des applications avec Microsoft Intune
 Vous pouvez surveiller l’état de conformité des stratégies de protection des applications que vous avez appliquées aux utilisateurs. Vous pouvez trouver des informations sur les utilisateurs concernés par les stratégies de protection des applications, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
@@ -43,11 +43,13 @@ Dans le panneau **Gestion des applications mobiles Intune**, vous pouvez voir un
 
 ![Vignette Résumé sur le panneau Gestion des applications mobiles Intune](../media/mam-azure-portal-user-status-summary.png)
 
--   **Utilisateurs** : le nombre total d’utilisateurs dans votre société qui utilisent les applications associées à la stratégie.
+-   **Utilisateurs** : nombre total d’utilisateurs dans votre société qui utilisent une application associée à une stratégie dans un contexte professionnel.
 
--   **GÉRÉ PAR STRATÉGIE** : le nombre d’utilisateurs ayant utilisé au moins l’une des applications dans un contexte professionnel.
+-   **GÉRÉ PAR STRATÉGIE** : nombre d’utilisateurs qui ont utilisé une application et auxquels une stratégie a été affectée dans un contexte professionnel.
 
--   **AUCUNE STRATÉGIE** : le nombre d’utilisateurs qui utilisent les applications associées à la stratégie, mais qui ne sont pas affectés par celle-ci. Vous pouvez envisager d’ajouter ces utilisateurs à la stratégie.
+-   **AUCUNE STRATÉGIE** : nombre d’utilisateurs qui utilisent une application qui n’est ciblée par aucune stratégie dans un contexte professionnel. Vous pouvez envisager d’ajouter ces utilisateurs à la stratégie.
+    > [!NOTE]
+    > Si vous avez plusieurs stratégies par plateforme, un utilisateur est considéré comme étant géré par une stratégie quand au moins une stratégie lui a été affectée.
 
 - **Utilisateurs marqués d’un indicateur** : le nombre d’utilisateurs ayant rencontré des problèmes. Seuls les utilisateurs avec des appareils jailbreakés sont répertoriés sous **Utilisateurs marqués d’un indicateur**.
 

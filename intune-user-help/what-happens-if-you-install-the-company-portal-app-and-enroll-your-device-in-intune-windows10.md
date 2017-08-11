@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows 10 dans Intune ?
 
@@ -34,7 +34,7 @@ Après avoir installé l’application Portail d’entreprise et inscrit avec ce
 
 -   réinitialiser les paramètres de votre téléphone en cas de perte ou de vol.
 
-Pour connaître la procédure d’inscription, consultez [Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Pour savoir ce que votre administrateur informatique peut voir sur votre appareil, consultez [Que voit mon administrateur informatique quand j’inscris mon appareil dans Intune ?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Pour connaître la procédure d’inscription, consultez [Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Pour savoir ce que votre administrateur informatique peut voir sur votre appareil, consultez [Que voit mon administrateur informatique quand j’inscris mon appareil dans Intune ?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 Lorsque vous ajoutez un ordinateur :
 

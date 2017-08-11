@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44d80e1c72b58eccd4e69b1d561c7d651f39b3c3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Android et Samsung KNOX Standard dans Microsoft Intune
 
@@ -29,36 +29,37 @@ Utilisez ces paramètres avec une stratégie de restriction d’appareil Android
 
 ## <a name="general"></a>Général
 
-|||||
-|-|-|-|-|
-|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX Standard|
-|**Appareil photo**|Autorise l’utilisation de l’appareil photo de l’appareil.|Oui|Oui|
-|**Copier et coller**|Autorise les fonctions Copier et Coller sur l’appareil.|Non|Oui|
-|**Partage du Presse-papiers entre applications**|Autorise l’utilisation du Presse-papiers pour copier-coller entre les applications.|Non|Oui|
-|**Envoi des données de diagnostic**|Empêche l’utilisateur d’envoyer des données de diagnostic depuis l’appareil.|Non|Oui|
-|**Réinitialisation aux paramètres d’usine**|Autorise l’utilisateur à rétablir les paramètres d’usine sur l’appareil.|Non|Oui|
-|**Géolocalisation**|Permet à l’appareil d’utiliser les informations de localisation (Samsung KNOX Standard uniquement).|Non|Oui|
-|**Mise hors tension**|Autorise l’utilisateur à mettre l’appareil hors tension.<br>Si vous désactivez cette option, vous ne pouvez pas définir le **Nombre d’échecs de connexion avant réinitialisation de l’appareil**.|Non|Oui|
-|**Capture d'écran**|Autorise l’utilisateur à capturer le contenu de l’écran comme image.|Non|Oui|
-|**Assistant vocal**|Autorise l’utilisation du logiciel Assistant vocal sur l’appareil.|Non|Oui|
-|**YouTube**|Autorise l’utilisation de l’application YouTube sur l’appareil.|Non|Oui|
-|**Appareils partagés**|Configurer un appareil Samsung KNOX standard géré en tant qu’appareil partagé. Dans ce mode, les utilisateurs finaux peuvent se connecter et se déconnecter de l’appareil avec leurs informations d’identification Azure AD. L’appareil reste géré, qu’il soit en cours d’utilisation ou non.<br>Quand les utilisateurs finaux se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.|Non|Oui|
+- **Appareil photo** - Autorise l’utilisation de l’appareil photo de l’appareil.
+- **Copier et coller (Samsung KNOX uniquement)** - Autorise les fonctions Copier et Coller sur l’appareil.
+- **Partage du Presse-papiers entre applications (Samsung KNOX uniquement)** - Autorise l’utilisation du Presse-papiers pour copier-coller entre les applications.
+- **Envoi des données de diagnostic (Samsung KNOX uniquement)** - Empêche l’utilisateur d’envoyer des données de diagnostic depuis l’appareil.
+- **Réinitialisation aux paramètres d’usine (Samsung KNOX uniquement)** - Autorise l’utilisateur à rétablir les paramètres d’usine sur l’appareil.
+- **Géolocalisation (Samsung KNOX uniquement)** - Permet à l’appareil d’utiliser les informations de localisation.
+- **Mise hors tension (Samsung KNOX uniquement)** - Autorise l’utilisateur à mettre l’appareil hors tension.<br>Si vous désactivez cette option, vous ne pouvez pas définir le **Nombre d’échecs de connexion avant réinitialisation de l’appareil**.
+- **Capture d’écran (Samsung KNOX uniquement)** - Autorise l’utilisateur à capturer le contenu de l’écran comme image.
+- **Assistant vocal (Samsung KNOX uniquement)** - Autorise l’utilisation du logiciel Assistant vocal sur l’appareil.
+- **YouTube (Samsung KNOX uniquement)** - Autorise l’utilisation de l’application YouTube sur l’appareil.
+- **Appareils partagés** - Configurer un appareil Samsung KNOX standard géré en tant qu’appareil partagé. Dans ce mode, les utilisateurs finaux peuvent se connecter et se déconnecter de l’appareil avec leurs informations d’identification Azure AD. L’appareil reste géré, qu’il soit en cours d’utilisation ou non.<br>Quand les utilisateurs finaux se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.
 
 ## <a name="password"></a>Mot de passe
 
-|||||
-|-|-|-|-|
-|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX Standard|
-|**Mot de passe**|Demande à l’utilisateur final de saisir un mot de passe pour pouvoir accéder à l’appareil.|Oui|Oui|
-|**Longueur minimale du mot de passe**|Saisissez la longueur minimale du mot de passe qu’un utilisateur doit configurer (entre 4 et 16 caractères).|Oui|Oui|
-|**Nombre maximal de minutes d’inactivité avant le verrouillage de l’appareil**|Spécifie le nombre de minutes d’inactivité avant verrouillage automatique de l’appareil.|Oui|Oui|
-|**Nombre d’échecs de connexion avant réinitialisation de l’appareil**|Spécifie le nombre d’échecs de connexion à autoriser avant réinitialisation de l’appareil.|Oui|Oui|
-|**Expiration du mot de passe (jours)**|Spécifie le nombre de jours avant de devoir modifier le mot de passe de l’appareil.|Oui|Oui|
-|**Type de mot de passe requis**|Spécifie le niveau de complexité du mot de passe requis et si les appareils biométriques peuvent être utilisés. Choisissez parmi :<br><br>    -     **Paramètre par défaut de l’appareil**<br>-     **Sécurité biométrique faible**<br>    -     **Au moins numérique**<br>    -     **Chiffres complexes** (les chiffres répétés ou consécutifs tels que « 1111 » ou « 1234 » ne sont pas autorisés)<sup>1</sup><br>    -     **Au moins alphabétique**<br>    -     **Au moins alphanumérique**<br>    -     **Au moins alphanumérique avec des symboles**|Oui|Oui|
-|**Empêcher la réutilisation des mots de passe précédents**|Empêche l’utilisateur final de créer un mot de passe qu’il a déjà utilisé.|Oui|Oui|
-|**Déverrouillage par empreinte digitale**|Permet l’utilisation d’une empreinte digitale pour déverrouiller les appareils pris en charge.|Non|Oui|
-|**Smart Lock et autres agents de confiance**|Vous permet de contrôler la fonctionnalité Smart Lock sur les appareils Android compatibles (Samsung KNOX Standard 5.0 et plus). Cette fonctionnalité du téléphone, parfois appelée agents de confiance, vous permet de désactiver ou de contourner le mot de passe de l’écran de verrouillage de l’appareil si celui-ci se trouve à un emplacement approuvé. Par exemple, cela peut servir lorsque l’appareil est connecté à un appareil Bluetooth spécifique ou quand il se trouve à proximité d’une balise NFC. Vous pouvez utiliser ce paramètre pour empêcher les utilisateurs de configurer Smart Lock.|Oui (versions 5.0 et plus)|Oui|
-|**Chiffrement**|Exige que les fichiers soient chiffrés sur le périphérique.|Oui|Oui|
+- **Mot de passe** - L’utilisateur final doit entrer un mot de passe pour accéder à l’appareil. |Yes|Yes|
+- **Longueur minimale du mot de passe** - Entrez la longueur minimale du mot de passe qu’un utilisateur doit configurer (entre 4 et 16 caractères).
+- **Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil** - Spécifie le nombre de minutes d’inactivité avant verrouillage automatique de l’appareil.
+- **Nombre d'échecs de connexion avant réinitialisation de l'appareil** - Spécifie le nombre d’échecs de connexion à autoriser avant réinitialisation de l’appareil.
+- **Expiration du mot de passe (jours)** - Spécifie le nombre de jours avant que l’utilisateur ne doive modifier le mot de passe de l’appareil.
+-  **Type de mot de passe obligatoire** - Spécifie le niveau de complexité du mot de passe exigé, et si les appareils biométriques peuvent être utilisés. Choisissez parmi :
+    - **Paramètre par défaut de l’appareil**
+    - **Sécurité biométrique faible**
+    - **Au moins numérique**
+    - **Chiffres complexes** - Les chiffres répétés ou consécutifs tels que « 1111 » ou « 1234 » ne sont pas autorisés<sup>1</sup>
+    - **Au moins alphabétique**
+    - **Au moins alphanumérique**
+    - **Au moins alphanumérique avec des symboles**
+- **Empêcher la réutilisation des mots de passe précédents** - Empêche l’utilisateur final de créer un mot de passe qu’il a déjà utilisé.
+- **Déverrouillage par empreinte digitale (Samsung KNOX uniquement)** - Permet l’utilisation d’une empreinte digitale pour déverrouiller les appareils pris en charge.
+- **Smart Lock et autres agents de confiance** - Vous permet de contrôler la fonctionnalité Smart Lock sur les appareils Android compatibles (Samsung KNOX Standard 5.0 et modèles ultérieurs). Cette fonctionnalité du téléphone, parfois appelée agents de confiance, vous permet de désactiver ou de contourner le mot de passe de l’écran de verrouillage de l’appareil si celui-ci se trouve à un emplacement approuvé. Par exemple, cela peut servir lorsque l’appareil est connecté à un appareil Bluetooth spécifique ou quand il se trouve à proximité d’une balise NFC. Vous pouvez utiliser ce paramètre pour empêcher les utilisateurs de configurer Smart Lock.
+- **Chiffrement** - Exige que les fichiers soient chiffrés sur l’appareil.
 
 <sup>1</sup> avant d’affecter ce paramètre sur les appareils, veillez à mettre à jour de l’application portail d’entreprise vers la dernière version sur ces appareils.
 
@@ -69,10 +70,7 @@ Si vous configurez le paramètre **Chiffres complexes** et l’affectez à un ap
 
 ## <a name="google-play-store"></a>Google Play Store
 
-|||||
-|-|-|-|-|
-|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX Standard|
-|**Google Play Store**|Autorise l’utilisateur à accéder à l’application Google Play Store sur l’appareil.|Non|Oui|
+- **Google Play Store (Samsung KNOX uniquement)** - Permet à l’utilisateur d’accéder à Google Play Store sur l’appareil.
 
 ## <a name="restricted-apps"></a>Applications restreintes
 
@@ -82,7 +80,7 @@ Une liste **Applications interdites** : répertorie les applications qui ne sont
 Une liste **Applications approuvées** : répertorie les applications que les utilisateurs sont autorisés à installer. Pour rester conformes, les utilisateurs ne doivent pas installer d’autres applications. Les applications qui sont gérées par Intune sont autorisées automatiquement.
 Les profils d’appareil qui contiennent des paramètres d’applications restreintes doivent être attribués à des groupes d’utilisateurs.
 
-Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans le magasin d'applications.
+Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans l’App Store.
 
 ### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Comment spécifier l’URL vers une application dans l’App Store
 
@@ -99,41 +97,38 @@ Exemple : Recherchez Microsoft Office Mobile dans Google Play. Utilisez l’URL
 Vous pouvez également cliquer sur **Importer** pour obtenir la liste à partir d’un fichier .csv. Utilisez le format <*URL de l’application*>, <*Nom de l’application*>, <*Développeur de l’application*>, ou cliquer sur **Exporter** dans le fichier csv contenant le contenu de la liste des applications restreintes dans le même format.      
 
 ## <a name="browser"></a>Navigateur
-|||||
-|-|-|-|-|
-|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX Standard|
-|**Navigateur web**|Spécifie si le navigateur web par défaut de l’appareil peut être utilisé.|Non|Oui|
-|**Remplissage automatique**|Autorise l’utilisation de la fonction de remplissage automatique du navigateur web.|Non|Oui|
-|**Cookies**|Autorise le navigateur web de l’appareil à utiliser des cookies.|Non|Oui|
-|**Javascript**|Permet au navigateur web de l’appareil d’exécuter des scripts Java.|Non|Oui|
-|**Fenêtres contextuelles**|Autoriser l’utilisation du bloqueur de fenêtres publicitaires dans le navigateur.|Non|Oui|
+
+- **Navigateur web (Samsung KNOX uniquement)** - Spécifie si le navigateur web par défaut de l’appareil peut être utilisé.
+- **Remplissage automatique (Samsung KNOX uniquement)** - Autorise l’utilisation de la fonction de remplissage automatique du navigateur web.
+- **Cookies (Samsung KNOX uniquement)** - Autorise le navigateur web de l’appareil à utiliser des cookies.
+- **Javascript (Samsung KNOX uniquement)** - Autorise le navigateur web de l’appareil à exécuter des scripts Java.
+- **Fenêtres publicitaires (Samsung KNOX uniquement)** - Autorise l’utilisation du bloqueur de fenêtres publicitaires dans le navigateur.
 
 ## <a name="cloud-and-storage"></a>Cloud et stockage
-|||||
-|-|-|-|-|
-|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX Standard|
-|**Sauvegarde Google**|Autorise l’utilisation de la sauvegarde de Google.|Non|Oui|
-|**Synchronisation automatique de compte Google**|Autorise la synchronisation automatique des paramètres du compte Google.|Non|Oui|
-|**Stockage amovible**|Autorise l’appareil à utiliser du stockage amovible, comme une carte SD.|Non|Oui|
-|**Chiffrement des cartes de stockage**|Spécifie si la carte de stockage de l’appareil doit être chiffrée.|Non|Oui|
+
+- **Sauvegarde Google (Samsung KNOX uniquement)** - Autorise l’utilisation de la sauvegarde de Google.
+- **Synchronisation automatique de compte Google (Samsung KNOX uniquement)** - Autorise la synchronisation automatique des paramètres du compte Google.
+- **Stockage amovible (Samsung KNOX uniquement)** - Permet à l’appareil d’utiliser un stockage amovible, par exemple une carte SD.
+- **Chiffrement des cartes de stockage (Samsung KNOX uniquement)** - Spécifie si la carte de stockage de l’appareil doit être chiffrée.
 
 ## <a name="cellular-and-connectivity"></a>Cellulaire et connectivité
-|||||
-|-|-|-|-|
-|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX Standard|
-|**Itinérance des données**|Autorise l’itinérance des données lorsque l’appareil se trouve sur un réseau de téléphonie mobile.|Non|Oui|
-|**Messagerie SMS et MMS**|Autorise l’utilisation de la messagerie SMS et MMS sur l’appareil.|Non|Oui|
-|**Numérotation vocale**|Active ou désactive la fonctionnalité de numérotation vocale sur l’appareil.|Non|Oui|
-|**Itinérance vocale**|Autorise l’itinérance vocale quand l’appareil se trouve sur un réseau de téléphonie mobile.|Non|Oui|
-|**BlueTooth**|Autorise l’utilisation de la fonction Bluetooth sur l’appareil.|Non|Oui|
-|**NFC**|Autorise les opérations qui utilisent la communication en champ proche sur les appareils pris en charge.|Non|Oui|
-|**Wi-Fi**|Autorise l’utilisation des fonctionnalités Wi-Fi de l’appareil.|Non|Oui|
-|**Connexion Wi-Fi**|Autorise l’utilisation de la connexion Wi-Fi sur l’appareil.|Non|Oui|
 
-## <a name="kiosk"></a>Kiosque
-|||||
-|-|-|-|-|
-|Nom du paramètre|Détails|Android 4.0+|Samsung KNOX Standard|
-|**Sélectionner une application gérée**|Choisissez une des options suivantes pour ajouter une ou plusieurs applications pouvant s’exécuter quand l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil.<br><br>- **Ajouter des applications par nom de package**<br>- **Ajouter des applications par URL**<br>- **Ajouter des applications gérées**|Non|Oui|
-|**Bouton de veille de l’écran**|Active ou désactive le bouton Veille/sortie de veille de l'écran sur l'appareil.|Non|Oui|
-|**Boutons du volume**|Active ou désactive l'utilisation des boutons de volume sur l'appareil.|Non|Oui|
+- **Itinérance des données (Samsung KNOX uniquement)** - Autorise l’itinérance des données quand l’appareil se trouve sur un réseau cellulaire.
+- **Messagerie SMS/MMS (Samsung KNOX uniquement)** - Permet l’utilisation de la messagerie SMS et MMS sur l’appareil.
+- **Numérotation vocale (Samsung KNOX uniquement)** - Active ou désactive la fonctionnalité de numérotation vocale sur l’appareil.
+- **Itinérance vocale (Samsung KNOX uniquement)** - Autorise l’itinérance vocale quand l’appareil se trouve sur un réseau cellulaire.
+- **Bluetooth (Samsung KNOX uniquement)** - Autorise l’utilisation de la fonctionnalité Bluetooth sur l’appareil.
+- **NFC (Samsung KNOX uniquement)** - Autorise les opérations qui utilisent la communication en champ proche sur les appareils pris en charge.
+- **Wi-Fi (Samsung KNOX uniquement)** - Autorise l’utilisation des fonctionnalités Wi-Fi de l’appareil.
+- **Connexion Wi-Fi (Samsung KNOX uniquement)** - Permet l’utilisation de la connexion Wi-Fi sur l’appareil.
+
+## <a name="kiosk"></a>Kiosk
+
+Les paramètres du mode plein écran s’appliquent uniquement aux appareils Samsung KNOX Standard.
+
+- **Sélectionner une application gérée** - Choisissez une des options suivantes pour ajouter une ou plusieurs applications pouvant s’exécuter quand l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil.
+    - **Ajouter des applications par nom de package**
+    - **Ajouter des applications par URL**
+    - **Ajouter des applications gérées**
+- **Bouton de veille de l'écran** - Active ou désactive le bouton Veille/sortie de veille de l’écran sur l’appareil.
+- **Boutons de volume** - Active ou désactive l’utilisation des boutons de volume sur l’appareil.

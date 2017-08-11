@@ -5,7 +5,7 @@ keywords: "définition d’Intune"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>Qu’est-ce qu’Intune ?
 
@@ -37,7 +37,7 @@ Ensemble, Office 365 et EMS permettent à votre personnel d’être productif s
 ## <a name="how-does-intune-work"></a>Comment fonctionne Intune ?
 Intune assure la gestion des appareils mobiles (MDM) et la gestion des applications mobiles (GAM). Les fonctionnalités MDM et GAM d’Intune complètent alors la suite EMS de scénarios de protection et de conformité des données.  
 
-La manière d’utiliser les fonctionnalités MDM/GAM d’Intune et la protection des données EMS dépend de la [problématique que vous essayez de résoudre](#common-business-problems-that-intune-helps-solve). Exemple :
+La façon d’utiliser les fonctionnalités MDM/GAM d’Intune et la protection des données EMS dépend de la [problématique que vous essayez de résoudre](#common-business-problems-that-intune-helps-solve). Par exemple :
 * Vous allez très souvent recourir à la gestion des appareils mobiles (MDM) si vous créez un pool d’appareils à usage unique devant être partagé par le personnel d’un magasin de vente au détail.
 * Si vous autorisez votre personnel à utiliser ses appareils personnels pour accéder aux données d’entreprise (BYOD), vous allez vous appuyer sur la gestion des applications mobiles (GAM) et la protection des données.  
 * Si vous fournissez des téléphones aux employés, vous allez considérablement faire appel à toutes ces technologies.
@@ -72,10 +72,10 @@ Quand vous utilisez Intune avec les autres services dans EMS, vous pouvez accro�
 
 * [Authentification unique](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [Authentification multifacteur](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [Accès conditionnel aux applications - autoriser l’accès si l’application mobile contient des données d’entreprise](app-based-conditional-access-intune.md) ([console classique](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [Isolement des données d’entreprise des données personnelles dans la même application](app-protection-policy.md) ([console classique](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Stratégie de protection des applications (code confidentiel, chiffrement, Enregistrer sous, Presse-papiers, etc.)](app-protection-policies.md) ([console classique](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Réinitialisation des données d’entreprise à partir d’une application mobile](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [Accès conditionnel de l’application, pour autoriser l’accès si l’application mobile contient des données d’entreprise](app-based-conditional-access-intune.md)
+* [Isolement des données d’entreprise des données personnelles dans la même application](app-protection-policy.md)
+* [Stratégie de protection des applications (code confidentiel, chiffrement, Enregistrer sous, Presse-papiers, etc.)](app-protection-policies.md)
+* [Réinitialisation des données d’entreprise à partir d’une application mobile](apps-selective-wipe.md)
 * [Prise en charge de la gestion des droits](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Image qui présente les niveaux de sécurité des données de gestion des applications](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ La liste suivante de problématiques d’entreprise permet d’accéder à des i
 * [Fournir des tablettes partagées à usage limité à vos employés](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>Étapes suivantes
-* En savoir plus sur certaines des [façons courantes d’utiliser Intune](common-scenarios.md) ([console classique](/intune-classic/understand-explore/common-ways-to-use-intune)).
-* Familiarisez-vous avec le produit [grâce à une période d’essai d’Intune de 30 jours](free-trial-sign-up.md) ([console classique](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
-* Explorer [les spécifications techniques et les fonctionnalités](supported-devices-browsers.md) ([console classique](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)) d’Intune.
+* En savoir plus sur certaines des [façons courantes d’utiliser Intune](common-scenarios.md).
+* Se familiariser avec le produit [grâce à une période d’essai d’Intune de 30 jours](free-trial-sign-up.md).
+* Explorer [les spécifications techniques et les fonctionnalités](supported-devices-browsers.md) d’Intune.
