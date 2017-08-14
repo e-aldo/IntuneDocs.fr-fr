@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Android et Samsung KNOX Standard dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Utilisez ces paramètres avec une stratégie de restriction d’appareil Android pour configurer les appareils de votre organisation.
+
+>[!TIP]
+>Si les paramètres souhaités ne sont pas disponibles, vous pouvez normalement configurer vos appareils à l’aide un [profil personnalisé](custom-settings-android.md). 
 
 ## <a name="general"></a>Général
 
@@ -132,3 +135,8 @@ Les paramètres du mode plein écran s’appliquent uniquement aux appareils Sam
     - **Ajouter des applications gérées**
 - **Bouton de veille de l'écran** - Active ou désactive le bouton Veille/sortie de veille de l’écran sur l’appareil.
 - **Boutons de volume** - Active ou désactive l’utilisation des boutons de volume sur l’appareil.
+
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Continuez à utiliser les instructions du [Guide pratique pour configurer des paramètres de restriction d’appareils dans Microsoft Intune](device-restrictions-configure.md) pour créer puis pour affecter le profil de restriction d’appareil.
