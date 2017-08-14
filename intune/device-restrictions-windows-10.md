@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -72,7 +72,7 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 
 ## <a name="privacy"></a>Confidentialité
 
--   **Personnalisation des entrées** – Ne pas autoriser l’utilisation des services cloud de reconnaissance vocale pour les applications du Windows Store, la dictée ou Cortana. Si vous autorisez ces services, Microsoft peut collecter des données vocales pour améliorer le service.
+-   **Personnalisation des entrées** – Ne pas autoriser l’utilisation des services cloud de reconnaissance vocale pour les applications du Microsoft Store, la dictée ou Cortana. Si vous autorisez ces services, Microsoft peut collecter des données vocales pour améliorer le service.
 -   **Acceptation automatique des invites de consentement de l’utilisateur pour le couplage et la confidentialité** – Autoriser Windows à accepter automatiquement les messages de consentement de couplage et de confidentialité lors de l’exécution des applications.
 
 
@@ -91,12 +91,12 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 ## <a name="app-store"></a>App Store
 
 -   **App store (mobile uniquement)** - Active ou bloque l’utilisation de l’App Store sur les appareils Windows 10 Mobile.
--   **Mettre à jour automatiquement les applications du Windows Store** - Permet aux applications installées à partir du Windows Store d’être automatiquement mises à jour.
+-   **Mettre à jour automatiquement les applications du Windows store** - Permet aux applications installées à partir du Microsoft Store d’être automatiquement mises à jour.
 -   **Installation d’applications approuvées** - Permet de charger indépendamment les applications signées avec un certificat approuvé.
 -   **Déverrouillage de développement** - Autorise les paramètres de développement Windows, par exemple pour autoriser l’utilisateur à modifier des applications qui ont été chargées indépendamment.
 -   **Données d'application utilisateur partagées** - Permet aux applications de partager des données entre différents utilisateurs sur le même appareil.
 -   **Utiliser uniquement un store privé** - Activez cette option pour autoriser les utilisateurs à télécharger uniquement des applications à partir de votre Store privé.
--   **Lancement des applications du Windows Store** - Permet de désactiver toutes les applications qui ont été préalablement installées sur l’appareil ou qui ont été téléchargées à partir du Windows Store.
+-   **Lancement des applications du Windows Store** - Permet de désactiver toutes les applications qui ont été préalablement installées sur l’appareil ou qui ont été téléchargées à partir du Microsoft Store.
 -   **Installer des données d'application sur le volume système** - Empêche les applications de stocker des données sur le volume système de l’appareil.
 -   **Installer des données d'application sur le lecteur système** - Empêche les applications de stocker des données sur le lecteur système de l’appareil.
 -   **Jeux DVR (Desktop uniquement)** - Détermine si l’enregistrement et la diffusion des jeux sont autorisés ou non.

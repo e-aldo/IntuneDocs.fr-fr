@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>Activer le BYOD avec Intune
 
@@ -75,14 +75,14 @@ Intune permet d’effectuer facilement les tâches suivantes :
 * [Livrer des applications du Store aux appareils gérés](apps-deploy.md)
 * Cibler des applications sur des appareils non gérés via le site web Portail d’entreprise
 
-Intune vous permet aussi de gérer et déployer les applications que vous avez achetées en volume sur l’App Store iOS et le Windows Store pour Entreprises. Vous pouvez ainsi réduire les coûts d’administration liés au suivi des applications achetées en volume.
+Intune vous permet aussi de gérer et de déployer les applications que vous avez achetées en volume sur l’App Store iOS et le Microsoft Store pour Entreprises. Vous pouvez ainsi réduire les coûts d’administration liés au suivi des applications achetées en volume.
 
 > [!TIP]
 > Vous pouvez [configurer l’authentification unique (SSO) avec Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). SSO permet aux utilisateurs de se connecter aux applications avec le nom d’utilisateur et le mot de passe de domaine qu’ils utilisent localement. Par ailleurs, vous pouvez [fournir un accès Internet aux applications web hébergées localement](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) à l’aide du Proxy d’application Azure Active Directory.
 
 -   [Gérer les applications achetées en volume pour appareils iOS](vpp-apps-ios.md). Vous achetez plusieurs licences d’applications iOS via le [Programme d’achat en volume (VPP) Apple pour les entreprises](http://www.apple.com/business/vpp/). Vous devez configurer un compte Apple VPP sur le site web Apple et charger le jeton Apple VPP sur Intune. Vous pouvez alors synchroniser vos informations d’achat en volume avec Intune et suivre votre utilisation des applications achetées en volume.
 
--   [Gérez les applications achetées sur le Windows Store pour Entreprises](windows-store-for-business.md). [Windows Store pour Entreprises](https://www.microsoft.com/business-store) est l’emplacement idéal pour trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Store à Intune, vous pouvez gérer les applications achetées en volume à partir du portail Intune.
+-   [Gérez les applications achetées sur le Microsoft Store pour Entreprises](windows-store-for-business.md). Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) est l’emplacement idéal pour trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Store à Intune, vous pouvez gérer les applications achetées en volume à partir du portail Intune.
 
 ## <a name="protect-company-data"></a>Protéger les données d’entreprise
 
@@ -105,10 +105,10 @@ Vous pouvez utiliser des [stratégies de protection des applications Intune](app
 
 Utilisez les [stratégies de protection des informations Windows](app-protection-policies-configure-windows-10.md) pour faire de même avec les appareils Windows 10 gérés. Ces stratégies fonctionnent sans interférer avec l’expérience de l’employé. Elles n’exigent pas de modifier votre environnement réseau ou d’autres applications.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Effacer les données d’entreprise tout en conservant les données personnelles intactes
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Supprimer les données d’entreprise tout en conservant les données personnelles intactes
 
-Dès qu’un appareil est devenu inutile au travail, qu’il est réaffecté ou simplement perdu, vous pouvez supprimer les données et applications d’entreprise de celui-ci. Pour ce faire, vous pouvez utiliser les fonctionnalités de réinitialisation sélective et de réinitialisation complète d’Intune. Vos utilisateurs peuvent aussi réinitialiser à distance leurs appareils personnels à partir du portail d’entreprise Intune si ces appareils sont inscrits dans Intune.
+Dès qu’un appareil est devenu inutile au travail, qu’il est réaffecté ou simplement perdu, vous pouvez supprimer les données et applications d’entreprise de celui-ci. Pour ce faire, vous pouvez utiliser les fonctionnalités Intune de suppression des données d’entreprise et de réinitialisation aux paramètres d’usine. Vos utilisateurs peuvent aussi réinitialiser à distance leurs appareils personnels à partir du Portail d’entreprise Intune si ces appareils sont inscrits dans Intune.
 
-Une [réinitialisation complète](devices-wipe.md) rétablit les paramètres d’usine de l’appareil et supprime les données et paramètres utilisateur. Une [réinitialisation sélective](devices-wipe.md#selective-wipe) supprime uniquement les données d’entreprise de l’appareil, mais garde intactes les données personnelles des utilisateurs.
+Une [réinitialisation aux paramètres d’usine](devices-wipe.md) rétablit les paramètres d’usine de l’appareil, supprime les données et les paramètres de l’utilisateur, et supprime l’appareil de la gestion Intune. [Supprimer les données d’entreprise](devices-wipe.md#remove-company-data) supprime uniquement les données d’entreprise de l’appareil, mais garde intactes les données personnelles des utilisateurs.
 
-Une fois l’opération lancée, l’appareil entame immédiatement le processus de réinitialisation sélective pour être extrait de la gestion. À l’issue du processus, toutes les données d’entreprise sont supprimées et le nom de l’appareil est retiré du portail Intune. Cela met fin au cycle de vie de gestion de l’appareil.
+Dès le lancement, l’appareil commence immédiatement le processus de réinitialisation. À l’issue du processus, toutes les données d’entreprise sont supprimées et le nom de l’appareil est retiré d’Intune. Cela met fin au cycle de vie de gestion de l’appareil.
