@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications du Windows Store à Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/01/2017
 
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
 4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
 5. Au-dessus de la liste des applications, choisissez **Ajouter**.
@@ -36,7 +36,7 @@ ms.lasthandoff: 07/01/2017
     - **Nom de l’application** : saisissez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
     - **Description de l’application :** saisissez la description de l’application. Ce libellé s'affichera dans le portail d'entreprise.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **URL de la boutique d’applications** : saisissez l’URL de la boutique d’applications que vous souhaitez créer.
+    - **URL de l’App Store** : entrez l’URL de l’App Store que vous souhaitez créer.
     - **Système d’exploitation minimal** : dans la liste, choisissez le système d’exploitation minimal sur lequel l’application peut être installée. Si vous affectez l’application à un appareil avec un système d’exploitation antérieur, elle ne sera pas installée.
     - **Catégorie** : (facultatif) sélectionnez une ou plusieurs des catégories d’applications intégrées ou que vous avez créées. Cela permettra aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
     - **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
@@ -45,18 +45,18 @@ ms.lasthandoff: 07/01/2017
     - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
     - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
     - **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-    - **Télécharger icône** : téléchargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
+    - **Charger l’icône** : chargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 8. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
 
 L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>Affecter manuellement l’application Portail d’entreprise Windows 10
-Les utilisateurs finaux peuvent installer l’application Portail d’entreprise à partir du Windows Store pour gérer des appareils et installer des applications. Si, toutefois, votre entreprise vous impose d’affecter l’application Portail d’entreprise, vous pouvez affecter manuellement l’application Portail d’entreprise Windows 10 directement à partir d’Intune, même si vous n’avez pas intégré Intune à Windows Store pour Entreprises.
+Les utilisateurs finaux peuvent installer l’application Portail d’entreprise à partir du Microsoft Store pour gérer des appareils et installer des applications. Si, toutefois, votre entreprise vous impose d’affecter l’application Portail d’entreprise, vous pouvez affecter manuellement l’application Portail d’entreprise Windows 10 directement à partir d’Intune, même si vous n’avez pas intégré Intune à Microsoft Store pour Entreprises.
 
  > [!NOTE]
  > Cette option nécessite l’affectation de mises à jour manuelles chaque fois qu’une mise à jour d’application est publiée.
 
-1. Connectez-vous à votre compte dans [Windows Store pour Entreprises](https://www.microsoft.com/business-store) et acquérez la version avec **licence hors connexion** de l’application Portail d’entreprise.  
+1. Connectez-vous à votre compte dans le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) et acquérez la version avec **licence hors connexion** de l’application Portail d’entreprise.  
 2. Une fois que l’application a été acquise, sélectionnez l’application dans la page **Inventorier**.  
 3. Sélectionnez **Tous les appareils Windows 10** comme **plateforme**, puis l’**architecture** appropriée et procédez au téléchargement. Un fichier de licence d’application n’est pas nécessaire pour cette application.
 ![Image de tous les appareils Windows 10 et des détails du package d’architecture X86 à télécharger](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Si l’application Portail d’entreprise Windows 10 est signée et affectée d
 Voici comment signer et affecter l’application de cette façon :
 
 1. Téléchargez le script de signature de l’application Portail d’entreprise Windows 10 Microsoft Intune à partir de la page [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Ce script nécessite que le SDK Windows pour Windows 10 soit installé sur l’ordinateur hôte. Pour télécharger le SDK Windows pour Windows 10, visitez la page [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Téléchargez l’application Portail d’entreprise Windows 10 à partir du Windows Store pour Entreprises, comme indiqué ci-dessus.  
+2. Téléchargez l’application Portail d’entreprise Windows 10 à partir du Microsoft Store pour Entreprises, comme indiqué ci-dessus.  
 3. Exécutez le script avec les paramètres d’entrée détaillés dans l’en-tête de script pour signer l’application Portail d’entreprise Windows 10 (extraite ci-dessous). Les dépendances n’ont pas besoin d’être transmises au script. Elles sont uniquement requises lorsque l’application est en cours de téléchargement vers la console d’administration Intune.
 
 |Paramètre | Description|

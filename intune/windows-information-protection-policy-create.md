@@ -15,17 +15,17 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-À compter d’Intune version 1704, vous pouvez utiliser des stratégies de protection d’application avec Windows 10 dans la gestion des applications mobiles (MAM) sans le scénario d’inscription.
+À compter de la version 1704 d’Intune, vous pouvez utiliser des stratégies de protection d’application avec Windows 10 pour protéger les applications sans inscrire les appareils.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -39,17 +39,15 @@ Examinons quelques concepts lors de l’ajout d’une stratégie WIP.
 
 ### <a name="types-of-apps"></a>Types d’applications
 
--   **Applications recommandées :** liste préremplie d’applications (principalement Microsoft Office) que les administrateurs peuvent facilement importer dans la stratégie.
+-   **Applications recommandées** : liste préremplie d’applications (principalement Microsoft Office) que vous pouvez facilement importer dans la stratégie. <!---I really don't know what you mean by "easily import into policy"--->
 
--   **Applications du Store :** l’administrateur peut ajouter n’importe quelle application du Windows Store à la stratégie.
+-   **Applications du Store** : vous pouvez ajouter n’importe quelle application du Windows Store à la stratégie.
 
--   **Applications de bureau Windows :** l’administrateur peut ajouter n’importe quelle application de bureau Windows traditionnelle à la stratégie (par exemple exe, dll, etc.)
+-   **Applications de bureau Windows** : vous pouvez ajouter n’importe quelle application de bureau Windows traditionnelle à la stratégie (.exe, .dll, etc.).
 
-## <a name="pre-requisites"></a>Conditions préalables
+## <a name="pre-requisites"></a>Prérequis
 
-Vous devez configurer le fournisseur MAM avant de pouvoir créer une stratégie de protection d’application WIP.
-
--   En savoir plus sur la façon de [configurer le fournisseur MAM avec Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+Vous devez configurer le fournisseur MAM avant de pouvoir créer une stratégie de protection d’application WIP. En savoir plus sur la façon de [configurer le fournisseur MAM avec Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Les éléments suivants sont également requis :
 
@@ -58,12 +56,13 @@ Les éléments suivants sont également requis :
 
 > [!IMPORTANT]
 > WIP ne prend pas en charge les identités multiples, une seule identité gérée peut exister à la fois.
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>Pour ajouter une stratégie WIP
 
-Une fois que vous avez configuré Intune dans votre organisation, vous pouvez créer une stratégie propre à WIP via le [portail Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+Une fois que vous avez configuré Intune dans votre organisation, vous pouvez créer une stratégie propre à WIP via le [portail Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  Allez dans le **Tableau de bord Gestion des applications mobiles Intune**, choisissez **Tous les paramètres**, puis **Stratégie d’application**.
+1.  Accédez au **Tableau de bord Gestion des applications mobiles Intune**, choisissez **Tous les paramètres** > **Stratégie d’application**.
 
 2.  Dans le panneau **Stratégie d’application**, choisissez **Ajouter une stratégie**, puis entrez les valeurs suivantes :
 
@@ -85,7 +84,7 @@ Une fois que vous avez configuré Intune dans votre organisation, vous pouvez cr
 
 3.  Sélectionnez chaque application devant accéder à vos données d’entreprise, puis choisissez **OK**. Le panneau **Applications autorisées** est mis à jour et vous montre les applications sélectionnées.
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Ajout d’une application du Windows Store à votre liste d’applications autorisées
+## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Ajouter une application du Store à votre liste d’applications autorisées
 
 **Pour ajouter une application du Windows Store**
 
@@ -105,7 +104,7 @@ Une fois que vous avez configuré Intune dans votre organisation, vous pouvez cr
 > [!NOTE]
 > Pour ajouter plusieurs applications du Windows Store en même temps, vous pouvez cliquer sur le menu **(...)**  à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Ajout d’une application de bureau à votre liste d’applications autorisées
+## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Ajouter une application de bureau à votre liste d’applications autorisées
 
 **Pour ajouter une application de bureau**
 
@@ -118,67 +117,66 @@ Une fois que vous avez configuré Intune dans votre organisation, vous pouvez cr
 4.  Une fois que vous avez entré les informations dans les champs, choisissez **OK** pour ajouter l’application à votre liste **Applications autorisées**.
 
 > [!NOTE]
-> Pour ajouter plusieurs **applications de bureau** en même temps, vous pouvez cliquer sur le menu **(...)** à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
+> Pour ajouter plusieurs **applications de bureau** en même temps, vous pouvez cliquer sur le menu **(...)** à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
 
-## <a name="windows-information-protection-wip-learning"></a>Windows Information Protection (WIP) Learning
-
+## <a name="wip-learning"></a>WIP Learning
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 Après avoir ajouté les applications que vous souhaitez protéger avec WIP, vous devez appliquer un mode de protection à l’aide de **WIP Learning**.
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-Windows Information Protection (WIP) Learning est un rapport qui permet aux administrateurs de surveiller leurs applications WIP inconnues. Les applications inconnues sont celles non déployées par le département informatique de votre organisation. L’administrateur peut exporter ces applications à partir du rapport et les ajouter aux stratégies WIP pour éviter une perturbation de la productivité avant l’application de WIP en mode « Masquer les substitutions ».
+WIP Learning est un rapport qui vous permet de surveiller les applications inconnues de WIP. Les applications inconnues sont celles non déployées par le département informatique de votre organisation. Vous pouvez exporter ces applications à partir du rapport et les ajouter à vos stratégies WIP pour éviter une perturbation de la productivité avant l’application de WIP en mode « Masquer les substitutions ».
 
 Nous vous recommandons de commencer avec **Silencieux** ou **Autoriser les substitutions** lors de la vérification avec un petit groupe que vous avez les bonnes applications dans votre liste d’applications autorisées. Une fois cela fait, vous pouvez passer sur votre stratégie d’application finale, **Masquer les substitutions**.
 
-#### <a name="what-the-protection-modes-are"></a>Que sont les modes de protection ?
+### <a name="what-are-the-protection-modes"></a>Quels sont les modes de protection ?
 
-- **Masquer les substitutions :**
-    - WIP recherche des pratiques de partage de données inappropriées et empêche l’utilisateur de terminer l’action.
-    - Cela peut inclure le partage d’informations entre des applications non protégées pas votre entreprise, ou le partage de données d’entreprise entre des personnes et appareils en dehors de votre organisation.
-<br></br>
+#### <a name="hide-overrides"></a>Masquer le choix d’ignorer les avertissements
+WIP recherche des pratiques de partage de données inappropriées et empêche l’utilisateur de terminer l’action. Cela peut inclure le partage d’informations entre des applications non protégées pas votre entreprise, ou le partage de données d’entreprise entre des personnes et appareils en dehors de votre organisation.
 
-- **Autoriser les substitutions :**
-    - WIP recherche les partages de données inappropriés, et avertit les utilisateurs s’ils font quelque chose de potentiellement dangereux.
-    - Toutefois, ce mode permet à l’utilisateur de remplacer la stratégie et de partager les données. L’action est alors consignée dans votre journal d’audit.
-<br></br>
-- **Silencieux :**
-    - WIP s’exécute en mode silencieux, en consignant les partages de données inappropriés, sans bloquer l’utilisateur avec les invites qui s’afficheraient pour le mode Autoriser la substitution.
-    - Les actions non autorisées d’applications, comme les tentatives d’accès inappropriées à une ressource réseau ou à des données protégées par WIP sont toujours arrêtées.
-<br></br>
-- **Désactivé (Non recommandé) :**
-    - WIP est désactivé et ne permet pas de protéger ou vérifier vos données.
-    - Après avoir désactivé WIP, une tentative est effectuée pour déchiffrer les fichiers marqués par WIP sur les disques connectés localement. N’oubliez pas que vos informations de déchiffrement et de stratégie précédentes ne sont pas réappliquées automatiquement si vous réactivez la protection WIP.
+#### <a name="allow-overrides"></a>Autoriser l’utilisateur à ignorer les avertissements
+WIP recherche les partages de données inappropriés, et avertit les utilisateurs s’ils font quelque chose de potentiellement dangereux. Toutefois, ce mode permet à l’utilisateur de remplacer la stratégie et de partager les données. L’action est alors consignée dans votre journal d’audit.
 
-### <a name="to-add-a-protection-mode"></a>Pour ajouter un mode de protection
+#### <a name="silent"></a>Silencieux
+WIP s’exécute en mode silencieux, en consignant les partages de données inappropriés, sans bloquer l’utilisateur avec les invites qui s’affichent dans le mode Autoriser l’utilisateur à ignorer les avertissements. Les actions non autorisées d’applications, comme les tentatives d’accès inappropriées à une ressource réseau ou à des données protégées par WIP sont toujours arrêtées.
 
-1.  À partir du panneau **Stratégie d’application**, cliquez sur le nom de votre stratégie, puis cliquez sur **Paramètres requis** à partir du panneau **Ajouter une stratégie**.
+#### <a name="off-not-recommended"></a>Désactivé (non recommandé)
+WIP est désactivé et ne permet pas de protéger ou vérifier vos données.
+
+Après avoir désactivé WIP, une tentative est effectuée pour déchiffrer les fichiers marqués par WIP sur les disques connectés localement. N’oubliez pas que vos informations de déchiffrement et de stratégie précédentes ne sont pas réappliquées automatiquement si vous réactivez la protection WIP.
+
+### <a name="add-a-protection-mode"></a>Ajouter un mode de protection
+
+1.  Dans le panneau **Stratégie d’application**, choisissez le nom de votre stratégie, puis **Paramètres obligatoires**.
 
     ![Capture d’écran du mode d’apprentissage](./media/learning-mode-sc1.png)
 
 1.  Choisissez **Enregistrer**.
 
-### <a name="to-use-wip-learning"></a>Pour utiliser WIP Learning
+### <a name="use-wip-learning"></a>Utiliser WIP Learning
 
-1. Accédez au tableau de bord Azure.
+1. Accédez au tableau de bord Azure. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. Choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
 
 3. Choisissez **Intune**, le **tableau de bord Intune** s’affiche, sélectionnez alors **Applications mobiles**.
 
-4. Choisissez **WIP Learning** sous la section **Surveiller**. Les applications inconnues consignées par WIP Learning s’affichent.
+4. Choisissez **WIP Learning** sous **Surveiller**. Les applications inconnues consignées par WIP Learning s’affichent.
 
 > [!IMPORTANT]
 > Une fois que les applications s’affichent dans le rapport de journalisation WIP Learning, vous pouvez ajouter à vos stratégies de protection d’application.
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>Pour déployer votre stratégie de protection d’application WIP
+## <a name="deploy-your-wip-app-protection-policy"></a>Déployer une stratégie de protection d’application WIP
 
 > [!IMPORTANT]
-> Cela s’applique à WIP avec la gestion des applications mobiles (MAM) sans le scénario d’inscription.
+> Cela s’applique à WIP sans inscription d’appareils.
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 Une fois que vous avez créé votre stratégie de protection d’application WIP, vous devez la déployer dans votre organisation à l’aide de MAM.
 
-1.  Dans le panneau **Stratégie d’application**, choisissez votre nouvelle stratégie de protection d’application, puis **Groupes d’utilisateurs** et **Ajouter un groupe d’utilisateurs**.
+1.  Dans le panneau **Stratégie d’application**, choisissez votre nouvelle stratégie de protection d’application, puis **Groupes d’utilisateurs** > **Ajouter un groupe d’utilisateurs**.
 
     Une liste de groupes d’utilisateurs, composée de tous les groupes de sécurité figurant dans Azure Active Directory, s’ouvre dans le panneau **Ajouter un groupe d’utilisateurs**.
 
-1.  Choisissez le groupe auquel vous souhaitez appliquer votre stratégie, puis cliquez sur **Sélectionner** pour déployer la stratégie.
+1.  Choisissez le groupe auquel vous souhaitez appliquer votre stratégie, puis **Sélectionner** pour déployer la stratégie.

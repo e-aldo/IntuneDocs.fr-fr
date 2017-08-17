@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accès conditionnel basé sur l’application avec Intune
 
@@ -26,18 +26,20 @@ ms.lasthandoff: 07/01/2017
 
 Les [stratégies de protection des applications Intune](app-protection-policy.md) vous aident à protéger vos données d’entreprise sur les appareils qui sont inscrits dans Intune. Vous pouvez également utiliser des stratégies de protection des applications sur les appareils détenus par l’employé qui ne sont pas inscrits pour la gestion dans Intune. Dans ce cas, même si votre entreprise ne gère pas l’appareil, vous devez toujours vous assurer que les données et ressources de votre entreprise sont protégées.
 
-L’accès conditionnel basé sur l’application et la gestion d’applications mobiles ajoute une couche de sécurité en vous assurant que seules les applications mobiles qui prennent en charge les stratégies de protection des applications Intune peuvent accéder aux services Exchange en ligne et autres services d’Office 365.
+L’accès conditionnel basé sur l’application et la gestion d’applications mobiles ajoutent une couche de sécurité en vous assurant que seules les applications mobiles qui prennent en charge les stratégies de protection des applications Intune peuvent accéder aux services Exchange en ligne et autres services d’Office 365.
 
 > [!NOTE]
 > Une application gérée est une application à laquelle des stratégies de protection d’application sont appliquées et pouvant être gérée par Intune.
 
-Vous pouvez bloquer les applications de messagerie intégrées sur iOS et Android lorsque vous autorisez seulement l’application Microsoft Outlook à accéder à Exchange Online. En outre, vous pouvez bloquer les applications qui n’ont pas de stratégies de protection des applications Intune appliquées lors de l’accès à SharePoint Online.
+Vous pouvez bloquer les applications de messagerie intégrées sur iOS et Android quand vous autorisez seulement l’application Microsoft Outlook à accéder à Exchange Online. En outre, vous pouvez bloquer les applications qui n’ont pas de stratégies de protection des applications Intune appliquées lors de l’accès à SharePoint Online.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Avant de créer une stratégie d’accès conditionnel basé sur l’application, vous devez avoir :
 
-- **Un abonnement Enterprise Mobility + Security ou Azure Active Directory Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD.
-    - Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
+- **Enterprise Mobility + Security (EMS)** ou un **abonnement Azure Active Directory (AD) Premium**
+- Les utilisateurs doivent avoir une licence pour EMS ou Azure AD
+
+Pour plus d’informations, consultez [Tarifs d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou [Tarifs d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="supported-apps"></a>Applications prises en charge
 
@@ -53,24 +55,22 @@ Avant de créer une stratégie d’accès conditionnel basé sur l’application
 <br></br>
 - **Microsoft Teams**
 
-    > [!NOTE] 
-    > L’accès conditionnel basé sur l’application [prend également en charge les applications métier](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), mais ces applications doivent utiliser [l’authentification moderne Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
+L’accès conditionnel basé sur l’application [prend également en charge les applications métier](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), mais ces dernières doivent utiliser [l’authentification moderne Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
 
 ## <a name="how-app-based-conditional-access-works"></a>Fonctionnement de l’accès conditionnel basé sur l’application
 
-Dans cet exemple, l’administrateur a des stratégies de protection des applications appliquées à l’application Outlook suivies d’une règle d’accès conditionnel qui ajoute l’application Outlook à une liste approuvée d’applications qui peuvent être utilisées lors de l’accès à la messagerie de l’entreprise.
+Dans cet exemple, l’administrateur a appliqué des stratégies de protection des applications à l’application Outlook suivies d’une règle d’accès conditionnel qui ajoute l’application Outlook à une liste approuvée d’applications qui peuvent être utilisées lors de l’accès aux e-mails d’entreprise.
 
-> [!NOTE] 
+> [!NOTE]
 > La structure de l’organigramme ci-dessous peut être utilisée pour d’autres applications gérées.
 
-![Autorité de certification basée sur l’application avec organigramme Intune](./media/ca-intune-common-ways-3.png)
+![Organigramme de l’accès conditionnel basé sur l’application avec Intune](./media/ca-intune-common-ways-3.png)
 
 1.  L’utilisateur tente de s’authentifier sur Azure AD à partir de l’application Outlook.
 
 2.  L’utilisateur est redirigé vers l’App Store pour installer une application broker lors de sa première tentative d’authentification. L’application broker peut être Microsoft Authenticator pour iOS, ou le portail d’entreprise Microsoft pour les appareils Android.
 
-    > [!NOTE]
-    > Dans ce scénario, si des utilisateurs tentent d’utiliser une application de messagerie native, ils sont redirigés vers l’App Store pour installer l’application Outlook.
+ Si des utilisateurs tentent d’utiliser une application de messagerie native, ils sont redirigés vers l’App Store pour installer l’application Outlook.
 
 3.  L’application broker est installée sur l’appareil.
 
@@ -80,9 +80,9 @@ Dans cet exemple, l’administrateur a des stratégies de protection des applica
 
 6.  L’application broker envoie l’ID de client d’application à Azure AD dans le cadre du processus d’authentification utilisateur pour vérifier sa présence dans liste approuvée par stratégie.
 
-7.  Azure AD permet à l’utilisateur de s’authentifier et d’utiliser l’application en fonction de la liste approuvée par stratégie. Si l’application n’est pas dans la liste approuvée par stratégie, AD Azure refuse l’accès à l’application.
+7.  Azure AD permet à l’utilisateur de s’authentifier et d’utiliser l’application en fonction de la liste approuvée par stratégie. Si l’application n’est pas dans la liste, AD Azure refuse l’accès à l’application.
 
-8.  L’application Outlook communique avec le service cloud d’Outlook pour initialiser la communication avec Exchange Online.
+8.  L’application Outlook communique avec le service cloud d’Outlook pour établir la communication avec Exchange Online.
 
 9.  Le service cloud d’Outlook communique avec Azure AD pour récupérer le jeton d’accès du service Exchange Online pour l’utilisateur.
 

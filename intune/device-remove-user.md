@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ed66c47215a9e1c1ab28f2e30a3663d0287869d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: 00f5898d0f2cc167a66026dd108d6bbd54c39cec
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>Supprimer un utilisateur d’un appareil iOS partagé avec Intune
 
@@ -27,8 +27,18 @@ ms.lasthandoff: 07/14/2017
 
 L’action **Supprimer l’utilisateur** supprime un utilisateur choisi dans le cache local sur un appareil iPad partagé et configuré pour gérer l’application iOS Classroom avec un [profil d’éducation iOS](education-settings-configure-ios.md). 
 
+## <a name="supported-platforms"></a>Plateformes prises en charge
+
+- Windows - Non prise en charge
+- Windows Phone - Non prise en charge
+- iOS - Prise en charge d’iOS 9.3 et ultérieur (appareils iPad partagés uniquement)
+- macOS - Non prise en charge
+- Android - Non prise en charge
+
+## <a name="how-to-remove-a-user"></a>Comment supprimer un utilisateur
+
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
 4. Dans le panneau **Appareils**, choisissez **Tous les appareils**.
 5. Dans la liste des appareils que vous gérez, choisissez un appareil iOS.

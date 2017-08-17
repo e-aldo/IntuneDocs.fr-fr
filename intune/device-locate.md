@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80aa0e5afd1f8862b181d455ff6b545e462f90c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c6035ce5119b618ed63cf817082dd3eedc6eda7
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Localiser des appareils iOS perdus ou volés avec Intune
 
@@ -27,8 +27,18 @@ ms.lasthandoff: 07/01/2017
 
 L’action d’appareil **Localiser l’appareil** affiche l’emplacement d’un appareil iOS perdu ou volé sur une carte. L’appareil doit être un appareil iOS d’entreprise, inscrit via le programme DEP, qui est en mode supervisé. Avant que vous puissiez utiliser cette action, l’appareil doit être configuré en [mode Perdu](/intune-azure/manage-devices/lost-mode.md).
 
+## <a name="supported-platforms"></a>Plateformes prises en charge
+
+- Windows - Non prise en charge
+- Windows Phone - Non prise en charge
+- iOS - Prise en charge sur iOS 9.3 et ultérieur (mode Perdu), en mode supervisé et appartenant à l’entreprise
+- macOS - Non prise en charge
+- Android - Non prise en charge
+
+## <a name="how-to-locate-a-lost-or-stolen-device"></a>Comment localiser un appareil perdu ou volé
+
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
 4. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
 5. Dans la liste des appareils que vous gérez, choisissez un appareil iOS, puis choisissez l’action à distance d’appareil **Localiser l’appareil**.
@@ -44,3 +54,8 @@ L’action d’appareil **Localiser l’appareil** affiche l’emplacement d’u
 - Les données sont stockées pendant 24 heures avant d’être supprimées. Vous ne pouvez pas supprimer manuellement les données d’emplacement.
 - Les données d’emplacement sont chiffrées aussi bien pendant leur stockage que leur transmission.
 - Lorsque vous configurez le mode Perdu, nous vous recommandons de rédiger le message qui s’affiche sur l’écran de verrouillage de façon à ce qu’il inclue des informations qui permettent à quelqu’un de rendre l’appareil.
+
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Pour connaître l’état de l’action que vous venez d’effectuer, allez dans le panneau **Appareils et groupes**, et choisissez **Actions d’appareil**.
