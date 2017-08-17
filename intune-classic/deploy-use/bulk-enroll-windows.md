@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dc37cfb782e1d1e1e076d90fef160c2ce910cda4
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscription en bloc des appareils Windows
 
@@ -36,7 +36,7 @@ L’inscription en bloc des appareils Windows requiert les éléments suivants 
 
 ## <a name="create-a-provisioning-package"></a>Créer un package d’approvisionnement
 
-1. Téléchargez l’application [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) à partir du Windows Store.
+1. Téléchargez l’application [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) à partir du Microsoft Store.
 ![Illustration montrant les captures d’écran de l’application Windows Configuration Designer du Windows Store avec une description](../media/bulk-enroll-store.png)
 
 2. Ouvrez l’application **Windows Configuration Designer** et sélectionnez **Provision desktop devices** (Approvisionner des appareils de bureau).
@@ -61,7 +61,7 @@ L’inscription en bloc des appareils Windows requiert les éléments suivants 
 
 8.  Cliquez sur **Suivant** une fois le **jeton en bloc** obtenu.
 
-9. Si vous le souhaitez, vous pouvez **ajouter des applications** et **ajouter des certificats**. Ces applications et certificats sont approvisionnés sur le périphérique.
+9. Si vous le souhaitez, vous pouvez **ajouter des applications** et **ajouter des certificats**. Ces applications et certificats sont approvisionnés sur l’appareil.
 
 10. Si vous le souhaitez, vous pouvez protéger votre package d’approvisionnement par un mot de passe.  Cliquez sur **Créer**.
 ![Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](../media/bulk-enroll-create.png)
@@ -74,7 +74,7 @@ L’inscription en bloc des appareils Windows requiert les éléments suivants 
  - Copiez le package d’approvisionnement sur une clé USB, insérez la clé USB dans l’appareil que vous voulez inscrire en bloc, puis appliquez-le lors de l’installation initiale
  - Copiez le package d’approvisionnement dans un dossier réseau et insérez-le dans l’appareil que vous voulez inscrire en bloc après l’installation initiale
 
- Pour obtenir des instructions détaillées sur l’application d’un package d’approvisionnement, consultez la rubrique [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) (Appliquer un package d’approvisionnement).
+ Pour obtenir des instructions détaillées sur l’application d’un package d’approvisionnement, consultez [Appliquer un package d’approvisionnement](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
 3. Après avoir appliqué le package, l’appareil redémarrera automatiquement au bout de 1 minute.
  ![Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](../media/bulk-enroll-add.png)

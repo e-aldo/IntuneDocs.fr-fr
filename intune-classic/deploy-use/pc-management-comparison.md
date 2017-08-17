@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37c4c3a1b51479b1a6450cc66ab502d579804015
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: a09235d53b9340d853dba95299fc5788494ed165
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparer la gestion des PC Windows en tant qu’ordinateurs ou appareils mobiles
 
@@ -35,7 +35,7 @@ Les organisations peuvent utiliser Microsoft Intune pour gérer les PC Windows e
 |**Profils d’appareils**|Non disponible|Disponible <br>[Que sont les profils d’appareil Microsoft Intune ?](https://docs.microsoft.com/intune-azure/configure-devices/what-are-device-profiles)|
 |**Inscription sans agent**|Non disponible |Disponible<br>[Inscrire des appareils Windows](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices)|
 |**Gestion des mises à jour logicielles**| Mises à jour Windows et mises à jour des applications Microsoft<br>[Maintenir des PC Windows à jour avec les mises à jour logicielles](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)|Microsoft Store pour Entreprises pour les mises à jour des applications Windows 10 et Microsoft<br> [Configurer les paramètres Windows Update Entreprise](https://docs.microsoft.com/intune-azure/configure-devices/how-to-configure-windows-update-for-business) |
-|**Gestion des licences logicielles**|Disponible <br>[Gérer les contrats de licence des logiciels de PC Windows](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|Microsoft Store pour Entreprises (applications .appx uniquement)<br>[Gestion des applications achetées dans Windows Store pour Entreprises](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
+|**Gestion des licences logicielles**|Disponible <br>[Gérer les contrats de licence des logiciels de PC Windows](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|Microsoft Store pour Entreprises (applications .appx uniquement)<br>[Gérer les applications achetées sur le Microsoft Store pour Entreprises](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
 |**Inventaire**|Disponible <br>[Afficher l’inventaire logiciel et matériel pour les PC Windows](https://docs.microsoft.com/intune/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune)|Disponible <br>[Comment surveiller les informations d’applications](https://docs.microsoft.com/intune/apps-monitor)<br>[Qu’est-ce que la gestion des appareils](https://docs.microsoft.com/intune/device-management)|
 |**Stratégie de Pare-feu Windows**|Disponible <br>[Protéger les PC Windows à l’aide de stratégies de Pare-feu Windows](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |Non disponible|
 |**Protection contre les programmes malveillants**|Endpoint Protection<br>[Contribuer à la sécurisation des PC Windows avec Endpoint Protection](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Paramètres de Windows Defender](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|

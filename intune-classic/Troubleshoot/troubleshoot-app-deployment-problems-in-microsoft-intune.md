@@ -14,11 +14,11 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f935a454f077caf096c43c892980a948dcd4c3a3
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Résoudre les problèmes de déploiement d’applications dans Microsoft Intune
 
@@ -36,9 +36,9 @@ Si vous rencontrez des problèmes de déploiement et de gestion des applications
 |0x80073CFB|Le package fourni est déjà installé, et la réinstallation du package est bloquée|Cette erreur peut s'afficher si vous installez un package qui n'est pas identique au package déjà installé. Confirmez que la signature numérique fait également partie du package. Lorsqu'un package est reconstruit ou resigné, ce package n'est plus identique au niveau des bits au package déjà installé. Deux options possibles s'offrent à vous pour corriger cette erreur :<br /><br />-   incrémenter le numéro de version de l’application, puis reconstruire et signer à nouveau le package ;<br />-   supprimer l’ancien package pour chaque utilisateur sur le système avant d’installer le nouveau package.|
 |0x87D1041C|Installation de l’application réussie mais l’application n’est pas détectée.|- L’application a été déployée correctement par Intune, puis désinstallée par la suite (éventuellement par l’utilisateur final). Demandez à l’utilisateur de réinstaller l’application depuis le portail d’entreprise. Les applications obligatoires sont automatiquement réinstallées au prochain enregistrement de l’appareil.|
 
-## <a name="troubleshooting-apps-from-the-windows-store"></a>Résolution des problèmes des applications du Windows Store
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Résolution des problèmes liés aux applications du Microsoft Store
 
-Les informations de la rubrique [Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) vous aide à résoudre les problèmes courants que vous pouvez rencontrer lors de l’installation d’applications du Windows Store, en utilisant Intune ou par tout autre moyen.
+Les informations de la rubrique [Résolution des problèmes d’empaquetage, de déploiement et de requête des applications du Microsoft Store](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) vous aident à résoudre les problèmes courants que vous pouvez rencontrer durant l’installation d’applications du Microsoft Store, en utilisant Intune ou par tout autre moyen.
 
 ## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Résolution des problèmes de déploiement d’applications sur des PC gérés par le client logiciel Intune
 Pour vous aider à résoudre les problèmes de déploiement d’applications sur les PC gérés par le client logiciel Intune, vous pouvez consultez les deux fichiers journaux suivants :

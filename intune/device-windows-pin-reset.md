@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Réinitialiser le code secret sur les appareils Windows intégrés au service de réinitialisation de code PIN Microsoft avec Intune
 
 La fonctionnalité de réinitialisation du code secret pour les appareils Windows s’intègre au service de réinitialisation de code PIN Microsoft pour vous permettre de générer un nouveau code secret pour les appareils qui exécutent Windows 10 Mobile. Les appareils doivent exécuter Windows 10 Creators Update ou une version ultérieure.
+
+## <a name="supported-platforms"></a>Plateformes prises en charge
+
+- Windows - Prise en charge de Windows 10 Creators Update et ultérieur (joint à Azure AD)
+- Windows Phone - Non prise en charge
+- iOS - Non prise en charge
+- macOS - Non prise en charge
+- Android - Non prise en charge
 
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -40,18 +48,19 @@ Avant de pouvoir réinitialiser à distance le code secret sur les appareils Win
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurer les appareils Windows pour utiliser la réinitialisation de code PIN
 
-Pour configurer la réinitialisation de code PIN sur les appareils Windows que vous gérez, utilisez une [stratégie d’appareil personnalisée Windows 10 Intune](custom-settings-windows-10.md) pour activer la fonctionnalité. Configurez la stratégie à l’aide des fournisseurs de services de configuration de stratégie Windows suivants :
+Pour configurer la réinitialisation de code PIN sur les appareils Windows que vous gérez, utilisez une [stratégie d’appareil personnalisée Windows 10 Intune](custom-settings-windows-10.md) pour activer la fonctionnalité. Configurez la stratégie à l’aide du fournisseur de services de configuration de stratégie Windows suivant :
 
 
-- **Pour les utilisateurs** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **Pour les appareils** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **Pour les appareils** - **./Device/Vendor/MSFT/PassportForWork/*ID_locataire*/Policies/EnablePinRecovery**
 
-Les valeurs de ces fournisseurs de services doivent toutes deux être **True**.
+*ID_locataire* fait référence à l’ID de votre annuaire Azure Active Directory que vous pouvez obtenir dans la page **Propriétés** d’Azure Active Directory.
+
+Affectez à ce fournisseur de services de configuration la valeur **True**.
 
 ## <a name="steps-to-reset-the-passcode"></a>Étapes pour réinitialiser le code secret
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
 4. Dans le panneau **Appareils**, choisissez **Gérer** > **Tous les appareils**.
 5. Sélectionnez l’appareil pour lequel vous souhaitez réinitialiser le code secret puis, dans le panneau Propriétés de l’appareil, choisissez **Nouveau code secret**.

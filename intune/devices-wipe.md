@@ -1,12 +1,12 @@
 ---
-title: "Réinitialisation complète ou sélective sur des appareils à l’aide d’Intune"
+title: "Utiliser la réinitialisation aux paramètres d’usine ou la suppression des données d’entreprise sur des appareils à l’aide d’Intune"
 titleSuffix: Intune on Azure
-description: "Apprenez à effectuer une réinitialisation sélective de données d’entreprise sur un appareil ou effectuer une réinitialisation complète pour réinitialiser l’appareil aux paramètres d’usine."
+description: "Découvrez comment supprimer les données d’entreprise d’un appareil ou le réinitialiser aux paramètres d’usine."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,64 +14,40 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="use-full-or-selective-wipe"></a>Utiliser la réinitialisation sélective ou complète
+# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Vous pouvez réinitialiser les applications et les données à partir d’appareils gérés par Intune qui ne sont plus nécessaires, qui ont été réaffectés ou ont disparu. Pour ce faire, Intune propose des fonctionnalités de réinitialisation sélective et de réinitialisation complète. Les utilisateurs peuvent également émettre une commande de réinitialisation d’appareil à distance à partir de l’application Portail d’entreprise Intune sur les appareils privés inscrits dans Intune.
+Vous pouvez supprimer d’Intune les appareils dont vous n’avez plus besoin, qui ont été réaffectés ou qui ont disparu. Pour cela, vous pouvez émettre une commande de **suppression des données d’entreprise** ou de **réinitialisation aux paramètres d’usine**. Les utilisateurs peuvent également émettre une commande à distance à partir de l’application Portail d’entreprise Intune sur les appareils personnels inscrits dans Intune.
 
-  > [!NOTE]
-  > Cette rubrique concerne uniquement la réinitialisation d’appareils gérés à l’aide de la gestion des appareils mobiles Intune. Vous pouvez aussi utiliser le [portail Azure](https://portal.azure.com) pour [réinitialiser les données d’entreprise des applications](https://docs.microsoft.com/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune). Vous pouvez également [mettre hors service des ordinateurs gérés à l’aide du logiciel client Intune](https://docs.microsoft.com/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune).
+> [!NOTE]
+> Avant de supprimer un utilisateur d’Azure Active Directory, émettez une commande de **réinitialisation aux paramètres d’usine** ou de **suppression des données d’entreprise** à tous les appareils associés à cet utilisateur. Si vous supprimez des utilisateurs avec des appareils gérés d’Azure Active Directory, Intune ne peut plus émettre de commande de réinitialisation aux paramètres d’usine ou de suppression des données d’entreprise à ces appareils.
 
-## <a name="full-wipe"></a>réinitialisation complète
+## <a name="factory-reset"></a>Réinitialisation des paramètres d’usine
 
-**Une réinitialisation complète** rétablit les paramètres d’usine d’un appareil et supprime l’ensemble des données et des paramètres de l’entreprise et de l’utilisateur. L’appareil est supprimé d’Intune. La réinitialisation complète est utile pour réinitialiser un appareil avant de le transmettre à un nouvel utilisateur ou dans les cas où l’appareil a été perdu ou volé.  **Faites attention lors de la sélection de la réinitialisation complète. Les données sur l’appareil ne peuvent pas être récupérées**.
+La commande de **réinitialisation aux paramètres d’usine** rétablit les paramètres d’usine d’un appareil et supprime l’ensemble des données et des paramètres de l’entreprise et de l’utilisateur. L’appareil n’est plus géré par Intune. La réinitialisation aux paramètres d’usine est utile pour réinitialiser un appareil avant de le transmettre à un nouvel utilisateur ou dans les cas où l’appareil a été perdu ou volé. Faites attention lors de la sélection de la réinitialisation aux paramètres d’usine. Les données sur l’appareil ne peuvent pas être récupérées.
 
+### <a name="to-factory-reset-a-device"></a>Pour réinitialiser un appareil aux paramètres d’usine
 
-> [!Warning]
-> Les appareils Windows 10 RTM (antérieurs à la version 1511 de Windows 10) ayant moins de 4 Go de RAM risquent de devenir inaccessibles en cas de réinitialisation. Pour accéder à un appareil Windows 10 qui ne répond plus, vous pouvez le démarrer à partir d’un lecteur USB.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
+4. Cliquez sur le nom de l’appareil à réinitialiser aux paramètres d’usine.
+5. Dans le panneau présentant le nom de l’appareil, choisissez **Réinitialisation aux paramètres d’usine**, puis **Oui** pour confirmer.
 
+Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation aux paramètres d’usine prend moins de 15 minutes, quel que soit le type de l’appareil.
 
-**Pour effectuer une réinitialisation complète (réinitialisation aux paramètres d’usine) d’un appareil**:
+## <a name="remove-company-data"></a>Supprimer les données d’entreprise
 
-1.  Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
+La commande de **suppression des données d’entreprise** supprime les paramètres, les profils de messagerie et les données de l’application gérée (le cas échéant) qui ont été affectés à l’aide d’Intune. La suppression des données d’entreprise conserve les données personnelles de l’utilisateur sur l’appareil. L’appareil n’est plus géré par Intune. Les tableaux suivants décrivent la nature des données supprimées et l’effet de cette opération sur les données qui restent sur l’appareil après la suppression des données d’entreprise.
 
-2.  Cliquez sur le nom de l’appareil à réinitialiser.
-
-3.  Dans le panneau présentant le nom de l’appareil, choisissez **Réinitialisation aux paramètres d’usine**, puis choisissez **Oui** pour confirmer la réinitialisation.
-
-Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation prend moins de 15 minutes, quel que soit le type de l’appareil.
-
-### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Pour supprimer des appareils dans le portail Azure Active Directory
-
-1.  Accédez à [http://aka.ms/accessaad](http://aka.ms/accessaad) ou choisissez **Administration** &gt; **Azure AD** dans [https://portal.office.com](https://portal.office.com).
-
-2.  Connectez-vous avec l’ID de votre organisation en utilisant le lien sur le côté gauche de la page.
-
-3.  Créez un abonnement Azure si vous n’en avez pas. Vous ne devriez pas avoir besoin de carte de crédit ni d’effectuer un paiement si vous disposez d’un compte payant (choisissez le lien d’abonnement **Enregistrer votre abonnement Azure Active Directory gratuit**).
-
-4.  Sélectionnez **Active Directory** , puis le nom de votre organisation.
-
-5.  Sélectionnez l’onglet **Utilisateurs** .
-
-6.  Sélectionnez l’utilisateur dont vous voulez supprimer les appareils.
-
-7.  Choisissez **Appareils**.
-
-8.  Supprimez les appareils appropriés, par exemple, ceux qui ne sont plus utilisés ou qui n’ont pas de définitions précises.
-
-
-## <a name="selective-wipe"></a>Réinitialisation sélective
-
-La **réinitialisation sélective** supprime les données d’entreprise, notamment les données de gestion des applications mobiles (GAM) le cas échéant, les paramètres et les profils de messagerie d’un appareil. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil. L’appareil est supprimé d’Intune. Les tableaux suivants décrivent la nature des données supprimées et l’effet de cette opération sur les données qui restent sur l’appareil après une réinitialisation sélective. (Les tableaux sont organisés par plateforme.)
-
-**iOS**
+### <a name="ios"></a>iOS
 
 |Type de données|iOS|
 |-------------|-------|
@@ -82,10 +58,10 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Agent de gestion|Le profil de gestion est supprimé.|
 |Courrier électronique|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.|
-|Disjonction d'Azure Active Directory (AAD)|L’enregistrement AAD est supprimé.|
-|Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
+|Disjonction d’Azure Active Directory (AD)|L’enregistrement AD est supprimé.|
+|Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
 
-**Android**
+### <a name="android"></a>Android
 
 |Type de données|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
@@ -100,30 +76,42 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
 |Courrier électronique|n/a (profils de messagerie non pris en charge par les appareils Android)|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.|
-|Disjonction d'Azure Active Directory (AAD)|Enregistrement AAD supprimé.|Enregistrement AAD supprimé.|
-|Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
+|Disjonction d’Azure Active Directory (AD)|Enregistrement AD supprimé.|Enregistrement AD supprimé.|
+|Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
 
-**Android for Work**
+### <a name="android-for-work"></a>Android for Work
 
-Une réinitialisation sélective sur un appareil Android for Work supprime l’ensemble des données, applications et paramètres dans le profil professionnel de l’appareil. L’appareil n’est plus géré par Intune. La réinitialisation complète n’est pas prise en charge pour Android for Work.
+La suppression des données d’entreprise d’un appareil Android for Work supprime l’ensemble des données, applications et paramètres dans le profil professionnel de l’appareil. L’appareil n’est plus géré par Intune. La réinitialisation aux paramètres d’usine n’est pas prise en charge pour Android for Work.
 
-**Windows**
+### <a name="windows"></a>Windows
 
 |Type de données|Windows 8.1 (MDM) et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Applications d’entreprise et données associées installées par Intune|Les fichiers protégés par le système EFS voient leur clé révoquée et l'utilisateur n'est pas en mesure d'ouvrir ces fichiers.|Ne supprime pas les applications de la société.|Les applications installées à l'origine via le portail d'entreprise sont désinstallées. Les données des applications de l'entreprise sont supprimées.|Les applications sont désinstallées et les clés de chargement de version test sont supprimées.|
+|Applications d’entreprise et données associées installées par Intune|Les fichiers protégés par le système EFS voient leur clé révoquée et l'utilisateur n'est pas en mesure d'ouvrir ces fichiers.|Ne supprime pas les applications de la société.|Les applications installées à l'origine via le portail d'entreprise sont désinstallées. Les données des applications de l'entreprise sont supprimées.|Les applications sont désinstallées et les clés de chargement de version test sont supprimées.<br>Pour Windows 10 version 1703 (Creator Update) et ultérieur, les applications Office 365 ProPlus ne sont pas supprimées.|
 |Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|Non pris en charge.|Supprimé.|
 |Paramètres de profil de certificat|Certificats supprimés et révoqués.|Certificats supprimés et révoqués.|Non pris en charge.|Certificats supprimés et révoqués.|
 |Courrier électronique|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non pris en charge.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
-|Disjonction d'Azure Active Directory (AAD)|Non.|Non.|Enregistrement AAD supprimé.|Non applicable. Windows 10 ne prend pas en charge la réinitialisation sélective pour appareils joints à Azure Active Directory.|
+|Disjonction d’Azure Active Directory (AD)|Non.|Non.|Enregistrement AD supprimé.|Non applicable. Windows 10 ne prend pas en charge la suppression des données d’entreprise pour les appareils joints à Azure Active Directory.|
 
-**Pour effectuer une réinitialisation sélective** :
+### <a name="to-remove-company-data"></a>Pour supprimer les données d’entreprise
 
-1.  Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
+4. Choisissez le nom de l’appareil dont vous souhaitez supprimer les données d’entreprise.
+5. Dans le panneau présentant le nom de l’appareil, choisissez **Supprimer les données d’entreprise**, puis **Oui** pour confirmer.
 
-2.  Cliquez sur le nom de l’appareil à réinitialiser.
+Si l’appareil est allumé et connecté, la propagation de la commande de suppression des données prend moins de 15 minutes, quel que soit le type de l’appareil.
 
-3.  Dans le panneau présentant le nom de l’appareil, choisissez **Supprimer donn...** (signifie Supprimer données de l’entreprise), puis **Oui** pour confirmer la réinitialisation.
+## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Supprimer des appareils du portail Azure Active Directory
 
-Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation prend moins de 15 minutes, quel que soit le type de l’appareil.
+En cas de problèmes de communication ou d’appareils manquants, vous devrez peut-être supprimer des appareils d’Azure Active Directory (AD). La commande de suppression ne supprime pas un appareil de la gestion, mais vous pouvez utiliser **Supprimer** pour supprimer de la console Azure les enregistrements de l’appareil inaccessibles et peu susceptibles de recommuniquer avec Azure.
+
+1.  Connectez-vous à [Azure Active Directory dans le portail Azure](http://aka.ms/accessaad) avec vos informations d’identification d’administrateur. Vous pouvez également vous connecter au [portail Office 365](https://portal.office.com) , puis choisir **Administrateur** &gt; **Azure AD** à l’aide du lien à gauche de la page.
+3.  Créez un abonnement Azure si vous n’en avez pas. Vous ne devriez pas avoir besoin de carte de crédit ni d’effectuer un paiement si vous disposez d’un compte payant (choisissez le lien d’abonnement **Enregistrer votre abonnement Azure Active Directory gratuit**).
+4.  Sélectionnez **Active Directory** , puis le nom de votre organisation.
+5.  Sélectionnez l’onglet **Utilisateurs** .
+6.  Sélectionnez l’utilisateur dont vous voulez supprimer les appareils.
+7.  Choisissez **Appareils**.
+8.  Supprimez les appareils appropriés, par exemple, ceux qui ne sont plus utilisés ou qui n’ont pas de définitions précises.

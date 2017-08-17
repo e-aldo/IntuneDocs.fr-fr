@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7bf3c9bce6d29467ad44f5c1adaa213616cc602e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dd28f96d7664d1b1daee9a0f99fa5800f05a30b5
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Votre application Portail d’entreprise pour Windows est obsolète
 
-Vous devez mettre à jour votre application Portail d’entreprise pour pouvoir continuer à accéder à des éléments tels que la messagerie d’entreprise, les contacts et les documents. Pour résoudre ce problème, ouvrez le **Windows Store** et installez la nouvelle version de l’application **Portail d’entreprise**.
+Vous devez mettre à jour votre application Portail d’entreprise pour pouvoir continuer à accéder à des éléments tels que la messagerie d’entreprise, les contacts et les documents. Pour résoudre ce problème, ouvrez le **Microsoft Store** et installez la nouvelle version de l’application **Portail d’entreprise**.
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).

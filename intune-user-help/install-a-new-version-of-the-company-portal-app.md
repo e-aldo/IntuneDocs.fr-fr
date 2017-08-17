@@ -14,11 +14,11 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 586a5355e2ee4b0dda6e0238628fa71bdce6f1a2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1cccc69ab772499183a7f434303d78ecf4308a5f
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Guide pratique pour mettre à jour l’application Portail d’entreprise
 
@@ -40,12 +40,12 @@ Pour mettre à jour l’application Portail d’entreprise :
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Mettre à jour l’application Portail d’entreprise d’Intune sur votre appareil Windows
 
-1.  Accédez au Windows Store et recherchez le **portail d’entreprise Intune**.
+1.  Accédez au Microsoft Store et recherchez le **portail d’entreprise Intune**.
 
 2.  Suivez la procédure d’installation.
 
     > [!NOTE]
-    > Si vous ne parvenez pas à accéder au Windows Store, contactez votre administrateur.
+    > Si vous ne parvenez pas à accéder au Microsoft Store, contactez votre administrateur informatique.
 
 
 Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).

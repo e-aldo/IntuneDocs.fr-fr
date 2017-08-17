@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscrire un appareil Windows Phone 8.1 dans Intune
 
@@ -29,11 +29,11 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 
 Pour inscrire un appareil Phone 8.1 dans Intune, suivez les instructions qui s’appliquent à votre entreprise ou établissement scolaire :
 
--   [Si votre entreprise vous autorise à utiliser le Portail d’entreprise à partir du Windows Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [Si votre entreprise vous autorise à utiliser le Portail d’entreprise à partir du Microsoft Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Si vous n’êtes pas autorisé à accéder au Windows Store à partir de votre Windows Phone ou si vous n’avez pas de compte Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Si vous n’êtes pas autorisé à accéder au Microsoft Store à partir de votre Windows Phone ou si vous n’avez pas de compte Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Si votre entreprise vous autorise à utiliser le Portail d'entreprise à partir du Windows Store
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Si votre entreprise vous autorise à utiliser le Portail d’entreprise à partir du Microsoft Store
 Installez l'application Portail d'entreprise sur votre appareil :
 
 1.  Appuyez sur **Démarrer** &gt; **Store**.
@@ -72,7 +72,7 @@ Inscrivez votre appareil :
 
     ![Écran de compte ajouté](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Si vous n’êtes pas autorisé à accéder au Windows Store à partir de votre Windows Phone ou si vous n’avez pas de compte Microsoft
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Si vous n’êtes pas autorisé à accéder au Microsoft Store à partir de votre Windows Phone ou si vous n’avez pas de compte Microsoft
 
 1.  Appuyez sur **Paramètres** &gt; **Espace de travail**.
 

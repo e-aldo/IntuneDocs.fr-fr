@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Se connecter à l’entrepôt de données avec Power BI
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Vous pouvez télécharger un fichier destiné à Microsoft Power BI qui vous permet de charger des rapports interactifs et dynamiques pour votre locataire Intune. Le fichier Power BI (pbix) d’entrepôt de données contient des paramètres de connexion à votre locataire ainsi que les exemples de rapports et de graphiques suivants : 
+Vous pouvez télécharger un fichier destiné à Microsoft Power BI qui vous permet de charger des rapports interactifs et dynamiques pour votre locataire Intune. Le fichier Power BI (pbix) d’entrepôt de données contient des paramètres de connexion à votre locataire ainsi que les exemples de rapports et de graphiques suivants :  
 
   -  Appareils
   -  Inscription
@@ -45,6 +45,9 @@ Installez la dernière version de Power BI Desktop. Power BI Desktop est dispo
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Charger les données et les rapports à l’aide du fichier Power BI (pbix)
 
 Le fichier Power BI (pbix) contient les informations de connexion pour votre locataire et un ensemble de rapports prédéfinis basés sur le modèle de données de l’entrepôt de données. Ouvrez le fichier dans Power BI Desktop et connectez-vous à Azure AD. Le rapport charge les données de votre locataire Intune.
+
+> [!Important]  
+> Les fichiers Power BI (pbix) peuvent varier selon l’emplacement du locataire. Si vous gérez plusieurs locataires Intune, veillez à utiliser le fichier téléchargé à partir du portail Azure tout en étant connecté au locataire.  
 
 1.  Connectez-vous au portail Azure et choisissez **Surveillance + gestion** > **Intune**. Vous pouvez aussi rechercher **Intune** dans les ressources.  
 2.  Ouvrez le panneau **API d’entrepôt de données Microsoft Intune (préversion)**.

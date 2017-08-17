@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signer des applications métier afin de pouvoir les déployer sur des appareils Windows avec Intune
 
@@ -64,7 +64,7 @@ Les étapes ci-dessous vous aideront à obtenir les certificats requis et à sig
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Exemple : Télécharger, signer et déployer l’application Portail d’entreprise pour les appareils Windows
 
-Vous pouvez déployer l’application Portail d’entreprise sur les appareils Windows, y compris les appareils Windows Phone et Windows 10 Mobile avec Intune, au lieu de l’installer à partir du Windows Store. Vous devez télécharger l’application Portail d’entreprise et la signer avec votre certificat.  Cela n'est nécessaire que si vos utilisateurs ne sont pas appelés à utiliser le Store d'entreprise et si vous souhaitez déployer le Portail d'entreprise sur des appareils Windows Phone 8.1.
+Vous pouvez déployer l’application Portail d’entreprise sur les appareils Windows, y compris les appareils Windows Phone et Windows 10 Mobile avec Intune, au lieu de l’installer à partir du Microsoft Store. Vous devez télécharger l’application Portail d’entreprise et la signer avec votre certificat.  Cela n'est nécessaire que si vos utilisateurs ne sont pas appelés à utiliser le Store d'entreprise et si vous souhaitez déployer le Portail d'entreprise sur des appareils Windows Phone 8.1.
 
 
 1.  **Télécharger le Portail d'entreprise**
@@ -75,7 +75,7 @@ Vous pouvez déployer l’application Portail d’entreprise sur les appareils W
 
     -   WinPhoneCompanyPortal.ps1 : script PowerShell que vous pouvez utiliser pour signer le fichier de l'application Portail d'entreprise à des fins de déploiement vers des appareils Windows Phone 8.1
 
-    Vous pouvez également télécharger le portail d’entreprise Windows Phone 8.1 (package sous licence hors connexion) ou le portail d’entreprise Windows 10 (package sous licence hors connexion) à partir du [Windows Store pour Entreprises](http://businessstore.microsoft.com/). L’application Portail d’entreprise doit être acquise avec une licence en mode hors connexion et le package approprié téléchargé pour une utilisation hors connexion. Les listes de plateformes Windows 8 et Windows Phone 8 dans la sélection font référence à leurs équivalents de la version 8.1. Pour plus d’informations sur la procédure à suivre avec Intune, consultez [Gérer les applications que vous avez achetées dans le Windows Store pour Entreprises](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Vous pouvez également télécharger le portail d’entreprise Windows Phone 8.1 (package sous licence hors connexion) ou le portail d’entreprise Windows 10 (package sous licence hors connexion) à partir du [Microsoft Store pour Entreprises](http://businessstore.microsoft.com/). L’application Portail d’entreprise doit être acquise avec une licence en mode hors connexion et le package approprié téléchargé pour une utilisation hors connexion. Les listes de plateformes Windows 8 et Windows Phone 8 dans la sélection font référence à leurs équivalents de la version 8.1. Pour plus d’informations sur la procédure à suivre avec Intune, consultez [Gérer les applications que vous avez achetées dans le Microsoft Store pour Entreprises](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 2.  **Télécharger le Kit Windows Phone SDK** Téléchargez le Kit Windows Phone 8.0 SDK] (http://go.microsoft.com/fwlink/?LinkId=615570) et installez-le sur votre ordinateur. Ce SDK est nécessaire pour générer un jeton d'inscription d'application.
 
@@ -144,12 +144,12 @@ Le certificat Symantec utilisé pour déployer des applications mobiles Windows 
 5.  Signez toutes les applications métier nouvelles et mises à jour de l'entreprise à l'aide du nouveau certificat. Les applications existantes ne doivent être ni resignées ni redéployées.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Déployer manuellement l’application Portail d’entreprise Windows 10
-Vous pouvez déployer manuellement l’application Portail d’entreprise Windows 10, directement à partir de Intune, même si vous n’avez pas encore intégré Intune avec Windows Store pour Entreprises.
+Vous pouvez déployer manuellement l’application Portail d’entreprise Windows 10 directement à partir d’Intune, même si vous n’avez pas encore intégré Intune avec le Microsoft Store pour Entreprises.
 
  > [!NOTE]
  > Cette option nécessite le déploiement manuel de mises à jour chaque fois qu’une mise à jour d’application est publiée.
 
-1. Connectez-vous à votre compte dans [Windows Store pour Entreprises](https://www.microsoft.com/business-store) et acquérez la version avec **licence hors connexion** de l’application Portail d’entreprise.  
+1. Connectez-vous à votre compte dans le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) et acquérez la version avec **licence hors connexion** de l’application Portail d’entreprise.  
 2. Une fois que l’application a été acquise, sélectionnez l’application dans la page **Inventorier**.  
 3. Sélectionnez **Tous les appareils Windows 10** comme **plateforme**, puis l’**architecture** appropriée et procédez au téléchargement. Un fichier de licence d’application n’est pas nécessaire pour cette application.
 ![Image de tous les appareils Windows 10 et des détails du package d’architecture X86 à télécharger](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Si l’application Portail d’entreprise Windows 10 est signée et déployée 
 Voici comment signer et déployer l’application de cette façon :
 
 1. Téléchargez le script de signature de l’application Portail d’entreprise Windows 10 Microsoft Intune à partir de la page [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Ce script nécessite que le SDK Windows pour Windows 10 soit installé sur l’ordinateur hôte. Pour télécharger le SDK Windows pour Windows 10, visitez la page [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Téléchargez l’application Portail d’entreprise Windows 10 à partir du Windows Store pour Entreprises, comme indiqué ci-dessus.  
+2. Téléchargez l’application Portail d’entreprise Windows 10 à partir du Microsoft Store pour Entreprises, comme indiqué ci-dessus.  
 3. Exécutez le script avec les paramètres d’entrée détaillés dans l’en-tête de script pour signer l’application Portail d’entreprise Windows 10 (extraite ci-dessous). Les dépendances n’ont pas besoin d’être transmises au script. Elles sont uniquement requises lorsque l’application est en cours de téléchargement vers la console d’administration Intune.
 
 |Paramètre | Description|

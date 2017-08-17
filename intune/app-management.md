@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
@@ -48,12 +48,12 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 |Protection des données dans les applications avec des stratégies de protection d’application|Oui|Oui|Non|Non<sup>1</sup>|
 |Suppression des données d’entreprise uniquement à partir d’une application installée (réinitialisation sélective d’application)|Oui|Oui|Oui|Oui|
 |Surveillance des affectations d’applications|Oui|Oui|Oui|Oui|
-|Affectation et suivi des applications achetées en volume à partir d’une boutique d’applications|Non|Non|Non|Oui|
+|Affectation et suivi des applications achetées en volume dans un App Store|Non|Non|Non|Oui|
 |Installation obligatoire d’applications sur des appareils (requis)<sup>2</sup>|Oui|Oui|Oui|Oui|
 |Installation facultative sur des appareils à partir du portail d’entreprise (installation disponible)|Oui|Oui|Oui|Oui|
 |Installation d’un raccourci vers une application sur le web (clip web)|Oui|Oui|Oui|Oui|
 |Applications métier internes|Oui|Oui|Non|Non|
-|Applications à partir d’une boutique|Oui|Oui|Oui|Oui|
+|Applications de Store|Oui|Oui|Oui|Oui|
 |Mettre à jour des applications|Oui|Oui|Oui|Oui|
 
 <sup>1</sup> Envisagez d’utiliser [Windows Information Protection](windows-information-protection-configure.md) pour protéger les applications sur les appareils qui exécutent Windows 10.
@@ -65,7 +65,7 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 Vous trouverez la plupart des éléments liés à l’application dans la charge de travail **Mobile Apps**, à laquelle vous pouvez accéder comme suit :
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
 
     ![La charge de travail Mobile Apps](./media/apps-workload.png)
@@ -87,7 +87,7 @@ Vous trouverez la plupart des éléments liés à l’application dans la charge
 
 ### <a name="monitor"></a>Surveillance
 - **Applications sous licence** : affichez, affectez et surveillez les applications achetées en volume dans les App Stores.
-    - [Applications achetées en volume à partir du Windows Store pour Entreprises](windows-store-for-business.md)
+    - [Applications achetées en volume sur le Microsoft Store pour Entreprises](windows-store-for-business.md)
 - **Applications découvertes** : affiche toutes les applications qui ont été affectées par Intune et installées sur un appareil.
 - **État d’installation de l’application** : affiche l’état d’une affectation d’application que vous avez créée.
 - **État de protection de l’application** : affiche l’état d’une stratégie de protection d’application pour un utilisateur que vous sélectionnez.
@@ -97,7 +97,7 @@ Pour plus d’informations, consultez [Surveiller des applications](apps-monitor
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store pour Entreprises** : configurer l’intégration à Windows Store pour Entreprises. Après cela, vous pouvez synchroniser les applications achetées à Intune, et affecter puis suivre l’utilisation de votre licence.
-    - [Applications achetées en volume à partir du Windows Store pour Entreprises](windows-store-for-business.md)
+- **Microsoft Store pour Entreprises** : configurez l’intégration au Microsoft Store pour Entreprises. Après cela, vous pouvez synchroniser les applications achetées à Intune, et affecter puis suivre l’utilisation de votre licence.
+    - [Applications achetées en volume sur le Microsoft Store pour Entreprises](windows-store-for-business.md)
 - **Personnalisation du portail d’entreprise** : personnalisez le portail d’entreprise pour lui donner une image proche de votre société.
     - [Configuration du portail d’entreprise](company-portal-app.md)

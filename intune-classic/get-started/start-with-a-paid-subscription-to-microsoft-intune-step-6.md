@@ -14,11 +14,11 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cf86d82fe636d2641f82ca951e508bea93abf683
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0d1e88db4a0da250f449c8e87f674f7694904d7b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="create-policies-and-publish-apps"></a>Créer des stratégies et publier des applications
 
@@ -63,7 +63,7 @@ Maintenant que l’application est disponible dans Intune, vous pouvez la déplo
 - [Déployer des applications sur des appareils](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Déployer des applications achetées en volume :
     - [iOS - Programme d’achat en volume](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-    - [Windows Store pour Entreprises](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+    - [Microsoft Store pour Entreprises](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
     - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
     Une fois que vous avez configuré des applications pour le déploiement, vous pouvez [configurer des applications](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).
