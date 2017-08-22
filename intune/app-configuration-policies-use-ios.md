@@ -3,8 +3,8 @@ title: "Guide pratique d’utilisation des stratégies de configuration d’appl
 titleSuffix: Intune on Azure
 description: "Apprenez à utiliser les stratégies de configuration d’application pour fournir des données de configuration à une application iOS lorsqu’elle est exécutée."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/26/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 3a9d56a2f570c0332b394b03f25deb6351b6ba67
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour iOS
 
@@ -51,7 +51,7 @@ Vous n’affectez pas ces stratégies directement sur les appareils et utilisate
 
 ## <a name="create-an-app-configuration-policy"></a>Créer une stratégie de configuration des applications
 1.  Connectez-vous au portail Azure.
-2.  Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2.  Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3.  Dans le panneau **Intune**, choisissez **Applications mobiles**.
 4.  Dans la charge de travail **Applications mobiles**, choisissez **gérer** > **Stratégies de configuration d’application**.
 5.  Dans le panneau de liste de stratégies, choisissez **Ajouter**.

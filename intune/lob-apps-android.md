@@ -3,8 +3,8 @@ title: "Guide pratique pour ajouter des applications métier Android à Intune"
 titleSuffix: Intune on Azure
 description: "Découvrez comment ajouter des applications métier Android à Intune."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/12/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 52a762e0d8990ab96053f5d3a092b3731ee00ca0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 31163d6e87f70ce7f75cf4e3a2a35470161e35d6
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier Android à Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="step-1---specify-the-software-setup-file"></a>Étape 1 : spécifier le fichier d’installation de logiciel
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
 4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
 5. Au-dessus de la liste des applications, choisissez **Ajouter**.
@@ -60,7 +60,7 @@ ms.lasthandoff: 07/01/2017
     - **Logo** : chargez une icône qui sera associée à l’application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 3. Quand vous avez terminé, cliquez sur **OK**.
 
-## <a name="step-4---finish-up"></a>Étape 4 : terminer
+## <a name="step-4---finish-up"></a>Étape 4 : Terminer
 
 1. Dans le panneau **Ajouter une application**, vérifiez l’exactitude des informations que vous avez configurées.
 2. Sélectionnez **Ajouter** pour charger l’application sur Intune.

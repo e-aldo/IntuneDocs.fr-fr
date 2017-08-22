@@ -3,8 +3,8 @@ title: "Guide pratique d’ajout d’applications de la boutique d’application
 titleSuffix: Intune on Azure
 description: "Découvrez comment ajouter des applications Android Store à Intune."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbd1d32c5e863984c8044002365cd2012324e0ce
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a6e997c174acbb0c572dd3bb79432cfe6fae3068
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications Android Store à Microsoft Intune
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 07/01/2017
     - **Nom de l’application** : saisissez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
     - **Description de l’application :** saisissez la description de l’application. Ce libellé s'affichera dans le portail d'entreprise.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **URL de la boutique d’applications** : saisissez l’URL de la boutique d’applications que vous souhaitez créer.
+    - **URL de l’App Store** : entrez l’URL de l’App Store que vous souhaitez créer.
     - **Système d’exploitation minimal** : dans la liste, choisissez le système d’exploitation minimal sur lequel l’application peut être installée. Si vous affectez l’application à un appareil avec un système d’exploitation antérieur, elle ne sera pas installée.
     - **Catégorie** : (facultatif) sélectionnez une ou plusieurs des catégories d’applications intégrées ou que vous avez créées. Cela permettra aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
     - **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
@@ -45,7 +45,7 @@ ms.lasthandoff: 07/01/2017
     - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
     - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
     - **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-    - **Télécharger icône** : téléchargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
+    - **Charger l’icône** : chargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 8. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
 
 L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
