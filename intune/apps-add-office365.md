@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e41eceed55a323a7f3c07c7b5d8ab2da7764ff53
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Guide pratique pour affecter des applications Office 365 ProPlus 2016 à des appareils Windows 10 avec Microsoft Intune
 
@@ -35,14 +35,13 @@ ms.lasthandoff: 08/08/2017
 - Intune prend uniquement en charge l’ajout d’applications Office provenant de la suite Office 365 ProPlus 2016.
 - Si des applications Office sont ouvertes au moment où Intune installe la suite d’applications, les utilisateurs finaux risquent de perdre les données contenues dans des fichiers non enregistrés.
 - Cette méthode d’installation n’est pas prise en charge sur les appareils Windows 10.
-- Si vous affectez ce type d’application en tant que Disponible et ciblez plusieurs utilisateurs avec les différentes attributions, ils ne voient que l’attribution la plus récemment ciblée.
 - Intune ne prend pas en charge l’installation d’applications Office 365 pour poste de travail à partir du Windows Store (appelées Office Centennial) sur un appareil sur lequel vous avez déjà déployé des applications Office 365 avec Intune. Si vous installez cette configuration, cela peut entraîner une perte ou une altération des données.
 
 
 ## <a name="get-started"></a>Prise en main
 
 1.  Connectez-vous au portail Azure.
-2.  Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2.  Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3.  Dans le panneau **Intune**, choisissez **Applications mobiles**.
 4.  Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
 5.  Au-dessus de la liste des applications, choisissez **Ajouter**.
