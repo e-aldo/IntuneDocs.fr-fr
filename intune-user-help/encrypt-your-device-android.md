@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Comment protéger votre appareil Android à l’aide du chiffrement
 
@@ -33,8 +33,8 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 
 1.  Vérifiez qu'un code confidentiel ou un mot de passe de verrouillage d'écran a été défini pour votre appareil.
 
-2.  Dans **Paramètres**, choisissez **Sécurité** &gt; **Chiffrer l’appareil**.
-    (Sur certains téléphones, vous devrez choisir **Stockage** &gt; **Chiffrement de stockage** ou **Stockage** &gt; **Écran de verrouillage et sécurité** &gt; **Autres paramètres de sécurité** pour trouver l’option Chiffrer).
+2.  Dans **Paramètres**, choisissez **Sécurité** > **Chiffrer l’appareil**.
+    (Sur certains téléphones, vous devez choisir **Stockage** > **Chiffrement de stockage** ou **Stockage** > **Écran de verrouillage et sécurité** > **Autres paramètres de sécurité** pour trouver l’option Chiffrer).
 
 3.  Suivez les instructions à l'écran. Au cours du chiffrement, votre appareil peut redémarrer plusieurs fois.
 
@@ -54,14 +54,16 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 - Vérifiez que vous avez configuré un code confidentiel ou un mot de passe sur votre appareil.
 - Si vous avez déjà défini un code confidentiel ou un mot de passe sur votre appareil, essayez les étapes suivantes, que votre administrateur informatique peut vous demander de suivre pour renforcer la sécurité de votre appareil. Les noms de menus que vous voyez peuvent être légèrement différents de ceux mentionnés dans ces étapes, selon le type d’appareil Android dont vous disposez.
 
-    1. Accédez à **Paramètres** > **Sécurité** > **Écran de verrouillage**. Confirmez votre code confidentiel ou mot de passe actuel.
+    1. Accédez à **Paramètres** > **Écran de verrouillage et sécurité** > **Écran de verrouillage**. Confirmez votre code confidentiel ou mot de passe actuel.
 
-    2. Dans l’écran **Choose screen lock** (Choisir un verrouillage d’écran), choisissez le type de verrouillage d’écran que vous voulez utiliser.
+    2. Dans l’écran **Choose screen lock** (Choisir un verrouillage d’écran), choisissez le type de verrouillage d’écran que vous voulez utiliser. 
 
-    3. Dans l’écran **Secure start-up** (Démarrage sécurisé), cliquez sur **Require PIN to start device** (Exiger le code PIN pour démarrer l’appareil), puis appuyez sur **Continue** (Continuer).
+    3. Une fois que vous avez choisi le verrouillage d’écran, revenez à l’écran **Écran de verrouillage et sécurité** et sélectionnez **Démarrage sécurisé**. 
+    
+    4. Dans l’écran **Démarrage sécurisé**, appuyez sur **Exiger le code PIN pour démarrer l’appareil**, puis appuyez sur **Continuer**.
 
-    4. Choisissez un code confidentiel (vous pouvez entrer le même que celui que vous avez entré précédemment), puis appuyez sur **Confirm your PIN** (Confirmer votre code PIN).
+    5. Choisissez un code confidentiel (vous pouvez entrer le même que celui que vous avez entré précédemment), puis appuyez sur **Confirm your PIN** (Confirmer votre code PIN).
 
-    5. Ouvrez l’application Portail d’entreprise, sélectionnez votre appareil, puis appuyez sur **Vérifier la conformité**.
+    6. Ouvrez l’application Portail d’entreprise, sélectionnez votre appareil, puis appuyez sur **Vérifier la conformité**.
 
 Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.

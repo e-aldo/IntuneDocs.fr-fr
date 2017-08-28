@@ -1,12 +1,12 @@
 ---
 title: "Bien démarrer avec les applications"
 titleSuffix: Intune on Azure
-description: 
+description: "Recherchez et ajoutez des applications sur les appareils pour permettre à vos employés d’effectuer leur travail."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71093f8ac17fc6d6938f5c263a40204f89419726
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 7ac2a6f027a78c6b0093a0d299a7cae3265e5954
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-apps"></a>Bien démarrer avec les applications
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-adding-apps"></a>Bien démarrer avec l’ajout d’applications
 
 Intune prend en charge différentes manières de déployer des applications sur vos appareils d’entreprise :
 
@@ -33,7 +31,7 @@ Intune prend en charge différentes manières de déployer des applications sur 
 
 Vous allez suivre l’une des méthodes de déploiement d’application les plus rapides en affectant une application de Store public.
 
-__Comment affecter une application de Store public ?__
+## <a name="how-do-i-assign-a-public-store-app"></a>Comment attribuer une application de magasin public ?
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. À l’aide de **Rechercher des ressources**, recherchez **Intune**.
@@ -43,3 +41,9 @@ __Comment affecter une application de Store public ?__
 6. Dans le panneau **Ajouter une application**, sélectionnez **Informations sur l’application**, puis vérifiez que toutes les informations sur l’application sont renseignées. Vous pouvez ajouter d’autres détails facultatifs pour vous aider à organiser cette application, comme **Propriétaire**, **Remarques**, **Développeur** et une **URL de confidentialité** pour la politique de confidentialité de votre entreprise.
 7. Vérifiez que vous avez sélectionné Oui pour Proposer cette application dans le portail d’entreprise, puis sélectionnez OK.
 8. Sélectionnez **Ajouter** pour ajouter l’application. Vous accédez alors à la **Vue d’ensemble** de cette application. Choisissez **Affectations**, puis cliquez sur **Sélectionner des groupes** pour l’affecter à votre groupe de test. Rendez l’application **Disponible** pour le téléchargement. L’application doit alors apparaître comme **Application proposée** sur votre appareil de test.
+
+## <a name="learn-more"></a>En savoir plus
+
+* [Qu’est-ce que la gestion des applications avec Intune ?](app-management.md)
+* [Vue d’ensemble du cycle de vie des applications](app-lifecycle.md)
+* [Que sont les stratégies de protection des applications ?](app-protection-policy.md)

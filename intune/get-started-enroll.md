@@ -1,12 +1,12 @@
 ---
 title: "Bien démarrer avec l’inscription des appareils"
 titleSuffix: Intune on Azure
-description: 
+description: "Découvrez l’expérience d’inscription en effectuant le processus d’inscription complet d’un appareil iOS."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>Bien démarrer avec l’inscription des appareils
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>Bien démarrer avec l’inscription des appareils
 
 Microsoft Intune vous permet de donner à votre personnel des appareils mobiles tout en protégeant vos données d’entreprise. Étant donné que vos utilisateurs finaux interagiront avec Intune sur leurs appareils plutôt que dans la console d’administration, vous devez vous familiariser avec l’expérience d’inscription. Ainsi, vous pouvez combiner des stratégies de conformité bien conçues avec votre expérience afin de montrer une empathie envers vos utilisateurs. Cela est particulièrement important car les utilisateurs sauront exactement les informations que vous, en tant qu’administrateur, pouvez voir :
 
-## <a name="what-it-cannot-see"></a>Ce qu’il ne peut pas voir
-* Historique des appels et de navigation
-* Localisation
-* E-mail personnel
-* SMS
-* Contacts
-* Mots de passe de vos comptes personnels
-* Événements de calendrier
-* Photos, notamment celles qui se trouvent dans l’application de photos ou sur la pellicule
-
-## <a name="what-it-can-see"></a>Ce qu’il peut voir
-* Modèle
-* Numéro de série
-* Version du système d'exploitation
-* Noms des applications
-* Propriétaire
-* Nom de l'appareil
-* Fabricant (pour les appareils non-Apple)
-* Numéro de téléphone (pour les appareils de travail, le nombre entier. Pour les appareils personnels, uniquement les quatre derniers chiffres.)
+| Ce qu’il ne peut pas voir | Ce qu’il peut voir |
+|---|---|
+| Historique des appels et de navigation | Modèle |
+| Localisation | Numéro de série |
+| E-mail personnel | Version du système d'exploitation |
+| SMS | Noms des applications |
+| Contacts | Propriétaire |
+| Mots de passe de vos comptes personnels | Nom de l'appareil |
+| Événements de calendrier | Fabricant (pour les appareils non-Apple) |
+| Photos, notamment celles qui se trouvent dans l’application de photos ou sur la pellicule | Numéro de téléphone (pour les appareils de travail, le nombre entier. Pour les appareils personnels, uniquement les quatre derniers chiffres.) |
 
 ## <a name="how-do-i-enroll-a-device"></a>Comment inscrire un appareil ?
 
@@ -67,3 +56,13 @@ L’inscription d’un appareil est la première expérience que de nombreux uti
 14. Quand l’écran change et indique que l’installation du profil est terminée, appuyez sur **Terminé**.
 15. Un message « Inscription de l’appareil » s’affiche à l’écran, puis montre que l’appareil a été correctement inscrit. Une fenêtre contextuelle s’affiche et vous invite à ouvrir la page dans le portail d’entreprise. Appuyez sur **Ouvrir**.
 16. Vous revenez à l’écran **Configuration de l’accès à l’entreprise**. Si aucune stratégie de test n’est configurée, l’appareil doit apparaître conforme. Si vous avez des stratégies de test, un appui sur **Conformité de l’appareil** indique que certaines actions doivent être effectuées pour renforcer la sécurité de l’appareil.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+[Bien démarrer avec l’ajout d’applications](get-started-apps.md) : Recherchez et ajoutez des applications sur les appareils pour permettre à vos employés d’effectuer leur travail.
+
+## <a name="learn-more"></a>En savoir plus
+
+* [Options d’inscription pour Intune](enrollment-options.md)
+* [Activer l’inscription BYOD (« Apportez votre propre appareil ») avec Intune](byod-enable.md)
+* [Apprenez à vos utilisateurs finaux à utiliser l’inscription et la gestion des appareils](end-user-educate.md)

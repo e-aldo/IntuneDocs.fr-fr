@@ -1,12 +1,12 @@
 ---
 title: "Bien démarrer avec les stratégies"
 titleSuffix: Intune on Azure
-description: 
+description: "Créez des stratégies pour empêcher les utilisateurs d’exécuter des actions non autorisées avec leurs appareils."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>Bien démarrer avec les stratégies
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>Bien démarrer avec les stratégies
 
 L’un des principaux objectifs de la prise en main d’Intune est l’inscription des appareils afin de s’assurer qu’ils sont conformes aux stratégies d’entreprise. Les stratégies de conformité vous aident non seulement à gérer des types d’appareils spécifiques, tels que les bornes d’entreprise, mais également les appareils personnels (Bring Your Own Device), les tablettes et les appareils sans utilisateur.
 
@@ -56,3 +54,12 @@ __Comment créer une stratégie ?__
 7. Revenez au panneau **Créer une stratégie**, puis sélectionnez **Créer**.
 8. Une fois la stratégie créée, sélectionnez **Affectations** pour l’affecter à votre groupe de test. Sélectionnez votre groupe de test, qui doit contenir votre utilisateur test, puis affectez la stratégie à ce groupe en cliquant sur **Enregistrer**.
 9. Patientez quelques minutes. Votre appareil inscrit devrait vous inviter à entrer un mot de passe mis à jour afin de rester conforme à la stratégie d’entreprise. Vous pouvez également effectuer cette vérification manuellement dans **l’application Portail d’entreprise pour iOS** en appuyant sur le nom de l’appareil, puis sur le bouton **Synchroniser**.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+[Bien démarrer avec l’inscription d’appareils](get-started-enroll.md) - Découvrez l’expérience d’inscription en effectuant le processus d’inscription complet d’un appareil iOS.
+
+## <a name="learn-more"></a>En savoir plus
+
+* [Surveiller les stratégies de conformité d’appareils Intune](compliance-policy-monitor.md)
+* [Utilisations courantes des stratégies d’accès conditionnel avec Intune](conditional-access-intune-common-ways-use.md)

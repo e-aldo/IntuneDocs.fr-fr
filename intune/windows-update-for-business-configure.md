@@ -1,12 +1,12 @@
 ---
-title: "Configurer les paramètres Windows Update for Business - Intune"
-titleSuffix: Intune on Azure
+title: "Gérer les mises à jour logicielles"
+titleSuffix: Configure Windows Update for Business settings - Intune
 description: "Découvrez comment configurer les paramètres Windows Update for Business dans Intune pour contrôler les mises à jour des appareils Windows 10."
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,17 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
+ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/22/2017
 ---
-# <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Configurer les paramètres Windows Update for Business avec Microsoft Intune
+# <a name="manage-software-updates"></a>Gérer les mises à jour logicielles
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="introduction"></a>Introduction
-Windows en tant que service est la nouvelle façon de fournir des mises à jour pour Windows 10. À partir de Windows 10, les nouvelles mises à jour de fonctionnalités et qualité incluent le contenu de toutes les mises à jour précédentes. Cela signifie que tant que vous avez installé la dernière mise à jour, vous savez que vos appareils Windows 10 sont entièrement à jour. À la différence des versions précédentes de Windows, vous devez maintenant installer la mise à jour complète au lieu d’une partie seulement.
+Windows en tant que service permet de mettre à jour des appareils Windows 10. Avec Windows 10, les nouvelles mises à jour de fonctionnalités et qualité incluent le contenu de toutes les mises à jour précédentes. Cela signifie que tant que vous avez installé la dernière mise à jour, vous savez que vos appareils Windows 10 sont entièrement à jour. À la différence des versions précédentes de Windows, vous devez maintenant installer la mise à jour complète au lieu d’une partie seulement.
 
 En utilisant Windows Update for Business, vous pouvez simplifier l’expérience de gestion des mises à jour et vous ne devez plus approuver des mises à jour propres à des groupes d’appareils. Vous pouvez toujours gérer les risques dans votre environnement en configurant une stratégie de déploiement de mises à jour afin que Windows Update fasse en sorte que les mises à jour soient installées au moment opportun. Microsoft Intune permet de configurer les paramètres de mise à jour des appareils et vous donne la possibilité de reporter l’installation des mises à jour. Intune ne stocke pas les mises à jour, seulement l’attribution des stratégies de mise à jour. Les appareils accèdent directement à Windows Update. Utilisez Intune pour configurer et gérer les **anneaux de mise à jour Windows 10**. Un anneau de mise à jour contient un groupe de paramètres permettant de configurer le moment et la façon d’installer les mises à jour Windows 10. Par exemple, vous pouvez configurer les paramètres suivants :
 

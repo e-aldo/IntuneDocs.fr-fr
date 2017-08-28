@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilisation du portail de résolution des problèmes pour aider les utilisateurs
 
@@ -41,7 +41,7 @@ En tant qu’administrateur Intune, vous pouvez affecter le rôle d’opérateur
 Pour ajouter des utilisateurs de support technique :
 1. [Ajoutez des utilisateurs à Intune](users-add.md) si nécessaire.
 2. [Créez un groupe de support technique](groups-add.md) et ajoutez-lui des utilisateurs.
-3. [Affecter le rôle Opérateur du support technique RBAC](role-based-access-control.md#built-in-roles)
+3. [Assignez le rôle Opérateur du support technique RBAC](role-based-access-control.md#built-in-roles).
 
   ![Capture d’écran du portail Intune montrant les rôles Intune mis en surbrillance et une liste de rôles intégrés, notamment Opérateur du support technique](./media/help-desk-user-add.png). Vous pouvez aussi [créer un rôle personnalisé](role-based-access-control.md#custom-roles), que vous pouvez modifier ultérieurement pour donner un accès aux opérateurs du support technique.  Les opérateurs du support technique ont besoin des autorisations suivantes pour aider à résoudre les problèmes des utilisateurs :
     - Applications mobiles : Lecture
@@ -61,8 +61,6 @@ Le personnel de support technique et les administrateurs Intune peuvent accéder
 - Connectez-vous au portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**, puis accédez à **Aide et support** > **Résoudre les problèmes**.
 
 Cliquez sur **Sélectionner un utilisateur** pour afficher un utilisateur et les détails le concernant.
-
-![Capture d’écran de la charge de travail Dépannage d’Intune avec le lien Sélectionner un utilisateur](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>Utilisation du portail de dépannage
 

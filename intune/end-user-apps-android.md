@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 08/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4f0364750edf2e97e2b621c27fb25bea8e0f537c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Comment vos utilisateurs Android obtiennent leurs applications
 
@@ -32,6 +32,14 @@ Utilisez ces informations pour comprendre comment et où vos utilisateurs finaux
 | ------------- |-------------| -----|
 | Applications disponibles      | Sur le site Portail d’entreprise, les utilisateurs appuient sur **Installer**. Une notification s’affiche, sur laquelle les utilisateurs appuient pour démarrer l’installation. Une fois l’installation effectuée, la notification disparaît. | Sur le site Portail d’entreprise, les utilisateurs appuient sur l’application et accèdent à une page d’application dans le Play Store, où ils peuvent démarrer l’installation.|
 | Applications requises      | Les utilisateurs reçoivent une notification qu’ils ne peuvent pas masquer et qui leur indique qu’ils doivent installer une application. Les utilisateurs appuient sur la notification pour démarrer l’installation. Une fois l’installation effectuée, la notification disparaît.    | Les utilisateurs reçoivent une notification qu’ils ne peuvent pas masquer et qui leur indique qu’ils doivent installer une application. Les utilisateurs appuient sur la notification et accèdent à une page d’application dans le Play Store, où ils peuvent démarrer l’installation. Une fois l’installation effectuée, la notification disparaît. |
+
+Vos utilisateurs finaux doivent autoriser l’installation à partir de sources inconnues afin d’installer des [applications métier](lob-apps-android.md). Celles-ci se trouvent généralement dans deux emplacements différents :
+
+* **Android 7.1.2 et versions inférieures** : **Paramètres** > **Sécurité** > **Sources inconnues**
+* **Android 8.0 et versions supérieures** : **Paramètres** > **Applications et notifications** > **Accès spécial à l’application** > **Installer des applications inconnues** > **Portail d’entreprise** > **Autoriser à partir de cette source**
+
+Si cela se produit, l’application Portail d’entreprise avertit l’utilisateur final et le guide directement vers le paramètre approprié. 
+
 
 ## <a name="samsung-knox-standard-android-devices"></a>Appareils Android Samsung Knox Standard
 

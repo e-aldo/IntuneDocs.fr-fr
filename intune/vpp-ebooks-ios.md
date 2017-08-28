@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les livres électroniques iOS que vous avez achetés par le biais d’un programme d’achat en volume avec Microsoft Intune
 
@@ -44,7 +44,6 @@ Avant de commencer, vous devez obtenir un jeton VPP auprès d’Apple et l’imp
 * Par défaut, Intune se synchronise avec le service Apple VPP deux fois par jour. Vous pouvez lancer une synchronisation manuelle à tout moment.
 * Après avoir importé le jeton VPP dans Intune, n’importez pas le même jeton dans une autre solution de gestion d’appareils, car cela peut entraîner la perte des enregistrements utilisateur et de l’attribution de licence.
 * Avant de commencer à utiliser des livres iOS avec Intune, supprimez les comptes d’utilisateur VPP existants créés avec d’autres fournisseurs GPM (gestion des périphériques mobiles). Par mesure de sécurité, ces comptes d’utilisateur ne sont pas synchronisés dans Intune. Intune synchronise uniquement les données du service Apple VPP qui ont été créées par Intune.
-* Vous ne pouvez actuellement affecter de la documentation qu’en tant qu’installation **Requise**. Lorsque vous affectez le livre en tant qu’installation **Requise**, chaque utilisateur qui installe le livre utilise une licence.
 * Lorsque vous affectez un livre à un appareil, celui-ci doit disposer de l’application iBook intégrée. Dans le cas contraire, l’utilisateur doit réinstaller l’application pour pouvoir lire le livre. Vous ne pouvez pas actuellement utiliser Intune pour restaurer les applications intégrées qui ont été supprimées.
 * Vous pouvez uniquement affecter des livres obtenus par le biais du Programme d’achat en volume (VPP) Apple. Vous ne pouvez pas télécharger, puis affecter, des livres que vous avez créés en interne.
 * Actuellement, vous ne pouvez pas affecter des livres à des catégories d’utilisateur final de la même façon que pour les applications.
@@ -54,7 +53,7 @@ Avant de commencer, vous devez obtenir un jeton VPP auprès d’Apple et l’imp
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Pour obtenir et charger un jeton Apple VPP
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
 1.  Dans la charge de travail **Mobile apps**, choisissez **Installation** > **jetons VPP iOS**.
 2.  Dans la liste du panneau des jetons VPP, cliquez sur **Ajouter**.
@@ -72,10 +71,10 @@ Vous pouvez synchroniser les données détenues par Apple avec Intune à tout mo
 ## <a name="to-assign-a-volume-purchased-app"></a>Pour affecter une application achetée en volume
 
 1. Dans la charge de travail **Livres électroniques**, choisissez **Gérer** > **Tous les livres électroniques**.
-2. Dans le panneau contenant la liste des livres, choisissez le livre à affecter, puis choisissez « **...** » > **Affecter des groupes**.
+2. Dans le panneau contenant la liste des livres, choisissez le livre à attribuer, puis choisissez « **...** » > **Attribuer des groupes**.
 3. Dans le panneau <*nom du livre*> - **Groupes affectés**, choisissez **Gérer** > **Groupes affectés**.
 4. Choisissez **Affecter des groupes** puis, dans le panneau **Sélectionner des groupes**, sélectionnez les groupes d’utilisateurs Azure AD auxquels vous souhaitez affecter le livre. Pour le moment, les groupes d’appareils ne sont pas pris en charge.
-Vous devez choisir l’action d’affectation **Requise**. 
+Choisissez une action d’attribution **Disponible** ou **Obligatoire**. 
 5. Une fois que vous avez terminé, choisissez **Enregistrer**.
 
 ## <a name="next-steps"></a>Étapes suivantes

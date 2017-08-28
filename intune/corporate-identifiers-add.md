@@ -1,12 +1,12 @@
 ---
-title: "Ajouter des identificateurs IMEI à Intune"
+title: "Ajouter des identificateurs d’entreprise à Intune"
 titleSuffix: Intune on Azure
-description: "Découvrez comment ajouter des identificateurs d’entreprise (numéros IMEI) à Microsoft Intune. \""
+description: "Découvrez comment ajouter des identificateurs d’entreprise (méthode d’inscription, numéros IMEI et numéros de série) à Microsoft Intune. \""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,31 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b38bf2da70537d07a050fa21be9a2a3062ca84b
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="add-corporate-identifiers"></a>Ajouter des identificateurs d’entreprise
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Les administrateurs Intune peuvent créer et importer un fichier de valeurs séparées par des virgules (.csv) qui liste les numéros de série ou les numéros IMEI (« International Mobile Equipment Identity »). Intune utilise ces identificateurs pour spécifier la propriété des appareils d’entreprise. Vous pouvez déclarer des numéros IMEI pour toutes les plateformes prises en charge. Vous pouvez déclarer le numéro de série uniquement pour les appareils iOS et Android. Chaque numéro IMEI ou numéro de série peut contenir des détails spécifiés dans la liste pour des raisons administratives.
+Si vous êtes un administrateur Intune, vous pouvez identifier un appareil de l’entreprise de plusieurs façons. Intune peut collecter des informations supplémentaires à partir des appareils d’entreprise. Vous pouvez également définir des restrictions d’appareils pour empêcher l’inscription d’appareils qui ne sont pas détenus par l’entreprise.
+
+Un appareil est identifié comme étant détenu par l’entreprise si l’une des conditions suivantes est vérifiée :
+
+- Appareil inscrit avec un compte de [gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md) (toutes les plateformes)
+- Appareil inscrit avec le [programme d’inscription des appareils](device-enrollment-program-enroll-ios.md) Apple, [Apple School Manager](apple-school-manager-set-up-ios.md) ou [Apple Configurator](apple-configurator-enroll-ios.md) (iOS uniquement)
+- Appareil prédéclaré avec un numéro IMEI (International Mobile Equipment Identifier) (toutes les plateformes avec des numéros IMEI) ou un numéro de série (iOS et Android)
+- Appareil inscrit dans Azure Active Directory ou Enterprise Mobility Suite comme appareil Windows 10 Entreprise (Windows 10 uniquement)
+- Appareil spécifié comme étant **d’entreprise** dans les **Propriétés** de l’appareil
+
+Les appareils d’entreprise affichent la valeur **Entreprise** dans la colonne **Propriété** pour les enregistrements de leur appareil dans Intune. Pour l’afficher, accédez à **Appareils** > **Tous les appareils**.
+
+## <a name="predeclare-a-device-with-imei-or-serial-number"></a>Prédéclarer un appareil avec un numéro IMEI ou un numéro de série
+
+Les administrateurs Intune peuvent créer et importer un fichier de valeurs séparées par des virgules (.csv) qui répertorie les numéros de série ou les numéros IMEI. Intune utilise ces identificateurs pour spécifier la propriété des appareils d’entreprise. Vous pouvez déclarer des numéros IMEI pour toutes les plateformes prises en charge. Vous pouvez déclarer le numéro de série uniquement pour les appareils iOS et Android. Chaque numéro IMEI ou numéro de série peut contenir des détails spécifiés dans la liste pour des raisons administratives.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -54,10 +68,9 @@ Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
 >Notez également que les numéros de série Android ne sont pas nécessairement uniques ou présents. Vérifiez auprès du fournisseur de votre appareil si le numéro de série est un ID d’appareil fiable.
 >Les numéros de série signalés à Intune par l’appareil peuvent ne pas correspondre à l’ID affiché dans les menus Paramètres/À propos d’Android de l’appareil. Vérifiez le type de numéro de série signalé par le fabricant de l’appareil.
 
+### <a name="add-a-csv-list-of-corporate-identifiers"></a>Ajouter une liste .csv d’identificateurs d’entreprise
 
-**Pour ajouter une liste .csv d’identificateurs d’entreprise**
-
-1. Dans le portail Intune, choisissez **Inscription de l’appareil** > **Restrictions d’inscription**, choisissez **Identificateurs d’appareil d’entreprise**, puis cliquez sur **Ajouter**.
+1. Dans Intune, dans le portail Azure, choisissez **Inscription de l’appareil** > **Identificateurs d’appareil d’entreprise**, puis cliquez sur **Ajouter**.
 
  ![Capture d’écran de l’espace de travail d’identificateurs d’appareils d’entreprise avec le bouton Ajouter mis en surbrillance.](./media/add-corp-id.png)
 
@@ -69,9 +82,11 @@ Les appareils importés ne sont pas nécessairement inscrits. Les appareils peuv
 
 ## <a name="delete-corporate-identifiers"></a>Supprimer des identificateurs d’entreprise
 
-1. Dans le portail Intune, choisissez **Inscription de l’appareil** > **Restrictions d’inscription**, choisissez **Identificateurs d’appareil d’entreprise**, puis cliquez sur **Supprimer**.
+1. Dans Intune, dans le portail Azure, choisissez **Inscription de l’appareil** > **Identificateurs d’appareil d’entreprise**.
+2. Sélectionnez les identificateurs d’appareil que vous voulez supprimer, puis choisissez **Supprimer**.
+3. Confirmez la suppression.
 
-3. Dans le panneau **Supprimer des identificateurs**, accédez au fichier .csv des identificateurs d’appareils à supprimer, puis cliquez sur **Supprimer**.
+La suppression d’un identificateur d’entreprise pour un appareil inscrit ne change pas la propriété de l’appareil. Pour changer la propriété d’un appareil, accédez à **Appareils** > **Tous les appareils**, sélectionnez l’appareil, choisissez **Propriétés** et changez la **Propriété de l’appareil**.
 
 ## <a name="imei-specifications"></a>Spécifications IMEI
 Pour obtenir des spécifications détaillées sur les IMEI (International Mobile Equipment Identifiers), consultez [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
