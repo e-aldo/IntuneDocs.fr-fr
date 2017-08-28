@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Options d’inscription pour Intune
 
@@ -41,6 +41,9 @@ L’inscription des appareils iOS et macOS nécessite un certificat Push MDM. En
 ## <a name="corporate-identifiers"></a>Identificateurs d’entreprise
 
 Vous pouvez recenser les numéros IMEI (International Mobile Equipment Identifier) et les numéros de série pour identifier les appareils qui appartiennent à l’entreprise. En savoir plus sur les [identificateurs d’entreprise](corporate-identifiers-add.md).
+## <a name="multi-factor-authentication"></a>Authentification multifacteur
+
+Vous pouvez demander aux utilisateurs d’utiliser une méthode de vérification supplémentaire, comme un téléphone, un code PIN ou des données biométriques, quand ils inscrivent un appareil. Découvrez plus d’informations sur [l’authentification multifacteur](multi-factor-authentication.md).
 
 ## <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareils
 Vous pouvez attribuer le rôle de gestionnaire d’inscription d’appareils à des utilisateurs.  Ceux-ci peuvent alors inscrire un grand nombre d’appareils mobiles avec un même compte d’utilisateur. Un compte de gestionnaire d’inscription d’appareils permet d’inscrire jusqu’à 1 000 appareils. En savoir plus sur les [gestionnaires d’inscription d’appareils](device-enrollment-manager-enroll.md).

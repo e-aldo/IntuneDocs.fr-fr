@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>Informations de référence sur les entités d’application
 
@@ -52,9 +52,9 @@ L’entité **AppRevision** répertorie toutes les versions des applications.
 | IsCurrent |Indique si cette version de l’application est active ou non dans l’entrepôt de données |Vrai/Faux |
 | RowLastModifiedDateTimeUTC |Date et heure UTC de la dernière modification de cette version d’application dans l’entrepôt de données |11/23/2016 12:00:00 AM |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-L’entité **AppInstallerTypes** répertorie la source d’installation d’une application.
+L’entité **AppTypes** répertorie la source d’installation d’une application.
 
 | Propriété  | Description |
 |---------|------------|
@@ -80,44 +80,6 @@ L’entité **AppInstallerTypes** répertorie la source d’installation d’une
 | 11 |Windows Mobile MSI |Application métier MSI |
 | 12 |Application métier Windows Phone |Application métier Windows Phone |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-L’entité **ApplicationTypes** répertorie les types possibles pour une application.
-
-| Propriété  | Description |
-|---------|------------|
-| ApplicationTypeID |ID du type |
-| ApplicationTypeKey |Clé de substitution pour la clé |
-| ApplicationTypeName |Type d’application |
-
-## <a name="example"></a>Exemple
-
-| ApplicationTypeID  | Nom | Description |
-|---------|------------|--------|
-| 0 |InHouse |Application développée en interne |
-| 1 |DeepLink |Lien vers une application dans un App Store |
-| 2 |WebLink |Lien vers l’application web |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-L’entité **ManagedSoftwareTypes** répertorie les types de logiciels gérés possibles pour une application.
-
-| Propriété  | Description |
-|---------|------------|
-| SoftwareTypeID |ID du type |
-| SoftwareTypeKey |Clé de substitution pour la clé |
-| SoftwareTypeName |Type de logiciel |
-
-## <a name="example"></a>Exemple
-
-| SoftwareTypeID  | Nom | Description |
-|---------|------------|--------|
-| 0 |Bureau |Application de bureau |
-| 2 |Mise à jour |Mise à jour de fenêtre |
-| 5 |SideCarAgent | |
-| 1 |Mobile |Application mobile |
-| 3 |WebLink |Lien web |
-| 4 |VppDeepLink |Lien vers une application dans l’App Store qui fait partie d’un Programme d’achat en volume (VPP) |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

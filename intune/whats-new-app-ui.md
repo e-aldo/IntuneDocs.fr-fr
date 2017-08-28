@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
+
+## <a name="week-of-august-14-2017"></a>Semaine du 14 août 2017
+
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Mises à jour de la page « Détails de l’appareil » dans l’application Portail d’entreprise pour Windows 10
+
+L’application Portail d’entreprise pour Windows 10 déplace la balise __Catégorie__ en dessous du titre vers une propriété dans la page __Détails de l’appareil__.
+
+![L’application Portail d’entreprise pour Windows, écran « Détails de l’appareil », affiche maintenant le champ « Catégories » comme une propriété plutôt que directement sous le titre de cet écran.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Semaine du 31 juillet 2017
 

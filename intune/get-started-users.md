@@ -1,12 +1,12 @@
 ---
 title: "Bien démarrer avec les utilisateurs"
 titleSuffix: Intune on Azure
-description: 
+description: "Ajoutez un utilisateur à Intune pour l’autoriser à accéder aux ressources d’entreprise sur des appareils mobiles."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,21 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 1559a265b28627281b484c8250d1c597d2f094c6
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="get-started-with-users"></a>Bien démarrer avec les utilisateurs
+# <a name="get-started-with-managing-users"></a>Bien démarrer avec la gestion des utilisateurs
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Azure Active Directory gère les groupes d’objets de votre organisation, tels que les appareils et les applications, ainsi que les groupes d’utilisateurs. Vous pouvez regrouper des utilisateurs ou des appareils au lieu de devoir gérer individuellement chaque appareil. Cela vous permet d’affecter facilement des applications et des paramètres à un grand nombre d’utilisateurs et d’appareils.
+Prenez en compte toutes les personnes de votre organisation. Toutes les personnes qui utilisent des données d’entreprise ont besoin d’un utilisateur pour gérer l’accès à ces données dans Intune. 
 
 ## <a name="how-do-i-create-a-user"></a>Comment créer un utilisateur ?
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. À l’aide de **Rechercher des ressources**, recherchez **Utilisateurs et groupes**.
-3. Une fois que vous avez ouvert le panneau **Utilisateurs et groupes**, sélectionnez **Tous les utilisateurs**, puis **+ Nouvel utilisateur**.
+2. À l’aide de **Rechercher des ressources**, recherchez **Intune**.
+3. Une fois que vous avez ouvert le panneau **Microsoft Intune**, sélectionnez **Utilisateurs**. Dans la page **Tous les utilisateurs**, sélectionnez **+ Nouvel utilisateur**.
 4. Entrez les détails de l’utilisateur, tels que le **Nom** et le **Nom d’utilisateur**. La partie nom de domaine du nom d’utilisateur doit être le nom de domaine par défaut initial « contoso.onmicrosoft.com » ou un nom de domaine vérifié et non fédéré tel que « contoso.com ».
 5. Sous **Groupes**, choisissez le groupe de test auquel ajouter l’utilisateur.
 6. Enregistrez le mot de passe d’utilisateur généré automatiquement afin de pouvoir l’utiliser pour vous connecter à un appareil de test. Vous devez donner ce mot de passe aux utilisateurs pour qu’ils puissent le remplacer par un mot de passe normal et facile à mémoriser.
@@ -50,3 +48,7 @@ Une fois que vous avez créé un utilisateur, vous devez utiliser le [portail Of
  > Cela utilise l’une de vos licences pour cet utilisateur. Si vous utilisez votre environnement en production, vous pourrez désactiver l’utilisation de cette licence plus tard pour la réaffecter à un utilisateur réel.
 
 5. Sélectionnez **Enregistrer**.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+[Bien démarrer avec les groupes](get-started-groups.md) : Organisez les utilisateurs en groupes pour faciliter la gestion des stratégies et des applications auxquelles ils ont accès.

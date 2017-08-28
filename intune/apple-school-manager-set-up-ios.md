@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Activer l’inscription des appareils iOS avec Apple School Manager
 
@@ -103,18 +103,16 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
     - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées.
 
-    - **Inscription verrouillée** : (nécessite le Mode de gestion = Supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres.
+     - **Inscription verrouillée** : (nécessite le Mode de gestion = Supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres.
+   - **iPad partagé** : (nécessite une **inscription sans affinité utilisateur** et le mode **supervisé**.) Permet à plusieurs utilisateurs de se connecter à des iPad inscrits en utilisant un ID Apple géré. Les ID Apple gérés sont créés dans le portail Apple School Manager. Découvrez plus d’informations sur [l’iPad partagé](education-settings-configure-ios-shared.md).
+   >[!NOTE]
+   >Si **Affinité utilisateur** a la valeur **With user affinity** (Avec affinité utilisateur) ou que le mode **Supervisé** a la valeur **Désactivé**, le mode iPad partagé est désactivé pour le profil d’inscription.
 
-  - **iPad partagé** : (nécessite une **inscription sans affinité utilisateur** et le mode **supervisé**.) Permet à plusieurs utilisateurs de se connecter à des iPad inscrits en utilisant un ID Apple géré. Les ID Apple gérés sont créés dans le portail Apple School Manager.
-
-  >[!NOTE]
-  >Si **Affinité utilisateur** a la valeur **With user affinity** (Avec affinité utilisateur) ou que le mode **Supervisé** a la valeur **Désactivé**, le mode iPad partagé est désactivé pour le profil d’inscription.
-
-  - **Nombre maximal d’utilisateurs mis en cache** : (si **iPad partagé** = **Oui**) crée une partition sur l’appareil pour chaque utilisateur. La valeur recommandée est le nombre d’élèves susceptibles d’utiliser l’appareil sur une certaine période de temps. Par exemple, si six étudiants utilisent l’appareil régulièrement pendant la semaine, définissez ce nombre sur six.  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **Autoriser le jumelage** : spécifie si les appareils iOS peuvent se synchroniser avec les ordinateurs. Si vous choisissez **Autoriser Apple Configurator par certificat**, vous devez choisir un certificat sous **Certificats Apple Configurator**.
 
-    - **Certificats Apple Configurator** : si vous avez choisi **Autoriser Apple Configurator par certificat** sous **Autoriser l’appairage**, choisissez un certificat Apple Configurator à importer.
+      - **Certificats Apple Configurator** : si vous avez choisi **Autoriser Apple Configurator par certificat** sous **Autoriser l’appairage**, choisissez un certificat Apple Configurator à importer.
 
 7. Choisissez **Paramètres de l’Assistant Configuration**, configurez les paramètres de profil suivants, puis choisissez **Enregistrer** :
 

@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Se connecter à l’entrepôt de données avec Power BI
 
@@ -60,18 +60,20 @@ Le fichier Power BI (pbix) contient les informations de connexion pour votre lo
 
 Quand un client est authentifié auprès d’Azure AD, l’URL OData se connecte au point de terminaison RESTful dans l’API d’entrepôt de données qui expose le modèle de données à votre client de création de rapports. Pour utiliser Power BI Desktop pour vous connecter et créer vos propres rapports, suivez ces instructions. Vous n’êtes pas limité à Power BI Desktop. Vous pouvez utiliser votre outil d’analyse préféré avec l’URL OData, à condition toutefois que le client prenne en charge l’authentification OAUTH2.0 et la norme OData v4.0.
 
-1.  Récupérez l’**URL OData** dans le panneau de création de rapports (par exemple, `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`).
-2.  Ouvrez **Power BI Desktop**.
-3.  Choisissez **Accueil** > **Obtenir des données**. Sélectionnez **Flux OData**.
-4.  Choisissez **De base**.
-5.  Tapez ou collez l’**URL OData** dans la zone URL.
-6.  Cliquez sur **OK**.
-7.  Si vous n’êtes pas authentifié auprès d’Azure AD pour votre locataire à partir du client Power BI Desktop, tapez vos informations d’identification.  
-    a.  Sélectionnez **Compte professionnel**.  
-    b.  Tapez vos nom d’utilisateur et mot de passe.  
-    c.  Cliquez sur **Se connecter**.  
-    d.  Cliquez sur **Connexion**.  
-8.  Cliquez sur **Charger**.
+1.  Connectez-vous au portail Azure et choisissez **Surveillance + gestion** > **Intune**. Vous pouvez aussi rechercher **Intune** dans les ressources.  
+2.  Ouvrez le panneau **API d’entrepôt de données Microsoft Intune (préversion)**.
+3. Récupérez l’URL du flux personnalisé dans le panneau de création de rapports, par exemple, `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+4. Ouvrez **Power BI Desktop**.
+5. Choisissez **Accueil** > **Obtenir des données**. Sélectionnez **Flux OData**.
+6. Choisissez **De base**.
+7. Tapez ou collez l’**URL OData** dans la zone URL.
+8. Cliquez sur **OK**.
+9. Si vous n’êtes pas authentifié auprès d’Azure AD pour votre locataire à partir du client Power BI Desktop, tapez vos informations d’identification.  
+    1.  Sélectionnez **Compte professionnel**.  
+    2.  Tapez vos nom d’utilisateur et mot de passe.  
+    3.  Cliquez sur **Se connecter**.  
+    4.  Cliquez sur **Connexion**.  
+10. Cliquez sur **Charger**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -79,4 +81,4 @@ Vous pouvez obtenir les réponses aux questions relatives à votre environnement
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Les données du locataire sont organisées pour vous aider à obtenir des insights sur vos données. Pour plus d’informations sur la façon dont les données sont organisées, consultez [Modèle de données de l’entrepôt de données](reports-ref-data-model.md). 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  Vous pouvez également accéder aux données à partir d’une interface RESTful et les incorporer à votre propre application. Pour plus d’informations, consultez [Obtenir des données à partir de l’API d’entrepôt de données avec un client REST](reports-proc-data-rest.md).
