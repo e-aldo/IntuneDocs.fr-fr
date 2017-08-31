@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>Configurer des stratégies d’accès conditionnel basées sur l’application
 
@@ -59,9 +59,30 @@ Cette rubrique fournit des instructions sur la façon de configurer des stratég
 2. Cliquez sur l’ellipse pour afficher les options de suppression.
 3. Choisissez **Supprimer** pour supprimer le groupe d’utilisateurs de la liste.
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Création de stratégies d’accès conditionnel basé sur l’application dans la charge de travail Azure AD
+
+À compter d’Intune version 1708, les administrateurs informatiques peuvent créer des stratégies d’accès conditionnel basé sur l’application à partir de la charge de travail Azure AD. C’est plus pratique, car il n’est plus nécessaire de basculer entre les charges de travail Azure et Intune.
+
+> [!IMPORTANT]
+> Vous devez disposer d’une licence Azure AD Premium pour créer des stratégies d’accès conditionnel Azure AD à partir du portail Intune Azure.
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>Pour créer une stratégie d’accès conditionnelle basée sur l’application
+
+> [!IMPORTANT]
+> Les [stratégies de protection des applications Intune](app-protection-policies.md) doivent être appliquées à vos applications avant d’utiliser des stratégies d’accès conditionnel basé sur l’application.
+
+1. Dans le **tableau de bord Intune**, choisissez **Accès conditionnel**.
+
+2. Dans le panneau **Stratégies**, choisissez **Nouvelle stratégie** pour créer votre stratégie d’accès conditionnel basé sur l’application.
+
+4. Une fois que vous entrez un nom de stratégie et configuré les paramètres disponibles dans la section **Affectations**, choisissez **Octroyer** sous la section **Contrôles d’accès**.
+
+5. Choisissez **Demander une application cliente approuvée** , puis **Sélectionner**, et enfin **OK** pour enregistrer la nouvelle stratégie.
+
 ## <a name="next-steps"></a>Étapes suivantes
 [Bloquer les applications sans authentification moderne](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Voir aussi
 
 [Protéger les données d’application à l’aide de stratégies de protection des applications](app-protection-policies.md)
+[Accès conditionnel dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 237e141eacb413eb130b17217116b6d0c7e085f8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5db079d224f145336b5d3c9b9963f8a5f2c306a
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="common-ways-to-use-intune"></a>Utilisations courantes d’Intune
 
@@ -40,11 +40,11 @@ Voici quelques courtes introductions au six scénarios les plus courants qui s�
 La plupart des stratégies de mobilité d’entreprise commencent par un plan pour permettre aux employés munis d’appareils mobiles qui se connectent à Internet d’accéder de manière sécurisée à leurs e-mails. De nombreuses organisations hébergent encore des données et des serveurs d’applications locaux, tels que Microsoft Exchange, sur leur réseau d’entreprise.
 
 
-Intune et Microsoft Enterprise Mobility + Security (EMS) fournissent une [solution d’accès conditionnel](conditional-access.md) ([portail classique](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) unique et intégrée pour Exchange Server, qui garantit qu’aucune application mobile ne peut accéder aux e-mails tant que l’appareil n’est pas inscrit auprès d’Intune. Pour cela, vous n’avez même pas besoin de déployer une autre passerelle à la périphérie de votre réseau d’entreprise !
+Intune et Microsoft Enterprise Mobility + Security (EMS) fournissent une [solution d’accès conditionnel](conditional-access.md) ([portail classique](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) unique et intégrée pour Exchange Server, qui garantit qu’aucune application mobile ne peut accéder aux e-mails tant que l’appareil n’est pas inscrit auprès d’Intune. Pour cela, vous n’avez même pas besoin de déployer une autre passerelle à la périphérie de votre réseau d’entreprise.
 
-Intune prend également en charge l’activation de l’accès aux applications mobiles qui nécessitent un accès sécurisé aux données locales, comme un serveur d’applications métier. Pour cela, vous utilisez généralement des [certificats gérés par Intune](certificates-configure.md) ([portail classique](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) pour le contrôle d’accès, combinés à une passerelle VPN standard ou à un proxy dans le périmètre (tel que le Proxy d’application Microsoft Azure Active Directory).  
+Intune prend également en charge l’activation de l’accès aux applications mobiles qui nécessitent un accès sécurisé aux données locales, comme un serveur d’applications métier. Pour cela, vous utilisez généralement des [certificats gérés par Intune](certificates-configure.md) ([portail classique](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) pour le contrôle d’accès, combinés à une passerelle VPN standard ou à un proxy dans le périmètre (tel que le Proxy d’application Microsoft Azure Active Directory). 
 
-Dans ce cas, la seule façon d’accéder aux données d’entreprise consiste à inscrire l’appareil pour la gestion. Une fois que les appareils sont inscrits, le système de gestion vérifie qu’ils sont conformes à vos stratégies avant de leur permettre d’accéder aux données d’entreprise. De plus, [l’outil de création de package de restrictions d’application et le SDK d’application](apps-prepare-mobile-application-management.md) Intune permettent de limiter les données accessibles de votre application métier pour ne pas transmettre des données d’entreprise à des applications ou services de particuliers.
+Dans ce cas, la seule façon d’accéder à des données d’entreprise consiste à inscrire l’appareil pour la gestion. Une fois que les appareils sont inscrits, le système de gestion vérifie qu’ils sont conformes à vos stratégies avant de leur permettre d’accéder aux données d’entreprise. De plus, [l’outil de création de package de restrictions d’application et le SDK d’application](apps-prepare-mobile-application-management.md) Intune permettent de limiter les données accessibles de votre application métier pour ne pas transmettre des données d’entreprise à des applications ou services de particuliers.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -61,7 +61,7 @@ Les applications mobiles Office comprises dans leurs magasins d’applications r
 Une pratique de déploiement Office 365 courante consiste à exiger l’inscription des appareils à des fins de gestion si des configurations d’applications, de certificats, Wi-Fi ou VPN d’entreprise doivent être entièrement définies, scénario fréquent pour les appareils d’entreprise.  
 
 
-Toutefois, si l’utilisateur doit simplement accéder aux e-mails et documents d’entreprise, ce qui est souvent le cas pour les appareils personnels, vous pouvez lui demander d’utiliser les applications mobiles Office (auxquelles vous avez appliqué des [règles de protection des stratégies](app-protection-policies.md) ([portail classique](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune))) et d’ignorer entièrement l’inscription de l’appareil.  
+Toutefois, si votre utilisateur doit simplement accéder aux e-mails et documents d’entreprise, ce qui est souvent le cas pour les appareils personnels, vous pouvez lui demander d’utiliser les applications mobiles Office (auxquelles vous avez appliqué des [stratégies de protection des applications](app-protection-policies.md) ([portail classique](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune))) et d’ignorer entièrement l’inscription de l’appareil.  
 
 
 
@@ -75,7 +75,7 @@ BYOD (Apportez votre propre appareil) continue d’accroître sa popularité com
 
 Quand l’inscription d’appareil n’est pas une option viable, Intune propose une autre approche BYOD consistant simplement à [gérer les applications qui contiennent des données d’entreprise](app-protection-policies.md) ([portail classique](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)). Intune protège les données d’entreprise même si l’application en question accède à la fois à des données personnelles et des données d’entreprise, comme c’est le cas pour les applications mobiles Office.  
 
-En tant qu’administrateur, vous pouvez exiger des utilisateurs qu’ils accèdent à Office 365 à partir des applications mobiles Office et configurer les applications avec des stratégies de protection des données (comme leur chiffrement, leur protection par code confidentiel, et ainsi de suite). Ces stratégies évitent la fuite de données depuis des applications et des emplacements de stockage non gérés, que ce soit à l’intérieur ou en dehors de ces applications. Par exemple, les stratégies empêchent un utilisateur de copier du texte à partir d’un profil de messagerie d’entreprise vers un profil de messagerie privé même si ces deux profils sont configurés dans Outlook Mobile. Vous pouvez déployer des configurations similaires pour d’autres services et applications dont vos utilisateurs BYOD ont besoin.
+En tant qu’administrateur, vous pouvez exiger des utilisateurs qu’ils accèdent à Office 365 à partir des applications mobiles Office et configurer les applications avec des stratégies de protection des données (comme leur chiffrement, leur protection par code confidentiel, et ainsi de suite). Ces stratégies de protection des applications évitent la perte de données à partir d’applications et d’emplacements de stockage non gérés, que ce soit à l’intérieur ou en dehors de ces applications. Par exemple, les stratégies empêchent un utilisateur de copier du texte à partir d’un profil de messagerie d’entreprise vers un profil de messagerie privé même si ces deux profils sont configurés dans Outlook Mobile. Vous pouvez déployer des configurations similaires pour d’autres services et applications dont vos utilisateurs BYOD ont besoin.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 

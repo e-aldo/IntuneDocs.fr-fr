@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
 
+## <a name="week-of-august-21-2017"></a>Semaine du 21 août 2017
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune auront une interface modernisée <!-- 1199015 -->
+
+Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune seront mises à jour pour afficher une apparence plus actuelle. Ces boîtes de dialogue fonctionneront de la même façon qu’avec le précédent style.
+
+**Expérience précédente**
+
+![ancienne interface](media\NewUI_Old_AttachFileHandler.jpg)
+
+**Expérience moderne**
+
+![interface moderne](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>Semaine du 14 août 2017
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Mises à jour de la page « Détails de l’appareil » dans l’application Portail d’entreprise pour Windows 10
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Mises à jour de la page « Détails de l’appareil » dans l’application Portail d’entreprise pour Windows 10 <!---1287448--->
 
 L’application Portail d’entreprise pour Windows 10 déplace la balise __Catégorie__ en dessous du titre vers une propriété dans la page __Détails de l’appareil__.
 
 ![L’application Portail d’entreprise pour Windows, écran « Détails de l’appareil », affiche maintenant le champ « Catégories » comme une propriété plutôt que directement sous le titre de cet écran.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Semaine du 31 juillet 2017
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Les pages de détails des applications afficheront de nouvelles informations pour les appareils Android <!--1287476-->
+
+La page de détails des applications de l’application Portail d’entreprise pour Android affichera les catégories d’application que l’administrateur informatique a définies pour cette application.
+
+![Nouvelle page de détails de l’application](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Amélioration de l’expérience de connexion sur l’ensemble des applications du portail d’entreprise pour toutes les plates-formes<!--User Story 1132123-->
 
@@ -65,7 +86,7 @@ Cliquez sur le lien __Se connecter à partir d’un autre appareil__.
 
 ![Suivez les instructions fournies pour accéder à la page aka.ms/devicelogin avec un code d’accès unique à partir de votre ordinateur, puis utilisez le code pour vous connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Ouvrez un navigateur et accédez à [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+Ouvrez un navigateur et accédez à [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 ![Une image du navigateur de l’utilisateur sur son ordinateur de travail plutôt sur son application Portail d’entreprise. La page « Connexion à l’appareil » invite l’utilisateur à saisir le code qu’il a reçu dans l’application Portail d’entreprise.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -128,7 +149,7 @@ Suite aux commentaires des utilisateurs, l’application Portail d’entreprise 
 
 ## <a name="week-of-june-5-2017"></a>Semaine du 5 juin 2017
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>Améliorations des vignettes d’application dans l’application Portail d’entreprise pour iOS
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Améliorations des vignettes de l’application dans l’application Portail d’entreprise pour iOS <!--1230777-->
 Nous avons mis à jour l’apparence des vignettes d’application sur la page d’accueil afin de refléter la couleur de marque que vous définissez pour le portail d’entreprise.
 
 **Avant**

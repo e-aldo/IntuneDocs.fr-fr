@@ -14,17 +14,17 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7e96611b74e3539ab1310085b1812317f68088a3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f9d27a9cc1893fc28f27a603403f02fcad514ad0
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
-# <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Préparer des applications iOS pour la gestion des applications mobiles avec l'outil de création de package de restrictions d'application Intune
+# <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications iOS pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Utilisez l’outil de création de package de restrictions d’application Microsoft Intune pour iOS pour activer les stratégies de protection des applications Intune sans modifier le code de l’application proprement dit.
+Utilisez l’outil de création de package de restrictions d’application Microsoft Intune pour iOS pour activer les stratégies de protection des applications iOS sans modifier le code de l’application proprement dit.
 
 L’outil est une application en ligne de commande macOS qui crée un wrapper autour d’une application. Lorsqu'une application est traitée, vous pouvez modifier la fonctionnalité de cette application en y déployant [des stratégies de protection des applications](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console).
 
@@ -81,7 +81,7 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
 5. Sélectionnez votre **type d’entité** puis cliquez sur **Continue** (Continuer).
 
-6. Remplissez le formulaire avec les informations de votre organisation. Cliquez sur **Continue**(Continuer). À ce stade, Apple vous contacte pour vérifier que vous êtes autorisé à inscrire votre organisation.
+6. Remplissez le formulaire avec les informations de votre organisation. Cliquez sur **Continue** (Continuer). À ce stade, Apple vous contacte pour vérifier que vous êtes autorisé à inscrire votre organisation.
 
 8. Après vérification, cliquez sur **Agree to License** (Accepter la licence).
 
@@ -122,7 +122,7 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
   ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](./media/iOS-signing-cert-5.png)
 
-11. Suivez les instructions du site des développeur Apple ci-dessus pour créer un fichier CSR. Enregistrez le fichier CSR sur votre ordinateur macOS.
+11. Suivez les instructions du site des développeurs Apple ci-dessus pour créer un fichier CSR. Enregistrez le fichier CSR sur votre ordinateur macOS.
 
   ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](./media/iOS-signing-cert-6.png)
 
@@ -156,7 +156,7 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
   ![Sélectionner un profil d’approvisionnement interne](./media/iOS-provisioning-profile-1.png)
 
-5. Cliquez sur **Continue**(Continuer). Veillez à lier le certificat de signature généré précédemment au profil de configuration.
+5. Cliquez sur **Continue** (Continuer). Veillez à lier le certificat de signature généré précédemment au profil de configuration.
 
 6. Suivez les étapes pour télécharger votre profil (avec l’extension .mobileprovision) sur votre ordinateur macOS.
 

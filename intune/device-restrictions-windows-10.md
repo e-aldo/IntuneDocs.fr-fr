@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: e0bbbdfae73dfd843f4b011cecf0217d2c6eb699
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -100,7 +100,7 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 -   **Installer des données d'application sur le volume système** - Empêche les applications de stocker des données sur le volume système de l’appareil.
 -   **Installer des données d'application sur le lecteur système** - Empêche les applications de stocker des données sur le lecteur système de l’appareil.
 -   **Jeux DVR (Desktop uniquement)** - Détermine si l’enregistrement et la diffusion des jeux sont autorisés ou non.
--   **Applications du Store uniquement** -Détermine si les utilisateurs peuvent installer des applications à partir d’emplacements autres que l’App Store.
+-   **Applications du Store uniquement** -Détermine si les utilisateurs peuvent installer des applications à partir d’emplacements autres que l’App Store.
 
 
 
@@ -108,7 +108,7 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 -   **Navigateur Microsoft Edge (mobile uniquement)** - autorise l’utilisation du navigateur web Edge sur l’appareil.
 -   **Liste déroulante des barres d’adresse (Desktop uniquement)** – Permet d’empêcher Edge d’afficher une liste de suggestions dans une liste déroulante quand vous tapez. Cela aide à réduire l’utilisation de la bande passante réseau entre Edge et les services Microsoft.
 -   **Synchroniser les favoris entre les navigateurs Microsoft (Desktop uniquement)** – Permet à Windows de synchroniser les Favoris entre Internet Explorer et Edge.
--   **Envoyer un en-tête Do Not Track** - Configure le navigateur Microsoft Edge pour envoyer des en-êtes Do Not Track aux sites web que les utilisateurs visitent.
+-   **Envoyer un en-tête Do Not Track** - Configure le navigateur Microsoft Edge pour envoyer des en-têtes Do Not Track aux sites web que les utilisateurs visitent.
 -   **Cookies** - Permet au navigateur d’enregistrer les cookies internet sur l’appareil.
 -   **JavaScript** - Autorise l’exécution de scripts, tels que JavaScript, dans le navigateur Microsoft Edge.
 -   **Fenêtres contextuelles** - Bloque les fenêtres publicitaires dans le navigateur (s’applique à Windows 10 Desktop uniquement).

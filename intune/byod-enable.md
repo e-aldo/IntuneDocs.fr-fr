@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>Activer le BYOD avec Intune
 
@@ -44,22 +44,22 @@ Dans le même temps, vous pouvez aussi [personnaliser le portail d’entreprise]
 
 Après avoir préparé le service Intune, vous devez remplir les diverses conditions d’inscription pour les différents types d’appareil que vous souhaitez gérer. Le processus d’inscription d’appareils pour la gestion est simple, mais il varie légèrement d’un type d’appareil à un autre.
 
--   **Appareils iOS et Mac** : vous devez vous [procurer un certificat Push MDM Apple](apple-mdm-push-certificate-get.md) pour inscrire des appareils de type iPad, iPhone ou MacOS. Une fois que vous avez chargé votre certificat Push MDM sur Intune, les utilisateurs peuvent [inscrire des appareils iOS](/intune-user-help/enroll-your-device-in-intune-ios) à l’aide de l’application Portail d’entreprise et utiliser le site web du même nom pour [inscrire des appareils MacOS](/intune-user-help/enroll-your-device-in-intune-macos).
+-   **Appareils iOS et Mac** : vous devez vous [procurer un certificat Push MDM Apple](apple-mdm-push-certificate-get.md) pour inscrire des appareils de type iPad, iPhone ou macOS. Une fois que vous avez chargé votre certificat Push MDM sur Intune, les utilisateurs peuvent [inscrire des appareils iOS](/intune-user-help/enroll-your-device-in-intune-ios) à l’aide de l’application Portail d’entreprise et utiliser le site web du même nom pour [inscrire des appareils macOS](/intune-user-help/enroll-your-device-in-intune-macos).
 
 -   **Appareils Android** : vous n’avez rien à faire pour préparer le service Intune à l’inscription d’appareils Android. Les utilisateurs peuvent simplement [inscrire leurs appareils Android](/intune-user-help/enroll-your-device-in-intune-android) pour la gestion à l’aide de l’application Portail d’entreprise disponible sur Google Play.
 
--   **Appareils Windows Phone et PC** Les appareils Windows peuvent être inscrits au moyen d’une configuration supplémentaire. Pour simplifier l’expérience de vos utilisateurs, vous pouvez activer l’inscription automatique pour les PC et appareils mobiles Windows 10 dans Azure Active Directory (AD) Premium. Si vous n’avez pas Azure AD Premium, ou si vous devez prendre en charge Windows 8.1, vous pouvez créer [un alias DNS pour le serveur d’inscription](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) et ainsi faciliter l’inscription.
+-   **Appareils Windows Phone et PC** Les appareils Windows peuvent être inscrits au moyen d’une configuration supplémentaire. Vous pouvez activer l’inscription automatique pour les PC Windows 10 et appareils mobiles Windows 10 dans Azure Active Directory (AD) Premium pour simplifier l’expérience de vos utilisateurs. Si vous n’avez pas Azure AD Premium, ou si vous devez prendre en charge Windows 8.1, vous pouvez créer [un alias DNS pour le serveur d’inscription](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) et ainsi faciliter l’inscription.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Vérifier que les appareils gérés respectent les exigences de sécurité de base
 
 Une fois que les utilisateurs ont inscrit leurs appareils pour la gestion, le service informatique doit vérifier que les appareils utilisés pour accéder aux données et applications de l’entreprise respectent les exigences de sécurité de base. Ces règles peuvent inclure l’utilisation d’un code confidentiel pour accéder aux appareils et le chiffrement des données stockées sur les appareils. Un ensemble de règles de ce type est appelé une [stratégie de conformité](device-compliance.md).
 
-Quand vous [déployez une stratégie de conformité](device-compliance-get-started.md) pour un utilisateur, Intune vérifie que tous les appareils qu’il a inscrits pour la gestion dans Intune respectent les exigences de sécurité de base que vous avez définies dans votre stratégie BYOD. Après avoir fait l’objet d’une vérification de conformité, un appareil retourne un rapport d’état à Intune. Dans certains cas, il peut être demandé aux utilisateurs de corriger les paramètres, par exemple le code confidentiel ou le chiffrement de l’appareil. À d’autres occasions, l’application Portail d’entreprise leur signale simplement les paramètres qui ne sont pas conformes à votre stratégie.
+Quand vous [déployez une stratégie de conformité](device-compliance-get-started.md) pour un utilisateur, Intune vérifie que chaque appareil qu’il a inscrit pour la gestion dans Intune respecte les exigences de sécurité de base que vous avez définies dans votre stratégie BYOD. Après avoir fait l’objet d’une vérification de conformité, un appareil retourne un rapport d’état à Intune. Dans certains cas, il peut être demandé aux utilisateurs de corriger les paramètres, par exemple le code confidentiel ou le chiffrement de l’appareil. À d’autres occasions, l’application Portail d’entreprise leur signale simplement les paramètres qui ne sont pas conformes à votre stratégie.
 
 ## <a name="provide-access-to-company-resources"></a>Fournir un accès aux ressources de l’entreprise
 
-La première chose que la plupart des employés veulent sur leur appareil mobile est un accès aux e-mails et documents de la société. En outre, ils s’attendent à configurer cet accès sans passer par une procédure complexe ni appeler le support technique. Intune facilite la [création et le déploiement des paramètres de messagerie](email-settings-configure.md) des applications de messagerie natives qui sont préinstallées sur les appareils mobiles.
+Les documents et l’e-mail de la société sont les premières choses auxquelles la plupart des employés veulent accéder sur leur appareil mobile. Ils s’attendent à configurer cet accès sans passer par une procédure complexe ni appeler le support technique. Intune facilite la [création et le déploiement des paramètres de messagerie](email-settings-configure.md) des applications de messagerie natives qui sont préinstallées sur les appareils mobiles.
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Intune vous permet aussi de gérer et de déployer les applications que vous ave
 
 ## <a name="protect-company-data"></a>Protéger les données d’entreprise
 
-Intune protège les données d’entreprise à travers diverses couches de technologie. Dans la couche d’identité, l’accès conditionnel protège l’accès aux services. L'accès conditionnel autorise uniquement les appareils gérés et conformes à accéder aux ressources d’entreprise. Dans la couche d’application cliente, la gestion des applications mobiles (GAM) protège contre la perte de données.  Les stratégies de protection des applications empêchent le déplacement des données vers les applications ou les emplacements de stockage non protégés. Ces stratégies vous permettent aussi de réinitialiser les données d’entreprise en cas de perte ou de vol d’un appareil.
+Intune protège les données d’entreprise à travers diverses couches de technologie. Dans la couche d’identité, l’accès conditionnel protège l’accès aux services. L'accès conditionnel autorise uniquement les appareils gérés et conformes à accéder aux ressources d’entreprise. Dans la couche d’application cliente, les stratégies de protection des applications constituent une protection contre la perte de données. Les stratégies de protection des applications empêchent le déplacement des données vers les applications ou les emplacements de stockage non protégés. Ces stratégies vous permettent aussi de réinitialiser les données d’entreprise en cas de perte ou de vol d’un appareil.
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>Appliquer un accès conditionnel aux ressources d’entreprise
 
@@ -97,17 +97,17 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > Les stratégies d’accès conditionnel ne fonctionnent pas si aucune stratégie de conformité n’est en place pour valider la conformité.
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>Éviter la perte de données d’entreprise avec les stratégies de protection des applications
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>Éviter la perte de données d’entreprise avec les stratégies de protection des applications
 
-Grâce aux stratégies de protection des applications Intune, vous pouvez choisir le mode d’accès à vos données (avec ou sans inscription d’appareils). Cette souplesse vous permet de protéger les données d’entreprise de sorte que même si un utilisateur n’inscrit pas son appareil dans Intune, il peut toujours accéder aux données d’entreprise en toute sécurité.
+Grâce aux stratégies de protection des applications Intune, vous pouvez choisir le mode d’accès à vos données, avec ou sans inscription d’appareils. Cette souplesse vous permet de protéger les données d’entreprise de sorte que même si un utilisateur n’inscrit pas son appareil dans Intune, il peut toujours accéder aux données d’entreprise en toute sécurité.
 
-Vous pouvez utiliser des [stratégies de protection des applications Intune](app-protection-policies.md) pour mieux protéger les données d’entreprise accessibles aux appareils iOS et Android de vos utilisateurs. En utilisant ces stratégies au niveau de l’application, vous pouvez contrôler la façon dont les données d’entreprise sont utilisées et partagées par les employés, même si l’appareil lui-même n’est pas géré par Intune.
+Vous pouvez utiliser des [stratégies de protection des applications Intune](app-protection-policies.md) pour mieux protéger les données d’entreprise accessibles aux appareils iOS et Android. En utilisant ces stratégies au niveau de l’application, vous pouvez contrôler la façon dont les données d’entreprise sont utilisées et partagées par les employés, même si l’appareil lui-même n’est pas géré par Intune.
 
-Utilisez les [stratégies de protection des informations Windows](app-protection-policies-configure-windows-10.md) pour faire de même avec les appareils Windows 10 gérés. Ces stratégies fonctionnent sans interférer avec l’expérience de l’employé. Elles n’exigent pas de modifier votre environnement réseau ou d’autres applications.
+Utilisez la [protection des informations Windows (WIP)](app-protection-policies-configure-windows-10.md) pour faire de même avec les appareils Windows 10 gérés. Ces stratégies fonctionnent sans interférer avec l’expérience de l’employé. Elles n’exigent pas de modifier votre environnement réseau ou d’autres applications.
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Supprimer les données d’entreprise tout en conservant les données personnelles intactes
 
-Dès qu’un appareil est devenu inutile au travail, qu’il est réaffecté ou simplement perdu, vous pouvez supprimer les données et applications d’entreprise de celui-ci. Pour ce faire, vous pouvez utiliser les fonctionnalités Intune de suppression des données d’entreprise et de réinitialisation aux paramètres d’usine. Vos utilisateurs peuvent aussi réinitialiser à distance leurs appareils personnels à partir du Portail d’entreprise Intune si ces appareils sont inscrits dans Intune.
+Dès qu’un appareil devient inutile au travail, qu’il est réaffecté ou qu’il est perdu, vous pouvez supprimer les données et applications d’entreprise de celui-ci. Pour ce faire, vous pouvez utiliser les fonctionnalités Intune de suppression des données d’entreprise et de réinitialisation aux paramètres d’usine. Vos utilisateurs peuvent aussi réinitialiser à distance leurs appareils personnels à partir du Portail d’entreprise Intune si ces appareils sont inscrits dans Intune.
 
 Une [réinitialisation aux paramètres d’usine](devices-wipe.md) rétablit les paramètres d’usine de l’appareil, supprime les données et les paramètres de l’utilisateur, et supprime l’appareil de la gestion Intune. [Supprimer les données d’entreprise](devices-wipe.md#remove-company-data) supprime uniquement les données d’entreprise de l’appareil, mais garde intactes les données personnelles des utilisateurs.
 

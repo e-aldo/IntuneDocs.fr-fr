@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscrire des appareils avec le gestionnaire d’inscription d’appareil
 
@@ -40,15 +40,15 @@ Seuls les utilisateurs existants dans la console Intune peuvent être gestionnai
 
 L’utilisateur du gestionnaire d’inscription d’appareil peut :
 
--   Inscrire jusqu’à 1 000 appareils dans Intune.
+-   Inscrire jusqu’à 1 000 appareils dans Intune
 -   Se connecter au Portail d’entreprise pour obtenir des applications d’entreprise
--   Configurer l’accès aux données de l’entreprise en déployant des applications spécifiques aux rôles sur les tablettes.
+-   Configurer l’accès aux données de l’entreprise en déployant des applications spécifiques aux rôles sur les tablettes
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Limitations des appareils qui sont inscrits avec un compte de gestionnaire d’inscription d’appareil
 
 Les appareils inscrits avec un compte de gestionnaire d’inscription d’appareil ont les limitations suivantes :
 
-  - Pas d’accès par utilisateur. Les appareils n’ayant pas d’utilisateur affecté, l’appareil n’a pas accès à la messagerie ou aux données de l’entreprise. Les configurations VPN, par exemple, peuvent toujours être utilisées pour fournir aux applications d’appareil un accès aux données.
+  - Pas d’accès par utilisateur. Étant donné qu’aucun utilisateur n’est affecté aux appareils, l’appareil n’a pas accès à la messagerie ou aux données d’entreprise. Les configurations VPN, par exemple, peuvent toujours être utilisées pour fournir aux applications d’appareil un accès aux données.
   - Aucun accès conditionnel car il s’agit de scénarios par utilisateur.
   - L’utilisateur du gestionnaire d’inscription d’appareil ne peut pas annuler l’inscription des appareils inscrits auprès du gestionnaire d’inscription d’appareil sur l’appareil lui-même à l’aide du portail d’entreprise. L’administrateur Intune peut faire cela, mais pas l’utilisateur du gestionnaire d’inscription d’appareil.
   - Seul l’appareil local s’affiche dans l’application Portail d’entreprise ou le site web.
