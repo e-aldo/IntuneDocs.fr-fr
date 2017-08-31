@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02d7dfd2331db232269869fd941b687465f8221
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: be626985a020d518bd4285a4d0b280c6c66932a6
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Guide de création et d’affectation d’une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans Microsoft Intune Azure
 
@@ -122,11 +122,7 @@ L'application native **Courrier** sur Windows 8.1 et les versions ultérieures (
 
 1. Dans le **tableau de bord Intune**, choisissez **Accès conditionnel**.
 
-2. Dans le **Tableau de bord d’accès conditionnel**, sélectionnez **Accès conditionnel dans Azure Active Directory**.
-
-3. Choisissez **Nouvelle stratégie** pour créer votre nouvelle stratégie d’accès conditionnel Azure AD.
-
-    ![Stratégies d’accès conditionnel Azure AD](./media/Azure-AD-CA-Intune.png)
+2. Dans le panneau **Stratégies**, choisissez **Nouvelle stratégie** pour créer votre stratégie d’accès conditionnel Azure AD.
 
 ## <a name="see-also"></a>Voir aussi
 

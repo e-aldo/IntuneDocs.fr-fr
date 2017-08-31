@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4994656afcf1cdb97fdcd3877f6dabdadfb7d374
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f38320ca84a734f645c3d8554c5aef53836fd1be
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Paramètres Endpoint Protection pour Windows 10 et versions ultérieures dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Le profil Endpoint Protection vous permet de contrôler les fonctionnalités de sécurité sur les appareils Windows 10, telles que BitLocker.
+Le profil Endpoint Protection vous permet de contrôler les fonctionnalités de sécurité sur les appareils Windows 10, telles que BitLocker et Windows Defender.
 
 Utilisez les informations de cette rubrique pour découvrir comment créer des profils Endpoint Protection.
 
@@ -38,13 +38,18 @@ Utilisez les informations de cette rubrique pour découvrir comment créer des p
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
 4. Dans le panneau **Créer un profil**, entrez un **nom** et une **description** pour le profil de fonctionnalités de l’appareil.
 5. Dans la liste déroulante **Plateforme**, sélectionnez **Windows 10 et versions ultérieures**.
-6. Dans la liste déroulante **Type de profil**, choisissez **Endpoint Protection**. 
+6. Dans la liste déroulante **Type de profil**, choisissez **Endpoint Protection**.
 7. Dans le panneau **Chiffrement Windows**, configurez les paramètres souhaités. Utilisez les détails de cette rubrique pour vous aider à comprendre le rôle de chaque paramètre. Quand vous avez terminé, cliquez sur **OK**.
 8. Revenez au panneau **Créer un profil** et choisissez **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
 
-## <a name="endpoint-protection-profile-settings-reference"></a>Référence des paramètres de profil Endpoint Protection
+## <a name="windows-defender-smartscreen-settings"></a>Paramètres Windows Defender SmartScreen
+
+- **SmartScreen pour les applications et fichiers** : activez Windows SmartScreen pour l’exécution de fichiers et d’applications.
+- **Exécution des fichiers non vérifiée** : empêche l’utilisateur final d’exécuter des fichiers qui n’ont pas été vérifiés par Windows SmartScreen.
+
+## <a name="windows-encryption-settings"></a>Paramètres de chiffrement Windows
 
 ### <a name="windows-settings"></a>Paramètres Windows
 
@@ -62,16 +67,16 @@ Le profil est créé et s’affiche dans le panneau de la liste des profils.
 
 ### <a name="bitlocker-os-drive-settings"></a>Paramètres de lecteur du système d’exploitation BitLocker
 
-- **Exiger une authentification supplémentaire au démarrage** - 
-    - **Bloquer BitLocker sur les appareils dépourvus d’une puce TPM compatible** - 
-    - **Démarrage de TPM** : configurez si la puce TPM est autorisée, non autorisée ou obligatoire. 
-    - **Code PIN de démarrage de TPM** : configurez si l’utilisation d’un code PIN de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire. 
-    - **Clé de démarrage de TPM** : configurez si l’utilisation d’une clé de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire. 
+- **Exiger une authentification supplémentaire au démarrage** -
+    - **BitLocker avec puce TPM non compatible** -
+    - **Démarrage de TPM** : configurez si la puce TPM est autorisée, non autorisée ou obligatoire.
+    - **Code PIN de démarrage de TPM** : configurez si l’utilisation d’un code PIN de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
+    - **Clé de démarrage de TPM** : configurez si l’utilisation d’une clé de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
     - **Clé et code PIN de démarrage de TPM** : configurez si l’utilisation d’une clé de démarrage et d’un code PIN avec la puce TPM est autorisée, non autorisée ou obligatoire.
 - **Longueur minimale du code PIN** : activez ce paramètre pour configurer une longueur minimale pour le code PIN de démarrage de TPM.
     - **Nombre minimal de caractères** : entrez le nombre de caractères obligatoires pour le code PIN de démarrage (**4**-**20**).
 - **Activer la récupération du lecteur du système d’exploitation** : activez ce paramètre pour contrôler comment les lecteurs du système d’exploitation protégés par BitLocker sont récupérés quand les informations de démarrage nécessaires ne sont pas disponibles.
-    - **Autoriser l’agent de récupération de données basé sur le certificat** : activez ce paramètre si vous souhaitez que les agents de récupération de données puissent être utilisés avec les lecteurs du système d’exploitation protégés par BitLocker.
+    - **Agent de récupération de données basé sur les certificats** : activez ce paramètre si vous souhaitez que les agents de récupération de données puissent être utilisés avec les lecteurs du système d’exploitation protégés par BitLocker.
     - **Création d’un mot de passe de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer un mot de passe de récupération de 48 chiffres.
     - **Création d’une clé de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer une clé de récupération de 256 bits.
     - **Masquer les options de récupération dans l’Assistant Installation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs de voir ou de changer les options de récupération quand ils activent BitLocker.
@@ -92,7 +97,7 @@ Le profil est créé et s’affiche dans le panneau de la liste des profils.
 
 - **Refuser l’accès en écriture à un lecteur de données fixe non protégé par BitLocker** : si ce paramètre est activé, la protection BitLocker doit être activée sur tous les lecteurs de données fixes, ou intégrés, pour qu’ils soient accessibles en écriture.
 - **Activer la récupération des lecteurs fixes** : activez ce paramètre pour contrôler comment les lecteurs fixes protégés par BitLocker sont récupérés quand les informations de démarrage nécessaires ne sont pas disponibles.
-    - **Autoriser un agent de récupération de données** : activez ce paramètre si vous souhaitez que les agents de récupération de données soient utilisés avec les lecteurs fixes protégés par BitLocker.
+    - **Agent de récupération de données** : activez ce paramètre si vous souhaitez que les agents de récupération de données soient utilisés avec les lecteurs fixes protégés par BitLocker.
     - **Création d’un mot de passe de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer un mot de passe de récupération de 48 chiffres.  
     - **Création d’une clé de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer une clé de récupération de 256 bits.
     - **Masquer les options de récupération dans l’Assistant Installation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs de voir ou de changer les options de récupération quand ils activent BitLocker.
@@ -113,5 +118,3 @@ Le profil est créé et s’affiche dans le panneau de la liste des profils.
 ## <a name="next-steps"></a>Étapes suivantes
 
 Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareils](device-profile-assign.md).
-
-

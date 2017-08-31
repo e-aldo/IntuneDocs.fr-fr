@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Comment vos utilisateurs Android obtiennent leurs applications
 
@@ -50,9 +50,9 @@ Si cela se produit, l’application Portail d’entreprise avertit l’utilisate
 
 Les applications peuvent être gérées ou non gérées, comme décrit ci-dessous. Le processus de fabrication d’applications gérées est le même pour tous les types d’appareil Android.
 
-**Applications gérées** - Il s’agit d’applications gérables par l’intermédiaire de stratégies. Elles ont été « encapsulées » par Intune ou ont été créées à l’aide du SDK Intune Mobile Application Management (MAM). Ces applications peuvent être gérées par Intune et faire l'objet de stratégies d'application.
+**Applications gérées** - Il s’agit d’applications gérables par l’intermédiaire de stratégies. Elles ont été « enveloppées » par Intune ou intégrées au SDK d’application Intune. Ces applications peuvent être gérées par Intune et faire l'objet de stratégies d'application.
 
-**Applications non gérées** - Il s’agit d’applications qui ne sont pas gérables par l’intermédiaire de stratégies. Elles n’ont pas été encapsulées par Intune ou n’intègrent pas le SDK MAM Intune. Vous ne pouvez pas appliquer de stratégies d'application à ces applications.
+**Applications non gérées** - Il s’agit d’applications qui ne sont pas gérables par l’intermédiaire de stratégies. Elles n’ont pas été « enveloppées » par Intune ou ne sont pas intégrées au SDK d’application Intune. Vous ne pouvez pas appliquer de stratégies d'application à ces applications.
 
 ### <a name="see-also"></a>Voir aussi
 [Ajouter des applications avec Microsoft Intune](apps-add.md)

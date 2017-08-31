@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 08/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: ae92a75958abdc97d781c5b518d70a4e54f4939a
+ms.sourcegitcommit: b5d7442e03d9727793acd1a1dd946779dbe9218d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/22/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Contourner le verrou d’activation sur des appareils iOS supervisés avec Intune
 
@@ -58,8 +58,8 @@ Intune peut demander l’état du verrou d’activation des appareils supervisé
 Avant de pouvoir contourner le verrouillage d’activation sur les appareils, vous devez d’abord l’activer en suivant ces instructions :
 
 1. Configurez un profil de restriction d’appareil Intune pour iOS avec les informations de [Guide de configuration des paramètres de restriction d’appareil](/intune-azure/configure-devices/how-to-configure-device-restrictions).
-2. Activez le paramètre de mode **plein écran** **Verrou d’activation**.
-3. Enregistrez le profile et affectez-le à des appareils sur lesquels vous souhaitez gérer le contournement du verrou d’activation.
+2. Dans les [paramètres de restriction d’appareil pour iOS](device-restrictions-ios.md), sous les paramètres **Général**, activez l’option **Verrouillage d’activation**.
+3. Enregistrez le profil, puis [affectez-le](device-profile-assign.md) aux appareils sur lesquels vous souhaitez gérer le contournement du verrouillage d’activation.
 
 
 ## <a name="how-to-use-activation-lock-bypass"></a>Comment utiliser le contournement du verrou d’activation
