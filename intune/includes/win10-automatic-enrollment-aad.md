@@ -1,15 +1,15 @@
 ## <a name="enable-windows-10-automatic-enrollment"></a>Activer l’inscription automatique Windows 10
 
-L’inscription automatique permet aux utilisateurs d’inscrire leurs appareils Windows 10 dans Intune lorsqu’ils ajoutent leur compte professionnel à des appareils personnels ou lorsqu’ils joignent leurs appareils d’entreprise à Azure Active Directory. En arrière-plan, l’appareil de l’utilisateur s’inscrit et rejoint Azure Active Directory. Une fois inscrit, l’appareil est géré par Intune.
+L’inscription automatique permet aux utilisateurs d’inscrire leurs appareils Windows 10 dans Intune. Pour s’inscrire, les utilisateurs ajoutent leur compte professionnel à leurs appareils personnels ou joignent des appareils d’entreprise à Azure Active Directory. En arrière-plan, l’appareil est inscrit et joint à Azure Active Directory. Une fois inscrit, l’appareil est géré par Intune.
 
-**Conditions préalables**
+**Prérequis**
 - Abonnement Premium à Azure Active Directory ([abonnement d’évaluation](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Abonnement Microsoft Intune
 
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Configurer l’inscription automatique de MDM
 
-1. Connectez-vous au [Portail de gestion Azure](https://portal.azure.com) (https://manage.WindowsAzure.com), puis sélectionnez **Azure Active Directory**.
+1. Connectez-vous au [Portail Azure](https://portal.azure.com), puis sélectionnez **Azure Active Directory**.
 
   ![Capture d’écran du portail Azure](../media/auto-enroll-azure-main.png)
 
@@ -21,7 +21,7 @@ L’inscription automatique permet aux utilisateurs d’inscrire leurs appareils
 
   ![Capture d’écran du portail Azure](../media/auto-enroll-intune.png)
 
-4. Configurez **Portée des utilisateurs MDM**. Spécifiez les appareils des utilisateurs qui doivent être gérés par Microsoft Intune. Les appareils Windows 10 de ces utilisateurs sont automatiquement inscrits à la gestion avec Microsoft Intune.
+4. Configurez **Portée des utilisateurs MDM**. Spécifiez les appareils des utilisateurs qui doivent être gérés par Microsoft Intune. Ces appareils Windows 10 peuvent s’inscrire automatiquement pour la gestion avec Microsoft Intune.
 
   - **Aucun**
   - **Quelques-uns**
@@ -35,8 +35,8 @@ L’inscription automatique permet aux utilisateurs d’inscrire leurs appareils
     - **URL de conformité de MDM**
 
     > [!IMPORTANT]
-    > Si un utilisateur est membre d’un groupe pour lequel l’inscription automatique à MDM et la gestion des applications mobiles (GAM) sont toutes deux activées, et qu’il tente de joindre son appareil personnel à l’espace de travail, seul GAM est activé. 
+    > Si **Portée de l’utilisateur Gestion des applications mobiles** et l’inscription MDM automatique (**Portée de l’utilisateur MDM**) sont activés pour un groupe, seule la Gestion des applications mobiles est activée. Seule la Gestion des applications mobiles est ajoutée pour les utilisateurs de ce groupe quand ceux-ci joignent leur appareil personnel à l’espace de travail. Les appareils ne sont pas automatiquement inscrits à MDM.
 
 6. Sélectionnez **Enregistrer**.
 
-Par défaut, l'authentification à deux facteurs n'est pas activée pour le service. Toutefois, l’authentification à deux facteurs est recommandée au moment de l’inscription d’un appareil. Avant d’exiger l’authentification à deux facteurs pour ce service, vous devez configurer un fournisseur d’authentification à deux facteurs dans Azure Active Directory et configurer vos comptes d’utilisateur pour l’authentification multifacteur. Consultez [Bien démarrer avec le serveur Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
+Par défaut, l'authentification à deux facteurs n'est pas activée pour le service. Toutefois, l’authentification à deux facteurs est recommandée au moment de l’inscription d’un appareil. Pour activer l’authentification à deux facteurs, configurez un fournisseur d’authentification à deux facteurs dans Azure AD et configurez vos comptes d’utilisateur pour l’authentification multifacteur. Consultez [Bien démarrer avec le serveur Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

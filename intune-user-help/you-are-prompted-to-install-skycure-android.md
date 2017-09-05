@@ -1,11 +1,11 @@
 ---
-title: "Vous devez installer Skycure sur votre appareil Android | Microsoft Docs"
-description: 
+title: Vous devez installer Symantec Endpoint Protection Mobile sur votre appareil Android | Microsoft Docs
+description: "Découvrez comment installer SEP Mobile sur votre appareil Android."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,43 +14,43 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 531963056c4e488865b1c51b76e6b9ce97fe2eb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
+ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/30/2017
 ---
-# <a name="you-need-to-install-skycure-on-your-android-device"></a>Vous devez installer Skycure sur votre appareil Android
+# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Vous devez installer Symantec Endpoint Protection Mobile sur votre appareil Android
 
-Pour pouvoir accéder à vos ressources de travail, votre administrateur informatique vous demande d’installer l’application Skycure, qui vous aide à protéger votre appareil en détectant les menaces à la sécurité potentielles.
+Pour que vous puissiez accéder à vos ressources de travail, le support technique de votre entreprise vous demande d’installer l’application Symantec Endpoint Protection (SEP) Mobile, qui vous aide à protéger votre appareil en détectant les éventuelles menaces de sécurité.
 
-Si vous avez des difficultés avec l’installation, essayez de suivre les étapes de dépannage indiquées à la fin de cette rubrique.
+Si vous rencontrez des difficultés lors de l’installation, essayez de suivre les étapes de dépannage indiquées à la fin de cette rubrique.
 
 **Opérations à effectuer :**
 
 1. À partir du haut de l’écran, faites glisser vers le bas pour ouvrir la barre Notifications, puis appuyez sur l’option **Application obligatoire - Installer Skycure à partir du Play Store**. Vous pouvez également trouver cette option dans l’application du portail d’entreprise, sous __Détails de la conformité__.
 
-  ![Page de détails sur la conformité sur un appareil Android. L’appareil n’est pas conforme. Un message s’affiche au bas de la page de Portail d’entreprise, indiquant que l’appareil ne respecte pas la stratégie de gestion des risques mobiles et qu’il faut lancer Skycure pour résoudre ce problème.](./media/skycure-resolves-compliance-android.png)
+  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
-2. Vous accédez à la page d’installation de Skycure dans le Play Store. Installez cette application, puis appuyez sur **ACCEPTER** pour lui permettre d’accéder à votre appareil.
+2. Vous accédez à la page d’installation de SEP Mobile dans le Play Store. Installez SEP Mobile, puis appuyez sur **ACCEPTER** pour lui permettre d’accéder à votre appareil.
 
-3. Ouvrez Skycure, puis appuyez sur **VÉRIFIER**.
+3. Ouvrez SEP Mobile, puis appuyez sur **VÉRIFIER**.
 
 4. Appuyez sur **Se connecter avec Azure Active Directory**, puis entrez le compte que vous utilisez pour accéder à vos e-mails et fichiers professionnels ou scolaires.
 
 5. Sélectionnez le compte utilisé pour accéder à vos e-mails et fichiers professionnels ou scolaires, puis appuyez sur **AJOUTER UN COMPTE**.
 
-6. Appuyez sur **Accepter** pour autoriser Skycure à vous connecter et à lire votre profil.
+6. Appuyez sur **Accepter** pour autoriser SEP Mobile à vous connecter et à lire votre profil.
 
-7. Lisez les informations expliquant de quelle manière Skycure protège votre appareil, puis appuyez sur **OK**. La configuration de cette application dure quelques minutes. Ensuite, elle vérifie la présence de menaces à la sécurité sur votre appareil.
+7. Lisez les informations expliquant de quelle manière SEP Mobile protège votre appareil, puis appuyez sur **OK**. La configuration de cette application dure quelques minutes. Ensuite, elle vérifie la présence de menaces de sécurité sur votre appareil.
 
-  Elle recherche immédiatement ces menaces sur votre appareil.
+8. Elle recherche immédiatement ces menaces sur votre appareil.
 
-  ![Skycure analyse votre appareil afin de détecter des menaces à la sécurité.](./media/skycure-scan-in-progress-android.png)
+  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
 
-  Si l’application Skycure détecte une menace à la sécurité sur votre appareil, elle affiche des instructions permettant de résoudre le problème.
+  Si elle détecte une menace de sécurité sur votre appareil, elle affiche des instructions permettant de résoudre le problème.
 
-  ![Skycure a détecté une menace à la sécurité.](./media/skycure-found-a-threat-android.png)
+  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
 
   Si aucune menace n’est détectée, les trois types de menace apparaîtront en vert.
 
@@ -60,6 +60,6 @@ Si vous avez des difficultés avec l’installation, essayez de suivre les étap
 
 **Si l’installation ne fonctionne pas**
 
-Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, essayez d’installer Skycure [manuellement, à partir du Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
+Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, essayez d’installer SEP Mobile [manuellement, à partir du Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).

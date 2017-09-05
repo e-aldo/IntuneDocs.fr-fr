@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
+
+## <a name="week-of-august-28-2017"></a>Semaine du 28 août 2017
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>L’application Mail iOS 11 prend en charge OAuth <!---1196951--->
+
+L’accès conditionnel avec Intune prend en charge une authentification plus sécurisée sur les appareils iOS avec OAuth. Pour cela, il y aura désormais un flux différent sur l’application Portail d’entreprise pour iOS afin de permettre une authentification plus sécurisée. Quand des utilisateurs finaux essaieront de se connecter à un nouveau compte Exchange dans l’application Mail, ils recevront une invite de vue web. Lors de leur inscription dans Intune, les utilisateurs recevront une invite pour autoriser l’application Mail native à accéder à un certificat. La plupart des utilisateurs ne verront plus d’e-mails mis en quarantaine. Les comptes de messagerie existants continueront à utiliser le protocole d’authentification de base. Ces utilisateurs recevront donc toujours des e-mails mis en quarantaine. Cette expérience de connexion pour les utilisateurs finaux est semblable à celle des applications mobiles Office.
+
+![Sélection du type de compte dans une application de messagerie native.](./media/ios-11-ca-email-after-1708-01.png)
+
+![Une fois que vous avez sélectionné Exchange, l’appareil iOS vous invite à fournir le nom du compte et l’adresse e-mail.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Spécifiez l’adresse e-mail et le nom du compte.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Envoyé à la page de connexion Microsoft externe.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Saisie du mot de passe dans la page Microsoft.](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft invite l’utilisateur à inscrire l’appareil dans la gestion.](./media/ios-11-ca-email-after-1708-06.png)
+
+![L’utilisateur est invité à procéder à l’inscription à partir du site web du portail d’entreprise.](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>Semaine du 21 août 2017
 
@@ -31,11 +52,11 @@ Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune seront mis
 
 **Expérience précédente**
 
-![ancienne interface](media\NewUI_Old_AttachFileHandler.jpg)
+![ancienne interface](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Expérience moderne**
 
-![interface moderne](media\NewUI_Modern_AttachFileHandler.jpg)
+![interface moderne](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>Semaine du 14 août 2017
@@ -86,7 +107,7 @@ Cliquez sur le lien __Se connecter à partir d’un autre appareil__.
 
 ![Suivez les instructions fournies pour accéder à la page aka.ms/devicelogin avec un code d’accès unique à partir de votre ordinateur, puis utilisez le code pour vous connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Ouvrez un navigateur et accédez à [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+Ouvrez un navigateur et accédez à [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 ![Une image du navigateur de l’utilisateur sur son ordinateur de travail plutôt sur son application Portail d’entreprise. La page « Connexion à l’appareil » invite l’utilisateur à saisir le code qu’il a reçu dans l’application Portail d’entreprise.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
