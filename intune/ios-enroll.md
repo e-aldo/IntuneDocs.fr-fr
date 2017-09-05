@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61bdbc7ca68995e23295cf099ce73dfdcaeba37c
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 8bae9bd48493f20bb4abb94290013f27a6a75dd6
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrire des appareils iOS dans Intune
 
@@ -32,9 +32,21 @@ Avant de pouvoir activer des appareils iOS, effectuez les étapes suivantes :
 - [Configurer Intune](setup-steps.md) : ces étapes ont pour but de configurer votre infrastructure Intune. Pour inscrire des appareils, vous devez notamment [définir votre autorité de gestion des appareils mobiles](mdm-authority-set.md).
 - [Obtenir un certificat Push MDM Apple](apple-mdm-push-certificate-get.md) : Apple exige un certificat pour activer la gestion des appareils iOS et macOS.
 
-Une fois ces prérequis remplis, les utilisateurs peuvent installer l’application Portail d’entreprise pour inscrire leurs appareils iOS personnels, ou l’administrateur peut configurer la gestion des appareils iOS d’entreprise. Les administrateurs peuvent également assigner des [gestionnaires d’inscription d’appareil](device-enrollment-manager-enroll.md) qui peuvent inscrire plusieurs appareils avec un compte de gestion unique. Intune prend en charge les méthodes d’inscription d’appareils d’entreprise iOS suivantes :
+## <a name="user-owned-ios-devices-byod"></a>Appareils iOS de l’utilisateur (BYOD)
 
-## <a name="device-enrollment-program"></a>Programme d’inscription d’appareils
+Vous pouvez laisser les utilisateurs inscrire leurs appareils personnels pour la gestion Intune, approche communément appelée « BYOD » (Bring Your Own Device). Une fois que vous avez répondu aux prérequis et affecté des licences aux utilisateurs, ces derniers peuvent télécharger l’application Portail d’entreprise iOS à partir de l’App Store et suivre les instructions d’inscription dans l’application.
+
+## <a name="company-owned-ios-devices"></a>Appareils iOS de l’entreprise
+Pour les organisations qui achètent des appareils pour leurs utilisateurs, Intune prend en charge les méthodes d’inscription d’appareils d’entreprise iOS suivantes :
+
+- Programme d’inscription des appareils Apple (DEP)
+- Apple School Manager
+- Inscription par le biais de l’Assistant Configuration Apple Configurator
+- Inscription directe Apple Configurator
+
+Vous pouvez aussi inscrire des appareils iOS d’entreprise avec un compte [Gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md).
+
+## <a name="device-enrollment-program"></a>Programme d’inscription des appareils
 Les organisations peuvent acheter des appareils iOS par le biais du Programme d’inscription des appareils (DEP) d’Apple. DEP vous permet de déployer un profil d’inscription « à distance » pour inscrire des appareils à la gestion. Découvrez plus en détail le [Programme d’inscription des appareils](device-enrollment-program-enroll-ios.md).
 
 ## <a name="apple-school-manager"></a>Apple School Manager
