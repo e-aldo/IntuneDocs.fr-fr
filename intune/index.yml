@@ -1,0 +1,134 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Documentation de Microsoft Intune
+metadata:
+  document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
+  title: Documentation de Microsoft Intune
+  description: "Prise en main rapide de Microsoft\_Intune. Utilisez le service de gestion de la mobilité en entreprise basé sur le cloud pour permettre à votre personnel de rester productif tout en protégeant vos données d’entreprise."
+  keywords: 'protéger, entreprise, données, Azure, Intune, EMM, appareil, application, gestion'
+  author: arob98
+  ms.author: angrobe
+  manager: angrobe
+  ms.date: 08/06/2017
+  ms.topic: article
+  ms.devlang: na
+  ms.service: microsoft-intune
+sections:
+  - items:
+      - type: markdown
+        text: "Prise en main rapide de Microsoft\_Intune. Utilisez le service de gestion de la mobilité en entreprise basé sur le cloud pour permettre à votre personnel de rester productif tout en protégeant vos données d’entreprise. Intune s’intègre à Azure Active Directory pour le contrôle d’identité et d’accès, ainsi qu’à Azure Information Protection pour la protection des données."
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: introduction-intune.md
+            html: <p>En savoir plus sur Intune et son fonctionnement.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+            title: "Qu’est-ce qu’Intune\_?"
+          - href: get-started-evaluation.md
+            html: <p>En savoir plus sur le fonctionnement d’Intune avec ce didacticiel simple.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Prise en main
+          - href: get-support.md
+            html: <p>Découvrez comment créer un ticket de support et obtenir de l’aide lorsque vous en avez besoin.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_support.svg'
+            title: Obtenir un support
+          - href: whats-new.md
+            html: <p>Découvrez les nouveautés d’Intune cette semaine.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: Nouveautés
+  - title: Nouveaux articles et billets de blog
+    items:
+      - type: paragraph
+        text: Lisez les informations les plus récentes et les plus importantes.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: what-is-intune.md
+            title: En savoir plus sur Intune sur le portail Azure
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
+          - href: ui-changes.md
+            title: Découvrir où se trouvent vos fonctionnalités Intune dans le portail Azure
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+          - href: high-level-architecture.md
+            title: Afficher l’architecture de haut niveau Intune
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+          - href: reports-nav-create-intune-reports.md
+            title: Créer des rapports avec l’entrepôt de données Intune (préversion)
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/07/using-the-new-role-based-access-controls-in-intune/'
+            title: '[Blog] En savoir plus sur les nouveaux contrôles d’accès en fonction du rôle'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_blog.svg'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/06/28/demystifying-service-health-for-microsoft-intune/'
+            title: '[Blog] Comprendre l’intégrité du service Intune'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_blog.svg'
+  - title: Vidéos
+    items:
+      - type: markdown
+        text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/FpkCI6xmsE4" frameborder="0" allowfullscreen></iframe>'
+      - type: markdown
+        text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Cn29dmgDcIw?list=PLXtHYVsvn_b-0X3R9QCJ4T-Y27DK376NR" frameborder="0" allowfullscreen></iframe>'
+  - title: Articles relatifs à la planification
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="/intune/planning-guide">Guide de planification, de conception et d’implémentation du déploiement d’Intune</a>'
+          - html: "<a href=\"/intune/migration-guide\">Guide de migration\_Intune</a>"
+  - title: Articles de procédure
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/device-enrollment">Inscrire des appareils</a>
+          - html: <a href="/intune/device-management">Gérer les appareils</a>
+          - html: <a href="/intune/app-management">Gérer les applications</a>
+          - html: <a href="/intune/device-profiles">Configurer des appareils</a>
+          - html: <a href="/intune/device-compliance-get-started">Définir la conformité des appareils</a>
+          - html: <a href="/intune/conditional-access">Configurer l’accès conditionnel</a>
+          - html: <a href="/intune/app-protection-policy">Protéger les applications</a>
+          - html: <a href="/intune/mobile-threat-defense">Configurer une protection contre les menaces mobiles</a>
+          - html: <a href="/intune/network-access-control-integrate">Intégrer le contrôle d’accès réseau</a>
+          - html: <a href="/intune/role-based-access-control">Gérer les rôles</a>
+          - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Gérer les ordinateurs avec le client logiciel Intune</a>
+  - title: Articles relatifs à la résolution des problèmes
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/help-desk-operators">Aider les utilisateurs avec le portail de résolution des problèmes</a>
+          - html: <a href="/intune/known-issues">Problèmes connus pour Intune</a>
+          - html: <a href="/intune/get-support">Obtenir un support</a>
+  - title: Articles relatifs au développement et à la personnalisation
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/custom-settings-configure">Configuration des paramètres d’appareils personnalisés</a>
+          - html: <a href="/intune/apps-prepare-mobile-application-management">Préparer des applications métier avec l’outil de création de package de restrictions d’application Intune</a>
+          - html: <a href="/intune/app-sdk">Préparer des applications métier avec le kit SDK d’application Intune</a>
+          - html: '<a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Utilisation d’Intune dans Microsoft Graph</a>'
+          - html: <a href="/intune/reports-nav-intune-date-warehouse">API d’entrepôt de données Intune</a>
+  - title: Autres ressources
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">Lire le blog Enterprise Mobility and Security</a>'
+          - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">Obtenir de l’aide sur le blog de support d’Intune</a>'
+          - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Envoyer des commentaires sur le service Intune sur UserVoice</a>'
+          - html: '<a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Poser des questions ou répondre aux questions sur le forum de discussion Intune</a>'
