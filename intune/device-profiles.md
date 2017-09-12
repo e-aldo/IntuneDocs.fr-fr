@@ -1,6 +1,6 @@
 ---
 title: "Que sont les profils d’appareil dans Microsoft Intune ?"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez plus d’informations sur les profils d’appareil Intune et comment ils peuvent vous aider à gérer et protéger les appareils de votre entreprise."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 95ce3b6a307a71431b9717abdc3980f15a916a18
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 1053ddf4195e8481cf383c441664e07c02dacdec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Que sont les profils d’appareil Microsoft Intune ?
 
@@ -41,12 +41,12 @@ Vous pouvez gérer les fonctionnalités suivantes sur vos appareils :
 
 ## <a name="device-features"></a>Fonctionnalités de l’appareil
 
-Les fonctionnalités de l’appareil vous permettent de contrôler les fonctionnalités iOS et macOS comme AirPrint, les notifications et les configurations d’appareils partagés.
+Les fonctionnalités de l’appareil vous permettent de contrôler les fonctionnalités iOS et MacOS comme AirPrint, les notifications et les configurations d’appareils partagés.
 Pour plus d’informations, consultez [Configuration des paramètres de fonctionnalité de l’appareil](device-features-configure.md) Prend en charge : iOS et MacOS.
 
 ## <a name="device-restrictions"></a>Restrictions d’appareil
 Les restrictions d’appareil vous permettent de contrôler de nombreux paramètres sur les appareils que vous gérez, dans des catégories telles que la sécurité, le matériel et le partage de données. Par exemple, vous pouvez créer un profil de restriction de l’appareil qui empêche les utilisateurs d’appareils iOS d’accéder à l’appareil photo.
-Pour plus d’informations, consultez le [Guide pratique pour configurer des paramètres de restriction d’appareil](device-restrictions-configure.md) Prend en charge : Android, iOS, macOS, Windows 10 et Windows 10 Collaboration.
+Pour plus d’informations, consultez le [Guide pratique pour configurer des paramètres de restriction d’appareil](device-restrictions-configure.md) Prend en charge : Android, iOS, Mac OS, Windows 10 et Windows 10 Collaboration.
 
 ## <a name="email"></a>E-mail
 Les profils de messagerie vous permettent de créer, d’affecter et de surveiller les paramètres de messagerie Exchange ActiveSync sur les appareils que vous gérez. Les profils de messagerie aident à garantir la cohérence, réduisent les appels au support technique et permettent aux utilisateurs finaux d’accéder à la messagerie d’entreprise sur leurs appareils personnels sans aucune autre configuration de leur part.

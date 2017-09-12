@@ -1,6 +1,6 @@
 ---
 title: "Gérer l’accès web avec l’application Managed Browser"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Déployez l’application Managed Browser pour limiter la navigation sur le web et le transfert de données du web vers d’autres applications."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 4f8534b51c89cd8dedc674468c5299b79a29f608
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -51,7 +51,7 @@ Vous pouvez créer des stratégies Managed Browser pour les types d'appareils su
 -   Appareils qui exécutent iOS 8.0 et versions ultérieures
 
 >[!IMPORTANT]
->À compter d’octobre 2017, l’application Intune Managed Browser sur l’application Android prendra uniquement en charge les appareils exécutant Android 4.4 et ultérieur. L’application Intune Managed Browser sur iOS prendra uniquement en charge les appareils exécutant iOS 9.0 et ultérieur.
+>À compter d’octobre 2017, l’application Intune Managed Browser sur l’application Android prendra uniquement en charge les appareils exécutant Android 4.4 et ultérieur. L’application Intune Managed Browser sur iOS prendra en charge seulement les appareils exécutant iOS 9.0 et ultérieur.
 >Les versions antérieures d’Android et d’iOS pourront encore utiliser Managed Browser, mais elles ne pourront pas installer les nouvelles versions de l’application et n’auront peut-être pas accès à toutes les fonctionnalités. Nous vous encourageons à mettre à jour le système d’exploitation de ces appareils avec une version prise en charge.
 
 

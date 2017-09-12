@@ -1,6 +1,6 @@
 ---
 title: "Guide pratique d’utilisation des stratégies de configuration d’application Intune pour iOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Apprenez à utiliser les stratégies de configuration d’application pour fournir des données de configuration à une application iOS lorsqu’elle est exécutée."
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a9d56a2f570c0332b394b03f25deb6351b6ba67
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: bc42f3cafa83b5f7ba053d03dbd066b725bb1fee
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour iOS
 

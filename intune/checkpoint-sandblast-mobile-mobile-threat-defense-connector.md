@@ -1,6 +1,6 @@
 ---
 title: Connecteur Check Point SandBlast Mobile avec Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intégration de Check Point SandBlast à Intune"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e722411e7eea11a604cdd2c6f7f818053d0ffbb0
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 911b5942c87804ec4d3c3046cd7f05dd436ca47c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Connecteur de protection contre les menaces mobiles Check Point SandBlast Mobile avec Intune
 

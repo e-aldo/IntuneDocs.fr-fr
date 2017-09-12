@@ -1,12 +1,12 @@
 ---
 title: "Gérer des appareils avec Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment afficher les appareils que vous gérez avec Intune et effectuer diverses opérations dessus."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 08/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d78b4a87eaa366b7bb00356c4b98d609620dcf3
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: ca40eee8a53fa3e8b2610ce414f0037180d4beaf
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Qu’est-ce que la gestion des appareils Microsoft Intune ?
 
@@ -39,7 +39,7 @@ Les actions disponibles varient selon la plateforme et la configuration de l’a
 - Effectuez les actions d’appareil à distance :
     - [Supprimer les données d’entreprise](devices-wipe.md#remove-company-data)
     - [Réinitialisation aux paramètres d’usine](devices-wipe.md#factory-reset)
-    - [Verrouillage à distance](device-remote-lock.md) 
+    - [Verrouillage à distance](device-remote-lock.md)
     - [Réinitialiser le code secret](device-passcode-reset.md)
     - [Contourner le verrouillage d’activation](device-activation-lock-bypass.md) (iOS uniquement)
     - [Redémarrage à zéro](device-fresh-start.md) (Windows uniquement)

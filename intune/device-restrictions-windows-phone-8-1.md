@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de restriction d’appareil Intune pour Windows Phone 8.1"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils Windows Phone 8.1."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 14007c8e36166e3de482afc796a01d6f4ed649c2
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows Phone 8.1 dans Microsoft Intune
 
@@ -59,7 +59,7 @@ Dans la liste des applications restreintes, vous pouvez configurer une des liste
 Une liste **Applications bloquées** - Répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter.
 Une liste **Applications autorisées** - Répertorie les applications que les utilisateurs sont autorisés à installer. Les applications qui sont gérées par Intune sont autorisées automatiquement.
 
-Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans le magasin d'applications.
+Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans l’App Store.
 
 ### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Comment spécifier l’URL vers une application dans l’App Store
 

@@ -1,6 +1,6 @@
 ---
 title: "Configurer et gérer les certificats PKCS avec Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment configurer votre infrastructure avant de créer et affecter des certificats PKCS avec Intune."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1dff7d3e00b26b4f186beb71bacf13738ac857a3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurer et gérer les certificats PKCS avec Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -182,7 +182,7 @@ Dans le portail Azure, sélectionnez la charge de travail **Configurer des appar
     - **Nom du modèle de certificat** : entrez le nom d’un modèle de certificat que doit utiliser le service d’inscription de périphériques réseau conformément à sa configuration et qui a été ajouté à une autorité de certification émettrice.
     Assurez-vous que le nom correspond exactement à l’un des modèles de certificat figurant dans le registre du serveur exécutant le service d’inscription de périphériques réseau. Assurez-vous que vous spécifiez le nom du modèle de certificat et non le nom d'affichage du modèle de certificat. 
     Pour rechercher les noms des modèles de certificats, accédez à la clé suivante : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. Les modèles de certificat s'affichent sous la forme des valeurs **EncryptionTemplate**, **GeneralPurposeTemplate**et **SignatureTemplate**. Par défaut, la valeur des trois modèles de certificat est IPSECIntermediateOffline, laquelle correspond au nom d’affichage du modèle **IPSec (requête hors connexion)**. 
-    - **Format du nom de l’objet** : dans la liste, sélectionnez comment Intune crée automatiquement le nom de l’objet dans la demande de certificat. Si le certificat est pour un utilisateur, vous pouvez également inclure l'adresse de messagerie de cet utilisateur dans le nom de l'objet. Choisissez parmi :
+    - **Format du nom de l’objet** : dans la liste, sélectionnez comment Intune crée automatiquement le nom de l’objet dans la demande de certificat. Si le certificat est pour un utilisateur, vous pouvez également inclure l'adresse e-mail de cet utilisateur dans le nom de l'objet. Choisissez parmi :
         - **Non configuré**
         - **Nom commun**
         - **Nom commun (adresse e-mail incluse)**

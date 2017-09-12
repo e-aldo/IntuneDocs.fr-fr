@@ -1,6 +1,6 @@
 ---
 title: "Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Créer et déployer des stratégies de protection d’application WIP avec Intune"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
-ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
+ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
@@ -102,7 +102,7 @@ Une fois que vous avez configuré Intune dans votre organisation, vous pouvez cr
 5.  Une fois que vous avez entré les informations dans les champs, choisissez **OK** pour ajouter l’application à votre liste **Applications autorisées**.
 
 > [!NOTE]
-> Pour ajouter plusieurs applications du Windows Store en même temps, vous pouvez cliquer sur le menu **(...)**  à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
+> Pour ajouter plusieurs applications du Windows Store en même temps, vous pouvez cliquer sur le menu **(...) ** à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Ajouter une application de bureau à votre liste d’applications autorisées
 

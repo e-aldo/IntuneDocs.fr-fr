@@ -1,6 +1,6 @@
 ---
 title: "Réinitialiser le code secret sur les appareils Windows avec Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Apprenez à utiliser Intune pour réinitialiser le code secret sur les appareils Windows intégrés au service de réinitialisation de code PIN Microsoft."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 0c00d52f3ed06e1810d8b537c2232221ac8f53bd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Réinitialiser le code secret sur les appareils Windows intégrés au service de réinitialisation de code PIN Microsoft avec Intune
 

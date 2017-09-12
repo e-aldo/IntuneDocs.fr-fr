@@ -1,6 +1,6 @@
 ---
 title: "Guide pratique pour utiliser des catégories d’appareils dans Intune"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Découvrez comment utiliser les catégories d'appareils que les utilisateurs peuvent choisir lorsqu’ils inscrivent leurs appareils dans Intune."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 00becba338f9a64e341b0b6d220b1a4ace3b40a9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="map-device-groups"></a>Mappage de groupes d'appareils
 
@@ -56,7 +56,7 @@ Au cours de cette étape, vous allez créer des groupes dynamiques dans le porta
 
 Pour continuer, reportez-vous à la rubrique [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) dans la documentation d’Azure Active Directory. 
 
-Utilisez les informations de cette section pour créer un groupe d'appareils avec une règle avancée à l’aide de l’attribut **deviceCategory**. Par exemple (**device.deviceCategory -eq** "*<the device category name you got from the Intune portal>*")
+Utilisez les informations de cette section pour créer un groupe d'appareils avec une règle avancée à l’aide de l’attribut **deviceCategory**. Par exemple (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
 Une fois que vous configurez des groupes d'appareils et que les utilisateurs inscrivent leurs appareils, ces derniers peuvent voir une liste des catégories que vous avez configurées. Une fois qu’ils choisissent une catégorie et terminent l’inscription, leur appareil est ajouté au groupe de sécurité Active Directory qui correspond à la catégorie choisie.
 
