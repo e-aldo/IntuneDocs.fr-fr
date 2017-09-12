@@ -1,10 +1,10 @@
 ---
 title: "Bien démarrer avec les utilisateurs"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Ajoutez un utilisateur à Intune pour l’autoriser à accéder aux ressources d’entreprise sur des appareils mobiles."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1559a265b28627281b484c8250d1c597d2f094c6
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: a33eb2d5dc96a2647cf2582bbc6cd4ba2d9c0961
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="get-started-with-managing-users"></a>Bien démarrer avec la gestion des utilisateurs
 
-Prenez en compte toutes les personnes de votre organisation. Toutes les personnes qui utilisent des données d’entreprise ont besoin d’un utilisateur pour gérer l’accès à ces données dans Intune. 
+Prenez en compte toutes les personnes de votre organisation. Toutes les personnes qui utilisent des données d’entreprise ont besoin d’un utilisateur pour gérer l’accès à ces données dans Intune.
 
 ## <a name="how-do-i-create-a-user"></a>Comment créer un utilisateur ?
 

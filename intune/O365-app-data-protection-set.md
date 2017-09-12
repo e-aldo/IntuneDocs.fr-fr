@@ -1,6 +1,6 @@
 ---
 title: "Définir la gestion des données de base sur des applications Office 365 dans Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Documentation de prise en charge de l’Assistant Gestion des applications Office 365."
 keywords: 
 author: lindavr
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b818152d2172ccf85a8323ba3ff70a0b270d20df
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Quelle sera l'expérience de protection de base de vos utilisateurs sur des applications Office 365 gérées ?
 

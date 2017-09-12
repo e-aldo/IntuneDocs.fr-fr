@@ -1,6 +1,6 @@
 ---
 title: "Guide pratique d’ajout d’applications de la boutique d’applications Windows Phone 8.1 à Intune"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Découvrez comment ajouter des applications de Windows Phone 8.1 Store pour Intune."
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 92cd7d1fe6f00276e9cdee3ec15d65cb612f38ae
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 175c670f78123f7a74fe5e7d87fd24ad165cb2ce
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications du Windows Phone 8.1 Store à Microsoft Intune
 

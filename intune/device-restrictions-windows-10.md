@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de restriction d’appareil Intune pour Windows 10"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils Windows 10."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0bbbdfae73dfd843f4b011cecf0217d2c6eb699
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 182088fa7c99f9f933d2228c0cdcf6a29aa4d727
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -108,7 +108,7 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 -   **Navigateur Microsoft Edge (mobile uniquement)** - autorise l’utilisation du navigateur web Edge sur l’appareil.
 -   **Liste déroulante des barres d’adresse (Desktop uniquement)** – Permet d’empêcher Edge d’afficher une liste de suggestions dans une liste déroulante quand vous tapez. Cela aide à réduire l’utilisation de la bande passante réseau entre Edge et les services Microsoft.
 -   **Synchroniser les favoris entre les navigateurs Microsoft (Desktop uniquement)** – Permet à Windows de synchroniser les Favoris entre Internet Explorer et Edge.
--   **Envoyer un en-tête Do Not Track** - Configure le navigateur Microsoft Edge pour envoyer des en-têtes Do Not Track aux sites web que les utilisateurs visitent.
+-   **Envoyer un en-tête Do Not Track** - Configure le navigateur Microsoft Edge pour envoyer des en-êtes Do Not Track aux sites web que les utilisateurs visitent.
 -   **Cookies** - Permet au navigateur d’enregistrer les cookies internet sur l’appareil.
 -   **JavaScript** - Autorise l’exécution de scripts, tels que JavaScript, dans le navigateur Microsoft Edge.
 -   **Fenêtres contextuelles** - Bloque les fenêtres publicitaires dans le navigateur (s’applique à Windows 10 Desktop uniquement).

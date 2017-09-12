@@ -1,6 +1,6 @@
 ---
 title: "Configurer l’inscription au programme Apple School Manager pour les appareils iOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment configurer l’inscription au programme Apple School Manager pour les appareils iOS d’entreprise avec Intune"
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
-ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
+ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Activer l’inscription des appareils iOS avec Apple School Manager
 
@@ -67,7 +67,7 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise avec Apple School Man
 3.  Saisissez le **nom du serveur MDM**. Le nom du serveur vous permet d’identifier le serveur de gestion des appareils mobiles (MDM) uniquement. Il ne s’agit pas du nom ou de l’URL du serveur Microsoft Intune.
    ![Capture d’écran du portail Apple School Manager avec l’option Numéro de série sélectionnée](./media/asm-server-assignment.png)
 
-4.  Choisissez **Télécharger un fichier...**  dans le portail Apple, recherchez le fichier .pem, puis choisissez **Enregistrer un serveur MDM** (en bas à droite).
+4.  Choisissez **Télécharger un fichier... ** dans le portail Apple, recherchez le fichier .pem, puis choisissez **Enregistrer un serveur MDM** (en bas à droite).
 5.  Choisissez **Obtenir un jeton** puis téléchargez le fichier de jeton de serveur (.p7m) sur votre ordinateur.
 6. Accédez à **Affectations d’appareil** et **Choisir appareil** par saisie manuelle des **numéros de série**, **numéro d’ordre**, ou **téléchargement de fichier CSV**.
      ![Capture d’écran du portail Apple School Manager avec l’option Numéro de série sélectionnée](./media/asm-device-assignment.png)

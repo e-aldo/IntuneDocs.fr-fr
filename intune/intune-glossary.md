@@ -1,6 +1,6 @@
 ---
 title: Glossaire Intune
-titleSuffix: 
+titleSuffix: Azure portal
 description: "En savoir plus sur la terminologie utilisée dans Microsoft Intune"
 keywords: 
 author: robstackmsft
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8eaf82e995e3b572d897b63aaf36480424603ce6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Glossaire Microsoft Intune
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 08/03/2017
 ## <a name="i"></a>I
 |||
 |-|-|
-|Portail Intune|Le portail Azure que vous utilisez pour la plupart des opérations de gestion Intune.|
+|Portail Azure|Le portail Azure que vous utilisez pour la plupart des opérations de gestion Intune.|
 |Client logiciel Intune|Autre mode de [gestion de PC Windows](/intune-classic/get-started/choose-how-to-manage-devices) pour vous aider à décider quelle méthode utiliser.|
 |Éditeur de logiciel Intune|Outil que vous utilisez pour [définir les applications que vous voulez déployer et les télécharger dans votre espace de stockage cloud](/intune-classic/deploy-use/add-apps).|
 |Inventaire|Utilisé pour afficher le [matériel et les logiciels installés](/intune/device-inventory) sur les appareils que vous gérez.|

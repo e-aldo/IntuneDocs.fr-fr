@@ -1,6 +1,6 @@
 ---
 title: Choisir comment inscrire les appareils Windows dans Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment configurer l’inscription des appareils Windows dans Microsoft Intune."
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bae9bd48493f20bb4abb94290013f27a6a75dd6
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 72b30ceed928ed2d3768441a5b5c2fbd8ffdeea4
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrire des appareils iOS dans Intune
 
@@ -36,7 +36,7 @@ Avant de pouvoir activer des appareils iOS, effectuez les étapes suivantes :
 
 Vous pouvez laisser les utilisateurs inscrire leurs appareils personnels pour la gestion Intune, approche communément appelée « BYOD » (Bring Your Own Device). Une fois que vous avez répondu aux prérequis et affecté des licences aux utilisateurs, ces derniers peuvent télécharger l’application Portail d’entreprise iOS à partir de l’App Store et suivre les instructions d’inscription dans l’application.
 
-## <a name="company-owned-ios-devices"></a>Appareils iOS de l’entreprise
+## <a name="company-owned-ios-devices"></a>Appareils d’entreprise iOS
 Pour les organisations qui achètent des appareils pour leurs utilisateurs, Intune prend en charge les méthodes d’inscription d’appareils d’entreprise iOS suivantes :
 
 - Programme d’inscription des appareils Apple (DEP)
@@ -46,7 +46,7 @@ Pour les organisations qui achètent des appareils pour leurs utilisateurs, Intu
 
 Vous pouvez aussi inscrire des appareils iOS d’entreprise avec un compte [Gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md).
 
-## <a name="device-enrollment-program"></a>Programme d’inscription des appareils
+## <a name="device-enrollment-program"></a>Programme d’inscription d’appareils
 Les organisations peuvent acheter des appareils iOS par le biais du Programme d’inscription des appareils (DEP) d’Apple. DEP vous permet de déployer un profil d’inscription « à distance » pour inscrire des appareils à la gestion. Découvrez plus en détail le [Programme d’inscription des appareils](device-enrollment-program-enroll-ios.md).
 
 ## <a name="apple-school-manager"></a>Apple School Manager
