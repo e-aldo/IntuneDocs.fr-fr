@@ -1,12 +1,12 @@
 ---
 title: "Afficher l’inventaire des appareils Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment afficher les appareils que vous gérez avec Intune et comprenez leur matériel et leurs applications installées."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 45ef07d68248ab4c0c6f3a3e6e8da83cb210c5c7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Guide d’affichage de l’inventaire des appareils Intune
 
@@ -30,7 +30,7 @@ La charge de travail **Appareils** vous fournit des informations sur les apparei
 Pour afficher l’inventaire des appareils .
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
 
 Choisissez maintenant l’une des options suivantes :
@@ -54,3 +54,4 @@ Choisissez maintenant l’une des options suivantes :
 
 >[!NOTE]
 > Intune collecte l’inventaire des applications uniquement sur les appareils appartenant à l’entreprise. Les applications ne sont pas inventoriées sur les appareils personnels. Pour les PC Windows 10, seul l’inventaire des applications modernes est collecté sur les appareils appartenant à l’entreprise. Intune ne collecte pas d’informations concernant les applications Win32 sur l’appareil.
+> Selon l’opérateur que vous utilisez avec les appareils, certains éléments du parc peuvent ne pas être collectés.
