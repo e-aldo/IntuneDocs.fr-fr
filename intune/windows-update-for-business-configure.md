@@ -1,6 +1,6 @@
 ---
-title: "Gérer les mises à jour logicielles"
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "Configurer les paramètres Windows Update for Business dans Intune"
+titleSuffix: Azure portal
 description: "Découvrez comment configurer les paramètres Windows Update for Business dans Intune pour contrôler les mises à jour des appareils Windows 10."
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>Gérer les mises à jour logicielles
 
@@ -54,20 +54,20 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 
     Vous pouvez configurer ce paramètre manuellement, ou vous pouvez utiliser un profil de restriction d’appareils Intune pour Windows 10 et versions ultérieures. Pour ce faire, configurez le paramètre **Général** > **Envoi de données de diagnostic** sur au minimum **De base**. Pour plus d’informations sur les profils d’appareils, consultez [Guide pratique pour configurer des paramètres de restriction d’appareils](device-restrictions-configure.md).
 
-- Dans la console d’administration Intune classique, quatre paramètres contrôlent le comportement des mises à jour logicielles. Ces paramètres font partie de la stratégie de configuration générale pour Windows 10 Desktop et les appareils mobiles :
+- Dans la console d’administration Intune, quatre paramètres contrôlent le comportement des mises à jour logicielles. Ces paramètres font partie de la stratégie de configuration générale pour Windows 10 Desktop et les appareils mobiles :
     - **Autoriser les mises à jour automatiques**
     - **Autoriser les fonctionnalités préliminaires**
     - **Jour de l’installation planifiée**
     - **Heure de l’installation planifiée**
 
-  La console classique possède également un nombre limité d’autres paramètres de mises à jour Windows 10 dans le profil de configuration des appareils. Si un de ces paramètres est configuré dans la console d’administration Intune classique lorsque vous migrez vers le portail Azure, nous vous recommandons de procéder comme suit :
+  Le portail classique possède également un nombre limité d’autres paramètres de mises à jour Windows 10 dans le profil de configuration des appareils. Si un de ces paramètres est configuré dans la console d’administration Intune lorsque vous migrez vers le portail Azure, nous vous recommandons de procéder comme suit :
 
 1. Créez des anneaux de mise à jour Windows 10 dans le portail Azure avec les paramètres dont vous avez besoin. Le paramètre **Autoriser les fonctionnalités en version préliminaire** n’est pas pris en charge dans le portail Azure, car il n’est plus applicable aux dernières versions de Windows 10. Lorsque vous créez des anneaux de mise à jour, vous pouvez configurer les trois autres paramètres, ainsi que d’autres paramètres de mises à jour Windows 10.
 
   > [!NOTE]
-  > Les paramètres de mises à jour Windows 10 créés dans la console classique ne sont pas affichés dans le portail Azure après la migration. Ils continuent toutefois à s’appliquer. Si vous avez migré un de ces paramètres et que vous modifiez la stratégie migrée à partir du portail Azure, ces paramètres sont supprimés de la stratégie.
+  > Les paramètres de mises à jour Windows 10 créés dans le portail classique ne sont pas affichés dans le portail Azure après la migration. Ils continuent toutefois à s’appliquer. Si vous avez migré un de ces paramètres et que vous modifiez la stratégie migrée à partir du portail Azure, ces paramètres sont supprimés de la stratégie.
 
-2. Supprimez les paramètres de mise à jour dans la console classique. Une fois que vous avez migré vers le portail Azure et ajouté les mêmes paramètres à un anneau de mise à jour, vous devez supprimer les paramètres dans le portail classique pour éviter d’éventuels conflits de stratégies. Par exemple, lorsque le même paramètre est configuré avec des valeurs différentes, il y a un conflit et il n’existe aucun moyen simplifié de le savoir, car le paramètre configuré dans la console classique n’apparaît pas dans le portail Azure.
+2. Supprimez les paramètres de mise à jour dans le portail classique. Une fois que vous avez migré vers le portail Azure et ajouté les mêmes paramètres à un anneau de mise à jour, vous devez supprimer les paramètres dans le portail classique pour éviter d’éventuels conflits de stratégies. Par exemple, lorsque le même paramètre est configuré avec des valeurs différentes, il y a un conflit et il n’existe aucun moyen simplifié de le savoir, car le paramètre configuré dans le portail classique n’apparaît pas dans le portail Azure.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Guide pratique pour créer et affecter des anneaux de mise à jour
 
@@ -116,7 +116,7 @@ Par exemple, vous pouvez utiliser les valeurs suivantes dans **Ajouter ou modifi
 
 - **Nom du paramètre** : ID commercial Windows Analytics
 - **Description du paramètre** : configuration d’un ID commercial pour les solutions Windows Analytics
-- **Type de données :**  chaîne
+- **Type de données : ** chaîne
 - **OMA-URI** (sensible à la casse) : ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Valeur** : *utilisez le GUID indiqué sous l’onglet Télémétrie Windows dans votre espace de travail OMS*>
 

@@ -1,6 +1,6 @@
 ---
 title: "Installer des applications Office 365 ProPlus sur des appareils Windows 10 à l’aide d’Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment utiliser Intune pour faciliter l’installation d’applications Office 365 sur des appareils Windows 10."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: c3613c1e0482654d799329069f56ec0b0aac7772
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Guide pratique pour affecter des applications Office 365 ProPlus 2016 à des appareils Windows 10 avec Microsoft Intune
 
@@ -60,7 +60,7 @@ Dans cette étape, choisissez les applications Office à affecter aux appareils.
 
 ## <a name="configure-app-information"></a>Configurer les informations de l’application
 
-Dans cette étape, indiquez des informations sur la suite d’applications. Ces informations vous permettent d’identifier la suite dans la console Intune. Elles aident aussi les utilisateurs finaux à trouver la suite dans l’application Portail d’entreprise.
+Dans cette étape, indiquez des informations sur la suite d’applications. Ces informations vous permettent d’identifier la suite dans Intune. Elles aident aussi les utilisateurs finaux à trouver la suite dans l’application Portail d’entreprise.
 
 1.  Dans le panneau **Ajouter une application**, choisissez **Informations sur la suite d’applications**.
 2.  Dans le panneau **Informations sur la suite d’applications**, indiquez les informations suivantes : 

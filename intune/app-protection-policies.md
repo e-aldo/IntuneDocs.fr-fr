@@ -1,6 +1,6 @@
 ---
 title: "Créer et déployer des stratégies de protection d’applications"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Découvrez comment les stratégies de protection d’application Intune peuvent vous aider à protéger les données utilisées par les applications que vous gérez."
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47cafd6fa252ca7db9ca1129c5dcc5bd0d70d154
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 2e535b2aa11401d51edb33cbad54e9222fd6da6a
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Guide pratique de gestion et affectation des stratégies de protection des applications
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Si vous cherchez des instructions dans la console Intune classique, consultez [Comment créer des stratégies de protection des applications](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
+Si vous cherchez des instructions dans le portail classique Intune, consultez [Comment créer des stratégies de protection des applications](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
 
 Les stratégies de protection d'application peuvent être appliquées à des applications qui s’exécutent sur des appareils gérés ou non par Intune. Pour une description plus détaillée du fonctionnement des stratégies de protection d’application et les scénarios pris en charge par les stratégies de protection d’application Intune, consultez [Nouveautés des stratégies de protection d’application Microsoft Intune](app-protection-policy.md).
 

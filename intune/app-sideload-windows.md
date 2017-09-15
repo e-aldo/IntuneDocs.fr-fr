@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signer des applications métier afin de pouvoir les déployer sur des appareils Windows avec Intune
 
@@ -55,7 +55,7 @@ Les étapes ci-dessous vous aideront à obtenir les certificats requis et à sig
 6.  **Charger l’application sur Intune**<br>
     Chargez le fichier d’application signé et votre certificat de signature de code pour rendre l’application disponible pour vos utilisateurs finaux.
 
-    1.  Dans le portail Intune, cliquez sur **Administration** &gt; **Windows Phone**.
+    1.  Dans le portail Azure, cliquez sur **Administration** &gt; **Windows Phone**.
 
     2.  Cliquez sur **Télécharger le fichier d’application signé** et connectez-vous avec votre ID d’administrateur Intune.
 
@@ -118,7 +118,7 @@ Vous pouvez déployer l’application Portail d’entreprise sur les appareils W
 
     -   `-EnterpriseId` : ID d’entreprise. Vous devez spécifier cet argument ou 'AetxPath'. Si cet argument n'est pas fourni, l'ID d'entreprise est lu dans le fichier AETX. Par exemple, 1000000001.
 
-6.  Déployez l'application Portail d'entreprise Windows Phone 8.1 (SSP.appx). Pour plus d’instructions, consultez [Guide pratique pour ajouter des applications métier Windows Phone](lob-apps-windows-phone.md) ([console classique](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
+6.  Déployez l'application Portail d'entreprise Windows Phone 8.1 (SSP.appx). Pour plus d’instructions, consultez [Guide pratique pour ajouter des applications métier Windows Phone](lob-apps-windows-phone.md) ([portail classique](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Comment renouveler le certificat de signature du code d'entreprise Symantec
 
@@ -136,7 +136,7 @@ Le certificat Symantec utilisé pour déployer des applications mobiles Windows 
 
 1.  Signez la dernière version de votre application métier.
 
-2.  Ouvrez la console Intune et accédez à **Admin** &gt; **Gestion des appareils mobiles** &gt; **Windows Phone**, puis cliquez sur **Télécharger l’application signée**.
+2.  Ouvrez le portail Azure et accédez à **Admin** &gt; **Gestion des appareils mobiles** &gt; **Windows Phone**, puis cliquez sur **Télécharger l’application signée**.
 
 3.  Téléchargez le portail d'entreprise nouvellement signé. Vous avez besoin du fichier SSP.xap qui vient d'être signé et du nouveau fichier .PFX que vous avez reçu de Symantec, ou du jeton d'inscription d'application qui a été créé avec ce nouveau fichier .PFX.
 

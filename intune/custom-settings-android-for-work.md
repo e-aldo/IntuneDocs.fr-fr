@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de profil Intune personnalisés pour Android for Work"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment créer des paramètres de profil Intune personnalisés pour les appareils Android for Work"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Créer des paramètres de profil Intune personnalisés pour les appareils Android for Work
 
@@ -32,7 +32,7 @@ Cette fonctionnalité est conçue pour vous permettre d’affecter les paramètr
 1. Suivez les instructions figurant dans le [Guide pratique pour la configuration des paramètres d’appareils personnalisés](custom-settings-configure.md) pour commencer.
 2. Dans le panneau **Paramètres OMA-URI personnalisés**, cliquez sur **Ajouter** pour ajouter un nouveau paramètre.
 3. Dans le panneau **Ajouter une ligne**, configurez les éléments suivants :
-    - **Nom** : entrez un nom unique pour les paramètres personnalisés d’Android for Work pour pouvoir l’identifier dans le portail Intune.
+    - **Nom** : entrez un nom unique pour les paramètres personnalisés d’Android for Work pour pouvoir l’identifier dans le portail Azure.
     - **Description** : fournissez une description générale de la stratégie personnalisée Android et d’autres informations pertinentes pour mieux la localiser.
     - **OMA-URI** : entrez l'identificateur OMA-URI pour lequel vous souhaitez fournir un paramètre.
     - **Type de données** : sélectionnez le type de données pour lequel vous allez spécifier ce paramètre OMA-URI. Choisissez entre **Chaîne**, **Chaîne (fichier XML)**, **Date et heure**, **Entier**, **Virgule flottante**, **Booléen** ou **Base64 (fichier)**.

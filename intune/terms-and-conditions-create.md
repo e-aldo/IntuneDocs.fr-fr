@@ -1,6 +1,6 @@
 ---
 title: "Définir les conditions générales dans Microsoft Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Définissez les conditions générales que les utilisateurs voient dans le Portail d’entreprise pour Intune. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>Vérifiez que les utilisateurs acceptent les conditions générales de la société relatives à l’accès
 
@@ -32,14 +32,14 @@ Vous pouvez créer plusieurs ensembles de conditions générales et les affecter
 ## <a name="create-terms-and-conditions"></a>Créer des conditions générales
 Effectuez ces étapes pour créer les conditions générales. Le nom d’affichage et la description sont destinés à un usage administratif, tandis que les propriétés des conditions générales sont présentées aux utilisateurs du portail d’entreprise.
 
-1. Dans le portail Intune, choisissez **Inscription de l’appareil**, puis **Conditions générales**.
+1. Dans le portail Azure, choisissez **Inscription de l’appareil**, puis **Conditions générales**.
 2. Sélectionnez **Créer**.
-![Capture d’écran du portail Intune montrant le bouton Créer pour les conditions générales](media/terms-create-terms.png)
+![Capture d’écran du portail Azure montrant le bouton Créer pour les conditions générales](media/terms-create-terms.png)
 3. Dans le panneau étendu, spécifiez les informations suivantes :
 
-   - **Nom d’affichage** : nom pour les conditions générales dans le portail Intune. Les utilisateurs ne voient pas ce nom.
+   - **Nom d’affichage** : nom pour les conditions générales dans le portail Azure. Les utilisateurs ne voient pas ce nom.
 
-   - **Description** : détails facultatifs qui vous aident à identifier cet ensemble de conditions générales dans le portail Intune.
+   - **Description** : détails facultatifs qui vous aident à identifier cet ensemble de conditions générales dans le portail Azure.
 
 4. Sélectionnez la flèche en regard de Définir la condition d'utilisation pour ouvrir le panneau des Conditions générales, puis entrez les informations suivantes :
 
@@ -64,9 +64,9 @@ L’exemple suivant montre les conditions générales dans la console d’admini
 
 Vous pouvez affecter des conditions générales à des groupes d’utilisateurs qui doivent les accepter avant d’utiliser le Portail d’entreprise.
 
-1. Dans le portail Intune, choisissez **Inscription de l’appareil**, puis **Conditions générales**.
+1. Dans le portail Azure, choisissez **Inscription de l’appareil**, puis **Conditions générales**.
 2. Dans la liste des conditions générales, sélectionnez celles à affecter, puis sélectionnez **Groupes affectés**.
-![Capture d’écran du panneau Affecter un groupe du portail Intune montrant le bouton Sélectionner un groupe et un bouton Sélectionner pour l’affectation des conditions générales](media/terms-assign-groups.png)
+![Capture d’écran du panneau Affecter un groupe du portail Azure montrant le bouton Sélectionner un groupe et un bouton Sélectionner pour l’affectation des conditions générales](media/terms-assign-groups.png)
 3. Cliquez sur le bouton **Sélectionner un groupe** et, dans le panneau **Sélectionner des groupes**, sélectionnez les groupes auxquels vous souhaitez affecter les conditions générales, puis cliquez sur **Sélectionner**. Vous ne pouvez pas affecter des conditions générales à des groupes dynamiques.
 4. Dans le panneau **Groupes affectés**, cliquez sur **Enregistrer**.  Les conditions générales sont maintenant affectées aux utilisateurs dans les groupes sélectionnés. Les utilisateurs seront invités à accepter les conditions générales la prochaine fois qu’ils accèderont au portail d’entreprise. Il suffit d’accepter une seule fois les conditions générales. Les utilisateurs de plusieurs appareils n’ont pas besoin d’accepter ces conditions sur chaque appareil.
 

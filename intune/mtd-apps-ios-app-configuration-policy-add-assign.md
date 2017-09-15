@@ -1,7 +1,7 @@
 ---
 title: Ajouter et affecter des applications MTD dans Intune
-titleSuffix: Intune on Azure
-description: "Ajouter des applications MTD, l’application Microsoft Authenticator et une stratégie de configuration iOS dans Intune sur Azure"
+titleSuffix: Azure portal
+description: "Ajouter des applications MTD, l’application Microsoft Authenticator et une stratégie de configuration iOS avec Intune dans le portail Azure"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7edd80c7bae429c1f4032cf59aaaf8d91786f92c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 6d0802107353eee9359e0eff17b69037d9a237a6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Ajouter et affecter des applications Mobile Threat Defense (MTD) avec Intune
 
@@ -86,7 +86,7 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 
 1. Accédez au [portail Azure](https://portal.sazure.com), connectez-vous avec vos informations d’identification, puis accédez à la page d’application.
   
-2. Ajoutez l’**application iOS Lookout for Work**  comme **application cliente native**.
+2. Ajoutez l’**application iOS Lookout for Work ** comme **application cliente native**.
 
 3. Remplacez **com.lookout.enterprise.nom_de_votre_entreprise** par l’ID d’ensemble client que vous avez sélectionné quand vous avez signé le package IPA.
 
@@ -115,7 +115,7 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 
 ### <a name="for-skycure"></a>Pour Skycure
 
--   Utilisez le même compte Azure AD configuré précédemment dans la [console de gestion Skycure](https://aad.skycure.com), qui doit être le même compte utilisé pour vous connecter à la console classique Intune.
+-   Utilisez le même compte Azure AD configuré précédemment dans la [console de gestion Skycure](https://aad.skycure.com), qui doit être le même compte utilisé pour vous connecter au portail classique Intune.
 
 -   Vous devez **télécharger** le fichier de stratégie de configuration d’applications iOS : 
     -   Accédez à la [console de gestion Skycure](https://aad.skycure.com) et connectez-vous avec vos informations d’identification d’administrateur.

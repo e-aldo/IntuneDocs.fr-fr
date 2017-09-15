@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de VPN Intune pour les appareils Windows Phone 8.1"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils Windows Phone 8.1."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a009a16c7c475864f665f6ad0ab8fe1853c801b4
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: debfe6cde108daf88db8d18db1e7da2186fc32ea
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils Windows Phone 8.1 dans Microsoft Intune
 
@@ -29,7 +29,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-d
 
 ## <a name="base-vpn-settings"></a>Paramètres VPN de base
 
-- **Appliquer tous les paramètres à Windows Phone 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail Intune classique. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est définie sur **Configuré**, les paramètres seront uniquement appliqués aux appareils Windows Phone 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliqueront également aux appareils Windows 10 Mobile.
+- **Appliquer tous les paramètres à Windows Phone 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail classique Intune. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est définie sur **Configuré**, les paramètres seront uniquement appliqués aux appareils Windows Phone 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliqueront également aux appareils Windows 10 Mobile.
 - **Nom de connexion** : saisissez un nom pour cette connexion. Les utilisateurs finaux voient ce nom lorsqu’ils consultent leur appareil pour obtenir la liste des connexions VPN disponibles.
 - **Méthode d’authentification** : choisissez la façon dont les appareils s’authentifient auprès du serveur VPN à partir de :
     - **Certificats** : sous **Certificat d’authentification**, choisissez le profil de certificat SCEP ou PKCS que vous avez créé précédemment pour authentifier la connexion. Pour plus d’informations sur les profils de certificat, consultez [Guide pratique pour configurer des certificats](certificates-configure.md).

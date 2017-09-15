@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 00fc685062c090b40e20ed3dfa30afbeeb5c9780
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Appareils et navigateurs pris en charge
 
@@ -31,7 +31,7 @@ Avant de commencer la configuration de Microsoft Intune, passez en revue les con
 - [Appareils et ordinateurs pris en charge](#intune-supported-devices)
 - [Liste des navigateurs web pris en charge pour l’utilisation d’Intune](#intune-supported-web-browsers)
 
-Vous devez également vous familiariser avec l'[utilisation de la bande passante réseau Intune](network-bandwidth-use.md) ([console classique](/intune-classic/get-started/network-bandwidth-use)).
+Vous devez également vous familiariser avec [l’utilisation de la bande passante réseau Intune](network-bandwidth-use.md) ([portail classique](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-devices"></a>Appareils pris en charge par Intune
 
@@ -43,7 +43,7 @@ Vous ne pouvez pas utiliser Intune pour gérer les systèmes d’exploitation Wi
 
 ### <a name="windows-pc-software-client"></a>Logiciel client pour PC Windows
 
-Vous pouvez déployer et installer un [logiciel client Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) sur les PC Windows en guise d’alternative à l’inscription. Cette fonctionnalité est uniquement disponible dans la console classique Intune. Vous pouvez utiliser le logiciel client Intune pour gérer des PC Windows 7 et versions ultérieures, à l’exception de Windows 10 Édition familiale.
+Vous pouvez déployer et installer un [logiciel client Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) sur les PC Windows en guise d’alternative à l’inscription. Cette fonctionnalité est uniquement disponible dans le portail classique Intune. Vous pouvez utiliser le logiciel client Intune pour gérer des PC Windows 7 et versions ultérieures, à l’exception de Windows 10 Édition familiale.
 
 <!--  ### Exchange ActiveSync management
 
@@ -54,7 +54,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 Différentes tâches administratives vous obligent à utiliser l’un des sites web d’administration suivants.
 
 - [Portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Portail Intune](https://portal.azure.com/)
+- [Portail Azure](https://portal.azure.com/)
 
 Les navigateurs suivants sont pris en charge pour ces portails :
 - Microsoft Edge (dernière version)
@@ -67,12 +67,12 @@ Les navigateurs suivants sont pris en charge pour ces portails :
 
 Les fonctionnalités spécifiques à la console classique Intune, telles que le client logiciel PC Intune et l’intégration avec les partenaires de protection contre les menaces Mobile, sont uniquement disponibles dans le portail classique Intune (https://manage.microsoft.com). Le portail classique Intune nécessite la prise en charge du navigateur Silverlight.
 
-Les navigateurs Silverlight suivants prennent en charge la console classique Intune :
+Les navigateurs Silverlight suivants prennent en charge la console Intune :
 - Internet Explorer 10 ou version ultérieure
 - Google Chrome (versions antérieures à la version 42)
 - Mozilla Firefox avec Silverlight activé [En savoir plus](https://go.microsoft.com/fwlink/?linkid=836872)
 
 > [!Note]
-> Microsoft Edge et les navigateurs mobiles ne sont pas pris en charge pour la console classique Intune, car ils ne prennent pas en charge [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
+> Microsoft Edge et les navigateurs mobiles ne sont pas pris en charge pour le portail classique Intune, car ils ne prennent pas en charge [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
 
 Seuls les utilisateurs disposant d’autorisations d’administrateur de service ou les administrateurs clients ayant le rôle Administrateur général peuvent se connecter à ce portail. Pour accéder à la console d’administration, votre compte doit posséder une licence d’utilisation de Microsoft Intune et son état de connexion doit être **Autorisé**.

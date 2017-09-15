@@ -1,6 +1,6 @@
 ---
 title: "Définir des restrictions d’inscription dans Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Restriction de l’inscription par la plateforme et définition d’une limite d’inscriptions d’appareils dans Intune. \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>Ajouter des groupes dans Intune
 Intune utilise les groupes Azure Active Directory (AD) pour gérer les utilisateurs et les appareils. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation. Créez des groupes pour organiser les utilisateurs ou appareils par emplacement géographique, service ou spécification matérielle. Utilisez des groupes pour gérer les tâches à l’échelle. Par exemple, vous pouvez définir des stratégies pour de nombreux utilisateurs ou déployer des applications sur un ensemble d’appareils.
@@ -33,8 +33,8 @@ Vous pouvez ajouter les types de groupes suivants :
 ## <a name="add-a-new-group"></a>Ajouter un nouveau groupe
 
 Utilisez les étapes ci-après pour créer un groupe.
-1. Dans le portail Intune, accédez à **Groupes**, puis choisissez **Nouveau groupe** dans le panneau **Tous les groupes**.
-  ![Capture d’écran du portail Intune avec l’option Nouveau groupe sélectionnée](./media/groups-add-new.png)
+1. Dans le portail Azure, accédez à **Groupes**, puis choisissez **Nouveau groupe** dans le panneau **Tous les groupes**.
+  ![Capture d’écran du portail Azure avec l’option Nouveau groupe sélectionnée](./media/groups-add-new.png)
 2. Spécifiez le **Nom** et la **Description** du nouveau groupe. Ces propriétés s’affichent uniquement dans le portail de gestion et ne sont pas visibles pour les utilisateurs.
 
 3. Choisissez **Type d’appartenance** :

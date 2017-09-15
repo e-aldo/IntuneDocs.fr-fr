@@ -5,27 +5,27 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 07/05/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
 > [!NOTE]
 > Vous pouvez d’abord consulter la [Présentation du SDK de l’application Intune](app-sdk.md), qui aborde les fonctionnalités actuelles du SDK et la manière de préparer l’intégration sur chaque plateforme prise en charge.
 
-Le kit SDK d’application Microsoft Intune pour Android vous permet d’incorporer des stratégies de protection des applications Intune (également appelées stratégies **APP** ou GAM) dans votre application Android native. Une application compatible avec Intune est une application intégrée au SDK d’application Intune. Les administrateurs Intune peuvent facilement déployer des stratégies de protection des applications sur votre application compatible avec Intune quand Intune gère activement l’application.
+Le Kit de développement logiciel SDK (SDK) d’application Microsoft Intune pour Android vous permet d’incorporer des stratégies de protection des applications Intune (également appelées stratégies **APP** ou GAM) dans votre application Android native. Une application compatible avec Intune est une application intégrée au SDK d’application Intune. Les administrateurs Intune peuvent facilement déployer des stratégies de protection des applications sur votre application compatible avec Intune quand Intune gère activement l’application.
 
 
 ## <a name="whats-in-the-sdk"></a>Contenu du SDK
@@ -409,7 +409,7 @@ Tout d’abord, lisez les instructions d’intégration de la bibliothèque ADAL
 
 Le SDK s’appuie sur la bibliothèque [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) pour ses scénarios d’[authentification](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) et de lancement conditionnel, ce qui nécessite que les applications soient configurées avec [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Les valeurs de configuration sont communiquées au SDK par le biais de métadonnées AndroidManifest.
 
-Pour configurer votre application et mettre en œuvre une authentification appropriée, ajoutez le code suivant au nœud de l’application dans AndroidManifest.xml. Certaines de ces configurations sont uniquement nécessaires si votre application utilise la bibliothèque ADAL pour l’authentification en général. Dans ce cas, vous avez besoin des valeurs spécifiques que votre application utilise pour s’inscrire auprès d’AAD. De cette façon, l’utilisateur final n’est pas invité à s’authentifier à deux reprises quand AAD détecte deux valeurs d’inscription distinctes : l’une provenant de l’application et l’autre du SDK.
+Pour configurer votre application et mettre en œuvre une authentification approprié, ajoutez le code suivant au nœud de l’application dans AndroidManifest.xml. Certaines de ces configurations sont uniquement nécessaires si votre application utilise la bibliothèque ADAL pour l’authentification en général. Dans ce cas, vous avez besoin des valeurs spécifiques que votre application utilise pour s’inscrire auprès d’AAD. De cette façon, l’utilisateur final n’est pas invité à s’authentifier à deux reprises quand AAD détecte deux valeurs d’inscription distinctes : l’une provenant de l’application et l’autre du SDK.
 
 ```xml
 <meta-data
@@ -456,8 +456,9 @@ Vous trouverez ci-dessous quelques approches courantes pour la configuration d�
     |--|--|
     | Authority | Environnement souhaité dans lequel les comptes AAD ont été configurés |
     | ClientID | ID client de l’application (généré par Azure AD quand l’application est inscrite) |
-    | NonBrokerRedirectURI | URI de redirection valide pour l’application, ou `urn:ietf:wg:oauth:2.0:oob` par défaut. <br><br> Veillez à configurer la valeur comme URI de redirection acceptable pour l’ID client de votre application.
-    | SkipBroker | False |
+    | NonBrokerRedirectURI | URI de redirection valide pour l’application, ou `urn:ietf:wg:oauth:2.0:oob` 
+    . <br><br> Veillez à configurer la valeur comme URI de redirection acceptable pour l’ID client de votre application.
+   | SkipBroker | False |
 
 
 3. **L’application intègre la bibliothèque ADAL, mais ne prend pas en charge l’authentification répartie ou l’authentification unique à l’échelle de l’appareil :**
@@ -601,7 +602,7 @@ Result getRegisteredAccountStatus(String upn);
 
 #### <a name="registration"></a>Inscription
 
-* Par souci pratique, les méthodes d’inscription sont idempotentes. Par exemple, `registerAccountForMAM()` inscrit un compte et tente d’inscrire l’application uniquement si le compte n’est pas encore inscrit, et `unregisterAccountForMAM()` annule l’inscription d’un compte uniquement s’il est actuellement inscrit. Les appels suivants étant non-opérationnels, il n’y a aucun risque à appeler ces méthodes plusieurs fois. En outre, la correspondance entre les appels à ces méthodes et les notifications de résultats n’est pas garantie : autrement dit, si `registerAccountForMAM` est appelé pour une identité déjà inscrite, la notification peut ne pas être envoyée à nouveau pour cette identité. Il est possible que des notifications envoyées ne correspondent à aucun appel à ces méthodes, car le SDK peut tenter d’effectuer périodiquement des inscriptions en arrière-plan, et des annulations d’inscription peuvent être déclenchées par des demandes de réinitialisation envoyées par le service Intune.
+* Par souci pratique, les méthodes d’inscription sont idempotent. Par exemple, `registerAccountForMAM()` inscrit un compte et tente d’inscrire l’application uniquement si le compte n’est pas encore inscrit, et `unregisterAccountForMAM()` annule l’inscription d’un compte uniquement s’il est actuellement inscrit. Les appels suivants étant non-opérationnels, il n’y a aucun risque à appeler ces méthodes plusieurs fois. En outre, la correspondance entre les appels à ces méthodes et les notifications de résultats n’est pas garantie : autrement dit, si `registerAccountForMAM` est appelé pour une identité déjà inscrite, la notification peut ne pas être envoyée à nouveau pour cette identité. Il est possible que des notifications envoyées ne correspondent à aucun appel à ces méthodes, car le SDK peut tenter d’effectuer périodiquement des inscriptions en arrière-plan, et des annulations d’inscription peuvent être déclenchées par des demandes de réinitialisation envoyées par le service Intune.
 
 * Les méthodes d’inscription peuvent être appelées pour un nombre quelconque d’identités différentes, mais à l’heure actuelle un seul compte d’utilisateur peut être inscrit. Si plusieurs comptes d’utilisateur disposant d’une licence Intune et ciblés par la stratégie de protection des applications sont inscrits simultanément (ou presque), il n’existe aucun moyen de savoir lequel l’emportera.
 
@@ -749,7 +750,7 @@ Le guide de sauvegarde des données spécifie un algorithme général pour la re
 ### <a name="overview"></a>Vue d'ensemble
 Par défaut, le SDK d’application Intune applique une stratégie à l’application dans son ensemble. La multi-identité est une fonctionnalité de protection des applications Intune qui peut être activée pour permettre d’appliquer la stratégie à un niveau par identité. Ceci nécessite une participation nettement accrue de l’application par rapport à d’autres fonctionnalités de protection des applications.
 
-L’application *doit* informer le SDK du moment où elle va changer l’identité active. Dans certains cas, le SDK notifie aussi l’application du moment où un changement d’identité est nécessaire. Toutefois, dans la plupart des cas, la gestion des applications mobiles n’a pas connaissance des données affichées dans l’interface utilisateur ou utilisées sur un thread à un moment donné. Elle s’appuie donc sur l’application pour définir l’identité appropriée afin d’éviter la fuite de données. Dans les sections suivantes, certains scénarios nécessitant une action de l’application sont appelés.
+L’application *doit* informer le SDK du moment où elle va changer l’identité active. Dans certains cas, le SDK notifie aussi l’application du moment où un changement d’identité est nécessaire. Toutefois, dans la plupart des cas, la gestion des applications mobiles n’a pas connaissance des données affichées dans l’interface utilisateur ou utilisées sur un thread à un moment donné. Elle s’appuie donc sur l’application pour définir l’identité appropriée afin d’éviter la fuite de données. Dans les sections suivants, certains scénarios nécessitant une action de l’application sont appelés.
 
 > [!NOTE]
 >  Toute participation incorrecte de l’application peut entraîner des fuites de données et d’autres problèmes de sécurité.
@@ -1355,7 +1356,7 @@ Le SDK Intune respecte le contrat fourni par l’API Android, bien que des condi
 
 ## <a name="telemetry"></a>Télémétrie
 
-Le SDK d’application Intune pour Android ne contrôle pas la collecte de données à partir de votre application. Par défaut, l’application Portail d’entreprise enregistre des données de télémétrie sur les événements d’utilisation suivants. Ces données sont envoyées à Microsoft Intune. Conformément à la stratégie Microsoft, nous ne collectons aucune information d’identification personnelle (PII).
+Le SDK d’application Intune pour Android ne contrôle pas la collecte de données à partir de votre application. Par défaut, l’application Portail d’entreprise enregistre des données de télémétrie. Ces données sont envoyées à Microsoft Intune. Conformément à la stratégie Microsoft, nous ne collectons aucune information d’identification personnelle (PII).
 
 > [!NOTE]
 > Si les utilisateurs finaux choisissent de ne pas envoyer ces données, ils doivent désactiver la télémétrie sous Paramètres dans l’application Portail d’entreprise. Pour en savoir plus, consultez [Désactiver la collecte de données d’utilisation Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

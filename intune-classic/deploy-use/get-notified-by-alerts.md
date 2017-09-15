@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 7f8f914e9b7b0e2db2da3f9c8317485208d97574
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
+ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Utiliser des alertes pour être informé par Microsoft Intune
 
@@ -28,7 +28,7 @@ Les alertes vous tiennent informé de ce qu’il se passe dans Microsoft Intune.
 - Problème au niveau du connecteur Exchange affectant la gestion des appareils mobiles
 - Détection d’un programme malveillant sur un ordinateur
 - Détection d’un conflit entre deux stratégies Intune
-- Échec d’un déploiement du logiciel client Intune
+- Échec du déploiement d’un client logiciel Intune
 
 ## <a name="how-alerts-work"></a>Fonctionnement des alertes
 
