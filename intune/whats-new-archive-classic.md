@@ -14,17 +14,17 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 90ce9ae6c1f48b6a42cf62f8873621499ba05256
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: a12d3aaf6a893291e4818c76c02c8a3708b6b6a0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
-# <a name="whats-new-in-the-intune-classic-console---previous-months"></a>Nouveautés de la console Intune classique - mois précédents
+# <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Nouveautés du portail classique Intune - mois précédents
 
 [!INCLUDE[classic-portal](./includes/classic-portal.md)]
 
-Cette page présente les nouvelles fonctionnalités et remarques précédemment annoncées sur la [page Nouveautés](whats-new.md) pour la console Intune classique.
+Cette page présente les nouvelles fonctionnalités et remarques précédemment annoncées sur la [page Nouveautés](whats-new.md) pour le portail classique Intune.
 
 ## <a name="april-2017"></a>Avril 2017
 
@@ -67,7 +67,7 @@ Vous pouvez voir la nouvelle barre de progression dans la [page Nouveautés de l
 
 Vous pouvez désormais joindre un grand nombre d’appareils qui exécutent la mise à jour Windows 10 Creators pour Azure Active Directory et Intune à l’aide du Concepteur de configuration Windows (WCD). Pour activer [l’inscription MDM en bloc](/intune-classic/deploy-use/bulk-enroll-windows) pour votre client Azure AD, créez un package de configuration qui joint les appareils à votre client Azure AD à l’aide du Concepteur de configuration Windows, puis appliquez le package aux appareils d’entreprise que vous souhaitez inscrire et gérer en bloc. Une fois le package appliqué à vos appareils, ceux-ci se connectent à Azure AD et s’inscrivent dans Intune. Ils sont alors prêts pour que vos utilisateurs Azure AD s’y connectent.  Les utilisateurs d’Azure AD agissent sur ces appareils en tant qu’utilisateurs standard ; ils reçoivent les stratégies qui leur sont affectées ainsi que les applications dont ils ont besoin. Les scénarios de libre-service et de portail d’entreprise ne sont pas pris en charge pour le moment.
 
-### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Nouveautés de la préversion publique de l’expérience d’administrateur Intune sur Azure <!--736542-->
+### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Nouveautés de la préversion publique d’Intune dans le portail Azure<!--736542-->
 
 Début 2017, nous migrerons l’intégralité de notre expérience administrateur vers Azure, permettant ainsi une gestion puissante et intégrée des principaux flux de travail EMS sur une plateforme de services moderne et extensible à l’aide des API Graph.
 
@@ -81,13 +81,13 @@ Vous pouvez découvrir les nouveautés de la préversion Intune dans Azure [ici]
 
 #### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Accès direct aux scénarios d’inscription d’Apple <!--951869-->
 
-Pour les comptes Intune créés après janvier 2017, Intune a activé un accès direct aux scénarios d’inscription Apple à l’aide de la charge de travail Inscrire des appareils dans le portail Azure en version préliminaire. Auparavant, la version préliminaire de l’inscription Apple était uniquement accessible à partir de liens dans le portail Intune classique. Les comptes Intune créés avant janvier 2017 nécessiteront une migration unique pour que ces fonctionnalités deviennent disponibles dans Azure. La planification de la migration n’a pas encore été annoncée, mais les détails correspondants seront diffusés dès que possible. Si votre compte existant ne peut pas accéder à la version préliminaire, nous vous recommandons vivement de créer un compte d’évaluation afin de tester la nouvelle expérience.
+Pour les comptes Intune créés après janvier 2017, Intune a activé un accès direct aux scénarios d’inscription Apple à l’aide de la charge de travail Inscrire des appareils dans le portail Azure en version préliminaire. Auparavant, la version préliminaire de l’inscription Apple était uniquement accessible à partir de liens dans le portail Azure. Les comptes Intune créés avant janvier 2017 nécessiteront une migration unique pour que ces fonctionnalités deviennent disponibles dans Azure. La planification de la migration n’a pas encore été annoncée, mais les détails correspondants seront diffusés dès que possible. Si votre compte existant ne peut pas accéder à la version préliminaire, nous vous recommandons vivement de créer un compte d’évaluation afin de tester la nouvelle expérience.
 
-#### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Nouveautés pour Appx dans Intune sur Azure <!-- 1000270 -->
+#### <a name="whats-coming-for-appx-in-intune-in-the-azure-portal----1000270---"></a>Nouveautés pour Appx dans Intune dans le portail Azure <!-- 1000270 -->
 
-Dans le cadre de la migration vers Intune sur Azure, nous avons apporté trois modifications à appx :
+Dans le cadre de la migration vers Intune dans le portail Azure, nous avons apporté trois modifications à appx :
 
-1. Ajout d’un nouveau type d’application appx dans la console Intune classique qui ne peut être déployé que vers des appareils inscrits pour la gestion des appareils mobiles.
+1. Ajout d’un nouveau type d’application appx dans la console Intune qui ne peut être déployé que vers des appareils inscrits pour la gestion des appareils mobiles.
 2. Réaffectation du type d’application appx existant pour cibler uniquement les ordinateurs gérés par l’intermédiaire de l’agent de PC Intune.
 3. Conversion de tous les appxs existants en appxs MDM avec la migration.
 
@@ -97,7 +97,7 @@ Cela n’affecte aucun de vos déploiements existants vers des appareils qui son
 
 ##### <a name="what-action-do-i-need-to-take"></a>Que dois-je faire ?
 
-Après la migration, vous devez retélécharger l’appx en tant qu’appx PC si vous voulez effectuer de nouveaux déploiements de PC. Pour en savoir plus, consultez [Appx changes in Intune on Azure](https://aka.ms/appxchange) (Changement relatif aux appx dans Intune sur Azure) sur le blog de l’équipe de support technique Intune.  
+Après la migration, vous devez retélécharger l’appx en tant qu’appx PC si vous voulez effectuer de nouveaux déploiements de PC. Pour en savoir plus, consultez [Appx changes in Intune in the Azure portail](https://aka.ms/appxchange) (Changement relatif aux appx dans Intune dans le portail Azure) sur le blog de l’équipe de support technique Intune.  
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Rôles d’administration remplacés dans le portail Azure
 
@@ -235,7 +235,7 @@ Des images « Avant » et « Après » sont disponibles dans la [page des mi
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>Associer plusieurs outils de gestion au Microsoft Store pour Entreprises <!--926135-->
 Si vous utilisez plusieurs outils de gestion pour déployer des applications Microsoft Store pour Entreprises, vous ne pouviez auparavant en associer qu’un au Microsoft Store pour Entreprises. Désormais, vous pouvez associer plusieurs outils de gestion au Windows Store, par exemple, Intune et Configuration Manager. Pour plus d’informations, consultez [Gérer les applications que vous avez achetées dans le Microsoft Store pour Entreprises avec Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
-## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Nouveautés de la préversion publique de l’expérience d’administrateur Intune sur Azure <!--736542-->
+## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Nouveautés de la préversion publique d’Intune dans le portail Azure <!--736542-->
 
 Début 2017, nous migrerons l’intégralité de notre expérience administrateur vers Azure, permettant ainsi une gestion puissante et intégrée des principaux flux de travail EMS sur une plateforme de services moderne et extensible à l’aide des API Graph.
 
@@ -294,7 +294,7 @@ Le portail d’entreprise pour iOS introduit une barre de progression sur l’é
 
 ## <a name="december-2016"></a>Décembre 2016
 
-### <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Préversion publique de la nouvelle expérience d’administrateur Intune sur Azure <!--736542-->
+### <a name="public-preview-of-intune-in-the-azure-portal--736542--"></a>Préversion publique d’Intune dans le portail Azure<!--736542-->
 Début 2017, nous migrerons l’intégralité de notre expérience administrateur vers Azure, permettant ainsi une gestion puissante et intégrée des principaux flux de travail EMS sur une plateforme de services moderne et extensible à l’aide des API Graph. Avant la disponibilité générale de ce portail pour tous les clients Intune, nous sommes heureux d’annoncer que nous commencerons le déploiement d’une préversion de cette nouvelle expérience d’administration ce mois-ci pour certains clients.
 
 L’expérience administrateur dans le portail Azure utilisera la nouvelle fonctionnalité de regroupement et de ciblage précédemment annoncée ; lorsque votre client existant est migré vers la nouvelle expérience de regroupement, vous le serez également afin d’afficher un aperçu de la nouvelle expérience administrateur sur votre client. En attendant, découvrez toutes les nouveautés de Microsoft Intune dans le portail Azure dans notre [nouvelle documentation](/intune/what-is-intune).

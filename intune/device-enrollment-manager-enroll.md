@@ -1,6 +1,6 @@
 ---
 title: Inscrire des appareils - Gestionnaire d'inscription d'appareil
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Utilisez le compte de gestionnaire d’inscription d’appareil pour inscrire des appareils dans Intune. \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscrire des appareils avec le gestionnaire d’inscription d’appareil
 
@@ -36,7 +36,7 @@ Les utilisateurs doivent figurer dans le portail Azure pour être ajoutés comme
 
 Un restaurant souhaite fournir 50 tablettes à son personnel de service et des moniteurs de commande à son personnel de cuisine. Les employés n’ont jamais besoin d’accéder aux données de l’entreprise ou de se connecter comme utilisateurs. L’administrateur Intune crée un compte de gestionnaire d’inscription d’appareil et lui ajoute un superviseur de restaurant, ce qui a pour effet d’attribuer à ce superviseur les fonctionnalités associées. Le superviseur peut désormais inscrire les 50 tablettes en utilisant les informations d’identification du gestionnaire d’inscription d’appareil.
 
-Seuls les utilisateurs existants dans la console Intune peuvent être gestionnaires d'inscription d'appareil. Le gestionnaire d’inscription d’appareil ne peut pas être administrateur Intune.
+Seuls les utilisateurs existants dans le portail Azure peuvent être gestionnaires d'inscription d'appareil. Le gestionnaire d’inscription d’appareil ne peut pas être administrateur Intune.
 
 L’utilisateur du gestionnaire d’inscription d’appareil peut :
 
@@ -95,5 +95,5 @@ La suppression d’un gestionnaire d’inscription d’appareil n’affecte pas 
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Afficher les propriétés d’un gestionnaire d’inscription d’appareil
 
-1. Dans le portail Intune, choisissez **Inscription de l’appareil**, puis choisissez **Gestionnaires d’inscription d’appareil**.
+1. Dans le portail Azure, choisissez **Inscription de l’appareil**, puis choisissez **Gestionnaires d’inscription d’appareil**.
 2. Dans le panneau **Gestionnaires d’inscription d’appareil**, cliquez avec le bouton droit sur l’utilisateur DEM, puis sélectionnez **Propriétés**.

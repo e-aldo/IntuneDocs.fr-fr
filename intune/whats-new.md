@@ -1,6 +1,6 @@
 ---
 title: "Nouveautés de Microsoft Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez les nouveautés du portail Intune Azure"
 keywords: 
 author: brenduns
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
-ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
+ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Nouveautés de Microsoft Intune
 
@@ -102,7 +102,7 @@ Les utilisateurs finaux peuvent désormais utiliser des comptes différents (pro
 - En savoir plus sur les applications qui prennent en charge [la protection d’application et les identités multiples](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) avec Intune.
 
 #### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>Nouveaux paramètres pour autoriser et bloquer des applications sur les appareils Samsung KNOX Standard
-<!-- 1305423 -->  
+<!-- 1305423 822899-->  
 Dans cette version, nous ajoutons de nouveaux [paramètres de restriction des appareils](device-restrictions-android.md) qui vous permettent de spécifier les listes d’applications suivantes :
  
 - Applications que les utilisateurs sont autorisés à installer
@@ -112,7 +112,7 @@ Dans cette version, nous ajoutons de nouveaux [paramètres de restriction des ap
 Vous pouvez spécifier l’application par URL, par nom de package ou à partir de la liste des applications que vous gérez.
 
 #### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>Lien vers la nouvelle interface utilisateur des stratégies d’accès conditionnel basé sur l’application Azure AD à partir d’Intune
-
+<!-- 1016201 -->
 Les administrateurs informatiques peuvent définir des stratégies conditionnelles basées sur l’application par le biais de la nouvelle interface utilisateur des stratégies d’accès conditionnel dans la charge de travail Azure AD. L’accès conditionnel basé sur l’application qui se trouve dans la section Protection d’application Intune dans Azure restera à cet endroit pour l’instant et sera appliqué côte à côte. Par souci pratique, un lien est également prévu vers la nouvelle interface utilisateur des stratégies d’accès conditionnel dans la charge de travail Intune.
 
 - Découvrez plus en détail [l’accès conditionnel basé sur l’application sur Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
@@ -124,10 +124,10 @@ Les administrateurs informatiques peuvent définir des stratégies conditionnell
 Une [liste mise à jour de noms DNS et d’adresses IP](/intune/network-bandwidth-use) est disponible pour les paramètres de proxy de pare-feu.
 
 ### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>Utiliser Azure Active Directory pour l’accès conditionnel <!-- 967947 -->
-L’accès conditionnel est disponible dans la section Azure Active Directory de la console Azure et fournit une infrastructure plus puissante et flexible pour la définition de stratégies pour des applications cloud comme Office 365 Exchange Online et SharePoint Online.  Utilisez le panneau **accès conditionnel dans Azure Active Directory** au lieu de la console Intune classique pour configurer des stratégies. Les stratégies existantes dans la console Intune classique doivent être recréées dans la console Azure. Pour plus d’informations, consultez [Créer des stratégies d’accès conditionnel Azure AD](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
+L’accès conditionnel est disponible dans la section Azure Active Directory du portail Azure et fournit une infrastructure plus puissante et flexible pour la définition de stratégies pour des applications cloud comme Office 365 Exchange Online et SharePoint Online.  Utilisez le panneau **accès conditionnel dans Azure Active Directory** au lieu de la console Intune pour configurer des stratégies. Les stratégies existantes dans la console Intune doivent être recréées dans le portail Azure. Pour plus d’informations, consultez [Créer des stratégies d’accès conditionnel Azure AD](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Accès direct aux scénarios d’inscription d’Apple <!--951869-->
-Pour les comptes Intune créés après janvier 2017, Intune a activé un accès direct aux scénarios d’inscription Apple à l’aide de la charge de travail Inscrire des appareils dans le portail Azure. Auparavant, la version préliminaire de l’inscription Apple était uniquement accessible à partir de liens dans le portail Intune classique. Les comptes Intune créés avant janvier 2017 nécessitent une migration unique pour que ces fonctionnalités deviennent disponibles dans Azure. La planification de la migration n’a pas encore été annoncée, mais les détails correspondants seront diffusés dès que possible. Si votre compte existant ne peut pas accéder au portail Azure, nous vous recommandons vivement de créer un compte d’évaluation afin de tester la nouvelle expérience.
+Pour les comptes Intune créés après janvier 2017, Intune a activé un accès direct aux scénarios d’inscription Apple à l’aide de la charge de travail Inscrire des appareils dans le portail Azure. Auparavant, la version préliminaire de l’inscription Apple était uniquement accessible à partir de liens dans le portail classique Intune. Les comptes Intune créés avant janvier 2017 nécessitent une migration unique pour que ces fonctionnalités deviennent disponibles dans Azure. La planification de la migration n’a pas encore été annoncée, mais les détails correspondants seront diffusés dès que possible. Si votre compte existant ne peut pas accéder au portail Azure, nous vous recommandons vivement de créer un compte d’évaluation afin de tester la nouvelle expérience.
 
 ### <a name="administration-roles-being-replaced-in-azure-portal"></a>Rôles d’administration remplacés dans le portail Azure
 Les rôles d’administration de la gestion des applications mobiles (GAM), à savoir Contributeur, Propriétaire et Lecture seule, qui sont utilisés dans le portail Intune classique, sont remplacés par un nouvel ensemble complet de contrôles d’administration basés sur des rôles (RBAC) dans le portail Intune Azure. Une fois la migration effectuée vers le portail Azure, vous devez associer vos administrateurs à ces nouveaux rôles d’administration. Pour en savoir plus sur les contrôles RBAC et les nouveaux rôles, voir [Rôles Intune (RBAC) pour Microsoft Intune](/intune/role-based-access-control).

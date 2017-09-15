@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/03/2016
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1f19b7e9d57350f90baca96562a99b2fde66f91a
+ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres de stratégie Intune pour les appareils Windows 10 dans Microsoft Intune
 
@@ -41,9 +41,9 @@ Entrez un nom et une éventuelle description pour cette stratégie pour l’iden
 
 ### <a name="oma-uri-settings"></a>Paramètres OMA-URI
 
-Pour chaque paramètre OMA-URI à ajouter, entrez les informations suivantes. Utilisez les [informations de référence sur les paramètres d’URI Windows 10](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) données dans cette rubrique pour connaître les paramètres que vous pouvez utiliser :
+Pour chaque paramètre OMA-URI à ajouter, entrez les informations suivantes :
 
-- **Nom du paramètre** : Affectez un nom unique au paramètre OMA-URI pour mieux l’identifier dans la liste des paramètres.
+- **Nom du paramètre** : Affectez un nom unique au paramètre OMA-URI pour mieux l’identifier dans la liste des paramètres. Vous trouverez plus d’informations sur les paramètres de l’URI à l’aide du [fournisseur de services de configuration de stratégie](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 - **Description du paramètre** : Si vous le souhaitez, entrez une description du paramètre.
 - **Type de données** : Choisissez parmi les types de données suivants :
     - **Chaîne**

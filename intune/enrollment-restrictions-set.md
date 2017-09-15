@@ -1,6 +1,6 @@
 ---
 title: "Définir des restrictions d’inscription dans Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Restriction de l’inscription par la plateforme et définition d’une limite d’inscriptions d’appareils dans Intune. \""
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Définir des restrictions d’inscription
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-En tant qu’administrateur Intune, vous pouvez déterminer les appareils qui peuvent s’inscrire à la gestion avec Intune. Utilisez le portail Intune afin de définir les restrictions suivantes pour l’inscription d’appareils :
+En tant qu’administrateur Intune, vous pouvez déterminer les appareils qui peuvent s’inscrire à la gestion avec Intune. Utilisez le portail Azure pour définir les restrictions suivantes pour l’inscription d’appareils :
 
 - Nombre maximal d’appareils inscrits
 - Plateformes d’appareils qui peuvent s’inscrire :
@@ -68,7 +68,7 @@ Les restrictions d’inscription par défaut s’appliquent à tous les utilisat
 1. Connectez-vous au portail Azure.
 2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Choisissez **Inscription de l’appareil** > **Restrictions d’inscription**.
-4. Dans le portail Intune, choisissez **Inscription de l’appareil**, puis **Restrictions d’inscription**.
+4. Dans le portail Azure, choisissez **Inscription de l’appareil**, puis **Restrictions d’inscription**.
 5. Choisissez **Restrictions d’inscription** > **Restrictions de limite d’appareils**.
 6. Sous **Tous les utilisateurs**, sélectionnez **Limite d’appareils**. Spécifiez le nombre maximal d’appareils inscrits par utilisateur.  
 ![Capture d’écran du panneau des restrictions de limite d’appareils avec les restrictions de limite d’appareils.](./media/device-restrictions-limit.png)

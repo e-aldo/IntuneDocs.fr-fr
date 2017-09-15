@@ -1,12 +1,12 @@
 ---
 title: "Paramètres de restriction d’appareil Intune pour Android"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils Android."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Android et Samsung KNOX Standard dans Microsoft Intune
 
@@ -67,8 +67,8 @@ Utilisez ces paramètres avec une stratégie de restriction d’appareil Android
 <sup>1</sup> avant d’affecter ce paramètre sur les appareils, veillez à mettre à jour de l’application portail d’entreprise vers la dernière version sur ces appareils.
 
 Si vous configurez le paramètre **Chiffres complexes** et l’affectez à un appareil qui exécute une version antérieure à la version 5.0 d’Android, le comportement suivant s’applique.
-- Si l’application Portail d’entreprise exécute une version antérieure à 1704, aucune stratégie de code PIN ne sera appliquée à l’appareil et une erreur s’affichera dans le portail Intune.
-- Si l’application Portail d’entreprise fonctionne avec la version 1704 ou une version ultérieure, un simple code PIN peut être appliqué. Les versions d’Android antérieures à 5.0 ne gèrent pas ce paramètre. Aucune erreur ne s’affiche dans le portail Intune.
+- Si l’application Portail d’entreprise exécute une version antérieure à 1704, aucune stratégie de code PIN ne sera appliquée à l’appareil et une erreur s’affichera dans le portail Azure.
+- Si l’application Portail d’entreprise fonctionne avec la version 1704 ou une version ultérieure, un simple code PIN peut être appliqué. Les versions d’Android antérieures à 5.0 ne gèrent pas ce paramètre. Aucune erreur ne s’affiche dans le portail Azure.
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -79,7 +79,7 @@ Si vous configurez le paramètre **Chiffres complexes** et l’affectez à un ap
 
 Dans la liste des applications restreintes, vous pouvez configurer une des listes suivantes pour les appareils Android et Samsung KNOX Standard :
 
-Une liste **Applications interdites** : répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter.
+Une liste **Applications interdites** : répertorie les applications (qui ne sont pas gérées par Intune) qui seront signalées si les utilisateurs les installent et les exécutent.
 Une liste **Applications approuvées** : répertorie les applications que les utilisateurs sont autorisés à installer. Pour rester conformes, les utilisateurs ne doivent pas installer d’autres applications. Les applications qui sont gérées par Intune sont autorisées automatiquement.
 Les profils d’appareil qui contiennent des paramètres d’applications restreintes doivent être attribués à des groupes d’utilisateurs.
 
@@ -107,6 +107,21 @@ Vous pouvez également cliquer sur **Importer** pour obtenir la liste à partir 
 - **Javascript (Samsung KNOX uniquement)** - Autorise le navigateur web de l’appareil à exécuter des scripts Java.
 - **Fenêtres publicitaires (Samsung KNOX uniquement)** - Autorise l’utilisation du bloqueur de fenêtres publicitaires dans le navigateur.
 
+## <a name="allow-or-block-apps"></a>Autoriser ou bloquer des applications
+
+Ces paramètres peuvent être utilisés pour spécifier les applications qui peuvent être installées ou lancées sur les appareils qui exécutent Samsung KNOX Standard uniquement.
+En outre, vous pouvez également spécifier les applications installées qui seront masquées sur l’appareil de l’utilisateur. Les utilisateurs ne peuvent pas exécuter ces applications.
+
+- **Applications dont l’installation est autorisée (Samsung KNOX Standard uniquement)**
+- **Applications dont le lancement est bloqué (Samsung KNOX Standard uniquement)**
+- **Applications masquées pour l’utilisateur (Samsung KNOX Standard uniquement)**
+
+Pour chaque paramètre, configurez une liste d’applications à l’aide d’une des opérations suivantes :
+
+- **Ajouter des applications par nom de package** : option principalement utilisée pour les applications métier. Entrez le nom de l’application et le nom du package de l’application. 
+- **Ajouter des applications par URL** : entrez le nom de l’application et son URL dans Google Play Store.
+- **Ajouter des applications gérées** : sélectionnez l’application requise dans la liste des applications que vous gérez avec Intune.
+
 ## <a name="cloud-and-storage"></a>Cloud et stockage
 
 - **Sauvegarde Google (Samsung KNOX uniquement)** - Autorise l’utilisation de la sauvegarde de Google.
@@ -127,9 +142,9 @@ Vous pouvez également cliquer sur **Importer** pour obtenir la liste à partir 
 
 ## <a name="kiosk"></a>Kiosk
 
-Les paramètres du mode plein écran s’appliquent uniquement aux appareils Samsung KNOX Standard.
+Les paramètres Kiosk s’appliquent uniquement aux appareils Samsung KNOX Standard et uniquement aux applications que vous gérez à l’aide d’Intune.
 
-- **Sélectionner une application gérée** - Choisissez une des options suivantes pour ajouter une ou plusieurs applications pouvant s’exécuter quand l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil.
+- **Sélectionner une application gérée** : choisissez une des options suivantes pour ajouter une ou plusieurs applications gérées pouvant s’exécuter quand l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil.
     - **Ajouter des applications par nom de package**
     - **Ajouter des applications par URL**
     - **Ajouter des applications gérées**

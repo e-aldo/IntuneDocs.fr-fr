@@ -1,6 +1,6 @@
 ---
 title: RBAC avec Intune
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Préversion Intune Azure : Découvrez comment le contrôle d’accès en fonction du rôle (RBAC) vous permet de contrôler qui peut exécuter des actions et apporter des modifications."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) avec Intune
 
@@ -32,7 +32,7 @@ Le RBAC permet de contrôler qui peut effectuer diverses tâches Intune au sein 
 
 ![Exemple de RBAC Intune](./media/intune-rbac-1.PNG)
 
-À partir du nouveau portail Intune, **Azure Active Directory (Azure AD)** fournit deux rôles d’annuaire utilisables avec Intune. Ils ont l’autorisation d’effectuer toutes les activités possibles dans Intune :
+À partir du nouveau portail Azure, **Azure Active Directory (Azure AD)** fournit deux rôles d’annuaire utilisables avec Intune. Ils ont l’autorisation d’effectuer toutes les activités possibles dans Intune :
 
 - **Administrateur général :** les utilisateurs disposant de ce rôle ont accès à toutes les fonctionnalités d’administration d’Azure AD, ainsi qu’aux services fédérés à Azure AD, comme Exchange Online, SharePoint Online et Skype Entreprise Online. La personne qui ouvre un client Azure AD devient administrateur général. Seuls les administrateurs généraux peuvent affecter d’autres rôles d'administrateur Azure AD. Votre organisation peut compter plusieurs administrateurs généraux. Ils peuvent réinitialiser le mot de passe de tous les utilisateurs et de tous les autres administrateurs.
 
@@ -46,12 +46,12 @@ Le RBAC permet de contrôler qui peut effectuer diverses tâches Intune au sein 
     > [!TIP]
     > Intune présente également trois extensions d’Azure AD, **Utilisateurs**, **Groupes** et **Accès conditionnel**, qui sont contrôlées à l’aide du contrôle d’accès en fonction du rôle (RBAC) d’Azure AD. En outre, **l’administrateur de comptes d’utilisateurs** accomplit uniquement les activités relatives aux groupes et aux utilisateurs AAD ; il n’a pas l’autorisation d’effectuer toutes les activités possibles dans Intune. Reportez-vous à [RBAC avec Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) pour plus d’informations.
 
-## <a name="roles-created-in-the-intune-classic-console"></a>Rôles créés dans la console classique d’Intune
+## <a name="roles-created-in-the-intune-classic-portal"></a>Rôles créés dans le portail classique Intune
 
-Seuls les utilisateurs de type **Administrateurs de Service** d’Intune disposant de toutes les autorisations sont migrés de la console classique d’Intune vers Intune dans Azure. Vous devez les réaffecter**** avec l’accès « Lecture seule » ou « Support technique » dans les rôles Intune sur le Portail Azure, et les supprimer du Portail Classic.
+Seuls les utilisateurs de type **Administrateurs de Service** d’Intune disposant de toutes les autorisations sont migrés du portail classique Intune vers Intune dans le portail Azure. Vous devez les réaffecter** **avec l’accès « Lecture seule » ou « Support technique » dans les rôles Intune sur le Portail Azure, et les supprimer du Portail Classic.
 
 > [!IMPORTANT]
-> Vous devrez peut-être conserver l’accès Administrateur du service Intune dans la console classique si vos administrateurs ont encore besoin d’un accès pour gérer les PC avec Intune.
+> Vous devrez peut-être conserver l’accès Administrateur du service Intune dans le portail classique si vos administrateurs ont encore besoin d’un accès pour gérer les PC avec Intune.
 
 ## <a name="built-in-roles"></a>Rôles intégrés
 

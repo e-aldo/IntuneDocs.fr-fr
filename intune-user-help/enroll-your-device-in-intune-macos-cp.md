@@ -5,7 +5,7 @@ keywords: "Mac OS X, macOS, OS X"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b177b05f065f66deb8c60be768c123fc7991937
-ms.sourcegitcommit: 091f7b34f1fbf73db2bed5b46d92a78ba0dad1e4
+ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrire votre appareil macOS dans Intune avec l’application Portail d’entreprise
 
@@ -31,7 +31,7 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
   > [!NOTE]
   > Si vous voulez inscrire un appareil iOS, tel qu’un iPhone ou un iPad, [suivez plutôt ces instructions](enroll-your-device-in-intune-ios.md).
 
-1. Sur votre __station d’accueil__, recherchez __Safari__, puis ouvrez la page [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=55770) de l’application Portail d’entreprise pour macOS.
+1.  Sur votre __écran d’ancrage__, recherchez __Safari__ et accédez à [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal). 
 
 2. Téléchargez l’application. Votre Mac vérifie que le téléchargement de **CompanyPortal.dmg** peut être ouvert sans risque. Après l’avoir ouvert à partir de votre dossier **Téléchargements**, faites glisser l’application **Portail d’entreprise** sur le dossier **Applications**.
 

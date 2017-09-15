@@ -1,6 +1,6 @@
 ---
 title: "Migrer les stratégies d’accès conditionnel à partir du portail classique Intune vers le portail Azure"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Migrez les stratégies d’accès conditionnel à partir du portail classique Intune vers le portail Azure."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f1ea2b0ceb32d0aa05a28e0f01f65b80b1ddcf
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Réaffecter les stratégies d’accès conditionnel à partir du portail classique Intune vers le portail Azure
 
@@ -33,7 +33,7 @@ Si vous êtes prêt à passer au portail Azure, suivez les étapes dans cette ru
 
 - Suivez les étapes décrites dans cette rubrique pour recréer ces stratégies dans le portail Azure.
 
-- Désactivez les stratégies conditionnelles dans la console classique Intune une fois que vous avez vérifié que les nouvelles stratégies fonctionnent comme prévu dans le portail Azure.
+- Désactivez les stratégies conditionnelles dans le portail classique Intune une fois que vous avez vérifié que les nouvelles stratégies fonctionnent comme prévu dans le portail Azure.
 <br /><br />
     - **Avant de désactiver** les stratégies d’accès conditionnel dans le portail classique Intune, planifiez le déplacement des utilisateurs vers la nouvelle stratégie. Il existe deux approches :
 <br /><br />
@@ -82,7 +82,7 @@ Le panneau **Intune App Protection** dans le portail Azure permet aux administra
     ![Comparaison de l’interface utilisateur des groupes d’utilisateurs entre les portails Intune et Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > La sélection que vous effectuez pour le portail Azure doit correspondre à celle que vous avez effectuée pour le portail Intune. Par exemple, si tous les utilisateurs sont sélectionnés dans le portail classique Intune, sélectionnez **Tous les utilisateurs** dans le portail Azure. En outre, si vous avez choisi l’option **Groupes exempts** dans le portail classique Intune, excluez aussi ces groupes sélectionnés dans le portail Azure.
+    > La sélection que vous effectuez pour le portail Azure doit correspondre à celle que vous avez effectuée pour le portail Azure. Par exemple, si tous les utilisateurs sont sélectionnés dans le portail classique Intune, sélectionnez **Tous les utilisateurs** dans le portail Azure. En outre, si vous avez choisi l’option **Groupes exempts** dans le portail classique Intune, excluez aussi ces groupes sélectionnés dans le portail Azure.
 
 5. Après avoir choisi votre groupe, cliquez sur **Sélectionner**, puis sur **Terminé**.
 
@@ -150,7 +150,7 @@ Si vous avez configuré les paramètres EAS (Exchange Active Sync) dans le cadre
     ![Comparaison de l’interface utilisateur des groupes d’utilisateurs entre les portails Intune et Azure](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
-    > La sélection que vous effectuez pour le portail Azure doit correspondre à celle que vous avez effectuée pour le portail Intune. Par exemple, si tous les utilisateurs sont sélectionnés dans le portail classique Intune, sélectionnez **Tous les utilisateurs** dans le portail Azure. En outre, si vous avez choisi l’option **Groupes exempts** dans le portail classique Intune, excluez aussi ces groupes sélectionnés dans le portail Azure.
+    > La sélection que vous effectuez pour le portail Azure doit correspondre à celle que vous avez effectuée pour le portail Azure. Par exemple, si tous les utilisateurs sont sélectionnés dans le portail classique Intune, sélectionnez **Tous les utilisateurs** dans le portail Azure. En outre, si vous avez choisi l’option **Groupes exempts** dans le portail classique Intune, excluez aussi ces groupes sélectionnés dans le portail Azure.
 
 5. Après avoir choisi votre groupe, cliquez sur **Sélectionner**, puis sur **Terminé**.
 

@@ -1,12 +1,12 @@
 ---
 title: "Utiliser la réinitialisation aux paramètres d’usine ou la suppression des données d’entreprise sur des appareils à l’aide d’Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment supprimer les données d’entreprise d’un appareil ou le réinitialiser aux paramètres d’usine."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
@@ -106,7 +106,7 @@ Si l’appareil est allumé et connecté, la propagation de la commande de suppr
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Supprimer des appareils du portail Azure Active Directory
 
-En cas de problèmes de communication ou d’appareils manquants, vous devrez peut-être supprimer des appareils d’Azure Active Directory (AD). La commande de suppression ne supprime pas un appareil de la gestion, mais vous pouvez utiliser **Supprimer** pour supprimer de la console Azure les enregistrements de l’appareil inaccessibles et peu susceptibles de recommuniquer avec Azure.
+En cas de problèmes de communication ou d’appareils manquants, vous devrez peut-être supprimer des appareils d’Azure Active Directory (AD). La commande de suppression ne supprime pas un appareil de la gestion, mais vous pouvez utiliser **Supprimer** pour supprimer du portail Azure les enregistrements de l’appareil inaccessibles et peu susceptibles de recommuniquer avec Azure.
 
 1.  Connectez-vous à [Azure Active Directory dans le portail Azure](http://aka.ms/accessaad) avec vos informations d’identification d’administrateur. Vous pouvez également vous connecter au [portail Office 365](https://portal.office.com) , puis choisir **Administrateur** &gt; **Azure AD** à l’aide du lien à gauche de la page.
 3.  Créez un abonnement Azure si vous n’en avez pas. Vous ne devriez pas avoir besoin de carte de crédit ni d’effectuer un paiement si vous disposez d’un compte payant (choisissez le lien d’abonnement **Enregistrer votre abonnement Azure Active Directory gratuit**).

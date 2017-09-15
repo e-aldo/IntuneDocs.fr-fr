@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>Activer le BYOD avec Intune
 
@@ -27,7 +27,7 @@ Le flux de travail est divisé en trois processus décrits ci-dessous. Vous pouv
 
 -   **[Inscrire des appareils et vérifier leur conformité](#enroll-devices-and-check-for-compliance)** explique comment permettre aux utilisateurs d’inscrire leurs appareils personnels pour la gestion avec Intune. Intune gère les appareils iOS, macOS, Android et Windows. Cette section explique aussi comment déployer des stratégies sur les appareils et vérifier qu’ils respectent les exigences de sécurité de base.
 
-- **[Donner accès aux ressources d’entreprise](#provide-access-to-company-resources)**  vous montre comment permettre aux utilisateurs l’accès aux ressources d’entreprise de manière simple et sécurisée. Il suffit pour cela de déployer des profils d’accès sur les appareils gérés. Cette section explique aussi comment gérer les déploiements d’applications achetées en volume avec Intune.
+- **[Donner accès aux ressources d’entreprise](#provide-access-to-company-resources) ** vous montre comment permettre aux utilisateurs l’accès aux ressources d’entreprise de manière simple et sécurisée. Il suffit pour cela de déployer des profils d’accès sur les appareils gérés. Cette section explique aussi comment gérer les déploiements d’applications achetées en volume avec Intune.
 
 -   **[Protéger les données d’entreprise](#protect-company-data)** vous explique comment fournir un accès conditionnel à des ressources d’entreprise, éviter les pertes de données et supprimer des applications et des données d’entreprise sur des appareils dont vous ne vous servez plus professionnellement ou qui ont été perdus ou volés.
 
@@ -48,7 +48,7 @@ Après avoir préparé le service Intune, vous devez remplir les diverses condit
 
 -   **Appareils Android** : vous n’avez rien à faire pour préparer le service Intune à l’inscription d’appareils Android. Les utilisateurs peuvent simplement [inscrire leurs appareils Android](/intune-user-help/enroll-your-device-in-intune-android) pour la gestion à l’aide de l’application Portail d’entreprise disponible sur Google Play.
 
--   **Appareils Windows Phone et PC** Les appareils Windows peuvent être inscrits au moyen d’une configuration supplémentaire. Vous pouvez activer l’inscription automatique pour les PC Windows 10 et appareils mobiles Windows 10 dans Azure Active Directory (AD) Premium pour simplifier l’expérience de vos utilisateurs. Si vous n’avez pas Azure AD Premium, ou si vous devez prendre en charge Windows 8.1, vous pouvez créer [un alias DNS pour le serveur d’inscription](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) et ainsi faciliter l’inscription.
+-   **Appareils Windows Phone et PC** Les appareils Windows peuvent être inscrits au moyen d’une configuration supplémentaire. Vous pouvez activer l’inscription automatique pour les PC Windows 10 et appareils mobiles Windows 10 dans Azure Active Directory (AD) Premium pour simplifier l’expérience de vos utilisateurs. Si vous n’avez pas Azure AD Premium, ou si vous devez prendre en charge Windows 8.1, vous pouvez créer [un alias DNS pour le serveur d’inscription](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) et ainsi faciliter l’inscription.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Vérifier que les appareils gérés respectent les exigences de sécurité de base
@@ -82,7 +82,7 @@ Intune vous permet aussi de gérer et de déployer les applications que vous ave
 
 -   [Gérer les applications achetées en volume pour appareils iOS](vpp-apps-ios.md). Vous achetez plusieurs licences d’applications iOS via le [Programme d’achat en volume (VPP) Apple pour les entreprises](http://www.apple.com/business/vpp/). Vous devez configurer un compte Apple VPP sur le site web Apple et charger le jeton Apple VPP sur Intune. Vous pouvez alors synchroniser vos informations d’achat en volume avec Intune et suivre votre utilisation des applications achetées en volume.
 
--   [Gérez les applications achetées sur le Microsoft Store pour Entreprises](windows-store-for-business.md). Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) est l’emplacement idéal pour trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Store à Intune, vous pouvez gérer les applications achetées en volume à partir du portail Intune.
+-   [Gérez les applications achetées sur le Microsoft Store pour Entreprises](windows-store-for-business.md). Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) est l’emplacement idéal pour trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Store à Intune, vous pouvez gérer les applications achetées en volume à partir du portail Azure.
 
 ## <a name="protect-company-data"></a>Protéger les données d’entreprise
 

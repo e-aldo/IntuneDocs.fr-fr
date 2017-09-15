@@ -1,6 +1,6 @@
 ---
 title: Activer Skycure Mobile Threat Defense dans Intune
-description: Activez Skycure Mobile Threat Defense dans la console classique Intune.
+description: Activez Skycure Mobile Threat Defense dans le portail classique Intune.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9fe3c59e52d9d7732267ecfb28eac3b5c7368ed9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Activer Skycure Mobile Threat Defense dans Intune
 
@@ -28,11 +28,11 @@ Pour activer la protection contre les menaces mobiles Skycure, vous devez avoir 
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Pour activer la connexion Skycure MTD dans Intune
 
-1.  Accédez à la [console classique Intune](https://manage.microsoft.com/) puis entrez vos informations d’identification.
+1.  Accédez au [portail classique Intune](https://manage.microsoft.com/) puis entrez vos informations d’identification.
 
 2.  Choisissez **Administrateur** &gt; **Intégration de service tiers**, puis choisissez **État de Skycure** et **Synchronisation avec MTD** à l’aide du bouton bascule.
 
-    ![Activer le bouton bascule Skycure dans la console classique Intune classique](../media/mtp/enable-skycure-1.png)
+    ![Activer le bouton bascule Skycure dans le portail classique Intune](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
 > Vous devez configurer les applications Skycure avant de créer les règles de la stratégie de conformité et de configurer l’accès conditionnel. Cela garantit que l’application est prête et mise à la disposition des utilisateurs finaux qui souhaitent l’installer pour pouvoir accéder à leur messagerie ou aux autres ressources d’entreprise.

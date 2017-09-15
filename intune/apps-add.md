@@ -1,6 +1,6 @@
 ---
 title: "Guide pratique pour ajouter des applications à Microsoft Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Ces procédures vous aident à préparer vos applications dans Intune à être affectées aux utilisateurs et appareils. \""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f2ac5b25cfe3e688363a21775872baaa9ff89a
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 108f789f16304498cf54387326d112353bf70aa2
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Guide pratique pour ajouter une application à Microsoft Intune
 
@@ -74,14 +74,14 @@ Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sé
 4. Dans la charge de travail **Mobile Apps**, choisissez **Installation** > **Catégories d’application**.
 5. Dans le panneau **Catégories d’application**, la liste des catégories actuelles s’affiche. Sélectionnez une des actions suivantes :
     - **Créer une catégorie** : dans le panneau **Créer une catégorie**, saisissez un nom pour la nouvelle catégorie. Les noms peuvent être entrés dans une seule langue et ne sont pas traduits par Intune. Quand vous avez terminé, cliquez sur **Créer**.
-    - **Modifier une catégorie** : pour n’importe quelle catégorie dans la liste, choisissez «**...**  ». Dans le panneau **Propriétés**, vous pouvez entrer un nouveau nom pour la catégorie, ou supprimer la catégorie.
+    - **Modifier une catégorie** : pour n’importe quelle catégorie dans la liste, choisissez «**... ** ». Dans le panneau **Propriétés**, vous pouvez entrer un nouveau nom pour la catégorie, ou supprimer la catégorie.
 
 
 ## <a name="apps-added-automatically-by-intune"></a>Applications automatiquement ajoutées par Intune
 
 Intune contenait auparavant un nombre d’applications intégrées que vous pouviez affecter rapidement. En réponse à vos commentaires, nous avons supprimé cette liste et ces applications intégrées n’apparaîtront plus.
 Toutefois, si vous avez déjà affecté des applications intégrées, elles resteront visibles dans la liste des applications. Vous pouvez continuer à affecter ces applications en fonction de vos besoins.
-Dans une version ultérieure, nous prévoyons d’ajouter une méthode plus simple pour sélectionner et affecter les applications intégrées à partir du portail Intune.
+Dans une version ultérieure, nous prévoyons d’ajouter une méthode plus simple pour sélectionner et affecter les applications intégrées à partir du portail Azure.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

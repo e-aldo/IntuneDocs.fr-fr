@@ -1,6 +1,6 @@
 ---
 title: "Inscrire des appareils iOS - Programme d’inscription d’appareils"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez comment inscrire les appareils iOS d’entreprise à l’aide du programme d’inscription d’appareils."
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d88d191e3212e1999376fb2577a85c3dc957a787
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrire automatiquement des appareils iOS avec le Programme d’inscription des appareils d’Apple
 
@@ -55,7 +55,7 @@ Avant de pouvoir inscrire des appareils iOS à l’aide du programme DEP, vous d
 Vous utilisez le portail DEP Apple pour créer un jeton DEP. Vous utilisez également le portail DEP pour affecter des appareils à Intune à des fins de gestion.
 
 > [!NOTE]
-> Si vous supprimez le jeton de la console classique Intune avant de migrer vers Azure, Intune risque de restaurer le jeton Apple DEP supprimé. Vous pouvez supprimer à nouveau le jeton DEP du portail Azure. Vous pouvez supprimer à nouveau le jeton DEP du portail Azure.
+> Si vous supprimez le jeton du portail classique Intune avant de migrer vers Azure, Intune risque de restaurer le jeton Apple DEP supprimé. Vous pouvez supprimer à nouveau le jeton DEP du portail Azure. Vous pouvez supprimer à nouveau le jeton DEP du portail Azure.
 
 **Étape 1. Téléchargez un certificat de clé publique Intune nécessaire à la création d’un jeton DEP Apple.**<br>
 
@@ -76,7 +76,7 @@ Vous utilisez le portail DEP Apple pour créer un jeton DEP. Vous utilisez égal
 
    ![Capture d’écran de l’ajout d’un nom de serveur MDM pour le programme DEP et clic sur Suivant.](./media/enrollment-program-token-add-server.png)
 
-5. La boîte de dialogue **Ajouter &lt;nom_serveur&gt;**  s’ouvre avec le message **Charger votre clé publique**. Choisissez **Choisir un fichier** pour charger le fichier .pem, puis choisissez **Suivant**.
+5. La boîte de dialogue **Ajouter &lt;nom_serveur&gt; ** s’ouvre avec le message **Charger votre clé publique**. Choisissez **Choisir un fichier** pour charger le fichier .pem, puis choisissez **Suivant**.
 
 6.  La boîte de dialogue **Ajouter&lt;nom_serveur&gt;** affiche un lien **Votre jeton de serveur**. Téléchargez le fichier de jeton de serveur (.p7m) sur votre ordinateur, puis choisissez **Terminé**.
 

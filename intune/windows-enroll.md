@@ -1,6 +1,6 @@
 ---
 title: Inscrire des appareils Windows
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Activez la gestion des appareils mobiles (MDM) pour les appareils Windows.
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b5b5e2cdf2b31c33a02a90560e4abf955d398b0
-ms.sourcegitcommit: d5b5cb9b6dcb59094e436e07f8ed46924b37ac94
+ms.openlocfilehash: 067009356171184fa34dd51c9a0b01b41f14cab7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-windows-devices"></a>Inscrire des appareils Windows
 
@@ -27,16 +27,16 @@ ms.lasthandoff: 08/30/2017
 Cette rubrique aide les administrateurs informatiques à simplifier l’inscription de Windows pour leurs utilisateurs. Une fois que vous avez [configuré Intune](setup-steps.md), les utilisateurs inscrivent des appareils Windows en [se connectant](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) avec leur compte professionnel ou scolaire.  
 
 En tant qu’administrateur Intune, vous pouvez simplifier l’inscription de plusieurs manières :
-- Activer l’inscription automatique (Azure AD Premium est nécessaire)
-- Inscription CNAME
-- Activer l’inscription en bloc (Azure AD Premium et Concepteur de configuration Windows nécessaires)
+- [Activer l’inscription automatique](#enable-windows-10-automatic-enrollment) (Azure AD Premium est nécessaire)
+- [Inscription CNAME]()
+- Activer l’inscription en bloc (Azure AD Premium et Concepteur de configuration Windows sont nécessaires)
 
 Deux facteurs déterminent la manière dont vous pouvez simplifier l’inscription des appareils Windows :
 
 - **Utilisez-vous Azure Active Directory Premium ?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) est inclus avec Enterprise Mobility + Security et d’autres plans de licence.
 - **Quelles versions des clients Windows les utilisateurs vont-ils inscrire ?** <br>Les appareils Windows 10 peuvent s’inscrire automatiquement quand vous ajoutez un compte professionnel ou scolaire. L’inscription des versions antérieures doit s’effectuer à l’aide de l’application Portail d’entreprise.
 
-||**Azure AD Premium**|**Autre AD** |
+||**Azure AD Premium**|**Autre AD **|
 |----------|---------------|---------------|  
 |**Windows 10**|[Inscription automatique](#enable-windows-10-automatic-enrollment) |[Inscription d’utilisateur](#enable-windows-enrollment-without-azure-ad-premium)|
 |**Versions précédentes de Windows**|[Inscription d’utilisateur](#enable-windows-enrollment-without-azure-ad-premium)|[Inscription d’utilisateur](#enable-windows-enrollment-without-azure-ad-premium)|
@@ -48,8 +48,8 @@ Les appareils qui exécutent Windows 10 Creators Update et qui sont joints à u
 
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Activer l’inscription Windows sans Azure AD Premium
-Vous pouvez simplifier l’inscription de vos utilisateurs en créant un alias DNS (type d’enregistrement CNAME) qui redirige automatiquement les demandes d’inscription vers les serveurs Intune. Si vous ne créez pas d’enregistrement de ressource CNAME DNS, les utilisateurs qui tentent de se connecter à Intune doivent entrer le nom du serveur Intune lors de l’inscription.
+## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Simplifier l’inscription Windows sans Azure AD Premium
+Vous pouvez simplifier l’inscription de vos utilisateurs en créant un alias de serveur de noms de domaine ou DNS (type d’enregistrement CNAME) qui redirige automatiquement les demandes d’inscription vers les serveurs Intune. Si vous ne créez pas d’enregistrement de ressource CNAME DNS, les utilisateurs qui tentent de se connecter à Intune doivent entrer le nom du serveur Intune lors de l’inscription.
 
 **Étape 1 : Créer des enregistrements CNAME** (facultatif)<br>
 Créez des enregistrements de ressources CNAME DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com.
@@ -74,7 +74,7 @@ Si vous avez plusieurs suffixes UPN, vous devez créer un enregistrement CNAME p
 La propagation des modifications DNS peut prendre jusqu’à 72 heures. Vous ne pouvez pas vérifier la modification DNS dans Intune tant que l’enregistrement DNS ne s’est pas propagé.
 
 **Étape 2 : Vérifier les enregistrements CNAME** (facultatif)<br>
-Dans le portail Azure Intune, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**. Dans le panneau Intune, choisissez **Inscrire des appareils** > **Inscription Windows**. Entrez l’URL du site web de l’entreprise dans la zone **Spécifiez un nom de domaine vérifié**, puis choisissez **Auto-détection de test**.
+Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**. Dans le panneau Intune, choisissez **Inscrire des appareils** > **Inscription Windows**. Entrez l’URL du site web de l’entreprise dans la zone **Spécifiez un nom de domaine vérifié**, puis choisissez **Auto-détection de test**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Indiquer aux utilisateurs comment inscrire des appareils Windows
 Informez vos utilisateurs sur la manière d’inscrire leurs appareils Windows et sur les principes de gestion des appareils. Pour obtenir des instructions d’inscription pour l’utilisateur final, consultez [Inscrire un appareil Windows dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Vous pouvez également diriger les utilisateurs vers la rubrique [Que voit mon administrateur informatique quand j’inscris mon appareil ?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).

@@ -1,6 +1,6 @@
 ---
 title: "Affectation d’applications à des appareils Android for Work"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Utilisez cette rubrique pour synchroniser, puis affecter des applications sur des appareils Android for Work à partir du Google Play for Work Store."
 keywords: 
 author: mattbriggs
@@ -15,18 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bbe5be4afead5d80f38e2ef56d12c0b26351dfd8
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Guide pratique pour affecter des applications sur des appareils Android for Work avec Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 L’affectation d’applications sur des appareils Android for Work diffère de leur affectation sur des appareils Android standard. Toutes les applications que vous installez pour Android for Work proviennent du Google Play for Work Store. Vous vous connectez au Store, recherchez les applications souhaitées et les approuvez.
-L’application apparaît ensuite dans le nœud **Applications sous licence** du portail Intune. À partir de là, vous pouvez gérer l’affectation de l’application de la même façon que pour toute autre application.
+L’application apparaît ensuite dans le nœud **Applications sous licence** du portail Azure. À partir de là, vous pouvez gérer l’affectation de l’application de la même façon que pour toute autre application.
 
 En outre, si vous avez créé vos propres applications métier, vous pouvez les affecter en procédant comme suit :
 - Inscrivez-vous à un compte de développeur Google qui vous permet de publier des applications dans une zone privée dans Google Play.
@@ -34,7 +34,7 @@ En outre, si vous avez créé vos propres applications métier, vous pouvez les 
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-Vérifiez que vous avez configuré Intune et Android for Work pour qu’ils collaborent dans la charge de travail **Inscription de l’appareil** du portail Intune.
+Vérifiez que vous avez configuré Intune et Android for Work pour qu’ils collaborent dans la charge de travail **Inscription de l’appareil** du portail Azure.
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Synchroniser une application à partir du Google Play for Work Store
 

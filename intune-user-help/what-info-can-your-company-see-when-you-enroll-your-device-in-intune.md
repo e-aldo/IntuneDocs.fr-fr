@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,36 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Quelles informations mon entreprise peut-elle voir quand j’inscris mon appareil dans Intune ?
+# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Quelles informations mon entreprise peut-elle voir quand j’inscris mon appareil ?
 
-Quand vous inscrivez un appareil à la gestion, vous autorisez le service informatique de votre entreprise à accéder à certaines informations stockées sur votre appareil afin de protéger les données d’entreprise présentes sur l’appareil.
+Quand vous inscrivez un appareil à la gestion, vous autorisez votre entreprise à afficher certaines informations stockées sur votre appareil afin de protéger les données d’entreprise présentes sur l’appareil.
 
-**Ce qu’il ne peut pas voir**
+**Ce que votre entreprise ne peut jamais voir**
 
 - Historique des appels et de navigation
--   Localisation
-- E-mail personnel
-- SMS
+- E-mails et SMS
 - Contacts
--   Mots de passe de vos comptes personnels
-- Événements de calendrier
+- Calendrier
+-   Mots de passe
 - Photos, notamment celles qui se trouvent dans l’application de photos ou sur la pellicule
 
-**Ce qu’il peut voir**
+**Ce que votre entreprise peut toujours voir**
 
--   Modèle
--   Numéro de série
--   Version du système d'exploitation
--   Noms des applications
--   Propriétaire
--   Nom de l'appareil
--   Fabricant (pour les appareils non-Apple)
--   Numéro de téléphone (pour les appareils de travail, le nombre entier. Pour les appareils personnels, uniquement les quatre derniers chiffres.)
+- Modèle d’appareil, par exemple iPhone 7
+- Fabricant, par exemple Microsoft
+- Système d’exploitation, par exemple Android 7.1
+- Noms d’applications, par exemple Microsoft Word
+- Propriétaire de l’appareil
+- Nom de l'appareil
+- Numéro de série
+
+**Ce que votre entreprise peut être en mesure de voir**
+
+-  Numéro de téléphone : pour les appareils appartenant à **l’entreprise**, votre numéro de téléphone complet peut être consulté. Pour les appareils **personnels**, seuls les quatre derniers chiffres de votre numéro de téléphone sont visibles pour votre entreprise. Vous pouvez voir le **Type de propriété** pour chaque appareil en ouvrant la page **Détails sur l’appareil** de l’appareil. 
+-  Emplacement : votre entreprise ne peut jamais voir l’emplacement de votre appareil, sauf si vous possédez un appareil iOS qui est contrôlé et que vous l’avez perdu. [Comment savoir ?](https://go.microsoft.com/fwlink/?linkid=853816)

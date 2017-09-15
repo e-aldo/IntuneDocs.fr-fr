@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de disposition de l’écran d’accueil Intune pour les appareils iOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez les paramètres que vous pouvez utiliser pour personnaliser l’écran d’accueil et l’écran d’ancrage sur des appareils iOS."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Paramètres de disposition de l’écran d’accueil Intune pour les appareils iOS
 
@@ -60,7 +60,7 @@ Ajoutez les pages que vous souhaitez afficher sur l’écran d’accueil et les 
 
 
 1. Dans le panneau **Pages**, choisissez **Ajouter**.
-2. Dans le panneau **Ajouter une ligne**, entrez un **nom de page**. Ce nom est utilisé à titre de référence dans le portail Intune, mais il *n’est pas affiché* sur l’appareil iOS.
+2. Dans le panneau **Ajouter une ligne**, entrez un **nom de page**. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
 3. Cliquez sur **Ajouter** et indiquez si vous souhaitez ajouter une **Application** ou un **Dossier** à la page.
 4. En utilisant les informations de cette rubrique, configurez les applications et les dossiers que vous souhaitez voir apparaître dans la page.
 
@@ -76,7 +76,7 @@ Quand vous affectez la stratégie à un iPhone, vous obtenez une page semblable 
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Comment ajouter une application à la liste
 
-1. Entrez le **Nom de l’application**. Ce nom est utilisé à titre de référence dans le portail Intune, mais il *n’est pas affiché* sur l’appareil iOS.
+1. Entrez le **Nom de l’application**. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
 2. Entrez **l’ID d’ensemble d’applications** de l’application que vous souhaitez déployer. Pour obtenir de l’aide, consultez la section **Référence à un ID d’ensemble pour les applications iOS intégrées** de cette rubrique.
 3. Cliquez sur **OK**, puis continuer à ajouter des éléments, sans dépasser **6** éléments pour l’ancrage et **60** éléments pour une page de l’appareil.
 4. Lorsque vous avez terminé, cliquez sur **OK**.
@@ -87,8 +87,8 @@ Les applications que vous ajoutez à une page dans un dossier sont organisées d
 
 1. Entrez le **Nom du dossier**. Ce nom apparaît aux utilisateurs sur leur appareil.
 2. Cliquez sur **Ajouter** pour créer une page dans le dossier. Vous pouvez ajouter jusqu’à 20 pages.
-3. Dans le panneau **Ajouter une ligne**, entrez un nom de page. Ce nom est utilisé à titre de référence dans le portail Intune, mais il *n’est pas affiché* sur l’appareil iOS.
-3. Entrez le **Nom de l’application**. Ce nom est utilisé à titre de référence dans le portail Intune, mais il *n’est pas affiché* sur l’appareil iOS.
+3. Dans le panneau **Ajouter une ligne**, entrez un nom de page. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
+3. Entrez le **Nom de l’application**. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
 2. Entrez **l’ID d’ensemble d’applications** de l’application que vous souhaitez déployer. Consultez la section **Comment ajouter une application à la liste** pour plus d’informations.
 3. Choisissez **Ajouter**. Vous pouvez ajouter jusqu’à 60 éléments.
 4. Lorsque vous avez terminé, cliquez sur **OK**.

@@ -1,7 +1,7 @@
 ---
 title: "Où se trouve ma fonctionnalité Intune dans Azure ?"
-titleSuffix: Intune on Azure
-description: "Vous aide à trouver les fonctionnalités Intune dans la console Azure."
+titlesuffix: Azure portal
+description: "Vous aide à trouver les fonctionnalités Intune dans le portail Azure."
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Où se trouve ma fonctionnalité Intune dans Azure ?
-Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Nous avons donc créé ce guide de référence pour ceux d’entre vous qui connaissent parfaitement Intune dans la console classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune sur Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
+Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Nous avons donc créé ce guide de référence pour ceux d’entre vous qui connaissent parfaitement Intune dans le portail classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune dans le portail Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
 ## <a name="quick-reference-guide"></a>Guide de référence rapide
-|Composant |Chemin dans la console classique|Chemin dans Intune sur Azure|
+|Composant |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
 |------------|---------------|---------------|
 |Programme d’inscription des appareils (DEP, Device Enrollment Program) |Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils|[Inscription de l’appareil > Inscription Apple > Jeton du programme d’inscription](#where-did-apple-dep-go) |
 |Programme d’inscription des appareils (DEP, Device Enrollment Program)| Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription de l’appareil > Inscription Apple > Numéros de série du programme d’inscription](#where-did-apple-dep-go) |
@@ -39,10 +39,10 @@ Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour 
 
 
 ## <a name="where-do-i-manage-groups"></a>Où gérer les groupes ?
-Intune sur Azure utilise [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) pour gérer les groupes.
+Intune dans le portail Azure utilise [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) pour gérer les groupes.
 
 ## <a name="where-did-enrollment-rules-go"></a>Où sont passées les règles d’inscription ?
-Dans la console classique, vous pouviez définir des règles régissant l’inscription MDM des appareils Windows et macOS mobiles et récents :
+Dans le portail classique, vous pouviez définir des règles régissant l’inscription MDM des appareils Windows et macOS mobiles et récents :
 
 ![Image des règles d’inscription des appareils mobiles classiques](./media/01-classic-rules.png)
 
@@ -50,11 +50,11 @@ Ces règles s’appliquaient à tous les utilisateurs de votre compte Intune san
 
 ![Image des restrictions d’inscription d’appareils mobiles Azure](./media/02-azure-enroll-restrictions.png)
 
-La restriction de limite d’appareils par défaut correspond à la limite d’inscription d’appareils dans la console classique :
+La restriction de limite d’appareils par défaut correspond à la limite d’inscription d’appareils dans le portail classique :
 
 ![Image des restrictions de limite d’appareils Azure](./media/03-azure-device-limit.png)
 
-La restriction de type d’appareils par défaut correspond aux restrictions de plateforme dans la console classique :
+La restriction de type d’appareils par défaut correspond aux restrictions de plateforme dans le portail classique :
 
 ![Image des restrictions de type d’appareils Azure](./media/04-azure-platform-restrictions.png)
 
@@ -65,7 +65,7 @@ La capacité à autoriser ou à bloquer les appareils personnels est désormais 
 Les nouvelles fonctionnalités de restriction seront ajoutées uniquement au portail Azure.
 
 ## <a name="where-did-apple-dep-go"></a>Où est passé le programme Apple DEP ?
-Dans la console classique, vous pouviez configurer Intune pour l’intégrer au programme DEP (Device Enrollment Program) d’Apple et demander manuellement la synchronisation avec le service d’Apple :
+Dans le portail classique, vous pouviez configurer Intune pour l’intégrer au programme DEP (Programme d’inscription des appareils) d’Apple et demander manuellement la synchronisation avec le service d’Apple :
 
 ![Image de jeton DEP classique](./media/06-classic-dep-token.png)
 
@@ -73,13 +73,13 @@ Dans le portail Azure, vous configurez le Programme d’inscription des appareil
 
 ![Image de jeton DEP Azure](./media/07-azure-dep-token.png)
 
-Toutefois, l’option **Synchroniser** dans la console classique a été déplacée vers le flux de travail de gestion de numéro de série, car c’est là qu’apparaissent les résultats d’une synchronisation manuelle :
+Toutefois, l’option **Synchroniser** dans le portail classique a été déplacée vers le flux de travail de gestion de numéro de série, car c’est là qu’apparaissent les résultats d’une synchronisation manuelle :
 
 ![Image de synchronisation DEP Azure](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>Où sont passés les appareils d’entreprise pré-inscrits ?
 ### <a name="by-ios-serial-number"></a>Par numéro de série iOS
-Dans la console classique, vous pouviez inscrire des appareils iOS dans le cadre du programme DEP d’Apple et de l’outil Apple Configurator. Ces deux méthodes permettent d’inscrire des appareils par numéro de série et impliquent l’affectation de profils Inscription des appareils d’entreprise spéciaux. Avant l’inscription, l’affectation de profil d’inscription peut être gérée par l’intermédiaire du groupe d’appareils **Appareils d’entreprise préinscrits - Par numéro de série iOS** :
+Dans le portail classique, vous pouviez inscrire des appareils iOS dans le cadre du programme DEP d’Apple et de l’outil Apple Configurator. Ces deux méthodes permettent d’inscrire des appareils par numéro de série et impliquent l’affectation de profils Inscription des appareils d’entreprise spéciaux. Avant l’inscription, l’affectation de profil d’inscription peut être gérée par l’intermédiaire du groupe d’appareils **Appareils d’entreprise préinscrits - Par numéro de série iOS** :
 
 ![Image des numéros de série Apple classiques](./media/09-classic-apple-serials.png)
 
@@ -93,18 +93,18 @@ Cette fenêtre répertorie dans une même liste les numéros de série pour l’
 
 ### <a name="by-imei-all-platforms"></a>Par IMEI (toutes les plateformes)
 
-Dans la console classique, vous pouvez prélister les numéros IMEI des appareils pour les marquer comme appareils d’entreprise lors de leur inscription sur Intune :
+Dans le portail classique, vous pouvez prélister les numéros IMEI des appareils pour les marquer comme appareils d’entreprise lors de leur inscription sur Intune :
 
 ![Image de la liste classique des numéros IMEI](./media/12-classic-corp-imei.png)
 
-Dans la console Azure, vous devez charger le même IMEI dans la liste Identificateurs d’appareil d’entreprise avec un fichier de valeurs séparées par des virgules (CSV). Le nouveau portail ne prend pas en charge la saisie manuelle de numéros IMEI :
+Dans le portail Azure, vous devez charger le même IMEI dans la liste Identificateurs d’appareil d’entreprise avec un fichier de valeurs séparées par des virgules (CSV). Le nouveau portail ne prend pas en charge la saisie manuelle de numéros IMEI :
 
 ![Image de la liste des numéros IMEI dans Azure](./media/13-azure-corp-imei.png)
 
 Intune dans le portail Azure est conçu pour prendre en charge ultérieurement d’autres types d’identificateurs en plus de l’IMEI, mais n’autorise actuellement que les numéros IMEI pour la préliste.
 
 ## <a name="where-did-corporate-device-enrollment-profiles-go"></a>Où sont passés les profils Inscription d’appareil professionnel ?
-Pour inscrire des appareils iOS dans le cadre du Programme d’inscription des appareils Apple ou avec l’outil Apple Configurator, vous devez fournir un profil Inscription d’appareil professionnel à affecter à l’appareil. Dans la console classique, la création et la gestion de ces profils s’effectuaient dans une même liste :
+Pour inscrire des appareils iOS dans le cadre du Programme d’inscription des appareils Apple ou avec l’outil Apple Configurator, vous devez fournir un profil Inscription d’appareil professionnel à affecter à l’appareil. Dans le portail classique, la création et la gestion de ces profils s’effectuaient dans une même liste :
 
 ![Image de profils d’inscription d’appareils classiques](./media/14-classic-corp-profiles.png)
 

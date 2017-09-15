@@ -1,6 +1,6 @@
 ---
 title: "Obtenir un certificat Push MDM Apple"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Découvrez la procédure permettant d’obtenir un certificat Push MDM Apple pour gérer les appareils iOS avec Intune."
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a100b436ecf257c1e3886c23f15fa967fb877b7c
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 804ea185cf48b6781174b888436211a6d70823ca
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Obtenir un certificat Push MDM Apple
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/02/2017
 Intune permet la gestion des appareils mobiles (MDM) pour les iPad, iPhone et ordinateurs Mac et permet aux utilisateurs d’accéder à la messagerie et aux applications de l’entreprise. Intune requiert un certificat Push MDM pour qu’Intune puisse gérer les appareils iOS et Mac. Une fois le certificat ajouté à Intune, vos utilisateurs peuvent installer l’application Portail d’entreprise pour inscrire leurs appareils. Vous pouvez également configurer la gestion des appareils iOS d’entreprise avec le programme DEP d’Apple ou inscrire des appareils à l’aide d’Apple Configurator, par exemple. Pour plus d’informations sur les options d’inscription, consultez [Choisir comment inscrire des appareils iOS](enrollment-method-choose-ios.md).
 
 ## <a name="steps-to-get-your-certificate"></a>Procédure pour obtenir le certificat
-Dans le portail Intune, choisissez **Inscription d’appareil** > **Inscription Apple** **Certificat Push MDM Apple**, puis suivez les étapes ci-après dans le portail Azure.
+Dans le portail Azure, choisissez **Inscription d’appareil** > **Inscription Apple** **Certificat Push MDM Apple**, puis suivez les étapes ci-après dans le portail Azure.
 
 **Étape 1. Téléchargez la demande de signature de certificat Intune requise pour créer un certificat Push MDM Apple.**<br>
 Sélectionnez **Télécharger votre CSR** pour télécharger et enregistrer le fichier de demande en local. Le fichier est utilisé pour demander un certificat de relation d’approbation à partir du portail Apple Push Certificates.
@@ -55,11 +55,11 @@ Le certificat est associé à l’identifiant Apple utilisé pour le créer. Ren
 > [!NOTE]
 > Le certificat est associé à l’identifiant Apple utilisé pour le créer. Bonne pratique : utilisez un identifiant Apple d’entreprise pour les tâches de gestion. N’utilisez jamais un identifiant Apple personnel.
 
-1. Dans le portail Intune, choisissez **Inscription d’appareil** > **Inscription Apple**, puis **Certificat Push MDM Apple**.
+1. Dans le portail Azure, choisissez **Inscription d’appareil** > **Inscription Apple**, puis **Certificat Push MDM Apple**.
 2. Choisissez **Télécharger votre CSR** pour télécharger et enregistrer le fichier de demande en local. Le fichier est utilisé pour demander un certificat de relation d’approbation à partir du portail Apple Push Certificates.
 3. Recherchez le certificat que vous souhaitez renouveler et sélectionnez **Renouveler**.
 4. Dans l’écran **Renouveler le certificat Push**, ajoutez une note qui vous permettra d’identifier le certificat par la suite, sélectionnez **Choisir un fichier** pour accéder au nouveau fichier de demande que vous avez téléchargé, puis choisissez **Charger**.
 5. Dans l’écran **Confirmation**, sélectionnez **Télécharger** et enregistrez le fichier .pem localement.
-6. Dans le portail Intune Azure, sélectionnez l’icône **Certificat Push MDM Apple**, sélectionnez le fichier .pem téléchargé à partir d’Apple et choisissez **Charger**.
+6. Dans le portail Azure, sélectionnez l’icône **Certificat Push MDM Apple**, sélectionnez le fichier .pem téléchargé à partir d’Apple et choisissez **Charger**.
 
 Votre certificat Push MDM Apple apparaît **Actif** et valide pendant 365 jours.

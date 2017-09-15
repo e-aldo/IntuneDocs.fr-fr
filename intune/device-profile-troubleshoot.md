@@ -1,6 +1,6 @@
 ---
 title: "Résoudre les problèmes de profil d’appareil dans Microsoft Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Si vous ne savez pas comment vous y prendre, utilisez cette rubrique pour vous aider à résoudre les problèmes de profils d’appareil Intune."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Résoudre les problèmes de profil d’appareil dans Microsoft Intune
 
@@ -59,7 +59,7 @@ Quand plusieurs stratégies sont affectées au même utilisateur ou appareil, l�
 
 -   En présence de deux stratégies de conformité, c’est le paramètre de la stratégie de conformité la plus restrictive qui est appliqué.
 
--   Si un paramètre de stratégie de configuration entre en conflit avec un paramètre dans une autre stratégie de configuration, ce conflit apparaît dans la console Intune. Vous devez corriger ces conflits manuellement.
+-   Si un paramètre de stratégie de configuration entre en conflit avec un paramètre dans une autre stratégie de configuration, ce conflit apparaît dans le portail Azure. Vous devez corriger ces conflits manuellement.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Que se passe-t-il quand des stratégies de protection d’application entrent en conflit ? Laquelle est appliquée à l’application ?
 Les valeurs en conflit sont les paramètres les plus restrictifs disponibles dans une stratégie de protection d’application, à l’exception des champs d’entrée numérique (comme le nombre de tentatives autorisées avant la réinitialisation du code PIN).  Les champs d’entrée numérique sont définis sur les mêmes valeurs que quand vous créez une stratégie de gestion des applications mobiles dans la console en choisissant les paramètres recommandés.
