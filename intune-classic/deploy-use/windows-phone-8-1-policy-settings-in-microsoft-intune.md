@@ -2,8 +2,8 @@
 title: "Paramètres de stratégie Windows Phone 8.1"
 description: "Intune fournit un éventail de paramètres généraux intégrés que vous pouvez configurer sur les appareils Windows Phone 8.1. En outre, vous pouvez spécifier des valeurs OMA-URI pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 091c8c3867fffa2ba6857f79ae40ed618aaf0b72
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95de34806ebd9faed761b0e64df8c4dc596083c8
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie Windows Phone 8.1 dans Microsoft Intune
 
