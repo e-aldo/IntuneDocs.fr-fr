@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Activer l’inscription des appareils iOS avec Apple School Manager
 
@@ -38,17 +38,8 @@ Notez que l’inscription au programme Apple School Manager ne peut pas être ut
 - L’affinité utilisateur nécessite un [point de terminaison WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [En savoir plus](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Appareils achetés via le programme [Apple School Management](http://school.apple.com)
 
-**Étapes de l’inscription au programme Apple School Manager**
-1. [Obtenir un jeton Apple School Manager et affecter des appareils](#get-the-apple-token-and-assign-devices)
-2. [Créer un profil d’inscription](#create-an-apple-enrollment-profile)
-3. [Connexion School Data Sync](#connect-school-data-sync) (facultatif)
-4. [Synchroniser les appareils gérés par Apple School Manager](#sync-managed-devices)
-5. [Attribuer un profil Apple School Manager aux appareils](#assign-a-profile-to-devices)
-6. [Distribuer des appareils aux utilisateurs](#distribute-devices-to-users)
-
 >[!NOTE]
 >L’authentification multifacteur (MFA) ne fonctionne pas lors de l’inscription sur les appareils Apple School Manager avec l’affinité utilisateur. Après l’inscription, l’authentification multifacteur fonctionne comme prévu sur ces appareils. Après l’inscription, l’authentification multifacteur fonctionne comme prévu sur les appareils. Les appareils ne peuvent pas inviter les utilisateurs à changer leur mot de passe lors de leur première connexion. De plus, les utilisateurs dont les mots de passe ont expiré ne sont pas invités à réinitialiser leur mot de passe lors de l’inscription. Ils doivent le faire à partir d’un autre appareil.
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>Obtenir le jeton Apple et affecter des appareils
 
@@ -104,7 +95,8 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
     - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées.
 
      - **Inscription verrouillée** : (nécessite le Mode de gestion = Supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres.
-   - **iPad partagé** : (nécessite une **inscription sans affinité utilisateur** et le mode **supervisé**.) Permet à plusieurs utilisateurs de se connecter à des iPad inscrits en utilisant un ID Apple géré. Les ID Apple gérés sont créés dans le portail Apple School Manager. Découvrez plus d’informations sur [l’iPad partagé](education-settings-configure-ios-shared.md).
+   - **iPad partagé** : (nécessite une **inscription sans affinité utilisateur** et le mode **supervisé**.) Permet à plusieurs utilisateurs de se connecter à des iPad inscrits en utilisant un ID Apple géré. Les ID Apple gérés sont créés dans le portail Apple School Manager. Découvrez plus d’informations sur [l’iPad partagé](education-settings-configure-ios-shared.md). Examinez également les [spécifications pour iPad partagé d’Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+
    >[!NOTE]
    >Si **Affinité utilisateur** a la valeur **With user affinity** (Avec affinité utilisateur) ou que le mode **Supervisé** a la valeur **Désactivé**, le mode iPad partagé est désactivé pour le profil d’inscription.
 

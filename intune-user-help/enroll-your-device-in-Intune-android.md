@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Inscrire un appareil Android dans Intune
 
@@ -54,14 +54,14 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 
 6.  Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **COMMENCER**.
 
-    ![Écran de configuration de l’accès à l’entreprise](./media/and-enroll-4a-comp-access-setup.png)
+    ![Écran de configuration de l’accès à l’entreprise](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > Les triangles jaunes ne signifient pas que vous avez déjà rencontré une erreur. Ces icônes indiquent qu’il existe toujours des étapes à effectuer dans le processus d’inscription.
 
-7. Dans l’écran **Pourquoi inscrire votre appareil ?**, découvrez ce que vous pouvez faire une fois votre appareil inscrit, puis appuyez sur **Continuer**.
+7. Dans l’écran **Avantages de la gestion des appareils**, découvrez ce que vous pouvez faire une fois votre appareil inscrit, puis appuyez sur **CONTINUER**.
 
-    ![Pourquoi inscrire votre appareil ?](./media/and-enroll-4b-why-enroll.png)
+    ![Écran Avantages de la gestion des appareils](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  Consultez la liste de ce que votre administrateur informatique peut voir et ne pas voir sur votre appareil, puis appuyez sur **CONTINUER**.
 
@@ -114,13 +114,13 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 
 14. Quand l’écran **Configuration de l’accès à l’entreprise** s’affiche, appuyez sur **CONTINUER**. Si un message indique que votre appareil n’est pas conforme, suivez les instructions pour résoudre le problème, puis appuyez sur **CONTINUER**.
 
-    ![L’appareil n’est pas conforme mais il est inscrit](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![L’appareil n’est pas conforme mais il est inscrit](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Les problèmes de conformité de l’appareil devant être corrigés s’affichent](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Les problèmes de conformité de l’appareil devant être corrigés s’affichent](/intune/media/android_cp_enroll_03_post_1709.png)
 
     Vous trouverez plus d’informations sur les problèmes en appuyant dessus.
 
-    ![Problèmes de conformité des appareils développés](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Problèmes de conformité des appareils développés](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![Écran de configuration de l’accès à l’entreprise](./media/and-enroll-9d-comp-access-setup.png)  
 
