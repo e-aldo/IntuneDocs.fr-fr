@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72adee13a7400421fe8db6a63d9bfdaf2db4858c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 43737ac3c2a8e84f1909c0f0cfcf450937301872
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Paramètres de stratégie de protection d’application Android
 Vous pouvez [configurer](app-protection-policies.md) les paramètres décrits dans cette rubrique pour une stratégie de protection d'application dans le panneau **Paramètres** du portail Azure.
@@ -36,12 +36,12 @@ Il existe deux catégories de paramètres de stratégie : réadressage des donn
 | **Restreindre les opérations couper, copier et coller avec d'autres applications** | Spécifiez quand autoriser les actions couper, copier et coller avec cette application. Choisissez parmi : <ul><li>**Bloqué** : ne pas autoriser les actions couper, copier et coller entre cette application et une autre application.</li><li>**Applications gérées par la stratégie** : autoriser seulement les actions couper, copier et coller entre cette application et les autres applications gérées par la stratégie.</li><li>**Applications gérées par la stratégie avec Coller dans** : autoriser les actions couper et copier entre cette application et les autres applications gérées par la stratégie. Autoriser le collage dans cette application de données à partir de n'importe quelle application.</li><li>**N’importe quelle application** : aucune restriction pour les actions couper, copier et coller vers et depuis cette application. | N’importe quelle application |
 |**Limiter le contenu web à afficher dans Managed Browser** | Choisissez **Oui** pour appliquer des liens web dans l’application à ouvrir dans l’application Managed Browser. <br><br> Pour les appareils non inscrits dans Intune, les liens web contenus dans les applications gérées par la stratégie peuvent s’ouvrir uniquement dans l’application Managed Browser. <br><br> Si vous utilisez Intune pour gérer vos appareils, consultez [Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune](app-configuration-managed-browser.md). | Non |
 | **Chiffrer les données de l'application** | Choisissez **Oui** pour activer le chiffrement des données professionnels ou scolaires dans cette application. Intune utilise un schéma de chiffrement AES 128 bits OpenSSL ainsi que le système Android Keystore pour chiffrer en toute sécurité les données de l’application. Les données sont chiffrées de façon synchrone durant les tâches d’E/S de fichier. Le contenu figurant sur le stockage de l’appareil est toujours chiffré. <br><br> La méthode de chiffrement n'est **pas** certifiée FIPS 140-2.  | Oui |
+| **Désactiver le chiffrement de l’application quand le chiffrement de l’appareil est activé** | Choisissez **Oui** pour désactiver le chiffrement de l’application pour le stockage interne de l’application quand le chiffrement de l’appareil est détecté sur un appareil inscrit. <br><br>**Remarque :** Intune peut détecter l’inscription d’un appareil seulement avec MDM Intune. Le stockage externe de l’application reste chiffré pour garantir que les données ne sont pas accessibles par des applications non gérées. | Oui |
 | **Désactiver la synchronisation des contacts** | Choisissez **Oui** pour empêcher l’application d'enregistrer les données vers l’application Contacts native sur l'appareil. Si vous choisissez **Non**, l’application peut enregistrer des données vers l’application Contacts native sur l'appareil. <br><br>Lorsque vous effectuez une réinitialisation sélective pour supprimer des données professionnelles ou scolaires à partir de l’application, les contacts directement synchronisés à partir de l’application vers l'application Contacts native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Ceci s’applique uniquement à l’application Microsoft Outlook. | Non |
 | **Désactiver l’impression** | Choisissez **Oui** pour empêcher l’application d'imprimer des données professionnelles ou scolaires. | Non |
 
   >[!NOTE]
   >La méthode de chiffrement du paramètre **Chiffrer les données de l’application** n'est **pas** certifiée FIPS 140-2.
-
 
   ## <a name="data-transfer-exemptions"></a>Exemptions au transfert de données
 
@@ -83,6 +83,6 @@ Il existe deux catégories de paramètres de stratégie : réadressage des donn
 | **Exiger des informations d'identification d'entreprise pour l'accès** | Choisissez **Oui** pour obliger l’utilisateur à se connecter avec son compte professionnel ou scolaire au lieu d’entrer un code confidentiel pour accéder à l’application. Si vous affectez la valeur **Oui** à ce paramètre, il se substitue à l’obligation de recourir à un code confidentiel ou à un ID tactile.  | Non |
 | **Bloquer l’exécution des applications gérées sur les appareils jailbreakés ou rootés** |Choisissez **Oui** pour empêcher l'exécution de cette application sur les appareils jailbreakés ou rootés. L’utilisateur peut encore utiliser cette application pour des tâches personnelles, mais il doit utiliser un autre appareil pour accéder aux données professionnelles ou scolaires dans cette application. | Oui |
 | **Revérifier les exigences d'accès après (minutes)** | Configurez les paramètres suivants : <ul><li>**Délai** : il s’agit du nombre de minutes qui s’écoulent avant que les conditions d’accès (définies plus haut dans la stratégie) ne soient revérifiées. Par exemple, un administrateur active un code confidentiel dans la stratégie, un utilisateur ouvre une application GAM et doit entrer un code confidentiel. Quand ce paramètre est employé, l’utilisateur n’a pas à entrer un code confidentiel pour aucune application GAM pendant encore **30 minutes** (valeur par défaut).</li><li>**Période de grâce hors connexion** : il s’agit du nombre de minutes pendant lesquelles les applications GAM peuvent être exécutées hors connexion ; spécifiez la durée (en minutes) au bout de laquelle les conditions d’accès à l’application sont revérifiées. Valeur par défaut = **720** minutes (12 heures). Après l’expiration de cette période, l’application nécessite une authentification utilisateur auprès d’AAD pour poursuivre son exécution.</li></ul>| Délai d'expiration : 30 <br><br> Hors connexion : 720 |
-| **Intervalle en mode hors connexion avant la réinitialisation des données d’application (en jours)** | Après ce nombre de jours (défini par l’administrateur) d’exécution en mode hors connexion, l’application demande à l’utilisateur de se connecter au réseau et de s’authentifier à nouveau. Si l’utilisateur réussit à s’authentifier, il peut continuer à accéder à ses données et l’intervalle en mode hors connexion est réinitialisé.  Si l’utilisateur ne parvient pas à s’authentifier, l’application effectue une réinitialisation sélective du compte et des données de l’utilisateur.  Pour plus d’informations sur les données supprimées par une réinitialisation sélective, consultez [Guide pratique pour effacer uniquement les données d’entreprise des applications gérées par Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe).<br><br> | 90 jours |
+| **Intervalle en mode hors connexion avant la réinitialisation des données d’application (en jours)** | Après ce nombre de jours (défini par l’administrateur) d’exécution en mode hors connexion, l’application demande à l’utilisateur de se connecter au réseau et de se réauthentifier. Si l’utilisateur réussit à s’authentifier, il peut continuer à accéder à ses données et l’intervalle en mode hors connexion est réinitialisé.  Si l’utilisateur ne parvient pas à s’authentifier, l’application effectue une réinitialisation sélective du compte et des données de l’utilisateur.  Pour plus d’informations sur les données supprimées par une réinitialisation sélective, consultez [Guide pratique pour effacer uniquement les données d’entreprise des applications gérées par Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe).<br><br> | 90 jours |
 | **Bloquer la capture d'écran et l'Assistant Android (Android 6.0 et ultérieur)** | Sélectionnez **Oui** pour bloquer les fonctionnalités de capture d’écran et d’**Assistant Android** de l’appareil lors de l’utilisation de cette application. Si vous choisissez **Oui**, l’image d’aperçu du sélecteur d’application sera floue lors de l’utilisation de cette application avec un compte professionnel ou scolaire. | Non |
 | **Désactiver le code PIN de l’application quand le code PIN de l’appareil est géré** | Choisissez **Oui** pour désactiver le code PIN de l’application lorsqu’un verrouillage d’appareil est détecté sur un appareil inscrit. | Non |

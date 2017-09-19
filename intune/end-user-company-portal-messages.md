@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Aider les utilisateurs finaux à comprendre les messages de l’application Portail d’entreprise
 
@@ -95,6 +95,17 @@ La deuxième fois que les utilisateurs se connectent à l’application Portail 
 ### <a name="how-to-explain-this-to-your-users"></a>Explication de ce mode de fonctionnement à vos utilisateurs
 Envoyez à vos utilisateurs la procédure [Envoyer des journaux à votre administrateur informatique par e-mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android). Vous pouvez également leur envoyer la procédure [Send logs to your IT admin by cable](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) (Envoyer des journaux à votre administrateur informatique par câble) si vous souhaitez leur permettre de comparer les deux méthodes.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>Le support technique de votre entreprise a besoin de vous donner accès aux ressources d’entreprise
+
+### <a name="where-it-appears"></a>Emplacement
+Si vous n’avez pas ajouté l’application Portail d’entreprise à la liste **Applications autorisées** ou **Applications exemptes**, et qu’un utilisateur tente de se connecter, la connexion échoue. Le message suivant s’affiche :
+
+> **Le support technique de votre entreprise a besoin de vous donner accès aux ressources d’entreprise**  
+> Votre entreprise utilise des stratégies Protection des informations Windows pour protéger votre appareil. Le support technique de votre entreprise doit vérifier que ces stratégies permettent au portail d’entreprise d’y accéder.
+
+### <a name="what-it-means"></a>Signification
+
+Ajoutez l’application Portail d’entreprise à la liste **Applications autorisées** ou **Applications exemptes** dans la stratégie de protection des applications Windows Information Protection. Pour plus d’informations, consultez [Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>Voir aussi
 [Comment former vos utilisateurs finaux à Microsoft Intune](end-user-educate.md)

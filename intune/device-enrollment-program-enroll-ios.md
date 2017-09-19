@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrire automatiquement des appareils iOS avec le Programme d’inscription des appareils d’Apple
 
@@ -43,7 +43,6 @@ L’inscription DEP ne peut pas être utilisée avec le [gestionnaire d’inscri
 - Appareils achetés dans le cadre du [Programme d’inscription des appareils d’Apple](http://deploy.apple.com)
 - [Autorité MDM](mdm-authority-set.md)
 - [Certificat Push MDM Apple](apple-mdm-push-certificate-get.md)
-- L’affinité utilisateur nécessite un [point de terminaison WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [En savoir plus](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
 > [!NOTE]
 > L’authentification multifacteur (MFA) ne fonctionne pas lors de l’inscription DEP configurée pour l’affinité utilisateur. Après l’inscription, l’authentification multifacteur fonctionne comme prévu sur les appareils. Les appareils ne peuvent pas inviter les utilisateurs à changer leur mot de passe lors de leur première connexion. De plus, les utilisateurs dont les mots de passe ont expiré ne sont pas invités à réinitialiser leur mot de passe lors de l’inscription. Ils doivent le faire à partir d’un autre appareil.
@@ -109,7 +108,7 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
 
   Pour **Affinité utilisateur**, indiquez si les appareils avec ce profil sont inscrits avec ou sans utilisateur affecté.
 
- - Choisissez **Inscrire avec l’affinité utilisateur** pour les appareils qui appartiennent à des utilisateurs et qui doivent utiliser le portail d’entreprise pour des services tels que l’installation d’applications.
+ - Choisissez **Inscrire avec l’affinité utilisateur** pour les appareils qui appartiennent à des utilisateurs et qui doivent utiliser le portail d’entreprise pour des services tels que l’installation d’applications. L’affinité utilisateur nécessite un [point de terminaison WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [En savoir plus](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - Choisissez **Inscrire sans l’affinité utilisateur** pour un appareil non affilié à un seul utilisateur. Utilisez cette option pour les appareils qui effectuent des tâches sans accéder aux données de l’utilisateur local. Les applications telles que l’application Portail d’entreprise ne fonctionnent pas.
 
@@ -119,6 +118,8 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
     - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées.
 
     - **Inscription verrouillée** : (nécessite le Mode de gestion = Supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres. Après l’inscription de l’appareil, vous ne pourrez plus modifier ce paramètre sans réinitialiser l’appareil aux paramètres d’usine.
+
+  - **Activer iPad partagé** : le Programme d’inscription des appareils d’Apple ne prend pas en charge iPad partagé.
 
     - **Autoriser l’appairage** : spécifie si les appareils iOS peuvent se synchroniser avec les ordinateurs. Si vous avez choisi **Autoriser Apple Configurator par certificat**, vous devez choisir un certificat sous **Certificats Apple Configurator**.
 

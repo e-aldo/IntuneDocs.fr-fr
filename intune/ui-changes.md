@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Où se trouve ma fonctionnalité Intune dans Azure ?
 Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Nous avons donc créé ce guide de référence pour ceux d’entre vous qui connaissent parfaitement Intune dans le portail classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune dans le portail Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
 ## <a name="quick-reference-guide"></a>Guide de référence rapide
 |Composant |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
 |------------|---------------|---------------|
-|Programme d’inscription des appareils (DEP, Device Enrollment Program) |Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils|[Inscription de l’appareil > Inscription Apple > Jeton du programme d’inscription](#where-did-apple-dep-go) |
-|Programme d’inscription des appareils (DEP, Device Enrollment Program)| Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription de l’appareil > Inscription Apple > Numéros de série du programme d’inscription](#where-did-apple-dep-go) |
+|Programme d’inscription des appareils [iOS uniquement]|Administration > Gestion des appareils mobiles > iOS > Programme d’inscription des appareils|[Inscription de l’appareil > Inscription Apple > Jeton du programme d’inscription](#where-did-apple-dep-go) |
+|Programme d’inscription des appareils [iOS uniquement]| Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription de l’appareil > Inscription Apple > Numéros de série du programme d’inscription](#where-did-apple-dep-go) |
 |Règles d’inscription |Administrateur > Gestion des appareils mobiles > Règles d’inscription|[Inscription de l’appareil > Restrictions d’inscription](#where-did-enrollment-rules-go) |
 |Groupes par numéro de série iOS |Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par numéro de série iOS|[Inscription de l’appareil > Inscription Apple > Numéros de série du programme d’inscription](#where-did-corporate-pre-enrolled-devices-go) |
 |Groupes par numéro de série iOS |Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par numéro de série iOS| [Inscription de l’appareil > Inscription Apple > Numéros de série AC](#where-did-corporate-pre-enrolled-devices-go)|

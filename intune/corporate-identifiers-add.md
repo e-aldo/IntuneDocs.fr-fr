@@ -15,24 +15,24 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85303c503e068ec23c8321b9359760775bbdb6f8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 58dac14dcc38329cfa0a98746e667bf6e5438170
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifier les appareils comme appartenant à l’entreprise
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Si vous êtes un administrateur Intune, vous pouvez identifier un appareil de l’entreprise de plusieurs façons. Intune peut collecter des informations supplémentaires à partir des appareils d’entreprise. Vous pouvez également définir des restrictions d’appareils pour empêcher l’inscription d’appareils qui ne sont pas détenus par l’entreprise.
+En tant qu’administrateur Intune, vous pouvez identifier les appareils comme étant propriété de l’entreprise, ce qui en permet une gestion et une identification plus précises. Intune peut effectuer d’autres tâches d’administration et collecter des informations supplémentaires, comme le numéro de téléphone complet et un inventaire des applications des appareils d’entreprise. Vous pouvez également définir des restrictions au niveau des appareils pour bloquer l’inscription des appareils qui n’appartiennent pas à l’entreprise.
 
 Un appareil est identifié comme étant détenu par l’entreprise si l’une des conditions suivantes est vérifiée :
 
 - Appareil inscrit avec un compte de [gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md) (toutes les plateformes)
 - Appareil inscrit avec le [programme d’inscription des appareils](device-enrollment-program-enroll-ios.md) Apple, [Apple School Manager](apple-school-manager-set-up-ios.md) ou [Apple Configurator](apple-configurator-enroll-ios.md) (iOS uniquement)
 - [Appareil identifiés comme appartenant à l’entreprise avant l’inscription](#identify-corporate-owned-devices-with-imei-or-serial-number) avec un numéro IMEI (International Mobile Equipment Identifier) (pour toutes les plateformes avec des numéros IMEI) ou un numéro de série (iOS et Android)
-- Appareil inscrit dans Azure Active Directory ou Enterprise Mobility + Security comme appareil Windows 10 Entreprise (Windows 10 uniquement)
+- Appareil inscrit dans Azure Active Directory ou Enterprise Mobility + Security comme appareil Windows 10 Entreprise
 - Propriétés de l’appareil spécifiant [l’entreprise comme propriétaire de l’appareil](#change-device-ownership)
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Identifier des appareils d’entreprise à l’aide de leur numéro IMEI ou de leur numéro de série
