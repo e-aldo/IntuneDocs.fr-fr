@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Utiliser des alertes pour être informé par Microsoft Intune
 
@@ -61,6 +61,8 @@ Dans la [console d’administration Microsoft Intune](https://manage.microsoft.c
 
 ## <a name="working-with-alerts"></a>Utilisation d'alertes
 
+Pour afficher les alertes dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Alertes**, puis le type d’alerte à afficher.
+
 Utilisez les options suivantes pour gérer les alertes à partir de la console d'administration Intune.
 
 |Option|Description|
@@ -70,11 +72,12 @@ Utilisez les options suivantes pour gérer les alertes à partir de la console d
 |**Fermer une alerte**|Dans la liste des alertes, sélectionnez l’alerte à fermer, puis choisissez **Fermer l’alerte**.<br /><br />Les alertes fermées sont définitivement supprimées au bout de 90 jours.|
 |**Réactiver une alerte fermée**|Dans la liste des alertes, définissez le menu déroulant **Filtres** sur **Fermé**.<br /><br />Dans la liste des alertes fermées, sélectionnez l’alerte que vous souhaitez réactiver, puis choisissez **Réactiver l’alerte**.|
 
-Les alertes Intune restent actives tant que :
+Les alertes Intune restent actives pendant 30 jours ou tant que :
 
-- Le problème à l’origine de l’alerte n’a pas été résolu
-- Vous ne fermez pas l'alerte manuellement
-- Les 45 jours suivant la génération de l'alerte ne sont pas écoulés
+- Le problème à l’origine de l’alerte n’a pas été résolu.
+- L'alerte est fermée manuellement.
+
+Les alertes fermées peuvent être réactivées pendant 30 jours après la fermeture. Après 30 jours, les alertes fermées et inactives sont supprimées d’Intune.
 
 > [!TIP]
 > Si une même alerte est générée par des appareils qui exécutent des systèmes d'exploitation différents, vous risquez de voir apparaître plusieurs versions de la même alerte dans la liste des alertes.

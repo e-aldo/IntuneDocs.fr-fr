@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Créer une stratégie de conformité des appareils Mobile Threat Defense (MTD) avec Intune
 
@@ -35,8 +35,6 @@ Dans le cadre de l’installation de MTD, dans la console de partenaire MTD, vou
 Conditions préalables pour la stratégie de conformité de l’appareil avec MTD :
 
 -   Configurer l’intégration de MTD avec Intune
-
--   Activer le connecteur MTD dans Intune
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>Pour créer une stratégie de conformité de l’appareil MTD
 
@@ -77,3 +75,7 @@ Pour affecter une stratégie de conformité de l’appareil à des utilisateurs,
 
     > [!NOTE] 
     > Vous avez appliqué la stratégie à des utilisateurs. La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie de conformité sera évaluée.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+- [Activer MTD avec Intune](mtd-connector-enable.md)

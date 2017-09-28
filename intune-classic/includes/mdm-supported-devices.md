@@ -1,17 +1,16 @@
 
 
 ### <a name="apple"></a>Apple
-  - Apple iOS 8.0 et ultérieur
+  - Apple iOS 9.0 et versions ultérieures
   - Mac OS X 10.9 et versions ultérieures
 
 ### <a name="windows"></a>Windows
   - PC exécutant Windows 10 (versions Famille, Professionnel, Éducation et Entreprise)
-  - Windows Phone 8.1 et versions ultérieures
-  - Windows 8.1 RT
-  - PC exécutant Windows 8.1
+  - Windows 10 Mobile
   - Appareils exécutant Windows 10 IoT Entreprise (x86, x64)
   - Appareils exécutant Windows 10 IoT Mobile Entreprise
-  - Windows Holographique & Windows Holographique Entreprise
+  - Windows Holographique &amp; Windows Holographique Entreprise
+  - Windows Phone 8.1, Windows 8.1 RT et PC exécutant Windows 8.1 (mode survie)
 
   Les clients avec Enterprise Management + Security (EMS) peuvent également [utiliser Azure Active Directory (AAD) pour inscrire des appareils Windows 10](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment).
 
