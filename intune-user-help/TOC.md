@@ -27,7 +27,7 @@
 ### [Résolution des problèmes courants avec Android](troubleshoot-your-device-android.md)
 #### [Vérification de la conformité des appareils](check-compliance-on-your-device-android.md)
 
-#### [Utilisation des journaux pour résoudre les problèmes]
+#### Utilisation des journaux pour résoudre les problèmes
 ##### [Activer la journalisation détaillée](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Envoyer des journaux à l’aide de la messagerie](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Envoyer des journaux à l’aide d’un câble USB](send-logs-to-your-it-admin-using-cable-android.md)
