@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 07/30/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88dc94e74a2a9a79c056a81b6397c94a483fc7a9
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ff2c9943a04ec02a83e821a65e1307e311a9d1c0
+ms.sourcegitcommit: 4ce095c0c3fa2e42cf76207b6ff8edf1fe397165
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils iOS dans Microsoft Intune
 
@@ -109,7 +109,9 @@ Cette restriction s’applique également aux options accessibles à partir des 
 Dans la liste des applications restreintes, vous pouvez configurer une des listes suivantes :
 
 Une liste **Applications interdites** : répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter.
-Une liste **Applications approuvées** : répertorie les applications que les utilisateurs sont autorisés à installer. Pour rester conformes, les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement.
+Une liste **Applications approuvées** : répertorie les applications que les utilisateurs sont autorisés à installer. Les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement.
+
+Rien n’empêche les utilisateurs d’installer une application interdite mais, s’ils le font, vous en serez informé.
 
 Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans l’App Store.
 

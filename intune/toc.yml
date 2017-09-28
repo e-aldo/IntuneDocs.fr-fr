@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: Guides d’implémentation de scénarios
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: Protéger Exchange Online
           href: exchange-online-protect.md
         - name: Réduire les frais de support technique
           href: password-reset.md
+        - name: Empêcher tout accès non autorisé
+          href: data-outside-protect.md
+        - name: Éviter les fuites de données sur les appareils non gérés
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: Guide de migration
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: Intégration de Check Point et Intune
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: Ajouter des applications MTD
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: Activer MTD dans Intune
-              href: mtd-connector-enable.md
-            - name: Créer une stratégie de conformité de l’appareil MTD
-              href: mtd-device-compliance-policy-create.md
+            - name: Configurer Zimperium
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Intégration de Zimperium et Intune
+                  href: zimperium-mtd-connector-integration.md
+            - name: Configurer Intune pour MTD
+              items:
+                - name: Ajouter des applications MTD
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: Créer une stratégie de conformité de l’appareil MTD
+                  href: mtd-device-compliance-policy-create.md
+                - name: Activer MTD dans Intune
+                  href: mtd-connector-enable.md
         - name: Contrôle d’accès réseau
           href: network-access-control-integrate.md
         - name: Configurer Windows Hello
