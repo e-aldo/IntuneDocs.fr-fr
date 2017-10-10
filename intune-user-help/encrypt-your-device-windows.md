@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5db7489d379ca374e41030870df20ff16b919bbc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c32dad761275e9a31937e5777d85939915882849
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Comment protéger votre appareil Windows à l’aide du chiffrement
 
@@ -35,4 +35,4 @@ Si vous disposez d’un poste de travail, les instructions ci-dessous indiquent 
 
 2.  Choisissez **Activer BitLocker**, puis suivez les instructions pour chiffrer chacun de vos lecteurs.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir les informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir les informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
