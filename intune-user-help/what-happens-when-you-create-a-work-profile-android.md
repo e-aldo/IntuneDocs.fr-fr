@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Ce qui se passe quand vous créez un profil professionnel
 
@@ -28,9 +28,9 @@ Un profil professionnel est un profil que vous configurez sur votre appareil pou
 
 Quand vous créez un profil professionnel :
 
-- Votre administrateur informatique peut gérer uniquement les e-mails, les applications, les paramètres et les données professionnels sur votre appareil, pas vos applications ou données personnelles.
+- Le support technique de votre entreprise peut gérer seulement les e-mails, les applications, les paramètres et les données professionnels sur votre appareil, et non pas vos applications ou données personnelles.
 
-- Vous obtenez les applications professionnelles à partir du Play Store for Work. Pour obtenir les applications personnelles, vous continuez à accéder au Google Play Store que vous utilisez habituellement à cette fin. L’administrateur informatique ne peut pas voir ou gérer vos applications personnelles.
+- Vous obtenez les applications professionnelles à partir du Play Store for Work. Pour obtenir les applications personnelles, vous continuez à accéder au Google Play Store que vous utilisez habituellement à cette fin. Le support technique de votre entreprise ne peut pas voir ou gérer vos applications personnelles.
 
 - Les applications professionnelles sont séparées de vos applications personnelles, mais les unes et les autres peuvent apparaître sur votre écran d’accueil en même temps. Voici un exemple de ce que vous pouvez voir. Votre écran peut différer légèrement.
 
@@ -38,9 +38,9 @@ Quand vous créez un profil professionnel :
 
     ![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
-- Votre société ou votre école ayant votre profil professionnel, votre administrateur informatique peut installer ou supprimer des applications professionnelles ou votre profil, mais pas vos applications ou données personnelles.
-- Votre administrateur informatique ne peut pas réinitialiser votre appareil.
+- Votre société ou votre établissement scolaire détenant votre profil professionnel, le support technique de votre entreprise peut installer ou supprimer des applications professionnelles ou votre profil, mais pas vos applications ou données personnelles.
+- Le support technique de votre entreprise ne peut pas réinitialiser ou effacer votre appareil.
 
 Pour plus d’informations sur la création d’un profil professionnel, consultez [Créer un profil professionnel et inscrire votre appareil](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

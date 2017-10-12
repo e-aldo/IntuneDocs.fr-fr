@@ -1,5 +1,5 @@
 ---
-title: "Envoyer les erreurs à votre administrateur informatique | Microsoft Docs"
+title: Envoyer des erreurs au support technique de votre entreprise | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>Envoyer les erreurs à un administrateur informatique en cas de problèmes avec un appareil iOS
+# <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Envoyer des erreurs au support technique de votre entreprise en cas de problèmes avec un appareil iOS
 
-Si vous obtenez des erreurs sur votre appareil iOS pendant que vous utilisez l’application du portail d’entreprise, vous pouvez envoyer des informations pour aider votre administrateur informatique à résoudre le problème. Vous pouvez envoyer les informations d’erreur de différentes manières :
+Si vous recevez des erreurs sur votre appareil iOS pendant que vous utilisez l’application Portail d’entreprise, vous pouvez envoyer des informations pour aider le support technique de votre entreprise à résoudre le problème. Vous pouvez envoyer les informations d’erreur de différentes manières :
 
 -   Dans les messages d’alerte d’erreur, appuyez sur **Rapport**.
 
@@ -32,4 +32,4 @@ Si vous obtenez des erreurs sur votre appareil iOS pendant que vous utilisez l�
 
 -   Sur l’application du portail d’entreprise, secouez votre appareil, puis appuyez sur **Envoyer un rapport de diagnostic** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** > **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

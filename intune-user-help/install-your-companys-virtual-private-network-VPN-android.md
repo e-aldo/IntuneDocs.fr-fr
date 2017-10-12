@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d18e7c2fc0e0aff071b60f5a51238897c56b247
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: eca9ef81acb4d1535649d4e13e1b5b2e18ed109a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Guide pratique pour installer le réseau privé virtuel (VPN) de votre entreprise
 
-Si votre administrateur informatique a configuré une application VPN pour vous permettre de vous connecter aux ressources de l’entreprise, vous recevrez une notification sur votre appareil Android indiquant que vous devez installer une application VPN. Pour installer l’application VPN, procédez comme suit :
+Si le support technique de votre entreprise a configuré une application VPN pour vous permettre de vous connecter aux ressources de l’entreprise, vous recevez une notification sur votre appareil Android indiquant que vous devez installer une application VPN. Pour installer l’application VPN, procédez comme suit :
 
 1.  Développez le tiroir de notifications, puis appuyez sur **Appuyer pour installer l’application requise**.
 
@@ -33,4 +33,4 @@ Si votre administrateur informatique a configuré une application VPN pour vous 
 3.  Appuyez sur **Installer le profil VPN d’entreprise** et suivez les invites. La procédure d’installation peut légèrement varier selon le fournisseur VPN de votre entreprise.
 
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

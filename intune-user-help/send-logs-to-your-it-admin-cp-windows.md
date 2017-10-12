@@ -1,5 +1,5 @@
 ---
-title: "Envoyer des journaux à un administrateur informatique pour les appareils Windows 10 | Microsoft Docs"
+title: Envoyer des journaux au support technique de votre entreprise pour des appareils Windows 10 | Microsoft Docs
 description: "Inscrire un appareil Windows 10 1511 dans Intune"
 keywords: 
 author: barlanmsft
@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 47e6b663cead876b1b19f61d02efed81be4d0dbc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f2287700e96c798be7033eac35539e3490bc3f8a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-from-the-company-portal-app-for-windows-10"></a>Envoyer les journaux à un administrateur informatique à partir de l’application Portail d’entreprise pour Windows 10
+# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Envoyer des journaux au support technique de votre entreprise à partir de l’application Portail d’entreprise pour Windows 10
 
-Si vous obtenez une erreur en utilisant l’application Portail d’entreprise sur votre appareil Windows 10, vous pouvez aider votre administrateur informatique à résoudre le problème en lui envoyant les informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
+Si vous recevez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Windows 10, vous pouvez aider le support technique de votre entreprise à résoudre le problème en lui envoyant des informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
 
 1.  Ouvrez l’application **Portail d’entreprise**.
 2.  Sélectionnez la roue dentée **Paramètres**, puis **Envoyer des journaux**.
-3.  La fenêtre **Partager** s’ouvre. Sélectionnez **Messagerie**. Cette action crée un message électronique avec les journaux du Portail d’entreprise en pièce jointe, que vous pouvez envoyer à votre administrateur informatique.
+3.  La fenêtre **Partager** s’ouvre. Sélectionnez **Messagerie**. Cette action crée un e-mail avec les journaux du Portail d’entreprise attachés en pièce jointe, que vous pouvez envoyer au support technique de votre entreprise.
 
-  ![La boîte de dialogue Envoyer des journaux sur la page des paramètres de l’application Portail d’entreprise. Le lien cliquable indique « Envoyer des journaux - Envoyez des journaux de diagnostic à un administrateur informatique pour l’aider à résoudre les problèmes du Portail d’entreprise ».](./media/w10-share-logs.png)
+  ![La boîte de dialogue Envoyer des journaux sur la page des paramètres de l’application Portail d’entreprise. Le lien cliquable indique « Envoyer des journaux - Envoyer des journaux de diagnostic au support technique de votre entreprise pour l’aider à résoudre les problèmes du Portail d’entreprise ».](./media/w10-share-logs.png)
 
-Vous devrez peut-être envoyer également des [journaux à partir de l’application Paramètres](send-logs-to-your-it-admin-settings-windows.md) pour faciliter davantage la tâche à votre administrateur informatique, qui doit résoudre tous les problèmes éventuels. 
+Il peut être nécessaire d’envoyer aussi des [journaux à partir de l’application Paramètres](send-logs-to-your-it-admin-settings-windows.md) pour aider le support technique de votre entreprise à résoudre les éventuels problèmes. 
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

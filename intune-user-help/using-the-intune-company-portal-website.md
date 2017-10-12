@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>Utilisation du site web Portail d’entreprise Intune
 Le [site web du portail d’entreprise](https://portal.manage.microsoft.com) est une page web qui permet aux utilisateurs finaux de gérer les ordinateurs et appareils qu’ils ont inscrits dans Intune.
@@ -39,10 +39,10 @@ Voici les tâches que les utilisateurs peuvent effectuer à partir du site web P
 
 -   [Synchroniser votre appareil manuellement pour accélérer l’installation des applications](sync-your-device-manually-cpwebsite.md)
 
--   Rechercher les coordonnées de l’administrateur informatique, si vous les avez configurées
+-   Rechercher les informations de contact du support technique de l’entreprise, si vous les avez configurées
 
 -   Afficher les détails de leur appareil, notamment s’il est conforme aux stratégies de votre entreprise ou établissement scolaire
 
 -   Gérer à distance leur PC (s’applique uniquement aux PC)
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,21 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
-ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
+ms.openlocfilehash: 6dba55de8d4c4551ff1e09bb0dffe797f0cf3190
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Vous devez installer Symantec Endpoint Protection Mobile sur votre appareil Android
+# <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Installer Symantec Endpoint Protection Mobile sur votre appareil Android
 
-Pour que vous puissiez accéder à vos ressources de travail, le support technique de votre entreprise vous demande d’installer l’application Symantec Endpoint Protection (SEP) Mobile, qui vous aide à protéger votre appareil en détectant les éventuelles menaces de sécurité.
+Avant de vous permettre d’accéder à vos ressources de travail, votre entreprise vous demande d’installer l’application Symantec Endpoint Protection (SEP) Mobile, qui vous aide à protéger votre appareil en détectant les menaces de sécurité potentielles.
 
 Si vous rencontrez des difficultés lors de l’installation, essayez de suivre les étapes de dépannage indiquées à la fin de cette rubrique.
 
-**Opérations à effectuer :**
+## <a name="what-you-need-to-do"></a>Opérations à effectuer
 
 1. À partir du haut de l’écran, faites glisser vers le bas pour ouvrir la barre Notifications, puis appuyez sur l’option **Application obligatoire - Installer Skycure à partir du Play Store**. Vous pouvez également trouver cette option dans l’application du portail d’entreprise, sous __Détails de la conformité__.
-
-  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
 2. Vous accédez à la page d’installation de SEP Mobile dans le Play Store. Installez SEP Mobile, puis appuyez sur **ACCEPTER** pour lui permettre d’accéder à votre appareil.
 
@@ -46,20 +44,16 @@ Si vous rencontrez des difficultés lors de l’installation, essayez de suivre 
 
 8. Elle recherche immédiatement ces menaces sur votre appareil.
 
-  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
+  * Si elle détecte une menace de sécurité sur votre appareil, elle affiche des instructions permettant de résoudre le problème.
 
-  Si elle détecte une menace de sécurité sur votre appareil, elle affiche des instructions permettant de résoudre le problème.
+  * Si aucune menace n’est détectée, les trois types de menace apparaîtront en vert.
 
-  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
-
-  Si aucune menace n’est détectée, les trois types de menace apparaîtront en vert.
-
-    L’écran **Informations sur l’appareil** du portail d’entreprise montre que votre appareil est maintenant en conformité avec les critères de sécurité de votre entreprise.
+    * L’écran **Informations sur l’appareil** du portail d’entreprise montre que votre appareil est maintenant en conformité avec les critères de sécurité de votre entreprise.
 
     ![Votre appareil est maintenant conforme aux stratégies](./media/mtd-device-now-compliant-android.png)
 
-**Si l’installation ne fonctionne pas**
+## <a name="if-the-installation-doesnt-work"></a>Si l’installation ne fonctionne pas
 
 Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, essayez d’installer SEP Mobile [manuellement, à partir du Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

@@ -14,20 +14,20 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a92a64cdb94376991dfe8bea2e928316201b566
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Sécuriser votre appareil avec le mot de passe approprié
 
 L’accès aux ressources d’entreprise, telles que les e-mails et les documents, est une opération que les personnes effectuent tous les jours à partir de leurs appareils Windows. Votre organisation souhaite s’assurer que votre appareil procède à cette opération en toute sécurité. L’un des moyens de vérifier que votre appareil accède en toute sécurité à ces ressources consiste à exiger que les appareils utilisent un mot de passe. Ces mots de passe sont utilisés, par exemple, pour accéder à votre appareil à partir de l’écran verrouillé.
 
-Si votre appareil Windows n’est pas conforme à la stratégie de mot de passe de votre administrateur, un message s’affiche qui décrit brièvement le problème et explique ce que vous devez faire pour que votre mot de passe soit conforme aux exigences.
+Si votre appareil Windows n’est pas conforme à la stratégie de mot de passe du support technique de votre entreprise, un message s’affiche qui décrit brièvement le problème et explique ce que vous devez faire pour que votre mot de passe soit conforme aux exigences.
 
 > [!Note]
-> Votre administrateur peut définir plusieurs exigences de mot de passe. Par exemple, le mot de passe peut devoir contenir un certain nombre de caractères et comporter une combinaison de chiffres et de lettres. Comme plusieurs exigences peuvent être définies, ces instructions expliquent uniquement comment définir ou modifier votre mot de passe. Elles n’expliquent pas toutes les combinaisons possibles d’exigences.
+> Le support technique de votre entreprise peut définir plusieurs exigences pour le mot de passe. Par exemple, le mot de passe peut devoir contenir un certain nombre de caractères et comporter une combinaison de chiffres et de lettres. Comme plusieurs exigences peuvent être définies, ces instructions expliquent uniquement comment définir ou modifier votre mot de passe. Elles n’expliquent pas toutes les combinaisons possibles d’exigences.
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>Pour modifier votre mot de passe sur Windows Phone 8.1
 
@@ -44,4 +44,4 @@ Si votre appareil Windows n’est pas conforme à la stratégie de mot de passe 
 3. Entrez votre nouveau mot de passe dans la zone **Nouveau mot de passe**, puis entrez-le de nouveau dans la zone **Confirmez le mot de passe**.
 4. Choisissez **terminé**.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

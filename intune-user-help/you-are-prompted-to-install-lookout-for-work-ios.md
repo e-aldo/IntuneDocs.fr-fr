@@ -1,11 +1,11 @@
 ---
 title: "Vous devez installer Lookout for Work sur votre appareil iOS | Microsoft Docs"
-description: 
+description: "Découvrez comment installer Lookout for Work pour iOS."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 46827fa3505fd8c4f2d767ba821ce9d84fc0d16d
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>Vous devez installer Lookout for Work sur votre appareil iOS
+# <a name="install-lookout-for-work-on-your-ios-device"></a>Installer Lookout for Work sur votre appareil iOS
 
-Pour pouvoir accéder à vos ressources de travail, votre administrateur informatique vous demande d’installer l’application Lookout for Work, qui vous aide à protéger votre appareil en détectant les menaces à la sécurité potentielles. Vous pouvez voir différentes invites sur votre appareil, suivant la façon dont votre administrateur informatique a configuré Lookout for Work.
 
-**Opérations à effectuer :**
+Avant de vous permettre d’accéder à vos ressources de travail, votre entreprise vous demande d’installer l’application Lookout for Work, qui vous aide à protéger votre appareil en détectant les menaces de sécurité potentielles. Vous pouvez voir différentes invites sur votre appareil, suivant la façon dont votre administrateur informatique a configuré Lookout for Work.
+
+
+## <a name="what-you-need-to-do"></a>Opérations à effectuer
 
 1.  Si vous voyez l’invite suivante, appuyez sur **Installer** pour autoriser l’installation de Lookout for Work sur votre appareil.
 
@@ -40,14 +42,17 @@ Pour pouvoir accéder à vos ressources de travail, votre administrateur informa
 
 4. À l’invite vous demandant d’autoriser Lookout for Work à vous envoyer des notifications, appuyez sur **Autoriser**.
 
-  ![Appuyer sur Paramètres, puis sur Services de localisation](./media/ios-lfw-allow-notifications.png)
+     ![Appuyer sur Paramètres, puis sur Services de localisation](./media/ios-lfw-allow-notifications.png)
 
-Lookout for Work termine son installation, et vous voyez l’écran suivant si aucune menace de sécurité n’est détectée sur votre appareil.
+   * Lookout for Work termine son installation, et vous voyez l’écran suivant si aucune menace de sécurité n’est détectée sur votre appareil.
 
-  ![Lookout for Work n’a détecté aucune menace de sécurité](./media/ios-lfw-no-threats-found.png)
+     ![Lookout for Work n’a détecté aucune menace de sécurité](./media/ios-lfw-no-threats-found.png)
 
-Si Lookout for Work détecte une menace de sécurité sur votre appareil, il affiche des instructions pour résoudre le problème.
+   * Si Lookout for Work détecte une menace de sécurité sur votre appareil, il affiche des instructions pour résoudre le problème.
 
-**Si l’installation ne fonctionne pas**
+## <a name="if-the-installation-doesnt-work"></a>Si l’installation ne fonctionne pas
 
-Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Dans ce cas, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, essayez d’installer Lookout for Work [manuellement à partir de l’App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
+
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+

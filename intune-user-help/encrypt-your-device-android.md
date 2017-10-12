@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Comment protéger votre appareil Android à l’aide du chiffrement
 
 Lorsque vous chiffrez un appareil, vous encapsulez les informations qu'il contient dans un code de couche de protection qui empêche les personnes non autorisées d’y accéder. Dans le cadre de la protection de vos informations, votre organisation vous demande de chiffrer votre appareil Android pour pouvoir accéder aux fichiers, à la messagerie et aux données de l’entreprise.
 
 > [!Note]
-> Vous devrez peut-être définir un code confidentiel ou un mot de passe avant de chiffrer votre appareil, à la demande de votre administrateur informatique.
+> Vous devrez peut-être définir un code confidentiel ou un mot de passe avant de chiffrer votre appareil si le support technique de votre entreprise le demande.
 
 Si vous désinscrivez votre téléphone, il restera chiffré.
 
@@ -52,7 +52,7 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 
 - Vérifiez que votre appareil dispose de suffisamment de batterie ou qu’il est branché sur secteur.
 - Vérifiez que vous avez configuré un code confidentiel ou un mot de passe sur votre appareil.
-- Si vous avez déjà défini un code confidentiel ou un mot de passe sur votre appareil, essayez les étapes suivantes, que votre administrateur informatique peut vous demander de suivre pour renforcer la sécurité de votre appareil. Les noms de menus que vous voyez peuvent être légèrement différents de ceux mentionnés dans ces étapes, selon le type d’appareil Android dont vous disposez.
+- Si vous avez déjà défini un code confidentiel ou un mot de passe sur votre appareil, essayez les étapes suivantes, que le support technique de votre entreprise peut vous demander de suivre pour renforcer la sécurité de votre appareil. Les noms de menus que vous voyez peuvent être légèrement différents de ceux mentionnés dans ces étapes, selon le type d’appareil Android dont vous disposez.
 
     1. Accédez à **Paramètres** > **Écran de verrouillage et sécurité** > **Écran de verrouillage**. Confirmez votre code confidentiel ou mot de passe actuel.
 
@@ -66,4 +66,4 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
 
     6. Ouvrez l’application Portail d’entreprise, sélectionnez votre appareil, puis appuyez sur **Vérifier la conformité**.
 
-Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
+Encore besoin d’aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.

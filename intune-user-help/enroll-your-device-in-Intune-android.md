@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/11/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Inscrire un appareil Android dans Intune
 
@@ -30,21 +30,19 @@ Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrir
 
 Ces instructions d’inscription concernent les appareils Android natifs et Samsung KNOX. Samsung KNOX est un type de sécurité que certains appareils Samsung utilisent pour fournir une protection supplémentaire par rapport aux appareils Android natifs. Pour vérifier si vous avez un appareil Samsung KNOX, accédez à **Paramètres** > **About device** (À propos de l’appareil). Si « Version Knox » n’apparaît pas dans la liste, c’est que vous avez un appareil Android natif.
 
-Avant ou après l’inscription, vous pouvez être invité à choisir une catégorie qui décrit le mieux votre utilisation de l’appareil. Votre administrateur informatique utilise cette catégorie pour vérifier les applications auxquelles vous avez accès.
-
-Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune, vous pouvez [envoyer les erreurs d’inscription à votre administrateur informatique](send-enrollment-errors-to-your-it-admin-android.md).
+Avant ou après l’inscription, vous pouvez être invité à choisir une catégorie qui décrit le mieux votre utilisation de l’appareil. Le support technique de votre entreprise utilise cette catégorie pour vérifier les applications auxquelles vous avez accès.
 
 **Pour inscrire un appareil Android :**
 
 1.  Installez l’application Portail d’entreprise Intune gratuite à partir de [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
-2.  Ouvrez l’application Portail d’entreprise Microsoft Intune.
+2.  Ouvrez l'application Portail d'entreprise.
 
 3.  Dans l’écran de **bienvenue** du portail d’entreprise, appuyez sur **Se connecter**, puis connectez-vous avec votre compte professionnel ou scolaire.
 
     ![L’écran d’accueil de l’application Portail d’entreprise pour Android demande à l’utilisateur de se connecter avec son compte professionnel ou scolaire. Il affiche également un avertissement sur le fait que les comptes Microsoft et les autres comptes personnels ne sont pas acceptés.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Si votre administrateur informatique a établi des conditions générales, appuyez sur **ACCEPTER** pour en accepter les termes. Cet écran peut différer légèrement de l’image ci-dessous, selon la version d’Android que vous utilisez.
+4.  Si le support technique de votre entreprise a établi des conditions générales, appuyez sur **ACCEPTER** pour en accepter les termes. Cet écran peut différer légèrement de l’image ci-dessous, selon la version d’Android que vous utilisez.
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
@@ -52,28 +50,24 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 
     ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-6.  Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **COMMENCER**.
+6.  Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **CONTINUER**.
 
-    ![Écran de configuration de l’accès à l’entreprise](/intune/media/android_cp_enroll_02_post_1709.png)
+    ![Écran de configuration de l’accès à l’entreprise](/intune/media/android_cp_enroll_01_1709_new.png)
 
     > [!NOTE]
     > Les triangles jaunes ne signifient pas que vous avez déjà rencontré une erreur. Ces icônes indiquent qu’il existe toujours des étapes à effectuer dans le processus d’inscription.
 
-7. Dans l’écran **Avantages de la gestion des appareils**, découvrez ce que vous pouvez faire une fois votre appareil inscrit, puis appuyez sur **CONTINUER**.
+7.  Consultez la liste de ce que le support technique de votre entreprise peut voir ou non sur votre appareil, puis appuyez sur **CONTINUER**.
 
-    ![Écran Avantages de la gestion des appareils](/intune/media/android_cp_enroll_02_post_1709.png)
-
-8.  Consultez la liste de ce que votre administrateur informatique peut voir et ne pas voir sur votre appareil, puis appuyez sur **CONTINUER**.
-
-    ![Paramètres de confidentialité](./media/and-enroll-4c-we-care-privacy.png)
+    ![Paramètres de confidentialité](/intune/media/android_cp_enroll_02_after_1710.png)
 
 9.  Dans l’écran **Et ensuite ?**, découvrez ce qui se passe lors de l’inscription, puis appuyez sur **INSCRIRE**.
 
-    ![Écran Et ensuite](./media/and-enroll-4d-what-comes-next.png)
+    ![Écran Et ensuite](/intune/media/android_cp_enroll_03_after_1710.png)
 
 10.  Si vous utilisez Android 6.0 ou version ultérieure, effectuez cette étape. Sinon, passez à l'étape suivante.
 
-    Si votre administrateur informatique a configuré certaines stratégies, les messages suivants peuvent s’afficher :
+    Si le support technique de votre entreprise a configuré certaines stratégies, les messages suivants peuvent s’afficher :
     -   **Autoriser l’application Portail d’entreprise à passer et gérer des appels téléphoniques ?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
@@ -96,9 +90,9 @@ Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune
 
     Le rôle d’administrateur d’appareils est un rôle dont le portail d’entreprise a besoin pour gérer votre appareil. Il permet à votre administrateur d’afficher certaines informations, notamment le nombre de fois que vous avez essayé de déverrouiller l’écran, et d’effectuer certaines actions.
 
-    Il est important de noter que ces actions sont effectuées au nom de la sécurité. Votre administrateur informatique n’essaie pas de violer votre vie privée ou d’effacer vos informations sans raison, mais il veut s’assurer que les données d’entreprise sont conservées en toute sécurité.
+    Il est important de noter que ces actions sont effectuées au nom de la sécurité. Le support technique de votre entreprise n’essaie pas de violer votre vie privée ou d’effacer vos informations sans raison, mais il veut vérifier que les données d’entreprise sont conservées en toute sécurité.
 
-    Microsoft ne contrôle pas ce message, et nous sommes conscients que sa formulation peut sembler quelque peu radicale. Il n’existe pas de moyen pour le portail d’entreprise d’afficher uniquement les restrictions et les informations d’accès pertinentes pour votre organisation. Toutes ces autorisations sont accordées simultanément dans cet écran. Contactez votre administrateur informatique pour plus d’informations sur l’utilisation des informations de contact sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com) si vous avez des questions spécifiques concernant votre propre utilisation.
+    Microsoft ne contrôle pas ce message, et nous sommes conscients que sa formulation peut sembler quelque peu radicale. Il n’existe pas de moyen pour le portail d’entreprise d’afficher uniquement les restrictions et les informations d’accès pertinentes pour votre organisation. Toutes ces autorisations sont accordées simultanément dans cet écran. Contactez le support technique de votre entreprise pour plus d’informations sur l’utilisation des informations de contact du [site web du portail d’entreprise](https://portal.manage.microsoft.com) si vous avez des questions spécifiques concernant votre propre utilisation.
 
 12.  Suivez les invites pour entrer un code confidentiel ou un mot de passe. Si vous avez déjà configuré un code confidentiel ou un mot de passe sur cet appareil, cet écran ne s’affiche pas ou vous n’êtes pas invité à entrer un nouveau code confidentiel ou mot de passe.
 
@@ -133,4 +127,6 @@ Avant d’installer des applications d’entreprise, accédez à **Paramètres**
 > [!Note]
 > Si votre organisation utilise un logiciel de gestion des dépenses de télécommunications, vous devrez exécuter une procédure supplémentaire pour finaliser l’inscription de votre appareil. Découvrez-en plus [ici](enroll-your-device-with-telecom-expense-management-android.md).
 
-Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
+Si vous recevez une erreur pendant que vous inscrivez votre appareil dans Intune, vous pouvez [envoyer les erreurs d’inscription au support technique de votre entreprise](send-enrollment-errors-to-your-it-admin-android.md).
+
+Encore besoin d’aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Inscrire votre appareil Android pour la gestion des dépenses de télécommunications
 
@@ -30,7 +30,7 @@ Votre organisation peut utiliser un logiciel de gestion des dépenses de téléc
 
 Sélectionnez l’option appropriée. Vous recevrez alors une notification vous invitant à installer l’application [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) à partir de Google Play Store. L’application Datalert permet à votre organisation de mesurer sa consommation des données. Si votre organisation a configuré l’option d’inscription professionnelle ou scolaire, vous devrez ouvrir une session avec votre compte professionnel ou scolaire. Si cette option n’a pas été activée, vous devrez fournir certaines informations, telles que votre numéro de téléphone, et vérifier votre appareil à l’aide d’un code pour vous inscrire au service Datalert à partir de l’application.
 
-Appuyez sur la flèche __Suivant__ dans le coin supérieur droit de l’écran pour continuer. Votre administrateur informatique doit vous indiquer si vous devez vous connecter avec votre __compte Microsoft professionnel ou scolaire__ ou si vous devez utiliser votre __numéro de téléphone__.
+Appuyez sur la flèche __Suivant__ dans le coin supérieur droit de l’écran pour continuer. Le support technique de votre entreprise doit vous indiquer si vous devez vous connecter avec votre __compte Microsoft professionnel ou scolaire__ ou si vous devez utiliser votre __numéro de téléphone__.
 
   ![Capture de l’écran d’accueil de l’application Datalert vous invitant à passer à l’écran suivant après vous avoir brièvement expliqué que Datalert vous aidera à tirer le meilleur parti de votre forfait de données](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ Appuyez sur la flèche __Suivant__ dans le coin supérieur droit de l’écran p
 
 Une fois inscrit, vous commencerez à visualiser votre consommation des données dans l’application Datalert.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

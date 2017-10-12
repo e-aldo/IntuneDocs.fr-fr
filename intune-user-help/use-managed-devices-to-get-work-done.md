@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Utiliser des appareils gérés pour réaliser vos tâches
 Microsoft Intune est un logiciel qui permet aux organisations de gérer des appareils (tels que des smartphones, des tablettes et des PC), des applications et d’autres ressources d’entreprise telles que des e-mails. Cela permet aux employés d’accéder à leurs informations de travail à partir de pratiquement n’importe où sur presque n’importe quel appareil tout en contribuant à sécuriser les données d’entreprise.
@@ -33,8 +33,8 @@ Le service informatique de votre entreprise peut consulter les informations prof
 ## <a name="how-do-i-get-the-company-portal"></a>Comment obtenir l’application Portail d’entreprise ?
 Vous pouvez obtenir le portail d’entreprise de deux façons différentes :
 
-- En installant l’application Portail d’entreprise sur votre appareil. Vous obtenez généralement l’application Portail d’entreprise en accédant au magasin d’applications sur votre appareil, mais votre administrateur informatique peut également installer l’application Portail d’entreprise pour vous.
-- En accédant au [site web Portail d’entreprise](https://portal.manage.microsoft.com) que votre administrateur a configuré.
+- En installant l’application Portail d’entreprise sur votre appareil. Vous obtenez généralement l’application Portail d’entreprise en accédant à l’App Store sur votre appareil, mais le support technique de votre entreprise peut également l’installer pour vous.
+- En accédant au [site web du portail d’entreprise](https://portal.manage.microsoft.com) que le support technique de votre entreprise a configuré.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Quelle est la différence entre l’application et le site web ?
 Il existe quelques différences mineures entre l’application Portail d’entreprise et le site web Portail d’entreprise, mais les deux permettent d’effectuer presque toutes les mêmes tâches . Exemples de tâche que vous pouvez effectuer :
@@ -54,9 +54,9 @@ Pour voir ce que vous pouvez faire par le biais du site web Portail d’entrepri
 - [Utilisation du site web du portail de l'entreprise](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Que se passe-t-il quand vous ajoutez un ordinateur ou un appareil au Portail d’entreprise ?
-Quand vous ajoutez un ordinateur ou un appareil au portail d’entreprise, certains logiciels sont parfois installés ou une application est éventuellement téléchargée (en fonction de l’appareil). Vous autorisez également votre administrateur informatique à gérer votre appareil pour protéger les informations de l’entreprise sur l’appareil.
+Quand vous ajoutez un ordinateur ou un appareil au portail d’entreprise, certains logiciels sont parfois installés ou une application est éventuellement téléchargée (en fonction de l’appareil). Vous autorisez également le support technique de votre entreprise à gérer votre appareil pour protéger les informations de l’entreprise sur l’appareil.
 
-Pour savoir ce que votre administrateur peut voir ou non sur votre appareil, utilisez le lien correspondant au type d’appareil que vous utilisez :
+Pour savoir ce que le support technique de votre entreprise peut voir ou non sur votre appareil, utilisez le lien correspondant au type d’appareil que vous utilisez :
 
 - [Installation de l’application Portail d’entreprise pour Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Installation de l’application Portail d’entreprise pour iOS et MacOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ Microsoft vous recommande d’essayer de commencer par voir si vous pouvez réso
 - [Résoudre les problèmes courants rencontrés avec votre appareil iOS](troubleshoot-your-device-ios.md)
 - [Résoudre les problèmes courants rencontrés avec votre appareil Windows](troubleshoot-your-device-windows.md)
 
-Vous pouvez publier un commentaire ci-dessous pour demander de l’aide. Toutefois, comme chaque organisation a des exigences différentes, nous ne pouvons pas toujours répondre à vos questions. Vous obtiendrez probablement la réponse la plus adaptée et la plus rapide en contactant votre administrateur informatique pour lui demander de l’aide. Ses informations de contact sont normalement disponibles sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com).
+Vous pouvez publier un commentaire ci-dessous pour demander de l’aide. Toutefois, comme chaque organisation a des exigences différentes, nous ne pouvons pas toujours répondre à vos questions. Vous obtiendrez probablement la réponse la plus adaptée et la plus rapide en contactant le support technique de votre entreprise pour lui demander de l’aide. Ses informations de contact sont normalement disponibles sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com).

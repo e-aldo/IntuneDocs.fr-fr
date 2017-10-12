@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Android dans Intune ?
 
@@ -34,13 +34,13 @@ Après avoir installé l’application Portail d’entreprise et inscrit votre a
 
 -   réinitialiser les paramètres de votre téléphone en cas de perte ou de vol.
 
-Quand vous inscrivez votre appareil Android, vous autorisez l’administrateur informatique à accéder à l’appareil. Ils peuvent effectuer les opérations suivantes :
+Quand vous inscrivez votre appareil Android, vous autorisez le support technique de votre entreprise à accéder à l’appareil. Ils peuvent effectuer les opérations suivantes :
 
 -   Réinitialiser votre appareil aux réglages par défaut d’origine. Ceci est utile si l'appareil est perdu ou volé.
 
 -   Supprimer toutes les données relatives à l’entreprise. Vos données et paramètres personnels ne sont pas supprimés.
 
--   Définir les exigences pour votre appareil, comme vous obliger à avoir un mot de passe ou un code confidentiel sur l’appareil pour protéger les données d’entreprise. Votre administrateur informatique peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’appareil si vous dépassez le nombre maximal autorisé.
+-   Définir les exigences pour votre appareil, comme vous obliger à avoir un mot de passe ou un code confidentiel sur l’appareil pour protéger les données d’entreprise. Le support technique de votre entreprise peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’appareil si vous dépassez le nombre maximal autorisé.
 
 -   Vous êtes obligé d'accepter les conditions générales.
 
@@ -50,10 +50,10 @@ Quand vous inscrivez votre appareil Android, vous autorisez l’administrateur i
 
 Une fois votre appareil ajouté au portail d’entreprise, voici ce qu’il va faire environ toutes les huit heures :
 
--   télécharger toute mise à jour d’une application ou d’une stratégie rendue disponible par votre administrateur informatique ;
+-   Télécharger toutes les mises à jour d’une application ou d’une stratégie rendues disponibles par le support technique de votre entreprise.
 
--   envoyer toute mise à jour de l'inventaire matériel ; (Ces mises à jour n’ont pas d’informations personnelles.)
+-   Envoyer toutes les mises à jour du parc informatique. (Ces mises à jour n’ont pas d’informations personnelles.)
 
--   envoyer toute mise à jour de l'inventaire d'applications de la société. (Ces mises à jour n’ont pas d’informations personnelles.)
+-   Envoyer toutes les mises à jour de l’inventaire des applications de l’entreprise. (Ces mises à jour n’ont pas d’informations personnelles.)
 
-Vous avez besoin d'aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](https://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
+Vous avez besoin d'aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.

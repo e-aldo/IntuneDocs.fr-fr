@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscrire des appareils iOS à l’aide de l’outil Apple Configurator
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune prend en charge l’inscription d’appareils iOS à l’aide d’[Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) s’exécutant sur un ordinateur Mac. L’inscription avec Apple Configurator requiert que vous connectiez par USB chaque appareil iOS à un ordinateur Mac pour configurer l’inscription d’entreprise. Vous pouvez inscrire des appareils sur Intune avec Apple Configurator de deux manières :
+Intune prend en charge l’inscription d’appareils iOS à l’aide d’[Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) s’exécutant sur un ordinateur Mac. L’inscription avec Apple Configurator requiert que vous connectiez par USB chaque appareil iOS à un ordinateur Mac pour configurer l’inscription d’entreprise. Vous pouvez inscrire des appareils sur Intune avec Apple Configurator de deux manières :
 - **Inscription de l’Assistant Configuration** : réinitialise l’appareil aux paramètres d’usine et le prépare à l’inscription durant l’Assistant Configuration.
 - **Inscription directe** : ne réinitialise pas l’appareil aux paramètres d’usine et l’inscrit avec les paramètres iOS. Cette méthode prend seulement en charge les appareils **sans affinité utilisateur**.
 
@@ -38,7 +38,7 @@ Vous ne pouvez pas utiliser les méthodes d’inscription Apple Configurator ave
 - [Un certificat Push MDM Apple](apple-mdm-push-certificate-get.md)
 - Numéros de série des appareils (inscription Assistant Configuration uniquement)
 - Câbles de connexion USB
-- Ordinateur Mac exécutant [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
+- Ordinateur macOS exécutant [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344)
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>Créer un profil Apple Configurator pour les appareils
 
@@ -69,7 +69,7 @@ Un profil d’inscription d’appareil définit les paramètres appliqués duran
 
 **Ajouter des numéros de série Apple Configurator à Intune**
 
-1. Créez une liste de valeurs, séparées par des virgules (.csv) avec deux colonnes, sans en-tête. Ajoutez le numéro de série dans la colonne de gauche, et les détails dans celle de droite. Le maximum actuel de la liste est de 500 lignes. Dans un éditeur de texte, la liste .csv ressemble à ceci :
+1. Créez une liste de valeurs, séparées par des virgules (.csv) avec deux colonnes, sans en-tête. Ajoutez le numéro de série dans la colonne de gauche, et les détails dans celle de droite. Le maximum actuel pour la liste est de 5 000 lignes. Dans un éditeur de texte, la liste .csv ressemble à ceci :
 
     F7TLWCLBX196,détails de l’appareil</br>
     DLXQPCWVGHMJ,détails de l’appareil

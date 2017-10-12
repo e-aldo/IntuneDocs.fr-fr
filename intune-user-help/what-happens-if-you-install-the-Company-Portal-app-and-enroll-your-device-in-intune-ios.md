@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil iOS ou macOS dans Intune ?
 
@@ -34,9 +34,9 @@ Après avoir installé l’application Portail d’entreprise et inscrit votre a
 
 -   configurer automatiquement votre compte e-mail d’entreprise ;
 
-En inscrivant votre appareil dans Intune, vous autorisez l’administrateur informatique à gérer votre appareil pour protéger les informations de l’entreprise présentes sur l’appareil.
+En inscrivant votre appareil dans Intune, vous autorisez le support technique de votre entreprise à gérer votre appareil pour protéger les informations de l’entreprise qui s’y trouvent.
 
-Une fois votre appareil inscrit, votre administrateur informatique peut :
+Une fois votre appareil inscrit, le support technique de votre entreprise peut :
 
 -   Rétablir les paramètres par défaut d’origine de votre appareil en cas de perte ou de vol de celui-ci.
 
@@ -62,4 +62,4 @@ Une fois votre appareil inscrit, votre administrateur informatique peut :
 
 -   Activer ou désactiver la synchronisation automatique des fichiers en itinérance sur votre appareil. Si la synchronisation automatique des fichiers est autorisée, cela peut engendrer des frais d’itinérance.
 
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

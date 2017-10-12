@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f2e11a7fbe226932206f6946ef0603307e76c69c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>Édition préliminaire pour Microsoft Intune - Septembre 2017
 
@@ -185,6 +185,14 @@ Nous vous recommandons de mettre à niveau les appareils Windows Phone 8.1 élig
 
 
 ## <a name="intune-apps"></a>Applications Intune
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Améliorations de la recherche apportées au site web du portail d’entreprise <!--1331697-->
+Nous améliorons nos fonctions de recherche d’application, en commençant par le [site web du portail d’entreprise](https://portal.manage.microsoft.com). Les recherches sont désormais effectuées sur les catégories d’applications, en plus des champs Nom et Description. Par défaut, les résultats sont triés par ordre décroissant de pertinence. 
+
+Les utilisateurs iOS bénéficient aussi de cette modification, car le site web est également utilisé dans le cadre de l’application Portail d’entreprise pour iOS. Les applications du portail d’entreprise pour Android et Windows bénéficieront de mises à jour similaires dans les prochains mois. 
+
+Nous continuons à optimiser la façon dont la pertinence est suivie : faites-nous savoir comment elle fonctionne en utilisant le lien « Commentaires » au bas du site web du portail d’entreprise.
+
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Action d’actualisation ajoutée à l’application Portail d’entreprise pour Windows 10 <!--1132468-->
 L’application Portail d’entreprise pour Windows 10 permettra aux utilisateurs d’actualiser les données dans l’application avec une requête Pull pour actualiser ou en appuyant sur F5.
 

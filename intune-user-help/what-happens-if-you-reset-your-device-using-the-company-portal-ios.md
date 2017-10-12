@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cf3c9d121f2e2578219137161a972d5d58255058
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil iOS à l’aide du Portail d’entreprise ?
 
 Quand vous réinitialisez votre iPhone ou votre iPad à partir du portail d’entreprise, certaines applications et certains paramètres de votre appareils peuvent d’être supprimés, notamment certaines de vos données personnelles. Ce qui se passe sur chaque appareil dépend de la façon dont vous l’utilisez, comme indiqué dans les listes suivantes.
 
-**Votre administrateur informatique gère votre appareil mobile**
+**Le support technique de votre entreprise gère votre appareil mobile**
 
 -   Votre appareil n’apparaît plus dans le portail d’entreprise.
 
@@ -38,4 +38,4 @@ Quand vous réinitialisez votre iPhone ou votre iPad à partir du portail d’en
 
 -   Votre compte de messagerie professionnel et les messages non enregistrés sont supprimés.
 
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

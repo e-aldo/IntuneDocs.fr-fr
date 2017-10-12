@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil Android à l’aide du Portail d’entreprise ?
 
@@ -28,8 +28,8 @@ Quand vous utilisez le portail d’entreprise pour réinitialiser votre appareil
 
 Si vous disposez d’un appareil Samsung KNOX, vous pouvez effectuer une « réinitialisation sélective » en choisissant l’option de **suppression d’appareil** dans le Portail d’entreprise. La réinitialisation sélective supprime uniquement :
 
-- Les applications commerciales que votre administrateur met à votre disposition
+- Les applications métier que le support technique de votre entreprise met à votre disposition.
 - L’e-mail, les données VPN et Wi-Fi
-- La capacité de votre administrateur d’appliquer certains paramètres
+- La capacité du support technique de votre entreprise à forcer l’application de certains paramètres.
 
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a51857a6e5ffd020888af6a7c0a3b85efa91fe20
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1d1447887f63edf9671fc954dbc69bfd7766ca73
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Comment reconnecter un appareil Android endommagé
 
-Votre administrateur informatique a détecté que vous utilisez un appareil rooté. « Rooté » signifie que l’appareil a été modifié pour autoriser l’accès au système d’exploitation, ce qui peut compromettre la sécurité et constituer une menace pour les ressources de votre entreprise. Dans ce cas, votre appareil ne peut plus accéder aux ressources d’entreprise.
+Le support technique de votre entreprise a détecté que vous utilisez un appareil rooté. « Rooté » signifie que l’appareil a été modifié pour autoriser l’accès au système d’exploitation, ce qui peut compromettre la sécurité et constituer une menace pour les ressources de votre entreprise. Dans ce cas, votre appareil ne peut plus accéder aux ressources d’entreprise.
 
-Encore besoin d’aide ? Contactez votre administrateur (consultez le [site web Portail d’entreprise](http://portal.manage.microsoft.com) pour plus d’informations) ou écrivez à l’<a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">équipe Microsoft Android</a>.
+Encore besoin d’aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.

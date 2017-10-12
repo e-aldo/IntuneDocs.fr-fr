@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d1b5ce20cf9255c0a841531a3ae0014f122db47b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 35b66074c5e4003dec87c03a2f3ed771d7cd48d6
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>La version du système d’exploitation Windows de votre appareil n’est pas encore prise en charge
 
-Avec le développement rapide des technologies, il se peut que votre appareil soit parfois en avance par rapport à ce que votre administrateur informatique a eu l’occasion de tester. Il est possible que la version la plus récente de Windows ne fonctionne pas avec certains autres outils de votre entreprise.
+Avec le développement rapide des technologies, il se peut que votre appareil soit parfois en avance par rapport à ce que le support technique de votre entreprise a eu l’occasion de tester. Il est possible que la version la plus récente de Windows ne fonctionne pas avec certains autres outils de votre entreprise.
 
-Pour résoudre ce problème, vous devez contacter votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Pour résoudre ce problème, vous devez contacter le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

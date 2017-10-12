@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 926e09173918488d6beb1f0e3f725a0cff2971b4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows dans Intune ?
 
-Quand vous installez l’application Portail d’entreprise et que vous l’utilisez pour inscrire un appareil Windows ou Windows Phone, vous permettez à l’administrateur informatique de gérer votre appareil pour sécuriser les données de votre entreprise ou établissement scolaire. Cette rubrique décrit ce qui se passe pour les appareils antérieurs à Windows 10. Pour les appareils Windows 10, consultez la [rubrique connexe](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Quand vous installez l’application Portail d’entreprise et que vous l’utilisez pour inscrire un appareil Windows ou Windows Phone, vous permettez au support technique de votre entreprise de gérer votre appareil pour sécuriser les données de votre entreprise ou établissement scolaire. Cette rubrique décrit ce qui se passe pour les appareils antérieurs à Windows 10. Pour les appareils Windows 10, consultez la [rubrique connexe](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Que se passe-t-il pour tous les appareils Windows après l’inscription ?
 Quand votre appareil Windows ou Windows Phone est inscrit dans Intune, vous pouvez :
@@ -37,15 +37,15 @@ Quand votre appareil Windows ou Windows Phone est inscrit dans Intune, vous pouv
 
 -   réinitialiser les paramètres de votre téléphone en cas de perte ou de vol.
 
-Quand vous inscrivez votre appareil, vous autorisez l’administrateur informatique à effectuer les opérations suivantes :
+Quand vous inscrivez votre appareil, vous autorisez le support technique de votre entreprise à effectuer les opérations suivantes :
 
 -   Réinitialiser votre appareil aux réglages par défaut d’origine. Ceci est utile si l'appareil est perdu ou volé.
 
 -   Supprimer uniquement les fichiers relatifs à l’entreprise et les applications professionnelles. *Vos données et paramètres personnels ne sont pas supprimés.*
 
--   Votre administrateur informatique peut voir les logiciels installés sur l’appareil, dont les logiciels que vous avez installés personnellement.
+-   Le support technique de votre entreprise peut voir les logiciels installés sur l’appareil, dont les logiciels que vous avez installés personnellement.
 
--   Définir les exigences pour votre appareil, comme vous obliger à avoir un mot de passe ou un code confidentiel sur l’appareil pour protéger les données d’entreprise. Votre administrateur informatique peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’appareil si vous dépassez le nombre maximal autorisé.
+-   Définir les exigences pour votre appareil, comme vous obliger à avoir un mot de passe ou un code confidentiel sur l’appareil pour protéger les données d’entreprise. Le support technique de votre entreprise peut également limiter le nombre de tentatives de saisie d’un mot de passe et bloquer l’appareil si vous dépassez le nombre maximal autorisé.
 
 -   Vous obliger à chiffrer les données sur votre appareil pour mieux protéger les données d’entreprise si l’appareil est perdu ou volé.
 
@@ -55,22 +55,22 @@ Quand vous inscrivez votre appareil, vous autorisez l’administrateur informati
 
 ## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Que se passe-t-il pour tous les ordinateurs Windows après l’inscription ?
 
--  Certains logiciels seront installés sur votre ordinateur pour permettre à votre administrateur informatique de gérer l’ordinateur et à vous d’accéder aux ressources d’entreprise telles que des applications et des informations de support. Votre administrateur informatique peut automatiquement mettre à jour ces logiciels.
+-  Des logiciels sont installés sur votre ordinateur pour permettre au support technique de votre entreprise de gérer l’ordinateur, et pour vous permettre d’accéder aux ressources d’entreprise, comme des applications et des informations de support. Le support technique de votre entreprise peut mettre à jour ces logiciels automatiquement.
 
 -  Intune Endpoint Protection peut être installé sur votre ordinateur. Ce logiciel recherche les virus et programmes malveillants.
 
--  Votre administrateur informatique peut collecter ou supprimer des données du disque dur de votre ordinateur.
+-  Le support technique de votre entreprise peut collecter ou supprimer des données du disque dur de votre ordinateur.
 
--  Votre administrateur informatique peut installer des applications et des mises à jour sur votre ordinateur.
+-  Le support technique de votre entreprise peut installer des applications et des mises à jour sur votre ordinateur.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Que se passe-t-il toutes les huit heures après l’inscription d’appareils ?
 
 Environ toutes les huit heures, les appareils inscrits vont :
 
--   télécharger toute mise à jour d’une application ou d’une stratégie rendue disponible par votre administrateur informatique ;
+-   Télécharger toutes les mises à jour d’une application ou d’une stratégie rendues disponibles par le support technique de votre entreprise.
 
 -   envoyer toute mise à jour de l'inventaire matériel ;
 
 -   envoyer toute mise à jour de l'inventaire d'applications de la société.
 
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

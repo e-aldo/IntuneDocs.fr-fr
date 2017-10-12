@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: b40801633a130ac79b0ae5b4e1669320c70909e2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrire votre appareil macOS dans Intune avec l’application Portail d’entreprise
 
@@ -48,4 +48,4 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
 
 8. Votre Mac commence l’inscription pour la gestion. Vous pouvez être invité à fournir les informations de connexion de votre ordinateur pendant cette opération. L’inscription peut prendre quelques minutes. Pendant ce temps, vous pouvez effectuer d’autres tâches sur votre ordinateur. Un message s’affiche une fois la configuration de l’application Portail d’entreprise terminée pour vous informer que vous avez terminé.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).

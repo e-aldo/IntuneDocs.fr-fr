@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 21d9e6678c9981b3c1d918f337322d50aa0fecb5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Compte de messagerie d’entreprise existant détecté
 
-Vous avez déjà un compte de messagerie avec votre organisation ou votre société, et vous souhaitez maintenant accéder à ce compte sur votre appareil mobile. L’administrateur a besoin de votre aide pour assurer la sécurité de l’accès à l’e-mail sur le trajet entre la personne qui l’envoie et votre appareil. Tout a peut-être bien fonctionné pour votre e-mail actuel, mais vos informations seront plus en sécurité en procédant comme suit.
+Vous avez déjà un compte de messagerie avec votre organisation ou votre société, et vous souhaitez maintenant accéder à ce compte sur votre appareil mobile. Le support technique de votre entreprise a besoin de votre aide pour assurer la sécurité de l’accès aux e-mails sur son cheminement entre la personne qui l’envoie et votre appareil. Tout a peut-être bien fonctionné pour votre e-mail actuel, mais vos informations seront plus en sécurité en procédant comme suit.
 
 1.  Recherchez l’option **Paramètres** pour votre appareil et supprimez la connexion que vous avez précédemment configurée pour votre messagerie d’entreprise.
 
@@ -34,4 +34,4 @@ Vous avez déjà un compte de messagerie avec votre organisation ou votre socié
 
 3.  Patientez quelques secondes pour les nouveaux paramètres de messagerie à appliquer automatiquement à votre appareil.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

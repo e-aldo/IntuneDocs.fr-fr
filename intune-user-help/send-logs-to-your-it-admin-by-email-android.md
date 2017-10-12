@@ -1,5 +1,5 @@
 ---
-title: "Envoyer des journaux à votre administrateur informatique par courrier électronique | Microsoft Docs"
+title: Envoyer des journaux au support technique de votre entreprise par e-mail | Microsoft Docs
 description: "Envoyer les journaux de données par e-mail sur un appareil Android"
 keywords: 
 author: barlanmsft
@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-email"></a>Envoyer des journaux à votre administrateur informatique par e-mail
+# <a name="send-logs-to-your-company-support-using-email"></a>Envoyer des journaux au support technique de votre entreprise par e-mail
 
-Si vous obtenez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider votre administrateur informatique à résoudre le problème en lui envoyant les informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
+Si vous recevez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider le support technique de votre entreprise à résoudre le problème en lui envoyant des informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
 
 > [!Note]
-> Pour faciliter la tâche de l’administrateur informatique chargé d’identifier le problème, vous devriez activer la _journalisation détaillée_. La journalisation détaillée inclut tous les détails pertinents dans le rapport. Découvrez comment [activer la journalisation détaillée ici](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Pour faciliter l’identification du problème par le support technique de votre entreprise, il est recommandé d’activer la _journalisation détaillée_. La journalisation détaillée inclut tous les détails pertinents dans le rapport. Découvrez comment [activer la journalisation détaillée ici](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Pour envoyer des journaux à votre administrateur informatique par e-mail :
+Pour envoyer des journaux au support technique de votre entreprise par e-mail :
 
 1.  Ouvrez l'application Portail d'entreprise.
 
@@ -40,4 +40,4 @@ Pour envoyer des journaux à votre administrateur informatique par e-mail :
 
 3.  Sous **Aide**, appuyez sur **Obtenir de l’aide**.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

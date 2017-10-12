@@ -1,6 +1,6 @@
 ---
-title: "Aider votre administrateur informatique à résoudre les problèmes de l’appareil grâce à la journalisation détaillée | Microsoft Docs"
-description: "Aider votre administrateur informatique à résoudre les problèmes de l’appareil à l’aide de la journalisation détaillée"
+title: "Aider le support technique de votre entreprise à résoudre les problèmes de l’appareil grâce à la journalisation détaillée | Microsoft Docs"
+description: "Aider le support technique de votre entreprise à résoudre les problèmes de l’appareil grâce à la journalisation détaillée"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1756f05fed15bf50c5bb8981e62f87789f14daab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a8364778943171bb1a949f61ad696427ff914c99
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="help-your-it-admin-fix-device-issues-with-verbose-logging"></a>Aider votre administrateur informatique à résoudre les problèmes de l’appareil grâce à la journalisation détaillée
+# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Aider le support technique de votre entreprise à résoudre les problèmes de l’appareil grâce à la journalisation détaillée
 
-Une fois votre appareil Android inscrit dans Intune, vous pouvez utiliser la *journalisation détaillée* pour faire en sorte que l’application Portail d’entreprise et les applications gérées par Intune enregistrent des journaux détaillés de l’activité de votre appareil. Ces journaux aident votre administrateur informatique à résoudre les problèmes que vous êtes susceptible de rencontrer en utilisant le portail d’entreprise ou une application gérée par Intune. La journalisation détaillée est activée par défaut sur votre appareil, et les journaux envoyés à votre administrateur informatique incluent votre adresse e-mail.
+Une fois votre appareil Android inscrit dans Intune, vous pouvez utiliser la *journalisation détaillée* pour faire en sorte que l’application Portail d’entreprise et les applications gérées par Intune enregistrent des journaux détaillés de l’activité de votre appareil. Ces journaux aident le support technique de votre entreprise à résoudre les problèmes que vous êtes susceptible de rencontrer quand vous utilisez le portail d’entreprise ou une application gérée par Intune. La journalisation détaillée est activée par défaut sur votre appareil, et les journaux envoyés au support technique de votre entreprise incluent votre adresse e-mail.
 
 Pour activer ou désactiver la journalisation détaillée, connectez-vous à l’application Portail d’entreprise à l’aide de vos informations d’identification professionnelles ou scolaires, appuyez sur **Paramètres**, puis sur le bouton d’activation/de désactivation à côté de **Journalisation détaillée**.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

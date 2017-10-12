@@ -1,6 +1,6 @@
 ---
 title: "Gestion DEP d’Apple pour les appareils iOS"
-description: "Déployez un profil d’inscription qui inscrit les appareils iOS achetés via le programme DEP iOS « à distance », afin de gérer les appareils Apple."
+description: "Déployez un profil d’inscription qui inscrit les appareils iOS achetés via le Programme d’inscription des appareils iOS à distance, afin de gérer les appareils Apple."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75d2a54f065e04b3f6c923dc4e83cfea498ead76
+ms.sourcegitcommit: c36f74323b57c9d9ef972322082923c449a1a74f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrire des appareils iOS DEP d’entreprise
 
@@ -28,7 +28,7 @@ Microsoft Intune peut déployer un profil d’inscription qui inscrit les appare
 
 >[!NOTE]
 >L’inscription au programme DEP ne peut pas être utilisée avec celle du [gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
->En outre, si les utilisateurs inscrivent des appareils iOS (c’est-à-dire s’ils utilisent l’application de portail d’entreprise) et si les numéros de série de ces appareils sont ensuite importés et affectés à un profil DEP, les appareils seront désinscrits de Microsoft Intune.
+>De plus, si les utilisateurs inscrivent des appareils iOS (c’est-à-dire à l’aide de l’application Portail d’entreprise) et que les numéros de série de ces appareils sont ensuite importés et affectés à un profil DEP, les appareils sont désinscrits d’Intune.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Prérequis pour inscrire des appareils iOS à l’aide de la gestion Apple DEP
 
