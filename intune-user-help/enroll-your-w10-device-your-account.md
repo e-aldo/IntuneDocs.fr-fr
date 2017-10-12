@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrire votre appareil Windows 10 dans Intune
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Se connecter](./media/W10-enroll-4-sign-in.png)
 
-Vous ne parvenez toujours pas à accéder à votre messagerie professionnelle ou scolaire, à vos fichiers ou à d’autres données ? Essayez d’y remédier en [résolvant les problèmes liés à votre compte](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Si cela ne fonctionne toujours pas, vous devez contacter votre administrateur informatique pour obtenir de l’aide.
+Vous ne parvenez toujours pas à accéder à votre messagerie professionnelle ou scolaire, à vos fichiers ou à d’autres données ? Essayez d’y remédier en [résolvant les problèmes liés à votre compte](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Si cela ne fonctionne toujours pas, vous devez contacter le support technique de votre entreprise pour obtenir de l’aide.
 
-Pour obtenir de l’aide auprès de votre administrateur informatique, il vous suffit d’utiliser les informations de contact disponibles dans l’application Portail d’entreprise, laquelle vous permet également de rechercher et de télécharger les applications recommandées et obligatoires pour votre travail de tous les jours. L’application Portail d’entreprise est peut-être déjà installée sur votre appareil. Pour le vérifier rapidement, recherchez __Portail d’entreprise__ dans votre liste __Toutes les applications__.
+Pour obtenir de l’aide auprès du support technique de votre entreprise, il vous suffit d’utiliser les informations de contact disponibles dans l’application Portail d’entreprise, laquelle vous permet également de rechercher et de télécharger les applications recommandées et obligatoires pour votre travail de tous les jours. L’application Portail d’entreprise est peut-être déjà installée sur votre appareil. Pour le vérifier rapidement, recherchez __Portail d’entreprise__ dans votre liste __Toutes les applications__.
 
 Si l'application Portail d'entreprise ne figure pas dans votre liste d'applications, procédez comme suit pour l'installer.
 

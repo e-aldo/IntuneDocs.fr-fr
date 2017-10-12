@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 501bbb1d75ec2302f7564e7a62eb5b04f40a2d04
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a91b167911d203cd3bd1e7645e5cacbc2eb6534
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Votre appareil Android étant rooté, vous ne pouvez pas vous connecter
 
@@ -32,6 +32,6 @@ Votre appareil a peut être été rooté pour l’une des deux raisons suivantes
 
 - Vous avez peut-être installé une application sur votre appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Si vous voyez ce message immédiatement après l’installation d’une application, essayez de désinstaller cette application.
 
-- Le fabricant de votre appareil a installé un logiciel sur l’appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Dans ce cas, vous devez contacter votre administrateur informatique pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+- Le fabricant de votre appareil a installé un logiciel sur l’appareil que le logiciel de détection de root considère comme une menace pour la sécurité. Dans ce cas, vous devez contacter le support technique de votre entreprise pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
 
 Si vous avez rooté vous-même votre appareil, vous devez inverser le processus et restaurer l’appareil à son état non rooté.

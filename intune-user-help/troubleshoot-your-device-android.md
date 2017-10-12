@@ -15,21 +15,21 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Résoudre les problèmes courants rencontrés avec votre appareil Android
 
-Parfois, des problèmes peuvent se produire avec votre appareil Android et peuvent être corrigés. Voici quelques problèmes courants dont nous avons connaissance et que vous pouvez d’abord essayer de résoudre vous-même. Pour les problèmes plus complexes, nous vous recommandons de contacter votre administrateur informatique via leurs informations de contact sur le [site web du portail d’entreprise](http://portal.manage.microsoft.com).
+Parfois, des problèmes peuvent se produire avec votre appareil Android et peuvent être corrigés. Voici quelques problèmes courants dont nous avons connaissance et que vous pouvez d’abord essayer de résoudre vous-même. Pour les problèmes plus complexes, nous vous recommandons de contacter le support technique de votre entreprise via leurs informations de contact sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
 
 - [Vérifier la conformité de votre appareil Android](check-compliance-on-your-device-android.md)
-- [Utiliser la journalisation détaillée pour aider votre administrateur informatique à résoudre les problèmes](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Envoyer des journaux à votre administrateur informatique par e-mail](send-logs-to-your-it-admin-by-email-android.md)
-- [Envoyer des journaux à votre administrateur informatique par câble USB](send-logs-to-your-it-admin-using-cable-android.md)
-- [Envoyer les erreurs d’inscription à votre administrateur informatique](send-enrollment-errors-to-your-it-admin-android.md)
+- [Utiliser la journalisation détaillée pour aider le support technique de votre entreprise à résoudre les problèmes de l’appareil](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Envoyer des journaux au support technique de votre entreprise par e-mail](send-logs-to-your-it-admin-by-email-android.md)
+- [Envoyer des journaux au support technique de votre entreprise via un câble USB](send-logs-to-your-it-admin-using-cable-android.md)
+- [Envoyer des erreurs d’inscription au support technique de votre entreprise](send-enrollment-errors-to-your-it-admin-android.md)
 - [Vous devez mettre à jour votre appareil Android](you-need-to-update-your-android-device.md)
 - [L’appareil n’est pas conforme à la version maximale du système d’exploitation](your-android-version-isnt-yet-supported.md)
 - [Votre appareil est rooté et vous ne pouvez pas vous connecter](your-device-is-rooted-and-you-cant-connect-android.md)

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 63595e9905a220c326c315f5932379a9b743d3de
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 52070573560b798044c929b0fa9476cf1f7bbf89
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Un certificat qui est généralement installé sur votre téléphone est absent de votre appareil Android.
 
@@ -42,9 +42,9 @@ Vous pouvez résoudre ce problème en obtenant le certificat exigé depuis la [p
 
 5. Fermez votre navigateur et l’application Portail d’entreprise.
 
-6. Rouvrez l’application Portail d’entreprise. Vous devriez pouvoir vous connecter à l’application Portail d’entreprise. Si vous ne pouvez toujours pas utiliser l’application Portail d’entreprise, contactez votre administrateur informatique à l’aide des informations fournies sur le [site Web du Portail d’entreprise](http://portal.manage.microsoft.com) pour obtenir des instructions.
+6. Rouvrez l’application Portail d’entreprise. Vous devriez pouvoir vous connecter à l’application Portail d’entreprise. Si vous ne pouvez toujours pas utiliser l’application Portail d’entreprise, contactez le support technique de votre entreprise à l’aide des informations fournies sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com) pour obtenir des instructions.
 
 >[!NOTE]
 > Si l’installation de ce certificat ne résout pas le problème, et que vous voyez un message différent indiquant un certificat manquant, vous devez prendre des mesures supplémentaires pour [installer le certificat manquant](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

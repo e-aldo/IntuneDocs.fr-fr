@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dda7108aedcc4d3878fe3743ee0b88b26fabbe6f
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-device-enrollment"></a>Qu’est-ce que l’inscription d’appareils ?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Si vous utilisez Exchange ActiveSync (soit localement, soit hébergé dans le cl
 ## <a name="overview-of-device-enrollment-methods"></a>Présentation des méthodes d’inscription des appareils
 
 Le tableau suivant offre une vue d’ensemble des méthodes d’inscription Intune avec leurs fonctions et spécifications décrites ci-dessous.
+
 **Légende**
 
 - **Réinitialisation requise** - Les appareils sont réinitialisés aux paramètres d’usine lors de l’inscription.
@@ -79,18 +80,59 @@ Voici des scénarios d’inscription d’appareils d’entreprise (COD). Vous po
 Le gestionnaire d’inscription d’appareil est un compte d’utilisateur spécial permettant d’inscrire et de gérer plusieurs appareils d’entreprise. Les responsables peuvent installer le Portail d’entreprise et inscrire de nombreux appareils sans utilisateur. En savoir plus sur le [gestionnaire d’inscription d’appareil](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP
-Le programme d’inscription d’appareils Apple (ou DEP) vous permet de créer et déployer une stratégie « à distance » sur des appareils iOS achetés et gérés avec DEP. L’appareil est inscrit quand l’utilisateur le démarre pour la première fois et exécute l’Assistant d’installation iOS. Cette méthode prend en charge le mode **iOS supervisé** qui active les fonctionnalités suivantes :
+Le programme d’inscription d’appareils Apple (ou DEP) vous permet de créer et déployer une stratégie « à distance » sur des appareils iOS achetés et gérés avec DEP. L’appareil est inscrit quand l’utilisateur le démarre pour la première fois et exécute l’Assistant d’installation iOS. Cette méthode prend en charge le mode iOS supervisé, qui permet la configuration d’un appareil avec les fonctionnalités suivantes :
 
-  - Inscription verrouillée
-  - Mode plein écran et autres configurations et restrictions avancées
+- Verrouillage d’application (Mode Application unique) 
+- Proxy HTTP global 
+- Ignorer le verrouillage d’activation 
+- Mode Application unique autonome 
+- Filtrage de contenu web 
+- Définition de l’écran d’arrière-plan et de verrouillage 
+- Envoi (push) d’application en mode silencieux 
+- VPN AlwaysOn 
+- Autoriser l’installation d’applications gérées exclusivement 
+- iBookstore 
+- iMessages 
+- Centre de jeux 
+- AirDrop 
+- AirPlay 
+- Appairage d’hôtes 
+- Synchronisation cloud 
+- Recherche Spotlight 
+- Handoff 
+- Effacer l’appareil 
+- Interface utilisateur - Restrictions 
+- Installation de profils de configuration par l’interface utilisateur 
+- Actualités 
+- Raccourcis clavier 
+- Modifications du code secret 
+- Changements du nom de l’appareil 
+- Changements de papier peint 
+- Téléchargements automatiques d’applications 
+- Changements apportés à l’approbation d’applications d’entreprise 
+- Apple Music 
+- Mail Drop 
+- Appairage avec Apple Watch 
+
+> [!NOTE]
+> Apple a confirmé que certains paramètres passeront en mode supervisé uniquement en 2018. Nous recommandons de prendre ceci en considération lors de l’utilisation de ces paramètres, au lieu d’attendre qu’Apple les migre en mode supervisé uniquement :
+> - Installation d’applications
+> - Suppression d’applications
+> - FaceTime
+> - Safari
+> - iTunes
+> - Contenu explicite
+> - Documents et données iCloud
+> - Jeux multijoueur
+> - Ajouter des amis du centre de jeux
 
 Pour en savoir plus sur l’inscription DEP iOS :
 
-- [Choisir comment inscrire des appareils iOS](enrollment-method-choose-ios.md)
+- [Choisir comment inscrire des appareils iOS](ios-enroll.md)
 - [Inscrire des appareils iOS à l’aide du programme d’inscription d’appareils](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
-Les administrateurs utilisent Apple Configurator, via un port USB, pour préparer manuellement chaque appareil d’entreprise à l’inscription à l’aide de l’Assistant Configuration. Ils créent un profil d’inscription et l’exportent vers Apple Configurator. Lorsque les utilisateurs reçoivent leurs appareils, ils sont invités à exécuter l’Assistant Configuration pour inscrire leurs appareils. Cette méthode prend en charge le mode **iOS supervisé** qui active les fonctionnalités suivantes :
+Les administrateurs utilisent Apple Configurator, via un port USB, pour préparer manuellement chaque appareil d’entreprise à l’inscription à l’aide de l’Assistant Configuration. Ils créent un profil d’inscription et l’exportent vers Apple Configurator. Lorsque les utilisateurs reçoivent leurs appareils, ils sont invités à exécuter l’Assistant Configuration pour inscrire leurs appareils. Cette méthode prend en charge le mode **iOS supervisé**, qui active les fonctionnalités suivantes :
   - Inscription verrouillée
   - Mode plein écran et autres configurations et restrictions avancées
 

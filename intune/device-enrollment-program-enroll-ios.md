@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrire automatiquement des appareils iOS avec le Programme d’inscription des appareils d’Apple
 
@@ -29,7 +29,10 @@ Cette rubrique vous aide à activer l’inscription d’appareils iOS pour les a
 
 Pour activer l’inscription DEP, vous utilisez à la fois le portail Intune et le portail DEP Apple. Une liste de numéros de série ou un numéro de bon de commande est nécessaire pour que vous puissiez affecter des appareils à Intune à des fins de gestion. Vous créez des profils d’inscription DEP contenant les paramètres appliqués aux appareils lors de l’inscription.
 
-L’inscription DEP ne peut pas être utilisée avec le [gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md).
+Notez que l’inscription DEP ne fonctionne pas avec le [gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md).
+
+## <a name="what-is-supervised-mode"></a>Qu’est-ce que le mode supervisé ?
+Apple a introduit le mode supervisé dans iOS 5. Un appareil iOS en mode supervisé peut être géré avec plus de contrôles. Il est donc particulièrement utile pour les appareils d’entreprise. Intune prend en charge la configuration des appareils pour le mode supervisé dans le cadre du Programme d’inscription des appareils Apple. 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -75,9 +78,8 @@ Vous utilisez le portail DEP Apple pour créer un jeton DEP. Vous utilisez égal
 
    ![Capture d’écran de l’ajout d’un nom de serveur MDM pour le programme DEP et clic sur Suivant.](./media/enrollment-program-token-add-server.png)
 
-5. La boîte de dialogue **Ajouter &lt;nom_serveur&gt; ** s’ouvre avec le message **Charger votre clé publique**. Choisissez **Choisir un fichier** pour charger le fichier .pem, puis choisissez **Suivant**.
+5. La boîte de dialogue **Ajouter &lt;nom_serveur&gt;**  s’ouvre avec le message **Charger votre clé publique**. Choisissez **Choisir un fichier** pour charger le fichier .pem, puis choisissez **Suivant**.
 
-6.  La boîte de dialogue **Ajouter&lt;nom_serveur&gt;** affiche un lien **Votre jeton de serveur**. Téléchargez le fichier de jeton de serveur (.p7m) sur votre ordinateur, puis choisissez **Terminé**.
 
 7. Accédez à **Programme de déploiement** &gt; **Programme d’inscription d’appareils** &gt; **Gérer les appareils**.
 8. Sous **Choisir les appareils par**, spécifiez comment les appareils sont identifiés :
@@ -114,10 +116,13 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
 
 4. Choisissez **Paramètres de gestion des appareils** pour configurer les paramètres de profil suivants :
 
-  ![Capture d’écran : choix du mode d’administration. L’appareil a les paramètres suivants : Supervisé, Inscription verrouillée, Autoriser le jumelage défini sur Refuser tout. Apple Configurator Certificates est grisé pour un nouveau profil de programme d’inscription.](./media/enrollment-program-profile-mode.png)
-    - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées.
+  ![Capture d’écran : choix du mode d’administration. L’appareil a les paramètres suivants : Supervisé, Inscription verrouillée, Autoriser l’appairage défini sur Refuser tout. Apple Configurator Certificates est grisé pour un nouveau profil de programme d’inscription.](./media/enrollment-program-profile-mode.png)
+    - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées. Microsoft recommande l’utilisation du Programme d’inscription des appareils comme mécanisme d’activation du mode supervisé, en particulier pour les organisations qui déploient un grand nombre d’appareils iOS.
 
-    - **Inscription verrouillée** : (nécessite le Mode de gestion = Supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres. Après l’inscription de l’appareil, vous ne pourrez plus modifier ce paramètre sans réinitialiser l’appareil aux paramètres d’usine.
+ > [!NOTE]
+ > La configuration d’un appareil pour le mode supervisé ne peut pas être effectuée avec Intune après l’inscription de cet appareil. Après l’inscription, la seule façon d’activer le mode surveillé est de connecter l’appareil iOS à un Mac avec un câble USB et d’utiliser Apple Configurator. Cette opération réinitialise l’appareil et le configure en mode supervisé. Découvrez plus d’informations sur ceci dans la [documentation d’Apple Configurator](http://help.apple.com/configurator/mac/2.3). Un appareil supervisé indique que « Cet iPhone est géré par Contoso. » sur l’écran de verrouillage, et que « Cet iPhone est supervisé. Contoso peut surveiller votre trafic Internet et localiser cet appareil. » dans **Paramètres** > **Général** > **À propos de**.
+
+    - **Inscription verrouillée** : (nécessite le Mode de gestion = supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres. Après l’inscription de l’appareil, vous ne pourrez plus modifier ce paramètre sans réinitialiser l’appareil aux paramètres d’usine.
 
   - **Activer iPad partagé** : le Programme d’inscription des appareils d’Apple ne prend pas en charge iPad partagé.
 
@@ -146,6 +151,7 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
         - **Données de diagnostic**
 
     Choisissez **Enregistrer**.
+
 9. Pour enregistrer les paramètres de profil, choisissez **Créer** dans le panneau **Créer un profil d’inscription**. Le profil d’inscription s’affiche dans la liste des profils d’inscription du Programme d’inscription Apple.
 
 ## <a name="sync-managed-devices"></a>Synchroniser des appareils gérés

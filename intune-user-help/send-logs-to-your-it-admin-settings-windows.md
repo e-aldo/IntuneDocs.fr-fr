@@ -1,5 +1,5 @@
 ---
-title: "Envoyer des journaux à un administrateur informatique pour les appareils Windows 10 | Microsoft Docs"
+title: Envoyer des journaux au support technique de votre entreprise pour des appareils Windows 10 | Microsoft Docs
 description: "Inscrire un appareil Windows 10 1511 dans Intune"
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: be9976f03bf749222ca372040d4d936e6a8fd26b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1e84bd13a58359f281ebfca3901d643dfc012d90
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-from-the-settings-app-for-windows-10"></a>Envoyer les journaux à un administrateur informatique à partir de l’application Paramètres pour Windows 10
+# <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Envoyer les journaux au support technique de votre entreprise à partir de l’application Paramètres pour Windows 10
 
-Si vous obtenez une erreur pendant que vous utilisez l’appareil Windows 10 géré par votre entreprise, vous pouvez aider votre administrateur informatique à résoudre le problème en lui envoyant les informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
+Si vous recevez une erreur pendant que vous utilisez l’appareil Windows 10 géré par votre entreprise, vous pouvez aider le support technique de votre entreprise à résoudre le problème en lui envoyant des informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
 
 1.  Pour ouvrir l’application **Paramètres** Windows, accédez au menu **Démarrer**, puis sélectionnez le bouton **Paramètres**. Vous pouvez également rechercher « paramètres » dans la barre de recherche.
 2.  Accédez à **Comptes** > **Accès scolaire ou professionnel**.
@@ -34,6 +34,6 @@ Si vous obtenez une erreur pendant que vous utilisez l’appareil Windows 10 gé
 
 4. Les journaux seront enregistrés sous **C:\Users\Public\Public Documents\MDMDiagnostics**. Deux fichiers seront créés : l’un est le journal proprement dit, et l’autre est un document spécial qui permet à votre administrateur de passer en revue les journaux dans différents programmes, par exemple Microsoft Excel. Joignez ces deux fichiers à un e-mail et envoyez cet e-mail à votre administrateur. Si vous effectuez cette opération plusieurs fois, choisissez simplement les fichiers créés le même jour que les journaux. 
 
-Vous devrez peut-être envoyer également des [journaux à partir de l’application Portai d’entreprise](send-logs-to-your-it-admin-cp-windows.md) pour faciliter davantage la tâche à votre administrateur informatique, qui doit résoudre tous les problèmes éventuels. 
+Il peut être nécessaire d’envoyer aussi des [journaux à partir de l’application Portail d’entreprise](send-logs-to-your-it-admin-cp-windows.md) pour aider le support technique de votre entreprise à résoudre les éventuels problèmes. 
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

@@ -1,6 +1,6 @@
 ---
 title: "Résolution des menaces trouvées par Lookout for Work sur iOS | Microsoft Docs"
-description: 
+description: "Découvrez comment résoudre une menace détectée par Lookout for Work sur iOS."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,13 +14,13 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b51ad3fcc04d8e4b2cb6da6982f62885f466080
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1b5a49c4bb29f5511dc13b7d12928b11fd98b2de
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>Vous devez résoudre une menace détectée par Lookout for Work
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Résoudre une menace détectée par Lookout for Work
 
 Lookout for Work a détecté la présence d’une menace potentielle sur votre appareil, et vous devez corriger le problème pour récupérer l’accès aux e-mails, applications et fichiers de votre entreprise ou établissement scolaire. Le message que vous voyez peut ressembler à celui-ci :
 
@@ -34,7 +34,7 @@ Si un virus ou une autre menace de sécurité est présent sur votre appareil in
 
 ![Message d’erreur Lookout for Work avec un lien vers le site web du Portail d’entreprise](./media/mtd-go-to-device-management-portal-android.png)
 
-Appuyez sur le lien **portail de gestion des appareils** pour accéder au [site web du Portail d’entreprise](http://portal.manage.microsoft.com), où vous pouvez obtenir des instructions sur la façon de résoudre le problème.
+Appuyez sur le lien **portail de gestion des appareils** pour accéder au [site web du Portail d’entreprise](https://portal.manage.microsoft.com), où vous pouvez obtenir des instructions sur la façon de résoudre le problème.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Exemple d’application que Lookout for Work considère comme une menace
 
@@ -46,4 +46,5 @@ Si vous voyez quelque chose comme ceci, appuyez sur le nom de l’application qu
 
 Après avoir désinstallé l’application, vous récupérez immédiatement l’accès à vos e-mails et autres données de votre entreprise ou établissement scolaire. Si vous ignorez la demande de désinstallation de l’application, vous perdez l’accès à vos e-mails et données d’entreprise jusqu’à ce que vous désinstalliez l’application.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+

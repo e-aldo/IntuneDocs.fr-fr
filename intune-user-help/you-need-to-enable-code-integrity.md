@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>Vous devez activer l’intégrité du Code
 
@@ -29,8 +29,8 @@ La protection des informations de votre organisation requiert différents types 
 L’intégrité du code est automatiquement activée lorsque votre système utilise activement le démarrage sécurisé.
 
 > [!Tip]
-> L’activation du démarrage sécurisé est une tâche avancée. Nous vous recommandons de contacter votre administrateur pour obtenir de l’aide sur cette tâche.
+> L’activation du démarrage sécurisé est une tâche avancée. Nous vous recommandons de contacter le support technique de votre entreprise pour obtenir de l’aide sur cette tâche.
 
 Si vous vous sentez prêt à continuer, consultez la section « Pour réactiver le démarrage sécurisé » dans la page [Désactivation du démarrage sécurisé](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) afin d’essayer d’activer vous-même le démarrage sécurisé.
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

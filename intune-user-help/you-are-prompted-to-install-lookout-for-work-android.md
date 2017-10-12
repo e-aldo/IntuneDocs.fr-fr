@@ -1,11 +1,11 @@
 ---
 title: Vous devez installer Lookout for Work sur votre appareil Android | Microsoft Docs
-description: 
+description: "Découvrez comment installer Lookout for Work pour Android."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 957a0f5104030043e8049bf65ba30e4579a0acb0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9e0ea429a6fd68bf984f814d512f9e5a8b327358
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-lookout-for-work"></a>Vous devez installer Lookout for Work
+# <a name="install-lookout-for-work"></a>Installer Lookout for Work
 
-Pour pouvoir accéder à vos ressources de travail, votre administrateur informatique vous demande d’installer l’application Lookout for Work, qui vous aide à protéger votre appareil en détectant les menaces à la sécurité potentielles.
+Avant de vous permettre d’accéder à vos ressources de travail, le support technique de votre entreprise vous demande d’installer l’application Lookout for Work, qui vous aide à protéger votre appareil en détectant les menaces de sécurité potentielles.
 
-Si vous avez des difficultés avec l’installation, essayez de suivre les étapes de dépannage indiquées à la fin de cette rubrique.
+Si vous rencontrez des difficultés lors de l’installation, essayez de suivre les étapes de dépannage indiquées à la fin de cette rubrique.
 
-**Opérations à effectuer :**
+## <a name="what-you-need-to-do"></a>Opérations à effectuer
 
 1.  À partir du haut de l’écran, faites glisser vers le bas pour ouvrir la barre Notifications, puis appuyez sur **Application obligatoire – Installer Lookout for Work à partir du Play Store**.
 
@@ -70,8 +70,10 @@ Si vous avez des difficultés avec l’installation, essayez de suivre les étap
 
   Si Lookout for Work détecte une menace de sécurité sur votre appareil, il affiche des instructions pour résoudre le problème.
 
-**Si l’installation ne fonctionne pas**
+## <a name="if-the-installation-doesnt-work"></a>Si l’installation ne fonctionne pas
 
 Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, essayez d’installer Lookout for Work [manuellement, à partir du Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+

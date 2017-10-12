@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Créer un profil professionnel et inscrire votre appareil dans Intune
 
-L’inscription de votre appareil Android vous donne accès aux e-mails, applications et autres données professionnelles de l’entreprise. Dans le cadre de l’inscription, vous définissez un profil professionnel, qui sépare les données personnelles sur votre appareil de vos données de travail. Votre administrateur informatique peut gérer uniquement le profil professionnel, qui contient vos données de travail. Il ne peut pas gérer les données personnelles sur votre appareil. Obtenez plus d’informations sur [ce qui se passe quand vous créez un profil professionnel](what-happens-when-you-create-a-work-profile-android.md).
+L’inscription de votre appareil Android vous donne accès aux e-mails, applications et autres données professionnelles de l’entreprise. Dans le cadre de l’inscription, vous définissez un profil professionnel, qui sépare les données personnelles sur votre appareil de vos données de travail.
+
+Le support technique de votre entreprise peut gérer seulement le profil professionnel, qui contient vos données de travail. Il ne peut pas gérer les données personnelles sur votre appareil. Obtenez plus d’informations sur [ce qui se passe quand vous créez un profil professionnel](what-happens-when-you-create-a-work-profile-android.md).
 
 Pour créer un profil professionnel :
 
@@ -32,27 +34,27 @@ Pour créer un profil professionnel :
 
     ![Écran de bienvenue de l’application Portail d’entreprise Android](./media/and-enroll-0-welcome-screen.png)
 
-2. Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **COMMENCER**.
+2. Dans l’écran **Configuration de l’accès à l’entreprise**, appuyez sur **CONTINUER**.
 
-    ![Écran de configuration de l’accès à l’entreprise](./media/andr-afw-begin-company-access-setup.png)
+    ![Écran de configuration de l’accès à l’entreprise](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  Dans l’écran **Pourquoi créer un profil professionnel ?**, découvrez ce que vous pouvez faire, puis appuyez sur **CONTINUER**.
 
     ![Pourquoi créer un profil professionnel](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Consultez la liste de ce que votre administrateur informatique peut voir et ne pas voir sur votre appareil, puis appuyez sur **CONTINUER**.
+4.  Consultez la liste de ce que le support technique de votre entreprise peut voir ou non sur votre appareil, puis appuyez sur **CONTINUER**.
 
-    ![Ce que votre administrateur informatique peut, et ne peut pas, voir sur votre appareil](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![Ce que le support technique de votre entreprise peut voir ou non sur votre appareil](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  Dans l’écran **Et ensuite ?**, découvrez ce qui va se passer ensuite, puis appuyez sur **CONTINUER**.
+5.  Dans l’écran **Et ensuite ?**, découvrez ce qui se passe lors de l’inscription, puis appuyez sur **INSCRIRE**.
 
-    ![Écran Et ensuite](./media/andr-afw-what-comes-next.png)
+    ![Écran Et ensuite ?](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. Dans l’écran **Configurer votre profil professionnel**, cliquez sur **SUIVANT** pour permettre à l’application Portail d’entreprise d’accéder au profil professionnel.
 
     ![Accorder à l’application Portail d’entreprise l’accès au profil professionnel](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. Passez en revue l’écran Google qui décrit ce que votre administrateur informatique peut faire quand vous créez un profil professionnel, puis appuyez sur **OK**.
+7. Passez en revue l’écran Google qui décrit ce que le support technique de votre entreprise peut faire quand vous créez un profil professionnel, puis appuyez sur **OK**.
 
     ![Passer en revue les informations de Google à propos des profils professionnels](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ Pour créer un profil professionnel :
 
     Vous verrez brièvement le message « Inscription de votre appareil ».
 
-11. Quand l’écran **Configuration de l’accès à l’entreprise** montre que tout a été configuré correctement, appuyer sur **CONTINUER**.
+11. Quand l’écran **Vous voilà prêt !** montre que tout a été configuré correctement, appuyez sur **TERMINÉ**.
 
-    ![L’écran Configuration de l’accès à l’entreprise indique que le profil professionnel et l’inscription sont terminés](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. Dans l’écran **Fin de la configuration de l’accès à l’entreprise**, appuyez sur **TERMINÉ**. Vous devrez peut-être effectuer des étapes supplémentaires si votre administrateur informatique a ajouté d’autres exigences.
-
-    ![La configuration de l’accès à l’entreprise est terminée](./media/andr-afw-company-access-setup-complete.png)
+    ![L’écran Configuration de l’accès à l’entreprise indique que le profil professionnel et l’inscription sont terminés](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     Vous pouvez à présent obtenir des applications d’entreprise à partir du Play Store for Work.
 
     ![Page des applications du Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
-Encore besoin d’aide ? Contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

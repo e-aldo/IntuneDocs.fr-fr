@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
@@ -45,9 +45,9 @@ Examinons quelques concepts lors de l’ajout d’une stratégie WIP.
 
 -   **Applications de bureau Windows** : vous pouvez ajouter n’importe quelle application de bureau Windows traditionnelle à la stratégie (.exe, .dll, etc.).
 
-## <a name="pre-requisites"></a>Prérequis
+## <a name="pre-requisites"></a>Conditions préalables
 
-Vous devez configurer le fournisseur MAM avant de pouvoir créer une stratégie de protection d’application WIP. En savoir plus sur la façon de [configurer le fournisseur MAM avec Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+Vous devez configurer le fournisseur GAM avant de pouvoir créer une stratégie de protection d’application WIP. En savoir plus sur la façon de [configurer le fournisseur MAM avec Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Les éléments suivants sont également requis :
 
@@ -102,7 +102,7 @@ Une fois que vous avez configuré Intune dans votre organisation, vous pouvez cr
 5.  Une fois que vous avez entré les informations dans les champs, choisissez **OK** pour ajouter l’application à votre liste **Applications autorisées**.
 
 > [!NOTE]
-> Pour ajouter plusieurs applications du Windows Store en même temps, vous pouvez cliquer sur le menu **(...) ** à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
+> Pour ajouter plusieurs applications du Windows Store en même temps, vous pouvez cliquer sur le menu **(...)**  à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Ajouter une application de bureau à votre liste d’applications autorisées
 
@@ -155,16 +155,13 @@ Après avoir désactivé WIP, une tentative est effectuée pour déchiffrer les 
 
 ### <a name="use-wip-learning"></a>Utiliser WIP Learning
 
-1. Accédez au tableau de bord Azure. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Ouvrez le portail Azure. Choisissez **Plus de services**. Tapez **Intune** dans la zone de texte du filtre.
 
-2. Choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+3. Choisissez **Intune** > **Applications mobiles**.
 
-3. Choisissez **Intune**, le **tableau de bord Intune** s’affiche, sélectionnez alors **Applications mobiles**.
-
-4. Choisissez **WIP Learning** sous **Surveiller**. Les applications inconnues consignées par WIP Learning s’affichent.
-
-> [!IMPORTANT]
-> Une fois que les applications s’affichent dans le rapport de journalisation WIP Learning, vous pouvez ajouter à vos stratégies de protection d’application.
+4. Choisissez **État de protection de l’application** > **Rapports** > **Apprentissage Protection des informations Windows**.  
+ 
+    Une fois que les applications s’affichent dans le rapport de journalisation Apprentissage Protection des informations Windows, vous pouvez les ajouter à vos stratégies de protection d’application.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>Déployer une stratégie de protection d’application WIP
 

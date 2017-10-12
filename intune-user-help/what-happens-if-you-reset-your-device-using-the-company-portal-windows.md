@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil Windows à l’aide du Portail d’entreprise ?
 
@@ -28,8 +28,8 @@ Quand vous utilisez l’application Portail d’entreprise ou le [site web Porta
 
 |Configuration et gestion des appareils|Type d'appareil|
 |---------------------------------------|---------------|
-|Votre administrateur informatique gère votre appareil mobile|**Windows 10 et Windows Phone 8.1**</br>Votre appareil n’apparaît plus dans le portail d’entreprise, qui tente de réinitialiser l’appareil aux paramètres d’usine par défaut. Vos données, applications et paramètres personnels seront supprimés. <br /><br />**Windows 10 Mobile**</br>La seule façon de désinscrire votre appareil est de le réinitialiser.|
+|Le support technique de votre entreprise gère votre appareil mobile|**Windows 10 et Windows Phone 8.1**</br>Votre appareil n’apparaît plus dans le portail d’entreprise, qui tente de réinitialiser l’appareil aux paramètres d’usine par défaut. Vos données, applications et paramètres personnels seront supprimés. <br /><br />**Windows 10 Mobile**</br>La seule façon de désinscrire votre appareil est de le réinitialiser.|
 |Votre appareil peut accéder uniquement à la messagerie de l'entreprise|**Windows Phone 8.1**<br />Votre appareil n’apparaît plus dans le portail d’entreprise, et votre compte de messagerie d’entreprise et les messages non enregistrés sont supprimés.<br /><br />**Windows 7 ou Windows Vista**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 7 ou version antérieure utilisé pour le courrier électronique uniquement.<br /><br />**Windows 8.1 et Windows 8**<br />Votre appareil n’apparaît plus dans le portail d’entreprise, et votre compte de messagerie d’entreprise et les messages non enregistrés sont supprimés.|
 |PC et ordinateurs portables|**Windows 8.1 et Windows 8**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 8 ou Windows 8.1 sauf s’il est utilisé pour le courrier électronique uniquement.<br /><br />**Windows 7 ou Windows Vista**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 7 ou une version antérieure.|
 
-Si vous avez des questions, contactez votre administrateur informatique. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](http://portal.manage.microsoft.com).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
