@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3d8de720cc0b5973f4bbddb3e53b9ec838314f39
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 43042069383330e7dbd0aa2b948b15096cdf13bf
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Résoudre les problèmes de stratégie dans Microsoft Intune
 
@@ -29,7 +30,7 @@ Si vous rencontrez des problèmes de déploiement et de gestion des stratégies 
 ## <a name="general-issues"></a>Problèmes généraux
 
 ### <a name="was-a-deployed-policy-applied-to-the-device"></a>Une stratégie déployée a-t-elle été appliquée à l’appareil ?
-**Problème : ** Vous ne savez pas si une stratégie a été correctement appliquée.
+**Problème :**  Vous ne savez pas si une stratégie a été correctement appliquée.
 
 Dans la console d’administration Intune, à chaque appareil correspond un onglet Stratégie en dessous de **Propriétés de l’appareil**. Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur prévue est la valeur que vous souhaitez obtenir lors de l'attribution de la stratégie. L’état est ce que vous appliquez au bout du compte quand toutes les stratégies qui s’appliquent à l’appareil, ainsi que les restrictions et les conditions requises du matériel et du système d’exploitation, sont regroupées. Les états possibles sont :
 

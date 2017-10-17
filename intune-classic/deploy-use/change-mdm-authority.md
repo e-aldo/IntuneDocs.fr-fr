@@ -10,14 +10,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9119c9ece21117e916a5b30a6a8d80e518047b5e
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="change-the-mdm-authority"></a>Changer l’autorité MDM
 À compter de Configuration Manager version 1610, vous pouvez changer votre autorité MDM sans avoir à contacter le Support Microsoft, et sans devoir désinscrire puis réinscrire vos appareils gérés existants. Cette rubrique décrit la procédure pour changer un locataire Microsoft Intune existant configuré à partir d’Intune et avec **Microsoft Intune** (version autonome) comme autorité MDM pour **Configuration Manager** (MDM hybride), sans devoir désinscrire puis réinscrire vos appareils gérés existants.
@@ -76,7 +77,7 @@ Si vous utilisez des appareils iOS, vous devez configurer le certificat APNs dan
 1. **Télécharger une demande de signature de certificat**
 
     1. Dans la console Configuration Manager, accédez à **Administration** &gt; **Services cloud** &gt; **Abonnements Microsoft Intune**, puis sélectionnez **Créer une demande de certificat APNs** pour ouvrir la boîte de dialogue **Effectuer une demande de signature de certificat APNs**.  
-    2. Cliquez sur **Parcourir** pour accéder à l'emplacement auquel vous souhaitez enregistrer le fichier du nouveau certificat de demande de signature (.csr). Enregistrez localement le fichier de demande de signature de certificat (.csr).  
+    2. Cliquez sur**Parcourir** pour accéder à l'emplacement auquel vous souhaitez enregistrer le fichier du nouveau certificat de demande de signature (.csr). Enregistrez localement le fichier de demande de signature de certificat (.csr).  
     3. Cliquez sur **Télécharger**. Le nouveau fichier .csr Microsoft Intune se télécharge et il est enregistré par Configuration Manager.   
 
     > [!IMPORTANT]

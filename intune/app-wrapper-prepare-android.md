@@ -2,8 +2,8 @@
 title: "Inclure des applications Android dans un wrapper avec l’outil de création de package de restrictions d’application"
 description: "Cet article explique comment inclure des applications Android dans un wrapper sans changer le code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
 keywords: 
-author: mtillman
-ms.author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 07/07/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b82c0832fc102e4ae30268a6cd08ed0e14e1c931
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b6ca498b60590fc1dd96a86bad23991936e8b41e
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications Android pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
