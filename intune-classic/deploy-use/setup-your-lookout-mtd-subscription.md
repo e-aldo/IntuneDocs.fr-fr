@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54fa53c8f31171c3719f8368ad07cd33da5f2235
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Configurer votre abonnement Lookout Mobile Threat Defense
 
@@ -34,7 +35,7 @@ Les étapes suivantes sont nécessaires pour configurer Lookout Mobile Threat De
 | 4 | [Configurer la synchronisation des états](#configure-state-sync) |
 | 5 | [Configurer le destinataire des rapports d’erreurs envoyés par e-mail](#configure-error-report-email-recipient-information) |
 | 6 | [Configurer les paramètres d’inscription](#configure-enrollment-settings) |
-| 7 | [Configurer les notifications par courrier électronique](#configure-email-notifications) |
+| 7 | [Configurer les notifications par e-mail](#configure-email-notifications) |
 | 8 | [Configurer la classification des menaces](#configure-threat-classification) |
 | 1 | [Surveillance de l’inscription](#watching-enrollment) |
 

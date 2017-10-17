@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 040ce88c47eb12bbe9b228189d90ca422e5185e7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2049fa20b79ffb21e70b037aa9ddab863f66108
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
@@ -102,7 +103,7 @@ Une fois que vous avez configuré Intune dans votre organisation, vous pouvez cr
 5.  Une fois que vous avez entré les informations dans les champs, choisissez **OK** pour ajouter l’application à votre liste **Applications autorisées**.
 
 > [!NOTE]
-> Pour ajouter plusieurs applications du Windows Store en même temps, vous pouvez cliquer sur le menu **(...) ** à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
+> Pour ajouter plusieurs applications du Windows Store en même temps, vous pouvez cliquer sur le menu **(...)**  à la fin de la ligne de l’application, puis continuer à ajouter des applications. Quand vous avez terminé, choisissez **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Ajout d’une application de bureau à votre liste d’applications autorisées
 

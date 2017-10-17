@@ -2,7 +2,8 @@
 title: "Avantages du SDK d’application Intune"
 description: "Le Kit SDK d’application Intune est disponible pour les plateformes iOS et Android et permet d’utiliser les fonctionnalités de gestion des applications mobiles avec Microsoft Intune."
 keywords: 
-author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 08/24/2017
 ms.topic: article
@@ -13,11 +14,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: e3ab0526dbd9de6ce38bd540ea218ef56a4e4876
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Présentation du Kit SDK d’application Intune
 Le Kit de développement logiciel (SDK) d’application Intune, disponible pour iOS et Android, permet d'appliquer des stratégies de protection des applications Intune sur votre application. Il s’efforce de minimiser la quantité de modifications du code pour les développeurs d’applications. Vous pourrez constater qu’il est possible d’activer la plupart des fonctionnalités du SDK sans changer le comportement de votre application. Pour une meilleure expérience utilisateur et administrateur, personnalisez le comportement de votre application à l’aide de nos API, pour les fonctionnalités nécessitant sa participation.
@@ -26,7 +27,7 @@ Une fois que vous avez configuré votre application pour les stratégies de prot
 
 ## <a name="app-protection-features"></a>Fonctionnalités de protection des applications
 
-Voici quelques exemples de fonctionnalités de protection des applications Intune qui peuvent être activées avec le kit SDK.
+Voici quelques exemples de fonctionnalités de protection des applications Intune qui peuvent être activées avec le Kit de développement logiciel (SDK).
 
 ### <a name="control-users-ability-to-move-corporate-files"></a>Contrôler la capacité des utilisateurs à déplacer des fichiers d’entreprise
 Les administrateurs informatiques peuvent contrôler les dossiers vers lesquels les données professionnelles ou scolaires de l’application peuvent être déplacées. Par exemple, ils peuvent déployer une stratégie qui empêche l'application de sauvegarder les données d’entreprise dans le cloud.
@@ -55,7 +56,7 @@ Les administrateurs informatiques peuvent vérifier l’intégrité de l’appar
 ### <a name="multi-identity-support"></a>Prise en charge de la multi-identité
 La prise en charge de plusieurs identités est une fonctionnalité du Kit de développement logiciel (SDK) qui permet la coexistence de comptes gérés par stratégie (d’entreprise) et non gérés (personnels) dans une même application.
 
-Par exemple, beaucoup d’utilisateurs configurent à la fois des comptes de messagerie d’entreprise et personnels dans les applications mobiles Office pour iOS et Android. Quand un utilisateur accède aux données avec son compte d’entreprise, l’administrateur informatique doit être certain que la stratégie de protection des applications sera appliquée. Toutefois, quand un utilisateur accède à un compte de messagerie personnel, ces données doivent être hors du contrôle de l’administrateur. Le kit SDK d’application Intune réalise cette opération en ciblant la stratégie de protection des applications **uniquement** pour l’identité de l’entreprise dans l’application.
+Par exemple, beaucoup d’utilisateurs configurent à la fois des comptes de messagerie d’entreprise et personnels dans les applications mobiles Office pour iOS et Android. Quand un utilisateur accède aux données avec son compte d’entreprise, l’administrateur informatique doit être certain que la stratégie de protection des applications sera appliquée. Toutefois, quand un utilisateur accède à un compte de messagerie personnel, ces données doivent être hors du contrôle de l’administrateur. Le Kit de développement logiciel (SDK) de l’application Intune réalise cette opération en ciblant la stratégie de protection des applications **uniquement** pour l’identité de l’entreprise dans l’application.
 
 Cette fonctionnalité multi-identité permet de résoudre le problème de protection des données auquel les organisations sont confrontées avec des applications prenant en charge à la fois des comptes personnels et professionnels.
  
