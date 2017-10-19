@@ -5,7 +5,7 @@ keywords: "Mac OS X, macOS, OS X"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope: User help
 ROBOTS: 
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ec1120f8fe040227d513fa5de2c096b34611ed7a
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Inscrire votre appareil macOS dans Intune
 
 L’accès aux applications, aux données et aux ressources de votre organisation est essentiel pour que vous puissiez travailler. Si vous utilisez un appareil macOS au travail, cela signifie que vous devez installer un __profil de gestion__. Il s’agit simplement d’un fichier configuré par le support technique de votre entreprise, qui charge les paramètres et les informations d’accès sur votre Mac. Vous voulez en savoir plus ? Découvrez [ce qui se passe lorsque vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-
-  > [!NOTE]
-  > Si vous essayez d’inscrire un appareil iOS, tel qu’un iPhone ou un iPad, [suivez plutôt ces instructions](enroll-your-device-in-intune-ios.md).
 
 1. Sur votre __station d’accueil__, recherchez __Safari__ et ouvrez une nouvelle fenêtre, puis ouvrez le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
 2. Connectez-vous au site web du portail d’entreprise avec votre compte professionnel ou scolaire.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. Quand vous vous connectez, tous les onglets __Accueil__, __Applications__ et __Catégories__ disponibles s’affichent. Cette page présente toutes les applications pouvant être installées. Si vous n’avez encore aucun appareil inscrit, une remarque indique que **nous ne pouvons vous proposer aucune application**. Pour continuer, sélectionnez __Mes appareils__.
+3. Une fois connecté, cliquez dans le **Menu** en haut à gauche de la page et sélectionnez **Mes appareils**.
 
  ![Capture d’écran de la page d’accueil du portail web avec le portail web indiquant qu’aucune application ne peut encore être installée, avec un bouton Mes appareils en dessous.](./media/macOS_enroll_001_landing_page.png)
 
-4. Dans la page __Mes appareils__, une liste d’appareils inscrits ou simplement une bannière s’affiche. Cela dépend si un appareil, macOS ou autre, est déjà inscrit ou non. Pour inscrire un appareil qui n’est pas listé, sélectionnez la bannière qui indique __Si votre appareil est répertorié, appuyez ici pour l’identifier. Vous pouvez aussi appuyer ici pour inscrire votre appareil s’il n’est pas listé__.
+4. Dans la page __Mes appareils__, une liste d’appareils inscrits ou simplement une bannière s’affiche. Cela dépend si un appareil, macOS ou autre, est déjà inscrit ou non. Pour inscrire un appareil qui n’est pas listé, sélectionnez la bannière qui indique __Si votre appareil est répertorié, appuyez ici pour l’identifier. Vous pouvez aussi appuyer ici pour inscrire votre appareil s’il n’est pas listé__. Si vous n’avez aucun appareil inscrit, la bannière indique **Vous n’avez aucun appareil inscrit. Inscrivez celui-ci en appuyant ici.**
 
   ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
 
@@ -64,5 +61,7 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
 9. Des messages supplémentaires contenant plus de détails sur le profil ou vous demandant de confirmer __l’installation__ peuvent s’afficher sur votre Mac. Cliquez sur __Continuer__, puis sur __Installation__ via ces derniers pour continuer. Une fois l’installation terminée, vous pourrez voir votre__profil de gestion__ récemment installé dans la liste des __Profils d’appareils__.
 
  ![Profil macOS installé](./media/macOS_enroll_007_sysprefs_installed_profile.png)
+
+Certains profils peuvent indiquer qu’ils sont **non vérifiés**. Du moment qu’ils appartiennent à votre entreprise, c’est normal.
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).

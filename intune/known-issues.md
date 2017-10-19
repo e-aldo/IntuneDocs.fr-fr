@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problèmes connus dans Microsoft Intune
 
@@ -53,7 +53,7 @@ Parce que ces fonctionnalités ne peuvent pas être gérées à partir de la con
 - Les désactive dans le portail classique
 - Les active dans le portail Azure  
 
-À partir du 11 septembre 2017, la migration de ces fonctionnalités est fusionnée dans la migration principale vers Azure. Si votre compte a déjà été migré pour utiliser le portail Azure, cette migration secondaire aura lieu entre le 11 et le 22 septembre 2017. Une fois que la migration de votre compte commence, elle se termine le même jour. La migration peut prendre jusqu'à 6 heures à partir de la désactivation de ces fonctionnalités dans le portail classique Intune.
+À partir du 22 septembre 2017, la migration de ces fonctionnalités est fusionnée dans la migration principale vers Azure. Si votre compte a déjà été migré en vue d’utiliser le portail Azure, cette migration secondaire a déjà dû être effectuée. Si ce n’est pas le cas, ces fonctionnalités seront migrées vers Azure en novembre. Une fois que la migration de votre compte commence, elle se termine le même jour. La migration peut prendre jusqu'à 6 heures à partir de la désactivation de ces fonctionnalités dans le portail classique Intune.
 
 Si vous gérez maintenant ces fonctionnalités Intune dans le portail Azure, tenez compte des points suivants :
 

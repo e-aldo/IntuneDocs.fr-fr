@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Votre appareil Android semble être chiffré, mais le portail d’entreprise dit que non
 
@@ -39,6 +39,15 @@ Certains appareils Android exigent la création d’un code de démarrage pour e
 ### <a name="downgrade-your-version-of-android"></a>Rétrograder votre version d’Android
 
 Si votre appareil vous offre la possibilité de passer à la version antérieure Android 6.0+, faites-le. Si vous essayez de passer votre appareil à une version antérieure, vous risquez de perdre des données. Sinon, nous vous recommandons de contacter le support technique de votre entreprise pour résoudre ce problème. Vous pouvez obtenir les informations de contact du support technique de votre entreprise sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
+
+### <a name="encrypt-the-entire-device"></a>Chiffrer l’appareil entier
+
+Certains appareils vous offrent le choix entre le chiffrement de l’appareil entier ou juste de l’espace utilisé. Choisissez l’option permettant de chiffrer l’appareil entier plutôt que l’option permettant de chiffrer « uniquement l’espace utilisé. » Si vous avez déjà chiffré uniquement l’espace utilisé :
+
+1. [Supprimer cet appareil du portail d’entreprise](unenroll-your-device-from-intune-android.md)
+2. Déchiffrer l’espace utilisé
+3. Chiffrer l’appareil entier
+4. Réinscrire l’appareil
 
 ## <a name="specific-manufacturer-issues"></a>Problèmes propres à certains fabricants
 
