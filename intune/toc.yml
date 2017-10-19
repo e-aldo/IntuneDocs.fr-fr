@@ -536,6 +536,8 @@
       items:
         - name: "Se connecter à l’entrepôt de données avec Power\_BI"
           href: reports-proc-get-a-link-powerbi.md
+        - name: Créer un rapport à partir du flux OData avec Power BI
+          href: reports-proc-create-with-odata.md
 - name: Automatiser et personnaliser
   items:
     - name: Configurer les paramètres d’appareils personnalisés
@@ -595,18 +597,18 @@
               href: reports-ref-user.md
             - name: Informations de référence sur les entités de gestion des applications mobiles (GAM)
               href: reports-ref-mobile-app-management.md
-            - name: Référence pour les entités d’appareils
+            - name: Informations de référence sur les entités d’appareils
               href: reports-ref-devices.md
             - name: Informations de référence sur les entités d’application
               href: reports-ref-application.md
             - name: Informations de référence sur les entités de stratégie
               href: reports-ref-policy.md
-    - name: Charger une version test d'applications Windows
+    - name: Charger des applications Windows de manière indépendante
       href: app-sideload-windows.md
     - name: Utiliser les API Graph pour Intune
       href: intune-graph-apis.md
       items:
-        - name: API Graph pour référence Intune
+        - name: Informations de référence sur les API Graph pour Intune
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Glossaire
   href: intune-glossary.md
