@@ -461,6 +461,8 @@
           href: windows-hello.md
     - name: Gérer les rôles
       href: role-based-access-control.md
+    - name: Gérer les versions de système d’exploitation
+      href: manage-os-versions.md
     - name: Gérer les mises à jour logicielles
       href: windows-update-for-business-configure.md
     - name: Gérer les ordinateurs avec l’agent logiciel
@@ -599,16 +601,16 @@
               href: reports-ref-user.md
             - name: Informations de référence sur les entités de gestion des applications mobiles (GAM)
               href: reports-ref-mobile-app-management.md
-            - name: Informations de référence sur les entités d’appareils
+            - name: Référence pour les entités d’appareils
               href: reports-ref-devices.md
             - name: Informations de référence sur les entités d’application
               href: reports-ref-application.md
             - name: Informations de référence pour l’entité des associations d’appareils utilisateur
               href: reports-ref-userdeviceassociations.md
-    - name: Charger des applications Windows de manière indépendante
+    - name: Charger une version test d'applications Windows
       href: intune-graph-apis.md
       items:
-        - name: Informations de référence sur les API Graph pour Intune
+        - name: API Graph pour référence Intune
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Glossaire
   href: intune-glossary.md
