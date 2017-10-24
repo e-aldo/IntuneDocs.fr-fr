@@ -381,6 +381,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Créer une stratégie Windows
           href: compliance-policy-create-windows.md
+        - name: Actions en cas de non-conformité
+          href: actions-for-noncompliance.md
         - name: Surveiller la conformité des appareils
           href: compliance-policy-monitor.md
     - name: Configurer l’accès conditionnel
