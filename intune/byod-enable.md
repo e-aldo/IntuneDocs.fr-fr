@@ -27,7 +27,7 @@ Le flux de travail est divisé en trois processus décrits ci-dessous. Vous pouv
 
 -   **[Inscrire des appareils et vérifier leur conformité](#enroll-devices-and-check-for-compliance)** explique comment permettre aux utilisateurs d’inscrire leurs appareils personnels pour la gestion avec Intune. Intune gère les appareils iOS, macOS, Android et Windows. Cette section explique aussi comment déployer des stratégies sur les appareils et vérifier qu’ils respectent les exigences de sécurité de base.
 
-- **[Donner accès aux ressources d’entreprise](#provide-access-to-company-resources) ** vous montre comment permettre aux utilisateurs l’accès aux ressources d’entreprise de manière simple et sécurisée. Il suffit pour cela de déployer des profils d’accès sur les appareils gérés. Cette section explique aussi comment gérer les déploiements d’applications achetées en volume avec Intune.
+- **[Donner accès aux ressources d’entreprise](#provide-access-to-company-resources)**  vous montre comment permettre aux utilisateurs l’accès aux ressources d’entreprise de manière simple et sécurisée. Il suffit pour cela de déployer des profils d’accès sur les appareils gérés. Cette section explique aussi comment gérer les déploiements d’applications achetées en volume avec Intune.
 
 -   **[Protéger les données d’entreprise](#protect-company-data)** vous explique comment fournir un accès conditionnel à des ressources d’entreprise, éviter les pertes de données et supprimer des applications et des données d’entreprise sur des appareils dont vous ne vous servez plus professionnellement ou qui ont été perdus ou volés.
 

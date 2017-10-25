@@ -74,7 +74,7 @@ Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sé
 4. Dans la charge de travail **Mobile Apps**, choisissez **Installation** > **Catégories d’application**.
 5. Dans le panneau **Catégories d’application**, la liste des catégories actuelles s’affiche. Sélectionnez une des actions suivantes :
     - **Créer une catégorie** : dans le panneau **Créer une catégorie**, saisissez un nom pour la nouvelle catégorie. Les noms peuvent être entrés dans une seule langue et ne sont pas traduits par Intune. Quand vous avez terminé, cliquez sur **Créer**.
-    - **Modifier une catégorie** : pour n’importe quelle catégorie dans la liste, choisissez «**... ** ». Dans le panneau **Propriétés**, vous pouvez entrer un nouveau nom pour la catégorie, ou supprimer la catégorie.
+    - **Modifier une catégorie** : pour n’importe quelle catégorie dans la liste, choisissez «**...**  ». Dans le panneau **Propriétés**, vous pouvez entrer un nouveau nom pour la catégorie, ou supprimer la catégorie.
 
 
 ## <a name="apps-added-automatically-by-intune"></a>Applications automatiquement ajoutées par Intune
