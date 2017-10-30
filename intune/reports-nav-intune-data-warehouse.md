@@ -14,15 +14,15 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>API d’entrepôt de données Intune
 
-L’API d’entrepôt de données Intune vous permet d’accéder à vos données Intune dans un format lisible par ordinateur et de les utiliser dans votre outil d’analyse préféré. Vous pouvez utiliser l’API pour générer des rapports qui fournissent des insights sur l’environnement mobile de votre entreprise. L’API utilise le protocole OData qui respecte des modèles standard dans les domaines suivants :
+L’API d’entrepôt de données Intune vous permet d’accéder à vos données Intune dans un format lisible par ordinateur et de les utiliser dans votre outil analytique préféré. Vous pouvez utiliser l’API pour générer des rapports qui fournissent des insights sur l’environnement mobile de votre entreprise. L’API utilise le protocole OData qui respecte des modèles standard dans les domaines suivants :
 
   -   En-têtes de demande et de réponse
   -   Codes d’état
@@ -41,9 +41,12 @@ Cette section de référence fournit une vue d’ensemble des points de terminai
 
 ## <a name="odata-custom-client"></a>Client personnalisé OData
 
-Vous pouvez accéder au modèle de données de l’entrepôt de données Intune par le biais de points de terminaison RESTful. Pour accéder à vos données, votre client doit obtenir l’autorisation sur Microsoft Azure Active Directory (Azure AD) à l’aide d’OAuth 2.0. Vous paramétrez d’abord une application web et une application cliente dans Azure et vous accordez des autorisations au client. Votre client local obtient l’autorisation et peut ensuite communiquer avec les points de terminaison de l’entrepôt de données.
+Vous pouvez accéder au modèle de données de l’entrepôt de données Intune par le biais de points de terminaison RESTful. Pour accéder à vos données, votre client doit obtenir l’autorisation auprès d’Azure Active Directory (Azure AD) à l’aide d’OAuth 2.0. Vous paramétrez d’abord une application web et une application cliente dans Azure et vous accordez des autorisations au client. Votre client local obtient l’autorisation et peut ensuite communiquer avec les points de terminaison de l’entrepôt de données.
 
 Pour plus d’informations, consultez [Obtenir des données à partir de l’API d’entrepôt de données avec un client REST](reports-proc-data-rest.md)
+
+> [!Note]  
+> Vous pouvez accéder au [dépôt de l’entrepôt de données Intune](https://github.com/Microsoft/Intune-Data-Warehouse) sur GitHub pour obtenir des exemples de code.
 
 ## <a name="interacting-with-the-api"></a>Interaction avec l’API
 
@@ -58,6 +61,8 @@ OData définit un modèle de données abstrait et un protocole qui permettent à
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Scénarios d’authentification pour Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData version 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Découvrez plus en détail comment utiliser Azure AD en consultant les [scénarios d’authentification pour Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
+
+Obtenez des ressources sur OData en visitant [odata.org](http://www.odata.org).
+  
+Passez en revue la norme OData version 4.0 à l’adresse http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html.  

@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique pour ajouter des applications de l’App Store iOS à Intune"
+title: "Guide pratique pour ajouter des applications de l’App Store iOS à Intune | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Découvrez comment ajouter des applications de l’App Store iOS à Intune."
-keywords: 
+keywords: Intune
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53ff149b28a2f75a3b30c59fa5f30edcf4879fae
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4c5d18f217659c9be59c116670fbf92a6d1b2ab4
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications de l’App Store iOS à Microsoft Intune
 
@@ -44,26 +44,29 @@ Vous pouvez uniquement affecter des applications à l’aide de cette méthode s
 4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > Applications.
 5. Au-dessus de la liste des applications, choisissez **Ajouter**.
 6. Dans le panneau **Ajouter une application**, choisissez **Rechercher sur l’App Store**.
-7. Dans le panneau **Apple App Store**, entrez le nom (ou une partie du nom) dans la zone de recherche. Intune recherche le Store et retourne la liste des résultats pertinents.
-8. Dans la liste, sélectionnez l’application souhaitée, puis cliquez sur **OK**.
+7. Dans le panneau **Apple App Store**, sélectionnez les paramètres régionaux du pays de l’App Store.
+8. Dans la zone de recherche, tapez le nom (ou une partie du nom). Intune recherche le Store et retourne la liste des résultats pertinents.
+9. Dans la liste, sélectionnez l’application souhaitée, puis cliquez sur **OK**.
 
 ## <a name="step-2---configure-app-information"></a>Étape 2 : Configurer les informations de l’application
 
 1. Dans le panneau **Ajouter une application**, choisissez **Informations de l’application**.
-2. Dans le panneau **Modifier l’application**, configurez les informations suivantes. Une fois cela fait, cliquez sur **Ajouter**. Selon l’application choisie, certaines valeurs de ce panneau peuvent avoir été renseignées automatiquement :
-- **Nom de l’application** : saisissez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
-    - **Description de l’application :** saisissez la description de l’application. Ce libellé s'affichera dans le portail d'entreprise.
-- **Éditeur :** entrez le nom de l’éditeur de l’application.
-- **URL de l’App Store** : entrez l’URL de l’App Store que vous souhaitez créer.
-- **Système d’exploitation minimal** : dans la liste, choisissez le système d’exploitation minimal sur lequel l’application peut être installée. Si vous affectez l’application à un appareil avec un système d’exploitation antérieur, elle ne sera pas installée.
-- **Catégorie** (facultatif). Sélectionnez une ou plusieurs des catégories d’applications intégrées ou une catégorie que vous avez créée. Cela permettra aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
-- **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
-- **URL d’informations** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations sur cette application. Cette URL s'affichera dans le portail d'entreprise.
-- **URL de confidentialité** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations de confidentialité pour cette application. Cette URL s'affichera dans le portail d'entreprise.
-- **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
-- **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
-- **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-- **Charger l’icône** : chargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
-3. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
+2. Dans le panneau **Modifier l’application**, configurez les informations de l’application. Une fois cela fait, cliquez sur **Ajouter**. Selon l’application choisie, certaines valeurs de ce panneau peuvent avoir été renseignées automatiquement :
+- **Nom** : tapez le nom de l’application à afficher dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d’application existe en double, le portail d’entreprise ne montre qu’une seule application aux utilisateurs.
+- **Description** : tapez une description de l’application à afficher aux utilisateurs dans le portail d’entreprise.
+- **Éditeur :** : tapez le nom de l’éditeur de l’application.
+- **URL de l’App Store** : tapez l’URL de l’App Store que vous voulez créer.
+- **Pays/région du Store** : sélectionnez les paramètres régionaux du pays de l’App Store.
+- **Système d’exploitation minimal** : dans la liste, choisissez le système d’exploitation minimal sur lequel l’application peut être installée. L’application ne sera pas installée sur un appareil avec un système d’exploitation antérieur.
+- **Type d’appareil applicable** : dans la liste, choisissez les appareils qui sont utilisés par l’application.
+- **Catégorie** (facultatif). Sélectionnez une ou plusieurs des catégories d’applications intégrées ou une catégorie que vous avez créée. Les catégories permettent aux utilisateurs de trouver facilement l’application quand ils parcourent le portail d’entreprise.
+- **Proposer cette application dans le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise quand les utilisateurs cherchent des applications.
+- **URL d’informations** : si vous le souhaitez, tapez l’URL d’un site web qui contient des informations sur cette application. L’URL est présentée aux utilisateurs dans le portail d’entreprise.
+- **URL de la déclaration de confidentialité** : si vous le souhaitez, tapez l’URL d’un site web qui contient des informations sur la confidentialité pour cette application. L’URL est présentée aux utilisateurs dans le portail d’entreprise.
+- **Développeur** : si vous le souhaitez, tapez le nom du développeur de l’application. Ce champ est visible seulement par un administrateur ; les utilisateurs finaux ne le voient pas.
+- **Propriétaire** : si vous le souhaitez, tapez un nom pour le propriétaire de cette application, par exemple **Département des ressources humaines**.  Ce champ est visible seulement par un administrateur ; les utilisateurs finaux ne le voient pas.
+- **Remarques** : tapez les éventuelles remarques que vous voulez associer à cette application. Ce champ est visible seulement par un administrateur ; les utilisateurs finaux ne le voient pas.
+- **Logo** : chargez une icône qui est associée à l’application. Cette icône s’affiche avec l’application quand les utilisateurs parcourent le portail d'entreprise.
+3. Quand vous avez terminé, dans le panneau **Ajouter une application**, choisissez **OK**.
 
-L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
+L’application que vous avez créée apparaît dans la liste des applications, où vous pouvez l’affecter aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).

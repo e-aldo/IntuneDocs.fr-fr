@@ -15,18 +15,19 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c749b72949399dbe709b8ac5554cd919e2b09bc
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Android for Work dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Paramètres de profil professionnel
-- **Partage des données entre les profils professionnels et personnels** : utilisez ce paramètre pour indiquer si les applications associées au profil professionnel peuvent ou non partager avec des applications du profil personnel. Ce paramètre contrôle les actions de partage dans les applications (par exemple, l’option **Patager...** dans l’application de navigateur Chrome) et ne s’applique pas au comportement copier/coller du Presse-papiers. Contrairement aux [paramètres de stratégie de protection des applications](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), les paramètres de restriction d’appareil sont gérés à partir du portail Azure et utilisent le profil de travail Android for Work pour isoler les applications gérées. Choisissez parmi :
+-   **Copier-coller entre les profils professionnel et personnel** : contrôle les opérations copier et coller entre les applications professionnelles et personnelles. Choisissez **Bloquer** pour activer le blocage. Choisissez **Non configuré** pour désactiver le blocage.
+- **Partage des données entre les profils professionnels et personnels** : utilisez ce paramètre pour indiquer si les applications associées au profil professionnel peuvent ou non partager avec des applications du profil personnel. Ce paramètre contrôle les actions de partage dans les applications (par exemple, l’option **Patager...** dans l’application de navigateur Chrome) et ne s’applique pas au comportement copier/coller du Presse-papiers. Contrairement aux [paramètres de stratégie de protection des applications](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), les paramètres de restriction d’appareil sont gérés à partir du portail Intune et utilisent le profil de travail Android for Work pour isoler les applications gérées. Choisissez parmi :
     - **Restrictions de partage par défaut** : paramètre du comportement de partage par défaut de l’appareil, qui varie selon la version d’Android en cours d’exécution. Par défaut, le partage du profil personnel vers le profil professionnel est autorisé. Le partage du le profil professionnel vers le profil personnel est aussi bloqué par défaut. Ce paramètre empêche les partages de données du profil professionnel vers le profil personnel. Google ne fournit aucun moyen de bloquer le partage du profil personnel vers le profil professionnel sur les appareils exécutant des versions antérieures à 6.0.   
     - **Les applications du profil professionnel peuvent gérer une demande de partage provenant d’un profil personnel** : utilisez cette option pour activer la fonctionnalité Android intégrée qui autorise le partage entre le profil personnel et le profil professionnel. Lorsque cette option est activée, une demande de partage à partir d’une application du profil personnel peut partager avec les applications associées au profil professionnel. Ce paramètre est le comportement par défaut des appareils Android exécutant des versions antérieures à 6.0.
     - **Autoriser le partage en dehors des limites** : permet le partage dans les deux sens au-delà de la limite du profil professionnel. Lorsque vous sélectionnez ce paramètre, les applications du profil de travail peuvent partager des données avec des applications sans badge du profil personnel. Utilisez ce paramètre avec précaution, car il autorise le partage des applications gérées dans le profil professionnel vers des applications du côté non géré de l’appareil.

@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b3436a22543eb07cedb0780984766bcb7faa284
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Se connecter à l’entrepôt de données avec Power BI
 
@@ -38,6 +38,8 @@ Les tendances sont également mises en évidence dans les catégories suivantes�
 
 Les étapes suivantes vous montrent comment télécharger le fichier Power BI et comment utiliser le lien OData avec Power BI.
 
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+
 ## <a name="install-power-bi"></a>Installer Power BI
 
 Installez la dernière version de Power BI Desktop. Power BI Desktop est disponible en téléchargement à l’emplacement suivant : [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop)
@@ -52,7 +54,7 @@ Le fichier Power BI (pbix) contient les informations de connexion pour votre lo
 1.  Connectez-vous au portail Azure et choisissez **Surveillance + gestion** > **Intune**. Vous pouvez aussi rechercher **Intune** dans les ressources.  
 2.  Ouvrez le panneau **API d’entrepôt de données Microsoft Intune (préversion)**.
 3.  Cliquez sur **Télécharger le fichier Power BI**. Un fichier portant l’extension pbix est téléchargé à l’emplacement indiqué.
-4.  Ouvrez le fichier avec Power BI. Les *rapports de l’entrepôt de données Intune* se chargent, mais l’opération peut prendre quelques secondes le temps d’obtenir les données de votre locataire.
+4.  Ouvrez le fichier avec Power BI. Les *rapports de l’entrepôt de données Intune* se chargent, mais l’obtention des données de votre locataire peut prendre quelques secondes.
 5.  Cliquez sur **Actualiser** pour charger les données de votre locataire et passer en revue les rapports.
 6.  Si Power BI n’a pas été authentifié avec vos informations d’identification Azure Active Directory, vous êtes invité à les entrer. Quand vous sélectionnez vos informations d’identification, choisissez **Compte professionnel** comme méthode d’authentification.
 
@@ -68,7 +70,7 @@ Quand un client est authentifié auprès d’Azure AD, l’URL OData se connecte
 6. Choisissez **De base**.
 7. Tapez ou collez l’**URL OData** dans la zone URL.
 8. Cliquez sur **OK**.
-9. Si vous n’êtes pas authentifié auprès d’Azure AD pour votre locataire à partir du client Power BI Desktop, tapez vos informations d’identification.  
+9. Si vous n’êtes pas authentifié auprès d’Azure AD pour votre locataire à partir du client Power BI Desktop, tapez vos informations d’identification. Pour accéder à vos données, vous devez obtenir l’autorisation auprès d’Azure Active Directory (Azure AD) à l’aide d’OAuth 2.0.  
     1.  Sélectionnez **Compte professionnel**.  
     2.  Tapez vos nom d’utilisateur et mot de passe.  
     3.  Cliquez sur **Se connecter**.  

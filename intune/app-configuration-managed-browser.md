@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -37,7 +37,11 @@ Cette application étant intégrée au SDK Intune, vous pouvez également lui ap
 
 Pour plus d’informations, consultez [Que sont les stratégies de protection des applications ?](/intune/app-protection-policy)
 
-Vous pouvez appliquer ces paramètres aux appareils inscrits avec Intune, inscrits auprès d’un autre produit de gestion des appareils, ou aux appareils qui ne sont pas gérés.
+Vous pouvez appliquer ces paramètres :
+
+- aux appareils inscrits auprès d’Intune ;
+- aux appareils inscrits auprès d’un autre produit MDM ;
+- aux appareils qui ne sont pas gérés.
 
 Si les utilisateurs installent Managed Browser à partir de l’App Store et qu’Intune ne le prend pas en charge, vous pouvez l’utiliser comme navigateur web de base, avec prise en charge de l’authentification unique via le site Microsoft MyApps. Les utilisateurs sont directement dirigés vers le site MyApps, où ils peuvent voir toutes leurs applications SaaS provisionnées.
 Quand Managed Browser n’est pas géré par Intune, il ne peut pas accéder aux données d’autres applications gérées par Intune. 

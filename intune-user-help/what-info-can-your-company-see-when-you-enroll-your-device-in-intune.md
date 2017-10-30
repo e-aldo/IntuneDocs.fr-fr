@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/04/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: 04b6d24d5174e49dd6e3f86b534bc59b94344002
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Quelles informations mon entreprise peut-elle voir quand j’inscris mon appareil ?
 
@@ -46,5 +46,6 @@ Quand vous inscrivez un appareil à la gestion, vous autorisez votre entreprise 
 
 **Ce que votre entreprise peut être en mesure de voir**
 
--  Numéro de téléphone : pour les appareils appartenant à **l’entreprise**, votre numéro de téléphone complet peut être consulté. Pour les appareils **personnels**, seuls les quatre derniers chiffres de votre numéro de téléphone sont visibles pour votre entreprise. Vous pouvez voir le **Type de propriété** pour chaque appareil en ouvrant la page **Détails sur l’appareil** de l’appareil. 
+-  Numéro de téléphone : pour les appareils appartenant à **l’entreprise**, votre numéro de téléphone complet peut être consulté. Pour les appareils **personnels**, seuls les quatre derniers chiffres de votre numéro de téléphone sont visibles pour votre entreprise. Vous pouvez voir le **Type de propriété** pour chaque appareil en ouvrant la page **Détails sur l’appareil** de l’appareil.
 -  Emplacement : votre entreprise ne peut jamais voir l’emplacement de votre appareil, sauf si vous possédez un appareil iOS qui est contrôlé et que vous l’avez perdu. [Comment savoir ?](https://go.microsoft.com/fwlink/?linkid=853816)
+- Inventaire des applications : si votre entreprise utilise Mobile Threat Defense, elle peut voir plus de détails sur les applications présentes sur votre appareil. Découvrez plus d’informations sur [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).

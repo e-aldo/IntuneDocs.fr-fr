@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 52b273532935184918e65d25a37ca3d03e76680c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Préparer la configuration des stratégies de protection d’application pour Windows 10
 
@@ -53,6 +53,9 @@ Avant de créer une stratégie de protection d’application Windows 10, vous de
     d.  URL de conformité MAM :
 
 5.  Une fois ces paramètres configurés, cliquez sur **Enregistrer**.
+
+> [!NOTE]
+> Les appareils avec un état d’inscription de gestion des applications mobiles doivent être joints à Azure AD.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

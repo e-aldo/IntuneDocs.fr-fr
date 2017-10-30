@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -64,7 +64,7 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
     -   **Empêcher la réutilisation des mots de passe précédents** - Spécifie le nombre de mots de passe précédemment utilisés conservés par l’appareil.
     -   **Exiger un mot de passe quand l’appareil sort d’un état d’inactivité (Mobile uniquement)** - Spécifie que l’utilisateur doit entrer un mot de passe pour déverrouiller l’appareil (Windows 10 Mobile uniquement).
     -   **Mots de passe simples** - Permet d’utiliser des mots de passe simples, tels que 1111 ou 1234. Ce paramètre autorise ou bloque également l’utilisation des mots de passe d’image Windows.
--   **Chiffrement** - Active le chiffrement sur les appareils ciblés (Windows 10 Mobile uniquement).
+-   **Chiffrement** - Active le chiffrement sur les appareils ciblés.
 
 ## <a name="personalization"></a>Personalization
 

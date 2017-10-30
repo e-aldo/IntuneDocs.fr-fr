@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/30/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 053f6449ebe3a4ad375c51d7bbc4ccc9709fdcf7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Android dans Intune ?
 
@@ -44,7 +44,7 @@ Quand vous inscrivez votre appareil Android, vous autorisez le support technique
 
 -   Vous êtes obligé d'accepter les conditions générales.
 
--   Désactiver l’appareil photo (uniquement sur les appareils Samsung KNOX, pas sur les appareils Nexus) pour vous empêcher de prendre des photos de données professionnelles sensibles qui ne doivent pas être partagées.
+-   Désactiver l’appareil photo pour vous empêcher de prendre des photos de données professionnelles sensibles qui ne doivent pas être partagées.
 
 -   Imposer le chiffrement de toutes les données sur l’appareil pour mieux protéger les données si l’appareil est perdu ou volé.
 
@@ -52,8 +52,8 @@ Une fois votre appareil ajouté au portail d’entreprise, voici ce qu’il va f
 
 -   Télécharger toutes les mises à jour d’une application ou d’une stratégie rendues disponibles par le support technique de votre entreprise.
 
--   Envoyer toutes les mises à jour du parc informatique. (Ces mises à jour n’ont pas d’informations personnelles.)
+-   Envoyer toute mise à jour de l'inventaire matériel. (Ces mises à jour n’ont pas d’informations personnelles.)
 
--   Envoyer toutes les mises à jour de l’inventaire des applications de l’entreprise. (Ces mises à jour n’ont pas d’informations personnelles.)
+-   Envoyer toute mise à jour de l'inventaire d'applications de la société. (Ces mises à jour n’ont pas d’informations personnelles.)
 
 Vous avez besoin d'aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.

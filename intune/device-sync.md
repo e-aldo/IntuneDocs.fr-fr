@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab24b147b32c94ba51728c0c223de3e6c92dd215
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
+ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Synchroniser des appareils avec Intune pour obtenir les stratégies et les actions les plus récentes
 
@@ -29,11 +29,11 @@ L’action d’appareil **Synchroniser** force l’appareil sélectionné à s�
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge
 
-- Windows - Prise en charge
-- Windows Phone - Prise en charge
-- iOS - Prise en charge
-- macOS - Prise en charge
-- Android - Prise en charge
+- Windows
+- Windows Phone
+- iOS
+- macOS
+- Android
 
 ## <a name="how-to-sync-a-device"></a>Comment synchroniser un appareil
 
@@ -43,6 +43,26 @@ L’action d’appareil **Synchroniser** force l’appareil sélectionné à s�
 4. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
 5. Dans la liste des appareils que vous gérez, choisissez un appareil, puis l’action à distance **Synchroniser**.
 7. Choisissez **Oui** pour confirmer l’action.
+
+
+## <a name="retriable-error-codes"></a>Codes d’erreur pouvant faire l’objet d’une nouvelle tentative
+
+Quand un administrateur exécute l’action d’appareil **Synchroniser**, les applications iOS et Android qui ont rencontré un échec mais généré un code d’erreur pouvant faire l’objet d’une nouvelle tentative sont disponibles sur l’appareil. Cependant, les applications qui ont généré un code d’erreur ne pouvant pas faire l’objet d’une nouvelle tentative doivent attendre sept jours avant d’être à nouveau disponibles sur l’appareil.
+
+
+| Code d'erreur  | Description suggérée                                                                                                                  | Peut faire l’objet d’une nouvelle tentative |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 2016330898 | Une erreur inconnue s'est produite.                                                                                                             | Non        |
+| 2016330897 | Votre connexion à Intune a expiré. Réinitialisez votre connexion                                                                             | Oui       |
+| 2016330896 | Vous avez perdu la connexion à Internet. Réinitialisez votre connexion.                                                                            | Oui       |
+| 2016330895 | Vous avez perdu la connexion à Internet. Réinitialisez votre connexion.                                                                            | Oui       |
+| 2016330894 | Vous avez perdu la connexion à Internet. Réinitialisez votre connexion.                                                                            | Oui       |
+| 2016330893 | Vous avez perdu la connexion à Internet. Réinitialisez votre connexion.                                                                            | Oui       |
+| 2016330892 | L’itinérance internationale est désactivée.                                                                                                     | Non        |
+| 2016330891 | La connexion de données mobiles pour cet appareil n’est pas accessible pendant un appel téléphonique. Attendez la fin de l’appel téléphonique. | Oui       |
+| 2016330890 | Réseau mobile pour cet appareil. Ces appareils ne peut pas être utilisés pour l’instant.                                                   | Non        |
+| 2016330889 | Échec de la connexion sécurisée. Réinitialisez votre connexion.                                                                                   | Oui       |
+| 2016330888 | Échec de l’évaluation de la confiance du serveur.                                                                                                | Non        |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
