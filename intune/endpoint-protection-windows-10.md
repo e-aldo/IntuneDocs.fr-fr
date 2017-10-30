@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 19c20ac5dd73b45dc06d1df6a7d08cc6bac42982
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 66d13a5a5d4b74cc70696239514875fe0092a164
+ms.sourcegitcommit: 4742390f29f84e553e674ea31c88318bda6ab059
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Paramètres Endpoint Protection pour Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -29,10 +29,13 @@ Le profil Endpoint Protection vous permet de contrôler les fonctionnalités de 
 
 Utilisez les informations de cette rubrique pour découvrir comment créer des profils Endpoint Protection.
 
+> [!Note]
+> Ces paramètres ne sont pas pris en charge dans les éditions Famille et Professionnel de Windows 10.
+
 ## <a name="create-an-endpoint-protection-profile"></a>Créer un profil Endpoint Protection
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.

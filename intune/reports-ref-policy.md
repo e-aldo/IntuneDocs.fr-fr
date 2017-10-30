@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>Informations de référence sur les entités de stratégie
 
@@ -35,14 +35,14 @@ L’entité **Policy** répertorie les profils de configuration d’appareil, le
 
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
-| PolicyKey |Clé unique représentant la stratégie dans l’entrepôt de données |123 |
-| PolicyId |Identificateur unique de la stratégie dans l’entrepôt de données |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |Nom de la stratégie |« Ligne de base Windows 10 » |
+| PolicyKey |Clé unique représentant la stratégie dans l’entrepôt de données. |123 |
+| PolicyId |Identificateur unique de la stratégie dans l’entrepôt de données. |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |Nom de la stratégie. |« Ligne de base Windows 10 » |
 | PolicyVersion |Version de la stratégie. Quand la stratégie est modifiée ou changée, une version plus récente est créée. |1, 2, 3 |
-| IsDeleted |Indique si l’enregistrement de stratégie a été mis à jour.  True : la stratégie a un nouvel enregistrement avec des champs mis à jour. False : dernier enregistrement de la stratégie. |Vrai/Faux |
-| StartDateInclusiveUTC |Date et heure UTC de création de la stratégie dans l’entrepôt de données |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |Date et heure UTC de l’affectation de la valeur True à IsDeleted |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |Date et heure UTC de la dernière modification de la stratégie dans l’entrepôt de données |11/23/2016 12:00:00 AM |
+| IsDeleted |Indique si l’enregistrement de stratégie a été mis à jour.  <br>True : la stratégie a un nouvel enregistrement avec des champs mis à jour. <br>False : dernier enregistrement de la stratégie. |Vrai/Faux |
+| StartDateInclusiveUTC |Date et heure UTC de création de la stratégie dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |Date et heure UTC de l’affectation de la valeur True à IsDeleted. |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |Date et heure UTC de la dernière modification de la stratégie dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,9 +50,9 @@ L’entité **PolicyType** répertorie les types de profils de configuration d�
 
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
-| PolicyTypeId |Identificateur unique de la stratégie dans le système source |123 |
-| PolicyTypeKey |Identificateur unique de la stratégie dans l’entrepôt de données |1 |
-| PolicyTypeName |Nom du type de stratégie |Stratégie de conformité Windows 10 |
+| PolicyTypeId |Identificateur unique de la stratégie dans le système source. |123 |
+| PolicyTypeKey |Identificateur unique de la stratégie dans l’entrepôt de données. |1 |
+| PolicyTypeName |Nom du type de stratégie |Stratégie de conformité Windows 10. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,11 +60,11 @@ L’entité **DeviceConfigurationProfileDeviceActivity** répertorie le nombre d
 
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
-| DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données |20160703 |
-| Pending |Nombre d’appareils uniques en état d’attente |123 |
-| Réussi |Nombre d’appareils uniques en état de réussite |12 |
-| Erreur |Nombre d’appareils uniques en état d’erreur |10 |
-| Failed |Nombre d’appareils uniques en état d’échec |2 |
+| DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
+| Pending |Nombre d’appareils uniques en état d’attente. |123 |
+| Réussi |Nombre d’appareils uniques en état de réussite. |12 |
+| Erreur |Nombre d’appareils uniques en état d’erreur. |10 |
+| Failed |Nombre d’appareils uniques en état d’échec. |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -72,11 +72,11 @@ L’entité **UserConfigurationProfileDeviceActivity** répertorie le nombre d�
 
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
-| DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données |20160703 |
-| Pending |Nombre d’utilisateurs uniques en état d’attente |123 |
-| Réussi |Nombre d’utilisateurs uniques en état de réussite |12 |
-| Erreur |Nombre d’utilisateurs uniques en état d’erreur |10 |
-| Failed |Nombre d’utilisateurs uniques en état d’échec |2 |
+| DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
+| Pending |Nombre d’utilisateurs uniques en état d’attente. |123 |
+| Réussi |Nombre d’utilisateurs uniques en état de réussite. |12 |
+| Erreur |Nombre d’utilisateurs uniques en état d’erreur. |10 |
+| Failed |Nombre d’utilisateurs uniques en état d’échec. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ L’entité **PolicyTypeActivity** répertorie le nombre cumulé d’appareils d
 
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
-| DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données |20160703 |
-| PolicyKey |Clé de stratégie pouvant être jointe à la stratégie pour obtenir le nom de la stratégie |Ligne de base Windows 10 |
-| PolicyTypeKey |Type de clé de stratégie pouvant être joint au type de stratégie pour obtenir le nom du type de la stratégie |Stratégie Windows10Compliance |
-| Pending |Nombre d’appareils uniques en état d’attente |123 |
-| Réussi |Nombre d’appareils uniques en état de réussite |12 |
-| Erreur |Nombre d’appareils uniques en état d’erreur |10 |
-| Fail- |Nombre d’appareils uniques en état d’échec |2 |
+| DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
+| PolicyKey |Clé de stratégie pouvant être jointe à la stratégie pour obtenir le nom de la stratégie. |Ligne de base Windows 10 |
+| PolicyTypeKey |Type de clé de stratégie pouvant être joint au type de stratégie pour obtenir le nom du type de la stratégie. |Stratégie de conformité Windows 10 |
+| Pending |Nombre d’appareils uniques en état d’attente. |123 |
+| Réussi |Nombre d’appareils uniques en état de réussite. |12 |
+| Erreur |Nombre d’appareils uniques en état d’erreur. |10 |
+| Fail- |Nombre d’appareils uniques en état d’échec. |2 |

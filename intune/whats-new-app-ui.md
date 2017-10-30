@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
+
+## <a name="week-of-october-16-2017"></a>Semaine du 16 octobre 2017
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Améliorations de la recherche apportées au site web du portail d’entreprise <!--1331697-->
+Nous améliorons nos fonctions de recherche d’application, en commençant par le [site web du portail d’entreprise](https://portal.manage.microsoft.com). Les recherches sont désormais effectuées sur les catégories d’applications, en plus des champs Nom et Description. Par défaut, les résultats sont triés par ordre décroissant de pertinence. 
+
+Les utilisateurs iOS bénéficient aussi de cette modification, car le site web est également utilisé dans le cadre de l’application Portail d’entreprise pour iOS. Les applications du portail d’entreprise pour Android et Windows bénéficieront de mises à jour similaires dans les prochains mois.
+
+Nous continuons à optimiser la façon dont la pertinence est suivie : faites-nous savoir comment elle fonctionne en utilisant le lien « Commentaires » au bas du site web du portail d’entreprise.
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Le portail d’entreprise iOS affiche de grandes icônes <!-- 1454593 -->
+Cette version corrige un problème connu sur la façon dont le portail d’entreprise iOS affiche les icônes dans la vignette de l’application. Si vous chargez des icônes d’application de 120 x 120 pixels ou plus, elles s’affichent désormais sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com) et dans les pages de l’application Portail d’entreprise iOS en respectant la taille entière de la vignette d’application.
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>Semaine du 2 octobre 2017
 
@@ -67,7 +85,7 @@ Le processus d’inscription de l’application Portail d’entreprise pour Andr
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>Semaine du 28 août 2017
+## <a name="august-2017"></a>Août 2017
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>L’application Mail iOS 11 prend en charge OAuth <!---1196951--->
 
@@ -87,11 +105,11 @@ L’accès conditionnel avec Intune prend en charge une authentification plus s�
 
 ![L’utilisateur est invité à procéder à l’inscription à partir du site web du portail d’entreprise.](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>Semaine du 21 août 2017
 
-### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune auront une interface modernisée <!-- 1199015 -->
 
-Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune seront mises à jour pour afficher une apparence plus actuelle. Ces boîtes de dialogue fonctionneront de la même façon qu’avec le précédent style.
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Les boîtes de dialogue Gestion des applications mobiles (MAM) Intune auront une interface modernisée <!-- 1199015 -->
+
+Les boîtes de dialogue Gestion des applications mobiles (MAM) Intune seront mises à jour pour afficher une apparence plus actuelle. Ces boîtes de dialogue fonctionneront de la même façon qu’avec le précédent style.
 
 **Expérience précédente**
 
@@ -102,15 +120,13 @@ Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune seront mis
 ![interface moderne](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>Semaine du 14 août 2017
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Mises à jour de la page « Détails de l’appareil » dans l’application Portail d’entreprise pour Windows 10 <!---1287448--->
 
 L’application Portail d’entreprise pour Windows 10 déplace la balise __Catégorie__ en dessous du titre vers une propriété dans la page __Détails de l’appareil__.
 
 ![L’application Portail d’entreprise pour Windows, écran « Détails de l’appareil », affiche maintenant le champ « Catégories » comme une propriété plutôt que directement sous le titre de cet écran.](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>Semaine du 31 juillet 2017
+## <a name="july-2017"></a>Juillet 2017
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Les pages de détails des applications afficheront de nouvelles informations pour les appareils Android <!--1287476-->
 
@@ -164,7 +180,7 @@ L’application Portail d’entreprise commence la procédure de connexion.
 
 ![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>Semaine du 12 juin 2017
+## <a name="june-2017"></a>Juin 2017
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>L’application Portail d’entreprise pour Android présente désormais une nouvelle expérience d’utilisateur final pour les stratégies de protection des applications <!--1305217-->
 En fonction des commentaires des clients, nous avons modifié l’application Portail d’entreprise pour Android afin d’afficher un bouton **Accéder au contenu de l’entreprise**. Le but est d’empêcher les utilisateurs finaux de passer inutilement par le processus d’inscription quand ils ont uniquement besoin d’accéder aux applications qui prennent en charge les stratégies de protection des applications, une fonctionnalité de gestion des applications mobiles Intune.
@@ -210,8 +226,6 @@ Suite aux commentaires des utilisateurs, l’application Portail d’entreprise 
 ![Une image de l’application Portail d’entreprise Android, avec le menu Action ouvert en haut à droite. La nouvelle option « Supprimer le portail d’entreprise » est disponible en tant que troisième option, sous « Mon profil » et « Paramètres », et au-dessus de « Conditions générales », « Aide et commentaires » et « À propos ».](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![Une image de la boîte de dialogue de confirmation, qui est disponible après avoir sélectionné la nouvelle option « Supprimer le portail d’entreprise » dans le menu Action. La boîte de dialogue informe l’utilisateur comme suit : « en supprimant le portail d’entreprise, votre appareil ne sera plus géré par votre administrateur informatique et pourrait perdre l’accès à la messagerie, aux applications et aux données de l’entreprise. » L’utilisateur doit ensuite confirmer qu’il souhaite supprimer l’application Portail d’entreprise en sélectionnant « Oui ».](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>Semaine du 5 juin 2017
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Améliorations des vignettes de l’application dans l’application Portail d’entreprise pour iOS <!--1230777-->
 Nous avons mis à jour l’apparence des vignettes d’application sur la page d’accueil afin de refléter la couleur de marque que vous définissez pour le portail d’entreprise.

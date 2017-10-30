@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Point de terminaison de l’API d’entrepôt de données Intune
 
 Pour utiliser l’API d’entrepôt de données Intune, vous devez disposer d’un compte avec des informations d’identification Azure AD et des contrôles d’accès en fonction du rôle spécifiques. Vous devez ensuite autoriser votre client REST auprès d’Azure AD à l’aide d’OAuth 2.0. Enfin, vous devez former une URL explicite pour appeler une ressource d’entrepôt de données.
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Exigences liées aux informations d’identification Azure AD et Intune
-
-L’authentification et l’autorisation sont basées sur les informations d’identification Azure AD et le contrôle d’accès en fonction du rôle (RBAC). Par défaut, tous les administrateurs généraux et les administrateurs de service Intune pour votre locataire ont accès à l’API. Pour autoriser davantage d’utilisateurs, utilisez les rôles Intune et octroyez l’accès à la **ressource Rapports**.
-
-L’accès à l’API est soumis aux conditions suivantes :
-
-  -  Une licence Intune doit être affectée à l’utilisateur
-  -  L’utilisateur doit appartenir à l’une des catégories suivantes :
-      -  Administrateur général Azure AD
-      -  Administrateur de service Intune
-      -  Utilisateur avec accès en fonction du rôle à la ressource **Rapports**
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Autorisation
 
@@ -64,4 +54,4 @@ Version actuelle de l’API : `beta`.
 
 ## <a name="odata-query-options"></a>Options de requête OData
 
-La version actuelle prend en charge les paramètres de requête OData suivants : `$skip, $top, $filter, $orderby`.
+La version actuelle prend en charge les paramètres de requête OData suivants : `$filter, $orderby, $select, $skip,` et `$top`.

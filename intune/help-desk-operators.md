@@ -1,12 +1,12 @@
 ---
-title: "Portail de dépannage du centre de support technique"
+title: "Portail de dépannage du support technique | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Les équipes du centre de support technique utilisent le portail de dépannage pour résoudre les problèmes techniques des utilisateurs"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,58 +14,228 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilisation du portail de résolution des problèmes pour aider les utilisateurs
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Le portail de résolution des problèmes permet aux opérateurs du support technique et aux administrateurs Intune d’afficher les informations utilisateur pour répondre aux demandes d’assistance des utilisateurs. Les organisations dont le personnel comprend des opérateurs de support technique peuvent affecter l’**opérateur de support technique** à un groupe d’utilisateurs, qui peuvent ensuite utiliser le panneau de résolution des problèmes pour aider les utilisateurs.
+Le portail de résolution des problèmes permet aux opérateurs du support technique et aux administrateurs Intune d’afficher les informations utilisateur pour répondre aux demandes d’assistance des utilisateurs. Les organisations qui ont un support technique peuvent affecter **l’opérateur de support technique** à un groupe d’utilisateurs. Le rôle Opérateur de support technique peut utiliser le panneau **Résoudre les problèmes**.
 
-Par exemple, quand un utilisateur contacte le support technique pour signaler un problème avec Intune, l’opérateur entre le nom de l’utilisateur. Intune affiche les données utiles qui peuvent aider à résoudre de nombreux problèmes de niveau 1, y compris :
+Pour obtenir la procédure d’ajout d’un rôle Opérateur de support technique, consultez [Contrôle d’accès en fonction du rôle (RBAC) avec Intune](/intune/role-based-access-control)
+
+Quand un utilisateur contacte le support technique pour signaler un problème avec Intune, l’opérateur entre le nom de l’utilisateur. Intune affiche des données utiles qui peuvent aider à résoudre de nombreux problèmes de niveau 1, notamment :
+
 - État de l’utilisateur
 - Attributions
 - Problèmes de conformité
 - L’appareil ne répond pas
--   L’appareil ne reçoit pas les paramètres VPN ou Wi-Fi
--   Échec d’installation de l’application
+- L’appareil ne reçoit pas les paramètres VPN ou Wi-Fi
+- Échec d’installation de l’application
 
-## <a name="add-help-desk-operators"></a>Ajouter des opérateurs de support technique
-En tant qu’administrateur Intune, vous pouvez affecter le rôle d’opérateur de support technique à un groupe d’utilisateurs. Les membres de ce groupe peuvent utiliser le portail Azure pour résoudre les problèmes des utilisateurs. Chaque opérateur de support technique doit avoir une licence Intune pour accéder au portail Azure. Découvrez comment [affecter des licences Intune](licenses-assign.md).
+## <a name="to-review-troubleshooting-details"></a>Pour examiner les informations de résolution des problèmes
 
-Pour ajouter des utilisateurs de support technique :
-1. [Ajoutez des utilisateurs à Intune](users-add.md) si nécessaire.
-2. [Créez un groupe de support technique](groups-add.md) et ajoutez-lui des utilisateurs.
-3. [Assignez le rôle Opérateur du support technique RBAC](role-based-access-control.md#built-in-roles).
+Dans le panneau de résolution des problèmes, choisissez **Sélectionner un utilisateur** pour afficher les informations d’un utilisateur. Les informations de l’utilisateur peuvent vous aider à comprendre l’état actuel des utilisateurs et de leurs appareils.  
 
-  ![Capture d’écran du portail Azure montrant les rôles Intune mis en surbrillance et une liste de rôles intégrés, notamment Opérateur du support technique](./media/help-desk-user-add.png). Vous pouvez aussi [créer un rôle personnalisé](role-based-access-control.md#custom-roles), que vous pouvez modifier ultérieurement pour donner un accès aux opérateurs du support technique.  Les opérateurs du support technique ont besoin des autorisations suivantes pour aider à résoudre les problèmes des utilisateurs :
-    - Applications mobiles : Lecture
-    - Applications gérées : Lecture
-    - Appareils gérés : Lecture
-    - Organisation : Lecture
-    - DeviceCompliancePolices : Lecture
-    - DeviceConfigurations : Lecture
+1. Connectez-vous au portail Azure.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le panneau **Intune**, choisissez **Résoudre les problèmes**.
+4. Cliquez sur **Sélectionner un utilisateur**.
+5. Sélectionnez un utilisateur en tapant son nom ou son adresse e-mail. Cliquez sur **Sélectionner**. Les informations de résolution des problèmes pour l’utilisateur apparaissent dans le panneau Résolution des problèmes. Les tableaux qui suivent expliquent les informations.
 
-4. Pour autoriser les opérateurs de support technique à afficher l’intégrité du service et à ouvrir les tickets de support pour Intune, [accorder aux utilisateurs des autorisations d’administrateur](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal) en tant qu’**Administrateur de service**. Ne pas donner l’autorisation **Administrateur de Service Intune**, car ce rôle d’annuaire détient plus de droits que ceux nécessaires aux opérateurs de support technique.
+> [!Note]  
+> Vous pouvez également accéder au panneau **Résoudre les problèmes** en faisant pointer votre navigateur sur [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
-## <a name="access-the-troubleshooting-portal"></a>Accès au portail de dépannage
+## <a name="areas-of-troubleshooting-dashboard"></a>Zones du tableau de bord de résolution des problèmes
 
-Le personnel de support technique et les administrateurs Intune peuvent accéder au portail de dépannage de deux manières :
-- Ouvrez [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) dans un navigateur web pour afficher uniquement le portail de résolution des problèmes.
-  ![Capture d’écran de la console de dépannage](./media/help-desk-console.png)
-- Connectez-vous au portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**, puis accédez à **Aide et support** > **Résoudre les problèmes**.
+Vous pouvez utiliser le panneau **Résoudre les problèmes** pour examiner les informations de l’utilisateur. 
 
-Cliquez sur **Sélectionner un utilisateur** pour afficher un utilisateur et les détails le concernant.
+![](/intune/media/troubleshooting-dash.png)
 
-## <a name="use-the-troubleshooting-portal"></a>Utilisation du portail de dépannage
+| Domaine | Nom | Description |
+| ---  | ---  | ---         |
+| 1.   | État du compte  | Affiche l’état du locataire Intune actif comme étant **Actif** ou **Inactif**.       |
+| 2.   | Sélection de l'utilisateur  | Nom de l’utilisateur actuellement sélectionné. Cliquez sur **Changer d’utilisateur** pour choisir un autre utilisateur.       |
+| 3.   | État de l’utilisateur  | Affiche pour cet utilisateur l’état de la licence Intune, le nombre d’appareils, la conformité de chaque appareil, le nombre d’applications et la conformité des applications.       |
+| 4.   | Informations utilisateur  | Utilisez la liste pour sélectionner les détails à examiner dans le panneau. <br>Vous pouvez sélectionner : <ul><li>Applications mobiles<li>Stratégies de protection des applications<li>Stratégies de conformité<li> Stratégies de configuration</ul>      |
+| 5.   | Appartenance aux groupes  | Yadda       |
 
-Dans le portail de dépannage, vous pouvez choisir **Sélectionner un utilisateur** pour afficher les informations d’un utilisateur. Les informations de l’utilisateur peuvent vous aider à comprendre l’état actuel des utilisateurs et de leurs appareils. Le portail de dépannage affiche les informations suivantes concernant le dépannage :
-- **État du compte**
-- **État de l’utilisateur**
-- **Appareils** avec les actions de l’appareil
-- **Appartenance au groupe**
-- **État de protection des applications**
+## <a name="mobile-apps-reference"></a>Informations de référence sur les applications mobiles
+
+Applications qui s’exécutent sur les appareils, ou les appareils appartenant aux utilisateurs gérés par Intune et Azure Active Directory (AD).
+
+### <a name="properties"></a>Propriétés
+
+Propriétés des applications mobiles.
+
+| Propriété      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nom          | Nom de l’application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Système d’exploitation            | Système d’exploitation installé sur l’appareil.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type          | Vous pouvez choisir un type d’attribution pour chaque application.  <br> **Disponible** : les utilisateurs effectuent l’installation de l’application à la demande à partir de l’application ou du site web de portail d’entreprise.  <br> **Non applicable** : l’application n’est pas installée ni affichée dans le portail d’entreprise. <br> **Désinstaller** : l’application est désinstallée des appareils dans les groupes sélectionnés.  <br> **Disponible avec ou sans inscription** : affectez cette application à des groupes d’utilisateurs dont les appareils ne sont pas inscrits avec Intune. |
+| Dernière modification le | Nom du type d’appareil.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+
+### <a name="devices"></a>Appareils
+
+Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
+
+| Propriété           | Description                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nom de l'appareil        | Nom du type d’appareil.                                                                                                     |
+| Géré par         | Horodatage de la modification de la stratégie.                                                                                              |
+| Type de jonction à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Propriété          | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Conforme à Intune   | Nom du type d’appareil.                                                                                                     |
+| Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Système d’exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Version du système d'exploitation         | Numéro de version du système d’exploitation de l’appareil.                                                                                  |
+| Dernier archivage      | Nom du type d’appareil.                                                                                                     |
+
+### <a name="app-protection-status"></a>État de protection des applications
+
+Une stratégie de protection des applications est disponible pour les applications mobiles qui s’intègrent aux technologies Enterprise Mobility Solution (EMS). Ceci donne une base de référence de protection pour vos données d’entreprise quand elles sont téléchargées vers des applications mobiles, notamment les applications mobiles Office. 
+
+| Propriété    | Description                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Status      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| Nom de l’application    | Nom de l’application                                                           |
+| Nom de l'appareil | Nom du type d’appareil.                                                       |
+| Type d'appareil | Nom du type d’appareil.                                                       |
+| Stratégies    | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| Dernière synchronisation   | Horodatage de la dernière synchronisation de l’appareil avec Intune.                   |
+
+## <a name="app-protection-policies-reference"></a>Informations de référence sur les stratégies de protection des applications
+
+Une stratégie de protection des applications est disponible pour les applications mobiles qui s’intègrent aux technologies EMS. Ceci donne une base de référence de protection pour vos données d’entreprise quand elles sont téléchargées vers des applications mobiles, notamment les applications mobiles Office. 
+
+### <a name="properties"></a>Propriétés
+
+Le tableau récapitule l’état des stratégies de protection des applications pour les appareils gérés par Intune.
+
+| Propriété    | Description                                                                                                                                |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nom        | Nom de l’application.                                                                                                        |
+| Déployé    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Plateforme    | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Inscription  | Nom du type d’appareil.                                                                                                     |
+| Dernière mise à jour | Horodatage de la modification de la stratégie.                                                                                              |
+
+### <a name="devices"></a>Appareils
+
+Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
+
+| Propriété           | Text                                                                                                                                |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nom du périphérique        | Nom du type d’appareil.                                                                                                     |
+| Géré par         | Horodatage de la modification de la stratégie.                                                                                              |
+| Type de jonction à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Propriété          | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Conforme à Intune   | Nom du type d’appareil.                                                                                                     |
+| Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Système d’exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Version du système d'exploitation         | Numéro de version du système d’exploitation de l’appareil.                                                                                  |
+| Dernier archivage      | Nom du type d’appareil.                                                                                                     |
+
+## <a name="compliance-policies-reference"></a>Informations de référence sur les stratégies de conformité
+
+Permet de garantir que les appareils utilisés pour accéder aux applications et aux données de l’entreprise sont conformes à certaines règles, comme utiliser un code PIN pour accéder à l’appareil et chiffrer les données qui y sont stockées.
+
+### <a name="properties"></a>Propriétés
+
+Propriétés des stratégies de conformité.
+
+| Propriété      | Description                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Affectation    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Nom          | Nom de l’application.                                                                                                        |
+| Système d’exploitation            | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Type de stratégie   | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Dernière modification le | Nom du type d’appareil.                                                                                                     |
+
+### <a name="devices"></a>Appareils
+
+Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
+
+| Propriété           | Description                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nom de l'appareil        | Nom du type d’appareil.                                                                                                     |
+| Géré par         | Horodatage de la modification de la stratégie.                                                                                              |
+| Type de jonction à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Propriété          | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Conforme à Intune   | Nom du type d’appareil.                                                                                                     |
+| Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Système d’exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Version du système d'exploitation         | Numéro de version du système d’exploitation de l’appareil.                                                                                  |
+| Dernier archivage      | Nom du type d’appareil.                                                                                                     |
+
+### <a name="app-protection-policies"></a>Stratégies de protection des applications
+
+Une stratégie de protection des applications est disponible pour les applications mobiles qui s’intègrent aux technologies EMS. Ceci donne une base de référence de protection pour vos données d’entreprise quand elles sont téléchargées vers des applications mobiles, notamment les applications mobiles Office. 
+
+| Propriété    | Description                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Status      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| Nom de l’application    | Nom de l’application                                                           |
+| Nom de l'appareil | Nom du type d’appareil.                                                       |
+| Type d'appareil | Nom du type d’appareil.                                                       |
+| Stratégies    | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| Dernière synchronisation   | Horodatage de la dernière synchronisation de l’appareil avec Intune.                   |
+
+## <a name="configuration-policies-reference"></a>Informations de référence sur les stratégies de configuration
+
+Une stratégie de configuration des applications est disponible pour les applications mobiles avec des configurations spécifiques au fournisseur. 
+
+### <a name="properties"></a>Propriétés
+
+Propriétés des stratégies de configuration.
+
+| Propriété      | Description                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Affectation    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Nom          | Nom de l’application.                                                                                                        |
+| Système d’exploitation            | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Type de stratégie   | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Dernière modification le | Nom du type d’appareil.                                                                                                     |
+
+### <a name="devices"></a>Appareils
+
+Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
+
+| Propriété           | Description                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nom de l'appareil        | Nom du type d’appareil.                                                                                                     |
+| Géré par         | Horodatage de la modification de la stratégie.                                                                                              |
+| Type de jonction à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Propriété          | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Conforme à Intune   | Nom du type d’appareil.                                                                                                     |
+| Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Système d’exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Version du système d'exploitation         | Numéro de version du système d’exploitation de l’appareil.                                                                                  |
+| Dernier archivage      | Nom du type d’appareil.                                                                                                     |
+
+
+### <a name="app-protection-policies"></a>Stratégies de protection des applications
+
+Une stratégie de protection des applications est disponible pour les applications mobiles qui s’intègrent aux technologies EMS. Ceci donne une base de référence de protection pour vos données d’entreprise quand elles sont téléchargées vers des applications mobiles, notamment les applications mobiles Office. 
+
+| Propriété    | Description                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Status      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| Nom de l’application    | Nom de l’application                                                           |
+| Nom de l'appareil | Nom du type d’appareil.                                                       |
+| Type d'appareil | Nom du type d’appareil.                                                       |
+| Stratégies    | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| Dernière synchronisation   | Horodatage de la dernière synchronisation de l’appareil avec Intune.                   |
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Vous pouvez découvrir plus d’informations sur le contrôle d’accès en fonction du rôle (RBAC) pour définir des rôles dans les tâches de gestion des appareils et des applications mobiles de votre organisation, et de protection des données. Pour plus d’informations, consultez [Contrôle d’accès en fonction du rôle (RBAC) avec Intune](/intune/role-based-access-control).
+
+Découvrez plus d’informations sur les problèmes connus de Microsoft Intune. Pour plus d’informations, consultez [Problèmes connus dans Microsoft Intune](/intune/known-issues).
+
+Découvrez comment créer un ticket de support et obtenir de l’aide quand vous en avez besoin. [Obtenez du support](/intune/get-support).
