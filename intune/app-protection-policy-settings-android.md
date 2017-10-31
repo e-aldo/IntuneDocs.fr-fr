@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635f99a0fd4857e9c0c2266371713c102ce37912
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Paramètres de stratégie de protection d’application Android
 Vous pouvez [configurer](app-protection-policies.md) les paramètres décrits dans cette rubrique pour une stratégie de protection d'application dans le panneau **Paramètres** du portail Azure.
@@ -86,3 +86,8 @@ Il existe deux catégories de paramètres de stratégie : réadressage des donn
 | **Intervalle en mode hors connexion avant la réinitialisation des données d’application (en jours)** | Après ce nombre de jours (défini par l’administrateur) d’exécution en mode hors connexion, l’application demande à l’utilisateur de se connecter au réseau et de se réauthentifier. Si l’utilisateur réussit à s’authentifier, il peut continuer à accéder à ses données et l’intervalle en mode hors connexion est réinitialisé.  Si l’utilisateur ne parvient pas à s’authentifier, l’application effectue une réinitialisation sélective du compte et des données de l’utilisateur.  Pour plus d’informations sur les données supprimées par une réinitialisation sélective, consultez [Guide pratique pour effacer uniquement les données d’entreprise des applications gérées par Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe).<br><br> | 90 jours |
 | **Bloquer la capture d'écran et l'Assistant Android (Android 6.0 et ultérieur)** | Sélectionnez **Oui** pour bloquer les fonctionnalités de capture d’écran et d’**Assistant Android** de l’appareil lors de l’utilisation de cette application. Si vous choisissez **Oui**, l’image d’aperçu du sélecteur d’application sera floue lors de l’utilisation de cette application avec un compte professionnel ou scolaire. | Non |
 | **Désactiver le code PIN de l’application quand le code PIN de l’appareil est géré** | Choisissez **Oui** pour désactiver le code PIN de l’application lorsqu’un verrouillage d’appareil est détecté sur un appareil inscrit. | Non |
+| **Exiger une version minimale du système d’exploitation Android** | Choisissez **Oui** pour exiger une version minimale du système d’exploitation Android pour utiliser cette application. L’accès de l’utilisateur est bloqué si la version d’Android sur l’appareil ne répond pas à la condition. | Non |
+| **Exiger une version minimale du système d’exploitation Android (avertissement uniquement)** | Choisissez **Oui** pour exiger une version minimale du système d’exploitation Android pour utiliser cette application. Une notification s’affiche à l’intention de l’utilisateur si la version d’Android sur l’appareil ne répond pas à la condition. Cette notification peut être ignorée. | Non |
+| **Exiger une version minimale de l’application** | Choisissez **Oui** pour exiger une version minimale de l’application pour utiliser cette application. L’accès de l’utilisateur est bloqué si la version de l’application sur l’appareil ne répond pas à la condition.<br><br>Quand vous sélectionnez les applications à cibler, notez que les applications ont souvent des schémas de contrôle de version différents entre elles.<br><br> | Non | 
+| **Exiger une version minimale de l’application (avertissement uniquement)** | Choisissez **Oui** pour recommander une version minimale de l’application pour utiliser cette application. Une notification s’affiche à l’intention de l’utilisateur si la version de l’application sur l’appareil ne répond pas à la condition. Cette notification peut être ignorée.<br><br>Quand vous sélectionnez les applications à cibler, notez que les applications ont souvent des schémas de contrôle de version différents entre elles.<br><br> | Non | 
+
