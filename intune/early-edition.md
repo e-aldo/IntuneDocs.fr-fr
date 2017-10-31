@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Édition anticipée pour Microsoft Intune - Octobre 2017
 
@@ -151,19 +151,6 @@ Avec la publication d’Android Oreo, Google introduit une suite de fonctionnali
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Prise en charge de la stratégie de mise à niveau de l’édition Windows 10   <!-- 903672(archived), 1119689 -->  
 Vous pourrez créer une stratégie de mise à niveau de l’édition Windows 10 qui met à niveau les appareils Windows 10 vers Windows 10 Éducation, Windows 10 Éducation N, Windows 10 Professionnel, Windows 10 Professionnel N, Windows 10 Professionnel Éducation et Windows 10 Professionnel Éducation N. Pour plus d’informations sur les mises à niveau de l’édition Windows 10, consultez [Configuration des mises à niveau de l’édition Windows 10 ](edition-upgrade-configure-windows-10.md).
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Intune MAM et compléments Outlook pour Android <!-- 1450688 -->
-Dans quelques semaines, l’équipe Office présentera des compléments pour Outlook sur Android. Cet ensemble de fonctionnalités complémentaires existe déjà dans Outlook sur Windows, iOS, web et Mac. Étant donné que les compléments sont gérés par Exchange, les utilisateurs pourront copier et partager des données et des messages entre Outlook et les applications complémentaires non gérées, sauf si l’accès aux compléments est désactivé par votre administrateur Exchange. 
-
-Pour gérer les autorisations d’accès utilisateur aux compléments, contactez votre administrateur Exchange pour vous assurer que vos stratégies de protection des données MAM s’appliquent aux compléments.
-
-#### <a name="how-does-this-affect-me"></a>En quoi cela m’affecte-t-il ?
-Si vos stratégies Exchange sont déjà définies pour empêcher le chargement d’une version test ou l’installation des compléments, inutile de poursuivre votre lecture. Vos stratégies MAM s’appliqueront comme prévu. Si, toutefois, vous avez défini des stratégies dans MAM pour restreindre les opérations couper, copier et coller dans Outlook sur Android et si vous n’avez pas défini votre stratégie complémentaire dans Exchange, vous devez savoir que par défaut, les utilisateurs pourront installer des compléments dans Outlook. Ces compléments peuvent accéder au corps du message, à l’objet et à d’autres propriétés du message. Vous pouvez désactiver la capacité de l’utilisateur à installer des compléments en demandant à votre administrateur Exchange de supprimer les rôles « Mes applications personnalisées » et « Mes applications de la Place de marché ».
-
-Le changement de paramètre dans Exchange s’appliquera à Outlook sur Windows, iOS, web, Mac et les appareils mobiles. 
-
-#### <a name="what-do-i-need-to-do"></a>Que dois-je faire ?
-Passez en revue vos stratégies Exchange dès aujourd’hui. Informez votre service informatique et le personnel du support technique. Contactez notre équipe de support si vous avez des questions ou si vous rencontrez des problèmes. 
 
 
 
