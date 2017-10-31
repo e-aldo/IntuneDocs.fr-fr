@@ -1,11 +1,11 @@
 ---
 title: "Guide pratique pour se connecter à l’application Portail d’entreprise | Microsoft Docs"
-description: 
+description: "Découvrez comment vous connecter à l’application Portail d’entreprise sur plusieurs plateformes."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Comment faire pour se connecter à l’application Portail d’entreprise ? <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ Bien que les images suivantes concernent iOS, le processus est quasiment identiq
 4. Une fois que le portail d’entreprise a accepté votre connexion, il vous connecte et vous permet d’accéder aux ressources de votre entreprise.   
 
   ![Une fois le processus d’authentification terminé, l’application Portail d’entreprise procède à la connexion et affiche une barre de chargement pour indiquer l’avancement du processus.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>Connexion avec authentification basée sur les certificats
+
+1.  Ouvrez l'application Portail d'entreprise sur votre appareil.
+
+2.  Entrez votre **Compte professionnel ou scolaire**.
+
+3.  Appuyez sur le lien **Se connecter avec un certificat**.
+
+4.  Appuyez sur **Continuer** pour utiliser le certificat.
 
 ## <a name="signing-in-from-another-device"></a>Connexion à partir d’un autre appareil
 

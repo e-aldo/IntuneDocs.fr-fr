@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56d0d3e79e38b20cb00a528fc6b55ca9de6ba871
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Forum Aux Questions sur la Gestion des applications mobiles (GAM) et la protection des applications
 
@@ -70,16 +70,16 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 **Quelles sont les exigences supplémentaires pour utiliser les applications [Word, Excel et PowerPoint](https://products.office.com/business/office) ?**
 
-  1. L’utilisateur final doit disposer d’une licence pour [Office 365 Business ou Entreprise](https://products.office.com/business/compare-more-office-365-for-business-plans) associée à son compte Azure Active Directory. L’abonnement doit inclure les applications Office sur des appareils mobiles et un compte de stockage cloud avec [OneDrive Entreprise](https://onedrive.live.com/about/business/). Des licences Office 365 peuvent être attribuées dans le [portail Office](http://portal.office.com) en tenant compte des [instructions suivantes](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+  1. L’utilisateur final doit disposer d’une licence pour [Office 365 Business ou Entreprise](https://products.office.com/business/compare-more-office-365-for-business-plans) associée à son compte Azure Active Directory. L’abonnement doit inclure les applications Office sur des appareils mobiles et peut inclure un compte de stockage cloud avec [OneDrive Entreprise](https://onedrive.live.com/about/business/). Des licences Office 365 peuvent être attribuées dans le [portail Office](http://portal.office.com) en tenant compte des [instructions suivantes](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. L’utilisateur final doit avoir installé l’application [OneDrive](https://onedrive.live.com/about/) sur son appareil et se connecter avec son compte AAD.
+  2. L’utilisateur final doit avoir configuré un emplacement managé à l’aide de la fonctionnalité d’enregistrement granulaire sous le paramètre de stratégie de protection des applications « Empêcher Enregistrer sous ». Par exemple, si l’emplacement managé est OneDrive, l’application [OneDrive](https://onedrive.live.com/about/) doit être configurée dans les applications Word, Excel ou PowerPoint de l’utilisateur final.
 
-  3. L’application OneDrive doit être ciblée par la stratégie de protection des applications déployée pour l’utilisateur final.
+  3. Si l’emplacement managé est OneDrive, l’application doit être ciblée par la stratégie de protection des applications déployée pour l’utilisateur final.
 
   >[!NOTE]
   > Les applications mobiles Office prennent actuellement en charge uniquement SharePoint Online et SharePoint on-premises.
 
-**Pourquoi OneDrive est-il nécessaire pour Office ?** Intune marque toutes les données de l’application en tant que données « d’entreprise » ou « personnelles ». Les données sont considérées comme « d’entreprise » lorsqu’elles proviennent d’un emplacement de l’entreprise. Pour les applications Office, Intune considère les sites d’entreprise suivants : e-mail (Exchange) ou stockage cloud (application OneDrive avec un compte OneDrive Entreprise).
+**Pourquoi un emplacement managé (ex. OneDrive) est-il nécessaire pour Office ?** Intune marque toutes les données de l’application en tant que données « d’entreprise » ou « personnelles ». Les données sont considérées comme « d’entreprise » lorsqu’elles proviennent d’un emplacement de l’entreprise. Pour les applications Office, Intune considère les sites d’entreprise suivants : e-mail (Exchange) ou stockage cloud (application OneDrive avec un compte OneDrive Entreprise).
 
 **Quelles sont les exigences supplémentaires pour utiliser Skype Entreprise ?** Voir les conditions requises pour les licences de [Skype Entreprise](https://products.office.com/skype-for-business/it-pros).
   >[!NOTE]
@@ -102,6 +102,18 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
   2. **Le code PIN est-il sécurisé ?** Le code PIN sert à autoriser uniquement les utilisateurs adéquats à accéder aux données de leur organisation dans l’application. Par conséquent, un utilisateur final doit se connecter avec son compte professionnel ou scolaire avant de pouvoir définir ou réinitialiser son PIN d’application Intune. Cette authentification est gérée par Active Directory Azure par le biais d’un échange de jeton sécurisé et n’est pas transparente pour le Kit de développement logiciel (SDK) d’application Intune. Du point de vue de la sécurité, la meilleure manière de protéger les données professionnelles ou scolaires consiste à les chiffrer. Le chiffrement n’est pas lié au code PIN de l’application, mais constitue sa propre stratégie de protection des applications.
 
   3. **Comment Intune protège-t-il le code PIN contre les attaques en force brute ?** Dans le cadre de la stratégie de code PIN d’application, l’administrateur peut définir un nombre maximal de tentatives d’authentification de son code PIN avant le verrouillage de l’application. Une fois que le nombre de tentatives atteint, le Kit de développement logiciel (SDK) d’application Intune peut réinitialiser les données « d’entreprise » dans l’application.
+  
+**Comment le PIN de l’application Intune fonctionne-t-il entre un code numérique et un code secret ?**
+GAM prend actuellement en charge les PIN au niveau de l’application (iOS) avec des caractères alphanumériques et spéciaux (appelés « code secret ») qui nécessitent l’implication d’applications (ex. WXP, Outlook, Managed Browser, Yammer) pour intégrer le kit SDK d’application Intune pour iOS. Sans cela, les paramètres de code secret ne sont pas appliqués correctement pour les applications ciblées. Étant donné que les applications suivront cette intégration de manière progressive, le comportement entre le code secret et le code numérique est temporairement modifié pour l’utilisateur final et nécessite un éclaircissement important. Pour la version d’Intune d’octobre 2017, le comportement est le suivant :
+
+Les applications qui ont
+1. le même éditeur d’application
+2. un code secret ciblé via la console et 
+3. adopté le kit SDK avec cette fonctionnalité (v 7.1.12+) pourront partager le code secret entre ces applications. 
+
+Les applications qui ont
+1. le même éditeur d’application
+2. un code numérique ciblé via la console pourront partager le code numérique entre ces applications. 
 
 **Qu’en est-il du chiffrement ?** Les administrateurs informatiques peuvent déployer une stratégie de protection des applications nécessitant un chiffrement des données d’application. Dans le cadre de la stratégie, l’administrateur informatique peut également spécifier quand le contenu est chiffré.
 
@@ -132,7 +144,7 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 ## <a name="app-experience-on-ios"></a>Expérience d'application sur iOS
 
- **Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
+**Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
 
 ### <a name="see-also"></a>Voir aussi
 - [Paramètres de stratégie de gestion des applications mobiles Android dans Microsoft Intune](../deploy-use/android-mam-policy-settings.md)
