@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 82b839943d21cd44c1be457cc8436928f41fe73c
-ms.sourcegitcommit: b6a2d55d9c4e3248ff7ef738393f458f1978de44
+ms.openlocfilehash: 8dce9dea82673ebabd4170c74e4212c1da26382c
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifier les appareils comme appartenant à l’entreprise
 
@@ -45,7 +45,7 @@ Les administrateurs Intune peuvent créer et importer un fichier de valeurs sép
 [Découvrez comment trouver votre numéro de série d’appareil Android](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers"></a>Ajouter des identificateurs d’entreprise
-Pour créer la liste, préparez une liste à deux colonnes de valeurs séparées par des virgules (.csv), sans en-tête. Ajoutez les numéros de série ou IMEI dans la colonne de gauche, et les détails dans la colonne de droite. Vous ne pouvez importer qu’un seul type d’ID, numéro IMEI ou numéro de série dans un fichier .csv. Les détails sont limités à 128 caractères et sont réservés à des fins d’administration. Les détails ne sont pas affichés sur l’appareil. La limite actuelle est de 500 lignes par fichier .csv.
+Pour créer la liste, préparez une liste à deux colonnes de valeurs séparées par des virgules (.csv), sans en-tête. Ajoutez les numéros de série ou IMEI dans la colonne de gauche, et les détails dans la colonne de droite. Vous ne pouvez importer qu’un seul type d’ID, numéro IMEI ou numéro de série dans un fichier .csv. Les détails sont limités à 128 caractères et sont réservés à des fins d’administration. Les détails ne sont pas affichés sur l’appareil. La limite actuelle est de 5 000 lignes par fichier .csv.
 
 **Chargez un fichier .csv qui contient les numéros de série** : créez une liste de valeurs séparées par des virgules (.csv) de deux colonnes sans en-tête, limitée à 5 000 appareils ou à 5 Mo par fichier .csv.
 

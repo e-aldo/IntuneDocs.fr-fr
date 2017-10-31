@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,47 +15,44 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d18ef2119ed0f8adc63f6675024c8e694235ee35
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
+ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Préparer la configuration des stratégies de protection d’application pour Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Avant de créer une stratégie de protection d’application Windows 10, vous devez activer la gestion des applications mobiles (MAM) pour Windows 10 en définissant le fournisseur MAM dans Azure AD. Cette configuration vous permet de définir l’état d’inscription lors de la création d’une nouvelle stratégie de Protection des informations Windows (WIP) avec Intune.
-
-> [!NOTE]
-> L’état de l’inscription peut être MAM ou gestion des appareils mobiles (MDM).
-
-## <a name="to-configure-the-mam-provider"></a>Pour configurer le fournisseur MAM
-
-1.  Accédez au [portail Azure](https://portal.azure.com/) et connectez-vous avec vos informations d’identification Intune.
-
-2.  Dans le menu de gauche, choisissez **Azure Active Directory**.
-
-    ![Configuration du fournisseur MAM](./media/mam-provider-sc-1.png)
-
-3.  Le panneau **Azure AD** s’ouvre, choisissez **Mobilité (MDM et MAM)**, puis cliquez sur **Microsoft Intune**.
-
-    ![Mobilité (gestion des données de référence et gestion des applications mobiles)](./media/mam-provider-sc-1.png)
-
-4.  Le volet Configuration s’ouvre, choisissez d’abord **Restaurer les URL MAM par défaut**, puis configurez ce qui suit :
-
-    a.  Étendue des utilisateurs MAM : vous pouvez utiliser MAM pour protéger des données d’entreprise sur un groupe spécifique d’utilisateurs qui utilisent des appareils Windows 10, ou tous les utilisateurs.
-
-    b.  URL de conditions d’utilisation de MAM : l’URL des conditions d’utilisation du service MAM. Permet d’afficher les conditions de service MAM pour les utilisateurs finaux.
-
-    c.  URL de découverte MAM : il s’agit de l’URL que les appareils recherchent lorsqu’ils ont besoin appliquer des stratégies de protection d’application.
-
-    d.  URL de conformité MAM :
-
-5.  Une fois ces paramètres configurés, cliquez sur **Enregistrer**.
+Activez la gestion des applications mobiles (GAM) pour Windows 10 en définissant le fournisseur GAM dans Azure AD. La définition d’un fournisseur GAM dans Azure AD vous permet de définir l’état d’inscription durant la création d’une nouvelle stratégie de Protection des informations Windows (WIP) avec Intune. L’état de l’inscription peut être MAM ou gestion des appareils mobiles (MDM).
 
 > [!NOTE]
 > Les appareils avec un état d’inscription de gestion des applications mobiles doivent être joints à Azure AD.
+
+## <a name="to-configure-the-mam-provider"></a>Pour configurer le fournisseur MAM
+
+1. Connectez-vous au portail Azure et sélectionnez **Azure Active Directory**.
+
+2. Sélectionnez **Mobilité (MDM et GAM)** dans le groupe **Gérer**.
+
+3. Cliquez sur **Microsoft Intune**.
+
+4. Configurez les paramètres dans le groupe **Restaurer les URL Gestion des applications mobiles par défaut** du panneau **Configurer**.
+
+    **Portée de l'utilisateur Gestion des applications mobiles**  
+      Utilisez l’inscription automatique GAM pour gérer les données d’entreprise sur les périphériques Windows de vos employés. L’inscription automatique GAM sera configurée pour des scénarios BYOD (Apportez votre propre appareil).<ul><li>**Aucun**<br>Sélectionnez cette option si tous les utilisateurs peuvent être inscrits dans GAM.</li><li>**Quelques-uns**<br>Sélectionnez les groupes Azure AD qui contiennent les utilisateurs qui seront inscrits dans GAM.</li><li>**Tous**<br>Sélectionnez cette option si tous les utilisateurs peuvent être inscrits dans GAM.</li></ul>
+
+    **URL des conditions d'utilisation de GAM**  
+     Il s’agit de l’URL du point de terminaison des conditions d’utilisation du service GAM. Le point de terminaison des conditions d’utilisation sert à afficher les conditions d’utilisation aux utilisateurs finaux avant l’inscription de leurs appareils à gérer. Les conditions d’utilisation informent les utilisateurs sur les stratégies appliquées aux appareils mobiles.
+
+    **URL de détection de GAM**  
+    Il s’agit de l’URL du point de terminaison d’inscription du service GAM. Le point de terminaison sert à inscrire des appareils à gérer à travers le service GAM.
+
+    **URL de conformité GAM**  
+      Il s’agit de l’URL du point de terminaison de conformité du service GAM. Quand un utilisateur se voit refuser l’accès à une ressource à partir d’un appareil non conforme, un lien vers l’URL de conformité lui est indiqué. Les utilisateurs peuvent accéder à cette URL hébergée par le service GAM pour savoir pourquoi leur appareil est considéré comme non conforme. Les utilisateurs peuvent également effectuer une correction libre-service pour rendre leurs appareils conformes et pouvoir continuer à accéder aux ressources.
+
+5.  Cliquez sur **Enregistrer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

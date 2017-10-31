@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 09/19/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff2c9943a04ec02a83e821a65e1307e311a9d1c0
-ms.sourcegitcommit: 4ce095c0c3fa2e42cf76207b6ff8edf1fe397165
+ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
+ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils iOS dans Microsoft Intune
 
@@ -108,10 +108,8 @@ Cette restriction s’applique également aux options accessibles à partir des 
 
 Dans la liste des applications restreintes, vous pouvez configurer une des listes suivantes :
 
-Une liste **Applications interdites** : répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter.
-Une liste **Applications approuvées** : répertorie les applications que les utilisateurs sont autorisés à installer. Les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement.
-
-Rien n’empêche les utilisateurs d’installer une application interdite mais, s’ils le font, vous en serez informé.
+- Une liste **Applications interdites** : répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter. Rien n’empêche les utilisateurs d’installer une application interdite mais, s’ils le font, vous en serez informé.
+- Une liste **Applications approuvées** : répertorie les applications que les utilisateurs sont autorisés à installer. Les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement. Rien n’empêche les utilisateurs d’installer une application qui ne figure pas dans la liste approuvée, mais s’ils le font, vous en serez informé.
 
 Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans l’App Store.
 

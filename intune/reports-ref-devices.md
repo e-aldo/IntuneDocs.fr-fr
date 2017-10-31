@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reference-for-devices-entities"></a>Référence pour les entités d’appareils
 
@@ -130,10 +130,23 @@ L’entité **EnrollmentTypes** indique si un appareil est un appareil d’entre
 
 L’entité **MdmStatuses** indique l’état de conformité de l’appareil.
 
-| Propriété  | Description | Exemple |
+| Propriété  | Description |
+|---------|------------|
+| MdmStatusID |Identificateur unique de l’état de conformité |
+| MdmStatusKey |Identificateur unique de l’état de conformité dans l’entrepôt de données (clé de substitution) | 
+| ComplianceStatus |État de conformité de l’appareil, qui doit adopter l’une des valeurs du tableau ci-dessous | 
+
+
+## <a name="example"></a>Exemple
+
+| MdmStatusID  | ComplianceStatus | Description |
 |---------|------------|--------|
-| MdmStatusName |Identificateur de MdmStatus |0 - Inconnu <br>1 - Conforme <br>2 - Non conforme |
-| MdmStatusKey |Identificateur unique de l’état de conformité dans l’entrepôt de données (clé de substitution) | |
+| 0 |Inconnu |L’état de conformité de l’appareil est inconnu. |
+| 1 |Conforme |L’appareil est conforme. |
+| 2 |Non conforme |L’appareil n’est pas conforme. |
+| 3 |Conflict |La conformité de l’appareil a généré un conflit. |
+| 4 |Erreur |Une erreur s’est produite durant la lecture de l’état de conformité de l’appareil. |
+
 
 ## <a name="managementstates"></a>ManagementStates
 

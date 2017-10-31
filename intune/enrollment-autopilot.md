@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 76b709f97b349966fbca7115959f64a56741380b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Inscrire des appareils Windows à l’aide du programme Windows AutoPilot Deployment
 Le programme Windows AutoPilot Deployment simplifie la configuration des appareils. De nos jours, la création et la maintenance des images de système d’exploitation personnalisées demandent beaucoup de temps. L’application de ces images de système d’exploitation personnalisées à de nouveaux appareils en vue de les préparer pour vos utilisateurs finaux peut être tout aussi longue. Avec Microsoft Intune et AutoPilot, vous pouvez donner de nouveaux appareils à vos utilisateurs finaux sans devoir créer, gérer et appliquer des images de système d’exploitation personnalisées sur les appareils. Quand vous utilisez Intune pour gérer des appareils AutoPilot, vous pouvez gérer des stratégies, des profils, des applications, etc. sur les appareils une fois qu’ils sont inscrits. Pour une vue d’ensemble des avantages, des scénarios et des prérequis, consultez [Vue d’ensemble de Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -47,13 +47,16 @@ Les profils de déploiement AutoPilot sont utilisés pour configurer les apparei
    - **Paramètres de confidentialité** : choisissez si vous voulez montrer les paramètres de confidentialité aux utilisateurs. 
    - **Contrat de licence utilisateur final (CLUF)** : choisissez s’il faut montrer le CLUF aux utilisateurs.
    - **Type de compte d’utilisateur** : choisissez si le type de compte d’utilisateur est **Administrateur** ou **Standard**.
+
+     > [!Note]    
+     > Ce paramètre ne s’applique pas aux comptes d’administrateur général ou d’administrateur d’entreprise. Ces comptes ne peuvent pas correspondre à des utilisateurs standard, car ils donnent accès à toutes les fonctionnalités d’administration dans Azure AD.
 8. Cliquez sur **Créer** pour créer le profil. Le profil de déploiement AutoPilot est maintenant disponible pour être attribué à des appareils.
      
-   > [!Note]    
-   > Les paramètres suivants sont configurés avec tous les profils de déploiement AutoPilot :
-   > - Ignorer les pages de configuration de Cortana, OneDrive et de l’inscription OEM
-   > - Configurer automatiquement pour une entreprise ou un établissement scolaire
-   > - Expérience de connexion avec une personnalisation d’entreprise ou d’établissement scolaire    
+> [!Note]    
+> Les paramètres suivants sont configurés avec tous les profils de déploiement AutoPilot :
+> - Ignorer les pages de configuration de Cortana, OneDrive et de l’inscription OEM
+> - Configurer automatiquement pour une entreprise ou un établissement scolaire
+> - Expérience de connexion avec une personnalisation d’entreprise ou d’établissement scolaire    
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Attribuer un profil de déploiement AutoPilot
 Une fois que vous avez créé des profils de déploiement AutoPilot, vous pouvez les attribuer à des appareils sélectionnés.
