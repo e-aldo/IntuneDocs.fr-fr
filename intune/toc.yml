@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: Surveiller les applications
           href: apps-monitor.md
-        - name: Profils de configuration d’application iOS
-          href: app-configuration-policies-use-ios.md
-        - name: Profils de configuration d’application Android
-          href: app-configuration-policies-use-android.md
+        - name: Stratégies de configuration des applications
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS périphériques gérés
+              href: app-configuration-policies-use-ios.md
+            - name: Android périphériques gérés
+              href: app-configuration-policies-use-android.md
+            - name: Applications gérées
+              href: app-configuration-policies-managed-app.md
         - name: Utiliser des profils d’approvisionnement d’application iOS
           href: app-provisioning-profile-ios.md
         - name: Réinitialiser des applications de manière sélective
