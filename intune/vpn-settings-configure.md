@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c894a0314af1967dce67a7ffc5b3279bff6125f4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 699fa64bc0f720b18c1376e39b85eccd9018bbaf
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres VPN dans Microsoft Intune
 
@@ -37,7 +37,7 @@ Vous pouvez créer des profils VPN à l’aide des types de connexions suivants 
 |-|-|-|-|-|-|-|
 |Pulse Secure|Oui|Oui|Oui|Oui|Oui|Oui|
 |Cisco (IPSec)|Non|Oui|Non|Non|Non|Non|
-|Citrix|Oui (Android uniquement)|Oui|Non|Non|Non|Non|
+|Citrix|Oui|Oui|Non|Non|Non|Oui|
 |Client F5 Microsoft Edge|Oui|Oui|Oui|Oui|Oui|Oui|
 |Dell SonicWALL Mobile Connect|Oui|Oui|Oui|Oui|Oui|Oui|
 |Check Point Capsule VPN|Oui|Oui|Oui|Oui|Oui|Oui|
