@@ -2,10 +2,10 @@
 title: "Présentation de la planification et de la conception d’Intune"
 description: "Cet article est une introduction à toutes les sections de planification, de conception et d'implémentation d’Intune. Des outils pour vous aider à déterminer les objectifs, les scénarios d’utilisation et les exigences, à créer des plans de déploiement, de communication, de prise en charge, de test et de validation."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/14/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ceee7a766fa8f60b91d3a84b6577223e1bfd652e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 754c38a33fa6e08a6022c726f6e1eb8088b82e94
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guide de planification, de conception et d'implémentation du déploiement d’Intune
 
