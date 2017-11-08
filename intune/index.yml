@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 10/07/2017
+  ms.date: 10/31/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -64,16 +64,16 @@ sections:
             title: Afficher l’architecture de haut niveau Intune
             image:
               src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: reports-nav-create-intune-reports.md
-            title: Créer des rapports avec l’entrepôt de données Intune (préversion)
+          - href: enrollment-autopilot.md
+            title: Prise en charge du programme de déploiement Windows AutoPilot dans Microsoft Intune
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
-            title: '[Blog] Certificats PFX émis avec Intune Certificate Connector'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/'
+            title: '[Blog] Améliorations de la sécurité dans le service Intune '
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
-            title: '[Blog] Configuration de la communication entre les applications gérées par MAM et MDM'
+          - href: 'https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/'
+            title: '[Blog] Le dépannage du portail facilite le diagnostic et la résolution des problèmes des utilisateurs finaux'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: Vidéos
