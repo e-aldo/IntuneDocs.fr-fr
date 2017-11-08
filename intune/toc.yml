@@ -610,6 +610,8 @@
               href: reports-ref-date.md
             - name: Référence pour les entités d’appareils
               href: reports-ref-devices.md
+            - name: Informations de référence sur l’extension de la gestion Intune
+              href: reports-ref-intunemanagementextension.md
             - name: Informations de référence sur les entités de gestion des applications mobiles (GAM)
               href: reports-ref-mobile-app-management.md
             - name: Informations de référence sur les entités de stratégie
