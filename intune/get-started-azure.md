@@ -1,12 +1,12 @@
 ---
 title: "Bien démarrer avec le portail Azure"
 titlesuffix: Azure portal
-description: "Découvrez plus d’informations sur la création et le partage de tableaux de bord dans Intune dans le portail Azure."
+description: "Découvrez plus d’informations sur la création et le partage de tableaux de bord pour Intune dans le portail Azure."
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Bien démarrer avec Intune dans le portail Azure
 
@@ -27,7 +27,7 @@ Le portail Azure est l’endroit où se trouve le service Intune. Il existe un g
 
 ## <a name="changing-the-sidebar"></a>Modification de la barre latérale
 
-La __barre latérale__ à gauche du portail Azure affiche une liste de tous les services Azure disponibles. L’affichage par défaut de cette liste complète peut être modifié pour que vous puissiez conserver un affichage persistant des services qui vous intéressent le plus. Nous allons utiliser l’exemple d’Intune comme service à ajouter en haut de la liste.
+La __barre latérale__ à gauche du portail Azure affiche une liste de tous les services Azure disponibles. L’affichage par défaut de cette liste complète peut être changé pour que vous puissiez conserver un affichage persistant des services qui vous intéressent le plus. Nous allons utiliser l’exemple d’Intune comme service à ajouter en haut de la liste.
 
 ![Utilisateur recherchant Intune dans la liste « Autres services ».](./media/azure-add-intune1.png)
 
@@ -52,7 +52,7 @@ Cette opération est plus pertinente une fois que vous avez ajouté davantage de
 
 ## <a name="using-services"></a>Utilisation des services
 
-Chaque fois que vous ouvrez Intune ou un autre service dans Azure, il s’affiche dans un **panneau**. Certaines des premières charges de travail que vous utilisez dans Intune, comme **Utilisateurs**, **Groupes** et **Applications mobiles**, apparaissent dans un panneau en plein écran. Quand vous sélectionnez la charge de travail, ce panneau s’ouvre dans la page entière. D’autres panneaux s’ouvrent en glissant à partir de la droite et sont réduits sous le panneau principal d’où ils proviennent.
+Chaque fois que vous ouvrez Intune ou un autre service dans Azure, le service s’affiche dans un **panneau**. Certaines des premières charges de travail que vous utilisez dans Intune, comme **Utilisateurs**, **Groupes** et **Applications mobiles**, apparaissent dans un panneau en plein écran. Quand vous sélectionnez la charge de travail, ce panneau s’ouvre dans la page entière. D’autres panneaux s’ouvrent en glissant à partir de la droite et sont réduits sous le panneau principal d’où ils proviennent.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

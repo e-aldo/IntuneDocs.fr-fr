@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4c2b865a7101a7486ecf9c9badbfb69d9efbeab
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6de18a341f684730c74aa824c0ae8f7bdca1a4f8
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils Windows 10 dans Microsoft Intune
 
@@ -41,14 +41,16 @@ Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-d
     - **Exporter** : exporte la liste des serveurs dans un fichier de valeurs séparées par des virgules (csv).
 
 **Type de connexion** : sélectionnez le type de connexion VPN à partir de la liste de fournisseurs suivante :
-- **Pulse Secure**
-- **Client F5 Edge**
-- **Dell SonicWALL Mobile Connect**
-- **Check Point Capsule VPN**
 - **Automatique**
+- **Check Point Capsule VPN**
+- **Citrix VPN** (VPN Citrix)
+- **Dell SonicWALL Mobile Connect**
+- **Client F5 Edge**
 - **IKEv2**
 - **L2TP**
 - **PPTP**
+- **Pulse Secure**
+
 
 **Groupe de connexion ou domaine** (Dell SonicWALL Mobile Connect uniquement) : spécifiez le nom du groupe de connexion ou domaine auquel vous souhaitez vous connecter.
 

@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Réaffecter les stratégies d’accès conditionnel à partir du portail classique Intune vers le portail Azure
 
@@ -82,7 +82,7 @@ Le panneau **Intune App Protection** dans le portail Azure permet aux administra
     ![Comparaison de l’interface utilisateur des groupes d’utilisateurs entre les portails Intune et Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > La sélection que vous effectuez pour le portail Azure doit correspondre à celle que vous avez effectuée pour le portail Azure. Par exemple, si tous les utilisateurs sont sélectionnés dans le portail classique Intune, sélectionnez **Tous les utilisateurs** dans le portail Azure. En outre, si vous avez choisi l’option **Groupes exempts** dans le portail classique Intune, excluez aussi ces groupes sélectionnés dans le portail Azure.
+    > La sélection que vous effectuez pour le portail Azure doit correspondre à celle que vous avez effectuée pour le portail Classic. Par exemple, si tous les utilisateurs sont sélectionnés dans le portail classique Intune, sélectionnez **Tous les utilisateurs** dans le portail Azure. En outre, si vous avez choisi l’option **Groupes exempts** dans le portail classique Intune, excluez aussi ces groupes sélectionnés dans le portail Azure.
 
 5. Après avoir choisi votre groupe, cliquez sur **Sélectionner**, puis sur **Terminé**.
 
@@ -139,7 +139,7 @@ Le panneau **Intune App Protection** dans le portail Azure permet aux administra
 
 Si vous avez configuré les paramètres EAS (Exchange Active Sync) dans le cadre d’une stratégie Exchange Online dans le portail classique Intune, vous devez créer une deuxième stratégie d’accès conditionnel dans le portail Azure.
 
-1. Accédez à [Conditional access in the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) (Accès conditionnel dans le portail Azure) et connectez-vous avec vos informations d’identification.
+1. Accédez à [Accès conditionnel dans le portail Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) et connectez-vous avec vos informations d’identification.
 
 2. Choisissez **Nouvelle stratégie**.
 

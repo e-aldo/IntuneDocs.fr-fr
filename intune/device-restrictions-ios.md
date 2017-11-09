@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils iOS dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Général
-    
+
 -   **Envoi des données de diagnostic** : autoriser ou bloquer l’envoi de données de diagnostic à Apple depuis l’appareil.
 -   **Capture d'écran** : permet à l’utilisateur de capturer le contenu de l’écran en tant qu’image.
     - **Observation des écrans à distance par l’application En classe (mode supervisé uniquement)** : autoriser ou bloquer l’affichage par l’application En classe d’Apple de l’écran des appareils iOS.
@@ -44,6 +44,54 @@ Cette restriction s’applique également aux options accessibles à partir des 
 - **Modifications au profil de configuration** : autoriser l’utilisateur à installer des profils de configuration.
 - **Verrou d’activation (mode supervisé uniquement)** : active le verrou d’activation sur les appareils iOS supervisés.
 
+## <a name="configurations-requiring-supervision"></a>Configurations nécessitant une supervision
+
+Vous pouvez activer le mode supervisé iOS seulement pendant l’installation initiale de l’appareil par le biais du programme DEP d’Apple ou d’Apple Configurator. Une fois le mode supervisé activé, Intune peut configurer un appareil avec les fonctionnalités suivantes :
+
+- Verrouillage d’application (Mode Application unique) 
+- Proxy HTTP global 
+- Ignorer le verrouillage d’activation 
+- Mode Application unique autonome 
+- Filtrage de contenu web 
+- Définition de l’écran d’arrière-plan et de verrouillage 
+- Envoi (push) d’application en mode silencieux 
+- VPN AlwaysOn 
+- Autoriser l’installation d’applications gérées exclusivement 
+- iBookstore 
+- iMessages 
+- Centre de jeux 
+- AirDrop 
+- AirPlay 
+- Appairage d’hôtes 
+- Synchronisation cloud 
+- Recherche Spotlight 
+- Handoff 
+- Effacer l’appareil 
+- Interface utilisateur - Restrictions 
+- Installation de profils de configuration par l’interface utilisateur 
+- Actualités 
+- Raccourcis clavier 
+- Modifications du code secret 
+- Changements du nom de l’appareil 
+- Changements de papier peint 
+- Téléchargements automatiques d’applications 
+- Changements apportés à l’approbation d’applications d’entreprise 
+- Apple Music 
+- Mail Drop 
+- Appairage avec Apple Watch 
+
+> [!NOTE]
+> Apple a confirmé que certains paramètres passeront en mode supervisé uniquement en 2018. Nous recommandons de prendre ceci en considération lors de l’utilisation de ces paramètres, au lieu d’attendre qu’Apple les migre en mode supervisé uniquement :
+> - Installation de l’application par les utilisateurs finaux
+> - Suppression d’applications
+> - FaceTime
+> - Safari
+> - iTunes
+> - Contenu explicite
+> - Documents et données iCloud
+> - Jeux multijoueur
+> - Ajouter des amis du centre de jeux
+
 ## <a name="password"></a>Mot de passe
 -   **Mot de passe** - Demande à l’utilisateur final d’entrer un mot de passe pour accéder à l’appareil.
     -   **Mots de passe simples** : autorise des mots de passe simples, comme 0000 et 1234.
@@ -56,7 +104,7 @@ Cette restriction s’applique également aux options accessibles à partir des 
     -   **Expiration du mot de passe (jours)** : spécifie le nombre de jours avant que l’utilisateur ne doive modifier le mot de passe de l’appareil.
     -   **Empêcher la réutilisation des mots de passe précédents** : spécifiez le nombre de mots de passe précédemment utilisés conservés par l’appareil.
     -   **Déverrouillage par empreinte digitale** : autorisez l’utilisation d’une empreinte digitale pour déverrouiller les appareils compatibles.
-- **Modification du code secret (mode supervisé uniquement)** : empêche la modification, l’ajout ou la suppression du code secret. 
+- **Modification du code secret (mode supervisé uniquement)** : empêche la modification, l’ajout ou la suppression du code secret.
     - **Modification de l’empreinte digitale (mode supervisé uniquement)** : empêche la modification, l’ajout ou la suppression par l’utilisateur des paramètres Touch ID.
 
 <sup>1</sup> Lorsque vous configurez les paramètres **Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil** et **Nombre maximal de minutes entre le verrouillage de l'écran et la demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
@@ -89,7 +137,7 @@ Cette restriction s’applique également aux options accessibles à partir des 
 
 ## <a name="built-in-apps"></a>Applications intégrées
 
--   **Appareil photo** : spécifie si l’appareil photo de l’appareil peut être utilisé. 
+-   **Appareil photo** : spécifie si l’appareil photo de l’appareil peut être utilisé.
     -   **FaceTime** : autorisez l’utilisation de l’application FaceTime.
 -   **Siri** : autoriser l’utilisation de l’assistant vocal Siri sur l’appareil.
     -   **Siri quand l'appareil est verrouillé** : autoriser l’utilisation de l’assistant vocal Siri sur l’appareil lorsqu’il est verrouillé.
@@ -124,9 +172,7 @@ Les profils d’appareil qui contiennent des paramètres d’applications restre
 Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est la suivante : https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
-> Vous pouvez également utiliser le logiciel iTunes pour rechercher l'application, puis la commande **Copier le lien** pour obtenir l'URL de l'application.
-
-
+> Vous pouvez également utiliser iTunes pour rechercher l’application, puis la commande **Copier le lien** pour obtenir l’URL de l’application.
 
 ### <a name="additional-options"></a>Options supplémentaires
 
@@ -247,7 +293,7 @@ Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ Dans le champ **URL de domaine d’e-mail**, ajoutez une ou plusieurs URL à la 
 Dans le champ **URL de domaine web**, ajoutez une ou plusieurs URL à la liste. Les documents téléchargés à partir des domaines que vous spécifiez sont considérés comme gérés. Ce paramètre s’applique uniquement aux documents téléchargés à l’aide du navigateur Safari.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Domaines de remplissage automatique des mots de passe Safari
+### <a name="safari-password-autofill-domains"></a>Domaines de remplissage automatique des mots de passe Safari
 
 Dans le champ **URL de domaine**, ajoutez une ou plusieurs URL à la liste. Les utilisateurs peuvent uniquement enregistrer les mots de passe web à partir des URL de cette liste. Ce paramètre s’applique uniquement au navigateur Safari et aux appareils iOS 9.3 et versions ultérieures en mode supervisé. Si vous ne spécifiez aucune URL, les mots de passe peuvent être enregistrés à partir de tous les sites web.

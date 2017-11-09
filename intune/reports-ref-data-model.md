@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modèle de données de l’entrepôt de données
 
@@ -38,14 +38,10 @@ L’entrepôt de données expose les données dans les catégories principales s
 
 Les jeux d’entités sont des collections nommées d’entités dans le modèle de données. Ces jeux contiennent des entités qui définissent les données collectées dans le modèle. Chaque jeu d’entités fournit un point d’accès au modèle de données de l’entrepôt de données. Pour plus d’informations, cliquez sur les catégories d’entités suivantes :
 
-  -  [Date](reports-ref-date.md)
-  -  [Utilisateur](reports-ref-user.md)
-  -  [Gestion des applications mobiles (MAM)](reports-ref-mobile-app-management.md)
-  -  [Appareils](reports-ref-devices.md)
   -  [Application](reports-ref-application.md)
+  -  [Date](reports-ref-date.md)
+  -  [Appareils](reports-ref-devices.md)
   -  [Stratégie](reports-ref-policy.md)
-  -  [Association appareil-utilisateur](reports-ref-userdeviceassociations.md)
-
-<!-- ## Data Model relationships
-
-For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
+  -  [Gestion des applications mobiles (GAM)](reports-ref-mobile-app-management.md)
+  -  [Utilisateur](reports-ref-user.md)
+  -  [Associations appareil-utilisateur](reports-ref-user-device.md)
