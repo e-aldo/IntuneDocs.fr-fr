@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3defec3624944918d14b9c4527487c368c487dd6
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0446db40b829e92b681294ecc497a2c475480fac
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Réinitialiser le code d’accès sur les appareils gérés par Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-L’action **Réinitialiser le code secret** génère un nouveau code pour l’appareil qui est affiché dans le panneau <*Nom de l’appareil*> **Vue d’ensemble**.
+L’action **Supprimer le code secret** génère un nouveau code pour l’appareil qui est affiché dans le panneau <*Nom de l’appareil*> **Vue d’ensemble**.
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge
 
@@ -41,7 +41,7 @@ L’action **Réinitialiser le code secret** génère un nouveau code pour l’a
 2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
 4. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
-5. Dans la liste des appareils que vous gérez, choisissez un appareil, puis choisissez l’action à distance d’appareil **Réinitialiser le code d’accès**.
+5. Dans la liste des appareils que vous gérez, choisissez un appareil, puis choisissez l’action à distance d’appareil **Supprimer le code secret**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

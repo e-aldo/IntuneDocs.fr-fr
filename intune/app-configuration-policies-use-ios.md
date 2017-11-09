@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique d’utilisation des stratégies de configuration d’application Intune pour iOS"
+title: "Ajouter des stratégies de configuration d’applications pour les appareils iOS gérés | Microsoft Docs"
 titlesuffix: Azure portal
-description: "Apprenez à utiliser les stratégies de configuration d’application pour fournir des données de configuration à une application iOS lorsqu’elle est exécutée."
+description: "Apprenez à utiliser les stratégies de configuration d’applications pour fournir des données de configuration à une application iOS quand elle est exécutée."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,31 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc42f3cafa83b5f7ba053d03dbd066b725bb1fee
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
-# <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour iOS
+# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Ajouter des stratégies de configuration d’applications pour les appareils iOS gérés | Microsoft Docs
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Utilisez des stratégies de configuration des applications dans Microsoft Intune pour fournir les paramètres nécessaires quand les utilisateurs exécutent une application iOS. Par exemple, une application peut exiger que les utilisateurs spécifient les paramètres suivants :
-
--   Un numéro de port personnalisé.
-
--   Des paramètres de langue.
-
--   Des paramètres de sécurité.
-
--   Des paramètres de personnalisation comme le logo de l’entreprise.
-
-Si les utilisateurs n’entrent pas correctement ces paramètres, cela peut occasionner plus de travail à votre assistance technique et ralentir l’adoption des nouvelles applications.
-
-Les stratégies de configuration des applications peuvent vous aider à éliminer ces problèmes en vous permettant d’affecter ces paramètres dans une stratégie avant que les utilisateurs exécutent l’application. Les paramètres sont alors fournis automatiquement, les utilisateurs n’ont aucune action à effectuer. Les applications doivent avoir été écrites pour prendre en charge l’utilisation des configurations d’application. Pour plus d’informations, consultez l’éditeur de l’application.
-
-Vous n’affectez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt une stratégie à une application que vous affectez ensuite. Les paramètres de stratégie sont utilisés chaque fois que l’application les vérifie (en général, lors de sa première exécution).
+Utilisez des stratégies de configuration d’applications dans Microsoft Intune pour fournir des paramètres quand les utilisateurs exécutent une application iOS. Vous n’affectez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt une stratégie à une application que vous affectez ensuite. Les paramètres de stratégie sont utilisés quand l’application les vérifie, en général, à sa première exécution.
 
 > [!TIP]
 > Ce type de stratégie est disponible uniquement pour les appareils exécutant iOS 8.0 ou version ultérieure. Elle prend en charge les types d’installation d’application suivants :
@@ -49,68 +35,56 @@ Vous n’affectez pas ces stratégies directement sur les appareils et utilisate
 >
 > Pour plus d’informations sur les types d’installation d’application, consultez [Guide pratique pour ajouter une application à Microsoft Intune](apps-add.md).
 
-## <a name="create-an-app-configuration-policy"></a>Créer une stratégie de configuration des applications
-1.  Connectez-vous au portail Azure.
-2.  Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3.  Dans le panneau **Intune**, choisissez **Applications mobiles**.
-4.  Dans la charge de travail **Applications mobiles**, choisissez **gérer** > **Stratégies de configuration d’application**.
-5.  Dans le panneau de liste de stratégies, choisissez **Ajouter**.
-6.  Dans le panneau **Ajouter une stratégie de configuration**, indiquez un **nom** et éventuellement une **description** pour la stratégie de configuration d’application.
-7.  Pour **Type d'inscription de l'appareil**, choisissez parmi :
-    - **Inscrit dans Intune** : pour les applications gérées par Intune.
-    - **Non inscrit dans Intune** : pour les applications qui ne sont pas gérées par Intune ou qui sont gérées par une autre solution.
-8.  Pour **Plateforme**, choisissez **iOS** (pour les appareils inscrits dans Intune uniquement)
-9.  Choisissez **Application associée**, puis, dans le panneau **Application associée**, choisissez l’application gérée pour laquelle vous souhaitez appliquer la configuration.
-10. Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**
-11. Dans le panneau **Paramètres de configuration**, choisissez la façon dont vous souhaitez spécifier les valeurs XML qui composent le profil de configuration à partir de :
-    - **Entrer des données XML** (pour les appareils inscrits dans Intune uniquement) : entrez ou collez une liste de propriétés XML contenant les paramètres de configuration d’application souhaités. Le format de la liste de propriétés XML varie en fonction de l’application que vous configurez. Pour plus d’informations sur le format exact à utiliser, contactez le fournisseur de l’application.
-Intune vérifie que le format du XML entré est valide. Il ne vérifie pas que la liste de propriétés XML fonctionne avec l’application à laquelle elle est associée.
-Pour en savoir plus sur les listes de propriétés XML, consultez [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) sur le site iOS Developer Library.
-    - **Utiliser le concepteur de configuration** (que l’appareil soit inscrit ou non dans Intune) : vous permet de spécifier les paires clé / valeur XML directement dans le portail.
-11. Lorsque vous avez terminé, revenez au panneau **Ajouter une stratégie de configuration** et appuyez sur **Créer**.
+## <a name="create-an-app-configuration-policy"></a>Créer une stratégie de configuration d’application
 
-La stratégie est créée et s’affiche dans le panneau de liste des stratégies.
+1. Connectez-vous au portail Azure.
+2. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
+3. Choisissez la charge de travail **Applications mobiles**.
+4. Cliquez sur **Stratégies de configuration des applications** dans le groupe **Gérer**, puis cliquez sur **Ajouter**.
+5. Définissez les détails suivants :
+    - **Nom**  
+      Nom du profil qui s’affiche dans le portail Azure.
+    - **Description**  
+      Description du profil qui s’affiche dans le portail Azure.
+    - **Type d’inscription de l’appareil**  
+      Choisissez **Appareils gérés**.
+6. Sélectionnez **iOS** pour la **Plateforme**.
+7.  Choisissez **Application associée**, puis, dans le panneau **Application associée**, choisissez l’application gérée pour laquelle vous souhaitez appliquer la configuration.
+8.  Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**
+9. Sélectionnez **Format des paramètres de configuration**. Choisissez une des options suivantes :
+    - **[Utiliser le concepteur de configuration](#Use-the-configuration-designer)**
+    - **[Entrer des données XML](#enter-xml-data)**
+10. Cliquez sur **OK**, puis sur **Ajouter**.
 
+## <a name="use-configuration-designer"></a>Utiliser le concepteur de configuration
 
+Vous pouvez utiliser le concepteur de configuration pour les applications sur les appareils qui sont inscrits ou non inscrits dans Intune. Le concepteur vous permet de configurer des valeurs et des clés de configuration spécifiques. Vous devez également spécifier le type de données pour chaque valeur. Les paramètres sont automatiquement fournis aux applications lors de leur installation.
 
->[!Note]
->Vous pouvez utiliser le [Kit de développement logiciel (SDK) d’application Intune](https://docs.microsoft.com/intune/app-sdk-ios) pour préparer les applications métier qui seront gérées par les stratégies de protection des applications Intune et les stratégies de configuration d’applications, que l’appareil soit inscrit ou non dans Intune. Par exemple, vous pouvez utiliser une stratégie de configuration d’applications afin de configurer les URL autorisées et bloquées pour [Intune Managed Browser](app-configuration-managed-browser.md). Une fois qu’une application est compatible avec ces stratégies, vous pouvez la configurer à l’aide d’une stratégie.
+### <a name="add-a-setting"></a>Ajouter un paramètre
 
+1. Pour chaque clé et valeur de la configuration, définissez les éléments suivants : <ul><li>**Clé de configuration**<br>La clé permet d’identifier de façon unique la configuration des paramètres spécifiques.</li><li>**Type de valeur**<br>Type de données de la valeur de configuration. Les types incluent Integer, Real, String ou Boolean.</li><li>**Valeur de configuration**<br>Valeur de la configuration.</li></ul>
+2. Cliquez sur **OK** pour définir vos paramètres de configuration.
 
-Quand l’application affectée est exécutée sur un appareil, elle s’exécute avec les paramètres que vous avez configurés dans la stratégie de configuration des applications.
-Consultez la documentation de l’application que vous configurez pour plus d’informations sur ce qui se passe si une ou plusieurs stratégies de configuration d’applications sont en conflit.
+### <a name="delete-a-setting"></a>Supprimer un paramètre
 
->[!Tip]
->En outre, vous pouvez utiliser l’API Graph pour accomplir ces tâches. Pour plus d’informations, consultez [Configuration ciblée de gestion des applications mobiles de référence pour API Graph](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
-
-
-## <a name="information-about-the-xml-file-format"></a>Informations sur le format de fichier XML
-
-Intune prend en charge les types de données suivants dans une liste de propriétés :
-
-- &lt;integer&gt;
-- &lt;real&gt;
-- &lt;string&gt;
-- &lt;array&gt;
-- &lt;dict&gt;
-- &lt;true /&gt; ou &lt;false /&gt;
-
-Pour plus d’informations sur les types de données, consultez l’article sur les [listes de propriétés](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) sur le site iOS Developer Library.
-
-De plus, Intune prend en charge les types de jetons suivants dans la liste de propriétés :
-- \{\{userprincipalname\}\} - (Exemple : **John@contoso.com**)
-- \{\{mail\}\} - (Exemple : **John@contoso.com**)
-- \{\{partialupn\}\} - (Exemple : **John**)
-- \{\{accountid\}\} - (Exemple : **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (Exemple : **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (Exemple : **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (Exemple : **John Doe**)
-- \{\{serialnumber\}\} - (Exemple : **F4KN99ZUG5V2**) pour les appareils iOS
-- \{\{serialnumberlast4digits\}\} - (Exemple : **G5V2**) pour les appareils iOS
+1. Cliquez sur les points de suspension (...) en regard du paramètre.
+2. Sélectionnez **Supprimer**.
 
 Les caractères \{\{ et \}\} sont utilisés uniquement par les types de jetons. Ils ne doivent pas être utilisés à d’autres fins.
 
-## <a name="example-format-for-an-app-configuration-xml-file"></a>Exemple de format de fichier XML de configuration d’application
+## <a name="enter-xml-data"></a>Entrer des données XML
+
+Vous pouvez taper ou coller une liste de propriétés XML contenant les paramètres de configuration d’application pour les appareils inscrits dans Intune. Le format de la liste de propriétés XML varie en fonction de l’application que vous configurez. Pour plus d’informations sur le format exact à utiliser, contactez le fournisseur de l’application.
+
+Intune valide le format XML. Toutefois, il ne vérifie pas que la liste de propriétés XML fonctionne avec l’application cible.
+Pour en savoir plus sur les listes de propriétés XML, consultez Présentation des listes de propriétés XML.
+
+Pour en savoir plus sur les listes de propriétés XML :
+
+  -  Consultez [Configurer des applications iOS avec des stratégies de configuration d’applications mobiles dans Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+  -  Reportez-vous à [Understand XML Plist](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Comprendre les Plist XML) sur le site iOS Developer Library.
+
+### <a name="example-format-for-an-app-configuration-xml-file"></a>Exemple de format de fichier XML de configuration d’application
 
 Quand vous créez un fichier de configuration d’application, vous pouvez spécifier une ou plusieurs des valeurs suivantes à l’aide de ce format :
 
@@ -137,8 +111,30 @@ Quand vous créez un fichier de configuration d’application, vous pouvez spéc
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
+### <a name="supported-xml-plist-data-types"></a>Types de données PList XML pris en charge
+
+Intune prend en charge les types de données suivants dans une liste de propriétés :
+
+- &lt;integer&gt;
+- &lt;real&gt;
+- &lt;string&gt;
+- &lt;array&gt;
+- &lt;dict&gt;
+- &lt;true /&gt; ou &lt;false /&gt;
+
+### <a name="tokens-used-in-the-property-list"></a>Jetons utilisés dans la liste des propriétés
+
+De plus, Intune prend en charge les types de jetons suivants dans la liste de propriétés :
+- \{\{userprincipalname\}\} - (Exemple : **John@contoso.com**)
+- \{\{mail\}\} - (Exemple : **John@contoso.com**)
+- \{\{partialupn\}\} - (Exemple : **John**)
+- \{\{accountid\}\} - (Exemple : **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
+- \{\{deviceid\}\} - (Exemple : **b9841cd9-9843-405f-be28-b2265c59ef97**)
+- \{\{userid\}\} - (Exemple : **3ec2c00f-b125-4519-acf0-302ac3761822**)
+- \{\{username\}\} - (Exemple : **John Doe**)
+- \{\{serialnumber\}\} - (Exemple : **F4KN99ZUG5V2**) pour les appareils iOS
+- \{\{serialnumberlast4digits\}\} - (Exemple : **G5V2**) pour les appareils iOS
 
 ## <a name="next-steps"></a>Étapes suivantes
 

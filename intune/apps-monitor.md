@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Guide pratique pour surveiller les affectations et les informations d’applications avec Microsoft Intune
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 Intune propose plusieurs façons de surveiller les propriétés des applications que vous gérez, ainsi que leur état d’affectation.
 
-1. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
-2. Dans le panneau de liste d’applications, choisissez l’application pour laquelle vous souhaitez voir les informations. Vous verrez alors le panneau <*nom_application*> **État de l’installation de l’appareil** : ![Panneau État de l’installation de l’application.](./media/monitor-apps.png)
+1. Connectez-vous au portail Azure.
+2. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
+3. Dans la charge de travail **Applications mobiles**, choisissez **Applications** dans le groupe **Gérer**.
+     
+    ![Panneau d’état de l’installation de l’application.](./media/monitor-apps.png)
+5. Dans le panneau de la liste des applications, choisissez une application. Vous verrez alors le panneau <*nom_application*> **État de l’installation de l’appareil**.
+
+Le rapport sur l’état de l’installation de l’appareil contient les colonnes suivantes :
+
+1.  **Nom de l’appareil** Nom du type d’appareil.
+2.  **Nom d’utilisateur** Nom de l’utilisateur.
+3.   **Plateforme** Système d’exploitation installé sur l’appareil.
+4.  **Version** Numéro de version de l’application.
+5.   **État** Les états possibles des applications sont : **Installé**, **Non installé**, **Installation en attente** et **Erreur**.
+6. **Détails du statut** Description explicite du statut de l’application sur l’appareil.
+7. **Dernier archivage** Date du dernier archivage de l’appareil dans Intune.
 
 Effectuez ensuite l’une des actions suivantes pour en savoir plus sur vos applications et leurs affectations.
 

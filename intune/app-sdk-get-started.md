@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Prise en main du Kit de développement logiciel (SDK) d’applications Microsoft Intune
 
@@ -64,7 +64,7 @@ Si le lien ciblé de votre application vient à changer, vous devrez réinscrire
 
 ## <a name="download-the-sdk-files"></a>Télécharger les fichiers du SDK
 
-Les SDK d’application Intune pour iOS et Android natifs sont hébergés sur un compte Microsoft GitHub. Ces référentiels publics contiennent les fichiers du SDK pour iOS et Android en mode natif, respectivement :
+Les SDK d’application Intune pour iOS et Android natifs sont hébergés sur un compte Microsoft GitHub. Ces dépôts publics contiennent les fichiers du SDK pour iOS et Android en mode natif, respectivement :
 
 * [SDK d’application Intune pour iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK d’application Intune pour Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
@@ -74,7 +74,7 @@ Si votre application est une application Xamarin ou Cordova, utilisez les varian
 * [Composant Xamarin du SDK d’application Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Plug-in Cordova du SDK d’application Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
-Nous vous recommandons de créer un compte GitHub que vous pouvez utiliser pour créer des copies et faire des extractions depuis nos référentiels. GitHub permet aux développeurs de communiquer avec notre équipe produit, de faire part de problèmes et de recevoir des réponses rapides, de consulter les notes de publication et de fournir des commentaires à Microsoft. Pour toute question sur Intune App SDK GitHub, contactez msintuneappsdk@microsoft.com.
+Nous vous recommandons de créer un compte GitHub que vous pouvez utiliser pour créer des copies et faire des extractions depuis nos dépôts. GitHub permet aux développeurs de communiquer avec notre équipe produit, de faire part de problèmes et de recevoir des réponses rapides, de consulter les notes de publication et de fournir des commentaires à Microsoft. Pour toute question sur Intune App SDK GitHub, contactez msintuneappsdk@microsoft.com.
 
 
 
@@ -84,9 +84,9 @@ Nous vous recommandons de créer un compte GitHub que vous pouvez utiliser pour 
 
 Vous aurez besoin d'un des guides de développement suivants pour intégrer le SDK d’application Intune à votre application :
 
-* **[Guide du Kit de développement logiciel (SDK) d’applications Intune pour les développeurs iOS](app-sdk-ios.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application iOS native avec le SDK d’application Intune.
+* **[Guide du kit SDK d’applications Intune pour les développeurs iOS](app-sdk-ios.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application iOS native avec le SDK d’application Intune.
 
-* **[Guide du Kit de développement logiciel (SDK) d’applications Intune pour les développeurs Android](app-sdk-android.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application Android native avec le SDK d’application Intune.
+* **[Guide du kit SDK d’applications Intune pour les développeurs Android](app-sdk-android.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application Android native avec le SDK d’application Intune.
 
 * **[Guide du plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md)** : ce document vous aide à générer des applications iOS et Android avec Cordova pour les stratégies de protection des applications Intune.
 
@@ -113,8 +113,50 @@ Microsoft Intune collecte des données sur les statistiques d’utilisation pour
 
     * Si vous choisissez de ne pas envoyer les données de télémétrie du SDK à Microsoft Intune à partir de votre application, vous devez désactiver la transmission de la télémétrie du SDK en définissant la propriété `MAMTelemetryDisabled` sur « YES » dans le dictionnaire IntuneMAMSettings.
 
-
 * **SDK d’application Intune pour Android** : les données de télémétrie ne sont pas enregistrées via le SDK.
+
+ Le numéro de version des applications métier iOS et Android est visible <!-- 1380712 -->
+
+## <a name="line-of-business-app-version-numbers"></a>Numéros de version des applications métier
+
+Les applications métier dans Intune affichent désormais le numéro de version des applications Android et iOS. Le numéro s’affiche dans le portail Azure, dans la liste des applications et dans le panneau de vue d’ensemble des applications. Les utilisateurs finaux peuvent voir le numéro d’application dans l’application Portail d’entreprise et dans le portail web.
+
+### <a name="full-version-number"></a>Numéro de version complet
+
+Le numéro de version complet identifie une version spécifique de l’application. Le numéro apparaît sous la forme _Version_(_Build_). Par exemple, 2.2(2.2.17560800)
+
+Le numéro de version complet est composé de deux éléments :
+
+ - **Version**  
+   Le numéro de version est le numéro de version explicite de l’application. Il est utilisé par les utilisateurs finaux pour identifier les différentes versions de l’application.
+
+ - **Numéro de build**  
+    Le numéro de build est un numéro interne qui peut être utilisé pour la détection de l’application et pour gérer l’application par programmation. Le numéro de build fait référence à une itération de l’application qui référence les changements apportés au code.
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Numéro de version et de build dans Android et iOS
+
+Android et iOS utilisent des numéros de version et de build en référence aux applications. Toutefois, les deux systèmes d’exploitation utilisent des significations qui leur sont propres. Le tableau suivant compare ces termes.
+
+Quand vous développez une application métier pour une utilisation dans Intune, pensez à utiliser les numéros de version et de build. Les fonctionnalités de gestion d’une application Intune s’appuient sur des numéros **CFBundleVersion** (pour iOS) et **PackageVersionCode** (pour Android) significatifs. Ces numéros sont inclus dans le manifeste d’application. 
+
+Intune|iOS|Android|Description|
+|---|---|---|---|
+Numéro de version|CFBundleShortVersionString|PackageVersionName |Ce numéro indique une version spécifique de l’application pour les utilisateurs finaux.|
+Numéro de version|CFBundleVersion|PackageVersionCode |Ce numéro est utilisé pour indiquer une itération dans le code d’application.|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    Spécifie le numéro de version du bundle. Ce numéro identifie une version publiée de l’application. Le numéro est utilisé par les utilisateurs finaux pour référencer l’application.
+ - **CFBundleVersion**  
+    Version de build de l’application, qui identifie une itération du bundle. Le numéro peut identifier une version ou un bundle non publié. Le numéro est utilisé pour la détection de l’application.
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    Numéro de version présenté aux utilisateurs. Cet attribut peut être défini sous forme de chaîne brute ou de référence à une ressource de chaîne. La chaîne n’a d’autre fin que d’être présentée aux utilisateurs.
+ - **PackageVersionCode**  
+    Numéro de version interne. Ce numéro est utilisé uniquement pour déterminer si une version est plus récente qu’une autre, la version la plus récente des deux portant un numéro plus élevé. Il ne s’agit pas de la version. 
 
 ## <a name="next-steps-after-integration"></a>Étapes suivantes après intégration
 
