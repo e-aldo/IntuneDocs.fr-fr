@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Programme de déploiement Windows AutoPilot
               href: enrollment-autopilot.md
+            - name: Écran État de l’inscription
+              href: windows-enrollment-status.md
         - name: Configurer l’inscription Android
           href: android-enroll.md
         - name: Configurer l’inscription iOS
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Configurer les paramètres de protection des informations Windows (WIP)
           href: windows-information-protection-configure.md
+        - name: Gérer les scripts PowerShell
+          href: intune-management-extension.md
         - name: Surveiller les dépenses de télécommunications
           href: telecom-expenses-monitor.md
         - name: Affecter des profils
