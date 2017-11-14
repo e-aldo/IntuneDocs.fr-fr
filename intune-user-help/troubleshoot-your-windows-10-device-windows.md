@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b0891541de125220aa278a4f4ebc0dec0d9a27b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 651df0e6ba3f8b3b2727d3194c8bf5e1a40cffc3
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Résolution de problèmes liés à l’inscription de votre appareil Windows 10
 Si vous avez suivi les étapes présentées dans la rubrique [Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mais que vous ne pouvez pas toujours accéder à vos e-mails et fichiers professionnels ou scolaires, essayez les étapes de dépannage suivantes.
@@ -57,6 +57,6 @@ Si vous avez suivi les étapes ci-dessus mais que vous ne pouvez toujours pas ac
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Étapes de dépannage à suivre si vous voyez « Configurer un compte professionnel ou scolaire »
 
-Si vous voyez un message qui indique __Nous n’avons pas pu découvrir automatiquement un point de terminaison de gestion correspondant au nom d’utilisateur entré. Vérifiez votre nom d’utilisateur et réessayez. Si vous connaissez l’URL de votre point de terminaison de gestion, entrez-la.__, vous devez essayer d’entrer à nouveau vos nom d’utilisateur et mot de passe. Si cela ne fonctionne toujours pas, vous devez vérifier auprès du support technique de votre entreprise le site web que vous devez indiquer dans la zone de texte **Point de terminaison de gestion**. Il s’agit d’un site web qui ressemble probablement à **www.votreentreprise.onmicrosoft.com**. 
+Si vous voyez un message qui indique __Nous n’avons pas pu découvrir automatiquement un point de terminaison de gestion correspondant au nom d’utilisateur entré. Vérifiez votre nom d’utilisateur et réessayez. Si vous connaissez l’URL de votre point de terminaison de gestion, entrez-la.__, vous devez essayer d’entrer à nouveau vos nom d’utilisateur et mot de passe. Si cela ne fonctionne toujours pas, vous devez vérifier auprès du support technique de votre entreprise le site web que vous devez indiquer dans la zone de texte **Point de terminaison de gestion**. Il s’agit d’un site web qui ressemble probablement à **www.votreentreprise.onmicrosoft.com**.
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

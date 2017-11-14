@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 372cc50fb4ac36ec875d84a71f3d3437917a2d1a
-ms.sourcegitcommit: 93c8c7e5abe433e35d88cb3b8d3d1e7216d7fe9b
+ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscription en bloc des appareils Windows
 
@@ -33,7 +33,7 @@ Les utilisateurs d’Azure AD utilisent ces appareils en tant qu’utilisateurs
 L’inscription en bloc des appareils Windows requiert les éléments suivants :
 
 - Appareils exécutant Windows 10 Creator ou version ultérieure
-- [Inscription automatique de Windows](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- [Inscription automatique de Windows](windows-enroll.md#enable-windows-10-automatic-enrollment)
 
 ## <a name="create-a-provisioning-package"></a>Créer un package d’approvisionnement
 
