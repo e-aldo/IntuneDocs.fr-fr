@@ -5,7 +5,7 @@ keywords: "Mac OS X, macOS, OS X"
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,36 +16,50 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b40801633a130ac79b0ae5b4e1669320c70909e2
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrire votre appareil macOS dans Intune avec l’application Portail d’entreprise
 
-[!INCLUDE[macos-preview-1708](./includes/macos-preview-1708.md)]
+L’accès aux applications, aux données et aux ressources de votre organisation vous permet de travailler plus facilement. Votre organisation utilise Intune pour [gérer l’accès à ces ressources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md). De ce fait, vous devez télécharger l’application Portail d’entreprise pour macOS. Les instructions suivantes fonctionnent pour les appareils macOS sur OS X El Capitan 10.11+.
 
-L’accès aux applications, aux données et aux ressources de votre organisation vous permet de travailler plus facilement. Votre organisation utilise Intune pour [gérer l’accès à ces ressources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md). De ce fait, vous devez télécharger l’application Portail d’entreprise pour macOS. Les instructions suivantes fonctionnent pour les appareils macOS sur OS X El Capitan 10.11+.
+> [!NOTE]
+> Vous trouverez des instructions pour l’inscription d’appareils macOS sur des versions plus antérieures de macOS [ici](enroll-your-device-in-intune-macos-legacy.md).
 
-  > [!NOTE]
-  > Si vous voulez inscrire un appareil iOS, tel qu’un iPhone ou un iPad, [suivez plutôt ces instructions](enroll-your-device-in-intune-ios.md).
+1. Sur votre __station d’accueil__, recherchez __Safari__ et ouvrez une nouvelle fenêtre, puis ouvrez le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
 
-1.  Sur votre __écran d’ancrage__, recherchez __Safari__ et accédez à [aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal). 
+2. Connectez-vous au site web du portail d’entreprise avec votre compte professionnel ou scolaire.
 
-2. Téléchargez l’application. Votre Mac vérifie que le téléchargement de **CompanyPortal.dmg** peut être ouvert sans risque. Après l’avoir ouvert à partir de votre dossier **Téléchargements**, faites glisser l’application **Portail d’entreprise** sur le dossier **Applications**.
+[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. Ouvrez votre dossier **Applications** ou **Launchpad**, puis ouvrez **Portail d’entreprise**.
+3. Une fois connecté, cliquez dans le **Menu** en haut à gauche de la page et sélectionnez **Mes appareils**.
 
-4. Votre Mac affiche alors un message indiquant que **« Portail d’entreprise » est une application téléchargée à partir d’Internet. Voulez-vous vraiment l’ouvrir ?** Cliquez sur **Ouvrir**.
+   ![Capture d’écran de la page d’accueil du portail web avec le portail web indiquant qu’aucune application ne peut encore être installée, avec un bouton Mes appareils en dessous.](./media/macOS_enroll_001_landing_page.png)
+
+4. Dans la page __Mes appareils__, une liste d’appareils inscrits ou simplement une bannière s’affiche. Cela dépend si un appareil, macOS ou autre, est déjà inscrit ou non. Pour inscrire un appareil qui n’est pas listé, sélectionnez la bannière qui indique __Si votre appareil est répertorié, appuyez ici pour l’identifier. Vous pouvez aussi appuyer ici pour inscrire votre appareil s’il n’est pas listé__. Si vous n’avez aucun appareil inscrit, la bannière indique **Vous n’avez aucun appareil inscrit. Inscrivez celui-ci en appuyant ici.**
+
+    ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
+
+5. Téléchargez l’application Portail d’entreprise sur votre appareil macOS pour poursuivre l’inscription.
+
+    ![Notification qui invite un utilisateur à télécharger l’application Portail d’entreprise macOS. Cette notification contient le texte mentionné à l’étape, au-dessus d’un bouton intitulé « Télécharger » en bas à droite.](./media/macOS_enroll_IWP_CP_app_notice.png)
+
+6. Votre Mac vérifie que le téléchargement de **CompanyPortal.pkg** peut être ouvert sans risque. Ouvrez le programme d’installation et effectuez le processus d’installation.
+
+7. Quand le programme d’installation a terminé, ouvrez votre dossier **Applications** ou **Launchpad**, puis ouvrez **Portail d’entreprise**.
+
+8. Votre Mac affiche alors un message indiquant que **« Portail d’entreprise » est une application téléchargée à partir d’Internet. Voulez-vous vraiment l’ouvrir ?** Cliquez sur **Ouvrir**.
 
   > [!NOTE]
   > Intune doit avoir accès à votre ordinateur pour vérifier que votre appareil est suffisamment sécurisé pour accéder aux ressources de votre organisation. Si votre ordinateur refuse d’ouvrir l’application Portail d’entreprise, essayez de [désactiver Gatekeeper](https://support.apple.com/HT202491), puis d’ouvrir l’application.
 
-6. Le premier écran qui s’affiche dans l’application Portail d’entreprise vous invite à vous **Connecter** avec le même compte professionnel ou scolaire que celui que vous avez utilisé pour vous connecter au site web Portail d’entreprise.
+9. Le premier écran qui s’affiche dans l’application Portail d’entreprise vous invite à vous **Connecter** avec le même compte professionnel ou scolaire que celui que vous avez utilisé pour vous connecter au site web Portail d’entreprise.
 
-7. Le portail d’entreprise vérifie vos informations de compte, puis vous montre vos états **Inscription de l’appareil** et **Conformité de l’appareil**. Des triangles jaunes vous informent que vous devez effectuer des actions pour vérifier que votre Mac peut être utilisé en toute sécurité au travail. Cliquez sur **Commencer** pour commencer l’[inscription de votre appareil pour la gestion](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+10. Le portail d’entreprise vérifie vos informations de compte, puis vous montre vos états **Inscription de l’appareil** et **Conformité de l’appareil**. Des triangles jaunes vous informent que vous devez effectuer des actions pour vérifier que votre Mac peut être utilisé en toute sécurité au travail. Cliquez sur **Commencer** pour commencer l’[inscription de votre appareil pour la gestion](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-8. Votre Mac commence l’inscription pour la gestion. Vous pouvez être invité à fournir les informations de connexion de votre ordinateur pendant cette opération. L’inscription peut prendre quelques minutes. Pendant ce temps, vous pouvez effectuer d’autres tâches sur votre ordinateur. Un message s’affiche une fois la configuration de l’application Portail d’entreprise terminée pour vous informer que vous avez terminé.
+11. Votre Mac commence l’inscription pour la gestion. Vous pouvez être invité à fournir les informations de connexion de votre ordinateur pendant cette opération. L’inscription peut prendre quelques minutes. Pendant ce temps, vous pouvez effectuer d’autres tâches sur votre ordinateur. Un message s’affiche une fois la configuration de l’application Portail d’entreprise terminée pour vous informer que vous avez terminé.
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
