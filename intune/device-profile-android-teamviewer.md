@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb3061baf42b011c98cf7b196e939448f91cff4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Fournir une assistance à distance pour les appareils gérés par Intune
 
@@ -29,13 +29,10 @@ Intune peut utiliser le logiciel [TeamViewer](https://www.teamviewer.com), vendu
 
 ### <a name="supported-devices"></a>Appareils pris en charge
 
-Les appareils suivants, gérés par Intune, prennent en charge l’administration à distance :
-
-- Appareils Android gérés par Intune
-- Appareils Windows gérés par Intune exécutant Windows 10, Windows 10 Mobile et ultérieur.
+Les appareils Android et Windows gérés par Intune prennent en charge l’administration à distance.
 
 >[!NOTE]
->Windows Holographique (HoloLens), Windows Collaboration (Surface Hub) et Windows 10 S ne sont pas pris en charge par le logiciel TeamViewer
+>Windows Holographique (HoloLens), Windows Collaboration (Surface Hub) et Windows 10 S ne sont pas pris en charge par le logiciel TeamViewer. 
 
 
 

@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Créer un rapport à partir du flux OData avec Power BI
 
@@ -60,16 +60,16 @@ Installez la dernière version de Power BI Desktop. Power BI Desktop est dispo
 
     ![Flux OData](media/reports-create-01-odatafeed.png)
 
-9. Cliquez sur **OK**.
+9. Sélectionnez **OK**.
 10. Sélectionnez **Compte professionnel**, puis connectez-vous avec vos informations d’identification Intune. 
 
     ![Informations d’identification du compte professionnel](media/reports-create-02-org-account.png)
 
-11. Cliquez sur **Connexion**. Le Navigateur s’ouvre et affiche la liste des tables dans l’entrepôt de données Intune. 
+11. Sélectionnez **Connexion**. Le Navigateur s’ouvre et affiche la liste des tables dans l’entrepôt de données Intune. 
 
     ![Navigateur](media/reports-create-02-loadentities.png)
 
-12. Sélectionnez les tables **devices** et **ownerTypes**.  Cliquez sur **Charger**. Power BI charge les données dans le modèle.
+12. Sélectionnez les tables **devices** et **ownerTypes**.  Sélectionnez **Charger**. Power BI charge les données dans le modèle.
 
 ## <a name="create-a-relationship"></a>Créer une relation 
 
@@ -77,8 +77,8 @@ Vous pouvez importer plusieurs tables pour analyser non seulement les données d
 
 ![Gérer les relations](media/reports-create-03-managerelationships.png)
 
-1. Cliquez sur **Gérer les relations**.
-2. Cliquez sur **Détection automatique...** si Power BI n’a pas déjà détecté les relations.  
+1. Sélectionnez **Gérer les relations**.
+2. Sélectionnez **Détection automatique** si Power BI n’a pas encore détecté les relations.  
 La relation est présentée dans une colonne De et une colonne À. Dans cet exemple, le champ de données **ownerTypeKey** dans la table **devices** est lié au champ de données **ownerTypeKey** dans la table **ownerTypes**. Vous utilisez la relation pour rechercher le nom brut du code de type d’appareil dans la table **devices**.
 
 ## <a name="create-a-treemap-visualization"></a>Créer une visualisation treemap
@@ -100,7 +100,7 @@ Vous disposez maintenant d’un visuel qui montre la distribution des fabricants
 
 Pour répondre à des questions supplémentaires à l’aide de votre application, vous pouvez ajouter un filtre à votre treemap. 
 
-1. Cliquez sur le canevas de rapport, puis sur l’**icône Segment** (![Treemap avec des données](media/reports-create-slicer.png)) sous **Visualisations** pour ajouter un filtre.
+1. Sélectionnez le canevas de rapport, puis **l’icône Segment** (![Treemap avec des données](media/reports-create-slicer.png)) sous **Visualisations** pour ajouter un filtre.
 2. Recherchez la table **ownerTypes** et faites glisser le champ de données **ownerTypeName** sous la section **Filtres** dans le panneau **Visualisations**.  
    Sous la table des appareils, recherchez le champ de données **OwnerTypeKey**. Celui-ci contient un code indiquant si l’appareil appartient à l’entreprise ou à un individu. Pour afficher des noms conviviaux dans ce filtre, recherchez la table **ownerTypes** et faites glisser le champ de données **ownerTypeName**. Cet exemple illustre la façon dont le modèle de données prend en charge les relations entre les tables.
 
@@ -108,8 +108,8 @@ Pour répondre à des questions supplémentaires à l’aide de votre applicatio
 
 Vous disposez maintenant d’un filtre interactif qui vous permet de basculer entre les appareils d’entreprise et les appareils personnels pour voir comment la distribution change.
 
-1. Cliquez sur **Entreprise** pour voir la distribution des appareils d’entreprise.
-2. Cliquez sur **Personnel** pour voir les appareils personnels.
+1. Sélectionnez **Entreprise** pour voir la distribution des appareils d’entreprise.
+2. Sélectionnez **Personnel** pour voir les appareils personnels.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

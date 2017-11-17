@@ -608,19 +608,23 @@
         - name: Modèle de données de l’entrepôt de données
           href: reports-ref-data-model.md
           items:
+            - name: Représentation de durée de vie utilisateur dans l’entrepôt de données Intune
+              href: reports-ref-user-timeline.md
             - name: Informations de référence sur les entités d’application
               href: reports-ref-application.md
+            - name: Informations de référence sur l’entité d’utilisateur actuel
+              href: reports-ref-current-user.md
             - name: Informations de référence sur l’entité de date
               href: reports-ref-date.md
             - name: Référence pour les entités d’appareils
               href: reports-ref-devices.md
-            - name: Informations de référence sur l’extension de la gestion Intune
+            - name: Informations de référence sur l’entité d’extension de la gestion Intune
               href: reports-ref-intunemanagementextension.md
             - name: Informations de référence sur les entités de gestion des applications mobiles (GAM)
               href: reports-ref-mobile-app-management.md
             - name: Informations de référence sur les entités de stratégie
               href: reports-ref-policy.md
-            - name: Informations de référence pour Association appareil-utilisateur
+            - name: Informations de référence sur l’entité d’association appareil-utilisateur
               href: reports-ref-user-device.md
             - name: Informations de référence sur l’entité User
               href: reports-ref-user.md

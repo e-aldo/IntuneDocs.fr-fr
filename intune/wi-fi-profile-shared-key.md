@@ -3,10 +3,10 @@ title: "Création d’un profil Wi-Fi avec une clé prépartagée"
 titleSuffix: Azure portal
 description: "Utiliser un profil personnalisé Intune pour créer un profil Wi-Fi avec une clé prépartagée."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utiliser un profil d’appareil personnalisé Microsoft Intune pour créer un profil Wi-Fi avec une clé prépartagée
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utiliser un profil d’appareil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Voici comment utiliser les **Profils d’appareil personnalisés** d’Intune pour créer un profil Wi-Fi avec une clé prépartagée. Cette rubrique comprend également un exemple de création d’un profil Wi-Fi basé sur EAP.
@@ -205,3 +205,12 @@ Vous pouvez également créer un du fichier XML à partir d’une connexion Wi-F
     Il est préférable d’utiliser un ordinateur qui n’est pas connecté à plusieurs réseaux sans fil, car vous devrez effectuer des recherches dans chaque profil pour trouver celui qui convient.
 3.     Recherchez dans les fichiers XML pour trouver celui dont le nom est correct.
 4.     Une fois que vous avez localisé le fichier XML approprié, copiez et collez le code XML dans le champ de données de la page de paramètres OMA-URI.
+
+## <a name="best-practices"></a>Méthodes conseillées
+Avant de déployer un profil Wi-Fi avec une clé prépartagée, vérifiez que l’appareil peut se connecter directement au point de terminaison.
+
+Lors de la rotation des clés (mots de passe ou phrases secrètes), prévoyez du temps d’arrêt et planifiez les déploiements en conséquence. Il est préférable d’envoyer les nouveaux profils Wi-Fi en dehors des horaires de travail. Avertissez également les utilisateurs que la connectivité peut être impactée.
+ 
+Pour garantir une transition en douceur et fournir des mises à jour de stratégie en temps voulu, les appareils doivent conserver au moins un canal de communication ouvert pour Intune. Pour ce faire, utilisez une connexion mobile ou fournissez un accès Wi-Fi invité qui connecte les utilisateurs uniquement aux points de terminaison Intune.
+
+

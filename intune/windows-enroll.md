@@ -1,11 +1,11 @@
 ---
 title: Inscrire des appareils Windows
 titlesuffix: Azure portal
-description: Activez la gestion des appareils mobiles (MDM) pour les appareils Windows.
+description: Activer la gestion des appareils mobiles (MDM) Intune pour les appareils Windows.
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 08/30/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd858d617d9a9f2154a5682f5421a096d0c28224
-ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
+ms.openlocfilehash: 02563b85a6bcac12c60537af4a998b09bca3b6ee
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices"></a>Inscrire des appareils Windows
 
@@ -30,6 +30,7 @@ En tant qu’administrateur Intune, vous pouvez simplifier l’inscription de pl
 - [Activer l’inscription automatique](#enable-windows-10-automatic-enrollment) (Azure AD Premium est nécessaire)
 - [Inscription CNAME](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Activer l’inscription en bloc](windows-bulk-enroll.md) (Azure AD Premium et le Concepteur de configuration Windows sont nécessaires)
+- [Ajouter un message personnalisé](windows-enrollment-status.md) pour accueillir vos utilisateurs lors de l’inscription et afficher la progression des paramètres de stratégie à mesure qu’ils sont appliqués
 
 Deux facteurs déterminent la manière dont vous pouvez simplifier l’inscription des appareils Windows :
 

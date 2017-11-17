@@ -5,17 +5,17 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Inscrire des appareils Windows à l’aide du programme Windows AutoPilot Deployment
 Le programme Windows AutoPilot Deployment simplifie la configuration des appareils. De nos jours, la création et la maintenance des images de système d’exploitation personnalisées demandent beaucoup de temps. L’application de ces images de système d’exploitation personnalisées à de nouveaux appareils en vue de les préparer pour vos utilisateurs finaux peut être tout aussi longue. Avec Microsoft Intune et AutoPilot, vous pouvez donner de nouveaux appareils à vos utilisateurs finaux sans devoir créer, gérer et appliquer des images de système d’exploitation personnalisées sur les appareils. Quand vous utilisez Intune pour gérer des appareils AutoPilot, vous pouvez gérer des stratégies, des profils, des applications, etc. sur les appareils une fois qu’ils sont inscrits. Pour une vue d’ensemble des avantages, des scénarios et des prérequis, consultez [Vue d’ensemble de Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -57,6 +57,13 @@ Les profils de déploiement AutoPilot sont utilisés pour configurer les apparei
 > - Ignorer les pages de configuration de Cortana, OneDrive et de l’inscription OEM
 > - Configurer automatiquement pour une entreprise ou un établissement scolaire
 > - Expérience de connexion avec une personnalisation d’entreprise ou d’établissement scolaire    
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Alertes pour les appareils non affectés Windows AutoPilot  <!-- 163236 -->
+Vous pouvez afficher une alerte pour les appareils non affectés Windows AutoPilot afin de voir combien d’appareils du programme AutoPilot n’ont pas de profils de déploiement AutoPilot attribués. Utilisez les informations de l’alerte pour créer des profils et les affecter aux appareils non affectés. Quand vous cliquez sur l’alerte, une liste complète des appareils Windows AutoPilot et des informations détaillées les concernant s’affichent. 
+1. Connectez-vous à [Azure](https://portal.azure.com/). 
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le panneau **Intune**, choisissez **Inscription de l’appareil**.
+4. Choisissez **Vue d’ensemble** pour voir l’alerte. Cliquez sur l’alerte pour afficher la liste des appareils AutoPilot.  
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Attribuer un profil de déploiement AutoPilot
 Une fois que vous avez créé des profils de déploiement AutoPilot, vous pouvez les attribuer à des appareils sélectionnés.

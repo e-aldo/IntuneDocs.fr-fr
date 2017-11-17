@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurer le connecteur Exchange local de Microsoft Intune dans Microsoft Intune Azure
 
@@ -134,13 +134,18 @@ Une fois la connexion configurée par le connecteur Exchange, les appareils mobi
 > [!NOTE]
 > Si vous avez installé le connecteur Exchange local et qu’à un moment donné, vous supprimez la connexion Exchange, vous devez désinstaller le connecteur Exchange local de l’ordinateur où il a été installé.
 
-## <a name="validate-the-exchange-connection"></a>Valider la connexion Exchange
+## <a name="monitor-the-exchange-connector-activity"></a>Surveiller l’activité du connecteur Exchange
 
 Une fois que vous avez correctement configuré le connecteur Exchange, vous pouvez afficher l’état de la connexion et la dernière tentative de synchronisation réussie. Pour valider la connexion du connecteur Exchange :
 
-- Dans le tableau de bord Intune, choisissez **Accès local**. Sous **Gérer**, sélectionnez **Accès à Exchange sur site** pour vérifier l’état de connexion.
+1. Dans le tableau de bord Intune, choisissez **Accès local**.
+2. Sous **Gérer**, sélectionnez **Accès à Exchange sur site** pour vérifier l’état de connexion.
 
 Vous pouvez également vérifier la date et l'heure de la dernière tentative de synchronisation réussie.
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>Pack d’administration de System Center Operations Manager (SCOM)
+
+À partir de la version Intune 1710, vous pouvez utiliser le [pack d’administration SCOM pour le connecteur Exchange et Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Ce pack offre différents moyens de surveiller le connecteur Exchange quand vous devez résoudre des problèmes.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Création d’une stratégie d’accès conditionnel pour Exchange sur site](conditional-access-exchange-create.md)
