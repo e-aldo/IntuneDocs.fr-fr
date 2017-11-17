@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/10/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
+ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -68,7 +68,7 @@ Intune Managed Browser prend en charge l’ouverture de contenu web des [parte
 3.  Dans le panneau **Applications mobiles** de la liste Gérer, choisissez **Stratégies de configuration des applications**.
 4.  Dans le panneau **Stratégies de configuration des applications**, choisissez **Ajouter**.
 5.  Dans le panneau **Ajouter la configuration de l’application**, saisissez un **Nom** et éventuellement une **Description** pour les paramètres de configuration de l’application.
-6.  Pour **Type d’inscription de l’appareil**, choisissez **Appareils gérés** ou **Applications gérées**.
+6.  Pour **Inscription de l’appareil**, choisissez **Applications gérées**.
 7.  Choisissez **Sélectionner les applications requises** puis, dans le panneau **Applications ciblées**, choisissez **Managed Browser** pour iOS, Android ou les deux.
 8.  Choisissez **OK** pour revenir au panneau **Ajouter une configuration d’application**.
 9.  Choisissez **Paramètres de configuration**. Dans le panneau **Configuration**, vous définissez des paires clé / valeur pour fournir des configurations pour Managed Browser. Consultez les sections plus bas dans cet article pour en savoir plus sur les différentes paires clé/valeur que vous pouvez définir.
@@ -202,6 +202,22 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
     -   http://www.contoso.com:&#42;
 
     -   http://www.contoso.com: /&#42;
+
+## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Guide pratique pour accéder aux journaux d’applications gérées à l’aide de Managed Browser sur iOS
+
+Les utilisateurs finaux ayant installé Managed Browser sur leurs appareils iOS peuvent afficher l’état de gestion de toutes les applications Microsoft publiées. Ils peuvent envoyer des journaux afin de dépanner leurs applications iOS gérées.
+
+1. Ouvrez **Paramètres iOS**.
+2. Sélectionnez les paramètres de l’application **Managed Browser**.
+3. Cliquez sur **Activer les diagnostics Intune** pour configurer le navigateur en mode dépannage.
+4. Ouvrez **Managed Browser**. Cliquez sur **Afficher l’état de l’application Intune** pour passer en revue les différents paramètres de stratégie d’application.
+5. Appuyez sur **Prise en main** et **Partager les journaux** ou **Envoyer les journaux à Microsoft** pour envoyer les journaux de dépannage à votre administrateur informatique ou à Microsoft.
+
+Vous pouvez également ouvrir le navigateur en mode dépannage à partir de l’application.
+
+1. Ouvrez Managed Browser.
+2. Tapez `about:intunehelp` dans la zone d’adresse.
+Le navigateur démarre en mode dépannage.
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Sécurité et confidentialité de Managed Browser
 

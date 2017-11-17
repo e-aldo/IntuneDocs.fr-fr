@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **Inscription manuelle** - Permet à l’utilisateur de supprimer manuellement le compte d’espace de travail de l’appareil.
 -   **Installation manuelle du certificat racine (mobile uniquement)** -Empêche l’utilisateur d’installer manuellement les certificats racines et les certificats CAP intermédiaires.
 -   **Envoi des données de diagnostic** - Les valeurs possibles sont les suivantes :
-    -       **Aucun** - Aucune donnée n’est envoyée à Microsoft
-    -       **Basique** - Une quantité limitée d’informations est envoyée à Microsoft
-    -       **Amélioré** - Des données de diagnostic avancées sont envoyées à Microsoft
-    -       **Complète** - Envoie les mêmes données que Amélioré, ainsi que des données supplémentaires sur l'état de l’appareil
+    - **Aucun** - Aucune donnée n’est envoyée à Microsoft
+    - **Basique** - Une quantité limitée d’informations est envoyée à Microsoft
+    - **Amélioré** - Des données de diagnostic avancées sont envoyées à Microsoft
+    - **Complète** - Envoie les mêmes données que Amélioré, ainsi que des données supplémentaires sur l'état de l’appareil
 -   **Appareil photo** - Autorise ou bloque l’utilisation de l’appareil photo sur l’appareil.
 -   **Synchronisation des fichiers OneDrive** -Empêche l’appareil de synchroniser des fichiers avec OneDrive.
 -   **Stockage amovible** - Spécifie si des appareils de stockage externe comme une carte SD peuvent être utilisés avec l’appareil.
@@ -105,6 +105,7 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 
 
 ## <a name="edge-browser"></a>Navigateur Edge
+
 -   **Navigateur Microsoft Edge (mobile uniquement)** - autorise l’utilisation du navigateur web Edge sur l’appareil.
 -   **Liste déroulante des barres d’adresse (Desktop uniquement)** – Permet d’empêcher Edge d’afficher une liste de suggestions dans une liste déroulante quand vous tapez. Cela aide à réduire l’utilisation de la bande passante réseau entre Edge et les services Microsoft.
 -   **Synchroniser les favoris entre les navigateurs Microsoft (Desktop uniquement)** – Permet à Windows de synchroniser les Favoris entre Internet Explorer et Edge.
@@ -180,6 +181,44 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
     -   **Options d’ergonomie** - Bloque l’accès à la zone d’options d’ergonomie de l’application Paramètres.
     -   **Confidentialité** - Bloque l’accès à la zone de confidentialité de l’application Paramètres.
     -   **Mise à jour et sécurité** - Bloque l’accès à la zone des mises à jour et de la sécurité dans l’application des paramètres.
+
+## <a name="kiosk"></a>Kiosk
+
+-   **Mode plein écran** - Identifie le type de [mode plein écran](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) pris en charge par la stratégie.  Les options sont les suivantes :
+
+      - **Non configuré** (par défaut) : la stratégie n’active pas de mode plein écran. 
+      - **Application unique plein écran** : le profil active l’appareil en tant qu’application unique plein écran.
+      - **Applications multiples plein écran** : le profil active l’appareil en tant qu’applications multiples plein écran.
+
+    Les applications uniques plein écran nécessitent les paramètres suivants :
+
+      - **Compte d’utilisateur** : spécifie le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran.  Pour les comptes liés à des domaines Azure AD, spécifiez le compte au format `domain\\username@tenant.org`.
+
+         Pour les appareils qui sont dans des environnements publics, utilisez des comptes avec des privilèges minimaux afin d’empêcher les activités autorisées.  
+
+      - **Identifiant AUMID de l’application** : spécifie l’identifiant AUMID de l’application plein écran.  Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
+
+    Les applications multiples plein écran nécessitent une configuration plein écran.  Utilisez le bouton **Ajouter** pour créer une configuration plein écran ou sélectionnez-en une existante.
+
+    Les configurations des applications multiples plein écran incluent les paramètres suivants :
+
+    - **Nom de configuration plein écran** : nom convivial utilisé pour identifier une configuration donnée.
+
+    - Une ou plusieurs **applications plein écran** constituées de :
+
+        - **Type d’application** qui spécifie le type de l’application plein écran.  Les valeurs prises en charge sont :   
+
+            - **Application Win32** : application de bureau traditionnelle.  (Vous aurez besoin du chemin qualifié complet de l’exécutable, en ce qui concerne l’appareil.)
+
+            - **Application UWP** : application Windows universelle.  Vous aurez besoin de [l’identifiant AUMID de l’application](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+        - **Identificateur de l’application** : spécifie le chemin qualifié complet du fichier exécutable (applications Win32) ou [l’identifiant AUMID de l’application](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (applications UWP).
+
+    - **Barre des tâches** indique si la barre des tâches est affichée (**Activé**) ou masquée (**Non configuré**) sur le plein écran.
+
+    - **Disposition du menu Démarrer** : spécifie un fichier XML qui décrit comment les applications [apparaissent dans le menu Démarrer](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Utilisateurs attribués** : spécifie un ou plusieurs comptes d’utilisateur associés à la configuration plein écran.  Le compte peut être local sur l’appareil, ou il peut s’agir d’une connexion de compte Azure AD associée à l’application plein écran.  Spécifiez les comptes joints à un domaine au format `domain\\username@tenant.org`.
 
 ## <a name="defender"></a>Defender
 

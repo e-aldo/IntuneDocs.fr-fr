@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modèle de données de l’entrepôt de données
 
@@ -41,6 +41,7 @@ Les jeux d’entités sont des collections nommées d’entités dans le modèle
   -  [Application](reports-ref-application.md)
   -  [Date](reports-ref-date.md)
   -  [Appareils](reports-ref-devices.md)
+  -  [Extension de la gestion Intune](reports-ref-intunemanagementextension.md)
   -  [Stratégie](reports-ref-policy.md)
   -  [Gestion des applications mobiles (GAM)](reports-ref-mobile-app-management.md)
   -  [Utilisateur](reports-ref-user.md)

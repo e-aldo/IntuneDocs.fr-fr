@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Guide pratique pour gérer le transfert de données entre applications iOS
 ## <a name="manage-ios-apps"></a>Gérer les applications iOS
@@ -30,6 +30,7 @@ La protection des données de votre entreprise nécessite notamment de vérifier
 -   Vous pouvez également déployer et gérer des applications via le **canal MDM**.  Ceci nécessite que les appareils soient inscrits dans la solution MDM. Il peut s’agir d’applications **gérées par une stratégie** ou d’autres applications gérées.
 
 La fonctionnalité **Ouvrir dans la gestion** pour les appareils iOS peut limiter les transferts de fichiers entre des applications déployées sur le **canal MDM**. Les restrictions de gestion de l’ouverture sont définies dans les paramètres de configuration et déployées à l’aide de votre solution de gestion des appareils mobiles (MDM).  Quand l’utilisateur installe l’application déployée, les restrictions que vous avez définies sont appliquées.
+
 ##  <a name="using-app-protection-with-ios-apps"></a>Utilisation de la protection des applications avec des applications iOS
 Vous pouvez utiliser les stratégies de protection des applications avec la fonctionnalité **Open in management** d’iOS pour protéger les données d’entreprise des façons suivantes :
 
@@ -40,39 +41,35 @@ Vous pouvez utiliser les stratégies de protection des applications avec la fonc
 -   **Appareils gérés par une solution MDM tierce** : vous pouvez limiter le transfert de données uniquement à des applications gérées en utilisant la fonctionnalité **Ouvrir d’iOS dans la gestion**.
 Pour vous assurer que les applications que vous déployez à l’aide de votre solution MDM tierce sont également associées aux stratégies de protection des applications que vous avez configurées dans Intune, vous devez configurer le paramètre de nom UPN d’utilisateur comme décrit dans la procédure [Configurer le paramètre UPN d’utilisateur](#configure-user-upn-setting-for-third-party-emm).  Quand les applications sont déployées avec le paramètre UPN de l’utilisateur, les stratégies de protection des applications sont appliquées à l’application quand l’utilisateur final se connecte en utilisant son compte professionnel.
 
-> [!IMPORTANT]
-> Le paramètre Nom UPN d’utilisateur est obligatoire seulement pour les applications déployées sur des appareils gérés par une gestion MDM tierce.  Pour les appareils gérés par Intune, ce paramètre n’est pas obligatoire.
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>Configurer le paramètre UPN d’utilisateur pour une solution de gestion de la mobilité d’entreprise tierce
-Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils gérés par une solution de gestion de la mobilité d’entreprise tierce. La procédure décrite ci-dessous est un flux général indiquant comment configurer le paramètre UPN et l’expérience résultante pour l’utilisateur final :
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Configurer le paramètre UPN d’utilisateur pour Microsoft Intune ou une solution de gestion de la mobilité d’entreprise tierce
+Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils gérés par Intune ou par une solution de gestion de la mobilité d’entreprise tierce. La procédure décrite ci-dessous est un flux général indiquant comment configurer le paramètre UPN et l’expérience résultante pour l’utilisateur final :
 
 1.  Dans le [portail Azure](https://portal.azure.com), [créez et attribuez une stratégie de protection des applications](app-protection-policies.md) pour iOS. Configurez les paramètres de stratégie selon les besoins de votre entreprise et sélectionnez les applications iOS qui doivent disposer de cette stratégie.
 
-2.  Déployez les applications et le profil de messagerie que vous souhaitez gérer **par le biais de votre solution de gestion des appareils mobiles tierce** en suivant les étapes généralisées ci-dessous. Cette expérience est également abordée dans l’Exemple 1.
+2.  Déployez les applications et le profil de messagerie que vous souhaitez gérer par le biais d’Intune ou de votre solution MDM tierce en suivant les étapes généralisées ci-dessous. Cette expérience est également abordée dans l’Exemple 1.
 
-  1.  Déployez l’application avec les paramètres de configuration d’application suivants :
+3.  Déployez l’application avec les paramètres de configuration d’application suivants :
 
       **clé** = IntuneMAMUPN,  **valeur** = <username@company.com>
 
       Exemple : [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Déployez la stratégie Open in management à l’aide de votre fournisseur de gestion des appareils mobiles tiers sur les appareils inscrits.
+4.  Déployez la stratégie **Open in management** en utilisant Intune ou votre fournisseur MDM tiers sur les appareils inscrits.
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Exemple 1 : Expérience de l’administrateur dans la console de gestion des appareils mobiles tierce
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Exemple 1 : Expérience de l’administrateur dans Intune ou dans la console MDM tierce
 
-1. Accédez à la console d’administration du fournisseur de gestion des appareils mobiles tiers. Accédez à la section de la console dans laquelle vous déployez les paramètres de configuration d’application sur les appareils iOS inscrits.
+1. Accédez à la console d’administration Intune ou à votre fournisseur MDM tiers. Accédez à la section de la console dans laquelle vous déployez les paramètres de configuration d’application sur les appareils iOS inscrits.
 
 2. Dans la section Configuration de l’application, entrez le paramètre suivant :
 
   **clé** = IntuneMAMUPN,  **valeur** = <username@company.com>
 
-  La syntaxe exacte de la paire clé/valeur peut varier en fonction du fournisseur de gestion des appareils mobiles tiers. Le tableau ci-dessous présente des exemples de fournisseurs de gestion des appareils mobiles tiers et les valeurs exactes à entrer dans la paire clé/valeur.
+  La syntaxe exacte de la paire clé/valeur peut varier en fonction du fournisseur MDM tiers. Le tableau ci-dessous présente des exemples de fournisseurs MDM tiers et les valeurs exactes à entrer dans la paire clé/valeur.
 
-|Fournisseur de gestion des appareils mobiles tiers| Clé Configuration | Type de valeur | Valeur Configuration|
+|Fournisseur MDM tiers| Clé Configuration | Type de valeur | Valeur Configuration|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | Chaîne | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | Chaîne | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Chaîne | ${userUPN} **ou** ${userEmailAddress} |
 

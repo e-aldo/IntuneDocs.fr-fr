@@ -1,11 +1,11 @@
 ---
-title: "Installation de l’application Portail d’entreprise pour iOS et MacOS | Microsoft Docs"
+title: "Installation de l’application Portail d’entreprise pour iOS | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,23 +16,23 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8d697a18ca812b9ccd39a5678dce7f7692aa97e5
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 653ccf642cdf2c157694cfbe7e27e225a9df2d6d
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 11/08/2017
 ---
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil iOS ou macOS dans Intune ?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil iOS dans Intune ?
 
-Après avoir installé l’application Portail d’entreprise et inscrit votre appareil iOS ou macOS dans Intune, vous pouvez utiliser l’application Portail d’entreprise pour :
+Après avoir installé l’application Portail d’entreprise et inscrit votre appareil iOS dans Intune, vous pouvez utiliser l’application Portail d’entreprise pour :
 
--   Accéder au réseau de l’entreprise, à votre messagerie et à vos fichiers de travail.
+-   accéder au réseau de l’entreprise, à votre messagerie et à vos fichiers de travail ;
 
--   Obtenir des applications d’entreprise à partir du portail d’entreprise.
+-   obtenir des applications d’entreprise à partir du portail d’entreprise ;
 
--   Réinitialiser à distance les paramètres de votre téléphone en cas de perte ou de vol.
+-   réinitialiser à distance les paramètres de votre téléphone en cas de perte ou de vol ;
 
--   Configurer automatiquement votre compte e-mail d’entreprise.
+-   configurer automatiquement votre compte e-mail d’entreprise ;
 
 En inscrivant votre appareil dans Intune, vous autorisez le support technique de votre entreprise à gérer votre appareil pour protéger les informations de l’entreprise qui s’y trouvent.
 

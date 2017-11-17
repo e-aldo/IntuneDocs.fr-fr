@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Utiliser des appareils gérés pour réaliser vos tâches
 Microsoft Intune est un logiciel qui permet aux organisations de gérer des appareils (tels que des smartphones, des tablettes et des PC), des applications et d’autres ressources d’entreprise telles que des e-mails. Cela permet aux employés d’accéder à leurs informations de travail à partir de pratiquement n’importe où sur presque n’importe quel appareil tout en contribuant à sécuriser les données d’entreprise.
@@ -28,7 +28,7 @@ Microsoft Intune est un logiciel qui permet aux organisations de gérer des appa
 Quand vous inscrivez un appareil à la gestion avec Intune, le service informatique peut gérer ces ressources professionnelles ou pédagogiques, les sécuriser et vous donner, à vous en tant qu’employé, la liberté d’utiliser l’appareil de votre choix pour effectuer votre travail. Une des principales méthodes pour le faire est d’inscrire l’appareil à la gestion dans le portail d’entreprise.
 
 ## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Quelles informations mon entreprise peut-elle voir quand j’inscris mon appareil dans Intune ?
-Le service informatique de votre entreprise peut consulter les informations professionnelles, mais pas vos informations personnelles. Il est particulièrement important de le savoir si vous inscrivez un appareil personnel en vue de l’utiliser au travail. Nous détaillons ce qu’il [peut voir et ce qu’il ne peut pas voir dans le prochain article de l’aide utilisateur](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Le service de support technique de votre entreprise peut consulter les informations professionnelles, mais pas vos informations personnelles. Il est particulièrement important de le savoir si vous inscrivez un appareil personnel en vue de l’utiliser au travail. Nous détaillons ce qu’il [peut voir et ce qu’il ne peut pas voir dans le prochain article de l’aide utilisateur](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## <a name="how-do-i-get-the-company-portal"></a>Comment obtenir l’application Portail d’entreprise ?
 Vous pouvez obtenir le portail d’entreprise de deux façons différentes :
@@ -49,7 +49,8 @@ Il existe quelques différences mineures entre l’application Portail d’entre
 Pour voir ce que vous pouvez faire par le biais du site web Portail d’entreprise par rapport à ce que vous pouvez faire à l’aide de l’application Portail d’entreprise sur votre appareil, choisissez l’un des liens suivants :
 
 - [Utilisation de votre appareil Android](using-your-android-device-with-intune.md)
-- [Utilisation de votre appareil iOS ou MacOS](using-your-ios-or-macOS-device-with-intune.md)
+- [Utilisation de votre appareil iOS](using-your-ios-device-with-intune.md)
+- [Utilisation de votre appareil macOS](using-your-macos-device-with-intune.md)
 - [Utilisation de votre appareil Windows](using-your-windows-device-with-intune.md)
 - [Utilisation du site web du portail de l'entreprise](using-the-intune-company-portal-website.md)
 

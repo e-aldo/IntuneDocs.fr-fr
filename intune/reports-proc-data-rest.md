@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: fb75d895a2100172fab337dcd740c076ff5e85b7
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obtenir des données à partir de l’API d’entrepôt de données Intune avec un client REST
 
@@ -30,49 +30,43 @@ Les étapes de configuration d’un client pour obtenir des données à partir d
 3. Accorder à l’application cliente l’accès à l’API Microsoft Intune
 3. Créer un client REST local pour obtenir les données
 
-Utilisez les étapes suivantes pour autoriser et utiliser Postman comme client. Postman est un outil couramment utilisé pour résoudre les problèmes et développer les clients REST pour qu’ils utilisent des API. Pour plus d’informations sur Postman, consultez le site [Postman](https://www.getpostman.com). Cette rubrique présente également un exemple de code C#. L’exemple illustre l’autorisation d’un client et l’obtention de données à partir de l’API.
+Utilisez les étapes suivantes pour découvrir comment autoriser et accéder à l’API avec un client REST. Tout d’abord, vous allez examiner l’utilisation d’un client REST générique à l’aide de Postman. Postman est un outil couramment utilisé pour résoudre les problèmes et développer les clients REST pour qu’ils utilisent des API. Pour plus d’informations sur Postman, consultez le site [Postman](https://www.getpostman.com). Vous pourrez ensuite examiner un exemple de code C#. L’exemple illustre l’autorisation d’un client et l’obtention de données à partir de l’API.
 
-## <a name="create-a-native-app-in-azure"></a>Créer une application native dans Azure
+## <a name="create-a-client-app-as-a-native-app-in-azure"></a>Créer une application cliente sous forme d’application native dans Azure
 
 Créez une application native dans Azure. Cette application native est l’application cliente. Le client qui s’exécute sur votre ordinateur local référence l’API d’entrepôt de données Intune quand le client local demande des informations d’identification. 
 
 1. Connectez-vous au portail Azure pour votre locataire. Choisissez **Azure Active Directory** > **Inscriptions des applications** pour ouvrir le panneau **Inscriptions des applications**.
-2. Cliquez sur **Nouvelle inscription d’application**.
+2. Sélectionnez **Nouvelle inscription d’application**.
 3. Tapez les détails de l’application.
     1.  Tapez un nom convivial, par exemple, Client de l’entrepôt de données Intune, pour le **Nom**.
     2.  Sélectionnez **Natif** pour le **Type d’application**.
     3.  Tapez une URL pour **l’URL de connexion**. L’URL de connexion dépend du scénario. Toutefois, si vous prévoyez d’utiliser Postman, tapez `https://www.getpostman.com/oauth2/callback`. Vous utilisez le rappel pour l’étape d’authentification du client au moment de l’authentification à Azure AD.
-4.  Cliquez sur **Créer**.
+4.  Sélectionnez **Créer**.
 
      ![API d’entrepôt de données Intune](media\reports-get_rest_data_client_overview.png)
 
 5. Notez **l’ID d’application** de cette application. Vous utilisez l’ID à l'étape suivante.
-6. Si vous prévoyez d’utiliser Postman, ajoutez une clé. La clé est utilisée comme secret du client pour l’authentification à Azure AD. Pour ajouter une clé :
-    1.  Cliquez sur **Clés** sous **Accès d’API** dans le panneau Paramètres de l’application.
-    2.  Tapez un nom pour votre clé, par exemple, Client-Secret, dans la **Description**.
-    3.  Sélectionnez **1 an** pour la Durée.
-    4.  Cliquez sur **Enregistrer**. 
-    5.  Copiez la valeur de votre clé. Vous ne pouvez pas récupérer la clé une fois que vous avez fermé le panneau **Paramètres** des Clés.
 
-## <a name="grant-the-native-app-access-to-the-microsoft-intune-api"></a>Accorder à l’application native l’accès à l’API Microsoft Intune
+## <a name="grant-the-client-app-access-to-the-microsoft-intune-api"></a>Accorder à l’application cliente l’accès à l’API Microsoft Intune
 
 Vous avez maintenant une application définie dans Azure. Accordez à l’application native l’accès à l’API Microsoft Intune.
 
-1.  Cliquez sur l’application native. Vous avez donné à l’application un nom du type **Client de l’entrepôt de données Intune**.
-2.  Cliquez sur **Autorisations nécessaires** dans le panneau **Paramètres**
-3.  Cliquez sur **Ajouter** dans le panneau **Autorisations nécessaires**.
-4.  Cliquez sur **Sélectionner une API**.
+1.  Sélectionnez l’application native. Vous avez donné à l’application un nom du type **Client de l’entrepôt de données Intune**.
+2.  Sélectionnez **Autorisations nécessaires** dans le panneau **Paramètres**.
+3.  Sélectionnez **Ajouter** dans le panneau **Autorisations nécessaires**.
+4.  Sélectionnez **Sélectionner une API**.
 5.  Recherchez le nom de l’application web. Son nom est **API Microsoft Intune**.
-6.  Cliquez sur l’application dans la liste.
-7.  Cliquez sur **Sélectionner**.
+6.  Sélectionnez l’application dans la liste.
+7.  Sélectionnez **Sélectionner**.
 8.  Cochez la case **Autorisations déléguées** pour ajouter **Obtenir des informations de l’entrepôt de données à partir de Microsoft Intune**.
 
     ![Activer l'accès](media\reports-get_rest_data_client_access.png)
 
-9.  Cliquez sur **Sélectionner**.
-10.  Cliquez sur **Terminé**.
-11.  Vous pouvez aussi cliquer sur **Accorder des autorisations** dans le panneau Autorisations nécessaires. Cette option accorde l’accès à tous les comptes de l’annuaire actif. La boîte de dialogue de consentement ne s’affiche plus pour chaque utilisateur du locataire. Pour plus d’informations, consultez [Intégration d’applications à Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
-12.  Cliquez sur **Oui**.
+9.  Sélectionnez **Sélectionner**.
+10.  Sélectionnez **Terminé**.
+11.  Vous pouvez sélectionner **Accorder des autorisations** dans le panneau Autorisations nécessaires. Cette option accorde l’accès à tous les comptes de l’annuaire actif. La boîte de dialogue de consentement ne s’affiche plus pour chaque utilisateur du locataire. Pour plus d’informations, consultez [Intégration d’applications à Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+12.  Sélectionnez **Oui**.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Obtenir des données de l’API Microsoft Intune avec Postman
 
@@ -86,14 +80,26 @@ Vous avez besoin des informations suivantes pour effectuer un appel REST à l’
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | URL de rappel     | Définissez cette URL comme URL de rappel dans la page de paramètres de votre application.                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | Nom du jeton       | Chaîne utilisée pour transmettre les informations d’identification à l’application Azure. Le processus génère votre jeton pour vous permettre d’effectuer un appel à l’API d’entrepôt de données.                          | Support                                                                                        |
-| URL d’authentification         | Il s’agit de l’URL utilisée pour l’authentification. | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com |
+| URL d’authentification         | Il s’agit de l’URL utilisée pour l’authentification. | https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/ |
 | URL de jeton d'accès | Il s’agit de l’URL utilisée pour accorder le jeton.                                                                                                                                              | https://login.microsoftonline.com/common/oauth2/token |
 | ID client        | Vous l’avez créé, et l’avez noté, quand vous avez créé l’application native dans Azure.                                                                                               | 4184c61a-e324-4F51-83d7-022b6a81b991                                                          |
-| Question secrète du client    | Vous l’avez créée, et l’avez notée, quand vous avez ajouté une clé pour l’application cliente dans Azure.                                                                                              | JZoRZGPmN9xwsUnfX9UW877dkV5Fn/qQClhr7SuyMUQ=                                                  |
 | Étendue (facultatif) | Vide                                                                                                                                                                               | Vous pouvez laisser le champ vide.                                                                     |
 | Type d’autorisation       | Le jeton est un code d'autorisation.                                                                                                                                                  | Code d’autorisation                                                                            |
 
-Vous avez besoin du point de terminaison. Dans cet exemple, nous allons récupérer des données de l’entité **dates**. L'entité **dates** a le format suivant : `https://fef.{aus}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`. Vous utilisez l’URL de gestion de votre locataire. Vous avez utilisé l’URL de gestion du locataire quand vous avez créé votre application web.
+### <a name="odata-endpoint"></a>Point de terminaison OData
+
+Vous avez également besoin du point de terminaison. Pour obtenir votre point de terminaison d’entrepôt de données, vous avez besoin de l’URL de flux personnalisée. Vous pouvez obtenir le point de terminaison OData à partir du panneau Entrepôt de données.
+
+1. Connectez-vous au portail Azure.
+2. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
+3. Sélectionnez **Configurer l’entrepôt de données Intune** sous **Autres tâches**.
+4. Copiez l’URL de flux personnalisée sous **Utiliser des services de rapports tiers**. Elle doit ressembler à ceci : `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+
+Le point de terminaison suit le format suivant : `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`. 
+
+Par exemple, l’entité **dates** ressemble à : `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+
+Pour plus d’informations, consultez [Point de terminaison de l’API d’entrepôt de données Intune](reports-api-url.md).
 
 ### <a name="make-the-rest-call"></a>Effectuer l’appel REST
 
@@ -105,39 +111,34 @@ Pour obtenir un nouveau jeton d’accès pour Postman, vous devez ajouter l’UR
 2.  Ouvrez Postman. Choisissez l’opération HTTP **GET**.
 3.  Collez l’URL de point de terminaison dans l’adresse. Vous devez obtenir quelque chose de ce type :  
 
-    `https://fef.msua06.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4.  Choisissez l’onglet **Autorisation** et sélectionnez **OAuth 2.0** dans la liste **Type**.
-5.  Cliquez sur **Obtenir un nouveau jeton d’accès**.
+5.  Sélectionnez **Obtenir un nouveau jeton d’accès**.
 6.  Vérifiez que vous avez déjà ajouté l’URL de rappel à votre application dans Azure. L’URL de rappel est `https://www.getpostman.com/oauth2/callback`.
 7.  Tapez Bearer pour le **Nom du jeton**.
 8.  Ajoutez **l’URL d’authentification**. Vous devez obtenir quelque chose de ce type :  
 
-    `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com`
+    `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
 9.  Ajoutez **l’URL du jeton d'accès**. Vous devez obtenir quelque chose de ce type :  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
 10. Ajoutez **l’ID Client** de l’application native que vous avez créée dans Azure et qui s’appelle `Intune Data Warehouse Client`. Vous devez obtenir quelque chose de ce type :  
 
-     `4184c61a-e324-4f51-83d7-022b6a81b991`
+     `88C8527B-59CB-4679-A9C8-324941748BB4`
 
-11. Ajoutez le **Secret client** que vous avez défini sous forme de clé quand vous avez créé votre application native dans Azure. Vous devez obtenir quelque chose de ce type : 
+11. Sélectionnez **Code d’autorisation** et demandez le jeton d’accès localement.
 
-     `F360R69M0MS72OB6YAqTyXO9MsXZx/OJTgAE2HB4k2k=`
-
-12. Sélectionnez **Code d’autorisation** et demandez le jeton d’accès localement.
-
-13. Cliquez sur **Demander un jeton**.
+12. Sélectionnez **Demander un jeton**.
 
     ![Informations pour le jeton](media\reports-postman_getnewtoken.png)
 
-14. Tapez vos informations d’identification dans la page d’autorisation Azure AD. La liste des jetons existants dans Postman contient désormais le jeton nommé `Bearer`.
-16. Choisissez le jeton. Sélectionnez **En-tête** pour le champ Ajouter le jeton à.
-17. Cliquez sur **Utiliser le jeton**. La liste des en-têtes contient la nouvelle valeur de clé d’autorisation et la valeur `Bearer <your-authorization-token>`.
+13. Tapez vos informations d’identification dans la page d’autorisation Azure AD. La liste des jetons dans Postman contient désormais le jeton nommé `Bearer`.
+14. Sélectionnez **Utiliser le jeton**. La liste des en-têtes contient la nouvelle valeur de clé d’autorisation et la valeur `Bearer <your-authorization-token>`.
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>Envoyer l’appel au point de terminaison à l’aide de Postman
 
-1.  Cliquez sur **Envoyer**.
+1.  Sélectionnez **Envoyer**.
 2.  Les données de retour s’affichent dans le corps de la réponse Postman.
 
     ![Postman 200OK](media\reports-postman_200OK.png)
@@ -151,10 +152,10 @@ L’exemple suivant contient un client REST simple. Le code utilise la classe **
 
 1.  Ouvrez **Microsoft Visual Studio**.
 2.  Choisissez **Fichier** > **Nouveau projet**. Développez **Visual C#**, puis choisissez **Application console (.Net Framework)**. 
-3.  Nommez le projet ` IntuneDataWarehouseSamples`, accédez à l’emplacement où vous voulez enregistrer le projet, puis cliquez sur **OK**.
-4.  Cliquez avec le bouton droit sur le nom de la solution dans l’Explorateur de solutions, puis sélectionnez **Gérer les packages NuGet pour la solution**. Cliquez sur **Parcourir**, puis tapez `Microsoft.IdentityModel.Clients.ActiveDirectory` dans la zone de recherche.
-5. Choisissez le package, sélectionnez le projet **IntuneDataWarehouseSamples** sous Gérer les packages pour votre solution, puis cliquez sur **Installer**. 
-6. Cliquez sur **J'accepte** pour accepter la licence du package NuGet.
+3.  Nommez le projet ` IntuneDataWarehouseSamples`, accédez à l’emplacement où vous voulez enregistrer le projet, puis sélectionnez **OK**.
+4.  Cliquez avec le bouton droit sur le nom de la solution dans l’Explorateur de solutions, puis sélectionnez **Gérer les packages NuGet pour la solution**. Sélectionnez **Parcourir**, puis tapez `Microsoft.IdentityModel.Clients.ActiveDirectory` dans la zone de recherche.
+5. Choisissez le package, sélectionnez le projet **IntuneDataWarehouseSamples** sous Gérer les packages pour votre solution, puis sélectionnez **Installer**. 
+6. Sélectionnez **J’accepte** pour accepter la licence du package NuGet.
 7. Ouvrez `Program.cs` dans l’Explorateur de solutions.
 
     ![Projet dans Visual Studio](media\reports-get_rest_data_in.png)
