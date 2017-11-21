@@ -365,6 +365,8 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: Service web du gestionnaire PKI Symantec
+              href: certificates-symantec-configure.md
         - name: Configurer les paramètres de protection des informations Windows (WIP)
           href: windows-information-protection-configure.md
         - name: Gérer les scripts PowerShell
