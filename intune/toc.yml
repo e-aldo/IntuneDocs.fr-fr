@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Créer une stratégie Android for Work
           href: compliance-policy-create-android-for-work.md
+        - name: Créer une stratégie pour activer Google Play Protect
+          href: compliance-policy-create-google-play-protect.md
         - name: Créer une stratégie iOS
           href: compliance-policy-create-ios.md
         - name: Créer une stratégie macOS
