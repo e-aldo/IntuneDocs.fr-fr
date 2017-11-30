@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/23/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a75cf12fb1e03873d4ef3307e9c377ab6df6b75a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d3509dbf1bc0b415803bb003c342f5b5df69e235
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Utilisations courantes de l’accès conditionnel avec Intune
 
@@ -62,11 +62,11 @@ Si l’enregistrement EAS est nouveau et qu’Intune ne le sait pas, Intune éme
 
 ![Exchange local avec organigramme de l’autorité de certification](./media/ca-intune-common-ways-1.png)
 
-1.  L’utilisateur essaie d’accéder à un e-mail d’entreprise, qui est hébergé sur une instance locale d’Exchange 2010 SP1 ou ultérieur.
+1.  L’utilisateur essaie d’accéder à une messagerie d’entreprise hébergée sur une instance locale d’Exchange 2010 SP1 (ou une version ultérieure).
 
 2.  Si l’appareil n’est pas géré par Intune, son accès à la messagerie est bloqué. Intune envoie une notification de blocage au client EAS.
 
-3.  EAS reçoit une notification de blocage, met l’appareil en quarantaine et envoie l’e-mail de mise en quarantaine avec des étapes de résolution et des liens auxquels les utilisateurs peuvent inscrire leurs appareils.
+3.  EAS reçoit une notification de blocage, met l’appareil en quarantaine et envoie l’e-mail de mise en quarantaine, qui contient des étapes de résolution et des liens permettant aux utilisateurs d’inscrire leurs appareils.
 
 4.  Le processus de jonction d’espace de travail se produit. Il s’agit de la première étape pour que les appareils soient gérés par Intune.
 
@@ -90,7 +90,7 @@ Intune évalue et gère l’état de l’appareil.
 
 Le serveur Exchange fournit l’API et l’infrastructure pour déplacer des appareils en quarantaine.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > N’oubliez pas que l’utilisateur de l’appareil doit déployer un profil de conformité sur l’appareil afin que sa conformité soit évaluée. Si aucune stratégie de conformité n’est déployée sur l’utilisateur, l’appareil est considéré comme conforme et aucune restriction d’accès ne s’applique.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Accès conditionnel basé sur le contrôle d’accès réseau
@@ -105,9 +105,9 @@ L’accès par les utilisateurs peut être accepté ou refusé lors de la tentat
 
 Intune fait équipe avec des fournisseurs de défense contre les menaces mobiles qui fournissent une solution de sécurité pour détecter les logiciels malveillants, les chevaux de Troie et autres menaces sur les appareils mobiles.
 
-#### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Fonctionnement de l’intégration entre Intune et la défense contre les menaces mobiles
+#### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Comment fonctionne l’intégration entre Intune et la défense contre les menaces mobiles ?
 
-Lorsque des appareils mobiles ont installé l’agent de défense contre les menaces mobile, l’agent peut envoyer des messages d’état de conformité à Intune pour indiquer si une menace a été trouvée dans l’appareil mobile proprement dit.
+Lorsqu’il est installé sur un appareil, l’agent de défense contre les menaces mobiles peut renvoyer des messages d’état de conformité à Intune pour indiquer si une menace a été identifiée sur l’appareil mobile proprement dit.
 
 L’intégration entre Intune et la défense contre les menaces mobiles joue un rôle dans les décisions d’accès conditionnel basé sur les risques posés par les appareils.
 

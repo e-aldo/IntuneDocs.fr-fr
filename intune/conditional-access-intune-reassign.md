@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 18ee7adcdb396c1b7010100803c82dbf0daa767c
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Réaffecter les stratégies d’accès conditionnel à partir du portail classique Intune vers le portail Azure
 
@@ -139,7 +139,7 @@ Le panneau **Intune App Protection** dans le portail Azure permet aux administra
 
 Si vous avez configuré les paramètres EAS (Exchange Active Sync) dans le cadre d’une stratégie Exchange Online dans le portail classique Intune, vous devez créer une deuxième stratégie d’accès conditionnel dans le portail Azure.
 
-1. Accédez à [Accès conditionnel dans le portail Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) et connectez-vous avec vos informations d’identification.
+1. Accédez à [Conditional access in the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) (Accès conditionnel dans le portail Azure) et connectez-vous avec vos informations d’identification.
 
 2. Choisissez **Nouvelle stratégie**.
 
@@ -201,5 +201,5 @@ Une fois que vous avez réaffecté vos stratégies d’accès conditionnel dans 
 ## <a name="see-also"></a>Voir aussi
 
 - [Utilisations courantes de l’accès conditionnel avec Intune](conditional-access-intune-common-ways-use.md)
-- [Accès conditionnel basé sur l’application avec Intune](app-based-conditional-access-intune.md)
+- [accès conditionnel en fonction des applications avec Intune](app-based-conditional-access-intune.md)
 - [Accès conditionnel dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

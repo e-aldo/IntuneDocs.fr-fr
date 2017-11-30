@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
 
+## <a name="week-of-november-13-2017"></a>Semaine du 13 novembre 2017
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Améliorations apportées au workflow de configuration des appareils dans le portail d’entreprise pour iOS dans la version 2.9.0 <!---1417174--->
+
+Nous avons amélioré le workflow de configuration des appareils dans l’application Portail d’entreprise pour iOS. Le texte de l’interface est plus convivial et nous avons regroupé des écrans quand cela était possible. Nous avons également personnalisé le texte en fonction de votre société en utilisant le nom de cette dernière durant tout le processus de configuration.
+
+> [!NOTE]
+> Nous utilisons le nom de société que vous avez défini dans le portail Azure sous **Microsoft Intune** > **Mobile Apps** > **Personnalisation du portail d'entreprise** > **Nom de la société**. Si vous n’avez pas défini cette valeur, nous utiliserons le nom de locataire défini sous **Azure Active Directory** > **Propriétés** > **Nom**. Si vous n’avez pas défini de nom de société dans l’onglet Personnalisation du portail d’entreprise et si vous ne souhaitez pas que votre nom de locataire s’affiche, nous vous recommandons de définir le nom de la société dans ce même onglet. Si vous ne souhaitez pas que ce nom s’affiche dans l’en-tête du portail d’entreprise, vous pouvez décocher la case « Afficher le nom de la société à côté du logo ».
+
+|Avant|Après|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*Combiné à l’étape précédente*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>Semaine du 6 novembre 2017
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Mises à jour de l’application Portail d’entreprise pour Windows 10 <!--1299474-->
+La page Paramètres de l’application Portail d’entreprise pour Windows 10 a été mise à jour pour rendre les paramètres et les actions prévues de l’utilisateur plus cohérents à travers l’ensemble des paramètres. Elle a également été mise à jour pour correspondre à la disposition d’autres applications Windows.
+
+|Avant|Après|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Améliorations de la recherche apportées aux applications et au site web du portail d’entreprise <!--1418189-->
 Les applications de portail d’entreprise utilisent maintenant des recherches parmi les catégories d’applications, les noms et les descriptions. Les résultats sont triés par ordre décroissant de pertinence. Ces mises à jour sont également disponibles sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
 
 Nous continuons à optimiser la façon dont la pertinence est suivie : faites-nous savoir comment elle fonctionne en utilisant le lien « Commentaires » au bas du site web du portail d’entreprise.
-
-
 
 ## <a name="week-of-october-16-2017"></a>Semaine du 16 octobre 2017
 
@@ -45,10 +70,6 @@ Nous continuons à optimiser la façon dont la pertinence est suivie : faites-no
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Le portail d’entreprise iOS affiche de grandes icônes <!-- 1454593 -->
 Cette version corrige un problème connu sur la façon dont le portail d’entreprise iOS affiche les icônes dans la vignette de l’application. Si vous chargez des icônes d’application de 120 x 120 pixels ou plus, elles s’affichent désormais sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com) et dans les pages de l’application Portail d’entreprise iOS en respectant la taille entière de la vignette d’application.
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>Semaine du 2 octobre 2017

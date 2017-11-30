@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
-ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
+ms.openlocfilehash: bc11ad516b3256d39d4e859eca6c8aa248fb180b
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -100,8 +100,9 @@ Intune Managed Browser et le [proxy d’application Azure AD]( https://docs.micr
 
 - Configurez vos applications internes à l’aide du proxy d’application Azure AD.
     - Pour configurer le proxy d’application et publier des applications, consultez la [documentation d’installation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
-    - Vous devez utiliser au minimum la version 1.2.0 de l’application Managed Browser.
-    - Les utilisateurs de l’application Managed Browser ont une [stratégie de protection des applications Intune]( app-protection-policy.md) affectée à l’application.
+- Vous devez utiliser au minimum la version 1.2.0 de l’application Managed Browser.
+- Les utilisateurs de l’application Managed Browser ont une [stratégie de protection des applications Intune]( app-protection-policy.md) affectée à l’application.
+Remarque : La mise à jour des données de redirection du proxy d’application dans Managed Browser peut prendre jusqu’à 24 heures.
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Étape 1 : Activer la redirection automatique vers Managed Browser à partir d’Outlook
 Outlook doit être configuré avec une stratégie de protection des applications qui active le paramètre **Restreindre le contenu web à afficher dans Managed Browser**.
@@ -218,6 +219,8 @@ Vous pouvez également ouvrir le navigateur en mode dépannage à partir de l’
 1. Ouvrez Managed Browser.
 2. Tapez `about:intunehelp` dans la zone d’adresse.
 Le navigateur démarre en mode dépannage.
+
+Vous trouverez la liste des paramètres stockés dans les journaux d’applications sur la page [Consulter les journaux de protection des applications dans Managed Browser](app-protection-policy-settings-log.md).
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Sécurité et confidentialité de Managed Browser
 

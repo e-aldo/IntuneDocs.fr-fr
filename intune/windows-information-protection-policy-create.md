@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
@@ -125,13 +125,13 @@ Après avoir ajouté les applications que vous souhaitez protéger avec WIP, vou
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-WIP Learning est un rapport qui vous permet de surveiller les applications inconnues de WIP. Les applications inconnues sont celles non déployées par le département informatique de votre organisation. Vous pouvez exporter ces applications à partir du rapport et les ajouter à vos stratégies WIP pour éviter une perturbation de la productivité avant l’application de WIP en mode « Masquer les substitutions ».
+WIP Learning est un rapport qui vous permet de surveiller les applications inconnues de WIP. Les applications inconnues sont celles non déployées par le département informatique de votre organisation. Vous pouvez exporter ces applications à partir du rapport et les ajouter à vos stratégies WIP pour éviter une perturbation de la productivité avant l’application de WIP en mode « Bloquer ».
 
-Nous vous recommandons de commencer avec **Silencieux** ou **Autoriser les substitutions** lors de la vérification avec un petit groupe que vous avez les bonnes applications dans votre liste d’applications autorisées. Une fois cela fait, vous pouvez passer sur votre stratégie d’application finale, **Masquer les substitutions**.
+Nous vous recommandons de commencer avec **Silencieux** ou **Autoriser les substitutions** lors de la vérification avec un petit groupe que vous avez les bonnes applications dans votre liste d’applications autorisées. Une fois cela fait, vous pouvez passer sur votre stratégie d’application finale, **Bloquer**.
 
 ### <a name="what-are-the-protection-modes"></a>Quels sont les modes de protection ?
 
-#### <a name="hide-overrides"></a>Masquer le choix d’ignorer les avertissements
+#### <a name="block"></a>Bloquer
 WIP recherche des pratiques de partage de données inappropriées et empêche l’utilisateur de terminer l’action. Cela peut inclure le partage d’informations entre des applications non protégées pas votre entreprise, ou le partage de données d’entreprise entre des personnes et appareils en dehors de votre organisation.
 
 #### <a name="allow-overrides"></a>Autoriser l’utilisateur à ignorer les avertissements

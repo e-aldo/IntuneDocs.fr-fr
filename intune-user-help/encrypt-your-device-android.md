@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Comment protéger votre appareil Android à l’aide du chiffrement
 
 Lorsque vous chiffrez un appareil, vous encapsulez les informations qu'il contient dans un code de couche de protection qui empêche les personnes non autorisées d’y accéder. Dans le cadre de la protection de vos informations, votre organisation vous demande de chiffrer votre appareil Android pour pouvoir accéder aux fichiers, à la messagerie et aux données de l’entreprise.
 
 > [!Note]
-> Vous devrez peut-être définir un code confidentiel ou un mot de passe avant de chiffrer votre appareil si le support technique de votre entreprise le demande.
+> Plusieurs appareils Android, dont certains fabriqués par Huawei et d’autres par Vivo et OPPO, ne peuvent pas être chiffrés. Découvrez-en plus [ici](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 Si vous désinscrivez votre téléphone, il restera chiffré.
 
@@ -37,9 +37,6 @@ Si vous désinscrivez votre téléphone, il restera chiffré.
     (Sur certains téléphones, vous devez choisir **Stockage** > **Chiffrement de stockage** ou **Stockage** > **Écran de verrouillage et sécurité** > **Autres paramètres de sécurité** pour trouver l’option Chiffrer).
 
 3.  Suivez les instructions à l'écran. Au cours du chiffrement, votre appareil peut redémarrer plusieurs fois.
-
-> [!Note]
-> Certains appareils Android ne peuvent pas être chiffrés. Découvrez-en plus [ici](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>Réponse aux problèmes
 **Problème** : Vous avez déjà chiffré votre appareil, et vous constatez l’un des problèmes décrits ci-après.

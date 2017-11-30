@@ -1,208 +1,172 @@
 ---
 title: "Configurer et gérer les certificats PKCS avec Intune"
-titlesuffix: Azure portal
-description: "Découvrez comment configurer votre infrastructure avant de créer et affecter des certificats PKCS avec Intune."
+titleSuffix: Intune on Azure
+description: "Créez et affectez des certificats PKCS avec Intune."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: MicrosoftGuyJFlo
+ms.author: joflore
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
-ms.reviewer: vinaybha
+ms.assetid: 
+ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dff7d3e00b26b4f186beb71bacf13738ac857a3
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
+ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/16/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurer et gérer les certificats PKCS avec Intune
+
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Cette rubrique vous explique comment configurer votre infrastructure, puis comment créer et affecter des profils de certificat PKCS avec Intune.
+## <a name="requirements"></a>Configuration requise
 
-Pour effectuer une authentification basée sur certificat dans votre organisation, vous avez besoin d’une autorité de certification d’entreprise.
+Pour utiliser des certificats PKCS avec Intune, vous devez disposer de l’infrastructure suivante :
 
-Pour utiliser des profils de certificat PKCS en plus de l’autorité de certification d’entreprise, il vous faut également :
+* Un domaine Active Directory Domain Services (AD DS) déjà configuré.
+ 
+  Si vous avez besoin de plus d’informations sur l’installation et la configuration d’AD DS, consultez l’article [Conception et planification AD DS](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
 
--   Un ordinateur capable de communiquer avec l’autorité de certification (ou vous pouvez utiliser l’ordinateur d’autorité de certification proprement dit)
+* Une autorité de certification (AC) d’entreprise déjà configurée.
 
--  Intune Certificate Connector, qui s'exécute sur l'ordinateur qui peut communiquer avec l'autorité de certification
+  Si vous avez besoin de plus d’informations sur l’installation et la configuration des services de certificats Active Directory (AD CS), consultez l’article [Guide pas à pas des services de certificats Active Directory](https://technet.microsoft.com/library/cc772393).
 
-## <a name="important-terms"></a>Termes importants
+  > [!WARNING]
+  > Intune impose d’exécuter AD CS avec une autorité de certification (AC) d’entreprise, et non avec une AC autonome.
 
+* Un client connecté à l’AC d’entreprise.
+* Une copie exportée de votre certificat racine provenant de votre AC d’entreprise.
+* Microsoft Intune Certificate Connector (NDESConnectorSetup.exe), téléchargé sur votre portail Intune.
+* Un serveur Windows Server disponible pour héberger Microsoft Intune Certificate Connector (NDESConnectorSetup.exe).
 
--    **Domaine Active Directory** : tous les serveurs répertoriés dans cette section (à l’exception du serveur du proxy d’application web) doivent être joints à votre domaine Active Directory.
+## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Exporter le certificat racine à partir de l’AC d’entreprise
 
--  **Autorité de certification** : autorité de certification d’entreprise qui s’exécute sur une édition Entreprise de Windows Server 2008 R2 ou version ultérieure. Une autorité de certification autonome n'est pas prise en charge. Pour savoir comment configurer une autorité de certification, consultez [Installer l'autorité de certification](http://technet.microsoft.com/library/jj125375.aspx).
-    Si votre autorité de certification exécute Windows Server 2008 R2, vous devez [installer le correctif logiciel à partir de KB2483564](http://support.microsoft.com/kb/2483564/).
+Un certificat d’AC intermédiaire ou racine est nécessaire sur chaque appareil pour l’authentification avec un VPN, un réseau Wi-Fi et d’autres ressources. Les étapes suivantes expliquent comment récupérer le certificat requis auprès de l’AC d’entreprise concernée.
 
--  **Un ordinateur capable de communiquer avec l’autorité de certification** : en guise d’alternative, utilisez l’ordinateur d’autorité de certification proprement dit.
--  **Microsoft Intune Certificate Connector** : dans le portail Azure, vous téléchargez le programme d’installation de **Certificate Connector** (**ndesconnectorssetup.exe**). Vous pouvez ensuite exécuter **ndesconnectorssetup.exe** sur l'ordinateur où vous souhaitez installer Certificate Connector. Pour les profils de certificat PKCS, installez Certificate Connector sur l'ordinateur qui communique avec l'autorité de certification.
--  **Serveur proxy d’application web** (facultatif) : vous pouvez utiliser un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web. Cette configuration :
-    -  Permet aux appareils de recevoir des certificats à l'aide d'une connexion Internet.
-    -  Est une recommandation de sécurité lorsque les appareils se connectent via Internet pour recevoir et renouveler les certificats.
+1. Ouvrez une session auprès de votre AC d’entreprise, sous un compte bénéficiant de privilèges administratifs.
+2. Ouvrez une invite de commandes en tant qu’administrateur.
+3. Exportez le certificat d’AC racine à un emplacement où vous pourrez accéder ultérieurement.
 
- > [!NOTE]           
-> -    Le serveur qui héberge le proxy d’application web [doit installer une mise à jour](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) qui permet la prise en charge des longues URL utilisées par le service d’inscription d’appareil réseau (NDES). Cette mise à jour est incluse dans le [correctif cumulatif de décembre 2014](http://support.microsoft.com/kb/3013769), ou individuellement à partir de l'article [KB3011135](http://support.microsoft.com/kb/3011135).
->-  En outre, le serveur qui héberge le proxy d’application web doit avoir un certificat SSL qui correspond au nom publié sur les clients externes, et approuver le certificat SSL utilisé sur le serveur NDES. Ces certificats permettent au serveur du proxy d'application web de mettre fin à la connexion SSL à partir des clients et de créer une nouvelle connexion SSL au serveur NDES.
-    Pour plus d’informations sur les certificats du proxy d’application web, consultez la section **Planifier des certificats** dans [Planification de publication des applications à l’aide du proxy d’application web](https://technet.microsoft.com/library/dn383650.aspx) Pour obtenir des informations générales sur les serveurs proxy d’application web, consultez [Utilisation d’un proxy d’application web](http://technet.microsoft.com/library/dn584113.aspx).|
+   Exemple :
 
+   `certutil -ca.cert certnew.cer`
 
-## <a name="certificates-and-templates"></a>Certificats et modèles
-
-|Objet|Détails|
-|----------|-----------|
-|**Modèle de certificat**|Vous configurez ce modèle sur votre autorité de certification émettrice.|
-|**Certificat d’autorité de certification racine approuvée**|Vous devez l’exporter en tant que fichier **.cer** à partir de l’autorité de certification émettrice ou de tout appareil qui approuve l’autorité de certification émettrice, puis l’affecter à des appareils à l’aide du profil de certificat d’autorité de certification approuvée.<br /><br />Vous utilisez un seul certificat d'autorité de certification racine approuvée par plateforme de système d'exploitation et l'associez à chaque profil de certificat racine approuvé que vous créez.<br /><br />Vous pouvez utiliser des certificats d'autorité de certification racine approuvée supplémentaires chaque fois que nécessaire. Par exemple, vous pouvez agir ainsi pour fournir une relation d'approbation à une autorité de certification qui signe les certificats d'authentification du serveur pour vos points d'accès Wi-Fi.|
+   Pour plus d’informations, consultez la page [Tâches CertUtil pour la gestion des certificats](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
 
 
-## <a name="configure-your-infrastructure"></a>Configurer votre infrastructure
-Pour pouvoir configurer des profils de certificat, vous devez d’abord effectuer les étapes suivantes. Pour suivre ces étapes, vous devez connaître Windows Server 2012 R2 et les services de certificats Active Directory (AD CS) :
+## <a name="configure-certificate-templates-on-the-certification-authority"></a>Configurer les modèles de certificats sur l’autorité de certification
 
-- **Étape 1** : configurer les modèles de certificats sur l’autorité de certification.
-- **Étape 2** : activer, installer et configurer Intune Certificate Connector.
+1. Ouvrez une session auprès de votre AC d’entreprise, sous un compte bénéficiant de privilèges administratifs.
+2. Ouvrez la console **Autorité de certification**.
+3. Cliquez avec le bouton droit sur **Modèles de certificats** et sélectionnez **Gérer**.
+4. Recherchez le modèle de certificat **Utilisateur**, cliquez avec le bouton droit et sélectionnez **Dupliquer le modèle**. La fenêtre **Propriétés du nouveau modèle** s’ouvre.
+5. Dans l’onglet **Compatibilité** :
+   * **Autorité de certification** : **Windows Server 2008 R2**
+   * **Destinataire du certificat** : **Windows 7 / Server 2008 R2**
+6. Sous l'onglet **Général** :
+   * Dans **Nom complet du modèle**, choisissez un nom qui a du sens pour vous.
 
-## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>Étape 1 : configurer les modèles de certificats sur l’autorité de certification
+   > [!WARNING]
+   > Par défaut, **Nom du modèle** est identique à **Nom complet du modèle**, *sans les espaces*. Notez le nom du modèle ; vous l’utiliserez plus tard.
 
-### <a name="to-configure-the-certification-authority"></a>Pour configurer l'autorité de certification
+7. Dans l’onglet **Traitement des demandes**, cochez la case **Autoriser l’exportation de la clé privée**.
+8. Dans l’onglet **Chiffrement**, vérifiez que **Taille de clé minimale** a la valeur 2048.
+9. Dans l’onglet **Nom de l’objet**, sélectionnez la case d’option **Fournir dans la demande**.
+10. Dans l’onglet **Extensions**, vérifiez que vous voyez bien Système de fichiers EFS, Messagerie sécurisée et Authentification client sous **Stratégies d’application**.
+    
+      > [!IMPORTANT]
+      > Pour les modèles de certificats iOS et macOS, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
 
-1.  Sur l’autorité de certification émettrice, utilisez le composant logiciel enfichable Modèles de certificats pour créer un modèle personnalisé ou copiez un modèle existant, puis modifiez-le (par exemple, le modèle Utilisateur) pour l’utiliser avec PKCS.
+11. Dans l’onglet **Sécurité**, ajoutez le compte d’ordinateur du serveur sur lequel vous avez installé Microsoft Intune Certificate Connector.
+    * Accordez les autorisations **Lecture** et **Inscription** à ce compte.
+12. Cliquez sur **Appliquer**, puis sur **OK** pour enregistrer le modèle de certificat.
+13. Fermez la **Console Modèles de certificat**.
+14. Dans la console **Autorité de certification**, cliquez avec le bouton droit sur **Modèles de certificats**, **Nouveau** et **Modèle de certificat à délivrer**.
+    * Choisissez le modèle que vous avez créé lors des étapes précédentes et cliquez sur **OK**.
+15. Pour que le serveur gère les certificats pour le compte des utilisateurs et appareils inscrits auprès d’Intune, suivez ces étapes :
 
-    Le modèle doit inclure les éléments suivants :
+    a. Cliquez avec le bouton droit sur l’autorité de certification et sélectionnez **Propriétés**.
 
-    -   Spécifiez un **Nom complet du modèle** convivial pour le modèle.
+    b. Dans l’onglet Sécurité, ajoutez le compte d’ordinateur du serveur sur lequel vous exécutez Microsoft Intune Certificate Connector.
+      * Accordez les autorisations **Émettre et gérer des certificats** et **Demander des certificats** au compte d’ordinateur.
+16. Fermez votre session auprès de l’AC d’entreprise.
 
-    -   Sous l'onglet **Nom de l'objet** , sélectionnez **Fournir dans la demande**. (La sécurité est appliquée par le module de stratégie Intune pour NDES.)
+## <a name="download-install-and-configure-the-microsoft-intune-certificate-connector"></a>Télécharger, installer et configurer Microsoft Intune Certificate Connector
 
-    -   Sous l'onglet **Extensions** , vérifiez que **Description des stratégies d'application** inclut **Authentification du client**.
+![Téléchargement de Connector][ConnectorDownload]
 
-        > [!IMPORTANT]
-        > Pour les modèles de certificats iOS et macOS, sous l’onglet **Extensions**, modifiez **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Accédez à **Intune**, **Configuration de l’appareil**, **Autorité de certification**, puis cliquez sur **Télécharger Certificate Connector**.
+   * Enregistrez le fichier téléchargé à un emplacement où vous pouvez accéder, sur le serveur où vous effectuerez l’installation.
+3. Ouvrez une session sur le serveur où vous installerez Microsoft Intune Certificate Connector.
+4. Exécutez le programme d’installation et acceptez l’emplacement par défaut. Il installe le connecteur à cet endroit : C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.
 
-2.  Examinez la **Période de validité** sous l'onglet **Général** du modèle. Par défaut, Intune utilise la valeur configurée dans le modèle. Toutefois, vous pouvez configurer l’autorité de certification pour permettre au demandeur de spécifier une valeur différente, que vous pouvez alors définir à partir de la console d’administration Intune. Si vous souhaitez toujours utiliser la valeur du modèle, ignorez le reste de l'étape.
+      a. Sur la page Options du programme d’installation, sélectionnez **Distribution PFX** et cliquez sur **Suivant**.
 
-    > [!IMPORTANT]
-    > iOS et macOS utilisent toujours la valeur définie dans le modèle, indépendamment des autres configurations que vous effectuez.
+   b. Cliquez sur **Installer** et attendez que l’installation se termine.
 
-    Pour configurer l’autorité de certification et permettre au demandeur de spécifier la période de validité, exécutez les commandes suivantes sur l’autorité de certification :
+   c. Sur la page de fin, cochez la case intitulée **Lancer Intune Connector** et cliquez sur **Terminer**.
 
-    a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+5. La fenêtre NDES Connector s’ouvre sur l’onglet **Inscription**. Pour activer la connexion à Intune, vous devez cliquer sur **Connexion** et spécifier un compte disposant d’autorisations administratives.
+6. Sur l’onglet **Avancé**, vous pouvez laisser la case d’option **Utiliser le compte SYSTÈME de cet ordinateur (par défaut)** sélectionné.
+7. Cliquez sur **Appliquer**, puis sur **Fermer**.
+8. Revenez à présent sur le Portail Azure. Sous **Intune**, **Configuration de l’appareil**, **Autorité de certification**, vous devez voir apparaître une coche verte et le mot **Active** sous **État de la connexion** au bout de quelques minutes. Cette confirmation vous indique que votre serveur de connecteur peut communiquer avec Intune.
 
-    b.  **net stop certsvc**
+## <a name="create-a-device-configuration-profile"></a>Créer un profil de configuration d’appareils
 
-    c.  **net start certsvc**
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Accédez à **Intune**, **Configuration de l’appareil**, **Profils**, puis cliquez sur **Créer un profil**.
 
-3.  Sur l'autorité de certification émettrice, utilisez le composant logiciel enfichable Autorité de Certification pour publier le modèle de certificat.
+   ![Accès à Intune][NavigateIntune]
 
-    a.  Sélectionnez le nœud **Modèles de certificats**, cliquez sur **Action**-&gt; **Nouveau** &gt; **Modèle de certificat à délivrer**, puis sélectionnez le modèle que vous avez créé à l’étape 2.
+3. Remplissez les informations suivantes :
+   * le **Nom** du profil ;
+   * une description (facultatif) ;
+   * la **Plateforme** sur laquelle le profil sera déployé ;
+   * **Type de profil** : **Certificat approuvé**.
+4. Accédez à **Paramètres** et fournissez le fichier .cer du certificat d’AC racine exporté précédemment.
 
-    b.  Validez le modèle publié en l'affichant sous le dossier **Modèles de certificats** .
+   > [!NOTE]
+   > Selon la plateforme que vous avez choisie à **l’Étape 3**, vous n’aurez pas forcément la possibilité de choisir la **Banque d’informations de destination** du certificat.
 
-4.  Sur l’ordinateur de l’autorité de certification, vérifiez que l’ordinateur qui héberge Intune Certificate Connector a l’autorisation Inscription qui lui permet d’accéder au modèle utilisé pour créer le profil de certificat PKCS. Définissez cette autorisation sous l'onglet **Sécurité** des propriétés de l'ordinateur d'autorité de certification.
+   ![Paramètres du profil][ProfileSettings]
 
-## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>Étape 2 : activer, installer et configurer Intune Certificate Connector
-Au cours de cette étape, vous allez :
+5. Cliquez sur **OK**, puis sur **Créer** pour enregistrer votre profil.
+6. Pour affecter le nouveau profil à un ou plusieurs appareils, consultez la page [Affecter des profils d’appareils Microsoft Intune](device-profile-assign.md).
 
-- activer la prise en charge de Certificate Connector ;
-- télécharger, installer et configurer Certificate Connector.
+## <a name="create-a-pkcs-certificate-profile"></a>Créer un profil de certificat PKCS
 
-### <a name="to-enable-support-for-the-certificate-connector"></a>Pour activer la prise en charge de Certificate Connector
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Accédez à **Intune**, **Configuration de l’appareil**, **Profils**, puis cliquez sur **Créer un profil**.
+3. Remplissez les informations suivantes :
+   * le **Nom** du profil ;
+   * une description (facultatif) ;
+   * la **Plateforme** sur laquelle le profil sera déployé ;
+   * **Type de profil** : **Certificat PKCS**.
+4. Accédez à **Paramètres** et indiquez les informations suivantes :
+   * **Seuil de renouvellement (%)** : la valeur recommandée est de 20 %.
+   * **Période de validité du certificat** : si vous n’avez pas modifié le modèle de certificat, cette option devrait être réglée sur un an.
+   * **Autorité de certification** : cette option correspond au nom de domaine complet (FQDN) interne de l’AC d’entreprise.
+   * **Nom de l’autorité de certification** : cette option fait référence au nom de l’AC d’entreprise, qui peut être différent de l’élément précédent.
+   * **Nom du modèle de certificat** : cette option correspond au nom du modèle créé précédemment. Rappel : Par défaut, **Nom du modèle** est identique à **Nom complet du modèle**, *sans les espaces*.
+   * **Format du nom de l’objet** : réglez cette option sur **Nom commun**, sauf indication contraire.
+   * **Autre nom de l’objet** : réglez cette option sur **Nom d’utilisateur principal (UPN)**, sauf indication contraire.
+   * **Utilisation améliorée de la clé** : à condition que vous ayez utilisé les paramètres par défaut à l’étape 10 de la section précédente **Configurer les modèles de certificats sur l’autorité de certification**, ajoutez les **Valeurs prédéfinies**  suivantes dans la zone de sélection :
+      * **Tout objet**
+      * **Authentification client**
+      * **Messagerie sécurisée**
+   * **Certificat racine** (pour les profils Android) : cette option fait référence au fichier .cer exporté à l’étape 3 de la section précédente [Exporter le certificat racine à partir de l’AC d’entreprise](#export-the-root-certificate-from-the-enterprise-ca).
 
-1.  Connectez-vous au portail Azure.
-2.  Choisissez **Plus de services** > **Surveillance + Gestion** > **Intune**.
-3.  Dans le panneau **Intune**, choisissez **Configurer des appareils**.
-2.  Dans le panneau **Configuration de l’appareil**, choisissez **Configuration** > **Autorité de certification**.
-2.  Sous **Étape 1**, choisissez **Activer**.
-
-### <a name="to-download-install-and-configure-the-certificate-connector"></a>Pour télécharger, installer et configurer Certificate Connector
-
-1.  Dans le panneau **Configurer des appareils**, choisissez **Configuration** > **Autorité de certification**.
-2.  Choisissez **Télécharger le connecteur de certificats**.
-2.  Une fois le téléchargement terminé, exécutez le programme d’installation téléchargé (**ndesconnectorssetup.exe**).
-  Exécutez le programme d’installation sur l’ordinateur qui peut se connecter à l’autorité de certification. Choisissez l’option Distribution PKCS (PFX), puis choisissez **Installer**. Une fois l’installation terminée, créez un profil de certificat comme décrit dans [Configuration des profils de certificat](certificates-configure.md).
-
-3.  Quand vous êtes invité à entrer le certificat client pour Certificate Connector, choisissez **Sélectionner**, puis sélectionnez le certificat **d'authentification client** que vous avez installé.
-
-    Après avoir sélectionné le certificat d'authentification client, vous revenez au **Certificat client pour Microsoft Intune Certificate Connector** . Bien que le certificat sélectionné n’apparaisse pas, choisissez **Suivant** pour afficher les propriétés du certificat. Choisissez ensuite **Suivant**, puis **Installer**.
-
-4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
-
-    > [!TIP]
-    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
-    >
-    > **&lt;chemin_installation&gt;\NDESConnectorUI\NDESConnectorUI.exe**
-
-5.  Dans l'interface utilisateur de **Certificate Connector** :
-
-    a. Choisissez **Connexion** et entrez vos informations d’identification d’administrateur du service Intune ou les informations d’identification d’un administrateur client doté de l’autorisation d’administration globale.
-
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
-    b. Sélectionnez l’onglet **Avancé** , puis fournissez les informations d’identification d’un compte qui possède l’autorisation **Émettre et gérer des certificats** sur votre autorité de certification émettrice.
-
-    c. Choisissez **Appliquer**.
-
-    Vous pouvez maintenant fermer l'interface utilisateur de Certificate Connector.
-
-6.  Ouvrez une invite de commandes et tapez **services.msc**. Appuyez ensuite sur **Entrée**, cliquez avec le bouton droit sur **Service du connecteur Intune**, puis choisissez **Redémarrer**.
-
-Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL suivante, ce qui doit retourner une erreur **403** :
-
-**http:// &lt;nom_de_domaine_complet_de_votre_serveur_NDES&gt;/certsrv/mscep/mscep.dll**
+5. Cliquez sur **OK**, puis sur **Créer** pour enregistrer votre profil.
+6. Pour affecter le nouveau profil à un ou plusieurs appareils, consultez l’article [Affecter des profils d’appareils Microsoft Intune](device-profile-assign.md).
 
 
-### <a name="how-to-create-a-pkcs-certificate-profile"></a>Comment créer un profil de certificat PKCS
-
-Dans le portail Azure, sélectionnez la charge de travail **Configurer des appareils**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-3. Dans le panneau de profils, cliquez sur **Créer un profil**.
-4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de certificat PKCS.
-5. Dans la liste déroulante **Plateforme**, sélectionnez la plateforme d’appareil pour ce certificat PKCS :
-    - **Android**
-    - **Android for Work**
-    - **iOS**
-    - **Windows 10 et versions ultérieures**
-6. Dans la liste déroulante **Type de profil**, choisissez **Certificat PKCS**.
-7. Dans le panneau **Certificat PKCS**, configurez les paramètres suivants :
-    - **Seuil de renouvellement (%)** : spécifiez le pourcentage de durée de vie restante du certificat avant que l’appareil ne demande le renouvellement du certificat.
-    - **Période de validité du certificat** : si vous avez exécuté la commande **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** sur l’autorité de certification émettrice, ce qui autorise une période de validité personnalisée, vous pouvez spécifier le temps restant avant l’expiration du certificat.<br>Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
-    - **Fournisseur de stockage de clés** (Windows 10) : spécifiez l’emplacement de stockage de la clé du certificat. Choisissez l'une des valeurs suivantes :
-        - **Inscrire auprès du fournisseur de stockage de clés (KSP) du module de plateforme sécurisée (TPM) s’il est présent ; sinon, inscrire auprès du fournisseur de stockage de clés du logiciel**
-        - **Inscrire auprès du fournisseur de stockage de clés (KSP) du module de plateforme sécurisée (TPM), sinon mettre en échec**
-        - **Inscrire auprès de Passport, sinon mettre en échec (Windows 10 et versions ultérieures)**
-        - **Inscrire auprès du fournisseur de stockage de clés du logiciel**
-    - **Autorité de certification** : autorité de certification d’entreprise qui s’exécute sur une édition Entreprise de Windows Server 2008 R2 ou version ultérieure. Une autorité de certification autonome n'est pas prise en charge. Pour savoir comment configurer une autorité de certification, consultez [Installer l'autorité de certification](http://technet.microsoft.com/library/jj125375.aspx). Si votre autorité de certification exécute Windows Server 2008 R2, vous devez [installer le correctif logiciel à partir de KB2483564](http://support.microsoft.com/kb/2483564/).
-    - **Nom de l’autorité de certification** : entrez le nom de votre autorité de certification.
-    - **Nom du modèle de certificat** : entrez le nom d’un modèle de certificat que doit utiliser le service d’inscription de périphériques réseau conformément à sa configuration et qui a été ajouté à une autorité de certification émettrice.
-    Assurez-vous que le nom correspond exactement à l’un des modèles de certificat figurant dans le registre du serveur exécutant le service d’inscription de périphériques réseau. Assurez-vous que vous spécifiez le nom du modèle de certificat et non le nom d'affichage du modèle de certificat. 
-    Pour rechercher les noms des modèles de certificats, accédez à la clé suivante : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. Les modèles de certificat s'affichent sous la forme des valeurs **EncryptionTemplate**, **GeneralPurposeTemplate**et **SignatureTemplate**. Par défaut, la valeur des trois modèles de certificat est IPSECIntermediateOffline, laquelle correspond au nom d’affichage du modèle **IPSec (requête hors connexion)**. 
-    - **Format du nom de l’objet** : dans la liste, sélectionnez comment Intune crée automatiquement le nom de l’objet dans la demande de certificat. Si le certificat est pour un utilisateur, vous pouvez également inclure l'adresse e-mail de cet utilisateur dans le nom de l'objet. Choisissez parmi :
-        - **Non configuré**
-        - **Nom commun**
-        - **Nom commun (adresse e-mail incluse)**
-        - **Nom commun comme adresse e-mail**
-    - **Autre nom de l’objet** : spécifiez comment Intune crée automatiquement les valeurs pour l’autre nom de l’objet dans la demande de certificat. Par exemple, si vous avez sélectionné un type de certificat utilisateur, vous pouvez inclure le nom d'utilisateur principal (UPN) dans l'autre nom de l'objet. Si le certificat client est utilisé pour l'authentification sur un serveur de stratégie réseau, l'autre nom de l'objet doit être défini sur le nom d'utilisateur principal. 
-    Vous pouvez également sélectionner **Attribut Azure AD personnalisé**. Lorsque vous sélectionnez cette option, un autre champ de liste déroulante s’affiche. À partir du champ de liste déroulante **Attribut Azure AD personnalisé**, une option est présente : **Service**. Lorsque vous sélectionnez cette option, si le service n’est pas identifié dans Azure AD, le certificat n’est pas émis. Pour résoudre ce problème, identifiez le service et enregistrez les modifications. Lors du prochain archivage de l’appareil, le problème est résolu et le certificat est émis. ASN.1 est la notation utilisée pour ce champ. 
-    - **Utilisation de la clé étendue** (Android) : choisissez **Ajouter** pour ajouter des valeurs pour le rôle prévu du certificat. Dans la plupart des cas, le certificat demande une **Authentification client** afin que l'utilisateur ou l'appareil puisse être authentifié sur un serveur. Toutefois, vous pouvez ajouter d'autres utilisations de la clé en fonction de vos besoins. 
-    - **Certificat racine** (Android) : choisissez un profil de certificat d’autorité de certification racine que vous avez précédemment configuré et attribué à l’utilisateur ou à l’appareil. Ce certificat d'autorité de certification doit être le certificat racine de l'autorité de certification qui émet le certificat que vous configurez dans ce profil de certificat. Il s’agit du profil de certificat approuvé que vous avez créé précédemment.
-8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et cliquez sur **Créer**.
-
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
-
-## <a name="how-to-assign-the-certificate-profile"></a>Comment affecter le profil de certificat
-
-Considérez les éléments suivants avant d’attribuer des profils de certificat aux groupes :
-
-- Quand vous attribuez des profils de certificat aux groupes, le fichier de certificat issu du profil de certificat d’autorité de certification approuvée est installé sur l’appareil. L’appareil utilise le profil de certificat PKCS pour créer une demande de certificat par l’appareil.
-- Les profils de certificat s’installent uniquement sur les appareils exécutant la plateforme que vous utilisez quand vous créez le profil.
-- Vous pouvez affecter des profils de certificat sur des regroupements d’utilisateurs ou d’appareils.
-- Pour publier un certificat sur un appareil rapidement après l’inscription de l’appareil, affectez le profil de certificat à un groupe d’utilisateurs plutôt qu’à un groupe d’appareils. Si vous l’affectez à un groupe d’appareils, une inscription complète des appareils est préalablement nécessaire pour qu’ils puissent recevoir des stratégies.
-- Même si vous affectez chaque profil séparément, vous devez également affecter l’autorité de certification racine approuvée et le profil PKCS. Dans le cas contraire, la stratégie de certificat PKCS échoue.
-
-Pour plus d’informations sur la façon d’affecter des profils, consultez [Guide pratique pour attribuer des profils d’appareils](device-profile-assign.md).
+[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Accéder à Intune sur le Portail Azure et créer un nouveau profil pour un certificat approuvé"
+[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Créer un profil et charger un certificat approuvé"
+[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "Télécharger Certificate Connector sur le Portail Azure"
