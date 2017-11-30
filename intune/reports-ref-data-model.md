@@ -5,7 +5,7 @@ keywords: "Entrepôt de données Intune"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,26 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modèle de données de l’entrepôt de données
 
-L’entrepôt de données Intune échantillonne quotidiennement les données pour vous offrir un historique de votre environnement mobile en constante évolution.
+L’entrepôt de données Intune échantillonne quotidiennement les données pour vous offrir un historique de votre environnement d’appareils mobiles, qui évolue en permanence. L’affichage se compose d’éléments associés dans le temps.
 
-Les données extraites de votre locataire sont ajoutées dans un entrepôt de données. L’entrepôt est un ensemble d’entités et de relations qui sont utiles pour répondre aux questions que vous souhaitez poser. Par exemple, vous pouvez passer en revue le nombre d’installations quotidiennes d’une application Android développée en interne au cours de la semaine dernière pour déterminer si les installations sont à la hausse. La structure de l’entrepôt de données vous permet d’obtenir des insights sur votre environnement mobile. Des outils analytiques comme Microsoft Power BI peuvent ensuite utiliser le modèle de données de l’entrepôt de données pour créer des visualisations et des tableaux de bord dynamiques.
+## <a name="things-entity-sets"></a>Éléments : jeux d’entités
 
-La structure de l’entrepôt de données Intune repose sur un modèle de schéma en étoile. Un schéma en étoile organise des faits par rapport à la dimension temps. Dans le contexte du modèle, un *fait* est une mesure quantitative comme le nombre d’appareils, le nombre d’applications ou l’heure de l’inscription. Dans le même contexte, une *dimension* est un jeu de catégories et de leurs relations hiérarchiques. Par exemple, les jours sont regroupés en mois et les mois en années. Optimisé pour la flexibilité et l’analyse des données, un modèle de schéma en étoile vous permet de créer les rapports nécessaires pour comprendre l’évolution de votre environnement mobile.
+L’entrepôt expose les données dans les zones générales suivantes :
 
-L’entrepôt de données expose les données dans les catégories principales suivantes :
   -  Applications protégées par App Protection et utilisation
   -  Appareils inscrits, propriétés et inventaire
   -  Inventaire des applications et des logiciels
   -  Configuration des appareils et stratégies de conformité
 
-**Jeux d’entités du modèle de données**
-
-Les jeux d’entités sont des collections nommées d’entités dans le modèle de données. Ces jeux contiennent des entités qui définissent les données collectées dans le modèle. Chaque jeu d’entités fournit un point d’accès au modèle de données de l’entrepôt de données. Pour plus d’informations, cliquez sur les catégories d’entités suivantes :
+Ces zones contiennent les entités, ou éléments, qui sont significatives pour l’environnement Intune. Pour plus d’informations sur les jeux d’entités, consultez les rubriques suivantes :
 
   -  [Application](reports-ref-application.md)
   -  [Date](reports-ref-date.md)
@@ -45,4 +42,23 @@ Les jeux d’entités sont des collections nommées d’entités dans le modèle
   -  [Stratégie](reports-ref-policy.md)
   -  [Gestion des applications mobiles (GAM)](reports-ref-mobile-app-management.md)
   -  [Utilisateur](reports-ref-user.md)
+  -  [Utilisateur actuel](reports-ref-current-user.md)
   -  [Associations appareil-utilisateur](reports-ref-user-device.md)
+
+## <a name="relationships-star-schema-model"></a>Relations : modèle de schéma en étoile
+
+L’entrepôt organise les entités selon des relations utiles pour répondre aux questions que vous souhaitez poser. Vous pouvez, par exemple, consulter le nombre d’installations d’une application Android développée en interne. La structure de l’entrepôt de données vous permet d’obtenir des insights sur votre environnement mobile. Des outils analytiques comme Microsoft Power BI peuvent ensuite utiliser le modèle de données de l’entrepôt de données pour créer des visualisations et des tableaux de bord dynamiques.
+
+Les entités et les relations suivent un modèle de schéma en étoile. Un schéma en étoile corrèle des faits par rapport à la dimension temps. Dans le contexte du modèle, un *fait* est une mesure quantitative comme le nombre d’appareils, le nombre d’applications ou l’heure de l’inscription. Les tables de faits stockent une grande quantité de données. Elles peuvent devenir très volumineuses, c’est pourquoi elles limitent généralement les informations à 30 jours. Une *dimension* présente le contexte des faits. Là où le fait reflète ce qu’il s’est passé, les dimensions indiquent à qui. Les tables de dimensions, comme la table **Utilisateur**, sont plus petites et peuvent conserver les données plus longtemps que les tables de faits. 
+
+Optimisé pour la flexibilité et l’analyse des données, un modèle de schéma en étoile vous permet de créer les rapports nécessaires pour comprendre l’évolution de votre environnement mobile.
+
+## <a name="time-daily-snapshots"></a>Temps : instantanés quotidiens
+
+L’entrepôt est en aval des données Intune. Intune prend un instantané quotidien à minuit UTC, et le stocke dans l’entrepôt. La durée de conservation des instantanés varie d’une table de faits à l’autre : sept jours pour certaines, 30 jours pour d’autres, voire encore plus longtemps.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+ - Pour en savoir plus sur la façon dont l’entrepôt de données effectue le suivi de la durée de vie des utilisateurs dans Intune, consultez la page [Représentation de la durée de vie des utilisateurs dans l’entrepôt de données Intune](reports-ref-user-timeline.md).
+ - Pour plus d’informations sur l’utilisation des entrepôts de données, consultez la page [Créer un premier entrepôt de données](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+ - Pour plus d’informations sur l’utilisation de Power BI et d’un entrepôt de données, consultez la page [Créer un rapport Power BI en important un jeu de données](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/6/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f7cc595655950ef1bf2586e939b6f02e270e7afc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: f4fd810529732d2b24b948eb0ae741d37e0fb59e
+ms.sourcegitcommit: d64b03bff0566f08d88ecb488dd48f19af74cab3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="the-early-edition-for-microsoft-intune---november-2017"></a>Édition préliminaire pour Microsoft Intune - Novembre 2017
+# <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Édition préliminaire de Microsoft Intune - Décembre 2017
 
 **L’édition préliminaire** fournit la liste des fonctionnalités qui seront intégrées dans les prochaines versions de Microsoft Intune. Ces informations sont fournies de manière limitée et sont susceptibles de changer. Ne partagez pas ces informations en dehors de votre entreprise. Certaines fonctionnalités répertoriées ici risquent de ne pas être prêtes d’ici la date limite et d’être repoussées à une version ultérieure. D’autres fonctionnalités sont en cours de test dans un pilote (version d’évaluation) pour s’assurer qu'elles sont prêtes à l'emploi. Joignez votre contact de groupe de produits Microsoft si vous avez des questions ou rencontrez des problèmes.
 
@@ -39,7 +39,102 @@ Cette page est mise à jour périodiquement. Consultez-la régulièrement pour s
 
 ## <a name="intune-in-the-azure-portal"></a>Intune dans le portail Azure
 
+### <a name="app-protection-policies-----679615---"></a>Stratégies de protection des applications  <!-- 679615 -->
+Les stratégies Intune App Protection permettent de créer des stratégies globales, par défaut, afin d’activer rapidement la protection pour tous les utilisateurs dans l’ensemble du locataire.
 
+### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>Révocation des applications du Programme d’achat en volume iOS  <!-- 820863 -->
+Pour un appareil donné disposant d’une ou de plusieurs applications de Programme d’achat en volume (VPP) iOS, vous pourrez révoquer la licence d’application basée sur l’appareil associé. La révocation d’une licence d’application ne désinstalle pas l’application VPP de l’appareil. Pour désinstaller une application VPP, vous devez remplacer l’action d’attribution par **Désinstaller**. Pour plus d’informations, consultez [Guide pratique pour gérer les applications iOS achetées par le biais d’un programme d’achat en volume avec Microsoft Intune](vpp-apps-ios.md).
+
+### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>Révoquer des licences pour un jeton Programme d’achat en volume iOS <!-- 820870 -->
+Vous pourrez révoquer la licence de toutes les applications de Programme d’achat en volume (VPP) iOS pour un jeton VPP donné.
+
+### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>Supprimer un jeton Programme d’achat en volume iOS <!-- 820879 -->
+Vous pourrez supprimer le jeton Programme d’achat en volume (VPP) iOS à l’aide de la console. Ceci peut être nécessaire si vous avez des instances dupliquées d’un jeton VPP.
+
+### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>Création d’un rapport d’enregistrement d’appareil de contrôle d’accès réseau (NAC)  <!-- 1232250 -->
+Avant cette modification, les administrateurs informatiques ne pouvaient pas déterminer à partir d’Intune si un appareil géré par NAC communiquait ou pas avec leur solution NAC. Lorsqu’un appareil géré par NAC ne communique pas avec leur solution NAC, l’appareil est considéré comme non conforme par la solution NAC. Il est donc bloqué par la solution NAC et bloqué par les stratégies d’accès conditionnel qui reposent sur l’état de conformité de l’appareil.
+
+Grâce à cette modification, les administrateurs informatiques peuvent voir quels appareils gérés par NAC ont bien communiqué avec leur solution NAC. Cette nouvelle fonctionnalité est constituée de deux nouvelles fonctions de monitoring situées dans la charge de travail de conformité Appareil au sein d’Intune. Les statistiques sont illustrées ci-dessous :
+- **Moyenne d’appels NAC au cours de la dernière heure**
+- **Dernière requête NAC entrante (date/heure)**
+
+### <a name="new-ios-device-action------1244701---"></a>Nouvelle action sur appareil iOS   <!-- 1244701 -->
+Vous pouvez arrêter les appareils supervisés iOS 10.3. Cette action arrête immédiatement l’appareil sans avertir l’utilisateur final. L’action **Arrêter (supervisé uniquement)** se trouve dans les propriétés de l’appareil lorsque vous sélectionnez un appareil dans la charge de travail **Appareil**.
+
+### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>Réseau privé virtuel (VPN) Palo Alto désormais pris en charge <!-- 1333680 eeready -->
+La liste **Type de connexion** inclut le réseau privé virtuel Palo Alto lorsque vous configurez votre VPN de base.
+
+### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>Prise en charge de connecteurs multiples pour le traitement des certificats SCEP et PFX <!-- 1361755 eeready -->
+Les clients qui utilisent le connecteur NDES local pour présenter des certificats à des appareils pourront configurer plusieurs connecteurs dans un seul locataire.
+
+Cette nouvelle fonctionnalité prend en charge le scénario suivant :
+
+- **Haute disponibilité**
+
+    Chaque connecteur NDES extraie des demandes de certificat d’Intune.  Si un connecteur NDES a l’état hors connexion, l’autre connecteur peut continuer à traiter les requêtes.
+
+### <a name="new-automatic-redeployment-setting----1469168---"></a>Nouveau paramètre de redéploiement automatique <!-- 1469168 -->
+Ce paramètre permet aux utilisateurs avec des droits administratifs de supprimer l’ensemble des données et des paramètres utilisateur à l’aide des touches **CTRL + Win + R** sur l’écran de verrouillage de l’appareil. L’appareil sera automatiquement reconfiguré et réinscrit en gestion.
+
+Ce paramètre se situe sous Windows 10 -> Restrictions d’appareil -> Général -> Redéploiement automatique.
+
+### <a name="install-office-apps-on-macos-devices----1494311---"></a>Installer des applications Office sur des appareils macOS <!-- 1494311 -->
+Vous pourrez installer des applications Office sur des appareils macOS. Ce nouveau type d’application vous permettra d’installer Word, Excel, PowerPoint, Outlook et OneNote. Ces applications bénéficient également de Microsoft AutoUpdater (MAU) qui garantit que vos applications sont sécurisées et à jour.
+
+### <a name="surface-hub-resource-account-supported----1566442-eeready---"></a>Compte de ressource Surface Hub pris en charge <!-- 1566442 eeready -->
+Une nouvelle action d’appareil sera ajoutée pour permettre aux administrateurs de définir et de mettre à jour le compte de ressource associé à un Surface Hub.
+
+Le compte de ressource est utilisé par un Surface Hub pour l’authentification avec Skype/Exchange afin de prendre part à une réunion. Vous pouvez créer un compte de ressource unique afin que le Surface Hub s’affiche dans la réunion en tant que salle de conférence. Par exemple, le compte de ressource peut s’afficher comme *Salle de conférence B41/6233*. Le compte de ressource (également appelé compte de l’appareil) pour le Surface Hub doit en général être configuré pour l’emplacement de la salle de conférence et également lorsque d’autres paramètres du compte de ressource sont modifiés.
+
+Lorsque les administrateurs veulent mettre à jour le compte de ressource sur un appareil, ils doivent fournir les informations d’identification Active Directory/Azure Active Directory actuelles associées à l’appareil. Si la rotation de mot de passe est activée sur l’appareil, les administrateurs doivent accéder à Azure Active Directory pour trouver le mot de passe.
+
+> [!NOTE]
+> Tous les champs sont transmis sous forme de package et écrasent tous les champs précédemment configurés. Les champs vident écrasent également les champs existants.
+
+Vous trouverez ci-dessous les paramètres que les administrateurs peuvent configurer :
+
+- **Compte de ressource**  
+
+   - **Utilisateur Active Directory**   
+   Nomdedomaine\nomd’utilisateur ou Nom d’utilisateur principal (UPN) : user@domainname.com
+   - **Mot de passe**
+
+
+- **Paramètres facultatifs du compte de ressource** (à définir à l’aide du compte de ressource spécifié)
+   - **Période de rotation du mot de passe**   
+     Permet de s’assurer que le mot de passe du compte est automatiquement mis à jour par le Surface Hub chaque semaine à des fins de sécurité. Pour configurer des paramètres une fois cette option activée, il est nécessaire tout d’abord de réinitialiser le mot de passe du compte dans Azure Active Directory.
+
+   - **Adresse du protocole d’initiation de session (SIP)**    
+     Utilisée uniquement en cas d’échec de la découverte automatique.
+
+   - **E-mail**    
+     Adresse e-mail de l’appareil/du compte de ressource.
+
+   - **Exchange Server**    
+     Requis uniquement en cas d’échec de la découverte automatique.
+
+   - **Synchronisation du calendrier**    
+     Permet de spécifier si la synchronisation du calendrier et d’autres services Exchange Server sont activés. Par exemple : synchronisation de réunion.
+
+### <a name="intune-now-provides-the-account-move-operation-----1573558-1579830---"></a>Intune propose désormais l’opération Déplacer le compte  <!-- 1573558, 1579830 -->
+L’opération **Déplacer le compte** migre un locataire à partir d’une échelle d’unité Azure (ASU) vers une autre. L’opération **Déplacer le compte** peut être utilisée dans les scénarios initiés par le client, lorsque vous faites la demande de cette opération auprès de l’équipe de support d’Intune, et elle peut être utilisée dans un scénario géré par Microsoft lorsque Microsoft doit apporter des réglages au service dans le serveur principal. Au cours de l’opération **Déplacer le compte**, les locataires sont en mode lecture seule. Durant la période où les locataires sont en lecture seule, les opérations de service comme l’inscription, le changement de nom des appareils, la mise à jour de l’état de conformité, échoueront.
+
+### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>Nouveaux paramètres pour le profil de configuration d’appareil Windows Defender Security Center (WDSC) <!-- 1335507 -->
+Intune ajoute une nouvelle section de paramètres pour le profil de configuration d’appareil, sous la Protection du point de terminaison, nommée **Windows Defender Security Center**. Les administrateurs informatiques peuvent configurer les éléments de base auxquels les utilisateurs finaux de l’application Windows Defender Security Center peuvent accéder. Si un administrateur informatique masque un élément de base dans l’application Windows Defender Security Center, les notifications liées à l’élément de base masqué ne s’affichent pas sur l’appareil de l’utilisateur.
+
+Vous trouverez ci-dessous les éléments de base que les administrateurs peuvent masquer dans les paramètres du profil de configuration d’appareil Windows Defender Security Center :
+- Protection contre les menaces et les virus
+- Performances et intégrité de l’appareil
+- Protections du pare-feu et du réseau
+- Contrôle d’application et du navigateur
+- Options Famille
+
+Les administrateurs informatiques peuvent également personnaliser les notifications que les utilisateurs reçoivent. Par exemple, vous pouvez décider si les utilisateurs reçoivent toutes les notifications générées par les éléments de base visibles dans WDSC ou uniquement les notifications critiques. Les notifications non critiques incluent des résumés périodiques sur l’activité de l’antivirus Windows Defender et des notifications indiquant lorsque des analyses sont terminées. Toutes les autres notifications sont considérées comme critiques. En outre, vous pouvez aussi personnaliser le contenu même de la notification. Par exemple, vous pouvez fournir les coordonnées du service informatique à inclure dans les notifications qui s’affichent sur les appareils des utilisateurs.
+
+
+
+
+<!-- the following are present prior to 1712 -->
 ### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>Affecter des applications mobiles Office 365 aux appareils iOS et Android à l’aide du type d’application intégré <!-- 1332318 -->
 Le type d’application **Intégré** facilitera la création d’applications Office 365 et leur affectation aux appareils iOS et Android gérés. Ces applications incluent les applications Office 365 telles que Word, Excel, PowerPoint et OneDrive. Vous pouvez affecter des applications spécifiques au type d’application et modifier la configuration des informations des applications.
 

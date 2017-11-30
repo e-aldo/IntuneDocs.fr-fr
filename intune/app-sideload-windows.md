@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signer des applications métier afin de pouvoir les déployer sur des appareils Windows avec Intune
 
@@ -192,8 +192,9 @@ Voici comment signer et déployer l’application de cette façon :
 
 |Paramètre | Description|
 | ------------- | ------------- |
-|InputWin10AppxBundle |Chemin d’accès au fichier appxbundle source |
-|OutputWin10AppxBundle |Chemin de sortie du fichier appxbundle signé.  Win81Appx - Chemin d’accès au fichier (.APPX) Portail d’entreprise Windows 8.1 ou Windows Phone 8.1.|
+|InputWin10AppxBundle |Chemin d’accès au fichier appxbundle source. |
+|OutputWin10AppxBundle |Chemin de sortie du fichier appxbundle signé. |
+|Win81Appx | Chemin d’accès au fichier Portail d’entreprise Windows 8.1 ou Windows Phone 8.1 (.APPX).|
 |PfxFilePath |Chemin d’accès au fichier (.PFX) de signature de code Symantec Enterprise Mobile. |
 |PfxPassword| Mot de passe du fichier de signature de code Symantec Enterprise Mobile. |
 |PublisherId |ID d’éditeur de l’entreprise. S'il n'est pas fourni, le champ 'Subject' du certificat de signature de code Symantec Enterprise Mobile est utilisé.|

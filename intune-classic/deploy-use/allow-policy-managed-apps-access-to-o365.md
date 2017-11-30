@@ -15,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ad33ba7020f418f4894a689d5d66a74e4b8c10e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Autoriser uniquement les applications mobiles prenant en charge les stratégies de protection des applications Intune à accéder aux services Office 365
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Les [stratégies de protection des applications Intune](protect-apps-and-data-with-microsoft-intune.md) vous aident à protéger vos données d’entreprise sur les appareils qui sont inscrits pour la gestion dans Intune. Vous pouvez également utiliser des stratégies de protection des applications sur les **appareils détenus par l’employé qui ne sont pas inscrits pour la gestion dans Intune**.  Dans ce cas, même si vous ne gérez pas l’appareil, vous devez toujours vous assurer que vos données et ressources d’entreprise sont protégées. En utilisant l’accès conditionnel basé sur l’application avec la gestion des applications mobiles, vous pouvez créer une stratégie qui autorise uniquement les applications mobiles prenant en charge les stratégies de protection des applications Intune à accéder aux services O365 tels qu’Exchange Online.
+Les [stratégies de protection des applications Intune](protect-apps-and-data-with-microsoft-intune.md) vous aident à protéger vos données d’entreprise sur les appareils qui sont inscrits pour la gestion dans Intune. Vous pouvez également utiliser des stratégies de protection des applications sur les **appareils détenus par l’employé qui ne sont pas inscrits pour la gestion dans Intune**.  Dans ce cas, même si vous ne gérez pas l’appareil, vous devez toujours vous assurer que vos données et ressources d’entreprise sont protégées. En utilisant l’accès conditionnel en fonction des applications avec la gestion des applications mobiles, vous pouvez créer une stratégie qui autorise uniquement les applications mobiles prenant en charge les stratégies Intune App Protection à accéder aux services O365 tels qu’Exchange Online.
 
 Par exemple, en autorisant uniquement l’**application Microsoft Outlook** à accéder à Exchange Online, vous pouvez **bloquer les applications de messagerie intégrée sur iOS et Android**, qui ne bénéficient pas de la protection des données des stratégies GAM Intune pour récupérer des e-mails sur **Exchange Online**. Vous pouvez aussi empêcher les applications mobiles qui ne prennent pas en charge la gestion des application mobiles Intune d’accéder à **SharePoint Online**.
 
-Le diagramme ci-dessous illustre le flux utilisé par les stratégies d’accès conditionnel basé sur l’application pour déterminer quand autoriser ou bloquer l’accès : ![Diagramme qui montre les différents critères inclus pour déterminer s’il faut autoriser ou bloquer l’accès](../media/mam-ca-decision-flow_simple.png).
+Le diagramme ci-dessous illustre le flux utilisé par les stratégies d’accès conditionnel en fonction des applications pour déterminer quand autoriser ou bloquer l’accès : ![Diagramme qui montre les différents critères inclus pour déterminer s’il faut autoriser ou bloquer l’accès](../media/mam-ca-decision-flow_simple.png).
 
 Description des abréviations utilisées dans les diagrammes :
 * **CP** : application Portail d’entreprise
@@ -38,7 +38,7 @@ Description des abréviations utilisées dans les diagrammes :
 * **EAS** : Exchange Active Sync
 
 ## <a name="prerequisites"></a>Prérequis
-**Avant** de pouvoir créer une stratégie d’accès conditionnel basé sur l’application, vous devez avoir **un abonnement Enterprise Mobility + Security ou Azure Active Directory Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
+**Pour pouvoir** créer une stratégie d’accès conditionnel en fonction des applications, vous devez avoir un **abonnement Enterprise Mobility + Security ou Azure Active Directory Premium**, et les utilisateurs doivent disposer d’une licence EMS ou Azure AD. Pour plus d’informations, consultez la [page de tarification d’Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) ou la [page de tarification d’Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
 ## <a name="supported-apps"></a>Applications prises en charge
@@ -55,7 +55,7 @@ Description des abréviations utilisées dans les diagrammes :
 >[!IMPORTANT]
 >Pour les appareils Android, l’inscription initiale de l’appareil doit être effectuée en vous connectant à l’application OneDrive ou à l’application Outlook. L’application OneNote pour Android ne prend pas en charge MAM sans inscription.
 
-Pour en savoir plus sur l’expérience utilisateur avec une application qui a des stratégies d’accès conditionnel basé sur l’application, consultez [Ce qui se passe quand une application est utilisée dans le cadre de l’accès conditionnel pour la gestion des applications mobiles](use-apps-with-mam-ca.md).
+Pour en savoir plus sur l’expérience utilisateur avec une application qui applique des stratégies d’accès conditionnel en fonction des applications, consultez la page [Ce qui se passe quand une application est utilisée dans le cadre de l’accès conditionnel pour la gestion des applications mobiles](use-apps-with-mam-ca.md).
 
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5b3036485eef5d7a2b633b51229015d2f53d3fa7
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ac9b138edeb77eee3dc223eee8a35dc4cfd4e273
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Installer l’application Portail d’entreprise et s’y connecter
 
@@ -34,6 +34,6 @@ Le portail d’entreprise est une application que vous installez sur votre appar
 
 3.  Ouvrez l’application Portail d’entreprise, entrez votre adresse e-mail professionnelle ou scolaire ainsi que votre mot de passe, puis appuyez sur **Se connecter**.
 
-    Si vous vous connectez à l’application Portail d’entreprise pour la première fois et que votre entreprise ou établissement scolaire utilise Intune, vous êtes invité à inscrire votre appareil dans Intune. Pour vous inscrire, suivez les étapes indiquées dans [Inscrire votre appareil iOS dans Intune](enroll-your-device-in-intune-ios.md) ou [Inscrire votre appareil macOS dans Intune](enroll-your-device-in-intune-macos.md). Vous pouvez également [vous connecter à l’aide d’un autre appareil](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device). 
+    Si vous vous connectez à l’application Portail d’entreprise pour la première fois et que votre entreprise ou établissement scolaire utilise Intune, vous êtes invité à inscrire votre appareil dans Intune. Pour cela, suivez les étapes décrites dans la rubrique [Inscrire un appareil iOS dans Intune](enroll-your-device-in-intune-ios.md). Vous pouvez également [vous connecter à l’aide d’un autre appareil](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

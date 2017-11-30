@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/03/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: c03985bd7ca92fe4b4e8ea163b7db421bfae09c2
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: 6595382606b9c53083e7beec9ca02a314abb5899
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Quelles informations mon entreprise peut-elle voir quand j’inscris mon appareil ?
 
@@ -36,7 +36,7 @@ Quand vous inscrivez un appareil à la gestion, vous autorisez votre entreprise 
 
 **Ce que votre entreprise peut toujours voir**
 
-- Modèle d’appareil, par exemple iPhone 7
+- Modèle d’appareil, par exemple Google Pixel
 - Fabricant, par exemple Microsoft
 - Système d’exploitation, par exemple iOS
 - Noms d’applications, par exemple Microsoft Word
@@ -48,4 +48,5 @@ Quand vous inscrivez un appareil à la gestion, vous autorisez votre entreprise 
 
 -  Numéro de téléphone : pour les appareils appartenant à **l’entreprise**, votre numéro de téléphone complet peut être consulté. Pour les appareils **personnels**, seuls les quatre derniers chiffres de votre numéro de téléphone sont visibles pour votre entreprise. Vous pouvez voir le **Type de propriété** pour chaque appareil en ouvrant la page **Détails sur l’appareil** de l’appareil.
 -  Emplacement : votre entreprise ne peut jamais voir l’emplacement de votre appareil, sauf si vous possédez un appareil iOS qui est contrôlé et que vous l’avez perdu. [Comment savoir ?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Inventaire des applications : si votre entreprise utilise Mobile Threat Defense, elle peut voir plus de détails sur les applications présentes sur votre appareil. Découvrez plus d’informations sur [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Inventaire des applications : si votre entreprise utilise Mobile Threat Defense, elle peut voir plus de détails sur les applications présentes sur votre appareil iOS. Découvrez plus d’informations sur [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Informations sur le réseau : des informations sur les connexions réseau des appareils Android peuvent être disponibles pour la prise en charge de votre entreprise. Par exemple, si votre entreprise exige que les appareils se trouvent au sein d’un bâtiment spécifique, votre appareil identifierait le réseau auquel il est connecté. 

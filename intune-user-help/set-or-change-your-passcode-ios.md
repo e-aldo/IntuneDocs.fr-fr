@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7272c3d21674e4e0029cf49140638d9a3fd3306f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 5feec496d0f7952b1ae35ed1d905cbfc526bc387
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="set-or-change-your-passcode"></a>Définir ou modifier votre code secret
 
@@ -38,7 +38,7 @@ Si vous rencontrez des difficultés à définir un code secret qui répond aux e
 
 1. Appuyez sur **Paramètres** > **ID tactile et code secret**.
 2. Saisissez votre code secret. Le menu **ID tactile et code secret** s’ouvre.
-2. Appuyez sur **Changer le code secret** et entrez votre ancien mot de passe.
+2. Appuyez sur **Modifier le code secret** et entrez votre ancien mot de passe.
 3. Entrez un nouveau code secret qui répond aux exigences du support technique de votre entreprise, puis réentrez-le pour le confirmer.
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).

@@ -15,11 +15,11 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca60013503820077b25328db1089d175f2fb6a73
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: 141d0499f055441ff099a5bec1c4ea695f77326c
+ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier Android à Microsoft Intune
 
@@ -69,7 +69,7 @@ L’application que vous avez créée s’affichera dans la liste des applicatio
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Étape 5 : Mise à jour d’une application métier
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]Remarque : Pour que le service Intune parvienne à déployer un nouveau fichier APK sur l’appareil, il faut incrémenter la chaîne android:versionCode dans le fichier AndroidManifest.xml du package APK.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

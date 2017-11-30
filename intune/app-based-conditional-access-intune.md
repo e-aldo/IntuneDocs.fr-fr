@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f3a3104c4381028cca69ba3e129f4a30287a8e32
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accès conditionnel basé sur l’application avec Intune
 
@@ -54,7 +54,7 @@ Dans cet exemple, l’administrateur a appliqué des stratégies de protection d
 > [!NOTE]
 > La structure de l’organigramme ci-dessous peut être utilisée pour d’autres applications gérées.
 
-![Organigramme de l’accès conditionnel basé sur l’application avec Intune](./media/ca-intune-common-ways-3.png)
+![accès conditionnel en fonction des applications avec l’organigramme d’Intune](./media/ca-intune-common-ways-3.png)
 
 1.  L’utilisateur tente de s’authentifier sur Azure AD à partir de l’application Outlook.
 
