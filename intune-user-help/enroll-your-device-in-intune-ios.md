@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configurer l’accès aux ressources de l’entreprise
 
@@ -48,7 +48,7 @@ Votre entreprise possède de nombreuses informations privées : messagerie élec
 |![Invitation à saisir le mot de passe Azure AD.](./media/ios-0b-cp-enroll-1711.png)|Entrez votre mot de passe, puis appuyez sur **Connexion**.|
 |![Écran de démarrage du chargement des ressources de l’entreprise.](./media/ios-1-cp-enroll-1711.png)|Attendez la fin du chargement.|
 |![Conditions générales.](./media/ios-2-cp-enroll-1711.png)|Lisez et acceptez toutes les conditions générales (**Tout accepter**).|
-|![Écran de configuration de l’accès à l’entreprise. La gestion et les paramètres ont actuellement besoin d’une résolution.](./media/ios-3-cp-enroll-1711.png)|Appuyez sur **Passer l’appareil en mode géré** pour commencer le processus à l’issue duquel votre appareil pourra accéder aux ressources de l’entreprise. Si vous ne pouvez pas le faire pour le moment, vous avez la possibilité de **Différer** le processus, mais cela signifie que vous ne pourrez pas accéder à la messagerie, aux documents, etc.|
+|![Écran de configuration de l’accès à l’entreprise. La gestion et les paramètres ont actuellement besoin d’une résolution.](./media/ios-3-cp-enroll-1711.png)|Appuyez sur **Commencer** pour démarrer le processus à l’issue duquel votre appareil pourra accéder aux ressources de l’entreprise. Si vous ne pouvez pas le faire pour le moment, vous avez la possibilité de **Différer** le processus, mais cela signifie que vous ne pourrez pas accéder à la messagerie, aux documents, etc.|
 |![Écran Ce que peut mon entreprise peut voir.](./media/ios-4-cp-enroll-1711.png)|En appuyant sur le lien **En savoir plus** en bas, vous aurez accès à ce que votre entreprise peut voir. Sinon, appuyez sur **Continuer**.|
 |![Écran Et ensuite ?.](./media/ios-5-cp-enroll-1711.png)|Cet écran vous explique tout ce qui se passe au cours de la configuration. Vous allez passer du temps sur Safari, sur l’application Paramètres et sur l’application Portail d’entreprise dans le cadre de ce processus. Appuyez sur **Suivant**.|
 |![Écran de chargement après avoir appuyé sur Suivant dans Et ensuite ?.](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ Votre entreprise possède de nombreuses informations privées : messagerie élec
 |![Écran de chargement des ressources de l’entreprise.](./media/ios-18-cp-enroll-1711.png)|Attendez la fin du chargement.|
 |![Sélectionnez la catégorie d’appareils sur l’application Portail d’entreprise.](./media/ios-19-cp-enroll-1711.png)|Sélectionnez la meilleure catégorie pour votre appareil. Elle est généralement en rapport avec le propriétaire de l’appareil ou son emplacement habituel.|
 |![Catégorie sélectionnée.](./media/ios-20-cp-enroll-1711.png)||
-|![Gestion de l’appareil réussie ; vous devez maintenant mettre à jour les paramètres.](./media/ios-21-cp-enroll-1711.png)|Vous avez réussi à passer votre appareil en mode géré. Il reste probablement des paramètres, comme la longueur de votre mot de passe, que votre entreprise vous demandera éventuellement de mettre à jour. Appuyez sur **Mettre à jour les paramètres des appareils** pour continuer.|
+|![Gestion de l’appareil réussie ; vous devez maintenant mettre à jour les paramètres.](./media/ios-21-cp-enroll-1711.png)|Vous avez réussi à passer votre appareil en mode géré. Il reste probablement des paramètres, comme la longueur de votre mot de passe, que votre entreprise vous demandera éventuellement de mettre à jour. Appuyez sur **Continuer** pour continuer.|
 |![Confirmation des paramètres de l’appareil.](./media/ios-22-cp-enroll-1711.png)|Le Portail d’entreprise regardera si certains de vos paramètres doivent être mis à jour.|
 |![Fin de la vérification des paramètres, avec une version du système d’exploitation incorrecte.](./media/ios-23-cp-enroll-1711.png)|Le Portail d’entreprise donne des instructions pour résoudre les problèmes relatifs aux paramètres. Dès que c’est fait, appuyez sur **Vérifier les paramètres**.|
 |![Écran de chargement de la confirmation des paramètres de l’appareil.](./media/ios-24-cp-enroll-1711.png)|Votre appareil vérifie si les paramètres sont suffisamment sécurisés pour lui permettre d’accéder aux ressources de l’entreprise.|
