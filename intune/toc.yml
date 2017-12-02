@@ -164,8 +164,6 @@
               href: windows-bulk-enroll.md
             - name: Programme de déploiement Windows AutoPilot
               href: enrollment-autopilot.md
-            - name: Écran État de l’inscription
-              href: windows-enrollment-status.md
         - name: Configurer l’inscription Android
           href: android-enroll.md
         - name: Configurer l’inscription iOS
