@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Android et Samsung KNOX Standard dans Microsoft Intune
 
@@ -42,7 +42,7 @@ Utilisez ces paramètres avec une stratégie de restriction d’appareil Android
 - **Capture d’écran (Samsung KNOX uniquement)** - Autorise l’utilisateur à capturer le contenu de l’écran comme image.
 - **Assistant vocal (Samsung KNOX uniquement)** - Autorise l’utilisation du logiciel Assistant vocal sur l’appareil.
 - **YouTube (Samsung KNOX uniquement)** - Autorise l’utilisation de l’application YouTube sur l’appareil.
-- **Appareils partagés** - Configurer un appareil Samsung KNOX standard géré en tant qu’appareil partagé. Dans ce mode, les utilisateurs finaux peuvent se connecter et se déconnecter de l’appareil avec leurs informations d’identification Azure AD. L’appareil reste géré, qu’il soit en cours d’utilisation ou non.<br>Quand les utilisateurs finaux se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.
+- **Appareils partagés(Samsung KNOX uniquement)** - Permet de configurer un appareil Samsung KNOX standard géré en tant qu’appareil partagé. Dans ce mode, les utilisateurs finaux peuvent se connecter et se déconnecter de l’appareil avec leurs informations d’identification Azure AD. L’appareil reste géré, qu’il soit en cours d’utilisation ou non.<br>Utilisée conjointement avec un profil de certificat SCEP, cette fonctionnalité permet aux utilisateurs finaux de partager un appareil avec le même ensemble d’applications pour tous les utilisateurs, mais avec leur propre certificat utilisateur SCEP.  Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.  Cette fonctionnalité est limitée aux applications métier.
 
 ## <a name="password"></a>Mot de passe
 

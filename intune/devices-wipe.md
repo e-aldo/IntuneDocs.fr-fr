@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
+ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
@@ -39,7 +39,21 @@ La commande de **réinitialisation aux paramètres d’usine** rétablit les par
 2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
 4. Cliquez sur le nom de l’appareil à réinitialiser aux paramètres d’usine.
-5. Dans le panneau présentant le nom de l’appareil, choisissez **Réinitialisation aux paramètres d’usine**, puis **Oui** pour confirmer.
+5. Dans le panneau présentant le nom de l’appareil, choisissez **Réinitialisation aux paramètres d’usine**.
+6. Pour Windows 10 version 1709 ou ultérieure, une autre option est proposée : « Conserver le compte d’utilisateur et l’état d’inscription ». 
+    
+    |Éléments conservés après réinitialisation aux paramètres d’usine|Éléments non conservés|
+    | -------------|------------|
+    |Comptes d’utilisateur associés à l’appareil|Fichiers utilisateur|
+    |État de l’ordinateur \(jonction de domaine, joint à Azure Active Directory)| Applications installées par l’utilisateur \(applications Win32 et du Store)|
+    |Inscription MDM|Paramètres d’appareil autres que les paramètres par défaut|
+    |Applications OEM installées \(applications Win32 et du Store)||
+    |Profil utilisateur||
+    |Données utilisateur hors du profil utilisateur||
+    |Ouverture de session automatique de l’utilisateur|| 
+    
+         
+7. Choisissez **Oui** pour confirmer la réinitialisation aux paramètres d’usine.
 
 Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation aux paramètres d’usine prend moins de 15 minutes, quel que soit le type de l’appareil.
 
@@ -68,8 +82,8 @@ La commande de **suppression des données d’entreprise** supprime les paramèt
 |Liens web|Supprimé.|Supprimé.|
 |Applications Google Play non gérées|Les applications et les données sont toujours installées.|Les applications et les données sont toujours installées.|
 |Applications métier non gérées|Les applications et les données sont toujours installées.|Les applications sont désinstallées et les données locales propres aux applications sont supprimées en conséquence. Aucune donnée extérieure à l’application (par exemple, sur une carte SD) n’est supprimée.|
-|Applications Google Play gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (par exemple, une carte SD) restent chiffrées, mais ne sont pas supprimées.|
-|Applications métier gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|
+|Applications Google Play gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM extérieures à l’application (par exemple, une carte SD) restent chiffrées, mais ne sont pas supprimées.|
+|Applications métier gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|
 |Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|

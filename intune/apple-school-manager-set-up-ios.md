@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: 5aaefd6bfbff3394b4c0f79948ac23e32536f1e3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Activer l’inscription des appareils iOS avec Apple School Manager
 
@@ -31,7 +31,7 @@ Pour activer l’inscription Apple School Manager, vous utilisez à la fois les 
 
 Notez que l’inscription au programme Apple School Manager ne peut pas être utilisée avec le [Programme d’inscription des appareils d’Apple](device-enrollment-program-enroll-ios.md) ni avec le [gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md).
 
-**Conditions préalables**
+**Prérequis**
 - [Certificat Push MDM Apple](apple-mdm-push-certificate-get.md)
 - [Autorité MDM](mdm-authority-set.md)
 - [Certificat Push MDM Apple](apple-mdm-push-certificate-get.md)
@@ -136,9 +136,10 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 ## <a name="sync-managed-devices"></a>Synchroniser des appareils gérés
 Maintenant qu’Intune a reçu l’autorisation de gérer vos appareils Apple School Manager, vous pouvez synchroniser Intune avec le service Apple pour voir vos appareils gérés dans Intune.
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription de l’appareil**, puis **Inscription Apple**.
-2. Sous **Appareils du programme d’inscription**, choisissez **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
-3. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
+1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
+
+  ![Capture d’écran : sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser.](./media/enrollment-program-device-sync.png)
+2. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
   ![Capture d’écran du panneau de synchronisation : choix du lien Demander une synchronisation.](./media/enrollment-program-device-request-sync.png)
 

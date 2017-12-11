@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilisation du portail de résolution des problèmes pour aider les utilisateurs
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Le portail de résolution des problèmes permet aux opérateurs du support technique et aux administrateurs Intune d’afficher les informations utilisateur pour répondre aux demandes d’assistance des utilisateurs. Les organisations qui ont un support technique peuvent affecter **l’opérateur de support technique** à un groupe d’utilisateurs. Le rôle Opérateur de support technique peut utiliser le panneau **Résoudre les problèmes**.
+
+Le panneau **Résolution des problèmes** montre également les problèmes d’inscription des utilisateurs. Des détails sur les problèmes et des suggestions de correction peuvent aider les administrateurs et les agents du support technique à résoudre les problèmes. Certains problèmes d’inscription ne sont pas capturés et certaines erreurs peuvent ne pas avoir de suggestions de correction. 
 
 Pour obtenir la procédure d’ajout d’un rôle Opérateur de support technique, consultez [Contrôle d’accès en fonction du rôle (RBAC) avec Intune](/intune/role-based-access-control)
 
@@ -120,7 +122,7 @@ Le tableau récapitule l’état des stratégies de protection des applications 
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Nom        | Nom de l’application.                                                                                                        |
 | Déployé    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
-| Plateforme    | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Plate-forme    | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Inscription  | Nom du type d’appareil.                                                                                                     |
 | Dernière mise à jour | Horodatage de la modification de la stratégie.                                                                                              |
 
