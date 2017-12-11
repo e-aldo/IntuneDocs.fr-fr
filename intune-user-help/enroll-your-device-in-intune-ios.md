@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configurer l’accès aux ressources de l’entreprise
 
@@ -36,7 +36,7 @@ Votre entreprise possède de nombreuses informations privées : messagerie élec
 - Veillez à suivre l’ensemble du processus une fois que vous avez commencé. Une interruption de plus de quelques minutes a généralement pour effet d’arrêter votre progression et de vous obliger à recommencer.
 - En cas d’échec, revenez sur l’application du Portail d’entreprise et réessayez.
 - Vérifiez que votre Wi-Fi fonctionne et que Safari est opérationnel sur votre appareil.
-- Téléchargez [Installer l’application Portail d’entreprise Intune et s’y connecter](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Téléchargez et installez [l’application Portail d’entreprise Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Utiliser l’application Portail d’entreprise pour configurer l’accès aux ressources de l’entreprise

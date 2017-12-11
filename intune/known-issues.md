@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059242b76ef1f14a5237c34e57ed626fc53f17be
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problèmes connus dans Microsoft Intune
 
@@ -34,6 +34,10 @@ Si vous souhaitez signaler un bogue qui n’est pas répertorié ici, [créez un
 Si vous souhaitez voir une nouvelle fonctionnalité dans Intune, envisagez d’envoyer un rapport sur notre site [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
 ## <a name="migration"></a>Migration
+
+### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Les fonctionnalités du client PC hérité Intune sont uniquement disponibles dans la console Silverlight
+
+La capacité à gérer Windows 10 dans Intune sur le portail Azure est disponible par le biais de l’inscription MDM Windows. Pour plus d’informations, consultez [Intune dans la console Azure et PC client Intune hérité](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Les groupes créés par Intune pendant la migration peuvent affecter les fonctionnalités d’autres produits Microsoft
 
@@ -114,7 +118,7 @@ Pour plus d’informations, consultez [Qu’est-ce que la compatibilité des app
 
 ### <a name="ios-app-protection-policies"></a>Stratégies de protection des applications iOS
 
-Vous pouvez définir des [stratégies de protection des applications pour iOS](app-protection-policy-settings-ios.md). Ces stratégies sont proposées aux utilisateurs d’appareils gérés par l’intermédiaire de la gestion des applications mobiles (GAM) sans inscription. En raison d’une erreur temporaire, vous pouvez uniquement définir ces stratégies pour les versions d’iOS à une seule décimale. Ainsi, au lieu de définir iOS 10.3.1 comme version minimale, définissez iOS 10.3. Ce problème sera résolu dans une prochaine mise à jour du SDK iOS.
+Vous pouvez définir des [stratégies de protection des applications pour iOS](app-protection-policy-settings-ios.md). Ces stratégies sont proposées aux utilisateurs d’appareils gérés par l’intermédiaire de la gestion des applications mobiles (MAM) sans inscription. En raison d’une erreur temporaire, vous pouvez uniquement définir ces stratégies pour les versions d’iOS à une seule décimale. Ainsi, au lieu de définir iOS 10.3.1 comme version minimale, définissez iOS 10.3. Ce problème sera résolu dans une prochaine mise à jour du SDK iOS.
 
 
 ## <a name="administration-and-accounts"></a>Administration et comptes

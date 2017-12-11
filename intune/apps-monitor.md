@@ -1,12 +1,12 @@
 ---
 title: "Guide pratique pour surveiller les affectations et les informations d’applications"
 titlesuffix: Azure portal
-description: "Une fois que vous avez affecté une application à des utilisateurs ou des appareils, utilisez ces informations pour surveiller son état."
+description: "Une fois que vous avez affecté une application à des utilisateurs ou à des appareils, utilisez ces informations pour surveiller son état."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 0298fc255b3c11a12b5bf225968d6f2303192053
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Guide pratique pour surveiller les affectations et les informations d’applications avec Microsoft Intune
 
@@ -30,32 +30,74 @@ Intune propose plusieurs façons de surveiller les propriétés des applications
 1. Connectez-vous au portail Azure.
 2. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
 3. Dans la charge de travail **Applications mobiles**, choisissez **Applications** dans le groupe **Gérer**.
-     
-    ![Panneau d’état de l’installation de l’application.](./media/monitor-apps.png)
 5. Dans le panneau de la liste des applications, choisissez une application. Vous verrez alors le panneau <*nom_application*> **État de l’installation de l’appareil**.
 
-Le rapport sur l’état de l’installation de l’appareil contient les colonnes suivantes :
+## <a name="app-overview-blade"></a>Panneau Vue d’ensemble de l’application
 
-1.  **Nom de l’appareil** Nom du type d’appareil.
-2.  **Nom d’utilisateur** Nom de l’utilisateur.
-3.   **Plateforme** Système d’exploitation installé sur l’appareil.
-4.  **Version** Numéro de version de l’application.
-5.   **État** Les états possibles des applications sont : **Installé**, **Non installé**, **Installation en attente** et **Erreur**.
-6. **Détails du statut** Description explicite du statut de l’application sur l’appareil.
-7. **Dernier archivage** Date du dernier archivage de l’appareil dans Intune.
+Vous pouvez utiliser le panneau <*nom de l’application*> **État de l’installation de l’appareil** pour passer en revue les détails sur l’état d’une application dans votre environnement.
 
-Effectuez ensuite l’une des actions suivantes pour en savoir plus sur vos applications et leurs affectations.
+### <a name="essentials"></a>Base
 
-## <a name="general"></a>Général
+La section **Bases** contient les informations suivantes sur l’application :
 
-- **Vue d’ensemble** : fournit une vue d’ensemble de l’application et des informations sur l’état des affectations de cette application. Vous pouvez choisir l’un des graphiques pour ouvrir le panneau **État de l’installation de l’appareil** ou **État de l’installation de l’utilisateur** afin d’obtenir des informations plus détaillées.
+ - **Éditeur**  
+Éditeur de l’application.
+ - **Système d'exploitation**  
+Système d’exploitation de l’application (Windows, iOS, Android, etc.)
+ - **Créer**  
+Heure de création de cette révision.
+ - **Affecté**  
+**Oui** ou **Non** si l’application a été affectée.
 
-## <a name="manage"></a>Gérer
+### <a name="status"></a>Status
+Chaque graphique affiche le nombre d’applications pour chacun des états suivants :
 
-- **Propriétés** : vous permet d’afficher et de changer les informations sur l’application sélectionnée. Pour plus d’informations sur les propriétés des applications, consultez le [Guide pratique pour ajouter une application à Microsoft Intune](apps-add.md).
-- **Affectations** : fournit des informations sur les affectations de cette application. Pour plus d’informations, consultez [Guide pratique pour attribuer des applications à des groupes avec Microsoft Intune](apps-deploy.md).
+ - **Installé**  
+Nombre d’applications installées.
+ - **Non installé**  
+Nombre d’applications non installées.
+ - **Installation en attente**  
+Nombre d’applications en passe d’être installées.
+ - **Échec**  
+Nombre d’installations ayant échoué.
+ - **Inconnu.**  
+Nombre d’applications avec un état inconnu.
 
-## <a name="monitor"></a>Surveillance
+### <a name="device-status"></a>État de l’appareil
 
-- **État de l’installation de l’appareil** : fournit des informations détaillées pour chaque appareil auquel vous avez affecté l’application sélectionnée, notamment le nom de l’appareil, le système d’exploitation, la date du dernier archivage de l’appareil dans Intune et l’état de l’installation de l’application.
-- **État de l’installation de l’utilisateur** : fournit des informations détaillées sur l’utilisateur auquel vous avez affecté l’application sélectionnée, notamment le nombre d’installations de l’application dont l’utilisateur dispose sur tous ses appareils et des informations sur les éventuels échecs d’installation.
+État de l’appareil. Graphique en anneau qui affiche l’état d’installation de l’application sur les appareils. Cliquez sur le graphe pour ouvrir la liste des détails sur l’état de l’appareil. Le tableau des détails inclut les colonnes suivantes :
+
+ - **Nom de l’appareil**  
+Nom de l’appareil sur les plateformes qui autorisent le nommage d’un appareil. Sur d’autres plateformes, Intune crée un nom à partir d’autres propriétés. Cet attribut ne peut pas être disponible pour tous les appareils.
+ - **Nom d’utilisateur**  
+Nom de l’utilisateur.
+ - **Plateforme**  
+Système d’exploitation de l’appareil (Windows, iOS, Android, etc.)
+ - **Version**  
+Numéro de version de l’application. Pour les applications métier, le numéro de version complet de l’application s’affiche. Le numéro de version complet identifie une version spécifique de l’application. Le numéro apparaît sous la forme _Version_(_Build_). Par exemple, 2.2(2.2.17560800)
+ - **Statut**  
+État de l’application.
+ - **Détails de l’état**  
+Détails de l’état.
+ - **Dernier archivage**  
+Date de la dernière synchronisation de l’appareil avec Intune.
+
+
+### <a name="user-status"></a>État de l’utilisateur
+
+État de l’utilisateur. Graphique en anneau qui affiche l’état d’installation de l’application pour les utilisateurs. Cliquez sur le graphe pour ouvrir la liste des détails sur l’état de l’appareil. Le tableau des détails inclut les colonnes suivantes :
+ - **Nom**  
+Nom de l’utilisateur dans Azure AD.
+ - **Nom d’utilisateur**  
+Nom unique de l’utilisateur.
+ - **Installations**  
+Nombre d’installations d’applications utilisées par l’utilisateur.
+ - **Échecs**  
+Nombre d’installations ayant échoué effectuées par l’utilisateur.
+ - **Non installé**  
+Nombre d’installations non installées par l’utilisateur.
+
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Pour en savoir plus sur l’utilisation de vos données Intune, consultez [Utiliser l’entrepôt de données Intune](reports-nav-create-intune-reports.md).

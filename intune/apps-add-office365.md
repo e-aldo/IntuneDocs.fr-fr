@@ -1,5 +1,5 @@
 ---
-title: "Installer des applications Office 365 ProPlus sur des appareils Windows 10 à l’aide d’Intune"
+title: "Installer des applications Office 365 sur des appareils mobiles à l’aide d’Intune"
 titlesuffix: Azure portal
 description: "Découvrez comment utiliser Intune pour faciliter l’installation d’applications Office 365 sur des appareils Windows 10."
 keywords: 
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Guide pratique pour affecter des applications Office 365 ProPlus 2016 à des appareils Windows 10 avec Microsoft Intune
 
-À l’aide de ce type d’application, vous pouvez affecter facilement des applications Office 365 ProPlus 2016 aux appareils exécutant Windows 10 que vous gérez. Vous pouvez également installer des applications pour le client de bureau Microsoft Project Online et Microsoft Visio Pro pour Office 365 si vous disposez des licences appropriées. Les applications souhaitées apparaissent sous la forme d’une application unique dans la liste des applications de la console Intune.
+À l’aide de ce type d’application, vous pouvez affecter facilement des applications Office 365 ProPlus 2016 aux appareils exécutant Windows 10 que vous gérez. Vous pouvez également installer des applications pour le client de bureau Microsoft Project Online et Microsoft Visio Pro pour Office 365 si vous disposez des licences appropriées. Les applications souhaitées apparaissent sous la forme d’une entrée unique dans la liste des applications de la console Intune.
 
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -137,7 +137,3 @@ Le tableau suivant répertorie les codes d’erreur fréquemment rencontrés et 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Vous pouvez maintenant affecter les applications aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](/intune-azure/manage-apps/deploy-apps).
-
-             
-
-

@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: a10d158816f17c7fbe07fd14172d1a9abb9ed9b9
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrire automatiquement des appareils iOS avec le Programme d’inscription des appareils d’Apple
 
@@ -157,11 +157,11 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
 ## <a name="sync-managed-devices"></a>Synchroniser des appareils gérés
 Maintenant qu’Intune est autorisé à gérer vos appareils, vous pouvez synchroniser Intune avec Apple pour voir vos appareils gérés dans le portail Azure d’Intune.
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** >  **Inscription Apple** > **Appareils du programme d’inscription**.
-2. Sous **Appareils du programme d’inscription**, choisissez **Synchroniser**.
+1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
   ![Capture d’écran : sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser.](./media/enrollment-program-device-sync.png)
-3. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
+  
+2. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
   ![Capture d’écran du panneau de synchronisation : choix du lien Demander une synchronisation.](./media/enrollment-program-device-request-sync.png)
 
@@ -170,7 +170,7 @@ Maintenant qu’Intune est autorisé à gérer vos appareils, vous pouvez synchr
      -  Toute demande de synchronisation doit se terminer dans un délai de 15 minutes. Pendant ce temps ou jusqu’au succès de la demande, le bouton **Synchroniser** est désactivé.
      - Intune synchronise les nouveaux appareils et les appareils supprimés auprès d’Apple toutes les 24 heures.
 
-4. Dans l’espace de travail Appareils du programme d’inscription, choisissez **Actualiser** pour voir vos appareils.
+3. Dans l’espace de travail Appareils du programme d’inscription, choisissez **Actualiser** pour voir vos appareils.
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>Affecter un profil d’inscription à des appareils
 Vous devez affecter un profil de programme d’inscription aux appareils pour pouvoir les inscrire.

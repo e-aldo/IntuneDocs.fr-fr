@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,19 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a2c16483efe2779260275fdadc3182b578da8a2a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 31eb47cbd17b52cc2d338ef5faf461173f7acb96
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enroll-your-windows-device-in-intune"></a>Inscrire un appareil Windows dans Intune
 
 Si votre société ou votre école utilise Microsoft Intune, vous pouvez inscrire votre appareil Windows pour accéder à la messagerie, aux fichiers et d’autres ressources d’entreprise. Quand vous inscrivez vos appareils, votre organisation peut sécuriser les données d’entreprise. Pour en savoir plus sur l’inscription, consultez [Que se passe-t-il quand j’installe l’application Portail d’entreprise et que j’inscris mon appareil dans Intune ?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) et [Liste de ce que le support technique de votre entreprise peut voir ou non sur votre appareil](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+
+> [!NOTE]
+> Vous devez accéder au site web Portail d’entreprise avec Microsoft Edge pour afficher les applications Windows. D’autres navigateurs, notamment Google Chrome, Mozilla Firefox et Internet Explorer, ne prennent pas en charge ce type de filtrage.
+
 
 Pour vous inscrire, cliquez sur le lien correspondant à l’appareil que vous utilisez :
 
