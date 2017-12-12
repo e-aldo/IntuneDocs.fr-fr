@@ -14,11 +14,11 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 9e0ea429a6fd68bf984f814d512f9e5a8b327358
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: c4e0eb3832114c83539025af9d7afebe38e68d81
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-lookout-for-work"></a>Installer Lookout for Work
 
@@ -75,5 +75,5 @@ Si vous rencontrez des difficultés lors de l’installation, essayez de suivre 
 Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, essayez d’installer Lookout for Work [manuellement, à partir du Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
 

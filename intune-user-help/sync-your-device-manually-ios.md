@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d4b80227eb9be98ec32a2fafd0938742038fea6
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: c6ca3ec2279e9a80c8a3e91a742c1f766630580c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="sync-your-ios-device-manually"></a>Synchroniser votre appareil iOS manuellement
 
@@ -38,4 +38,4 @@ Le téléchargement d’une application à partir du portail d’entreprise peut
 
 Une barre de chargement apparaît à l’écran et affiche le chargement jusqu’à ce que la synchronisation soit terminée.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -14,11 +14,11 @@ ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 288feedffe36794ab6e1727165cbac2c5e2a9fe8
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 1bff6a17a74de310833b9d19afd471afd0afc504
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Résoudre une menace détectée par une application Mobile Threat Defense
 
@@ -37,5 +37,5 @@ Si vous avez installé une application que la fonction de protection contre les 
 
 Après avoir désinstallé l’application, vous récupérez immédiatement l’accès à vos e-mails et autres données de votre entreprise ou établissement scolaire. Si vous ignorez la demande de désinstallation de l’application, vous perdez l’accès à vos e-mails et données d’entreprise jusqu’à ce que vous désinstalliez l’application.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
 

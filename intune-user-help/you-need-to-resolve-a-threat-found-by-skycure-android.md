@@ -14,11 +14,11 @@ ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 341226bcc5ba3ca0b7f12aedeb137580a49b9f18
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 1fa368ad494ae60a9db5cbe32ce678ce6fd56c0d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Résoudre une menace détectée par Symantec Endpoint Protection Mobile
 
@@ -34,7 +34,7 @@ Si un virus ou une autre menace de sécurité est présent sur votre appareil in
 
 ![Message d’erreur Skycure incluant un lien vers le site web du portail d’entreprise](./media/skycure-list-of-potential-issues-android.png)
 
-Appuyez sur le lien **portail de gestion des appareils** pour accéder au [site web du Portail d’entreprise](https://portal.manage.microsoft.com), où vous pouvez obtenir des instructions sur la façon de résoudre le problème.
+Appuyez sur le lien **portail de gestion des appareils** pour accéder au [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog), où vous pouvez obtenir des instructions sur la façon de résoudre le problème.
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Exemple d’une application vue comme une menace par Symantec Endpoint Protection Mobile
 
@@ -44,5 +44,5 @@ Si vous avez installé une application que Symantec Endpoint Protection Mobile c
 
 Après avoir désinstallé l’application, vous récupérez immédiatement l’accès aux e-mails et données de votre entreprise. Si vous ignorez la demande de désinstallation de l’application, vous perdez l’accès à vos e-mails et données jusqu’à ce que vous désinstalliez l’application.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
 

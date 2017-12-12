@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c114a8267fd38da173e8aafcd6089dcfb4472fd
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 529a0ec7baf52eccf6382ecab114dac55de8a72a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Envoyer des journaux au support technique de votre entreprise à partir de l’application Portail d’entreprise pour Windows 10
 
@@ -34,4 +34,4 @@ Si vous recevez une erreur pendant que vous utilisez l’application Portail d�
 
 Il peut être nécessaire d’envoyer aussi des [journaux à partir de l’application Paramètres](send-logs-to-your-it-admin-settings-windows.md) pour aider le support technique de votre entreprise à résoudre les éventuels problèmes.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

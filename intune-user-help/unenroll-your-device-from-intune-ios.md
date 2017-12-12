@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a52fdb4ae866722191dfbd176c8d2e6eb0747bb4
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: b22af8fca323e722f67e54b3c01493c8ab5f27a4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>Désinscrire votre appareil iOS d’Intune
 
@@ -52,4 +52,4 @@ La désinscription de votre appareil d’Intune a les conséquences suivantes :
 
 -   Les appareils configurés pour la messagerie uniquement n’apparaissent plus dans l’application ou le site web Portail d’entreprise.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

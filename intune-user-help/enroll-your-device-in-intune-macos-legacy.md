@@ -1,6 +1,6 @@
 ---
 title: "Inscrire un appareil macOS hérité sur Intune | Microsoft Docs"
-description: Cette rubrique explique comment inscrire un appareil macOS sur Intune
+description: Cette rubrique explique comment inscrire un appareil macOS dans Intune
 keywords: "Mac OS X, macOS, OS X"
 author: barlanmsft
 ms.author: barlan
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 115f32989cfbb991e097404c5297e7997f28f796
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: f46d9cc4fad54415aeea8deaf1b8daa0c274c1dc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-legacy-macos-device-in-intune"></a>Inscrire un appareil macOS hérité sur Intune
 
@@ -28,7 +28,7 @@ Les instructions suivantes fonctionnent pour les appareils macOS sur OS X Yosemi
 
 L’accès aux applications, aux données et aux ressources de votre organisation est essentiel pour que vous puissiez travailler. Si vous utilisez un appareil macOS au travail, cela signifie que vous devez installer un __profil de gestion__. Il s’agit simplement d’un fichier configuré par le support technique de votre entreprise, qui charge les paramètres et les informations d’accès sur votre Mac. Vous voulez en savoir plus ? Découvrez [ce qui se passe lorsque vous installez l’application Portail d’entreprise et que vous inscrivez votre appareil dans Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
-1. Sur votre __station d’accueil__, recherchez __Safari__ et ouvrez une nouvelle fenêtre, puis ouvrez le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
+1. Sur votre __station d’accueil__, recherchez __Safari__ et ouvrez une nouvelle fenêtre, puis ouvrez le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
 2. Connectez-vous au site web du portail d’entreprise avec votre compte professionnel ou scolaire.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -66,4 +66,4 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
 
 Certains profils peuvent indiquer qu’ils sont **non vérifiés**. Du moment qu’ils appartiennent à votre entreprise, c’est normal.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

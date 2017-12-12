@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil Android à l’aide du Portail d’entreprise ?
 
@@ -32,4 +32,4 @@ Si vous disposez d’un appareil Samsung KNOX, vous pouvez effectuer une « ré
 - L’e-mail, les données VPN et Wi-Fi
 - La capacité du support technique de votre entreprise à forcer l’application de certains paramètres.
 
-Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

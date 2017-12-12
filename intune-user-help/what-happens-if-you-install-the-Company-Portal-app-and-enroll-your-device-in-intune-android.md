@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 053f6449ebe3a4ad375c51d7bbc4ccc9709fdcf7
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 49ddadb00be035d052f83fd8f21cbdb17e3401dc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Android dans Intune ?
 
@@ -52,8 +52,8 @@ Une fois votre appareil ajouté au portail d’entreprise, voici ce qu’il va f
 
 -   Télécharger toutes les mises à jour d’une application ou d’une stratégie rendues disponibles par le support technique de votre entreprise.
 
--   Envoyer toute mise à jour de l'inventaire matériel. (Ces mises à jour n’ont pas d’informations personnelles.)
+-   envoyer toute mise à jour de l'inventaire matériel ; (Ces mises à jour n’ont pas d’informations personnelles.)
 
--   Envoyer toute mise à jour de l'inventaire d'applications de la société. (Ces mises à jour n’ont pas d’informations personnelles.)
+-   envoyer toute mise à jour de l'inventaire d'applications de la société. (Ces mises à jour n’ont pas d’informations personnelles.)
 
-Vous avez besoin d'aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.
+Vous avez besoin d'aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.

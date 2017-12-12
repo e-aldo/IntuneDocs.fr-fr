@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Votre appareil Android semble être chiffré, mais le portail d’entreprise dit que non
 
@@ -38,7 +38,7 @@ Certains appareils Android exigent la création d’un code de démarrage pour e
 
 ### <a name="downgrade-your-version-of-android"></a>Rétrograder votre version d’Android
 
-Si votre appareil vous offre la possibilité de passer à la version antérieure Android 6.0+, faites-le. Si vous essayez de passer votre appareil à une version antérieure, vous risquez de perdre des données. Sinon, nous vous recommandons de contacter le support technique de votre entreprise pour résoudre ce problème. Vous pouvez obtenir les informations de contact du support technique de votre entreprise sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
+Si votre appareil vous offre la possibilité de passer à la version antérieure Android 6.0+, faites-le. Si vous essayez de passer votre appareil à une version antérieure, vous risquez de perdre des données. Sinon, nous vous recommandons de contacter le support technique de votre entreprise pour résoudre ce problème. Vous pouvez obtenir les informations de contact du support technique de votre entreprise sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ### <a name="encrypt-the-entire-device"></a>Chiffrer l’appareil entier
 

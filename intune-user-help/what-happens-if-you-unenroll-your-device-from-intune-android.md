@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c75d7bee46f87bf171d105b6ebbf1ec0636e32df
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 1df8203b48e87dc58874bd25f736b878cc5c4ce5
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Que se passe-t-il si vous désinscrivez votre appareil Android d’Intune ?
 
@@ -40,4 +40,4 @@ Si votre appareil est configuré uniquement pour recevoir les e-mails d’entrep
 
 Pour obtenir des instructions sur la désinscription, consultez [Annuler l’inscription de votre appareil dans Intune à l’aide de l’application Portail d’entreprise](unenroll-your-device-from-intune-android.md).
 
-Vous avez besoin d'aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.
+Vous avez besoin d'aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I have questions about unenrolling my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.

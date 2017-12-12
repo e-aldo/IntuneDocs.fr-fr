@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a8364778943171bb1a949f61ad696427ff914c99
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 055bfcf088d46c1010206bd1e77ffbad76611c7c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Aider le support technique de votre entreprise à résoudre les problèmes de l’appareil grâce à la journalisation détaillée
 
@@ -28,4 +28,4 @@ Une fois votre appareil Android inscrit dans Intune, vous pouvez utiliser la *jo
 
 Pour activer ou désactiver la journalisation détaillée, connectez-vous à l’application Portail d’entreprise à l’aide de vos informations d’identification professionnelles ou scolaires, appuyez sur **Paramètres**, puis sur le bouton d’activation/de désactivation à côté de **Journalisation détaillée**.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
