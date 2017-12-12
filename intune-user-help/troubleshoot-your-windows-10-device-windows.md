@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 651df0e6ba3f8b3b2727d3194c8bf5e1a40cffc3
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 7160f58f60624815137e2990bd06188edd4ede81
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Résolution de problèmes liés à l’inscription de votre appareil Windows 10
 Si vous avez suivi les étapes présentées dans la rubrique [Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mais que vous ne pouvez pas toujours accéder à vos e-mails et fichiers professionnels ou scolaires, essayez les étapes de dépannage suivantes.
@@ -59,4 +59,4 @@ Si vous avez suivi les étapes ci-dessus mais que vous ne pouvez toujours pas ac
 
 Si vous voyez un message qui indique __Nous n’avons pas pu découvrir automatiquement un point de terminaison de gestion correspondant au nom d’utilisateur entré. Vérifiez votre nom d’utilisateur et réessayez. Si vous connaissez l’URL de votre point de terminaison de gestion, entrez-la.__, vous devez essayer d’entrer à nouveau vos nom d’utilisateur et mot de passe. Si cela ne fonctionne toujours pas, vous devez vérifier auprès du support technique de votre entreprise le site web que vous devez indiquer dans la zone de texte **Point de terminaison de gestion**. Il s’agit d’un site web qui ressemble probablement à **www.votreentreprise.onmicrosoft.com**.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

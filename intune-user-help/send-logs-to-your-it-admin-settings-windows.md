@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e84bd13a58359f281ebfca3901d643dfc012d90
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f36b623f78a640cfe1900dc0d1564cbf2fbfbf6f
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Envoyer les journaux au support technique de votre entreprise à partir de l’application Paramètres pour Windows 10
 
@@ -36,4 +36,4 @@ Si vous recevez une erreur pendant que vous utilisez l’appareil Windows 10 gé
 
 Il peut être nécessaire d’envoyer aussi des [journaux à partir de l’application Portail d’entreprise](send-logs-to-your-it-admin-cp-windows.md) pour aider le support technique de votre entreprise à résoudre les éventuels problèmes. 
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

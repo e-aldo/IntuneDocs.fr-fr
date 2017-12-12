@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 68f9f6333cbe3e450027e64399e2c0375459f1ca
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 8e3805c46d357f5e07090a13d613751b7eab4c8a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-your-pin-or-password"></a>Définir votre code confidentiel ou mot de passe
 
@@ -34,4 +34,4 @@ Vous pouvez utiliser la procédure suivante pour définir un code confidentiel o
 
 Pour certains appareils, vous devrez peut-être définir un code confidentiel de démarrage en plus de votre mot de passe d’écran. Vous pouvez essayer de résoudre ce problème en recherchant un emplacement dans votre application de paramètres pour activer cette option. Par exemple, sur le Galaxy S7 de Samsung, vous activez le démarrage sécurisé en accédant à **Paramètres** > **Écran de verrouillage et sécurité** > **Démarrage sécurisé**. Pour en savoir plus, cliquez [ici](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise). 
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

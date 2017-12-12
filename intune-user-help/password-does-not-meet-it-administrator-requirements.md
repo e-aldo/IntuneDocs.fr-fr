@@ -14,11 +14,11 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 88d7ca7a73f32c90f589cd51b299350879914b69
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d6372efef833268dedf9e18e878fa66f1417a03d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Votre mot de passe ne répond pas aux exigences du support technique de votre entreprise
 
@@ -46,4 +46,4 @@ Descriptions des problèmes liés au code confidentiel ou mot de passe :
 
 - **Le mot de passe n’est pas assez complexe pour répondre aux exigences**. Le support technique de votre entreprise vous impose d’utiliser des caractères plus complexes dans votre mot de passe. Essayez d’utiliser des caractères tels que des nombres, des lettres majuscules et des symboles comme $, % et #. Cela peut aussi concerner d’autres comptes sur votre appareil. Passez en revue tous les comptes professionnels pour vérifier que votre mot de passe répond aux exigences définies par l’administrateur informatique pour votre appareil.
 
-Si vous avez des difficultés à déterminer comment rendre votre mot de passe conforme aux exigences, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Si vous avez des difficultés à déterminer comment rendre votre mot de passe conforme aux exigences, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

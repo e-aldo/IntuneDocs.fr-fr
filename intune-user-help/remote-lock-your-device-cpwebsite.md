@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Verrouiller à distance un appareil à partir du site web du portail d’entreprise
 
@@ -28,7 +28,7 @@ Des accidents se produisent et des appareils peuvent parfois disparaître. Si vo
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-Pour plus de sécurité, vous pouvez le verrouiller en utilisant l’option Verrouillage à distance sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com). L’option Verrouillage à distance fonctionne pour :
+Pour plus de sécurité, vous pouvez le verrouiller en utilisant l’option Verrouillage à distance sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog). L’option Verrouillage à distance fonctionne pour :
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ Pour plus de sécurité, vous pouvez le verrouiller en utilisant l’option Verr
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Pour utiliser l’option Verrouillage à distance pour verrouiller votre appareil
 
-1.  Sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
+1.  Sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
 
   ![Image du site web Portail d’entreprise avec un menu latéral développé sur le côté gauche de l’écran, contenant les boutons Accueil, Toutes les applications, Mes appareils, Support technique et Déconnexion.](/media/iwp-expanded-sidebar.png)
 
@@ -65,4 +65,4 @@ Pour plus de sécurité, vous pouvez le verrouiller en utilisant l’option Verr
 
 Si vous retrouvez votre appareil et que vous souhaitez le déverrouiller après avoir utilisé le verrouillage à distance, il vous suffit d’entrer votre code secret.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

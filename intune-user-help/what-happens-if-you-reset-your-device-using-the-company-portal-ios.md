@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cf3c9d121f2e2578219137161a972d5d58255058
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 7275e740ff2eb23af268ad9b281f3268e1bb16a2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil iOS à l’aide du Portail d’entreprise ?
 
@@ -38,4 +38,4 @@ Quand vous réinitialisez votre iPhone ou votre iPad à partir du portail d’en
 
 -   Votre compte de messagerie professionnel et les messages non enregistrés sont supprimés.
 
-Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

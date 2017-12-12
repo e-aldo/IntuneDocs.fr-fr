@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>Gérer les mises à jour logicielles
 
@@ -94,8 +94,8 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 
     **Si le canal de maintenance est défini sur Canal semi-annuel et que la période de report est de 30 jours** : supposons que la mise à jour de fonctionnalité X est tout d’abord publiquement disponible sur Windows Update en tant que Canal semi-annuel (cible) en janvier. Quatre mois plus tard, en avril, la mise à jour de fonctionnalité X est publiée sur le Canal semi-annuel. L’appareil reçoit la mise à jour de fonctionnalité 30 jours après cette publication sur le Canal semi-annuel et se met à jour en mai.
 
-    - **Optimisation de la distribution** : choisissez la méthode avec laquelle les appareils téléchargent les mises à jour Windows. Pour plus d’informations, consultez [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
-8. Quand vous avez terminé, cliquez sur **OK**, puis, dans le panneau **Créer un anneau de mise à jour**, cliquez sur **Créer**.
+    - **Optimisation de la distribution** : choisissez la méthode avec laquelle les appareils téléchargent les mises à jour Windows. Pour plus d’informations, consultez [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Quand vous avez terminé, cliquez sur **OK**, puis, dans le panneau **Créer un anneau de mise à jour**, cliquez sur **Créer**.
 
 Le nouvel anneau de mise à jour s’affiche dans la liste des anneaux de mises à jour.
 

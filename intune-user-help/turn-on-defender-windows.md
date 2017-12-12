@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 446b395aab311d13ebc7ac6b8c3ed7c740070729
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: d2a7cd5cc4c201a73570f73892563463cb0bdcc7
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Activer Windows Defender pour accéder aux ressources de l’entreprise
 
@@ -48,4 +48,4 @@ Pour vérifier que la protection en temps réel est activée, accédez à **Dém
 
 Pour vérifier que vos définitions d’antivirus sont à jour, accédez à **Démarrer** et recherchez **Centre de sécurité Windows Defender**. Sélectionnez **Mises à jour de la protection** et **Rechercher les mises à jour** pour vous assurer que votre appareil dispose d’une protection à jour contre les virus. Si cette option n’est pas visible, suivez les étapes fournies dans [Activer la protection en temps réel](turn-on-defender-windows.md#turn-on-real-time-protection).
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -89,8 +89,8 @@
           href: data-outside-protect.md
         - name: Éviter les fuites de données sur les appareils non gérés
           href: data-leak-prevention.md
-        - name: BYOD
-          href: byod-enable.md
+        - name: Comparer MDM et GAM
+          href: byod-technology-decisions.md
     - name: Guide de migration
       href: migration-guide.md
       items:

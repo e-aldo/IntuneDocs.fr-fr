@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4034e3848f49b13fc675f44c44ca1e80cf1e3568
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil Windows à l’aide du Portail d’entreprise ?
 
@@ -32,4 +32,4 @@ Quand vous utilisez l’application Portail d’entreprise ou le [site web Porta
 |Votre appareil peut accéder uniquement à la messagerie de l'entreprise|**Windows Phone 8.1**<br />Votre appareil n’apparaît plus dans le portail d’entreprise, et votre compte de messagerie d’entreprise et les messages non enregistrés sont supprimés.<br /><br />**Windows 7 ou Windows Vista**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 7 ou version antérieure utilisé pour le courrier électronique uniquement.<br /><br />**Windows 8.1 et Windows 8**<br />Votre appareil n’apparaît plus dans le portail d’entreprise, et votre compte de messagerie d’entreprise et les messages non enregistrés sont supprimés.|
 |PC et ordinateurs portables|**Windows 8.1 et Windows 8**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 8 ou Windows 8.1 sauf s’il est utilisé pour le courrier électronique uniquement.<br /><br />**Windows 7 ou Windows Vista**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 7 ou une version antérieure.|
 
-Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

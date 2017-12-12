@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrire votre appareil macOS dans Intune avec l’application Portail d’entreprise
 
@@ -29,7 +29,7 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
 > [!NOTE]
 > Vous trouverez des instructions pour l’inscription d’appareils macOS sur des versions plus antérieures de macOS [ici](enroll-your-device-in-intune-macos-legacy.md).
 
-1. Sur votre __station d’accueil__, recherchez __Safari__ et ouvrez une nouvelle fenêtre, puis ouvrez le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
+1. Sur votre __station d’accueil__, recherchez __Safari__ et ouvrez une nouvelle fenêtre, puis ouvrez le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 2. Connectez-vous au site web du portail d’entreprise avec votre compte professionnel ou scolaire.
 
@@ -62,4 +62,4 @@ L’accès aux applications, aux données et aux ressources de votre organisatio
 
 11. Votre Mac commence l’inscription pour la gestion. Vous pouvez être invité à fournir les informations de connexion de votre ordinateur pendant cette opération. L’inscription peut prendre quelques minutes. Pendant ce temps, vous pouvez effectuer d’autres tâches sur votre ordinateur. Un message s’affiche une fois la configuration de l’application Portail d’entreprise terminée pour vous informer que vous avez terminé.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

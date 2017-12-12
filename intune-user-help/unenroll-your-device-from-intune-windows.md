@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a36efd88949f18618fef2afe0d99fcca8bbdf538
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 5fa35d853a6939256793d7903dfb8f3fdec84b63
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="unenroll-your-windows-device-from-intune"></a>Désinscrire votre appareil Windows d’Intune
 
@@ -62,4 +62,4 @@ Pour désinscrire votre appareil, utilisez le lien répertorié dans la section 
 
 4.  Dans la boîte de dialogue **Supprimer le compte**, appuyez sur **Supprimer**.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

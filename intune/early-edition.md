@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ea734e83cfab3fff22c775764ac9814012d52b6
-ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
+ms.openlocfilehash: 35bf193563deb34ac59df245c622bbc011d80b76
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Édition préliminaire de Microsoft Intune - Décembre 2017
 
@@ -60,9 +60,6 @@ Grâce à cette modification, les administrateurs informatiques peuvent voir que
 
 ### <a name="new-ios-device-action------1244701---"></a>Nouvelle action sur appareil iOS   <!-- 1244701 -->
 Vous pouvez arrêter les appareils supervisés iOS 10.3. Cette action arrête immédiatement l’appareil sans avertir l’utilisateur final. L’action **Arrêter (supervisé uniquement)** se trouve dans les propriétés de l’appareil lorsque vous sélectionnez un appareil dans la charge de travail **Appareil**.
-
-### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>Réseau privé virtuel (VPN) Palo Alto désormais pris en charge <!-- 1333680 eeready -->
-La liste **Type de connexion** inclut le réseau privé virtuel Palo Alto lorsque vous configurez votre VPN de base.
 
 ### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>Prise en charge de connecteurs multiples pour le traitement des certificats SCEP et PFX <!-- 1361755 eeready -->
 Les clients qui utilisent le connecteur NDES local pour présenter des certificats à des appareils pourront configurer plusieurs connecteurs dans un seul locataire.

@@ -14,11 +14,11 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 5feec496d0f7952b1ae35ed1d905cbfc526bc387
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 80cd4b97aafd3307fee310ea742d82a5ff215680
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-or-change-your-passcode"></a>Définir ou modifier votre code secret
 
@@ -41,4 +41,4 @@ Si vous rencontrez des difficultés à définir un code secret qui répond aux e
 2. Appuyez sur **Modifier le code secret** et entrez votre ancien mot de passe.
 3. Entrez un nouveau code secret qui répond aux exigences du support technique de votre entreprise, puis réentrez-le pour le confirmer.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

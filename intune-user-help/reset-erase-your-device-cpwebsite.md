@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
-ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
+ms.openlocfilehash: 98bc92eeba4c92a38aacf05f0eab1ea742dff031
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Réinitialiser votre appareil à partir du site web du portail d’entreprise
 
-En cas de perte ou de vol de votre appareil, vous souhaiterez peut-être restaurer les paramètres d’usine pour empêcher tout accès non autorisé à vos données. Vous pouvez réinitialiser votre appareil à distance en utilisant le [site web du portail d’entreprise](https://portal.manage.microsoft.com). Le site web du portail d’entreprise est une page web qui vous permet de gérer les ordinateurs et appareils que vous avez inscrits dans Intune. Vous pouvez utiliser ce site web pour effectuer la plupart des tâches que vous pouvez effectuer avec votre application Portail d’entreprise.
+En cas de perte ou de vol de votre appareil, vous souhaiterez peut-être restaurer les paramètres d’usine pour empêcher tout accès non autorisé à vos données. Vous pouvez réinitialiser votre appareil à distance en utilisant le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog). Le site web du portail d’entreprise est une page web qui vous permet de gérer les ordinateurs et appareils que vous avez inscrits dans Intune. Vous pouvez utiliser ce site web pour effectuer la plupart des tâches que vous pouvez effectuer avec votre application Portail d’entreprise.
 
 Si vous réinitialisez votre appareil, il ne sera plus répertorié dans le portail d’entreprise et les paramètres d’usine seront rétablis.
 
@@ -33,7 +33,7 @@ Si vous réinitialisez votre appareil, il ne sera plus répertorié dans le port
 
 Pour réinitialiser votre appareil :
 
-1.  Sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com), appuyez sur le bouton __menu__, puis sélectionnez __Mes appareils__.
+1.  Sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog), appuyez sur le bouton __menu__, puis sélectionnez __Mes appareils__.
 
 2. Dans la page __Mes appareils__, sélectionnez le nom de l’appareil à renommer.
 
@@ -47,4 +47,4 @@ Pour réinitialiser votre appareil :
 
 Votre appareil a été réinitialisé.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f4e3b0fac86fb49ac86e2c3c5daf68c0f5f154c
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f8f24629cbf6768e49c244ee6dfe31f0035d052a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-enable-user-access-control"></a>Comment activer le contrôle de compte d’utilisateur
 
@@ -32,4 +32,4 @@ Voici comment changer les paramètres de contrôle de compte d’utilisateur :
 2. Ouvrez **Sécurité et maintenance** > **Modifier les paramètres de contrôle de compte d’utilisateur**.
 3. Dans la page **Choisir quand être averti des modifications apportées à votre ordinateur**, déplacez le curseur sur l’une des deux premières marques les plus proches de **Toujours m’avertir**.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir les informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir les informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

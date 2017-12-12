@@ -3,8 +3,8 @@ title: "Ajouter des stratégies de configuration d’applications pour les appar
 titlesuffix: Azure portal
 description: "Apprenez à utiliser les stratégies de configuration d’applications pour fournir des données de configuration à une application iOS quand elle est exécutée."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: a39b2d120a804d32b93b7a240af246327514b1b7
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Ajouter des stratégies de configuration d’applications pour les appareils iOS gérés | Microsoft Docs
 
@@ -131,7 +131,7 @@ Intune prend en charge les types de données suivants dans une liste de proprié
 ### <a name="tokens-used-in-the-property-list"></a>Jetons utilisés dans la liste des propriétés
 
 De plus, Intune prend en charge les types de jetons suivants dans la liste de propriétés :
-- \{\{userPrincipalName\}\} : par exemple, **John@contoso.com**
+- \{\{userprincipalname\}\} : par exemple, **John@contoso.com**
 - \{\{mail\}\} : par exemple, **John@contoso.com**
 - \{\{partialupn\}\} : par exemple, **John**
 - \{\{accountid\}\} : par exemple, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
