@@ -243,9 +243,9 @@
         - name: Stratégies de configuration des applications
           href: app-configuration-policies-overview.md
           items:
-            - name: iOS périphériques gérés
+            - name: Appareils gérés iOS
               href: app-configuration-policies-use-ios.md
-            - name: Android périphériques gérés
+            - name: Appareils gérés Android
               href: app-configuration-policies-use-android.md
             - name: Applications gérées
               href: app-configuration-policies-managed-app.md
@@ -552,6 +552,8 @@
   items:
     - name: Aider les utilisateurs à résoudre les problèmes
       href: help-desk-operators.md
+    - name: Journaux d’audit pour les activités Intune
+      href: monitor-audit-logs.md
     - name: Utiliser l’entrepôt de données Intune
       href: reports-nav-create-intune-reports.md
       items:
@@ -637,7 +639,7 @@
     - name: Charger une version test d'applications Windows
       href: intune-graph-apis.md
       items:
-        - name: API Graph pour référence Intune
+        - name: Informations de référence sur les API Graph pour Intune
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Glossaire
   href: intune-glossary.md
