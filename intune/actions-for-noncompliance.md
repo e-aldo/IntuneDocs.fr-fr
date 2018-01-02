@@ -15,11 +15,11 @@ ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3adc3c01d4657accfdb5cd70970ff191d06a9aef
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 85eb19a07ce42dcaf61ce34637644761880cb0b9
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="automate-actions-for-noncompliance"></a>Automatiser des actions en cas de non-conformité
 
@@ -27,7 +27,7 @@ Les **actions en cas de non-conformité** vous permettent de configurer une séq
 
 Il existe deux types d’actions :
 
--   **Notifier les utilisateurs finaux par e-mail** : vous pouvez personnaliser votre notification par e-mail avant de l’envoyer à l’utilisateur final. Intune permet la personnalisation de l’objet et du corps du message, notamment le logo de l’entreprise, des informations de contact et des destinataires supplémentaires.
+-   **Notifier les utilisateurs finaux par e-mail** : vous pouvez personnaliser votre notification par e-mail avant de l’envoyer à l’utilisateur final. Intune permet la personnalisation de l’objet et du corps du message, notamment le logo de l’entreprise et les informations de contact.
 
 -   **Marquer l’appareil comme non conforme** : vous pouvez déterminer une planification du nombre de jours au terme desquels l’appareil doit être marqué comme non conforme. Ce marquage peut être immédiat, ou vous pouvez décider d’octroyer à l’utilisateur une période de grâce pour se mettre en conformité avez vos stratégies de conformité des appareils.
 
@@ -95,7 +95,7 @@ Vous pouvez ajouter une action au moment où vous créez une stratégie de confo
 
 2.  Choisissez une stratégie de conformité des appareils en cliquant sur celle-ci, puis choisissez **Propriétés** sous la section **Gérer**.
 
-3.  Dans le panneau des **propriétés des stratégies de conformité des appareils**, choisissez **Actions en cas de non-conformité**.
+3.  Dans le panneau **device compliance policy properties (Propriétés de stratégie de conformité d’appareil)**, choisissez **Actions en cas de non-conformité**.
 
 4.  Le panneau Actions en cas de non-conformité s’ouvre. Choisissez **Ajouter** pour spécifier les paramètres d’action. Vous pouvez choisir le modèle de message créé précédemment, des destinataires supplémentaires et la planification de la période de grâce. Vous pouvez spécifier le nombre de jours (de 0 à 365) sur la planification, puis appliquer les stratégies d’accès conditionnel. Si vous spécifiez **0** pour le nombre de jours, cela signifie que l’accès conditionnel doit **immédiatement** bloquer l’accès aux ressources de l’entreprise quand les appareils sont non conformes aux stratégies de conformité des appareils.
 

@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) avec Intune
 
@@ -36,7 +36,7 @@ Le RBAC permet de contrôler qui peut effectuer diverses tâches Intune au sein 
 
 - **Administrateur général :** les utilisateurs disposant de ce rôle ont accès à toutes les fonctionnalités d’administration d’Azure AD, ainsi qu’aux services fédérés à Azure AD, comme Exchange Online, SharePoint Online et Skype Entreprise Online. La personne qui ouvre un client Azure AD devient administrateur général. Seuls les administrateurs généraux peuvent affecter d’autres rôles d'administrateur Azure AD. Votre organisation peut compter plusieurs administrateurs généraux. Ils peuvent réinitialiser le mot de passe de tous les utilisateurs et de tous les autres administrateurs.
 
-- **Administrateur du service Intune :** les utilisateurs qui possèdent ce rôle ont des autorisations générales dans Intune lorsque ce service est présent. En outre, ce rôle fournit la possibilité de gérer les utilisateurs et les appareils et de créer et gérer les groupes.
+- **Administrateur du service Intune :** les utilisateurs qui possèdent ce rôle ont des autorisations générales dans Intune lorsque ce service est présent. En plus des restrictions Azure de remplacement, ce rôle permet également de gérer les utilisateurs et les appareils, et de créer et de gérer des groupes Intune.
 
 - **Administrateur de l’accès conditionnel :** les utilisateurs disposant de ce rôle sont autorisés uniquement à afficher, créer, modifier et supprimer des stratégies d’accès conditionnel.
 

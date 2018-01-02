@@ -198,7 +198,7 @@
           href: device-logout-user.md
         - name: Supprimer un utilisateur
           href: device-remove-user.md
-        - name: Contrôle à distance pour Android
+        - name: Contrôler à distance les appareils mobiles
           href: device-profile-android-teamviewer.md
         - name: Réinitialisation du code PIN Windows 10
           href: device-windows-pin-reset.md
@@ -236,6 +236,8 @@
               href: apps-add-android-for-work.md
             - name: Applications Office 365 pour Windows 10
               href: apps-add-office365.md
+            - name: Applications Office 365 pour macOS
+              href: apps-add-office365-macos.md
         - name: Attribuer des applications
           href: apps-deploy.md
         - name: Surveiller les applications
@@ -243,9 +245,9 @@
         - name: Stratégies de configuration des applications
           href: app-configuration-policies-overview.md
           items:
-            - name: Appareils gérés iOS
+            - name: iOS périphériques gérés
               href: app-configuration-policies-use-ios.md
-            - name: Appareils gérés Android
+            - name: Android périphériques gérés
               href: app-configuration-policies-use-android.md
             - name: Applications gérées
               href: app-configuration-policies-managed-app.md
@@ -417,6 +419,10 @@
           href: app-modern-authentication-block.md
         - name: Surveiller la conformité de l’accès conditionnel
           href: conditional-access-exchange-monitor.md
+        - name: Intégrer Jamf Pro à Intune pour des raisons de conformité
+          href: conditional-access-integrate-jamf.md
+        - name: Appliquer la conformité sur les Mac gérés par Jamf Pro
+          href: conditional-access-assign-jamf.md
     - name: Protéger les données d’application et d’appareil
       items:
         - name: Utiliser les stratégies de protection des applications
@@ -639,7 +645,7 @@
     - name: Charger une version test d'applications Windows
       href: intune-graph-apis.md
       items:
-        - name: Informations de référence sur les API Graph pour Intune
+        - name: API Graph pour référence Intune
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Glossaire
   href: intune-glossary.md

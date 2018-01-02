@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e34b9cd030244db4bdde78eedbb0f874f49fa1e1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="map-device-groups"></a>Mappage de groupes d'appareils
-
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -54,7 +53,7 @@ Vous utiliserez le nom de catégorie d’appareil quand vous créerez des groupe
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>Étape 2 : Créer des groupes de sécurité Active Directory
 Au cours de cette étape, vous allez créer des groupes dynamiques dans le portail Azure basés sur la catégorie d’appareil et le nom de la catégorie d’appareil.
 
-Pour continuer, reportez-vous à la rubrique [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) dans la documentation d’Azure Active Directory. 
+Pour continuer, reportez-vous à la rubrique [Utilisation d’attributs pour créer des règles avancées](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) dans la documentation d’Azure Active Directory.
 
 Utilisez les informations de cette section pour créer un groupe d'appareils avec une règle avancée à l’aide de l’attribut **deviceCategory**. Par exemple (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
@@ -84,7 +83,7 @@ Si la colonne **Catégorie** n’est pas affichée, cliquez sur **Colonnes**, ch
 
 Quand des utilisateurs finaux d’appareils iOS et Android inscrivent leur appareil, ils doivent choisir une catégorie dans la liste des catégories que vous avez configurées. Une fois qu’ils ont choisi une catégorie et terminé l’inscription, leur appareil est ajouté au groupe d’appareils Intune ou au groupe de sécurité Active Directory correspondant à la catégorie choisie.
 
-Pour affecter une catégorie à un appareil Windows, les utilisateurs finaux doivent utiliser le site web du portail d’entreprise (portal.manage.microsoft.com) après l’inscription de l’appareil. Sur un appareil Windows, accédez au site web et allez dans **Menu** > **Mes appareils**. Choisissez un appareil inscrit répertorié sur la page, puis sélectionnez une catégorie. 
+Quelle que soit la plateforme, vos utilisateurs finaux peuvent toujours accéder à portal.manage.microsoft.com après avoir inscrit l’appareil. Invitez l’utilisateur à se rendre sur le site web Portail d’entreprise et à accéder à **Mes appareils**. Ils peuvent choisir un appareil inscrit répertorié à l’écran, puis sélectionner une catégorie.
 
 Une fois le choix de catégorie effectué, l’appareil est ajouté automatiquement au groupe correspondant que vous avez créé. Si un appareil est déjà inscrit avant de configurer les catégories, l’utilisateur final verra une notification sur l’appareil sur le site web du portail d’entreprise, et il est invité à sélectionner une catégorie la prochaine fois qu’il accède à l’application de portail d’entreprise sur iOS ou Android.
 
@@ -92,5 +91,3 @@ Une fois le choix de catégorie effectué, l’appareil est ajouté automatiquem
 - Vous pouvez modifier une catégorie dans le portail Azure, mais si vous le faites, vous devrez manuellement mettre à jour tous les groupes de sécurité Azure Active Directory qui font référence à cette catégorie.
 
 - Si vous supprimez une catégorie, tous les appareils qui lui ont été affectés afficheront alors le nom de catégorie **Non affecté**.
-
-

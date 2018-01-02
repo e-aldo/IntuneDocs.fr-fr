@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 6d63ddcd8f60ac3491087e3e76949f2a49cf7b9b
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurer l’intégration de Lookout Mobile Threat Defense avec Intune
 
@@ -72,7 +72,8 @@ Consultez les étapes suivantes pour savoir comment collecter les informations d
 2.  La première connexion à la console Lookout doit être effectuée à l'aide d'un compte d’utilisateur ayant le rôle Azure AD Administrateur général, afin d'inscrire votre locataire Azure AD. Les connexions ultérieures n'ont pas besoin de ce niveau de privilège Azure AD. La page de consentement s’affiche. Choisissez **Accepter** pour terminer l’inscription. Une fois que vous avez donné votre consentement, vous êtes redirigé vers la console Lookout.
 
     ![capture d’écran de la page de première connexion de la console Lookout](./media/lookout_mtp_initial_login.png)
-    > [REMARQUE] Consultez la page [Résolution des problèmes d’intégration Lookout](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) pour obtenir de l’aide sur la résolution des problèmes de connexion.
+    > [!NOTE] 
+    > Consultez la page [Résolution des problèmes d’intégration Lookout](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) pour obtenir de l'aide sur la résolution des problèmes de connexion.
 
 3.  Dans la [console Lookout](https://aad.lookout.com), à partir du module **Système**, choisissez l’onglet **Connecteurs**, puis sélectionnez **Intune**.
 
@@ -85,7 +86,8 @@ Consultez les étapes suivantes pour savoir comment collecter les informations d
 ## <a name="configure-enrollment-groups"></a>Configurer les groupes d’inscription
 1. Comme meilleure pratique, créez un groupe de sécurité Azure AD dans le [portail de gestion Azure AD](https://manage.windowsazure.com) contenant un petit nombre d’utilisateurs afin de tester l’intégration Lookout.
 
-    > [REMARQUE] Tous les appareils pris en charge par Lookout, inscrits auprès d’Intune au sein d’un groupe d’inscription dans Azure AD, et qui sont identifiés et pris en charge sont inscrits et activables dans la console MTD Lookout.
+    > [!NOTE] 
+    > Tous les appareils pris en charge par Lookout, inscrits auprès d’Intune au sein d’un groupe d’inscription dans Azure AD, et qui sont identifiés et pris en charge, sont inscrits et activables dans la console MTD Lookout.
 
 2. Dans la [console Lookout](https://aad.lookout.com), dans le module **Système**, choisissez l'onglet **Connecteurs**, puis sélectionnez **Gestion de l’inscription** pour définir un ensemble d’utilisateurs dont les appareils doivent être inscrits auprès de Lookout. Ajoutez le groupe de sécurité Azure AD **Nom d'affichage** pour l’inscription.
 
