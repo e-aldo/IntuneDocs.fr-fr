@@ -3,10 +3,10 @@ title: "Bien démarrer avec les applications"
 titlesuffix: Azure portal
 description: "Recherchez et ajoutez des applications sur les appareils pour permettre à vos employés d’effectuer leur travail."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5c12c988f1181887c10f6ed14353365546e743b
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: bb02c362f056c454f4d141ce7ae20b9c3ca8035d
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="get-started-with-adding-apps"></a>Bien démarrer avec l’ajout d’applications
 
@@ -36,11 +36,12 @@ Vous allez suivre l’une des méthodes de déploiement d’application les plus
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. À l’aide de **Rechercher des ressources**, recherchez **Intune**.
 3. Sélectionnez **Applications mobiles**, puis **Applications**.
-4. Sélectionnez **Ajouter**, puis **Application de l’App Store iOS** comme **Type d’application**.
-5. Dans la zone de texte, recherchez une application à affecter à l’appareil. Choisissez l’application, puis sélectionnez **OK**.
-6. Dans le panneau **Ajouter une application**, sélectionnez **Informations sur l’application**, puis vérifiez que toutes les informations sur l’application sont renseignées. Vous pouvez ajouter d’autres détails facultatifs pour vous aider à organiser cette application, comme **Propriétaire**, **Remarques**, **Développeur** et une **URL de confidentialité** pour la politique de confidentialité de votre entreprise.
-7. Vérifiez que vous avez sélectionné Oui pour Proposer cette application dans le portail d’entreprise, puis sélectionnez OK.
-8. Sélectionnez **Ajouter** pour ajouter l’application. Vous accédez alors à la **Vue d’ensemble** de cette application. Choisissez **Affectations**, puis cliquez sur **Sélectionner des groupes** pour l’affecter à votre groupe de test. Rendez l’application **Disponible** pour le téléchargement. L’application doit alors apparaître comme **Application proposée** sur votre appareil de test.
+4. Sélectionnez **Ajouter**, puis sélectionnez **iOS** comme **Type d’application** sous **Application du Windows Store**.
+5. Choisissez **Sélectionner une application** pour afficher le panneau **Rechercher dans l’App Store**.
+6. Dans la zone de texte, recherchez une application à affecter à l’appareil. Choisissez l’application, puis cliquez sur **Sélectionner**.
+7. Dans le panneau **Ajouter une application**, sélectionnez **Informations sur l’application**, puis vérifiez que toutes les informations sur l’application sont renseignées. Vous pouvez ajouter d’autres détails facultatifs pour vous aider à organiser cette application, comme **Propriétaire**, **Remarques**, **Développeur** et une **URL de confidentialité** pour la politique de confidentialité de votre entreprise.
+8. Vérifiez que vous avez sélectionné **Oui** pour **Proposer cette application dans le portail d’entreprise**, puis sélectionnez **OK**.
+9. Sélectionnez **Ajouter** dans le panneau **Ajouter une application** pour ajouter l’application. Vous accédez alors à la **Vue d’ensemble** de cette application. Choisissez **Affectations**, puis cliquez sur **Sélectionner des groupes** pour l’affecter à votre groupe de test. Rendez l’application **Disponible** pour le téléchargement. L’application doit alors apparaître comme **Application proposée** sur votre appareil de test.
 
 ## <a name="learn-more"></a>En savoir plus
 

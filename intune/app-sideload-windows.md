@@ -1,9 +1,9 @@
 ---
-title: Chargement de la version test des applications pour Windows et Windows Phone
+title: Charger la version test des applications Windows et Windows Phone pour Intune
 description: "Découvrez comment connecter des applications métier afin de pouvoir utiliser Intune pour les déployer."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signer des applications métier afin de pouvoir les déployer sur des appareils Windows avec Intune
 
@@ -32,7 +32,7 @@ Les étapes ci-dessous vous aideront à obtenir les certificats requis et à sig
 
 
 1. **S'inscrire comme développeur Microsoft**<br>
-   [Inscrivez-vous comme développeur Microsoft](http://go.microsoft.com/fwlink/?LinkId=268442) en utilisant les informations de compte d’entreprise que vous avez utilisées quand vous vous connectez pour acheter votre compte d’entreprise. Cette demande devra être autorisée par un responsable de l'entreprise avant que vous ne receviez un certificat de signature de code.
+   [Inscrivez-vous comme développeur Microsoft](http://go.microsoft.com/fwlink/?LinkId=268442) en utilisant les informations de compte d’entreprise que vous avez utilisées quand vous vous êtes connecté pour acheter votre compte d’entreprise. Cette demande devra être autorisée par un responsable de l'entreprise avant que vous ne receviez un certificat de signature de code.
 
 2. **Obtenir un certificat Symantec d'entreprise**<br>
   Achetez un certificat sur le [site web de Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) à l'aide de votre identifiant Symantec. Après avoir acheté le certificat, l'approbateur d'entreprise que vous avez désigné lors de votre inscription en tant que développeur Microsoft recevra un e-mail lui demandant d'approuver la demande de certificat. Pour plus d’informations sur la nécessité d’obtenir un certificat Symantec, consultez la rubrique [Pourquoi Windows Phone requiert-il un certificat Symantec ?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Forum Aux Questions sur l'inscription des appareils Windows.

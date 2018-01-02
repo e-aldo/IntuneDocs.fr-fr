@@ -3,8 +3,8 @@ title: "Paramètres de restrictions d’appareil Intune pour iOS"
 titleSuffix: Azure portal
 description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils iOS."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils iOS dans Microsoft Intune
 
@@ -41,7 +41,7 @@ Cette restriction s’applique également aux options accessibles à partir des 
 - **Modification des paramètres de notification (mode supervisé uniquement)** : autorisez l’utilisateur à modifier les paramètres de notification de l'appareil.
 - **Modification du fond d’écran (mode supervisé uniquement)** : autorisez l’utilisateur à modifier le fond d’écran de l’appareil.
 - **Modification des paramètres d’approbation d’application d’entreprise (mode supervisé uniquement)** : permet à l’utilisateur de sélectionner les applications approuvées qui n’ont pas été téléchargées à partir de l’App Store.
-- **Modifications au profil de configuration** : autoriser l’utilisateur à installer des profils de configuration.
+- **Modifications au profil de configuration (mode supervisé uniquement)** : autoriser l’utilisateur à installer des profils de configuration.
 - **Verrou d’activation (mode supervisé uniquement)** : active le verrou d’activation sur les appareils iOS supervisés.
 
 ## <a name="configurations-requiring-supervision"></a>Configurations nécessitant une supervision

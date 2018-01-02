@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,28 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
+
+## <a name="week-of-november-27-2017"></a>Semaine du 27 novembre 2017
+
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Nouvelle étape « Catégories d’appareils » dans l’installation guidée pour l’application Portail d’entreprise pour Windows 10<!---1335292--->
+
+Si vous avez activé le [mappage de groupe d’appareils](device-group-mapping.md), l’application Portail d’entreprise pour Windows 10 invite maintenant vos utilisateurs à sélectionner une catégorie d’appareils après l’inscription de leur appareil.
+
+![Catégorie de mappage de groupe d’appareils](./media/w10_cp_category_device_setup_after_1711.png)
 
 ## <a name="week-of-november-13-2017"></a>Semaine du 13 novembre 2017
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Améliorations apportées au workflow de configuration des appareils dans le portail d’entreprise pour iOS dans la version 2.9.0 <!---1417174--->
 
-Nous avons amélioré le workflow de configuration des appareils dans l’application Portail d’entreprise pour iOS. Le texte de l’interface est plus convivial et nous avons regroupé des écrans quand cela était possible. Nous avons également personnalisé le texte en fonction de votre société en utilisant le nom de cette dernière durant tout le processus de configuration.
+Nous avons amélioré le workflow de configuration des appareils dans l’application Portail d’entreprise pour iOS. La langue est plus conviviale, et nous avons regroupé des écrans dans la mesure du possible. Nous avons également personnalisé le texte en fonction de votre société en utilisant le nom de cette dernière durant tout le processus de configuration.
 
 > [!NOTE]
 > Nous utilisons le nom de société que vous avez défini dans le portail Azure sous **Microsoft Intune** > **Mobile Apps** > **Personnalisation du portail d'entreprise** > **Nom de la société**. Si vous n’avez pas défini cette valeur, nous utiliserons le nom de locataire défini sous **Azure Active Directory** > **Propriétés** > **Nom**. Si vous n’avez pas défini de nom de société dans l’onglet Personnalisation du portail d’entreprise et si vous ne souhaitez pas que votre nom de locataire s’affiche, nous vous recommandons de définir le nom de la société dans ce même onglet. Si vous ne souhaitez pas que ce nom s’affiche dans l’en-tête du portail d’entreprise, vous pouvez décocher la case « Afficher le nom de la société à côté du logo ».
@@ -45,8 +53,8 @@ Nous avons amélioré le workflow de configuration des appareils dans l’applic
 
 ## <a name="week-of-november-6-2017"></a>Semaine du 6 novembre 2017
 
-### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Mises à jour de l’application Portail d’entreprise pour Windows 10 <!--1299474-->
-La page Paramètres de l’application Portail d’entreprise pour Windows 10 a été mise à jour pour rendre les paramètres et les actions prévues de l’utilisateur plus cohérents à travers l’ensemble des paramètres. Elle a également été mise à jour pour correspondre à la disposition d’autres applications Windows.
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Mise à jour de l’application Portail d’entreprise pour Windows 10<!--1299474-->
+La page Paramètres de l’application Portail d’entreprise pour Windows 10 a été mise à jour pour rendre les paramètres et les actions prévues de l’utilisateur plus cohérents à travers l’ensemble des paramètres, ainsi que pour correspondre à la disposition d’autres applications Windows.
 
 |Avant|Après|
 |---|---|

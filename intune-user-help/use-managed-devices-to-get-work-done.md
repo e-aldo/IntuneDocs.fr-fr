@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Utiliser des appareils gérés pour réaliser vos tâches
 Microsoft Intune est un logiciel qui permet aux organisations de gérer des appareils (tels que des smartphones, des tablettes et des PC), des applications et d’autres ressources d’entreprise telles que des e-mails. Cela permet aux employés d’accéder à leurs informations de travail à partir de pratiquement n’importe où sur presque n’importe quel appareil tout en contribuant à sécuriser les données d’entreprise.
@@ -34,7 +34,7 @@ Le service de support technique de votre entreprise peut consulter les informati
 Vous pouvez obtenir le portail d’entreprise de deux façons différentes :
 
 - En installant l’application Portail d’entreprise sur votre appareil. Vous obtenez généralement l’application Portail d’entreprise en accédant à l’App Store sur votre appareil, mais le support technique de votre entreprise peut également l’installer pour vous.
-- En accédant au [site web du portail d’entreprise](https://portal.manage.microsoft.com) que le support technique de votre entreprise a configuré.
+- En accédant au [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) que le support technique de votre entreprise a configuré.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Quelle est la différence entre l’application et le site web ?
 Il existe quelques différences mineures entre l’application Portail d’entreprise et le site web Portail d’entreprise, mais les deux permettent d’effectuer presque toutes les mêmes tâches . Exemples de tâche que vous pouvez effectuer :
@@ -60,8 +60,9 @@ Quand vous ajoutez un ordinateur ou un appareil au portail d’entreprise, certa
 Pour savoir ce que le support technique de votre entreprise peut voir ou non sur votre appareil, utilisez le lien correspondant au type d’appareil que vous utilisez :
 
 - [Installation de l’application Portail d’entreprise pour Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [Installation de l’application Portail d’entreprise pour iOS et MacOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Installation de l’application Portail d’entreprise pour Windows](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Installation de l’application Portail d’entreprise pour iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Installation de l’application Portail d’entreprise pour macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [Installation de l’application Portail d’entreprise pour Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Quel type d’ordinateurs ou d’appareils pouvez-vous ajouter au Portail d’entreprise ?
 -   Appareils Apple utilisant iOS (par ex., iPhone et iPad) et Mac OS (par ex., MacBook et iMac)
@@ -78,7 +79,8 @@ Vous pouvez supprimer ou réinitialiser un ordinateur ou un appareil à partir d
 Quand vous *supprimez* un ordinateur ou un appareil du portail d’entreprise, vous désinscrivez votre appareil dans Intune. Une fois l’appareil désinscrit, vous ne pouvez plus accéder au portail d’entreprise à partir de cet appareil et certaines données d’entreprise peuvent également être supprimées de l’appareil. Pour savoir comment supprimer votre appareil sur le portail d’entreprise, choisissez l’un des liens suivants :
 
 - [Désinscription de votre appareil Android](unenroll-your-device-from-intune-android.md)
-- [Désinscription de votre appareil iOS ou MacOS](unenroll-your-device-from-intune-ios.md)
+- [Désinscription de votre appareil iOS](unenroll-your-device-from-intune-ios.md)
+- [Désinscription de votre appareil macOS](unenroll-your-device-from-intune-macos.md)
 - [Désinscription de votre appareil Windows](unenroll-your-device-from-intune-windows.md)
 
 Quand vous *réinitialisez* un ordinateur ou un appareil, le portail d’entreprise tente de rétablir les paramètres par défaut d’origine sur votre ordinateur ou votre appareil. La réinitialisation de votre appareil supprime toutes les données personnelles et d’entreprise figurant sur l’appareil. Si vous avez perdu votre appareil, vous pouvez le réinitialiser à distance à partir du site web Portail d’entreprise.
@@ -95,6 +97,7 @@ Microsoft vous recommande d’essayer de commencer par voir si vous pouvez réso
 
 - [Résoudre les problèmes courants rencontrés avec votre appareil Android](troubleshoot-your-device-android.md)
 - [Résoudre les problèmes courants rencontrés avec votre appareil iOS](troubleshoot-your-device-ios.md)
+- [Résoudre les problèmes courants rencontrés avec votre appareil macOS](troubleshoot-your-device-macos.md)
 - [Résoudre les problèmes courants rencontrés avec votre appareil Windows](troubleshoot-your-device-windows.md)
 
-Vous pouvez publier un commentaire ci-dessous pour demander de l’aide. Toutefois, comme chaque organisation a des exigences différentes, nous ne pouvons pas toujours répondre à vos questions. Vous obtiendrez probablement la réponse la plus adaptée et la plus rapide en contactant le support technique de votre entreprise pour lui demander de l’aide. Ses informations de contact sont normalement disponibles sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com).
+Vous pouvez publier un commentaire ci-dessous pour demander de l’aide. Toutefois, comme chaque organisation a des exigences différentes, nous ne pouvons pas toujours répondre à vos questions. Vous obtiendrez probablement la réponse la plus adaptée et la plus rapide en contactant le support technique de votre entreprise pour lui demander de l’aide. Ses informations de contact sont normalement disponibles sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

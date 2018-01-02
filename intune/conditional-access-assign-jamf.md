@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/30/2017
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06cc4d70b30ec92946baefbc020aa4cda28b0c88
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Appliquer la conformité sur les Mac gérés par Jamf Pro
 
@@ -42,12 +42,9 @@ Vous pouvez utiliser Azure Active Directory et les stratégies d’accès condit
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Déployer l’application Portail d’entreprise pour macOS dans Jamf Pro
 
-Vous pouvez déployer l’application Portail d’entreprise pour macOS dans Jamf Pro de deux manières :
+Vous devez déployer l’application Portail d’entreprise pour macOS dans Jamf Pro en tant qu’installation en arrière-plan en appliquant la procédure ci-dessous :
 
-- En mettant le déploiement de l’application Portail d’entreprise à disposition dans Jamf Self Service
-- Sous la forme d’une installation en arrière-plan pour que les utilisateurs suivent la procédure ci-dessous :
-
-1. Sur un appareil macOS, téléchargez la version actuelle de [l’application Portail d’entreprise pour macOS](https://go.microsoft.com/fwlink/?linkid=862280).
+1. Sur un appareil macOS, téléchargez la version actuelle de [l’application Portail d’entreprise pour macOS](https://go.microsoft.com/fwlink/?linkid=862280). Ne l’installez pas ; vous avez besoin d’une copie de l’application à charger vers Jamf Pro.
 2. Ouvrez Jamf Pro, puis accédez à **Gestion de l’ordinateur** > **Packages**.
 3. Créez un package avec l’application Portail d’entreprise pour macOS, puis cliquez sur **Enregistrer**.
 4. Ouvrez **Ordinateurs** > **Stratégies**, puis sélectionnez **Nouveau**.
@@ -71,7 +68,7 @@ Les utilisateurs finaux doivent lancer l’application Portail d’entreprise vi
 > L’application Portail d’entreprise doit être lancée à partir de Jamf Self Service pour procéder à l’inscription de l’appareil. <br><br>Le fait de lancer manuellement l’application Portail d’entreprise (par exemple, à partir du dossier Applications ou Téléchargements) n’inscrit pas l’appareil. Si un utilisateur final lance manuellement le Portail d’entreprise, le message d’avertissement « AccountNotOnboarded » s’affiche.
 
 1. Dans Jamf Pro, accédez à **Ordinateurs** > **Stratégies** et créez une stratégie pour l’inscription d’appareils.
-2. Configurez la charge utile **Intégration de Microsoft Intune**, notamment la fréquence de déclenchement et d’exécution. Définissez la priorité sur **Après**.
+2. Configurez la charge utile **Intégration de Microsoft Intune**, notamment la fréquence de déclenchement et d’exécution.
 3. Cliquez sur l’onglet **Étendue** et incluez tous les appareils ciblés dans l’étendue de la stratégie.
 4. Cliquez sur l’onglet **Libre-service** pour rendre la stratégie disponible dans le libre-service Jamf. Incluez la stratégie dans la catégorie **Conformité de l'appareil**. Cliquez sur **Enregistrer**.
 

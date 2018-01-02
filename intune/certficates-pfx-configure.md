@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
-ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
+ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurer et gérer les certificats PKCS avec Intune
 
@@ -101,22 +101,20 @@ Un certificat d’AC intermédiaire ou racine est nécessaire sur chaque apparei
 
 ![Téléchargement de Connector][ConnectorDownload]
 
-1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Accédez à **Intune**, **Configuration de l’appareil**, **Autorité de certification**, puis cliquez sur **Télécharger Certificate Connector**.
-   * Enregistrez le fichier téléchargé à un emplacement où vous pouvez accéder, sur le serveur où vous effectuerez l’installation.
-3. Ouvrez une session sur le serveur où vous installerez Microsoft Intune Certificate Connector.
-4. Exécutez le programme d’installation et acceptez l’emplacement par défaut. Il installe le connecteur à cet endroit : C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.
+1. Dans le portail Azure, sélectionnez **Plus de services** > **Surveillance + gestion** > **Intune**.
+2. Dans le panneau **Intune**, sélectionnez **Configuration de l’appareil**. 
+3. Dans le panneau **Configuration de l’appareil**, sélectionnez **Autorité de certification**. 
+4. Cliquez sur **Ajouter** et sélectionnez **Télécharger le fichier du connecteur**. Enregistrez le fichier téléchargé à un emplacement accessible à partir du serveur où vous effectuerez l’installation. 
+5.  Ouvrez une session sur le serveur où vous installerez Microsoft Intune Certificate Connector.
+6.  Exécutez le programme d’installation et acceptez l’emplacement par défaut. Il installe le connecteur à cet endroit : C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.
+    1. Sur la page Options du programme d’installation, sélectionnez **Distribution PFX** et cliquez sur **Suivant**.
+    2. Cliquez sur **Installer** et attendez que l’installation se termine.
+    3. Dans la dernière page, cochez la case intitulée **Lancer Intune Connector** et cliquez sur **Terminer**.
+7.  La fenêtre NDES Connector s’ouvre sur l’onglet **Inscription**. Pour activer la connexion à Intune, cliquez sur **Connexion** et spécifiez un compte disposant d’autorisations administratives.
+8.  Sur l’onglet **Avancé**, vous pouvez laisser la case d’option **Utiliser le compte SYSTÈME de cet ordinateur (par défaut)** sélectionné.
+9.  Cliquez sur **Appliquer**, puis sur **Fermer**.
+10. Revenez à présent sur le Portail Azure. Au bout de quelques minutes, vous devez voir apparaître une coche verte et le mot **Active** sous **État de la connexion** dans **Intune** > **Configuration de l’appareil** > **Autorité de certification**. Cette confirmation vous indique que votre serveur de connecteur peut communiquer avec Intune.
 
-      a. Sur la page Options du programme d’installation, sélectionnez **Distribution PFX** et cliquez sur **Suivant**.
-
-   b. Cliquez sur **Installer** et attendez que l’installation se termine.
-
-   c. Sur la page de fin, cochez la case intitulée **Lancer Intune Connector** et cliquez sur **Terminer**.
-
-5. La fenêtre NDES Connector s’ouvre sur l’onglet **Inscription**. Pour activer la connexion à Intune, vous devez cliquer sur **Connexion** et spécifier un compte disposant d’autorisations administratives.
-6. Sur l’onglet **Avancé**, vous pouvez laisser la case d’option **Utiliser le compte SYSTÈME de cet ordinateur (par défaut)** sélectionné.
-7. Cliquez sur **Appliquer**, puis sur **Fermer**.
-8. Revenez à présent sur le Portail Azure. Sous **Intune**, **Configuration de l’appareil**, **Autorité de certification**, vous devez voir apparaître une coche verte et le mot **Active** sous **État de la connexion** au bout de quelques minutes. Cette confirmation vous indique que votre serveur de connecteur peut communiquer avec Intune.
 
 ## <a name="create-a-device-configuration-profile"></a>Créer un profil de configuration d’appareils
 
@@ -169,4 +167,4 @@ Un certificat d’AC intermédiaire ou racine est nécessaire sur chaque apparei
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Accéder à Intune sur le Portail Azure et créer un nouveau profil pour un certificat approuvé"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Créer un profil et charger un certificat approuvé"
-[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "Télécharger Certificate Connector sur le Portail Azure"
+[ConnectorDownload]: ./media/certificates-download-connector.png "Télécharger Certificate Connector sur le Portail Azure"  
