@@ -3,8 +3,8 @@ title: "Guide de configuration de l'application Portail d’entreprise"
 titleSuffix: Azure portal
 description: "Découvrez comment appliquer un logo spécifique d'entreprise à l’application Portail d’entreprise Intune. \""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 303d4a4cbce9d63abc0809a27ae1e22dcd1e195b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 994d8b8fd90e4e66b5fdadae1cfdbbba403897ae
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Guide pratique pour configurer l’application Portail d’entreprise Microsoft Intune
 
@@ -36,7 +36,7 @@ La personnalisation du Portail d’entreprise permet de fournir une expérience 
 Le nom de l’entreprise s’affiche comme titre du Portail d’entreprise. Les informations de contact et les détails sont présentés aux utilisateurs dans l’écran **Contacter le service informatique** du Portail d’entreprise. La déclaration de confidentialité s’affiche lorsqu’un utilisateur clique sur le lien correspondant.        
 
 
-|Nom du champ|Longueur maximale|Plus d'informations|        
+|Nom du champ|Longueur maximale|Autres informations|        
 |-|-|-|     
 |**Nom de la société**|40|Ce nom s’affiche comme titre du Portail d’entreprise.|        
 |**Nom du contact du service informatique**|40|Ce nom s’affiche dans la page **Contacter le service informatique**.|      
@@ -50,7 +50,7 @@ Les utilisateurs peuvent voir le lien du site web de support dans le Portail d�
 
 
 
-|Nom du champ|Longueur maximale|Plus d'informations|        
+|Nom du champ|Longueur maximale|Autres informations|        
 |-|-|-|     
 |**URL du site web du support technique**|150|Si vous avez un site web de support technique auquel vous aimeriez que les utilisateurs accèdent, spécifiez cette URL ici. Elle doit être au format **htps://www.contoso.com**. Si vous ne spécifiez aucune URL, rien ne s’affiche pour le site web de support technique dans la page **Contacter le service informatique** du Portail d’entreprise.|        
 |**Nom du site web du support technique**|40|Il s'agit du nom convivial qui s'affiche pour l'URL permettant d'accéder au site Web de support technique. Si vous spécifiez l’URL d’un site web de support technique sans aucun nom convivial, Accéder au site web du service informatique apparaît dans la page **Contacter le service informatique** du Portail d’entreprise.       
@@ -60,7 +60,7 @@ Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de
 
 
 
-|Nom du champ|Plus d'informations|       
+|Nom du champ|Autres informations|       
 |-|-|       
 |**Couleur de thème**|Sélectionnez une couleur de thème à appliquer au Portail d’entreprise.|      
 |**Afficher le logo de la société**|Lorsque vous activez cette option, vous pouvez télécharger le logo de votre entreprise pour qu’il apparaisse sur le Portail de celle-ci. Vous pouvez télécharger deux logos : un qui s’affiche quand l’arrière-plan du Portail d’entreprise est blanc, et un autre qui s’affiche quand l’arrière-plan du Portail d’entreprise utilise la couleur de thème que vous avez sélectionnée. Chaque logo doit être un fichier de type .png ou .jpg, et avoir une résolution maximale de 400 x 100 pixels et une taille inférieure ou égale à 750 Ko.<br>Vous pouvez également afficher le nom de société que vous avez entré à côté du logo chargé.|      
