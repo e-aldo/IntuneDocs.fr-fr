@@ -2,8 +2,8 @@
 title: "Stratégie | Microsoft Docs"
 description: "Rubrique de référence sur la catégorie Stratégie de collections d’entités dans l’API d’entrepôt de données Intune."
 keywords: "Entrepôt de données Intune"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 06c489f8519bda2f3f0359589c3af845ade423fe
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-policy-entities"></a>Informations de référence sur les entités de stratégie
 
@@ -61,10 +61,10 @@ L’entité **DeviceConfigurationProfileDeviceActivity** répertorie le nombre d
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
 | DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
-| Pending |Nombre d’appareils uniques en état d’attente. |123 |
+| En attente |Nombre d’appareils uniques en état d’attente. |123 |
 | Réussi |Nombre d’appareils uniques en état de réussite. |12 |
 | Erreur |Nombre d’appareils uniques en état d’erreur. |10 |
-| Failed |Nombre d’appareils uniques en état d’échec. |2 |
+| Échec |Nombre d’appareils uniques en état d’échec. |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -73,10 +73,10 @@ L’entité **UserConfigurationProfileDeviceActivity** répertorie le nombre d�
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
 | DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
-| Pending |Nombre d’utilisateurs uniques en état d’attente. |123 |
+| En attente |Nombre d’utilisateurs uniques en état d’attente. |123 |
 | Réussi |Nombre d’utilisateurs uniques en état de réussite. |12 |
 | Erreur |Nombre d’utilisateurs uniques en état d’erreur. |10 |
-| Failed |Nombre d’utilisateurs uniques en état d’échec. |2 |
+| Échec |Nombre d’utilisateurs uniques en état d’échec. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -87,7 +87,7 @@ L’entité **PolicyTypeActivity** répertorie le nombre cumulé d’appareils d
 | DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
 | PolicyKey |Clé de stratégie pouvant être jointe à la stratégie pour obtenir le nom de la stratégie. |Ligne de base Windows 10 |
 | PolicyTypeKey |Type de clé de stratégie pouvant être joint au type de stratégie pour obtenir le nom du type de la stratégie. |Stratégie de conformité Windows 10 |
-| Pending |Nombre d’appareils uniques en état d’attente. |123 |
+| En attente |Nombre d’appareils uniques en état d’attente. |123 |
 | Réussi |Nombre d’appareils uniques en état de réussite. |12 |
 | Erreur |Nombre d’appareils uniques en état d’erreur. |10 |
 | Fail- |Nombre d’appareils uniques en état d’échec. |2 |

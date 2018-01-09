@@ -3,8 +3,8 @@ title: "Portail de dépannage du support technique | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Les équipes du centre de support technique utilisent le portail de dépannage pour résoudre les problèmes techniques des utilisateurs"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/26/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 845b225fe60ecde71f364b224a0984638662a3db
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilisation du portail de résolution des problèmes pour aider les utilisateurs
 
@@ -81,7 +81,7 @@ Propriétés des applications mobiles.
 | Type          | Vous pouvez choisir un type d’attribution pour chaque application.  <br> **Disponible** : les utilisateurs effectuent l’installation de l’application à la demande à partir de l’application ou du site web de portail d’entreprise.  <br> **Non applicable** : l’application n’est pas installée ni affichée dans le portail d’entreprise. <br> **Désinstaller** : l’application est désinstallée des appareils dans les groupes sélectionnés.  <br> **Disponible avec ou sans inscription** : affectez cette application à des groupes d’utilisateurs dont les appareils ne sont pas inscrits avec Intune. |
 | Dernière modification le | Nom du type d’appareil.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>Appareils
+### <a name="devices"></a>Périphériques
 
 Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
 
@@ -103,7 +103,7 @@ Une stratégie de protection des applications est disponible pour les applicatio
 
 | Propriété    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| État      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
 | Nom de l’application    | Nom de l’application                                                           |
 | Nom de l'appareil | Nom du type d’appareil.                                                       |
 | Type d'appareil | Nom du type d’appareil.                                                       |
@@ -126,11 +126,11 @@ Le tableau récapitule l’état des stratégies de protection des applications 
 | Inscription  | Nom du type d’appareil.                                                                                                     |
 | Dernière mise à jour | Horodatage de la modification de la stratégie.                                                                                              |
 
-### <a name="devices"></a>Appareils
+### <a name="devices"></a>Périphériques
 
 Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
 
-| Propriété           | Text                                                                                                                                |
+| Propriété           | Texte                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Nom du périphérique        | Nom du type d’appareil.                                                                                                     |
 | Géré par         | Horodatage de la modification de la stratégie.                                                                                              |
@@ -159,7 +159,7 @@ Propriétés des stratégies de conformité.
 | Type de stratégie   | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Dernière modification le | Nom du type d’appareil.                                                                                                     |
 
-### <a name="devices"></a>Appareils
+### <a name="devices"></a>Périphériques
 
 Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
 
@@ -181,7 +181,7 @@ Une stratégie de protection des applications est disponible pour les applicatio
 
 | Propriété    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| État      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
 | Nom de l’application    | Nom de l’application                                                           |
 | Nom de l'appareil | Nom du type d’appareil.                                                       |
 | Type d'appareil | Nom du type d’appareil.                                                       |
@@ -204,7 +204,7 @@ Propriétés des stratégies de configuration.
 | Type de stratégie   | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Dernière modification le | Nom du type d’appareil.                                                                                                     |
 
-### <a name="devices"></a>Appareils
+### <a name="devices"></a>Périphériques
 
 Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
 
@@ -227,7 +227,7 @@ Une stratégie de protection des applications est disponible pour les applicatio
 
 | Propriété    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
+| État      | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**. |
 | Nom de l’application    | Nom de l’application                                                           |
 | Nom de l'appareil | Nom du type d’appareil.                                                       |
 | Type d'appareil | Nom du type d’appareil.                                                       |

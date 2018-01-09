@@ -15,17 +15,17 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: a51d260718e0d0c3984966fab69e202b854c1847
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurer et gérer les certificats PKCS avec Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour utiliser des certificats PKCS avec Intune, vous devez disposer de l’infrastructure suivante :
 
@@ -53,12 +53,13 @@ Un certificat d’AC intermédiaire ou racine est nécessaire sur chaque apparei
 2. Ouvrez une invite de commandes en tant qu’administrateur.
 3. Exportez le certificat d’AC racine à un emplacement où vous pourrez accéder ultérieurement.
 
-   Exemple :
+   Par exemple :
+
+4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
 
    `certutil -ca.cert certnew.cer`
 
    Pour plus d’informations, consultez la page [Tâches CertUtil pour la gestion des certificats](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
-
 
 ## <a name="configure-certificate-templates-on-the-certification-authority"></a>Configurer les modèles de certificats sur l’autorité de certification
 

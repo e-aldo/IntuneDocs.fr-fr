@@ -3,8 +3,8 @@ title: "Gérer des applications à partir du Microsoft Store pour Entreprises"
 titlesuffix: Azure portal
 description: "Découvrez comment synchroniser des applications dans Intune à partir du Microsoft Store pour Entreprises, puis les affecter et assurer leur suivi."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ecb5a310e8b869deb493bc5554029d641ba419c3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 0ca1ab9ca0e6bd734fa756cd32e64bde7ff4cb40
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Guide pratique pour gérer les applications que vous avez achetées dans le Microsoft Store pour Entreprises avec Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) propose un emplacement dans lequel vous pouvez trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Windows Store à Microsoft Intune, vous pouvez gérer les applications achetées en volume depuis le portail Azure. Exemple :
+Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) propose un emplacement dans lequel vous pouvez trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Windows Store à Microsoft Intune, vous pouvez gérer les applications achetées en volume depuis le portail Azure. Par exemple :
 * Vous pouvez synchroniser la liste des applications que vous avez achetées dans le Store avec Intune.
 * Les applications qui sont synchronisées apparaissent dans la console d’administration Intune. Vous pouvez les affecter comme toute autre application.
 * Vous pouvez effectuer un suivi du nombre de licences disponibles et de la quantité de licences utilisée dans la console d’administration Intune.

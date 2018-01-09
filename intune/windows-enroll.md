@@ -3,9 +3,9 @@ title: Inscrire des appareils Windows
 titlesuffix: Azure portal
 description: Activer la gestion des appareils mobiles (MDM) Intune pour les appareils Windows.
 keywords: 
-author: nathbarn
-manager: nathbarn
-ms.date: 11/29/2017
+author: ErikjeMS
+manager: erikje
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bf9ae5f05e21fa2ca7be4af08dace5b96315cec3
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 308522e0a54d47595294b8f1c31e92a965a09ef4
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-windows-devices"></a>Inscrire des appareils Windows
 
@@ -70,7 +70,7 @@ Si vous avez plusieurs suffixes UPN, vous devez créer un enregistrement CNAME p
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 heure|
 |CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 heure|
 
-`EnterpriseEnrollment-s.manage.microsoft.com` : prend en charge une redirection vers le service Intune avec reconnaissance du domaine à partir du nom de domaine de l’e-mail.
+`EnterpriseEnrollment-s.manage.microsoft.com` : prend en charge une redirection vers le service Intune avec reconnaissance du domaine à partir du nom de domaine de l’e-mail.
 
 La propagation des modifications DNS peut prendre jusqu’à 72 heures. Vous ne pouvez pas vérifier la modification DNS dans Intune tant que l’enregistrement DNS ne s’est pas propagé.
 

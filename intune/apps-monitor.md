@@ -3,8 +3,8 @@ title: "Guide pratique pour surveiller les affectations et les informations d’
 titlesuffix: Azure portal
 description: "Une fois que vous avez affecté une application à des utilisateurs ou à des appareils, utilisez ces informations pour surveiller son état."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0298fc255b3c11a12b5bf225968d6f2303192053
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: cb95319d2574116d480de9bdf74ef36129d0970f
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Guide pratique pour surveiller les affectations et les informations d’applications avec Microsoft Intune
 
@@ -49,7 +49,7 @@ Heure de création de cette révision.
  - **Affecté**  
 **Oui** ou **Non** si l’application a été affectée.
 
-### <a name="status"></a>Status
+### <a name="status"></a>État
 Chaque graphique affiche le nombre d’applications pour chacun des états suivants :
 
  - **Installé**  
@@ -70,7 +70,7 @@ Nombre d’applications avec un état inconnu.
  - **Nom de l’appareil**  
 Nom de l’appareil sur les plateformes qui autorisent le nommage d’un appareil. Sur d’autres plateformes, Intune crée un nom à partir d’autres propriétés. Cet attribut ne peut pas être disponible pour tous les appareils.
  - **Nom d’utilisateur**  
-Nom de l’utilisateur.
+Le nom de l'utilisateur.
  - **Plateforme**  
 Système d’exploitation de l’appareil (Windows, iOS, Android, etc.)
  - **Version**  

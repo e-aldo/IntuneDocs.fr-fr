@@ -3,10 +3,10 @@ title: "Gérer les applications iOS achetées en volume | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Découvrez comment synchroniser les applications que vous avez achetées en volume à partir de l’App Store iOS dans Intune et ensuite gérer et suivre leur utilisation."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les applications iOS achetées par le biais d’un programme d’achat en volume avec Microsoft Intune
 
@@ -38,9 +38,9 @@ Vous pouvez utiliser deux méthodes pour affecter les applications achetées en 
 
 ### <a name="device-licensing"></a>Gestion des licences des appareils
 
-Quand vous affectez une application à des appareils, une licence d’application est utilisée et reste associée à l’appareil auquel vous l’avez attribuée. 
+Quand vous affectez une application à des appareils, une licence d’application est utilisée et reste associée à l’appareil auquel vous l’avez attribuée.
 
-Quand vous affectez des applications achetées en volume à un appareil, l’utilisateur final de l’appareil n’a pas à fournir un ID Apple pour accéder à l’App Store. 
+Quand vous affectez des applications achetées en volume à un appareil, l’utilisateur final de l’appareil n’a pas à fournir un ID Apple pour accéder à l’App Store.
 
 ### <a name="user-licensing"></a>Licences utilisateur
 
@@ -92,7 +92,8 @@ Vérifiez que quand vous configurez un appareil pour un nouvel utilisateur Intun
         > Si vous changez de pays, les métadonnées des applications et l’URL du Store sont mises à jour lors de la prochaine synchronisation avec le service Apple pour les applications créées avec ce jeton. L’application n’est pas mise à jour si elle n’existe pas dans le Store du nouveau pays.
 
     - **Type de compte VPP** : choisissez **Entreprise** ou **Éducation**.
-    - **Application automatique des mises à jour** : choisissez **Activé** ou **Désactivé** pour activer les mises à jour automatiques. Quand elle est activée, Intune met à jour toutes les applications achetées pour le jeton spécifié via le service Intune quand l’appareil s’enregistre. détecte les mises à jour des applications VPP dans l’App Store et les envoie (push) automatiquement à l’appareil quand celui-ci s’enregistre.
+    - **Application automatique des mises à jour** : choisissez **Activé** ou **Désactivé** pour activer les mises à jour automatiques. Quand elle est activée, Intune met à jour toutes les applications achetées pour le jeton spécifié via le service Intune quand l’appareil s’enregistre.
+détecte les mises à jour des applications VPP dans l’App Store et les envoie (push) automatiquement à l’appareil quand celui-ci s’enregistre.
 4. Une fois ces opérations effectuées, sélectionnez **Charger**.
 
 Le jeton est affiché dans le panneau de liste de jetons.
@@ -119,8 +120,8 @@ L’utilisateur final reçoit des invites concernant l’installation d’applic
 
 | # | Scénario                                | Invite au programme Apple VPP                              | Invite d’installation d’application | Invite de saisie de l’identifiant Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – Licence associée à un utilisateur                             | Y                                                                                               | O                                           | Y                                 |
-| 2 | Corp – Licence associée à un utilisateur (appareil non supervisé)     | Y                                                                                               | O                                           | Y                                 |
+| 1 | BYOD – Licence associée à un utilisateur                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Corp – Licence associée à un utilisateur (appareil non supervisé)     | Y                                                                                               | Y                                           | Y                                 |
 | 3 | Corp – Licence associée à un utilisateur (appareil supervisé)         | Y                                                                                               | N                                           | Y                                 |
 | 4 | BYOD – Licence associée à un appareil                           | N                                                                                               | Y                                           | N                                 |
 | 5 | Corp – Licence associée à un appareil (appareil non supervisé)                           | N                                                                                               | Y                                           | N                                 |
@@ -134,6 +135,8 @@ L’utilisateur final reçoit des invites concernant l’installation d’applic
 ## <a name="further-information"></a>Informations supplémentaires
 
 Pour libérer une licence, vous devez modifier l’action d’affectation sur **Désinstallation**. La licence est récupérée une fois l’application désinstallée. Si vous supprimez une application qui était attribuée à un utilisateur, Intune tente de récupérer toutes les licences d’application qui étaient associées à cet utilisateur.
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 Quand un utilisateur avec un appareil éligible essaie pour la première fois d’installer une application VPP sur un appareil, il est invité à participer au programme VPP d’Apple. Il doit accepter pour que l’installation de l’application se poursuive. L’invitation à participer au Programme d’achat en volume (VPP) Apple nécessite que l’utilisateur puisse utiliser l’application iTunes sur l’appareil iOS. Si vous avez défini une stratégie pour désactiver l’application iTunes Store, la gestion des licences par utilisateur pour le programme VPP ne fonctionne pas. La solution consiste à autoriser l’application iTunes en supprimant la stratégie ou à utiliser la gestion des licences par appareil.
 

@@ -3,8 +3,8 @@ title: "Guide pratique pour ajouter des applications métier iOS à Intune"
 titlesuffix: Azure portal
 description: "En savoir plus sur l’ajout des applications métier iOS à Intune."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/3/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0e64ca5481b86a63b51b9f0b664569e86f1bfbc9
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: 20a044ea6b517279a2546f62d05cc79e09dcdc5f
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier iOS à Microsoft Intune
 
@@ -64,7 +64,7 @@ Aidez-vous des informations contenues dans cette rubrique pour ajouter des appli
     - **Logo** : chargez l’icône qui est associée à l’application. Il s’agit de l’icône qui est affichée avec l’application quand les utilisateurs naviguent dans le portail d’entreprise.
 3. Quand vous avez terminé, cliquez sur **OK**.
 
-## <a name="step-4---finish-up"></a>Étape 4 : terminer
+## <a name="step-4---finish-up"></a>Étape 4 : Terminer
 
 1. Dans le panneau **Ajouter une application**, vérifiez que les détails pour votre application sont corrects.
 2. Sélectionnez **Ajouter** pour charger l’application sur Intune.

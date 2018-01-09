@@ -2,8 +2,8 @@
 title: "Appareils - Entrepôt de données Intune | Microsoft Docs"
 description: "Rubrique de référence sur la catégorie Appareils de collections d’entités dans l’API d’entrepôt de données Intune."
 keywords: "Entrepôt de données Intune"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-devices-entities"></a>Référence pour les entités d’appareils
 
@@ -47,7 +47,7 @@ L’entité **DeviceTypes** représente le type d’appareil référencé par d�
 
 | deviceTypeID  | Nom | Description |
 |---------|------------|--------|
-| 0 |Bureau |Appareil Windows Desktop |
+| 0 |Desktop (Expérience utilisateur) |Appareil Windows Desktop |
 | 1 |WindowsRT |Appareil Windows RT |
 | 2 |WinMO6 |Appareil Windows Mobile 6.0 |
 | 3 |Nokia |Appareil Nokia |
@@ -66,7 +66,7 @@ L’entité **DeviceTypes** représente le type d’appareil référencé par d�
 | 17 |AndroidForWork |Appareil Android géré à l’aide du Propriétaire de profil Android for Work |
 | 100 |Blackberry |Appareil Blackberry |
 | 101 |Palm |Appareil Palm |
-| 255 |Inconnu |Type d’appareil inconnu |
+| 255 |Unknown |Type d’appareil inconnu |
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
@@ -90,7 +90,7 @@ L’entité **ClientRegistrationStateTypes** représente le type d’inscription
 | 5 |ApprovalPending |Approbation en attente |
 | 6 |ResetCert |Réinitialiser le certificat |
 | 7 |NotRegisteredPendingEnrollment |Non inscrit, inscription en attente |
-| 8 |Inconnu |État inconnu |
+| 8 |Unknown |État inconnu |
 
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
@@ -106,7 +106,7 @@ L’entité **EnrollmentTypes** indique la façon dont un appareil a été inscr
 
 | enrollmentTypeID  | Nom | Description |
 |---------|------------|--------|
-| 0 |Inconnu |Le type d’inscription n’a pas été collecté |
+| 0 |Unknown |Le type d’inscription n’a pas été collecté |
 | 1 |UserEnrollment |Inscription lancée par l’utilisateur |
 | 2 |DeviceEnrollment |Inscription d’appareil avec un profil sans utilisateur |
 | 3 |DeviceEnrollmentWithUDA |Inscription d’appareil avec un profil UDA |
@@ -141,7 +141,7 @@ L’entité **MdmStatuses** indique l’état de conformité de l’appareil.
 
 | MdmStatusID  | ComplianceStatus | Description |
 |---------|------------|--------|
-| 0 |Inconnu |L’état de conformité de l’appareil est inconnu. |
+| 0 |Unknown |L’état de conformité de l’appareil est inconnu. |
 | 1 |Conforme |L’appareil est conforme. |
 | 2 |Non conforme |L’appareil n’est pas conforme. |
 | 3 |Conflict |La conformité de l’appareil a généré un conflit. |
@@ -189,7 +189,7 @@ L’entité **WorkPlaceJoinStateTypes** représente l’état d’Azure Active D
 
 | workPlaceJoinStateID  | Nom | Description |
 |---------|------------|--------|
-| 0 |Inconnu |Si un appareil n’est pas rattaché à l’espace de travail, son état est Unknown |
+| 0 |Unknown |Si un appareil n’est pas rattaché à l’espace de travail, son état est Unknown |
 | 1 |Réussi |Rattachement à l’espace de travail effectué |
 | 2 |FailureToGetScepMetadata |Échec de l’obtention des métadonnées SCEP |
 | 3 |FailureToGetScepChallenge |Échec de l’obtention du défi SCEP |
@@ -219,9 +219,9 @@ L’entité **ManagementAgentTypes** représente les agents utilisés pour gére
 | 4 |IntuneClient | L’appareil est géré par l’agent Intune PC |
 | 5 |EasIntuneClient | L’appareil est géré à la fois par Exchange Active Sync et par l’agent Intune PC |
 | 8 |ConfigManagerClient | L’appareil est géré par l’agent System Center Configuration Manager |
-| 16 |Inconnu | Type d’agent de gestion inconnu |
+| 16 |Unknown | Type d’agent de gestion inconnu |
 
-## <a name="devices"></a>Appareils
+## <a name="devices"></a>Périphériques
 
 L’entité **Devices** répertorie tous les appareils inscrits à la gestion et leurs propriétés correspondantes.
 
@@ -338,7 +338,7 @@ L’entité **MdmDeviceInventoryHistories** contient des instantanés quotidiens
 | OSManufacturer |Fabricant du système d’exploitation. |
 | OSProductSuite |Suite de produits du système d’exploitation. |
 | OSProductType |Type de produit du système d’exploitation. |
-| Locale |Paramètres régionaux du système d’exploitation. |
+| Paramètres régionaux |Paramètres régionaux du système d’exploitation. |
 | PhysicalMemoryCapacity |Capacité de mémoire physique (en octets). |
 | PhysicalMemoryRemovable |Mémoire amovible physique (en octets). |
 | SystemEnclosureChassisTypesInnerText |Définit le type de châssis du système pour cet appareil. Les nombres indiquent les valeurs suivantes :  <br>0 ou Vide = Inconnu   <br>1 = Ordinateur de bureau   <br>2 = Ordinateur portable  <br>3 = Station de travail  <br>4 = Serveur d’entreprise  <br>100 = Téléphone  <br>101 = Tablette  <br>102/103 = Autre type inconnu d’appareil mobile |
@@ -382,7 +382,7 @@ L’entité **MdmDeviceInventoryHistories** contient des instantanés quotidiens
 | RemovableStorageTotal |Stockage amovible total (en octets) |
 | DeviceMemoryDeviceCapacity |Capacité mémoire de l’appareil |
 | DeviceMemoryAvailableDeviceCapacity |Capacité mémoire de l’appareil disponible |
-| DeviceOSVersion |Version de système d'exploitation |
+| DeviceOSVersion |Version du système d'exploitation |
 | DeviceOSPlatform |Plateforme du système d’exploitation |
 | DeviceOSLanguage |Langue du système d’exploitation |
 | PasswordMaxAttemptsBeforeWipe |Nombre maximum de tentatives de saisie du mot de passe avant la réinitialisation de l’appareil |

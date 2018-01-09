@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Intégrer Jamf Pro à Intune pour des raisons de conformité
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |Vous recherchez de la documentation sur Intune dans le portail Classic ? [Cliquez ici](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
 
-|Actuellement en préversion privée|
-|--|
-|Les fonctionnalités décrites dans cette rubrique ne sont accessibles qu’aux clients qui utilisent la préversion privée. Ce message sera supprimé une fois qu’elle sera commercialisée pour tous les clients.|
-| |
-
 Si votre organisation utilise [Jamf Pro](https://www.jamf.com) pour gérer les Mac des utilisateurs finaux, vous pouvez vous servir des stratégies de conformité Microsoft Intune et de l’accès conditionnel Azure Active Directory pour faire en sorte que les appareils de votre organisation soient conformes.
 
 ## <a name="prerequisites"></a>Prérequis
 
 Vous aurez besoin des éléments suivants pour configurer l’accès conditionnel avec Jamf Pro :
 
-- l’accès à la préversion privée d’Intune pour l’accès conditionnel macOS ;
 - Jamf Pro 10.1.0 (ou une version ultérieure) ;
 - [l’application Portail d’entreprise pour macOS](https://aka.ms/macoscompanyportal) ;
 - des appareils macOS équipés d’OS X 10.11 Yosemite (ou une version ultérieure).
@@ -60,7 +54,7 @@ Vous pouvez connecter Intune à Jamf Pro en :
 4. Sélectionnez **Application web / API**.
 5. Spécifiez **l’URL de connexion** à l’aide de l’URL de votre instance Jamf Pro.
 6. Cliquez sur **Créer une application**.
-7. Enregistrez **l’ID d’application** ainsi créé, puis ouvrez **Paramètres** et accédez à **Accès d’API** > **Clés** pour créer une clé d’application. Entrez une **description**, le délai d’attente avant son **expiration**, puis enregistrez la clé d’application. 
+7. Enregistrez **l’ID d’application** ainsi créé, puis ouvrez **Paramètres** et accédez à **Accès d’API** > **Clés** pour créer une clé d’application. Entrez une **description**, le délai d’attente avant son **expiration**, puis enregistrez la clé d’application.
 
   > [!IMPORTANT]
   > La clé d’application ne s’affiche qu’une seule fois pendant ce processus. Veillez à l’enregistrer dans un endroit où vous pourrez facilement la récupérer.
@@ -100,7 +94,7 @@ Jamf Pro capture des données d’inventaire sur les appareils macOS gérés. Ja
 
 * ID d’appareil Azure AD
 * État de l’inventaire Jamf (état de l’inventaire d’un ordinateur enregistré auprès de Jamf Pro au cours des dernières 24 heures)
-* Version de système d'exploitation
+* Version du système d'exploitation
 * ID d’utilisateur Azure AD
 * Chiffré (FileVault 2)
 * État de l’opérateur de contrôle d’appels
