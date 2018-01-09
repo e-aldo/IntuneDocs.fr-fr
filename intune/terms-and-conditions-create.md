@@ -3,8 +3,8 @@ title: "Définir les conditions générales dans Microsoft Intune"
 titlesuffix: Azure portal
 description: "Définissez les conditions générales que les utilisateurs voient dans le Portail d’entreprise pour Intune. "
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63434cbbc9edc668d59fb99968727551e0c4cc40
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: fa35cb7b08f0bbf677dd7d8b5122b8b286c49b72
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>Vérifiez que les utilisateurs acceptent les conditions générales de la société relatives à l’accès
 
@@ -73,13 +73,13 @@ Vous pouvez affecter des conditions générales à des groupes d’utilisateurs 
 
 ## <a name="monitor-terms-and-conditions"></a>Surveiller des conditions générales
 
-1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**. Dans le panneau Intune, choisissez **Inscription de l’appareil**, puis **Conditions générales**.
+1. Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**. Dans le panneau Intune, choisissez **Inscription de l’appareil**, puis **Conditions générales**.
 2. Dans la liste des conditions générales, sélectionnez celles pour lesquelles vous souhaitez voir l’acceptation, puis sélectionnez **États d’acceptation**.
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Utiliser plusieurs versions des conditions générales
 Vous pouvez modifier vos conditions générales et gérer leurs versions. Nous vous recommandons d’incrémenter le numéro de version et d’exiger l’acceptation chaque fois que vous apportez des modifications majeures à vos conditions générales. Conservez le numéro de version actuel si, par exemple, vous corrigez des fautes de frappe ou modifiez la mise en forme.
 
-1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
+1. Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
 
 2. Dans le panneau Intune, choisissez **Inscription de l’appareil**, **Conditions générales**, sélectionnez les conditions générales que vous souhaitez modifier, puis sélectionnez **Propriétés**.
 

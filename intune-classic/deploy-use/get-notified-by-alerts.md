@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 8/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: microsoft intune
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 287e8f3736082e427481d7a8a363947d4c42cdd6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/09/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Utiliser des alertes pour être informé par Microsoft Intune
 
@@ -33,7 +33,7 @@ Les alertes vous tiennent informé de ce qu’il se passe dans Microsoft Intune.
 
 ## <a name="how-alerts-work"></a>Fonctionnement des alertes
 
-Les alertes générées varient en fonction des **types d’alerte**, c’est-à-dire d’un ensemble de règles préconfigurées intégrées à Intune. Par exemple, le type d’alerte **Le stockage cloud dispose de 10 % ou moins d’espace libre** vous avertit qu’il vous manque de l’espace pour stocker vos applications dans le cloud. Vous pouvez activer ou désactiver des types d’alertes, et configurer des propriétés pour chaque type d’alerte. Par exemple, pour le type d'alerte évoqué ci-dessus, vous pouvez configurer les éléments suivants :
+Les alertes générées varient en fonction des **types d’alerte**, c’est-à-dire d’un ensemble de règles préconfigurées intégrées à Intune. Par exemple, le type d’alerte **Le stockage cloud dispose de 10 % ou moins d’espace libre** vous avertit qu’il vous manque de l’espace pour stocker vos applications dans le cloud. Vous pouvez activer ou désactiver des types d’alertes, et configurer des propriétés pour chaque type d’alerte. Par exemple, pour le type d'alerte évoqué ci-dessus, vous pouvez configurer les éléments suivants :
 
 - **État :** indique si ce type d'alerte est activé ou désactivé.
 - **Gravité :** indique la sévérité de l'alerte.
@@ -68,9 +68,9 @@ Utilisez les options suivantes pour gérer les alertes à partir de la console d
 
 |Option|Description|
 |-----|----|
-|**Afficher les alertes actives**|Choisissez parmi :<br /><br />**Afficher une synthèse des alertes**   Dans l’espace de travail **Tableau de bord**, les principales erreurs sont affichées dans le volet Alertes. Choisissez le volet pour afficher des informations plus détaillées.<br /><br />Par ailleurs, vous pouvez afficher une synthèse des alertes dans la page **Vue d'ensemble** de l'espace de travail **Alertes** .<br /><br />**Afficher toutes les alertes**   Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes**.|
-|**Consulter les remarques**|Choisissez parmi :<br /><br />Dans l’espace de travail **Tableau de bord**, choisissez **Remarques**.<br /><br />Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes** &gt; **Remarques**.|
-|**Fermer une alerte**|Dans la liste des alertes, sélectionnez l’alerte à fermer, puis choisissez **Fermer l’alerte**.<br /><br />Les alertes fermées sont définitivement supprimées au bout de 90 jours.|
+|**Afficher les alertes actives**|Choisissez l'une des deux procédures :<br /><br />**Afficher une synthèse des alertes**   Dans l’espace de travail **Tableau de bord**, les principales erreurs sont affichées dans le volet Alertes. Choisissez le volet pour afficher des informations plus détaillées.<br /><br />Par ailleurs, vous pouvez afficher une synthèse des alertes dans la page **Vue d'ensemble** de l'espace de travail **Alertes** .<br /><br />**Afficher toutes les alertes**   Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes**.|
+|**Consulter les remarques**|Choisissez l'une des deux procédures :<br /><br />Dans l’espace de travail **Tableau de bord**, choisissez **Remarques**.<br /><br />Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes** &gt; **Remarques**.|
+|**Fermer une alerte**|Dans la liste des alertes, sélectionnez l’alerte à fermer, puis choisissez **Fermer l’alerte**.<br /><br />Les alertes fermées sont définitivement supprimées au bout de 90 jours.|
 |**Réactiver une alerte fermée**|Dans la liste des alertes, définissez le menu déroulant **Filtres** sur **Fermé**.<br /><br />Dans la liste des alertes fermées, sélectionnez l’alerte que vous souhaitez réactiver, puis choisissez **Réactiver l’alerte**.|
 
 Les alertes Intune restent actives pendant 30 jours ou tant que :

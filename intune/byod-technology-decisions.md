@@ -2,8 +2,8 @@
 title: "Décisions d’ordre informatique pour BYOD avec EMS"
 description: "Principales décisions d’ordre informatique pour activer BYOD et protéger les données d’entreprise avec Microsoft Enterprise Mobility + Security."
 keywords: 
-author: 
-ms.author: pfetty
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 
 ms.suite: ems
-ms.openlocfilehash: a0b5f170c10cff189a269b29ffc466bd2d51ed12
-ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
+ms.openlocfilehash: 9f8fa87c3100a3e0444f6f44a9976c3b399ab334
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Décisions d’ordre informatique pour activer BYOD avec Microsoft Enterprise Mobility + Security (EMS)
 
@@ -58,7 +58,7 @@ Comme mentionné plus haut, l’accès conditionnel peut inciter un utilisateur 
 
 De nombreuses organisations sont souvent soucieuses de certains risques spécifiques.  Le tableau ci-dessous liste les risques les plus courants et les réponses MDM et MAM correspondantes.
 
-| Risque   |   MDM  |   MAM  |
+| Risque   |   GESTION DES APPAREILS MOBILES  |   MAM  |
 |------------|--------|--------|
 |Accès aux données non autorisé | Exiger l’appartenance à un groupe | Exiger l’appartenance à un groupe |
 |Accès aux données non autorisé | Exiger l’inscription d’appareil | Exiger la protection d’application |
