@@ -1,4 +1,4 @@
-- name: Introduction
+- name: Vue d’ensemble
   href: introduction-intune.md
   expanded: true
   items:
@@ -22,24 +22,13 @@
           href: whats-new-archive.md
         - name: Qu’est-ce que la nouvelle archive (portail Classic) ?
           href: whats-new-archive-classic.md
-    - name: Architecture de haut niveau
-      href: high-level-architecture.md
-    - name: Cycles de vie des applications et des appareils
-      href: introduction-device-app-lifecycles.md
-      items:
-        - name: Cycle de vie de l’appareil
-          href: device-lifecycle.md
-        - name: Cycle de vie de l’application
-          href: app-lifecycle.md
-    - name: Scénarios courants
-      href: common-scenarios.md
     - name: Description du service
       href: microsoft-intune-service-description.md
     - name: Problèmes connus
       href: known-issues.md
     - name: Obtenir un support
       href: get-support.md
-- name: Prise en main de Microsoft Intune
+- name: Guides de démarrage rapide
   href: get-started-evaluation.md
   items:
     - name: Navigation dans le portail Azure
@@ -54,6 +43,31 @@
       href: get-started-enroll.md
     - name: Attribuer des applications
       href: get-started-apps.md
+- name: Guides d’implémentation de scénarios
+  items:
+    - name: Protéger Exchange Online
+      href: exchange-online-protect.md
+    - name: Réduire les frais de support technique
+      href: password-reset.md
+    - name: Empêcher tout accès non autorisé
+      href: data-outside-protect.md
+    - name: Éviter les fuites de données sur les appareils non gérés
+      href: data-leak-prevention.md
+    - name: Comparer MDM et GAM
+      href: byod-technology-decisions.md
+- name: Concepts
+  items:
+    - name: Architecture de haut niveau
+      href: high-level-architecture.md
+    - name: Cycles de vie des applications et des appareils
+      href: introduction-device-app-lifecycles.md
+      items:
+        - name: Cycle de vie de l’appareil
+          href: device-lifecycle.md
+        - name: Cycle de vie de l’application
+          href: app-lifecycle.md
+    - name: Scénarios courants
+      href: common-scenarios.md
 - name: Planifier un déploiement
   items:
     - name: Guide de planification
@@ -79,18 +93,6 @@
           href: planning-guide-test-validation.md
         - name: Ressources supplémentaires
           href: planning-guide-resources.md
-    - name: Guides d’implémentation de scénarios
-      items:
-        - name: Protéger Exchange Online
-          href: exchange-online-protect.md
-        - name: Réduire les frais de support technique
-          href: password-reset.md
-        - name: Empêcher tout accès non autorisé
-          href: data-outside-protect.md
-        - name: Éviter les fuites de données sur les appareils non gérés
-          href: data-leak-prevention.md
-        - name: Comparer MDM et GAM
-          href: byod-technology-decisions.md
     - name: Guide de migration
       href: migration-guide.md
       items:
@@ -114,7 +116,7 @@
               href: migration-guide-drive-adoption.md
             - name: Cycle de migration classique
               href: migration-guide-cycle.md
-- name: Guide pratique
+- name: Guides pratiques
   items:
     - name: Configurer Intune
       href: setup-steps.md
@@ -214,35 +216,39 @@
         - name: Ajouter des applications
           href: apps-add.md
           items:
-            - name: Applications de l’App Store Android
-              href: store-apps-android.md
-            - name: Applications métier Android
-              href: lob-apps-android.md
-            - name: "Applications de l’App Store\_iOS"
-              href: store-apps-ios.md
-            - name: Applications métier iOS
-              href: lob-apps-ios.md
+            - name: Applications du Windows Store
+              items:
+                - name: Applications de l’App Store Android
+                  href: store-apps-android.md
+                - name: "Applications de l’App Store\_iOS"
+                  href: store-apps-ios.md
+                - name: "Application du Windows Phone\_8.1 Store"
+                  href: store-apps-windows-phone-8-1.md
+                - name: Applications Microsoft Store
+                  href: store-apps-windows.md
+                - name: Applications Android for Work
+                  href: apps-add-android-for-work.md
+                - name: Applications Office 365 pour Windows 10
+                  href: apps-add-office365.md
+                - name: Applications Office 365 pour macOS
+                  href: apps-add-office365-macos.md
+            - name: Créer votre application (métier)
+              items:
+                - name: Applications métier Android
+                  href: lob-apps-android.md
+                - name: Applications métier iOS
+                  href: lob-apps-ios.md
+                - name: Applications métier Windows Phone
+                  href: lob-apps-windows-phone.md
+                - name: Applications métier Windows
+                  href: lob-apps-windows.md
             - name: Applications web
               href: web-app.md
-            - name: "Application du Windows Phone\_8.1 Store"
-              href: store-apps-windows-phone-8-1.md
-            - name: Applications métier Windows Phone
-              href: lob-apps-windows-phone.md
-            - name: Applications Microsoft Store
-              href: store-apps-windows.md
-            - name: Applications métier Windows
-              href: lob-apps-windows.md
-            - name: Applications Android for Work
-              href: apps-add-android-for-work.md
-            - name: Applications Office 365 pour Windows 10
-              href: apps-add-office365.md
-            - name: Applications Office 365 pour macOS
-              href: apps-add-office365-macos.md
-        - name: Attribuer des applications
+        - name: Déployer des applications
           href: apps-deploy.md
         - name: Surveiller les applications
           href: apps-monitor.md
-        - name: Stratégies de configuration des applications
+        - name: Configurer des applications
           href: app-configuration-policies-overview.md
           items:
             - name: iOS périphériques gérés
@@ -251,23 +257,25 @@
               href: app-configuration-policies-use-android.md
             - name: Applications gérées
               href: app-configuration-policies-managed-app.md
-        - name: Utiliser des profils d’approvisionnement d’application iOS
-          href: app-provisioning-profile-ios.md
-        - name: Réinitialiser des applications de manière sélective
-          href: apps-selective-wipe.md
-        - name: Utiliser des applications et livres achetés en volume
-          href: vpp-apps.md
+            - name: Utiliser des profils d’approvisionnement d’application iOS
+              href: app-provisioning-profile-ios.md
+            - name: Utiliser des applications et livres achetés en volume
+              href: vpp-apps.md
+              items:
+                - name: "Applications\_VPP\_iOS"
+                  href: vpp-apps-ios.md
+                - name: Applications Microsoft Store pour Entreprises
+                  href: windows-store-for-business.md
+                - name: Livres électroniques iOS
+                  href: vpp-ebooks-ios.md
+            - name: Configurer l’application Portail d’entreprise
+              href: company-portal-app.md
+            - name: Configurer Managed Browser
+              href: app-configuration-managed-browser.md
+        - name: Protéger les applications
           items:
-            - name: "Applications\_VPP\_iOS"
-              href: vpp-apps-ios.md
-            - name: Applications Microsoft Store pour Entreprises
-              href: windows-store-for-business.md
-            - name: Livres électroniques iOS
-              href: vpp-ebooks-ios.md
-        - name: Configurer l’application Portail d’entreprise
-          href: company-portal-app.md
-        - name: Configurer Managed Browser
-          href: app-configuration-managed-browser.md
+            - name: Réinitialiser des applications de manière sélective
+              href: apps-selective-wipe.md
     - name: Configurer des appareils
       href: device-profiles.md
       items:
@@ -435,8 +443,6 @@
                   href: app-protection-policy-settings-android.md
                 - name: Paramètres iOS
                   href: app-protection-policy-settings-ios.md
-                - name: Consulter les journaux de protection d'application dans Managed Browser
-                  href: app-protection-policy-settings-log.md
             - name: Valider des stratégies de protection des applications
               href: app-protection-policies-validate.md
             - name: Surveiller l’état de protection des utilisateurs d’applications
@@ -554,45 +560,42 @@
           href: end-user-apps-ios.md
         - name: Guide pratique pour obtenir des applications Windows
           href: end-user-apps-windows.md
-- name: Surveiller et dépanner
-  items:
-    - name: Aider les utilisateurs à résoudre les problèmes
-      href: help-desk-operators.md
-    - name: Journaux d’audit pour les activités Intune
-      href: monitor-audit-logs.md
-    - name: Utiliser l’entrepôt de données Intune
-      href: reports-nav-create-intune-reports.md
+    - name: Surveiller et dépanner
       items:
-        - name: Journal des modifications pour l’entrepôt de données
-          href: reports-changelog.md
-        - name: "Se connecter à l’entrepôt de données avec Power\_BI"
-          href: reports-proc-get-a-link-powerbi.md
-        - name: Créer un rapport à partir du flux OData avec Power BI
-          href: reports-proc-create-with-odata.md
-- name: Automatiser et personnaliser
-  items:
-    - name: Configurer les paramètres d’appareils personnalisés
-      href: custom-settings-configure.md
+        - name: Aider les utilisateurs à résoudre les problèmes
+          href: help-desk-operators.md
+        - name: Journaux d’audit pour les activités Intune
+          href: monitor-audit-logs.md
+        - name: Consulter les journaux de protection d’application
+          href: app-protection-policy-settings-log.md
+    - name: Automatiser et personnaliser
       items:
-        - name: Profil Wi-Fi avec clé prépartagée
-          href: wi-fi-profile-shared-key.md
-        - name: Android
-          href: custom-settings-android.md
+        - name: Configurer les paramètres d’appareils personnalisés
+          href: custom-settings-configure.md
           items:
-            - name: Profil VPN par application
-              href: android-pulse-secure-per-app-vpn.md
-            - name: Autoriser ou bloquer des applications pour Samsung Knox Standard
-              href: samsung-knox-apps-allow-block.md
-        - name: iOS
-          href: custom-settings-ios.md
-        - name: macOS
-          href: custom-settings-macos.md
-        - name: Windows Phone 8.1
-          href: custom-settings-windows-phone-8-1.md
-        - name: "Windows\_10"
-          href: custom-settings-windows-10.md
-        - name: Android for Work
-          href: custom-settings-android-for-work.md
+            - name: Profil Wi-Fi avec clé prépartagée
+              href: wi-fi-profile-shared-key.md
+            - name: Android
+              href: custom-settings-android.md
+              items:
+                - name: Profil VPN par application
+                  href: android-pulse-secure-per-app-vpn.md
+                - name: Autoriser ou bloquer des applications pour Samsung Knox Standard
+                  href: samsung-knox-apps-allow-block.md
+            - name: iOS
+              href: custom-settings-ios.md
+            - name: macOS
+              href: custom-settings-macos.md
+            - name: Windows Phone 8.1
+              href: custom-settings-windows-phone-8-1.md
+            - name: "Windows\_10"
+              href: custom-settings-windows-10.md
+            - name: Android for Work
+              href: custom-settings-android-for-work.md
+        - name: Charger des applications métier Windows de façon indépendante
+          href: app-sideload-windows.md
+- name: Guide pour développeurs
+  items:
     - name: Protéger des applications avec le kit SDK d’application Intune
       href: app-sdk.md
       items:
@@ -612,6 +615,15 @@
           href: app-sdk-cordova.md
         - name: Composant Xamarin du kit SDK d’application Intune
           href: app-sdk-xamarin.md
+    - name: Utiliser l’entrepôt de données Intune
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: Journal des modifications pour l’entrepôt de données
+          href: reports-changelog.md
+        - name: "Se connecter à l’entrepôt de données avec Power\_BI"
+          href: reports-proc-get-a-link-powerbi.md
+        - name: Créer un rapport à partir du flux OData avec Power BI
+          href: reports-proc-create-with-odata.md
     - name: Créer un rapport avec l’API d’entrepôt de données Intune
       href: reports-nav-intune-data-warehouse.md
       items:
@@ -647,5 +659,7 @@
       items:
         - name: API Graph pour référence Intune
           href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
-- name: Glossaire
-  href: intune-glossary.md
+- name: Ressources
+  items:
+    - name: Glossaire
+      href: intune-glossary.md
