@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/11/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7e7810652fdf5b7b84b4fd7bb6367ec76901b4f0
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
+
+## <a name="week-of-december-11-2017"></a>Semaine du 11 décembre 2017
+
+### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Messagerie d’utilisateur final pour les comptes <!--1573558, 1712; changes to be made for other platforms for 1801-->
+
+Les utilisateurs du site web Portail d’entreprise ne pourront pas exécuter des actions qui nécessitent un accès en écriture à votre client. Ils recevront un message d’erreur expliquant que leur compte est en cours de maintenance. Des modifications similaires seront bientôt disponibles sur les applications Portail d’entreprise pour Android, iOS, macOS et Windows.
+
+![Un message d’erreur s’affiche lors du déplacement d’un compte](./media/account-move-rom-iwp-user-1712.png)
 
 ## <a name="week-of-november-27-2017"></a>Semaine du 27 novembre 2017
 
@@ -245,7 +253,7 @@ L’application Portail d’entreprise pour Windows 10 démarre maintenant auto
 ![Image de l’application Portail d’entreprise Windows 10, avec le nouvel état de synchronisation automatique affichant un message d’état signalant que l’appareil est en cours de synchronisation et tente de télécharger l’application.](./media/w10_download_pending_syncing_after_1706.png)
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Nouvelle expérience interactive pour le portail d’entreprise Windows 10 <!---1058938--->
-L’application Portail d’entreprise pour Windows 10 inclura une expérience de procédure pas à pas Intune interactive pour les appareils qui n’ont pas été identifiés ou inscrits. La nouvelle expérience fournit des instructions détaillées qui guident les utilisateurs lors de l’inscription à Azure Active Directory (requis pour les fonctionnalités d’accès conditionnel) et de l’inscription MDM (obligatoire pour les fonctionnalités de gestion des appareils). L’expérience guidée sera accessible à partir de la page d’accueil de portail d’entreprise. Les utilisateurs peuvent continuer à utiliser l’application s’ils ne terminent pas l’inscription, mais les fonctionnalités seront limitées.
+L’application Portail d’entreprise pour Windows 10 inclura une expérience de procédure pas à pas Intune interactive pour les appareils qui n’ont pas été identifiés ou inscrits. La nouvelle expérience fournit des instructions détaillées qui guident les utilisateurs lors de l’inscription à Azure Active Directory (requis pour les fonctionnalités d’accès conditionnel) et de l’inscription MDM (obligatoire pour les fonctionnalités de gestion des appareils). L’expérience guidée sera accessible à partir de la page d’accueil de portail d’entreprise. Les utilisateurs peuvent continuer à utiliser l’application s’ils ne terminent pas l’inscription, mais seront confrontés à des fonctionnalités limitées.
 
 Cette mise à jour est visible uniquement sur les appareils exécutant la Mise à jour anniversaire Windows 10 (build 1607) ou version ultérieure.
 

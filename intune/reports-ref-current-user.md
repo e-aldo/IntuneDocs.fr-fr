@@ -1,11 +1,11 @@
 ---
-title: "Utilisateur - Entrepôt de données Intune | Microsoft Docs"
+title: "Utilisateur actuel - Entrepôt de données Intune | Microsoft Docs"
 description: "Rubrique de référence sur la catégorie Utilisateur de collections d’entités dans l’API d’entrepôt de données Intune."
 keywords: "Entrepôt de données Intune"
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6f321a3a9ac09c004639a3db15df280fbdb5be3c
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: cabf39f603ac93a0716594c44174908e7c999e5c
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="reference-for-current-user-entity"></a>Informations de référence sur l’entité d’utilisateur actuel
 
-La catégorie **Utilisateur actuel** contient les propriétés des utilisateurs et des agents dans le modèle de données. La collection d’entités **Utilisateur actuel** est limitée aux utilisateurs actuellement actifs. L’entité contient tous les utilisateurs Azure Active Directory qui disposent actuellement d’une licence. Il peut s’agir d’une licence Intune, d’une licence hybride ou d’une licence Microsoft Office 365. Les utilisateurs supprimés ne sont pas représentées pour la période de collecte de données. Pour créer une collection qui contient un historique des modifications de l’état utilisateur, consultez la page [Informations de référence sur l’entité Utilisateur](reports-ref-user.md).
+La catégorie **Utilisateur actuel** contient les propriétés des utilisateurs dans le modèle de données. La collection d’entités **Utilisateur actuel** est limitée aux utilisateurs actuellement actifs. L’entité contient tous les utilisateurs Azure Active Directory qui disposent actuellement d’une licence. Il peut s’agir d’une licence Intune, d’une licence hybride ou d’une licence Microsoft Office 365. Les utilisateurs supprimés ne sont pas représentés dans la collecte Utilisateur actuel. Pour créer une collection qui contient un historique des modifications de l’état utilisateur, consultez la page [Informations de référence sur l’entité Utilisateur](reports-ref-user.md).
 
 
-## <a name="user"></a>Utilisateur
+## <a name="current-user"></a>Utilisateur actuel
 
-L’entité **User** répertorie tous les utilisateurs Azure Active Directory (Azure AD) auxquels des licences ont été attribuées dans votre entreprise.
+L’entité **Utilisateur actuel** répertorie tous les utilisateurs Azure Active Directory (Azure AD) auxquels des licences ont été attribuées dans votre entreprise.
 
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
@@ -41,5 +41,5 @@ L’entité **User** répertorie tous les utilisateurs Azure Active Directory (A
 | RowLastModifiedDateTimeUTC |Date et heure UTC de la dernière modification de cet utilisateur dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
 
 ## <a name="next-steps"></a>Étapes suivantes
- - Il est possible d’utiliser la collection d’entités **Utilisateurs** pour étendre les données utilisateurs aux utilisateurs qui ne sont pas actifs actuellement. Pour plus d’informations, consultez la page [Informations de référence sur l’entité Utilisateur](reports-ref-user.md). 
+ - Il est possible d’utiliser la collection d’entités **Utilisateurs** pour étendre les données utilisateurs aux utilisateurs qui ne sont pas actifs actuellement. Pour plus d’informations, consultez la page [Informations de référence sur l’entité Utilisateur](reports-ref-user.md).
  - Pour plus d’informations sur la façon dont l’entrepôt de données effectue le suivi de la durée de vie des utilisateurs dans Intune, consultez la page [Représentation de la durée de vie des utilisateurs dans l’entrepôt de données Intune](reports-ref-user-timeline.md).

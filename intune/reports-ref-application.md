@@ -2,10 +2,10 @@
 title: Application | Microsoft Docs
 description: "Rubrique de référence sur la catégorie Application de collections d’entités dans l’API d’entrepôt de données Intune."
 keywords: "Entrepôt de données Intune"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>Informations de référence sur les entités d’application
 
@@ -39,7 +39,7 @@ L’entité **AppRevision** répertorie toutes les versions des applications.
 | AppKey |Identificateur unique de l’application. |123 |
 | ApplicationId |Identificateur unique de l’application (semblable à AppKey, mais il s’agit d’une clé naturelle) |b66bc706-ffff-7437-0340-032819502773 |
 | Révision |Version mentionnée par l’administrateur durant le chargement du binaire. |2 |
-| Titre |Titre de l’application. |Excel |
+| Title |Titre de l’application. |Excel |
 | Éditeur |Éditeur de l’application. |Microsoft |
 | UploadState |État de chargement de l’application. |1 |
 | AppTypeKey |Référence à AppType décrite dans la section suivante | |
@@ -62,16 +62,16 @@ L’entité **AppTypes** répertorie la source d’installation d’une applicat
 | AppTypeKey |Clé de substitution pour la clé |
 | AppTypeName |Type d’application |
 
-## <a name="example"></a>Exemple
+### <a name="example"></a>Exemple
 
 | AppTypeID  | Nom | Description |
 |---------|------------|--------|
 | 0 |Application de l’Android Store | Application de l’Android Store. |
 | 1 |Application métier Android | Application métier Android. |
-| 2 |Application de l’Android Store gérée (MAM) | Application de l’Android Store activée pour la gestion. |
+| 2 |Application de l’Android Store gérée (GAM) | Application de l’Android Store activée pour la gestion. |
 | 3 |Application de l’App Store iOS | Application de l’App Store iOS. |
 | 4 |Application métier iOS | Application métier iOS. |
-| 5 |Application de l’App Store iOS gérée (MAM ?) | Application de l’App Store iOS activée pour la gestion. |
+| 5 |Application de l’App Store iOS gérée (GAM ?) | Application de l’App Store iOS activée pour la gestion. |
 | 6 |Office 365 Pro Plus Suite | Office 365 Pro Plus Suite pour Windows 10. |
 | 7 |Application web | Application web. |
 | 8 |Application du Windows Phone 8.1 Store | Application du Windows Phone 8.1 Store. |
@@ -91,7 +91,7 @@ L’entité **VppProgramTypes** répertorie les types de VPP possibles pour une 
 | VppProgramTypeKey | Clé de substitution pour la clé. |
 | VppProgramTypeName | Type de programme VPP. |
 
-## <a name="example"></a>Exemple
+### <a name="example"></a>Exemple
 
 | VppProgramID  | Nom | Description |
 |---------|------------|--------|
@@ -112,3 +112,26 @@ L’entité **ApplicationInventory** répertorie les applications trouvées sur 
 | ApplicationName | Nom de l’application. |
 | ApplicationVersion | Version de l’application. |
 | BundleSize | Taille de l’application en octets. |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+L’entité **MobileAppInstallState** représente l’état d’installation d’une application mobile qui a été affectée à un groupe contenant des appareils, des utilisateurs ou les deux.
+
+| Propriété | Description |
+|---|---|
+| AppInstallStateKey | ID unique de l’état d’installation de l’application pour votre compte. |
+| AppInstallState | Valeur d’énumération de l’état d’installation de l’application. |
+| AppInstallStateName | Nom de l’état d’installation de l’application. |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+L’entité **MobileAppDeviceUserInstallStatus** représente l’état d’installation d’une application mobile pour un appareil et un utilisateur.
+
+| Propriété | Description |
+|---|---|
+| DateKey | Clé de la date à laquelle l’état d’installation d’une application a été enregistré. |
+| AppKey | Clé de l’application mobile utilisée pour identifier une instance AppRevision. |
+| DeviceKey | Clé d’un appareil cible utilisée pour identifier une instance de l’appareil. |
+| UserKey | Clé d’un utilisateur ciblé utilisée pour identifier une instance d’utilisateur. |
+|AppInstallStateKey | Clé de l’état d’installation d’une application, utilisée pour identifier une instance de MobileAppInstallState. |
+| Code d'erreur | Le code d’erreur retourné par le programme d’installation de l’application, la plateforme mobile ou le service lié à l’installation de l’application. |

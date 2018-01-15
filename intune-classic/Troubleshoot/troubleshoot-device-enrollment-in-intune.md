@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Résoudre les problèmes d’inscription d’appareils dans Intune
 
@@ -37,6 +37,12 @@ Avant de commencer le dépannage, vérifiez que vous avez configuré Intune corr
 -   [Configurer la gestion des appareils Windows](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Configurer la gestion des appareils Android](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) -aucune étape supplémentaire requise
 -   [Configurer la gestion des appareils Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
+
+Vous pouvez également vérifier que l’heure et la date sur l’appareil de l’utilisateur sont correctement définies :
+
+1. Redémarrez l’appareil.
+2. Assurez-vous que la date et l’heure sont définies selon les normes GMT (+ ou - 12 heures) par rapport au fuseau horaire de l’utilisateur final.
+3. Désinstallez et réinstallez le portail d’entreprise Intune (le cas échéant).
 
 Les utilisateurs d’appareils gérés peuvent recueillir des journaux d’inscription et de diagnostic qui peuvent vous être utiles. Les instructions destinées aux utilisateurs permettant de recueillir les journaux sont fournies dans :
 
@@ -157,7 +163,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 Le tableau suivant répertorie les erreurs auxquelles les utilisateurs finaux peuvent être confrontés durant l’inscription d’appareils Android dans Intune.
 
-|Message d'erreur|Problème|Résolution|
+|Message d’erreur|Problème|Solution|
 |---|---|---|
 |**L’administrateur informatique doit affecter une licence pour autoriser l’accès**<br>Votre administrateur informatique ne vous a pas accordé l’accès à cette application. Demandez-lui de l’aide ou réessayez plus tard.|L’appareil ne peut pas être inscrit, car le compte de l’utilisateur ne dispose pas de la licence nécessaire.|Pour que les utilisateurs puissent inscrire leurs appareils, ils doivent avoir reçu la licence nécessaire. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br><br>Découvrez comment [attribuer des licences Intune à vos comptes d’utilisateur](/intune/licenses-assign.md).
 |**L’administrateur informatique doit définir une autorité MDM**<br>Apparemment, votre administrateur informatique n’a pas défini d’autorité MDM. Demandez-lui de l’aide ou réessayez plus tard.|L’autorité de gestion des appareils mobiles n’a pas été définie.|L’autorité de gestion des appareils mobiles n’a pas été désignée dans Intune. Découvrez comment [définir l’autorité de gestion des appareils mobiles](/intune/mdm-authority-set.md).|
@@ -229,27 +235,29 @@ Si la résolution #2 ne fonctionne pas, indiquez à vos utilisateurs de suivre 
 
 **Résolution 1**:
 
-Demandez à vos utilisateurs de suivre les instructions fournies dans [Un certificat obligatoire est manquant sur votre appareil](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Si après cela l’erreur persiste, essayez la Résolution 2.
+L’utilisateur peut récupérer le certificat manquant en suivant les instructions de la rubrique [Un certificat obligatoire est manquant sur votre appareil](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Si l’erreur persiste, essayez la résolution 2.
 
 **Résolution 2** :
 
-Si l’erreur de certificat manquant s’affiche toujours une fois que les utilisateurs ont entré leurs informations d’identification d’entreprise et qu’ils ont été redirigés vers l’expérience de connexion fédérée, il est possible qu’un certificat intermédiaire soit manquant sur votre serveur AD FS (Active Directory Federation Services).
+Si l’erreur de certificat manquant s’affiche toujours une fois que les utilisateurs ont entré leurs informations d’identification d’entreprise et qu’ils ont été redirigés vers la connexion fédérée, il est possible qu’un certificat intermédiaire soit manquant sur votre serveur AD FS (Active Directory Federation Services).
 
-L’erreur de certificat se produit car les appareils Android nécessitent l’inclusion de certificats intermédiaires dans un message [hello de serveur SSL](https://technet.microsoft.com/library/cc783349.aspx), mais actuellement une installation de serveur AD FS ou de serveur Proxy AD FS par défaut envoie uniquement le certificat SSL du service AD FS dans la réponse hello de serveur SSL à une demande hello de client SSL.
+L’erreur de certificat se produit car les appareils Android nécessitent l’inclusion de certificats intermédiaires dans un message [hello de serveur SSL](https://technet.microsoft.com/library/cc783349.aspx), mais actuellement une installation de serveur AD FS ou WAP ou de serveur Proxy AD FS par défaut envoie uniquement le certificat SSL du service AD FS dans la réponse hello de serveur SSL à une demande hello de client SSL.
 
 Pour résoudre ce problème, importez les certificats dans les certificats personnels de l’ordinateur sur les proxys ou le serveur AD FS en procédant comme suit :
 
-1.  Sur les serveurs ADFS et proxy, lancez la console de gestion des certificats pour l’ordinateur local en cliquant avec le bouton droit sur le bouton **Démarrer**, en choisissant **Exécuter** et en tapant **certlm.msc**.
-2.  Développez **Personnel** et sélectionnez **Certificats**.
+1.  Sur les serveurs ADFS et proxy, cliquez avec le bouton droit sur **Démarrer** > **Exécuter** > **certlm.msc**. Cette action lance la console de gestion des certificats de la machine locale.
+2.  Développez **Personnel** et choisissez **Certificats**.
 3.  Recherchez le certificat pour votre communication avec le service AD FS (un certificat signé publiquement) et double-cliquez dessus pour afficher ses propriétés.
-4.  Sélectionnez l’onglet **Chemin d’accès de certification** pour afficher les certificats parents du certificat.
-5.  Sur chaque certificat parent, sélectionnez **Afficher le certificat**.
-6.  Sélectionnez l’onglet **Détails** et choisissez **Copier dans un fichier**.
-7.  Suivez les invites de l’Assistant pour exporter ou enregistrer la clé publique du certificat à l’emplacement de fichier souhaité.
-8.  Importez les certificats parents qui ont été exportés à l’étape 3 dans Ordinateur local\Personnel\Certificats en double-cliquant sur **Certificats**, en sélectionnant **Toutes les tâches** > **Importer**, puis en suivant les invites de l’Assistant pour importer les certificats.
-9.  Redémarrez les serveurs AD FS.
-10. Répétez les étapes ci-dessus sur tous les serveurs proxy et AD FS.
-L’utilisateur doit maintenant être en mesure de se connecter au site Portail d’entreprise sur l’appareil Android.
+4.  Choisissez l’onglet **Chemin d’accès de certification** pour afficher les certificats parents du certificat.
+5.  Sur chaque certificat parent, choisissez **Afficher le certificat**.
+6.  Choisissez l’onglet **Détails** > **Copier dans un fichier...**.
+7.  Suivez les invites de l’Assistant pour exporter ou enregistrer la clé publique du certificat parent à l’emplacement de fichier souhaité.
+8.  Cliquez avec le bouton droit sur **Certificats** > **Toutes les tâches** > **Importer**.
+9.  Suivez les invites de l’assistant pour importer le(s) certificat(s) parent(s) dans **Local Computer\Personal\Certificates**.
+10. Redémarrez les serveurs AD FS.
+11. Répétez les étapes ci-dessus sur tous les serveurs proxy et AD FS.
+
+Pour vérifier la bonne installation d’un certificat, vous pouvez utiliser l’outil de diagnostic disponible sur [https://www.digicert.com/help/](https://www.digicert.com/help/). Dans le champ **Adresse du serveur**, entrez le nom de domaine complet de votre serveur ADFS (par exemple, sts.contso.com), puis cliquez sur **Check Server**.
 
 **Pour vérifier que le certificat a été installé correctement** :
 
@@ -266,7 +274,7 @@ Si le certificat de serveur est installé correctement, toutes les coches s’af
 ### <a name="ios-enrollment-errors"></a>Erreurs d'inscription iOS
 Le tableau suivant répertorie les erreurs que les utilisateurs finaux peuvent rencontrer lors de l’inscription d’appareils iOS dans Intune.
 
-|Message d'erreur|Problème|Résolution|
+|Message d’erreur|Problème|Solution|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Aucune stratégie d’inscription détectée|Vérifiez que tous les prérequis de l’inscription, comme le certificat Apple Push Notification Service (APNs), ont été configurés et que l’option « iOS comme plateforme » est activée. Pour obtenir des instructions, consultez [Configurer la gestion des appareils iOS et Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceCapReached|Vous avez trop d’appareils mobiles déjà inscrits.|L’utilisateur doit supprimer un de ses appareils mobiles actuellement inscrits à partir du portail d’entreprise, avant d’en inscrire un autre. Consultez les instructions correspondant au type d’appareil que vous utilisez : [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
@@ -306,7 +314,7 @@ Une fois inscrits, les appareils retrouvent un état d’intégrité correct et 
 ### <a name="verify-ws-trust-13-is-enabled"></a>Vérifier que WS-Trust 1.3 est activé
 **Problème** Les appareils iOS Programme d’inscription d’appareils (DEP) Apple ne peuvent pas être inscrits
 
-L’inscription des appareils Programme d’inscription d’appareils (DEP) avec affinité utilisateur nécessite l’activation d’un point de terminaison WS-Trust 1.3 Username/mixte pour demander des jetons utilisateur. Active Directory active ce point de terminaison par défaut. Vous obtenez une liste de points de terminaison activés à l’aide de l’applet de commande PowerShell Get-AdfsEndpoint et recherchez le point de terminaison trust/13/UsernameMixed. Exemple :
+L’inscription des appareils Programme d’inscription d’appareils (DEP) avec affinité utilisateur nécessite l’activation d’un point de terminaison WS-Trust 1.3 Username/mixte pour demander des jetons utilisateur. Active Directory active ce point de terminaison par défaut. Vous obtenez une liste de points de terminaison activés à l’aide de l’applet de commande PowerShell Get-AdfsEndpoint et recherchez le point de terminaison trust/13/UsernameMixed. Par exemple :
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
@@ -374,7 +382,7 @@ Une liste des erreurs d’inscription iOS est fournie dans la documentation de l
 ## <a name="pc-issues"></a>Problèmes liés aux PC
 
 
-|Message d'erreur|Problème|Résolution|
+|Message d’erreur|Problème|Solution|
 |---|---|---|
 |**L’administrateur informatique doit affecter une licence pour autoriser l’accès**<br>Votre administrateur informatique ne vous a pas accordé l’accès à cette application. Demandez-lui de l’aide ou réessayez plus tard.|L’appareil ne peut pas être inscrit, car le compte de l’utilisateur ne dispose pas de la licence nécessaire.|Pour que les utilisateurs puissent inscrire leurs appareils, ils doivent avoir reçu la licence nécessaire. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br>Découvrez comment [attribuer des licences Intune à vos comptes d’utilisateur](https://docs.microsoft.com/intune/licenses-assign).|
 
@@ -405,7 +413,7 @@ Cela peut être dû au fait que l’ordinateur avait déjà été inscrit préc�
 
 ## <a name="general-enrollment-error-codes"></a>Codes généraux des erreurs d’inscription
 
-|Code d’erreur|Problème possible|Solution suggérée|
+|Code d'erreur|Problème possible|Solution suggérée|
 |--------------|--------------------|----------------------------------------|
 |0x80CF0437 |L'horloge de l'ordinateur client n'est pas réglée sur l'heure correcte.|Assurez-vous que l'horloge et le fuseau horaire de l'ordinateur client sont correctement réglés.|
 |0x80240438, 0x80CF0438, 0x80CF402C|Impossible de se connecter au service Intune. Vérifiez les paramètres de proxy du client.|Vérifiez que la configuration du proxy sur l’ordinateur client est prise en charge par Intune et que l’ordinateur client dispose d’un accès à Internet.|

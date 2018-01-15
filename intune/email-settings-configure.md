@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dc9c67db2a93b6cd0f1db1894b079183ee9c945
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f697b575a5cdc1fa4009d08a14452508eacb8de1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de messagerie dans Microsoft Intune
 
@@ -31,7 +31,7 @@ Le client de messagerie intégré est pris en charge par la plupart des platefor
 
 Vous pouvez utiliser des profils de messagerie pour configurer le client de messagerie natif sur les types d’appareils suivants :
 
-- Android Samsung KNOX Standard 4.0 et versions ultérieures
+- Android Samsung Knox Standard 4.0 et versions ultérieures
 - Android for Work
 - iOS 8.0 et versions ultérieures
 - Windows Phone 8.1 et versions ultérieures
@@ -48,14 +48,14 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
 4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de messagerie.
 5. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres de messagerie. Actuellement, vous pouvez choisir l’une des plateformes suivantes pour les paramètres de messagerie :
-    - **Android** (Samsung Android KNOX Standard uniquement)
+    - **Android** (Samsung Android Knox Standard uniquement)
     - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 et versions ultérieures**
 6. Dans la liste déroulante **Type de profil**, choisissez **E-mail**.
 7. Selon la plateforme que vous choisissez, les paramètres que vous pouvez configurer diffèrent. Accédez à l’une des rubriques suivantes pour obtenir les paramètres détaillés pour chaque plateforme :
-    - [Paramètres d’Android for Work et de Samsung KNOX Standard](email-settings-android.md)
+    - [Paramètres d’Android for Work et de Samsung Knox Standard](email-settings-android.md)
     - [Paramètres iOS](email-settings-ios.md)
     - [Paramètres Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Paramètres Windows 10](email-settings-windows-10.md)
@@ -86,7 +86,7 @@ Si l’utilisateur a déjà configuré un compte de messagerie, le résultat de 
 
 - **iOS** : un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail et du nom d’hôte. Le profil de messagerie en double bloque l’attribution d’un profil Intune. Dans ce cas, le Portail d’entreprise signale à l’utilisateur qu’il n’est pas conforme et l’invite à supprimer le profil configuré manuellement. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire avant d’installer un profil de messagerie, ce qui permet à Intune de configurer le profil.
 - **Windows** : un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail et du nom d’hôte. Intune remplace le profil de messagerie existant créé par l’utilisateur.
-- **Android Samsung KNOX Standard** : Un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail, et est remplacé par le profil Intune.
+- **Android Samsung Knox Standard** : Un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail, et est remplacé par le profil Intune.
 Étant donné qu’Android n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à utiliser à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.
 - **Android for Work** Intune fournit deux profils de messagerie Android for Work, un pour chacune des applications de messagerie Gmail et Nine Work. Ces applications sont disponibles dans le Google Play Store et sont installées dans le profil de travail de l’appareil. Ainsi, aucun profil en double ne peut être généré. Ces deux applications prennent en charge les connexions à Exchange. Pour activer la connectivité de la messagerie, déployez l’une de ces applications de messagerie sur les appareils de vos utilisateurs, puis créez et déployez le profil approprié. Les applications de messagerie telles que Nine Work peuvent ne pas être gratuites. Vérifiez les détails de licence de l’application ou contactez le fabricant de l’application si vous avez des questions.
 

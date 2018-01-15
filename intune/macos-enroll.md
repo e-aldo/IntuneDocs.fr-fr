@@ -3,8 +3,8 @@ title: Inscrire des appareils macOS dans Intune
 titlesuffix: Azure portal
 description: "Apprenez à inscrire des appareils macOS dans Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 nmanager: angrobe
 ms.date: 10/30/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a18aa5091c8be2095e2ac95717c2b8294b845cd5
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 3d1382e85b9ce58cd65380a799ca8eb4da98b84c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-macos-devices-in-intune"></a>Inscrire des appareils macOS dans Intune
 
@@ -46,7 +46,7 @@ Pour empêcher l’inscription des appareils Mac OS, consultez [Définir des re
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise
 
-Vous devez indiquer à vos utilisateurs finaux d’accéder au [site web Portail d’entreprise](http://portal.manage.microsoft.com) et de suivre les invites pour inscrire leurs appareils. Vous pouvez également leur envoyer un lien vers les étapes d’inscription en ligne : [Inscrire votre appareil Mac OS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Indiquez à vos utilisateurs finaux d’accéder au [site web Portail d’entreprise](http://portal.manage.microsoft.com) et de suivre les invites pour inscrire leurs appareils. Vous pouvez également leur envoyer un lien vers les étapes d’inscription en ligne : [Inscrire votre appareil Mac OS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
 

@@ -14,11 +14,11 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c77e2f9f46e61442261f65ddaa90877fc0063906
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identifier les scénarios d'utilisation de la gestion des périphériques mobiles
 
@@ -43,7 +43,7 @@ Pour chaque scénario d’utilisation, déterminez s’il comprend également de
 
 -   Équipe dirigeante
 
--   Kiosque
+-   Kiosk
 
 Voici quelques exemples de scénarios d’utilisation principaux et secondaires :
 
@@ -51,7 +51,7 @@ Voici quelques exemples de scénarios d’utilisation principaux et secondaires 
 |:---:|:---:|
 | Entreprise | Travailleur de l'information |              
 | Entreprise | Cadres |           
-| Entreprise | Kiosque |
+| Entreprise | Kiosk |
 | BYOD | Travailleur de l'information |           
 | BYOD | Cadres |
 
@@ -59,13 +59,13 @@ Vous pouvez [télécharger un modèle du tableau ci-dessus](https://gallery.tech
 
 ## <a name="organizational-groups-for-your-scenarios"></a>Groupes organisationnels pour les scénarios
 
-Vous devez maintenant identifier les groupes organisationnels associés à chaque scénario d'utilisation principal ou secondaire. Exemple :
+Vous devez maintenant identifier les groupes organisationnels associés à chaque scénario d'utilisation principal ou secondaire. Par exemple :
 
 | **Scénarios d'utilisation** | **Cas d'utilisation secondaires** | **Groupes organisationnels** |
 |:---:|:---:|:---:|
 | Entreprise | Travailleur de l'information | Ressources humaines, finances |               
 | Entreprise | Équipe dirigeante | Ressources humaines, finances |            
-| Entreprise | Kiosque | Commerce |
+| Entreprise | Kiosk | Commerce |
 | BYOD | Travailleur de l'information | Marketing, Ventes |            
 | BYOD | Équipe dirigeante | Marketing, Ventes |
 
@@ -74,13 +74,13 @@ Vous devez maintenant identifier les groupes organisationnels associés à chaqu
 
 À ce stade, l’objectif est d’identifier les plateformes d'appareils mobiles associées à chaque scénario d’utilisation. Il peut y en avoir plusieurs.
 
-Par exemple, votre scénario d’utilisation professionnelle prend peut-être en charge les plateformes d’appareils iOS et Android Samsung KNOX. Il est possible que votre stratégie BYOD inclue la prise en charge de plateformes d’appareils mobiles supplémentaires comme Android (hors Samsung KNOX) et Windows 10 Mobile. À partir des exemples précédents, nous avons associé les plateformes d’appareils mobiles à chaque scénario d’utilisation.
+Par exemple, votre scénario d’utilisation professionnelle prend peut-être en charge les plateformes d’appareils iOS et Android Samsung Knox. Il est possible que votre stratégie BYOD inclue la prise en charge de plateformes d’appareils mobiles supplémentaires comme Android (hors Samsung Knox) et Windows 10 Mobile. À partir des exemples précédents, nous avons associé les plateformes d’appareils mobiles à chaque scénario d’utilisation.
 
 | **Scénarios d'utilisation** | **Cas d'utilisation secondaires** | **Groupes** | **Plateformes d'appareils** |   
 |:---:|:---:|:---:|:---:|
 | Entreprise | Travailleur de l'information | Ressources humaines, finances | iOS |                                                           
 | Entreprise | Cadres | Ressources humaines, finances | iOS |                                                           
-| Entreprise | Kiosque | Commerce | Android |
+| Entreprise | Kiosk | Commerce | Android |
 | BYOD | Travailleur de l'information | Marketing, Ventes | iOS |                                                           
 | BYOD | Cadres | Marketing, Ventes | iOS |
 

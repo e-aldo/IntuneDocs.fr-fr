@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c4813649092dd12b6be2c07b900d6c1af957bcb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 13ad914f076f00d1a505510b726f84645ba22cc1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Guide pratique pour configurer le délai de verrouillage de l’écran des appareils Android
 
@@ -34,7 +34,7 @@ Pour vous reconnecter à votre travail, vous devez définir le délai d’expira
 
 2.  Sélectionnez la valeur du délai d’expiration du mot de passe.
 
-## <a name="samsung-knox-device"></a>Appareil Samsung KNOX
+## <a name="samsung-knox-device"></a>Appareil Samsung Knox
 
 1.  Sur votre appareil, dans **Paramètres**, appuyez sur **Écran de verrouillage et sécurité** &gt; **Verrouiller automatiquement**.
 

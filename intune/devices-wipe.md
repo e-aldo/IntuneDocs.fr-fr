@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
@@ -77,19 +77,19 @@ La commande de **suppression des données d’entreprise** supprime les paramèt
 
 ### <a name="android"></a>Android
 
-|Type de données|Android|Android Samsung KNOX Standard|
+|Type de données|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Liens web|Supprimé.|Supprimé.|
 |Applications Google Play non gérées|Les applications et les données sont toujours installées.|Les applications et les données sont toujours installées.|
 |Applications métier non gérées|Les applications et les données sont toujours installées.|Les applications sont désinstallées et les données locales propres aux applications sont supprimées en conséquence. Aucune donnée extérieure à l’application (par exemple, sur une carte SD) n’est supprimée.|
-|Applications Google Play gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM extérieures à l’application (par exemple, une carte SD) restent chiffrées, mais ne sont pas supprimées.|
-|Applications métier gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement MAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|
+|Applications Google Play gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (par exemple, une carte SD) restent chiffrées, mais ne sont pas supprimées.|
+|Applications métier gérées|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|Les données d’application sont supprimées. L’application n’est pas supprimée. Les données protégées par chiffrement GAM extérieures à l’application (par exemple, une carte SD) restent chiffrées et inutilisables, mais ne sont pas supprimées.|
 |Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
 |Courrier électronique|n/a (profils de messagerie non pris en charge par les appareils Android)|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
-|Outlook|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.|Les messages reçus par l’application Microsoft Outlook pour Android sont supprimés.|
+|Outlook|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.|
 |Disjonction d’Azure Active Directory (AD)|Enregistrement AD supprimé.|Enregistrement AD supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
 

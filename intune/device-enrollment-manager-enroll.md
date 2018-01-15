@@ -3,10 +3,10 @@ title: Inscrire des appareils - Gestionnaire d'inscription d'appareil
 titlesuffix: Azure portal
 description: "Utilisez le compte de gestionnaire d’inscription d’appareil pour inscrire des appareils dans Intune. \""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 03facdde2ff5652799cc3d2113a48ea5ae772ea9
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscrire des appareils avec le gestionnaire d’inscription d’appareil
 
@@ -30,7 +30,7 @@ Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareil
 Les utilisateurs doivent figurer dans le portail Azure pour être ajoutés comme gestionnaires d’inscription d’appareil. Pour une sécurité optimale, l’utilisateur du gestionnaire d’inscription d’appareil ne doit pas être également un administrateur Intune.
 
 >[!NOTE]
->La méthode d’inscription DEM ne peut pas être utilisée avec ces autres méthodes d’inscription : [Apple Configurator avec l’Assistant Configuration](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator avec l’inscription directe](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) ou le [Programme d’inscription des appareils (DEP)](device-enrollment-program-enroll-ios.md).
+>La méthode d’inscription DEM ne peut pas être utilisée avec ces autres méthodes d’inscription : [Apple Configurator avec l’Assistant Configuration](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator avec l’inscription directe](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) ou le [Programme d’inscription des appareils (DEP)](device-enrollment-program-enroll-ios.md). Il ne peut pas être utilisé pour inscrire des appareils macOS. 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemple d’un scénario faisant intervenir un gestionnaire d’inscription d’appareil
 
@@ -65,7 +65,7 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
 
 ## <a name="add-a-device-enrollment-manager"></a>Ajouter un gestionnaire d’inscription d’appareil
 
-1.  Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
+1.  Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
 
 2.  Dans le panneau Intune, choisissez **Inscrire des appareils**, puis choisissez **Gestionnaires d’inscription d’appareil**.
 
@@ -90,7 +90,7 @@ La suppression d’un gestionnaire d’inscription d’appareil n’affecte pas 
 
 **Pour supprimer un gestionnaire d’inscription d’appareil**
 
-1. Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
+1. Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
 2. Dans le panneau Intune, choisissez **Inscrire des appareils**, puis choisissez **Gestionnaires d’inscription d’appareil**.
 3. Dans le panneau **Gestionnaires d’inscription d’appareil**, cliquez avec le bouton droit sur l’utilisateur DEM, puis sélectionnez **Supprimer**.
 
