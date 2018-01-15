@@ -6,7 +6,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
+ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Où se trouve ma fonctionnalité Intune dans Azure ?
 Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Nous avons donc créé ce guide de référence pour ceux d’entre vous qui connaissent parfaitement Intune dans le portail classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune dans le portail Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
 ## <a name="quick-reference-guide"></a>Guide de référence rapide
-|Composant |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
+|Fonctionnalité |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
 |------------|---------------|---------------|
 |Programme d’inscription des appareils [iOS uniquement]|Administration > Gestion des appareils mobiles > iOS > Programme d’inscription des appareils|[Inscription de l’appareil > Inscription Apple > Jeton du programme d’inscription](#where-did-apple-dep-go) |
 |Programme d’inscription des appareils [iOS uniquement]| Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription de l’appareil > Inscription Apple > Numéros de série du programme d’inscription](#where-did-apple-dep-go) |
@@ -36,6 +36,7 @@ Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour 
 | Profil d’inscription des appareils d’entreprise | Stratégie > Inscription des appareils d’entreprise | [Inscription de l’appareil > Inscription Apple > Profils AC](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | Administrateur > Gestion des appareils mobiles > Android for Work | Inscription de l’appareil > Inscription Android for Work |
 | Conditions générales | Stratégie > Conditions générales | Inscription de l’appareil > Conditions générales |
+Paramètres du portail d'entreprise|Admin > Portail d’entreprise|**Gérer** > Applications mobiles<br> **Configuration** > Personnalisation du portail d’entreprise
 
 
 ## <a name="where-do-i-manage-groups"></a>Où gérer les groupes ?
@@ -62,7 +63,7 @@ La capacité à autoriser ou à bloquer les appareils personnels est désormais 
 
 ![Image des paramètres de blocage des appareils personnels Azure](./media/05-azure-personal-block.png)
 
-Les nouvelles fonctionnalités de restriction seront ajoutées uniquement au portail Azure.
+Les nouvelles fonctionnalités de restriction sont ajoutées uniquement au portail Azure.
 
 ## <a name="where-did-apple-dep-go"></a>Où est passé le programme Apple DEP ?
 Dans le portail classique, vous pouviez configurer Intune pour l’intégrer au programme DEP (Programme d’inscription des appareils) d’Apple et demander manuellement la synchronisation avec le service d’Apple :

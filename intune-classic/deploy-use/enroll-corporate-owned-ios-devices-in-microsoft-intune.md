@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d1c1d7e4121bfdabf121b62f0ac8e1af2bca20a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15f549970494174d4f0764472f313f93b11f32a2
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Inscrire les appareils iOS d'entreprise dans Microsoft Intune
 
@@ -73,7 +73,7 @@ Une affinité utilisateur est nécessaire pour prendre en charge les éléments 
 
   Si cet appareil n’est pas encore inscrit par l’entreprise, il doit choisir **nouvel appareil** pour poursuivre la procédure d’inscription standard.
 
-6. Dans l’écran suivant, l’utilisateur doit confirmer le numéro de série du nouvel appareil. L’utilisateur peut appuyer sur le lien **Confirmez le numéro de série** pour lancer l’application Paramètres afin de vérifier le numéro de série. L’utilisateur doit ensuite entrer les quatre derniers caractères du numéro de série dans l’application Portail d’entreprise.
+6. Dans l’écran suivant, l’utilisateur doit confirmer le numéro de série du nouvel appareil. L’utilisateur peut appuyer sur le lien **Confirmez le numéro de série** pour afficher les instructions l’application permettant d’utiliser l’application Paramètres afin de vérifier le numéro de série. L’utilisateur doit ensuite entrer les quatre derniers caractères du numéro de série dans l’application Portail d’entreprise.
 
   Cette étape vérifie que l’appareil est l’appareil d’entreprise inscrit dans Intune. Si le numéro de série de l’appareil ne correspond pas, l’appareil sélectionné est incorrect. L’utilisateur doit revenir à l’écran précédent et sélectionner un autre appareil.
 

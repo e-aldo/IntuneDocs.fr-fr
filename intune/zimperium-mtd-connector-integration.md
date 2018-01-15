@@ -3,10 +3,10 @@ title: "Intégrer Zimperium à Intune"
 titleSuffix: Intune on Azure
 description: "Intégrer Intune à Zimperium"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/06/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,20 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b4adb2db14c2e1c83be8e7b3644944c1910cb97
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 515f99f694a9125d60bb9210becc6722bfb9e24f
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="integrate-zimperium-with-intune"></a>Intégrer Zimperium à Intune
 
-Vous devez suivre les étapes ci-dessous pour intégrer la solution Zimperium Mobile Threat Defense à Intune.
+Suivez les étapes ci-dessous pour intégrer la solution Zimperium Mobile Threat Defense à Intune.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 > [!NOTE]
-> Les étapes suivantes doivent être exécutées dans la [console Zimperium MTD](https://staging2-console.zimperium.com).
+> Les étapes suivantes doivent être effectuées dans la [console Zimperium MTD](https://staging2-console.zimperium.com).
 
 Avant d’entamer le processus d’intégration de Zimperium à Intune, veillez à disposer des éléments suivants :
 
@@ -48,7 +48,7 @@ Avant d’entamer le processus d’intégration de Zimperium à Intune, veillez 
 
 ### <a name="zimperium-app-authorization"></a>Autorisation de l’application Zimperium
 
-Le processus d’autorisation de l’application Zimperium est constitué des étapes suivantes :
+Le processus d’autorisation de l’application Zimperium se déroule ainsi :
 
 -   Autoriser le service Zimperium à communiquer à Intune des informations relatives à l’état d’intégrité des appareils.
 
@@ -75,7 +75,7 @@ Le processus d’autorisation de l’application Zimperium est constitué des é
 
 6.  Choisissez **Accepter** pour autoriser l’application Zimperium à communiquer avec Intune et Azure Active Directory.
 
-7.  Une fois que vous avez ajouté les applications **Zimperium zConsole** et **zIPS iOS et Android** à Azure AD, vous devez ajouter les groupes de sécurité Azure AD afin que Zimperium puisse synchroniser le groupe de sécurité Azure AD avec son service.
+7.  Après avoir ajouté les applications **Zimperium zConsole** et **zIPS iOS et Android** à Azure AD, ajoutez les groupes de sécurité Azure AD afin que Zimperium puisse synchroniser le groupe de sécurité Azure AD avec son service.
 
 8.  Choisissez **Terminer** pour enregistrer la configuration et démarrer la première synchronisation de groupe de sécurité Azure AD.
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b37cf4c93d3eb7e56be3716de6b1b5ffb373673
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b55c5d588eb366487a9e1594a46f88551e0b6ee2
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscrire des appareils d’entreprise avec le gestionnaire d’inscription d’appareil dans Microsoft Intune
 
@@ -30,7 +30,7 @@ Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareil
 Les utilisateurs doivent figurer dans le portail Azure pour être ajoutés comme gestionnaires d’inscription d’appareil. Pour une sécurité optimale, l’utilisateur du gestionnaire d’inscription d’appareil ne doit pas être également un administrateur Intune.
 
 >[!NOTE]
->La méthode d’inscription via le gestionnaire d’inscription d’appareil ne peut pas être utilisée avec l’[Assistant de configuration Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou [inscription directe](ios-direct-enrollment-in-microsoft-intune.md), ni avec la [méthode d’inscription DEP](ios-device-enrollment-program-in-microsoft-intune.md).
+>La méthode d’inscription via le gestionnaire d’inscription d’appareil ne peut pas être utilisée avec l’[Assistant de configuration Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) ou l[’inscription directe](ios-direct-enrollment-in-microsoft-intune.md), l’inscription macOS, ni avec la [méthode d’inscription DEP](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemple d’un scénario faisant intervenir un gestionnaire d’inscription d’appareil
 

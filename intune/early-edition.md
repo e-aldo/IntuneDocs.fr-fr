@@ -5,7 +5,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 35bf193563deb34ac59df245c622bbc011d80b76
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: ac9cb0ad7d1b5e2c29e80f16c172f41c08d3a15d
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Édition préliminaire de Microsoft Intune - Décembre 2017
+# <a name="the-early-edition-for-microsoft-intune---january-2018"></a>Édition anticipée pour Microsoft Intune - Janvier 2018
 
 **L’édition préliminaire** fournit la liste des fonctionnalités qui seront intégrées dans les prochaines versions de Microsoft Intune. Ces informations sont fournies de manière limitée et sont susceptibles de changer. Ne partagez pas ces informations en dehors de votre entreprise. Certaines fonctionnalités répertoriées ici risquent de ne pas être prêtes d’ici la date limite et d’être repoussées à une version ultérieure. D’autres fonctionnalités sont en cours de test dans un pilote (version d’évaluation) pour s’assurer qu'elles sont prêtes à l'emploi. Joignez votre contact de groupe de produits Microsoft si vous avez des questions ou rencontrez des problèmes.
 
@@ -33,11 +33,82 @@ Cette page est mise à jour périodiquement. Consultez-la régulièrement pour s
 <!--
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
-## Notices
+## Notices 
 -->
 
 
 ## <a name="intune-in-the-azure-portal"></a>Intune dans le portail Azure
+
+### <a name="easier-resolution-of-compliance-issues-for-the-company-portal-app-for-windows-10---676546---"></a>Résolution plus rapide des problèmes de conformité affectant l’application Portail d’entreprise pour Windows 10 <!--676546 -->
+
+Les utilisateurs finaux d’appareils Windows peuvent désormais indiquer la raison de la non-conformité dans l’application Portail d’entreprise. Quand c’est possible, ils sont directement positionnés à l’emplacement approprié dans l’application Paramètres pour corriger le problème. 
+
+### <a name="new-option-for-user-authentication-for-apple-bulk-enrollment----747625---"></a>Nouvelle option pour l’authentification utilisateur dans le cadre de l’inscription en bloc Apple <!-- 747625 -->
+Intune vous donnera la possibilité d’authentifier les appareils à l’aide de l’application Portail d’entreprise pour les méthodes d’inscription suivantes :
+
+- Programme d'inscription d'appareils Apple
+- Apple School Manager
+- Inscription à Apple Configurator
+
+Lorsque vous utilisez l’option Portail d’entreprise, l’authentification multifacteur Azure Active Directory peut être appliquée sans bloquer ces méthodes d’inscription.
+
+Lorsque vous utilisez l’option Portail d’entreprise, Intune ignore l’authentification utilisateur dans l’Assistant Réglages iOS pour l’inscription d’affinité utilisateur. Cela signifie que l’appareil est initialement inscrit comme appareil sans utilisateur et, par conséquent, vous ne recevrez pas les configurations ou stratégies des groupes d’utilisateurs. Il recevra uniquement les configurations et les stratégies des groupes d’appareils. Toutefois, Intune installera automatiquement l’application Portail d’entreprise sur l’appareil. Le premier utilisateur à lancer l’application Portail d’entreprise et à s’y connecter sera associé à l’appareil dans Intune. À ce stade, l’utilisateur recevra les configurations et les stratégies de ses groupes d’utilisateurs. L’association de l’utilisateur ne peut pas être modifiée sans réinscription.
+
+### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685---"></a>Prise en charge d’Intune pour plusieurs comptes DEP / Apple School Manager <!-- 747685 -->
+Intune prendra en charge l’inscription des appareils jusqu'à la limite de 100 comptes dans le cadre du Programme d’inscription des appareils (DEP) ou Apple School Manager. Chaque jeton téléchargé peut être géré séparément pour les profils d’inscription et les appareils. Un profil d’inscription différent peut être affecté automatiquement pour chaque jeton DEP/School Manager téléchargé. Si plusieurs jetons School Manager sont téléchargés, un seul jeton peut être partagé avec Microsoft School Data Sync à la fois.
+
+Après la migration, les API Graph en version bêta et les scripts publiés pour la gestion DEP Apple ou ASM via Graph ne fonctionneront plus. De nouvelles versions bêta des API Graph sont en cours de développement et seront publiées après la migration.
+
+### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eeready---"></a>Sélectionnez les catégories d’appareils en utilisant les paramètres Accès scolaire ou professionnel <!-- 1058963 eeready --> 
+Si vous avez activé le [mappage de groupe d’appareils](https://docs.microsoft.com/en-us/intune/device-group-mapping), les utilisateurs de Windows 10 seront invités à sélectionner une catégorie d’appareils après l’inscription via le bouton **Se connecter** situé dans **Paramètres**  >  **Comptes** > **Accès scolaire ou professionnel** ou au cours de l'expérience OOBE (out-of-box experience).
+
+### <a name="targeting-compliance-policies-to-devices-in-device-groups---1307012---"></a>Ciblage des stratégies de conformité pour les appareils dans des groupes d’appareils <!--1307012 -->
+
+Vous pourrez cibler des stratégies de conformité pour les utilisateurs dans des groupes d’utilisateurs. Vous pourrez cibler des stratégies de conformité pour les appareils dans des groupes d’appareils. 
+
+### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>Inclusion et exclusion d’affectations d’applications en fonction de groupes <!-- 1406920 -->
+
+Lors de l’affectation d’une application et après avoir sélectionné un type d’affectation, vous pourrez sélectionner les groupes à inclure ainsi que les groupes à exclure. Vous pourrez également utiliser les groupes créés au préalable (Tous les utilisateurs, Tous les appareils et Tous les utilisateurs et appareils) en tant que groupes inclus.
+
+### <a name="remote-erase-command-support----1438084---"></a>Prise en charge de la commande d’effacement à distance <!-- 1438084 -->
+
+Les administrateurs pourront déclencher une commande d’effacement à distance.
+
+> [!IMPORTANT]
+> La commande d’effacement ne peut pas être annulée et doit être utilisée avec précaution.
+
+La commande d’effacement supprime toutes les données, y compris le système d’exploitation, d’un appareil. Elle entraîne aussi la suppression de l'appareil de la gestion Intune. Aucun avertissement n’est envoyé à l’utilisateur, et l’effacement se produit dès l’envoi de la commande.
+
+Vous pourrez configurer un code PIN de récupération à 6 chiffres. Ce code PIN peut servir à déverrouiller l’appareil effacé avant de lancer la réinstallation du système d’exploitation. Une fois que l’effacement a démarré, le code PIN apparaît dans une barre d’état sur le panneau de présentation de l’appareil dans Intune. Le code PIN restera affiché tant que l’effacement est en cours. Une fois l’effacement terminé, l’appareil disparaît totalement de la gestion Intune. Veillez à enregistrer le code PIN de récupération afin que toute personne qui restaure l’appareil puisse l’utiliser.
+
+### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Données chiffrées Windows Information Protection (WIP) dans les résultats de la recherche Windows <!-- 1469193 -->
+
+Un nouveau paramètre dans la stratégie Protection des informations Windows (WIP) vous permettra de choisir d’inclure les données chiffrées par WIP dans les résultats de la recherche Windows.
+
+### <a name="website-learning-mode----1631908---"></a>Mode d’apprentissage de site web (Website Learning Mode) <!-- 1631908 -->
+
+Intune proposera une extension du mode d’apprentissage de la Protection des informations Windows (WIP). Outre l’affichage des informations sur les applications compatibles avec WIP, vous pourrez consulter un résumé des appareils qui partagent des données de travail avec des sites web. Ces informations vous permettront d’identifier les sites web à ajouter aux stratégies WIP des utilisateurs et des groupes.
+
+### <a name="updates-to-compliance-emails---1637547---"></a>Mises à jour des e-mails de conformité <!--1637547 -->
+
+Lorsqu’un e-mail est envoyé pour signaler un appareil non conforme, d’autres d’informations sur cet appareil non conforme seront incluses. L’article suivant sera mis à jour pour indiquer ce point : [Automatiser des actions en cas de non-conformité](#actions-for-noncompliance).
+
+### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>Les stratégies d’accès conditionnel pour Intune sont disponibles uniquement à partir du portail Azure <!-- 1737088 1634311 --> 
+Nous simplifierons la configuration et la gestion de l’accès conditionnel. Vous pourrez configurer et gérer vos stratégies uniquement dans le [portail Azure](https://portal.azure.com) en accédant à **Azure Active Directory** > **Accès conditionnel**. Pour des raisons pratiques, vous pourrez également accéder à ce panneau à partir d’Intune dans le portail Azure, depuis **Intune** > **Accès conditionnel**.
+
+###  <a name="alerts-for-expired-tokens-and-tokens-that-will-soon-expire----1639263---"></a>Alertes pour les jetons expirés et les jetons qui arrivent à expiration <!-- 1639263 -->
+La page de présentation affichera des alertes pour les jetons expirés et ceux qui arrivent à expiration. Lorsque vous cliquez sur une alerte pour un jeton unique, vous accéderez à la page des détails de ce jeton.  Si vous cliquez sur une alerte comportant plusieurs jetons, vous accéderez à une liste de tous les jetons avec leur état. Les administrateurs doivent renouveler leurs jetons avant la date d’expiration.
+
+### <a name="remote-printing-over-a-secure-network----1709994----"></a>Impression à distance sur un réseau sécurisé <!-- 1709994  -->
+Les solutions d’impression mobiles sans fil PrinterOn permettront aux utilisateurs d’imprimer à distance depuis n’importe où et à tout moment via un réseau sécurisé. PrinterOn s’intégrera au Kit SDK APP d’Intune à la fois pour iOS et Android. Vous pourrez cibler les stratégies de protection d’application pour cette application via le panneau des **stratégies de protection d’application** d’Intune, dans la console d’administration. Les utilisateurs finaux pourront télécharger l’application « PrinterOn for Microsoft » via le Google Play Store ou iTunes afin de l’utiliser dans leur écosystème Intune.
+
+### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>Approuver l’application Portail d’entreprise pour Android for Work <!--1797090 -->
+Si votre organisation utilise Android for Work, vous devrez approuver manuellement l’application Portail d’entreprise pour Android afin qu’elle continue à recevoir les mises à jour automatiques du magasin Google Play managé.
+
+### <a name="microsoft-graph-api-for-intune---general-availability-----1833289---"></a>API Graph Microsoft pour Intune - disponibilité générale <!-- 1833289 -->
+Les API Intune dans Microsoft Graph fourniront un accès par programme aux données et méthodes pour automatiser les actions d’administration du service Intune.  Avec la **disponibilité générale** de ces API, clients, partenaires et développeurs pourront utiliser les API pour intégrer des solutions internes ou commerciales liées à ou nécessitant la prise en charge d’Intune ou d’autres services Microsoft disponibles via Microsoft Graph. 
+
+<!-- the following are present prior to 1801 -->
 
 ### <a name="app-protection-policies-----679615---"></a>Stratégies de protection des applications  <!-- 679615 -->
 Les stratégies Intune App Protection permettent de créer des stratégies globales, par défaut, afin d’activer rapidement la protection pour tous les utilisateurs dans l’ensemble du locataire.
@@ -47,9 +118,6 @@ Pour un appareil donné disposant d’une ou de plusieurs applications de Progra
 
 ### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>Révoquer des licences pour un jeton Programme d’achat en volume iOS <!-- 820870 -->
 Vous pourrez révoquer la licence de toutes les applications de Programme d’achat en volume (VPP) iOS pour un jeton VPP donné.
-
-### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>Supprimer un jeton Programme d’achat en volume iOS <!-- 820879 -->
-Vous pourrez supprimer le jeton Programme d’achat en volume (VPP) iOS à l’aide de la console. Ceci peut être nécessaire si vous avez des instances dupliquées d’un jeton VPP.
 
 ### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>Création d’un rapport d’enregistrement d’appareil de contrôle d’accès réseau (NAC)  <!-- 1232250 -->
 Avant cette modification, les administrateurs informatiques ne pouvaient pas déterminer à partir d’Intune si un appareil géré par NAC communiquait ou pas avec leur solution NAC. Lorsqu’un appareil géré par NAC ne communique pas avec leur solution NAC, l’appareil est considéré comme non conforme par la solution NAC. Il est donc bloqué par la solution NAC et bloqué par les stratégies d’accès conditionnel qui reposent sur l’état de conformité de l’appareil.
@@ -61,72 +129,9 @@ Grâce à cette modification, les administrateurs informatiques peuvent voir que
 ### <a name="new-ios-device-action------1244701---"></a>Nouvelle action sur appareil iOS   <!-- 1244701 -->
 Vous pouvez arrêter les appareils supervisés iOS 10.3. Cette action arrête immédiatement l’appareil sans avertir l’utilisateur final. L’action **Arrêter (supervisé uniquement)** se trouve dans les propriétés de l’appareil lorsque vous sélectionnez un appareil dans la charge de travail **Appareil**.
 
-### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>Prise en charge de connecteurs multiples pour le traitement des certificats SCEP et PFX <!-- 1361755 eeready -->
-Les clients qui utilisent le connecteur NDES local pour présenter des certificats à des appareils pourront configurer plusieurs connecteurs dans un seul locataire.
-
-Cette nouvelle fonctionnalité prend en charge le scénario suivant :
-
-- **Haute disponibilité**
-
-    Chaque connecteur NDES extraie des demandes de certificat d’Intune.  Si un connecteur NDES a l’état hors connexion, l’autre connecteur peut continuer à traiter les requêtes.
-
-### <a name="new-automatic-redeployment-setting----1469168---"></a>Nouveau paramètre de redéploiement automatique <!-- 1469168 -->
-Ce paramètre permet aux utilisateurs avec des droits administratifs de supprimer l’ensemble des données et des paramètres utilisateur à l’aide des touches **CTRL + Win + R** sur l’écran de verrouillage de l’appareil. L’appareil sera automatiquement reconfiguré et réinscrit en gestion.
-
-Ce paramètre se situe sous Windows 10 -> Restrictions d’appareil -> Général -> Redéploiement automatique.
-
-### <a name="install-office-apps-on-macos-devices----1494311---"></a>Installer des applications Office sur des appareils macOS <!-- 1494311 -->
-Vous pourrez installer des applications Office sur des appareils macOS. Ce nouveau type d’application vous permettra d’installer Word, Excel, PowerPoint, Outlook et OneNote. Ces applications bénéficient également de Microsoft AutoUpdater (MAU) qui garantit que vos applications sont sécurisées et à jour.
-
-### <a name="surface-hub-resource-account-supported----1566442-eeready---"></a>Compte de ressource Surface Hub pris en charge <!-- 1566442 eeready -->
-Une nouvelle action d’appareil sera ajoutée pour permettre aux administrateurs de définir et de mettre à jour le compte de ressource associé à un Surface Hub.
-
-Le compte de ressource est utilisé par un Surface Hub pour l’authentification avec Skype/Exchange afin de prendre part à une réunion. Vous pouvez créer un compte de ressource unique afin que le Surface Hub s’affiche dans la réunion en tant que salle de conférence. Par exemple, le compte de ressource peut s’afficher comme *Salle de conférence B41/6233*. Le compte de ressource (également appelé compte de l’appareil) pour le Surface Hub doit en général être configuré pour l’emplacement de la salle de conférence et également lorsque d’autres paramètres du compte de ressource sont modifiés.
-
-Lorsque les administrateurs veulent mettre à jour le compte de ressource sur un appareil, ils doivent fournir les informations d’identification Active Directory/Azure Active Directory actuelles associées à l’appareil. Si la rotation de mot de passe est activée sur l’appareil, les administrateurs doivent accéder à Azure Active Directory pour trouver le mot de passe.
-
-> [!NOTE]
-> Tous les champs sont transmis sous forme de package et écrasent tous les champs précédemment configurés. Les champs vident écrasent également les champs existants.
-
-Vous trouverez ci-dessous les paramètres que les administrateurs peuvent configurer :
-
-- **Compte de ressource**  
-
-   - **Utilisateur Active Directory**   
-   Nomdedomaine\nomd’utilisateur ou Nom d’utilisateur principal (UPN) : user@domainname.com
-   - **Mot de passe**
-
-
-- **Paramètres facultatifs du compte de ressource** (à définir à l’aide du compte de ressource spécifié)
-   - **Période de rotation du mot de passe**   
-     Permet de s’assurer que le mot de passe du compte est automatiquement mis à jour par le Surface Hub chaque semaine à des fins de sécurité. Pour configurer des paramètres une fois cette option activée, il est nécessaire tout d’abord de réinitialiser le mot de passe du compte dans Azure Active Directory.
-
-   - **Adresse du protocole d’initiation de session (SIP)**    
-     Utilisée uniquement en cas d’échec de la découverte automatique.
-
-   - **E-mail**    
-     Adresse e-mail de l’appareil/du compte de ressource.
-
-   - **Exchange Server**    
-     Requis uniquement en cas d’échec de la découverte automatique.
-
-   - **Synchronisation du calendrier**    
-     Permet de spécifier si la synchronisation du calendrier et d’autres services Exchange Server sont activés. Par exemple : synchronisation de réunion.
 
 ### <a name="intune-now-provides-the-account-move-operation-----1573558-1579830---"></a>Intune propose désormais l’opération Déplacer le compte  <!-- 1573558, 1579830 -->
 L’opération **Déplacer le compte** migre un locataire à partir d’une échelle d’unité Azure (ASU) vers une autre. L’opération **Déplacer le compte** peut être utilisée dans les scénarios initiés par le client, lorsque vous faites la demande de cette opération auprès de l’équipe de support d’Intune, et elle peut être utilisée dans un scénario géré par Microsoft lorsque Microsoft doit apporter des réglages au service dans le serveur principal. Au cours de l’opération **Déplacer le compte**, les locataires sont en mode lecture seule. Durant la période où les locataires sont en lecture seule, les opérations de service comme l’inscription, le changement de nom des appareils, la mise à jour de l’état de conformité, échoueront.
-
-### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>Nouveaux paramètres pour le profil de configuration d’appareil Windows Defender Security Center (WDSC) <!-- 1335507 -->
-Intune ajoute une nouvelle section de paramètres pour le profil de configuration d’appareil, sous la Protection du point de terminaison, nommée **Windows Defender Security Center**. Les administrateurs informatiques peuvent configurer les éléments de base auxquels les utilisateurs finaux de l’application Windows Defender Security Center peuvent accéder. Si un administrateur informatique masque un élément de base dans l’application Windows Defender Security Center, les notifications liées à l’élément de base masqué ne s’affichent pas sur l’appareil de l’utilisateur.
-
-Vous trouverez ci-dessous les éléments de base que les administrateurs peuvent masquer dans les paramètres du profil de configuration d’appareil Windows Defender Security Center :
-- Protection contre les menaces et les virus
-- Performances et intégrité de l’appareil
-- Protections du pare-feu et du réseau
-- Contrôle d’application et du navigateur
-- Options Famille
-
-Les administrateurs informatiques peuvent également personnaliser les notifications que les utilisateurs reçoivent. Par exemple, vous pouvez décider si les utilisateurs reçoivent toutes les notifications générées par les éléments de base visibles dans WDSC ou uniquement les notifications critiques. Les notifications non critiques incluent des résumés périodiques sur l’activité de l’antivirus Windows Defender et des notifications indiquant lorsque des analyses sont terminées. Toutes les autres notifications sont considérées comme critiques. En outre, vous pouvez aussi personnaliser le contenu même de la notification. Par exemple, vous pouvez fournir les coordonnées du service informatique à inclure dans les notifications qui s’affichent sur les appareils des utilisateurs.
 
 
 
@@ -134,17 +139,6 @@ Les administrateurs informatiques peuvent également personnaliser les notificat
 <!-- the following are present prior to 1712 -->
 ### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>Affecter des applications mobiles Office 365 aux appareils iOS et Android à l’aide du type d’application intégré <!-- 1332318 -->
 Le type d’application **Intégré** facilitera la création d’applications Office 365 et leur affectation aux appareils iOS et Android gérés. Ces applications incluent les applications Office 365 telles que Word, Excel, PowerPoint et OneDrive. Vous pouvez affecter des applications spécifiques au type d’application et modifier la configuration des informations des applications.
-
-### <a name="single-sign-on-support-for-ios----1333645---"></a>Prise en charge de l’authentification unique pour iOS <!-- 1333645 -->  
-Vous pourrez utiliser l’authentification unique pour les utilisateurs iOS. Les applications iOS qui sont codées pour rechercher les informations d’identification de l’utilisateur dans la charge utile d’authentification unique fonctionnent avec cette mise à jour de la configuration de la charge utile. Vous pouvez également utiliser un UPN et un ID d’appareil Intune pour configurer le nom du principal et le domaine.
-
-### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>Protocole de texte autorisé à partir des applications gérées <!-- 1414050  -->
-Les applications gérées par le SDK d’application Intune pourront envoyer des messages SMS.
-
-### <a name="remotely-lock-managed-macos-device-with-intune----1437691---"></a>Verrouiller à distance un appareil macOS géré avec Intune <!-- 1437691 -->
-Vous pourrez verrouiller un appareil macOS perdu et définir un code PIN de récupération à 6 chiffres. Une fois le verrouillage effectué, le panneau **Vue d’ensemble des appareils** affiche le code PIN jusqu’à ce qu’une autre action d’appareil soit envoyée.
-
-Pour plus d’informations, consultez [Verrouiller à distance des appareils gérés avec Intune](device-remote-lock.md).
 
 
 ### <a name="assignment-conflict-resolution-has-changed-for-ios-store-apps----1480316---"></a>La résolution des conflits d’affectation a changé pour les applications de l’App Store iOS <!-- 1480316 -->
@@ -191,8 +185,6 @@ Ces modifications commenceront à s’appliquer avec la mise à jour de novembre
 ### <a name="configure-an-ios-app-pin----1586774---"></a>Configurer un code PIN d’application iOS <!-- 1586774 -->
 Vous pourrez bientôt exiger un code PIN pour des applications iOS ciblées. Vous pouvez configurer l’exigence du code PIN et sa date d’expiration en jours par le biais du portail Azure. Le cas échéant, l’utilisateur devra définir et utiliser un nouveau code PIN avant d’accéder à une application iOS. Seules les applications iOS pour lesquelles la protection d’application est activée avec le SDK d’application Intune prendront en charge cette fonctionnalité.
 
-### <a name="add-find-my-iphone-for-personal-devices---1427287--"></a>Ajouter « Rechercher mon iPhone » pour les appareils personnels <!--1427287-->
-Vous pourrez savoir si la fonctionnalité Verrou d’activation est activée pour les appareils iOS. Cette fonctionnalité se trouvait avant dans le portail classique.
 
 <!-- the following are present prior to 1711 -->
 
@@ -223,30 +215,6 @@ Vous pouvez gérer des appareils et des applications en combinant Citrix XenMobi
 Vous êtes en mesure de trouver un dépôt de code, contenant l’outil Intune App Wrapping Tool et le kit SDK d’applications Intune pour iOS et Android, qui s’intègre à la technologie mVPN de Citrix MDX.
 
 
-### <a name="on-premises-exchange-connector-high-availability-support-----676614---"></a>Prise en charge d’un haut niveau de disponibilité pour le connecteur Exchange local <!-- 676614 -->   
-Vous pouvez avoir plusieurs rôles serveur d’accès au client pour le connecteur Exchange local. Par exemple, si le principal serveur d’accès au client échoue, le connecteur Exchange reçoit une requête pour revenir à d’autres serveurs. Cette fonctionnalité garantit que le service n’est pas interrompu.
-
-### <a name="system-center-operations-manager-management-pack-for-exchange-connector----885457---"></a>Pack d’administration de System Center Operations Manager pour le connecteur Exchange <!-- 885457 -->   
-Le pack d’administration de System Center Operations Manager pour le connecteur Exchange sera disponible pour vous aider à analyser les journaux du connecteur Exchange. Ce pack d’administration vous donne différents moyens de surveiller Intune lorsque vous devez résoudre des problèmes.
-
-
-
-
-
-## <a name="intune-apps"></a>Applications Intune
-
-### <a name="helping-your-users-help-themselves-with-the-company-portal-app-for-android----1573324-1573150-1558616-1564878---"></a>Rendre vos utilisateurs autonomes avec l’application Portail d’entreprise pour Android <!---1573324, 1573150, 1558616, 1564878--->
-L’application Portail d’entreprise pour Android donne aux utilisateurs finaux des indications pour comprendre et, dans la mesure du possible, résoudre eux-mêmes les nouveaux cas d’usage. 
-
-- Un nouveau message s’affiche expliquant qu’une stratégie de conformité pour le chiffrement a été déployée, mais que le [fabricant de l’appareil ne chiffre pas ce dernier](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android) selon les [recommandations de Google](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setStorageEncryption(android.content.ComponentName, boolean).
-- Les utilisateurs finaux sont redirigés vers le portail Azure Active Directory (https://account.activedirectory.windowsazure.com/r/#/profile) pour supprimer un appareil s’ils ont atteint le nombre maximal d’appareils qu’ils sont autorisés à ajouter. 
-- Les utilisateurs finaux reçoivent des instructions pour les aider à [corriger les erreurs d’activation sur les appareils Samsung Knox](https://go.microsoft.com/fwlink/?linkid=859718) ou à [désactiver le mode d’économie d’énergie](/intune-user-help/power-saving-mode-android). Si aucune de ces solutions ne résout leur problème, nous indiquons comment [envoyer les journaux à Microsoft](/intune-user-help/send-logs-to-microsoft-ios). 
-
-
-### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>Nouvelle action « Résoudre » disponible pour les appareils Android <!---1583480--->
-L’application Portail d’entreprise pour Android introduit une action « Résoudre » dans la page _Mettre à jour les paramètres de l’appareil_. Cette option permettra à l’utilisateur final d’accéder directement au paramètre ayant rendu son appareil non conforme. L’application Portail d’entreprise pour Android prend en charge cette action pour les paramètres [Code secret de l’appareil](/intune-user-help/set-your-pin-or-password-android), [Chiffrement de l’appareil](/intune-user-help/encrypt-your-device-android), [Débogage USB](/intune-user-help/you-need-to-turn-off-usb-debugging-android) et [Sources inconnues](/intune-user-help/you-need-to-turn-off-unknown-sources-android). 
-
-
 
 
 <!-- the following are present prior to 1711 -->
@@ -256,13 +224,6 @@ L’application Portail d’entreprise pour Android introduit une action « Rés
 Lorsqu’un utilisateur final se connecte au site web du portail d’entreprise pour inscrire son appareil macOS, il est invité à télécharger la nouvelle application Portail d’entreprise pour macOS pour effectuer la procédure. Ce comportement se produit pour les appareils macOS avec OS X El Capitan 10.11 ou ultérieur. 
 
 
-<!-- the following are present prior to 1710 -->
-
-
-
-### <a name="apps-that-are-available-with-or-without-enrollment-can-now-be-installed-without-being-prompted-for-enrollment----1334712---"></a>Les applications qui sont disponibles avec ou sans inscription peuvent désormais être installées sans invitation à l’inscription. <!-- 1334712 -->
-Les applications d’entreprise qui ont été mises à disposition avec ou sans inscription dans l’application Portail d’entreprise Android peuvent être installées sans invitation à l’inscription.
-
 
 <!-- the following are present prior to 1709 -->
 
@@ -271,7 +232,7 @@ Les applications d’entreprise qui ont été mises à disposition avec ou sans 
 
 
 ### <a name="improved-error-message-for-when-a-user-reaches-the-maximum-number-of-devices-allowed-to-enroll----1270370---"></a>Message d’erreur amélioré quand un utilisateur atteint le nombre maximal d’appareils autorisés à inscrire <!-- 1270370 -->
-Au lieu d’un message d’erreur générique, les utilisateurs finaux reçoivent un message d’erreur convivial offrant une possibilité d’action : « Vous avez inscrit le nombre maximal d’appareils autorisés par votre administrateur informatique. Supprimez un appareil inscrit ou demandez de l’aide à votre administrateur informatique ».
+Au lieu d’un message d’erreur générique, les utilisateurs finaux d’appareils Android reçoivent un message d’erreur convivial offrant une possibilité d’action : « Vous avez inscrit le nombre maximal d’appareils autorisés par votre administrateur informatique. Supprimez un appareil inscrit ou demandez de l’aide à votre administrateur informatique ».
 
 
 

@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
+ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problèmes connus dans Microsoft Intune
 
@@ -43,31 +43,6 @@ La capacité à gérer Windows 10 dans Intune sur le portail Azure est disponibl
 
 Lorsque vous migrez depuis Intune vers le portail Azure, un nouveau groupe nommé **Tous les utilisateurs - b0b08746-4dbe-4a37-9adf-9e7652c0b421** peut s’afficher. Ce groupe contient tous les utilisateurs dans votre Azure Active Directory, pas seulement les utilisateurs Intune sous licence. Cette utilisation peut entraîner des problèmes avec d’autres produits Microsoft si vous prévoyez que certains utilisateurs existants ou nouveaux ne soient membres d’aucun groupe.
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>Migration secondaire requise pour les fonctionnalités de sélection
-
-Les comptes Intune créés avant janvier 2017 doivent être migrés avant de pouvoir utiliser les fonctionnalités suivantes dans le portail Azure :
-
-- Profils d'inscription des appareils d'entreprise
-- Programme d'inscription d'appareils Apple
-- Prédéclarer les appareils d’entreprise par numéro de série iOS
-- Comptes de gestionnaire d’inscription d’appareil
-- Programme d’achats en volume (VPP) Apple
-
-Parce que ces fonctionnalités ne peuvent pas être gérées à partir de la console Intune (Silverlight) et du portail Azure, la migration :
-- Les désactive dans le portail classique
-- Les active dans le portail Azure  
-
-À partir du 22 septembre 2017, la migration de ces fonctionnalités est fusionnée dans la migration principale vers Azure. Si votre compte a déjà été migré en vue d’utiliser le portail Azure, cette migration secondaire a déjà dû être effectuée. Si ce n’est pas le cas, ces fonctionnalités seront migrées vers Azure en novembre. Une fois que la migration de votre compte commence, elle se termine le même jour. La migration peut prendre jusqu'à 6 heures à partir de la désactivation de ces fonctionnalités dans le portail classique Intune.
-
-Si vous gérez maintenant ces fonctionnalités Intune dans le portail Azure, tenez compte des points suivants :
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Supprime les profils d’inscription d’appareil professionnel par défaut dans Apple DEP
-Le portail Azure ne prend pas en charge de profil d’inscription d’appareil d’entreprise « Par défaut » pour les appareils Apple DEP. Cette fonctionnalité, disponible dans la console Intune (Silverlight), est interrompue pour empêcher l’attribution de profils involontaire. Lorsque des numéros de série DEP sont synchronisés dans le portail Azure, aucun profil d’inscription d’appareil d’entreprise n’est affecté. Un profil d’inscription doit être affecté avant d’utiliser l’appareil.
-
-#### <a name="apple-dep-token-restored-with-migration"></a>Jeton DEP Apple restauré avec la migration
-
-Si vous avez supprimé un jeton du programme d’inscription des appareils Apple dans le portail Intune (Silverlight) et que vous ne chargez pas de nouveau jeton dans le portail Azure, le jeton d’origine est restauré dans le portail Azure quand vous effectuez la migration. Pour supprimer ce jeton et empêcher l’inscription au programme DEP, supprimez le jeton du portail Azure.
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Les panneaux d’état pour les stratégies migrées ne fonctionnent pas
 
 Vous ne pouvez pas afficher les informations d’état pour les stratégies qui ont été migrées à partir du portail classique dans le portail Azure. Toutefois, vous pouvez continuer à afficher des rapports pour ces stratégies dans le portail classique. Pour afficher les informations d’état pour les stratégies de configuration migrées, recréez-les dans le portail Azure.
@@ -79,6 +54,9 @@ Les applications iOS achetées en volume sont affichées et peuvent être affect
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Plusieurs copies du même programme d’achat en volume iOS sont chargées
 Ne cliquez pas à plusieurs reprises sur le bouton **Charger** pour le même jeton VPP, sinon des jetons VPP en double seraient chargés et les applications seraient synchronisées plusieurs fois pour le même jeton VPP.
+
+### <a name="assigning-office-365-to-macos-devices"></a>Affectation d’Office 365 à des appareils macOS
+La fonctionnalité permettant d’affecter Office 365 à des appareils macOS avec Microsoft Intune sera disponible une fois la mise à jour de l’interface utilisateur terminée.
 
 <!-- ## Groups -->
 
@@ -118,7 +96,7 @@ Pour plus d’informations, consultez [Qu’est-ce que la compatibilité des app
 
 ### <a name="ios-app-protection-policies"></a>Stratégies de protection des applications iOS
 
-Vous pouvez définir des [stratégies de protection des applications pour iOS](app-protection-policy-settings-ios.md). Ces stratégies sont proposées aux utilisateurs d’appareils gérés par l’intermédiaire de la gestion des applications mobiles (MAM) sans inscription. En raison d’une erreur temporaire, vous pouvez uniquement définir ces stratégies pour les versions d’iOS à une seule décimale. Ainsi, au lieu de définir iOS 10.3.1 comme version minimale, définissez iOS 10.3. Ce problème sera résolu dans une prochaine mise à jour du SDK iOS.
+Vous pouvez définir des [stratégies de protection des applications pour iOS](app-protection-policy-settings-ios.md). Ces stratégies sont proposées aux utilisateurs d’appareils gérés par l’intermédiaire de la gestion des applications mobiles (GAM) sans inscription. En raison d’une erreur temporaire, vous pouvez uniquement définir ces stratégies pour les versions d’iOS à une seule décimale. Ainsi, au lieu de définir iOS 10.3.1 comme version minimale, définissez iOS 10.3. Ce problème sera résolu dans une prochaine mise à jour du SDK iOS.
 
 
 ## <a name="administration-and-accounts"></a>Administration et comptes

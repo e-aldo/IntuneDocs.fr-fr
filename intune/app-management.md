@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a1cbd6fc3244686c1f5a1db3e4365e615662f0e
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 0ea0c9a406d6ddb78cd016a7b594d077d7181952
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
@@ -40,7 +40,7 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 
 ||||||
 |-|-|-|-|-|
-|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
+|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
 |Ajout et affectation d’applications pour des appareils et utilisateurs|Oui|Oui|Oui|Oui|
 |Affectation d’applications pour les appareils non inscrits avec Intune|Oui|Oui|Non|Non|
 |Utilisation de stratégies de configuration d’application pour contrôler le comportement des applications au démarrage|Non|Oui|Non|Non|
@@ -70,7 +70,7 @@ Vous trouverez la plupart des éléments liés à l’application dans la charge
 
     ![La charge de travail Mobile Apps](./media/apps-workload.png)
 
-### <a name="manage"></a>Gestion
+### <a name="manage"></a>Gérer
 - **Applications** : c’est sur ce nœud que vous allez ajouter, affecter et surveiller la plupart de vos applications.
     - [Ajouter des applications](apps-add.md)
     - [Attribuer des applications](apps-deploy.md)
@@ -85,19 +85,33 @@ Vous trouverez la plupart des éléments liés à l’application dans la charge
 - **Profils de configuration iOS** : les applications iOS incluent un profil de configuration et du code signé par un certificat. Lors de l’expiration du certificat, l’application ne peut plus être exécutée. Intune vous offre les outils pour affecter de façon proactive une nouvelle stratégie de profil de configuration pour les appareils qui disposent d’applications arrivant prochainement à expiration.
     - [Profils de configuration d’applications iOS](app-provisioning-profile-ios.md)
 
+Pour plus d'informations, voir [Gérer les applications](app-management.md).
+
 ### <a name="monitor"></a>Surveillance
-- **Applications sous licence** : affichez, affectez et surveillez les applications achetées en volume dans les App Stores.
+- **Licences d’applications** : affichez, affectez et surveillez les applications achetées en volume dans les App Stores.
     - [Applications achetées en volume sur le Microsoft Store pour Entreprises](windows-store-for-business.md)
 - **Applications découvertes** : affiche toutes les applications qui ont été affectées par Intune et installées sur un appareil.
 - **État d’installation de l’application** : affiche l’état d’une affectation d’application que vous avez créée.
 - **État de protection de l’application** : affiche l’état d’une stratégie de protection d’application pour un utilisateur que vous sélectionnez.
+- **Journaux d’audit** : affiche les activités liées à l’application Intune et effectuées par tous les administrateurs informatiques.
 
-Pour plus d’informations, consultez [Surveiller des applications](apps-monitor.md)
+Pour plus d’informations, consultez [Surveiller des applications](apps-monitor.md).
 
 ### <a name="setup"></a>Setup
-<!--- **iOS VPP Tokens**
-    - [iOS volume-purchased apps](vpp-apps-ios.md) --->
+- **Jetons VPP iOS** : appliquez et affichez vos licences du programme VPP (Volume Purchase Program) iOS.
+    - [Applications iOS achetées en volume](vpp-apps-ios.md)
+- **Certificat d'entreprise Windows** : appliquez ou affichez l’état d’un certificat de signature de code permettant de distribuer des applications métier sur vos appareils Windows gérés. 
+- **Certificat Symantec Windows** : appliquez ou affichez l’état d’un certificat de signature de code Symantec nécessaire pour distribuer des fichiers appx XAP et WP8.x sur des appareils Windows 10 Mobile. 
 - **Microsoft Store pour Entreprises** : configurez l’intégration au Microsoft Store pour Entreprises. Après cela, vous pouvez synchroniser les applications achetées à Intune, et affecter puis suivre l’utilisation de votre licence.
     - [Applications achetées en volume sur le Microsoft Store pour Entreprises](windows-store-for-business.md)
+- **Clés de chargement indépendant Windows** : vous pouvez ajouter une clé de chargement indépendant Windows pour installer une application directement sur des appareils plutôt que de publier et de télécharger l’application à partir du Windows Store.
+    - [Chargement indépendant d’une application Windows](app-sideload-windows.md) 
 - **Personnalisation du portail d’entreprise** : personnalisez le portail d’entreprise pour lui donner une image proche de votre société.
     - [Configuration du portail d’entreprise](company-portal-app.md)
+- **Catégories d’applications** : ajoutez, épinglez et supprimez des noms de catégories d’applications.
+- **Android for Work** : approuvez et synchronisez les applications que vous avez approuvées pour votre entreprise.
+    - [Applications Android for Work](apps-add-android-for-work.md) 
+
+### <a name="help-and-support"></a>Aide et support
+- **Aide et support** : dépannez, demandez de l’aide ou affichez l’état d’Intune.
+    - [Résolution des problèmes](help-desk-operators.md)

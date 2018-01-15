@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 840ef2ce59551a45cd753190b784e8ca0bba617a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6b598441d39d90a4ae81df7fffff99f9a5ccc451
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Guide de création et d’affectation d’une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans Microsoft Intune Azure
 
@@ -105,7 +105,7 @@ L'application native **Courrier** sur Windows 8.1 et les versions ultérieures (
 
 13. Si vous avez un appareil qui n'est pas affecté par l'accès conditionnel ou d'autres règles, vous pouvez choisir de l'autoriser l'accès à Exchange ou le bloquer.
   - Lorsque vous définissez cette option pour autoriser l’accès, tous les appareils sont en mesure d’accéder immédiatement à Exchange sur site.  Les appareils qui appartiennent aux utilisateurs dans les **Groupes inclus** sont bloqués s’ils sont évalués par la suite comme non conforme aux stratégies de conformité ou ne sont pas inscrits auprès d'Intune.
-  - Lorsque vous définissez cette option pour bloquer l’accès, l'accès initial des appareils à Exchange sur site est immédiatement bloqué.  Les appareils qui appartiennent à des utilisateurs des **Groupes inclus** reçoivent un accès une fois que ces appareils sont inscrits auprès d'Intune et déterminés comme conformes. Les appareils Android qui n’exécutent pas Samsung KNOX standard seront toujours bloqués, car ils ne prennent pas en charge ce paramètre.
+  - Lorsque vous définissez cette option pour bloquer l’accès, l'accès initial des appareils à Exchange sur site est immédiatement bloqué.  Les appareils qui appartiennent à des utilisateurs des **Groupes inclus** reçoivent un accès une fois que ces appareils sont inscrits auprès d'Intune et déterminés comme conformes. Les appareils Android qui n’exécutent pas Samsung Knox standard seront toujours bloqués, car ils ne prennent pas en charge ce paramètre.
 <br></br>
 14. Sous **Exceptions de la plateforme d'appareils**, choisissez **Ajouter** pour spécifier les plateformes. Si le paramètre **Accès aux appareils non gérés** est défini sur **Bloqué**, les appareils qui sont inscrits et conformes seront autorisés, même s’il existe une exception de plateforme qui bloque. Choisissez **OK** pour enregistrer les paramètres.
 

@@ -15,21 +15,21 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c793721cad40ea0f1662ae72ed334b98226c96d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: adc61e3d6a8b413ca5a03a2fdbc3d2353226040b
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Paramètres de profil de messagerie pour les appareils Android dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 En tant qu’administrateur Intune, vous pouvez créer et affecter des paramètres de messagerie aux appareils Android suivants :
-- [Android – Samsung KNOX Standard](#android-samsung-knox-standard-email-settings)
+- [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
-## <a name="android-samsung-knox-standard-email-settings"></a>Paramètres de messagerie Android Samsung KNOX Standard
+## <a name="android-samsung-knox-standard-email-settings"></a>Paramètres de messagerie Android Samsung Knox Standard
 - **Serveur de messagerie** : le nom d’hôte de votre serveur Exchange.
 - **Nom du compte** : spécifiez le nom complet du compte de messagerie, tel qu’il apparaît aux utilisateurs sur leurs appareils.
 - **Attribut de nom d’utilisateur d’AAD** : il s’agit de l’attribut dans Active Directory (AD) ou Azure AD utilisé pour générer le nom d’utilisateur de ce profil de messagerie. Sélectionnez **Adresse SMTP principale**, comme user1@contoso.com ou **Nom d’utilisateur principal**, comme user1 ou user1@contoso.com.

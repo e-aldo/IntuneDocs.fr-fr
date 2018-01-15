@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: c96be109a6e73f8a56e0c985f127eeed182a5c4b
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Forum Aux Questions sur la Gestion des applications mobiles (GAM) et la protection des applications
 
@@ -103,17 +103,11 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
   3. **Comment Intune protège-t-il le code PIN contre les attaques en force brute ?** Dans le cadre de la stratégie de code PIN d’application, l’administrateur peut définir un nombre maximal de tentatives d’authentification de son code PIN avant le verrouillage de l’application. Une fois que le nombre de tentatives atteint, le Kit de développement logiciel (SDK) d’application Intune peut réinitialiser les données « d’entreprise » dans l’application.
   
-**Comment le PIN de l’application Intune fonctionne-t-il entre un code numérique et un code secret ?**
-GAM prend actuellement en charge les PIN au niveau de l’application (iOS) avec des caractères alphanumériques et spéciaux (appelés « code secret ») qui nécessitent l’implication d’applications (ex. WXP, Outlook, Managed Browser, Yammer) pour intégrer le kit SDK d’application Intune pour iOS. Sans cela, les paramètres de code secret ne sont pas appliqués correctement pour les applications ciblées. Étant donné que les applications suivront cette intégration de manière progressive, le comportement entre le code secret et le code numérique est temporairement modifié pour l’utilisateur final et nécessite un éclaircissement important. Pour la version d’Intune d’octobre 2017, le comportement est le suivant :
+  4. **Pourquoi dois-je définir un code PIN à deux reprises dans des applications provenant du même éditeur ?**
+GAM (sous iOS) prend actuellement en charge les codes PIN au niveau de l’application avec des caractères alphanumériques et spéciaux (appelés « code secret ») qui nécessitent l’implication d’applications (ex. WXP, Outlook, Managed Browser, Yammer) pour intégrer le kit SDK d’application Intune pour iOS. Sans cela, les paramètres de code secret ne sont pas appliqués correctement pour les applications ciblées. Il s’agissait d’une fonctionnalité publiée dans le SDK Intune pour iOS version 7.1.12. <br> Pour prendre en charge cette fonctionnalité et garantir la compatibilité descendante avec les versions antérieures du Kit SDK Intune pour iOS, tous les codes PIN (numériques ou codes secrets) à partir de la version 7.1.12 sont gérés séparément du code PIN numérique des versions précédentes du Kit SDK. Par conséquent, si un appareil contient des applications avec le Kit SDK Intune pour des versions iOS antérieures à 7.1.12 et ultérieures à 7.1.12 du même éditeur, deux codes PIN doivent être définis. <br><br> Cela étant dit, les deux codes PIN (pour chaque application) ne sont liés d’aucune manière et doivent respecter la stratégie de protection appliquée à l’application. Par conséquent, *uniquement* si les applications A et B ont les mêmes stratégies de code PIN, l’utilisateur peut définir deux fois le même code PIN. <br><br> Ce comportement est spécifique au code PIN sur les applications iOS activées avec la gestion des applications mobiles Intune. Au fil du temps, à mesure que les applications adoptent les versions ultérieures du Kit SDK Intune pour iOS, définir deux fois un code PIN sur les applications d’un même éditeur pose moins de problèmes. Consultez la remarque ci-dessous pour obtenir un exemple.
 
-Les applications qui ont
-1. le même éditeur d’application
-2. un code secret ciblé via la console et 
-3. adopté le kit SDK avec cette fonctionnalité (v 7.1.12+) pourront partager le code secret entre ces applications. 
-
-Les applications qui ont
-1. le même éditeur d’application
-2. un code numérique ciblé via la console pourront partager le code numérique entre ces applications. 
+>[!NOTE]
+> Par exemple, si l’application A est générée avec une version antérieure à 7.1.12 et que l’application B est générée avec une version supérieure ou égale à 7.1.12 du même éditeur, l’utilisateur final devra définir séparément les codes PIN pour A et B si ces deux apps sont installées sur un appareil iOS. <br> Si une application C avec le Kit SDK version 7.1.9 est installée sur l’appareil, elle utilisera le même code PIN que l’application A. <br> Une application D avec une version 7.1.14 partagera le même code PIN que l’application B. <br> Si seules les applications A et C sont installées sur un appareil, vous devez définir un seul code PIN. Il en va de même si seules les applications B et D sont installées sur un appareil.
 
 **Qu’en est-il du chiffrement ?** Les administrateurs informatiques peuvent déployer une stratégie de protection des applications nécessitant un chiffrement des données d’application. Dans le cadre de la stratégie, l’administrateur informatique peut également spécifier quand le contenu est chiffré.
 
@@ -144,7 +138,7 @@ Les applications qui ont
 
 ## <a name="app-experience-on-ios"></a>Expérience d'application sur iOS
 
-**Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
+ **Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
 
 ### <a name="see-also"></a>Voir aussi
 - [Paramètres de stratégie de gestion des applications mobiles Android dans Microsoft Intune](../deploy-use/android-mam-policy-settings.md)

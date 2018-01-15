@@ -1,7 +1,7 @@
 ---
-title: "Stratégie Intune Autoriser ou bloquer des applications pour Samsung KNOX"
+title: "Stratégie Intune Autoriser ou bloquer des applications pour Samsung Knox"
 titlesuffix: Azure portal
-description: "Créez un profil personnalisé pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard."
+description: "Créez un profil personnalisé pour autoriser et bloquer des applications pour les appareils Samsung Knox Standard."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -15,22 +15,22 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aaa85347dc647658faf981e93d7fb0ea60c9e296
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard dans Microsoft Intune
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung Knox Standard dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Appliquez les procédures de cette rubrique pour créer une stratégie personnalisée Microsoft Intune qui crée l’un des éléments suivants :
 
 - Une liste d’applications qui sont bloquées sur l’appareil. Les applications figurant dans cette liste ne peuvent pas s’exécuter, même si elles étaient déjà installées quand la stratégie a été appliquée.
-- Une liste d’applications que les utilisateurs de l’appareil sont autorisés à installer à partir du magasin Google Play. Seules les applications figurant dans la liste peuvent être installées. Aucune autre application ne peut être installée à partir de ce magasin.
+- Une liste d’applications que les utilisateurs de l’appareil sont autorisés à installer à partir du magasin Google Play. Seules les applications figurant dans la liste peuvent être installées. Aucune autre application ne peut être installée à partir du Store.
 
-Ces paramètres peuvent uniquement être utilisés par les appareils qui exécutent Samsung KNOX Standard.
+Ces paramètres peuvent uniquement être utilisés par les appareils qui exécutent Samsung Knox Standard.
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Créer une liste d’applications autorisées ou bloquées
 

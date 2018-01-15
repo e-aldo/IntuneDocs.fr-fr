@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications iOS pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
@@ -156,7 +156,7 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
   ![Sélectionner un profil d’approvisionnement interne](./media/iOS-provisioning-profile-1.png)
 
-5. Cliquez sur **Continue**(Continuer). Veillez à lier le certificat de signature généré précédemment au profil de configuration.
+5. Cliquez sur **Continuer**. Veillez à lier le certificat de signature généré précédemment au profil de configuration.
 
 6. Suivez les étapes pour télécharger votre profil (avec l’extension .mobileprovision) sur votre ordinateur macOS.
 
@@ -251,7 +251,7 @@ Aidez-vous des informations suivantes pour résoudre les problèmes que vous ren
 ### <a name="error-messages"></a>Messages d'erreur
 Si l’outil de création de package de restrictions d’application échoue, l’un des messages d’erreur suivants s’affiche dans la console :
 
-|Message d'erreur|Plus d'informations|
+|Message d’erreur|Autres informations|
 |-----------------|--------------------|
 |Vous devez spécifier un profil de configuration iOS valide.|Votre profil de configuration n'est peut-être pas valide. Vérifiez que vous avez les autorisations appropriées pour les appareils et que votre profil cible correctement le développement ou la distribution. Votre profil de configuration a peut être aussi expiré.|
 |Spécifiez un nom d'application d'entrée valide.|Assurez-vous que le nom de l'application d'entrée spécifié est correct.|
@@ -295,7 +295,7 @@ Les applications qui ont été encapsulées à l’aide de l’outil de créatio
 
 L’outil de création de package de restrictions d’application pour iOS présente des conditions qui doivent être remplies pour pouvoir bénéficier de toutes les fonctionnalités.
 
-|Situation|Détails|
+|Condition requise|Détails|
 |---------------|-----------|
 |Profil de configuration iOS|Vérifiez que le profil d’approvisionnement est valide avant de l’inclure. L’outil de création de package de restrictions d’application ne vérifie pas si le profil d’approvisionnement a expiré pendant le traitement d’une application iOS. Si vous spécifiez un profil de configuration ayant expiré, l’outil de création de package de restrictions d’application inclut le profil de configuration ayant expiré, et vous ne découvrez le problème qu’une fois que l’installation de l’application a échoué sur un appareil iOS.|
 |Certificat de signature iOS|Vérifiez que le certificat de signature est valide avant de le spécifier. L’outil ne vérifie pas si un certificat a expiré lors du traitement des applications iOS. Si vous fournissez le hachage d'un certificat ayant expiré, l'outil traitera et signera l'application, mais l'installation sur les appareils échouera.<br /><br />Vérifiez que le certificat fourni pour signer l’application encapsulée a une correspondance dans le profil d’approvisionnement. L’outil ne vérifie pas si le profil d’approvisionnement a une correspondance avec le certificat fourni pour signer l’application encapsulée.|
@@ -345,7 +345,7 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des *droits* da
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Résoudre les erreurs courantes liées aux droits
 Si App Wrapping Tool for iOS affiche une erreur de droit, essayez d’exécuter les étapes de dépannage suivantes.
 
-|Problème|Cause|Résolution|
+|Problème|Cause|Solution|
 |---------|---------|--------------|
 |Impossible d’analyser les droits générés à partir de l’application d’entrée.|L’outil de création de package de restrictions d’application ne peut pas lire le fichier de droits qui a été extrait de l’application. Le fichier de droits est peut être incorrect.|Examinez le fichier de droits de votre application. Les instructions suivantes expliquent comment effectuer cette opération. Au moment d’inspecter le fichier de droits, assurez-vous que la syntaxe est correcte. Le fichier doit être au format XML.|
 |Il manque des droits dans le profil de configuration (les droits manquants sont répertoriés). Recréez le package de l’application avec un profil de configuration qui contienne ces droits.|Il y a une incohérence entre les droits activés dans le profil de configuration et les fonctionnalités activées dans l’application. Cette incohérence vaut aussi pour les ID associés à des fonctionnalités particulières (telles que les groupes d’applications et l’accès à un trousseau).|En règle générale, vous pouvez créer un nouveau profil de configuration qui active les mêmes fonctionnalités que l’application. Quand les ID du profil et de l’application ne correspondent pas, l’outil de création de package de restrictions d’application remplace les ID, dans la mesure du possible. Si vous obtenez encore cette erreur après avoir créé un profil de configuration, vous pouvez essayer de supprimer les droits de l’application à l’aide du paramètre –e (voir la section Utilisation du paramètre –e pour supprimer les droits d’accès).|
@@ -392,6 +392,18 @@ Respectez les bonnes pratiques de sécurité et de confidentialité suivantes qu
 -   Les applications iOS qui incluent une boîte de dialogue de chargement de fichier peuvent permettre aux utilisateurs de contourner les restrictions relatives aux opérations couper, copier et coller appliquées à l’application. Par exemple, un utilisateur peut utiliser la boîte de dialogue de téléchargement de fichier pour télécharger une capture d'écran des données de l'application.
 
 -   Quand vous analysez le dossier de documents sur votre appareil depuis une application encapsulée, vous risquez de voir un dossier nommé .msftintuneapplauncher. Si vous modifiez ou supprimez ce fichier, cela peut affecter le bon fonctionnement des applications restreintes.
+
+## <a name="getting-logs-for-your-wrapped-applications"></a>Obtention des journaux pour vos applications encapsulées
+Procédez comme suit pour obtenir des journaux pour vos applications encapsulées pendant le dépannage.
+
+1. Accédez à l’app Réglages iOS sur votre appareil et sélectionnez votre application métier.
+2. Basculez la **console Diagnostics** sur **On**.
+3. Lancez votre application métier.
+4. Cliquez sur le lien « Get Started » (Démarrer).
+5. Vous pouvez maintenant partager des journaux par e-mail ou en les copiant dans un emplacement OneDrive.
+
+>[!NOTE]
+La fonctionnalité de journalisation est activée pour les applications qui ont été encapsulées avec Intune App Wrapping Tool version 7.1.13 ou ultérieure.
 
 ### <a name="see-also"></a>Voir aussi
 - [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

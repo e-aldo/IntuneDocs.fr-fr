@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 849c5c45429394e92b993a57c1e2345b20f78f0a
+ms.sourcegitcommit: 95a0553531133f8d926afbecd0aaf91f64a63162
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Général
--   **Capture d’écran (mobile uniquement)** - Autorise l’utilisateur à capturer le contenu de l’écran d’appareil en tant qu’image.
--   **Copier et coller (mobile uniquement)** - Autorise les actions copier-coller entre les applications sur l’appareil.
--   **Inscription manuelle** - Permet à l’utilisateur de supprimer manuellement le compte d’espace de travail de l’appareil.
--   **Installation manuelle du certificat racine (mobile uniquement)** -Empêche l’utilisateur d’installer manuellement les certificats racines et les certificats CAP intermédiaires.
--   **Envoi des données de diagnostic** - Les valeurs possibles sont les suivantes :
+- **Capture d’écran (mobile uniquement)** - Autorise l’utilisateur à capturer le contenu de l’écran d’appareil en tant qu’image.
+- **Copier et coller (mobile uniquement)** - Autorise les actions copier-coller entre les applications sur l’appareil.
+- **Inscription manuelle** - Permet à l’utilisateur de supprimer manuellement le compte d’espace de travail de l’appareil.
+- **Installation manuelle du certificat racine (mobile uniquement)** -Empêche l’utilisateur d’installer manuellement les certificats racines et les certificats CAP intermédiaires.
+- **Envoi des données de diagnostic** - Les valeurs possibles sont les suivantes :
     - **Aucun** - Aucune donnée n’est envoyée à Microsoft
     - **Basique** - Une quantité limitée d’informations est envoyée à Microsoft
     - **Amélioré** - Des données de diagnostic avancées sont envoyées à Microsoft
     - **Complète** - Envoie les mêmes données que Amélioré, ainsi que des données supplémentaires sur l'état de l’appareil
--   **Appareil photo** - Autorise ou bloque l’utilisation de l’appareil photo sur l’appareil.
--   **Synchronisation des fichiers OneDrive** -Empêche l’appareil de synchroniser des fichiers avec OneDrive.
--   **Stockage amovible** - Spécifie si des appareils de stockage externe comme une carte SD peuvent être utilisés avec l’appareil.
--   **Géolocalisation** - Spécifie si l’appareil peut utiliser les informations des services d’emplacement.
--   **Partage Internet** - Autorise l’utilisation du partage de connexion Internet sur l’appareil.
--   **Réinitialisation du téléphone** - Détermine si l’utilisateur peut rétablir les paramètres d’usine de son appareil.
--   **Connexion USB (mobile uniquement)** - Détermine si les appareils peuvent accéder à des appareils de stockage externe par le biais d’une connexion USB.
--   **Mode antivol (mobile uniquement)** - Détermine si le mode antivol Windows est activé.
--   **Cortana** - Active ou désactive l’assistant vocal Cortana.
--   **Enregistrement vocal (mobile uniquement)** - Autorise ou bloque l’utilisation de l’enregistreur vocal de l’appareil.
--   **Modification du nom de l’appareil** - Empêche l’utilisateur final de modifier le nom de l’appareil (Windows 10 Mobile uniquement).
--   **Ajouter des packages de configuration** - Bloque l’agent de configuration du runtime qui installe les packages de configuration.
--   **Supprimer les packages de configuration** - Bloque l’agent de configuration du runtime qui supprime les packages de configuration.
--   **Découverte d’appareil** - Empêche un appareil d’être détecté par d’autres appareils.
--   **Sélecteur de tâches (mobile uniquement)** - Bloque le sélecteur de tâches sur l’appareil.
--   **Boîte de dialogue d’erreur de carte SIM (mobile uniquement)** - Empêche un message d’erreur de s’afficher sur l’appareil si aucune carte SIM n’est détectée.
+- **Appareil photo** - Autorise ou bloque l’utilisation de l’appareil photo sur l’appareil.
+- **Synchronisation des fichiers OneDrive** -Empêche l’appareil de synchroniser des fichiers avec OneDrive.
+- **Stockage amovible** - Spécifie si des appareils de stockage externe comme une carte SD peuvent être utilisés avec l’appareil.
+- **Géolocalisation** - Spécifie si l’appareil peut utiliser les informations des services d’emplacement.
+- **Partage Internet** - Autorise l’utilisation du partage de connexion Internet sur l’appareil.
+- **Réinitialisation du téléphone** - Détermine si l’utilisateur peut rétablir les paramètres d’usine de son appareil.
+- **Connexion USB (mobile uniquement)** - Détermine si les appareils peuvent accéder à des appareils de stockage externe par le biais d’une connexion USB.
+- **Mode antivol (mobile uniquement)** - Détermine si le mode antivol Windows est activé.
+- **Cortana** - Active ou désactive l’assistant vocal Cortana.
+- **Enregistrement vocal (mobile uniquement)** - Autorise ou bloque l’utilisation de l’enregistreur vocal de l’appareil.
+- **Modification du nom de l’appareil** - Empêche l’utilisateur final de modifier le nom de l’appareil (Windows 10 Mobile uniquement).
+- **Ajouter des packages de configuration** - Bloque l’agent de configuration du runtime qui installe les packages de configuration.
+- **Supprimer les packages de configuration** - Bloque l’agent de configuration du runtime qui supprime les packages de configuration.
+- **Découverte d’appareil** - Empêche un appareil d’être détecté par d’autres appareils.
+- **Sélecteur de tâches (mobile uniquement)** - Bloque le sélecteur de tâches sur l’appareil.
+- **Boîte de dialogue d’erreur de carte SIM (mobile uniquement)** - Empêche un message d’erreur de s’afficher sur l’appareil si aucune carte SIM n’est détectée.
+<!--- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. -->
 
 
 ## <a name="password"></a>Mot de passe
@@ -68,19 +68,68 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 
 ## <a name="personalization"></a>Personalization
 
--   **URL de l’image d’arrière-plan du poste de travail (Desktop uniquement)** - Spécifie l’URL d’une image au format JPEG, JPG ou PNG que vous souhaitez utiliser comme papier peint du Bureau Windows. Les utilisateurs ne peuvent pas modifier ce paramètre.
+- **URL de l’image d’arrière-plan du poste de travail (Desktop uniquement)** - Spécifie l’URL d’une image au format JPEG, JPG ou PNG que vous souhaitez utiliser comme papier peint du Bureau Windows. Les utilisateurs ne peuvent pas modifier cette option.
 
 ## <a name="privacy"></a>Confidentialité
 
 -   **Personnalisation des entrées** – Ne pas autoriser l’utilisation des services cloud de reconnaissance vocale pour les applications du Microsoft Store, la dictée ou Cortana. Si vous autorisez ces services, Microsoft peut collecter des données vocales pour améliorer le service.
 -   **Acceptation automatique des invites de consentement de l’utilisateur pour le couplage et la confidentialité** – Autoriser Windows à accepter automatiquement les messages de consentement de couplage et de confidentialité lors de l’exécution des applications.
 
+Vous pouvez définir les informations auxquelles toutes les applications sur l’appareil peuvent accéder. Vous pouvez définir des exceptions pour chaque application à l’aide de l’option **Exceptions de confidentialité par application**.
+
+### <a name="exceptions"></a>Exceptions
+
+- **Informations de compte** - Définir si cette application peut accéder au nom, à la photo et à d'autres informations de contact de l'utilisateur.
+- **Applications en arrière-plan** - Définir si cette application peut s'exécuter en arrière-plan.
+- **Calendrier** - Définir si cette application peut accéder au calendrier.
+- **Historique des appels** - Définir si cette application peut accéder à l'historique de mes appels.
+- **Appareil photo** - Définir si cette application peut accéder à l'appareil photo.
+- **Contacts** - Définir si cette application peut accéder aux contacts.
+- **Courrier électronique** - Définir si cette application peut accéder aux e-mails et en envoyer.
+- **Emplacement** - Définir si cette application peut accéder aux informations de localisation.
+- **Messages** - Définir si cette application peut lire ou envoyer des SMS ou MMS.
+- **Microphone** - Définir si cette application peut utiliser le microphone.
+- **Mouvement** - Définir si cette application peut accéder aux informations de mouvement de l'appareil.
+- **Notifications** - Définir si cette application peut accéder aux notifications.
+- **Téléphone** - Définir si cette application peut accéder au téléphone.
+- **Radios** - Certaines applications utilisent des signaux radio, comme Bluetooth, dans votre appareil pour envoyer et recevoir des données, et doivent activer et désactiver ces signaux radio. Définissez si cette application peut contrôler ces signaux radio.
+- **Tâches** - Définir si cette application peut accéder à vos tâches.
+- **Appareils approuvés** - Définir si cette application peut utiliser des appareils approuvés (matériel auquel vous vous êtes déjà connecté ou fourni avec ce PC, cette tablette ou ce téléphone), par exemple, des téléviseurs, des projecteurs, etc.
+- **Commentaires et diagnostics** - Définir si cette application peut accéder aux informations de diagnostic.
+- **Synchroniser avec les appareils** - Définir si cette application peut automatiquement partager et synchroniser des informations avec des appareils sans fil qui ne sont pas explicitement jumelés avec ce PC, cette tablette ou ce téléphone.
+
+## <a name="per-app-privacy-exceptions"></a>Exceptions de confidentialité par application
+
+Vous pouvez ajouter des applications qui doivent avoir un comportement de confidentialité différent de celui défini dans « Confidentialité par défaut ».
+
+- **Nom du package** : nom de famille du package d'application.
+- **Nom de l’application**  : nom de l’application.
+
+### <a name="exceptions"></a>Exceptions
+
+- **Informations de compte** - Définir si cette application peut accéder au nom, à la photo et à d'autres informations de contact de l'utilisateur.
+- **Applications en arrière-plan** - Définir si cette application peut s'exécuter en arrière-plan.
+- **Calendrier** - Définir si cette application peut accéder au calendrier.
+- **Historique des appels** - Définir si cette application peut accéder à l'historique de mes appels.
+- **Appareil photo** - Définir si cette application peut accéder à l'appareil photo.
+- **Contacts** - Définir si cette application peut accéder aux contacts.
+- **Courrier électronique** - Définir si cette application peut accéder aux e-mails et en envoyer.
+- **Emplacement** - Définir si cette application peut accéder aux informations de localisation.
+- **Messages** - Définir si cette application peut lire ou envoyer des SMS ou MMS.
+- **Microphone** - Définir si cette application peut utiliser le microphone.
+- **Mouvement** - Définir si cette application peut accéder aux informations de mouvement de l'appareil.
+- **Notifications** - Définir si cette application peut accéder aux notifications.
+- **Téléphone** - Définir si cette application peut accéder au téléphone.
+- **Radios** - Certaines applications utilisent des signaux radio, comme Bluetooth, dans votre appareil pour envoyer et recevoir des données, et doivent activer et désactiver ces signaux radio. Définissez si cette application peut contrôler ces signaux radio.
+- **Tâches** - Définir si cette application peut accéder à vos tâches.
+- **Appareils approuvés** - Définir si cette application peut utiliser des appareils approuvés (matériel auquel vous vous êtes déjà connecté ou fourni avec ce PC, cette tablette ou ce téléphone), par exemple, des téléviseurs, des projecteurs, etc.
+- **Commentaires et diagnostics** - Définir si cette application peut accéder aux informations de diagnostic.
+- **Synchroniser avec les appareils** - Définir si cette application peut automatiquement partager et synchroniser des informations avec des appareils sans fil qui ne sont pas explicitement jumelés avec ce PC, cette tablette ou ce téléphone.
 
 ## <a name="locked-screen-experience"></a>Expérience d’écran de verrouillage
 
-
--   **Notifications du centre de notifications (mobile uniquement)** - Active les notifications du Centre de notifications sur l’écran de verrouillage de l’appareil (Windows 10 Mobile uniquement).
--   **URL de l'image de l'écran verrouillé (Desktop uniquement)** - Spécifie l’URL d’une image au format JPEG, JPG ou PNG qui sera utilisée comme papier peint de l’écran de verrouillage Windows. Les utilisateurs ne peuvent pas modifier ce paramètre.
+- **Notifications du centre de notifications (mobile uniquement)** - Active les notifications du Centre de notifications sur l’écran de verrouillage de l’appareil (Windows 10 Mobile uniquement).
+- **URL de l'image de l'écran verrouillé (Desktop uniquement)** - Spécifie l’URL d’une image au format JPEG, JPG ou PNG qui sera utilisée comme papier peint de l’écran de verrouillage Windows. Les utilisateurs ne peuvent pas modifier cette option.
 -   **Délai d’expiration de l’écran configurable par l’utilisateur (mobile uniquement)** – Permet aux utilisateurs de configurer la durée 
 -   **Cortana sur écran verrouillé (poste de travail uniquement)** – Ne pas autoriser l’utilisateur à interagir avec Cortana quand l’appareil est sur l’écran de verrouillage (Windows 10 Desktop uniquement).
 -   **Notifications toast sur écran verrouillé** – Bloquer l’affichage des messages d’alerte sur l’écran de verrouillage de l’appareil.
@@ -125,17 +174,17 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
     -   **URL de la première exécution** – Spécifie l’URL d’une page qui s’affiche la première fois qu’un utilisateur exécute Edge (Windows 10 Mobile uniquement).
 -   **Pages d’accueil** - Ajoute une liste de sites que vous souhaitez utiliser comme pages d’accueil dans le navigateur Edge (poste de travail uniquement).
 -   **Changement des pages de démarrage** – Permet aux utilisateurs de changer les pages de démarrage affichées quand Edge est ouvert. Utilisez le paramètre Pages d’accueil pour créer la page, ou liste de pages, qui est ouverte quand Edge démarre.
--   **Bloquer l'accès aux indicateurs about** - Empêche l’utilisateur final d’accéder à la page des indicateurs about: dans Edge, qui contient les paramètres expérimentaux et de développement.
+-   **Bloquer l'accès aux indicateurs about** - Empêcher l’utilisateur final d’accéder à la page des indicateurs about: dans Edge, qui contient les paramètres expérimentaux et de développement.
 -   **Adresse IP localhost WebRTC** - Bloque l’affichage de l’adresse IP localhost des utilisateurs lors d’appels téléphoniques effectués à l’aide du protocole RTC web.
 -   **Moteur de recherche par défaut** - Spécifie le moteur de recherche par défaut à utiliser. Les utilisateurs finaux peuvent modifier cette valeur à tout moment.
 -   **Effacer les données de navigation à la sortie** – Efface l’historique et les données de navigation quand l’utilisateur quitte Edge.
 -   **Collecte de données pour les vignettes dynamiques** – Empêche Windows de collecter des informations sur la vignette dynamique quand les utilisateurs épinglent un site au menu Démarrer à partir d’Edge.
 
-## <a name="edge-browser-smartscreen"></a>SmartScreen du navigateur Edge
+## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 
--   **SmartScreen** - Active ou désactive la fonctionnalité SmartScreen qui bloque les sites web frauduleux.
--   **Ignorer les invites SmartScreen** - Autorise l’utilisateur final à ignorer les avertissements du filtre SmartScreen sur les sites web potentiellement malveillants.
--   **Annuler les invites SmartScreen concernant les fichiers** - Autorise l’utilisateur final à ignorer les avertissements du filtre SmartScreen sur le téléchargement de fichiers potentiellement malveillants.
+- **SmartScreen pour Microsoft Edge** - Activer Edge SmartScreen pour accéder au site et aux téléchargements de fichiers.
+- **Accès à un site malveillant** - Empêcher les utilisateurs d'ignorer les avertissements concernant le filtre Windows Defender SmartScreen et d’accéder au site.
+- **Téléchargement des fichiers non vérifiés** - Empêcher les utilisateurs d'ignorer les avertissements concernant le filtre Windows Defender SmartScreen et de télécharger des fichiers non vérifiés.
 
 ## <a name="search"></a>Recherche
 - **Recherche sécurisée (appareils mobiles uniquement)** - Contrôle la manière dont Cortana filtre les contenus pour adultes dans les résultats de la recherche. Vous pouvez sélectionner **Strict** ou **Modéré**, ou encore autoriser l’utilisateur à choisir ses propres paramètres.
@@ -182,9 +231,30 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
     -   **Confidentialité** - Bloque l’accès à la zone de confidentialité de l’application Paramètres.
     -   **Mise à jour et sécurité** - Bloque l’accès à la zone des mises à jour et de la sécurité dans l’application des paramètres.
 
-## <a name="kiosk"></a>Kiosk
+## <a name="start"></a>Démarrer
 
--   **Mode plein écran** - Identifie le type de [mode plein écran](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) pris en charge par la stratégie.  Les options sont les suivantes :
+- **Désépingler les applications de la barre des tâches** - Empêche l’utilisateur de désépingler des applications à partir du menu Démarrer.
+- **Documents sur Démarrer** - Permet de masquer ou d’afficher le dossier Documents dans le menu Démarrer de Windows.
+- **Téléchargements sur Démarrer** - Permet de masquer ou d’afficher le dossier Téléchargements dans le menu Démarrer de Windows.
+- **Explorateur de fichiers sur Démarrer** - Permet de masquer ou d’afficher l’application Explorateur de fichiers dans le menu Démarrer de Windows.
+- **Groupe résidentiel sur Démarrer** - Permet de masquer ou d’afficher le dossier Groupe résidentiel dans le menu Démarrer de Windows.
+- **Musique sur Démarrer** - Permet de masquer ou d’afficher le dossier Musique dans le menu Démarrer de Windows.
+- **Réseau sur Démarrer** - Permet de masquer ou d’afficher le dossier Réseau dans le menu Démarrer de Windows.
+- **Dossier Personnel sur Démarrer** - Permet de masquer ou d’afficher le dossier Personnel dans le menu Démarrer de Windows.
+- **Images sur Démarrer** - Permet de masquer ou d’afficher le dossier Images dans le menu Démarrer de Windows.
+- **Paramètres sur Démarrer** - Permet de masquer ou d’afficher le dossier Paramètres dans le menu Démarrer de Windows.
+- **Vidéos sur Démarrer** - Permet de masquer ou d’afficher le dossier Vidéos dans le menu Démarrer de Windows.
+
+## <a name="display"></a>Afficher
+
+- **Activer la mise à l'échelle GDI pour des applications**
+- **Désactiver la mise à l'échelle GDI pour des applications**
+
+  La mise à l'échelle DPI GDI permet aux applications sans prise en charge DPI de bénéficier d'une prise en charge DPI par moniteur. Spécifiez les applications héritées dont la mise à l'échelle DPI GDI a été activée. Si la mise à l'échelle DPI GDI est configurée pour s'activer et se désactiver sur une application, la mise à l'échelle est désactivée pour l'application.
+
+## <a name="kiosk-preview"></a>Kiosk (préversion)
+
+-   **Mode plein écran** - Identifie le type de [mode plein écran](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) pris en charge par la stratégie. Les options disponibles sont les suivantes :
 
       - **Non configuré** (par défaut) : la stratégie n’active pas de mode plein écran. 
       - **Application unique plein écran** : le profil active l’appareil en tant qu’application unique plein écran.
@@ -192,13 +262,13 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 
     Les applications uniques plein écran nécessitent les paramètres suivants :
 
-      - **Compte d’utilisateur** : spécifie le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran.  Pour les comptes liés à des domaines Azure AD, spécifiez le compte au format `domain\\username@tenant.org`.
+      - **Compte d’utilisateur** : spécifie le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran. Pour les comptes liés à des domaines Azure AD, spécifiez le compte au format `domain\\username@tenant.org`.
 
          Pour les appareils qui sont dans des environnements publics, utilisez des comptes avec des privilèges minimaux afin d’empêcher les activités autorisées.  
 
-      - **Identifiant AUMID de l’application** : spécifie l’identifiant AUMID de l’application plein écran.  Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
+      - **Identifiant AUMID de l’application** : spécifie l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
 
-    Les applications multiples plein écran nécessitent une configuration plein écran.  Utilisez le bouton **Ajouter** pour créer une configuration plein écran ou sélectionnez-en une existante.
+    Les applications multiples plein écran nécessitent une configuration plein écran. Utilisez le bouton **Ajouter** pour créer une configuration plein écran ou sélectionnez-en une existante.
 
     Les configurations des applications multiples plein écran incluent les paramètres suivants :
 
@@ -208,9 +278,9 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 
         - **Type d’application** qui spécifie le type de l’application plein écran.  Les valeurs prises en charge sont :   
 
-            - **Application Win32** : application de bureau traditionnelle.  (Vous aurez besoin du chemin qualifié complet de l’exécutable, en ce qui concerne l’appareil.)
+            - **Application Win32** : application de bureau traditionnelle. (Vous avez besoin du chemin qualifié complet de l’exécutable, en ce qui concerne l’appareil.)
 
-            - **Application UWP** : application Windows universelle.  Vous aurez besoin de [l’identifiant AUMID de l’application](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **Application UWP** : application Windows universelle. Vous avez besoin de [l’identifiant AUMID de l’application](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
         - **Identificateur de l’application** : spécifie le chemin qualifié complet du fichier exécutable (applications Win32) ou [l’identifiant AUMID de l’application](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (applications UWP).
 
@@ -218,9 +288,9 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 
     - **Disposition du menu Démarrer** : spécifie un fichier XML qui décrit comment les applications [apparaissent dans le menu Démarrer](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Utilisateurs attribués** : spécifie un ou plusieurs comptes d’utilisateur associés à la configuration plein écran.  Le compte peut être local sur l’appareil, ou il peut s’agir d’une connexion de compte Azure AD associée à l’application plein écran.  Spécifiez les comptes joints à un domaine au format `domain\\username@tenant.org`.
+    - **Utilisateurs attribués** : spécifie un ou plusieurs comptes d’utilisateur associés à la configuration plein écran. Le compte peut être local sur l’appareil, ou il peut s’agir d’une connexion de compte Azure AD associée à l’application plein écran. Spécifiez les comptes joints à un domaine au format `domain\\username@tenant.org`.
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Antivirus Windows Defender
 
 -   **Surveillance en temps réel** - Active la recherche en temps réel des logiciels malveillants, logiciels espions et autres logiciels indésirables.
 -   **Analyse du comportement** - Permet à Defender de rechercher certains modèles connus d’activité suspecte sur les appareils.
@@ -256,7 +326,7 @@ Si les fichiers sur le lecteur sont en lecture seule, Defender ne peut pas suppr
 
 
 
-## <a name="defender-exclusions"></a>Exclusions de Defender
+### <a name="windows-defender-antivirus-exclusions"></a>Exclusions de l’antivirus Windows Defender
 
 -   **Fichiers et dossiers à exclure des analyses et de la protection en temps réel** - Ajoute un ou plusieurs fichiers et dossiers comme **C:\Chemin** ou **%ProgramFiles%\Chemin\NomFichier.exe** à la liste des exclusions. Ces fichiers et dossiers ne sont pas inclus dans les analyses en temps réel ou planifiées.
 -   **Extensions de fichier à exclure des analyses et de la protection en temps réel** - Ajoute une ou plusieurs extensions de fichier comme **jpg** ou **txt** à la liste des exclusions. Tous les fichiers avec ces extensions ne sont pas inclus dans les analyses en temps réel ou planifiées.
@@ -294,16 +364,41 @@ Si les fichiers sur le lecteur sont en lecture seule, Defender ne peut pas suppr
 - **Projection sur ce PC** - Empêche les autres appareils de détecter le PC pour la projection.
 - **Exiger un code PIN pour l'appairage** - Exige un code PIN lors de la connexion à un projecteur.
 
-## <a name="start"></a>Démarrer
+## <a name="cloud-printer"></a>Imprimante cloud
 
-- **Désépingler les applications de la barre des tâches** - Empêche l’utilisateur de désépingler des applications à partir du menu Démarrer.
-- **Documents sur Démarrer** - Permet de masquer ou d’afficher le dossier Documents dans le menu Démarrer de Windows.
-- **Téléchargements sur Démarrer** - Permet de masquer ou d’afficher le dossier Téléchargements dans le menu Démarrer de Windows.
-- **Explorateur de fichiers sur Démarrer** - Permet de masquer ou d’afficher l’application Explorateur de fichiers dans le menu Démarrer de Windows.
-- **Groupe résidentiel sur Démarrer** - Permet de masquer ou d’afficher le dossier Groupe résidentiel dans le menu Démarrer de Windows.
-- **Musique sur Démarrer** - Permet de masquer ou d’afficher le dossier Musique dans le menu Démarrer de Windows.
-- **Réseau sur Démarrer** - Permet de masquer ou d’afficher le dossier Réseau dans le menu Démarrer de Windows.
-- **Dossier Personnel sur Démarrer** - Permet de masquer ou d’afficher le dossier Personnel dans le menu Démarrer de Windows.
-- **Images sur Démarrer** - Permet de masquer ou d’afficher le dossier Images dans le menu Démarrer de Windows.
-- **Paramètres sur Démarrer** - Permet de masquer ou d’afficher le dossier Paramètres dans le menu Démarrer de Windows.
-- **Vidéos sur Démarrer** - Permet de masquer ou d’afficher le dossier Vidéos dans le menu Démarrer de Windows.
+- **URL de découverte d'imprimantes** - Point de terminaison pour la découverte des imprimantes cloud.
+- **URL d'autorisation d'accès à l'imprimante** : point de terminaison d'authentification pour acquérir des jetons OAuth.
+- **GUID de l'application cliente native Azure** : GUID identifiant l'application cliente autorisée à récupérer des jetons OAuth à partir d'OAuthAuthority.
+- **URI de ressource du service d’impression** -URI de ressource OAuth pour le service d'impression tel que configuré dans le portail Azure.
+- **Nombre maximal d'imprimantes à interroger (Mobile uniquement)** - Nombre maximal d'imprimantes à interroger à partir d'un point de terminaison de découverte.
+- **URI de ressource du service de découverte d’imprimantes** - 	URI de ressource OAuth pour le service de découverte d'imprimantes tel que configuré dans le portail Azure.
+
+## <a name="reporting-and-telemetry"></a>Création de rapports et les données de télémétrie
+
+- **Partager les données d’utilisation** - Sélectionner le niveau d'envoi des données de diagnostic.
+- **Serveur proxy de télémétrie**
+
+  Spécifiez le nom de domaine complet (FQDN) ou l'adresse IP d'un serveur proxy pour transférer les demandes Expériences des utilisateurs connectés et télémétrie à l'aide d'une connexion SSL (Secure Sockets Layer). Le format de ce paramètre est *serveur*:*port*. En cas d'échec du proxy nommé ou si aucun proxy n'est spécifié à l'activation de cette stratégie, les données Expériences des utilisateurs connectés et télémétrie ne sont pas transmises et restent sur l'appareil local.
+
+   Exemples de formats :
+
+   IPv4 : 192.246.246.106:100<br>
+ IPv6 : [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> Nom de domaine complet : www.contoso.com:345
+
+## <a name="messaging"></a>Messagerie
+
+- **Synchronisation des messages (mobile uniquement)** - Désactiver Messages sur tous les appareils et sauvegarder/restaurer les SMS.
+- **MMS (mobile uniquement)** - Désactiver la fonctionnalité d'envoi/de réception de MMS sur l'appareil.
+- **RCS (mobile uniquement)** - Désactiver la fonctionnalité d'envoi/de réception de RCS (Rich Communication Services) sur l'appareil.
+
+
+
+
+
+
+
+
+
+
+
+
