@@ -50,7 +50,7 @@
       href: get-started-groups.md
     - name: Affecter des stratégies
       href: get-started-policies.md
-    - name: Inscrire des périphériques
+    - name: Inscrire des appareils
       href: get-started-enroll.md
     - name: Attribuer des applications
       href: get-started-apps.md
@@ -136,13 +136,13 @@
           href: licenses-assign.md
         - name: "Configurer l’autorité\_MDM"
           href: mdm-authority-set.md
-    - name: Inscrire des périphériques
+    - name: Inscrire des appareils
       href: device-enrollment.md
       items:
         - name: Options d’inscription
           href: enrollment-options.md
           items:
-            - name: Terms and conditions
+            - name: Conditions générales
               href: terms-and-conditions-create.md
             - name: Restrictions
               href: enrollment-restrictions-set.md
@@ -152,7 +152,7 @@
               href: corporate-identifiers-add.md
             - name: Authentification multifacteur
               href: multi-factor-authentication.md
-            - name: Gestionnaire d'inscription d'appareil
+            - name: Gestionnaire d'inscription d'appareils
               href: device-enrollment-manager-enroll.md
             - name: Mapper des appareils à des groupes
               href: device-group-mapping.md
@@ -177,7 +177,7 @@
               href: apple-configurator-enroll-ios.md
         - name: Configurer l’inscription macOS
           href: macos-enroll.md
-    - name: Gérer des périphériques
+    - name: Gérer des unités
       href: device-management.md
       items:
         - name: Contourner le verrou d’activation
@@ -299,11 +299,11 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: Windows 8.1
+            - name: "Windows\_8.1"
               href: device-restrictions-windows-8-1.md
-            - name: "Windows\_Phone\_8.1"
+            - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
-            - name: Windows 10
+            - name: "Windows\_10"
               href: device-restrictions-windows-10.md
             - name: "Windows\_10 Collaboration"
               href: device-restrictions-windows-10-teams.md
@@ -316,9 +316,9 @@
               href: email-settings-android.md
             - name: iOS
               href: email-settings-ios.md
-            - name: "Windows\_Phone\_8.1"
+            - name: Windows Phone 8.1
               href: email-settings-windows-phone-8-1.md
-            - name: Windows 10
+            - name: "Windows\_10"
               href: email-settings-windows-10.md
         - name: "Configurer les paramètres\_VPN"
           href: vpn-settings-configure.md
@@ -331,11 +331,11 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: Windows 8.1
+            - name: "Windows\_8.1"
               href: vpn-settings-windows-8-1.md
-            - name: "Windows\_Phone\_8.1"
+            - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
-            - name: Windows 10
+            - name: "Windows\_10"
               href: vpn-settings-windows-10.md
         - name: "Configurer les paramètres\_Wi-Fi"
           href: wi-fi-settings-configure.md
@@ -527,7 +527,7 @@
             - name: Pare-feu Windows
               href: /intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune
               maintainContext: true
-            - name: Endpoint Protection de
+            - name: Endpoint Protection
               href: /intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
               maintainContext: true
         - name: Ajouter des applications pour les PC clients Intune
@@ -587,9 +587,9 @@
           href: custom-settings-ios.md
         - name: macOS
           href: custom-settings-macos.md
-        - name: "Windows\_Phone\_8.1"
+        - name: Windows Phone 8.1
           href: custom-settings-windows-phone-8-1.md
-        - name: Windows 10
+        - name: "Windows\_10"
           href: custom-settings-windows-10.md
         - name: Android for Work
           href: custom-settings-android-for-work.md
@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: Informations de référence sur l’entité User
               href: reports-ref-user.md
-    - name: Charger une version test d'applications Windows
+    - name: API Graph Intune
       href: intune-graph-apis.md
       items:
         - name: API Graph pour référence Intune
