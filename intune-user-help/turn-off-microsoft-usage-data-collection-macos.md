@@ -16,13 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bb39ff625034c00f70d5e7f28a7982fc1f40d0f2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 726c3d052b62dbcab82f75cc82ce39b72bcbef94
+ms.sourcegitcommit: 4401890db054657954a8b3947de1f4308f4da170
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
-## <a name="how-to-turn-off-microsoft-data-collection"></a>Guide pratique pour désactiver la collecte de données Microsoft
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Guide pratique pour désactiver la collecte de données Microsoft
 
 Microsoft collecte automatiquement certaines données sur nos produits et services. Nous faisons cela pour améliorer la fiabilité et les performances de nos produits, notamment l’application Portail d’entreprise. Bien que ces données soient anonymes, certains utilisateurs peuvent porter un regard négatif sur cette collecte. Le support technique de votre entreprise n’a pas le contrôle de la collecte des données et ne peut pas changer votre sélection pour ce paramètre.
 

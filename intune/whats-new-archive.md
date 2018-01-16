@@ -7,7 +7,7 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 ms.date: 10/19/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5d9db412a548e6e1f4b574467e002a3ed2fcace
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 4564155c2fb94ac2726d002b3ea5eb09916eff10
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Nouveautés de la préversion de Microsoft Intune - mois précédents
 
@@ -468,7 +468,7 @@ Deux nouveaux paramètres d’application sont désormais disponibles pour vous 
 
   Liste des services d’emplacement de stockage pris en charge :
 
-  - OneDrive
+  - OneDrive Entreprise
   - SharePoint Online
   - Stockage local
 

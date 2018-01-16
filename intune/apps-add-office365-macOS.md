@@ -15,16 +15,13 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5613997340867dda6def6a9a0a308b1ef0b618b5
-ms.sourcegitcommit: 138df6f793d2dc718041346b90c367c0181990da
+ms.openlocfilehash: 5e0ad0b99a2c8a602b5e542530a1d437065461b2
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>Guide pratique pour affecter Office 365 à des appareils macOS avec Microsoft Intune
-
->[!Note]
-> Un problème connu affecte cette fonctionnalité. Pour plus d’informations, consultez [Problèmes connus dans Microsoft Intune](/intune/known-issues#apps).
 
 Ce type d’application vous permet d’affecter facilement des applications Office 365 à des appareils macOS. Ce nouveau type d’application vous permet d’installer Word, Excel, PowerPoint, Outlook et OneNote. Ces applications bénéficient également de Microsoft AutoUpdate (MAU) qui garantit que les applications sont sécurisées et à jour. Les applications souhaitées apparaissent sous la forme d’une application unique dans la liste des applications de la console Intune.
 
@@ -36,7 +33,7 @@ Ce type d’application vous permet d’affecter facilement des applications Off
 - Si des applications Office sont ouvertes au moment où Intune installe la suite d’applications, les utilisateurs finaux risquent de perdre les données contenues dans des fichiers non enregistrés.
 
 
-## <a name="get-started"></a>Prendre en main
+## <a name="get-started"></a>Prise en main
 Ajoutez Office 365 à l’aide du panneau **Apps**.
 1.  Connectez-vous au portail Azure.
 2.  Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.

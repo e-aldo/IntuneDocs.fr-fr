@@ -6,7 +6,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 12/12/2016
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f543996bf573aef9dd606ae403185da65a3599d2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 59bbc6d9a4170b504e3a5bb3dfe688332a0063f2
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Fonctionnalités de gestion des appareils inscrits de Microsoft Intune
 
@@ -43,7 +43,7 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 ## <a name="app-management"></a>Gestion d'applications
 
-|Fonctionnalité|Détails|Plus d'informations|
+|Fonctionnalité|Détails|Plus d’informations|
 |--------------|-----------|--------------------|
 |Déploiement et gestion d'applications|Fournit une gamme d'outils pour vous aider à gérer les applications mobiles tout au long de leur cycle de vie, notamment le déploiement d'applications à partir de fichiers d'installation ou de magasins d'applications, l'analyse détaillée de l'état des applications et la suppression d'applications.|[Déploiement d’applications dans Microsoft Intune](/intune-classic/deploy-use/deploy-apps)|
 |Applications conformes et non conformes|Vous permet de spécifier des listes d’applications conformes (que les utilisateurs sont autorisés à installer) et non conformes (que les utilisateurs ne sont pas autorisés à installer).|[Paramètres de la stratégie d’iOS dans Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
@@ -56,7 +56,7 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 ## <a name="company-resource-access"></a>Accès aux ressources d'entreprise
 
-|Fonctionnalité|Détails|Plus d'informations|
+|Fonctionnalité|Détails|Plus d’informations|
 |--------------|-----------|--------------------|
 |Profils de certificat|Crée et déploie des profils de certificat approuvés et des certificats SCEP (Simple Certificate Enrollment Protocol) qui peuvent être utilisés pour sécuriser et authentifier des profils Wi-Fi, VPN et de messagerie.|[Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
 |Profils Wi-Fi|Déploie des paramètres de réseau sans fil sur vos utilisateurs. En déployant ces paramètres, vous réduisez l’effort que doit fournir l’utilisateur pour se connecter au réseau d’entreprise.|[Connexions Wi-Fi dans Microsoft Intune](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)|
@@ -66,6 +66,6 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 ## <a name="inventory-and-reporting"></a>Inventaire et rapports
 
-|Fonctionnalité|Détails|Plus d'informations|
+|Fonctionnalité|Détails|Plus d’informations|
 |--------------|-----------|--------------------|
 |Inventaire et rapports|Recherche des informations sur les appareils que vous gérez et sur les logiciels utilisés par les appareils.|[Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|

@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 40d0ddf78ed181dfc712bbaeee9499e3c56753ca
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 1612f5af24bd4c96aced4e3a6f1572a4c49d9913
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Préparer les applications métier aux stratégies de protection des applications
 
@@ -78,7 +78,7 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 > [!NOTE]
 > Vous pouvez utiliser l’outil de création de package de restrictions d’application avec Intune autonome ou Intune avec Configuration Manager.
 
-|Fonctionnalité|Kit SDK d’application|Outil de création de package de restrictions d’application|
+|Composant|Kit SDK d’application|Outil de création de package de restrictions d’application|
 |-----------|---------------------|-----------|
 |Afficher le contenu web uniquement dans Managed Browser|X|X|
 |Empêcher les sauvegardes Android, iTunes ou iCloud|X|X|

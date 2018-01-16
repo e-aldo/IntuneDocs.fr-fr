@@ -7,7 +7,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
-ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
+ms.openlocfilehash: c4210d77e52abba07454d8606ba7715c03078ca6
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problèmes connus dans Microsoft Intune
 
@@ -55,8 +55,6 @@ Les applications iOS achetées en volume sont affichées et peuvent être affect
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Plusieurs copies du même programme d’achat en volume iOS sont chargées
 Ne cliquez pas à plusieurs reprises sur le bouton **Charger** pour le même jeton VPP, sinon des jetons VPP en double seraient chargés et les applications seraient synchronisées plusieurs fois pour le même jeton VPP.
 
-### <a name="assigning-office-365-to-macos-devices"></a>Affectation d’Office 365 à des appareils macOS
-La fonctionnalité permettant d’affecter Office 365 à des appareils macOS avec Microsoft Intune sera disponible une fois la mise à jour de l’interface utilisateur terminée.
 
 <!-- ## Groups -->
 
