@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd4cedd20f427966dc3cfb7c2748f57b4d0746ab
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 9589231878ddfe80ce0b259f8f4e3a439f55535d
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Plug-in Cordova du SDK d’application Microsoft Intune
 
@@ -45,7 +45,7 @@ Comme vous pourrez le constater, il est possible d’activer des fonctionnalité
 
 Les applications Cordova développées avec le plug-in Cordova du SDK d’application Intune peuvent maintenant recevoir des stratégies de protection des applications Intune sur des appareils inscrits et non inscrits à la gestion des appareils mobiles (MDM) Intune.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 ### <a name="android"></a>Android
 

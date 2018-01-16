@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae53ced489542ba7e675e547740f1858d761c7ab
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: c5645e337e34c6310c82a76d537fe6539e04e71e
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Composant Xamarin du SDK d’application Microsoft Intune
 
@@ -58,7 +58,7 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
 
 * **[Android uniquement]** La dernière application Portail d’entreprise Microsoft Intune doit être installée sur l’appareil.
 
-## <a name="get-started"></a>Prendre en main
+## <a name="get-started"></a>Prise en main
 
 1.  Téléchargez **Xamarin-component.exe** [ici](https://components.xamarin.com/submit/xpkg) et extrayez-le.
 
@@ -78,6 +78,7 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
 1.  Suivez les étapes générales requises pour l’intégration du Kit SDK d’application Intune dans une app mobile iOS. Vous pouvez commencer à l’étape 3 des instructions de l’intégration dans le [Guide du kit SDK d’application Intune pour les développeurs iOS](app-sdk-ios.md#build-the-sdk-into-your-mobile-app).
     **Important** : l’activation du partage de trousseau pour une application est légèrement différente dans Visual Studio par rapport à Xcode. Ouvrez le fichier plist de droits de l’application et vérifiez que l’option « Activer le trousseau » est activée et que les groupes de partage de trousseau appropriés sont ajoutés dans cette section. Vérifiez ensuite que le fichier plist des droits est spécifié dans le champ « Droits personnalisés » des options « Signature du bundle iOS » du projet pour toutes les combinaisons de configuration/plate-forme appropriées.
 2.  Une fois que composant ajouté et l’application correctement configurée, votre application peut commencer à utiliser les API du Kit SDK d’Intune. Pour cela, vous devez inclure l’espace de noms suivant :
+
       ```csharp
       using Microsoft.Intune.MAM;
       ```

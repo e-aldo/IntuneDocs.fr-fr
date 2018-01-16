@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/19/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7317a60a9640df0b95444a2b032c12b3ca9f20b
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 337b5407026c5415f8fbac1a0626181f9b042a06
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Inscrire vos appareils Windows 10 dans Intune
 
@@ -47,6 +47,6 @@ Vous voulez en savoir plus ? Découvrez ce qui se passe quand vous [inscrivez v
 1.  Dans __Démarrer__, accédez à la liste __Toutes les applications__, puis sélectionnez l’application __Paramètres__.        
 2.  Appuyez sur __Système__, puis sur __À propos de__.       
 3.  Sous __Informations sur l’appareil__, appuyez sur __Plus d’infos__. La liste des informations sur votre appareil s’affiche. Dans cette liste, repérez la __Version__.        
-4.  Si votre version est __1607__, poursuivez avec [ces étapes](enroll-your-w10-device-access-work-or-school.md). Si votre version est __1511 ou inférieure__, poursuivez avec [ces étapes](enroll-your-w10-device-your-account.md).
+4.  Si votre version est __1607 ou supérieure__, suivez [ces étapes](enroll-your-w10-device-access-work-or-school.md). Si votre version est __1511 ou inférieure__, poursuivez avec [ces étapes](enroll-your-w10-device-your-account.md).
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -6,7 +6,7 @@ author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 40356d01be1d436e2a7fc0598ebac0d25749a49a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3556c130402292450efc26f13f624861322e5ae7
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Guide de démarrage rapide : Éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365
 
@@ -37,7 +37,7 @@ Si c’est le cas, Microsoft Intune vous permet de définir des stratégies GAM 
 2.  Découvrez [ce que vous devez faire avant de pouvoir créer des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) dans le portail Azure.
 3.  [Créez et déployez des stratégies de gestion des applications mobiles](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) avec Intune.
 
-### <a name="additional-information"></a>Informations supplémentaires :
+### <a name="additional-information"></a>Informations complémentaires :
 - [Expérience de l’utilisateur final](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) pour des applications avec la GAM activée.
 - [Préparer des applications métier GAM avec Intune](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank">Liste des partenaires Microsoft Intune&rarr;</a> fournissant des applications prenant en charge la gestion des applications mobiles (GAM).

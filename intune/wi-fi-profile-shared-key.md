@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utiliser un profil d’appareil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,9 +28,9 @@ Voici comment utiliser les **Profils d’appareil personnalisés** d’Intune po
 
 > [!NOTE]
 -   Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
-- Pour Android, vous avez également la possibilité d’utiliser ce [générateur de clés prépartagées Android](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fourni par Johnathon Biersack.
+- Pour Android, vous avez également la possibilité d’utiliser ce [générateur de clés prépartagées Android](http://intunepskgenerator.johnathonb.com/) fourni par Johnathon Biersack.
 -   Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
--  Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Vous pouvez également utiliser le [générateur de configuration mobile de clés prépartagées pour iOS](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fourni par Johnathon Biersack.
+-  Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Vous pouvez également utiliser le [générateur de configuration mobile de clés prépartagées pour iOS](http://intunepskgenerator.johnathonb.com/) fourni par Johnathon Biersack.
 
 
 1.  Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Personnalisé** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez un profil d’appareil.

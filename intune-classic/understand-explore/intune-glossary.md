@@ -6,18 +6,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 06/16/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: e733d1d59d073dab9fb2b6c18ee92dadbc86adbe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: cb186004395a4ccf84de6f0bc335cbd44a79583b
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glossaire Microsoft Intune
 
@@ -146,7 +146,7 @@ ms.lasthandoff: 10/10/2017
 ## <a name="v"></a>V
 |||
 |-|-|
-|Applications achetées en volume|Certains magasins d’applications vous permettent d’acheter plusieurs licences pour une application que vous voulez utiliser dans votre entreprise. Intune vous aide à gérer les applications que vous avez [achetées via un programme de ce type](/intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune), en important les informations de licence à partir de l’App Store, en effectuant le suivi du nombre de licences que vous avez utilisées, et en vous empêchant d’installer un nombre de copies de l’application supérieur au nombre dont vous êtes propriétaire.|
+|Applications achetées en volume|Certains App Stores vous permettent d’acheter plusieurs licences d’une application que vous voulez utiliser dans votre entreprise. Intune vous aide à gérer les applications que vous avez [achetées via un programme de ce type](/intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune), en important les informations de licence à partir de l’App Store, en effectuant le suivi du nombre de licences que vous avez utilisées, et en vous empêchant d’installer un nombre de copies de l’application supérieur au nombre dont vous êtes propriétaire.|
 |Profil VPN|Stratégie qui déploie des [paramètres VPN](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune) sur les appareils que vous gérez, qui réduit la configuration que les utilisateurs finaux doivent effectuer.|
 
 ## <a name="w"></a>W
