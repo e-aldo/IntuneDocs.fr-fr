@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: 
 ms.custom: intune-azure
-ms.openlocfilehash: b8fb7745cf7d1d874b890210ef9c75c2a11f12ef
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: dfadab1f412752d9857a2f6777481fa761cd1d4c
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Authentification multifacteur pour les inscriptions d’appareils Intune
 
@@ -39,6 +39,9 @@ Quand vous activez MFA, les utilisateurs finaux doivent fournir deux formes d’
 ## <a name="configure-intune-to-require-multi-factor-authentication-at-device-enrollment"></a>Configurer Intune pour exiger une authentification multifacteur lors de l’inscription des appareils
 
 Pour exiger l’authentification multifacteur à l’inscription d’un appareil, procédez comme suit :
+
+[!Important]
+>Vous devez avoir un abonnement Azure Active Directory Premium P1 ou supérieur affecté à vos utilisateurs pour implémenter cette stratégie.
 
 >[!Important]
 >Ne configurez pas les **règles d’accès basées sur les appareils** pour l’inscription à Microsoft Intune.

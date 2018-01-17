@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,21 +16,32 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 19ecd12eec320711886c1da29a7324f0360363ba
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: acde8ab4fc6132343d58277ddc01dafaa5e386e3
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Envoyer les journaux aux développeurs du portail d’entreprise pour les appareils Android
 
 L’application Portail d’entreprise peut parfois se fermer brutalement. Il s’agit d’un problème dont les développeurs d’applications veulent être informés, car cela peut nous aider à améliorer l’application et votre expérience, ainsi qu’à empêcher que ce type de problème se reproduise. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
 
-Si vous rencontrez ce problème, l’équipe du portail d’entreprise a besoin d’informations pour essayer d’en diagnostiquer la cause racine. Voici ce que vous devez faire :
+> [!Note]
+> Pour faciliter l’identification du problème par le support technique de votre entreprise, il est recommandé d’activer la _journalisation détaillée_. La journalisation détaillée inclut tous les détails pertinents dans le rapport. Découvrez comment [activer la journalisation détaillée ici](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-1.  Essayez de reproduire le problème. Ce n’est pas grave si vous n’y parvenez pas, mais cela peut faciliter l’étape suivante.
-2.  Accédez à __Paramètres__ > __Confidentialité__ > __Diagnostics et utilisation__ > __Diagnostics et données d’utilisation__. Il s’agit d’une liste des activités d’application qui ont eu lieu (pannes, modèles d’utilisation générale, etc.). Celle-ci ne contient pas d’informations personnelles. Cette liste est organisée du plus récent au plus ancien. Si vous avez pu reproduire le problème, il doit s’agir du premier élément qui apparaît dans la liste des activités d’application sur cette page. Si vous n’avez pas pu reproduire le problème, faites défiler jusqu’à ce que vous trouviez le premier élément qui commence par « Portail d’entreprise », puis appuyez dessus pour l’ouvrir.
-3.  Appuyez de façon prolongée, puis faites glisser les petit points bleus de haut en bas jusqu’à ce que tout le texte du rapport soit sélectionné. Appuyez sur __Copier__ dans le menu contextuel.
-4.  Ouvrez votre application de messagerie, puis collez ce contenu dans le corps de l’e-mail. Envoyez cet e-mail à <a href="mailto:wintunedroidfbk@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">wintunedroidfbk@microsoft.com</a>.
+Si vous rencontrez ce problème, l’équipe Portail d’entreprise a besoin des journaux du portail d’entreprise pour essayer d’en diagnostiquer la cause racine. Pour envoyer des journaux à Microsoft :
+
+1.  Ouvrez l'application Portail d'entreprise.
+
+2.  Appuyez sur **Menu** >  **Aide et commentaires**.
+
+    > [!NOTE]
+    > Le **menu** peut être un bouton à l’écran ou un bouton physique, selon l’appareil Android que vous utilisez.
+
+3.  Sous **Commentaires**, appuyez sur **Envoyer des commentaires**.
+
+4.  Décrivez brièvement le problème que vous rencontrez dans l’e-mail et appuyez sur **Envoyer**.
+
+Vous pouvez aussi envoyer un e-mail directement à l’équipe Portail d’entreprise pour Android à l’adresse <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

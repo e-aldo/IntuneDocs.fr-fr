@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 849c5c45429394e92b993a57c1e2345b20f78f0a
-ms.sourcegitcommit: 95a0553531133f8d926afbecd0aaf91f64a63162
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/08/2018
 - **Découverte d’appareil** - Empêche un appareil d’être détecté par d’autres appareils.
 - **Sélecteur de tâches (mobile uniquement)** - Bloque le sélecteur de tâches sur l’appareil.
 - **Boîte de dialogue d’erreur de carte SIM (mobile uniquement)** - Empêche un message d’erreur de s’afficher sur l’appareil si aucune carte SIM n’est détectée.
-<!--- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. -->
+- **Redéploiement automatique** : permet aux utilisateurs avec des droits d’administration de supprimer l’ensemble des données et des paramètres utilisateur à l’aide des touches **Ctrl+Win+R** sur l’écran de verrouillage de l’appareil. L’appareil est automatiquement reconfiguré et réinscrit dans la gestion.
 
 
 ## <a name="password"></a>Mot de passe
@@ -254,7 +254,7 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
 ## <a name="kiosk-preview"></a>Kiosk (préversion)
 
--   **Mode plein écran** - Identifie le type de [mode plein écran](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) pris en charge par la stratégie. Les options disponibles sont les suivantes :
+-   **Mode plein écran** - Identifie le type de [mode plein écran](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) pris en charge par la stratégie. Les options sont les suivantes :
 
       - **Non configuré** (par défaut) : la stratégie n’active pas de mode plein écran. 
       - **Application unique plein écran** : le profil active l’appareil en tant qu’application unique plein écran.

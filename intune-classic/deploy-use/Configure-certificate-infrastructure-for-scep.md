@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurer l’infrastructure de certificat pour SCEP
 
@@ -237,7 +237,7 @@ Dans cette tâche, vous allez :
 
 3. Le serveur NDES recevra de très longues URL (requêtes), qui nécessiteront l’ajout de deux entrées au Registre :
 
-    |Emplacement|Valeur|Type|Niveau|
+    |Localisation|Valeur|Type|Niveau|
     |-------|-----|----|----|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxFieldLength|DWORD|65534 (décimal)|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (décimal)|
@@ -338,6 +338,9 @@ télécharger, installer et configurer Certificate Connector sur le serveur NDE
 5.  Dans l'interface utilisateur de **Certificate Connector** :
 
     Cliquez sur **Connexion** et entrez vos informations d’identification du service Intune ou les informations d’identification d’un administrateur client avec l’autorisation d’administration globale.
+
+    > [!NOTE]
+    > Si vous obtenez une erreur **Le nom d’utilisateur n’est pas reconnu** lors de la connexion dans NDESConnectorUI.exe, cela signifie généralement que vous avez utilisé un compte qui ne dispose pas d’une licence Intune valide. Affectez une licence Intune ou EMS au compte, et recommencez l’opération.
 
     Si votre organisation utilise un serveur proxy et que ce dernier est nécessaire au serveur NDES pour accéder à Internet, cliquez sur **Utiliser un serveur proxy**, puis indiquez le nom, le port et les informations d’identification de compte du serveur proxy pour vous connecter.
 
