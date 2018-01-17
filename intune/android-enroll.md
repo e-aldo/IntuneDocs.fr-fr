@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 12/07/2017
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrire des appareils Android
 
@@ -29,7 +29,7 @@ En votre qualité d’administrateur Intune, vous pouvez gérer des appareils An
 
 Les appareils qui exécutent Samsung Knox Standard sont pris en charge pour la gestion des utilisateurs multiples par Intune. Cela signifie que les utilisateurs finaux peuvent se connecter et se déconnecter d’un appareil avec leurs informations d’identification Azure AD. L’appareil est géré de manière centralisée, qu’il soit en cours d’utilisation ou non. Quand les utilisateurs se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.
 
-## <a name="prerequisite"></a>Composant requis
+## <a name="prerequisite"></a>Prérequis
 
 Pour préparer la gestion des appareils mobiles, vous devez définir l’autorité de gestion des appareils mobiles (MDM) sur **Microsoft Intune**. Consultez la page [Configurer l’autorité MDM](mdm-authority-set.md) pour obtenir des instructions. Cet élément ne se définit qu’une seule fois, quand vous configurez pour la première fois Intune pour la gestion des appareils mobiles.
 
@@ -75,7 +75,7 @@ Vous devez approuver l’application Portail d’entreprise pour Android sur le 
 
 Pour approuver le portail d’entreprise Intune, effectuez les étapes suivantes :
 
-1.  Téléchargez l’application Portail d’entreprise à partir du [Google Play Store géré](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Accédez à l’application Portail d’entreprise sur le [Google Play Store géré](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Connectez-vous au Google Play Store géré avec le même compte Google que celui utilisé pour configurer la liaison pour Android for Work.
 3.  Cliquez sur **Approuver**.  Une nouvelle boîte de dialogue s’ouvre.
 4.  Vérifiez les autorisations dans cette boîte de dialogue, puis cliquez sur **Approuver**. Vous devez affecter ces autorisations afin de permettre à l’application Portail d’entreprise de gérer le profil professionnel sur l’appareil.

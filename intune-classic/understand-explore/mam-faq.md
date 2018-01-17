@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 12/21/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c96be109a6e73f8a56e0c985f127eeed182a5c4b
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Forum Aux Questions sur la Gestion des applications mobiles (GAM) et la protection des applications
 
@@ -91,19 +91,26 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 **Quel est l’objectif de la prise en charge de la multi-identité ?** La prise en charge de la multi-identité permet aux applications dédiées aux entreprises et au grand public (par exemple, les applications Office) d’être publiées publiquement avec des fonctionnalités de protection des applications Intune pour les comptes « d’entreprise ».
 
-**Quand l’écran de code PIN apparaît-il ?** L’écran de code PIN Intune s’affiche uniquement lorsque l’utilisateur tente d’accéder aux données « d’entreprise » dans l’application. Par exemple, dans les applications Word/Excel/PowerPoint, il apparaît lorsque l’utilisateur final tente d’ouvrir un document à partir de OneDrive Entreprise (en supposant que vous avez déployé une stratégie de protection des applications appliquant un code PIN).
-
 **Qu’en est-il d’Outlook et de la multi-identité ?** Étant donné qu’Outlook a une vue combinée des e-mails personnels et professionnels, l’application Outlook demande le PIN Intune à son lancement.
 
 **Qu’est-ce-que le code PIN d’application Intune ?** Le PIN (numéro d’identification personnel) est un code secret utilisé pour vérifier que l’utilisateur qui accède aux données de l’organisation dans une application y est autorisé.
 
   1. **Quand l’utilisateur est-il invité à entrer son code PIN ?** Intune ne demande le PIN de l’utilisateur pour l’application que lorsque ce dernier est sur le point d’accès aux données « d’entreprise ». Dans les applications multi-identité telles que Word/Excel/PowerPoint, l’utilisateur est invité à entrer son code PIN lorsqu’il tente d’ouvrir un fichier ou un document « d’entreprise ». Dans les applications à identité unique, telles que les applications métier compatibles grâce à l’outil de création de package de restrictions d’application Intune, le code PIN est demandé au lancement, car le Kit de développement logiciel (SDK) d’application Intune sait que l’expérience utilisateur dans l’application est toujours « d’entreprise ».
 
-  2. **Le code PIN est-il sécurisé ?** Le code PIN sert à autoriser uniquement les utilisateurs adéquats à accéder aux données de leur organisation dans l’application. Par conséquent, un utilisateur final doit se connecter avec son compte professionnel ou scolaire avant de pouvoir définir ou réinitialiser son PIN d’application Intune. Cette authentification est gérée par Active Directory Azure par le biais d’un échange de jeton sécurisé et n’est pas transparente pour le Kit de développement logiciel (SDK) d’application Intune. Du point de vue de la sécurité, la meilleure manière de protéger les données professionnelles ou scolaires consiste à les chiffrer. Le chiffrement n’est pas lié au code PIN de l’application, mais constitue sa propre stratégie de protection des applications.
+2. **À quelle fréquence le code PIN Intune est-il demandé à l’utilisateur ?**
+L’administrateur informatique peut définir le paramètre de stratégie de protection des applications Intune « Revérifier les exigences d’accès après (minutes) » dans la console d’administration Intune. Ce paramètre spécifie le délai avant que les conditions d’accès ne soient vérifiées sur l’appareil et que l’écran du code PIN de l’application ne réapparaisse. Voici cependant des informations importantes sur le code PIN qui affectent la fréquence à laquelle il est demandé à l’utilisateur : 
 
-  3. **Comment Intune protège-t-il le code PIN contre les attaques en force brute ?** Dans le cadre de la stratégie de code PIN d’application, l’administrateur peut définir un nombre maximal de tentatives d’authentification de son code PIN avant le verrouillage de l’application. Une fois que le nombre de tentatives atteint, le Kit de développement logiciel (SDK) d’application Intune peut réinitialiser les données « d’entreprise » dans l’application.
+* **Le code PIN est partagé entre les applications du même éditeur pour améliorer la facilité d’utilisation :** sur iOS, un même code PIN d’application est partagé entre toutes les applications **du même éditeur**. Sur Android, un même code PIN d’application est partagé entre toutes les applications.
+* **La nature cyclique du minuteur associé au code PIN :** une fois qu’un code PIN est entré pour accéder à une application (l’application A) et que l’application quitte le premier plan (le focus d’entrée principal) sur l’appareil, le minuteur du code PIN est réinitialisé pour ce code PIN. Une application (l’application B) partageant ce code PIN ne demande pas à l’utilisateur d’entrer ce code parce que la minuterie a été réinitialisée. L’invite réapparaît une fois que la valeur de « Revérifier les exigences d’accès après (minutes) » est à nouveau atteinte. 
+
+>[!NOTE] 
+> Pour vérifier plus souvent les conditions d’accès de l’utilisateur (en demandant un code PIN), en particulier pour une application fréquemment utilisée, il est recommandé de réduire la valeur du paramètre « Revérifier les exigences d’accès après (minutes) ». 
+
+  3. **Le code PIN est-il sécurisé ?** Le code PIN sert à autoriser uniquement les utilisateurs adéquats à accéder aux données de leur organisation dans l’application. Par conséquent, un utilisateur final doit se connecter avec son compte professionnel ou scolaire avant de pouvoir définir ou réinitialiser son PIN d’application Intune. Cette authentification est gérée par Active Directory Azure par le biais d’un échange de jeton sécurisé et n’est pas transparente pour le Kit de développement logiciel (SDK) d’application Intune. Du point de vue de la sécurité, la meilleure manière de protéger les données professionnelles ou scolaires consiste à les chiffrer. Le chiffrement n’est pas lié au code PIN de l’application, mais constitue sa propre stratégie de protection des applications.
+
+  4. **Comment Intune protège-t-il le code PIN contre les attaques en force brute ?** Dans le cadre de la stratégie de code PIN d’application, l’administrateur peut définir un nombre maximal de tentatives d’authentification de son code PIN avant le verrouillage de l’application. Une fois que le nombre de tentatives atteint, le Kit de développement logiciel (SDK) d’application Intune peut réinitialiser les données « d’entreprise » dans l’application.
   
-  4. **Pourquoi dois-je définir un code PIN à deux reprises dans des applications provenant du même éditeur ?**
+  5. **Pourquoi dois-je définir un code PIN à deux reprises dans des applications provenant du même éditeur ?**
 GAM (sous iOS) prend actuellement en charge les codes PIN au niveau de l’application avec des caractères alphanumériques et spéciaux (appelés « code secret ») qui nécessitent l’implication d’applications (ex. WXP, Outlook, Managed Browser, Yammer) pour intégrer le kit SDK d’application Intune pour iOS. Sans cela, les paramètres de code secret ne sont pas appliqués correctement pour les applications ciblées. Il s’agissait d’une fonctionnalité publiée dans le SDK Intune pour iOS version 7.1.12. <br> Pour prendre en charge cette fonctionnalité et garantir la compatibilité descendante avec les versions antérieures du Kit SDK Intune pour iOS, tous les codes PIN (numériques ou codes secrets) à partir de la version 7.1.12 sont gérés séparément du code PIN numérique des versions précédentes du Kit SDK. Par conséquent, si un appareil contient des applications avec le Kit SDK Intune pour des versions iOS antérieures à 7.1.12 et ultérieures à 7.1.12 du même éditeur, deux codes PIN doivent être définis. <br><br> Cela étant dit, les deux codes PIN (pour chaque application) ne sont liés d’aucune manière et doivent respecter la stratégie de protection appliquée à l’application. Par conséquent, *uniquement* si les applications A et B ont les mêmes stratégies de code PIN, l’utilisateur peut définir deux fois le même code PIN. <br><br> Ce comportement est spécifique au code PIN sur les applications iOS activées avec la gestion des applications mobiles Intune. Au fil du temps, à mesure que les applications adoptent les versions ultérieures du Kit SDK Intune pour iOS, définir deux fois un code PIN sur les applications d’un même éditeur pose moins de problèmes. Consultez la remarque ci-dessous pour obtenir un exemple.
 
 >[!NOTE]

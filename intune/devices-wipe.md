@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
@@ -70,7 +70,7 @@ La commande de **suppression des données d’entreprise** supprime les paramèt
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|
 |Paramètres de profil de certificat|Les certificats sont supprimés et révoqués.|
 |Agent de gestion|Le profil de gestion est supprimé.|
-|Courrier électronique|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
+|E-mail|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.|
 |Disjonction d’Azure Active Directory (AD)|L’enregistrement AD est supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
@@ -88,7 +88,7 @@ La commande de **suppression des données d’entreprise** supprime les paramèt
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
-|Courrier électronique|n/a (profils de messagerie non pris en charge par les appareils Android)|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
+|E-mail|n/a (profils de messagerie non pris en charge par les appareils Android)|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.|
 |Disjonction d’Azure Active Directory (AD)|Enregistrement AD supprimé.|Enregistrement AD supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
@@ -96,6 +96,18 @@ La commande de **suppression des données d’entreprise** supprime les paramèt
 ### <a name="android-for-work"></a>Android for Work
 
 La suppression des données d’entreprise d’un appareil Android for Work supprime l’ensemble des données, applications et paramètres dans le profil professionnel de l’appareil. L’appareil n’est plus géré par Intune. La réinitialisation aux paramètres d’usine n’est pas prise en charge pour Android for Work.
+
+
+### <a name="macos"></a>macOS
+
+|Type de données|macOS|
+|-------------|-------|
+|Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|
+|Paramètres de profil Wi-Fi et VPN|Supprimé.|
+|Paramètres de profil de certificat|Les certificats qui ont été déployées via MDM sont supprimés et révoqués.|
+|Agent de gestion|Le profil de gestion est supprimé.|
+|Outlook|Si l’accès conditionnel est activé, aucun nouvel e-mail n’est reçu par l’appareil.|
+|Disjonction d’Azure Active Directory (AD)|L’enregistrement AD est supprimé.|
 
 ### <a name="windows"></a>Windows
 
@@ -105,7 +117,7 @@ La suppression des données d’entreprise d’un appareil Android for Work supp
 |Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|Non pris en charge.|Supprimé.|
 |Paramètres de profil de certificat|Certificats supprimés et révoqués.|Certificats supprimés et révoqués.|Non pris en charge.|Certificats supprimés et révoqués.|
-|Courrier électronique|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non pris en charge.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
+|E-mail|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non pris en charge.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
 |Disjonction d’Azure Active Directory (AD)|Non.|Non.|Enregistrement AD supprimé.|Non applicable. Windows 10 ne prend pas en charge la suppression des données d’entreprise pour les appareils joints à Azure Active Directory.|
 
 ### <a name="to-remove-company-data"></a>Pour supprimer les données d’entreprise

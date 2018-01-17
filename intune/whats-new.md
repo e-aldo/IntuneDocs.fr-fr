@@ -6,8 +6,8 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/02/2018
-ms.topic: get-started-article
+ms.date: 01/11/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9595100fdc7dafb95fc49e0b7bee2a8cfdd5abf
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: d5575d02d0c270e9d22e4b858d8fb00753b60448
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Nouveautés de Microsoft Intune
 
@@ -45,6 +45,9 @@ Découvrez les nouveautés hebdomadaires dans Microsoft Intune. Vous pouvez ég
 ## <a name="week-of-december-11-2017"></a>Semaine du 11 décembre 2017
 
 ### <a name="device-configuration"></a>Configuration des appareils
+
+#### <a name="new-automatic-redeployment-setting----1469168---"></a>Nouveau paramètre de redéploiement automatique <!-- 1469168 -->
+Le paramètre **Redéploiement automatique** permet aux utilisateurs avec des droits d’administration de supprimer l’ensemble des données et des paramètres utilisateur à l’aide des touches **Ctrl+Win+R** sur l’écran de verrouillage de l’appareil. L’appareil est automatiquement reconfiguré et réinscrit dans la gestion. Ce paramètre se trouve sous Windows 10 -> Restrictions sur l’appareil -> Général -> Redéploiement automatique. Pour plus d’informations, consultez [Paramètres de restriction d’appareil Intune pour Windows 10](device-restrictions-windows-10.md#general).
 
 #### <a name="support-for-additional-source-editions-in-the-windows-10-edition-upgrade-policy-----903672--1119689---"></a>Prise en charge d’éditions source supplémentaires dans la stratégie de mise à niveau de l’édition Windows 10 <!-- 903672,  1119689 -->
 Vous pouvez maintenant utiliser la stratégie de mise à niveau de l’édition Windows 10 pour effectuer une mise à niveau à partir d’autres éditions de Windows 10 (Windows 10 Professionnel, Windows10 Professionnel Éducation, Windows 10 Cloud, etc.). Avant cette version, les chemins de mise à niveau de l’édition pris en charge étaient plus limités. Pour plus d’informations, consultez le [Guide pratique de configuration des mises à niveau Windows 10](edition-upgrade-configure-windows-10.md).
@@ -148,7 +151,7 @@ Les utilisateurs du site web Portail d’entreprise ne pourront pas exécuter de
 
 
 
-### <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
+### <a name="role-based-access-control"></a>Contrôle d'accès en fonction du rôle
 
 #### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1667026---"></a>Nouvelle collection d’entités, nommée Utilisateur actuel, limitée aux données des utilisateurs actuellement actifs<!-- 1667026 -->
 
@@ -306,8 +309,8 @@ Les données suivantes ne sont pas conservées :
 #### <a name="window-10-update-ring-assignments-are-displayed----1621837---"></a>Les affectations de boucles de mise à jour de Windows 10 sont affichées <!-- 1621837 -->
 Pendant une **résolution de problèmes**, vous pouvez voir les affectations de boucles de mise à jour de Windows 10 pour l’utilisateur affiché.  
 
-#### <a name="windows-defender-advanced-threat-protection-reporting-frequency-settings-----1455974----"></a>Paramètres de la fréquence d’émission des rapports Windows Defender ATP <!-- 1455974  -->
-Le service Windows Defender ATP permet aux administrateurs de gérer la fréquence d’émission des rapports sur les appareils gérés. Avec la nouvelle option **Augmenter la fréquence des rapports de télémétrie**, Windows Defender ATP collecte les données et évalue les risques plus fréquemment. Par défaut, l’émission de rapports optimise le niveau de performance et la vitesse. Augmenter la fréquence d’émission des rapports peut être utile pour les appareils à haut risque. Ce paramètre se trouve dans le profil **Windows Defender ATP** dans **Configurations d’appareil**.
+#### <a name="windows-defender-advanced-threat-protection-reporting-frequency-settings-----1455974----"></a>Paramètres de la fréquence d’émission des rapports Windows Defender - Protection avancée contre les menaces <!-- 1455974  -->
+Le service Windows Defender - Protection avancée contre les menaces permet aux administrateurs de gérer la fréquence d’émission des rapports sur les appareils gérés. Avec la nouvelle option **Augmenter la fréquence des rapports de télémétrie**, Windows Defender ATP collecte les données et évalue les risques plus fréquemment. Par défaut, l’émission de rapports optimise le niveau de performance et la vitesse. Augmenter la fréquence d’émission des rapports peut être utile pour les appareils à haut risque. Ce paramètre se trouve dans le profil **Windows Defender ATP** dans **Configurations d’appareil**.
 
 #### <a name="audit-updates----1412961---"></a>Auditer les mises à jour <!-- 1412961 -->  
 La fonctionnalité d’audit d’Intune enregistre les opérations de modification relatives à Intune.  Tous les opérations de création, de mise à jour, de suppression et de tâche à distance sont capturées et conservées pendant un an.  Le portail Azure fournit une vue filtrable des 30 derniers jours de données d’audit dans chaque charge de travail.  Une API Graph correspondante permet de récupérer les données d’audit stockées pendant l’année écoulée.
@@ -452,7 +455,7 @@ Vous pouvez définir des ressources cloud d’entreprise, des plages d’adresse
 | | |
 |---|---|
 | non configuré | **Non configuré** utilise le niveau de blocage de Windows Defender Antivirus par défaut et offre une détection solide sans augmenter le risque de détection des fichiers légitimes. |
-| Élevé | **Haut** s’applique à un niveau fort de détection.
+| Importante | **Haut** s’applique à un niveau fort de détection.
 | Élevé +  | **Haut +** fournit le niveau Haut avec des mesures de protection supplémentaires pouvant impacter les performances du client.
 | Tolérance zéro  | **Tolérance zéro** bloque tous les exécutables inconnus. |
 
