@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: c708361708468c544533a27a446ef33a23d88d8a
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="reference-for-devices-entities"></a>Référence pour les entités d’appareils
 
@@ -47,7 +47,7 @@ L’entité **DeviceTypes** représente le type d’appareil référencé par d�
 
 | deviceTypeID  | Nom | Description |
 |---------|------------|--------|
-| 0 |Desktop (Expérience utilisateur) |Appareil Windows Desktop |
+| 0 |Bureau |Appareil Windows Desktop |
 | 1 |WindowsRT |Appareil Windows RT |
 | 2 |WinMO6 |Appareil Windows Mobile 6.0 |
 | 3 |Nokia |Appareil Nokia |
@@ -221,7 +221,7 @@ L’entité **ManagementAgentTypes** représente les agents utilisés pour gére
 | 8 |ConfigManagerClient | L’appareil est géré par l’agent System Center Configuration Manager |
 | 16 |Unknown | Type d’agent de gestion inconnu |
 
-## <a name="devices"></a>Périphériques
+## <a name="devices"></a>Appareils
 
 L’entité **Devices** répertorie tous les appareils inscrits à la gestion et leurs propriétés correspondantes.
 
@@ -338,7 +338,7 @@ L’entité **MdmDeviceInventoryHistories** contient des instantanés quotidiens
 | OSManufacturer |Fabricant du système d’exploitation. |
 | OSProductSuite |Suite de produits du système d’exploitation. |
 | OSProductType |Type de produit du système d’exploitation. |
-| Paramètres régionaux |Paramètres régionaux du système d’exploitation. |
+| Locale |Paramètres régionaux du système d’exploitation. |
 | PhysicalMemoryCapacity |Capacité de mémoire physique (en octets). |
 | PhysicalMemoryRemovable |Mémoire amovible physique (en octets). |
 | SystemEnclosureChassisTypesInnerText |Définit le type de châssis du système pour cet appareil. Les nombres indiquent les valeurs suivantes :  <br>0 ou Vide = Inconnu   <br>1 = Ordinateur de bureau   <br>2 = Ordinateur portable  <br>3 = Station de travail  <br>4 = Serveur d’entreprise  <br>100 = Téléphone  <br>101 = Tablette  <br>102/103 = Autre type inconnu d’appareil mobile |
@@ -382,7 +382,7 @@ L’entité **MdmDeviceInventoryHistories** contient des instantanés quotidiens
 | RemovableStorageTotal |Stockage amovible total (en octets) |
 | DeviceMemoryDeviceCapacity |Capacité mémoire de l’appareil |
 | DeviceMemoryAvailableDeviceCapacity |Capacité mémoire de l’appareil disponible |
-| DeviceOSVersion |Version du système d'exploitation |
+| DeviceOSVersion |Version de système d'exploitation |
 | DeviceOSPlatform |Plateforme du système d’exploitation |
 | DeviceOSLanguage |Langue du système d’exploitation |
 | PasswordMaxAttemptsBeforeWipe |Nombre maximum de tentatives de saisie du mot de passe avant la réinitialisation de l’appareil |

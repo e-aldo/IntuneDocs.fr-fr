@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 917c9585ffe17f9d090c519f716d284aa1b932b8
-ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
+ms.openlocfilehash: 1f213cb735ab4dcad20c97b5924fef98774192ce
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="reference-for-user-entity"></a>Informations de référence sur l’entité User
 
@@ -36,7 +36,7 @@ La collection d’entités **Utilisateur** contient les données des utilisateur
 | UserId |Identificateur unique de l’utilisateur (semblable à UserKey, mais il s’agit d’une clé naturelle). |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Adresse e-mail de l’utilisateur. |John@constoso.com |
 | UPN | Nom d'utilisateur principal de l'utilisateur. | John@constoso.com |
-| DisplayName |Nom d’affichage de l’utilisateur. |John |
+| DisplayName |Nom d’affichage de l’utilisateur. |Jean |
 | IntuneLicensed |Spécifie si cet utilisateur dispose d’une licence Intune ou non. |Vrai/Faux |
 | IsDeleted | Indique si toutes les licences de l’utilisateur ont expiré et si ce dernier a de ce fait été supprimé d’Intune. Pour un enregistrement unique, cet indicateur ne change pas. En revanche, un autre enregistrement est créé pour le nouvel état de l’utilisateur. |Vrai/Faux |
 | StartDateInclusiveUTC |Si IsDeleted = FALSE, DateHeure UTC à laquelle l’utilisateur a obtenu une licence et a commencé à être présent sur Intune. Si IsDeleted = TRUE, DateHeure UTC à laquelle l’utilisateur a vu sa licence expirer et a été supprimé d’Intune. |11/23/2016 12:00:00 AM |
