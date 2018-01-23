@@ -15,11 +15,11 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17aa425a7daad35860eb4694e9bf798dc655992c
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 31d1e40c3cd352c00dd7a659f716b5690ea64ea1
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils Android dans Microsoft Intune
 
@@ -63,4 +63,3 @@ Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-d
     - **Client F5 Edge**
     - **Pulse Secure**
 
-- **Tunnelisation fractionnée** : activez cette option pour autoriser une partie du trafic web à utiliser la connexion VPN alors que le reste du trafic utilise Internet. Désactivez cette option si vous souhaitez que tout le trafic utilise le réseau VPN lorsqu’il est actif.
