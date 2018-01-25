@@ -124,7 +124,7 @@
         - name: Configurations prises en charge
           href: supported-devices-browsers.md
           items:
-            - name: Utilisation de la bande passante réseau
+            - name: Configuration réseau
               href: network-bandwidth-use.md
         - name: Se connecter à Intune
           href: account-sign-up.md
@@ -166,6 +166,8 @@
               href: windows-bulk-enroll.md
             - name: Programme de déploiement Windows AutoPilot
               href: enrollment-autopilot.md
+            - name: Écran État de l’inscription
+              href: windows-enrollment-status.md
         - name: Configurer l’inscription Android
           href: android-enroll.md
         - name: Configurer l’inscription iOS
@@ -179,7 +181,7 @@
               href: apple-configurator-enroll-ios.md
         - name: Configurer l’inscription macOS
           href: macos-enroll.md
-    - name: Gérer des unités
+    - name: Gérer des périphériques
       href: device-management.md
       items:
         - name: Contourner le verrou d’activation
@@ -307,7 +309,7 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: "Windows\_8.1"
+            - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
             - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
@@ -339,7 +341,7 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: "Windows\_8.1"
+            - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
             - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
