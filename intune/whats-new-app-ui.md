@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/14/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f13aa8bbe5173bda34cdeeecda26d96f8e3aa83
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 1662245fdf9ba557fbc62fbb2e9c0e1aa29888b2
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
@@ -382,11 +382,21 @@ Voici les moyens envisagés pour améliorer l’expérience utilisateur en metta
 > [!Note]
 > Notez que les images ci-dessous peuvent être en préversion. Le produit annoncé peut différer des versions présentées.
 
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Mise à jour de l’expérience utilisateur dans l’application Portail d’entreprise pour iOS <!--1412866-->
+
+Nous publierons une mise à jour importante de l’expérience utilisateur dans l’application Portail d’entreprise pour iOS. La mise à jour présentera une toute nouvelle apparence, plus moderne, avec une amélioration de l’accessibilité et de l’utilisation. Toutes les fonctionnalités actuelles de l’application Portail d’entreprise pour iOS seront conservées.
+
+Nous vous offrons une préversion de l’application Portail d’entreprise pour iOS mise à jour via le programme Apple TestFlight pour que vous l’utilisiez et nous fassiez part de vos commentaires. Inscrivez-vous à l’adresse https://aka.ms/intune_ios_cp_testflight pour accéder à TestFlight.
+
+![images d’annonce de la nouvelle application Portail d’entreprise pour iOS](./media/ios-cp-app-redesign-1801-teaser.png)
+
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Mises à jour apportées à l’interface utilisateur sur le site web Portail d’entreprise <!--1313244 part 2-->
 
 __Mises à jour des applications proposées__  Nous avons ajouté une page dédiée sur le site où les utilisateurs peuvent rechercher les applications que vous avez choisi de proposer, et nous avons apporté quelques ajustements à l’interface utilisateur de la section correspondante sur la page d’accueil.
 
 ![Les vignettes de couleur qui signalent les applications. Il s’agit de grands carrés de couleur en dessous de chaque application, où la couleur est extraite de la teinte principale du logo de l’application. La section « Applications proposées » s’affiche dans la partie supérieure de l’application Portail d’entreprise.](./media/cp_win10_colorful_tiles_after_1708.png)
+
+
 
 ### <a name="see-also"></a>Voir aussi
 * [Blog Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)

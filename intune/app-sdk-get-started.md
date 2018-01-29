@@ -5,7 +5,7 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/03/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 546c5d3f373b863e75afa05b7e9bd842f8a8eb46
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Prise en main du Kit de développement logiciel (SDK) d’applications Microsoft Intune
 
@@ -34,7 +34,7 @@ Vous *n’avez pas besoin* d’inscrire votre application. Pour les applications
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Si votre application doit être publiée sur un App Store public, comme l’Apple App Store ou Google Play :
 
-Vous _**devez**_ d’abord inscrire votre application auprès de Microsoft Intune et accepter les conditions d’inscription. Les administrateurs informatiques peuvent ensuite appliquer une stratégie de protection des applications à l’application concernée, qui apparaît comme un partenaire d’application Intune.
+Vous _**devez**_ d’abord inscrire votre application auprès de Microsoft Intune et accepter les conditions d’inscription. Les administrateurs informatiques peuvent ensuite appliquer une stratégie de protection des applications à l’application gérée, qui apparaît comme un partenaire d’application Intune.
 
 Tant que l’inscription n’est pas terminée et confirmée par l’équipe de Microsoft Intune, les administrateurs Intune ne peuvent pas appliquer une stratégie de protection des applications au lien ciblé de votre application. Microsoft ajoute également vos applications à sa [page de partenaires Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). L’icône de l’application y est affichée pour montrer qu’elle prend en charge les stratégies de protection des applications Intune.
 
@@ -60,8 +60,6 @@ Si le lien ciblé de votre application vient à changer, vous devrez réinscrire
 > [!NOTE]
 > Veillez à nous prévenir si vous mettez à jour votre application avec une nouvelle version du SDK d’application Intune.
 
-
-
 ## <a name="download-the-sdk-files"></a>Télécharger les fichiers du SDK
 
 Les SDK d’application Intune pour iOS et Android natifs sont hébergés sur un compte Microsoft GitHub. Ces référentiels publics contiennent les fichiers du SDK pour iOS et Android en mode natif, respectivement :
@@ -75,10 +73,6 @@ Si votre application est une application Xamarin ou Cordova, utilisez les varian
 * [Plug-in Cordova du SDK d’application Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Nous vous recommandons de créer un compte GitHub que vous pouvez utiliser pour créer des copies et faire des extractions depuis nos référentiels. GitHub permet aux développeurs de communiquer avec notre équipe produit, de faire part de problèmes et de recevoir des réponses rapides, de consulter les notes de publication et de fournir des commentaires à Microsoft. Pour toute question sur Intune App SDK GitHub, contactez msintuneappsdk@microsoft.com.
-
-
-
-
 
 ## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a>Activer votre application iOS ou Android pour la stratégie de protection des applications
 
@@ -102,9 +96,6 @@ Vous aurez besoin d'un des guides de développement suivants pour intégrer le S
  
  * L’[ID de client AAD](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) pour votre application doit être unique sur les plateformes iOS et Android.
  
- 
- 
-
 ## <a name="configure-telemetry-for-your-app"></a>Configurer la télémétrie pour votre application
 
 Microsoft Intune collecte des données sur les statistiques d’utilisation pour votre application.
@@ -113,7 +104,10 @@ Microsoft Intune collecte des données sur les statistiques d’utilisation pour
 
     * Si vous choisissez de ne pas envoyer les données de télémétrie du SDK à Microsoft Intune à partir de votre application, vous devez désactiver la transmission de la télémétrie du SDK en définissant la propriété `MAMTelemetryDisabled` sur « YES » dans le dictionnaire IntuneMAMSettings.
 
-* **SDK d’application Intune pour Android** : les données de télémétrie ne sont pas enregistrées via le SDK.
+* **SDK d’application Intune pour Android** : le kit SDK d’application Intune pour Android ne contrôle pas la collecte de données à partir de votre application. Par défaut, l’application Portail d’entreprise enregistre des données de télémétrie. Ces données sont envoyées à Microsoft Intune. Conformément à la stratégie Microsoft, nous ne collectons aucune information d’identification personnelle (PII). 
+
+    * Si les utilisateurs finaux choisissent de ne pas envoyer ces données, ils doivent désactiver la télémétrie sous Paramètres dans l’application Portail d’entreprise. Pour en savoir plus, consultez [Désactiver la collecte de données d’utilisation Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+
 
  Le numéro de version des applications métier iOS et Android est visible <!-- 1380712 -->
 
@@ -123,7 +117,7 @@ Les applications métier dans Intune affichent désormais le numéro de version 
 
 ### <a name="full-version-number"></a>Numéro de version complet
 
-Le numéro de version complet identifie une version spécifique de l’application. Le numéro apparaît sous la forme _Version_(_Build_). Par exemple, 2.2(2.2.17560800)
+Le numéro de version complet identifie une version spécifique de l’application. Le numéro apparaît sous la forme _Version_(_Build_). Par exemple, 2.2(2.2.17560800). 
 
 Le numéro de version complet est composé de deux éléments :
 
@@ -163,7 +157,7 @@ Numéro de version|CFBundleVersion|PackageVersionCode |Ce numéro est utilisé p
 ### <a name="test-your-app"></a>Tester votre application
 Après avoir terminé les étapes nécessaires pour intégrer votre application iOS ou Android au SDK d’application Intune, vous devez vérifier que toutes les stratégies de protection d’application sont activées et opérationnelles pour l’utilisateur final et l’administrateur informatique. Pour tester votre application intégrée, vous avez besoin des éléments suivants :
 
-* **Compte de test Microsoft Intune**: pour tester votre application compatible avec Intune sur les fonctionnalités de protection des applications Intune, vous aurez besoin d'un compte Microsoft Intune.
+* **Compte de test Microsoft Intune** : pour tester votre application gérée par Intune sur les fonctionnalités de protection des applications Intune, vous aurez besoin d’un compte Microsoft Intune.
 
     * Si vous êtes un éditeur de logiciels indépendant et que vous configurez vos applications de Store iOS ou Android pour qu’elles prennent en charge la stratégie de protection des applications Intune, vous recevez un code promotionnel à l’issue de votre inscription auprès de Microsoft Intune, comme indiqué durant l’étape d’inscription. Ce code promotionnel vous permettra de vous inscrire à une version d’évaluation de Microsoft Intune valable un an.
 
@@ -171,7 +165,7 @@ Après avoir terminé les étapes nécessaires pour intégrer votre application 
 
 * **Stratégies de protection des applications Intune**: pour tester votre application avec toutes les stratégies de protection des applications Intune, vous devez connaître le comportement attendu pour chaque paramètre de la stratégie. Consultez les descriptions des [stratégies de protection des applications iOS](/intune-classic/deploy-use/ios-mam-policy-settings) et des [stratégies de protection des applications Android](/intune-classic/deploy-use/android-mam-policy-settings).
 
-* **Dépannage** : si vous rencontrez des problèmes pendant que vous testez manuellement l’expérience utilisateur de votre application, consultez la section [Dépannage de MAM](/intune-classic/troubleshoot/troubleshoot-mam). Cet article propose une aide pour résoudre les problèmes courants, des boîtes de dialogue et des messages d’erreur qui peuvent s'afficher dans les applications compatibles avec Intune. 
+* **Dépannage** : si vous rencontrez des problèmes pendant que vous testez manuellement l’expérience utilisateur de votre application, consultez la section [Dépannage de MAM](/intune-classic/troubleshoot/troubleshoot-mam). Cet article propose une aide pour résoudre les problèmes courants, des boîtes de dialogue et des messages d’erreur qui peuvent s’afficher dans les applications gérées par Intune. 
 
 ### <a name="badge-your-app-optional"></a>Badger votre application (facultatif)
 

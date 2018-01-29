@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: cbccff7ac58c98e85f5a038950feb5bd6590922b
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: dae736aef57489880915c269cb30785371380a52
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Inscrire des appareils Windows à l’aide du programme Windows AutoPilot Deployment
 Le programme Windows AutoPilot Deployment simplifie la configuration des appareils. La création et la maintenance des images de système d’exploitation personnalisées demandent beaucoup de temps. L’application de ces images de système d’exploitation personnalisées à de nouveaux appareils en vue de les préparer pour vos utilisateurs finaux peut être tout aussi longue. Avec Microsoft Intune et AutoPilot, vous pouvez donner de nouveaux appareils à vos utilisateurs finaux sans devoir créer, gérer et appliquer des images de système d’exploitation personnalisées sur les appareils. Quand vous utilisez Intune pour gérer des appareils AutoPilot, vous pouvez gérer des stratégies, des profils, des applications, etc. sur les appareils une fois qu’ils sont inscrits. Pour une vue d’ensemble des avantages, des scénarios et des prérequis, consultez [Vue d’ensemble de Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -101,6 +101,7 @@ Si vous n’êtes pas intéressé par la gestion des appareils mobiles, vous ave
 - Synchroniser les profils créés dans un autre portail
 - Afficher les modifications apportées aux attributions de profils effectuées dans un autre portail
 - Synchroniser les attributions de profils effectuées dans un autre portail
+- Afficher les modifications apportées à la liste des appareils effectuées dans un autre portail
 
 ## <a name="next-steps"></a>Étapes suivantes
 Après avoir configuré Windows AutoPilot pour les appareils Windows 10 inscrits, découvrez comment gérer ces appareils. Pour plus d’informations, consultez [Qu’est-ce que la gestion des appareils Microsoft Intune ?](https://docs.microsoft.com/intune/device-management)

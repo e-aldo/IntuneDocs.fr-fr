@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/01/2017
+ms.date: 01/19/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 668264fc0ed4d9bebf84d97aa66a886d93fbb4eb
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: b91a9e57eb368daae77958eaf4e554628361b2c4
+ms.sourcegitcommit: 7d80886ed9a12597fead9326568b4e759b29a340
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Que sont les stratégies de protection des applications ?
 
@@ -45,7 +45,7 @@ Vous pouvez configurer des stratégies de protection d’application pour les ap
 -   **non inscrits dans une solution de gestion d’appareils mobiles :** les appareils de cette catégorie sont généralement la propriété d’employés et ne sont pas gérés ou inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
 
 > [!IMPORTANT]
-> Vous pouvez créer des stratégies de gestion des applications mobiles pour les applications mobiles Office qui se connectent aux services Office 365. Les stratégies de protection des applications ne sont pas prises en charge pour les applications qui se connectent à des services Exchange, Skype Entreprise ou SharePoint locaux.
+> Vous pouvez créer des stratégies de gestion des applications mobiles pour les applications mobiles Office qui se connectent aux services Office 365. Les stratégies de protection des applications ne sont pas prises en charge pour les applications qui se connectent à des services Exchange ou SharePoint locaux.
 
 **Les principaux avantages de l’utilisation de stratégies de protection des applications sont les suivants :**
 

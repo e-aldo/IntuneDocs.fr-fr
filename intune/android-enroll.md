@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: 632a5b2a5f6f5188ef034bdcff927af6a7fe1a59
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrire des appareils Android
 
@@ -58,7 +58,7 @@ Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles 
    ![Capture d’écran montrant le lien pour configurer la liaison Android for Work](./media/android-work-bind.png)
 
    b. **Se connecter à Google**<br>
-   Dans la page de connexion de Google, entrez le compte Google à associer à toutes les tâches de gestion Android for Work pour ce client. Il s’agit du compte Google partagé par les administrateurs informatiques de votre organisation pour gérer et publier des applications dans la console Play for Work.
+   Dans la page de connexion de Google, entrez le compte Google à associer à toutes les tâches de gestion Android for Work pour ce client. Il s’agit du compte Google partagé par les administrateurs informatiques de votre organisation pour gérer et publier des applications dans la console Play for Work. Vous pouvez utiliser un compte Google existant ou en créer un.  Le compte que vous choisissez ne doit pas être associé à un domaine G Suite.
 
    c. **Fournir les détails de l’organisation**<br>
    Fournissez le nom de votre société comme **Nom d’organisation**. Pour **Enterprise mobility management (EMM) provider** (Fournisseur de gestion de la mobilité d’entreprise), **Microsoft Intune** doit être affiché. Acceptez le contrat Android for Work, puis choisissez **Confirmer**. Votre demande va être traitée.

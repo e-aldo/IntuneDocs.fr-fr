@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44e96ba9fac5b95e6a508b7c2c314a49c04a6d30
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a85207effabfb1f986ba3901051bd51886c5e7be
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application
 
@@ -41,7 +41,7 @@ Si l’appareil est **inscrit pour la gestion dans Intune**, l’utilisateur voi
 
 Les stratégies de protection d'application n’étant appliquées que dans le cadre de l’utilisation professionnelle de l’application, le comportement de celle-ci peut différer selon qu’elle est utilisée dans un contexte professionnel ou personnel.  
 
-Pour les applications qui prennent en charge plusieurs identités, Intune n’applique les stratégies de protection d'application que quand l’utilisateur final utilise l’application dans le contexte professionnel.  Par exemple, l’utilisateur final reçoit une invite de code confidentiel quand il accède aux données professionnelles.  Pour l’**application Outlook**, l’utilisateur final est invité à entrer un code confidentiel au lancement de l’application. Pour l’**application OneDrive**, cela se produit quand l’utilisateur final tape le compte professionnel.  Pour Microsoft **Word**, **PowerPoint* et **Excel**, cela se produit quand l’utilisateur final accède à des documents stockés à l’emplacement OneDrive Entreprise de votre société.
+Pour les applications qui prennent en charge plusieurs identités, Intune n’applique les stratégies de protection d'application que quand l’utilisateur final utilise l’application dans le contexte professionnel.  Par exemple, l’utilisateur final reçoit une invite de code confidentiel quand il accède aux données professionnelles.  Pour l’**application Outlook**, l’utilisateur final est invité à entrer un code confidentiel au lancement de l’application. Pour l’**application OneDrive**, cela se produit quand l’utilisateur final tape le compte professionnel.  Pour Microsoft **Word**, **PowerPoint** et **Excel**, cela se produit quand l’utilisateur final accède à des documents stockés à l’emplacement OneDrive Entreprise de la société.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gestion des comptes d’utilisateur sur l’appareil
 
 Intune prend en charge le déploiement de stratégies de protection d'application vers un seul compte d’utilisateur par appareil.
