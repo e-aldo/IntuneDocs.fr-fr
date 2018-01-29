@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: 
+ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f14120bc6141853177559d4561ea2da866088fb2
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 64073cb53478b1bf2373426426e0a5d414ca40c4
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Utilisation de Windows Hello Entreprise
 
@@ -50,9 +50,9 @@ Pour garantir la résolution des conflits de stratégie et l’application de la
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Créer une stratégie Windows Hello Entreprise
 
-1.  Dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
+1.  Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
 
-2.  Dans le panneau Intune, choisissez **Inscrire des appareils**, puis **Gérer** > **Windows Hello Entreprise**.
+2.  Dans le panneau Intune, choisissez **Endpoint Protection**, puis **Gérer** > **Windows Hello Entreprise**.
 
 3.  Dans le panneau qui s’ouvre, cliquez sur les paramètres **Par défaut**.
 
@@ -76,7 +76,7 @@ Pour garantir la résolution des conflits de stratégie et l’application de la
  - **Exiger des minuscules dans le code confidentiel**/**Exiger des majuscules dans le code confidentiel**/**Exiger des caractères spéciaux dans le code confidentiel**. Vous pouvez appliquer un code confidentiel plus puissant en exigeant l’utilisation de majuscules, de minuscules et de caractères spéciaux dans ce code. Choisissez parmi :
 
      - **Autorisé**. Les utilisateurs peuvent utiliser le type de caractère dans leur code confidentiel, mais cela n’est pas obligatoire.
-    
+
      - **Requis**. Les utilisateurs doivent inclure au moins l’un des types de caractères dans leur code confidentiel. Par exemple, il est courant d’exiger au moins une majuscule et un caractère spécial.
 
      - **Non autorisé** (par défaut). Les utilisateurs ne doivent pas utiliser ces types de caractères dans leur code confidentiel. (Il s’agit également du comportement appliqué si le paramètre n’est pas configuré.)<br>Les caractères spéciaux comprennent : **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**

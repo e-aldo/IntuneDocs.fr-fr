@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) avec Intune
 
@@ -61,6 +61,18 @@ Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à de
 - **Gestionnaire de stratégie et de profils** : gère la stratégie de conformité, les profils de configuration, l’inscription auprès d’Apple et les identificateurs d’appareils d’entreprise.
 - **Opérateur en lecture seule** : affiche des informations sur les utilisateurs, les appareils, l’inscription, la configuration et les applications. Il ne peut pas apporter de modifications à Intune.
 - **Gestionnaire d’applications** : gère les applications mobiles et gérées, et peut lire les informations sur les appareils.
+- **Administrateur scolaire** : gère des appareils Windows 10 dans [Intune pour l’Éducation](introduction-intune-education.md) et peut effectuer les actions suivantes : 
+
+|Autorisation|Opération|
+|---|---|
+|Données d'audit|Lire|
+|Configurations d’appareil|Affecter, Créer, Supprimer, Lire, Mettre à jour|
+|Gestionnaires d’inscription d’appareil|Lire, Mettre à jour|
+|Appareils gérés|Lire, Mettre à jour<!--, Delete [To be added in 1803]-->|
+|Applications mobiles|Affecter, Créer, Supprimer, Lire, Mettre à jour|
+|Rapports|Lire|
+|Actions à distance|Nettoyer le PC, Redémarrer, Verrouiller à distance, Mettre hors service, Synchroniser les appareils, Réinitialiser|
+|Organisation|Lire|
 
 ### <a name="to-assign-a-built-in-role"></a>Pour affecter un rôle intégré
 

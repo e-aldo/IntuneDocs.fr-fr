@@ -1,6 +1,6 @@
 ---
-title: "Comment utiliser Azure AD pour accéder à l’API Graph Intune"
-description: "Décrit les étapes nécessaires pour que les applications puissent utiliser Azure AD pour accéder à l’API Graph Intune"
+title: "Guide pratique pour utiliser Azure AD afin d’accéder aux API Intune dans Microsoft Graph"
+description: "Décrit les étapes nécessaires pour que les applications puissent utiliser Azure AD afin d’accéder aux API Intune dans Microsoft Graph."
 keywords: "rôles d’autorisation intune graphapi c# powershell"
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Comment utiliser Azure AD pour accéder à l’API Graph Intune
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Guide pratique pour utiliser Azure AD afin d’accéder aux API Intune dans Microsoft Graph
 
-[L’API Microsoft Graph](https://developer.microsoft.com/graph/) prend désormais en charge Microsoft Intune avec des API et rôles d’autorisation spécifiques.  L’API Graph utilise Azure Active Directory (Azure AD) pour l’authentification et le contrôle des accès.  
-Pour accéder à l’API Graph Intune, il vous faut :
+[L’API Microsoft Graph](https://developer.microsoft.com/graph/) prend désormais en charge Microsoft Intune avec des API et rôles d’autorisation spécifiques.  L’API Microsoft Graph utilise Azure AD (Azure Active Directory) pour l’authentification et le contrôle d’accès.  
+L’accès aux API Intune dans Microsoft Graph nécessite :
 
 - Un ID d’application avec :
 
-    - L’autorisation d’appeler Azure AD et les API Graph.
+    - L’autorisation d’appeler Azure AD et les API Microsoft Graph.
     - Les étendues d’autorisation pertinentes pour les tâches spécifiques de l’application.
 
 - Informations d'identification d'utilisateur avec :
@@ -38,11 +38,11 @@ Pour accéder à l’API Graph Intune, il vous faut :
 
 Cet article :
 
-- Montre comment inscrire une application avec un accès à l’API Graph et les rôles d’autorisation pertinents.
+- Montre comment inscrire une application avec un accès à l’API Microsoft Graph et aux rôles d’autorisation pertinents.
 
-- Décrit les rôles d’autorisation de l’API Graph Intune.
+- Décrit les rôles d’autorisation de l’API Intune.
 
-- Fournit des exemples d’authentification de l’API Graph Intune pour C# et PowerShell.
+- Fournit des exemples d’authentification de l’API Intune pour C# et PowerShell.
 
 - Décrit comment prendre en charge plusieurs clients
 
@@ -53,9 +53,9 @@ Pour en savoir plus, consultez :
 - [Intégration d'applications avec Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Comprendre OAuth 2.0](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Inscrire des applications pour l’utilisation de l’API Graph
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Inscrire des applications pour utiliser l’API Microsoft Graph
 
-Pour inscrire une application pour l’utilisation de l’API Graph :
+Pour inscrire une application pour qu’elle utilise l’API Microsoft Graph :
 
 1.  Connectez-vous au [portail Azure](https://portal.azure.com) à l’aide des informations d’identification administratives.
 
@@ -127,15 +127,15 @@ Pour inscrire une application pour l’utilisation de l’API Graph :
 
 ## <a name="intune-permission-scopes"></a>Étendues d’autorisation Intune
 
-Azure AD et l’API Graph utilisent des étendues d’autorisation pour contrôler l’accès aux ressources d’entreprise.  
+Azure AD et Microsoft Graph utilisent des étendues d’autorisation pour contrôler l’accès aux ressources d’entreprise.  
 
-Les étendues d’autorisation (également appelées _étendues OAuth_) contrôlent l’accès à des entités Intune spécifiques et à leurs propriétés. Cette section résume les étendues d’autorisation pour les fonctionnalités de l’API Graph Intune.
+Les étendues d’autorisation (également appelées _étendues OAuth_) contrôlent l’accès à des entités Intune spécifiques et à leurs propriétés. Cette section résume les étendues d’autorisation pour les fonctionnalités de l’API Intune.
 
 Pour en savoir plus :
 - [Authentification Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Étendues d’autorisation d’application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Lorsque vous accordez des autorisations à l’API Graph, vous pouvez spécifier les étendues suivantes pour contrôler l’accès aux fonctionnalités d’Intune : le tableau suivant récapitule les étendues d’autorisation de l’API Graph Intune.  La première colonne affiche le nom de la fonctionnalité telle qu’il apparaît dans le portail Azure, et la deuxième colonne fournit le nom de l’étendue d’autorisation.
+Quand vous accordez des autorisations à Microsoft Graph, vous pouvez spécifier les étendues suivantes pour contrôler l’accès aux fonctionnalités d’Intune : le tableau suivant récapitule les étendues d’autorisation de l’API Intune.  La première colonne affiche le nom de la fonctionnalité telle qu’il apparaît dans le portail Azure, et la deuxième colonne fournit le nom de l’étendue d’autorisation.
 
 Paramètre _Activer l’accès_ | Nom de l’étendue
 :--|:--
@@ -153,7 +153,7 @@ __Lire la configuration Microsoft Intune__ | [DeviceManagementServiceConfig.Read
 
 Le tableau liste les paramètres dans leur ordre d’apparition dans le portail Azure. Les sections suivantes décrivent les étendues par ordre alphabétique.
 
-À ce stade, toutes les étendues d’autorisation Intune requièrent un accès administrateur.  Cela signifie que vous avez besoin des informations d’identification correspondantes lors de l’exécution des applications ou des scripts qui accèdent aux ressources de l’API Graph Intune.
+À ce stade, toutes les étendues d’autorisation Intune requièrent un accès administrateur.  Cela signifie que vous avez besoin des informations d’identification correspondantes lors de l’exécution des applications ou des scripts qui accèdent aux ressources de l’API Intune.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Lorsque vous testez l’exemple, vous pourriez recevoir des erreurs d’état HT
 
 Si cela se produit, vérifiez que :
 
-- Vous avez mis à jour l’ID d’application sur une valeur autorisée à utiliser l’API Graph et l’étendue d’autorisation `DeviceManagementManagedDevices.Read.All`.
+- Vous avez mis à jour l’ID d’application sur une valeur autorisée à utiliser l’API Microsoft Graph et l’étendue d’autorisation `DeviceManagementManagedDevices.Read.All`.
 
 - Vos informations d’identification au client prennent en charge les fonctions d’administration.
 

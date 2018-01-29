@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
 > [!NOTE]
 > Vous pouvez d’abord consulter la [Présentation du SDK de l’application Intune](app-sdk.md), qui aborde les fonctionnalités actuelles du SDK et la manière de préparer l’intégration sur chaque plateforme prise en charge.
 
-Le Kit de développement logiciel SDK (SDK) d’application Microsoft Intune pour Android vous permet d’incorporer des stratégies de protection des applications Intune (également appelées stratégies **APP** ou GAM) dans votre application Android native. Une application compatible avec Intune est une application intégrée au SDK d’application Intune. Les administrateurs Intune peuvent facilement déployer des stratégies de protection des applications sur votre application compatible avec Intune quand Intune gère activement l’application.
+Le Kit de développement logiciel SDK (SDK) d’application Microsoft Intune pour Android vous permet d’incorporer des stratégies de protection des applications Intune (également appelées stratégies **APP** ou GAM) dans votre application Android native. Une application gérée par Intune est une application intégrée au kit SDK d’application Intune. Les administrateurs Intune peuvent facilement déployer des stratégies de protection des applications sur votre application gérée par Intune quand Intune gère activement l’application.
 
 
 ## <a name="whats-in-the-sdk"></a>Contenu du SDK
@@ -55,11 +55,11 @@ Le SDK de l’application Intune est un projet Android compilé. Ainsi, il est e
 Le SDK d’application Intune pour Android repose sur la présence de l’application [Portail d’entreprise](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) sur l’appareil pour activer les stratégies de protection des applications. Le portail d’entreprise récupère les stratégies de protection des applications à partir du service Intune. Quand l’application s’initialise, elle charge la stratégie et le code pour appliquer cette stratégie à partir du portail d’entreprise.
 
 > [!NOTE]
-> Quand l’application Portail d’entreprise n’est pas sur l’appareil, une application compatible avec Intune se comporte comme une application normale qui ne prend pas en charge les stratégies de protection des applications Intune.
+> Quand l’application Portail d’entreprise n’est pas sur l’appareil, une application gérée par Intune se comporte comme une application normale qui ne prend pas en charge les stratégies de protection des applications Intune.
 
 Pour la protection des applications sans inscription des appareils, l’utilisateur n’est _**pas**_ obligé d’inscrire l’appareil à l’aide de l’application Portail d’entreprise.
 
-## <a name="sdk-integration"></a>Intégration du SDK
+## <a name="sdk-integration"></a>Intégration au kit SDK
 
 ### <a name="build-integration"></a>Intégration de build
 
@@ -762,7 +762,7 @@ Le guide de sauvegarde des données spécifie un algorithme général pour la re
 
 ## <a name="multi-identity-optional"></a>Multi-identité (facultatif)
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Vue d’ensemble
 Par défaut, le SDK d’application Intune applique une stratégie à l’application dans son ensemble. La multi-identité est une fonctionnalité de protection des applications Intune qui peut être activée pour permettre d’appliquer la stratégie à un niveau par identité. Ceci nécessite une participation nettement accrue de l’application par rapport à d’autres fonctionnalités de protection des applications.
 
 L’application *doit* informer le SDK du moment où elle va changer l’identité active. Dans certains cas, le SDK notifie aussi l’application du moment où un changement d’identité est nécessaire. Toutefois, dans la plupart des cas, la gestion des applications mobiles n’a pas connaissance des données affichées dans l’interface utilisateur ou utilisées sur un thread à un moment donné. Elle s’appuie donc sur l’application pour définir l’identité appropriée afin d’éviter la fuite de données. Dans les sections suivants, certains scénarios nécessitant une action de l’application sont appelés.
@@ -875,7 +875,7 @@ Vous pouvez aussi substituer une méthode dans `MAMActivity` si vous voulez que 
 
 ### <a name="implicit-identity-changes"></a>Modifications d’identité implicites
 
-Outre la possibilité pour l’application de définir l’identité, l’identité d’un contexte ou d’un thread peut changer en fonction de l’entrée de données à partir d’une autre application compatible avec Intune ayant une stratégie de protection des applications.
+Outre la possibilité pour l’application de définir l’identité, l’identité d’un contexte ou d’un thread peut changer en fonction de l’entrée de données à partir d’une autre application gérée par Intune ayant une stratégie de protection des applications.
 
 #### <a name="examples"></a>Exemples
 
@@ -947,7 +947,7 @@ La méthode `onMAMIdentitySwitchRequired` est appelée pour toutes les modificat
 Les opérations sur le thread d’interface utilisateur distribuent couramment des tâches en arrière-plan à un autre thread. Une application à plusieurs identités doit vérifier que ces tâches en arrière-plan sont exécutées avec l’identité appropriée, celle-ci étant souvent la même que l’identité utilisée par l’activité à l’origine de la distribution. Le SDK MAM fournit `MAMAsyncTask` et `MAMIdentityExecutors` pour vous aider à conserver l’identité.
 #### <a name="mamasynctask"></a>MAMAsyncTask
 
-Pour utiliser `MAMAsyncTask`, héritez simplement de cette tâche, et non d’AsyncTask, et remplacez les substitutions de `doInBackground` et `onPreExecute` par `doInBackgroundMAM` et `onPreExecuteMAM` (respectivement). Le constructeur `MAMAsyncTask` accepte un contexte d’activité. Exemple :
+Pour utiliser `MAMAsyncTask`, héritez simplement de cette tâche, et non d’AsyncTask, et remplacez les substitutions de `doInBackground` et `onPreExecute` par `doInBackgroundMAM` et `onPreExecuteMAM` (respectivement). Le constructeur `MAMAsyncTask` accepte un contexte d’activité. Par exemple :
 
 ```java
   AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
@@ -964,7 +964,7 @@ Pour utiliser `MAMAsyncTask`, héritez simplement de cette tâche, et non d’As
 ```
 
 ### <a name="mamidentityexecutors"></a>MAMIdentityExecutors
-`MAMIdentityExecutors` vous permet d’inclure dans un wrapper une instance existante de `Executor` ou de `ExecutorService` comme un `Executor`/`ExecutorService` conservant l’identité à l’aide des méthodes `wrapExecutor` et `wrapExecutorService`. Par exemple
+`MAMIdentityExecutors` vous permet d’empaqueter une instance existante de `Executor` ou de `ExecutorService` comme un `Executor`/`ExecutorService` conservant l’identité à l’aide des méthodes `wrapExecutor` et `wrapExecutorService`. Par exemple
 
 ```java
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
@@ -1353,6 +1353,32 @@ Voici la liste complète des attributs de style autorisés, les éléments d’i
 | Couleur d’accentuation | Bordure de la zone de code PIN en cas de mise en surbrillance <br> Liens hypertexte |accent_color | Couleur |
 | Logo de l’application | Grande icône qui apparaît dans l’écran de code PIN d’application Intune | logo_image | Dessinable |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Nécessité d’une invite de connexion utilisateur pour une inscription au service APP-WE automatique, nécessité des stratégies de protection des applications Intune afin d’utiliser votre application métier Android intégrée au kit SDK et activation de l’authentification unique ADAL (facultatif)
+
+Vous trouverez ci-dessous des conseils afin d’exiger une invite utilisateur au lancement de l’application pour une inscription au service APP-WE automatique (désignée comme **inscription par défaut** dans cette section), ainsi que des stratégies de protection des applications Intune pour autoriser uniquement les utilisateurs protégés par Intune à utiliser votre application métier Android intégrée au kit SDK. Ces conseils portent également sur l’activation de l’authentification unique pour votre application métier Android intégrée au kit SDK. Cela n’est **pas** pris en charge pour les applications du Windows Store qui peuvent être utilisées par des utilisateurs non-Intune.
+
+> [!NOTE] 
+> Les avantages de **l’inscription par défaut** incluent une méthode simplifiée d’obtention de stratégie à partir du service APP-WE pour une application sur l’appareil.
+
+### <a name="general-requirements"></a>Conditions générales requises
+* L’équipe du kit SDK Intune nécessite l’ID de votre application. Vous pouvez le localiser par le biais du [portail Azure](https://portal.azure.com/), sous **Toutes les applications**, dans la colonne **ID d’application**. Pour contacter l’équipe du kit SDK Intune, envoyez un e-mail à l’adresse msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Utilisation du kit SDK Intune
+Ces instructions sont spécifiques à toutes les applications Android et Xamarin qui souhaitent exiger des stratégies de protection des applications Intune à utiliser sur l’appareil d’un utilisateur final.
+
+1. Configurez la bibliothèque ADAL à l’aide de la procédure définie dans le [Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> Le terme « ID client » associé à votre application est le même que le terme « ID d’application » du portail Azure. 
+* Pour activer l’authentification unique, la configuration numéro 2 dans « Configurations ADAL courantes » est celle dont vous avez besoin.
+
+2. Activez l’inscription par défaut en insérant la valeur suivante dans le manifeste : ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Il doit s’agir de la seule intégration MAM-WE dans l’application. Si d’autres tentatives sont effectuées pour appeler des API MAMEnrollmentManager, des conflits peuvent se produire.
+
+3. Activez la stratégie GAM requise en insérant la valeur suivante dans le manifeste : ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Cela oblige l’utilisateur à télécharger l’application Portail d’entreprise sur l’appareil et à effectuer le flux d’inscription par défaut avant utilisation.
+
 ## <a name="limitations"></a>Limitations
 
 ### <a name="file-size-limitations"></a>Limitations concernant la taille des fichiers
@@ -1380,7 +1406,7 @@ Pour les grandes bases de code qui s’exécutent sans [ProGuard](http://proguar
     
 ### <a name="exported-services"></a>Services exportés
 
- Le fichier AndroidManifest.xml inclus dans le SDK d’application Intune contient **MAMNotificationReceiverService**. Il doit s’agir d’un service exporté pour autoriser le portail d’entreprise à envoyer des notifications à une application compatible. Le service vérifie l’appelant pour s’assurer que seul le Portail d’entreprise est autorisé à envoyer des notifications.
+ Le fichier AndroidManifest.xml inclus dans le kit SDK d’application Intune contient **MAMNotificationReceiverService**. Il doit s’agir d’un service exporté pour autoriser le portail d’entreprise à envoyer des notifications à une application gérée. Le service vérifie l’appelant pour s’assurer que seul le Portail d’entreprise est autorisé à envoyer des notifications.
 
 ### <a name="reflection-limitations"></a>Limitations de la réflexion
 Certaines classes de base MAM (MAMActivity, MAMDocumentsProvider, etc.) contiennent des méthodes (basées sur les classes de base Android d’origine) qui utilisent des types de paramètre ou de retour uniquement présents au-delà de certains niveaux d’API. Pour cette raison, il n’est pas toujours possible d’utiliser la réflexion pour énumérer toutes les méthodes des composants d’une application. Cette restriction n’est pas limitée à MAM. Elle s’applique également si l’application a elle-même implémenté ces méthodes à partir des classes de base Android.

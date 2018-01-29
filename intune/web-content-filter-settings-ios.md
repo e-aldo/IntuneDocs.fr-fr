@@ -6,20 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/03/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d0d8a6e198a58fc513645db68ae3a3ef84a3653
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Paramètres de filtrage de contenu web pour les appareils iOS
 
@@ -34,7 +33,7 @@ Si vous ne spécifiez aucune URL, les utilisateurs ne peuvent accéder à aucun 
 
 
 
-## <a name="get-started"></a>Prendre en main
+## <a name="get-started"></a>Prise en main
 
 1. Dans le panneau Fonctionnalités de l’appareil, sélectionnez **Filtre de contenu web (mode supervisé uniquement)**.
 2. Dans le panneau **Filtre de contenu web** panneau, choisissez le **type de filtre** que vous souhaitez configurer. Vous pouvez choisir plusieurs options :
@@ -47,8 +46,11 @@ Si vous ne spécifiez aucune URL, les utilisateurs ne peuvent accéder à aucun 
 ## <a name="configure-urls"></a>Configurer les URL
 
 1. Dans le panneau **Filtre de contenu web**, choisissez l’un des paramètres suivants si nécessaire :
-    - **URL autorisées** : dans le panneau **URL autorisées**, entrez les URL que vous souhaitez autoriser (sans passer par le filtre web d’Apple), puis appuyez sur Entrée après chaque URL.
-    - **URL bloquées** : dans le panneau **URL bloquées**, entrez les URL que vous souhaitez bloquer (quel que soit le filtre web d’Apple), puis appuyez sur Entrée après chaque URL.
+   - **URL autorisées** : dans le panneau **URL autorisées**, entrez les URL que vous souhaitez autoriser (sans passer par le filtre web d’Apple), puis appuyez sur Entrée après chaque URL.
+     > [!NOTE]
+     > Les URL que vous spécifiez ici sont celles que vous ne souhaitez pas soumettre au filtre web d’Apple. Ces URL ne représentent pas une liste des seuls sites web autorisés. Si c’est ce que vous souhaitez, utilisez **Sites web spécifiques uniquement**.
+
+   - **URL bloquées** : dans le panneau **URL bloquées**, entrez les URL que vous souhaitez bloquer (quel que soit le filtre web d’Apple), puis appuyez sur Entrée après chaque URL.
 2. Lorsque vous avez terminé, cliquez sur **OK**.
 
 
