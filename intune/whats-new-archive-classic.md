@@ -4,7 +4,7 @@ description: "Nouveautés archivées de Microsoft Intune"
 keywords: 
 author: brenduns
 ms.author: brenduns
-manager: angrobe
+manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4d83b8b83cba0dab1fc089309201aa591b3d26e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: af181ce63900257699e88343b2de2ac4a28685de
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Nouveautés du portail classique Intune - mois précédents
 
@@ -38,7 +38,7 @@ Microsoft MyApps bénéficie d’une meilleure prise en charge dans Managed Brow
 
 Managed Browser reçoit des icônes mises à jour pour les versions iOS et Android de l’application. La nouvelle icône contient le badge Intune mis à jour, pour une meilleure cohérence avec d’autres applications Enterprise Mobility + Security (EM+S). Vous pouvez voir la nouvelle icône de Managed Browser sur la [page Nouveautés de l’interface utilisateur des applications Intune](whats-new-app-ui.md).
 
-Le portail d’entreprise reçoit également des icônes mises à jour pour les versions Android, iOS et Windows de l’application, afin d’améliorer la cohérence avec d’autres applications dans EM + S. Ces icônes seront publiées progressivement sur toutes les plateformes du mois d’avril jusqu’à fin mai.
+Le portail d’entreprise reçoit également des icônes mises à jour pour les versions Android, iOS et Windows de l’application pour améliorer la cohérence avec les autres applications EM+S. Ces icônes seront publiées progressivement sur toutes les plateformes du mois d’avril jusqu’à fin mai.
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicateur de progression de connexion dans le portail d’entreprise Android <!--953374-->
 
@@ -327,7 +327,7 @@ L’application Portail d’entreprise pour Android utilise Google Play Services
 |Console d’administration Intune| Application Portail d’entreprise Intune pour Android |Site web du portail d’entreprise Intune|   
 |---|---|---|
 |réinitialisation complète| Supprimer un appareil distant| Supprimer l’appareil (local et distant)|
-|réinitialisation sélective| Réinitialiser l’appareil| Réinitialiser un appareil|
+|Réinitialisation sélective| Réinitialiser l’appareil| Réinitialiser un appareil|
 |Déploiements d’applications nouvelles ou mises à jour| Installer des applications métier disponibles| Réinitialisation du code secret d’un appareil|
 |Verrouillage à distance|||
 |Réinitialiser le code secret|||

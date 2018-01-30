@@ -4,7 +4,7 @@ description: "Cet article permet de déterminer les exigences du scénario de ca
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65a1fb8fb41fa8d9f3e707c73bf752a997a8a1a1
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 7f4f080201d1a089a8ae10a6acf81c0c28fa33c9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Déterminer les exigences du scénario d’utilisation
 
@@ -30,11 +30,11 @@ Vous utilisez peut-être également des groupes organisationnels pour le scénar
 
 Voici quelques exemples d'exigences de cas d'utilisation d'une organisation, illustrant différents ensembles d'exigences pour chaque scénario de cas d'utilisation et de cas d'utilisation secondaire, groupe organisationnel et plateforme d'appareils mobiles. Vous pouvez également utiliser le tableau suivant pour entrer les exigences de cas d’utilisation de votre organisation :
 
-| **Scénarios d'utilisation** | **Cas d'utilisation secondaires** | **Groupes** | **Plateformes d'appareils** | **Requirements** |
+| **Scénarios d'utilisation** | **Cas d'utilisation secondaires** | **Groupes** | **Plateformes d'appareils** | **Configuration requise** |
 |:---:|:---:|:---:|:---:|:---:|
 | Entreprise | Travailleur de l'information | Ressources humaines, finances | iOS | Messagerie sécurisée, paramètres des appareils, profils, applications |                                                          
 | Entreprise | Cadres | Ressources humaines, finances | iOS | Messagerie sécurisée, paramètres des appareils, profils, applications |                                                         
-| Entreprise | Kiosque | Commerce | Android | Paramètres des appareils, profils, applications |
+| Entreprise | Kiosk | Commerce | Android | Paramètres des appareils, profils, applications |
 | BYOD | Travailleur de l'information | Marketing, Ventes | iOS | Messagerie sécurisée, paramètres des appareils, profils, applications |                                                         
 | BYOD | Cadres | Marketing, Ventes | iOS | Messagerie sécurisée, paramètres des appareils, profils, applications |
 

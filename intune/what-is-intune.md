@@ -5,7 +5,7 @@ description: "Découvrez les bases d’Intune dans le portail Azure et comment c
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: angrobe
+nmanager: dougeby
 ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: d83b3d6609e5fd6839e17e46520e4ef3d4551568
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: 19b5d98165be67b32afa86ba942c42fc4a3048b3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introduction à Microsoft Intune dans le portail Azure
 
@@ -69,7 +69,7 @@ La documentation reflète la disposition du portail Azure pour faciliter la rech
 
 ### <a name="introduction-and-get-started"></a>Introduction et prise en main
 Cette section contient une [introduction](introduction-intune.md) qui vous explique comment prendre en main Intune.
-### <a name="plan-and-design"></a>Planifier et concevoir
+### <a name="plan-and-design"></a>Planification et conception
 Informations pour vous aider à [planifier et concevoir](/intune-classic/plan-design/introduction) votre environnement Intune.
 ### <a name="device-enrollment"></a>Inscription des appareils
 [Apprenez à configurer la gestion de vos appareils par Intune](device-enrollment.md).

@@ -5,7 +5,7 @@ description: "En savoir plus sur l’inscription pour les appareils iOS, Android
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc0105bb786d8b1e569b11898b0d3757feba406a
-ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
+ms.openlocfilehash: a94703ecc1d7fd464f565855bb9b8dd9ee3c3bfb
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-is-device-enrollment"></a>Qu’est-ce que l’inscription d’appareils ?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -62,7 +62,7 @@ Les appareils BYOD incluent les téléphones, les tablettes et les PC personnels
 ## <a name="corporate-owned-device"></a>Appareil d’entreprise
 Les appareils d’entreprise incluent les téléphones, les tablettes et les PC appartenant à l’organisation et distribués aux employés. L’inscription des appareils d’entreprise prend en charge des scénarios comme l’inscription automatique, les appareils partagés ou les exigences d’inscription pré-autorisée. Une méthode courante pour inscrire des appareils d’entreprise est l’utilisation du gestionnaire de l’inscription d’appareil par un administrateur ou un responsable. Vous pouvez inscrire des appareils iOS directement via les outils du Programme d’inscription des appareils fournis par Apple. Les appareils avec un numéro IMEI peuvent également être identifiés et référencés comme appartenant à l’entreprise.
 
-### <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareils
+### <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareil
 Le gestionnaire d’inscription d’appareil est un compte d’utilisateur spécial permettant d’inscrire et de gérer plusieurs appareils d’entreprise. Les responsables peuvent installer le Portail d’entreprise et inscrire de nombreux appareils sans utilisateur. En savoir plus sur le [gestionnaire d’inscription d’appareil](./device-enrollment-manager-enroll.md).
 
 ### <a name="apple-device-enrollment-program"></a>Programme d'inscription d'appareils Apple

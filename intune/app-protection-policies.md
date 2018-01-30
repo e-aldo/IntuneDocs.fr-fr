@@ -5,7 +5,7 @@ description: "Découvrez comment les stratégies de protection d’application I
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c282a98ecf357f650fbfa14499a206c4d283f81a
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 4fbb9a1f6697a8339a2854e4352749ca04bb612e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Guide pratique de gestion et affectation des stratégies de protection des applications
 
@@ -60,7 +60,7 @@ Si vous recherchez une liste d’applications prises en charge par la gestion de
 6.  Choisissez **OK** pour enregistrer cette configuration. Vous êtes maintenant de retour dans le panneau **Ajouter une stratégie** . Choisissez **Créer** pour créer la stratégie et enregistrer vos paramètres.
 
 
-Quand vous avez fini de créer une stratégie comme décrit dans la procédure précédente, elle n’est pas déployée sur les utilisateurs. Pour déployer une stratégie, consultez la section suivante, « Déployer une stratégie sur les utilisateurs ».
+Quand vous avez fini de créer une stratégie comme décrit dans la procédure précédente, elle n’est déployée pour aucun utilisateur. Pour déployer une stratégie, consultez la section suivante, « Déployer une stratégie sur les utilisateurs ».
 
 ## <a name="deploy-a-policy-to-users"></a>Déployer une stratégie sur les utilisateurs
 
@@ -78,7 +78,7 @@ Seuls les utilisateurs en possession de licences Microsoft Intune sont affectés
 >[!IMPORTANT]
 > Si vous utilisez Intune avec Configuration Manager pour gérer vos appareils iOS et Android, la stratégie est appliquée uniquement aux utilisateurs figurant directement dans le groupe que vous avez sélectionné. Les membres des groupes enfants imbriqués dans le groupe que vous avez sélectionné ne sont pas affectés.
 
-Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour plus d'informations, voir :
+Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour plus d'informations, consultez :
 * [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](app-protection-enabled-apps-android.md)
 * [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](app-protection-enabled-apps-ios.md)
 

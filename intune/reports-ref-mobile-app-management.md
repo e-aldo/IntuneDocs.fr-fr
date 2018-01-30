@@ -4,7 +4,7 @@ description: "Rubrique de référence sur la catégorie Gestion des applications
 keywords: "Entrepôt de données Intune"
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b73ba946bdf5e95231b3387885e353a170dbd17
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: d07d6e012a9c74c0ba68d59f98c05e5169789cf0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Informations de référence sur les entités de gestion des applications mobiles (GAM)
 
@@ -58,9 +58,9 @@ L’entité **MamApplicationInstance** répertorie les applications GAM gérées
 | ApplicationId |ID de cette application GAM |com.microsoft.groupies-daily.<IOS> |
 | ApplicationVersion |Version de cette application MAM. |2 |
 | CreatedDate |Date de création de cet enregistrement de l’instance d’application GAM. La valeur peut être Null. |11/23/2016 12:00:00 AM |
-| Plate-forme |Plateforme de l’appareil sur lequel cette application MAM est installée. |2 |
+| Plateforme |Plateforme de l’appareil sur lequel cette application MAM est installée. |2 |
 | PlatformVersion |Version de la plateforme de l’appareil sur lequel cette application MAM est installée. |2.2 |
-| SdkVersion |Version du SDK MAM avec laquelle cette application MAM a été enveloppée (wrapped). |3.2 |
+| SdkVersion |Version du SDK MAM avec laquelle cette application MAM a été enveloppée (wrapped). |3,2 |
 | DeviceId |ID de l’appareil sur lequel cette application MAM est installée. |b66bc706-ffff-7437-0340-032819502773 |
 | DeviceName |Nom de l’appareil sur lequel cette application MAM est installée. |"MyDevice" |
 | IsDeleted |Indique si l’enregistrement de cette application GAM a été mis à jour. <br>True : cette instance d’application GAM a un nouvel enregistrement avec des champs mis à jour dans cette table. <br>False : dernier enregistrement pour cette instance d’application GAM. |Vrai/Faux |
@@ -125,6 +125,6 @@ L’entité **MamPlatform** répertorie les noms et types des plateformes sur le
 | Propriété | Description | Exemple |
 |---------|------------|--------|
 | PlatformKey |Identificateur unique de la plateforme dans l’entrepôt de données (clé de substitution). |123 |
-| Plate-forme |Identificateur unique de la plateforme (semblable à PlatformKey, mais il s’agit d’une clé naturelle). |123 |
-| PlatformName |Nom de la plateforme |Non disponible <br>Aucune <br>Windows <br>IOS <br>Android. |
+| Plateforme |Identificateur unique de la plateforme (semblable à PlatformKey, mais il s’agit d’une clé naturelle). |123 |
+| PlatformName |Nom de la plateforme |non disponible <br>Aucune <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc |Date et heure UTC de la dernière modification de cette plateforme dans l’entrepôt de données. |11/23/2016 12:00:00 AM |

@@ -5,7 +5,7 @@ description: "Apprenez à utiliser les stratégies de configuration d’applicat
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a39b2d120a804d32b93b7a240af246327514b1b7
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 97084d0155788fc6aa0604454b46e783a3eb271b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Ajouter des stratégies de configuration d’applications pour les appareils iOS gérés | Microsoft Docs
 
@@ -51,7 +51,7 @@ Utilisez des stratégies de configuration d’applications dans Microsoft Intune
 6. Sélectionnez **iOS** comme **Plateforme**.
 7.  Choisissez **Application associée**. Ensuite, dans le panneau **Application associée**, choisissez l’application gérée pour laquelle vous souhaitez appliquer la configuration.
 8.  Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**.
-9. Sélectionnez **Format des paramètres de configuration**. Sélectionnez l’un des paramètres suivants :
+9. Sélectionnez **Format des paramètres de configuration**. Sélectionnez l’un des paramètres suivants :
     - **[Utiliser le concepteur de configuration](#Use-the-configuration-designer)**
     - **[Entrer des données XML](#enter-xml-data)**
 10. Choisissez **OK**, puis **Ajouter**.

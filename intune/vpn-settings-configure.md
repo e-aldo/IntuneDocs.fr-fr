@@ -5,7 +5,7 @@ description: "Apprenez à utiliser Intune pour configurer des connexions VPN sur
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5bb34d9f180240e2ea03d43f42dc9ea8aee7adcd
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 3637ad08e097e4edcd527b3603dd00e1eac47f71
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres VPN dans Microsoft Intune
 
@@ -33,12 +33,12 @@ Par exemple, supposons que vous voulez approvisionner tous les appareils iOS en 
 
 Vous pouvez créer des profils VPN à l’aide des types de connexions suivants :
 
-|Type de connexion|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Type de connexion|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Pulse Secure|Oui|Oui|Oui|Oui|Oui|Oui|
 |Cisco (IPSec)|Non|Oui|Non|Non|Non|Non|
 |Citrix|Oui|Oui|Non|Non|Non|Oui|
-|Client F5 Microsoft Edge|Oui|Oui|Oui|Oui|Oui|Oui|
+|Client F5 Edge|Oui|Oui|Oui|Oui|Oui|Oui|
 |Dell SonicWALL Mobile Connect|Oui|Oui|Oui|Oui|Oui|Oui|
 |Check Point Capsule VPN|Oui|Oui|Oui|Oui|Oui|Oui|
 |Cisco AnyConnect|Oui|Oui|Oui|Non|Non|Non|

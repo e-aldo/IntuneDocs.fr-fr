@@ -5,7 +5,7 @@ description: "Utilisez la conformité pour sécuriser les appareils gérés par 
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 82b26d351949e6705a0438bee8cc712a9e624990
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Intégrer Jamf Pro à Intune pour des raisons de conformité
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/05/2018
 
 Si votre organisation utilise [Jamf Pro](https://www.jamf.com) pour gérer les Mac des utilisateurs finaux, vous pouvez vous servir des stratégies de conformité Microsoft Intune et de l’accès conditionnel Azure Active Directory pour faire en sorte que les appareils de votre organisation soient conformes.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 Vous aurez besoin des éléments suivants pour configurer l’accès conditionnel avec Jamf Pro :
 
@@ -94,7 +94,7 @@ Jamf Pro capture des données d’inventaire sur les appareils macOS gérés. Ja
 
 * ID d’appareil Azure AD
 * État de l’inventaire Jamf (état de l’inventaire d’un ordinateur enregistré auprès de Jamf Pro au cours des dernières 24 heures)
-* Version du système d'exploitation
+* Version de système d'exploitation
 * ID d’utilisateur Azure AD
 * Chiffré (FileVault 2)
 * État de l’opérateur de contrôle d’appels
@@ -112,18 +112,18 @@ Jamf Pro capture des données d’inventaire sur les appareils macOS gérés. Ja
 * ROM de démarrage
 * Vitesse du bus
 * Taille de cache
-* Nom du périphérique
+* Nom de l'appareil
 * Jonction de domaine
 * ID Jamf
 * Adresse MAC
-* Make
+* Fabricant
 * Modèle
 * Identificateur du modèle
 * Vitesse de la carte réseau
 * Nombre de cœurs
 * Nombre de processeurs
-* Système d’exploitation
-* Plate-forme
+* Système d'exploitation
+* Plateforme
 * vitesse du processeur
 * Type de processeur
 * Adresse MAC secondaire

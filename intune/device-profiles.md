@@ -5,7 +5,7 @@ description: "Découvrez plus d’informations sur les profils d’appareil Intu
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 101e19a9de67a3a47f488988957bc1e7ef7626a3
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0c745f9f745802e0de7a58e3dd7570c0e363ab5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Que sont les profils d’appareil Microsoft Intune ?
 
@@ -33,7 +33,7 @@ Quand vous ouvrez cette charge de travail, les options suivantes sont disponible
 - **Gérer les profils** : cette section vous permet de créer des profils de configuration d’appareil. Vous trouverez une liste de tous les types de profils que vous pouvez créer plus loin dans cette rubrique.
 - **Configurer l’autorité de certification** : ce flux de travail présente les étapes nécessaires pour configurer des profils de certificats Intune.
 
-## <a name="getting-started"></a>Mise en route
+## <a name="getting-started"></a>Prise en main
 
 Le flux de travail pour la création de profils d’appareil est identique pour tous les profils. Pour plus d’informations, lisez le [Guide pratique pour créer des profils de configuration d’appareil Microsoft Intune](device-profile-create.md). Pour des informations spécifiques sur la création de paramètres pour chaque type de profil, lisez la suite.
 

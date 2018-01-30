@@ -5,7 +5,7 @@ description: "Découvrez comment configurer votre infrastructure avant de créer
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 5aea88aa8898380c54867090650bd16d8bf60f3c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurer et gérer les certificats SCEP avec Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +36,7 @@ Cette rubrique vous montre comment configurer votre infrastructure, puis comment
 Le serveur NDES doit être joint au domaine qui héberge l’autorité de certification et ne doit pas se trouver sur le même serveur que l’autorité de certification. Vous trouverez plus d’informations sur le déploiement du serveur NDES dans une forêt distincte, un réseau isolé ou un domaine interne dans [Utilisation d’un module de stratégie avec le service d’inscription de périphérique réseau](https://technet.microsoft.com/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector** : utilisez le portail Azure pour télécharger le programme d’installation de **Certificate Connector** (**ndesconnectorssetup.exe**). Vous pouvez ensuite exécuter **ndesconnectorssetup.exe** sur l'ordinateur où vous souhaitez installer Certificate Connector. 
--  **Serveur proxy d’application web** (facultatif) : utilisez un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web (WAP). Cette configuration :
+-  **Serveur proxy d’application web** (facultatif) : utilisez un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web (WAP). Cette configuration :
     -  Permet aux appareils de recevoir des certificats à l'aide d'une connexion Internet.
     -  Est une recommandation de sécurité lorsque les appareils se connectent via Internet pour recevoir et renouveler les certificats.
 
@@ -70,7 +70,7 @@ Nous vous recommandons de publier le serveur NDES via un proxy, comme le [proxy 
 |**Compte de service NDES**|Spécifiez un compte d'utilisateur de domaine à utiliser comme compte de service NDES.|
 
 ## <a name="configure-your-infrastructure"></a>Configurer votre infrastructure
-Avant de configurer les profils de certificat, vous devez effectuer les tâches suivantes, ce qui nécessite la connaissance de Windows Server 2012 R2 et des services de certificats Active Directory :
+Avant de configurer les profils de certificat, vous devez effectuer les tâches suivantes, ce qui nécessite la connaissance de Windows Server 2012 R2 et des services de certificats Active Directory :
 
 **Étape 1** : créer un compte de service NDES
 
@@ -170,7 +170,7 @@ Dans cette tâche, vous allez :
         > [!TIP]
         > Dans la page **Progression de l'installation** de l'Assistant, ne cliquez pas sur **Fermer**. Cliquez à la place sur le lien **Configurer les services de certificats Active Directory sur le serveur de destination**. Cette opération ouvre l'Assistant **Configuration AD CS** que vous utilisez pour la tâche suivante. Une fois l'Assistant Configuration AD CS ouvert, vous pouvez fermer l'Assistant Ajout de rôles et de fonctionnalités.
 
-    2.  Lorsque NDES est ajouté au serveur, l'Assistant installe également IIS. Vérifiez qu'IIS a les configurations suivantes :
+    2.  Lorsque NDES est ajouté au serveur, l'Assistant installe également IIS. Vérifiez qu'IIS a les configurations suivantes :
 
         -   **Serveur web** &gt; **Sécurité** &gt; **Filtrage des demandes**
 
@@ -217,7 +217,7 @@ Dans cette tâche, vous allez :
 
     Dans la page **Confirmation** , cliquez sur **Configurer** pour terminer l'Assistant.
 
-2.  Une fois l'Assistant terminé, modifiez la clé de Registre suivante sur le serveur NDES :
+2.  Une fois l'Assistant terminé, modifiez la clé de Registre suivante sur le serveur NDES :
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
 
@@ -232,7 +232,7 @@ Dans cette tâche, vous allez :
 
 3. Le serveur NDES reçoit de très longues URL (requêtes), qui nécessitent l’ajout de deux entrées au Registre :
 
-    |Localisation|Valeur|Type|Niveau|
+    |Emplacement|Valeur|Type|Niveau|
     |-------|-----|----|----|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxFieldLength|DWORD|65534 (décimal)|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (décimal)|
@@ -283,11 +283,11 @@ Dans cette tâche, vous allez :
 
     **Longueur maximale des URL (octets)** = **65534**
 
-3.  Vérifiez la clé de Registre suivante :
+3.  Vérifiez la clé de Registre suivante :
 
     **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters**
 
-    Vérifiez que les valeurs suivantes sont définies en tant qu'entrées DWORD :
+    Vérifiez que les valeurs suivantes sont définies en tant qu'entrées DWORD :
 
     Nom : **MaxFieldLength**, avec une valeur décimale de **65534**
 
@@ -321,7 +321,7 @@ Dans cette tâche, vous allez :
 4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
 
     > [!TIP]
-    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
+    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
     >
     > **&lt;chemin_installation&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -375,7 +375,7 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
         - **Personnalisé** : lorsque vous sélectionnez cette option, un autre champ de liste déroulante s’affiche. Ce champ vous permet d’entrer un format de nom d’objet personnalisé. Les deux variables prises en charge pour le format personnalisé sont **Nom courant (cn)** et **Message électronique (e)**. En combinant une ou plusieurs ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui-ci : **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** Dans cet exemple, vous avez créé un format de nom d’objet qui, en plus des variables CN et E, utilise des chaînes pour les valeurs Organizational Unit (Unité organisationnelle), Organization (Organisation), Location (Emplacement), State (État) et Country (Pays). [Cette rubrique](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) illustre la fonction **CertStrToName** et ses chaînes prises en charge.
         
     - **Autre nom de l’objet** : spécifiez comment Intune crée automatiquement les valeurs pour l’autre nom de l’objet dans la demande de certificat. Par exemple, si vous avez sélectionné un type de certificat utilisateur, vous pouvez inclure le nom d'utilisateur principal (UPN) dans l'autre nom de l'objet. Si le certificat client est utilisé pour l’authentification sur un serveur de stratégie réseau, vous devez affecter le nom d’utilisateur principal à l’autre nom de l’objet. 
-    - **Utilisation de la clé** : spécifiez les options d’utilisation de la clé pour le certificat. Vous pouvez choisir parmi les options suivantes : 
+    - **Utilisation de la clé** : spécifiez les options d’utilisation de la clé pour le certificat. Vous pouvez choisir parmi les options suivantes : 
         - **Chiffrage de clés** : autorisez l’échange de clés uniquement quand la clé est chiffrée. 
         - **Signature numérique** : autorisez l’échange de clés uniquement quand une signature numérique contribue à protéger la clé. 
     - **Taille de la clé (bits)** : Sélectionnez le nombre de bits contenus dans la clé. 

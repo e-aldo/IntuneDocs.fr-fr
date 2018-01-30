@@ -1,9 +1,9 @@
 ---
 title: "Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android"
 description: "Le SDK d’application Microsoft Intune pour Android vous permet d’incorporer la gestion des applications mobiles Intune à votre application Android."
-keywords: SDK
+keywords: "Kit de développement logiciel (SDK)"
 author: erikre
-manager: angrobe
+manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
-ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
+ms.openlocfilehash: b99ca9b196aa15d146e7a379cdc7bdffe848be28
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
@@ -142,7 +142,7 @@ Les classes de base Android doivent être remplacées par leurs équivalents GAM
 ### <a name="renamed-methods"></a>Méthodes renommées
 
 
-Dans de nombreux cas, une méthode disponible dans la classe Android a été marquée comme finale dans la classe de remplacement GAM. Dans ce cas, la classe de remplacement GAM fournit une méthode portant un nom similaire (généralement avec le suffixe `MAM`) que vous devez remplacer. Par exemple, quand vous dérivez de `MAMActivity` au lieu de remplacer `onCreate()` et d’appeler `super.onCreate()`, `Activity` doit remplacer `onMAMCreate()` et appeler `super.onMAMCreate()`. Le compilateur Java doit appliquer les restrictions finales pour éviter que la méthode d’origine ne soit remplacée accidentellement à la place de l’équivalent GAM.
+Dans de nombreux cas, une méthode disponible dans la classe Android a été marquée comme finale dans la classe de remplacement GAM. Dans ce cas, la classe de remplacement GAM fournit une méthode portant un nom similaire (généralement avec le suffixe `MAM`) que vous devez remplacer. Par exemple, quand vous dérivez de `MAMActivity` au lieu de remplacer `onCreate()` et d’appeler `super.onCreate()`, `Activity` doit remplacer `onMAMCreate()` et appeler `super.onMAMCreate()`. Le compilateur Java doit appliquer les restrictions finales pour éviter que la méthode d’origine ne soit remplacée accidentellement à la place de l’équivalent MAM.
 
 ### <a name="mamapplication"></a>MAMApplication
 En raison des contraintes liées au SDK MAM, vous **devez** créer une sous-classe de `com.microsoft.intune.mam.client.app.MAMApplication` et la définir comme le nom de la classe `Application` utilisée dans votre manifeste. `MAMApplication` est abstrait et nécessite une substitution pour `byte[] getADALSecretKey`. Pour plus d’informations sur la façon d’implémenter cette fonction, consultez le Javadoc correspondant.
@@ -964,7 +964,7 @@ Pour utiliser `MAMAsyncTask`, héritez simplement de cette tâche, et non d’As
 ```
 
 ### <a name="mamidentityexecutors"></a>MAMIdentityExecutors
-`MAMIdentityExecutors` vous permet d’empaqueter une instance existante de `Executor` ou de `ExecutorService` comme un `Executor`/`ExecutorService` conservant l’identité à l’aide des méthodes `wrapExecutor` et `wrapExecutorService`. Par exemple
+`MAMIdentityExecutors` vous permet d’inclure dans un wrapper une instance existante de `Executor` ou de `ExecutorService` comme un `Executor`/`ExecutorService` conservant l’identité à l’aide des méthodes `wrapExecutor` et `wrapExecutorService`. Par exemple
 
 ```java
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
@@ -1392,7 +1392,7 @@ Pour les grandes bases de code qui s’exécutent sans [ProGuard](http://proguar
 
 * **Capture d’écran**: le SDK ne peut pas appliquer une nouvelle valeur de capture d’écran dans les activités qui sont déjà passées par Activity.onCreate. Il peut en résulter une période au cours de laquelle l’application est configurée pour désactiver les captures d’écran ; toutefois, il est toujours possible d’en prendre.
 
-* **Utilisation de programmes de résolution de contenu** : la stratégie Intune de transfert ou de réception peut bloquer entièrement ou en partie l’utilisation d’un programme de résolution de contenu pour accéder au fournisseur de contenu dans une autre application. Par conséquent, les méthodes ContentResolver retournent null ou lèvent une valeur d’échec (par exemple, `openOutputStream` lève `FileNotFoundException` en cas de blocage). L’application peut déterminer si l’échec de l’écriture des données par le biais d’un programme de résolution de contenu est causé par une stratégie (ou pourrait être causé par une stratégie) en appelant :
+* **Utilisation de programmes de résolution de contenu** : la stratégie Intune de transfert ou de réception peut bloquer entièrement ou en partie l’utilisation d’un programme de résolution de contenu pour accéder au fournisseur de contenu dans une autre application. Par conséquent, les méthodes ContentResolver retournent null ou lèvent une valeur d’échec (par exemple, `openOutputStream` lève `FileNotFoundException` en cas de blocage). L’application peut déterminer si l’échec de l’écriture des données par le biais d’un programme de résolution de contenu est causé par une stratégie (ou pourrait être causé par une stratégie) en appelant :
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```

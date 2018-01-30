@@ -5,7 +5,7 @@ description: "Découvrez comment configurer les paramètres Windows Update for B
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-software-updates"></a>Gérer les mises à jour logicielles
 
@@ -72,7 +72,7 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 ## <a name="how-to-create-and-assign-update-rings"></a>Guide pratique pour créer et affecter des anneaux de mise à jour
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Mises à jour logicielles**.
 4. Dans le panneau **Mises à jour logicielles**, choisissez **Gérer** > **Anneaux de mise à jour Windows 10**.
 5. Dans le volet présentant la liste de anneaux de mise à jour, choisissez **Créer**.
@@ -89,7 +89,7 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 
     Les mises à jour de fonctionnalités correspondent généralement à de nouvelles fonctionnalités de Windows. Une fois que vous avez configuré le paramètre **Canal de maintenance** (Canal semi-annuel (cible) ou Canal semi-annuel), vous pouvez définir si et pendant combien de temps vous souhaitez différer la réception des mises à jour de fonctionnalités après leur mise à disposition par Microsoft dans Windows Update.
 
-    Exemple :  
+    Par exemple :  
     **Si le canal de maintenance est défini sur Canal semi-annuel (cible) et que la période de report est de 30 jours** : supposons que la mise à jour de fonctionnalité X est tout d’abord publiquement disponible sur Windows Update en tant que Canal semi-annuel (cible) en janvier. L’appareil ne reçoit pas la mise à jour avant février (soit 30 jours plus tard).
 
     **Si le canal de maintenance est défini sur Canal semi-annuel et que la période de report est de 30 jours** : supposons que la mise à jour de fonctionnalité X est tout d’abord publiquement disponible sur Windows Update en tant que Canal semi-annuel (cible) en janvier. Quatre mois plus tard, en avril, la mise à jour de fonctionnalité X est publiée sur le Canal semi-annuel. L’appareil reçoit la mise à jour de fonctionnalité 30 jours après cette publication sur le Canal semi-annuel et se met à jour en mai.
@@ -110,7 +110,7 @@ Vous pouvez afficher la conformité des mises à jour dans Intune ou en utilisan
 <!-- 1352223 -->
 Passez en revue un rapport sur la stratégie pour voir l’état du déploiement pour les anneaux de mise à jour Windows 10 que vous avez configurés. 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Mises à jour logicielles**.
 4. Dans le panneau **Mises à jour logicielles**, choisissez **Vue d’ensemble**. Vous pouvez voir ici des informations générales sur l’état de tous les anneaux de mise à jour que vous avez affectés.
 5. Ouvrez un des rapports suivants : 
@@ -146,7 +146,7 @@ Par exemple, vous pouvez utiliser les valeurs suivantes dans **Ajouter ou modifi
 ## <a name="how-to-pause-updates"></a>Guide pratique pour suspendre des mises à jour
 Vous pouvez suspendre la réception des mises à jour qualité ou de fonctionnalités d’un appareil pendant une période allant jusqu’à 35 jours à partir du moment où vous interrompez les mises à jour. Une fois que le nombre maximal de jours s’est écoulé, la fonctionnalité mise en pause expire automatiquement et l’appareil recherche les mises à jour applicables dans Windows Update. Suite à cette analyse, vous pouvez suspendre à nouveau les mises à jour.
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Mises à jour logicielles**.
 4. Dans le panneau **Mises à jour logicielles**, choisissez **Gérer** > **Anneaux de mise à jour Windows 10**.
 5. Dans le volet affichant la liste des anneaux de mise à jour, choisissez l’anneau que vous souhaitez suspendre, puis sélectionnez **...** > **Suspendre les mises à jour qualité** > ou **Suspendre les mises à jour des fonctionnalités**, selon le type de mise à jour que vous souhaitez suspendre.
