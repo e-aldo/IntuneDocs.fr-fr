@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ab67a6f2fd1f861ba197464a9e369ca0b54e6b5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Votre appareil Android semble être chiffré, mais le portail d’entreprise dit que non
 
@@ -36,10 +37,6 @@ Les versions plus récentes d’Android, en particulier à partir de la v7.0, re
 
 Certains appareils Android exigent la création d’un code de démarrage pour en garantir la sécurité. Il existe de nombreuses versions d’Android, proposées par de nombreux fabricants différents. Vous pouvez essayer de résoudre ce problème en recherchant un emplacement dans votre application de paramètres pour activer cette option. Par exemple, sur le Galaxy S7 de Samsung, vous activez le démarrage sécurisé en accédant à **Paramètres** > **Écran de verrouillage et sécurité** > **Démarrage sécurisé**.  
 
-### <a name="downgrade-your-version-of-android"></a>Rétrograder votre version d’Android
-
-Si votre appareil vous offre la possibilité de passer à la version antérieure Android 6.0+, faites-le. Si vous essayez de passer votre appareil à une version antérieure, vous risquez de perdre des données. Sinon, nous vous recommandons de contacter le support technique de votre entreprise pour résoudre ce problème. Vous pouvez obtenir les informations de contact du support technique de votre entreprise sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
-
 ### <a name="encrypt-the-entire-device"></a>Chiffrer l’appareil entier
 
 Certains appareils vous offrent le choix entre le chiffrement de l’appareil entier ou juste de l’espace utilisé. Choisissez l’option permettant de chiffrer l’appareil entier plutôt que l’option permettant de chiffrer « uniquement l’espace utilisé. » Si vous avez déjà chiffré uniquement l’espace utilisé :
@@ -48,6 +45,10 @@ Certains appareils vous offrent le choix entre le chiffrement de l’appareil en
 2. Déchiffrer l’espace utilisé
 3. Chiffrer l’appareil entier
 4. Réinscrire l’appareil
+
+### <a name="downgrade-your-version-of-android"></a>Rétrograder votre version d’Android
+
+Si votre appareil vous offre la possibilité de passer à la version antérieure Android 6.0+, faites-le. Si vous essayez de passer votre appareil à une version antérieure, vous risquez de perdre des données. Sinon, nous vous recommandons de contacter le support technique de votre entreprise pour résoudre ce problème. Vous pouvez obtenir les informations de contact du support technique de votre entreprise sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ## <a name="specific-manufacturer-issues"></a>Problèmes propres à certains fabricants
 
