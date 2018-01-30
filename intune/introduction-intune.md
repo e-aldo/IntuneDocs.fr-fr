@@ -4,7 +4,7 @@ description: "Découvrez comment Intune constitue le composant de gestion des ap
 keywords: "définition d’Intune"
 author: Lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 527a2a1578fcf9ef8e8f80c68091e582f8f2ebd2
-ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
+ms.openlocfilehash: 64fd5e506d0c2fdfa5d99e6ac96d6e12c886fcbe
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-is-intune"></a>Qu’est-ce qu’Intune ?
 
@@ -47,7 +47,7 @@ Intune est le composant de la solution Enterprise Mobility + Security (EMS) qui 
 
 Affichez une [version agrandie](./media/intunearchitecture.svg) du diagramme d’architecture Intune.
 
-La façon d’utiliser les fonctionnalités d’Intune de gestion des appareils et des applications mobiles et la protection des données EMS dépend du [besoin auquel vous essayez de répondre](#common-business-problems-that-intune-helps-solve). Exemple :
+La façon d’utiliser les fonctionnalités d’Intune de gestion des appareils et des applications mobiles et la protection des données EMS dépend du [besoin auquel vous essayez de répondre](#common-business-problems-that-intune-helps-solve). Par exemple :
 * Vous allez très souvent recourir à la gestion des appareils si vous créez un pool d’appareils à usage unique à partager entre les employés d’un magasin de vente au détail.
 * Si vous autorisez votre personnel à utiliser ses appareils personnels pour accéder aux données d’entreprise (BYOD), vous allez vous appuyer sur la gestion des applications et la protection des données.  
 * Si vous fournissez des téléphones aux employés, vous allez faire appel à toutes ces technologies.

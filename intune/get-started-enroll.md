@@ -5,7 +5,7 @@ description: "Découvrez l’expérience d’inscription en effectuant le proces
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00d462639e6f85e6d76ea7061588ba976242e21d
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-enrolling-devices"></a>Bien démarrer avec l’inscription des appareils
 
@@ -28,9 +28,9 @@ Microsoft Intune vous permet de donner à votre personnel des appareils mobiles 
 | Ce qu’il ne peut pas voir | Ce qu’il peut voir |
 |---|---|
 | Historique des appels et de navigation | Modèle |
-| Localisation | Numéro de série |
+| Emplacement | Numéro de série |
 | E-mail personnel | Version du système d'exploitation |
-| SMS | Noms des applications |
+| Des SMS | Noms des applications |
 | Contacts | Propriétaire |
 | Mots de passe de vos comptes personnels | Nom de l'appareil |
 | Événements de calendrier | Fabricant (pour les appareils non-Apple) |

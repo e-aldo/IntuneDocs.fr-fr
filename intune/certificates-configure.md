@@ -5,7 +5,7 @@ description: "Découvrez comment utiliser Intune pour créer et attribuer des ce
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c74ee1daf6602a4958d9955c3955b465495e013
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 0245491540a2ade2dbb453a865ee73312fc759e0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Guide pratique pour configurer des certificats dans Microsoft Intune
 
@@ -43,7 +43,7 @@ Chacun de ces types de certificats a ses propres prérequis et exigences en mati
     - Android 4.0 et versions ultérieures
     - Android for Work
     - Windows 8.1 et versions ultérieures
-    - Windows Phone 8.1 et versions ultérieures
+    - Windows Phone 8.1 et versions ultérieures
     - Windows 10 et versions ultérieures
 3. Créez des profils de certificat pour que les appareils demandent l’utilisation d’un certificat à des fins d’authentification pour l’accès au VPN, au Wi-Fi et aux e-mails.
 
@@ -57,7 +57,7 @@ Chacun de ces types de certificats a ses propres prérequis et exigences en mati
    Vous pouvez uniquement utiliser un profil de certificat **SCEP** pour les appareils exécutant ces plateformes :
 
    - macOS 10.9 et versions ultérieures
-   - Windows Phone 8.1 et versions ultérieures
+   - Windows Phone 8.1 et versions ultérieures
 
 Vous devez créer un profil distinct pour chaque plateforme d’appareil. Quand vous créez le profil, associez-le au profil de certificat racine approuvé que vous avez déjà créé.
 
@@ -110,7 +110,7 @@ Vous devez créer un profil de certificat approuvé pour pouvoir créer un profi
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
 
-Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareils](device-profile-assign.md).
+Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
 
 
 > [!Note]

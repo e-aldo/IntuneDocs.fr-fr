@@ -5,7 +5,7 @@ description: "Vous aide à trouver les fonctionnalités Intune dans le portail A
 keywords: 
 author: dagerrit
 ms.author: dagerrit
-manager: angrobe
+manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
-ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
+ms.openlocfilehash: d15659e78c3b47753e9ef87a99d16ef1687ecf22
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Où se trouve ma fonctionnalité Intune dans Azure ?
 Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Nous avons donc créé ce guide de référence pour ceux d’entre vous qui connaissent parfaitement Intune dans le portail classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune dans le portail Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
 ## <a name="quick-reference-guide"></a>Guide de référence rapide
-|Fonctionnalité |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
+|Composant |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
 |------------|---------------|---------------|
 |Programme d’inscription des appareils [iOS uniquement]|Administration > Gestion des appareils mobiles > iOS > Programme d’inscription des appareils|[Inscription de l’appareil > Inscription Apple > Jeton du programme d’inscription](#where-did-apple-dep-go) |
 |Programme d’inscription des appareils [iOS uniquement]| Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription de l’appareil > Inscription Apple > Numéros de série du programme d’inscription](#where-did-apple-dep-go) |

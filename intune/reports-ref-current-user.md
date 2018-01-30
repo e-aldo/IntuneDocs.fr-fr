@@ -4,7 +4,7 @@ description: "Rubrique de référence sur la catégorie Utilisateur de collectio
 keywords: "Entrepôt de données Intune"
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 895855befe31e84b3dc472216afdf52d636bc27a
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: d25825910e878d428bde72414c4bbee2d5092a89
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-current-user-entity"></a>Informations de référence sur l’entité d’utilisateur actuel
 
@@ -35,7 +35,7 @@ L’entité **Utilisateur actuel** répertorie tous les utilisateurs Azure Activ
 | UserId |Identificateur unique de l’utilisateur (semblable à UserKey, mais il s’agit d’une clé naturelle). |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Adresse e-mail de l’utilisateur. |John@constoso.com |
 | UPN | Nom d'utilisateur principal de l'utilisateur. | John@constoso.com |
-| DisplayName |Nom d’affichage de l’utilisateur. |Jean |
+| DisplayName |Nom d’affichage de l’utilisateur. |John |
 | IntuneLicensed |Spécifie si cet utilisateur dispose d’une licence Intune ou non. |Vrai/Faux |
 | StartDateInclusiveUTC |Date et heure UTC de création de cet utilisateur dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Date et heure UTC de la dernière modification de cet utilisateur dans l’entrepôt de données. |11/23/2016 12:00:00 AM |

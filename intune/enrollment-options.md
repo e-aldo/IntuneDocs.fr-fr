@@ -4,18 +4,18 @@ description:
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 1046a9c706219a1f1cf2ecc025651629cbbd7f82
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 2672ebec94387ad876443c975f083472c2613a11
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enrollment-options-for-intune"></a>Options d’inscription pour Intune
 
@@ -45,7 +45,7 @@ Vous pouvez recenser les numéros IMEI (International Mobile Equipment Identifie
 
 Vous pouvez demander aux utilisateurs d’utiliser une méthode de vérification supplémentaire, comme un téléphone, un code PIN ou des données biométriques, quand ils inscrivent un appareil. Découvrez plus d’informations sur [l’authentification multifacteur](multi-factor-authentication.md).
 
-## <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareils
+## <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareil
 Vous pouvez attribuer le rôle de gestionnaire d’inscription d’appareils à des utilisateurs.  Ceux-ci peuvent alors inscrire un grand nombre d’appareils mobiles avec un même compte d’utilisateur. Un compte de gestionnaire d’inscription d’appareils permet d’inscrire jusqu’à 1 000 appareils. En savoir plus sur les [gestionnaires d’inscription d’appareils](device-enrollment-manager-enroll.md).
 
 ## <a name="device-categories"></a>Catégories d’appareils

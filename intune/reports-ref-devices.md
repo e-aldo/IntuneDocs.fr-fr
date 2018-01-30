@@ -4,7 +4,7 @@ description: "Rubrique de référence sur la catégorie Appareils de collections
 keywords: "Entrepôt de données Intune"
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c708361708468c544533a27a446ef33a23d88d8a
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 13edf33aba614337d18806b3442668e74a9295dc
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-devices-entities"></a>Référence pour les entités d’appareils
 
@@ -66,7 +66,7 @@ L’entité **DeviceTypes** représente le type d’appareil référencé par d�
 | 17 |AndroidForWork |Appareil Android géré à l’aide du Propriétaire de profil Android for Work |
 | 100 |Blackberry |Appareil Blackberry |
 | 101 |Palm |Appareil Palm |
-| 255 |Unknown |Type d’appareil inconnu |
+| 255 |Inconnu |Type d’appareil inconnu |
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
@@ -90,7 +90,7 @@ L’entité **ClientRegistrationStateTypes** représente le type d’inscription
 | 5 |ApprovalPending |Approbation en attente |
 | 6 |ResetCert |Réinitialiser le certificat |
 | 7 |NotRegisteredPendingEnrollment |Non inscrit, inscription en attente |
-| 8 |Unknown |État inconnu |
+| 8 |Inconnu |État inconnu |
 
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
@@ -106,7 +106,7 @@ L’entité **EnrollmentTypes** indique la façon dont un appareil a été inscr
 
 | enrollmentTypeID  | Nom | Description |
 |---------|------------|--------|
-| 0 |Unknown |Le type d’inscription n’a pas été collecté |
+| 0 |Inconnu |Le type d’inscription n’a pas été collecté |
 | 1 |UserEnrollment |Inscription lancée par l’utilisateur |
 | 2 |DeviceEnrollment |Inscription d’appareil avec un profil sans utilisateur |
 | 3 |DeviceEnrollmentWithUDA |Inscription d’appareil avec un profil UDA |
@@ -141,7 +141,7 @@ L’entité **MdmStatuses** indique l’état de conformité de l’appareil.
 
 | MdmStatusID  | ComplianceStatus | Description |
 |---------|------------|--------|
-| 0 |Unknown |L’état de conformité de l’appareil est inconnu. |
+| 0 |Inconnu |L’état de conformité de l’appareil est inconnu. |
 | 1 |Conforme |L’appareil est conforme. |
 | 2 |Non conforme |L’appareil n’est pas conforme. |
 | 3 |Conflict |La conformité de l’appareil a généré un conflit. |
@@ -167,7 +167,7 @@ L’entité **ManagementStates** fournit des détails sur l’état de l’appar
 | 2 |RetireFailed | Échec de la commande de mise hors service sur l’appareil. |
 | 3 |WipePending | Commande de réinitialisation en attente pour l’appareil. |
 | 4 |WipeFailed | Échec de la commande de réinitialisation sur l’appareil. |
-| 5 |Unhealthy | État non sain. |
+| 5 |Non intègre | État non sain. |
 | 6 |En attente de suppression | Commande de suppression en attente pour l’appareil. |
 | 7 |RetireIssued | Commande de mise hors service émise pour l’appareil. |
 | 8 |WipeIssued | Commande de réinitialisation émise. |
@@ -189,7 +189,7 @@ L’entité **WorkPlaceJoinStateTypes** représente l’état d’Azure Active D
 
 | workPlaceJoinStateID  | Nom | Description |
 |---------|------------|--------|
-| 0 |Unknown |Si un appareil n’est pas rattaché à l’espace de travail, son état est Unknown |
+| 0 |Inconnu |Si un appareil n’est pas rattaché à l’espace de travail, son état est Unknown |
 | 1 |Réussi |Rattachement à l’espace de travail effectué |
 | 2 |FailureToGetScepMetadata |Échec de l’obtention des métadonnées SCEP |
 | 3 |FailureToGetScepChallenge |Échec de l’obtention du défi SCEP |
@@ -219,7 +219,7 @@ L’entité **ManagementAgentTypes** représente les agents utilisés pour gére
 | 4 |IntuneClient | L’appareil est géré par l’agent Intune PC |
 | 5 |EasIntuneClient | L’appareil est géré à la fois par Exchange Active Sync et par l’agent Intune PC |
 | 8 |ConfigManagerClient | L’appareil est géré par l’agent System Center Configuration Manager |
-| 16 |Unknown | Type d’agent de gestion inconnu |
+| 16 |Inconnu | Type d’agent de gestion inconnu |
 
 ## <a name="devices"></a>Appareils
 
@@ -319,7 +319,7 @@ L’entité **MdmDeviceInventoryHistories** contient des instantanés quotidiens
 | DateKey | Référence à la table de dates indiquant le jour. |
 | DeviceKey |Identificateur unique de l’appareil dans l’entrepôt de données (clé de substitution). Il s’agit d’une référence à la table d’appareils qui contient l’ID d’appareil Intune. |
 | DeviceModel |Modèle de l’appareil. |
-| Système d’exploitation |Système d’exploitation de l’appareil. |
+| Système d'exploitation |Système d’exploitation de l’appareil. |
 | DeviceName |Nom de l’appareil sur les plateformes qui autorisent le nommage d’un appareil. Sur d’autres plateformes, Intune crée un nom à partir d’autres propriétés. Cet attribut ne peut pas être disponible pour tous les appareils. |
 | SoftwareVersion |Dans la plupart des cas, il s’agit de la version du système d’exploitation, sauf sur les plateformes Apple. |
 | Imei |Numéro IMEI |
@@ -338,7 +338,7 @@ L’entité **MdmDeviceInventoryHistories** contient des instantanés quotidiens
 | OSManufacturer |Fabricant du système d’exploitation. |
 | OSProductSuite |Suite de produits du système d’exploitation. |
 | OSProductType |Type de produit du système d’exploitation. |
-| Locale |Paramètres régionaux du système d’exploitation. |
+| Paramètres régionaux |Paramètres régionaux du système d’exploitation. |
 | PhysicalMemoryCapacity |Capacité de mémoire physique (en octets). |
 | PhysicalMemoryRemovable |Mémoire amovible physique (en octets). |
 | SystemEnclosureChassisTypesInnerText |Définit le type de châssis du système pour cet appareil. Les nombres indiquent les valeurs suivantes :  <br>0 ou Vide = Inconnu   <br>1 = Ordinateur de bureau   <br>2 = Ordinateur portable  <br>3 = Station de travail  <br>4 = Serveur d’entreprise  <br>100 = Téléphone  <br>101 = Tablette  <br>102/103 = Autre type inconnu d’appareil mobile |

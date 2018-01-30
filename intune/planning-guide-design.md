@@ -4,7 +4,7 @@ description: "Cet article vous permet de créer une conception dans le cadre de 
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-design"></a>Créer un design
 
@@ -193,7 +193,7 @@ Vous devez identifier les appareils qui seront utilisés dans l’environnement 
 
 ### <a name="devices"></a>Appareils
 
-Intune gère les appareils mobiles pour sécuriser les données d’entreprise et permettre aux utilisateurs de travailler depuis plusieurs endroits. Comme Intune prend en charge de nombreuses plateformes d’appareils, nous vous recommandons de documenter les appareils ainsi que les plateformes et versions de système d’exploitation pris en charge dans la conception de votre organisation. Exemple :
+Intune gère les appareils mobiles pour sécuriser les données d’entreprise et permettre aux utilisateurs de travailler depuis plusieurs endroits. Comme Intune prend en charge de nombreuses plateformes d’appareils, nous vous recommandons de documenter les appareils ainsi que les plateformes et versions de système d’exploitation pris en charge dans la conception de votre organisation. Par exemple :
 
 | **Plate-forme d'appareil** | **Versions du système d'exploitation** |
 |:---:|:---:|
@@ -349,7 +349,7 @@ Vous pouvez utiliser Intune pour fournir des applications à des utilisateurs ou
 
 -   [Programme d’achat en volume (VPP) iOS pour les entreprises](vpp-apps-ios.md)
 
--   [Applications du Windows Store pour Entreprises](windows-store-for-business.md)
+-   [Applications Microsoft Store pour Entreprises](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Exigences de type d’application
 

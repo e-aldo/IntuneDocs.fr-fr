@@ -4,7 +4,7 @@ description: "Cet article est une introduction à toutes les sections de planifi
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 754c38a33fa6e08a6022c726f6e1eb8088b82e94
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 962ec376b7f2e30ad857ce69e24124c5d482cda0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guide de planification, de conception et d'implémentation du déploiement d’Intune
 
@@ -32,7 +32,7 @@ Ce guide contient des sections qui vous guideront tout au long du processus comp
 
 -   [Section 1 : déterminer les objectifs et les défis liés au déploiement](planning-guide-deployment-goals.md)
 
--   [Section 2 : identifier les scénarios de cas d’utilisation](planning-guide-scenarios.md)
+-   [Section 2 : identifier des scénarios d’utilisation](planning-guide-scenarios.md)
 
 -   [Section 3 : déterminer les exigences des cas d’utilisation](planning-guide-requirements.md)
 

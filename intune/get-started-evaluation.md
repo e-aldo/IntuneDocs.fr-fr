@@ -5,7 +5,7 @@ description: "Accédez à une série de courts exercices pratiques pour en savoi
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 04852dfd9a509413dd9e532c8a464f3d02e60fd4
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 0792bc51b956f2aad634d6777b2222a9439e9538
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Que peut faire Intune pour mon entreprise ?
 
@@ -40,7 +40,7 @@ Vous pouvez suivre l’ordre prévu des activités pratiques du guide __Bien dé
 * [Bien démarrer avec l’inscription d’appareils](get-started-enroll.md) - Découvrez l’expérience d’inscription en effectuant le processus d’inscription complet d’un appareil iOS.
 * [Bien démarrer avec l’ajout d’applications](get-started-apps.md) : Recherchez et ajoutez des applications sur les appareils pour permettre à vos employés d’effectuer leur travail.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 Avant de commencer, vous devez activer un compte d’administrateur et un compte client Intune. Vous pouvez vous inscrire pour ces comptes [ici](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Les abonnés peuvent également effectuer ces activités dans leur client en ligne. Ces articles de prise en main supposent que vous travaillez sur des appareils de test.
 

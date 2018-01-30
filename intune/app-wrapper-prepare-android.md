@@ -1,10 +1,10 @@
 ---
-title: "Empaqueter des applications Android avec l’outil de création de package de restrictions d’application Intune"
-description: "Cet article explique comment empaqueter des applications Android sans changer leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
+title: "Inclure des applications Android dans un wrapper avec l’outil de création de package de restrictions d’application Intune"
+description: "Cet article explique comment inclure des applications Android dans un wrapper sans changer le code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1673fa1e9c580c1554537530341f87b1580e79eb
-ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
+ms.openlocfilehash: ac18336efe36a5bed952ab3d89c7ae80e1fbbfc5
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications Android pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 01/23/2018
 
 Utilisez l’outil de création de package de restrictions d’application Microsoft Intune pour Android pour changer le comportement de vos applications Android internes en limitant les fonctionnalités de l’application sans modifier le code de l’application proprement dit.
 
-L’outil est une application en ligne de commande Windows qui s’exécute dans PowerShell et crée un empaqueteur autour de votre application Android. Une fois l’application empaquetée, vous pouvez modifier sa fonctionnalité en configurant des [stratégies de gestion des applications mobiles](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) dans Intune.
+L’outil est une application en ligne de commande Windows qui s’exécute dans PowerShell et crée un wrapper autour de votre application Android. Une fois l’application encapsulée, vous pouvez modifier sa fonctionnalité en configurant des [stratégies de gestion des applications mobiles](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) dans Intune.
 
 
 Avant d’exécuter l’outil, passez en revue les [considérations en matière de sécurité pour l’exécution de l’outil de création de package de restrictions d’application](#security-considerations-for-running-the-app-wrapping-tool). Pour télécharger l’outil, accédez à la page [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) (Outil de création de package de restrictions d’application Microsoft Intune pour Android) sur GitHub.
@@ -39,9 +39,9 @@ Avant d’exécuter l’outil, passez en revue les [considérations en matière 
 
 -   Votre application d’entrée doit être un package d’application Android valide avec l’extension de fichier .apk et :
 
-    -   Elle ne doit pas être chiffrée.
-    -   Elle ne doit pas avoir déjà été empaquetée par l’outil de création de package de restrictions d’application Intune.
-    -   Elle doit être écrite pour Android 4.0 ou version ultérieure.
+    -   elle ne doit pas être chiffrée ;
+    -   elle ne doit pas avoir déjà été encapsulée par l’outil de création de package de restrictions d’application Intune ;
+    -   elle doit être écrite pour Android 4.0 ou version ultérieure.
 
 -   L’application doit être développée par ou pour votre entreprise. Vous ne pouvez pas utiliser cet outil sur des applications téléchargées à partir de Google Play Store.
 
@@ -50,7 +50,7 @@ Avant d’exécuter l’outil, passez en revue les [considérations en matière 
     > [!NOTE]
     > Dans certains cas, la version 32 bits de Java peut occasionner des problèmes de mémoire. Nous vous conseillons d’installer la version 64 bits.
 
-- Android nécessite que tous les packages d’application (.apk) soient signés. Pour obtenir de l’aide sur la**réutilisation** de certificats existants et sur les certificats de signature en général, consultez [Réutilisation de certificats de signature et empaquetage d’applications](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). L’exécutable Java keytool.exe permet de générer de **nouvelles** informations d’identification nécessaires pour signer l’application de sortie empaquetée. Tous les mots de passe définis doivent être sécurisés, mais notez-les car ils sont nécessaires pour exécuter l’outil de création de package de restrictions d’application.
+- Android nécessite que tous les packages d’application (.apk) soient signés. Pour obtenir de l’aide sur la**réutilisation** de certificats existants et sur les certificats de signature en général, consultez [Réutilisation de certificats de signature et inclusion d’applications dans un wrapper](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). L’exécutable Java keytool.exe permet de générer de **nouvelles** informations d’identification nécessaires pour signer l’application de sortie incluse dans un wrapper. Tous les mots de passe définis doivent être sécurisés, mais notez-les car ils sont nécessaires pour exécuter l’outil de création de package de restrictions d’application.
 
 ## <a name="install-the-app-wrapping-tool"></a>installer l'outil de création de package de restrictions d'application
 
@@ -111,22 +111,22 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 
 Vous êtes ensuite invité à entrer des valeurs pour **KeyStorePassword** et **KeyPassword**. Entrez les informations d’identification que vous avez utilisées pour créer le fichier de magasin de clés.
 
-L’application empaquetée et un fichier journal sont générés et enregistrés dans le chemin de sortie spécifié.
+L’application encapsulée et un fichier journal sont générés et enregistrés dans le chemin de sortie spécifié.
 
-## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>À quelle fréquence dois-je réempaqueter mon application Android avec l’outil de création de package de restrictions d’application Intune ?
-Les principaux scénarios dans lesquels vous devez réempaqueter vos applications sont les suivants :
+## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>À quelle fréquence dois-je réencapsuler mon application Android avec l’outil de création de package de restrictions d’application Intune ?
+Les principaux scénarios dans lesquels vous devez réencapsuler vos applications sont les suivants :
 * L’application elle-même a publié une nouvelle version. La version précédente de l’application a été empaquetée et chargée sur la console Intune.
 * L’outil de création de package de restrictions d’application Intune pour Android a publié une nouvelle version qui intègre la correction de bogues importants, ou des fonctionnalités des stratégies de protection d’application Intune nouvelles et spécifiques. Ceci se produit toutes les 6 à 8 semaines via un dépôt GitHub pour [l’outil de création de package de restrictions d’application Microsoft Intune pour Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
-Voici quelques bonnes pratiques d’empaquetage : 
-* Conserver les certificats de signature utilisés lors du processus de génération. Consultez [Réutilisation de certificats de signature et empaquetage d’applications](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+Voici quelques bonnes pratiques de réencapsulation : 
+* Conserver les certificats de signature utilisés lors du processus de génération. Consultez [Réutilisation de certificats de signature et inclusion d’applications dans un wrapper](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
 
-## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Réutilisation de certificats de signature et empaquetage d’applications
+## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Réutilisation de certificats de signature et inclusion d’applications dans un wrapper
 Android exige que toutes les applications soient signées par un certificat valide pour être installées sur des appareils Android.
 
-Les applications empaquetées peuvent être signées pendant ou *après* le processus d’empaquetage à l’aide de vos outils de signature existants (toutes les informations de signature figurant dans l’application avant l’empaquetage sont ignorées).
+Les applications incluses dans un wrapper peuvent être signées au cours du processus d’inclusion dans un wrapper ou *après* celui-ci à l’aide de vos outils de signature existants (toutes les informations de signature figurant dans l’application avant l’inclusion dans un wrapper sont ignorées).
  
-Si possible, les informations de signature utilisées pendant le processus de génération doivent être réutilisées durant l’empaquetage. Dans certaines organisations, il peut être nécessaire de contacter la personne qui détient les informations du magasin de clés (c’est-à-dire l’équipe de génération des applications). 
+Si possible, les informations de signature utilisées pendant le processus de génération doivent être réutilisées durant l’inclusion dans un wrapper. Dans certaines organisations, il peut être nécessaire de contacter la personne qui détient les informations du magasin de clés (c’est-à-dire l’équipe de génération des applications). 
 
 Si le certificat de signature précédent ne peut pas être utilisé ou que l’application n’a pas encore été déployée, vous pouvez créer un certificat de signature en suivant les instructions du [Guide du développeur Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
@@ -143,7 +143,7 @@ Pour empêcher l'usurpation d'identité, la divulgation d'informations et les at
 
 -   Vérifiez que l’application provient d’une source approuvée.
 
--   Sécurisez le répertoire de sortie qui a l’application empaquetée. Envisagez d'utiliser un répertoire au niveau utilisateur pour la sortie.
+-   Sécurisez le répertoire de sortie qui a l’application encapsulée. Envisagez d'utiliser un répertoire au niveau utilisateur pour la sortie.
 
 ## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Nécessité d’une invite de connexion utilisateur pour une inscription au service APP-WE automatique, nécessité des stratégies de protection des applications Intune afin d’utiliser votre application métier Android empaquetée et activation de l’authentification unique ADAL (facultatif)
 

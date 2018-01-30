@@ -5,7 +5,7 @@ description: "En savoir plus sur la terminologie utilisée dans Microsoft Intune
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/28/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 08fc3be9e1e4f4b5692f871fc57108d431d5836d
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 6c066dde1c302c647514659b45e17cc5ac186a13
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glossaire Microsoft Intune
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 01/12/2018
 |||
 |-|-|
 |Déploiement|Fait d’envoyer une application ou une stratégie à un appareil ou à un utilisateur que vous gérez. Cette action est maintenant appelée *affectation*.|
-|Gestionnaire d'inscription d'appareils|Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du [gestionnaire d’inscription d’appareils](/intune/device-enrollment-program-enroll-ios) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils.|
+|Gestionnaire d'inscription d'appareils|Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d'utilisateur. Le compte du [gestionnaire d’inscription d’appareils](/intune/device-enrollment-program-enroll-ios) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils.|
 |Profils d’appareils|[Ces profils](/intune/device-profile-create) vous permettent de configurer de nombreux paramètres de sécurité, de fonctionnalités et d’accès sur les appareils que vous gérez.|
 
 ## <a name="e"></a>E

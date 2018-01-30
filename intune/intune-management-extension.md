@@ -4,7 +4,7 @@ titlesuffix: Azure portal
 description: "Découvrez comment charger des scripts PowerShell dans Intune pour les exécuter sur des appareils Windows 10."
 keywords: 
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1bdd9002c70ea8d9e8b16b73d4d8416eeec3341b
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: e8c959ca3df62cbda17e5a659d0703cbc37f3249
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gérer des scripts PowerShell dans Intune pour des appareils Windows 10
 L’extension de gestion Intune vous permet de charger des scripts PowerShell dans Intune pour les exécuter sur des appareils Windows 10. L’extension de gestion vient en complément des fonctionnalités de gestion des appareils mobiles (MDM) Windows 10 et facilite l’adoption d’une gestion moderne.
@@ -30,7 +30,7 @@ Les services MDM, tels que Microsoft Intune, peuvent gérer les appareils Window
 
 L’extension de gestion Intune vient en complément des fonctionnalités MDM de Windows 10 intégrées. Vous pouvez créer des scripts PowerShell à exécuter sur les appareils Windows 10 qui fournissent les fonctionnalités dont vous avez besoin. Par exemple, vous pouvez créer un script PowerShell qui installe une application Win32 héritée sur vos appareils Windows 10, charger le script sur Intune, affecter le script à un groupe Azure Active Directory (AD) et exécuter le script sur les appareils Windows 10. Vous pouvez ensuite surveiller l’état de l’exécution du script sur les appareils Windows 10 du début à la fin.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 L’extension de gestion Intune est soumise aux prérequis suivants :
 - Les appareils doivent être joints à Azure AD.
 - Les appareils doivent exécuter Windows 10, version 1607 ou ultérieure.

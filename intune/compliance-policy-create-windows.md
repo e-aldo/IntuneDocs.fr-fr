@@ -5,7 +5,7 @@ description: "Apprenez à créer une stratégie de conformité pour les appareil
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Windows dans Intune
 
@@ -111,9 +111,9 @@ Le fait de définir un nombre plus élevé pour ce paramètre oblige les utilisa
 ## <a name="device-health-settings"></a>Paramètres d’intégrité des appareils
 
 - **Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité :** vous pouvez définir une règle pour exiger que les appareils **Windows 10 Mobile** soient signalés comme étant sains dans des stratégies de conformité nouvelles ou existantes. Si ce paramètre est activé, les points de données suivants sont évalués sur les appareils Windows 10 à l’aide du service d’attestation de l’intégrité (HAS, Health Attestation Service) :
-  - **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le Chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume de système d’exploitation Windows. BitLocker utilise le module de plateforme sécurisée pour protéger le système d’exploitation Windows et les données de l’utilisateur. Il aide à s’assurer qu’un ordinateur n’a pas été falsifié, même en cas de perte ou de vol ou s’il a été laissé sans surveillance. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
+  - **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume hébergeant le système d’exploitation Windows. BitLocker utilise le Module de plateforme sécurisée (TPM) pour protéger le système d’exploitation Windows et les données utilisateur. Il contribue également à prévenir toute falsification d’un ordinateur, même si celui-ci est laissé sans assistance, perdu ou volé. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
   - **L’intégrité du code est activée :** l’intégrité du code est une fonctionnalité qui valide l’intégrité d’un fichier de pilote ou d’un fichier système chaque fois qu’il est chargé en mémoire. Elle détecte si un fichier système ou un fichier de pilote non signé est chargé dans le noyau, ou si un fichier système a été modifié par un logiciel malveillant exécuté par un compte d’utilisateur avec des privilèges d’administrateur.
-  - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser l’ordinateur démarrer. Si des fichiers ont été falsifiés et que leur signature a été rompue, le système ne démarre pas.
+  - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser la machine démarrer. Si des fichiers ont été falsifiés, avec pour effet d’annuler leur signature, le système ne démarre pas.
 
 Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
@@ -165,10 +165,10 @@ Si l’option **Mémoriser l’historique des mots de passe** est sélectionnée
 
 ## <a name="device-health-settings"></a>Paramètres d’intégrité des appareils
 
-- **Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité :** pris en charge sur les appareils Windows 10. Vous pouvez définir une règle pour exiger que les appareils Windows 10 soient signalés comme étant sains dans des stratégies de conformité nouvelles ou existantes. Si ce paramètre est activé, les points de données suivants sont évalués sur les appareils Windows 10 à l’aide du service d’attestation de l’intégrité (HAS, Health Attestation Service) :
-  - **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le Chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume de système d’exploitation Windows. BitLocker utilise le module de plateforme sécurisée pour protéger le système d’exploitation Windows et les données de l’utilisateur. Il aide à s’assurer qu’un ordinateur n’a pas été falsifié, même en cas de perte ou de vol ou s’il a été laissé sans surveillance. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
+- **Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité :** pris en charge sur les appareils Windows 10. Vous pouvez définir une règle exigeant que les appareils Windows 10 soient signalés comme intègres dans les stratégies de conformité nouvelles ou existantes. Si ce paramètre est activé, les points de données suivants sont évalués sur les appareils Windows 10 à l’aide du service d’attestation de l’intégrité (HAS, Health Attestation Service) :
+  - **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume hébergeant le système d’exploitation Windows. BitLocker utilise le Module de plateforme sécurisée (TPM) pour protéger le système d’exploitation Windows et les données utilisateur. Il contribue également à prévenir toute falsification d’un ordinateur, même si celui-ci est laissé sans assistance, perdu ou volé. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
   - **L’intégrité du code est activée :** l’intégrité du code est une fonctionnalité qui valide l’intégrité d’un fichier de pilote ou d’un fichier système chaque fois qu’il est chargé en mémoire. Elle détecte si un fichier système ou un fichier de pilote non signé est chargé dans le noyau, ou si un fichier système a été modifié par un logiciel malveillant exécuté par un compte d’utilisateur avec des privilèges d’administrateur.
-  - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser l’ordinateur démarrer. Si des fichiers ont été falsifiés et que leur signature a été rompue, le système ne démarre pas.
+  - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser la machine démarrer. Si des fichiers ont été falsifiés, avec pour effet d’annuler leur signature, le système ne démarre pas.
   - **Logiciel anti-programme malveillant à lancement anticipé :** un logiciel anti-programme malveillant à lancement anticipé protège les ordinateurs de votre réseau quand ils démarrent et avant l’initialisation des pilotes tiers.
 
 Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).

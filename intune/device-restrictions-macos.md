@@ -5,7 +5,7 @@ description: "Découvrez les paramètres Intune qui vous permettent de contrôle
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31de04787515a5d205108f2c412c6e5e57e170d7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 69fc2959c7694a0120efff8653ce8d619f33a9d3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Mac OS dans Microsoft Intune
 
@@ -47,7 +47,7 @@ Une liste **Applications approuvées** : répertorie les applications que les ut
 
 Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application et l’ID d’ensemble de l'application (par exemple *com.apple.calculator*).
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>Domaines
 
 ### <a name="unmarked-email-domains"></a>Domaines d’e-mail non marqués
 

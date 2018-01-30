@@ -5,7 +5,7 @@ description: "Créez et affectez des certificats PKCS avec Intune."
 keywords: 
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a51d260718e0d0c3984966fab69e202b854c1847
-ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
+ms.openlocfilehash: d877a1de8e66372d36641dd863a517fecf176d69
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurer et gérer les certificats PKCS avec Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour utiliser des certificats PKCS avec Intune, vous devez disposer de l’infrastructure suivante :
 

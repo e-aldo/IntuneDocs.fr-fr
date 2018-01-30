@@ -5,7 +5,7 @@ description: "Découvrez les paramètres que vous pouvez utiliser pour autoriser
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: f46ddd58434be750bac74fb99b526d64fccdb179
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Paramètres de filtrage de contenu web pour les appareils iOS
 
@@ -33,7 +33,7 @@ Si vous ne spécifiez aucune URL, les utilisateurs ne peuvent accéder à aucun 
 
 
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Mise en route
 
 1. Dans le panneau Fonctionnalités de l’appareil, sélectionnez **Filtre de contenu web (mode supervisé uniquement)**.
 2. Dans le panneau **Filtre de contenu web** panneau, choisissez le **type de filtre** que vous souhaitez configurer. Vous pouvez choisir plusieurs options :

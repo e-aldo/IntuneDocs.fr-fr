@@ -4,7 +4,7 @@ description: "Rubrique de référence sur la catégorie Application de collectio
 keywords: "Entrepôt de données Intune"
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a4008aa1c5e8c8219b45fffd1b021965bb83be17
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 4a33dd69f20d6cfd9eeda7de5e1d45432c505c81
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reference-for-application-entities"></a>Informations de référence sur les entités d’application
 
@@ -46,7 +46,7 @@ L’entité **AppRevision** répertorie toutes les versions des applications.
 | VppProgramTypeKey |Référence à VppProgramType décrite ci-dessous. | |
 | CreationTime |Heure de création de cette révision. |11/23/2016 12:00:00 AM |
 | ModifiedTime |Heure du dernier changement apporté à cette révision. |11/23/2016 12:00:00 AM |
-| Size |Taille du binaire. | |
+| Taille |Taille du binaire. | |
 | StartDateInclusiveUTC |Date et heure UTC de création de la révision de cette application dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
 | EndDateExclusiveUTC |Date et heure UTC correspondant au moment auquel cette révision d’application est devenue obsolète. |11/23/2016 12:00:00 AM |
 | IsCurrent |Indique si cette version de l’application est active ou non dans l’entrepôt de données. |Vrai/Faux |
@@ -134,4 +134,4 @@ L’entité **MobileAppDeviceUserInstallStatus** représente l’état d’insta
 | DeviceKey | Clé d’un appareil cible utilisée pour identifier une instance de l’appareil. |
 | UserKey | Clé d’un utilisateur ciblé utilisée pour identifier une instance d’utilisateur. |
 |AppInstallStateKey | Clé de l’état d’installation d’une application, utilisée pour identifier une instance de MobileAppInstallState. |
-| Code d'erreur | Le code d’erreur retourné par le programme d’installation de l’application, la plateforme mobile ou le service lié à l’installation de l’application. |
+| ErrorCode | Le code d’erreur retourné par le programme d’installation de l’application, la plateforme mobile ou le service lié à l’installation de l’application. |
