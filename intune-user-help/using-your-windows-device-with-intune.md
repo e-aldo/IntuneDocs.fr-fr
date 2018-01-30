@@ -4,23 +4,24 @@ description: "Cette rubrique fournit une liste de liens menant aux tâches que l
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c8ddc8902a6b9687e9b36cae7b1ff9b554f63841
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1d7a5ab2fc2b4be7e385e533016f9d07f4e16505
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-your-windows-device-with-intune"></a>Utilisation de votre appareil Windows avec Intune
 
@@ -33,7 +34,7 @@ Intune prend actuellement en charge les versions suivantes de Windows.
 * Windows 10 (versions Famille, Professionnel, Éducation, S et Entreprise)
 * Windows Phone 8.1 et versions ultérieures
 * Windows 8.1 RT
-* Windows 8.1
+* Windows 8.1
 
 Il existe d’autres versions de Windows, telles que [Windows 10 Holographique](https://www.microsoft.com/hololens), qui sont également prises en charge par Intune. Elles ne sont pas répertoriées ici car elles sont réservées à des usages très spécifiques.
 

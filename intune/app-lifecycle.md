@@ -4,7 +4,7 @@ description: "Obtenir des informations sur le cycle de vie des applications Intu
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e50e3af525be48bf058dd32bfb7b93508d500a3
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 87bd0ceed846052444e4dac4366e3a0304b1452c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-the-app-lifecycle"></a>Vue d’ensemble du cycle de vie des applications
 
@@ -42,7 +42,7 @@ Dans le cadre du cycle de vie des applications, des nouvelles versions des appli
 - [des stratégies de configuration des applications iOS](app-configuration-policies-use-ios.md) ([portail classique](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)), permettant de définir des paramètres pour des applications compatibles iOS utilisées lorsque l’application est exécutée. Par exemple, une application peut nécessiter des paramètres de marque spécifiques ou le nom d’un serveur auquel se connecter.
 - Les [Stratégies Managed Browser](app-configuration-managed-browser.md) ([portail classique](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)), permettant de configurer les paramètres du navigateur Intune géré qui remplace le navigateur de l’appareil par défaut et vous permet de limiter les sites web auxquels vos utilisateurs peuvent accéder.
 
-## <a name="protect"></a>Protection
+## <a name="protect"></a>Protéger
 
 Intune propose différentes manières de protéger les données dans vos applications. Les principales méthodes sont :
 - [L’accès conditionnel](conditional-access.md) ([portail classique](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) qui contrôle l’accès à la messagerie et aux autres services en fonction des conditions que vous spécifiez. Les conditions incluent les types d’appareils ou la conformité à l’une des [stratégies de conformité des appareils](device-compliance.md) ([portail classique](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)) que vous avez déployées.

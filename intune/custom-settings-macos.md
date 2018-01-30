@@ -5,7 +5,7 @@ description: "Découvrez les paramètres que vous pouvez utiliser dans un profil
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d52b6aac830ff01ee5c05ebc51f923102bf3eef2
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 88224849de0727418197fcfdb96cac3b4c2ca0e7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Paramètres personnalisés pour les appareils Mac OS dans Microsoft Intune
 
@@ -30,7 +30,7 @@ Utilisez le profil personnalisé Mac OS de Microsoft Intune pour affecter les 
 Cette fonctionnalité vous permet d’affecter des paramètres Mac OS qui ne sont pas configurables avec d’autres types de profils Intune.
 
 
-1. Suivez les instructions figurant dans le [Guide pratique pour la configuration des paramètres d’appareils personnalisés](custom-settings-configure.md) pour commencer.
+1. Suivez les instructions figurant dans [Configuration de paramètres d'appareil personnalisés dans Microsoft Intune](custom-settings-configure.md) pour commencer.
 2. Dans le panneau **Créer un profil**, spécifiez les valeurs suivantes :
 
 - **Nom du profil de configuration personnalisé** : entrez le nom de la stratégie tel qu’il sera affiché sur l’appareil et dans l'état Intune.

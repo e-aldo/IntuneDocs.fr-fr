@@ -5,7 +5,7 @@ description: Utilisez cette rubrique pour apprendre les notions de gestion des a
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ea0c9a406d6ddb78cd016a7b594d077d7181952
-ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
+ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
@@ -40,7 +40,7 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 
 ||||||
 |-|-|-|-|-|
-|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
+|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
 |Ajout et affectation d’applications pour des appareils et utilisateurs|Oui|Oui|Oui|Oui|
 |Affectation d’applications pour les appareils non inscrits avec Intune|Oui|Oui|Non|Non|
 |Utilisation de stratégies de configuration d’application pour contrôler le comportement des applications au démarrage|Non|Oui|Non|Non|
@@ -70,7 +70,7 @@ Vous trouverez la plupart des éléments liés à l’application dans la charge
 
     ![La charge de travail Mobile Apps](./media/apps-workload.png)
 
-### <a name="manage"></a>Gérer
+### <a name="manage"></a>Gestion
 - **Applications** : c’est sur ce nœud que vous allez ajouter, affecter et surveiller la plupart de vos applications.
     - [Ajouter des applications](apps-add.md)
     - [Attribuer des applications](apps-deploy.md)
@@ -97,7 +97,7 @@ Pour plus d'informations, voir [Gérer les applications](app-management.md).
 
 Pour plus d’informations, consultez [Surveiller des applications](apps-monitor.md).
 
-### <a name="setup"></a>Setup
+### <a name="setup"></a>Installation
 - **Jetons VPP iOS** : appliquez et affichez vos licences du programme VPP (Volume Purchase Program) iOS.
     - [Applications iOS achetées en volume](vpp-apps-ios.md)
 - **Certificat d'entreprise Windows** : appliquez ou affichez l’état d’un certificat de signature de code permettant de distribuer des applications métier sur vos appareils Windows gérés. 

@@ -5,7 +5,7 @@ description: "Une fois que vous avez affecté une application à des utilisateur
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb95319d2574116d480de9bdf74ef36129d0970f
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Guide pratique pour surveiller les affectations et les informations d’applications avec Microsoft Intune
 
@@ -70,7 +70,7 @@ Nombre d’applications avec un état inconnu.
  - **Nom de l’appareil**  
 Nom de l’appareil sur les plateformes qui autorisent le nommage d’un appareil. Sur d’autres plateformes, Intune crée un nom à partir d’autres propriétés. Cet attribut ne peut pas être disponible pour tous les appareils.
  - **Nom d’utilisateur**  
-Le nom de l'utilisateur.
+Nom de l’utilisateur.
  - **Plateforme**  
 Système d’exploitation de l’appareil (Windows, iOS, Android, etc.)
  - **Version**  
