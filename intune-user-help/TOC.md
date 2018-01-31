@@ -30,6 +30,7 @@
 #### [Vérification de la conformité des appareils](check-compliance-on-your-device-android.md)
 #### [Synchronisation de la messagerie Outlook avec le mode Économiseur de batterie](power-saving-mode-android.md)
 #### [Résolution des problèmes courants avec Samsung Knox](samsung-knox-errors-android.md)
+#### [Mettre à jour votre appareil pour installer Outlook](update-device-outlook-android.md)
 
 #### Utilisation des journaux pour résoudre les problèmes
 ##### [Activer la journalisation détaillée](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
@@ -85,6 +86,7 @@
 #### [Identifier votre appareil](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Rechercher votre numéro de série](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [Mise à jour de votre appareil iOS](you-need-to-update-your-ios-device.md)
+#### [Mettre à jour votre appareil pour installer Outlook](update-device-outlook-ios.md)
 #### [Ma version d’iOS n’est pas encore prise en charge](your-ios-version-isnt-yet-supported.md)
 
 ### Protection contre les menaces mobiles
