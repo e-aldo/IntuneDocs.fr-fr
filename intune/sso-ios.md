@@ -5,7 +5,7 @@ description: "Découvrez comment configurer Intune pour l’authentification uni
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>Configurer Intune pour l’authentification unique des appareils iOS
 
@@ -46,7 +46,7 @@ Pour tirer parti de l’authentification unique des appareils iOS, les condition
 
 2. Utilisez le tableau récapitulatif suivant pour vous aider à remplir les champs du panneau **Authentification unique**. Pour plus d’informations, consultez les sections après le tableau.
    
-   |Champ  |Remarques|
+   |Champ  |Notes|
    |---------|---------|
    |**Attribut de nom d’utilisateur d’AAD**|Attribut recherché par Intune dans AAD pour chaque utilisateur, et renseigné dans le champ correspondant (par exemple, UPN) avant de générer la charge utile XML installée sur l’appareil.|
    |**Domaine**|Partie domaine de l’URL.|
@@ -89,7 +89,7 @@ Les modèles `http://.com` et `https://.com` correspondent respectivement à tou
 
 Indique les applications sur l’appareil de l’utilisateur final qui peuvent utiliser la charge utile d’authentification unique.
 
-Le tableau `AppIdentifierMatches` doit contenir des chaînes qui correspondent aux ID de bundles d’applications. Ces chaînes peuvent être des correspondances exactes (par exemple `com.contoso.myapp`) ou peuvent spécifier une correspondance de préfixe sur l’ID de bundle à l’aide du caractère générique *. Le caractère générique doit apparaître après un point (.), et ne peut apparaître qu’une seule fois, à la fin de la chaîne (par exemple `com.contoso.*`). Quand un caractère générique est inclus, toute application dont l’ID de bundle commence par le préfixe bénéficie de l’accès au compte.
+Le tableau `AppIdentifierMatches` doit contenir des chaînes qui correspondent aux ID de bundles d’applications. Ces chaînes peuvent être des correspondances exactes (par exemple, `com.contoso.myapp`) ou peuvent spécifier une correspondance de préfixe sur l’ID d’ensemble à l’aide du caractère générique *\. Le caractère générique doit apparaître après un point (.), et ne peut apparaître qu’une seule fois, à la fin de la chaîne (par exemple `com.contoso.*`). Quand un caractère générique est inclus, toute application dont l’ID de bundle commence par le préfixe bénéficie de l’accès au compte.
 
 Le champ **Nom de l’application** sert à ajouter un nom convivial afin de vous aider à identifier l’ID de bundle.
 

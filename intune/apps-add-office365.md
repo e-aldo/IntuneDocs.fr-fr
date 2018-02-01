@@ -5,7 +5,7 @@ description: "Découvrez comment utiliser Intune pour faciliter l’installation
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Guide pratique pour affecter des applications Office 365 ProPlus 2016 à des appareils Windows 10 avec Microsoft Intune
 
@@ -35,10 +35,10 @@ ms.lasthandoff: 12/01/2017
 - Intune prend uniquement en charge l’ajout d’applications Office provenant de la suite Office 365 ProPlus 2016.
 - Si des applications Office sont ouvertes au moment où Intune installe la suite d’applications, les utilisateurs finaux risquent de perdre les données contenues dans des fichiers non enregistrés.
 - Cette méthode d’installation n’est pas prise en charge sur les appareils Windows 10.
-- Intune ne prend pas en charge l’installation d’applications Office 365 pour poste de travail à partir du Windows Store (appelées Office Centennial) sur un appareil sur lequel vous avez déjà déployé des applications Office 365 avec Intune. Si vous installez cette configuration, cela peut entraîner une perte ou une altération des données.
+- Intune ne prend pas en charge l’installation d’applications de bureau Office 365 à partir du Microsoft Store (appelées applications Office Centennial) sur un appareil sur lequel vous avez déjà déployé des applications Office 365 avec Intune. Si vous installez cette configuration, cela peut entraîner une perte ou une altération des données.
 
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Mise en route
 
 1.  Connectez-vous au portail Azure.
 2.  Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
@@ -63,7 +63,7 @@ Dans cette étape, choisissez les applications Office à affecter aux appareils.
 Dans cette étape, indiquez des informations sur la suite d’applications. Ces informations vous permettent d’identifier la suite dans Intune. Elles aident aussi les utilisateurs finaux à trouver la suite dans l’application Portail d’entreprise.
 
 1.  Dans le panneau **Ajouter une application**, choisissez **Informations sur la suite d’applications**.
-2.  Dans le panneau **Informations sur la suite d’applications**, indiquez les informations suivantes : 
+2.  Dans le panneau **Informations sur la suite d’applications**, indiquez les informations suivantes :
     - **Nom de la suite** : entrez le nom de la suite d’applications tel qu’il apparaît dans le portail d’entreprise. Vérifiez que chaque nom de suite que vous utilisez est unique. Si un même nom de suite d’applications est utilisé deux fois, une seule application est proposée aux utilisateurs du portail d’entreprise.
     - **Description de la suite** : entrez la description de la suite d’applications. Vous pouvez par exemple répertorier les applications que vous avez choisies d’inclure.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
@@ -82,9 +82,9 @@ Dans cette étape, indiquez des informations sur la suite d’applications. Ces 
 Dans cette étape, configurez les options d’installation de la suite d’applications. Les paramètres s’appliquent à toutes les applications que vous avez ajoutées à la suite.
 
 1.  Dans le panneau **Ajouter une application**, choisissez **Paramètres de la suite d’applications**.
-2.  Dans le panneau **Paramètres de la suite d’applications**, indiquez les informations suivantes : 
+2.  Dans le panneau **Paramètres de la suite d’applications**, indiquez les informations suivantes :
     - **Version d’Office** : choisissez si vous souhaitez affecter la version 32 bits ou 64 bits d’Office. Vous pouvez installer la version 32 bits sur des appareils 32 bits et 64 bits, mais vous ne pouvez installer la version 64 bits que sur des appareils 64 bits.
-    - **Canal de mise à jour** : choisissez le mode de mise à jour d’Office sur les appareils. Pour plus d’informations sur les différents canaux de mise à jour, consultez Vue d’ensemble des canaux de mise à jour pour Office 365 ProPlus. Choisissez parmi : 
+    - **Canal de mise à jour** : choisissez le mode de mise à jour d’Office sur les appareils. Pour plus d’informations sur les différents canaux de mise à jour, consultez Vue d’ensemble des canaux de mise à jour pour Office 365 ProPlus. Choisissez parmi :
         - **Actuel**
         - **Différé**
         - **Canal actuel de la première version**
@@ -104,19 +104,19 @@ Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisis
 
 Le tableau suivant répertorie les codes d’erreur fréquemment rencontrés et leur signification.
 
-### <a name="status-for-office-csp"></a>État pour Office CSP : 
+### <a name="status-for-office-csp"></a>État pour Office CSP :
 
 ||||
 |-|-|-|
-|Status|Phase|Description|
-|1460 (ERROR_TIMEOUT)|Télécharger|Échec du téléchargement de l’outil Déploiement d’Office|    
-|13 (ERROR_INVALID_DATA)|-|Impossible de vérifier la signature de l’outil Déploiement d’Office téléchargé| 
+|État|Phase|Description|
+|1460 (ERROR_TIMEOUT)|Téléchargez|Échec du téléchargement de l’outil Déploiement d’Office|    
+|13 (ERROR_INVALID_DATA)|-|Impossible de vérifier la signature de l’outil Déploiement d’Office téléchargé|
 |Code d’erreur de CertVerifyCertificateChainPolicy|-|Échec de la vérification de certification pour l’outil Déploiement d’Office téléchargé|    
-|997|WIP|En cours d'installation| 
+|997|WIP|En cours d'installation|
 |0|Après l’installation|Installation réussie|    
 |1603 (ERROR_INSTALL_FAILURE)|-|Échec de la vérification des prérequis, par exemple :<br>- SxS (tentative d’installation alors que la version MSI 2016 est installée)<br>- non-concordance des versions<br>- etc.|     
 |0x8000ffff (E_UNEXPECTED)|-|Tentative de désinstallation alors qu’aucune installation Office « Démarrer en un clic » n’est présente sur l’ordinateur.|    
-|17002|-|Échec de l’exécution du scénario (installation). Raisons possibles :<br>- Installation annulée par l’utilisateur<br>- Installation annulée par une autre installation<br>- Espace insuffisant durant l’installation<br>- ID de langue inconnu| 
+|17002|-|Échec de l’exécution du scénario (installation). Raisons possibles :<br>- Installation annulée par l’utilisateur<br>- Installation annulée par une autre installation<br>- Espace insuffisant durant l’installation<br>- ID de langue inconnu|
 |17004|-|Références SKU inconnues|   
 
 
@@ -124,15 +124,15 @@ Le tableau suivant répertorie les codes d’erreur fréquemment rencontrés et 
 
 |||||
 |-|-|-|-|
-|Scénario|Code de retour|Interface utilisateur du service|Remarque| 
-|Tentative de désinstallation en l’absence d’une installation Office « Démarrer en un clic »|-2147418113, 0x8000ffff ou 2147549183|Code d’erreur : 30088-1008<br>Code d’erreur : 30125-1011 (404)|Outil Déploiement d’Office| 
-|Installation alors qu’une version MSI est installée|1603|-|Outil Déploiement d’Office| 
-|Installation annulée par l’utilisateur ou par une autre installation|17002|-|Office « Démarrer en un clic »| 
-|Tentative de désinstallation d’une version 64 bits sur un appareil sur lequel la version 32 bits est installée.|1603|-|Code de retour de l’outil Déploiement d’Office| 
-|Tentative d’installation d’une référence SKU inconnue (il ne s’agit pas d’un cas d’usage légitime pour Office CSP puisque seules des références SKU valides doivent être passées)|17004|-|Office « Démarrer en un clic »| 
-|Espace insuffisant|17002|-|Office « Démarrer en un clic »| 
-|Échec du démarrage du client Office « Démarrer en un clic » (inattendu)|17000|-|Office « Démarrer en un clic »| 
-|Échec de la mise en file d’attente du scénario par le client Office « Démarrer en un clic » (inattendu)|17001|-|Office « Démarrer en un clic »| 
+|Scénario|Code de retour|Interface utilisateur du service|Remarque|
+|Tentative de désinstallation en l’absence d’une installation Office « Démarrer en un clic »|-2147418113, 0x8000ffff ou 2147549183|Code d’erreur : 30088-1008<br>Code d’erreur : 30125-1011 (404)|Outil Déploiement d’Office|
+|Installation alors qu’une version MSI est installée|1603|-|Outil Déploiement d’Office|
+|Installation annulée par l’utilisateur ou par une autre installation|17002|-|Office « Démarrer en un clic »|
+|Tentative de désinstallation d’une version 64 bits sur un appareil sur lequel la version 32 bits est installée.|1603|-|Code de retour de l’outil Déploiement d’Office|
+|Tentative d’installation d’une référence SKU inconnue (il ne s’agit pas d’un cas d’usage légitime pour Office CSP puisque seules des références SKU valides doivent être passées)|17004|-|Office « Démarrer en un clic »|
+|Espace insuffisant|17002|-|Office « Démarrer en un clic »|
+|Échec du démarrage du client Office « Démarrer en un clic » (inattendu)|17000|-|Office « Démarrer en un clic »|
+|Échec de la mise en file d’attente du scénario par le client Office « Démarrer en un clic » (inattendu)|17001|-|Office « Démarrer en un clic »|
 
 ## <a name="next-steps"></a>Étapes suivantes
 

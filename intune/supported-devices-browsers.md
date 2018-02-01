@@ -4,7 +4,7 @@ description: "Répertorie les plateformes d’appareils et navigateurs pris en c
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -14,28 +14,28 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
+ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="supported-devices-and-browsers"></a>Appareils et navigateurs pris en charge
+# <a name="supported-operating-systems-and-browsers"></a>Navigateurs et systèmes d’exploitation pris en charge
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Cet article est destiné aux administrateurs système responsables de la gestion des appareils de l’entreprise. Pour de l’aide sur l’installation de Intune sur votre téléphone, consultez [Utilisation d’appareils gérés pour votre travail](/intune-user-help/company-portal-frequently-asked-questions).
+Cet article est destiné aux administrateurs système responsables de la gestion des appareils de l’entreprise. Pour obtenir de l’aide sur l’installation d’Intune sur votre appareil, consultez [Utiliser des appareils gérés pour réaliser vos tâches](/intune-user-help/company-portal-frequently-asked-questions).
 
 Avant de commencer la configuration de Microsoft Intune, passez en revue les conditions suivantes :
 
-- [Appareils et ordinateurs pris en charge](#intune-supported-devices)
+- [Systèmes d’exploitation pris en charge](#intune-supported-operating-systems)
 - [Liste des navigateurs web pris en charge pour l’utilisation d’Intune](#intune-supported-web-browsers)
 
 Vous devez également vous familiariser avec [l’utilisation de la bande passante réseau Intune](network-bandwidth-use.md) ([portail classique](/intune-classic/get-started/network-bandwidth-use)).
 
-## <a name="intune-supported-devices"></a>Appareils pris en charge par Intune
+## <a name="intune-supported-operating-systems"></a>Systèmes d’exploitation pris en charge Intune
 
-Vous pouvez gérer les appareils suivants avec la gestion des appareils mobiles Intune :
+Vous pouvez gérer des appareils qui exécutent les systèmes d’exploitation suivants :
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
@@ -85,7 +85,6 @@ La liste suivante contient les modèles d’appareils Samsung qui ne prennent pa
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Vous ne pouvez pas utiliser Intune pour gérer les systèmes d’exploitation Windows Server.
 
 ### <a name="windows-pc-software-client"></a>Logiciel client pour PC Windows
 

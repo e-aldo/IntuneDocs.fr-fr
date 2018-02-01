@@ -5,7 +5,7 @@ description: "Cette rubrique explique comment utiliser la fonctionnalité iOS Op
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83ef0050380b8b5e3741dc7b8ea57574df6df658
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 2d110a099b4957626d4368c9e63817674d6cfaa2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Guide pratique pour gérer le transfert de données entre applications iOS
 ## <a name="manage-ios-apps"></a>Gérer les applications iOS
 La protection des données de votre entreprise nécessite notamment de vérifier que les transferts de fichiers sont limités aux applications que vous gérez.  Vous pouvez gérer les applications iOS comme suit :
 
--   Empêchez la perte de données d’entreprise en configurant une stratégie de protection des applications pour les applications. Nous appellerons cela les applications **gérées par une stratégie**. Consultez [toutes les applications compatibles avec Intune que vous pouvez gérer avec la stratégie de protection des applications](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
+-   Empêchez la perte de données d’entreprise en configurant une stratégie de protection des applications pour les applications. Ces dernières sont appelées des applications **gérées par une stratégie**. Consultez [toutes les applications gérées par Intune que vous pouvez gérer avec la stratégie de protection des applications](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
 -   Vous pouvez également déployer et gérer des applications via le **canal MDM**.  Ceci nécessite que les appareils soient inscrits dans la solution MDM. Il peut s’agir d’applications **gérées par une stratégie** ou d’autres applications gérées.
 

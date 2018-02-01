@@ -4,8 +4,8 @@ description: "Configuration requise et conditions préalables avant de commencer
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54f2bdd4a415cb8a4432a8bdcf93c56ba995c201
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-up-intune"></a>Configurer Intune
 
@@ -35,7 +35,7 @@ Si vous utilisez actuellement Microsoft System Center Configuration Manager pour
 
 
 
-| Étapes | Status  |
+| Étapes | État  |
 | ------------- |-------------|
 | 1  | [Configurations prises en charge](supported-devices-browsers.md) : informations à connaître avant de commencer. Cela inclut les configurations prises en charge et les spécifications réseau.|
 | 2 |  [Se connecter à Intune](account-sign-up.md) : Connectez-vous à votre abonnement d’évaluation ou créez un abonnement Intune. |  
@@ -47,3 +47,4 @@ Si vous utilisez actuellement Microsoft System Center Configuration Manager pour
 | 8 | [Configurer des appareils](device-profiles.md) : Configurez des profils pour gérer les paramètres d’appareil. Les profils d’appareil peuvent préconfigurer des paramètres pour la messagerie, le VPN, le Wi-Fi et des fonctionnalités de l’appareil. Ils peuvent également restreindre les appareils pour vous aider à protéger aussi bien les données que les appareils.  |
 | 9 | [Personnaliser le portail d’entreprise](company-portal-app.md) : Personnalisez le portail d’entreprise Intune dont se servent les utilisateurs pour inscrire des appareils et installer des applications. Ces paramètres s’affichent dans l’application Portail d’entreprise et le site web du portail d’entreprise Intune. |
 | 10 | [Activer l’inscription d’appareil](mdm-authority-set.md) : Activez la gestion Intune des appareils iOS, Windows, Android et Mac en définissant l’autorité de gestion des appareils mobiles et en activant des plateformes spécifiques. |
+| 11 | [Configurer des stratégies d’application](app-protection-policy.md) : Indiquez des paramètres spécifiques en fonction des stratégies de protection des applications dans Microsoft Intune. |

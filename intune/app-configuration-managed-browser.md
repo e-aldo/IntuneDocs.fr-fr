@@ -5,7 +5,7 @@ description: "Déployez l’application Managed Browser pour limiter la navigati
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7619efc305881f1ad56a7c14e5d92c05fb0c6d77
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -50,7 +50,7 @@ Managed Browser ne prend pas en charge le protocole de chiffrement SSLv3 (Secure
 
 Vous pouvez créer des stratégies Managed Browser pour les types d'appareils suivants :
 
--   Appareils qui exécutent Android 4 et versions ultérieures
+-   appareils qui exécutent Android 4 et versions ultérieures ;
 
 -   Appareils qui exécutent iOS 8.0 et versions ultérieures
 
@@ -148,7 +148,7 @@ Ce paramètre vous permet de configurer un ensemble de signets pour les utilisat
 |||
 |-|-|
 |Clé|Valeur|
-|Choisissez parmi :<br><br>- Spécifier des URL autorisées (seules ces URL sont autorisées ; aucun autre site n’est accessible) : **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Spécifier des URL bloquées (tous les autres sites sont accessibles) : <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|La valeur correspondante pour la clé est une liste d’URL. Vous entrez toutes les URL que vous souhaitez autoriser ou bloquer comme des valeurs uniques, séparées par des barres verticales **&#124;**.<br><br>Exemples :<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|Choisissez parmi :<br><br>- Spécifier des URL autorisées (seules ces URL sont autorisées ; aucun autre site n’est accessible) : **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Spécifier des URL bloquées (tous les autres sites sont accessibles) : <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|La valeur correspondante pour la clé est une liste d’URL. Vous entrez toutes les URL que vous souhaitez autoriser ou bloquer comme des valeurs uniques, séparées par des barres verticales **&#124;**.<br><br>Exemples :<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >Ne spécifiez pas les deux clés. Si les deux clés sont destinées au même utilisateur, la clé allow est utilisée parce qu’il s’agit de l’option la plus restrictive.
@@ -167,11 +167,11 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
     -   Port 443 pour https
 
-    L’utilisation de caractères génériques n’est pas prise en charge pour les numéros de port. Par exemple, les chaînes suivantes ne sont pas gérées : **http&colon;//www&period;contoso&period;com:*;** et **http&colon;//www&period;contoso&period;com: /*;**.
+    L’utilisation de caractères génériques n’est pas prise en charge pour les numéros de port. Par exemple, les chaînes suivantes ne sont pas prises en charge : **http&colon;//www&period;contoso&period;com:*;** et **http&colon;//www&period;contoso&period;com: /*;**
 
 -   Utilisez le tableau suivant pour en savoir plus sur les modèles autorisés que vous pouvez utiliser pour spécifier des URL :
 
-|Adresse URL|Détails|Correspond à|Ne correspond pas à|
+|URL|Détails|Correspond à|Ne correspond pas à|
 |-------|---------------|-----------|------------------|
 |http://www.contoso.com|Correspond à une page unique|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
 |http://contoso.com|Correspond à une page unique|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
