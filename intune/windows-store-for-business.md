@@ -5,7 +5,7 @@ description: "Découvrez comment synchroniser des applications dans Intune à pa
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ca1ab9ca0e6bd734fa756cd32e64bde7ff4cb40
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 85141fc6f4d71994f575233c255a97e336c92108
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Guide pratique pour gérer les applications que vous avez achetées dans le Microsoft Store pour Entreprises avec Microsoft Intune
 
@@ -31,7 +31,7 @@ Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) 
 * Les applications qui sont synchronisées apparaissent dans la console d’administration Intune. Vous pouvez les affecter comme toute autre application.
 * Vous pouvez effectuer un suivi du nombre de licences disponibles et de la quantité de licences utilisée dans la console d’administration Intune.
 * Intune bloque l’attribution et l’installation des applications s’il n’y a pas suffisamment de licences disponibles.
-* Les applications gérées par le Microsoft Store pour Entreprises révoquent automatiquement les licences quand un utilisateur quitte l’entreprise ou quand l’administrateur supprime l’utilisateur et ses appareils.
+* Les applications gérées par Microsoft Store pour Entreprises révoquent automatiquement les licences quand un utilisateur quitte l’entreprise ou quand l’administrateur supprime l’utilisateur et ses appareils.
 
 ## <a name="before-you-start"></a>Avant de commencer
 

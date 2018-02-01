@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1612f5af24bd4c96aced4e3a6f1572a4c49d9913
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Préparer les applications métier aux stratégies de protection des applications
 
@@ -50,7 +50,7 @@ Pour plus d’informations sur l’outil de création de package de restrictions
 |**Outil de création de package de restrictions d’application** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |Oui|Oui|
-|**Android**| Non |Oui|
+|**Android**| En préversion |Oui|
 
 ## <a name="intune-app-sdk"></a>Kit SDK d’application Intune
 Le SDK d’application est conçu principalement pour les clients qui ont des applications dans l’Apple App Store ou dans le Google Play Store, et qui veulent gérer ces applications avec Intune. Cependant, toute application peut tirer parti de l’intégration du SDK, même s’il s’agit d’applications métier.
@@ -95,7 +95,7 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 |Revérifier les spécifications requises pour l’accès après un nombre de minutes spécifié|X|X|
 |Spécifier la période de grâce hors connexion|X|X|
 |Bloquer la capture d’écran (Android uniquement)|X|X|
-|Prise en charge de GAM sans inscription de l’appareil|X|X|
+|Prise en charge de MAM sans inscription de l’appareil|X|X|
 |Réinitialisation complète|X|X|
 |Réinitialisation sélective <br></br>**Remarque :** pour iOS, quand le profil de gestion est supprimé, l’application est également supprimée.|X||
 |Empêcher « Enregistrer sous » |X||

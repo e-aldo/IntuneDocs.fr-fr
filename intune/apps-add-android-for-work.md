@@ -5,7 +5,7 @@ description: "Utilisez cette rubrique pour synchroniser, puis affecter des appli
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 06/13/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Guide pratique pour affecter des applications sur des appareils Android for Work avec Microsoft Intune
 
@@ -51,7 +51,7 @@ Vérifiez que vous avez configuré Intune et Android for Work pour qu’ils coll
 1. Accédez à la Console développeur Google Play, [play.google.com/apps/publish](https://play.google.com/apps/publish).
 2. Connectez-vous avec le compte que vous avez utilisé pour configurer la connexion entre Intune et Android for Work. Si vous vous connectez pour la première fois, vous devez vous inscrire et payer des frais pour devenir membre du programme de développement Google.
 3. Dans la console, sélectionnez **Ajouter une nouvelle application**.
-4. Vous chargez votre application et fournissez des informations la concernant de la même manière que vous publiez une application sur le Google Play Store. Toutefois, vous devez sélectionner le paramètre **(<*nom de l’organisation*>)** :<br>
+4. Vous chargez votre application et fournissez des informations la concernant de la même manière que vous publiez une application sur le Google Play Store. Toutefois, vous devez sélectionner le paramètre **Mettre cette application à la disposition de mon organisation uniquement (<*nom de l’organisation*>)** :<br>
   ![Option permettant de mettre l’application à la disposition de votre organisation uniquement](media/restrict.png)<br>
 Cette opération assure que l’application est uniquement disponible pour votre organisation et n’est pas disponible dans le Google Play Store public.
 Pour plus d’informations sur la façon de charger et publier des applications Android, consultez l’[aide Google Developer Console](https://support.google.com/googleplay/android-developer/answer/113469).

@@ -5,8 +5,8 @@ description: "Découvrez la procédure permettant d’obtenir un certificat Push
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
-ms.date: 10/04/2017
+manager: dougeby
+ms.date: 1/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67c2cb238d354ccd9801ec0b5c9f8ccb49c6715
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 8fca2a1f32cd15752758802ee6ae44b8ae33b696
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Obtenir un certificat Push MDM Apple
 
@@ -56,7 +56,10 @@ Le certificat est associé à l’identifiant Apple utilisé pour le créer. Ren
 2. Choisissez **Télécharger votre CSR** pour télécharger et enregistrer le fichier de demande en local. Le fichier est utilisé pour demander un certificat de relation d’approbation à partir du portail Apple Push Certificates.
 3. Recherchez le certificat que vous souhaitez renouveler et sélectionnez **Renouveler**.
 4. Dans l’écran **Renouveler le certificat Push**, ajoutez une note qui vous permettra d’identifier le certificat par la suite, sélectionnez **Choisir un fichier** pour accéder au nouveau fichier de demande que vous avez téléchargé, puis choisissez **Charger**.
-5. Dans l’écran **Confirmation**, sélectionnez **Télécharger** et enregistrez le fichier .pem localement.
-6. Dans le portail Azure, sélectionnez l’icône **Certificat Push MDM Apple**, sélectionnez le fichier .pem téléchargé à partir d’Apple et choisissez **Charger**.
+   > [!TIP]
+   > Un certificat peut être identifié par son UID. Examinez **l’ID d’objet** dans les détails du certificat pour trouver la partie GUID de l’UID. Sinon, sur un appareil iOS inscrit, accédez à **Settings** > **General** > **Device** **Management** > **Management Profile** > **More Details** > **Management Profile** (Paramètres, Général, Appareil, Gestion, Profil de gestion, Plus de détails, Profil de gestion). La deuxième ligne, **Topic** (Rubrique), contient le GUID unique que vous pouvez associer au certificat dans le portail Apple Push Certificates.
+ 
+6. Dans l’écran **Confirmation**, sélectionnez **Télécharger** et enregistrez le fichier .pem localement.
+7. Dans le portail Azure, sélectionnez l’icône **Certificat Push MDM Apple**, sélectionnez le fichier .pem téléchargé à partir d’Apple et choisissez **Charger**.
 
 Votre certificat Push MDM Apple apparaît **Actif** et valide pendant 365 jours.

@@ -4,7 +4,7 @@ description: "Cet article propose une stratégie et un plan de communication pou
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="plan-communications"></a>Planifier les communications
 
@@ -30,13 +30,13 @@ Nous vous recommandons le plan de communication par e-mail suivant. Nous mettons
 -   **E-mail \#1 :** expliquez les avantages, les attentes et le programme. Profitez de l’occasion pour présenter tout nouveau service auquel les appareils gérés par Intune auront accès.<br/><br/>
 
 
-    -   [Télécharger le modèle d’e-mail \#1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [Télécharger le \#modèle d’e-mail 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
 -   **E-mail \#2 :** Annoncer que les services sont prêts pour un accès via Intune. Demandez aux utilisateurs d’inscrire leurs appareils à cette étape. Rappelez-leur les avantages et motifs stratégiques de la migration.<br/><br/>
 
 
-    -   [Télécharger le modèle d’e-mail \#2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+    -   [Télécharger le \#modèle d’e-mail 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
 -   **E-mail\#3 :** communiquez la chronologie aux utilisateurs avant que leur accès soit affecté. Rappelez-leur à nouveau les avantages et motifs stratégiques de la migration. Les e-mails doivent être échelonnés avec une fenêtre glissante pour correspondre à vos différentes phases. Par exemple, envoyez l’e-mail \#1 aux utilisateurs de la phase 1, l’e-mail \#2 aux utilisateurs de la phase 2 et l’e-mail \#3 aux utilisateurs de la phase 3 au mois de juin.<br/><br/>

@@ -5,7 +5,7 @@ description: "Utiliser un profil personnalisé Intune pour créer un profil Wi-F
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utiliser un profil d’appareil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -206,11 +206,9 @@ Vous pouvez également créer un du fichier XML à partir d’une connexion Wi-F
 3.     Recherchez dans les fichiers XML pour trouver celui dont le nom est correct.
 4.     Une fois que vous avez localisé le fichier XML approprié, copiez et collez le code XML dans le champ de données de la page de paramètres OMA-URI.
 
-## <a name="best-practices"></a>Méthodes conseillées
+## <a name="best-practices"></a>meilleures pratiques recommandées.
 Avant de déployer un profil Wi-Fi avec une clé prépartagée, vérifiez que l’appareil peut se connecter directement au point de terminaison.
 
 Lors de la rotation des clés (mots de passe ou phrases secrètes), prévoyez du temps d’arrêt et planifiez les déploiements en conséquence. Il est préférable d’envoyer les nouveaux profils Wi-Fi en dehors des horaires de travail. Avertissez également les utilisateurs que la connectivité peut être impactée.
- 
-Pour garantir une transition en douceur et fournir des mises à jour de stratégie en temps voulu, les appareils doivent conserver au moins un canal de communication ouvert pour Intune. Pour ce faire, utilisez une connexion mobile ou fournissez un accès Wi-Fi invité qui connecte les utilisateurs uniquement aux points de terminaison Intune.
 
-
+Pour garantir une transition en douceur, vérifiez que l’appareil de l’utilisateur final a une autre connexion à Internet. Par exemple, l’utilisateur final doit être en mesure de revenir au Wi-Fi invité (ou un autre réseau Wi-Fi), ou disposer d’une connectivité cellulaire pour communiquer avec Intune. Cela permet à l’utilisateur de continuer à recevoir des mises à jour de stratégie quand le profil Wi-Fi d’entreprise est mis à jour sur l’appareil.
