@@ -126,6 +126,10 @@
           items:
             - name: Configuration réseau
               href: network-bandwidth-use.md
+            - name: Windows Holographic for Business
+              href: windows-holographic-for-business.md
+            - name: Mettre à niveau Windows Holographic
+              href: holographic-upgrade.md
         - name: Se connecter à Intune
           href: account-sign-up.md
         - name: Configurer des domaines
@@ -181,7 +185,7 @@
               href: apple-configurator-enroll-ios.md
         - name: Configurer l’inscription macOS
           href: macos-enroll.md
-    - name: Gérer des périphériques
+    - name: Gérer des unités
       href: device-management.md
       items:
         - name: Contourner le verrou d’activation
@@ -309,7 +313,7 @@
               href: device-restrictions-ios.md
             - name: macOS
               href: device-restrictions-macos.md
-            - name: Windows 8.1
+            - name: "Windows\_8.1"
               href: device-restrictions-windows-8-1.md
             - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
@@ -317,6 +321,8 @@
               href: device-restrictions-windows-10.md
             - name: "Windows\_10 Collaboration"
               href: device-restrictions-windows-10-teams.md
+            - name: Windows Holographic for Business
+              href: device-restrictions-windows-holographic.md
             - name: Android for Work
               href: device-restrictions-android-for-work.md
         - name: Configurer les paramètres de courrier
@@ -341,7 +347,7 @@
               href: vpn-setting-configure-per-app.md
             - name: macOS
               href: vpn-settings-macos.md
-            - name: Windows 8.1
+            - name: "Windows\_8.1"
               href: vpn-settings-windows-8-1.md
             - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
@@ -592,6 +598,8 @@
               href: custom-settings-windows-phone-8-1.md
             - name: "Windows\_10"
               href: custom-settings-windows-10.md
+            - name: Windows Holographic for Business
+              href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
         - name: Charger des applications métier Windows de façon indépendante
