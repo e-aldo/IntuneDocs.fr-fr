@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f472c144e9bcda965486f8e88d38aa9d27df165
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e0163cc90e644bbae8f12759b473d81c9770bee
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrire automatiquement des appareils iOS avec le Programme d’inscription des appareils d’Apple
 
@@ -42,7 +42,7 @@ Apple a introduit le mode supervisé dans iOS 5. Un appareil iOS en mode supervi
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 - Appareils achetés dans le cadre du [Programme d’inscription des appareils d’Apple](http://deploy.apple.com)
 - [Autorité MDM](mdm-authority-set.md)
 - [Certificat Push MDM Apple](apple-mdm-push-certificate-get.md)
@@ -79,7 +79,10 @@ Vous utilisez le portail DEP Apple pour créer un jeton DEP. Vous utilisez égal
    ![Capture d’écran de l’ajout d’un nom de serveur MDM pour le programme DEP et clic sur Suivant.](./media/enrollment-program-token-add-server.png)
 
 5. La boîte de dialogue **Ajouter &lt;nom_serveur&gt;**  s’ouvre avec le message **Charger votre clé publique**. Choisissez **Choisir un fichier** pour charger le fichier .pem, puis choisissez **Suivant**.  
+<<<<<<< HEAD
 
+=======
+>>>>>>> e19b417f8bc134dc5a5a9f60354f017ccc42fd88
 
 7. Accédez à **Programme de déploiement** &gt; **Programme d’inscription d’appareils** &gt; **Gérer les appareils**.
 8. Sous **Choisir les appareils par**, spécifiez comment les appareils sont identifiés :
@@ -93,7 +96,7 @@ Vous utilisez le portail DEP Apple pour créer un jeton DEP. Vous utilisez égal
 
    Dans le portail Apple, accédez à **Programmes de déploiement** &gt; **Programme d’inscription d’appareils** &gt; **Afficher l’historique d’affectation** pour afficher la liste des appareils et leur affectation aux serveurs MDM.
 
-**Étape 3. Entrez l’ID Apple utilisé pour créer votre jeton du programme d’inscription.**<br>Dans le portail Azure d’Intune, fournissez l’ID Apple pour référence ultérieure. Utilisez cet ID pour renouveler votre jeton de programme d’inscription à l’avenir pour éviter d’avoir à réinscrire tous vos appareils.
+**Étape 3. Entrez l’ID Apple utilisé pour créer votre jeton du programme d’inscription.**<br>Dans le portail Azure d’Intune, fournissez l’ID Apple pour référence ultérieure.
 
 ![Capture d’écran : spécification de l’ID Apple utilisé pour créer le jeton du programme d’inscription et accès à ce jeton.](./media/enrollment-program-token-apple-id.png)
 
@@ -117,27 +120,27 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
 4. Choisissez **Paramètres de gestion des appareils** pour configurer les paramètres de profil suivants :
 
   ![Capture d’écran : choix du mode d’administration. L’appareil a les paramètres suivants : Supervisé, Inscription verrouillée, Autoriser l’appairage défini sur Refuser tout. Apple Configurator Certificates est grisé pour un nouveau profil de programme d’inscription.](./media/enrollment-program-profile-mode.png)
-    - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées. Microsoft recommande l’utilisation du Programme d’inscription des appareils comme mécanisme d’activation du mode supervisé, en particulier pour les organisations qui déploient un grand nombre d’appareils iOS.
+  - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées. Microsoft recommande l’utilisation du Programme d’inscription des appareils comme mécanisme d’activation du mode supervisé, en particulier pour les organisations qui déploient un grand nombre d’appareils iOS.
 
  > [!NOTE]
  > La configuration d’un appareil pour le mode supervisé ne peut pas être effectuée avec Intune après l’inscription de cet appareil. Après l’inscription, la seule façon d’activer le mode surveillé est de connecter l’appareil iOS à un Mac avec un câble USB et d’utiliser Apple Configurator. Cette opération réinitialise l’appareil et le configure en mode supervisé. Découvrez plus d’informations sur ceci dans la [documentation d’Apple Configurator](http://help.apple.com/configurator/mac/2.3). Un appareil supervisé indique que « Cet iPhone est géré par Contoso. » sur l’écran de verrouillage, et que « Cet iPhone est supervisé. Contoso peut surveiller votre trafic Internet et localiser cet appareil. » dans **Paramètres** > **Général** > **À propos de**.
 
-    - **Inscription verrouillée** : (nécessite le Mode de gestion = supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres. Après l’inscription de l’appareil, vous ne pourrez plus modifier ce paramètre sans réinitialiser l’appareil aux paramètres d’usine.
+  - **Inscription verrouillée** : (nécessite le Mode de gestion = supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres. Après l’inscription de l’appareil, vous ne pourrez plus modifier ce paramètre sans réinitialiser l’appareil aux paramètres d’usine.
 
   - **Activer iPad partagé** : le Programme d’inscription des appareils d’Apple ne prend pas en charge iPad partagé.
 
-    - **Autoriser l’appairage** : spécifie si les appareils iOS peuvent se synchroniser avec les ordinateurs. Si vous avez choisi **Autoriser Apple Configurator par certificat**, vous devez choisir un certificat sous **Certificats Apple Configurator**.
+  - **Autoriser l’appairage** : spécifie si les appareils iOS peuvent se synchroniser avec les ordinateurs. Si vous avez choisi **Autoriser Apple Configurator par certificat**, vous devez choisir un certificat sous **Certificats Apple Configurator**.
 
-    - **Certificats Apple Configurator** : si vous avez choisi **Autoriser Apple Configurator par certificat** sous **Autoriser l’appairage**, choisissez un certificat Apple Configurator à importer.
+  - **Certificats Apple Configurator** : si vous avez choisi **Autoriser Apple Configurator par certificat** sous **Autoriser l’appairage**, choisissez un certificat Apple Configurator à importer.
 
   Choisissez **Enregistrer**.
 
 5. Choisissez **Paramètres de l’Assistant Configuration** pour configurer les paramètres de profil suivants :
 
   ![Capture d’écran : choix des paramètres de configuration avec les paramètres disponibles pour un nouveau profil de programme d’inscription.](./media/enrollment-program-profile-settings.png)
-    - **Nom du service** : s’affiche quand les utilisateurs appuient sur **À propos de la configuration** pendant l’activation.
+  - **Nom du service** : s’affiche quand les utilisateurs appuient sur **À propos de la configuration** pendant l’activation.
 
-    - **Numéro de téléphone du service** : s’affiche quand l’utilisateur clique sur le bouton **Besoin d’aide** pendant l’activation.
+  - **Numéro de téléphone du service** : s’affiche quand l’utilisateur clique sur le bouton **Besoin d’aide** pendant l’activation.
     - **Options de l’Assistant Installation** : ces paramètres facultatifs peuvent être configurés plus tard dans le menu **Paramètres** d’iOS.
         - **Code secret**
         - **Services d’emplacement**
@@ -163,9 +166,9 @@ Maintenant qu’Intune est autorisé à gérer vos appareils, vous pouvez synchr
   
 2. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
-  ![Capture d’écran du panneau de synchronisation : choix du lien Demander une synchronisation.](./media/enrollment-program-device-request-sync.png)
+   ![Capture d’écran du panneau de synchronisation : choix du lien Demander une synchronisation.](./media/enrollment-program-device-request-sync.png)
 
-  Pour être conforme aux conditions d’Apple relatives à un trafic de programme d’inscription acceptable, Intune impose les restrictions suivantes :
+   Pour être conforme aux conditions d’Apple relatives à un trafic de programme d’inscription acceptable, Intune impose les restrictions suivantes :
      -  Une synchronisation complète ne peut pas s’exécuter plus d’une fois tous les sept jours. Pendant une synchronisation complète, Intune actualise tous les numéros de série Apple affectés à Intune. Si une synchronisation complète est tentée dans les sept jours de la synchronisation complète précédente, Intune actualise seulement les numéros de série qui ne figurent pas déjà dans Intune.
      -  Toute demande de synchronisation doit se terminer dans un délai de 15 minutes. Pendant ce temps ou jusqu’au succès de la demande, le bouton **Synchroniser** est désactivé.
      - Intune synchronise les nouveaux appareils et les appareils supprimés auprès d’Apple toutes les 24 heures.
@@ -195,3 +198,5 @@ Vous devez affecter un profil de programme d’inscription aux appareils pour po
 Vous avez activé la gestion et la synchronisation entre Apple et Intune, et affecté un profil pour permettre d’inscrire vos appareils DEP. Vous pouvez désormais distribuer les appareils aux utilisateurs. Pour les appareils avec affinité utilisateur, chaque utilisateur doit se voir attribuer une licence Intune. Les appareils sans affinité utilisateur nécessitent une licence d’appareil. Un appareil activé ne peut pas appliquer de profil d’inscription tant que l’appareil n’est pas réinitialisé aux paramètres d’usine.
 
 Consultez [Inscrire un appareil iOS dans Intune avec le Programme d’inscription des appareils](/intune-user-help/enroll-your-device-dep-ios). 
+
+
