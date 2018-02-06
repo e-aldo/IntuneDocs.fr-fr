@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 13a6174856ad18034fc3d3c912339c8f844b3db0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dc061a525a4b20cafbbb2ae31ee90c878d2a98fe
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Prise en main du Kit de développement logiciel (SDK) d’applications Microsoft Intune
 
@@ -92,9 +92,9 @@ Vous aurez besoin d'un des guides de développement suivants pour intégrer le S
  
  En plus de permettre la définition d’une stratégie de protection des applications pour votre application spécifique, les conditions suivantes sont requises pour que votre application puisse fonctionner correctement avec l’accès conditionnel basé sur l’application Azure ActiveDirectory (AAD) :
  
- * L’application est conçue avec la [bibliothèque d’authentification Azure ActiveDirectory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) et permet l’authentification d’AAD Broker.
+ * L’application est conçue avec la [bibliothèque d’authentification Azure ActiveDirectory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) et permet l’authentification d’AAD Broker.
  
- * L’[ID de client AAD](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) pour votre application doit être unique sur les plateformes iOS et Android.
+ * L’[ID de client AAD](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) pour votre application doit être unique sur les plateformes iOS et Android.
  
 ## <a name="configure-telemetry-for-your-app"></a>Configurer la télémétrie pour votre application
 
@@ -106,7 +106,7 @@ Microsoft Intune collecte des données sur les statistiques d’utilisation pour
 
 * **SDK d’application Intune pour Android** : le kit SDK d’application Intune pour Android ne contrôle pas la collecte de données à partir de votre application. Par défaut, l’application Portail d’entreprise enregistre des données de télémétrie. Ces données sont envoyées à Microsoft Intune. Conformément à la stratégie Microsoft, nous ne collectons aucune information d’identification personnelle (PII). 
 
-    * Si les utilisateurs finaux choisissent de ne pas envoyer ces données, ils doivent désactiver la télémétrie sous Paramètres dans l’application Portail d’entreprise. Pour en savoir plus, consultez [Désactiver la collecte de données d’utilisation Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+    * Si les utilisateurs finaux choisissent de ne pas envoyer ces données, ils doivent désactiver la télémétrie sous Paramètres dans l’application Portail d’entreprise. Pour en savoir plus, consultez [Désactiver la collecte de données d’utilisation Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 
  Le numéro de version des applications métier iOS et Android est visible <!-- 1380712 -->

@@ -14,11 +14,11 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46172f4b47a5ffeb623cdb068b7e1c6f6c7f1795
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e557fe23b5fcee11957904b2dfd5eb99ec344f3f
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="develop-a-support-plan"></a>Développer un plan de support
 
@@ -80,7 +80,7 @@ Vous trouverez ci-dessous un exemple de calendrier de formation au support Intun
 
 -   Questions et réponses
 
-La [documentation Intune](https://docs.microsoft.com/intune/) fournit une vue d’ensemble d’Intune, des descriptions détaillées des fonctionnalités et des informations de dépannage. Le [forum Intune](https://social.technet.microsoft.com/Forums/en-US/home) est une ressource communautaire où vous trouverez des questions et des rubriques non traitées dans la documentation Intune.
+La [documentation Intune](https://docs.microsoft.com/intune/) fournit une vue d’ensemble d’Intune, des descriptions détaillées des fonctionnalités et des informations de dépannage. Le [forum Intune](https://social.technet.microsoft.com/Forums/home) est une ressource communautaire où vous trouverez des questions et des rubriques non traitées dans la documentation Intune.
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Quelles opportunités permettent d’impliquer en amont l’équipe de support ?
 

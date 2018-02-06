@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -254,7 +254,7 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
 ## <a name="kiosk-preview"></a>Kiosk (préversion)
 
--   **Mode plein écran** - Identifie le type de [mode plein écran](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) pris en charge par la stratégie. Les options sont les suivantes :
+-   **Mode plein écran** - Identifie le type de [mode plein écran](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) pris en charge par la stratégie. Les options sont les suivantes :
 
       - **Non configuré** (par défaut) : la stratégie n’active pas de mode plein écran. 
       - **Application unique plein écran** : le profil active l’appareil en tant qu’application unique plein écran.
@@ -266,7 +266,7 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
          Pour les appareils qui sont dans des environnements publics, utilisez des comptes avec des privilèges minimaux afin d’empêcher les activités autorisées.  
 
-      - **Identifiant AUMID de l’application** : spécifie l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
+      - **Identifiant AUMID de l’application** : spécifie l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
 
     Les applications multiples plein écran nécessitent une configuration plein écran. Utilisez le bouton **Ajouter** pour créer une configuration plein écran ou sélectionnez-en une existante.
 
@@ -280,13 +280,13 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
             - **Application Win32** : application de bureau traditionnelle. (Vous avez besoin du chemin qualifié complet de l’exécutable, en ce qui concerne l’appareil.)
 
-            - **Application UWP** : application Windows universelle. Vous avez besoin de [l’identifiant AUMID de l’application](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **Application UWP** : application Windows universelle. Vous avez besoin de [l’identifiant AUMID de l’application](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-        - **Identificateur de l’application** : spécifie le chemin qualifié complet du fichier exécutable (applications Win32) ou [l’identifiant AUMID de l’application](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (applications UWP).
+        - **Identificateur de l’application** : spécifie le chemin qualifié complet du fichier exécutable (applications Win32) ou [l’identifiant AUMID de l’application](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (applications UWP).
 
     - **Barre des tâches** indique si la barre des tâches est affichée (**Activé**) ou masquée (**Non configuré**) sur le plein écran.
 
-    - **Disposition du menu Démarrer** : spécifie un fichier XML qui décrit comment les applications [apparaissent dans le menu Démarrer](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+    - **Disposition du menu Démarrer** : spécifie un fichier XML qui décrit comment les applications [apparaissent dans le menu Démarrer](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
     - **Utilisateurs attribués** : spécifie un ou plusieurs comptes d’utilisateur associés à la configuration plein écran. Le compte peut être local sur l’appareil, ou il peut s’agir d’une connexion de compte Azure AD associée à l’application plein écran. Spécifiez les comptes joints à un domaine au format `domain\\username@tenant.org`.
 

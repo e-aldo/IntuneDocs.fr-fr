@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscrire des appareils iOS à l’aide de l’outil Apple Configurator
 
@@ -31,7 +31,7 @@ Intune prend en charge l’inscription d’appareils iOS à l’aide d’[Apple 
 
 Vous ne pouvez pas utiliser les méthodes d’inscription Apple Configurator avec le [gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Accès physique aux appareils iOS
 - [Définir l’autorité MDM](mdm-authority-set.md)
@@ -71,8 +71,8 @@ Un profil d’inscription d’appareil définit les paramètres appliqués duran
 
 1. Créez une liste de valeurs, séparées par des virgules (.csv) avec deux colonnes, sans en-tête. Ajoutez le numéro de série dans la colonne de gauche, et les détails dans celle de droite. Le maximum actuel pour la liste est de 5 000 lignes. Dans un éditeur de texte, la liste .csv ressemble à ceci :
 
-    F7TLWCLBX196,détails de l’appareil</br>
-    DLXQPCWVGHMJ,détails de l’appareil
+  F7TLWCLBX196,détails de l’appareil</br>
+  DLXQPCWVGHMJ,détails de l’appareil
 
    Découvrez [comment trouver le numéro de série d’un appareil iOS](https://support.apple.com/HT204073).
 2. Dans le portail Azure d’Intune, choisissez **Inscription de l’appareil**, puis **Inscription Apple**.
@@ -164,3 +164,5 @@ Vous ne pouvez pas installer d’applications nécessitant l’affiliation de l�
 7. Sur l’appareil iOS, ouvrez **Settings** (Réglages) et accédez à **General (Général)** > **Device Management (Gestion des appareils)** > **Management Profile (Profil de gestion)**. Assurez-vous que l’installation du profil est répertoriée, puis vérifiez les restrictions de stratégie iOS et les applications installées. L’affichage des applications et des restrictions de stratégie sur l’appareil peut prendre jusqu’à dix minutes.
 
 8. Distribuez des appareils. L’appareil iOS est maintenant inscrit et géré dans Intune.
+
+
