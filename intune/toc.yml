@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Scénarios courants
       href: common-scenarios.md
+    - name: FAQ SUR LA GESTION DES APPLICATIONS MOBILES
+      href: mam-faq.md
 - name: Planifier un déploiement
   items:
     - name: Guide de planification
