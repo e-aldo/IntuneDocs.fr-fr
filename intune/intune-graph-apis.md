@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2bef90d3f5c317a0191f31901834c96829eea7e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Guide pratique pour utiliser Azure AD afin d’accéder aux API Intune dans Microsoft Graph
 
@@ -262,7 +262,7 @@ Le tableau liste les paramètres dans leur ordre d’apparition dans le portail 
 - Paramètre **Activer l’accès** : __Lire la configuration Microsoft Intune__
 
 - Autorise l’accès en lecture aux propriétés suivantes de l’entité et à son état :
-    - Inscription de périphérique
+    - Inscription d’appareil
     - Certificat de notification Apple Push
     - Programme d'inscription d'appareils Apple
     - Programme d’achats en volume (VPP) Apple
@@ -280,7 +280,7 @@ Le tableau liste les paramètres dans leur ordre d’apparition dans le portail 
 - Autorise les mêmes opérations que DeviceManagementServiceConfig.Read.All_
 
 - Les applications peuvent également configurer les fonctionnalités Intune suivantes :
-    - Inscription de périphérique
+    - Inscription d’appareil
     - Certificat de notification Apple Push
     - Programme d'inscription d'appareils Apple
     - Programme d’achats en volume (VPP) Apple
@@ -434,7 +434,7 @@ namespace IntuneGraphExample
 
 ### <a name="authenticate-azure-ad-powershell"></a>Authentification Azure AD (PowerShell)
 
-Le script PowerShell suivant utilise le module PowerShell de AzureAD pour l’authentification.  Pour plus d’informations, consultez [Azure Active Directory PowerShell Version 2](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) et [Exemples PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples).
+Le script PowerShell suivant utilise le module PowerShell de AzureAD pour l’authentification.  Pour plus d’informations, consultez [Azure Active Directory PowerShell Version 2](https://docs.microsoft.com/powershell/azure/install-adv2?view=azureadps-2.0) et [Exemples PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 
 Dans cet exemple, mettez à jour la valeur de `$clientID` pour correspondre à un ID d’application valide.
 
