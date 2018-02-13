@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Réduire les frais de support technique avec la réinitialisation de mot de passe en libre-service
 
@@ -35,7 +35,7 @@ Vous pouvez autoriser les employés à réinitialiser les mots de passe des comp
 ## <a name="next-steps"></a>Étapes suivantes
 
 Découvrez plus en détail les rubriques suivantes :
-* [Bonnes pratiques relatives aux mots de passe](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 
+* [Bonnes pratiques relatives aux mots de passe](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Conditions de licence pour la réinitialisation de mot de passe en libre-service](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
 Vous souhaitez obtenir de l’aide sur l’activation de cette fonctionnalité ou sur d’autres scénarios EMS ou Office 365 ? Si vous disposez d’au moins 150 licences pour Microsoft 365, Enterprise Mobility + Security ou Azure Active Directory Premium, utilisez vos [avantages FastTrack](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program).

@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6d1a4513b8ef6e1f42ad84558de8a57399bb8c1b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Quelle sera l'expérience de protection de base de vos utilisateurs sur des applications Office 365 gérées ?
 
@@ -128,4 +128,4 @@ Pour afficher ou mettre à jour ces stratégies ou des stratégies que vous cré
 ![Image du chemin de l’interface utilisateur pour afficher les stratégies](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-En savoir plus sur les [stratégies de protection des applications](https://docs.microsoft.comapp-protection-policy.md).
+En savoir plus sur les [stratégies de protection des applications](app-protection-policy.md).

@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
@@ -40,7 +40,7 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 
 ||||||
 |-|-|-|-|-|
-|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
+|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
 |Ajout et affectation d’applications pour des appareils et utilisateurs|Oui|Oui|Oui|Oui|
 |Affectation d’applications pour les appareils non inscrits avec Intune|Oui|Oui|Non|Non|
 |Utilisation de stratégies de configuration d’application pour contrôler le comportement des applications au démarrage|Non|Oui|Non|Non|
@@ -52,7 +52,7 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 |Installation obligatoire d’applications sur des appareils (requis)<sup>2</sup>|Oui|Oui|Oui|Oui|
 |Installation facultative sur des appareils à partir du portail d’entreprise (installation disponible)|Oui|Oui|Oui|Oui|
 |Installation d’un raccourci vers une application sur le web (clip web)|Oui|Oui|Oui|Oui|
-|Applications métier internes|Oui|Oui|Non|Non|
+|Applications métier internes|Oui|Oui|Non|Oui|
 |Applications de Store|Oui|Oui|Oui|Oui|
 |Mettre à jour des applications|Oui|Oui|Oui|Oui|
 
@@ -97,7 +97,7 @@ Pour plus d'informations, voir [Gérer les applications](app-management.md).
 
 Pour plus d’informations, consultez [Surveiller des applications](apps-monitor.md).
 
-### <a name="setup"></a>Installation
+### <a name="setup"></a>Setup
 - **Jetons VPP iOS** : appliquez et affichez vos licences du programme VPP (Volume Purchase Program) iOS.
     - [Applications iOS achetées en volume](vpp-apps-ios.md)
 - **Certificat d'entreprise Windows** : appliquez ou affichez l’état d’un certificat de signature de code permettant de distribuer des applications métier sur vos appareils Windows gérés. 
