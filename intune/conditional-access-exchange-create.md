@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02b130ed13b3bb8869e35b035e787c97b76b5e85
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Guide de création et d’affectation d’une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans Microsoft Intune Azure
 
@@ -59,13 +59,13 @@ Avant de configurer l’accès conditionnel, vérifiez les éléments suivants :
 
 ### <a name="support-for-mobile-devices"></a>Prise en charge des appareils mobiles
 
-- Windows Phone 8.1 et versions ultérieures
+- Windows Phone 8.1 et versions ultérieures
 - Application de messagerie native sur iOS.
 - Clients de messagerie EAS, comme Gmail sur Android 4 ou ultérieur.
 - Clients de messagerie EAS sur les **appareils Android for Work :** seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne avec Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer ces applications comme installation obligatoire.
 
 > [!NOTE]
-> L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge. Le déploiement d’Android for Work pour les clients Intune a commencé et va durer quelques mois.
+> L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge. 
 
 ### <a name="support-for-pcs"></a>Prise en charge des PC
 
