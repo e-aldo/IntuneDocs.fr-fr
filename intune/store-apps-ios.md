@@ -36,7 +36,7 @@ Aidez-vous des informations contenues dans cette rubrique pour ajouter des appli
 Vous pouvez uniquement affecter des applications à l’aide de cette méthode si elles sont gratuites dans l’App Store. Si vous souhaitez affecter des applications payantes à l’aide d’Intune, envisagez d’utiliser le [programme d’achat en volume (VPP) iOS](vpp-apps-ios.md).
 
 >[!NOTE]
->Chrome et Edge sont les navigateurs recommandés quand vous utilisez Microsoft Intune.
+>Chrome et Microsoft Edge sont les navigateurs recommandés quand vous utilisez Microsoft Intune.
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Étape 1 : Rechercher l’application dans le Store
 

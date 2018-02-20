@@ -30,7 +30,7 @@ ms.lasthandoff: 10/10/2017
 Vous devez vous connecter à la console de gestion Skycure pour effectuer les étapes suivantes.
 
 > [!TIP] 
-> Si vous utilisez Microsoft Internet Explorer 11 ou Edge, vous devrez peut-être ouvrir la console de gestion Skycure en mode privé.
+> Si vous utilisez Microsoft Internet Explorer 11 ou Microsoft Edge, vous devrez peut-être ouvrir la console de gestion Skycure en mode privé.
 
 ## <a name="to-download-the-ios-app-configuration-policy"></a>Pour télécharger la stratégie de configuration d’applications iOS
 
