@@ -10,7 +10,7 @@ Microsoft MyApps bénéficie d’une meilleure prise en charge dans Managed Brow
 
 Managed Browser reçoit des icônes mises à jour pour les versions iOS et Android de l’application. La nouvelle icône contient le badge Intune mis à jour, pour une meilleure cohérence avec d’autres applications Enterprise Mobility + Security (EM+S). Vous pouvez voir la nouvelle icône de Managed Browser sur la [page Nouveautés de l’interface utilisateur des applications Intune](/intune/whats-new-app-ui).
 
-Le portail d’entreprise reçoit également des icônes mises à jour pour les versions Android, iOS et Windows de l’application, afin d’améliorer la cohérence avec d’autres applications dans EM + S. Ces icônes seront publiées progressivement sur toutes les plateformes du mois d’avril jusqu’à fin mai.
+Le portail d’entreprise reçoit également des icônes mises à jour pour les versions Android, iOS et Windows de l’application pour améliorer la cohérence avec les autres applications EM+S. Ces icônes seront publiées progressivement sur toutes les plateformes du mois d’avril jusqu’à fin mai.
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicateur de progression de connexion dans le portail d’entreprise Android <!--953374-->
 
@@ -111,7 +111,7 @@ Vous pouvez désormais contrôler l’accès des appareils mobiles aux ressource
 - Défense des applications
 - Défense contre les vulnérabilités
 
-Vous pouvez configurer des stratégies d’accès conditionnel EMS basées sur l’évaluation des risques de Skycure, activée par le biais des stratégies de conformité Intune. Vous pouvez utiliser ces stratégies pour autoriser ou bloquer l’accès des appareils non conformes aux ressources d’entreprise, en fonction des menaces détectées. Pour en savoir plus, voir [Connecteur Skycure Mobile Threat Defense](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+Vous pouvez configurer des stratégies d’accès conditionnel EMS basées sur l’évaluation des risques de Skycure, activée par le biais des stratégies de conformité Intune. Vous pouvez utiliser ces stratégies pour autoriser ou bloquer l’accès des appareils non conformes aux ressources d’entreprise en fonction des menaces détectées. Pour en savoir plus, voir [Connecteur Skycure Mobile Threat Defense](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nouvelle expérience utilisateur dans l’application Portail d’entreprise pour Android <!--621622-->
 
@@ -299,7 +299,7 @@ L’application Portail d’entreprise pour Android utilise Google Play Services
 |Console d’administration Intune| Application Portail d’entreprise Intune pour Android |Site web du portail d’entreprise Intune|   
 |---|---|---|
 |réinitialisation complète| Supprimer un appareil distant| Supprimer l’appareil (local et distant)|
-|réinitialisation sélective| Réinitialiser l’appareil| Réinitialiser un appareil|
+|Réinitialisation sélective| Réinitialiser l’appareil| Réinitialiser un appareil|
 |Déploiements d’applications nouvelles ou mises à jour| Installer des applications métier disponibles| Réinitialisation du code secret d’un appareil|
 |Verrouillage à distance|||
 |Réinitialiser le code secret|||

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71a3b86c628a4fd3210bf00be353c96443897dd5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Protégez vos données avec la réinitialisation complète ou sélective à l’aide de Microsoft Intune
 
@@ -100,7 +100,7 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|
 |Paramètres de profil de certificat|Les certificats sont supprimés et révoqués.|
 |Agent de gestion|Le profil de gestion est supprimé.|
-|Courrier électronique|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
+|E-mail|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.|
 |Disjonction d'Azure Active Directory (AAD)|L’enregistrement AAD est supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
@@ -118,7 +118,7 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
-|Courrier électronique|N/A. Consultez l’élément Outlook.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
+|E-mail|N/A. Consultez l’élément Outlook.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.|
 |Disjonction d'Azure Active Directory (AAD)|Enregistrement AAD supprimé.|Enregistrement AAD supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
@@ -135,7 +135,7 @@ Une réinitialisation sélective sur un appareil Android for Work supprime l’e
 |Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|Non pris en charge.|Supprimé.|
 |Paramètres de profil de certificat|Certificats supprimés et révoqués.|Certificats supprimés et révoqués.|Non pris en charge.|Certificats supprimés et révoqués.|
-|Courrier électronique|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non pris en charge.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
+|E-mail|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non pris en charge.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
 |Disjonction d'Azure Active Directory (AAD)|Non.|Non.|Enregistrement AAD supprimé.|Non applicable. Windows 10 ne prend pas en charge la réinitialisation sélective pour appareils joints à Azure Active Directory.|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Réinitialiser le contenu EFS (Encryption File System)

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 147ac06dbc472f1488b09766ef42b4ac2ab5685f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 64e8cc7fdb2405dad61e0db2093339c255d666aa
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Comment reconnecter un appareil iOS endommagé
 
-Le support technique de votre entreprise a détecté que vous utilisez un appareil jailbreaké. « Jailbreaké » signifie que l’appareil a été modifié pour autoriser un accès illimité à certains fichiers critiques, ce qui peut compromettre la sécurité et constituer une menace pour les ressources de votre entreprise.
+Le support technique de votre entreprise a détecté que vous utilisez un appareil jailbreaké. « Jailbreaké » signifie que l’appareil a été modifié pour autoriser un accès illimité à certains fichiers critiques, ce qui peut compromettre la sécurité et constituer une menace pour les ressources de votre entreprise. 
 
-Quand c’est le cas, vous ne pouvez plus accéder aux ressources de l’entreprise avec votre appareil et vous devez contacter le support technique de votre entreprise pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Dans ce cas, votre appareil ne pourra plus accéder aux ressources de l’entreprise, et vous devrez probablement le réinitialiser aux paramètres d’usine. Nous vous recommandons de contacter le support de votre entreprise pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

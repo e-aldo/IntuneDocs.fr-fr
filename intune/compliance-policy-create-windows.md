@@ -6,29 +6,27 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Windows dans Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Des stratégies de conformité sont créées pour chaque plateforme.  Vous pouvez créer une stratégie de conformité dans le portail Azure. Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](device-compliance.md). Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
+Des stratégies de conformité sont créées pour chaque plateforme. Vous pouvez créer une stratégie de conformité dans le portail Azure. Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](device-compliance.md). Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
 
-La table ci-dessous décrit également la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
+La table suivante décrit la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
 
 ---------------------------
 
@@ -46,7 +44,7 @@ La table ci-dessous décrit également la façon dont les paramètres non confor
 
 **Corrigé** : le système d’exploitation de l’appareil applique la conformité. (Par exemple, l’utilisateur est obligé de définir un code PIN.)+
 
-**En quarantaine** : le système d’exploitation de l’appareil n’applique pas la conformité. (Par exemple, les appareils Android n’obligent pas l’utilisateur à chiffrer l’appareil.) Quand l’appareil n’est pas conforme, les actions suivantes se produisent :+
+**En quarantaine** : le système d’exploitation de l’appareil n’applique pas la conformité. (Par exemple, les appareils Android n’obligent pas l’utilisateur à chiffrer l’appareil.) Quand l’appareil n’est pas conforme, les actions suivantes se produisent :
 
 - L’appareil est bloqué si une stratégie d’accès conditionnel s’applique à l’utilisateur.
 - Le portail d’entreprise informe l’utilisateur des problèmes de conformité.
@@ -55,7 +53,7 @@ La table ci-dessous décrit également la façon dont les paramètres non confor
 
 1. Dans le panneau **Intune**, choisissez **Définir la conformité des appareils**. Sous **Gérer**, choisissez **Toutes les stratégies de conformité d'appareil**, puis **Créer**.
 2. Tapez un nom et une description, puis sélectionnez la plateforme à laquelle vous souhaitez appliquer cette stratégie.
-3. Choisissez **Critères de conformité** pour ouvrir le panneau des exigences de conformité.  Vous pouvez spécifier les paramètres **Sécurité**, **Intégrité de l'appareil** et la **propriété de l'appareil** ici. Lorsque vous avez terminé, choisissez **Ok**.
+3. Choisissez **Critères de conformité** pour ouvrir le panneau des exigences de conformité.  Vous pouvez spécifier ici les paramètres **Sécurité**, **Intégrité de l'appareil** et **Propriété de l'appareil**. Quand vous avez terminé, choisissez **Ok**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -71,7 +69,7 @@ Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une
 1. Choisissez la stratégie que vous souhaitez attribuer aux utilisateurs, puis **Affectations**. Cette opération ouvre le panneau dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous attribuez à la stratégie.
 2. Choisissez **Sélectionner des groupes** pour ouvrir le panneau qui affiche les groupes de sécurité Azure AD.  Si vous choisissez **Sélectionner**, la stratégie est déployée pour les utilisateurs.
 
-Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie de conformité sera évaluée.
+Vous avez appliqué la stratégie à des utilisateurs. La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie de conformité sera évaluée.
 
 <!---## Compliance policy settings--->
 
@@ -84,7 +82,7 @@ Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appar
 - **Longueur minimale du mot de passe** : spécifie le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l’utilisateur.
 - **Type de mot de passe requis :** spécifiez si les utilisateurs doivent créer un mot de passe de type **Alphanumérique** ou **Numérique**.
 
-Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si l’option Longueur minimale du mot de passe a une valeur supérieure à huit caractères ou si l’option Nombre minimum de jeux de caractères a une valeur supérieure à deux.
+Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si la longueur minimale du mot de passe a une valeur supérieure à huit caractères ou si le nombre minimum de jeux de caractères a une valeur supérieure à deux.
 
 - **Nombre minimum de jeux de caractères :** si le paramètre **Type de mot de passe requis** a la valeur **Alphanumérique**, ce paramètre spécifie le nombre minimal de jeux de caractères que le mot de passe doit contenir. Les quatre jeux de caractères sont :
   - Lettres minuscules
@@ -92,9 +90,9 @@ Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte M
   - Symboles
   - Nombres
 
-Le fait de définir un nombre plus élevé pour ce paramètre oblige les utilisateurs à créer des mots de passe plus complexes. Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si l’option Longueur minimale du mot de passe a une valeur supérieure à huit caractères ou si l’option Nombre minimum de jeux de caractères a une valeur supérieure à deux.
+Le fait de définir un nombre plus élevé pour ce paramètre oblige les utilisateurs à créer des mots de passe plus complexes. Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si la longueur minimale du mot de passe a une valeur supérieure à huit caractères ou si le nombre minimum de jeux de caractères a une valeur supérieure à deux.
 
-- **Minutes d’inactivité avant demande du mot de passe** : spécifie la durée d’inactivité au terme de laquelle l’utilisateur doit entrer à nouveau son mot de passe.
+- **Minutes d’inactivité avant demande du mot de passe :** Spécifie la durée d’inactivité après laquelle l’utilisateur doit réentrer son mot de passe.
 - **Expiration du mot de passe (jours)** : sélectionnez le nombre de jours avant que le mot de passe de l’utilisateur n’expire et qu’il ne doive en créer un autre.
 - **Mémoriser l’historique des mots de passe** : utilisez ce paramètre conjointement avec le paramètre **Empêcher la réutilisation des mots de passe précédents** pour empêcher l’utilisateur de créer des mots de passe qui ont déjà été utilisés.
 - **Empêcher la réutilisation des mots de passe précédents :** si l’option **Mémoriser l’historique des mots de passe** est sélectionnée, spécifiez le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés.
@@ -111,9 +109,9 @@ Le fait de définir un nombre plus élevé pour ce paramètre oblige les utilisa
 ## <a name="device-health-settings"></a>Paramètres d’intégrité des appareils
 
 - **Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité :** vous pouvez définir une règle pour exiger que les appareils **Windows 10 Mobile** soient signalés comme étant sains dans des stratégies de conformité nouvelles ou existantes. Si ce paramètre est activé, les points de données suivants sont évalués sur les appareils Windows 10 à l’aide du service d’attestation de l’intégrité (HAS, Health Attestation Service) :
-  - **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume hébergeant le système d’exploitation Windows. BitLocker utilise le Module de plateforme sécurisée (TPM) pour protéger le système d’exploitation Windows et les données utilisateur. Il contribue également à prévenir toute falsification d’un ordinateur, même si celui-ci est laissé sans assistance, perdu ou volé. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
+  - **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le Chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume de système d’exploitation Windows. BitLocker utilise le module de plateforme sécurisée pour protéger le système d’exploitation Windows et les données de l’utilisateur. Il aide à s’assurer qu’un ordinateur n’a pas été falsifié, même en cas de perte ou de vol ou s’il a été laissé sans surveillance. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
   - **L’intégrité du code est activée :** l’intégrité du code est une fonctionnalité qui valide l’intégrité d’un fichier de pilote ou d’un fichier système chaque fois qu’il est chargé en mémoire. Elle détecte si un fichier système ou un fichier de pilote non signé est chargé dans le noyau, ou si un fichier système a été modifié par un logiciel malveillant exécuté par un compte d’utilisateur avec des privilèges d’administrateur.
-  - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser la machine démarrer. Si des fichiers ont été falsifiés, avec pour effet d’annuler leur signature, le système ne démarre pas.
+  - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser l’ordinateur démarrer. Si des fichiers ont été falsifiés et que leur signature a été rompue, le système ne démarre pas.
 
 Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
@@ -132,7 +130,7 @@ Pour plus d’informations sur le fonctionnement du service HAS, consultez [Heal
 
 Spécifiez le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l'utilisateur.
 
-Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si l’option **Longueur minimale du mot de passe** a une valeur supérieure à 8 caractères ou si l’option **Nombre minimum de jeux de caractères** a une valeur supérieure à deux caractères.
+Pour les appareils qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si **Longueur minimale du mot de passe** a une valeur supérieure à huit caractères ou si **Nombre minimum de jeux de caractères** a une valeur supérieure à deux caractères.
 
 - **Type de mot de passe requis** : pris en charge sur Windows RT, Windows RT 8.1 et Windows 8.1
 
@@ -142,13 +140,13 @@ Spécifiez si les utilisateurs doivent créer un mot de passe de type **Alphanum
   - Lettres minuscules
   - Lettres majuscules
   - Symboles
-  - Nombres : le fait de définir un nombre plus élevé pour ce paramètre oblige les utilisateurs à créer des mots de passe plus complexes.
+  - Nombres : si vous définissez un nombre plus élevé pour ce paramètre, vous devez créer des mots de passe plus complexes.
 
-Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si l’option **Longueur minimale du mot de passe** a une valeur supérieure à 8 caractères ou si l’option **Nombre minimum de jeux de caractères** a une valeur supérieure à 2 caractères.
+Pour les appareils qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si **Longueur minimale du mot de passe** a une valeur supérieure à huit caractères ou si **Nombre minimum de jeux de caractères** a une valeur supérieure à deux caractères.
 
 - **Minutes d'inactivité avant demande du mot de passe :** pris en charge sur Windows RT, Windows RT 8.1 et Windows 8.1
 
-Spécifiez la durée d'inactivité au terme de laquelle l'utilisateur doit entrer à nouveau son mot de passe.
+Spécifiez la durée d’inactivité au terme de laquelle l’utilisateur doit entrer à nouveau son mot de passe.
 
 - **Expiration du mot de passe (jours)** : pris en charge sur Windows RT, Windows RT 8.1 et Windows 8.1.
 
@@ -160,16 +158,16 @@ Utilisez ce paramètre conjointement avec le paramètre **Empêcher la réutilis
 
 - **Empêcher la réutilisation des mots de passe précédents :** pris en charge sur Windows RT, Windows RT 8.1 et Windows 8.1
 
-Si l’option **Mémoriser l’historique des mots de passe** est sélectionnée, spécifiez le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés.
+Si **Mémoriser l’historique des mots de passe :** est sélectionné, spécifiez le nombre de mots de passe déjà utilisés qui ne peuvent pas être réutilisés.
 
 
 ## <a name="device-health-settings"></a>Paramètres d’intégrité des appareils
 
-- **Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité :** pris en charge sur les appareils Windows 10. Vous pouvez définir une règle exigeant que les appareils Windows 10 soient signalés comme intègres dans les stratégies de conformité nouvelles ou existantes. Si ce paramètre est activé, les points de données suivants sont évalués sur les appareils Windows 10 à l’aide du service d’attestation de l’intégrité (HAS, Health Attestation Service) :
-  - **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume hébergeant le système d’exploitation Windows. BitLocker utilise le Module de plateforme sécurisée (TPM) pour protéger le système d’exploitation Windows et les données utilisateur. Il contribue également à prévenir toute falsification d’un ordinateur, même si celui-ci est laissé sans assistance, perdu ou volé. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
+- **Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité :** pris en charge sur les appareils Windows 10. Vous pouvez définir une règle pour exiger que les appareils Windows 10 soient signalés comme étant sains dans des stratégies de conformité nouvelles ou existantes. Si ce paramètre est activé, les points de données suivants sont évalués sur les appareils Windows 10 à l’aide du service d’attestation de l’intégrité (HAS, Health Attestation Service) :
+  - **BitLocker est activé :** quand BitLocker est activé, l’appareil peut protéger les données stockées sur le lecteur contre tout accès non autorisé, quand le système est mis hors tension ou en veille prolongée. Le Chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume de système d’exploitation Windows. BitLocker utilise le module de plateforme sécurisée pour protéger le système d’exploitation Windows et les données de l’utilisateur. Il aide à s’assurer qu’un ordinateur n’a pas été falsifié, même en cas de perte ou de vol ou s’il a été laissé sans surveillance. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur
   - **L’intégrité du code est activée :** l’intégrité du code est une fonctionnalité qui valide l’intégrité d’un fichier de pilote ou d’un fichier système chaque fois qu’il est chargé en mémoire. Elle détecte si un fichier système ou un fichier de pilote non signé est chargé dans le noyau, ou si un fichier système a été modifié par un logiciel malveillant exécuté par un compte d’utilisateur avec des privilèges d’administrateur.
-  - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser la machine démarrer. Si des fichiers ont été falsifiés, avec pour effet d’annuler leur signature, le système ne démarre pas.
-  - **Logiciel anti-programme malveillant à lancement anticipé :** un logiciel anti-programme malveillant à lancement anticipé protège les ordinateurs de votre réseau quand ils démarrent et avant l’initialisation des pilotes tiers.
+  - **Le démarrage sécurisé est activé** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état usine approuvé. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie cela avant de laisser l’ordinateur démarrer. Si des fichiers ont été falsifiés et que leur signature a été rompue, le système ne démarre pas.
+  - **Logiciel anti-programme malveillant à lancement anticipé :** Un logiciel anti-programme malveillant à lancement anticipé protège les ordinateurs de votre réseau quand ils démarrent et avant l’initialisation des pilotes tiers.
 
 Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
@@ -179,16 +177,24 @@ Pour plus d’informations sur le fonctionnement du service HAS, consultez [Heal
 
 Indiquez ici le numéro major.minor.build. Le numéro de version doit correspondre à la version retournée par la commande ```winver```.
 
-Si un appareil possède une version antérieure à la version du système d'exploitation spécifiée, il est signalé comme étant non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
+Si un appareil a une version antérieure à la version de système d’exploitation spécifiée, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
 - **Version maximale autorisée du système d’exploitation :** pris en charge sur Windows 8.1 et Windows 10.
 
 Quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 
-Pour rechercher la version du système d’exploitation à utiliser pour les paramètres **Système d’exploitation minimal requis** et **Version maximale autorisée du système d’exploitation**, exécutez la commande **winver** à partir de l’invite de commandes. La commande winver retourne la version signalée du système d’exploitation.+
+Pour trouver la version du système d'exploitation à utiliser pour les paramètres **Système d’exploitation minimal requis** et **Version maximale autorisée du système d’exploitation**, exécutez la commande **winver** à partir de l'invite de commandes. La commande winver retourne la version signalée du système d’exploitation.+
 
 - Les PC Windows 8.1 retournent la version **3**. Si la règle de la version du système d’exploitation est définie sur Windows 8.1 pour Windows, l’appareil est signalé comme non conforme même si Windows 8.1 est installé dessus.
 - Pour les PC Windows exécutant Windows 10, la version doit être définie comme étant &quot;10.0&quot; + le numéro de version du système d’exploitation retourné par la commande winver.
+
+## <a name="windows-holographic-for-business-support"></a>Prise en charge de Windows Holographic for Business
+
+Windows Holographic for Business prend en charge les paramètres suivants :
+
+- Sécurité système/Chiffrement
+
+  **Chiffrement du stockage de données sur l’appareil**.
 
 <!--- ## Next steps
 

@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3926b64bacb1acde29146aed9d3030729e8b9b17
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9faaacb321dfd13c053768ea27f0cca38b30d077
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Verrouiller à distance un appareil à partir du site web du portail d’entreprise
 
@@ -61,7 +61,7 @@ Pour plus de sécurité, vous pouvez le verrouiller en utilisant l’option Verr
     * La vignette qui affiche le nom de l’appareil dans la section **Mes appareils** de la page.
 
 > [!Note]
-> Si vous voyez une notification « Échec du verrouillage à distance », attendez quelques minutes et essayez à nouveau de verrouiller votre appareil. Dès le début de la nouvelle tentative, l’état passe à « Verrouillage à distance en attente ». Si la nouvelle tentative ne fonctionne pas, vous devez contacter le support technique de votre entreprise.
+> Si vous voyez une notification « Échec du verrouillage à distance », attendez quelques minutes et essayez à nouveau de verrouiller votre appareil. Dès le début de la nouvelle tentative, l’état passe à « Verrouillage à distance en attente ». Si la nouvelle tentative ne fonctionne pas, vous devez contacter le support de votre entreprise.
 
 Si vous retrouvez votre appareil et que vous souhaitez le déverrouiller après avoir utilisé le verrouillage à distance, il vous suffit d’entrer votre code secret.
 

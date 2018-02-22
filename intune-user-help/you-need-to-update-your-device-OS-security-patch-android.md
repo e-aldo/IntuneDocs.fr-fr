@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: ef8d10a1bc06234930ae32a2ce0dc8b1503e89d0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3851095689f194a2133aaa1b0ac8712098662226
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Vous devez mettre à jour le système d’exploitation de votre appareil Android
 
-Si vous avez vu un message indiquant que le « niveau de correctif de sécurité Android minimum n’est pas configuré », vous devez installer une mise à jour pour vous assurer que votre appareil reste sécurisé. Un _correctif_ est mis à disposition pour actualiser le logiciel afin de le faire fonctionner correctement et qu’il soit à jour. Le support technique de votre entreprise vous oblige à installer ce correctif pour garantir que vos données d’entreprise sont protégées autant que possible sur votre appareil. L’emplacement du correctif de sécurité dont vous avez besoin varie selon que vous disposez d’un type spécifique d’appareil Samsung ou non.
+Si vous avez vu un message indiquant que le « niveau de correctif de sécurité Android minimum n’est pas configuré », vous devez installer une mise à jour pour vous assurer que votre appareil reste sécurisé. Un _correctif_ est publié pour actualiser le logiciel afin de le faire fonctionner correctement et qu’il soit à jour. Le support technique de votre entreprise vous oblige à installer ce correctif pour garantir que vos données d’entreprise sont protégées autant que possible sur votre appareil. L’emplacement du correctif de sécurité dont vous avez besoin varie selon le type d’appareil Android que vous avez.
 
 Si vous avez un appareil Samsung, accédez à **Paramètres** > **À propos du téléphone**et vérifiez si le mot « Knox » s’affiche l’écran. Dans ce cas, suivez les instructions de Samsung Knox ci-dessous.
 

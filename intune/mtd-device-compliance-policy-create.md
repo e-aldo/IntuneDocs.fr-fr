@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23155cbb84c2d170f1b0216981621e35fd3ac0f1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Créer une stratégie de conformité des appareils Mobile Threat Defense (MTD) avec Intune
 
@@ -56,14 +56,14 @@ Conditions préalables pour la stratégie de conformité de l’appareil avec MT
 
     b.  **Faible** : l’appareil est conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
 
-    c.  **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
+    c.  **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées, l’appareil est déterminé comme non conforme.
 
     d.  **Élevé** : cette option est la moins sécurisée. Cela active tous les niveaux de menace et utilise la défense contre les menaces mobiles uniquement à des fins de création de rapport. L’application MTD doit être activée avec ce paramètre sur les appareils.
 
 8.  Cliquez sur **OK** à deux reprises, puis choisissez **Créer**.
 
 > [!IMPORTANT]
-> Si vous créez des stratégies d’accès conditionnel pour Office 365 ou d’autres services, l’évaluation de la conformité de l’appareil est effectuée et l’accès aux ressources d’entreprise est bloqué pour les appareils non conformes tant que la menace n’a pas été résolue sur l’appareil.
+> Si vous créez des stratégies d’accès conditionnel pour Office 365 ou d’autres services, l’évaluation de la conformité de l’appareil est effectuée et les appareils non conformes ne peuvent pas accéder aux ressources d’entreprise tant que la menace n’est pas résolue sur l’appareil.
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>Pour affecter une stratégie de conformité de l’appareil MTD
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f812a740f5a703479e001fa2c5b6d1fd3336a2e2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Présentation des opérations Microsoft Intune à l’aide de rapports
 
@@ -34,7 +34,7 @@ Les rapports Intune fournissent des informations sur les logiciels, le matériel
 
 |Type de rapport|Description|
 |---------------|---------------|
-|**Rapports sur les mises à jour**|Affichent les mises à jour logicielles qui se sont correctement installées sur les ordinateurs de votre organisation. Ils indiquent également celles qui ont échoué, qui sont en attente ou qui sont nécessaires. Pour plus d’informations sur les mises à jour logicielles, consultez [Maintenir des PC Windows à jour avec les mises à jour logicielles](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Rapports sur les mises à jour**|Affichent les mises à jour logicielles qui se sont correctement installées sur les ordinateurs de votre organisation. Ils indiquent également celles qui ont échoué, qui sont en attente ou qui sont nécessaires. Pour plus d’informations sur les mises à jour logicielles, consultez [Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Rapports sur les logiciels détectés**|Affichent les logiciels installés sur les ordinateurs de votre organisation. Les versions des logiciels sont incluses. Vous pouvez filtrer les informations qui s'affichent en fonction de l'éditeur du logiciel et de la catégorie de logiciels. Vous pouvez développer les mises à jour dans la liste pour afficher d’autres détails (par exemple les ordinateurs sur lesquels une mise à jour est installée) en choisissant la flèche directionnelle située en regard de l’élément de liste.<br /><br />Quand vous mettez hors service des ordinateurs ou modifiez leur appartenance aux groupes dans Intune, cela peut prendre plusieurs minutes avant que ces modifications soient prises en compte dans le rapport des logiciels détectés. Pour obtenir les données d'inventaire logiciel les plus précises, patientez quelques minutes après avoir déclassé des ordinateurs ou modifié leur appartenance aux groupes avant d'exécuter un rapport de logiciels détectés qui inclut ces ordinateurs.|
 |**Rapports sur l’inventaire des ordinateurs**|Affiche des informations sur les ordinateurs gérés de votre organisation. Utilisez ce rapport pour planifier les achats de matériel et pour en savoir plus sur les besoins en matériel des utilisateurs de votre organisation. Pour plus d’informations sur l’utilisation des ordinateurs gérés, consultez [Gérer des PC Windows avec Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md).|
 |**Rapports sur l’inventaire des appareils mobiles**|Affiche des informations sur les appareils mobiles de votre organisation. Vous pouvez filtrer les informations qui s'affichent en fonction des groupes, du caractère « jailbreaké » ou rooté de l'appareil et du système d'exploitation.|
@@ -63,7 +63,7 @@ Pour trier le rapport en fonction de l’une des colonnes affichées, cliquez su
 ## <a name="more-report-actions"></a>Autres opérations relatives aux rapports
 Les rapports prennent aussi en charge les actions suivantes :
 
-|Action|Plus d'informations|
+|Action|Plus d’informations|
 |----------|--------------------|
 |**Imprimer**|Dans un rapport ouvert, cliquez sur l’icône d’impression et suivez les instructions.|
 |**Exporterer**|Dans un rapport ouvert, cliquez sur l’icône d’exportation et suivez les instructions. Vous pouvez exporter un rapport vers un fichier de valeurs séparées par des virgules (.csv) ou au format HTML.|

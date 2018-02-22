@@ -150,3 +150,4 @@
 #### [J’ai besoin d’activer Windows Defender](turn-on-defender-windows.md)
 
 ## [Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
+### [Verrouiller son appareil à distance](remote-lock-your-device-cpwebsite.md)

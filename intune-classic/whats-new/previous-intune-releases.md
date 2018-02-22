@@ -14,11 +14,11 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 592fa765dd56fd645a86be19baef8be87707b398
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fb963fd9fc921b546f635b7eb5d8be32d5d1df55
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="previous-intune-releases"></a>Versions précédentes d’Intune
 
@@ -32,7 +32,7 @@ Cette page contient une liste des annonces publiées dans [Nouveautés de Micros
 
 __Améliorer l’expérience de mise à jour de profil d’approvisionnement d’application__ Les applications mobiles métier Apple iOS intègrent un profil d’approvisionnement et du code signé avec un certificat. Lorsque l’application s’exécute sur un appareil iOS, iOS confirme l’intégrité de l’application iOS et applique les stratégies définies par le profil de configuration.
 
-Le certificat de signature d’entreprise que vous utilisez pour signer des applications dure généralement 3 ans. Toutefois, le profil de configuration expire au bout d’1 an. Grâce à cette mise à jour, Intune vous offre les outils pour déployer de façon proactive une nouvelle stratégie de profil de configuration pour les appareils qui disposent d’applications arrivant prochainement à expiration alors que le certificat est toujours valide. Pour plus d’informations, consultez [Utilisation de stratégies de profil de configuration d’applications mobiles iOS pour maintenir vos applications métier à jour](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles).
+Le certificat de signature d’entreprise que vous utilisez pour signer des applications dure généralement 3 ans. Toutefois, le profil de configuration expire au bout d’1 an. Grâce à cette mise à jour, Intune vous offre les outils pour déployer de façon proactive une nouvelle stratégie de profil de configuration pour les appareils qui disposent d’applications arrivant prochainement à expiration alors que le certificat est toujours valide. Pour plus d’informations, consultez [Utiliser des stratégies de profil de provisionnement d’applications mobiles iOS pour maintenir vos applications métier à jour](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles).
 <!--- TFS 1280247--->
 
 __Disponibilité du Xamarin SDK pour applications Intune__ Le composant Xamarin SDK pour applications Intune vous permet d’activer les fonctionnalités de gestion des applications mobiles Intune dans vos applications Android et iOS mobiles développées avec Xamarin. Le composant est disponible dans le [Xamarin Store](https://components.xamarin.com/view/Microsoft.Intune.MAM) ou sur la [page Github de Microsoft Intune](https://github.com/msintuneappsdk).
@@ -95,10 +95,10 @@ Les informations d’état du service d’Intune ont été déplacées vers un e
     * Ils doivent être conformes à toutes les stratégies de conformité Intune déployées
 
  Les utilisateurs finaux d’appareils non conformes sont invités à s’inscrire et à résoudre les problèmes de conformité pour obtenir l’autorisation d’accès.
-- **Accès conditionnel pour le navigateur.** Vous pouvez définir une stratégie d’accès conditionnel pour [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) afin que ces applications soient uniquement accessibles à partir de navigateurs web pris en charge sur des appareils iOS et Android gérés et conformes. Les utilisateurs finaux qui essaient de se connecter à des sites Outlook Web Access (OWA) et SharePoint avec des appareils iOS et Android seront invités à inscrire leurs appareils avec Intune, et à résoudre les problèmes d'incompatibilité avant de pouvoir finaliser la connexion.
+- **Accès conditionnel pour le navigateur.** Vous pouvez définir une stratégie d’accès conditionnel pour [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) afin que ces applications soient uniquement accessibles à partir de navigateurs web pris en charge sur des appareils iOS et Android gérés et conformes. Les utilisateurs finaux qui essaient de se connecter à des sites Outlook Web Access (OWA) et SharePoint avec des appareils iOS et Android sont invités à inscrire leur appareil dans Intune, et à résoudre les problèmes de non conformité avant de pouvoir finaliser la connexion.
 <!---TFS 1175844--->
 
-- **Dynamics CRM Online prend en charge l’accès conditionnel.** Vous pouvez définir une stratégie d’accès conditionnel pour [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) afin que cette application soit uniquement accessible aux appareils iOS et Android gérés et conformes. Les utilisateurs finaux qui essaient de se connecter à l’application mobile Dynamics CRM sur un appareil iOS ou Android seront invités à s’inscrire à Intune et à résoudre les éventuels problèmes de non conformité avant de finaliser la connexion.
+- **Dynamics CRM Online prend en charge l’accès conditionnel.** Vous pouvez définir une stratégie d’accès conditionnel pour [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) afin que cette application soit uniquement accessible aux appareils iOS et Android gérés et conformes. Les utilisateurs finaux qui essaient de se connecter à l’application mobile Dynamics CRM sur un appareil iOS ou Android seront invités à s’inscrire à Intune et à résoudre les éventuels problèmes de non conformité avant de finaliser la connexion.
 <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Mises à jour du Portail d’entreprise Intune

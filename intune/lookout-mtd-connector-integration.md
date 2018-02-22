@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b5d9a5fafdec0750e943dcfb3542d4dfd69f6ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurer l’intégration de Lookout Mobile Threat Defense avec Intune
 
@@ -128,7 +128,7 @@ Lookout Mobile Threat Defense classe les menaces mobiles de différents types. L
 ![capture d’écran de la page de stratégie montrant des menaces et des classifications](./media/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> Les niveaux de risque sont un aspect important de la solution Mobile Threat Defense car l’intégration d’Intune évalue la conformité de l’appareil en fonction de ces niveaux de risque lors de l’exécution. L’administrateur Intune définit une règle de stratégie qui identifie un appareil comme non conforme si celui-ci présente une menace active du niveau minimum configuré (**haut**, **moyen** ou **faible**). La stratégie de classification des menaces de Lookout Mobile Threat Defense évalue la conformité d’appareil dans Intune.
+> Les niveaux de risque sont un aspect important de la solution Mobile Threat Defense car l’intégration d’Intune évalue la conformité de l’appareil en fonction de ces niveaux de risque lors de l’exécution. L’administrateur Intune définit une règle de stratégie qui identifie un appareil comme non conforme si celui-ci a une menace active avec un niveau minimum (**haut**, **moyen** ou **faible**). La stratégie de classification des menaces de Lookout Mobile Threat Defense évalue la conformité d’appareil dans Intune.
 
 ## <a name="watching-enrollment"></a>Surveillance de l’inscription
 Une fois l’installation terminée, Lookout Mobile Threat Defense commence à rechercher dans Azure AD les appareils qui correspondent aux groupes d’inscription spécifiés.  Les informations sur les appareils inscrits se trouvent dans le module Appareils.  Les appareils s’affichent dans l’état initial En attente.  L’état de l’appareil change une fois que l’application Lookout for Work est installée, ouverte et activée sur l’appareil.  Pour plus d’informations sur le transfert (pushing) de l’application Lookout for Work sur l’appareil, consultez la rubrique [Ajouter des applications Lookout for work avec Intune](mtd-apps-ios-app-configuration-policy-add-assign.md).

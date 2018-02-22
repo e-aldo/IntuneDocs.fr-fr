@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac18336efe36a5bed952ab3d89c7ae80e1fbbfc5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications Android pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
@@ -50,7 +50,7 @@ Avant d’exécuter l’outil, passez en revue les [considérations en matière 
     > [!NOTE]
     > Dans certains cas, la version 32 bits de Java peut occasionner des problèmes de mémoire. Nous vous conseillons d’installer la version 64 bits.
 
-- Android nécessite que tous les packages d’application (.apk) soient signés. Pour obtenir de l’aide sur la**réutilisation** de certificats existants et sur les certificats de signature en général, consultez [Réutilisation de certificats de signature et inclusion d’applications dans un wrapper](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). L’exécutable Java keytool.exe permet de générer de **nouvelles** informations d’identification nécessaires pour signer l’application de sortie incluse dans un wrapper. Tous les mots de passe définis doivent être sécurisés, mais notez-les car ils sont nécessaires pour exécuter l’outil de création de package de restrictions d’application.
+- Android nécessite que tous les packages d’application (.apk) soient signés. Pour obtenir de l’aide sur la**réutilisation** de certificats existants et sur les certificats de signature en général, consultez [Réutilisation de certificats de signature et inclusion d’applications dans un wrapper](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). L’exécutable Java keytool.exe permet de générer de **nouvelles** informations d’identification nécessaires pour signer l’application de sortie incluse dans un wrapper. Tous les mots de passe définis doivent être sécurisés, mais notez-les car ils sont nécessaires pour exécuter l’outil de création de package de restrictions d’application.
 
 ## <a name="install-the-app-wrapping-tool"></a>installer l'outil de création de package de restrictions d'application
 
@@ -119,7 +119,7 @@ Les principaux scénarios dans lesquels vous devez réencapsuler vos application
 * L’outil de création de package de restrictions d’application Intune pour Android a publié une nouvelle version qui intègre la correction de bogues importants, ou des fonctionnalités des stratégies de protection d’application Intune nouvelles et spécifiques. Ceci se produit toutes les 6 à 8 semaines via un dépôt GitHub pour [l’outil de création de package de restrictions d’application Microsoft Intune pour Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 Voici quelques bonnes pratiques de réencapsulation : 
-* Conserver les certificats de signature utilisés lors du processus de génération. Consultez [Réutilisation de certificats de signature et inclusion d’applications dans un wrapper](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+* Conserver les certificats de signature utilisés lors du processus de génération. Consultez [Réutilisation de certificats de signature et inclusion d’applications dans un wrapper](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Réutilisation de certificats de signature et inclusion d’applications dans un wrapper
 Android exige que toutes les applications soient signées par un certificat valide pour être installées sur des appareils Android.
@@ -158,7 +158,7 @@ Vous trouverez ci-dessous des conseils afin d’exiger une invite utilisateur au
 ### <a name="working-with-the-intune-sdk"></a>Utilisation du kit SDK Intune
 Ces instructions sont spécifiques à toutes les applications Android et Xamarin qui souhaitent exiger des stratégies de protection des applications Intune à utiliser sur l’appareil d’un utilisateur final.
 
-1. Configurez la bibliothèque ADAL à l’aide de la procédure définie dans le [Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configurez la bibliothèque ADAL à l’aide de la procédure définie dans le [Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > Le terme « ID client » associé à votre application est le même que le terme « ID d’application » du portail Azure associé à votre application. 
 * Pour activer l’authentification unique, la configuration numéro 2 dans « Configurations ADAL courantes » est celle dont vous avez besoin.
@@ -174,4 +174,4 @@ Ces instructions sont spécifiques à toutes les applications Android et Xamarin
 ### <a name="see-also"></a>Voir aussi
 - [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](apps-prepare-mobile-application-management.md)
 
-- [Utiliser le SDK pour activer des applications pour la gestion des applications mobiles](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Guide du SDK de l’application Microsoft Intune pour les développeurs Android](app-sdk-android.md)

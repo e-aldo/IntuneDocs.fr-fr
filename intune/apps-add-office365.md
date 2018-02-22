@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 08/14/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Guide pratique pour affecter des applications Office 365 ProPlus 2016 à des appareils Windows 10 avec Microsoft Intune
 
@@ -33,12 +33,13 @@ ms.lasthandoff: 01/25/2018
 
 - Les appareils sur lesquels vous déployez ces applications doivent exécuter Windows 10 Creators Update ou ultérieur.
 - Intune prend uniquement en charge l’ajout d’applications Office provenant de la suite Office 365 ProPlus 2016.
-- Si des applications Office sont ouvertes au moment où Intune installe la suite d’applications, les utilisateurs finaux risquent de perdre les données contenues dans des fichiers non enregistrés.
-- Cette méthode d’installation n’est pas prise en charge sur les appareils Windows 10.
+- Si des applications Office sont ouvertes au moment où Intune installe la suite d’applications, l’installation risque d’échouer et les utilisateurs finaux risquent de perdre les données des fichiers non enregistrés.
+- Cette méthode d’installation n’est pas prise en charge sur les appareils Windows 10, Windows Famille, Windows Collaboration, Windows Holographique et Windows Holographic for Business.
 - Intune ne prend pas en charge l’installation d’applications de bureau Office 365 à partir du Microsoft Store (appelées applications Office Centennial) sur un appareil sur lequel vous avez déjà déployé des applications Office 365 avec Intune. Si vous installez cette configuration, cela peut entraîner une perte ou une altération des données.
+- Plusieurs affectations d’applications obligatoires ou disponibles ne s’additionnent pas. La dernière affectation d’applications remplace les affectations d’applications préexistantes installées. Par exemple, si le premier ensemble d’applications Office contient Word, mais que ce n’est pas le cas du dernier ensemble, Word est désinstallé. Cela ne s’applique pas aux applications Visio ou Project.
 
 
-## <a name="get-started"></a>Mise en route
+## <a name="get-started"></a>Prise en main
 
 1.  Connectez-vous au portail Azure.
 2.  Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
@@ -109,7 +110,7 @@ Le tableau suivant répertorie les codes d’erreur fréquemment rencontrés et 
 ||||
 |-|-|-|
 |État|Phase|Description|
-|1460 (ERROR_TIMEOUT)|Téléchargez|Échec du téléchargement de l’outil Déploiement d’Office|    
+|1460 (ERROR_TIMEOUT)|Télécharger|Échec du téléchargement de l’outil Déploiement d’Office|    
 |13 (ERROR_INVALID_DATA)|-|Impossible de vérifier la signature de l’outil Déploiement d’Office téléchargé|
 |Code d’erreur de CertVerifyCertificateChainPolicy|-|Échec de la vérification de certification pour l’outil Déploiement d’Office téléchargé|    
 |997|WIP|En cours d'installation|

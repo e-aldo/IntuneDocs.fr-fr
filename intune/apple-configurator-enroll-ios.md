@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: c076bc52495d1b74a18e1d655376b6183dc5fe16
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscrire des appareils iOS à l’aide de l’outil Apple Configurator
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>Différences temporaires d’interface utilisateur
+>
+>L’interface utilisateur des fonctionnalités décrites sur cette page est en cours de mise à jour. Le déploiement de ces mises à jour sur tous les comptes d’utilisateurs se déroulera jusqu’à la fin du mois d’avril.
+>
+>Si votre page **Inscription des appareils** ressemble à l’image ci-dessous, c’est le signe que votre compte n’est pas encore passé à la nouvelle interface utilisateur ; vous pouvez utiliser cette page d’aide.
+>
+>![Ancienne interface utilisateur](./media/appleenroll-oldui.png)
+>
+>Si votre page **Inscription des appareils** ressemble à l’image ci-dessous, c’est le signe que vos interfaces utilisateur ont été mises à jour.  Accédez à [cette page d’aide](apple-configurator-enroll-ios-newui.md).
+>
+>![Nouvelle interface utilisateur](./media/appleenroll-newui.png)
 
 Intune prend en charge l’inscription d’appareils iOS à l’aide d’[Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) s’exécutant sur un ordinateur Mac. L’inscription avec Apple Configurator requiert que vous connectiez par USB chaque appareil iOS à un ordinateur Mac pour configurer l’inscription d’entreprise. Vous pouvez inscrire des appareils sur Intune avec Apple Configurator de deux manières :
 - **Inscription de l’Assistant Configuration** : réinitialise l’appareil aux paramètres d’usine et le prépare à l’inscription durant l’Assistant Configuration.

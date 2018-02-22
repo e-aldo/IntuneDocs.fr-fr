@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,24 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97084d0155788fc6aa0604454b46e783a3eb271b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Ajouter des stratégies de configuration d’applications pour les appareils iOS gérés | Microsoft Docs
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Utilisez des stratégies de configuration d’applications dans Microsoft Intune pour fournir des paramètres quand les utilisateurs exécutent une application iOS. Vous n’affectez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt une stratégie à une application que vous affectez ensuite. Les paramètres de stratégie sont utilisés quand l’application les vérifie, en général, à sa première exécution.
+
+Vous pouvez attribuer une stratégie de configuration d’application à un groupe d’utilisateurs et d’appareils à l’aide d’une combinaison d’affectations d’inclusion et d’exclusion. Dès que vous ajoutez une stratégie de configuration d’application, vous pouvez définir les affectations de la stratégie de configuration d’application. Quand vous définissez les affectations de la stratégie, vous pouvez choisir d’inclure et d’exclure les groupes d’utilisateurs auxquels la stratégie s’applique. Quand vous choisissez d’inclure un ou plusieurs groupes, vous pouvez choisir de sélectionner des groupes spécifiques à inclure ou sélectionner des groupes intégrés. Les groupes intégrés sont notamment **Tous les utilisateurs**, **Tous les appareils** et **Tous les utilisateurs + Tous les appareils**. 
+
+>[!NOTE]
+>Intune fournit des groupes **Tous les utilisateurs** et **Tous les appareils** précréés dans la console avec des optimisations intégrées pour votre commodité. Nous vous recommandons vivement d’utiliser ces groupes pour cibler tous les utilisateurs et tous les appareils au lieu de créer vous-même des groupes « Tous les utilisateurs » ou « Tous les appareils ».
+
+Une fois que vous avez sélectionné les groupes inclus pour votre stratégie de configuration d’application, vous pouvez aussi choisir les groupes spécifiques à exclure.
 
 > [!TIP]
 > Ce type de stratégie est disponible uniquement pour les appareils exécutant iOS 8.0 ou version ultérieure. Elle prend en charge les types d’installation d’application suivants :
@@ -51,10 +58,25 @@ Utilisez des stratégies de configuration d’applications dans Microsoft Intune
 6. Sélectionnez **iOS** comme **Plateforme**.
 7.  Choisissez **Application associée**. Ensuite, dans le panneau **Application associée**, choisissez l’application gérée pour laquelle vous souhaitez appliquer la configuration.
 8.  Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**.
-9. Sélectionnez **Format des paramètres de configuration**. Sélectionnez l’un des paramètres suivants :
-    - **[Utiliser le concepteur de configuration](#Use-the-configuration-designer)**
+9. Sélectionnez **Format des paramètres de configuration**. Sélectionnez l’un des paramètres suivants :
+    - **[Utiliser le concepteur de configuration](#use-configuration-designer)**
     - **[Entrer des données XML](#enter-xml-data)**
-10. Choisissez **OK**, puis **Ajouter**.
+10. Après avoir ajouté vos informations XML, choisissez **OK**, puis **Ajouter** pour ajouter la stratégie de configuration. Le panneau de vue d’ensemble de la stratégie de configuration s’affiche.
+11. Sélectionnez **Affectations** pour afficher les options d’inclusion et d’exclusion. 
+
+    ![Affectations de stratégie](./media/app-config-policy01.png)
+12. Sélectionnez **Tous les utilisateurs** sous l’onglet **Inclure**.
+
+    ![Affectations de stratégie - Tous les utilisateurs](./media/app-config-policy02.png)
+13. Sélectionnez l’onglet **Exclure**. 
+14. Cliquez sur **Sélectionner des groupes à exclure** pour afficher le panneau correspondant.
+
+    ![Affectations de stratégie - Sélectionner des groupes à exclure](./media/app-config-policy03.png)
+15. Choisissez les groupes à exclure, puis cliquez sur **Sélectionner**.
+
+    >[!NOTE]
+    >Quand vous ajoutez un groupe, si un autre groupe a déjà été inclus pour un type d’affectation donnée, il est présélectionné et ne peut pas être affecté à un autre type d’affectation d’inclusion. Par conséquent, ce groupe déjà utilisé ne peut pas être sélectionné comme groupe à exclure.
+16. Cliquez sur **Save**.
 
 ## <a name="use-configuration-designer"></a>Utiliser le concepteur de configuration
 

@@ -15,11 +15,11 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 50136397091bd3275fa1481e6a983dcf49d93f55
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0d5e90cb91032a88830e7dc9af1d66d854ab4963
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>Activer Mobile Threat Defense dans Intune
 
@@ -51,10 +51,10 @@ Pour activer la connexion de protection contre les menaces mobiles (MTD, Mobile 
 Vous pouvez décider des options de MTD à activer en fonction des besoins de votre organisation. Voici plus de détails :
 
 - **Connecter les appareils Android 4.1+ à [nom du partenaire MTD]** : quand vous activez cette option, les appareils Android 4.1 + peuvent signaler des risques de sécurité à Intune.
-    - **Marquer comme non conforme si aucune donnée n’est reçue** : si Intune ne reçoit pas de données sur un appareil sur cette plateforme venant du partenaire MTD, considère l’appareil non conforme.
+    - **Marquer comme non conforme si aucune donnée n’est reçue** : Si Intune ne reçoit pas de données du partenaire MTD concernant un appareil sur cette plateforme, l’appareil est considéré comme non conforme.
 <br></br>
 - **Connecter les appareils iOS 8.0+ à [nom du partenaire MTD]** : quand vous activez cette option, les appareils iOS 8.0+ peuvent signaler des risques de sécurité à Intune.
-    - **Marquer comme non conforme si aucune donnée n’est reçue** : si Intune ne reçoit pas de données sur un appareil sur cette plateforme venant du partenaire MTD, considère l’appareil non conforme.
+    - **Marquer comme non conforme si aucune donnée n’est reçue** : Si Intune ne reçoit pas de données du partenaire MTD concernant un appareil sur cette plateforme, l’appareil est considéré comme non conforme.
 <br></br>
 - **Bloquer les versions de système d’exploitation non prises en charge** : bloquez si l’appareil exécute un système d’exploitation inférieur à la valeur de version minimale prise en charge.
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1e04113d2f8707be0d06cb0783e6113914b856a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Connecteur de protection contre les menaces mobiles pour Lookout avec Intune
 
@@ -37,7 +37,7 @@ L'application mobile Lookout, **Lookout for work**, est installée et exécutée
 
 La stratégie de conformité d’Intune inclut une règle Lookout Mobile Threat Defense basée sur l’évaluation des risques Lookout. Quand cette règle est activée, Intune évalue si l’appareil est conforme à la stratégie activée.
 
-Si l’appareil est détecté non conforme, l’accès aux ressources comme Exchange Online et SharePoint Online peut être bloqué. Les utilisateurs d'appareils bloqués reçoivent une procédure à suivre pour résoudre le problème et accéder à nouveau aux ressources. Cette procédure est lancée à partir de l'application Lookout for work.
+Si l’appareil est considéré comme non conforme, l'accès aux ressources comme Exchange Online et SharePoint Online peut être bloqué. Les utilisateurs d'appareils bloqués reçoivent une procédure à suivre pour résoudre le problème et accéder à nouveau aux ressources. Cette procédure est lancée à partir de l'application Lookout for work.
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge :
 Les plateformes suivantes sont prises en charge lorsque Lookout est inscrit dans Intune :
@@ -60,8 +60,8 @@ Lorsque des applications malveillantes telles que des logiciels malveillants son
 * Synchroniser les fichiers d’entreprise à l’aide de l’application OneDrive for Work
 * Accès aux applications d’entreprise
 
-**Bloquer après la détection d’applications malveillantes :**
-![diagramme montrant l’accès bloqué par la stratégie d’accès conditionnel quand un appareil est évalué comme non conforme en raison de la présence d’applications malveillantes](../media/mtp/malicious-apps-blocked.png)
+**Bloquer en cas de détection d’applications malveillantes :**
+![diagramme illustrant une stratégie d’accès conditionnel bloquant l’accès quand un appareil est déterminé comme non conforme parce qu’il contient des applications malveillantes](../media/mtp/malicious-apps-blocked.png)
 
 **Accès accordé après correction :**
 

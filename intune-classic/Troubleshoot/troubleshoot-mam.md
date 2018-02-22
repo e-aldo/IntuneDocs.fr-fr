@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Résoudre les problèmes de gestion des applications mobiles
 
@@ -105,7 +105,7 @@ Boîte de dialogue/message d’erreur | Cause | Mise à jour |
 **Aucune application trouvée** : Cet appareil ne contient aucune application autorisée par votre organisation pour ouvrir ce contenu. Contactez votre administrateur informatique pour obtenir de l’aide. | L’utilisateur a essayé d’ouvrir des données professionnelles ou scolaires avec une autre application, mais Intune ne trouve pas d’autre application gérée autorisée à ouvrir les données. | Vérifiez qu’une stratégie de protection des applications Android est déployée sur le groupe de sécurité de l’utilisateur et qu’elle cible au moins une autre application GAM capable d’ouvrir les données en question.
 **Échec de connexion** : Réessayez de vous connecter. Si le problème persiste, contactez votre administrateur informatique pour obtenir de l’aide. | Échec d’authentification du compte avec lequel l’utilisateur a tenté de se connecter. | Vérifiez que l’utilisateur se connecte avec le compte professionnel ou scolaire qui est déjà inscrit auprès du service GAM Intune (le premier compte professionnel ou scolaire qui s’est connecté à cette application). <br><br> Effacez les données de l’application. <br><br> Vérifiez que la version de l’application est à jour. <br><br> Vérifiez que la version du Portail d’entreprise est à jour.
 **Connexion Internet obligatoire** : Vous devez être connecté à Internet pour vérifier que vous pouvez utiliser cette application. | Cet appareil n’est pas connecté à Internet. | Connectez l’appareil à un réseau Wi-Fi ou un réseau de données.
-**Appareil non conforme** : Impossible d’utiliser cette application, car vous utilisez un appareil « rooté ». Contactez votre administrateur informatique pour obtenir de l’aide. | Intune a détecté que l’utilisateur utilisait un appareil « rooté ». | Rétablissez les paramètres d’usine de l’appareil.
+**Appareil non conforme** : Impossible d’utiliser cette application, car vous utilisez un appareil rooté. Contactez votre administrateur informatique pour obtenir de l’aide. | Intune a détecté que l’utilisateur utilisait un appareil « rooté ». | Rétablissez les paramètres d’usine de l’appareil.
 **Compte non configuré** : Cette application doit être gérée par Microsoft Intune, mais votre compte n’a pas été configuré. Contactez votre administrateur informatique pour obtenir de l’aide. | Le compte d’utilisateur n’a pas de licence Intune A Direct. | Vérifiez qu’une licence Intune est affectée au compte d’utilisateur dans le [portail Office](http://portal.office.com).
 **Impossible d’inscrire l’application** : Cette application doit être gérée par Microsoft Intune, mais nous n’arrivons pas à l’y inscrire. Contactez votre administrateur informatique pour obtenir de l’aide. | Impossible d’inscrire automatiquement l’application auprès du service GAM quand la stratégie de protection des applications est obligatoire. | Effacez les données de l’application. <br><br> Envoyez des journaux à Intune par le biais de l’application Portail d’entreprise ou créez un ticket de support [ici](how-to-get-support-for-microsoft-intune.md).
 

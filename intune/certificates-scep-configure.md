@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aea88aa8898380c54867090650bd16d8bf60f3c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurer et gérer les certificats SCEP avec Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,8 +35,8 @@ Cette rubrique vous montre comment configurer votre infrastructure, puis comment
 -  **Serveur NDES** : sur un serveur qui exécute Windows Server 2012 R2 ou version ultérieure, vous devez configurer le service d’inscription de périphérique réseau (NDES). Intune ne prend pas en charge le service NDES quand il s’exécute sur un serveur qui exécute également l’autorité de certification d’entreprise. Consultez le [Guide du service d’inscription de périphérique réseau](http://technet.microsoft.com/library/hh831498.aspx) pour obtenir des instructions sur la configuration de Windows Server 2012 R2 pour héberger le service d’inscription de périphérique réseau.
 Le serveur NDES doit être joint au domaine qui héberge l’autorité de certification et ne doit pas se trouver sur le même serveur que l’autorité de certification. Vous trouverez plus d’informations sur le déploiement du serveur NDES dans une forêt distincte, un réseau isolé ou un domaine interne dans [Utilisation d’un module de stratégie avec le service d’inscription de périphérique réseau](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune Certificate Connector** : utilisez le portail Azure pour télécharger le programme d’installation de **Certificate Connector** (**ndesconnectorssetup.exe**). Vous pouvez ensuite exécuter **ndesconnectorssetup.exe** sur l'ordinateur où vous souhaitez installer Certificate Connector. 
--  **Serveur proxy d’application web** (facultatif) : utilisez un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web (WAP). Cette configuration :
+-  **Microsoft Intune Certificate Connector** : utilisez le portail Azure pour télécharger le programme d’installation de **Certificate Connector** (**ndesconnectorssetup.exe**). Vous pouvez ensuite exécuter **ndesconnectorssetup.exe** sur le serveur hébergeant le rôle de service d’inscription de périphériques réseau (NDES) où vous souhaitez installer Certificate Connector. 
+-  **Serveur proxy d’application web** (facultatif) : utilisez un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web (WAP). Cette configuration :
     -  Permet aux appareils de recevoir des certificats à l'aide d'une connexion Internet.
     -  Est une recommandation de sécurité lorsque les appareils se connectent via Internet pour recevoir et renouveler les certificats.
 
@@ -70,7 +70,7 @@ Nous vous recommandons de publier le serveur NDES via un proxy, comme le [proxy 
 |**Compte de service NDES**|Spécifiez un compte d'utilisateur de domaine à utiliser comme compte de service NDES.|
 
 ## <a name="configure-your-infrastructure"></a>Configurer votre infrastructure
-Avant de configurer les profils de certificat, vous devez effectuer les tâches suivantes, ce qui nécessite la connaissance de Windows Server 2012 R2 et des services de certificats Active Directory :
+Avant de configurer les profils de certificat, vous devez effectuer les tâches suivantes, ce qui nécessite la connaissance de Windows Server 2012 R2 et des services de certificats Active Directory :
 
 **Étape 1** : créer un compte de service NDES
 
@@ -170,7 +170,7 @@ Dans cette tâche, vous allez :
         > [!TIP]
         > Dans la page **Progression de l'installation** de l'Assistant, ne cliquez pas sur **Fermer**. Cliquez à la place sur le lien **Configurer les services de certificats Active Directory sur le serveur de destination**. Cette opération ouvre l'Assistant **Configuration AD CS** que vous utilisez pour la tâche suivante. Une fois l'Assistant Configuration AD CS ouvert, vous pouvez fermer l'Assistant Ajout de rôles et de fonctionnalités.
 
-    2.  Lorsque NDES est ajouté au serveur, l'Assistant installe également IIS. Vérifiez qu'IIS a les configurations suivantes :
+    2.  Lorsque NDES est ajouté au serveur, l'Assistant installe également IIS. Vérifiez qu'IIS a les configurations suivantes :
 
         -   **Serveur web** &gt; **Sécurité** &gt; **Filtrage des demandes**
 
@@ -217,7 +217,7 @@ Dans cette tâche, vous allez :
 
     Dans la page **Confirmation** , cliquez sur **Configurer** pour terminer l'Assistant.
 
-2.  Une fois l'Assistant terminé, modifiez la clé de Registre suivante sur le serveur NDES :
+2.  Une fois l'Assistant terminé, modifiez la clé de Registre suivante sur le serveur NDES :
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
 
@@ -232,7 +232,7 @@ Dans cette tâche, vous allez :
 
 3. Le serveur NDES reçoit de très longues URL (requêtes), qui nécessitent l’ajout de deux entrées au Registre :
 
-    |Emplacement|Valeur|Type|Niveau|
+    |Localisation|Valeur|Type|Niveau|
     |-------|-----|----|----|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxFieldLength|DWORD|65534 (décimal)|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (décimal)|
@@ -283,11 +283,11 @@ Dans cette tâche, vous allez :
 
     **Longueur maximale des URL (octets)** = **65534**
 
-3.  Vérifiez la clé de Registre suivante :
+3.  Vérifiez la clé de Registre suivante :
 
     **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters**
 
-    Vérifiez que les valeurs suivantes sont définies en tant qu'entrées DWORD :
+    Vérifiez que les valeurs suivantes sont définies en tant qu'entrées DWORD :
 
     Nom : **MaxFieldLength**, avec une valeur décimale de **65534**
 
@@ -299,7 +299,7 @@ Dans cette tâche, vous allez :
 Dans cette tâche, vous allez :
 
 - activer la prise en charge de NDES dans Intune ;
-- Télécharger, installer et configurer Certificate Connector sur un serveur dans votre environnement Pour prendre en charge la haute disponibilité, vous pouvez installer plusieurs Certificate Connectors sur différents serveurs.
+- Téléchargez, installez et configurez Certificat Connector sur le serveur hébergeant le rôle de service d’inscription de périphériques réseau (NDES) dans votre environnement. Pour optimiser l’évolutivité de l’implémentation NDES dans votre organisation, vous pouvez installer plusieurs serveurs NDES avec Microsoft Intune Certificate Connector sur chaque serveur NDES.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Pour télécharger, installer et configurer Certificate Connector
 ![Téléchargement de Connector](./media/certificates-download-connector.png)   
@@ -309,7 +309,7 @@ Dans cette tâche, vous allez :
 3. Dans le panneau **Intune**, sélectionnez **Configuration de l’appareil**.
 4. Dans le panneau **Configuration de l’appareil**, sélectionnez **Autorité de certification**.
 5. Cliquez sur **Ajouter** et sélectionnez **Télécharger le fichier du connecteur**. Enregistrez le fichier téléchargé à un emplacement accessible à partir du serveur où vous effectuerez l’installation. 
-6.  Une fois le téléchargement terminé, exécutez le programme d’installation téléchargé (**ndesconnectorssetup.exe**) sur un serveur Windows Server 2012 R2. Le programme d’installation installe également le module de stratégie pour NDES et le service web CRP. (Le service web CRP, CertificateRegistrationSvc, s'exécute en tant qu'application dans IIS.)
+6.  Une fois le téléchargement terminé, exécutez le programme d'installation téléchargé (**ndesconnectorssetup.exe**) sur le serveur hébergeant le rôle de service d’inscription de périphériques réseau (NDES). Le programme d’installation installe également le module de stratégie pour NDES et le service web CRP. (Le service web CRP, CertificateRegistrationSvc, s'exécute en tant qu'application dans IIS.)
 
     > [!NOTE]
     > Quand vous installez NDES pour la version autonome d’Intune, le service CRP est installé automatiquement avec Certificate Connector. Quand vous utilisez Intune avec Configuration Manager, vous installez le Point d’enregistrement de certificat comme rôle de système de site distinct.
@@ -321,7 +321,7 @@ Dans cette tâche, vous allez :
 4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
 
     > [!TIP]
-    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
+    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
     >
     > **&lt;chemin_installation&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -375,7 +375,7 @@ Pour valider que le service s'exécute, ouvrez un navigateur et entrez l'URL sui
         - **Personnalisé** : lorsque vous sélectionnez cette option, un autre champ de liste déroulante s’affiche. Ce champ vous permet d’entrer un format de nom d’objet personnalisé. Les deux variables prises en charge pour le format personnalisé sont **Nom courant (cn)** et **Message électronique (e)**. En combinant une ou plusieurs ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui-ci : **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** Dans cet exemple, vous avez créé un format de nom d’objet qui, en plus des variables CN et E, utilise des chaînes pour les valeurs Organizational Unit (Unité organisationnelle), Organization (Organisation), Location (Emplacement), State (État) et Country (Pays). [Cette rubrique](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) illustre la fonction **CertStrToName** et ses chaînes prises en charge.
         
     - **Autre nom de l’objet** : spécifiez comment Intune crée automatiquement les valeurs pour l’autre nom de l’objet dans la demande de certificat. Par exemple, si vous avez sélectionné un type de certificat utilisateur, vous pouvez inclure le nom d'utilisateur principal (UPN) dans l'autre nom de l'objet. Si le certificat client est utilisé pour l’authentification sur un serveur de stratégie réseau, vous devez affecter le nom d’utilisateur principal à l’autre nom de l’objet. 
-    - **Utilisation de la clé** : spécifiez les options d’utilisation de la clé pour le certificat. Vous pouvez choisir parmi les options suivantes : 
+    - **Utilisation de la clé** : spécifiez les options d’utilisation de la clé pour le certificat. Vous pouvez choisir parmi les options suivantes : 
         - **Chiffrage de clés** : autorisez l’échange de clés uniquement quand la clé est chiffrée. 
         - **Signature numérique** : autorisez l’échange de clés uniquement quand une signature numérique contribue à protéger la clé. 
     - **Taille de la clé (bits)** : Sélectionnez le nombre de bits contenus dans la clé. 

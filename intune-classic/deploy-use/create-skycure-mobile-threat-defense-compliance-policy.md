@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f601253c6ea905e86a2a417cfd37bdb03b1df48b
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ea45ac89064756f4b8ebd8ca9d163a151b6e6cc2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Créer la stratégie de conformité Skycure Mobile Threat Defense
 
@@ -51,12 +51,12 @@ Dans le cadre de la configuration de la défense contre les menaces mobiles Skyc
 
     b.  **Faible** : l’appareil est conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
 
-    c.  **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
+    c.  **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées, l’appareil est déterminé comme non conforme.
 
     d.  **Élevé** : cette option est la moins sécurisée. Cela active tous les niveaux de menace et utilise la défense contre les menaces mobiles Skycure uniquement à des fins de création de rapport.
 
 > [!IMPORTANT]
-> Si vous créez des stratégies d’accès conditionnel pour Office 365 et d’autres services, l’évaluation de la conformité est effectuée, ce qui signifie que l’accès à ces services est bloqué pour les appareils non conformes tant que la menace n’est pas résolue.
+> Si vous créez des stratégies d’accès conditionnel pour Office 365 ou d’autres services, l’évaluation de la conformité est effectuée et les appareils non conformes ne peuvent pas accéder à ces services tant que la menace n’est pas résolue.
 
 ## <a name="span-idmonitor-device-threats-classanchorspan-idnext-steps-classanchorspan-idtoc477360344-classanchorspanspanspannext-steps"></a><span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>Étapes suivantes
 

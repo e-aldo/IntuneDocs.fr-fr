@@ -15,11 +15,11 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6d758d10a3527e0dc350115f2f8f10e2c62322
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6f4a9f70762c3d30a49a686bcf1cfa9de4851b6c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Bien démarrer avec les stratégies de conformité des appareils Intune
 
@@ -56,7 +56,7 @@ When you specify these actions, Intune will automatically initiate them in the s
 actions for a device that continues to be in the noncompliant status for
 a week:
 
--   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+-   When the device is first determined to be noncompliant, an email with noncompliant notification is sent to the user.
 
 -   3 days after initial noncompliance state, a follow up reminder is sent to the user.
 
@@ -72,7 +72,7 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="pre-requisites"></a>Conditions préalables
+##  <a name="pre-requisites"></a>Prérequis
 
 Vous devez souscrire aux abonnements suivants pour utiliser des stratégies de conformité des appareils avec Intune :
 
@@ -90,7 +90,7 @@ Vous devez souscrire aux abonnements suivants pour utiliser des stratégies de c
 
 -   Windows 8.1
 
--   Windows Phone 8.1
+-   Windows Phone 8.1
 
 -   Windows 10
 
@@ -111,7 +111,7 @@ Vous pouvez utiliser une stratégie de conformité avec accès conditionnel pour
 ### <a name="without-conditional-access"></a>Sans accès conditionnel
 Vous pouvez également utiliser des stratégies de conformité d’appareils indépendamment de l’accès conditionnel. Quand vous utilisez des stratégies de conformité indépendamment, les appareils ciblés sont évalués et signalés avec leur état de conformité. Par exemple, vous pouvez obtenir un rapport sur le nombre d’appareils qui ne sont pas chiffrés, ou les appareils qui sont jailbreakés ou rootés. Mais quand vous utilisez des stratégies de conformité indépendamment, aucune restriction d’accès aux ressources de l’entreprise n’est appliquée.
 
-Vous déployez les stratégies de conformité sur les utilisateurs. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée. Si vous voulez en savoir plus sur le temps nécessaire pour que les appareils mobiles reçoivent une stratégie une fois celle-ci déployée, consultez Gérer des paramètres et des fonctionnalités sur vos appareils.
+Vous déployez les stratégies de conformité sur les utilisateurs. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée. Pour en savoir plus sur le temps nécessaire pour que les appareils mobiles reçoivent une stratégie une fois celle-ci déployée, consultez [Résoudre les problèmes de profils d’appareil dans Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Utilisation des stratégies de conformité des appareils dans le portail classique Intune et dans le Portail Azure
 

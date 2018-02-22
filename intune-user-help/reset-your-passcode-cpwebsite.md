@@ -17,18 +17,18 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 111cbc1aa2dd9c537a7f5581d0dd6f2e75d8c7f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1d9321838cdf7721410a1ba204dd02bd868dcd72
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Guide pratique pour réinitialiser le code secret de votre appareil à partir du site web du portail d’entreprise
 
 Si vous perdez le code confidentiel ou le mot de passe d’un appareil que vous avez inscrit dans Intune, vous pouvez utiliser le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) pour le réinitialiser. Vous pouvez utiliser le site web du portail d’entreprise pour gérer les ordinateurs et appareils que vous avez inscrits dans Intune et effectuer pour la majeure partie les mêmes tâches qu’avec l’application de votre portail d’entreprise.
 
 > [!NOTE]
-> Le bouton Réinitialiser le code secret ne sera peut-être pas visible sur le site web du portail d’entreprise si vous utilisez un appareil d’entreprise inscrit. Si ce n’est pas le cas, vous devez contacter le support technique de votre entreprise pour qu’il réinitialise le code secret pour vous.
+> Le bouton Réinitialiser le code secret ne sera peut-être pas visible sur le site web du portail d’entreprise si vous utilisez un appareil d’entreprise inscrit. Si ce n’est pas le cas, vous devez contacter le support de votre entreprise pour réinitialiser le code secret.
 
 Pour réinitialiser votre code secret
 
@@ -57,7 +57,7 @@ Pour réinitialiser votre code secret
   > [!NOTE]
   > Vous ne pouvez pas réinitialiser le code secret pour les appareils Android 7.0 et versions ultérieures. Si vous oubliez votre code secret, vous devez réinitialiser ces appareils avec les paramètres d’usine.
 
-  **iOS** : supprime le code secret existant et ne crée pas de code secret temporaire. Si vous utilisez le scanneur d’empreinte digitale Touch ID pour ouvrir votre appareil ou effectuer des achats, vous devrez le reconfigurer.
+  **iOS** : supprime le code secret existant et ne crée pas de code secret temporaire. Si vous utilisez le scanneur d’empreinte digitale Touch ID pour ouvrir votre appareil ou effectuer des achats, vous devez le reconfigurer.
 
   **Windows 10 Mobile** : supprime le code secret existant et crée un code secret temporaire avec des lettres et des chiffres. Si vous utilisez la reconnaissance faciale Windows Hello pour vous connecter, elle sera toujours prise en charge.
     

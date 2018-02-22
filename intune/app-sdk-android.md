@@ -1,7 +1,7 @@
 ---
 title: "Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android"
 description: "Le SDK d’application Microsoft Intune pour Android vous permet d’incorporer la gestion des applications mobiles Intune à votre application Android."
-keywords: "Kit de développement logiciel (SDK)"
+keywords: SDK
 author: erikre
 manager: dougeby
 ms.author: erikre
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b99ca9b196aa15d146e7a379cdc7bdffe848be28
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3efc522b8b788a0cb6cd1bbc6d04ce7545890de3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
@@ -142,7 +142,7 @@ Les classes de base Android doivent être remplacées par leurs équivalents GAM
 ### <a name="renamed-methods"></a>Méthodes renommées
 
 
-Dans de nombreux cas, une méthode disponible dans la classe Android a été marquée comme finale dans la classe de remplacement GAM. Dans ce cas, la classe de remplacement GAM fournit une méthode portant un nom similaire (généralement avec le suffixe `MAM`) que vous devez remplacer. Par exemple, quand vous dérivez de `MAMActivity` au lieu de remplacer `onCreate()` et d’appeler `super.onCreate()`, `Activity` doit remplacer `onMAMCreate()` et appeler `super.onMAMCreate()`. Le compilateur Java doit appliquer les restrictions finales pour éviter que la méthode d’origine ne soit remplacée accidentellement à la place de l’équivalent MAM.
+Dans de nombreux cas, une méthode disponible dans la classe Android a été marquée comme finale dans la classe de remplacement GAM. Dans ce cas, la classe de remplacement GAM fournit une méthode portant un nom similaire (généralement avec le suffixe `MAM`) que vous devez remplacer. Par exemple, quand vous dérivez de `MAMActivity` au lieu de remplacer `onCreate()` et d’appeler `super.onCreate()`, `Activity` doit remplacer `onMAMCreate()` et appeler `super.onMAMCreate()`. Le compilateur Java doit appliquer les restrictions finales pour éviter que la méthode d’origine ne soit remplacée accidentellement à la place de l’équivalent GAM.
 
 ### <a name="mamapplication"></a>MAMApplication
 En raison des contraintes liées au SDK MAM, vous **devez** créer une sous-classe de `com.microsoft.intune.mam.client.app.MAMApplication` et la définir comme le nom de la classe `Application` utilisée dans votre manifeste. `MAMApplication` est abstrait et nécessite une substitution pour `byte[] getADALSecretKey`. Pour plus d’informations sur la façon d’implémenter cette fonction, consultez le Javadoc correspondant.
@@ -1311,9 +1311,9 @@ public interface MAMAppConfig {
 La configuration de l’application ajoute un nouveau type de notification :
 * **REFRESH_APP_CONFIG** : cette notification est envoyée dans un `MAMUserNotification` et indique à l’application que de nouvelles données de configuration d’application sont disponibles.
 
-Pour plus d’informations sur les fonctionnalités de l’API Graph en ce qui concerne les valeurs de configuration ciblée de gestion des applications mobiles, consultez [Graph API Reference MAM Targeted Config (Référence de l’API Graph pour la configuration ciblée de gestion des applications mobiles)](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+Pour plus d’informations sur les fonctionnalités de l’API Graph en ce qui concerne les valeurs de configuration ciblées par la gestion GAM, consultez [Informations de référence sur l’API Graph - Configuration ciblée par la gestion GAM]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
 
-Pour plus d’informations sur la création d’une stratégie de configuration d’application ciblée de gestion des applications mobiles dans Android, consultez la section correspondante dans [Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour Android](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-android).
+Pour plus d’informations sur la création d’une stratégie de configuration d’application ciblée de gestion des applications mobiles dans Android, consultez la section correspondante dans [Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
 
 ## <a name="style-customization-optional"></a>Personnalisation du style (facultatif)
 
@@ -1366,7 +1366,7 @@ Vous trouverez ci-dessous des conseils afin d’exiger une invite utilisateur au
 ### <a name="working-with-the-intune-sdk"></a>Utilisation du kit SDK Intune
 Ces instructions sont spécifiques à toutes les applications Android et Xamarin qui souhaitent exiger des stratégies de protection des applications Intune à utiliser sur l’appareil d’un utilisateur final.
 
-1. Configurez la bibliothèque ADAL à l’aide de la procédure définie dans le [Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configurez la bibliothèque ADAL à l’aide de la procédure définie dans le [Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > Le terme « ID client » associé à votre application est le même que le terme « ID d’application » du portail Azure. 
 * Pour activer l’authentification unique, la configuration numéro 2 dans « Configurations ADAL courantes » est celle dont vous avez besoin.
@@ -1392,7 +1392,7 @@ Pour les grandes bases de code qui s’exécutent sans [ProGuard](http://proguar
 
 * **Capture d’écran**: le SDK ne peut pas appliquer une nouvelle valeur de capture d’écran dans les activités qui sont déjà passées par Activity.onCreate. Il peut en résulter une période au cours de laquelle l’application est configurée pour désactiver les captures d’écran ; toutefois, il est toujours possible d’en prendre.
 
-* **Utilisation de programmes de résolution de contenu** : la stratégie Intune de transfert ou de réception peut bloquer entièrement ou en partie l’utilisation d’un programme de résolution de contenu pour accéder au fournisseur de contenu dans une autre application. Par conséquent, les méthodes ContentResolver retournent null ou lèvent une valeur d’échec (par exemple, `openOutputStream` lève `FileNotFoundException` en cas de blocage). L’application peut déterminer si l’échec de l’écriture des données par le biais d’un programme de résolution de contenu est causé par une stratégie (ou pourrait être causé par une stratégie) en appelant :
+* **Utilisation de programmes de résolution de contenu** : la stratégie Intune de transfert ou de réception peut bloquer entièrement ou en partie l’utilisation d’un programme de résolution de contenu pour accéder au fournisseur de contenu dans une autre application. Par conséquent, les méthodes ContentResolver retournent null ou lèvent une valeur d’échec (par exemple, `openOutputStream` lève `FileNotFoundException` en cas de blocage). L’application peut déterminer si l’échec de l’écriture des données par le biais d’un programme de résolution de contenu est causé par une stratégie (ou pourrait être causé par une stratégie) en appelant :
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
@@ -1427,7 +1427,7 @@ Le SDK Intune respecte le contrat fourni par l’API Android, bien que des condi
 Le SDK d’application Intune pour Android ne contrôle pas la collecte de données à partir de votre application. Par défaut, l’application Portail d’entreprise enregistre des données de télémétrie. Ces données sont envoyées à Microsoft Intune. Conformément à la stratégie Microsoft, nous ne collectons aucune information d’identification personnelle (PII).
 
 > [!NOTE]
-> Si les utilisateurs finaux choisissent de ne pas envoyer ces données, ils doivent désactiver la télémétrie sous Paramètres dans l’application Portail d’entreprise. Pour en savoir plus, consultez [Désactiver la collecte de données d’utilisation Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+> Si les utilisateurs finaux choisissent de ne pas envoyer ces données, ils doivent désactiver la télémétrie sous Paramètres dans l’application Portail d’entreprise. Pour en savoir plus, consultez [Désactiver la collecte de données d’utilisation Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## <a name="recommended-android-best-practices"></a>Bonnes pratiques recommandées pour Android
 

@@ -1,6 +1,6 @@
 ---
 title: "Mises à jour logicielles pour PC Windows"
-description: "Intune vous aide à maintenir à jour vos ordinateurs gérés en s’assurant que les derniers correctifs et mises à jour logicielles sont rapidement installés."
+description: "Intune vous aide à maintenir à jour vos ordinateurs gérés en vérifiant que les derniers correctifs et mises à jour logicielles sont rapidement installés."
 keywords: 
 author: arob98
 ms.author: angrobe
@@ -14,11 +14,11 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85299c97c2b0c605adbb83a7c6e8017360511609
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c31d1e44b4b96995223f4294655d8e0730170f47
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Maintenir des PC Windows à jour avec les mises à jour logicielles dans Microsoft Intune
 
@@ -35,7 +35,7 @@ Quand de nouvelles mises à jour sont disponibles via Microsoft Update ou que vo
 
 À mesure que les mises à jour sont approuvées et installées, vous pouvez examiner la réussite et l’échec de l’installation dans l’espace de travail **Mises à jour** de la console Intune.
 
-Les sections suivantes vous aideront à maintenir à jour les logiciels installés sur vos ordinateurs gérés.
+Les sections suivantes vous aident à maintenir à jour les logiciels installés sur vos ordinateurs gérés.
 
 ## <a name="before-you-start"></a>Avant de commencer
 Avant de commencer à créer et à approuver les mises à jour logicielles, configurez et déployez des stratégies sur vos ordinateurs afin de contrôler quand et comment les mises à jour sont installées.

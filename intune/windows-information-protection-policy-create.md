@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97f9407c8ba93307059e44c8becf4f7a36c6861a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 940c4bc17face7ecef2b6888e199ba47073659ba
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
@@ -45,7 +45,7 @@ Examinons quelques concepts lors de l’ajout d’une stratégie WIP.
 
 -   **Applications de bureau Windows** : vous pouvez ajouter n’importe quelle application de bureau Windows traditionnelle à la stratégie (.exe, .dll, etc.).
 
-## <a name="pre-requisites"></a>Conditions préalables
+## <a name="pre-requisites"></a>Prérequis
 
 Vous devez configurer le fournisseur GAM avant de pouvoir créer une stratégie de protection d’application WIP. En savoir plus sur la façon de [configurer le fournisseur MAM avec Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
@@ -125,9 +125,11 @@ Après avoir ajouté les applications que vous souhaitez protéger avec WIP, vou
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
-WIP Learning est un rapport qui vous permet de surveiller les applications inconnues de WIP. Les applications inconnues sont celles non déployées par le département informatique de votre organisation. Vous pouvez exporter ces applications à partir du rapport et les ajouter à vos stratégies WIP pour éviter une perturbation de la productivité avant l’application de WIP en mode « Bloquer ».
+WIP Learning est un rapport qui vous permet de surveiller vos applications WIP et les applications inconnues de WIP. Les applications inconnues sont celles non déployées par le département informatique de votre organisation. Vous pouvez exporter ces applications à partir du rapport et les ajouter à vos stratégies WIP pour éviter une perturbation de la productivité avant l’application de WIP en mode « Bloquer ».
 
-Nous vous recommandons de commencer avec **Silencieux** ou **Autoriser les substitutions** lors de la vérification avec un petit groupe que vous avez les bonnes applications dans votre liste d’applications autorisées. Une fois cela fait, vous pouvez passer sur votre stratégie d’application finale, **Bloquer**.
+<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+
+Quand vous utilisez des applications WIP et des applications inconnues de WIP, nous vous recommandons de commencer par **Silencieux** ou **Autoriser les substitutions** quand vous vérifiez sur un petit groupe que vous avez les bonnes applications dans votre liste d’applications autorisées. Une fois cela fait, vous pouvez passer sur votre stratégie d’application finale, **Bloquer**.
 
 ### <a name="what-are-the-protection-modes"></a>Quels sont les modes de protection ?
 

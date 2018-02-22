@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3254adc66c5fd5dc991364c3a33aabef8ac2030b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Préparer la configuration des stratégies de protection d’application pour Windows 10
 
@@ -50,7 +50,7 @@ Activez la gestion des applications mobiles (GAM) pour Windows 10 en définissan
     Il s’agit de l’URL du point de terminaison d’inscription du service GAM. Le point de terminaison sert à inscrire des appareils à gérer à travers le service GAM.
 
     **URL de conformité GAM**  
-      Il s’agit de l’URL du point de terminaison de conformité du service GAM. Quand un utilisateur se voit refuser l’accès à une ressource à partir d’un appareil non conforme, un lien vers l’URL de conformité lui est indiqué. Les utilisateurs peuvent accéder à cette URL hébergée par le service GAM pour savoir pourquoi leur appareil est considéré comme non conforme. Les utilisateurs peuvent également effectuer une correction libre-service pour rendre leurs appareils conformes et pouvoir continuer à accéder aux ressources.
+      Il s’agit de l’URL du point de terminaison de conformité du service GAM. Quand un utilisateur se voit refuser l’accès à une ressource à partir d’un appareil non conforme, un lien vers l’URL de conformité lui est proposé. Les utilisateurs peuvent accéder à cette URL hébergée par le service GAM pour déterminer pourquoi leur appareil est considéré comme non conforme. Les utilisateurs peuvent également effectuer une correction libre-service pour rendre leurs appareils conformes et pouvoir continuer à accéder aux ressources.
 
 5.  Cliquez sur **Save**.
 

@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b24b7615c6070614bb19aac0f4edb7d12ddc65c5
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-design"></a>Créer un design
 
@@ -137,11 +137,11 @@ L’identité est la façon dont nous identifions les utilisateurs qui appartien
 
 En savoir plus sur les exigences d’Intune suivantes en matière d’identité :
 
-- [Exigences en matière d’identité](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
+- [Exigences en matière d’identité](https://docs.microsoft.com/azure/active-directory/understand-azure-identity-solutions).
 
-- [Exigences en matière de synchronisation d’annuaires](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
+- [Exigences en matière de synchronisation d’annuaires](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
-- [Exigences en matière d’authentification multifacteur](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
+- [Exigences en matière d’authentification multifacteur](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### <a name="user-and-device-groups"></a>Groupes d’utilisateurs et d’appareils
 
@@ -381,9 +381,9 @@ Les stratégies de protection des applications limitent les perte de données en
 Vous pouvez [télécharger un modèle à partir du tableau ci-dessus](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) pour identifier vos besoins en matière de stratégie de protection des applications.
 #### <a name="compliance-policies"></a>Stratégies de conformité
 
-Les stratégies de conformité déterminent si un appareil est conforme à certaines exigences. Intune utilise des stratégies de conformité pour déterminer si un appareil est considéré conforme ou non conforme. L’état de conformité peut ensuite servir à restreindre ou à autoriser l’accès aux ressources d’entreprise. Si un accès conditionnel est requis, nous vous recommandons de concevoir une [stratégie de conformité d’appareil](device-compliance.md).
+Les stratégies de conformité déterminent si un appareil est conforme à certaines exigences. Intune utilise des stratégies de conformité pour déterminer si un appareil est considéré comme conforme ou non conforme. L’état de conformité peut ensuite servir à restreindre ou à autoriser l’accès aux ressources d’entreprise. Si un accès conditionnel est requis, nous vous recommandons de concevoir une [stratégie de conformité d’appareil](device-compliance.md).
 
-Reportez-vous aux exigences et aux cas d’utilisation pour déterminer le nombre de stratégies de conformité d’appareils nécessaires et les groupes d’utilisateurs ciblés. En outre, vous devez déterminer la durée pendant laquelle un appareil peut rester déconnecté sans s’identifier avant d’être considéré non conforme.
+Reportez-vous aux exigences et aux cas d’utilisation pour déterminer le nombre de stratégies de conformité d’appareils nécessaires et les groupes d’utilisateurs ciblés. Par ailleurs, vous devez déterminer la durée pendant laquelle un appareil peut rester déconnecté sans s’identifier avant d’être considéré comme non conforme.
 
 Voici un exemple de conception d’une stratégie de conformité :
 
@@ -407,7 +407,7 @@ Voici un exemple montrant comment documenter des stratégies d’accès conditio
 
 | **Service** | **Plateformes pour l'authentification moderne** | **Authentification de base** | **Scénarios d'utilisation** |   
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS, Android | Bloquer les appareils non conformes sur les plateformes prises en charge par Microsoft Docs | Entreprise, BYOD |
+| Exchange Online | iOS, Android | Bloquer les appareils non conformes sur les plateformes prises en charge par Intune | Entreprise, BYOD |
 | SharePoint Online | iOS, Android |  | Entreprise, BYOD |
 
 Vous pouvez [télécharger un modèle à partir du tableau ci-dessus](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) pour identifier vos besoins en matière de stratégie d’accès conditionnel.

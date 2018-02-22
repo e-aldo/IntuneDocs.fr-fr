@@ -287,6 +287,26 @@
           items:
             - name: Réinitialiser des applications de manière sélective
               href: apps-selective-wipe.md
+            - name: Utiliser les stratégies de protection des applications
+              href: app-protection-policy.md
+              items:
+                - name: Créer des stratégies de protection des applications
+                  href: app-protection-policies.md
+                  items:
+                    - name: Paramètres Android
+                      href: app-protection-policy-settings-android.md
+                    - name: Paramètres iOS
+                      href: app-protection-policy-settings-ios.md
+                - name: Valider des stratégies de protection des applications
+                  href: app-protection-policies-validate.md
+                - name: Surveiller l’état de protection des utilisateurs d’applications
+                  href: app-protection-policies-monitor.md
+                - name: Préparation aux stratégies de protection des applications WIP
+                  href: app-protection-policies-configure-windows-10.md
+                - name: Créer et attribuer des stratégies de protection des applications WIP
+                  href: windows-information-protection-policy-create.md
+                - name: Gérer les transferts de données entre applications iOS
+                  href: data-transfer-between-apps-manage-ios.md
     - name: Configurer des appareils
       href: device-profiles.md
       items:
@@ -444,28 +464,8 @@
           href: conditional-access-integrate-jamf.md
         - name: Appliquer la conformité sur les Mac gérés par Jamf Pro
           href: conditional-access-assign-jamf.md
-    - name: Protéger les données d’application et d’appareil
+    - name: Protéger les données des appareils
       items:
-        - name: Utiliser les stratégies de protection des applications
-          href: app-protection-policy.md
-          items:
-            - name: Créer des stratégies de protection des applications
-              href: app-protection-policies.md
-              items:
-                - name: Paramètres Android
-                  href: app-protection-policy-settings-android.md
-                - name: Paramètres iOS
-                  href: app-protection-policy-settings-ios.md
-            - name: Valider des stratégies de protection des applications
-              href: app-protection-policies-validate.md
-            - name: Surveiller l’état de protection des utilisateurs d’applications
-              href: app-protection-policies-monitor.md
-            - name: Préparation aux stratégies de protection des applications WIP
-              href: app-protection-policies-configure-windows-10.md
-            - name: Créer et attribuer des stratégies de protection des applications WIP
-              href: windows-information-protection-policy-create.md
-            - name: Gérer les transferts de données entre applications iOS
-              href: data-transfer-between-apps-manage-ios.md
         - name: Protection contre les menaces mobiles
           href: mobile-threat-defense.md
           items:
@@ -651,6 +651,8 @@
           href: reports-proc-data-rest.md
         - name: Point de terminaison de l’API d’entrepôt de données
           href: reports-api-url.md
+        - name: Authentification Data Warehouse des applications uniquement
+          href: data-warehouse-app-only-auth.md
         - name: Modèle de données de l’entrepôt de données
           href: reports-ref-data-model.md
           items:

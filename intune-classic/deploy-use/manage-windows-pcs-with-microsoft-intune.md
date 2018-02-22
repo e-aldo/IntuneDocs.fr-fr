@@ -14,11 +14,11 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 626f52ecb7c3e90f05cc06a7235ca96499654ce5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 773e4d551a8ea278c60107a279e29b83f0a1596f
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gérer des PC Windows en tant qu’ordinateurs via le logiciel client Intune
 
@@ -38,7 +38,7 @@ Intune prend en charge la gestion de 7 000 PC Windows au maximum en tant qu’
 
 **Matériel** : voici la configuration matérielle minimale requise pour l’installation du logiciel client Intune :
 
-|Situation|Plus d'informations|
+|Condition requise|Plus d’informations|
 |---------------|--------------------|
 |Réseau|Le PC sur lequel est installé le client doit disposer d’une connexion à Internet.|
 |Processeur et mémoire|Reportez-vous à la configuration requise du processeur et de la RAM pour le système d’exploitation du PC.|
@@ -46,7 +46,7 @@ Intune prend en charge la gestion de 7 000 PC Windows au maximum en tant qu’
 
 **Logiciel** : voici la configuration logicielle requise pour l’installation du logiciel client :
 
-|Situation|Plus d'informations|
+|Condition requise|Plus d’informations|
 |---------------|--------------------|
 |Système d'exploitation | Appareil Windows exécutant Windows Vista ou ultérieur. </br></br>**Les éditions familiales ne sont pas prises en charge.**|
 |Autorisations administratives|Le compte qui installe le logiciel client doit disposer des autorisations d’administrateur local sur cet ordinateur.|
@@ -59,7 +59,7 @@ En tant qu’administrateur Intune, vous pouvez mettre le logiciel client Intune
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Fonctionnalités de gestion des ordinateurs avec le logiciel client Intune
 Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intune, car cette approche offre davantage de fonctionnalités. Toutefois, vous pouvez également gérer des PC en utilisant le client logiciel Intune, qui fournit les fonctionnalités suivantes :
 
--   **[Gestion des mises à jour logicielles](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** : vous pouvez maintenir les PC à jour et gérer les périodes d’application des mises à jour.
+-   **[Gestion des mises à jour logicielles](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** : Vous pouvez maintenir les PC à jour et choisir à quel moment appliquer les mises à jour.
 
 -   **[Stratégie de Pare-feu Windows](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** : elle permet de garantir que tous les PC utilisés dans votre entreprise ont un Pare-feu Windows actif et correctement configuré.
 

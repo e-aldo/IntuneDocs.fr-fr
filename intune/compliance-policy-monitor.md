@@ -15,11 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Surveiller les stratégies de conformité d’appareils Intune
 
@@ -62,7 +62,7 @@ Il s’agit d’un graphique indiquant l’état de conformité globale de tous 
 
 -   **In Grace period (Dans la période de grâce) :** l’appareil a été ciblé par l’administrateur avec un ou plusieurs paramètres de stratégies de conformité d’appareils, mais l’utilisateur n’a pas encore appliqué les stratégies, ce qui signifie que l’appareil est non conforme. Il est toutefois dans la période de grâce définie par l’administrateur.
 
-    -   En savoir plus sur les actions en cas de non-conformité des appareils.
+    -   Découvrez plus d’informations sur les actions destinées aux appareils non conformes.
 
 -   **Appareil non synchronisé :** l’appareil n’a pas pu signaler son état de stratégie de conformité d’appareil pour l’une des raisons suivantes :
 
@@ -95,7 +95,7 @@ Si vous cliquez sur le **bouton Filtrer**, le filtre volant s’ouvre avec les o
 
     -   Zone de texte acceptant une chaîne de recherche libre
 <br></br>
--   Plateforme
+-   Plate-forme
 
     -   Android
 
@@ -115,7 +115,7 @@ Si vous cliquez sur le **bouton Filtrer**, le filtre volant s’ouvre avec les o
 
     -   In Grace period (Dans la période de grâce)
 
-    -   Inconnu
+    -   Unknown
 
     -   Erreur
 
@@ -133,7 +133,7 @@ Lorsque vous cliquez sur le paramètre de stratégie d’appareil lui-même, vou
 
 ### <a name="per-policy-device-compliance-report"></a>Rapport de conformité d’appareil par stratégie
 
-Ce rapport indique chaque stratégie de conformité d’appareil et le nombre total d’appareils dans chaque état de conformité. Le titre **Conformité aux stratégies** est disponible dans le **tableau de bord Conformité de l’appareil**. Il affiche toutes les stratégies créées précédemment par l’administrateur, les plateformes auxquelles la stratégie est appliquée, ainsi que le nombre d’appareils conformes et non conformes.
+Ce rapport indique chaque stratégie de conformité d’appareil et le nombre total d’appareils dans chaque état de conformité. Le titre **Conformité à la stratégie** est disponible dans le **tableau de bord Conformité de l’appareil**. Il affiche toutes les stratégies créées précédemment par l’administrateur, les plateformes auxquelles la stratégie s’applique, ainsi que le nombre d’appareils conformes et non conformes.
 
 ![Rapport de conformité d’appareil par stratégie](./media/idc-8.png)
 
@@ -143,7 +143,7 @@ Lorsque vous cliquez sur la vignette Conformité aux stratégies, puis sur une d
 
 ### <a name="per-setting-device-compliance-report"></a>Rapport de conformité d’appareil par paramètre
 
-Ce rapport vous permet d’afficher, en fonction du paramètre de conformité choisi, le nombre total d’appareils dans chaque état de conformité. Le titre **Définition de la conformité** est disponible dans le **tableau de bord Conformité de l’appareil**. Il affiche tous les paramètres de stratégie de conformité d’appareil à partir de toutes les stratégies de conformité d’appareil créées par l’administrateur, les plateformes auxquelles les paramètres de stratégie ont été appliqués et le nombre d’appareils non conformes.
+Ce rapport vous permet d’afficher, en fonction du paramètre de conformité choisi, le nombre total d’appareils dans chaque état de conformité. Le titre **Définition de la conformité** est disponible dans le **tableau de bord Conformité de l’appareil**. Il affiche tous les paramètres de toutes les stratégies de conformité d’appareil créées par l’administrateur, les plateformes auxquelles les paramètres de stratégie ont été appliqués et le nombre d’appareils non conformes.
 
 ![Rapport de conformité d’appareil par paramètre](./media/idc-10.png)
 

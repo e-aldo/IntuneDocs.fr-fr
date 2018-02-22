@@ -15,17 +15,23 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd21d6e87dfa142fe9e3ef4d9bbbc0be87eca9b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de restriction d’appareils dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Les restrictions de l’appareil vous permettent de contrôler un large éventail de paramètres et de fonctionnalités que vous gérez dans diverses catégories, dont la sécurité, le navigateur, le matériel et les paramètres de partage de données. Par exemple, vous pouvez créer un profil de restriction de l’appareil qui empêche les utilisateurs d’appareils iOS d’accéder à l’appareil photo.
+Les restrictions de l’appareil vous permettent de contrôler un large éventail de paramètres et de fonctionnalités que vous gérez dans diverses catégories comme :
+- Sécurité
+- Navigateur
+- Matériel
+- Paramètres de partage des données
+
+Par exemple, vous pouvez créer un profil de restriction de l’appareil qui empêche les utilisateurs d’appareils iOS d’accéder à l’appareil photo.
 
 Utilisez les informations de cette rubrique pour apprendre les notions de base sur la configuration de profils de restriction de l’appareil, puis lisez les autres rubriques pour chaque plateforme pour en savoir plus sur les caractéristiques des appareils.
 
@@ -53,6 +59,7 @@ Pour créer un profil d’appareil contenant des paramètres de restriction d’
     - [Windows 8.1](device-restrictions-windows-8-1.md)
     - [Paramètres Windows 10](device-restrictions-windows-10.md)
     - [Paramètres Windows 10 Collaboration](device-restrictions-windows-10-teams.md)
+    - [Paramètres Windows Holographic for Business](device-restrictions-windows-holographic.md)
     - [Paramètres Android for Work](device-restrictions-android-for-work.md)
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 

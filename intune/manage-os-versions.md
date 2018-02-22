@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: ede4be83b995bbb415184275c34f0e1b4feb4091
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78abef01e968b59b81a74dcd6b67df31dbf29def
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gérer les versions de système d’exploitation avec Intune
 Sur les plateformes mobiles et de bureau modernes, le rythme de publication des mises à jour importantes, des correctifs et des nouvelles versions est soutenu. Vous disposez d’outils pour gérer entièrement les mises à jour et les correctifs sur Windows, mais d’autres plateformes telles qu’iOS et Android exigent la participation de vos utilisateurs finaux.  Microsoft Intune offre des fonctionnalités qui vous permettent de structurer la gestion des versions de vos systèmes d’exploitation sur différentes plateformes.
@@ -35,7 +35,7 @@ Pour contrôler l’accès à leurs ressources, les organisations utilisent des 
 1. Spécification d’une version minimale du système d’exploitation pour veiller à ce que les utilisateurs finaux utilisent les plateformes actuelles et prises en charge dans l’organisation 
 2. Non-spécification d’une version maximale du système d’exploitation (aucune limite) ou indication de la dernière version validée dans l’organisation dans le but de tester en interne les nouvelles versions
 
-Pour plus d’informations, consultez [Définition des restrictions de type d’appareil](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions).
+Pour plus d’informations, consultez [Définition des restrictions de type d’appareil](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions).
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>Signalement des versions de système d’exploitation et respect des stratégies de conformité d’appareil MDM Intune
 Les stratégies de conformité d’appareil MDM Intune vous permettent d’effectuer les tâches suivantes : 
@@ -50,7 +50,7 @@ Comme les restrictions d’inscription, les stratégies de conformité d’appar
 ### <a name="in-practice"></a>Dans la pratique
 Les organisations utilisent des stratégies de conformité d’appareil pour les mêmes scénarios que les restrictions d’inscription. Grâce à ces stratégies, les utilisateurs de votre organisation exécutent des versions de système d’exploitation actuelles et validées. Si l’appareil d’un utilisateur final n’est pas conforme, vous pouvez bloquer son accès aux ressources de l’organisation par le biais de l’accès conditionnel jusqu’à ce que la version de son système d’exploitation soit comprise dans la plage autorisée par votre organisation. Si l’appareil d’un utilisateur final n’est pas conforme, l’utilisateur est notifié et se voit proposer une procédure à suivre pour récupérer l’accès.   
 
-Pour plus d’informations, consultez [Bien démarrer avec la conformité des appareils](https://docs.microsoft.com/en-us/intune/device-compliance-get-started).
+Pour plus d’informations, consultez [Bien démarrer avec la conformité des appareils](https://docs.microsoft.com/intune/device-compliance-get-started).
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Gestion des versions de système d’exploitation à l’aide de stratégies de protection des applications Intune    
 Les stratégies de protection des applications Intune et les paramètres d’accès de gestion des applications mobiles (MAM) vous permettent de spécifier la version minimale du système d’exploitation au niveau de la couche application. Vous pouvez ainsi informer vos utilisateurs et les encourager ou les obliger à mettre à jour leur système d’exploitation avec une version minimale spécifiée.
@@ -72,7 +72,7 @@ Pour plus d’informations, consultez [Guide pratique pour créer et affecter de
 Vous pouvez utiliser les fonctionnalités Intune décrites dans cet article pour migrer le système d’exploitation de votre organisation vers une nouvelle version selon la chronologie de votre choix. Les étapes suivantes fournissent un exemple de modèle de déploiement pour migrer vos utilisateurs du système d’exploitation v1 vers le système d’exploitation v2 en sept jours.
 - **Étape 1** : Utilisez des restrictions d’inscription pour exiger le système d’exploitation v2 comme version minimale lors de l’inscription de l’appareil. De cette façon, vous êtes certain que les nouveaux appareils des utilisateurs finaux sont conformes au moment de l’inscription.
 - **Étape 2a** : Utilisez des stratégies de protection des applications Intune pour avertir les utilisateurs de l’obligation d’utiliser le système d’exploitation v2 au moment de l’ouverture ou de la reprise de l’application.
-- **Étape 2b** : Utilisez des stratégies de conformité d’appareil pour exiger le système d’exploitation v2 comme version minimale d’un appareil conforme. Utilisez **Actions** pour gérer la non-conformité des appareils : autorisez une période de grâce de sept jours et envoyez aux utilisateurs finaux une notification par e-mail avec votre chronologie et vos exigences.
+- **Étape 2b** : Utilisez des stratégies de conformité d’appareil pour exiger le système d’exploitation v2 comme version minimale d’un appareil conforme. Utilisez des **Actions** en cas de non-conformité pour autoriser une période de grâce de sept jours et envoyer aux utilisateurs finaux une notification par e-mail avec votre chronologie et vos exigences.
   -  Les utilisateurs finaux sont ainsi informés par e-mail de la nécessité de mettre à jour les appareils existants par le biais du portail d’entreprise Intune et au moment de l’ouverture de l’application si elle est associée à une stratégie de protection des applications.
   - Vous pouvez exécuter un rapport de conformité pour identifier les utilisateurs non conformes. 
 - **Étape 3a** : Utilisez les stratégies de protection des applications Intune pour bloquer les utilisateurs au moment de l’ouverture ou de la reprise d’une application si l’appareil n’exécute pas le système d’exploitation v2.
@@ -82,6 +82,6 @@ Vous pouvez utiliser les fonctionnalités Intune décrites dans cet article pour
 ## <a name="next-steps"></a>Étapes suivantes
 Utilisez les ressources suivantes pour gérer les versions de système d’exploitation dans votre organisation : 
 
-- [Définir les restrictions de type d’appareil](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)
-- [Bien démarrer avec la conformité des appareils](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)
+- [Définir les restrictions de type d’appareil](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [Bien démarrer avec la conformité des appareils](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [Guide pratique pour créer et affecter des stratégies de protection des applications](https://docs.microsoft.com/intune/app-protection-policies)

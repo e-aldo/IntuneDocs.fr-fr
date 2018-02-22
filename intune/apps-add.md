@@ -3,10 +3,10 @@ title: "Guide pratique pour ajouter des applications à Microsoft Intune"
 titlesuffix: Azure portal
 description: "Ces procédures vous aident à préparer vos applications dans Intune à être affectées aux utilisateurs et appareils. \""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Guide pratique pour ajouter une application à Microsoft Intune
 
@@ -28,11 +28,12 @@ ms.lasthandoff: 01/25/2018
 Pour pouvoir affecter, surveiller, configurer ou protéger des applications, vous devez les ajouter à Intune. Intune prend en charge un large éventail de types d’application différents. Les options disponibles diffèrent pour chaque type d’application.
 
 Intune vous permet d’ajouter et d’affecter les types d’application suivants :
-| Type d’application                                  | Installation                                                                  | Mises à jour                       |
+| Type d’application                                  | Installation                                                                  | Updates                       |
 |------------------------------------------ |----------------------------------------------------------------------------   |---------------------------    |
 | Applications sur le web                           | Intune crée un raccourci vers l’application web sur l’écran d’accueil de l’appareil          | Les mises à jour de l’application sont automatiques     |
 | Applications écrites en interne (cœur de métier)  | Intune installe l’application sur l’appareil (vous fournissez le fichier d’installation)    | Vous devez mettre à jour l’application       |
 | Applications du Store                       | Intune installe l’application sur l’appareil                                       | Les mises à jour de l’application sont automatiques     |
+| Applications intégrées                        | Intune installe l’application sur l’appareil                                       | Les mises à jour de l’application sont automatiques     |
 
 
 En plus des applications web, Intune prend en charge les plateformes spécifiques suivantes pour les applications du Store et les applications métier :
@@ -49,6 +50,7 @@ En plus des applications web, Intune prend en charge les plateformes spécifique
     - Applications métier iOS
     - Applications métier Windows Phone (fichiers .xap)
     - Applications métier Windows (fichiers .msi uniquement)
+- Applications intégrées    
 
 >[!TIP]
 > Une application métier est une application que vous ajoutez à partir d’un fichier d’installation d’application. Par exemple, pour installer une application métier iOS, vous ajoutez l’application en choisissant **Application métier** comme **Type d’application** à partir du panneau **Ajouter une application**. Sélectionnez ensuite le fichier de package d’application (extension .ipa). Ces types d’applications sont généralement écrites en interne.
@@ -125,7 +127,7 @@ Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sé
 4. Dans la charge de travail **Mobile Apps**, choisissez **Installation** > **Catégories d’application**.
 5. Dans le panneau **Catégories d’application**, la liste des catégories actuelles s’affiche. Sélectionnez une des actions suivantes :
     - **Créer une catégorie** : sélectionnez **Ajouter** pour afficher le panneau **Créer une catégorie**, puis ajoutez un nom pour la nouvelle catégorie. Les noms peuvent être entrés dans une seule langue et ne sont pas traduits par Intune. Quand vous avez terminé, cliquez sur **Créer**.
-    - **Modifier une catégorie** : pour n’importe quelle catégorie dans la liste, choisissez « **...**  ». Cette option affiche un menu contextuel vous permettant d’**Épingler au tableau de bord** ou de **Supprimer** la catégorie.
+    - **Modifier une catégorie** : pour n’importe quelle catégorie dans la liste, choisissez «**...**  ». Cette option affiche un menu contextuel vous permettant d’**Épingler au tableau de bord** ou de **Supprimer** la catégorie.
 
 ## <a name="apps-added-automatically-by-intune"></a>Applications automatiquement ajoutées par Intune
 
@@ -147,4 +149,5 @@ Choisissez une des rubriques suivantes afin de savoir comment ajouter à Intune 
 - [Applications Windows Store](store-apps-windows.md)
 - [Application métier Windows](lob-apps-windows.md)
 - [Applications Office 365 pour Windows 10](apps-add-office365.md)
+- [Applications intégrées](apps-add-built-in.md)
 

@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f658784ae2dc462594c4ad99bc82b200b3544cb4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscrire votre appareil Windows 10 dans Intune
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 01/25/2018
 
     ![Se connecter](./media/W10-enroll-4-sign-in.png)
 
-Vous ne parvenez toujours pas à accéder à votre messagerie professionnelle ou scolaire, à vos fichiers ou à d’autres données ? Essayez d’y remédier en [résolvant les problèmes liés à votre compte](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Si cela ne fonctionne toujours pas, vous devez contacter le support technique de votre entreprise pour obtenir de l’aide.
+Vous ne parvenez toujours pas à accéder à votre messagerie professionnelle ou scolaire, à vos fichiers ou à d’autres données ? Essayez d’y remédier en [résolvant les problèmes liés à votre compte](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Si cela ne fonctionne toujours pas, vous devez contacter le support de votre entreprise pour obtenir de l’aide.
 
 Pour obtenir de l’aide auprès du support technique de votre entreprise, il vous suffit d’utiliser les informations de contact disponibles dans l’application Portail d’entreprise, laquelle vous permet également de rechercher et de télécharger les applications recommandées et obligatoires pour votre travail de tous les jours. L’application Portail d’entreprise est peut-être déjà installée sur votre appareil. Pour le vérifier rapidement, recherchez __Portail d’entreprise__ dans votre liste __Toutes les applications__.
 

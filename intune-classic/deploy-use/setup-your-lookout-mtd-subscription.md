@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54fa53c8f31171c3719f8368ad07cd33da5f2235
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 0e8a6e52b5bdb9df03af88988f2e4ac49ecf2ab8
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Configurer votre abonnement Lookout Mobile Threat Defense
 
@@ -131,7 +131,7 @@ Lookout Mobile Threat Defense classe les menaces mobiles de différents types. L
 ![capture d’écran de la page de stratégie montrant des menaces et des classifications](../media/mtp/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> Les niveaux de risque sont un aspect important de la solution Mobile Threat Defense car l’intégration d’Intune évalue la conformité de l’appareil en fonction de ces niveaux de risque lors de l’exécution. L’administrateur Intune définit une règle de stratégie qui identifie un appareil comme non conforme si celui-ci présente une menace active du niveau minimum configuré (**haut**, **moyen** ou **faible**). La stratégie de classification des menaces de Lookout Mobile Threat Defense évalue la conformité d’appareil dans Intune.
+> Les niveaux de risque sont un aspect important de la solution Mobile Threat Defense car l’intégration d’Intune évalue la conformité de l’appareil en fonction de ces niveaux de risque lors de l’exécution. L’administrateur Intune définit une règle de stratégie qui identifie un appareil comme non conforme si celui-ci a une menace active avec un niveau minimum (**haut**, **moyen** ou **faible**). La stratégie de classification des menaces de Lookout Mobile Threat Defense évalue la conformité d’appareil dans Intune.
 
 ## <a name="watching-enrollment"></a>Surveillance de l’inscription
 Une fois l’installation terminée, Lookout Mobile Threat Defense commence à rechercher dans Azure AD les appareils qui correspondent aux groupes d’inscription spécifiés.  Les informations sur les appareils inscrits se trouvent dans le module Appareils.  Les appareils s’affichent dans l’état initial En attente.  L’état de l’appareil change une fois que l’application Lookout for Work est installée, ouverte et activée sur l’appareil.  Pour plus d’informations sur le transfert (pushing) de l’application Lookout for Work sur l’appareil, consultez la rubrique [Configurer et déployer l’application Lookout for Work](configure-deploy-lookout-for-work-app.md).
