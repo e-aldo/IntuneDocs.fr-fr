@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d39d4deb00c7a79b856b82d57b042b0fdc585507
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e4940d0e02b670ec76906e75799bf9b0e8dedd8d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>Utiliser les stratégies de profil de configuration iOS mobile pour empêcher l’expiration de vos applications
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Les applications métier Apple iOS déployées sur les iPhone et les iPad intègrent un profil de configuration et du code signé avec un certificat. Lorsque l’application iOS s’exécute, iOS confirme son intégrité et applique les stratégies définies par le profil de configuration. Les validations suivantes se produisent :
+Les applications métier Apple iOS déployées sur les iPhone et les iPad intègrent un profil de provisionnement et du code signé avec un certificat. Lorsque l’application iOS s’exécute, iOS confirme son intégrité et applique les stratégies définies par le profil de configuration. Les validations suivantes se produisent :
 
 - **Intégrité du fichier d’installation** : iOS compare les détails des applications avec la clé publique du certificat de signature d’entreprise. Si ces éléments diffèrent, le contenu de l’application est susceptible d’avoir changé ; celle-ci n’est pas autorisée à s’exécuter.
 - **Mise en œuvre des fonctionnalités** : iOS tente d’appliquer les fonctionnalités de l’application à partir du profil de configuration d’entreprise (il ne s’agit pas de profils de configuration de développeurs) inclus dans le fichier d’installation de l’application (.ipa).
@@ -36,7 +36,7 @@ Après l’expiration du certificat, vous devez à nouveau signer l’applicatio
 
 
 
-## <a name="how-to-find-out-when-a-line-of-business-app-will-expire"></a>Comment savoir quand une application métier va expirer ?
+## <a name="how-to-find-out-when-a-line-of-business-app-will-expire"></a>Comment déterminer quand une application métier va expirer
 
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Applications** > **Applications**.
 2. Dans la liste des applications, recherchez la colonne **Date d’expiration** pour consulter la date d’expiration de l’application. Vous pouvez également définir la liste déroulante **Filtres** sur **Expiré/sur le point d’expirer** pour afficher uniquement les applications requérant votre attention.

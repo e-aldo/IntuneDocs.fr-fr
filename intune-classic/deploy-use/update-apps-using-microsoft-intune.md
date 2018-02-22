@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 14117098235decb55350dc6d1f1ba9c7475f40b8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b89b087c13847af06187cf3b6a046b9730a07826
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="update-apps-using-microsoft-intune"></a>Mettre à jour des applications à l'aide de Microsoft Intune
 
@@ -57,6 +57,6 @@ L’identificateur d’application est une propriété qui identifie une applica
 4.  Quand vous avez terminé, choisissez **Mettre à jour**.
 
 La prochaine fois que les appareils vérifient si des applications sont disponibles, l'application est automatiquement mise à jour vers la dernière version.
-Pour les applications installées à partir d’un package d’application (applications cœur de métier), l’application est automatiquement mise à niveau pour les déploiements obligatoires et disponibles, à condition que l’application ait le même identificateur.
+Pour les applications installées à partir d’un package d’application (applications métier), l’application est automatiquement mise à niveau pour les déploiements obligatoires et disponibles, à condition que l’application ait le même identificateur.
 
 Pour les applications déployées via un lien redirigeant vers un magasin, la mise à jour est gérée par le magasin d’origine de l’application.

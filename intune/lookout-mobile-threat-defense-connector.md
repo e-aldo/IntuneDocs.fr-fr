@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2647875ed6753cf437d4487faf0137e28bd40f43
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Connecteur de protection contre les menaces mobiles pour Lookout avec Intune
 
@@ -35,14 +35,14 @@ L'application mobile Lookout, **Lookout for work**, est installée et exécutée
 
 La stratégie de conformité d’Intune inclut une règle Lookout Mobile Threat Defense basée sur l’évaluation des risques Lookout. Quand cette règle est activée, Intune évalue si l’appareil est conforme à la stratégie activée.
 
-Si l’appareil est détecté non conforme, l’accès aux ressources comme Exchange Online et SharePoint Online peut être bloqué. Les utilisateurs d'appareils bloqués reçoivent une procédure à suivre pour résoudre le problème et accéder à nouveau aux ressources. Cette procédure est lancée à partir de l'application Lookout for work.
+Si l’appareil est considéré comme non conforme, l'accès aux ressources comme Exchange Online et SharePoint Online peut être bloqué. Les utilisateurs d'appareils bloqués reçoivent une procédure à suivre pour résoudre le problème et accéder à nouveau aux ressources. Cette procédure est lancée à partir de l'application Lookout for work.
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge
 Les plateformes suivantes sont prises en charge lorsque Lookout est inscrit dans Intune :
 * **Android 4.1 et versions ultérieures**
 * **iOS 8 et versions ultérieures** Pour plus d’informations sur les plate-formes et les langues prises en charge, consultez le [site Web de Lookout](https://personal.support.lookout.com/hc/articles/114094140253).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * Abonnement Microsoft Intune
 * Azure Active Directory
 * Abonnement d’entreprise à Lookout Mobile EndPoint Security  
@@ -61,7 +61,7 @@ Lorsque des applications malveillantes telles que des logiciels malveillants son
 
 **Blocage lorsque des applications malveillantes sont détectées :**
 
-![Diagramme illustrant une stratégie d’accès conditionnel interdisant l’accès quand l’appareil est évalué comme non conforme en raison de la présence d’applications malveillantes](./media/malicious-apps-blocked.png)
+![diagramme illustrant une stratégie d’accès conditionnel bloquant l’accès quand l’appareil est déterminé comme non conforme parce qu’il contient des applications malveillantes](./media/malicious-apps-blocked.png)
 
 **Accès accordé après correction :**
 

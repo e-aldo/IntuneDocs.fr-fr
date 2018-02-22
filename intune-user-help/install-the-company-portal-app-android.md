@@ -17,15 +17,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0072c3e11c679ea6c5d5cfe8e55d1894c4a5c0f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e63ce5f8f16fff7a758c7fa3ed935acc38b2337d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Installation de l’application Portail d’entreprise pour Android
 
-Le portail d’entreprise est une application vous donnant accès à des applications professionnelles ou scolaires, à des e-mails et à des connexions Internet. Cette application vous permet de protéger les informations de votre organisation assurant la sécurisation de votre appareil (par exemple, en actualisant les applications d’entreprise ou en garantissant que votre appareil se verrouille lui-même après un certain temps). Pour ce faire, l’application Portail d’entreprise vous aide à [inscrire votre appareil dans Microsoft Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
+Le portail d’entreprise est une application vous donnant accès à des applications professionnelles ou scolaires, à des e-mails et à des connexions Internet. Cette application vous permet de protéger les informations de votre organisation en sécurisant votre appareil (par exemple, en actualisant les applications d’entreprise ou en configurant votre appareil pour qu’il se verrouille lui-même après un certain temps). Pour ce faire, l’application Portail d’entreprise vous aide à [inscrire votre appareil dans Microsoft Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
 1.  Appuyez sur **Accueil** > **Play Store**.
 

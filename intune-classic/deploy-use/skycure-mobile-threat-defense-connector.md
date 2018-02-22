@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51f26d630537901ad39a215062f820a2c243e077
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Connecteur Skycure Mobile Threat Defense
 
@@ -35,7 +35,7 @@ Vous pouvez contrôler l’accès des appareils mobiles aux ressources de l’en
 
 -   Défense contre les vulnérabilités
 
-Vous pouvez configurer des stratégies d’accès conditionnel basées sur l’évaluation des risques Skycure par le biais des stratégies de conformité d’appareil Intune, permettant d’autoriser ou d’empêcher des appareils non conformes d’accéder aux ressources de l’entreprise en fonction des menaces détectées.
+Vous pouvez configurer des stratégies d’accès conditionnel basées sur l’évaluation des risques de Skycure par le biais des stratégies de conformité d’appareil Intune, et les utiliser pour autoriser ou empêcher les appareils non conformes d’accéder aux ressources de l’entreprise en fonction des menaces détectées.
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Comment Intune et Skycure aident-ils à protéger les ressources de votre entreprise ?
 
@@ -43,7 +43,7 @@ L’application mobile Skycure pour Android ou iOS capture le système de fichie
 
 La stratégie de conformité d’appareil Intune inclut une règle pour Skycure Mobile Threat Defense, basée sur l’évaluation des risques Skycure. Quand cette règle est activée, Intune évalue si l’appareil est conforme à la stratégie activée.
 
-Si l’appareil est détecté non conforme, l’accès aux ressources comme Exchange Online et SharePoint Online est bloqué. Les utilisateurs d’appareils bloqués reçoivent de l’aide à partir de l’application mobile Skycure pour résoudre le problème et récupérer l’accès aux ressources de l’entreprise.
+Si l’appareil est détecté comme non conforme, l’accès aux ressources comme Exchange Online et SharePoint Online est bloqué. Les utilisateurs d’appareils bloqués reçoivent de l’aide à partir de l’application mobile Skycure pour résoudre le problème et récupérer l’accès aux ressources de l’entreprise.
 
 Intune prend en charge deux modes d’intégration avec Skycure :
 

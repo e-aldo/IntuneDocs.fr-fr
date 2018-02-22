@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Définir des restrictions d’inscription
 
@@ -31,7 +31,7 @@ En tant qu’administrateur Intune, vous pouvez créer et gérer des restriction
 >Les restrictions d’inscription ne sont pas des fonctionnalités de sécurité. Des appareils compromis peuvent falsifier leur caractère. Ces restrictions représentent une barrière de meilleur effort pour les utilisateurs non malveillants.
 
 >[!NOTE]
->Les fonctionnalités de priorité et de restriction d’inscription appliquées aux groupes et mentionnées ci-dessous sont en cours de déploiement parmi la clientèle Intune. Tant que ce déploiement ne sera pas terminé, vous n’aurez peut-être pas accès aux fonctionnalités de groupe et de priorité. 
+>Les fonctionnalités de priorité et de restriction d’inscription appliquées aux groupes et mentionnées ci-dessous sont en cours de déploiement parmi la clientèle Intune. Tant que ce déploiement ne sera pas terminé, vous n’aurez peut-être pas accès aux fonctionnalités de groupe et de priorité.
 
 Parmi les restrictions d’inscription spécifiques que vous pouvez créer, citons les suivantes :
 
@@ -63,7 +63,7 @@ Les restrictions par défaut sont automatiquement fournies pour les restrictions
 8. Pour les restrictions de type d’appareil, cliquez sur **Plateformes** et **Configurations de plateforme** pour autoriser ou bloquer des plateformes et des versions.
 9. Cliquez sur **Affectations** > **+ Sélectionner des groupes**.
 10. Sous **Sélectionner des groupes**, sélectionnez un ou plusieurs groupes, puis cliquez sur **Sélectionner**. La restriction s’applique uniquement aux groupes auxquels elle est affectée. Si vous n’affectez pas une restriction à au moins un groupe, elle n’a aucun effet.
-11. Cliquez sur **Enregistrer**.
+11. Cliquez sur **Save**.
 12. La nouvelle restriction est créée avec une priorité juste au-dessus de la valeur par défaut. Vous pouvez [changer la priorité](#change-enrollment-restriction-priority).
 
 ## <a name="set-device-type-restrictions"></a>Définition des restrictions de type d'appareil
@@ -75,16 +75,16 @@ Pour changer les paramètres d’une restriction de type d’appareil, effectuez
 3. Choisissez **Inscription de l’appareil** > **Restrictions d’inscription**.
 4. Sous **Restrictions de type d’appareil**, choisissez la restriction à définir.
 5. Sous le nom de la restriction (**Tous les utilisateurs** pour la restriction par défaut), sélectionnez **Plateformes**. Choisissez **Autoriser** ou **Bloquer** pour chaque plateforme répertoriée.
-6. Cliquez sur **Enregistrer**.
+6. Cliquez sur **Save**.
 7. Sous le nom de la restriction (**Tous les utilisateurs** pour la restriction par défaut), sélectionnez **Configurations de plateforme** et sélectionnez les **Versions** minimale et maximale pour les plateformes répertoriées. Les versions prises en charge incluent les suivantes :
   - Android et Android for Work prennent en charge major.minor.rev.build.
   - iOS prend en charge major.minor.rev.
   - Windows prend en charge major.minor.rev.build pour Windows 10 uniquement.
-  Les versions du système d’exploitation ne s’appliquent pas aux appareils Apple inscrits par le biais du Programme d’inscription des appareils, d’Apple School Manager ou de l’application Apple Configurator. 
+  Les versions du système d’exploitation ne s’appliquent pas aux appareils Apple inscrits par le biais du Programme d’inscription des appareils, d’Apple School Manager ou de l’application Apple Configurator.
 8. Spécifiez s’il faut **Autoriser** ou **Bloquer** les appareils **personnels** pour chaque plateforme répertoriée.
 
     ![Capture d’écran de l’espace de travail de restrictions sur les appareils avec les configurations de plateforme d’appareils par défaut indiquant les paramètres de propriété personnelle configurés.](media/device-restrictions-platform-configurations.png)
-9. Cliquez sur **Enregistrer**.
+9. Cliquez sur **Save**.
 
 >[!NOTE]
 >- Si vous bloquez l’inscription des appareils Android personnels, les appareils Android for Work personnels peuvent quand même être inscrits.
@@ -101,17 +101,21 @@ Pour changer les paramètres d’une restriction de limite d’appareils, effect
 4. Sous **Restrictions de type d’appareils**, choisissez la restriction à définir.
 5. Choisissez **Limite d’appareils** puis, dans la liste déroulante, sélectionnez le nombre maximal d’appareils qu’un utilisateur peut inscrire.
     ![Capture d’écran du panneau des restrictions de limite d’appareils avec les restrictions de limite d’appareils.](./media/device-restrictions-limit.png)
-6. Cliquez sur **Enregistrer**.
+6. Cliquez sur **Save**.
+
+Votre utilisateur final reçoit une notification qui lui indique qu’il a atteint le nombre limite d’appareils inscrits. Par exemple, sur iOS, la notification ressemble à ce qui suit :
+
+![Capture d’écran de la notification du nombre limite d’appareils iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
 ## <a name="change-enrollment-restriction-priority"></a>Changer la priorité des restrictions d’inscription
 
-Une priorité est utilisée quand un utilisateur existe dans plusieurs groupes auxquels des restrictions sont affectées. Les utilisateurs sont uniquement soumis à la restriction avec la priorité le plus élevée affectée à un groupe dans lequel ils se trouvent. Par exemple, Jean est dans un groupe A affecté à des restrictions de priorité 5 et dans un groupe B affecté à des restrictions de priorité 2. Jean n’est soumis qu’aux restrictions de priorité 2. 
+Une priorité est utilisée quand un utilisateur existe dans plusieurs groupes auxquels des restrictions sont affectées. Les utilisateurs sont uniquement soumis à la restriction avec la priorité le plus élevée affectée à un groupe dans lequel ils se trouvent. Par exemple, Jean est dans un groupe A affecté à des restrictions de priorité 5 et dans un groupe B affecté à des restrictions de priorité 2. Jean n’est soumis qu’aux restrictions de priorité 2.
 
 Quand vous créez une restriction, elle est ajoutée à la liste juste au-dessus de la valeur par défaut.
 
-L’inscription d’appareil inclut les restrictions par défaut pour les restrictions de type d’appareil et de limite d’appareils. Ces deux restrictions s’appliquent à tous les utilisateurs, sauf si elles sont remplacées par des restrictions avec une priorité plus élevée. 
+L’inscription d’appareil inclut les restrictions par défaut pour les restrictions de type d’appareil et de limite d’appareils. Ces deux restrictions s’appliquent à tous les utilisateurs, sauf si elles sont remplacées par des restrictions avec une priorité plus élevée.
 
-Vous pouvez changer la priorité d’une restriction différente de celle par défaut. 
+Vous pouvez changer la priorité d’une restriction différente de celle par défaut.
 
 **Pour changer la priorité d’une restriction**
 
@@ -120,8 +124,3 @@ Vous pouvez changer la priorité d’une restriction différente de celle par d�
 3. Choisissez **Inscription de l’appareil** > **Restrictions d’inscription**.
 4. Pointez sur la restriction dans la liste des priorités.
 5. À l’aide des trois points verticaux, faites glisser la priorité à la position souhaitée dans la liste.
-
-
-
-
-

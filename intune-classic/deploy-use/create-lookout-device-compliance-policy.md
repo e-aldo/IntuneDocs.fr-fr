@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ee11809349999a795aca0a373724ce18eedbe65
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f649227c6ad49cd9c788e75097bc4a5eeb71f350
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Créer une stratégie de conformité des appareils Lookout dans Intune
 
@@ -41,12 +41,12 @@ Dans le cadre de la configuration de Lookout Mobile Threat Defense, dans la [con
 2. Sélectionnez le **Niveau de menace maximal autorisé** :
   * **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut.  L'appareil ne peut pas avoir de menace présente et accéder aux ressources de l’entreprise.  Si des menaces sont détectées, l’appareil est évalué comme non conforme.  
   * **Faible** : l’appareil est conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
-  * **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
+  * **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées, l’appareil est déterminé comme non conforme.
   * **Élevé** : cette option est la moins sécurisée. Cela autorise tous les niveaux de menace et utilise la protection contre les menaces mobiles Lookout uniquement à des fins de création de rapports.
 
 ![capture d’écran montrant l’option de niveau de menace pour configurer la règle de protection de l’appareil contre les menaces](../media/mtp/mtp-compliance-policy-setting.png)
 
-Si vous créez des stratégies d’accès conditionnel pour Office 365 et d’autres services, l’évaluation de la conformité est effectuée, ce qui signifie que l’accès à ces services est bloqué pour les appareils non conformes tant que la menace n’est pas résolue.
+Si vous créez des stratégies d’accès conditionnel pour Office 365 ou d’autres services, l’évaluation de la conformité est effectuée et les appareils non conformes ne peuvent pas accéder à ces services tant que la menace n’est pas résolue.
 
 ## <a name="monitor-device-threats"></a>Surveillance des menaces sur les appareils
 Pour voir l’état de conformité d’un appareil, ouvrez la [console d'administration Intune](https://manage.microsoft.com) et consultez **Tous les appareils**.

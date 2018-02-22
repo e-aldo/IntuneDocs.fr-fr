@@ -15,23 +15,23 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b21b06dd255cdc875242afe1fd6228f5db3887dd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8f26cf20b4e1168fbced1df88886343f41824158
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connecteur Zimperium Mobile Threat Defense avec Intune
 
 Vous pouvez contrôler l’accès des appareils mobiles aux ressources de l’entreprise à l’aide d’un accès conditionnel basé sur une évaluation des risques effectuée par Zimperium,une solution MTD qui s’intègre à Microsoft Intune. Le risque est évalué en fonction des données de télémétrie recueillies par les appareils exécutant l’application Zimperium.
 
-Vous pouvez configurer des stratégies d’accès conditionnel basées sur l’évaluation des risques de Zimperium activée par le biais des stratégies de conformité des appareils Intune, qui permettent d’autoriser ou de bloquer l’accès des appareils non conformes aux ressources de l’entreprise en fonction des menaces détectées.
+Vous pouvez configurer des stratégies d’accès conditionnel basées sur l’évaluation des risques de Zimperium activée par le biais des stratégies de conformité des appareils Intune, et les utiliser pour autoriser ou bloquer l’accès des appareils non conformes aux ressources de l’entreprise en fonction des menaces détectées.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Comment Intune et Zimperium aident-ils à protéger les ressources de votre entreprise ?
 
 L’application Zimperium pour Android et iOS capture le système de fichiers, la pile réseau, les données de télémétrie de l’appareil et des applications quand elles sont disponibles, puis les envoie au service cloud Zimperium pour évaluer les risques de l’appareil face aux menaces mobiles.
 
-La stratégie de conformité des appareils Intune inclut une règle pour Zimperium Mobile Threat Defense, basée sur l’évaluation des risques Zimperium. Quand cette règle est activée, Intune évalue si l’appareil est conforme à la stratégie activée. Si l’appareil est détecté non conforme, les utilisateurs sont interdits d’accès aux ressources de l’entreprise comme Exchange Online et SharePoint Online. Les utilisateurs reçoivent aussi des conseils de l’application Zimperium installée sur leurs appareils pour résoudre le problème et rétablir l’accès aux ressources de l’entreprise.
+La stratégie de conformité des appareils Intune inclut une règle pour Zimperium Mobile Threat Defense, basée sur l’évaluation des risques Zimperium. Quand cette règle est activée, Intune évalue si l’appareil est conforme à la stratégie activée. Si l’appareil est détecté comme non conforme, les utilisateurs ne peuvent pas accéder aux ressources de l’entreprise comme Exchange Online et SharePoint Online. Les utilisateurs reçoivent aussi des conseils de l’application Zimperium installée sur leurs appareils pour résoudre le problème et rétablir l’accès aux ressources de l’entreprise.
 
 ## <a name="sample-scenarios"></a>Exemples de scénario
 
@@ -85,7 +85,7 @@ Détectez les menaces, par exemple les interceptions (**Man-in-the-middle**), su
 
 -   **iOS 8 et versions ultérieures**
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 -   Azure Active Directory Premium
 

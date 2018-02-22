@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3637ad08e097e4edcd527b3603dd00e1eac47f71
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres VPN dans Microsoft Intune
 
@@ -33,12 +31,12 @@ Par exemple, supposons que vous voulez approvisionner tous les appareils iOS en 
 
 Vous pouvez créer des profils VPN à l’aide des types de connexions suivants :
 
-|Type de connexion|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Type de connexion|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Pulse Secure|Oui|Oui|Oui|Oui|Oui|Oui|
 |Cisco (IPSec)|Non|Oui|Non|Non|Non|Non|
 |Citrix|Oui|Oui|Non|Non|Non|Oui|
-|Client F5 Edge|Oui|Oui|Oui|Oui|Oui|Oui|
+|Client F5 Microsoft Edge|Oui|Oui|Oui|Oui|Oui|Oui|
 |Dell SonicWALL Mobile Connect|Oui|Oui|Oui|Oui|Oui|Oui|
 |Check Point Capsule VPN|Oui|Oui|Oui|Oui|Oui|Oui|
 |Cisco AnyConnect|Oui|Oui|Oui|Non|Non|Non|
@@ -77,7 +75,7 @@ Découvrez comment créer des profils VPN personnalisés à l’aide des paramè
     - [Paramètres macOS](vpn-settings-macos.md)
     - [Paramètres Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
     - [Paramètres Windows 8.1](vpn-settings-windows-8-1.md)
-    - [Paramètres Windows 10](vpn-settings-windows-10.md)
+    - [Paramètres Windows 10](vpn-settings-windows-10.md) (y compris Windows Holographic for Business)
 8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.

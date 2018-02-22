@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Résoudre les problèmes d’accès conditionnel
 
@@ -90,7 +90,7 @@ Un appareil peut être bloqué au niveau de l’accès conditionnel sans recevoi
 - Examinez les journaux du connecteur Exchange pour l’activité sendemail et recherchez les éventuelles erreurs. Un exemple de la commande à rechercher est SendEmail à partir du compte de notification jusqu’à useremail.
 - Avant que le connecteur Exchange bloque l’appareil, il envoie l’e-mail d’activation. Si l’appareil est hors connexion, il peut ne pas recevoir l’e-mail d’activation. Vérifiez si le client d’e-mail de l’appareil récupère les e-mails avec Push au lieu de Poll, car cela pourrait également expliquer que l’utilisateur ne reçoit pas l’e-mail. Basculez sur Poll et regardez si l’appareil reçoit l’e-mail.
 
-## <a name="non-compliant-device-not-blocked"></a>Appareil non conforme non bloqué
+## <a name="noncompliant-device-not-blocked"></a>Appareil non conforme non bloqué
 
 Si vous constatez qu’un appareil continue à avoir un accès alors qu’il n’est pas conforme, procédez comme suit.
 

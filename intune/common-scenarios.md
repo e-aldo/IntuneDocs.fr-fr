@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9cd5b0cddedc70c001ed8c50ecfbbc3334462f9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 040076248629faa40745b16f90b694331c60a9b1
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Utilisations courantes d’Intune
 
@@ -34,7 +34,7 @@ Voici quelques courtes introductions au six scénarios les plus courants qui s�
 >Vous souhaitez savoir comment Microsoft IT utilise Intune pour permettre aux employés de Microsoft d’accéder aux ressources d’entreprise sur leurs appareils mobiles tout en garantissant la protection des données d’entreprise ? [Lisez cette étude de cas technique](https://www.microsoft.com/itshowcase/Article/Content/588) pour découvrir en détail comment Microsoft IT utilise Intune et d’autres services pour gérer les identités, appareils, applications et données.  
 
 >[!IMPORTANT]
->Nous voulons vérifier que les appareils mobiles sont à jour vis-à-vis des récentes attaques du programme malveillant « Trident » sur les appareils iOS. Nous avons donc publié un billet de blog intitulé [S’assurer que les appareils mobiles sont à jour à l’aide de Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Ce billet fournit des informations sur les différentes façons dont Intune peut vous aider à protéger vos appareils et à les tenir à jour.
+>Nous voulons vérifier que les appareils mobiles sont à jour compte tenu des récentes attaques du programme malveillant « Trident » sur les appareils iOS. Nous avons donc publié un billet de blog intitulé [Vérifier que les appareils mobiles sont à jour à l’aide de Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Ce billet fournit des informations sur les différentes façons dont Intune peut vous aider à protéger vos appareils et les tenir à jour.
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Protection de votre messagerie et de vos données locales pour qu’elles soient accessibles en toute sécurité par les appareils mobiles
 La plupart des stratégies de mobilité d’entreprise commencent par un plan pour permettre aux employés munis d’appareils mobiles qui se connectent à Internet d’accéder de manière sécurisée à leurs e-mails. De nombreuses organisations hébergent encore des données et des serveurs d’applications locaux, tels que Microsoft Exchange, sur leur réseau d’entreprise.
@@ -44,7 +44,7 @@ Intune et Microsoft Enterprise Mobility + Security (EMS) fournissent une [soluti
 
 Intune prend également en charge l’activation de l’accès aux applications mobiles qui nécessitent un accès sécurisé aux données locales, comme un serveur d’applications métier. Pour cela, vous utilisez généralement des [certificats gérés par Intune](certificates-configure.md) ([portail classique](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) pour le contrôle d’accès, combinés à une passerelle VPN standard ou à un proxy dans le périmètre (tel que le Proxy d’application Microsoft Azure Active Directory). 
 
-Dans ce cas, la seule façon d’accéder à des données d’entreprise consiste à inscrire l’appareil pour la gestion. Une fois que les appareils sont inscrits, le système de gestion vérifie qu’ils sont conformes à vos stratégies avant de leur permettre d’accéder aux données d’entreprise. De plus, [l’outil de création de package de restrictions d’application et le SDK d’application](apps-prepare-mobile-application-management.md) Intune permettent de limiter les données accessibles de votre application métier pour ne pas transmettre des données d’entreprise à des applications ou services de particuliers.
+Dans ce cas, la seule façon d’accéder à des données d’entreprise consiste à inscrire l’appareil pour la gestion. Une fois que les appareils sont inscrits, le système de gestion vérifie qu’ils sont conformes à vos stratégies avant de leur permettre d’accéder aux données d’entreprise. Par ailleurs, [l’outil de création de package de restrictions d’application et le SDK d’application](apps-prepare-mobile-application-management.md) Intune permettent de limiter les données accessibles de votre application métier pour ne pas transmettre les données d’entreprise à des applications ou services de particuliers.
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 

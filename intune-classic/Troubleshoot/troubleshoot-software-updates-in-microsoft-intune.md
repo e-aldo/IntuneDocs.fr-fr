@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a3f5d94d5b9b902c4b07939e822076215c01d7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 66cca236d2779fb9a7a01ad6aa10a57edf8ab657
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Résoudre les problèmes de mise à jour logicielle dans Microsoft Intune
 
@@ -251,7 +251,7 @@ Le tableau suivant répertorie les codes d’erreur de l’**agent de mise à jo
 - Ils subissent une utilisation élevée du processeur.
 - L’installation des applications via le portail Intune est lente.
 - Microsoft Intune Center déclenche l’erreur suivante : *Une erreur s’est produite lors de la mise à jour de votre ordinateur. Erreur détectée : Code 0x800705b4*.
-- Le champ d’état dans la Console d’administration Intune > Groupes > Tous les appareils affiche ceci : *Un ou plusieurs agents installés sur cet ordinateur signalent des erreurs. Les informations de cet ordinateur sont peut-être incorrectes ou non à jour*.
+- Le champ d’état dans la Console d’administration Intune > Groupes > Tous les appareils affiche ceci : *Un ou plusieurs agents installés sur cet ordinateur signalent des erreurs. Les informations de cet ordinateur sont peut-être incorrectes ou obsolètes*.
 
 Ce problème peut se produire si des mises à jour remplacées (des mises à jour qui ont été remplacées par une autre mise à jour) n’ont pas été suspendues pendant une période prolongée. Au cours de certains processus, tels que l’installation d’une application, Windows vérifie toutes les mises à jour remplacées dans l’ordre afin que les mises à jour et celles qui leur succèdent puissent être correctement mappées. Si la liste des mises à jour remplacées devient trop importante, cette tâche de vérification peut entraîner une utilisation élevée du processeur en raison de la charge de traitement et du temps requis. Ce problème affecte principalement les clients qui exécutent Windows 7 en raison du grand nombre de mises à jour remplacées qui sont disponibles pour Windows 7. Windows 8 et les systèmes d’exploitation ultérieurs n’ont pas autant de mises à jour remplacées et par conséquent, ne sont pas vulnérables à ce problème.
 

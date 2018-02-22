@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a37497dcf015a611e8b770b5a28e519c0e397c87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrire des appareils Android
 
@@ -29,7 +29,7 @@ En votre qualité d’administrateur Intune, vous pouvez gérer des appareils An
 
 Les appareils qui exécutent Samsung Knox Standard sont pris en charge pour la gestion des utilisateurs multiples par Intune. Cela signifie que les utilisateurs finaux peuvent se connecter et se déconnecter d’un appareil avec leurs informations d’identification Azure AD. L’appareil est géré de manière centralisée, qu’il soit en cours d’utilisation ou non. Quand les utilisateurs se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.
 
-## <a name="prerequisite"></a>Composant requis
+## <a name="prerequisite"></a>Prérequis
 
 Pour préparer la gestion des appareils mobiles, vous devez définir l’autorité de gestion des appareils mobiles (MDM) sur **Microsoft Intune**. Consultez la page [Configurer l’autorité MDM](mdm-authority-set.md) pour obtenir des instructions. Cet élément ne se définit qu’une seule fois, quand vous configurez pour la première fois Intune pour la gestion des appareils mobiles.
 
@@ -49,6 +49,9 @@ Si vous inscrivez des appareils Android for Work à l’aide d’un compte de [G
 
 ## <a name="add-android-for-work-binding-for-intune"></a>Ajouter une liaison Android for Work pour Intune
 
+> [!NOTE]
+> En raison de l’interaction entre les domaines Google et Microsoft, cette étape peut nécessiter un réglage des paramètres de votre navigateur.  Vérifiez que « portal.azure.com » et « play.google.com » sont dans la même zone de sécurité dans votre navigateur.
+
 1. **Configurer la gestion des appareils mobiles Intune**<br>
 Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en définissant **Microsoft Intune** comme [autorité de gestion des appareils mobiles](mdm-authority-set.md).
 2. **Configurer une liaison Android for Work**<br>
@@ -64,11 +67,10 @@ Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles 
    Fournissez le nom de votre société comme **Nom d’organisation**. Pour **Enterprise mobility management (EMM) provider** (Fournisseur de gestion de la mobilité d’entreprise), **Microsoft Intune** doit être affiché. Acceptez le contrat Android for Work, puis choisissez **Confirmer**. Votre demande va être traitée.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Spécifier les paramètres d’inscription Android for Work
-   Android for Work n’est pris en charge que sur certains appareils Android. Consultez la rubrique de Google [Conditions requises par Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"). Tout appareil qui prend en charge Android for Work prend également en charge la gestion Android conventionnelle. Intune vous permet de spécifier comment les appareils prenant en charge Android for Work doivent être gérés :
+Android for Work n’est pris en charge que sur certains appareils Android. Consultez la rubrique de Google [Conditions requises par Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Tout appareil qui prend en charge Android for Work prend également en charge la gestion Android conventionnelle. Intune vous permet de spécifier la façon dont les appareils qui prennent en charge Android for Work doivent être gérés dans [Restrictions d’inscription](enrollment-restrictions-set.md).
 
-   - **Gérer tous les appareils comme Android**. Tous les appareils Android, notamment ceux qui prennent en charge Android for Work, sont inscrits comme appareils Android conventionnels.
-   - **Gérer les appareils pris en charge comme Android for Work**. Tous les appareils qui prennent en charge Android for Work sont inscrits comme appareils Android for Work. Tout appareil Android qui ne prend pas en charge Android for Work est inscrit comme appareil Android conventionnel.
-   - **Gérer les appareils pris en charge pour les utilisateurs uniquement dans ces groupes comme Android for Work**. Vous pouvez cibler la gestion Android for Work sur un ensemble limité d’utilisateurs. Seuls les membres des groupes sélectionnés qui inscrivent un appareil prenant en charge Android for Work sont inscrits comme appareils Android for Work. Tous les autres sont inscrits comme appareils Android. Cette option est utile lors des phases pilotes Android for Work.
+- **Bloquer (défini par défaut)** : Tous les appareils Android, notamment ceux qui prennent en charge Android for Work, sont inscrits comme des appareils Android conventionnels.
+- **Autoriser** : Tous les appareils qui prennent en charge Android for Work sont inscrits comme des appareils Android for Work. Tout appareil Android qui ne prend pas en charge Android for Work est inscrit comme appareil Android conventionnel.
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Approuver l’application Portail d’entreprise dans le Google Play Store géré
 Vous devez approuver l’application Portail d’entreprise pour Android sur le Google Play Store géré pour être sûr qu’elle reçoive les mises à jour automatiques d’applications. Si vous ne l’approuvez pas, le portail d’entreprise finit par devenir obsolète et risque de ne pas recevoir les correctifs de bogues importants ou les nouvelles fonctionnalités publiés par Microsoft.

@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 449eaf2a22ca3a700eda2385af05a56e406f0c15
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Configurer Intune Certificate Connector pour le service web Symantec PKI Manager
 
@@ -33,7 +33,7 @@ Le service web Symantec PKI Manager est appelé AC Symantec tout au long de cet 
 * certificats SCEP à partir d’une AC Microsoft ;
 * certificats PKCS à partir d’une AC Symantec.
 
-Si vous souhaitez utiliser Intune Certificate Connector pour les AC Microsoft et Symantec, vous devez au préalable effectuer la configuration d’Intune Certificate Connector pour l’AC Microsoft, puis suivre ces étapes afin de le configurer pour l’AC Symantec.  Pour plus d’informations sur la configuration d’Intune Certificate Connector pour une AC Microsoft, consultez [Guide pratique pour configurer des certificats dans Microsoft Intune](certificates-configure.md).
+Si vous souhaitez utiliser Intune Certificate Connector pour les AC Microsoft et Symantec, vous devez au préalable effectuer la configuration Intune Certificate Connector pour l’AC Microsoft, puis suivre ces étapes afin de le configurer pour l’AC Symantec.  Pour plus d’informations sur la configuration d’Intune Certificate Connector pour une AC Microsoft, consultez [Guide pratique pour configurer des certificats dans Microsoft Intune](certificates-configure.md).
 
 ## <a name="prepare-to-install-intune-certificate-connector"></a>Préparer l’installation d’Intune Certificate Connector
 
@@ -112,7 +112,7 @@ Suivez les étapes ci-dessous pour récupérer le certificat d’autorisation d�
 
    b. Entrez le nom convivial du certificat dans la zone de texte correspondante.
 
-   c. Cliquez sur **Continuer**.
+   c. Cliquez sur **Continue** (Continuer).
 
       Un lien de téléchargement du certificat d’autorité d’inscription s’affiche.
 
@@ -190,7 +190,7 @@ Par défaut, Intune Certificate Connector est installé à l’emplacement `%Pro
    value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
    ```
 
-    b. Enregistrez le fichier, puis fermez-le.
+    b. Enregistrez et fermez le fichier.
 
 2. Ouvrez services.msc.
 
@@ -292,12 +292,12 @@ L’OID du profil de certificat est associé à un modèle de profil de certific
 
 ### <a name="pkcs-certificate-profile-supported-attributes"></a>Attributs pris en charge par les profils de certificats PKCS
 
-|Attribut | Formats pris en charge par Intune | Formats pris en charge par l’AC Symantec Cloud | Résultat |
+|Attribut | Formats pris en charge par Intune | Formats pris en charge par l’AC Symantec Cloud | Result |
 | --- | --- | --- | --- |
 | Nom de sujet |Intune prend en charge le nom de l’objet aux formats suivants uniquement : <br><br> 1. Nom commun <br> 2. Nom commun (adresse e-mail incluse) <br> 3. Nom commun comme adresse e-mail <br><br> Voici un exemple : <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | L’AC Symantec prend en charge des attributs supplémentaires.  Si vous souhaitez sélectionner des attributs supplémentaires, ils doivent avoir des valeurs fixes dans le modèle de profil de certificat Symantec.| Nous utilisons le Nom commun ou l’adresse e-mail de la demande de certificat PKCS. <br><br> La moindre différence de sélection d’attributs entre le profil de certificat Intune et le modèle de profil de certificat Symantec empêche l’émission de certificats par l’AC Symantec.|
 | SAN | Intune prend en charge uniquement les valeurs de champs SAN suivantes : <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName (valeur encodée) | L’AC Symantec Cloud prend également en charge ces paramètres. Si vous souhaitez sélectionner des attributs supplémentaires, ils doivent avoir des valeurs fixes dans le modèle de profil de certificat Symantec. <br><br> AltNameTypeEmail : Si ce type est introuvable dans le champ SAN, il utilise la valeur d’AltNameTypeUpn.  Si AltNameTypeUpn est également introuvable dans le champ SAN, il utilise la valeur Nom de l’objet, à condition que celle-ci soit au format adresse e-mail.  Si elle est elle aussi introuvable, Intune Certificate Connector ne parvient pas à émettre les certificats. <br><br> Ex. : `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn : Si ce type est introuvable dans le champ SAN, il utilise la valeur d’AltNameTypeEmail. Si AltNameTypeEmail est également introuvable dans le champ SAN, il utilise la valeur Nom de l’objet, à condition que celle-ci soit au format adresse e-mail.  Si elle est elle aussi introuvable, Intune Certificate Connector ne parvient pas à émettre les certificats.  <br><br> Ex. : `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName : Si ce type est introuvable dans le champ SAN, Intune Certificate Connector ne parvient pas à émettre les certificats. <br><br> Ex. : `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **Remarque importante :** La valeur de ce champ est prise en charge par l’AC Symantec uniquement dans un format encodé (valeur hexadécimale). Quelle qu’elle soit, Intune Certificate Connector la convertit donc au codage base 64 avant d’envoyer la demande de certificat. **Intune Certificate Connector ne vérifie pas si cette valeur est déjà encodée.** | Aucune |
 
-## <a name="troubleshooting"></a>Dépannage
+## <a name="troubleshooting"></a>Résolution des problèmes
 
 Les journaux du service Intune Certificate Connector sont disponibles à l’emplacement `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\Logs\Logs` sur l’ordinateur NDES Connector. Ouvrez-les dans [SvcTraceViewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe) et recherchez les messages d’erreur et d’exception.
 

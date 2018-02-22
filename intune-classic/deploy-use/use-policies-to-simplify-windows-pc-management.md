@@ -14,11 +14,11 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d67bf344be7a20853e21cf580939f1156d1a723
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: dc32063a952b198e830f061e0d8d3c0598a631d8
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Utiliser des stratégies pour simplifier la gestion des PC Windows
 
@@ -52,7 +52,7 @@ Microsoft Intune Center est installé sur tous les ordinateurs gérés. Vous pou
 
 Consultez les ressources suivantes pour plus d’informations sur les stratégies et les paramètres que vous pouvez configurer pour les PC Windows :
 
-- [Tenir à jour des PC Windows avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) : ces stratégies amènent les ordinateurs gérés à rechercher et télécharger les mises à jour logicielles auprès de Microsoft et de tiers. Ces mises à jour ne comprennent pas les mises à niveau du système d’exploitation (par exemple, la mise à niveau de Windows 7 vers Windows 10, ni les mises à niveau d’une version de Windows 10 vers une version ultérieure).
+- [Maintenir à jour des PC Windows avec les mises à jour logicielles dans Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) : Ces stratégies permettent aux ordinateurs gérés de rechercher et télécharger les mises à jour logicielles auprès de Microsoft et de tiers. Ces mises à jour ne comprennent pas les mises à niveau du système d’exploitation (par exemple, la mise à niveau de Windows 7 vers Windows 10, ni les mises à niveau d’une version de Windows 10 vers une version ultérieure).
 
 - [Mieux sécuriser les PC Windows avec Endpoint Protection pour Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) : ces paramètres incluent les planifications d’analyse et les mesures à prendre quand un programme malveillant est détecté.
 
