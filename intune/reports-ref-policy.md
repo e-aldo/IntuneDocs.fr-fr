@@ -5,20 +5,19 @@ keywords: "Entrepôt de données Intune"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b3178b8469b5c92e4124ab00f9a635e63568d77
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="reference-for-policy-entities"></a>Informations de référence sur les entités de stratégie
 
@@ -61,22 +60,22 @@ L’entité **DeviceConfigurationProfileDeviceActivity** répertorie le nombre d
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
 | DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
-| En attente |Nombre d’appareils uniques en état d’attente. |123 |
+| Pending |Nombre d’appareils uniques en état d’attente. |123 |
 | Réussi |Nombre d’appareils uniques en état de réussite. |12 |
 | Erreur |Nombre d’appareils uniques en état d’erreur. |10 |
-| Échec |Nombre d’appareils uniques en état d’échec. |2 |
+| Failed |Nombre d’appareils uniques en état d’échec. |2 |
 
-## <a name="userconfiguration"></a>UserConfiguration
 
-L’entité **UserConfigurationProfileDeviceActivity** répertorie le nombre d’utilisateurs, par jour, dans un état de réussite, d’attente, d’échec ou d’erreur. Le nombre reflète les profils de configuration d’appareil affectés à l’entité. Par exemple, si toutes les stratégies affectées à un utilisateur sont dans un état de réussite, le compteur de réussite augmente d’une unité pour ce jour-là. Si deux profils sont affectés à un utilisateur, l’un dans un état de réussite et l’autre dans un état d’erreur, nous comptons l’utilisateur comme étant dans un état d’erreur.  L’entité **UserConfigurationProfileDeviceActivity** répertorie le nombre d’utilisateurs dans chaque état pour un jour donné au cours des 30 derniers jours.
+
+L’entité **DeviceConfigurationProfileUserActivity** répertorie le nombre d’utilisateurs, par jour, dans un état de réussite, d’attente, d’échec ou d’erreur. Le nombre reflète les profils de configuration d’appareil affectés à l’entité. Par exemple, si toutes les stratégies affectées à un utilisateur sont dans un état de réussite, le compteur de réussite augmente d’une unité pour ce jour-là. Si un utilisateur a deux profils affectés, l’un dans un état de réussite et l’autre dans un état d’erreur, l’utilisateur dans l’état d’erreur est pris en compte.  L’entité **DeviceConfigurationProfileUserActivity** répertorie le nombre d’utilisateurs dans chaque état pour un jour donné au cours des 30 derniers jours.
 
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
 | DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
-| En attente |Nombre d’utilisateurs uniques en état d’attente. |123 |
+| Pending |Nombre d’utilisateurs uniques en état d’attente. |123 |
 | Réussi |Nombre d’utilisateurs uniques en état de réussite. |12 |
 | Erreur |Nombre d’utilisateurs uniques en état d’erreur. |10 |
-| Échec |Nombre d’utilisateurs uniques en état d’échec. |2 |
+| Failed |Nombre d’utilisateurs uniques en état d’échec. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -87,7 +86,80 @@ L’entité **PolicyTypeActivity** répertorie le nombre cumulé d’appareils d
 | DateKey |Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |20160703 |
 | PolicyKey |Clé de stratégie pouvant être jointe à la stratégie pour obtenir le nom de la stratégie. |Ligne de base Windows 10 |
 | PolicyTypeKey |Type de clé de stratégie pouvant être joint au type de stratégie pour obtenir le nom du type de la stratégie. |Stratégie de conformité Windows 10 |
-| En attente |Nombre d’appareils uniques en état d’attente. |123 |
+| Pending |Nombre d’appareils uniques en état d’attente. |123 |
 | Réussi |Nombre d’appareils uniques en état de réussite. |12 |
 | Erreur |Nombre d’appareils uniques en état d’erreur. |10 |
-| Fail- |Nombre d’appareils uniques en état d’échec. |2 |
+| Failed |Nombre d’appareils uniques en état d’échec. |2 |
+
+## <a name="compliance-policy"></a>Stratégie de conformité
+
+Les informations de référence de l’API de stratégie de conformité contiennent des entités qui fournissent des informations sur l’état des stratégies de conformité affectées aux appareils.
+
+### <a name="compliancepolicystatusdeviceactivities"></a>CompliancePolicyStatusDeviceActivities
+
+Le tableau suivant récapitule l’état d’affectation des stratégies de conformité pour les appareils. Il répertorie le nombre d’appareils dans chaque état de conformité.
+
+
+|Propriété     |Description  |Exemple  |
+|---------|---------|---------|
+|DateKey  |Clé de date à la création du récapitulatif pour la stratégie de conformité.|20161204 |
+|Unknown  |Nombre d’appareils hors connexion ou qui n’ont pas pu communiquer avec Intune ou Azure AD pour d’autres raisons. |5|
+|NotApplicable      |Nombre d’appareils pour lesquelles des stratégies de conformité ciblées par l’administrateur ne sont pas applicables.|201 |
+|Conforme      |Nombre d’appareils qui ont appliqué une ou plusieurs stratégies de conformité d’appareil ciblées par l’administrateur. |4083 |
+|InGracePeriod      |Nombre d’appareils qui ne sont pas conformes, mais se trouvent dans la période de grâce définie par l’administrateur. |57|
+|NonCompliant      |Nombre d’appareils qui n’ont pas pu appliquer une ou plusieurs stratégie de conformité d’appareil ciblées par l’administrateur ou dont l’utilisateur n’a pas respecté les stratégies ciblées par l’administrateur.|43 |
+|Erreur      |Nombre d’appareils qui n’ont pas pu communiquer avec Intune ou Azure AD et ont retourné un message d’erreur. |3|
+
+### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
+
+Le tableau suivant récapitule l’état d’affectation des stratégies de conformité pour les appareils par stratégie et par type de stratégie. Il répertorie le nombre d’appareils dans chaque état de conformité pour chaque stratégie de conformité affectée.
+
+
+
+|Propriété  |Description  |Exemple  |
+|---------|---------|---------|
+|DateKey  |Clé de date à la création du récapitulatif pour la stratégie de conformité.|20161219|
+|PolicyKey     |Clé de la stratégie de conformité pour laquelle le récapitulatif a été créé. |10178 |
+|PolicyPlatformKey      |Clé du type de plateforme de la stratégie de conformité pour laquelle le récapitulatif a été créé.|5|
+|Unknown     |Nombre d’appareils hors connexion ou qui n’ont pas pu communiquer avec Intune ou Azure AD pour d’autres raisons.|13|
+|NotApplicable     |Nombre d’appareils pour lesquelles des stratégies de conformité ciblées par l’administrateur ne sont pas applicables.|3|
+|Conforme      |Nombre d’appareils qui ont appliqué une ou plusieurs stratégies de conformité d’appareil ciblées par l’administrateur. |45|
+|InGracePeriod      |Nombre d’appareils qui ne sont pas conformes, mais se trouvent dans la période de grâce définie par l’administrateur. |3|
+|NonCompliant      |Nombre d’appareils qui n’ont pas pu appliquer une ou plusieurs stratégie de conformité d’appareil ciblées par l’administrateur ou dont l’utilisateur n’a pas respecté les stratégies ciblées par l’administrateur.|7|
+|Erreur      |Nombre d’appareils qui n’ont pas pu communiquer avec Intune ou Azure AD et ont retourné un message d’erreur. |3|
+
+### <a name="policyplatformtypes"></a>PolicyPlatformTypes
+
+Le tableau suivant contient les types de plateforme de toutes les stratégies affectées. Les types de plateformes de stratégies qui n’ont jamais été affectés à un appareil ne sont pas présents dans ce tableau.
+
+
+|Propriété  |Description  |Exemple  |
+|---------|---------|---------|
+|PolicyPlatformTypeKey      |Clé unique du type de plateforme de stratégie. |20170519 |
+|PolicyPlatformTypeId      |Identificateur unique du type de plateforme de stratégie.|1|
+|PolicyPlatformTypeName      |Nom du type de plateforme de stratégie.|AndroidForWork |
+
+### <a name="policydeviceactivity"></a>PolicyDeviceActivity
+
+Le tableau suivant répertorie le nombre d’appareils, par jour, dans un état de réussite, d’attente, d’échec ou d’erreur. Le nombre reflète les données par profil de type de stratégie. Par exemple, si toutes les stratégies affectées à un appareil sont dans un état de réussite, le compteur de réussite augmente d’une unité pour ce jour-là. Si deux profils sont affectés à un appareil, l’un dans un état de réussite et l’autre dans un état d’erreur, l’entité incrémente le compteur de réussite et affecte à l’appareil un état d’erreur. L’entité PolicyDeviceActivity répertorie le nombre d’appareils dans chaque état pour un jour donné au cours des 30 derniers jours.
+
+|Propriété  |Description  |Exemple  |
+|---------|---------|---------|
+|DateKey|Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données.|20160703|
+|Pending|Nombre d’appareils uniques en état d’attente.|123|
+|Réussi|Nombre d’appareils uniques en état de réussite.|12|
+PolicyKey|Clé de stratégie pouvant être jointe à la stratégie pour obtenir le nom de la stratégie.|Ligne de base Windows 10|
+|Erreur|Nombre d’appareils uniques en état d’erreur.|10|
+|Failed|Nombre d’appareils uniques en état d’échec.|2|
+
+### <a name="policyuseractivity"></a>PolicyUserActivity 
+
+Le tableau suivant répertorie le nombre d’utilisateurs, par jour, dans un état de réussite, d’attente, d’échec ou d’erreur. Le nombre reflète les données par profil de type de stratégie. Par exemple, si toutes les stratégies affectées à un utilisateur sont dans un état de réussite, le compteur de réussite augmente d’une unité pour ce jour-là. Si un utilisateur a deux profils affectés, l’un dans un état de réussite et l’autre dans un état d’erreur, l’utilisateur dans l’état d’erreur est pris en compte. L’entité PolicyUserActivity répertorie le nombre d’utilisateurs dans chaque état pour un jour donné au cours des 30 derniers jours.
+
+|Propriété  |Description  |Exemple  |
+|---------|---------|---------|
+|DateKey|Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données.|20160703|
+|Pending|Nombre d’appareils uniques en état d’attente.|123|
+|Réussi|Nombre d’appareils uniques en état de réussite.|12|
+PolicyKey|Clé de stratégie pouvant être jointe à la stratégie pour obtenir le nom de la stratégie.|Ligne de base Windows 10|
+|Erreur|Nombre d’appareils uniques en état d’erreur.|10|
