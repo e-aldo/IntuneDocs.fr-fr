@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Appliquer la conformité sur les Mac gérés par Jamf Pro
 
@@ -50,7 +50,7 @@ Vous devez déployer l’application Portail d’entreprise pour macOS dans Jamf
 7. Cliquez sur **Ajouter** pour sélectionner le package avec l’application Portail d’entreprise.
 8. Choisissez l’option **Installer** dans le menu contextuel **Action**.
 9. Configurez les paramètres pour le package.
-10. Cliquez sur l’onglet **Étendue** pour spécifier les ordinateurs sur lesquels l’application Portail d’entreprise doit être installée. Cliquez sur **Enregistrer**. La stratégie sera appliquée aux appareils inclus dans l’étendue la prochaine fois que le déclencheur sélectionné sera exécuté sur l’ordinateur et qu’il répondra aux critères définis dans la charge utile **Général**.
+10. Cliquez sur l’onglet **Étendue** pour spécifier les ordinateurs sur lesquels l’application Portail d’entreprise doit être installée. Cliquez sur **Save**. La stratégie sera appliquée aux appareils inclus dans l’étendue la prochaine fois que le déclencheur sélectionné sera exécuté sur l’ordinateur et qu’il répondra aux critères définis dans la charge utile **Général**.
 
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>Créer une stratégie dans Jamf Pro pour que les utilisateurs inscrivent leurs appareils auprès d’Azure Active Directory
 
@@ -65,7 +65,13 @@ Les utilisateurs finaux doivent lancer l’application Portail d’entreprise vi
 1. Dans Jamf Pro, accédez à **Ordinateurs** > **Stratégies** et créez une stratégie pour l’inscription d’appareils.
 2. Configurez la charge utile **Intégration de Microsoft Intune**, notamment la fréquence de déclenchement et d’exécution.
 3. Cliquez sur l’onglet **Étendue** et incluez tous les appareils ciblés dans l’étendue de la stratégie.
-4. Cliquez sur l’onglet **Libre-service** pour rendre la stratégie disponible dans le libre-service Jamf. Incluez la stratégie dans la catégorie **Conformité de l'appareil**. Cliquez sur **Enregistrer**.
+4. Cliquez sur l’onglet **Libre-service** pour rendre la stratégie disponible dans le libre-service Jamf. Incluez la stratégie dans la catégorie **Conformité de l'appareil**. Cliquez sur **Save**.
+
+## <a name="removing-a-jamf-managed-device-from-intune"></a>Suppression d’un appareil géré par Jamf dans Intune
+
+Vous ne pouvez pas supprimer un appareil géré par Jamf dans Intune. Vous devez supprimer les appareils gérés par Jamf dans Jamf Pro, ce qui les supprime dans Intune. 
+
+Découvrez comment [supprimer un appareil géré par Jamf dans la documentation de Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Vous pouvez aussi ouvrir un ticket de support auprès du [Support Jamf](https://www.jamf.com/support/) pour obtenir une aide supplémentaire. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

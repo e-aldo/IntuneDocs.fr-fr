@@ -5,26 +5,27 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/06/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
-ms.reviewer: andcerat
+ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2889a0a32e58a677f825800bfa50dea64839d663
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 738f747c06f8ad7e6deb90908c2b4b653bad63e3
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Cet article décrit l’expérience utilisateur relative aux applications avec des stratégies de protection d’application. Les stratégies de protection d’application ne s’appliquent que lorsque les applications sont utilisées dans un contexte professionnel, par exemple quand l’utilisateur accède à des applications à l’aide d’un compte professionnel ou accède à des fichiers stockés à l’emplacement OneDrive Entreprise d’une société.
+Cet article décrit l’expérience utilisateur dans les applications associées à des stratégies de protection d’application. Les stratégies de protection d’application s’appliquent uniquement quand les applications sont utilisées dans un contexte professionnel, par exemple, quand l’utilisateur accède à des applications à l’aide d’un compte professionnel ou accède à des fichiers stockés dans un emplacement OneDrive Entreprise.
+
 ##  <a name="access-apps"></a>Accéder aux applications
 
 L’application Portail d’entreprise est requise pour toutes les applications qui sont associées aux stratégies de protection d’application sur les appareils Android.
@@ -42,21 +43,15 @@ Par exemple, l’utilisateur reçoit une invite de code confidentiel quand il ac
 
 ##  <a name="manage-user-accounts-on-the-device"></a>Gérer les comptes d’utilisateur sur l’appareil
 
-Intune prend en charge le déploiement de stratégies de protection d’application sur un seul compte d’utilisateur par appareil.
+Les applications avec plusieurs identités permettent aux utilisateurs d’ajouter plusieurs comptes.  Intune APP prend en charge un seul compte géré.  Intune APP ne limite pas le nombre de comptes non gérés.
 
-* Il est possible que le deuxième utilisateur soit bloqué sur l’appareil, mais cela dépend de l’application utilisée. Toutefois, dans tous les cas, seul le premier utilisateur sujet aux stratégies de protection d'application est affecté par la stratégie.
-
-  * **Microsoft Word**, **Excel** et **PowerPoint** ne bloquent pas un deuxième compte d’utilisateur, mais celui-ci n’est pas affecté par les stratégies de protection d'application.
-
-  * Pour les applications **OneDrive** et **Outlook**, vous ne pouvez utiliser qu’un seul compte professionnel.  Vous ne pouvez pas ajouter plusieurs comptes professionnels pour ces applications.  Toutefois, vous pouvez supprimer un utilisateur et en ajouter un autre sur l’appareil.
-
-
-* Si un appareil possède plusieurs comptes d’utilisateurs existants avant le déploiement des stratégies de protection d’application, le premier compte sur lequel les stratégies de protection d’application sont déployées est géré par les stratégies de protection d’application Intune.
-
+Quand une application contient un compte géré :
+*   Si un utilisateur tente d’ajouter un deuxième compte géré, il est invité à sélectionner le compte géré à utiliser.  L’autre compte est supprimé.
+*   Si l’administrateur informatique ajoute une stratégie à un deuxième compte existant, l’utilisateur est invité à sélectionner le compte géré à utiliser.  L’autre compte est supprimé.
 
 Lisez l’exemple de scénario suivant pour mieux comprendre le comportement quand il existe plusieurs comptes d’utilisateur.
 
-L’utilisateur A travaille pour deux sociétés : **Société X** et **Société Y**. L’utilisateur A a un compte professionnel pour chaque société, et tous deux utilisent Intune pour déployer des stratégies de protection d'application. **Société X** déploie des stratégies de protection d'application **avant** **Société Y**. Le compte associé à **Société X** est soumis à la stratégie de protection d’application, contrairement au compte associé à Société Y. Si vous souhaitez que le compte d’utilisateur associé à Société Y soit géré par les stratégies de protection d’application, vous devez supprimer le compte d’utilisateur associé à Société X.
+L’utilisateur A travaille pour deux sociétés : **Société X** et **Société Y**. L’utilisateur A a un compte professionnel pour chaque société, et tous deux utilisent Intune pour déployer des stratégies de protection d'application. **Société X** déploie des stratégies de protection d'application **avant** **Société Y**. Le compte associé à **Société X** obtient la stratégie de protection d’application, contrairement au compte associé à Société Y. Si vous souhaitez que le compte d’utilisateur associé à Société Y soit géré par les stratégies de protection d’application, vous devez supprimer le compte d’utilisateur associé à Société X et ajouter le compte associé à Société Y.
 ### <a name="add-a-second-account"></a>Ajouter un deuxième compte
 ####  <a name="android"></a>Android
 Sur un appareil Android, un message de blocage peut s’afficher avec des instructions permettant de supprimer le compte existant et d’en ajouter un nouveau.  Pour supprimer le compte existant, accédez à **Paramètres &gt;Général &gt; Gestionnaire d’applications &gt;Portail d’entreprise**. Ensuite, choisissez **Effacer les données**.

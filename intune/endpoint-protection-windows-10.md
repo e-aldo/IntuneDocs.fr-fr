@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Paramètres Endpoint Protection pour Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -73,7 +73,7 @@ Ces paramètres s’appliquent à tous les types de réseaux.
 - **Associer le jeu d’authentification de façon opportuniste par module de génération de clés** : définissez des modules de génération de clés pour ignorer l’intégralité du jeu d’authentification si les suites d’authentification ne sont pas toutes prises en charge dans ce jeu.
 - **Mise en file d’attente des paquets** : spécifiez comment la mise à l’échelle des logiciels côté réception est activée pour la réception chiffrée et efface le texte pour le scénario de passerelle du tunnel IPsec. Cela garantit la préservation de l’ordre des paquets.
 
-### <a name="network-settings"></a>Paramètres réseau
+### <a name="network-settings"></a>Paramètres du réseau
 
 Ces paramètres s’appliquent à des types de réseaux spécifiques, notamment **Réseau (espace de travail) avec domaine**, **Réseau privé (détectable)** et **Réseau public (non détectable)**.
 
@@ -225,7 +225,9 @@ Pour activer Exploit Protection, créez un fichier XML représentant les paramè
 
 Utilisez **Stratégies d’intégrité du code de contrôle des applications** pour choisir d’autres applications devant être auditées ou dont l’exécution peut être approuvée par le contrôle d’application Windows Defender. L’exécution des composants Windows et de toutes les applications du Windows Store est automatiquement approuvée.
 
-Les applications ne sont pas bloquées quand elles s’exécutent en mode « Audit uniquement ». Le mode « Audit uniquement » enregistre tous les événements dans les journaux du client local.
+Les applications ne sont pas bloquées quand elles s’exécutent en mode **Auditer uniquement**. Le mode **Auditer uniquement** enregistre tous les événements dans les journaux du client local.
+
+Une fois activé, le contrôle d’application peut être désactivé uniquement en changeant le mode **Appliquer** en **Auditer uniquement**. Quand vous changez le mode **Appliquer** en **Non configuré**, le contrôle d’application continue à s’appliquer sur les appareils attribués.
 
 ## <a name="windows-defender-security-center"></a>Centre de sécurité Windows Defender
 

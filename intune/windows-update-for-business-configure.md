@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Gérer les mises à jour logicielles
 
@@ -45,8 +44,9 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 - Windows Update prend en charge les versions suivantes de Windows 10 :
     - Windows 10
     - Windows 10 Collaboration (pour les appareils Surface Hub)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- Les appareils qui exécutent Windows 10 Mobile et Windows 10 Holographique ne sont pas pris en charge.
+ Les appareils qui exécutent Windows 10 Mobile ne sont pas pris en charge.
 
 - Sur les appareils Windows, le paramètre **Commentaires et diagnostics** > **Données de diagnostic et d’utilisation** doit être défini au minimum sur **De base**.
 
@@ -89,8 +89,7 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 
     Les mises à jour de fonctionnalités correspondent généralement à de nouvelles fonctionnalités de Windows. Une fois que vous avez configuré le paramètre **Canal de maintenance** (Canal semi-annuel (cible) ou Canal semi-annuel), vous pouvez définir si et pendant combien de temps vous souhaitez différer la réception des mises à jour de fonctionnalités après leur mise à disposition par Microsoft dans Windows Update.
 
-    Par exemple :  
-    **Si le canal de maintenance est défini sur Canal semi-annuel (cible) et que la période de report est de 30 jours** : supposons que la mise à jour de fonctionnalité X est tout d’abord publiquement disponible sur Windows Update en tant que Canal semi-annuel (cible) en janvier. L’appareil ne reçoit pas la mise à jour avant février (soit 30 jours plus tard).
+    Par exemple : **Si le canal de maintenance est défini sur Canal semi-annuel (ciblé) et que la période de report est de 30 jours** : supposons que la mise à jour de fonctionnalité X est d’abord publiquement disponible sur Windows Update comme Canal semi-annuel (ciblé) en janvier. L’appareil ne reçoit pas la mise à jour avant février (soit 30 jours plus tard).
 
     **Si le canal de maintenance est défini sur Canal semi-annuel et que la période de report est de 30 jours** : supposons que la mise à jour de fonctionnalité X est tout d’abord publiquement disponible sur Windows Update en tant que Canal semi-annuel (cible) en janvier. Quatre mois plus tard, en avril, la mise à jour de fonctionnalité X est publiée sur le Canal semi-annuel. L’appareil reçoit la mise à jour de fonctionnalité 30 jours après cette publication sur le Canal semi-annuel et se met à jour en mai.
 
@@ -154,3 +153,11 @@ Vous pouvez suspendre la réception des mises à jour qualité ou de fonctionnal
 > [!IMPORTANT]
 > Lorsque vous exécutez une commande de suspension, les appareils la reçoivent lorsqu’ils consultent à nouveau le service. Il se peut qu’ils installent une mise à jour planifiée avant d’effectuer la vérification auprès du service.
 > En outre, si un appareil cible est désactivé lorsque vous émettez la commande de suspension, lorsque vous l’allumez, il peut télécharger et installer les mises à jour planifiées avant d’effectuer les vérifications avec Intune.
+
+## <a name="windows-holographic-for-business-support"></a>Prise en charge de Windows Holographic for Business
+
+Windows Holographic for Business prend en charge les paramètres suivants :
+
+- **Comportement des mises à jour automatiques**
+- **Mises à jour de produit Microsoft**
+- **Canal de maintenance**

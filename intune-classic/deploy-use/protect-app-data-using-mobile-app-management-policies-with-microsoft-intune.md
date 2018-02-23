@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Protéger les données d’application à l’aide de stratégies de protection des applications avec Microsoft Intune
 
@@ -57,9 +57,7 @@ L’utilisation de la gestion des appareils mobiles avec des stratégies de prot
 - **Les stratégies de protection des applications assurent la mise en place des protections au niveau de la couche Application**. Par exemple, vous pouvez avoir une stratégie qui exige un code confidentiel pour ouvrir une application dans un contexte professionnel, empêche le partage des données entre les applications ainsi que l’enregistrement des données d’application de l’entreprise dans un emplacement de stockage personnel.
 
 ## <a name="devices-that-support-mam"></a>Appareils qui prennent en charge la gestion des applications mobiles
-Les stratégies de protection des applications sont actuellement prises en charge sur :
--   iOS 8.1 ou version ultérieure
--   Android 4 ou version ultérieure
+La prise en charge de la plateforme des stratégies de protection d’application Intune est alignée avec la prise en charge de la plateforme des applications Office. Pour plus d’informations, consultez [Configuration système requise pour Office](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Le scénario MAM sans inscription ne prend pas en charge les appareils Windows. Toutefois, quand vous inscrivez des appareils Windows 10 auprès d’Intune, vous pouvez utiliser la Protection des informations Windows, qui offre des fonctionnalités similaires. Pour plus d’informations, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
@@ -132,4 +130,4 @@ Par exemple, quand un utilisateur démarre l’application OneDrive à l’aide 
 ##  <a name="next-steps"></a>Étapes suivantes
 - [Préparation à la configuration de stratégies de protection d’applications](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-- [Créer et déployer des stratégies de protection des applications avec Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+- [Créer et déployer des stratégies de protection d’application à l’aide de Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
