@@ -108,7 +108,7 @@ Intune propose deux options de déploiement : autonome et hybride. Autonome fai
 
 ## <a name="intune-tenant-location"></a>Emplacement du client Intune
 
-Si votre organisation est présente dans plusieurs pays, tenez compte de l’emplacement de votre locataire quand vous vous abonnez au service. Le pays est défini lorsque vous souscrivez un abonnement Intune pour la première fois. Voici les régions du monde concernées :
+Si votre organisation est présente dans plusieurs pays/régions, tenez compte de l’emplacement de votre locataire quand vous vous abonnez au service. Le pays/région est défini lorsque vous souscrivez un abonnement Intune pour la première fois. Voici les régions du monde concernées :
 
 -   Amérique du Nord
 
@@ -117,7 +117,7 @@ Si votre organisation est présente dans plusieurs pays, tenez compte de l’emp
 -   Asie et Pacifique
 
 >[!IMPORTANT]
-> Il n’est pas possible de modifier l’emplacement du pays et du client ultérieurement.
+> Il n’est pas possible de modifier l’emplacement du pays/région et du client ultérieurement.
 
 ## <a name="external-dependencies"></a>Dépendances externes
 

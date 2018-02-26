@@ -46,7 +46,7 @@ Vous pouvez uniquement affecter des applications à l’aide de cette méthode s
 4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > Applications.
 5. Au-dessus de la liste des applications, choisissez **Ajouter**.
 6. Dans le panneau **Ajouter une application**, choisissez **Rechercher sur l’App Store**.
-7. Dans le panneau **Apple App Store**, sélectionnez les paramètres régionaux du pays de l’App Store.
+7. Dans le panneau **Apple App Store**, sélectionnez les paramètres régionaux du pays/région de l’App Store.
 8. Dans la zone de recherche, tapez le nom (ou une partie du nom). Intune recherche le Store et retourne la liste des résultats pertinents.
 9. Dans la liste, sélectionnez l’application souhaitée, puis cliquez sur **OK**.
 
