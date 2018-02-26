@@ -89,7 +89,7 @@ Vérifiez que quand vous configurez un appareil pour un nouvel utilisateur Intun
     - **ID Apple** : saisissez l’ID Apple du compte associé au programme d’achats en volume.
     - **Pays/région** : sélectionnez le Store du pays VPP.  Intune synchronise les applications VPP pour tous les paramètres régionaux à partir du magasin du pays VPP spécifié.
         > [!WARNING]  
-        > Si vous changez de pays, les métadonnées des applications et l’URL du Store sont mises à jour lors de la prochaine synchronisation avec le service Apple pour les applications créées avec ce jeton. L’application n’est pas mise à jour si elle n’existe pas dans le Store du nouveau pays.
+        > Si vous changez de pays/région, les métadonnées des applications et l’URL du Store sont mises à jour lors de la prochaine synchronisation avec le service Apple pour les applications créées avec ce jeton. L’application n’est pas mise à jour si elle n’existe pas dans le Store du nouveau pays/région.
 
     - **Type de compte VPP** : choisissez **Entreprise** ou **Éducation**.
     - **Application automatique des mises à jour** : choisissez **Activé** ou **Désactivé** pour activer les mises à jour automatiques. Quand elle est activée, Intune met à jour toutes les applications achetées pour le jeton spécifié via le service Intune quand l’appareil s’enregistre.
