@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: Affecter des licences
           href: licenses-assign.md
+        - name: Licences Intune
+          href: licenses.md
         - name: "Configurer l’autorité\_MDM"
           href: mdm-authority-set.md
     - name: Inscrire des appareils
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: Activer le mode Perdu d’iOS
           href: device-lost-mode.md
+        - name: Activer le mode supervisé iOS
+          href: device-supervised-mode.md
         - name: Verrouiller un appareil
           href: device-remote-lock.md
         - name: Réinitialiser le code d’accès
@@ -251,7 +255,7 @@
             - name: Applications web
               href: web-app.md
             - name: Applications intégrées
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: Déployer des applications
           href: apps-deploy.md
           items:

@@ -6,19 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/09/2018
 - **Capture d’écran (mobile uniquement)** - Autorise l’utilisateur à capturer le contenu de l’écran d’appareil en tant qu’image.
 - **Copier et coller (mobile uniquement)** - Autorise les actions copier-coller entre les applications sur l’appareil.
 - **Inscription manuelle** - Permet à l’utilisateur de supprimer manuellement le compte d’espace de travail de l’appareil.
+   - Ce paramètre de stratégie n’est pas appliqué si l’ordinateur est joint à Azure Active Directory et que l’inscription automatique est activée. 
+   - Ce paramètre de stratégie ne s’applique pas aux ordinateurs qui exécutent Windows 10 Famille.
 - **Installation manuelle du certificat racine (mobile uniquement)** -Empêche l’utilisateur d’installer manuellement les certificats racines et les certificats CAP intermédiaires.
 - **Envoi des données de diagnostic** - Les valeurs possibles sont les suivantes :
     - **Aucun** - Aucune donnée n’est envoyée à Microsoft
@@ -68,7 +69,7 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 
 ## <a name="personalization"></a>Personalization
 
-- **URL de l’image d’arrière-plan du poste de travail (Desktop uniquement)** - Spécifie l’URL d’une image au format JPEG, JPG ou PNG que vous souhaitez utiliser comme papier peint du Bureau Windows. Les utilisateurs ne peuvent pas modifier cette option.
+- **URL de l’image d’arrière-plan du poste de travail (Desktop uniquement)** - Spécifie l’URL d’une image au format JPEG que vous souhaitez utiliser comme papier peint du Bureau Windows. Les utilisateurs ne peuvent pas modifier cette option.
 
 ## <a name="privacy"></a>Confidentialité
 
@@ -156,8 +157,8 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 ## <a name="edge-browser"></a>Navigateur Microsoft Edge
 
 -   **Navigateur Microsoft Edge (mobile uniquement)** - autorise l’utilisation du navigateur web Edge sur l’appareil.
--   **Liste déroulante des barres d’adresse (Desktop uniquement)** – Permet d’empêcher Microsoft Edge d’afficher une liste de suggestions dans une liste déroulante quand vous tapez. Cela aide à réduire l’utilisation de la bande passante réseau entre Microsoft Edge et les services Microsoft.
--   **Synchroniser les favoris entre les navigateurs Microsoft (Desktop uniquement)** – Permet à Windows de synchroniser les Favoris entre Internet Explorer et Microsoft Edge.
+-   **Liste déroulante des barres d’adresse (Desktop uniquement)** – Permet d’empêcher Edge d’afficher une liste de suggestions dans une liste déroulante quand vous tapez. Cela aide à réduire l’utilisation de la bande passante réseau entre Microsoft Edge et les services Microsoft.
+-   **Synchroniser les favoris entre les navigateurs Microsoft (Desktop uniquement)** – Permet à Windows de synchroniser les Favoris entre Internet Explorer et Edge.
 -   **Envoyer un en-tête Do Not Track** - Configure le navigateur Microsoft Edge pour envoyer des en-êtes Do Not Track aux sites web que les utilisateurs visitent.
 -   **Cookies** - Permet au navigateur d’enregistrer les cookies internet sur l’appareil.
 -   **JavaScript** - Autorise l’exécution de scripts, tels que JavaScript, dans le navigateur Microsoft Edge.
@@ -167,17 +168,17 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 -   **Remplissage automatique** - Autoriser les utilisateurs à modifier les paramètres de saisie semi-automatique dans le navigateur (Windows 10 Desktop uniquement).
 -   **Gestionnaire de mots de passe** - Activer ou désactiver la fonctionnalité Gestionnaire de mots de passe Microsoft Edge.
 -   **Emplacement de la liste des sites en mode entreprise** - Indique où trouver la liste des sites web qui s’ouvrent en Mode entreprise. Les utilisateurs ne peuvent pas modifier cette liste.<br>(Windows 10 Desktop uniquement).
--   **Outils de développement** - Empêche l’utilisateur final d’ouvrir les outils de développement Microsoft Edge.
--   **Extensions** - Autoriser l’utilisateur final à installer des extensions Microsoft Edge sur l’appareil.
+-   **Outils de développement** - Empêche l’utilisateur final d’ouvrir les outils de développement Edge.
+-   **Extensions** - Autoriser l’utilisateur final à installer des extensions Edge sur l’appareil.
 -   **Navigation inPrivate** - Empêche l’utilisateur final d’ouvrir des sessions de navigation InPrivate.
--   **Afficher la page de la première exécution** – Empêche l’affichage de la page d’introduction lors de la première exécution de Microsoft Edge.
+-   **Afficher la page de la première exécution** – Empêche l’affichage de la page d’introduction lors de la première exécution d’Edge.
     -   **URL de la première exécution** – Spécifie l’URL d’une page qui s’affiche la première fois qu’un utilisateur exécute Microsoft Edge (Windows 10 Mobile uniquement).
 -   **Pages d’accueil** - Ajoute une liste de sites que vous souhaitez utiliser comme pages d’accueil dans le navigateur Microsoft Edge (poste de travail uniquement).
 -   **Changement des pages de démarrage** – Permet aux utilisateurs de changer les pages de démarrage affichées quand Microsoft Edge est ouvert. Utilisez le paramètre Pages d’accueil pour créer la page, ou liste de pages, qui est ouverte quand Microsoft Edge démarre.
 -   **Bloquer l'accès aux indicateurs about** - Empêcher l’utilisateur final d’accéder à la page des indicateurs about: dans Microsoft Edge, qui contient les paramètres expérimentaux et de développement.
 -   **Adresse IP localhost WebRTC** - Bloque l’affichage de l’adresse IP localhost des utilisateurs lors d’appels téléphoniques effectués à l’aide du protocole RTC web.
 -   **Moteur de recherche par défaut** - Spécifie le moteur de recherche par défaut à utiliser. Les utilisateurs finaux peuvent modifier cette valeur à tout moment.
--   **Effacer les données de navigation à la sortie** – Efface l’historique et les données de navigation quand l’utilisateur quitte Microsoft Edge.
+-   **Effacer les données de navigation à la sortie** – Efface l’historique et les données de navigation quand l’utilisateur quitte Edge.
 -   **Collecte de données pour les vignettes dynamiques** – Empêche Windows de collecter des informations sur la vignette dynamique quand les utilisateurs épinglent un site au menu Démarrer à partir de Microsoft Edge.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen

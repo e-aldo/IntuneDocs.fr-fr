@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Édition préliminaire de Microsoft Intune - Février 2018
 
@@ -40,6 +40,10 @@ Cette page est mise à jour périodiquement. Consultez-la régulièrement pour s
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Nouveau graphique de tendance des échecs d’inscription et tableau des raisons de ces échecs <!-- 1471783 -->
+
+Dans la page Vue d’ensemble de l’inscription, vous pourrez voir la tendance des échecs d’inscription et les cinq premières causes de ces échecs. En cliquant sur le graphique ou le tableau, vous pourrez explorer les détails et trouver des conseils de dépannage et des suggestions de correction.
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Empêcher des utilisateurs finaux d’ajouter ou de supprimer des comptes dans le profil professionnel <!-- 1728700 -->    
 Quand vous déployez l’application Gmail dans un profil Android for Work, vous pouvez empêcher les utilisateurs finaux d’ajouter ou de supprimer des comptes dans le profil professionnel à l’aide du paramètre **Ajouter et supprimer des comptes** du profil de restrictions d’appareil Android for Work.
@@ -76,9 +80,6 @@ Par exemple, vous pouvez ajouter le package Webex en tant qu’exception à la s
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>Personnaliser vos thèmes de portail d’entreprise avec des codes hexadécimaux<!--1049561 eeready-->
 
 Vous serez en mesure de personnaliser la couleur de thème dans les applications Portail d’entreprise à l’aide de codes hexadécimaux. Quand vous entrez votre code hexadécimal, Intune détermine la couleur du texte qui fournit le plus haut niveau de contraste entre la couleur du texte et la couleur d’arrière-plan selon les [normes WCAG 2.0](http://www.w3.org/TR/WCAG20). Vous pouvez afficher un aperçu de la couleur du texte et du logo de votre société par rapport à la couleur dans **Applications mobiles** > **Portail d’entreprise**. 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Sélectionnez les catégories d’appareils en utilisant les paramètres Accès scolaire ou professionnel <!-- 1058963 --> 
-Si vous avez activé le [mappage de groupe d’appareils](https://docs.microsoft.com/intune/device-group-mapping), les utilisateurs de Windows 10 seront invités à sélectionner une catégorie d’appareils après l’inscription via le bouton **Se connecter** situé dans **Paramètres**  >  **Comptes** > **Accès scolaire ou professionnel** ou au cours de l'expérience OOBE (out-of-box experience).
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Nouveaux paramètres Windows Defender Credential Guard ajoutés aux paramètres Endpoint Protection <!--1102252 --> 
 
@@ -120,7 +121,7 @@ Deux nouveaux paramètres de confidentialité seront disponibles pour les appare
 
 Les utilisateurs seront en mesure d’utiliser le gestionnaire d’inscription d’appareil lors de l’inscription auprès du portail d’entreprise macOS.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nouveaux paramètres pour le navigateur Microsoft Edge <!--1469166 -->
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nouveaux paramètres pour le navigateur Edge <!--1469166 -->
 
 Deux nouveaux paramètres seront disponibles pour les appareils avec le navigateur Microsoft Edge : **Chemin vers le fichier de favoris** et **Modifications des favoris**. 
 
