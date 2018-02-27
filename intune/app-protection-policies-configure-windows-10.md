@@ -3,10 +3,10 @@ title: "Préparer la configuration des stratégies de protection d’application
 titlesuffix: Azure portal
 description: Configuration du fournisseur de gestion des applications mobiles dans Azure AD
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 5514ea423f67e5bc824b4ee947f630c7f1b43d8f
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Préparer la configuration des stratégies de protection d’application pour Windows 10
 
@@ -40,17 +40,17 @@ Activez la gestion des applications mobiles (GAM) pour Windows 10 en définissan
 
 4. Configurez les paramètres dans le groupe **Restaurer les URL Gestion des applications mobiles par défaut** du panneau **Configurer**.
 
-    **Portée de l'utilisateur Gestion des applications mobiles**  
-      Utilisez l’inscription automatique GAM pour gérer les données d’entreprise sur les périphériques Windows de vos employés. L’inscription automatique GAM sera configurée pour des scénarios BYOD (Apportez votre propre appareil).<ul><li>**Aucune.**<br>Sélectionnez cette option si tous les utilisateurs peuvent être inscrits dans GAM.</li><li>**Quelques-uns**<br>Sélectionnez les groupes Azure AD qui contiennent les utilisateurs qui seront inscrits dans GAM.</li><li>**Tous**<br>Sélectionnez cette option si tous les utilisateurs peuvent être inscrits dans GAM.</li></ul>
+   **Portée de l'utilisateur Gestion des applications mobiles**  
+   Utilisez l’inscription automatique GAM pour gérer les données d’entreprise sur les périphériques Windows de vos employés. L’inscription automatique GAM sera configurée pour des scénarios BYOD (Apportez votre propre appareil).<ul><li>**Aucune.**<br>Sélectionnez cette option si tous les utilisateurs peuvent être inscrits dans GAM.</li><li>**Quelques-uns**<br>Sélectionnez les groupes Azure AD qui contiennent les utilisateurs qui seront inscrits dans GAM.</li><li>**Tous**<br>Sélectionnez cette option si tous les utilisateurs peuvent être inscrits dans GAM.</li></ul>
 
-    **URL des conditions d'utilisation de GAM**  
-     Il s’agit de l’URL du point de terminaison des conditions d’utilisation du service GAM. Le point de terminaison des conditions d’utilisation sert à afficher les conditions d’utilisation aux utilisateurs finaux avant l’inscription de leurs appareils à gérer. Les conditions d’utilisation informent les utilisateurs sur les stratégies appliquées aux appareils mobiles.
+   **URL des conditions d'utilisation de GAM**  
+   L’URL des conditions d’utilisation MAM n’est pas prise en charge pour Microsoft Intune. Cette zone d’entrée doit être vide pour appliquer des stratégies de protection.
 
-    **URL de détection de GAM**  
-    Il s’agit de l’URL du point de terminaison d’inscription du service GAM. Le point de terminaison sert à inscrire des appareils à gérer à travers le service GAM.
+   **URL de détection de GAM**  
+   Il s’agit de l’URL du point de terminaison d’inscription du service GAM. Le point de terminaison sert à inscrire des appareils à gérer à travers le service GAM.
 
-    **URL de conformité GAM**  
-      Il s’agit de l’URL du point de terminaison de conformité du service GAM. Quand un utilisateur se voit refuser l’accès à une ressource à partir d’un appareil non conforme, un lien vers l’URL de conformité lui est proposé. Les utilisateurs peuvent accéder à cette URL hébergée par le service GAM pour déterminer pourquoi leur appareil est considéré comme non conforme. Les utilisateurs peuvent également effectuer une correction libre-service pour rendre leurs appareils conformes et pouvoir continuer à accéder aux ressources.
+   **URL de conformité GAM**  
+   L’URL de conformité MAM n’est pas prise en charge pour Microsoft Intune. Cette zone d’entrée doit être vide pour appliquer des stratégies de protection. 
 
 5.  Cliquez sur **Save**.
 
