@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-software-updates"></a>Gérer les mises à jour logicielles
 
@@ -130,14 +130,14 @@ Vous pouvez surveiller les déploiements de mises à jour Windows 10 à l’aid
 
 Dans la console Intune, vous pouvez utiliser les paramètres OMA-URI d’une stratégie personnalisée pour configurer l’ID commercial. Pour plus d’informations, consultez [Paramètres de stratégie Intune pour les appareils Windows 10 dans Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
-Le chemin OMA-URI (qui respecte la casse) pour la configuration de l’ID commercial est : ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+Le chemin d’accès OMA-URI (sensible à la casse) pour la configuration de l’ID commercial est le suivant : ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 
 Par exemple, vous pouvez utiliser les valeurs suivantes dans **Ajouter ou modifier un paramètre OMA-URI** :
 
 - **Nom du paramètre** : ID commercial Windows Analytics
 - **Description du paramètre** : configuration d’un ID commercial pour les solutions Windows Analytics
 - **Type de données :**  chaîne
-- **OMA-URI** (sensible à la casse) : ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+- **OMA-URI** (sensible à la casse) : ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 - **Valeur** : *utilisez le GUID indiqué sous l’onglet Télémétrie Windows dans votre espace de travail OMS*>
 
 ![Paramètre Windows pour les données de diagnostic et d’utilisation](./media/commID.png)
