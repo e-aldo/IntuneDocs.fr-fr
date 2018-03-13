@@ -2,9 +2,9 @@
 title: "Décisions d’ordre informatique pour BYOD avec EMS"
 description: "Principales décisions d’ordre informatique pour activer BYOD et protéger les données d’entreprise avec Microsoft Enterprise Mobility + Security."
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
+author: dougeby
+ms.author: pfetty
+manager: angrobe
 ms.date: 12/8/2017
 ms.topic: article
 ms.prod: 
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 
 ms.suite: ems
-ms.openlocfilehash: 85fa202c3e80cdc830155299c16f121f96cc5742
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3ee642f5c2e30023043cec4bf5286999d4397e2d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Décisions d’ordre informatique pour activer BYOD avec Microsoft Enterprise Mobility + Security (EMS)
 
@@ -75,7 +75,7 @@ De nombreuses organisations sont souvent soucieuses de certains risques spécifi
 | | | |
 | Partage de données accidentel ou enregistrement à des emplacements non sécurisés | Restreindre les sauvegardes de données d’appareil | Restreindre les opérations de couper/copier/coller|
 | Partage de données accidentel ou enregistrement à des emplacements non sécurisés | Restreindre Enregistrer sous | Restreindre Enregistrer sous |
-|Partage de données accidentel ou enregistrement à des emplacements non sécurisés | Désactiver l’impression | n/a|
+|Partage de données accidentel ou enregistrement à des emplacements non sécurisés | Désactiver l’impression | Non applicable|
 
 ## <a name="next-steps"></a>Étapes suivantes
 Il est maintenant temps de décider si vous allez activer BYOD dans votre organisation en vous concentrant sur la gestion des appareils, la gestion des applications ou une combinaison des deux. Le choix de l’implémentation dépend de vous. Vous aurez dans tous les cas la certitude que les fonctionnalités d’identité et de sécurité disponibles avec Azure AD seront disponibles.
