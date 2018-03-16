@@ -1,9 +1,9 @@
 ---
 title: "Accès conditionnel basé sur l’application avec Intune"
-description: "Comprendre les concepts du fonctionnement de l’accès conditionnel basé sur l’application avec Intune."
+description: "Découvrez le fonctionnement de l’accès conditionnel basé sur l’application avec Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accès conditionnel basé sur l’application avec Intune
 
@@ -54,7 +54,7 @@ Dans cet exemple, l’administrateur a appliqué des stratégies de protection d
 > [!NOTE]
 > La structure de l’organigramme ci-dessous peut être utilisée pour d’autres applications gérées.
 
-![accès conditionnel en fonction des applications avec l’organigramme d’Intune](./media/ca-intune-common-ways-3.png)
+![Processus d’accès conditionnel basé sur l’application illustré dans un organigramme](./media/ca-intune-common-ways-3.png)
 
 1.  L’utilisateur tente de s’authentifier sur Azure AD à partir de l’application Outlook.
 

@@ -1,6 +1,6 @@
 ---
-title: Inscrire des appareils Android dans Intune | Microsoft Docs
-titlesuffix: Azure portal
+title: Inscrire des appareils Android dans Intune
+titlesuffix: Microsoft Intune
 description: "Découvrez comment inscrire des appareils Android dans Intune."
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrire des appareils Android
 
@@ -43,14 +43,14 @@ Pour activer la gestion des appareils, vos utilisateurs doivent inscrire leurs a
 
 ## <a name="enable-enrollment-of-android-for-work-devices"></a>Activer l’inscription des appareils Android for Work
 
-Pour activer la gestion du profil professionnel sur les appareils qui [prennent en charge Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), vous devez ajouter une liaison Android for Work à Intune. Pour inscrire des appareils qui prennent en charge Android for Work mais qui étaient auparavant inscrits en tant qu’appareils Android ordinaires, vous devez désinscrire les appareils, puis les réinscrire.
+Pour activer la gestion du profil professionnel sur les appareils qui [prennent en charge Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), vous devez ajouter une liaison Android for Work à Intune. Si vous voulez inscrire des appareils dans Android for Work, mais que ces appareils étaient auparavant inscrits comme appareils Android ordinaires, vous devez désinscrire les appareils, puis les réinscrire.
 
 Si vous inscrivez des appareils Android for Work à l’aide d’un compte de [Gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md), il existe une limite de 10 appareils pouvant être inscrits par compte.
 
 ## <a name="add-android-for-work-binding-for-intune"></a>Ajouter une liaison Android for Work pour Intune
 
 > [!NOTE]
-> En raison de l’interaction entre les domaines Google et Microsoft, cette étape peut nécessiter un réglage des paramètres de votre navigateur.  Vérifiez que « portal.azure.com » et « play.google.com » sont dans la même zone de sécurité dans votre navigateur.
+> En raison de l’interaction entre les domaines Google et Microsoft, cette étape peut nécessiter un réglage des paramètres de votre navigateur.  Vérifiez que « portal.azure.com » et « play.google.com » sont dans la même zone de sécurité de votre navigateur.
 
 1. **Configurer la gestion des appareils mobiles Intune**<br>
 Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en définissant **Microsoft Intune** comme [autorité de gestion des appareils mobiles](mdm-authority-set.md).
@@ -58,7 +58,7 @@ Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles 
     En tant qu’administrateur Intune, dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
 
    a. Dans le panneau **Intune**, choisissez **Inscription de l’appareil** > **Inscription d’Android for Work**, puis choisissez **Configurer** pour ouvrir le site web Android for Work de Google Play. Le site web s’ouvre dans un nouvel onglet dans votre navigateur.
-   ![Capture d’écran montrant le lien pour configurer la liaison Android for Work](./media/android-work-bind.png)
+   ![Écran d’inscription d’Android for Work](./media/android-work-bind.png)
 
    b. **Se connecter à Google**<br>
    Dans la page de connexion de Google, entrez le compte Google à associer à toutes les tâches de gestion Android for Work pour ce client. Il s’agit du compte Google partagé par les administrateurs informatiques de votre organisation pour gérer et publier des applications dans la console Play for Work. Vous pouvez utiliser un compte Google existant ou en créer un.  Le compte que vous choisissez ne doit pas être associé à un domaine G Suite.
@@ -73,13 +73,13 @@ Android for Work n’est pris en charge que sur certains appareils Android. Cons
 - **Autoriser** : Tous les appareils qui prennent en charge Android for Work sont inscrits comme des appareils Android for Work. Tout appareil Android qui ne prend pas en charge Android for Work est inscrit comme appareil Android conventionnel.
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Approuver l’application Portail d’entreprise dans le Google Play Store géré
-Vous devez approuver l’application Portail d’entreprise pour Android sur le Google Play Store géré pour être sûr qu’elle reçoive les mises à jour automatiques d’applications. Si vous ne l’approuvez pas, le portail d’entreprise finit par devenir obsolète et risque de ne pas recevoir les correctifs de bogues importants ou les nouvelles fonctionnalités publiés par Microsoft.
+Vous devez approuver l’application Portail d’entreprise pour Android sur le Google Play Store géré pour garantir qu’elle reçoit les mises à jour automatiques d’applications. Si vous ne l’approuvez pas, le portail d’entreprise finit par devenir obsolète et risque de ne pas recevoir les correctifs de bogues importants ou les nouvelles fonctionnalités publiés par Microsoft.
 
 Pour approuver le portail d’entreprise Intune, effectuez les étapes suivantes :
 
 1.  Accédez à l’application Portail d’entreprise sur le [Google Play Store géré](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Connectez-vous au Google Play Store géré avec le même compte Google que celui utilisé pour configurer la liaison pour Android for Work.
-3.  Cliquez sur **Approuver**.  Une nouvelle boîte de dialogue s’ouvre.
+3.  Cliquez sur **Approuver** ; une nouvelle boîte de dialogue s’ouvre.
 4.  Vérifiez les autorisations dans cette boîte de dialogue, puis cliquez sur **Approuver**. Vous devez affecter ces autorisations afin de permettre à l’application Portail d’entreprise de gérer le profil professionnel sur l’appareil.
 5.  Sélectionnez **Keep approved when app requests new permissions** (Laisser approuvé quand l’application demande de nouvelles autorisations), puis cliquez sur **Enregistrer.**
 

@@ -1,31 +1,29 @@
 ---
-title: "Guide pratique pour configurer des paramètres de messagerie Intune"
-titleSuffix: Azure portal
-description: "Découvrez comment configurer Intune pour créer des connexions à la messagerie d’entreprise sur les appareils que vous gérez."
+title: "Guide pratique pour configurer des paramètres de messagerie dans Microsoft Intune"
+titleSuffix: 
+description: "Découvrez comment configurer Microsoft Intune pour créer des connexions à la messagerie d’entreprise sur les appareils que vous gérez."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8558da2460b6443cbd4d42f7dec420d3e7abc7d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de messagerie dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Des profils de messagerie peuvent être utilisés pour configurer les appareils que vous gérez avec les paramètres requis pour la connexion à la messagerie d’entreprise et sa synchronisation. Cela peut aider à garantir que les paramètres sont standard sur l’ensemble de vos appareils et également à réduire les appels au support technique des utilisateurs finaux qui ne connaissent pas les paramètres de messagerie corrects.
+Des profils de messagerie peuvent être utilisés pour configurer les appareils que vous gérez avec les paramètres nécessaires pour la connexion à la messagerie d’entreprise et à sa synchronisation. Cela peut aider à garantir que les paramètres sont standard sur l’ensemble de vos appareils et également à réduire les appels au support technique des utilisateurs finaux qui ne connaissent pas les paramètres de messagerie corrects.
 
 Le client de messagerie intégré est pris en charge par la plupart des plateformes. La plupart des applications de messagerie tierces ne sont pas prises en charge actuellement.
 
@@ -34,19 +32,19 @@ Vous pouvez utiliser des profils de messagerie pour configurer le client de mess
 - Android Samsung Knox Standard 4.0 et versions ultérieures
 - Android for Work
 - iOS 8.0 et versions ultérieures
-- Windows Phone 8.1 et versions ultérieures
+- Windows Phone 8.1 et versions ultérieures
 - Windows 10 Desktop et Windows 10 Mobile
 
-Utilisez les informations de cette rubrique pour apprendre les notions de base sur la configuration d’un profil de messagerie et lisez les autres rubriques pour chaque plateforme pour en savoir plus sur les caractéristiques des appareils.
+Utilisez les informations de cet article pour découvrir les concepts de base sur la configuration d’un profil de messagerie, et lisez les autres rubriques pour chaque plateforme pour découvrir les spécificités des appareils.
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Créer un profil d’appareil contenant des paramètres de messagerie
 
 1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-3. Dans le panneau des profils, sélectionnez **Créer un profil**.
-4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de messagerie.
+2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+3. Dans la page **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans la page **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
+3. Dans la page des profils, choisissez **Créer un profil**.
+4. Dans la page **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de messagerie.
 5. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres de messagerie. Actuellement, vous pouvez choisir l’une des plateformes suivantes pour les paramètres de messagerie :
     - **Android** (Samsung Android Knox Standard uniquement)
     - **Android for Work**
@@ -59,16 +57,16 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
     - [Paramètres iOS](email-settings-ios.md)
     - [Paramètres Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Paramètres Windows 10](email-settings-windows-10.md)
-8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
+8. Quand vous avez terminé, revenez à la page **Créer un profil** et appuyez sur **Créer**.
 
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
-Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareils](device-profile-assign.md).
+Le profil est créé et apparaît dans la page de la liste des profils.
+Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
 
 ## <a name="further-information"></a>Informations supplémentaires
 
 ### <a name="remove-an-email-profile"></a>Supprimer un profil de messagerie
 
-Si vous souhaitez supprimer un profil de messagerie d’un appareil, modifiez l’attribution et supprimez les groupes dont l’appareil est membre. Notez que vous ne pouvez pas supprimer un profil de messagerie de cette manière s’il est le seul profil de messagerie sur un appareil.
+Si vous souhaitez supprimer un profil de messagerie d’un appareil, modifiez l’attribution et supprimez les groupes dont l’appareil est membre. Vous ne pouvez pas supprimer un profil de messagerie de cette manière s’il est le seul profil de messagerie sur un appareil.
 
 ### <a name="securing-email-access"></a>Sécurisation de l’accès à la messagerie
 
@@ -84,7 +82,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
 Si l’utilisateur a déjà configuré un compte de messagerie, le résultat de l’attribution de profil de messagerie Intune dépend de la plateforme de l’appareil :
 
-- **iOS** : un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail et du nom d’hôte. Le profil de messagerie en double bloque l’attribution d’un profil Intune. Dans ce cas, le Portail d’entreprise signale à l’utilisateur qu’il n’est pas conforme et l’invite à supprimer le profil configuré manuellement. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire avant d’installer un profil de messagerie, ce qui permet à Intune de configurer le profil.
+- **iOS** : un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail et du nom d’hôte. Le profil de messagerie en doublon bloque l’affectation d’un profil Intune. Dans ce cas, le Portail d’entreprise signale à l’utilisateur qu’il n’est pas conforme et l’invite à supprimer le profil configuré manuellement. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire avant d’installer un profil de messagerie, ce qui permet à Intune de configurer le profil.
 - **Windows** : un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail et du nom d’hôte. Intune remplace le profil de messagerie existant créé par l’utilisateur.
 - **Android Samsung Knox Standard** : Un profil de messagerie existant en double est détecté en fonction de l’adresse e-mail, et est remplacé par le profil Intune.
 Étant donné qu’Android n’utilise pas le nom d’hôte pour identifier le profil, nous vous recommandons de ne pas créer plusieurs profils de messagerie à utiliser à la même adresse e-mail sur des hôtes différents, car ils se remplaceront l’un l’autre.

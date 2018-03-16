@@ -1,11 +1,11 @@
 ---
 title: "Inclure des applications iOS dans un wrapper avec l’outil de création de package de restrictions d’application Intune"
-description: "Cette rubrique explique comment inclure des applications iOS dans un wrapper sans changer leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
+description: "Découvrez comment inclure vos applications iOS dans un wrapper sans changer leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
-ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
+ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications iOS pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
@@ -100,7 +100,7 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
   ![Portail des développeurs Azure](./media/iOS-signing-cert-1.png)
 
-5. Cliquez sur le bouton ![signe plus du portail des développeurs Apple](./media/iOS-signing-cert-2.png) dans le coin supérieur droit pour ajouter un certificat iOS.
+5. Cliquez sur l’onglet ![signe plus du portail des développeurs Apple](./media/iOS-signing-cert-2.png) dans le coin supérieur droit pour ajouter un certificat iOS.
 
 6. Choisissez de créer un certificat **In-House and Ad Hoc** (interne et ad-hoc) sous **Production**.
 
@@ -149,13 +149,13 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
 2. Cliquez sur **Certificates, IDs & Profiles** (Certificats, identifiants et profils).
 
-3. Cliquez sur le bouton ![signe plus du portail des développeurs Apple](./media/iOS-signing-cert-2.png) dans le coin supérieur droit pour ajouter un profil de configuration iOS.
+3. Cliquez sur l’onglet ![signe plus du portail des développeurs Apple](./media/iOS-signing-cert-2.png) dans le coin supérieur droit pour ajouter un profil de configuration iOS.
 
 4. Choisissez de créer un profil de configuration **In House** (interne) sous **Distribution**.
 
   ![Sélectionner un profil d’approvisionnement interne](./media/iOS-provisioning-profile-1.png)
 
-5. Cliquez sur **Continuer**. Veillez à lier le certificat de signature généré précédemment au profil de configuration.
+5. Cliquez sur **Continue** (Continuer). Veillez à lier le certificat de signature généré précédemment au profil de configuration.
 
 6. Suivez les étapes pour télécharger votre profil (avec l’extension .mobileprovision) sur votre ordinateur macOS.
 
@@ -217,7 +217,7 @@ Placer tous les arguments de commande dans un fichier [plist](https://developer.
 
 Dans le dossier IntuneMAMPackager/contenu/MacOS, ouvrez `Parameters.plist` (un modèle plist vide) à l’aide d’un éditeur de texte ou Xcode. Entrez vos arguments pour les clés suivantes :
 
-| Clé plist |  Valeur par défaut| Notes |
+| Clé plist |  Valeur par défaut| Remarques |
 |------------------|--------------|-----|
 | Chemin du package d’application d’entrée  |empty| Identique à -i|
 | Chemin du package d’application de sortie |empty| Identique à -o|

@@ -1,9 +1,10 @@
 ---
 title: Test et validation Intune
-description: "Détails que vous devez prendre en considération au moment de tester et valider une solution Intune basée uniquement sur le cloud dans votre environnement."
+titlesuffix: Microsoft Intune
+description: "Découvrez comment tester et valider dans votre solution Intune cloud uniquement dans votre environnement."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Test et validation Intune
 
-La phase de test se produit pendant et après la phase d’implémentation. Vous avez besoin de comptes, de groupes et d’appareils de test pour tester tous les scénarios administrateur informatique et utilisateur final (cas d’utilisation) que vous avez préalablement identifiés.
+Quand vous testez l’implémentation de Microsoft Intune, pensez à la validation fonctionnelle et à la validation des cas d’usage. La validation fonctionnelle consiste à tester chaque composant et configuration pour vérifier son fonctionnement. La validation des cas d’usage implique des tests pour vérifier que les scénarios impliquant une série de tâches fonctionnent comme prévu. 
 
 Nous vous recommandons d’impliquer votre personnel de support et d’assistance informatique dans la phase de test afin de créer une documentation de support et permettre au personnel de se familiariser avec le produit. Si un composant ou scénario ne fonctionne pas dans un cas d’utilisation, veillez à documenter les modifications nécessaires et à inclure la raison pour laquelle une modification a été apportée.
 

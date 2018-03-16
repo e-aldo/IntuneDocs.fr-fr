@@ -1,6 +1,6 @@
 ---
 title: "Gérer l’accès web avec l’application Managed Browser"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Déployez l’application Managed Browser pour limiter la navigation sur le web et le transfert de données du web vers d’autres applications."
 keywords: 
 author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3d902ada21c2cf864c3e21ef02b886d16162853c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -50,7 +50,7 @@ Managed Browser ne prend pas en charge le protocole de chiffrement SSLv3 (Secure
 
 Vous pouvez créer des stratégies Managed Browser pour les types d'appareils suivants :
 
--   appareils qui exécutent Android 4 et versions ultérieures ;
+-   Appareils qui exécutent Android 4 et versions ultérieures
 
 -   Appareils qui exécutent iOS 8.0 et versions ultérieures
 
@@ -63,17 +63,17 @@ Intune Managed Browser prend en charge l’ouverture de contenu web des [parte
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Créer une configuration d’application Managed Browser
 
-1.  Connectez-vous au portail Azure.
-2.  Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3.  Dans le panneau **Applications mobiles** de la liste Gérer, choisissez **Stratégies de configuration des applications**.
 4.  Dans le panneau **Stratégies de configuration des applications**, choisissez **Ajouter**.
-5.  Dans le panneau **Ajouter la configuration de l’application**, saisissez un **Nom** et éventuellement une **Description** pour les paramètres de configuration de l’application.
+5.  Dans le panneau **Ajouter une stratégie de configuration**, entrez un **Nom** et une **Description** facultative pour les paramètres de configuration de l’application.
 6.  Pour **Inscription de l’appareil**, choisissez **Applications gérées**.
-7.  Choisissez **Sélectionner les applications requises** puis, dans le panneau **Applications ciblées**, choisissez **Managed Browser** pour iOS, Android ou les deux.
-8.  Choisissez **OK** pour revenir au panneau **Ajouter une configuration d’application**.
+7.  Choisissez **Sélectionner l’application requise** puis, dans le panneau **Applications ciblées**, choisissez **Managed Browser** pour iOS, pour Android ou pour les deux.
+8.  Choisissez **OK** pour revenir au panneau **Ajouter une stratégie de configuration**.
 9.  Choisissez **Paramètres de configuration**. Dans le panneau **Configuration**, vous définissez des paires clé / valeur pour fournir des configurations pour Managed Browser. Consultez les sections plus bas dans cet article pour en savoir plus sur les différentes paires clé/valeur que vous pouvez définir.
 10. Une fois que vous avez terminé, choisissez **Enregistrer**.
-11. Sur le **Panneau de configuration Ajouter une application**, choisissez **Créer**.
+11. Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Ajouter**.
 12. La nouvelle configuration est créée et s’affiche dans le panneau **Configuration des applications**.
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Intune Managed Browser prend en charge l’ouverture de contenu web des [parte
 
 Vous affectez les paramètres à des groupes d’utilisateurs Azure AD. Si cet utilisateur a installé l’application Managed Browser, l’application est gérée par les paramètres que vous avez spécifiés.
 
-1. Allez dans le panneau **Paramètres** du tableau de bord gestion des applications mobiles Intune, choisissez **Configuration d’application**.
+1. Dans le panneau **Applications mobiles** du tableau de bord de gestion des applications mobiles Intune, choisissez **Stratégies de configuration des applications**.
 2. Dans la liste de configurations de l’application, sélectionnez celle que vous souhaitez affecter.
-3. Dans le panneau suivant, choisissez **Groupes d’utilisateurs**.
-4. Dans le panneau **Groupes d’utilisateurs**, sélectionnez le groupe Azure AD auquel vous souhaitez affecter la configuration d’application, puis sélectionnez **OK**.
+3. Dans le panneau suivant, choisissez **Affectations**.
+4. Dans le panneau **Affectations**, sélectionnez le groupe Azure AD auquel vous voulez affecter la configuration d’application, puis choisissez **OK**.
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Comment configurer des paramètres de proxy d’application pour Managed Browser
@@ -148,7 +148,7 @@ Ce paramètre vous permet de configurer un ensemble de signets pour les utilisat
 |||
 |-|-|
 |Clé|Valeur|
-|Choisissez parmi :<br><br>- Spécifier des URL autorisées (seules ces URL sont autorisées ; aucun autre site n’est accessible) : **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Spécifier des URL bloquées (tous les autres sites sont accessibles) : <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|La valeur correspondante pour la clé est une liste d’URL. Vous entrez toutes les URL que vous souhaitez autoriser ou bloquer comme des valeurs uniques, séparées par des barres verticales **&#124;**.<br><br>Exemples :<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|Choisissez parmi :<br><br>- Spécifier des URL autorisées (seules ces URL sont autorisées ; aucun autre site n’est accessible) : **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Spécifier des URL bloquées (tous les autres sites sont accessibles) : <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|La valeur correspondante pour la clé est une liste d’URL. Vous entrez toutes les URL que vous souhaitez autoriser ou bloquer comme des valeurs uniques, séparées par des barres verticales **&#124;**.<br><br>Exemples :<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >Ne spécifiez pas les deux clés. Si les deux clés sont destinées au même utilisateur, la clé allow est utilisée parce qu’il s’agit de l’option la plus restrictive.
@@ -171,7 +171,7 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
 -   Utilisez le tableau suivant pour en savoir plus sur les modèles autorisés que vous pouvez utiliser pour spécifier des URL :
 
-|URL|Détails|Correspond à|Ne correspond pas à|
+|Adresse URL|Détails|Correspond à|Ne correspond pas à|
 |-------|---------------|-----------|------------------|
 |http://www.contoso.com|Correspond à une page unique|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
 |http://contoso.com|Correspond à une page unique|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|

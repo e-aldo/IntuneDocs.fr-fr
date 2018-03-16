@@ -2,10 +2,10 @@
 title: "Journal des modifications de l’entrepôt de données Intune | Microsoft Docs"
 description: "Liste des modifications dans l’API de l’entrepôt de données Intune."
 keywords: "Entrepôt de données Intune"
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,40 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 306cceb704c1153b5691181d576561d9c93a36d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67eedf528763ae302e3850710b3fab026e15f813
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Journal des modifications pour l’API de l’entrepôt de données Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Suivez les mises à jour de l’entrepôt de données Intune.
+
+## <a name="1801"></a>1801
+_Publiée en janvier 2018_
+
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Authentification des applications uniquement auprès de l’entrepôt de données Intune <!-- 1867540 -->
+
+Vous pouvez configurer une application avec Azure Active Directory (Azure AD) et l’authentifier auprès d’Intune Data Warehouse. Pour plus d’informations, consultez [Authentification des applications uniquement auprès de l’entrepôt de données Intune](data-warehouse-app-only-auth.md).
+
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Exigences liées aux informations d’identification Azure AD et Intune<!-- 2077525 -->
+
+- Il n’est plus nécessaire d’affecter une licence Intune à l’utilisateur pour accéder à l’entrepôt de données Intune (notamment à l’API).
+- Le nom du rôle Intune a été changé de **Rapports** en **Entrepôt de données Intune**. 
+
+    Pour plus d’informations, consultez [Exigences liées aux informations d’identification Azure AD et Intune](reports-api-url.md#azure-ad-and-intune-credential-requirements).
+
+### <a name="odata-query-options----2077711---"></a>Options de requête OData <!-- 2077711 -->
+
+Vous pouvez utiliser <code>$select</code> comme paramètre de requête OData. La version actuelle prend en charge les paramètres de requête OData suivants : <code>$filter</code>, <code>$orderby</code>, <code>$select</code>, <code>$skip</code> et <code>$top</code>. Pour plus d’informations, consultez [Options de requête OData](reports-api-url.md#odata-query-options).
+
+### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Nouvelles entités dans le modèle de données de l’entrepôt de données <!-- 2077804 -->
+
+ - L’entité [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) a été ajoutée. L’entité **MobileAppDeviceUserInstallStatus** représente l’état d’installation d’une application mobile pour un appareil et un utilisateur.
+ - L’entité [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) a été ajoutée. L’entité **MobileAppInstallState** représente l’état d’installation d’une application mobile après qu’elle a été affectée à un groupe contenant des appareils, des utilisateurs ou les deux. 
 
 ## <a name="1710"></a>1710
 _Publication : novembre 2017_

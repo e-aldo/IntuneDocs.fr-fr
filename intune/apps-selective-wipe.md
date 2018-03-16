@@ -1,12 +1,12 @@
 ---
 title: "Guide pratique pour effacer uniquement les données d’entreprise des applications"
-titleSuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: "Apprenez à effectuer une réinitialisation sélective des applications avec Microsoft Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a9690e75e0d0dced9ad30951b0178685813eeae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dfd1b37c1b944a545234b93b44d651ead8f0f486
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Guide pratique pour effacer uniquement les données d’entreprise des applications gérées par Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Lorsqu'un appareil est perdu ou volé, ou si l'employé quitte votre entreprise, vous devez vous assurer que les données de l'application d’entreprise sont supprimées de l'appareil. Mais vous ne voulez peut-être pas supprimer les données personnelles de l’appareil, en particulier si cet appareil appartient à un employé.
+Lorsqu'un appareil est perdu ou volé, ou si l'employé quitte votre entreprise, vous devez vous assurer que les données de l'application d’entreprise sont supprimées de l'appareil. Mais vous ne souhaitez peut-être pas supprimer les données personnelles contenues dans l’appareil, en particulier si celui-ci appartient à un employé.
 
 >[!NOTE]
 > Les plateformes iOS et Android sont les deux plateformes prises en charge actuellement pour le nettoyage des données d’entreprise à partir d’applications gérées par Intune.
@@ -39,21 +39,23 @@ Pour supprimer des données d’application d’entreprise de manière sélectiv
 
 1.  Connectez-vous au [portail Azure](https://portal.azure.com).
 
-2.  Choisissez **Plus de services**, saisissez **Intune** dans la zone de texte de filtre, puis sélectionnez **Intune**. Le panneau Intune s’ouvre. Choisissez le panneau **Applications mobiles**.
+2.  Choisissez **Plus de services**, saisissez **Intune** dans la zone de texte de filtre, puis sélectionnez **Intune**. Le panneau Intune s’ouvre. Sélectionnez **Applications mobiles**.
 
     ![Capture d’écran du panneau Microsoft Intune](./media/apps-selective-wipe01.png)
 
 3.  Dans le panneau **Applications mobiles**, choisissez **Réinitialisation sélective des applications**.
 
-4.  Choisissez **Nouvelle demande de réinitialisation**. Le panneau **Nouvelle demande de réinitialisation** s’ouvre.
+4.  Choisissez **Nouvelle demande de réinitialisation**. Le volet **Nouvelle demande de réinitialisation** s’ouvre.
 
-    ![Capture d'écran du panneau Nouvelle demande de réinitialisation](./media/AzurePortal_MAM_NewWipeRequest.png)
+    ![Capture d’écran du panneau Nouvelle demande de réinitialisation](./media/AzurePortal_MAM_NewWipeRequest.png)
 
 5.  Choisissez **Utilisateur** pour ouvrir le panneau **Utilisateur** et sélectionnez l’utilisateur possédant les données des applications à réinitialiser.
 
-6.  Ensuite, choisissez **Appareil** dans le panneau **Nouvelle demande de réinitialisation**. Cette opération ouvre le panneau **Sélectionner un appareil**, qui répertorie tous les appareils associés à l’utilisateur sélectionné et fournit également deux colonnes : le nom de l’appareil, qui est un nom convivial défini par l’utilisateur, et le type d’appareil, à savoir sa plateforme. Sélectionnez l’appareil à réinitialiser.
+6.  Ensuite, choisissez **Appareil** dans le panneau **Nouvelle demande de réinitialisation**. Cette action ouvre le panneau **Sélectionner un appareil**. Tous les appareils associés à l’utilisateur sélectionné sont alors répertoriés. Ce volet fournit également le nom de l’appareil, qui est un nom convivial défini par l’utilisateur, et le type de l’appareil, qui spécifie sa plateforme. 
 
-7.  Vous voilà revenu dans le panneau **Nouvelle demande de réinitialisation**. Choisissez **Ok** pour effectuer une demande de réinitialisation.
+7. Sélectionnez l’appareil à réinitialiser dans la liste.
+
+8.  Vous voilà revenu dans le panneau **Nouvelle demande de réinitialisation**. Choisissez **Ok** pour effectuer une demande de réinitialisation.
 
 Le service crée une demande de réinitialisation distincte pour chaque application protégée sur l’appareil et l’utilisateur associé à la demande de réinitialisation, et en fait le suivi.
 
@@ -63,22 +65,22 @@ Vous pouvez obtenir un rapport de synthèse indique l’état global de la deman
 
 1.  Le panneau **Applications mobiles - Réinitialisation sélective des applications** affiche la liste de vos demandes regroupées par utilisateurs. Étant donné que le système crée une demande de réinitialisation pour chaque application protégée en cours d’exécution sur l’appareil, vous pouvez voir plusieurs demandes pour un même utilisateur. L’état de la demande de réinitialisation est indiquée : **en attente**, **échec**ou **réussite**.
 
-    ![Capture d’écran de l’état de demande de réinitialisation dans le panneau Réinitialisation sélective des applications](./media/wipe-request-status-1.png)
+    ![Capture d’écran de l’état de demande de réinitialisation dans le volet Réinitialisation sélective des applications](./media/wipe-request-status-1.png)
 
-En outre, vous serez en mesure de voir le nom de l’appareil et son type, ce qui peut être utile lors de la lecture des rapports.
+En outre, vous pouvez voir le nom de l’appareil et son type, ce qui peut être utile lors de la lecture des rapports.
 
 >[!IMPORTANT]
 > L’utilisateur doit ouvrir l’application pour que la réinitialisation se produise. Cette opération peut prendre jusqu’à 30 minutes après l’envoi de la demande.
 
 ## <a name="delete-a-wipe-request"></a>Suppression d’une demande de réinitialisation
 
-Les réinitialisations en attente sont affichées jusqu’à ce que vous les supprimiez manuellement.  Pour supprimer manuellement une demande de réinitialisation :
+Les réinitialisations en attente sont affichées jusqu’à ce que vous les supprimiez manuellement. Pour supprimer manuellement une demande de réinitialisation :
 
-1.  Dans le panneau **Applications mobiles -Réinitialisation sélective des applications**.
+1.  Ouvrez le panneau **Applications mobiles - Réinitialisation sélective des applications**.
 
 2.  Dans la liste, cliquez avec le bouton droit sur la demande de réinitialisation à supprimer, puis choisissez **Supprimer la demande de réinitialisation**.
 
-    ![Capture d’écran de la liste de demandes de réinitialisation dans le panneau Réinitialisation sélective des applications](./media/delete-wipe-request.png)
+    ![Capture d’écran de la liste de demandes de réinitialisation dans le volet Réinitialisation sélective des applications](./media/delete-wipe-request.png)
 
 3.  Vous êtes invité à confirmer la suppression. Choisissez **Oui** ou **Non**, puis cliquez sur **OK**.
 

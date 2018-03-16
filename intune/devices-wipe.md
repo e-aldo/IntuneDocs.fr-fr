@@ -1,12 +1,12 @@
 ---
-title: "Utiliser la réinitialisation aux paramètres d’usine ou la suppression des données d’entreprise sur des appareils à l’aide d’Intune"
-titlesuffix: Azure portal
+title: "Utiliser la réinitialisation aux paramètres d’usine ou la suppression des données d’entreprise sur des appareils à l’aide de Microsoft Intune"
+titlesuffix: 
 description: "Découvrez comment supprimer les données d’entreprise d’un appareil ou le réinitialiser aux paramètres d’usine."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b56f7d7bcf576a0b2342c7c5394c08661b6a45fd
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
@@ -36,8 +36,8 @@ La commande de **réinitialisation aux paramètres d’usine** rétablit les par
 ### <a name="to-factory-reset-a-device"></a>Pour réinitialiser un appareil aux paramètres d’usine
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le panneau **Appareils**, choisissez **Tous les appareils**.
 4. Cliquez sur le nom de l’appareil à réinitialiser aux paramètres d’usine.
 5. Dans le panneau présentant le nom de l’appareil, choisissez **Réinitialisation aux paramètres d’usine**.
 6. Pour Windows 10 version 1709 ou ultérieure, une autre option est proposée : « Conserver le compte d’utilisateur et l’état d’inscription ». 
@@ -123,8 +123,8 @@ La suppression des données d’entreprise d’un appareil Android for Work supp
 ### <a name="to-remove-company-data"></a>Pour supprimer les données d’entreprise
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le panneau **Appareils**, choisissez **Tous les appareils**.
 4. Choisissez le nom de l’appareil dont vous souhaitez supprimer les données d’entreprise.
 5. Dans le panneau présentant le nom de l’appareil, choisissez **Supprimer les données d’entreprise**, puis **Oui** pour confirmer.
 
@@ -134,9 +134,9 @@ Si l’appareil est allumé et connecté, la propagation de la commande de suppr
 
 En cas de problèmes de communication ou d’appareils manquants, vous devrez peut-être supprimer des appareils d’Azure Active Directory (AD). La commande de suppression ne supprime pas un appareil de la gestion, mais vous pouvez utiliser **Supprimer** pour supprimer du portail Azure les enregistrements de l’appareil inaccessibles et peu susceptibles de recommuniquer avec Azure.
 
-1.  Connectez-vous à [Azure Active Directory dans le portail Azure](http://aka.ms/accessaad) avec vos informations d’identification d’administrateur. Vous pouvez également vous connecter au [portail Office 365](https://portal.office.com) , puis choisir **Administrateur** &gt; **Azure AD** à l’aide du lien à gauche de la page.
+1.  Connectez-vous à [Azure Active Directory dans le portail Azure](http://aka.ms/accessaad) avec vos informations d’identification d’administrateur. Vous pouvez également vous connecter au [portail Office 365](https://portal.office.com), puis choisir **Centres d’administration** &gt; **Azure AD** en utilisant le lien à gauche de la page.
 3.  Créez un abonnement Azure si vous n’en avez pas. Vous ne devriez pas avoir besoin de carte de crédit ni d’effectuer un paiement si vous disposez d’un compte payant (choisissez le lien d’abonnement **Enregistrer votre abonnement Azure Active Directory gratuit**).
-4.  Sélectionnez **Active Directory** , puis le nom de votre organisation.
+4.  Sélectionnez **Azure Active Directory**, puis votre organisation.
 5.  Sélectionnez l’onglet **Utilisateurs** .
 6.  Sélectionnez l’utilisateur dont vous voulez supprimer les appareils.
 7.  Choisissez **Appareils**.

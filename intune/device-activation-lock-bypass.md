@@ -1,10 +1,10 @@
 ---
 title: "Contourner le verrou d’activation iOS avec Intune"
-titlesuffix: Azure portal
-description: "Apprenez à utiliser Intune pour contourner le verrou d’activation iOS pour accéder aux appareils verrouillés."
+titlesuffix: Microsoft Intune
+description: "Découvrez comment utiliser Intune pour contourner le verrou d’activation d’iOS pour accéder aux appareils verrouillés."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15c288b31ab3fb31080aff72d2461dc1d24ec5ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6141b325c5087544a1b78e03209322023f2374e3
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Ignorer le verrouillage d’activation sur les appareils iOS supervisés avec Intune
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 01/25/2018
 Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fonctionnalité de l’application Rechercher mon iPhone pour les appareils iOS 8.0 et versions ultérieures. Le verrou d’activation est activé automatiquement lorsqu’un utilisateur ouvre l’application Rechercher mon iPhone sur un appareil. Une fois qu’il est activé, l’ID et le mot de passe Apple de l’utilisateur doivent être entrés pour pouvoir :
 
 - Désactiver Rechercher mon iPhone
-- effacer l'appareil ;
-- réactiver l'appareil.
+- Effacer l'appareil
+- Réactiver l'appareil
 
 ## <a name="how-activation-lock-affects-you"></a>Impact du verrou d'activation
 
@@ -69,11 +69,11 @@ Avant de pouvoir contourner le verrouillage d’activation sur les appareils, vo
 
 L’action d’appareil à distance **Contourner le verrou d’activation** d’Intune vous permet de supprimer le verrou d'activation des appareils iOS sans avoir l'ID Apple et le mot de passe de l'utilisateur. Une fois que vous contournez le verrou d’activation, l’appareil l’active à nouveau au démarrage de l’application Trouver mon iPhone. Contournez le verrou d’activation uniquement si vous avez un accès physique à l’appareil.
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
-4. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
-5. Dans la liste des appareils que vous gérez, choisissez un appareil iOS supervisé, puis choisissez l’action à distance d’appareil **Contourner le verrou d’activation**.
+4. Dans le panneau **Appareils**, choisissez **Tous les appareils**.
+5. Dans la liste des appareils que vous gérez, choisissez un appareil iOS supervisé, choisissez **...Plus**, puis choisissez l’action à distance d’appareil **Contourner le verrou d’activation**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

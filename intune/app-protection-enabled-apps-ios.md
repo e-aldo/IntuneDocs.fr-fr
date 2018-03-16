@@ -1,7 +1,7 @@
 ---
 title: "Applications iOS avec stratégies de protection des applications"
-titlesuffix: Azure portal
-description: "Cet article décrit ce qui se produit lorsque votre application iOS est gérée par des stratégies de protection d’application."
+titlesuffix: Microsoft Intune
+description: "Découvrez ce qui vous attend dans le cas d’une application iOS associée à des stratégies de protection."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,48 +15,48 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44edf1efd070c0f82c8edf3727992039e0ee4d69
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Cet article décrit l’expérience utilisateur relative aux applications avec des stratégies de protection d’application. Les stratégies de protection d'application ne sont appliquées que quand les applications sont utilisées dans le contexte professionnel, par exemple dans le cadre de l’accès aux applications à l’aide de votre compte professionnel ou de l’accès aux fichiers stockés à l’emplacement OneDrive Entreprise de votre société.
+Découvrez l’expérience utilisateur relative aux applications iOS associées à des stratégies de protection d’application. Les stratégies de protection d’application ne sont appliquées que si les applications sont utilisées dans le contexte professionnel. C’est le cas par exemple quand vous accédez à une application avec un compte professionnel ou à des fichiers stockés dans l’emplacement OneDrive de votre entreprise.
 ##  <a name="accessing-apps"></a>Accès aux applications
 
-Si l’appareil **n’est pas inscrit dans Intune**, l’utilisateur final est invité à redémarrer l’application quand il l’utilise pour la première fois.  Un redémarrage est nécessaire pour que les stratégies de protection d'application soient appliquées à l’application. La capture d’écran suivante illustre cela avec l’application Skype :
+Si l’appareil **n’est pas inscrit dans Intune**, l’utilisateur est invité à redémarrer l’application quand il l’utilise pour la première fois.  Un redémarrage est nécessaire pour que les stratégies de protection d'application soient appliquées à l’application. La capture d’écran suivante illustre cela avec l’application Skype :
 
 
 ![capture d’écran de l’appareil iOS affichant l’invite du code confidentiel](./media/ios-pin-prompt.png)
 
-Si l’appareil est **inscrit pour la gestion dans Intune**, l’utilisateur voit un message indiquant que son application est désormais gérée :
+Si l’appareil est **inscrit pour la gestion dans Intune**, l’utilisateur voit un message indiquant que son application est désormais gérée :
 
 ![capture d’écran de l’appareil iOS montrant le message Géré par votre entreprise avec l’invite du code confidentiel](./media/ios-managed-devices-pin-prompt.png)
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Utilisation d’applications avec prise en charge de plusieurs identités
 
-Les stratégies de protection d'application n’étant appliquées que dans le cadre de l’utilisation professionnelle de l’application, le comportement de celle-ci peut différer selon qu’elle est utilisée dans un contexte professionnel ou personnel.  
+Les stratégies de protection d’application n’entrent en vigueur qu’au moment où un utilisateur tente d’accéder à des données professionnelles.  Vous pouvez constater des comportements différents si l’utilisateur accède à l’application pour une utilisation personnelle. 
 
-Pour les applications qui prennent en charge plusieurs identités, Intune n’applique les stratégies de protection d'application que quand l’utilisateur final utilise l’application dans le contexte professionnel.  Par exemple, l’utilisateur final reçoit une invite de code confidentiel quand il accède aux données professionnelles.  Pour l’**application Outlook**, l’utilisateur final est invité à entrer un code confidentiel au lancement de l’application. Pour l’**application OneDrive**, cela se produit quand l’utilisateur final tape le compte professionnel.  Pour Microsoft **Word**, **PowerPoint** et **Excel**, cela se produit quand l’utilisateur final accède à des documents stockés à l’emplacement OneDrive Entreprise de la société.
+Pour les applications qui prennent en charge plusieurs identités, Intune applique uniquement les stratégies de protection d’application si un utilisateur accède à des données professionnelles.  Par exemple, un utilisateur peut recevoir une invite lui demandant d’entrer un code PIN.  Dans **l’application Outlook**, une invite s’affiche quand un utilisateur lance l’application. Dans **l’application OneDrive**, une invite s’affiche quand un utilisateur tape le compte professionnel.  Dans Microsoft **Word**, **PowerPoint** et **Excel**, une invite s’affiche quand un utilisateur accède à des documents d’entreprise sur OneDrive.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gestion des comptes d’utilisateur sur l’appareil
 
 Intune prend en charge le déploiement de stratégies de protection d'application vers un seul compte d’utilisateur par appareil.
 
-* Il est possible que le deuxième utilisateur soit bloqué sur l’appareil, mais cela dépend de l’application utilisée. Toutefois, dans tous les cas, seul le premier utilisateur sujet aux stratégies de protection d'application est affecté par la stratégie.
-  * **Microsoft Word**, **Excel** et **PowerPoint** ne bloquent pas un deuxième compte d’utilisateur, mais celui-ci n’est pas affecté par les stratégies de protection d'application.  
+* Il est possible que le deuxième utilisateur soit bloqué sur l’appareil, mais cela dépend de l’application utilisée. Toutefois, dans tous les cas, seul le premier utilisateur sujet aux stratégies de protection d’application est affecté par la stratégie.
+  * **Microsoft Word**, **Excel** et **PowerPoint** ne bloquent pas l’accès à un compte d’utilisateur supplémentaire. Toutefois, le compte d’utilisateur n’est pas affecté par les stratégies de protection d’application.
 
-  * Pour les **applications OneDrive et Outlook**, vous ne pouvez utiliser qu’un seul compte professionnel.  L’ajout de plusieurs comptes professionnels est bloqué sur ces applications.  Toutefois, vous pouvez supprimer un utilisateur et en ajouter un autre sur l’appareil.
+  * Pour les **applications OneDrive et Outlook**, vous ne pouvez utiliser qu’un seul compte professionnel.  L’ajout de plusieurs comptes professionnels est bloqué sur ces applications.  Toutefois, vous pouvez supprimer un utilisateur d’un appareil, puis en ajouter un autre.
 
-* Si un appareil a plusieurs comptes d’utilisateur existants avant le déploiement des stratégies, le premier compte vers lequel les stratégies de protection d'application sont déployées est géré par les stratégies de protection d'application Intune.
+* Un appareil peut avoir plusieurs comptes d’utilisateur existants avant le déploiement de stratégies de protection application. Dans ce cas, le premier compte sur lequel les stratégies de protection d’application sont déployées est géré par les stratégies de protection d’application Intune.
 
 
-Lisez l’exemple de scénario ci-dessous pour mieux comprendre le comportement quand il existe plusieurs comptes d’utilisateur.
+Lisez l’exemple de scénario suivant pour découvrir comment Intune gère plusieurs comptes d’utilisateur.
 
-L’utilisateur A travaille pour deux sociétés : **Société X** et **Société Y**. L’utilisateur A a un compte professionnel pour chaque société, et tous deux utilisent Intune pour déployer des stratégies de protection d'application. **Société X** déploie des stratégies de protection d'application **avant** **Société Y**. Le compte associé à **Société X** est soumis à la stratégie de protection d’application, contrairement au compte associé à Société Y. Si vous souhaitez que le compte d’utilisateur associé à Société Y soit géré par les stratégies de protection d’application, vous devez supprimer le compte d’utilisateur associé à Société X.
+L’utilisateur A travaille pour deux sociétés : **Société X** et **Société Y**. L’utilisateur A a un compte professionnel pour chaque société, et tous deux utilisent Intune pour déployer des stratégies de protection d'application. **Société X** déploie des stratégies de protection d'application **avant** **Société Y**. Le compte associé à **Société X** est soumis à la stratégie de protection d’application, contrairement au compte associé à Société Y. Pour que le compte d’utilisateur associé à Société Y soit géré par les stratégies de protection d’application, l’utilisateur A doit supprimer le compte d’utilisateur de la Société X.
 ### <a name="adding-a-second-account"></a>Ajout d’un deuxième compte
 
 Sur un appareil iOS, si vous essayez d’ajouter un deuxième compte professionnel, un message de blocage peut s’afficher.  Les comptes s’affichent et vous pouvez choisir le compte à supprimer.

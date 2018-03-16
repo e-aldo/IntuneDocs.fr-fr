@@ -1,13 +1,13 @@
 ---
-title: "Bien démarrer avec le portail Azure"
-titlesuffix: Azure portal
-description: "Découvrez plus d’informations sur la création et le partage de tableaux de bord pour Intune dans le portail Azure."
+title: "Bien démarrer avec Microsoft Intune dans le portail Azure"
+titlesuffix: 
+description: "Découvrez comment créer des tableaux de bord pour Microsoft Intune dans le portail Azure, les partager et naviguer au sein de ceux-ci."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
-ms.topic: article
+ms.date: 02/22/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,21 +15,21 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27567c8a8b8b406bbffceafc1d742b202999425f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="getting-started-with-intune-in-the-azure-portal"></a>Bien démarrer avec Intune dans le portail Azure
+# <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Bien démarrer avec Microsoft Intune dans le portail Azure
 
-Le portail Azure est l’endroit où se trouve le service Intune. Il existe un grand nombre de services dans Azure que vous n’utilisez peut-être pas régulièrement, pour la plupart. La personnalisation de votre tableau de bord et de la barre latérale peut vous aider à rechercher rapidement des informations chaque fois que vous vous connectez pour gérer des appareils avec Intune.
+Le service Microsoft Intune se trouve dans le portail Azure. Azure comprenant de nombreux services, il est possible que vous n’utilisiez pas certains d’entre eux de manière régulière. La personnalisation de votre tableau de bord et de la barre latérale dans Azure peut vous aider à trouver rapidement les bonnes informations chaque fois que vous vous connectez pour gérer des appareils avec Intune.
 
 ## <a name="changing-the-sidebar"></a>Modification de la barre latérale
 
-La __barre latérale__ à gauche du portail Azure affiche une liste de tous les services Azure disponibles. L’affichage par défaut de cette liste complète peut être changé pour que vous puissiez conserver un affichage persistant des services qui vous intéressent le plus. Nous allons utiliser l’exemple d’Intune comme service à ajouter en haut de la liste.
+La __barre latérale__ à gauche du portail Azure affiche une liste de tous les services Azure disponibles. L’affichage par défaut de cette liste complète peut être changé pour que vous puissiez conserver un affichage persistant des services qui vous intéressent le plus. Le scénario ci-dessous utilise l’exemple d’Intune comme service à ajouter en haut de la liste.
 
-![Utilisateur recherchant Intune dans la liste « Autres services ».](./media/azure-add-intune1.png)
+![Utilisateur recherchant Microsoft Intune dans la liste « Autres services ».](./media/azure-add-intune1.png)
 
 1. Sélectionnez **Autres services** en bas de la barre latérale à gauche de la page.
 2. Recherchez **Intune** dans la zone de filtre.
@@ -38,21 +38,21 @@ La __barre latérale__ à gauche du portail Azure affiche une liste de tous les 
 
 ## <a name="changing-the-dashboard"></a>Modification du tableau de bord
 
-Votre page d’arrivée par défaut est le **tableau de bord**. C’est là que vous personnalisez vos vignettes pour afficher les informations qui sont les plus pertinentes pour vous.
+Votre page d’arrivée par défaut est le **tableau de bord**. C’est dans cette page que vous personnalisez vos vignettes pour qu’elles affichent les informations que vous jugez pertinentes.
 
 ![Image du nouveau tableau de bord générique. Elle affiche la barre latérale avec tous les services sur la gauche et le tableau de bord principal au centre. Les boutons de modification du tableau de bord sont en haut, avec des vignettes qui offrent un accès à toutes les ressources, des didacticiels de démarrage rapide, l’intégrité du service et la place de marché Azure.](./media/azure-default-dashboard.png)
 
-Pour modifier votre tableau de bord actuel, sélectionnez le bouton **Modifier le tableau de bord**. Si vous ne voulez pas modifier votre tableau de bord par défaut, vous pouvez également en créer un en cliquant sur **Nouveau tableau de bord**. Quand vous créez un tableau de bord, vous obtenez un tableau de bord privé vide, avec la **Galerie de vignettes**. Cela vous permet d’ajouter ou de réorganiser des vignettes. Vous pouvez rechercher des vignettes par leur catégorie **Général**, leur **Type**, par le biais de **Rechercher**, et par le biais d’un **Groupe de ressources** ou d’une **Balise**.
+Pour modifier votre tableau de bord actuel, sélectionnez le bouton **Modifier le tableau de bord**. Si vous ne voulez pas modifier votre tableau de bord par défaut, vous pouvez également en créer un en cliquant sur **Nouveau tableau de bord**. Quand vous créez un tableau de bord, vous obtenez un tableau de bord privé vide. La **Galerie de vignettes** vous permet d’ajouter ou de réorganiser des vignettes. Vous pouvez rechercher des vignettes par leur catégorie **Général**, leur **Type**, par le biais de **Rechercher**, et par le biais d’un **Groupe de ressources** ou d’une **Balise**.
 
 Vous pouvez aussi ajouter des vignettes directement à votre tableau de bord en cliquant sur l’un des boutons en forme de **points de suspension** et en sélectionnant **Épingler au tableau de bord**.
 
 ![Gros plan de l’emplacement Utilisateurs et groupes > Tous les groupes dans Intune, avec l’option « Épingler au tableau de bord » affichée à l’extrême droite d’un groupe.](./media/azure-pin-to-dashboard.png)
 
-Cette opération est plus pertinente une fois que vous avez ajouté davantage de contenu, comme des groupes et des utilisateurs, dans Intune.
+Cette fonctionnalité est plus pertinente une fois que vous avez ajouté davantage de contenu, comme des groupes et des utilisateurs, dans Intune.
 
 ## <a name="using-services"></a>Utilisation des services
 
-Chaque fois que vous ouvrez Intune ou un autre service dans Azure, le service s’affiche dans un **panneau**. Certaines des premières charges de travail que vous utilisez dans Intune, comme **Utilisateurs**, **Groupes** et **Applications mobiles**, apparaissent dans un panneau en plein écran. Quand vous sélectionnez la charge de travail, ce panneau s’ouvre dans la page entière. D’autres panneaux s’ouvrent en glissant à partir de la droite et sont réduits sous le panneau principal d’où ils proviennent.
+Chaque fois que vous ouvrez Microsoft Intune ou un autre service dans Azure, le service s’affiche dans un **panneau**. Certaines des premières charges de travail que vous utilisez dans Intune, comme **Utilisateurs**, **Groupes** et **Applications mobiles**, apparaissent dans un panneau en plein écran. Quand vous sélectionnez la charge de travail, ce panneau s’ouvre dans la page entière. D’autres panneaux s’ouvrent en glissant à partir de la droite et sont réduits sous le panneau principal d’où ils proviennent.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

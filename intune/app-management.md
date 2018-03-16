@@ -1,12 +1,12 @@
 ---
-title: "Qu’est-ce que la gestion des applications ?"
-titlesuffix: Azure portal
-description: Utilisez cette rubrique pour apprendre les notions de gestion des applications avec Microsoft Intune
+title: "Qu’est-ce que la gestion des applications Microsoft Intune ?"
+titlesuffix: 
+description: "Découvrez les concepts de base de la gestion des applications avec Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-En tant qu’administrateur informatique, vous allez probablement avoir la responsabilité de vous assurer que vos utilisateurs ont accès aux applications dont ils ont besoin pour effectuer leur travail. Cela peut être un défi, car :
+Microsoft Intune vous permet, en tant qu’administrateur informatique, de gérer les applications mobiles utilisées par le personnel de votre entreprise. Cette fonctionnalité s’ajoute à la gestion des appareils et à la protection des données. Dans le cadre de cette fonctionnalité, une de vos priorités est que vos utilisateurs finaux aient accès aux applications dont ils ont besoin pour effectuer leur travail. Cela peut être un défi, car :
 - Il existe un large éventail de plateformes d'appareils et de types d’applications.
 - Vous devrez peut-être gérer des applications sur des appareils d’entreprise ainsi que des appareils personnels des utilisateurs.
 - Vous devez vous assurer que votre réseau et vos données restent sécurisés.
 
 Vous pourrez également souhaiter affecter et gérer des applications sur les appareils qui ne sont pas inscrits avec Intune.
 
-Intune propose une gamme de fonctionnalités pour vous aider à obtenir les applications dont vous avez besoin, sur les appareils de votre choix.
+Intune propose une gamme de fonctionnalités pour vous aider à obtenir les applications dont vous avez besoin, sur les appareils de votre choix. Le tableau suivant fournit un récapitulatif des fonctionnalités de gestion des applications. Le tableau ci-dessous est un point de départ pour comprendre Microsoft Intune dans le portail Azure. 
 
 ## <a name="app-management-capabilities-by-platform"></a>Fonctionnalités de gestion d’application par plateforme
 
@@ -64,8 +64,8 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 
 Vous trouverez la plupart des éléments liés à l’application dans la charge de travail **Mobile Apps**, à laquelle vous pouvez accéder comme suit :
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
 
     ![La charge de travail Mobile Apps](./media/apps-workload.png)
@@ -115,3 +115,7 @@ Pour plus d’informations, consultez [Surveiller des applications](apps-monitor
 ### <a name="help-and-support"></a>Aide et support
 - **Aide et support** : dépannez, demandez de l’aide ou affichez l’état d’Intune.
     - [Résolution des problèmes](help-desk-operators.md)
+    
+## <a name="next-steps"></a>Étapes suivantes
+
+- [Guide pratique pour ajouter une application à Microsoft Intune](apps-add.md)

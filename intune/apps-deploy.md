@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique d’affectation d’applications aux groupes"
-titlesuffix: Azure portal
-description: "Une fois que vous avez ajouté une application à Intune, vous souhaiterez l’attribuer à des groupes d’utilisateurs ou d’appareils."
+title: "Guide pratique pour affecter des applications à des groupes dans Microsoft Intune"
+titlesuffix: 
+description: "Une fois que vous avez ajouté une application à Microsoft Intune, vous pouvez l’affecter à des groupes d’utilisateurs ou d’appareils."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Guide pratique pour attribuer des applications à des groupes avec Microsoft Intune
 
@@ -38,29 +38,30 @@ Les applications peuvent être affectées aux appareils, qu’ils soient gérés
 |Attribuer des applications en tant qu’applications disponibles|Oui|Oui|
 |Attribuer des applications en tant qu’applications requises|Oui|Non|
 |Désinstallation d’applications|Oui|Non|
+|Recevoir des mises à jour de l’application d’Intune|Oui|Non|
 |Les utilisateurs finaux installent les applications disponibles à partir de l’application Portail d’entreprise|Oui|Non|
 |Les utilisateurs finaux installent les applications disponibles à partir du portail d’entreprise web|Oui|Oui|
 
 > [!NOTE]
-> Actuellement, vous pouvez affecter des applications iOS et Android (applications métier ou achetées dans un Store) pour les appareils qui ne sont pas inscrits avec Intune.
+> Actuellement, vous pouvez affecter des applications iOS et Android (applications métier ou achetées dans un Store) pour les appareils qui ne sont pas inscrits avec Intune.<br></br><br></br>
+> Pour recevoir des mises à jour d’applications sur des appareils qui ne sont pas inscrits auprès d’Intune, les utilisateurs des appareils doivent accéder à leur portail d’entreprise et installer manuellement les mises à jour des applications.
 
 ## <a name="how-to-assign-an-app"></a>Comment affecter une application
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
 1. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
 2. Dans la liste du panneau d’applications, cliquez sur l’application que vous souhaitez affecter.
-3. Dans le panneau <*Nom de l’application*> - **Vue d’ensemble**, choisissez **Gérer** > **Affectations**.
-4. Choisissez **Sélectionner des groupes** puis, dans le panneau **Sélectionner des groupes**, sélectionnez les groupes Azure AD auxquels vous souhaitez affecter l’application.
+3. Dans le panneau **Vue d’ensemble**, choisissez **Gérer** > **Affectations**.
+4. Choisissez **Ajouter un groupe** puis, dans le panneau **Ajouter un groupe**, sélectionnez les groupes Azure AD à inclure ou à exclure de l’affectation de l’application.
 5. Pour chaque application que vous choisissez, choisissez un **Type d’affectation** pour l’application :
-    - **Disponible** : les utilisateurs effectuent l’installation de l’application à la demande à partir de l’application ou du site web de portail d’entreprise.
-    - **Non applicable** : l’application n’est pas installée ni affichée dans le portail d’entreprise.
+    - **Disponible pour les appareils inscrits** : les utilisateurs installent l’application à partir de l’application ou du site web Portail d’entreprise.
+    - **Disponible avec ou sans inscription** : affectez cette application à des groupes d’utilisateurs dont les appareils ne sont pas inscrits avec Intune.
     - **Requis** : l’application est installée sur les appareils dans les groupes sélectionnés.
     - **Désinstaller** : l’application est désinstallée des appareils dans les groupes sélectionnés.
-    - **Disponible avec ou sans inscription** : affectez cette application à des groupes d’utilisateurs dont les appareils ne sont pas inscrits avec Intune.
 6. **Pour les applications iOS uniquement** : si vous avez créé un profil VPN iOS qui contient des paramètres VPN par application, vous pouvez le sélectionner sous **VPN**. Quand l’application est exécutée, la connexion VPN est ouverte. Pour plus d’informations, consultez [Paramètres VPN pour les appareils iOS](vpn-settings-ios.md).
-6. Une fois que vous avez terminé, choisissez **Enregistrer**.
+6. Une fois que vous avez terminé, choisissez **OK**, puis **Enregistrer**.
 
 L’application est maintenant affectée aux groupes que vous avez sélectionnés.
 
@@ -74,7 +75,7 @@ Parfois, la même application est affectée à plusieurs groupes, mais avec des 
 |Utilisateur obligatoire|Utilisateur disponible|Obligatoire et disponible|
 |Utilisateur obligatoire|Utilisateur non disponible|Obligatoire|
 |Utilisateur obligatoire|Désinstallation utilisateur|Obligatoire|
-|Utilisateur disponible|Utilisateur non disponible|non disponible|
+|Utilisateur disponible|Utilisateur non disponible|Non disponible|
 |Utilisateur disponible|Désinstallation utilisateur|Désinstaller|
 |Utilisateur non disponible|Désinstallation utilisateur|Désinstaller
 |Utilisateur obligatoire|Appareil obligatoire|Toutes deux existent, la passerelle traite Obligatoire 
@@ -92,12 +93,12 @@ Parfois, la même application est affectée à plusieurs groupes, mais avec des 
 |Utilisateur obligatoire et disponible|Appareil obligatoire|Toutes deux existent Obligatoire et disponible
 |Utilisateur obligatoire et disponible|Appareil non disponible|Obligatoire et disponible|
 |Utilisateur obligatoire et disponible|Désinstallation appareil|Toutes deux existent, la passerelle résout Obligatoire. Obligatoire et disponible
-|Utilisateur non disponible|Appareil non disponible|non disponible|
+|Utilisateur non disponible|Appareil non disponible|Non disponible|
 |Utilisateur disponible|Appareil non disponible|Disponible|
 |Utilisateur obligatoire|Appareil non disponible|Obligatoire|
 |Utilisateur disponible sans inscription|Utilisateur obligatoire et disponible|Obligatoire et disponible
 |Utilisateur disponible sans inscription|Utilisateur obligatoire|Obligatoire
-|Utilisateur disponible sans inscription|Utilisateur non disponible|non disponible
+|Utilisateur disponible sans inscription|Utilisateur non disponible|Non disponible
 |Utilisateur disponible sans inscription|Utilisateur disponible|Disponible|
 |Utilisateur disponible sans inscription|Appareil obligatoire|Obligatoire et disponible sans inscription|
 |Utilisateur disponible sans inscription|Appareil non disponible|Disponible sans inscription|

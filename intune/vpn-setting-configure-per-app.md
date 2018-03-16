@@ -1,7 +1,7 @@
 ---
 title: Configurer un VPN par application dans Microsoft Intune pour les appareils iOS
-titleSuffix: Intune on Azure
-description: "Spécifiez les applications gérées qui peuvent utiliser votre réseau VPN sur des appareils iOS gérés par Intune."
+titleSuffix: 
+description: "Spécifiez les applications gérées qui peuvent utiliser votre réseau privé virtuel (VPN, Virtual Private Network) sur les appareils iOS gérés par Intune."
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7e53f9a440d945d834c17b9db85ed5f6e42229
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>Configurer un VPN par application dans Microsoft Intune pour les appareils iOS
+# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurer un VPN par application dans Intune pour les appareils iOS
 
-Vous pouvez spécifier les applications gérées qui peuvent utiliser votre réseau privé virtuel (VPN, Virtual Private Network) sur des appareils iOS gérés par Intune. Lorsque vous spécifiez un VPN par application dans Intune, l’utilisateur final se connecte automatiquement à votre réseau VPN pour accéder aux documents de l’entreprise.
+Vous pouvez spécifier les applications gérées qui peuvent utiliser votre VPN sur les appareils iOS gérés par Intune. Quand vous créez un VPN par application dans Intune, l’utilisateur final se connecte automatiquement à votre VPN pour accéder aux documents de l’entreprise.
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Prérequis du réseau VPN par application
 
@@ -49,7 +49,7 @@ Créez ou choisissez un groupe existant dans Azure Active Directory (Azure AD) p
 6. Sélectionnez **Non** pour **Activer les fonctionnalités Office**.
 7. Recherchez les utilisateurs VPN par nom ou adresse e-mail dans le panneau **Membres**.
 8. Sélectionnez chaque utilisateur et cliquez sur **Sélectionner**.
-9. Cliquez sur **Créer**.
+9. Cliquez sur **Créer**
 
 ## <a name="create-a-trusted-certificate-profile"></a>Créer un profil de certificat approuvé
 
@@ -63,7 +63,7 @@ Importez le certificat racine du serveur VPN émis par l’Autorité de certific
     3. Sélectionnez **iOS** pour la **Plateforme**.
     4. Sélectionnez **Certificat approuvé** pour le **Type de profil**.
 4. Cliquez sur l’icône de dossier et accédez à votre certificat VPN (fichier .cer) que vous avez exporté à partir de votre console d’administration VPN. Cliquez sur OK
-5. Cliquez sur **Créer**.
+5. Cliquez sur **Create (Créer)**.
 
     ![Créer un profil de certificat approuvé](media\vpn-per-app-create-trusted-cert.png)
 
@@ -89,7 +89,7 @@ Le profil de certificat racine approuvé permet à iOS d’approuver automatique
 12. Cliquez sur **Ajouter**.
 13. Tapez l’***URL du serveur*** et cliquez sur **Ajouter**.
 14. Cliquez sur **OK**.
-15. Cliquez sur **Créer**.
+15. Cliquez sur **Create (Créer)**.
 
     ![Créer un profil de certificat SCEP](media\vpn-per-app-create-scep-cert.png)
 
@@ -117,7 +117,7 @@ Le profil VPN contient le certificat SCEP qui inclut les informations d’identi
     2. Tapez l’URL du VPN et cliquez sur **Ajouter**.
     3. Cliquez sur **OK**.
 6. Cliquez sur **OK**.
-7. Cliquez sur **Créer**.
+7. Cliquez sur **Create (Créer)**.
 
     ![Créer un profil VPN par application](media\vpn-per-app-create-vpn-profile.png)
 
@@ -138,7 +138,7 @@ Après avoir ajouté votre profil VPN, associez l’application et le groupe Azu
     > [!NOTE]  
     > La définition de VPN peut prendre jusqu’à une minute pour récupérer la valeur. Attendez 3 à 5 minutes avant de cliquer sur **Enregistrer**.
 
-9. Cliquez sur **Enregistrer**.
+9. Cliquez sur **Save**.
 
     ![Associer une application au VPN](media\vpn-per-app-app-to-vpn.png)
 

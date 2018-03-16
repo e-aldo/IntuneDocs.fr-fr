@@ -1,7 +1,7 @@
 ---
-title: "Journaux de stratégie de protection des applications"
-titlesuffix: Azure portal
-description: "Cette rubrique décrit l’enregistrement des paramètres de stratégie de protection des applications consignés dans les journaux de l’application."
+title: "Passer en revue les journaux de stratégie de protection d’application"
+titlesuffix: Microsoft Intune
+description: "Découvrez plus en détail les paramètres disponibles dans les journaux de protection d’application."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Consulter les journaux de la protection des applications clientes
 
-Vous pouvez accéder aux journaux en activant le mode de diagnostic Intune pour une application sur un client mobile. Le tableau suivant affiche le nom et une description des paramètres enregistrés dans le journal.
+Découvrez plus en détail les paramètres disponibles dans les journaux de protection d’application. Accédez aux journaux en activant le mode de diagnostic Intune pour une application sur un client mobile. Le tableau suivant affiche le nom et une description des paramètres enregistrés dans le journal.
 
 ## <a name="app-protection-policy-settings"></a>Paramètres de stratégie de protection d’application
 
@@ -42,7 +42,7 @@ Vous pouvez accéder aux journaux en activant le mode de diagnostic Intune pour 
 | DisableShareSense           | N/A                                                                                                                                                                                                                                                                                                         | N/A : paramètre non utilisé activement par le service Intune.                                                                                                                                                |
 | FileEncryptionLevel         | 0 = Quand l’appareil est verrouillé<br>1 = Quand l'appareil est verrouillé et que des fichiers sont ouverts<br>2 = Après le redémarrage de l'appareil<br>3 = Utiliser les paramètres de l'appareil                                                                                                                                                                      | [Réadressage des données] Chiffre les données de l’application.                                                                                                                                                      |
 | FileSharingSaveAsDisabled   | 0 = Non<br>1 = Oui                                                                                                                                                                                                                                                                                           | [Réadressage des données] Empêche « Enregistrer sous ».                                                                                                                                                     |
-| IntuneIdentityUPN           | UPN de l’utilisateur GAM Intune.                                                                                                                                                                                                                                                                                  | N/A                                                                                                                                                                                     |
+| IntuneIdentityUPN           | UPN de l’utilisateur MAM Intune.                                                                                                                                                                                                                                                                                  | N/A                                                                                                                                                                                     |
 | ManagedBrowserRequired      | 0 = Non<br>1 = Oui                                                                                                                                                                                                                                                                                           | [Réadressage des données] Affiche le contenu Web uniquement dans l’application Managed Browser.                                                                                                     |
 | ManagedLocations            | Une valeur représentant le nombre d’emplacements de stockage gérés dans lesquels l’application peut enregistrer des données. <br>1 = OneDrive<br>2 = SharePoint<br>3 = OneDrive et SharePoint<br>32 = Stockage local<br>33 = Stockage local et OneDrive<br>34 = Stockage local et SharePoint<br>35 = Stockage local, OneDrive et SharePoint | [Réadressage des données] Sélectionnez les services de stockage dans lesquels les données d'entreprise peuvent être enregistrées.                                                                                                          |
 | MinAppVersion               | « 0.0 » = Aucune version minimale de l’application exigée<br>Autre valeur = Version minimale de l’application exigée                                                                                                                                                                                                                                       | [Accès] Exige une version minimale de l’application.                                                                                                                                                    |

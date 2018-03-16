@@ -3,10 +3,10 @@ title: "Créer et déployer une stratégie de protection d’application Protect
 titlesuffix: Azure portal
 description: "Créer et déployer des stratégies de protection d’application WIP avec Intune"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 940c4bc17face7ecef2b6888e199ba47073659ba
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
@@ -33,7 +33,7 @@ Examinons quelques concepts lors de l’ajout d’une stratégie WIP.
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Liste des applications autorisées et exemptes
 
--   **Applications autorisées** Il s’agit des applications qui doivent se conformer à cette stratégie.
+-   **Applications autorisées** : il s’agit des applications qui doivent se conformer à cette stratégie.
 
 -   **Applications exemptes** Ces applications sont exemptes de cette stratégie et peuvent accéder aux données d’entreprise sans restrictions.
 
@@ -47,9 +47,9 @@ Examinons quelques concepts lors de l’ajout d’une stratégie WIP.
 
 ## <a name="pre-requisites"></a>Prérequis
 
-Vous devez configurer le fournisseur GAM avant de pouvoir créer une stratégie de protection d’application WIP. En savoir plus sur la façon de [configurer le fournisseur MAM avec Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+Vous devez configurer le fournisseur MAM avant de pouvoir créer une stratégie de protection d’application WIP. En savoir plus sur la façon de [configurer le fournisseur MAM avec Intune](app-protection-policies-configure-windows-10.md).
 
-Les éléments suivants sont également requis :
+Vous devez aussi disposer des licences et des mises à jour suivantes :
 
 -   Licence [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ Les éléments suivants sont également requis :
 
 ## <a name="to-add-a-wip-policy"></a>Pour ajouter une stratégie WIP
 
-Une fois que vous avez configuré Intune dans votre organisation, vous pouvez créer une stratégie propre à WIP via le [portail Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+Une fois que vous avez configuré Intune dans votre organisation, vous pouvez créer une stratégie propre à WIP via le [portail Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  Accédez au **Tableau de bord Gestion des applications mobiles Intune**, choisissez **Tous les paramètres** > **Stratégie d’application**.
 
@@ -80,7 +80,7 @@ Une fois que vous avez configuré Intune dans votre organisation, vous pouvez cr
 
 1.  À partir du panneau **Stratégie d’application**, cliquez sur le nom de votre stratégie, puis cliquez sur **Applications autorisées** à partir du panneau **Ajouter une stratégie**. Le panneau **Applications autorisées** s’ouvre et affiche toutes les applications qui sont déjà incluses dans la liste pour cette stratégie de protection d’application.
 
-2.  À partir du panneau **Applications autorisées**, choisissez **Ajouter des applications**. Le panneau **Ajouter des applications** s’ouvre pour afficher toutes les applications qui font partie de cette liste.
+2.  À partir du panneau **Applications autorisées**, choisissez **Ajouter des applications**. Les informations de **Ajouter des applications** montrent toutes les applications qui font partie de cette liste.
 
 3.  Sélectionnez chaque application devant accéder à vos données d’entreprise, puis choisissez **OK**. Le panneau **Applications autorisées** est mis à jour et vous montre les applications sélectionnées.
 
@@ -92,7 +92,7 @@ Une fois que vous avez configuré Intune dans votre organisation, vous pouvez cr
 
 2.  À partir du panneau **Applications autorisées**, choisissez **Ajouter des applications**.
 
-3.  Dans le panneau **Ajouter des applications**, choisissez **Applications du Windows Store** dans la liste déroulante. Le panneau change pour afficher des zones vous permettant d’ajouter un **éditeur** et un **nom** d’application.
+3.  Dans le panneau **Ajouter des applications**, choisissez **Applications du Windows Store** dans la liste déroulante. Les informations changent et affichent des zones vous permettant d’ajouter un **éditeur** et un **nom** d’application.
 
 4.  Tapez le nom de l’application et le nom de son éditeur, puis choisissez **OK**.
 
@@ -137,7 +137,7 @@ Quand vous utilisez des applications WIP et des applications inconnues de WIP, n
 WIP recherche des pratiques de partage de données inappropriées et empêche l’utilisateur de terminer l’action. Cela peut inclure le partage d’informations entre des applications non protégées pas votre entreprise, ou le partage de données d’entreprise entre des personnes et appareils en dehors de votre organisation.
 
 #### <a name="allow-overrides"></a>Autoriser l’utilisateur à ignorer les avertissements
-WIP recherche les partages de données inappropriés, et avertit les utilisateurs s’ils font quelque chose de potentiellement dangereux. Toutefois, ce mode permet à l’utilisateur de remplacer la stratégie et de partager les données. L’action est alors consignée dans votre journal d’audit.
+WIP recherche les partages de données inappropriés, et avertit les utilisateurs quand ils font quelque chose de potentiellement dangereux. Toutefois, ce mode permet à l’utilisateur de remplacer la stratégie et de partager les données. L’action est alors consignée dans votre journal d’audit.
 
 #### <a name="silent"></a>Silencieux
 WIP s’exécute en mode silencieux, en consignant les partages de données inappropriés, sans bloquer l’utilisateur avec les invites qui s’affichent dans le mode Autoriser l’utilisateur à ignorer les avertissements. Les actions non autorisées d’applications, comme les tentatives d’accès inappropriées à une ressource réseau ou à des données protégées par WIP sont toujours arrêtées.
@@ -145,7 +145,7 @@ WIP s’exécute en mode silencieux, en consignant les partages de données inap
 #### <a name="off-not-recommended"></a>Désactivé (non recommandé)
 WIP est désactivé et ne permet pas de protéger ou vérifier vos données.
 
-Après avoir désactivé WIP, une tentative est effectuée pour déchiffrer les fichiers marqués par WIP sur les disques connectés localement. N’oubliez pas que vos informations de déchiffrement et de stratégie précédentes ne sont pas réappliquées automatiquement si vous réactivez la protection WIP.
+Après avoir désactivé WIP, une tentative est effectuée pour déchiffrer les fichiers marqués par WIP sur les disques connectés localement. Notez que les informations de déchiffrement et de stratégie précédentes ne sont pas réappliquées automatiquement si vous réactivez la protection WIP.
 
 ### <a name="add-a-protection-mode"></a>Ajouter un mode de protection
 
@@ -153,7 +153,7 @@ Après avoir désactivé WIP, une tentative est effectuée pour déchiffrer les 
 
     ![Capture d’écran du mode d’apprentissage](./media/learning-mode-sc1.png)
 
-1.  Choisissez **Enregistrer**.
+2.  Choisissez **Enregistrer**.
 
 ### <a name="use-wip-learning"></a>Utiliser WIP Learning
 
@@ -165,10 +165,23 @@ Après avoir désactivé WIP, une tentative est effectuée pour déchiffrer les 
  
     Une fois que les applications s’affichent dans le rapport de journalisation Apprentissage Protection des informations Windows, vous pouvez les ajouter à vos stratégies de protection d’application.
 
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>Autoriser l’indexeur de recherche Windows à rechercher les éléments chiffrés
+Autorise ou interdit l’indexation des éléments. Ce commutateur concerne l’indexeur de recherche Windows, qui contrôle s’il indexe les éléments chiffrés, comme les fichiers protégés par la Protection des informations Windows.
+
+Cette option de stratégie de protection d’application se trouve dans les **Paramètres avancés** de la stratégie de Protection des informations Windows. La stratégie de protection d’application doit être définie sur la plateforme *Windows 10* et la stratégie d’application **État de l’inscription** doit être définie sur **Avec inscription**. 
+
+Quand la stratégie est activée, les éléments protégés par la Protection des informations Windows sont indexés et leurs métadonnées sont stockées à un emplacement non chiffré. Les métadonnées incluent des éléments comme le chemin et la date de modification des fichiers.
+
+Quand la stratégie est désactivée, les éléments protégés par la Protection des informations Windows ne sont pas indexés et n’apparaissent pas dans les résultats de Cortana ou de l’Explorateur de fichiers. Il peut également y avoir un impact sur les performances pour les photos et les applications Groove si de nombreux fichiers multimédias sont protégés par la Protection des informations Windows sur l’appareil.
+
+## <a name="add-encrypted-file-extensions"></a>Ajouter des extensions de fichiers chiffrés
+
+En plus de définir l’option **Autoriser l’indexeur de recherche Windows à rechercher les éléments chiffrés**, vous pouvez spécifier une liste d’extensions de fichiers. Les fichiers avec ces extensions sont chiffrés lors de la copie à partir d’un partage SMB (Server Message Block) dans les limites de l’entreprise, telles qu’elles sont définies dans la liste des emplacements réseau. Quand cette stratégie n’est pas spécifiée, le comportement existant de chiffrement automatique est appliqué. Quand cette stratégie est configurée, seuls les fichiers avec les extensions présentes dans la liste sont chiffrés.
+
 ## <a name="deploy-your-wip-app-protection-policy"></a>Déployer une stratégie de protection d’application WIP
 
 > [!IMPORTANT]
-> Cela s’applique à WIP sans inscription d’appareils.
+> Ces informations s’appliquent à la Protection des informations Windows sans inscription d’appareils.
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -178,4 +191,8 @@ Une fois que vous avez créé votre stratégie de protection d’application WIP
 
     Une liste de groupes d’utilisateurs, composée de tous les groupes de sécurité figurant dans Azure Active Directory, s’ouvre dans le panneau **Ajouter un groupe d’utilisateurs**.
 
-1.  Choisissez le groupe auquel vous souhaitez appliquer votre stratégie, puis **Sélectionner** pour déployer la stratégie.
+2.  Choisissez le groupe auquel vous souhaitez appliquer votre stratégie, puis **Sélectionner** pour déployer la stratégie.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+- Pour plus d’informations sur la Protection des informations Windows, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 

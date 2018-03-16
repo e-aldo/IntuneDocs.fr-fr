@@ -1,12 +1,12 @@
 ---
-title: "Portail de dépannage du support technique | Microsoft Docs"
-titlesuffix: Azure portal
-description: "Les équipes du centre de support technique utilisent le portail de dépannage pour résoudre les problèmes techniques des utilisateurs"
+title: "Portail de dépannage du centre de support technique"
+titlesuffix: Microsoft Intune
+description: "Les équipes de support technique utilisent le portail de résolution des problèmes pour résoudre les problèmes techniques des utilisateurs."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 2da1a37af1ab0b0b1566738bf1ecdfe990dd760d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>Utilisation du portail de résolution des problèmes pour aider les utilisateurs
+# <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utiliser le portail de résolution des problèmes pour aider les utilisateurs dans votre entreprise
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -33,7 +33,7 @@ Pour obtenir la procédure d’ajout d’un rôle Opérateur de support techniqu
 Quand un utilisateur contacte le support technique pour signaler un problème avec Intune, l’opérateur entre le nom de l’utilisateur. Intune affiche des données utiles qui peuvent aider à résoudre de nombreux problèmes de niveau 1, notamment :
 
 - État de l’utilisateur
-- Affectations
+- Attributions
 - Problèmes de conformité
 - L’appareil ne répond pas
 - L’appareil ne reçoit pas les paramètres VPN ou Wi-Fi
@@ -63,8 +63,8 @@ Vous pouvez utiliser le panneau **Résoudre les problèmes** pour examiner les i
 | 1.   | État du compte  | Affiche l’état du locataire Intune actif comme étant **Actif** ou **Inactif**.       |
 | 2.   | Sélection de l'utilisateur  | Nom de l’utilisateur actuellement sélectionné. Cliquez sur **Changer d’utilisateur** pour choisir un autre utilisateur.       |
 | 3.   | État de l’utilisateur  | Affiche pour cet utilisateur l’état de la licence Intune, le nombre d’appareils, la conformité de chaque appareil, le nombre d’applications et la conformité des applications.       |
-| 4.   | Informations sur l'utilisateur  | Utilisez la liste pour sélectionner les détails à examiner dans le panneau. <br>Vous pouvez sélectionner : <ul><li>Applications mobiles<li>Stratégies de protection des applications<li>Stratégies de conformité<li> Stratégies de configuration</ul>      |
-| 5.   | Appartenance au groupe  | Yadda       |
+| 4.   | Informations utilisateur  | Utilisez la liste pour sélectionner les détails à examiner dans le panneau. <br>Vous pouvez sélectionner : <ul><li>Applications mobiles<li>Stratégies de protection des applications<li>Stratégies de conformité<li> Stratégies de configuration<li> Restrictions d’inscription</ul>      |
+| 5.   | Appartenance aux groupes  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Informations de référence sur les applications mobiles
 
@@ -77,9 +77,9 @@ Propriétés des applications mobiles.
 | Propriété      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nom          | Nom de l’application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Système d'exploitation            | Système d’exploitation installé sur l’appareil.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Système d’exploitation            | Système d’exploitation installé sur l’appareil.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Type          | Vous pouvez choisir un type d’attribution pour chaque application.  <br> **Disponible** : les utilisateurs effectuent l’installation de l’application à la demande à partir de l’application ou du site web de portail d’entreprise.  <br> **Non applicable** : l’application n’est pas installée ni affichée dans le portail d’entreprise. <br> **Désinstaller** : l’application est désinstallée des appareils dans les groupes sélectionnés.  <br> **Disponible avec ou sans inscription** : affectez cette application à des groupes d’utilisateurs dont les appareils ne sont pas inscrits avec Intune. |
-| Modifié le | Nom du type d’appareil.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Dernière modification le | Nom du type d’appareil.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ### <a name="devices"></a>Appareils
 
@@ -93,7 +93,7 @@ Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azur
 | Propriété          | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Conforme à Intune   | Nom du type d’appareil.                                                                                                     |
 | Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
-| Système d'exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Système d’exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
 | Version du système d'exploitation         | Numéro de version du système d’exploitation de l’appareil.                                                                                  |
 | Dernier archivage      | Nom du type d’appareil.                                                                                                     |
 
@@ -122,7 +122,7 @@ Le tableau récapitule l’état des stratégies de protection des applications 
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Nom        | Nom de l’application.                                                                                                        |
 | Déployé    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
-| Plateforme    | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
+| Plate-forme    | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Inscription  | Nom du type d’appareil.                                                                                                     |
 | Dernière mise à jour | Horodatage de la modification de la stratégie.                                                                                              |
 
@@ -132,14 +132,14 @@ Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azur
 
 | Propriété           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nom de l'appareil        | Nom du type d’appareil.                                                                                                     |
+| Nom du périphérique        | Nom du type d’appareil.                                                                                                     |
 | Géré par         | Horodatage de la modification de la stratégie.                                                                                              |
 | Type de jonction à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
 | Propriété          | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Conforme à Intune   | Nom du type d’appareil.                                                                                                     |
 | Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
 | Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
-| Système d'exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Système d’exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
 | Version du système d'exploitation         | Numéro de version du système d’exploitation de l’appareil.                                                                                  |
 | Dernier archivage      | Nom du type d’appareil.                                                                                                     |
 
@@ -153,11 +153,11 @@ Propriétés des stratégies de conformité.
 
 | Propriété      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Assignment    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Affectation    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
 | Nom          | Nom de l’application.                                                                                                        |
-| Système d'exploitation            | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Système d’exploitation            | Système d’exploitation installé sur l’appareil.                                                                                       |
 | Type de stratégie   | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
-| Modifié le | Nom du type d’appareil.                                                                                                     |
+| Dernière modification le | Nom du type d’appareil.                                                                                                     |
 
 ### <a name="devices"></a>Appareils
 
@@ -171,7 +171,7 @@ Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azur
 | Propriété          | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Conforme à Intune   | Nom du type d’appareil.                                                                                                     |
 | Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
-| Système d'exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Système d’exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
 | Version du système d'exploitation         | Numéro de version du système d’exploitation de l’appareil.                                                                                  |
 | Dernier archivage      | Nom du type d’appareil.                                                                                                     |
 
@@ -198,11 +198,11 @@ Propriétés des stratégies de configuration.
 
 | Propriété      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Assignment    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
+| Affectation    | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
 | Nom          | Nom de l’application.                                                                                                        |
-| Système d'exploitation            | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Système d’exploitation            | Système d’exploitation installé sur l’appareil.                                                                                       |
 | Type de stratégie   | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
-| Modifié le | Nom du type d’appareil.                                                                                                     |
+| Dernière modification le | Nom du type d’appareil.                                                                                                     |
 
 ### <a name="devices"></a>Appareils
 
@@ -216,7 +216,7 @@ Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azur
 | Propriété          | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Conforme à Intune   | Nom du type d’appareil.                                                                                                     |
 | Conforme à Azure AD | L’état de chacune des applications de protection d’application des utilisateurs. Les états possibles des applications sont **Archivé** et **Non archivé**. |
-| Système d'exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
+| Système d’exploitation                 | Système d’exploitation installé sur l’appareil.                                                                                       |
 | Version du système d'exploitation         | Numéro de version du système d’exploitation de l’appareil.                                                                                  |
 | Dernier archivage      | Nom du type d’appareil.                                                                                                     |
 

@@ -1,7 +1,7 @@
 ---
 title: "Configurer l’inscription au programme Apple School Manager pour les appareils iOS"
-titlesuffix: Azure portal
-description: "Découvrez comment configurer l’inscription au programme Apple School Manager pour les appareils iOS d’entreprise avec Intune"
+titlesuffix: Microsoft Intune
+description: "Découvrez comment configurer l’inscription au programme Apple School Manager pour les appareils iOS d’entreprise avec Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,13 +15,13 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87e4c16fbb87ee83a01fe44a46c55c6243c8fc8a
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Activer l’inscription des appareils iOS avec Apple School Manager
+# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurer l’inscription des appareils iOS avec Apple School Manager
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,13 +32,13 @@ ms.lasthandoff: 02/09/2018
 >
 >Si votre page **Inscription des appareils** ressemble à l’image ci-dessous, c’est le signe que votre compte n’est pas encore passé à la nouvelle interface utilisateur ; vous pouvez utiliser cette page d’aide.
 >
->![Ancienne interface utilisateur](./media/appleenroll-oldui.png)
+>![Ancienne interface utilisateur d’Intune](./media/appleenroll-oldui.png)
 >
 >Si votre page **Inscription des appareils** ressemble à l’image ci-dessous, c’est le signe que vos interfaces utilisateur ont été mises à jour.  Accédez à [cette page d’aide](apple-school-manager-set-up-ios-newui.md).
 >
->![Nouvelle interface utilisateur](./media/appleenroll-newui.png)
+>![Nouvelle interface utilisateur d’Intune](./media/appleenroll-newui.png)
 
-Cette rubrique vous aide à activer l’inscription d’appareils iOS pour les appareils achetés dans le cadre du programme [Apple School Manager](https://school.apple.com/). En utilisant Intune avec Apple School Manager, vous pouvez inscrire de grandes quantités d’appareils iOS sans jamais les avoir en main. Quand un étudiant ou un enseignant active l’appareil, l’Assistant Configuration s’exécute avec les paramètres préconfigurés et l’appareil s’inscrit à la gestion.
+Cette rubrique vous aide à configurer l’inscription d’appareils iOS pour les appareils achetés dans le cadre du programme [Apple School Manager](https://school.apple.com/). En utilisant Intune avec Apple School Manager, vous pouvez inscrire de grandes quantités d’appareils iOS sans jamais les avoir en main. Quand un étudiant ou un enseignant active l’appareil, l’Assistant Configuration s’exécute avec les paramètres préconfigurés et l’appareil s’inscrit à la gestion.
 
 Pour activer l’inscription Apple School Manager, vous utilisez à la fois les portails Intune et Apple School Manager. Une liste de numéros de série ou un numéro de bon de commande est nécessaire pour que vous puissiez affecter des appareils à Intune à des fins de gestion. Vous créez des profils d’inscription DEP contenant les paramètres appliqués aux appareils lors de l’inscription.
 
@@ -61,7 +61,7 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise avec Apple School Man
 **Étape 1. Téléchargez un certificat de clé publique Intune nécessaire à la création d’un jeton Apple.**<br>
 1. Dans le [portail Azure d’Intune](https://aka.ms/intuneportal), choisissez **Inscription de l’appareil**, puis **Jeton du programme d’inscription**.
 
-  ![Capture d’écran du volet Jeton de programme d’inscription dans l’espace de travail Certificats Apple pour télécharger une clé publique.](./media/enrollment-program-token-download.png)
+  ![Volet Jeton de programme d’inscription dans l’espace de travail Certificats Apple pour télécharger une clé publique](./media/enrollment-program-token-download.png)
 
 2. Dans le panneau **Jeton du programme d’inscription**, choisissez **Télécharger votre clé publique** pour télécharger et enregistrer le fichier de clé de chiffrement (.pem) localement. Le fichier .pem est utilisé pour demander un certificat de relation d'approbation à partir du portail Apple School Manager.
 
@@ -69,19 +69,19 @@ Avant de pouvoir inscrire des appareils iOS d’entreprise avec Apple School Man
 1. Choisissez **Créer un jeton via Apple School Manager** et connectez-vous avec votre ID Apple d’entreprise. Vous pouvez utiliser cet ID Apple pour renouveler votre jeton Apple School Manager.
 2.  Dans le [portail Apple School Manager](https://school.apple.com), accédez à **Serveurs de gestion des appareils mobiles**, puis choisissez **Ajouter un serveur MDM** (en haut à droite).
 3.  Saisissez le **nom du serveur MDM**. Le nom du serveur vous permet d’identifier le serveur de gestion des appareils mobiles (MDM) uniquement. Il ne s’agit pas du nom ou de l’URL du serveur Microsoft Intune.
-   ![Capture d’écran du portail Apple School Manager avec l’option Numéro de série sélectionnée](./media/asm-server-assignment.png)
+   ![Portail Apple School Manager avec l’option Numéro de série sélectionnée](./media/asm-server-assignment.png)
 
 4.  Choisissez **Télécharger un fichier...**  dans le portail Apple, recherchez le fichier .pem, puis choisissez **Enregistrer un serveur MDM** (en bas à droite).
 5.  Choisissez **Obtenir un jeton** puis téléchargez le fichier de jeton de serveur (.p7m) sur votre ordinateur.
 6. Accédez à **Affectations d’appareil** et **Choisir appareil** par saisie manuelle des **numéros de série**, **numéro d’ordre**, ou **téléchargement de fichier CSV**.
-     ![Capture d’écran du portail Apple School Manager avec l’option Numéro de série sélectionnée](./media/asm-device-assignment.png)
+     ![Portail Apple School Manager avec l’option Numéro de série sélectionnée](./media/asm-device-assignment.png)
 7.  Choisissez l’action **Affecter au serveur**, puis choisissez le **serveur MDM** que vous avez créé.
 8. Spécifiez comment **choisir des appareils**, puis fournissez des informations et détails sur les appareils.
 9. Choisissez **Attribuer au serveur** et le &lt;nom_serveur&gt; spécifié pour Microsoft Intune, puis **OK**.
 
 **Étape 3. Entrez l’ID Apple utilisé pour créer votre jeton Apple School Manager.**<br>Cet ID doit être utilisé pour renouveler votre jeton Apple School Manager et est stocké pour référence ultérieure.
 
-![Capture d’écran : spécification de l’ID Apple utilisé pour créer le jeton du programme d’inscription et accès à ce jeton.](./media/enrollment-program-token-apple-id.png)
+![Spécification de l’ID Apple utilisé pour créer le jeton du programme d’inscription et accès à ce jeton](./media/enrollment-program-token-apple-id.png)
 
 **Étape 4 :. Localisez et téléchargez votre jeton.**<br>
 Accédez au fichier du certificat (.p7m), choisissez **Ouvrir**, puis **Télécharger**. Intune synchronise automatiquement vos appareils Apple School Manager auprès d’Apple.
@@ -103,7 +103,7 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
 6. Choisissez **Paramètres de gestion des appareils**. Ces éléments sont définis lors de l’activation et nécessitent une réinitialisation aux paramètres d’usine pour être modifiés. Configurez les paramètres de profil suivants, puis choisissez **Enregistrer** :
 
-  ![Capture d’écran : choix du mode d’administration. L’appareil a les paramètres suivants : Supervisé, Inscription verrouillée, Autoriser l’appairage défini sur Refuser tout. Apple Configurator Certificates est grisé pour un nouveau profil de programme d’inscription.](./media/enrollment-program-profile-mode.png)
+  ![Choix du mode de gestion](./media/enrollment-program-profile-mode.png)
 
     - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées.
 
@@ -151,10 +151,10 @@ Maintenant qu’Intune a reçu l’autorisation de gérer vos appareils Apple Sc
 
 1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
-  ![Capture d’écran : sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser.](./media/enrollment-program-device-sync.png)
+  ![Sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser](./media/enrollment-program-device-sync.png)
 2. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
-  ![Capture d’écran du panneau de synchronisation : choix du lien Demander une synchronisation.](./media/enrollment-program-device-request-sync.png)
+  ![Panneau de synchronisation avec choix du lien Demander une synchronisation](./media/enrollment-program-device-request-sync.png)
 
   Pour être conforme aux conditions d’Apple pour un trafic acceptable, Intune impose les restrictions suivantes :
    -    Une synchronisation complète ne peut pas s’exécuter plus d’une fois tous les sept jours. Pendant une synchronisation complète, Intune actualise chaque numéro de série attribué à Intune par Apple, que le numéro de série ait été ou non déjà synchronisé. Si une synchronisation complète est tentée dans les sept jours de la synchronisation complète précédente, Intune actualise seulement les numéros de série qui ne figurent pas déjà dans Intune.
@@ -169,7 +169,7 @@ Un profil d’inscription doit être affecté aux appareils Apple School Manager
 1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple**, puis **Profils du programme d’inscription**.
 2. Dans la liste **Profils du programme d’inscription**, choisissez le profil que vous voulez affecter aux appareils, puis **Affectations d’appareils**.
 
- ![Capture d’écran des affectations d’appareils avec l’option Affecter sélectionnée.](./media/enrollment-program-device-assign.png)
+ ![Affectations des appareils avec Affecter sélectionné](./media/enrollment-program-device-assign.png)
 
 3. Choisissez **Affecter**, puis les appareils Apple School Manager auxquels vous voulez affecter ce profil. Vous pouvez filtrer pour afficher les appareils disponibles :
   - **non affecté**
@@ -177,7 +177,7 @@ Un profil d’inscription doit être affecté aux appareils Apple School Manager
   - **&lt;nom du profil&gt;**
 4. Choisissez les appareils à affecter. La case à cocher au-dessus de la colonne sélectionne jusqu'à 1 000 appareils répertoriés. Cliquez sur **Affecter**. Pour inscrire plus de 1000 appareils, répétez les étapes d’affectation jusqu’à ce qu’un profil d’inscription ait été affecté à tous les appareils.
 
-  ![Capture d’écran du bouton d’affectation de profil du programme d’inscription dans Intune](media/dep-profile-assignment.png)
+  ![Bouton d’affectation de profil du programme d’inscription dans Intune](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices-to-users"></a>Distribuer des appareils aux utilisateurs
 

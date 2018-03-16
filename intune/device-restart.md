@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9afe804d2f9e48e27ced4bd92959cd065f6ec89a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a49f95ce81f750c539959674a15df41118f20aaa
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Redémarrer à distance des appareils avec Intune
 
@@ -40,12 +40,12 @@ L’action d’appareil **Redémarrer** entraîne le redémarrage de l’apparei
 
 ## <a name="how-to-restart-a-device"></a>Comment redémarrer un appareil
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
-4. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
-5. Dans la liste des appareils que vous gérez, choisissez un appareil, puis choisissez l’action à distance d’appareil **Redémarrer**.
+4. Dans le panneau **Appareils**, choisissez **Tous les appareils**.
+5. Dans la liste des appareils que vous gérez, choisissez un appareil, choisissez **...Plus**, puis choisissez l’action à distance d’appareil **Redémarrer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour connaître l’état de l’action que vous venez d’effectuer, allez dans le panneau **Appareils et groupes**, et choisissez **Actions d’appareil**.
+Pour voir l’état de l’action que vous venez d’effectuer, dans le panneau **Appareils**, choisissez **Actions d’appareil**.

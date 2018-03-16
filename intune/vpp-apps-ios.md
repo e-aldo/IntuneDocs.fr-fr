@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc5ebd90483b0fa0e25461574085bd4160f012ea
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
+ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les applications iOS achetées par le biais d’un programme d’achat en volume avec Microsoft Intune
 
@@ -87,7 +87,7 @@ Vérifiez que quand vous configurez un appareil pour un nouvel utilisateur Intun
 4. Dans le panneau **Créer un jeton VPP**, spécifiez les informations suivantes :
     - **Fichier de jeton VPP** : si vous ne l’avez pas encore fait, inscrivez-vous au Programme d’achat en volume Apple pour les entreprises ou au programme pour les organismes éducatifs. Après inscription, téléchargez le jeton VPP Apple de votre compte et sélectionnez-le ici.
     - **ID Apple** : saisissez l’ID Apple du compte associé au programme d’achats en volume.
-    - **Pays/région** : sélectionnez le Store du pays VPP.  Intune synchronise les applications VPP pour tous les paramètres régionaux à partir du magasin du pays VPP spécifié.
+    - **Pays/région** : sélectionnez le Store du pays VPP.  Intune synchronise les applications VPP pour tous les paramètres régionaux à partir du magasin du pays/région VPP spécifié.
         > [!WARNING]  
         > Si vous changez de pays/région, les métadonnées des applications et l’URL du Store sont mises à jour lors de la prochaine synchronisation avec le service Apple pour les applications créées avec ce jeton. L’application n’est pas mise à jour si elle n’existe pas dans le Store du nouveau pays/région.
 
@@ -134,17 +134,20 @@ L’utilisateur final reçoit des invites concernant l’installation d’applic
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Révocation des licences d’application et suppression des jetons 
 
-<!-- 820863 -->For a given device that has one or more iOS volume-purchase program (VPP) apps, you revoke all associated device-based app licenses for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment type of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstallS the app from the device.
+<!-- 820863 -->  
+Pour un appareil donné qui a une ou plusieurs applications du Programme d’achat en volume (VPP) iOS, vous pouvez révoquer pour l’appareil toutes les licences d’application associées basées sur l’appareil. La révocation d’une licence d’application ne désinstalle pas l’application VPP de l’appareil. Pour désinstaller une application VPP et récupérer une licence, vous devez modifier le type d’affectation de l’application VPP en **Désinstaller**. Si vous supprimez une application qui a été affectée à un utilisateur, Intune récupère la licence de l’utilisateur ou de l’appareil, et désinstalle l’application de l’appareil.
 
 >[!NOTE]
 >Intune récupère toutes les licences utilisateur d’applications VPP iOS quand un employé quitte l’entreprise et ne fait plus partie des groupes AAD.
 
-<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses or uninstall apps. 
+<!-- 820879 -->  
+Vous pouvez supprimer un jeton VPP iOS en utilisant la console. Ceci peut être nécessaire si vous avez des instances dupliquées d’un jeton VPP. La suppression d’un jeton entraîne la suppression des applications et l’affectation associées. Cependant, la suppression d’un jeton de ne révoque pas les licences des applications et ne désinstalle pas les applications. 
 
 >[!NOTE]
 >Intune ne peut pas révoquer de licences d’application après la suppression d’un jeton. 
 
-<!-- 820870 -->To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
+<!-- 820870 -->  
+Pour révoquer la licence de toutes les applications VPP pour un jeton VPP donné, vous devez d’abord révoquer toutes les licences d’application associées au jeton, puis supprimer le jeton.
 
 ## <a name="further-information"></a>Informations supplémentaires
 

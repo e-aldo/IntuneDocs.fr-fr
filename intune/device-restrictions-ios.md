@@ -1,27 +1,26 @@
 ---
-title: "Paramètres de restrictions d’appareil Intune pour iOS"
-titleSuffix: Azure portal
-description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils iOS."
+title: "Paramètres de restrictions d’appareil Microsoft Intune pour iOS"
+titleSuffix: 
+description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et les fonctionnalités des appareils exécutant iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils iOS dans Microsoft Intune
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Paramètres de restriction des appareils iOS de Microsoft Intune
+Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -70,7 +69,7 @@ Vous pouvez activer le mode supervisé iOS seulement pendant l’installation in
 - Interface utilisateur - Restrictions 
 - Installation de profils de configuration par l’interface utilisateur 
 - Actualités 
-- raccourcis clavier 
+- Raccourcis clavier 
 - Modifications du code secret 
 - Changements du nom de l’appareil 
 - Changements de papier peint 
@@ -95,7 +94,7 @@ Vous pouvez activer le mode supervisé iOS seulement pendant l’installation in
 ## <a name="password"></a>Mot de passe
 -   **Mot de passe** - Demande à l’utilisateur final d’entrer un mot de passe pour accéder à l’appareil.
     -   **Mots de passe simples** : autorise des mots de passe simples, comme 0000 et 1234.
-    -   **Type de mot de passe requis** : spécifiez le type de mot de passe requis, par exemple une valeur numérique uniquement, ou alphanumérique.
+    -   **Type de mot de passe requis** : spécifiez le type de mot de passe requis, par exemple des caractères numériques uniquement, ou des caractères alphanumériques.
     -   **Nombre de caractères non alphanumériques dans le mot de passe** : spécifie le nombre de caractères de symbole (comme **#** ou **@**) devant être inclus dans le mot de passe.
     -   **Longueur minimale du mot de passe** : spécifie le nombre minimal de caractères à inclure dans le mot de passe.
     -   **Nombre d'échecs de connexion avant réinitialisation de l'appareil** : spécifie le nombre de tentatives de connexion ayant échoué que le paramètre système autorise avant d’effacer le contenu de l’appareil.
@@ -107,7 +106,7 @@ Vous pouvez activer le mode supervisé iOS seulement pendant l’installation in
 - **Modification du code secret (mode supervisé uniquement)** : empêche la modification, l’ajout ou la suppression du code secret.
     - **Modification de l’empreinte digitale (mode supervisé uniquement)** : empêche la modification, l’ajout ou la suppression par l’utilisateur des paramètres Touch ID.
 
-<sup>1</sup> Lorsque vous configurez les paramètres **Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil** et **Nombre maximal de minutes entre le verrouillage de l'écran et la demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
+<sup>1</sup> Lorsque vous configurez les paramètres **Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil** et **Nombre maximal de minutes entre le verrouillage de l'écran et la demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres une valeur de **5** minutes, l’écran s’éteint automatiquement après 5 minutes, et l’appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l’utilisateur a désactivé l’écran, l’appareil se verrouille 5 minutes plus tard.
 
 ## <a name="locked-screen-experience"></a>Expérience d’écran verrouillé
 
@@ -133,7 +132,7 @@ Vous pouvez activer le mode supervisé iOS seulement pendant l’installation in
 -   **Game Center (mode supervisé uniquement)** : bloquez ou activez l’utilisation de l’application Game Center.
 -   **Jeux multijoueur (en mode supervisé uniquement)** autorisez l’utilisateur à jouer à des jeux multijoueur sur l’appareil.
 -   **Plage de classifications** : choisissez la plage de classifications pour laquelle vous souhaitez configurer les téléchargements autorisés, puis cliquez sur les évaluations autorisées pour **Films** et **Émissions TV**.
--   **Applications** : choisissez la catégorie d’âge autorisée pour les applications que les utilisateurs pourront télécharger, ou choisissez **Autoriser toutes les applications**.
+-   **Applications** : choisissez la catégorie d’âge autorisée pour les applications que les utilisateurs peuvent télécharger, ou choisissez **Autoriser toutes les applications**.
 
 ## <a name="built-in-apps"></a>Applications intégrées
 
@@ -156,8 +155,8 @@ Vous pouvez activer le mode supervisé iOS seulement pendant l’installation in
 
 Dans la liste des applications restreintes, vous pouvez configurer une des listes suivantes :
 
-- Une liste **Applications interdites** : répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter. Rien n’empêche les utilisateurs d’installer une application interdite mais, s’ils le font, vous en serez informé.
-- Une liste **Applications approuvées** : répertorie les applications que les utilisateurs sont autorisés à installer. Les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement. Rien n’empêche les utilisateurs d’installer une application qui ne figure pas dans la liste approuvée, mais s’ils le font, vous en serez informé.
+- Une liste **Applications interdites** : répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter. Rien n’empêche les utilisateurs d’installer une application interdite, mais, s’ils le font, vous en êtes informé.
+- Une liste **Applications approuvées** : répertorie les applications que les utilisateurs sont autorisés à installer. Les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement. Rien n’empêche les utilisateurs d’installer une application qui ne figure pas dans la liste approuvée, mais, s’ils le font, vous en êtes informé.
 
 Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans l’App Store.
 
@@ -169,7 +168,7 @@ Pour insérer une URL d’application dans la liste des applications, utilisez l
 Copiez l’URL de la page et utilisez-la en tant qu’adresse permettant de configurer la liste des applications autorisées ou interdites, ou une application à exécuter en mode plein écran.
 Les profils d’appareil qui contiennent des paramètres d’applications restreintes doivent être attribués à des groupes d’utilisateurs.
 
-Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est la suivante : https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est : https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Vous pouvez également utiliser iTunes pour rechercher l’application, puis la commande **Copier le lien** pour obtenir l’URL de l’application.
@@ -182,8 +181,8 @@ Vous pouvez également cliquer sur **Importer** pour remplir la liste à partir 
 
 Dans la liste des applications affichées ou masquées, vous pouvez configurer une des listes suivantes (nécessite des appareils supervisés tournant sous iOS 9.3 ou version ultérieure).
 
-Une liste **Applications masquées** : spécifier une liste d’applications à masquer aux utilisateurs. Les utilisateurs ne peuvent pas afficher ou lancer ces applications.
-Une liste **Applications visibles** : spécifier une liste d’applications que les utilisateurs peuvent afficher et lancer. Aucune autre application ne peut être affichée ou lancée.
+Liste **Applications masquées** : spécifiez une liste d’applications masquée aux utilisateurs. Les utilisateurs ne peuvent pas afficher ou lancer ces applications.
+Liste **Applications visibles** : spécifiez une liste d’applications que les utilisateurs peuvent voir et lancer. Aucune autre application ne peut être affichée ou lancée.
 
 Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans l’App Store.
 
@@ -194,7 +193,7 @@ Pour insérer une URL d’application dans la liste des applications, utilisez l
 À l’aide d’un moteur de recherche, recherchez l’application à utiliser dans l’App Store iTunes, puis ouvrez la page de l’application.
 Copiez l’URL de la page et utilisez-la en tant qu’adresse permettant de configurer la liste des applications autorisées ou interdites, ou une application à exécuter en mode plein écran.
 
-Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est la suivante : https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est : https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Vous pouvez également utiliser le logiciel iTunes pour rechercher l'application, puis la commande **Copier le lien** pour obtenir l'URL de l'application.
@@ -228,7 +227,7 @@ Vous pouvez également cliquer sur **Importer** pour remplir la liste à partir 
 
 ## <a name="keyboard-and-dictionary"></a>Clavier et dictionnaire
 
--   **Recherche de définition des mots (en mode supervisé uniquement)** : autorise la fonctionnalité iOS qui vous permet de sélectionner un mot et de rechercher sa définition.
+-   **Recherche de définition des mots (en mode supervisé uniquement)** : autorise la fonctionnalité iOS qui vous permet de mettre un mot en surbrillance et de rechercher sa définition.
 -   **Claviers prédictifs (en mode supervisé uniquement)** : autorise l’utilisation de claviers prédictifs qui suggèrent des mots que l’utilisateur pourrait vouloir utiliser.
 -   **Correction automatique (en mode supervisé uniquement)** : permet à l’appareil de corriger automatiquement les mots mal orthographiés.
 -   **Vérification orthographique du clavier (mode supervisé uniquement)** : active l’outil de vérification orthographique de l’appareil.
@@ -240,7 +239,7 @@ Vous pouvez également cliquer sur **Importer** pour remplir la liste à partir 
 -   **Synchronisation de documents sur iCloud (en mode supervisé uniquement)** : autorisez la synchronisation des documents et des clés-valeurs sur votre espace de stockage iCloud.
 -   **Synchronisation du flux de photos sur iCloud** : permet aux utilisateurs d’activer **Mon flux de photos** sur leur appareil afin de synchroniser les photos avec iCloud et de les mettre à la disposition de tous les appareils des utilisateurs.
 -   **Sauvegarde chiffrée** : exiger le chiffrement des sauvegardes d’appareil.
--   **Photothèque iCloud** : si définie sur **Non**, désactive l’utilisation de la photothèque iCloud qui permet aux utilisateurs de stocker des photos et des vidéos dans le cloud.    Toutes les photos qui ne sont pas entièrement téléchargées de la Photothèque iCloud sur l'appareil seront supprimées de l'appareil si cette valeur est définie sur **Non**.
+-   **Photothèque iCloud** : si défini sur **Non**, désactive l’utilisation de la Photothèque iCloud qui permet aux utilisateurs de stocker des photos et des vidéos dans le cloud.   Toutes les photos qui ne sont pas entièrement téléchargées de la Photothèque iCloud sur l’appareil sont supprimées de l’appareil si cette valeur est définie sur **Non**.
 -   **Applications gérées synchronisées avec le cloud** : autorisez les applications que vous gérez avec Intune à synchroniser les données sur le compte iCloud de l’utilisateur.
 -   **Flux de photos partagé** : choisissez **Non** pour désactiver le **partage de photos iCloud** sur l'appareil.
 -   **Continuation de l’activité** : autorise l’utilisateur à reprendre le travail qu’il a commencé sur un appareil iOS sur un autre appareil iOS ou macOS (continuité).
@@ -251,7 +250,7 @@ Utilisez ces paramètres pour configurer les appareils iOS pour qu’ils exécut
 
 ### <a name="settings"></a>Paramètres
 
-- **Nom de l’application** : entrez le nom de l’application tel qu’il apparaîtra dans la liste des applications sur ce panneau.
+- **Nom de l’application** : entrez le nom de l’application tel qu’il doit apparaître dans la liste des applications sur ce panneau.
 - **ID d'ensemble d'applications** : entrez l’ID d’ensemble de l’application. Pour plus d’aide, consultez la section **Référence à un ID d’ensemble pour les applications iOS intégrées** de cette rubrique.
 
 Une fois que vous spécifiez le nom de chaque application et l’ID d’ensemble, cliquez sur **Ajouter** pour l’ajouter à la liste.
@@ -339,11 +338,11 @@ Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées
 -   **Fenêtres publicitaires** : activer ou désactiver le bloqueur de fenêtres publicitaires du navigateur.
 
 
-## <a name="domains"></a>Domaines
+## <a name="domains"></a>Domains
 
 ### <a name="unmarked-email-domains"></a>Domaines d’e-mail non marqués
 
-Dans le champ **URL de domaine d’e-mail**, ajoutez une ou plusieurs URL à la liste. Lorsque les utilisateurs finaux reçoivent un e-mail provenant d’un domaine autre que celui que vous avez configuré, l’e-mail est marqué comme non approuvé dans l’application de messagerie iOS.
+Dans le champ **URL de domaine d’e-mail**, ajoutez une ou plusieurs URL à la liste. Quand les utilisateurs finaux reçoivent un e-mail provenant d’un domaine autre que ceux que vous avez configurés, l’e-mail est marqué comme non approuvé dans l’application iOS Mail.
 
 
 ### <a name="managed-web-domains"></a>Domaines web gérés

@@ -1,11 +1,11 @@
 ---
 title: "Composant Xamarin du SDK d’application Microsoft Intune"
-description: 
+description: "Le composant Xamarin du SDK d’application Intune active la stratégie de protection d’application Intune dans les applications iOS et Android générées avec Xamarin."
 keywords: sdk, Xamarin, intune
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 02/08/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,16 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df90f3e011442e4e383c18d0309416d6549c330c
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9fa0d471f91eeeebd0058417aa437e5469f48e09
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Composant Xamarin du SDK d’application Microsoft Intune
 
 > [!NOTE]
 > Vous pouvez d’abord lire l’article [Bien démarrer avec le SDK d’application Intune](app-sdk-get-started.md), qui explique comment préparer l’intégration sur chaque plateforme prise en charge.
-
-
 
 ## <a name="overview"></a>Vue d’ensemble
 Le [composant Xamarin du SDK d’application Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) active la [stratégie de protection des applications Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) dans les applications Android et iOS développées avec Xamarin. Le composant permet aux développeurs de générer facilement des fonctionnalités de protection des données dans leur application Xamarin.
@@ -33,7 +31,7 @@ Le [composant Xamarin du SDK d’application Intune](https://github.com/msintune
 > [!NOTE]
 > La prise en charge du SDK Intune pour Xamarin est disponible en préversion. 
 
-Le composant Xamarin du SDK d’application Microsoft Intune vous permet d’incorporer des stratégies de protection des applications Intune (également appelées stratégies APP ou GAM) dans vos applications développées avec Xamarin. Une application prenant en charge la gestion GAM est une application intégrée au kit SDK d’application Intune. Les administrateurs informatiques peuvent déployer des stratégies de protection des applications sur votre application mobile quand celle-ci est activement gérée par Intune.
+Le composant Xamarin du SDK d’application Microsoft Intune vous permet d’incorporer des stratégies de protection des applications Intune (également appelées stratégies APP ou MAM) dans vos applications développées avec Xamarin. Une application prenant en charge la gestion MAM est une application intégrée au kit SDK d’application Intune. Les administrateurs informatiques peuvent déployer des stratégies de protection des applications sur votre application mobile quand celle-ci est activement gérée par Intune.
 
 ## <a name="whats-supported"></a>Ce qui est pris en charge
 
@@ -52,7 +50,7 @@ Le composant Xamarin du SDK d’application Microsoft Intune vous permet d’in
 * Appareils inscrits auprès d’une gestion de la mobilité d’entreprise tierce
 * Appareils non gérés (non inscrits auprès de MDM)
 
-Les applications Xamarin développées avec le composant Xamarin du SDK d’application Intune peuvent maintenant recevoir des stratégies de protection des applications Intune sur des appareils inscrits et non inscrits à la gestion des appareils mobiles (GAM) Intune.
+Les applications Xamarin développées avec le composant Xamarin du SDK d’application Intune peuvent maintenant recevoir des stratégies de protection des applications Intune sur des appareils inscrits et non inscrits à la gestion des appareils mobiles (MAM) Intune.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -62,7 +60,7 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
 
 1.  Téléchargez **Xamarin-component.exe** [ici](https://components.xamarin.com/submit/xpkg) et extrayez-le.
 
-2. Lisez les [termes du contrat de licence](https://components.xamarin.com/license/microsoft.intune.mam) du composant Xamarin de la GAM Microsoft Intune.
+2. Lisez les [termes du contrat de licence](https://components.xamarin.com/license/microsoft.intune.mam) du composant Xamarin de Microsoft Intune MAM.
 
 3.  Téléchargez le dossier Composant Xamarin du SDK d’application Intune depuis [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) ou [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) et extrayez-le. Les deux fichiers téléchargés aux étapes 1 et 3 doivent être dans le même niveau de répertoire.
 
@@ -82,7 +80,7 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
       ```csharp
       using Microsoft.Intune.MAM;
       ```
-3.    Pour commencer à recevoir des stratégies de protection d’application, votre application doit s’inscrire auprès du service GAM d’Intune. Si votre application utilise déjà la bibliothèque d’authentification Azure Active Directory (ADAL) pour authentifier les utilisateurs, elle doit fournir l’UPN de l’utilisateur à la méthode de registerAndEnrollAccount de IntuneMAMEnrollmentManager une fois l’authentification correctement effectuée :
+3.    Pour commencer à recevoir des stratégies de protection d’application, votre application doit s’inscrire auprès du service MAM Intune. Si votre application utilise déjà la bibliothèque d’authentification Azure Active Directory (ADAL) pour authentifier les utilisateurs, elle doit fournir l’UPN de l’utilisateur à la méthode de registerAndEnrollAccount de IntuneMAMEnrollmentManager une fois l’authentification correctement effectuée :
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
@@ -94,9 +92,9 @@ Les applications Xamarin développées avec le composant Xamarin du SDK d’appl
       ```
 
 ## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>Activation de stratégies de protection des applications dans votre application mobile Android
-Pour les applications Android basées sur Xamarin qui n’utilisent pas un framework d’interface utilisateur, vous devez lire et suivre le [Guide du kit SDK d’application Intune pour les développeurs Android](app-sdk-android.md). Pour votre application Android basée sur Xamarin, vous devez remplacer la classe, les méthodes et les activités par leurs équivalents GAM conformément au [tableau](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) inclus dans le guide. Si votre application ne définit pas de classe `android.app.Application`, vous devez en créer une et vérifier que vous héritez de `MAMApplication`.
+Pour les applications Android basées sur Xamarin qui n’utilisent pas un framework d’interface utilisateur, vous devez lire et suivre le [Guide du kit SDK d’application Intune pour les développeurs Android](app-sdk-android.md). Pour votre application Android basée sur Xamarin, vous devez remplacer la classe, les méthodes et les activités par leurs équivalents MAM conformément au [tableau](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent) inclus dans le guide. Si votre application ne définit pas de classe `android.app.Application`, vous devez en créer une et vérifier que vous héritez de `MAMApplication`.
 
-Pour les formulaires Xamarin et d’autres framework d’interface utilisateur, nous avons fourni un outil appelé `MAM.Remapper`. Cet outil effectue le remplacement de la classe pour vous. Toutefois, vous devez effectuer les étapes suivantes :
+Pour les formulaires Xamarin et d’autres frameworks d’interface utilisateur, nous avons fourni un outil appelé `MAM.Remapper`. Cet outil effectue le remplacement de la classe pour vous. Toutefois, vous devez effectuer les étapes suivantes :
 
 1.  Ajoutez une référence au package NuGet `Microsoft.Intune.MAM.Remapper.Tasks` version 0.1.0.0 ou supérieure.
 

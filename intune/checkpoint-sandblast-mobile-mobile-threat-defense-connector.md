@@ -3,8 +3,8 @@ title: Connecteur Check Point SandBlast Mobile avec Intune
 titlesuffix: Azure portal
 description: "Intégration de Check Point SandBlast à Intune"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09a8914be00b7af039257fe0759967b7f5a90c5e
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 10bc23b5b5e0d0d278677ed4bf332787fc16b367
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Connecteur de protection contre les menaces mobiles Check Point SandBlast Mobile avec Intune
 
@@ -33,73 +33,74 @@ L’application Check Point SandBlast Mobile pour Android et iOS capture le syst
 
 La stratégie de conformité des appareils Intune comprend une règle de protection contre les menaces mobiles Check Point SandBlast Mobile, qui est basée sur l’évaluation des risques Check Point SandBlast. Quand cette règle est activée, Intune évalue si l’appareil est conforme à la stratégie activée. Si l’appareil est détecté comme non conforme, les utilisateurs ne peuvent pas accéder aux ressources de l’entreprise comme Exchange Online et SharePoint Online. Les utilisateurs reçoivent aussi des conseils de l’application mobile Check Point SandBlast installée sur leurs appareils pour résoudre le problème et rétablir l’accès aux ressources de l’entreprise.
 
-<!-- ## Sample scenarios
+<!-- ## Sample scenarios 
+closing syntax for comment above is missing. Please insert closing syntax at intended location. -->
 
-Here are some common scenarios:
+Voici quelques scénarios courants :
 
-### Control access based on threats from malicious apps
+### <a name="control-access-based-on-threats-from-malicious-apps"></a>Contrôler l’accès en fonction des menaces émanant des applications malveillantes
 
-When malicious apps such as malware are detected on devices, you can block devices until the threat is resolved:
+Lorsque des applications malveillantes, des logiciels malveillants par exemple, sont détectées sur des appareils, vous pouvez bloquer ces appareils jusqu'à ce que la menace soit écartée :
 
--   Connecting to corporate e-mail
+-   Connexion à la messagerie de l’entreprise
 
--   Syncing corporate files with the OneDrive for Work app
+-   Synchroniser les fichiers d’entreprise à l’aide de l’application OneDrive for Work
 
--   Accessing company apps
+-   Accès aux applications d’entreprise
 
-**Block when malicious apps are detected:**
+**Blocage lorsque des applications malveillantes sont détectées :**
 
-![Check Point MTD block when malicious apps are detected](./media/checkpoint-MTD-2.PNG)
+![Blocage de Check Point MTD quand des applications malveillantes sont détectées](./media/checkpoint-MTD-2.PNG)
 
-**Access granted on remediation:**
+**Accès accordé après correction :**
 
-![Check Point MTD access granted](./media/checkpoint-MTD-3.PNG)
+![Accès accordé à Check Point MTD](./media/checkpoint-MTD-3.PNG)
 
-### Control access based on threat to network
+### <a name="control-access-based-on-threat-to-network"></a>Contrôler l’accès en fonction de la menace pour le réseau
 
-Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
+Détectez les menaces, par exemple les interceptions (**Man-in-the-middle**), sur le réseau et protégez l’accès aux réseaux Wi-Fi compte tenu du risque de l’appareil.
 
-**Block network access through Wi-Fi:**
+**Bloquer l’accès au réseau via le Wi-Fi :**
 
-![Check Point MTD block network access through Wi-Fi](./media/checkpoint-MTD-4.PNG)
+![Blocage par Check Point MTD de l’accès réseau via le Wi-Fi](./media/checkpoint-MTD-4.PNG)
 
-**Access granted on remediation:**
+**Accès accordé après correction :**
 
-![Check Point MTD Wi-Fi access granted](./media/checkpoint-MTD-5.PNG)
+![Accès Wi-Fi accordé par Check Point MTD](./media/checkpoint-MTD-5.PNG)
 
-### Control access to SharePoint Online based on threat to network
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Contrôler l’accès à SharePoint Online en fonction de la menace pour le réseau
 
-Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
+Détectez les menaces, par exemple les interceptions (**Man-in-the-middle**), sur le réseau et empêchez la synchronisation des fichiers d’entreprise compte tenu du risque de l’appareil.
 
-**Block SharePoint Online when network threats are detected:**
+**Bloquer SharePoint Online lorsque des menaces réseau sont détectées :**
 
-![Check Point MTD block SharePoint Online access](./media/checkpoint-MTD-6.PNG)
+![Blocage par Check Point MTD de l’accès à SharePoint Online](./media/checkpoint-MTD-6.PNG)
 
-**Access granted on remediation:**
+**Accès accordé après correction :**
 
-![Check Point MTD SharePoint Online access granted](./media/checkpoint-MTD-7.PNG)
+![Accès à SharePoint Online accordé par Check Point MTD](./media/checkpoint-MTD-7.PNG)
 
-## Supported platforms
+## <a name="supported-platforms"></a>Plateformes prises en charge
 
--   **Android 4.1 and later**
+-   **Android 4.1 et versions ultérieures**
 
--   **iOS 8 and later**
+-   **iOS 8 et versions ultérieures**
 
-## Pre-requisites
+## <a name="pre-requisites"></a>Conditions préalables
 
 -   Azure Active Directory Premium
 
--   Microsoft Intune subscription
+-   Abonnement Microsoft Intune
 
--   Check Point SandBlast Mobile Threat Defense subscription
-    -   See [CheckPoint SandBlast website](https://www.checkpoint.com/) for more information.
+-   Abonnement Check Point SandBlast Mobile Threat Defense
+    -   Pour plus d’informations, consultez le [site web de CheckPoint SandBlast](https://www.checkpoint.com/).
 
-## Next steps
+## <a name="next-steps"></a>Étapes suivantes
 
-- [Integrate CheckPoint SandBlast with Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+- [Intégrer Check Point SandBlast à Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
 
-- [Set up CheckPoint SandBlast Mobile app](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configurer l’application Check Point SandBlast Mobile](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Create CheckPoint SandBlast Mobile device compliance policy](mtd-device-compliance-policy-create.md)
+- [Créer une stratégie de conformité d’appareil CheckPoint SandBlast Mobile](mtd-device-compliance-policy-create.md)
 
-- [Enable CheckPoint SandBlast Mobile MTD connector](mtd-connector-enable.md)
+- [Activer le connecteur MTD de CheckPoint SandBlast Mobile](mtd-connector-enable.md)

@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique pour ajouter des applications métier Windows à Intune"
-titlesuffix: Azure portal
-description: "En savoir plus sur l’ajout des applications métier Windows à Intune."
+title: "Guide pratique pour ajouter des applications métier Windows à Microsoft Intune"
+titlesuffix: 
+description: "Découvrez comment ajouter des applications métier Windows à Microsoft Intune."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,17 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72e0a9011ba6dda324ace96fb2dbefb42c608641
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier Windows à Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Une application métier est une application que vous ajoutez à partir d’un fichier d’installation d’application. Ces types d’applications sont généralement écrites en interne. Les étapes suivantes fournissent des conseils pour vous aider à ajouter une application métier Windows à Microsoft Intune.
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Étape 1 : spécifier le fichier d’installation de logiciel
 
@@ -68,6 +69,10 @@ ms.lasthandoff: 01/30/2018
 ## <a name="step-5---update-a-line-of-business-app"></a>Étape 5 : Mise à jour d’une application métier
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## <a name="configuring-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Configuration d’une application MSI mobile avec mise à jour automatique pour ignorer le processus de vérification de version
+
+Vous pouvez configurer une application MSI mobile avec mise à jour automatique connue pour ignorer le processus de vérification de version. Certaines applications basées sur le programme d’installation MSI sont automatiquement mises à jour par le développeur de l’application. Pour ces applications MSI mises à jour automatiquement, vous pouvez configurer le paramètre **Ignorer la version de l’application** dans le panneau **Informations sur l’application**. Quand vous passez ce paramètre sur **Oui**, Microsoft Intune n’impose pas la version de l’application installée sur le client Windows. Cette fonctionnalité est utile pour éviter d’introduire une condition de concurrence. Par exemple, ce type de condition de concurrence peut se produire quand l’application est mise à jour automatiquement par le développeur de l’application et aussi par Intune. Les deux peuvent essayer d’imposer une version donnée de l’application sur le client Windows, créant ainsi un conflit.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

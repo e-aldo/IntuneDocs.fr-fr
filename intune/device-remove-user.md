@@ -1,10 +1,10 @@
 ---
-title: "Supprimer un utilisateur d’un appareil iOS avec Intune"
-titlesuffix: Azure portal
-description: "Découvrez comment supprimer un utilisateur d’un appareil iOS partagé avec Intune. »"
+title: "Supprimer un utilisateur d’un appareil iOS avec Microsoft Intune"
+titlesuffix: 
+description: "Découvrez comment supprimer un utilisateur d’un appareil iOS partagé avec Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 979614aaa450493ea0b5cc2a1baaccc10a6dd028
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1b2321de0c0541111fdf6f18345bd952ca8b5448
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="remove-a-user-from-a-shared-ios-device-with-intune"></a>Supprimer un utilisateur d’un appareil iOS partagé avec Intune
+# <a name="remove-a-user-from-a-shared-ios-device"></a>Supprimer un utilisateur d’un appareil iOS partagé
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +37,8 @@ L’action **Supprimer l’utilisateur** supprime un utilisateur choisi dans le 
 
 ## <a name="how-to-remove-a-user"></a>Comment supprimer un utilisateur
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
 4. Dans le panneau **Appareils**, choisissez **Tous les appareils**.
 5. Dans la liste des appareils que vous gérez, choisissez un appareil iOS.
@@ -47,4 +47,4 @@ L’action **Supprimer l’utilisateur** supprime un utilisateur choisi dans le 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour connaître l’état de l’action que vous venez d’effectuer, allez dans le panneau **Appareils et groupes**, et choisissez **Actions d’appareil**.
+Pour voir l’état de l’action que vous venez d’effectuer, dans le panneau **Appareils**, choisissez **Actions d’appareil**.

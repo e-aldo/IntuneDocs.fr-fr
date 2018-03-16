@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique d’ajout d’applications du Windows Store à Intune"
-titleSuffix: Azure portal
-description: "Découvrez comment ajouter des applications de Windows Store pour Intune."
+title: "Guide pratique pour ajouter des applications du Windows Store à Microsoft Intune"
+titleSuffix: 
+description: "Découvrez comment ajouter des applications du Windows Store à Microsoft Intune."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,38 +15,40 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cdc1696175f26dc4bb89fcdd005d88bc0948f86d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 815f780ef9f04870f19e75481ed74f0a1c3601f3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications du Windows Store à Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Pour pouvoir affecter, surveiller, configurer ou protéger des applications, vous devez les ajouter à Intune. Les étapes suivantes vous permettent d’ajouter une application du Windows Store à Microsoft Intune.
 
-1. Connectez-vous au portail Azure.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
 3. Dans le panneau **Intune**, choisissez **Gérer les applications**.
-4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
-5. Au-dessus de la liste des applications, choisissez **Ajouter**.
-6. Dans le panneau **Ajouter une application**, choisissez **Informations de l’application**.
-7. Dans le panneau **Modifier l’application**, configurez les informations suivantes. Une fois cela fait, cliquez sur **Ajouter**. Selon l’application choisie, certaines valeurs de ce panneau peuvent avoir été renseignées automatiquement :
+4. Dans la charge de travail **Applications mobiles**, choisissez **Applications** dans la section **Gérer**.
+5. Choisissez **Ajouter** au-dessus de la liste.
+6. Sélectionnez **Windows** parmi les types **d’application de Store** disponibles dans la liste.
+7. Choisissez **Informations sur l’application** pour configurer les informations sur l’application.
+8. Dans le panneau **Informations sur l’application**, configurez les informations suivantes (en fonction de l’application choisie, certaines des valeurs dans ce panneau peuvent être renseignées automatiquement) :
     - **Nom de l’application** : saisissez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
-    - **Description de l’application :** saisissez la description de l’application. Ce libellé s'affichera dans le portail d'entreprise.
+    - **Description :** entrez la description de l’application. Cette description est visible par les utilisateurs dans le portail d'entreprise.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **URL de l’App Store** : entrez l’URL de l’App Store que vous souhaitez créer.
-    - **Système d’exploitation minimal** : dans la liste, choisissez le système d’exploitation minimal sur lequel l’application peut être installée. Si vous affectez l’application à un appareil avec un système d’exploitation antérieur, elle ne sera pas installée.
-    - **Catégorie** : (facultatif) sélectionnez une ou plusieurs des catégories d’applications intégrées ou que vous avez créées. Cela permettra aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
+    - **URL de l’App Store** : Entrez l’URL de l’App Store que vous voulez créer. 
+    - **Catégorie** (facultatif) : sélectionnez une ou plusieurs des catégories d’applications ou une catégorie que vous avez créée. L’ajout de ces informations permet aux utilisateurs de trouver aisément l’application quand ils parcourent le portail d’entreprise.
     - **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
-    - **URL d’informations** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations sur cette application. Cette URL s'affichera dans le portail d'entreprise.
-    - **URL de confidentialité** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations de confidentialité pour cette application. Cette URL s'affichera dans le portail d'entreprise.
-    - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
-    - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
-    - **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-    - **Charger l’icône** : chargez une icône qui sera associée à l'application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
-8. Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**.
+    - **URL d’informations** (facultatif) : Entrez l’URL d’un site web qui contient des informations sur cette application. Cette URL s'affichera dans le portail d'entreprise.
+    - **URL de déclaration de confidentialité** (facultatif) : Entrez l’URL d’un site web qui contient des informations de confidentialité de cette application. Cette URL s'affichera dans le portail d'entreprise.
+    - **Développeur** (facultatif) : Entrez le nom du développeur de l’application.
+    - **Propriétaire** (facultatif) : Entrez un nom pour le propriétaire de cette application, par exemple, **Service des ressources humaines**.
+    - **Notes** (facultatif) : Entrez les éventuelles remarques à associer à cette application.
+    - **Charger l’icône** : chargez une icône qui sera associée à l'application. Cette icône sera affichée avec l’application quand les utilisateurs parcourront le portail d’entreprise.
+1. Après avoir entré toutes les informations nécessaires sur l’application, cliquez sur **OK**.
+2. Cliquez sur **Ajouter** dans le panneau **Ajouter une application**.
 
 L’application que vous avez créée s’affichera dans la liste des applications, où vous pouvez l’affecter aux groupes que vous choisissez. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
 
@@ -59,16 +61,22 @@ Les utilisateurs finaux peuvent installer l’application Portail d’entreprise
 1. Connectez-vous à votre compte dans le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) et acquérez la version avec **licence hors connexion** de l’application Portail d’entreprise.  
 2. Une fois que l’application a été acquise, sélectionnez l’application dans la page **Inventorier**.  
 3. Sélectionnez **Tous les appareils Windows 10** comme **plateforme**, puis l’**architecture** appropriée et procédez au téléchargement. Un fichier de licence d’application n’est pas nécessaire pour cette application.
-![Image de tous les appareils Windows 10 et des détails du package d’architecture X86 à télécharger](./media/Win10CP-all-devices.png)
+
+    ![Image de tous les appareils Windows 10 et des détails du package d’architecture X86 à télécharger](./media/Win10CP-all-devices.png)
+
 4. Téléchargez tous les packages sous « Infrastructures requises ». Vous devez effectuer cette opération pour les architectures x86, x64 et ARM, soit un total de 9 packages, comme indiqué ci-dessous.
 
-![Image des fichiers de dépendance à télécharger ](./media/Win10CP-dependent-files.png)
-5. Avant de charger l’application Portail d’entreprise dans Intune, créez un dossier (par exemple, C:/Portail Entreprise) avec les packages structurés de la manière suivante :
-  1. Placez le package Portail d’entreprise dans C:\Portail Entreprise. Créez un sous-dossier Dépendances dans cet emplacement également.  
-  ![Image du dossier Dépendances enregistré avec le fichier APPXBUN](./media/Win10CP-Dependencies-save.png)
-  2. Placez les neuf packages de dépendances dans le dossier Dépendances.  
-  Si les dépendances ne sont pas placées dans ce format, Intune ne peut pas les reconnaître ni les charger et le chargement du package échoue avec l’erreur suivante.  
-  ![La dépendance d’application Windows pour ce programme d’installation logicielle est introuvable dans le dossier de l’application. Vous pouvez poursuivre la création et l’affectation de l’application, mais cette dernière ne pourra pas fonctionner tant que la dépendance d’application Windows manquante ne sera pas spécifiée.](./media/Win10CP-error-message.png)
+    ![Image des fichiers de dépendance à télécharger](./media/Win10CP-dependent-files.png)
+
+5. Avant de charger l’application Portail d’entreprise dans Intune, créez un dossier (par exemple, C:&#92;Portail Entreprise) avec les packages structurés de la manière suivante :
+  - Placez le package Portail d’entreprise dans C:\Portail Entreprise. Créez un sous-dossier Dépendances dans cet emplacement également.  
+  
+    ![Image du dossier Dépendances enregistré avec le fichier APPXBUN](./media/Win10CP-Dependencies-save.png)
+
+  - Placez les neuf packages de dépendances dans le dossier Dépendances. Si les dépendances ne sont pas placées dans ce format, Intune ne peut pas les reconnaître ni les charger et le chargement du package échoue avec l’erreur suivante : 
+
+      ![La dépendance d’application Windows pour ce programme d’installation logicielle est introuvable dans le dossier de l’application. Vous pouvez poursuivre la création et l’affectation de l’application, mais cette dernière ne pourra pas fonctionner tant que la dépendance d’application Windows manquante ne sera pas spécifiée.](./media/Win10CP-error-message.png)
+
 6. Revenez à Intune, puis chargez l’application Portail d’entreprise en tant que nouvelle application. Affectez-la en tant qu’application requise pour l’ensemble souhaité d’utilisateurs cibles.  
 
 Pour plus d’informations sur la façon dont Intune gère les dépendances pour les applications universelles, consultez [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Déploiement d’un appxbundle avec dépendances via Microsoft Intune MDM).  
@@ -77,14 +85,14 @@ Pour plus d’informations sur la façon dont Intune gère les dépendances pour
 Si vos utilisateurs ont déjà installé les applications Portail d’entreprise Windows 8.1 ou Windows Phone 8.1 à partir du Windows Store, ils doivent être automatiquement mis à jour vers la nouvelle version sans que l’utilisateur ou vous-même n’ayez à intervenir. Si la mise à jour ne se produit pas, demandez à vos utilisateurs de vérifier s’ils ont activé les mises à jour automatiques pour les applications du Windows Store sur leurs appareils.   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Comment mettre à niveau mon application de portail d’entreprise Windows 8.1 chargée indépendamment vers l’application Portail d’entreprise Windows 10 ?
-Notre option de migration recommandée consiste à supprimer l’attribution de l’application Portail d’entreprise Windows 8.1 en définissant « Désinstaller » pour l’action d’attribution. Une fois cette opération effectuée, l’application Portail d’entreprise Windows 10 peut être affectée à l’aide de l’une des options ci-dessus.  
+Notre option de migration recommandée consiste à supprimer l’attribution de l’application Portail d’entreprise Windows 8.1 en définissant « Désinstaller » pour l’action d’attribution. Une fois ce paramètre défini, l’application Portail d’entreprise Windows 10 peut être affectée à l’aide de l’une des options ci-dessus.  
 
 Si vous avez besoin de charger une version test de l’application et que vous avez affecté le portail d’entreprise Windows 8.1 sans le signer avec le certificat Symantec, suivez les étapes de la section Affecter directement via Intune ci-dessus pour terminer la mise à niveau.
 
 Si vous avez besoin de charger une version test de l’application et que vous avez signé et affecté le portail d’entreprise Windows 8.1 avec le certificat de signature de code Symantec, suivez les étapes décrites dans la section ci-dessous.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Comment mettre à niveau mon application Portail d’entreprise Windows 8.1 ou Windows Phone 8.1 chargée indépendamment et signée vers l’application Portail d’entreprise Windows 10 ?
-Notre option de migration recommandée consiste à supprimer l’attribution existante de l’application Portail d’entreprise Windows Phone 8.1 ou de l’application Portail d’entreprise Windows 8.1 en définissant « Désinstaller » pour l’action d’attribution. Une fois cette opération effectuée, l’application Portail d’entreprise Windows 10 peut être affectée normalement.  
+Notre option de migration recommandée consiste à supprimer l’attribution existante de l’application Portail d’entreprise Windows Phone 8.1 ou de l’application Portail d’entreprise Windows 8.1 en définissant « Désinstaller » pour l’action d’attribution. Une fois ce paramètre défini, l’application Portail d’entreprise Windows 10 peut être affectée normalement.  
 
 Sinon, l’application Portail d’entreprise Windows 10 doit être mise à jour et signée de façon adéquate afin de respecter la procédure de mise à niveau.  
 

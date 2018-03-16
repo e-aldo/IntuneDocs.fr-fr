@@ -1,7 +1,7 @@
 ---
 title: "Guide pratique de surveillance des stratégies de protection des applications"
-titleSuffix: Azure portal
-description: "Découvrez à combien d’utilisateurs s’applique la stratégie et explorez pour accéder à plus d’informations."
+titleSuffix: Microsoft Intune
+description: "Surveillez l’état de conformité des stratégies de gestion des applications mobiles dans Intune."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Guide pratique de surveillance des stratégies de protection des applications
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 **Si vous n’êtes pas dans le portail Azure**, cette rubrique explique [comment créer des stratégies de protection des applications](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) dans le portail classique Intune.
 
 
-Vous pouvez surveiller l’état de conformité des stratégies de gestion des applications mobiles (GAM) que vous avez appliquées aux utilisateurs dans le panneau de protection des applications Intune dans le [portail Azure](https://portal.azure.com). Vous pouvez y trouver des informations sur les utilisateurs concernés par les stratégies GAM, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
+Surveillez l’état de conformité des stratégies de gestion des applications mobiles (MAM) que vous avez appliquées aux utilisateurs dans le volet de protection des applications Intune du [portail Azure](https://portal.azure.com). Recherchez des informations sur les utilisateurs affectés par les stratégies MAM, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.
 
 Vous pouvez surveiller l’état de conformité à trois endroits différents :
 
@@ -39,12 +39,12 @@ Vous pouvez surveiller l’état de conformité à trois endroits différents :
 
 ## <a name="summary-view"></a>Vue Résumé
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
-4. Dans la charge de travail **Applications mobiles**, choisissez **Surveiller** > **État de l’utilisateur de la protection des applications** pour afficher la vue résumée :
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le volet **Intune**, choisissez **Applications mobiles**.
+4. Dans la charge de travail **Applications mobiles**, choisissez **Surveiller** > **État de la protection des applications** pour afficher la vue récapitulative :
 
-![Vignette Résumé sur le panneau Gestion des applications mobiles Intune](./media/app-protection-user-status-summary.png)
+![Vignette Résumé sur le volet Gestion des applications mobiles Intune](./media/app-protection-user-status-summary.png)
 
 -   **Utilisateurs** : nombre total d’utilisateurs dans votre société qui utilisent une application associée à une stratégie dans un contexte professionnel.
 
@@ -61,10 +61,10 @@ Vous pouvez surveiller l’état de conformité à trois endroits différents :
 Vous pouvez accéder à la vue détaillée du résumé en choisissant les vignettes **État de l’utilisateur** (selon la plateforme de système d’exploitation de l’appareil) et **Utilisateurs marqués d’un indicateur**.
 
 ### <a name="user-status"></a>État de l’utilisateur
-Vous pouvez rechercher un utilisateur et vérifier son état de conformité. Le panneau **Rapport d’application** montre les informations suivantes sur un utilisateur sélectionné :
+Vous pouvez rechercher un utilisateur et vérifier son état de conformité. Le volet **Rapport d’application** montre les informations suivantes sur un utilisateur sélectionné :
 - Les appareils associés au compte d’utilisateur
 
-- Applications avec une stratégie GAM sur l’appareil
+- Applications avec une stratégie MAM sur l’appareil
 
 - État :
 
@@ -73,44 +73,44 @@ Vous pouvez rechercher un utilisateur et vérifier son état de conformité. Le 
   - **Non activé** : la stratégie a été déployée pour l’utilisateur, mais l’application n’a pas été utilisée au moins une fois dans le contexte professionnel depuis.
 
 >[!NOTE]
-> Si la stratégie de gestion des applications mobiles n’est pas déployée sur l’utilisateur que vous recherchez, un message vous informe que l’utilisateur n’est ciblé par aucune des stratégies GAM.
+> Si la stratégie MAM n’est pas déployée pour l’utilisateur que vous recherchez, un message vous informe que l’utilisateur n’est ciblé par aucune stratégie MAM.
 
 Pour afficher le rapport d’un utilisateur, procédez comme suit :
 
 1.  Pour sélectionner un utilisateur, choisissez la vignette **Résumé**.
 
-    ![Capture d’écran 3](./media/MAM-reporting-6.png)
+    ![Capture d’écran mettant en évidence la vignette Résumé sur le panneau Gestion des applications mobiles Intune, Paramètres](./media/MAM-reporting-6.png)
 
-2. Dans le panneau **Rapport d’application**, choisissez **Sélectionner un utilisateur** pour rechercher un utilisateur Azure Active Directory.
+2. Dans le volet **Rapport d’application**, choisissez **Sélectionner un utilisateur** pour rechercher un utilisateur Azure Active Directory.
 
-    ![Option Sélectionner un utilisateur dans le panneau Rapport d’application](./media/MAM-reporting-2.png)
+    ![Capture d’écran mettant en évidence l’option Sélectionner un utilisateur dans le volet Rapport d’application](./media/MAM-reporting-2.png)
 
-3. Sélectionnez l’utilisateur dans la liste. Les détails de l’état de conformité pour cet utilisateur apparaissent.
+3. Sélectionnez l’utilisateur dans la liste. Vous pouvez voir les détails de l’état de conformité pour cet utilisateur.
 
 ### <a name="flagged-users"></a>Utilisateurs marqués d’un indicateur
 La vue détaillée montre le message d’erreur, l’application à laquelle l’utilisateur a accédé quand l’erreur s’est produite, la plateforme de système d’exploitation de l’appareil concernée et un horodatage.
 
 ## <a name="reporting-view"></a>Vue Rapports
 
-Vous trouverez les mêmes rapports dans la vue détaillée, plus d’autres rapports qui vous aideront pour l’état de conformité de la stratégie GAM :
+Vous trouverez les mêmes rapports dans la vue détaillée, plus d’autres rapports qui vous aideront pour l’état de conformité de la stratégie MAM :
 
-![Capture d’écran 4](./media/MAM-reporting-7.png)
+![Capture d’écran mettant en évidence 2 rapports disponibles dans le volet Paramètres](./media/MAM-reporting-7.png)
 
 -   **Rapport d’utilisateur de protection des applications :** il présente les mêmes informations qui figurent dans le rapport **État de l’utilisateur** sous la section Vue détaillée ci-dessus.
 
 -   **Rapport d’application de protection des applications :** il fournit deux états de protection des applications différents que les administrateurs peuvent sélectionner avant de générer le rapport. Les états peuvent être protégés ou non protégés.
 
-    -   État de l’utilisateur pour l’activité GAM gérée (protégé) : ce rapport présente l’activité de chaque application GAM gérée, par utilisateur.
+    -   État de l’utilisateur pour l’activité MAM gérée (protégé) : ce rapport présente l’activité de chaque application MAM gérée, par utilisateur.
 
-        -   Il affiche toutes les applications ciblées par les stratégies GAM de chaque utilisateur et détaille l’état de chaque application enregistrée dans les stratégies GAM ou ciblée par une stratégie GAM mais jamais enregistrée.
+        -   Il affiche toutes les applications ciblées par les stratégies MAM de chaque utilisateur et détaille l’état de chaque application enregistrée dans les stratégies MAM ou ciblée par une stratégie MAM mais jamais enregistrée.
 <br></br>
-    -   État de l’utilisateur pour l’activité GAM non gérée (non protégé) : ce rapport présente l’activité des applications compatibles avec GAM qui ne sont actuellement pas gérées, par utilisateur. Cela peut se produire pour les raisons suivantes :
+    -   État de l’utilisateur pour l’activité MAM non gérée (non protégé) : ce rapport présente l’activité des applications compatibles avec MAM qui ne sont actuellement pas gérées, par utilisateur. Cela peut se produire pour les raisons suivantes :
 
-        -   Ces applications sont utilisées par un utilisateur ou une application qui n’est actuellement pas ciblée par une stratégie GAM.
+        -   Ces applications sont utilisées par un utilisateur ou une application qui n’est actuellement pas ciblée par une stratégie MAM.
 
-        -   Toutes les applications sont enregistrées, mais ne reçoivent aucune stratégie GAM.
+        -   Toutes les applications sont enregistrées, mais ne reçoivent aucune stratégie MAM.
 
-![Capture d’écran 2](./media/MAM-reporting-4.png)
+![Capture d’écran montrant le panneau Rapport d’application d’un utilisateur avec un tableau de détails pour 3 applications inscrites](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Regroupement de tables
 
@@ -125,13 +125,13 @@ Vous pouvez exporter toutes vos activités de stratégie de protection des appli
 
 Suivez ces étapes pour générer le rapport de protection des applications :
 
-1. Dans le panneau Gestion des applications mobiles Intune, choisissez le rapport de protection des applications.
+1. Dans le volet Gestion des applications mobiles Intune, choisissez **Rapport de protection des applications**.
 
-    ![Capture d’écran 6](./media/app-protection-report-csv-2.png)
+    ![Capture d’écran mettant en évidence le lien de téléchargement du rapport de protection des applications dans le volet Gestion des applications mobiles Intune](./media/app-protection-report-csv-2.png)
 
 2. Choisissez Oui pour enregistrer votre rapport, puis cliquez sur Enregistrer sous et sélectionnez le dossier dans lequel vous souhaitez enregistrer le rapport.
 
-    ![Capture d’écran 7](./media/app-protection-report-csv-1.png)
+    ![Capture d’écran de la boîte de confirmation Enregistrer le rapport](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Voir aussi
 [Gérer les transferts de données entre applications iOS](data-transfer-between-apps-manage-ios.md)

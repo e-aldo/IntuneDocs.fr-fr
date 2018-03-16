@@ -1,7 +1,7 @@
 ---
-title: "Ajouter des stratégies de configuration d’applications pour les appareils Android gérés | Microsoft Docs"
-titlesuffix: Azure portal
-description: "Découvrez comment utiliser des stratégies de configuration des applications pour fournir des données de configuration à une application Android for Work quand elle est exécutée."
+title: "Ajouter des stratégies de configuration d’applications pour les appareils Android gérés"
+titlesuffix: Microsoft Intune
+description: "Utilisez des stratégies de configuration des applications dans Microsoft Intune pour fournir des paramètres quand les utilisateurs exécutent une application Android for Work."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbf1466b02da66e5c7d115d60aa43912322ebeb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 206e229e95633ce553637bcedef708ee5630864c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Ajouter des stratégies de configuration d’applications pour les appareils Android gérés
 
@@ -30,8 +30,8 @@ Utilisez des stratégies de configuration des applications dans Microsoft Intune
 > [!Note]  
 > Toutes les applications ne prennent pas en charge la configuration d’application. Vérifiez auprès du développeur d’application si son application a été conçue pour prendre en charge les stratégies de configuration des applications.
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
 3. Choisissez la charge de travail **Applications mobiles**.
 4. Choisissez **Stratégies de configuration des applications** dans le groupe **Gérer**, puis choisissez **Ajouter**.
 5. Définissez les détails suivants :
@@ -41,7 +41,7 @@ Utilisez des stratégies de configuration des applications dans Microsoft Intune
       Description du profil qui s’affiche dans le portail Azure.
     - **Type d’inscription de l’appareil**  
       Choisissez **Appareils gérés**.
-6. Sélectionnez **Android** comme **Plateforme**.
+6. Sélectionnez **Android for Work** comme **Plateforme**.
 7. Sélectionnez **Application associée** pour choisir l’application pour laquelle vous souhaitez définir une stratégie de configuration d’applications. Sélectionnez parmi la liste d’applications Android for Work que vous avez approuvées et synchronisées avec Intune.
 8. Sélectionnez **Paramètres de configuration**. Vous pouvez définir des configurations à l’aide de :
     - [Concepteur de configuration](#Use-the-configuration-designer)
@@ -77,14 +77,15 @@ Quand l’application affectée est exécutée sur un appareil, elle s’exécut
 
 Vous pouvez également préconfigurer l’autorisation pour les applications d’accéder aux fonctionnalités des appareils Android. Par défaut, les applications Android qui nécessitent des autorisations d’appareils (telles que l’accès à la géolocalisation ou à l’appareil photo) invitent les utilisateurs à accepter ou à refuser les autorisations. Par exemple, si une application utilise le microphone de l’appareil, l’utilisateur final est invité à autoriser l’application à utiliser le microphone.
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
-3. Choisissez **Applications mobiles**. Sous **Gérer**, choisissez **Stratégies de configuration des applications**, puis **Ajouter**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Choisissez **Applications mobiles**.
+3. Sous **Gérer**, choisissez **Stratégies de configuration des applications**, puis **Ajouter**.
 4. Définissez les détails suivants :
     - **Nom**. Nom du profil qui s’affiche dans le portail Azure.
     - **Description**. Description du profil qui s’affiche dans le portail Azure.
-    - **Plateforme**. Sélectionnez **Android**.
-    - **Type d’inscription de l’appareil**. **Appareils gérés** est présélectionné pour vous.
+    - **Type d’inscription de l’appareil**. Sélectionnez **Appareils gérés**.
+    - **Plateforme**. Sélectionnez **Android for Work**.
 5. Sélectionnez **Application associée** pour choisir l’application pour laquelle vous souhaitez définir une stratégie de configuration. Sélectionnez parmi la liste d’applications Android for Work que vous avez approuvées et synchronisées avec Intune.
 6. Sélectionnez **Autorisations**, puis **Ajouter**.
 7. Effectuez votre sélection dans la liste des autorisations d’application disponibles, puis choisissez **OK**.

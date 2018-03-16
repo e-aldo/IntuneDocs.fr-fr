@@ -1,12 +1,12 @@
 ---
-title: "Gérer des appareils avec Intune"
-titleSuffix: Intune on Azure
-description: "Découvrez comment afficher les appareils que vous gérez avec Intune et effectuer diverses opérations dessus."
+title: "Gérer des appareils avec Microsoft Intune"
+titleSuffix: 
+description: "Passez en revue les appareils que vous gérez avec Intune et effectuez différentes opérations sur ceux-ci."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/31/2017
+ms.date: 02/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b034e144aa43d239874b484acb2a40be12aff7c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Qu’est-ce que la gestion des appareils Microsoft Intune ?
 
@@ -29,8 +29,8 @@ En tant qu’administrateur informatique, vous devez vous assurer que les appare
 
 La charge de travail **Appareils** vous donne des informations sur les appareils que vous gérez et vous permet de procéder à des tâches à distance sur ces appareils. Pour accéder à la charge de travail :
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans **Intune**, choisissez **Appareils**.
 4. Vous pouvez afficher des informations sur les appareils et effectuer les actions suivantes sur les appareils à distance :
     - **Vue d’ensemble** : aperçu des appareils inscrits que vous gérez.
@@ -38,10 +38,12 @@ La charge de travail **Appareils** vous donne des informations sur les appareils
     - **Appareils Azure AD** : liste des appareils inscrits ou joints à Azure Active Directory (AD). Découvrez plus d’informations sur la [gestion des appareils dans Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
     - **Actions des appareils** : historique des actions à distance effectuées sur les appareils, notamment l’action, son état, la personne qui a lancé l’action et l’heure.
 
-    ![Surveiller les actions des appareils](./media/monitor-device-actions.png)
+        ![Capture d’écran de la surveillance des actions des appareils](./media/monitor-device-actions.png)
 
-    - **TeamViewer** : le service TeamViewer permet aux utilisateurs d’appareils Android gérés par Intune d’obtenir une assistance à distance auprès de leur administrateur informatique. Découvrez plus d’informations sur [TeamViewer](device-profile-android-teamviewer.md).
-
+    - **Journaux d’audit** : les journaux d’audit contiennent un enregistrement des activités qui génèrent un changement dans Microsoft Intune. Découvrez plus d’informations sur les [journaux d’audit](monitor-audit-logs.md).
+    - **Connecteur TeamViewer** : le service TeamViewer permet aux utilisateurs d’appareils Android gérés par Intune d’obtenir une assistance à distance auprès de leur administrateur informatique. Découvrez plus d’informations sur [TeamViewer](device-profile-android-teamviewer.md).
+    - **Aide et support** : dépannez, demandez du support ou affichez l’état d’Intune.  
+    
 ## <a name="available-device-actions"></a>Actions d’appareils disponibles
 Les actions disponibles varient selon la plateforme et la configuration de l’appareil.
 
