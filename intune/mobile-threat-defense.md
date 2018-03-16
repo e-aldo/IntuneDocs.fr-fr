@@ -3,8 +3,8 @@ title: Protection contre les menaces mobiles avec Intune
 titleSuffix: Azure portal
 description: "Protéger l’accès aux ressources d’entreprise en fonction du risque évalué pour l’appareil"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1d5957acde86b3621009e5c38df42bc894a413c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Intégration de la protection contre les menaces mobiles avec Intune
 
@@ -30,13 +30,13 @@ Les connecteurs de protection contre les menaces mobiles Intune vous permettent 
 
 Les entreprises doivent protéger leurs données sensibles contre diverses menaces émergentes, notamment les menaces ciblant le matériel, les applications et le réseau, ainsi que les vulnérabilités du système d’exploitation.
 
-Historiquement, les entreprises ont été proactives en matière de protection des PC contre les attaques, tandis que les appareils mobiles restent non contrôlés et non protégés. Les plateformes mobiles offrent maintenant une protection intégrée, grâce à l’isolation d’application et à la vérification des applications des App Store, entre autres, mais elles restent vulnérables aux attaques sophistiquées. Aujourd'hui, de plus en plus d’employés utilisent des appareils pour travailler et ils ont besoin d’accéder à des informations sensibles. Les appareils doivent être protégés contre des attaques de plus en plus sophistiquées.
+Historiquement, les entreprises ont été proactives en matière de protection des PC contre les attaques, tandis que les appareils mobiles restent non contrôlés et non protégés. Les plateformes mobiles offrent maintenant une protection intégrée grâce notamment à l’isolation d’application et à la vérification des applications des App Store, mais elles restent vulnérables aux attaques sophistiquées. Aujourd'hui, de plus en plus d’employés utilisent des appareils pour travailler et ils ont besoin d’accéder à des informations sensibles. Les appareils doivent être protégés contre les attaques qui sont de plus en plus sophistiquées.
 
 ## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Comment les connecteurs de protection contre les menaces mobiles Intune fonctionnent-ils ?
 
-Le connecteur protège les ressources de l’entreprise en créant un canal de communication entre Intune et le fournisseur de protection contre les menaces mobiles que vous avez choisi. Les partenaires de protection contre les menaces mobiles Intune offrent des applications intuitives et faciles à déployer pour les appareils mobiles, qui analysent de manière active les informations relatives aux menaces pour les partager avec Intune, à des fins de création de rapports ou d’application de stratégies. 
+Le connecteur protège les ressources de l’entreprise en créant un canal de communication entre Intune et le fournisseur de protection contre les menaces mobiles que vous avez choisi. Les partenaires Mobile Threat Defense d’Intune offrent des applications intuitives et faciles à déployer pour les appareils mobiles, qui analysent de manière active les informations relatives aux menaces pour les partager avec Intune, à des fins de création de rapports ou d’application de stratégies. 
 
-Par exemple, si une application de protection contre les menaces mobiles connectée signale au fournisseur de protection contre les menaces mobiles qu’un téléphone sur votre réseau est connecté à un réseau vulnérable aux « attaques de l’intercepteur », ces informations sont partagées et classées à un niveau de risque approprié (faible/moyen/élevé), qui peut ensuite être comparé à vos quotas de niveau de risque configurés dans Intune afin de déterminer si l’accès à certaines ressources doit être révoqué pendant que le appareil est compromis.
+Par exemple, si une application Mobile Threat Defense connectée signale au fournisseur Mobile Threat Defense qu’un téléphone sur votre réseau est connecté à un réseau vulnérable aux « attaques de l’intercepteur », ces informations sont partagées et classées à un niveau de risque approprié (faible/moyen/élevé), qui peut ensuite être comparé à vos quotas de niveau de risque configurés dans Intune, afin de déterminer si l’accès à certaines ressources doit être révoqué quand l’appareil est compromis.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Quelles sont les données collectées par Intune pour Mobile Threat Defense ?
 

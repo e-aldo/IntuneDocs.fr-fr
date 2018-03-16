@@ -1,7 +1,7 @@
 ---
-title: "Définir des restrictions d’inscription dans Intune"
-titlesuffix: Azure portal
-description: "Restriction de l’inscription par la plateforme et définition d’une limite d’inscriptions d’appareils dans Intune. \""
+title: "Définir des restrictions d’inscription dans Microsoft Intune"
+titlesuffix: 
+description: "Restriction de l’inscription par la plateforme et définition d’une limite d’inscriptions d’appareils dans Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Définir des restrictions d’inscription
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-En tant qu’administrateur Intune, vous pouvez créer et gérer des restrictions d’inscription qui définissent le nombre et les types d’appareils qui peuvent être inscrits en vue d’être gérés par Intune. Vous pouvez créer plusieurs restrictions et les appliquer à différents groupes d’utilisateurs. Vous pouvez définir [l’ordre de priorité](#change-enrollment-restriction-priority) pour vos différentes restrictions.
+En tant qu’administrateur Intune, vous pouvez créer et gérer des restrictions d’inscription. Ces restrictions définissent le nombre et le type des appareils qui peuvent s’inscrire à la gestion Intune. Vous pouvez créer plusieurs restrictions et les appliquer à différents groupes d’utilisateurs. Vous pouvez définir [l’ordre de priorité](#change-enrollment-restriction-priority) pour vos différentes restrictions.
 
 >[!NOTE]
 >Les restrictions d’inscription ne sont pas des fonctionnalités de sécurité. Des appareils compromis peuvent falsifier leur caractère. Ces restrictions représentent une barrière de meilleur effort pour les utilisateurs non malveillants.
@@ -83,7 +83,7 @@ Pour changer les paramètres d’une restriction de type d’appareil, effectuez
   Les versions du système d’exploitation ne s’appliquent pas aux appareils Apple inscrits par le biais du Programme d’inscription des appareils, d’Apple School Manager ou de l’application Apple Configurator.
 8. Spécifiez s’il faut **Autoriser** ou **Bloquer** les appareils **personnels** pour chaque plateforme répertoriée.
 
-    ![Capture d’écran de l’espace de travail de restrictions sur les appareils avec les configurations de plateforme d’appareils par défaut indiquant les paramètres de propriété personnelle configurés.](media/device-restrictions-platform-configurations.png)
+    ![Capture d’écran de l’espace de travail de restrictions des appareils avec la plateforme d’appareil par défaut configurée pour les appareils personnels](media/device-restrictions-platform-configurations.png)
 9. Cliquez sur **Save**.
 
 >[!NOTE]
@@ -100,7 +100,7 @@ Pour changer les paramètres d’une restriction de limite d’appareils, effect
 3. Choisissez **Inscription de l’appareil** > **Restrictions d’inscription**.
 4. Sous **Restrictions de type d’appareils**, choisissez la restriction à définir.
 5. Choisissez **Limite d’appareils** puis, dans la liste déroulante, sélectionnez le nombre maximal d’appareils qu’un utilisateur peut inscrire.
-    ![Capture d’écran du panneau des restrictions de limite d’appareils avec les restrictions de limite d’appareils.](./media/device-restrictions-limit.png)
+    ![Capture d’écran du panneau des restrictions du nombre limite d’appareils](./media/device-restrictions-limit.png)
 6. Cliquez sur **Save**.
 
 Votre utilisateur final reçoit une notification qui lui indique qu’il a atteint le nombre limite d’appareils inscrits. Par exemple, sur iOS, la notification ressemble à ce qui suit :

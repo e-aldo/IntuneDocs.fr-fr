@@ -1,11 +1,12 @@
 ---
-title: "Se connecter à l’entrepôt de données avec Power BI | Microsoft Docs"
-description: "Vous pouvez télécharger un fichier destiné à Microsoft Power BI qui vous permet de charger des rapports interactifs et dynamiques pour votre locataire Intune."
+title: "Se connecter à l’entrepôt de données avec Power BI"
+titlesuffix: Microsoft Intune
+description: "Vous pouvez télécharger un fichier destiné à Microsoft Power BI qui vous permet de charger des rapports interactifs et dynamiques pour votre locataire Microsoft Intune."
 keywords: "Entrepôt de données Intune"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa7c578cd8dba84910bae9b9f204c8057c76bf6b
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 1266fa4cc5ef958e369e58b0a6619e2bab3dd3eb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Se connecter à l’entrepôt de données avec Power BI
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Vous pouvez télécharger un fichier destiné à Microsoft Power BI qui vous permet de charger des rapports interactifs et dynamiques pour votre locataire Intune. Le fichier Power BI (pbix) d’entrepôt de données contient des paramètres de connexion à votre locataire ainsi que les exemples de rapports et de graphiques suivants :  
+Vous pouvez télécharger un fichier destiné à Microsoft Power BI qui vous permet de charger des rapports interactifs et dynamiques pour votre locataire Intune. Le fichier Power BI (pbix) d’entrepôt de données contient des paramètres de connexion à votre locataire ainsi que les exemples de rapports et de graphiques suivants :  
 
   -  Appareils
   -  Inscription

@@ -1,10 +1,10 @@
 ---
 title: Comment obtenir un support technique pour Microsoft Intune
-titlesuffix: Azure portal
-description: "Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation."
+titlesuffix: Microsoft Intune
+description: "Obtenez du support en ligne et par téléphone pour les abonnements d’essai gratuit et payants de Microsoft Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Comment obtenir un support technique pour Microsoft Intune
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 Microsoft fournit un support technique global, en avant-vente, pour la facturation et l’abonnement pour Microsoft Intune. Un support technique est disponible en ligne et par téléphone pour les abonnements payants et d’évaluation. Le support technique en ligne est disponible en anglais et japonais. Le support par téléphone et le support à la facturation en ligne sont disponibles dans d’autres langues.
 
 >[!IMPORTANT]
-> Pour obtenir un support technique pour les produits qui fonctionnent avec Intune mais qui ne sont pas fabriqués par Microsoft, par exemple SaaSwedo, Cisco ou Lookout, contactez d’abord le fournisseur du produit. Avant d’ouvrir un incident auprès du support Intune, vérifiez que vous avez correctement configuré l’autre produit.
+> Pour obtenir un support technique sur les produits tiers qui fonctionnent avec Intune (comme Saaswedo, Cisco ou Lookout), contactez d’abord le fournisseur du produit. Avant d’ouvrir un incident auprès du support Intune, vérifiez que vous avez correctement configuré l’autre produit.
 
 ## <a name="create-an-online-support-ticket"></a>Créer un ticket de support en ligne
 
@@ -41,31 +41,37 @@ En tant qu’administrateur informatique, vous pouvez créer un ticket de suppor
 2. Dans la page Aide et support d’Azure, sélectionnez **Nouvelle demande de support**.
 
     ![Capture d’écran de la page Aide et support d’Azure avec le lien Nouvelle demande de support mis en surbrillance](./media/azure-support-ticket-link.png)
+
 3. Dans le panneau **Fonctions de base**, pour la plupart des questions de support technique Intune, choisissez les options suivantes :
     - **Type de problème** : **Technique**
     - **Service** : **Microsoft Intune**
-    - **Plan de support** : **Support technique - inclus** (pour les problèmes techniques en rapport avec Intune, la prise en charge est gratuite.)
-
+    - **Plan de support** : **Support technique - inclus** (pour les problèmes techniques en rapport avec Intune, le support est gratuit) ou **Premier**
+    
     >[!IMPORTANT]
-    >Le support pour Intune et pour Intune quand il est utilisé avec Configuration Manager est gratuit. Pour consulter les détails de l’offre Premier Support, consultez la documentation [Description des services](https://www.microsoft.com/microsoftservices/services-list.aspx), section 5.3.3 « Services réactifs ».
+    >- Si vous êtes un **client Premier** et que vous ne voyez pas **Plan de Support : Premier**, demandez de l’aide à votre responsable technique de compte en fournissant votre contrat et votre locataire.
+    >- Le support pour Intune et pour Intune quand il est utilisé avec Configuration Manager est gratuit. Pour consulter les détails de l’offre Support Premier, consultez la documentation [Description des services](https://enterprise.microsoft.com/en-us/services/services-list/), section 5.3.3 « Services réactifs ».
 
     Cliquez sur **Suivant** pour continuer.
-4. Dans le panneau **Problème**, pour vous assurer que votre demande est traitée par l’expert technique le plus à même de résoudre votre problème, sélectionnez les options suivantes :
+
+4. Dans le panneau **Problème**, pour vérifier que votre demande est traitée par l’expert technique le plus à même de résoudre votre problème, sélectionnez les options suivantes :
+
     - **Gravité**
     - **Type de problème**
     - **Catégorie**
 
-    Ces informations nous permettent également de vous fournir une **aide connexe** susceptible de vous aider à résoudre votre problème sans créer de ticket.
+    Ces informations nous permettent également de vous fournir une **aide connexe** susceptible de vous aider à résoudre votre problème sans ouvrir de ticket.
 
     ![Capture d’écran de la page Aide et support d’Azure avec des éléments de problème renseignés et un affichage de solutions en fonction de votre problème](./media/support-need-solutions.png)
 
-    Pour nous aider à identifier et à résoudre votre problème, entrez les informations suivantes :
-    -   **Détails**
+    Pour aider l’équipe de support à identifier et résoudre votre problème, entrez les informations suivantes :
+    
+    - **Détails**
     - **Date**
     - **Heure**
-    - Données supplémentaires
+    - **Données supplémentaires**
 
     Choisissez **Suivant**.
+
 5. Fournissez des **Informations de contact** pour cette demande de support. Le support Microsoft utilise ces informations pour vous contacter.
 6. Choisissez **Créer** pour envoyer votre demande de support.
 
@@ -74,6 +80,5 @@ En tant qu’administrateur informatique, vous pouvez créer un ticket de suppor
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Contacter le support par téléphone pour Microsoft Intune](phone-support-contact.md)
-- [Centre de gestion des licences en volume](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [Support relatif à la gestion de la facturation et des abonnements](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Licences en volume](http://go.microsoft.com/fwlink/p/?LinkID=282015)

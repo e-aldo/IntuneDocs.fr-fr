@@ -1,12 +1,12 @@
 ---
 title: "Gérer le transfert de données entre applications iOS"
-titlesuffix: Azure portal
-description: "Cette rubrique explique comment utiliser la fonctionnalité iOS Open In et les stratégies de gestion des applications mobiles pour gérer les transferts de données entre applications."
+titlesuffix: Microsoft Intune
+description: "Découvrez comment utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour gérer les transferts de données entre les applications."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d110a099b4957626d4368c9e63817674d6cfaa2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-manage-data-transfer-between-ios-apps"></a>Guide pratique pour gérer le transfert de données entre applications iOS
+# <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Comment gérer les transferts de données entre applications iOS dans Microsoft Intune
 ## <a name="manage-ios-apps"></a>Gérer les applications iOS
 La protection des données de votre entreprise nécessite notamment de vérifier que les transferts de fichiers sont limités aux applications que vous gérez.  Vous pouvez gérer les applications iOS comme suit :
 
@@ -50,7 +50,7 @@ Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils g
 
 3.  Déployez l’application avec les paramètres de configuration d’application suivants :
 
-      **clé** = IntuneMAMUPN,  **valeur** = <username@company.com>
+      **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
       Exemple : [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -63,7 +63,7 @@ Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils g
 
 2. Dans la section Configuration de l’application, entrez le paramètre suivant :
 
-  **clé** = IntuneMAMUPN,  **valeur** = <username@company.com>
+  **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
   La syntaxe exacte de la paire clé/valeur peut varier en fonction du fournisseur de gestion des appareils mobiles tiers. Le tableau ci-dessous présente des exemples de fournisseurs de gestion des appareils mobiles tiers et les valeurs exactes à entrer dans la paire clé/valeur.
 

@@ -1,7 +1,7 @@
 ---
-title: "Guide pratique pour configurer des paramètres VPN Intune"
-titleSuffix: Azure portal
-description: "Apprenez à utiliser Intune pour configurer des connexions VPN sur les appareils que vous gérez."
+title: "Guide pratique pour configurer des paramètres VPN dans Microsoft Intune"
+titleSuffix: 
+description: "Découvrez comment utiliser Intune pour configurer des connexions de réseau privé virtuel sur les appareils que vous gérez."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres VPN dans Microsoft Intune
 
@@ -48,7 +48,7 @@ Vous pouvez créer des profils VPN à l’aide des types de connexions suivants 
 
 
 > [!IMPORTANT]
-> Avant de pouvoir utiliser les profils VPN affectés à un appareil, vous devez installer l’application VPN applicable pour le profil. Vous pouvez utiliser les informations fournies dans la rubrique [Qu’est-ce que la gestion des applications dans Microsoft Intune ?](app-management.md) pour vous aider à affecter l’application avec Intune.  
+> Avant de pouvoir utiliser les profils VPN affectés à un appareil, vous devez installer l’application VPN applicable pour le profil. Vous pouvez utiliser les informations de l’article [Qu’est-ce que la gestion des applications dans Microsoft Intune ?](app-management.md) pour vous aider à affecter l’application avec Intune.  
 
 Découvrez comment créer des profils VPN personnalisés à l’aide des paramètres de l’URI dans [Créer des profils VPN personnalisés](custom-vpn-profiles-create.md).     
 
@@ -88,7 +88,7 @@ Les profils VPN peuvent utiliser différents types de connexion et protocole de 
 
 ### <a name="certificates"></a>Certificats
 
-Quand vous créez le profil VPN, vous choisissez un profil de certificat SCEP ou PKCS que vous avez créé précédemment dans Intune. Il s’agit du certificat d’identité. Il est utilisé pour effectuer une authentification auprès d’un profil de certificat approuvé (ou *certificat racine*) que vous avez créé pour établir que l’utilisateur est autorisé à se connecter. Le certificat approuvé est affecté à l’ordinateur qui authentifie la connexion VPN, en règle générale le serveur VPN.
+Quand vous créez le profil VPN, vous choisissez un profil de certificat SCEP ou PKCS que vous avez créé précédemment dans Intune. Ce profil est connu comme étant le certificat d’identité. Il est utilisé pour effectuer une authentification auprès d’un profil de certificat approuvé (ou *certificat racine*) que vous avez créé pour établir que l’utilisateur est autorisé à se connecter. Le certificat approuvé est affecté à l’ordinateur qui authentifie la connexion VPN, en règle générale le serveur VPN.
 
 Pour plus d’informations sur la création et l’utilisation des profils de certificat dans Intune, consultez [Guide pratique pour configurer des certificats avec Microsoft Intune](certificates-configure.md).
 

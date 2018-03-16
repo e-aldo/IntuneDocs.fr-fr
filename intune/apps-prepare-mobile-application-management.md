@@ -1,10 +1,11 @@
 ---
-title: "Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune"
-description: "Cette rubrique présente des informations pour vous aider à déterminer quand utiliser l’outil de création de package de restrictions d’application et le SDK d’application pour permettre à vos applications métier personnalisées d’utiliser les stratégies de gestion d’applications mobiles."
+title: "Préparer les applications métier aux stratégies de protection des applications"
+titlesuffix: Microsoft Intune
+description: "Utilisez l’outil de wrapping d’applications et le SDK d’application pour permettre à vos applications métiers personnalisées d’utiliser des stratégies de protection d’application dans Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Préparer les applications métier aux stratégies de protection des applications
 
@@ -102,6 +103,7 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 |Configuration d'application ciblée |X||
 |Prise en charge des identités multiples|X||
 |Style personnalisable |X|||
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur les stratégies de protection des applications et Intune, consultez les rubriques suivantes :

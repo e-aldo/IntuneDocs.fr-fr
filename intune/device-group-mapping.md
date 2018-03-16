@@ -1,7 +1,7 @@
 ---
-title: "Guide pratique pour utiliser des catégories d’appareils dans Intune"
-titleSuffix: Azure portal
-description: "Découvrez comment utiliser les catégories d'appareils que les utilisateurs peuvent choisir lorsqu’ils inscrivent leurs appareils dans Intune."
+title: "Guide pratique pour catégoriser les appareils en groupes dans Intune"
+titleSuffix: Microsoft Intune
+description: "Découvrez comment catégoriser les appareils en groupes pour faciliter la gestion."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1200ce4ab5d24f8c9212c064961a167e0ec6c42
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="map-device-groups"></a>Mappage de groupes d'appareils
+# <a name="categorize-devices-into-groups-for-easier-management"></a>Catégoriser les appareils en groupes pour faciliter la gestion
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,11 +41,11 @@ Vous pouvez créer toute catégorie d’appareils souhaitée, par exemple :
 ## <a name="how-to-configure-device-categories"></a>Comment configurer des catégories d'appareils
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>Étape 1 : créer des catégories d'appareils dans le panneau Intune du portail Azure
-1. Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
+1. Dans le [portail Azure](https://portal.azure.com), choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Inscription de l’appareil**.
 3. Dans le panneau **Inscription de l’appareil** choisissez **Catégories d’appareils**.
-4. Sur la page **Catégories d’appareils**, choisissez **Créer** pour ajouter une nouvelle catégorie.
-5. Dans le panneau suivant, entrez un **Nom** pour la nouvelle catégorie et éventuellement une **Description**.
+4. Dans la page **Catégories d’appareils**, choisissez **Créer** pour ajouter une nouvelle catégorie.
+5. Dans le panneau **Créer une catégorie d’appareils**, entrez un **Nom** pour la nouvelle catégorie et une **Description** facultative.
 6. Quand vous avez terminé, cliquez sur **Créer**. Vous pouvez voir la nouvelle catégorie dans la liste des catégories.
 
 Vous utiliserez le nom de catégorie d’appareil quand vous créerez des groupes de sécurité Active Directory Azure à l’étape 2.
@@ -61,27 +61,29 @@ Une fois que vous configurez des groupes d'appareils et que les utilisateurs ins
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>Comment afficher les catégories d’appareils que vous gérez
 
-1.  Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
+1.  Dans le [portail Azure](https://portal.azure.com), choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 
-2. Dans le panneau Intune du portail Azure, choisissez **Appareils et groupes**.
+2. Dans le panneau Intune du portail Azure, choisissez **Appareils**.
 
 3.  Sous **Gérer**, cliquez sur **Tous les appareils**.
 
-4.  Dans la liste des appareils, examinez la colonne **Catégorie**.
+4.  Dans la liste des appareils, examinez la colonne **Catégorie d’appareil**.
 
-Si la colonne **Catégorie** n’est pas affichée, cliquez sur **Colonnes**, choisissez **Catégorie** dans la liste, puis cliquez sur **Appliquer**.
+Si la colonne **Catégorie d’appareil** n’est pas affichée, cliquez sur **Colonnes**, choisissez **Catégorie d’appareil** dans la liste, puis cliquez sur **Appliquer**.
 
 ### <a name="to-change-the-category-of-a-device"></a>Pour modifier la catégorie d’un appareil
 
-1. Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Appareils et groupes**.
-4. Dans le panneau **Appareils et groupes**, choisissez **Gérer** > **Tous les appareils**.
-5. Dans la liste des appareils, cliquez sur l’appareil de votre choix, puis, dans le panneau de propriétés de l’appareil, choisissez **Gérer** > **Propriétés**.
+1. Dans le [portail Azure](https://portal.azure.com), choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le panneau **Intune**, choisissez **Appareils**.
+4. Dans le panneau **Appareils**, sous **Gérer**, choisissez **Tous les appareils**.
+5. Dans la liste des appareils, cliquez sur l’appareil de votre choix puis, dans le panneau des propriétés de l’appareil, sous la section **Gérer**, choisissez **Propriétés**.
 6. Dans le panneau suivant, vous pouvez modifier la **Catégorie** de l’appareil sélectionné sur un des noms de catégorie que vous avez configurés précédemment.
 
 ## <a name="after-you-configure-device-groups"></a>Après avoir configuré des groupes d’appareils
 
 Quand des utilisateurs finaux d’appareils iOS et Android inscrivent leur appareil, ils doivent choisir une catégorie dans la liste des catégories que vous avez configurées. Une fois qu’ils ont choisi une catégorie et terminé l’inscription, leur appareil est ajouté au groupe d’appareils Intune ou au groupe de sécurité Active Directory correspondant à la catégorie choisie.
+
+Les utilisateurs finaux sur Windows doivent utiliser le site web Portail d’entreprise pour sélectionner une catégorie.
 
 Quelle que soit la plateforme, vos utilisateurs finaux peuvent toujours accéder à portal.manage.microsoft.com après avoir inscrit l’appareil. Invitez l’utilisateur à se rendre sur le site web Portail d’entreprise et à accéder à **Mes appareils**. Ils peuvent choisir un appareil inscrit répertorié à l’écran, puis sélectionner une catégorie.
 

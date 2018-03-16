@@ -1,25 +1,25 @@
 ---
-title: "Configurer Intune pour l’authentification unique des appareils iOS"
-titlesuffix: Azure portal
-description: "Découvrez comment configurer Intune pour l’authentification unique des appareils iOS."
+title: "Configurer Microsoft Intune pour l’authentification unique des appareils iOS"
+titlesuffix: 
+description: "Découvrez comment configurer Microsoft Intune pour l’authentification unique des appareils iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Configurer Intune pour l’authentification unique des appareils iOS
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurer Microsoft Intune pour l’authentification unique des appareils iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,18 +35,18 @@ Pour tirer parti de l’authentification unique des appareils iOS, les condition
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Profils**.
-3. Dans le panneau des profils, choisissez **Créer un profil**, fournissez un nom et une description, puis configurez les paramètres suivants :
+3. Dans la page **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans la page **Configuration de l’appareil**, choisissez **Profils**.
+3. Dans la page des profils, choisissez **Créer un profil**, entrez un nom et une description, puis configurez les paramètres suivants :
    - **Plateforme** : choisissez **iOS**. 
    - **Type de profil** : choisissez **Fonctionnalités de l’appareil**.
-4. Dans le panneau **Fonctionnalités de l’appareil**, sélectionnez **Authentification unique**.
+4. Dans la page **Fonctionnalités de l’appareil**, choisissez **Authentification unique**.
 
-   ![Panneau Authentification unique](./media/sso-blade.png)
+   ![Page Authentification unique](./media/sso-blade.png)
 
-2. Utilisez le tableau récapitulatif suivant pour vous aider à remplir les champs du panneau **Authentification unique**. Pour plus d’informations, consultez les sections après le tableau.
+2. Utilisez le tableau récapitulatif suivant pour vous aider à remplir les champs de la page **Authentification unique**. Pour plus d’informations, consultez les sections après le tableau.
    
-   |Champ  |Notes|
+   |Champ  |Remarques|
    |---------|---------|
    |**Attribut de nom d’utilisateur d’AAD**|Attribut recherché par Intune dans AAD pour chaque utilisateur, et renseigné dans le champ correspondant (par exemple, UPN) avant de générer la charge utile XML installée sur l’appareil.|
    |**Domaine**|Partie domaine de l’URL.|
@@ -82,7 +82,7 @@ Par exemple, quand un utilisateur se connecte à l’un de ces sites, l’appare
 > [!NOTE]
 > Ces URL doivent être spécifiées sous la forme de noms de domaine complets correctement mis en forme. Apple exige qu’elles soient spécifiées au format `http://<yourURL.domain>`.
 
-Les modèles de correspondance d’URL doivent commencer par `http://` ou `https://`. Une correspondance de chaîne simple est effectuée. Par conséquent, le préfixe d’URL `http://www.contoso.com/` ne correspond pas à `http://www.contoso.com:80/`. Avec iOS 9.0 ou version ultérieure, en revanche, vous pouvez utiliser un caractère générique * pour spécifier toutes les valeurs correspondantes. Par exemple, `http://*.contoso.com/` correspond à la fois à `http://store.contoso.com/` et à `http://www.contoso.com`.
+Les modèles de correspondance d’URL doivent commencer par `http://` ou `https://`. Une correspondance de chaîne simple est effectuée. Par conséquent, le préfixe d’URL `http://www.contoso.com/` ne correspond pas à `http://www.contoso.com:80/`. Avec iOS 9.0 ou ultérieur, en revanche, vous pouvez utiliser un caractère générique (\*) pour spécifier toutes les valeurs correspondantes. Par exemple, `http://*.contoso.com/` correspond à la fois à `http://store.contoso.com/` et à `http://www.contoso.com`.
 Les modèles `http://.com` et `https://.com` correspondent respectivement à toutes les URL HTTP et HTTPS.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Applications qui utiliseront l’authentification unique

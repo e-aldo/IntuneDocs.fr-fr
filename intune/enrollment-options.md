@@ -1,6 +1,7 @@
 ---
-title: "Options d’inscription pour Intune"
-description: 
+title: "Options d’inscription pour les appareils gérés par Microsoft Intune"
+titleSuffix: 
+description: "Liste des options d’inscription que les administrateurs peuvent définir pour les appareils gérés par Microsoft Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 2672ebec94387ad876443c975f083472c2613a11
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enrollment-options-for-intune"></a>Options d’inscription pour Intune
+# <a name="enrollment-options-for-devices-managed-by-intune"></a>Options d’inscription pour les appareils gérés par Intune
 
 En tant qu’administrateur Intune, vous pouvez faciliter l’inscription des appareils des utilisateurs et activer des fonctionnalités Intune.  Intune propose les options d’inscription suivantes :
 
@@ -45,7 +46,7 @@ Vous pouvez recenser les numéros IMEI (International Mobile Equipment Identifie
 
 Vous pouvez demander aux utilisateurs d’utiliser une méthode de vérification supplémentaire, comme un téléphone, un code PIN ou des données biométriques, quand ils inscrivent un appareil. Découvrez plus d’informations sur [l’authentification multifacteur](multi-factor-authentication.md).
 
-## <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareil
+## <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareils
 Vous pouvez attribuer le rôle de gestionnaire d’inscription d’appareils à des utilisateurs.  Ceux-ci peuvent alors inscrire un grand nombre d’appareils mobiles avec un même compte d’utilisateur. Un compte de gestionnaire d’inscription d’appareils permet d’inscrire jusqu’à 1 000 appareils. En savoir plus sur les [gestionnaires d’inscription d’appareils](device-enrollment-manager-enroll.md).
 
 ## <a name="device-categories"></a>Catégories d’appareils

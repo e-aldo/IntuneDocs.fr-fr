@@ -1,12 +1,12 @@
 ---
-title: "Installer des applications Office 365 sur des appareils mobiles à l’aide d’Intune"
-titlesuffix: Azure portal
-description: "Découvrez comment utiliser Intune pour faciliter l’installation d’applications Office 365 sur des appareils Windows 10."
+title: Installer des applications Office 365 sur des appareils avec Intune
+titlesuffix: 
+description: "Découvrez comment utiliser Microsoft Intune pour faciliter l’installation d’applications Office 365 sur des appareils Windows 10."
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Guide pratique pour affecter des applications Office 365 ProPlus à des appareils Windows 10 avec Microsoft Intune
 
@@ -85,11 +85,11 @@ Dans cette étape, configurez les options d’installation de la suite d’appli
 1.  Dans le panneau **Ajouter une application**, choisissez **Paramètres de la suite d’applications**.
 2.  Dans le panneau **Paramètres de la suite d’applications**, indiquez les informations suivantes :
     - **Version d’Office** : choisissez si vous souhaitez affecter la version 32 bits ou 64 bits d’Office. Vous pouvez installer la version 32 bits sur des appareils 32 bits et 64 bits, mais vous ne pouvez installer la version 64 bits que sur des appareils 64 bits.
-    - **Canal de mise à jour** : choisissez le mode de mise à jour d’Office sur les appareils. Pour plus d’informations sur les différents canaux de mise à jour, consultez Vue d’ensemble des canaux de mise à jour pour Office 365 ProPlus. Choisissez parmi :
-        - **Actuel**
-        - **Différé**
-        - **Canal actuel de la première version**
-        - **Canal différé de la première version**
+    - **Canal de mise à jour** : choisissez le mode de mise à jour d’Office sur les appareils. Pour plus d’informations sur les différents canaux de mise à jour, consultez [Vue d’ensemble des canaux de mise à jour pour Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Choisissez parmi :
+        - **Tous les mois**
+        - **Mensuel (ciblé)**
+        - **Semestriel**
+        - **Semestriel (ciblé)**
     - **Accepter automatiquement le contrat de licence utilisateur final de l’application** : sélectionnez cette option si les utilisateurs finaux ne sont pas tenus d’accepter le contrat de licence. Intune accepte alors automatiquement le contrat.
     - **Utiliser l’activation d’ordinateurs partagés** : l’activation d’ordinateurs partagés est utilisée quand plusieurs utilisateurs partagent un ordinateur. Pour plus d’informations, consultez Vue d’ensemble de l’activation d’ordinateurs partagés pour Office 365 ProPlus.
     - **Langues** : Office s’installe automatiquement dans toute langue prise en charge installée avec Windows sur l’appareil de l’utilisateur final. Sélectionnez cette option pour installer des langues supplémentaires avec la suite d’applications.

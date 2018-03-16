@@ -1,31 +1,30 @@
 ---
-title: "Stratégies de conformité des appareils Intune"
-titleSuffix: Azure portal
-description: "Utilisez cette rubrique pour en savoir plus sur la conformité dans Microsoft Intune"
+title: "Stratégies de conformité des appareils de Microsoft Intune"
+titleSuffix: 
+description: "Découvrez plus d’informations sur la conformité des appareils dans Microsoft Intune"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Bien démarrer avec les stratégies de conformité des appareils Intune
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Bien démarrer avec les stratégies de conformité des appareils Microsoft Intune
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a>Quelle est la conformité des appareils dans Intune ?
-
-Les stratégies de conformité des appareils Intune définissent les règles et les paramètres auxquels doit se conformer un appareil pour qu’il soit considéré comme conforme par Intune.
+Les stratégies de conformité des appareils Intune définissent les règles et les paramètres auxquels doit se conformer un appareil pour être considéré comme conforme par Intune.
 
 Ces règles sont les suivantes :
 
@@ -43,7 +42,7 @@ Ces règles sont les suivantes :
 
 Vous pouvez également utiliser des stratégies de conformité des appareils pour surveiller l’état de conformité dans vos appareils.
 
-### <a name="device-compliance-requirements"></a>Exigences de conformité des appareils
+## <a name="device-compliance-requirements"></a>Exigences de conformité des appareils
 
 Les exigences de conformité sont, pour simplifier, des règles comme l’exigence d’un code PIN ou d’un chiffrement que vous pouvez spécifier comme requises ou non requises pour une stratégie de conformité.
 
@@ -74,7 +73,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 Vous devez souscrire aux abonnements suivants pour utiliser des stratégies de conformité des appareils avec Intune :
 
-- Intune EMS
+- Intune
 
 - Azure AD Premium
 
@@ -108,9 +107,9 @@ Si un appareil a plusieurs profils de configuration qui lui sont affectés et qu
 
 |État  |Gravité  |
 |---------|---------|
-|En attente     |1|
+|Pending     |1|
 |Réussi     |2|
-|En échec     |3|
+|Failed     |3|
 |Erreur     |4|
 
 Un état résultant d’au moins deux profils de configuration est alors affecté en sélectionnant le niveau de gravité le plus élevé de tous les profils affectés à un appareil.
@@ -144,7 +143,7 @@ Si un appareil a plusieurs stratégies de conformité qui lui sont affectées et
 
 |État  |Gravité  |
 |---------|---------|
-|Inconnu     |1|
+|Unknown     |1|
 |NotApplicable     |2|
 |Conforme|3|
 |InGracePeriod|4|

@@ -3,8 +3,8 @@ title: "Créer une stratégie de conformité des appareils Mobile Threat Defense
 titlesuffix: Azure portal
 description: "Créer une stratégie de conformité des appareils Mobile Threat Defense dans Intune"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,16 +15,16 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Créer une stratégie de conformité des appareils Mobile Threat Defense (MTD) avec Intune
 
 > [!NOTE] 
-> Cette rubrique s’applique à tous les partenaires Mobile Threat Defense.
+> Ces informations s’appliquent à tous les partenaires Mobile Threat Defense.
 
 Intune avec MTD vous aide à détecter les menaces et à évaluer les risques sur les appareils mobiles. Vous pouvez créer une règle de stratégie de conformité de l’appareil Intune qui évalue les risques et détermine si l’appareil est conforme. Vous pouvez ensuite utiliser une stratégie d’accès conditionnel pour autoriser ou bloquer l’accès à des services en fonction de la conformité de l’appareil.
 
@@ -52,13 +52,13 @@ Conditions préalables pour la stratégie de conformité de l’appareil avec MT
 
 7.  Dans le panneau **Intégrité de l’appareil**, choisissez le niveau de menace dans la liste déroulante sous **Exiger que l’appareil se situe au niveau Mobile Threat Level ou en dessous**.
 
-    a.  **Sécurisé** : il s’agit du niveau de sécurité le plus élevé. L'appareil ne peut pas avoir de menace présente et accéder aux ressources de l’entreprise. Si des menaces sont détectées, l’appareil est évalué comme non conforme.
+    a.  **Sécurisé** : ce niveau est le plus sûr. L'appareil ne peut pas avoir de menace présente et accéder aux ressources de l’entreprise. Si des menaces sont détectées, l’appareil est évalué comme non conforme.
 
-    b.  **Faible** : l’appareil est conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
+    b.  **Faible** : l’appareil est conforme seulement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
 
-    c.  **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées, l’appareil est déterminé comme non conforme.
+    c.  **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées, l’appareil est considéré comme non conforme.
 
-    d.  **Élevé** : cette option est la moins sécurisée. Cela active tous les niveaux de menace et utilise la défense contre les menaces mobiles uniquement à des fins de création de rapport. L’application MTD doit être activée avec ce paramètre sur les appareils.
+    d.  **Élevé** : ce niveau est le moins sûr. Cela active tous les niveaux de menace et utilise la défense contre les menaces mobiles uniquement à des fins de création de rapport. L’application MTD doit être activée avec ce paramètre sur les appareils.
 
 8.  Cliquez sur **OK** à deux reprises, puis choisissez **Créer**.
 
@@ -69,12 +69,12 @@ Conditions préalables pour la stratégie de conformité de l’appareil avec MT
 
 Pour affecter une stratégie de conformité de l’appareil à des utilisateurs, choisissez une stratégie que vous avez déjà configurée. Vous trouverez les stratégies existantes dans le panneau **Stratégie de conformité de l’appareil**.
 
-1. Choisissez la stratégie que vous souhaitez attribuer aux utilisateurs, puis **Affectations**. Cette opération ouvre le panneau dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous attribuez à la stratégie.
+1. Choisissez la stratégie que vous souhaitez attribuer aux utilisateurs, puis **Affectations**. Cette action ouvre le panneau où vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** et les affecter à la stratégie.
 
 2. Choisissez **Sélectionner des groupes** pour ouvrir le panneau qui affiche les groupes de sécurité Azure AD.  Si vous choisissez **Sélectionner**, la stratégie est déployée pour les utilisateurs.
 
     > [!NOTE] 
-    > Vous avez appliqué la stratégie à des utilisateurs. La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie de conformité sera évaluée.
+    > Vous avez appliqué la stratégie à des utilisateurs. La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie est évaluée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -1,6 +1,7 @@
 ---
-title: "Messages Portail d’entreprise visibles par les utilisateurs sur Android"
-description: "Cet article décrit les messages de l’application Portail d’entreprise que les utilisateurs finaux d’Intune peuvent recevoir."
+title: "Messages du Portail d’entreprise que les utilisateurs peuvent voir sur les appareils"
+titlesuffix: Microsoft Intune
+description: "Découvrez les différents messages que les utilisateurs finaux peuvent voir dans le Portail d’entreprise."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -13,11 +14,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 58468a81d0ec3e7bfc051a6edc6a09ef1c5e62a2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e78d43cf1cb96575ebc8d8143b7b4fc1103a9bd1
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Aider les utilisateurs finaux à comprendre les messages de l’application Portail d’entreprise
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 > Les informations ci-après s’appliquent uniquement aux appareils équipés d’Android 6.0 ou d’une version ultérieure.
 
-À différents stades du processus d’inscription, les utilisateurs finaux verront s’afficher deux messages susceptibles de les inquiéter.
+Découvrez les différents messages liés aux applications, que les utilisateurs finaux peuvent voir dans le Portail d’entreprise. Ces messages liés aux applications sont généralement affichés à différents moments du processus d’inscription. Découvrez où les messages s’affichent, ce qu’ils signifient et ce qui se passe si les utilisateurs refusent l’accès. Découvrez aussi comment mieux expliquer les messages aux utilisateurs.
 
 - __Autoriser l’application Portail d’entreprise à passer et gérer des appels téléphoniques ?__
 - __Autoriser l’application Portail d’entreprise à accéder aux photos, aux fichiers multimédias et aux fichiers de votre appareil ?__
@@ -42,10 +43,10 @@ En acceptant cette invite, les utilisateurs autorisent l’envoi des numéros de
 > [!NOTE]
 > **L’application Portail d’entreprise ne passe et ne gère jamais d’appels téléphoniques !** Le texte du message est contrôlé par Google et ne peut pas être modifié.
 
-Pour visualiser la page **Matériel**, accédez à **Groupes** > **Tous les appareils mobiles** > **Appareils**. Sélectionnez l’appareil de l’utilisateur et accédez à **Afficher les propriétés** > **Matériel**.
+Pour visualiser la page **Matériel**, vous devez accéder à **Groupes** > **Tous les appareils mobiles** > **Appareils**. Sélectionnez l’appareil de l’utilisateur et accédez à **Afficher les propriétés** > **Matériel**.
 
 ### <a name="what-happens-if-users-deny-access"></a>Ce qui se passe si les utilisateurs refusent l’accès
-Si les utilisateurs refusent l’accès, ils peuvent continuer à utiliser l’application Portail d’entreprise et à inscrire leur appareil. Toutefois, les champs du numéro IMEI et du numéro de téléphone de l’appareil restent vides sur la page __Matériel__ de la console d’administration. La deuxième fois que les utilisateurs se connectent à l’application Portail d’entreprise après avoir refusé l’accès, le message affiche une case **Ne plus me demander** que les utilisateurs peuvent cocher pour demander l’arrêt de l’affichage de l’invite.
+Si les utilisateurs refusent l’accès, ils peuvent continuer à utiliser l’application Portail d’entreprise et à inscrire leur appareil. Toutefois, les champs du numéro IMEI et du numéro de téléphone de l’appareil restent vides sur la page __Matériel__ de la console d’administration. La deuxième fois que les utilisateurs se connectent à l’application Portail d’entreprise après avoir refusé l’accès, le message affiche une case **Ne plus me demander** que les utilisateurs peuvent cocher pour faire cesser l’affichage de l’invite.
 
 Si les utilisateurs autorisent, puis refusent par la suite l’accès, le message s’affiche la prochaine fois qu’ils se connectent à l’application Portail d’entreprise après l’inscription.
 
@@ -81,7 +82,7 @@ Pour plus d’informations, envoyez à vos utilisateurs la procédure [Inscrire 
 Le message **Autoriser l’application Portail d’entreprise à accéder aux photos, aux fichiers multimédias et aux fichiers de votre appareil ?** s’affiche quand les utilisateurs appuient sur **Envoyer les données** pour envoyer les journaux à leur administrateur informatique.
 
 ### <a name="what-it-means"></a>Signification
-En acceptant cette invite, les utilisateurs autorisent leur appareil à écrire des journaux de données sur la carte mémoire Secure Digital de l’appareil et à permettre le déplacement de ces journaux à l’aide d’un câble USB.   
+En acceptant cette invite, les utilisateurs autorisent leur appareil à écrire des journaux de données sur la carte mémoire SD de l’appareil. Ceci permet également le déplacement de ces journaux via un câble USB.   
 
 > [!NOTE]
 > **L’application Portail d’entreprise n’accède jamais aux photos, aux fichiers multimédias ni aux fichiers des utilisateurs !** Le texte du message est contrôlé par Google et ne peut pas être modifié.
@@ -89,7 +90,7 @@ En acceptant cette invite, les utilisateurs autorisent leur appareil à écrire 
 ### <a name="what-happens-if-users-deny-access"></a>Ce qui se passe si les utilisateurs refusent l’accès
 Si les utilisateurs refusent l’accès, ils peuvent toujours envoyer les journaux de données par e-mail, mais les journaux ne sont pas copiés sur la carte mémoire Secure Digital de l’appareil.
 
-La deuxième fois que les utilisateurs se connectent à l’application Portail d’entreprise après le refus de l’accès, le message affiche une case **Ne plus me demander** que les utilisateurs peuvent cocher pour que le message ne s’affiche plus. Si les utilisateurs autorisent, puis refusent par la suite l’accès, le message s’affiche la prochaine fois qu’ils essaient d’envoyer les journaux. Si les utilisateurs décident par la suite d’autoriser l’accès, ils peuvent accéder à **Paramètres** > **Applications** > **Portail d’entreprise** > **Autorisations** > **Stockage**, puis activer l’autorisation.
+La deuxième fois que les utilisateurs se connectent à l’application Portail d’entreprise après le refus de l’accès, le message affiche une case **Ne plus me demander** que les utilisateurs peuvent cocher pour que le message ne s’affiche plus. Si les utilisateurs autorisent, puis refusent par la suite l’accès, le message s’affiche la prochaine fois qu’ils essaient d’envoyer les journaux. Cependant, si les utilisateurs décident par la suite d’autoriser l’accès, ils peuvent accéder à **Paramètres** > **Applications** > **Portail d’entreprise** > **Autorisations** > **Stockage**, puis activer l’autorisation.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>Explication de ce mode de fonctionnement à vos utilisateurs
@@ -101,7 +102,7 @@ Envoyez à vos utilisateurs la procédure [Envoyer des journaux à votre adminis
 Si vous n’avez pas ajouté l’application Portail d’entreprise à la liste **Applications autorisées** ou **Applications exemptes**, et qu’un utilisateur tente de se connecter, la connexion échoue. Le message suivant s’affiche :
 
 > **Le support technique de votre entreprise a besoin de vous donner accès aux ressources d’entreprise**  
-> Votre entreprise utilise des stratégies Protection des informations Windows pour protéger votre appareil. Le support technique de votre entreprise doit vérifier que ces stratégies permettent au portail d’entreprise d’y accéder.
+> Votre entreprise utilise des stratégies Protection des informations Windows pour protéger votre appareil. Le support technique de votre entreprise doit vérifier que ces stratégies permettent au Portail d’entreprise d’accéder à ces ressources.
 
 ### <a name="what-it-means"></a>Signification
 

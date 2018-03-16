@@ -1,10 +1,10 @@
 ---
-title: "Guide pratique pour surveiller la conformité des appareils"
-titlesuffix: Azure portal
+title: "Surveiller la conformité des appareils"
+titlesuffix: Microsoft Intune
 description: "Apprenez à surveiller la conformité des appareils."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,32 +15,32 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9cd8bb0486164dd9dfe020261da9079ea5a68633
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-monitor-device-compliance-in-intune"></a>Guide pratique pour surveiller la conformité des appareils dans Intune
+# <a name="monitor-device-compliance-in-intune"></a>Surveiller la conformité des appareils dans Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Vous pouvez afficher le résumé de l’état de vos **profils de conformité** dans le panneau **Vue d'ensemble**.
-Vous pouvez cliquer de manière interactive sur les graphiques pour explorer les détails. Si vous avez configuré plusieurs profils de conformité, vous pouvez également afficher l’état de chaque stratégie en accédant à son volet et en choisissant **Rapports** dans la section **Gérer**.  Vous trouverez ci-dessous les détails des rapports disponibles.
+Vous pouvez cliquer de manière interactive sur les graphiques pour explorer les détails. Si plusieurs profils de conformité sont configurés, vous pouvez afficher l’état des stratégies dans le panneau des stratégies sous **Gérer** > **Rapports**.
 
 ##  <a name="device-compliance"></a>Conformité de l’appareil
 
-La vue résumée du rapport de conformité de l'appareil commence par afficher les informations agrégées sur le nombre d'appareils qui communiquent avec l'un des états suivants :
+La vue récapitulative du rapport de conformité des appareils présente une liste d’informations agrégées sur le nombre d’appareils qui se signalent avec un des états suivants :
 
-- **Conforme**: l'appareil a été évalué comme conforme avec les paramètres de profil de conformité spécifiés.
+- **Conforme** : l’appareil a été évalué récemment et il est conforme aux paramètres du profil de conformité spécifié.
 - **Non conforme**: l’appareil a été évalué comme non conforme.  Si une période de grâce a été définie dans le profil, elle a expiré et l'appareil passe dans un état non conforme.
-- **Période de grâce**: l’appareil a été évalué comme non conforme. Toutefois, la période de grâce s’applique toujours avant que l'appareil ne soit vraiment marqué comme non conforme.
+- **Période de grâce**: l’appareil a été évalué comme non conforme. Cependant, la période de grâce continue de s’appliquer avant que l’appareil soit marqué comme non conforme.
 
 Vous pouvez rechercher dans chaque section pour afficher plus de détails sur les appareils et utilisateurs individuels.
 
 ## <a name="setting-compliance"></a>Configuration de la conformité
 
-Le rapport de conformité de configuration fournit des détails pour chaque paramètre de conformité, notamment les éléments suivants :
+Le rapport de conformité aux paramètres fournit des détails pour chaque paramètre de conformité, notamment :
 
 - Le nombre d'appareils non compatibles avec le paramètre.
 - La plateforme à laquelle le paramètre est appliqué.

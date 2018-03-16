@@ -1,25 +1,26 @@
 ---
-title: "Paramètres de restriction d’appareil Intune pour Windows 10"
-titlesuffix: Azure portal
-description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils Windows 10."
+title: "Paramètres de restriction d’appareil Microsoft Intune pour Windows 10"
+titlesuffix: 
+description: "Découvrez les paramètres Microsoft Intune vous permettant de contrôler les paramètres et les fonctionnalités d’appareils exécutant Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 et versions ultérieures dans Microsoft Intune
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Paramètres de restriction des appareils Windows 10 et ultérieur dans Microsoft Intune
+Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - Ce paramètre de stratégie n’est pas appliqué si l’ordinateur est joint à Azure Active Directory et que l’inscription automatique est activée. 
    - Ce paramètre de stratégie ne s’applique pas aux ordinateurs qui exécutent Windows 10 Famille.
 - **Installation manuelle du certificat racine (mobile uniquement)** -Empêche l’utilisateur d’installer manuellement les certificats racines et les certificats CAP intermédiaires.
-- **Envoi des données de diagnostic** - Les valeurs possibles sont les suivantes :
-    - **Aucun** - Aucune donnée n’est envoyée à Microsoft
-    - **Basique** - Une quantité limitée d’informations est envoyée à Microsoft
-    - **Amélioré** - Des données de diagnostic avancées sont envoyées à Microsoft
-    - **Complète** - Envoie les mêmes données que Amélioré, ainsi que des données supplémentaires sur l'état de l’appareil
+
 - **Appareil photo** - Autorise ou bloque l’utilisation de l’appareil photo sur l’appareil.
 - **Synchronisation des fichiers OneDrive** -Empêche l’appareil de synchroniser des fichiers avec OneDrive.
 - **Stockage amovible** - Spécifie si des appareils de stockage externe comme une carte SD peuvent être utilisés avec l’appareil.
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **Découverte d’appareil** - Empêche un appareil d’être détecté par d’autres appareils.
 - **Sélecteur de tâches (mobile uniquement)** - Bloque le sélecteur de tâches sur l’appareil.
 - **Boîte de dialogue d’erreur de carte SIM (mobile uniquement)** - Empêche un message d’erreur de s’afficher sur l’appareil si aucune carte SIM n’est détectée.
+- **Espace de travail Windows Ink** - Empêche les utilisateurs d’accéder à l’espace de travail Windows Ink. Quand ce paramètre n’est pas configuré, l’espace de travail Windows Ink est activé (fonctionnalité activée), et l’utilisateur est autorisé à l’utiliser au-dessus de l’écran de verrouillage.
 - **Redéploiement automatique** : permet aux utilisateurs avec des droits d’administration de supprimer l’ensemble des données et des paramètres utilisateur à l’aide des touches **Ctrl+Win+R** sur l’écran de verrouillage de l’appareil. L’appareil est automatiquement reconfiguré et réinscrit dans la gestion.
 
 
@@ -75,6 +73,9 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 
 -   **Personnalisation des entrées** – Ne pas autoriser l’utilisation des services cloud de reconnaissance vocale pour les applications du Microsoft Store, la dictée ou Cortana. Si vous autorisez ces services, Microsoft peut collecter des données vocales pour améliorer le service.
 -   **Acceptation automatique des invites de consentement de l’utilisateur pour le couplage et la confidentialité** – Autoriser Windows à accepter automatiquement les messages de consentement de couplage et de confidentialité lors de l’exécution des applications.
+- **Publier les activités de l’utilisateur** : affectez la valeur **Bloquer** pour empêcher les expériences partagées et la découverte des ressources récemment utilisées dans le sélecteur de tâches.
+- **Activités locales uniquement** : affectez la valeur **Bloquer** pour empêcher les expériences partagées et la découverte des ressources récemment utilisées dans le sélecteur de tâches en fonction uniquement de l’activité locale.
+
 
 Vous pouvez définir les informations auxquelles toutes les applications sur l’appareil peuvent accéder. Vous pouvez définir des exceptions pour chaque application à l’aide de l’option **Exceptions de confidentialité par application**.
 
@@ -130,7 +131,7 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 ## <a name="locked-screen-experience"></a>Expérience d’écran de verrouillage
 
 - **Notifications du centre de notifications (mobile uniquement)** - Active les notifications du Centre de notifications sur l’écran de verrouillage de l’appareil (Windows 10 Mobile uniquement).
-- **URL de l'image de l'écran verrouillé (Desktop uniquement)** - Spécifie l’URL d’une image au format JPEG, JPG ou PNG qui sera utilisée comme papier peint de l’écran de verrouillage Windows. Les utilisateurs ne peuvent pas modifier cette option.
+- **URL de l’image de l’écran verrouillé (Desktop uniquement)** - Spécifie l’URL d’une image au format JPEG qui sera utilisée comme papier peint de l’écran de verrouillage Windows. Les utilisateurs ne peuvent pas modifier cette option.
 -   **Délai d’expiration de l’écran configurable par l’utilisateur (mobile uniquement)** – Permet aux utilisateurs de configurer la durée 
 -   **Cortana sur écran verrouillé (poste de travail uniquement)** – Ne pas autoriser l’utilisateur à interagir avec Cortana quand l’appareil est sur l’écran de verrouillage (Windows 10 Desktop uniquement).
 -   **Notifications toast sur écran verrouillé** – Bloquer l’affichage des messages d’alerte sur l’écran de verrouillage de l’appareil.
@@ -180,6 +181,8 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 -   **Moteur de recherche par défaut** - Spécifie le moteur de recherche par défaut à utiliser. Les utilisateurs finaux peuvent modifier cette valeur à tout moment.
 -   **Effacer les données de navigation à la sortie** – Efface l’historique et les données de navigation quand l’utilisateur quitte Edge.
 -   **Collecte de données pour les vignettes dynamiques** – Empêche Windows de collecter des informations sur la vignette dynamique quand les utilisateurs épinglent un site au menu Démarrer à partir de Microsoft Edge.
+-  **Liste des favoris** - Définit le chemin au fichier de favoris. Par exemple, http://contoso.com/favorites.html.
+-  **Limiter les modifications des favoris** - Choisissez **Bloquer** pour empêcher les utilisateurs d’ajouter, d’importer, de trier ou de modifier la liste des favoris. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
 

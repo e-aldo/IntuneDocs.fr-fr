@@ -1,12 +1,12 @@
 ---
 title: "Affectation d’applications à des appareils Android for Work"
-titlesuffix: Azure portal
-description: "Utilisez cette rubrique pour synchroniser, puis affecter des applications sur des appareils Android for Work à partir du Google Play for Work Store."
+titlesuffix: Microsoft Intune
+description: "Découvrez comment synchroniser et affecter des applications à des appareils Android for Work à partir du Google Play for Work Store."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Guide pratique pour affecter des applications sur des appareils Android for Work avec Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-L’affectation d’applications sur des appareils Android for Work diffère de leur affectation sur des appareils Android standard. Toutes les applications que vous installez pour Android for Work proviennent du Google Play for Work Store. Vous vous connectez au Store, recherchez les applications souhaitées et les approuvez.
-L’application apparaît ensuite dans le nœud **Applications sous licence** du portail Azure. À partir de là, vous pouvez gérer l’affectation de l’application de la même façon que pour toute autre application.
+Android for Work est un programme pour les appareils Android. Toutes les applications que vous installez sur Android for Work proviennent du Google Play for Work Store. L’affectation d’applications sur des appareils Android for Work diffère de leur affectation sur des appareils Android standard. Vous vous connectez au Store, recherchez les applications souhaitées et les approuvez. L’application apparaît ensuite dans le nœud **Applications sous licence** du portail Azure. À partir de là, vous pouvez gérer l’affectation de l’application de la même façon que pour toute autre application.
 
 En outre, si vous avez créé vos propres applications métier, vous pouvez les affecter en procédant comme suit :
 - Inscrivez-vous à un compte de développeur Google qui vous permet de publier des applications dans une zone privée dans Google Play.

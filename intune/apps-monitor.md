@@ -1,12 +1,12 @@
 ---
 title: "Guide pratique pour surveiller les affectations et les informations d’applications"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Une fois que vous avez affecté une application à des utilisateurs ou à des appareils, utilisez ces informations pour surveiller son état."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b88530ef790dd181e81e420c158867d29d1d0d58
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Guide pratique pour surveiller les affectations et les informations d’applications avec Microsoft Intune
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 01/25/2018
 
 Intune propose plusieurs façons de surveiller les propriétés des applications que vous gérez, ainsi que leur état d’affectation.
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
-3. Dans la charge de travail **Applications mobiles**, choisissez **Applications** dans le groupe **Gérer**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Choisissez **Applications mobiles**, puis **Applications** dans le groupe **Gérer**.
 5. Dans le panneau de la liste des applications, choisissez une application. Vous verrez alors le panneau <*nom_application*> **État de l’installation de l’appareil**.
 
 ## <a name="app-overview-blade"></a>Panneau Vue d’ensemble de l’application

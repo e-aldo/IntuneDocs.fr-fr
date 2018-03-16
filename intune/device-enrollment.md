@@ -1,6 +1,6 @@
 ---
 title: "Qu’est-ce que l’inscription des appareils Microsoft Intune ?"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "En savoir plus sur l’inscription pour les appareils iOS, Android et Windows."
 keywords: 
 author: ErikjeMS
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a94703ecc1d7fd464f565855bb9b8dd9ee3c3bfb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-device-enrollment"></a>Qu’est-ce que l’inscription d’appareils ?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,6 +37,14 @@ Comme vous pouvez le voir dans les tableaux suivants, il existe plusieurs métho
 |**[DEP](#apple-device-enrollment-program)**|   Oui |   Facultatif |  Facultatif|[Plus d’informations](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**| Oui |   Facultatif |  Non| [Plus d’informations](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| Non |    Non  | Non|[Plus d’informations](./apple-configurator-direct-enroll-ios.md)|
+
+## <a name="macos-enrollment-methods"></a>Méthodes d’inscription macOS
+
+| **Méthode** |  **Réinitialisation requise** |  **Affinité utilisateur** | **Verrouillé** | **Détails**|
+|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#bring-your-own-device)** | Non| Oui | Non | [Plus d’informations](./macos-enroll.md)|
+|**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#device-enrollment-manager)**| Non |Non |Non  | [Plus d’informations](./device-enrollment-manager-enroll.md)|
+
 
 ## <a name="windows-enrollment-methods"></a>Méthodes d’inscription de Windows
 
@@ -62,7 +70,7 @@ Les appareils BYOD incluent les téléphones, les tablettes et les PC personnels
 ## <a name="corporate-owned-device"></a>Appareil d’entreprise
 Les appareils d’entreprise incluent les téléphones, les tablettes et les PC appartenant à l’organisation et distribués aux employés. L’inscription des appareils d’entreprise prend en charge des scénarios comme l’inscription automatique, les appareils partagés ou les exigences d’inscription pré-autorisée. Une méthode courante pour inscrire des appareils d’entreprise est l’utilisation du gestionnaire de l’inscription d’appareil par un administrateur ou un responsable. Vous pouvez inscrire des appareils iOS directement via les outils du Programme d’inscription des appareils fournis par Apple. Les appareils avec un numéro IMEI peuvent également être identifiés et référencés comme appartenant à l’entreprise.
 
-### <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareil
+### <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareils
 Le gestionnaire d’inscription d’appareil est un compte d’utilisateur spécial permettant d’inscrire et de gérer plusieurs appareils d’entreprise. Les responsables peuvent installer le Portail d’entreprise et inscrire de nombreux appareils sans utilisateur. En savoir plus sur le [gestionnaire d’inscription d’appareil](./device-enrollment-manager-enroll.md).
 
 ### <a name="apple-device-enrollment-program"></a>Programme d'inscription d'appareils Apple

@@ -1,12 +1,11 @@
 ---
-title: "Création de profils de configuration d’appareil Intune"
-titlesuffix: Azure portal
-description: "Apprenez à créer des profils de configuration d’appareils dans Intune."
+title: "Créer des profils d’appareil dans Microsoft Intune - Azure | Microsoft Docs"
+description: "Ajouter ou configurer un profil d’appareil dans Microsoft Intune, ce qui inclut la sélection du type de plateforme et la configuration des paramètres dans le portail Azure"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +14,38 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5afc6896883e6be67780c2314107c15633fd237a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Guide pratique pour créer des profils de configuration d’appareil dans Microsoft Intune
+# <a name="create-a-device-profile-in-microsoft-intune"></a>Créer un profil d’appareil dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+## <a name="create-the-profile"></a>Créer le profil
+1. Dans le [portail Azure](https://portal.azure.com), sélectionnez **Tous les services**, puis recherchez **Microsoft Intune**.
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-2. Dans le volet présentant la liste de profils, choisissez **Créer un profil**.
-3. Dans le panneau **Créer un profil**, spécifiez les éléments suivants :
+2. Dans **Microsoft Intune**, sélectionnez **Configuration de l’appareil**, **Profils**, puis **Créer un profil**.
+
+3. Entrez les propriétés suivantes : 
+
     - **Nom** : attribuez un nom descriptif au nouveau profil.
-    - **Description** : entrez une description facultative pour le profil.
-    - **Plateforme** : sélectionnez le type de plateforme pour le profil que vous souhaitez créer.
-    - **Type de profil** : sélectionnez le type de profil que vous souhaitez créer. La liste des types disponibles varie selon la plateforme que vous avez choisie.
-    - **Paramètres** : consultez les rubriques suivantes pour plus d’informations sur les paramètres pour chaque type de profil :
+    - **Description** : facultative, mais recommandée. Entrez la description du profil.
+    - **Plateforme** : sélectionnez le type de plateforme.  
+
+        - **Android**
+        - **Android for Work**
+        - **iOS**
+        - **MacOS**
+        - **Windows Phone 8.1**
+        - **Windows 8.1 et versions ultérieures**
+        - **Windows 10 et versions ultérieures**
+
+    - **Type de profil** : sélectionnez le type que vous souhaitez créer. La liste dépend de la plateforme que vous choisissez.
+    - **Paramètres** : les rubriques suivantes décrivent les paramètres pour chaque type de profil.
+
         -  [Paramètres de fonctionnalité d’appareil](device-features-configure.md)
         -  [Paramètres de restriction d'appareil](device-restrictions-configure.md)
         -  [Paramètres de courrier électronique](email-settings-configure.md)
@@ -48,12 +57,12 @@ ms.lasthandoff: 01/25/2018
         -  [Paramètres de formation](education-settings-configure.md)
         -  [Paramètres personnalisés](custom-settings-configure.md)
 
-    ![Créer un profil d’appareil](./media/create-device-profile.png)
-4. Une fois que vous avez terminé la configuration des paramètres dans le panneau **Créer un profil**, choisissez **Créer**.
+    ![Entrer les paramètres pour créer un profil d’appareil](./media/create-device-profile.png)
 
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
-Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
+4. Sélectionnez **Créer** quand vous avez terminé. 
+
+Le profil est créé et apparaît dans la liste. Pour affecter ce profil à des groupes, consultez [Guide pratique pour affecter des profils d’appareil](device-profile-assign.md).
 
 
-### <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations sur la façon d’affecter des profils d'appareil, consultez [Guide pratique pour affecter des profils d'appareil avec Microsoft Intune](device-profile-assign.md).
+## <a name="next-steps"></a>Étapes suivantes
+Pour affecter des profils d’appareil, consultez [Guide pratique pour affecter des profils d’appareil avec Microsoft Intune](device-profile-assign.md).

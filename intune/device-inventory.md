@@ -5,7 +5,7 @@ description: "Découvrez comment afficher les appareils que vous gérez avec Int
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: dougeby
+manager: dougeby
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39351e76c2510f7411c64d4bc3e3275bc051c63e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772e2b1380626384d618e653b90b31a1f421eb72
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Guide d’affichage de l’inventaire des appareils Intune
 
@@ -29,8 +29,8 @@ La charge de travail **Appareils** vous fournit des informations sur les apparei
 
 Pour afficher l’inventaire des appareils .
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
 
 Choisissez maintenant l’une des options suivantes :
@@ -43,7 +43,7 @@ Choisissez maintenant l’une des options suivantes :
     - **Applications détectées** : affiche une liste de toutes les applications qu’Intune a détectées comme étant installées sur l’appareil.
     - **Conformité de l’appareil** : affiche l’état de conformité de toutes les stratégies de conformité qui ont été affectées à l’appareil.
     - **Configuration de l’appareil** : affiche l’état de conformité de toutes les stratégies de configuration d’appareil qui ont été affectées à l’appareil.
-- **Moniteur** : choisissez **Actions d’appareil** pour afficher une liste d’actions d’appareil qui ont été effectuées sur les appareils que vous gérez et leur état actuel.
+- **Surveiller** : choisissez **Actions d’appareil** pour afficher une liste d’actions d’appareil qui ont été effectuées sur les appareils que vous gérez et leur état actuel.
 - **Installation** > **Connecteur TeamViewer** : vous permet de configurer l’administration à distance sur les appareils à l’aide du logiciel TeamViewer. Pour plus d’informations, consultez [Fournir une assistance à distance pour les appareils Android gérés par Intune](/intune/device-profile-android-teamviewer).
 
 Intune collecte l’inventaire des applications uniquement sur les appareils appartenant à l’entreprise. Les applications ne sont pas inventoriées sur les appareils personnels. Pour les PC Windows 10, seul l’inventaire des applications modernes est collecté sur les appareils appartenant à l’entreprise. Intune ne collecte pas d’informations concernant les applications Win32 sur l’appareil. Selon l’opérateur que vous utilisez avec les appareils, certains éléments du parc peuvent ne pas être collectés.

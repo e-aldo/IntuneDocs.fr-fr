@@ -1,32 +1,32 @@
 ---
-title: Guide pratique pour utiliser Windows Hello Entreprise
-titleSuffix: Azure portal
+title: "Guide pratique pour intégrer Windows Hello Entreprise à Microsoft Intune"
+titleSuffix: 
 description: "Apprenez à créer une stratégie permettant de contrôler l’utilisation de Windows Hello Entreprise sur les appareils gérés."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-windows-hello-for-business"></a>Utilisation de Windows Hello Entreprise
+# <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Intégrer Windows Hello Entreprise à Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune s’intègre à Windows Hello Entreprise (anciennement Microsoft Passport for Work), autre méthode de connexion qui utilise Active Directory ou un compte Azure Active Directory pour remplacer un mot de passe, une carte à puce ou une carte à puce virtuelle.
+Vous pouvez intégrer Windows Hello Entreprise (anciennement Microsoft Passport for Work) à Microsoft Intune.
 
-Hello Entreprise vous permet d’utiliser un *mouvement utilisateur*, au lieu d’un mot de passe, pour vous connecter. Un mouvement utilisateur peut être un simple code confidentiel, une authentification biométrique telle que Windows Hello ou un appareil externe tel qu’un lecteur d’empreintes digitales.
+ Hello Entreprise est une méthode de connexion alternative qui utilise Active Directory ou un compte Azure Active Directory en remplacement d’un mot de passe, d’une carte à puce ou d’une carte à puce virtuelle. Il vous permet d’utiliser un *mouvement de l’utilisateur* pour la connexion, au lieu d’un mot de passe. Un mouvement utilisateur peut être un simple code confidentiel, une authentification biométrique telle que Windows Hello ou un appareil externe tel qu’un lecteur d’empreintes digitales.
 
 Intune s’intègre à Hello Entreprise de deux manières :
 
@@ -50,17 +50,17 @@ Pour garantir la résolution des conflits de stratégie et l’application de la
 
 1.  Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
 
-2.  Dans le panneau Intune, choisissez **Inscription de l’appareil**, puis **Abonnement Windows** > **Windows Hello Entreprise**.
+2.  Dans la page Intune, choisissez **Inscription de l’appareil**, puis **Inscription Windows** > **Windows Hello Entreprise**.
 
-3.  Dans le panneau qui s’ouvre, cliquez sur les paramètres **Par défaut**.
+3.  Dans la page qui s’ouvre, choisissez les paramètres **Par défaut**.
 
-4.  Dans le panneau **Tous les utilisateurs**, cliquez sur **Propriétés**, puis entrez un **Nom** et éventuellement une **Description** pour les paramètres de Windows Hello Entreprise.
+4.  Dans la page **Tous les utilisateurs**, cliquez sur **Propriétés**, puis entrez un **Nom** et une **Description** facultative pour les paramètres de Windows Hello Entreprise.
 
-5. Dans le panneau **Tous les utilisateurs**, cliquez sur **Paramètres**, puis choisissez une des options suivantes pour **Configurer Windows Hello Entreprise** :
+5. Dans la page **Tous les utilisateurs**, cliquez sur **Paramètres**, puis choisissez une des options suivantes pour **Configurer Windows Hello Entreprise** :
 
     - **Désactivé**. Si vous ne souhaitez pas utiliser Windows Hello Entreprise, sélectionnez ce paramètre. Tous les autres paramètres affichés à l’écran cessent d’être disponibles.
     - **Activée**. Sélectionnez ce paramètre si vous souhaitez configurer les paramètres Windows Hello Entreprise.
-    - **Non configuré**. Sélectionnez ce paramètre si vous ne souhaitez pas utiliser Intune pour contrôler les paramètres Windows Hello Entreprise. Les paramètres Windows Hello Entreprise qui existent sur les appareils Windows 10 ne sont pas changés. Tous les autres paramètres dans le panneau ne sont pas disponibles.
+    - **Non configuré**. Sélectionnez ce paramètre si vous ne souhaitez pas utiliser Intune pour contrôler les paramètres Windows Hello Entreprise. Les paramètres Windows Hello Entreprise qui existent sur les appareils Windows 10 ne sont pas changés. Tous les autres paramètres de la page sont indisponibles.
 
 6.  Si vous avez sélectionné **Activé** à l’étape précédente, configurez les paramètres nécessaires qui sont appliqués à tous les appareils Windows 10 et Windows 10 Mobile inscrits.
 

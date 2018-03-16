@@ -1,30 +1,34 @@
 ---
-title: "Paramètres de restriction d’appareil Intune pour Android for Work"
-titlesuffix: Azure portal
-description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils Android for Work."
+title: "Paramètres de restriction d’appareil Microsoft Intune pour Android for Work"
+titlesuffix: 
+description: "Découvrez les paramètres Intune vous permettant de contrôler les paramètres et les fonctionnalités des appareils exécutant Android for Work."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Android for Work dans Microsoft Intune
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Paramètres de restriction d’appareil Microsoft Intune pour Android for Work
+
+Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Android for Work.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Paramètres de profil professionnel
+
+### <a name="general-settings"></a>Paramètres généraux
+
 -   **Copier-coller entre les profils professionnel et personnel** : contrôle les opérations copier et coller entre les applications professionnelles et personnelles. Choisissez **Bloquer** pour activer le blocage. Choisissez **Non configuré** pour désactiver le blocage.
 - **Partage des données entre les profils professionnels et personnels** : utilisez ce paramètre pour indiquer si les applications associées au profil professionnel peuvent ou non partager avec des applications du profil personnel. Ce paramètre contrôle les actions de partage dans les applications (par exemple, l’option **Patager...** dans l’application de navigateur Chrome) et ne s’applique pas au comportement copier/coller du Presse-papiers. Contrairement aux [paramètres de stratégie de protection des applications](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), les paramètres de restriction d’appareil sont gérés à partir du portail Intune et utilisent le profil de travail Android for Work pour isoler les applications gérées. Choisissez parmi :
     - **Restrictions de partage par défaut** : paramètre du comportement de partage par défaut de l’appareil, qui varie selon la version d’Android en cours d’exécution. Par défaut, le partage du profil personnel vers le profil professionnel est autorisé. Le partage du le profil professionnel vers le profil personnel est aussi bloqué par défaut. Ce paramètre empêche les partages de données du profil professionnel vers le profil personnel. Google ne fournit aucun moyen de bloquer le partage du profil personnel vers le profil professionnel sur les appareils exécutant des versions antérieures à 6.0.   
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **Refuser automatiquement**
 
     L’état de l’octroi des autorisations peut être défini plus précisément pour des applications spécifiques en définissant une stratégie de configuration d’application pour une application individuelle (sous **Applications mobiles** > **Stratégies de configuration des applications**).
+
+- **Ajouter et supprimer des comptes**
+
+   Empêche les utilisateurs finaux d’ajouter ou de supprimer manuellement des comptes dans le profil professionnel.
+
+   Par exemple, quand vous déployez l’application Gmail dans un profil Android for Work, vous pouvez empêcher les utilisateurs finaux d’ajouter ou de supprimer des comptes dans ce profil professionnel.
 
 ### <a name="work-profile-password"></a>Mot de passe de profil professionnel
 - **Exiger le mot de passe du profil de travail** - (Android 7.0 et versions ultérieures avec le profil de travail activé) Définissez une stratégie de mot de passe qui s’applique uniquement aux applications dans le profil de travail. Par défaut, l’utilisateur final peut utiliser les deux codes PIN définis séparément, ou il peut choisir de les combiner dans le plus sécurisé des deux.
@@ -87,4 +97,4 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Aidez-vous des informations contenues dans la rubrique [Guide pratique pour configurer des paramètres de restriction d’appareils](device-restrictions-configure.md) pour enregistrer et affecter le profil à des utilisateurs et appareils.
+Aidez-vous des informations contenues dans le [Guide pratique pour configurer des paramètres de restriction d’appareil](device-restrictions-configure.md) pour enregistrer le profil et l’affecter à des utilisateurs et appareils.

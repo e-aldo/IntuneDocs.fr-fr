@@ -1,12 +1,12 @@
 ---
 title: "Ajouter des stratégies de configuration d’applications pour les appareils iOS gérés | Microsoft Docs"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Apprenez à utiliser les stratégies de configuration d’applications pour fournir des données de configuration à une application iOS quand elle est exécutée."
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: ee17ceae0af131f683341f2346f92ad5ef03ed16
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Ajouter des stratégies de configuration d’applications pour les appareils iOS gérés | Microsoft Docs
 
@@ -44,8 +44,8 @@ Une fois que vous avez sélectionné les groupes inclus pour votre stratégie de
 
 ## <a name="create-an-app-configuration-policy"></a>Créer une stratégie de configuration des applications
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
 3. Choisissez la charge de travail **Applications mobiles**.
 4. Choisissez **Stratégies de configuration des applications** dans le groupe **Gérer**, puis choisissez **Ajouter**.
 5. Définissez les détails suivants :
@@ -56,22 +56,22 @@ Une fois que vous avez sélectionné les groupes inclus pour votre stratégie de
     - **Type d’inscription de l’appareil**<br>
       Choisissez **Appareils gérés**.
 6. Sélectionnez **iOS** comme **Plateforme**.
-7.  Choisissez **Application associée**. Ensuite, dans le panneau **Application associée**, choisissez l’application gérée pour laquelle vous souhaitez appliquer la configuration.
-8.  Dans le panneau **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**.
+7.  Choisissez **Application associée**. Ensuite, dans le volet **Application associée**, choisissez l’application gérée à laquelle vous souhaitez appliquer la configuration, puis sélectionnez **OK**.
+8.  Dans le volet **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**.
 9. Sélectionnez **Format des paramètres de configuration**. Sélectionnez l’un des paramètres suivants :
     - **[Utiliser le concepteur de configuration](#use-configuration-designer)**
     - **[Entrer des données XML](#enter-xml-data)**
-10. Après avoir ajouté vos informations XML, choisissez **OK**, puis **Ajouter** pour ajouter la stratégie de configuration. Le panneau de vue d’ensemble de la stratégie de configuration s’affiche.
+10. Après avoir ajouté vos informations XML, choisissez **OK**, puis **Ajouter** pour ajouter la stratégie de configuration. Le volet de vue d’ensemble de la stratégie de configuration s’affiche.
 11. Sélectionnez **Affectations** pour afficher les options d’inclusion et d’exclusion. 
 
-    ![Affectations de stratégie](./media/app-config-policy01.png)
+    ![Capture d’écran de l’onglet Inclure des affectations de stratégies](./media/app-config-policy01.png)
 12. Sélectionnez **Tous les utilisateurs** sous l’onglet **Inclure**.
 
-    ![Affectations de stratégie - Tous les utilisateurs](./media/app-config-policy02.png)
+    ![Capture d’écran de l’option de liste déroulante Tous les utilisateurs des affectations de stratégies](./media/app-config-policy02.png)
 13. Sélectionnez l’onglet **Exclure**. 
-14. Cliquez sur **Sélectionner des groupes à exclure** pour afficher le panneau correspondant.
+14. Cliquez sur **Sélectionner des groupes à exclure** pour afficher le volet correspondant.
 
-    ![Affectations de stratégie - Sélectionner des groupes à exclure](./media/app-config-policy03.png)
+    ![Capture d’écran du panneau Sélectionner les groupes à exclure des affectations de stratégies](./media/app-config-policy03.png)
 15. Choisissez les groupes à exclure, puis cliquez sur **Sélectionner**.
 
     >[!NOTE]

@@ -1,6 +1,6 @@
 ---
-title: Affecter des licences Intune
-description: Attribuer des licences aux utilisateurs de votre abonnement Intune
+title: Affecter des licences Microsoft Intune
+description: "Affecter des licences aux utilisateurs pour qu’ils puissent s’inscrire dans Intune"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="assign-intune-licenses-to-your-user-accounts"></a>Affecter des licences Intune à vos comptes d’utilisateur
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Affecter des licences aux utilisateurs pour qu’ils puissent inscrire des appareils dans Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser le [portail Office 365](http://go.microsoft.com/fwlink/p/?
 
 3.  Activez la fonction **Intune** ou **Enterprise Mobility + Security** en la définissant sur **Activé**, puis choisissez **Enregistrer**.
 
-  ![Image de l’affectation de licence de produit dans le portail Office 365.](./media/office-assign-license.png)
+  ![Capture d’écran de la section des licences des produits du portail Office 365.](./media/office-assign-license.png)
 
 4. Maintenant, le compte d’utilisateur dispose des autorisations permettant d’utiliser le service et d’inscrire des appareils dans la fonction de gestion.
 
@@ -46,11 +46,11 @@ Vous pouvez utiliser le [portail Office 365](http://go.microsoft.com/fwlink/p/?
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Utiliser School Data Sync pour affecter des licences aux utilisateurs dans Intune pour l’Éducation
 Si vous êtes une entreprise de formation, vous pouvez utiliser SDS (School Data Sync) pour affecter des licences Intune pour l’Éducation aux utilisateurs synchronisés. Sélectionnez simplement la case à cocher Intune pour l’Éducation quand vous configurez votre profil SDS.  
 
-![Image du paramètre de profil SDS](./media/i4e-sds-profile-setup-setting.png)
+![Capture d’écran du paramètre du profil SDS](./media/i4e-sds-profile-setup-setting.png)
 
 Quand vous affectez une licence Intune pour l’Éducation, vérifiez que la licence Intune A Direct est également affectée.
 
-![Image de la configuration des licences des produits](./media/i4e-set-licenses.png)
+![Capture d’écran de la configuration des licences des produits](./media/i4e-set-licenses.png)
 
 Pour en savoir plus sur SDS, consultez cette [vue d’ensemble de School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 

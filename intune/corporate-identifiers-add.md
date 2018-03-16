@@ -1,7 +1,7 @@
 ---
 title: "Ajouter des identificateurs d’entreprise à Intune"
-titlesuffix: Azure portal
-description: "Découvrez comment ajouter des identificateurs d’entreprise (méthode d’inscription, numéros IMEI et numéros de série) à Microsoft Intune. \""
+titlesuffix: Microsoft Intune
+description: "Découvrez comment ajouter des identificateurs d’entreprise (méthode d’inscription, numéros IMEI et numéros de série) à Microsoft Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2be1f71887b7812ff17b69b679d54a920d3261
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifier les appareils comme appartenant à l’entreprise
 
@@ -72,7 +72,7 @@ Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
 
 1. Dans Intune, dans le portail Azure, choisissez **Inscription de l’appareil** > **Identificateurs d’appareil d’entreprise**, puis cliquez sur **Ajouter**.
 
- ![Capture d’écran de l’espace de travail d’identificateurs d’appareils d’entreprise avec le bouton Ajouter mis en surbrillance.](./media/add-corp-id.png)
+ ![Espace de travail des identificateurs d’appareils d’entreprise avec le bouton Ajouter mis en surbrillance](./media/add-corp-id.png)
 
 2. Dans le panneau **Ajouter des identificateurs**, spécifiez le type d’identificateur : **IMEI** ou **Série**. Vous pouvez spécifier si les numéros précédemment importés doivent **Remplacer les informations des identificateurs existants**.
 
@@ -100,4 +100,4 @@ Les propriétés des appareils affichent **Propriété** pour chaque enregistrem
 3. Choisissez **Propriétés**.
 4. Spécifiez pour **Propriété de l’appareil** l’option **Personnel** ou **Entreprise**.
 
-  ![Capture d’écran des propriétés de l’appareil montrant la catégorie Appareil et les options Propriété de l’appareil.](./media/device-properties.png)
+  ![Propriétés de l’appareil montrant la catégorie Appareil et les options Propriété de l’appareil](./media/device-properties.png)

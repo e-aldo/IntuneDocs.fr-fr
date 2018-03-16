@@ -1,8 +1,8 @@
 ---
 title: "Inclure des applications Android dans un wrapper avec l’outil de création de package de restrictions d’application Intune"
-description: "Cet article explique comment inclure des applications Android dans un wrapper sans changer le code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
+description: "Découvrez comment inclure une application iOS dans un wrapper sans changer son code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/05/2018
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications Android pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
@@ -167,7 +167,7 @@ Ces instructions sont spécifiques à toutes les applications Android et Xamarin
 > [!NOTE] 
 > Il doit s’agir de la seule intégration MAM-WE dans l’application. Si d’autres tentatives sont effectuées pour appeler des API MAMEnrollmentManager, des conflits peuvent se produire.
 
-3. Activez la stratégie GAM requise en insérant la valeur suivante dans le manifeste : ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+3. Activez la stratégie MAM requise en insérant la valeur suivante dans le manifeste : ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
 > [!NOTE] 
 > Cela oblige l’utilisateur à télécharger l’application Portail d’entreprise sur l’appareil et à effectuer le flux d’inscription par défaut avant utilisation.
 

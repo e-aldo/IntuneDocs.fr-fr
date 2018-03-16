@@ -1,9 +1,10 @@
 ---
-title: "Configuration requise pour le réseau Intune et bande passante"
-description: 
+title: "Configuration réseau requise et informations détaillées sur la bande passante pour Microsoft Intune"
+titlesuffix: 
+description: "Passez en revue la configuration réseau requise et les informations détaillées sur la bande passante pour Intune."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
@@ -14,11 +15,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29ea491ab176a9bf2237a4e7546131945ad2dab7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Configuration requise pour le réseau Intune et bande passante
 
@@ -41,11 +42,11 @@ Ce tableau répertorie la taille et la fréquence approximatives du contenu comm
 |Agent de stratégie|3 Mo|**Une fois**<br /><br />D'autres téléchargements sont possibles lorsqu'il existe des mises à jour pour ce type de contenu.|
 |Assistance à distance via l'agent Microsoft Easy Assist|6 Mo|**Une fois**<br /><br />D'autres téléchargements sont possibles lorsqu'il existe des mises à jour pour ce type de contenu.|
 |Opérations quotidiennes du client|6 Mo|**Tous les jours**<br /><br />Le client Intune communique régulièrement avec le service Intune pour vérifier l’existence de mises à jour et stratégies, et pour signaler l’état du client au service.|
-|Mises à jour des définitions de logiciels malveillants pour Endpoint Protection|Variable<br /><br />Généralement entre 40 Ko et 2 Mo|**Tous les jours**<br /><br />Jusqu'à trois fois par jour.|
+|Mises à jour des définitions de logiciels malveillants pour Endpoint Protection|Varie<br /><br />Généralement entre 40 Ko et 2 Mo|**Tous les jours**<br /><br />Jusqu'à trois fois par jour.|
 |Mise à jour du moteur Endpoint Protection|5 Mo|**Tous les mois**|
-|Mises à jour logicielles|Variable<br /><br />La taille varie selon les mises à jour que vous déployez.|**Tous les mois**<br /><br />En règle générale, les mises à jour logicielles sont publiées le deuxième mardi de chaque mois.<br /><br />Un ordinateur nouvellement inscrit ou déployé peut utiliser plus de bande passante lors du téléchargement de l'ensemble des mises à jour précédemment publiées.|
+|Mises à jour logicielles|Varie<br /><br />La taille varie selon les mises à jour que vous déployez.|**Tous les mois**<br /><br />En règle générale, les mises à jour logicielles sont publiées le deuxième mardi de chaque mois.<br /><br />Un ordinateur nouvellement inscrit ou déployé peut utiliser plus de bande passante lors du téléchargement de l'ensemble des mises à jour précédemment publiées.|
 |Service Packs ;|Varie<br /><br />La taille varie pour chaque Service Pack que vous déployez.|**Varie**<br /><br />Dépend du moment auquel vous déployez les Service Pack.|
-|Distribution de logiciels|Variable<br /><br />La taille varie selon les logiciels que vous déployez.|**Varie**<br /><br />Dépend du moment auquel vous déployez les logiciels.|
+|Distribution de logiciels|Varie<br /><br />La taille varie selon les logiciels que vous déployez.|**Varie**<br /><br />Dépend du moment auquel vous déployez les logiciels.|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>Possibilités de réduction de la bande passante réseau
 Vous pouvez utiliser une ou plusieurs des méthodes suivantes pour réduire l’utilisation de la bande passante réseau par les clients Intune.
@@ -72,7 +73,7 @@ Pour en savoir plus sur BITS et les ordinateurs Windows, consultez [Background I
 ### <a name="use-branchcache-on-computers"></a>Utiliser BranchCache sur les ordinateurs
 Les clients Intune peuvent utiliser BranchCache pour réduire le trafic WAN. Les systèmes d’exploitation suivants prennent en charge BranchCache :
 
-- Windows 7
+- Windows 7
 - Windows 8.0
 - Windows 8.1
 - Windows 10
@@ -158,7 +159,7 @@ Les tableaux suivants répertorient les ports et services auxquels le client Int
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Informations réseau de l’appareil Apple
-| Nom d'hôte  | URL (adresse IP/sous-réseau) | Protocole | Port | Appareil |
+| Hostname  | URL (adresse IP/sous-réseau) | Protocole | Port | Appareil |
 | --- | --- | --- | --- | --- |
 |  Console d'administration  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS et macOS |
 | Console d'administration  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS et macOS |

@@ -1,12 +1,12 @@
 ---
-title: Choisir comment inscrire les appareils Windows dans Intune
-titlesuffix: Azure portal
-description: "Découvrez comment configurer l’inscription des appareils Windows dans Microsoft Intune."
+title: "Choisir comment inscrire des appareils iOS dans Intune"
+titlesuffix: Microsoft Intune
+description: "Configurez l’inscription des appareils iOS dans Microsoft Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f36e579282f7aeaec74c3e80d866e52dfa508d3d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e79122c1bea970525faaf443f9bf4271d050abe2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrire des appareils iOS dans Intune
 
@@ -34,7 +34,7 @@ Avant de pouvoir activer des appareils iOS, effectuez les étapes suivantes :
 
 ## <a name="user-owned-ios-devices-byod"></a>Appareils iOS de l’utilisateur (BYOD)
 
-Vous pouvez laisser les utilisateurs inscrire leurs appareils personnels pour la gestion Intune, approche communément appelée « BYOD » (Bring Your Own Device). Une fois que vous avez répondu aux prérequis et affecté des licences aux utilisateurs, ces derniers peuvent télécharger l’application Portail d’entreprise iOS à partir de l’App Store et suivre les instructions d’inscription dans l’application.
+Vous pouvez laisser les utilisateurs inscrire leurs appareils personnels pour la gestion Intune, approche communément appelée « BYOD » (Bring Your Own Device). Une fois que vous avez répondu aux prérequis et affecté des licences aux utilisateurs, ces derniers peuvent télécharger l’application Portail d’entreprise Intune à partir de l’App Store et suivre les instructions d’inscription dans l’application.
 
 ## <a name="company-owned-ios-devices"></a>Appareils d’entreprise iOS
 Pour les organisations qui achètent des appareils pour leurs utilisateurs, Intune prend en charge les méthodes d’inscription d’appareils d’entreprise iOS suivantes :
@@ -83,7 +83,7 @@ Une affinité utilisateur est nécessaire pour prendre en charge les éléments 
 
 6. Dans l’écran suivant, l’utilisateur doit confirmer le numéro de série du nouvel appareil. L’utilisateur peut appuyer sur le lien **Confirmez le numéro de série** pour afficher les instructions l’application permettant d’utiliser l’application Paramètres afin de vérifier le numéro de série. L’utilisateur doit ensuite entrer les quatre derniers caractères du numéro de série dans l’application Portail d’entreprise.
 
-  Cette étape vérifie que le périphérique est le périphérique d’entreprise inscrit dans Intune. Si le numéro de série de l’appareil ne correspond pas, l’appareil sélectionné est incorrect. L’utilisateur doit revenir à l’écran précédent et sélectionner un autre appareil.
+  Cette étape vérifie que l’appareil est l’appareil d’entreprise inscrit dans Intune. Si le numéro de série de l’appareil ne correspond pas, l’appareil sélectionné est incorrect. L’utilisateur doit revenir à l’écran précédent et sélectionner un autre appareil.
 
 7. Une fois le numéro de série vérifié, l’application Portail d’entreprise redirige l’utilisateur vers le site web Portail d’entreprise pour finaliser l’inscription. Ensuite, le site web invite l’utilisateur à retourner à l’application.
 

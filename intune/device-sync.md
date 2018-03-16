@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Synchroniser des appareils avec Intune pour obtenir les stratégies et les actions les plus récentes
 
@@ -37,11 +37,11 @@ L’action d’appareil **Synchroniser** force l’appareil sélectionné à s�
 
 ## <a name="how-to-sync-a-device"></a>Comment synchroniser un appareil
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Appareils**.
-4. Dans le panneau **Appareils et groupes**, choisissez **Tous les appareils**.
-5. Dans la liste des appareils que vous gérez, choisissez un appareil, puis l’action à distance **Synchroniser**.
+4. Dans le panneau **Appareils**, choisissez **Tous les appareils**.
+5. Dans la liste des appareils que vous gérez, choisissez un appareil, choisissez **...Plus**, puis choisissez l’action à distance **Synchroniser**.
 7. Choisissez **Oui** pour confirmer l’action.
 
 
@@ -66,4 +66,4 @@ Quand un administrateur exécute l’action d’appareil **Synchroniser**, les a
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Choisissez **Actions de l’appareil** pour connaître l’état de l’action de synchronisation. 
+Choisissez **Actions de l’appareil** pour voir l’état de l’action de synchronisation. 

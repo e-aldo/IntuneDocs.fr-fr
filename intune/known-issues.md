@@ -1,12 +1,12 @@
 ---
-title: "Problèmes connus dans Microsoft Intune dans le portail Azure"
-titlesuffix: Azure portal
-description: "Consulter les problèmes connus dans Intune"
+title: "Problèmes connus dans Microsoft Intune"
+titlesuffix: Microsoft Intune
+description: "Découvrez les problèmes connus affectant Microsoft Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 255bd839bda8e8d85794a88fc76899bbd5870bc0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 02efc7e2369c590e2d21ac8c27db54ffbaae38c1
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problèmes connus dans Microsoft Intune
 
@@ -50,7 +50,7 @@ Vous ne pouvez pas afficher les informations d’état pour les stratégies qui 
 ## <a name="apps"></a>Applications
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Applications iOS achetées en volume disponibles uniquement dans la langue du client Intune par défaut
-Les applications iOS achetées en volume sont affichées et peuvent être affectées uniquement pour le même code de pays/région que votre compte Intune. Intune synchronise uniquement les applications ayant les mêmes paramètres régionaux iTunes que le code de pays/région du compte de client Intune. Par exemple, si vous achetez une application disponible uniquement dans le Store des États-Unis, mais que votre compte Intune est allemand, Intune n’affiche pas cette application.
+Les applications iOS achetées en volume sont affichées et peuvent être affectées uniquement pour le même code de pays que votre compte Intune. Intune synchronise uniquement les applications ayant les mêmes paramètres régionaux iTunes que le code de pays du compte de client Intune. Par exemple, si vous achetez une application disponible uniquement dans le Store des États-Unis, mais que votre compte Intune est allemand, Intune n’affiche pas cette application.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Plusieurs copies du même programme d’achat en volume iOS sont chargées
 Ne cliquez pas à plusieurs reprises sur le bouton **Charger** pour le même jeton VPP, sinon des jetons VPP en double seraient chargés et les applications seraient synchronisées plusieurs fois pour le même jeton VPP.

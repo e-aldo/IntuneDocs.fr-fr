@@ -10,14 +10,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: b2f6f6f4829e53d60cc259be220de89cf3f8d97d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Journaux d’audit pour les activités Intune
-Les journaux d’audit vous indiquent les activités qui génèrent un changement dans Microsoft Intune. Les actions Créer, Mettre à jour (modifier), Supprimer et Affecter, ou les tâches à distance, génèrent des événements d’audit que vous pouvez consulter. Vous pouvez consulter les journaux d’audit pour la plupart des charges de travail Intune. 
+Les journaux d’audit vous indiquent les activités qui génèrent un changement dans Microsoft Intune. Les actions Créer, Mettre à jour (modifier), Supprimer et Affecter, ou les tâches à distance, génèrent des événements d’audit que vous pouvez consulter. Vous pouvez consulter les journaux d’audit pour la plupart des charges de travail Intune. L’audit est activé par défaut pour tous les clients et il ne peut pas être désactivé. L’enregistrement des événements d’audit a commencé avec la version de fonctionnalités de décembre 2017 ; les événements antérieurs ne sont pas disponibles.
 
 ## <a name="who-can-access-the-data"></a>Qui peut accéder aux données ?
 Les utilisateurs disposant des autorisations suivantes peuvent consulter les journaux d’audit :
@@ -41,7 +41,7 @@ Un journal d’audit propose par défaut une vue par liste qui affiche les élé
 - Initié par (acteur)
 - Activité
 - Cible(s)
-- Catégorie
+- Category
 - État
 
 En cliquant sur un élément de la liste, vous obtenez toutes les informations disponibles à ce sujet.

@@ -1,9 +1,9 @@
 ---
-title: Configurer Intune
+title: Configurer Microsoft Intune
 description: "Configuration requise et conditions préalables avant de commencer à utiliser votre abonnement Intune"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d2abd140dc83cffa11777ab75f7fb40e76fc1b83
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-intune"></a>Configurer Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Ces étapes de configuration vous permettent d’activer la gestion des appareils mobiles. Les appareils doivent être gérés pour que les utilisateurs puissent avoir accès aux ressources d’entreprise ou pour gérer les paramètres sur ces appareils.
+Ces étapes de configuration vous permettent d’activer la gestion des appareils mobiles à l’aide d’Intune. Les appareils doivent être gérés pour que les utilisateurs puissent avoir accès aux ressources d’entreprise ou pour gérer les paramètres sur ces appareils.
 
 Certaines étapes, comme la configuration d’un abonnement Intune et la définition de l’autorité de gestion des appareils mobiles, sont nécessaires dans la plupart des scénarios. D’autres étapes, comme la configuration d’un domaine personnalisé ou l’ajout d’applications, sont facultatives selon les besoins de votre entreprise.
 

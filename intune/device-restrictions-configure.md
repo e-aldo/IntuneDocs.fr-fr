@@ -1,25 +1,23 @@
 ---
-title: "Configurer les paramètres de restriction d’appareil Intune"
-titleSuffix: Azure portal
-description: "Découvrez comment utiliser Intune pour configurer des paramètres et des fonctionnalités sur les appareils que vous gérez."
+title: "Configurer les paramètres de restriction des appareils dans Microsoft Intune"
+titleSuffix: 
+description: "Découvrez comment utiliser Microsoft Intune pour configurer les paramètres et les fonctionnalités des appareils que vous gérez."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de restriction d’appareils dans Microsoft Intune
 
@@ -33,16 +31,16 @@ Les restrictions de l’appareil vous permettent de contrôler un large éventai
 
 Par exemple, vous pouvez créer un profil de restriction de l’appareil qui empêche les utilisateurs d’appareils iOS d’accéder à l’appareil photo.
 
-Utilisez les informations de cette rubrique pour apprendre les notions de base sur la configuration de profils de restriction de l’appareil, puis lisez les autres rubriques pour chaque plateforme pour en savoir plus sur les caractéristiques des appareils.
+Découvrez les principes de base des profils de restriction, puis lisez d’autres articles décrivant les spécificités des appareils sur chaque plateforme.
 
-Pour créer un profil d’appareil contenant des paramètres de restriction d’appareil
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Créer un profil d’appareil contenant des paramètres de restriction de l’appareil
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-3. Dans le panneau des profils, sélectionnez **Créer un profil**.
-4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de restriction de l’appareil.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans la page **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans la page **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
+3. Dans la page **Profils**, choisissez **Créer un profil**.
+4. Dans la page **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de restriction d’appareil.
 5. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres personnalisés. Actuellement, vous pouvez choisir l’une des plateformes suivantes pour les paramètres de restriction de l’appareil :
     - **Android**
     - **iOS**
@@ -61,9 +59,9 @@ Pour créer un profil d’appareil contenant des paramètres de restriction d’
     - [Paramètres Windows 10 Collaboration](device-restrictions-windows-10-teams.md)
     - [Paramètres Windows Holographic for Business](device-restrictions-windows-holographic.md)
     - [Paramètres Android for Work](device-restrictions-android-for-work.md)
-8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
+8. Quand vous avez terminé, revenez à la page **Créer un profil**, puis cliquez sur **Créer**.
 
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
+Le profil est créé et apparaît dans la page de la liste des profils.
 Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
