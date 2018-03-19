@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 09/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50c35dc805d033bd905105c22c4ec287dfaa1b7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18987c65c7ad0443c8bf3dc268284306cf64080d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres d’éducation Windows 10 dans Microsoft Intune
 
@@ -31,22 +31,23 @@ Pour plus d’informations sur l’application Examen, consultez [Effectuer des 
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Créer un profil d’appareil contenant les paramètres du profil d’éducation
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-3. Dans le panneau des profils, sélectionnez **Créer un profil**.
-4. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de restriction d'appareil.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
+3. Dans le volet de profils, choisissez **Créer un profil**.
+4. Dans le volet **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de restriction d’appareil.
 5. Dans la liste déroulante **Plateforme**, sélectionnez **Windows 10 et versions ultérieures**.
 6. Dans la liste déroulante **Type de profil**, choisissez **Profil d’éducation**. 
-7. Choisissez Paramètres > Configurer, puis, dans le panneau **Test**, configurez les éléments suivants :
+7. Choisissez **Paramètres > Configurer** puis, dans le volet **Test**, configurez les éléments suivants :
+    - **Type de compte** - Sélectionnez un type de compte dans la liste déroulante.
     - **Nom d’utilisateur du compte** - Entrez le nom d’utilisateur du compte utilisé avec Take a Test. Cela peut être un compte de domaine, un compte Azure Active Directory (AAD) ou un compte d’ordinateur local.
     - **URL de l’évaluation** - Fournissez l’URL du test que les utilisateurs doivent effectuer. Pour plus d’informations, consultez la documentation Take a Test.
     - **Capture d’écran** - Spécifiez si vous souhaitez pouvoir surveiller l’activité de l’écran pendant que les utilisateurs effectuent un test.
     - **Suggestion de texte** - Autorisez ou bloquez les suggestions de texte pendant que les utilisateurs effectuent un test.
-8. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
+8. Quand vous avez terminé, revenez au volet **Créer un profil** et appuyez sur **Créer**.
 
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
+Le profil est créé et s’affiche dans le volet de la liste des profils.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

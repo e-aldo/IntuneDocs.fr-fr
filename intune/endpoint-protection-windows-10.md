@@ -1,12 +1,12 @@
 ---
-title: "Paramètres Endpoint Protection Intune pour Windows 10"
-titlesuffix: Azure portal
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour contrôler les paramètres Endpoint Protection tels que BitLocker sur les appareils Windows 10."
+title: "Paramètres Endpoint Protection Microsoft Intune pour Windows 10"
+titlesuffix: 
+description: "Découvrez les paramètres Intune que vous pouvez utiliser pour contrôler les paramètres Endpoint Protection tels que BitLocker sur les appareils Windows 10."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Paramètres Endpoint Protection pour Windows 10 et versions ultérieures dans Microsoft Intune
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Créer des paramètres Endpoint Protection pour Windows 10 et ultérieur dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Le profil Endpoint Protection vous permet de contrôler les fonctionnalités de sécurité sur les appareils Windows 10, telles que BitLocker et Windows Defender.
+Le profil Endpoint Protection vous permet de contrôler les fonctionnalités de sécurité sur les appareils Windows 10, telles que BitLocker et Windows Defender.
 
-Utilisez les informations de cette rubrique pour découvrir comment créer des profils Endpoint Protection.
+Utilisez les informations de cet article pour découvrir comment créer des profils Endpoint Protection.
 
 > [!Note]
 > Ces paramètres ne sont pas pris en charge dans les éditions Famille et Professionnel de Windows 10.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Créer un profil Endpoint Protection
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
+2. Dans le panneau **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
 3. Dans le panneau des profils, sélectionnez **Créer un profil**.
 4. Dans le panneau **Créer un profil**, entrez un **nom** et une **description** pour le profil de fonctionnalités de l’appareil.
 5. Dans la liste déroulante **Plateforme**, sélectionnez **Windows 10 et versions ultérieures**.
 6. Dans la liste déroulante **Type de profil**, choisissez **Endpoint Protection**.
-7. Configurez les paramètres souhaités. Utilisez les détails de cette rubrique pour vous aider à comprendre le rôle de chaque paramètre. Quand vous avez terminé, cliquez sur **OK**.
+7. Configurez les paramètres souhaités. Utilisez les détails de cet article pour vous aider à comprendre le rôle de chaque paramètre. Quand vous avez terminé, cliquez sur **OK**.
 8. Revenez au panneau **Créer un profil** et choisissez **Créer**.
 
 Le profil est créé et s’affiche dans le panneau de la liste des profils.
@@ -57,6 +57,7 @@ Application Guard est uniquement disponible pour les appareils Windows 10 (64 bi
 - **Imprimer à partir du navigateur virtuel** : autorisez l’impression en PDF et en XPS ainsi que les imprimantes locales et/ou réseau à imprimer du contenu à partir du navigateur virtuel.
 - **Collecter les journaux** : collectez les journaux des événements qui se produisent dans une session de navigation Application Guard.
 - **Conserver les données du navigateur générées par l’utilisateur** : autorisez l’enregistrement des données utilisateur (par exemple les mots de passe, les favoris et les cookies) qui sont créées au cours d’une session de navigation virtuelle Application Guard.
+- **Accélération graphique** : accélérez le chargement des graphiques des sites web quand vous travaillez dans la session de navigation virtuelle Application Guard en activant l’accès à une unité de traitement graphique virtuelle.
 
 
 ## <a name="windows-defender-firewall"></a>Pare-feu Windows Defender
@@ -66,7 +67,7 @@ Application Guard est uniquement disponible pour les appareils Windows 10 (64 bi
 Ces paramètres s’appliquent à tous les types de réseaux.
 
 - **Protocole FTP** : bloquez le protocole FTP avec état.
-- **Durée d’inactivité des associations de sécurité avant suppression** : les associations de sécurité sont supprimées si aucun trafic réseau n’est visible pendant *n* secondes.
+- **Durée d’inactivité des associations de sécurité avant suppression** : les associations de sécurité sont supprimées si aucun trafic réseau n’est visible pendant *n* secondes.
 - **Codage des clés prépartagées** : codez les clés prépartagées avec UTF-8.
 - **Exemptions IPsec** : configurez un trafic spécifique pour qu’il soit exempté d’IPsec, notamment **Codes type ICMP IPv6 de découverte de voisin**, **ICMP**, **Codes type ICMP IPv6 de découverte de routeur** et **Trafic DHCP IPv4 et IPv6**.
 - **Vérification de la liste de révocation de certificats** : définissez une valeur pour le mode d’application de la vérification de la liste de révocation de certificats, notamment **Désactiver la vérification de la liste de révocation de certificats**, **Échec de vérification de la liste de révocation de certificats sur le certificat révoqué uniquement** et **Échec de vérification de la liste de révocation de certificats pour toute erreur rencontrée**.

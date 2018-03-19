@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13aa627515b74d3c9fe6d091c44dd5147bd786bd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Création d’une stratégie de conformité pour activer Google Play Protect
 
@@ -29,14 +29,15 @@ La stratégie de conformité nécessitant ces paramètres peut ensuite être cib
 
 ## <a name="create-a-compliance-policy"></a>créer une stratégie de conformité
 
-1. Connectez-vous au portail Azure. Choisissez **Autres services** > **Surveillance + Gestion** + **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 2. Choisissez **Conformité de l’appareil** dans le groupe **Gérer**. 
 3. Choisissez **Stratégies**, puis **Créer une stratégie**.
 4. Tapez le **Nom** et la **Description** de la stratégie.
 5. Sélectionnez **Android** pour la plateforme.
 6. Choisissez **Paramètres** > **Intégrité de l’appareil**.
 7. Configurez les paramètres **Google Play Protect**.
-8. Lorsque vous avez défini les paramètres Google Play Protect, spécifiez les paramètres **Sécurité** et **Propriété de l’appareil**. Une fois que vous avez terminé, choisissez **Enregistrer**.
+8. Quand vous avez défini les paramètres Google Play Protect, spécifiez les paramètres **Sécurité du système** et **Propriétés de l’appareil**. Une fois que vous avez terminé, choisissez **Enregistrer**.
 
 ## <a name="configure-the-google-play-protect-settings"></a>Configurer les paramètres Google Play Protect
 

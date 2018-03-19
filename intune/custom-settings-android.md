@@ -1,12 +1,11 @@
 ---
-title: "Paramètres personnalisés Intune pour les appareils Android"
-titleSuffix: Azure portal
-description: "Découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Android."
+title: "Ajouter des paramètres personnalisés pour les appareils Android dans Microsoft Intunes - Azure | Microsoft Docs"
+description: "Ajouter ou créer un profil personnalisé pour les appareils Android afin de créer un profil Wi-Fi avec une clé prépartagée, créer un profil VPN par application ou autoriser/bloquer des applications pour les appareils Samsung Knox Standard dans Microsoft Intune"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,43 +14,43 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 293137705fc8d5a37ac0dd7101a7ce80c9f7e917
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: aa105cc96cd0fa7d8c6beb32cdb80b7782d9828c
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Paramètres personnalisés pour les appareils Android dans Microsoft Intune
+# <a name="custom-settings-for-android-devices---intune"></a>Paramètres personnalisés pour les appareils Android - Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Utilisez le profil Microsoft Intune Android **personnalisé** pour affecter les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités sur les appareils Android. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.
+Les profils personnalisés utilisent des paramètres OMA-URI (Open Mobile Alliance Uniform Resource Identifier) pour configurer différentes fonctionnalités sur les appareils Android. Ces paramètres sont généralement utilisés par les fabricants d’appareils mobiles pour contrôler les fonctionnalités sur l’appareil.
 
-Cette fonctionnalité est conçue pour vous permettre d’affecter les paramètres Android suivants qui ne sont pas configurables avec des stratégies Intune :
+Avec un profil personnalisé, vous pouvez configurer et attribuer les paramètres Android suivants. Ces paramètres ne sont pas intégrés aux stratégies Intune :
 
-- [Utiliser un profil d’appareil personnalisé Microsoft Intune pour créer un profil Wi-Fi avec une clé prépartagée](/intune/wi-fi-profile-shared-key)
-- [Utiliser un profil personnalisé Microsoft Intune pour créer un profil VPN par application pour les appareils Android](/intune/android-pulse-secure-per-app-vpn)
-- [Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung Knox Standard dans Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+- [Créer un profil Wi-Fi avec une clé prépartagée](/intune/wi-fi-profile-shared-key)
+- [Créer un profil VPN par application](/intune/android-pulse-secure-per-app-vpn)
+- [Autoriser et bloquer des applications pour les appareils Samsung Knox Standard](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
->Seuls les paramètres répertoriés ci-dessus peuvent être configurés par ce type de profil. Les appareils Android n’exposent pas une liste complète des paramètres OMA-URI que vous pouvez configurer. Si vous voulez que d’autres paramètres soient ajoutés, demandez-le sur le [site Intune Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas).
+> Seuls les paramètres répertoriés peuvent être configurés par ce type de profil. Les appareils Android n’exposent pas une liste complète des paramètres OMA-URI que vous pouvez configurer. Si vous souhaitez afficher davantage de paramètres, votez pour des paramètres supplémentaires sur le [site Intune Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas).
 
 ## <a name="custom-profile-settings-for-android-devices"></a>Paramètres de profil personnalisés pour les appareils Android
 
-1. Suivez les instructions figurant dans [Configuration de paramètres d'appareil personnalisés dans Microsoft Intune](custom-settings-configure.md) pour commencer.
-2. Dans le panneau **Créer un profil**, choisissez **Paramètres** pour ajouter un ou plusieurs paramètres OMA-URI.
-3. Sur le panneau **Modifier une ligne**, configurez les valeurs suivantes pour chaque paramètre :
-    - **Nom** : affectez un nom unique au paramètre OMA-URI pour vous aider à l'identifier dans la liste des paramètres.
-    - **Description** : entrez une description générale du paramètre et d'autres informations pertinentes pour faciliter sa localisation.
-    - **Type de données** : sélectionnez le type de données pour lequel vous allez spécifier ce paramètre OMA-URI. Choisissez **Chaîne**, **Chaîne (XML)**, **Date et heure**, **Entier**, **Virgule flottante** ou **Booléen**.
-    - **OMA-URI** : spécifiez l'identificateur OMA-URI pour lequel vous souhaitez fournir un paramètre.
-    - **Valeur** : entrez la valeur à associer à l’identificateur OMA-URI que vous avez entré.
-4. Cliquez sur **OK** lorsque vous avez terminé, puis continuez à ajouter d’autres paramètres si nécessaire.
+1. Connectez-vous au [portail Azure](https://portal.azure.com). 
+2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
+3. Créez un profil personnalisé à l’aide de la plateforme Android. Les étapes sont présentées dans [Configurer les paramètres d’appareils personnalisés dans Microsoft Intune](custom-settings-configure.md).
+4. Dans **Paramètres OMA-URI personnalisés**, sélectionnez **Ajouter**, puis **Ajouter une ligne**.
+5. Entrez les propriétés suivantes :
+
+  - **Nom** : entrez un nom unique pour le paramètre OMA-URI afin de le retrouver facilement.
+  - **Description** : entrez une description qui donne une vue d’ensemble du paramètre et tout autre détail important.
+  - **Type de données** : entrez le type de données que vous utilisez pour ce paramètre OMA-URI. Choisissez **Chaîne**, **Chaîne (XML)**, **Date et heure**, **Entier**, **Virgule flottante** ou **Booléen**.
+  - **OMA-URI** : entrez l’OMA-URI que vous souhaitez.
+  - **Valeur** : entrez la valeur à associer à l’identificateur OMA-URI que vous avez entré.
+
+6. Cliquez sur **OK** pour enregistrer vos modifications. Continuez à ajouter d’autres paramètres si besoin.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois les paramètres définis, le profil est créé et s’affiche dans le panneau de la liste des profils. Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
-
-
-
-
+Une fois tous les paramètres ajoutés, le profil est créé et s’affiche dans la liste. Pour attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareil](device-profile-assign.md).

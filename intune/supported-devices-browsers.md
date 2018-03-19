@@ -1,5 +1,6 @@
 ---
-title: Appareils pris en charge - Microsoft Intune
+title: "Systèmes d’exploitation et navigateurs pris en charge par Microsoft Intune"
+titleSuffix: 
 description: "Répertorie les plateformes d’appareils et navigateurs pris en charge par pour la gestion des appareils Intune"
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Navigateurs et systèmes d’exploitation pris en charge
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Cet article est destiné aux administrateurs système responsables de la gestion des appareils de l’entreprise. Pour obtenir de l’aide sur l’installation d’Intune sur votre appareil, consultez [Utiliser des appareils gérés pour réaliser vos tâches](/intune-user-help/company-portal-frequently-asked-questions).
+Avant de configurer Microsoft Intune, passez en revue les systèmes d’exploitation et les navigateurs pris en charge.
 
-Avant de commencer la configuration de Microsoft Intune, passez en revue les conditions suivantes :
-
-- [Systèmes d’exploitation pris en charge](#intune-supported-operating-systems)
-- [Liste des navigateurs web pris en charge pour l’utilisation d’Intune](#intune-supported-web-browsers)
-
-Vous devez également vous familiariser avec [l’utilisation de la bande passante réseau Intune](network-bandwidth-use.md) ([portail classique](/intune-classic/get-started/network-bandwidth-use)).
+Pour obtenir de l’aide sur l’installation d’Intune sur votre appareil, consultez [Utiliser des appareils gérés pour réaliser vos tâches](/intune-user-help/company-portal-frequently-asked-questions). Vous devez également vous familiariser avec [l’utilisation de la bande passante réseau Intune](network-bandwidth-use.md) ([portail classique](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Systèmes d’exploitation pris en charge Intune
 

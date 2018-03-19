@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Guide pratique pour configurer des paramètres Intune pour l’application iOS Classroom
 
@@ -72,12 +72,12 @@ Vous pouvez importer des informations dans SDS en appliquant l’une des méthod
 
 ### <a name="configure-general-settings"></a>Configurer les paramètres généraux
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3.  Dans le panneau **Intune**, choisissez **Configurer des appareils**.
-4.  Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-5.  Dans le panneau des profils, sélectionnez **Créer un profil**.
-6.  Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil Éducation iOS.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
+5.  Dans le volet de profils, choisissez **Créer un profil**.
+6.  Dans le volet **Créer un profil**, entrez un **Nom** et une **Description** pour le profil Éducation iOS.
 7.  Dans la liste déroulante **Plateforme**, choisissez **iOS**.
 8.  Dans la liste déroulante **Type de profil**, choisissez **Education**.
 9.  Choisissez **Paramètres** > **Configurer**.
@@ -94,7 +94,7 @@ Les certificats que vous créez doivent prendre en charge l’authentification d
 
 ### <a name="configure-teacher-certificates"></a>Configurer des certificats d’enseignant
 
-Dans le panneau **Éducation**, choisissez **Certificats d’enseignant**.
+Dans le volet **Éducation**, choisissez **Certificats d’enseignant**.
 
 #### <a name="configure-teacher-root-certificate"></a>Configurer le certificat racine de l’enseignant
 
@@ -110,14 +110,14 @@ Sous **Certificat PKCS#12 d’enseignant**, configurez les valeurs suivantes :
 - **Nom du modèle de certificat** : entrez le nom d’un modèle de certificat qui a été ajouté à une autorité de certification émettrice. 
 - **Seuil de renouvellement (%)** : spécifiez le pourcentage de durée de vie restante du certificat avant que l’appareil ne demande le renouvellement du certificat.
 - **Période de validité du certificat** : spécifiez la quantité de temps restant avant l’expiration du certificat.
-Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
+Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
 
 Quand vous avez terminé la configuration des certificats, choisissez **OK**.
 
 ### <a name="configure-student-certificates"></a>Configurer des certificats d’étudiant
 
-1.  Dans le panneau **Éducation**, choisissez **Certificats d’étudiant**.
-2.  Dans le panneau **Certificats d’étudiant**, dans la liste **Type de certificat d’appareil étudiant**, choisissez **1:1**.
+1.  Dans le volet **Éducation**, choisissez **Certificats d’étudiant**.
+2.  Dans le volet **Certificats d’étudiant**, dans la liste **Type de certificat d’appareil étudiant**, choisissez **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Configurer le certificat racine de l’étudiant
 
@@ -133,16 +133,16 @@ Sous **Certificat PKCS#12 d’étudiant**, configurez les valeurs suivantes :
 - **Nom du modèle de certificat** : entrez le nom d’un modèle de certificat qui a été ajouté à une autorité de certification émettrice. 
 - **Seuil de renouvellement (%)** : spécifiez le pourcentage de durée de vie restante du certificat avant que l’appareil ne demande le renouvellement du certificat.
 - **Période de validité du certificat** : spécifiez la quantité de temps restant avant l’expiration du certificat.
-Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
+Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
 
 Quand vous avez terminé la configuration des certificats, choisissez **OK**.
 
 ## <a name="finish-up"></a>Terminer
 
-1.  Dans le panneau **Éducation**, choisissez OK.
-2.  Dans le panneau **Créer un profil**, choisissez **Créer**.
+1.  Dans le volet **Éducation**, choisissez OK.
+2.  Dans le volet **Créer un profil**, choisissez **Créer**.
     
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
+Le profil est créé et apparaît dans le volet de la liste des profils.
 
 Affectez le profil aux appareils des étudiants dans les groupes de salle de classe qui ont été créés quand vous avez synchronisé vos données scolaires avec Azure AD (consultez [Guide pratique pour attribuer des profils d’appareil](device-profile-assign.md).
 

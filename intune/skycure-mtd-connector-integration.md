@@ -1,7 +1,7 @@
 ---
-title: "Configuration de l’intégration de Skycure avec Intune"
-titlesuffix: Azure portal
-description: "Configurez l’intégration de Skycure avec Microsoft Intune."
+title: "Configurer l’intégration de Skycure avec Microsoft Intune"
+titlesuffix: 
+description: "Comment configurer la solution Skycure Mobile Threat Defense (MTD) avec Microsoft Intune pour contrôler l’accès des appareils mobiles aux ressources de votre entreprise."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a1cea01960512ca484caa643862d90cbb867963
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Configuration de l’intégration de Skycure avec Intune
 
-Vous devez ajouter des applications Skycure à Azure AD pour disposer de fonctionnalités à authentification unique.
+Suivez les étapes ci-dessous pour intégrer la solution Skycure Mobile Threat Defense à Intune. Vous devez ajouter des applications Skycure à Azure AD pour disposer de fonctionnalités à authentification unique.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -62,15 +62,15 @@ Skycure prend en charge deux modes d’intégration avec Intune :
 
 4.  Dans la zone **App iOS**, cliquez sur **Ajouter à Active Directory**.
 
-    ![Application iOS sur la console de gestion Skycure](./media/skycure-setup-1.png)
+    ![Image de l’application iOS sur la console de gestion Skycure](./media/skycure-setup-1.png)
 
 5.  Lorsque la page de connexion s’affiche, entrez vos informations d’identification Intune, puis cliquez sur **Accepter**.
 
-    ![Invite de connexion Intune à l’application iOS](./media/skycure-setup-2.png)
+    ![Image de l’invite de connexion Intune à l’application iOS](./media/skycure-setup-2.png)
 
 6.  Une fois l’application ajoutée dans Azure AD, vous pouvez voir une indication que l’application a été ajoutée dans Azure AD sur la console de gestion Skycure.
 
-    ![Écran de finalisation de l’application iOS](./media/skycure-setup-3.png)
+    ![Image de l’écran de finalisation de l’application iOS](./media/skycure-setup-3.png)
 
 > [!NOTE]
 > Répétez ce processus pour les applications **Skycure Android** et les applications de **gestion**.
@@ -79,13 +79,13 @@ Skycure prend en charge deux modes d’intégration avec Intune :
 
 Vous devez ajouter un groupe de sécurité Azure AD qui contient tous les appareils Skycure en cours d’exécution.
 
-1.  Entrez et sélectionnez tous les groupes de sécurité des appareils qui exécutent Skycure, puis cliquez sur **Appliquer les modifications**.
+-  Entrez et sélectionnez tous les groupes de sécurité des appareils qui exécutent Skycure, puis cliquez sur **Appliquer les modifications**.
 
-    ![Configurer la console de gestion Skycure du groupe de sécurité](./media/skycure-setup-4.png)
+    ![Image montrant où configurer la console de gestion Skycure du groupe de sécurité](./media/skycure-setup-4.png)
 
 Skycure synchronise les appareils exécutant le service Mobile Threat Defense avec les groupes de sécurité Azure AD.
 
-![Configuration du groupe de sécurité terminée sur la console de gestion Skycure](./media/skycure-setup-5.png)
+![Image montrant la configuration du groupe de sécurité terminée sur la console de gestion Skycure](./media/skycure-setup-5.png)
 
 ## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>Configurer l’intégration complète entre Intune et Skycure
 
@@ -103,7 +103,7 @@ Skycure synchronise les appareils exécutant le service Mobile Threat Defense av
 
 5.  Cliquez sur **Appliquer les modifications**.
 
-    ![Intégration complète Skycure terminée](./media/skycure-setup-6.png)
+    ![Image montrant l’intégration complète Skycure terminée](./media/skycure-setup-6.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

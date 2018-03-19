@@ -1,105 +1,87 @@
 ---
-title: "Actions en cas de non-conformité avec Intune"
-titleSuffix: Intune on Azure
-description: "Découvrez comment créer des actions en cas de non-conformité avec Intune"
+title: "Actions et message de non-conformité avec Microsoft Intune - Azure | Microsoft Docs"
+description: "Créer un e-mail de notification à envoyer aux appareils non conformes. Ajoutez des actions après qu’un appareil a été marqué comme non conforme, par exemple ajoutez une période de grâce pour la conformité, ou créez une planification afin de bloquer l’accès jusqu’à ce que l’appareil soit conforme. Effectuez ces opérations à l’aide de Microsoft Intune dans Azure."
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/05/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 573a8b000e63576f3dd3bae1b6e8e8c47733f6bf
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="automate-actions-for-noncompliance"></a>Automatiser des actions en cas de non-conformité
+# <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatiser l’envoi d’un e-mail et ajouter des actions pour les appareils non conformes - Intune
 
-Les **actions en cas de non-conformité** vous permettent de configurer une séquence chronologique d’actions appliquées aux appareils qui ne répondent pas aux critères de la stratégie de conformité. Par défaut, quand un appareil ne répond pas aux critères de la stratégie de conformité, Intune le marque immédiatement comme étant non conforme, puis l’accès conditionnel Azure AD bloque l’appareil. Les **actions en cas de non-conformité** offrent plus de flexibilité pour décider de ce qu’il faut faire si un appareil n’est pas conforme. Par exemple, vous pouvez décider de ne pas bloquer immédiatement l’appareil et donner à l’utilisateur une période de grâce pendant laquelle il peut configurer la conformité de l’appareil.
+Il existe une fonctionnalité **Actions en cas de non-conformité** qui configure une séquence ordonnée d’actions. Ces actions s’appliquent aux appareils qui ne satisfont pas à votre stratégie de conformité. 
+
+## <a name="overview"></a>Vue d’ensemble
+Par défaut, quand Intune détecte un appareil qui n’est pas conforme, il le marque immédiatement comme étant non conforme. L’[accès conditionnel](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) Azure Active Directory (AD) bloque alors l’appareil. Quand un appareil n’est pas conforme, les **actions en cas de non-conformité** offrent davantage de flexibilité pour décider de ce qu’il faut faire. Par exemple, ne pas bloquer immédiatement l’appareil et donner à l’utilisateur une période de grâce pendant laquelle il peut configurer la conformité de l’appareil.
 
 Il existe deux types d’actions :
 
--   **Notifier les utilisateurs finaux par e-mail** : Vous pouvez personnaliser votre e-mail de notification avant de l’envoyer à l’utilisateur final. Intune vous permet de personnaliser les destinataires, l’objet et le corps du message, notamment le logo de l’entreprise et les informations de contact.
+- **Notifier les utilisateurs finaux par e-mail** : personnalisez un e-mail de notification avant de l’envoyer à l’utilisateur final. Vous pouvez personnaliser les destinataires, l’objet et le corps du message, notamment le logo de l’entreprise et les informations de contact.
 
     Par ailleurs, Intune ajoute des informations sur l’appareil non conforme dans l’e-mail de notification.
 
--   **Marquer l’appareil comme non conforme** : vous pouvez déterminer une planification du nombre de jours au terme desquels l’appareil est marqué comme non conforme. Vous pouvez décider d’exécuter l’action immédiatement ou octroyer à l’utilisateur une période de grâce pour se mettre en conformité avez vos stratégies de conformité des appareils.
+- **Marquer l’appareil comme non conforme** : créez une planification, c’est-à-dire un nombre de jours au terme desquels l’appareil est marqué comme non conforme. Vous pouvez décider d’exécuter l’action immédiatement ou octroyer à l’utilisateur une période de grâce pour se mettre en conformité.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez avoir au moins une stratégie de conformité d’appareil créée pour définir des actions de non-conformité. 
+- Pour définir des actions en cas de non-conformité, vous devez avoir au moins une stratégie de conformité de l’appareil. Pour créer une stratégie de conformité de l’appareil, consultez les plateformes suivantes :
 
-- Découvrez comment créer une stratégie de conformité des appareils pour les plateformes suivantes :
+  - [Android](compliance-policy-create-android.md)
+  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [iOS](compliance-policy-create-ios.md)
+  - [MacOS](compliance-policy-create-mac-os.md)
+  - [Windows](compliance-policy-create-windows.md)
 
-    -   [Android](compliance-policy-create-android.md)
-    -   [Android for Work](compliance-policy-create-android-for-work.md)
-    -   [iOS](compliance-policy-create-ios.md)
-    -   [MacOS](compliance-policy-create-mac-os.md)
-    -   [Windows](compliance-policy-create-windows.md)
+- Quand vous utilisez des stratégies de conformité de l’appareil pour bloquer l’accès des appareils aux ressources de l’entreprise, l’accès conditionnel Azure AD doit être configuré. Pour obtenir des instructions, consultez [Configuration de l’accès conditionnel dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
-Vous devez avoir configuré l’accès conditionnel Azure AD si vous prévoyez d’utiliser des stratégies de conformité d’appareils pour empêcher les appareils d’utiliser les ressources de l’entreprise. 
+- Vous devez créer un modèle de message de notification. Pour envoyer un e-mail à vos utilisateurs, ce modèle est utilisé pour créer des actions en cas de non-conformité.
 
-- Découvrez [comment configurer l’accès conditionnel EMS](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+## <a name="create-a-notification-message-template"></a>Créer un modèle de message de notification
 
-En outre, vous devez disposer d’un modèle de message de notification déjà créé. Le modèle de message de notification est utilisé plus tard dans le processus de création des actions de non-conformité pour envoyer un e-mail à vos utilisateurs.
+1. Connectez-vous au [Portail Azure](https://portal.azure.com) avec vos informations d’identification Intune. 
+2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
+3. Sélectionnez **Conformité de l’appareil**, puis **Notifications**. 
+4. Sélectionnez **Créer une notification**, puis entrez les informations suivantes :
 
-### <a name="to-create-a-notification-message-template"></a>Pour créer un modèle de message de notification
+  - Nom
+  - Objet
+  - Message
+  - En-tête de l’e-mail - Inclure le logo de l’entreprise
+  - Pied de page de l’e-mail - Inclure le nom de l’entreprise
+  - Pied de page de l’e-mail - Inclure les informations de contact
 
-1. Accédez à [Intune sur le portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification Intune.
-2. Choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
-3. Choisissez **Intune**
-4. Choisissez **Conformité de l’appareil**, puis choisissez **Notifications** dans la section **Gérer**.
-5. Choisissez **Créer une notification**, puis entrez les informations suivantes :
-    - Nom
-    - Objet
-    - Message
-    - En-tête de l’e-mail - Inclure le logo de l’entreprise
-    - Pied de page de l’e-mail - Inclure le nom de l’entreprise
-    - Pied de page de l’e-mail - Inclure les informations de contact
-
-5. Choisissez **Créer une notification**, puis entrez les informations suivantes :
-
-    a. Nom
-
-    b. Objet
-
-    c.  Message
-
-    d. En-tête de l’e-mail - Ajouter le logo de l’entreprise
-
-    e. Pied de page de l’e-mail - Ajouter le nom de l’entreprise
-
-    f. Pied de page de l’e-mail - Ajouter les informations de contact
-
-![Exemple de modèle de message de notification](./media/actionsfornoncompliance-1.PNG)
+  ![Exemple de message de notification de conformité dans Intune](./media/actionsfornoncompliance-1.PNG)
 
 Une fois que vous avez terminé l’ajout des informations, choisissez **Créer**. Le modèle de message de notification est prêt à être utilisé.
 
 > [!NOTE]
 > Vous pouvez également modifier un modèle de notification créé précédemment.
 
-## <a name="to-create-actions-for-noncompliance"></a>Pour créer des actions en cas de non-conformité
+## <a name="add-actions-for-noncompliance"></a>Ajouter des actions en cas de non-conformité
 
-> [!TIP]
-> Par défaut, Intune fournit une action prédéfinie dans les actions de la section Non-conformité. Cette action marque l’appareil comme non conforme après avoir été détecté comme ne répondant pas aux critères de votre stratégie de conformité des appareils. Vous pouvez personnaliser le délai après lequel l’appareil est marqué non conforme. L’action ne peut pas être annulée.
+Par défaut, Intune crée automatiquement une action en cas de non-conformité. Quand un appareil ne satisfait pas à votre stratégie de conformité, cette action marque l’appareil comme non conforme. Vous pouvez personnaliser la durée pendant laquelle l’appareil est marqué comme non conforme. Cette action ne peut pas être supprimée.
 
-Vous pouvez ajouter une action lorsque vous créez une stratégie de conformité d’appareils ou modifiez une stratégie de conformité d’appareils existante.
+Vous pouvez ajouter une action quand vous créez une stratégie de conformité, ou mettre à jour une stratégie de conformité existante. 
 
-1.  Dans la charge de travail Intune, dans le panneau **Stratégies de conformité des appareils**, choisissez **Stratégies** sous la section **Gérer**.
+1. Dans le [portail Azure](https://portal.azure.com), ouvrez **Microsoft Intune**, puis sélectionnez **Conformité**.
+2. Sélectionnez **Stratégies**, choisissez l’une de vos stratégies, puis sélectionnez **Propriétés**. 
 
-2.  Choisissez une stratégie de conformité des appareils en cliquant sur celle-ci, puis choisissez **Propriétés** sous la section **Gérer**.
+  Vous n’avez pas encore de stratégie ? Créez une stratégie [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou une stratégie pour une autre plateforme.
 
-3.  Dans le panneau **device compliance policy properties (Propriétés de stratégie de conformité d’appareil)**, choisissez **Actions en cas de non-conformité**.
+3. Sélectionnez **Actions en cas de non-conformité**, puis sélectionnez **Ajouter** pour entrer les paramètres de l’action. Vous pouvez choisir le modèle de message créé précédemment, ajouter des destinataires supplémentaires et mettre à jour la planification de la période de grâce. Vous pouvez entrer le nombre de jours (de 0 à 365) sur la planification, puis appliquer les stratégies d’accès conditionnel. Si vous entrez **0** nombre de jours, l’accès conditionnel bloque **immédiatement** l’accès aux ressources de l’entreprise.
 
-4.  Le panneau **Actions en cas de non-conformité** s’ouvre, choisissez **Ajouter** pour spécifier les paramètres d’action. Vous pouvez choisir le modèle de message créé précédemment, des destinataires supplémentaires et la planification de la période de grâce. Vous pouvez spécifier le nombre de jours (de 0 à 365) sur la planification, puis appliquer les stratégies d’accès conditionnel. Si vous spécifiez **0** pour le nombre de jours, cela signifie que l’accès conditionnel doit **immédiatement** bloquer l’accès aux ressources de l’entreprise quand les appareils sont non conformes aux stratégies de conformité des appareils.
-
-5.  Une fois que vous avez terminé l’ajout des informations, choisissez **Ajouter**, puis **OK**.
+4. Quand vous avez terminé, sélectionnez **Ajouter** > **OK** pour enregistrer les modifications.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Vous pouvez surveiller l’activité de conformité d’appareils en exécutant les rapports disponibles dans le panneau de conformité des appareils. Pour plus d’informations, consultez [Guide pratique pour surveiller la conformité des appareils](device-compliance-monitor.md).
+Surveiller l’activité de conformité de l’appareil en exécutant les rapports. [Guide pratique pour surveiller la conformité des appareils avec Intune](device-compliance-monitor.md) fournit quelques conseils.

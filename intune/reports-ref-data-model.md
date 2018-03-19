@@ -1,11 +1,12 @@
 ---
-title: "Modèle de données de l’entrepôt de données | Microsoft Docs"
-description: "L’entrepôt de données Intune échantillonne quotidiennement les données pour vous offrir un historique de votre environnement mobile en constante évolution."
+title: "Modèle de données de l’entrepôt de données"
+titlesuffix: Microsoft Intune
+description: "L’entrepôt de données Microsoft Intune échantillonne quotidiennement les données pour vous offrir un historique de votre environnement mobile en constante évolution."
 keywords: "Entrepôt de données Intune"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Modèle de données de l’entrepôt de données
 
-L’entrepôt de données Intune échantillonne quotidiennement les données pour vous offrir un historique de votre environnement d’appareils mobiles, qui évolue en permanence. L’affichage se compose d’éléments associés dans le temps.
+L’entrepôt de données Intune échantillonne quotidiennement les données pour vous offrir un historique de votre environnement d’appareils mobiles, qui évolue en permanence. L’affichage se compose d’entités associées dans le temps.
 
-## <a name="things-entity-sets"></a>Éléments : jeux d’entités
+## <a name="entities-entity-sets"></a>Entités : Jeux d’entités
 
 L’entrepôt expose les données dans les zones générales suivantes :
 
@@ -33,7 +34,7 @@ L’entrepôt expose les données dans les zones générales suivantes :
   -  Inventaire des applications et des logiciels
   -  Configuration des appareils et stratégies de conformité
 
-Ces zones contiennent les entités, ou éléments, qui sont significatives pour l’environnement Intune. Pour plus d’informations sur les jeux d’entités, consultez les rubriques suivantes :
+Ces zones contiennent les entités qui sont significatives pour l’environnement Intune. Pour plus d’informations sur les jeux d’entités, consultez les rubriques suivantes :
 
   -  [Application](reports-ref-application.md)
   -  [Date](reports-ref-date.md)

@@ -1,54 +1,54 @@
 ---
-title: "Paramètres VPN Intune pour les appareils Windows 8.1"
-titleSuffix: Azure portal
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils Windows 8.1."
+title: "Paramètres VPN Microsoft Intune pour les appareils Windows 8.1"
+titleSuffix: 
+description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils exécutant Windows 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0126c483ec905d4c073e19b35498c27069ecd285
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ced3e03fa337034076af75c7984a30cd75105bb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils Windows 8.1 dans Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Configurer les paramètres VPN dans Microsoft Intune pour les appareils exécutant Windows 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-dessous ne peuvent pas nécessairement être configurées.
+Cet article présente les paramètres Intune permettant de configurer des connexions VPN sur les appareils exécutant Windows 8.1.
+
+Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivante ne sont pas nécessairement configurables.
 
 ## <a name="base-vpn-settings"></a>Paramètres VPN de base
 
 
-- **Appliquer tous les paramètres à Windows 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail classique Intune. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est **Configuré**, les paramètres seront uniquement appliqués aux appareils Windows 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliquent également aux appareils Windows 10.
-- **Nom de connexion** : saisissez un nom pour cette connexion. Les utilisateurs finaux voient ce nom lorsqu’ils consultent leur appareil pour obtenir la liste des connexions VPN disponibles.
-- **Serveurs** : ajoutez un ou plusieurs serveurs VPN auxquels les appareils se connectent.
-    - **Ajouter** : ouvre le panneau **Ajouter une ligne** dans lequel vous pouvez spécifier les informations suivantes :
+- **Appliquer tous les paramètres à Windows 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail classique Intune. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est **Configuré**, les paramètres sont uniquement appliqués aux appareils Windows 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliquent également aux appareils Windows 10.
+- **Nom de connexion** : saisissez un nom pour cette connexion. Les utilisateurs voient ce nom quand ils recherchent dans leur appareil la liste des connexions VPN disponibles.
+- **Serveurs** : Ajoutez un ou plusieurs serveurs VPN auxquels les appareils se connectent.
+    - **Ajouter** : ouvre le panneau **Ajouter une ligne** dans lequel vous pouvez spécifier les informations suivantes :
         - **Description** : spécifiez un nom descriptif pour le serveur, comme **Serveur VPN Contoso**.
-        - **Adresse IP ou nom de domaine complet** : fournissez l'adresse IP ou le nom de domaine complet du serveur VPN auquel les appareils se connectent. Exemples : **192.168.1.1**, **vpn.contoso.com**.
-        - **Serveur par défaut** : active ce serveur comme serveur par défaut que les appareils utiliseront pour établir la connexion. Veillez à ne définir qu’un seul serveur par défaut.
-    - **Importer** : accédez à un fichier contenant une liste séparée par virgules de serveurs au format description, adresse IP ou nom de domaine complet, serveur par défaut. Choisissez **OK** pour les importer dans la liste **Serveurs**.
+        - **Adresse IP ou nom de domaine complet** : fournissez l'adresse IP ou le nom de domaine complet du serveur VPN auquel les appareils se connectent. Exemples : **192.168.1.1**, **vpn.contoso.com**.
+        - **Serveur par défaut** : Active ce serveur comme serveur par défaut que les appareils utilisent pour établir la connexion. Veillez à ne définir qu’un seul serveur par défaut.
+    - **Importer** : accédez à un fichier qui contient une liste séparée par des virgules de serveurs au format description, adresse IP ou nom de domaine complet, serveur par défaut. Choisissez **OK** pour les importer dans la liste **Serveurs**.
     - **Exporter** : exporte la liste des serveurs dans un fichier de valeurs séparées par des virgules (csv).
 
 - **Type de connexion** : sélectionnez le type de connexion VPN à partir de la liste de fournisseurs suivante :
 - **Check Point Capsule VPN**
-- **Dell SonicWALL Mobile Connect**
+- **SonicWall Mobile Connect**
 - **Client F5 Edge**
 - **Pulse Secure**
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
 
-- **Groupe de connexion ou domaine** (Dell SonicWALL Mobile Connect uniquement) : spécifiez le nom du groupe de connexion ou domaine auquel vous souhaitez vous connecter.
+- **Groupe de connexion ou domaine** (SonicWall Mobile Connect uniquement) : spécifiez le nom du groupe de connexion ou domaine auquel vous souhaitez vous connecter.
 
 - **Rôle** (Pulse Secure uniquement) : spécifiez le nom du rôle d'utilisateur qui a accès à cette connexion. Un rôle d’utilisateur définit des options et des paramètres personnels, et active ou désactive certaines fonctionnalités d’accès.
 
@@ -70,7 +70,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-d
 
 ```
 
-**Exemple pour Dell SonicWALL Mobile Connect :**
+**Exemple pour SonicWall Mobile Connect :**
 ```
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 
@@ -83,7 +83,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-d
 
 ```
 
-Pour plus d’informations sur l’écriture des commandes XML personnalisées, reportez-vous à la documentation du VPN de chaque fabricant.
+Pour plus d’informations sur l’écriture de commandes XML personnalisées, reportez-vous à la documentation du VPN de chaque fabricant.
 
 
 ## <a name="proxy-settings"></a>Paramètres du proxy

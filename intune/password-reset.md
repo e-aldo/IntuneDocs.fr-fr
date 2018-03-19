@@ -1,22 +1,22 @@
 ---
 title: "Réduire les frais de support technique"
+titlesuffix: Microsoft Intune
 description: "Réduction des frais de support technique avec la réinitialisation de mot de passe en libre-service"
 keywords: "Réinitialisation du mot de passe SSPR d’Azure Active Directory"
-author: arob98
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 08/27/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
-ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e2bd79e33080a0cc402d38f45b72ddbe9fd7816b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Réduire les frais de support technique avec la réinitialisation de mot de passe en libre-service
 
@@ -34,7 +34,7 @@ Vous pouvez autoriser les employés à réinitialiser les mots de passe des comp
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Découvrez plus en détail les rubriques suivantes :
+Découvrez plus en détail les articles suivants :
 * [Bonnes pratiques relatives aux mots de passe](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Conditions de licence pour la réinitialisation de mot de passe en libre-service](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
