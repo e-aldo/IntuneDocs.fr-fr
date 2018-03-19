@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e89ba73869d7453b74edb1e7f87f6c8edb210bf
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) avec Intune
 
@@ -65,27 +65,30 @@ Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à de
 
 |Autorisation|Opération|
 |---|---|
-|Données d'audit|Read|
+|Données d'audit|Lire|
 |Configurations d’appareil|Affecter, Créer, Supprimer, Lire, Mettre à jour|
 |Gestionnaires d’inscription d’appareil|Lire, Mettre à jour|
 |Appareils gérés|Lire, Mettre à jour<!--, Delete [To be added in 1803]-->|
 |Applications mobiles|Affecter, Créer, Supprimer, Lire, Mettre à jour|
-|Rapports|Read|
+|Les rapports|Lire|
 |Actions à distance|Nettoyer le PC, Redémarrer, Verrouiller à distance, Mettre hors service, Synchroniser les appareils, Réinitialiser|
-|Organisation|Read|
+|Organisation|Lire|
 
 ### <a name="to-assign-a-built-in-role"></a>Pour affecter un rôle intégré
 
-1. Dans **Rôles Intune**, choisissez le rôle intégré que vous souhaitez affecter.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Rôles Intune**, puis **Tous les rôles**.
+1. Dans **Rôles Intune - Tous les rôles**, choisissez le rôle intégré que vous souhaitez affecter.
 
-2. Sur le panneau <*nom de rôle*> - **Propriétés**, choisissez **Gérer**, puis **Affectations**.
+2. Dans le volet <*nom_rôle*> - **Vue d’ensemble**, choisissez **Gérer**, puis **Affectations**.
 
     > [!NOTE]
     > Il n’est pas possible de supprimer ou de modifier les rôles intégrés.
 
-3. Sur le panneau de rôle personnalisé, choisissez **Affecter**.
+3. Dans le volet de rôle personnalisé, choisissez **Affecter**.
 
-4. Dans le panneau **Attributions de rôle**, entrez un **Nom** et éventuellement une **Description** pour l’attribution, puis choisissez les éléments suivants :
+4. Dans le volet **Attributions de rôle**, entrez un **Nom** et éventuellement une **Description** pour l’attribution, puis choisissez les éléments suivants :
     - **Membres** : sélectionnez un groupe qui contient l’utilisateur auquel vous souhaitez accorder les autorisations.
     - **Étendue** : sélectionnez un groupe contenant les utilisateurs que le membre ci-dessus sera autorisé à gérer.
 <br></br>
@@ -108,29 +111,29 @@ Vous pouvez créer un rôle personnalisé qui inclut toutes les autorisations re
 
 1. Connectez-vous au [Portail Azure](https://portal.azure.com) avec vos informations d’identification Intune.
 
-2. Choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+2. Choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
 
 3. Choisissez **Intune**. Le tableau de bord d’Intune s’affiche : sélectionnez alors **Rôles Intune**.
 
-4. Sur le panneau **Rôles Intune**, choisissez **Rôles Intune**, puis **Ajouter un rôle personnalisé**.
+4. Dans le volet **Rôles Intune**, choisissez **Toues les rôles**, puis **Ajouter un rôle personnalisé**.
 
-5. Sur le panneau **Ajouter un rôle personnalisé**, entrez le nom et la description du nouveau rôle, puis cliquez sur **Autorisations**.
+5. Dans le volet **Ajouter un rôle personnalisé**, entrez le nom et la description du nouveau rôle, puis cliquez sur **Autorisations**.
 
-3. Dans le panneau **Autorisations**, sélectionnez les autorisations que vous souhaitez utiliser avec ce rôle. Utilisez le [Tableau RBAC d’Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) comme référence pour déterminer quelles autorisations vous souhaitez appliquer.
+3. Dans le volet **Autorisations**, choisissez les autorisations que vous souhaitez utiliser avec ce rôle. Utilisez le [Tableau RBAC d’Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) comme référence pour déterminer quelles autorisations vous souhaitez appliquer.
 
 4. Une fois que vous avez terminé, choisissez **Enregistrer**.
 
-5. Dans le panneau **Ajouter un rôle personnalisé**, cliquez sur **Créer**. Le nouveau rôle s’affiche dans la liste sur le panneau **Rôles Intune**.
+5. Dans le volet **Ajouter un rôle personnalisé**, cliquez sur **Créer**. Le nouveau rôle s’affiche dans la liste dans le volet **Rôles Intune - Tous les rôles**.
 
 ### <a name="to-assign-a-custom-role"></a>Pour affecter un rôle personnalisé
 
-1. Dans **Rôles Intune**, choisissez le rôle personnalisé que vous souhaitez affecter.
+1. Dans **Rôles Intune - Tous les rôles**, choisissez le rôle personnalisé que vous souhaitez affecter.
 
-2. Sur le panneau <*nom de rôle*> - **Propriétés**, choisissez **Gérer**, puis **Affectations**. Dans ce panneau, vous pouvez aussi modifier ou supprimer des rôles existants.
+2. Dans le volet <*nom_rôle*> - **Vue d’ensemble**, choisissez **Gérer**, puis **Affectations**. Dans ce volet, vous pouvez aussi modifier ou supprimer des rôles existants.
 
-3. Sur le panneau de rôle personnalisé, choisissez **Affecter**.
+3. Dans le volet de rôle personnalisé, choisissez **Affecter**.
 
-4. Dans le panneau **Attributions de rôle**, entrez un **Nom** et éventuellement une **Description** pour l’attribution, puis choisissez les éléments suivants :
+4. Dans le volet **Attributions de rôle**, entrez un **Nom** et éventuellement une **Description** pour l’attribution, puis choisissez les éléments suivants :
     - **Membres** : sélectionnez un groupe qui contient l’utilisateur auquel vous souhaitez accorder les autorisations.
     - **Étendue** : sélectionnez un groupe contenant les utilisateurs que le membre ci-dessus sera autorisé à gérer.
 <br></br>

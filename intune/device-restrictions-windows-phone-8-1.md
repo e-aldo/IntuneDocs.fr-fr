@@ -1,29 +1,30 @@
 ---
-title: "Paramètres de restriction d’appareil Intune pour Windows Phone 8.1"
-titleSuffix: Azure portal
-description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils Windows Phone 8.1."
+title: "Paramètres de restriction d’appareil Microsoft Intune pour Windows Phone 8.1"
+titleSuffix: 
+description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et les fonctionnalités des appareils exécutant Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows Phone 8.1 dans Microsoft Intune
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Paramètres de restriction d’appareil Windows Phone 8.1 dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Cet article décrit les paramètres de restriction d’appareil Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows Phone 8.1.
+
 
 ## <a name="general"></a>Général
 
@@ -75,7 +76,7 @@ Exemple : recherchez l'application Skype dans le Store. L’URL que vous utilise
 
 ### <a name="additional-options"></a>Options supplémentaires
 
-Vous pouvez également cliquer sur **Importer** pour remplir la liste à partir d’un fichier csv au format <*URL de l’application*>, <*Nom de l’application*>, <*Développeur de l’application*>, ou cliquer sur **Exporter** pour créer un fichier csv contenant le contenu de la liste des applications restreintes dans le même format.
+Vous pouvez également cliquer sur **Importer** pour remplir la liste à partir d’un fichier csv au format <*URL de l’application*>, <*Nom de l’application*>, <app publisher>, ou cliquer sur **Exporter** pour créer un fichier csv contenant le contenu de la liste des applications restreintes dans le même format.
 
 
 ## <a name="browser"></a>Navigateur

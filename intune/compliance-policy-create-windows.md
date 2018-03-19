@@ -1,30 +1,30 @@
 ---
-title: "Guide pratique pour créer une stratégie de conformité pour Windows"
-titleSuffix: Azure portal
-description: "Apprenez à créer une stratégie de conformité pour les appareils Windows."
+title: "Créer une stratégie de conformité de l’appareil Windows dans Microsoft Intune"
+titleSuffix: 
+description: "Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils Windows afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Windows dans Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Des stratégies de conformité sont créées pour chaque plateforme. Vous pouvez créer une stratégie de conformité dans le portail Azure. Pour en savoir plus sur ce qu'est la stratégie de conformité, consultez la rubrique [Qu'est-ce-que la compatibilité des appareils ?](device-compliance.md). Pour en savoir plus sur les conditions préalables à prendre en compte avant de créer une stratégie, consultez la rubrique [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
+Une stratégie de conformité de l’appareil Intune pour Windows spécifie les règles et les paramètres que les appareils Windows doivent satisfaire pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec l’accès conditionnel pour autoriser ou bloquer l’accès aux ressources de l’entreprise, et vous pouvez générer des rapports sur les appareils et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité de l’appareil pour chaque plateforme dans le portail Intune Azure. Pour en savoir plus sur les stratégies de conformité et sur les prérequis à prendre en compte avant de créer une stratégie, consultez [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
 
 La table suivante décrit la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
 
@@ -42,7 +42,7 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 
 -------------------------------
 
-**Corrigé** : le système d’exploitation de l’appareil applique la conformité. (Par exemple, l’utilisateur est obligé de définir un code PIN.)+
+**Corrigé** : le système d’exploitation de l’appareil applique la conformité. (Par exemple, l’utilisateur est obligé de définir un code confidentiel.)
 
 **En quarantaine** : le système d’exploitation de l’appareil n’applique pas la conformité. (Par exemple, les appareils Android n’obligent pas l’utilisateur à chiffrer l’appareil.) Quand l’appareil n’est pas conforme, les actions suivantes se produisent :
 
@@ -51,12 +51,14 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Création d'une stratégie de conformité dans le portail Azure
 
-1. Dans le panneau **Intune**, choisissez **Définir la conformité des appareils**. Sous **Gérer**, choisissez **Toutes les stratégies de conformité d'appareil**, puis **Créer**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+1. Dans le volet **Intune**, choisissez **Conformité de l’appareil**. Sous **Gérer**, choisissez **Stratégies**, puis **Créer une stratégie**.
 2. Tapez un nom et une description, puis sélectionnez la plateforme à laquelle vous souhaitez appliquer cette stratégie.
-3. Choisissez **Critères de conformité** pour ouvrir le panneau des exigences de conformité.  Vous pouvez spécifier ici les paramètres **Sécurité**, **Intégrité de l'appareil** et **Propriété de l'appareil**. Quand vous avez terminé, choisissez **Ok**.
+3. Choisissez **Configurer les paramètres** pour spécifier les paramètres **Sécurité du système**, **Intégrité de l’appareil** et **Propriétés de l’appareil**. Une fois que vous avez terminé, choisissez **Enregistrer**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 
 ## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
 
-Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le panneau **Stratégie de conformité**.
+Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le volet **Conformité de l’appareil – Stratégies**.
 
-1. Choisissez la stratégie que vous souhaitez attribuer aux utilisateurs, puis **Affectations**. Cette opération ouvre le panneau dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous attribuez à la stratégie.
-2. Choisissez **Sélectionner des groupes** pour ouvrir le panneau qui affiche les groupes de sécurité Azure AD.  Si vous choisissez **Sélectionner**, la stratégie est déployée pour les utilisateurs.
+1. Choisissez la stratégie que vous souhaitez attribuer aux utilisateurs, puis **Affectations**. Cette opération ouvre le volet dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous affectez à la stratégie.
+2. Choisissez **Groupes sélectionnés** pour ouvrir le volet qui affiche les groupes de sécurité Azure AD.  Si vous choisissez **Enregistrer**, la stratégie est déployée pour les utilisateurs.
 
 Vous avez appliqué la stratégie à des utilisateurs. La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie de conformité sera évaluée.
 
@@ -78,8 +80,8 @@ Vous avez appliqué la stratégie à des utilisateurs. La conformité des appare
 ### <a name="password"></a>Mot de passe
 
 - **Exiger un mot de passe pour déverrouiller des appareils mobiles :** définissez cette option sur **Oui** pour obliger les utilisateurs à entrer un mot de passe pour accéder à leur appareil.
-- **Autoriser les mots de passe simples :** définissez cette option sur **Oui** pour permettre aux utilisateurs de créer des mots de passe simples tels que « **1234** » ou « **1111** ».
-- **Longueur minimale du mot de passe** : spécifie le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l’utilisateur.
+- **Autoriser les mots de passe simples :** définissez cette option sur **Oui** pour permettre aux utilisateurs de créer des mots de passe simples tels que « **1111** » ou « **1111** ».
+- **Longueur minimale du mot de passe** : spécifie le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l’utilisateur.
 - **Type de mot de passe requis :** spécifiez si les utilisateurs doivent créer un mot de passe de type **Alphanumérique** ou **Numérique**.
 
 Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si la longueur minimale du mot de passe a une valeur supérieure à huit caractères ou si le nombre minimum de jeux de caractères a une valeur supérieure à deux.
@@ -93,7 +95,7 @@ Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte M
 Le fait de définir un nombre plus élevé pour ce paramètre oblige les utilisateurs à créer des mots de passe plus complexes. Pour les appareils qui exécutent Windows et qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si la longueur minimale du mot de passe a une valeur supérieure à huit caractères ou si le nombre minimum de jeux de caractères a une valeur supérieure à deux.
 
 - **Minutes d’inactivité avant demande du mot de passe :** Spécifie la durée d’inactivité après laquelle l’utilisateur doit réentrer son mot de passe.
-- **Expiration du mot de passe (jours)** : sélectionnez le nombre de jours avant que le mot de passe de l’utilisateur n’expire et qu’il ne doive en créer un autre.
+- **Expiration du mot de passe (jours)** : sélectionnez le nombre de jours avant que le mot de passe de l’utilisateur n’expire et qu’il ne doive en créer un autre.
 - **Mémoriser l’historique des mots de passe** : utilisez ce paramètre conjointement avec le paramètre **Empêcher la réutilisation des mots de passe précédents** pour empêcher l’utilisateur de créer des mots de passe qui ont déjà été utilisés.
 - **Empêcher la réutilisation des mots de passe précédents :** si l’option **Mémoriser l’historique des mots de passe** est sélectionnée, spécifiez le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés.
 - **Exiger un mot de passe quand l'appareil quitte un état inactif :** ce paramètre doit être utilisé conjointement avec le paramètre **Minutes d’inactivité avant demande du mot de passe**. Les utilisateurs finaux sont invités à entrer un mot de passe pour accéder à un appareil qui a été inactif pendant la durée spécifiée par le paramètre **Minutes d’inactivité avant demande du mot de passe**.
@@ -128,7 +130,7 @@ Pour plus d’informations sur le fonctionnement du service HAS, consultez [Heal
 
 - **Longueur minimale du mot de passe :** prise en charge par Windows 8.1.
 
-Spécifiez le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l'utilisateur.
+Spécifiez le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l’utilisateur.
 
 Pour les appareils qui sont utilisés avec un compte Microsoft, la stratégie de conformité n’est pas évaluée correctement si **Longueur minimale du mot de passe** a une valeur supérieure à huit caractères ou si **Nombre minimum de jeux de caractères** a une valeur supérieure à deux caractères.
 
@@ -150,7 +152,7 @@ Spécifiez la durée d’inactivité au terme de laquelle l’utilisateur doit e
 
 - **Expiration du mot de passe (jours)** : pris en charge sur Windows RT, Windows RT 8.1 et Windows 8.1.
 
-Sélectionnez le nombre de jours avant que le mot de passe de l'utilisateur n'expire et qu'il ne doive en créer un autre.
+Sélectionnez le nombre de jours avant que le mot de passe de l’utilisateur n’expire et qu’il ne doive en créer un autre.
 
 - **Mémoriser l'historique des mots de passe :** pris en charge sur Windows RT, Windows RT et Windows 8.1.
 
@@ -183,10 +185,10 @@ Si un appareil a une version antérieure à la version de système d’exploitat
 
 Quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 
-Pour trouver la version du système d'exploitation à utiliser pour les paramètres **Système d’exploitation minimal requis** et **Version maximale autorisée du système d’exploitation**, exécutez la commande **winver** à partir de l'invite de commandes. La commande winver retourne la version signalée du système d’exploitation.+
+Pour trouver la version du système d'exploitation à utiliser pour les paramètres **Système d’exploitation minimal requis** et **Version maximale autorisée du système d’exploitation**, exécutez la commande **winver** à partir de l'invite de commandes. La commande winver retourne la version signalée du système d'exploitation.
 
 - Les PC Windows 8.1 retournent la version **3**. Si la règle de la version du système d’exploitation est définie sur Windows 8.1 pour Windows, l’appareil est signalé comme non conforme même si Windows 8.1 est installé dessus.
-- Pour les PC Windows exécutant Windows 10, la version doit être définie comme étant &quot;10.0&quot; + le numéro de version du système d’exploitation retourné par la commande winver.
+- Pour les PC Windows exécutant Windows 10, la version doit être définie comme étant « 10.0 » + le numéro de version du système d’exploitation retourné par la commande winver.
 
 ## <a name="windows-holographic-for-business-support"></a>Prise en charge de Windows Holographic for Business
 

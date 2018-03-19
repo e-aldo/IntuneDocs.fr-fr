@@ -1,12 +1,12 @@
 ---
-title: "Accès conditionnel avec Intune"
-titlesuffix: Azure portal
-description: "Apprenez à définir les conditions que les utilisateurs et appareils doivent respecter pour accéder aux ressources d’entreprise dans la Microsoft Intune."
+title: "Accès conditionnel avec Microsoft Intune"
+titlesuffix: 
+description: "Découvrez comment définir les conditions que les utilisateurs, appareils et applications doivent respecter pour accéder aux ressources d’entreprise dans Microsoft Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>Qu’est-ce que l’accès conditionnel ?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Cette rubrique décrit l’accès conditionnel qui s’applique à Enterprise Mobility + Security (EMS) puis présente des scénarios courants d’accès conditionnel avec Intune.
+L’accès conditionnel fait référence aux moyens grâce auxquels vous pouvez contrôler les appareils et les applications qui sont autorisés à se connecter à vos ressources d’entreprise et de messagerie. Dans cette rubrique, vous allez découvrir ce qu’est l’accès conditionnel basé sur l’application et basé sur l’appareil, et découvrir des scénarios courants d’utilisation de l’accès conditionnel avec Intune.
 
 L’accès conditionnel d’Enterprise Mobility + Security (EMS) n’est pas un produit autonome, il s’agit d’une solution qui tire parti de tous les services et produits qui font partie de la suite EMS. Il offre un contrôle d’accès granulaire pour sécuriser vos données d’entreprise, tout en donnant aux utilisateurs une expérience qui leur permet d’effectuer leur travail au mieux à partir de n’importe quel appareil et de n’importe quel emplacement.
 

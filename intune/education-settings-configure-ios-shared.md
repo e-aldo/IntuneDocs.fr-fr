@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 8f6dc373f831b574abf7d63e97935a379e731422
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Guide pratique pour configurer les paramètres d’Intune Education pour les appareils iPad partagés
 
@@ -62,12 +62,12 @@ Vous pouvez importer des informations dans SDS en appliquant l’une des méthod
 
 ### <a name="configure-general-settings"></a>Configurer les paramètres généraux
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
-4. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-5. Dans le panneau des profils, sélectionnez **Créer un profil**.
-6. Dans le panneau **Créer un profil**, entrez un **Nom** et une **Description** pour le profil Éducation iOS.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
+5. Dans le volet de profils, choisissez **Créer un profil**.
+6. Dans le volet **Créer un profil**, entrez un **Nom** et une **Description** pour le profil Éducation iOS.
 7. Dans la liste déroulante **Plateforme**, choisissez **iOS**.
 8. Dans la liste déroulante **Type de profil**, choisissez **Education**.
 9. Choisissez **Paramètres** > **Configurer**.
@@ -83,7 +83,7 @@ Les certificats que vous créez doivent prendre en charge l’authentification d
 
 ### <a name="configure-teacher-certificates"></a>Configurer des certificats d’enseignant
 
-Dans le panneau **Éducation**, choisissez **Certificats d’enseignant**.
+Dans le volet **Éducation**, choisissez **Certificats d’enseignant**.
 
 #### <a name="configure-teacher-root-certificate"></a>Configurer le certificat racine de l’enseignant
 
@@ -96,7 +96,7 @@ Sous **Certificat PKCS#12 d’enseignant**, configurez les valeurs suivantes :
 - **Format du nom de l’objet** : Intune ajoute automatiquement **organisateur** comme préfixe au nom commun du certificat pour le certificat de l’enseignant, et **membre** pour le certificat de l’étudiant.
 - **Autorité de certification** : autorité de certification d’entreprise qui s’exécute sur une édition Entreprise de Windows Server 2008 R2 ou version ultérieure. Une autorité de certification autonome n'est pas prise en charge.
 - **Nom de l’autorité de certification** : entrez le nom de votre autorité de certification.
-- **Nom du modèle de certificat ** : entrez le nom d’un modèle de certificat qui a été ajouté à une autorité de certification émettrice.
+- **Nom du modèle de certificat** : entrez le nom d’un modèle de certificat qui a été ajouté à une autorité de certification émettrice.
 - **Seuil de renouvellement (%)** : spécifiez le pourcentage de durée de vie restante du certificat avant que l’appareil ne demande le renouvellement du certificat.
 - **Période de validité du certificat** : spécifiez la quantité de temps restant avant l’expiration du certificat. Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
 
@@ -104,8 +104,8 @@ Quand vous avez terminé la configuration des certificats d’enseignants, chois
 
 ### <a name="configure-student-certificates"></a>Configurer des certificats d’étudiant
 
-1. Dans le panneau **Éducation**, choisissez **Certificats d’étudiant**.
-2. Dans le panneau **Certificats d’étudiant**, dans la liste **Type de certificat d’appareil étudiant**, choisissez **iPad partagé**.
+1. Dans le volet **Éducation**, choisissez **Certificats d’étudiant**.
+2. Dans le volet **Certificats d’étudiant**, dans la liste **Type de certificat d’appareil étudiant**, choisissez **iPad partagé**.
 
 #### <a name="configure-student-root-certificate"></a>Configurer le certificat racine de l’étudiant
 
@@ -126,78 +126,78 @@ Quand vous avez terminé la configuration des certificats, choisissez **OK**.
 
 ### <a name="complete-certificate-setup"></a>Terminer l’installation du certificat
 
-1. Dans le panneau **Éducation**, choisissez **OK**.
-2. Dans le panneau **Créer un profil**, choisissez **Créer**.
+1. Dans le volet **Éducation**, choisissez **OK**.
+2. Dans le volet **Créer un profil**, choisissez **Créer**.
 
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
+Le profil est créé et apparaît dans le volet de la liste des profils.
 
 ## <a name="step-3---create-a-device-category"></a>Étape 3 : Créer une catégorie d’appareils
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Inscription de l’appareil**.
-4. Dans le panneau **Inscription - Vue d’ensemble**, choisissez **Catégories d’appareils**.
-5. Dans le panneau **Inscription - Catégories d’appareils**, choisissez **Créer**.
-6. Dans le panneau **Créer une catégorie d’appareils**, entrez un **Nom** et une **Description** pour la catégorie.
-7. Dans le panneau **Créer une catégorie d’appareils**, choisissez **Créer**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Inscription de l’appareil**.
+4. Dans le volet **Inscription de l’appareil - Vue d’ensemble**, choisissez **Catégories d’appareils**.
+5. Dans le volet **Inscription de l’appareil - Catégories d’appareils**, choisissez **Créer**.
+6. Dans le volet **Créer une catégorie d’appareils**, entrez un **Nom** et une **Description** pour la catégorie.
+7. Dans le volet **Créer une catégorie d’appareils**, choisissez **Créer**.
 
-La catégorie d’appareils est créée dans le panneau **Inscription - Catégories d’appareils**.
+La catégorie d’appareils est créée dans le volet **Inscription - Catégories d’appareils**.
 
 ## <a name="step-4--create-a-dynamic-group"></a>Étape 4 : Créer un groupe dynamique
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Groupes**.
-4. Dans le panneau **Utilisateurs et groupes – Tous les groupes**, choisissez **Nouveau groupe**.
-5. Dans le panneau **Groupe**, entrez un **Nom** et une **Description** pour le groupe.
-6. Dans la liste déroulante **Type d’adhésion**, sélectionnez **Appareil dynamique**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Groupes**.
+4. Dans le volet **Utilisateurs et groupes – Tous les groupes**, choisissez **Nouveau groupe**.
+5. Dans le volet **Groupe**, choisissez un **Type de groupe**, puis entrez un **Nom** et une **Description** pour le groupe.
+6. Dans la liste déroulante **Type d’adhésion**, choisissez **Appareil dynamique**.
 7. Choisissez **Membres de dispositif dynamique** pour créer des règles d’adhésion.
-8. Dans le panneau **Règles d’appartenance dynamique** :
+8. Dans le volet **Règles d’appartenance dynamique** :
 1. Sélectionnez **deviceCategory** dans la liste déroulante **Ajouter des appareils où**.
 2. Choisissez **Est égal à**.
 3. Entrez la catégorie d’appareils que vous avez créée dans la zone de texte vide.
-9. Dans le panneau **Règles d’appartenance dynamique**, choisissez **Ajouter une requête**.
-10. Dans le panneau **Groupe**, choisissez **Créer**.
+9. Dans le volet **Règles d’appartenance dynamique**, choisissez **Ajouter une requête**.
+10. Dans le volet **Groupe**, choisissez **Créer**.
 
-Le groupe dynamique est créé dans le panneau **Utilisateurs et groupes – Tous les groupes**.
+Le groupe dynamique est créé dans le volet **Utilisateurs et groupes – Tous les groupes**.
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Étape 5 : Affecter un appareil à une catégorie (paniers)
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Appareils**.
-4. Dans le panneau **Appareils**, choisissez **Tous les appareils**.
-5. Dans le panneau **Appareils – Tous les appareils**, choisissez un appareil.
-6. Dans le panneau de l’appareil, choisissez **Propriétés**.
-7. Dans le panneau des propriétés de l’appareil, entrez la catégorie d’appareils dans la zone de texte **Catégorie d’appareils**.
-8. Dans le panneau de l’appareil, choisissez **Enregistrer**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Appareils**.
+4. Dans le volet **Appareils**, choisissez **Tous les appareils**.
+5. Dans le volet **Appareils – Tous les appareils**, choisissez un appareil.
+6. Dans le volet de l’appareil, choisissez **Propriétés**.
+7. Dans le volet des propriétés de l’appareil, entrez la catégorie d’appareils dans la zone de texte **Catégorie d’appareils**.
+8. Dans le volet des appareils, choisissez **Enregistrer**.
 
 L’appareil est maintenant associé à la catégorie d’appareils. Répétez ce processus pour tous les appareils que vous souhaitez associer à la catégorie d’appareils que vous avez créée.
 
 ## <a name="step-6--create-classroom-profiles"></a>Étape 6 : Créer des profils de classe
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
-4. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils de panier**.
-5. Dans le panneau des profils, sélectionnez **Créer un profil**.
-6. Dans le panneau **Créer une association**, entrez un **Nom** et une **Description**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+4. Dans le volet **Configuration de l’appareil**, choisissez **Gérer** > **Profils de panier**.
+5. Dans le volet de profils, choisissez **Créer un profil**.
+6. Dans le volet **Créer une association**, entrez un **Nom** et une **Description**.
 7. Choisissez **Sélectionner des classes** > **Configurer** pour associer des groupes au profil de panier.
 8. Choisissez les classes à inclure au profil de panier, puis choisissez **Sélectionnez**. 
 9. Choisissez **Sélectionner des paniers** > **Configurer** pour associer des groupes au profil de panier.
 10. Choisissez les groupes à inclure au profil de panier, puis choisissez **Sélectionnez**.
-11. Dans le panneau **Créer une association**, choisissez **Enregistrer** pour enregistrer le profil de panier.
+11. Dans le volet **Créer une association**, choisissez **Enregistrer** pour enregistrer le profil de panier.
 
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
+Le profil est créé et apparaît dans le volet de la liste des profils.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Étape 7 : Affecter le profil de panier à des classes
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de services** > **Autres** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configurer des appareils**.
-4. Dans le panneau **Configuration de l’appareil**, choisissez **Surveiller** > **État de l’attribution**.
-5. Dans le panneau **État de l’attribution**, sélectionnez le **Profil de panier** que vous avez créé.
-6. Dans le panneau **Profil de panier**, choisissez **Affectations** puis, sous **Inclure**, choisissez **Sélectionner les groupes à inclure**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+4. Dans le volet **Configuration de l’appareil**, choisissez **Surveiller** > **État de l’attribution**.
+5. Dans le volet **État de l’attribution**, sélectionnez le **Profil de panier** que vous avez créé.
+6. Dans le volet **Profil de panier**, choisissez **Affectations** puis, sous **Inclure**, choisissez **Sélectionner les groupes à inclure**.
 7. Sélectionnez les classes que vous voulez que le profil de panier cible (ne sélectionnez pas un groupe), puis choisissez **Sélectionner**. 
 8. Lorsque vous avez terminé, choisissez **Enregistrer**.
 

@@ -1,35 +1,35 @@
 ---
-title: "Paramètres de messagerie Intune pour Windows Phone 8.1"
-titleSuffix: Azure portal
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions à la messagerie sur les appareils Windows Phone 8.1."
+title: "Paramètres de messagerie Microsoft Intune pour Windows Phone 8.1"
+titleSuffix: 
+description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions à la messagerie sur les appareils exécutant Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14b39932bb6bf2ee32fea8e51603fc055436dbe9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 06815ac6ed6e24bc1efb4ea612b867fc78e7fb5e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Paramètres de profil de messagerie pour les appareils Windows Phone 8.1 dans Microsoft Intune
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Paramètres de profil de messagerie dans Microsoft Intune pour les appareils exécutant Windows Phone 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Cet article liste les paramètres de profil de messagerie que vous pouvez configurer pour vos appareils exécutant Windows Phone 8.1.
 
-- **Appliquer tous les paramètres à Windows Phone 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail classique Intune. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est définie sur **Configuré**, les paramètres seront uniquement appliqués aux appareils Windows Phone 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliqueront également aux appareils Windows 10 Mobile.
+
+- **Appliquer tous les paramètres à Windows Phone 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail classique Intune. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est **Configuré**, les paramètres sont appliqués uniquement aux appareils Windows Phone 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliquent également aux appareils Windows 10 Mobile.
 - **Serveur de messagerie** : le nom d’hôte de votre serveur Exchange.
-- **Nom du compte** : spécifiez le nom complet du compte de messagerie, tel qu’il apparaîtra aux utilisateurs sur leurs appareils.
-- **Attribut de nom d’utilisateur d’AAD** : il s’agit de l’attribut dans Active Directory (AD) ou Azure AD, qui doit être utilisé pour générer le nom d’utilisateur de ce profil de messagerie. Sélectionnez **Adresse SMTP principale**, comme **user1@contoso.com** ou **Nom d’utilisateur principal**, comme **user1** ou **user1@contoso.com**.
+- **Nom du compte** : spécifiez le nom complet du compte de messagerie, tel qu’il apparaît aux utilisateurs sur leurs appareils.
+- **Attribut de nom d’utilisateur d’AAD** : il s’agit de l’attribut dans Active Directory (AD) ou Azure AD, qui est utilisé pour générer le nom d’utilisateur de ce profil de messagerie. Sélectionnez **Adresse SMTP principale**, comme **user1@contoso.com** ou **Nom d’utilisateur principal**, comme **user1** ou **user1@contoso.com**.
 - **Attribut d’adresse de messagerie d’AAD** : la façon dont l’adresse de messagerie de l’utilisateur est générée sur chaque appareil. Sélectionnez **Adresse SMTP principale** pour utiliser l’adresse SMTP principale pour vous connecter à Exchange ou **Nom d’utilisateur principal** pour utiliser le nom principal complet comme adresse de messagerie.
 
 

@@ -1,61 +1,62 @@
 ---
-title: "Paramètres de VPN Intune pour les appareils Windows Phone 8.1"
-titleSuffix: Azure portal
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils Windows Phone 8.1."
+title: "Paramètres VPN Microsoft Intunes pour les appareils Windows Phone 8.1"
+titleSuffix: 
+description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils exécutant Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ac6fca3217725c34a7db8d46d40278625b93a10
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 786a817fbbd821d74f4f1a03fdec5a6893ed890b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils Windows Phone 8.1 dans Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configurer les paramètres VPN dans Microsoft Intune pour les appareils exécutant Windows Phone 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-dessous ne peuvent pas nécessairement être configurées.
+Cet article présente les paramètres Intune permettant de configurer des connexions VPN sur les appareils exécutant Windows Phone 8.1.
+
+
+Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivante ne sont pas nécessairement configurables.
 
 ## <a name="base-vpn-settings"></a>Paramètres VPN de base
 
-- **Appliquer tous les paramètres à Windows Phone 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail classique Intune. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est définie sur **Configuré**, les paramètres seront uniquement appliqués aux appareils Windows Phone 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliqueront également aux appareils Windows 10 Mobile.
-- **Nom de connexion** : saisissez un nom pour cette connexion. Les utilisateurs finaux voient ce nom lorsqu’ils consultent leur appareil pour obtenir la liste des connexions VPN disponibles.
-- **Méthode d’authentification** : choisissez la façon dont les appareils s’authentifient auprès du serveur VPN à partir de :
+- **Appliquer tous les paramètres à Windows Phone 8.1 uniquement** : il s’agit d’un paramètre que vous pouvez configurer dans le portail classique Intune. Dans le portail Azure, ce paramètre ne peut pas être modifié. Si la valeur est **Configuré**, les paramètres sont appliqués uniquement aux appareils Windows Phone 8.1. Si la valeur est **Non configuré**, ces paramètres s’appliquent également aux appareils Windows 10 Mobile.
+- **Nom de connexion** : saisissez un nom pour cette connexion. Les utilisateurs voient ce nom quand ils recherchent dans leur appareil la liste des connexions VPN disponibles.
+- **Méthode d’authentification** : choisissez la façon dont les appareils s’authentifient auprès du serveur VPN à partir de :
     - **Certificats** : sous **Certificat d’authentification**, choisissez le profil de certificat SCEP ou PKCS que vous avez créé précédemment pour authentifier la connexion. Pour plus d’informations sur les profils de certificat, consultez [Guide pratique pour configurer des certificats](certificates-configure.md).
     - **Nom d’utilisateur et mot de passe** : les utilisateurs finaux doivent fournir un nom d’utilisateur et un mot de passe pour se connecter au serveur VPN.
-- **Serveurs** : ajoutez un ou plusieurs serveurs VPN auxquels les appareils se connectent.
+- **Serveurs** : Ajoutez un ou plusieurs serveurs VPN auxquels les appareils se connectent.
     - **Ajouter** : ouvre le panneau **Ajouter une ligne** dans lequel vous pouvez spécifier les informations suivantes :
         - **Description** : spécifiez un nom descriptif pour le serveur, comme **Serveur VPN Contoso**.
-        - **Adresse IP ou nom de domaine complet** : fournissez l'adresse IP ou le nom de domaine complet du serveur VPN auquel les appareils se connectent. Exemples : **192.168.1.1**, **vpn.contoso.com**.
-        - **Serveur par défaut** : active ce serveur comme serveur par défaut que les appareils utiliseront pour établir la connexion. Veillez à ne définir qu’un seul serveur par défaut.
+        - **Adresse IP ou nom de domaine complet** : fournissez l'adresse IP ou le nom de domaine complet du serveur VPN auquel les appareils se connectent. Exemples : **192.168.1.1**, **vpn.contoso.com**.
+        - **Serveur par défaut** : Active ce serveur comme serveur par défaut que les appareils utilisent pour établir la connexion. Veillez à ne définir qu’un seul serveur par défaut.
     - **Importer** : accédez à un fichier qui contient une liste séparée par des virgules de serveurs au format description, adresse IP ou nom de domaine complet, serveur par défaut. Choisissez **OK** pour les importer dans la liste **Serveurs**.
     - **Exporter** : exporte la liste des serveurs dans un fichier de valeurs séparées par des virgules (csv).
 
-- **Contourner le VPN sur le réseau Wi-Fi d'entreprise** : activez cette option pour indiquer que la connexion VPN n’est pas utilisée quand l’appareil est connecté au réseau Wi-Fi d’entreprise.
-- **Contourner le VPN sur le réseau Wi-Fi domestique** : sélectionnez cette option pour indiquer que la connexion VPN n’est pas utilisée quand l’appareil est connecté à un réseau Wi-Fi domestique.
+- **Contourner le VPN sur le réseau Wi-Fi d’entreprise** : activez cette option pour indiquer que les connexions VPN ne sont pas utilisées quand l’appareil est connecté au réseau Wi-Fi d’entreprise.
+- **Contourner le VPN sur le réseau Wi-Fi domestique** : activez cette option pour indiquer que la connexion VPN n’est pas utilisée quand l’appareil est connecté à un réseau Wi-Fi domestique.
 
 - **Type de connexion** : sélectionnez le type de connexion VPN à partir de la liste de fournisseurs suivante :
     - **Check Point Capsule VPN**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **Client F5 Edge**
     - **Pulse Secure**
 
-- **Groupe de connexion ou domaine** (Dell SonicWALL Mobile Connect uniquement) : spécifiez le nom du groupe de connexion ou domaine auquel vous souhaitez vous connecter.
+- **Groupe de connexion ou domaine** (SonicWall Mobile Connect uniquement) : spécifiez le nom du groupe de connexion ou domaine auquel vous souhaitez vous connecter.
 - **Rôle** (Pulse Secure uniquement) : spécifiez le nom du rôle d'utilisateur qui a accès à cette connexion. Un rôle d’utilisateur définit des options et des paramètres personnels, et active ou désactive certaines fonctionnalités d’accès.
 - **Domaine** (Pusle Secure uniquement) : spécifiez le nom du domaine d'authentification que vous souhaitez utiliser. Un domaine d’authentification est un regroupement de ressources d’authentification qu’utilise le type de connexion Pulse Secure.
 
-- **Liste de recherche de suffixes DNS** - **Ajouter** un ou plusieurs suffixes DNS. Chaque suffixe DNS que vous spécifiez sera recherché lors de la connexion à un site web en utilisant un nom court. Par exemple, spécifiez les suffixes DNS **domain1.contoso.com** et **domain2.contoso.com**, accédez à l'URL **http://mywebsite**, et les URL **http://mywebsite.domain1.contoso.com** et **http://mywebsite.domain2.contoso.com** seront recherchées.
+- **Liste de recherche de suffixes DNS** - **Ajouter** un ou plusieurs suffixes DNS. Chaque suffixe DNS que vous spécifiez est recherché lors de la connexion à un site web en utilisant un nom court. Par exemple, spécifiez les suffixes DNS **domain1.contoso.com** et **domain2.contoso.com**, accédez à l’URL **http://mywebsite**, et les URL **http://mywebsite.domain1.contoso.com** et **http://mywebsite.domain2.contoso.com** sont recherchées.
 
 - **XML personnalisé** : spécifiez des commandes XML personnalisées qui configurent la connexion VPN.
 
@@ -72,7 +73,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-d
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-**Exemple pour Dell SonicWALL Mobile Connect :**
+**Exemple pour SonicWall Mobile Connect :**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 
@@ -86,7 +87,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs dans la liste ci-d
 
 Pour plus d’informations sur l’écriture des commandes XML personnalisées, reportez-vous à la documentation du VPN de chaque fabricant.
 
-- **Tunneling fractionné** - **Activez** ou **Désactivez** cette option qui permet aux appareils de décider de la connexion à utiliser en fonction du trafic. Par exemple, un utilisateur dans un hôtel utilisera la connexion VPN pour accéder aux fichiers de travail, mais utilisera le réseau standard de l’hôtel pour la navigation web ordinaire.
+- **Tunneling fractionné** - **Activez** ou **désactivez** cette option qui permet aux appareils de choisir la connexion à utiliser en fonction du trafic. Par exemple, un utilisateur dans un hôtel utilise la connexion VPN pour accéder aux fichiers de travail, mais utilise le réseau standard de l’hôtel pour la navigation web ordinaire.
 
 
 

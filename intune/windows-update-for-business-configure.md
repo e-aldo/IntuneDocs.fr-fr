@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>Gérer les mises à jour logicielles
 
@@ -71,20 +71,21 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Guide pratique pour créer et affecter des anneaux de mise à jour
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Mises à jour logicielles**.
-4. Dans le panneau **Mises à jour logicielles**, choisissez **Gérer** > **Anneaux de mise à jour Windows 10**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Mises à jour logicielles**.
+4. Dans le volet **Mises à jour logicielles**, choisissez **Gérer** > **Anneaux de mise à jour Windows 10**.
 5. Dans le volet présentant la liste de anneaux de mise à jour, choisissez **Créer**.
-6. Dans le panneau **Créer un anneau de mise à jour**, indiquez le nom et une description facultative de l’anneau de mise à jour, puis choisissez **Paramètres**.
-7. Dans le panneau **Paramètres**, configurez les informations suivantes :
+6. Dans le volet **Créer un anneau de mise à jour**, indiquez le nom et une description facultative de l’anneau de mise à jour, puis choisissez **Paramètres – Configurer**.
+7. Dans le volet **Paramètres**, configurez les informations suivantes :
     - **Canal de maintenance** : définissez le canal pour lequel l’appareil reçoit des mises à jour de Windows (Canal semi-annuel (cible) ou Canal semi-annuel).
-    - **Mises à jour Microsoft** : choisissez si vous voulez rechercher des mises à jour d’applications à partir de Microsoft Update.
+    - **Mises à jour de produit Microsoft** : choisissez si vous voulez rechercher des mises à jour d’applications à partir de Microsoft Update.
     - **Pilotes Windows** : choisissez s’il faut ignorer les pilotes Windows Update au cours des mises à jour.
     - **Automatic update behavior (Comportement de mise à jour automatique)** : indiquez comment gérer le comportement de mise à jour automatique pour rechercher, télécharger et installer les mises à jour. Pour plus d’informations, consultez [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Période de report des mises à jour qualité (jours)** : spécifiez le nombre de jours pendant lesquels les mises à jour qualité sont reportées. Vous pouvez différer la réception de ces mises à jour qualité pour une période allant jusqu’à 30 jours à partir de leur publication.  
 
     Les mises à jour qualité sont en général des correctifs et des améliorations apportées aux fonctionnalités existantes de Windows. Elles sont généralement publiées le premier mardi de chaque mois, mais il se peut qu’elles le soient à d’autres moments par Microsoft. Vous pouvez définir si et pendant combien de temps vous souhaitez différer la réception des mises à jour qualité après leur disponibilité.
+
     - **Période de report des mises à jour des fonctionnalités (jours)** : spécifiez le nombre de jours pendant lesquels les mises à jour de fonctionnalités sont reportées. Vous pouvez différer la réception de ces mises à jour de fonctionnalités pour une période allant jusqu’à 180 jours à partir de leur publication.
 
     Les mises à jour de fonctionnalités correspondent généralement à de nouvelles fonctionnalités de Windows. Une fois que vous avez configuré le paramètre **Canal de maintenance** (Canal semi-annuel (cible) ou Canal semi-annuel), vous pouvez définir si et pendant combien de temps vous souhaitez différer la réception des mises à jour de fonctionnalités après leur mise à disposition par Microsoft dans Windows Update.
@@ -93,13 +94,13 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
 
     **Si le canal de maintenance est défini sur Canal semi-annuel et que la période de report est de 30 jours** : supposons que la mise à jour de fonctionnalité X est tout d’abord publiquement disponible sur Windows Update en tant que Canal semi-annuel (cible) en janvier. Quatre mois plus tard, en avril, la mise à jour de fonctionnalité X est publiée sur le Canal semi-annuel. L’appareil reçoit la mise à jour de fonctionnalité 30 jours après cette publication sur le Canal semi-annuel et se met à jour en mai.
 
-    - **Optimisation de la distribution** : choisissez la méthode avec laquelle les appareils téléchargent les mises à jour Windows. Pour plus d’informations, consultez [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
-1. Quand vous avez terminé, cliquez sur **OK**, puis, dans le panneau **Créer un anneau de mise à jour**, cliquez sur **Créer**.
+    - **Mode de téléchargement de l’optimisation de la distribution** : choisissez la méthode pour laquelle les appareils téléchargent les mises à jour Windows. Pour plus d’informations, consultez [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Quand vous avez terminé, cliquez sur **OK**, puis, dans le volet **Créer un anneau de mise à jour**, cliquez sur **Créer**.
 
 Le nouvel anneau de mise à jour s’affiche dans la liste des anneaux de mises à jour.
 
 1. Pour affecter l’anneau, dans la liste des anneaux de mise à jour, sélectionnez un anneau, puis sous l’onglet *Ring name (Nom de l’anneau)*, choisissez **Affectations**.
-2. Sous l’onglet suivant, choisissez **Sélectionner des groupes**, puis choisissez les groupes auxquels vous souhaitez affecter cet anneau.
+2. Sous l’onglet suivant, choisissez **Sélectionner des groupes à inclure**, puis choisissez les groupes auxquels vous souhaitez affecter cet anneau.
 3. Quand vous avez terminé, choisissez **Sélectionner** pour terminer l’affectation.
 
 ## <a name="update-compliance-reporting"></a>Création de rapports sur la conformité des mises à jour
@@ -108,22 +109,21 @@ Vous pouvez afficher la conformité des mises à jour dans Intune ou en utilisan
 ### <a name="review-update-compliance-in-intune"></a>Examiner la conformité des mises à jour dans Intune 
 <!-- 1352223 -->
 Passez en revue un rapport sur la stratégie pour voir l’état du déploiement pour les anneaux de mise à jour Windows 10 que vous avez configurés. 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Mises à jour logicielles**.
-4. Dans le panneau **Mises à jour logicielles**, choisissez **Vue d’ensemble**. Vous pouvez voir ici des informations générales sur l’état de tous les anneaux de mise à jour que vous avez affectés.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Mises à jour logicielles**.
+4. Dans le volet **Mises à jour logicielles**, choisissez **Vue d’ensemble**. Vous pouvez voir ici des informations générales sur l’état de tous les anneaux de mise à jour que vous avez affectés.
 5. Ouvrez un des rapports suivants : 
      
    **Pour tous les anneaux de déploiement :**
-   1. Dans le panneau **Mises à jour logicielles** > **Anneaux de mise à jour Windows 10**. 
+   1. Dans le volet **Mises à jour logicielles** > **Anneaux de mise à jour Windows 10**. 
    2. Dans la section **Surveiller**, choisissez **Par état d’anneau de déploiement de mises à jour**.
                    
    **Pour des anneaux de déploiement spécifiques :** 
-   1. Dans le panneau **Mises à jour logicielles** > **Anneaux de mise à jour Windows 10**, choisissez l’anneau de déploiement à examiner.
+   1. Dans le volet **Mises à jour logicielles** > **Anneaux de mise à jour Windows 10**, choisissez l’anneau de déploiement à examiner.
    2. Dans la section **Surveiller**, choisissez les rapports suivants pour voir des informations plus détaillées sur l’anneau de mise à jour :
-      - **Déploiement d’anneaux de mise à jour pour les appareils**
-      - **Déploiement d’anneaux de mise à jour pour les utilisateurs**
-      - **État du déploiement par paramètre**
+      - **État de l’appareil**
+      - **État de l’utilisateur**
 
 ### <a name="review-update-compliance-using-oms"></a>Examiner la conformité des mises à jour en utilisant OMS
 Vous pouvez surveiller les déploiements de mises à jour Windows 10 à l’aide d’une solution gratuite d’Operations Management Suite (OMS) appelée Conformité de la mise à jour. Pour plus d’informations, consultez [Analyse des mises à jour Windows avec la conformité de la mise à jour](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). Lorsque vous utilisez cette solution, vous pouvez déployer un ID commercial dans un des appareils Windows 10 gérés par Intune pour lequel vous souhaitez générer des rapports sur la conformité des mises à jour.
@@ -136,18 +136,18 @@ Par exemple, vous pouvez utiliser les valeurs suivantes dans **Ajouter ou modifi
 
 - **Nom du paramètre** : ID commercial Windows Analytics
 - **Description du paramètre** : configuration d’un ID commercial pour les solutions Windows Analytics
-- **Type de données :**  chaîne
 - **OMA-URI** (sensible à la casse) : ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **Type de données :**  chaîne
 - **Valeur** : *utilisez le GUID indiqué sous l’onglet Télémétrie Windows dans votre espace de travail OMS*>
 
 ![Paramètre Windows pour les données de diagnostic et d’utilisation](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Guide pratique pour suspendre des mises à jour
 Vous pouvez suspendre la réception des mises à jour qualité ou de fonctionnalités d’un appareil pendant une période allant jusqu’à 35 jours à partir du moment où vous interrompez les mises à jour. Une fois que le nombre maximal de jours s’est écoulé, la fonctionnalité mise en pause expire automatiquement et l’appareil recherche les mises à jour applicables dans Windows Update. Suite à cette analyse, vous pouvez suspendre à nouveau les mises à jour.
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Mises à jour logicielles**.
-4. Dans le panneau **Mises à jour logicielles**, choisissez **Gérer** > **Anneaux de mise à jour Windows 10**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Mises à jour logicielles**.
+4. Dans le volet **Mises à jour logicielles**, choisissez **Gérer** > **Anneaux de mise à jour Windows 10**.
 5. Dans le volet affichant la liste des anneaux de mise à jour, choisissez l’anneau que vous souhaitez suspendre, puis sélectionnez **...** > **Suspendre les mises à jour qualité** > ou **Suspendre les mises à jour des fonctionnalités**, selon le type de mise à jour que vous souhaitez suspendre.
 
 > [!IMPORTANT]

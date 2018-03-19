@@ -1,29 +1,29 @@
 ---
-title: "Paramètres de VPN Intune pour les appareils iOS"
-titlesuffix: Azure portal
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils iOS."
+title: "Paramètres VPN Microsoft Intune pour les appareils exécutant iOS"
+titlesuffix: 
+description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils exécutant iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Paramètres VPN pour les appareils iOS dans Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Configurer les paramètres VPN dans Microsoft Intune pour les appareils exécutant iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Cet article présente les paramètres Intune permettant de configurer des connexions VPN sur les appareils exécutant iOS.
 
 Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivante ne sont pas nécessairement configurables.
 
@@ -38,7 +38,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivan
 - **Type de connexion** : sélectionnez le type de connexion VPN à partir de la liste de fournisseurs suivante :
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **Client F5 Edge**
     - **Pulse Secure**
     - **Cisco (IPSec)**
@@ -75,6 +75,6 @@ Si vous avez sélectionné **VPN personnalisé** comme type de connexion, config
 
 ## <a name="proxy-settings"></a>Paramètres du proxy
 
-- **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Saisissez **l’URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier de configuration.
+- **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Entrez l’**URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier de configuration.
 - **Adresse** : saisissez l’adresse du serveur proxy (comme une adresse IP).
 - **Numéro de port** : saisissez le numéro de port associé au serveur proxy.

@@ -1,29 +1,29 @@
 ---
-title: "Paramètres de restriction d’appareil Intune pour macOS"
-titlesuffix: Azure portal
-description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils macOS."
+title: "Paramètres de restriction d’appareil Microsoft Intune pour macOS"
+titlesuffix: 
+description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et les fonctionnalités des appareils exécutant macOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Mac OS dans Microsoft Intune
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Paramètres de restriction d’appareil macOS dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Utilisez ces paramètres pour gérer les appareils macOS dans un profil de restriction d’appareil.
+Cet article décrit les paramètres de restriction d’appareil de Microsoft Intune que vous pouvez configurer pour les appareils exécutant macOS.
 
 ## <a name="password"></a>Mot de passe
 -   **Mot de passe** - Demande à l’utilisateur final d’entrer un mot de passe pour accéder à l’appareil.
@@ -49,5 +49,5 @@ Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de vot
 
 ### <a name="unmarked-email-domains"></a>Domaines d’e-mail non marqués
 
-Dans le champ **URL de domaine d’e-mail**, ajoutez une ou plusieurs URL à la liste. Quand les utilisateurs finaux reçoivent un e-mail provenant d’un domaine autre que ceux que vous avez configurés, l’e-mail est marqué comme non approuvé dans l’application Mail iOS.
+Dans le champ **URL de domaine d’e-mail**, ajoutez une ou plusieurs URL à la liste. Quand les utilisateurs reçoivent un e-mail provenant d’un domaine autre que ceux que vous avez configurés, l’e-mail est marqué comme non approuvé dans l’application Mail iOS.
 

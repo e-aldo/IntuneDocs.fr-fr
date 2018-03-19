@@ -1,12 +1,12 @@
 ---
-title: "Guide pratique pour créer une stratégie de conformité pour macOS"
-titleSuffix: Azure portal
-description: "Découvrez comment créer une stratégie de conformité pour les appareils macOS."
+title: "Créer une stratégie de conformité des appareils macOS dans Microsoft Intune"
+titleSuffix: 
+description: "Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils macOS afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Créer une stratégie de conformité pour les appareils macOS avec Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Une stratégie de conformité de l’appareil Intune pour macOS spécifie les règles et les paramètres que les appareils macOS doivent satisfaire pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec l’accès conditionnel pour autoriser ou bloquer l’accès aux ressources de l’entreprise, et vous pouvez générer des rapports sur les appareils et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité de l’appareil pour chaque plateforme dans le portail Intune Azure.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -108,7 +110,7 @@ Quand vous créez une stratégie de conformité des appareils avec Intune, vous 
 
 2. Une fois que vous êtes correctement connecté, le **tableau de bord Azure** apparaît.
 
-3. Choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+3. Choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
 
 4. Choisissez **Intune** pour afficher le **tableau de bord Intune**.
 
@@ -118,7 +120,7 @@ Quand vous créez une stratégie de conformité des appareils avec Intune, vous 
 
 7. Tapez un nom et une description, puis choisissez la plateforme à laquelle vous souhaitez appliquer cette stratégie.
 
-8. Le panneau **Stratégie de conformité macOS** s’ouvre. Choisissez les catégories de paramètres de conformité des appareils (**Sécurité**, **Intégrité de l’appareil** et **Propriété de l’appareil**) pour spécifier vos paramètres.
+8. Le volet **Stratégie de conformité Mac** s’ouvre. Choisissez les catégories de paramètres de conformité des appareils (**Sécurité du système**, **Intégrité de l’appareil** et **Propriétés de l’appareil**) pour spécifier vos paramètres.
 
 10. Une fois que vous avez choisi vos paramètres, choisissez **OK** sous chaque catégorie de paramètres de conformité des appareils.
 
@@ -126,15 +128,15 @@ Quand vous créez une stratégie de conformité des appareils avec Intune, vous 
 
 ## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
 
-Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le panneau **Stratégies de conformité**.
+Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le volet **Conformité de l’appareil - Stratégies**.
 
-1. Choisissez la stratégie de conformité des appareils à affecter aux utilisateurs, puis **Affectations**. Cette opération ouvre le panneau dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous attribuez à la stratégie.
+1. Choisissez la stratégie de conformité des appareils à affecter aux utilisateurs, puis **Affectations**. Cette opération ouvre le volet dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous affectez à la stratégie.
 
-2. Choisissez **Sélectionner des groupes** pour ouvrir le panneau qui affiche les groupes de sécurité Azure AD.
+2. Choisissez **Groupes sélectionnés** pour ouvrir la page qui affiche les groupes de sécurité Azure AD.
 
-3. Choisissez **Sélectionner**, puis **Enregistrer** pour affecter la stratégie de conformité des appareils aux groupes de sécurité Azure AD.
+3. Choisissez **Enregistrer** pour affecter la stratégie de conformité des appareils aux groupes de sécurité Azure AD.
 
-4. Une fois que vous avez terminé d’affecter la stratégie de conformité des appareils à vos groupes, vous pouvez fermer le panneau **Affectations**.
+4. Une fois que vous avez terminé d’affecter la stratégie de conformité des appareils à vos groupes, vous pouvez fermer le volet **Affectations**.
 
     > [!TIP]
     > Par défaut, les appareils vérifient la conformité toutes les huit heures, mais les utilisateurs peuvent forcer ce processus dans l’application Portail d’entreprise Intune.

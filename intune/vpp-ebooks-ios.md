@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/17/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01c90818cf789bdb79b3b4efe5a1db8a2cf1cdfe
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6053eba7bcda74eaf3b2d7de8eecd81487ea3a8d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les livres électroniques iOS que vous avez achetés par le biais d’un programme d’achat en volume avec Microsoft Intune
 
@@ -52,28 +52,29 @@ Avant de commencer, vous devez obtenir un jeton VPP auprès d’Apple et l’imp
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Pour obtenir et charger un jeton Apple VPP
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
-1.  Dans la charge de travail **Mobile apps**, choisissez **Installation** > **jetons VPP iOS**.
-2.  Dans la liste du panneau des jetons VPP, cliquez sur **Ajouter**.
-3.  Dans le panneau **Nouveau jeton VPP**, spécifiez les informations suivantes :
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Applications mobiles**.
+1.  Dans la charge de travail **Applications mobiles**, choisissez **Installation** > **Jetons VPP iOS**.
+2.  Dans la liste du volet des jetons VPP, cliquez sur **Créer**.
+3.  Dans le volet **Nouveau jeton VPP**, spécifiez les informations suivantes :
     - **Fichier de jeton VPP** : vérifiez que vous êtes inscrit au Programme d’achat en volume (VPP) Apple pour les entreprises ou au Programme d’achat en volume (VPP) Apple pour l’éducation. Ensuite, téléchargez le jeton Apple VPP pour votre compte et sélectionnez-le ici.
     - **ID Apple** : saisissez l’ID Apple du compte associé au programme d’achats en volume.
     - **Type de compte VPP** : choisissez **Entreprise** ou **Éducation**.
-4. Une fois ces opérations effectuées, cliquez sur **Télécharger**.
+4. Quand vous avez terminé, cliquez sur **Créer**.
 
-Le jeton est affiché dans le panneau de liste de jetons.
+Le jeton est affiché dans le volet de liste de jetons.
 
 
 Vous pouvez synchroniser les données détenues par Apple avec Intune à tout moment en sélectionnant **Synchroniser maintenant**.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Pour affecter une application achetée en volume
 
+3. Dans le volet **Intune**, choisissez **Livres électroniques**.
 1. Dans la charge de travail **Livres électroniques**, choisissez **Gérer** > **Tous les livres électroniques**.
-2. Dans le panneau contenant la liste des livres, choisissez le livre à attribuer, puis choisissez « **...** » > **Attribuer des groupes**.
-3. Dans le panneau <*nom du livre*> - **Groupes affectés**, choisissez **Gérer** > **Groupes affectés**.
-4. Choisissez **Affecter des groupes** puis, dans le panneau **Sélectionner des groupes**, sélectionnez les groupes d’utilisateurs Azure AD auxquels vous souhaitez affecter le livre. Pour le moment, les groupes d’appareils ne sont pas pris en charge.
+2. Dans le volet contenant la liste des livres, choisissez le livre à attribuer, puis choisissez « **...** » > **Attribuer des groupes**.
+3. Dans le volet <*nom du livre*> - **Groupes affectés**, choisissez **Gérer** > **Groupes affectés**.
+4. Choisissez **Affecter des groupes** puis, dans le volet **Sélectionner des groupes**, sélectionnez les groupes d’utilisateurs Azure AD auxquels vous souhaitez affecter le livre. Pour le moment, les groupes d’appareils ne sont pas pris en charge.
 Choisissez une action d’attribution **Disponible** ou **Obligatoire**. 
 5. Une fois que vous avez terminé, choisissez **Enregistrer**.
 

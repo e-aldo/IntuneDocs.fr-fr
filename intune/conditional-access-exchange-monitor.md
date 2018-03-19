@@ -1,12 +1,12 @@
 ---
-title: "Surveiller la conformité des accès conditionnels pour Exchange local et Exchange Online"
-titlesuffix: Azure portal
-description: "Surveiller la conformité des accès conditionnels pour Exchange local et Exchange Online via le portail Intune Azure"
+title: "Surveiller l’accès conditionnel Exchange dans Microsoft Intune"
+titlesuffix: 
+description: "Surveillez la conformité de l’accès conditionnel pour Exchange local et Exchange Online par le biais du portail Intune Azure."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Surveiller la conformité des accès conditionnels pour Exchange local et Exchange Online dans Intune
 
@@ -36,25 +36,25 @@ ms.lasthandoff: 01/25/2018
 
 2.  Une fois correctement connecté, le **tableau de bord Azure** apparaît.
 
-3.  Choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+3.  Choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
 
 4.  Choisissez **Intune**, vous voyez le **tableau de bord Intune**.
 
 5.  Choisissez **Accès conditionnel**, puis **Vue d’ensemble**.
 
-6.  Choisissez une des trois zones (**Bloqué**, **Quarantaine** ou **Autorisé**) sur le graphique pour afficher vos rapports de conformité d’accès conditionnel.
+6.  Choisissez l’une des trois zones (**Autorisé**, **Bloqué** ou **Quarantaine**) sur le graphique pour afficher vos rapports de conformité d’accès conditionnel.
 
-    ![Tableau de bord d’accès conditionnel](./media/CA-reporting-intune-1.png)
+    ![Image du tableau de bord d’accès conditionnel](./media/CA-reporting-intune-1.png)
 
-Une fois que vous choisissez une des trois zones, vous pouvez voir plus de détails sur les appareils autorisés, bloqués ou mis en quarantaine.
+Une fois que vous avez choisi l’une des trois zones, vous pouvez voir plus de détails sur les appareils autorisés, bloqués ou mis en quarantaine.
 
-Vous pouvez également rechercher des appareils spécifiques pour afficher plus de détails. Par exemple, l’appareil sélectionné sur l’image ci-dessous est bloqué. Intune vous donne la possibilité de supprimer les données d’entreprise du panneau de rapports de conformité de l’accès conditionnel.
+Vous pouvez également rechercher des appareils spécifiques pour afficher plus de détails. Par exemple, l’appareil sélectionné sur l’image ci-dessous est bloqué. Intune vous donne la possibilité de supprimer les données d’entreprise du volet de rapports de conformité de l’accès conditionnel.
 
-![Rapports détaillés des appareils pour l’accès conditionnel](./media/CA-reporting-intune-3.png)
+![Image des rapports détaillés des appareils pour l’accès conditionnel](./media/CA-reporting-intune-3.png)
 
-Dans le panneau de détails de l’appareil, vous pouvez voir plus d’informations :
+Dans le volet de détails de l’appareil, vous pouvez voir plus d’informations :
 
--   **Vue d’ensemble :** vous pouvez voir les propriétés de l’appareil comme : la version du système d’exploitation, la propriété, le numéro de série, le fabricant, le numéro de téléphone et la dernière fois que l’appareil s’est connecté.
+-   **Vue d’ensemble :** vous pouvez voir les propriétés de l’appareil comme la version du système d’exploitation, la propriété, le numéro de série, le fabricant, le numéro de téléphone et la dernière fois que l’appareil s’est connecté.
 
 -   **Propriétés :** vous pouvez définir la propriété de l’appareil (personnel ou entreprise).
 

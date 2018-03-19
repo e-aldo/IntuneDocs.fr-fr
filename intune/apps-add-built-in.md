@@ -1,12 +1,12 @@
 ---
-title: "Ajouter des applications intégrées sur des appareils mobiles à l’aide d’Intune"
-titlesuffix: Azure portal
+title: "Ajouter des applications intégrées sur des appareils mobiles à l’aide de Microsoft Intune"
+titlesuffix: 
 description: "Découvrez comment utiliser Intune pour faciliter l’installation d’applications intégrées sur des appareils mobiles."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d622f2cb8c6b3e8c9aace4e805108ccfa71eb4d2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 7d90f86babc2f73acd5ccd1b454c636c6d4f79b2
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-built-in-apps-to-microsoft-intune"></a>Comment ajouter des applications intégrées à Microsoft Intune
 
@@ -67,4 +67,4 @@ Vous pouvez modifier les informations de l’application intégrée. Ces informa
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez maintenant affecter les applications aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
+- Vous pouvez maintenant affecter les applications aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).

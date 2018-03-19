@@ -1,35 +1,34 @@
 ---
-title: "Paramètres de messagerie Intune pour les appareils Windows 10"
-titleSuffix: Azure portal
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions à la messagerie sur les appareils Windows 10."
+title: "Paramètres de messagerie dans Microsoft Intune pour les appareils exécutant Windows 10"
+titleSuffix: 
+description: "Découvrez les paramètres Microsoft Intune que vous pouvez utiliser pour configurer les paramètres de messagerie sur des appareils exécutant Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3ea7974600daccb8308cd558ccb365c2f5e8bff
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b02579895123995f9b4205d64e9bf67ce04de746
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres de profil de messagerie pour les appareils Windows 10 dans Microsoft Intune
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>Paramètres de profil de messagerie dans Microsoft Intune pour les appareils exécutant Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Cet article répertorie les paramètres de profil de messagerie que vous pouvez configurer pour vos appareils exécutant Windows 10.
 
 
 - **Serveur de messagerie** : le nom d’hôte de votre serveur Exchange.
-- **Nom du compte** : spécifiez le nom complet du compte de messagerie, tel qu’il apparaîtra aux utilisateurs sur leurs appareils.
-- **Attribut de nom d’utilisateur d’AAD** : il s’agit de l’attribut dans Active Directory (AD) ou Azure AD, qui doit être utilisé pour générer le nom d’utilisateur de ce profil de messagerie. Sélectionnez **Adresse SMTP principale**, comme **user1@contoso.com** ou **Nom d’utilisateur principal**, comme **user1** ou **user1@contoso.com**.
+- **Nom du compte** : spécifiez le nom complet du compte de messagerie, tel qu’il apparaît aux utilisateurs sur leurs appareils.
+- **Attribut de nom d’utilisateur d’AAD** : il s’agit de l’attribut dans Active Directory (AD) ou Azure AD, qui est utilisé pour générer le nom d’utilisateur de ce profil de messagerie. Sélectionnez **Adresse SMTP principale**, comme **user1@contoso.com** ou **Nom d’utilisateur principal**, comme **user1** ou **user1@contoso.com**.
 - **Attribut d’adresse de messagerie d’AAD** : la façon dont l’adresse de messagerie de l’utilisateur est générée sur chaque appareil. Sélectionnez **Adresse SMTP principale** pour utiliser l’adresse SMTP principale pour vous connecter à Exchange ou **Nom d’utilisateur principal** pour utiliser le nom principal complet comme adresse de messagerie.
 
 

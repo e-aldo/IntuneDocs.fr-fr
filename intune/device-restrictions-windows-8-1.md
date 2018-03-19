@@ -1,29 +1,30 @@
 ---
-title: "Paramètres de restriction d’appareil Intune pour Windows 8.1"
-titleSuffix: Azure portal
-description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils Windows 8.1."
+title: "Paramètres de restriction d’appareil Microsoft Intune pour les appareils exécutant Windows 8.1"
+titleSuffix: 
+description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et les fonctionnalités des appareils exécutant Windows 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 8.1 et versions ultérieures dans Microsoft Intune
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Paramètres de restriction d’appareil Windows 8.1 et ultérieur dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Cet article décrit les paramètres de restriction d’appareil de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 8.1 et ultérieur.
+
 
 ## <a name="general"></a>Général
 
@@ -62,7 +63,7 @@ Quand vous appliquez le chiffrement à un appareil, vous pouvez uniquement obten
 -   **Sécurité élevée pour les sites sensibles** - Configure le niveau de sécurité pour la zone Sites sensibles.
 -   **Accès au menu du mode Entreprise** - Permet aux utilisateurs d'accéder aux options du menu Mode entreprise à partir d'Internet Explorer.
 Si vous sélectionnez ce paramètre, vous pouvez également spécifier un **Emplacement du rapport de journalisation**, qui contient une URL vers un rapport affichant les sites web pour lesquels les utilisateurs ont activé l’accès en Mode entreprise.
--   **Emplacement de la liste des sites en Mode entreprise** - Spécifie l'emplacement de la liste des sites web qui utilisent le mode entreprise quand il est actif.
+-   **Emplacement de la liste des sites en Mode entreprise** - Spécifie l’emplacement de la liste des sites web qui utilisent le mode entreprise quand il est actif.
 
 ## <a name="cellular"></a>Données mobiles
 -   **Itinérance des données** - Autorise l’itinérance des données quand l’appareil se trouve sur un réseau de téléphonie mobile.

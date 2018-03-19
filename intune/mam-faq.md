@@ -1,26 +1,20 @@
----
-title: Forum Aux Questions sur la Gestion des applications mobiles (MAM) et la protection des applications
-description: "Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (GAM) Intune et la protection des applications Intune."
-keywords: 
-author: Erikre
-ms.author: erikre
-manager: angrobe
-ms.date: 02/06/2018
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-ms.reviewer: erikre
-ms.suite: ems
+--
+# <a name="required-metadata"></a>métadonnées requises
+
+title: Questions fréquentes (FAQ) sur la Gestion des applications mobiles (MAM) et la protection des applications description: Cet article fournit des réponses à certaines questions fréquemment posées sur la Gestion des applications mobiles (MAM) Intune et la protection des applications Intune.
+keywords: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+
+# <a name="optional-metadata"></a>métadonnées facultatives
+
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang :
+ms.reviewer: erikre ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm :
 ms.custom: intune-azure
-ms.openlocfilehash: 23ab21e21ff2ffd471523f8132acffd7545358f0
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+
 ---
-# <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Forum Aux Questions sur la Gestion des applications mobiles (GAM) et la protection des applications
+
+# <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Questions fréquentes (FAQ) sur la Gestion des applications mobiles (MAM) et la protection des applications
 
 Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (MAM) Intune et la protection des applications Intune.
 
@@ -34,7 +28,7 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 **Quelles configurations d’appareil la MAM prend-elle en charge ?** La MAM Intune prend en charge deux configurations :
 - **MDM + MAM Intune** : les administrateurs informatiques ne peuvent gérer les applications à l’aide des stratégies de gestion et de protection des applications que sur les appareils inscrits à la gestion des appareils mobiles (MDM) Intune. Pour gérer des applications en utilisant à la fois la gestion MDM et la gestion MAM, les clients doivent utiliser la console Intune sur le portail Azure, à l’adresse https://portal.azure.com.
 
-- **MAM sans inscription d’appareils** : la MAM sans inscription d’appareils (ou MAM-WE en anglais), permet aux administrateurs informatiques de gérer des applications à l’aide de la MAM et de stratégies de protection des applications sur les appareils qui ne sont ne pas inscrits à la MDM Intune. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits avec des fournisseurs EMM tiers. Pour gérer des applications à l’aide de la MAMsans inscription d’appareils, les clients doivent utiliser la console Intune dans le portail Azure à l’adresse http://portal.azure.com. Il est également possible de gérer les applications avec Intune sur les appareils inscrits auprès de fournisseurs tiers de gestion de la mobilité d’entreprise (EMM) ou non inscrits à un quelconque service de gestion MDM.
+- **MAM sans inscription d’appareils** : la MAM sans inscription d’appareils (ou MAM-WE en anglais), permet aux administrateurs informatiques de gérer des applications à l’aide de la MAM et de stratégies de protection des applications sur les appareils qui ne sont ne pas inscrits à la MDM Intune. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits avec des fournisseurs EMM tiers. Pour gérer des applications à l’aide de la MAM sans inscription d’appareils, les clients doivent utiliser la console Intune dans le portail Azure à l’adresse http://portal.azure.com. Il est également possible de gérer les applications avec Intune sur les appareils inscrits auprès de fournisseurs tiers de gestion de la mobilité d’entreprise (EMM) ou non inscrits à un quelconque service de gestion MDM.
 
 
 ## <a name="app-protection-policies"></a>Stratégies de protection des applications
@@ -135,14 +129,21 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 **Existe-t-il un moyen sécurisé d’ouvrir des liens web depuis des applications gérées ?** Oui ! L’administrateur informatique peut déployer et définir la stratégie de protection des applications pour [l’application Intune Managed Browser](app-configuration-managed-browser.md), un navigateur web développé par Microsoft Intune qui peut être géré facilement avec Intune. L’administrateur informatique peut exiger que tous les liens web dans les applications gérées par Intune soient ouverts à l’aide de l’application Managed Browser.
 
-
 ## <a name="app-experience-on-android"></a>Expérience d'application sur Android
 
 **Pourquoi l’application Portail d’entreprise est-elle nécessaire pour que la protection des applications Intune fonctionne sur des appareils Android ?** La plupart des fonctionnalités de protection des applications sont intégrées à l’application Portail d’entreprise. L’inscription d’appareil n’est _pas obligatoire_, même si l’application Portail d’entreprise est toujours nécessaire. Dans le cas de la gestion MAM-WE, l’utilisateur final doit simplement avoir installé l’application Portail d’entreprise sur l’appareil.
 
+**Comment plusieurs paramètres d’accès de protection des applications Intune qui sont configurés pour le même ensemble d’applications et d’utilisateurs fonctionnent-ils sur Android ?** Les stratégies de protection des applications Intune pour l’accès sont appliquées dans un ordre spécifique sur les appareils des utilisateurs finaux quand ceux-ci tentent d’accéder à une application cible à partir de leur compte d’entreprise. En règle générale, un blocage est prioritaire, puis un message d’avertissement. Par exemple, si cela s’applique à l’utilisateur/application en question, un paramètre de version de correctif Android minimale qui signale à un utilisateur qu’il doit effectuer une mise à niveau de correctif sera appliqué après le paramètre de version de correctif Android minimale qui bloque l’accès à l’utilisateur. Ainsi, dans le scénario où l’administrateur informatique configure la version de correctif Android minimale sur 2018-03-01 et la version de correctif Android minimale (Avertissement uniquement) sur 2018-02-01, alors que l’appareil qui tente d’accéder à l’application utilise une version de correctif 2018-01-01, l’utilisateur final est bloqué sur la base du paramètre le plus restrictif pour la version de correctif Android minimale qui provoque un blocage de l’accès. 
+
+Lors du traitement de différents types de paramètres, une exigence de version d’application est prioritaire, suivie de l’exigence de version de système d’exploitation Android, puis de l’exigence de version de correctif Android. Ensuite, tous les avertissements pour tous les types de paramètres dans le même ordre sont vérifiés.
+
 ## <a name="app-experience-on-ios"></a>Expérience d'application sur iOS
 
-**Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
+ **Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
+
+**Comment plusieurs paramètres d’accès de protection des applications Intune qui sont configurés pour le même ensemble d’applications et d’utilisateurs fonctionnent-ils sur iOS ?** Les stratégies de protection des applications Intune pour l’accès sont appliquées dans un ordre spécifique sur les appareils des utilisateurs finaux quand ceux-ci tentent d’accéder à une application cible à partir de leur compte d’entreprise. En règle générale, une réinitialisation est prioritaire, suivie d’un blocage, puis d’un message d’avertissement. Par exemple, si cela s’applique à l’utilisateur/application en question, un paramètre de système d’exploitation iOS minimal qui signale à un utilisateur qu’il doit mettre à niveau sa version d’iOS est appliqué après le paramètre de système d’exploitation iOS minimal qui bloque l’accès à l’utilisateur. Ainsi, dans le scénario où l’administrateur informatique configure le système d’exploitation iOS minimal sur 11.0.0.0 et le système d’exploitation iOS minimal (Avertissement uniquement) sur 11.1.0.0, alors que l’appareil qui tente d’accéder à l’application utilise iOS 10, l’utilisateur final est bloqué sur la base du paramètre le plus restrictif pour la version de système d’exploitation iOS minimal qui provoque un blocage de l’accès.
+
+Lors du traitement de différents types de paramètres, une exigence de version de SDK d’application Intune est prioritaire, suivie d’une exigence de version d’application, puis d’une exigence de version de système d’exploitation iOS. Ensuite, tous les avertissements pour tous les types de paramètres dans le même ordre sont vérifiés. Nous vous recommandons de configurer l’exigence de version de SDK d’application Intune uniquement sur recommandation de l’équipe de produit Intune pour les principaux scénarios de blocage.
 
 ## <a name="see-also"></a>Voir aussi
 - [Implémenter un plan Intune](planning-guide-onboarding.md)

@@ -1,31 +1,29 @@
 ---
-title: "Stratégie Intune Autoriser ou bloquer des applications pour Samsung Knox"
-titlesuffix: Azure portal
+title: "Stratégie Microsoft Intune pour autoriser ou bloquer des applications pour Samsung Knox"
+titlesuffix: 
 description: "Créez un profil personnalisé pour autoriser et bloquer des applications pour les appareils Samsung Knox Standard."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
-ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 606f3dbb4d68592f6920ee900d36be1befe56568
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 95f35cfd869975a43fd54a1e6a9ff6ae35ffa6af
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung Knox Standard dans Microsoft Intune
+# <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Utiliser des stratégies personnalisées dans Microsoft Intune pour autoriser et bloquer des applications pour les appareils Samsung Knox Standard 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Appliquez les procédures de cette rubrique pour créer une stratégie personnalisée Microsoft Intune qui crée l’un des éléments suivants :
+Appliquez la procédure de cet article pour créer une stratégie personnalisée Microsoft Intune qui crée l’un des éléments suivants :
 
 - Une liste d’applications qui sont bloquées sur l’appareil. Les applications figurant dans cette liste ne peuvent pas s’exécuter, même si elles étaient déjà installées quand la stratégie a été appliquée.
 - Une liste d’applications que les utilisateurs de l’appareil sont autorisés à installer à partir du magasin Google Play. Seules les applications figurant dans la liste peuvent être installées. Aucune autre application ne peut être installée à partir du Store.
@@ -34,33 +32,33 @@ Ces paramètres peuvent uniquement être utilisés par les appareils qui exécut
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Créer une liste d’applications autorisées ou bloquées
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Plus de Services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-2. Dans le panneau de la liste des profils, sélectionnez **Créer un profil**.
-3. Dans le panneau **Créer un profil**, entrez un **nom** et éventuellement une **description** pour ce profil d'appareil.
-2. Choisissez le **type de plate-forme** **Android**et le type de profil **Personnalisé**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans le volet **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
+2. Dans le volet de la liste des profils, choisissez **Créer un profil**.
+3. Dans le volet **Créer un profil**, entrez un **nom** et éventuellement une **description** pour ce profil d’appareil.
+2. Choisissez la **Plateforme** **Android** et le **Type de profil** **Personnalisé**.
 3. Cliquez sur **Paramètres**.
-3. Dans le panneau **Paramètres OMA-URI personnalisés**, choisissez **Ajouter**.
-4. Dans la boîte de dialogue **Ajouter ou modifier un paramètre OMA-URI**, spécifiez les informations suivantes :
+3. Dans le volet **Paramètres OMA-URI personnalisés**, choisissez **Ajouter**.
+4. Dans la boîte de dialogue **Ajouter ou modifier un paramètre OMA-URI**, spécifiez les paramètres suivants :
 
-### <a name="for-a-list-of-apps-that-are-blocked-from-running-on-the-device"></a>Pour afficher une liste d’applications qui sont bloquées sur l’appareil :
+   Pour afficher une liste d’applications qui sont bloquées sur l’appareil :
 
-- **Nom** - Entrez **PreventStartPackages**.
-- **Description** - Entrez une description facultative, comme « Liste des applications dont l’exécution est bloquée ».
--   **Type de données** - Dans la liste déroulante, choisissez **Chaîne**.
--   **OMA-URI** - Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
--   **Valeur** - Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
+   - **Nom** - Entrez **PreventStartPackages**.
+   - **Description** - Entrez une description facultative, comme « Liste des applications dont l’exécution est bloquée ».
+   -    **Type de données** - Dans la liste déroulante, choisissez **Chaîne**.
+   -    **OMA-URI** - Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   -    **Valeur** - Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
 
-### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>Pour obtenir la liste des applications que les utilisateurs sont autorisés à installer à partir du Google Play Store tout en excluant toutes les autres applications :
-- **Nom** - Entrez **AllowInstallPackages**.
-- **Description** - Entrez une description facultative, comme « Liste des applications que les utilisateurs peuvent installer à partir de Google Play ».
-- **Type de données** - Dans la liste déroulante, choisissez **Chaîne**.
-- **OMA-URI** - Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-- **Valeur** - Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
+   Pour obtenir la liste des applications que les utilisateurs sont autorisés à installer à partir du Google Play Store tout en excluant toutes les autres applications :
+   - **Nom** - Entrez **AllowInstallPackages**.
+   - **Description** - Entrez une description facultative, comme « Liste des applications que les utilisateurs peuvent installer à partir de Google Play ».
+   - **Type de données** - Dans la liste déroulante, choisissez **Chaîne**.
+   - **OMA-URI** - Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **Valeur** - Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
 
-4. Cliquez sur **OK**, puis, dans le panneau **Créer un profil**, choisissez **Créer**.
+4. Cliquez sur **OK** puis, dans le volet **Créer un profil**, choisissez **Créer**.
 
 >[!TIP]
 > Vous pouvez connaître l’ID de package d’une application en accédant à l’application dans le Google Play Store. L’ID de package est contenu dans l’URL de la page d’application. Par exemple, l’ID de package de l’application Microsoft Word est **com.microsoft.office.word**.

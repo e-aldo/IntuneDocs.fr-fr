@@ -1,29 +1,29 @@
 ---
-title: "Restrictions d'appareil Intune pour Windows 10 Collaboration"
-titlesuffix: Azure portal
-description: "Découvrez les restrictions d’appareils disponibles pour les appareils Windows 10 Collaboration."
+title: "Restrictions d’appareils Microsoft Intune pour Windows 10 Collaboration"
+titlesuffix: 
+description: "Découvrez les restrictions d’appareils disponibles pour les appareils exécutant Windows 10 Collaboration."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3648f8b273f666d1898226f3da8580e55a6bc6f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Paramètres de restriction des appareils Windows 10 Collaboration dans Microsoft Intune
+# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Paramètres de restriction d’appareil Windows 10 Collaboration dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Cet article décrit les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 10 Collaboration.
 
 
 ## <a name="apps-and-experience"></a>Applications et expérience
@@ -47,7 +47,7 @@ Pour vous connecter à Azure Operational insights, vous devez spécifier un **ID
 
 - **Code confidentiel pour la projection sans fil** - Indique si vous devez entrer un code confidentiel avant de pouvoir utiliser les fonctionnalités de projection sans fil de l’appareil.
 - **Projection sans fil Miracast** - Si vous voulez que l’appareil Windows 10 Collaboration utilise des appareils activés pour Miracast pour la projection, sélectionnez cette option.
-- **Canal de projection sans fil Miracast** -Choisissez le canal Miracast qui va servir à établir la connexion.
+- **Canal de projection sans fil Miracast** - Choisissez le canal Miracast qui sert à établir la connexion.
 
 
 ## <a name="next-steps"></a>Étapes suivantes
