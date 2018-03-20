@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 283685629ac1e268a66d82250273a17f9baa5d17
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Android dans Intune
 
@@ -47,7 +47,7 @@ Une stratégie de conformité de l’appareil Intune pour Android spécifie les 
 Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le volet **Conformité de l’appareil – Stratégies**.
 
 1. Choisissez la stratégie, puis **Affectations**. Cette opération ouvre le volet dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous affectez à la stratégie.
-2. Choisissez **Groupes sélectionnés** pour ouvrir la page qui affiche les groupes de sécurité Azure AD. Vous y trouvez les groupes de sécurité figurant dans Azure Active Directory.  Vous pouvez sélectionner les groupes d’utilisateurs auxquels vous souhaitez appliquer cette stratégie et choisir **Enregistrer** afin de déployer la stratégie pour les utilisateurs.
+2. Choisissez **Groupes sélectionnés** pour ouvrir le volet qui affiche les groupes de sécurité Azure AD. Vous y trouvez les groupes de sécurité figurant dans Azure Active Directory.  Vous pouvez sélectionner les groupes d’utilisateurs auxquels vous souhaitez appliquer cette stratégie et choisir **Enregistrer** afin de déployer la stratégie pour les utilisateurs.
 
 Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie de conformité sera évaluée.
 
@@ -70,8 +70,6 @@ Pour les applications en chargement indépendant, le paramètre **Sources inconn
   - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
   - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
   - **Élevé** : cette option est la moins sécurisée. Essentiellement, elle autorise tous les niveaux de menace. Elle peut s’avérer utile si vous ne recourez à cette solution qu’à des fins de création de rapport.
-
-Pour plus d’informations, consultez [Activer une règle de protection de l’appareil contre les menaces dans la stratégie de conformité](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Paramètres de sécurité système
 
