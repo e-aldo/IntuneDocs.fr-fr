@@ -1,12 +1,12 @@
 ---
-title: "Créer une stratégie de conformité des appareils Mobile Threat Defense avec Intune"
-titlesuffix: Azure portal
-description: "Créer une stratégie de conformité des appareils Mobile Threat Defense dans Intune"
+title: "Créer une stratégie de conformité des appareils MTD avec Microsoft Intune"
+titlesuffix: 
+description: "Créez une stratégie de conformité des appareils Intune qui utilise les niveaux de menace MTD partenaires afin de déterminer si un appareil mobile peut accéder aux ressources de l’entreprise."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Créer une stratégie de conformité des appareils Mobile Threat Defense (MTD) avec Intune
 
@@ -40,7 +40,7 @@ Conditions préalables pour la stratégie de conformité de l’appareil avec MT
 
 1.  Accédez au [portail Azure](https://portal.azure.com/) et connectez-vous avec vos informations d’identification Intune.
 
-2.  Dans le **tableau de bord Azure**, choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+2.  Dans le **tableau de bord Azure**, choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de la zone de texte.
 
 3.  Choisissez **Intune**. Le **Tableau de bord Intune** s’ouvre.
 
@@ -48,9 +48,9 @@ Conditions préalables pour la stratégie de conformité de l’appareil avec MT
 
 5.  Choisissez **Créer une stratégie**, entrez le **Nom** de la stratégie de conformité d’appareil, sa **Description**, sélectionnez la **Plateforme**, puis choisissez **Configurer** dans la section **Paramètres**.
 
-6.  Dans le panneau **Stratégie de conformité**, choisissez **Intégrité de l’appareil**.
+6.  Dans le volet **Stratégie de conformité**, choisissez **Intégrité de l’appareil**.
 
-7.  Dans le panneau **Intégrité de l’appareil**, choisissez le niveau de menace dans la liste déroulante sous **Exiger que l’appareil se situe au niveau Mobile Threat Level ou en dessous**.
+7.  Dans le volet **Intégrité de l’appareil**, choisissez le niveau de menace mobile dans la liste déroulante sous **Exiger que l’appareil se situe au Niveau de menace pour l'appareil ou en dessous**.
 
     a.  **Sécurisé** : ce niveau est le plus sûr. L'appareil ne peut pas avoir de menace présente et accéder aux ressources de l’entreprise. Si des menaces sont détectées, l’appareil est évalué comme non conforme.
 
@@ -67,11 +67,11 @@ Conditions préalables pour la stratégie de conformité de l’appareil avec MT
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>Pour affecter une stratégie de conformité de l’appareil MTD
 
-Pour affecter une stratégie de conformité de l’appareil à des utilisateurs, choisissez une stratégie que vous avez déjà configurée. Vous trouverez les stratégies existantes dans le panneau **Stratégie de conformité de l’appareil**.
+Pour affecter une stratégie de conformité de l’appareil à des utilisateurs, choisissez une stratégie que vous avez déjà configurée. Vous trouverez les stratégies existantes dans le volet **Conformité de l’appareil – stratégies**.
 
-1. Choisissez la stratégie que vous souhaitez attribuer aux utilisateurs, puis **Affectations**. Cette action ouvre le panneau où vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** et les affecter à la stratégie.
+1. Choisissez la stratégie que vous souhaitez attribuer aux utilisateurs, puis **Affectations**. Cette action ouvre le volet où vous pouvez sélectionner des **Groupes de sécurité Azure Active Directory** et les assigner à la stratégie.
 
-2. Choisissez **Sélectionner des groupes** pour ouvrir le panneau qui affiche les groupes de sécurité Azure AD.  Si vous choisissez **Sélectionner**, la stratégie est déployée pour les utilisateurs.
+2. Choisissez **Sélectionner des groupes à inclure** pour ouvrir le volet qui affiche les groupes de sécurité Azure AD.  Si vous choisissez **Sélectionner**, la stratégie est déployée pour les utilisateurs.
 
     > [!NOTE] 
     > Vous avez appliqué la stratégie à des utilisateurs. La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie est évaluée.

@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurer l’inscription des appareils iOS avec Apple School Manager
 
@@ -89,7 +89,7 @@ Accédez au fichier du certificat (.p7m), choisissez **Ouvrir**, puis **Téléch
 ## <a name="create-an-apple-enrollment-profile"></a>Créer un profil d’inscription Apple
 Un profil d'inscription d'appareil définit les paramètres appliqués à un groupe d'appareils lors de l’inscription.
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription de l’appareil**, puis **Inscription Apple**.
+1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareil** puis choisissez **Inscription Apple**.
 2. Sous **Programme d’inscription**, choisissez **Profils de programme d’inscription**.
 3. Dans le panneau **Profils de programme d’inscription**, choisissez **Créer**.
 4. Dans le panneau **Créer un profil d’inscription**, entrez un **nom** et une **description** pour le profil qui s’affiche dans Intune.
@@ -149,7 +149,7 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 ## <a name="sync-managed-devices"></a>Synchroniser des appareils gérés
 Maintenant qu’Intune a reçu l’autorisation de gérer vos appareils Apple School Manager, vous pouvez synchroniser Intune avec le service Apple pour voir vos appareils gérés dans Intune.
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
+1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
   ![Sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser](./media/enrollment-program-device-sync.png)
 2. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
@@ -166,7 +166,7 @@ Maintenant qu’Intune a reçu l’autorisation de gérer vos appareils Apple Sc
 ## <a name="assign-a-profile-to-devices"></a>Attribuer un profil aux appareils
 Un profil d’inscription doit être affecté aux appareils Apple School Manager gérés par Intune avant leur inscription.
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple**, puis **Profils du programme d’inscription**.
+1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple**, puis **Profils du programme d’inscription**.
 2. Dans la liste **Profils du programme d’inscription**, choisissez le profil que vous voulez affecter aux appareils, puis **Affectations d’appareils**.
 
  ![Affectations des appareils avec Affecter sélectionné](./media/enrollment-program-device-assign.png)

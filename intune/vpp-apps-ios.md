@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
-ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
+ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les applications iOS achetées par le biais d’un programme d’achat en volume avec Microsoft Intune
 
@@ -80,11 +80,11 @@ Vérifiez que quand vous configurez un appareil pour un nouvel utilisateur Intun
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Pour obtenir et charger un jeton Apple VPP
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-1.  Dans le panneau **Intune**, choisissez **Applications mobiles** > **Jetons VPP iOS** sous **Configurer**.
-2.  Dans le panneau qui présente la liste des jetons VPP, sélectionnez **Créer**.
-4. Dans le panneau **Créer un jeton VPP**, spécifiez les informations suivantes :
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+1.  Dans le volet **Intune**, choisissez **Applications mobiles** > **Jetons VPP iOS** sous **Installation**.
+2.  Dans le volet qui présente la liste des jetons VPP, sélectionnez **Créer**.
+4. Dans le volet **Créer un jeton VPP**, spécifiez les informations suivantes :
     - **Fichier de jeton VPP** : si vous ne l’avez pas encore fait, inscrivez-vous au Programme d’achat en volume Apple pour les entreprises ou au programme pour les organismes éducatifs. Après inscription, téléchargez le jeton VPP Apple de votre compte et sélectionnez-le ici.
     - **ID Apple** : saisissez l’ID Apple du compte associé au programme d’achats en volume.
     - **Pays/région** : sélectionnez le Store du pays VPP.  Intune synchronise les applications VPP pour tous les paramètres régionaux à partir du magasin du pays/région VPP spécifié.
@@ -94,17 +94,17 @@ Vérifiez que quand vous configurez un appareil pour un nouvel utilisateur Intun
     - **Type de compte VPP** : choisissez **Entreprise** ou **Éducation**.
     - **Application automatique des mises à jour** : choisissez **Activé** ou **Désactivé** pour activer les mises à jour automatiques. Quand elle est activée, Intune met à jour toutes les applications achetées pour le jeton spécifié via le service Intune quand l’appareil s’enregistre.
 détecte les mises à jour des applications VPP dans l’App Store et les envoie (push) automatiquement à l’appareil quand celui-ci s’enregistre.
-4. Une fois ces opérations effectuées, sélectionnez **Charger**.
+4. Quand vous avez terminé, sélectionnez **Créer**.
 
-Le jeton est affiché dans le panneau de liste de jetons.
+Le jeton est affiché dans le volet de la liste de jetons.
 
 Vous pouvez synchroniser les données détenues par Apple avec Intune à tout moment en sélectionnant **Synchroniser maintenant**.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Pour affecter une application achetée en volume
 
-1.  Dans le panneau **Intune**, choisissez **Applications mobiles** > **Applications** sous **Gérer**.
-2.  Dans le panneau avec la liste d’applications, choisissez l’application que vous voulez affecter, puis choisissez **Affectations**.
-3.  Dans le panneau ***Nom de l’application*** - **Affectations**, choisissez **Sélectionner des groupes** puis, dans le panneau **Sélectionner des groupes**, choisissez les groupes d’utilisateurs ou d’appareils Azure AD auxquels vous voulez affecter l’application.
+1.  Dans le volet **Intune**, choisissez **Applications mobiles** > **Applications** sous **Gérer**.
+2.  Dans le volet qui présente la liste des applications, choisissez l’application que vous voulez assigner, puis choisissez **Attributions**.
+3.  Dans le volet ***Nom de l’application*** - **Attributions**, choisissez **Ajouter des groupes** puis, dans le volet **Ajouter des groupes**, choisissez un **Type d’attribution** et choisissez les groupes d’utilisateurs ou d’appareils Azure AD auxquels vous voulez assigner l’application.
 5.  Pour chaque groupe que vous avez sélectionné, choisissez les paramètres suivants :
     - **Type** : indiquez si l’application sera **Disponible** (les utilisateurs finaux peuvent installer l’application à partir du portail d’entreprise) ou **Obligatoire** (l’application sera automatiquement installée sur les appareils des utilisateurs finaux).
     - **Type de licence** : choisissez entre **Gestion des licences des utilisateurs** et **Gestion des licences des appareils**.

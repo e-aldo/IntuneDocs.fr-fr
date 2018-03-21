@@ -1,7 +1,7 @@
 ---
-title: Protection contre les menaces mobiles avec Intune
-titleSuffix: Azure portal
-description: "Protéger l’accès aux ressources d’entreprise en fonction du risque évalué pour l’appareil"
+title: Mobile Threat Defense avec Microsoft Intune
+titleSuffix: 
+description: "Utilisez Intune Mobile Threat Defense (MTD) avec votre partenaire Mobile Threat Defense pour protéger l’accès aux ressources d’entreprise en fonction des risques des appareils."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,13 +15,13 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 2eaba4f04d6a1daedf40b7b37d2b44ed5aff4533
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="mobile-threat-defense-integration-with-intune"></a>Intégration de la protection contre les menaces mobiles avec Intune
+# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Qu’est-ce que l’intégration Mobile Threat Defense avec Intune ?
 
 
 Les connecteurs de protection contre les menaces mobiles Intune vous permettent de tirer parti de votre fournisseur de protection contre les menaces mobiles choisi comme source d’informations pour vos stratégies de conformité et vos règles d’accès conditionnel. Ceci permet aux administrateurs informatiques d’ajouter une couche de protection à leurs ressources d’entreprise, comme Exchange et Sharepoint, en particulier contre les appareils mobiles compromis.
@@ -32,7 +32,7 @@ Les entreprises doivent protéger leurs données sensibles contre diverses menac
 
 Historiquement, les entreprises ont été proactives en matière de protection des PC contre les attaques, tandis que les appareils mobiles restent non contrôlés et non protégés. Les plateformes mobiles offrent maintenant une protection intégrée grâce notamment à l’isolation d’application et à la vérification des applications des App Store, mais elles restent vulnérables aux attaques sophistiquées. Aujourd'hui, de plus en plus d’employés utilisent des appareils pour travailler et ils ont besoin d’accéder à des informations sensibles. Les appareils doivent être protégés contre les attaques qui sont de plus en plus sophistiquées.
 
-## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Comment les connecteurs de protection contre les menaces mobiles Intune fonctionnent-ils ?
+## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Comment les connecteurs Mobile Threat Defense Intune fonctionnent-ils ?
 
 Le connecteur protège les ressources de l’entreprise en créant un canal de communication entre Intune et le fournisseur de protection contre les menaces mobiles que vous avez choisi. Les partenaires Mobile Threat Defense d’Intune offrent des applications intuitives et faciles à déployer pour les appareils mobiles, qui analysent de manière active les informations relatives aux menaces pour les partager avec Intune, à des fins de création de rapports ou d’application de stratégies. 
 
@@ -58,11 +58,11 @@ Les inventaires à partir des appareils personnels et d’entreprise iOS 11 sont
 
 Quand un appareil est considéré comme infecté par la solution de protection contre les menaces mobiles :
 
-![Appareil Mobile Threat Defense infecté](./media/MTD-image-1.png)
+![Image illustrant un appareil infecté par Mobile Threat Defense](./media/MTD-image-1.png)
 
 L’accès est autorisé une fois que le problème lié à l’appareil a été résolu :
 
-![Mobile Threat Defense - accès accordé](./media/MTD-image-2.png)
+![Image illustrant un accès accordé à Mobile Threat Defense](./media/MTD-image-2.png)
 
 > [!NOTE] 
 > L’utilisation de plusieurs fournisseurs Mobile Threat Defense avec Intune n’est pas prise en charge. L’activation de plusieurs outils Mobile Threat Defense force l’installation de toutes les applications Mobile Threat Defense et effectue une recherche des menaces sur les appareils.

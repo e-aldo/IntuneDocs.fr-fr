@@ -4,17 +4,17 @@ description: "Découvrez comment consulter les journaux d’audit qui consignent
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Journaux d’audit pour les activités Intune
 Les journaux d’audit vous indiquent les activités qui génèrent un changement dans Microsoft Intune. Les actions Créer, Mettre à jour (modifier), Supprimer et Affecter, ou les tâches à distance, génèrent des événements d’audit que vous pouvez consulter. Vous pouvez consulter les journaux d’audit pour la plupart des charges de travail Intune. L’audit est activé par défaut pour tous les clients et il ne peut pas être désactivé. L’enregistrement des événements d’audit a commencé avec la version de fonctionnalités de décembre 2017 ; les événements antérieurs ne sont pas disponibles.
@@ -28,8 +28,8 @@ Les utilisateurs disposant des autorisations suivantes peuvent consulter les jou
 ## <a name="audit-logs-for-intune-workloads"></a>Journaux d’audit pour les charges de travail Intune
 Vous pouvez consulter les journaux d’audit dans le groupe d’analyse pour chaque charge de travail Intune.  
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez la charge de travail pour laquelle vous souhaitez consulter les journaux d’audit.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le volet **Intune**, choisissez la charge de travail pour laquelle vous souhaitez consulter les journaux d’audit, par exemple, **Appareils**.
 4. Dans le groupe **d’analyse** de la charge de travail, choisissez **Journaux d’audit**.
 
 ## <a name="review-audit-events"></a>Consulter les journaux d'audit
@@ -39,6 +39,7 @@ Un journal d’audit propose par défaut une vue par liste qui affiche les élé
 
 - Date et heure de l’événement
 - Initié par (acteur)
+- Nom de l'application
 - Activité
 - Cible(s)
 - Category
@@ -55,7 +56,7 @@ En cliquant sur un élément de la liste, vous obtenez toutes les informations d
 
 
 ## <a name="filter-audit-events"></a>Filtrer les événements d’audit
-Chaque charge de travail comporte un élément de menu qui pré-filtre la catégorie d’événements d’audit associée à ce panneau. Une option de filtre distincte vous permet de sélectionner d’autres catégories ainsi que les détails de l’action de l’événement pour cette catégorie. Vous pouvez rechercher par nom d’utilisateur principal (UPN), par exemple l’utilisateur qui a effectué l’action. Un filtre de plage de dates permet d’afficher les dernières 24 heures, les 7 derniers jours ou les 30 derniers jours. Par défaut, les événements d’audit des 30 derniers jours sont affichés.
+Chaque charge de travail comporte un élément de menu qui pré-filtre la catégorie d’événements d’audit associée à ce volet. Une option de filtre distincte vous permet de sélectionner d’autres catégories ainsi que les détails de l’action de l’événement pour cette catégorie. Vous pouvez rechercher par nom d’utilisateur principal (UPN), par exemple l’utilisateur qui a effectué l’action. Un filtre de plage de dates permet d’afficher les dernières 24 heures, les 7 derniers jours ou les 30 derniers jours. Par défaut, les événements d’audit des 30 derniers jours sont affichés.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Utiliser l’API Graph pour récupérer des événements d’audit
 Pour plus d’informations sur l’utilisation de l’API Graph pour récupérer jusqu'à un an d’événements d’audit, consultez [Répertorier les événements d’audit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_auditing_auditevent_list).

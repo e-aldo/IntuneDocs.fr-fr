@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Paramètres de restriction de Microsoft Intune pour les appareils Android et Samsung Knox Standard 
 
@@ -144,7 +144,7 @@ Pour chaque paramètre, configurez une liste d’applications à l’aide d’un
 
 Les paramètres Kiosk s’appliquent uniquement aux appareils Samsung Knox Standard et uniquement aux applications que vous gérez à l’aide d’Intune.
 
-- **Sélectionner une application gérée** : choisissez une des options suivantes pour ajouter une ou plusieurs applications gérées pouvant s’exécuter quand l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil.
+- **Sélectionner une application gérée** : choisissez une des options suivantes pour ajouter une ou plusieurs applications gérées pouvant s’exécuter quand l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil. Les navigateurs pré-installés ne peuvent pas être définis comme une application autorisée à être exécutée tandis que l’appareil est en mode plein écran. Si un navigateur est requis, considérez l’utilisation de [Managed Browser](app-configuration-managed-browser.md).
     - **Ajouter des applications par nom de package**
     - **Ajouter des applications par URL**
     - **Ajouter des applications gérées**

@@ -15,11 +15,11 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0185eebbe436da73e1920d7cd834f0897a143894
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Bien démarrer avec l’ajout d’applications dans Microsoft Intune
 
@@ -28,35 +28,24 @@ Pour pouvoir affecter, surveiller, configurer ou protéger des applications, vou
 Intune vous permet d’ajouter et d’affecter ces types d’applications à vos appareils d’entreprise :
 - **Applications du Store** : pour les appareils où vous devez appliquer une gestion des applications mobiles supplémentaire à des applications disponibles dans l’App Store.
 - **Applications écrites en interne (métiers)** : quand vous chargez un fichier qui est téléchargé sur les appareils de vos utilisateurs.
-- **Applications intégrées** : quand vous affectez des applications gérées organisées, comme les applications Office 365, à des appareils iOS et Android. 
+- **Applications intégrées** : quand vous affectez des applications gérées organisées, comme les applications Office 365, à des appareils iOS et Android.
 - **Applications sur le web** : quand Intune crée un raccourci vers l’application web sur l’écran d’accueil de l’appareil.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>Comment attribuer une application de magasin public ?
 
-L’exemple suivant vous guide tout au long de la procédure d’ajout d’une application iOS dans Microsoft Intune.
-
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
-4. Dans la charge de travail **Applications mobiles**, choisissez **Applications** sous la section **Gérer**.
-5. Choisissez **Ajouter** à droite du volet **Applications**.
-6. Dans la liste **Type d’application**, sélectionnez **iOS** sous les types **Application de Store** disponibles.
-6. Choisissez **Rechercher dans l’App Store**.
-7. Dans le panneau **Rechercher dans l’App Store**, commencez par sélectionner les paramètres régionaux du pays de l’App Store.
-8. Dans la zone de recherche, tapez le nom (ou une partie du nom). Intune recherche le Store et retourne la liste des résultats pertinents.
-9. Dans la liste, sélectionnez l’application souhaitée, puis cliquez sur **Sélectionner**.
-10. Sélectionnez **Informations sur l’application** pour configurer les informations sur l’application.
-11. (Facultatif) Ajoutez des détails pour vous aider à organiser cette application, comme **Propriétaire**, **Remarques**, **Développeur** et une **URL de confidentialité** (pointant vers la politique de confidentialité de votre entreprise).
-12. Sélectionnez **Oui** pour **Proposer cette application dans le portail d’entreprise**. 
-13. Cliquez sur **OK** après avoir ajouté toutes les informations nécessaires sur l’application.
-14. Cliquez sur **ajouter** dans le panneau **Ajouter une application**. Vous passerez alors à la **Vue d’ensemble** de l’application. 
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Sélectionnez **Applications mobiles**, puis **Applications**.
+4. Sélectionnez **Ajouter**, puis sélectionnez **iOS** comme le **Type d’application**.
+5. Choisissez **Sélectionner une application** pour afficher le volet **Rechercher dans l’App Store**.
+6. Dans la zone de texte, recherchez une application à affecter à l’appareil. Choisissez l’application, puis cliquez sur **Sélectionner**.
+7. Dans le volet **Ajouter une application**, sélectionnez **Informations sur l’application**, puis vérifiez que toutes les informations sur l’application sont renseignées. Vous pouvez ajouter d’autres détails facultatifs pour vous aider à organiser cette application, comme **Propriétaire**, **Remarques**, **Développeur** et une **URL de confidentialité** pour la politique de confidentialité de votre entreprise.
+8. Vérifiez que vous avez sélectionné **Oui** pour **Proposer cette application dans le portail d’entreprise**, puis sélectionnez **OK**.
+9. Sélectionnez **Ajouter** dans le volet **Ajouter une application** pour ajouter l’application. Vous accédez alors à la **Vue d’ensemble** de cette application. Choisissez **Attributions**, puis cliquez sur **Ajouter le groupe** pour l’assigner à votre groupe de test. Rendez l’application **Disponible** pour le téléchargement. L’application doit alors apparaître comme **Application proposée** sur votre appareil de test.
 
-## <a name="next-steps"></a>Étapes suivantes
-
-Après avoir ajouté une application à Intune, vous pouvez affecter les groupes d’employés qui pourront inclure l’application sur leur appareil.
 
 - [Guide pratique pour affecter des applications à des groupes](apps-deploy.md)
-- 
+
 ## <a name="learn-more"></a>En savoir plus
 
 * [Qu’est-ce que la gestion des applications avec Intune ?](app-management.md)

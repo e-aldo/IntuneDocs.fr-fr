@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Créer un groupe pour gérer vos utilisateurs et l’accès aux données
 
@@ -30,12 +30,14 @@ Microsoft Intune utilise Azure Active Directory (Azure AD) pour gérer l’accè
 ## <a name="how-do-i-create-a-group"></a>Comment créer un groupe ?
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. À l’aide de **Rechercher des ressources**, recherchez **Intune**.
-3. Une fois que vous avez ouvert le panneau **Microsoft Intune**, sélectionnez **Groupes**.
-4. Dans le panneau **Utilisateurs et groupes – Tous les groupes**, sélectionnez la commande **Nouveau groupe**.
-5. Dans le panneau **Groupe**, ajoutez un **Nom** et une **Description** pour le groupe.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Une fois que vous avez ouvert le volet **Microsoft Intune**, sélectionnez **Groupes**.
+4. Dans le volet **Utilisateurs et groupes – Tous les groupes**, sélectionnez la commande **Nouveau groupe**.
+5. Dans le volet **Groupe**, choisissez **Type de groupe**.
+5. Ajoutez un **Nom** et la **Description** du groupe.
 6. Sélectionnez **Affecté** comme **Type d’appartenance**. Vous ne devez pas **Activer les fonctionnalités Office** pour le groupe de test.
-7. Cliquez sur **Créer**.
+7. Sélectionnez des **Membres** du groupe.
+7. Cliquez sur **Create (Créer)**.
 
 Si vous avez réussi à créer un groupe, il doit apparaître dans la liste de **Tous les groupes**. S’il ne figure pas dans cette liste, essayez de créer un autre groupe.
 

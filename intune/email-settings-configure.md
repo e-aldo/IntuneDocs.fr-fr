@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de messagerie dans Microsoft Intune
 
@@ -39,17 +39,19 @@ Utilisez les informations de cet article pour découvrir les concepts de base su
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Créer un profil d’appareil contenant des paramètres de messagerie
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans la page **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans la page **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-3. Dans la page des profils, choisissez **Créer un profil**.
-4. Dans la page **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de messagerie.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
+3. Dans le volet Profils, choisissez **Créer un profil**.
+4. Dans le volet **Créer un profil**, entrez un **Nom** et la **Description** du profil de messagerie.
 5. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres de messagerie. Actuellement, vous pouvez choisir l’une des plateformes suivantes pour les paramètres de messagerie :
     - **Android** (Samsung Android Knox Standard uniquement)
     - **Android for Work**
     - **iOS**
+    - **MacOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 et versions ultérieures**
     - **Windows 10 et versions ultérieures**
 6. Dans la liste déroulante **Type de profil**, choisissez **E-mail**.
 7. Selon la plateforme que vous choisissez, les paramètres que vous pouvez configurer diffèrent. Accédez à l’une des rubriques suivantes pour obtenir les paramètres détaillés pour chaque plateforme :
@@ -57,9 +59,9 @@ Utilisez les informations de cet article pour découvrir les concepts de base su
     - [Paramètres iOS](email-settings-ios.md)
     - [Paramètres Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Paramètres Windows 10](email-settings-windows-10.md)
-8. Quand vous avez terminé, revenez à la page **Créer un profil** et appuyez sur **Créer**.
+8. Quand vous avez terminé, revenez au volet **Créer un profil** et tapez sur **Créer**.
 
-Le profil est créé et apparaît dans la page de la liste des profils.
+Le profil est créé et s’affiche dans le volet de la liste des profils.
 Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
 
 ## <a name="further-information"></a>Informations supplémentaires

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfd1b37c1b944a545234b93b44d651ead8f0f486
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 913ff1c0ae7ab968ae1195425c7cbe4044591c6b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Guide pratique pour effacer uniquement les données d’entreprise des applications gérées par Intune
 
@@ -39,23 +39,21 @@ Pour supprimer des données d’application d’entreprise de manière sélectiv
 
 1.  Connectez-vous au [portail Azure](https://portal.azure.com).
 
-2.  Choisissez **Plus de services**, saisissez **Intune** dans la zone de texte de filtre, puis sélectionnez **Intune**. Le panneau Intune s’ouvre. Sélectionnez **Applications mobiles**.
+2.  Choisissez **Tous les services**, saisissez **Intune** dans la zone de texte de filtre, puis sélectionnez **Intune**. Le volet Intune s’ouvre, choisissez le volet **Applications mobiles**.
 
-    ![Capture d’écran du panneau Microsoft Intune](./media/apps-selective-wipe01.png)
+    ![Capture d’écran du volet Microsoft Intune](./media/apps-selective-wipe01.png)
 
-3.  Dans le panneau **Applications mobiles**, choisissez **Réinitialisation sélective des applications**.
+3.  Dans le **volet Applications mobiles**, choisissez **Réinitialisation sélective des applications**.
 
 4.  Choisissez **Nouvelle demande de réinitialisation**. Le volet **Nouvelle demande de réinitialisation** s’ouvre.
 
     ![Capture d’écran du panneau Nouvelle demande de réinitialisation](./media/AzurePortal_MAM_NewWipeRequest.png)
 
-5.  Choisissez **Utilisateur** pour ouvrir le panneau **Utilisateur** et sélectionnez l’utilisateur possédant les données des applications à réinitialiser.
+5.  Choisissez un utilisateur, puis choisissez **Sélectionnez** pour sélectionner l’utilisateur dont vous souhaitez réinitialiser les données d’application.
 
-6.  Ensuite, choisissez **Appareil** dans le panneau **Nouvelle demande de réinitialisation**. Cette action ouvre le panneau **Sélectionner un appareil**. Tous les appareils associés à l’utilisateur sélectionné sont alors répertoriés. Ce volet fournit également le nom de l’appareil, qui est un nom convivial défini par l’utilisateur, et le type de l’appareil, qui spécifie sa plateforme. 
+6.  Ensuite, choisissez **Appareil** dans le volet **Nouvelle demande de réinitialisation**. Cette opération ouvre le volet **Sélectionner un appareil**, qui répertorie tous les appareils associés à l’utilisateur sélectionné et fournit également deux colonnes : le nom de l’appareil, qui est un nom convivial défini par l’utilisateur et le type d’appareil, à savoir sa plateforme. Sélectionnez l’appareil à réinitialiser.
 
-7. Sélectionnez l’appareil à réinitialiser dans la liste.
-
-8.  Vous voilà revenu dans le panneau **Nouvelle demande de réinitialisation**. Choisissez **Ok** pour effectuer une demande de réinitialisation.
+7.  Vous voilà revenu dans le volet **Nouvelle demande de réinitialisation**. Choisissez **Ok** pour effectuer une demande de réinitialisation.
 
 Le service crée une demande de réinitialisation distincte pour chaque application protégée sur l’appareil et l’utilisateur associé à la demande de réinitialisation, et en fait le suivi.
 
@@ -63,7 +61,7 @@ Le service crée une demande de réinitialisation distincte pour chaque applicat
 
 Vous pouvez obtenir un rapport de synthèse indique l’état global de la demande de réinitialisation et inclut le nombre de demandes en attente et d’échecs. Pour obtenir plus de détails, procédez comme suit :
 
-1.  Le panneau **Applications mobiles - Réinitialisation sélective des applications** affiche la liste de vos demandes regroupées par utilisateurs. Étant donné que le système crée une demande de réinitialisation pour chaque application protégée en cours d’exécution sur l’appareil, vous pouvez voir plusieurs demandes pour un même utilisateur. L’état de la demande de réinitialisation est indiquée : **en attente**, **échec**ou **réussite**.
+1.  Le volet **Applications mobiles - Réinitialisation sélective des applications** affiche la liste de vos demandes regroupées par utilisateur. Étant donné que le système crée une demande de réinitialisation pour chaque application protégée en cours d’exécution sur l’appareil, vous pouvez voir plusieurs demandes pour un même utilisateur. L’état de la demande de réinitialisation est indiquée : **en attente**, **échec**ou **réussite**.
 
     ![Capture d’écran de l’état de demande de réinitialisation dans le volet Réinitialisation sélective des applications](./media/wipe-request-status-1.png)
 
@@ -76,7 +74,7 @@ En outre, vous pouvez voir le nom de l’appareil et son type, ce qui peut être
 
 Les réinitialisations en attente sont affichées jusqu’à ce que vous les supprimiez manuellement. Pour supprimer manuellement une demande de réinitialisation :
 
-1.  Ouvrez le panneau **Applications mobiles - Réinitialisation sélective des applications**.
+1.  Dans le volet **Applications mobiles -Réinitialisation sélective des applications**.
 
 2.  Dans la liste, cliquez avec le bouton droit sur la demande de réinitialisation à supprimer, puis choisissez **Supprimer la demande de réinitialisation**.
 

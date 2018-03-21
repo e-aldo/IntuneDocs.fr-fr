@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurer Microsoft Intune pour l’authentification unique des appareils iOS
 
@@ -34,18 +34,19 @@ Pour tirer parti de l’authentification unique des appareils iOS, les condition
 
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans la page **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans la page **Configuration de l’appareil**, choisissez **Profils**.
-3. Dans la page des profils, choisissez **Créer un profil**, entrez un nom et une description, puis configurez les paramètres suivants :
-   - **Plateforme** : choisissez **iOS**. 
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+4. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
+5. Dans le volet Profils, choisissez **Créer un profil**.
+6. Entrez un nom et une description, puis configurez les paramètres suivants :
+   - **Plateforme** : choisissez **iOS**.
    - **Type de profil** : choisissez **Fonctionnalités de l’appareil**.
-4. Dans la page **Fonctionnalités de l’appareil**, choisissez **Authentification unique**.
+7. Dans le volet **Fonctionnalités de l’appareil**, choisissez **Authentification unique**.
 
-   ![Page Authentification unique](./media/sso-blade.png)
+   ![Volet Authentification unique](./media/sso-blade.png)
 
-2. Utilisez le tableau récapitulatif suivant pour vous aider à remplir les champs de la page **Authentification unique**. Pour plus d’informations, consultez les sections après le tableau.
-   
+8. Utilisez le tableau récapitulatif suivant pour vous aider à remplir les champs du volet **Authentification unique**. Pour plus d’informations, consultez les sections après le tableau.
+
    |Champ  |Remarques|
    |---------|---------|
    |**Attribut de nom d’utilisateur d’AAD**|Attribut recherché par Intune dans AAD pour chaque utilisateur, et renseigné dans le champ correspondant (par exemple, UPN) avant de générer la charge utile XML installée sur l’appareil.|
@@ -95,7 +96,7 @@ Le champ **Nom de l’application** sert à ajouter un nom convivial afin de vou
 
 ### <a name="credential-renewal-certificate"></a>Certificat de renouvellement des informations d’identification
 
-Si vous authentifiez vos utilisateurs finaux avec des certificats (et non des mots de passe), utilisez ce champ pour sélectionner le certificat SCEP ou PFX qui est déployé pour l’utilisateur en tant que certificat d’authentification. En général, il s’agit du même certificat que celui déployé pour l’utilisateur pour d’autres profils tels que VPN, Wi-Fi ou E-mail.
+Si vous authentifiez vos utilisateurs finaux avec des certificats (et non des mots de passe), utilisez ce champ pour sélectionner le certificat SCEP ou PFX qui est déployé pour l’utilisateur en tant que certificat d’authentification. En général, il s’agit du même certificat que celui déployé pour l’utilisateur pour d’autres profils tels que VPN, Wi-Fi ou e-mail.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

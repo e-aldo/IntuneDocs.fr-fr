@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a6466d62cf8af4e6b8a14980db5e9a244deb45c4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Définir des restrictions d’inscription
 
@@ -53,8 +53,8 @@ Les restrictions par défaut sont automatiquement fournies pour les restrictions
 
 ## <a name="create-a-restriction"></a>Créer une restriction
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services**, recherchez **Intune**, puis choisissez **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
 3. Choisissez **Inscription de l’appareil** > **Restrictions d’inscription**.
 4. Choisissez **Créer une restriction**.
 5. Donnez un nom et une description à la restriction.
@@ -70,8 +70,8 @@ Les restrictions par défaut sont automatiquement fournies pour les restrictions
 
 Pour changer les paramètres d’une restriction de type d’appareil, effectuez les étapes suivantes :
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services**, recherchez **Intune**, puis choisissez **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
 3. Choisissez **Inscription de l’appareil** > **Restrictions d’inscription**.
 4. Sous **Restrictions de type d’appareil**, choisissez la restriction à définir.
 5. Sous le nom de la restriction (**Tous les utilisateurs** pour la restriction par défaut), sélectionnez **Plateformes**. Choisissez **Autoriser** ou **Bloquer** pour chaque plateforme répertoriée.
@@ -81,10 +81,10 @@ Pour changer les paramètres d’une restriction de type d’appareil, effectuez
   - iOS prend en charge major.minor.rev.
   - Windows prend en charge major.minor.rev.build pour Windows 10 uniquement.
   Les versions du système d’exploitation ne s’appliquent pas aux appareils Apple inscrits par le biais du Programme d’inscription des appareils, d’Apple School Manager ou de l’application Apple Configurator.
-8. Spécifiez s’il faut **Autoriser** ou **Bloquer** les appareils **personnels** pour chaque plateforme répertoriée.
+6. Spécifiez s’il faut **Autoriser** ou **Bloquer** les appareils **personnels** pour chaque plateforme répertoriée.
 
     ![Capture d’écran de l’espace de travail de restrictions des appareils avec la plateforme d’appareil par défaut configurée pour les appareils personnels](media/device-restrictions-platform-configurations.png)
-9. Cliquez sur **Save**.
+7. Cliquez sur **Save**.
 
 >[!NOTE]
 >- Si vous bloquez l’inscription des appareils Android personnels, les appareils Android for Work personnels peuvent quand même être inscrits.
@@ -95,13 +95,13 @@ Pour changer les paramètres d’une restriction de type d’appareil, effectuez
 
 Pour changer les paramètres d’une restriction de limite d’appareils, effectuez les étapes suivantes :
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services**, recherchez **Intune**, puis choisissez **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
 3. Choisissez **Inscription de l’appareil** > **Restrictions d’inscription**.
 4. Sous **Restrictions de type d’appareils**, choisissez la restriction à définir.
 5. Choisissez **Limite d’appareils** puis, dans la liste déroulante, sélectionnez le nombre maximal d’appareils qu’un utilisateur peut inscrire.
     ![Capture d’écran du panneau des restrictions du nombre limite d’appareils](./media/device-restrictions-limit.png)
-6. Cliquez sur **Save**.
+4. Cliquez sur **Save**.
 
 Votre utilisateur final reçoit une notification qui lui indique qu’il a atteint le nombre limite d’appareils inscrits. Par exemple, sur iOS, la notification ressemble à ce qui suit :
 
@@ -119,8 +119,8 @@ Vous pouvez changer la priorité d’une restriction différente de celle par d�
 
 **Pour changer la priorité d’une restriction**
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services**, recherchez **Intune**, puis choisissez **Intune**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
 3. Choisissez **Inscription de l’appareil** > **Restrictions d’inscription**.
 4. Pointez sur la restriction dans la liste des priorités.
-5. À l’aide des trois points verticaux, faites glisser la priorité à la position souhaitée dans la liste.
+5. À l’aide des trois points verticaux sur la gauche, glissez la priorité dans la position désirée dans la liste.

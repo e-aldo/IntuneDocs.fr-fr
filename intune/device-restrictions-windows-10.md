@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 #<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Paramètres de restriction des appareils Windows 10 et ultérieur dans Microsoft Intune
 Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 10.
@@ -268,7 +268,7 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
       - **Compte d’utilisateur** : spécifie le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran. Pour les comptes liés à des domaines Azure AD, spécifiez le compte au format `domain\\username@tenant.org`.
 
-         Pour les appareils qui sont dans des environnements publics, utilisez des comptes avec des privilèges minimaux afin d’empêcher les activités autorisées.  
+         Pour les appareils dans des environnements publics, utilisez des comptes avec des privilèges minimaux pour empêcher toute activité non autorisée.  
 
       - **Identifiant AUMID de l’application** : spécifie l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
 

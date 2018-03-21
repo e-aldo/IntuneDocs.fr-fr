@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Paramètres de restriction des appareils iOS de Microsoft Intune
-Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Cet article décrit les paramètres des restrictions d’appareils Microsoft Intune que vous pouvez configurer pour les appareils exécutant iOS.
+
 ## <a name="general"></a>Général
 
+-   **Partager des données d’utilisation** : autorisez ou bloquez l’appareil à partir de l’envoi de données de télémétrie de diagnostic et d’utilisation à Apple.
 -   **Envoi des données de diagnostic** : autoriser ou bloquer l’envoi de données de diagnostic à Apple depuis l’appareil.
 -   **Capture d'écran** : permet à l’utilisateur de capturer le contenu de l’écran en tant qu’image.
     - **Observation des écrans à distance par l’application En classe (mode supervisé uniquement)** : autoriser ou bloquer l’affichage par l’application En classe d’Apple de l’écran des appareils iOS.
@@ -213,8 +215,8 @@ Vous pouvez également cliquer sur **Importer** pour remplir la liste à partir 
 -   **Rejoindre uniquement les réseaux Wi-Fi utilisant des profils de configuration (mode supervisé uniquement)** : autorisez uniquement l’appareil à rejoindre les réseaux Wi-Fi qui ont été configurés avec un profil Wi-Fi Intune.
 
 - **Règles d’utilisation des données mobiles (applications gérées uniquement)** : vous permet de définir les types de données que les applications gérées peuvent utiliser sur les réseaux mobiles. Choisissez parmi :
-    - **Bloquer l’utilisation des données mobiles**
-    - **Bloquer l’utilisation des données mobiles en cas d’itinérance**
+    - **Bloquer l’utilisation de données cellulaires** : vous pouvez bloquer l’utilisation de données cellulaires pour ** toutes les applications managées ** ou **Choisir des applications spécifiques**.
+    - **Bloquer l’utilisation de données cellulaires en itinérance** : vous pouvez bloquer l’utilisation de données cellulaires en itinérance pour ** toutes les applications managées ** ou **Choisir des applications spécifiques**.
 
 ## <a name="connected-devices"></a>Appareils connectés
 
