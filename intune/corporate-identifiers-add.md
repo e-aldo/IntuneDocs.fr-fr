@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifier les appareils comme appartenant à l’entreprise
 
@@ -70,7 +70,7 @@ Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>Ajouter une liste .csv d’identificateurs d’entreprise
 
-1. Dans Intune, dans le portail Azure, choisissez **Inscription de l’appareil** > **Identificateurs d’appareil d’entreprise**, puis cliquez sur **Ajouter**.
+1. Dans [Intune dans le portail Azure](https://portal.azure.com), choisissez **Inscription des appareils** > **Identificateurs d’appareils d’entreprise**, puis cliquez sur **Ajouter**.
 
  ![Espace de travail des identificateurs d’appareils d’entreprise avec le bouton Ajouter mis en surbrillance](./media/add-corp-id.png)
 
@@ -82,11 +82,11 @@ Les appareils importés ne sont pas nécessairement inscrits. Les appareils peuv
 
 ### <a name="delete-corporate-identifiers"></a>Supprimer des identificateurs d’entreprise
 
-1. Dans Intune, dans le portail Azure, choisissez **Inscription de l’appareil** > **Identificateurs d’appareil d’entreprise**.
+1. Dans [Intune dans le portail Azure](https://portal.azure.com), choisissez **Inscription des appareils** > **Identificateurs d’appareils d’entreprise**.
 2. Sélectionnez les identificateurs d’appareil que vous voulez supprimer, puis choisissez **Supprimer**.
 3. Confirmez la suppression.
 
-La suppression d’un identificateur d’entreprise pour un appareil inscrit ne change pas la propriété de l’appareil. Pour changer la propriété d’un appareil, accédez à **Appareils** > **Tous les appareils**, sélectionnez l’appareil, choisissez **Propriétés** et changez la **Propriété de l’appareil**.
+La suppression d’un identificateur d’entreprise pour un appareil inscrit ne change pas la propriété de l’appareil. Pour modifier la propriété d’un appareil, allez à **Appareils**, sélectionnez l’appareil, choisissez **Propriétés** et modifiez **Propriété des appareil**.
 
 ### <a name="imei-specifications"></a>Spécifications IMEI
 Pour obtenir des spécifications détaillées sur les IMEI (International Mobile Equipment Identifiers), consultez [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
@@ -96,7 +96,7 @@ Pour obtenir des spécifications détaillées sur les IMEI (International Mobile
 Les propriétés des appareils affichent **Propriété** pour chaque enregistrement d’appareil dans Intune. En tant qu’administrateur, vous pouvez spécifier des appareils comme étant **Personnel** ou d’**Entreprise**.
 
 **Pour changer la propriété d’un appareil :**
-1. Dans Intune, dans le portail Azure, accédez à **Appareils** > **Tous les appareils**, puis choisissez l’appareil.
+1. Dans [Intune dans le portail Azure](https://portal.azure.com), allez à **Appareils** et choisissez l’appareil.
 3. Choisissez **Propriétés**.
 4. Spécifiez pour **Propriété de l’appareil** l’option **Personnel** ou **Entreprise**.
 

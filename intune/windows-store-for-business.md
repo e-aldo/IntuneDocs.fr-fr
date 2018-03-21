@@ -1,12 +1,12 @@
 ---
 title: "Gérer des applications à partir du Microsoft Store pour Entreprises"
-titlesuffix: Azure portal
-description: "Découvrez comment synchroniser des applications dans Intune à partir du Microsoft Store pour Entreprises, puis les affecter et assurer leur suivi."
+titlesuffix: Microsoft Intune
+description: "Découvrez comment synchroniser des applications dans Intune à partir de Microsoft Store pour Entreprises, puis assignez et suivez ces applications."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4460924b3e53a9540ff21aa009a0c028de92f26f
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: aa5e3b5559c5c17ea726b26f1c1f56ef37cfe0ae
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Guide pratique pour gérer les applications que vous avez achetées dans le Microsoft Store pour Entreprises avec Microsoft Intune
 
@@ -62,15 +62,14 @@ Vous pouvez maintenant continuer et configurer la synchronisation dans la consol
 
 ## <a name="configure-synchronization"></a>Configuration de la synchronisation
 
-1. Connectez-vous au portail Azure.
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
-4. Dans le panneau **Applications mobiles**, choisissez **Installation** > **Microsoft Store pour Entreprises**.
-5. Cliquez sur **Activer**.
-6. Si ce n’est déjà fait, cliquez sur le lien pour vous inscrire au Microsoft Store pour Entreprises et associer votre compte comme détaillé précédemment.
-7. Dans la liste déroulante **Langue**, choisissez la langue d’affichage des applications du Microsoft Store pour Entreprises dans le portail Azure. Quelle que soit la langue dans laquelle elles sont affichées, elles sont installées dans la langue de l’utilisateur final quand elles sont disponibles.
-8. Cliquez sur **Synchroniser** pour récupérer les applications que vous avez achetées sur le Microsoft Store dans Intune.
-9. Cliquez sur **Save**.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le volet **Intune**, choisissez **Applications mobiles**.
+1. Dans le volet **Applications mobiles**, choisissez **Installation** > **Microsoft Store pour Entreprises**.
+2. Cliquez sur **Activer**.
+3. Si ce n’est déjà fait, cliquez sur le lien pour vous inscrire au Microsoft Store pour Entreprises et associer votre compte comme détaillé précédemment.
+5. Dans la liste déroulante **Langue**, choisissez la langue d’affichage des applications Microsoft Store pour Entreprises dans le portail Azure. Quelle que soit la langue dans laquelle elles sont affichées, elles sont installées dans la langue de l’utilisateur final quand elles sont disponibles.
+6. Cliquez sur **Synchroniser** pour récupérer les applications que vous avez achetées sur le Microsoft Store dans Intune.
 
 ## <a name="synchronize-apps"></a>Synchroniser les applications
 

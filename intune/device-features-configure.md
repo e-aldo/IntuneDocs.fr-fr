@@ -1,12 +1,11 @@
 ---
-title: "Configurer les paramètres des fonctionnalités d’appareil Microsoft Intune"
-titleSuffix: 
-description: "Découvrez comment utiliser Microsoft Intune pour configurer les fonctionnalités sur les appareils que vous gérez."
+title: "Créer un profil d’appareil iOS ou macOS avec Microsoft Intune - Azure | Microsoft Docs"
+description: "Ajoutez ou créez un profil d’appareil iOS ou macOS, puis configurez les paramètres pour AirPrint, AirPlay, disposition de l’écran d’accueil, notifications des applications, appareil partagé, authentification unique et paramètres de filtre de contenu web dans Microsoft Intune"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,33 +13,42 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6cd646976deb1599c4cbc9154b6f2a487029dd79
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e3de7d1bccd57da1290987a714416373cbdd2b0d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
-#<a name="configure-device-feature-settings-in-microsoft-intune"></a>Configurer les paramètres de fonctionnalités d’appareil dans Microsoft Intune
+# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Paramètres des fonctionnalités de l’appareil iOS ou macOS dans Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Les fonctionnalités de l’appareil vous permettent de contrôler les fonctionnalités iOS et MacOS comme AirPrint, les notifications et les configurations d’appareils partagés.
+Les fonctionnalités de l’appareil vous permettent de contrôler une gamme de paramètres et fonctionnalités sur des appareils iOS et macOS, notamment :
 
-Utilisez les informations de cet article pour apprendre les notions de base sur la configuration des profils de fonctionnalités d’appareil, puis lisez d’autres articles pour chaque plateforme afin d’explorer les caractéristiques spécifiques aux appareils.
+- paramètres AirPrint et AirPlay
+- disposition de l’écran d’accueil
+- notifications à partir d’applications
+- configuration de l'appareil partagé
+- Configurer l'authentification unique
+- Filtrage du contenu web
 
-## <a name="create-a-device-profile-containing-device-feature-settings"></a>Créer un profil d’appareil contenant des paramètres de fonctionnalités d’appareil
+Cet article explique les notions de base de la configuration des profils de fonctionnalités d’appareils iOS. Vous pouvez alors parcourir des articles supplémentaires pour configurer les paramètres spécifiques à la plateforme sur vos appareils.
+
+## <a name="create-a-device-profile"></a>Créer un profil d’appareil
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans la page **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans la page **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
-3. Dans la page des profils, choisissez **Créer un profil**.
-4. Dans la page **Créer un profil**, entrez un **nom** et une **description** pour le profil de fonctionnalités de l’appareil.
-5. Dans la liste déroulante **Plate-forme**, sélectionnez la plate-forme d’appareil à laquelle vous souhaitez appliquer les paramètres. Actuellement, vous pouvez choisir une des plateformes suivantes pour les fonctionnalités de l’appareil :
+2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
+3. Sélectionnez **Configuration de l’appareil**, **Profils**, puis **Créer un profil**.
+4. Entrez les propriétés suivantes :
+
+  - **Nom** : attribuez un nom descriptif au nouveau profil.
+  - **Description** : (facultatif mais recommandé), entrez une description du profil
+  - **Plateforme** : sélectionnez le type de plateformes :
     - **iOS**
     - **MacOS**
-6. Dans la liste déroulante **Type de profil**, choisissez **Fonctionnalités de l’appareil**. 
-7. Selon la plateforme que vous choisissez, les paramètres que vous pouvez configurer diffèrent. Accédez à l’un des articles suivants pour obtenir les paramètres détaillés pour chaque plateforme :
+  - **Type de profil** : sélectionnez **Fonctionnalités de l’appareil**
+  - **Paramètres** : les paramètres varient selon la plateforme que vous choisissez. Les articles suivants décrivent les paramètres pour chaque type de profil :
+
     - [Paramètres Intune AirPrint pour appareils iOS et Mac OS](air-print-settings-ios-macos.md)
     - [Paramètres Intune AirPlay pour appareils iOS](airplay-settings-ios.md)
     - [Paramètres de disposition de l’écran d’accueil Intune pour les appareils iOS](home-screen-settings-ios.md)
@@ -49,12 +57,10 @@ Utilisez les informations de cet article pour apprendre les notions de base sur 
     - [Configurer Intune pour l’authentification unique des appareils iOS](sso-ios.md)
     - [Paramètres de filtrage de contenu web Intune pour les appareils iOS](web-content-filter-settings-ios.md)
 
-8. Une fois terminé, sélectionnez **OK**, revenez à la page **Créer un profil**, puis choisissez **Créer**.
+5. Lorsque vous avez terminé, sélectionnez **OK**, puis choisissez **Créer** pour enregistrer vos modifications.
 
-Le profil est créé et apparaît dans la page de la liste des profils.
-## <a name="next-steps"></a>Étapes suivantes
+Le profil est créé et apparaît dans la liste.
 
-Si vous souhaitez affecter ce profil à des groupes, consultez [Guide pratique pour affecter des profils d’appareil](device-profile-assign.md).
+## <a name="next-step"></a>Étape suivante
 
-
-
+Pour affecter ce profil à des groupes, consultez [Guide pratique pour affecter des profils d’appareil](device-profile-assign.md).

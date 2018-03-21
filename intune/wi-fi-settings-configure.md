@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres Wi-Fi dans Microsoft Intune
 
@@ -47,17 +47,19 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Création d’un profil d'appareil contenant des paramètres Wi-Fi
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
-3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans le panneau **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
-3. Dans le panneau des profils, sélectionnez **Créer un profil**.
-4. Dans le panneau **Créer un profil** , saisissez un **Nom** et une **Description** pour votre profil Wi-Fi.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
+3. Dans le volet Profils, choisissez **Créer un profil**.
+4. Dans le volet **Créer un profil** , saisissez un **Nom** et la **Description** du profil Wi-Fi.
 5. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres Wi-Fi. Actuellement, vous pouvez choisir une des plateformes suivantes pour les paramètres Wi-Fi :
     - **Android**
     - **Android for Work**
     - **iOS**
     - **MacOS**
-    - **Windows 8.1 et versions ultérieures (importer un profil)**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 et versions ultérieures**
+    - **Windows 10 et versions ultérieures**
 
    > [!IMPORTANT]
    > Si vous créez un profil pour les appareils exécutant Windows 10, y compris Windows Holographic for Business, vous devez choisir la plateforme **Windows 8.1 et versions ultérieures**. La plateforme **Windows 10 et ultérieur** n’a pas de type de profil Wi-Fi. 
@@ -70,9 +72,9 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
     - [Paramètres iOS](wi-fi-settings-ios.md)
     - [Paramètres macOS](wi-fi-settings-macos.md)
     - [Paramètres Windows 8.1 et version ultérieures](wi-fi-settings-import-windows-8-1.md) (y compris Windows Holographic for Business)
-1. Lorsque vous avez terminé, revenez au panneau **Créer un profil** et appuyez sur **Créer**.
+1. Quand vous avez terminé, revenez au volet **Créer un profil** et tapez sur **Créer**.
 
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
+Le profil est créé et apparaît dans le volet de la liste des profils.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

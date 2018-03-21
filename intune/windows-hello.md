@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Intégrer Windows Hello Entreprise à Microsoft Intune
 
@@ -48,19 +48,19 @@ Pour garantir la résolution des conflits de stratégie et l’application de la
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Créer une stratégie Windows Hello Entreprise
 
-1.  Dans le portail Azure, choisissez **Autres services** > **Surveillance + gestion** > **Intune**.
+1.  Dans le [portail Azure](https://portal.azure.com), choisissez **Tous les services** > **Surveillance + Gestion** > **Intune**.
 
-2.  Dans la page Intune, choisissez **Inscription de l’appareil**, puis **Inscription Windows** > **Windows Hello Entreprise**.
+2.  Dans le volet Intune, choisissez **Inscription de l’appareil**, puis **Inscription Windows** > **Windows Hello Entreprise**.
 
-3.  Dans la page qui s’ouvre, choisissez les paramètres **Par défaut**.
+3.  Dans le volet qui s’ouvre, choisissez les paramètres **Par défaut**.
 
-4.  Dans la page **Tous les utilisateurs**, cliquez sur **Propriétés**, puis entrez un **Nom** et une **Description** facultative pour les paramètres de Windows Hello Entreprise.
+4.  Dans le volet **Tous les utilisateurs**, cliquez sur **Propriétés**, puis entrez un **Nom** et une **Description** facultative pour les paramètres de Windows Hello Entreprise.
 
-5. Dans la page **Tous les utilisateurs**, cliquez sur **Paramètres**, puis choisissez une des options suivantes pour **Configurer Windows Hello Entreprise** :
+5. Dans le volet **Tous les utilisateurs**, cliquez sur **Paramètres**, puis choisissez une des options suivantes pour **Configurer Windows Hello Entreprise** :
 
     - **Désactivé**. Si vous ne souhaitez pas utiliser Windows Hello Entreprise, sélectionnez ce paramètre. Tous les autres paramètres affichés à l’écran cessent d’être disponibles.
     - **Activée**. Sélectionnez ce paramètre si vous souhaitez configurer les paramètres Windows Hello Entreprise.
-    - **Non configuré**. Sélectionnez ce paramètre si vous ne souhaitez pas utiliser Intune pour contrôler les paramètres Windows Hello Entreprise. Les paramètres Windows Hello Entreprise qui existent sur les appareils Windows 10 ne sont pas changés. Tous les autres paramètres de la page sont indisponibles.
+    - **Non configuré**. Sélectionnez ce paramètre si vous ne souhaitez pas utiliser Intune pour contrôler les paramètres Windows Hello Entreprise. Les paramètres Windows Hello Entreprise qui existent sur les appareils Windows 10 ne sont pas changés. Tous les autres paramètres du volet sont indisponibles.
 
 6.  Si vous avez sélectionné **Activé** à l’étape précédente, configurez les paramètres nécessaires qui sont appliqués à tous les appareils Windows 10 et Windows 10 Mobile inscrits.
 
@@ -69,9 +69,9 @@ Pour garantir la résolution des conflits de stratégie et l’application de la
      - **Requis** (par défaut). Seuls les appareils avec un module de plateforme sécurisée (TPM) accessible peuvent configurer Windows Hello Entreprise.
      - **Préféré**. Les appareils tentent d’abord d’utiliser un module de plateforme sécurisée. Si ce n’est pas possible, ils peuvent utiliser le chiffrement logiciel.
 
- - **Exiger une longueur minimale du code confidentiel**/**Exiger une longueur maximale du code confidentiel**. Ce paramètre configure les appareils pour qu’ils utilisent les longueurs minimale et maximale de code confidentiel que vous spécifiez, afin d’optimiser la sécurisation de la connexion. Le code PIN par défaut comporte six caractères, mais vous pouvez appliquer une longueur minimale de quatre caractères. La longueur maximale du code confidentiel est de 127 caractères.
+ - **Longueur minimale du PIN**/**Longueur maximale du PIN**. Ce paramètre configure les appareils pour qu’ils utilisent les longueurs minimale et maximale de code confidentiel que vous spécifiez, afin d’optimiser la sécurisation de la connexion. Le code PIN par défaut comporte six caractères, mais vous pouvez appliquer une longueur minimale de quatre caractères. La longueur maximale du code confidentiel est de 127 caractères.
 
- - **Exiger des minuscules dans le code confidentiel**/**Exiger des majuscules dans le code confidentiel**/**Exiger des caractères spéciaux dans le code confidentiel**. Vous pouvez appliquer un code confidentiel plus puissant en exigeant l’utilisation de majuscules, de minuscules et de caractères spéciaux dans ce code. Choisissez parmi :
+ - **Lettres minuscules dans le PIN**/**Lettres majuscules dans le PIN**/**Caractères spéciaux dans le PIN**. Vous pouvez appliquer un code confidentiel plus puissant en exigeant l’utilisation de majuscules, de minuscules et de caractères spéciaux dans ce code. Choisissez parmi :
 
      - **Autorisé**. Les utilisateurs peuvent utiliser le type de caractère dans leur code confidentiel, mais cela n’est pas obligatoire.
 
@@ -90,7 +90,7 @@ Pour garantir la résolution des conflits de stratégie et l’application de la
 
  - **Utiliser la détection d’usurpation avancée, si disponible**. Détermine si les fonctionnalités d’anti-usurpation d’identité de Windows Hello sont utilisées sur les appareils qui les prennent en charge (par exemple, la détection d’une photo de visage au lieu d’un visage réel).<br>Si cette option est définie sur **Oui**, Windows nécessite que tous les utilisateurs utilisent la détection d’usurpation pour les fonctions de reconnaissance faciale, si disponible.
 
- - **Utiliser la connexion par téléphone**. Si cette option est définie sur **Oui**, les utilisateurs peuvent utiliser un appareil Remote Passport comme appareil mobile pour l’authentification d’ordinateur du bureau. L’ordinateur de bureau doit être joint à Azure Active Directory, et l’appareil mobile doit être configuré avec un code confidentiel Windows Hello Entreprise.
+ - **Autoriser la connexion par téléphone**. Si cette option est définie sur **Oui**, les utilisateurs peuvent utiliser un appareil Remote Passport comme appareil mobile pour l’authentification d’ordinateur du bureau. L’ordinateur de bureau doit être joint à Azure Active Directory, et l’appareil mobile doit être configuré avec un code confidentiel Windows Hello Entreprise.
 
 ## <a name="windows-holographic-for-business-support"></a>Prise en charge de Windows Holographic for Business
 

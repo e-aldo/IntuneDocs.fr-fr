@@ -14,17 +14,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9d181c4a6e490018c88214a2ed91c90327f2526
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurer un profil de certificat pour vos appareils dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Quand vous donnez un accès à des utilisateurs aux ressources d’entreprise par le biais de profils VPN, Wi-Fi ou de messagerie, vous pouvez authentifier ces connexions à l’aide de certificats. Quand vous utilisez des certificats, vous n’avez pas besoin d’entrer vos nom d’utilisateur et mot de passe pour authentifier les connexions. 
+Quand vous donnez un accès à des utilisateurs aux ressources d’entreprise par le biais de profils VPN, Wi-Fi ou de messagerie, vous pouvez authentifier ces connexions à l’aide de certificats. Quand vous utilisez des certificats, vous n’avez pas besoin d’entrer vos nom d’utilisateur et mot de passe pour authentifier les connexions.
 
 Vous pouvez utiliser Intune pour affecter ces certificats aux appareils que vous gérez. Intune prend en charge l’affectation et la gestion des types de certificats suivants :
 
@@ -85,10 +85,13 @@ Vous importez ce certificat quand vous configurez un profil de certificat approu
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Étape 3 : créer des profils de certificat approuvés
 Vous devez créer un profil de certificat approuvé pour pouvoir créer un profil de certificat SCEP ou PKCS. Un profil de certificat approuvé et un profil SCEP ou PKCS sont nécessaires pour chaque plateforme d’appareil. Les étapes de création de certificats approuvés sont similaires pour chaque plateforme d’appareil.
 
-1. Dans le [portail Azure](https://portal.azure.com), sélectionnez **Tous les services**, puis recherchez **Microsoft Intune**.
-2. Dans **Microsoft Intune**, sélectionnez **Configuration de l’appareil**, puis **Profils**. Ensuite, sélectionnez **Créer un profil**.
-3. Entrez un **Nom** et une **Description** pour le profil de certificat approuvé.
-4. Pour **Plateforme**, sélectionnez la plateforme d’appareil pour ce certificat approuvé : 
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
+2. Dans le volet **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
+3. Dans le volet Profils, choisissez **Créer un profil**.
+4. Dans le volet **Créer un profil**, entrez un **Nom** et la **Description** du profil de certificat approuvé.
+5. Dans la liste déroulante **Plateforme**, sélectionnez la plateforme d’appareil pour ce certificat approuvé. Actuellement, vous pouvez choisir une des plateformes suivantes pour les paramètres de certificat :
 
     - **Android**
     - **Android for Work**
@@ -98,15 +101,13 @@ Vous devez créer un profil de certificat approuvé pour pouvoir créer un profi
     - **Windows 8.1 et versions ultérieures**
     - **Windows 10 et versions ultérieures**
 
-5. Pour **Type de profil**, choisissez **Certificat approuvé**. Accédez au certificat (*NomCertificat*.cer) précédemment enregistré (à l’étape 2).
-
-    Pour les appareils Windows 8.1 et Windows 10 uniquement, sélectionnez le **Magasin de destination** pour le certificat approuvé à partir de :  
-
+6. Dans la liste déroulante **Type de profil**, choisissez **Certificat approuvé**.
+7. Accédez au certificat que vous avez enregistré dans la Tâche 1, puis cliquez sur **OK**.
+8. Pour les appareils Windows 8.1 et Windows 10 uniquement, sélectionnez le **Magasin de destination** pour le certificat approuvé à partir de :
     - **Boutique de certificats de l’ordinateur - Racine**
     - **Boutique de certificats de l’ordinateur - Intermédiaire**
     - **Boutique de certificats de l’utilisateur - Intermédiaire**
-
-6. Sélectionnez **OK** pour enregistrer vos changements, puis **Créer** pour enregistrer votre nouveau profil.
+8. Lorsque vous avez terminé, choisissez **OK**, revenez au volet **Créer un profil** et sélectionnez **Créer**.
 
 Le profil est créé et apparaît dans la liste. Pour affecter ce profil à des groupes, consultez [Affecter des profils d’appareil](device-profile-assign.md).
 

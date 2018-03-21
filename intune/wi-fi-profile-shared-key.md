@@ -1,12 +1,11 @@
 ---
-title: "Création d’un profil Wi-Fi avec une clé prépartagée"
-titleSuffix: Microsoft Intune
-description: "Utilisez un profil personnalisé Intune pour créer un profil Wi-Fi avec une clé prépartagée."
+title: "Créer un profil Wi-Fi avec une clé prépartagée - Microsoft Intune - Azure | Micrososft Docs"
+description: "Utiliser un profil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée et obtenir un exemple de code XML pour les profils Wi-Fi basé sur Android, Windows et EAP dans Microsoft Intune"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: mandia
+ms.author: MandiOhlinger
 manager: dougeby
-ms.date: 11/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,63 +14,64 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8229ac82e6854d75f569b7bbf04dd2f5e14856c7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Utiliser un profil d’appareil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée
+# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Utiliser un profil d’appareil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée - Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Voici comment utiliser les **Profils d’appareil personnalisés** d’Intune pour créer un profil Wi-Fi avec une clé prépartagée. Cette rubrique comprend également un exemple de création d’un profil Wi-Fi basé sur EAP.
+Les clés prépartagées (PSK) servent généralement à authentifier les utilisateurs dans les réseaux Wi-Fi ou réseaux locaux sans fil. Avec Intune, vous pouvez créer un profil Wi-Fi à l’aide d’une clé prépartagée. Pour créer le profil, utilisez la fonctionnalité **Profils d’appareil personnalisés** dans Intune. Cet article contient également quelques exemples indiquant comment créer un profil Wi-Fi basé sur EAP.
 
-> [!NOTE]
--   Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit ci-dessous.
-- Pour Android, vous avez également la possibilité d’utiliser ce [générateur de clés prépartagées Android](http://intunepskgenerator.johnathonb.com/) fourni par Johnathon Biersack.
--   Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
--  Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Vous pouvez également utiliser le [générateur de configuration mobile de clés prépartagées pour iOS](http://intunepskgenerator.johnathonb.com/) fourni par Johnathon Biersack.
+## <a name="before-you-begin"></a>Avant de commencer
 
+- Il peut s’avérer plus facile de copier le code à partir d’un ordinateur qui se connecte à ce réseau, comme décrit plus loin dans cet article.
+- Pour Android, vous pouvez également utiliser le [Générateur PSK Android](http://intunepskgenerator.johnathonb.com/).
+- Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
+- Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Ou, utilisez [Générateur de configuration Mobile PSK iOS](http://intunepskgenerator.johnathonb.com/).
 
-1.  Pour créer un profil Wi-Fi avec une clé préalablement partagée pour Android ou Windows ou un profil Wi-Fi basé sur EAP, choisissez **Personnalisé** pour cette plateforme d’appareil au lieu d’un profil Wi-Fi quand vous créez un profil d’appareil.
+## <a name="create-a-custom-profile"></a>Créer un profil personnalisé
+Vous pouvez créer un profil personnalisé avec une clé prépartagée pour Android, Windows ou un profil Wi-Fi basé sur EAP. Pour créer le profil en utilisant le portail Azure, consultez [Créer des paramètres d’appareils personnalisés](custom-settings-configure.md). Lorsque vous créez le profil de l’appareil, choisissez **Personnalisé** pour votre plateforme d’appareils. Ne sélectionnez pas le profil Wi-Fi. Lorsque vous choisissez personnalisé, veillez à : 
 
-2.  Fournissez un nom et une description.
-3.  Ajoutez un paramètre OMA-URI :
+1. entrer un nom et la description du profil.
+2. Ajoutez un nouveau paramètre OMA-URI avec les propriétés suivantes : 
 
-   a.   Entrez un nom pour ce paramètre de réseau Wi-Fi.
+   a. Entrez un nom pour ce paramètre de réseau Wi-Fi
 
-   b.   Entrez une description du paramètre OMA-URI ou laissez-la vide.
+   b. (Facultatif) Entrez une description du paramètre OMA-URI ou laissez-le vide
 
-   c.   **Type de données** : définissez sur **String**.
+   c. Définissez le **Type de données** sur **Chaîne**
 
-   d.   **OMA-URI** :
+   d. **OMA-URI** :
 
     - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
     > [!NOTE]
-Veillez à inclure le point au début.
+    > Veillez à inclure le point au début.
 
-    Le SSID est l’identificateur SSID pour lequel vous créez la stratégie. Par exemple, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+    Le SSID est l’identificateur SSID pour lequel vous créez la stratégie. Par exemple, entrez `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Champ de valeur** correspond à l’endroit où vous collez le code XML. Voici un exemple. Chaque valeur doit être adaptée à vos paramètres réseau. Consultez la section Commentaires du code pour certains pointeurs.
-4. Choisissez **OK**, enregistrez et affectez la stratégie.
+  e. **Champ de valeur** correspond à l’endroit où vous collez le code XML. Consultez les exemples dans cet article. Mettez à jour chaque valeur pour correspondre à vos paramètres réseau. La section Commentaires du code inclut certains pointeurs.
+3. Sélectionnez **OK**, enregistrez et affectez la stratégie.
 
     > [!NOTE]
     > Cette stratégie peut être attribuée uniquement à des groupes d’utilisateurs.
 
-La prochaine fois que chaque appareil s’enregistrera, la stratégie sera appliquée et un profil Wi-Fi sera créé sur l’appareil. L’appareil sera en mesure de se connecter automatiquement au réseau.
+Lors du prochain enregistrement de chaque appareil, la stratégie est appliquée et un profil Wi-Fi est créé sur l’appareil. L’appareil peut alors se connecter automatiquement au réseau.
 
-## <a name="android-or-windows-wi-fi-profile"></a>Profil Wi-Fi Android ou Windows
+## <a name="android-or-windows-wi-fi-profile-example"></a>Exemple de profil Wi-Fi Android ou Windows
 
-Voici un exemple de code XML pour un profil Wi-Fi Android ou Windows :
+L’exemple suivant inclut le code XML pour un profil Wi-Fi Android ou Windows. 
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>`doit être défini sur **false**, car la valeur **true** peut amener l’appareil à attendre un mot de passe chiffré et à tenter de le déchiffrer, ce qui risque d’entraîner un échec de connexion.
+> `<protected>false</protected>` doit être défini sur **false**. La valeur**true** peut amener l’appareil à attendre un mot de passe chiffré et à tenter de le déchiffrer, ce qui risque d’entraîner un échec de connexion.
 >
 >  `<hex>53534944</hex>` doit être défini sur la valeur hexadécimale de `<name><SSID of wifi profile></name>`.
->  Les appareils Windows 10 peuvent retourner une fausse erreur *0x87D1FDE8 Échec de la correction* et être néanmoins configurés avec le profil.
+>  Les appareils Windows 10 peuvent retourner une erreur false *Échec de la mise à jour 0x87D1FDE8*, mais l’appareil contient encore le profil.
 
 ```
 <!--
@@ -115,8 +115,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## <a name="eap-based-wi-fi-profile"></a>Profil Wi-Fi basé sur EAP
-Voici un exemple du code XML pour un profil Wi-Fi basé sur EAP :
+## <a name="eap-based-wi-fi-profile-example"></a>Exemple de profil Wi-Fi basé sur EAP
+L’exemple suivant inclut le code XML pour un profil Wi-Fi basé sur EAP :
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -199,16 +199,18 @@ Voici un exemple du code XML pour un profil Wi-Fi basé sur EAP :
 ```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Création du fichier XML à partir d’une connexion Wi-Fi existante
-Vous pouvez également créer un du fichier XML à partir d’une connexion Wi-Fi existante :
-1. Sur un ordinateur connecté au réseau sans fil ou qui s’y est connecté récemment, ouvrez le dossier suivant : C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
+Vous pouvez également créer un fichier XML à partir d’une connexion Wi-Fi existante, à l’aide des étapes suivantes : 
 
-    Il est préférable d’utiliser un ordinateur qui n’est pas connecté à plusieurs réseaux sans fil, car vous devrez effectuer des recherches dans chaque profil pour trouver celui qui convient.
-3.     Recherchez dans les fichiers XML pour trouver celui dont le nom est correct.
-4.     Une fois que vous avez localisé le fichier XML approprié, copiez et collez le code XML dans le champ de données de la page de paramètres OMA-URI.
+1. Sur un ordinateur connecté ou récemment connecté au réseau sans fil, ouvrez le dossier `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`.
+
+  Il est préférable d’utiliser un ordinateur qui n’est pas connecté à plusieurs réseaux sans fil. Dans le cas contraire, vous devrez parcourir chaque profil pour trouver celui qui convient.
+
+2. Recherchez dans les fichiers XML pour trouver celui dont le nom est correct.
+3. Une fois que vous avez localisé le fichier XML approprié, copiez et collez le code XML dans le champ **Données** de la page des paramètres OMA-URI.
 
 ## <a name="best-practices"></a>Méthodes conseillées
-Avant de déployer un profil Wi-Fi avec une clé prépartagée, vérifiez que l’appareil peut se connecter directement au point de terminaison.
+- Avant de déployer un profil Wi-Fi avec une clé prépartagée, vérifiez que l’appareil peut se connecter directement au point de terminaison.
 
-Lors de la rotation des clés (mots de passe ou phrases secrètes), prévoyez du temps d’arrêt et planifiez les déploiements en conséquence. Il est préférable d’envoyer les nouveaux profils Wi-Fi en dehors des horaires de travail. Avertissez également les utilisateurs que la connectivité peut être impactée.
+- Lors de la rotation des clés (mots de passe ou phrases secrètes), prévoyez un temps d’arrêt et planifiez vos déploiements en conséquence. Il est préférable d’envoyer les nouveaux profils Wi-Fi en dehors des horaires de travail. Avertissez également les utilisateurs que la connectivité peut être impactée.
 
-Pour garantir une transition en douceur, vérifiez que l’appareil de l’utilisateur final a une autre connexion à Internet. Par exemple, l’utilisateur final doit être en mesure de revenir au Wi-Fi invité (ou un autre réseau Wi-Fi), ou disposer d’une connectivité cellulaire pour communiquer avec Intune. Cela permet à l’utilisateur de continuer à recevoir des mises à jour de stratégie quand le profil Wi-Fi d’entreprise est mis à jour sur l’appareil.
+- Pour garantir une transition en douceur, vérifiez que l’appareil de l’utilisateur final a une autre connexion à Internet. Par exemple, l’utilisateur final doit être en mesure de revenir au Wi-Fi invité (ou un autre réseau Wi-Fi), ou disposer d’une connectivité cellulaire pour communiquer avec Intune. Cette connexion supplémentaire permet à l’utilisateur de recevoir des mises à jour de stratégies quand le profil Wi-Fi d’entreprise est mis à jour sur l’appareil.

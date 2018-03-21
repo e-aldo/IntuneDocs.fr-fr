@@ -1,10 +1,10 @@
 ---
-title: "Surveiller les stratégies de conformité d’appareils Intune"
-titlesuffix: Azure portal
-description: "Découvrez comment surveiller les stratégies de conformité des appareils"
+title: "Analyser les stratégies de conformité des appareils Microsoft Intune"
+titlesuffix: 
+description: "Utilisez le tableau de bord de conformité des appareils pour analyser la conformité globale des appareils, afficher des rapports et afficher la conformité des appareils par stratégie et par paramètre."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
-ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
+ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Surveiller les stratégies de conformité d’appareils Intune
 
@@ -25,15 +25,15 @@ Les rapports de conformité aident les administrateurs à analyser la situation 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Suivez les étapes ci-dessous pour trouver le **tableau de bord de conformité des appareils Intune** dans le portail Azure :
+Suivez les étapes ci-dessous pour rechercher le **tableau de bord de conformité des appareils Intune** dans le portail Azure :
 
 1.  Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification Intune.
 
-2.  Choisissez **Autres services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+2.  Choisissez **Tous les services** dans le menu de gauche, puis entrez **Intune** dans le filtre de la zone de texte.
 
 3.  Choisissez **Intune** &gt; **Conformité de l’appareil** &gt; **Présentation**. Le **tableau de bord Conformité de l’appareil** s’ouvre.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Les appareils doivent être inscrits dans Intune pour recevoir des stratégies de conformité d’appareils.
 
 ## <a name="device-compliance-dashboard"></a>Tableau de bord Conformité de l’appareil
@@ -46,7 +46,7 @@ Dans le **tableau de bord de conformité des appareils**, vous pouvez surveiller
 
 -   Conformité des appareils par paramètre
 
-![Tableau de bord Conformité de l’appareil](./media/idc-1.png)
+![Image illustrant le tableau de bord de la conformité des appareils](./media/idc-1.png)
 
 Vous pouvez également afficher des stratégies de conformité spécifiques et les paramètres qui s’appliquent à un appareil donné, ainsi que l’état de conformité finale de chacun de ces paramètres sur l’appareil.
 
@@ -62,28 +62,28 @@ Il s’agit d’un graphique indiquant l’état de conformité globale de tous 
 
     -   Découvrez plus d’informations sur les actions destinées aux appareils non conformes.
 
--   **Appareil non synchronisé :** l’appareil n’a pas pu signaler son état de stratégie de conformité d’appareil pour une des raisons suivantes :
+-   **Appareil non synchronisé :** échec de signalement par l’appareil de son l’état de sa stratégie de conformité des appareils pour l’une des raisons suivantes :
 
     -   **Inconnu** : l’appareil est hors connexion ou n’a pas pu communiquer avec Intune ou Azure AD pour d’autres raisons.
 
     -   **Erreur** : l’appareil n’a pas pu communiquer avec Intune et Azure AD et a reçu un message d’erreur avec une explication.
 
-> [!IMPORTANT] 
-> Les appareils inscrits dans Intune, mais qui ne sont pas ciblés par des stratégies de conformité d’appareils, sont inclus dans ce rapport sous le compartiment **Conforme**.
+> [!IMPORTANT]
+> Les appareils inscrits dans Intune, mais non ciblés par des stratégies de conformité des appareils, sont inclus dans ce rapport sous le compartiment **Conforme**.
 
 #### <a name="drill-down-option"></a>Option d’exploration
 
 Dans le **tableau de bord de conformité des appareils**, si vous cliquez sur la vignette Conformité de l’appareil, vous pouvez explorer l’**état de conformité**, l’**alias de messagerie de l’utilisateur**, le **modèle d’appareil** et l’**emplacement** de chaque appareil ciblé par les stratégies de conformité d’appareils.
 
-![Exploration du tableau de bord de conformité des appareils](./media/idc-2.png)
+![Image illustrant le zoom avant du tableau de bord de la conformité des appareils](./media/idc-2.png)
 
 Si vous avez besoin de plus de détails sur un utilisateur spécifique, vous pouvez filtrer le rapport du graphique de conformité d’appareil en tapant l’alias de messagerie de l’utilisateur.
 
-![Tableau de bord de conformité des appareils pour un utilisateur spécifique](./media/idc-3.png)
+![Image illustrant l’utilisateur spécifique au tableau de bord de conformité des appareils](./media/idc-3.png)
 
 Vous pouvez également cliquer sur l’état de conformité sur le graphique de conformité de l’appareil pour obtenir plus d’informations sur l’état des stratégies de conformité d’appareils de l’utilisateur.
 
-![Différents états du tableau de bord Conformité de l’appareil](./media/idc-4.png)
+![Image illustrant les différents états du tableau de bord de conformité des appareils](./media/idc-4.png)
 
 #### <a name="filter"></a>Filtre
 
@@ -99,7 +99,7 @@ Si vous cliquez sur le **bouton Filtrer**, le filtre volant s’ouvre avec les o
 
     -   iOS
 
-    -   Mac OS
+    -   macOS
 
     -   Windows
 
@@ -121,41 +121,22 @@ Si vous cliquez sur le **bouton Mettre à jour**, le filtre volant doit se ferme
 
 ##### <a name="device-details"></a>Détails sur l'appareil
 
-Cliquez sur un appareil pour ouvrir le panneau **Appareils** avec l’appareil sélectionné. Cela fournit plus de détails sur le paramètre de stratégie de conformité d’appareil appliqué à cet appareil.
-
-![Tableau de bord Conformité de l’appareil](./media/idc-6.png)
+Cliquer sur un appareil, permet d’ouvrir le **volet Appareils** avec l’appareil sélectionné, qui fournit des détails supplémentaires sur le paramètre des stratégies de conformité des appareils appliqués à cet appareil.
 
 Lorsque vous cliquez sur le paramètre de stratégie d’appareil lui-même, vous pouvez voir le nom de stratégie de conformité d’appareil provenant du paramètre de conformité d’appareil ciblé par l’administrateur.
 
-![Nom du paramètre de conformité de l’appareil](./media/idc-7.png)
-
-## <a name="policy-compliance-report"></a>Rapport de conformité aux stratégies
+### <a name="per-policy-device-compliance-report"></a>Rapport de conformité d’appareil par stratégie
 
 Ce rapport indique chaque stratégie de conformité d’appareil et le nombre total d’appareils dans chaque état de conformité. Le titre **Conformité à la stratégie** est disponible dans le **tableau de bord Conformité de l’appareil**. Il affiche toutes les stratégies créées précédemment par l’administrateur, les plateformes auxquelles la stratégie s’applique, ainsi que le nombre d’appareils conformes et non conformes.
 
-![Rapport de conformité d’appareil par stratégie](./media/idc-8.png)
+![Image illustrant le rapport de conformité des appareils par stratégie](./media/idc-8.png)
 
 Quand vous cliquez sur la vignette Conformité aux stratégies, puis sur une des stratégies de conformité des appareils, vous pouvez voir l’**état de conformité**, l’**alias de messagerie de l’utilisateur**, le **modèle d’appareil** et l’**emplacement** de chaque appareil ciblé par cette stratégie de conformité d’appareils.
 
-![Vignette Conformité aux stratégies](./media/idc-9.png)
-
 ## <a name="setting-compliance-report"></a>Rapport de conformité par paramètre
 
-Ce rapport vous permet d’afficher, en fonction du paramètre de conformité choisi, le nombre total d’appareils dans chaque état de conformité. Le titre **Définition de la conformité** est disponible dans le **tableau de bord de conformité des appareils**. Il montre tous les paramètres de toutes les stratégies de conformité d’appareil créées par l’administrateur, les plateformes auxquelles les paramètres de stratégie ont été appliqués et le nombre d’appareils non conformes.
+Ce rapport vous permet d’afficher, en fonction du paramètre de conformité choisi, le nombre total d’appareils dans chaque état de conformité. Le titre **Conformité des paramètres** est disponible dans le **tableau de bord de conformité des appareils**. Il affiche tous les paramètres des stratégies de conformité des appareils créées par l’administrateur, les plateformes auxquelles les paramètres de stratégie ont été appliqués et le nombre d’appareils non conformes.
 
-![Rapport de conformité d’appareil par paramètre](./media/idc-10.png)
+![Image illustrant le rapport de conformité des appareils par paramètre](./media/idc-10.png)
 
 Quand vous cliquez sur la vignette Définition de la conformité, puis sur l’un des paramètres de stratégie de conformité d’appareil, vous pouvez afficher l’**état de conformité**, l’**alias de messagerie de l’utilisateur**, le **modèle d’appareil** et l’**emplacement** de chaque appareil ciblé par le paramètre de stratégie de conformité d’appareil.
-
-![Vignette Définition de la conformité](./media/idc-11.png)
-
-## <a name="threat-agent-status-report"></a>Rapport d’état de l’agent contre les menaces
-
-Ce rapport permet d’afficher l’état et l’intégrité de l’agent Windows Defender. Avec un rapport de cumul d’état dans **Conformité de l’appareil**, vous pouvez voir les appareils qui nécessitent les actions suivantes :
-- Mise à jour de la signature
-- Redémarrer
-- Intervention manuelle
-- Analyse complète
-- Autres états de l’agent nécessitant une intervention
-
-Un rapport détaillé pour chaque catégorie d’état répertorie les PC individuels nécessitant une attention particulière, et ceux qui sont signalés comme étant **sans problème**.

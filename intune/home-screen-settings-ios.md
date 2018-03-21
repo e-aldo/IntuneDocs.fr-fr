@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Paramètres de disposition de l’écran d’accueil Microsoft Intune pour les appareils exécutant iOS 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Paramètres de disposition de l’écran d’accueil Microsoft Intune pour les appareils exécutant iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ Utilisez ces paramètres pour configurer la disposition des applications et des 
 
 Les appareils exécutant iOS avec un profil affecté doivent être en mode supervisé et exécuter iOS 9.3 ou ultérieur.
 
-1. Dans la page **Configuration de l’appareil**, **Créer un profil**, **Fonctionnalités de l’appareil**, choisissez **Disposition de l’écran d’accueil (supervisé uniquement)**.
-2. Dans la page **Disposition de l’écran d’accueil (supervisé uniquement)**, choisissez si vous voulez configurer les dispositions **Ancrer** ou **Pages**.
+1. À partir de [Intune dans le portail Azure](https://portal.azure.com), naviguez vers [**Fonctionnalités de l’appareil** dans la zone de configuration de l’appareil](device-features-configure.md).
+2. Dans le volet **Fonctionnalités de l’appareil**, sélectionnez **Disposition de l’écran d’accueil (supervisé uniquement)**.
+3. Dans le volet **Disposition de l’écran d’accueil (supervisé uniquement)**, choisissez si vous voulez configurer les dispositions **Ancrer** ou **Pages**.
 
 ## <a name="add-items-to-the-dock"></a>Ajouter des éléments à l’écran d’ancrage
 
-Dans la page **Ancrer**, vous pouvez ajouter jusqu’à six éléments ou dossiers à l’espace d’ancrage de l’écran iOS. De nombreux appareils prennent cependant en charge moins d’éléments (par exemple, les appareils iPhone acceptent un maximum de quatre éléments). Dans ce cas, seuls les quatre premiers éléments que vous avez configurés s’affichent sur l’appareil.
+Dans le volet **Ancrer**, vous pouvez ajouter jusqu’à six éléments ou dossiers à l’ancrage de l’écran iOS. De nombreux appareils prennent cependant en charge moins d’éléments (par exemple, les appareils iPhone acceptent un maximum de quatre éléments). Dans ce cas, seuls les quatre premiers éléments que vous avez configurés s’affichent sur l’appareil.
 
 1. Choisissez **Ajouter** pour ajouter un élément à l’écran d’ancrage.
-2. Dans la page **Ajouter une ligne**, indiquez si vous souhaitez ajouter une **Application** ou un **Dossier**.
+2. Dans le volet **Ajouter une ligne**, indiquez si vous souhaitez ajouter une **Application** ou un **Dossier**.
 3. En utilisant les informations de cette rubrique, configurez les applications et les dossiers que vous souhaitez voir apparaître dans l’écran d’ancrage.
-4. Continuez à ajouter des éléments. Une fois terminé, cliquez sur **OK** dans chaque page jusqu’à ce que vous reveniez à la page **Créer un profil**. Choisissez **Créer**.
+4. Continuez à ajouter des éléments. Une fois terminé, cliquez sur **OK** dans chaque volet jusqu’à ce que vous reveniez au volet **Créer un profil**. Choisissez **Créer**.
 
 >[!TIP]
-> Vous pouvez faire glisser et déplacer des éléments dans l’écran d’accueil et dans les listes de pages pour les réorganiser. 
+> Vous pouvez faire glisser et déplacer des éléments dans l’écran d’accueil et dans les listes de pages pour les réorganiser.
 
 ### <a name="example"></a>Exemple
 
@@ -56,9 +57,8 @@ Quand vous affectez la stratégie à un iPhone, vous obtenez un espace d’ancra
 
 Ajoutez les pages que vous souhaitez afficher sur l’écran d’accueil et les applications qui s’affichent dans chaque page. Les applications que vous ajoutez à une page sont organisées de gauche à droite, dans l’ordre selon lequel elles sont spécifiées dans la liste. Si vous ajoutez plus d’applications que la page ne peut en contenir, les applications sont déplacées vers une page suivante.
 
-
-1. Dans la page **Pages**, choisissez **Ajouter**.
-2. Dans la page **Ajouter une ligne**, entrez un **nom de page**. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
+1. Dans le volet **Pages**, choisissez **Ajouter**.
+2. Dans le volet **Ajouter une ligne**, entrez un **Nom de page**. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
 3. Cliquez sur **Ajouter** et indiquez si vous souhaitez ajouter une **Application** ou un **Dossier** à la page.
 4. En utilisant les informations de cette rubrique, configurez les applications et les dossiers que vous souhaitez voir apparaître dans la page.
 
@@ -85,7 +85,7 @@ Les applications que vous ajoutez à une page dans un dossier sont organisées d
 
 1. Entrez le **Nom du dossier**. Ce nom apparaît aux utilisateurs sur leur appareil.
 2. Cliquez sur **Ajouter** pour créer une page dans le dossier. Vous pouvez ajouter jusqu’à 20 pages.
-3. Dans la page **Ajouter une ligne**, entrez un nom de page. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
+3. Dans le volet **Ajouter une ligne**, entrez un nom pour de page. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
 3. Entrez le **Nom de l’application**. Ce nom est utilisé à titre de référence dans le portail Azure, mais il *n’est pas affiché* sur l’appareil iOS.
 2. Entrez **l’ID d’ensemble d’applications** de l’application que vous souhaitez déployer. Consultez la section **Comment ajouter une application à la liste** pour plus d’informations.
 3. Choisissez **Ajouter**. Vous pouvez ajouter jusqu’à 60 éléments.
@@ -94,7 +94,7 @@ Les applications que vous ajoutez à une page dans un dossier sont organisées d
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Référence à un ID d’ensemble pour les applications iOS intégrées
 
-Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées parmi les plus courantes. Pour rechercher l’ID d’ensemble d’autres applications, contactez votre éditeur de logiciels. 
+Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées parmi les plus courantes. Pour rechercher l’ID d’ensemble d’autres applications, contactez votre éditeur de logiciels.
 
 |||
 |-|-|

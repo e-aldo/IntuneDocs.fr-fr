@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Guide pratique pour affecter des applications Office 365 ProPlus à des appareils Windows 10 avec Microsoft Intune
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Comment assigner des applications Office 365 à des appareils Windows 10 avec Microsoft Intune
 
-À l’aide de ce type d’application, vous pouvez affecter facilement des applications Office 365 ProPlus aux appareils exécutant Windows 10 que vous gérez. Vous pouvez également installer des applications pour le client de bureau Microsoft Project Online et Microsoft Visio Pro pour Office 365 si vous disposez des licences appropriées. Les applications souhaitées apparaissent sous la forme d’une entrée unique dans la liste des applications de la console Intune.
+Ce type d’application vous permet d’assigner facilement des applications Office 365 à des appareils que vous gérez exécutant Windows 10. Vous pouvez également installer des applications pour le client de bureau Microsoft Project Online et Microsoft Visio Pro pour Office 365 si vous disposez des licences appropriées. Les applications souhaitées apparaissent sous la forme d’une entrée unique dans la liste des applications de la console Intune.
 
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/02/2018
 >Cette méthode d’installation d’Office est uniquement prise en charge si aucune autre version de Microsoft Office n’est installée sur l’appareil.
 
 - Les appareils sur lesquels vous déployez ces applications doivent exécuter Windows 10 Creators Update ou ultérieur.
-- Intune prend uniquement en charge l’ajout d’applications Office provenant de la suite Office 365 ProPlus.
+- Intune prend uniquement en charge l’ajout d’applications Office provenant de la suite Office 365.
 - Si des applications Office sont ouvertes au moment où Intune installe la suite d’applications, l’installation risque d’échouer et les utilisateurs finaux risquent de perdre les données des fichiers non enregistrés.
 - Cette méthode d’installation n’est pas prise en charge sur les appareils Windows 10, Windows Famille, Windows Collaboration, Windows Holographique et Windows Holographic for Business.
 - Intune ne prend pas en charge l’installation d’applications de bureau Office 365 à partir du Microsoft Store (appelées applications Office Centennial) sur un appareil sur lequel vous avez déjà déployé des applications Office 365 avec Intune. Si vous installez cette configuration, cela peut entraîner une perte ou une altération des données.
@@ -41,12 +41,13 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="get-started"></a>Prise en main
 
-1.  Connectez-vous au portail Azure.
-2.  Choisissez **Autres services** > **Surveillance + Gestion** > **Intune**.
+1.  Connectez-vous au [portail Azure](https://portal.azure.com).
+2.  Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
 3.  Dans le panneau **Intune**, choisissez **Applications mobiles**.
-4.  Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
+4.  Dans la charge de travail **Applications mobiles**, choisissez **Applications** dans la section **Gérer**.
 5.  Au-dessus de la liste des applications, choisissez **Ajouter**.
-6.  Dans le panneau **Ajouter une application**, choisissez **Suite Office 365 ProPlus (Windows 10)**.
+6.  Dans la liste **Type d’application** sur le panneau **Ajouter des applications**, sélectionnez **Windows 10** sous la **Suite Office 365**.
+    Vous pouvez à présent configurer la suite d’applications.
 
 ## <a name="configure-the-app-suite"></a>Configurer la suite d’applications
 
@@ -61,7 +62,7 @@ Dans cette étape, choisissez les applications Office à affecter aux appareils.
 
 ## <a name="configure-app-information"></a>Configurer les informations de l’application
 
-Dans cette étape, indiquez des informations sur la suite d’applications. Ces informations vous permettent d’identifier la suite dans Intune. Elles aident aussi les utilisateurs finaux à trouver la suite dans l’application Portail d’entreprise.
+Dans cette étape, vous devez fournir des informations sur la suite d’applications. Ces informations vous permettent d’identifier la suite d’applications dans Intune. Elles aident aussi les utilisateurs à la trouver dans l’application Portail d’entreprise.
 
 1.  Dans le panneau **Ajouter une application**, choisissez **Informations sur la suite d’applications**.
 2.  Dans le panneau **Informations sur la suite d’applications**, indiquez les informations suivantes :
@@ -75,7 +76,7 @@ Dans cette étape, indiquez des informations sur la suite d’applications. Ces 
     - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
     - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
     - **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-    - **Charger l’icône** : chargez une icône qui s’affiche avec l’application quand les utilisateurs parcourent le portail d’entreprise.
+    - **Logo** : chargez une icône qui s’affiche avec l’application lorsque les utilisateurs parcourent le portail d’entreprise.
 3.  Une fois terminé, cliquez sur **OK**.
 
 ## <a name="configure-app-settings"></a>Configurer les paramètres de l’application
@@ -91,7 +92,7 @@ Dans cette étape, configurez les options d’installation de la suite d’appli
         - **Semestriel**
         - **Semestriel (ciblé)**
     - **Accepter automatiquement le contrat de licence utilisateur final de l’application** : sélectionnez cette option si les utilisateurs finaux ne sont pas tenus d’accepter le contrat de licence. Intune accepte alors automatiquement le contrat.
-    - **Utiliser l’activation d’ordinateurs partagés** : l’activation d’ordinateurs partagés est utilisée quand plusieurs utilisateurs partagent un ordinateur. Pour plus d’informations, consultez Vue d’ensemble de l’activation d’ordinateurs partagés pour Office 365 ProPlus.
+    - **Utiliser l’activation d’ordinateurs partagés** : l’activation d’ordinateurs partagés est utilisée quand plusieurs utilisateurs partagent un ordinateur. Pour plus d’informations, consultez Vue d’ensemble de l’activation d’ordinateurs partagés pour Office 365.
     - **Langues** : Office s’installe automatiquement dans toute langue prise en charge installée avec Windows sur l’appareil de l’utilisateur final. Sélectionnez cette option pour installer des langues supplémentaires avec la suite d’applications.
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ Dans cette étape, configurez les options d’installation de la suite d’appli
 
 ## <a name="finish-up"></a>Terminer
 
-Lorsque vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Enregistrer**. L’application que vous avez créée s’affiche dans la liste des applications.
+Quand vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Ajouter**. L’application que vous avez créée s’affiche dans la liste des applications.
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>Codes d’erreur durant l’installation de la suite d’applications
 
@@ -137,4 +138,4 @@ Le tableau suivant répertorie les codes d’erreur fréquemment rencontrés et 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez maintenant affecter les applications aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](/intune-azure/manage-apps/deploy-apps).
+- Vous pouvez désormais assigner les applications à des groupes que vous choisissez, consultez [Comment assigner des applications à des groupes](/intune-azure/manage-apps/deploy-apps).

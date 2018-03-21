@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e770c39a22b620bb642b7b15a456369bb4acec2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Inscrire automatiquement des appareils iOS avec le Programme d’inscription des appareils d’Apple
 
@@ -74,7 +74,7 @@ Vous utilisez le portail DEP Apple pour créer un jeton DEP. Vous utilisez égal
 
 **Étape 1. Téléchargez un certificat de clé publique Intune nécessaire à la création d’un jeton DEP Apple.**<br>
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple** > **Jeton du programme d’inscription**.
+1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple** > **Jeton du programme d’inscription**.
 
   ![Volet Jeton du programme d’inscription dans l’espace de travail Certificats Apple](./media/enrollment-program-token-add.png)
 
@@ -116,7 +116,7 @@ Accédez au fichier du certificat (.pem), choisissez **Ouvrir**, puis **Téléch
 
 Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d’inscription pour les appareils DEP. Un profil d'inscription d'appareil définit les paramètres appliqués à un groupe d'appareils lors de l’inscription.
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple**.
+1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple**.
 2. Sous **Programme d’inscription pour Apple**, choisissez **Profils du programme d’inscription** > **Créer**.
 3. Dans **Créer un profil d’inscription**, entrez un **Nom** et une **Description** pour le profil à des fins d’administration. Les utilisateurs ne voient pas ces détails. Vous pouvez utiliser ce champ **Nom** pour créer un groupe dynamique dans Azure Active Directory. Utilisez le nom du profil pour définir le paramètre enrollmentProfileName et attribuer des appareils avec ce profil d’inscription. En savoir plus sur les [groupes dynamiques Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -169,7 +169,7 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
 ## <a name="sync-managed-devices"></a>Synchroniser des appareils gérés
 Maintenant qu’Intune est autorisé à gérer vos appareils, vous pouvez synchroniser Intune avec Apple pour voir vos appareils gérés dans le portail Azure d’Intune.
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
+1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
   ![Sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser](./media/enrollment-program-device-sync.png)
   
@@ -190,7 +190,7 @@ Vous devez affecter un profil de programme d’inscription aux appareils pour po
 >[!NOTE]
 >Vous pouvez également affecter des numéros de série aux profils à partir du panneau **Numéros de série Apple**.
 
-1. Dans le portail Azure d’Intune, choisissez **Inscription d’appareil** > **Inscription Apple**, puis **Profils du programme d’inscription**.
+1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple** et choisissez **Profils du programme d’inscription**.
 2. Dans la liste **Profils du programme d’inscription**, choisissez le profil que vous souhaitez affecter aux appareils, puis **Affecter des appareils**.
 
  ![Affectations des appareils avec Affecter sélectionné](./media/enrollment-program-device-assign.png)

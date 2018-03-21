@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Bien démarrer avec Microsoft Intune dans le portail Azure
 
@@ -31,7 +31,7 @@ La __barre latérale__ à gauche du portail Azure affiche une liste de tous les 
 
 ![Utilisateur recherchant Microsoft Intune dans la liste « Autres services ».](./media/azure-add-intune1.png)
 
-1. Sélectionnez **Autres services** en bas de la barre latérale à gauche de la page.
+1. Sélectionnez **Tous les services** dans la barre latérale à gauche de la page.
 2. Recherchez **Intune** dans la zone de filtre.
 3. Sélectionnez **l’étoile** pour ajouter Intune en bas de la liste de vos services favoris.
 4. Pointez sur le service Intune. Sélectionnez et faites glisser Intune à l’aide des **trois points verticaux** à droite du nom du service.
@@ -52,7 +52,7 @@ Cette fonctionnalité est plus pertinente une fois que vous avez ajouté davanta
 
 ## <a name="using-services"></a>Utilisation des services
 
-Chaque fois que vous ouvrez Microsoft Intune ou un autre service dans Azure, le service s’affiche dans un **panneau**. Certaines des premières charges de travail que vous utilisez dans Intune, comme **Utilisateurs**, **Groupes** et **Applications mobiles**, apparaissent dans un panneau en plein écran. Quand vous sélectionnez la charge de travail, ce panneau s’ouvre dans la page entière. D’autres panneaux s’ouvrent en glissant à partir de la droite et sont réduits sous le panneau principal d’où ils proviennent.
+Chaque fois que vous ouvrez Intune ou un autre service dans Azure, le service s’affiche dans un **volet**. Certaines des premières charges de travail que vous utilisez dans Intune, comme **Utilisateurs**, **Groupes** et **Applications mobiles**, apparaissent dans un volet en plein écran. Quand vous sélectionnez la charge de travail, ce volet s’ouvre en pleine page. D’autres volets s’ouvrent en glissant à partir de la droite du volet et sont réduits sous le volet principal d’où ils proviennent.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

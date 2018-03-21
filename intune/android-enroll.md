@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrire des appareils Android
 
@@ -55,9 +55,9 @@ Si vous inscrivez des appareils Android for Work à l’aide d’un compte de [G
 1. **Configurer la gestion des appareils mobiles Intune**<br>
 Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en définissant **Microsoft Intune** comme [autorité de gestion des appareils mobiles](mdm-authority-set.md).
 2. **Configurer une liaison Android for Work**<br>
-    En tant qu’administrateur Intune, dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.
+    En tant qu’administrateur Intune, dans le [portail Azure](https://portal.azure.com), choisissez **Tous les services** > **Surveillance + Gestion** > **Intune**.
 
-   a. Dans le panneau **Intune**, choisissez **Inscription de l’appareil** > **Inscription d’Android for Work**, puis choisissez **Configurer** pour ouvrir le site web Android for Work de Google Play. Le site web s’ouvre dans un nouvel onglet dans votre navigateur.
+   a. Dans le volet **Intune**, choisissez **Inscription des appareils** > **Inscription Android for Work**, puis choisissez **Google Play managé - Configurer** pour ouvrir le site Web Android for Work de Google Play. Le site web s’ouvre dans un nouvel onglet dans votre navigateur.
    ![Écran d’inscription d’Android for Work](./media/android-work-bind.png)
 
    b. **Se connecter à Google**<br>
@@ -106,7 +106,7 @@ Vous pouvez désactiver l’inscription et la gestion Android for Work. Un clic 
 ### <a name="to-unbind-an-android-for-work-account"></a>Pour séparer un compte Android for Work
 
 1. **Séparer la liaison Android for Work**<br>
-    En tant qu’administrateur Intune, dans le portail Azure, choisissez **Plus de services** > **Surveillance + gestion** > **Intune**.  Dans le panneau **Intune**, choisissez **Inscription de l’appareil****Inscription d’Android for Work**, puis **Séparer**.
+    En tant qu’administrateur Intune, dans le [portail Azure](https://portal.azure.com), choisissez **Tous les services** > **Surveillance + Gestion** > **Intune**.  Dans le volet **Intune**, choisissez **Inscription des appareils**, > **Inscription Android for Work**, puis **Séparer**.
 
 2. **Confirmer la suppression de la liaison Android for Work**<br>
   Choisissez **Oui** pour supprimer la liaison et désinscrire tous les appareils Android for Work d’Intune.
