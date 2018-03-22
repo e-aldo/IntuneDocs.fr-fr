@@ -1,25 +1,25 @@
 ---
-title: "Gérer l’accès web avec l’application Managed Browser"
+title: Gérer l’accès web avec l’application Managed Browser
 titlesuffix: Microsoft Intune
-description: "Déployez l’application Managed Browser pour limiter la navigation sur le web et le transfert de données du web vers d’autres applications."
-keywords: 
-author: erikre
+description: Déployez l’application Managed Browser pour limiter la navigation sur le web et le transfert de données du web vers d’autres applications.
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d902ada21c2cf864c3e21ef02b886d16162853c
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 742173c1ef53337dab35694c0c04cbca60dbb07c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -35,7 +35,7 @@ Cette application étant intégrée au SDK Intune, vous pouvez également lui ap
 - Prévention des captures d’écran
 - Vérification que les liens vers du contenu que les utilisateurs sélectionnent s’ouvrent uniquement dans d’autres applications gérées
 
-Pour plus d’informations, consultez [Que sont les stratégies de protection des applications ?](/intune/app-protection-policy)
+Pour plus d’informations, consultez [Que sont les stratégies de protection des applications ?](/intune/app-protection-policy.md)
 
 Vous pouvez appliquer ces paramètres :
 
@@ -59,7 +59,47 @@ Vous pouvez créer des stratégies Managed Browser pour les types d'appareils su
 >Les versions antérieures d’Android et d’iOS pourront encore utiliser Managed Browser, mais elles ne pourront pas installer les nouvelles versions de l’application et n’auront peut-être pas accès à toutes les fonctionnalités. Nous vous encourageons à mettre à jour le système d’exploitation de ces appareils avec une version prise en charge.
 
 
-Intune Managed Browser prend en charge l’ouverture de contenu web des [partenaires de l’application Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
+Intune Managed Browser prend en charge l’ouverture de contenu web des [partenaires de l’application Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+## <a name="conditional-access-for-the-intune-managed-browser"></a>Accès conditionnel pour Intune Managed Browser
+
+Managed Browser est à présent une application cliente approuvée pour l’accès conditionnel. Cela signifie que vous pouvez restreindre l’accès au navigateur mobile pour les applications web connectées à Azure AD. Les utilisateurs peuvent ainsi uniquement utiliser Managed Browser, l’accès à partir de tout autre navigateur non protégé, comme Safari ou Chrome, étant bloqué. Cette protection est applicable aux ressources Azure comme Exchange Online et SharePoint Online, le portail Office et même les sites locaux exposés aux utilisateurs externes par le biais du [Proxy d’application Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+
+Pour obliger les applications web connectées à Azure AD à utiliser Intune Managed Browser sur des plateformes mobiles, vous pouvez créer une stratégie d’accès conditionnel Azure AD qui exige des applications clientes approuvées. 
+
+1. Dans le portail Azure, sélectionnez **Azure Active Directory** > **Applications d’entreprise** > **Accès conditionnel** > **Nouvelle stratégie**. 
+2. Ensuite, sélectionnez **Accorder** à partir de la section **Contrôles d’accès** du panneau. 
+3. Cliquez sur **Demander une application cliente approuvée**. 
+4. Cliquez sur **Sélectionner** dans le panneau **Accorder**. Cette stratégie doit être attribuée aux applications cloud à rendre accessibles uniquement pour l’application Intune Managed Browser.
+
+    ![Azure AD - Stratégie d’accès conditionnel Managed Browser](./media/managed-browser-conditional-access-01.png)
+
+5. Dans la section **Affectations**, sélectionnez **Conditions** > **Applications clientes**. Le panneau **Applications clientes** s’affiche.
+6. Cliquez sur **Oui** sous **Configurer** pour appliquer la stratégie à des applications clientes spécifiques.
+7. Vérifiez que **Browser** est sélectionné en tant qu’application cliente.
+
+    ![Azure AD - Managed Browser - Sélectionner des applications clientes](./media/managed-browser-conditional-access-02.png)
+
+    > [!NOTE]
+    > Pour restreindre les applications natives (applications sans navigateur) qui peuvent accéder à ces applications cloud, vous pouvez également sélectionner **Applications mobiles et clients de bureau**.
+
+8. Dans la section **Affectations**, sélectionnez **Utilisateurs et groupes**, puis choisissez les utilisateurs ou groupes à affecter à cette stratégie. 
+
+    > [!NOTE]
+    > Les utilisateurs doivent aussi être ciblés avec la stratégie de protection des applications Intune. Pour plus d’informations sur la création de stratégies de protection des applications Intune, consultez [Que sont les stratégies de protection des applications ?](app-protection-policy.md)
+
+9. Dans la section **Affectations**, sélectionnez **Applications cloud** pour choisir les applications à protéger avec cette stratégie.
+
+Une fois que la stratégie ci-dessus est configurée, les utilisateurs sont obligés d’utiliser Intune Managed Browser pour accéder aux applications web connectées à Azure AD que vous avez protégées avec cette stratégie. Si les utilisateurs essaient d’utiliser un navigateur non géré dans ce scénario, ils sont informés qu’ils doivent plutôt utiliser Intune Managed Browser.
+
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Authentification unique auprès des applications web connectées à Azure AD dans Intune Managed Browser
+
+L’application Intune Managed Browser sur iOS et Android peut à présent exploiter l’authentification unique auprès de toutes les applications web (locales et SaaS) connectées à Azure AD. Quand l’application Microsoft Authenticator sur iOS ou Portail d’entreprise Intune sur Android est installée, les utilisateurs d’Intune Managed Browser peuvent accéder aux applications web connectées à AD Azure sans avoir à retaper leurs informations d’identification.
+
+L’authentification unique dans Intune Managed Browser exige l’inscription de votre appareil par l’application Microsoft Authenticator sur iOS ou Portail d’entreprise Intune sur Android. Les utilisateurs dotés de l’application Authenticator ou Portail d’entreprise Intune sont invités à inscrire leur appareil quand ils accèdent à une application web connectée à Azure AD dans Intune Managed Browser, si ce dernier n’est pas déjà inscrit par une autre application. Une fois que l’appareil est inscrit avec le compte géré par Intune, l’authentification unique est activée dans ce compte pour les applications web connectées à Azure AD. 
+
+> [!NOTE]
+> L’inscription d’un appareil est un simple enregistrement auprès du service Azure AD. Elle ne nécessite pas une inscription complète et ne donne aucun autre privilège supplémentaire sur l’appareil.
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Créer une configuration d’application Managed Browser
 
@@ -102,7 +142,10 @@ Intune Managed Browser et le [proxy d’application Azure AD]( https://docs.micr
     - Pour configurer le proxy d’application et publier des applications, consultez la [documentation d’installation]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - Vous devez utiliser au minimum la version 1.2.0 de l’application Managed Browser.
 - Les utilisateurs de l’application Managed Browser ont une [stratégie de protection des applications Intune]( app-protection-policy.md) affectée à l’application.
-Remarque : La mise à jour des données de redirection du proxy d’application dans Managed Browser peut prendre jusqu’à 24 heures.
+
+    > [!NOTE]
+    > La mise à jour des données de redirection du proxy d’application dans Managed Browser peut prendre jusqu’à 24 heures.
+
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Étape 1 : Activer la redirection automatique vers Managed Browser à partir d’Outlook
 Outlook doit être configuré avec une stratégie de protection des applications qui active le paramètre **Restreindre le contenu web à afficher dans Managed Browser**.
@@ -115,6 +158,7 @@ Cette procédure configure l’application Managed Browser pour utiliser la redi
 |Clé|Valeur|
 |**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
 
+Pour plus d’informations sur la manière d’utiliser conjointement Managed Browser et le proxy d’application Azure AD pour un accès transparent (et protégé) à des applications web locales, consultez le billet de blog Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Comment configurer la page d’accueil de Managed Browser
 
@@ -123,7 +167,7 @@ Ce paramètre vous permet de configurer la page d’accueil que les utilisateurs
 |||
 |-|-|
 |Clé|Valeur|
-|**com.microsoft.intune.mam.managedbrowser.homepage**|Spécifiez une URL valide. Les URL incorrectes sont bloquées par mesure de sécurité.<br>Exemple : **https://www.bing.com**|
+|**com.microsoft.intune.mam.managedbrowser.homepage**|Spécifiez une URL valide. Les URL incorrectes sont bloquées par mesure de sécurité.<br>Exemple : **https://www.bing.com**|
 
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Comment configurer des signets pour Managed Browser
@@ -139,7 +183,7 @@ Ce paramètre vous permet de configurer un ensemble de signets pour les utilisat
 |||
 |-|-|
 |Clé|Valeur|
-|**com.microsoft.intune.mam.managedbrowser.bookmarks**|La valeur de cette configuration est une liste de signets. Chaque signet comprend le titre et l’URL du signet. Séparez le titre et l’URL par le caractère **&#124;**.<br><br>Exemple : **Microsoft Bing&#124;https://www.bing.com**<br><br>Pour configurer plusieurs signets, séparez chaque paire par deux caractères, **&#124;&#124;**<br><br>Exemple : **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+|**com.microsoft.intune.mam.managedbrowser.bookmarks**|La valeur de cette configuration est une liste de signets. Chaque signet comprend le titre et l’URL du signet. Séparez le titre et l’URL par le caractère **&#124;**.<br><br>Exemple : **Microsoft Bing&#124;https://www.bing.com**<br><br>Pour configurer plusieurs signets, séparez chaque paire par deux caractères, **&#124;&#124;**<br><br>Exemple : **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Guide de spécification des URL autorisées et bloquées pour Managed Browser
 
@@ -175,12 +219,12 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 |-------|---------------|-----------|------------------|
 |http://www.contoso.com|Correspond à une page unique|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
 |http://contoso.com|Correspond à une page unique|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-|http://www.contoso.com/&#42;|Correspond à toutes les URL commençant par www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://www.contoso.com/&#42 ;|Correspond à toutes les URL commençant par www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
 |http://&#42;.contoso.com/&#42;|Correspond à tous les sous-domaines sous contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
 |http://www.contoso.com/images|Correspond à un dossier unique|www.contoso.com/images|www.contoso.com/images/dogs|
 |http://www.contoso.com:80|Correspond à une page unique, via l’utilisation d’un numéro de port|http://www.contoso.com:80|
 |https://www.contoso.com|Correspond à une page unique sécurisée|https://www.contoso.com|http://www.contoso.com|
-|http://www.contoso.com/images/&#42;|Correspond à un dossier unique et à tous ses sous-dossiers|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|http://www.contoso.com/images/&#42 ;|Correspond à un dossier unique et à tous ses sous-dossiers|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   Voici quelques exemples d’entrées que vous ne pouvez pas spécifier :
 
@@ -200,7 +244,7 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
     -   http://&#42;
 
-    -   http://www.contoso.com:&#42;
+    -   http://www.contoso.com:&#42 ;
 
     -   http://www.contoso.com: /&#42;
 
@@ -247,3 +291,7 @@ Microsoft recueille automatiquement des données anonymes sur les performances e
 
 ### <a name="turn-off-usage-data"></a>Désactiver les données d’utilisation
 Microsoft recueille automatiquement des données anonymes sur les performances et l’utilisation de Managed Browser pour améliorer les produits et services Microsoft. Les utilisateurs peuvent désactiver la collecte de données à l’aide du paramètre **Données d’utilisation** de leurs appareils. Vous n’avez aucun contrôle sur la collecte de ces données.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+- [Que sont les stratégies de protection des applications ?](app-protection-policy.md)

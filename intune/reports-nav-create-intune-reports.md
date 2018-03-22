@@ -1,25 +1,25 @@
 ---
-title: "Utiliser l’entrepôt de données Intune"
+title: Utiliser l’entrepôt de données Intune
 titlesuffix: Microsoft Intune
-description: "Utilisez l’entrepôt de données Intune pour générer des rapports qui fournissent des insights sur l’environnement mobile de votre entreprise."
-keywords: "Entrepôt de données Intune"
+description: Utilisez l’entrepôt de données Intune pour générer des rapports qui fournissent des insights sur l’environnement mobile de votre entreprise.
+keywords: Entrepôt de données Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd90c9d51fe212b0675da4d6039a535be0ff3c89
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 328d8b3787bcef20a1d4949eba427cd8737edafe
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-the-intune-data-warehouse"></a>Utiliser l’entrepôt de données Intune
 
@@ -37,7 +37,7 @@ L’entrepôt de données vous donne plus d’informations sur votre environneme
   -  Modèle de données utilisant la norme OData
 
 > [!Note]
-> Si vous utilisez une gestion des appareils mobiles (MDM) hybride avec System Center Configuration Manager et Microsoft Intune, vous pouvez récupérer vos données de SCCM. L’entrepôt de données Intune ne contient que des données Intune. Vous pouvez utiliser un tableau de bord SCCM Power BI pour vos rapports personnalisés. Pour plus d’informations, consultez [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) (Annonce du modèle de solution Power BI pour System Center Configuration Manager) et [Créer un rapport et un tableau de bord Power BI](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard).
+> Si vous utilisez une gestion des appareils mobiles (MDM) hybride avec System Center Configuration Manager et Microsoft Intune, vous pouvez récupérer vos données de SCCM. L’entrepôt de données Intune ne contient que des données Intune. Vous pouvez utiliser un tableau de bord SCCM Power BI pour vos rapports personnalisés. Pour plus d’informations, consultez [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) et [Contenu Power BI pour Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).
 
 
 > [!Important]  

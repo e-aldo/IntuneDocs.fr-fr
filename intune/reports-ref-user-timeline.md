@@ -1,34 +1,35 @@
 ---
-title: "Chronologie des entités utilisateur de l’entrepôt de données | Microsoft Docs"
-description: "L’entrepôt de données Intune représente les utilisateurs sous forme de chronologie."
-keywords: "Entrepôt de données Intune"
+title: Chronologie des entités utilisateur de l’entrepôt de données
+titlesuffix: Microsoft Intune
+description: Découvrez la manière dont l’entrepôt de données Intune représente les utilisateurs sous forme de chronologie.
+keywords: Entrepôt de données Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Représentation de durée de vie utilisateur dans l’entrepôt de données Intune
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Représentation de durée de vie utilisateur dans l’entrepôt de données Microsoft Intune
 
 Vous pouvez utiliser le mois des instantanés de données stockés dans l’entrepôt de données Intune pour répondre aux questions relatives aux tendances basées sur la durée. Par exemple, vous pouvez rechercher le nombre d’utilisateurs ajoutés au cours d’un mois. Vous pouvez également consulter le nombre d’utilisateurs ayant été supprimés du système.
 
-Pour fournir ces informations, l’entrepôt de données stocke des informations d’historique. Cela signifie qu’il peut effectuer le suivi de la durée de vie d’une entité. L’entrepôt enregistre la date de création d’une entité, la date de modification de son état et sa date de suppression. L’historique capturé à l’aide d’instantanés quotidiens de mesures quantitatives vous permet de comparer un jour donné avec le jour précédent, etc.
+Pour fournir ce type d’insight, l’entrepôt de données stocke des informations d’historique. L’entrepôt de données peut effectuer le suivi de la durée de vie d’une entité. L’entrepôt enregistre la date de création d’une entité, la date de modification de son état et sa date de suppression. L’historique capturé à l’aide d’instantanés quotidiens de mesures quantitatives vous permet de comparer un jour donné avec le jour précédent, etc.
 
 Le suivi de la durée de vie d’entités peut s’avérer complexe en raison de leurs changements d’état. Par exemple, si vous consultez un instantané le 30 d’un mois particulier, un enregistrement utilisateur peut ne pas exister dans un état actif dans les données. Mais le 28 et le 29 de ce même mois, l’enregistrement d’entité existe peut-être dans un état actif. Et avant le 28, l’utilisateur n’existait pas du tout.
 
-Cet exemple sera plus clair si nous examinons le suivi de la durée de vie d’une entité.
+Cet exemple est plus clair si vous examinez la durée de vie d’une entité.
 
 Supposons qu’une licence est accordée à un utilisateur, **John Smith**, le 01/06/2017. La table **Utilisateur** aurait alors l’entrée suivante : 
  
@@ -75,5 +76,5 @@ Toute personne souhaitant afficher uniquement ces entités de dimension qui exis
 
 ## <a name="next-steps"></a>Étapes suivantes
 
- - Pour en savoir plus sur l’entité **Current User**, consultez [Informations de référence sur l’entité Current User](reports-ref-current-user.md).
- - Pour en savoir plus sur l’entité **User**, consultez [Informations de référence sur l’entité User](reports-ref-user.md).
+ - Pour en savoir plus sur l’entité **Utilisateur actuel**, consultez [Informations de référence sur l’entité Utilisateur actuel](reports-ref-current-user.md).
+ - Pour en savoir plus sur l’entité **Utilisateur**, consultez [Informations de référence sur l’entité Utilisateur](reports-ref-user.md).

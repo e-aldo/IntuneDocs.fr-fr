@@ -1,27 +1,30 @@
 ---
-title: "Paramètres de stratégie de gestion des applications mobiles iOS"
-description: "Cette rubrique décrit les paramètres de stratégie de gestion des applications mobiles pour les appareils iOS."
-keywords: 
+title: Paramètres de stratégie de gestion des applications mobiles iOS
+description: Cette rubrique décrit les paramètres de stratégie de gestion des applications mobiles pour les appareils iOS.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae861de505964e830aadc1cd913561462762f282
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c4a87223a25ba26492e8db1731594f844136e003
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/20/2018
 ---
 #  <a name="ios-mobile-app-protection-policy-settings"></a>Paramètres de stratégie de protection des applications mobiles iOS
+
+> [!IMPORTANT]
+> Le contenu de cette page est à présent largement obsolète, étant donné que les stratégies de protection des applications Intune ont entièrement migré vers le portail Azure. Découvrez-en plus sur les [stratégies de protection des applications Intune pour iOS dans le portail Azure](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -40,7 +43,7 @@ Il existe deux catégories de paramètres de stratégie : réadressage des donn
 | **Restreindre les opérations couper, copier et coller avec d'autres applications** | Spécifiez quand autoriser les actions couper, copier et coller avec cette application. Choisissez parmi : <ul><li>**Bloqué** : ne pas autoriser les actions couper, copier et coller entre cette application et une autre application.</li><li>**Applications gérées par la stratégie** : autoriser seulement les actions couper, copier et coller entre cette application et les autres applications gérées par la stratégie.</li><li>**Applications gérées par la stratégie avec Coller dans** : autoriser les actions couper et copier entre cette application et les autres applications gérées par la stratégie. Autoriser le collage dans cette application de données à partir de n'importe quelle application.</li><li>**N’importe quelle application** : aucune restriction pour les actions couper, copier et coller vers et depuis cette application. | N’importe quelle application |
 |**Limiter le contenu web à afficher dans Managed Browser** | Choisissez **Oui** pour appliquer des liens web dans l’application à ouvrir dans l’application Managed Browser. <br><br> Pour les appareils non inscrits dans Intune, les liens web contenus dans les applications gérées par la stratégie peuvent s’ouvrir uniquement dans l’application Managed Browser. <br><br> Si vous utilisez Intune pour gérer vos appareils, consultez [Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune](manage-internet-access-using-managed-browser-policies.md). | Non |
 | **Chiffrer les données de l'application** | Pour les applications gérés par la stratégie, les données sont chiffrées au repos à l'aide du schéma de chiffrement au niveau de l'appareil fourni par iOS. Quand un code confidentiel est nécessaire, les données sont chiffrées selon les paramètres de la stratégie de protection des applications. <br><br> Accédez à la documentation officielle Apple [ici](https://support.apple.com/HT202739) pour savoir quels modules de chiffrement iOS sont certifiés FIPS 140-2 ou en attente de la certification FIPS 140-2. <br><br> Spécifiez quand les données professionnelles ou scolaires de cette application sont chiffrées. Choisissez parmi : <ul><li>**Quand l’appareil est verrouillé** : toutes les données d’application associées à cette stratégie sont chiffrées pendant que l’appareil est verrouillé.</li><li>**Quand l'appareil est verrouillé et que des fichiers sont ouverts** : toutes les données d’application associées à cette stratégie sont chiffrées pendant que l’appareil est verrouillé, à l’exception des données figurant dans les fichiers qui sont ouverts dans l’application.</li><li>**Après le redémarrage de l’appareil** : toutes les données d’application associées à cette stratégie sont chiffrées quand l’appareil est redémarré, jusqu’à ce que l’appareil soit déverrouillé pour la première fois.</li><li>**Utiliser les paramètres de l’appareil** : les données d’application sont chiffrées conformément aux paramètres par défaut de l’appareil. </li></ul> Quand vous activez ce paramètre, l’utilisateur peut être invité à définir et à utiliser un code PIN pour accéder à son appareil.  Si l’appareil n’a pas de code PIN alors que le chiffrement est obligatoire, les applications ne s’ouvrent pas et le message « Votre entreprise vous demande d’activer d’abord un code PIN sur l’appareil pour accéder à cette application. » invite l’utilisateur à définir un code PIN.  | Quand l’appareil est verrouillé |
-| **Désactiver la synchronisation des contacts** | Choisissez **Oui** pour empêcher l’application d'enregistrer les données vers l’application Contacts native sur l'appareil. Si vous choisissez **Non**, l’application peut enregistrer des données vers l’application Contacts native sur l'appareil. <br><br>Lorsque vous effectuez une réinitialisation sélective pour supprimer des données professionnelles ou scolaires à partir de l’application, les contacts directement synchronisés à partir de l’application vers l'application Contacts native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être effacés. Ceci s’applique uniquement à l’application Microsoft Outlook. | Non |
+| **Désactiver la synchronisation des contacts** | Choisissez **Oui** pour empêcher l’application d'enregistrer les données vers l’application Contacts native sur l'appareil. Si vous choisissez **Non**, l’application peut enregistrer des données vers l’application Contacts native sur l'appareil. <br><br>Lorsque vous effectuez une réinitialisation sélective pour supprimer des données professionnelles ou scolaires à partir de l’application, les contacts directement synchronisés à partir de l’application vers l'application Contacts native sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. Ceci s’applique uniquement à l’application Microsoft Outlook. | Non |
 | **Désactiver l’impression** | Choisissez **Oui** pour empêcher l’application d'imprimer des données professionnelles ou scolaires. | Non |
 | **Sélectionnez dans quels services de stockage les données d'entreprise peuvent être enregistrées** | Les utilisateurs peuvent enregistrer dans les services sélectionnés (OneDrive Entreprise, SharePoint et le stockage local). Tous les autres services seront bloqués. | 0 Sélectionné |
 

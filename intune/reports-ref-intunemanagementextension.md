@@ -1,24 +1,25 @@
 ---
-title: "Entité IntuneManagementExtension | Microsoft Docs"
-description: "Rubrique de référence sur la catégorie d’entités IntuneManagementExtension dans l’API d’entrepôt de données Intune."
-keywords: "Entrepôt de données Intune"
+title: Entité IntuneManagementExtension
+titlesuffix: Microsoft Intune
+description: Rubrique de référence sur la catégorie d’entités IntuneManagementExtension dans l’API d’entrepôt de données Intune.
+keywords: Entrepôt de données Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93a5fde5f0c6ac870104ab90035e119757064cb3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 74c6868caace323699e4c84ddc90278dadb56b6a
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-intune-management-extension"></a>Informations de référence sur l’extension de la gestion Intune
 
@@ -43,7 +44,7 @@ L’entité **IntuneManagementExtensionVersion** liste toutes les versions utili
 | Propriété  | Description | Exemple |
 |---------|------------|--------|
 | ExtensionStateKey |Identificateur unique de l’état d’intégrité. | 2 |
-| ExtensionState |État d’intégrité d’une IntuneManagementExtension. | Intègre |
+| ExtensionState |État d’intégrité d’une IntuneManagementExtension. | Healthy |
 
 ## <a name="intunemanagementextension"></a>IntuneManagementExtension
 

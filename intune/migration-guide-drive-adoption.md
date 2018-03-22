@@ -1,25 +1,26 @@
 ---
-title: "Encourager l’adoption par les utilisateurs finaux avec l’accès conditionnel"
-description: "Cet article fournit des informations sur la façon d’utiliser l’accès conditionnel pour encourager l’inscription dans Intune."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Encourager l’adoption par les utilisateurs finaux avec l’accès conditionnel
+titlesuffix: Microsoft Intune
+description: Découvrez comment utiliser l’accès conditionnel pour encourager les inscriptions dans Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 180cecde31627192363bb00f58fb13f7ec123744
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 31e2a79e5506666cc5ebe655536600b57a429802
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="drive-end-user-adoption-with-conditional-access"></a>Encourager l’adoption par les utilisateurs finaux avec l’accès conditionnel
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Encourager l’adoption par les utilisateurs finaux avec l’accès conditionnel dans Microsoft Intune
 
 En activant les fonctionnalités d’accès conditionnel avec Intune (par exemple, le blocage des e-mails sur les appareils non inscrits), vous pouvez encourager l’inscription des appareils et leur mise en conformité. Toutefois, ce n’est pas nécessaire pour assurer la réussite de la migration. En effet, ce sont les objectifs relatifs à l’adoption et les exigences en matière de sécurité qui déterminent sa réussite.
 

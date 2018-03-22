@@ -1,25 +1,25 @@
 ---
-title: "Activer la conformité de Google Play Protect avec Intune"
-titleSuffix: Azure portal
-description: "Apprenez à créer une stratégie de conformité pour les appareils Android afin d’activer Google Play Protect."
-keywords: 
+title: Activer la conformité de Google Play Protect avec Microsoft Intune
+titleSuffix: ''
+description: Apprenez à créer une stratégie de conformité pour les appareils Android afin d’activer Google Play Protect.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 89f5d85b89a1d7da74769fe92268a054bb762961
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Création d’une stratégie de conformité pour activer Google Play Protect
 

@@ -1,25 +1,27 @@
 ---
-title: "Empêcher tout accès non autorisé aux données d’entreprise"
-description: "Empêchez tout accès non autorisé aux données de votre entreprise quand elles sont partagées à l’extérieur du réseau d’entreprise."
-keywords: "Office 365 O365 Azure Information Protection protéger les données à l’extérieur du réseau données d’entreprise"
-author: arob98
+title: Empêcher tout accès non autorisé aux données d’entreprise
+titlesuffix: Microsoft Intune
+description: Empêchez tout accès non autorisé aux données de votre entreprise quand elles sont partagées à l’extérieur du réseau d’entreprise à l’aide de Microsoft Intune.
+keywords: Office 365 O365 Azure Information Protection protéger les données à l’extérieur du réseau données d’entreprise
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-unauthorized-access-to-company-data"></a>Empêcher tout accès non autorisé aux données d’entreprise 
+# <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Empêcher l’accès non autorisé aux données d’entreprise à l’aide de Microsoft Intune
 
 Vous pouvez classifier, étiqueter et protéger les e-mails et documents Office 365 pour que seuls les utilisateurs autorisés aient accès aux données. Les paramètres sont gérés automatiquement une fois que les administrateurs informatiques ou utilisateurs ont défini les règles et conditions. L’équipe informatique peut également fournir les paramètres recommandés que les utilisateurs doivent utiliser. Les administrateurs et les utilisateurs peuvent aussi révoquer l’accès aux données déjà partagées avec d’autres personnes sans l’aide d’une autre autorité. Le résultat de ce travail consiste à contrôler qui ouvre ou met à jour les données protégées, même quand les données quittent le réseau de l’entreprise. 
 

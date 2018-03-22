@@ -1,25 +1,25 @@
 ---
-title: "Configurer l’intégration de Lookout à Microsoft Intune"
-titlesuffix: 
-description: "Découvrez-en plus sur l’intégration d’Intune avec Lookout Mobile Threat Defense (MTD) pour contrôler l’accès des appareils mobiles aux ressources de votre entreprise."
-keywords: 
+title: Configurer l’intégration de Lookout à Microsoft Intune
+titlesuffix: ''
+description: Découvrez-en plus sur l’intégration d’Intune avec Lookout Mobile Threat Defense (MTD) pour contrôler l’accès des appareils mobiles aux ressources de votre entreprise.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurer l’intégration de Lookout Mobile Threat Defense avec Intune
 
@@ -67,13 +67,11 @@ Consultez les étapes suivantes pour savoir comment collecter les informations d
 
 ## <a name="configure-your-subscription"></a>Configurer votre abonnement
 
-1. Une fois que le support technique de Lookout crée votre compte d'entreprise Lookout, Lookout envoie un e-mail au contact principal de votre entreprise, avec un lien vers l'URL de connexion : https://aad.lookout.com/les?action=consent.
+1. Une fois que le support de Lookout crée votre compte d'entreprise Lookout, Lookout envoie au contact principal de votre entreprise un e-mail contenant un lien vers l’URL de connexion : https://aad.lookout.com/les?action=consent.
 
 2.  La première connexion à la console Lookout doit être effectuée à l'aide d'un compte d’utilisateur ayant le rôle Azure AD Administrateur général, afin d'inscrire votre locataire Azure AD. Les connexions ultérieures n'ont pas besoin de ce niveau de privilège Azure AD. La page de consentement s’affiche. Choisissez **Accepter** pour terminer l’inscription. Une fois que vous avez donné votre consentement, vous êtes redirigé vers la console Lookout.
 
     ![capture d’écran de la page de première connexion de la console Lookout](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > Consultez la page [Résolution des problèmes d’intégration Lookout](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) pour obtenir de l'aide sur la résolution des problèmes de connexion.
 
 3.  Dans la [console Lookout](https://aad.lookout.com), à partir du module **Système**, choisissez l’onglet **Connecteurs**, puis sélectionnez **Intune**.
 

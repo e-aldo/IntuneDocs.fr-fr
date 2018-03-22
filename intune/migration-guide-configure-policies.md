@@ -1,25 +1,26 @@
 ---
-title: "Configurer des stratégies de gestion des applications et de la conformité des appareils lors d’une migration Intune"
-description: "Cet article décrit les étapes nécessaires pour configurer des stratégies de gestion des applications et de conformité des appareils durant une migration Intune."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Configurer des stratégies de gestion des applications et de la conformité des appareils lors d’une migration Intune
+titlesuffix: Microsoft Intune
+description: Cet article décrit les étapes nécessaires pour configurer des stratégies de gestion des applications et de conformité des appareils durant une migration Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="configure-device-compliance-and-app-management-policies"></a>Configurer les stratégies de gestion des applications et de la conformité des appareils
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurer des stratégies de gestion des applications et de conformité lors de la migration vers Microsoft Intune
 
 Durant la migration vers Intune, l’objectif principal consiste à assurer l’inscription de l’ensemble des appareils dans Intune et ce, dans le respect des stratégies en place. En effet, les stratégies de gestion des appareils vous permettent d’administrer les appareils d’entreprise d’un seul utilisateur, mais également les appareils personnels (BYOD) et partagés tels que les bornes, les terminaux de vente, les tablettes partagées par plusieurs étudiants ou les appareils sans utilisateur (iOS uniquement).
 

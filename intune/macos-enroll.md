@@ -1,25 +1,25 @@
 ---
-title: "Configurer l’inscription des appareils macOS"
+title: Configurer l’inscription des appareils macOS
 titlesuffix: Microsoft Intune
-description: "Découvrez comment configurer l’inscription des appareils macOS dans Intune."
-keywords: 
+description: Découvrez comment configurer l’inscription des appareils macOS dans Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/30/2017
+ms.date: 03/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77a1551321079765f00f0e35d57211ae4c99e5a6
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c1fb846dc65ee14315edf7b9ba15e0e24998a3a2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurer l’inscription des appareils macOS dans Intune
 
@@ -53,9 +53,20 @@ Pour empêcher l’inscription des appareils Mac OS, consultez [Définir des re
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Indiquez à vos utilisateurs comment inscrire leurs appareils de manière à ce qu’ils puissent accéder aux ressources de l’entreprise
 
-Indiquez à vos utilisateurs finaux d’accéder au [site web Portail d’entreprise](http://portal.manage.microsoft.com) et de suivre les invites pour inscrire leurs appareils. Vous pouvez également leur envoyer un lien vers les étapes d’inscription en ligne : [Inscrire votre appareil Mac OS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Indiquez à vos utilisateurs finaux d’accéder au [site web Portail d’entreprise](https://portal.manage.microsoft.com) et de suivre les invites pour inscrire leurs appareils. Vous pouvez également leur envoyer un lien vers les étapes d’inscription en ligne : [Inscrire votre appareil Mac OS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Pour plus d’informations sur les autres tâches de l’utilisateur final, consultez les articles suivants :
 
 - [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](end-user-educate.md)
 - [Utiliser un appareil macOS avec Intune](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="enroll-virtual-macos-machines-for-testing"></a>Inscrire des machines virtuelles macOS à des fins de test
+
+> [!NOTE]
+> Les machines virtuelles macOS sont uniquement prises en charge à des fins de test. Vous ne devez pas utiliser des machines virtuelles macOS en tant qu’appareils de production pour vos utilisateurs finaux. 
+
+Vous pouvez inscrire des machines virtuelles macOS à des fins de test à l’aide de Parallels Desktop ou de VMware Fusion. 
+
+Pour Parallels Desktop, vous avez besoin de définir le type de matériel et le numéro de série des machines virtuelles pour qu’Intune puisse les reconnaître. Suivez les instructions de Parallels pour [définir le type de matériel](http://kb.parallels.com/123594) et le [numéro de série](http://kb.parallels.com/123455) afin de configurer les paramètres nécessaires au test. Nous vous recommandons de faire correspondre le type de matériel de l’appareil qui exécute les machines virtuelles à celui des machines virtuelles que vous créez. Vous pouvez trouver ce type de matériel dans le **menu Pomme** > **À propos de ce Mac** > **Rapport système** > **Identifiant du modèle**. 
+
+Pour VMware Fusion, vous devez [modifier le fichier .vmx](https://kb.vmware.com/s/article/1014782) pour définir le modèle matériel et le numéro de série de la machine virtuelle. Nous vous recommandons de faire correspondre le type de matériel de l’appareil qui exécute les machines virtuelles à celui des machines virtuelles que vous créez. Vous pouvez trouver ce type de matériel dans le **menu Pomme** > **À propos de ce Mac** > **Rapport système** > **Identifiant du modèle**. 

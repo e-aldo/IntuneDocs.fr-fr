@@ -1,25 +1,25 @@
 ---
-title: "Configurer l’inscription d’appareils Windows à l’aide de Microsoft Intune"
-titlesuffix: 
-description: "Configurer l’inscription d’appareils Windows."
-keywords: 
+title: Configurer l’inscription d’appareils Windows à l’aide de Microsoft Intune
+titlesuffix: ''
+description: Configurer l’inscription d’appareils Windows.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21849cd4bb1c77334fdc3e9e347365a25ab4df2d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurer l’inscription d’appareils Windows
 
@@ -85,6 +85,9 @@ Informez vos utilisateurs sur la manière d’inscrire leurs appareils Windows e
 > Les utilisateurs finaux doivent accéder au site web du Portail d’entreprise par le biais de Microsoft Edge pour afficher les applications Windows que vous avez affectées pour des versions spécifiques de Windows. D’autres navigateurs, notamment Google Chrome, Mozilla Firefox et Internet Explorer, ne prennent pas en charge ce type de filtrage.
 
 Pour obtenir des instructions d’inscription pour les utilisateurs finaux, consultez [Inscrire un appareil Windows dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). Vous pouvez également diriger les utilisateurs vers la rubrique [Que voit mon administrateur informatique quand j’inscris mon appareil ?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+
+>[!IMPORTANT]
+> Si vous n’avez pas activé l’inscription MDM automatique, alors que des appareils Windows 10 sont joints à Azure AD, deux enregistrements sont visibles dans la console Intune après l’inscription. Vous pouvez mettre fin à ce double affichage en vérifiant que les utilisateurs dotés d’appareils joints à Azure AD accèdent à **Comptes** > **Accès Professionnel ou Scolaire** et **Connect** en utilisant le même compte. 
 
 Pour plus d’informations sur les tâches de l’utilisateur final, consultez [Ressources concernant l’expérience utilisateur final avec Microsoft Intune](end-user-educate.md).
 

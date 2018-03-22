@@ -1,29 +1,30 @@
 ---
 title: Guide de migration de la gestion des appareils mobiles Intune
-description: "Ce guide vous présente des informations détaillées sur la migration à partir d’un fournisseur MDM tiers vers Microsoft Intune."
-keywords: 
-author: andredm7
-ms.author: andredm
+titlesuffix: Microsoft Intune
+description: Ce guide vous présente des informations détaillées sur la migration à partir d’un fournisseur MDM tiers vers Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 888624530fe77f22ea9391b688fa9f9b92f0ac75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9bfefff2ef5960b6e52a8a37c2fd31466d16cbff
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-migration-guide"></a>Guide de migration Intune
 
-![Image du guide de migration de MDM Intune](./media/MDM-migration-guide-art.PNG)
+![Image du guide de migration de MDM Microsoft Intune](./media/MDM-migration-guide-art.PNG)
 
-Pour réussir votre migration vers Intune, vous devez d’abord élaborer un plan robuste prenant en compte votre environnement actuel de gestion des appareils mobiles (MDM), les objectifs commerciaux et les critères techniques. En outre, vous devez déterminer les parties prenantes qui prendront en charge et participeront à votre plan de migration.
+Pour réussir votre migration vers Microsoft Intune, vous devez d’abord élaborer un plan robuste prenant en compte votre environnement actuel de gestion des appareils mobiles (MDM), les objectifs commerciaux et les critères techniques. De plus, vous devez inclure les parties prenantes qui prendront en charge et participeront à votre plan de migration.
 
 Ce guide vous présente des informations détaillées sur la migration à partir d’un fournisseur MDM tiers vers Intune.
 

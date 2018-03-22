@@ -1,35 +1,30 @@
 ---
-title: "Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune"
-description: "Découvrez ce qui a changé dans l’interface utilisateur des applications qui fonctionnent sur les appareils des utilisateurs finaux avec Intune."
-keywords: 
+title: Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
+titlesuffix: Microsoft Intune
+description: Découvrez ce qui a changé dans l’interface utilisateur des applications qui fonctionnent sur les appareils des utilisateurs finaux avec Microsoft Intune.
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
-Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Cela peut vous aider pour vos communications avec les utilisateurs et pour la mise à jour de la documentation personnalisée que vous avez créée pour votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
+Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Comprendre ces mises à jour peut vous aider dans vos communications avec les utilisateurs et dans la mise à jour de la documentation personnalisée que vous avez créée pour accompagner votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
 
-## <a name="week-of-december-11-2017"></a>Semaine du 11 décembre 2017
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Messagerie d’utilisateur final pour les comptes <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-Les utilisateurs du site web Portail d’entreprise ne pourront pas exécuter des actions qui nécessitent un accès en écriture à votre client. Ils recevront un message d’erreur expliquant que leur compte est en cours de maintenance. Des modifications similaires seront bientôt disponibles sur les applications Portail d’entreprise pour Android, iOS, macOS et Windows.
-
-![Un message d’erreur s’affiche lors du déplacement d’un compte](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>Semaine du 27 novembre 2017
 
@@ -213,7 +208,7 @@ Cliquez sur le lien __Se connecter à partir d’un autre appareil__.
 
 ![Suivez les instructions fournies pour accéder à la page aka.ms/devicelogin avec un code d’accès unique à partir de votre ordinateur, puis utilisez le code pour vous connecter.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Ouvrez un navigateur et accédez à [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+Lancez un navigateur et accédez à [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 ![Une image du navigateur de l’utilisateur sur son ordinateur de travail plutôt sur son application Portail d’entreprise. La page « Connexion à l’appareil » invite l’utilisateur à saisir le code qu’il a reçu dans l’application Portail d’entreprise.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -229,7 +224,7 @@ L’application Portail d’entreprise commence la procédure de connexion.
 
 ## <a name="june-2017"></a>Juin 2017
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>L’application Portail d’entreprise pour Android présente désormais une nouvelle expérience d’utilisateur final pour les stratégies de protection des applications <!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>L’application Portail d’entreprise pour Android présente désormais une nouvelle expérience d’utilisateur final pour les stratégies de protection des applications
 En fonction des commentaires des clients, nous avons modifié l’application Portail d’entreprise pour Android afin d’afficher un bouton **Accéder au contenu de l’entreprise**. Le but est d’empêcher les utilisateurs finaux de passer inutilement par le processus d’inscription quand ils ont uniquement besoin d’accéder aux applications qui prennent en charge les stratégies de protection des applications, une fonctionnalité de gestion des applications mobiles Intune.
 
 L’utilisateur appuie sur le bouton **Accéder au contenu de l’entreprise** au lieu de commencer à inscrire l’appareil.
@@ -261,7 +256,7 @@ Cette mise à jour est visible uniquement sur les appareils exécutant la Mise �
 
 ![Image de la page de configuration de l’application Portail d’entreprise Windows 10, qui avertit l’utilisateur qu’il doit ajouter un compte d’entreprise à cet appareil avant de pouvoir l’inscrire pour la gestion.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![Image de la page Ajouter un compte d’entreprise à cet appareil de l’application Portail d’entreprise Windows 10, qui signale à l’utilisateur qu’il devra accéder à l’application Paramètres et sélectionner « Se connecter » pour effectuer l’inscription. Après cela, l’écran lui indique qu’il doit retourner à l’application Portail d’entreprise pour terminer l’inscription.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![Image de la page Ajouter un compte d’entreprise à cet appareil de l’application Portail d’entreprise Windows 10, qui signale à l’utilisateur qu’il devra accéder à l’application Paramètres et sélectionner « Se connecter » pour effectuer l’inscription. Après cela, l’écran lui indique qu’il doit retourner à l’application Portail d’entreprise pour terminer l’inscription.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
 ![Image de l’écran Inscrire à la gestion de l’application Portail d’entreprise Windows 10, qui affiche un message d’état de fin indiquant que l’appareil de l’utilisateur est maintenant inscrit et qu’il doit appuyer sur le bouton « Suivant » pour continuer.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
@@ -313,7 +308,7 @@ Managed Browser reçoit des icônes mises à jour pour les versions iOS et Andro
 
 Le portail d’entreprise reçoit également des icônes mises à jour pour les versions Android, iOS et Windows de l’application, afin d’améliorer la cohérence avec d’autres applications dans EM + S. Ces icônes seront publiées progressivement sur toutes les plateformes du mois d’avril jusqu’à fin mai.
 
-### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicateur de progression de connexion dans le portail d’entreprise Android <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicateur de progression de connexion dans Portail d’entreprise Android <!--953374-->
 
 Une mise à jour de l’application Portail d’entreprise Android affiche un indicateur de progression de connexion quand l’utilisateur lance l’application ou effectue une reprise. L’indicateur affiche successivement les nouveaux états, en commençant par « Connexion... », puis « Connexion en cours », puis « Vérification des exigences de sécurité... », avant d’autoriser l’utilisateur à accéder à l’application.
 
@@ -322,13 +317,13 @@ Une mise à jour de l’application Portail d’entreprise Android affiche un in
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ Voici les moyens envisagés pour améliorer l’expérience utilisateur en metta
 > [!Note]
 > Notez que les images ci-dessous peuvent être en préversion. Le produit annoncé peut différer des versions présentées.
 
+### <a name="ui-iwp"></a>Nouvelle mise à jour de l’expérience utilisateur pour le site web Portail d’entreprise <!--2000968-->
+
+Nous avons introduit une nouvelle expérience dans le site web Portail d’entreprise en avril, avec des mises à jour de l’interface utilisateur, des workflows simplifiés et des améliorations apportées à l’accessibilité. Cette nouvelle expérience inclut des améliorations demandées par les clients comme le partage d’applications et l’amélioration des performances globales pour plus de convivialité.
+
+Nous avons ajouté de nouvelles fonctionnalités, à l’image des commentaires que nous ont envoyé des clients comme vous, afin d’améliorer considérablement des fonctionnalités existantes et leur facilité d’utilisation :
+
+-   Améliorations de l’interface utilisateur dans tout le site web
+-   Possibilité de partager des liens directs vers les applications
+- Performances améliorées pour un large éventail de catalogues d’applications
+
+Vous n’avez rien à faire pour vous préparer à ce changement. Nous vous informons au moment où le site web Portail d’entreprise est mis à jour et à votre disposition. Toutefois, vous devrez éventuellement mettre à jour les documents destinés à l’utilisateur final avec des captures d’écran actualisées. Notez que vous devez également mettre à jour la documentation de l’application Portail d’entreprise sur iOS, étant donné que le site web alimente la section **Applications** de l’application iOS.
+
+|Mis à jour|Précédent|
+|---|---|
+|![La page de l’appareil mis à jour montre l’appareil correctement aligné au-dessus des informations le concernant et ne surgit plus au-dessus de la liste complète.](./media/iwp-device-after-1803.png)|![Version précédente de la page de l’appareil.](./media/iwp-device-before-1803.png)|
+|![La page d’installation de l’application mise à jour présente l’application au-dessus de sa description et de diverses informations d’installation, comme la date de publication, la version et le type d’application.](./media/iwp-app-install-after-1803.png)|![Version précédente de la page d’installation de l’application.](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Mise à jour de l’expérience utilisateur dans l’application Portail d’entreprise pour iOS <!--1412866-->
 
 Nous publierons une mise à jour importante de l’expérience utilisateur dans l’application Portail d’entreprise pour iOS. La mise à jour présentera une toute nouvelle apparence, plus moderne, avec une amélioration de l’accessibilité et de l’utilisation. Toutes les fonctionnalités actuelles de l’application Portail d’entreprise pour iOS seront conservées.
 
-Nous vous offrons une préversion de l’application Portail d’entreprise pour iOS mise à jour via le programme Apple TestFlight pour que vous l’utilisiez et nous fassiez part de vos commentaires. Inscrivez-vous à l’adresse https://aka.ms/intune_ios_cp_testflight pour accéder à TestFlight.
+Nous vous offrons une préversion de l’application Portail d’entreprise pour iOS mise à jour via le programme Apple TestFlight pour que vous l’utilisiez et nous fassiez part de vos commentaires. Inscrivez-vous à l’adresse https://aka.ms/intune_ios_cp_testflight pour accéder à TestFlight. Pour plus d’informations sur cette mise à jour, consultez https://aka.ms/iOS_companyportal_update.
 
 ![images d’annonce de la nouvelle application Portail d’entreprise pour iOS](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __Mises à jour des applications proposées__  Nous avons ajouté une page dédi
 
 ### <a name="see-also"></a>Voir aussi
 * [Blog Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Feuille de route de la plateforme cloud](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Feuille de route de la plateforme cloud](https://www.microsoft.com/cloud-platform/roadmap)
 * [Nouveautés d’Intune](https://docs.microsoft.com/intune/whats-new)
