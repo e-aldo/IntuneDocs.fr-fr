@@ -1,25 +1,25 @@
 ---
-title: "Configurer les paramètres d’éducation Intune pour Windows 10"
-titleSuffix: Azure portal
-description: "Découvrez comment utiliser Intune pour configurer des paramètres d’éducation sur les appareils Windows 10 que vous gérez."
-keywords: 
+title: Configurer les paramètres d’éducation Intune pour Windows 10
+titleSuffix: Microsoft Intune
+description: Découvrez comment utiliser Intune pour configurer des paramètres d’éducation sur les appareils Windows 10 que vous gérez.
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18987c65c7ad0443c8bf3dc268284306cf64080d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fa631cfb799fe02aee935f524a4012f381973d8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres d’éducation Windows 10 dans Microsoft Intune
 

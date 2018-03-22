@@ -1,25 +1,25 @@
 ---
-title: "Définir l’autorité de gestion des appareils mobiles"
+title: Définir l’autorité de gestion des appareils mobiles
 titlesuffix: Microsoft Intune
-description: "Définissez l’autorité de gestion des appareils mobiles dans Intune."
-keywords: 
+description: Définissez l’autorité de gestion des appareils mobiles dans Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d48a2cea096c1639cd3661521cd636454f3e0ba
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Définir l’autorité de gestion des appareils mobiles
 
@@ -41,7 +41,7 @@ Dans Configuration Manager 1610 ou version ultérieure et Microsoft Intune versi
 ## <a name="set-mdm-authority-to-intune"></a>Définir l'autorité MDM sur Intune
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 2. Sélectionnez la bannière orange pour ouvrir le paramètre **Autorité de gestion des appareils mobiles**.
 3. Sous **Autorité de gestion des appareils mobiles**, choisissez votre autorité de gestion des appareils mobiles parmi les options suivantes :
   - **Autorité MDM Intune**
@@ -60,7 +60,7 @@ Différentes plateformes ont les exigences suivantes pour activer ou simplifier 
 - **iOS** : (obligatoire) [Obtenir un certificat Push MDM Apple](apple-mdm-push-certificate-get.md), puis [activer l’inscription des appareils iOS d’entreprise](ios-enroll.md) (facultatif).
 - **Android** : (facultatif) [Activer les profils professionnels Android](android-enroll.md)
 - **Windows** : (facultatif) Activez [l’Inscription automatique](windows-enroll.md) ou [l’inscription en bloc](windows-bulk-enroll.md)
-- **macOS** : Aucune configuration requise
+- **macOS** : (obligatoire) [Obtenir un certificat Push MDM Apple](apple-mdm-push-certificate-get.md).
 
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Nettoyage de l’appareil mobile après expiration du certificat MDM

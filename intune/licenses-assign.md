@@ -1,24 +1,24 @@
 ---
 title: Affecter des licences Microsoft Intune
-description: "Affecter des licences aux utilisateurs pour qu’ils puissent s’inscrire dans Intune"
-keywords: 
+description: Affecter des licences aux utilisateurs pour qu’ils puissent s’inscrire dans Intune
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Affecter des licences aux utilisateurs pour qu’ils puissent inscrire des appareils dans Intune
 
@@ -58,6 +58,17 @@ Pour en savoir plus sur SDS, consultez cette [vue d’ensemble de School Data Sy
 * Chaque **utilisateur** auquel vous affectez une licence de logiciel utilisateur peut accéder à et utiliser les services en ligne et logiciels liés (y compris les logiciels de System Center) pour gérer les applications et jusqu’à 15 appareils.
 * Chaque **appareil** auquel vous affectez une licence de logiciel pour appareil peut accéder à et utiliser les services en ligne et logiciels liés (y compris les logiciels de System Center) pour une utilisation par n’importe quel nombre d’utilisateurs.
 * Si un appareil est utilisé par plusieurs utilisateurs, chacun requiert une licence de logiciel pour appareil, ou tous les utilisateurs requièrent une licence de logiciel utilisateur.
+
+## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Présentation du type des licences achetées
+
+La façon dont vous avez acheté Intune détermine vos informations d’abonnement :
+
+- Si vous avez acheté Intune dans le cadre d’un contrat Entreprise, vos informations d’abonnement figurent dans le portail Licence en volume sous **Abonnements**.
+- Si vous avez acheté Intune via un fournisseur de solutions cloud, vérifiez auprès de votre revendeur.
+- Si vous avez acheté Intune avec un numéro de CC ou une facture, vos licences sont basées sur l’utilisateur.
+
+
+
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Utiliser PowerShell pour gérer de manière sélective les licences utilisateur EMS
 Les organisations qui utilisent Microsoft Enterprise Mobility + Security (anciennement Entreprise Mobility Suite) peuvent avoir des utilisateurs qui ont uniquement besoin d’Azure Active Directory Premium ou des services Intune dans le package EMS. Vous pouvez attribuer un service ou un groupe de services à l’aide des [applets de commande Azure Active Directory PowerShell](https://msdn.microsoft.com/library/jj151815.aspx).

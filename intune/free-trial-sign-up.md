@@ -1,24 +1,24 @@
 ---
-title: "S’inscrire à une version d’évaluation gratuite de 30 jours de Microsoft Intune"
-titleSuffix: Azure portal
-description: "Comment s’inscrire à un essai gratuit de 30 jours d’Intune"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: S’inscrire à une version d’évaluation gratuite de 30 jours de Microsoft Intune
+titleSuffix: Microsoft Intune
+description: Découvrez comment vous inscrire à un essai gratuit de 30 jours de Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.custom: ''
+ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>S’inscrire à une version d’évaluation gratuite de Microsoft Intune
 
@@ -30,11 +30,15 @@ Cet article vous guide tout au long l’inscription pour une version d’évalua
 
 * Si la plupart des utilisateurs et opérations informatiques ont des paramètres régionaux différents des vôtres, vous pouvez définir ces paramètres régionaux dans **Où votre société se situe-t-elle ?**.
 
-2. À la fin de la procédure d’inscription, vous recevez un message avec vos nouvelles informations de compte. <br/> ![Image d’informations de compte](./media/2-end-of-sign-up-process.png) <br/>À ce stade, si vous cliquez sur **Vous êtes prêt**, vous êtes dirigé vers le centre d’administration Office 365, où vous pouvez ajouter des utilisateurs à votre environnement de test. <br/><br/>Toutefois, si vous souhaitez accéder directement au portail Intune Azure, ouvrez une nouvelle fenêtre de navigateur et saisissez **https://portal.azure.com** dans la barre d’adresse. Vous êtes alors redirigé vers la page de connexion Azure où vous pouvez utiliser les informations d’identification que vous avez reçues pour vous connecter. Utilisez cette adresse chaque fois que vous souhaitez vous connecter à votre version d’évaluation d’Intune. <br/> ![Image de page de connexion au portail Azure](./media/azure-portal-signin.png)
+2. À la fin de la procédure d’inscription, vous recevez un message avec vos nouvelles informations de compte. <br/> 
+
+![Image de vos informations de compte](./media/2-end-of-sign-up-process.png) <br/>
+
+À ce stade, si vous cliquez sur **Vous êtes prêt**, vous êtes dirigé vers le centre d’administration Office 365, où vous pouvez ajouter des utilisateurs à votre environnement de test. <br/><br/>Toutefois, si vous voulez accéder directement au portail Intune Azure, ouvrez une nouvelle fenêtre de navigateur et entrez **https://portal.azure.com** dans la barre d’adresse. Vous êtes alors redirigé vers la page de connexion Azure où vous pouvez utiliser les informations d’identification que vous avez reçues pour vous connecter. Utilisez cette adresse chaque fois que vous souhaitez vous connecter à votre version d’évaluation d’Intune. <br/> ![Image de la page de connexion au portail Azure](./media/azure-portal-signin.png)
 
 La première fois que vous vous connectez à Intune dans le [portail Azure](https://portal.azure.com), vous ne verrez peut-être pas Intune dans votre tableau de bord Azure. Pour ajouter le service Intune à votre tableau de bord Azure :
 1. Choisissez **Tous les services >** dans la liste des services Azure à gauche du tableau de bord, puis entrez **Intune** dans la zone de recherche.
-2. Choisissez **Intune** dans la liste, puis sélectionnez l’étoile pour ajouter le service à la liste des services.<br/> ![Image de la sélection d’Intune dans la liste des services](./media/azure-add-intune1.png)
+2. Choisissez **Intune** dans la liste, puis sélectionnez l’étoile pour ajouter le service à la liste des services.<br/> ![Image de la sélection de Microsoft Intune dans le portail Azure](./media/azure-add-intune1.png)
 3. Choisissez ensuite **Intune** dans la liste des services pour ouvrir le tableau de bord Intune.
 
 Quand vous vous inscrivez pour obtenir une version d’évaluation, vous recevez aussi un e-mail contenant les informations de votre compte à l’adresse e-mail que vous avez fournie lors de l’inscription. Cet e-mail confirme que votre version d’évaluation est active.

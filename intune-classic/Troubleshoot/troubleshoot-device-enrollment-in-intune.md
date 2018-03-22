@@ -1,25 +1,25 @@
 ---
-title: "Résoudre les problèmes d’inscription d’appareils"
-description: "Suggestions pour résoudre les problèmes liés à l’inscription d’appareils."
-keywords: 
+title: Résoudre les problèmes d’inscription d’appareils
+description: Suggestions pour résoudre les problèmes liés à l’inscription d’appareils.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Résoudre les problèmes d’inscription d’appareils dans Intune
 
@@ -70,7 +70,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Pour supprimer des appareils dans le portail Azure Active Directory
 
-1.  Accédez à [http://aka.ms/accessaad](http://aka.ms/accessaad) ou choisissez **Administration** &gt; **Azure AD** dans [https://portal.office.com](https://portal.office.com).
+1.  Accédez à [http://aka.ms/accessaad](http://aka.ms/accessaad) ou choisissez **Admin** &gt; **Azure AD** à partir de [https://portal.office.com](https://portal.office.com).
 
 2.  Connectez-vous avec l’ID de votre organisation en utilisant le lien sur le côté gauche de la page.
 
@@ -163,10 +163,10 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 Le tableau suivant répertorie les erreurs auxquelles les utilisateurs finaux peuvent être confrontés durant l’inscription d’appareils Android dans Intune.
 
-|Message d’erreur|Problème|Solution|
+|Message d'erreur|Problème|Résolution|
 |---|---|---|
-|**L’administrateur informatique doit affecter une licence pour autoriser l’accès**<br>Votre administrateur informatique ne vous a pas accordé l’accès à cette application. Demandez-lui de l’aide ou réessayez plus tard.|L’appareil ne peut pas être inscrit, car le compte de l’utilisateur ne dispose pas de la licence nécessaire.|Pour que les utilisateurs puissent inscrire leurs appareils, ils doivent avoir reçu la licence nécessaire. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br><br>Découvrez comment [attribuer des licences Intune à vos comptes d’utilisateur](/intune/licenses-assign.md).
-|**L’administrateur informatique doit définir une autorité MDM**<br>Apparemment, votre administrateur informatique n’a pas défini d’autorité MDM. Demandez-lui de l’aide ou réessayez plus tard.|L’autorité de gestion des appareils mobiles n’a pas été définie.|L’autorité de gestion des appareils mobiles n’a pas été désignée dans Intune. Découvrez comment [définir l’autorité de gestion des appareils mobiles](/intune/mdm-authority-set.md).|
+|**L’administrateur informatique doit affecter une licence pour autoriser l’accès**<br>Votre administrateur informatique ne vous a pas accordé l’accès à cette application. Demandez-lui de l’aide ou réessayez plus tard.|L’appareil ne peut pas être inscrit, car le compte de l’utilisateur ne dispose pas de la licence nécessaire.|Pour que les utilisateurs puissent inscrire leurs appareils, ils doivent avoir reçu la licence nécessaire. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br><br>Découvrez comment [attribuer des licences Intune à vos comptes d’utilisateur](/intune/licenses-assign).
+|**L’administrateur informatique doit définir une autorité MDM**<br>Apparemment, votre administrateur informatique n’a pas défini d’autorité MDM. Demandez-lui de l’aide ou réessayez plus tard.|L’autorité de gestion des appareils mobiles n’a pas été définie.|L’autorité de gestion des appareils mobiles n’a pas été désignée dans Intune. Découvrez comment [définir l’autorité de gestion des appareils mobiles](/intune/mdm-authority-set).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Les appareils ne parviennent pas à se connecter au service Intune et affichent le message « Défectueux » dans la console d’administration Intune
@@ -274,7 +274,7 @@ Si le certificat de serveur est installé correctement, toutes les coches s’af
 ### <a name="ios-enrollment-errors"></a>Erreurs d'inscription iOS
 Le tableau suivant répertorie les erreurs que les utilisateurs finaux peuvent rencontrer lors de l’inscription d’appareils iOS dans Intune.
 
-|Message d’erreur|Problème|Solution|
+|Message d'erreur|Problème|Résolution|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Aucune stratégie d’inscription détectée|Vérifiez que tous les prérequis de l’inscription, comme le certificat Apple Push Notification Service (APNs), ont été configurés et que l’option « iOS comme plateforme » est activée. Pour obtenir des instructions, consultez [Configurer la gestion des appareils iOS et Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceCapReached|Vous avez trop d’appareils mobiles déjà inscrits.|L’utilisateur doit supprimer un de ses appareils mobiles actuellement inscrits à partir du portail d’entreprise, avant d’en inscrire un autre. Consultez les instructions correspondant au type d’appareil que vous utilisez : [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
@@ -332,7 +332,7 @@ Pour plus d’informations, consultez [Meilleures pratiques pour la sécurisatio
 
 2.  Vérifiez que l’appareil n’est pas déjà inscrit auprès d’un autre fournisseur GPM ou qu’il ne dispose pas déjà d’un profil de gestion.
 
-3.  Accédez à [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) et essayez d’installer le profil quand vous y êtes invité.
+3.  Accédez à [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), puis essayez d’installer le profil quand vous y êtes invité.
 
 4.  Vérifiez que Safari pour iOS est le navigateur par défaut et que les cookies sont activés.
 
@@ -377,12 +377,12 @@ Des exemples seront bientôt ajoutés concernant les éléments à rechercher da
 
 
 ### <a name="other-ios-enrollment-errors"></a>Autres erreurs d’inscription iOS
-Une liste des erreurs d’inscription iOS est fournie dans la documentation de l’utilisateur de l’appareil, dans [Des erreurs se produisent pendant l’inscription de votre appareil dans Intune](/intune-user-help/using-your-iOS-or-macOS-device-with-intune).
+La liste des erreurs d’inscription iOS est fournie dans notre documentation, dans [Résolution des problèmes d’inscription d’appareils iOS dans Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune).
 
 ## <a name="pc-issues"></a>Problèmes liés aux PC
 
 
-|Message d’erreur|Problème|Solution|
+|Message d'erreur|Problème|Résolution|
 |---|---|---|
 |**L’administrateur informatique doit affecter une licence pour autoriser l’accès**<br>Votre administrateur informatique ne vous a pas accordé l’accès à cette application. Demandez-lui de l’aide ou réessayez plus tard.|L’appareil ne peut pas être inscrit, car le compte de l’utilisateur ne dispose pas de la licence nécessaire.|Pour que les utilisateurs puissent inscrire leurs appareils, ils doivent avoir reçu la licence nécessaire. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br>Découvrez comment [attribuer des licences Intune à vos comptes d’utilisateur](https://docs.microsoft.com/intune/licenses-assign).|
 

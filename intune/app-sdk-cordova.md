@@ -1,24 +1,24 @@
 ---
-title: "Plug-in Cordova du SDK d’application Microsoft Intune"
-description: 
+title: Plug-in Cordova du SDK d’application Microsoft Intune
+description: Le plug-in Cordova du SDK d’application Intune permet aux développeurs d’intégrer des fonctionnalités de protection des données et des applications Intune à leur application Cordova.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Plug-in Cordova du SDK d’application Microsoft Intune
 
@@ -32,11 +32,11 @@ ms.lasthandoff: 02/03/2018
 > [!NOTE]
 > Vous pouvez d’abord lire l’article [Bien démarrer avec le SDK d’application Intune](app-sdk-get-started.md), qui explique comment préparer l’intégration sur chaque plateforme prise en charge.
 
-Comme vous pourrez le constater, il est possible d’activer des fonctionnalités du SDK sans modifier le comportement de votre application. Une fois que vous avez intégré le plug-in dans votre application iOS ou Android, l’administrateur Microsoft Intune sera en mesure de déployer la stratégie de protection des applications Intune, qui se compose d’un ensemble de fonctionnalités de protection des données. Le plug-in est conçu afin que la plupart des étapes s’effectuent automatiquement au cours du processus de génération Cordova. Ainsi, vous devriez être en mesure d’activer rapidement votre application pour la protection des applications Intune. Pour démarrer, suivez les étapes ci-dessous, selon votre plateforme cible.
+Comme vous pourrez le constater, il est possible d’activer des fonctionnalités du SDK sans modifier le comportement de votre application. Une fois que vous avez intégré le plug-in dans votre application iOS ou Android, l’administrateur Microsoft Intune sera en mesure de déployer la stratégie de protection des applications Intune, qui se compose d’un ensemble de fonctionnalités de protection des données. Le plug-in est conçu afin que la plupart des étapes s’effectuent automatiquement au cours du processus de génération Cordova. Ainsi, vous devriez être en mesure d’activer rapidement votre application pour la protection des applications Intune. Pour démarrer, suivez les étapes ci-après, selon votre plateforme cible.
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge
 
-* Le plug-in fonctionne sous les systèmes d’exploitation Windows, Mac et Linux
+* Le plug-in fonctionne sur les systèmes d’exploitation Windows, Mac et Linux.
 * Le plug-in fonctionne pour les applications Android avec `minSdkVersion` >= 14 et `targetSdkVersion` <= 24
 * Le plug-in fonctionne pour les applications iOS ciblées pour iOS 9.0 et les versions ultérieures.
 
@@ -118,7 +118,7 @@ Le plug-in reconnaît automatiquement les informations sur la signature que vous
 
 Consultez les [informations sur la signature Cordova Gradle](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) pour plus d’informations sur le format attendu.
 
-Actuellement, nous ne prenons pas en charge la possibilité de fournir des informations sur la signature dans `build.json` ou les emplacements arbitraires fournis via les paramètres pour la génération de Cordova.
+Actuellement, Intune ne prend pas en charge la possibilité de fournir des informations sur la signature dans `build.json` ou les emplacements arbitraires fournis par le biais des paramètres pour la génération de Cordova.
 
 ## <a name="debugging-from-visual-studio"></a>Débogage à partir de Visual Studio
 
@@ -129,8 +129,8 @@ Après avoir lancé l’application pour la première fois, une boîte de dialog
 ### <a name="android"></a>Android
 
 * La prise en charge MultiDex est incomplète.
-* L’application doit disposer de `minSdkVersion` égal à 14 et de `targetSdkVersion` égal à 24, ou valeurs inférieures. Nous ne prenons actuellement pas en charge les applications ciblant l’API 25
-* Nous ne pouvons pas signer à nouveau des applications qui ont été signées avec le schéma de signature V2. Lorsque des applications avec le schéma de signature V2 sont encapsulées par le plug-in, la sortie encapsulée .apk ne sera pas signée.
+* L’application doit disposer de `minSdkVersion` égal à 14 et de `targetSdkVersion` égal à 24, ou valeurs inférieures. Intune ne prend actuellement pas en charge les applications ciblant l’API 25.
+* Intune ne peut pas re-signer des applications qui ont été signées avec le schéma de signature V2. Lorsque des applications avec le schéma de signature V2 sont encapsulées par le plug-in, la sortie encapsulée .apk ne sera pas signée.
 *
   * Vous pouvez désactiver la signature V2 de Cordova par défaut en ajoutant le code suivant à votre fichier `build-extras.gradle` :
 

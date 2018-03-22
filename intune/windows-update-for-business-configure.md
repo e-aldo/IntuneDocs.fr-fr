@@ -1,23 +1,23 @@
 ---
-title: "Configurer les paramètres Windows Update for Business dans Intune"
-titleSuffix: Azure portal
-description: "Découvrez comment configurer les paramètres Windows Update for Business dans Intune pour contrôler les mises à jour des appareils Windows 10."
-keywords: 
+title: Configurer les paramètres Windows Update pour Entreprise dans Microsoft Intune
+titleSuffix: ''
+description: Découvrez comment configurer les paramètres Windows Update pour Entreprise dans Microsoft Intune pour contrôler les mises à jour des appareils Windows 10.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Gérer les mises à jour logicielles
 
@@ -81,7 +81,7 @@ Une fois que vous avez créé les anneaux de mise à jour, affectez-les à des g
     - **Canal de maintenance** : définissez le canal pour lequel l’appareil reçoit des mises à jour de Windows (Canal semi-annuel (cible) ou Canal semi-annuel).
     - **Mises à jour de produit Microsoft** : choisissez si vous voulez rechercher des mises à jour d’applications à partir de Microsoft Update.
     - **Pilotes Windows** : choisissez s’il faut ignorer les pilotes Windows Update au cours des mises à jour.
-    - **Automatic update behavior (Comportement de mise à jour automatique)** : indiquez comment gérer le comportement de mise à jour automatique pour rechercher, télécharger et installer les mises à jour. Pour plus d’informations, consultez [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
+    - **Comportement des mises à jour automatiques** : indiquez comment gérer le comportement des mises à jour automatiques pour rechercher, télécharger et installer les mises à jour. Pour plus d’informations, consultez [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Période de report des mises à jour qualité (jours)** : spécifiez le nombre de jours pendant lesquels les mises à jour qualité sont reportées. Vous pouvez différer la réception de ces mises à jour qualité pour une période allant jusqu’à 30 jours à partir de leur publication.  
 
     Les mises à jour qualité sont en général des correctifs et des améliorations apportées aux fonctionnalités existantes de Windows. Elles sont généralement publiées le premier mardi de chaque mois, mais il se peut qu’elles le soient à d’autres moments par Microsoft. Vous pouvez définir si et pendant combien de temps vous souhaitez différer la réception des mises à jour qualité après leur disponibilité.
@@ -140,7 +140,7 @@ Par exemple, vous pouvez utiliser les valeurs suivantes dans **Ajouter ou modifi
 - **Type de données :**  chaîne
 - **Valeur** : *utilisez le GUID indiqué sous l’onglet Télémétrie Windows dans votre espace de travail OMS*>
 
-![Paramètre Windows pour les données de diagnostic et d’utilisation](./media/commID.png)
+![Paramètre OMA-URI - Ajouter une ligne](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Guide pratique pour suspendre des mises à jour
 Vous pouvez suspendre la réception des mises à jour qualité ou de fonctionnalités d’un appareil pendant une période allant jusqu’à 35 jours à partir du moment où vous interrompez les mises à jour. Une fois que le nombre maximal de jours s’est écoulé, la fonctionnalité mise en pause expire automatiquement et l’appareil recherche les mises à jour applicables dans Windows Update. Suite à cette analyse, vous pouvez suspendre à nouveau les mises à jour.

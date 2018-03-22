@@ -1,24 +1,24 @@
 ---
-title: "Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android"
-description: "Le SDK d’application Microsoft Intune pour Android vous permet d’incorporer la gestion des applications mobiles Intune à votre application Android."
+title: Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
+description: Le SDK d’application Microsoft Intune pour Android vous permet d’incorporer la gestion des applications mobiles Intune à votre application Android.
 keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 53f0d46fa1a9452b7a0cc1e243373f21556f5fb6
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 0eafbe9c57051b62f6ed53a3930705eabf5aebd0
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
@@ -1311,7 +1311,7 @@ public interface MAMAppConfig {
 La configuration de l’application ajoute un nouveau type de notification :
 * **REFRESH_APP_CONFIG** : cette notification est envoyée dans un `MAMUserNotification` et indique à l’application que de nouvelles données de configuration d’application sont disponibles.
 
-Pour plus d’informations sur les fonctionnalités de l’API Graph en ce qui concerne les valeurs de configuration ciblées par la gestion GAM, consultez [Informations de référence sur l’API Graph - Configuration ciblée par la gestion GAM]((https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+Pour plus d’informations sur les fonctionnalités de l’API Graph, consultez [Référence de l’API Graph](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
 Pour plus d’informations sur la création d’une stratégie de configuration d’application ciblée de gestion des applications mobiles dans Android, consultez la section correspondante dans [Guide pratique pour utiliser des stratégies de configuration d’application Microsoft Intune pour Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
 

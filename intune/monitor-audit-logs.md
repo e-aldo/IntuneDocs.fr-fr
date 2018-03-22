@@ -1,20 +1,21 @@
 ---
-title: "Journaux d’audit pour les activités Intune"
-description: "Découvrez comment consulter les journaux d’audit qui consignent les activités d’Intune"
-keywords: 
+title: Journaux d’audit pour les activités Microsoft Intune
+description: Découvrez comment consulter les journaux d’audit qui consignent les activités Microsoft Intune.
+keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Journaux d’audit pour les activités Intune
 Les journaux d’audit vous indiquent les activités qui génèrent un changement dans Microsoft Intune. Les actions Créer, Mettre à jour (modifier), Supprimer et Affecter, ou les tâches à distance, génèrent des événements d’audit que vous pouvez consulter. Vous pouvez consulter les journaux d’audit pour la plupart des charges de travail Intune. L’audit est activé par défaut pour tous les clients et il ne peut pas être désactivé. L’enregistrement des événements d’audit a commencé avec la version de fonctionnalités de décembre 2017 ; les événements antérieurs ne sont pas disponibles.
@@ -28,7 +29,7 @@ Les utilisateurs disposant des autorisations suivantes peuvent consulter les jou
 ## <a name="audit-logs-for-intune-workloads"></a>Journaux d’audit pour les charges de travail Intune
 Vous pouvez consulter les journaux d’audit dans le groupe d’analyse pour chaque charge de travail Intune.  
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez la charge de travail pour laquelle vous souhaitez consulter les journaux d’audit, par exemple, **Appareils**.
 4. Dans le groupe **d’analyse** de la charge de travail, choisissez **Journaux d’audit**.
 

@@ -1,23 +1,24 @@
 ---
-title: "Modèles et les ressources pour planifier et concevoir le déploiement Intune"
-description: "Des liens vers des modèles de planification et des informations Intune supplémentaires qui peuvent se révéler utiles lors du processus de planification et d’implémentation de votre déploiement Intune."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Modèles et les ressources pour planifier et concevoir le déploiement Intune
+titlesuffix: Microsoft Intune
+description: Des liens vers des modèles de planification et des informations Intune supplémentaires qui peuvent se révéler utiles lors du processus de planification et d’implémentation de votre déploiement Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Ressources supplémentaires pour la planification de votre déploiement Intune
 
@@ -50,7 +51,7 @@ Consultez ces ressources pour obtenir des informations qui peuvent se révéler 
 
 -   [Blog Intune](https://blogs.technet.microsoft.com/enterprisemobility/) : des billets pour vous aider à comprendre comment Intune s’intègre dans la sphère globale de la mobilité d’entreprise.
 
--   [Centre de gestion de la confidentialité Microsoft](http://www.microsoft.com/TrustCenter/default.aspx) : découvrez l’approche de Microsoft pour la sécurité, la confidentialité, la conformité et la transparence dans tous ses services et produits cloud.
+-   [Centre de gestion de la confidentialité Microsoft](http://www.microsoft.com/TrustCenter) : découvrez l’approche de Microsoft pour la sécurité, la confidentialité, la conformité et la transparence dans tous ses services et produits cloud.
 
 -   [Intune User Voice](http://microsoftintune.uservoice.com/) : vous souhaitez demander une fonctionnalité ou voter avec d’autres clients pour de nouvelles fonctionnalités ? Partagez vos commentaires sur Intune via User Voice. Nous sommes à votre écoute.
 

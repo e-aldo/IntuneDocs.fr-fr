@@ -1,24 +1,24 @@
 ---
 title: Description du service Microsoft Intune
-description: "Intune est un service cloud qui vous permet de gérer des appareils Windows, iOS, Mac OS X, Android et Windows Mobile."
-keywords: 
-author: arob98
-ms.author: angrobe
+description: Microsoft Intune est un service cloud qui vous permet de gérer des appareils Windows, iOS, Mac OS X, Android et Windows Mobile.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 7b9c3965d99e0058ae0236e1efc3daa840aebc6c
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Description du service Microsoft Intune
 
@@ -33,7 +33,7 @@ Intune s’intègre étroitement à Azure Active Directory (Azure AD) pour le c
 Pour plus d’informations sur la gestion des appareils et des applications et sur la protection des données d’entreprise avec Intune, consultez la [documentation Intune](https://docs.microsoft.com/intune/).
 
 ## <a name="30-day-free-trial"></a>Essai gratuit de 30 jours
-Vous pouvez commencer à utiliser Intune avec une version d’évaluation gratuite de 30 jours qui comprend 100 licences utilisateur. Pour démarrer votre évaluation gratuite, [accédez à la page d’inscription Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Si votre organisation dispose d’un Contrat Entreprise ou d’un contrat de licence en volume équivalent, contactez votre représentant Microsoft pour installer votre version d’évaluation gratuite.
+Vous pouvez commencer à utiliser Intune avec une version d’évaluation gratuite de 30 jours qui comprend 100 licences utilisateur. Pour démarrer votre évaluation gratuite, [accédez à la page d’inscription Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Si votre organisation dispose d’un Contrat Entreprise ou d’un contrat de licence en volume équivalent, contactez votre représentant Microsoft pour installer votre version d’évaluation gratuite.
 
 > [!NOTE]
 > Si votre organisation possède déjà un compte professionnel ou scolaire Microsoft Online Services, et si vous pensez probablement prolonger cet abonnement à Intune en production à l’issue de la période d’essai, alors choisissez dans cette page l’option **Se connecter**, puis authentifiez-vous à l’aide du compte d’administrateur général de votre organisation. Cette action garantit que votre évaluation d’Intune est associée à votre compte professionnel ou scolaire existant.

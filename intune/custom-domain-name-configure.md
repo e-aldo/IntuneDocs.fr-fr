@@ -1,30 +1,31 @@
 ---
-title: "Configurer un nom de domaine personnalisé"
-description: "Ajouter un nom de domaine personnalisé à votre abonnement Intune"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: configurer un nom de domaine personnalisé
+titlesuffix: Microsoft Intune
+description: Ajouter un nom de domaine personnalisé à votre abonnement Microsoft Intune
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="configure-a-custom-domain-name"></a>Configurer un nom de domaine personnalisé
+# <a name="configure-a-custom-domain-name"></a>configurer un nom de domaine personnalisé
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Cette rubrique explique aux administrateurs comment créer un enregistrement CNAME DNS pour simplifier et personnaliser la procédure d’ouverture de session.
+Cette rubrique explique aux administrateurs comment créer un enregistrement CNAME DNS pour simplifier et personnaliser la procédure d’ouverture de session à l’aide de Microsoft Intune.
 
 Quand votre organisation souscrit à un service cloud Microsoft comme Intune, vous recevez un nom de domaine initial hébergé dans Azure Active Directory (AD) qui se présente sous la forme **votre_domaine.onmicrosoft.com**. Dans cet exemple, **votre_domaine** est le nom de domaine que vous avez choisi au moment de la souscription. **onmicrosoft.com** est le suffixe attribué aux comptes que vous ajoutez à votre abonnement. Vous pouvez configurer le domaine personnalisé de votre organisation de sorte qu’il accède à Intune à la place du nom de domaine qui vous a été fourni avec votre abonnement.
 
