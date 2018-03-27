@@ -1,24 +1,24 @@
 ---
 title: Inscription en bloc pour Windows 10
-description: "Créer un package d’inscription en bloc pour Microsoft Intune"
-keywords: 
+description: Créer un package d’inscription en bloc pour Microsoft Intune
+keywords: ''
 author: NathBarn
 ms.author: NathBarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.openlocfilehash: 5c7a51721850f539a1a3c2648054f2d3604231e0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3660255503c0dc7faa8d41b698f3d5fd9e4c330f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscription en bloc des appareils Windows
 
@@ -49,9 +49,9 @@ L’inscription en bloc des appareils Windows requiert les éléments suivants 
   - **Description** : description facultative du projet ![Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](../media/bulk-enroll-name.png)
 
 4.  Entrez un nom unique pour vos appareils. Les noms peuvent inclure un numéro de série (%%SERIAL%%) ou un jeu de caractères aléatoires. Si vous le souhaitez, vous pouvez également entrer une clé de produit si vous mettez à niveau l’édition de Windows, configurer l’appareil pour une utilisation partagée et supprimer le logiciel préinstallé.<BR>
-![ Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](../media/bulk-enroll-device.png)
+![Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](../media/bulk-enroll-device.png)
 
-5.  Si vous le souhaitez, vous pouvez configurer les périphériques réseau Wi-Fi auxquels se connecter lors de leur premier démarrage.  Si cela n’est pas configuré, une connexion de réseau câblé est requise lors du premier démarrage de l’appareil.
+5.  Si vous le souhaitez, vous pouvez configurer les appareils réseau Wi-Fi auxquels se connecter lors de leur premier démarrage.  Si cela n’est pas configuré, une connexion de réseau câblé est requise lors du premier démarrage de l’appareil.
 ![Capture d’écran indiquant l’activation du Wi-Fi, y compris les options SSID réseau et le type de réseau, dans l’application Windows Configuration Designer](../media/bulk-enroll-network.png)
 
 6.  Sélectionnez **Enroll in Azure AD** (S’inscrire dans Azure AD), entrez une date dans le champ **Bulk Token Expiry** (Expiration du jeton en bloc), puis sélectionnez **Get Bulk Token** (Obtenir le jeton en bloc).

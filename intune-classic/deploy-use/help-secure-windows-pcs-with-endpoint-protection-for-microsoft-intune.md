@@ -1,24 +1,24 @@
 ---
 title: Protection de point de terminaison pour PC Windows
-description: "Sécurisez vos ordinateurs gérés avec Endpoint Protection, qui fournit une protection en temps réel contre les menaces de logiciels malveillants."
-keywords: 
+description: Sécurisez vos ordinateurs gérés avec Endpoint Protection, qui fournit une protection en temps réel contre les menaces de logiciels malveillants.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: arob98
+manager: dougeby
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8b903d5b1ae66b7ce022480864fb08e7107ff4b0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fd201cbe7b91791f7db014e0176b0873a1e270c0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Contribuer à la sécurisation des PC Windows avec Endpoint Protection pour Microsoft Intune
 
@@ -33,7 +33,7 @@ Utilisez les informations des sections suivantes pour configurer, déployer et s
 ## <a name="choose-when-to-use-endpoint-protection"></a>Choisir quand utiliser Endpoint Protection
 En tant qu’administrateur informatique, l’une de vos principales priorités est de maintenir les ordinateurs que vous gérez exempts de programmes malveillants et virus. Avant de déployer Intune sur les PC Windows de votre organisation, vous devez déterminer comment protéger les ordinateurs en sélectionnant l’une des options suivantes et en configurant ses paramètres de stratégie associée :
 
-|Vous souhaitez :|Paramètres de stratégie Endpoint Protection|Plus d'informations|
+|Vous souhaitez :|Paramètres de stratégie Endpoint Protection|Plus d’informations|
 |--------------|---------------------------------------|--------------------|
 |Utiliser Microsoft Intune Endpoint Protection uniquement si aucune application tierce de protection de point de terminaison n’est installée.<br /><br />Vous pouvez utiliser Microsoft Intune Endpoint Protection sur tous les ordinateurs sur lesquels aucune application tierce de protection de point de terminaison n’est installée.|Installer Endpoint Protection = **Oui**<br /><br />Activer Endpoint Protection = **Oui**<br /><br />Installer Endpoint Protection même si une application tierce de protection de point de terminaison est installée = **Non**|Si une application tierce de protection de point de terminaison est détectée, Microsoft Intune Endpoint Protection n’est pas installé, et il est désinstallé s’il était déjà installé.|
 |Utiliser Microsoft Intune Endpoint Protection même si une application tierce de protection de point de terminaison est installée.<br /><br />Avec cette approche, vous allez exécuter simultanément Microsoft Intune Endpoint Protection et l’application tierce de protection de point de terminaison. Cette configuration n’est pas recommandée, car elle peut entraîner des problèmes de performances potentiels. |Installer Endpoint Protection = **Oui**<br /><br />Activer Endpoint Protection = **Oui**<br /><br />Installer Endpoint Protection même si une application tierce de protection de point de terminaison est installée = **Oui**|Contexte d'utilisation :<br /><br />-   Vous souhaitez passer à l’utilisation de Microsoft Intune Endpoint Protection.<br />-   Vous déployez un nouveau client qui utilise Microsoft Intune Endpoint Protection.<br />-   Vous mettez à niveau un client qui utilise Microsoft Intune Endpoint Protection.|

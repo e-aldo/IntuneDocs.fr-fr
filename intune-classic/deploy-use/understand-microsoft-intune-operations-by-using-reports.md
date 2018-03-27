@@ -1,25 +1,25 @@
 ---
-title: "Présentation des opérations à l’aide de rapports"
-description: "Créez et gérez des rapports sur les logiciels, le matériel et les licences logicielles de votre organisation."
-keywords: 
-author: arob98
+title: Présentation des opérations à l’aide de rapports
+description: Créez et gérez des rapports sur les logiciels, le matériel et les licences logicielles de votre organisation.
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 04/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 919178b20094cb210b3d0b05c42b9b7d97759637
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Présentation des opérations Microsoft Intune à l’aide de rapports
 
@@ -61,9 +61,9 @@ Les rapports Intune fournissent des informations sur les logiciels, le matériel
 Pour trier le rapport en fonction de l’une des colonnes affichées, cliquez sur l’en-tête de la colonne. Certains rapports vous permettent également de développer les éléments de la liste pour afficher plus de détails.
 
 ## <a name="more-report-actions"></a>Autres opérations relatives aux rapports
-Les rapports prennent aussi en charge les actions suivantes :
+En outre, les rapports prennent en charge les actions suivantes :
 
-|Action|Plus d’informations|
+|Action|Plus d'informations|
 |----------|--------------------|
 |**Imprimer**|Dans un rapport ouvert, cliquez sur l’icône d’impression et suivez les instructions.|
 |**Exporterer**|Dans un rapport ouvert, cliquez sur l’icône d’exportation et suivez les instructions. Vous pouvez exporter un rapport vers un fichier de valeurs séparées par des virgules (.csv) ou au format HTML.|

@@ -1,25 +1,25 @@
 ---
-title: "Protéger des appareils avec Microsoft Intune"
-description: "Découvrez certaines méthodes permettant à Intune de vous aider à protéger vos appareils contre les accès non autorisés et d’autres menaces."
-keywords: 
-author: arob98
+title: Protéger des appareils avec Microsoft Intune
+description: Découvrez certaines méthodes permettant à Intune de vous aider à protéger vos appareils contre les accès non autorisés et d’autres menaces.
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c866f2a8eebdb2f6c07314b745f65c06e3469e4e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 699d07daa1f16dd7746b531a1687ba97b06973a2
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Protéger des appareils avec Microsoft Intune
 
@@ -30,7 +30,7 @@ Microsoft Intune offre un ensemble complet de fonctionnalités qui vous permette
 ## <a name="general-ways-to-protect-all-devices"></a>Généralités sur la protection de tous les appareils
 
 ### <a name="device-configuration"></a>Configuration des appareils
-Les [stratégies de configuration](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) Intune vous permettent de protéger et de configurer des appareils en contrôlant une multitude de paramètres et de fonctionnalités. Exemple :
+Les [stratégies de configuration](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) Intune vous permettent de protéger et de configurer des appareils en contrôlant une multitude de paramètres et de fonctionnalités. Par exemple :
 - Vous pouvez limiter l’utilisation des fonctionnalités matérielles sur l’appareil, comme l’appareil photo ou le Bluetooth.
 - Vous pouvez configurer les applications conformes et non conformes. Vous êtes averti si une application non conforme est installée (et certaines plateformes peuvent même bloquer l’installation).
 

@@ -1,31 +1,31 @@
 ---
-title: "Gérer les applications du Microsoft Store pour Entreprises"
-description: "Connecter Microsoft Intune au Microsoft Store pour Entreprises pour gérer et déployer des applications achetées en volume à partir de la console Intune"
-keywords: 
+title: Gérer les applications du Microsoft Store pour Entreprises
+description: Connecter Microsoft Intune au Microsoft Store pour Entreprises pour gérer et déployer des applications achetées en volume à partir de la console Intune
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2de00bab670cd414d10750bb6f7f05283ea8bff3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Gérer les applications que vous avez achetées dans le Microsoft Store pour Entreprises avec Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) propose un emplacement dans lequel vous pouvez trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Store à Microsoft Intune, vous pouvez gérer les applications achetées en volume depuis la console Intune. Exemple :
+Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) propose un emplacement dans lequel vous pouvez trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Store à Microsoft Intune, vous pouvez gérer les applications achetées en volume depuis la console Intune. Par exemple :
 * Vous pouvez synchroniser la liste des applications que vous avez achetées dans le Store avec Intune.
 * Les applications qui sont synchronisées apparaissent dans la console d’administration Intune et vous pouvez les déployer comme toute autre application.
 * Vous pouvez effectuer un suivi du nombre de licences disponibles et de la quantité de licences utilisée dans la console d’administration Intune.
@@ -48,7 +48,7 @@ Avant d’activer la synchronisation dans la console Intune, vous devez configur
 3. Sur la page Outils de gestion, choisissez **Ajouter un outil de gestion**, puis sélectionnez **Microsoft Intune**.
 
 > [!NOTE]
-> Si vous utilisez plusieurs outils de gestion pour déployer des applications Microsoft Store pour Entreprises, vous ne pouviez auparavant en associer qu’un au Microsoft Store pour Entreprises. Désormais, vous pouvez associer plusieurs outils de gestion au Windows Store, par exemple, Intune et Configuration Manager.
+> Si vous utilisez plusieurs outils de gestion pour déployer des applications Microsoft Store pour Entreprises, vous ne pouviez auparavant en associer qu’un au Microsoft Store pour Entreprises. Maintenant, vous pouvez associer plusieurs outils de gestion au magasin, par exemple, Intune et Configuration Manager.
 
 Vous pouvez maintenant continuer et configurer la synchronisation dans la console Intune.
 

@@ -1,23 +1,23 @@
 ---
 title: Glossaire Microsoft Intune
 titleSuffix: Microsoft Intune
-description: "Découvrez la signification de la terminologie utilisée dans Microsoft Intune."
-keywords: 
+description: Découvrez la signification de la terminologie utilisée dans Microsoft Intune.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 07/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: d1b92613b127ccb21146f9d5f973eb1a25213792
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glossaire Microsoft Intune
 Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
@@ -58,7 +58,7 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 |||
 |-|-|
 |Déploiement|Fait d’envoyer une application ou une stratégie à un appareil ou à un utilisateur que vous gérez. Cette action est maintenant appelée *affectation*.|
-|Gestionnaire d'inscription d'appareils|Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du [gestionnaire d’inscription d’appareils](/intune/device-enrollment-program-enroll-ios) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils.|
+|Gestionnaire d'inscription d'appareils|Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d'utilisateur. Le compte du [gestionnaire d’inscription d’appareils](/intune/device-enrollment-program-enroll-ios) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils.|
 |Profils d’appareils|[Ces profils](/intune/device-profile-create) vous permettent de configurer de nombreux paramètres de sécurité, de fonctionnalités et d’accès sur les appareils que vous gérez.|
 
 ## <a name="e"></a>E
@@ -87,7 +87,7 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 ## <a name="i"></a>I
 |||
 |-|-|
-|Portail Azure|Le portail Azure que vous utilisez pour la plupart des opérations de gestion Intune.|
+|portail Azure|Le portail Azure que vous utilisez pour la plupart des opérations de gestion Intune.|
 |Client logiciel Intune|Autre mode de [gestion de PC Windows](/intune-classic/get-started/choose-how-to-manage-devices) pour vous aider à décider quelle méthode utiliser.|
 |Éditeur de logiciel Intune|Outil que vous utilisez pour [définir les applications que vous voulez déployer et les télécharger dans votre espace de stockage cloud](/intune-classic/deploy-use/add-apps).|
 |Inventaire|Utilisé pour afficher le [matériel et les logiciels installés](/intune/device-inventory) sur les appareils que vous gérez.|
@@ -104,7 +104,7 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 |Autorité MDM|L’[autorité de gestion d’appareils mobiles](/intune/mdm-authority-set) définit le service de gestion habilité à gérer un ensemble d’appareils. Les options en matière d’autorité de gestion des appareils mobiles incluent Intune en version autonome et Configuration Manager avec Intune.|
 |Stratégies de configuration des applications mobiles|Disponible pour les applications mobiles présentant des configurations spécifiques à leur fournisseur. Par exemple, une stratégie [iOS](/intune/app-configuration-policies-use-ios) ou [Android](/intune/app-configuration-policies-use-android) qui est utilisée pour fournir des paramètres aux applications compatibles quand celles-ci sont exécutées, comme un nom de société ou l’adresse d’un serveur.|
 |Stratégie d’approvisionnement des applications mobiles|Stratégie iOS qui permet de garantir que les [profils de configuration](/intune/app-provisioning-profile-ios) pour les applications iOS que vous affectez n’expirent pas.|
-|Gestion des applications mobiles|La [gestion des applications mobiles (MAM)](/intune/app-lifecycle) vous permet de publier, envoyer des notifications Push, configurer, sécuriser, surveiller et mettre à jour des applications mobiles pour vos utilisateurs.
+|Gestion des applications mobiles|La [gestion des applications mobiles (GAM)](/intune/app-lifecycle) vous permet de publier, envoyer des notifications Push, configurer, sécuriser, surveiller et mettre à jour des applications mobiles pour vos utilisateurs.
 |Gestion des appareils mobiles|La [gestion des appareils mobiles (MDM)](/intune/device-lifecycle) vous permet d’inscrire des appareils dans Intune pour approvisionner, configurer, surveiller et gérer ces appareils.
 
 
@@ -139,7 +139,7 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 |-|-|
 |TeamViewer|Une application de tiers qui fonctionne avec Intune pour fournir [des fonctionnalités d’assistance à distance](/intune/device-profile-android-teamviewer) pour un appareil Android que vous gérez avec Intune.|
 |Client|Une seule instance du service Intune auquel vous pouvez accéder à l’aide d’un abonnement.|
-|Conditions générales|Type de stratégie que vous affectez aux utilisateurs et qui contient des informations que les utilisateurs doivent [lire et accepter](/intune/terms-and-conditions-create) avant de pouvoir utiliser le portail d’entreprise pour s’inscrire et accéder à leur travail.|
+|Terms and conditions|Type de stratégie que vous affectez aux utilisateurs et qui contient des informations que les utilisateurs doivent [lire et accepter](/intune/terms-and-conditions-create) avant de pouvoir utiliser le portail d’entreprise pour s’inscrire et accéder à leur travail.|
 
 ## <a name="v"></a>V
 |||

@@ -1,23 +1,23 @@
 ---
-title: "Paramètres personnalisés Microsoft Intune pour les appareils Windows Holographic for Business"
-titlesuffix: 
-description: "Découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Windows Holographic for Business."
-keywords: 
+title: Paramètres personnalisés Microsoft Intune pour les appareils Windows Holographic for Business
+titlesuffix: ''
+description: Découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Windows Holographic for Business.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.article: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b95d891d1dfaecbce182fde4a2221255a7e1eb06
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d5cdba24c10b90756d9a2b9f08fd7d4dcd727303
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>Paramètres personnalisés pour les appareils Microsoft Intune pour les appareils exécutant Windows Holographic for Business
 
@@ -58,7 +58,7 @@ Les paramètres suivants sont utiles pour les appareils exécutant Windows Holog
 |[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Chaîne<br>URL : L’appareil vérifie l’existence de mises à jour auprès du serveur WSUS à l’URL spécifiée.<br>Non configuré : L’appareil vérifie l’existence de mises à jour auprès de Microsoft Update.|
 |[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Entier<br>0 : Non configuré L’appareil installe toutes les mises à jour applicables.<br>1 – L’appareil installe seulement les mises à jour applicables qui figurent dans la liste des mises à jour approuvées. Définissez cette stratégie sur 1 si le département informatique veut contrôler le déploiement des mises à jour sur les appareils, par exemple quand des tests sont nécessaires avant un déploiement.|
 |[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Important**<br>Vous devez lire et accepter le CLUF de la mise à jour pour le compte de vos utilisateurs finaux. Ne pas le faire constitue une violation des obligations légales ou contractuelles.|Nœud pour les approbations des mises à jour et l’acceptation du CLUF pour le compte de l’utilisateur final.|
-[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Important**<br>L’article Fournisseur de services de configuration AppLocker utilise des exemples XML avec une séquence d’échappement. Pour configurer les paramètres avec des profils personnalisés Intune, vous devez utiliser du XML brut.|Chaîne<br>Pour plus d’informations, consultez l’article [Fournisseur de services de configuration AppLocker](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp). 
+[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Important**<br>L’article Fournisseur de services de configuration AppLocker utilise des exemples XML avec une séquence d’échappement. Pour configurer les paramètres avec des profils personnalisés Intune, vous devez utiliser du XML brut.|Chaîne<br>Pour plus d’informations, consultez l’article [Fournisseur de services de configuration AppLocker](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
 
 ## <a name="how-to-find-the-policies-you-can-configure"></a>Comment trouver les stratégies que vous pouvez configurer
 

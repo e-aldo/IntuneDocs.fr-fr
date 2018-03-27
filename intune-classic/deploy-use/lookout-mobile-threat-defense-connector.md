@@ -1,25 +1,25 @@
 ---
 title: Connecteur de protection contre les menaces mobiles pour Lookout
-description: "Protégez l’accès aux ressources d’entreprise en fonction du risque lié aux appareils, au réseau et aux applications avec le connecteur de protection contre les menaces mobiles pour Lookout et Intune."
-keywords: 
+description: Protégez l’accès aux ressources d’entreprise en fonction du risque lié aux appareils, au réseau et aux applications avec le connecteur de protection contre les menaces mobiles pour Lookout et Intune.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 201c431f2c30538139f0dc9c436781aae2bd9735
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Connecteur de protection contre les menaces mobiles pour Lookout avec Intune
 
@@ -51,7 +51,7 @@ Les plateformes suivantes sont prises en charge lorsque Lookout est inscrit dans
 
 Pour plus d’informations, consultez [Lookout Mobile Endpoint Security](https://www.lookout.com/products/mobile-endpoint-security)
 
-## <a name="sample-scenarios"></a>Exemples de scénario
+## <a name="sample-scenarios"></a>Exemples de scénarios
 Voici quelques scénarios courants :
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>Contrôler l’accès en fonction des menaces émanant des applications malveillantes
@@ -87,7 +87,7 @@ Détectez les menaces pour votre réseau, telles que les attaques de l’interce
 
 **Accès accordé après correction :**
 
-![Diagramme montrant l’accès accordé par la stratégie d’accès conditionnel après correction de la menace](../media/mtp/network-spo-unblocked.png)
+![Diagramme illustrant l’accès conditionnel autorisant l’accès après correction de la menace pour le réseau](../media/mtp/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Voici les principales étapes à effectuer pour implémenter cette solution :

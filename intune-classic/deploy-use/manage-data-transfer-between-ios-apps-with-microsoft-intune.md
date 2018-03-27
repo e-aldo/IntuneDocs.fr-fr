@@ -1,25 +1,25 @@
 ---
-title: "Gérer les transferts de données entre applications iOS"
-description: "Cette rubrique explique comment utiliser la fonctionnalité iOS Open In et les stratégies de gestion des applications mobiles pour gérer les transferts de données entre applications."
-keywords: 
+title: Gérer les transferts de données entre applications iOS
+description: Cette rubrique explique comment utiliser la fonctionnalité iOS Open In et les stratégies de gestion des applications mobiles pour gérer les transferts de données entre applications.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c460e48360bb31076e2054297b037d08545ea1ae
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gérer les transferts de données entre applications iOS avec Microsoft Intune
 
@@ -57,7 +57,7 @@ Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils g
 
   1.  Déployez l’application avec les paramètres de configuration d’application suivants :
 
-      **clé** = IntuneMAMUPN,  **valeur** = <username@company.com>
+      **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
       Exemple : [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
@@ -70,7 +70,7 @@ Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils g
 
 2. Dans la section Configuration de l’application, entrez le paramètre suivant :
 
-  **clé** = IntuneMAMUPN,  **valeur** = <username@company.com>
+  **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
   La syntaxe exacte de la paire clé/valeur peut varier en fonction du fournisseur de gestion des appareils mobiles tiers. Le tableau ci-dessous présente des exemples de fournisseurs de gestion des appareils mobiles tiers et les valeurs exactes à entrer dans la paire clé/valeur.
 

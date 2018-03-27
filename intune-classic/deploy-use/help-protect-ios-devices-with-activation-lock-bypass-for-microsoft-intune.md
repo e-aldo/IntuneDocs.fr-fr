@@ -1,25 +1,25 @@
 ---
-title: "Gérer le verrou d’activation iOS sur les appareils"
-description: "Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fonctionnalité de l’application Rechercher mon iPhone pour les appareils iOS 7.1 et versions ultérieures."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Gérer le verrou d’activation iOS sur les appareils
+description: Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, qui est une fonctionnalité de l’application Rechercher mon iPhone disponible sur les appareils iOS 7.1 et versions ultérieures.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a05c8e6a45c57f5f6f0c90d5fbb48164cde34a1c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 12363a677bc7d1ffefe224ff0bb10067903132ae
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Aider à protéger les appareils iOS avec le contournement du verrou d'activation pour Microsoft Intune
 
@@ -31,10 +31,10 @@ Microsoft Intune peut vous aider à gérer le verrou d’activation iOS, une fon
 
 -   Effacer l'appareil
 
--   Réactiver l'appareil
+-   réactiver l'appareil.
 
 ## <a name="how-activation-lock-affects-you"></a>Impact du verrou d'activation
-Bien qu’il permette de sécuriser les appareils iOS et améliore les chances de récupération des données d’un appareil perdu ou volé, le verrou d’activation peut présenter quelques défis pour les administrateurs informatiques. Exemple :
+Bien qu’il permette de sécuriser les appareils iOS et améliore les chances de récupération des données d’un appareil perdu ou volé, le verrou d’activation peut présenter quelques défis pour les administrateurs informatiques. Par exemple :
 
 -   Un utilisateur configure le verrou d’activation sur un appareil. L'utilisateur quitte ensuite l'entreprise et rend l'appareil. Sans l’ID Apple et le mot de passe de l’utilisateur, il n’existe aucun moyen de réactiver l’appareil.
 
@@ -42,7 +42,7 @@ Bien qu’il permette de sécuriser les appareils iOS et améliore les chances 
 
 -   Vous voulez réaffecter certains appareils à un autre service lors de l’actualisation des appareils au sein de votre organisation. Vous ne pouvez réaffecter que les appareils sur lesquels le verrou d’activation n’est pas activé.
 
-Pour résoudre ces problèmes, Apple a introduit le contournement du verrou d'activation dans iOS 7.1. Il vous permet de supprimer le verrou d'activation des appareils supervisés sans avoir l'ID Apple et le mot de passe de l'utilisateur. Les appareils supervisés peuvent générer un code de contournement du verrou d'activation spécifique à l'appareil, qui est stocké sur le serveur d'activation d'Apple.
+Pour résoudre ces problèmes, Apple a introduit le contournement du verrou d'activation dans iOS 7.1. Il vous permet de supprimer le verrou d'activation des appareils supervisés sans avoir l'ID Apple et le mot de passe de l'utilisateur. Les appareils supervisés peuvent générer un code de contournement du verrou d'activation spécifique à l'appareil, qui est stocké sur le serveur d'activation d'Apple.
 
 > [!TIP]
 > Le mode supervisé pour les appareils iOS vous permet d’utiliser l’outil Apple Configurator pour verrouiller un appareil et limiter ainsi la fonctionnalité à des usages professionnels spécifiques. Le mode surveillé est généralement destiné uniquement aux appareils appartenant à l'entreprise.
@@ -68,7 +68,7 @@ Avant de pouvoir contourner le verrou d’activation sur les appareils, vous dev
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Utilisation du contournement du verrou d'activation à partir de la console d'administration Intune
 > [!IMPORTANT]
-> Une fois que vous avez contourné le verrou d’activation sur un appareil, un nouveau verrou d’activation est automatiquement appliqué lorsque l’application Rechercher mon iPhone est lancée. Pour cette raison, **vous devez être en possession physique de l’appareil avant d’appliquer cette procédure**.
+> Une fois que vous avez contourné le verrou d’activation sur un appareil, un nouveau verrou d’activation est automatiquement appliqué lorsque l’application Rechercher mon iPhone est lancée. Pour cette raison, **vous devez être en possession de l’appareil avant d’appliquer cette procédure**.
 
 1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils d’entreprise**.
 

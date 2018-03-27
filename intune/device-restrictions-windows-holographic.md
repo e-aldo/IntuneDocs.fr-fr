@@ -1,23 +1,23 @@
 ---
-title: "Paramètres de restriction d’appareil Microsoft Intune pour Windows Holographic for Business"
-titleSuffix: 
-description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils exécutant Windows Holographic for Business."
-keywords: 
+title: Paramètres de restriction d’appareil Microsoft Intune pour Windows Holographic for Business
+titleSuffix: ''
+description: Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et fonctionnalités des appareils exécutant Windows Holographic for Business.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9acce571330a754de85b65caf8ec71912fd36a69
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 694b81434a95f48abc98f5012460523420df58cc
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>Paramètres de restriction d’appareil Windows Holographic for Business dans Microsoft Intune
 
@@ -58,8 +58,8 @@ Les paramètres de restriction d’appareil suivants sont pris en charge sur les
 
 - **SmartScreen pour Microsoft Edge** - Activer Edge SmartScreen pour accéder au site et aux téléchargements de fichiers.
 
-## <a name="search"></a>Recherche
-- **Emplacement de recherche** : Spécifie si la recherche peut utiliser l’emplacement. Informations
+## <a name="search"></a>Rechercher
+- **Emplacement de recherche** : Spécifie si la recherche peut utiliser l’emplacement. Plus
 
 
 ## <a name="cloud-and-storage"></a>Cloud et stockage

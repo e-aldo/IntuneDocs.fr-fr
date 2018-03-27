@@ -1,27 +1,27 @@
 ---
-title: "Configurer l’infrastructure de certificat pour PFX"
-description: "Créez et déployez des profils de certificat .PFX."
-keywords: 
+title: Configurer l’infrastructure de certificat pour PFX
+description: Créez et déployez des profils de certificat .PFX.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b415e84f488d3bcdd14d6c3bca1aad76831fc499
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a19dbd6ad2b65e7d2d090b543f3e2200180c660a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="configure-certificate-infrastructure"></a>Configurer l’infrastructure de certificat
+# <a name="configure-certificate-infrastructure"></a>Configurer l’infrastructure de certificats
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -109,7 +109,7 @@ Au cours de cette tâche, vous allez publier le modèle de certificat.
 4.  Sur l’ordinateur de l’autorité de certification, vérifiez que l’ordinateur qui héberge Intune Certificate Connector a l’autorisation Inscription qui lui permet d’accéder au modèle utilisé pour créer le profil .PFX. Définissez cette autorisation sous l'onglet **Sécurité** des propriétés de l'ordinateur d'autorité de certification.
 
 ### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Tâche 2 : Activer, installer et configurer Intune Certificate Connector
-Dans cette tâche, vous allez :
+Dans cette tâche, vous allez :
 
 télécharger, installer et configurer Certificate Connector.
 
@@ -138,7 +138,7 @@ télécharger, installer et configurer Certificate Connector.
 4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
 
     > [!TIP]
-    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
+    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
     >
     > **&lt;chemin_installation&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 

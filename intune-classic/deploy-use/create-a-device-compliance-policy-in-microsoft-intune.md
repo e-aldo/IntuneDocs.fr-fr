@@ -1,25 +1,25 @@
 ---
-title: "Créer une stratégie de conformité des appareils"
-description: "Créez une stratégie de conformité pour vous aider à sécuriser les appareils mobiles et ordinateurs utilisés pour accéder aux données de votre entreprise."
-keywords: 
+title: Créer une stratégie de conformité des appareils
+description: Créez une stratégie de conformité pour vous aider à sécuriser les appareils mobiles et ordinateurs utilisés pour accéder aux données de votre entreprise.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/12/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e37e5f490254efedf56a383e612f934925be75e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Créer une stratégie de conformité des appareils dans Microsoft Intune
 
@@ -58,24 +58,24 @@ Le tableau suivant répertorie les paramètres de stratégie de conformité et l
 -------------
 |Paramètre|iOS|Android|Windows|
 |-----|----|-----|-----|
-|Exiger un mot de passe pour déverrouiller des appareils mobiles|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures <br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures|
-|Autoriser les mots de passe simples|iOS 6 et versions ultérieures|Non pris en charge|Windows Phone 8.1 et versions ultérieures|
-|Longueur minimale du mot de passe|iOS 6 et versions ultérieures| Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures| Windows Phone 8.1 et versions ultérieures<br>Windows 8.1|
-|Type de mot de passe requis|iOS 6 et versions ultérieures|Non disponible|Windows Phone 8.1 et versions ultérieures <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Nombre minimal de jeux de caractères|iOS 6 et versions ultérieures|Non disponible|Windows Phone 8.1 et versions ultérieures <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Qualité du mot de passe|Non disponible|Android 4.0 et versions ultérieures <br>Samsung KNOX Standard 4.0 et versions ultérieures|Non disponible|
-|Minutes d'inactivité avant demande du mot de passe|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows RT et Windows RT 8.1<br>Windows 8.1|
-|Expiration du mot de passe (jours)|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows RT et Windows RT 8.1<br>Windows 8.1|
-|Mémoriser l'historique des mots de passe|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows RT et Windows RT 8.1<br>Windows 8.1|
-|Empêcher la réutilisation des mots de passe précédents|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows RT et Windows RT 8.1<br>Windows 8.1|
-|Exiger un mot de passe quand l'appareil quitte un état inactif| Non disponible| Non disponible|Windows 10 Mobile|
-|Exiger le chiffrement sur l'appareil mobile|Non applicable|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br> Windows 8.1|
-|Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité| Non disponible| Non disponible|Windows <br>Windows 10 Mobile|
-|L’appareil ne doit pas être jailbroken ou rooté|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Non disponible|
+|Exiger un mot de passe pour déverrouiller des appareils mobiles|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures <br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures|
+|Autoriser les mots de passe simples|iOS 6 et versions ultérieures|Non pris en charge|Windows Phone 8.1 et versions ultérieures|
+|Longueur minimale du mot de passe|iOS 6 et versions ultérieures| Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures| Windows Phone 8.1 et versions ultérieures<br>Windows 8.1|
+|Type de mot de passe requis|iOS 6 et versions ultérieures|Non disponible|Windows Phone 8.1 et versions ultérieures <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Nombre minimal de jeux de caractères|iOS 6 et versions ultérieures|Non disponible|Windows Phone 8.1 et versions ultérieures <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Qualité du mot de passe|Non disponible|Android 4.0 et versions ultérieures <br>Samsung KNOX Standard 4.0 et versions ultérieures|Non disponible|
+|Minutes d'inactivité avant demande du mot de passe|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows RT et Windows RT 8.1<br>Windows 8.1|
+|Expiration du mot de passe (jours)|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows RT et Windows RT 8.1<br>Windows 8.1|
+|Mémoriser l'historique des mots de passe|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows RT et Windows RT 8.1<br>Windows 8.1|
+|Empêcher la réutilisation des mots de passe précédents|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows RT et Windows RT 8.1<br>Windows 8.1|
+|Exiger un mot de passe quand l'appareil quitte un état inactif| Non disponible| Non disponible|Windows 10 Mobile|
+|Exiger le chiffrement sur l'appareil mobile|Non applicable|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br> Windows 8.1|
+|Exiger que les appareils soient signalés comme ne posant aucun problème d’intégrité| Non disponible| Non disponible|Windows <br>Windows 10 Mobile|
+|L’appareil ne doit pas être jailbroken ou rooté|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Non disponible|
 |Le compte de messagerie doit être géré par Intune|iOS 6 et versions ultérieures|Non disponible| Non disponible|
 |Sélectionnez le profil de messagerie géré par Intune|iOS 6 et versions ultérieures|Non disponible| Non disponible|
-|Système d’exploitation minimal requis|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures| Windows Phone 8.1 et versions ultérieures<br>Windows 8.1|
-|Version maximale autorisée du système d’exploitation|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows 8.1|
+|Système d’exploitation minimal requis|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures| Windows Phone 8.1 et versions ultérieures<br>Windows 8.1|
+|Version maximale autorisée du système d’exploitation|iOS 6 et versions ultérieures|Android 4.0 et versions ultérieures<br>Samsung KNOX Standard 4.0 et versions ultérieures|Windows Phone 8.1 et versions ultérieures<br>Windows 8.1|
 
 Sélectionnez l’une des options suivantes pour en savoir plus sur les paramètres de compatibilité pris en charge sur chaque plateforme :
 > [!div class="op_single_selector"]
