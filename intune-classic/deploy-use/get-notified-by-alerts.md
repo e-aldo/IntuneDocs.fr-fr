@@ -1,25 +1,25 @@
 ---
 title: Recevoir des alertes | Microsoft Docs
-description: "Découvrez comment les alertes vous tiennent informé de ce qu’il se passe dans Microsoft Intune."
-keywords: 
+description: Découvrez comment les alertes vous tiennent informé de ce qu’il se passe dans Microsoft Intune.
+keywords: ''
 author: nathbarn
-ms.author: angrobe
-manager: angrobe
+ms.author: dougeby
+manager: dougeby
 ms.date: 8/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
-ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
+ms.openlocfilehash: daa936b43c53d14d57f2c48f80dff7e908354054
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Utiliser des alertes pour être informé par Microsoft Intune
 
@@ -38,7 +38,7 @@ Les alertes générées varient en fonction des **types d’alerte**, c’est-à
 - **État :** indique si ce type d'alerte est activé ou désactivé.
 - **Gravité :** indique la sévérité de l'alerte.
 
-|Gravité|Détails|
+|Niveau de gravité|Détails|
 |--|---|
 |**Alerte critique**|Indique l’existence d’un problème sérieux que vous devez examiner au plus vite. Il peut s’agir par exemple de la détection d’un programme malveillant sur un ordinateur.|
 |**Alerte d’avertissement**|Indique la présence d’un problème qui n’est pas sérieux pour le moment, mais qui pourrait le devenir si vous n’y prêtez pas attention. Il peut s’agir par exemple de mises à jour de sécurité en attente d’installation.|
@@ -68,8 +68,8 @@ Utilisez les options suivantes pour gérer les alertes à partir de la console d
 
 |Option|Description|
 |-----|----|
-|**Afficher les alertes actives**|Choisissez l'une des deux procédures :<br /><br />**Afficher une synthèse des alertes**   Dans l’espace de travail **Tableau de bord**, les principales erreurs sont affichées dans le volet Alertes. Choisissez le volet pour afficher des informations plus détaillées.<br /><br />Par ailleurs, vous pouvez afficher une synthèse des alertes dans la page **Vue d'ensemble** de l'espace de travail **Alertes** .<br /><br />**Afficher toutes les alertes**   Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes**.|
-|**Consulter les remarques**|Choisissez l'une des deux procédures :<br /><br />Dans l’espace de travail **Tableau de bord**, choisissez **Remarques**.<br /><br />Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes** &gt; **Remarques**.|
+|**Afficher les alertes actives**|Choisissez parmi :<br /><br />**Afficher une synthèse des alertes**   Dans l’espace de travail **Tableau de bord**, les principales erreurs sont affichées dans le volet Alertes. Choisissez le volet pour afficher des informations plus détaillées.<br /><br />Par ailleurs, vous pouvez afficher une synthèse des alertes dans la page **Vue d'ensemble** de l'espace de travail **Alertes** .<br /><br />**Afficher toutes les alertes**   Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes**.|
+|**Consulter les remarques**|Choisissez parmi :<br /><br />Dans l’espace de travail **Tableau de bord**, choisissez **Remarques**.<br /><br />Dans l’espace de travail **Alertes**, choisissez **Toutes les alertes** &gt; **Remarques**.|
 |**Fermer une alerte**|Dans la liste des alertes, sélectionnez l’alerte à fermer, puis choisissez **Fermer l’alerte**.<br /><br />Les alertes fermées sont définitivement supprimées au bout de 90 jours.|
 |**Réactiver une alerte fermée**|Dans la liste des alertes, définissez le menu déroulant **Filtres** sur **Fermé**.<br /><br />Dans la liste des alertes fermées, sélectionnez l’alerte que vous souhaitez réactiver, puis choisissez **Réactiver l’alerte**.|
 

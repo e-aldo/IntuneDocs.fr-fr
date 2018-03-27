@@ -1,25 +1,25 @@
 ---
-title: "Accéder à la messagerie d’entreprise en utilisant des profils de messagerie"
-description: "Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles."
-keywords: 
+title: Accéder à la messagerie d’entreprise en utilisant des profils de messagerie
+description: Vous pouvez utiliser des paramètres de profil de messagerie pour configurer les paramètres d’accès à la messagerie électronique pour des clients de messagerie spécifiques sur les appareils mobiles.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 844e4a3c0006381eae156c74a680a5ec5a392c99
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune
 
@@ -89,7 +89,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
 3.  Utilisez le tableau suivant pour vous aider à configurer les paramètres de profil de messagerie :
 
-|Nom du paramètre | Plus d'informations|
+|Nom du paramètre | Plus d’informations|
 | ----------- | --------------- |
     |**Nom**|Nom unique du profil de messagerie.|
     |**Description**|Description qui vous aide à identifier ce profil.|

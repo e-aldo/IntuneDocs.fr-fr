@@ -1,31 +1,31 @@
 ---
-title: "Inscription avec le Gestionnaire d’inscription d’appareil"
-description: "Le compte de gestionnaire d’inscription d’appareil peut gérer un grand nombre d’appareils mobiles d’entreprise partagés avec un seul compte d’utilisateur."
-keywords: 
+title: Inscription avec le Gestionnaire d’inscription d’appareil
+description: Le compte de gestionnaire d’inscription d’appareil peut gérer un grand nombre d’appareils mobiles d’entreprise partagés avec un seul compte d’utilisateur.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b55c5d588eb366487a9e1594a46f88551e0b6ee2
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscrire des appareils d’entreprise avec le gestionnaire d’inscription d’appareil dans Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du *gestionnaire d’inscription d’appareil* est un compte d’utilisateur spécial qui peut inscrire jusqu’à 1 000 appareils. Vous ajoutez des utilisateurs existants au compte de gestionnaire d’inscription d’appareil afin qu’ils puissent bénéficier des fonctionnalités associées. Chaque appareil inscrit utilise une seule licence. Nous vous recommandons d’utiliser les appareils inscrits avec ce compte comme appareils partagés (c’est-à-dire, sans affinité utilisateur) plutôt que comme appareils personnels (« BYOD »).  
+Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d'utilisateur. Le compte *Gestionnaire d’inscription d’appareil* (DEM) est un compte d’utilisateur spécial qui permet d’inscrire jusqu’à 1 000 appareils. Vous ajoutez des utilisateurs existants au compte DEM afin de leur accorder des fonctionnalités DEM spéciales. Chaque appareil inscrit utilise une seule licence. Nous vous recommandons d’utiliser les appareils inscrits avec ce compte comme appareils partagés (c’est-à-dire, sans affinité utilisateur) plutôt que comme appareils personnels (« BYOD »).  
 
 Les utilisateurs doivent figurer dans le portail Azure pour être ajoutés comme gestionnaires d’inscription d’appareil. Pour une sécurité optimale, l’utilisateur du gestionnaire d’inscription d’appareil ne doit pas être également un administrateur Intune.
 

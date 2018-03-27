@@ -1,24 +1,24 @@
 ---
 title: Configurer Microsoft Intune
-description: "Configuration requise et conditions préalables avant de commencer à utiliser votre abonnement Intune"
-keywords: 
+description: Configuration requise et conditions préalables avant de commencer à utiliser votre abonnement Intune
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d2abd140dc83cffa11777ab75f7fb40e76fc1b83
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: be8a04b28494e5806a1e5127d4d0bbdf4cd98f36
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="set-up-intune"></a>Configurer Intune
 
@@ -35,7 +35,7 @@ Si vous utilisez actuellement Microsoft System Center Configuration Manager pour
 
 
 
-| Étapes | État  |
+| Étapes | Status  |
 | ------------- |-------------|
 | 1  | [Configurations prises en charge](supported-devices-browsers.md) : informations à connaître avant de commencer. Cela inclut les configurations prises en charge et les spécifications réseau.|
 | 2 |  [Se connecter à Intune](account-sign-up.md) : Connectez-vous à votre abonnement d’évaluation ou créez un abonnement Intune. |  

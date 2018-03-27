@@ -1,25 +1,25 @@
 ---
-title: "Utiliser les stratégies de configuration des applications mobiles iOS"
-description: "Utilisez des stratégies de configuration d’application mobile dans Intune pour fournir les paramètres pouvant être nécessaires quand les utilisateurs exécutent une application iOS."
-keywords: 
+title: Utiliser les stratégies de configuration des applications mobiles iOS
+description: Utilisez des stratégies de configuration d’application mobile dans Intune pour fournir les paramètres pouvant être nécessaires quand les utilisateurs exécutent une application iOS.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31acadce1af55b2ce751b4c6b5bfead27fce3c8c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurer des applications iOS avec des stratégies de configuration des applications mobiles dans Microsoft Intune
 
@@ -85,7 +85,7 @@ Intune prend en charge les types de données suivants dans une liste de proprié
 - &lt;dict&gt;
 - &lt;true /&gt; ou &lt;false /&gt;
      
-Pour plus d’informations sur les types de données, consultez l’article sur les [listes de propriétés](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) sur le site iOS Developer Library.
+Pour plus d’informations sur les types de données, consultez [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) (À propos des listes de propriétés) sur le site iOS Developer Library.
 
 De plus, Intune prend en charge les types de jetons suivants dans la liste de propriétés :
 - \{\{userprincipalname\}\} - (Exemple : **John@contoso.com**)

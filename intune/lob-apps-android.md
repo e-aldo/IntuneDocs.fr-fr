@@ -1,25 +1,25 @@
 ---
-title: "Guide pratique pour ajouter des applications métier Android à Microsoft Intune"
-titlesuffix: 
-description: "Découvrez comment ajouter des applications métier Android à Microsoft Intune."
-keywords: 
+title: Guide pratique pour ajouter des applications métier Android à Microsoft Intune
+titlesuffix: ''
+description: Découvrez comment ajouter des applications métier Android à Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3f336fb295dba396dad3a399aafc17435edb70b3
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: a5b09f855b6da65edf3c560725b339528f2bcfaa
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier Android à Microsoft Intune
 
@@ -33,7 +33,7 @@ Une application métier est une application que vous ajoutez à Intune à partir
 ## <a name="step-1---specify-the-software-setup-file"></a>Étape 1 : spécifier le fichier d’installation de logiciel
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Applications mobiles**.
 4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
 5. Au-dessus de la liste des applications, choisissez **Ajouter**.
@@ -48,7 +48,7 @@ Une application métier est une application que vous ajoutez à Intune à partir
 
 ## <a name="step-3---configure-app-information"></a>Étape 3 : configurer les informations de l’application
 
-1. Dans le volet **Ajouter une application**, choisissez **Fichier de package d’application**.
+1. Dans le volet **Ajouter une application**, choisissez le fichier **Package de l’application**.
 2. Dans le volet **Informations sur l’application**, ajoutez les détails de votre application. Selon l’application choisie, certaines valeurs de ce volet peuvent avoir été renseignées automatiquement :
     - **Nom** : entrez le nom de l’application à afficher dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
     - **Description** : entrez la description de l’application à afficher aux utilisateurs dans le portail d’entreprise.

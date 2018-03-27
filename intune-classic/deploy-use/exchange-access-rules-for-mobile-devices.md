@@ -1,25 +1,25 @@
 ---
-title: "Règles d'accès Exchange pour les appareils mobiles"
-description: "Règles d’accès Exchange ActiveSync permettant d’autoriser ou de bloquer les connexions d’appareils avec EAS"
-keywords: 
+title: Règles d'accès Exchange pour les appareils mobiles
+description: Règles d’accès Exchange ActiveSync permettant d’autoriser ou de bloquer les connexions d’appareils avec EAS
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 097d6ee8a7ad6752d48f554ee0bc9b3729311fe2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Règles d'accès Exchange pour les appareils mobiles
 
@@ -40,7 +40,7 @@ Une stratégie d’accès associe une **Règle par défaut** et des **Exceptions
 |Stratégie d’accès|Description|
 |-------------------|---------------|
 |Liste verte|Vous pouvez utiliser une *liste verte* pour accorder l’accès à une liste d’appareils connus et restreindre l’accès à tous les autres. Pour ce faire, vous devez créer des règles personnalisées pour les plateformes d’appareil qui sont autorisées à accéder à la boîte aux lettres d’un utilisateur. Dès que vous créez une telle règle, vous devez définir la règle d'accès par défaut sur le blocage ou la mise en quarantaine de tous les autres appareils. Pour ajouter un nouvel appareil à la liste verte, créez une règle personnalisée.|
-|Liste rouge|Vous pouvez utiliser une *liste rouge* pour accorder un accès à tous les appareils par défaut, mais pour bloquer l’accès d’un ensemble d’appareils qui ne doivent pas accéder à votre organisation. Créez une liste rouge en créant des règles personnalisées pour bloquer les plateformes d’appareil qui ne doivent pas se synchroniser avec les boîtes aux lettres de l’organisation. Nous vous recommandons de définir la règle par défaut sur l’autorisation d’accès de tous les appareils qui ne sont pas explicitement bloqués par les règles existantes. Pour ajouter un nouvel appareil ou un ensemble d'appareils à la liste rouge, créez une nouvelle règle personnalisée.|
+|Liste de blocage|Vous pouvez utiliser une *liste rouge* pour accorder un accès à tous les appareils par défaut, mais pour bloquer l’accès d’un ensemble d’appareils qui ne doivent pas accéder à votre organisation. Créez une liste rouge en créant des règles personnalisées pour bloquer les plateformes d’appareil qui ne doivent pas se synchroniser avec les boîtes aux lettres de l’organisation. Nous vous recommandons de définir la règle par défaut sur l’autorisation d’accès de tous les appareils qui ne sont pas explicitement bloqués par les règles existantes. Pour ajouter un nouvel appareil ou un ensemble d'appareils à la liste rouge, créez une nouvelle règle personnalisée.|
 |Liste mixte|Outre la création de listes rouges et vertes, vous pouvez mettre en quarantaine des nouveaux appareils mobiles devant être utilisés par l'organisation afin de les évaluer. Par exemple, si vous avez créé une liste rouge pour les appareils mobiles non autorisés au sein de votre organisation, et une liste verte pour les appareils mobiles autorisés au sein de celle-ci, vous pouvez définir la règle par défaut sur la mise en quarantaine. Tous les autres appareils sont automatiquement mis en quarantaine. Cela vous permet de détecter les nouveaux appareils devant être utilisés dans l’organisation et de décider de leur ajout à la liste rouge ou la liste verte.|
 La procédure suivante décrit comment créer une règle personnalisée.
 

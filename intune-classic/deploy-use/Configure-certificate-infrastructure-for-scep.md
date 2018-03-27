@@ -1,25 +1,25 @@
 ---
-title: "Configurer l’infrastructure de certificat pour SCEP"
-description: "Infrastructure de création et de déploiement des profils de certificats SCEP."
-keywords: 
+title: Configurer l’infrastructure de certificat pour SCEP
+description: Infrastructure de création et de déploiement des profils de certificats SCEP.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 37dcc2e7a11e33ff0543a3f2020331d52f5052ad
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurer l’infrastructure de certificat pour SCEP
 
@@ -37,7 +37,7 @@ I
 -  **Serveur NDES** : sur un serveur qui exécute Windows Server 2012 R2 ou version ultérieure, vous devez configurer le service d’inscription de périphérique réseau (NDES). Intune ne prend pas en charge le service NDES quand il s’exécute sur un serveur qui exécute également l’autorité de certification d’entreprise. Consultez le [Guide du service d’inscription de périphérique réseau](http://technet.microsoft.com/library/hh831498.aspx) pour obtenir des instructions sur la configuration de Windows Server 2012 R2 pour héberger le service d’inscription de périphérique réseau. Le serveur NDES doit être joint au domaine qui héberge l’autorité de certification et ne doit pas se trouver sur le même serveur que l’autorité de certification. Vous trouverez plus d’informations sur le déploiement du serveur NDES dans une forêt distincte, un réseau isolé ou un domaine interne dans [Utilisation d’un module de stratégie avec le service d’inscription de périphérique réseau](https://technet.microsoft.com/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector** : vous utilisez la console d’administration Intune pour télécharger le programme d’installation de **Certificate Connector** (**ndesconnectorssetup.exe**). Vous pouvez ensuite exécuter **ndesconnectorssetup.exe** sur l'ordinateur où vous souhaitez installer Certificate Connector.
--  **Serveur proxy d’application web** (facultatif) : vous pouvez utiliser un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web. Cette configuration :
+-  **Serveur proxy d’application web** (facultatif) : vous pouvez utiliser un serveur qui exécute Windows Server 2012 R2 ou version ultérieure comme serveur proxy d’application web. Cette configuration :
     -  Permet aux appareils de recevoir des certificats à l'aide d'une connexion Internet.
     -  Est une recommandation de sécurité lorsque les appareils se connectent via Internet pour recevoir et renouveler les certificats.
 
@@ -46,7 +46,7 @@ I
 >-  En outre, le serveur qui héberge le proxy d’application web doit avoir un certificat SSL qui correspond au nom publié sur les clients externes, et approuver le certificat SSL utilisé sur le serveur NDES. Ces certificats permettent au serveur du proxy d'application web de mettre fin à la connexion SSL à partir des clients et de créer une nouvelle connexion SSL au serveur NDES.
     Pour plus d’informations sur les certificats du proxy d’application web, consultez la section **Planifier des certificats** dans [Planification de publication des applications à l’aide du proxy d’application web](https://technet.microsoft.com/library/dn383650.aspx) Pour obtenir des informations générales sur les serveurs proxy d’application web, consultez [Utilisation d’un proxy d’application web](http://technet.microsoft.com/library/dn584113.aspx).|
 
-### <a name="network-requirements"></a>Conditions requises en matière de réseau
+### <a name="network-requirements"></a>Configuration réseau requise
 
 Depuis Internet jusqu’au réseau de périmètre, autorisez le port 443 depuis tous les hôtes/adresses IP sur Internet vers le serveur NDES.
 
@@ -71,7 +71,7 @@ Nous vous recommandons de publier le serveur NDES via un proxy, comme le [proxy 
 |**Compte de service NDES**|Vous spécifiez un compte d'utilisateur de domaine à utiliser comme compte de service NDES.|
 
 ## <a name="BKMK_ConfigureInfrastructure"></a>Configurer votre infrastructure
-Avant de configurer les profils de certificat, vous devez effectuer les tâches suivantes, ce qui nécessite la connaissance de Windows Server 2012 R2 et des services de certificats Active Directory :
+Avant de configurer les profils de certificat, vous devez effectuer les tâches suivantes, ce qui nécessite la connaissance de Windows Server 2012 R2 et des services de certificats Active Directory :
 
 **Tâche 1** : Créer un compte de service NDES
 
@@ -91,7 +91,7 @@ Créez un compte d'utilisateur de domaine à utiliser comme compte de service ND
 
 
 ### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>Tâche 2 – Configurer les modèles de certificats sur l’autorité de certification
-Dans cette tâche, vous allez :
+Dans cette tâche, vous allez :
 
 -   Configurer un modèle de certificat pour NDES
 
@@ -103,7 +103,7 @@ Dans cette tâche, vous allez :
 
 2.  Sur l'autorité de certification émettrice, utilisez le composant logiciel enfichable Modèles de certificats pour créer un modèle personnalisé ou copier un modèle existant, puis modifiez un modèle existant (comme le modèle de l'utilisateur), pour l'utiliser avec NDES.
 
-    Le modèle doit avoir les configurations suivantes :
+    Le modèle doit avoir les configurations suivantes :
 
     -   Spécifiez un **Nom complet du modèle** convivial pour le modèle.
 
@@ -141,7 +141,7 @@ Voici les captures d’écran d’un exemple de configuration de modèle.
 
 
 
-Pour configurer l'autorité de certification et permettre au demandeur de spécifier la période de validité, sur l'autorité de certification, exécutez les commandes suivantes :
+Pour configurer l'autorité de certification et permettre au demandeur de spécifier la période de validité, sur l'autorité de certification, exécutez les commandes suivantes :
 
    1.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
    2.  **net stop certsvc**
@@ -156,7 +156,7 @@ Pour configurer l'autorité de certification et permettre au demandeur de spéci
 
 
 ### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>Tâche 3 – Configurer les composants requis du serveur NDES
-Dans cette tâche, vous allez :
+Dans cette tâche, vous allez :
 
 -   Ajouter NDES à un serveur Windows Server et configurer IIS pour prendre en charge NDES
 
@@ -174,13 +174,13 @@ Dans cette tâche, vous allez :
         > [!TIP]
         > Dans la page **Progression de l'installation** de l'Assistant, ne cliquez pas sur **Fermer**. Cliquez à la place sur le lien **Configurer les services de certificats Active Directory sur le serveur de destination**. Cette opération ouvre l'Assistant **Configuration AD CS** que vous utilisez pour la tâche suivante. Une fois l'Assistant Configuration AD CS ouvert, vous pouvez fermer l'Assistant Ajout de rôles et de fonctionnalités.
 
-    2.  Lorsque NDES est ajouté au serveur, l'Assistant installe également IIS. Vérifiez qu'IIS a les configurations suivantes :
+    2.  Lorsque NDES est ajouté au serveur, l'Assistant installe également IIS. Vérifiez qu'IIS a les configurations suivantes :
 
         -   **Serveur web** &gt; **Sécurité** &gt; **Filtrage des demandes**
 
-        -   **Serveur web** &gt; **Développement d’applications** &gt; **ASP.NET 3.5**. L'installation d'ASP.NET 3.5 installe le .NET Framework 3.5. Quand vous installez .NET Framework 3.5, installez à la fois le **.NET Framework 3.5** et **Activation HTTP**.
+        -   **Serveur web** &gt; **Développement d’applications** &gt; **ASP.NET 3.5**. L'installation d'ASP.NET 3.5 installe le .NET Framework 3.5. Quand vous installez .NET Framework 3.5, installez à la fois le **.NET Framework 3.5** et **Activation HTTP**.
 
-        -   **Serveur web** &gt; **Développement d’applications** &gt; **ASP.NET 4.5**. L'installation d'ASP.NET 4.5 installe .NET Framework 4.5. Lors de l’installation de .NET Framework 4.5, installez la fonctionnalité **.NET Framework 4.5** de base, **ASP.NET 4.5** et la fonctionnalité **Services WCF** &gt; **Activation HTTP**.
+        -   **Serveur web** &gt; **Développement d’applications** &gt; **ASP.NET 4.5**. L'installation d'ASP.NET 4.5 installe .NET Framework 4.5. Lors de l’installation de .NET Framework 4.5, installez la fonctionnalité **.NET Framework 4.5** de base, **ASP.NET 4.5** et la fonctionnalité **Services WCF** &gt; **Activation HTTP**.
 
         -   **Outils de gestion** &gt; **IIS 6 Management Compatibility** &gt; **Compatibilité avec la métabase de données IIS 6**
 
@@ -197,7 +197,7 @@ Dans cette tâche, vous allez :
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 ### <a name="task-4---configure-ndes-for-use-with-intune"></a>Tâche 4 – Configurer NDES pour une utilisation avec Intune
-Dans cette tâche, vous allez :
+Dans cette tâche, vous allez :
 
 -   Configurer NDES pour une utilisation avec l'autorité de certification émettrice
 
@@ -222,7 +222,7 @@ Dans cette tâche, vous allez :
 
     Dans la page **Confirmation** , cliquez sur **Configurer** pour terminer l'Assistant.
 
-2.  Une fois l'Assistant terminé, modifiez la clé de Registre suivante sur le serveur NDES :
+2.  Une fois l'Assistant terminé, modifiez la clé de Registre suivante sur le serveur NDES :
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
 
@@ -237,7 +237,7 @@ Dans cette tâche, vous allez :
 
 3. Le serveur NDES recevra de très longues URL (requêtes), qui nécessiteront l’ajout de deux entrées au Registre :
 
-    |Localisation|Valeur|Type|Niveau|
+    |Emplacement|Valeur|Tapez|Données|
     |-------|-----|----|----|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxFieldLength|DWORD|65534 (décimal)|
     |HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters|MaxRequestBytes|DWORD|65534 (décimal)|
@@ -288,11 +288,11 @@ Dans cette tâche, vous allez :
 
     **Longueur maximale des URL (octets)** = **65534**
 
-3.  Vérifiez la clé de Registre suivante :
+3.  Vérifiez la clé de Registre suivante :
 
     **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters**
 
-    Vérifiez que les valeurs suivantes sont définies en tant qu'entrées DWORD :
+    Vérifiez que les valeurs suivantes sont définies en tant qu'entrées DWORD :
 
     Nom : **MaxFieldLength**, avec une valeur décimale de **65534**
 
@@ -301,7 +301,7 @@ Dans cette tâche, vous allez :
 4.  Redémarrez le serveur NDES. Le serveur est maintenant prêt à prendre en charge Certificate Connector.
 
 ### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>Tâche 5 – Activer, installer et configurer Intune Certificate Connector
-Dans cette tâche, vous allez :
+Dans cette tâche, vous allez :
 
 activer la prise en charge de NDES dans Intune ;
 
@@ -331,7 +331,7 @@ télécharger, installer et configurer Certificate Connector sur le serveur NDE
 4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
 
     > [!TIP]
-    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
+    > Si vous fermez l'Assistant avant de lancer l'interface utilisateur de Certificate Connector, vous pouvez le rouvrir en exécutant la commande suivante :
     >
     > **&lt;chemin_installation&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 

@@ -1,25 +1,25 @@
 ---
-title: "Configurations personnalisées pour les profils VPN Microsoft Intune"
-description: "Utilisez des configurations personnalisées pour créer des profils VPN dans Intune."
-keywords: 
+title: Configurations personnalisées pour les profils VPN Microsoft Intune
+description: Utilisez des configurations personnalisées pour créer des profils VPN dans Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab235f10c8c91e707c623eca5168ff75de234f32
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Configurations personnalisées pour les profils VPN Microsoft Intune
 
@@ -28,10 +28,10 @@ ms.lasthandoff: 12/12/2017
 ## <a name="create-a-custom-configuration"></a>Créer une configuration personnalisée
 Vous pouvez utiliser des stratégies de configuration personnalisées Intune afin de créer des profils VPN pour :
 
-* Appareils qui exécutent Android 4 et versions ultérieures
+* appareils qui exécutent Android 4 et versions ultérieures ;
 * Appareils Android for Work
 * Appareils inscrits qui exécutent Windows 8.1 et versions ultérieures
-* Appareils qui exécutent Windows Phone 8.1 et versions ultérieures
+* appareils qui exécutent Windows Phone 8.1 et versions ultérieures.
 * Appareils inscrits qui exécutent Windows 10 Desktop
 * Appareil qui exécutent Windows 10 Mobile
 

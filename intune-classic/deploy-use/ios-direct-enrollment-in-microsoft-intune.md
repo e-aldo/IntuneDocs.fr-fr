@@ -1,25 +1,25 @@
 ---
 title: Inscription directe pour les appareils iOS
-description: "Utilisez l’outil Apple Configurator pour inscrire directement les appareils iOS d’entreprise avec une stratégie prédéfinie en vous connectant via USB à un ordinateur Mac."
-keywords: 
+description: Utilisez l’outil Apple Configurator pour inscrire directement les appareils iOS d’entreprise avec une stratégie prédéfinie en vous connectant via USB à un ordinateur Mac.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: db07c6c6aa98d880bcc9f32204dffddebe6f45b4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 79f720af293b6062e140fac9341f97a55bf598fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>Inscrire directement des appareils iOS en utilisant Apple Configurator
 
@@ -38,7 +38,7 @@ Quand vous inscrivez directement des appareils iOS, vous pouvez inscrire un appa
 
         ![Page Créer un profil d’inscription d’appareils](../media/pol-sa-corp-enroll.png)
 
-    2.  Entrez les détails des profils d'appareils :
+    2.  Entrez les détails des profils d'appareils :
 
         -   **Nom** : nom du profil d’inscription d’appareil. Non visible pour les utilisateurs.
 
@@ -62,7 +62,7 @@ Quand vous inscrivez directement des appareils iOS, vous pouvez inscrire un appa
 
 6.  Transférez le fichier en copiant le fichier .mobileconfig téléchargé sur un ordinateur Mac.
     > [!NOTE]
-    > L’URL du profil d’inscription est valide pendant les deux semaines qui suivent son exportation. Après deux semaines, vous devez exporter une nouvelle URL de profil d’inscription pour inscrire des appareils iOS avec l’Assistant Configuration.
+    > L’URL du profil d’inscription est valide pendant deux semaines après son exportation. Après deux semaines, vous devez exporter une nouvelle URL de profil d’inscription pour inscrire des appareils iOS avec l’Assistant Configuration.
 
 7.  Préparez l’appareil avec Apple Configurator. Les appareils iOS sont connectés à l'ordinateur Mac et inscrits pour la gestion des appareils mobiles.
 

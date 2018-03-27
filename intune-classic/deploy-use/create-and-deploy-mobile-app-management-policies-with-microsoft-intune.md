@@ -1,25 +1,25 @@
 ---
-title: "Créer et déployer des stratégies de gestion des appareils mobiles"
-description: "Suivez les instructions pas-à-pas de cette rubrique pour créer une stratégie de gestion des applications mobiles."
-keywords: 
+title: Créer et déployer des stratégies de gestion des appareils mobiles
+description: Suivez les instructions pas-à-pas de cette rubrique pour créer une stratégie de gestion des applications mobiles.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ec41c756c802986b85a45f53329ef6daba6c08
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Créer et déployer des stratégies de protection des applications avec Microsoft Intune
 
@@ -96,7 +96,7 @@ Pour créer des stratégies de protection des applications, procédez comme suit
 Quand vous avez fini de créer une stratégie comme décrit dans la procédure précédente, elle n’est pas déployée sur les utilisateurs. Pour déployer une stratégie, consultez la section suivante, « Déployer une stratégie sur les utilisateurs ».
 
 > [!IMPORTANT]
-> Si vous créez une stratégie de protection des applications pour une application à l’aide de la console d’administration Intune et une autre à l’aide du portail Azure, celle créée à l’aide du portail est prioritaire. Cependant, la création de rapports dans la console Intune ou Configuration Manager indique les paramètres de stratégie créés à partir de la console d’administration Intune. Exemple :
+> Si vous créez une stratégie de protection des applications pour une application à l’aide de la console d’administration Intune et une autre à l’aide du portail Azure, celle créée à l’aide du portail est prioritaire. Cependant, la création de rapports dans la console Intune ou Configuration Manager indique les paramètres de stratégie créés à partir de la console d’administration Intune. Par exemple :
 >
 > -   Vous avez créé une stratégie de protection des applications dans la console d’administration Intune qui bloque la copie à partir d’une application.
 > -   Vous avez créé une stratégie de protection des applications dans la console Azure qui autorise la copie à partir d’une application.

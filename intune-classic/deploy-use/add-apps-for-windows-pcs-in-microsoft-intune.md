@@ -1,24 +1,24 @@
 ---
-title: "Ajouter des applications pour les PC Windows exécutant le logiciel client Intune"
-description: "Cette rubrique montre comment ajouter des applications pour ordinateurs Windows à Intune avant de les déployer."
-keywords: 
+title: Ajouter des applications pour les PC Windows exécutant le logiciel client Intune
+description: Cette rubrique montre comment ajouter des applications pour ordinateurs Windows à Intune avant de les déployer.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7c2352ea47d7dab22867e213169d382b9330c171
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b44ed650019c7e189b1f8f3bfe29e161558258e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Ajouter des applications pour les PC Windows exécutant le logiciel client Intune
 
@@ -63,7 +63,7 @@ Vous utilisez l’Éditeur de logiciel Microsoft Intune pour configurer les prop
     - **Catégorie** (facultatif). Sélectionnez l’une des catégories d’applications intégrées. Cela permettra aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
     - **Icône** (facultatif). Chargez une icône qui sera associée à l’application. Il s'agit de l'icône qui s'affichera avec l'application lorsque les utilisateurs parcourront le portail d'entreprise.
 
-4.  Dans la page **Configuration requise**, sélectionnez les conditions à remplir avant l’installation de l’application. Choisissez parmi :
+4.  Dans la page **Configuration requise**, sélectionnez les conditions à remplir avant l’installation de l’application. Choisissez parmi :
 
     - **Architecture**. Choisissez si cette application peut être installée sur les systèmes d’exploitation 32 bits, 64 bits ou les deux.
     - **Système d’exploitation**. Sélectionnez le système d’exploitation minimal sur lequel cette application peut être installée.

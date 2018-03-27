@@ -1,25 +1,25 @@
 ---
-title: "Résoudre les problèmes liés aux stratégies"
-description: "Résolvez les problèmes de configuration de stratégie."
-keywords: 
+title: Résoudre les problèmes liés aux stratégies
+description: Résolvez les problèmes de configuration de stratégie.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e97c47dc2d1744f539f569de4c20ee994d05ffd
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7f9632a8b769fae5c3ae0fdf7041b968a9707d24
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Résoudre les problèmes de stratégie dans Microsoft Intune
 
@@ -32,7 +32,7 @@ Si vous rencontrez des problèmes de déploiement et de gestion des stratégies 
 ### <a name="was-a-deployed-policy-applied-to-the-device"></a>Une stratégie déployée a-t-elle été appliquée à l’appareil ?
 **Problème :**  Vous ne savez pas si une stratégie a été correctement appliquée.
 
-Dans la console d’administration Intune, à chaque appareil correspond un onglet Stratégie en dessous de **Propriétés de l’appareil**. Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur prévue est la valeur que vous souhaitez obtenir lors de l'attribution de la stratégie. L’état est ce que vous appliquez au bout du compte quand toutes les stratégies qui s’appliquent à l’appareil, ainsi que les restrictions et les conditions requises du matériel et du système d’exploitation, sont regroupées. Les états possibles sont :
+Dans la console d’administration Intune, à chaque appareil correspond un onglet Stratégie en dessous de **Propriétés de l’appareil**. Chaque stratégie contient une **Valeur prévue** et un **État**. La valeur prévue est la valeur que vous souhaitez obtenir lors de l'attribution de la stratégie. L’état est ce que vous appliquez au bout du compte quand toutes les stratégies qui s’appliquent à l’appareil, ainsi que les restrictions et les conditions requises du matériel et du système d’exploitation, sont regroupées. Les états possibles sont :
 
 -   **Conforme**: l’appareil a reçu la stratégie et indique au service qu’il est conforme au paramètre.
 
@@ -54,7 +54,7 @@ La capture d’écran ci-dessous illustre clairement ce point à travers deux ex
 
 ## <a name="issues-with-enrolled-devices"></a>Problèmes liés aux appareils inscrits
 
-### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerte : L’enregistrement de règles d’accès dans Exchange a échoué
+### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerte : L’enregistrement de règles d’accès dans Exchange a échoué
 **Problème**: vous recevez l’alerte **L’enregistrement de règles d’accès dans Exchange a échoué** dans la console d’administration.
 
 Si vous avez créé des stratégies dans l’espace de travail Stratégie Exchange sur site de la Console d’administration, mais que vous utilisez O365, les paramètres de stratégie configurés ne sont pas appliqués par Intune. Notez la source de la stratégie indiquée dans l’alerte.  Dans l’espace de travail Stratégie Exchange sur site, supprimez les règles existantes, car ce sont des règles Exchange globales qui se trouvent dans Intune et qui concernent Exchange sur site et non O365. Créez ensuite une stratégie pour O365.

@@ -1,25 +1,25 @@
 ---
-title: "Paramètres de stratégie de conformité pour Android"
-description: "Cette rubrique décrit les paramètres de stratégie de conformité d’appareil pour les appareils Android."
-keywords: 
+title: Paramètres de stratégie de conformité pour Android
+description: Cette rubrique décrit les paramètres de stratégie de conformité d’appareil pour les appareils Android.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f781c5498a569a067f0f2aa6f780a6cc37c9985c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 63618f9af5f2bdb863a19c229c862e446dd4ea7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Android dans Microsoft Intune
 
@@ -39,7 +39,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
 
 -  **Longueur minimale du mot de passe** : spécifie le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l’utilisateur.
 
-- **Qualité du mot de passe :** ce paramètre détecte si les critères de mot de passe que vous spécifiez sont configurés sur l’appareil. Activez ce paramètre pour que les utilisateurs satisfassent à certains critères de mot de passe pour les appareils Android. Choisissez parmi :
+- **Qualité du mot de passe :** ce paramètre détecte si les critères de mot de passe que vous spécifiez sont configurés sur l’appareil. Activez ce paramètre pour que les utilisateurs satisfassent à certains critères de mot de passe pour les appareils Android. Choisissez parmi :
 
   -   **Sécurité biométrique faible**
   -   **Obligatoire**
@@ -74,7 +74,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
 - **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)** : spécifiez le niveau de correctif Android minimal.  Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée au format AAAA-MM-JJ.
 - **Exiger l’activation de la protection de l’appareil contre les menaces**: utilisez ce paramètre pour sélectionner l’évaluation des risques de la solution Lookout MTP comme une condition de conformité. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
 
-  - **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
+  - **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut. Cela signifie que l’appareil ne peut avoir aucune menace. Si des menaces sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
   - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
   - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
   - **Élevé** : cette option est la moins sécurisée. Les menaces de tout niveau sont fondamentalement autorisées. Cette option peut être utile uniquement si vous utilisez cette solution pour créer des rapports.

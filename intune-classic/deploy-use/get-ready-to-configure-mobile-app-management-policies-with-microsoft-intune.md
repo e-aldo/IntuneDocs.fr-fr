@@ -1,25 +1,25 @@
 ---
-title: "Conditions préalables pour les stratégies de gestion des applications mobiles"
-description: "Cette rubrique décrit les prérequis pour la configuration des utilisateurs avant de pouvoir créer des stratégies de gestion des applications mobiles."
-keywords: 
+title: Conditions préalables pour les stratégies de gestion des applications mobiles
+description: Cette rubrique décrit les prérequis pour la configuration des utilisateurs avant de pouvoir créer des stratégies de gestion des applications mobiles.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9dbaaf5b540d79a51cef3b7f98a16a5a1f200648
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Préparatifs avant la configuration de stratégies de protection des applications dans le portail Azure
 
@@ -57,7 +57,7 @@ Pour obtenir des instructions sur la création d’une stratégie de protection 
 ##  <a name="supported-platforms"></a>Plateformes prises en charge
 - iOS 8.1 ou version ultérieure
 - Android 4 ou version ultérieure
-- Windows 10
+- Windows 10
 
 >[!NOTE]
 >Depuis la version 1703, vous pouvez définir les stratégies de protection des applications pour les appareils Windows 10 dans la GAM sans scénario d’inscription. Pour plus d’informations, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
@@ -72,7 +72,7 @@ Pour afficher la liste complète des applications Microsoft prises en charge, ac
 
   * Pour les appareils qui ne sont pas gérés (comme les appareils appartenant aux employés) ou pour les appareils qui sont gérés par une autre solution de gestion des appareils mobiles, consultez [Protéger les données et applications métier sur les appareils non inscrits dans Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 -   **Un abonnement Microsoft Intune**. Les utilisateurs ont besoin de licences Intune pour obtenir les applications avec des stratégies de protection d’application.
 Vous disposez déjà d’un abonnement Intune si vous utilisez actuellement Intune pour gérer vos appareils. Vous disposez également d’un abonnement Intune si vous avez acheté une licence EMS (Enterprise Mobility Suite). Si vous essayez Intune pour tester les fonctionnalités de gestion des applications mobiles, vous pouvez obtenir un compte d’évaluation dans la [page Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
