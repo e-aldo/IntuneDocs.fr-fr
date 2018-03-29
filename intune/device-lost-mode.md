@@ -1,23 +1,23 @@
 ---
 title: Activer le mode Perdu iOS avec Microsoft Intune - Azure | Microsoft Docs
-description: "Activez ou démarrez le mode Perdu pour personnaliser un message qui s’affiche sur l’écran de verrouillage d’un appareil iOS perdu ou volé à l’aide de Microsoft Intune. Et, obtenez plus d’informations sur la sécurité et les informations de confidentialité lors de l’utilisation de l’action en mode Perdu."
-keywords: 
+description: Activez ou démarrez le mode Perdu pour personnaliser un message qui s’affiche sur l’écran de verrouillage d’un appareil iOS perdu ou volé à l’aide de Microsoft Intune. Obtenez également plus d’informations sur la sécurité et les informations de confidentialité lors de l’utilisation de l’action mode Perdu.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47d6314dfaed546e5b4cff7f93a5540ba512bde9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2da88a6146080014b79fbdc1b8c553eae5705195
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Activer le mode Perdu sur des appareils iOS avec Intune
 
@@ -29,7 +29,7 @@ L’action d’appareil **Mode Perdu** vous permet d’activer le mode Perdu sur
 
 - iOS 9.3 et version ultérieure
 
-Cette fonctionnalité n'est **pas** prise en charge pour : 
+Cette fonctionnalité n’est pas prise en charge pour : 
 - Windows
 - Windows Phone
 - macOS
@@ -40,7 +40,7 @@ Cette fonctionnalité n'est **pas** prise en charge pour :
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
 3. Sélectionnez **Appareils**, puis **Tous les appareils**.
-4. Dans la liste des appareils que vous gérez, choisissez un appareil iOS, choisissez **...Plus**, puis choisissez l’action à distance **Mode Perdu**.
+4. Dans la liste des appareils que vous gérez, choisissez un appareil iOS, puis **...Plus**. Ensuite, choisissez l’action à distance **Mode Perdu**.
 5. En **Mode Perdu**, activez cette fonctionnalité. Entrez ensuite le message à afficher et le numéro de téléphone du contact.
 6. Cliquez sur **OK** pour enregistrer vos modifications.
 
@@ -48,11 +48,11 @@ Lorsque vous activez le mode Perdu, vous bloquez toute utilisation de l’appare
 
 ## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>Informations de sécurité et de confidentialité pour le mode Perdu et actions Localiser l’appareil
 - Aucune information sur l’emplacement de l’appareil n’est envoyée à Intune tant que vous n’activez pas cette action.
-- Lorsque vous utilisez l’action Localiser l’appareil, les coordonnées de latitude et de longitude de l’appareil sont envoyées à Intune et affichées dans le portail Azure.
+- Quand vous utilisez l’action Localiser l’appareil, les coordonnées de latitude et de longitude de l’appareil sont envoyées à Intune et affichées dans le portail Azure.
 - Les données sont stockées pendant 24 heures avant d’être supprimées. Vous ne pouvez pas supprimer manuellement les données d’emplacement.
 - Les données d’emplacement sont chiffrées aussi bien pendant leur stockage que leur transmission.
-- Dans le message saisi à afficher sur l’écran de verrouillage, veillez à inclure des détails spécifiques pour retourner l’appareil perdu.
+- Dans le message entré à afficher sur l’écran de verrouillage, veillez à inclure des détails spécifiques pour retourner l’appareil perdu.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour afficher l’état de l’activation du mode Perte, ouvrez **Appareils**, puis sélectionnez **Actions de l’appareil**.
+Pour afficher l’état de l’activation du mode Perdu, ouvrez **Appareils**, puis sélectionnez **Actions de l’appareil**.

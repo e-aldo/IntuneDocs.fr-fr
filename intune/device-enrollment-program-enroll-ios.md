@@ -1,25 +1,25 @@
 ---
-title: "Inscrire des appareils iOS avec le Programme d’inscription des appareils"
+title: Inscrire des appareils iOS avec le Programme d’inscription des appareils
 titlesuffix: Microsoft Intune
-description: "Découvrez comment inscrire les appareils iOS d’entreprise à l’aide du programme d’inscription d’appareils."
-keywords: 
+description: Découvrez comment inscrire les appareils iOS d’entreprise à l’aide du programme d’inscription d’appareils.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Inscrire automatiquement des appareils iOS avec le Programme d’inscription des appareils d’Apple
 
@@ -42,10 +42,10 @@ Cette rubrique vous aide à activer l’inscription d’appareils iOS pour les a
 
 Pour activer l’inscription DEP, vous utilisez à la fois le portail Intune et le portail DEP Apple. Une liste de numéros de série ou un numéro de bon de commande est nécessaire pour que vous puissiez affecter des appareils à Intune à des fins de gestion. Vous créez des profils d’inscription DEP contenant les paramètres appliqués aux appareils lors de l’inscription.
 
-Notez que l’inscription DEP ne fonctionne pas avec le [gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md).
+L’inscription DEP ne fonctionne pas avec le [gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md). De plus, macOS ne prend pas en charge le programme DEP actuellement.
 
 ## <a name="what-is-supervised-mode"></a>Qu’est-ce que le mode supervisé ?
-Apple a introduit le mode supervisé dans iOS 5. Un appareil iOS en mode supervisé peut être géré avec plus de contrôles. Il est donc particulièrement utile pour les appareils d’entreprise. Intune prend en charge la configuration des appareils pour le mode supervisé dans le cadre du Programme d’inscription des appareils Apple. 
+Apple a introduit le mode supervisé dans iOS 5. Un appareil iOS en mode supervisé peut être géré avec plus de contrôles. Il est donc particulièrement utile pour les appareils d’entreprise. Intune prend en charge la configuration des appareils pour le mode supervisé dans le cadre du Programme d’inscription des appareils Apple.
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -172,7 +172,7 @@ Maintenant qu’Intune est autorisé à gérer vos appareils, vous pouvez synchr
 1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
   ![Sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser](./media/enrollment-program-device-sync.png)
-  
+
 2. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
    ![Panneau de synchronisation avec sélection du lien Demander une synchronisation](./media/enrollment-program-device-request-sync.png)
@@ -206,6 +206,4 @@ Vous devez affecter un profil de programme d’inscription aux appareils pour po
 ## <a name="distribute-devices"></a>Distribuer des appareils
 Vous avez activé la gestion et la synchronisation entre Apple et Intune, et affecté un profil pour permettre d’inscrire vos appareils DEP. Vous pouvez désormais distribuer les appareils aux utilisateurs. Pour les appareils avec affinité utilisateur, chaque utilisateur doit se voir attribuer une licence Intune. Les appareils sans affinité utilisateur nécessitent une licence d’appareil. Un appareil activé ne peut pas appliquer de profil d’inscription tant que l’appareil n’est pas réinitialisé aux paramètres d’usine.
 
-Consultez [Inscrire un appareil iOS dans Intune avec le Programme d’inscription des appareils](/intune-user-help/enroll-your-device-dep-ios). 
-
-
+Consultez [Inscrire un appareil iOS dans Intune avec le Programme d’inscription des appareils](/intune-user-help/enroll-your-device-dep-ios).

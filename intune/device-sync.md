@@ -1,25 +1,25 @@
 ---
-title: "Synchroniser des appareils avec Microsoft Intune - Azure | Microsoft Docs"
-description: "Synchronisez des appareils enregistrés ou gérés avec Microsoft Intune pour obtenir les stratégies et les actions les plus récentes. Inclut les étapes permettant de synchroniser à l’aide du portail Azure et répertorie les codes d’erreur qui peuvent être retentée."
-keywords: 
+title: Synchroniser des appareils avec Microsoft Intune - Azure | Microsoft Docs
+description: Synchronisez des appareils qui sont inscrits ou gérés avec Microsoft Intune afin d’obtenir les stratégies et les actions les plus récentes. Inclut les étapes permettant de synchroniser à l’aide du portail Azure et répertorie les codes d’erreur qui peuvent être retentée.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>Synchroniser des appareils pour obtenir les stratégies et les actions les plus récentes - Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Synchroniser des appareils pour obtenir les stratégies et les actions les plus récentes avec Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,15 +37,15 @@ L’action d’appareil **Synchroniser** force l’appareil sélectionné à s�
 ## <a name="sync-a-device"></a>Synchroniser un appareil
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**. 
-3. Dans **Intune**, sélectionnez **Appareils** puis **Tous les appareils**.
-4. Dans la liste des appareils que vous gérez, choisissez un appareil, choisissez **...Plus**, puis sélectionnez l’action **Synchroniser**.
-5. Cliquez sur **Oui** pour confirmer la suppression.
+2. Sélectionnez **Tous les services**, filtrez pour **Intune**, puis sélectionnez **Microsoft Intune**. 
+3. Dans **Intune**, sélectionnez **Appareils** > **Tous les appareils**.
+4. Dans la liste des appareils que vous gérez, sélectionnez un appareil, sélectionnez **Plus**, puis **Synchroniser**.
+5. Pour confirmer, sélectionnez **Oui**.
 
 
 ## <a name="retryable-error-codes"></a>Codes d’erreur renouvelable
 
-Quand un administrateur exécute l’action d’appareil **Synchroniser**, les applications iOS et Android qui ont rencontré un échec et généré un code d’erreur renouvelable sont toujours disponibles sur l’appareil. Cependant, les applications qui ont généré un code d’erreur non renouvelable, doivent attendre sept jours avant d’être à nouveau disponibles sur l’appareil.
+Quand un administrateur exécute l’action d’appareil **Synchroniser**, les applications iOS et Android qui ont rencontré un échec et généré un code d’erreur renouvelable sont toujours disponibles sur l’appareil. Cependant, les applications qui ont généré un code d’erreur non renouvelable doivent attendre sept jours avant d’être à nouveau disponibles sur l’appareil.
 
 
 | Code d'erreur  | Description suggérée | Renouvelable |
@@ -62,6 +62,6 @@ Quand un administrateur exécute l’action d’appareil **Synchroniser**, les a
 | 2016330889 | Échec de la connexion sécurisée. Réinitialisez votre connexion. | Oui|
 | 2016330888 | Échec de l’évaluation de la confiance du serveur. | Non|
 
-## <a name="next-step"></a>Étape suivante
+## <a name="next-steps"></a>Étapes suivantes
 
-Choisissez **Actions de l’appareil** pour voir l’état de l’action de synchronisation. 
+- Pour voir l’état de l’action de synchronisation, sélectionnez **Actions de l’appareil**. 

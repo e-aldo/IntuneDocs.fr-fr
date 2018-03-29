@@ -1,25 +1,25 @@
 ---
-title: "Guide de configuration de l'application Portail d’entreprise"
+title: Guide de configuration de l'application Portail d’entreprise
 titleSuffix: Microsoft Intune
-description: "Découvrez comment appliquer un logo spécifique d'entreprise à l’application Portail d’entreprise Intune."
-keywords: 
+description: Découvrez comment appliquer un logo spécifique d'entreprise à l’application Portail d’entreprise Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd876739fb0f3ad6d2e0fea705825a26ebc9fe03
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Guide pratique pour configurer l’application Portail d’entreprise Microsoft Intune
 
@@ -41,7 +41,7 @@ Le nom de l’entreprise s’affiche comme titre du Portail d’entreprise. Les 
 |**Nom de la société**|40|Ce nom s’affiche comme titre du Portail d’entreprise.|        
 |**Nom du contact du service informatique**|40|Ce nom s’affiche dans la page **Contacter le service informatique**.|      
 |**Numéro de téléphone du service informatique**|20|Ce numéro s’affiche dans la page **Contacter le service informatique**.|        
-|Adresse de messagerie du service informatique|40|Cette adresse s’affiche dans la page **Contacter le service informatique**. Vous devez entrer une adresse e-mail valide au format **alias@domainname.com**.|     
+|**Adresse e-mail du service informatique**|40|Cette adresse s’affiche dans la page **Contacter le service informatique**. Vous devez entrer une adresse e-mail valide au format **alias@domainname.com**.|     
 |**Informations supplémentaires**|120|S’affiche dans la page **Contacter le service informatique**.|      
 |**URL de la déclaration de confidentialité de l'entreprise**|79|Vous pouvez spécifier la déclaration de confidentialité de votre entreprise qui s’affiche lorsque les utilisateurs cliquent sur les liens de confidentialité à partir du Portail d’entreprise. Vous devez entrer une URL valide au format **https://www.contoso.com**.|        
 
@@ -52,7 +52,7 @@ Les utilisateurs peuvent voir le lien du site web de support dans le Portail d�
 
 |Nom du champ|Longueur maximale|Plus d’informations|        
 |-|-|-|     
-|**URL du site web du support technique**|150|Si vous avez un site web de support technique auquel vous aimeriez que les utilisateurs accèdent, spécifiez cette URL ici. Elle doit être au format **https://www.contoso.com** . Si vous ne spécifiez aucune URL, rien ne s’affiche pour le site web de support technique dans la page **Contacter le service informatique** du Portail d’entreprise.|        
+|**URL du site web du support technique**|150|Si vous avez un site web de support technique auquel vous aimeriez que les utilisateurs accèdent, spécifiez cette URL ici. Elle doit être au format **https://www.contoso.com**. Si vous ne spécifiez aucune URL, rien ne s’affiche pour le site web de support technique dans la page **Contacter le service informatique** du Portail d’entreprise.|        
 |**Nom du site web du support technique**|40|Il s'agit du nom convivial qui s'affiche pour l'URL permettant d'accéder au site Web de support technique. Si vous spécifiez l’URL d’un site web de support technique sans aucun nom convivial, Accéder au site web du service informatique apparaît dans la page **Contacter le service informatique** du Portail d’entreprise.       
 
 ## <a name="company-branding-customization"></a>Personnalisation de l’image de la société       

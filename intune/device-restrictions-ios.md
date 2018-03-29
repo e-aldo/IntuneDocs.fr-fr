@@ -1,23 +1,23 @@
 ---
-title: "Paramètres de restrictions d’appareil Microsoft Intune pour iOS"
-titleSuffix: 
-description: "Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et les fonctionnalités des appareils exécutant iOS."
-keywords: 
+title: Paramètres de restrictions d’appareil Microsoft Intune pour iOS
+titleSuffix: ''
+description: Découvrez les paramètres Intune qui vous permettent de contrôler les paramètres et les fonctionnalités des appareils exécutant iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Paramètres de restriction des appareils iOS de Microsoft Intune
 
@@ -40,7 +40,6 @@ Cette restriction s’applique également aux options accessibles à partir des 
 - **Utiliser la réinitialisation de tous les paramètres et du contenu sur l’appareil (mode supervisé uniquement)** : autorisez l’utilisateur à utiliser l’option de réinitialisation de tout le contenu et de tous les paramètres sur l’appareil.
 - **Modification du nom de l'appareil (mode supervisé uniquement)** : autorise l’utilisateur à modifier le nom de l’appareil.
 - **Modification des paramètres de notification (mode supervisé uniquement)** : autorisez l’utilisateur à modifier les paramètres de notification de l'appareil.
-- **Modification du fond d’écran (mode supervisé uniquement)** : autorisez l’utilisateur à modifier le fond d’écran de l’appareil.
 - **Modification des paramètres d’approbation d’application d’entreprise (mode supervisé uniquement)** : permet à l’utilisateur de sélectionner les applications approuvées qui n’ont pas été téléchargées à partir de l’App Store.
 - **Modifications au profil de configuration (mode supervisé uniquement)** : autoriser l’utilisateur à installer des profils de configuration.
 - **Verrou d’activation (mode supervisé uniquement)** : active le verrou d’activation sur les appareils iOS supervisés.
@@ -74,7 +73,6 @@ Vous pouvez activer le mode supervisé iOS seulement pendant l’installation in
 - Raccourcis clavier 
 - Modifications du code secret 
 - Changements du nom de l’appareil 
-- Changements de papier peint 
 - Téléchargements automatiques d’applications 
 - Changements apportés à l’approbation d’applications d’entreprise 
 - Apple Music 
@@ -170,7 +168,7 @@ Pour insérer une URL d’application dans la liste des applications, utilisez l
 Copiez l’URL de la page et utilisez-la en tant qu’adresse permettant de configurer la liste des applications autorisées ou interdites, ou une application à exécuter en mode plein écran.
 Les profils d’appareil qui contiennent des paramètres d’applications restreintes doivent être attribués à des groupes d’utilisateurs.
 
-Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est : https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Vous pouvez également utiliser iTunes pour rechercher l’application, puis la commande **Copier le lien** pour obtenir l’URL de l’application.
@@ -195,7 +193,7 @@ Pour insérer une URL d’application dans la liste des applications, utilisez l
 À l’aide d’un moteur de recherche, recherchez l’application à utiliser dans l’App Store iTunes, puis ouvrez la page de l’application.
 Copiez l’URL de la page et utilisez-la en tant qu’adresse permettant de configurer la liste des applications autorisées ou interdites, ou une application à exécuter en mode plein écran.
 
-Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est : https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Exemple : rechercher Microsoft Word pour iPad. L’URL que vous utilisez est https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Vous pouvez également utiliser le logiciel iTunes pour rechercher l'application, puis la commande **Copier le lien** pour obtenir l'URL de l'application.

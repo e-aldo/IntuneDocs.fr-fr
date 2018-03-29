@@ -1,25 +1,25 @@
 ---
-title: "Paramètres de stratégie Mac OS X"
-description: "Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils Mac OS X. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune."
-keywords: 
+title: Paramètres de stratégie Mac OS X
+description: Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils Mac OS X. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de configuration Mac OS X dans Microsoft Intune
 
@@ -63,9 +63,9 @@ Dans la liste **Applications conformes &amp; non conformes pour Mac OS X**, ac
 |----------------|---------------|
 |**Signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications Mac OS X que les utilisateurs ne sont pas autorisés à installer. Si les utilisateurs installent l’une de ces applications, les **rapports d’applications non conformes** le signalent.|
 |**Signaler une non-conformité quand les utilisateurs installent les applications non listées**|Affiche les applications Mac OS X que les utilisateurs sont autorisés à installer. Si les utilisateurs installent d’autres applications, les **rapports d’applications non conformes** le signalent.|
-|**Ajouter**|Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, éventuellement l’éditeur et l’ID d’offre groupée de l’application. **Astuce :** Pour rechercher l’ID d’offre groupée d’une application, effectuez les étapes suivantes sur un ordinateur Mac où l’application est installée :<ol><li>Ouvrez le dossier dans lequel l’application est installée (par exemple, **/Applications**).</li><li>Sélectionnez l’offre groupée *&lt;Nom application&gt;***.app** et choisissez l’option **Afficher le contenu du package**.</li><li>Ouvrez le fichier **Info.plist**.</li><li>Vérifiez la valeur associée à la clé **CFBundleIdentifier**.</li></ol>Le format de l’ID d’offre groupée est le suivant : **com.contoso.nomapp**.|
-|**Importer des applications**|Importe une liste d’applications que vous avez spécifiées dans un fichier de valeurs séparées par des virgules. Dans le fichier, utilisez le format suivant : nom de l’application, éditeur, ID de l’offre groupée d’applications.|
-|**Éditer**|Vous permet de modifier le nom, l’éditeur et l’ID de l’offre groupée d’applications pour l’application sélectionnée.|
+|**Ajouter**|Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, éventuellement l’éditeur et l’ID de bundle de l’application. **Astuce :** Pour rechercher l’ID de bundle d’une application, effectuez les étapes suivantes sur un ordinateur Mac où l’application est installée :<ol><li>Ouvrez le dossier dans lequel l’application est installée (par exemple, **/Applications**).</li><li>Sélectionnez le bundle *&lt;Nom de l’application&gt;***.app** et choisissez **Afficher le contenu du package**.</li><li>Ouvrez le fichier **Info.plist**.</li><li>Vérifiez la valeur associée à la clé **CFBundleIdentifier**.</li></ol>Le format de l’ID de bundle est le suivant : **com.contoso.nomapp**.|
+|**Importer des applications**|Importe une liste d’applications que vous avez spécifiées dans un fichier de valeurs séparées par des virgules. Dans le fichier, utilisez le format suivant : nom de l’application, éditeur, ID du bundle d’applications.|
+|**Éditer**|Vous permet de modifier le nom, l’éditeur et l’ID du bundle d’applications pour l’application sélectionnée.|
 |**Supprimer**|Supprime l’application sélectionnée dans la liste.|
 > [!TIP]
 > Pour plus d’informations sur les rapports Intune, consultez [Présentation des opérations Microsoft Intune à l’aide de rapports](understand-microsoft-intune-operations-by-using-reports.md).
@@ -87,7 +87,7 @@ Utilisez la **stratégie de configuration personnalisée Mac OS X** de Microso
 
 Cette fonctionnalité vous permet de déployer les paramètres Mac OS X qui ne sont pas configurables avec la stratégie de configuration générale Mac OS X Intune.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 Avant de commencer, vous devez installer l’outil Apple Configurator et créer un fichier de configuration contenant les paramètres que vous souhaitez déployer sur les systèmes des utilisateurs ou les appareils. Visitez le [Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) pour télécharger l’outil Apple Configurator et en savoir plus à son sujet.
 
 > [!NOTE]
@@ -98,7 +98,7 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer
 |Nom du paramètre|Détails|
     |----------------|--------------------|
     |**Nom**|Affectez un nom unique à la stratégie personnalisée Mac OS X pour vous aider à l’identifier dans la console Intune.|
-    |**Description**|Fournissez une description générale de la stratégie personnalisée Mac OS X et d'autres informations pertinentes pour mieux la localiser.|
+    |**Description**|Fournissez une description générale de la stratégie personnalisée Mac OS X et d’autres informations pertinentes pour mieux la localiser.|
 
 
 ### <a name="custom-settings"></a>Configuration personnalisée
@@ -112,7 +112,7 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer
 
 
 ### <a name="how-to-create-a-configuration-profile-file"></a>Création d’un fichier de profil de configuration
-Vous pouvez créer le fichier de profil de configuration utilisé par la stratégie personnalisée de deux manières :
+Vous pouvez créer le fichier de profil de configuration utilisé par la stratégie personnalisée de deux manières :
 
 -   Exportez le fichier (avec l'extension **.mobileconfig**) à partir de l'outil Apple Configurator.
 

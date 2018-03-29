@@ -1,27 +1,27 @@
 ---
-title: "Résoudre les problèmes d’intégration de Lookout"
-description: "Cette rubrique décrit comment résoudre des problèmes courants liés à l’intégration de Lookout"
-keywords: 
+title: Résoudre les problèmes d’intégration de Lookout
+description: Cette rubrique décrit comment résoudre des problèmes courants liés à l’intégration de Lookout
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6adb0bc2562a16c0111242cc7dd923afa073d84e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ec20d87da48fb52207d839da0753eb05524569af
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="troubleshoot-lookout-integration-with-intune"></a>Résoudre les problèmes d’intégration de Lookout avec Intune
+# <a name="troubleshoot-lookout-integration-with-intune"></a>Résoudre les problèmes liés à l’intégration de Lookout à Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -34,24 +34,24 @@ Lorsque vous vous connectez à la [console Lookout MTP](https://aad.lookout.com)
 
 Lookout MTP autorise uniquement les utilisateurs d’un groupe Azure AD configuré à accéder au service. Pour déterminer le groupe configuré avec un accès à Lookout MTP, contactez le support technique de Lookout :
 
-* E-mail : enterprisesupport@lookout.com
-* En vous connectant à la [console MTP](http://aad.lookout.com) et en accédant au module **Support**
-* En effectuant une demande de support sur le site https://enterprise.support.lookout.com/hc/requests.
+* Envoyez un e-mail à enterprisesupport@lookout.com.
+* Connectez-vous à la [Console MTP](http://aad.lookout.com)et accédez au module **Support**.
+* Accédez à https://enterprise.support.lookout.com/hc/requests et effectuez une demande de support technique.
 
 ## <a name="unable-to-sign-in"></a>Connexion impossible
 L’erreur suivante se produit si l’administrateur général Azure AD n’a pas accepté l’installation initiale de Lookout.
 
-![Capture de l’écran de connexion à Lookout montrant l’échec de la connexion](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
+![capture de l’écran de connexion Lookout indiquant une erreur de connexion](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Pour résoudre ce problème, l’administrateur général doit se connecter à https://aad.lookout.com/les?action=consent et accepter l’invite à lancer le programme d’installation. Pour plus d’informations, consultez la rubrique [Configurer votre abonnement à Lookout MTP](../deploy-use/setup-your-lookout-mtd-subscription.md).
+Pour résoudre ce problème, l’administrateur général doit se connecter à https://aad.lookout.com/les?action=consent et accepter l’invite à lancer le programme d’installation. Vous trouverez des informations plus détaillées dans la rubrique [Configurer votre abonnement avec Lookout MTP](../deploy-use/setup-your-lookout-mtd-subscription.md).
 
 **Problèmes d'état de l’appareil**
 
 ## <a name="device-missing-from-lookout-device-list"></a>Appareil manquant dans la liste d’appareils Lookout
 
-Cette erreur peut se produire dans les scénarios suivants :
+Cela peut arriver dans l’un des scénarios suivants :
 * L’utilisateur de l’appareil n’est pas dans le **groupe d’inscription** spécifié dans la **Console Lookout MTP**.  Dans la [Console Lookout](http://aad.lookout.com), accédez à **System (Système)** > **Intune Connector (Connecteur Intune)** > **Enrollment Management (Gestion des inscriptions)**.  Passez en revue les groupes Azure AD configurés pour l’inscription et vérifiez que l’utilisateur de l’appareil fait partie de l’un des groupes Azure AD.  Après l’ajout d’un utilisateur au groupe d’inscription, un délai d’attente correspondant au maximum à l’intervalle d’interrogation configuré (5 minutes par défaut) peut être nécessaire pour voir s’afficher l’appareil dans le module **Appareils** de la console Lookout MTP.
-* L’appareil n’est pas pris en charge par Lookout MTP.  Les appareils non pris en charge sont affichés dans la section **Appareils gérés** des paramètres du connecteur dans la console Lookout MTP.
+* Si l’appareil n’est pas pris en charge par Lookout MTP.  Les appareils qui ne sont pas pris en charge sont répertoriés dans la section **Managed Devices** (Appareils gérés) des paramètres du connecteur dans la console Lookout MTP.
 
 ### <a name="device-reported-as-pending"></a>Appareil signalé comme **en attente**
 
@@ -66,10 +66,10 @@ Quand un appareil est dans cet état, Lookout continue d’avertir l’utilisate
 
 ## <a name="device-reported-as-disconnected"></a>Appareil signalé comme **déconnecté**
 
-L’état **Déconnecté** signifie que l’appareil n’est pas synchronisé avec Lookout MTP dans l’intervalle configuré (30 jours par défaut avec un minimum de 7 jours). L’application Portail d’entreprise ou Lookout for Work manque dans l’appareil. Pour résoudre ce problème, réinstallez l’application. Quand l’utilisateur ouvre l’application Lookout for Work et l’active, l’appareil est resynchronisé avec Lookout MTP et Intune.
+L’état **Déconnecté** signifie que l’appareil n’est pas synchronisé avec Lookout MTP dans l’intervalle configuré (30 jours par défaut avec un minimum de 7 jours). L’application Portail d’entreprise ou Lookout for Work manque dans l’appareil. Pour résoudre ce problème, réinstallez les applications. Quand l’utilisateur ouvre Lookout for Work et active l’application, l’appareil se resynchronise avec Lookout MTP et Intune.
 
 ### <a name="forcing-a-device-sync"></a>Forçage d’une synchronisation de l’appareil
-Dans le module **Appareils** de la console Lookout MTP, l’administrateur peut sélectionner l’appareil pour le supprimer.   Quand l’utilisateur propriétaire de l’appareil rouvre ensuite l’application Lookout for Work et appuie sur **Activer**, l’état de l’appareil est entièrement resynchronisé.
+À partir du module **Devices** (Appareils) de la console Lookout MTP, l’administrateur peut sélectionner l’appareil et le supprimer.   Quand l’utilisateur propriétaire de l’appareil rouvre ensuite l’application Lookout for Work et appuie sur **Activer**, l’état de l’appareil est entièrement resynchronisé.
 
 ## <a name="device-has-a-new-user"></a>L’appareil a un nouvel utilisateur
 Vous devez réinitialiser l’appareil et demander au nouvel utilisateur de l’inscrire.  Dans la [console Administrateur Intune](https://manage.microsoft.com), sélectionnez l’appareil, cliquez avec le bouton droit et choisissez **Mettre hors service/Réinitialiser** pour supprimer l’appareil de la gestion. Après cette opération, vous pouvez supprimer l’appareil.
@@ -82,7 +82,7 @@ Si le nouvel utilisateur est membre d’un groupe d’inscription Lookout MTP, l
 
 ## <a name="compliance-remediation-workflows"></a>Étapes de la correction de conformité
 - [Vous êtes invité à installer Lookout for Work sur votre appareil Android]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-- [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil Android](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+- [Vous devez résoudre une menace détectée par Lookout for Work sur votre appareil Android](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil iOS](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 

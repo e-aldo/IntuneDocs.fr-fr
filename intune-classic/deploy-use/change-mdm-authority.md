@@ -1,24 +1,24 @@
 ---
-title: "Changer votre autorité MDM pour Configuration Manager (MDM hybride)"
-description: "Découvrez comment changer l’autorité MDM d’une version autonome d’Intune pour Configuration Manager (MDM hybride)."
-keywords: 
+title: Changer votre autorité MDM pour Configuration Manager (MDM hybride)
+description: Découvrez comment changer l’autorité MDM d’une version autonome d’Intune pour Configuration Manager (MDM hybride).
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>Changer l’autorité MDM
 À compter de Configuration Manager version 1610, vous pouvez changer votre autorité MDM sans avoir à contacter le Support Microsoft, et sans devoir désinscrire puis réinscrire vos appareils gérés existants. Cette rubrique décrit la procédure pour changer un locataire Microsoft Intune existant configuré à partir d’Intune et avec **Microsoft Intune** (version autonome) comme autorité MDM pour **Configuration Manager** (MDM hybride), sans devoir désinscrire puis réinscrire vos appareils gérés existants.
@@ -51,7 +51,7 @@ Passez en revue les informations suivantes pour préparer le passage à l’auto
 - Si vous utilisez Intune autonome pour gérer des appareils iOS avant le changement d’autorité MDM, vous devez veiller à ce que le même certificat du service de notification push d'Apple (APNs) précédemment utilisé dans Intune soit renouvelé et utilisé pour réinstaller le locataire dans Configuration Manager (hybride).    
 
     > [!IMPORTANT]  
-    > Si un autre certificat APNs est utilisé pour la version hybride, l’inscription de TOUS les appareils iOS précédemment inscrits est annulée et vous devez les réinscrire. Avant de changer d’autorité MDM, assurez-vous que vous savez exactement quel certificat APNs a été utilisé pour gérer les appareils iOS dans Intune. Recherchez le même certificat affiché dans le portail Apple Push Certificates (https://identity.apple.com) et assurez-vous que l’utilisateur dont l’ID Apple a été utilisé pour créer le certificat d’origine est identifié et disponible pour renouveler le même certificat APNs dans le cadre du changement d’autorité MDM.  
+    > Si un autre certificat APNs est utilisé pour la version hybride, l’inscription de TOUS les appareils iOS précédemment inscrits est annulée et vous devez les réinscrire. Avant de changer d’autorité MDM, assurez-vous que vous savez exactement quel certificat APNs a été utilisé pour gérer les appareils iOS dans Intune. Recherchez le même certificat affiché dans le portail Apple Push Certificates (https://identity.apple.com)) et vérifiez que l’utilisateur dont l’ID Apple a été utilisé pour créer le certificat d’origine est identifié et disponible pour renouveler le même certificat APNs dans le cadre du changement d’autorité MDM.  
 
 ## <a name="change-the-mdm-authority-to-configuration-manager"></a>Utiliser Configuration Manager comme autorité MDM
 Le processus pour utiliser Configuration Manager (hybride) comme autorité MDM comprend les étapes principales suivantes :  

@@ -1,12 +1,11 @@
 ---
-title: "Guide pratique pour surveiller des profils d’appareils avec \nIntune"
-titlesuffix: Microsoft Intune
-description: Découvrez comment surveiller des profils d’appareil Microsoft Intune attribués.
+title: Voir les profils d’appareil avec Microsoft Intune - Azure | Microsoft Docs
+description: Consultez les détails de profil sur les appareils et vérifiez quels appareils ont des profils d’appareil Microsoft Intune affectés ou déployés.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,23 +14,21 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7483d2568ef3a43b7774916ef0a5f8f9b4540e4e
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ddf8c7366cf97e251d85b995cb620e61f9d5f4ef
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Guide pratique pour surveiller les profils d’appareil dans Microsoft Intune
+# <a name="monitor-device-profiles-in-microsoft-intune"></a>Suivre les profils d’appareil dans Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Vous pouvez surveiller la progression de l’affectation de profils d’appareil Intune de deux manières :
-
+Vous pouvez suivre la progression de l’affectation de profils d’appareil Intune de deux manières.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans le panneau **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
-2. Dans le panneau de liste de profils, sélectionnez le profil que vous souhaitez gérer, puis, au choix :
-    - Dans le panneau <*Nom du profil*> **Profil de configuration d’appareil**, choisissez **Vue d’ensemble** pour afficher des informations sur le profil et ses affectations.
-    - Dans le panneau <*Nom du profil*> **Profil de configuration d’appareil**, choisissez **Affectations** pour afficher des informations sur le profil et ses affectations.
+2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
+3. Sélectionnez **Configuration de l’appareil** > **Profils**.
+4. Dans la liste des profils, sélectionnez celui que vous souhaitez gérer. Ensuite, effectuez l’une des opérations suivantes :
+    - Dans le volet <*nom du profil*> **Profil de configuration d’appareil**, pour afficher des informations de base sur le profil et ses affectations, sélectionnez **Vue d’ensemble**.
+    - Dans le volet <*nom du profil*> **Profil de configuration d’appareil**, pour afficher des informations plus détaillées sur le profil et ses affectations, sélectionnez **Affectations**.

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: df77b63cbf953df030e5d0e597c0940f083ffb79
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>Configurer et gérer les certificats SCEP avec Microsoft Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -153,7 +153,13 @@ Pour configurer l’autorité de certification et permettre au demandeur de spé
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Étape 3 : configurer les composants requis du serveur NDES
 Dans cette tâche, vous allez :
 
+<<<<<<< HEAD
+
+- Ajouter NDES à un serveur Windows Server et configurer IIS pour prendre en charge NDES
+- Ajouter le compte de service NDES au groupe IIS_IUSR
+- Définir le SPN pour le compte de service NDES =======
 -   Ajouter NDES à un serveur Windows Server et configurer IIS pour prendre en charge NDES
+>>>>>>> parent de 3365d47d4... Fusionner la branche « version-intune-1803 » dans master
 
 -   Ajouter le compte de service NDES au groupe IIS_IUSR
 

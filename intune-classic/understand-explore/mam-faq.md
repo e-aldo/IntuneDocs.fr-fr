@@ -1,27 +1,27 @@
 ---
-title: "Questions fréquentes (FAQ) sur MAM et la protection des applications"
-description: "Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (MAM) Intune et la protection des applications Intune."
-keywords: 
+title: Forum Aux Questions sur la Gestion des applications mobiles (MAM) et la protection des applications
+description: Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (MAM) Intune et la protection des applications Intune.
+keywords: ''
 author: oydang
 ms.author: oydang
-manager: angrobe
+manager: dougeby
 ms.date: 01/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
-ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
+ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Questions fréquentes (FAQ) sur MAM et la protection des applications
+# <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Forum Aux Questions sur la Gestion des applications mobiles (MAM) et la protection des applications
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -30,14 +30,14 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 ## <a name="mam-basics"></a>Notions de base de la MAM
 
 
-**Qu’est-ce-que MAM ?** La [gestion des applications mobiles Intune](/intune/app-lifecycle) se rapporte à la suite de fonctionnalités de gestion Intune qui vous permettent de publier, d’envoyer des notifications Push, de configurer, de sécuriser, de surveiller et de mettre à jour des applications mobiles pour vos utilisateurs.
+**Qu’est-ce-que la MAM ?** La [gestion des applications mobiles Intune](/intune/app-lifecycle) se rapporte à la suite de fonctionnalités de gestion Intune qui vous permettent de publier, d’envoyer des notifications Push, de configurer, de sécuriser, de surveiller et de mettre à jour des applications mobiles pour vos utilisateurs.
 
-**Quels sont les avantages de la protection des applications MAM ?** MAM protège les données d’une organisation au sein d’une application. Avec MAM sans inscription, une application professionnelle ou scolaire qui contient des données sensibles peuvent être gérées sur pratiquement n’importe quel appareil, notamment les appareils personnels dans les scénarios BYOD (apportez votre propre appareil). Plusieurs applications de productivité, telles que les applications Microsoft Office, peuvent être gérées par MAM Intune. Consultez la liste officielle des [applications gérées par Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) accessibles au public.
+**Quels sont les avantages de la protection des applications MAM ?** La MAM protège les données d’une organisation au sein d’une application. Avec la gestion des applications mobiles MAM sans inscription, une application professionnelle ou scolaire qui contient des données sensibles peuvent être gérées sur pratiquement n’importe quel appareil, notamment les appareils personnels dans les scénarios BYOD (apportez votre propre appareil). Plusieurs applications de productivité, telles que les applications Microsoft Office, peuvent être gérées par la MAM Intune. Consultez la liste officielle des [applications gérées par Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) accessibles au public.
 
-**Quelles configurations d’appareil MAM prend-elle en charge ?** MAM Intune prend en charge deux configurations :
-  1. **MDM + MAM Intune** : c’est la première configuration prise en charge par MAM à son premier lancement. Les administrateurs informatiques peuvent uniquement gérer des applications à l’aide de MAM et des stratégies de protection des applications sur des appareils inscrits à la gestion des appareils mobiles (MDM) Intune. Pour gérer les applications avec MDM + MAM, les clients doivent utiliser la console Intune autonome à l’adresse https://manage.microsoft.com.
+**Quelles configurations d’appareil la MAM prend-elle en charge ?** La MAM Intune prend en charge deux configurations :
+  1. **MDM + MAM Intune** : c’est la première configuration prise en charge par la MAM à son premier lancement. Les administrateurs informatiques peuvent uniquement gérer des applications à l’aide de la MAM et des stratégies de protection des applications sur des appareils inscrits à la gestion des périphériques mobiles (MDM). Pour gérer des applications à l’aide MDM + MAM, les clients doivent utiliser la console Intune autonome à l’adresse https://manage.microsoft.com.
 
-  2. **MAM sans inscription d’appareils** : la gestion MAM sans inscription d’appareils (ou MAM-WE), permet aux administrateurs informatiques de gérer des applications à l’aide de MAM et de stratégies de protection des applications sur les appareils qui ne sont ne pas inscrits à la gestion MDM Intune. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits avec des fournisseurs EMM tiers. Pour gérer des applications à l’aide de MAM sans inscription d’appareils, les clients doivent utiliser la console Intune dans le portail Azure à l’adresse http://portal.azure.com.
+  2. **MAM sans inscription d’appareils** : la MAM sans inscription d’appareils (ou MAM-WE en anglais), permet aux administrateurs informatiques de gérer des applications à l’aide de la MAM et de stratégies de protection des applications sur les appareils qui ne sont ne pas inscrits à la MDM Intune. Cela signifie que les applications peuvent être gérées par Intune sur des appareils inscrits avec des fournisseurs EMM tiers. Pour gérer des applications à l’aide de la MAM sans inscription d’appareils, les clients doivent utiliser la console Intune dans le portail Azure à l’adresse http://portal.azure.com.
 
 
 ## <a name="app-protection-policies"></a>Stratégies de protection des applications
@@ -111,7 +111,7 @@ L’administrateur informatique peut définir le paramètre de stratégie de pro
   4. **Comment Intune protège-t-il le code PIN contre les attaques en force brute ?** Dans le cadre de la stratégie de code PIN d’application, l’administrateur peut définir un nombre maximal de tentatives d’authentification de son code PIN avant le verrouillage de l’application. Une fois que le nombre de tentatives atteint, le Kit de développement logiciel (SDK) d’application Intune peut réinitialiser les données « d’entreprise » dans l’application.
   
   5. **Pourquoi dois-je définir un code PIN à deux reprises dans des applications provenant du même éditeur ?**
-MAM (sous iOS) prend actuellement en charge les codes PIN au niveau de l’application avec des caractères alphanumériques et spéciaux (appelés « code secret ») qui nécessitent l’implication d’applications (ex. WXP, Outlook, Managed Browser, Yammer) pour intégrer le kit SDK d’application Intune pour iOS. Sans cela, les paramètres de code secret ne sont pas appliqués correctement pour les applications ciblées. Il s’agissait d’une fonctionnalité publiée dans le SDK Intune pour iOS version 7.1.12. <br> Pour prendre en charge cette fonctionnalité et garantir la compatibilité descendante avec les versions antérieures du Kit SDK Intune pour iOS, tous les codes PIN (numériques ou codes secrets) à partir de la version 7.1.12 sont gérés séparément du code PIN numérique des versions précédentes du Kit SDK. Par conséquent, si un appareil contient des applications avec le Kit SDK Intune pour des versions iOS antérieures à 7.1.12 et ultérieures à 7.1.12 du même éditeur, deux codes PIN doivent être définis. <br><br> Cela étant dit, les deux codes PIN (pour chaque application) ne sont liés d’aucune manière et doivent respecter la stratégie de protection appliquée à l’application. Par conséquent, *uniquement* si les applications A et B ont les mêmes stratégies de code PIN, l’utilisateur peut définir deux fois le même code PIN. <br><br> Ce comportement est spécifique au code PIN sur les applications iOS activées avec la gestion des applications mobiles Intune. Au fil du temps, à mesure que les applications adoptent les versions ultérieures du Kit SDK Intune pour iOS, définir deux fois un code PIN sur les applications d’un même éditeur pose moins de problèmes. Consultez la remarque ci-dessous pour obtenir un exemple.
+MAM (sur iOS) prend actuellement en charge les codes PIN au niveau de l’application avec des caractères alphanumériques et spéciaux (appelés « code secret ») qui nécessitent l’implication d’applications (ex. WXP, Outlook, Managed Browser, Yammer) pour intégrer le kit SDK d’application Intune pour iOS. Sans cela, les paramètres de code secret ne sont pas appliqués correctement pour les applications ciblées. Il s’agissait d’une fonctionnalité publiée dans le SDK Intune pour iOS version 7.1.12. <br> Pour prendre en charge cette fonctionnalité et garantir la compatibilité descendante avec les versions antérieures du Kit SDK Intune pour iOS, tous les codes PIN (numériques ou codes secrets) à partir de la version 7.1.12 sont gérés séparément du code PIN numérique des versions précédentes du Kit SDK. Par conséquent, si un appareil contient des applications avec le Kit SDK Intune pour des versions iOS antérieures à 7.1.12 et ultérieures à 7.1.12 du même éditeur, deux codes PIN doivent être définis. <br><br> Cela étant dit, les deux codes PIN (pour chaque application) ne sont liés d’aucune manière et doivent respecter la stratégie de protection appliquée à l’application. Par conséquent, *uniquement* si les applications A et B ont les mêmes stratégies de code PIN, l’utilisateur peut définir deux fois le même code PIN. <br><br> Ce comportement est spécifique au code PIN sur les applications iOS activées avec la gestion des applications mobiles Intune. Au fil du temps, à mesure que les applications adoptent les versions ultérieures du Kit SDK Intune pour iOS, définir deux fois un code PIN sur les applications d’un même éditeur pose moins de problèmes. Consultez la remarque ci-dessous pour obtenir un exemple.
 
 >[!NOTE]
 > Par exemple, si l’application A est générée avec une version antérieure à 7.1.12 et que l’application B est générée avec une version supérieure ou égale à 7.1.12 du même éditeur, l’utilisateur final devra définir séparément les codes PIN pour A et B si ces deux apps sont installées sur un appareil iOS. <br> Si une application C avec le Kit SDK version 7.1.9 est installée sur l’appareil, elle utilisera le même code PIN que l’application A. <br> Une application D avec une version 7.1.14 partagera le même code PIN que l’application B. <br> Si seules les applications A et C sont installées sur un appareil, vous devez définir un seul code PIN. Il en va de même si seules les applications B et D sont installées sur un appareil.
@@ -145,7 +145,7 @@ MAM (sous iOS) prend actuellement en charge les codes PIN au niveau de l’appli
 
 ## <a name="app-experience-on-ios"></a>Expérience d'application sur iOS
 
-**Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
+ **Je suis en mesure d’utiliser l’extension de partage iOS pour ouvrir des données professionnelles ou scolaires dans des applications non gérées, même si la stratégie de transfert de données est définie sur les « applications gérées uniquement » ou sur « Aucune application ». Cela ne provoque-t-il pas de fuite de données ?** La stratégie de protection des applications Intune ne peut pas contrôler l’extension de partage iOS sans gérer l’appareil. Par conséquent, Intune _**chiffre les données « d’entreprise » avant de les partager à l’extérieur de l’application**_. Vous pouvez valider cette action en essayant d’ouvrir le fichier « d’entreprise » en dehors de l’application gérée. Le fichier doit être chiffré et ne peut pas être ouvert en dehors de l’application gérée.
 
 ### <a name="see-also"></a>Voir aussi
 - [Paramètres de stratégie de gestion des applications mobiles Android dans Microsoft Intune](../deploy-use/android-mam-policy-settings.md)

@@ -1,25 +1,25 @@
 ---
-title: "Systèmes d’exploitation et navigateurs pris en charge par Microsoft Intune"
-titleSuffix: 
-description: "Répertorie les plateformes d’appareils et navigateurs pris en charge par pour la gestion des appareils Intune"
-keywords: 
+title: Systèmes d’exploitation et navigateurs pris en charge par Microsoft Intune
+titleSuffix: ''
+description: Répertorie les plateformes d’appareils et navigateurs pris en charge par pour la gestion des appareils Intune
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5a8962223bac0ed27b6a52404973f2c30abfc28b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Navigateurs et systèmes d’exploitation pris en charge
 
@@ -109,7 +109,7 @@ Les navigateurs suivants sont pris en charge pour ces portails :
 
 ### <a name="intune-classic-portal"></a>Portail classique Intune
 
-Les fonctionnalités spécifiques à la console classique Intune, telles que le client logiciel PC Intune et l’intégration avec les partenaires de protection contre les menaces Mobile, sont uniquement disponibles dans le portail classique Intune (https://manage.microsoft.com). Le portail classique Intune nécessite la prise en charge du navigateur Silverlight.
+Les fonctionnalités propres à la console classique Intune, telles que le client logiciel PC Intune et l’intégration avec les partenaires Mobile Threat Defense, sont disponibles uniquement dans le portail classique Intune (https://manage.microsoft.com)). Le portail classique Intune nécessite la prise en charge du navigateur Silverlight.
 
 Les navigateurs Silverlight suivants prennent en charge la console Intune :
 - Internet Explorer 10 ou version ultérieure

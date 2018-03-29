@@ -1,25 +1,25 @@
 ---
-title: "Résoudre les problèmes d’accès conditionnel"
-description: "Cette rubrique décrit les actions à entreprendre quand vos utilisateurs ne parviennent pas à accéder à des ressources par le biais de l’accès conditionnel Intune."
-keywords: 
+title: Résoudre les problèmes d’accès conditionnel
+description: Cette rubrique décrit les actions à entreprendre quand vos utilisateurs ne parviennent pas à accéder à des ressources par le biais de l’accès conditionnel Intune.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Résoudre les problèmes d’accès conditionnel
 
@@ -118,7 +118,7 @@ Si ces procédures de dépannage ne résolvent pas votre problème, le support M
 ### <a name="exchange-connector-logs"></a>Journaux du connecteur Exchange
 
 #### <a name="general-log-information"></a>Informations générales sur les journaux
-Pour afficher les journaux du connecteur Exchange, utilisez [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Pour utiliser cet outil, vous devez télécharger le SDK de Windows Server.
+Pour afficher les journaux du connecteur Exchange, utilisez [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx). Pour utiliser cet outil, vous devez télécharger le SDK de Windows Server.
 
 >[!NOTE]
 >Les journaux sont dans C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Ils sont contenus dans une série de 30 fichiers journaux qui vont de *Connector0.log* à *Connector29.log*. Les journaux se remplacent les uns les autres dès que 10 Mo de données ont été accumulées dans un journal. Une fois que les journaux arrivent à Connector29, ils reviennent à Connector0 en remplaçant les fichiers journaux précédents.

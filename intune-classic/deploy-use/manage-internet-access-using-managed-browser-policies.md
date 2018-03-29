@@ -1,25 +1,25 @@
 ---
-title: "Gérer l’accès web avec Managed Browser"
-description: "Déployez l’application de navigateur géré pour limiter la navigation sur le web et le transfert de données du web vers d’autres applications."
-keywords: 
+title: Gérer l’accès web avec Managed Browser
+description: Déployez l’application de navigateur géré pour limiter la navigation sur le web et le transfert de données du web vers d’autres applications.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a8b928de0bc9dddc35da188ad619b35541027364
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l'accès à Internet à l'aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -109,7 +109,7 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
     -   Port 443 pour https
 
-    L’utilisation de caractères génériques n’est pas prise en charge pour les numéros de port. Par exemple, les chaînes suivantes ne sont pas gérées : **http&colon;//www&period;contoso&period;com:*;** et **http&colon;//www&period;contoso&period;com: /*;**.
+    L’utilisation de caractères génériques n’est pas prise en charge pour les numéros de port. Par exemple, les chaînes suivantes ne sont pas prises en charge : **http&colon;//www&period;contoso&period;com:*;** et **http&colon;//www&period;contoso&period;com: /*;**
 
 -   Utilisez le tableau suivant pour en savoir plus sur les modèles autorisés que vous pouvez utiliser pour spécifier des URL :
 
@@ -117,12 +117,12 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
     |-------|---------------|-----------|------------------|
     |http://www.contoso.com|Correspond à une page unique|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
     |http://contoso.com|Correspond à une page unique|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Correspond à toutes les URL commençant par www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+    |http://www.contoso.com/&#42 ;|Correspond à toutes les URL commençant par www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
     |http://&#42;.contoso.com/&#42;|Correspond à tous les sous-domaines sous contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
     |http://www.contoso.com/images|Correspond à un dossier unique|www.contoso.com/images|www.contoso.com/images/dogs|
     |http://www.contoso.com:80|Correspond à une page unique, via l’utilisation d’un numéro de port|http://www.contoso.com:80||
     |https://www.contoso.com|Correspond à une page unique sécurisée|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Correspond à un dossier unique et à tous ses sous-dossiers|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+    |http://www.contoso.com/images/&#42 ;|Correspond à un dossier unique et à tous ses sous-dossiers|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   Voici quelques exemples d’entrées que vous ne pouvez pas spécifier :
 
@@ -142,7 +142,7 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
     -   http://&#42;
 
-    -   http://www.contoso.com:&#42;
+    -   http://www.contoso.com:&#42 ;
 
     -   http://www.contoso.com: /&#42;
 

@@ -1,23 +1,23 @@
 ---
-title: "Configurer Microsoft Intune pour l’authentification unique des appareils iOS"
-titlesuffix: 
-description: "Découvrez comment configurer Microsoft Intune pour l’authentification unique des appareils iOS."
-keywords: 
+title: Configurer Microsoft Intune pour l’authentification unique des appareils iOS
+titlesuffix: ''
+description: Découvrez comment configurer Microsoft Intune pour l’authentification unique des appareils iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurer Microsoft Intune pour l’authentification unique des appareils iOS
 
@@ -34,7 +34,7 @@ Pour tirer parti de l’authentification unique des appareils iOS, les condition
 
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
 4. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
 5. Dans le volet Profils, choisissez **Créer un profil**.
@@ -90,7 +90,7 @@ Les modèles `http://.com` et `https://.com` correspondent respectivement à tou
 
 Indique les applications sur l’appareil de l’utilisateur final qui peuvent utiliser la charge utile d’authentification unique.
 
-Le tableau `AppIdentifierMatches` doit contenir des chaînes qui correspondent aux ID de bundles d’applications. Ces chaînes peuvent être des correspondances exactes (par exemple, `com.contoso.myapp`) ou peuvent spécifier une correspondance de préfixe sur l’ID d’ensemble à l’aide du caractère générique *\. Le caractère générique doit apparaître après un point (.), et ne peut apparaître qu’une seule fois, à la fin de la chaîne (par exemple `com.contoso.*`). Quand un caractère générique est inclus, toute application dont l’ID de bundle commence par le préfixe bénéficie de l’accès au compte.
+Le tableau `AppIdentifierMatches` doit contenir des chaînes qui correspondent aux ID de bundles d’applications. Ces chaînes peuvent être des correspondances exactes (par exemple, `com.contoso.myapp`) ou peuvent spécifier une correspondance de préfixe sur l’ID d’ensemble à l’aide du caractère générique \*. Le caractère générique doit apparaître après un point (.), et ne peut apparaître qu’une seule fois, à la fin de la chaîne (par exemple `com.contoso.*`). Quand un caractère générique est inclus, toute application dont l’ID de bundle commence par le préfixe bénéficie de l’accès au compte.
 
 Le champ **Nom de l’application** sert à ajouter un nom convivial afin de vous aider à identifier l’ID de bundle.
 

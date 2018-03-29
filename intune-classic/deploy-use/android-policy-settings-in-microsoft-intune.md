@@ -1,25 +1,25 @@
 ---
-title: "Paramètres de stratégie Android et Samsung KNOX"
-description: "Créez des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils Android que vous gérez avec Intune."
-keywords: 
+title: Paramètres de stratégie Android et Samsung KNOX
+description: Créez des stratégies qui contrôlent les paramètres et fonctionnalités sur les appareils Android que vous gérez avec Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de configuration Android et Samsung KNOX Standard dans Microsoft Intune
 
@@ -175,7 +175,7 @@ Dans la [section Applications de Google Play](https://play.google.com/store/apps
 
 Ouvrez la page d’installation de l’application, puis copiez l’URL dans le Presse-papiers. Vous pouvez maintenant utiliser cette URL dans la liste des applications conformes ou non conformes.
 
-Exemple : Recherchez Microsoft Office Mobile dans Google Play. L’URL que vous utilisez est **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Exemple : Recherchez Microsoft Office Mobile dans Google Play. L’URL que vous utilisez sera **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## <a name="custom-policy-settings"></a>Paramètres de la stratégie personnalisée
 Utilisez la **stratégie de configuration personnalisée Android** de Microsoft Intune pour déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités sur les appareils Android. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.
