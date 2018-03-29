@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 99b1436fdf718b54f54f7e90835668d4a632b7ce
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Édition préliminaire de Microsoft Intune - Mars 2018
 
@@ -51,11 +51,11 @@ Avec un connecteur Exchange local Intune, vous pouvez gérer l’accès de l’a
 Les nouveaux profils VPN créés pour Cisco AnyConnect pour iOS fonctionneront avec Cisco AnyConnect 4.0.7x et les versions supérieures. Les profils VPN Cisco AnyConnect pour iOS existants porteront l’étiquette **Cisco Legacy AnyConnect** et continueront de fonctionner avec Cisco AnyConnect 4.0.5x.
 
 > [!NOTE]
-> Cette modification ne concerne qu’iOS. Il continuera de n’y avoir qu’une seule option Cisco AnyConnect pour Android, Android for Work et macOS. 
+> Cette modification ne concerne qu’iOS. Il continuera de n’y avoir qu’une seule option Cisco AnyConnect pour Android, Android for Work et macOS.
 
 #### <a name="more-information"></a>Plus d’informations
 
-Vous devez créer un nouveau profil VPN Cisco AnyConnect pour iOS afin de prendre en charge la nouvelle application Cisco AnyConnect car celle-ci et l’application Cisco Legacy AnyConnect sont des applications distinctes. Si vous gérez le client AnyConnect dans votre environnement, vous devez également déployer la nouvelle application Cisco AnyConnect. Pour effectuer une mise à niveau, vous devez aussi supprimer votre profil VPN Cisco Legacy AnyConnect et l’application Cisco Legacy AnyConnect. 
+Vous devez créer un nouveau profil VPN Cisco AnyConnect pour iOS afin de prendre en charge la nouvelle application Cisco AnyConnect car celle-ci et l’application Cisco Legacy AnyConnect sont des applications distinctes. Si vous gérez le client AnyConnect dans votre environnement, vous devez également déployer la nouvelle application Cisco AnyConnect. Pour effectuer une mise à niveau, vous devez aussi supprimer votre profil VPN Cisco Legacy AnyConnect et l’application Cisco Legacy AnyConnect.
 
 L’intégration du contrôle d’accès réseau ne fonctionnera pas pour le nouveau client AnyConnect dans la version initiale. Nous travaillons avec Cisco pour proposer l’intégration du contrôle d’accès réseau dans une prochaine version de Microsoft Intune.
 
@@ -64,7 +64,7 @@ L’intégration du contrôle d’accès réseau ne fonctionnera pas pour le nou
 La détection de jailbreak améliorée est un nouveau paramètre de conformité qui améliorera la manière dont Intune évalue les appareils jailbreakés. Elle utilisera les services de localisation de l’appareil pour déclencher plus fréquemment l’archivage de l’appareil dans Intune et impactera l’utilisation de la batterie.
 
 ### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>Possibilité de déployer les applications métier requises pour tous les utilisateurs sur les appareils Windows 10 Desktop <!-- 1627835 RS4 -->
-Les clients pourront déployer les applications Windows 10 métier requises à installer dans les contextes d’appareils. Ces applications seront alors disponibles pour tous les utilisateurs sur l’appareil. Seuls les appareils Windows 10 Desktop sont concernés. 
+Les clients pourront déployer les applications Windows 10 métier requises à installer dans les contextes d’appareils. Ces applications seront alors disponibles pour tous les utilisateurs sur l’appareil. Seuls les appareils Windows 10 Desktop sont concernés.
 
 ### <a name="expiring-line-of-business-lob-apps-for-microsoft-intune----748789---"></a>Expiration des applications métier pour Microsoft Intune <!-- 748789 -->
 Dans le portail Azure, Intune vous avertira quand des applications métier seront sur le point d’expirer. Dès qu’une nouvelle version de l’application métier sera chargée, Intune supprimera la notification d’expiration de la liste des applications.
@@ -73,10 +73,10 @@ Dans le portail Azure, Intune vous avertira quand des applications métier seron
 Les utilisateurs qui s’inscrivent à l’aide du Portail d’entreprise sur Windows 10 build 1703 et supérieure pourront effectuer la première étape de l’inscription sans quitter l’application.
 
 ### <a name="new-management-name-column----1333586---"></a>Nouvelle colonne Nom d’administration <!-- 1333586 -->
-Une nouvelle colonne intitulée **Nom d’administration** sera ajoutée au panneau Appareils. Il s’agit d’un nom généré automatiquement, non modifiable affecté par appareil, reposant sur la formule suivante : 
+Une nouvelle colonne intitulée **Nom d’administration** sera ajoutée au panneau Appareils. Il s’agit d’un nom généré automatiquement, non modifiable affecté par appareil, reposant sur la formule suivante :
 - Nom par défaut pour tous les appareils : <username>_<devicetype>_<enrollmenttimestamp>
-- Pour les appareils ajoutés en bloc : <ID_de_package/ID_de_profil>_<DeviceType>_<EnrollmentTime> 
- 
+- Pour les appareils ajoutés en bloc : <ID_de_package/ID_de_profil>_<DeviceType>_<EnrollmentTime>
+
 Il s’agit d’une colonne facultative dans le panneau Appareils. Elle ne sera pas disponible par défaut et vous ne pourrez y accéder que via le sélecteur de colonne. Le nom de l’appareil n’est pas affecté par cette nouvelle colonne.
 
 ### <a name="new-settings-for-windows-defender-security-center-notifications-device-configuration-profile----1631906---"></a>Nouveaux paramètres pour le profil de configuration d’appareil pour les notifications Windows Defender Security Center (WDSC) <!-- 1631906 -->
@@ -107,19 +107,19 @@ Ces paramètres se trouvent sous **Configuration de l’appareil** -> **Créer u
 ### <a name="configure-the-mac-application-firewall----1690461---"></a>Configurer le coupe-feu applicatif Mac <!-- 1690461 -->
 
 Vous pourrez configurer le coupe-feu applicatif Mac. Vous serez ainsi en mesure de contrôler les connexions au niveau de chaque application, plutôt qu’au niveau de chaque port. Il permet ainsi d’empêcher les applications indésirables de contrôler les ports réseau ayant été ouverts pour des applications légitimes, et de profiter d’une protection optimale.
- 
+
 Cette fonctionnalité se trouve sous **Configuration de l’appareil** -> **Créer un profil** -> **macOS**  ->  **Endpoint protection**.
 
 Une fois le paramètre de coupe-feu activé, vous pouvez configurer le coupe-feu à l’aide de deux stratégies :
 
 - Bloquer toutes les connexions entrantes
 
-   Vous pouvez bloquer toutes les connexions entrantes pour les appareils ciblés. Les connexions entrantes seront alors bloquées pour toutes les applications. 
+   Vous pouvez bloquer toutes les connexions entrantes pour les appareils ciblés. Les connexions entrantes seront alors bloquées pour toutes les applications.
 
 - Autoriser ou bloquer des applications spécifiques
 
    Vous pouvez autoriser ou bloquer la réception de connexions entrantes pour des applications spécifiques. Vous pouvez également activer le mode furtif de manière à empêcher les réponses aux demandes de détection.
- 
+
 #### <a name="more-information"></a>Plus d’informations
 
 - Bloquer toutes les connexions entrantes
@@ -134,7 +134,7 @@ Une fois le paramètre de coupe-feu activé, vous pouvez configurer le coupe-feu
 - Mode furtif
 
    Activez cette option pour empêcher l’ordinateur de répondre aux demandes de détection. L’ordinateur continue de répondre aux demandes entrantes pour les applications autorisées. Les demandes inattendues, comme ICMP (ping), sont ignorées.
- 
+
 
 ### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>Mise à jour de l’expérience Aide et commentaires sur l’application Portail d’entreprise pour Android <!--1631531 -->
 
@@ -143,16 +143,16 @@ Nous allons mettre à jour l’expérience Aide et commentaires sur l’applicat
 ### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>Catégories de livres personnalisées pour les livres électroniques achetés dans le cadre d’un programme d’achat en volume <!-- 1488911 -->
 Vous pourrez créer des catégories de livres électroniques personnalisées, puis attribuer des livres électroniques achetés en volume à ces catégories personnalisées. Les utilisateurs finaux pourront ensuite voir les nouvelles catégories de livres électroniques et les livres affectés à ces catégories.
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Mises à jour visuelles du Portail d’entreprise pour Android <!--976944 -->
+### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868--"></a>HoloLens et Surface Hub apparaissent désormais dans les listes d’appareils <!--1725868-->
 
-Nous allons mettre à jour l’application Portail d’entreprise pour Android afin de suivre les recommandations de [Material Design](https://material.io/). Nous allons publier des images des nouvelles icônes dans l’article [Nouveautés de l’interface utilisateur d’application](whats-new-app-ui.md) au moment de la sortie de l’application. 
+Nous avons ajouté la prise en charge de l’affichage des appareils HoloLens et Surface Hub inscrits auprès d’Intune dans l’application Portail d’entreprise pour Android.
 
 ### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Prise en charge mobile Edge pour les stratégies de protection des applications Intune <!-- 1817882 -->
 
 Le navigateur Microsoft Edge pour appareils mobiles prend en charge les stratégies de protection des applications définies dans Intune.
 
 ### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Utiliser le nom unique en tant que sujet de certificat SCEP <!--2221763 eeready-->
-Quand vous créez un profil de certificat SCEP, vous entrez le nom du sujet. Vous pouvez utiliser le nom complet en tant que sujet. Dans **Nom du sujet**, sélectionnez **Personnalisé**, puis entrez `CN={{OnPrem_Distinguished_Name}}`. Pour utiliser la variable `{{OnPrem_Distinguished_Name}}`, veillez à synchroniser l’attribut utilisateur `onpremisesdistingishedname` qui utilise [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) avec Azure AD. 
+Quand vous créez un profil de certificat SCEP, vous entrez le nom du sujet. Vous pouvez utiliser le nom complet en tant que sujet. Dans **Nom du sujet**, sélectionnez **Personnalisé**, puis entrez `CN={{OnPrem_Distinguished_Name}}`. Pour utiliser la variable `{{OnPrem_Distinguished_Name}}`, veillez à synchroniser l’attribut utilisateur `onpremisesdistingishedname` qui utilise [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) avec Azure AD.
 
 ### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Les appareils iOS sont invités à entrer un code confidentiel toutes les 15 minutes <!--1550837 eeready-->
 Une fois qu’une stratégie de conformité ou de configuration est appliquée à un appareil iOS, les utilisateurs sont invités à définir un code confidentiel toutes les 15 minutes. Les utilisateurs y sont invités continuellement jusqu’à ce qu’un code confidentiel soit défini.
@@ -169,11 +169,11 @@ S’applique aux appareils avec profil professionnel Android sur le système d�
 
 ### <a name="schedule-your-automatic-updates---1805514---"></a>Planifier vos mises à jour automatiques <!--1805514 -->
 
-Intune vous permet de contrôler l’installation des mises à jour automatiques à l’aide des [paramètres des anneaux de mise à jour Windows](windows-update-for-business-configure.md). Vous pouvez planifier les mises à jour récurrentes, notamment la semaine, le jour et l’heure. 
+Intune vous permet de contrôler l’installation des mises à jour automatiques à l’aide des [paramètres des anneaux de mise à jour Windows](windows-update-for-business-configure.md). Vous pouvez planifier les mises à jour récurrentes, notamment la semaine, le jour et l’heure.
 
 ### <a name="disable-checks-on-device-restart---1805490---"></a>Désactiver les vérifications au redémarrage de l’appareil <!--1805490 -->
 
-Intune vous permet de contrôler la [gestion des mises à jour logicielles](windows-update-for-business-configure.md). La propriété **Vérifications de redémarrage** est ajoutée et activée par défaut. Pour ignorer les vérifications usuelles qui se produisent au redémarrage d’un appareil (comme les utilisateurs actifs, les niveaux de batterie, etc.), sélectionnez **Ignorer**. 
+Intune vous permet de contrôler la [gestion des mises à jour logicielles](windows-update-for-business-configure.md). La propriété **Vérifications de redémarrage** est ajoutée et activée par défaut. Pour ignorer les vérifications usuelles qui se produisent au redémarrage d’un appareil (comme les utilisateurs actifs, les niveaux de batterie, etc.), sélectionnez **Ignorer**.
 
 <!-- 1802 start -->
 
@@ -183,15 +183,15 @@ Dans la page Vue d’ensemble de l’inscription, vous pourrez voir la tendance 
 
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>Personnaliser vos thèmes de portail d’entreprise avec des codes hexadécimaux<!--1049561 -->
 
-Vous serez en mesure de personnaliser la couleur de thème dans les applications Portail d’entreprise à l’aide de codes hexadécimaux. Quand vous entrez votre code hexadécimal, Intune détermine la couleur du texte qui fournit le plus haut niveau de contraste entre la couleur du texte et la couleur d’arrière-plan selon les [normes WCAG 2.0](http://www.w3.org/TR/WCAG20). Vous pouvez afficher un aperçu de la couleur du texte et du logo de votre société par rapport à la couleur dans **Applications mobiles** > **Portail d’entreprise**. 
+Vous serez en mesure de personnaliser la couleur de thème dans les applications Portail d’entreprise à l’aide de codes hexadécimaux. Quand vous entrez votre code hexadécimal, Intune détermine la couleur du texte qui fournit le plus haut niveau de contraste entre la couleur du texte et la couleur d’arrière-plan selon les [normes WCAG 2.0](http://www.w3.org/TR/WCAG20). Vous pouvez afficher un aperçu de la couleur du texte et du logo de votre société par rapport à la couleur dans **Applications mobiles** > **Portail d’entreprise**.
 
-### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Nouveaux paramètres Windows Defender Credential Guard ajoutés aux paramètres Endpoint Protection <!--1102252 --> 
+### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Nouveaux paramètres Windows Defender Credential Guard ajoutés aux paramètres Endpoint Protection <!--1102252 -->
 
-De nouveaux paramètres [Windows Defender Credential Guard] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] sont ajoutés à **Configuration de l’appareil** > **Profils** > **Endpoint Protection**. Les paramètres suivants seront ajoutés : 
+De nouveaux paramètres [Windows Defender Credential Guard] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] sont ajoutés à **Configuration de l’appareil** > **Profils** > **Endpoint Protection**. Les paramètres suivants seront ajoutés :
 
 - Niveau de sécurité de plateforme : spécifiez si le niveau de sécurité de plateforme est activé lors du prochain redémarrage. La sécurité basée sur la virtualisation nécessite un démarrage sécurisé. La sécurité basée sur la virtualisation peut éventuellement être activée avec l’utilisation de protections d’accès direct à la mémoire (DMA). Les protections DMA nécessitent une prise en charge matérielle et ne seront activées que sur des appareils configurés correctement.
-- Sécurité basée sur la virtualisation : spécifiez si la sécurité basée sur la virtualisation est activée lors du prochain redémarrage. 
-- Windows Defender Credential Guard : activez Credential Guard avec la sécurité basée sur la virtualisation pour protéger les informations d’identification au prochain redémarrage quand le niveau de sécurité de plateforme avec un démarrage sécurisé et la sécurité basée sur la virtualisation sont tous deux activés. Les options disponibles sont notamment **Désactivé**, **Activé avec le verrouillage UEFI**, **Activé sans verrouillage** et **Non configuré**. 
+- Sécurité basée sur la virtualisation : spécifiez si la sécurité basée sur la virtualisation est activée lors du prochain redémarrage.
+- Windows Defender Credential Guard : activez Credential Guard avec la sécurité basée sur la virtualisation pour protéger les informations d’identification au prochain redémarrage quand le niveau de sécurité de plateforme avec un démarrage sécurisé et la sécurité basée sur la virtualisation sont tous deux activés. Les options disponibles sont notamment **Désactivé**, **Activé avec le verrouillage UEFI**, **Activé sans verrouillage** et **Non configuré**.
   - L’option « Désactivé » désactive Credential Guard à distance s’il a été préalablement activé avec l’option « Activé sans verrouillage ».
 
   - L’option « Activé avec le verrouillage UEFI » garantit que Credential Guard ne peut pas être désactivé avec une clé de Registre ni en utilisant une stratégie de groupe. Pour désactiver Credential Guard après avoir utilisé ce paramètre, vous devez définir la stratégie de groupe sur « Désactivé » et supprimer la fonction de sécurité de chaque ordinateur, avec un utilisateur présent physiquement, afin d’effacer la configuration incluse dans UEFI. Tant que la configuration UEFI persiste, Credential Guard est activé.
@@ -208,7 +208,7 @@ Vous pourrez activer les paramètres de sécurité sur les appareils Windows 10 
 
 ### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Nouveaux paramètres d’imprimante pour les profils Éducation <!-- 1308900 -->
 
-Pour les profils Éducation, de nouveaux paramètres seront disponibles sous la catégorie **Imprimantes** : **Imprimantes**, **Imprimante par défaut**, **Ajouter de nouvelles imprimantes**. 
+Pour les profils Éducation, de nouveaux paramètres seront disponibles sous la catégorie **Imprimantes** : **Imprimantes**, **Imprimante par défaut**, **Ajouter de nouvelles imprimantes**.
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>Configuration du provisionnement des applications iOS <!-- 1581650 -->
 Vous serez en mesure d’assigner des profils de provisionnement des applications iOS pour empêcher vos applications d’arriver à expiration en incluant ou excluant des groupes de sécurité.
@@ -265,5 +265,3 @@ Il n’existe aucun avis actif pour l’instant.
 
 ### <a name="see-also"></a>Voir aussi
 Voir [Nouveautés de Microsoft Intune](whats-new.md) pour en savoir plus sur les derniers développements.
-
-

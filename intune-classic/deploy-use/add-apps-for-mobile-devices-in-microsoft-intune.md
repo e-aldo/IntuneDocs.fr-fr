@@ -1,25 +1,25 @@
 ---
 title: Ajouter des applications pour les appareils inscrits
-description: "Avant de déployer une application, vous devez l’ajouter à Intune. Vous la retrouverez ensuite dans la console Intune, où vous pourrez la déployer et la gérer."
-keywords: 
+description: Avant de déployer une application, vous devez l’ajouter à Intune. Vous la retrouverez ensuite dans la console Intune, où vous pourrez la déployer et la gérer.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Ajouter des applications pour les appareils inscrits à Intune
 
@@ -53,7 +53,7 @@ Vous utiliserez l'Éditeur de logiciel Intune pour configurer les propriétés d
             - Application sur le web. Intune déploiera une icône de raccourci vers l’application sur l’appareil.
         - **Demander un navigateur géré pour ouvrir ce lien (Android et iOS uniquement)**. Lorsque vous déployez un lien vers un site web ou une application web pour les utilisateurs, ils ne peuvent l’ouvrir que dans le navigateur géré Intune. Ce navigateur doit être installé sur leur appareil.<br>Pour plus d’informations sur Managed Browser, consultez [Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Ce type d'installation n'utilise pas du tout votre espace de stockage cloud.
 
-  -   **Application iOS gérée à partir de l’App Store**, pour les applications gratuites du magasin iTunes que vous souhaitez gérer avec des stratégies de gestion des applications mobiles (GAM) :
+  -   **Application iOS gérée à partir de l’App Store**, pour les applications gratuites du magasin iTunes que vous souhaitez gérer avec des stratégies de gestion des applications mobiles (MAM) :
 
         - **Spécifiez l’URL**. Saisissez l’URL du magasin d’applications de l’application que vous souhaitez déployer. Par exemple, si vous souhaitez déployer l’application Dossiers de travail Microsoft pour iOS, spécifiez **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Ce type d'installation n'utilise pas du tout votre espace de stockage cloud.
 

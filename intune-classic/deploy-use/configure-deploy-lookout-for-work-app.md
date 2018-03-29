@@ -1,24 +1,24 @@
 ---
-title: "Déploiement d’une application Lookout for Work"
-description: "Configurer et déployer l’application Lookout for Work pour Android."
+title: Déploiement d’une application Lookout for Work
+description: Configurer et déployer l’application Lookout for Work pour Android.
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd0ad36f40463ab56f1a5ab0a11fa9eeb0c35db4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Configurer et déployer l’application Lookout for Work
 
@@ -29,7 +29,7 @@ Cet article explique comment configurer et déployer l’application Lookout for
 ## <a name="android-google-play-store-app"></a>Android (application Google Play Store)
 
 1.  Dans la [console Administrateur Microsoft Intune](https://manage.microsoft.com), accédez à **Applications** et choisissez **Ajouter des applications**.
-2.  Dans la page **Installation du logiciel** du serveur de publication, choisissez **Lien externe**, puis indiquez l’URL suivante : https://play.google.com/store/apps/details?id=com.lookout.enterprise
+2.  Dans la page **Installation du logiciel** de l’éditeur, choisissez **Lien externe** et spécifiez l’URL suivante :  https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >Ne cliquez pas sur l’option pour obtenir Managed Browser.
 
@@ -90,7 +90,7 @@ https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Quand l�
 
 * [Vous êtes invité à installer Lookout for Work sur votre appareil Android](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 
-* [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil Android](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [Vous devez résoudre une menace détectée par Lookout for Work sur votre appareil Android](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer une stratégie de conformité des appareils Lookout dans Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

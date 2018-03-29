@@ -1,25 +1,25 @@
 ---
-title: "Résoudre les problèmes de configuration du client"
-description: "Résolvez les problèmes de configuration de client courants."
-keywords: 
+title: Résoudre les problèmes de configuration du client
+description: Résolvez les problèmes de configuration de client courants.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: f9cb68fcac7abc895f51cf2c8758c2cf59b32759
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Résolution des problèmes d’installation du client dans Microsoft Intune
 
@@ -29,7 +29,7 @@ Utilisez les informations suivantes pour vous aider à résoudre les problèmes 
 
 ## <a name="client-installation-fails"></a>Échec de l’installation du client
 
--   Si aucune alerte de déploiement du logiciel client pour l’ordinateur n’est affichée dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), vérifiez la connectivité Internet et la configuration du proxy de l’ordinateur, puis assurez-vous que ce dernier peut communiquer avec l’URL du service, [https://manage.microsoft.com](https://manage.microsoft.com/). Ensuite, réessayez d'installer le logiciel client.
+-   Si aucune alerte de déploiement du logiciel client pour l’ordinateur n’est affichée dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), vérifiez la connectivité Internet et la configuration du proxy de l’ordinateur, puis vérifiez que ce dernier peut communiquer avec l’URL du service, [https://manage.microsoft.com](https://manage.microsoft.com/). Ensuite, réessayez d'installer le logiciel client.
 
 -   Vous pouvez envoyer un message électronique à une sélection de destinataires quand une alerte relative à l'échec du déploiement du logiciel client se produit en configurant une règle de notification dans l'espace de travail **Admin**. Pour plus d’informations, consultez [Recevoir des alertes Microsoft Intune](/intune-classic/deploy-use/get-notified-by-alerts).
 

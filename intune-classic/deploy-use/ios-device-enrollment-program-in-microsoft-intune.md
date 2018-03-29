@@ -1,25 +1,25 @@
 ---
-title: "Gestion DEP d’Apple pour les appareils iOS"
-description: "Déployez un profil d’inscription qui inscrit les appareils iOS achetés via le Programme d’inscription des appareils iOS à distance, afin de gérer les appareils Apple."
-keywords: 
+title: Gestion DEP d’Apple pour les appareils iOS
+description: Déployez un profil d’inscription qui inscrit les appareils iOS achetés via le Programme d’inscription des appareils iOS à distance, afin de gérer les appareils Apple.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscrire des appareils iOS DEP d’entreprise
 
@@ -30,12 +30,13 @@ Microsoft Intune peut déployer un profil d’inscription qui inscrit les appare
 >[!NOTE]
 >L’inscription au programme DEP ne peut pas être utilisée avec celle du [gestionnaire d’inscription d’appareil](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 >De plus, si les utilisateurs inscrivent des appareils iOS (c’est-à-dire à l’aide de l’application Portail d’entreprise) et que les numéros de série de ces appareils sont ensuite importés et affectés à un profil DEP, les appareils sont désinscrits d’Intune.
+> Notez aussi que macOS ne prend pas en charge le programme DEP actuellement.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Prérequis pour inscrire des appareils iOS à l’aide de la gestion Apple DEP
 
 - [Installer un certificat APNs](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- Votre organisation doit participer au programme Apple DEP et obtenir des appareils par le biais de ce programme. Les détails de cette procédure sont disponibles à l'adresse suivante :  [https://deploy.apple.com](https://deploy.apple.com). Les avantages du programme incluent la configuration automatique des appareils sans utiliser de câble USB pour connecter chaque appareil à un ordinateur.
+- Votre organisation doit participer au programme Apple DEP et obtenir des appareils par le biais de ce programme. Les détails du processus sont disponibles à l'adresse suivante : [https://deploy.apple.com](https://deploy.apple.com). Les avantages du programme incluent la configuration automatique des appareils sans utiliser de câble USB pour connecter chaque appareil à un ordinateur.
 
 - Avant de pouvoir inscrire des appareils iOS d’entreprise à l’aide du programme DEP, vous devez obtenir un jeton approprié auprès d’Apple. Ce jeton permet à Intune de synchroniser les informations sur les appareils participant à ce programme et appartenant à votre entreprise. Il permet également à Intune d'effectuer des téléchargements de profil d'inscription sur Apple et d'attribuer des appareils à ces profils.
 
@@ -51,9 +52,9 @@ Les étapes suivantes décrivent la première inscription d’appareils iOS à l
 
 ![Mettre à jour un jeton du programme d’inscription d’appareils](../media/dev-sa-ios-dep.png)
 
-### <a name="get-a-device-enrollment-program-token"></a>Obtenir un jeton du programme d’inscription d’appareils
+### <a name="get-a-device-enrollment-program-token"></a>Obtenir un jeton du programme d'inscription d'appareils
 
-1. Accédez au [portail du Programme DEP](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise. Cet ID Apple doit être utilisé par la suite pour renouveler votre jeton DEP.
+1. Accédez au [portail du programme d’inscription d’appareils](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise. Cet ID Apple doit être utilisé par la suite pour renouveler votre jeton DEP.
 
 2.  Dans le portail du Programme d’inscription d’appareils, accédez à **Programme d’inscription d’appareils** &gt; **Gérer les serveurs**, puis choisissez **Ajouter un serveur MDM**.
 
@@ -63,7 +64,7 @@ Les étapes suivantes décrivent la première inscription d’appareils iOS à l
 
 5.  La boîte de dialogue **Ajouter&lt;nom_serveur&gt;** affiche un lien **Votre jeton de serveur**. Téléchargez le fichier de jeton de serveur (.p7m) sur votre ordinateur, puis choisissez **Terminé**.
 
-   Ce fichier de certificat (.p7m) est utilisé pour établir une relation d'approbation entre le serveur Intune et le serveur du programme d'inscription d'appareils d'Apple.
+   Ce fichier de certificat (.p7m) est utilisé pour établir une relation d’approbation entre le serveur Intune et le serveur du programme d’inscription d’appareils d’Apple.
 
 ### <a name="add-the-dep-token-to-intune"></a>Ajouter le jeton DEP à Intune
 
@@ -99,16 +100,16 @@ Les étapes suivantes décrivent la première inscription d’appareils iOS à l
    - **Numéro de téléphone du support** : s’affiche quand l’utilisateur clique sur le bouton **Besoin d’aide** pendant l’activation
    - **Mode de préparation** : défini pendant l’activation et ne peut pas être modifié sans rétablir les paramètres d’usine de l’appareil :
        - **Non supervisé** : capacités de gestion limitées
-       - **Supervisé** : active plusieurs options de gestion et désactive le verrou d’activation par défaut
+       - **Supervisé** : active des options de gestion supplémentaires et désactive le verrou d’activation par défaut
    - **Verrouiller le profil d’inscription de l’appareil** : défini pendant l’activation et ne peut pas être modifié sans rétablir les paramètres d’usine
        - **Désactiver** : permet de supprimer le profil de gestion à partir du menu **Paramètres**
        - **Activer** : (nécessite le **Mode de préparation** = **Supervisé**) désactive l’option du menu Paramètres iOS permettant de supprimer le profil de gestion
    - **Options de l’Assistant Installation** : ces paramètres facultatifs peuvent être configurés plus tard dans le menu **Paramètres** d’iOS.
         - **Code secret** : demande un code secret pendant l’activation. Exige toujours un code secret, sauf si l’appareil doit être sécurisé ou si son accès doit être contrôlé d’une autre façon (c’est-à-dire, en mode plein écran qui limite l’appareil à une seule application)
        - **Services de localisation** : si activé, l’Assistant Installation vous invite à spécifier le service pendant l’activation
-       - **Restaurer** : si activé, l’Assistant Installation invite à spécifier la sauvegarde iCloud pendant l’activation
+       - **Restaurer** : si cette option est activée, l’Assistant Installation invite à spécifier la sauvegarde iCloud pendant l’activation
        - **ID Apple** : si cette option est activée, iOS demande un ID Apple aux utilisateurs quand Intune tente d’installer une application sans ID. Un ID Apple est nécessaire pour télécharger des applications App Store iOS, y compris celles qui sont installées par Intune.
-       - **Termes et conditions** : si cette option est activée, l’Assistant Installation invite l’utilisateur à accepter les conditions générales d’Apple pendant l’activation
+       - **Termes et Conditions** : si cette option est activée, l’Assistant Installation invite l’utilisateur à accepter les conditions générales d’Apple pendant l’activation
        - **Touch ID** : si cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation
        - **Apple Pay** : si cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation
        - **Zoom** : si cette option est activée, l’Assistant Installation vous invite à spécifier ce service pendant l’activation
@@ -130,15 +131,15 @@ Les étapes suivantes décrivent la première inscription d’appareils iOS à l
 
 ### <a name="assign-dep-devices-for-management"></a>Attribuer des appareils DEP pour la gestion
 
-1. Accédez au [portail du Programme DEP](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise.
+1. Accédez au [portail du programme d’inscription d’appareils](https://deploy.apple.com) (https://deploy.apple.com) et connectez-vous avec votre ID Apple d’entreprise.
 
 2. Accédez à **Programme de déploiement** &gt; **Programme d’inscription d’appareils** &gt; **Gérer les appareils**.
 
-3. Spécifiez la façon dont vous allez **Choisir des appareils**, fournissez les informations relatives aux appareils et spécifiez les détails par appareil : **Numéro de série**, **Numéro de commande**ou **Télécharger un fichier CSV**.
+3. Spécifiez la façon dont vous allez **choisir des appareils**, fournissez les informations relatives aux appareils et spécifiez les détails par appareil : **Numéro de série**, **Numéro de commande**ou **Télécharger un fichier CSV**.
 
 4. Choisissez **Attribuer au serveur** et le &lt;nom_serveur&gt; spécifié pour Microsoft Intune, puis **OK**.
 
-### <a name="synchronize-dep-managed-devices"></a>Synchroniser les appareils gérés par le programme DEP
+### <a name="synchronize-dep-managed-devices"></a>Synchroniser des appareils gérés par le programme DEP
 
 Cette étape synchronise les appareils avec le service Apple DEP et les affiche dans la console Intune.
 

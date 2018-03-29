@@ -1,25 +1,25 @@
 ---
-title: "Déployer des applications sur des appareils Android for Work"
-description: "Utilisez cette rubrique pour synchroniser, puis déployer des applications sur des appareils Android for Work à partir du Google Play for Work Store."
-keywords: 
+title: Déployer des applications sur des appareils Android for Work
+description: Utilisez cette rubrique pour synchroniser, puis déployer des applications sur des appareils Android for Work à partir du Google Play for Work Store.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22b842f2745073f0476162278c8b209a3e251f9f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Comment déployer des applications sur des appareils Android for Work avec Microsoft Intune
 
@@ -52,7 +52,7 @@ Vérifiez que vous avez configuré Intune et Android for Work pour qu’ils coll
 1. Accédez à la Console développeur Google Play, [play.google.com/apps/publish](https://play.google.com/apps/publish).
 2. Connectez-vous avec le compte que vous avez utilisé pour configurer la connexion entre Intune et Android for Work. Si vous vous connectez pour la première fois, vous devez vous inscrire et payer des frais pour devenir membre du programme de développement Google.
 3. Dans la console, sélectionnez **Ajouter une nouvelle application**.
-4. Vous chargez votre application et fournissez des informations la concernant de la même manière que vous publiez une application sur le Google Play Store. Toutefois, vous devez sélectionner le paramètre **(<*nom de l’organisation*>)** :<br>
+4. Vous chargez votre application et fournissez des informations la concernant de la même manière que vous publiez une application sur le Google Play Store. Toutefois, vous devez sélectionner le paramètre **Mettre cette application à la disposition de mon organisation uniquement (<*nom de l’organisation*>)** :<br>
   ![Option permettant de mettre l’application à la disposition de votre organisation uniquement](media/restrict.png)<br>
 Cette opération assure que l’application est uniquement disponible pour votre organisation et n’est pas disponible dans le Google Play Store public.
 Pour plus d’informations sur la façon de charger et publier des applications Android, consultez l’[aide Google Developer Console](https://support.google.com/googleplay/android-developer/answer/113469).
@@ -82,7 +82,7 @@ Lorsqu’un développeur d’applications publie une nouvelle version d’une ap
 
 Consultez régulièrement la console Google Play gérée pour y rechercher l’existence de nouvelles autorisations. Vous pouvez configurer Google Play pour vous envoyer à vous-même ou à d’autres un message électronique lorsque de nouvelles autorisations sont requises pour une application approuvée. Si vous affectez une application et que vous constatez qu’elle n’est pas installée sur les appareils, recherchez de nouvelles autorisations en procédant comme suit :
 
-1. Consultez la page http://play.google.com/work
+1. Accédez à http://play.google.com/work.
 2. Connectez-vous avec le compte Google que vous avez utilisé pour publier et approuver les applications.
 3. Consultez l’onglet **Mises à jour** pour savoir si des applications nécessitent une mise à jour.  Les applications répertoriées nécessitent de nouvelles autorisations et ne sont pas affectées avant l’application de ces autorisations.  
 

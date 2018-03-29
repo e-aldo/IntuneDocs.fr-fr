@@ -1,23 +1,22 @@
 ---
-title: "Créer une stratégie de conformité de l’appareil Windows dans Microsoft Intune"
-titleSuffix: 
-description: "Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils Windows afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme."
-keywords: 
+title: Créer une stratégie de conformité de l’appareil Windows dans Microsoft Intune - Azure | Microsoft Docs
+description: Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils Windows afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Windows dans Intune
 
@@ -177,7 +176,7 @@ Pour plus d’informations sur le fonctionnement du service HAS, consultez [Heal
 
 - **Système d'exploitation minimal requis :** pris en charge sur Windows 8.1 et Windows 10.
 
-Indiquez ici le numéro major.minor.build. Le numéro de version doit correspondre à la version retournée par la commande ```winver```.
+Indiquez ici le numéro major.minor.build.CU. Le numéro de version doit correspondre à la version retournée par la commande ```winver```.
 
 Si un appareil a une version antérieure à la version de système d’exploitation spécifiée, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 

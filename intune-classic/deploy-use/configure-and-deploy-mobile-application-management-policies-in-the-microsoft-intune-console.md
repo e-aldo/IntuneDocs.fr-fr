@@ -1,31 +1,31 @@
 ---
-title: "Configurer des stratégies de gestion des applications mobiles dans la console Intune"
-description: "Vous pouvez utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise."
-keywords: 
+title: Configurer des stratégies de gestion des applications mobiles dans la console Intune
+description: Vous pouvez utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 881180fec0fe4fca8b49106bcae6ea1ecd52c2eb
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Vous pouvez utiliser des stratégies de gestion des applications mobiles (GAM) dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise. Par exemple, vous pouvez limiter les opérations Couper, Copier et Coller au sein d’une application gérée, ou configurer une application pour ouvrir tous les liens web dans Managed Browser.
+Vous pouvez utiliser des stratégies de gestion des applications mobiles (MAM) dans Microsoft Intune pour modifier les fonctionnalités des applications que vous déployez pour qu’elles soient en phase avec les stratégies de conformité et de sécurité de votre entreprise. Par exemple, vous pouvez limiter les opérations Couper, Copier et Coller au sein d’une application gérée, ou configurer une application pour ouvrir tous les liens web dans Managed Browser.
 
 Les stratégies de gestion des applications mobiles prennent en charge :
 
@@ -64,7 +64,7 @@ Par exemple, à l'aide de l'application Outlook :
 
 ## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Créer et déployer une application avec une stratégie de gestion des applications mobiles
 
--   **Étape 1** : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM.
+-   **Étape 1** : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application MAM.
 
 -   **Étape 2 :** Publier l’application dans votre espace de stockage cloud.
 
@@ -74,7 +74,7 @@ Par exemple, à l'aide de l'application Outlook :
 
 -   **Étape 5 :** Surveiller le déploiement de l’application.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>Étape 1 : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application GAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>Étape 1 : Obtenir le lien vers une application gérée par stratégie, créer une application encapsulée ou utiliser le SDK de l’application Intune pour écrire une application MAM
 
 À partir de l’App Store, recherchez et notez l’URL de l’application gérée par une stratégie que vous souhaitez déployer. Par exemple, l’URL de l’application Microsoft Word pour iPad est **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 

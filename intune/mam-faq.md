@@ -1,20 +1,26 @@
---
-# <a name="required-metadata"></a>métadonnées requises
-
-title: Questions fréquentes (FAQ) sur la Gestion des applications mobiles (MAM) et la protection des applications description: Cet article fournit des réponses à certaines questions fréquemment posées sur la Gestion des applications mobiles (MAM) Intune et la protection des applications Intune.
-keywords: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-
-# <a name="optional-metadata"></a>métadonnées facultatives
-
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang :
-ms.reviewer: erikre ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm :
-ms.custom: intune-azure
-
 ---
-
-# <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Questions fréquentes (FAQ) sur la Gestion des applications mobiles (MAM) et la protection des applications
+title: Forum Aux Questions sur la Gestion des applications mobiles (MAM) et la protection des applications
+description: Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (MAM) Intune et la protection des applications Intune.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 02/28/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+ms.reviewer: erikre
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/22/2018
+---
+# <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Forum Aux Questions sur la Gestion des applications mobiles (MAM) et la protection des applications
 
 Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (MAM) Intune et la protection des applications Intune.
 
@@ -123,7 +129,7 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 - **Qu’est-ce que la réinitialisation sélective pour la gestion des applications mobiles ?** La réinitialisation sélective pour la gestion des applications mobiles supprime simplement les données d’applications d’entreprise à partir d’une application. La requête est lancée à l’aide du portail Intune Azure. Pour savoir comment effectuer une demande de réinitialisation, consultez la section [Guide pratique pour effacer uniquement les données d’entreprise des applications](apps-selective-wipe.md).
 
-- **Quelle est la vitesse de la réinitialisation sélective pour la gestion des applications mobiles ?** Si l’utilisateur utilise l’application lorsque la réinitialisation sélective est lancée, le Kit de développement logiciel (SDK) d’application Intune contrôle toutes les 30 minutes la présence d’une requête de réinitialisation sélective du service de GAM Intune. Il vérifie également la présence d’une réinitialisation sélective lorsque l’utilisateur lance l’application pour la première fois et se connecte avec son compte professionnel ou scolaire.
+- **Quelle est la vitesse de la réinitialisation sélective pour la gestion des applications mobiles ?** Si l’utilisateur utilise l’application lorsque la réinitialisation sélective est lancée, le Kit de développement logiciel (SDK) d’application Intune contrôle toutes les 30 minutes la présence d’une requête de réinitialisation sélective du service MAM Intune. Il vérifie également la présence d’une réinitialisation sélective lorsque l’utilisateur lance l’application pour la première fois et se connecte avec son compte professionnel ou scolaire.
 
 **Pourquoi les services locaux (on-prem) ne fonctionnent-ils pas avec des applications protégées par Intune ?** La protection d’applications Intune dépend de la cohérence de l’identité de l’utilisateur entre l’application et le Kit de développement logiciel (SDK) d’application Intune. L’authentification moderne est la seule manière de la garantir. Il existe des scénarios dans lesquels les applications peuvent fonctionner avec une configuration locale. Mais elles ne sont ni cohérentes, ni garanties.
 
