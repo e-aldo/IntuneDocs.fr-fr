@@ -15,15 +15,15 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 32e61f95a1e6c197b8d732019a19222d437292bc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Inscrire automatiquement des appareils iOS avec le Programme d’inscription des appareils d’Apple
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Différences temporaires d’interface utilisateur
@@ -76,11 +76,11 @@ Vous utilisez le portail DEP Apple pour créer un jeton DEP. Vous utilisez égal
 
 1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple** > **Jeton du programme d’inscription**.
 
-  ![Volet Jeton du programme d’inscription dans l’espace de travail Certificats Apple](./media/enrollment-program-token-add.png)
+   ![Volet Jeton du programme d’inscription dans l’espace de travail Certificats Apple](./media/enrollment-program-token-add.png)
 
 2. Choisissez **Télécharger votre clé publique** pour télécharger et enregistrer le fichier de clé de chiffrement (.pem) en local. Le fichier .pem est utilisé pour demander un certificat de relation d'approbation à partir du portail du programme d'inscription d'appareils d'Apple.
 
-  ![Volet Jeton de programme d’inscription dans l’espace de travail Certificats Apple pour télécharger une clé publique](./media/enrollment-program-token-download.png)
+   ![Volet Jeton de programme d’inscription dans l’espace de travail Certificats Apple pour télécharger une clé publique](./media/enrollment-program-token-download.png)
 
 **Étape 2. Créez et téléchargez un jeton DEP d’Apple.**<br>
 1. Choisissez **Créer un jeton par le biais du Programme d’inscription des appareils Apple** pour ouvrir le portail du programme de déploiement d’Apple, et connectez-vous avec votre ID Apple d’entreprise. Vous pouvez utiliser cet ID Apple pour renouveler votre jeton DEP.
@@ -120,37 +120,37 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
 2. Sous **Programme d’inscription pour Apple**, choisissez **Profils du programme d’inscription** > **Créer**.
 3. Dans **Créer un profil d’inscription**, entrez un **Nom** et une **Description** pour le profil à des fins d’administration. Les utilisateurs ne voient pas ces détails. Vous pouvez utiliser ce champ **Nom** pour créer un groupe dynamique dans Azure Active Directory. Utilisez le nom du profil pour définir le paramètre enrollmentProfileName et attribuer des appareils avec ce profil d’inscription. En savoir plus sur les [groupes dynamiques Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
-  Pour **Affinité utilisateur**, indiquez si les appareils avec ce profil sont inscrits avec ou sans utilisateur affecté.
+   Pour **Affinité utilisateur**, indiquez si les appareils avec ce profil sont inscrits avec ou sans utilisateur affecté.
 
- - Choisissez **Inscrire avec l’affinité utilisateur** pour les appareils qui appartiennent à des utilisateurs et qui doivent utiliser le portail d’entreprise pour des services tels que l’installation d’applications. L’affinité utilisateur nécessite un [point de terminaison WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [En savoir plus](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+   - Choisissez **Inscrire avec l’affinité utilisateur** pour les appareils qui appartiennent à des utilisateurs et qui doivent utiliser le portail d’entreprise pour des services tels que l’installation d’applications. L’affinité utilisateur nécessite un [point de terminaison WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [En savoir plus](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
- - Choisissez **Inscrire sans l’affinité utilisateur** pour un appareil non affilié à un seul utilisateur. Utilisez cette option pour les appareils qui effectuent des tâches sans accéder aux données de l’utilisateur local. Les applications telles que l’application Portail d’entreprise ne fonctionnent pas.
+   - Choisissez **Inscrire sans l’affinité utilisateur** pour un appareil non affilié à un seul utilisateur. Utilisez cette option pour les appareils qui effectuent des tâches sans accéder aux données de l’utilisateur local. Les applications telles que l’application Portail d’entreprise ne fonctionnent pas.
 
 4. Choisissez **Paramètres de gestion des appareils** pour configurer les paramètres de profil suivants :
 
-  ![Choix du mode de gestion](./media/enrollment-program-profile-mode.png)
-  - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées. Microsoft recommande l’utilisation du Programme d’inscription des appareils comme mécanisme d’activation du mode supervisé, en particulier pour les organisations qui déploient un grand nombre d’appareils iOS.
+   ![Choix du mode de gestion](./media/enrollment-program-profile-mode.png)
+   - **Supervisé** : mode de gestion qui active plusieurs options de gestion et désactive le verrou d’activation par défaut. Si vous laissez la case désactivée, vous disposez de fonctions de gestion limitées. Microsoft recommande l’utilisation du Programme d’inscription des appareils comme mécanisme d’activation du mode supervisé, en particulier pour les organisations qui déploient un grand nombre d’appareils iOS.
 
- > [!NOTE]
- > La configuration d’un appareil pour le mode supervisé ne peut pas être effectuée avec Intune après l’inscription de cet appareil. Après l’inscription, la seule façon d’activer le mode surveillé est de connecter l’appareil iOS à un Mac avec un câble USB et d’utiliser Apple Configurator. Cette opération réinitialise l’appareil et le configure en mode supervisé. Découvrez plus d’informations sur ceci dans la [documentation d’Apple Configurator](http://help.apple.com/configurator/mac/2.3). Un appareil supervisé indique que « Cet iPhone est géré par Contoso. » sur l’écran de verrouillage, et que « Cet iPhone est supervisé. Contoso peut surveiller votre trafic Internet et localiser cet appareil. » dans **Paramètres** > **Général** > **À propos de**.
+   > [!NOTE]
+   > La configuration d’un appareil pour le mode supervisé ne peut pas être effectuée avec Intune après l’inscription de cet appareil. Après l’inscription, la seule façon d’activer le mode surveillé est de connecter l’appareil iOS à un Mac avec un câble USB et d’utiliser Apple Configurator. Cette opération réinitialise l’appareil et le configure en mode supervisé. Découvrez plus d’informations sur ceci dans la [documentation d’Apple Configurator](http://help.apple.com/configurator/mac/2.3). Un appareil supervisé indique que « Cet iPhone est géré par Contoso. » sur l’écran de verrouillage, et que « Cet iPhone est supervisé. Contoso peut surveiller votre trafic Internet et localiser cet appareil. » dans **Paramètres** > **Général** > **À propos de**.
 
-  - **Inscription verrouillée** : (nécessite le Mode de gestion = supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres. Après l’inscription de l’appareil, vous ne pourrez plus modifier ce paramètre sans réinitialiser l’appareil aux paramètres d’usine.
+   - **Inscription verrouillée** : (nécessite le Mode de gestion = supervisé) désactive les paramètres iOS qui pourraient autoriser la suppression du profil de gestion. Si vous laissez la case désactivée, cela permet de supprimer le profil de gestion du menu Paramètres. Après l’inscription de l’appareil, vous ne pourrez plus modifier ce paramètre sans réinitialiser l’appareil aux paramètres d’usine.
 
-  - **Activer iPad partagé** : le Programme d’inscription des appareils d’Apple ne prend pas en charge iPad partagé.
+   - **Activer iPad partagé** : le Programme d’inscription des appareils d’Apple ne prend pas en charge iPad partagé.
 
-  - **Autoriser l’appairage** : spécifie si les appareils iOS peuvent se synchroniser avec les ordinateurs. Si vous avez choisi **Autoriser Apple Configurator par certificat**, vous devez choisir un certificat sous **Certificats Apple Configurator**.
+   - **Autoriser l’appairage** : spécifie si les appareils iOS peuvent se synchroniser avec les ordinateurs. Si vous avez choisi **Autoriser Apple Configurator par certificat**, vous devez choisir un certificat sous **Certificats Apple Configurator**.
 
-  - **Certificats Apple Configurator** : si vous avez choisi **Autoriser Apple Configurator par certificat** sous **Autoriser l’appairage**, choisissez un certificat Apple Configurator à importer.
+   - **Certificats Apple Configurator** : si vous avez choisi **Autoriser Apple Configurator par certificat** sous **Autoriser l’appairage**, choisissez un certificat Apple Configurator à importer.
 
-  Choisissez **Enregistrer**.
+   Choisissez **Enregistrer**.
 
 5. Choisissez **Paramètres de l’Assistant Configuration** pour configurer les paramètres de profil suivants :
 
-  ![Choix des paramètres de configuration avec les paramètres disponibles pour un nouveau profil de programme d’inscription](./media/enrollment-program-profile-settings.png)
-  - **Nom du service** : s’affiche quand les utilisateurs appuient sur **À propos de la configuration** pendant l’activation.
+   ![Choix des paramètres de configuration avec les paramètres disponibles pour un nouveau profil de programme d’inscription](./media/enrollment-program-profile-settings.png)
+   - **Nom du service** : s’affiche quand les utilisateurs appuient sur **À propos de la configuration** pendant l’activation.
 
-  - **Numéro de téléphone du service** : s’affiche quand l’utilisateur clique sur le bouton **Besoin d’aide** pendant l’activation.
-    - **Options de l’Assistant Installation** : ces paramètres facultatifs peuvent être configurés plus tard dans le menu **Paramètres** d’iOS.
+   - **Numéro de téléphone du service** : s’affiche quand l’utilisateur clique sur le bouton **Besoin d’aide** pendant l’activation.
+     - **Options de l’Assistant Installation** : ces paramètres facultatifs peuvent être configurés plus tard dans le menu **Paramètres** d’iOS.
         - **Code secret**
         - **Services d’emplacement**
         - **Restauration**
@@ -162,16 +162,19 @@ Maintenant que vous avez installé votre jeton, vous pouvez créer un profil d�
         - **Siri**
         - **Données de diagnostic**
 
-    Choisissez **Enregistrer**.
+     Choisissez **Enregistrer**.
 
-9. Pour enregistrer les paramètres de profil, choisissez **Créer** dans le panneau **Créer un profil d’inscription**. Le profil d’inscription s’affiche dans la liste des profils d’inscription du Programme d’inscription Apple.
+>[!NOTE]
+>Depuis iOS 11, si vous souhaitez activer la restauration à partir d’une sauvegarde iCloud, vous devez afficher à la fois « Restaurer » et « Identifiant Apple » sous les options de l’Assistant Installation.
+
+6. Pour enregistrer les paramètres de profil, choisissez **Créer** dans le panneau **Créer un profil d’inscription**. Le profil d’inscription s’affiche dans la liste des profils d’inscription du Programme d’inscription Apple.
 
 ## <a name="sync-managed-devices"></a>Synchroniser des appareils gérés
 Maintenant qu’Intune est autorisé à gérer vos appareils, vous pouvez synchroniser Intune avec Apple pour voir vos appareils gérés dans le portail Azure d’Intune.
 
 1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple** > **Appareils du programme d’inscription** > **Synchroniser**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
-  ![Sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser](./media/enrollment-program-device-sync.png)
+   ![Sélection du nœud Appareils du programme d’inscription et choix du lien Synchroniser](./media/enrollment-program-device-sync.png)
 
 2. Dans le panneau **Synchroniser**, choisissez **Demander une synchronisation**. La barre de progression indique la durée pendant laquelle vous devez patienter avant de redemander la synchronisation.
 
@@ -193,15 +196,15 @@ Vous devez affecter un profil de programme d’inscription aux appareils pour po
 1. Dans [Intune du portail Azure](https://aka.ms/intuneportal), choisissez **Inscription des appareils** > **Inscription Apple** et choisissez **Profils du programme d’inscription**.
 2. Dans la liste **Profils du programme d’inscription**, choisissez le profil que vous souhaitez affecter aux appareils, puis **Affecter des appareils**.
 
- ![Affectations des appareils avec Affecter sélectionné](./media/enrollment-program-device-assign.png)
+   ![Affectations des appareils avec Affecter sélectionné](./media/enrollment-program-device-assign.png)
 
 3. Choisissez **Affecter**, puis les appareils auxquels vous souhaitez affecter ce profil. Vous pouvez filtrer pour afficher les appareils disponibles :
-  - **non affecté**
-  - **indifférent**
-  - **&lt;nom du profil&gt;**
+   - **non affecté**
+   - **indifférent**
+   - **&lt;nom du profil&gt;**
 4. Choisissez les appareils à affecter. La case à cocher au-dessus de la colonne sélectionne jusqu’à 1 000 appareils listés. Après sélection, cliquez sur **Affecter**. Pour inscrire plus de 1000 appareils, répétez les étapes d’affectation jusqu’à ce qu’un profil d’inscription ait été affecté à tous les appareils.
 
-  ![Bouton d’affectation de profil du programme d’inscription dans Intune](media/dep-profile-assignment.png)
+   ![Bouton d’affectation de profil du programme d’inscription dans Intune](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices"></a>Distribuer des appareils
 Vous avez activé la gestion et la synchronisation entre Apple et Intune, et affecté un profil pour permettre d’inscrire vos appareils DEP. Vous pouvez désormais distribuer les appareils aux utilisateurs. Pour les appareils avec affinité utilisateur, chaque utilisateur doit se voir attribuer une licence Intune. Les appareils sans affinité utilisateur nécessitent une licence d’appareil. Un appareil activé ne peut pas appliquer de profil d’inscription tant que l’appareil n’est pas réinitialisé aux paramètres d’usine.

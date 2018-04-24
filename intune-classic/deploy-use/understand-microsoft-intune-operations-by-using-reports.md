@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 919178b20094cb210b3d0b05c42b9b7d97759637
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b49f9d94e800a068015a357aaf105a92bb5882cc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Présentation des opérations Microsoft Intune à l’aide de rapports
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilisez les informations de cette rubrique pour créer et gérer des rapports Microsoft Intune qui fournissent des informations sur les logiciels, le matériel et les licences logicielles de votre organisation.
 
@@ -61,9 +61,9 @@ Les rapports Intune fournissent des informations sur les logiciels, le matériel
 Pour trier le rapport en fonction de l’une des colonnes affichées, cliquez sur l’en-tête de la colonne. Certains rapports vous permettent également de développer les éléments de la liste pour afficher plus de détails.
 
 ## <a name="more-report-actions"></a>Autres opérations relatives aux rapports
-En outre, les rapports prennent en charge les actions suivantes :
+Les rapports prennent aussi en charge les actions suivantes :
 
-|Action|Plus d'informations|
+|Action|Autres informations|
 |----------|--------------------|
 |**Imprimer**|Dans un rapport ouvert, cliquez sur l’icône d’impression et suivez les instructions.|
 |**Exporterer**|Dans un rapport ouvert, cliquez sur l’icône d’exportation et suivez les instructions. Vous pouvez exporter un rapport vers un fichier de valeurs séparées par des virgules (.csv) ou au format HTML.|

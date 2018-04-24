@@ -1,29 +1,29 @@
 ---
-title: "Référence de stratégie de configuration"
-description: "Utilisez les informations de cette rubrique pour vous aider à déterminer la stratégie Microsoft Intune à utiliser pour gérer vos appareils."
-keywords: 
+title: Référence de stratégie de configuration
+description: Utilisez les informations de cette rubrique pour vous aider à déterminer la stratégie Microsoft Intune à utiliser pour gérer vos appareils.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Guide de référence des stratégies de configuration de Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Les informations de cette rubrique vous aideront à déterminer la stratégie de configuration de Microsoft Intune à utiliser pour gérer vos appareils.
 
@@ -102,12 +102,13 @@ S’applique uniquement à Windows Phone et aux appareils Windows inscrits.
 
 ## <a name="common-mobile-device-settings"></a>Paramètres communs d'appareils mobiles
 
-|Nom de la stratégie|À utiliser pour|
-|---------------|------------------------|
-|**Stratégie Exchange ActiveSync**|Configurer les paramètres fonctionnels et de sécurité des appareils mobiles pour les appareils gérés par Exchange ActiveSync.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie Exchange ActiveSync dans Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Stratégie de sécurité des appareils mobiles**|<ul><li>Configure les paramètres des appareils mobiles (toutes les plateformes), notamment :<br /><br /><ul><li>Sécurité</li><li>Chiffrement</li><li>d'exploitation</li><li>Courrier électronique</li><li>Applications</li></ul></li></ul>
+|                  Nom de la stratégie                   |                                                                                                                       À utiliser pour                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Stratégie Exchange ActiveSync</strong>   | Configurer les paramètres fonctionnels et de sécurité des appareils mobiles pour les appareils gérés par Exchange ActiveSync.<br /><br />Pour plus d’informations, consultez [Paramètres de la stratégie Exchange ActiveSync dans Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md). |
+| <strong>Stratégie de sécurité des appareils mobiles</strong> |                                  <ul><li>Configure les paramètres des appareils mobiles (toutes les plateformes), notamment :<br /><br /><ul><li>Sécurité</li><li>Chiffrement</li><li>d'exploitation</li><li>Courrier électronique</li><li>Applications</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune offre désormais des **stratégies de configuration** distinctes pour chaque plateforme d’appareil. Elles contiennent les paramètres les plus récents que vous pouvez utiliser. Vous pouvez continuer à utiliser la stratégie de sécurité des appareils mobiles et tous les déploiements existants continueront de fonctionner, mais vous devez planifier la migration vers les nouvelles stratégies de configuration dès que possible.<br />Pour plus d’informations, consultez [Paramètres de stratégie de sécurité des appareils mobiles dans Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
+> Microsoft Intune offre désormais des **stratégies de configuration** distinctes pour chaque plateforme d’appareil. Elles contiennent les paramètres les plus récents que vous pouvez utiliser. Vous pouvez continuer à utiliser la stratégie de sécurité des appareils mobiles et tous les déploiements existants continueront de fonctionner, mais vous devez planifier la migration vers les nouvelles stratégies de configuration dès que possible.<br />Pour plus d’informations, consultez [Paramètres de stratégie de sécurité des appareils mobiles dans Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Stratégies pour les PC Windows gérés par le logiciel client Intune
 

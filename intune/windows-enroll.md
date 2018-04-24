@@ -15,15 +15,15 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurer l’inscription d’appareils Windows
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cette rubrique aide les administrateurs informatiques à simplifier l’inscription de Windows pour leurs utilisateurs. Une fois que vous avez [configuré Intune](setup-steps.md), les utilisateurs inscrivent des appareils Windows en [se connectant](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) avec leur compte professionnel ou scolaire.  
 
@@ -48,7 +48,7 @@ Les organisations qui peuvent utiliser l’inscription automatique peuvent égal
 **Prise en charge multi-utilisateur**<br>
 Les appareils qui exécutent Windows 10 Creators Update et qui sont joints à un domaine Azure Active Directory sont désormais pris en charge par Intune pour la gestion d’utilisateurs multiples. Quand des utilisateurs standard se connectent avec leurs informations d’identification Azure AD, ils reçoivent les applications et les stratégies assignées à leur nom d’utilisateur. Les utilisateurs ne peuvent actuellement pas utiliser le portail d’entreprise pour les scénarios de libre-service tels que l’installation d’applications.
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Simplifier l’inscription Windows sans Azure AD Premium
 Vous pouvez simplifier l’inscription de vos utilisateurs en créant un alias de serveur de noms de domaine ou DNS (type d’enregistrement CNAME) qui redirige automatiquement les demandes d’inscription vers les serveurs Intune. Si vous ne créez pas d’enregistrement de ressource CNAME DNS, les utilisateurs qui tentent de se connecter à Intune doivent entrer le nom du serveur Intune lors de l’inscription.

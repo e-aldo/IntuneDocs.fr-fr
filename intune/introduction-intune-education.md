@@ -1,24 +1,24 @@
 ---
-title: "Qu’est-ce qu’Intune pour l’Éducation ?"
-description: "Découvrez comment Intune pour l’Éducation diffère de l’expérience de gestion Intune complète."
-keywords: "définition d’Intune"
-author: barlanmsft
-ms.author: barlan
+title: Qu’est-ce qu’Intune pour l’Éducation ?
+description: Découvrez comment Intune pour l’Éducation diffère de l’expérience de gestion Intune complète.
+keywords: définition d’Intune
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f98e9cd82508f4b41d62a61baf06c9add2c3626e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 30195ee56e99754f5ed385291823adef08d6ce01
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Comment Intune pour l’Éducation diffère-t-il de l’expérience de gestion complète dans Intune ?
 
@@ -39,6 +39,6 @@ Avec Intune et Intune pour l’Éducation, vous pouvez :
 * vérifier que les appareils et les applications sont conformes aux exigences de sécurité.
 
 ### <a name="next-steps"></a>Étapes suivantes
-* Se familiariser avec le produit [grâce à une période d’essai gratuit d’Intune de 90 jours](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Si vous avez déjà accès, rendez-vous sur https://intuneeducation.portal.azure.com pour commencer.
+* Se familiariser avec le produit [grâce à une période d’essai gratuit d’Intune de 90 jours](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Si vous y avez déjà accès, rendez-vous sur (https://intuneeducation.portal.azure.com) pour démarrer.
 * En savoir plus sur la façon la plus rapide de [commencer à utiliser Intune pour l’Éducation](/intune-education/what-is-express-configuration).
 * Explorer [les spécifications techniques et les fonctionnalités](/intune/supported-devices-browsers) d’Intune.

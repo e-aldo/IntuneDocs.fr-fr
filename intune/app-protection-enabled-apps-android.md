@@ -1,29 +1,29 @@
 ---
-title: "Applications Android avec stratégies de protection des applications"
+title: Applications Android avec stratégies de protection des applications
 titlesuffix: Microsoft Intune
-description: "Découvrez ce qui vous attend dans le cas d’une application Android associée à des stratégies de protection."
-keywords: 
+description: Découvrez ce qui vous attend dans le cas d’une application Android associée à des stratégies de protection.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 450bcd9c807bdfae16e9c2fa1eb813b00444df65
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Découvrez ce qui vous attend dans le cas d’applications Android associées à des stratégies de protection d’application. Les stratégies de protection d’application ne sont appliquées que si les applications sont utilisées dans le contexte professionnel. C’est le cas par exemple quand vous accédez à une application avec un compte professionnel ou à des fichiers stockés dans l’emplacement OneDrive de votre entreprise.
 ##  <a name="accessing-apps"></a>Accès aux applications
@@ -75,9 +75,11 @@ Les types de fichiers suivants sont pris en charge :
 * **Documents :** PDF, PPDF
 
 ------------
-|**pfile**|**text**|
-|----|----|
-|Pfile est un format « wrapper » générique pour les fichiers protégés. Il encapsule le contenu chiffré et les licences Azure Information Protection. Il peut être utilisé pour protéger tout type de fichier.|Les fichiers texte, notamment XML, CSV, etc., peuvent être ouverts pour être affichés dans l’application même quand ils sont protégés. Types de fichiers : txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+
+|                                                                                 <strong>pfile</strong>                                                                                 |                                                                      <strong>text</strong>                                                                      |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pfile est un format « wrapper » générique pour les fichiers protégés. Il encapsule le contenu chiffré et les licences Azure Information Protection. Il peut être utilisé pour protéger tout type de fichier. | Les fichiers texte, notamment XML, CSV, etc., peuvent être ouverts pour être affichés dans l’application même quand ils sont protégés. Types de fichiers : txt, ptxt, csv, pcsv, log, plog, xml, pxml. |
+
 ---------------
 ## <a name="next-steps"></a>Étapes suivantes
 [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](app-protection-enabled-apps-ios.md)

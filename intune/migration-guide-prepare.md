@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Phase 1 : Préparer Microsoft Intune à la gestion des appareils mobiles (MDM)
 
@@ -55,23 +55,23 @@ Avant d’étudier plus en détail la configuration d’Intune, passons en revue
 
 ### <a name="what-is-your-device-security-policy"></a>Quelle stratégie de sécurité des appareils mobiles comptez-vous appliquer ?
 
--   Devez-vous appliquer un chiffrement au niveau des appareils ?
+- Devez-vous appliquer un chiffrement au niveau des appareils ?
 
--   Quelle est la longueur actuelle des codes PIN/codes secrets de vos appareils ?
+- Quelle est la longueur actuelle des codes PIN/codes secrets de vos appareils ?
 
--   Devez-vous désactiver des fonctionnalités de l’appareil, ou imposer des restrictions à certains comportements des appareils ? Vous pouvez contrôler différents paramètres spécifiques de la plateforme grâce aux profils de configuration des appareils, par exemple :
-      - Désactiver l’appareil photo
-      - Verrouiller le mode d’application unique<br/>
+- Devez-vous désactiver des fonctionnalités de l’appareil, ou imposer des restrictions à certains comportements des appareils ? Vous pouvez contrôler différents paramètres spécifiques de la plateforme grâce aux profils de configuration des appareils, par exemple :
+    - Désactiver l’appareil photo
+    - Verrouiller le mode d’application unique<br/>
 
--   Quels types d’authentification devez-vous prendre en charge ? Si vous avez besoin d’une authentification basée sur un certificat, quels types de certificat faut-il configurer ?
+- Quels types d’authentification devez-vous prendre en charge ? Si vous avez besoin d’une authentification basée sur un certificat, quels types de certificat faut-il configurer ?
   - Intune peut configurer des certificats avec des profils d’accès aux ressources pour les appareils inscrits.
-    -   Quel type d’infrastructure à clé publique (PKI) devez-vous prendre en charge ?
-<br></br>
--   Devez-vous prendre en charge un réseau privé virtuel (VPN) au niveau des appareils ou des applications ?
+  -   Quel type d’infrastructure à clé publique (PKI) devez-vous prendre en charge ?
+  <br></br>
+- Devez-vous prendre en charge un réseau privé virtuel (VPN) au niveau des appareils ou des applications ?
 
-    -   Intune peut configurer des configurations VPN pour les fournisseurs VPN tiers.
-<br/><br/>
--   Est-il possible de mettre en place des exceptions temporaires pour certaines exigences afin d’éviter les temps d’arrêt ? Ou les appareils dotés d’un accès doivent-ils toujours se conformer aux exigences de sécurité ?
+  -   Intune peut configurer des configurations VPN pour les fournisseurs VPN tiers.
+  <br/><br/>
+- Est-il possible de mettre en place des exceptions temporaires pour certaines exigences afin d’éviter les temps d’arrêt ? Ou les appareils dotés d’un accès doivent-ils toujours se conformer aux exigences de sécurité ?
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour voir comment des entreprises de différents secteurs d’activité ont évalué leurs besoins en matière de gestion des appareils mobiles, consultez ces [études de cas](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune).

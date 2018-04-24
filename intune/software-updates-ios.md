@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>Configurer des stratégies de mise à jour iOS dans Microsoft Intune
 
@@ -55,3 +55,4 @@ Vous avez appliqué la stratégie à vos utilisateurs ou appareils. La conformit
 ## <a name="monitor-ios-device-installation-failures"></a>Suivre les échecs d’installation d’appareil iOS
 <!-- 1352223 -->
 Le rapport **Échecs d’installation pour les appareils iOS** est disponible dans le volet **Mises à jour logicielles**. Dans ce rapport, vous pouvez afficher la liste des appareils iOS supervisés qui ont été ciblés par une stratégie de mise à jour d’iOS, qui ont tenté d’effectuer une mise à jour et qui n’ont pas pu être mis à jour. Pour chaque appareil, vous pouvez afficher un état indiquant la raison pour laquelle l’appareil n’a pas été automatiquement mis à jour. Les appareils intègres et à jour ne sont pas affichés dans la liste. Le terme « à jour » signifie que l’appareil dispose de la mise à jour la plus récente qu’il peut prendre en charge.
+

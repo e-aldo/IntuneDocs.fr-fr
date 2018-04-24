@@ -1,28 +1,28 @@
 ---
 title: Qu'est-ce que Microsoft Intune
-description: "Découvrez comment Intune constitue le composant de gestion des appareils mobiles et de gestion des applications mobiles de la solution Enterprise Mobility + Security, et comment il permet de protéger les données d’entreprise."
-keywords: "définition d’Intune"
+description: Découvrez comment Intune constitue le composant de gestion des appareils mobiles et de gestion des applications mobiles de la solution Enterprise Mobility + Security, et comment il permet de protéger les données d’entreprise.
+keywords: définition d’Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: aa28f11a32a35e53c8e135a9f5f738513f416c37
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 25bb5ec1610eb3d3cac02244a43ead6e63d441e5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-intune"></a>Qu’est-ce qu’Intune ?
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune est un service cloud dans l’espace de gestion de la mobilité en entreprise qui permet à votre force de travail de rester productive tout en protégeant vos données d’entreprise. Avec Intune, vous pouvez :
 * gérer les appareils mobiles que votre personnel utilise pour accéder aux données d’entreprise ;

@@ -1,28 +1,28 @@
 ---
-title: "Paramètres de filtrage de contenu web Microsoft Intune pour les appareils iOS"
-titlesuffix: 
-description: "Découvrez les paramètres de Microsoft Intune que vous pouvez utiliser pour autoriser et bloquer l’accès à des sites web à partir d’appareils exécutant iOS."
-keywords: 
+title: Paramètres de filtrage de contenu web Microsoft Intune pour les appareils iOS
+titlesuffix: ''
+description: Découvrez les paramètres de Microsoft Intune que vous pouvez utiliser pour autoriser et bloquer l’accès à des sites web à partir d’appareils exécutant iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Paramètres de filtrage de contenu web pour les appareils iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cet article décrit les paramètres de Microsoft Intune que vous pouvez utiliser pour contrôler l’accès à des URL dans des navigateurs à partir d’appareils exécutant iOS.
 
@@ -33,7 +33,7 @@ Il existe deux méthodes pour configurer des URL :
 - **Sites web spécifiques uniquement** (pour le navigateur web Safari uniquement) : ces URL sont ajoutées aux signets du navigateur Safari. L’utilisateur est **uniquement** autorisé à accéder à ces sites ; aucun autre site n’est accessible. Utilisez cette option uniquement si vous connaissez la liste exacte des URL auxquelles les utilisateurs peuvent accéder.
 Si vous ne spécifiez aucune URL, les utilisateurs ne peuvent accéder à aucun site web à l’exception de microsoft.com, microsoft.net et apple.com.
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Prendre en main
 
 1. Dans la page Fonctionnalités de l’appareil, sélectionnez **Filtre de contenu web (mode supervisé uniquement)**.
 2. Dans la page **Filtre de contenu web** panneau, choisissez le **type de filtre** que vous souhaitez configurer. Vous pouvez choisir plusieurs options :
@@ -57,13 +57,13 @@ Si vous ne spécifiez aucune URL, les utilisateurs ne peuvent accéder à aucun 
 ## <a name="specific-websites-only"></a>Sites web spécifiques uniquement
 
 1. Dans le volet **Filtre de contenu web**, configurez les paramètres suivants pour chaque site web que vous souhaitez autoriser :
-    - **URL** : entrez l’URL du site web que vous souhaitez autoriser, par exemple, **http://www.contoso.com**.
+    - **URL** - Entrez l’URL du site web à autoriser, par exemple **http://www.contoso.com**.
     - **Chemin de signet** : entrez le chemin d’accès où vous voulez stocker le signet, par exemple **Contoso/Business Apps**. Si vous n’ajoutez pas de chemin, le signet est ajouté au dossier de signets par défaut sur l’appareil.
     - **Titre** : entrez un titre descriptif pour le signet.
 2. Cliquez sur **Ajouter** après avoir entré les informations pour chaque site web.
 3. Lorsque vous avez terminé, cliquez sur **OK**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Les URL suivantes sont ajoutées automatiquement par Intune.
 > - www.microsoft.com
 > - www.microsoft.net

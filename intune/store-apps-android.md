@@ -1,34 +1,34 @@
 ---
-title: "Guide pratique pour ajouter des applications Android Store à Microsoft Intune"
-titleSuffix: 
-description: "Découvrez plus d’informations sur l’ajout d’applications du store Android dans Microsoft Intune."
-keywords: 
+title: Guide pratique pour ajouter des applications Android Store à Microsoft Intune
+titleSuffix: ''
+description: Découvrez plus d’informations sur l’ajout d’applications du store Android dans Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications Android Store à Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Avant d’affecter une application à un appareil ou un groupe d’utilisateurs, vous devez d’abord l’ajouter à Microsoft Intune. Les étapes suivantes permettent d’ajouter une application du store Android à Intune à partir du portail Azure.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Applications mobiles**.
 4. Dans la charge de travail **Applications mobiles**, choisissez **Applications** sous la section **Gérer**.
 5. Au-dessus de la liste des applications, choisissez **Ajouter**.
@@ -52,6 +52,6 @@ Avant d’affecter une application à un appareil ou un groupe d’utilisateurs,
 
 L’application créée s’affiche dans la liste des applications, où vous pouvez l’affecter aux groupes de votre choix. 
 
-##<a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Guide pratique pour affecter des applications à des groupes](apps-deploy.md)

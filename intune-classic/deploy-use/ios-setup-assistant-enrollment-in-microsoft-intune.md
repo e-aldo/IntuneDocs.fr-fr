@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c68f196ea268e61a175f643244efb855f46eaece
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Inscription des appareils iOS avec Apple Configurator à l’aide de l’Assistant de configuration
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune prend en charge l’inscription d’appareils iOS d’entreprise à l’aide d’[Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) s’exécutant sur un ordinateur Mac. Ce processus réinitialise l’appareil aux paramètres d’usine et le prépare à exécuter l’Assistant de configuration, en installant les stratégies de l’entreprise pour le nouvel utilisateur de l’appareil.
 
@@ -59,7 +59,7 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), accédez à **Stratégie** &gt; **Inscription d’appareil professionnel**, puis choisissez **Ajouter**.
 
-  ![Création d’un profil d’inscription d’appareils](../media/pol-sa-corp-enroll.png)
+   ![Création d’un profil d’inscription d’appareils](../media/pol-sa-corp-enroll.png)
 
 2. Entrez les détails des profils d'appareils :
 
@@ -80,7 +80,7 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
    -  **Device Enrollment Program (DEP)**&mdash;Vous ne pouvez pas utiliser Apple Device Enrollment Program (DEP) avec l’inscription par le biais de l’Assistant de configuration. Vérifiez que ce commutateur est **désactivé**.
 
-3.  Choisissez **Enregistrer le profil** pour ajouter le profil.
+3. Choisissez **Enregistrer le profil** pour ajouter le profil.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Ajouter des appareils iOS à inscrire avec l’Assistant Configuration
 
@@ -90,29 +90,29 @@ Un profil d'inscription d'appareil définit les paramètres appliqués à un gro
 
    ![Boîte de dialogue Ajouter des appareils](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **Charger un fichier CSV qui contient les numéros de série**&mdash;Créez une liste de valeurs séparées par des virgules (.csv) de deux colonnes sans en-tête, limitée à 5 000 appareils ou à 5 Mo par fichier .csv.
+   - **Charger un fichier CSV qui contient les numéros de série**&mdash;Créez une liste de valeurs séparées par des virgules (.csv) de deux colonnes sans en-tête, limitée à 5 000 appareils ou à 5 Mo par fichier .csv.
 
-    |||
-    |-|-|
-    |&lt;Série 1&gt;|&lt;Détails de l’appareil 1&gt;|
-    |&lt;Série 2&gt;|&lt;Détails de l’appareil 2&gt;|
+     |||
+     |-|-|
+     |&lt;Série 1&gt;|&lt;Détails de l’appareil 1&gt;|
+     |&lt;Série 2&gt;|&lt;Détails de l’appareil 2&gt;|
 
-  Dans un éditeur de texte, ce fichier .csv s’affiche comme suit :
+   Dans un éditeur de texte, ce fichier .csv s’affiche comme suit :
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **Ajouter manuellement les détails des appareils** &mdash; Entrez le numéro de série et des remarques ou détails pour 15 appareils au maximum.
+   -  **Ajouter manuellement les détails des appareils** &mdash; Entrez le numéro de série et des remarques ou détails pour 15 appareils au maximum.
 
-  Dans le panneau **Passer en revue les appareils**, vous pouvez vérifier les numéros de série. Vous pouvez également décider s’il faut remplacer les **Détails** des numéros de série réimportés, ou vous pouvez décocher la case **Remplacer** pour conserver les détails actuels.
+   Dans le panneau **Passer en revue les appareils**, vous pouvez vérifier les numéros de série. Vous pouvez également décider s’il faut remplacer les **Détails** des numéros de série réimportés, ou vous pouvez décocher la case **Remplacer** pour conserver les détails actuels.
 
-  > [!NOTE]
-  > Dans la console Administrateur Intune, les administrateurs peuvent accepter les détails associés à partir d’un fichier CSV chargé et remplacer les détails existants de chaque numéro de série. Dans le nouveau portail Azure, vous pouvez uniquement remplacer les détails de tous les numéros de série ou ignorer les nouveaux détails de tous les numéros de série.
+   > [!NOTE]
+   > Dans la console Administrateur Intune, les administrateurs peuvent accepter les détails associés à partir d’un fichier CSV chargé et remplacer les détails existants de chaque numéro de série. Dans le nouveau portail Azure, vous pouvez uniquement remplacer les détails de tous les numéros de série ou ignorer les nouveaux détails de tous les numéros de série.
 
-  > [!NOTE]
-  > Si, par la suite, vous voulez supprimer des appareils d’entreprise de la gestion Intune, vous devrez peut-être accéder au groupe d’appareils **Par numéro de série iOS** sous **Appareils d’entreprise préinscrits** et supprimer le numéro de série des appareils dans Intune pour désactiver leur inscription. Si Intune effectue une procédure de récupération d’urgence pendant que vous supprimez des numéros de série ou aux environs de cette période, vous devez vérifier que seuls les numéros de série des appareils actifs sont présents dans ce groupe.
+   > [!NOTE]
+   > Si, par la suite, vous voulez supprimer des appareils d’entreprise de la gestion Intune, vous devrez peut-être accéder au groupe d’appareils **Par numéro de série iOS** sous **Appareils d’entreprise préinscrits** et supprimer le numéro de série des appareils dans Intune pour désactiver leur inscription. Si Intune effectue une procédure de récupération d’urgence pendant que vous supprimez des numéros de série ou aux environs de cette période, vous devez vérifier que seuls les numéros de série des appareils actifs sont présents dans ce groupe.
 
 2. Choisissez **Suivant**.
 
@@ -137,7 +137,7 @@ Spécifiez le profil à attribuer aux appareils ajoutés de la liste des profils
 
 Les appareils iOS sont connectés à l'ordinateur Mac et inscrits pour la gestion des appareils mobiles.
 
-1.  Sur un ordinateur Mac, ouvrez **Apple Configurator 2**. Dans la barre de menus, choisissez **Apple Configurator 2**, puis cliquez sur **Préférences**.
+1. Sur un ordinateur Mac, ouvrez **Apple Configurator 2**. Dans la barre de menus, choisissez **Apple Configurator 2**, puis cliquez sur **Préférences**.
 
    > [!WARNING]
    > Les paramètres d'usine des appareils sont rétablis pendant le processus d'inscription. En guise de bonne pratique, vous devez réinitialiser l’appareil et l’allumer. Les appareils doivent afficher l’écran **Hello** quand vous les connectez.
@@ -148,12 +148,12 @@ Les appareils iOS sont connectés à l'ordinateur Mac et inscrits pour la gestio
 
    Vous pouvez ignorer sans risque un avertissement indiquant « L’URL du serveur n’est pas vérifiée ». Pour continuer, cliquez sur **Suivant** jusqu’à ce que l’Assistant soit terminé.
 
-4.  Connectez les appareils mobiles iOS à l’ordinateur Mac à l’aide d’un adaptateur USB.
+4. Connectez les appareils mobiles iOS à l’ordinateur Mac à l’aide d’un adaptateur USB.
 
-    > [!WARNING]
-    > Les paramètres d'usine des appareils sont rétablis pendant le processus d'inscription. En guise de bonne pratique, vous devez réinitialiser l’appareil et l’allumer. Les appareils doivent afficher l’écran **Hello** quand vous lancez l’Assistant de configuration.
+   > [!WARNING]
+   > Les paramètres d'usine des appareils sont rétablis pendant le processus d'inscription. En guise de bonne pratique, vous devez réinitialiser l’appareil et l’allumer. Les appareils doivent afficher l’écran **Hello** quand vous lancez l’Assistant de configuration.
 
-5.  Choisissez **Préparer**. Dans le volet Prepare iOS Device (Préparer l’appareil iOS), sélectionnez **Manual** (Manuel), puis **Next** (Suivant).
+5. Choisissez **Préparer**. Dans le volet Prepare iOS Device (Préparer l’appareil iOS), sélectionnez **Manual** (Manuel), puis **Next** (Suivant).
 
 6. Dans le volet Enroll in MDM Server (Inscription dans un serveur MDM), sélectionnez le nom du serveur que vous avez créé, puis cliquez sur **Next** (Suivant).
 

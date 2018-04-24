@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab1e43d1cb66bdc6e0fc02324ffd1d8923e61174
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 085cca57365da0df9dd739c3a1b2b0c6dd6fded6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Android for Work dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Les paramètres de stratégie décrits dans cette rubrique s’appliquent aux appareils Android for Work.
 
 Si vous recherchez des informations sur d’autres plateformes, sélectionnez un des éléments suivants :
 > [!div class="op_single_selector"]
-- [Paramètre de stratégie de conformité pour Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Paramètres de stratégie de conformité pour les appareils iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Paramètres de stratégie de conformité pour les appareils Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Paramètre de stratégie de conformité pour Android](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Paramètres de stratégie de conformité pour les appareils iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Paramètres de stratégie de conformité pour les appareils Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>Paramètres de sécurité système
 ### <a name="password"></a>Mot de passe
@@ -39,7 +39,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 
 -  **Longueur minimale du mot de passe** : spécifie le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l’utilisateur.
 
-- **Qualité du mot de passe :** ce paramètre détecte si les critères de mot de passe que vous spécifiez sont configurés sur l’appareil. Activez ce paramètre pour que les utilisateurs configurent certains critères de mot de passe pour les appareils Android. Choisissez parmi :
+- **Qualité du mot de passe :** ce paramètre détecte si les critères de mot de passe que vous spécifiez sont configurés sur l’appareil. Activez ce paramètre pour que les utilisateurs configurent certains critères de mot de passe pour les appareils Android. Choisissez parmi :
   -   **Sécurité biométrique faible**
   - **Obligatoire**
   -   **Au moins numérique**
@@ -47,7 +47,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
   -   **Au moins alphanumérique**
   -   **Alphanumérique avec symboles**
 
-- **Minutes d’inactivité avant demande du mot de passe :** Spécifie la durée d’inactivité au terme de laquelle l’utilisateur doit entrer à nouveau son mot de passe.
+- **Minutes d’inactivité avant demande du mot de passe** spécifie la durée d’inactivité au terme de laquelle l’utilisateur doit entrer à nouveau son mot de passe.
 
 - **Expiration du mot de passe (jours) :** sélectionnez le nombre de jours avant que le mot de passe de l'utilisateur n'expire et qu'il ne doive en créer un autre.
 
@@ -70,7 +70,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez un
 - **Niveau minimal du correctif de sécurité Android** : Utilisez ce paramètre pour spécifier le niveau de correctif Android minimal.  Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée au format suivant : AAAA-MM-JJ.
 - **Exiger l’activation de la protection de l’appareil contre les menaces** : Utilisez ce paramètre pour sélectionner l’évaluation des risques de la solution de protection de l’appareil contre les menaces comme condition de conformité. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
 
-  - **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut. Cela signifie que l’appareil ne peut avoir aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
+  - **Aucun (sécurisé)**  : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
   - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
   - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées sur l’appareil, il est déterminé comme non conforme.
   - **Élevé** : cette option est la moins sécurisée. Les menaces de tout niveau sont fondamentalement autorisées. Cette option peut être utile uniquement si vous utilisez cette solution pour créer des rapports.

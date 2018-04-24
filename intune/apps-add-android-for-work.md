@@ -1,29 +1,29 @@
 ---
-title: "Affectation d’applications à des appareils Android for Work"
+title: Affectation d’applications à des appareils Android for Work
 titlesuffix: Microsoft Intune
-description: "Découvrez comment synchroniser et assigner des applications à des appareils Android for Work à partir du magasin Google Play for Work."
-keywords: 
+description: Découvrez comment synchroniser et assigner des applications à des appareils Android for Work à partir du magasin Google Play for Work.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Guide pratique pour affecter des applications sur des appareils Android for Work avec Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work est un programme pour les appareils Android. Toutes les applications que vous installez sur Android for Work proviennent du Google Play for Work Store. L’affectation d’applications sur des appareils Android for Work diffère de leur affectation sur des appareils Android standard. Vous vous connectez au Store, recherchez les applications souhaitées et les approuvez. L’application apparaît ensuite dans le nœud **Applications sous licence** du portail Azure. À partir de là, vous pouvez gérer l’affectation de l’application de la même façon que pour toute autre application.
 
@@ -43,7 +43,7 @@ Vérifiez que vous avez configuré Intune et Android for Work pour qu’ils coll
 
     ![Exemple : approuver l’application dans le magasin Google Play for Work](media/approve.png)</br>
     
-  Une fenêtre de l’application s’ouvre, vous demandant d’accorder des autorisations pour que l’application puisse effectuer diverses opérations. 
+   Une fenêtre de l’application s’ouvre, vous demandant d’accorder des autorisations pour que l’application puisse effectuer diverses opérations. 
 
 4. Sélectionnez **Approuver** pour accepter les autorisations des applications et continuer.</br>
 
@@ -60,7 +60,7 @@ Vérifiez que vous avez configuré Intune et Android for Work pour qu’ils coll
 Si vous avez approuvé une application à partir du Store et qu’elle ne trouve pas dans le nœud **Applications sous licence** de la charge de travail **Applications mobiles**, forcez une synchronisation immédiate en procédant comme suit :
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Applications mobiles**.
 4. Dans la charge de travail **Applications mobiles**, choisissez **Android for Work** dans la section **Installation**.
 5. Dans le volet Android for Work, choisissez **Synchroniser**. La page met à jour l’heure et l’état de la dernière synchronisation.
@@ -79,7 +79,7 @@ Lorsqu’un développeur d’applications publie une nouvelle version d’une ap
 
 Consultez régulièrement la console Google Play gérée pour y rechercher l’existence de nouvelles autorisations. Vous pouvez configurer Google Play pour vous envoyer à vous-même ou à d’autres un message électronique lorsque de nouvelles autorisations sont requises pour une application approuvée. Si vous affectez une application et que vous constatez qu’elle n’est pas installée sur les appareils, recherchez de nouvelles autorisations en procédant comme suit :
 
-1. Consultez la page http://play.google.com/work
+1. Accédez à http://play.google.com/work.
 2. Connectez-vous avec le compte Google que vous avez utilisé pour publier et approuver les applications.
 3. Consultez l’onglet **Mises à jour** pour savoir si des applications nécessitent une mise à jour.  Les applications répertoriées nécessitent de nouvelles autorisations et ne sont pas affectées avant l’application de ces autorisations.  
 

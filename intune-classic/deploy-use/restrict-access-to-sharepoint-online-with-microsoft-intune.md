@@ -1,29 +1,29 @@
 ---
-title: "Protéger SharePoint Online"
-description: "Protégez et contrôlez l’accès aux données de l’entreprise sur SharePoint Online en utilisant l’accès conditionnel."
-keywords: 
+title: Protéger SharePoint Online
+description: Protégez et contrôlez l’accès aux données de l’entreprise sur SharePoint Online en utilisant l’accès conditionnel.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f86508d9b187e0026a74c4e82e94cdd5a4d29c3a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2b7285c272efac8eab406393b0b896795fa5d8ed
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Protéger l’accès à SharePoint Online avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilisez l’accès conditionnel Microsoft Intune pour contrôler l’accès aux fichiers situés sur SharePoint Online.
 L’accès conditionnel comprend deux composants :
@@ -68,7 +68,7 @@ Si une condition n’est pas remplie, l’utilisateur reçoit l’un des message
 Les éléments suivants sont pris en charge :
 - iOS 8.0 et versions ultérieures
 - Android 4.0 et versions ultérieures, Samsung Knox Standard 4.0 ou versions ultérieures
-- Windows Phone 8.1 et versions ultérieures
+- Windows Phone 8.1 et versions ultérieures
 
 Vous pouvez protéger l’accès à SharePoint Online quand les appareils **iOS** et **Android** y accèdent à partir d’un navigateur. L’accès est autorisé uniquement à partir des navigateurs pris en charge sur les appareils conformes :
 * Safari (iOS)
@@ -81,16 +81,16 @@ Vous pouvez protéger l’accès à SharePoint Online quand les appareils **iOS*
 Les éléments suivants sont pris en charge :
 - Windows 8.1 et versions ultérieures (quand les PC sont inscrits auprès de Microsoft Intune)
 - Windows 7.0, Windows 8.1 ou Windows 10 (quand les PC sont joints au domaine)
-> [!NOTE]
->Pour utiliser l’accès conditionnel avec des PC Windows 10, vous devez mettre à jour ces PC avec la Mise à jour anniversaire Windows 10.
+  > [!NOTE]
+  >Pour utiliser l’accès conditionnel avec des PC Windows 10, vous devez mettre à jour ces PC avec la Mise à jour anniversaire Windows 10.
 
   - Vous devez configurer les PC joints à un domaine pour qu’ils [s’inscrivent automatiquement](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) dans Azure Active Directory. Le service d’inscription Azure Active Directory pour appareils sera activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service d’inscription d’appareils AD FS ne verront pas les appareils inscrits dans l’annuaire Active Directory local.
 
   - Si la stratégie est définie pour exiger l’appartenance à un domaine et que le PC n’est pas joint à un domaine, un message invitant l’utilisateur à contacter l’administrateur informatique s’affiche.
 
   - Si la stratégie définie exige l’appartenance à un domaine ou la conformité et que le PC ne remplit aucune de ces conditions, un message contenant des instructions sur la façon d’installer l’application Portail d’entreprise et d’inscrire l’appareil s’affiche.
-  >[!NOTE]
-  >L’accès conditionnel n’est pas pris en charge sur les PC qui exécutent le client Intune.
+    >[!NOTE]
+    >L’accès conditionnel n’est pas pris en charge sur les PC qui exécutent le client Intune.
 
 [L’authentification moderne Office 365 doit être activée](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) et toutes les mises à jour Office les plus récentes doivent être installées.
 
@@ -132,24 +132,24 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 > Vous pouvez également créer une stratégie d’accès conditionnel pour des appareils Intune dans la console de gestion Azure AD (la stratégie est appelée **stratégie d’accès conditionnel basée sur les appareils** dans Azure AD). En outre, vous pouvez créer d’autres stratégies d’accès conditionnel telles que l’authentification multifacteur. Vous pouvez aussi définir des stratégies d’accès conditionnel pour des applications d’entreprise tierces prises en charge par Azure AD, comme Salesforce et Box. Pour plus d’informations, consultez [Comment définir la stratégie d’accès conditionnel en fonction de l’appareil Azure Active Directory pour contrôler l’accès aux applications connectées Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
-1.  Dans la [Console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie SharePoint Online**.
-![Capture d’écran de la page de stratégie SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
+1. Dans la [Console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie SharePoint Online**.
+   ![Capture d’écran de la page de stratégie SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
 
-2.  Sélectionnez **Activer la stratégie d’accès conditionnel pour SharePoint Online**.
+2. Sélectionnez **Activer la stratégie d’accès conditionnel pour SharePoint Online**.
 
-3.  Sous **Accès aux applications**, vous pouvez choisir d’appliquer la stratégie d’accès conditionnel à :
+3. Sous **Accès aux applications**, vous pouvez choisir d’appliquer la stratégie d’accès conditionnel à :
 
-    -   **Toutes les plateformes**
+   - **Toutes les plateformes**
 
-        Cette opération exige que tous les appareils utilisés pour accéder à **SharePoint Online** soient inscrits dans Intune et conformes aux stratégies. Toute application cliente qui utilise l’**authentification moderne** est soumise à la stratégie d’accès conditionnel. Si la plateforme n’est pas prise en charge actuellement par Intune, l’accès à **SharePoint Online** est bloqué.
+     Cette opération exige que tous les appareils utilisés pour accéder à **SharePoint Online** soient inscrits dans Intune et conformes aux stratégies. Toute application cliente qui utilise l’**authentification moderne** est soumise à la stratégie d’accès conditionnel. Si la plateforme n’est pas prise en charge actuellement par Intune, l’accès à **SharePoint Online** est bloqué.
 
-        Si vous sélectionnez l’option **Toutes plateformes**, Azure Active Directory applique cette stratégie à toutes les demandes d’authentification, quelle que soit la plateforme signalée par l’application cliente. Toutes les plateformes doivent être inscrites et être conformes, sauf dans les cas suivants :
-        *   Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
-        * Plateformes non prises en charge comme Mac. Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
+     Si vous sélectionnez l’option **Toutes plateformes**, Azure Active Directory applique cette stratégie à toutes les demandes d’authentification, quelle que soit la plateforme signalée par l’application cliente. Toutes les plateformes doivent être inscrites et être conformes, sauf dans les cas suivants :
+     *   Les appareils Windows doivent être inscrits et conformes et/ou être joints à un domaine avec un annuaire Active Directory local.
+     * Plateformes non prises en charge comme Mac. Toutefois, les applications utilisant l’authentification moderne issues de ces plateformes sont toujours bloquées.
 
-    -   **Plateformes spécifiques**
+   - **Plateformes spécifiques**
 
-         La stratégie d’accès conditionnel s’applique à toutes les applications clientes qui utilisent l’authentification moderne sur les plateformes que vous spécifiez.
+      La stratégie d’accès conditionnel s’applique à toutes les applications clientes qui utilisent l’authentification moderne sur les plateformes que vous spécifiez.
 
      Pour les PC Windows, ceux-ci doivent être joints à un domaine ou inscrits auprès d’Intune et être conformes. Vous pouvez définir les conditions suivantes :
 
@@ -157,28 +157,28 @@ Ensuite, configurez la stratégie de manière à restreindre l'accès à SharePo
 
      -   **Les appareils doivent être conformes** Choisissez cette option pour exiger que les PC soient inscrits auprès d’Intune et conformes. Si un PC n’est pas inscrit, un message contenant des instructions sur la procédure d’inscription à suivre s’affiche.
 
-4.   Sous **Accès du navigateur à SharePoint et à OneDrive Entreprise**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs est bloqué. Les restrictions de plateforme que vous avez sélectionnées pour Accès aux applications pour OneDrive s’appliquent également ici.
+4. Sous **Accès du navigateur à SharePoint et à OneDrive Entreprise**, vous pouvez choisir d’autoriser l’accès à Exchange Online uniquement par le biais des navigateurs pris en charge : Safari (iOS) et Chrome (Android). L’accès à partir d’autres navigateurs est bloqué. Les restrictions de plateforme que vous avez sélectionnées pour Accès aux applications pour OneDrive s’appliquent également ici.
 
-  Sur les appareils **Android**, les utilisateurs doivent activer l’accès du navigateur. Pour ce faire, l’utilisateur doit choisir l’option **Activer l’accès du navigateur** sur l’appareil inscrit comme suit :
-  1.    Ouvrez l’application **Portail d’entreprise**.
-  2.    Accédez à la page **Paramètres** à partir des trois points (...) ou du bouton de menu matériel.
-  3.    Appuyer sur le bouton **Activer l’accès du navigateur**.
-  4.    Dans le navigateur Chrome, se déconnecter d’Office 365 et redémarrer Chrome.
+   Sur les appareils **Android**, les utilisateurs doivent activer l’accès du navigateur. Pour ce faire, l’utilisateur doit choisir l’option **Activer l’accès du navigateur** sur l’appareil inscrit comme suit :
+   1.    Ouvrez l’application **Portail d’entreprise**.
+   2.    Accédez à la page **Paramètres** à partir des trois points (...) ou du bouton de menu matériel.
+   3.    Appuyer sur le bouton **Activer l’accès du navigateur**.
+   4.    Dans le navigateur Chrome, se déconnecter d’Office 365 et redémarrer Chrome.
 
-  Sur les plateformes **iOS** et **Android**, pour identifier l’appareil qui est utilisé pour accéder au service, Azure Active Directory délivre un certificat TLS (Transport Layer Security) à l’appareil. L’appareil affiche le certificat avec une invite demandant à l’utilisateur de sélectionner le certificat, comme indiqué dans les captures d’écran suivantes. L’utilisateur doit sélectionner ce certificat pour pouvoir utiliser le navigateur.
+   Sur les plateformes **iOS** et **Android**, pour identifier l’appareil qui est utilisé pour accéder au service, Azure Active Directory délivre un certificat TLS (Transport Layer Security) à l’appareil. L’appareil affiche le certificat avec une invite demandant à l’utilisateur de sélectionner le certificat, comme indiqué dans les captures d’écran suivantes. L’utilisateur doit sélectionner ce certificat pour pouvoir utiliser le navigateur.
 
-  **iOS**
+   **iOS**
 
-  ![Capture d’écran de l’invite de certificat sur un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![Capture d’écran de l’invite de certificat sur un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+   **Android**
 
-  ![Capture d’écran de l’invite de certificat sur un appareil Android](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  Sous **Groupes ciblés**, choisissez **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory auxquels la stratégie s’applique. Vous pouvez cibler cette stratégie sur tous les utilisateurs ou seulement sur un groupe d’utilisateurs donné.
+   ![Capture d’écran de l’invite de certificat sur un appareil Android](../media/mdm-browser-ca-android-cert-prompt.png)
+5. Sous **Groupes ciblés**, choisissez **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory auxquels la stratégie s’applique. Vous pouvez cibler cette stratégie sur tous les utilisateurs ou seulement sur un groupe d’utilisateurs donné.
 
-6.  Sous **Groupes exemptés**, vous pouvez éventuellement choisir **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory exempts de cette stratégie.
+6. Sous **Groupes exemptés**, vous pouvez éventuellement choisir **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory exempts de cette stratégie.
 
-7.  Quand vous avez terminé, choisissez **Enregistrer**.
+7. Quand vous avez terminé, choisissez **Enregistrer**.
 
 La stratégie d’accès conditionnel prend effet immédiatement. Il est donc inutile de la déployer.
 

@@ -1,29 +1,29 @@
 ---
-title: "Surveiller la conformité des appareils"
+title: Surveiller la conformité des appareils
 titlesuffix: Microsoft Intune
-description: "Apprenez à surveiller la conformité des appareils."
-keywords: 
+description: Apprenez à surveiller la conformité des appareils.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b363e074b1b0652a81d56c68e28cf11220adfa56
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-device-compliance-in-intune"></a>Surveiller la conformité des appareils dans Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Vous pouvez afficher le résumé de l’état de vos **profils de conformité** dans le panneau **Vue d'ensemble**.
 Vous pouvez cliquer de manière interactive sur les graphiques pour explorer les détails. Si plusieurs profils de conformité sont configurés, vous pouvez afficher l’état des stratégies dans le panneau des stratégies sous **Gérer** > **Rapports**.

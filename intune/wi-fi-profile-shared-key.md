@@ -1,29 +1,33 @@
 ---
-title: "Créer un profil Wi-Fi avec une clé prépartagée - Microsoft Intune - Azure | Micrososft Docs"
-description: "Utiliser un profil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée et obtenir un exemple de code XML pour les profils Wi-Fi basé sur Android, Windows et EAP dans Microsoft Intune"
-keywords: 
+title: Créer un profil Wi-Fi avec une clé prépartagée - Microsoft Intune - Azure | Micrososft Docs
+description: Utiliser un profil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée et obtenir un exemple de code XML pour les profils Wi-Fi basé sur Android, Windows et EAP dans Microsoft Intune
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Utiliser un profil d’appareil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée - Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Les clés prépartagées (PSK) servent généralement à authentifier les utilisateurs dans les réseaux Wi-Fi ou réseaux locaux sans fil. Avec Intune, vous pouvez créer un profil Wi-Fi à l’aide d’une clé prépartagée. Pour créer le profil, utilisez la fonctionnalité **Profils d’appareil personnalisés** dans Intune. Cet article contient également quelques exemples indiquant comment créer un profil Wi-Fi basé sur EAP.
+
+> [!IMPORTANT]
+>- L’utilisation d’une clé prépartagée avec Windows 10 entraîne l’apparition d’une erreur de correction dans Intune. Quand cela se produit, le profil Wi-Fi est correctement affecté à l’appareil et fonctionne comme prévu.
+>- Si vous exportez un profil Wi-Fi incluant une clé prépartagée, vérifiez que le fichier est protégé. La clé est au format texte brut, vous êtes donc responsable de sa protection.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -46,15 +50,15 @@ Vous pouvez créer un profil personnalisé avec une clé prépartagée pour Andr
 
    d. **OMA-URI** :
 
-    - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > Veillez à inclure le point au début.
+     > [!NOTE]
+     > Veillez à inclure le point au début.
 
-    Le SSID est l’identificateur SSID pour lequel vous créez la stratégie. Par exemple, entrez `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     Le SSID est l’identificateur SSID pour lequel vous créez la stratégie. Par exemple, entrez `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Champ de valeur** correspond à l’endroit où vous collez le code XML. Consultez les exemples dans cet article. Mettez à jour chaque valeur pour correspondre à vos paramètres réseau. La section Commentaires du code inclut certains pointeurs.
+   e. **Champ de valeur** correspond à l’endroit où vous collez le code XML. Consultez les exemples dans cet article. Mettez à jour chaque valeur pour correspondre à vos paramètres réseau. La section Commentaires du code inclut certains pointeurs.
 3. Sélectionnez **OK**, enregistrez et affectez la stratégie.
 
     > [!NOTE]
@@ -203,12 +207,12 @@ Vous pouvez également créer un fichier XML à partir d’une connexion Wi-Fi e
 
 1. Sur un ordinateur connecté ou récemment connecté au réseau sans fil, ouvrez le dossier `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`.
 
-  Il est préférable d’utiliser un ordinateur qui n’est pas connecté à plusieurs réseaux sans fil. Dans le cas contraire, vous devrez parcourir chaque profil pour trouver celui qui convient.
+   Il est préférable d’utiliser un ordinateur qui n’est pas connecté à plusieurs réseaux sans fil. Dans le cas contraire, vous devrez parcourir chaque profil pour trouver celui qui convient.
 
 2. Recherchez dans les fichiers XML pour trouver celui dont le nom est correct.
 3. Une fois que vous avez localisé le fichier XML approprié, copiez et collez le code XML dans le champ **Données** de la page des paramètres OMA-URI.
 
-## <a name="best-practices"></a>Méthodes conseillées
+## <a name="best-practices"></a>Bonnes pratiques
 - Avant de déployer un profil Wi-Fi avec une clé prépartagée, vérifiez que l’appareil peut se connecter directement au point de terminaison.
 
 - Lors de la rotation des clés (mots de passe ou phrases secrètes), prévoyez un temps d’arrêt et planifiez vos déploiements en conséquence. Il est préférable d’envoyer les nouveaux profils Wi-Fi en dehors des horaires de travail. Avertissez également les utilisateurs que la connectivité peut être impactée.

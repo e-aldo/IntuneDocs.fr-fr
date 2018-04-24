@@ -1,29 +1,29 @@
 ---
-title: "Paramètres de stratégie de sécurité des appareils mobiles"
-description: "Utilisez Intune pour configurer une grande variété de paramètres que vous pouvez déployer sur les appareils gérés de votre organisation."
-keywords: 
+title: Paramètres de stratégie de sécurité des appareils mobiles
+description: Utilisez Intune pour configurer une grande variété de paramètres que vous pouvez déployer sur les appareils gérés de votre organisation.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Paramètres de stratégie de sécurité des appareils mobiles dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > Microsoft Intune propose désormais des stratégies de configuration distinctes pour chaque plateforme d’appareil. Ces stratégies contiennent les paramètres les plus récents que vous pouvez utiliser. Vous pouvez continuer à utiliser la stratégie de sécurité des appareils mobiles, tous les déploiements existants continueront de fonctionner. Toutefois, vous devez planifier la migration vers les nouvelles stratégies de configuration dès que possible, car la stratégie de sécurité des appareils mobiles sera bientôt supprimée.
@@ -48,32 +48,34 @@ Vous pouvez créer et déployer des stratégies de sécurité des appareils mobi
 
 ## <a name="security-settings"></a>Paramètres de sécurité
 
-|Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Non|Non|Oui|Oui|Oui|
-|**Type de mot de passe requis**<br /><br />Ce paramètre spécifie le type de mot de passe exigé, par exemple numérique uniquement ou alphanumérique.|Oui|Oui|Oui|Oui|Non|
-|**Type de mot de passe requis - Nombre minimum de jeux de caractères**<br /><br />Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Ce paramètre spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Toutefois, pour les appareils iOS, il spécifie le nombre de caractères de symbole devant être inclus dans le mot de passe.|Oui|Oui|Oui|Oui|Non|
-|**Longueur minimale du mot de passe**|Oui|Oui|Oui|Oui|Oui|
-|**Autoriser les mots de passe simples**<br /><br />Exemples de mots de passe simples : « 0000 » et « 1234 ».|Non|Non|Oui|Oui|Non|
-|**Nombre d’échecs de connexion répétée autorisé avant réinitialisation de l’appareil**|Oui|Oui|Oui|Oui|Oui|
-|**Minutes d’inactivité avant arrêt de l’écran**<sup>1</sup>|Oui|Oui|Oui|Oui|Oui|
-|**Expiration du mot de passe (jours)**|Oui|Oui|Oui|Oui|Oui|
-|**Mémoriser l’historique des mots de passe**|Oui|Oui|Oui|Oui|Oui|
-|**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Oui|Oui|Oui|Oui|Oui|
-|**Qualité du mot de passe**|Non|Non|Non|Non|Oui|
-|**Autoriser un mot de passe image et un code confidentiel**|Oui|Oui|Non|Non|Non|
-|**Minutes d’inactivité avant demande du mot de passe**|Non|Non|Non|Oui|Non|
-|**Autoriser le déverrouillage par empreinte digitale**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
+|                                                                                                                                                                                        Nom du paramètre                                                                                                                                                                                         | Windows 8.1 et Windows RT 8.1 | Windows RT | Windows Phone 8 et Windows Phone 8.1 |       iOS       | Android et Samsung KNOX Standard |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>Exiger un mot de passe pour déverrouiller des appareils mobiles</strong>                                                                                                                                                                 |               Non               |     Non     |                  Oui                  |       Oui       |                Oui                |
+|                                                                                                                 <strong>Type de mot de passe requis</strong><br /><br />Ce paramètre spécifie le type de mot de passe exigé, par exemple numérique uniquement ou alphanumérique.                                                                                                                 |              Oui               |    Oui     |                  Oui                  |       Oui       |                Non                 |
+| <strong>Type de mot de passe requis - Nombre minimum de jeux de caractères</strong><br /><br />Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Ce paramètre spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Toutefois, pour les appareils iOS, il spécifie le nombre de caractères de symbole devant être inclus dans le mot de passe. |              Oui               |    Oui     |                  Oui                  |       Oui       |                Non                 |
+|                                                                                                                                                                          <strong>Longueur minimale du mot de passe</strong>                                                                                                                                                                           |              Oui               |    Oui     |                  Oui                  |       Oui       |                Oui                |
+|                                                                                                                                               <strong>Autoriser les mots de passe simples</strong><br /><br />Exemples de mots de passe simples : « 0000 » et « 1234 ».                                                                                                                                                |               Non               |     Non     |                  Oui                  |       Oui       |                Non                 |
+|                                                                                                                                                  <strong>Nombre d’échecs de connexion répétée autorisé avant réinitialisation de l’appareil</strong>                                                                                                                                                   |              Oui               |    Oui     |                  Oui                  |       Oui       |                Oui                |
+|                                                                                                                                                         <strong>Minutes d’inactivité avant arrêt de l’écran</strong><sup>1</sup>                                                                                                                                                          |              Oui               |    Oui     |                  Oui                  |       Oui       |                Oui                |
+|                                                                                                                                                                         <strong>Expiration du mot de passe (jours)</strong>                                                                                                                                                                         |              Oui               |    Oui     |                  Oui                  |       Oui       |                Oui                |
+|                                                                                                                                                                         <strong>Mémoriser l’historique des mots de passe</strong>                                                                                                                                                                          |              Oui               |    Oui     |                  Oui                  |       Oui       |                Oui                |
+|                                                                                                                                              <strong>Mémoriser l'historique des mots de passe</strong> - <strong>Empêcher la réutilisation des mots de passe précédents</strong>                                                                                                                                              |              Oui               |    Oui     |                  Oui                  |       Oui       |                Oui                |
+|                                                                                                                                                                              <strong>Qualité du mot de passe</strong>                                                                                                                                                                              |               Non               |     Non     |                  Non                   |       Non        |                Oui                |
+|                                                                                                                                                                       <strong>Autoriser un mot de passe image et un code confidentiel</strong>                                                                                                                                                                       |              Oui               |    Oui     |                  Non                   |       Non        |                Non                 |
+|                                                                                                                                                             <strong>Minutes d’inactivité avant demande du mot de passe</strong>                                                                                                                                                              |               Non               |     Non     |                  Non                   |       Oui       |                Non                 |
+|                                                                                                                                                                          <strong>Autoriser le déverrouillage par empreinte digitale</strong>                                                                                                                                                                          |               Non               |     Non     |                  Non                   | iOS 7 et versions ultérieures |                Non                 |
+
 <sup>1</sup> Pour les appareils iOS, quand vous configurez les paramètres **Minutes d’inactivité avant arrêt de l’écran** et **Minutes d’inactivité avant demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
 
 Quand vous déployez une stratégie de longueur de mot de passe sur des appareils qui exécutent Windows RT, les utilisateurs sont obligés de réinitialiser leur mot de passe, même si leur mot de passe actuel est conforme aux exigences de la stratégie.
 
 ## <a name="encryption-settings"></a>Paramètres de chiffrement
 
-|Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup><br /><br />Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.|Oui|Non|Oui|Non|Oui|
-|**Exiger le chiffrement sur les cartes de stockage**<br /><br />Ce paramètre s’applique aux appareils gérés également par Exchange ActiveSync.|Non applicable|Non applicable|Non applicable <br />Les données des applications et données associées sont chiffrées automatiquement.|Non applicable|Oui|
+|                                                                                                                                     Nom du paramètre                                                                                                                                     | Windows 8.1 et Windows RT 8.1 | Windows RT |              Windows Phone 8 et Windows Phone 8.1              | iOS | Android et Samsung KNOX Standard |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>Exiger le chiffrement sur l’appareil mobile</strong><sup>1</sup><br /><br />Pour les appareils Windows Phone 8, affectez la valeur <strong>Oui</strong>.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre <strong>Exiger un mot de passe pour déverrouiller des appareils mobiles</strong>. |              Oui               |     Non     |                               Oui                               | Non  |                Oui                |
+|                                                                    <strong>Exiger le chiffrement sur les cartes de stockage</strong><br /><br />Ce paramètre s’applique aux appareils gérés également par Exchange ActiveSync.                                                                     |              Non applicable               |    Non applicable     | Non applicable <br />Les données des applications et données associées sont chiffrées automatiquement. | Non applicable |                Oui                |
+
 <sup>1</sup>Voici des informations supplémentaires pour les appareils qui exécutent Windows 8.1 :
 
 -   Pour appliquer le chiffrement à des appareils exécutant Windows 8.1, vous devez installer la [Mise à jour du client MDM pour Windows publiée en décembre 2014](http://support.microsoft.com/kb/3013816) sur chaque appareil.
@@ -97,12 +99,12 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Exiger les mises à jour automatiques**|Oui|Non|Non|Non|Non|
 |**Exiger les mises à jour automatiques – Classification minimale des mises à jour à installer automatiquement**<br /><br />Choisissez la classification des mises à jour à installer automatiquement :<br /><br />- **Important**. Installe toutes les mises à jour classifiées comme importantes.<br /><br />- **Recommandé**. Installe toutes les mises à jour classées comme importantes ou recommandées.|Oui|Non|Non|Non|Non|
-|**Autoriser la capture d’écran**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX Standard uniquement)|
+|**Autoriser la capture d’écran**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX Standard uniquement)|
 |**Autoriser le centre de contrôle sur l’écran verrouillé**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
 |**Autoriser l’affichage des notifications sur l’écran verrouillé**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
 |**Autoriser l’affichage du mode Aujourd’hui sur l’écran verrouillé**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
 |**Contrôle de compte d'utilisateur**|Oui|Non|Non|Non|Non|
-|**Autoriser la soumission des données de diagnostic**|Oui|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX Standard uniquement)|
+|**Autoriser la soumission des données de diagnostic**|Oui|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX Standard uniquement)|
 |**Autoriser les certificats TLS non autorisés**|Non|Non|Non|Oui|Non|
 |**Autoriser le logiciel de portefeuille personnel lors du verrouillage**|Non|Non|Non|Oui|Non|
 |**Autoriser la réinitialisation aux paramètres d’usine**|Non|Non|Non|Non|Oui (Samsung KNOX Standard uniquement)|
@@ -140,7 +142,7 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Autoriser le navigateur web**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX Standard uniquement)|
+|**Autoriser le navigateur web**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX Standard uniquement)|
 |**Autoriser le remplissage automatique**|Oui|Non|Non|Oui|Oui (Samsung KNOX Standard uniquement)|
 |**Autoriser le bloqueur de fenêtres publicitaires**|Oui|Non|Non|Oui|Oui (Samsung KNOX Standard uniquement)|
 |**Autoriser les cookies**|Non|Non|Non|Oui|Oui (Samsung KNOX Standard uniquement)|
@@ -161,7 +163,7 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Autoriser la boutique d’applications**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX Standard uniquement)|
+|**Autoriser la boutique d’applications**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui (Samsung KNOX Standard uniquement)|
 |**Demander un mot de passe pour accéder à la boutique d’applications**|Non|Non|Non|Oui|Non|
 |**Autoriser les achats dans l’application**|Non|Non|Non|Oui|Non|
 |**Autoriser les documents gérés dans d’autres applications non gérées**|Non|Non|Non|iOS 7 et versions ultérieures|Non|
@@ -181,7 +183,7 @@ Quand vous déployez une stratégie de longueur de mot de passe sur des appareil
 
 |Nom du paramètre|Windows 8.1 et Windows RT 8.1|Windows RT|Windows Phone 8 et Windows Phone 8.1|iOS|Android et Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Autoriser l’appareil photo**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui|
+|**Autoriser l’appareil photo**|Non|Non|Windows Phone 8.1 uniquement|Oui|Oui|
 |**Autoriser le stockage amovible**|Non|Non|Oui|Non|Oui (Samsung KNOX Standard uniquement)|
 |**Autoriser le Wi-Fi**|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX Standard uniquement)|
 |**Autoriser la connexion Wi-Fi**|Non|Non|Windows Phone 8.1 uniquement|Non|Oui (Samsung KNOX Standard uniquement)|

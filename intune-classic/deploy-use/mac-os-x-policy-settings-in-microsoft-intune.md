@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: afc5e32cd2db5755ad6fb570aabae27c4d23e827
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de configuration Mac OS X dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils Mac OS X. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
 
@@ -59,14 +59,15 @@ Dans la liste **Applications conformes &amp; non conformes pour Mac OS X**, ac
 >
 > Intune vous permet de vous signaler les appareils comportant des applications non conformes. Cela ne bloque pas l’installation ou ne supprime pas les applications non conformes.
 
-|Nom du paramètre|Détails|
-|----------------|---------------|
-|**Signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications Mac OS X que les utilisateurs ne sont pas autorisés à installer. Si les utilisateurs installent l’une de ces applications, les **rapports d’applications non conformes** le signalent.|
-|**Signaler une non-conformité quand les utilisateurs installent les applications non listées**|Affiche les applications Mac OS X que les utilisateurs sont autorisés à installer. Si les utilisateurs installent d’autres applications, les **rapports d’applications non conformes** le signalent.|
-|**Ajouter**|Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, éventuellement l’éditeur et l’ID de bundle de l’application. **Astuce :** Pour rechercher l’ID de bundle d’une application, effectuez les étapes suivantes sur un ordinateur Mac où l’application est installée :<ol><li>Ouvrez le dossier dans lequel l’application est installée (par exemple, **/Applications**).</li><li>Sélectionnez le bundle *&lt;Nom de l’application&gt;***.app** et choisissez **Afficher le contenu du package**.</li><li>Ouvrez le fichier **Info.plist**.</li><li>Vérifiez la valeur associée à la clé **CFBundleIdentifier**.</li></ol>Le format de l’ID de bundle est le suivant : **com.contoso.nomapp**.|
-|**Importer des applications**|Importe une liste d’applications que vous avez spécifiées dans un fichier de valeurs séparées par des virgules. Dans le fichier, utilisez le format suivant : nom de l’application, éditeur, ID du bundle d’applications.|
-|**Éditer**|Vous permet de modifier le nom, l’éditeur et l’ID du bundle d’applications pour l’application sélectionnée.|
-|**Supprimer**|Supprime l’application sélectionnée dans la liste.|
+|                                    Nom du paramètre                                    |                                                                                                                                                                                                                                                                                                                                                     Détails                                                                                                                                                                                                                                                                                                                                                      |
+|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      <strong>Signaler une non-conformité quand les utilisateurs installent les applications listées</strong>      |                                                                                                                                                                                                                                                                    Répertorie les applications Mac OS X que les utilisateurs ne sont pas autorisés à installer. Si les utilisateurs installent l’une de ces applications, les <strong>rapports d’applications non conformes</strong> le signalent.                                                                                                                                                                                                                                                                    |
+| <strong>Signaler une non-conformité quand les utilisateurs installent les applications non listées</strong> |                                                                                                                                                                                                                                                                       Affiche les applications Mac OS X que les utilisateurs sont autorisés à installer. Si les utilisateurs installent d’autres applications, les <strong>rapports d’applications non conformes</strong> le signalent.                                                                                                                                                                                                                                                                        |
+|                                <strong>Ajouter</strong>                                | Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, éventuellement l’éditeur et l’ID d’offre groupée de l’application. <strong>Astuce :</strong> Pour rechercher l’ID d’offre groupée d’une application, effectuez les étapes suivantes sur un ordinateur Mac où l’application est installée :<ol><li>Ouvrez le dossier dans lequel l’application est installée (par exemple, <strong>/Applications</strong>).</li><li>Sélectionnez l’offre groupée <em>&lt;Nom application&gt;</em><strong>.app</strong> et choisissez l’option <strong>Afficher le contenu du package</strong>.</li><li>Ouvrez le fichier <strong>Info.plist</strong>.</li><li>Vérifiez la valeur associée à la clé <strong>CFBundleIdentifier</strong>.</li></ol>Le format de l’ID d’offre groupée est le suivant : <strong>com.contoso.nomapp</strong>. |
+|                            <strong>Importer des applications</strong>                            |                                                                                                                                                                                                                                                                                Importe une liste d’applications que vous avez spécifiées dans un fichier de valeurs séparées par des virgules. Dans le fichier, utilisez le format suivant : nom de l’application, éditeur, ID de l’offre groupée d’applications.                                                                                                                                                                                                                                                                                 |
+|                               <strong>Éditer</strong>                                |                                                                                                                                                                                                                                                                                                                         Vous permet de modifier le nom, l’éditeur et l’ID de l’offre groupée d’applications pour l’application sélectionnée.                                                                                                                                                                                                                                                                                                                         |
+|                              <strong>Supprimer</strong>                               |                                                                                                                                                                                                                                                                                                                                      Supprime l’application sélectionnée dans la liste.                                                                                                                                                                                                                                                                                                                                      |
+
 > [!TIP]
 > Pour plus d’informations sur les rapports Intune, consultez [Présentation des opérations Microsoft Intune à l’aide de rapports](understand-microsoft-intune-operations-by-using-reports.md).
 
@@ -98,7 +99,7 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer
 |Nom du paramètre|Détails|
     |----------------|--------------------|
     |**Nom**|Affectez un nom unique à la stratégie personnalisée Mac OS X pour vous aider à l’identifier dans la console Intune.|
-    |**Description**|Fournissez une description générale de la stratégie personnalisée Mac OS X et d’autres informations pertinentes pour mieux la localiser.|
+    |**Description**|Fournissez une description générale de la stratégie personnalisée Mac OS X et d'autres informations pertinentes pour mieux la localiser.|
 
 
 ### <a name="custom-settings"></a>Configuration personnalisée
@@ -112,7 +113,7 @@ Avant de commencer, vous devez installer l’outil Apple Configurator et créer
 
 
 ### <a name="how-to-create-a-configuration-profile-file"></a>Création d’un fichier de profil de configuration
-Vous pouvez créer le fichier de profil de configuration utilisé par la stratégie personnalisée de deux manières :
+Vous pouvez créer le fichier de profil de configuration utilisé par la stratégie personnalisée de deux manières :
 
 -   Exportez le fichier (avec l'extension **.mobileconfig**) à partir de l'outil Apple Configurator.
 

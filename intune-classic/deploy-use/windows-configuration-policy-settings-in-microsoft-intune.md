@@ -1,29 +1,29 @@
 ---
-title: "Paramètres de stratégie Windows"
-description: "Utilisez la stratégie de configuration générale Windows (Windows 8.1 et versions ultérieures) Intune pour configurer les paramètres des appareils Windows 8 et Windows 8.1 inscrits."
-keywords: 
+title: Paramètres de stratégie Windows
+description: Utilisez la stratégie de configuration générale Windows (Windows 8.1 et versions ultérieures) Intune pour configurer les paramètres des appareils Windows 8 et Windows 8.1 inscrits.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie Windows dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et versions ultérieures) Microsoft Intune** pour configurer les paramètres suivants des appareils Windows 8, Windows 8.1 et Windows RT 8.1 inscrits :
 
@@ -49,9 +49,10 @@ Utilisez la stratégie de **configuration générale Windows (Windows 8.1 et ve
 
 ## <a name="encryption-settings"></a>Paramètres de chiffrement
 
-|Nom du paramètre|Détails|
-|----------------|-----|
-|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup>|Exige que les fichiers soient chiffrés sur le périphérique.|
+|                           Nom du paramètre                           |                     Détails                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>Exiger le chiffrement sur l’appareil mobile</strong><sup>1</sup> | Exige que les fichiers soient chiffrés sur le périphérique. |
+
 <sup>1</sup> Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 
 -   Pour appliquer le chiffrement à des appareils exécutant Windows 8.1, vous devez installer la [Mise à jour du client MDM pour Windows publiée en décembre 2014](http://support.microsoft.com/kb/3013816) sur chaque appareil.

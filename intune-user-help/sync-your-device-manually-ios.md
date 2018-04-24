@@ -1,42 +1,43 @@
 ---
-title: "Synchroniser manuellement votre appareil iOS | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Synchroniser manuellement votre appareil iOS | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/11/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9c9144fbb20842a9ac8148827b85ac49d23a3d6d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a896e4a86cbeaacc07bdb4a32606a67b0049e3e1
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="sync-your-ios-device-manually"></a>Synchroniser votre appareil iOS manuellement
 
-Le téléchargement d’une application à partir du portail d’entreprise peut parfois prendre trop de temps. Si cela vous arrive, vous pouvez tenter de synchroniser manuellement votre appareil. Cela signifie que vous demandez à votre appareil de réessayer d’obtenir les informations dont le téléchargement peut poser problème.
+Le téléchargement d’une application à partir du portail d’entreprise peut parfois prendre trop de temps. Si c’est votre cas, essayez de synchroniser manuellement votre appareil pour tenter d’obtenir les informations que votre appareil n’a pas pu télécharger.
 
 1. Ouvrez l'application Portail d'entreprise.
 
-2. Dans la section **Mes appareils**, choisissez l’appareil que vous utilisez actuellement. Il s’agit de la vignette de l’appareil à l’extrême gauche, qui comporte également une coche.
+2. Appuyez sur **Appareils**. Si vous avez plusieurs appareils, vous en voyez la liste. Choisissez l’appareil que vous utilisez actuellement. Si vous avez un seul appareil, accédez directement à l’écran de détails de l’appareil.
 
-    ![Écran de l’appareil avec la section Mes appareils](./media/ios-sync-1-comp-portal-apps.png)
+    ![Capture d’écran de l’écran Appareils montrant deux appareils. L’appareil en haut affiche le texte suivant : « Vous utilisez actuellement l’iPhone 6 Plus. »](/intune-user-help/media/ios_sync_1_CP_after_1804.png)
 
-3. Appuyez sur le bouton **Synchroniser** en bas à droite de l’écran.
+3. Appuyez sur **Vérifier les paramètres** pour synchroniser votre appareil. Une barre de chargement apparaît à l’écran jusqu’à la fin de la synchronisation.
 
-    ![Détails de l’appareil avec le bouton Synchroniser](./media/ios-sync-2-sync-button.png)
+    ![Capture d’écran des détails de l’appareil montrant l’heure de la dernière connexion à l’appareil et le lien Vérifier les paramètres.](/intune-user-help/media/ios_sync_2_CP_after_1804.png)  
 
-Une barre de chargement apparaît à l’écran et affiche le chargement jusqu’à ce que la synchronisation soit terminée.
+   ![Capture d’écran des détails de l’appareil montrant la barre de chargement après que l’utilisateur a cliqué sur Vérifier les paramètres.](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+

@@ -1,24 +1,24 @@
 ---
-title: "Stratégie"
+title: Stratégie
 titlesuffix: Microsoft Intune
-description: "Rubrique de référence sur la catégorie Stratégie de collections d’entités dans l’API d’entrepôt de données Intune."
-keywords: "Entrepôt de données Intune"
+description: Rubrique de référence sur la catégorie Stratégie de collections d’entités dans l’API d’entrepôt de données Intune.
+keywords: Entrepôt de données Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Informations de référence sur les entités de stratégie
 
@@ -157,10 +157,12 @@ PolicyKey|Clé de stratégie pouvant être jointe à la stratégie pour obtenir 
 
 Le tableau suivant répertorie le nombre d’utilisateurs, par jour, dans un état de réussite, d’attente, d’échec ou d’erreur. Le nombre reflète les données par profil de type de stratégie. Par exemple, si toutes les stratégies affectées à un utilisateur sont dans un état de réussite, le compteur de réussite augmente d’une unité pour ce jour-là. Si un utilisateur a deux profils affectés, l’un dans un état de réussite et l’autre dans un état d’erreur, l’utilisateur dans l’état d’erreur est pris en compte. L’entité PolicyUserActivity répertorie le nombre d’utilisateurs dans chaque état pour un jour donné au cours des 30 derniers jours.
 
-|Propriété  |Description  |Exemple  |
-|---------|---------|---------|
-|DateKey|Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données.|20160703|
-|Pending|Nombre d’appareils uniques en état d’attente.|123|
-|Réussi|Nombre d’appareils uniques en état de réussite.|12|
-PolicyKey|Clé de stratégie pouvant être jointe à la stratégie pour obtenir le nom de la stratégie.|Ligne de base Windows 10|
-|Erreur|Nombre d’appareils uniques en état d’erreur.|10|
+
+| Propriété  |                                         Description                                         |       Exemple       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | Clé de date qui indique quand l’enregistrement du profil de configuration d’appareil est enregistré dans l’entrepôt de données. |      20160703       |
+|  Pending  |                         Nombre d’appareils uniques en état d’attente.                          |         123         |
+| Réussi |                         Nombre d’appareils uniques en état de réussite.                          |         12          |
+| PolicyKey |                Clé de stratégie pouvant être jointe à la stratégie pour obtenir le nom de la stratégie.                 | Ligne de base Windows 10 |
+|   Erreur   |                          Nombre d’appareils uniques en état d’erreur.                           |         10          |
+

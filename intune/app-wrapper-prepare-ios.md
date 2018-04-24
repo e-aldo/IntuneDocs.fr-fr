@@ -1,28 +1,28 @@
 ---
-title: "Inclure des applications iOS dans un wrapper avec l’outil de création de package de restrictions d’application Intune"
-description: "Découvrez comment inclure vos applications iOS dans un wrapper sans changer leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles."
-keywords: 
+title: Inclure des applications iOS dans un wrapper avec l’outil de création de package de restrictions d’application Intune
+description: Découvrez comment inclure vos applications iOS dans un wrapper sans changer leur code. Préparez les applications afin d’appliquer des stratégies de gestion des applications mobiles.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications iOS pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Utilisez l’outil de création de package de restrictions d’application Microsoft Intune pour iOS pour activer les stratégies de protection des applications Intune sans modifier le code de l’application proprement dit.
 
@@ -98,48 +98,48 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
 4. Cliquez sur **Certificates, IDs & Profiles** (Certificats, identifiants et profils).
 
-  ![Portail des développeurs Azure](./media/iOS-signing-cert-1.png)
+   ![Portail des développeurs Azure](./media/iOS-signing-cert-1.png)
 
 5. Cliquez sur l’onglet ![signe plus du portail des développeurs Apple](./media/iOS-signing-cert-2.png) dans le coin supérieur droit pour ajouter un certificat iOS.
 
 6. Choisissez de créer un certificat **In-House and Ad Hoc** (interne et ad-hoc) sous **Production**.
 
-  ![Sélectionnez le certificat interne et ad-hoc](./media/iOS-signing-cert-3.png)
+   ![Sélectionnez le certificat interne et ad-hoc](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >Si vous n’envisagez pas de distribuer l’application et souhaitez uniquement la tester en interne, vous pouvez utiliser un certificat de développement d’applications iOS au lieu d’un certificat pour la production. Si vous utilisez un certificat de développement, vérifiez que le profil de configuration mobile fait référence aux appareils sur lesquels l’application doit être installée.
+   >[!NOTE]
+   >Si vous n’envisagez pas de distribuer l’application et souhaitez uniquement la tester en interne, vous pouvez utiliser un certificat de développement d’applications iOS au lieu d’un certificat pour la production. Si vous utilisez un certificat de développement, vérifiez que le profil de configuration mobile fait référence aux appareils sur lesquels l’application doit être installée.
 
 7. Cliquez sur **Next** (Suivant) en bas de la page.
 
 8. Lisez les instructions sur la création d’une **demande de signature de certificat (CSR)** à l’aide de l’application Trousseau d’accès sur votre ordinateur macOS.
 
-  ![Lisez les instructions pour créer une demande de signature de certificat](./media/iOS-signing-cert-4.png)
+   ![Lisez les instructions pour créer une demande de signature de certificat](./media/iOS-signing-cert-4.png)
 
 9. Suivez les instructions ci-dessus pour créer une demande de signature de certificat. Sur votre ordinateur macOS, lancez l'application **Trousseau d’accès**.
 
 10. Dans le menu macOS en haut de l’écran, accédez à **Trousseau d’accès > Assistant de certification > Demander un certificat à une autorité de certificat**.  
 
-  ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](./media/iOS-signing-cert-5.png)
+    ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](./media/iOS-signing-cert-5.png)
 
 11. Suivez les instructions du site des développeur Apple ci-dessus pour créer un fichier CSR. Enregistrez le fichier CSR sur votre ordinateur macOS.
 
-  ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](./media/iOS-signing-cert-6.png)
+    ![Pour demander un certificat à une autorité de certificat dans Trousseau d'accès](./media/iOS-signing-cert-6.png)
 
 12. Retourner sur le site des développeurs Apple. Cliquez sur **Continue** (Continuer). Puis téléchargez le fichier CSR.
 
 13. Apple génère votre certificat de signature. Téléchargez et enregistrez-le sur un emplacement facile à mémoriser sur votre ordinateur macOS.
 
-  ![Télécharger votre certificat de signature](./media/iOS-signing-cert-7.png)
+    ![Télécharger votre certificat de signature](./media/iOS-signing-cert-7.png)
 
 14. Double-cliquez sur le fichier de certificat que vous venez de télécharger afin d'ajouter le certificat à un trousseau d’accès.
 
 15. Ouvrez à nouveau **Trousseau d’accès**. Localisez votre certificat en recherchant son nom dans la barre de recherche en haut à droite. Cliquez avec le bouton droit sur l’élément pour afficher le menu, puis cliquez sur **Lire les informations**. Dans les exemples d’écrans, nous utilisons un certificat de développement au lieu d’un certificat de production.
 
-  ![Ajouter votre certificat à un trousseau d’accès](./media/iOS-signing-cert-8.png)
+    ![Ajouter votre certificat à un trousseau d’accès](./media/iOS-signing-cert-8.png)
 
 16. Une fenêtre d’information s’affiche. Faites défiler vers le bas et regardez sous l'étiquette **Empreintes**. Copiez la chaîne **SHA1** (floue) à utiliser comme paramètre pour « -c » pour l’outil de création de package de restrictions d’application.
 
-  ![Ajouter votre certificat à un trousseau d’accès](./media/iOS-signing-cert-9.png)
+    ![Ajouter votre certificat à un trousseau d’accès](./media/iOS-signing-cert-9.png)
 
 
 
@@ -153,9 +153,9 @@ Vous aurez besoin des éléments suivants pour distribuer des applications encap
 
 4. Choisissez de créer un profil de configuration **In House** (interne) sous **Distribution**.
 
-  ![Sélectionner un profil d’approvisionnement interne](./media/iOS-provisioning-profile-1.png)
+   ![Sélectionner un profil d’approvisionnement interne](./media/iOS-provisioning-profile-1.png)
 
-5. Cliquez sur **Continue** (Continuer). Veillez à lier le certificat de signature généré précédemment au profil de configuration.
+5. Cliquez sur **Continuer**. Veillez à lier le certificat de signature généré précédemment au profil de configuration.
 
 6. Suivez les étapes pour télécharger votre profil (avec l’extension .mobileprovision) sur votre ordinateur macOS.
 
@@ -263,7 +263,7 @@ Aidez-vous des informations suivantes pour résoudre les problèmes que vous ren
 ### <a name="error-messages"></a>Messages d'erreur
 Si l’outil de création de package de restrictions d’application échoue, l’un des messages d’erreur suivants s’affiche dans la console :
 
-|Message d'erreur|Plus d’informations|
+|Message d’erreur|Autres informations|
 |-----------------|--------------------|
 |Vous devez spécifier un profil de configuration iOS valide.|Votre profil de configuration n'est peut-être pas valide. Vérifiez que vous avez les autorisations appropriées pour les appareils et que votre profil cible correctement le développement ou la distribution. Votre profil de configuration a peut être aussi expiré.|
 |Spécifiez un nom d'application d'entrée valide.|Assurez-vous que le nom de l'application d'entrée spécifié est correct.|
@@ -357,7 +357,7 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des *droits* da
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Résoudre les erreurs courantes liées aux droits
 Si App Wrapping Tool for iOS affiche une erreur de droit, essayez d’exécuter les étapes de dépannage suivantes.
 
-|Problème|Cause|Résolution|
+|Problème|Cause|Solution|
 |---------|---------|--------------|
 |Impossible d’analyser les droits générés à partir de l’application d’entrée.|L’outil de création de package de restrictions d’application ne peut pas lire le fichier de droits qui a été extrait de l’application. Le fichier de droits est peut être incorrect.|Examinez le fichier de droits de votre application. Les instructions suivantes expliquent comment effectuer cette opération. Au moment d’inspecter le fichier de droits, assurez-vous que la syntaxe est correcte. Le fichier doit être au format XML.|
 |Il manque des droits dans le profil de configuration (les droits manquants sont répertoriés). Recréez le package de l’application avec un profil de configuration qui contienne ces droits.|Il y a une incohérence entre les droits activés dans le profil de configuration et les fonctionnalités activées dans l’application. Cette incohérence vaut aussi pour les ID associés à des fonctionnalités particulières (telles que les groupes d’applications et l’accès à un trousseau).|En règle générale, vous pouvez créer un nouveau profil de configuration qui active les mêmes fonctionnalités que l’application. Quand les ID du profil et de l’application ne correspondent pas, l’outil de création de package de restrictions d’application remplace les ID, dans la mesure du possible. Si vous obtenez encore cette erreur après avoir créé un profil de configuration, vous pouvez essayer de supprimer les droits de l’application à l’aide du paramètre –e (voir la section Utilisation du paramètre –e pour supprimer les droits d’accès).|
@@ -414,8 +414,8 @@ Procédez comme suit pour obtenir des journaux pour vos applications encapsulée
 4. Cliquez sur le lien « Get Started » (Démarrer).
 5. Vous pouvez maintenant partager des journaux par e-mail ou en les copiant dans un emplacement OneDrive.
 
->[!NOTE]
-La fonctionnalité de journalisation est activée pour les applications qui ont été encapsulées avec Intune App Wrapping Tool version 7.1.13 ou ultérieure.
+> [!NOTE]
+> La fonctionnalité de journalisation est activée pour les applications qui ont été encapsulées avec Intune App Wrapping Tool version 7.1.13 ou ultérieure.
 
 ### <a name="see-also"></a>Voir aussi
 - [Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

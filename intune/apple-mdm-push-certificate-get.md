@@ -1,50 +1,62 @@
 ---
-title: "Obtenir un certificat Push MDM Apple"
+title: Obtenir un certificat Push MDM Apple
 titlesuffix: Microsoft Intune
-description: "Découvrez la procédure permettant d’obtenir un certificat Push MDM Apple pour gérer les appareils iOS avec Intune."
-keywords: 
+description: Découvrez la procédure permettant d’obtenir un certificat Push MDM Apple pour gérer les appareils iOS avec Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 504f2431754aa88ddf79bef4a201cbf7aa032834
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 28eb86a1924dc72df4c77cc3f8a05aacd61e0fbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Obtenir un certificat Push MDM Apple
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
- Intune permet la gestion des appareils mobiles (MDM) pour les iPad, iPhone et ordinateurs Mac et permet aux utilisateurs d’accéder à la messagerie et aux applications de l’entreprise. Intune requiert un certificat Push MDM pour qu’Intune puisse gérer les appareils iOS et Mac. Une fois le certificat ajouté à Intune, vos utilisateurs peuvent installer l’application Portail d’entreprise pour inscrire leurs appareils. Vous pouvez également configurer la gestion des appareils iOS d’entreprise avec le programme DEP d’Apple ou inscrire des appareils à l’aide d’Apple Configurator, par exemple. Pour plus d’informations sur les options d’inscription, consultez [Choisir comment inscrire des appareils iOS](enrollment-method-choose-ios.md).
+Intune permet la gestion des appareils mobiles (MDM) pour les iPad, iPhone et ordinateurs Mac et permet aux utilisateurs d’accéder à la messagerie et aux applications de l’entreprise. Intune nécessite un certificat Push MDM Apple pour gérer les appareils iOS et macOS. Une fois le certificat ajouté à Intune, vos utilisateurs peuvent inscrire leurs appareils avec :
+
+- L'application Portail d’entreprise.
+
+- Les méthodes d’inscription en bloc d’Apple comme le programme d’inscription des appareils, Apple School Manager ou Apple Configurator.
+
+Pour plus d’informations sur les options d’inscription, consultez [Choisir comment inscrire des appareils iOS](enrollment-method-choose-ios.md).
+
+Lors de l’expiration d’un certificat push, vous devez le renouveler. Lors du renouvellement, veillez à utiliser le même identifiant Apple que vous avez utilisé lors de la création du certificat push.
+
 
 ## <a name="steps-to-get-your-certificate"></a>Procédure pour obtenir le certificat
 Dans le [portail Azure](https://portal.azure.com), choisissez **Inscription d’appareil** > **Inscription Apple** > **Certificat Push MDM Apple**, puis suivez les étapes ci-après dans le [portail Azure](https://portal.azure.com).
 
-**Étape 1. Téléchargez la demande de signature de certificat Intune requise pour créer un certificat Push MDM Apple.**<br>
+### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>Étape 1. Autoriser Microsoft à envoyer des informations d’utilisateur et d’appareil à Apple
+Sélectionnez **J’accepte.** pour autoriser Microsoft à envoyer des données à Apple.
+
+![Écran Configurer le certificat Push MDM avec Push MDM non configuré.](./media/create-mdm-push-certificate.png)
+
+### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>Étape 2. Télécharger la demande de signature de certificat Intune nécessaire à la création d’un certificat Push MDM Apple
 Sélectionnez **Télécharger votre CSR** pour télécharger et enregistrer le fichier de demande en local. Le fichier est utilisé pour demander un certificat de relation d’approbation à partir du portail Apple Push Certificates.
 
-  ![Écran Configurer le certificat Push MDM avec Push MDM non configuré.](./media/create-mdm-push-certificate.png)
-
-**Étape 2. Créez un certificat Push MDM Apple.**<br>
+  ### <a name="step-3-create-an-apple-mdm-push-certificate"></a>Étape 3. Créer un certificat Push MDM Apple
 Sélectionnez **Créer votre certificat Push MDM** pour accéder au portail Apple Push Certificates. Connectez-vous avec votre identifiant Apple d’entreprise, puis cliquez sur **Créer un certificat**. Sélectionnez **Choisir un fichier** et accédez au fichier de demande de signature de certificat, puis choisissez **Charger**. Dans la page Confirmation, choisissez **Télécharger** pour télécharger le fichier de certificat (.pem), puis enregistrez-le localement.
 
 > [!NOTE]
 > Le certificat est associé à l’identifiant Apple utilisé pour le créer. Comme meilleure pratique, utilisez un ID Apple d’entreprise pour les tâches de gestion et assurez-vous que la boîte aux lettres est analysée par plusieurs personnes comme une liste de distribution. N’utilisez jamais un identifiant Apple personnel.
 
-**Étape 3. Entrez l’identifiant Apple utilisé pour créer votre certificat Push MDM Apple.**<br>
+### <a name="step-4-enter-the-apple-id-used-to-create-your-apple-mdm-push-certificate"></a>Étape 4. Entrer l’identifiant Apple utilisé pour créer votre certificat Push MDM Apple
 Notez cet identifiant qui vous servira quand vous devrez renouveler ce certificat.
 
-**Étape 4 :. Accédez à votre certificat Push MDM Apple à télécharger.**<br>
+### <a name="step-5-browse-to-your-apple-mdm-push-certificate-to-upload"></a>Étape 5. Accéder à votre certificat Push MDM Apple à charger
 Accédez au fichier du certificat (.pem), choisissez **Ouvrir**, puis **Télécharger**. Avec le certificat Push, Intune peut inscrire et gérer des appareils Apple.
 
 ## <a name="renew-apple-mdm-push-certificate"></a>Renouveler un certificat Push MDM Apple

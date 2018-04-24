@@ -1,27 +1,27 @@
 ---
 title: Installer le logiciel client PC.
-description: "Utilisez ce guide pour que votre PC Windows soit géré par le logiciel client Microsoft Intune."
-keywords: 
+description: Utilisez ce guide pour que votre PC Windows soit géré par le logiciel client Microsoft Intune.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installer le logiciel client Intune sur des PC Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Les PC Windows peuvent être inscrits en installant le logiciel client Intune. Le logiciel client Intune peut être installé à l'aide des méthodes suivantes :
 
@@ -39,13 +39,13 @@ Une seule licence Intune permet d’installer le logiciel client Intune sur cinq
 
 Toutes les méthodes, à l’exception de celles où les utilisateurs installent le logiciel client Intune eux-mêmes, nécessitent le téléchargement préalable du logiciel par des administrateurs informatiques pour qu'il puisse être ensuite déployé pour les utilisateurs finaux.
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Admin** &gt; **Téléchargement du logiciel client**.
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com/), cliquez sur **Admin** &gt; **Téléchargement du logiciel client**.
 
-  ![Télécharger le client PC Intune](../media/pc-sa-client-download.png)
+   ![Télécharger le client PC Intune](../media/pc-sa-client-download.png)
 
 2. Dans la page **Téléchargement du logiciel client**, cliquez sur **Télécharger le logiciel client**. Enregistrez ensuite le package **Windows_Intune_Setup.zip** contenant le logiciel à un emplacement sécurisé sur votre réseau.
 
-  Le package d’installation du logiciel client Intune contient des informations uniques et spécifiques disponibles par le biais d'un certificat incorporé associé à votre compte. Si des utilisateurs non autorisés arrivent à accéder au package d’installation, ils peuvent inscrire des PC dans le compte représenté par le certificat intégré et obtenir ainsi l’accès aux ressources de l’entreprise.
+   Le package d’installation du logiciel client Intune contient des informations uniques et spécifiques disponibles par le biais d'un certificat incorporé associé à votre compte. Si des utilisateurs non autorisés arrivent à accéder au package d’installation, ils peuvent inscrire des PC dans le compte représenté par le certificat intégré et obtenir ainsi l’accès aux ressources de l’entreprise.
 
 3. Extrayez le contenu du package d'installation dans l'emplacement sécurisé de votre réseau.
 
@@ -244,7 +244,7 @@ Consultez « %ProgramFiles%\Microsoft\OnlineManagement » et vérifiez que seu
 
 - AgentInstaller
 - Logs
-- Updates
+- Mises à jour
 - Common
 
 ### <a name="remove-the-onlinemanagement-folder"></a>Supprimer le dossier OnlineManagement

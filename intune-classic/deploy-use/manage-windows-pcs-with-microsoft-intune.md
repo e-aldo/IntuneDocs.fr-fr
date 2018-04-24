@@ -1,28 +1,28 @@
 ---
 title: Gestion de PC avec des logiciels clients
-description: "Gérer des PC Windows en installant le logiciel du client Intune."
-keywords: 
+description: Gérer des PC Windows en installant le logiciel du client Intune.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 773e4d551a8ea278c60107a279e29b83f0a1596f
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 8790863f4cfb3b0b8fdcf4f7aedbfc338ae64667
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gérer des PC Windows en tant qu’ordinateurs via le logiciel client Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune fournit une solution complète aux organisations pour gérer les appareils mobiles. Intune peut gérer les PC Windows en tant qu’appareils mobiles en utilisant les fonctionnalités de gestion des appareils modernes intégrées au système d’exploitation Windows 10. Pour répondre aux besoins en matière de gestion de votre organisation, Intune peut également gérer les PC Windows en tant qu’ordinateurs via le logiciel client Intune. Cette méthode de gestion utilise des fonctionnalités de gestion des ordinateurs traditionnelles dans le système d’exploitation Windows hérité.
 
@@ -38,17 +38,17 @@ Intune prend en charge la gestion de 7 000 PC Windows au maximum en tant qu’
 
 **Matériel** : voici la configuration matérielle minimale requise pour l’installation du logiciel client Intune :
 
-|Condition requise|Plus d’informations|
+|Condition requise|Autres informations|
 |---------------|--------------------|
-|Réseau|Le PC sur lequel est installé le client doit disposer d’une connexion à Internet.|
+|Network (Réseau)|Le PC sur lequel est installé le client doit disposer d’une connexion à Internet.|
 |Processeur et mémoire|Reportez-vous à la configuration requise du processeur et de la RAM pour le système d’exploitation du PC.|
 |Espace disque|200 Mo d'espace disponible sur le disque avant l'installation du logiciel client.|
 
 **Logiciel** : voici la configuration logicielle requise pour l’installation du logiciel client :
 
-|Condition requise|Plus d’informations|
+|Condition requise|Autres informations|
 |---------------|--------------------|
-|Système d'exploitation | Appareil Windows exécutant Windows Vista ou ultérieur. </br></br>**Les éditions familiales ne sont pas prises en charge.**|
+|Système d’exploitation | Appareil Windows exécutant Windows Vista ou ultérieur. </br></br>**Les éditions familiales ne sont pas prises en charge.**|
 |Autorisations administratives|Le compte qui installe le logiciel client doit disposer des autorisations d’administrateur local sur cet ordinateur.|
 |Windows Installer 3.1|Le PC doit disposer de Windows Installer 3.1 au minimum.<br /><br />Pour afficher la version de Windows Installer sur un PC :<br /><br />  Sur le PC, cliquez avec le bouton droit sur **%windir%\System32\msiexec.exe**, puis cliquez sur **Propriétés**.<br /><br />Vous pouvez télécharger la dernière version de Windows Installer à partir de [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) sur le site web Microsoft Developer Network.|
 |Supprimer les logiciels clients incompatibles|Avant d’installer le logiciel client Intune, désinstallez tout logiciel client Configuration Manager, Operations Manager, Operations Management Suite et Service Manager du PC.|
@@ -61,14 +61,14 @@ Dans la plupart des scénarios, vous inscrirez vos appareils avec Microsoft Intu
 
 -   **[Gestion des mises à jour logicielles](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** : Vous pouvez maintenir les PC à jour et choisir à quel moment appliquer les mises à jour.
 
--   **[Stratégie de Pare-feu Windows](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** : elle permet de garantir que tous les PC utilisés dans votre entreprise ont un Pare-feu Windows actif et correctement configuré.
+-   **[Stratégie de Pare-feu Windows](/intune-classic/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)**  : elle permet de garantir que tous les PC utilisés dans votre entreprise ont un Pare-feu Windows actif et correctement configuré.
 
--   **[Protection contre les programmes malveillants](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** : Intune inclut la fonctionnalité Endpoint Protection, qui vous aide à protéger les PC contre les programmes malveillants.
+-   **[Protection contre les programmes malveillants](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)**  : Intune inclut la fonctionnalité Endpoint Protection, qui vous aide à protéger les PC contre les programmes malveillants.
 
--   **[Assistance à distance](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** : Intune permet aux utilisateurs de contacter l’équipe du support informatique, qui peut ensuite les aider via une fonctionnalité de Bureau à distance intégrée à Intune (nécessite le logiciel TeamViewer).
+-   **[Assistance à distance](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )**  : Intune permet aux utilisateurs de contacter l’équipe du support informatique, qui peut ensuite les aider via une fonctionnalité de Bureau à distance intégrée à Intune (nécessite le logiciel TeamViewer).
 
--   **[Gestion des licences logicielles](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** : suivez le nombre de licences logicielles disponibles et le nombre de ces licences utilisé.
--   **[Déploiement d’applications](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** : déployez des logiciels sur les PC que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des PC avec le client logiciel.
+-   **[Gestion des licences logicielles](/intune-classic/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)**  : suivez le nombre de licences logicielles disponibles et le nombre de ces licences utilisé.
+-   **[Déploiement d’applications](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)**  : déployez des logiciels sur les PC que vous gérez. Certaines fonctionnalités de gestion d'applications ne sont pas disponibles lorsque vous gérez des PC avec le client logiciel.
 
 <!-- - **Compliance settings reporting** -->
 

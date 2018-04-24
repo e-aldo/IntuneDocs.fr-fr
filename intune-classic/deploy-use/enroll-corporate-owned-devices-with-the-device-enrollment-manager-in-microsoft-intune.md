@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscrire des appareils d’entreprise avec le gestionnaire d’inscription d’appareil dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d'utilisateur. Le compte *Gestionnaire d’inscription d’appareil* (DEM) est un compte d’utilisateur spécial qui permet d’inscrire jusqu’à 1 000 appareils. Vous ajoutez des utilisateurs existants au compte DEM afin de leur accorder des fonctionnalités DEM spéciales. Chaque appareil inscrit utilise une seule licence. Nous vous recommandons d’utiliser les appareils inscrits avec ce compte comme appareils partagés (c’est-à-dire, sans affinité utilisateur) plutôt que comme appareils personnels (« BYOD »).  
+Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du *gestionnaire d’inscription d’appareil* est un compte d’utilisateur spécial qui peut inscrire jusqu’à 1 000 appareils. Vous ajoutez des utilisateurs existants au compte de gestionnaire d’inscription d’appareil afin qu’ils puissent bénéficier des fonctionnalités associées. Chaque appareil inscrit utilise une seule licence. Nous vous recommandons d’utiliser les appareils inscrits avec ce compte comme appareils partagés (c’est-à-dire, sans affinité utilisateur) plutôt que comme appareils personnels (« BYOD »).  
 
 Les utilisateurs doivent figurer dans le portail Azure pour être ajoutés comme gestionnaires d’inscription d’appareil. Pour une sécurité optimale, l’utilisateur du gestionnaire d’inscription d’appareil ne doit pas être également un administrateur Intune.
 
@@ -67,22 +67,22 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
 
 ## <a name="add-a-device-enrollment-manager"></a>Ajouter un gestionnaire d’inscription d’appareil
 
-1.  Assurez-vous que l’utilisateur que vous souhaitez ajouter au compte de gestionnaire d’inscription d’appareil existe déjà. Si vous devez ajouter l’utilisateur, connectez-vous au [portail Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) et suivez les étapes dans [Ajouter des utilisateurs individuellement ou en bloc à Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+1. Assurez-vous que l’utilisateur que vous souhaitez ajouter au compte de gestionnaire d’inscription d’appareil existe déjà. Si vous devez ajouter l’utilisateur, connectez-vous au [portail Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) et suivez les étapes dans [Ajouter des utilisateurs individuellement ou en bloc à Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) avec vos informations d’identification d’administrateur.
+2. Connectez-vous à la [console d’administration Microsoft Intune](https://manage.microsoft.com) avec vos informations d’identification d’administrateur.
 
-3.  Dans le volet de navigation, choisissez **Admin**, puis accédez à **Gestion des administrateurs** et sélectionnez **Gestionnaires d’inscription d’appareil**. La page **Gestionnaires d’inscription d’appareil** s’ouvre.
+3. Dans le volet de navigation, choisissez **Admin**, puis accédez à **Gestion des administrateurs** et sélectionnez **Gestionnaires d’inscription d’appareil**. La page **Gestionnaires d’inscription d’appareil** s’ouvre.
 
-4.  Choisissez **Ajouter...** La boîte de dialogue **Ajouter un gestionnaire d'inscription d'appareil** s'ouvre.
+4. Choisissez **Ajouter...** La boîte de dialogue **Ajouter un gestionnaire d'inscription d'appareil** s'ouvre.
 
-5.  Entrez l’**ID d’utilisateur** du compte Intune, puis choisissez **OK**.
+5. Entrez l’**ID d’utilisateur** du compte Intune, puis choisissez **OK**.
 
-    À présent, l’utilisateur du gestionnaire d’inscription d’appareil peut inscrire des appareils mobiles en suivant la même procédure qu’un utilisateur final pour un scénario BYOD dans le portail d’entreprise. L’utilisateur final du gestionnaire peut installer l’application Portail d’entreprise et inscrire l’appareil à l’aide de ses informations d’identification DEM sur 1 000 appareils au maximum. Pour connaître les étapes d’inscription de l’utilisateur final pour chaque plateforme, consultez :
+   À présent, l’utilisateur du gestionnaire d’inscription d’appareil peut inscrire des appareils mobiles en suivant la même procédure qu’un utilisateur final pour un scénario BYOD dans le portail d’entreprise. L’utilisateur final du gestionnaire peut installer l’application Portail d’entreprise et inscrire l’appareil à l’aide de ses informations d’identification DEM sur 1 000 appareils au maximum. Pour connaître les étapes d’inscription de l’utilisateur final pour chaque plateforme, consultez :
 
-  - [Inscrire un appareil iOS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [Inscrire votre appareil macOS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Inscrire un appareil Android dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Inscrire un appareil Windows dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [Inscrire un appareil iOS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [Inscrire votre appareil macOS dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Inscrire un appareil Android dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Inscrire un appareil Windows dans Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Supprimer un gestionnaire d'inscription d'appareil d'Intune
 

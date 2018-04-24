@@ -1,44 +1,47 @@
 ---
 title: Envoyer des journaux au support technique de votre entreprise par e-mail | Microsoft Docs
-description: "Envoyer les journaux de données par e-mail sur un appareil Android"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Envoyer les journaux de données par e-mail sur un appareil Android
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ddd0c1113b7cce6f461b627a3d346806df3bbc8c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="send-logs-to-your-company-support-using-email"></a>Envoyer des journaux au support technique de votre entreprise par e-mail
+# <a name="email-logs-to-your-company-support"></a>Envoyer des journaux au support technique de votre entreprise par e-mail
 
-Si vous recevez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider le support technique de votre entreprise à résoudre le problème en lui envoyant des informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
+Vous pouvez parfois rencontrer une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android. Lorsque cela se produit, vous pouvez envoyer les détails de l’erreur au support technique de votre entreprise. Ces détails fournissent le contexte nécessaire pour résoudre le problème pour vous.  
+
+Ils sont conservés sur votre appareil dans un document spécifique appelé _journal de diagnostic_. Lorsque vous chargez les journaux sur l’application Portail d’entreprise, ceux-ci sont tout d’abord envoyés aux développeurs de Microsoft qui travaillent sur l’application. Ils utilisent les journaux pour améliorer les fonctionnalités de l’application et éviter de nouvelles erreurs. Un ID d’incident pour votre erreur spécifique vous est alors fourni pour le partager avec la personne du support de votre entreprise.  
 
 > [!Note]
-> Pour faciliter l’identification du problème par le support technique de votre entreprise, il est recommandé d’activer la _journalisation détaillée_. La journalisation détaillée inclut tous les détails pertinents dans le rapport. Découvrez comment [activer la journalisation détaillée ici](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Pour que le support de votre entreprise trouve plus facilement la cause du problème, activez la _journalisation détaillée_. La journalisation détaillée enregistre tous les détails d’une erreur et les ajoute dans le rapport. Découvrez comment [activer la journalisation détaillée ici](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  
 
-Pour envoyer des journaux au support technique de votre entreprise par e-mail :
+Pour envoyer des journaux au support technique de votre entreprise par e-mail :
 
 1.  Ouvrez l'application Portail d'entreprise.
 
-2.  Appuyez sur **Menu** >  **Aide et commentaires**.
+2.  Appuyez sur **Menu** > **Aide** > **Envoyer un e-mail au support**.
 
     > [!NOTE]
     > Le **menu** peut être un bouton à l’écran ou un bouton physique, selon l’appareil Android que vous utilisez.
 
-3.  Sous **Aide**, appuyez sur **Obtenir de l’aide**.
+3.  Appuyez sur **Envoyer un e-mail et charger les journaux**.
+4.  Une fois le chargement terminé, appuyez sur votre application de messagerie. Un e-mail s’ouvre avec l’ID d’incident prérenseigné dans le champ d’objet. Dans le corps de l’e-mail, décrivez le problème rencontré.  
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

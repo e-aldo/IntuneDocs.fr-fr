@@ -1,27 +1,27 @@
 ---
-title: "Restrictions d’appareils Microsoft Intune pour Windows 10 Collaboration"
-titlesuffix: 
-description: "Découvrez les restrictions d’appareils disponibles pour les appareils exécutant Windows 10 Collaboration."
-keywords: 
+title: Restrictions d’appareils Microsoft Intune pour Windows 10 Collaboration
+titlesuffix: ''
+description: Découvrez les restrictions d’appareils disponibles pour les appareils exécutant Windows 10 Collaboration.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5d1198e8332645297ab0739bb0346c573877f0c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Paramètres de restriction d’appareil Windows 10 Collaboration dans Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cet article décrit les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 10 Collaboration.
 

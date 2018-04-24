@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) avec Microsoft Intune
 
@@ -26,7 +26,7 @@ Le RBAC permet de contrôler qui peut effectuer diverses tâches Intune au sein 
 
 - **Définition de rôle** : le nom d’un rôle, les ressources qu’il gère et les autorisations accordées pour chaque ressource.
 - **Membres** : les groupes d’utilisateurs à qui sont accordées les autorisations.
-- **Étendue**: les groupes d’utilisateurs ou d’appareils que les membres peuvent gérer.
+- **Étendue** : les groupes d’utilisateurs ou d’appareils que les membres peuvent cibler pour déployer une application ou une stratégie, ou effectuer des tâches à distance.
 - **Affectation** : lorsque la définition, les membres et l'étendue ont été configurés, le rôle est affecté.
 
 ![Exemple de RBAC Intune](./media/intune-rbac-1.PNG)
@@ -64,14 +64,14 @@ Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à de
 
 |Autorisation|Opération|
 |---|---|
-|Données d'audit|Lire|
+|Données d'audit|Lecture|
 |Configurations d’appareil|Affecter, Créer, Supprimer, Lire, Mettre à jour|
 |Gestionnaires d’inscription d’appareil|Lire, Mettre à jour|
 |Appareils gérés|Lire, Mettre à jour<!--, Delete [To be added in 1803]-->|
 |Applications mobiles|Affecter, Créer, Supprimer, Lire, Mettre à jour|
-|Les rapports|Lire|
+|Rapports|Lecture|
 |Actions à distance|Nettoyer le PC, Redémarrer, Verrouiller à distance, Mettre hors service, Synchroniser les appareils, Réinitialiser|
-|Organisation|Lire|
+|Organisation|Lecture|
 
 ### <a name="to-assign-a-built-in-role"></a>Pour affecter un rôle intégré
 
@@ -110,7 +110,7 @@ Vous pouvez créer un rôle personnalisé qui inclut toutes les autorisations re
 
 1. Connectez-vous au [Portail Azure](https://portal.azure.com) avec vos informations d’identification Intune.
 
-2. Choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+2. Choisissez **Tous les services** dans le menu de gauche, puis entrez **Intune** dans le filtre de la zone de texte.
 
 3. Choisissez **Intune**. Le tableau de bord d’Intune s’affiche : sélectionnez alors **Rôles Intune**.
 

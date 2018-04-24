@@ -1,37 +1,35 @@
 ---
-title: "Problèmes connus dans Microsoft Intune"
-titlesuffix: Microsoft Intune
-description: "Découvrez les problèmes connus affectant Microsoft Intune."
-keywords: 
+title: Problèmes connus dans Microsoft Intune - Azure | Microsoft Docs
+description: Découvrez les problèmes connus affectant Microsoft Intune.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 03/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02efc7e2369c590e2d21ac8c27db54ffbaae38c1
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problèmes connus dans Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-
-Utilisez cette rubrique pour en savoir plus sur les problèmes connus dans Microsoft Intune.
+Utilisez cet article pour connaître les problèmes connus dans Microsoft Intune.
 
 Si vous souhaitez signaler un bogue qui n’est pas répertorié ici, [créez une demande de support](get-support.md).
 
-Si vous souhaitez voir une nouvelle fonctionnalité dans Intune, envisagez d’envoyer un rapport sur notre site [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
+Si vous souhaitez voir une nouvelle fonctionnalité dans Intune, envoyez un rapport sur le site [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
 ## <a name="migration"></a>Migration
 
@@ -45,12 +43,12 @@ Lorsque vous migrez depuis Intune vers le portail Azure, un nouveau groupe nomm�
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Les panneaux d’état pour les stratégies migrées ne fonctionnent pas
 
-Vous ne pouvez pas afficher les informations d’état pour les stratégies qui ont été migrées à partir du portail classique dans le portail Azure. Toutefois, vous pouvez continuer à afficher des rapports pour ces stratégies dans le portail classique. Pour afficher les informations d’état pour les stratégies de configuration migrées, recréez-les dans le portail Azure.
+Vous ne pouvez pas voir les informations d’état des stratégies qui ont été migrées à partir du portail classique Azure dans le portail Azure. Toutefois, vous pouvez continuer à afficher des rapports pour ces stratégies dans le portail classique. Pour afficher les informations d’état pour les stratégies de configuration migrées, recréez-les dans le portail Azure.
 
 ## <a name="apps"></a>Applications
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Applications iOS achetées en volume disponibles uniquement dans la langue du client Intune par défaut
-Les applications iOS achetées en volume sont affichées et peuvent être affectées uniquement pour le même code de pays que votre compte Intune. Intune synchronise uniquement les applications ayant les mêmes paramètres régionaux iTunes que le code de pays du compte de client Intune. Par exemple, si vous achetez une application disponible uniquement dans le Store des États-Unis, mais que votre compte Intune est allemand, Intune n’affiche pas cette application.
+Les applications iOS achetées en volume sont affichées et peuvent être affectées uniquement pour le même code de pays/région que votre compte Intune. Intune synchronise uniquement les applications ayant les mêmes paramètres régionaux iTunes que le code de pays/région du compte de client Intune. Par exemple, si vous achetez une application disponible uniquement dans un Store américain alors que votre compte Intune est allemand, Intune n’affiche pas cette application.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Plusieurs copies du même programme d’achat en volume iOS sont chargées
 Ne cliquez pas à plusieurs reprises sur le bouton **Charger** pour le même jeton VPP, sinon des jetons VPP en double seraient chargés et les applications seraient synchronisées plusieurs fois pour le même jeton VPP.
@@ -66,9 +64,8 @@ Pour les appareils non inscrits avec Intune, vous pouvez spécifier un seul doma
 Si vous ajoutez des domaines supplémentaires (dans **Paramètres avancés** > **Réseau de périmètre** > **Ajouter un domaine protégé**), vous ne pouvez pas enregistrer la stratégie. Le message d’erreur affiché sera prochainement modifié pour être plus précis.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Prise en charge du client VPN Cisco AnyConnect
+La dernière version du client VPN Cisco AnyConnect (4.0.07072) n’est pas compatible actuellement avec Intune. Une mise à jour ultérieure d’Intune inclura la compatibilité avec cette version du client VPN. En attendant, nous vous recommandons de ne pas mettre à jour votre client VPN Cisco AnyConnect et de continuer à utiliser la version existante.
 
-La dernière version du client VPN Cisco AnyConnect (4.0.07072) n’est pas compatible actuellement avec Intune.
-Une mise à jour ultérieure d’Intune inclura la compatibilité avec cette version du client VPN. En attendant, nous vous recommandons de ne pas mettre à jour votre client VPN Cisco AnyConnect et de continuer à utiliser la version existante.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Utilisation du type de mot de passe numérique avec les appareils macOS Sierra
 
@@ -94,7 +91,7 @@ Pour plus d’informations, consultez [Qu’est-ce que la compatibilité des app
 
 ### <a name="ios-app-protection-policies"></a>Stratégies de protection des applications iOS
 
-Vous pouvez définir des [stratégies de protection des applications pour iOS](app-protection-policy-settings-ios.md). Ces stratégies sont proposées aux utilisateurs d’appareils gérés par l’intermédiaire de la gestion des applications mobiles (GAM) sans inscription. En raison d’une erreur temporaire, vous pouvez uniquement définir ces stratégies pour les versions d’iOS à une seule décimale. Ainsi, au lieu de définir iOS 10.3.1 comme version minimale, définissez iOS 10.3. Ce problème sera résolu dans une prochaine mise à jour du SDK iOS.
+Vous pouvez définir des [stratégies de protection des applications pour iOS](app-protection-policy-settings-ios.md). Ces stratégies sont proposées aux utilisateurs d’appareils gérés par l’intermédiaire de la gestion des applications mobiles (MAM) sans inscription. En raison d’une erreur temporaire, vous pouvez uniquement définir ces stratégies pour les versions d’iOS à une seule décimale. Ainsi, au lieu de définir iOS 10.3.1 comme version minimale, définissez iOS 10.3. Ce problème sera résolu dans une prochaine mise à jour du SDK iOS.
 
 
 ## <a name="administration-and-accounts"></a>Administration et comptes

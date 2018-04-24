@@ -1,29 +1,29 @@
 ---
-title: "Protéger Skype Entreprise Online"
-description: "Protégez et contrôlez l’accès à Skype Entreprise Online en utilisant l’accès conditionnel."
-keywords: 
+title: Protéger Skype Entreprise Online
+description: Protégez et contrôlez l’accès à Skype Entreprise Online en utilisant l’accès conditionnel.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Protéger l’accès à Skype Entreprise Online avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez utiliser une stratégie d’accès conditionnel à **Skype Entreprise Online** pour contrôler l’accès à Skype Entreprise Online.
 L’accès conditionnel comprend deux composants :
@@ -87,23 +87,23 @@ Quand vous êtes prêt, passez à l’**Étape 3**.
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>Étape 3: Configurer la stratégie Skype Entreprise Online
 Ensuite, configurez la stratégie de manière à restreindre l’accès à Skype Entreprise Online aux appareils gérés et conformes. Cette stratégie sera stockée dans Azure Active Directory.
 
-1.  Dans la [Console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie Skype Entreprise Online**.
+1. Dans la [Console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie Skype Entreprise Online**.
 
-  ![Capture d’écran de la page de stratégie d’accès conditionnel à Skype Entreprise Online](./media/conditional_access_SFBPolicy.png)
+   ![Capture d’écran de la page de stratégie d’accès conditionnel à Skype Entreprise Online](./media/conditional_access_SFBPolicy.png)
 
-2.  Choisissez **Activer la stratégie d’accès conditionnel**.
+2. Choisissez **Activer la stratégie d’accès conditionnel**.
 
-3.  Sous **Accès aux applications**, vous pouvez choisir d’appliquer la stratégie d’accès conditionnel à :
+3. Sous **Accès aux applications**, vous pouvez choisir d’appliquer la stratégie d’accès conditionnel à :
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android**
+   -   **Android**
 
-4.  Sous **Groupes ciblés**, choisissez **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory auxquels la stratégie sera appliquée. Vous pouvez cibler cette stratégie sur tous les utilisateurs ou seulement sur un groupe d’utilisateurs donné.
+4. Sous **Groupes ciblés**, choisissez **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory auxquels la stratégie sera appliquée. Vous pouvez cibler cette stratégie sur tous les utilisateurs ou seulement sur un groupe d’utilisateurs donné.
 
-5.  Sous **Groupes exemptés**, vous pouvez éventuellement choisir **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory exempts de cette stratégie.
+5. Sous **Groupes exemptés**, vous pouvez éventuellement choisir **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory exempts de cette stratégie.
 
-6.  Quand vous avez terminé, choisissez **Enregistrer**.
+6. Quand vous avez terminé, choisissez **Enregistrer**.
 
 Vous avez maintenant configuré l’accès conditionnel à Skype Entreprise Online. La stratégie d’accès conditionnel prend effet immédiatement. Il est donc inutile de la déployer.
 

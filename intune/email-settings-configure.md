@@ -1,27 +1,27 @@
 ---
-title: "Guide pratique pour configurer des paramètres de messagerie dans Microsoft Intune"
-titleSuffix: 
-description: "Découvrez comment configurer Microsoft Intune pour créer des connexions à la messagerie d’entreprise sur les appareils que vous gérez."
-keywords: 
+title: Guide pratique pour configurer des paramètres de messagerie dans Microsoft Intune
+titleSuffix: ''
+description: Découvrez comment configurer Microsoft Intune pour créer des connexions à la messagerie d’entreprise sur les appareils que vous gérez.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de messagerie dans Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Des profils de messagerie peuvent être utilisés pour configurer les appareils que vous gérez avec les paramètres nécessaires pour la connexion à la messagerie d’entreprise et à sa synchronisation. Cela peut aider à garantir que les paramètres sont standard sur l’ensemble de vos appareils et également à réduire les appels au support technique des utilisateurs finaux qui ne connaissent pas les paramètres de messagerie corrects.
 
@@ -40,7 +40,7 @@ Utilisez les informations de cet article pour découvrir les concepts de base su
 ## <a name="create-a-device-profile-containing-email-settings"></a>Créer un profil d’appareil contenant des paramètres de messagerie
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
 3. Dans le volet Profils, choisissez **Créer un profil**.

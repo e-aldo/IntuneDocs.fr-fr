@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 201c431f2c30538139f0dc9c436781aae2bd9735
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85a296c28658b8eb3db5e5e99dcd573b3b98e0ea
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Connecteur de protection contre les menaces mobiles pour Lookout avec Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez contrôler l’accès des appareils mobiles aux ressources d’entreprise en fonction de l’évaluation des risques effectuée par Lookout, une solution de défense contre les menaces mobiles intégrée à Microsoft Intune. Le risque est évalué en fonction des données de télémétrie recueillies à partir des appareils par le service Lookout, notamment :
 - Vulnérabilités du système d’exploitation
@@ -51,7 +51,7 @@ Les plateformes suivantes sont prises en charge lorsque Lookout est inscrit dans
 
 Pour plus d’informations, consultez [Lookout Mobile Endpoint Security](https://www.lookout.com/products/mobile-endpoint-security)
 
-## <a name="sample-scenarios"></a>Exemples de scénarios
+## <a name="sample-scenarios"></a>Exemples de scénario
 Voici quelques scénarios courants :
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>Contrôler l’accès en fonction des menaces émanant des applications malveillantes
@@ -87,7 +87,7 @@ Détectez les menaces pour votre réseau, telles que les attaques de l’interce
 
 **Accès accordé après correction :**
 
-![Diagramme illustrant l’accès conditionnel autorisant l’accès après correction de la menace pour le réseau](../media/mtp/network-spo-unblocked.png)
+![Diagramme montrant l’accès accordé par la stratégie d’accès conditionnel après correction de la menace](../media/mtp/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Voici les principales étapes à effectuer pour implémenter cette solution :

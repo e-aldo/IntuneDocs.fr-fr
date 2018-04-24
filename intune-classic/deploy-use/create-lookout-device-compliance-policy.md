@@ -1,6 +1,6 @@
 ---
 title: Activer une règle de protection d’appareil
-description: Activez une règle de protection contre les menaces mobiles dans la stratégie de conformité des appareils.
+description: Activer une règle de protection de l’appareil contre les menaces mobiles dans la stratégie de conformité.
 keywords: ''
 author: andredm7
 ms.author: andredm
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f19318256dc4480207097d2f4ab393b799e207a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b39f7cac8c09813eb9db94e761ec6fa6ab53c7a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Créer une stratégie de conformité des appareils Lookout dans Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune avec Lookout Mobile Threat Defense vous permet de détecter les menaces sur les appareils mobiles et d’évaluer les risques sur ces appareils. Vous pouvez créer une règle de stratégie de conformité qui évalue le risque afin de déterminer si l’appareil est conforme. Vous pouvez ensuite utiliser la stratégie d’accès conditionnel pour autoriser ou bloquer l’accès à des services basés sur la conformité de l’appareil.
 
@@ -36,13 +36,13 @@ Configuration requise pour la stratégie de conformité avec Lookout Mobile Thre
 Dans le cadre de la configuration de Lookout Mobile Threat Defense, dans la [console Lookout](https://aad.lookout.com), vous avez créé une stratégie qui classe les diverses menaces selon les niveaux élevé, moyen et faible. Dans la stratégie de conformité Intune, vous définissez le niveau de menace maximal autorisé.
 
 1. Dans la [console d'administration Intune](https://manage.microsoft.com), accédez à la page **Stratégies de conformité**. Vous pouvez utiliser une stratégie de conformité existante ou en créer une. Accédez à **Intégrité des appareils** et activez **Protection contre les menaces sur les appareils**.
-  ![capture d’écran montrant la configuration de la règle de protection de l’appareil contre les menaces dans ](../media/mtp/mtp-compliance-policy-rule.png)
+   ![capture d’écran montrant la configuration de la règle de protection de l’appareil contre les menaces dans ](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. Sélectionnez le **Niveau de menace maximal autorisé** :
-  * **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut.  L'appareil ne peut pas avoir de menace présente et accéder aux ressources de l’entreprise.  Si des menaces sont détectées, l’appareil est évalué comme non conforme.  
-  * **Faible** : l’appareil est conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
-  * **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées, l’appareil est déterminé comme non conforme.
-  * **Élevé** : cette option est la moins sécurisée. Cela autorise tous les niveaux de menace et utilise la protection contre les menaces mobiles Lookout uniquement à des fins de création de rapports.
+   * **Aucun (sécurisé)**  : c’est le niveau de sécurité le plus haut.  L'appareil ne peut pas avoir de menace présente et accéder aux ressources de l’entreprise.  Si des menaces sont détectées, l’appareil est évalué comme non conforme.  
+   * **Faible** : l’appareil est conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
+   * **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées, l’appareil est déterminé comme non conforme.
+   * **Élevé** : cette option est la moins sécurisée. Cela autorise tous les niveaux de menace et utilise la protection contre les menaces mobiles Lookout uniquement à des fins de création de rapports.
 
 ![capture d’écran montrant l’option de niveau de menace pour configurer la règle de protection de l’appareil contre les menaces](../media/mtp/mtp-compliance-policy-setting.png)
 

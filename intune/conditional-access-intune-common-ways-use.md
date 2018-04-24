@@ -1,28 +1,28 @@
 ---
-title: "Accès conditionnel avec Microsoft Intune"
-titlesuffix: 
-description: "Découvrez comment l’accès conditionnel Intune est couramment utilisé pour l’accès conditionnel basé sur l’application et sur l’appareil."
-keywords: 
+title: Accès conditionnel avec Microsoft Intune
+titlesuffix: ''
+description: Découvrez comment l’accès conditionnel Intune est couramment utilisé pour l’accès conditionnel basé sur l’application et sur l’appareil.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quelles sont les utilisations courantes de l’accès conditionnel avec Intune ?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Il existe deux types d’accès conditionnel avec Intune : l’accès conditionnel basé sur l’appareil et l’accès conditionnel basé sur l’application. Vous devez configurer les stratégies de conformité associées pour déterminer l’accès conditionnel au niveau de votre organisation. L’accès conditionnel est couramment utilisé pour, par exemple, autoriser ou bloquer l’accès à Exchange sur site, contrôler l’accès au réseau ou intégrer une solution Mobile Threat Defense.
 

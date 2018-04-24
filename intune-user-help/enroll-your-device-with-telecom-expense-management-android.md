@@ -1,27 +1,27 @@
 ---
-title: "Inscrire votre appareil Android pour la gestion des dépenses de télécommunications avec Intune"
-description: "Découvrez comment inscrire un appareil Android dans un logiciel de gestion des dépenses de télécommunications."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Inscrire votre appareil Android pour la gestion des dépenses de télécommunications avec Intune
+description: Découvrez comment inscrire un appareil Android dans un logiciel de gestion des dépenses de télécommunications.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 68f760c84b1394245494809de094e603e388e59b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Inscrire votre appareil Android pour la gestion des dépenses de télécommunications
 
@@ -39,11 +39,11 @@ Appuyez sur la flèche __Suivant__ dans le coin supérieur droit de l’écran p
 
 1. Sélectionnez __Enroll with Microsoft account__ (S’inscrire avec un compte Microsoft).
 
-  ![Une image de l’écran Paramètres de l’application Datalert, qui contient un champ de numéro de téléphone permettant d’inscrire un appareil, apparaît sur la moitié supérieure de l’écran ; un champ « Enroll with Microsoft account » (S’inscrire avec un compte Microsoft ») s’affiche dans la partie inférieure, à condition que vous disposiez d’un compte Microsoft Office 365 et d’un abonnement Intune.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![Une image de l’écran Paramètres de l’application Datalert, qui contient un champ de numéro de téléphone permettant d’inscrire un appareil, apparaît sur la moitié supérieure de l’écran ; un champ « Enroll with Microsoft account » (S’inscrire avec un compte Microsoft ») s’affiche dans la partie inférieure, à condition que vous disposiez d’un compte Microsoft Office 365 et d’un abonnement Intune.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. Choisissez votre compte professionnel ou scolaire à partir des comptes disponibles. Si votre compte n’est pas répertorié, vous pouvez vous connecter à l’aide du bouton **Ajouter un compte**.
 
-  ![Une capture de l’écran « Choisir un compte », contenant un exemple de compte et le bouton Ajouter un compte.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+   ![Une capture de l’écran « Choisir un compte », contenant un exemple de compte et le bouton Ajouter un compte.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
 3. Le programme d’installation de Datalert s’exécute quelques instants, avant de se terminer. Cliquez sur __Terminer__ à la fin de l’installation.
 
@@ -51,15 +51,15 @@ Appuyez sur la flèche __Suivant__ dans le coin supérieur droit de l’écran p
 
 1. Indiquez le numéro de téléphone de votre appareil.
 
-  ![Capture d’écran de l’application Datalert demandant un numéro de téléphone](./media/and-enroll-13-tem-datalert-phone-number.png)
+   ![Capture d’écran de l’application Datalert demandant un numéro de téléphone](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 2. Vous recevrez alors un code de vérification par SMS. Fournissez ce code, puis appuyez sur __OK__.
 
-  ![Capture d’écran de l’application Datalert demandant le code de vérification envoyé par SMS](./media/and-enroll-14-tem-datalert-sms.png)
+   ![Capture d’écran de l’application Datalert demandant le code de vérification envoyé par SMS](./media/and-enroll-14-tem-datalert-sms.png)
 
 3. La procédure d’installation de Datalert s’achève dès que vous fournissez le code de vérification. Appuyez sur __Terminer__. Vous serez alors en mesure d’analyser vos données à l’aide de l’application Datalert.
 
-  ![Capture d’écran de l’application Datalert analysant la consommation des données du jour](./media/and-enroll-15-tem-datalert-monitoring-active.png)
+   ![Capture d’écran de l’application Datalert analysant la consommation des données du jour](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
 Une fois inscrit, vous commencerez à visualiser votre consommation des données dans l’application Datalert.
 

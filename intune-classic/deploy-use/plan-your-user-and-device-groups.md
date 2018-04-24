@@ -1,28 +1,28 @@
 ---
-title: "Planifier vos groupes d’utilisateurs et d’appareils"
-description: "Planifiez des groupes pour répondre aux besoins de votre organisation."
-keywords: 
+title: Planifier vos groupes d’utilisateurs et d’appareils
+description: Planifiez des groupes pour répondre aux besoins de votre organisation.
+keywords: ''
 author: sanchusa
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c1f06cc59ff81483d9e54b23435af720d919155
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 679399f306f3837a010cc01799c7567c1e5b5b39
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="plan-your-user-and-device-groups"></a>Planifier vos groupes d’utilisateurs et d’appareils
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Les groupes créés dans Intune vous permettent de gérer vos utilisateurs et appareils avec une grande souplesse. Vous pouvez configurer des groupes en fonction des besoins de votre organisation en fonction :
 
@@ -84,7 +84,7 @@ Les stratégies étant déployées sur des groupes, la hiérarchie des groupes e
 
     Toutefois, vous ne pouvez pas ajouter un membre à un groupe enfant si le membre est exclu du groupe parent.
 
-- L'appartenance au groupe est récursive. Exemple :
+- L'appartenance au groupe est récursive. Par exemple :
 
     * **Patrice** est membre d'un seul groupe, le groupe de sécurité **Utilisateurs d'ordinateurs portables** .
 

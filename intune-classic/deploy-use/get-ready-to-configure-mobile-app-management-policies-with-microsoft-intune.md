@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Préparatifs avant la configuration de stratégies de protection des applications dans le portail Azure
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique décrit les prérequis et les étapes que vous devez effectuer **avant** de pouvoir créer des stratégies de protection des applications dans le portail Azure.
 
@@ -57,7 +57,7 @@ Pour obtenir des instructions sur la création d’une stratégie de protection 
 ##  <a name="supported-platforms"></a>Plateformes prises en charge
 - iOS 8.1 ou version ultérieure
 - Android 4 ou version ultérieure
-- Windows 10
+- Windows 10
 
 >[!NOTE]
 >Depuis la version 1703, vous pouvez définir les stratégies de protection des applications pour les appareils Windows 10 dans la GAM sans scénario d’inscription. Pour plus d’informations, consultez [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
@@ -74,18 +74,18 @@ Pour afficher la liste complète des applications Microsoft prises en charge, ac
 
 ## <a name="prerequisites"></a>Prérequis
 
--   **Un abonnement Microsoft Intune**. Les utilisateurs ont besoin de licences Intune pour obtenir les applications avec des stratégies de protection d’application.
-Vous disposez déjà d’un abonnement Intune si vous utilisez actuellement Intune pour gérer vos appareils. Vous disposez également d’un abonnement Intune si vous avez acheté une licence EMS (Enterprise Mobility Suite). Si vous essayez Intune pour tester les fonctionnalités de gestion des applications mobiles, vous pouvez obtenir un compte d’évaluation dans la [page Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+- **Un abonnement Microsoft Intune**. Les utilisateurs ont besoin de licences Intune pour obtenir les applications avec des stratégies de protection d’application.
+  Vous disposez déjà d’un abonnement Intune si vous utilisez actuellement Intune pour gérer vos appareils. Vous disposez également d’un abonnement Intune si vous avez acheté une licence EMS (Enterprise Mobility Suite). Si vous essayez Intune pour tester les fonctionnalités de gestion des applications mobiles, vous pouvez obtenir un compte d’évaluation dans la [page Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Pour vérifier si vous avez un abonnement Intune, dans le portail Office, accédez à la page de **facturation**.  Si vous avez un abonnement, Intune doit être indiqué comme **Actif** dans les abonnements.
+  Pour vérifier si vous avez un abonnement Intune, dans le portail Office, accédez à la page de **facturation**.  Si vous avez un abonnement, Intune doit être indiqué comme **Actif** dans les abonnements.
 
--   **Un abonnement Office 365**, qui est nécessaire pour les opérations suivantes :
+- **Un abonnement Office 365**, qui est nécessaire pour les opérations suivantes :
 
   - Appliquer des stratégies de protection des applications aux applications prenant en charge plusieurs identités.
 
   - Créer des comptes professionnels SharePoint Online et Exchange Online. Les versions locales d’Exchange et de SharePoint ne sont pas prises en charge.
 
--   **Configuration de Skype Entreprise Online pour l’authentification moderne**. Pour en savoir plus, voir [Activer l’authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+- **Configuration de Skype Entreprise Online pour l’authentification moderne**. Pour en savoir plus, voir [Activer l’authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) pour créer des utilisateurs. Azure AD authentifie les utilisateurs lorsqu’ils ouvrent l’application et entrent leurs informations d’identification professionnelles.

@@ -1,31 +1,30 @@
 ---
-title: "Qu’est-ce que la gestion des applications Microsoft Intune ?"
-titlesuffix: 
-description: "Découvrez les concepts de base de la gestion des applications avec Microsoft Intune."
-keywords: 
+title: Qu’est-ce que la gestion des applications Microsoft Intune ?
+titlesuffix: ''
+description: Découvrez les concepts de base de la gestion des applications avec Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/09/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune vous permet, en tant qu’administrateur informatique, de gérer les applications mobiles utilisées par le personnel de votre entreprise. Cette fonctionnalité s’ajoute à la gestion des appareils et à la protection des données. Dans le cadre de cette fonctionnalité, une de vos priorités est que vos utilisateurs finaux aient accès aux applications dont ils ont besoin pour effectuer leur travail. Cela peut être un défi, car :
 - Il existe un large éventail de plateformes d'appareils et de types d’applications.
@@ -65,19 +64,19 @@ Intune propose une gamme de fonctionnalités pour vous aider à obtenir les appl
 Vous trouverez la plupart des éléments liés à l’application dans la charge de travail **Mobile Apps**, à laquelle vous pouvez accéder comme suit :
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
 
     ![La charge de travail Mobile Apps](./media/apps-workload.png)
 
 Les informations ci-dessous correspondent aux options disponibles dans le panneau **Applications mobiles**.
 
-### <a name="manage"></a>Gestion
-- **Applications** : sélectionnez cette option pour ajouter, afficher, assigner et analyser les applications que votre personnel utilise. Pour plus d'informations, consultez les articles suivants :
+### <a name="manage"></a>Gérer
+- **Applications** : sélectionnez cette option pour ajouter, afficher, assigner et analyser les applications que votre personnel utilise. Pour plus d’informations, consultez les articles suivants :
     - [Ajouter des applications](apps-add.md)
     - [Attribuer des applications](apps-deploy.md)
     - [Surveillance des applications](apps-monitor.md)
-- **Stratégies de configuration des applications** : les stratégies de configuration des applications vous permettent de fournir des paramètres pouvant être nécessaires quand un utilisateur exécute une application. Pour plus d'informations, consultez les articles suivants :
+- **Stratégies de configuration des applications** : les stratégies de configuration des applications vous permettent de fournir des paramètres pouvant être nécessaires quand un utilisateur exécute une application. Pour plus d’informations, consultez les articles suivants :
     - [Stratégies de configuration des applications pour Intune](app-configuration-policies-overview.md)
         - [Stratégies de configuration des applications iOS](app-configuration-policies-use-ios.md)
         - [Stratégies de configuration des applications Android](app-configuration-policies-use-android.md)
@@ -91,7 +90,7 @@ Les informations ci-dessous correspondent aux options disponibles dans le pannea
 Pour plus d'informations, voir [Gérer les applications](app-management.md).
 
 ### <a name="monitor"></a>Surveillance
-- **Licences d’applications** : affichez, affectez et surveillez les applications achetées en volume dans les App Stores. Pour plus d'informations, consultez les articles suivants :
+- **Licences d’applications** : affichez, affectez et surveillez les applications achetées en volume dans les App Stores. Pour plus d’informations, consultez les articles suivants :
     - [Applications du Programme d'achat en volume (VPP) iOS](vpp-apps-ios.md)
     - [Applications achetées en volume sur le Microsoft Store pour Entreprises](windows-store-for-business.md)
 - **Applications découvertes** : affiche toutes les applications qui ont été affectées par Intune et installées sur un appareil.

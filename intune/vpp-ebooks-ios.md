@@ -15,16 +15,16 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ef786346bb80b517bba4436358d43fe0eef2b4d
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 35f5618037a30a9157551c5b0985915eca33d3ad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les livres électroniques iOS que vous avez achetés par le biais d’un programme d’achat en volume avec Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Le Programme d’achat en volume (VPP) Apple vous permet d’acheter plusieurs licences pour un livre que vous souhaitez distribuer aux utilisateurs dans votre entreprise. Vous pouvez distribuer des livres à partir du Business Store ou de l’Education Store.
 
@@ -63,7 +63,7 @@ Avant de commencer, vous devez obtenir un jeton VPP auprès d’Apple et l’imp
     - **Type de compte VPP** : choisissez **Entreprise** ou **Éducation**.
 4. Quand vous avez terminé, cliquez sur **Créer**.
 
-Le jeton est affiché dans le volet de liste de jetons.
+Le jeton est affiché dans le volet de la liste de jetons.
 
 
 Vous pouvez synchroniser les données détenues par Apple avec Intune à tout moment en sélectionnant **Synchroniser maintenant**.
@@ -72,7 +72,7 @@ Vous pouvez synchroniser les données détenues par Apple avec Intune à tout mo
 
 3. Dans le volet **Intune**, choisissez **Livres électroniques**.
 1. Dans la charge de travail **Livres électroniques**, choisissez **Gérer** > **Tous les livres électroniques**.
-2. Dans le volet contenant la liste des livres, choisissez le livre à attribuer, puis choisissez « **...** » > **Attribuer des groupes**.
+2. Dans le volet contenant la liste des livres, choisissez le livre à attribuer, puis choisissez «  **...**  » > **Attribuer des groupes**.
 3. Dans le volet <*nom du livre*> - **Groupes affectés**, choisissez **Gérer** > **Groupes affectés**.
 4. Choisissez **Affecter des groupes** puis, dans le volet **Sélectionner des groupes**, sélectionnez les groupes d’utilisateurs Azure AD auxquels vous souhaitez affecter le livre. Pour le moment, les groupes d’appareils ne sont pas pris en charge.
 Choisissez une action d’attribution **Disponible** ou **Obligatoire**. 

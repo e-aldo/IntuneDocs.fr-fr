@@ -1,25 +1,25 @@
 ---
 title: Configurer un VPN par application dans Microsoft Intune pour les appareils iOS
-titleSuffix: 
-description: "Spécifiez les applications gérées qui peuvent utiliser votre réseau privé virtuel (VPN, Virtual Private Network) sur les appareils iOS gérés par Intune."
-keywords: 
+titleSuffix: ''
+description: Spécifiez les applications gérées qui peuvent utiliser votre réseau privé virtuel (VPN, Virtual Private Network) sur les appareils iOS gérés par Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurer un VPN par application dans Intune pour les appareils iOS
 
@@ -42,7 +42,7 @@ Exportez le certificat et ajoutez l’Autorité de certification.
 Créez ou choisissez un groupe existant dans Azure Active Directory (Azure AD) pour contenir les membres qui ont accès au VPN par application.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 2. Choisissez **Groupes** et cliquez sur **Nouveau groupe**.
 3. Sélectionnez un **Type de groupe** pour le groupe. 
 3. Entrez le **Nom de groupe** du groupe. 
@@ -50,14 +50,14 @@ Créez ou choisissez un groupe existant dans Azure Active Directory (Azure AD) p
 5. Sélectionnez **Affecté** comme **Type d’appartenance**.
 7. Recherchez les utilisateurs VPN par nom ou adresse e-mail dans le volet **Membres**.
 8. Sélectionnez chaque utilisateur et cliquez sur **Sélectionner**.
-9. Cliquez sur **Créer**
+9. Cliquez sur **Créer**.
 
 ## <a name="create-a-trusted-certificate-profile"></a>Créer un profil de certificat approuvé
 
 Importez le certificat racine du serveur VPN émis par l’Autorité de certification dans un profil créé dans Intune. Le profil de certificat approuvé permet à l’appareil iOS d’approuver automatiquement l’Autorité de certification que présente le serveur VPN.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 2. Choisissez **Configuration de l’appareil** et cliquez sur **Profils**.
 3. Cliquez sur **Créer un profil**. Dans **Créer un profil** :
     1. Tapez le **Nom**.
@@ -65,16 +65,16 @@ Importez le certificat racine du serveur VPN émis par l’Autorité de certific
     3. Sélectionnez **iOS** pour la **Plateforme**.
     4. Sélectionnez **Certificat approuvé** pour le **Type de profil**.
 4. Cliquez sur l’icône de dossier et accédez à votre certificat VPN (fichier .cer) que vous avez exporté à partir de votre console d’administration VPN. Cliquez sur **OK**.
-5. Cliquez sur **Create (Créer)**.
+5. Cliquez sur **Créer**.
 
-    ![Créer un profil de certificat approuvé](media\vpn-per-app-create-trusted-cert.png)
+    ![Créer un profil de certificat approuvé](./media/vpn-per-app-create-trusted-cert.png)
 
 ## <a name="create-a-scep-certificate-profile"></a>Créer un profil de certificat SCEP
 
 Le profil de certificat racine approuvé permet à iOS d’approuver automatiquement le serveur VPN. Le certificat SCEP fournit les informations d’identification du client VPN iOS au serveur VPN. Il permet à l’appareil d’authentifier en mode silencieux sans demander à l’utilisateur de l’appareil iOS un nom d’utilisateur et un mot de passe. 
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 2. Choisissez **Configuration de l’appareil** et cliquez sur **Profils**.
 3. Cliquez sur **Créer un profil**. Dans **Créer un profil** :
     1. Tapez le **Nom**.
@@ -92,16 +92,16 @@ Le profil de certificat racine approuvé permet à iOS d’approuver automatique
 12. Cliquez sur **Ajouter**.
 13. Tapez l’***URL du serveur*** et cliquez sur **Ajouter**.
 14. Cliquez sur **OK**.
-15. Cliquez sur **Create (Créer)**.
+15. Cliquez sur **Créer**.
 
-    ![Créer un profil de certificat SCEP](media\vpn-per-app-create-scep-cert.png)
+    ![Créer un profil de certificat SCEP](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>Créer un profil VPN par application
 
 Le profil VPN contient le certificat SCEP qui inclut les informations d’identification du client, les informations de connexion au VPN et l’indicateur VPN par application permettant d’activer la fonctionnalité VPN par application pour que l’application iOS l’utilise.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 2. Choisissez **Configuration de l’appareil** et cliquez sur **Profils**.
 3. Cliquez sur **Créer un profil**. Dans **Créer un profil** :
     1. Tapez le **Nom**.
@@ -121,9 +121,9 @@ Le profil VPN contient le certificat SCEP qui inclut les informations d’identi
     2. Tapez l’URL du VPN et cliquez sur **Ajouter**.
     3. Cliquez sur **OK**.
 6. Cliquez sur **OK**.
-7. Cliquez sur **Create (Créer)**.
+7. Cliquez sur **Créer**.
 
-    ![Créer un profil VPN par application](media\vpn-per-app-create-vpn-profile.png)
+    ![Créer un profil VPN par application](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Associer une application au profil VPN
@@ -131,7 +131,7 @@ Le profil VPN contient le certificat SCEP qui inclut les informations d’identi
 Après avoir ajouté votre profil VPN, associez l’application et le groupe Azure AD au profil.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 2. Choisissez **Applications mobiles**.
 3. Cliquez sur **Applications**.
 4. Sélectionnez l’application dans la liste des applications.
@@ -146,7 +146,7 @@ Après avoir ajouté votre profil VPN, associez l’application et le groupe Azu
 
 9. Cliquez sur **OK**, puis sur **Enregistrer**.
 
-    ![Associer une application au VPN](media\vpn-per-app-app-to-vpn.png)
+    ![Associer une application au VPN](./media/vpn-per-app-app-to-vpn.png)
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>Vérifier la connexion sur l’appareil iOS
 

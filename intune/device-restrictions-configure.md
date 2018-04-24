@@ -1,27 +1,26 @@
 ---
-title: "Configurer les paramètres de restriction des appareils dans Microsoft Intune"
-titleSuffix: 
-description: "Découvrez comment utiliser Microsoft Intune pour configurer les paramètres et les fonctionnalités des appareils que vous gérez."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Configurer des paramètres de restriction d’appareils dans Microsoft Intune - Azure | Microsoft Docs
+description: Ajouter un profil d’appareil pour limiter les fonctionnalités sur les appareils Android, Mac OS, iOS, Windows Phone et Windows 10 dans Microsoft Intune
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres de restriction d’appareils dans Microsoft Intune
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurer des paramètres de restriction d’appareils dans Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Les restrictions de l’appareil vous permettent de contrôler un large éventail de paramètres et de fonctionnalités que vous gérez dans diverses catégories comme :
 - Sécurité
@@ -36,11 +35,9 @@ Découvrez les principes de base des profils de restriction, puis lisez d’autr
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Créer un profil d’appareil contenant des paramètres de restriction de l’appareil
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans la page **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans la page **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
-3. Dans la page **Profils**, choisissez **Créer un profil**.
-4. Dans la page **Créer un profil**, entrez un **Nom** et une **Description** pour le profil de restriction d’appareil.
+2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
+3. Sélectionnez **Configuration de l’appareil** > **Profils** > **Créer un profil**.
+4. Entrez un **Nom** et une **Description** pour le profil de restriction de l’appareil.
 5. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres personnalisés. Actuellement, vous pouvez choisir l’une des plateformes suivantes pour les paramètres de restriction de l’appareil :
     - **Android**
     - **iOS**

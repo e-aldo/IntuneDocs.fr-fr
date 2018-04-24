@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Portail Azure pour les stratégies de protection des applications
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Le portail Azure permet de créer et de gérer des stratégies de protection des applications pour :
 
@@ -32,9 +32,9 @@ Le portail Azure permet de créer et de gérer des stratégies de protection des
 - Les applications qui s’exécutent sur des appareils qui ne sont inscrits dans **aucune** solution de gestion des appareils mobiles.
 - Les applications qui s’exécutent sur des appareils qui sont **inscrits dans une solution de gestion des appareils mobiles tierce**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de protection des applications, mais vous pouvez également créer une stratégie de protection des applications qui prend en charge des applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) pour les scénarios de gestion des appareils mobiles.
-
+> 
 > La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de protection des applications disponibles. En outre, si vous créez des stratégies de protection des applications dans la console d’administration Intune et le portail Azure, les stratégies créées dans le portail Azure remplacent celles créées dans la console d’administration Intune. Dans ce scénario, les stratégies de protection des applications du portail Azure sont appliquées aux applications et déployées sur les utilisateurs.
 
 

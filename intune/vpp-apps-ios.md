@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les applications iOS achetées par le biais d’un programme d’achat en volume avec Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 L’App Store iOS vous permet d’acheter plusieurs licences pour une application que vous souhaitez exécuter dans votre entreprise. Le fait d’acheter plusieurs copies aide à gérer efficacement les applications de l’entreprise.
 
@@ -152,6 +152,17 @@ Pour révoquer la licence de toutes les applications VPP pour un jeton VPP donn�
 ## <a name="further-information"></a>Informations supplémentaires
 
 Quand un utilisateur avec un appareil éligible essaie pour la première fois d’installer une application VPP sur un appareil, il est invité à participer au programme VPP d’Apple. Il doit accepter pour que l’installation de l’application se poursuive. L’invitation à participer au Programme d’achat en volume (VPP) Apple nécessite que l’utilisateur puisse utiliser l’application iTunes sur l’appareil iOS. Si vous avez défini une stratégie pour désactiver l’application iTunes Store, la gestion des licences par utilisateur pour le programme VPP ne fonctionne pas. La solution consiste à autoriser l’application iTunes en supprimant la stratégie ou à utiliser la gestion des licences par appareil.
+
+## <a name="frequently-asked-questions"></a>Forum aux questions
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>Combien de temps met le portail pour mettre à jour le nombre de licences, une fois qu’une application est installée ou supprimée de l’appareil ?
+La licence doit être mise à jour dans les heures qui suivent l’installation ou la désinstallation d’une application. Notez que si l’utilisateur final supprime l’application de l’appareil, la licence reste affectée à cet utilisateur ou appareil.
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>Est-il possible de manquer d’abonnements pour une application et, si oui, dans quelles circonstances ?
+Oui. L’administrateur Intune peut manquer d’abonnements pour une application. C’est le cas, par exemple, si l’administrateur achète 100 licences pour l’application XYZ, puis cible un groupe de 500 membres. Les 100 premiers membres (utilisateurs ou appareils) reçoivent la licence qui leur est affectée. En revanche, aucune licence n’est affectée aux membres restants.
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Je comprends qu’Intune synchronise automatiquement les licences d’application chaque jour auprès d’Apple, est-ce exact ?
+Intune synchronise les licences d’application toutes les 15 heures auprès d’Apple.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

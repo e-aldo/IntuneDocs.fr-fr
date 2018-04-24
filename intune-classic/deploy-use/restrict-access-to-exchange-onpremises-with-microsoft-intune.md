@@ -1,29 +1,29 @@
 ---
-title: "Protéger l’accès à la messagerie Exchange sur site"
-description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à la messagerie de votre entreprise sur Exchange en local."
-keywords: 
+title: Protéger l’accès à la messagerie Exchange sur site
+description: Utilisez l’accès conditionnel pour protéger et contrôler l’accès à la messagerie de votre entreprise sur Exchange en local.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bdb5fbf7bb382c9ad503f584b499f5275885ef1
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73535e35605bbc9ca7123935e1816e90b5e60e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Protéger l’accès à la messagerie Exchange sur site et Exchange Online Dedicated (environnement hérité) avec Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez configurer l’accès conditionnel pour contrôler l’accès à la messagerie Exchange sur site ou Exchange Online Dedicated (environnement hérité) avec Microsoft Intune.
 Pour en savoir plus sur le fonctionnement de l’accès conditionnel, lisez l’article [Protéger l’accès à la messagerie et aux services O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
@@ -53,13 +53,13 @@ Vérifiez les éléments suivants :
 
 Lorsque vous configurez des stratégies d’accès conditionnel et les ciblez sur un utilisateur, l’**appareil** dont l’utilisateur se sert pour se connecter à sa messagerie doit :
 
--  Être **inscrit** auprès d’Intune ou être un PC joint à un domaine.
+- Être **inscrit** auprès d’Intune ou être un PC joint à un domaine.
 
--  Être **inscrit dans Azure Active Directory**. En outre, l’ID Exchange ActiveSync du client doit être inscrit auprès d’Azure Active Directory.
+- Être **inscrit dans Azure Active Directory**. En outre, l’ID Exchange ActiveSync du client doit être inscrit auprès d’Azure Active Directory.
 
   Le service d’inscription Azure Active Directory pour appareils est activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service d’inscription d’appareils AD FS ne verront pas les appareils inscrits dans l’annuaire Active Directory local. **Cela ne s’applique pas aux PC Windows ni aux appareils Windows Phone**.
 
--   Être **conforme** à toutes les stratégies de conformité Intune déployées sur cet appareil.
+- Être **conforme** à toutes les stratégies de conformité Intune déployées sur cet appareil.
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Fonctionnement de l’accès conditionnel avec Exchange sur site
 
@@ -91,35 +91,35 @@ Les éléments suivants sont pris en charge :
 
 ##  <a name="configure-a-conditional-access-policy"></a>Configurer une stratégie d’accès conditionnel
 
-1.  Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie Exchange sur site**.
-![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
+1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Accès conditionnel** > **Stratégie Exchange sur site**.
+   ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  Configurez la stratégie avec les paramètres nécessaires : ![Capture d’écran de la page Stratégie Exchange sur site](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2. Configurez la stratégie avec les paramètres nécessaires : ![Capture d’écran de la page Stratégie Exchange sur site](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Empêcher les applications de messagerie d’accéder à Exchange sur site si l’appareil n’est pas conforme ou n’est pas inscrit à Microsoft Intune :** Quand vous sélectionnez cette option, les appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité n’ont pas accès aux services Exchange.
+   - **Empêcher les applications de messagerie d’accéder à Exchange sur site si l’appareil n’est pas conforme ou n’est pas inscrit à Microsoft Intune :** Quand vous sélectionnez cette option, les appareils qui ne sont pas gérés par Intune ou qui ne sont pas conformes à une stratégie de conformité n’ont pas accès aux services Exchange.
 
-  - **Substitution de règle par défaut - Toujours autoriser les appareils inscrits et conformes pour l’accès à Exchange :**  Quand vous activez cette option, les appareils inscrits dans Intune et conformes aux stratégies de conformité sont autorisés à accéder à Exchange.
-  Cette règle se substitue à la **Règle par défaut**, ce qui signifie que même si vous définissez la mise en quarantaine ou un blocage de l’accès par le biais de la **Règle par défaut**, les appareils inscrits et conformes peuvent toujours accéder à Exchange.
+   - **Substitution de règle par défaut - Toujours autoriser les appareils inscrits et conformes pour l’accès à Exchange :**  Quand vous activez cette option, les appareils inscrits dans Intune et conformes aux stratégies de conformité sont autorisés à accéder à Exchange.
+     Cette règle se substitue à la **Règle par défaut**, ce qui signifie que même si vous définissez la mise en quarantaine ou un blocage de l’accès par le biais de la **Règle par défaut**, les appareils inscrits et conformes peuvent toujours accéder à Exchange.
 
-  - **Groupes ciblés** : Sélectionnez les groupes d’utilisateurs Intune qui doivent inscrire leurs appareils auprès d’Intune pour pouvoir accéder à Exchange.
+   - **Groupes ciblés** : Sélectionnez les groupes d’utilisateurs Intune qui doivent inscrire leurs appareils auprès d’Intune pour pouvoir accéder à Exchange.
 
-  - **Groupes exemptés** : Sélectionnez les groupes d’utilisateurs Intune qui sont exempts de la stratégie d’accès conditionnel. Les utilisateurs de cette liste sont exemptés même s’ils se trouvent également dans la liste **Groupes ciblés**.
+   - **Groupes exemptés** : Sélectionnez les groupes d’utilisateurs Intune qui sont exempts de la stratégie d’accès conditionnel. Les utilisateurs de cette liste sont exemptés même s’ils se trouvent également dans la liste **Groupes ciblés**.
 
-  - **Exceptions de plateforme** : Choisissez **Ajouter une règle** pour configurer une règle qui définit des niveaux d’accès pour les familles et modèles d’appareils mobiles spécifiés. Étant donné que ces appareils peuvent être de n’importe quel type, vous pouvez également configurer des types d’appareils non pris en charge par Intune.
+   - **Exceptions de plateforme** : Choisissez **Ajouter une règle** pour configurer une règle qui définit des niveaux d’accès pour les familles et modèles d’appareils mobiles spécifiés. Étant donné que ces appareils peuvent être de n’importe quel type, vous pouvez également configurer des types d’appareils non pris en charge par Intune.
 
-  - **Règle par défaut** : Si vous avez un appareil qui n’est pas couvert par d’autres règles, vous pouvez choisir de l’autoriser à accéder à Exchange, de le bloquer ou de le mettre en quarantaine. Quand vous définissez la règle de façon à autoriser l’accès aux appareils inscrits et conformes, l’accès à la messagerie est accordé automatiquement aux appareils iOS, Windows et Samsung KNOX. L’utilisateur n’a pas besoin de suivre un processus quelconque pour accéder à sa messagerie électronique.
-      - Sur les appareils Android qui n’exécutent pas Samsung KNOX, les utilisateurs obtiennent un message électronique de mise en quarantaine comprenant une procédure pas à pas guidée qu’ils doivent suivre pour vérifier l’inscription et la conformité avant de pouvoir accéder à la messagerie. Si vous définissez la règle de blocage d’accès ou de mise en quarantaine des appareils, aucun appareil ne peut accéder à Exchange, qu’il soit ou non déjà inscrit dans Intune. Pour éviter que les appareils inscrits et conformes soient affectés par cette règle, cochez la case **Substitution de règle par défaut**.
->[!TIP]
->Si vous avez l’intention de bloquer au préalable tous les appareils avant de leur accorder l’accès à la messagerie électronique, choisissez la règle de blocage d’accès ou de mise en quarantaine. La règle par défaut s’applique à tous les types d’appareils. Ainsi, les types d’appareils que vous configurez en tant qu’exceptions de plateforme et qui ne sont pas pris en charge par Intune sont également affectés.
+   - **Règle par défaut** : Si vous avez un appareil qui n’est pas couvert par d’autres règles, vous pouvez choisir de l’autoriser à accéder à Exchange, de le bloquer ou de le mettre en quarantaine. Quand vous définissez la règle de façon à autoriser l’accès aux appareils inscrits et conformes, l’accès à la messagerie est accordé automatiquement aux appareils iOS, Windows et Samsung KNOX. L’utilisateur n’a pas besoin de suivre un processus quelconque pour accéder à sa messagerie électronique.
+     - Sur les appareils Android qui n’exécutent pas Samsung KNOX, les utilisateurs obtiennent un message électronique de mise en quarantaine comprenant une procédure pas à pas guidée qu’ils doivent suivre pour vérifier l’inscription et la conformité avant de pouvoir accéder à la messagerie. Si vous définissez la règle de blocage d’accès ou de mise en quarantaine des appareils, aucun appareil ne peut accéder à Exchange, qu’il soit ou non déjà inscrit dans Intune. Pour éviter que les appareils inscrits et conformes soient affectés par cette règle, cochez la case **Substitution de règle par défaut**.
+       >[!TIP]
+       >Si vous avez l’intention de bloquer au préalable tous les appareils avant de leur accorder l’accès à la messagerie électronique, choisissez la règle de blocage d’accès ou de mise en quarantaine. La règle par défaut s’applique à tous les types d’appareils. Ainsi, les types d’appareils que vous configurez en tant qu’exceptions de plateforme et qui ne sont pas pris en charge par Intune sont également affectés.
 
-  - **Notification utilisateur :** en plus du message électronique de notification envoyé par Exchange, Intune envoie un message électronique qui contient les étapes à suivre pour débloquer l’appareil. Vous pouvez modifier le message par défaut pour le personnaliser selon vos besoins. Si l’appareil de l’utilisateur est bloqué avant de recevoir le courrier électronique de notification Intune contenant des instructions de correction (ce courrier est envoyé dans la boîte aux lettres Exchange de l’utilisateur), l'utilisateur peut utiliser un appareil non bloqué ou recourir à une autre méthode pour accéder à Exchange et afficher le message.
-      - Cela est particulièrement vrai quand le blocage ou la mise en quarantaine est défini avec la **Règle par défaut**. Dans ce cas, l’utilisateur doit accéder à son magasin d’applications, télécharger l’application du portail d’entreprise Microsoft et inscrire son appareil. Cela s’applique aux appareils iOS, Windows et Samsung KNOX. Sur les appareils qui n’exécutent pas Samsung KNOX, vous devez envoyer l’e-mail de quarantaine à un autre compte de messagerie. L’utilisateur doit copier l’e-mail sur l’appareil bloqué pour terminer le processus d’inscription et de mise en conformité.
-  > [!NOTE]
-  > Pour que le message électronique de notification puisse être envoyé par Exchange, vous devez spécifier le compte à utiliser pour l’envoyer.
-  >
-  > Pour plus d’informations, consultez [Configurer le connecteur Exchange sur site pour Exchange sur site ou hébergé](intune-on-premises-exchange-connector.md).
+   - **Notification utilisateur :** en plus du message électronique de notification envoyé par Exchange, Intune envoie un message électronique qui contient les étapes à suivre pour débloquer l’appareil. Vous pouvez modifier le message par défaut pour le personnaliser selon vos besoins. Si l’appareil de l’utilisateur est bloqué avant de recevoir le courrier électronique de notification Intune contenant des instructions de correction (ce courrier est envoyé dans la boîte aux lettres Exchange de l’utilisateur), l'utilisateur peut utiliser un appareil non bloqué ou recourir à une autre méthode pour accéder à Exchange et afficher le message.
+     - Cela est particulièrement vrai quand le blocage ou la mise en quarantaine est défini avec la **Règle par défaut**. Dans ce cas, l’utilisateur doit accéder à son magasin d’applications, télécharger l’application du portail d’entreprise Microsoft et inscrire son appareil. Cela s’applique aux appareils iOS, Windows et Samsung KNOX. Sur les appareils qui n’exécutent pas Samsung KNOX, vous devez envoyer l’e-mail de quarantaine à un autre compte de messagerie. L’utilisateur doit copier l’e-mail sur l’appareil bloqué pour terminer le processus d’inscription et de mise en conformité.
+       > [!NOTE]
+       > Pour que le message électronique de notification puisse être envoyé par Exchange, vous devez spécifier le compte à utiliser pour l’envoyer.
+       >
+       > Pour plus d’informations, consultez [Configurer le connecteur Exchange sur site pour Exchange sur site ou hébergé](intune-on-premises-exchange-connector.md).
 
-3.  Quand vous avez terminé, choisissez **Enregistrer**.
+3. Quand vous avez terminé, choisissez **Enregistrer**.
 
 -   La stratégie d’accès conditionnel prend effet immédiatement. Il est donc inutile de la déployer.
 

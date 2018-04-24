@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 22018a241664a02aa99b9a3b1a53aa559ab42db5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX Standard
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Appliquez les procédures de cette rubrique pour créer une stratégie personnalisée Microsoft Intune qui crée l’un des éléments suivants :
 
@@ -39,21 +39,21 @@ Ces paramètres peuvent uniquement être utilisés par les appareils qui exécut
 3. Fournissez un nom et éventuellement une description pour la stratégie puis, dans la section **Paramètres OMA-URI**, choisissez **Ajouter**.
 4. Dans la boîte de dialogue **Ajouter ou modifier un paramètre OMA-URI**, spécifiez ce qui suit. Pour obtenir la liste des applications dont l’exécution est bloquée sur l’appareil :
     
-    - **Nom du paramètre**. Entrez **PreventStartPackages**.
-    - **Description du paramètre**. Entrez une description facultative, comme « Liste des applications dont l’exécution est bloquée ».
-    -   **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
-    -   **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
-    -   **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez bloquer. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
+   - **Nom du paramètre**. Entrez **PreventStartPackages**.
+   - **Description du paramètre**. Entrez une description facultative, comme « Liste des applications dont l’exécution est bloquée ».
+   - **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
+   - **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
+   - **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez bloquer. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
 
-    Pour obtenir la liste des applications que les utilisateurs sont autorisés à installer à partir du Google Play Store tout en excluant toutes les autres applications :
+     Pour obtenir la liste des applications que les utilisateurs sont autorisés à installer à partir du Google Play Store tout en excluant toutes les autres applications :
 
-    - **Nom du paramètre**. Entrez **AllowInstallPackages**.
-    - **Description du paramètre**. Entrez une description facultative, comme « Liste des applications que les utilisateurs peuvent installer à partir de Google Play ».
-    - **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
-    - **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**.
-    - **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
+   - **Nom du paramètre**. Entrez **AllowInstallPackages**.
+   - **Description du paramètre**. Entrez une description facultative, comme « Liste des applications que les utilisateurs peuvent installer à partir de Google Play ».
+   - **Type de données**. Dans la liste déroulante, choisissez **Chaîne**.
+   - **OMA-URI**. Entrez **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**.
+   - **Valeur**. Entrez une liste de noms de packages d’applications que vous souhaitez autoriser. Vous pouvez utiliser **; : ,** ou **|** comme délimiteur. (Exemple : package1;package2;)
 
-4. Cliquez sur **OK**, puis sur **Enregistrer la stratégie**. 
+5. Cliquez sur **OK**, puis sur **Enregistrer la stratégie**. 
 
 >[!TIP]
 > Vous pouvez connaître l’ID de package d’une application en accédant à l’application dans le Google Play Store. L’ID de package est contenu dans l’URL de la page d’application. Par exemple, l’ID de package de l’application Microsoft Word est **com.microsoft.office.word**.

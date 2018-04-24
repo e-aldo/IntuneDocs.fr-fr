@@ -1,29 +1,29 @@
 ---
-title: "Protéger les données d’application avec des stratégies de GAM"
-description: "Cette rubrique explique comment les stratégies de gestion des applications mobiles peuvent vous aider à protéger les données de votre entreprise, empêcher toute perte de données et séparer les informations personnelles des informations professionnelles."
-keywords: 
+title: Protéger les données d’application avec des stratégies de GAM
+description: Cette rubrique explique comment les stratégies de gestion des applications mobiles peuvent vous aider à protéger les données de votre entreprise, empêcher toute perte de données et séparer les informations personnelles des informations professionnelles.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: dcdee874e42aa9511c09fda43a8cc662afaea38a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Protéger les données d’application à l’aide de stratégies de protection des applications avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Comment protéger les données d’application
 Vos employés utilisent des appareils mobiles pour des tâches à la fois personnelles et professionnelles. Vous voulez qu’ils restent productifs, mais vous voulez éviter toute perte de données intentionnelle ou non.  Vous voulez aussi pouvoir protéger les données de votre entreprise auxquelles les employés accèdent sur des appareils que vous ne gérez pas.

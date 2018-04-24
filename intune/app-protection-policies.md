@@ -1,30 +1,29 @@
 ---
-title: "Créer et déployer des stratégies de protection d’applications"
+title: Créer et déployer des stratégies de protection d’applications
 titleSuffix: Microsoft Intune
-description: "Découvrez comment créer et affecter des stratégies de protection des applications Microsoft Intune."
-keywords: 
+description: Découvrez comment créer et affecter des stratégies de protection des applications Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Guide pratique de gestion et affectation des stratégies de protection des applications
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Découvrez comment créer des stratégies de protection des applications Microsoft Intune et les affecter à vos utilisateur. Cette rubrique décrit également comment modifier des stratégies existantes.
 
@@ -37,28 +36,28 @@ Les stratégies de protection d'application peuvent être appliquées à des app
 Si vous recherchez une liste d’applications prises en charge par la gestion des applications mobiles, consultez [Liste d’applications de gestion des applications mobiles](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Créer une stratégie de protection des applications
-1.  Dans la charge de travail **Applications mobiles**, sélectionnez **Stratégies de protection des applications** dans la section **Gérer**. Cette sélection ouvre les informations des **Stratégies de protection des applications**, où vous pouvez créer des stratégies et modifier les stratégies existantes.
+1. Dans la charge de travail **Applications mobiles**, sélectionnez **Stratégies de protection des applications** dans la section **Gérer**. Cette sélection ouvre les informations des **Stratégies de protection des applications**, où vous pouvez créer des stratégies et modifier les stratégies existantes.
 2. Choisissez **Ajouter une stratégie**.
 
-  ![Capture d’écran du panneau « Ajouter une stratégie »](./media/app-protection-add-policy.png)
+   ![Capture d’écran du panneau « Ajouter une stratégie »](./media/app-protection-add-policy.png)
 
-3.  Tapez un nom pour la stratégie, ajoutez une brève description et sélectionnez le type de plateforme. Vous pouvez créer plusieurs stratégies pour chaque plateforme, selon vos besoins.
+3. Tapez un nom pour la stratégie, ajoutez une brève description et sélectionnez le type de plateforme. Vous pouvez créer plusieurs stratégies pour chaque plateforme, selon vos besoins.
 
-4.  Choisissez **Applications** pour ouvrir le panneau **Applications** qui contient la liste des applications disponibles. Dans cette liste, sélectionnez une ou plusieurs applications à associer à la stratégie que vous créez.
+4. Choisissez **Applications** pour ouvrir le panneau **Applications** qui contient la liste des applications disponibles. Dans cette liste, sélectionnez une ou plusieurs applications à associer à la stratégie que vous créez.
 5. Une fois que vous avez sélectionné les applications, choisissez **Sélectionner** pour enregistrer votre sélection.
 
     > [!IMPORTANT]
     > Vous devez sélectionner au moins une application pour créer une stratégie.
 
-6.  Choisissez **Configurer les paramètres nécessaires** dans le panneau **Ajouter une stratégie** pour ouvrir **Paramètres**.
+6. Choisissez **Configurer les paramètres nécessaires** dans le panneau **Ajouter une stratégie** pour ouvrir **Paramètres**.
 
-    Il existe deux catégories de paramètres de stratégie : **Réadressage des données** et **Accès**.  Les stratégies de réadressage des données sont applicables au déplacement des données dans et en dehors des applications. Les stratégies d’accès déterminent la façon dont l’utilisateur final accède aux applications dans un contexte professionnel.
-    Pour bien démarrer, les paramètres de stratégie sont définis par défaut. Si les valeurs par défaut répondent à vos besoins, vous n’avez pas besoin de les changer.
+   Il existe deux catégories de paramètres de stratégie : **Réadressage des données** et **Accès**.  Les stratégies de réadressage des données sont applicables au déplacement des données dans et en dehors des applications. Les stratégies d’accès déterminent la façon dont l’utilisateur final accède aux applications dans un contexte professionnel.
+   Pour bien démarrer, les paramètres de stratégie sont définis par défaut. Si les valeurs par défaut répondent à vos besoins, vous n’avez pas besoin de les changer.
 
-    > [!TIP]
-    > Ces paramètres de stratégie sont appliqués uniquement quand vous utilisez des applications dans le contexte de travail. Quand l’utilisateur final utilise l’application pour effectuer une tâche personnelle, il n’est pas affecté par ces stratégies.
+   > [!TIP]
+   > Ces paramètres de stratégie sont appliqués uniquement quand vous utilisez des applications dans le contexte de travail. Quand l’utilisateur final utilise l’application pour effectuer une tâche personnelle, il n’est pas affecté par ces stratégies.
 
-7.  Choisissez **OK** pour enregistrer cette configuration. Vous êtes maintenant de retour dans le volet **Ajouter une stratégie**. Choisissez **Créer** pour créer la stratégie et enregistrer vos paramètres.
+7. Choisissez **OK** pour enregistrer cette configuration. Vous êtes maintenant de retour dans le volet **Ajouter une stratégie**. Choisissez **Créer** pour créer la stratégie et enregistrer vos paramètres.
 8. Choisissez **OK** pour enregistrer cette configuration. Vous êtes maintenant de retour dans le panneau **Ajouter une stratégie**.
 9. Choisissez **Créer** pour créer la stratégie et enregistrer vos paramètres.
 
@@ -84,7 +83,7 @@ Seuls les utilisateurs avec des licences Microsoft Intune sont affectés par la 
 >[!IMPORTANT]
 > Si vous utilisez Intune avec Configuration Manager pour gérer vos appareils, la stratégie est appliquée uniquement aux utilisateurs du groupe que vous avez sélectionné. Les membres des groupes enfants imbriqués dans le groupe que vous avez sélectionné ne sont pas affectés.
 
-Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour plus d'informations, voir :
+Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour plus d’informations, voir :
 * [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](app-protection-enabled-apps-android.md)
 * [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](app-protection-enabled-apps-ios.md)
 
@@ -119,6 +118,16 @@ Pour voir immédiatement l’effet des changements, l’utilisateur final doit s
 2.  Choisissez **Paramètres de stratégie** pour ouvrir le volet **Paramètres de stratégie**.
 
 3.  Modifiez les paramètres, puis choisissez l’icône **Enregistrer** pour enregistrer les modifications.
+
+## <a name="target-app-protection-policies-based-on-device-management-state"></a>Cibler les stratégies de protection d’application en fonction de l’état de la gestion des appareils
+Dans de nombreuses organisations, il est courant d’autoriser les utilisateurs finaux à se servir à la fois d’appareils gérés par Intune Mobile Device Management (MDM), tels que les appareils d’entreprise, et les appareils non gérés protégés uniquement avec des stratégies de protection d’application Intune, tels que les appareils BYOD.
+
+Étant donné que les stratégies de protection d’applications Intune sont ciblées sur l’identité d’un utilisateur, les paramètres de protection pour un utilisateur s’appliquent généralement aux appareils inscrits (gérés par MDM) et aux appareils non inscrits (non-MDM). Ainsi, vous pouvez cibler une stratégie de protection d’application Intune sur des appareils iOS et Android inscrits ou désinscrits dans Intune. Vous pouvez avoir une stratégie de protection pour les appareils non gérés dans laquelle des contrôles de protection contre la perte de données (DLP) stricts sont en place, et une stratégie de protection distincte pour les appareils gérés par MDM, où les contrôles DLP peuvent être un peu plus souples. 
+
+Pour créer ces stratégies, accédez à **Applications mobiles** > **Stratégies de protection d’application** dans la console Intune, puis cliquez sur **Add a policy** (Ajouter une stratégie). Vous pouvez également modifier une stratégie de protection d’application existante. Si vous souhaitez que la stratégie de protection d’application s’applique à la fois aux appareils gérés et aux appareils non gérés, vérifiez que l’option **Cibler sur tous les types d’application** est définie sur **Oui** (valeur par défaut). Si vous souhaitez effectuer une affectation précise en fonction de l’état de la gestion, définissez l’option **Cibler sur tous les types d’application** sur **Non**. 
+
+> [!NOTE]
+> Pour plus d’informations sur la prise en charge iOS des stratégies de protection d’application basées sur l’état de la gestion des appareils, consultez [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---) (Ciblage des stratégies de protection MAM en fonction de l’état de la gestion).
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 Pour afficher la liste complète des paramètres de stratégie pour iOS et Android, sélectionnez l’un des liens suivants :

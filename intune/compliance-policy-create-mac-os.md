@@ -1,29 +1,29 @@
 ---
-title: "Créer une stratégie de conformité des appareils macOS dans Microsoft Intune"
-titleSuffix: 
-description: "Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils macOS afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme."
-keywords: 
+title: Créer une stratégie de conformité des appareils macOS dans Microsoft Intune
+titleSuffix: ''
+description: Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils macOS afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Créer une stratégie de conformité pour les appareils macOS avec Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Une stratégie de conformité de l’appareil Intune pour macOS spécifie les règles et les paramètres que les appareils macOS doivent satisfaire pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec l’accès conditionnel pour autoriser ou bloquer l’accès aux ressources de l’entreprise, et vous pouvez générer des rapports sur les appareils et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité de l’appareil pour chaque plateforme dans le portail Intune Azure.
 
@@ -110,7 +110,7 @@ Quand vous créez une stratégie de conformité des appareils avec Intune, vous 
 
 2. Une fois que vous êtes correctement connecté, le **tableau de bord Azure** apparaît.
 
-3. Choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+3. Choisissez **Tous les services** dans le menu de gauche, puis entrez **Intune** dans le filtre de la zone de texte.
 
 4. Choisissez **Intune** pour afficher le **tableau de bord Intune**.
 

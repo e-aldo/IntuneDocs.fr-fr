@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc73befb46f1f159d9a8c023bb5604517b9f73f4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="change-the-mdm-authority"></a>Changer l’autorité MDM
 À compter de Configuration Manager version 1610, vous pouvez changer votre autorité MDM sans avoir à contacter le Support Microsoft, et sans devoir désinscrire puis réinscrire vos appareils gérés existants. Cette rubrique décrit la procédure pour changer un locataire Microsoft Intune existant configuré à partir d’Intune et avec **Microsoft Intune** (version autonome) comme autorité MDM pour **Configuration Manager** (MDM hybride), sans devoir désinscrire puis réinscrire vos appareils gérés existants.
@@ -76,16 +76,16 @@ Si vous utilisez des appareils iOS, vous devez configurer le certificat APNs dan
 
 1. **Télécharger une demande de signature de certificat**
 
-    1. Dans la console Configuration Manager, accédez à **Administration** &gt; **Services cloud** &gt; **Abonnements Microsoft Intune**, puis sélectionnez **Créer une demande de certificat APNs** pour ouvrir la boîte de dialogue **Effectuer une demande de signature de certificat APNs**.  
-    2. Cliquez sur**Parcourir** pour accéder à l'emplacement auquel vous souhaitez enregistrer le fichier du nouveau certificat de demande de signature (.csr). Enregistrez localement le fichier de demande de signature de certificat (.csr).  
-    3. Cliquez sur **Télécharger**. Le nouveau fichier .csr Microsoft Intune se télécharge et il est enregistré par Configuration Manager.   
+   1. Dans la console Configuration Manager, accédez à **Administration** &gt; **Services cloud** &gt; **Abonnements Microsoft Intune**, puis sélectionnez **Créer une demande de certificat APNs** pour ouvrir la boîte de dialogue **Effectuer une demande de signature de certificat APNs**.  
+   2. Cliquez sur**Parcourir** pour accéder à l'emplacement auquel vous souhaitez enregistrer le fichier du nouveau certificat de demande de signature (.csr). Enregistrez localement le fichier de demande de signature de certificat (.csr).  
+   3. Cliquez sur **Télécharger**. Le nouveau fichier .csr Microsoft Intune se télécharge et il est enregistré par Configuration Manager.   
 
-    > [!IMPORTANT]
-    > Vous devez télécharger une nouvelle demande de signature de certificat. N’utilisez pas un fichier existant car dans ce cas, l’opération échoue.  
+      > [!IMPORTANT]
+      > Vous devez télécharger une nouvelle demande de signature de certificat. N’utilisez pas un fichier existant car dans ce cas, l’opération échoue.  
 
-2.  Accédez au [portail Apple Push Certificates](http://go.microsoft.com/fwlink/?LinkId=269844), connectez-vous avec le **même** ID Apple utilisé précédemment pour créer et renouveler le certificat APNs dans Intune autonome.
+2. Accédez au [portail Apple Push Certificates](http://go.microsoft.com/fwlink/?LinkId=269844), connectez-vous avec le **même** ID Apple utilisé précédemment pour créer et renouveler le certificat APNs dans Intune autonome.
 
-    ![Page de connexion au portail Apple Push Certificates](../media/mdm-change-apns-portal.png)
+   ![Page de connexion au portail Apple Push Certificates](../media/mdm-change-apns-portal.png)
 
 3. Sélectionnez le certificat APNs que vous avez utilisé dans Intune autonome, puis cliquez sur **Renouveler**.
 

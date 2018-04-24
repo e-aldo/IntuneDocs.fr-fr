@@ -1,26 +1,26 @@
 ---
 title: Charger la version test des applications Windows et Windows Phone pour Intune
-description: "Découvrez comment signer des applications métier afin de pouvoir utiliser Intune pour les déployer."
-keywords: 
+description: Découvrez comment signer des applications métier afin de pouvoir utiliser Intune pour les déployer.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 06922f76643a6b95e994bf4e219ee3a4a85953c5
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 9f629fce727df9f15b6357c7c624165e4443ea91
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signer des applications métier afin de pouvoir les déployer sur des appareils Windows avec Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 En tant qu’administrateur Intune, vous pouvez déployer des applications métier sur des appareils Windows et Windows 10 Mobile, y compris l’application Portail d’entreprise. Pour déployer des applications .appx ou .xap sur des appareils Windows 10 et Windows 10 Mobile, ou déployer n’importe quelle application métier sur des appareils Windows 8.1 ou Windows Phone 8.1, vous devez obtenir un **certificat de signature de Code Symantec Enterprise Mobile**. Seul le certificat Symantec est approuvé pour ces applications pour les appareils Windows respectifs. Vous pouvez utiliser votre propre autorité de certification pour les applications Windows 10 et « universelles ». Ce certificat est requis pour :
 
@@ -78,7 +78,7 @@ Vous pouvez déployer l’application Portail d’entreprise sur les appareils W
 
     Vous pouvez également télécharger le portail d’entreprise Windows Phone 8.1 (package sous licence hors connexion) ou le portail d’entreprise Windows 10 (package sous licence hors connexion) à partir du [Microsoft Store pour Entreprises](http://businessstore.microsoft.com/). L’application Portail d’entreprise doit être acquise avec une licence en mode hors connexion et le package approprié téléchargé pour une utilisation hors connexion. Les listes de plateformes Windows 8 et Windows Phone 8 dans la sélection font référence à leurs équivalents de la version 8.1. Pour plus d’informations sur la procédure à suivre avec Intune, consultez [Gérer les applications que vous avez achetées dans le Microsoft Store pour Entreprises](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
-2.  **Télécharger le Kit Windows Phone SDK** Téléchargez le Kit Windows Phone 8.0 SDK] (http://go.microsoft.com/fwlink/?LinkId=615570) et installez-le sur votre ordinateur. Ce SDK est nécessaire pour générer un jeton d'inscription d'application.
+2.  **Télécharger le SDK Windows Phone** Téléchargez le SDK Windows Phone 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) et installez-le sur votre ordinateur. Ce SDK est nécessaire pour générer un jeton d'inscription d'application.
 
 3.  **Générer un fichier AETX** Générez un fichier de jeton d’inscription d’application (.aetx) à partir du fichier PFX Symantec. Pour cela, utilisez le fichier AETGenerator.exe inclus dans Windows Phone 8.0 SDK. Pour obtenir des instructions sur la création d'un fichier AETX, consultez [Comment générer un jeton d'inscription d'application pour Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx).
 
@@ -128,7 +128,7 @@ Le certificat Symantec utilisé pour déployer des applications mobiles Windows 
 
     Pour plus d'informations sur les certificats Symantec, visitez [www.symantec.com](http://www.symantec.com) ou appelez le 1-877-438-8776 ou le 1-650-426-3400.
 
-2.  Accédez au site web (par exemple, [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) et connectez-vous à l'aide de l'identifiant d'éditeur Symantec et de l'adresse e-mail associée au certificat. Pensez à utiliser le même ordinateur pour démarrer le renouvellement que vous allez utiliser pour télécharger le certificat.
+2.  Accédez au site web (exemple : [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) et connectez-vous à l’aide de l’ID d’éditeur Symantec et de l’adresse e-mail associée au certificat. Pensez à utiliser le même ordinateur pour démarrer le renouvellement que vous allez utiliser pour télécharger le certificat.
 
 3.  Une fois le renouvellement approuvé et payé, téléchargez-le.
 
@@ -158,11 +158,11 @@ Vous pouvez déployer manuellement l’application Portail d’entreprise Window
 
 ![Image des fichiers de dépendance à télécharger ](./media/Win10CP-dependent-files.png)
 5. Avant de charger l’application Portail d’entreprise dans Intune, créez un dossier (par exemple, C:/Portail Entreprise) avec les packages structurés de la manière suivante :
-  1. Placez le package Portail d’entreprise dans C:\Portail Entreprise. Créez un sous-dossier Dépendances dans cet emplacement également.  
-  ![Image du dossier Dépendances enregistré avec le fichier APPXBUN](./media/Win10CP-Dependencies-save.png)
-  2. Placez les neuf packages de dépendances dans le dossier Dépendances.  
-  Si les dépendances ne sont pas placées dans ce format, Intune ne peut pas les reconnaître ni les charger et le chargement du package échoue avec l’erreur suivante.  
-  ![La dépendance d’application Windows pour ce programme d’installation logicielle est introuvable dans le dossier de l’application. Vous pouvez poursuivre la création et le déploiement de l’application, mais cette dernière ne pourra pas fonctionner tant que la dépendance d’application Windows manquante ne sera pas spécifiée.](./media/Win10CP-error-message.png)
+   1. Placez le package Portail d’entreprise dans C:\Portail Entreprise. Créez un sous-dossier Dépendances dans cet emplacement également.  
+   ![Image du dossier Dépendances enregistré avec le fichier APPXBUN](./media/Win10CP-Dependencies-save.png)
+   2. Placez les neuf packages de dépendances dans le dossier Dépendances.  
+   Si les dépendances ne sont pas placées dans ce format, Intune ne peut pas les reconnaître ni les charger et le chargement du package échoue avec l’erreur suivante.  
+   ![La dépendance d’application Windows pour ce programme d’installation logicielle est introuvable dans le dossier de l’application. Vous pouvez poursuivre la création et le déploiement de l’application, mais cette dernière ne pourra pas fonctionner tant que la dépendance d’application Windows manquante ne sera pas spécifiée.](./media/Win10CP-error-message.png)
 6. Revenez à Intune, puis chargez l’application Portail d’entreprise en tant que nouvelle application. Déployez-la en tant qu’application requise pour l’ensemble souhaité d’utilisateurs cibles.  
 
 Pour plus d’informations sur la façon dont Intune gère les dépendances pour les applications universelles, consultez [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Déploiement d’un appxbundle avec dépendances via Microsoft Intune MDM).  
@@ -186,17 +186,18 @@ Si l’application Portail d’entreprise Windows 10 est signée et déployée 
 
 Voici comment signer et déployer l’application de cette façon :
 
-1. Téléchargez le script de signature de l’application Portail d’entreprise Windows 10 Microsoft Intune à partir de la page [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Ce script nécessite que le SDK Windows pour Windows 10 soit installé sur l’ordinateur hôte. Pour télécharger le SDK Windows pour Windows 10, visitez la page [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
+1. Téléchargez le script de signature de l’application Portail d’entreprise Windows 10 Microsoft Intune à partir de la page [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Ce script nécessite que le SDK Windows pour Windows 10 soit installé sur l’ordinateur hôte. Pour télécharger le SDK Windows pour Windows 10, accédez à [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
 2. Téléchargez l’application Portail d’entreprise Windows 10 à partir du Microsoft Store pour Entreprises, comme indiqué ci-dessus.  
 3. Exécutez le script avec les paramètres d’entrée détaillés dans l’en-tête de script pour signer l’application Portail d’entreprise Windows 10 (extraite ci-dessous). Les dépendances n’ont pas besoin d’être transmises au script. Elles sont uniquement requises lorsque l’application est en cours de téléchargement vers la console d’administration Intune.
 
-|Paramètre | Description|
-| ------------- | ------------- |
-|InputWin10AppxBundle |Chemin d’accès au fichier appxbundle source. |
-|OutputWin10AppxBundle |Chemin de sortie du fichier appxbundle signé. |
-|Win81Appx | Chemin d’accès au fichier Portail d’entreprise Windows 8.1 ou Windows Phone 8.1 (.APPX).|
-|PfxFilePath |Chemin d’accès au fichier (.PFX) de signature de code Symantec Enterprise Mobile. |
-|PfxPassword| Mot de passe du fichier de signature de code Symantec Enterprise Mobile. |
-|PublisherId |ID d’éditeur de l’entreprise. S'il n'est pas fourni, le champ 'Subject' du certificat de signature de code Symantec Enterprise Mobile est utilisé.|
-|SdkPath | Chemin du dossier racine du SDK Windows pour Windows 10. Cet argument est facultatif et sa valeur par défaut est ${env:ProgramFiles(x86)}\Windows Kits\10.|
+|       Paramètre       |                                                                    Description                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             Chemin d’accès au fichier appxbundle source.                                              |
+| OutputWin10AppxBundle |                                                  Chemin de sortie du fichier appxbundle signé.                                                  |
+|       Win81Appx       |                          Chemin d’accès au fichier Portail d’entreprise Windows 8.1 ou Windows Phone 8.1 (.APPX).                           |
+|      PfxFilePath      |                                   Chemin d’accès au fichier (.PFX) de signature de code Symantec Enterprise Mobile.                                    |
+|      PfxPassword      |                                     Mot de passe du fichier de signature de code Symantec Enterprise Mobile.                                      |
+|      PublisherId      |      ID d’éditeur de l’entreprise. S'il n'est pas fourni, le champ 'Subject' du certificat de signature de code Symantec Enterprise Mobile est utilisé.       |
+|        SdkPath        | Chemin du dossier racine du SDK Windows pour Windows 10. Cet argument est facultatif et sa valeur par défaut est ${env:ProgramFiles(x86)}\Windows Kits\10. |
+
 Le script transmet la version de l’application Portail d’entreprise Windows 10 signée lorsque son exécution est terminée. Vous pouvez ensuite déployer la version signée de l’application en tant qu’application métier par le biais de Intune, ce qui met à niveau les versions actuellement déployées vers cette nouvelle application.  

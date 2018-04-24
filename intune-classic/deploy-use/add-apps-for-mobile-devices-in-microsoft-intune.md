@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4e53acad9fb2cf1e6c18b71900c6b671dd031e98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Ajouter des applications pour les appareils inscrits à Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Avant de déployer ou de gérer une application, vous devez l’ajouter à Microsoft Intune. Cette rubrique vous montre comment ajouter des applications pour les appareils inscrits.
 
@@ -34,32 +34,32 @@ Avant de déployer ou de gérer une application, vous devez l’ajouter à Micro
 ## <a name="add-the-app"></a>Ajouter l’application
 Vous utiliserez l'Éditeur de logiciel Intune pour configurer les propriétés de l'application et, le cas échéant, effectuer son chargement vers votre espace de stockage cloud. Utilisez la procédure suivante :
 
-1.  Dans la [console Administrateur Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications** &gt; **Ajouter des applications** pour démarrer l’éditeur de logiciel Microsoft Intune.
+1. Dans la [console Administrateur Microsoft Intune](https://manage.microsoft.com), sélectionnez **Applications** &gt; **Ajouter des applications** pour démarrer l’éditeur de logiciel Microsoft Intune.
 
-    > [!TIP]
-    > Vous devrez peut-être entrer votre nom d’utilisateur et votre mot de passe Intune avant le démarrage de l’éditeur.
+   > [!TIP]
+   > Vous devrez peut-être entrer votre nom d’utilisateur et votre mot de passe Intune avant le démarrage de l’éditeur.
 
-2.  Dans la page **Installation du logiciel** de l’Éditeur de logiciel, choisissez l’une des options suivantes pour **Spécifier comment ce logiciel doit être mis à disposition des appareils** :
-    - **Programme d’installation du logiciel**, pour les applications avec l’extension **.msi** :
-        - **Sélectionnez le type de fichier du programme d’installation du logiciel**. Cela indique le type de logiciel que vous souhaitez déployer. Par exemple, si vous souhaitez installer une application iOS, sélectionnez **Package d’application pour iOS (fichier &#42;.ipa)**.
-        - **Spécifier l’emplacement des fichiers d’installation du logiciel**. Entrez l’emplacement des fichiers d’installation ou choisissez **Parcourir** pour sélectionner l’emplacement dans la liste.
-        - **Inclure les autres fichiers et sous-dossiers du dossier**. Cette option est réservée au type de fichier **Windows Installer** uniquement.<br>Certains logiciels qui utilisent Windows Installer nécessitent la prise en charge des fichiers qui se trouvent généralement dans le même dossier que les fichiers d'installation. Sélectionnez cette option si vous souhaitez également déployer ces fichiers.<br>Ce type d'installation utilise une partie de votre espace de stockage cloud.
+2. Dans la page **Installation du logiciel** de l’Éditeur de logiciel, choisissez l’une des options suivantes pour **Spécifier comment ce logiciel doit être mis à disposition des appareils** :
+   - **Programme d’installation du logiciel**, pour les applications avec l’extension **.msi** :
+       - **Sélectionnez le type de fichier du programme d’installation du logiciel**. Cela indique le type de logiciel que vous souhaitez déployer. Par exemple, si vous souhaitez installer une application iOS, sélectionnez **Package d’application pour iOS (fichier &#42;.ipa)**.
+       - **Spécifier l’emplacement des fichiers d’installation du logiciel**. Entrez l’emplacement des fichiers d’installation ou choisissez **Parcourir** pour sélectionner l’emplacement dans la liste.
+       - **Inclure les autres fichiers et sous-dossiers du dossier**. Cette option est réservée au type de fichier **Windows Installer** uniquement.<br>Certains logiciels qui utilisent Windows Installer nécessitent la prise en charge des fichiers qui se trouvent généralement dans le même dossier que les fichiers d'installation. Sélectionnez cette option si vous souhaitez également déployer ces fichiers.<br>Ce type d'installation utilise une partie de votre espace de stockage cloud.
 
-  -   **Lien externe**, pour les applications que vous souhaitez créer en spécifiant un lien vers un magasin d’applications :
+   -   **Lien externe**, pour les applications que vous souhaitez créer en spécifiant un lien vers un magasin d’applications :
 
-        - **Spécifiez l’URL**. Spécifiez l’URL de l’un des éléments suivants :
-            - L’URL du magasin d’applications de l’application que vous souhaitez déployer. Par exemple, si vous souhaitez déployer l’application Bureau à distance Microsoft pour Android, spécifiez **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Pour rechercher l'URL de l'application, utilisez un moteur de recherche pour rechercher la page du magasin d’applications contenant l'application. Par exemple, pour trouver l’application Bureau à distance, vous pouvez rechercher **Bureau à distance Microsoft Android**.
-            - Un site web. Intune déploiera une icône de raccourci vers le site de l’appareil (clip web).
-            - Application sur le web. Intune déploiera une icône de raccourci vers l’application sur l’appareil.
-        - **Demander un navigateur géré pour ouvrir ce lien (Android et iOS uniquement)**. Lorsque vous déployez un lien vers un site web ou une application web pour les utilisateurs, ils ne peuvent l’ouvrir que dans le navigateur géré Intune. Ce navigateur doit être installé sur leur appareil.<br>Pour plus d’informations sur Managed Browser, consultez [Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Ce type d'installation n'utilise pas du tout votre espace de stockage cloud.
+       - **Spécifiez l’URL**. Spécifiez l’URL de l’un des éléments suivants :
+           - L’URL du magasin d’applications de l’application que vous souhaitez déployer. Par exemple, si vous souhaitez déployer l’application Bureau à distance Microsoft pour Android, spécifiez **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Pour rechercher l'URL de l'application, utilisez un moteur de recherche pour rechercher la page du magasin d’applications contenant l'application. Par exemple, pour trouver l’application Bureau à distance, vous pouvez rechercher **Bureau à distance Microsoft Android**.
+           - Un site web. Intune déploiera une icône de raccourci vers le site de l’appareil (clip web).
+           - Application sur le web. Intune déploiera une icône de raccourci vers l’application sur l’appareil.
+       - **Demander un navigateur géré pour ouvrir ce lien (Android et iOS uniquement)**. Lorsque vous déployez un lien vers un site web ou une application web pour les utilisateurs, ils ne peuvent l’ouvrir que dans le navigateur géré Intune. Ce navigateur doit être installé sur leur appareil.<br>Pour plus d’informations sur Managed Browser, consultez [Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Ce type d'installation n'utilise pas du tout votre espace de stockage cloud.
 
-  -   **Application iOS gérée à partir de l’App Store**, pour les applications gratuites du magasin iTunes que vous souhaitez gérer avec des stratégies de gestion des applications mobiles (MAM) :
+   -   **Application iOS gérée à partir de l’App Store**, pour les applications gratuites du magasin iTunes que vous souhaitez gérer avec des stratégies de gestion des applications mobiles (GAM) :
 
-        - **Spécifiez l’URL**. Saisissez l’URL du magasin d’applications de l’application que vous souhaitez déployer. Par exemple, si vous souhaitez déployer l’application Dossiers de travail Microsoft pour iOS, spécifiez **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Ce type d'installation n'utilise pas du tout votre espace de stockage cloud.
+       - **Spécifiez l’URL**. Saisissez l’URL du magasin d’applications de l’application que vous souhaitez déployer. Par exemple, si vous souhaitez déployer l’application Dossiers de travail Microsoft pour iOS, spécifiez **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Ce type d'installation n'utilise pas du tout votre espace de stockage cloud.
 
-        Par exemple, si vous souhaitez déployer l’application Microsoft Word à partir du magasin iTunes vers des appareils, la page ressemble à ceci :
+       Par exemple, si vous souhaitez déployer l’application Microsoft Word à partir du magasin iTunes vers des appareils, la page ressemble à ceci :
 
-        ![Éditeur de logiciel Intune](./media/publisher-for-mobile.png)
+       ![Éditeur de logiciel Intune](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > Quand vous ajoutez et déployez une application à partir d’un app store, les utilisateurs finaux doivent avoir un compte sur ce store pour pouvoir installer l’application.

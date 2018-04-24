@@ -1,29 +1,29 @@
 ---
-title: "Définir les conditions générales dans Microsoft Intune"
-titlesuffix: 
-description: "Définissez les conditions générales que les utilisateurs voient dans le Portail d’entreprise pour Intune."
-keywords: 
+title: Définir les conditions générales dans Microsoft Intune
+titlesuffix: ''
+description: Définissez les conditions générales que les utilisateurs voient dans le Portail d’entreprise pour Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fb386948d14fcbd26cffcd1b531b6ae61e9d669
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 550d9c457335f212f0b60c16249e45f22f5baaf5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Gérer les conditions générales de votre entreprise pour l’accès utilisateur
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En tant qu’administrateur Intune, vous pouvez exiger que les utilisateurs acceptent les conditions générales de votre société avant de pouvoir utiliser le portail d’entreprise pour inscrire leurs appareils et accéder aux ressources telles que les applications et la messagerie d’entreprise. La configuration des conditions générales est facultative.
 

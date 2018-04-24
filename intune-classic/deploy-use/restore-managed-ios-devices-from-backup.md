@@ -1,29 +1,29 @@
 ---
-title: "Restaurer des appareils iOS gérés par Intune à partir d’une sauvegarde"
-description: "Indiquez aux utilisateurs finaux comment réinscrire leurs appareils après une restauration à partir d’une sauvegarde."
-keywords: "restauration, géré, iOS"
-author: barlanmsft
-ms.author: barlan
+title: Restaurer des appareils iOS gérés par Intune à partir d’une sauvegarde
+description: Indiquez aux utilisateurs finaux comment réinscrire leurs appareils après une restauration à partir d’une sauvegarde.
+keywords: restauration, géré, iOS
+author: lenewsad
+ms.author: lanewsad
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2270e19ab2f45d7f3636226709b8a0fbea075ed0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2c2a35a7faa022ab2b9b095d4a08075e1c338c70
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Restaurer des appareils iOS gérés par Intune à partir d’une sauvegarde
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Parfois, vos utilisateurs ou vous-même devez restaurer un appareil iOS à partir d’une sauvegarde ; c’est par exemple le cas quand un utilisateur reçoit un nouvel appareil. Cette rubrique explique les étapes supplémentaires que vous pouvez être amené à effectuer pour configurer la gestion Intune après la restauration de l’appareil.
 

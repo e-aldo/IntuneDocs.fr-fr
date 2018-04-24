@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 02e821f24c378c15a474adda901699664a9af68a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurer des applications iOS avec des stratégies de configuration des applications mobiles dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilisez des stratégies de configuration des applications mobiles dans Microsoft Intune pour fournir les paramètres pouvant être nécessaires quand les utilisateurs exécutent une application. Par exemple, une application peut exiger que les utilisateurs spécifient les paramètres suivants :
 
@@ -77,15 +77,15 @@ La nouvelle stratégie s’affiche dans le nœud **Stratégies de configuration*
 ## <a name="information-about-the-xml-file-format"></a>Informations sur le format de fichier XML
 
 Intune prend en charge les types de données suivants dans une liste de propriétés :
-    
+
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; ou &lt;false /&gt;
-     
-Pour plus d’informations sur les types de données, consultez [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) (À propos des listes de propriétés) sur le site iOS Developer Library.
+
+Pour plus d’informations sur les types de données, consultez l’article sur les [listes de propriétés](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) sur le site iOS Developer Library.
 
 De plus, Intune prend en charge les types de jetons suivants dans la liste de propriétés :
 - \{\{userprincipalname\}\} - (Exemple : **John@contoso.com**)
@@ -97,7 +97,7 @@ De plus, Intune prend en charge les types de jetons suivants dans la liste de pr
 - \{\{username\}\} - (Exemple : **John Doe**)
 - \{\{serialnumber\}\} - (Exemple : **F4KN99ZUG5V2**) pour les appareils iOS
 - \{\{serialnumberlast4digits\}\} - (Exemple : **G5V2**) pour les appareils iOS
-    
+
 Les caractères \{\{ et \}\} sont utilisés uniquement par les types de jetons. Ils ne doivent pas être utilisés à d’autres fins.
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>Associer une stratégie de configuration des applications mobiles à une application
@@ -139,5 +139,4 @@ Quand vous créez un fichier de configuration d’application mobile, vous pouve
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

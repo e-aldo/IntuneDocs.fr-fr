@@ -1,29 +1,29 @@
 ---
-title: "Ajouter des identificateurs d’entreprise à Intune"
+title: Ajouter des identificateurs d’entreprise à Intune
 titlesuffix: Microsoft Intune
-description: "Découvrez comment ajouter des identificateurs d’entreprise (méthode d’inscription, numéros IMEI et numéros de série) à Microsoft Intune."
-keywords: 
+description: Découvrez comment ajouter des identificateurs d’entreprise (méthode d’inscription, numéros IMEI et numéros de série) à Microsoft Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifier les appareils comme appartenant à l’entreprise
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En tant qu’administrateur Intune, vous pouvez identifier les appareils comme étant propriété de l’entreprise, ce qui en permet une gestion et une identification plus précises. Intune peut effectuer d’autres tâches d’administration et collecter des informations supplémentaires, comme le numéro de téléphone complet et un inventaire des applications des appareils d’entreprise. Vous pouvez également définir des restrictions au niveau des appareils pour bloquer l’inscription des appareils qui n’appartiennent pas à l’entreprise.
 
@@ -72,7 +72,7 @@ Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
 
 1. Dans [Intune dans le portail Azure](https://portal.azure.com), choisissez **Inscription des appareils** > **Identificateurs d’appareils d’entreprise**, puis cliquez sur **Ajouter**.
 
- ![Espace de travail des identificateurs d’appareils d’entreprise avec le bouton Ajouter mis en surbrillance](./media/add-corp-id.png)
+   ![Espace de travail des identificateurs d’appareils d’entreprise avec le bouton Ajouter mis en surbrillance](./media/add-corp-id.png)
 
 2. Dans le panneau **Ajouter des identificateurs**, spécifiez le type d’identificateur : **IMEI** ou **Série**. Vous pouvez spécifier si les numéros précédemment importés doivent **Remplacer les informations des identificateurs existants**.
 
@@ -97,7 +97,7 @@ Les propriétés des appareils affichent **Propriété** pour chaque enregistrem
 
 **Pour changer la propriété d’un appareil :**
 1. Dans [Intune dans le portail Azure](https://portal.azure.com), allez à **Appareils** et choisissez l’appareil.
-3. Choisissez **Propriétés**.
-4. Spécifiez pour **Propriété de l’appareil** l’option **Personnel** ou **Entreprise**.
+2. Choisissez **Propriétés**.
+3. Spécifiez pour **Propriété de l’appareil** l’option **Personnel** ou **Entreprise**.
 
-  ![Propriétés de l’appareil montrant la catégorie Appareil et les options Propriété de l’appareil](./media/device-properties.png)
+   ![Propriétés de l’appareil montrant la catégorie Appareil et les options Propriété de l’appareil](./media/device-properties.png)

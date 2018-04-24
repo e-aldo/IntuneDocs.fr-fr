@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Configurer les profils de certificats Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Une fois que vous avez configuré l’infrastructure et les certificats comme décrit dans [Configurer l’infrastructure de certificat pour SCEP](configure-certificate-infrastructure-for-scep.md) ou [Configurer l’infrastructure de certificat pour PFX](configure-certificate-infrastructure-for-pfx.md), vous pouvez créer des profils de certificat. Voici le processus :
 
@@ -49,13 +49,13 @@ Vous devez créer un profil de certificat approuvé avant de créer un profil de
 
 -  Android for Work
 
--  iOS 7.1 et versions ultérieures
+-  iOS 7.1 et versions ultérieures
 
 -  Mac OS X 10.9 et versions ultérieures
 
--  Windows 8.1 et versions ultérieures
+-  Windows 8.1 et versions ultérieures
 
--  Windows Phone 8.1 et versions ultérieures
+-  Windows Phone 8.1 et versions ultérieures
 
 2.  Ajouter une stratégie **Profil de certificat approuvé**.
 
@@ -84,47 +84,47 @@ Après avoir créé un profil de certificat d’autorité de certification appro
 
 -  Android for Work
 
--  iOS 7.1 et versions ultérieures
+-  iOS 7.1 et versions ultérieures
 
 -  Mac OS X 10.9 et versions ultérieures
 
--  Windows 8.1 et versions ultérieures
+-  Windows 8.1 et versions ultérieures
 
--  Windows Phone 8.1 et versions ultérieures
+-  Windows Phone 8.1 et versions ultérieures
 
-2.  Ajouter une stratégie **Profil de certificat SCEP**.
+2. Ajouter une stratégie **Profil de certificat SCEP**.
 
-    Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Suivez les instructions de la page de configuration de profil pour configurer les paramètres de profil de certificat SCEP.
-    > [!NOTE]
-    >
-    > Sous **Format du nom de l’objet**, sélectionnez **Personnalisé** pour entrer un format de nom d’objet personnalisé (dans les profils iOS uniquement).
-    >
-    > Les deux variables actuellement prises en charge pour le format personnalisé sont `Common Name (CN)` et `Email (E)`. En combinant ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui-ci :
+3. Suivez les instructions de la page de configuration de profil pour configurer les paramètres de profil de certificat SCEP.
+   > [!NOTE]
+   > 
+   > Sous **Format du nom de l’objet**, sélectionnez **Personnalisé** pour entrer un format de nom d’objet personnalisé (dans les profils iOS uniquement).
+   > 
+   > Les deux variables actuellement prises en charge pour le format personnalisé sont `Common Name (CN)` et `Email (E)`. En combinant ces variables avec des chaînes statiques, vous pouvez créer un format de nom d’objet personnalisé tel que celui-ci :
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > Dans cet exemple, l’administrateur a créé un format de nom d’objet qui, en plus des variables `CN` et `E`, utilise des chaînes pour les valeurs de l’unité d’organisation, de l’organisation, de l’emplacement, de la région et du pays. La [fonction CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) répertorie les chaînes prises en charge.
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > Dans cet exemple, l’administrateur a créé un format de nom d’objet qui, en plus des variables `CN` et `E`, utilise des chaînes pour les valeurs de l’unité d’organisation, de l’organisation, de l’emplacement, de la région et du pays. La [fonction CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) répertorie les chaînes prises en charge.
-
-4.  Choisissez **Enregistrer la stratégie**.
+4. Choisissez **Enregistrer la stratégie**.
 
 La nouvelle stratégie apparaît dans l’espace de travail **Stratégie**. À présent, vous pouvez la déployer.
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>Pour créer un profil de certificat .PFX
 
-1.  Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**, puis choisissez une plateforme d’appareil. Les certificats .PFX sont pris en charge pour :
-  - Android 4 et versions ultérieures
-  - Android for Work
-  - Windows 10 et versions ultérieures
-  - Windows Phone 10 et versions ultérieures
-  - iOS 8.0 et versions ultérieures    
+1. Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** &gt; **Ajouter une stratégie**, puis choisissez une plateforme d’appareil. Les certificats .PFX sont pris en charge pour :
+   - Android 4 et versions ultérieures
+   - Android for Work
+   - Windows 10 et versions ultérieures
+   - Windows Phone 10 et versions ultérieures
+   - iOS 8.0 et versions ultérieures    
 
 
-2.  Ajouter une stratégie **Profil de certificat PFX**.
-      Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  Entrez les informations demandées dans le formulaire de stratégie.
-4.  Choisissez **Enregistrer la stratégie**.
+2. Ajouter une stratégie **Profil de certificat PFX**.
+     Pour en savoir plus : [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. Entrez les informations demandées dans le formulaire de stratégie.
+4. Choisissez **Enregistrer la stratégie**.
 
 La nouvelle stratégie apparaît dans l’espace de travail **Stratégie**. À présent, vous pouvez la déployer.
 

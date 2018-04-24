@@ -1,29 +1,29 @@
 ---
-title: "Conditions préalables pour l’inscription des appareils mobiles"
-description: "Configurez les conditions préalables à la gestion d’appareils mobiles, puis préparez-vous à inscrire différents systèmes d’exploitation."
-keywords: 
+title: Conditions préalables pour l’inscription des appareils mobiles
+description: Configurez les conditions préalables à la gestion d’appareils mobiles, puis préparez-vous à inscrire différents systèmes d’exploitation.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Conditions préalables à la gestion d’appareils mobiles dans Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez permettre aux employés d’inscrire leurs appareils mobiles auprès d’Intune en appliquant la procédure suivante. Ces mêmes étapes sont nécessaires pour gérer les appareils d’entreprise.
 
@@ -39,7 +39,7 @@ Vous pouvez permettre aux employés d’inscrire leurs appareils mobiles auprès
 
 Vous recherchez Intune avec Configuration Manager ?
 > [!div class="button"]
-[Consultez les documents SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [Consultez les documents SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>Étape 1 : Activer les connexions
 
@@ -80,21 +80,22 @@ La personnalisation du Portail d’entreprise permet de fournir une expérience 
 
 Le nom de l’entreprise s’affiche comme titre du Portail d’entreprise. Les informations de contact et les détails sont présentés aux utilisateurs dans l’écran Contacter le service informatique du Portail d’entreprise. La déclaration de confidentialité s’affiche lorsqu’un utilisateur clique sur le lien correspondant.
 
-|Nom du champ|Longueur maximale|Plus d'informations|
-    |----------|------------------------|----------------|
-    |Nom de la société|40|Ce nom s’affiche comme titre du Portail d’entreprise. **Remarque** : Seuls des caractères alphanumériques peuvent être utilisés. Ce champ n’accepte pas les caractères spéciaux.|
-    |Nom du contact du service informatique|40|Ce nom s’affiche dans la page **Contacter le service informatique**.|
-    |Numéro de téléphone du service informatique|20|Ce numéro s’affiche dans la page **Contacter le service informatique**.|
-    |Adresse de messagerie du service informatique|40|Cette adresse s’affiche dans la page **Contacter le service informatique**. Vous devez entrer une adresse e-mail valide au format **alias@domainname.com**.|
-    |Informations supplémentaires|120|Ces informations s'affichent sur la page **Contacter l’administrateur**.|
-    |URL de la déclaration de confidentialité de l'entreprise|79|Vous pouvez spécifier la déclaration de confidentialité de votre entreprise qui s’affiche lorsque les utilisateurs cliquent sur les liens de confidentialité à partir du Portail d’entreprise. Vous devez entrer une URL valide au format https://www.contoso.com.|
+
+|          Nom du champ           | Longueur maximale |                                                                                       Autres informations                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Nom de la société          |     40     |                Ce nom s’affiche comme titre du Portail d’entreprise. <strong>Remarque</strong> : Seuls des caractères alphanumériques peuvent être utilisés. Ce champ n’accepte pas les caractères spéciaux.                |
+|  Nom du contact du service informatique   |     40     |                                                                Ce nom s’affiche dans la page <strong>Contacter le service informatique</strong>.                                                                |
+|  Numéro de téléphone du service informatique   |     20     |                                                           Ce numéro s’affiche dans la page <strong>Contacter le service informatique</strong>.                                                           |
+|  Adresse de messagerie du service informatique  |     40     |             Cette adresse s’affiche dans la page <strong>Contacter le service informatique</strong>. Vous devez entrer une adresse e-mail valide au format <strong>alias@domainname.com</strong>.              |
+|    Informations complémentaires     |    120     |                                                            Ces informations s'affichent sur la page <strong>Contacter l’administrateur</strong>.                                                             |
+| URL de la déclaration de confidentialité de l'entreprise |     79     | Vous pouvez spécifier la déclaration de confidentialité de votre entreprise qui s’affiche lorsque les utilisateurs cliquent sur les liens de confidentialité à partir du Portail d’entreprise. Vous devez entrer une URL valide au format https://www.contoso.com. |
 
 ### <a name="support-contacts"></a>Contacts du support
 Les utilisateurs peuvent voir le lien du site web de support dans le Portail d’entreprise et l’utiliser pour accéder au support en ligne.
 
-|Nom du champ|Longueur maximale|Plus d'informations|
+|Nom du champ|Longueur maximale|Autres informations|
     |----------|------------------------|----------------|
-    |URL du site Web de support technique|150|Si vous avez un site web de support technique auquel vous aimeriez que les utilisateurs accèdent, spécifiez cette URL ici. L’URL doit être au format https://www.contoso.com. Si vous ne spécifiez aucune URL, rien ne s’affiche pour le site web de support technique dans la page **Contacter le service informatique** du Portail d’entreprise.|
+    |URL du site Web de support technique|150|Si vous avez un site web de support technique auquel vous aimeriez que les utilisateurs accèdent, spécifiez cette URL ici. Elle doit être au format https://www.contoso.com. Si vous ne spécifiez aucune URL, rien ne s’affiche pour le site web de support technique dans la page **Contacter le service informatique** du Portail d’entreprise.|
     |Nom du site web|40|Il s'agit du nom convivial qui s'affiche pour l'URL permettant d'accéder au site Web de support technique. Si vous spécifiez l’URL d’un site web de support technique sans aucun nom convivial, **Accéder au site web du service informatique** apparaît dans la page **Contacter le service informatique** du Portail d’entreprise.|
 
 
@@ -102,7 +103,7 @@ Les utilisateurs peuvent voir le lien du site web de support dans le Portail d�
 
 Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de votre entreprise, un thème chromatique et un arrière-plan.
 
-|Nom du champ|Plus d'informations|
+|Nom du champ|Autres informations|
     |----------|----------------|
     |Couleur de thème|Sélectionnez une couleur de thème à appliquer au Portail d’entreprise.|
     |Inclure le logo de l'entreprise|Lorsque vous activez cette option, vous pouvez télécharger le logo de votre entreprise pour qu’il apparaisse sur le Portail de celle-ci. Vous pouvez télécharger deux logos : un qui s’affiche quand l’arrière-plan du Portail d’entreprise est blanc, et un autre qui s’affiche quand l’arrière-plan du Portail d’entreprise utilise la couleur de thème que vous avez sélectionnée. Chaque logo doit être un fichier .png ou .jpg et avoir une résolution maximale de 400 x 100 pixels et une taille inférieure ou égale à 750 Ko.|

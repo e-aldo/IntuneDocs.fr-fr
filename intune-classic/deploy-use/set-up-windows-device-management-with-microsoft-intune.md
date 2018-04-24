@@ -1,28 +1,28 @@
 ---
-title: "Configurer la gestion des périphériques Windows avec Microsoft Intune"
+title: Configurer la gestion des périphériques Windows avec Microsoft Intune
 description: Activez la gestion des appareils mobiles pour les appareils Windows avec Microsoft Intune.
-keywords: 
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44559572a048a0ad8e79d6fdac837f0c71a42646
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-windows-device-management"></a>Configurer la gestion des appareils Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique aide les administrateurs informatiques à simplifier l’inscription de Windows pour leurs utilisateurs.  Les appareils Windows peuvent être inscrits sans aucune étape supplémentaire, mais vous pouvez faciliter l’inscription pour les utilisateurs.
 
@@ -35,15 +35,15 @@ Deux facteurs déterminent la manière dont vous pouvez simplifier l’inscripti
 |**Windows 10**|[Inscription automatique](#enable-windows-10-automatic-enrollment) |[Inscription d’utilisateur](#enable-windows-enrollment-without-automatic-enrollment)|
 |**Versions précédentes de Windows**|[Inscription d’utilisateur](#enable-windows-enrollment-without-automatic-enrollment)|[Inscription d’utilisateur](#enable-windows-enrollment-without-automatic-enrollment)|
 
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Activer l’inscription de Windows sans inscription automatique
-Vous pouvez permettre aux utilisateurs d’inscrire leurs appareils sans passer par l’inscription automatique Azure AD Premium. Une fois que vous affectez des licences, les utilisateurs peuvent s’inscrire après avoir ajouté leur compte professionnel sur leurs appareils personnels ou après avoir connecté leurs appareils d’entreprise à votre compte Azure AD. La création d’un alias DNS (type d’enregistrement CNAME) simplifie l’inscription des appareils pour les utilisateurs. Si vous créez des enregistrements de ressources CNAME DNS, les utilisateurs se connectent et s’inscrivent à Intune sans avoir à entrer le nom du serveur Intune.
+Vous pouvez permettre aux utilisateurs d’inscrire leurs appareils sans passer par l’inscription automatique Azure AD Premium. Une fois que vous affectez des licences, les utilisateurs peuvent s’inscrire après avoir ajouté leur compte professionnel sur leurs appareils personnels ou après avoir connecté leurs appareils d’entreprise à votre compte Azure AD. La création d’un alias DNS (type d’enregistrement CNAME) permet aux utilisateurs d’inscrire leurs appareils avec plus de facilité. Si vous créez des enregistrements de ressources CNAME DNS, les utilisateurs se connectent et s’inscrivent à Intune sans avoir à entrer le nom du serveur Intune.
 
 **Étape 1 : Créer des enregistrements CNAME** (facultatif)<br>
 Créez des enregistrements de ressources CNAME DNS pour le domaine de votre entreprise. Par exemple, si le site web de votre entreprise est contoso.com, vous devez créer un enregistrement CNAME DNS qui redirige EnterpriseEnrollment.contoso.com vers EnterpriseEnrollment-s.manage.microsoft.com.
 
-Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à taper le nom du serveur de gestion des appareils mobiles (enrollment.manage.microsoft.com).
+Bien que la création d’entrées DNS CNAME soit facultative, les enregistrements CNAME facilitent l’inscription pour les utilisateurs. Si aucun enregistrement CNAME d’inscription n’est trouvé, les utilisateurs sont invités à taper le nom du serveur MDM (enrollment.manage.microsoft.com).
 
 S'il existe plusieurs domaines vérifiés, créez un enregistrement CNAME pour chaque domaine. Ces enregistrements doivent contenir les informations suivantes :
 

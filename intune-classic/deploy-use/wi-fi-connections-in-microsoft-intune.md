@@ -1,35 +1,35 @@
 ---
 title: Connexions Wi-Fi
-description: "Utilisez des profils Wi-Fi pour permettre aux utilisateurs de se connecter à vos réseaux Wi-Fi."
-keywords: 
+description: Utilisez des profils Wi-Fi pour permettre aux utilisateurs de se connecter à vos réseaux Wi-Fi.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configurer des appareils pour qu’ils se connectent à vos réseaux Wi-Fi d’entreprise
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilisez les profils Wi-Fi de Microsoft Intune pour déployer les paramètres de réseau sans fil des utilisateurs et des appareils de votre organisation. Quand vous déployez un profil Wi-Fi, vos utilisateurs ont accès à votre Wi-Fi d’entreprise sans avoir à le configurer eux-mêmes.
 
 Par exemple, vous installez un nouveau réseau Wi-Fi nommé **Contoso Wi-Fi** et souhaitez configurer tous les appareils iOS pour se connecter à ce réseau. Voici le processus :
 
-![Résumé du processus de profil Wi-Fi](..\media\wi-fi-process-diagram.png)
+![Résumé du processus de profil Wi-Fi](../media/wi-fi-process-diagram.png)
 
 1.   Créez un profil Wi-Fi contenant les paramètres nécessaires pour se connecter au réseau sans fil **Contoso Wi-Fi** .
 
@@ -67,23 +67,25 @@ Pour les appareils qui exécutent Windows 8.1 ou Windows 10 Desktop, ou des s
 
 Il n'existe aucun paramètre recommandé pour ce type de stratégie. Vous devez créer une stratégie personnalisée.
 
-3.  Fournissez un nom et une description pour le profil.
+3. Fournissez un nom et une description pour le profil.
 
 4. Spécifiez les valeurs **Connexions réseau**.
- - **SSID (Service Set Identifier)** : sélectionnez cette option si vous souhaitez que les utilisateurs voient le nom du réseau, mais pas le SSID.
- - **Se connecter quand le réseau ne diffuse pas son nom (SSID)** : sélectionnez cette option pour permettre aux appareils de se connecter au réseau lorsque celui-ci n’est pas visible dans la liste des réseaux (il est masqué et ne diffuse pas son nom).
+   - **SSID (Service Set Identifier)**  : sélectionnez cette option si vous souhaitez que les utilisateurs voient le nom du réseau, mais pas le SSID.
+   - **Se connecter quand le réseau ne diffuse pas son nom (SSID)**  : sélectionnez cette option pour permettre aux appareils de se connecter au réseau lorsque celui-ci n’est pas visible dans la liste des réseaux (il est masqué et ne diffuse pas son nom).
 
 5. Configurez les **Paramètres de sécurité** de la plateforme sélectionnée. Les paramètres disponibles varient selon le type de sécurité que vous sélectionnez. Ils sont décrits dans [Paramètres de sécurité](#security-settings).
 
 6. Configurer les **paramètres du proxy** (iOS et Mac OS X uniquement).
 
-    |Nom du paramètre|Plus d'informations|Quand l'utiliser|
-    |----------------|-------------------|-------------|
-    |**Paramètres proxy pour cette connexion Wi-Fi**|Choisissez le type de paramètres du proxy :<br /><br />-   **Aucun** (par défaut)<br />-   **Manuel** : spécifiez manuellement l’URL et le numéro de port du serveur proxy.<br />-   **Automatique** : utilisez un fichier de configuration pour configurer le serveur proxy.|Toujours|
-    |**Adresse du serveur proxy** et **Numéro du Port**|Spécifiez l'URL et le numéro de port du serveur proxy.|Si **Paramètres proxy pour cette connexion Wi-Fi** est défini sur **Manuel**|
-    |**URL du serveur proxy**|Spécifiez l’URL du fichier contenant les paramètres du serveur proxy.|Si **Paramètres proxy pour cette connexion Wi-Fi** est défini sur **Automatique**|
 
-7.  Enregistrer le profil Wi-Fi
+   |                              Nom du paramètre                              |                                                                                                                                Autres informations                                                                                                                                 |                                            Quand l'utiliser                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>Paramètres proxy pour cette connexion Wi-Fi</strong>        | Choisissez le type de paramètres du proxy :<br /><br />-   <strong>Aucun</strong> (par défaut)<br />-   <strong>Manuel</strong> : spécifiez manuellement l’URL et le numéro de port du serveur proxy.<br />-   <strong>Automatique</strong> : utilisez un fichier de configuration pour configurer le serveur proxy. |                                              Toujours                                               |
+   | <strong>Adresse du serveur proxy</strong> et <strong>Numéro du Port</strong> |                                                                                                              Spécifiez l'URL et le numéro de port du serveur proxy.                                                                                                               |  Si <strong>Paramètres proxy pour cette connexion Wi-Fi</strong> est défini sur <strong>Manuel</strong>   |
+   |                   <strong>URL du serveur proxy</strong>                    |                                                                                                      Spécifiez l’URL du fichier contenant les paramètres du serveur proxy.                                                                                                       | Si <strong>Paramètres proxy pour cette connexion Wi-Fi</strong> est défini sur <strong>Automatique</strong> |
+
+
+7. Enregistrer le profil Wi-Fi
 
 La nouvelle stratégie s'affiche sous le nœud **Stratégies de configuration** de l'espace de travail **Stratégie** . Pour plus d'informations sur le déploiement du profil, voir **Étapes suivantes**.
 
@@ -116,14 +118,14 @@ Utilisez l’option **Stratégie d’importation Wi-Fi Windows** pour importer u
 
 3.  Spécifiez les valeurs générales suivantes pour la stratégie d'importation Wi-Fi Windows :
 
-    |Nom du paramètre|Plus d'informations|
+    |Nom du paramètre|Autres informations|
     |----------------|--------------------|
     |**Nom**|Entrez un nom unique pour le profil Wi-Fi afin de l'identifier facilement dans la console Intune.|
     |**Description**|Fournissez une description du profil Wi-Fi et d’autres informations pertinentes pour mieux le localiser.|
 
 4.  Spécifiez les valeurs suivantes sous l’en-tête **Profil Wi-Fi personnalisé** :
 
-    |Nom du paramètre|Plus d'informations|
+    |Nom du paramètre|Autres informations|
     |----------------|--------------------|
     |**Fichier de configuration de profil**|Cliquez sur **Importer** pour sélectionner le fichier XML contenant les paramètres de profil Wi-Fi que vous voulez importer dans Intune.|
     |**Nom du profil de configuration personnalisé (montré aux utilisateurs)**|Choisissez comment afficher le nom du profil de configuration Wi-Fi tel qu’il apparaîtra aux utilisateurs sur leurs appareils.|
@@ -153,7 +155,7 @@ Ces tableaux indiquent les détails des paramètres de sécurité disponibles po
 
 ### <a name="security-settings-for-android-devices"></a>Paramètres de sécurité des appareils Android
 
-  |Nom du paramètre|Plus d'informations|Quand l'utiliser|
+  |Nom du paramètre|Autres informations|Quand l'utiliser|
 |----------------|--------------------|-------------|
 |**Type de sécurité**|Sélectionnez le protocole de sécurité du réseau sans fil :<br /><br />-   **WPA-Entreprise/WPA2-Entreprise**<br />-   **Aucune authentification (ouvert)** si le réseau n’est pas sécurisé.|Toujours|
 |**Type EAP**|Choisissez le type de protocole EAP (Extensible Authentication Protocol) utilisé pour authentifier les connexions sans fil sécurisées :<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|Si vous avez sélectionné le type de sécurité **WPA-Entreprise/WPA2-Entreprise**.|
@@ -165,7 +167,7 @@ Ces tableaux indiquent les détails des paramètres de sécurité disponibles po
 
 ### <a name="security-settings-for-ios-and-mac-os-x-devices"></a>Paramètres de sécurité des appareils iOS et Mac OS X
 
-  |Nom du paramètre|Plus d'informations|Quand l'utiliser|
+  |Nom du paramètre|Autres informations|Quand l'utiliser|
 |----------------|--------------------|-------------|
 |**Type de sécurité**|Sélectionnez le protocole de sécurité réseau sans fil :<br /><br />-   **WPA-Personnel/WPA2-Personnel**<br />-   **WPA-Entreprise/WPA2-Entreprise**<br />-   **WEP**<br />-   **Aucune authentification (ouvert)** si le réseau n’est pas sécurisé.|Toujours|
 |**Type EAP**|Choisissez le type de protocole EAP (Extensible Authentication Protocol) utilisé pour authentifier les connexions sans fil sécurisées :<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|Si vous avez sélectionné un type de sécurité **WPA-Enterprise/WPA2-Enterprise**.|

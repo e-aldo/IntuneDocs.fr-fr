@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 34e3112141e8bc0125ae320fa7ab8093d3b4ffc5
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: fec1d11320e47c3c0678f96bf6c2ffa6c4b18fec
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](../includes/note-for-both-portals.md)]
 
 À compter d’Intune version 1704, vous pouvez utiliser des stratégies de protection d’application avec Windows 10 dans la gestion des applications mobiles (MAM) sans le scénario d’inscription.
 
@@ -45,7 +45,7 @@ Examinons quelques concepts lors de l’ajout d’une stratégie WIP.
 
 -   **Applications de bureau Windows :** l’administrateur peut ajouter n’importe quelle application de bureau Windows traditionnelle à la stratégie (par exemple exe, dll, etc.)
 
-## <a name="pre-requisites"></a>Conditions préalables
+## <a name="pre-requisites"></a>Prérequis
 
 Vous devez configurer le fournisseur MAM avant de pouvoir créer une stratégie de protection d’application WIP.
 

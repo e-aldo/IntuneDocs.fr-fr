@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9785078341c8e3469067042a3f3e8588f29c3a3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie d’iOS dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune fournit un éventail de paramètres généraux intégrés, que vous pouvez configurer sur les appareils iOS. En outre, vous pouvez recourir à l’outil Apple Configurator pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
 
@@ -33,7 +33,7 @@ Utilisez la **stratégie de configuration générale iOS** de Microsoft Intune p
 
 -   **Paramètres de sécurité de l’appareil et paramètres généraux**. Choisissez des paramètres dans une liste de paramètres prédéfinis, qui vous permettent de contrôler diverses fonctions et fonctionnalités sur l’appareil.
 
--   **Mode plein écran**. Verrouillez un appareil pour autoriser le fonctionnement de certaines fonctionnalités uniquement. Par exemple, vous pouvez autoriser un appareil à exécuter une seule application gérée que vous spécifiez ou désactiver les boutons du volume sur un appareil. Ces paramètres peuvent être utilisés pour un modèle de démonstration d’un appareil ou pour un appareil dédié à l’exécution d’une seule fonction, par exemple un appareil pour un point de vente.
+-   **Mode plein écran**. Verrouillez un appareil pour autoriser le fonctionnement de certaines fonctionnalités uniquement. Par exemple, vous pouvez autoriser un appareil à exécuter une seule application gérée que vous spécifiez ou désactiver les boutons du volume sur un appareil. Ces paramètres peuvent être utilisés pour un modèle de démonstration d’un appareil ou pour un appareil dédié à l’exécution d’une seule fonction, par exemple dans un point de vente.
 
 -   **Applications conformes et non conformes**. Spécifiez une liste d’applications conformes ou non conformes au sein de votre entreprise. Sur les appareils Android et iOS, le **Rapport sur les applications non conformes** peut être utilisé pour vérifier la conformité des applications spécifiées dans la liste par rapport à celle des applications installées par les utilisateurs (sans qu’il soit possible de bloquer leur installation).
 
@@ -45,20 +45,22 @@ Si le paramètre que vous recherchez n’apparaît pas dans cette rubrique, vous
 ### <a name="security-settings"></a>Paramètres de sécurité
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 
-|Nom du paramètre|Détails|
-|----------------|-------|
-|**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Indique si l’utilisateur doit saisir un mot de passe pour accéder à son appareil.|
-|**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple une valeur numérique uniquement, ou alphanumérique.|
-|**Nombre de caractères complexes requis dans le mot de passe**|Spécifie le nombre de caractères de symbole (comme **#** ou **@**) devant être inclus dans le mot de passe.|
-|**Longueur minimale du mot de passe**|Spécifie le nombre minimal de caractères à inclure dans le mot de passe.|
-|**Autoriser les mots de passe simples**|Autorisez les mots de passe simples comme **0000** et **1234**.|
-|**Nombre d’échecs de connexion successifs autorisé avant réinitialisation de l’appareil**|Spécifie le nombre de tentatives de connexion ayant échoué que le paramètre système autorise avant d’effacer le contenu de l’appareil.|
-|**Minutes d’inactivité avant demande du mot de passe**<sup>1</sup>|Spécifie la durée pendant laquelle l’appareil peut rester inactif avant de demander à l’utilisateur de saisir à nouveau le mot de passe.|
-|**Expiration du mot de passe (jours)**|Spécifie le nombre de jours avant que l’utilisateur ne doive modifier le mot de passe de l’appareil.|
-|**Mémoriser l’historique des mots de passe**|Spécifie si l’utilisateur peut utiliser des mots de passe précédemment utilisés.|
-|**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe précédemment utilisés conservés par l’appareil.|
-|**Minutes d’inactivité avant arrêt de l’écran**<sup>1</sup>|Spécifiez le nombre de minutes avant l’arrêt de l’appareil.|
-|**Autoriser le déverrouillage par empreinte digitale**|Autoriser le déverrouillage de l’appareil par empreinte digitale.|
+
+|                                           Nom du paramètre                                            |                                                            Détails                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Exiger un mot de passe pour déverrouiller des appareils mobiles</strong>                    |                        Indique si l’utilisateur doit saisir un mot de passe pour accéder à son appareil.                        |
+|                              <strong>Type de mot de passe requis</strong>                              |                   Spécifie le type de mot de passe requis, par exemple une valeur numérique uniquement, ou alphanumérique.                    |
+|                <strong>Nombre de caractères complexes requis dans le mot de passe</strong>                 | Spécifie le nombre de caractères de symbole (comme <strong>#</strong> ou <strong>@</strong>) devant être inclus dans le mot de passe. |
+|                             <strong>Longueur minimale du mot de passe</strong>                              |                                   Spécifie le nombre minimal de caractères à inclure dans le mot de passe.                                    |
+|                              <strong>Autoriser les mots de passe simples</strong>                              |                          Autorise des mots de passe simples, comme <strong>0000</strong> et <strong>1234</strong>.                          |
+|     <strong>Nombre d’échecs de connexion répétée autorisé avant réinitialisation de l’appareil</strong>      |                       Spécifie le nombre de tentatives de connexion ayant échoué que le paramètre système autorise avant d’effacer le contenu de l’appareil.                        |
+|          <strong>Minutes d’inactivité avant demande du mot de passe</strong><sup>1</sup>           |                   Spécifie la durée pendant laquelle l’appareil peut rester inactif avant de demander à l’utilisateur de saisir à nouveau le mot de passe.                    |
+|                            <strong>Expiration du mot de passe (jours)</strong>                            |                             Spécifie le nombre de jours avant que l’utilisateur ne doive modifier le mot de passe de l’appareil.                             |
+|                            <strong>Mémoriser l’historique des mots de passe</strong>                             |                           Spécifie si l’utilisateur peut utiliser des mots de passe précédemment utilisés.                           |
+| <strong>Mémoriser l'historique des mots de passe</strong> - <strong>Empêcher la réutilisation des mots de passe précédents</strong> |                           Spécifie le nombre de mots de passe précédemment utilisés conservés par l’appareil.                           |
+|            <strong>Minutes d’inactivité avant arrêt de l’écran</strong><sup>1</sup>             |                             Spécifiez le nombre de minutes avant l’arrêt de l’appareil.                             |
+|                             <strong>Autoriser le déverrouillage par empreinte digitale</strong>                             |                                        Autoriser le déverrouillage de l’appareil par empreinte digitale.                                         |
+
 <sup>1</sup> Pour les appareils iOS, quand vous configurez les paramètres **Minutes d’inactivité avant arrêt de l’écran** et **Minutes d’inactivité avant demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres la valeur **5** minutes, l'écran s'éteint automatiquement après 5 minutes, et l'appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l'utilisateur a désactivé l'écran, l'appareil se verrouille 5 minutes plus tard.
 
 ### <a name="system-settings"></a>Paramètres système
@@ -68,7 +70,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |----------------|-------|
 |**Autoriser les captures d’écran**|Permet à l’utilisateur de capturer le contenu de l’écran en tant qu’image.|
 |**Autoriser le centre de contrôle sur l’écran verrouillé**|Autorise l’utilisateur à accéder à l’application du centre de contrôle lorsque l’appareil est verrouillé.|
-|**Autoriser l’affichage des notifications sur l’écran verrouillé**|Autorisez l’utilisateur à accéder à l’affichage des notifications sans déverrouiller l’appareil.|
+|**Autoriser l’affichage des notifications sur l’écran verrouillé**|Autoriser l’utilisateur à accéder à l’affichage des notifications sans déverrouiller l’appareil.|
 |**Autoriser l’affichage du mode Aujourd’hui sur l’écran verrouillé**|Autorise l’utilisateur à afficher les notifications lorsque l’appareil est verrouillé.|
 |**Autoriser les certificats TLS non autorisés**|Autoriser les certificats Transport Layer Security non autorisés sur l’appareil.|
 |**Autoriser la soumission des données de diagnostic**|Autoriser ou bloquer l’envoi de données de diagnostic à Apple depuis l’appareil.|
@@ -83,8 +85,8 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser la synchronisation des documents dans iCloud**|Autoriser la synchronisation des documents et des clés-valeurs sur votre espace de stockage iCloud.|
 |**Autoriser la synchronisation du flux de photos dans iCloud**|Permet aux utilisateurs d’activer **Mon flux de photos** sur leur appareil afin de synchroniser les photos avec iCloud et de les mettre à la disposition de tous les appareils des utilisateurs.|
 |**Exiger la sauvegarde chiffrée**|Exiger le chiffrement des sauvegardes d’appareil.|
-|**Autoriser les applications gérées à synchroniser des données sur iCloud**|Autorisez les applications que vous gérez avec Intune à synchroniser des données avec le compte iCloud de l’utilisateur.|
-|**Autoriser la procédure de transfert à poursuivre sur un autre appareil**|Autorisez l’utilisateur à poursuivre le travail démarré sur un appareil iOS sur un autre appareil iOS ou Mac OS X.|
+|**Autoriser les applications gérées à synchroniser des données sur iCloud**|Autorise les applications que vous gérez avec Intune à synchroniser les données sur le compte iCloud de l’utilisateur.|
+|**Autoriser la procédure de transfert à poursuivre sur un autre appareil**|Autorise l’utilisateur à reprendre le travail qu’il a commencé sur un appareil iOS, sur un autre appareil iOS ou Mac OS X.|
 |**Autoriser le partage de photos iCloud**|Choisissez **Non** pour désactiver le **partage de photos iCloud** sur l'appareil.|
 |**Autoriser la photothèque iCloud**|Si définie sur **Non**, désactive l’utilisation de la photothèque iCloud qui permet aux utilisateurs de stocker des photos et des vidéos dans le cloud.   Toutes les photos qui ne sont pas entièrement téléchargées de la Photothèque iCloud sur l'appareil seront supprimées de l'appareil si cette valeur est définie sur **Non**.|
 
@@ -129,7 +131,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |----------------|-------|
 |**Région des classifications**|Sélectionnez une région, puis sélectionnez l’évaluation maximale que les utilisateurs peuvent télécharger dans les catégories **Films**, **Séries TV** et **Applications**.|
 |**Autoriser le contenu pour adultes dans la boutique multimédia**|Autoriser l’appareil à accéder au contenu réservé aux adultes depuis le magasin.|
-|**Autoriser l’utilisateur à télécharger du contenu indiqué comme étant « Littérature érotique » à partir de l’iBooks Store**|Autorisez l’utilisateur à télécharger des livres de la catégorie « Littérature érotique ».|
+|**Autoriser l’utilisateur à télécharger du contenu indiqué comme étant « Littérature érotique » à partir de l’iBooks Store**|Autorise l’utilisateur à télécharger des livres de la catégorie « Littérature érotique ».|
 
 
 ### <a name="device-capabilities-settings-for-hardware"></a>Paramètres des fonctionnalités de l’appareil pour le matériel
@@ -139,7 +141,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |----------------|-------|
 |**Autoriser l’appareil photo**|Spécifie si l’appareil photo de l’appareil peut être utilisé.|
 |**Forcer les montres Apple Watch jumelées à utiliser la détection de poignet**|Quand elle est activée, l’Apple Watch n’affiche pas de notification si elle n’est pas portée.|
-|**Exiger un mot de passe associé pour les demandes AirPlay sortantes**|Demander un mot de passe de jumelage lorsque l’utilisateur utilise AirPlay pour diffuser du contenu sur d’autres appareils Apple.|
+|**Exiger un mot de passe associé pour les demandes AirPlay sortantes**|Nécessite un mot de passe de jumelage lorsque l’utilisateur a recours à AirPlay pour diffuser le contenu vers d’autres appareils Apple.|
 
 ### <a name="device-capabilities-settings-for-cellular"></a>Paramètres des fonctionnalités de l’appareil pour les appareils cellulaires
 Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
@@ -158,7 +160,7 @@ Tous les paramètres s’appliquent à iOS 8.0 et ultérieur.
 |**Autoriser Siri**|Autoriser l’utilisation de l’assistant vocal Siri sur l’appareil.|
 |**Autoriser Siri quand l’appareil est verrouillé**|Autoriser l’utilisation de l’assistant vocal Siri sur l’appareil lorsqu’il est verrouillé.|
 |**Autoriser la composition vocale**|Autoriser l’utilisation de la fonctionnalité de numérotation vocale sur l’appareil.|
-|**Ne pas autoriser AirDrop à partir des applications gérées**|Empêche les applications gérées d’être en mesure d’envoyer des données via AirDrop.|
+|**Ne pas autoriser AirDrop à partir des applications gérées**|Empêche les applications gérées d’envoyer des données via AirDrop.|
 
 
 ### <a name="settings-for-compliant-and-noncompliant-apps"></a>Paramètres des applications conformes et non conformes
@@ -171,7 +173,7 @@ Dans la liste **Applications conformes &amp; non conformes**, spécifiez une lis
 |----------------|--------------------|
 |**Signaler une non-conformité quand les utilisateurs installent les applications listées**|Répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter.|
 |**Signaler une non-conformité quand les utilisateurs installent les applications non listées**|Répertorie les applications que les utilisateurs sont autorisés à installer. Pour rester conformes, les utilisateurs ne doivent pas installer d’applications qui ne sont pas répertoriées. Les applications qui sont gérées par Intune sont autorisées automatiquement.|
-|**Ajouter**|Ajoute une application à la liste sélectionnée. Spécifiez le nom de votre choix, éventuellement l’éditeur de l’application, ainsi que l’URL de l’application dans la boutique d’applications. Pour obtenir une aide supplémentaire, consultez la section « Comment spécifier des URL de magasins d’applications » de la présente rubrique.|
+|**Ajouter**|Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans le magasin d'applications. Pour obtenir une aide supplémentaire, consultez la section « Comment spécifier des URL de magasins d’applications » de la présente rubrique.|
 |**Importer des applications**|Importe la liste d’applications que vous avez spécifiées dans un fichier de valeurs séparées par des virgules. Dans ce fichier, utilisez le format suivant : nom de l’application, éditeur, URL de l’application.|
 |**Éditer**|Permet de modifier le nom, l’éditeur et l’URL de l’application sélectionnée.|
 |**Supprimer**|Supprime l’application sélectionnée dans la liste.|
@@ -180,25 +182,26 @@ Les stratégies contenant des paramètres d’application conformes et non confo
 
 ### <a name="kiosk-mode-settings"></a>Paramètres du mode plein écran
 
-|Nom du paramètre|Détails|
-|----------------|--------------------|
-|**Sélectionner une application gérée qui sera autorisée à s’exécuter quand l’appareil est en mode plein écran**|Sélectionnez **Parcourir**, puis spécifiez l’application gérée ou une application d’un Windows Store qui est autorisée à s’exécuter lorsque l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil. Pour obtenir de l’aide, consultez la section « Comment spécifier des URL de magasins d’applications » de la présente rubrique.|
-|**Autoriser l’interaction tactile**|Active ou désactive l’écran tactile sur l’appareil.|
-|**Autoriser la rotation d’écran**|Active ou désactive la modification de l’orientation de l’écran lorsque l’utilisateur fait pivoter l’appareil.|
-|**Autoriser les boutons de volume**|Active ou désactive l’utilisation des boutons de volume sur l’appareil.|
-|**Autoriser la modification de sonnerie**|Active ou désactive le commutateur de sonnerie (désactivation du son) sur l’appareil.|
-|**Activer le bouton Veille/sortie de veille de l’écran**|Active ou désactive le bouton Veille/sortie de veille de l’écran sur l’appareil.|
-|**Autoriser le verrouillage automatique**|Active ou désactive le verrouillage automatique de l’appareil.|
-|**Activer Audio mono**|Active ou désactive le paramètre d’accessibilité **Audio mono**.|
-|**Activer VoiceOver**|Active ou désactive le paramètre d’accessibilité **VoiceOver**, qui lit à haute voix le texte affiché à l’appareil.|
-|**Activer les réglages VoiceOver**|Active ou désactive les réglages VoiceOver qui vous permettent de régler la fonction VoiceOver (par exemple, la vitesse de lecture à haute voix du texte affiché à l’écran).|
-|**Activer le zoom**|Active ou désactive le paramètre d’accessibilité **Zoom**, qui vous permet d’utiliser la fonctionnalité tactile pour agrandir l’affichage de l’appareil.|
-|**Activer les réglages du zoom**|Active ou désactive les réglages du zoom qui vous permettent de régler la fonction de zoom.|
-|**Activer les couleurs inversées**|Active ou désactive le paramètre d’accessibilité **Inverser les couleurs**, qui ajuste l’affichage pour aider les utilisateurs ayant des troubles visuels.|
-|**Activer les réglages de couleurs inversées**|Active ou désactive les réglages de couleurs inversées, qui permettent à l’utilisateur d’ajuster la fonction de couleurs inversées.|
-|**Activer l’assistance tactile**|Active ou désactive le paramètre d’accessibilité **Assistance tactile**, qui permet à l’utilisateur d’effectuer des mouvements à l’écran pouvant être difficiles à effectuer.|
-|**Activer les réglages d’assistance tactile**|Active ou désactive les réglages d’assistance tactile, qui permettent à l’utilisateur de régler la fonction d’assistance tactile.|
-|**Activer la sélection vocale**|Active ou désactive les paramètres d’accessibilité **Sélection Speak**, qui peuvent lire à haute voix le texte que l’utilisateur sélectionne.|
+|                                            Nom du paramètre                                            |                                                                                                                                      Détails                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Sélectionner une application gérée qui sera autorisée à s’exécuter quand l’appareil est en mode plein écran</strong> | Sélectionnez <strong>Parcourir</strong>, puis spécifiez l’application gérée ou une application d’un Windows Store qui est autorisée à s’exécuter lorsque l’appareil est en mode plein écran. Aucune autre application ne pourra s'exécuter sur l'appareil. Pour obtenir de l’aide, consultez la section « Comment spécifier des URL de magasins d’applications » de la présente rubrique. |
+|                                    <strong>Autoriser l’interaction tactile</strong>                                    |                                                                                                                  Active ou désactive l’écran tactile sur l’appareil.                                                                                                                  |
+|                               <strong>Autoriser la rotation d’écran</strong>                               |                                                                                                Active ou désactive la modification de l’orientation de l’écran lorsque l’utilisateur fait pivoter l’appareil.                                                                                                 |
+|                               <strong>Autoriser les boutons de volume</strong>                                |                                                                                                           Active ou désactive l’utilisation des boutons de volume sur l’appareil.                                                                                                           |
+|                                <strong>Autoriser la modification de sonnerie</strong>                                |                                                                                                             Active ou désactive le commutateur de sonnerie (désactivation du son) sur l’appareil.                                                                                                              |
+|                          <strong>Activer le bouton Veille/sortie de veille de l’écran</strong>                           |                                                                                                           Active ou désactive le bouton Veille/sortie de veille de l’écran sur l’appareil.                                                                                                            |
+|                                  <strong>Autoriser le verrouillage automatique</strong>                                  |                                                                                                                 Active ou désactive le verrouillage automatique de l’appareil.                                                                                                                 |
+|                                 <strong>Activer Audio mono</strong>                                 |                                                                                                      Active ou désactive le paramètre d’accessibilité <strong>Audio mono</strong>.                                                                                                      |
+|                                 <strong>Activer VoiceOver</strong>                                 |                                                                               Active ou désactive le paramètre d’accessibilité <strong>VoiceOver</strong>, qui lit à haute voix le texte affiché à l’appareil.                                                                                |
+|                           <strong>Activer les réglages VoiceOver</strong>                           |                                                                  Active ou désactive les réglages VoiceOver qui vous permettent de régler la fonction VoiceOver (par exemple, la vitesse de lecture à haute voix du texte affiché à l’écran).                                                                   |
+|                                    <strong>Activer le zoom</strong>                                    |                                                                         Active ou désactive le paramètre d’accessibilité <strong>Zoom</strong>, qui vous permet d’utiliser la fonctionnalité tactile pour agrandir l’affichage de l’appareil.                                                                         |
+|                              <strong>Activer les réglages du zoom</strong>                              |                                                                                                  Active ou désactive les réglages du zoom qui vous permettent de régler la fonction de zoom.                                                                                                  |
+|                               <strong>Activer les couleurs inversées</strong>                                |                                                                    Active ou désactive le paramètre d’accessibilité <strong>Inverser les couleurs</strong>, qui ajuste l’affichage pour aider les utilisateurs ayant des troubles visuels.                                                                    |
+|                         <strong>Activer les réglages de couleurs inversées</strong>                          |                                                                                         Active ou désactive les réglages de couleurs inversées, qui permettent à l’utilisateur d’ajuster la fonction de couleurs inversées.                                                                                         |
+|                              <strong>Activer l’assistance tactile</strong>                               |                                                     Active ou désactive le paramètre d’accessibilité <strong>Assistance tactile</strong>, qui permet à l’utilisateur d’effectuer des mouvements à l’écran pouvant être difficiles à effectuer.                                                     |
+|                        <strong>Activer les réglages d’assistance tactile</strong>                         |                                                                                       Active ou désactive les réglages d’assistance tactile, qui permettent à l’utilisateur de régler la fonction d’assistance tactile.                                                                                       |
+|                              <strong>Activer la sélection vocale</strong>                              |                                                                        Active ou désactive les paramètres d’accessibilité <strong>Sélection Speak</strong>, qui peuvent lire à haute voix le texte que l’utilisateur sélectionne.                                                                         |
+
 > [!NOTE]
 > Les remarques suivantes s'appliquent aux paramètres du mode plein écran pour les appareils iOS :
 >
@@ -222,7 +225,7 @@ Pour spécifier une URL d'application dans la liste des applications conformes e
 
 2. Copiez l’URL de la page et utilisez-la en tant qu’adresse permettant de configurer la liste des applications conformes ou non conformes, ou l’application à exécuter en mode plein écran.
 
-**Exemple :** recherchez **Microsoft Word pour iPad**. L’URL que vous utilisez sera **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Exemple :** rechercher **Microsoft Word pour iPad**. L’URL que vous utilisez sera **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 > [!NOTE]
 > Vous pouvez également utiliser le logiciel iTunes pour rechercher l'application, puis la commande **Copier le lien** pour obtenir l'URL de l'application.
@@ -241,45 +244,45 @@ Vous pouvez configurer les paramètres suivants sur les appareils exécutant iOS
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
-|**Autoriser la modification du compte**|Autorisez l’utilisateur à modifier les paramètres du compte, comme les configurations de la messagerie électronique.|
+|**Autoriser la modification du compte**|Autorise l’utilisateur à modifier les paramètres de compte tels que les configurations des e-mails.|
 |**Autoriser les modifications sur les paramètres d’utilisation des données cellulaires des applications**|Autorise l’utilisateur à contrôler les applications qui sont autorisées à utiliser des données cellulaires.|
 |**Autoriser l’utilisation de l’option d’effacement de tout le contenu et de tous les paramètres sur l’appareil**|Autorise l’utilisateur à utiliser l’option d’effacement de l’ensemble du contenu et des paramètres sur l’appareil.|
-|**Autoriser l’utilisateur à activer des restrictions dans les paramètres de l’appareil**|Autorisez l’utilisateur à configurer des restrictions sur l’appareil (contrôle parental).|
+|**Autoriser l’utilisateur à activer des restrictions dans les paramètres de l’appareil**|Autorise l’utilisateur à configurer des restrictions sur l’appareil (contrôle parental).|
 |**Autoriser le jumelage d’hôtes pour contrôler les appareils avec lesquels un appareil iOS peut être jumelé**|Autorise le jumelage d’hôtes pour laisser l’administrateur contrôler les appareils avec lesquels un appareil iOS peut être jumelé.|
 |**Autoriser l’utilisateur à installer des profils de configuration et des certificats**|Autorise l’utilisateur à installer des profils de configuration et des certificats.|
 |**Autoriser le changement du nom d’appareil**|Autorise l’utilisateur à modifier le nom de l’appareil.|
-|**Autoriser le changement du code d’accès**|Autorisez l’ajout, la modification ou la suppression du mot de passe de l’appareil.|
+|**Autoriser le changement du code d’accès**|Autorise l’ajout, la modification ou la suppression du mot de passe de l’appareil.|
 |**Autoriser le jumelage à l’Apple Watch**|Autorise le jumelage de l’appareil avec une Apple Watch.|
-|**Autoriser le changement des paramètres de notification**|Autorisez l’utilisateur à modifier les paramètres de notification sur l’appareil.|
-|**Autoriser le changement du fond d’écran**|Autorisez l’utilisateur à modifier le papier peint de l’appareil.|
+|**Autoriser le changement des paramètres de notification**|Autorise l’utilisateur à modifier les paramètres de notification de l’appareil.|
+|**Autoriser le changement du fond d’écran**|Autorise l’utilisateur à modifier le fond d’écran de l’appareil.|
 
 ### <a name="supervised-mode-settings-for-feature-restrictions"></a>Paramètres du mode supervisé pour les restrictions de fonctionnalités
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
 |**Autoriser AirDrop**|Autorise l’utilisation de la fonctionnalité AirDrop pour échanger du contenu avec des appareils proches.|
-|**Autoriser Siri à interroger le contenu généré par l’utilisateur à partir d’Internet**|Autorisez Siri à accéder à des sites Web pour répondre aux questions.|
-|**Utiliser le filtre d’obscénités de Siri**|Empêche Siri de dicter ou de parler un langage grossier.|
+|**Autoriser Siri à interroger le contenu généré par l’utilisateur à partir d’Internet**|Autorise Siri à accéder à des sites web pour répondre à des questions.|
+|**Utiliser le filtre d’obscénités de Siri**|Empêche Siri de dicter ou d’employer un langage obscène.|
 |**Autoriser la recherche Spotlight à retourner des résultats d’Internet**|Autorise la recherche Spotlight à se connecter à Internet pour fournir des résultats supplémentaires.|
-|**Autoriser la recherche de définition des mots**|Autorisez la fonctionnalité iOS qui vous permet de surligner un mot et d’en rechercher la définition.|
-|**Autoriser les claviers prédictifs**|Autorisez l’utilisation de claviers prédictifs suggérant des mots à l’utilisateur.|
+|**Autoriser la recherche de définition des mots**|Autorise la fonctionnalité iOS qui vous permet de sélectionner un mot et de rechercher sa définition.|
+|**Autoriser les claviers prédictifs**|Autorise l’utilisation de claviers prédictifs qui suggèrent des mots que l’utilisateur pourrait vouloir utiliser.|
 |**Autoriser la correction automatique**|Permet à l’appareil de corriger automatiquement les mots mal orthographiés.|
 |**Autoriser la correction orthographique du clavier**|Autorise le vérificateur orthographique de l’appareil.|
-|**Autoriser les raccourcis clavier**|Autorisez l’utilisation des raccourcis clavier.|
+|**Autoriser les raccourcis clavier**|Autorise les raccourcis clavier.|
 
 ### <a name="supervised-mode-settings-for-app-restrictions"></a>Paramètres du mode supervisé pour les restrictions d’application
 
 |Nom du paramètre|Détails|
 |----------------|--------------------|
 |**Autoriser le changement des paramètres d’approbation des applications d’entreprise**|Permet aux utilisateurs de modifier les paramètres d’approbation pour les applications d’entreprise.|
-|**Autoriser l’installation d’applications uniquement à l’aide de la configuration Apple et d’iTunes**|Active ou désactive l’App Store de l’écran d’accueil de l’appareil. Les utilisateurs peuvent toujours utiliser iTunes ou l’outil Apple Configurator pour installer des applications et les mettre à jour.|
-|**Autoriser les téléchargements d’applications automatiques**|Autorisez le téléchargement automatique sur cet appareil des applications achetées sur d’autres appareils. Ce paramètre n’a aucune incidence sur les mises à jour des applications.|
-|**Autoriser les modifications sur les paramètres de l’application Localiser mes amis**|Autorisez l’utilisateur à modifier les paramètres de l’application Localiser mes amis.|
+|**Autoriser l’installation d’applications uniquement à l’aide de la configuration Apple et d’iTunes**|Active ou désactive l’App Store de l’écran d’accueil de l’appareil. Les utilisateurs peuvent toujours utiliser iTunes ou l’outil Apple Configurator pour installer et mettre à jour les applications.|
+|**Autoriser les téléchargements d’applications automatiques**|Autorise les applications achetées sur d’autres appareils à être téléchargées automatiquement sur cet appareil. Ce paramètre n’a aucune incidence sur les mises à jour des applications.|
+|**Autoriser les modifications sur les paramètres de l’application Localiser mes amis**|Autorise l’utilisateur à modifier les paramètres de l’application Localiser mes amis.|
 |**Autoriser l’accès à l’IBooks Store**|Autorise l’utilisateur à parcourir et à acheter des livres depuis l’IBooks Store.|
 |**Autoriser l’utilisation de l’application Messages sur l’appareil**|Autorise l’utilisation de l’application Messages pour envoyer des SMS.|
 |**Autoriser l’utilisation de Podcasts**|Autorise l’utilisation de l’application Podcasts.|
 |**Autoriser l’utilisation du service Music**|Autorise l’utilisation de l’application Apple Music.|
-|**Autoriser le service iTunes Radio**|Autorisez l’utilisation de l’application iTunes Radio.|
+|**Autoriser le service iTunes Radio**|Autorise l’utilisation de l’application iTunes Radio.|
 |**Autoriser Apple News**|Autorise l’utilisation de l’application Apple News.|
 |**Autoriser Game Center**|Autorise l’utilisation de l’application Game Center.|
 
@@ -349,8 +352,6 @@ Utilisez les informations de cette liste pour identifier le nom, l’éditeur et
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 
