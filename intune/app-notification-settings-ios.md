@@ -1,28 +1,28 @@
 ---
-title: "Créer des notifications d’application pour les appareils iOS - Microsoft Intune - Azure | Microsoft Docs"
-description: "Ajoutez ou créez des notifications d’application pour les appareils iOS dans Microsoft Intune. Choisissez les applications auxquelles envoyer des notifications, configurez les paramètres de notification sur l’écran de verrouillage, activez le son, choisissez le type d’alerte et ajoutez un badge."
-keywords: 
+title: Créer des notifications d’application pour les appareils iOS - Microsoft Intune - Azure | Microsoft Docs
+description: Ajoutez ou créez des notifications d’application pour les appareils iOS dans Microsoft Intune. Choisissez les applications auxquelles envoyer des notifications, configurez les paramètres de notification sur l’écran de verrouillage, activez le son, choisissez le type d’alerte et ajoutez un badge.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 018a04bd674e4f270ed2e356c08825ab1d5878da
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 43068163c15c0588a8a6ef745d5b191f4547a94d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Configurer les paramètres des notifications d’application sur les appareils iOS dans Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Configurez la manière dont les applications installées sur un appareil iOS envoient des notifications. Ces paramètres prennent en charge les appareils supervisés exécutant iOS 9.3 et ultérieur.
 
@@ -33,18 +33,18 @@ Configurez la manière dont les applications installées sur un appareil iOS env
 3. Sélectionnez **Notifications de l’application (mode supervisé uniquement)**, puis **Ajouter** : ![Ajouter la notification d’application dans un profil iOS ou macOS dans Intune](./media/ios-macos-app-notifications.png)
 4. Entrez les propriétés suivantes :
 
-  - **ID d’ensemble d’applications** : entrez l’**ID d’ensemble d’applications** de l’application que vous voulez configurer. Pour obtenir de l’aide, consultez la section **Référence à un ID d’ensemble pour les applications iOS intégrées** de cet article.
-  - **Nom de l’application** : entrez le nom de l’application que vous voulez configurer. Ce nom ne s’affiche pas sur l’appareil et est utilisé pour vous aider à identifier l’application dans la liste.
-  - **Éditeur** : indiquez l’éditeur de l’application que vous voulez configurer. Le nom de l’éditeur ne s’affiche pas sur l’appareil et est utilisé uniquement pour vous aider à identifier l’application dans la liste.
-  - **Notifications** : permet d’activer ou désactiver l’envoi de notifications entre l’application et l’appareil. Si vous désactivez ce paramètre, les paramètres suivants sont également désactivés.
-    - **Afficher dans le centre de notifications** : activez ce paramètre pour permettre à l’application d’afficher des notifications dans le centre de notifications de l’appareil.
-    - **Afficher dans l’écran de verrouillage** : activez ce paramètre pour afficher les notifications de l’application sur l’écran de verrouillage de l’appareil.
-    - **Type d’alerte** : sélectionnez le type de notification que vous voulez afficher lorsque l’appareil est déverrouillé. Plusieurs options sont possibles :
-      - **Aucune** : aucune notification n’est affichée.
-      - **Bannière** : une bannière s’affiche brièvement pour montrer la notification.
-      - **Modal** : la notification s’affiche et l’utilisateur doit la fermer manuellement pour pouvoir continuer à utiliser l’appareil.
-    - **Badge sur l’icône de l’application** : activez ce paramètre pour ajouter un badge à l’icône de l’application afin d’indiquer que l’application a envoyé une notification.
-    - **Sons** : activez ce paramètre pour émettre un son quand une notification est envoyée.
+   - **ID d’ensemble d’applications** : entrez l’**ID d’ensemble d’applications** de l’application que vous voulez configurer. Pour obtenir de l’aide, consultez la section **Référence à un ID d’ensemble pour les applications iOS intégrées** de cet article.
+   - **Nom de l’application** : entrez le nom de l’application que vous voulez configurer. Ce nom ne s’affiche pas sur l’appareil et est utilisé pour vous aider à identifier l’application dans la liste.
+   - **Éditeur** : indiquez l’éditeur de l’application que vous voulez configurer. Le nom de l’éditeur ne s’affiche pas sur l’appareil et est utilisé uniquement pour vous aider à identifier l’application dans la liste.
+   - **Notifications** : permet d’activer ou désactiver l’envoi de notifications entre l’application et l’appareil. Si vous désactivez ce paramètre, les paramètres suivants sont également désactivés.
+     - **Afficher dans le centre de notifications** : activez ce paramètre pour permettre à l’application d’afficher des notifications dans le centre de notifications de l’appareil.
+     - **Afficher dans l’écran de verrouillage** : activez ce paramètre pour afficher les notifications de l’application sur l’écran de verrouillage de l’appareil.
+     - **Type d’alerte** : sélectionnez le type de notification que vous voulez afficher lorsque l’appareil est déverrouillé. Plusieurs options sont possibles :
+       - **Aucune** : aucune notification n’est affichée.
+       - **Bannière** : une bannière s’affiche brièvement pour montrer la notification.
+       - **Modal** : la notification s’affiche et l’utilisateur doit la fermer manuellement pour pouvoir continuer à utiliser l’appareil.
+     - **Badge sur l’icône de l’application** : activez ce paramètre pour ajouter un badge à l’icône de l’application afin d’indiquer que l’application a envoyé une notification.
+     - **Sons** : activez ce paramètre pour émettre un son quand une notification est envoyée.
 
 5. Continuez à ajouter autant d’applications que nécessaire. Une fois toutes les applications ajoutées, sélectionnez **OK**.
 6. Sélectionnez **Créer** pour enregistrer votre profil.

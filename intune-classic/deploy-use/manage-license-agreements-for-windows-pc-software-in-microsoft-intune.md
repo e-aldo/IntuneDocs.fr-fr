@@ -14,15 +14,15 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 73fa5866efe10006a8a3d7de38ec4c552d0df06e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f1d4eb8ea128ba453e555836289fb7d1ce8b34c4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gérer les contrats de licence des logiciels de PC Windows dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune permet d’ajouter et de gérer des informations de contrat de licence pour des logiciels achetés par l’intermédiaire de contrats de licence en volume Microsoft. Ceci est également possible pour les logiciels Microsoft et non-Microsoft achetés par d’autres moyens. Vous pouvez organiser ces informations en groupes logiques.
 
@@ -174,10 +174,12 @@ La liste **Tous les contrats** s'affiche.
 ## <a name="manage-license-agreements"></a>Gérer les contrats de licence
 Des contrats de licence logicielle peuvent être ajoutés à des groupes de licences. Vous pouvez utiliser des groupes de licences pour organiser vos contrats de licence en unités logiques pour votre organisation. De plus, vous pouvez supprimer des contrats de licence que vous avez créés précédemment.
 
-|||
-|-|-|
-|Tâche|Détails|
-|Créer un groupe de licences|Dans la page **Vue d’ensemble** de l’espace de travail **Licences**, choisissez **Créer un groupe de licences** dans le menu **Tâches**. **Remarque :** Vous pouvez créer un nombre maximal de 500 groupes de licences.|
-|Renommer un groupe de licences|Dans l’espace de travail **Licences**, choisissez un groupe de licences, puis choisissez **Modifier le groupe de licences** dans le menu **Tâches**.|
-|Supprimer un groupe de licences|Dans l’espace de travail **Licences**, choisissez un groupe de licences, puis choisissez **Supprimer le groupe de licences** dans le menu **Tâches**. **Conseil :** Les licences qui résidaient dans le groupe supprimé sont déplacées vers le groupe de licences **Contrats non attribués**.|
-|Supprimer un contrat de licence|Dans l’espace de travail **Licences**, choisissez un contrat, puis cliquez sur **Supprimer**. **Conseil :** Après avoir supprimé les contrats de licence en volume, pour mettre à jour les informations de licence, choisissez **Actualiser maintenant** dans la page **Vue d’ensemble des licences** ou sous l’onglet **Général** pour un groupe de licences spécifique.|
+
+|                            |                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            Tâche            |                                                                                                                                                                                 Détails                                                                                                                                                                                  |
+|   Créer un groupe de licences   |                                                            Dans la page <strong>Vue d’ensemble</strong> de l’espace de travail <strong>Licences</strong>, choisissez <strong>Créer un groupe de licences</strong> dans le menu <strong>Tâches</strong>. <strong>Remarque :</strong> Vous pouvez créer un nombre maximal de 500 groupes de licences.                                                             |
+|   Renommer un groupe de licences   |                                                                                                      Dans l’espace de travail <strong>Licences</strong>, choisissez un groupe de licences, puis choisissez <strong>Modifier le groupe de licences</strong> dans le menu <strong>Tâches</strong>.                                                                                                       |
+|   Supprimer un groupe de licences   |                                 Dans l’espace de travail <strong>Licences</strong>, choisissez un groupe de licences, puis choisissez <strong>Supprimer le groupe de licences</strong> dans le menu <strong>Tâches</strong>. <strong>Conseil :</strong> Les licences qui résidaient dans le groupe supprimé sont déplacées vers le groupe de licences <strong>Contrats non attribués</strong>.                                 |
+| Supprimer un contrat de licence | Dans l’espace de travail <strong>Licences</strong>, choisissez un contrat, puis cliquez sur <strong>Supprimer</strong>. <strong>Conseil :</strong> Après avoir supprimé les contrats de licence en volume, pour mettre à jour les informations de licence, choisissez <strong>Actualiser maintenant</strong> dans la page <strong>Vue d’ensemble des licences</strong> ou sous l’onglet <strong>Général</strong> pour un groupe de licences spécifique. |
+

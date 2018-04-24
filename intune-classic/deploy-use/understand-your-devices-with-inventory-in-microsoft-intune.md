@@ -1,29 +1,29 @@
 ---
-title: "Comprendre vos appareils grâce à l’inventaire"
-description: "Cette rubrique explique comment utiliser Intune pour afficher des informations sur le matériel des appareils que vous gérez."
-keywords: 
+title: Comprendre vos appareils grâce à l’inventaire
+description: Cette rubrique explique comment utiliser Intune pour afficher des informations sur le matériel des appareils que vous gérez.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/05/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c72e216201ac019f2cdffaf6e185bd6ff4436737
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e50a7329512e6b57eb5486792669b7cd102eebdb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Comprendre vos appareils grâce à l’inventaire de Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune vous permet d’afficher l’inventaire des appareils inscrits et des ordinateurs Windows qui exécutent le logiciel client Intune.
 Généralement, Intune collecte l’inventaire auprès des appareils gérés tous les 7 jours. Pour cette raison, un certain délai peut être observé avant que les rapports ne reflètent les modifications récentes apportées aux appareils, par exemple, un changement de nom d’appareil ou une modification de l’espace de stockage disponible.

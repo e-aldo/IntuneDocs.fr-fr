@@ -1,5 +1,5 @@
 ---
-title: Nouveautés des mois précédents dans Microsoft Intune
+title: Nouveautés des mois précédents dans Microsoft Intune - Azure | Microsoft Docs
 titlesuffix: ''
 description: Passer en revue les annonces antérieures sur la page Nouveautés d’Intune
 keywords: ''
@@ -16,15 +16,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2326078f57abf3101869b463aca8eba55aad2905
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: d87cf0a56a6b114a210242691d0441882c186964
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Nouveautés de la préversion de Microsoft Intune - mois précédents
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="october-2017"></a>Octobre 2017
 
@@ -570,7 +570,7 @@ Pour plus d’informations, consultez [Paramètres de restriction des appareils 
 Nous avons ajouté [de nouveaux paramètres de restriction d’appareil Windows](device-restrictions-windows-10.md) qui contrôlent des fonctionnalités telles que les affichages sans fil, la détection des appareils, le basculement de tâche et les messages d’erreur de carte SIM.
 
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>Mises à jour à la configuration de certificat <!-- 918991 and 823198 -->
-Lors de la création d’un profil de certificat SCEP, l’option **Personnalisé** option est disponible pour **Format du nom du sujet** sur les appareils iOS, Android et Windows. Avant cette mise à jour, le champ **Personnalisé** était disponible pour les appareils iOS uniquement. Pour plus d’informations, consultez [Guide de création d’un profil de certificat SCEP] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile).
+Lors de la création d’un profil de certificat SCEP, l’option <strong>Personnalisé</strong> option est disponible pour <strong>Format du nom du sujet</strong> sur les appareils iOS, Android et Windows. Avant cette mise à jour, le champ <strong>Personnalisé</strong> était disponible pour les appareils iOS uniquement. Pour plus d’informations, consultez [Create a SCEP certificate profile](certificates-scep-configure.md#create-a-scep-certificate-profile) (Créer un profil de certificat SCEP).
 
 Lors de la création d’un profil de certificat PKCS, pour **Autre nom de l’objet**, **Attribut personnalisé Azure AD** est disponible. L’option **Service** est disponible lorsque vous sélectionnez **Attribut personnalisé Azure AD**. Pour plus d’informations, consultez la page [Guide pratique pour créer un profil de certificat PKCS](certficates-pfx-configure.md#create-a-device-configuration-profile).
 
@@ -679,7 +679,7 @@ Deux nouveaux paramètres d’application sont désormais disponibles pour vous 
 
   Liste des services d’emplacement de stockage pris en charge :
 
-  - OneDrive Entreprise
+  - OneDrive
   - SharePoint Online
   - Stockage local
 

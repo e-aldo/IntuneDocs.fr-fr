@@ -1,23 +1,23 @@
 ---
-title: "Guide de création de profils VPN personnalisés avec Microsoft Intune"
-titleSuffix: 
-description: "Utilisez des configurations personnalisées pour créer des profils VPN dans Intune."
-keywords: 
+title: Guide de création de profils VPN personnalisés avec Microsoft Intune
+titleSuffix: ''
+description: Utilisez des configurations personnalisées pour créer des profils VPN dans Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: ec9b959d086051985287a62f7d10fe8d4cbad7e9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.sourcegitcommit: 28ed8902a11500b195fff839d59b90c16af6e743
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Guide pratique pour créer des profils VPN personnalisés dans Microsoft Intune
 
@@ -38,7 +38,7 @@ Ce type de stratégie peut être utile quand les stratégies VPN Intune standard
 3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le volet **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
 5. Dans le volet de profils, choisissez **Créer un profil**.
-6. Dans le volet **Créer un profil**, entrez un **Nom** et une **Description** pour votre profil VPN.
+6. Dans le volet **Créer un profil**, entrez un **Nom** et la **Description** du profil VPN.
 7. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres VPN. Actuellement, vous pouvez choisir l’une des plateformes suivantes pour les paramètres personnalisés :
     - **Android**
     - **Android for Work**

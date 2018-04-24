@@ -3,10 +3,10 @@ title: Mises à jour de l’interface utilisateur pour les applications utilisat
 titlesuffix: Microsoft Intune
 description: Découvrez ce qui a changé dans l’interface utilisateur des applications qui fonctionnent sur les appareils des utilisateurs finaux avec Microsoft Intune.
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/21/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,41 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e553391bb2a98c5e57edf0a4388359703b9d550
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: 8da396e41844c854cd18a9384fe97ac0bee59355
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Comprendre ces mises à jour peut vous aider dans vos communications avec les utilisateurs et dans la mise à jour de la documentation personnalisée que vous avez créée pour accompagner votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-2-2018"></a>Semaine du 2 avril 2018
+
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866---"></a>Mise à jour de l’expérience utilisateur dans l’application Portail d’entreprise pour iOS <!--1412866 -->
+Nous avons publié une mise à jour majeure de l’expérience utilisateur de l’application Portail d’entreprise pour iOS. La mise à jour comporte une refonte visuelle complète incluant une apparence plus moderne. Nous avons conservé les fonctionnalités de l’application, mais nous avons étendu sa facilité d’utilisation et son accessibilité.  
+
+Vous découvrirez également les points suivants :
+- Prise en charge de l’iPhone X.
+- Lancement et chargement plus rapides des applications, pour faire gagner du temps aux utilisateurs.
+- Barres de progression supplémentaires pour fournir aux utilisateurs les toutes dernières informations d’état.
+- Améliorations de la façon dont les utilisateurs chargent les journaux pour faciliter le signalement des problèmes.  
+
+|Avant|Après|
+|---|---|
+|![01](/intune/media/cp_iosRedesign_before_1803_01.png)|![01](/intune/media/cp_iosRedesign_after_1803_01.png)|
+|*Combiné à l’étape précédente*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
+|![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
+
+#### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Améliorations du langage utilisé dans l’application Portail d’entreprise pour Windows <!---1683758--->
+Nous avons amélioré le langage utilisé dans le Portail d’entreprise pour Windows 10 pour qu’il soit plus convivial et plus spécifique à votre entreprise.
+
+|Avant|Après|
+|---|---|
+|![01](./media/windows_enroll_before_1803.png)|![01](./media/windows_enroll_after_1803.png)|
+|![02](./media/windows_view_policy_issues_before_1803.png)|![02](./media/windows_view_policy_issues_after_1803.png)
 
 ## <a name="week-of-march-12-2018"></a>Semaine du 12 mars 2018
 
@@ -34,12 +59,13 @@ Nous avons mis à jour l’application Portail d’entreprise pour Android afin 
 
 |Avant|Après|
 |---|---|
-|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![01](./media/android_about_before_1803.png)|![01](./media/androidCP_about_after_1803.png)|
 |![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
-|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
-|![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
-|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![03](./media/android_devices_before_1803.png)|![03](./media/androidCP_devicelist_after_1803.png)|
+|![04](./media/android_device_details_before_1803.png)|![05](./media/androidCP_devicedetails_1_after1803.png)|
+|![05](./media/android_device_details_update_settings_before_1803.png)|![05](./media/androidCP_devicedetails_red_box_2_after1803.png)|
 |![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+|![07](./media/androidCP_Setup01_before_1803.png)|![07](./media/androidCP_Setup01_after_1803.png)|
 
 
 ## <a name="week-of-november-27-2017"></a>Semaine du 27 novembre 2017
@@ -165,9 +191,9 @@ L’accès conditionnel avec Intune prend en charge une authentification plus s�
 
 
 
-### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Les boîtes de dialogue Gestion des applications mobiles (MAM) Intune auront une interface modernisée <!-- 1199015 -->
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune auront une interface modernisée <!-- 1199015 -->
 
-Les boîtes de dialogue Gestion des applications mobiles (MAM) Intune seront mises à jour pour afficher une apparence plus actuelle. Ces boîtes de dialogue fonctionneront de la même façon qu’avec le précédent style.
+Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune seront mises à jour pour afficher une apparence plus actuelle. Ces boîtes de dialogue fonctionneront de la même façon qu’avec le précédent style.
 
 **Expérience précédente**
 
@@ -409,14 +435,6 @@ Vous n’avez rien à faire pour vous préparer à ce changement. Nous vous info
 |---|---|
 |![La page de l’appareil mis à jour montre l’appareil correctement aligné au-dessus des informations le concernant et ne surgit plus au-dessus de la liste complète.](./media/iwp-device-after-1803.png)|![Version précédente de la page de l’appareil.](./media/iwp-device-before-1803.png)|
 |![La page d’installation de l’application mise à jour présente l’application au-dessus de sa description et de diverses informations d’installation, comme la date de publication, la version et le type d’application.](./media/iwp-app-install-after-1803.png)|![Version précédente de la page d’installation de l’application.](./media/iwp-app-install-before-1803.png)|
-
-### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Mise à jour de l’expérience utilisateur dans l’application Portail d’entreprise pour iOS <!--1412866-->
-
-Nous publierons une mise à jour importante de l’expérience utilisateur dans l’application Portail d’entreprise pour iOS. La mise à jour présentera une toute nouvelle apparence, plus moderne, avec une amélioration de l’accessibilité et de l’utilisation. Toutes les fonctionnalités actuelles de l’application Portail d’entreprise pour iOS seront conservées.
-
-Nous vous offrons une préversion de l’application Portail d’entreprise pour iOS mise à jour via le programme Apple TestFlight pour que vous l’utilisiez et nous fassiez part de vos commentaires. Inscrivez-vous sur https://aka.ms/intune_ios_cp_testflight pour accéder à TestFlight. Pour les dernières informations sur cette mise à jour, consultez https://aka.ms/iOS_companyportal_update.
-
-![images d’annonce de la nouvelle application Portail d’entreprise pour iOS](./media/ios-cp-app-redesign-1801-teaser.png)
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Mises à jour apportées à l’interface utilisateur sur le site web Portail d’entreprise <!--1313244 part 2-->
 

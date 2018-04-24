@@ -1,27 +1,27 @@
 ---
-title: "Synchroniser manuellement votre appareil Windows | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Synchroniser manuellement votre appareil Windows | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d3b0fb8ea462656602ee9b4e58200d3c2e755a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Synchroniser votre appareil Windows manuellement
 
@@ -65,10 +65,10 @@ Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour
 
 2. Choisissez votre compte professionnel ou scolaire. Selon la configuration effectuée par le support technique de votre entreprise, vous pouvez voir deux comptes similaires à l’exemple ci-dessous. Un compte est accompagné d’un porte-documents, l’autre du logo Microsoft.
 
-    - Si vous voyez le compte avec le porte-documents, sélectionnez-le, puis recherchez un bouton **Info** sous celui-ci.
-    - Si vous voyez uniquement le compte avec le logo Microsoft, sélectionnez le compte, puis recherchez un bouton **Info** sous celui-ci.
+   - Si vous voyez le compte avec le porte-documents, sélectionnez-le, puis recherchez un bouton **Info** sous celui-ci.
+   - Si vous voyez uniquement le compte avec le logo Microsoft, sélectionnez le compte, puis recherchez un bouton **Info** sous celui-ci.
 
-    ![Choisissez votre nom de compte en regard du porte-documents ou du logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
+     ![Choisissez votre nom de compte en regard du porte-documents ou du logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
 
 3. Choisissez le bouton **Info**. Une boîte de dialogue s’ouvre, similaire à l’exemple ci-dessous.
 

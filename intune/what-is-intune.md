@@ -1,36 +1,36 @@
 ---
-title: "Introduction à Intune dans le portail Azure"
-titlesuffix: 
-description: "Microsoft Intune est disponible dans le portail Azure. Découvrez les concepts de base d’Intune dans le portail Azure."
-keywords: 
+title: Introduction à Intune dans le portail Azure
+titlesuffix: ''
+description: Microsoft Intune est disponible dans le portail Azure. Découvrez les concepts de base d’Intune dans le portail Azure.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introduction à Microsoft Intune dans le portail Azure
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Comme d’autres services Azure, Microsoft Intune est disponible dans le portail Azure. En sélectionnant **Intune** dans le portail Azure, vous pouvez gérer les appareils mobiles, les PC et les applications de votre organisation.
 
->[!NOTE] 
+> [!NOTE]
 > Si vous avez utilisé une version antérieure de Microsoft Intune, les informations suivantes peuvent vous êtres utiles :
-    * [Où se trouvent mes fonctionnalités dans Azure ?](ui-changes.md) est une référence qui vous montre les flux de travail et interfaces utilisateur spécifiques qui ont été modifiés au cours du passage à Azure.
-    * [Groupes classiques Intune dans le portail Azure](groups-get-started.md) explique les implications du passage aux groupes de sécurité Azure Active Directory pour la gestion des groupes.
+>     * [Où se trouvent mes fonctionnalités dans Azure ?](ui-changes.md) est une référence qui vous montre les flux de travail et interfaces utilisateur spécifiques qui ont été modifiés au cours du passage à Azure.
+>     * [Groupes classiques Intune dans le portail Azure](groups-get-started.md) explique les implications du passage aux groupes de sécurité Azure Active Directory pour la gestion des groupes.
 
 Voici quelques points clés de l’expérience Microsoft Intune dans le portail Azure :
 

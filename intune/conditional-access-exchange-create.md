@@ -1,28 +1,28 @@
 ---
-title: "Créer une stratégie d’accès conditionnel Exchange"
+title: Créer une stratégie d’accès conditionnel Exchange
 titlesuffix: Microsoft Intune
-description: "Configurer l’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans Intune"
-keywords: 
+description: Configurer l’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité dans Intune
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cfe5916668de6d8bb3c42f2fd6afb6221bbc07e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Créer une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cet article montre comment configurer l’accès conditionnel pour Exchange sur site basé sur la conformité des appareils.
 
@@ -78,7 +78,7 @@ L'application native **Courrier** sur Windows 8.1 et les versions ultérieures (
 
 1. Une fois correctement connecté, le **tableau de bord Azure** apparaît.
 
-1. Choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+1. Choisissez **Tous les services** dans le menu de gauche, puis entrez **Intune** dans le filtre de la zone de texte.
 
 1. Choisissez **Intune**, vous voyez le **tableau de bord Intune**.
 

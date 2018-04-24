@@ -1,29 +1,29 @@
 ---
-title: "Profils de provisionnement d’applications iOS dans Microsoft Intune"
-titlesuffix: 
-description: "Intune vous offre les outils pour affecter de façon proactive un nouveau profil de configuration pour les appareils qui disposent d’applications arrivant prochainement à expiration."
-keywords: 
+title: Profils de provisionnement d’applications iOS dans Microsoft Intune
+titlesuffix: ''
+description: Intune vous fournit les outils nécessaires pour affecter de manière proactive un nouveau profil de provisionnement aux appareils dont les applications arrivent à expiration.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87d97ddd4c70236193d4e6bb12ac6d68e4085903
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6394af9affd5087aaf26489be4b49e84568d6e1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Utiliser des profils de provisionnement mobile iOS dans Intune pour empêcher l’expiration de vos applications
+# <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Utiliser les profils de provisionnement d’application iOS pour empêcher l’expiration de vos applications
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introduction
 
@@ -36,11 +36,12 @@ Les applications métier Apple iOS affectées aux iPhone et iPad intègrent un p
 Le certificat de signature d’entreprise que vous utilisez pour signer des applications dure généralement trois ans. Toutefois, le profil de configuration expire au bout d’1 an. Tant que le certificat est toujours valide, Intune vous offre les outils pour affecter de façon proactive un nouveau profil de configuration aux appareils qui disposent d’applications arrivant prochainement à expiration.
 Après l’expiration du certificat, vous devez à nouveau signer l’application avec un nouveau certificat et incorporer un nouveau profil de configuration avec la clé du nouveau certificat.
 
+En tant qu’administrateur, vous pouvez inclure et exclure des groupes de sécurité pour affecter une configuration de provisionnement d’application iOS. Par exemple, vous pouvez affecter une configuration de provisionnement d’application iOS à tous les utilisateurs, et exclure un groupe composé de cadres de direction.
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Comment créer un profil de configuration d’application mobile iOS
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Applications mobiles**.
 1.  Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Profils de provisionnement d’application iOS**.
 2.  Dans le volet de la liste des profils, sélectionnez **Créer un profil**.

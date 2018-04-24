@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: caa6e57fbaeefbdcdbdf118f2f97985e26fc7724
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 De nombreuses plateformes mobiles incluent un client de messagerie natif fourni avec le système d’exploitation. Certains de ces clients peuvent être configurés à l’aide de profils de messagerie, comme décrit dans cette rubrique.
 
@@ -89,7 +89,7 @@ Comme le mot de passe n’est pas contenu dans le profil de messagerie, l’util
 
 3.  Utilisez le tableau suivant pour vous aider à configurer les paramètres de profil de messagerie :
 
-|Nom du paramètre | Plus d’informations|
+|Nom du paramètre | Autres informations|
 | ----------- | --------------- |
     |**Nom**|Nom unique du profil de messagerie.|
     |**Description**|Description qui vous aide à identifier ce profil.|

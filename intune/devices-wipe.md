@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Vous pouvez supprimer d’Intune les appareils dont vous n’avez plus besoin, qui ont été réaffectés ou qui ont disparu. Pour cela, vous pouvez utiliser l’action **Supprimer les données d’entreprise** ou **Réinitialisation aux paramètres d’usine**. Les utilisateurs peuvent également émettre une commande à distance à partir de l’application Portail d’entreprise Intune sur les appareils personnels inscrits dans Intune.
 
 > [!NOTE]
 > Avant de supprimer un utilisateur d’Azure Active Directory (Azure AD), utilisez l’action **Réinitialisation aux paramètres d’usine** ou **Supprimer les données d’entreprise** pour tous les appareils qui sont associés à cet utilisateur. Si vous supprimez d’Azure Active Directory des utilisateurs avec des appareils gérés, Intune ne peut plus émettre de commande de réinitialisation aux paramètres d’usine ou de suppression des données d’entreprise pour ces appareils.
 
-## <a name="factory-reset"></a>Réinitialisation aux paramètres d'usine
+## <a name="factory-reset"></a>Réinitialisation des paramètres d’usine
 
 L’action **Réinitialisation aux paramètres d’usine** rétablit les paramètres d’usine d’un appareil. Une réinitialisation aux paramètres d’usine restaure tous les paramètres et données utilisateur et d’entreprise. L’appareil n’est plus géré par Intune. La réinitialisation aux paramètres d’usine est utile pour réinitialiser un appareil avant de le donner à un nouvel utilisateur ou en cas de perte ou de vol de l’appareil. Faites attention lors de la sélection de la **Réinitialisation aux paramètres d’usine**. Les données sur l’appareil ne peuvent pas être récupérées.
 
@@ -71,8 +71,8 @@ Les tableaux suivants décrivent la nature des données supprimées et l’effet
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|
 |Paramètres de profil de certificat|Les certificats sont supprimés et révoqués.|
 |Agent de gestion|Le profil de gestion est supprimé.|
-|E-mail|Les profils de messagerie provisionnés par le biais d’Intune sont supprimés. Les e-mails mis en cache sur l’appareil sont supprimés.|
-|Outlook|Les e-mails reçus par l’application Microsoft Outlook pour iOS sont supprimés.|
+|Courrier électronique|Les profils de messagerie provisionnés par le biais d’Intune sont supprimés. Les e-mails mis en cache sur l’appareil sont supprimés.|
+|Outlook|Les e-mails reçus par l’application Microsoft Outlook pour iOS sont supprimés. Cela nécessite que l’application mobile Outlook soit d’abord déployée en tant qu’application requise pour les utilisateurs iOS.|
 |Disjonction d’Azure AD|L’enregistrement Azure AD est supprimé.|
 |Contacts |Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
 
@@ -89,7 +89,7 @@ Les tableaux suivants décrivent la nature des données supprimées et l’effet
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Les certificats sont révoqués, mais pas supprimés.|Les certificats sont supprimés et révoqués.|
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
-|E-mail|N/A (les profils de messagerie ne sont pas pris en charge par les appareils Android)|Les profils de messagerie provisionnés par le biais d’Intune sont supprimés. Les e-mails mis en cache sur l’appareil sont supprimés.|
+|Courrier électronique|N/A (les profils de messagerie ne sont pas pris en charge par les appareils Android)|Les profils de messagerie provisionnés par le biais d’Intune sont supprimés. Les e-mails mis en cache sur l’appareil sont supprimés.|
 |Outlook|Les e-mails reçus par l’application Outlook pour Android sont supprimés, mais uniquement si Outlook est protégé par des stratégies MAM. Dans le cas contraire, Outlook n’est pas réinitialisé quand l’appareil est désinscrit.|Les e-mails reçus par l’application Outlook pour Android sont supprimés, mais uniquement si Outlook est protégé par des stratégies MAM. Dans le cas contraire, Outlook n’est pas réinitialisé quand l’appareil est désinscrit.|
 |Disjonction d’Azure AD|L’enregistrement Azure AD est supprimé.|L’enregistrement Azure AD est supprimé.|
 |Contacts |Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
@@ -118,7 +118,7 @@ La suppression des données d’entreprise d’un appareil Android for Work supp
 |Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées. Les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées. Les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées. Les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées. Les utilisateurs peuvent modifier les paramètres.|
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|Non pris en charge.|Supprimé.|
 |Paramètres de profil de certificat|Les certificats sont supprimés et révoqués.|Les certificats sont supprimés et révoqués.|Non pris en charge.|Les certificats sont supprimés et révoqués.|
-|E-mail|Supprime les e-mails qui sont activés pour le système EFS. Cela comprend les e-mails et pièces jointes dans l’application Courrier pour Windows.|Non pris en charge.|Les profils de messagerie provisionnés par le biais d’Intune sont supprimés. Les e-mails mis en cache sur l’appareil sont supprimés.|Supprime les e-mails qui sont activés pour le système EFS. Cela comprend les e-mails et pièces jointes dans l’application Courrier pour Windows. Supprime les comptes de messagerie provisionnés par Intune.|
+|Courrier électronique|Supprime les e-mails qui sont activés pour le système EFS. Cela comprend les e-mails et pièces jointes dans l’application Courrier pour Windows.|Non pris en charge.|Les profils de messagerie provisionnés par le biais d’Intune sont supprimés. Les e-mails mis en cache sur l’appareil sont supprimés.|Supprime les e-mails qui sont activés pour le système EFS. Cela comprend les e-mails et pièces jointes dans l’application Courrier pour Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
 |Disjonction d’Azure AD|Non.|Non.|L’enregistrement Azure AD est supprimé.|Non applicable. Sur Windows 10, vous ne pouvez pas supprimer les données d’entreprise pour les appareils joints à Azure AD.|
 
 ### <a name="remove-company-data"></a>Supprimer les données d’entreprise

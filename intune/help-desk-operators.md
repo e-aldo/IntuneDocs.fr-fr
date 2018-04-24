@@ -1,28 +1,28 @@
 ---
-title: "Portail de dépannage du centre de support technique"
+title: Portail de dépannage du centre de support technique
 titlesuffix: Microsoft Intune
-description: "Les équipes de support technique utilisent le portail de résolution des problèmes pour résoudre les problèmes techniques des utilisateurs."
-keywords: 
+description: Les équipes de support technique utilisent le portail de résolution des problèmes pour résoudre les problèmes techniques des utilisateurs.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9ff0d6f662fca4cb223496d342de5d6378c05ceb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utiliser le portail de résolution des problèmes pour aider les utilisateurs dans votre entreprise
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Le portail de résolution des problèmes permet aux opérateurs du support technique et aux administrateurs Intune d’afficher les informations utilisateur pour répondre aux demandes d’assistance des utilisateurs. Les organisations qui ont un support technique peuvent affecter **l’opérateur de support technique** à un groupe d’utilisateurs. Le rôle Opérateur de support technique peut utiliser le volet **Dépanner**.
 
@@ -44,7 +44,7 @@ Quand un utilisateur contacte le support technique pour signaler un problème av
 Dans le volet de dépannage, choisissez **Sélectionner un utilisateur** pour afficher les informations d’un utilisateur. Les informations de l’utilisateur peuvent vous aider à comprendre l’état actuel des utilisateurs et de leurs appareils.  
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Dépanner**.
 4. Cliquez sur **Sélectionnez** pour sélectionner un utilisateur à dépanner.
 5. Sélectionnez un utilisateur en tapant son nom ou son adresse e-mail. Cliquez sur **Sélectionner**. Les informations sur le dépannage pour l’utilisateur s’affichent dans le volet Dépannage. Les tableaux qui suivent expliquent les informations.
@@ -81,7 +81,7 @@ Propriétés des applications mobiles.
 | Type          | Vous pouvez choisir un type d’attribution pour chaque application.  <br> **Disponible** : les utilisateurs effectuent l’installation de l’application à la demande à partir de l’application ou du site web de portail d’entreprise.  <br> **Non applicable** : l’application n’est pas installée ni affichée dans le portail d’entreprise. <br> **Désinstaller** : l’application est désinstallée des appareils dans les groupes sélectionnés.  <br> **Disponible avec ou sans inscription** : affectez cette application à des groupes d’utilisateurs dont les appareils ne sont pas inscrits avec Intune. |
 | Dernière modification le | Nom du type d’appareil.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>Appareils
+### <a name="devices"></a>Périphériques
 
 Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
 
@@ -126,11 +126,11 @@ Le tableau récapitule l’état des stratégies de protection des applications 
 | Inscription  | Nom du type d’appareil.                                                                                                     |
 | Dernière mise à jour | Horodatage de la modification de la stratégie.                                                                                              |
 
-### <a name="devices"></a>Appareils
+### <a name="devices"></a>Périphériques
 
 Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
 
-| Propriété           | Text                                                                                                                                |
+| Propriété           | Texte                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Nom du périphérique        | Nom du type d’appareil.                                                                                                     |
 | Géré par         | Horodatage de la modification de la stratégie.                                                                                              |
@@ -159,7 +159,7 @@ Propriétés des stratégies de conformité.
 | Type de stratégie   | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Dernière modification le | Nom du type d’appareil.                                                                                                     |
 
-### <a name="devices"></a>Appareils
+### <a name="devices"></a>Périphériques
 
 Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
 
@@ -204,7 +204,7 @@ Propriétés des stratégies de configuration.
 | Type de stratégie   | Type de propriété des appareils. Les valeurs peuvent être **Entreprise**, **Personnel**, et **Inconnu**.                                               |
 | Dernière modification le | Nom du type d’appareil.                                                                                                     |
 
-### <a name="devices"></a>Appareils
+### <a name="devices"></a>Périphériques
 
 Appareils gérés par Intune, ou par les utilisateurs gérés par Intune ou Azure AD.
 

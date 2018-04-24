@@ -1,28 +1,28 @@
 ---
-title: "Résoudre les problèmes des profils d’appareil dans Microsoft Intune - Azure | Microsoft Docs"
-description: "Problèmes courants liés aux profils d’appareil avec Microsoft Intune dans le portail Azure, notamment les changements de profil non appliqués à certains utilisateurs ou appareils, combien de temps il faut pour pousser une nouvelle stratégie sur des appareils, quels sont les paramètres appliqués en cas de stratégies multiples, que se passe-t-il quand un profil est supprimé ou retiré, etc."
-keywords: 
+title: Résoudre les problèmes des profils d’appareil dans Microsoft Intune - Azure | Microsoft Docs
+description: Problèmes courants liés aux profils d’appareil avec Microsoft Intune dans le portail Azure, notamment les changements de profil non appliqués à certains utilisateurs ou appareils, combien de temps il faut pour pousser une nouvelle stratégie sur des appareils, quels sont les paramètres appliqués en cas de stratégies multiples, que se passe-t-il quand un profil est supprimé ou retiré, etc.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73bac7c139a0dd42734ce6528172aeba2cb7b40c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problèmes courants avec les profils d’appareil dans Microsoft Intune et résolutions
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Résoudre les problèmes courants à l’aide des profils d’appareil Intune.
 
@@ -77,7 +77,7 @@ Quand plusieurs stratégies sont affectées au même utilisateur ou appareil, le
 -   Si un paramètre de stratégie de configuration est en conflit avec un paramètre d’une autre stratégie de configuration, ce conflit apparaît dans le portail Azure. Dans ce scénario, vous pouvez corriger ces conflits manuellement.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Que se passe-t-il quand des stratégies de protection d’application entrent en conflit ? Laquelle est appliquée à l’application ?
-Les valeurs en conflit sont les paramètres les plus restrictifs disponibles dans une stratégie de protection d’application, à l’exception des champs d’entrée numérique (comme le nombre de tentatives autorisées avant la réinitialisation du code PIN). Les champs d’entrée numérique sont définis sur les mêmes valeurs que quand vous créez une stratégie MAM dans la console en choisissant les paramètres recommandés.
+Les valeurs en conflit sont les paramètres les plus restrictifs disponibles dans une stratégie de protection d’application, à l’exception des champs d’entrée numérique (comme le nombre de tentatives autorisées avant la réinitialisation du code PIN). Les champs d’entrée numérique sont définis sur les mêmes valeurs que quand vous créez une stratégie GAM dans la console en choisissant les paramètres recommandés.
 
 Des conflits se produisent quand deux paramètres de profil sont identiques. Par exemple, vous avez configuré deux stratégies MAM identiques, à l’exception du paramètre de copier/coller. Dans ce scénario, le paramètre de copier/coller est défini sur la valeur la plus restrictive, mais le reste des paramètres est appliqué selon leur configuration.
 

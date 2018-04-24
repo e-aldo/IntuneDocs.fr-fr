@@ -1,29 +1,29 @@
 ---
 title: Configurer la gestion iOS et MAC
-description: "Activez la gestion des appareils mobiles pour les appareils iOS, notamment iPad et iPhone, ainsi que les appareils Mac OS X avec Microsoft Intune."
-keywords: 
+description: Activez la gestion des appareils mobiles pour les appareils iOS, notamment iPad et iPhone, ainsi que les appareils Mac OS X avec Microsoft Intune.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3dccbc4bc4e300aa5d2e804e2bf500826c0bdb8e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 280efe7e7a5a1616ebab9abce7b7a5d78e321e7c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-ios-and-mac-device-management"></a>Configurer la gestion des appareils iOS et Mac
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune permet la gestion des appareils mobiles (MDM) pour les appareils iPad, iPhone et Mac OS, et permet aux utilisateurs d’accéder à la messagerie et aux applications de l’entreprise. Intune requiert un certificat APNS (Apple Push Notification Service) pour gérer les appareils iOS et Mac. Une fois le certificat ajouté à Intune, les utilisateurs peuvent installer l’application Portail d’entreprise pour inscrire leurs appareils, ou l’administrateur peut configurer la [gestion des appareils iOS d’entreprise](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 

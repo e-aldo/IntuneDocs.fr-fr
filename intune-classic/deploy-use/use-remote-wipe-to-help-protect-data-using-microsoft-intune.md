@@ -1,29 +1,29 @@
 ---
-title: "Utiliser la réinitialisation à distance pour protéger les données"
-description: "Intune fournit des fonctionnalités de réinitialisation sélective et complète pour supprimer des données d’entreprise sensibles et supprimer l’accès à de nombreuses ressources d’entreprise."
-keywords: 
+title: Utiliser la réinitialisation à distance pour protéger les données
+description: Intune fournit des fonctionnalités de réinitialisation sélective et complète pour supprimer des données d’entreprise sensibles et supprimer l’accès à de nombreuses ressources d’entreprise.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Protégez vos données avec la réinitialisation complète ou sélective à l’aide de Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez réinitialiser les applications et les données à partir d’appareils gérés par Intune qui ne sont plus nécessaires, qui ont été réaffectés ou ont disparu. Pour ce faire, Intune propose des fonctionnalités de réinitialisation sélective et de réinitialisation complète. Les utilisateurs peuvent également émettre une commande de réinitialisation d’appareil à distance à partir de l’application Portail d’entreprise Intune sur les appareils privés inscrits dans Intune.
 
@@ -40,37 +40,37 @@ Vous pouvez réinitialiser les applications et les données à partir d’appare
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Réinitialiser à distance un appareil à partir de la console d’administration Intune
 
-1.  Sélectionnez les appareils à réinitialiser. Vous les trouverez par utilisateur ou par appareil.
+1. Sélectionnez les appareils à réinitialiser. Vous les trouverez par utilisateur ou par appareil.
 
-    -   **Par utilisateur :**
+   - **Par utilisateur :**
 
-        1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les utilisateurs**.
+     1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les utilisateurs**.
 
-        2.  Cliquez sur le nom de l’utilisateur dont vous souhaitez réinitialiser l’appareil mobile. Choisissez **Afficher les propriétés**.
+     2.  Cliquez sur le nom de l’utilisateur dont vous souhaitez réinitialiser l’appareil mobile. Choisissez **Afficher les propriétés**.
 
-        3.  Dans la page des **propriétés** de l’utilisateur, sélectionnez **Appareils**, puis le nom de l’appareil mobile à réinitialiser. Pour sélectionner plusieurs appareils, appuyez sur Ctrl, puis cliquez sur les différents noms d’appareils.
+     3.  Dans la page des **propriétés** de l’utilisateur, sélectionnez **Appareils**, puis le nom de l’appareil mobile à réinitialiser. Pour sélectionner plusieurs appareils, appuyez sur Ctrl, puis cliquez sur les différents noms d’appareils.
 
-    -   **Par appareil :**
+   - **Par appareil :**
 
-        1.  Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils mobiles**.
+     1. Dans la [console d’administration Intune](https://manage.microsoft.com/), choisissez **Groupes** &gt; **Tous les appareils mobiles**.
 
-         ![Démarrage d’une mise hors service ou d’une réinitialisation](../media/dev-sa-wipe.png)
+        ![Démarrage d’une mise hors service ou d’une réinitialisation](../media/dev-sa-wipe.png)
 
-        2.  Sélectionnez **Appareils**, puis le nom de l’appareil mobile à réinitialiser. Pour sélectionner plusieurs appareils, appuyez sur Ctrl, puis cliquez sur les différents noms d’appareils.
+     2. Sélectionnez **Appareils**, puis le nom de l’appareil mobile à réinitialiser. Pour sélectionner plusieurs appareils, appuyez sur Ctrl, puis cliquez sur les différents noms d’appareils.
 
-2.  Choisissez **Mettre hors service/Réinitialiser**.
+2. Choisissez **Mettre hors service/Réinitialiser**.
 
-3.  Un message de confirmation s’affiche vous demandant si vous voulez mettre l’appareil hors service ou non.
+3. Un message de confirmation s’affiche vous demandant si vous voulez mettre l’appareil hors service ou non.
 
-    -   Pour effectuer une **réinitialisation sélective** qui supprime uniquement les applications et les données d’entreprise, choisissez **Oui**.
+   -   Pour effectuer une **réinitialisation sélective** qui supprime uniquement les applications et les données d’entreprise, choisissez **Oui**.
 
-    -   Pour effectuer une **Réinitialisation complète** qui efface toutes les applications et les données, puis rétablit les paramètres d’usine de l’appareil, choisissez **Réinitialiser l’appareil avant la mise hors service**. Cette action s'applique à toutes les plateformes sauf Windows 8.1. **Vous ne pouvez pas récupérer les données supprimées par une réinitialisation complète**.
+   -   Pour effectuer une **Réinitialisation complète** qui efface toutes les applications et les données, puis rétablit les paramètres d’usine de l’appareil, choisissez **Réinitialiser l’appareil avant la mise hors service**. Cette action s'applique à toutes les plateformes sauf Windows 8.1. **Vous ne pouvez pas récupérer les données supprimées par une réinitialisation complète**.
 
 Si l’appareil est allumé et connecté, la propagation de la commande de réinitialisation prend moins de 15 minutes, quel que soit le type de l’appareil.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Pour supprimer des appareils dans le portail Azure Active Directory
 
-1.  Accédez à [http://aka.ms/accessaad](http://aka.ms/accessaad) ou choisissez **Administration** &gt; **Azure AD** dans [https://portal.office.com](https://portal.office.com).
+1.  Accédez à [http://aka.ms/accessaad](http://aka.ms/accessaad) ou choisissez **Admin** &gt; **Azure AD** à partir de [https://portal.office.com](https://portal.office.com).
 
 2.  Connectez-vous avec l’ID de votre organisation en utilisant le lien sur le côté gauche de la page.
 
@@ -100,7 +100,7 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|
 |Paramètres de profil de certificat|Les certificats sont supprimés et révoqués.|
 |Agent de gestion|Le profil de gestion est supprimé.|
-|E-mail|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
+|Courrier électronique|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Les messages reçus par l’application Microsoft Outlook pour iOS sont supprimés.|
 |Disjonction d'Azure Active Directory (AAD)|L’enregistrement AAD est supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
@@ -118,7 +118,7 @@ La **réinitialisation sélective** supprime les données d’entreprise, notamm
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|
 |Paramètres de profil de certificat|Certificats révoqués, mais pas supprimés.|Certificats supprimés et révoqués.|
 |Agent de gestion|Le privilège d'administrateur d'appareil est révoqué.|Le privilège d'administrateur d'appareil est révoqué.|
-|E-mail|N/A. Consultez l’élément Outlook.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
+|Courrier électronique|N/A. Consultez l’élément Outlook.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|
 |Outlook|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.|Le courrier électronique reçu par l’application Microsoft Outlook pour Android est supprimé, mais uniquement si Outlook est protégé par les stratégies de gestion des appareils mobiles. Dans le cas contraire, Outlook n’est pas réinitialisé lors de la désinscription.|
 |Disjonction d'Azure Active Directory (AAD)|Enregistrement AAD supprimé.|Enregistrement AAD supprimé.|
 |Contacts | Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés.  Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être réinitialisés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
@@ -135,7 +135,7 @@ Une réinitialisation sélective sur un appareil Android for Work supprime l’e
 |Paramètres|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|Les configurations qui ont été définies par la stratégie Intune ne sont plus appliquées et les utilisateurs peuvent modifier les paramètres.|
 |Paramètres de profil Wi-Fi et VPN|Supprimé.|Supprimé.|Non pris en charge.|Supprimé.|
 |Paramètres de profil de certificat|Certificats supprimés et révoqués.|Certificats supprimés et révoqués.|Non pris en charge.|Certificats supprimés et révoqués.|
-|E-mail|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non pris en charge.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
+|Courrier électronique|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows.|Non pris en charge.|Les profils de messagerie approvisionnés via Intune sont supprimés. Les e-mails mis en cache sur l’appareil le sont également.|Supprime la messagerie électronique compatible avec EFS, qui inclut l’application de messagerie électronique pour la messagerie et les pièces jointes Windows. Supprime les comptes de messagerie approvisionnés par Intune.|
 |Disjonction d'Azure Active Directory (AAD)|Non.|Non.|Enregistrement AAD supprimé.|Non applicable. Windows 10 ne prend pas en charge la réinitialisation sélective pour appareils joints à Azure Active Directory.|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Réinitialiser le contenu EFS (Encryption File System)

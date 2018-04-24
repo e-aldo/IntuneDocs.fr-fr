@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c6f49bf8ef934dc4b697e5d4392bde44aeb8baee
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 48b9650a8f0d6a79b3abab542148acf0a57c0e41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Fonctionnalités de gestion des appareils inscrits de Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune vous permet de gérer une gamme d’appareils en les *inscrivant* auprès du service. Vous pouvez inscrire certains types d’appareils vous-même, ou les utilisateurs peuvent s’inscrire à l’aide de l’application *Portail d’entreprise*. Cela leur permet également d’effectuer des opérations telles que rechercher et installer des applications, vérifier la conformité de leurs appareils aux stratégies d’entreprise, et contacter leur support technique.
 
@@ -43,7 +43,7 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 ## <a name="app-management"></a>Gestion d'applications
 
-|Fonctionnalité|Détails|Plus d’informations|
+|Fonctionnalité|Détails|Autres informations|
 |--------------|-----------|--------------------|
 |Déploiement et gestion d'applications|Fournit une gamme d'outils pour vous aider à gérer les applications mobiles tout au long de leur cycle de vie, notamment le déploiement d'applications à partir de fichiers d'installation ou de magasins d'applications, l'analyse détaillée de l'état des applications et la suppression d'applications.|[Déploiement d’applications dans Microsoft Intune](/intune-classic/deploy-use/deploy-apps)|
 |Applications conformes et non conformes|Vous permet de spécifier des listes d’applications conformes (que les utilisateurs sont autorisés à installer) et non conformes (que les utilisateurs ne sont pas autorisés à installer).|[Paramètres de la stratégie d’iOS dans Microsoft Intune](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)|
@@ -56,7 +56,7 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 ## <a name="company-resource-access"></a>Accès aux ressources d'entreprise
 
-|Fonctionnalité|Détails|Plus d’informations|
+|Fonctionnalité|Détails|Autres informations|
 |--------------|-----------|--------------------|
 |Profils de certificat|Crée et déploie des profils de certificat approuvés et des certificats SCEP (Simple Certificate Enrollment Protocol) qui peuvent être utilisés pour sécuriser et authentifier des profils Wi-Fi, VPN et de messagerie.|[Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)|
 |Profils Wi-Fi|Déploie des paramètres de réseau sans fil sur vos utilisateurs. En déployant ces paramètres, vous réduisez l’effort que doit fournir l’utilisateur pour se connecter au réseau d’entreprise.|[Connexions Wi-Fi dans Microsoft Intune](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)|
@@ -66,6 +66,7 @@ La gestion, l'inventaire, le déploiement d'applications, l'approvisionnement et
 
 ## <a name="inventory-and-reporting"></a>Inventaire et rapports
 
-|Fonctionnalité|Détails|Plus d’informations|
-|--------------|-----------|--------------------|
-|Inventaire et rapports|Recherche des informations sur les appareils que vous gérez et sur les logiciels utilisés par les appareils.|[Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|       Fonctionnalité        |                                             Détails                                              |                                                                  Autres informations                                                                   |
+|-------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Inventaire et rapports | Recherche des informations sur les appareils que vous gérez et sur les logiciels utilisés par les appareils. | [Comprendre vos appareils grâce à l’inventaire de Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) |
+

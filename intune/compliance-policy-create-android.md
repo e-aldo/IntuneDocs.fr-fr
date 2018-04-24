@@ -1,30 +1,30 @@
 ---
-title: "Créer une stratégie de conformité pour des appareils Android dans Microsoft Intune"
-titleSuffix: 
-description: "Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils Android afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme."
-keywords: 
+title: Créer une stratégie de conformité pour des appareils Android dans Microsoft Intune
+titleSuffix: ''
+description: Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils Android afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 586672bf84be6e7bcd8d3b8618aab09088620eb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Android dans Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Une stratégie de conformité de l’appareil Intune pour Android spécifie les règles et les paramètres que les appareils Android doivent satisfaire pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec l’accès conditionnel pour autoriser ou bloquer l’accès aux ressources de l’entreprise, et vous pouvez générer des rapports sur les appareils et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité de l’appareil pour chaque plateforme dans le portail Intune Azure. Pour en savoir plus sur les stratégies de conformité et sur les prérequis à prendre en compte avant de créer une stratégie, consultez [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
 
@@ -56,17 +56,17 @@ Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appar
 ## <a name="device-health-and-security-settings"></a>Paramètres d’intégrité et de sécurité de l’appareil
 
 - **L’appareil ne doit pas être jailbreaké ou rooté** : si vous activez ce paramètre, les appareils jailbreakés ne sont pas détectés comme conformes.
-- **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues (Android 4.0+)** : pour bloquer les appareils qui ont **Sécurité** > **Sources inconnues** activé, activez ce paramètre et définissez-le sur **Oui**.
+- **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues (Android 4.0+)**  : pour bloquer les appareils qui ont **Sécurité** > **Sources inconnues** activé, activez ce paramètre et définissez-le sur **Oui**.
 
 ### <a name="important"></a>Important
 
 Pour les applications en chargement indépendant, le paramètre **Sources inconnues** doit être activé. Appliquez cette stratégie de conformité uniquement si vous n’effectuez aucun chargement indépendant d’applications Android sur les appareils.
 
-- **Exiger que le débogage USB soit désactivé (Android 4.2 ou ultérieur)** : ce paramètre spécifie si la détection de l’option de débogage USB est activée sur l’appareil.
-- **Exiger que « Rechercher les menaces de sécurité sur l'appareil » soit activé sur les appareils (Android 4.2-4.4)** : ce paramètre spécifie si la fonctionnalité **Vérifier les applications** est activée sur l’appareil.
-- **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)** : utilisez ce paramètre pour spécifier le niveau de correctif Android minimal. Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée dans le format AAAA-MM-JJ.
+- **Exiger que le débogage USB soit désactivé (Android 4.2 ou ultérieur)**  : ce paramètre spécifie si la détection de l’option de débogage USB est activée sur l’appareil.
+- **Exiger que « Rechercher les menaces de sécurité sur l'appareil » soit activé sur les appareils (Android 4.2-4.4)**  : ce paramètre spécifie si la fonctionnalité **Vérifier les applications** est activée sur l’appareil.
+- **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)**  : utilisez ce paramètre pour spécifier le niveau de correctif Android minimal. Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée dans le format AAAA-MM-JJ.
 - **Exiger l’activation de la protection de l’appareil contre les menaces**: utilisez ce paramètre pour sélectionner l’évaluation des risques de la solution Lookout MTP comme une condition de conformité. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
-  - **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
+  - **Aucun (sécurisé)**  : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
   - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
   - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
   - **Élevé** : cette option est la moins sécurisée. Essentiellement, elle autorise tous les niveaux de menace. Elle peut s’avérer utile si vous ne recourez à cette solution qu’à des fins de création de rapport.

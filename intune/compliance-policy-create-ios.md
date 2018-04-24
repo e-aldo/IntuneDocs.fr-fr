@@ -14,15 +14,15 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 887f45cdc79aa5e45de3e8a1df5d12665d2ed8ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils iOS dans Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Une stratégie de conformité des appareils iOS Intune détermine les règles et les paramètres que les appareils iOS doivent satisfaire pour être conformes. Quand vous utilisez des stratégies de conformité de l’appareil avec l’accès conditionnel, vous pouvez autoriser ou bloquer l’accès aux ressources d’entreprise. Vous pouvez également obtenir des rapports sur les appareils et prendre des mesures en cas de non-conformité. Des stratégies de conformité de l’appareil pour chaque plateforme peuvent être créées dans le portail Intune Azure. Pour en savoir plus sur les stratégies de conformité et sur les prérequis à prendre en compte avant de créer une stratégie, consultez [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
 
@@ -32,7 +32,7 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 | --- | --- |
 | **Configuration d’un code confidentiel ou mot de passe** | Corrigé |
 | **Chiffrement de l’appareil** | Corrigé (en définissant le code confidentiel) |
-| **Appareil jailbreaké ou rooté** | En quarantaine (pas un paramètre)
+| **Appareil jailbroken ou rooté** | En quarantaine (pas un paramètre)
 | **Profil de messagerie** | En quarantaine |
 |**Version minimale du système d’exploitation** | En quarantaine |
 | **Version maximale du système d’exploitation** | En quarantaine |
@@ -71,7 +71,7 @@ Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appar
 
 <!---## Compliance policy settings--->
 
-## <a name="email"></a>E-mail
+## <a name="email"></a>Courrier électronique
 
 - **Le compte de messagerie doit être géré par Intune** : quand cette option est définie sur **Oui**, l’appareil doit utiliser le profil de messagerie qui y est déployé. L’appareil est considéré comme non conforme dans les situations suivantes :
   - Le profil de messagerie est déployé pour un groupe d’utilisateurs autre que celui ciblé par la stratégie de conformité.
@@ -80,17 +80,17 @@ Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appar
 
 Pour plus d’informations sur les profils de messagerie, consultez [Configurer l’accès à la messagerie d’entreprise à l’aide de profils de messagerie avec Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
-## <a name="device-health"></a>Intégrité de l’appareil
+## <a name="device-health"></a>Device health
 
 - **Appareils jailbreakés** : si vous activez ce paramètre, les appareils jailbreakés ne sont pas conformes.
 - **Exiger que l’appareil se situe au niveau de menace d’appareil ou en dessous** : choisissez le niveau de menace maximal pour marquer les appareils comme non conformes. Par exemple, si vous définissez la menace au niveau **Moyen**, les appareils au niveau moyen, faible ou sécurisé sont conformes. Les appareils avec un niveau de menace élevée ne sont pas conformes.
 
-## <a name="device-properties"></a>Propriétés de l’appareil
+## <a name="device-properties"></a>Propriétés des appareils
 
 - **Système d’exploitation minimal requis** : quand un appareil ne satisfait pas à la condition de version minimale du système d’exploitation, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur peut choisir de mettre à niveau son appareil. Ensuite, il peut accéder aux ressources de l’entreprise.
 - **Version maximale autorisée du système d’exploitation** : quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué. L’utilisateur est invité à contacter son administrateur informatique. Tant que la règle pour autoriser la version du système d’exploitation reste inchangée, cet appareil ne peut pas accéder aux ressources de l’entreprise.
 
-## <a name="system-security"></a>Sécurité du système
+## <a name="system-security"></a>Sécurité système
 
 ### <a name="password"></a>Mot de passe
 

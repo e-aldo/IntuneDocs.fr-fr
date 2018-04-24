@@ -15,22 +15,22 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 699d07daa1f16dd7746b531a1687ba97b06973a2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ea1cc3bc2d662a0d74c87fb5616f3626d580a7e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Protéger des appareils avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune offre un ensemble complet de fonctionnalités qui vous permettent de protéger les appareils que vous gérez et les données stockées sur ces appareils. Lisez cette rubrique pour apprendre l’essentiel de ces fonctionnalités et découvrir comment procéder pour en savoir plus.
 
 ## <a name="general-ways-to-protect-all-devices"></a>Généralités sur la protection de tous les appareils
 
 ### <a name="device-configuration"></a>Configuration des appareils
-Les [stratégies de configuration](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) Intune vous permettent de protéger et de configurer des appareils en contrôlant une multitude de paramètres et de fonctionnalités. Par exemple :
+Les [stratégies de configuration](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) Intune vous permettent de protéger et de configurer des appareils en contrôlant une multitude de paramètres et de fonctionnalités. Par exemple :
 - Vous pouvez limiter l’utilisation des fonctionnalités matérielles sur l’appareil, comme l’appareil photo ou le Bluetooth.
 - Vous pouvez configurer les applications conformes et non conformes. Vous êtes averti si une application non conforme est installée (et certaines plateformes peuvent même bloquer l’installation).
 

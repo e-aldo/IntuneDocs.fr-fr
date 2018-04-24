@@ -15,11 +15,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: eb9f63199063db34361c7d463b8cef37bb8bfa1f
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 317e884cd54b57f4892c4e101e206089ef335f0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Informations de référence sur les entités de gestion des applications mobiles (GAM)
 
@@ -51,23 +51,24 @@ L’entité **MamApplication** répertorie les applications métier qui sont gé
 
 L’entité **MamApplicationInstance** répertorie les applications GAM gérées comme instances singulières, par utilisateur et par appareil. Tous les utilisateurs et appareils répertoriés dans l’entité sont protégés si au moins une stratégie GAM leur est affectée.
 
-| Propriété | Description | Exemple |
-|---------|------------|--------|
-| ApplicationInstanceKey |Identificateur unique de l’instance de l’application MAM dans l’entrepôt de données (clé de substitution). |123 |
-| UserId |ID de l’utilisateur ayant installé cette application MAM. |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationInstanceId |Identificateur unique de l’instance de l’application MAM (semblable à ApplicationInstanceKey, mais l’identificateur est une clé naturelle). |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationId |ID de cette application GAM |com.microsoft.groupies-daily.<IOS> |
-| ApplicationVersion |Version de cette application MAM. |2 |
-| CreatedDate |Date de création de cet enregistrement de l’instance d’application GAM. La valeur peut être Null. |11/23/2016 12:00:00 AM |
-| Plate-forme |Plateforme de l’appareil sur lequel cette application MAM est installée. |2 |
-| PlatformVersion |Version de la plateforme de l’appareil sur lequel cette application MAM est installée. |2.2 |
-| SdkVersion |Version du SDK MAM avec laquelle cette application MAM a été enveloppée (wrapped). |3.2 |
-| DeviceId |ID de l’appareil sur lequel cette application MAM est installée. |b66bc706-ffff-7437-0340-032819502773 |
-| DeviceName |Nom de l’appareil sur lequel cette application MAM est installée. |"MyDevice" |
-| IsDeleted |Indique si l’enregistrement de cette application GAM a été mis à jour. <br>True : cette instance d’application GAM a un nouvel enregistrement avec des champs mis à jour dans cette table. <br>False : dernier enregistrement pour cette instance d’application GAM. |Vrai/Faux |
-| StartDateInclusiveUtc |Date et heure UTC de création de cette instance d’application MAM dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
-| DeletedDateUtc |Date et heure UTC de l’affectation de la valeur True à IsDeleted. |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUtc |Date et heure UTC de la dernière modification de cette instance d’application MAM dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
+
+|          Propriété          |                                                                                                  Description                                                                                                  |               Exemple                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               Identificateur unique de l’instance de l’application MAM dans l’entrepôt de données (clé de substitution).                                                                |                 123                  |
+|           UserId           |                                                                              ID de l’utilisateur ayant installé cette application MAM.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              Identificateur unique de l’instance de l’application MAM (semblable à ApplicationInstanceKey, mais l’identificateur est une clé naturelle).                                              | b66bc706-ffff-7437-0340-032819502773 |
+|       ApplicationId        |                                                                                        ID de cette application GAM                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|     ApplicationVersion     |                                                                                     Version de cette application MAM.                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 Date de création de cet enregistrement de l’instance d’application GAM. La valeur peut être Null.                                                                 |        11/23/2016 12:00:00 AM        |
+|          Plate-forme          |                                                                          Plateforme de l’appareil sur lequel cette application MAM est installée.                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      Version de la plateforme de l’appareil sur lequel cette application MAM est installée.                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            Version du SDK MAM avec laquelle cette application MAM a été enveloppée (wrapped).                                                                            |                 3.2                  |
+|          DeviceId          |                                                                          ID de l’appareil sur lequel cette application MAM est installée.                                                                          | b66bc706-ffff-7437-0340-032819502773 |
+|         DeviceName         |                                                                         Nom de l’appareil sur lequel cette application MAM est installée.                                                                         |              "MyDevice"              |
+|         IsDeleted          | Indique si l’enregistrement de cette application GAM a été mis à jour. <br>True : cette instance d’application GAM a un nouvel enregistrement avec des champs mis à jour dans cette table. <br>False : dernier enregistrement pour cette instance d’application GAM. |              Vrai/Faux              |
+|   StartDateInclusiveUtc    |                                                              Date et heure UTC de création de cette instance d’application MAM dans l’entrepôt de données.                                                               |        11/23/2016 12:00:00 AM        |
+|       DeletedDateUtc       |                                                                             Date et heure UTC de l’affectation de la valeur True à IsDeleted.                                                                              |        11/23/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUtc |                                                           Date et heure UTC de la dernière modification de cette instance d’application MAM dans l’entrepôt de données.                                                            |        11/23/2016 12:00:00 AM        |
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -112,20 +113,23 @@ L’entité **MamEffectivePolicy** répertorie toutes les stratégies actuelles 
 
 L’entité **MamGlobalApplication** répertorie les applications du Store qui sont gérées par le biais de la gestion des applications mobiles (GAM) sans inscription dans votre entreprise.
 
-| Propriété | Description | Exemple |
-|---------|------------|--------|
-| ApplicationKey |Identificateur unique de l’application du Store dans l’entrepôt de données (clé de substitution). |123 |
-| ApplicationId |Identificateur unique de l’application du Store. L’identificateur est semblable à ApplicationKey, mais il s’agit d’une clé naturelle. |com.microsoft.skydrive.<ios> |
-| ApplicationName |Nom de l’application globale GAM. |Skydrive |
-| RowLastModifiedDateTimeUtc |Date et heure UTC de la dernière modification de cette application globale GAM spécifique dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
+
+|          Propriété          |                                               Description                                               |           Exemple            |
+|----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
+|       ApplicationKey       |          Identificateur unique de l’application du Store dans l’entrepôt de données (clé de substitution).          |             123              |
+|       ApplicationId        | Identificateur unique de l’application du Store. L’identificateur est semblable à ApplicationKey, mais il s’agit d’une clé naturelle.  | com.microsoft.skydrive.<ios> |
+|      ApplicationName       |                                      Nom de l’application globale GAM.                                       |           Skydrive           |
+| RowLastModifiedDateTimeUtc | Date et heure UTC de la dernière modification de cette application globale GAM spécifique dans l’entrepôt de données. |    11/23/2016 12:00:00 AM    |
 
 ## <a name="mamplatform"></a>MamPlatform
 
 L’entité **MamPlatform** répertorie les noms et types des plateformes sur lesquelles une application gérée par la gestion des applications mobiles (GAM) a été installée.
 
-| Propriété | Description | Exemple |
-|---------|------------|--------|
-| PlatformKey |Identificateur unique de la plateforme dans l’entrepôt de données (clé de substitution). |123 |
-| Plate-forme |Identificateur unique de la plateforme (semblable à PlatformKey, mais il s’agit d’une clé naturelle). |123 |
-| PlatformName |Nom de la plateforme |Non disponible <br>Aucune <br>Windows <br>IOS <br>Android. |
-| RowLastModifiedDateTimeUtc |Date et heure UTC de la dernière modification de cette plateforme dans l’entrepôt de données. |11/23/2016 12:00:00 AM |
+
+|          Propriété          |                                    Description                                    |                         Exemple                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     Identificateur unique de la plateforme dans l’entrepôt de données (clé de substitution).      |                           123                           |
+|          Plate-forme          | Identificateur unique de la plateforme (semblable à PlatformKey, mais il s’agit d’une clé naturelle). |                           123                           |
+|        PlatformName        |                                   Nom de la plateforme                                   | Non disponible <br>Aucune <br>Windows <br>IOS <br>Android. |
+| RowLastModifiedDateTimeUtc | Date et heure UTC de la dernière modification de cette plateforme dans l’entrepôt de données.  |                 11/23/2016 12:00:00 AM                  |
+

@@ -14,15 +14,15 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: decb2dee8d2029c70f7f08df507f42211e0f21bb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Affecter des licences aux utilisateurs pour qu’ils puissent inscrire des appareils dans Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Que vous ajoutiez des utilisateurs manuellement, ou procédiez à une synchronisation depuis un annuaire Active Directory local, vous devez d’abord affecter une licence Intune à chaque utilisateur et ce, avant qu’il n’inscrive ses appareils dans Intune. Pour obtenir la liste des licences, consultez [Licences incluant Intune](licenses.md).
 
@@ -30,13 +30,13 @@ Que vous ajoutiez des utilisateurs manuellement, ou procédiez à une synchronis
 
 Vous pouvez utiliser le [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) pour ajouter manuellement des utilisateurs basés sur le cloud et affecter des licences aux comptes d’utilisateur basés sur le cloud et aux comptes synchronisés depuis votre annuaire Active Directory local vers Azure AD.
 
-1.  Connectez-vous au [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) à l’aide de vos informations d’identification d’administrateur du locataire, puis sélectionnez **Utilisateurs** > **Utilisateurs actifs**.
+1. Connectez-vous au [portail Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) à l’aide de vos informations d’identification d’administrateur du locataire, puis sélectionnez **Utilisateurs** > **Utilisateurs actifs**.
 
-2.  Sélectionnez le compte d’utilisateur auquel vous souhaitez affecter une licence d’utilisateur Intune, puis choisissez **Licences du produit** > **Modifier**.
+2. Sélectionnez le compte d’utilisateur auquel vous souhaitez affecter une licence d’utilisateur Intune, puis choisissez **Licences du produit** > **Modifier**.
 
-3.  Activez la fonction **Intune** ou **Enterprise Mobility + Security** en la définissant sur **Activé**, puis choisissez **Enregistrer**.
+3. Activez la fonction **Intune** ou **Enterprise Mobility + Security** en la définissant sur **Activé**, puis choisissez **Enregistrer**.
 
-  ![Capture d’écran de la section des licences des produits du portail Office 365.](./media/office-assign-license.png)
+   ![Capture d’écran de la section des licences des produits du portail Office 365.](./media/office-assign-license.png)
 
 4. Maintenant, le compte d’utilisateur dispose des autorisations permettant d’utiliser le service et d’inscrire des appareils dans la fonction de gestion.
 

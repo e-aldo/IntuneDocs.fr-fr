@@ -1,37 +1,39 @@
 ---
-title: "Désinscrire votre appareil si vous avez refusé les conditions d’utilisation | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Supprimer votre appareil de la gestion si vous avez refusé les conditions d’utilisation | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5207bab5994cc7fc5c23bee92cbe675644d27e97
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcf71015d292ea22be1c818e526bc723b1af7165
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>Annuler l’inscription de votre appareil si vous avez refusé les conditions d’utilisation
+# <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Supprimer votre appareil de la gestion si vous avez refusé les conditions d’utilisation
 
-La meilleure façon de désinscrire votre appareil Android est d’accepter les conditions d’utilisation, de se connecter à l’application Portail d’entreprise, puis d’utiliser [ces instructions](unenroll-your-device-from-intune-android.md) pour le désinscrire. Toutefois, si vous avez refusé les conditions d’utilisation durant la tentative de connexion à l’application Portail d’entreprise, vous ne pourrez pas vous connecter à l’application Portail d’entreprise à l’avenir. Vous devez donc utiliser ces instructions de résolution pour annuler l’inscription de votre appareil.
+Si vous avez refusé les conditions d’utilisation durant la tentative de connexion à l’application Portail d’entreprise, vous ne pourrez plus vous connecter à l’application Portail d’entreprise. Vous devez donc utiliser ces instructions de contournement pour supprimer de votre appareil d’Intune.
 
-Quand vous désinstallez l’application Portail d’entreprise, vous désinscrivez également votre appareil d’Intune. Votre appareil ne peut alors plus accéder aux ressources de l’entreprise. Pour plus d’informations sur ce qui se passe lors d’une désinscription, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+Quand vous désinstallez l’application Portail d’entreprise, vous supprimez également votre appareil d’Intune. Votre appareil ne peut alors plus accéder aux ressources de l’entreprise. Pour plus d’informations sur ce qui se passe lors de la suppression de votre appareil de la gestion, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
 Avant de pouvoir désinstaller l’application Portail d’entreprise, vous devez accéder au paramètre **Administrateurs de l’appareil** et désactiver **Portail d’entreprise**. Les étapes peuvent être légèrement différentes selon l’appareil Android que vous utilisez.
 
-Pour désinscrire votre appareil d’Intune à partir de l’application Portail d’entreprise :
+## <a name="removing-the-device-from-the-company-portal-app"></a>Suppression de l’appareil de l’application Portail d’entreprise
+
+Pour supprimer votre appareil d’Intune et désinstaller l’application Portail d’entreprise :
 
 1.  Accédez à **Paramètres** &gt; **Sécurité &amp;Verrouillage d’écran** &gt; **Administrateurs de l’appareil**.
 
@@ -40,5 +42,13 @@ Pour désinscrire votre appareil d’Intune à partir de l’application Portail
 2.  Désactivez **Portail d’entreprise** ou décochez la case qui se trouve à côté.
 
     Vous pouvez désormais désinstaller l’application Portail d’entreprise.
+
+## <a name="removing-data-collected-by-the-company-portal-app"></a>Suppression des données collectées par l’application Portail d’entreprise
+
+Pour supprimer toutes les données que stocke l’application Portail d’entreprise pour Android sur votre appareil :
+
+  - Effacer les données d’application dans Applications -> Cliquer sur l’application -> bouton « Effacer les données »
+  - Supprimer le dossier '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal'
+
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise (consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) pour les informations de contact) ou écrivez à <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">l’équipe Microsoft Android</a>.

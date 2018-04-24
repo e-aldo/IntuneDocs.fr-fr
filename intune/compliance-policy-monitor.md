@@ -1,27 +1,30 @@
 ---
-title: "Analyser les stratégies de conformité des appareils Microsoft Intune"
-titlesuffix: 
-description: "Utilisez le tableau de bord de conformité des appareils pour analyser la conformité globale des appareils, afficher des rapports et afficher la conformité des appareils par stratégie et par paramètre."
-keywords: 
+title: Analyser les stratégies de conformité des appareils Microsoft Intune
+titlesuffix: ''
+description: Utilisez le tableau de bord de conformité des appareils pour analyser la conformité globale des appareils, afficher des rapports et afficher la conformité des appareils par stratégie et par paramètre.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Surveiller les stratégies de conformité d’appareils Intune
 
 Les rapports de conformité aident les administrateurs à analyser la situation de conformité des appareils de leur organisation, et à résoudre rapidement les problèmes liés à la conformité rencontrés par les utilisateurs de l’organisation. Vous pouvez afficher des informations sur l’état de conformité générale des appareils, l’état de conformité d’un paramètre spécifique, l’état de conformité d’une stratégie spécifique. Vous pouvez également explorer en détail des appareils spécifiques pour afficher des paramètres spécifiques et les stratégies qui ont une incidence sur l’appareil.
+
+> [!NOTE]
+> À partir de vos commentaires, nous avons apporté quelques améliorations à la sécurité du service Intune en mars. En fonction de la configuration de vos stratégies de conformité, vous devrez peut-être prendre des mesures pour éviter à vos utilisateurs finaux de perdre l’accès à leurs e-mails. Pour plus d’informations, consultez [Améliorations de la sécurité à venir](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -124,6 +127,19 @@ Si vous cliquez sur le **bouton Mettre à jour**, le filtre volant doit se ferme
 Cliquer sur un appareil, permet d’ouvrir le **volet Appareils** avec l’appareil sélectionné, qui fournit des détails supplémentaires sur le paramètre des stratégies de conformité des appareils appliqués à cet appareil.
 
 Lorsque vous cliquez sur le paramètre de stratégie d’appareil lui-même, vous pouvez voir le nom de stratégie de conformité d’appareil provenant du paramètre de conformité d’appareil ciblé par l’administrateur.
+
+### <a name="devices-without-compliance-policy"></a>Appareils sans stratégie de conformité
+Ce rapport identifie les appareils auxquels aucune stratégie de conformité n’a été affectée. Avec l’introduction du paramètre de sécurité qui identifie tous les appareils sans stratégie de conformité comme étant « non conformes », il est important de pouvoir identifier ces appareils. Vous pouvez ensuite leur affecter au moins une stratégie de conformité.
+
+> [!NOTE]
+> Vous pouvez configurer le nouveau paramètre de sécurité dans le portail Intune. Sélectionnez **Conformité de l’appareil**, puis sous **Installation**, choisissez **Paramètres de stratégie de conformité**. Utilisez ensuite le bouton bascule pour affecter à l’option **Marquer les appareils sans stratégie de conformité comme étant** la valeur **Conforme** ou **Non conforme**. En savoir plus sur cette [amélioration de la sécurité du service Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
+![Image montrant le rapport des appareils sans stratégie de conformité](./media/idc-12.png)
+
+La vignette **Appareils sans stratégie de conformité** est disponible dans le tableau de bord Conformité de l’appareil. Elle permet de voir tous les appareils sans stratégie de conformité, l’utilisateur de l’appareil, l’état de conformité et le modèle de l’appareil.
+
+> [!NOTE]
+> Les utilisateurs auxquels une stratégie de conformité est affectée ne s’affichent pas dans le rapport, quelle que soit la plateforme de l’appareil. Par exemple, si vous avez involontairement affecté une stratégie de conformité Windows à un utilisateur disposant d’un appareil Android, celui-ci ne figure pas dans le rapport. Toutefois, Intune considère que l’appareil Android n’est pas conforme. Pour éviter les problèmes, nous vous recommandons de créer des stratégies pour chaque plateforme d’appareil et de les déployer pour tous les utilisateurs.
 
 ### <a name="per-policy-device-compliance-report"></a>Rapport de conformité d’appareil par stratégie
 

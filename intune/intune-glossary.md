@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2b59ed38329462ad8d8db604979c8eb725f7973a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glossaire Microsoft Intune
 Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
@@ -39,11 +39,13 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 |Portail Azure|La nouvelle console pour Intune [En savoir plus](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Apportez votre propre appareil (Bring Your Own Device)](/intune/device-enrollment). Les utilisateurs peuvent installer sur leur appareil l’application Portail d’entreprise Intune, puis inscrire leur appareil pour pouvoir accéder aux ressources d’entreprise comme la messagerie, les applications d’entreprise, les données d’entreprise et le support.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Profil de certificat|Vous utilisez ce type de stratégie pour [sécuriser l’accès aux ressources d’entreprise](/intune/certificates-configure) avec des certificats quand vous utilisez des profils Wi-Fi, E-mail ou VPN.|
@@ -55,13 +57,15 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 |Stratégie personnalisée|Vous [utilisez ces stratégies](/intune/custom-settings-configure) quand une stratégie de configuration générale ne contient pas un paramètre prédéfini répondant à vos besoins. Vous serez peut-être en mesure d’utiliser une stratégie personnalisée pour créer un paramètre par d’autres moyens, comme Apple Configurator ou OMA-URI.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Déploiement|Fait d’envoyer une application ou une stratégie à un appareil ou à un utilisateur que vous gérez. Cette action est maintenant appelée *affectation*.|
-|Gestionnaire d'inscription d'appareils|Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d'utilisateur. Le compte du [gestionnaire d’inscription d’appareils](/intune/device-enrollment-program-enroll-ios) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils.|
+|Gestionnaire d'inscription d'appareils|Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du [gestionnaire d’inscription d’appareils](/intune/device-enrollment-program-enroll-ios) est un compte Intune spécial qui peut inscrire jusqu’à 1 000 appareils.|
 |Profils d’appareils|[Ces profils](/intune/device-profile-create) vous permettent de configurer de nombreux paramètres de sécurité, de fonctionnalités et d’accès sur les appareils que vous gérez.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |Profil de messagerie|Cette stratégie peut être utilisée pour configurer les [paramètres d’accès à la messagerie](/intune/email-settings-configure) sur des appareils mobiles, en minimisant la configuration que l’utilisateur final doit effectuer.|
@@ -70,34 +74,40 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 |Inscription|Microsoft Intune utilise l’[inscription](/intune/device-enrollment) pour intégrer des appareils dans la gestion et pour autoriser l’accès à des ressources.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|[Service Microsoft](https://technet.microsoft.com/library/mt228265.aspx) pour les utilisateurs Intune avec 150 licences dans un forfait éligible. Avec ce service, des spécialistes Microsoft travaillent avec vous pour vous rendre opérationnel avec Intune.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Groupes|Les groupes vous permettent de [regrouper logiquement des utilisateurs ou des appareils](/intune/groups-get-started). Par exemple, vous pouvez créer un groupe avec tous les PC Windows. Vous pouvez ensuite affecter des applications et des profils à ces groupes.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Hybride|Configuration où vous pouvez gérer des appareils inscrits avec Intune via la console System Center Configuration Manager.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
-|portail Azure|Le portail Azure que vous utilisez pour la plupart des opérations de gestion Intune.|
+|Portail Azure|Le portail Azure que vous utilisez pour la plupart des opérations de gestion Intune.|
 |Client logiciel Intune|Autre mode de [gestion de PC Windows](/intune-classic/get-started/choose-how-to-manage-devices) pour vous aider à décider quelle méthode utiliser.|
 |Éditeur de logiciel Intune|Outil que vous utilisez pour [définir les applications que vous voulez déployer et les télécharger dans votre espace de stockage cloud](/intune-classic/deploy-use/add-apps).|
 |Inventaire|Utilisé pour afficher le [matériel et les logiciels installés](/intune/device-inventory) sur les appareils que vous gérez.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Mode plein écran|Configuré dans le cadre d’un [profil de restriction d’appareil](/intune/device-restrictions-configure), ce mode vous permet de verrouiller des appareils. Par exemple, vous pouvez configurer un appareil destiné à la vente au détail pour y autoriser l’exécution de certaines applications.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|[Application de navigation web](/intune/app-configuration-managed-browser)que vous pouvez affecter dans votre organisation à l’aide de Intune. Une stratégie Managed Browser configure une liste verte ou une liste rouge, qui restreint les sites web auxquels les utilisateurs de Managed Browser ont accès.|
@@ -110,17 +120,20 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Protocole de gestion d’appareils qui est un standard de l’industrie et qui est utilisé par de nombreux fabricants de matériel pour permettre le contrôle des fonctionnalités des appareils mobiles et des PC.|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier. Ces éléments identifient les paramètres d’appareils individuels qui sont conformes à la norme OMA-DM. Ces paramètres peuvent être utilisés dans des [profils personnalisés Intune](/intune/custom-settings-configure) quand aucun paramètre prédéfini ne répond à vos besoins.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Réinitialiser le code secret|Fonctionnalité Intune qui vous permet de forcer l’utilisateur final à [réinitialiser le code secret](/intune/device-passcode-reset) sur des appareils pris en charge.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Verrouillage à distance|Fonctionnalité Intune qui vous permet de [verrouiller des appareils pris en charge](/intune/device-remote-lock), même si vous n’êtes pas en possession de l’appareil.|
@@ -128,6 +141,7 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Réinitialisation sélective|Une [réinitialisation sélective](/intune/device-company-data-remove) ne supprime d’un appareil que les données d’entreprise protégées par une stratégie de protection des applications, notamment les paramètres et les profils de messagerie. La réinitialisation sélective conserve les données personnelles de l’utilisateur sur l’appareil.|
@@ -135,19 +149,23 @@ Découvrez les définitions des termes courants utilisés dans Microsoft Intune.
 |Abonnement|L’accord que vous acceptez qui vous permet d’accéder à un client Intune.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Une application de tiers qui fonctionne avec Intune pour fournir [des fonctionnalités d’assistance à distance](/intune/device-profile-android-teamviewer) pour un appareil Android que vous gérez avec Intune.|
 |Client|Une seule instance du service Intune auquel vous pouvez accéder à l’aide d’un abonnement.|
-|Terms and conditions|Type de stratégie que vous affectez aux utilisateurs et qui contient des informations que les utilisateurs doivent [lire et accepter](/intune/terms-and-conditions-create) avant de pouvoir utiliser le portail d’entreprise pour s’inscrire et accéder à leur travail.|
+|Conditions générales|Type de stratégie que vous affectez aux utilisateurs et qui contient des informations que les utilisateurs doivent [lire et accepter](/intune/terms-and-conditions-create) avant de pouvoir utiliser le portail d’entreprise pour s’inscrire et accéder à leur travail.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Applications et livres achetés en volume|Certains App Stores vous permettent d’acheter plusieurs licences pour une application ou un livre que vous voulez utiliser dans votre entreprise. Intune vous permet de gérer des applications et livres que vous avez [achetés par le biais d’un tel programme](/intune/vpp-apps). Vous pouvez importer les informations de licence depuis n’importe quel App Store, suivre le nombre de licences utilisées et éviter d’installer plus de copies de l’application que vous n’en possédez.|
 |Profil VPN|Stratégie qui affecte des [paramètres VPN](/intune/vpn-settings-configure) sur les appareils que vous gérez, qui réduit la configuration que les utilisateurs finaux doivent effectuer.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Profil Wi-Fi|Stratégie qui affecte des [paramètres de réseau sans fil](/intune/wi-fi-settings-configure) sur les appareils pour permettre aux utilisateurs de se connecter à votre réseau d’entreprise sans avoir à connaître ou à configurer des paramètres.
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Profil Wi-Fi | Stratégie qui affecte des [paramètres de réseau sans fil](/intune/wi-fi-settings-configure) sur les appareils pour permettre aux utilisateurs de se connecter à votre réseau d’entreprise sans avoir à connaître ou à configurer des paramètres. |
+

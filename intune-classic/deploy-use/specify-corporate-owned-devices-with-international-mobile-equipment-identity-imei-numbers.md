@@ -1,54 +1,56 @@
 ---
-title: "Spécifier des numéros IMEI"
-description: "Microsoft Intune permet aux administrateurs d’importer des numéros IMEI pour les plateformes d’appareils mobiles afin d’identifier les appareils mobiles d’entreprise"
-keywords: 
+title: Spécifier des numéros IMEI
+description: Microsoft Intune permet aux administrateurs d’importer des numéros IMEI pour les plateformes d’appareils mobiles afin d’identifier les appareils mobiles d’entreprise
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9038670a4c0b4bf52868ba739336dd35366eed2f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: cdc1e1ac6147903ec6ada30e7a3b42189a228c78
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Spécifier des appareils d’entreprise avec des numéros IMEI (International Mobile Equipment Identity)
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune permet aux administrateurs d’importer des numéros d’identité internationale d’équipement mobile (IMEI, International Mobile Equipment Identity) pour les plateformes d’appareils mobiles afin d’identifier les appareils mobiles d’entreprise. Une fois que les appareils sont inscrits dans Intune, vous pouvez afficher ceux qui ont importé des numéros IMEI sous **Groupes** > **Vue d’ensemble** > **Tous les appareils**. **Groupe d’appareils** répertorie les appareils qui ont importé des numéros IMEI avec **Entreprise** dans la colonne **Propriété**.
 
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Groupes** &gt; **Tous les appareils** &gt; **Tous les appareils d’entreprise préinscrits** &gt; **Par IMEI (toutes les plateformes)**, puis choisissez **Ajouter des appareils**. Vous pouvez ajouter des appareils de deux manières :
 
-    -   **Chargez un fichier .csv qui contient les numéros de série** : créez une liste de valeurs séparées par des virgules (.csv) de deux colonnes sans en-tête, limitée à 5 000 appareils ou à 5 Mo par fichier .csv. Le champ des détails est limité à 128 caractères. 
+   - **Chargez un fichier .csv qui contient les numéros de série** : créez une liste de valeurs séparées par des virgules (.csv) de deux colonnes sans en-tête, limitée à 5 000 appareils ou à 5 Mo par fichier .csv. Le champ des détails est limité à 128 caractères. 
 
-        |||
-        |-|-|
-        |&lt;IMEI 1&gt;|&lt;Détails de l’appareil 1&gt;|
-        |&lt;IMEI 2&gt;|&lt;Détails de l’appareil 2&gt;|
-        Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
 
-        ```
-        01234567890123,device details
-        02234567890123,device details
-        ```
+     |                 |                           |
+     |-----------------|---------------------------|
+     | &lt;IMEI 1&gt; | &lt;Détails de l’appareil 1&gt; |
+     | &lt;IMEI 2&gt; | &lt;Détails de l’appareil 2&gt; |
 
-    -   **Ajoutez manuellement les détails des appareils** : entrez le numéro IMEI et les détails de 15 appareils au maximum.
+     Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
+
+     ```
+     01234567890123,device details
+     02234567890123,device details
+     ```
+
+   - **Ajoutez manuellement les détails des appareils** : entrez le numéro IMEI et les détails de 15 appareils au maximum.
 
    Le champ *Détails* est destiné à l’administration. Vous pouvez spécifier des détails pour identifier l’appareil dans la liste des appareils d’entreprise répertoriés par ID du matériel. Ces informations ne sont pas envoyées à l’appareil, mais elles apparaissent dans la console Intune.
 
-2.   Choisissez **Suivant**.
-3.  Dans le volet **Passer en revue les appareils**, vous pouvez vérifier les numéros IMEI des appareils importés. Vous pouvez également décider s’il convient de remplacer les **détails** pour les numéros IMEI réimportés. Vous pouvez décocher la case **Remplacer** pour conserver les détails actuels. Choisissez **Terminer** pour importer les numéros IMEI.
-4.  Les numéros IMEI importés et les descriptions sont ajoutés à la liste **Par IMEI (toutes les plateformes)**.
+2. Choisissez **Suivant**.
+3. Dans le volet **Passer en revue les appareils**, vous pouvez vérifier les numéros IMEI des appareils importés. Vous pouvez également décider s’il convient de remplacer les **détails** pour les numéros IMEI réimportés. Vous pouvez décocher la case **Remplacer** pour conserver les détails actuels. Choisissez **Terminer** pour importer les numéros IMEI.
+4. Les numéros IMEI importés et les descriptions sont ajoutés à la liste **Par IMEI (toutes les plateformes)**.
 
 > [!IMPORTANT]
 > Si vous importez des numéros IMEI pour des appareils Android, n’oubliez pas que certains appareils Android peuvent avoir plusieurs numéros IMEI. Si vous importez un numéro IMEI mais qu’il ne s’agit pas de celui signalé à Intune par l’appareil, celui-ci sera classifié comme appareil personnel plutôt que comme appareil d’entreprise.

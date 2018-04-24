@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Gérer les applications que vous avez achetées dans le Microsoft Store pour Entreprises avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) propose un emplacement dans lequel vous pouvez trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Store à Microsoft Intune, vous pouvez gérer les applications achetées en volume depuis la console Intune. Par exemple :
+Le [Microsoft Store pour Entreprises](https://www.microsoft.com/business-store) propose un emplacement dans lequel vous pouvez trouver et acheter des applications pour votre organisation, individuellement ou en volume. En connectant le Store à Microsoft Intune, vous pouvez gérer les applications achetées en volume depuis la console Intune. Par exemple :
 * Vous pouvez synchroniser la liste des applications que vous avez achetées dans le Store avec Intune.
 * Les applications qui sont synchronisées apparaissent dans la console d’administration Intune et vous pouvez les déployer comme toute autre application.
 * Vous pouvez effectuer un suivi du nombre de licences disponibles et de la quantité de licences utilisée dans la console d’administration Intune.
@@ -48,7 +48,7 @@ Avant d’activer la synchronisation dans la console Intune, vous devez configur
 3. Sur la page Outils de gestion, choisissez **Ajouter un outil de gestion**, puis sélectionnez **Microsoft Intune**.
 
 > [!NOTE]
-> Si vous utilisez plusieurs outils de gestion pour déployer des applications Microsoft Store pour Entreprises, vous ne pouviez auparavant en associer qu’un au Microsoft Store pour Entreprises. Maintenant, vous pouvez associer plusieurs outils de gestion au magasin, par exemple, Intune et Configuration Manager.
+> Si vous utilisez plusieurs outils de gestion pour déployer des applications Microsoft Store pour Entreprises, vous ne pouviez auparavant en associer qu’un au Microsoft Store pour Entreprises. Désormais, vous pouvez associer plusieurs outils de gestion au Windows Store, par exemple, Intune et Configuration Manager.
 
 Vous pouvez maintenant continuer et configurer la synchronisation dans la console Intune.
 
@@ -57,8 +57,8 @@ Vous pouvez maintenant continuer et configurer la synchronisation dans la consol
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Administration**
 2. Dans l’espace de travail **Administration**, développez l’option **Gestion des appareils mobiles** > **Windows**, puis cliquez sur **Store Pro**.
 3. Dans la page **Microsoft Store pour Entreprises**,effectuez les étapes suivantes :
- * Si vous ne l’avez pas déjà fait, cliquez sur le lien pour vous inscrire au Microsoft Store pour Entreprises.
- * Une fois l’inscription effectuée, cliquez sur **Configurer la synchronisation**.
+   * Si vous ne l’avez pas déjà fait, cliquez sur le lien pour vous inscrire au Microsoft Store pour Entreprises.
+   * Une fois l’inscription effectuée, cliquez sur **Configurer la synchronisation**.
 4. Dans la boîte de dialogue **Configurer la synchronisation des applications du Microsoft Store pour Entreprises**, sélectionnez **Activer la synchronisation du Microsoft Store pour Entreprises**.
 5. Dans la liste déroulante **Langue**, choisissez la langue dans laquelle les applications du Microsoft Store pour Entreprises s’affichent dans la console Intune. Quelle que soit la langue dans laquelle elles sont affichées, elles seront installées dans la langue de l’utilisateur final lorsqu’elles sont disponibles.
 6. Cliquez sur **OK**.

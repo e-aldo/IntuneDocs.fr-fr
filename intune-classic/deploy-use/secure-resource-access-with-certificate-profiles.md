@@ -1,50 +1,50 @@
 ---
-title: "Profils de certificat pour l’accès aux ressources"
-description: "Sécurisez l’accès à votre VPN, Wi-Fi et messagerie avec un certificat installé sur chaque appareil de l’utilisateur."
-keywords: 
+title: Profils de certificat pour l’accès aux ressources
+description: Sécurisez l’accès à votre VPN, Wi-Fi et messagerie avec un certificat installé sur chaque appareil de l’utilisateur.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76083268d3c7ed43cea0bc0d9751ae9c37c7227b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccfd69579832c553dc1416c21ca93b85cd93cd78
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Sécuriser l’accès aux ressources avec des profils de certificat dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Quand vous donnez un accès à des utilisateurs aux ressources d’entreprise par le biais de profils VPN, Wi-Fi ou de messagerie, vous pouvez sécuriser cet accès à l’aide d’un certificat installé sur chaque appareil de l’utilisateur. Le principe de fonctionnement est le suivant :
 
 1. Assurez-vous de disposer d’une infrastructure de certificat appropriée, comme décrit dans [Configurer l’infrastructure de certificat pour SCEP](configure-certificate-infrastructure-for-scep.md) et [Configurer l’infrastructure de certificat pour PFX](configure-certificate-infrastructure-for-pfx.md).
 
 2. Installez un certificat racine ou un certificat intermédiaire d’une autorité de certification sur chaque appareil pour qu’il reconnaisse la légitimité de votre autorité de certification. Pour ce faire, créez et déployez un **Profil de certificat approuvé**. Quand vous déployez ce profil, les appareils que vous gérez avec Intune demandent et reçoivent le certificat racine. Vous devez créer un profil distinct pour chaque plateforme. Le **Profil de certificat approuvé** est disponible pour ces plateformes :
- -  iOS 8.0 et versions ultérieures
- -  Mac OS X 10.9 et versions ultérieures
- -  Android 4.0 et versions ultérieures
- -  Android for Work
- -  Windows 8.1 et versions ultérieures
- -  Windows Phone 8.1 et versions ultérieures
+   -  iOS 8.0 et versions ultérieures
+   -  Mac OS X 10.9 et versions ultérieures
+   -  Android 4.0 et versions ultérieures
+   -  Android for Work
+   -  Windows 8.1 et versions ultérieures
+   -  Windows Phone 8.1 et versions ultérieures
 
 3. Créez des profils de certificat pour que les appareils demandent l’utilisation d’un certificat pour l’authentification pour l’accès au VPN, au Wi-Fi et aux e-mails, comme décrit dans [Configurer les profils de certificats Intune](configure-intune-certificate-profiles.md). Vous pouvez créer et déployer un **profil de certificat PKCS #12 (.PFX)** *ou* un **profil de certificat SCEP** pour les appareils exécutant ces plateformes :
 
-  -  iOS 8.0 et versions ultérieures
-  -  Android 4.0 et versions ultérieures
-  -  Android for Work
-  -  Windows 10 (Desktop et Mobile) et versions ultérieures
+   -  iOS 8.0 et versions ultérieures
+   -  Android 4.0 et versions ultérieures
+   -  Android for Work
+   -  Windows 10 (Desktop et Mobile) et versions ultérieures
 
-  Utilisez un **profil de certificat SCEP** pour les appareils exécutant ces plateformes :
+   Utilisez un **profil de certificat SCEP** pour les appareils exécutant ces plateformes :
     -   Mac OS X 10.9 et versions ultérieures
     -   Windows Phone 8.1
 

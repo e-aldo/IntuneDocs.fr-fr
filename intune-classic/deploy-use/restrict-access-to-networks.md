@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1893410f4993d6feaa218d251dd7e2561286f5a3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Utilisation de Cisco ISE avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 L’intégration d’Intune à Cisco ISE (Identity Services Engine) vous permet de créer des stratégies réseau dans votre environnement ISE faisant appel à l’état de conformité et à l’inscription d’appareils Intune. Vous pouvez utiliser ces stratégies pour vous assurer que l’accès à votre réseau d’entreprise est limité aux appareils gérés par Intune et conformes aux stratégies Intune.
 
@@ -70,13 +70,13 @@ b. Cliquez sur l’icône en forme de verrou &gt;  **Plus d’informations**.
 
 ### <a name="obtain-a-self-signed-cert-from-ise"></a>Obtenir un certificat auto-signé à partir d’ISE 
 
-1.  Dans la console ISE, accédez à **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate** (Générer un certificat auto-signé).  
-2.       Exportez le certificat auto-signé.
+1. Dans la console ISE, accédez à **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate** (Générer un certificat auto-signé).  
+2. Exportez le certificat auto-signé.
 3. Dans un éditeur de texte, modifiez le certificat exporté :
 
- - Supprimez **-----BEGIN CERTIFICATE-----**
- - Supprimez **-----END CERTIFICATE-----**
- 
+   - Supprimez **-----BEGIN CERTIFICATE-----**
+   - Supprimez **-----END CERTIFICATE-----**
+
 Vérifiez que tout le texte contient sur une seule ligne.
 
 
@@ -88,13 +88,13 @@ Vérifiez que tout le texte contient sur une seule ligne.
 5. Enregistrez le fichier sans modifier son nom.
 6. Fournissez à votre application des autorisations à Microsoft Graph et à l’API Microsoft Intune.
 
- a. Pour Microsoft Graph, choisissez ce qui suit :
+   a. Pour Microsoft Graph, choisissez ce qui suit :
     - **Autorisations d’application** : Lire des données d’annuaire
     - **Autorisations déléguées** :
         - Accéder aux données utilisateur à tout moment
         - Connecter les utilisateurs
 
- b. Pour l’API Microsoft Intune, dans **Autorisations d’application**, choisissez **Get device state and compliance from Intune** (Obtenir l’état et la conformité de l’appareil à partir d’Intune).
+   b. Pour l’API Microsoft Intune, dans **Autorisations d’application**, choisissez **Get device state and compliance from Intune** (Obtenir l’état et la conformité de l’appareil à partir d’Intune).
 
 7. Choisissez **Points de terminaison** et copiez les valeurs suivantes, que vous utiliserez pour configurer les paramètres ISE :
 
@@ -105,23 +105,40 @@ Vérifiez que tout le texte contient sur une seule ligne.
 |Mettre à jour votre code avec votre ID client|ID client|
 
 ### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Étape 4 : Charger le certificat auto-signé de l’ISE dans l’application ISE que vous avez créée dans Azure AD
-1.     Récupérez l’empreinte numérique et la valeur de certificat codée en base64 d’un fichier de certificat public X509 (.cer). Cet exemple utilise PowerShell :
-   
-      
-      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
- 
-    Stockez les valeurs de $base64Thumbprint, $base64Value et $keyid à utiliser à l’étape suivante.
-2.       Chargez le certificat depuis le fichier manifeste. Connectez-vous au [Portail de gestion Azure](https://manage.windowsazure.com)
-2.      Dans le composant logiciel enfichable Azure AD, recherchez l’application que vous souhaitez configurer avec un certificat X.509.
-3.      Téléchargez le fichier manifeste d’application. 
-5.      Remplacez la propriété “KeyCredentials”: [], vide par le code JSON suivant.  Le type complexe KeyCredentials est documenté dans [Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) (Informations de référence sur les entités et les types complexes).
+1. Récupérez l’empreinte numérique et la valeur de certificat codée en base64 d’un fichier de certificat public X509 (.cer). Cet exemple utilise PowerShell :
 
- 
-    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
-     ], 
- 
-Exemple :
- 
+
+~~~
+  $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+  $cer.Import(“mycer.cer”)
+  $bin = $cer.GetRawCertData()
+  $base64Value = [System.Convert]::ToBase64String($bin)
+  $bin = $cer.GetCertHash()
+  $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+  $keyid = [System.Guid]::NewGuid().ToString()
+
+Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+~~~
+2. Chargez le certificat depuis le fichier manifeste. Connectez-vous au [Portail de gestion Azure](https://manage.windowsazure.com)
+3. Dans le composant logiciel enfichable Azure AD, recherchez l’application que vous souhaitez configurer avec un certificat X.509.
+4. Téléchargez le fichier manifeste d’application. 
+5. Remplacez la propriété “KeyCredentials”: [], vide par le code JSON suivant.  Le type complexe KeyCredentials est documenté dans [Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType) (Informations de référence sur les entités et les types complexes).
+
+
+~~~
+“keyCredentials“: [
+{
+ “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+ “keyId“: “$keyid_from_above“,
+ “type”: “AsymmetricX509Cert”,
+ “usage”: “Verify”,
+ “value”:  “$base64Value_from_above”
+ }2. 
+ ], 
+~~~
+
+Par exemple :
+
     “keyCredentials“: [
     {
     “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
@@ -131,10 +148,10 @@ Exemple :
     “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
     }
     ],
- 
-6.      Enregistrez la modification dans le fichier manifeste d’application.
-7.      Chargez le fichier manifeste d’application modifié via le portail de gestion Azure.
-8.      (Facultatif) Rechargez le manifeste pour vérifier que votre certificat X.509 figure bien dans l’application.
+
+6. Enregistrez la modification dans le fichier manifeste d’application.
+7. Chargez le fichier manifeste d’application modifié via le portail de gestion Azure.
+8. (Facultatif) Rechargez le manifeste pour vérifier que votre certificat X.509 figure bien dans l’application.
 
 >[!NOTE]
 >

@@ -1,28 +1,28 @@
 ---
-title: "Vue d’ensemble du cycle de vie des applications pour Microsoft Intune"
-description: "Découvrez le cycle de vie des applications gérées dans Microsoft Intune. Le cycle de vie des applications implique l’ajout, le déploiement, la configuration, la protection et la mise hors service des applications."
-keywords: 
+title: Vue d’ensemble du cycle de vie des applications pour Microsoft Intune
+description: Découvrez le cycle de vie des applications gérées dans Microsoft Intune. Le cycle de vie des applications implique l’ajout, le déploiement, la configuration, la protection et la mise hors service des applications.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps
-ms.openlocfilehash: 732323d1d882a256128ae731cab68656126583b2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 853873480beb5e95a195e04e251cea9975ce03b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Vue d’ensemble du cycle de vie des applications dans Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Le cycle de vie des applications Microsoft Intune commence quand une application est ajoutée et évolue en différentes phases jusqu’à sa suppression. En comprenant ces phases, vous disposerez de toutes les informations nécessaires pour commencer à gérer des applications dans Intune.
 
@@ -46,7 +46,7 @@ Dans le cadre du cycle de vie des applications, des nouvelles versions des appli
 
 Intune propose différentes manières de protéger les données dans vos applications. Les principales méthodes sont :
 - L’[accès conditionnel](conditional-access.md), qui contrôle l’accès à la messagerie et aux autres services en fonction des conditions que vous spécifiez. Les conditions incluent les types d’appareils ou la conformité à l’une des [stratégies de conformité des appareils](device-compliance.md) que vous avez déployées.
-- Les [stratégies de protection des applications](app-protection-policy.md) fonctionnent avec différentes applications pour protéger les données d’entreprise que ces dernières utilisent. Par exemple, vous pouvez limiter la copie de données entre des applications non gérées et des applications que vous gérez, ou vous pouvez empêcher les applications de s’exécuter sur des appareils jailbreakés ou rootés.
+- Les [stratégies de protection des applications](app-protection-policy.md) fonctionnent avec différentes applications pour protéger les données d’entreprise que ces dernières utilisent. Par exemple, vous pouvez limiter la copie de données entre des applications non gérées et des applications que vous gérez, ou vous pouvez empêcher les applications de s’exécuter sur des appareils jailbroken ou rootés.
 
 ## <a name="retire"></a>Mettre hors service
 

@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 512bd38802dbb97a74d3d19d74a7d5086784d327
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Configurations personnalisées pour les profils VPN Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="create-a-custom-configuration"></a>Créer une configuration personnalisée
 Vous pouvez utiliser des stratégies de configuration personnalisées Intune afin de créer des profils VPN pour :
 
-* appareils qui exécutent Android 4 et versions ultérieures ;
+* Appareils qui exécutent Android 4 et versions ultérieures
 * Appareils Android for Work
 * Appareils inscrits qui exécutent Windows 8.1 et versions ultérieures
-* appareils qui exécutent Windows Phone 8.1 et versions ultérieures.
+* Appareils qui exécutent Windows Phone 8.1 et versions ultérieures
 * Appareils inscrits qui exécutent Windows 10 Desktop
 * Appareil qui exécutent Windows 10 Mobile
 
@@ -39,13 +39,13 @@ Ce type de stratégie peut être utile lorsque les stratégies VPN Intune standa
 
 ## <a name="to-create-a-custom-configuration-policy"></a>Pour créer une stratégie de configuration personnalisée :
 
-   1. Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Ajouter une stratégie** > *Expand platform (Développer la plateforme)* > **Configuration personnalisée** > **Créer une stratégie**.
-   2. Entrez un nom pour la stratégie.
-   3. Pour chaque paramètre d’URI que vous souhaitez spécifier, choisissez **Ajouter** et fournissez les informations demandées. Voici un exemple :
+1. Dans la [console d’administration Intune](https://manage.microsoft.com), choisissez **Stratégie** > **Ajouter une stratégie** > *Expand platform (Développer la plateforme)* > **Configuration personnalisée** > **Créer une stratégie**.
+2. Entrez un nom pour la stratégie.
+3. Pour chaque paramètre d’URI que vous souhaitez spécifier, choisissez **Ajouter** et fournissez les informations demandées. Voici un exemple :
 
    ![Boîte de dialogue de configuration personnalisée de profil VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Une fois que vous avez entré tous les paramètres d’URI, choisissez **Enregistrer la stratégie**, puis déployez la stratégie.
+4. Une fois que vous avez entré tous les paramètres d’URI, choisissez **Enregistrer la stratégie**, puis déployez la stratégie.
 
 Ensuite, [déployez la stratégie](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) comme d’habitude.
 

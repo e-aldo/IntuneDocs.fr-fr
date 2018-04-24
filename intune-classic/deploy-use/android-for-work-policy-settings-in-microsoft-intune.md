@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e42d33b4cc69e6b2cc836e2236c508d97c2245fe
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 89c0e09a34a734ccfe704b9a89971544e9a25e86
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Paramètres de stratégie Android for Work dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune fournit un certain nombre de paramètres généraux intégrés que vous pouvez configurer sur les [appareils Android for Work](android-for-work.md).
 
@@ -40,10 +40,10 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 
 |Nom du paramètre|Détails|
 |----------------|-|
-|**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Spécifie si un mot de passe est requis sur les appareils gérés. Choisissez parmi :<br><br>- **Complexe** : exige au moins une lettre, un chiffre et un symbole<br>- **Alphanumérique** : exige au moins un chiffre et un caractère alphabétique<br>- **Alphabétique** : exige au moins des lettres ou des symboles<br>- **Au moins avec des chiffres complexes** : exige des caractères numériques qui ne sont pas consécutifs ou répétés<br>- **Numérique**<br><br>Si ce paramètre n’est pas activé, aucune exigence de complexité n’est appliquée.|
+|**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Spécifie si un mot de passe est requis sur les appareils gérés. Choisissez parmi :<br><br>- **Complexe** : exige au moins une lettre, un chiffre et un symbole<br>- **Alphanumérique** : exige au moins un chiffre et un caractère alphabétique<br>- **Alphabétique** : exige au moins des lettres ou des symboles<br>- **Au moins avec des chiffres complexes** : exige des caractères numériques qui ne sont pas consécutifs ou répétés<br>- **Numérique**<br><br>Si ce paramètre n’est pas activé, aucune exigence de complexité n’est appliquée.|
 |**Longueur minimale du mot de passe**|Spécifie le nombre minimal de caractères ou chiffres figurant dans le mot de passe.|
 |**Minutes d’inactivité avant verrouillage de l’appareil**|Spécifie le nombre de minutes sans activité utilisateur avant verrouillage automatique de l’appareil.|
-|**Autoriser Smart Lock et d’autres agents de confiance**<br>(Android 6 et versions ultérieures)|Ce paramètre vous permet de contrôler la fonctionnalité Smart Lock sur les appareils Android compatibles. Cette fonctionnalité du téléphone, parfois appelée agent de confiance, vous permet de désactiver ou de contourner le mot de passe de l’écran de verrouillage de l’appareil si celui-ci se trouve dans un emplacement fiable (par exemple, quand il est connecté à un appareil Bluetooth spécifique ou qu’il se trouve à proximité d’une balise NFC). Vous pouvez utiliser ce paramètre pour empêcher les utilisateurs finaux de configurer Smart Lock.|
+|**Autoriser Smart Lock et d’autres agents de confiance**<br>(Android 6 et versions ultérieures)|Permet de contrôler la fonctionnalité Smart Lock sur les appareils Android compatibles. Cette fonctionnalité du téléphone, parfois appelée agent de confiance, vous permet de désactiver ou de contourner le mot de passe de l’écran de verrouillage de l’appareil si celui-ci se trouve dans un emplacement fiable (par exemple, quand il est connecté à un appareil Bluetooth spécifique ou qu’il se trouve à proximité d’une balise NFC). Vous pouvez utiliser ce paramètre pour empêcher les utilisateurs de configurer Smart Lock.|
 |**Nombre d’échecs de connexion répétée avant suppression du profil professionnel**|Spécifie le nombre d’échecs de connexion autorisé avant suppression du profil professionnel sur l’appareil. Cette option n’effectue pas de réinitialisation complète de l’appareil.|
 |**Mémoriser l’historique des mots de passe**|Empêche la réutilisation des mots de passe déjà utilisés.|
 |**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe déjà utilisés à mémoriser.|
@@ -55,7 +55,7 @@ Si le paramètre que vous recherchez n’est pas mentionné dans cette rubrique,
 
 |Nom du paramètre|Détails|
 |----------------|-|
-|**Autoriser le partage de données entre profils professionnels et personnels**|Permet aux applications dans le profil professionnel de partager des données avec les applications dans le profil personnel des utilisateurs. Choisissez parmi :<br><br>- **Empêcher tout partage en dehors des limites**<br>- **Les applications du profil professionnel peuvent gérer une demande de partage venant d’un profil personnel**<br>- **Aucune restriction de partage**|
+|**Autoriser le partage de données entre profils professionnels et personnels**|Permet aux applications dans le profil professionnel de partager des données avec les applications dans le profil personnel des utilisateurs. Choisissez parmi :<br><br>- **Empêcher tout partage en dehors des limites**<br>- **Les applications du profil professionnel peuvent gérer une demande de partage venant d’un profil personnel**<br>- **Aucune restriction de partage**|
 |**Masquer les notifications du profil professionnel quand l’appareil est verrouillé**<br>(Android 6 et versions ultérieures)|Contrôler s’il faut afficher des notifications du profil professionnel quand l’appareil est verrouillé.|
 |**Définir une stratégie d’autorisation d’application par défaut**<br>(Android 6 et versions ultérieures)|Définit la stratégie d’autorisation par défaut pour toutes les applications dans le profil professionnel. À partir d’Android 6, certaines autorisations requises par les applications sont demandées à l’utilisateur final au moment de l’exécution.  Ce paramètre de stratégie permet au service informatique de décider comment ou si les utilisateurs sont invités à accorder des autorisations pour les applications dans le profil professionnel. <br/><br/>Par exemple, le service informatique peut transmettre au profil professionnel une application qui nécessite un accès à l’emplacement.  Habituellement, cette application affiche une boîte de dialogue demandant à l’utilisateur s’il souhaite autoriser l’application à accéder à l’emplacement. L’utilisateur peut alors approuver ou refuser cette autorisation.  Cette stratégie permet au service informatique de décider si toutes les autorisations doivent être accordées automatiquement sans invite, refusées automatiquement sans invite ou déterminées par l’utilisateur.|
 

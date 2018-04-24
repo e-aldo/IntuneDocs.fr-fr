@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 242ee454ec42c54bb9437fbdf0a7efeca926d193
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Quelle sera l’expérience de protection de base de vos utilisateurs sur des applications Office 365 gérées dans Microsoft Intune ?
 
@@ -50,13 +50,13 @@ Cet article utilise OneDrive Entreprise comme exemple pour montrer l’expérien
 2. Tapez votre nom d’utilisateur de compte professionnel. Vous êtes redirigé vers la page d’authentification Office 365 pour entrer vos informations d’identification professionnelles. 
 3. Une fois vos informations d’identification correctement authentifiées par Azure Active Directory, les stratégies de protection des applications sont appliquées et il vous est demandé de redémarrer l’application OneDrive Entreprise. 
 
-  > [!NOTE]
-  > Le message de redémarrage nécessaire s’affiche uniquement sur les appareils qui ne sont pas inscrits dans Intune.
+   > [!NOTE]
+   > Le message de redémarrage nécessaire s’affiche uniquement sur les appareils qui ne sont pas inscrits dans Intune.
 
 4. Redémarrez l’application OneDrive Entreprise. L’application démarre avec les stratégies de protection des applications activées et vous êtes invité à définir un code PIN pour l’appareil (si un code PIN n’est pas déjà configuré pour l’appareil).  
 
-  > [!NOTE]
-  > La plupart de vos utilisateurs ne verront pas cette invite. Seuls les utilisateurs qui n’ont pas activé de code PIN sur leur appareil iOS voient cette invite.
+   > [!NOTE]
+   > La plupart de vos utilisateurs ne verront pas cette invite. Seuls les utilisateurs qui n’ont pas activé de code PIN sur leur appareil iOS voient cette invite.
 
 5. Une fois que vous avez défini le code PIN et l'avez confirmé, revenez à l’application OneDrive Entreprise. Vous verrez s'afficher un avertissement unique vous informant que votre administrateur informatique protège maintenant vos données de travail dans OneDrive. 
 6. Cliquez sur cet avertissement pour accéder aux fichiers sur votre OneDrive Entreprise. 
@@ -70,8 +70,8 @@ Cet article utilise OneDrive Entreprise comme exemple pour montrer l’expérien
 2. Tapez votre nom d’utilisateur de compte professionnel. Vous êtes redirigé vers la page d’authentification Office 365 pour entrer vos informations d’identification professionnelles. <br/> ![Image de la connexion à O365 sur Android](./media/o365-sign-in-android.png)
 3. Une fois vos informations d’identification correctement authentifiées par Azure Active Directory, un message s’affiche, stipulant les instructions d’installation de l’application Portail d’entreprise, si celle-ci n’est pas encore installée sur l’appareil. Cliquez sur **Accéder au Store** pour continuer. <br/> ![Image du message permettant d'obtenir l’application Portail d’entreprise](./media/get-company-portal-android.png) <br/>Si vous avez déjà installé l’application Portail d’entreprise sur votre téléphone, l’application OneDrive Entreprise démarre automatiquement et vous pouvez ignorer la remarque finale.   
 
-  > [!IMPORTANT]
-  > Sur Android, une fois que vous avez défini les applications Office devant être gérées par une stratégie de protection des applications, l’utilisateur de l’appareil **doit** installer l’application Portail d’entreprise pour accéder à des e-mails et à des documents professionnels, même si l’utilisateur final n’a pas besoin d’ouvrir l’application ni de s’y connecter pour les lire vraiment.
+   > [!IMPORTANT]
+   > Sur Android, une fois que vous avez défini les applications Office devant être gérées par une stratégie de protection des applications, l’utilisateur de l’appareil **doit** installer l’application Portail d’entreprise pour accéder à des e-mails et à des documents professionnels, même si l’utilisateur final n’a pas besoin d’ouvrir l’application ni de s’y connecter pour les lire vraiment.
 
 4. Vous êtes maintenant dans Google Play Store, où vous pouvez télécharger et installer l’application Portail d’entreprise. L’application permet de sécuriser et de protéger les données. <br/> ![Image de l’application dans Google Play Store](./media/google-play-get-app-android.png)
 5. Une fois l’installation de l'application terminée, choisissez **Accepter** pour accepter les termes du contrat. L’application OneDrive Entreprise démarre automatiquement.
@@ -86,14 +86,15 @@ Cet article utilise OneDrive Entreprise comme exemple pour montrer l’expérien
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
 
 ## <a name="what-policies-does-this-wizard-set"></a>Quelles sont les stratégies définies par cet Assistant ?
+
 |     |       | |
 |----|--------|-|
 |**Nom**|Gérer les applications Office 365| |
 | **Description**|Créé par l’Assistant d’applications Gérer Office 365| |
 | |  | |
 | **Nom du paramètre** |**Valeur de la stratégie iOS** | **Valeur de la stratégie Android** |
-|Interdire les sauvegardes iTunes et iCloud| Non | N/A |
-|Interdire les sauvegardes Android |N/A | Non|
+|Interdire les sauvegardes iTunes et iCloud| Non | NON APPLICABLE |
+|Interdire les sauvegardes Android |NON APPLICABLE | Non|
 |Autoriser l'application à transférer des données vers d'autres applications | Toutes les applications | Toutes les applications|
 |Autoriser l'application à recevoir des données d'autres applications| Toutes les applications | Toutes les applications|
 |Interdire l’option Enregistrer sous | Non | Non|
@@ -103,16 +104,16 @@ Cet article utilise OneDrive Entreprise comme exemple pour montrer l’expérien
 |Désactiver la synchronisation des contacts | Non| Non|
 |Désactiver l’impression | Non | Non|
 |Exiger un code confidentiel d’accès | Non | Oui|
-|Nombre de tentatives avant réinitialisation du code confidentiel | N/A |5|
-|Autoriser un code PIN simple | N/A |Oui|
-|Longueur du code PIN | N/A | 4|
-|Autoriser une empreinte digitale à la place du code confidentiel | N/A | Oui |
+|Nombre de tentatives avant réinitialisation du code confidentiel | NON APPLICABLE |5|
+|Autoriser un code PIN simple | NON APPLICABLE |Oui|
+|Longueur du code PIN | NON APPLICABLE | 4|
+|Autoriser une empreinte digitale à la place du code confidentiel | NON APPLICABLE | Oui |
 |Exiger des informations d'identification d'entreprise pour l'accès | Non | Non|
 |Bloquer l’exécution des applications gérées sur les appareils jailbroken ou rootés | Non | Non|
 |Revérifier les exigences d'accès après (minutes) - Délai | 30 | 30|
 |Revérifier les exigences d'accès après (minutes) - Période de grâce hors connexion | 720 |720|
 |Intervalle hors connexion (jours) avant la réinitialisation des données d'application | 90 | 90|
-|Bloquer la capture d'écran (appareils Android uniquement) | N/A | Non |
+|Bloquer la capture d'écran (appareils Android uniquement) | NON APPLICABLE | Non |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Pourquoi une stratégie de code PIN d'application est-elle configurée uniquement pour les appareils Android ?
 Le chiffrement fonctionne différemment sur iOS et Android.

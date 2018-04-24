@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Résoudre les problèmes d’inscription d’appareils dans Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique fournit des suggestions pour résoudre les problèmes liés à l’inscription d’appareils. Si ces informations ne vous permettent pas de remédier à votre problème, consultez [Comment obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md) pour accéder à d’autres types d’assistance.
 
@@ -87,9 +87,9 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 8.  Supprimez les appareils appropriés, par exemple, ceux qui ne sont plus utilisés ou qui n’ont pas de définitions précises.
 
 > [!NOTE]
-
+> 
 > Pour éviter d’atteindre le plafond d’inscription d’appareils, vous pouvez utiliser le compte de gestionnaire d’inscription d’appareil, comme décrit dans [Inscrire des appareils d’entreprise avec le gestionnaire d’inscription d’appareil dans Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
->
+> 
 > Un compte d’utilisateur ajouté au compte des gestionnaires d’inscription d’appareil ne peut pas effectuer d’inscription si la stratégie d’accès conditionnel est appliquée à cette connexion d’utilisateur spécifique.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Portail d’entreprise temporairement indisponible
@@ -154,7 +154,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 **Problème :** Quand vous ajoutez un deuxième domaine vérifié à votre ADFS, les utilisateurs avec le suffixe de nom principal d’utilisateur (UPN) du deuxième domaine peuvent ne pas pouvoir se connecter aux portails ou inscrire des appareils.
 
 
-**Solution :** Les clients Microsoft Office 365 qui utilisent l’authentification unique (SSO) par le biais des services AD FS 2.0 et qui disposent de plusieurs domaines de niveau supérieur pour les suffixes UPN des utilisateurs au sein de leur entreprise (par exemple, @contoso.com ou @fabrikam.com) doivent déployer une instance distincte du service FS (Federation Service) AD FS 2.0 pour chaque suffixe. Il existe désormais un [correctif cumulatif pour ADFS 2.0](http://support.microsoft.com/kb/2607496) qui fonctionne conjointement avec le commutateur **SupportMultipleDomain** pour permettre au serveur ADFS de prendre en charge ce scénario sans nécessiter d’autres serveurs ADFS 2.0. Pour plus d’informations, consultez [ce blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+<strong>Solution :</strong> Les clients Microsoft Office 365 qui utilisent l’authentification unique (SSO) par le biais des services AD FS 2.0 et qui disposent de plusieurs domaines de niveau supérieur pour les suffixes UPN des utilisateurs au sein de leur entreprise (par exemple, @contoso.com ou @fabrikam.com) doivent déployer une instance distincte du service FS (Federation Service) AD FS 2.0 pour chaque suffixe. Il existe désormais un [correctif cumulatif pour ADFS 2.0](http://support.microsoft.com/kb/2607496) qui fonctionne conjointement avec le commutateur <strong>SupportMultipleDomain</strong> pour permettre au serveur ADFS de prendre en charge ce scénario sans nécessiter d’autres serveurs ADFS 2.0. Pour plus d’informations, consultez [ce blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problèmes Android
@@ -163,7 +163,7 @@ Les administrateurs peuvent supprimer des appareils dans le portail Azure Active
 
 Le tableau suivant répertorie les erreurs auxquelles les utilisateurs finaux peuvent être confrontés durant l’inscription d’appareils Android dans Intune.
 
-|Message d'erreur|Problème|Résolution|
+|Message d’erreur|Problème|Solution|
 |---|---|---|
 |**L’administrateur informatique doit affecter une licence pour autoriser l’accès**<br>Votre administrateur informatique ne vous a pas accordé l’accès à cette application. Demandez-lui de l’aide ou réessayez plus tard.|L’appareil ne peut pas être inscrit, car le compte de l’utilisateur ne dispose pas de la licence nécessaire.|Pour que les utilisateurs puissent inscrire leurs appareils, ils doivent avoir reçu la licence nécessaire. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br><br>Découvrez comment [attribuer des licences Intune à vos comptes d’utilisateur](/intune/licenses-assign).
 |**L’administrateur informatique doit définir une autorité MDM**<br>Apparemment, votre administrateur informatique n’a pas défini d’autorité MDM. Demandez-lui de l’aide ou réessayez plus tard.|L’autorité de gestion des appareils mobiles n’a pas été définie.|L’autorité de gestion des appareils mobiles n’a pas été désignée dans Intune. Découvrez comment [définir l’autorité de gestion des appareils mobiles](/intune/mdm-authority-set).|
@@ -195,27 +195,27 @@ Si la résolution #2 ne fonctionne pas, indiquez à vos utilisateurs de suivre 
 
 1. Lancez l’application Smart Manager sur l’appareil.
 
-  ![Sélectionner l’icône Smart Manager sur l’appareil](./media/smart-manager-app-icon.png)
+   ![Sélectionner l’icône Smart Manager sur l’appareil](./media/smart-manager-app-icon.png)
 
 2. Choisissez la vignette **Batterie**.
 
-  ![Sélectionner la vignette Batterie](./media/smart-manager-battery-tile.png)
+   ![Sélectionner la vignette Batterie](./media/smart-manager-battery-tile.png)
 
 3. Sous **Économie d’énergie de l’application** ou **Optimisation de l’application**, sélectionnez **Détail**.
 
-  ![Sélectionner Détail sous Économie d’énergie de l’application ou Optimisation de l’application](./media/smart-manager-app-power-saving-detail.png)
+   ![Sélectionner Détail sous Économie d’énergie de l’application ou Optimisation de l’application](./media/smart-manager-app-power-saving-detail.png)
 
 4. Choisissez **Portail d’entreprise** dans la liste des applications.
 
-  ![Sélectionner Portail d’entreprise dans la liste des applications](./media/smart-manager-company-portal.png)
+   ![Sélectionner Portail d’entreprise dans la liste des applications](./media/smart-manager-company-portal.png)
 
 5. Choisissez **Désactivé**.
 
-  ![Sélectionner Désactivé dans la boîte de dialogue Optimisation de l’application](./media/smart-manager-app-optimization-turned-off.png)
+   ![Sélectionner Désactivé dans la boîte de dialogue Optimisation de l’application](./media/smart-manager-app-optimization-turned-off.png)
 
 6. Sous **Économie d’énergie de l’application** ou **Optimisation de l’application**, vérifiez que le portail d’entreprise est désactivé.
 
-  ![Vérifier que le portail d’entreprise est désactivé](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Vérifier que le portail d’entreprise est désactivé](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>Échec de l’installation du profil
@@ -274,7 +274,7 @@ Si le certificat de serveur est installé correctement, toutes les coches s’af
 ### <a name="ios-enrollment-errors"></a>Erreurs d'inscription iOS
 Le tableau suivant répertorie les erreurs que les utilisateurs finaux peuvent rencontrer lors de l’inscription d’appareils iOS dans Intune.
 
-|Message d'erreur|Problème|Résolution|
+|Message d’erreur|Problème|Solution|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Aucune stratégie d’inscription détectée|Vérifiez que tous les prérequis de l’inscription, comme le certificat Apple Push Notification Service (APNs), ont été configurés et que l’option « iOS comme plateforme » est activée. Pour obtenir des instructions, consultez [Configurer la gestion des appareils iOS et Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceCapReached|Vous avez trop d’appareils mobiles déjà inscrits.|L’utilisateur doit supprimer un de ses appareils mobiles actuellement inscrits à partir du portail d’entreprise, avant d’en inscrire un autre. Consultez les instructions correspondant au type d’appareil que vous utilisez : [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
@@ -382,7 +382,7 @@ La liste des erreurs d’inscription iOS est fournie dans notre documentation, d
 ## <a name="pc-issues"></a>Problèmes liés aux PC
 
 
-|Message d'erreur|Problème|Résolution|
+|Message d’erreur|Problème|Solution|
 |---|---|---|
 |**L’administrateur informatique doit affecter une licence pour autoriser l’accès**<br>Votre administrateur informatique ne vous a pas accordé l’accès à cette application. Demandez-lui de l’aide ou réessayez plus tard.|L’appareil ne peut pas être inscrit, car le compte de l’utilisateur ne dispose pas de la licence nécessaire.|Pour que les utilisateurs puissent inscrire leurs appareils, ils doivent avoir reçu la licence nécessaire. Ce message signifie qu’ils ont un type de licence incorrect pour l’autorité de gestion des appareils mobiles désignée. Par exemple, si Intune a été désigné comme autorité de gestion des appareils mobiles et que vous avez une licence System Center 2012 R2 Configuration Manager, vous recevez ce message d’erreur.<br>Découvrez comment [attribuer des licences Intune à vos comptes d’utilisateur](https://docs.microsoft.com/intune/licenses-assign).|
 

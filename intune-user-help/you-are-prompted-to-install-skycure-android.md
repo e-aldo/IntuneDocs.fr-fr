@@ -1,25 +1,25 @@
 ---
 title: Vous devez installer Symantec Endpoint Protection Mobile sur votre appareil Android | Microsoft Docs
-description: "Découvrez comment installer SEP Mobile sur votre appareil Android."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Découvrez comment installer SEP Mobile sur votre appareil Android.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 040b7bad4b62acffa5dad1606d5beb81efc56b68
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Installer Symantec Endpoint Protection Mobile sur votre appareil Android
 
@@ -45,13 +45,13 @@ Si vous rencontrez des difficultés lors de l’installation, essayez de suivre 
 
 8. Elle recherche immédiatement ces menaces sur votre appareil.
 
-  * Si elle détecte une menace de sécurité sur votre appareil, elle affiche des instructions permettant de résoudre le problème.
+   * Si elle détecte une menace de sécurité sur votre appareil, elle affiche des instructions permettant de résoudre le problème.
 
-  * Si aucune menace n’est détectée, les trois types de menace apparaîtront en vert.
+   * Si aucune menace n’est détectée, les trois types de menace apparaîtront en vert.
 
-    * L’écran **Informations sur l’appareil** du portail d’entreprise montre que votre appareil est maintenant en conformité avec les critères de sécurité de votre entreprise.
+     * L’écran **Informations sur l’appareil** du portail d’entreprise montre que votre appareil est maintenant en conformité avec les critères de sécurité de votre entreprise.
 
-    ![Votre appareil est maintenant conforme aux stratégies](./media/mtd-device-now-compliant-android.png)
+     ![Votre appareil est maintenant conforme aux stratégies](./media/mtd-device-now-compliant-android.png)
 
 ## <a name="if-the-installation-doesnt-work"></a>Si l’installation ne fonctionne pas
 

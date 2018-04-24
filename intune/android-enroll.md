@@ -1,35 +1,35 @@
 ---
 title: Inscrire des appareils Android dans Intune
 titlesuffix: Microsoft Intune
-description: "Découvrez comment inscrire des appareils Android dans Intune."
-keywords: 
+description: Découvrez comment inscrire des appareils Android dans Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrire des appareils Android
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En votre qualité d’administrateur Intune, vous pouvez gérer des appareils Android, notamment des appareils Samsung Knox Standard. Vous pouvez également gérer le profil professionnel [Appareils Android for Work](#enable-enrollment-of-android-for-work-devices).
 
 Les appareils qui exécutent Samsung Knox Standard sont pris en charge pour la gestion des utilisateurs multiples par Intune. Cela signifie que les utilisateurs finaux peuvent se connecter et se déconnecter d’un appareil avec leurs informations d’identification Azure AD. L’appareil est géré de manière centralisée, qu’il soit en cours d’utilisation ou non. Quand les utilisateurs se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.
 
-## <a name="prerequisite"></a>Prérequis
+## <a name="prerequisite"></a>Composant requis
 
 Pour préparer la gestion des appareils mobiles, vous devez définir l’autorité de gestion des appareils mobiles (MDM) sur **Microsoft Intune**. Consultez la page [Configurer l’autorité MDM](mdm-authority-set.md) pour obtenir des instructions. Cet élément ne se définit qu’une seule fois, quand vous configurez pour la première fois Intune pour la gestion des appareils mobiles.
 
@@ -47,6 +47,8 @@ Pour activer la gestion du profil professionnel sur les appareils qui [prennent 
 
 Si vous inscrivez des appareils Android for Work à l’aide d’un compte de [Gestionnaire d’inscription d’appareil](device-enrollment-manager-enroll.md), il existe une limite de 10 appareils pouvant être inscrits par compte.
 
+Pour plus d’informations, consultez [Données envoyées par Intune à Google](data-intune-sends-to-google.md).
+
 ## <a name="add-android-for-work-binding-for-intune"></a>Ajouter une liaison Android for Work pour Intune
 
 > [!NOTE]
@@ -55,15 +57,18 @@ Si vous inscrivez des appareils Android for Work à l’aide d’un compte de [G
 1. **Configurer la gestion des appareils mobiles Intune**<br>
 Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en définissant **Microsoft Intune** comme [autorité de gestion des appareils mobiles](mdm-authority-set.md).
 2. **Configurer une liaison Android for Work**<br>
-    En tant qu’administrateur Intune, dans le [portail Azure](https://portal.azure.com), choisissez **Tous les services** > **Surveillance + Gestion** > **Intune**.
-
-   a. Dans le volet **Intune**, choisissez **Inscription des appareils** > **Inscription Android for Work**, puis choisissez **Google Play managé - Configurer** pour ouvrir le site Web Android for Work de Google Play. Le site web s’ouvre dans un nouvel onglet dans votre navigateur.
+    
+   a. Connectez-vous à [Intune dans le portail Azure](https://aka.ms/intuneportal), sélectionnez **Inscription de l’appareil** > **Inscription Android** > **Google Play géré**.
    ![Écran d’inscription d’Android for Work](./media/android-work-bind.png)
 
-   b. **Se connecter à Google**<br>
+   b. Sélectionnez **J’accepte** pour autoriser Microsoft à [envoyer des informations d’utilisateur et d’appareil à Google](data-intune-sends-to-google.md). 
+   
+   c. Sélectionnez **Lancer Google pour se connecter maintenant** pour ouvrir le site web Android for Work de Google Play. Le site web s’ouvre dans un nouvel onglet dans votre navigateur.
+  
+   d. **Se connecter à Google**<br>
    Dans la page de connexion de Google, entrez le compte Google à associer à toutes les tâches de gestion Android for Work pour ce client. Il s’agit du compte Google partagé par les administrateurs informatiques de votre organisation pour gérer et publier des applications dans la console Play for Work. Vous pouvez utiliser un compte Google existant ou en créer un.  Le compte que vous choisissez ne doit pas être associé à un domaine G Suite.
 
-   c. **Fournir les détails de l’organisation**<br>
+   e. **Fournir les détails de l’organisation**<br>
    Fournissez le nom de votre société comme **Nom d’organisation**. Pour **Enterprise mobility management (EMM) provider** (Fournisseur de gestion de la mobilité d’entreprise), **Microsoft Intune** doit être affiché. Acceptez le contrat Android for Work, puis choisissez **Confirmer**. Votre demande va être traitée.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Spécifier les paramètres d’inscription Android for Work
@@ -110,3 +115,14 @@ Vous pouvez désactiver l’inscription et la gestion Android for Work. Un clic 
 
 2. **Confirmer la suppression de la liaison Android for Work**<br>
   Choisissez **Oui** pour supprimer la liaison et désinscrire tous les appareils Android for Work d’Intune.
+
+## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Expérience utilisateur final au moment de l’inscription d’un appareil Samsung Knox
+Les points suivants doivent être pris en compte au moment de l’inscription d’appareil Samsung Knox :
+-   Même si aucune stratégie n’exige de code PIN, l’appareil doit avoir au moins un code PIN à quatre chiffres pour être inscrit. Si l’appareil ne dispose pas d’un code PIN, l’utilisateur est invité à en créer un.
+-   Il n’existe aucune interaction utilisateur pour les certificats Workplace Join (WPJ).
+-   L’utilisateur est invité à indiquer les informations d’inscription au service et ce que l’application peut faire.
+-   L’utilisateur est invité à indiquer les informations d’inscription Knox et ce que Knox peut faire.
+-   Si une stratégie de chiffrement est appliquée, les utilisateurs doivent définir un mot de passe complexe à six caractères pour le code secret de l’appareil.
+-   Il n’y a aucune invite utilisateur supplémentaire pour installer des certificats émis par un service pour l’accès aux ressources d’entreprise.
+- Certains anciens appareils Knox invitent l’utilisateur à fournir des certificats supplémentaires utilisés pour l’accès aux ressources d’entreprise.
+- Si un appareil Samsung Mini ne parvient pas à installer WPJ et affiche l’erreur **Certificate Not Found** (Certificat introuvable) ou **Unable to Register Device** (Impossible d’inscrire l’appareil), installez les dernières mises à jour du microprogramme Samsung.

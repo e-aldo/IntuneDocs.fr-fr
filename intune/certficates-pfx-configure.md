@@ -1,32 +1,32 @@
 ---
 title: Utiliser des certificats PKCS avec Microsoft Intune - Azure | Micrososft Docs
-description: "Découvrez comment ajouter ou créer des certificats PKCS (Public Key Cryptography Standards) avec Microsoft Intune, notamment comment exporter un certificat racine, configurer le modèle de certificat, télécharger et installer Microsoft Intune Certificate Connector, créer un profil de configuration d’appareil, créer un profil de certificat PKCS dans Azure et votre autorité de certification."
-keywords: 
+description: Découvrez comment ajouter ou créer des certificats PKCS (Public Key Cryptography Standards) avec Microsoft Intune, notamment comment exporter un certificat racine, configurer le modèle de certificat, télécharger et installer Microsoft Intune Certificate Connector, créer un profil de configuration d’appareil, créer un profil de certificat PKCS dans Azure et votre autorité de certification.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurer et utiliser des certificats PKCS avec Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Les certificats servent à authentifier et à sécuriser l’accès à vos ressources d’entreprise, par exemple un réseau privé virtuel ou votre réseau Wi-Fi. Cet article explique comment exporter un certificat PKCS, puis l’ajouter à un profil Intune. 
 
-## <a name="requirements"></a>Prérequis
+## <a name="requirements"></a>Conditions requises
 
 Pour utiliser des certificats PKCS avec Intune, veillez à disposer de l’infrastructure suivante :
 
@@ -56,7 +56,7 @@ Pour l’authentification avec un VPN, un réseau Wi-Fi et d’autres ressources
 
    Par exemple :
 
-4.  Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
+4. Une fois l'Assistant terminé, mais avant de fermer l'Assistant, cliquez sur **Lancer l'interface utilisateur de Certificate Connector**.
 
    `certutil -ca.cert certnew.cer`
 
@@ -124,9 +124,9 @@ Pour l’authentification avec un VPN, un réseau Wi-Fi et d’autres ressources
    ![Accès à Intune][NavigateIntune]
 
 3. Entrez les propriétés suivantes :
-   * Le **Nom** du profil
-   * Une description (facultatif)
-   * La **Plateforme** sur laquelle le profil sera déployé
+   * le **Nom** du profil ;
+   * une description (facultatif) ;
+   * la **Plateforme** sur laquelle le profil sera déployé ;
    * **Type de profil** : **Certificat approuvé**.
 
 4. Accédez à **Paramètres** et entrez le fichier .cer du certificat d’AC racine exporté précédemment.

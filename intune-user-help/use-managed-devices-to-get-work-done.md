@@ -1,27 +1,27 @@
 ---
-title: "Utiliser des appareils gérés pour réaliser vos tâches | Microsoft Docs"
-description: "Découvrez ce que signifie d’inscrire votre appareil à la gestion avec Intune."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Utiliser des appareils gérés pour réaliser vos tâches | Microsoft Docs
+description: Découvrez ce que signifie d’inscrire votre appareil à la gestion avec Intune.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 28e455230213da30fcf371a29b4862982f1a514b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Utiliser des appareils gérés pour réaliser vos tâches
 Microsoft Intune est un logiciel qui permet aux organisations de gérer des appareils (tels que des smartphones, des tablettes et des PC), des applications et d’autres ressources d’entreprise telles que des e-mails. Cela permet aux employés d’accéder à leurs informations de travail à partir de pratiquement n’importe où sur presque n’importe quel appareil tout en contribuant à sécuriser les données d’entreprise.

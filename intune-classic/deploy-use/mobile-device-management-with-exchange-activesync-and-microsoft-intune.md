@@ -1,29 +1,29 @@
 ---
 title: Gestion des appareils mobiles avec Exchange ActiveSync
-description: "Gérer les appareils mobiles avec la gestion de Microsoft Exchange ActiveSync (EAS) à l’aide du connecteur Exchange"
-keywords: 
+description: Gérer les appareils mobiles avec la gestion de Microsoft Exchange ActiveSync (EAS) à l’aide du connecteur Exchange
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 02d6220a4c780eafb7afb01208e18e7df7684b68
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f5e9bd3dd2026096c323858fc7faa915895ed55d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Gestion des appareils mobiles Microsoft Exchange ActiveSync avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Pour que Microsoft Intune gère directement des appareils mobiles, ces appareils doivent être [inscrits dans Intune](prerequisites-for-enrollment.md). Les administrateurs ont également la possibilité d’activer une solution de gestion plus limitée qui utilise la gestion de Microsoft Exchange ActiveSync (EAS) avec un connecteur Exchange. Les appareils peuvent être gérés avec des serveurs Exchange locaux ou avec Exchange Online, à l’aide de Microsoft Office 365. Microsoft Intune prend en charge une seule connexion du connecteur Exchange par abonnement, quel que soit le type de connecteur.
 

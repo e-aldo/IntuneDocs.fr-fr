@@ -1,29 +1,29 @@
 ---
-title: "Protéger les applications et les données"
-description: "Cette rubrique décrit diverses fonctionnalités Intune qui sont disponibles pour vous aider à protéger vos données et applications d’entreprise."
-keywords: 
+title: Protéger les applications et les données
+description: Cette rubrique décrit diverses fonctionnalités Intune qui sont disponibles pour vous aider à protéger vos données et applications d’entreprise.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Protéger les données et les applications avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune protège les données d’entreprise à travers plusieurs couches de technologie. Dans la couche d’identité, un accès conditionnel protège l’accès aux services en autorisant uniquement l’accès à partir d’appareils conformes et gérés. Dans la couche d’application cliente, la gestion des applications mobiles assure une protection contre la perte de données en empêchant le déplacement de données vers des applications ou des emplacements de stockage non protégés et en effaçant les données quand un appareil est perdu ou volé. Nous vous conseillons d’utiliser ces deux couches de protection ensemble afin de sécuriser les données tout en préservant la productivité de votre personnel mobile.
 

@@ -1,25 +1,25 @@
 ---
-title: "Ajouter et affecter des applications MTD à Microsoft Intune"
-titleSuffix: 
-description: "Utiliser Intune pour ajouter des applications MTD (Mobile Threat Defense), l’application Microsoft Authenticator et une stratégie de configuration iOS dans le portail Azure."
-keywords: 
+title: Ajouter et affecter des applications MTD à Microsoft Intune
+titleSuffix: ''
+description: Utiliser Intune pour ajouter des applications MTD (Mobile Threat Defense), l’application Microsoft Authenticator et une stratégie de configuration iOS dans le portail Azure.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Ajouter et affecter des applications Mobile Threat Defense (MTD) avec Intune
 
@@ -75,7 +75,7 @@ Pour obtenir des instructions détaillées pour resigner des applications iOS Lo
 Activez l’authentification Azure Active Directory pour les utilisateurs iOS de la manière suivante :
 
 1. Accédez au [portail Azure](https://portal.azure.com), connectez-vous avec vos informations d’identification, puis accédez à la page d’application.
-  
+
 2. Ajoutez l’**application iOS Lookout for Work**  comme **application cliente native**.
 
 3. Remplacez **com.lookout.enterprise.nom_de_votre_entreprise** par l’ID d’ensemble client que vous avez sélectionné quand vous avez signé le package IPA.
@@ -133,13 +133,13 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 
 -   Vous devez **télécharger** le fichier de stratégie de configuration d’applications iOS : 
     -   Accédez à la [console de gestion Skycure](https://aad.skycure.com) et connectez-vous avec vos informations d’identification d’administrateur.
-    
+
     -   Accédez à **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection**, choisissez **Microsoft Intune**, puis enregistrez votre sélection.
-    
+
     -   Cliquez sur le lien **Integration setup files** et enregistrez le fichier \*.zip généré. Le fichier .zip contient le fichier **skycure\_configuration.plist**, qui sera utilisé pour créer la stratégie de configuration des applications iOS dans Intune.
-    
+
     -   Consultez les instructions [d’utilisation de stratégies de configuration d’application Microsoft Intune pour iOS](app-configuration-policies-use-ios.md) pour ajouter la stratégie de configuration d’application iOS Skycure.
-    
+
     - À l’**étape 8**, utilisez l’option **Entrer des données XML**, copiez le contenu à partir du fichier **skycure_configuration.plist** et collez son contenu dans le corps de la stratégie de configuration.
 
 Vous pouvez également copier le contenu de **skycure_configuration.plist** à partir de cet emplacement :
@@ -151,7 +151,6 @@ Vous pouvez également copier le contenu de **skycure_configuration.plist** à p
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>Pour Check Point SandBlast Mobile
 
@@ -160,7 +159,6 @@ Vous pouvez également copier le contenu de **skycure_configuration.plist** à p
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>Pour Zimperium
@@ -179,7 +177,6 @@ Vous pouvez également copier le contenu de **skycure_configuration.plist** à p
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>Pour affecter des applications (tous les partenaires MTD)

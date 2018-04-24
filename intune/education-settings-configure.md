@@ -3,8 +3,8 @@ title: Configurer les paramètres d’éducation Intune pour Windows 10
 titleSuffix: Microsoft Intune
 description: Découvrez comment utiliser Intune pour configurer des paramètres d’éducation sur les appareils Windows 10 que vous gérez.
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa631cfb799fe02aee935f524a4012f381973d8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 413ad0bab32353fc6f5b401f9a7b910b6c5cb390
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres d’éducation Windows 10 dans Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Les profils d’éducation vous permettent de spécifier les détails qui configurent l’application Windows Take a Test, y compris les détails du compte et l’URL de test. Lorsque vous configurez cette option, l’application Take a Test s’ouvre avec le test que vous spécifiez, et aucune autre application ne peut être exécutée sur l’appareil jusqu'à ce que le test soit terminé.
 
@@ -45,7 +45,7 @@ Pour plus d’informations sur l’application Examen, consultez [Effectuer des 
     - **URL de l’évaluation** - Fournissez l’URL du test que les utilisateurs doivent effectuer. Pour plus d’informations, consultez la documentation Take a Test.
     - **Capture d’écran** - Spécifiez si vous souhaitez pouvoir surveiller l’activité de l’écran pendant que les utilisateurs effectuent un test.
     - **Suggestion de texte** - Autorisez ou bloquez les suggestions de texte pendant que les utilisateurs effectuent un test.
-8. Quand vous avez terminé, revenez au volet **Créer un profil** et appuyez sur **Créer**.
+8. Quand vous avez terminé, revenez au volet **Créer un profil** et tapez sur **Créer**.
 
 Le profil est créé et s’affiche dans le volet de la liste des profils.
 

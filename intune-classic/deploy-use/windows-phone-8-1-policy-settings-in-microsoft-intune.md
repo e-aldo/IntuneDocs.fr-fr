@@ -1,29 +1,29 @@
 ---
-title: "Paramètres de stratégie Windows Phone 8.1"
-description: "Intune fournit un éventail de paramètres généraux intégrés que vous pouvez configurer sur les appareils Windows Phone 8.1. En outre, vous pouvez spécifier des valeurs OMA-URI pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune."
-keywords: 
+title: Paramètres de stratégie Windows Phone 8.1
+description: Intune fournit un éventail de paramètres généraux intégrés que vous pouvez configurer sur les appareils Windows Phone 8.1. En outre, vous pouvez spécifier des valeurs OMA-URI pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie Windows Phone 8.1 dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune fournit un éventail de paramètres généraux intégrés que vous pouvez configurer sur les appareils Windows Phone 8.1. Vous pouvez aussi spécifier des valeurs OMA-URI (Open Mobile Alliance Uniform Resource Identifier) pour créer des paramètres personnalisés qui ne sont pas disponibles à partir d’Intune.
 
@@ -43,18 +43,18 @@ Utilisez la **stratégie de configuration générale Windows Phone (Windows Phon
 
 ### <a name="password-settings"></a>Paramètres de mot de passe
 
-|Nom du paramètre|Détails|
-|----------------|------|
-|**Exiger un mot de passe pour déverrouiller des appareils mobiles**|Spécifie si les utilisateurs doivent saisir un mot de passe pour accéder à leurs appareils.|
-|**Type de mot de passe requis**|Spécifie le type de mot de passe requis, par exemple alphanumérique ou numérique uniquement.|
-|**Type de mot de passe requis - Nombre minimum de jeux de caractères**|Spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Toutefois, pour les appareils iOS, ce paramètre spécifie le nombre de symboles devant être inclus dans le mot de passe.|
-|**Longueur minimale du mot de passe**|Spécifie le nombre minimal de caractères devant figurer dans le mot de passe.|
-|**Autoriser les mots de passe simples**|Indique que les mots de passe simples tels que « 0000 » et « 1234 » peuvent être utilisés.|
-|**Nombre d’échecs de connexion répétée autorisé avant réinitialisation de l’appareil**|Spécifie le nombre de saisies possibles d’un mot de passe incorrect avant que l’appareil soit réinitialisé.|
-|**Minutes d’inactivité avant arrêt de l’écran**|Indique la durée pendant laquelle l’appareil doit rester inactif avant que l’écran se verrouille automatiquement.|
-|**Expiration du mot de passe (jours)**|Spécifie le nombre de jours avant de devoir modifier le mot de passe de l’appareil.|Oui|Oui|
-|**Mémoriser l’historique des mots de passe**|Indique si les mots de passe précédemment utilisés sont mémorisés pour empêcher l'utilisateur de les réutiliser.|
-|**Mémoriser l'historique des mots de passe** - **Empêcher la réutilisation des mots de passe précédents**|Spécifie le nombre de mots de passe précédemment utilisés mémorisés.|
+|                                           Nom du paramètre                                            |                                                                                                                                    Détails                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Exiger un mot de passe pour déverrouiller des appareils mobiles</strong>                    |                                                                                                     Spécifie si les utilisateurs doivent saisir un mot de passe pour accéder à leurs appareils.                                                                                                     |
+|                              <strong>Type de mot de passe requis</strong>                              |                                                                                          Spécifie le type de mot de passe requis, par exemple alphanumérique ou numérique uniquement.                                                                                           |
+|            <strong>Type de mot de passe requis - Nombre minimum de jeux de caractères</strong>             | Spécifie le nombre de jeux de caractères différents devant être inclus dans le mot de passe. Il existe quatre jeux de caractères : lettres minuscules, lettres majuscules, symboles et chiffres. Toutefois, pour les appareils iOS, ce paramètre spécifie le nombre de symboles devant être inclus dans le mot de passe. |
+|                             <strong>Longueur minimale du mot de passe</strong>                              |                                                                                                 Spécifie le nombre minimal de caractères devant figurer dans le mot de passe.                                                                                                  |
+|                              <strong>Autoriser les mots de passe simples</strong>                              |                                                                                                     Indique que les mots de passe simples tels que « 0000 » et « 1234 » peuvent être utilisés.                                                                                                     |
+|     <strong>Nombre d’échecs de connexion répétée autorisé avant réinitialisation de l’appareil</strong>      |                                                                                         Spécifie le nombre de saisies possibles d’un mot de passe incorrect avant que l’appareil soit réinitialisé.                                                                                         |
+|                <strong>Minutes d’inactivité avant arrêt de l’écran</strong>                 |                                                                                       Indique la durée pendant laquelle l’appareil doit rester inactif avant que l’écran se verrouille automatiquement.                                                                                        |
+|                            <strong>Expiration du mot de passe (jours)</strong>                            |                                                                                                    Spécifie le nombre de jours avant de devoir modifier le mot de passe de l’appareil.                                                                                                    |
+|                            <strong>Mémoriser l’historique des mots de passe</strong>                             |                                                                                     Indique si les mots de passe précédemment utilisés sont mémorisés pour empêcher l'utilisateur de les réutiliser.                                                                                      |
+| <strong>Mémoriser l'historique des mots de passe</strong> - <strong>Empêcher la réutilisation des mots de passe précédents</strong> |                                                                                                          Spécifie le nombre de mots de passe précédemment utilisés mémorisés.                                                                                                          |
 
 ### <a name="encryption-settings"></a>Paramètres de chiffrement
 
@@ -119,14 +119,15 @@ Dans la **Liste des applications autorisées et bloquées**, spécifiez une list
 > [!NOTE]
 > Une stratégie ne peut contenir qu’une liste d’applications autorisées ou bloquées. Vous ne pouvez pas spécifier les deux dans la même stratégie.
 
-|Nom du paramètre|Détails|
-|----------------|--------------------|
-|**Bloquer l'ouverture des applications répertoriées sur l'appareil**|Répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter.|
-|**Autoriser les appareils à installer uniquement les applications répertoriées**|Répertorie les applications que les utilisateurs sont autorisés à installer. Les utilisateurs ne peuvent pas installer d'autres applications. Les applications qui sont gérées par Intune sont autorisées automatiquement.|
-|**Ajouter**|Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, l’URL de l’application dans le magasin d’applications et l’éditeur de l’application (facultatif). Pour obtenir de l’aide, consultez Comment spécifier des URL de magasins d’applications plus loin dans cette rubrique.
-|**Importer des applications**|Importe une liste d’applications que vous avez spécifiée dans un fichier de valeurs séparées par des virgules. Utilisez le format, le nom de l’application, l’éditeur et l’URL de l’application dans le fichier.|
-|**Éditer**|Vous permet de modifier le nom, l’éditeur et l’URL de l’application sélectionnée.|
-|**Supprimer**|Supprime l'application sélectionnée dans la liste.|
+|                          Nom du paramètre                          |                                                                                                      Détails                                                                                                      |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Bloquer l'ouverture des applications répertoriées sur l'appareil</strong>   |                                                        Répertorie les applications qui ne sont pas gérées par Intune et que les utilisateurs ne sont pas autorisés à installer et à exécuter.                                                         |
+| <strong>Autoriser les appareils à installer uniquement les applications répertoriées</strong> |                                 Répertorie les applications que les utilisateurs sont autorisés à installer. Les utilisateurs ne peuvent pas installer d'autres applications. Les applications qui sont gérées par Intune sont autorisées automatiquement.                                 |
+|                      <strong>Ajouter</strong>                      | Ajoute une application à la liste sélectionnée. Spécifiez un nom de votre choix, l’URL de l’application dans le magasin d’applications et l’éditeur de l’application (facultatif). Pour obtenir de l’aide, consultez Comment spécifier des URL de magasins d’applications plus loin dans cette rubrique. |
+|                  <strong>Importer des applications</strong>                  |                              Importe une liste d’applications que vous avez spécifiée dans un fichier de valeurs séparées par des virgules. Utilisez le format, le nom de l’application, l’éditeur et l’URL de l’application dans le fichier.                               |
+|                     <strong>Éditer</strong>                      |                                                                          Vous permet de modifier le nom, l’éditeur et l’URL de l’application sélectionnée.                                                                          |
+|                    <strong>Supprimer</strong>                     |                                                                                      Supprime l'application sélectionnée dans la liste.                                                                                      |
+
 > [!IMPORTANT]
 > Si vous spécifiez une liste d’applications autorisées pour les appareils Windows Phone 8.1, vous devez ajouter l’application Portail d’entreprise à cette liste, ou elle sera bloquée.
 
@@ -140,7 +141,7 @@ Dans la page [Applications+Jeux Windows Phone](http://www.windowsphone.com/store
 
 Ouvrez la page de l'application, puis copiez l'URL dans le Presse-papiers. Vous pouvez maintenant utiliser cette URL dans la liste des applications autorisées ou bloquées.
 
-**Exemple :** recherchez l'application Skype dans le Store. L’URL que vous utilisez est **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+**Exemple :** recherchez l'application Skype dans le Store. L’URL que vous utilisez sera **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 ## <a name="custom-policy-settings"></a>Paramètres de la stratégie personnalisée
 Utilisez la **stratégie de configuration personnalisée Windows Phone** de Microsoft Intune pour déployer les paramètres OMA-URI qui peuvent être utilisés pour contrôler les fonctionnalités sur les **Appareils Windows Phone 8.1**. Il s'agit de paramètres standard qui sont utilisés par de nombreux fabricants d'appareils mobiles pour contrôler les fonctionnalités des appareils.

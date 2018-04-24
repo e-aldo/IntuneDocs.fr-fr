@@ -1,27 +1,27 @@
 ---
-title: "Inscrire un appareil Windows 10 dans Intune | Microsoft Docs"
-description: "Cette rubrique explique comment inscrire un appareil Windows 10 Mobile ou Desktop dans Intune"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Inscrire un appareil Windows 10 dans Intune | Microsoft Docs
+description: Cette rubrique explique comment inscrire un appareil Windows 10 Mobile ou Desktop dans Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3debd0177df0aa0bdf5cb3cea8bf18054407b87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Inscrire vos appareils Windows 10 dans Intune
 
@@ -35,13 +35,13 @@ Vous voulez en savoir plus ? Découvrez ce qui se passe quand vous [inscrivez v
 
 2. Tapez les mots « à propos de votre PC » dans la __barre de recherche__, puis sélectionnez __À propos de votre PC__.
 
- ![paramètres de recherche « à propos de votre PC »](media/searching_for_about_your_pc.png)
+   ![paramètres de recherche « à propos de votre PC »](media/searching_for_about_your_pc.png)
 
-3.  Dans vos __Paramètres__, la liste des informations sur la version de Windows 10 qui est installée sur votre PC s’affiche. Dans cette liste, repérez la __Version__.
+3. Dans vos __Paramètres__, la liste des informations sur la version de Windows 10 qui est installée sur votre PC s’affiche. Dans cette liste, repérez la __Version__.
 
- ![À propos de votre PC dans Windows 10 Desktop](media/settings_about_pc.png)
+   ![À propos de votre PC dans Windows 10 Desktop](media/settings_about_pc.png)
 
-4.  Si votre version est __1607 ou supérieure__, suivez [ces étapes](enroll-your-w10-device-access-work-or-school.md). Si votre version est __1511 ou inférieure__, poursuivez avec [ces étapes](enroll-your-w10-device-your-account.md).
+4. Si votre version est __1607 ou supérieure__, suivez [ces étapes](enroll-your-w10-device-access-work-or-school.md). Si votre version est __1511 ou inférieure__, poursuivez avec [ces étapes](enroll-your-w10-device-your-account.md).
 
 ## <a name="windows-10-mobile-devices"></a>Appareils Windows 10 Mobile        
 

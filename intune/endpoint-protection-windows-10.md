@@ -1,29 +1,28 @@
 ---
-title: "Paramètres Endpoint Protection Microsoft Intune pour Windows 10"
-titlesuffix: 
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour contrôler les paramètres Endpoint Protection tels que BitLocker sur les appareils Windows 10."
-keywords: 
+title: Ajouter Endpoint Protection sur Windows 10 dans Microsoft Intune - Azure | Microsoft Docs
+description: Sur les appareils Windows 10, utilisez ou configurez les paramètres Endpoint Protection pour activer les fonctionnalités de Windows Defender, notamment Application Guard, Pare-feu, SmartScreen, le chiffrement et BitLocker, Exploit Guard, Contrôle d’application, Centre de sécurité, ainsi que la sécurité sur les appareils locaux dans Microsoft Intune.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afe1e737bb5214af76395db91b8aea72cb5d42a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Créer des paramètres Endpoint Protection pour Windows 10 et ultérieur dans Microsoft Intune
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Paramètres Endpoint Protection pour Windows 10 (et versions ultérieures) dans Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Le profil Endpoint Protection vous permet de contrôler les fonctionnalités de sécurité sur les appareils Windows 10, telles que BitLocker et Windows Defender.
 
@@ -31,21 +30,6 @@ Utilisez les informations de cet article pour découvrir comment créer des prof
 
 > [!Note]
 > Ces paramètres ne sont pas pris en charge dans les éditions Famille et Professionnel de Windows 10.
-
-## <a name="create-an-endpoint-protection-profile"></a>Créer un profil Endpoint Protection
-
-1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans le panneau **Intune**, choisissez **Configuration de l’appareil**.
-2. Dans le panneau **Configuration de l’appareil**, sous la section **Gérer**, choisissez **Profils**.
-3. Dans le panneau des profils, sélectionnez **Créer un profil**.
-4. Dans le panneau **Créer un profil**, entrez un **nom** et une **description** pour le profil de fonctionnalités de l’appareil.
-5. Dans la liste déroulante **Plateforme**, sélectionnez **Windows 10 et versions ultérieures**.
-6. Dans la liste déroulante **Type de profil**, choisissez **Endpoint Protection**.
-7. Configurez les paramètres souhaités. Utilisez les détails de cet article pour vous aider à comprendre le rôle de chaque paramètre. Quand vous avez terminé, cliquez sur **OK**.
-8. Revenez au panneau **Créer un profil** et choisissez **Créer**.
-
-Le profil est créé et s’affiche dans le panneau de la liste des profils.
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
 
@@ -56,9 +40,9 @@ Application Guard est uniquement disponible pour les appareils Windows 10 (64 bi
 - **Contenu externe sur les sites de l’entreprise** : bloquez le chargement du contenu des sites web non approuvés.
 - **Imprimer à partir du navigateur virtuel** : autorisez l’impression en PDF et en XPS ainsi que les imprimantes locales et/ou réseau à imprimer du contenu à partir du navigateur virtuel.
 - **Collecter les journaux** : collectez les journaux des événements qui se produisent dans une session de navigation Application Guard.
-- **Conserver les données du navigateur générées par l’utilisateur** : autorisez l’enregistrement des données utilisateur (par exemple les mots de passe, les favoris et les cookies) qui sont créées au cours d’une session de navigation virtuelle Application Guard.
-- **Accélération graphique** : accélérez le chargement des graphiques des sites web quand vous travaillez dans la session de navigation virtuelle Application Guard en activant l’accès à une unité de traitement graphique virtuelle.
-
+- **Conserver les données du navigateur générées par l’utilisateur** : enregistrez les données utilisateur (par exemple les mots de passe, les favoris et les cookies) qui sont créées au cours d’une session de navigation virtuelle Application Guard.
+- **Accélération graphique** : accélérez le chargement des graphiques des sites web quand vous travaillez dans la session de navigation virtuelle Application Guard. Les sites web se chargent plus vite si vous activez l’accès à une unité de traitement graphique virtuelle.
+- **Télécharger les fichiers sur le système de fichiers hôte** : autorisez les utilisateurs à télécharger des fichiers à partir du navigateur virtualisé sur le système d’exploitation hôte.
 
 ## <a name="windows-defender-firewall"></a>Pare-feu Windows Defender
 
@@ -72,7 +56,7 @@ Ces paramètres s’appliquent à tous les types de réseaux.
 - **Exemptions IPsec** : configurez un trafic spécifique pour qu’il soit exempté d’IPsec, notamment **Codes type ICMP IPv6 de découverte de voisin**, **ICMP**, **Codes type ICMP IPv6 de découverte de routeur** et **Trafic DHCP IPv4 et IPv6**.
 - **Vérification de la liste de révocation de certificats** : définissez une valeur pour le mode d’application de la vérification de la liste de révocation de certificats, notamment **Désactiver la vérification de la liste de révocation de certificats**, **Échec de vérification de la liste de révocation de certificats sur le certificat révoqué uniquement** et **Échec de vérification de la liste de révocation de certificats pour toute erreur rencontrée**.
 - **Associer le jeu d’authentification de façon opportuniste par module de génération de clés** : définissez des modules de génération de clés pour ignorer l’intégralité du jeu d’authentification si les suites d’authentification ne sont pas toutes prises en charge dans ce jeu.
-- **Mise en file d’attente des paquets** : spécifiez comment la mise à l’échelle des logiciels côté réception est activée pour la réception chiffrée et efface le texte pour le scénario de passerelle du tunnel IPsec. Cela garantit la préservation de l’ordre des paquets.
+- **Mise en file d’attente des paquets** : spécifiez comment la mise à l’échelle des logiciels côté réception est activée pour la réception chiffrée et efface le texte pour le scénario de passerelle du tunnel IPsec. Ce paramètre garantit la préservation de l’ordre des paquets.
 
 ### <a name="network-settings"></a>Paramètres du réseau
 
@@ -81,7 +65,7 @@ Ces paramètres s’appliquent à des types de réseaux spécifiques, notamment 
 #### <a name="general-settings"></a>Paramètres généraux :
 
 - **Pare-feu Windows Defender** : activez ce paramètre pour bloquer le trafic réseau.
-- **Mode furtif** : empêchez le Pare-feu de fonctionner en mode furtif. Ce blocage vous permet de bloquer également **Exemption de paquets sécurisés IPsec**.
+- **Mode furtif** : empêchez le Pare-feu de fonctionner en mode furtif. Le blocage du mode furtif vous permet de bloquer également **Exemption de paquets sécurisés IPsec**.
 - **Protégé** : l’activation de ce paramètre et du paramètre de pare-feu bloque tout le trafic entrant.
 - **Réponses en monodiffusion au trafic en multidiffusion** : bloquez les réponses en monodiffusion au trafic en multidiffusion. En règle générale, vous ne souhaitez pas recevoir des réponses en monodiffusion à des messages de multidiffusion ou de diffusion, car ces réponses peuvent indiquer une attaque par déni de service ou un attaquant qui tente de sonder un ordinateur actif connu.
 - **Notifications entrantes** : empêchez l’affichage des notifications pour les utilisateurs lors du blocage d’une application pour écouter sur un port.
@@ -115,53 +99,52 @@ Les paramètres de base correspondent aux paramètres BitLocker universels pour 
 
 - **Avertissement pour tout autre chiffrement de disque** : désactivez l’invite d’avertissement pour tout autre chiffrement de disque sur les ordinateurs des utilisateurs finaux.
 - **Configurer les méthodes de chiffrement** : activez ce paramètre pour configurer des algorithmes de chiffrement pour le système d’exploitation, les données et les lecteurs amovibles.
-    - **Chiffrement pour les lecteurs du système d’exploitation** : choisissez la méthode de chiffrement pour les lecteurs de système d’exploitation. Nous vous recommandons d’utiliser l’algorithme AES-XTS.
-    - **Chiffrement pour les lecteurs de données fixes** : choisissez la méthode de chiffrement pour les lecteurs de données fixes (intégrés). Nous vous recommandons d’utiliser l’algorithme AES-XTS.
-    - **Chiffrement pour les lecteurs de données amovibles** : choisissez la méthode de chiffrement pour les lecteurs de données amovibles. Si le lecteur amovible est utilisé avec des appareils qui n’exécutent pas Windows 10, nous vous recommandons d’utiliser l’algorithme AES-CBC.
+  - **Chiffrement pour les lecteurs du système d’exploitation** : choisissez la méthode de chiffrement pour les lecteurs de système d’exploitation. Nous vous recommandons d’utiliser l’algorithme AES-XTS.
+  - **Chiffrement pour les lecteurs de données fixes** : choisissez la méthode de chiffrement pour les lecteurs de données fixes (intégrés). Nous vous recommandons d’utiliser l’algorithme AES-XTS.
+  - **Chiffrement pour les lecteurs de données amovibles** : choisissez la méthode de chiffrement pour les lecteurs de données amovibles. Si le lecteur amovible est utilisé avec des appareils qui n’exécutent pas Windows 10, nous vous recommandons d’utiliser l’algorithme AES-CBC.
 
 ### <a name="bitlocker-os-drive-settings"></a>Paramètres de lecteur du système d’exploitation BitLocker
 
 Ces paramètres s’appliquent spécifiquement aux lecteurs de données de système d’exploitation.
 
 - **Authentification supplémentaire au démarrage** : indiquez les conditions d’authentification pour le démarrage de l’ordinateur, notamment l’utilisation du Module de plateforme sécurisée (TPM).
-    - **BitLocker avec puce TPM non compatible**
-    - **Démarrage du module TPM compatible** : configurez si la puce TPM est autorisée, non autorisée ou obligatoire.
-    - **Code PIN de démarrage du module TPM compatible** : configurez si l’utilisation d’un code PIN de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
-    - **Clé de démarrage du module TPM compatible** : configurez si l’utilisation d’une clé de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
-    - **Code PIN et clé de démarrage du module TPM compatible** : configurez si l’utilisation d’une clé de démarrage et d’un code PIN avec la puce TPM est autorisée, non autorisée ou obligatoire.
+  - **BitLocker avec puce TPM non compatible**
+  - **Démarrage du module TPM compatible** : configurez si la puce TPM est autorisée, non autorisée ou obligatoire.
+  - **Code PIN de démarrage du module TPM compatible** : configurez si l’utilisation d’un code PIN de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
+  - **Clé de démarrage du module TPM compatible** : configurez si l’utilisation d’une clé de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
+  - **Code PIN et clé de démarrage du module TPM compatible** : configurez si l’utilisation d’une clé de démarrage et d’un code PIN avec la puce TPM est autorisée, non autorisée ou obligatoire.
 - **Longueur minimale du code PIN** : activez ce paramètre pour configurer une longueur minimale pour le code PIN de démarrage de TPM.
-    - **Nombre minimal de caractères** : entrez le nombre de caractères obligatoires pour le code PIN de démarrage (**4**-**20**).
+  - **Nombre minimal de caractères** : entrez le nombre de caractères obligatoires pour le code PIN de démarrage (**4**-**20**).
 - **Récupération du lecteur du système d’exploitation** : activez ce paramètre pour contrôler comment les lecteurs du système d’exploitation protégés par BitLocker sont récupérés quand les informations de démarrage nécessaires ne sont pas disponibles.
-    - **Agent de récupération de données basé sur les certificats** : activez ce paramètre si vous souhaitez que les agents de récupération de données puissent être utilisés avec les lecteurs du système d’exploitation protégés par BitLocker.
-    - **Création d’un mot de passe de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer un mot de passe de récupération de 48 chiffres.
-    - **Création d’une clé de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer une clé de récupération de 256 bits.
-    - **Options de récupération dans l’Assistant Installation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs de voir ou de changer les options de récupération quand ils activent BitLocker.
-    - **Enregistrer les informations de récupération BitLocker dans AD DS** : active le stockage des informations de récupération BitLocker dans Active Directory.
-    - **Informations de récupération BitLocker stockées dans AD DS** : configurez les parties des informations de récupération BitLocker qui sont stockées dans Active Directory. Choisissez parmi :
-        - **Sauvegarder les mots de passe et les jeux de clés de récupération**
-        - **Sauvegarder les mots de passe de récupération uniquement**
-    - **Stocker les informations de récupération dans AD DS avant l’activation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs d’activer BitLocker, sauf si l’appareil est joint au domaine et que les informations de récupération BitLocker sont correctement stockées dans Active Directory.
+  - **Agent de récupération de données basé sur les certificats** : activez ce paramètre si vous souhaitez que les agents de récupération de données puissent être utilisés avec les lecteurs du système d’exploitation protégés par BitLocker.
+  - **Création d’un mot de passe de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer un mot de passe de récupération de 48 chiffres.
+  - **Création d’une clé de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer une clé de récupération de 256 bits.
+  - **Options de récupération dans l’Assistant Installation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs de voir ou de changer les options de récupération quand ils activent BitLocker.
+  - **Enregistrer les informations de récupération BitLocker dans AD DS** : active le stockage des informations de récupération BitLocker dans Active Directory.
+  - **Informations de récupération BitLocker stockées dans AD DS** : configurez les parties des informations de récupération BitLocker qui sont stockées dans Active Directory. Choisissez parmi :
+    - **Sauvegarder les mots de passe et les jeux de clés de récupération**
+    - **Sauvegarder les mots de passe de récupération uniquement**
+  - **Stocker les informations de récupération dans AD DS avant l’activation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs d’activer BitLocker, sauf si l’appareil est joint au domaine et que les informations de récupération BitLocker sont correctement stockées dans Active Directory.
 - **Message et URL de récupération préalables au démarrage** : activez ce paramètre pour configurer le message et l’URL qui s’affichent sur l’écran de récupération de clé préalable au démarrage.
-    - **Message de récupération préalable au démarrage** : configurez la façon dont le message de récupération préalable au démarrage est présenté aux utilisateurs. Choisissez parmi :
-        - **Utiliser le message et l’URL de récupération par défaut**
-        - **Utiliser un message et une URL de récupération vides**
-        - **Utiliser le message de récupération personnalisé**
-        - **Utiliser l’URL de récupération personnalisée**
-
+  - **Message de récupération préalable au démarrage** : configurez la façon dont le message de récupération préalable au démarrage est présenté aux utilisateurs. Choisissez parmi :
+    - **Utiliser le message et l’URL de récupération par défaut**
+    - **Utiliser un message et une URL de récupération vides**
+    - **Utiliser le message de récupération personnalisé**
+    - **Utiliser l’URL de récupération personnalisée**
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>Paramètres BitLocker des lecteurs de données fixes
 
 - **Accès en écriture à un lecteur de données fixe non protégé par BitLocker** : si ce paramètre est activé, la protection BitLocker doit être activée sur tous les lecteurs de données fixes, ou intégrés, pour qu’ils soient accessibles en écriture.
 - **Récupération d’un lecteur fixe** : activez ce paramètre pour contrôler comment les lecteurs fixes protégés par BitLocker sont récupérés quand les informations de démarrage nécessaires ne sont pas disponibles.
-    - **Agent de récupération de données** : activez ce paramètre si vous souhaitez que les agents de récupération de données soient utilisés avec les lecteurs fixes protégés par BitLocker.
-    - **Création d’un mot de passe de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer un mot de passe de récupération de 48 chiffres.  
-    - **Création d’une clé de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer une clé de récupération de 256 bits.
-    - **Options de récupération dans l’Assistant Installation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs de voir ou de changer les options de récupération quand ils activent BitLocker.
-    - **Enregistrer les informations de récupération BitLocker dans AD DS** : active le stockage des informations de récupération BitLocker dans Active Directory.
-    - **Informations de récupération BitLocker dans AD DS** : configurez les parties des informations de récupération BitLocker qui sont stockées dans Active Directory. Choisissez parmi :
-        - **Sauvegarder les mots de passe et les jeux de clés de récupération**
-        - **Sauvegarder les mots de passe de récupération uniquement**
-    - **Stocker les informations de récupération dans AD DS avant l’activation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs d’activer BitLocker, sauf si l’appareil est joint au domaine et que les informations de récupération BitLocker ont été correctement stockées dans Active Directory.
+  - **Agent de récupération de données** : activez ce paramètre si vous souhaitez que les agents de récupération de données soient utilisés avec les lecteurs fixes protégés par BitLocker.
+  - **Création d’un mot de passe de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer un mot de passe de récupération de 48 chiffres.  
+  - **Création d’une clé de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer une clé de récupération de 256 bits.
+  - **Options de récupération dans l’Assistant Installation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs de voir ou de changer les options de récupération quand ils activent BitLocker.
+  - **Enregistrer les informations de récupération BitLocker dans AD DS** : active le stockage des informations de récupération BitLocker dans Active Directory.
+  - **Informations de récupération BitLocker dans AD DS** : configurez les parties des informations de récupération BitLocker qui sont stockées dans Active Directory. Choisissez parmi :
+    - **Sauvegarder les mots de passe et les jeux de clés de récupération**
+    - **Sauvegarder les mots de passe de récupération uniquement**
+  - **Stocker les informations de récupération dans AD DS avant l’activation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs d’activer BitLocker, sauf si l’appareil est joint au domaine et que les informations de récupération BitLocker ont été correctement stockées dans Active Directory.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Paramètres BitLocker des lecteurs de données amovibles
 
@@ -173,6 +156,8 @@ Ces paramètres s’appliquent spécifiquement aux lecteurs de données de syst�
 Utilisez [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) pour gérer et réduire la surface d’attaque des applications utilisées par vos employés.
 
 ### <a name="attack-surface-reduction"></a>Règles de réduction de la surface d’attaque
+
+- **Marquer le vol des informations d’identification du sous-système de l’autorité de sécurité locale Windows**
 
 Cette fonctionnalité contribue à [empêcher les actions et les applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) généralement utilisées par les programmes malveillants pour infecter les ordinateurs.
 
@@ -187,16 +172,25 @@ Empêchez les applications Office d’effectuer les actions suivantes :
 
 #### <a name="rules-to-prevent-script-threats"></a>Règles pour empêcher les menaces sur les scripts
 
-Bloquez ces éléments pour empêcher les menaces sur les scripts :
+Bloquez les éléments suivants pour empêcher les menaces sur les scripts :
 
 - **Code js/vbs/ps/macro brouillé**
 - **js/vbs, exécution de la charge utile téléchargée à partir d’Internet (aucune exception)**
+- **Création de processus à partir des commandes PSExec et WMI**
+- **Processus non approuvés et non signés exécutés à partir d’USB**
+- **Fichiers exécutables qui ne répondent pas à des critères de prédominance, d’âge ou de liste approuvée**
 
 #### <a name="rules-to-prevent-email-threats"></a>Règles pour empêcher les menaces sur les e-mails
 
 Bloquez ce qui suit pour empêcher les menaces sur les e-mails :
 
 - **Exécution du contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de la messagerie (messagerie web/client de messagerie) (aucune exception)**
+
+#### <a name="rules-to-protect-against-ransomware"></a>Règles de protection contre les ransomware
+- **Protection avancée contre les ransomware**
+
+> [!TIP]
+> Pour plus d’informations sur ces règles, consultez [Reduce attack surfaces with Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) (Réduire les surfaces d’attaque avec Windows Defender Exploit Guard).
 
 #### <a name="attack-surface-reduction-exceptions"></a>Exceptions de la réduction de surface d’attaque
 
@@ -255,4 +249,4 @@ Indiquez les informations de contact du service informatique à afficher dans l�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Si vous souhaitez continuer et attribuer ce profil à des groupes, consultez [Guide pratique pour l’attribution de profils d’appareils](device-profile-assign.md).
+Pour attribuer ce profil à des groupes, consultez [Guide pratique pour attribuer des profils d’appareil](device-profile-assign.md).

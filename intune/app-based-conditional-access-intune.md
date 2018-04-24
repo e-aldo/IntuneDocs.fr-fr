@@ -1,28 +1,28 @@
 ---
-title: "Accès conditionnel basé sur l’application avec Intune"
-description: "Découvrez le fonctionnement de l’accès conditionnel basé sur l’application avec Intune."
-keywords: 
+title: Accès conditionnel basé sur l’application avec Intune
+description: Découvrez le fonctionnement de l’accès conditionnel basé sur l’application avec Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 35d7be91201f8cf4fc3016363770b65bcea9ed72
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accès conditionnel basé sur l’application avec Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Les [stratégies de protection des applications Intune](app-protection-policy.md) vous aident à protéger vos données d’entreprise sur les appareils qui sont inscrits dans Intune. Vous pouvez également utiliser des stratégies de protection des applications sur les appareils détenus par l’employé qui ne sont pas inscrits pour la gestion dans Intune. Dans ce cas, même si votre entreprise ne gère pas l’appareil, vous devez toujours vous assurer que les données et ressources de votre entreprise sont protégées.
 
@@ -56,29 +56,29 @@ Dans cet exemple, l’administrateur a appliqué des stratégies de protection d
 
 ![Processus d’accès conditionnel basé sur l’application illustré dans un organigramme](./media/ca-intune-common-ways-3.png)
 
-1.  L’utilisateur tente de s’authentifier sur Azure AD à partir de l’application Outlook.
+1. L’utilisateur tente de s’authentifier sur Azure AD à partir de l’application Outlook.
 
-2.  L’utilisateur est redirigé vers l’App Store pour installer une application broker lors de sa première tentative d’authentification. L’application broker peut être Microsoft Authenticator pour iOS, ou le portail d’entreprise Microsoft pour les appareils Android.
+2. L’utilisateur est redirigé vers l’App Store pour installer une application broker lors de sa première tentative d’authentification. L’application broker peut être Microsoft Authenticator pour iOS, ou le portail d’entreprise Microsoft pour les appareils Android.
 
- Si des utilisateurs tentent d’utiliser une application de messagerie native, ils sont redirigés vers l’App Store pour installer l’application Outlook.
+   Si des utilisateurs tentent d’utiliser une application de messagerie native, ils sont redirigés vers l’App Store pour installer l’application Outlook.
 
-3.  L’application broker est installée sur l’appareil.
+3. L’application broker est installée sur l’appareil.
 
-4.  L’application broker démarre le processus d’inscription d’Azure AD, qui crée un enregistrement d’appareil dans Azure AD. Cela diffère du processus d’inscription de gestion des appareils mobiles, mais cet enregistrement est nécessaire pour que les stratégies d’accès conditionnel puissent être appliquées sur l’appareil.
+4. L’application broker démarre le processus d’inscription d’Azure AD, qui crée un enregistrement d’appareil dans Azure AD. Cela diffère du processus d’inscription de gestion des appareils mobiles, mais cet enregistrement est nécessaire pour que les stratégies d’accès conditionnel puissent être appliquées sur l’appareil.
 
-5.  L’application broker vérifie l’identité de l’application. Il existe une couche de sécurité pour que l’application broker puisse valider que l’application est autorisée à être utilisée par l’utilisateur.
+5. L’application broker vérifie l’identité de l’application. Il existe une couche de sécurité pour que l’application broker puisse valider que l’application est autorisée à être utilisée par l’utilisateur.
 
-6.  L’application broker envoie l’ID de client d’application à Azure AD dans le cadre du processus d’authentification utilisateur pour vérifier sa présence dans liste approuvée par stratégie.
+6. L’application broker envoie l’ID de client d’application à Azure AD dans le cadre du processus d’authentification utilisateur pour vérifier sa présence dans liste approuvée par stratégie.
 
-7.  Azure AD permet à l’utilisateur de s’authentifier et d’utiliser l’application en fonction de la liste approuvée par stratégie. Si l’application n’est pas dans la liste, AD Azure refuse l’accès à l’application.
+7. Azure AD permet à l’utilisateur de s’authentifier et d’utiliser l’application en fonction de la liste approuvée par stratégie. Si l’application n’est pas dans la liste, AD Azure refuse l’accès à l’application.
 
-8.  L’application Outlook communique avec le service cloud d’Outlook pour établir la communication avec Exchange Online.
+8. L’application Outlook communique avec le service cloud d’Outlook pour établir la communication avec Exchange Online.
 
-9.  Le service cloud d’Outlook communique avec Azure AD pour récupérer le jeton d’accès du service Exchange Online pour l’utilisateur.
+9. Le service cloud d’Outlook communique avec Azure AD pour récupérer le jeton d’accès du service Exchange Online pour l’utilisateur.
 
-10.  L’application Outlook communique avec Exchange Online pour récupérer les e-mails professionnels de l’utilisateur.
+10. L’application Outlook communique avec Exchange Online pour récupérer les e-mails professionnels de l’utilisateur.
 
-11.  Les e-mails professionnels sont remis dans la boîte de réception de l’utilisateur.
+11. Les e-mails professionnels sont remis dans la boîte de réception de l’utilisateur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer une stratégie d’accès conditionnel basée sur l’application](app-based-conditional-access-intune-create.md)

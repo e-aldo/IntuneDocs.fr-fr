@@ -1,27 +1,27 @@
 ---
-title: "Réinitialiser votre appareil à partir du site web du portail d’entreprise | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Réinitialiser votre appareil à partir du site web du portail d’entreprise | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 181c3df521e9cf213367becf00e4a53469ad69a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Réinitialiser votre appareil à partir du site web du portail d’entreprise
 
@@ -34,17 +34,17 @@ Si vous réinitialisez votre appareil, il ne sera plus répertorié dans le port
 
 Pour réinitialiser votre appareil :
 
-1.  Sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog), appuyez sur le bouton __menu__, puis sélectionnez __Mes appareils__.
+1. Sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog), appuyez sur le bouton __menu__, puis sélectionnez __Mes appareils__.
 
 2. Dans la page __Mes appareils__, sélectionnez le nom de l’appareil à renommer.
 
-  ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
+   ![Capture d’écran de la page Mes appareils, avec quelques appareils non identifiés au-dessus de la bannière invitant à inscrire les appareils non listés ou à identifier ceux qui ne le sont pas.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  L’appareil s’ouvre dans une fenêtre contextuelle. Appuyez sur le bouton **Réinitialiser**.
+3. L’appareil s’ouvre dans une fenêtre contextuelle. Appuyez sur le bouton **Réinitialiser**.
 
-    ![Toutes les options disponibles pour un appareil sélectionné sur le site web Portail d’entreprise, notamment Renommer, Supprimer, Réinitialiser l’appareil, Réinitialiser le code secret et Verrouillage à distance. ](./media/iwp-screen-with-all-options.png)
+   ![Toutes les options disponibles pour un appareil sélectionné sur le site web Portail d’entreprise, notamment Renommer, Supprimer, Réinitialiser l’appareil, Réinitialiser le code secret et Verrouillage à distance. ](./media/iwp-screen-with-all-options.png)
 
-4.  Un message d’avertissement s’affiche pour vous informer que vous êtes sur le point d’effacer tout le contenu de votre appareil en rétablissant ses paramètres par défaut. Appuyez sur **Réinitialiser** pour confirmer que c’est ce que vous voulez faire.
+4. Un message d’avertissement s’affiche pour vous informer que vous êtes sur le point d’effacer tout le contenu de votre appareil en rétablissant ses paramètres par défaut. Appuyez sur **Réinitialiser** pour confirmer que c’est ce que vous voulez faire.
 
 Votre appareil a été réinitialisé.
 

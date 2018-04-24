@@ -1,29 +1,29 @@
 ---
-title: "Créer et déployer une stratégie de protection des applications Protection des informations Windows (WIP)"
+title: Créer et déployer une stratégie de protection des applications Protection des informations Windows (WIP)
 titlesuffix: Microsoft Intune
-description: "Créer et déployer une stratégie de protection des applications Protection des informations Windows (WIP) avec Microsoft Intune"
-keywords: 
+description: Créer et déployer une stratégie de protection des applications Protection des informations Windows (WIP) avec Microsoft Intune
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: doubeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4325d77982bcca748a38696fbbbb413a1c304ffb
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 821ce2c9992d32195b95e766f96bea7322ec2e7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Vous pouvez utiliser des stratégies de protection des applications avec les applications Windows 10 pour protéger les applications sans inscrire les appareils.
 
@@ -39,7 +39,7 @@ Vous devez comprendre certains concepts lors de l’ajout d’une stratégie WIP
 
 ### <a name="types-of-apps"></a>Types d’applications
 
--   **Applications recommandées :** une liste préremplie d’applications (principalement Microsoft Office) que vous pouvez facilement importer dans la stratégie.
+-   **Applications recommandées :**  une liste préremplie d’applications (principalement Microsoft Office) que vous pouvez facilement importer dans la stratégie.
 -   **Applications du Store** : vous pouvez ajouter n’importe quelle application du Windows Store à la stratégie.
 -   **Applications de bureau Windows** : vous pouvez ajouter n’importe quelle application de bureau Windows traditionnelle à la stratégie (.exe, .dll, etc.).
 
@@ -80,7 +80,7 @@ Une fois Intune configuré dans votre organisation, vous pouvez créer une strat
 5. Sélectionnez **Ajouter des applications**. Les informations **Ajouter des applications** affichent une liste filtrée des applications. La liste en haut du panneau vous permet de modifier le filtre de la liste.
 6. Sélectionnez chaque application pouvant accéder à vos données d’entreprise.
 7. Cliquez sur **OK**. Le panneau **Applications protégées** est mis à jour et affiche toutes les applications sélectionnées.
-8. Cliquez sur **Save**.
+8. Cliquez sur **Enregistrer**.
 
 ## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Ajouter une application du Store à votre liste d’applications autorisées
 
@@ -93,7 +93,7 @@ Une fois Intune configuré dans votre organisation, vous pouvez créer une strat
 6. Dans la liste, sélectionnez **Applications Store**.
 7. Entrez les valeurs **Nom**, **Éditeur**, **Nom du produit** et **Action**. Veillez à définir la valeur **Action** sur **Autoriser**, de sorte que l’application ait accès à vos données d’entreprise.
 9. Cliquez sur **OK**. Le panneau **Applications protégées** est mis à jour et affiche toutes les applications sélectionnées.
-10. Cliquez sur **Save**.
+10. Cliquez sur **Enregistrer**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Ajouter une application de bureau à votre liste d’applications autorisées
 
@@ -106,7 +106,7 @@ Une fois Intune configuré dans votre organisation, vous pouvez créer une strat
 6. Dans la liste, sélectionnez **Applications de bureau**.
 7. Entrez les valeurs **Nom**, **Éditeur**, **Nom du produit**, **Fichier**, **Version mini**, **Version maxi** et **Action**. Veillez à définir la valeur **Action** sur **Autoriser**, de sorte que l’application ait accès à vos données d’entreprise.
 9. Cliquez sur **OK**. Le panneau **Applications protégées** est mis à jour et affiche toutes les applications sélectionnées.
-10. Cliquez sur **Save**.
+10. Cliquez sur **Enregistrer**.
 
 ## <a name="wip-learning"></a>WIP Learning
 Après avoir ajouté les applications que vous souhaitez protéger avec WIP, vous devez appliquer un mode de protection à l’aide de **WIP Learning**.

@@ -14,15 +14,15 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a9a6b9d5790708532d0c1bda03b5d2f6fd8e186
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e9cf1b9c7d950707c268fd509c184be7709f53e3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Utilisations courantes de Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Avant de vous plonger dans des tâches d’implémentation, il est important d’aligner les parties prenantes de la mobilité d’entreprise avec vos objectifs professionnels.  Ceci est important que vous débutiez dans la mobilité d’entreprise ou que vous effectuiez une migration à partir d’un autre produit.  
 

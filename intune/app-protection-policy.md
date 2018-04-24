@@ -1,30 +1,30 @@
 ---
-title: "Que sont les stratégies de protection des applications ?"
+title: Que sont les stratégies de protection des applications ?
 titleSuffix: Microsoft Intune
-description: "Découvrez comment les stratégies de protection d’application Microsoft Intune vous aident à protéger vos données d’entreprise et éviter les pertes de données."
-keywords: 
+description: Découvrez comment les stratégies de protection d’application Microsoft Intune vous aident à protéger vos données d’entreprise et éviter les pertes de données.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 691c7317cda07be292cc2d778b853727124dba8a
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4483baa68267b7a7218a4e78fe5275d1ea8d330
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Que sont les stratégies de protection des applications ?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Les stratégies de protection d’application Microsoft Intune vous aident à protéger vos données d’entreprise et éviter les pertes de données.
 
@@ -37,12 +37,12 @@ Vous pouvez configurer des stratégies de protection d’application pour les ap
 
 - **inscrits dans Microsoft Intune :** les appareils de cette catégorie sont généralement ceux possédés par une entreprise ;
 
--   **inscrits dans une solution de gestion d’appareils mobiles tierce :** les appareils de cette catégorie sont généralement des appareils possédés par une entreprise.
+- **inscrits dans une solution de gestion d’appareils mobiles tierce :** les appareils de cette catégorie sont généralement des appareils possédés par une entreprise.
 
   > [!NOTE]
   > Les stratégies de gestion des applications mobiles ne doivent pas être utilisées avec des solutions de gestion des applications mobiles tierces ni des solutions de conteneur sécurisé.
 
--   **non inscrits dans une solution de gestion d’appareils mobiles :** les appareils de cette catégorie sont généralement la propriété d’employés et ne sont pas gérés ou inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
+- **non inscrits dans une solution de gestion d’appareils mobiles :** les appareils de cette catégorie sont généralement la propriété d’employés et ne sont pas gérés ou inscrits dans Intune ou d’autres solutions de gestion des appareils mobiles.
 
 > [!IMPORTANT]
 > Vous pouvez créer des stratégies de gestion des applications mobiles pour les applications mobiles Office qui se connectent aux services Office 365. Les stratégies de protection des applications ne sont pas prises en charge pour les applications qui se connectent à des services Exchange ou SharePoint locaux.
@@ -53,7 +53,7 @@ Vous pouvez configurer des stratégies de protection d’application pour les ap
 
 -   La productivité des utilisateurs finaux n’est pas affectée et les stratégies ne sont pas appliquées pour une utilisation de l’application dans un contexte personnel.  Les stratégies sont appliquées uniquement dans un contexte professionnel, vous donnant ainsi la possibilité de protéger les données d’entreprise sans toucher aux données personnelles.
 
-Il existe d’autres avantages à utiliser la gestion des appareils mobiles (MDM) avec des stratégies de protection des applications mobiles (MAM). Les entreprises peuvent avoir recours aux deux simultanément. Par exemple, un employé peut utiliser un téléphone fourni par l’entreprise ainsi qu’une tablette personnelle.  Dans ce cas, le téléphone de l’entreprise est inscrit dans la gestion des appareils mobiles et protégé par des stratégies de protection des applications, tandis que l’appareil personnel est protégé par des stratégies de protection des applications uniquement.
+Il existe d’autres avantages à utiliser la gestion des appareils mobiles (MDM) avec des stratégies de protection des applications mobiles (GAM). Les entreprises peuvent avoir recours aux deux simultanément. Par exemple, un employé peut utiliser un téléphone fourni par l’entreprise ainsi qu’une tablette personnelle.  Dans ce cas, le téléphone de l’entreprise est inscrit dans la gestion des appareils mobiles et protégé par des stratégies de protection des applications, tandis que l’appareil personnel est protégé par des stratégies de protection des applications uniquement.
 
 - **La gestion des appareils mobiles permet de s’assurer que l’appareil est protégé**.  Par exemple, vous pouvez demander un code confidentiel pour accéder à l’appareil ou déployer des applications gérées sur l’appareil. Vous pouvez également déployer des applications sur des appareils via votre solution MDM, pour mieux contrôler la gestion des applications.
 
@@ -129,7 +129,7 @@ Les applications qui prennent en charge plusieurs identités vous permettent d�
 
 Par exemple, quand un utilisateur démarre l’application OneDrive à l’aide de son compte professionnel, il ne peut pas déplacer les fichiers vers un emplacement de stockage personnel. Toutefois, quand il utilise OneDrive avec son compte personnel, il peut copier et déplacer des données à partir de son compte personnel OneDrive sans restriction.
 
-- Découvrez-en plus sur les applications qui prennent en charge [MAM et plusieurs identités](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) avec Intune.
+- En savoir plus sur les applications qui prennent en charge [GAM et plusieurs identités](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) avec Intune.
 
 ##  <a name="next-steps"></a>Étapes suivantes
 

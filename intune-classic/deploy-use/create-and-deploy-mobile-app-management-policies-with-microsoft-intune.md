@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Créer et déployer des stratégies de protection des applications avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique décrit le processus de création d’une stratégie de protection des applications dans le **portail Azure**. Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de protection des applications. Nous vous recommandons de l’utiliser pour créer de telles stratégies. Le portail Azure prend en charge les scénarios GAM suivants :
 
@@ -31,23 +31,23 @@ Cette rubrique décrit le processus de création d’une stratégie de protectio
 - Appareils gérés par une solution de gestion des appareils mobiles (MDM) tierce.
 - Appareils qui ne sont gérés par aucune solution de gestion des appareils mobiles (BYOD).
 
->[!IMPORTANT]
-Voici quelques points à prendre en compte si vous utilisez la **console d’administration Intune** pour gérer vos appareils :
-
+> [!IMPORTANT]
+> Voici quelques points à prendre en compte si vous utilisez la **console d’administration Intune** pour gérer vos appareils :
+> 
 > * Vous pouvez créer une stratégie de protection des applications qui prend en charge les applications pour les appareils inscrits dans Intune à l’aide de la [console d’administration Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 > * Vous ne pouvez pas importer les stratégies de protection des applications créées dans la console d’administration Intune dans le portail Azure.  Vous devez les recréer dans le portail Azure.
-
+> 
 > * La console d’administration Intune peut ne pas afficher tous les paramètres de stratégie de protection des applications. Le portail Azure est la nouvelle console d’administration permettant de créer des stratégies de protection des applications.
-
+> 
 > * Pour déployer des applications gérées, vous devez créer une stratégie de protection des applications dans la console d’administration Intune. Dans ce cas, vous souhaiterez peut-être créer des stratégies de protection des applications dans la console d’administration Intune et dans le portail Azure : dans la console d’administration Intune pour être sûr de pouvoir déployer des applications gérées, et dans le portail Azure puisqu’il s’agit de la nouvelle console d’administration qui contient tous les paramètres des stratégies de protection des applications.
-
+> 
 > * Si vous créez des stratégies de protection des applications dans la console d’administration Intune et dans le portail Azure, la stratégie créée dans le portail est appliquée aux applications.
 
 Pour afficher la liste des paramètres de stratégie pris en charge pour les plateformes Android et iOS, sélectionnez l’un des éléments suivants :
 
 > [!div class="op_single_selector"]
-- [Stratégies iOS](ios-mam-policy-settings.md)
-- [Stratégies Android](android-mam-policy-settings.md)
+> - [Stratégies iOS](ios-mam-policy-settings.md)
+> - [Stratégies Android](android-mam-policy-settings.md)
 
 - Pour obtenir une description plus détaillée du fonctionnement des stratégies de protection des applications et les scénarios pris en charge par les stratégies de protection des applications Intune, consultez [Protéger les données d’application à l’aide de stratégies de protection des applications](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -129,13 +129,13 @@ Quand vous avez fini de créer une stratégie comme décrit dans la procédure p
 > [!IMPORTANT]
 > Vous devez sélectionner Windows 10 dans la liste déroulante de plateforme lors de la création d’une stratégie de protection des applications.
 
-1.  Dans le panneau Ajouter une stratégie, choisissez **Applications autorisées** ou **Applications exemptes** pour ouvrir le panneau du même nom.
+1. Dans le panneau Ajouter une stratégie, choisissez **Applications autorisées** ou **Applications exemptes** pour ouvrir le panneau du même nom.
 
-    > [!NOTE]
-    >
-    - **Applications autorisées** : il s’agit des applications qui doivent se conformer à cette stratégie.
-    - **Applications exemptes** : ces applications sont exemptes de cette stratégie et peuvent accéder aux données d’entreprise sans restrictions.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **Applications autorisées** : il s’agit des applications qui doivent se conformer à cette stratégie.
+   > - **Applications exemptes** : ces applications sont exemptes de cette stratégie et peuvent accéder aux données d’entreprise sans restrictions.
+   > <br></br>
 2. Dans le panneau Applications autorisées ou Applications exemptes, cliquez sur **Ajouter des applications**. Vous pouvez ajouter des applications Microsoft recommandées ou ajouter des applications de bureau ou de Store.
 
     a.  **Applications recommandées :** liste préremplie d’applications (principalement Office) que les administrateurs peuvent facilement importer dans la stratégie.
@@ -161,7 +161,7 @@ Seuls les utilisateurs en possession de licences Intune sont affectés par la st
 >[!IMPORTANT]
 > Si vous utilisez Intune avec Configuration Manager pour gérer vos appareils iOS et Android, la stratégie est appliquée uniquement aux utilisateurs figurant directement dans le groupe que vous avez sélectionné. Les membres des groupes enfants imbriqués dans le groupe que vous avez sélectionné ne sont pas affectés.
 
-Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour plus d'informations, voir :
+Les utilisateurs finaux peuvent télécharger les applications à partir de l’App Store ou de Google Play. Pour plus d’informations, voir :
 * [Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application](/intune/end-user-mam-apps-android)
 * [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](/intune/end-user-mam-apps-ios)
 
@@ -210,8 +210,8 @@ Pour voir immédiatement l’effet des modifications, l’utilisateur final doit
 Pour afficher la liste complète des paramètres de stratégie pour iOS et Android, sélectionnez l’un des éléments suivants :
 
 > [!div class="op_single_selector"]
-- [Stratégies iOS](ios-mam-policy-settings.md)
-- [Stratégies Android](android-mam-policy-settings.md)
+> - [Stratégies iOS](ios-mam-policy-settings.md)
+> - [Stratégies Android](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Surveiller l’état de la conformité et des utilisateurs](monitor-mobile-app-management-policies-with-microsoft-intune.md)

@@ -1,25 +1,25 @@
 ---
-title: "Bien démarrer avec la gestion des utilisateurs"
+title: Bien démarrer avec la gestion des utilisateurs
 titlesuffix: Microsoft Intune
-description: "Ajouter un utilisateur à Intune et lui attribuer une licence pour qu’il puisse accéder aux ressources de l’entreprise sur des appareils mobiles."
-keywords: 
+description: Ajouter un utilisateur à Intune et lui attribuer une licence pour qu’il puisse accéder aux ressources de l’entreprise sur des appareils mobiles.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-managing-users"></a>Bien démarrer avec la gestion des utilisateurs
 
@@ -28,7 +28,7 @@ Prenez en compte toutes les personnes de votre organisation. Toutes les personne
 ## <a name="how-do-i-create-a-user"></a>Comment créer un utilisateur ?
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Une fois que vous avez ouvert le volet **Microsoft Intune**, sélectionnez **Utilisateurs**. Dans la page **Tous les utilisateurs**, sélectionnez **+ Nouvel utilisateur**.
 4. Entrez les détails de l’utilisateur, tels que le **Nom** et le **Nom d’utilisateur**. La partie nom de domaine du nom d’utilisateur doit être le nom de domaine par défaut initial « contoso.onmicrosoft.com » ou un nom de domaine vérifié et non fédéré tel que « contoso.com ».
 5. Sous **Groupes**, choisissez le groupe de test auquel ajouter l’utilisateur.
@@ -44,8 +44,8 @@ Une fois que vous avez créé un utilisateur, vous devez utiliser le [portail Of
 3. Vous devrez peut-être patienter un instant avant que toutes les informations de l’utilisateur soient chargées. Après cela, sélectionnez **Modifier** pour les **Licences de produit** de l’utilisateur.
 4. Affectez un **Lieu** à l’utilisateur, puis **activez** Intune.
 
- > [!NOTE]
- > Cela utilise l’une de vos licences pour cet utilisateur. Si vous utilisez votre environnement en production, vous pourrez désactiver l’utilisation de cette licence plus tard pour la réaffecter à un utilisateur réel.
+   > [!NOTE]
+   > Cela utilise l’une de vos licences pour cet utilisateur. Si vous utilisez votre environnement en production, vous pourrez désactiver l’utilisation de cette licence plus tard pour la réaffecter à un utilisateur réel.
 
 5. Sélectionnez **Enregistrer**.
 

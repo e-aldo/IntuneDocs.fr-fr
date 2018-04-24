@@ -1,28 +1,28 @@
 ---
-title: "Paramètres de Protection des informations Windows dans Microsoft Intune"
-titleSuffix: 
-description: "Découvrez les paramètres Microsoft Intune que vous pouvez utiliser pour gérer la Protection des informations Windows."
-keywords: 
+title: Paramètres de Protection des informations Windows dans Microsoft Intune
+titleSuffix: ''
+description: Découvrez les paramètres Microsoft Intune que vous pouvez utiliser pour gérer la Protection des informations Windows.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f2e5090eada373b83c3f8c390b7df6b31f6d1723
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1ec649134d4c3d28c99863aa3f04d2a89d4e029f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Guide pratique pour configurer la Protection des informations Windows dans Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Avec l’augmentation du nombre d’appareils appartenant aux employés au sein de l’entreprise, il existe un risque accru de fuites accidentelles de données via les applications et les services, tels que le courrier électronique, les réseaux sociaux et le cloud public, qui sont en dehors du contrôle de l’entreprise. Par exemple, lorsqu’un employé envoie les dernières photos de conception à partir de son compte de messagerie personnel, copie et colle des informations sur les produits dans un tweet ou enregistre un rapport des ventes en cours sur son espace de stockage cloud public.
 
@@ -34,7 +34,7 @@ Cette stratégie Intune gère la liste des applications protégées par la Prote
 > Pour utiliser l’application Portail d’entreprise de Windows 10 avec la Protection des informations Windows, vous devez ajouter cette application sous le mode **Exempté** de la Protection des informations Windows. 
 
 ### <a name="next-steps"></a>Étapes suivantes
-Pour plus d'informations, voir :
+Pour plus d’informations, voir :
 -  [Protéger vos données d’entreprise à l’aide de la Protection des informations Windows](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 - [Créer une stratégie Protection des informations Windows (WIP) à l’aide de la console classique pour Microsoft Intune](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune)
 - [Créer une stratégie Protection des informations Windows (WIP) avec GPM à l’aide du portail Azure pour Microsoft Intune](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)

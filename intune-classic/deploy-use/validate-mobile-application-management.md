@@ -1,28 +1,28 @@
 ---
 title: Valider la configuration GAM (Gestion des applications mobiles)
-description: "Cette rubrique décrit comment tester et valider la configuration et le bon fonctionnement de votre stratégie de gestion des applications mobiles."
-keywords: 
+description: Cette rubrique décrit comment tester et valider la configuration et le bon fonctionnement de votre stratégie de gestion des applications mobiles.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angerobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.openlocfilehash: e0cb44177f830236865dce0ab68bb1084fcebc2d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6f11c2f2af53813040417a8f40e983b5c88d5189
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-your-mobile-application-management-setup"></a>Validation de la configuration de la gestion des applications mobiles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique fournit des informations sur la manière de vérifier s’il existe des problèmes après avoir configuré la gestion des applications mobiles. Ces instructions s’appliquent aux stratégies de gestion des applications mobiles dans le portail Azure.
 
@@ -43,7 +43,7 @@ Si les tests montrent que le comportement de votre stratégie de gestion des app
 
 2. Choisissez un utilisateur dans la liste ou recherchez et sélectionnez un utilisateur, puis choisissez **Sélectionner un utilisateur**. En haut de la colonne **Rapports d’application**, vous voyez si l’utilisateur a une licence pour la gestion des applications mobiles. En dessous, vous voyez si l’utilisateur a une licence pour O365 et l’état de l’application pour tous les appareils de l’utilisateur est indiqué.
 
-![État de l’application pour la gestion des applications mobiles](..\media\ts-mam-user-apps.png)
+![État de l’application pour la gestion des applications mobiles](../media/ts-mam-user-apps.png)
 
 ### <a name="what-to-do"></a>Procédure à suivre
 Voici les actions à exécuter selon l’état de l’utilisateur :
@@ -54,6 +54,6 @@ Voici les actions à exécuter selon l’état de l’utilisateur :
 - Vérifiez que ces conditions sont appliquées à tous les utilisateurs auxquels vous voulez appliquer des stratégies de gestion des applications mobiles.
 
 ### <a name="see-also"></a>Voir aussi
-[Se préparer à configurer des stratégies de gestion des applications mobiles avec Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Se préparer à configurer des stratégies de gestion des applications mobiles avec Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Protéger les données d’application à l’aide des stratégies de gestion des applications mobiles avec Microsoft Intune](../deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

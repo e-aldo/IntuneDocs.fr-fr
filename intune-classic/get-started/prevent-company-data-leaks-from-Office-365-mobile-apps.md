@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Guide de démarrage rapide : Éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune peut vous aider à sécuriser les données de votre organisation à l’aide de stratégies de gestion des applications mobiles (GAM) qui permettent d’éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365 ou autres applications métier. Les stratégies GAM Intune peuvent être utilisées sans que les utilisateurs n’aient à inscrire leurs appareils auprès de la gestion des appareils mobiles (MDM) Intune. Ainsi, si vous avez des utilisateurs qui ne souhaitent pas inscrire leurs appareils mobiles BYOD ou Android auprès d’une solution MDM Microsoft (Intune, Configuration Manager ou EAS), si vous souhaitez protéger les données de l’entreprise sans gérer les appareils des utilisateurs finaux ou si vous utilisez déjà une solution MDM non-Microsoft, Intune peut vous aider à optimiser la sécurité des données de votre société.   
 

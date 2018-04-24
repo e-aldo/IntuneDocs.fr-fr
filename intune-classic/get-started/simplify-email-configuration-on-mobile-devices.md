@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11ae063bc2cc302af238ab9062da82c6b6c30c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 058a44d6ef97cbc35786312461c6077bc2feaf3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Guide de démarrage rapide : Simplification de la configuration des e-mails sur des appareils mobiles | Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune permet à votre entreprise d’économiser du temps et des ressources par le déploiement de profils de messagerie (ainsi que pour le VPN et le Wi-Fi) sur les appareils mobiles Windows, iOS et Android gérés par le service Intune. La configuration automatique de profils de messagerie peut améliorer considérablement l’expérience de l’utilisateur final et augmenter les niveaux de satisfaction tout en réduisant les coûts liés au support technique.
 

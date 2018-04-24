@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 63618f9af5f2bdb863a19c229c862e446dd4ea7a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4bf478225c22597b1645fc7d18e4329560bb1f03
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Paramètres de stratégie de conformité pour les appareils Android dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Les paramètres de stratégie décrits dans cette rubrique s’appliquent aux appareils exécutant Android 4.0 et ultérieur ou Samsung KNOX 4.0 et ultérieur.
 
 Si vous recherchez des informations sur d’autres plateformes, sélectionnez l’un des éléments suivants :
 > [!div class="op_single_selector"]
-- [Paramètres de stratégie de conformité pour les appareils iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Paramètres de stratégie de conformité pour les appareils Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
-- [Paramètres de stratégie de conformité pour les appareils Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Paramètres de stratégie de conformité pour les appareils iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Paramètres de stratégie de conformité pour les appareils Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Paramètres de stratégie de conformité pour les appareils Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>Paramètres de sécurité système
 ### <a name="password"></a>Mot de passe
@@ -39,7 +39,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
 
 -  **Longueur minimale du mot de passe** : spécifie le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe de l’utilisateur.
 
-- **Qualité du mot de passe :** ce paramètre détecte si les critères de mot de passe que vous spécifiez sont configurés sur l’appareil. Activez ce paramètre pour que les utilisateurs satisfassent à certains critères de mot de passe pour les appareils Android. Choisissez parmi :
+- **Qualité du mot de passe :** ce paramètre détecte si les critères de mot de passe que vous spécifiez sont configurés sur l’appareil. Activez ce paramètre pour que les utilisateurs satisfassent à certains critères de mot de passe pour les appareils Android. Choisissez parmi :
 
   -   **Sécurité biométrique faible**
   -   **Obligatoire**
@@ -50,7 +50,7 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
 
 - **Minutes d’inactivité avant demande du mot de passe :** spécifiez la durée d’inactivité au terme de laquelle l’utilisateur doit entrer à nouveau son mot de passe.
 
-- **Expiration du mot de passe (jours)** : sélectionnez le nombre de jours avant que le mot de passe de l’utilisateur n’expire et qu’il ne doive en créer un autre.
+- **Expiration du mot de passe (jours)**  : sélectionnez le nombre de jours avant que le mot de passe de l’utilisateur n’expire et qu’il ne doive en créer un autre.
 
 - **Mémoriser l’historique des mots de passe** : utilisez ce paramètre avec le paramètre **Empêcher la réutilisation des mots de passe précédents** pour empêcher l’utilisateur de créer des mots de passe qui ont déjà été utilisés.
 
@@ -64,17 +64,17 @@ Si vous recherchez des informations sur d’autres plateformes, sélectionnez l�
 ## <a name="device-health-and-security-settings"></a>Paramètres d’intégrité et de sécurité de l’appareil
 
 - **L’appareil ne doit pas être jailbreaké ou rooté** : si vous activez ce paramètre, les appareils jailbreakés ne sont pas détectés comme conformes.
-- **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues (Android 4.0 ou ultérieur)** : pour bloquer les appareils sur lesquels l’option **Sécurité > Sources inconnues** est sélectionnée, activez ce paramètre et affectez-lui la valeur **Oui**.  
+- **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues (Android 4.0 ou ultérieur)**  : pour bloquer les appareils sur lesquels l’option **Sécurité > Sources inconnues** est sélectionnée, activez ce paramètre et affectez-lui la valeur **Oui**.  
 
 >[!IMPORTANT]
 >Pour les applications en chargement indépendant (sideloading), le paramètre **Sources inconnues** doit être activé. Appliquez cette stratégie de conformité uniquement si vous n’effectuez aucun chargement indépendant d’applications Android sur les appareils.
 
-- **Exiger que le débogage USB soit désactivé (Android 4.2 ou ultérieur)** : spécifiez si la détection de l’option de débogage USB est activée sur l’appareil.
-- **Exiger que « Rechercher les menaces de sécurité sur l’appareil » soit activé sur les appareils (Android 4.2-4.4)** : spécifiez si la fonctionnalité **Vérifier les applications** est activée sur l’appareil.
-- **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)** : spécifiez le niveau de correctif Android minimal.  Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée au format AAAA-MM-JJ.
+- **Exiger que le débogage USB soit désactivé (Android 4.2 ou ultérieur)**  : spécifiez si la détection de l’option de débogage USB est activée sur l’appareil.
+- **Exiger que « Rechercher les menaces de sécurité sur l’appareil » soit activé sur les appareils (Android 4.2-4.4)**  : spécifiez si la fonctionnalité **Vérifier les applications** est activée sur l’appareil.
+- **Niveau minimal du correctif de sécurité Android (Android 6.0 ou ultérieur)**  : spécifiez le niveau de correctif Android minimal.  Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée au format AAAA-MM-JJ.
 - **Exiger l’activation de la protection de l’appareil contre les menaces**: utilisez ce paramètre pour sélectionner l’évaluation des risques de la solution Lookout MTP comme une condition de conformité. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
 
-  - **Aucun (sécurisé)** : c’est le niveau de sécurité le plus haut. Cela signifie que l’appareil ne peut avoir aucune menace. Si des menaces sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
+  - **Aucun (sécurisé)**  : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
   - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
   - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
   - **Élevé** : cette option est la moins sécurisée. Les menaces de tout niveau sont fondamentalement autorisées. Cette option peut être utile uniquement si vous utilisez cette solution pour créer des rapports.

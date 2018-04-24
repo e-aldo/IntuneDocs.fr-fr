@@ -1,10 +1,9 @@
 ---
-title: Paramètres personnalisés Microsoft Intune pour les appareils Windows Holographic for Business
-titlesuffix: ''
-description: Découvrez les paramètres que vous pouvez utiliser dans un profil personnalisé Windows Holographic for Business.
+title: Paramètres personnalisés pour les appareils Windows Holographic for Business dans Microsoft Intune - Azure | Microsoft Docs
+description: Créez un profil personnalisé pour utiliser les paramètres OMA-URI sur les appareils exécutant Windows Holographic for Business dans Microsoft Intune. Vous pouvez définir les paramètres du fournisseur de services de configuration de stratégies AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates et ApplicationLaunchRestrictions.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.article: article
@@ -13,21 +12,22 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5cdba24c10b90756d9a2b9f08fd7d4dcd727303
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b349a61d61288f700294e04d029d825afba13445
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>Paramètres personnalisés pour les appareils Microsoft Intune pour les appareils exécutant Windows Holographic for Business
+# <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Paramètres personnalisés pour les appareils exécutant Windows Holographic for Business dans Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
  Utilisez le profil Microsoft Intune **personnalisé** pour Windows Holographic for Business pour déployer des paramètres OMA-URI (Open Mobile Alliance Uniform Resource Identifier) pouvant servir à contrôler les fonctionnalités sur des appareils. Windows Holographic for Business rend disponibles de nombreux paramètres de fournisseurs de services de configuration. Pour avoir une vue d’ensemble des fournisseur de services de configuration, consultez [Présentation des fournisseurs de services de configuration pour les professionnels de l’informatique](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers). Pour connaître les fournisseurs de services de configuration pris en charge par Windows Holographique, consultez [Fournisseurs de services de configuration pris en charge dans Windows Holographique](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
 Si vous recherchez un paramètre particulier, n’oubliez pas que le [profil de restriction d’appareil Windows Holographic for Business](device-restrictions-windows-holographic.md) contient de nombreux paramètres intégrés et ne nécessite pas de spécifier des valeurs personnalisées.
 
-1. Suivez les instructions figurant dans [Configuration de paramètres d'appareil personnalisés dans Microsoft Intune](custom-settings-configure.md) pour commencer.
+## <a name="create-the-custom-oma-uri-profile"></a>Créer le profil OMA-URI personnalisé
+1. Suivez les instructions dans [Configurer des paramètres d'appareil personnalisés dans Microsoft Intune](custom-settings-configure.md) pour commencer.
 2. Dans **Créer un profil**, choisissez **Paramètres** pour ajouter un ou plusieurs paramètres OMA-URI.
 3. Dans **Paramètres OMA-URI personnalisés**, cliquez sur **Ajouter** pour ajouter une nouvelle valeur. Vous pouvez également cliquer sur **Exporter** pour créer une liste de toutes les valeurs que vous avez configurées dans un fichier de valeurs séparées par des virgules (.csv).
 4. Pour chaque paramètre OMA-URI à ajouter, entrez les informations suivantes :
@@ -40,7 +40,7 @@ Si vous recherchez un paramètre particulier, n’oubliez pas que le [profil de 
         - **Entier**
         - **Virgule flottante**
         - **Booléen**
-    - **OMA-URI (sensible à la casse)** : Spécifiez l’identificateur OMA-URI pour lequel vous voulez fournir un paramètre.
+    - **OMA-URI (sensible à la casse)**  : Spécifiez l’identificateur OMA-URI pour lequel vous voulez fournir un paramètre.
     - **Valeur** : Spécifiez la valeur à associer à l’identificateur OMA-URI que vous avez entré.
 1. Quand vous avez terminé, revenez à **Créer un profil** et cliquez sur **Créer**.
 Le profil est créé et apparaît dans la liste des profils.
@@ -49,18 +49,56 @@ Le profil est créé et apparaît dans la liste des profils.
 
 Les paramètres suivants sont utiles pour les appareils exécutant Windows Holographic for Business :
 
+### <a name="allowfastreconnecthttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-authenticationauthentication-allowfastreconnect"></a>[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
-|Nom du paramètre|OMA-URI|Type de données  |
-|---------|---------|---------|
-|[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Entier<br>0 : Non autorisé<br>1 : Autorisé (par défaut)|
-|[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Entier<br>0 : Non autorisé<br>1 : Autorisé (par défaut)|
-|[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Entier<br>0 : Le service de mise à jour n’est pas autorisé <br>1 – Le service de mise à jour est autorisé (par défaut)|
-|[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Chaîne<br>URL : L’appareil vérifie l’existence de mises à jour auprès du serveur WSUS à l’URL spécifiée.<br>Non configuré : L’appareil vérifie l’existence de mises à jour auprès de Microsoft Update.|
-|[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Entier<br>0 : Non configuré L’appareil installe toutes les mises à jour applicables.<br>1 – L’appareil installe seulement les mises à jour applicables qui figurent dans la liste des mises à jour approuvées. Définissez cette stratégie sur 1 si le département informatique veut contrôler le déploiement des mises à jour sur les appareils, par exemple quand des tests sont nécessaires avant un déploiement.|
-|[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Important**<br>Vous devez lire et accepter le CLUF de la mise à jour pour le compte de vos utilisateurs finaux. Ne pas le faire constitue une violation des obligations légales ou contractuelles.|Nœud pour les approbations des mises à jour et l’acceptation du CLUF pour le compte de l’utilisateur final.|
-[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Important**<br>L’article Fournisseur de services de configuration AppLocker utilise des exemples XML avec une séquence d’échappement. Pour configurer les paramètres avec des profils personnalisés Intune, vous devez utiliser du XML brut.|Chaîne<br>Pour plus d’informations, consultez l’article [Fournisseur de services de configuration AppLocker](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
+---
+|OMA-URI|Type de données  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Entier<br>0 : Non autorisé<br>1 : Autorisé (par défaut)|
 
-## <a name="how-to-find-the-policies-you-can-configure"></a>Comment trouver les stratégies que vous pouvez configurer
+### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
+
+---
+|OMA-URI|Type de données  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Entier<br>0 : Non autorisé<br>1 : Autorisé (par défaut)|
+
+### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
+
+---
+|OMA-URI|Type de données  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Entier<br>0 : Le service de mise à jour n’est pas autorisé <br>1 – Le service de mise à jour est autorisé (par défaut)|
+
+### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+
+---
+|OMA-URI|Type de données  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|String<br>URL : L’appareil vérifie l’existence de mises à jour auprès du serveur WSUS à l’URL spécifiée.<br>Non configuré : L’appareil vérifie l’existence de mises à jour auprès de Microsoft Update.|
+
+### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
+
+---
+|OMA-URI|Type de données  |
+|---------|---------|
+|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Entier<br>0 : Non configuré L’appareil installe toutes les mises à jour applicables.<br>1 – L’appareil installe seulement les mises à jour applicables qui figurent dans la liste des mises à jour approuvées. Définissez cette stratégie sur 1 si le département informatique veut contrôler le déploiement des mises à jour sur les appareils, par exemple quand des tests sont nécessaires avant un déploiement.|
+
+### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
+
+---
+|OMA-URI|Type de données  |
+|---------|---------|
+|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**Important**<br>Vous devez lire et accepter le CLUF de la mise à jour pour le compte de vos utilisateurs finaux. Ne pas le faire constitue une violation des obligations légales ou contractuelles.|Nœud pour les approbations des mises à jour et l’acceptation du CLUF pour le compte de l’utilisateur final.|
+
+### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
+
+---
+|OMA-URI|Type de données  |
+|---------|---------|
+|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Important**<br>L’article Fournisseur de services de configuration AppLocker utilise des exemples XML avec une séquence d’échappement. Pour configurer les paramètres avec des profils personnalisés Intune, vous devez utiliser du XML brut.|String<br>Pour plus d’informations, consultez [Fournisseur de services de configuration AppLocker](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).|
+
+## <a name="find-the-policies-you-can-configure"></a>Trouver les stratégies que vous pouvez configurer
 
 La liste complète de tous les fournisseurs de services de configuration pris en charge par Windows Holographique est disponible dans [Fournisseurs de services de configuration pris en charge dans Windows Holographique](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens). Les paramètres ne sont pas tous compatibles avec toutes les versions de Windows Holographique. Le tableau de l’article Windows indique quelles versions sont prises en charge pour chaque fournisseur de services de configuration.
 

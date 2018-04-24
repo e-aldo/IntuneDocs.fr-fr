@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5a346c321147656d748d3abde78575268b20e9ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Catégoriser les appareils avec le mappage de groupe d’appareils dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Le **mappage de groupe d’appareils** dans Microsoft Intune vous permet d’ajouter automatiquement des appareils à des groupes basés sur des catégories que vous définissez afin d’en faciliter la gestion. 
 
@@ -67,10 +67,10 @@ En raison de l’implémentation progressive des groupes de sécurité Azure Act
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>Étape 1 : Créer des catégories d’appareils dans la console d’administration Intune
 1. Dans la [console d’administration Microsoft Intune](https://manage.microsoft.com), choisissez **Administration**
-3. Dans l’espace de travail **Administration**, développez **Gestion des appareils mobiles**, puis choisissez **Catégories d’appareil**.
-4. Dans la page **Catégories d’appareil** apparaît une liste où vous pouvez configurer les catégories d’appareils : 
-- Vous pouvez entrer un nom, puis cliquer sur **Ajouter** pour l’ajouter comme nouvelle catégorie d’appareil.
-- Vous pouvez aussi sélectionner une catégorie, puis la **Supprimer**.
+2. Dans l’espace de travail **Administration**, développez **Gestion des appareils mobiles**, puis choisissez **Catégories d’appareil**.
+3. Dans la page **Catégories d’appareil** apparaît une liste où vous pouvez configurer les catégories d’appareils : 
+4. Vous pouvez entrer un nom, puis cliquer sur **Ajouter** pour l’ajouter comme nouvelle catégorie d’appareil.
+5. Vous pouvez aussi sélectionner une catégorie, puis la **Supprimer**.
 
 Vous utiliserez le nom de catégorie d’appareil quand vous créerez des groupes de sécurité Active Directory Azure à l’étape 2.
 

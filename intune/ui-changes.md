@@ -15,16 +15,17 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f45d9a126e76c45712c6483b458f935e6d0021
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Où se trouve ma fonctionnalité Intune dans Azure ?
 Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Nous avons donc créé ce guide de référence pour ceux d’entre vous qui connaissent parfaitement Intune dans le portail classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune dans le portail Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
 ## <a name="quick-reference-guide"></a>Guide de référence rapide
-|Composant |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
+
+|Fonctionnalité |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
 |------------|---------------|---------------|
 |Programme d’inscription des appareils [iOS uniquement]|Administration > Gestion des appareils mobiles > iOS > Programme d’inscription des appareils|[Inscription de l’appareil > Inscription Apple > Jeton du programme d’inscription](#where-did-apple-dep-go) |
 |Programme d’inscription des appareils [iOS uniquement]| Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription de l’appareil > Inscription Apple > Numéros de série du programme d’inscription](#where-did-apple-dep-go) |

@@ -1,29 +1,29 @@
 ---
-title: "Paramètres de la stratégie dans Windows 10"
-description: "Utilisez les paramètres de stratégie indiqués dans cette rubrique pour configurer les paramètres intégrés et personnalisés des appareils Windows 10 Mobile et Windows 10 Desktop inscrits."
-keywords: 
+title: Paramètres de la stratégie dans Windows 10
+description: Utilisez les paramètres de stratégie indiqués dans cette rubrique pour configurer les paramètres intégrés et personnalisés des appareils Windows 10 Mobile et Windows 10 Desktop inscrits.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Paramètres de stratégie Intune pour les appareils Windows 10 dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique contient des informations qui vous aideront à comprendre les paramètres de stratégie Intune que vous pouvez utiliser pour gérer des appareils Windows 10. Lisez cette rubrique et les procédures dans [Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -53,7 +53,7 @@ Pour chaque paramètre OMA-URI à ajouter, entrez les informations suivantes :
     - **Entier**
     - **Virgule flottante**
     - **Booléen**
-- **OMA-URI (sensible à la casse)** : Spécifiez l’identificateur OMA-URI pour lequel vous voulez fournir un paramètre.
+- **OMA-URI (sensible à la casse)**  : Spécifiez l’identificateur OMA-URI pour lequel vous voulez fournir un paramètre.
 - **Valeur** : Spécifiez la valeur à associer à l’identificateur OMA-URI que vous avez entré.
 
 ### <a name="example"></a>Exemple
@@ -101,7 +101,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 |**Autoriser la capture d’écran**|Permet à l’utilisateur de capturer l’écran de l’appareil sous forme d’image (Windows 10 Mobile uniquement)|
 |**Autoriser la désinscription manuelle**|Permet à l’utilisateur de supprimer manuellement le compte d’espace de travail de l’appareil|
 |**Autoriser l'installation manuelle de certificats racines**|S’applique à Windows 10 Mobile|
-|**Autoriser l’envoi des données de diagnostic et d’utilisation à Microsoft**|Les valeurs possibles sont les suivantes :<br><br>**Non** - Aucune donnée n’est envoyée à Microsoft<br>**Basique** - Une quantité limitée d’informations est envoyée à Microsoft<br>**Amélioré** - Des données de diagnostic avancées sont envoyées à Microsoft<br>**Complète (recommandée)** - envoie les mêmes données que **Amélioré**, ainsi que des données supplémentaires sur l'état de l’appareil|
+|**Autoriser l’envoi des données de diagnostic et d’utilisation à Microsoft**|Les valeurs possibles sont :<br><br>**Non** - Aucune donnée n’est envoyée à Microsoft<br>**Basique** - Une quantité limitée d’informations est envoyée à Microsoft<br>**Amélioré** - Des données de diagnostic avancées sont envoyées à Microsoft<br>**Complète (recommandée)** - envoie les mêmes données que **Amélioré**, ainsi que des données supplémentaires sur l'état de l’appareil|
 
 
 ### <a name="account-and-synchronization"></a>Compte et synchronisation
@@ -136,7 +136,7 @@ Utilisez la **stratégie de configuration générale** Microsoft Intune pour Win
 
 
 
-### <a name="cellular"></a>Cellulaire
+### <a name="cellular"></a>Données mobiles
 
 |Nom du paramètre|Informations supplémentaires (si requises)|
 |----------------|----------------------|---------------------|
@@ -192,7 +192,7 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 |**Analyser les fichiers d’archive**|Permet à Defender d’analyser les fichiers archivés tels que les archives .zip ou .cab.|
 |**Analyser les messages électroniques**|Permet à Defender d’analyser les e-mails quand ils arrivent sur l’appareil|
 |**Analyser les lecteurs amovibles**|Permet à Defender d’analyser les lecteurs amovibles tels que les clés USB|
-|**Analyser les lecteurs réseau mappés**|Permet à Defender d’analyser les fichiers sur un lecteur réseau mappé.<br>Si les fichiers sur le lecteur sont en lecture seule, Defender ne pourra pas supprimer les logiciels malveillants détectés dans ces fichiers.|
+|**Analyser les lecteurs réseau mappés**|Permet à Defender d’analyser les fichiers sur un lecteur réseau mappé.<br>Si les fichiers sur le disque sont en lecture seule, Defender ne peut pas y supprimer les logiciels malveillants détectés.|
 |**Analyser les fichiers ouverts à partir de dossiers partagés sur le réseau**|Permet à Defender d’analyser les fichiers sur des lecteurs réseau partagés (par exemple, les lecteurs accessibles à partir d’un chemin UNC).<br>Si les fichiers sur le lecteur sont en lecture seule, Defender ne pourra pas supprimer les logiciels malveillants détectés dans ces fichiers.|
 |**Intervalle de mise à jour des signatures**|Spécifie l’intervalle auquel Defender vérifie les nouveaux fichiers de signature.|
 |**Autoriser la protection de cloud**|Autorise ou empêche Microsoft Active Protection Service de recevoir des informations sur l’activité des logiciels malveillants en provenance des appareils que vous gérez. Ces informations serviront à améliorer le service.|
@@ -203,7 +203,7 @@ Tous les paramètres sont pour Windows 10 Desktop uniquement.
 |**Processus à exclure lors d’une analyse ou de la protection en temps réel**|Ajoute un ou plusieurs processus du type **.exe**, **.com** ou **.scr** à la liste des exclusions. Ces processus ne sont pas inclus dans les analyses en temps réel ou planifiées.|
 
 
-### <a name="updates"></a>Updates
+### <a name="updates"></a>Mises à jour
 
 |Nom du paramètre|Informations supplémentaires (si requises)|
 |----------------|---------------|

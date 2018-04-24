@@ -1,25 +1,25 @@
 ---
-title: "Bien démarrer avec les applications dans Microsoft Intune"
-titlesuffix: 
-description: "Recherchez et ajoutez des applications sur les appareils pour permettre à votre personnel d’effectuer leur travail."
-keywords: 
+title: Bien démarrer avec les applications dans Microsoft Intune
+titlesuffix: ''
+description: Recherchez et ajoutez des applications sur les appareils pour permettre à votre personnel d’effectuer leur travail.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 3/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cf7b2cca28e16825c368cb3e5dc793d25daaa4d0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Bien démarrer avec l’ajout d’applications dans Microsoft Intune
 
@@ -34,7 +34,7 @@ Intune vous permet d’ajouter et d’affecter ces types d’applications à vos
 ## <a name="how-do-i-assign-a-public-store-app"></a>Comment attribuer une application de magasin public ?
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Sélectionnez **Applications mobiles**, puis **Applications**.
 4. Sélectionnez **Ajouter**, puis sélectionnez **iOS** comme le **Type d’application**.
 5. Choisissez **Sélectionner une application** pour afficher le volet **Rechercher dans l’App Store**.

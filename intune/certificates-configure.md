@@ -1,28 +1,28 @@
 ---
-title: "Créer un profil de certificat dans Microsoft Intune - Azure | Microsoft Docs"
-description: "Pour vos appareils, ajouter ou créer un profil de certificat en configurant un environnement de certificat SCEP ou PKCS, exporter le certificat public, créer le profil dans le portail Azure, puis affecter SCEP ou PKCS aux profils de certificat dans Microsoft Intune dans le portail Azure"
-keywords: 
+title: Créer un profil de certificat dans Microsoft Intune - Azure | Microsoft Docs
+description: Pour vos appareils, ajouter ou créer un profil de certificat en configurant un environnement de certificat SCEP ou PKCS, exporter le certificat public, créer le profil dans le portail Azure, puis affecter SCEP ou PKCS aux profils de certificat dans Microsoft Intune dans le portail Azure
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurer un profil de certificat pour vos appareils dans Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Quand vous donnez un accès à des utilisateurs aux ressources d’entreprise par le biais de profils VPN, Wi-Fi ou de messagerie, vous pouvez authentifier ces connexions à l’aide de certificats. Quand vous utilisez des certificats, vous n’avez pas besoin d’entrer vos nom d’utilisateur et mot de passe pour authentifier les connexions.
 
@@ -86,7 +86,7 @@ Vous importez ce certificat quand vous configurez un profil de certificat approu
 Vous devez créer un profil de certificat approuvé pour pouvoir créer un profil de certificat SCEP ou PKCS. Un profil de certificat approuvé et un profil SCEP ou PKCS sont nécessaires pour chaque plateforme d’appareil. Les étapes de création de certificats approuvés sont similaires pour chaque plateforme d’appareil.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
+2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Configuration de l’appareil**.
 2. Dans le volet **Configuration de l’appareil**, choisissez **Gérer** > **Profils**.
 3. Dans le volet Profils, choisissez **Créer un profil**.

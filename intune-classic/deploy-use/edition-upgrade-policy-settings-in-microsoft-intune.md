@@ -15,22 +15,22 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 005f8cf2e769b1b007424e55867160a0f5828f7a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 99c0ef47ad8f143ef9bd1d6dbfff9c94fb154007
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de mise à niveau d’édition Windows dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 La **stratégie de mise à niveau d’édition** Microsoft Intune vous permet de mettre automatiquement à niveau les appareils qui exécutent l’une des versions suivantes de Windows 10 vers une édition différente :
-* Windows 10 Desktop
-* Windows 10 Holographique
-* Windows 10 Mobile
+* Windows 10 Desktop
+* Windows 10 Holographique
+* Windows 10 Mobile
 
-Les chemins de mise à niveau suivants sont pris en charge :
+Les chemins de mise à niveau pris en charge sont les suivants :
 - De Windows 10 Professionnel vers Windows 10 Entreprise
 - De Windows 10 Famille vers Windows 10 Éducation
 - De Windows 10 Mobile vers Windows 10 Mobile Entreprise

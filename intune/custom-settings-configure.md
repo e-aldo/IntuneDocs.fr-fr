@@ -1,26 +1,26 @@
 ---
-title: "Utiliser des paramètres d’appareil personnalisés dans Microsoft Intune - Azure | Microsoft Docs"
-description: "Ajouter ou créer un profil afin d’utiliser des paramètres personnalisés pour des appareils iOS, Android et Windows à l’aide de Microsoft Intune"
-keywords: 
+title: Utiliser des paramètres d’appareil personnalisés dans Microsoft Intune - Azure | Microsoft Docs
+description: Ajouter ou créer un profil afin d’utiliser des paramètres personnalisés pour des appareils iOS, Android et Windows à l’aide de Microsoft Intune
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Créer un profil avec des paramètres personnalisés dans Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune n’a peut-être pas tous les paramètres intégrés dont vous avez besoin. Ou vous pouvez vouloir utiliser un paramètre disponible dans d’autres profils d’appareils. Pour ajouter ces paramètres, créez un profil d’appareil et configurez le profil avec des paramètres d’appareil personnalisés.
 

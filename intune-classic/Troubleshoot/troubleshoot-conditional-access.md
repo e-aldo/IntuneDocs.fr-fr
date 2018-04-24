@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Résoudre les problèmes d’accès conditionnel
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En général, l’utilisateur tente d’accéder à ses e-mails ou à SharePoint et reçoit une invitation à s’inscrire. Cette invitation le conduit au portail d’entreprise.
 
@@ -49,20 +49,20 @@ Ces conditions sont visibles sur chaque appareil dans le portail de gestion Azur
 
 ## <a name="compliance-issues"></a>Problèmes de conformité
 
- -  L’appareil n’est pas conforme à la stratégie Intune. Les critères de chiffrement et de mot de passe font partie des problèmes courants. L’utilisateur est redirigé vers le portail d’entreprise, où il peut configurer son appareil pour qu’il soit conforme.
- -  L’inscription des informations de conformité d’un appareil peut demander un certain temps. Attendez quelques minutes et réessayez.
- -  Pour les appareils iOS :
-     -   Un profil d’e-mail existant créé par l’utilisateur bloque le déploiement d’un profil créé par un administrateur Intune. Il s’agit d’un problème courant parce que les utilisateurs iOS créent généralement un profil de messagerie, puis s’inscrivent. Le portail d’entreprise informe les utilisateurs qu’ils ne sont pas conformes en raison de leur profil de messagerie configuré manuellement et les invite à supprimer ce profil. Les utilisateurs doivent supprimer leur profil de messagerie pour que le profil Intune puisse être déployé. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire sans installer de profil de messagerie et d’autoriser Intune à déployer le profil.
-     -   Un appareil iOS peut rester bloqué dans un état de vérification de conformité, ce qui empêche l’utilisateur de lancer une autre vérification. Le redémarrage du portail d’entreprise peut résoudre ce problème. L’état de conformité reflètera alors l’état de l’appareil dans Intune. Une fois que toutes les données sont collectées sur un appareil, la synchronisation de la vérification de la conformité est rapide, moins d’une demi-seconde en moyenne.
+- L’appareil n’est pas conforme à la stratégie Intune. Les critères de chiffrement et de mot de passe font partie des problèmes courants. L’utilisateur est redirigé vers le portail d’entreprise, où il peut configurer son appareil pour qu’il soit conforme.
+- L’inscription des informations de conformité d’un appareil peut demander un certain temps. Attendez quelques minutes et réessayez.
+- Pour les appareils iOS :
+  - Un profil d’e-mail existant créé par l’utilisateur bloque le déploiement d’un profil créé par un administrateur Intune. Il s’agit d’un problème courant parce que les utilisateurs iOS créent généralement un profil de messagerie, puis s’inscrivent. Le portail d’entreprise informe les utilisateurs qu’ils ne sont pas conformes en raison de leur profil de messagerie configuré manuellement et les invite à supprimer ce profil. Les utilisateurs doivent supprimer leur profil de messagerie pour que le profil Intune puisse être déployé. Pour éviter ce problème, demandez à vos utilisateurs de s’inscrire sans installer de profil de messagerie et d’autoriser Intune à déployer le profil.
+  - Un appareil iOS peut rester bloqué dans un état de vérification de conformité, ce qui empêche l’utilisateur de lancer une autre vérification. Le redémarrage du portail d’entreprise peut résoudre ce problème. L’état de conformité reflètera alors l’état de l’appareil dans Intune. Une fois que toutes les données sont collectées sur un appareil, la synchronisation de la vérification de la conformité est rapide, moins d’une demi-seconde en moyenne.
 
-        En général, les appareils restent dans cet état parce qu’ils rencontrent des problèmes de connexion au service ou parce que la synchronisation prend beaucoup de temps.  Si le problème persiste sur différentes configurations réseau (téléphonie mobile, Wi-Fi, VPN), après redémarrage de l’appareil et après avoir vérifié que le fournisseur de services partagés est à jour sur l’appareil, contactez le support Microsoft comme décrit dans [Guide pratique pour obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    En général, les appareils restent dans cet état parce qu’ils rencontrent des problèmes de connexion au service ou parce que la synchronisation prend beaucoup de temps.  Si le problème persiste sur différentes configurations réseau (téléphonie mobile, Wi-Fi, VPN), après redémarrage de l’appareil et après avoir vérifié que le fournisseur de services partagés est à jour sur l’appareil, contactez le support Microsoft comme décrit dans [Guide pratique pour obtenir un support technique pour Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
- - Pour les appareils Android :
-    - Certains appareils Android peuvent paraître chiffrés, alors que l’application Portail d’entreprise reconnaît ces appareils comme non chiffrés. 
+- Pour les appareils Android :
+   - Certains appareils Android peuvent paraître chiffrés, alors que l’application Portail d’entreprise reconnaît ces appareils comme non chiffrés. 
     
-        -   Pour ces appareils, l’utilisateur doit définir un code secret de démarrage sécurisé. L’utilisateur reçoit une notification d’appareil de l’application Portail d’entreprise lui demandant de définir un code secret de démarrage pour l’appareil. Après avoir appuyé sur la notification d’appareil et confirmé votre code confidentiel ou mot de passe existant, choisissez l’option **Exiger un code confidentiel pour démarrer l’appareil** dans l’écran **Démarrage sécurisé**. Ensuite, appuyez sur le bouton **Vérifier la conformité** pour l’appareil dans l’application Portail d’entreprise. L’appareil doit maintenant être détecté comme chiffré.
+       -   Pour ces appareils, l’utilisateur doit définir un code secret de démarrage sécurisé. L’utilisateur reçoit une notification d’appareil de l’application Portail d’entreprise lui demandant de définir un code secret de démarrage pour l’appareil. Après avoir appuyé sur la notification d’appareil et confirmé votre code confidentiel ou mot de passe existant, choisissez l’option **Exiger un code confidentiel pour démarrer l’appareil** dans l’écran **Démarrage sécurisé**. Ensuite, appuyez sur le bouton **Vérifier la conformité** pour l’appareil dans l’application Portail d’entreprise. L’appareil doit maintenant être détecté comme chiffré.
     
-        -   Certains fabricants d’appareils chiffrent leurs appareils à l’aide d’un code confidentiel par défaut à la place du code confidentiel secret défini par l’utilisateur. Intune considère le chiffrement au moyen du code confidentiel par défaut comme non sécurisé. En effet, cette méthode de chiffrement peut mettre en danger les données figurant sur l’appareil face à des utilisateurs mal intentionnés en mesure d’accéder physiquement à l’appareil. Si tel est le problème, envisagez d’utiliser les [stratégies de protection des applications](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+       -   Certains fabricants d’appareils chiffrent leurs appareils à l’aide d’un code confidentiel par défaut à la place du code confidentiel secret défini par l’utilisateur. Intune considère le chiffrement au moyen du code confidentiel par défaut comme non sécurisé. En effet, cette méthode de chiffrement peut mettre en danger les données figurant sur l’appareil face à des utilisateurs mal intentionnés en mesure d’accéder physiquement à l’appareil. Si tel est le problème, envisagez d’utiliser les [stratégies de protection des applications](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problèmes de stratégie
 
@@ -84,7 +84,7 @@ Quand vous créez une stratégie de conformité et que vous la liez à une strat
 
 Un appareil peut être bloqué au niveau de l’accès conditionnel sans recevoir d’e-mail d’activation.
 
-- Existe-t-il une règle Exchange par défaut qui met en quarantaine ou bloque les appareils ? Si une règle par défaut bloque ou met en quarantaine les appareils, ces derniers ne peuvent pas recevoir le message d’activation du connecteur Exchange. Ceci est volontaire.
+- Existe-t-il une règle Exchange par défaut qui met en quarantaine ou bloque les appareils ? Si une règle par défaut bloque ou met en quarantaine les appareils, ces derniers ne peuvent pas recevoir le message d’activation du connecteur Exchange. Cela est normal.
 - Le compte de notification est-il correctement configuré comme décrit dans la configuration de base ?
 - L’appareil apparaît-il dans la console d’administration Intune comme appareil Exchange ActiveSync ? Si ce n’est pas le cas, la découverte des appareils est certainement défaillante, probablement en raison d’un problème de synchronisation du connecteur Exchange. Consultez Appareil Exchange ActiveSync non découvert à partir d’Exchange.
 - Examinez les journaux du connecteur Exchange pour l’activité sendemail et recherchez les éventuelles erreurs. Un exemple de la commande à rechercher est SendEmail à partir du compte de notification jusqu’à useremail.
@@ -118,22 +118,22 @@ Si ces procédures de dépannage ne résolvent pas votre problème, le support M
 ### <a name="exchange-connector-logs"></a>Journaux du connecteur Exchange
 
 #### <a name="general-log-information"></a>Informations générales sur les journaux
-Pour afficher les journaux du connecteur Exchange, utilisez [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx). Pour utiliser cet outil, vous devez télécharger le SDK de Windows Server.
+Pour afficher les journaux du connecteur Exchange, utilisez [Server Trace Viewer Tool](server trace viewer tool (<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>). Pour utiliser cet outil, vous devez télécharger le SDK de Windows Server.
 
 >[!NOTE]
 >Les journaux sont dans C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Ils sont contenus dans une série de 30 fichiers journaux qui vont de *Connector0.log* à *Connector29.log*. Les journaux se remplacent les uns les autres dès que 10 Mo de données ont été accumulées dans un journal. Une fois que les journaux arrivent à Connector29, ils reviennent à Connector0 en remplaçant les fichiers journaux précédents.
 
 #### <a name="locating-sync-logs"></a>Localisation des journaux de synchronisation
 
--    Localisez une synchronisation complète dans les journaux en recherchant **full sync**. Le début d’une synchronisation complète est marqué par ce texte :
+- Localisez une synchronisation complète dans les journaux en recherchant **full sync**. Le début d’une synchronisation complète est marqué par ce texte :
 
-    « Traitement de la commande : obtention de la liste des appareils mobiles sans filtre de temps (synchronisation complète) pour <number> utilisateurs »
+  « Traitement de la commande : obtention de la liste des appareils mobiles sans filtre de temps (synchronisation complète) pour <number> utilisateurs »
 
-    La fin du journal pour une synchronisation complète ressemble à ceci :
+  La fin du journal pour une synchronisation complète ressemble à ceci :
 
-    Obtention de la liste des appareils mobiles sans filtre de temps (synchronisation complète) pour 4 utilisateurs réussie. Détails : Résultat de la commande d’inventaire - Appareils synchronisés : 0 ID de commande : commandIDGUID' Intégrité Exchange : 'Server health 'Nom : 'PowerShellExchangeServer: <Name=nomdemonserveurmail>' État : Connected','
+  Obtention de la liste des appareils mobiles sans filtre de temps (synchronisation complète) pour 4 utilisateurs réussie. Détails : Résultat de la commande d’inventaire - Appareils synchronisés : 0 ID de commande : commandIDGUID' Intégrité Exchange : 'Server health 'Nom : 'PowerShellExchangeServer: <Name=nomdemonserveurmail>' État : Connected','
 
--   Localisez une synchronisation (différentielle) rapide dans les journaux en recherchant **quick sync**.
+- Localisez une synchronisation (différentielle) rapide dans les journaux en recherchant **quick sync**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Exceptions dans la commande Get next
 Recherchez les exceptions de la **commande get next** dans les journaux du connecteur Exchange et fournissez-les au support Microsoft.

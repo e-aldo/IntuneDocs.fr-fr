@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurer l’intégration de Lookout Mobile Threat Defense avec Intune
 
@@ -54,32 +54,32 @@ Consultez les étapes suivantes pour savoir comment collecter les informations d
 2. Lorsque vous choisissez le nom de votre abonnement, l’URL inclut l’ID d’abonnement.  Si vous ne trouvez pas votre ID d’abonnement, consultez cet [article du support technique Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) qui fournit des conseils à cette fin.
 
 3. Obtenez votre ID de groupe Azure AD. La console Lookout offre deux niveaux d’accès :  
-  * **Accès complet** : l’administrateur Azure AD peut créer pour les utilisateurs qui ont un accès complet et éventuellement créer un autre groupe pour les utilisateurs qui ont un accès restreint.  Seuls les utilisateurs qui sont membres de ces groupes seront autorisés à se connecter à la **console Lookout**.
-  * **Accès restreint** : les utilisateurs de ce groupe n’ont pas accès à plusieurs modules d’inscription et de configuration dans la console Lookout, et peuvent accéder en lecture seule au module **Stratégie de sécurité** de la console Lookout.  
+   * **Accès complet** : l’administrateur Azure AD peut créer pour les utilisateurs qui ont un accès complet et éventuellement créer un autre groupe pour les utilisateurs qui ont un accès restreint.  Seuls les utilisateurs qui sont membres de ces groupes seront autorisés à se connecter à la **console Lookout**.
+   * **Accès restreint** : les utilisateurs de ce groupe n’ont pas accès à plusieurs modules d’inscription et de configuration dans la console Lookout, et peuvent accéder en lecture seule au module **Stratégie de sécurité** de la console Lookout.  
 
-    > [!TIP] 
-    > Pour plus d’informations sur les autorisations, consultez [cet article](https://personal.support.lookout.com/hc/articles/114094105653) sur le site web de Lookout.
+     > [!TIP] 
+     > Pour plus d’informations sur les autorisations, consultez [cet article](https://personal.support.lookout.com/hc/articles/114094105653) sur le site web de Lookout.
 
-    > [!NOTE] 
-    > L’**ID d’objet de groupe** est indiqué dans la page **Propriétés** du groupe dans le **portail de gestion Azure AD**.
+     > [!NOTE] 
+     > L’**ID d’objet de groupe** est indiqué dans la page **Propriétés** du groupe dans le **portail de gestion Azure AD**.
 
 4. Une fois que vous avez collecté ces informations, contactez le support technique Lookout (adresse e-mail : enterprisesupport@lookout.com). Le support technique Lookout travaillera avec votre contact principal pour intégrer votre abonnement et créer votre compte d’entreprise Lookout sur la base des informations que vous avez collectées.
 
 ## <a name="configure-your-subscription"></a>Configurer votre abonnement
 
-1. Une fois que le support de Lookout crée votre compte d'entreprise Lookout, Lookout envoie au contact principal de votre entreprise un e-mail contenant un lien vers l’URL de connexion : https://aad.lookout.com/les?action=consent.
+1. Une fois que le support de Lookout crée votre compte d'entreprise Lookout, Lookout envoie au contact principal de votre entreprise un e-mail contenant un lien vers l’URL de connexion : <https://aad.lookout.com/les?action=consent>.
 
-2.  La première connexion à la console Lookout doit être effectuée à l'aide d'un compte d’utilisateur ayant le rôle Azure AD Administrateur général, afin d'inscrire votre locataire Azure AD. Les connexions ultérieures n'ont pas besoin de ce niveau de privilège Azure AD. La page de consentement s’affiche. Choisissez **Accepter** pour terminer l’inscription. Une fois que vous avez donné votre consentement, vous êtes redirigé vers la console Lookout.
+2. La première connexion à la console Lookout doit être effectuée à l'aide d'un compte d’utilisateur ayant le rôle Azure AD Administrateur général, afin d'inscrire votre locataire Azure AD. Les connexions ultérieures n'ont pas besoin de ce niveau de privilège Azure AD. La page de consentement s’affiche. Choisissez **Accepter** pour terminer l’inscription. Une fois que vous avez donné votre consentement, vous êtes redirigé vers la console Lookout.
 
-    ![capture d’écran de la page de première connexion de la console Lookout](./media/lookout_mtp_initial_login.png)
+   ![capture d’écran de la page de première connexion de la console Lookout](./media/lookout_mtp_initial_login.png)
 
-3.  Dans la [console Lookout](https://aad.lookout.com), à partir du module **Système**, choisissez l’onglet **Connecteurs**, puis sélectionnez **Intune**.
+3. Dans la [console Lookout](https://aad.lookout.com), à partir du module **Système**, choisissez l’onglet **Connecteurs**, puis sélectionnez **Intune**.
 
-    ![capture d’écran de la console Lookout montrant l’onglet Connecteurs ouvert et l’option Intune mise en surbrillance](./media/lookout_mtp_setup-intune-connector.png)
+   ![capture d’écran de la console Lookout montrant l’onglet Connecteurs ouvert et l’option Intune mise en surbrillance](./media/lookout_mtp_setup-intune-connector.png)
 
-4.  Accédez à **Connecteurs** > **Paramètres de connexion** et spécifiez la **fréquence de pulsations** en minutes.
+4. Accédez à **Connecteurs** > **Paramètres de connexion** et spécifiez la **fréquence de pulsations** en minutes.
 
-    ![capture d’écran de l’onglet Paramètres de connexion montrant la fréquence de pulsations définie](./media/lookout-mtp-connection-settings.png)
+   ![capture d’écran de l’onglet Paramètres de connexion montrant la fréquence de pulsations définie](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Configurer les groupes d’inscription
 1. Comme meilleure pratique, créez un groupe de sécurité Azure AD dans le [portail de gestion Azure AD](https://manage.windowsazure.com) contenant un petit nombre d’utilisateurs afin de tester l’intégration Lookout.

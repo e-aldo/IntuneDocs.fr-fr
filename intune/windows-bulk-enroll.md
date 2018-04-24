@@ -1,28 +1,28 @@
 ---
 title: Inscription en bloc pour Windows 10
 titlesuffix: Microsoft Intune
-description: "Créer un package d’inscription en bloc pour Microsoft Intune"
-keywords: 
+description: Créer un package d’inscription en bloc pour Microsoft Intune
+keywords: ''
 author: Erikje
 ms.author: erikje
 manager: dougeby
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 851be6ad98383937a3457a33e47115933f309cea
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4f7d9cbf4f67a1205189deb836d738a70e940125
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscription en bloc des appareils Windows
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En tant qu’administrateur, vous pouvez joindre un grand nombre de nouveaux appareils Windows à Azure Active Directory et à Intune. Pour inscrire des appareils en bloc pour votre client Azure AD, vous devez créer un package d’approvisionnement avec l’application Windows Configuration Designer (WCD). En appliquant le package d’approvisionnement aux appareils d’entreprise, vous pouvez joindre les appareils à votre client Azure AD et les inscrire pour une gestion dans Intune. Une fois le package appliqué, vos utilisateurs Azure AD peuvent immédiatement se connecter.
 
@@ -36,48 +36,48 @@ Les utilisateurs d’Azure AD utilisent ces appareils en tant qu’utilisateurs
 ## <a name="create-a-provisioning-package"></a>Créer un package d’approvisionnement
 
 1. Téléchargez l’application [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) à partir du Microsoft Store.
-![Capture d’écran de l’application Windows Configuration Designer du Windows Store](media/bulk-enroll-store.png)
+   ![Capture d’écran de l’application Windows Configuration Designer du Windows Store](media/bulk-enroll-store.png)
 
 2. Ouvrez l’application **Windows Configuration Designer** et sélectionnez **Provision desktop devices** (Approvisionner des appareils de bureau).
-![Capture d’écran montrant l’option Provision desktop devices (Approvisionner des appareils de bureau) sélectionnée dans l’application Windows Configuration Designer](media/bulk-enroll-select.png)
+   ![Capture d’écran montrant l’option Provision desktop devices (Approvisionner des appareils de bureau) sélectionnée dans l’application Windows Configuration Designer](media/bulk-enroll-select.png)
 
 3. Vous accédez à une fenêtre **Nouveau projet** dans laquelle vous pouvez spécifier les informations suivantes :
-  - **Nom** : nom de votre projet
-  - **Dossier du projet** : emplacement d’enregistrement du projet
-  - **Description** : description facultative du projet ![Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](media/bulk-enroll-name.png)
+   - **Nom** : nom de votre projet
+   - **Dossier du projet** : emplacement d’enregistrement du projet
+   - **Description** : description facultative du projet ![Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](media/bulk-enroll-name.png)
 
-4.  Entrez un nom unique pour vos appareils. Les noms peuvent inclure un numéro de série (%%SERIAL%%) ou un jeu de caractères aléatoires. Si vous le souhaitez, vous pouvez également entrer une clé de produit si vous mettez à niveau l’édition de Windows, configurer l’appareil pour une utilisation partagée et supprimer le logiciel préinstallé.
+4. Entrez un nom unique pour vos appareils. Les noms peuvent inclure un numéro de série (%%SERIAL%%) ou un jeu de caractères aléatoires. Si vous le souhaitez, vous pouvez également entrer une clé de produit si vous mettez à niveau l’édition de Windows, configurer l’appareil pour une utilisation partagée et supprimer le logiciel préinstallé.
 
-    ![Capture d’écran indiquant où spécifier le nom et la clé de produit dans l’application Windows Configuration Designer](media/bulk-enroll-device.png)
+   ![Capture d’écran indiquant où spécifier le nom et la clé de produit dans l’application Windows Configuration Designer](media/bulk-enroll-device.png)
 
-5.  Si vous le souhaitez, vous pouvez configurer les appareils réseau Wi-Fi auxquels se connecter lors de leur premier démarrage.  Si les appareils réseau ne sont pas configurés, une connexion de réseau câblé est requise lors du premier démarrage de l’appareil.
-![Capture d’écran indiquant l’activation du Wi-Fi, y compris les options SSID réseau et le type de réseau, dans l’application Windows Configuration Designer](media/bulk-enroll-network.png)
+5. Si vous le souhaitez, vous pouvez configurer les appareils réseau Wi-Fi auxquels se connecter lors de leur premier démarrage.  Si les appareils réseau ne sont pas configurés, une connexion de réseau câblé est requise lors du premier démarrage de l’appareil.
+   ![Capture d’écran indiquant l’activation du Wi-Fi, y compris les options SSID réseau et le type de réseau, dans l’application Windows Configuration Designer](media/bulk-enroll-network.png)
 
-6.  Sélectionnez **Enroll in Azure AD** (S’inscrire dans Azure AD), entrez une date dans le champ **Bulk Token Expiry** (Expiration du jeton en bloc), puis sélectionnez **Get Bulk Token** (Obtenir le jeton en bloc).
-![Capture d’écran de la gestion de compte dans l’application Windows Configuration Designer](media/bulk-enroll-account.png)
+6. Sélectionnez **Enroll in Azure AD** (S’inscrire dans Azure AD), entrez une date dans le champ **Bulk Token Expiry** (Expiration du jeton en bloc), puis sélectionnez **Get Bulk Token** (Obtenir le jeton en bloc).
+   ![Capture d’écran de la gestion de compte dans l’application Windows Configuration Designer](media/bulk-enroll-account.png)
 
 7. Indiquez vos informations d’identification Azure AD pour obtenir un jeton en bloc.
-![Capture d’écran de la connexion à l’application Windows Configuration Designer](media/bulk-enroll-cred.png)
+   ![Capture d’écran de la connexion à l’application Windows Configuration Designer](media/bulk-enroll-cred.png)
 
-8.  Cliquez sur **Suivant** une fois le **jeton en bloc** obtenu.
+8. Cliquez sur **Suivant** une fois le **jeton en bloc** obtenu.
 
 9. Si vous le souhaitez, vous pouvez **ajouter des applications** et **ajouter des certificats**. Ces applications et certificats sont approvisionnés sur l’appareil.
 
-10. Si vous le souhaitez, vous pouvez protéger votre package d’approvisionnement par un mot de passe.  Cliquez sur **Create (Créer)**.
-![Capture d’écran de la protection de package dans l’application Windows Configuration Designer](media/bulk-enroll-create.png)
+10. Si vous le souhaitez, vous pouvez protéger votre package d’approvisionnement par un mot de passe.  Cliquez sur **Créer**.
+    ![Capture d’écran de la protection de package dans l’application Windows Configuration Designer](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Approvisionner des appareils
 
 1. Accédez au package d’approvisionnement à l’emplacement spécifié dans le **dossier de projet** indiqué dans l’application.
 
 2. Choisissez comment vous allez appliquer le package d’approvisionnement à l’appareil.  Un package d’approvisionnement peut être appliqué à un appareil de plusieurs manières :
- - Copiez le package d’approvisionnement sur une clé USB, insérez la clé USB dans l’appareil que vous voulez inscrire en bloc, puis appliquez-le lors de l’installation initiale
- - Copiez le package d’approvisionnement dans un dossier réseau et insérez-le dans l’appareil que vous voulez inscrire en bloc après l’installation initiale
+   - Copiez le package d’approvisionnement sur une clé USB, insérez la clé USB dans l’appareil que vous voulez inscrire en bloc, puis appliquez-le lors de l’installation initiale
+   - Copiez le package d’approvisionnement dans un dossier réseau et insérez-le dans l’appareil que vous voulez inscrire en bloc après l’installation initiale
 
- Pour obtenir des instructions détaillées sur l’application d’un package d’approvisionnement, consultez [Appliquer un package d’approvisionnement](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
+   Pour obtenir des instructions détaillées sur l’application d’un package d’approvisionnement, consultez [Appliquer un package d’approvisionnement](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
 3. Après avoir appliqué le package, l’appareil redémarrera automatiquement au bout d’une minute.
- ![Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](media/bulk-enroll-add.png)
+   ![Capture d’écran indiquant où spécifier le nom, le dossier du projet et la description dans l’application Windows Configuration Designer](media/bulk-enroll-add.png)
 
 4. Lorsque l’appareil redémarre, il se connecte à Azure Active Directory et s’inscrit dans Microsoft Intune.
 

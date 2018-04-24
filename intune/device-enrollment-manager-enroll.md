@@ -1,29 +1,29 @@
 ---
-title: "Inscrire des appareils avec un compte de gestionnaire d’inscription d’appareil"
+title: Inscrire des appareils avec un compte de gestionnaire d’inscription d’appareil
 titlesuffix: Microsoft Intune
-description: "Utilisez le compte de gestionnaire d’inscription d’appareil pour inscrire des appareils dans Intune. \""
-keywords: 
+description: Utilisez le compte de gestionnaire d’inscription d’appareil pour inscrire des appareils dans Intune. "
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscrire des appareils avec un compte de gestionnaire d’inscription d’appareil
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Les organisations peuvent utiliser Intune pour gérer un grand nombre d'appareils mobiles avec un seul compte d’utilisateur. Le compte du *gestionnaire d’inscription d’appareil* est un compte d’utilisateur spécial qui peut inscrire jusqu’à 1 000 appareils. Vous ajoutez des utilisateurs existants au compte de gestionnaire d’inscription d’appareil afin qu’ils puissent bénéficier des fonctionnalités associées. Chaque appareil inscrit utilise une seule licence. Nous vous recommandons d’utiliser des appareils inscrits par le biais de ce compte comme appareils partagés plutôt que comme appareils personnels (« BYOD »).  
 
@@ -49,12 +49,12 @@ L’utilisateur du gestionnaire d’inscription d’appareil peut :
 Les appareils inscrits avec un compte de gestionnaire d’inscription d’appareil ont les limitations suivantes :
 
   - Pas d’accès par utilisateur. Étant donné qu’aucun utilisateur n’est affecté aux appareils, l’appareil n’a pas accès à la messagerie ou aux données d’entreprise. Les configurations VPN, par exemple, peuvent toujours être utilisées pour fournir aux applications d’appareil un accès aux données.
-  - Aucun accès conditionnel car il s’agit de scénarios par utilisateur.
   - L’utilisateur du gestionnaire d’inscription d’appareil ne peut pas annuler l’inscription des appareils inscrits auprès du gestionnaire d’inscription d’appareil sur l’appareil lui-même à l’aide du portail d’entreprise. L’administrateur Intune peut annuler l’inscription.
   - Seul l’appareil local s’affiche dans l’application Portail d’entreprise ou le site web.
-  - Les utilisateurs ne peuvent pas utiliser les applications du programme d’achat en volume (VPP) Apple en raison des critères des identifiants Apple par utilisateur pour la gestion des applications.
+  - Les utilisateurs ne peuvent pas utiliser les applications du programme d’achat en volume (VPP) Apple avec des licences utilisateur en raison des critères des identifiants Apple par utilisateur pour la gestion des applications.
   - (iOS uniquement) Si vous utilisez le gestionnaire d’inscription d’appareil pour inscrire des appareils iOS, vous ne pouvez pas utiliser Apple Configurator, Apple School Manager (ASM) ou le programme d’inscription des appareils Apple pour inscrire des appareils.
   - (Android uniquement) Il existe une limite quant à la quantité d’appareils Android for Work qui peuvent être inscrits avec un seul compte DEM. Vous pouvez inscrire un maximum de 10 appareils de profil professionnel Android par compte DEM. Cette limitation ne s’applique pas à l’inscription Android héritée.
+  - Les appareils peuvent installer des applications VPP s’ils ont des licences d’appareil.
   - Chaque appareil nécessite une licence d’appareil. Apprenez-en davantage sur les [licences utilisateur et d’appareil](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 

@@ -1,27 +1,27 @@
 ---
-title: "Paramètres VPN Microsoft Intunes pour les appareils Windows Phone 8.1"
-titleSuffix: 
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils exécutant Windows Phone 8.1."
-keywords: 
+title: Paramètres VPN Microsoft Intunes pour les appareils Windows Phone 8.1
+titleSuffix: ''
+description: Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils exécutant Windows Phone 8.1.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 786a817fbbd821d74f4f1a03fdec5a6893ed890b
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 458586a2d507e913eb702c0ee2e3c0531350f1b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configurer les paramètres VPN dans Microsoft Intune pour les appareils exécutant Windows Phone 8.1
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cet article présente les paramètres Intune permettant de configurer des connexions VPN sur les appareils exécutant Windows Phone 8.1.
 
@@ -56,7 +56,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivan
 - **Rôle** (Pulse Secure uniquement) : spécifiez le nom du rôle d'utilisateur qui a accès à cette connexion. Un rôle d’utilisateur définit des options et des paramètres personnels, et active ou désactive certaines fonctionnalités d’accès.
 - **Domaine** (Pusle Secure uniquement) : spécifiez le nom du domaine d'authentification que vous souhaitez utiliser. Un domaine d’authentification est un regroupement de ressources d’authentification qu’utilise le type de connexion Pulse Secure.
 
-- **Liste de recherche de suffixes DNS** - **Ajouter** un ou plusieurs suffixes DNS. Chaque suffixe DNS que vous spécifiez est recherché lors de la connexion à un site web en utilisant un nom court. Par exemple, spécifiez les suffixes DNS **domain1.contoso.com** et **domain2.contoso.com**, accédez à l’URL **http://mywebsite**, et les URL **http://mywebsite.domain1.contoso.com** et **http://mywebsite.domain2.contoso.com** sont recherchées.
+- **Liste de recherche de suffixes DNS** - **Ajouter** un ou plusieurs suffixes DNS. Chaque suffixe DNS que vous spécifiez est recherché lors de la connexion à un site web en utilisant un nom court. Par exemple, si vous spécifiez les suffixes DNS **domain1.contoso.com** et **domain2.contoso.com** et que vous visitez l’URL **http://mywebsite**, les URL **http://mywebsite.domain1.contoso.com** et **http://mywebsite.domain2.contoso.com font l’objet d’une recherche**.
 
 - **XML personnalisé** : spécifiez des commandes XML personnalisées qui configurent la connexion VPN.
 
@@ -64,7 +64,6 @@ Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivan
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **Exemple pour CheckPoint Mobile VPN :**
@@ -76,13 +75,11 @@ Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivan
 **Exemple pour SonicWall Mobile Connect :**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **Exemple pour Client F5 Edge :**
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 Pour plus d’informations sur l’écriture des commandes XML personnalisées, reportez-vous à la documentation du VPN de chaque fabricant.
@@ -95,7 +92,7 @@ Pour plus d’informations sur l’écriture des commandes XML personnalisées, 
 ## <a name="proxy-settings"></a>Paramètres du proxy
 
 - **Détecter automatiquement les paramètres du proxy** : si votre serveur VPN nécessite un serveur proxy pour la connexion, spécifiez si vous souhaitez que les appareils détectent automatiquement les paramètres de connexion. Pour plus d'informations, consultez la documentation de Windows Server.
-- **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Saisissez **l’URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier de configuration.
+- **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Entrez **l’URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier de configuration.
 - **Utiliser un serveur proxy** : activez cette option si vous souhaitez saisir manuellement les paramètres du serveur proxy.
     - **Adresse** : saisissez l’adresse du serveur proxy (comme une adresse IP).
     - **Numéro de port** : saisissez le numéro de port associé au serveur proxy.

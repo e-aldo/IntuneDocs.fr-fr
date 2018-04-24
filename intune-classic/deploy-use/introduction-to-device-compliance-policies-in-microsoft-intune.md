@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce8375a1b946a7ba5286637b1958539fd5015d8a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c9c93d29ddee6d01e057c01a44c81950b857213
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Stratégies de conformité d’appareils dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="what-is-a-compliance-policy"></a>Qu’est-ce qu’une stratégie de conformité ?
 Pour protéger les données de l’entreprise, vous devez vérifier que les appareils utilisés pour accéder aux données et applications d’entreprise respectent certaines règles. Ces règles peuvent inclure l’utilisation d’un code confidentiel pour accéder aux appareils et le chiffrement des données stockées sur les appareils. Un ensemble de règles de ce type est appelé une stratégie de conformité.
@@ -40,7 +40,7 @@ Le tableau suivant répertorie les types d’appareils pris en charge par les st
 
 -----------------------------
 
-|Paramètre de stratégie| Windows 8.1 et versions ultérieures| Windows Phone 8.1 et versions ultérieures| iOS 8.0 et versions ultérieures|Android 4.0 et versions ultérieures<br/>Samsung Knox Standard 4.0 et versions ultérieures|
+|Paramètre de stratégie| Windows 8.1 et versions ultérieures| Windows Phone 8.1 et versions ultérieures| iOS 8.0 et versions ultérieures|Android 4.0 et versions ultérieures<br/>Samsung Knox Standard 4.0 et versions ultérieures|
 |-----|----|----|----|----|
 |**Configuration d’un code confidentiel ou mot de passe** |Corrigé|Corrigé|Corrigé|En quarantaine|
 |**Chiffrement de l’appareil**|Non applicable|Corrigé|Corrigé (en définissant le code confidentiel)|En quarantaine|

@@ -1,28 +1,28 @@
 ---
-title: "Verrouillage à distance et réinitialisation du mot de passe"
-description: "Intune fournit des fonctionnalités de verrouillage à distance et de réinitialisation du code secret."
-keywords: 
+title: Verrouillage à distance et réinitialisation du mot de passe
+description: Intune fournit des fonctionnalités de verrouillage à distance et de réinitialisation du code secret.
+keywords: ''
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb7014392655eef44f94cf095717616732ebfd0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fc1cad418904de335b434a3726e2772d0558b303
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protéger vos appareils à l’aide du verrouillage à distance et de la réinitialisation du code d’accès
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune fournit des fonctionnalités de verrouillage à distance et de réinitialisation du code d’accès.
 
@@ -31,17 +31,17 @@ Si un utilisateur perd un appareil, vous pouvez verrouiller celui-ci à distance
 
 Le tableau ci-dessous illustre le fonctionnement du verrouillage à distance sur différentes plateformes mobiles.
 
-|Plateforme|Verrouillage à distance|
+|Plate-forme|Verrouillage à distance|
 |------------|---------------|
-|macOS|Non pris en charge|
+|macOS|Non prise en charge|
 |iOS|Pris en charge|
 |Android|Pris en charge|
 |Android for Work|Pris en charge|
 |Windows 10 (Mobile)|Pris en charge|
-|Windows 10 (Desktop)|Non pris en charge|
+|Windows 10 (Desktop)|Non prise en charge|
 |Windows Phone 8 et Windows Phone 8.1|Pris en charge|
 |Windows RT 8.1 et Windows RT|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
-|Windows 8.1|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
+|Windows 8.1|Prise en charge si l'utilisateur actuel de l'appareil est le même utilisateur qui a inscrit l'appareil.|
 
 Le verrouillage à distance n’est pas pris en charge pour les PC Windows inscrits auprès du client logiciel Intune.
 
@@ -59,16 +59,16 @@ Le verrouillage à distance n’est pas pris en charge pour les PC Windows inscr
 ## <a name="reset-the-passcode-on-a-device"></a>Réinitialiser le code d’accès d’un appareil
 Si un utilisateur oublie un code d’accès, vous pouvez l’aider à résoudre ce problème en supprimant le code d’accès d’un appareil ou en forçant l’application d’un nouveau code accès temporaire sur un appareil. Le tableau suivant indique la méthode de réinitialisation du code d’accès sur différentes plateformes mobiles.
 
-|Plateforme|Réinitialiser le code secret|
+|Plate-forme|Réinitialiser le code secret|
 |------------|------------------|
-|macOS|Non pris en charge|
+|macOS|Non prise en charge|
 |iOS|Prise en charge de l'effacement du code d'accès d'un appareil. Ne crée pas un nouveau code d'accès temporaire.|
 |Android|Prise en charge sur les versions antérieures à Android 7.0. Crée un code d’accès temporaire.|
 |Android for Work|Non prise en charge|
 |Windows 10 Mobile|Prise en charge sur les périphériques mobiles Windows 10 Creator et versions ultérieures qui disposent d’une connexion à Azure AD.|
 |Windows Phone 8 et Windows Phone 8.1|Pris en charge|
 |Windows RT 8.1|Non pris en charge|
-|Windows 8.1|Non pris en charge|
+|Windows 8.1|Non pris en charge|
 |Windows 10 Desktop|Non pris en charge|
 
 La réinitialisation du code d’accès n’est pas prise en charge pour les PC Windows inscrits auprès du client logiciel Intune.

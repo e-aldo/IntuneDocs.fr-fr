@@ -1,6 +1,6 @@
 ---
 title: Forum Aux Questions sur la Gestion des applications mobiles (MAM) et la protection des applications
-description: Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (MAM) Intune et la protection des applications Intune.
+description: Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (GAM) Intune et la protection des applications Intune.
 keywords: ''
 author: oydang
 ms.author: oydang
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Forum Aux Questions sur la Gestion des applications mobiles (MAM) et la protection des applications
+# <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Forum Aux Questions sur la Gestion des applications mobiles (GAM) et la protection des applications
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cet article fournit des réponses à certaines questions fréquemment posées sur la gestion des applications mobiles (MAM) Intune et la protection des applications Intune.
 
@@ -61,23 +61,23 @@ Cet article fournit des réponses à certaines questions fréquemment posées su
 
 **Quelles sont les exigences supplémentaires pour utiliser [l’application mobile Outlook ](https://www.microsoft.com/outlook-com/mobile/)?**
 
-  1. L’utilisateur final doit avoir installé l’application mobile Outlook sur son appareil.
+1. L’utilisateur final doit avoir installé l’application mobile Outlook sur son appareil.
 
-  2. L’utilisateur final doit disposer d’une boîte aux lettres [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) et d’une licence associée à son compte Azure Active Directory.
+2. L’utilisateur final doit disposer d’une boîte aux lettres [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) et d’une licence associée à son compte Azure Active Directory.
 
-  >[!NOTE]
-  > L’application mobile Outlook prend actuellement en charge uniquement Microsoft Exchange Online et ne prend pas en charge Exchange sur site ou Exchange dédié à Office 365.
+   >[!NOTE]
+   > L’application mobile Outlook prend actuellement en charge uniquement Microsoft Exchange Online et ne prend pas en charge Exchange sur site ou Exchange dédié à Office 365.
 
 **Quelles sont les exigences supplémentaires pour utiliser les applications [Word, Excel et PowerPoint](https://products.office.com/business/office) ?**
 
-  1. L’utilisateur final doit disposer d’une licence pour [Office 365 Business ou Entreprise](https://products.office.com/business/compare-more-office-365-for-business-plans) associée à son compte Azure Active Directory. L’abonnement doit inclure les applications Office sur des appareils mobiles et peut inclure un compte de stockage cloud avec [OneDrive Entreprise](https://onedrive.live.com/about/business/). Des licences Office 365 peuvent être attribuées dans le [portail Office](http://portal.office.com) en tenant compte des [instructions suivantes](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+1. L’utilisateur final doit disposer d’une licence pour [Office 365 Business ou Entreprise](https://products.office.com/business/compare-more-office-365-for-business-plans) associée à son compte Azure Active Directory. L’abonnement doit inclure les applications Office sur des appareils mobiles et peut inclure un compte de stockage cloud avec [OneDrive Entreprise](https://onedrive.live.com/about/business/). Des licences Office 365 peuvent être attribuées dans le [portail Office](http://portal.office.com) en tenant compte des [instructions suivantes](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. L’utilisateur final doit avoir configuré un emplacement managé à l’aide de la fonctionnalité d’enregistrement granulaire sous le paramètre de stratégie de protection des applications « Empêcher Enregistrer sous ». Par exemple, si l’emplacement managé est OneDrive, l’application [OneDrive](https://onedrive.live.com/about/) doit être configurée dans les applications Word, Excel ou PowerPoint de l’utilisateur final.
+2. L’utilisateur final doit avoir configuré un emplacement managé à l’aide de la fonctionnalité d’enregistrement granulaire sous le paramètre de stratégie de protection des applications « Empêcher Enregistrer sous ». Par exemple, si l’emplacement managé est OneDrive, l’application [OneDrive](https://onedrive.live.com/about/) doit être configurée dans les applications Word, Excel ou PowerPoint de l’utilisateur final.
 
-  3. Si l’emplacement managé est OneDrive, l’application doit être ciblée par la stratégie de protection des applications déployée pour l’utilisateur final.
+3. Si l’emplacement managé est OneDrive, l’application doit être ciblée par la stratégie de protection des applications déployée pour l’utilisateur final.
 
-  >[!NOTE]
-  > Les applications mobiles Office prennent actuellement en charge uniquement SharePoint Online et SharePoint on-premises.
+   >[!NOTE]
+   > Les applications mobiles Office prennent actuellement en charge uniquement SharePoint Online et SharePoint on-premises.
 
 **Pourquoi un emplacement managé (ex. OneDrive) est-il nécessaire pour Office ?** Intune marque toutes les données de l’application en tant que données « d’entreprise » ou « personnelles ». Les données sont considérées comme « d’entreprise » lorsqu’elles proviennent d’un emplacement de l’entreprise. Pour les applications Office, Intune considère les sites d’entreprise suivants : e-mail (Exchange) ou stockage cloud (application OneDrive avec un compte OneDrive Entreprise).
 
@@ -111,7 +111,7 @@ L’administrateur informatique peut définir le paramètre de stratégie de pro
   4. **Comment Intune protège-t-il le code PIN contre les attaques en force brute ?** Dans le cadre de la stratégie de code PIN d’application, l’administrateur peut définir un nombre maximal de tentatives d’authentification de son code PIN avant le verrouillage de l’application. Une fois que le nombre de tentatives atteint, le Kit de développement logiciel (SDK) d’application Intune peut réinitialiser les données « d’entreprise » dans l’application.
   
   5. **Pourquoi dois-je définir un code PIN à deux reprises dans des applications provenant du même éditeur ?**
-MAM (sur iOS) prend actuellement en charge les codes PIN au niveau de l’application avec des caractères alphanumériques et spéciaux (appelés « code secret ») qui nécessitent l’implication d’applications (ex. WXP, Outlook, Managed Browser, Yammer) pour intégrer le kit SDK d’application Intune pour iOS. Sans cela, les paramètres de code secret ne sont pas appliqués correctement pour les applications ciblées. Il s’agissait d’une fonctionnalité publiée dans le SDK Intune pour iOS version 7.1.12. <br> Pour prendre en charge cette fonctionnalité et garantir la compatibilité descendante avec les versions antérieures du Kit SDK Intune pour iOS, tous les codes PIN (numériques ou codes secrets) à partir de la version 7.1.12 sont gérés séparément du code PIN numérique des versions précédentes du Kit SDK. Par conséquent, si un appareil contient des applications avec le Kit SDK Intune pour des versions iOS antérieures à 7.1.12 et ultérieures à 7.1.12 du même éditeur, deux codes PIN doivent être définis. <br><br> Cela étant dit, les deux codes PIN (pour chaque application) ne sont liés d’aucune manière et doivent respecter la stratégie de protection appliquée à l’application. Par conséquent, *uniquement* si les applications A et B ont les mêmes stratégies de code PIN, l’utilisateur peut définir deux fois le même code PIN. <br><br> Ce comportement est spécifique au code PIN sur les applications iOS activées avec la gestion des applications mobiles Intune. Au fil du temps, à mesure que les applications adoptent les versions ultérieures du Kit SDK Intune pour iOS, définir deux fois un code PIN sur les applications d’un même éditeur pose moins de problèmes. Consultez la remarque ci-dessous pour obtenir un exemple.
+GAM (sous iOS) prend actuellement en charge les codes PIN au niveau de l’application avec des caractères alphanumériques et spéciaux (appelés « code secret ») qui nécessitent l’implication d’applications (ex. WXP, Outlook, Managed Browser, Yammer) pour intégrer le kit SDK d’application Intune pour iOS. Sans cela, les paramètres de code secret ne sont pas appliqués correctement pour les applications ciblées. Il s’agissait d’une fonctionnalité publiée dans le SDK Intune pour iOS version 7.1.12. <br> Pour prendre en charge cette fonctionnalité et garantir la compatibilité descendante avec les versions antérieures du Kit SDK Intune pour iOS, tous les codes PIN (numériques ou codes secrets) à partir de la version 7.1.12 sont gérés séparément du code PIN numérique des versions précédentes du Kit SDK. Par conséquent, si un appareil contient des applications avec le Kit SDK Intune pour des versions iOS antérieures à 7.1.12 et ultérieures à 7.1.12 du même éditeur, deux codes PIN doivent être définis. <br><br> Cela étant dit, les deux codes PIN (pour chaque application) ne sont liés d’aucune manière et doivent respecter la stratégie de protection appliquée à l’application. Par conséquent, *uniquement* si les applications A et B ont les mêmes stratégies de code PIN, l’utilisateur peut définir deux fois le même code PIN. <br><br> Ce comportement est spécifique au code PIN sur les applications iOS activées avec la gestion des applications mobiles Intune. Au fil du temps, à mesure que les applications adoptent les versions ultérieures du Kit SDK Intune pour iOS, définir deux fois un code PIN sur les applications d’un même éditeur pose moins de problèmes. Consultez la remarque ci-dessous pour obtenir un exemple.
 
 >[!NOTE]
 > Par exemple, si l’application A est générée avec une version antérieure à 7.1.12 et que l’application B est générée avec une version supérieure ou égale à 7.1.12 du même éditeur, l’utilisateur final devra définir séparément les codes PIN pour A et B si ces deux apps sont installées sur un appareil iOS. <br> Si une application C avec le Kit SDK version 7.1.9 est installée sur l’appareil, elle utilisera le même code PIN que l’application A. <br> Une application D avec une version 7.1.14 partagera le même code PIN que l’application B. <br> Si seules les applications A et C sont installées sur un appareil, vous devez définir un seul code PIN. Il en va de même si seules les applications B et D sont installées sur un appareil.
@@ -124,15 +124,15 @@ MAM (sur iOS) prend actuellement en charge les codes PIN au niveau de l’applic
 
 **Comment Intune réinitialise-t-il des données à distance ?** Intune peut effacer des données d’application de trois manières différentes : réinitialisation complète de l’appareil, réinitialisation sélective pour la gestion des appareils mobiles et réinitialisation sélective pour la gestion des applications mobiles. Pour plus d’informations sur la réinitialisation à distance pour la gestion des appareils mobiles, consultez [Protégez vos données avec la réinitialisation complète ou sélective à l’aide de Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Pour plus d’informations sur la réinitialisation sélective à l’aide de la gestion des applications mobiles, consultez [Réinitialiser les données d’applications d’entreprise managées avec Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **Qu’est-ce-que la réinitialisation complète ?** La [réinitialisation complète](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) supprime toutes les données et paramètres utilisateur de **l’appareil** en restaurant les paramètres d’usine par défaut de l’appareil. L’appareil est supprimé d’Intune.
-  >[!NOTE]
-  > La réinitialisation complète est possible uniquement sur les appareils inscrits dans la gestion des périphériques mobiles (GPM).
+1. **Qu’est-ce-que la réinitialisation complète ?** La [réinitialisation complète](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) supprime toutes les données et paramètres utilisateur de **l’appareil** en restaurant les paramètres d’usine par défaut de l’appareil. L’appareil est supprimé d’Intune.
+   >[!NOTE]
+   > La réinitialisation complète est possible uniquement sur les appareils inscrits dans la gestion des périphériques mobiles (GPM).
 
-  2. **Qu’est-ce que la réinitialisation sélective pour la gestion des appareils mobiles ?** Consultez la rubrique [Protégez vos données avec la réinitialisation complète ou sélective à l’aide de Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) pour en savoir plus sur la réinitialisation sélective.
+2. **Qu’est-ce que la réinitialisation sélective pour la gestion des appareils mobiles ?** Consultez la rubrique [Protégez vos données avec la réinitialisation complète ou sélective à l’aide de Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) pour en savoir plus sur la réinitialisation sélective.
 
-  3. **Qu’est-ce que la réinitialisation sélective pour la gestion des applications mobiles ?** La réinitialisation sélective pour la gestion des applications mobiles supprime simplement les données d’applications d’entreprise à partir d’une application. La requête est lancée à l’aide du portail Intune Azure. Pour savoir comment lancer une requête de réinitialisation, consultez [Réinitialiser les données d’applications d’entreprise managées avec Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
+3. **Qu’est-ce que la réinitialisation sélective pour la gestion des applications mobiles ?** La réinitialisation sélective pour la gestion des applications mobiles supprime simplement les données d’applications d’entreprise à partir d’une application. La requête est lancée à l’aide du portail Intune Azure. Pour savoir comment lancer une requête de réinitialisation, consultez [Réinitialiser les données d’applications d’entreprise managées avec Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  4. **Quelle est la vitesse de la réinitialisation sélective pour la gestion des applications mobiles ?** Si l’utilisateur utilise l’application lorsque la réinitialisation sélective est lancée, le Kit de développement logiciel (SDK) d’application Intune contrôle toutes les 30 minutes la présence d’une requête de réinitialisation sélective du service MAM Intune. Il vérifie également la présence d’une réinitialisation sélective lorsque l’utilisateur lance l’application pour la première fois et se connecte avec son compte professionnel ou scolaire.
+4. **Quelle est la vitesse de la réinitialisation sélective pour la gestion des applications mobiles ?** Si l’utilisateur utilise l’application lorsque la réinitialisation sélective est lancée, le Kit de développement logiciel (SDK) d’application Intune contrôle toutes les 30 minutes la présence d’une requête de réinitialisation sélective du service de GAM Intune. Il vérifie également la présence d’une réinitialisation sélective lorsque l’utilisateur lance l’application pour la première fois et se connecte avec son compte professionnel ou scolaire.
 
 **Pourquoi les services locaux (on-prem) ne fonctionnent-ils pas avec des applications protégées par Intune ?** La protection d’applications Intune dépend de la cohérence de l’identité de l’utilisateur entre l’application et le Kit de développement logiciel (SDK) d’application Intune. L’authentification moderne est la seule manière de la garantir. Il existe des scénarios dans lesquels les applications peuvent fonctionner avec une configuration locale. Mais elles ne sont ni cohérentes, ni garanties.
 

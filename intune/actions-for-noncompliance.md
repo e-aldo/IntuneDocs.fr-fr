@@ -1,22 +1,22 @@
 ---
-title: "Actions et message de non-conformité avec Microsoft Intune - Azure | Microsoft Docs"
-description: "Créer un e-mail de notification à envoyer aux appareils non conformes. Ajoutez des actions après qu’un appareil a été marqué comme non conforme, par exemple ajoutez une période de grâce pour la conformité, ou créez une planification afin de bloquer l’accès jusqu’à ce que l’appareil soit conforme. Effectuez ces opérations à l’aide de Microsoft Intune dans Azure."
-keywords: 
+title: Actions et message de non-conformité avec Microsoft Intune - Azure | Microsoft Docs
+description: Créer un e-mail de notification à envoyer aux appareils non conformes. Ajoutez des actions après qu’un appareil a été marqué comme non conforme, par exemple ajoutez une période de grâce pour la conformité, ou créez une planification afin de bloquer l’accès jusqu’à ce que l’appareil soit conforme. Effectuez ces opérations à l’aide de Microsoft Intune dans Azure.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatiser l’envoi d’un e-mail et ajouter des actions pour les appareils non conformes - Intune
 
@@ -54,14 +54,14 @@ Il existe deux types d’actions :
 3. Sélectionnez **Conformité de l’appareil**, puis **Notifications**. 
 4. Sélectionnez **Créer une notification**, puis entrez les informations suivantes :
 
-  - Nom
-  - Objet
-  - Message
-  - En-tête de l’e-mail - Inclure le logo de l’entreprise
-  - Pied de page de l’e-mail - Inclure le nom de l’entreprise
-  - Pied de page de l’e-mail - Inclure les informations de contact
+   - Nom
+   - Objet
+   - Message
+   - En-tête de l’e-mail - Inclure le logo de l’entreprise
+   - Pied de page de l’e-mail - Inclure le nom de l’entreprise
+   - Pied de page de l’e-mail - Inclure les informations de contact
 
-  ![Exemple de message de notification de conformité dans Intune](./media/actionsfornoncompliance-1.PNG)
+   ![Exemple de message de notification de conformité dans Intune](./media/actionsfornoncompliance-1.PNG)
 
 Une fois que vous avez terminé l’ajout des informations, choisissez **Créer**. Le modèle de message de notification est prêt à être utilisé.
 
@@ -77,7 +77,7 @@ Vous pouvez ajouter une action quand vous créez une stratégie de conformité, 
 1. Dans le [portail Azure](https://portal.azure.com), ouvrez **Microsoft Intune**, puis sélectionnez **Conformité**.
 2. Sélectionnez **Stratégies**, choisissez l’une de vos stratégies, puis sélectionnez **Propriétés**. 
 
-  Vous n’avez pas encore de stratégie ? Créez une stratégie [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou une stratégie pour une autre plateforme.
+   Vous n’avez pas encore de stratégie ? Créez une stratégie [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou une stratégie pour une autre plateforme.
 
 3. Sélectionnez **Actions en cas de non-conformité**, puis sélectionnez **Ajouter** pour entrer les paramètres de l’action. Vous pouvez choisir le modèle de message créé précédemment, ajouter des destinataires supplémentaires et mettre à jour la planification de la période de grâce. Vous pouvez entrer le nombre de jours (de 0 à 365) sur la planification, puis appliquer les stratégies d’accès conditionnel. Si vous entrez **0** nombre de jours, l’accès conditionnel bloque **immédiatement** l’accès aux ressources de l’entreprise.
 

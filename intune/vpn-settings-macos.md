@@ -1,27 +1,27 @@
 ---
-title: "Paramètres VPN Microsoft Intune pour les appareils Mac OS"
-titlesuffix: 
-description: "Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils macOS."
-keywords: 
+title: Paramètres VPN Microsoft Intune pour les appareils Mac OS
+titlesuffix: ''
+description: Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils macOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7df56b0f15b9fd346dc786ab265d772135795a8
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: a59d17c9497d5f7d0fbc3bcdf5f1e232115f643a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>Configurer les paramètres VPN dans Microsoft Intune pour les appareils exécutant macOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cet article présente les paramètres Intune permettant de configurer des connexions VPN sur les appareils exécutant macOS.
 
@@ -55,6 +55,6 @@ Si vous avez sélectionné **VPN personnalisé**, configurez ces paramètres sup
 
 ## <a name="proxy-settings"></a>Paramètres du proxy
 
-- **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Saisissez **l’URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier de configuration.
+- **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Entrez l’**URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier config.
 - **Adresse** : saisissez l’adresse du serveur proxy (comme une adresse IP).
 - **Numéro de port** : saisissez le numéro de port associé au serveur proxy.

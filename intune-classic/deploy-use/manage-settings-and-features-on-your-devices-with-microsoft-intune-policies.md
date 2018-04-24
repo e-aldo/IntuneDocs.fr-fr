@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 12bb3e91b842ffb03e3ad7b181841374c92b3dc4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 6e639dda2509ab51bfcf6d0976be517e220800e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gérer des paramètres et des fonctionnalités sur vos appareils avec des stratégies Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Les *stratégies* Microsoft Intune sont des groupes de paramètres qui contrôlent les fonctionnalités des appareils mobiles et des ordinateurs. Vous créez des stratégies en utilisant des modèles qui contiennent des paramètres recommandés ou personnalisés, puis vous les déployez sur l'appareil ou des groupes d’utilisateurs.
 

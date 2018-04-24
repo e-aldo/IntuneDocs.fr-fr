@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 36715859c4c4685aa8d0fc74b360efd2372ee6c2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5fdae47509fa2c0606008bf399339a14403ad2fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Résoudre les problèmes de mise à jour logicielle dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Aidez-vous des informations contenues dans cette section pour résoudre les problèmes de mise à jour logicielle dans Microsoft Intune.
 
@@ -33,7 +33,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 Le tableau suivant répertorie les codes d’erreur de l’**agent de mise à jour** d’Intune. Si vous ne trouvez pas un code d'erreur spécifique dans ce tableau, consultez [Windows Update Agent Result Codes (Codes de résultat de l'agent de mise à jour de Windows)](http://go.microsoft.com/fwlink/?LinkID=221542).
 
-|Code d'erreur|Nom symbolique|Plus d’informations|
+|Code d'erreur|Nom symbolique|Autres informations|
 |--------------|-----------------|--------------------|
 |**0x00cf0001**|OM_S_SERVICE_STOP|L'agent a été arrêté.|
 |**0x00cf0003**|OM_S_UPDATE_ERROR|L'opération a réussi, mais des erreurs se sont produites lors de l'application des mises à jour.|

@@ -1,38 +1,35 @@
 ---
-title: Stratégies de conformité des appareils de Microsoft Intune
-titleSuffix: ''
-description: Découvrez plus d’informations sur la conformité des appareils dans Microsoft Intune
+title: Stratégies de conformité des appareils dans Microsoft Intune - Azure | Microsoft Docs
+description: Conditions d’utilisation de stratégies de conformité, vue d’ensemble des niveaux d’état et de gravité, utilisation de l’état InGracePeriod, utilisation de l’accès conditionnel, gestion des appareils sans stratégie attribuée et différences de conformité dans le portail Azure et dans le portail classique au sein de Microsoft Intune
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Bien démarrer avec les stratégies de conformité des appareils Microsoft Intune
+# <a name="get-started-with-device-compliance-policies-in-intune"></a>Bien démarrer avec les stratégies de conformité des appareils dans Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Les stratégies de conformité des appareils Intune définissent les règles et les paramètres auxquels doit se conformer un appareil pour être considéré comme conforme par Intune.
-
-Ces règles sont les suivantes :
+Les critères de conformité sont essentiellement des règles, comme exiger un code PIN d’appareil ou un chiffrement. Les stratégies de conformité des appareils définissent ces règles et les paramètres que doit suivre un appareil pour être considéré conforme. Parmi ces règles, citons les suivantes :
 
 - Utiliser un mot de passe pour accéder aux appareils
 
 - Chiffrement
 
-- Si l’appareil est jailbroken ou rooté
+- Si l’appareil est jailbreaké ou rooté
 
 - Version minimale du système d’exploitation requise
 
@@ -41,10 +38,6 @@ Ces règles sont les suivantes :
 - Exiger que l’appareil soit au niveau ou sous le niveau de défense contre les menaces mobiles
 
 Vous pouvez également utiliser des stratégies de conformité des appareils pour surveiller l’état de conformité dans vos appareils.
-
-## <a name="device-compliance-requirements"></a>Exigences de conformité des appareils
-
-Les exigences de conformité sont, pour simplifier, des règles comme l’exigence d’un code PIN ou d’un chiffrement que vous pouvez spécifier comme requises ou non requises pour une stratégie de conformité.
 
 <!---### Actions for noncompliance
 
@@ -69,41 +62,34 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="pre-requisites"></a>Prérequis
+## <a name="prerequisites"></a>Prérequis
+Les conditions suivantes régissent l’utilisation des stratégies de conformité des appareils :
 
-Vous devez souscrire aux abonnements suivants pour utiliser des stratégies de conformité des appareils avec Intune :
+- Utiliser les abonnements suivants :
 
-- Intune
+  - Intune
+  - Azure Active Directory (AD) Premium
 
-- Azure AD Premium
+- Utiliser une plateforme prise en charge :
 
-###  <a name="supported-platforms"></a>Plateformes prises en charge :
+  - Android
+  - iOS
+  - macOS (préversion)
+  - Windows 8.1
+  - Windows Phone 8.1
+  - Windows 10
 
--   Android
-
--   iOS
-
--   macOS (préversion)
-
--   Windows 8.1
-
--   Windows Phone 8.1
-
--   Windows 10
-
-> [!IMPORTANT]
-> Les appareils doivent être inscrits dans Intune pour signaler leur état de conformité.
+- Les appareils doivent être inscrits dans Intune pour signaler leur état de conformité
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Fonctionnement des stratégies de conformité des appareils Intune avec Azure AD
 
-Quand un appareil est inscrit dans Intune, le processus d’inscription Azure AD ajoute des informations aux attributs de l’appareil dans Azure AD. Une information clé de l’appareil est son état de conformité, qui est utilisé par les stratégies d’accès conditionnel pour bloquer ou autoriser l’accès à la messagerie et à d’autres ressources de l’entreprise.
+Quand un appareil est inscrit dans Intune, le processus d’inscription Azure AD démarre, puis met à jour les attributs de l’appareil dans Azure AD. Une information clé est l’état de conformité de l’appareil. Cet état de conformité est utilisé par les stratégies d’accès conditionnel pour bloquer ou autoriser l’accès à l’e-mail et à d’autres ressources de l’entreprise.
 
-- Découvrez plus en détail le [processus d’inscription Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
+Le [processus d’inscription AD Azure](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) fournit plus d’informations.
 
-### <a name="assigning-a-resulting-device-configuration-profile-status"></a>Affectation d’un état de profil de configuration d’appareil résultant
+### <a name="assign-a-resulting-device-configuration-profile-status"></a>Affecter un état de profil de configuration d’appareil résultant
 
-Si un appareil a plusieurs profils de configuration qui lui sont affectés et qu’il a des états de conformité différents pour au moins deux profils de configuration affectés, alors un seul état de conformité résultant doit être affecté. Cette affectation est basée sur un niveau de gravité conceptuel affecté à chaque état de conformité. Chaque état de conformité a le niveau de gravité suivant :
-
+Si un appareil a plusieurs profils de configuration et qu’il a des états de conformité différents pour au moins deux profils de configuration affectés, un seul état de conformité résultant est affecté. Cette affectation est basée sur un niveau de gravité conceptuel affecté à chaque état de conformité. Chaque état de conformité a le niveau de gravité suivant :
 
 |État  |Gravité  |
 |---------|---------|
@@ -112,22 +98,21 @@ Si un appareil a plusieurs profils de configuration qui lui sont affectés et qu
 |Failed     |3|
 |Erreur     |4|
 
-Un état résultant d’au moins deux profils de configuration est alors affecté en sélectionnant le niveau de gravité le plus élevé de tous les profils affectés à un appareil.
+Quand un appareil a plusieurs profils de configuration, le niveau de gravité le plus élevé de tous les profils lui est attribué.
 
-Par exemple, un appareil comporte trois profils qui lui sont affectés : un état En attente (gravité = 1), un état Réussi (gravité = 2) et un état Erreur (gravité = 4). L’état Erreur a le niveau de gravité le plus élevé, donc il est affecté comme état de conformité résultant pour les trois profils.
+Par exemple, un appareil comporte trois profils qui lui sont affectés : un état En attente (gravité = 1), un état Réussi (gravité = 2) et un état Erreur (gravité = 4). L’état Erreur ayant le niveau de gravité le plus élevé, les trois profils ont l’état de conformité Erreur.
 
-### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>Affectation d’un état InGracePeriod pour une stratégie de conformité affectée
+### <a name="assign-an-ingraceperiod-status"></a>Attribuer un état InGracePeriod
 
-L’état InGracePeriod d’une stratégie de conformité est une valeur déterminée en tenant compte de la combinaison de la période de grâce d’un appareil et l’état réel de l’appareil pour la stratégie de conformité affectée. 
+L’état InGracePeriod pour une stratégie de conformité est une valeur. Cette valeur est déterminée par la combinaison de la période de grâce d’un appareil et de l’état réel de l’appareil pour cette stratégie de conformité.
 
 Plus précisément, si un appareil a un état NonCompliant pour une stratégie de conformité affectée et si :
 
-- l’appareil n’a pas de période de grâce affectée, alors la valeur affectée pour la stratégie de conformité est NonCompliant.
-- l’appareil a une période de grâce qui a expiré, alors la valeur affectée pour la stratégie de conformité est NonCompliant.
-- l’appareil a une période de grâce qui se situe dans le futur, alors la valeur affectée pour la stratégie de conformité est InGracePeriod.
+- L’appareil n’a pas de période de grâce affectée, la valeur affectée pour la stratégie de conformité est NonCompliant
+- L’appareil a une période de grâce qui a expiré, la valeur affectée pour la stratégie de conformité est NonCompliant
+- L’appareil a une période de grâce qui se situe dans le futur, la valeur affectée pour la stratégie de conformité est InGracePeriod
 
-Le tableau suivant récapitule les points précédents :
-
+Le tableau suivant récapitule ces points :
 
 |État de conformité réel|Valeur de la période de grâce affectée|État de conformité effectif|
 |---------|---------|---------|
@@ -137,9 +122,9 @@ Le tableau suivant récapitule les points précédents :
 
 Pour plus d’informations sur la surveillance des stratégies de conformité des appareils, consultez [Surveiller les stratégies de conformité d’appareils Intune](compliance-policy-monitor.md).
 
-### <a name="assigning-a-resulting-compliance-policy-status"></a>Affectation d’un état de stratégie de conformité résultant
+### <a name="assign-a-resulting-compliance-policy-status"></a>Attribuer un état de stratégie de conformité résultant
 
-Si un appareil a plusieurs stratégies de conformité qui lui sont affectées et qu’il a des états de conformité différents pour au moins deux stratégies de conformité affectées, alors un seul état de conformité résultant doit être affecté. Cette affectation est basée sur un niveau de gravité conceptuel affecté à chaque état de conformité. Chaque état de conformité a le niveau de gravité suivant : 
+Si un appareil a plusieurs stratégies de conformité et qu’il a des états de conformité différents pour au moins deux stratégies de conformité attribuées, un seul état de conformité résultant est attribué. Cette affectation est basée sur un niveau de gravité conceptuel affecté à chaque état de conformité. Chaque état de conformité a le niveau de gravité suivant :
 
 |État  |Gravité  |
 |---------|---------|
@@ -150,49 +135,73 @@ Si un appareil a plusieurs stratégies de conformité qui lui sont affectées et
 |NonCompliant|5|
 |Erreur|6|
 
-Un état résultant d’au moins deux stratégies de conformité est alors déterminé en sélectionnant le niveau de gravité le plus élevé de toutes les stratégies affectées à un appareil.
- 
-Par exemple, un appareil comporte trois stratégies de conformité qui lui sont affectées : un état Inconnu (gravité = 1), un état Conforme (gravité = 3) et un état InGracePeriod (gravité = 4). L’état InGracePeriod a le niveau de gravité le plus élevé, donc il est affecté comme état de conformité résultant pour les trois stratégies.  
+Quand un appareil a plusieurs stratégies de conformité, le niveau de gravité le plus élevé de toutes les stratégies lui est attribué.
 
-##  <a name="ways-to-use-device-compliance-policies"></a>Utilisations des stratégies de conformité des appareils
+Par exemple, un appareil comporte trois stratégies de conformité qui lui sont affectées : un état Inconnu (gravité = 1), un état Conforme (gravité = 3) et un état InGracePeriod (gravité = 4). L’état InGracePeriod ayant le niveau de gravité le plus élevé, les trois stratégies ont l’état de conformité InGracePeriod.
 
-### <a name="with-conditional-access"></a>Avec accès conditionnel
-Vous pouvez utiliser une stratégie de conformité avec accès conditionnel pour permettre uniquement aux appareils conformes à une ou plusieurs règles de conformité des appareils d’accéder aux e-mails et à d’autres ressources de l’entreprise.
+## <a name="ways-to-use-device-compliance-policies"></a>Utilisations des stratégies de conformité des appareils
 
-### <a name="without-conditional-access"></a>Sans accès conditionnel
-Vous pouvez également utiliser des stratégies de conformité d’appareils indépendamment de l’accès conditionnel. Quand vous utilisez des stratégies de conformité indépendamment, les appareils ciblés sont évalués et signalés avec leur état de conformité. Par exemple, vous pouvez obtenir un rapport sur le nombre d’appareils qui ne sont pas chiffrés, ou les appareils qui sont jailbreakés ou rootés. Mais quand vous utilisez des stratégies de conformité indépendamment, aucune restriction d’accès aux ressources de l’entreprise n’est appliquée.
+#### <a name="with-conditional-access"></a>Avec accès conditionnel
+Si un appareil est conforme aux règles de stratégie, vous pouvez lui accorder l’accès à l’e-mail et aux autres ressources d’entreprise. Sinon, cet accès leur est refusé. Il s’agit d’un accès conditionnel.
 
-Vous déployez les stratégies de conformité sur les utilisateurs. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée. Pour en savoir plus sur le temps nécessaire pour que les appareils mobiles reçoivent une stratégie une fois celle-ci déployée, consultez [Résoudre les problèmes de profils d’appareil dans Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+#### <a name="without-conditional-access"></a>Sans accès conditionnel
+Vous pouvez également utiliser des stratégies de conformité d’appareils sans accès conditionnel. Quand vous utilisez des stratégies de conformité indépendamment, les appareils ciblés sont évalués et signalés avec leur état de conformité. Par exemple, vous pouvez obtenir un rapport sur le nombre d’appareils qui ne sont pas chiffrés, ou les appareils qui sont jailbreakés ou rootés. Quand vous utilisez des stratégies de conformité sans accès conditionnel, il n’y a aucune restriction d’accès aux ressources de l’entreprise.
 
-#### <a name="actions-for-non-compliance"></a>Actions en cas de non-conformité
+## <a name="ways-to-deploy-device-compliance-policies"></a>Déploiement des stratégies de conformité des appareils
+Vous pouvez déployer une stratégie de conformité pour des utilisateurs dans des groupes d’utilisateurs ou sur des appareils dans des groupes d’appareils. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée.
 
-Les actions en cas de non-conformité vous permettent de configurer une séquence chronologique d’actions appliquées aux appareils qui ne répondent pas aux critères de la stratégie de conformité. Pour plus d’informations, consultez [Automatiser des actions en cas de non-conformité](actions-for-noncompliance.md).
+Dans le cas des appareils appartenant à des groupes d’appareils, les **paramètres de stratégie de conformité** (portail Azure > Conformité de l’appareil) sont les suivants :
 
-##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Utilisation des stratégies de conformité des appareils dans le portail classique Intune et dans le Portail Azure
+- **Marquer les appareils sans stratégie de conformité comme étant** : cette propriété a deux valeurs:
 
-Passez en revue les principales différences pour faciliter la transition vers le nouveau flux de travail de la stratégie de conformité des appareils dans le portail Azure.
+  - **Conforme** : fonctionnalité de sécurité désactivée
+  - **Non conforme** (par défaut) : fonctionnalité de sécurité activée
 
-- Dans le portail Azure, les stratégies de conformité sont créées séparément pour chaque plateforme prise en charge.
-- Dans le portail classique Intune, une stratégie de conformité des appareils était commune à toutes les plateformes prises en charge.
+  Si un appareil n’a pas de stratégie de conformité attribuée, il est considéré comme non conforme. Par défaut, les appareils sont marqués comme **non conformes**. Si vous utilisez l’accès conditionnel, nous vous recommandons de garder la valeur par défaut **Non conforme**. Si un utilisateur final n’est pas conforme en raison du défaut d’attribution d’une stratégie, le portail d’entreprise indique `No compliance policies have been assigned`.
+
+- **Détection de jailbreak améliorée** : quand ce paramètre est activé, les appareils iOS s’archivent auprès d’Intune plus fréquemment. L’activation de cette propriété utilise les services de localisation de l’appareil et a un impact sur l’utilisation de la batterie. Les données d’emplacement utilisateur ne sont pas stockées par Intune.
+
+  L’activation de ce paramètre nécessite que les appareils :
+  - Activent les services de localisation au niveau du système d’exploitation
+  - Autorisent le portail d’entreprise à utiliser les services de localisation
+  - Évaluent et signalent leur état jailbreak à Intune au moins une fois toutes les 72 heures. Sinon, l’appareil est marqué comme non conforme.
+
+- **Période de validité de l’état de conformité (jours)** : entrez la période pendant laquelle les appareils signalent l’état de toutes les stratégies de conformité reçues. Les appareils qui ne retournent pas l’état au cours de cette période sont considérés comme non conformes. La valeur par défaut est de 30 jours.
+
+Tous les appareils ont une **Stratégie de conformité des appareils par défaut** (portail Azure > Conformité de l’appareil > Conformité à la stratégie). Utilisez cette stratégie par défaut pour surveiller ces paramètres.
+
+Pour savoir le temps qu’il faut pour que les appareils mobiles reçoivent une stratégie une fois celle-ci déployée, consultez [Résoudre les problèmes de profils d’appareil](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
+Les rapports de conformité sont un excellent moyen de vérifier l’état des appareils. Consultez [Surveiller les stratégies de conformité](compliance-policy-monitor.md) pour obtenir des conseils.
+
+### <a name="actions-for-noncompliance"></a>Actions en cas de non-conformité
+Vous pouvez configurer une séquence chronologique d’actions qui s’appliquent aux appareils qui ne répondent pas aux critères de la stratégie de conformité. Ces actions en cas de non-conformité peuvent être automatisées, comme décrit dans [Automatiser des actions en cas de non-conformité](actions-for-noncompliance.md).
+
+## <a name="azure-classic-portal-vs-azure-portal"></a>Portail Azure Classic et Portail Azure
+
+Principale différence au moment de l’utilisation de stratégies de conformité dans le portail Azure :
+
+- Dans le portail Azure, les stratégies de conformité sont créées séparément pour chaque plateforme prise en charge
+- Dans le portail Azure Classic, une stratégie de conformité des appareils est commune à toutes les plateformes prises en charge
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>Migrer les stratégies de conformité des appareils du portail classique Intune vers le portail Azure
+## <a name="device-compliance-policies-in-the-classic-portal-and-azure-portal"></a>Stratégies de conformité des appareils dans le portail classique et dans le portail Azure
 
-Les stratégies de conformité des appareils créées dans le [portail classique Intune](https://manage.microsoft.com) n’apparaissent pas dans le nouveau [portail Intune Azure](https://portal.azure.com). Toutefois, elles continuent de cibler des utilisateurs et peuvent être gérées par le biais du portail classique Intune.
+Les stratégies de conformité des appareils créées dans le [portail classique](https://manage.microsoft.com) n’apparaissent pas dans le [portail Azure](https://portal.azure.com). Toutefois, elles continuent de cibler des utilisateurs et peuvent être gérées à l’aide du portail classique.
 
-Si vous souhaitez tirer parti des nouvelles fonctionnalités liées à la conformité des appareils dans le portail Azure, vous devez créer des stratégies de conformité d’appareil dans le portail Azure lui-même. Si, dans le portail Azure, vous affectez une nouvelle stratégie de conformité des appareils à un utilisateur déjà associé à une stratégie de ce type dans le portail Intune classique, les stratégies du portail Intune Azure sont prioritaires par rapport à celles qui sont créées à partir du portail classique Intune.
+Pour utiliser les fonctionnalités liées à la conformité des appareils dans le portail Azure, vous devez créer des stratégies de conformité d’appareil dans le portail Azure. Si, dans le portail Azure, vous affectez une stratégie de conformité des appareils à un utilisateur auquel est déjà associée une stratégie de ce type dans le portail classique, les stratégies du portail Azure sont prioritaires par rapport aux stratégies qui sont créées à partir du portail classique.
 
-##  <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 
 - Créez une stratégie de conformité des appareils pour les plateformes suivantes :
 
-   - [Android](compliance-policy-create-android.md)
-   - [Android for Work](compliance-policy-create-android-for-work.md)
-   - [iOS](compliance-policy-create-ios.md)
-   - [MacOS](compliance-policy-create-mac-os.md)
-   - [Windows](compliance-policy-create-windows.md)
+  - [Android](compliance-policy-create-android.md)
+  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [iOS](compliance-policy-create-ios.md)
+  - [MacOS](compliance-policy-create-mac-os.md)
+  - [Windows](compliance-policy-create-windows.md)
 
 - Pour plus d’informations sur les entités de la stratégie Intune Data Warehouse, consultez [Informations de référence sur les entités de stratégie](reports-ref-policy.md).

@@ -1,27 +1,27 @@
 ---
 title: Utilisation de votre appareil Android avec Intune | Microsoft Docs
-description: "Cette rubrique fournit une liste de liens menant aux tâches que les utilisateurs finaux peuvent effectuer sur leur appareil mobile Android quand ce dernier est inscrit dans Intune"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Cette rubrique fournit une liste de liens menant aux tâches que les utilisateurs finaux peuvent effectuer sur leur appareil mobile Android quand ce dernier est inscrit dans Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 09992912c439e639f7410ea93a95f0c52ed9a22d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-your-android-device-with-intune"></a>Utilisation de votre appareil Android avec Intune
 
@@ -44,11 +44,11 @@ Intune prend actuellement en charge Android 4.4 et ultérieur. Ceci inclut les a
 - [Définir votre code confidentiel ou mot de passe](set-your-pin-or-password-android.md)
 - [Installer le réseau privé virtuel (VPN) de votre entreprise](install-your-companys-virtual-private-network-VPN-android.md)
 - [Définir la période de temps qui doit s’écouler avant le verrouillage de l’appareil](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Réinitialiser (effacer) votre appareil perdu ou volé](reset-erase-your-device-cpwebsite.md)
 - [Désactiver la collecte de données d’utilisation Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Désinscrire votre appareil d’Intune](unenroll-your-device-from-intune-android.md)
 - [Annuler l’inscription de votre appareil si vous avez refusé les conditions d’utilisation](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [Que se passe-t-il si vous réinitialisez votre appareil Android à l’aide de l’application Portail d’entreprise ?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
+  <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->

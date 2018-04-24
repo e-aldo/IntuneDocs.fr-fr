@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gérer les transferts de données entre applications iOS avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>Gérer les applications iOS
 La protection des données de votre entreprise nécessite notamment de vérifier que les transferts de fichiers sont limités aux applications que vous gérez.  Vous pouvez gérer les applications iOS comme suit :
@@ -51,17 +51,17 @@ Pour vous assurer que les applications que vous déployez à l’aide de votre s
 Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils gérés par une solution de gestion de la mobilité d’entreprise tierce. La procédure décrite ci-dessous est un flux général indiquant comment configurer le paramètre UPN et l’expérience résultante pour l’utilisateur final :
 
 
-1.  Dans le portail Azure, [configurez une stratégie de protection des applications](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) pour la plateforme iOS. Configurez les paramètres de stratégie selon les besoins de votre entreprise et sélectionnez les applications qui doivent disposer de cette stratégie.
+1. Dans le portail Azure, [configurez une stratégie de protection des applications](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) pour la plateforme iOS. Configurez les paramètres de stratégie selon les besoins de votre entreprise et sélectionnez les applications qui doivent disposer de cette stratégie.
 
-2.  Déployez les applications et le profil de messagerie que vous souhaitez gérer **par le biais de votre solution de gestion des appareils mobiles tierce** en suivant les étapes généralisées ci-dessous. Cette expérience est également abordée dans l’Exemple 1.
+2. Déployez les applications et le profil de messagerie que vous souhaitez gérer **par le biais de votre solution de gestion des appareils mobiles tierce** en suivant les étapes généralisées ci-dessous. Cette expérience est également abordée dans l’Exemple 1.
 
-  1.  Déployez l’application avec les paramètres de configuration d’application suivants :
+   1. Déployez l’application avec les paramètres de configuration d’application suivants :
 
       **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
       Exemple : [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Déployez la stratégie Open in management à l’aide de votre fournisseur de gestion des appareils mobiles tiers sur les appareils inscrits.
+   2. Déployez la stratégie Open in management à l’aide de votre fournisseur de gestion des appareils mobiles tiers sur les appareils inscrits.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Exemple 1 : Expérience de l’administrateur dans la console de gestion des appareils mobiles tierce
@@ -70,9 +70,9 @@ Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils g
 
 2. Dans la section Configuration de l’application, entrez le paramètre suivant :
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+   **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-  La syntaxe exacte de la paire clé/valeur peut varier en fonction du fournisseur de gestion des appareils mobiles tiers. Le tableau ci-dessous présente des exemples de fournisseurs de gestion des appareils mobiles tiers et les valeurs exactes à entrer dans la paire clé/valeur.
+   La syntaxe exacte de la paire clé/valeur peut varier en fonction du fournisseur de gestion des appareils mobiles tiers. Le tableau ci-dessous présente des exemples de fournisseurs de gestion des appareils mobiles tiers et les valeurs exactes à entrer dans la paire clé/valeur.
 
 |Fournisseur de gestion des appareils mobiles tiers| Clé Configuration | Type de valeur | Valeur Configuration|
 | ------- | ---- | ---- | ---- |

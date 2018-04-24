@@ -1,38 +1,38 @@
 ## <a name="enable-windows-10-automatic-enrollment"></a>Activer l’inscription automatique Windows 10
 
-L’inscription automatique permet aux utilisateurs d’inscrire leurs appareils Windows 10 dans Intune lorsqu’ils ajoutent leur compte professionnel à des appareils personnels ou lorsqu’ils joignent leurs appareils d’entreprise à Azure Active Directory. En arrière-plan, l’appareil de l’utilisateur s’inscrit et rejoint Azure Active Directory. Une fois inscrit, l’appareil est géré par Intune.
+L’inscription automatique permet aux utilisateurs d’inscrire leurs appareils Windows 10 dans Intune lorsqu’ils ajoutent leur compte professionnel à des appareils personnels ou lorsqu’ils joignent leurs appareils d’entreprise à Azure Active Directory. En arrière-plan, l’appareil de l’utilisateur s’inscrit et rejoint Azure Active Directory. Une fois inscrit, l’appareil est géré avec Intune.
 
-**Conditions préalables**
+**Prérequis**
 - Abonnement Premium à Azure Active Directory ([abonnement d’évaluation](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Abonnement Microsoft Intune
 
 
-### <a name="configure-automatic-mdm-enrollment"></a>Configurer l’inscription automatique de la gestion des appareils mobiles
+### <a name="configure-automatic-mdm-enrollment"></a>Configurer l’inscription automatique de MDM
 
-1. Connectez-vous au [Portail de gestion Azure](https://portal.azure.com) (https://manage.WindowsAzure.com), puis sélectionnez **Azure Active Directory**.
+1. Connectez-vous au [Portail de gestion Azure](https://portal.azure.com) (https://manage.windowsazure.com) et sélectionnez **Azure Active Directory**.
 
-  ![Capture d’écran du portail Azure](../media/auto-enroll-azure-main.png)
+   ![Capture d’écran du portail Azure](../media/auto-enroll-azure-main.png)
 
-2. Sélectionnez **Mobilité (gestion des données de référence et gestion des applications mobiles)**.
+2. Sélectionnez **Mobilité (MDM et GAM)**.
 
-  ![Capture d’écran du portail Azure](../media/auto-enroll-mdm.png)
+   ![Capture d’écran du portail Azure](../media/auto-enroll-mdm.png)
 
 3. Sélectionnez **Microsoft Intune**.
 
-  ![Capture d’écran du portail Azure](../media/auto-enroll-intune.png)
+   ![Capture d’écran du portail Azure](../media/auto-enroll-intune.png)
 
-4. Configurez **Portée de l’utilisateur Gestion des données de référence**. Spécifiez les appareils des utilisateurs qui doivent être gérés par Microsoft Intune. Les appareils Windows 10 de ces utilisateurs sont automatiquement inscrits à la gestion avec Microsoft Intune.
+4. Configurez **Portée des utilisateurs MDM**. Spécifiez les appareils des utilisateurs qui doivent être gérés par Microsoft Intune. Les appareils Windows 10 de ces utilisateurs sont automatiquement inscrits à la gestion avec Microsoft Intune.
 
-  - **Aucun**
-  - **Partiel**
-  - **Tous**
+   - **Aucune.**
+   - **Quelques-uns**
+   - **Tous**
 
- ![Capture d’écran du portail Azure](../media/auto-enroll-scope.png)
+   ![Capture d’écran du portail Azure](../media/auto-enroll-scope.png)
 
 5. Utilisez les valeurs par défaut pour les URL suivantes :
-  - **URL des conditions d’utilisation de la gestion des données de référence**
-  - **URL de détection MDM**
-  - **URL de conformité GAM**
+   - **URL des conditions d'utilisation de MDM**
+   - **URL de détection de MDM**
+   - **URL de conformité GAM**
 
 6. Sélectionnez **Enregistrer**.
 

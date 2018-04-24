@@ -1,28 +1,27 @@
 ---
-title: "Paramètres de restriction d’appareil Microsoft Intune pour Windows 10"
-titlesuffix: 
-description: "Découvrez les paramètres Microsoft Intune vous permettant de contrôler les paramètres et les fonctionnalités d’appareils exécutant Windows 10."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Paramètres de restriction des appareils pour Windows 10 dans Microsoft Intune - Azure | Microsoft Docs
+description: Découvrez les paramètres Microsoft Intune vous permettant de contrôler les paramètres et les fonctionnalités d’appareils exécutant Windows 10.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Paramètres de restriction des appareils Windows 10 et ultérieur dans Microsoft Intune
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Paramètres de restriction des appareils pour Windows 10 (et versions ultérieures) dans Intune
 Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Général
 - **Capture d’écran (mobile uniquement)** - Autorise l’utilisateur à capturer le contenu de l’écran d’appareil en tant qu’image.
@@ -51,7 +50,6 @@ Cet article décrit tous les paramètres des restrictions d’appareils de Micro
 - **Espace de travail Windows Ink** - Empêche les utilisateurs d’accéder à l’espace de travail Windows Ink. Quand ce paramètre n’est pas configuré, l’espace de travail Windows Ink est activé (fonctionnalité activée), et l’utilisateur est autorisé à l’utiliser au-dessus de l’écran de verrouillage.
 - **Redéploiement automatique** : permet aux utilisateurs avec des droits d’administration de supprimer l’ensemble des données et des paramètres utilisateur à l’aide des touches **Ctrl+Win+R** sur l’écran de verrouillage de l’appareil. L’appareil est automatiquement reconfiguré et réinscrit dans la gestion.
 
-
 ## <a name="password"></a>Mot de passe
 -   **Mot de passe** - Demande à l’utilisateur final d’entrer un mot de passe pour accéder à l’appareil.
     -   **Type de mot de passe requis** - Spécifie si le mot de passe doit être numérique uniquement ou alphanumérique.
@@ -75,7 +73,6 @@ Pour les appareils exécutant Windows 10 Mobile : après le nombre d’échecs
 -   **Acceptation automatique des invites de consentement de l’utilisateur pour le couplage et la confidentialité** – Autoriser Windows à accepter automatiquement les messages de consentement de couplage et de confidentialité lors de l’exécution des applications.
 - **Publier les activités de l’utilisateur** : affectez la valeur **Bloquer** pour empêcher les expériences partagées et la découverte des ressources récemment utilisées dans le sélecteur de tâches.
 - **Activités locales uniquement** : affectez la valeur **Bloquer** pour empêcher les expériences partagées et la découverte des ressources récemment utilisées dans le sélecteur de tâches en fonction uniquement de l’activité locale.
-
 
 Vous pouvez définir les informations auxquelles toutes les applications sur l’appareil peuvent accéder. Vous pouvez définir des exceptions pour chaque application à l’aide de l’option **Exceptions de confidentialité par application**.
 
@@ -137,8 +134,6 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 -   **Notifications toast sur écran verrouillé** – Bloquer l’affichage des messages d’alerte sur l’écran de verrouillage de l’appareil.
 -   **Délai d’expiration de l’écran (mobile uniquement)** - Spécifie la durée (en secondes) au bout de laquelle l’écran s’éteint après le verrouillage.
 
-
-
 ## <a name="app-store"></a>App Store
 
 -   **App store (mobile uniquement)** - Active ou bloque l’utilisation de l’App Store sur les appareils Windows 10 Mobile.
@@ -152,8 +147,6 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 -   **Installer des données d'application sur le lecteur système** - Empêche les applications de stocker des données sur le lecteur système de l’appareil.
 -   **Jeux DVR (Desktop uniquement)** - Détermine si l’enregistrement et la diffusion des jeux sont autorisés ou non.
 -   **Applications du Store uniquement** -Détermine si les utilisateurs peuvent installer des applications à partir d’emplacements autres que l’App Store.
-
-
 
 ## <a name="edge-browser"></a>Navigateur Microsoft Edge
 
@@ -192,6 +185,7 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
 ## <a name="search"></a>Recherche
 - **Recherche sécurisée (appareils mobiles uniquement)** - Contrôle la manière dont Cortana filtre les contenus pour adultes dans les résultats de la recherche. Vous pouvez sélectionner **Strict** ou **Modéré**, ou encore autoriser l’utilisateur à choisir ses propres paramètres.
+- **Afficher les résultats web dans la recherche** : empêcher ou autoriser l’affichage des résultats web dans les recherches effectuées sur l’appareil.
 
 ## <a name="cloud-and-storage"></a>Cloud et stockage
 -   **Compte Microsoft** - Permet à l’utilisateur d’associer un compte Microsoft à l’appareil.
@@ -215,7 +209,6 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 -   **Configuration manuelle du Wi-Fi** - Détermine si les utilisateurs peuvent configurer leurs propres connexions Wi-Fi ou s’ils peuvent uniquement utiliser les connexions configurées par un profil Wi-Fi (Windows 10 Mobile uniquement).
 -   **Intervalle de recherche de Wi-Fi** - Spécifiez la fréquence à laquelle les appareils recherchent des réseaux Wi-Fi. Spécifiez une valeur comprise entre 1 (plus fréquent) et 500 (moins fréquent).
 -   **Services Bluetooth autorisés** – Spécifiez (sous forme de chaînes hexadécimales) une liste de services et de profils Bluetooth autorisés.
-
 
 ## <a name="control-panel-and-settings"></a>Panneau de configuration et paramètres
 
@@ -258,41 +251,48 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
 ## <a name="kiosk-preview"></a>Kiosk (préversion)
 
--   **Mode plein écran** - Identifie le type de [mode plein écran](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) pris en charge par la stratégie. Les options sont les suivantes :
+Un appareil plein écran exécute généralement une application ou un ensemble spécifique d’applications. Les utilisateurs ne peuvent pas accéder aux fonctionnalités ou fonctions sur l’appareil en dehors de toutes les applications plein écran.
 
-      - **Non configuré** (par défaut) : la stratégie n’active pas de mode plein écran. 
-      - **Application unique plein écran** : le profil active l’appareil en tant qu’application unique plein écran.
-      - **Applications multiples plein écran** : le profil active l’appareil en tant qu’applications multiples plein écran.
+- **Mode plein écran** - Identifie le type de mode plein écran pris en charge par la stratégie. Les options disponibles sont les suivantes :
 
-    Les applications uniques plein écran nécessitent les paramètres suivants :
+  - **Non configuré** (par défaut) : la stratégie n’active pas de mode plein écran. 
+  - **Application unique plein écran** : le profil autorise l’appareil à n’exécuter qu’une seule application. Quand l’utilisateur se connecte, une application spécifique démarre. En outre, ce mode empêche l’utilisateur d’ouvrir de nouvelles applications ou de basculer vers une autre application.
+  - **Applications multiples plein écran** : le profil autorise l’appareil à exécuter plusieurs applications. Seules les applications que vous ajoutez sont disponibles pour l’utilisateur. L’avantage des applications multiples plein écran ou d’un appareil à usage fixe est que l’utilisateur n’accède qu’aux applications dont il a besoin, les autres étant retirées de sa vue ; son expérience s’en trouve simplifiée.
 
-      - **Compte d’utilisateur** : spécifie le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran. Pour les comptes liés à des domaines Azure AD, spécifiez le compte au format `domain\\username@tenant.org`.
+#### <a name="single-app-kiosks"></a>Applications uniques plein écran
+entrez les paramètres suivants :
 
-         Pour les appareils dans des environnements publics, utilisez des comptes avec des privilèges minimaux pour empêcher toute activité non autorisée.  
+- **Compte d’utilisateur** : entrez le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran. Pour les comptes liés à des domaines Azure AD, entrez le compte en utilisant le format `domain\username@tenant.org`. 
 
-      - **Identifiant AUMID de l’application** : spécifie l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
+    Pour les applications plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode plein écran, utilisez le format `AzureAD\user@contoso.com`.
 
-    Les [bornes à applications multiples](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) ont besoin d’une configuration plein écran. Utilisez le bouton **Ajouter** pour créer une configuration plein écran ou sélectionnez-en une existante.
+- **Identifiant AUMID de l’application** : entrez l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
 
-    Les configurations des applications multiples plein écran incluent les paramètres suivants :
+#### <a name="multi-app-kiosks"></a>Applications multiples plein écran
+Les [Applications multiples plein écran](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) utilisent une configuration plein écran qui répertorie les applications autorisées et d’autres paramètres. 
 
-    - **Nom de configuration plein écran** : nom convivial utilisé pour identifier une configuration donnée.
+Utilisez le bouton **Ajouter** pour créer une configuration plein écran (ou sélectionnez une configuration existante). Ensuite, entrez les paramètres suivants :
 
-    - Une ou plusieurs **applications plein écran** constituées de :
+- **Nom de configuration plein écran** : entrez un nom convivial utilisé pour identifier la configuration.
 
-        - **Type d’application** qui spécifie le type de l’application plein écran.  Les valeurs prises en charge sont :   
+- **Applications plein écran** : entrez les applications qui sont disponibles dans le menu Démarrer. Les applications que vous ajoutez sont les seules que l’utilisateur peut ouvrir.
 
-            - **Application Win32** : application de bureau traditionnelle. (Vous avez besoin du chemin qualifié complet de l’exécutable, en ce qui concerne l’appareil.)
+  - **Type d’application** : choisissez le type de l’application plein écran :
+    - **Application Win32** : application de bureau traditionnelle. Vous avez besoin du chemin qualifié complet de l’exécutable, en ce qui concerne l’appareil.
+    - **Application UWP** : application Windows universelle. Vous avez besoin de [l’identifiant AUMID de l’application](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-            - **Application UWP** : application Windows universelle. Vous avez besoin de [l’identifiant AUMID de l’application](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+  - **Identificateur** : entrez le chemin qualifié complet du fichier exécutable (applications Win32) ou [l’identifiant AUMID de l’application](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (applications UWP).
 
-        - **Identificateur de l’application** : spécifie le chemin qualifié complet du fichier exécutable (applications Win32) ou [l’identifiant AUMID de l’application](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (applications UWP).
+- **Barre des tâches** : choisissez de montrer (**Activer**) la barre des tâches ou de la garder masquée (**Non configurée**) sur l’appareil plein écran.
 
-    - **Barre des tâches** indique si la barre des tâches est affichée (**Activé**) ou masquée (**Non configuré**) sur le plein écran.
+- **Disposition du menu Démarrer** : entrez un fichier XML qui décrit comment les applications apparaissent dans le menu Démarrer. [Personnaliser et exporter la disposition de l’écran de démarrage](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fournit quelques conseils et un exemple de code XML.
 
-    - **Disposition du menu Démarrer** : spécifie un fichier XML qui décrit comment les applications [apparaissent dans le menu Démarrer](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Utilisateurs attribués** : spécifie un ou plusieurs comptes d’utilisateur associés à la configuration plein écran. Le compte peut être local sur l’appareil, ou il peut s’agir d’une connexion de compte Azure AD associée à l’application plein écran. Spécifiez les comptes joints à un domaine au format `domain\\username@tenant.org`.
+  [Créer une borne Windows10 qui exécute plusieurs applications](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) fournit plus de détails sur l’utilisation et la création de fichiers XML.
+
+- **Utilisateurs attribués** : ajoutez un ou plusieurs comptes d’utilisateurs qui peuvent utiliser les applications que vous ajoutez. Quand le compte se connecte, seules les applications définies dans la configuration sont disponibles. Le compte peut être local sur l’appareil, ou il peut s’agir d’une connexion de compte Azure AD associée à l’application plein écran.
+
+    Pour les applications plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode plein écran, utilisez le format `domain\user@tenant.com`.
 
 ## <a name="windows-defender-antivirus"></a>Antivirus Windows Defender
 
@@ -328,14 +328,11 @@ Si les fichiers sur le lecteur sont en lecture seule, Defender ne peut pas suppr
     -   **Défini par l’utilisateur**
     -   **Bloquer**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Exclusions de l’antivirus Windows Defender
 
 -   **Fichiers et dossiers à exclure des analyses et de la protection en temps réel** - Ajoute un ou plusieurs fichiers et dossiers comme **C:\Chemin** ou **%ProgramFiles%\Chemin\NomFichier.exe** à la liste des exclusions. Ces fichiers et dossiers ne sont pas inclus dans les analyses en temps réel ou planifiées.
 -   **Extensions de fichier à exclure des analyses et de la protection en temps réel** - Ajoute une ou plusieurs extensions de fichier comme **jpg** ou **txt** à la liste des exclusions. Tous les fichiers avec ces extensions ne sont pas inclus dans les analyses en temps réel ou planifiées.
 -   **Processus à exclure des analyses et de la protection en temps réel** - Ajoute un ou plusieurs processus de type **.exe**, **.com** ou **.scr** à la liste des exclusions. Ces processus ne sont pas inclus dans les analyses en temps réel ou planifiées.
-
 
 ## <a name="network-proxy"></a>Proxy réseau
 
@@ -348,9 +345,7 @@ Si les fichiers sur le lecteur sont en lecture seule, Defender ne peut pas suppr
     -   **Exceptions du proxy** - Entrez les URL qui ne doivent pas utiliser le serveur proxy. Utilisez des points-virgules pour séparer chaque élément.
     -   **Ignorer le serveur proxy pour les adresses locales** - Si vous ne souhaitez pas utiliser le serveur proxy pour les adresses locales sur votre intranet, activez cette option.
 
-
 ## <a name="windows-spotlight"></a>Windows à la une
-
 
 - **Windows à la une** – Utilisez ce paramètre pour bloquer toutes les fonctionnalités Windows à la une sur les appareils Windows 10. Si vous bloquez ce paramètre, les paramètres suivants ne sont pas disponibles.
     - **Windows à la une sur l’écran de verrouillage** – Empêche Windows à la une d’afficher des informations sur l’écran de verrouillage de l’appareil.
@@ -360,7 +355,6 @@ Si les fichiers sur le lecteur sont en lecture seule, Defender ne peut pas suppr
     - **Windows à la une dans le centre de notifications** – Empêche l’affichage des suggestions de Windows à la une telles que le nouveau contenu de sécurité ou d’application dans le Centre de notifications de Windows.
     - **Personnalisation de Windows à la une** – Empêche Windows à la une de personnaliser les résultats en fonction de l’utilisation d’un appareil.
     - **Écrans d’accueil de Windows** – Bloquer l’expérience d’accueil de Windows qui montre à l’utilisateur des informations sur les fonctionnalités nouvelles ou mises à jour.
-
 
 ## <a name="projection"></a>Projection
 
@@ -394,15 +388,3 @@ Si les fichiers sur le lecteur sont en lecture seule, Defender ne peut pas suppr
 - **Synchronisation des messages (mobile uniquement)** - Désactiver Messages sur tous les appareils et sauvegarder/restaurer les SMS.
 - **MMS (mobile uniquement)** - Désactiver la fonctionnalité d'envoi/de réception de MMS sur l'appareil.
 - **RCS (mobile uniquement)** - Désactiver la fonctionnalité d'envoi/de réception de RCS (Rich Communication Services) sur l'appareil.
-
-
-
-
-
-
-
-
-
-
-
-

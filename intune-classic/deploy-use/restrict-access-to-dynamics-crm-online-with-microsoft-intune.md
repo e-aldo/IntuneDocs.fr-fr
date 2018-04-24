@@ -1,29 +1,29 @@
 ---
-title: "Protéger Dynamics CRM Online"
-description: "Utilisez l’accès conditionnel pour protéger et contrôler l’accès à Dynamics CRM Online."
-keywords: 
+title: Protéger Dynamics CRM Online
+description: Utilisez l’accès conditionnel pour protéger et contrôler l’accès à Dynamics CRM Online.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bae29ed7eba164ce19ea5db7d003ab38b4683454
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Protéger l’accès à Dynamics CRM Online avec Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez contrôler l’accès à Microsoft Dynamics CRM Online à partir des appareils iOS et Android avec l’accès conditionnel Microsoft Intune.  L’accès conditionnel Intune comprend deux composants :
 * Une [stratégie de conformité des appareils](introduction-to-device-compliance-policies-in-microsoft-intune.md) que l’appareil doit respecter pour être considéré comme conforme.
@@ -73,17 +73,17 @@ Quand vous êtes prêt, passez à l’Étape 3.
 ### <a name="step-3-configure-the-dynamics-crm-policy"></a>Étape 3 : Configurer la stratégie Dynamics CRM
 Ensuite, configurez la stratégie de manière à restreindre l’accès à Dynamics CRM aux appareils gérés et conformes. Cette stratégie sera stockée dans Azure Active Directory.
 
-1.  Dans la console d’administration Intune, choisissez **Stratégie > Accès conditionnel > Stratégie Dynamics CRM Online**.
+1. Dans la console d’administration Intune, choisissez **Stratégie > Accès conditionnel > Stratégie Dynamics CRM Online**.
 
-  ![Capture d’écran de la page de stratégie d’accès conditionnel Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Capture d’écran de la page de stratégie d’accès conditionnel Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Choisissez **Activer la stratégie d’accès conditionnel**.
-3.  Sous **Accès aux applications**, vous pouvez choisir d’appliquer la stratégie d’accès conditionnel à :
-  * **iOS**
-  * **Android**
-4.  Sous **Groupes ciblés**, choisissez **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory auxquels la stratégie sera appliquée. Vous pouvez cibler cette stratégie sur tous les utilisateurs ou seulement sur un groupe d’utilisateurs donné.
-5.  Sous **Groupes exemptés**, vous pouvez éventuellement choisir **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory exempts de cette stratégie.
-6.  Une fois terminé, choisissez **Enregistrer**.
+2. Choisissez **Activer la stratégie d’accès conditionnel**.
+3. Sous **Accès aux applications**, vous pouvez choisir d’appliquer la stratégie d’accès conditionnel à :
+   * **iOS**
+   * **Android**
+4. Sous **Groupes ciblés**, choisissez **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory auxquels la stratégie sera appliquée. Vous pouvez cibler cette stratégie sur tous les utilisateurs ou seulement sur un groupe d’utilisateurs donné.
+5. Sous **Groupes exemptés**, vous pouvez éventuellement choisir **Modifier** pour sélectionner les groupes de sécurité Azure Active Directory exempts de cette stratégie.
+6. Une fois que vous avez terminé, choisissez **Enregistrer**.
 
 Vous avez maintenant configuré l’accès conditionnel à Dynamics CRM. La stratégie d’accès conditionnel prend effet immédiatement. Il est donc inutile de la déployer.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>analyser la conformité et les stratégies d'accès conditionnel

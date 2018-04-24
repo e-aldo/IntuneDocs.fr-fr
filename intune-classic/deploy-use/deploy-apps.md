@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Déployer des applications avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Cette rubrique décrit certains des concepts que vous devez comprendre avant de commencer à déployer des applications avec Microsoft Intune.
 
@@ -46,18 +46,19 @@ Quand vous déployez des applications, vous pouvez choisir parmi les actions de 
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Comprendre quelles actions de déploiement sont disponibles pour chaque type de programme d’installation
 
-|Type de programme d’installation|Installation requise|Installation disponible|Désinstaller|Non applicable|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Package d'application Windows (déployé sur un groupe d'utilisateurs)|Oui|Oui|Oui|Oui|
-|Package d’application Windows (déployé sur un groupe d’appareils)|Oui|Non|Oui|Oui|
-|Package d'application pour les appareils mobiles (déployé sur un groupe d'utilisateurs)|Oui|Oui|Oui|Oui|
-|Package d'application pour les appareils mobiles (déployé sur un groupe d'appareils)|Oui|Non|Oui|Oui|
-|Windows Installer (déployé sur un groupe d'utilisateurs)|Non|Oui|Non|Oui|
-|Windows Installer (déployé sur un groupe d'appareils)|Oui|Non|Oui|Oui|
-|Lien externe (déployé sur un groupe d'utilisateurs)|Non|Oui|Non|Oui|
-|Lien externe (déployé sur un groupe d'appareils)|Non|Non|Non|Non|
-|Application iOS gérée à partir de l'App Store (déployée sur un groupe d'utilisateurs)|Oui|Oui|Oui|Oui|
-|Application iOS gérée à partir de l'App Store (déployée sur un groupe d'appareils)|Oui|Non|Oui|Oui|
+|                         Type de programme d’installation                          | Installation requise | Installation disponible | Désinstaller | Non applicable |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Package d'application Windows (déployé sur un groupe d'utilisateurs)          |       Oui        |        Oui        |    Oui    |      Oui       |
+|        Package d’application Windows (déployé sur un groupe d’appareils)         |       Oui        |        Non         |    Oui    |      Oui       |
+|    Package d'application pour les appareils mobiles (déployé sur un groupe d'utilisateurs)    |       Oui        |        Oui        |    Oui    |      Oui       |
+|   Package d'application pour les appareils mobiles (déployé sur un groupe d'appareils)   |       Oui        |        Non         |    Oui    |      Oui       |
+|          Windows Installer (déployé sur un groupe d'utilisateurs)           |        Non        |        Oui        |    Non     |      Oui       |
+|         Windows Installer (déployé sur un groupe d'appareils)          |       Oui        |        Non         |    Oui    |      Oui       |
+|            Lien externe (déployé sur un groupe d'utilisateurs)             |        Non        |        Oui        |    Non     |      Oui       |
+|           Lien externe (déployé sur un groupe d'appareils)            |        Non        |        Non         |    Non     |       Non       |
+|  Application iOS gérée à partir de l'App Store (déployée sur un groupe d'utilisateurs)  |       Oui        |        Oui        |    Oui    |      Oui       |
+| Application iOS gérée à partir de l'App Store (déployée sur un groupe d'appareils) |       Oui        |        Non         |    Oui    |      Oui       |
+
 > [!TIP]
 > Quand vous déployez des applications, si vous sélectionnez à la fois des groupes d’utilisateurs et des groupes d’appareils, vous pouvez déployer l’application seulement comme **Installation disponible**.
 

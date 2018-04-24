@@ -1,29 +1,29 @@
 ---
-title: "Vue d’ensemble des cycles de vie des appareils et des applications"
+title: Vue d’ensemble des cycles de vie des appareils et des applications
 titleSuffix: Microsoft Intune
-description: "Vue d’ensemble des cycles de vie des appareils et des applications dans Microsoft Intune."
-keywords: 
+description: Vue d’ensemble des cycles de vie des appareils et des applications dans Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d262d5679ceb802320bd5aa496d91f549ec12952
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c358fff91744335080a10d45c7753293911430ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>Vue d’ensemble des cycles de vie des appareils et des applications
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Les organisations ont des besoins divers, mais elles doivent toutes exécuter certaines étapes en continu pour gérer leurs appareils et applications mobiles. Ces étapes peuvent être regroupées en deux catégories principales, appelées **cycles de vie**. Le cycle de vie de déploiement que vous suivez varie selon le scénario que vous tentez de mettre en œuvre. Par exemple, vous pouvez n’avoir besoin que du cycle de vie des appareils ou du cycle de vie des applications, ou avoir besoin des deux.
 

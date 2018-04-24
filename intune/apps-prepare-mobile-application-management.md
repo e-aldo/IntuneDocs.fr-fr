@@ -1,29 +1,29 @@
 ---
-title: "Préparer les applications métier aux stratégies de protection des applications"
+title: Préparer les applications métier aux stratégies de protection des applications
 titlesuffix: Microsoft Intune
-description: "Utilisez l’outil de wrapping d’applications et le SDK d’application pour permettre à vos applications métiers personnalisées d’utiliser des stratégies de protection d’application dans Microsoft Intune."
-keywords: 
+description: Utilisez l’outil de wrapping d’applications et le SDK d’application pour permettre à vos applications métiers personnalisées d’utiliser des stratégies de protection d’application dans Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Préparer les applications métier aux stratégies de protection des applications
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Vous pouvez configurer vos applications pour utiliser des stratégies de protection des applications à l’aide de l’outil de création de package de restrictions d’application Intune ou du SDK d’application Intune. Utilisez ces informations pour en savoir plus sur ces deux méthodes et quand les utiliser.
 
@@ -70,8 +70,8 @@ Pour en savoir plus sur le SDK, consultez sa [présentation](app-sdk.md). Pour c
 
 |**SDK d’application Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Oui : utilisez le [composant Xamarin du SDK d’application Intune](app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md).|
-|**Android**| Oui : utilisez le [composant Xamarin du SDK d’application Intune](app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md).|
+|**iOS**|Oui : utilisez les [liaisons Xamarin du SDK d’application Intune](app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md).|
+|**Android**| Oui : utilisez les [liaisons Xamarin du SDK d’application Intune](app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Comparaison des fonctionnalités
 Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK et pour l’outil de création de package de restrictions d’application.
@@ -79,30 +79,30 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 > [!NOTE]
 > Vous pouvez utiliser l’outil de création de package de restrictions d’application avec Intune autonome ou Intune avec Configuration Manager.
 
-|Composant|Kit SDK d’application|Outil de création de package de restrictions d’application|
-|-----------|---------------------|-----------|
-|Afficher le contenu web uniquement dans Managed Browser|X|X|
-|Empêcher les sauvegardes Android, iTunes ou iCloud|X|X|
-|Autoriser l'application à transférer des données vers d'autres applications|X|X|
-|Autoriser l'application à recevoir des données d'autres applications|X|X|
-|Restreindre les opérations Couper, Copier et Coller avec d’autres applications|X|X|
-|Demander un code confidentiel simple pour l'accès|X|X|
-|Remplacer le code confidentiel intégré de l’application par le code confidentiel Intune|X||
-|Spécifier le nombre de tentatives avant réinitialisation du code confidentiel|X|X|
-|Autoriser une empreinte digitale à la place du code confidentiel |X|X|
-|Exiger des informations d'identification d'entreprise pour l'accès|X|X|
-|Bloquer l’exécution des applications gérées sur les appareils jailbroken ou rootés|X|X|
-|Chiffrer les données de l'application|X|X|
-|Revérifier les spécifications requises pour l’accès après un nombre de minutes spécifié|X|X|
-|Spécifier la période de grâce hors connexion|X|X|
-|Bloquer la capture d’écran (Android uniquement)|X|X|
-|Prise en charge de MAM sans inscription de l’appareil|X|X|
-|Réinitialisation complète|X|X|
-|Réinitialisation sélective <br></br>**Remarque :** pour iOS, quand le profil de gestion est supprimé, l’application est également supprimée.|X||
-|Empêcher « Enregistrer sous » |X||
-|Configuration d'application ciblée |X||
-|Prise en charge des identités multiples|X||
-|Style personnalisable |X|||
+|                                                         Fonctionnalité                                                          | Kit SDK d’application | Outil de création de package de restrictions d’application |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              Afficher le contenu web uniquement dans Managed Browser                              |    X    |         X         |
+|                                        Empêcher les sauvegardes Android, iTunes ou iCloud                                        |    X    |         X         |
+|                                         Autoriser l'application à transférer des données vers d'autres applications                                         |    X    |         X         |
+|                                        Autoriser l'application à recevoir des données d'autres applications                                         |    X    |         X         |
+|                                      Restreindre les opérations Couper, Copier et Coller avec d’autres applications                                       |    X    |         X         |
+|                                              Demander un code confidentiel simple pour l'accès                                               |    X    |         X         |
+|                                         Remplacer le code confidentiel intégré de l’application par le code confidentiel Intune                                         |    X    |                   |
+|                                     Spécifier le nombre de tentatives avant réinitialisation du code confidentiel                                      |    X    |         X         |
+|                                             Autoriser une empreinte digitale à la place du code confidentiel                                             |    X    |         X         |
+|                                         Exiger des informations d'identification d'entreprise pour l'accès                                         |    X    |         X         |
+|                             Bloquer l’exécution des applications gérées sur les appareils jailbroken ou rootés                              |    X    |         X         |
+|                                                     Chiffrer les données de l'application                                                     |    X    |         X         |
+|                           Revérifier les spécifications requises pour l’accès après un nombre de minutes spécifié                            |    X    |         X         |
+|                                             Spécifier la période de grâce hors connexion                                             |    X    |         X         |
+|                                           Bloquer la capture d’écran (Android uniquement)                                            |    X    |         X         |
+|                                        Prise en charge de GAM sans inscription de l’appareil                                         |    X    |         X         |
+|                                                        Réinitialisation complète                                                         |    X    |         X         |
+| Réinitialisation sélective <br></br><strong>Remarque :</strong> pour iOS, quand le profil de gestion est supprimé, l’application est également supprimée. |    X    |                   |
+|                                                    Empêcher « Enregistrer sous »                                                     |    X    |                   |
+|                                            Configuration d'application ciblée                                            |    X    |                   |
+|                                                Prise en charge des identités multiples                                                |    X    |                   |
+|                                                    Style personnalisable                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

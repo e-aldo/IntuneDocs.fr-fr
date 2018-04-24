@@ -1,29 +1,29 @@
 ---
-title: "Protéger les applications métier sur des appareils non inscrits"
-description: "Cette rubrique décrit la procédure à suivre pour préparer vos applications métier personnalisées afin d’appliquer des stratégies de gestion des applications mobiles qui peuvent éviter de perdre des données."
-keywords: 
+title: Protéger les applications métier sur des appareils non inscrits
+description: Cette rubrique décrit la procédure à suivre pour préparer vos applications métier personnalisées afin d’appliquer des stratégies de gestion des applications mobiles qui peuvent éviter de perdre des données.
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 447e019dde4781183323f29a35ed569926973351
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 0fbc7ae1937aff60e8e494df06ee2c30e2fe8855
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Protéger les données et applications métier sur des appareils non inscrits dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Les stratégies de gestion des applications mobiles protègent les données de l’entreprise en limitant les actions qui pourraient provoquer une fuite des données de l’entreprise et en appliquant des exigences pour l’accès aux données, comme le code confidentiel d’une application. Pour appliquer des stratégies de gestion des applications mobiles à des applications métier iOS et Android, vous devez d’abord encapsuler l’application avec l’outil de création de package de restrictions d’application Microsoft Intune. L’inclusion dans un wrapper d’une application est le processus qui consiste à appliquer une couche de gestion à une application mobile sans avoir à la changer et à la distribuer à vos utilisateurs.  
 
@@ -42,16 +42,16 @@ Pour associer votre application métier aux stratégies de gestion des applicati
 
 1. Dans le [portail Azure](https://portal.azure.com/), accédez à **Gestion des applications mobiles Intune** > **Paramètres** et choisissez **Applications métier**.
 
-  ![Capture d’écran du panneau Paramètres avec l’option métier](../media/mam-azure-portal-lob-on-settings.png)
+   ![Capture d’écran du panneau Paramètres avec l’option métier](../media/mam-azure-portal-lob-on-settings.png)
 
 2. Dans le panneau **Applications métier**, choisissez **Ajouter une application personnalisée**.
 
-  ![Capture d’écran du panneau Applications métier avec le bouton Ajouter une application personnalisée en haut](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Fournissez un nom pour l’application, l’identificateur de lot dans le champ Identificateur de l’application et la plateforme (iOS ou Android).
+   ![Capture d’écran du panneau Applications métier avec le bouton Ajouter une application personnalisée en haut](../media/mam-azure-portal-add-lob-app-action.png)
+3. Fournissez un nom pour l’application, l’identificateur de lot dans le champ Identificateur de l’application et la plateforme (iOS ou Android).
 
-  ![Capture d’écran du panneau Ajouter une application personnalisée](../media/mam-azure-portal-add-app-details.png)
+   ![Capture d’écran du panneau Ajouter une application personnalisée](../media/mam-azure-portal-add-app-details.png)
 
-  Cette étape permet de créer une description unique de votre application. L’application est également affichée dans la liste des applications ciblées pour une stratégie de gestion des applications mobiles pour votre client, telle que décrite à l’étape suivante.
+   Cette étape permet de créer une description unique de votre application. L’application est également affichée dans la liste des applications ciblées pour une stratégie de gestion des applications mobiles pour votre client, telle que décrite à l’étape suivante.
 
 ## <a name="step-3-apply-mam-policies"></a>Étape 3 : Appliquer des stratégies GAM
 Une fois que les métadonnées de l’application sont chargées sur le service, l’application s’affiche dans la liste des applications. Vous pouvez à présent [créer une stratégie ou utiliser une stratégie existante](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) et l’appliquer à l’application métier que vous avez ajoutée à l’étape 2.
@@ -72,12 +72,12 @@ Si vous devez modifier les détails de l’application, tels que le nom de l’a
 ##  <a name="remove-apps"></a>Supprimer des applications
 Vous pouvez supprimer une application métier de la liste des applications. Cela supprime l’application de la liste ainsi que l’association aux stratégies de gestion des applications mobiles, mais ne supprime ni ne désinstalle l’application de l’appareil de l’utilisateur.  
 
-1.  Dans le [portail Azure](https://portal.azure.com/), accédez à **Gestion des applications mobiles Intune** > **Paramètres**. Dans le panneau **Paramètres**, choisissez **Activité commerciale** pour ouvrir la liste des applications existantes.  
-2.  Choisissez l’application à supprimer, puis le menu contextuel **(...)**.
+1. Dans le [portail Azure](https://portal.azure.com/), accédez à **Gestion des applications mobiles Intune** > **Paramètres**. Dans le panneau **Paramètres**, choisissez **Activité commerciale** pour ouvrir la liste des applications existantes.  
+2. Choisissez l’application à supprimer, puis le menu contextuel **(...)**.
 
-  ![Capture d’écran du panneau Applications métier avec les points de suspension](../media/mam-azure-portal-lob-context-menu.png)
-3.  Choisissez **Supprimer l’application** pour supprimer l’application.
+   ![Capture d’écran du panneau Applications métier avec les points de suspension](../media/mam-azure-portal-lob-context-menu.png)
+3. Choisissez **Supprimer l’application** pour supprimer l’application.
 
-  ![Capture d’écran du panneau Applications métier avec l’option de suppression d’application](../media/mam-azure-portal-delete-app.png)
+   ![Capture d’écran du panneau Applications métier avec l’option de suppression d’application](../media/mam-azure-portal-delete-app.png)
 
-  Cela supprime les applications de la liste des applications métier et de la liste des applications ciblées dans la stratégie de gestion des applications mobiles.
+   Cela supprime les applications de la liste des applications métier et de la liste des applications ciblées dans la stratégie de gestion des applications mobiles.

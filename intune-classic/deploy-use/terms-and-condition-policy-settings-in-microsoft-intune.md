@@ -1,29 +1,29 @@
 ---
-title: "Paramètres de la stratégie de conditions générales"
-description: "Vous pouvez déployer les conditions générales d’Intune pour des groupes d’utilisateurs pour expliquer comment l’inscription, l’accès aux ressources de travail et l’utilisation de l’application Portail d’entreprise affectent les utilisateurs et les appareils."
-keywords: 
+title: Paramètres de la stratégie de conditions générales
+description: Vous pouvez déployer les conditions générales d’Intune pour des groupes d’utilisateurs pour expliquer comment l’inscription, l’accès aux ressources de travail et l’utilisation de l’application Portail d’entreprise affectent les utilisateurs et les appareils.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75e68a49fb8437bb7742cfa1e458edab5c0b1836
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e639b603e52df621cddaaf9490773336229fc6a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie de conditions générales dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Vous pouvez déployer les conditions générales d’Intune sur des groupes d’utilisateurs pour expliquer comment l’inscription, l’accès aux ressources de travail et l’application Portail d’entreprise affectent les utilisateurs et les appareils. Les utilisateurs doivent accepter les conditions générales avant de pouvoir utiliser le Portail d’entreprise pour s’inscrire et accéder à leur travail.
 

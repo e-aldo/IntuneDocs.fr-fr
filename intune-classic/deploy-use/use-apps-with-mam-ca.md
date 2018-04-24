@@ -1,29 +1,29 @@
 ---
-title: "Utilisation d’applications avec l’accès conditionnel pour la gestion des applications mobiles"
-description: "Découvrez dans quelle mesure l’accès conditionnel pour la gestion des applications mobiles peut aider à contrôler les applications qui ont accès aux services O365."
-keywords: 
+title: Utilisation d’applications avec l’accès conditionnel pour la gestion des applications mobiles
+description: Découvrez dans quelle mesure l’accès conditionnel pour la gestion des applications mobiles peut aider à contrôler les applications qui ont accès aux services O365.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2f313fcbfa26c8f82708f8f830404da97a3eca25
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>Ce qui se passe quand une application est utilisée dans le cadre de l’accès conditionnel basé sur les applications
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 L’accès conditionnel basé sur les applications vérifie l’identité de l’application approuvée au moyen d’une application broker qui doit être présente sur l’appareil :
 *  Sur **iOS**, l’**application Azure Authenticator** est l’application broker.
@@ -40,8 +40,8 @@ Voici une liste de propriétés qui proviennent directement de l’appareil :
 
 > [!NOTE]
 > Sur les appareils Android :
-  * L’application Portail d’entreprise doit être installée sur l’appareil, mais il n’est pas nécessaire que l’utilisateur final se connecte à l’application.
-  * L’inscription de l’appareil doit être effectuée via l’application OneDrive ou Outlook.
+>   * L’application Portail d’entreprise doit être installée sur l’appareil, mais il n’est pas nécessaire que l’utilisateur final se connecte à l’application.
+>   * L’inscription de l’appareil doit être effectuée via l’application OneDrive ou Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Supprimer un appareil de l’inscription dans Azure AD.
 Vous pouvez supprimer l’inscription de l’appareil par le biais de la console d’administration Azure AD, ce qui est généralement effectué par l’administrateur informatique.  L’utilisateur final peut également le faire lui-même sur l’appareil.
@@ -52,7 +52,7 @@ Vous pouvez supprimer l’inscription de l’appareil par le biais de la console
 
 ## <a name="app-based-ca-with-device-based-ca"></a>Accès conditionnel basé sur l’application avec accès conditionnel basé sur l’appareil  
 
-Vous pouvez configurer l’[accès conditionnel basé sur la conformité des appareils](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)(**L’accès conditionnel basé sur la conformité des appareils**) dans la [console Administrateur Intune](https://manage.microsoft.com) ou la [console de gestion Azure AD Premium] (https://manage.windowsazure.com). L’accès conditionnel basé sur la conformité des appareils oblige les utilisateurs à se connecter à Exchange Online uniquement via les appareils gérés par Intune qui sont compatibles avec la stratégie de conformité des appareils Intune ou des PC joints au domaine.  Si un utilisateur appartient à un ou plusieurs groupes de sécurité ciblés par des stratégies d’accès conditionnel basé à la fois sur les applications et les appareils, l’utilisateur doit remplir l’une des deux conditions suivantes :
+Vous pouvez configurer l’[accès conditionnel basé sur la conformité des appareils](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)(<strong>Accès conditionnel basé sur la conformité des appareils</strong>) dans la [console Administrateur Intune](https://manage.microsoft.com) ou la [console de gestion Azure AD Premium](https://manage.windowsazure.com). L’accès conditionnel basé sur la conformité des appareils oblige les utilisateurs à se connecter à Exchange Online uniquement via les appareils gérés par Intune qui sont compatibles avec la stratégie de conformité des appareils Intune ou des PC joints au domaine.  Si un utilisateur appartient à un ou plusieurs groupes de sécurité ciblés par des stratégies d’accès conditionnel basé à la fois sur les applications et les appareils, l’utilisateur doit remplir l’une des deux conditions suivantes :
 * L’application utilisée pour accéder au service est une application mobile prise en charge par l’accès conditionnel basé sur les applications. 
 * L’appareil sur lequel l’application s’exécute est doté de l’**authentificateur iOS (appareils iOS)** ou de l’**application Portail d’entreprise (appareils Android)**.
 * L’appareil utilisé pour accéder au service est **géré par Intune et conforme** à la stratégie de conformité des appareils Intune ou est un **PC joint au domaine**.  Voici quelques exemples :

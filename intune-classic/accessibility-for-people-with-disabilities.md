@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 584ed73ee8be23d72ffc17fe8456dbb296d92a8c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ffacb5eeda5ed42fb2c5666b9f59b8cee14b71be
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accessibilité des personnes handicapées
-Microsoft s'engage à simplifier l'utilisation de ses produits et services au bénéfice de tous. Les rubriques suivantes fournissent des informations sur les fonctionnalités, produits et services visant à rendre Microsoft Intune plus accessible aux personnes handicapées.
+Microsoft s'engage à rendre ses produits et services plus faciles à utiliser pour tous. Les rubriques suivantes fournissent des informations sur les fonctionnalités, produits et services visant à rendre Microsoft Intune plus accessible aux personnes handicapées.
 
 ## <a name="in-this-section"></a>Dans cette section
 [Fonctionnalités d’accessibilité de Microsoft Intune](accessibility-features-of-microsoft-intune.md) Décrit les fonctionnalités d’accessibilité de Microsoft Intune.

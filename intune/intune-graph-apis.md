@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 273919a7f5a62ab6b7b625756da29d3b58339578
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: f6e5955b690eedf06872171fcc22eb86a0f7764e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Guide pratique pour utiliser Azure AD afin d’accéder aux API Intune dans Microsoft Graph
 
@@ -116,15 +116,15 @@ Pour inscrire une application pour qu’elle utilise l’API Microsoft Graph :
 
 - Rendez l’application disponible aux utilisateurs extérieurs à votre client.  (Cela est généralement nécessaire uniquement pour les partenaires prenant en charge plusieurs clients ou organisations.)  
 
-    Pour cela :
+    Pour ce faire :
 
-    1. Choisissez **Manifeste** dans le panneau de l’application, ce qui ouvre le panneau **Modifier le manifeste**.
+  1. Choisissez **Manifeste** dans le panneau de l’application, ce qui ouvre le panneau **Modifier le manifeste**.
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. Modifiez la valeur du paramètre `availableToOtherTenants` sur `true`.
+  2. Modifiez la valeur du paramètre `availableToOtherTenants` sur `true`.
 
-    3. Enregistrez vos modifications.
+  3. Enregistrez vos modifications.
 
 ## <a name="intune-permission-scopes"></a>Étendues d’autorisation Intune
 

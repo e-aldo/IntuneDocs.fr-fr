@@ -14,15 +14,15 @@ ms.assetid: 531b09bb-ddfd-498f-8ee3-6675d2466208
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.openlocfilehash: 5848fc18e0c288f8806f1fc93427d96c48317d64
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5e2cf210dd46c062f9dcc9c68bcdaa3234519e5f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-app-based-conditional-access-ca-policies-for-sharepoint-online"></a>Configurer des stratégies d’accès conditionnel basé sur l’application pour SharePoint Online
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](../includes/note-for-both-portals.md)]
 
 Cette rubrique fournit des conseils sur la façon de configurer une stratégie d’accès conditionnel basé sur l’application pour SharePoint Online. L’accès conditionnel basé sur l’application permet aux administrateurs d’autoriser uniquement les applications mobiles auxquelles des stratégies de protection des applications Intune sont appliquées.
 

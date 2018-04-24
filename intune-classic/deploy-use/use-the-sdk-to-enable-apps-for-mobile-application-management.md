@@ -1,29 +1,29 @@
 ---
 title: Utiliser le SDK pour activer des applications pour la GAM (Gestion des applications mobiles)
-description: "Cette rubrique explique brièvement pourquoi vous devez utiliser le SDK d’application Intune."
-keywords: 
+description: Cette rubrique explique brièvement pourquoi vous devez utiliser le SDK d’application Intune.
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e435b57a85364f56f2a307ce7113102e8b6df254
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: ed6bdddf063d64ec907755e64be047a231c47f44
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>Utiliser le kit SDK pour activer des applications pour la gestion des applications mobiles (MAM)
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilisez le SDK d’application Microsoft Intune pour permettre à Intune de gérer certaines fonctionnalités de vos applications iOS et Android. Une fois votre application activée, vous pouvez déployer des stratégies vers l’application. Ces stratégies utilisent ces fonctionnalités pour protéger vos données d’entreprise. Voici des exemples de types de protections que vous pouvez implémenter avec le SDK :
 

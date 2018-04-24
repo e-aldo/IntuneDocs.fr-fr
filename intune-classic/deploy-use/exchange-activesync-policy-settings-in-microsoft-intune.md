@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Paramètres de la stratégie Exchange ActiveSync dans Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilisez la stratégie **Exchange ActiveSync** de Microsoft Intune pour configurer les paramètres qui contrôlent diverses fonctions et fonctionnalités sur les appareils gérés par Exchange ActiveSync.
 
@@ -44,10 +44,11 @@ Utilisez la stratégie **Exchange ActiveSync** de Microsoft Intune pour configur
 
 ## <a name="encryption-settings"></a>Paramètres de chiffrement
 
-|Nom du paramètre|Détails|
-|----------------|---|
-|**Exiger le chiffrement sur l’appareil mobile**<sup>1</sup>|Exige le chiffrement des données sur l’appareil, lorsque cette fonction est prise en charge.<br><br>Pour les appareils Windows Phone 8, affectez la valeur **Oui**.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre **Exiger un mot de passe pour déverrouiller des appareils mobiles**.|
-|**Exiger le chiffrement sur les cartes de stockage**|Exige que les données stockées sur un stockage externe tel qu’une carte SD soient chiffrées (sur les appareils pris en charge).
+|                           Nom du paramètre                           |                                                                                                                                    Détails                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Exiger le chiffrement sur l’appareil mobile</strong><sup>1</sup> | Exige le chiffrement des données sur l’appareil, lorsque cette fonction est prise en charge.<br><br>Pour les appareils Windows Phone 8, affectez la valeur <strong>Oui</strong>.<br /><br />Pour activer le chiffrement sur les appareils iOS, activez le paramètre <strong>Exiger un mot de passe pour déverrouiller des appareils mobiles</strong>. |
+|       <strong>Exiger le chiffrement sur les cartes de stockage</strong>       |                                                                                  Exige que les données stockées sur un stockage externe tel qu’une carte SD soient chiffrées (sur les appareils pris en charge).                                                                                  |
+
 <sup>1</sup> Informations supplémentaires pour les appareils qui exécutent Windows 8.1
 
 -   Si vous voulez appliquer le chiffrement à des appareils exécutant Windows 8.1, vous devez installer la [mise à jour du client MDM pour Windows, publiée en décembre 2014](https://support.microsoft.com/kb/3013816), sur chaque appareil.

@@ -1,25 +1,25 @@
 ---
-title: "Gérer le transfert de données entre applications iOS"
+title: Gérer le transfert de données entre applications iOS
 titlesuffix: Microsoft Intune
-description: "Découvrez comment utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour gérer les transferts de données entre les applications."
-keywords: 
+description: Découvrez comment utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour gérer les transferts de données entre les applications.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4c2872e70697b15326f89abd5721048643c5421a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Comment gérer les transferts de données entre applications iOS dans Microsoft Intune
 ## <a name="manage-ios-apps"></a>Gérer les applications iOS
@@ -63,15 +63,15 @@ Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils g
 
 2. Dans la section Configuration de l’application, entrez le paramètre suivant :
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+   **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-  La syntaxe exacte de la paire clé/valeur peut varier en fonction du fournisseur de gestion des appareils mobiles tiers. Le tableau ci-dessous présente des exemples de fournisseurs de gestion des appareils mobiles tiers et les valeurs exactes à entrer dans la paire clé/valeur.
+   La syntaxe exacte de la paire clé/valeur peut varier en fonction du fournisseur de gestion des appareils mobiles tiers. Le tableau ci-dessous présente des exemples de fournisseurs de gestion des appareils mobiles tiers et les valeurs exactes à entrer dans la paire clé/valeur.
 
 |Fournisseur de gestion des appareils mobiles tiers| Clé Configuration | Type de valeur | Valeur Configuration|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | Chaîne | {UserPrincipalName}|
-|VMware AirWatch| IntuneMAMUPN | Chaîne | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | Chaîne | ${userUPN} **ou** ${userEmailAddress} |
+|Microsoft Intune| IntuneMAMUPN | String | {UserPrincipalName}|
+|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
+|MobileIron | IntuneMAMUPN | String | ${userUPN} **ou** ${userEmailAddress} |
 
 
 ### <a name="example-2-end-user-experience"></a>Exemple 2 : Expérience de l’utilisateur final

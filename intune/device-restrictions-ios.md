@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 2af720248363b78dc9cfc3b17af7b11eb14fd893
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Paramètres de restriction des appareils iOS de Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cet article décrit les paramètres des restrictions d’appareils Microsoft Intune que vous pouvez configurer pour les appareils exécutant iOS.
 
@@ -31,7 +31,7 @@ Cet article décrit les paramètres des restrictions d’appareils Microsoft Int
 -   **Envoi des données de diagnostic** : autoriser ou bloquer l’envoi de données de diagnostic à Apple depuis l’appareil.
 -   **Capture d'écran** : permet à l’utilisateur de capturer le contenu de l’écran en tant qu’image.
     - **Observation des écrans à distance par l’application En classe (mode supervisé uniquement)** : autoriser ou bloquer l’affichage par l’application En classe d’Apple de l’écran des appareils iOS.
-    - **Observation des écrans sans invite par l’application En classe (mode supervisé uniquement)** : s’ils sont autorisés, les enseignants peuvent observer en mode silencieux l’écran des appareils iOS des étudiants qui n’en sont pas avertis à l’aide de l’application En classe.
+    - **Observation des écrans sans invite par l’application En classe (mode supervisé uniquement)**  : s’ils sont autorisés, les enseignants peuvent observer en mode silencieux l’écran des appareils iOS des étudiants qui n’en sont pas avertis à l’aide de l’application En classe.
 -   **Certificats TLS non approuvés** : autoriser les certificats Transport Layer Security non autorisés sur l’appareil.
 -   **Approbation des applications d’entreprise** : permet à l’utilisateur de choisir de faire confiance aux applications qui n’ont pas été téléchargées à partir de l’App Store.
 - **Modification de compte (en mode supervisé uniquement)** - Si désactivée, cette option empêche l’utilisateur de modifier les paramètres spécifiques à l’appareil à partir de l’application des paramètres iOS, par exemple la création de nouveaux comptes d’appareils et la modification du nom d’utilisateur ou du mot de passe.
@@ -103,8 +103,8 @@ Vous pouvez activer le mode supervisé iOS seulement pendant l’installation in
     -   **Expiration du mot de passe (jours)** : spécifie le nombre de jours avant que l’utilisateur ne doive modifier le mot de passe de l’appareil.
     -   **Empêcher la réutilisation des mots de passe précédents** : spécifiez le nombre de mots de passe précédemment utilisés conservés par l’appareil.
     -   **Déverrouillage par empreinte digitale** : autorisez l’utilisation d’une empreinte digitale pour déverrouiller les appareils compatibles.
-- **Modification du code secret (mode supervisé uniquement)** : empêche la modification, l’ajout ou la suppression du code secret.
-    - **Modification de l’empreinte digitale (mode supervisé uniquement)** : empêche la modification, l’ajout ou la suppression par l’utilisateur des paramètres Touch ID.
+- **Modification du code secret (mode supervisé uniquement)**  : empêche la modification, l’ajout ou la suppression du code secret.
+    - **Modification de l’empreinte digitale (mode supervisé uniquement)**  : empêche la modification, l’ajout ou la suppression par l’utilisateur des paramètres Touch ID.
 
 <sup>1</sup> Lorsque vous configurez les paramètres **Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil** et **Nombre maximal de minutes entre le verrouillage de l'écran et la demande du mot de passe**, ceux-ci sont appliqués de manière séquentielle. Par exemple, si vous affectez aux deux paramètres une valeur de **5** minutes, l’écran s’éteint automatiquement après 5 minutes, et l’appareil se verrouille après 5 minutes de plus. Toutefois, si l'utilisateur désactive manuellement l'écran, le second paramètre est immédiatement appliqué. Dans le même exemple, une fois que l’utilisateur a désactivé l’écran, l’appareil se verrouille 5 minutes plus tard.
 
@@ -301,8 +301,6 @@ Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 

@@ -1,27 +1,27 @@
 ---
-title: "Résoudre les problèmes de gestion des applications mobiles"
-description: "Cette rubrique fournit des conseils de dépannage pour les déploiements d’accès conditionnel."
-keywords: 
+title: Résoudre les problèmes de gestion des applications mobiles
+description: Cette rubrique fournit des conseils de dépannage pour les déploiements d’accès conditionnel.
+keywords: ''
 author: oydang
 ms.author: oydang
 manager: angerobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: ec6e663c570399f0adca02772416904d5a9dcc79
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Résoudre les problèmes de gestion des applications mobiles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Si vous rencontrez des problèmes avec la gestion des applications mobiles Intune, commencez par lire ce qui suit. Cette rubrique aborde certains problèmes et questions courants que vous pouvez avoir, et fournit des solutions et des réponses.
 
@@ -32,7 +32,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 Il s’agit de problèmes courants qu’un administrateur informatique peut rencontrer lors de l’utilisation de la stratégie de protection des applications Intune.
 
-| Problème | Description | Résolution |
+| Problème | Description | Solution |
 | -- | -- | -- |
 | La stratégie n’est pas appliquée à Skype Entreprise | La stratégie de protection des applications sans inscription d’appareil, effectuée dans le portail Azure, ne s’applique pas à l’application Skype Entreprise sur les appareils iOS et Android. | Skype Entreprise doit être configuré pour l’authentification moderne.  Pour configurer l’authentification moderne pour Skype, suivez les instructions fournies dans [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Activer votre locataire pour l’authentification moderne). |
 | La stratégie d’application Office n’est pas appliquée | Les stratégies de protection des applications ne s’appliquent à aucune [application Office prise en charge](https://www.microsoft.com/cloud-platform/microsoft-intune-partners), quel que soit l’utilisateur. | Vérifiez que l’utilisateur a une licence pour Intune et que les applications Office sont ciblées par une stratégie de protection des applications déployée. L’application d’une stratégie de protection des applications récemment déployée peut prendre jusqu’à huit heures. |

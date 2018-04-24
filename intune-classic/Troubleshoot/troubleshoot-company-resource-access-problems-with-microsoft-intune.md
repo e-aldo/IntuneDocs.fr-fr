@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fdb76bd5ce33a96cfacf1ddc001b2917a13dfc9d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d6355accf090a9126f20cf24e8b3fbab4860d6e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Résoudre les problèmes d’accès aux ressources d’entreprise avec Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilisez les codes d’erreur et d’état de cette rubrique pour vous aider à résoudre les problèmes à l’origine des codes d’erreur retournés dans Microsoft Intune.
 
@@ -31,7 +31,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Codes d'état des appareils Windows gérés par MDM
 
-|Code d'état|Message d'erreur|Procédure à suivre|
+|Code d'état|Message d’erreur|Procédure à suivre|
 |---------------|-----------------|--------------|
 |10 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Installation en cours||
 |20 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|En attente de contenu||
@@ -50,7 +50,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 ## <a name="company-resource-access-common-errors"></a>Accès aux ressources d'entreprise (erreurs fréquentes)
 
-|Code d'état|Code d’erreur hexadécimal|Message d'erreur|
+|Code d'état|Code d’erreur hexadécimal|Message d’erreur|
 |---------------|--------------------------|-----------------|
 |-2016281101|0x87D1FDF3|Requête MDM CRP introuvable|
 |-2016281102|0x87D1FDF2|URL NDES introuvable|
@@ -91,7 +91,7 @@ Si ces informations ne vous permettent pas de remédier à votre problème, cons
 
 ### <a name="service-errors"></a>Erreurs de service
 
-|Code d'état|Code d’erreur hexadécimal|Message d'erreur|
+|Code d'état|Code d’erreur hexadécimal|Message d’erreur|
 |---------------|--------------------------|-----------------|
 |-2016299111|0x87D1B799|Erreur interne|
 |-2016299112|0x87D1B798|Erreur interne|

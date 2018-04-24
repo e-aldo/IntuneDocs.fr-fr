@@ -1,25 +1,24 @@
 ---
-title: "Intégration du contrôle d’accès réseau avec Microsoft Intune"
-titlesuffix: 
-description: "Intégration du contrôle d’accès réseau avec Intune"
-keywords: 
+title: Intégration du contrôle d’accès réseau dans Microsoft Intune - Azure | Microsoft Docs
+description: Les solutions de contrôle d’accès réseau vérifient la conformité et l’inscription des appareils auprès d’Intune. Le contrôle d’accès réseau inclut certains comportements et fonctionne avec l’accès conditionnel. Consultez les étapes d’inscription, et obtenez une liste de solutions partenaires.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Intégration du contrôle d’accès réseau avec Intune
 
@@ -27,7 +26,7 @@ Intune s’intègre avec les partenaires de contrôle d’accès réseau pour ai
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Comment les solutions de contrôle d’accès réseau et Intune aident-ils à protéger les ressources de votre organisation ?
 
-Les solutions de contrôle d’accès réseau sont chargées de vérifier l’état de conformité et d’inscription de l’appareil auprès d’Intune afin de prendre des décisions en matière de contrôle d’accès. Si l’appareil n’est pas inscrit, ou est inscrit mais non conforme aux stratégies de conformité Intune, il doit être redirigé vers Intune pour l’inscription et/ou pour une vérification de conformité d’appareil.
+Les solutions de contrôle d’accès réseau vérifient l’état de conformité et d’inscription des appareils auprès d’Intune pour prendre les décisions relatives au contrôle d’accès. Si l’appareil n’est pas inscrit, ou s’il est inscrit mais qu’il ne respecte pas les stratégies de conformité des appareils Intune, il doit être redirigé vers Intune pour l’inscription et/ou pour une vérification de conformité.
 
 ### <a name="example"></a>Exemple
 
@@ -35,17 +34,17 @@ Si l’appareil est inscrit et conforme avec Intune, la solution de contrôle d�
 
 ## <a name="feature-behaviors"></a>Comportements des fonctionnalités
 
-Impossible de passer les appareils activement synchronisés avec Intune de l’état **Conforme** / **Non conforme** à l’état **Non synchronisé** (ou **Inconnu**). L’état **Inconnu** est réservé aux appareils nouvellement inscrits et dont la conformité n’a pas encore été évaluée.
+Les appareils qui se synchronisent activement avec Intune ne peuvent pas passer de l’état **Conforme** / **Non conforme** à l’état **Non synchronisé** (ou **Inconnu**). L’état **Inconnu** est réservé aux appareils récemment inscrits, dont la conformité n’a pas encore été évaluée.
 
 Pour les appareils dont l’accès aux ressources est bloqué, le service de blocage doit rediriger tous les utilisateurs vers le [portail de gestion](https://portal.manage.microsoft.com) pour déterminer l’origine du blocage de l’appareil.  Si les utilisateurs consultent cette page, la conformité de leurs appareils est réévaluée de façon synchrone.
 
 ## <a name="nac-and-conditional-access"></a>Contrôle d’accès réseau et accès conditionnel
 
-Le contrôle d’accès réseau fonctionne avec l’accès conditionnel pour fournir des décisions en matière de contrôle d’accès. Pour plus d’informations, consultez les [utilisations courantes de l’accès conditionnel avec Intune](conditional-access-intune-common-ways-use.md).
+Le contrôle d’accès réseau fonctionne avec l’accès conditionnel pour fournir des décisions en matière de contrôle d’accès. Pour plus d’informations, consultez [Utilisations courantes de l’accès conditionnel avec Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>Fonctionnement de l’intégration du contrôle d’accès réseau
 
-Voici une vue d’ensemble du fonctionnement de l’intégration NAC dans Intune. Les trois premières étapes (1 à 3) expliquent le processus d’intégration. Une fois la solution de contrôle d’accès réseau intégrée à Intune, les étapes 4 à 9 décrivent l’opération continue.
+La liste suivante présente le fonctionnement du contrôle d’accès réseau quand il est intégré à Intune. Les trois premières étapes (1 à 3) expliquent le processus d’intégration. Une fois la solution de contrôle d’accès réseau intégrée à Intune, les étapes 4 à 9 décrivent l’opération en cours.
 
 ![Fonctionnement du contrôle d’accès réseau avec Intune](./media/ca-intune-common-ways-2.png)
 
@@ -64,3 +63,4 @@ Voici une vue d’ensemble du fonctionnement de l’intégration NAC dans Intune
 - [Intégrer Cisco ISE avec Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Intégrer Citrix NetScaler avec Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 - [Intégrer HP Aruba Clear passe avec Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Intégrer Squadra secRMM (security Removable Media Manager) à Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

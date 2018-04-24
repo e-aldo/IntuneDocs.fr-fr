@@ -1,29 +1,29 @@
 ---
 title: Mettre des appareils hors service
-description: "Intune prend en charge une réinitialisation sélective et une réinitialisation complète pour supprimer l’appareil de la gestion Intune en supprimant la stratégie et le portail d’entreprise."
-keywords: 
+description: Intune prend en charge une réinitialisation sélective et une réinitialisation complète pour supprimer l’appareil de la gestion Intune en supprimant la stratégie et le portail d’entreprise.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d304e0d27b6aa1ee568bc71272781f44efdce121
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9dc8fdd7437c9de49df9ea9a4c9641ac9d590de
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-devices-from-intune-management"></a>Retirer des appareils de la gestion Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Qu’ils soient personnels ou qu’ils appartiennent à l’entreprise, les appareils gérés sont appelés à être supprimés du portail de gestion Intune.
 
@@ -50,7 +50,7 @@ Quand vous supprimez la licence d’un utilisateur, les appareils inscrits de ce
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Pour supprimer des appareils dans le portail Azure Active Directory
 
-1.  Connectez-vous à l’aide des informations d’identification de votre entreprise sur [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com), puis choisissez **Centres d’administration** &gt; **AD Azure**.
+1.  Connectez-vous avec les informations d’identification de votre entreprise sur [http://aka.ms/accessaad](http://aka.ms/accessaad) ou [https://portal.office.com](https://portal.office.com), puis choisissez **Centres d’administration** &gt; **Azure AD**.
 
 2.  Créez un abonnement Azure si vous n’en avez pas. Cette opération ne doit pas nécessiter de carte de crédit ou un paiement si vous disposez d’un compte payant. Choisissez le lien d’abonnement **Inscrire votre annuaire Azure Active Directory gratuit**.
 
