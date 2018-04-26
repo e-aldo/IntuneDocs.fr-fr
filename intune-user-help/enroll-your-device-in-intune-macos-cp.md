@@ -17,18 +17,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrire votre appareil macOS dans Intune avec l’application Portail d’entreprise
 
 L’accès aux applications, aux données et aux ressources de votre organisation vous permet de travailler plus facilement. Votre organisation utilise Intune pour [gérer l’accès à ces ressources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md). De ce fait, vous devez télécharger l’application Portail d’entreprise pour macOS. Les instructions suivantes fonctionnent pour les appareils macOS sur OS X El Capitan 10.11+.
 
-> [!NOTE]
-> Vous trouverez des instructions pour l’inscription d’appareils macOS sur des versions plus antérieures de macOS [ici](enroll-your-device-in-intune-macos-legacy.md).
 
 1. Sur votre __station d’accueil__, recherchez __Safari__ et ouvrez une nouvelle fenêtre, puis ouvrez le [site web du portail d’entreprise](https://portal.manage.microsoft.com).
 

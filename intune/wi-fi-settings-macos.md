@@ -3,8 +3,8 @@ title: Paramètres Wi-Fi dans Microsoft Intune pour les appareils exécutant mac
 titleSuffix: ''
 description: Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions Wi-Fi sur les appareils exécutant macOS.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f0feb00949375cf65428d061af81813cfcd5249
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 81bd3cb54a1490732083b52a1fe242146183eebc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Paramètres Wi-Fi pour les appareils Mac OS dans Microsoft Intune
 
@@ -56,14 +56,14 @@ Cet article décrit les paramètres Wi-Fi que vous pouvez configurer dans Micros
 ### <a name="further-options-when-you-choose-an-eap-type"></a>Options supplémentaires lorsque vous choisissez un type EAP
 
 
-|Nom du paramètre|Autres informations|À effectuer quand :|
+|Nom du paramètre|Plus d’informations|À effectuer quand :|
 |--------------|-------------|----------|
 |**Paramètres PAC (Protected Access Credential (informations d’identification d’accès protégé))**|Sélectionnez cette option si vous voulez utiliser les informations d'identification d'accès protégé pour établir un tunnel authentifié entre le client et le serveur d'authentification. Vous avez le choix entre :<br>- **Utiliser PAC** : utilisez un fichier PAC existant.<br>- **Utiliser et approvisionner PAC** : configurez le fichier PAC sur vos appareils.<br>- **Utiliser et approvisionner les informations d'identification à accès protégé anonymement** : approvisionnez le fichier PAC sur vos appareils pour vous assurer que le fichier PAC est configuré sans authentifier le serveur.|Le Type EAP est **EAP-FAST**|
 
 #### <a name="server-trust"></a>Approbation du serveur
 
 
-|Nom du paramètre|Autres informations|À effectuer quand :|
+|Nom du paramètre|Plus d’informations|À effectuer quand :|
 |--------------|-------------|----------|
 |**Noms de serveurs de certificats**|Spécifiez un ou plusieurs noms communs utilisés dans les certificats émis par votre autorité de certification de confiance. Si vous fournissez ces informations, vous pouvez ignorer la boîte de dialogue d’approbation dynamique qui s’affiche sur les appareils des utilisateurs quand ils se connectent à ce réseau Wi-Fi.|Le type EAP est **EAP-TLS**, **EAP-TTLS** ou **PEAP**.|
 |**Certificat racine pour la validation du serveur**|Choisissez le profil de certificat racine approuvé utilisé pour authentifier la connexion. |Le type EAP est **EAP-TLS**, **EAP-TTLS** ou **PEAP**|
@@ -73,7 +73,7 @@ Cet article décrit les paramètres Wi-Fi que vous pouvez configurer dans Micros
 #### <a name="client-authentication"></a>Authentification du client
 
 
-|                                     Nom du paramètre                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Autres informations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            À effectuer quand :                            |
+|                                     Nom du paramètre                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Plus d’informations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            À effectuer quand :                            |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | <strong>Certificat client pour l'authentification du client (certificat d'identité)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Choisissez le profil de certificat SCEP ou PKCS utilisé pour authentifier la connexion.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              Le type EAP est <strong>EAP-TLS</strong>              |
 |                        <strong>Méthodes d’authentification</strong>                        | Sélectionnez la méthode d'authentification de la connexion :<br>- <strong>Certificats</strong> pour sélectionner le certificat d’identité client SCEP ou PKCS présenté au serveur.<br><br>- <strong>Nom d’utilisateur et mot de passe</strong> pour spécifier une autre méthode d’authentification. <br><br>Si vous avez sélectionné <strong>Nom d’utilisateur et mot de passe</strong>, configurez :<br><br>-  <strong>Méthode non-EAP (identité interne)</strong>, puis sélectionnez la méthode d’authentification de la connexion :<br>- <strong>Aucun</strong><br>- <strong>Mot de passe non chiffré (PAP)</strong><br>- <strong>Protocole CHAP (Challenge Handshake Authentication Protocol)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP Version 2 (MS-CHAP v2)</strong><br>Les options disponibles dépendent du type EAP sélectionné.<br><br><strong>et</strong><br><br>- <strong>Confidentialité de l'identité (identité externe)</strong> : spécifiez le texte envoyé en réponse à une demande d'identité EAP. Ce texte peut être n'importe quelle valeur. Lors de l'authentification, cette identité anonyme est envoyée en premier, suivie de l'identification réelle adressée dans un tunnel sécurisé. | Le type EAP est <strong>EAP-TTLS</strong> ou <strong>PEAP</strong> |

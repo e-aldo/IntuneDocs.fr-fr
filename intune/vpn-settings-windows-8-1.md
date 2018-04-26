@@ -3,8 +3,8 @@ title: Paramètres VPN Microsoft Intune pour les appareils Windows 8.1
 titleSuffix: ''
 description: Découvrez les paramètres Intune que vous pouvez utiliser pour configurer des connexions VPN sur les appareils exécutant Windows 8.1.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbcc3be31a6d9de7ce87ea5b25b8c1a2c42b47cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 30aa56913cc3bda2d1c8b8b67e982c565c44a2a8
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Configurer les paramètres VPN dans Microsoft Intune pour les appareils exécutant Windows 8.1
 
@@ -85,7 +85,7 @@ Pour plus d’informations sur l’écriture de commandes XML personnalisées, r
 ## <a name="proxy-settings"></a>Paramètres du proxy
 
 - **Détecter automatiquement les paramètres du proxy** : si votre serveur VPN nécessite un serveur proxy pour la connexion, spécifiez si vous souhaitez que les appareils détectent automatiquement les paramètres de connexion. Pour plus d'informations, consultez la documentation de Windows Server.
-- **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Entrez **l’URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier de configuration.
+- **Script de configuration automatique** : utilisez un fichier de configuration pour configurer le serveur proxy. Entrez l’**URL du serveur proxy** (par exemple **http://proxy.contoso.com**) qui contient le fichier config.
 - **Utiliser un serveur proxy** : activez cette option si vous souhaitez saisir manuellement les paramètres du serveur proxy.
     - **Adresse** : saisissez l’adresse du serveur proxy (comme une adresse IP).
     - **Numéro de port** : saisissez le numéro de port associé au serveur proxy.

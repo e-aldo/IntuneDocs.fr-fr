@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l’accès à Internet à l’aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -155,10 +155,9 @@ Outlook doit être configuré avec une stratégie de protection des applications
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Étape 2 : Attribuer une stratégie de configuration d’application affectée pour Managed Browser
 Cette procédure configure l’application Managed Browser pour utiliser la redirection de proxy d’application. À l’aide de la procédure pour créer une configuration d’application Managed Browser, fournissez les paires clé/valeur suivantes :
 
-|||
-|-|-|
-|Clé|Valeur|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| Clé                                                             | Valeur    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 Pour plus d’informations sur la manière d’utiliser conjointement Managed Browser et le proxy d’application Azure AD pour un accès transparent (et protégé) à des applications web locales, consultez le billet de blog Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
@@ -166,10 +165,8 @@ Pour plus d’informations sur la manière d’utiliser conjointement Managed Br
 
 Ce paramètre vous permet de configurer la page d’accueil que les utilisateurs voient quand ils démarrent Managed Browser ou créent un onglet. À l’aide de la procédure pour créer une configuration d’application Managed Browser, fournissez les paires clé/valeur suivantes :
 
-
-|                                                                   |                                                                                                                            |
+|                                Clé                                |                                                           Valeur                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-|                                Clé                                |                                                           Value                                                            |
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Spécifiez une URL valide. Les URL incorrectes sont bloquées par mesure de sécurité.<br>Exemple : <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Comment configurer des signets pour Managed Browser
@@ -182,21 +179,17 @@ Ce paramètre vous permet de configurer un ensemble de signets pour les utilisat
 
 À l’aide de la procédure pour créer une configuration d’application Managed Browser, fournissez les paires clé/valeur suivantes :
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                Clé                                 |                                                                                                                                                                                                                                                         Valeur                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                Clé                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | La valeur de cette configuration est une liste de signets. Chaque signet comprend le titre et l’URL du signet. Séparez le titre et l’URL par le caractère <strong>&#124;</strong>.<br><br>Exemple : <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Pour configurer plusieurs signets, séparez chaque paire par deux caractères, <strong>&#124;&#124;</strong><br><br>Exemple : <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Guide de spécification des URL autorisées et bloquées pour Managed Browser
 
 À l’aide de la procédure pour créer une configuration d’application Managed Browser, fournissez les paires clé/valeur suivantes :
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Clé                                                                                                                                                                |                                                                                                                                                                                    Value                                                                                                                                                                                    |
-| Choisissez parmi :<br><br>- Spécifier des URL autorisées (seules ces URL sont autorisées ; aucun autre site n’est accessible) : <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Spécifier des URL bloquées (tous les autres sites sont accessibles) : <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | La valeur correspondante pour la clé est une liste d’URL. Vous entrez toutes les URL que vous souhaitez autoriser ou bloquer comme des valeurs uniques, séparées par des barres verticales <strong>&#124;</strong>.<br><br>Exemples :<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|Clé|Valeur|
+|-|-|
+|Choisissez parmi :<br><br>- Spécifier des URL autorisées (seules ces URL sont autorisées ; aucun autre site n’est accessible) : **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Spécifier des URL bloquées (tous les autres sites sont accessibles) : <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|La valeur correspondante pour la clé est une liste d’URL. Vous entrez toutes les URL que vous souhaitez autoriser ou bloquer comme des valeurs uniques, séparées par des barres verticales **&#124;**.<br><br>Exemples :<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Ne spécifiez pas les deux clés. Si les deux clés sont destinées au même utilisateur, la clé allow est utilisée parce qu’il s’agit de l’option la plus restrictive.
@@ -219,7 +212,7 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
 - Utilisez le tableau suivant pour en savoir plus sur les modèles autorisés que vous pouvez utiliser pour spécifier des URL :
 
-|                  URL                  |                     Détails                      |                                                Correspond à                                                |                                Ne correspond pas à                                 |
+|                  Adresse URL                  |                     Détails                      |                                                Correspond à                                                |                                Ne correspond pas à                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 |        http://www.contoso.com         |              Correspond à une page unique               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
 |          http://contoso.com           |              Correspond à une page unique               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |

@@ -3,8 +3,8 @@ title: Importer des paramètres Wi-Fi pour Windows 8.1 et versions ultérieures
 titleSuffix: Microsoft Intune
 description: Comment importer des paramètres Wi-Fi de Windows dans un profil Wi-Fi Intune.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 033b60fded23f5a1dac5c8ff93716dac77c56fe2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 157416738e4607d5022f1c3c7ed8251a8e32fe3e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Importer des paramètres Wi-Fi pour appareils Windows 8.1 et ultérieur dans Microsoft Intune
 
@@ -51,7 +51,7 @@ Sur un ordinateur Windows où le profil Wi-Fi nécessaire est déjà installé, 
 
 5. Dans **Plateforme**, sélectionnez **Windows 8.1 et ultérieur**.
 6. Dans **Type de profil**, sélectionnez **Importation Wi-Fi**.
-7. Configurez les paramètres suivants :
+7. Configurez les paramètres suivants :
   - **Nom de la connexion** : entrez le nom de la connexion Wi-Fi. Ce nom s’affiche pour les utilisateurs finaux quand ils parcourent les réseaux Wi-Fi disponibles.
   - **Profil XML** : cliquez sur le bouton Parcourir pour sélectionner le fichier XML contenant les paramètres de profil Wi-Fi à importer dans Intune.
   - **Contenu du fichier** : permet d’afficher le code XML du profil de configuration sélectionné.

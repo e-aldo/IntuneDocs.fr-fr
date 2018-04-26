@@ -2,8 +2,8 @@
 title: Créer un profil Wi-Fi avec une clé prépartagée - Microsoft Intune - Azure | Micrososft Docs
 description: Utiliser un profil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée et obtenir un exemple de code XML pour les profils Wi-Fi basé sur Android, Windows et EAP dans Microsoft Intune
 keywords: ''
-author: mandia
-ms.author: MandiOhlinger
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Utiliser un profil d’appareil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -212,7 +212,7 @@ Vous pouvez également créer un fichier XML à partir d’une connexion Wi-Fi e
 2. Recherchez dans les fichiers XML pour trouver celui dont le nom est correct.
 3. Une fois que vous avez localisé le fichier XML approprié, copiez et collez le code XML dans le champ **Données** de la page des paramètres OMA-URI.
 
-## <a name="best-practices"></a>Bonnes pratiques
+## <a name="best-practices"></a>Méthodes conseillées
 - Avant de déployer un profil Wi-Fi avec une clé prépartagée, vérifiez que l’appareil peut se connecter directement au point de terminaison.
 
 - Lors de la rotation des clés (mots de passe ou phrases secrètes), prévoyez un temps d’arrêt et planifiez vos déploiements en conséquence. Il est préférable d’envoyer les nouveaux profils Wi-Fi en dehors des horaires de travail. Avertissez également les utilisateurs que la connectivité peut être impactée.

@@ -2,8 +2,8 @@
 title: RBAC avec Microsoft Intune
 description: Découvrez comment le contrôle d’accès en fonction du rôle (RBAC) vous permet de contrôler qui peut effectuer des actions et apporter des modifications dans Microsoft Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) avec Microsoft Intune
 
@@ -64,14 +64,14 @@ Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à de
 
 |Autorisation|Opération|
 |---|---|
-|Données d'audit|Lecture|
+|Données d'audit|Lire|
 |Configurations d’appareil|Affecter, Créer, Supprimer, Lire, Mettre à jour|
 |Gestionnaires d’inscription d’appareil|Lire, Mettre à jour|
 |Appareils gérés|Lire, Mettre à jour<!--, Delete [To be added in 1803]-->|
 |Applications mobiles|Affecter, Créer, Supprimer, Lire, Mettre à jour|
-|Rapports|Lecture|
+|Les rapports|Lire|
 |Actions à distance|Nettoyer le PC, Redémarrer, Verrouiller à distance, Mettre hors service, Synchroniser les appareils, Réinitialiser|
-|Organisation|Lecture|
+|Organisation|Lire|
 
 ### <a name="to-assign-a-built-in-role"></a>Pour affecter un rôle intégré
 

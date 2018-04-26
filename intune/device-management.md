@@ -2,8 +2,8 @@
 title: Gérer les appareils avec Microsoft Intune - Azure | Microsoft Docs
 description: Passez en revue les appareils que vous gérez avec Microsoft Intune, notamment l’exportation d’une liste d’appareils au format csv, affichez vos appareils joints à Azure Active Directory, consultez un journal des modifications des actions sur l’appareil, utilisez le connecteur TeamViewer pour autoriser les administrateurs informatiques à résoudre à distance les problèmes liés aux appareils Android et consultez toutes les actions que vous pouvez exécuter sur vos appareils.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: get-started-article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a003b9ec4208bc3449dfb1b3b2ee889a29b742b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Qu’est-ce que la gestion des appareils Microsoft Intune ?
 

@@ -3,7 +3,7 @@ title: Décisions d’ordre informatique pour BYOD avec EMS
 description: Principales décisions d’ordre informatique pour activer BYOD et protéger les données d’entreprise avec Microsoft Enterprise Mobility + Security.
 keywords: ''
 author: dougeby
-ms.author: pfetty
+ms.author: dougeby
 manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Décisions d’ordre informatique pour activer BYOD avec Microsoft Enterprise Mobility + Security (EMS)
 
@@ -78,6 +78,6 @@ De nombreuses organisations sont souvent soucieuses de certains risques spécifi
 |Partage de données accidentel ou enregistrement à des emplacements non sécurisés | Désactiver l’impression | Non applicable|
 
 ## <a name="next-steps"></a>Étapes suivantes
-Il est maintenant temps de décider si vous allez activer BYOD dans votre organisation en vous concentrant sur la gestion des appareils, la gestion des applications ou une combinaison des deux. Le choix de l’implémentation dépend de vous. Vous aurez dans tous les cas la certitude que les fonctionnalités d’identité et de sécurité disponibles avec Azure AD seront disponibles.
+Il est maintenant temps de décider si vous allez activer BYOD dans votre organisation en vous concentrant sur la gestion des appareils, la gestion des applications ou une combinaison des deux. Le choix de l’implémentation dépend de vous. Vous aurez dans tous les cas la certitude que les fonctionnalités d’identité et de sécurité disponibles avec Azure AD seront disponibles.  
 
 Utilisez le [Guide de planification](planning-guide.md) Intune pour identifier le niveau suivant de planification.

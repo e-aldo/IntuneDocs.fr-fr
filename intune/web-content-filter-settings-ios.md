@@ -3,8 +3,8 @@ title: Paramètres de filtrage de contenu web Microsoft Intune pour les appareil
 titlesuffix: ''
 description: Découvrez les paramètres de Microsoft Intune que vous pouvez utiliser pour autoriser et bloquer l’accès à des sites web à partir d’appareils exécutant iOS.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9ea7a9219c69326dcefc71a35339ebb10a3c5ed1
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Paramètres de filtrage de contenu web pour les appareils iOS
 
@@ -33,7 +33,7 @@ Il existe deux méthodes pour configurer des URL :
 - **Sites web spécifiques uniquement** (pour le navigateur web Safari uniquement) : ces URL sont ajoutées aux signets du navigateur Safari. L’utilisateur est **uniquement** autorisé à accéder à ces sites ; aucun autre site n’est accessible. Utilisez cette option uniquement si vous connaissez la liste exacte des URL auxquelles les utilisateurs peuvent accéder.
 Si vous ne spécifiez aucune URL, les utilisateurs ne peuvent accéder à aucun site web à l’exception de microsoft.com, microsoft.net et apple.com.
 
-## <a name="get-started"></a>Prendre en main
+## <a name="get-started"></a>Prise en main
 
 1. Dans la page Fonctionnalités de l’appareil, sélectionnez **Filtre de contenu web (mode supervisé uniquement)**.
 2. Dans la page **Filtre de contenu web** panneau, choisissez le **type de filtre** que vous souhaitez configurer. Vous pouvez choisir plusieurs options :

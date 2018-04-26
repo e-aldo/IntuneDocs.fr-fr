@@ -3,8 +3,8 @@ title: Gérer le transfert de données entre applications iOS
 titlesuffix: Microsoft Intune
 description: Découvrez comment utiliser des stratégies de gestion des applications mobiles dans Microsoft Intune pour gérer les transferts de données entre les applications.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c2872e70697b15326f89abd5721048643c5421a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ecf3791a7b01a9214c95680816a0fae16aade8f2
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Comment gérer les transferts de données entre applications iOS dans Microsoft Intune
 ## <a name="manage-ios-apps"></a>Gérer les applications iOS
@@ -69,9 +69,9 @@ Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils g
 
 |Fournisseur de gestion des appareils mobiles tiers| Clé Configuration | Type de valeur | Valeur Configuration|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | String | {UserPrincipalName}|
-|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | String | ${userUPN} **ou** ${userEmailAddress} |
+|Microsoft Intune| IntuneMAMUPN | Chaîne | {UserPrincipalName}|
+|VMware AirWatch| IntuneMAMUPN | Chaîne | {UserPrincipalName}|
+|MobileIron | IntuneMAMUPN | Chaîne | ${userUPN} **ou** ${userEmailAddress} |
 
 
 ### <a name="example-2-end-user-experience"></a>Exemple 2 : Expérience de l’utilisateur final
