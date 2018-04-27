@@ -407,8 +407,6 @@
           href: edition-upgrade-configure-windows-10.md
         - name: Configurer les paramètres de Windows 10 Éducation
           href: education-settings-configure.md
-        - name: Configurer les paramètres d’iOS Éducation
-          href: education-settings-configure-ios.md
         - name: Configurer les appareils partagés d’iOS Éducation
           href: education-settings-configure-ios-shared.md
         - name: Configurer des stratégies de mise à jour d’iOS
@@ -511,6 +509,8 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: Activer MTD dans Intune
                   href: mtd-connector-enable.md
+        - name: Protection avancée contre les menaces
+          href: advanced-threat-protection.md
         - name: Contrôle d’accès réseau
           href: network-access-control-integrate.md
         - name: Configurer Windows Hello
@@ -596,6 +596,10 @@
           href: data-intune-sends-to-apple.md
         - name: Données envoyées par Intune à Google
           href: data-intune-sends-to-google.md
+        - name: Données envoyées par Apple à Intune
+          href: data-apple-sends-to-intune.md
+        - name: Données envoyées par Google à Intune
+          href: data-google-sends-to-intune.md
     - name: Surveiller et dépanner
       items:
         - name: Aider les utilisateurs à résoudre les problèmes
@@ -694,6 +698,8 @@
               href: reports-ref-user-device.md
             - name: Informations de référence sur l’entité User
               href: reports-ref-user.md
+        - name: Déplacer les données de votre compte Intune Data Warehouse
+          href: data-warehouse-account-move.md
     - name: Utiliser Azure AD pour accéder aux APIs Intune dans Microsoft Graph
       href: intune-graph-apis.md
       items:
