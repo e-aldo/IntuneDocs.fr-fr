@@ -1,12 +1,12 @@
 ---
-title: Nouveautés de Microsoft Intune
+title: Nouveautés de Microsoft Intune - Azure | Microsoft Docs
 titlesuffix: ''
 description: Découvrez les nouveautés du portail Intune Azure
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/12/2018
+ms.date: 04/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: a2692163977a352e7a26dfc656d601d70ef401b4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9be6e0a3364f6ee0a077c1435d66498aba898430
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Nouveautés de Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,30 @@ Découvrez les nouveautés hebdomadaires dans Microsoft Intune. Vous pouvez ég
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-april-23-2018"></a>Semaine du 23 avril 2018
+
+#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>ATP (Protection avancée contre les menaces) et Intune sont entièrement intégrés <!-- EEready 1629303 -->
+
+Dans le Centre de sécurité Windows Defender (portail ATP), vous pouvez créer une connexion à Microsoft Intune. Une fois créée, une stratégie de conformité Intune permet de déterminer un niveau de menace acceptable. Si le niveau de menace est dépassé, une stratégie d’accès conditionnel Azure AD (Active Directory) peut bloquer l’accès à différentes applications au sein de votre organisation.
+
+Cette fonctionnalité permet à ATP d’analyser les fichiers, de détecter les menaces et de signaler tout risque sur vos appareils Windows 10.
+
+Consultez [Activer ATP avec accès conditionnel dans Intune](advanced-threat-protection.md).
+
+## <a name="week-of-april-16-2018"></a>Semaine du 16 avril 2018
+
+#### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>Utiliser le client Cisco AnyConnect pour iOS <!-- EEready 1333708 -->
+
+Quand vous créez un profil VPN pour iOS, vous disposez désormais de deux options : **Cisco AnyConnect** et **Cisco Legacy AnyConnect**. Les profils Cisco AnyConnect prennent en charge les versions 4.0.7x et ultérieures. Les profils VPN Cisco AnyConnect pour iOS existants se nomment **Cisco Legacy AnyConnect** et continuent de fonctionner avec Cisco AnyConnect 4.0.5x et les versions antérieures, comme c’est le cas aujourd’hui.
+
+> [!NOTE]
+> Ce changement s’applique uniquement à iOS. Il existe toujours une seule option Cisco AnyConnect pour les plateformes Android, Android for Work et macOS.
+
+#### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>Les appareils macOS inscrits auprès de Jamf peuvent désormais s’inscrire auprès d’Intune <!-- 2370684 -->
+
+Les versions 1.3 et 1.4 du portail d’entreprise macOS n’ont pas réussi à inscrire les appareils Jamf auprès d’Intune. Ce problème est résolu dans la version 1.4.2 du portail macOS.
+
 
 ## <a name="week-of-april-9-2018"></a>Semaine du 9 avril 2018
 
@@ -140,8 +164,6 @@ Il s’agit d’une colonne facultative dans le panneau Appareils. Elle n’est 
 #### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837---"></a>Les appareils iOS sont invités à entrer un code confidentiel toutes les 15 minutes <!--1550837 -->
 Une fois qu’une stratégie de conformité ou de configuration est appliquée à un appareil iOS, les utilisateurs sont invités à définir un code PIN toutes les 15 minutes. Les utilisateurs sont continuellement sollicités jusqu’à ce qu’un code PIN soit défini.
 
-
-
 #### <a name="schedule-your-automatic-updates---1805514---"></a>Planifier vos mises à jour automatiques <!--1805514 -->
 Intune vous permet de contrôler l’installation des mises à jour automatiques à l’aide des [paramètres des anneaux de mise à jour Windows](windows-update-for-business-configure.md). Avec cette mise à jour, vous pouvez planifier des mises à jour récurrentes : hebdomadaires, quotidiennes et horaires.
 
@@ -180,7 +202,11 @@ Une fois le paramètre de coupe-feu activé, vous pouvez configurer le coupe-feu
 
    Vous pouvez autoriser ou bloquer la réception de connexions entrantes pour des applications spécifiques. Vous pouvez également activer le mode furtif de manière à empêcher les réponses aux demandes de détection.
 
-##### <a name="more-information"></a>Autres informations
+####  <a name="detailed-error-codes-and-messages----1376342---"></a>Codes et messages d’erreur détaillés <!-- 1376342 -->
+
+Dans Configuration de l’appareil, vous trouverez des codes d’erreur et des messages d’erreur plus détaillés. Cette amélioration du compte-rendu permet de voir les paramètres, leur état et les détails relatifs au dépannage.
+
+##### <a name="more-information"></a>Plus d’informations
 
 - Bloquer toutes les connexions entrantes
 
@@ -383,7 +409,7 @@ Protéger les fichiers et les dossiers contre les modifications non autorisées 
 Des ajouts apportés aux paramètres de conformité Windows 10 sont désormais disponibles, comme l’obligation d’utiliser le pare-feu et l’antivirus Windows Defender.
 
 
-### <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
+### <a name="role-based-access-control"></a>Contrôle d'accès en fonction du rôle
 ### <a name="intune-apps"></a>Applications Intune
 #### <a name="support-for-offline-apps-from-the-microsoft-store-for-business---1222672--"></a>Prise en charge des applications hors connexion à partir du Microsoft Store pour Entreprises <!--1222672-->
 Les applications en mode hors connexion que vous avez achetées sur le Microsoft Store pour Entreprises sont désormais synchronisées avec le portail Azure. Vous pouvez déployer ces applications sur des groupes d’utilisateurs ou d’appareils. Les applications hors connexion sont installées par Intune et non pas par le Store.
@@ -595,7 +621,7 @@ Vous pouvez supprimer le jeton Programme d’achat en volume (VPP) iOS à l’ai
 ### <a name="intune-apps"></a>Applications Intune
 
 
-### <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
+### <a name="role-based-access-control"></a>Contrôle d'accès en fonction du rôle
 
 #### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1667026---"></a>Nouvelle collection d’entités, nommée Utilisateur actuel, limitée aux données des utilisateurs actuellement actifs<!-- 1667026 -->
 
@@ -893,7 +919,7 @@ Vous pouvez définir des ressources cloud d’entreprise, des plages d’adresse
 | | |
 |---|---|
 | non configuré | **Non configuré** utilise le niveau de blocage de Windows Defender Antivirus par défaut et offre une détection solide sans augmenter le risque de détection des fichiers légitimes. |
-| Élevé | **Haut** s’applique à un niveau fort de détection.
+| Importante | **Haut** s’applique à un niveau fort de détection.
 | Élevé +  | **Haut +** fournit le niveau Haut avec des mesures de protection supplémentaires pouvant impacter les performances du client.
 | Tolérance zéro  | **Tolérance zéro** bloque tous les exécutables inconnus. |
 
@@ -935,12 +961,6 @@ La première version du modèle de données de l’entrepôt de données Intune 
 
 
 ## <a name="notices"></a>Remarques
-
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Que dois-je faire pour me préparer à cette modification ?
-
-Comme il s’agit d’une mise à jour mineure de l’interface utilisateur des flux de travail, aucune action de votre part n’est nécessaire.
-Pour plus d’informations sur la conformité de Microsoft au RGPD (Règlement général sur la protection des données), rendez-vous dans le Centre de confidentialité dont le lien figure dans Informations supplémentaires.
 
 ### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Modification planifiée : nouveau paramètre Windows 10 pour la configuration plein écran dans Intune <!-- 1560072 -->
 Nous allons changer le mode et l’emplacement de configuration des postes de travail Windows 10 1709 et versions ultérieures (RS3 et versions ultérieures) dans le portail Azure Intune.
