@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Bien démarrer avec les stratégies de conformité des appareils dans Intune
 
@@ -29,7 +29,7 @@ Les critères de conformité sont essentiellement des règles, comme exiger un c
 
 - Chiffrement
 
-- Si l’appareil est jailbreaké ou rooté
+- Si l’appareil est jailbroken ou rooté
 
 - Version minimale du système d’exploitation requise
 
@@ -75,11 +75,13 @@ Les conditions suivantes régissent l’utilisation des stratégies de conformit
   - Android
   - iOS
   - macOS (préversion)
-  - Windows 8.1
+  - Windows 8.1
   - Windows Phone 8.1
   - Windows 10
 
 - Les appareils doivent être inscrits dans Intune pour signaler leur état de conformité
+
+- Les appareils inscrits pour un seul utilisateur ou les appareils sans utilisateur principal sont pris en charge. Plusieurs contextes utilisateur ne sont pas pris en charge.
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Fonctionnement des stratégies de conformité des appareils Intune avec Azure AD
 
@@ -148,9 +150,9 @@ Si un appareil est conforme aux règles de stratégie, vous pouvez lui accorder 
 Vous pouvez également utiliser des stratégies de conformité d’appareils sans accès conditionnel. Quand vous utilisez des stratégies de conformité indépendamment, les appareils ciblés sont évalués et signalés avec leur état de conformité. Par exemple, vous pouvez obtenir un rapport sur le nombre d’appareils qui ne sont pas chiffrés, ou les appareils qui sont jailbreakés ou rootés. Quand vous utilisez des stratégies de conformité sans accès conditionnel, il n’y a aucune restriction d’accès aux ressources de l’entreprise.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Déploiement des stratégies de conformité des appareils
-Vous pouvez déployer une stratégie de conformité pour des utilisateurs dans des groupes d’utilisateurs ou sur des appareils dans des groupes d’appareils. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de ses appareils est vérifiée.
+Vous pouvez déployer une stratégie de conformité pour des utilisateurs dans des groupes d’utilisateurs ou sur des appareils dans des groupes d’appareils. Quand une stratégie de conformité est déployée sur un utilisateur, la conformité de tous ses appareils est vérifiée.
 
-Dans le cas des appareils appartenant à des groupes d’appareils, les **paramètres de stratégie de conformité** (portail Azure > Conformité de l’appareil) sont les suivants :
+Les **paramètres de stratégie de conformité** (portail Azure > Conformité de l’appareil) sont les suivants :
 
 - **Marquer les appareils sans stratégie de conformité comme étant** : cette propriété a deux valeurs:
 

@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatiser l’envoi d’un e-mail et ajouter des actions pour les appareils non conformes - Intune
 
@@ -77,7 +77,10 @@ Vous pouvez ajouter une action quand vous créez une stratégie de conformité, 
 1. Dans le [portail Azure](https://portal.azure.com), ouvrez **Microsoft Intune**, puis sélectionnez **Conformité**.
 2. Sélectionnez **Stratégies**, choisissez l’une de vos stratégies, puis sélectionnez **Propriétés**. 
 
-   Vous n’avez pas encore de stratégie ? Créez une stratégie [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou une stratégie pour une autre plateforme.
+  Vous n’avez pas encore de stratégie ? Créez une stratégie [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) ou une stratégie pour une autre plateforme.
+  
+  > [!NOTE]
+  > Pour le moment, les appareils JAMF et les appareils ciblés avec des groupes d’appareils ne peuvent pas recevoir des actions de conformité.
 
 3. Sélectionnez **Actions en cas de non-conformité**, puis sélectionnez **Ajouter** pour entrer les paramètres de l’action. Vous pouvez choisir le modèle de message créé précédemment, ajouter des destinataires supplémentaires et mettre à jour la planification de la période de grâce. Vous pouvez entrer le nombre de jours (de 0 à 365) sur la planification, puis appliquer les stratégies d’accès conditionnel. Si vous entrez **0** nombre de jours, l’accès conditionnel bloque **immédiatement** l’accès aux ressources de l’entreprise.
 

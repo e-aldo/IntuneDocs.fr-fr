@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Windows dans Intune
 
@@ -121,23 +121,23 @@ Pour plus d’informations sur le fonctionnement du service HAS, consultez [Heal
 
 ### <a name="device-properties"></a>Propriétés des appareils
 
-- **Système d’exploitation minimal requis** : entrez le numéro major.minor.build.CU. Le numéro build.CU doit correspondre à la version retournée par la commande `ver` ou `winver`.
+- **Version minimale du système d’exploitation** : entrez la valeur minimale autorisée, au format numérique major.minor.build.CU. Le numéro build.CU doit correspondre à la version retournée par la commande `ver` ou `winver`.
 
   Si un appareil a une version antérieure à la version de système d’exploitation spécifiée, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
-- **Version maximale autorisée du système d’exploitation** : entrez le numéro major.minor.build.CU. Le numéro build.CU doit correspondre à la version retournée par la commande `ver` ou `winver`.
+- **Version maximale du système d’exploitation** : entrez la valeur maximale autorisée, au format numérique major.minor.build.CU. Le numéro build.CU doit correspondre à la version retournée par la commande `ver` ou `winver`.
 
   Quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 
-- **Version minimale du système d’exploitation pour les appareils mobiles** : entrez le numéro major.minor.build.
+- **Version minimale du système d’exploitation pour les appareils mobiles** : entrez la version minimale autorisée au format numérique major.minor.build.
 
   Si un appareil a une version antérieure à la version de système d’exploitation spécifiée, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
-- **Version maximale du système d’exploitation pour les appareils mobiles** : entrez le numéro major.minor.build.
+- **Version maximale du système d’exploitation pour les appareils mobiles** : entrez la version maximale autorisée au format numérique major.minor.build.
 
   Quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 
-- **Builds de système d’exploitation valides** : entrez une plage pour les versions de systèmes d’exploitation acceptables, notamment une valeur minimale et maximale.
+- **Builds de système d’exploitation valides** : entrez une plage pour les versions de systèmes d’exploitation acceptables, notamment une valeur minimale et maximale. Vous pouvez également **exporter** une liste de fichiers de valeurs au format CSV de ces numéros de build de système d’exploitation acceptables.
 
 ### <a name="system-security-settings"></a>Paramètres de sécurité système
 
