@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/10/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guide du Kit SDK d’application Microsoft Intune pour les développeurs iOS
 
 > [!NOTE]
 > Vous pouvez d’abord consulter l’article [Bien démarrer avec le SDK des applications Microsoft Intune](app-sdk-get-started.md), qui explique comment préparer l’intégration sur chaque plateforme prise en charge.
 
-Le kit SDK d’application Microsoft Intune pour iOS vous permet d’incorporer des stratégies de protection des applications Intune (également appelées **stratégies APP** ou **MAM**) dans votre application iOS native. Une application MAM est une application intégrée au SDK des applications Intune. Les administrateurs informatiques peuvent déployer des stratégies de protection des applications sur votre application mobile quand celle-ci est activement gérée par Intune.
+Le kit SDK d’application Microsoft Intune pour iOS vous permet d’incorporer des stratégies de protection des applications Intune (également appelées **stratégies APP** ou **GAM**) dans votre application iOS native. Une application MAM est une application intégrée au SDK des applications Intune. Les administrateurs informatiques peuvent déployer des stratégies de protection des applications sur votre application mobile quand celle-ci est activement gérée par Intune.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -264,7 +264,7 @@ Si l’inscription échoue, il est recommandé que l’application rappelle ult�
 
 Une fois cette API appelée, l’application peut continuer à fonctionner normalement. Si l’inscription réussit, le SDK informe l’utilisateur qu’il doit redémarrer l’application.
 
-Exemple :
+Exemple :
 ```objc
 [[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
 ```
@@ -300,14 +300,14 @@ Cette méthode doit être appelée avant la suppression des jetons Azure AD du 
 
 Si l’application supprime elle-même les données d’entreprise de l’utilisateur, l’indicateur `doWipe` peut être défini sur false. Sinon, l’application peut demander au SDK de lancer une réinitialisation sélective. Il en résulte un appel au délégué de réinitialisation sélective de l’application.
 
-Exemple :
+Exemple :
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
 
 ## <a name="status-result-and-debug-notifications"></a>Notifications d’état, de résultat et de débogage
 
-L’application peut recevoir des notifications d’état, de résultat et de débogage concernant les demandes suivantes adressées au service MAM Intune :
+L’application peut recevoir des notifications d’état, de résultat et de débogage concernant les demandes suivantes adressées au service GAM Intune :
 
  - Demandes d’inscription
  - Demandes de mise à jour de stratégie
@@ -433,31 +433,98 @@ Certains de ces paramètres peuvent avoir été traités dans les sections préc
 
 Paramètre  | Type  | Définition | Nécessaire ?
 --       |  --   |   --       |  --
-ADALClientId  | String  | Identificateur du client Azure AD de l’application. | Obligatoire si l’application utilise ADAL. |
-ADALAuthority | String | Autorité Azure AD de l’application en cours d’utilisation. Vous devez utiliser votre propre environnement où les comptes AAD ont été configurés. | Obligatoire si l’application utilise ADAL. Si cette valeur est omise, une valeur par défaut Intune est utilisée.|
-ADALRedirectUri  | String  | URI de redirection Azure AD de l’application. | ADALRedirectUri ou ADALRedirectScheme est nécessaire si l’application utilise la bibliothèque ADAL.  |
-ADALRedirectScheme  | String  | Modèle de redirection Azure AD de l’application. Ce paramètre peut être utilisé à la place d’ADALRedirectUri si l’URI de redirection de l’application est au format `scheme://bundle_id`. | ADALRedirectUri ou ADALRedirectScheme est nécessaire si l’application utilise ADAL. |
+ADALClientId  | Chaîne  | Identificateur du client Azure AD de l’application. | Obligatoire si l’application utilise ADAL. |
+ADALAuthority | Chaîne | Autorité Azure AD de l’application en cours d’utilisation. Vous devez utiliser votre propre environnement où les comptes AAD ont été configurés. | Obligatoire si l’application utilise ADAL. Si cette valeur est omise, une valeur par défaut Intune est utilisée.|
+ADALRedirectUri  | Chaîne  | URI de redirection Azure AD de l’application. | ADALRedirectUri ou ADALRedirectScheme est nécessaire si l’application utilise la bibliothèque ADAL.  |
+ADALRedirectScheme  | Chaîne  | Modèle de redirection Azure AD de l’application. Ce paramètre peut être utilisé à la place d’ADALRedirectUri si l’URI de redirection de l’application est au format `scheme://bundle_id`. | ADALRedirectUri ou ADALRedirectScheme est nécessaire si l’application utilise ADAL. |
 ADALLogOverrideDisabled | Booléen  | Indique si le SDK achemine tous les journaux ADAL (notamment les appels ADAL à partir l’application le cas échéant) dans son propre fichier journal. La valeur par défaut est NON. Affectez la valeur OUI si l’application doit définir le rappel de son propre journal ADAL. | Facultatif. |
-ADALCacheKeychainGroupOverride | String  | Spécifie le groupe de trousseaux à utiliser pour le cache ADAL au lieu de « com.microsoft.adalcache ». Notez qu’il n’a pas le préfixe app-id. Ce préfixe est ajouté à la chaîne fournie au moment de l’exécution. | Facultatif. |
+ADALCacheKeychainGroupOverride | Chaîne  | Spécifie le groupe de trousseaux à utiliser pour le cache ADAL au lieu de « com.microsoft.adalcache ». Notez qu’il n’a pas le préfixe app-id. Ce préfixe est ajouté à la chaîne fournie au moment de l’exécution. | Facultatif. |
 AppGroupIdentifiers | Tableau de chaînes  | Tableau de groupes d’applications issu de la section com.apple.security.application-groups des droits de l’application. | Obligatoire si l’application utilise des groupes d’applications. |
-ContainingAppBundleId | String | Spécifie l’ID d’offre groupée de l’application conteneur de l’extension. | Obligatoire pour les extensions iOS. |
+ContainingAppBundleId | Chaîne | Spécifie l’ID d’offre groupée de l’application conteneur de l’extension. | Obligatoire pour les extensions iOS. |
 DebugSettingsEnabled| Booléen | S’il est défini sur YES, les stratégies de test dans le groupe de paramètres peuvent être appliquées. Les applications *ne doivent pas* être livrées avec ce paramètre activé. | Facultatif. |
-MainNibFile<br>MainNibFile~ipad  | String  | Ce paramètre doit avoir le nom de fichier nib principal de l’application.  | Obligatoire si l’application définit MainNibFile dans Info.plist. |
-MainStoryboardFile<br>MainStoryboardFile~ipad  | String  | Ce paramètre doit avoir le nom de fichier storyboard principal de l’application. | Obligatoire si l’application définit UIMainStoryboardFile dans Info.plist. |
+MainNibFile<br>MainNibFile~ipad  | Chaîne  | Ce paramètre doit avoir le nom de fichier nib principal de l’application.  | Obligatoire si l’application définit MainNibFile dans Info.plist. |
+MainStoryboardFile<br>MainStoryboardFile~ipad  | Chaîne  | Ce paramètre doit avoir le nom de fichier storyboard principal de l’application. | Obligatoire si l’application définit UIMainStoryboardFile dans Info.plist. |
 AutoEnrollOnLaunch| Booléen| Spécifie si l’application doit tenter de s’inscrire automatiquement au lancement si une identité gérée existante est détectée et qu’elle ne l’a pas encore fait. La valeur par défaut est NON. <br><br> Remarques : Si aucune identité managée n’est trouvée ou si aucun jeton valide pour l’identité n’est disponible dans le cache ADAL, la tentative d’inscription échoue en mode silencieux sans demander d’informations d’identification, sauf si l’application a également défini MAMPolicyRequired avec la valeur Oui. | Facultatif. |
 MAMPolicyRequired| Booléen| Spécifie si le démarrage de l’application doit être bloqué si l’application n’a pas de stratégie de protection d’application Intune. La valeur par défaut est NON. <br><br> Remarques : Les applications ne peuvent pas être envoyées à l’App Store avec MAMPolicyRequired défini avec la valeur OUI. Lorsque vous définissez MAMPolicyRequired avec la valeur Oui, AutoEnrollOnLaunch doit également être défini avec la valeur Oui. | Facultatif. |
 MAMPolicyWarnAbsent | Booléen| Spécifie si l’application avertit l’utilisateur pendant le lancement si l’application n’a pas de stratégie de protection d’application Intune. <br><br> Remarque : Les utilisateurs pourront continuer à utiliser l’application sans stratégie après avoir ignoré l’avertissement. | Facultatif. |
 MultiIdentity | Booléen| Spécifie si l’application prend en charge plusieurs identités. | Facultatif. |
-SplashIconFile <br>SplashIconFile~ipad | String  | Spécifie le fichier d’icône de démarrage Intune. | Facultatif. |
+SplashIconFile <br>SplashIconFile~ipad | Chaîne  | Spécifie le fichier d’icône de démarrage Intune. | Facultatif. |
 SplashDuration | Nombre | Durée minimale en secondes d’affichage de l’écran de démarrage Intune au lancement de l’application. La valeur par défaut est 1,5. | Facultatif. |
-BackgroundColor| String| Spécifie la couleur d’arrière-plan pour les écrans de démarrage et d’entrée du code confidentiel. Accepte une chaîne hexadécimale RVB au format #XXXXXX, où X peut être 0-9 ou A-F. Le signe dièse peut être omis.   | Facultatif. La valeur par défaut est le gris clair. |
-ForegroundColor| String| Spécifie la couleur de premier plan pour les écrans de démarrage et d’entrée du code confidentiel, comme la couleur du texte. Accepte une chaîne hexadécimale RVB au format #XXXXXX, où X peut être compris entre 0 et 9 ou A et F. Le signe dièse peut être omis.  | Facultatif. La valeur par défaut est le noir. |
-AccentColor | String| Spécifie la couleur d’accentuation de l’écran d’entrée du code confidentiel, comme la couleur de texte des boutons et la couleur de surbrillance des zones. Accepte une chaîne hexadécimale RVB au format #XXXXXX, où X peut être 0-9 ou A-F. Le signe dièse peut être omis.| Facultatif. La valeur par défaut est le bleu. |
+BackgroundColor| Chaîne| Spécifie la couleur d’arrière-plan pour les écrans de démarrage et d’entrée du code confidentiel. Accepte une chaîne hexadécimale RVB au format #XXXXXX, où X peut être 0-9 ou A-F. Le signe dièse peut être omis.   | Facultatif. La valeur par défaut est le gris clair. |
+ForegroundColor| Chaîne| Spécifie la couleur de premier plan pour les écrans de démarrage et d’entrée du code confidentiel, comme la couleur du texte. Accepte une chaîne hexadécimale RVB au format #XXXXXX, où X peut être compris entre 0 et 9 ou A et F. Le signe dièse peut être omis.  | Facultatif. La valeur par défaut est le noir. |
+AccentColor | Chaîne| Spécifie la couleur d’accentuation de l’écran d’entrée du code confidentiel, comme la couleur de texte des boutons et la couleur de surbrillance des zones. Accepte une chaîne hexadécimale RVB au format #XXXXXX, où X peut être 0-9 ou A-F. Le signe dièse peut être omis.| Facultatif. La valeur par défaut est le bleu. |
 MAMTelemetryDisabled| Booléen| Spécifie si le SDK n’envoie pas de données de télémétrie à son serveur principal.| Facultatif. |
 WebViewHandledURLSchemes | Tableau de chaînes | Spécifie les schémas d’URL gérés par l’affichage web de votre application. | Obligatoire si votre application utilise un affichage web qui gère les URL au moyen de liens et/ou de code JavaScript. |  
 
 > [!NOTE]
 > Si votre application doit être publiée dans l’App Store, `MAMPolicyRequired` doit être défini sur « NO », conformément aux normes de l’App Store.
+
+## <a name="sharing-data-via-uiactivityviewcontroller"></a>Partage de données via UIActivityViewController 
+À partir de v. 8.0.2+, le kit SDK Intune APP pourra filtrer les actions UIActivityViewController pour empêcher la sélection d’emplacements de partage non Intune. Ce comportement sera contrôlé par la stratégie de transfert de données d’application et une fonctionnalité APP à venir. La fonctionnalité à venir sera activée, une fois que la majorité des applications Microsoft principales (par exemple Word, Excel, PowerPoint) auront fait l’objet des changements nécessaires à la prise en charge du partage de données via UIActivityViewController. 
+ 
+### <a name="copy-to-actions"></a>Actions « Copier vers » 
+Quand vous partagez des documents via UIActivityViewController et UIDocumentInteractionController, iOS affiche les actions « Copier vers » pour chaque application prenant en charge l’ouverture du document partagé. Les applications déclarent les types de document qu’elles prennent en charge via le paramètre CFBundleDocumentTypes dans leur fichier Info.plist. Ce type de partage n’est plus disponible si la stratégie interdit le partage pour les applications non gérées. À la place, les applications doivent ajouter une extension d’action non-IU à leur application, et la lier au kit SDK Intune APP pour iOS. L’extension d’action agit comme un stub. Le kit SDK implémente l’ensemble du comportement de partage des fichiers. Suivez les étapes d’intégration du kit SDK ci-dessus, ainsi que les consignes ci-dessous : 
+ 
+1. Votre application doit avoir au moins un schemeURL défini sous CFBundleURLTypes dans le fichier Info.plist. 
+2. Votre application et votre extension d’action doivent partager au moins un groupe d’applications. Celui-ci doit être listé sous le tableau AppGroupIdentifiers, sous le dictionnaire IntuneMAMSettings de l’application et de l’extension. 
+3. Nommez l’extension d’action « Ouvrir dans » en ajoutant le nom de l’application. Localisez le fichier Info.plist selon les besoins. 
+4. Concevez une icône de modèle pour l’extension, comme décrit dans la [documentation destinée aux développeurs Apple](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/). Vous pouvez également utiliser l’outil IntuneMAMConfigurator pour générer ces images à partir du répertoire .app de l’application. Exécutez « IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory » 
+5. Sous IntuneMAMSettings dans le fichier Info.plist de l’extension, ajoutez un paramètre booléen nommé OpenInActionExtension avec la valeur YES. 
+6. Configurez NSExtensionActivationRule pour prendre en charge un seul fichier et tous les types des CFBundleDocumentTypes de l’application commençant par « com.microsoft.intune.mam ». Par exemple, si l’application prend en charge public.text et public.image, la règle d’activation est : 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
+).@count == 1 
+```
+
+### <a name="update-existing-share-and-action-extensions"></a>Mettre à jour les extensions de partage et d’action existantes 
+Si votre application contient déjà des extensions de partage ou d’action, vous devrez modifier leur NSExtensionActivationRule pour autoriser les types Intune. Pour chaque type pris en charge par l’extension, un type supplémentaire doit commencer par « com.microsoft.intune.mam. ». Par exemple, si la règle d’activation existante est :  
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+Vous devez la changer en : 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+>[!Note] Vous pouvez utiliser l’outil IntuneMAMConfigurator pour ajouter des types Intune à la règle d’activation. Si votre règle d’activation existante utilise les constantes de chaîne prédéfinies (par exemple NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText, etc.), la syntaxe du prédicat peut devenir assez complexe. Vous pouvez également utiliser l’outil IntuneMAMConfigurator pour convertir la règle d’activation des constantes de chaîne en chaîne de prédicat tout en ajoutant les types Intune. IntuneMAMConfigurator se trouve dans notre dépôt GitHub. 
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Activation de la configuration ciblée de gestion des applications mobiles pour vos applications iOS
 La configuration ciblée de gestion des applications mobiles permet à une application de recevoir des données de configuration par le biais du SDK d’application Intune. Les variantes et le format de ces données doivent être définis et communiqués aux clients Intune par le propriétaire/développeur d’application. Les administrateurs Intune peuvent cibler et déployer des données de configuration par le biais du portail Intune Azure. À compter de la version 7.0.1 du SDK d’application Intune pour iOS, les applications qui participent à la configuration ciblée de gestion des applications mobiles peuvent recevoir des données de configuration ciblée de gestion des applications mobiles par le biais du service de gestion des applications mobiles. Les données de configuration d’application sont envoyées via notre service de gestion des applications mobiles directement à l’application au lieu de passer par le canal de gestion des appareils mobiles. Le SDK d’application Intune fournit une classe pour accéder aux données récupérées à partir de ces consoles. Considérez les éléments suivants comme des prérequis : <br>
@@ -474,7 +541,7 @@ Pour plus d’informations sur la façon de créer une stratégie de configurati
 
 Par défaut, le SDK d’application Intune pour iOS enregistre des données de télémétrie sur les événements d’utilisation suivants. Ces données sont envoyées à Microsoft Intune.
 
-* **Lancement d’applications** : Pour aider Microsoft Intune à en savoir plus sur l’utilisation des applications compatibles MAM par type de gestion (MAM avec MDM, MAM sans inscription à MDM, etc.).
+* **Lancement d’applications** : Pour aider Microsoft Intune à en savoir plus sur l’utilisation des applications compatibles GAM par type de gestion (GAM avec MDM, GAM sans inscription à MDM, etc.).
 
 * **Appels d’inscription** : Pour aider Microsoft Intune à en savoir plus sur les taux de réussite et d’autres mesures de performances des appels d’inscription initiés à partir du côté client.
 
@@ -483,7 +550,7 @@ Par défaut, le SDK d’application Intune pour iOS enregistre des données de t
 
 ## <a name="enable-multi-identity-optional"></a>Activer plusieurs identités (facultatif)
 
-Par défaut, le SDK applique une stratégie à l’application dans son ensemble. La multi-identité est une fonctionnalité MAM que vous pouvez activer pour appliquer une stratégie par niveau d’identité. Ceci nécessite davantage de participation de l’application que d’autres fonctionnalités MAM.
+Par défaut, le SDK applique une stratégie à l’application dans son ensemble. La multi-identité est une fonctionnalité GAM que vous pouvez activer pour appliquer une stratégie par niveau d’identité. Ceci nécessite davantage de participation de l’application que d’autres fonctionnalités GAM.
 
 L’application doit informer le SDK d’application quand elle va changer l’identité active. Le SDK notifie aussi l’application quand un changement d’identité est nécessaire. Actuellement, une seule identité gérée est prise en charge. Une fois que l’utilisateur inscrit l’appareil ou l’application, le SDK utilise cette identité et la considère comme l’identité gérée principale. Les autres utilisateurs de l’application sont considérés comme non gérés avec des paramètres de stratégie non limités.
 
@@ -581,13 +648,13 @@ Non. En fait, seuls les comptes professionnels ou scolaires doivent être inscri
 
 **Qu’en est-il des utilisateurs qui se sont déjà connectés à l’application ? Doivent-ils être inscrits ?**
 
-L’application est responsable de l’inscription des utilisateurs une fois qu’ils sont authentifiés. L’application est également responsable de l’inscription des comptes existants qui étaient présents avant que l’application ne dispose des fonctionnalités MAM sans MDM.   
+L’application est responsable de l’inscription des utilisateurs une fois qu’ils sont authentifiés. L’application est également responsable de l’inscription des comptes existants qui étaient présents avant que l’application ne dispose des fonctionnalités GAM sans MDM.   
 
-Pour ce faire, l’application doit utiliser la méthode `registeredAccounts:`. Cette méthode retourne un NSDictionary contenant tous les comptes inscrits dans le service MAM Intune. Si des comptes existants dans l’application ne sont pas dans la liste, l’application doit inscrire ces comptes par le biais de `registerAndEnrollAccount:`.
+Pour ce faire, l’application doit utiliser la méthode `registeredAccounts:`. Cette méthode retourne un NSDictionary contenant tous les comptes inscrits dans le service GAM Intune. Si des comptes existants dans l’application ne sont pas dans la liste, l’application doit inscrire ces comptes par le biais de `registerAndEnrollAccount:`.
 
 **À quelle fréquence le SDK réessaie-t-il les inscriptions ?**
 
-Le SDK réessaye automatiquement toutes les inscriptions ayant échoué selon un intervalle de 24 heures. Le SDK procède ainsi pour garantir que si l’organisation d’un utilisateur a activé MAM après que l’utilisateur s’est connecté à l’application, cet utilisateur est inscrit et reçoit les stratégies avec succès.
+Le SDK réessaye automatiquement toutes les inscriptions ayant échoué selon un intervalle de 24 heures. Le SDK procède ainsi pour garantir que si l’organisation d’un utilisateur a activé GAM après que l’utilisateur s’est connecté à l’application, cet utilisateur est inscrit et reçoit les stratégies avec succès.
 
 Le SDK arrête les nouvelles tentatives quand il détecte qu’un utilisateur a inscrit l’application avec succès. La raison en est qu’un seul utilisateur peut inscrire une application à un moment donné. Si l’utilisateur est désinscrit, les nouvelles tentatives reprennent selon le même intervalle de 24 heures.
 

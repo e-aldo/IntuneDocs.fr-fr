@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Guide pratique pour configurer des paramètres Intune pour l’application iOS Classroom
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introduction
-[Classroom](https://itunes.apple.com/app/id1085319084) est une application qui permet aux enseignants d’orienter l’apprentissage et de contrôler les appareils des étudiants dans la salle de classe. Par exemple, à l’aide de l’application,un enseignant peut :
+[Classroom](https://itunes.apple.com/app/id1085319084) est une application qui permet aux enseignants d’orienter l’apprentissage et de contrôler les appareils des étudiants dans la salle de classe. Par exemple, l’application permet aux enseignants d’effectuer les tâches suivantes :
 
 - ouvrir des applications sur les appareils des étudiants ;
 - verrouiller et déverrouiller l’écran de l’iPad ;
@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
 - diriger les iPad des étudiants vers un signet ou le chapitre d’un livre ;
 - afficher l’écran de l’iPad d’un étudiant sur Apple TV.
 
-Utilisez le profil d’appareil **Éducation** iOS d’Intune et les informations de cette rubrique pour vous aider à configurer l’application Classroom et les appareils sur lesquels vous l’utilisez.
+Pour configurer Classroom sur votre appareil, vous devez créer et configurer un profil d’appareil Éducation iOS Intune.
 
 ## <a name="before-you-start"></a>Avant de commencer
 
 Tenez compte des éléments suivants avant de commencer à configurer ces paramètres :
 
-- Les iPad des enseignants et étudiants doivent être inscrits dans Intune
+- Les iPad des enseignants et des étudiants doivent être inscrits auprès d’Intune.
 - Vérifiez que vous avez installé l’application [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) sur l’appareil de l’enseignant. Vous pouvez installer l’application manuellement ou utiliser la [gestion des applications Intune](app-management.md).
-- Vous devez configurer des certificats pour authentifier les connexions entre les appareils des enseignants et étudiants (consultez l’étape 2)
-- Les iPad des enseignants et étudiants doivent être situés sur le même réseau Wi-Fi, et Bluetooth doit également être activé
-- L’application Classroom fonctionne sur des iPad supervisés exécutant iOS 9.3 ou version ultérieure
-- Dans cette version, Intune prend en charge la gestion d’un scénario 1:1 où chaque étudiant a son propre iPad dédié
+- Vous devez configurer des certificats pour authentifier les connexions entre les appareils des enseignants et des étudiants (consultez l’Étape 2 : Créer et affecter un profil Éducation iOS dans Intune).
+- Les iPad des enseignants et des étudiants doivent être situés sur le même réseau Wi-Fi. De plus, Bluetooth doit également être activé sur ces appareils.
+- L’application Classroom fonctionne sur des iPad supervisés exécutant iOS 9.3 ou une version ultérieure.
+- Dans cette version, Intune prend en charge la gestion d’un scénario 1 :1 où chaque étudiant a son iPad dédié.
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>Étape 1 : Importer vos données scolaires dans Azure Active Directory
@@ -82,14 +82,14 @@ Vous pouvez importer des informations dans SDS en appliquant l’une des méthod
 9.  Choisissez **Paramètres** > **Configurer**.
 
 
-Vous avez ensuite besoin de certificats pour établir une relation d’approbation entre les iPad des enseignants et étudiants. Les certificats sont utilisés pour authentifier de manière fluide et silencieuse les connexions entre les appareils sans avoir à entrer les noms d’utilisateur et mots de passe.
+Dans la section suivante, vous allez créer des certificats pour établir une relation d’approbation entre les iPad des enseignants et des étudiants. Les certificats sont utilisés pour authentifier de manière fluide et silencieuse les connexions entre les appareils sans avoir à entrer les noms d’utilisateur et mots de passe.
 
 >[!IMPORTANT]
 >Les certificats des enseignants et étudiants que vous utilisez doivent être émis par différentes autorités de certification. Vous devez créer deux autorités de certification subordonnées connectées à votre infrastructure de certificats existante : une pour les enseignants et une pour les étudiants.
 
 Les profils Éducation iOS prennent en charge uniquement les certificats PFX. Les certificats SCEP ne sont pas pris en charge.
 
-Les certificats que vous créez doivent prendre en charge l’authentification du serveur en plus de l’authentification de l’utilisateur.
+Les certificats créés doivent prendre en charge l’authentification serveur et l’authentification utilisateur.
 
 ### <a name="configure-teacher-certificates"></a>Configurer des certificats d’enseignant
 
@@ -97,13 +97,15 @@ Dans le volet **Éducation**, choisissez **Certificats d’enseignant**.
 
 #### <a name="configure-teacher-root-certificate"></a>Configurer le certificat racine de l’enseignant
 
-Sous **Certificat racine d’enseignant**, cliquez sur le bouton Parcourir pour sélectionner le certificat racine de l’enseignant avec l’extension .cer (DER ou codé en Base64), ou .P7B (avec ou sans la chaîne complète).
+Sous **Certificat racine d’enseignant**, choisissez le bouton Parcourir. Sélectionnez le certificat racine ayant l’une des extensions suivantes :
+- Extension .cer (DER, ou avec encodage au format Base64) 
+- Extension .P7B (avec ou sans chaîne complète)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>Configurer le certificat PKCS#12 de l’enseignant
 
 Sous **Certificat PKCS#12 d’enseignant**, configurez les valeurs suivantes :
 
-- **Format du nom de l’objet** : Intune ajoute automatiquement **organisateur** comme préfixe au nom commun du certificat pour le certificat de l’enseignant, et **membre** pour le certificat de l’étudiant.
+- **Format du nom de l’objet** - Intune ajoute automatiquement le mot **organisateur** devant les noms communs des certificats d’enseignants. Les noms communs des certificats d’étudiants commencent par **membre**.
 - **Autorité de certification** : autorité de certification d’entreprise qui s’exécute sur une édition Entreprise de Windows Server 2008 R2 ou version ultérieure. Une autorité de certification autonome n'est pas prise en charge. 
 - **Nom de l’autorité de certification** : entrez le nom de votre autorité de certification.
 - **Nom du modèle de certificat** : entrez le nom d’un modèle de certificat qui a été ajouté à une autorité de certification émettrice. 
@@ -111,7 +113,7 @@ Sous **Certificat PKCS#12 d’enseignant**, configurez les valeurs suivantes :
 - **Période de validité du certificat** : spécifiez la quantité de temps restant avant l’expiration du certificat.
 Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
 
-Quand vous avez terminé la configuration des certificats, choisissez **OK**.
+Une fois que vous avez fini de configurer les certificats, choisissez **OK**.
 
 ### <a name="configure-student-certificates"></a>Configurer des certificats d’étudiant
 
@@ -120,13 +122,15 @@ Quand vous avez terminé la configuration des certificats, choisissez **OK**.
 
 #### <a name="configure-student-root-certificate"></a>Configurer le certificat racine de l’étudiant
 
-Sous **Certificat racine d’étudiant**, cliquez sur le bouton Parcourir pour sélectionner le certificat racine de l’étudiant avec l’extension .cer (DER ou codé en Base64), ou .P7B (avec ou sans la chaîne complète).
+Sous **Certificat racine d’étudiant**, choisissez le bouton Parcourir. Sélectionnez le certificat racine ayant l’une des extensions suivantes :
+- Extension .cer (DER, ou avec encodage au format Base64) 
+- Extension .P7B (avec ou sans chaîne complète)
 
 #### <a name="configure-student-pkcs12-certificate"></a>Configurer le certificat PKCS#12 de l’étudiant
 
 Sous **Certificat PKCS#12 d’étudiant**, configurez les valeurs suivantes :
 
-- **Format du nom de l’objet** : Intune ajoute automatiquement **organisateur** comme préfixe au nom commun du certificat pour le certificat de l’enseignant, et **membre** pour le certificat de l’étudiant.
+- **Format du nom de l’objet** - Intune ajoute automatiquement le mot **organisateur** devant les noms communs des certificats d’enseignants. Les noms communs des certificats d’étudiants commencent par **membre**.
 - **Autorité de certification** : autorité de certification d’entreprise qui s’exécute sur une édition Entreprise de Windows Server 2008 R2 ou version ultérieure. Une autorité de certification autonome n'est pas prise en charge. 
 - **Nom de l’autorité de certification** : entrez le nom de votre autorité de certification.
 - **Nom du modèle de certificat** : entrez le nom d’un modèle de certificat qui a été ajouté à une autorité de certification émettrice. 
@@ -134,7 +138,7 @@ Sous **Certificat PKCS#12 d’étudiant**, configurez les valeurs suivantes :
 - **Période de validité du certificat** : spécifiez la quantité de temps restant avant l’expiration du certificat.
 Vous pouvez spécifier une valeur inférieure à la période de validité du modèle de certificat spécifié, mais pas une valeur supérieure. Par exemple, si la période de validité du certificat dans le modèle de certificat est de 2 ans, vous pouvez spécifier une valeur de 1 an mais pas une valeur de 5 ans. La valeur doit également être inférieure à la période de validité restante du certificat de l’autorité de certification émettrice.
 
-Quand vous avez terminé la configuration des certificats, choisissez **OK**.
+Une fois que vous avez fini de configurer les certificats, choisissez **OK**.
 
 ## <a name="finish-up"></a>Terminer
 
@@ -147,7 +151,7 @@ Affectez le profil aux appareils des étudiants dans les groupes de salle de cla
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant, quand un enseignant utilise l’application Classroom, il a un contrôle total sur les appareils des étudiants.
+Désormais, quand les enseignants utilisent l’application Classroom, ils ont un contrôle total sur les appareils des étudiants.
 
 Pour plus d’informations sur l’application Classroom, consultez [Aide En classe](https://help.apple.com/classroom/ipad/2.0/) sur le site web Apple.
 

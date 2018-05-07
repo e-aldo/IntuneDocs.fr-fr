@@ -1,70 +1,71 @@
 ---
-title: "Ajouter des applications intégrées sur des appareils mobiles à l’aide de Microsoft Intune"
-titlesuffix: 
-description: "Découvrez comment utiliser Intune pour faciliter l’installation d’applications intégrées sur des appareils mobiles."
-keywords: 
+title: Ajouter des applications intégrées sur des appareils mobiles à l’aide de Microsoft Intune
+titlesuffix: ''
+description: Découvrez comment utiliser Intune pour faciliter l’installation d’applications intégrées sur des appareils mobiles.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d90f86babc2f73acd5ccd1b454c636c6d4f79b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 54eb50a47b28d04fc32662098c4ee521ae63589e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-add-built-in-apps-to-microsoft-intune"></a>Comment ajouter des applications intégrées à Microsoft Intune
+# <a name="add-built-in-apps-to-microsoft-intune"></a>Ajouter des applications intégrées à Microsoft Intune
 
-Le type d’application **Intégré** vous permet d’attribuer facilement des applications gérées organisées, comme les applications Office 365, à des appareils iOS et Android. Vous pouvez affecter des applications spécifiques à ce type d’application, comme Excel, OneDrive, Outlook, Skype et d’autres. Après avoir ajouté une application, son type est **Application iOS intégrée** ou **Application Android intégrée**. En utilisant le type d’application Intégré, vous pouvez choisir les applications spécifiques à publier pour les utilisateurs d’appareil.
+Le type d’application *Intégré* vous permet d’attribuer facilement des applications gérées organisées, comme les applications Office 365, à des appareils iOS et Android. Vous pouvez affecter des applications spécifiques à ce type d’application, comme Excel, OneDrive, Outlook, Skype et d’autres. Une fois que vous avez ajouté une application, elle s’affiche avec le type *Application iOS intégrée* ou *Application Android intégrée*. En utilisant le type application intégrée, vous pouvez choisir les applications à publier pour les utilisateurs d’appareils.
 
- Dans les éditions antérieures de la console Intune, Intune fournissait plusieurs applications Office 365 gérées par défaut, comme Outlook et OneDrive. Le type de ces applications gérées était « Application de l’App Store iOS gérée » ou « Application Android gérée ». Nous vous recommandons d’utiliser le type d’application intégrée au lieu de « Application de l’App Store iOS gérée » ou « Application Android gérée ». Le type d’application intégrée fournit davantage de flexibilité pour modifier et supprimer des applications Office 365.
+Dans les versions antérieures de la console Intune, Intune fournissait plusieurs applications Office 365 gérées par défaut, par exemple Outlook et OneDrive. Les types de ces applications gérées étaient *Application de l’App Store iOS gérée* ou *Application Android gérée*. Au lieu d’utiliser ces types d’application, nous vous recommandons d’utiliser le type application intégrée. En utilisant le type application intégrée, vous disposez d’une flexibilité supplémentaire pour modifier et supprimer des applications Office 365.
 
 >[!NOTE]
->Les applications Office 365 par défaut marquées comme « Application de l’App Store iOS gérée » et « Application Android gérée » sont supprimées de la liste d’applications quand toutes les affectations sont supprimées.
+>Les applications Office 365 par défaut marquées en tant qu’*Application de l’App Store iOS gérée* et *Application Android gérée* sont supprimées de la liste d’applications quand toutes les affectations sont supprimées.
 
-## <a name="add-built-in-app"></a>Ajouter une application intégrée
+## <a name="add-a-built-in-app"></a>Ajouter une application intégrée
 
-Les étapes suivantes vous permettent d’ajouter une application intégrée à vos applications disponibles dans Microsoft Intune.
-1.  Connectez-vous au portail Azure.
-2.  Affichez le panneau Microsoft Intune :choisissez **Plus de services** > **Monitoring + Gestion** > **Intune**.
-3.  Dans le panneau **Intune**, choisissez **Applications mobiles**.
-4.  Dans le panneau **Applications mobiles**, choisissez **Applications** sous le groupe **Gérer**.
-5.  Choisissez **Ajouter** pour ajouter une nouvelle application.
-6.  Dans le panneau **Ajouter** une application, choisissez **Application intégrée** dans la liste **Type d’application**.
-7.  Cliquez sur **Sélectionner une application** pour choisir les applications intégrées à ajouter.
-8.  Dans le panneau des applications intégrées, sélectionnez les applications à ajouter.
-9.  Dans le panneau **Ajouter une application**, cliquez sur **Ajouter** pour inclure les applications.
+Pour ajouter une application intégrée à vos applications disponibles dans Microsoft Intune, suivez les instructions ci-dessous :
+1. Connectez-vous au portail Azure.
+2. Pour afficher le volet Microsoft Intune, sélectionnez **Plus de services** > **Surveillance + Gestion** > **Intune**.
+3. Dans le volet **Intune**, sélectionnez **Applications mobiles**.
+4. Dans le volet **Applications mobiles**, sous **Gérer**, sélectionnez **Applications**.
+5. Sélectionnez **Ajouter**.
+6. Dans le volet **Ajouter une application**, dans la liste **Type d’application**, sélectionnez **Application intégrée**.
+7. Sélectionnez **Sélectionner une application**.
+8. Dans le volet **Application intégrée**, sélectionnez les applications à inclure.
+9. Dans le volet **Ajouter une application**, sélectionnez **Ajouter**.
 
 
 ## <a name="configure-app-information"></a>Configurer les informations de l’application
 
-Vous pouvez modifier les informations de l’application intégrée. Ces informations vous permettent d’identifier l’application dans Intune. Elles aident aussi les utilisateurs finaux à trouver l’application dans l’application Portail d’entreprise.
-1.  Dans le panneau **Applications mobiles - Applications**, choisissez l’application intégrée à modifier. Un panneau s’affiche pour l’application intégrée.
-2.  Sélectionnez l’option **Propriétés** dans le groupe **Gérer**.
-3.  Sélectionnez l’option **Configurer** pour modifier les informations de l’application intégrée.
-4.  Dans le panneau **Informations sur l’application**, configurez les informations suivantes :
-    -   **Nom** : Entrez le nom de l’application intégrée tel qu’il est affiché dans le portail d’entreprise. Tous les noms que vous utilisez doivent être uniques. Si le même nom d’application existe deux fois, une seule application est proposée aux utilisateurs du portail d’entreprise.
-    -   **Description :** entrez la description de l’application. 
-    -   **Éditeur :** entrez le nom de l’éditeur de l’application.
-    -   **Catégorie** : Facultatif, sélectionnez une ou plusieurs des catégories d’applications intégrées. La définition de cette option facilite la recherche de l’application pour les utilisateurs qui naviguent dans le portail d’entreprise.
-    -   **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
-    -   **URL d’informations** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations sur cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    -   **URL de confidentialité** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations de confidentialité pour cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    -   **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
-    -   **Propriétaire** : Si vous le souhaitez, entrez un nom pour le propriétaire de cette application, par exemple, Département des ressources humaines.
-    -   **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-    -   **Charger l’icône** : chargez une icône qui s’affiche avec l’application quand les utilisateurs parcourent le portail d’entreprise.
-3.  Quand vous avez terminé, cliquez sur **OK** dans le panneau **Informations sur l’application**.
-4.  Cliquez sur **Enregistrer** dans le panneau **Propriétés**.
+Vous pouvez modifier les informations de l’application intégrée. Ces informations vous aident à identifier l’application dans Intune. Elles permettent également aux utilisateurs de trouver l’application dans le portail d’entreprise.
+1. Dans le volet **Applications mobiles - Applications**, sélectionnez l’application intégrée à modifier.  
+    Un volet s’affiche pour l’application intégrée.
+2. Sous **Gérer**, sélectionnez l’option **Propriétés**.
+3. Pour modifier les informations de l’application intégrée, sélectionnez l’option **Configurer**.
+4. Dans le volet **Informations sur l’application**, vous pouvez modifier les informations suivantes :
+    - **Nom** : entrez le nom de l’application intégrée, tel qu’il est affiché dans le portail d’entreprise. Tous les noms que vous utilisez doivent être uniques. Si le même nom d’application existe deux fois, une seule application est proposée aux utilisateurs du portail d’entreprise.
+    - **Description :** entrez la description de l’application. 
+    - **Éditeur :** entrez le nom de l’éditeur de l’application.
+    - **Catégorie** : si vous le souhaitez, sélectionnez une ou plusieurs catégories d’application intégrée. La définition de cette option facilite la recherche de l’application pour les utilisateurs qui naviguent dans le portail d’entreprise.
+    - **Proposer cette application dans le portail d’entreprise** : met en évidence l’application sur la page principale du portail d’entreprise quand les utilisateurs recherchent des applications.
+    - **URL d’information** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations sur cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
+    - **URL de déclaration de confidentialité** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations de confidentialité relatives à cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
+    - **Développeur** : si vous le souhaitez, entrez le nom du développeur de l’application.
+    - **Propriétaire** : si vous le souhaitez, entrez le nom du propriétaire de cette application (par exemple *Service des ressources humaines*).
+    - **Remarques** : entrez les remarques à associer à cette application.
+    - **Charger l’icône** : chargez une icône qui s’affiche avec l’application quand les utilisateurs parcourent le portail d’entreprise.
+4. Sélectionnez **OK**.
+5. Dans le volet **Propriétés**, sélectionnez **Enregistrer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Vous pouvez maintenant affecter les applications aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
+- Vous pouvez désormais affecter les applications aux groupes de votre choix. Pour plus d’informations, consultez [Affecter des applications à des groupes](apps-deploy.md).

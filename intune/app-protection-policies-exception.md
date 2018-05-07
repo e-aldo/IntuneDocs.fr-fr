@@ -3,10 +3,10 @@ title: Exceptions de la stratégie de transfert de données pour les application
 titleSuffix: Microsoft Intune
 description: Créez des exceptions à la stratégie de transfert de données de la Gestion des applications mobiles Intune.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Comment créer des exceptions à la stratégie de transfert de données de la Gestion des applications mobiles Intune
 
@@ -47,9 +47,18 @@ Pour une stratégie ciblant Android, vous pouvez configurer des exceptions de tr
 ### <a name="example"></a>Exemple
 Si vous ajoutez le package **Webex** comme exception à la stratégie de transfert des données de la Gestion des applications mobiles, les liens Webex qui se trouvent dans un e-mail d’une application Outlook gérée sont autorisés à s’ouvrir directement dans l’application Webex. Le transfert de données reste toujours limité dans les autres applications non gérées.
 
-- Exemple **Webex** iOS :    pour exempter l’application **Webex** et l’autoriser à être appelée par des applications gérées par Intune, vous devez ajouter une exception de transfert de données pour la chaîne suivante : <code>wbx</code>.
+- Exemple **Webex** iOS : pour exempter l’application **Webex** et l’autoriser à être appelée par des applications gérées par Intune, vous devez ajouter une exception de transfert de données pour la chaîne suivante : <code>wbx</code>
+    
+ - Exemple **Plans** iOS : pour exempter l’application native **Plans** et l’autoriser à être appelée par des applications gérées par Intune, vous devez ajouter une exception de transfert de données pour la chaîne suivante : <code>maps</code>
 
-- Exemple **Webex** Android :    pour exempter l’application **Webex** et l’autoriser à être appelée par des applications gérées par Intune, vous devez ajouter une exception de transfert de données pour la chaîne suivante : <code>com.cisco.webex.meetings</code>. 
+- Exemple **Webex** Android : pour exempter l’application **Webex** et l’autoriser à être appelée par des applications gérées par Intune, vous devez ajouter une exception de transfert de données pour la chaîne suivante : <code>com.cisco.webex.meetings</code>
+    
+- Exemple **SMS** Android : pour exempter l’application native **SMS** et l’autoriser à être appelée par des applications gérées par Intune parmi diverses applications de messagerie et divers appareils Android, vous devez ajouter des exceptions de transfert de données pour les chaînes suivantes : 
+    <code>com.google.android.apps.messaging</code>
+    
+    <code>com.android.mms</code>
+    
+    <code>com.samsung.android.messaging</code>
 
 ## <a name="next-steps"></a>Étapes suivantes
 

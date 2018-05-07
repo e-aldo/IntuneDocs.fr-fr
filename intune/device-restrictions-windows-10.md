@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Paramètres de restriction des appareils pour Windows 10 (et versions ultérieures) dans Intune
 Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 10.
@@ -253,10 +253,10 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
 Un appareil plein écran exécute généralement une application ou un ensemble spécifique d’applications. Les utilisateurs ne peuvent pas accéder aux fonctionnalités ou fonctions sur l’appareil en dehors de toutes les applications plein écran.
 
-- **Mode plein écran** - Identifie le type de mode plein écran pris en charge par la stratégie. Les options disponibles sont les suivantes :
+- **Mode plein écran** : Identifie le type de mode plein écran pris en charge par la stratégie. Les options sont les suivantes :
 
   - **Non configuré** (par défaut) : la stratégie n’active pas de mode plein écran. 
-  - **Application unique plein écran** : le profil autorise l’appareil à n’exécuter qu’une seule application. Quand l’utilisateur se connecte, une application spécifique démarre. En outre, ce mode empêche l’utilisateur d’ouvrir de nouvelles applications ou de basculer vers une autre application.
+  - **Application unique plein écran** : le profil autorise l’appareil à exécuter une seule application. Quand l’utilisateur se connecte, une application spécifique démarre. En outre, ce mode empêche l’utilisateur d’ouvrir de nouvelles applications ou de basculer vers une autre application.
   - **Applications multiples plein écran** : le profil autorise l’appareil à exécuter plusieurs applications. Seules les applications que vous ajoutez sont disponibles pour l’utilisateur. L’avantage des applications multiples plein écran ou d’un appareil à usage fixe est que l’utilisateur n’accède qu’aux applications dont il a besoin, les autres étant retirées de sa vue ; son expérience s’en trouve simplifiée.
 
 #### <a name="single-app-kiosks"></a>Applications uniques plein écran
@@ -264,7 +264,7 @@ entrez les paramètres suivants :
 
 - **Compte d’utilisateur** : entrez le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran. Pour les comptes liés à des domaines Azure AD, entrez le compte en utilisant le format `domain\username@tenant.org`. 
 
-    Pour les applications plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode plein écran, utilisez le format `AzureAD\user@contoso.com`.
+    Pour les appareils plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode plein écran, utilisez le format `AzureAD\user@contoso.com`.
 
 - **Identifiant AUMID de l’application** : entrez l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
 
@@ -292,7 +292,7 @@ Utilisez le bouton **Ajouter** pour créer une configuration plein écran (ou s�
 
 - **Utilisateurs attribués** : ajoutez un ou plusieurs comptes d’utilisateurs qui peuvent utiliser les applications que vous ajoutez. Quand le compte se connecte, seules les applications définies dans la configuration sont disponibles. Le compte peut être local sur l’appareil, ou il peut s’agir d’une connexion de compte Azure AD associée à l’application plein écran.
 
-    Pour les applications plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode plein écran, utilisez le format `domain\user@tenant.com`.
+    Pour les appareils plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode plein écran, utilisez le format `domain\user@tenant.com`.
 
 ## <a name="windows-defender-antivirus"></a>Antivirus Windows Defender
 
@@ -370,6 +370,11 @@ Si les fichiers sur le lecteur sont en lecture seule, Defender ne peut pas suppr
 - **URI de ressource du service d’impression** -URI de ressource OAuth pour le service d'impression tel que configuré dans le portail Azure.
 - **Nombre maximal d'imprimantes à interroger (Mobile uniquement)** - Nombre maximal d'imprimantes à interroger à partir d'un point de terminaison de découverte.
 - **URI de ressource du service de découverte d’imprimantes** - 	URI de ressource OAuth pour le service de découverte d'imprimantes tel que configuré dans le portail Azure.
+
+## <a name="local-printer"></a>Imprimante locale
+- **Imprimantes** - Liste des imprimantes locales qui ont été ajoutées.
+- **Imprimante par défaut** - Définissez l’imprimante par défaut.
+- **Accès utilisateur pour ajouter de nouvelles imprimantes** - Autorisez ou bloquez l’utilisation d’imprimantes locales.
 
 ## <a name="reporting-and-telemetry"></a>Création de rapports et les données de télémétrie
 

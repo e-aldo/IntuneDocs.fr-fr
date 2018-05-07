@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour ajouter des applications métier iOS à Microsoft Intune
+title: Ajouter une application métier iOS à Microsoft Intune
 titlesuffix: ''
-description: Découvrez comment ajouter des applications métier iOS à Microsoft Intune.
+description: Découvrez comment ajouter une application métier iOS à Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,74 +15,74 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b46981aa097de96764bd0c88ad3385debbcce85d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fcbdf0a61b7b001dc7d3b1d620df7a88bb44e2ca
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier iOS à Microsoft Intune
+# <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Ajouter une application métier iOS à Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Aidez-vous des informations contenues dans cet article pour ajouter des applications métier iOS à Microsoft Intune.
+Aidez-vous des informations contenues dans cet article pour ajouter une application métier iOS à Microsoft Intune.
 
 >[!NOTE]
->Bien que les utilisateurs d’appareils iOS puissent supprimer certaines applications iOS intégrées telles que Bourse et Plans, vous ne pouvez pas vous servir de Microsoft Intune pour redéployer ces applications. Si des utilisateurs finaux suppriment ces applications, ils doivent se rendre sur l’App Store et les réinstaller manuellement.
+>Les utilisateurs d’appareils iOS peuvent supprimer certaines applications iOS intégrées, par exemple Bourse et Plans. Vous ne pouvez pas utiliser Intune pour redéployer ces applications. Si les utilisateurs suppriment ces applications, ils doivent se rendre sur l’App Store et les réinstaller manuellement.
 
-## <a name="step-1---specify-the-software-setup-file"></a>Étape 1 : spécifier le fichier d’installation de logiciel
+## <a name="step-1-specify-the-software-setup-file"></a>Étape 1 : Spécifier le fichier d’installation du logiciel
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans le volet **Intune**, choisissez **Applications mobiles**.
-4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
-5. Au-dessus de la liste des applications, choisissez **Ajouter**.
-6. Dans le volet **Ajouter une application**, choisissez **Application métier**.
+2. Sélectionnez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, sélectionnez **Applications mobiles**.
+4. Dans la charge de travail **Applications mobiles**, sélectionnez **Gérer** > **Applications**.
+5. Au-dessus de la liste des applications, sélectionnez **Ajouter**.
+6. Dans le volet **Ajouter une application**, sélectionnez **Application métier**.
 
-## <a name="step-2---configure-the-app-package-file"></a>Étape 2 : configurer le fichier de package d’application
+## <a name="step-2-configure-the-app-package-file"></a>Étape 2 : Configurer le fichier de package d’application
 
-1. Dans le volet **Ajouter une application**, choisissez **Fichier de package d’application**.
-2. Dans le volet **Fichier de package d’application**, cliquez sur le bouton Parcourir et sélectionnez un fichier d’installation iOS avec l’extension **.ipa**.
-3. Quand vous avez terminé, cliquez sur **OK**.
+1. Dans le volet **Ajouter une application**, sélectionnez **Fichier de package d’application**.
+2. Dans le volet **Fichier de package d’application**, sélectionnez le bouton Parcourir. Sélectionnez ensuite un fichier d’installation iOS ayant l’extension **.ipa**.
+3. Une fois que vous avez fini, sélectionnez **OK**.
 
 
-## <a name="step-3---configure-app-information"></a>Étape 3 : configurer les informations de l’application
+## <a name="step-3-configure-app-information"></a>Étape 3 : Configurer les informations de l’application
 
-1. Dans le volet **Ajouter une application**, choisissez **Informations sur l’application**.
-2. Dans le volet **Informations sur l’application**, ajoutez les détails de votre application. Selon l’application choisie, certaines valeurs de ce volet peuvent avoir été renseignées automatiquement :
-    - **Nom** : Entrez le nom de l’application à afficher dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d'application existe deux fois, seule l'une des applications sera proposée aux utilisateurs du portail d'entreprise.
-    - **Description** : Entrez une description de l’application à afficher aux utilisateurs dans le portail d’entreprise.
+1. Dans le volet **Ajouter une application**, sélectionnez **Informations sur l’application**.
+2. Dans le volet **Informations sur l’application**, ajoutez les détails de votre application. Selon l’application que vous avez choisie, certaines valeurs de ce volet peuvent être remplies automatiquement.
+    - **Nom** : entrez le nom de l’application, tel qu’il apparaît dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d’application existe deux fois, une seule des applications apparaît dans le portail d’entreprise.
+    - **Description :** entrez la description de l’application. La description s’affiche dans le portail d’entreprise.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **Système d’exploitation minimal** : dans la liste, choisissez le système d’exploitation minimal sur lequel l’application peut être installée. Si vous affectez l’application à un appareil avec un système d’exploitation antérieur, elle ne sera pas installée.
-    - **Ignorer la version de l’application** : définissez cette valeur sur **Oui** si l’application est automatiquement mise à jour par son développeur.
-    - **Catégorie** : sélectionnez une ou plusieurs des catégories d’applications intégrées ou une catégorie que vous avez créée. Ceci facilite la recherche de l’application pour les utilisateurs qui naviguent dans le portail d’entreprise.
-    - **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
-    - **URL d’informations** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations sur cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    - **URL de confidentialité** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations de confidentialité pour cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
-    - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
-    - **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-    - **Logo** : chargez l’icône qui est associée à l’application. Il s’agit de l’icône qui est affichée avec l’application quand les utilisateurs naviguent dans le portail d’entreprise.
-3. Quand vous avez terminé, cliquez sur **OK**.
+    - **Système d’exploitation minimal** : dans la liste, choisissez la version de système d’exploitation minimale sur laquelle l’application peut être installée. Si vous affectez l’application à un appareil avec un système d’exploitation antérieur, elle ne sera pas installée.
+    - **Ignorer la version de l’application** : choisissez **Oui** si le développeur de l’application met celle-ci automatiquement à jour.
+    - **Catégorie** : sélectionnez une ou plusieurs catégories d’application intégrée, ou une catégorie que vous avez créée. Les catégories permettent aux utilisateurs de trouver l’application plus facilement quand ils parcourent le portail d’entreprise.
+    - **Proposer cette application dans le portail d’entreprise** : met en évidence l’application sur la page principale du portail d’entreprise quand les utilisateurs recherchent des applications.
+    - **URL d’information** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations sur cette application. L’URL s’affiche dans le portail d’entreprise.
+    - **URL de déclaration de confidentialité** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations de confidentialité relatives à cette application. L’URL s’affiche dans le portail d’entreprise.
+    - **Développeur** : si vous le souhaitez, entrez le nom du développeur de l’application.
+    - **Propriétaire** : si vous le souhaitez, entrez le nom du propriétaire de cette application. Exemple : **Service des ressources humaines**.
+    - **Remarques** : entrez les remarques à associer à cette application.
+    - **Logo** : chargez une icône associée à l’application. Cette icône s’affiche avec l’application quand les utilisateurs parcourent le portail d’entreprise.
+3. Une fois que vous avez fini, sélectionnez **OK**.
 
-## <a name="step-4---finish-up"></a>Étape 4 : Terminer
+## <a name="step-4-finish-up"></a>Étape 4 : Terminer
 
-1. Dans le volet **Ajouter une application**, vérifiez que les détails de votre application sont corrects.
+1. Dans le volet **Ajouter une application**, vérifiez que les détails relatifs à votre application sont corrects.
 2. Sélectionnez **Ajouter** pour charger l’application sur Intune.
 
-L’application que vous avez créée apparaît dans la liste des applications, où vous pouvez l’affecter aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
+L’application que vous avez créée apparaît à présent dans la liste des applications. Dans la liste, vous pouvez affecter les applications aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
 
-## <a name="step-5---update-a-line-of-business-app"></a>Étape 5 : Mise à jour d’une application métier
+## <a name="step-5-update-a-line-of-business-app"></a>Étape 5 : Mettre à jour une application métier
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 > [!NOTE]
-> Pour que le service Intune parvienne à déployer un nouveau fichier IPA sur l’appareil, vous devez incrémenter la chaîne *CFBundleVersion* dans le fichier *Info.plist* de votre package IPA.
+> Pour permettre au service Intune de déployer correctement un nouveau fichier IPA sur l’appareil, vous devez incrémenter la chaîne `CFBundleVersion` dans le fichier Info.plist du package IPA.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- L’application que vous avez créée s’affiche dans la liste des applications. Vous pouvez maintenant l’affecter aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
+- L’application que vous avez créée apparaît dans la liste des applications. Vous pouvez à présent l’affecter aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
 
-- Découvrez plus d’informations sur les façons dont vous pouvez surveiller les propriétés et l’affectation de votre application. Pour plus d’informations, consultez [Guide pratique pour surveiller les affectations et les informations d’applications](apps-monitor.md).
+- Découvrez plus d’informations sur les façons dont vous pouvez surveiller les propriétés et l’affectation de votre application. Consultez [Guide pratique pour surveiller les affectations et les informations d’applications](apps-monitor.md).
 
-- Découvrez plus d’informations sur le contexte de votre application dans Intune. Pour plus d’informations, consultez [Vue d’ensemble des cycles de vie des appareils et des applications](introduction-device-app-lifecycles.md).
+- Découvrez plus d’informations sur le contexte de votre application dans Intune. Consultez [Vue d’ensemble des cycles de vie des appareils et des applications](introduction-device-app-lifecycles.md).

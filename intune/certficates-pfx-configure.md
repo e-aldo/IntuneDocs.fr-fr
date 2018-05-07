@@ -14,11 +14,11 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 61a190be2b4685030438988dab0d0134a8fa9f9b
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurer et utiliser des certificats PKCS avec Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/16/2018
 
 Les certificats servent à authentifier et à sécuriser l’accès à vos ressources d’entreprise, par exemple un réseau privé virtuel ou votre réseau Wi-Fi. Cet article explique comment exporter un certificat PKCS, puis l’ajouter à un profil Intune. 
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour utiliser des certificats PKCS avec Intune, veillez à disposer de l’infrastructure suivante :
 
@@ -82,7 +82,7 @@ Pour l’authentification avec un VPN, un réseau Wi-Fi et d’autres ressources
 9. Dans **Extensions**, vérifiez que vous voyez bien Système de fichiers EFS, Messagerie sécurisée et Authentification client sous **Stratégies d’application**.
     
       > [!IMPORTANT]
-      > Pour les modèles de certificats iOS et macOS, accédez à l’onglet **Extensions**, mettez à jour **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
+      > Pour les modèles de certificats iOS, accédez à l’onglet **Extensions**, mettez à jour **Utilisation de la clé** et vérifiez que l’option **Signature faisant preuve de l’origine** n’est pas sélectionnée.
 
 10. Dans **Sécurité**, ajoutez le compte d’ordinateur du serveur sur lequel vous avez installé Microsoft Intune Certificate Connector.
     * Accordez les autorisations **Lecture** et **Inscription** à ce compte.

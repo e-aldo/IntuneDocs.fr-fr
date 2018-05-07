@@ -1,12 +1,11 @@
 ---
-title: Créer une stratégie de conformité des appareils macOS dans Microsoft Intune
-titleSuffix: ''
-description: Créez une stratégie de conformité de l’appareil Microsoft Intune pour les appareils macOS afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme.
+title: Créer une stratégie de conformité des appareils macOS dans Microsoft Intune - Azure | Microsoft Docs
+description: Créez ou configurez une stratégie de conformité des appareils Microsoft Intune pour permettre aux appareils macOS d’utiliser la protection de l’intégrité du système, définissez la version minimale et maximale du système d’exploitation, choisissez les exigences relatives aux mots de passe et chiffrez le stockage de données.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,30 +13,21 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Créer une stratégie de conformité pour les appareils macOS avec Intune
-
+# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils macOS avec Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Une stratégie de conformité de l’appareil Intune pour macOS spécifie les règles et les paramètres que les appareils macOS doivent satisfaire pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec l’accès conditionnel pour autoriser ou bloquer l’accès aux ressources de l’entreprise, et vous pouvez générer des rapports sur les appareils et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité de l’appareil pour chaque plateforme dans le portail Intune Azure.
-
-## <a name="before-you-begin"></a>Avant de commencer
-
-Avant de créer et d’affecter une stratégie de conformité des appareils, passez en revue les concepts liés à ce type de stratégie dans Intune.
-
-- Pour en savoir plus sur les stratégies de conformité des appareils, consultez [Bien démarrer avec les stratégies de conformité des appareils](device-compliance.md).
-
-> [!IMPORTANT]
-> Vous devez créer des stratégies de conformité des appareils pour chaque plateforme. Les paramètres de stratégie de conformité des appareils Intune dépendent des fonctionnalités de plateforme, c’est-à-dire des paramètres exposés via le protocole MDM.
+Une stratégie de conformité des appareils macOS avec Intune détermine les règles et les paramètres que les appareils macOS doivent respecter pour être conformes. Quand vous utilisez des stratégies de conformité de l’appareil avec l’accès conditionnel, vous pouvez autoriser ou bloquer l’accès aux ressources d’entreprise. Vous pouvez également obtenir des rapports sur les appareils et prendre des mesures en cas de non-conformité. Des stratégies de conformité de l’appareil pour chaque plateforme peuvent être créées dans le portail Intune Azure. Pour en savoir plus sur les stratégies de conformité et sur les prérequis, consultez [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
 
 Le tableau suivant décrit la gestion des paramètres non conformes quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel :
 
+---------------------------
 
 | Paramètre de stratégie | macOS 10.11 et ultérieur |
 | --- | --- |
@@ -45,102 +35,65 @@ Le tableau suivant décrit la gestion des paramètres non conformes quand une st
 | **Chiffrement de l’appareil** | Corrigé (en définissant le code confidentiel) |
 | **Profil de messagerie** | En quarantaine |
 |**Version minimale du système d’exploitation** | En quarantaine |
-| **Version maximale du système d’exploitation** | En quarantaine |  
+| **Version maximale du système d’exploitation** | En quarantaine |
 
+---------------------------
 
-**Corrigé** : le système d’exploitation de l’appareil applique la conformité. (Par exemple, l’utilisateur est obligé de définir un code confidentiel.)
+**Corrigé** : le système d’exploitation de l’appareil applique la conformité. Par exemple, l’utilisateur est obligé de définir un code PIN.
 
 **En quarantaine** : le système d’exploitation de l’appareil n’applique pas la conformité. (Par exemple, les appareils Android n’obligent pas l’utilisateur à chiffrer l’appareil.) Quand l’appareil n’est pas conforme, les actions suivantes se produisent :
 
 - L’appareil est bloqué si une stratégie d’accès conditionnel s’applique à l’utilisateur.
 - Le portail d’entreprise informe l’utilisateur des problèmes de conformité.
 
-## <a name="macos-compliance-policy-settings"></a>Paramètres de stratégie de conformité macOS
+## <a name="create-a-device-compliance-policy"></a>Créer une stratégie de conformité des appareils
 
-Quand vous créez une stratégie de conformité des appareils avec Intune, vous avez le choix entre plusieurs catégories avec différents paramètres :
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Pour l’option **Plateforme**, sélectionnez **macOS**. Choisissez **Paramètres Configurer**, puis entrez les paramètres nécessaires pour les options **Intégrité de l’appareil**, **Propriétés de l’appareil** et **Sécurité du système**. Une fois que vous avez fini, sélectionnez **OK**, puis **Créer**.
 
-- Intégrité de l’appareil
+## <a name="device-health"></a>Intégrité de l’appareil
 
-- Propriétés de l’appareil
+- **Exiger la protection de l’intégrité du système** : vous pouvez **exiger** que la [Protection de l’intégrité du système](https://support.apple.com/HT204899) soit activée sur les appareils macOS.
 
-- Sécurité système
+## <a name="device-properties"></a>Propriétés des appareils
 
-### <a name="device-health"></a>Intégrité de l’appareil
+- **Version minimale du système d’exploitation** : quand un appareil ne répond pas aux exigences minimales relatives à la version du système d’exploitation, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau apparaît. L’utilisateur final peut choisir de mettre à niveau son appareil pour pouvoir accéder aux ressources de l’entreprise.
+- **Version maximale du système d’exploitation** : quand un appareil utilise une version du système d’exploitation postérieure à la version spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué. L’utilisateur est invité à contacter son administrateur informatique. Tant que la règle autorisant la version du système d’exploitation reste inchangée, cet appareil ne peut pas accéder aux ressources de l’entreprise.
 
-- **Exiger la protection de l’intégrité du système** : Choisissez **Exiger** pour vérifier si la protection de l’intégrité du système est activée sur vos appareils macOS.
+## <a name="system-security-settings"></a>Paramètres de sécurité système
 
-### <a name="device-properties"></a>Propriétés des appareils
+### <a name="password"></a>Mot de passe
 
-- **Version minimale du système d’exploitation** : Quand un appareil ne répond pas à la condition de version minimale du système d’exploitation, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau apparaît. L’utilisateur peut choisir de mettre à niveau son appareil. Ensuite, il peut accéder aux ressources de l’entreprise.
+- **Exiger un mot de passe pour déverrouiller les appareils mobiles** : permet d’**obliger** les utilisateurs à entrer un mot de passe pour pouvoir accéder à leur appareil.
+- **Mots de passe simples** : choisissez **Bloquer** pour que les utilisateurs ne puissent pas créer de mots de passe simples, par exemple **1234** ou **1111**. Choisissez **Non configuré** pour permettre aux utilisateurs de créer des mots de passe tels que **1234** ou **1111**.
+- **Longueur minimale du mot de passe** : entrez le nombre minimal de chiffres ou de caractères du mot de passe.
+- **Type de mot de passe** : choisissez si un mot de passe doit comporter uniquement des caractères **numériques**, ou s’il doit comporter un mélange de chiffres et d’autres caractères (**alphanumériques**).
+- **Nombre de caractères non alphanumériques dans le mot de passe** : entrez le nombre minimal de caractères spéciaux (&, #, %, !, etc.) à inclure dans le mot de passe.
 
-- **Version maximale du système d’exploitation** : Quand un appareil utilise une version de système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources d’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur informatique. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
+    Si vous définissez un nombre plus élevé, l’utilisateur doit créer un mot de passe plus complexe.
 
-### <a name="system-security-settings"></a>Paramètres de sécurité système
-
-#### <a name="password"></a>Mot de passe
-
-- **Exiger un mot de passe pour déverrouiller les appareils mobiles** : Choisissez **Exiger** pour obliger les utilisateurs à entrer un mot de passe pour accéder à leur appareil.
-
-- **Mots de passe simples** : Choisissez **Bloquer** pour empêcher l’utilisateur de créer un mot de passe simple comme **1234** ou **1111**.
-
-- **Longueur minimale du mot de passe** : Spécifie le nombre minimal de chiffres ou de caractères du mot de passe.
-
-- **Type de mot de passe** : Indiquez si l’utilisateur doit créer un mot de passe **Alphanumérique** ou **Numérique**.
-
-- **Nombre de caractères non alphanumériques dans le mot de passe** : Si vous définissez **Type de mot de passe obligatoire** sur **Alphanumérique**, ce paramètre spécifie le nombre minimal de jeux de caractères que le mot de passe doit avoir. 
-
-    > [!NOTE]
-    > Si vous définissez un nombre plus élevé, l’utilisateur doit créer un mot de passe plus complexe.
+- **Nombre maximal de minutes d’inactivité avant demande du mot de passe** : entrez la durée d’inactivité après laquelle l’utilisateur doit rentrer son mot de passe.
+- **Expiration du mot de passe (jours)**  : sélectionnez le nombre de jours avant l’expiration du mot de passe de l’utilisateur et l’obligation d’en créer un autre.
+- **Nombre de mots de passe précédents avant d’autoriser leur réutilisation** : entrez le nombre d’anciens mots de passe qui ne peuvent pas être réutilisés.
 
     > [!IMPORTANT]
-    > Pour les appareils macOS, ce paramètre indique le nombre de caractères spéciaux (par exemple, **!** , **#**, **&amp;**) qui doivent être inclus dans le mot de passe.
+    > Quand les exigences de mot de passe sont changées sur un appareil macOS, elles n’entrent pas en vigueur tant que l’utilisateur ne change pas son mot de passe. Par exemple, si vous fixez la longueur minimale du mot de passe à huit chiffres et si l’appareil macOS a un mot de passe de six chiffres, il reste conforme jusqu’à ce que l’utilisateur mette à jour son mot de passe.
 
-- **Nombre maximal de minutes d’inactivité avant demande du mot de passe** : Spécifiez la durée d’inactivité après laquelle l’utilisateur doit rentrer son mot de passe.
+### <a name="encryption"></a>Chiffrement
 
-- **Expiration du mot de passe (jours)** : Sélectionnez le nombre de jours (entre 1 et 250) avant expiration du mot de passe et création d’un nouveau.
-
-- **Nombre de mots de passe précédents avant d’autoriser leur réutilisation** : Spécifiez le nombre de mots de passe précédents qui ne peuvent pas être réutilisés.
-
-    > [!IMPORTANT]
-    > Quand les exigences de mot de passe sont changées sur un appareil macOS, elles n’entrent pas en vigueur tant que l’utilisateur ne change pas son mot de passe. Par exemple, si vous définissez une limite de longueur de mot de passe à huit chiffres et que l’appareil macOS a actuellement un mot de passe à 6 chiffres, l’appareil reste conforme tant que l’utilisateur n’a pas mis à jour son mot de passe sur l’appareil.
-
-## <a name="to-create-a-device-compliance-policy"></a>Pour créer une stratégie de conformité de l’appareil
-
-1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification Intune.
-
-2. Une fois que vous êtes correctement connecté, le **tableau de bord Azure** apparaît.
-
-3. Choisissez **Tous les services** dans le menu de gauche, puis entrez **Intune** dans le filtre de la zone de texte.
-
-4. Choisissez **Intune** pour afficher le **tableau de bord Intune**.
-
-5. Choisissez **Conformité de l’appareil**, puis choisissez **Stratégies** sous **Gérer**.
-
-6. Choisissez **Créer une stratégie**.
-
-7. Tapez un nom et une description, puis choisissez la plateforme à laquelle vous souhaitez appliquer cette stratégie.
-
-8. Le volet **Stratégie de conformité Mac** s’ouvre. Choisissez les catégories de paramètres de conformité des appareils (**Sécurité du système**, **Intégrité de l’appareil** et **Propriétés de l’appareil**) pour spécifier vos paramètres.
-
-10. Une fois que vous avez choisi vos paramètres, choisissez **OK** sous chaque catégorie de paramètres de conformité des appareils.
-
-11. Choisissez **OK**, puis **Créer**.
+- **Chiffrement du stockage de données sur l’appareil** : choisissez **Exiger** pour chiffrer le stockage des données sur vos appareils.
 
 ## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
 
-Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le volet **Conformité de l’appareil - Stratégies**.
+1. Choisissez une stratégie que vous avez configurée. Les stratégies existantes se trouvent dans **Conformité de l’appareil** > **Stratégies**.
+2. Choisissez la stratégie, puis **Affectations**. Vous pouvez inclure ou exclure des groupes de sécurité Azure AD (Azure Active Directory).
+3. Choisissez **Groupes sélectionnés** pour voir vos groupes de sécurité Azure AD. Sélectionnez les groupes d’utilisateurs auxquels vous souhaitez appliquer cette stratégie, puis choisissez **Enregistrer** pour déployer la stratégie auprès des utilisateurs.
 
-1. Choisissez la stratégie de conformité des appareils à affecter aux utilisateurs, puis **Affectations**. Cette opération ouvre le volet dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous affectez à la stratégie.
+> [!TIP]
+> Par défaut, les appareils vérifient la conformité toutes les huit heures. Toutefois, les utilisateurs peuvent forcer ce processus via l’application Portail d’entreprise Intune.
 
-2. Choisissez **Groupes sélectionnés** pour ouvrir la page qui affiche les groupes de sécurité Azure AD.
-
-3. Choisissez **Enregistrer** pour affecter la stratégie de conformité des appareils aux groupes de sécurité Azure AD.
-
-4. Une fois que vous avez terminé d’affecter la stratégie de conformité des appareils à vos groupes, vous pouvez fermer le volet **Affectations**.
-
-    > [!TIP]
-    > Par défaut, les appareils vérifient la conformité toutes les huit heures, mais les utilisateurs peuvent forcer ce processus dans l’application Portail d’entreprise Intune.
+Vous avez appliqué la stratégie à des utilisateurs. La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie est évaluée.
 
 ## <a name="next-steps"></a>Étapes suivantes
-
-[Guide pratique pour surveiller les stratégies de conformité des appareils](compliance-policy-monitor.md)
+[Automatiser l’envoi d’un e-mail et ajouter des actions pour les appareils non conformes](actions-for-noncompliance.md)  
+[Surveiller les stratégies de conformité d’appareils Intune](compliance-policy-monitor.md)

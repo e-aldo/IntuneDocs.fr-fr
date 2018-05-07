@@ -3,8 +3,8 @@ title: Guide pratique pour configurer des paramètres Wi-Fi Intune
 titleSuffix: Microsoft Intune
 description: Découvrez comment utiliser Intune pour configurer des connexions Wi-Fi sur les appareils que vous gérez.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres Wi-Fi dans Microsoft Intune
 
@@ -38,7 +38,7 @@ Les profils Wi-Fi prennent en charge les plateformes suivantes :
 - Android 4 et versions ultérieures
 - Android for Work
 - iOS 8.0 et versions ultérieures
-- Mac OS (Mac OS X 10.9 et versions ultérieures)
+- macOS (Mac OS X 10.11 et ultérieur)
 
 Pour les appareils exécutant Windows 8.1, Windows 10, Windows 10 Mobile et Windows Holographic for Business, vous pouvez importer une configuration Wi-Fi précédemment exportée à partir d’un autre appareil.
 

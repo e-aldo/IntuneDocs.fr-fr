@@ -1,12 +1,11 @@
 ---
-title: Créer une stratégie de conformité Android for Work
-titleSuffix: Microsoft Intune
-description: Créez une stratégie de conformité de l’appareil Intune pour les appareils Android for Work afin de pouvoir spécifier des exigences qu’un appareil doit respecter pour être conforme.
+title: Créer une stratégie de conformité Android for Work dans Microsoft Intune - Azure | Microsoft Docs
+description: Créez ou configurez une stratégie de conformité des appareils Microsoft Intune pour les appareils Android for Work. Choisissez d’autoriser les appareils jailbreakés, définissez le niveau de menace acceptable, vérifiez la présence de Google Play, entrez la version minimale et maximale du système d’exploitation, choisissez vos exigences de mot de passe et autorisez le chargement indépendant des applications.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +14,17 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Guide pratique pour créer une stratégie de conformité pour des appareils Android for Work dans Intune
-
+# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Android for Work dans Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Une stratégie de conformité de l’appareil Intune pour Android for Work spécifie les règles et les paramètres que les appareils Android for Work doivent satisfaire pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec l’accès conditionnel pour autoriser ou bloquer l’accès aux ressources d’entreprise, et vous pouvez générer des rapports sur les appareils et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité de l’appareil pour chaque plateforme dans le portail Intune Azure. Pour en savoir plus sur les stratégies de conformité et sur les prérequis à prendre en compte avant de créer une stratégie, consultez [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
+Une stratégie de conformité des appareils Intune pour Android for Work spécifie les règles et les paramètres que ces appareils doivent respecter pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec un accès conditionnel pour autoriser ou bloquer l’accès aux ressources de l’entreprise. Vous pouvez également obtenir des rapports sur les appareils, et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité des appareils pour différentes plateformes dans le portail Azure Intune. Pour en savoir plus sur les stratégies de conformité et sur les prérequis, consultez [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
 
 La table suivante décrit la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
 
@@ -49,13 +47,10 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 - Si une stratégie d’accès conditionnel s’applique à l’utilisateur, l’appareil est bloqué.
 - Le portail d’entreprise informe l’utilisateur des problèmes de conformité.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Création d'une stratégie de conformité dans le portail Azure
+## <a name="create-a-device-compliance-policy"></a>Créer une stratégie de conformité des appareils
 
-1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-1. Dans le volet **Intune**, choisissez **Conformité de l’appareil**. Sous **Gérer**, choisissez **Stratégies**, puis **Créer une stratégie**.
-2. Tapez un nom et une description, puis sélectionnez la plateforme à laquelle vous souhaitez appliquer cette stratégie.
-3. Choisissez **Configurer les paramètres** pour spécifier les paramètres **Sécurité du système**, **Intégrité de l’appareil** et **Propriétés de l’appareil**. Une fois que vous avez terminé, choisissez **Enregistrer**.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Pour l’option **Plateforme**, sélectionnez **Android for Work**. Choisissez **Paramètres Configurer**, puis entrez les paramètres nécessaires pour les options **Intégrité de l’appareil**, **Propriétés de l’appareil** et **Sécurité du système**. Une fois que vous avez fini, sélectionnez **OK**, puis **Créer**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -64,59 +59,69 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
+## <a name="device-health"></a>Device health
 
-Pour attribuer une stratégie de conformité à des utilisateurs, choisissez une stratégie que vous avez configurée. Vous trouverez les stratégies existantes dans le volet **Conformité de l’appareil – Stratégies**.
+- **Appareils rootés** : si vous activez ce paramètre, les appareils jailbreakés sont considérés comme non conformes.
+- **Exiger que l’appareil se situe au niveau de menace d’appareil ou en dessous** : utilisez ce paramètre pour considérer l’évaluation des risques de la solution Lookout MTP comme une condition de conformité. Choisissez le niveau de menace maximal autorisé :
+  - **Sécurisé** : cette option est la plus sécurisée. Elle signifie que l’appareil ne doit présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
+  - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
+  - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
+  - **Élevé** : cette option est la moins sécurisée, car elle autorise tous les niveaux de menace. Elle peut s’avérer utile si vous utilisez cette solution uniquement à des fins de création de rapports.
+- **Google Play Services est configuré** : l’application Google Play Services doit être impérativement installée et activée. Google Play Services autorise les mises à jour de sécurité et constitue une dépendance de niveau de base pour de nombreuses fonctionnalités de sécurité sur les appareils Google certifiés.
+- **Fournisseur de sécurité à jour** : un fournisseur de sécurité à jour doit protéger l’appareil contre les vulnérabilités connues.
+- **Attestation d’appareil SafetyNet** : entrez le niveau d’[attestation SafetyNet](https://developer.android.com/training/safetynet/attestation.html) à respecter. Les options disponibles sont les suivantes :
+  - **Non configuré**
+  - **Vérifier l’intégrité de base**
+  - **Vérifier l’intégrité de base et les appareils certifiés**
 
-1. Choisissez la stratégie que vous souhaitez attribuer aux utilisateurs, puis **Affectations**. Cette opération ouvre le volet dans lequel vous pouvez sélectionner des **groupes de sécurité Azure Active Directory** que vous affectez à la stratégie.
-2. Choisissez **Groupes sélectionnés** pour ouvrir la page qui affiche les groupes de sécurité Azure AD.  Si vous choisissez **Enregistrer**, la stratégie est déployée pour les utilisateurs.
+#### <a name="threat-scan-on-apps"></a>Analyse des menaces sur les applications
 
-Vous avez appliqué la stratégie à des utilisateurs.  La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie de conformité sera évaluée.
+Sur les appareils dotés de profils professionnels (Android for Work), le paramètre **Analyse des menaces sur les applications** correspond à un paramètre de stratégie de configuration. Les administrateurs peuvent activer le paramètre pour un appareil.
 
-<!--- ##  Compliance policy settings--->
+Si votre entreprise utilise des profils professionnels Android, vous pouvez activer **Analyse des menaces sur les applications** pour vos appareils inscrits. Établissez un profil d’appareil et demandez le paramètre de sécurité système. Pour plus d’informations sur les profils d’appareils, consultez [Paramètres de restriction des appareils Android for Work dans Intune](device-restrictions-android-for-work.md).
+
+## <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
+
+- **Version minimale du système d’exploitation** : quand un appareil ne répond pas aux exigences minimales relatives à la version du système d’exploitation, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil pour pouvoir accéder aux ressources de l’entreprise.
+- **Version maximale du système d’exploitation** : quand un appareil utilise une version du système d’exploitation postérieure à la version présente dans la règle, l’accès aux ressources de l’entreprise est bloqué. De plus, l’utilisateur est invité à contacter son administrateur informatique. Tant que la règle autorisant la version du système d’exploitation reste inchangée, l’appareil ne peut pas accéder aux ressources de l’entreprise.
 
 ## <a name="system-security-settings"></a>Paramètres de sécurité système
 
 ### <a name="password"></a>Mot de passe
 
-- **Exiger un mot de passe pour déverrouiller des appareils mobiles** : définissez cette option sur **Oui** pour obliger les utilisateurs à entrer un mot de passe pour accéder à leur appareil.
-- **Longueur minimale du mot de passe** : spécifie le nombre minimal de chiffres ou de caractères devant figurer dans le mot de passe.
-- **Qualité du mot de passe :** ce paramètre détecte si les critères de mot de passe que vous spécifiez sont configurés sur l’appareil. Activez ce paramètre pour que les utilisateurs configurent certains critères de mot de passe pour les appareils Android. Choisissez parmi :
+- **Exiger un mot de passe pour déverrouiller les appareils mobiles** : permet d’**obliger** les utilisateurs à entrer un mot de passe pour pouvoir accéder à leur appareil.
+- **Longueur minimale du mot de passe** : entrez le nombre minimal de chiffres ou de caractères du mot de passe de l’utilisateur.
+- **Type de mot de passe obligatoire** : choisissez si un mot de passe doit comportement uniquement des caractères numériques, ou s’il doit comporter un mélange de chiffres et d’autres caractères. Choisissez parmi :
+  - **Paramètre par défaut de l’appareil**
   - **Sécurité biométrique faible**
-  - **Obligatoire**
   - **Au moins numérique**
+  - **Chiffres complexes**
   - **Au moins alphabétique**
   - **Au moins alphanumérique**
-  - **Alphanumérique avec symboles**
-- **Minutes d’inactivité avant demande du mot de passe** : spécifie la durée d’inactivité au terme de laquelle l’utilisateur doit entrer à nouveau son mot de passe.
-- **Expiration du mot de passe (jours)** : sélectionnez le nombre de jours avant que le mot de passe de l’utilisateur n’expire et qu’il ne doive en créer un autre.
-- **Mémoriser l’historique des mots de passe** : utilisez ce paramètre conjointement avec le paramètre **Empêcher la réutilisation des mots de passe précédents** pour empêcher l’utilisateur de créer des mots de passe qui ont déjà été utilisés.
-- **Empêcher la réutilisation des mots de passe précédents** : si l’option **Mémoriser l’historique des mots de passe** est sélectionnée, spécifiez le nombre de mots de passe précédemment utilisés qui ne peuvent pas être réutilisés.
-- **Exiger un mot de passe quand l’appareil quitte un état inactif :** ce paramètre doit être utilisé avec le paramètre **Minutes d’inactivité avant demande du mot de passe**. Les utilisateurs finaux sont invités à entrer un mot de passe pour accéder à un appareil qui a été inactif pendant la durée spécifiée par le paramètre **Minutes d’inactivité avant demande du mot de passe**.
-
+  - **Au moins alphanumérique avec des symboles**
+- **Nombre maximal de minutes d’inactivité avant demande du mot de passe** : entrez la durée d’inactivité après laquelle l’utilisateur doit rentrer son mot de passe.
+- **Expiration du mot de passe (jours)**  : sélectionnez le nombre de jours avant l’expiration du mot de passe de l’utilisateur et l’obligation d’en créer un autre.
+- **Nombre de mots de passe précédents avant d’autoriser leur réutilisation** : entrez le nombre de mots de passe récents qui ne peuvent pas être réutilisés. Utilisez ce paramètre pour empêcher l’utilisateur de créer des mots de passe déjà utilisés.
 
 ### <a name="encryption"></a>Chiffrement
 
 - **Exiger le chiffrement sur l’appareil mobile** : vous n’êtes pas obligé de configurer ce paramètre parce que les appareils Android for Work appliquent le chiffrement.
 
+### <a name="device-security"></a>Sécurité du périphérique
 
-## <a name="device-health-and-security-settings"></a>Paramètres d’intégrité et de sécurité de l’appareil
+- **Bloquer les applications provenant de sources inconnues** : vous n’avez pas à configurer ce paramètre, car les appareils Android for Work bloquent toujours les installations à partir de sources inconnues.
+- **Intégrité du runtime de l’application Portail d’entreprise** : vérifie si l’environnement de runtime par défaut de l’application Portail d’entreprise est installé, s’il est correctement signé, s’il n’est pas en mode de débogage et s’il est installé à partir d’une source connue.
+- **Bloquer le débogage USB sur l’appareil** : vous n’avez pas à configurer ce paramètre, car le débogage USB est déjà désactivé sur les appareils Android for Work.
+- **Niveau minimal du correctif de sécurité** : sélectionnez le niveau le plus ancien possible pour le correctif de sécurité d’un appareil. Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. Vous devez entrer la date au format `YYYY-MM-DD`.
 
-- **L’appareil ne doit pas être jailbreaké ou rooté** : si vous activez ce paramètre, les appareils jailbreakés ne sont pas détectés comme conformes.
-- **Exiger que les appareils interdisent l’installation des applications provenant de sources inconnues** : vous n’êtes pas obligé de configurer ce paramètre, car les appareils Android for Work limitent systématiquement l’installation à partir de sources inconnues.
-- **Exiger que le débogage USB soit désactivé** : vous n’êtes pas obligé de configurer ce paramètre parce que le débogage USB est déjà désactivé sur les appareils Android for Work.
-- **Niveau minimal du correctif de sécurité Android** : Utilisez ce paramètre pour spécifier le niveau de correctif Android minimal. Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. La date doit être spécifiée au format suivant : AAAA-MM-JJ.
-- **Exiger l’activation de la protection de l’appareil contre les menaces**: utilisez ce paramètre pour sélectionner l’évaluation des risques de la solution Lookout MTP comme une condition de conformité. Choisissez le niveau de menace maximal autorisé parmi les options suivantes :
-  - **Aucun (sécurisé)**  : c’est le niveau de sécurité le plus haut. L’appareil ne peut présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
-  - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
-  - **Moyen** : l’appareil est évalué comme conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées sur l’appareil, il est déterminé comme non conforme.
-  - **Élevé** : cette option est la moins sécurisée. Cette option permet en fait tous les niveaux de menaces. Elle peut être utile si vous utilisez cette solution uniquement pour la génération de rapports.
+## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
 
-## <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
+1. Choisissez une stratégie que vous avez configurée. Les stratégies existantes se trouvent dans **Conformité de l’appareil** > **Stratégies**.
+2. Choisissez la stratégie, puis **Affectations**. Vous pouvez inclure ou exclure des groupes de sécurité Azure AD (Azure Active Directory).
+3. Choisissez **Groupes sélectionnés** pour voir vos groupes de sécurité Azure AD. Sélectionnez les groupes d’utilisateurs auxquels vous souhaitez appliquer cette stratégie, puis choisissez **Enregistrer** pour déployer la stratégie auprès des utilisateurs.
 
-- **Système d’exploitation minimal requis** : quand un appareil ne satisfait pas à la condition de version minimale du système d’exploitation, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
-- **Version maximale autorisée du système d’exploitation** : quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, l’accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur informatique. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
+Vous avez appliqué la stratégie à des utilisateurs. La conformité des appareils utilisés par les utilisateurs ciblés par la stratégie est évaluée.
 
-<!--- ## Next steps
-
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## <a name="next-steps"></a>Étapes suivantes
+[Automatiser l’envoi d’un e-mail et ajouter des actions pour les appareils non conformes](actions-for-noncompliance.md)  
+[Surveiller les stratégies de conformité d’appareils Intune](compliance-policy-monitor.md)

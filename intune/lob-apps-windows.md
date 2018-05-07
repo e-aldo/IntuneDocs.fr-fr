@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour ajouter des applications métier Windows à Microsoft Intune
+title: Ajouter une application métier Windows à Microsoft Intune
 titlesuffix: ''
-description: Découvrez comment ajouter des applications métier Windows à Microsoft Intune.
+description: Découvrez comment ajouter une application métier Windows à Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,70 +15,74 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa11c29a50006053b6e9b52516a595683d6f4cfd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ac5c06bc1656f932379d634e341ad9db9bc66419
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier Windows à Microsoft Intune
+# <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Ajouter une application métier Windows à Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Une application métier est une application que vous ajoutez à partir d’un fichier d’installation d’application. Ces types d’applications sont généralement écrites en interne. Les étapes suivantes fournissent des conseils pour vous aider à ajouter une application métier Windows à Microsoft Intune.
+Une application métier est une application que vous ajoutez à partir d’un fichier d’installation d’application. En règle générale, ce genre d’application est écrite en interne. Les étapes suivantes fournissent des conseils pour vous aider à ajouter une application métier Windows à Microsoft Intune.
 
-## <a name="step-1---specify-the-software-setup-file"></a>Étape 1 : spécifier le fichier d’installation de logiciel
+## <a name="step-1-specify-the-software-setup-file"></a>Étape 1 : Spécifier le fichier d’installation du logiciel
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans le volet **Intune**, choisissez **Applications mobiles**.
-4. Dans la charge de travail **Applications mobiles**, choisissez **Gérer** > **Applications**.
-5. Au-dessus de la liste des applications, choisissez **Ajouter**.
-6. Dans le volet **Ajouter une application**, choisissez **Application métier**.
+2. Sélectionnez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, sélectionnez **Applications mobiles**.
+4. Dans la charge de travail **Applications mobiles**, sélectionnez **Gérer** > **Applications**.
+5. Au-dessus de la liste des applications, sélectionnez **Ajouter**.
+6. Dans le volet **Ajouter une application**, sélectionnez **Application métier**.
 
-## <a name="step-2---configure-the-app-package-file"></a>Étape 2 : configurer le fichier de package d’application
+## <a name="step-2-configure-the-app-package-file"></a>Étape 2 : Configurer le fichier de package d’application
 
-1. Dans le volet **Ajouter une application**, choisissez le fichier **Package de l’application**.
-2. Dans le volet du fichier **Package de l’application**, choisissez le bouton Parcourir et sélectionnez un fichier d’installation Windows avec l’extension **.msi**, **.appx** ou **.appxbundle**.
-3. Quand vous avez terminé, cliquez sur **OK**.
+1. Dans le volet **Ajouter une application**, sélectionnez **Fichier de package d’application**.
+2. Dans le volet **Fichier de package d’application**, sélectionnez le bouton Parcourir. Sélectionnez ensuite un fichier d’installation Windows ayant l’extension **.msi**, **.appx** ou **.appxbundle**.
+3. Une fois que vous avez fini, sélectionnez **OK**.
 
 
-## <a name="step-3---configure-app-information"></a>Étape 3 : configurer les informations de l’application
+## <a name="step-3-configure-app-information"></a>Étape 3 : Configurer les informations de l’application
 
-1. Dans le volet **Ajouter une application**, choisissez le fichier **Package de l’application**.
-2. Dans le volet**Informations sur l’application**, configurez les informations suivantes (certaines valeurs de ce volet peuvent être complétées automatiquement) :
-    - **Nom** : entrez le nom de l’application tel qu’il est affiché dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d’application existe deux fois, une seule application est proposée aux utilisateurs du portail d’entreprise.
-    - **Description :** entrez la description de l’application. La description est présentée aux utilisateurs du portail d’entreprise.
+1. Dans le volet **Ajouter une application**, sélectionnez **Informations sur l’application**.
+2. Dans le volet **Informations sur l’application**, configurez les informations suivantes. Certaines valeurs de ce volet sont éventuellement renseignées automatiquement.
+    - **Nom** : entrez le nom de l’application, tel qu’il apparaît dans le portail d’entreprise. Assurez-vous que tous les noms d'application que vous utilisez sont uniques. Si le même nom d’application existe deux fois, une seule des applications apparaît dans le portail d’entreprise.
+    - **Description :** entrez la description de l’application. La description s’affiche dans le portail d’entreprise.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **Ignorer la version de l’application** : définissez cette valeur sur **Oui** si l’application est automatiquement mise à jour par son développeur.
-    - **Catégorie** : sélectionnez une ou plusieurs des catégories d’applications intégrées ou une catégorie que vous avez créée. En classant les applications par catégorie, vous facilitez la recherche de l’application pour les utilisateurs qui naviguent dans le portail d’entreprise.
-    - **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
-    - **URL d’information** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations sur l’application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    - **URL de la déclaration de confidentialité** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations de confidentialité relatives à l’application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    - **Arguments de ligne de commande** : si vous le souhaitez, entrez tous les arguments de ligne de commande que vous voulez appliquer au fichier .msi pendant son exécution, comme **/q**.
-    - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
-    - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
-    - **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
-    - **Logo** : chargez l’icône qui est associée à l’application. Cette icône s’affiche avec l’application quand les utilisateurs parcourent le portail d'entreprise.
-3. Quand vous avez terminé, cliquez sur **OK**.
+    - **Ignorer la version de l’application** : choisissez **Oui** si le développeur de l’application met celle-ci automatiquement à jour.
+    - **Catégorie** : sélectionnez une ou plusieurs catégories d’application intégrée, ou une catégorie que vous avez créée. Les catégories permettent aux utilisateurs de trouver l’application plus facilement quand ils parcourent le portail d’entreprise.
+    - **Proposer cette application dans le portail d’entreprise** : met en évidence l’application sur la page principale du portail d’entreprise quand les utilisateurs recherchent des applications.
+    - **URL d’information** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations sur l’application. L’URL s’affiche dans le portail d’entreprise.
+    - **URL de déclaration de confidentialité** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations de confidentialité relatives à l’application. L’URL s’affiche dans le portail d’entreprise.
+    - **Arguments de ligne de commande** : si vous le souhaitez, entrez les arguments de ligne de commande à appliquer au fichier .msi durant son exécution. Exemple : **/q**.
+    - **Développeur** : si vous le souhaitez, entrez le nom du développeur de l’application.
+    - **Propriétaire** : si vous le souhaitez, entrez le nom du propriétaire de cette application. Exemple : **Service des ressources humaines**.
+    - **Remarques** : entrez les remarques à associer à cette application.
+    - **Logo** : chargez une icône associée à l’application. Cette icône s’affiche avec l’application quand les utilisateurs parcourent le portail d’entreprise.
+3. Une fois que vous avez fini, sélectionnez **OK**.
 
-## <a name="step-4---finish-up"></a>Étape 4 : Terminer
+## <a name="step-4-finish-up"></a>Étape 4 : Terminer
 
 1. Dans le volet **Ajouter une application**, vérifiez que vous avez correctement configuré les informations de l’application.
 2. Sélectionnez **Ajouter** pour charger l’application sur Intune.
 
-## <a name="step-5---update-a-line-of-business-app"></a>Étape 5 : Mise à jour d’une application métier
+## <a name="step-5-update-a-line-of-business-app"></a>Étape 5 : Mettre à jour une application métier
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
-## <a name="configuring-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Configuration d’une application MSI mobile avec mise à jour automatique pour ignorer le processus de vérification de version
+## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Configurer une application MSI mobile avec mise à jour automatique pour ignorer le processus de vérification de version
 
-Vous pouvez configurer une application MSI mobile avec mise à jour automatique connue pour ignorer le processus de vérification de version. Certaines applications basées sur le programme d’installation MSI sont automatiquement mises à jour par le développeur de l’application. Pour ces applications MSI mises à jour automatiquement, vous pouvez configurer le paramètre **Ignorer la version de l’application** dans le panneau **Informations sur l’application**. Quand vous passez ce paramètre sur **Oui**, Microsoft Intune n’impose pas la version de l’application installée sur le client Windows. Cette fonctionnalité est utile pour éviter d’introduire une condition de concurrence. Par exemple, ce type de condition de concurrence peut se produire quand l’application est mise à jour automatiquement par le développeur de l’application et aussi par Intune. Les deux peuvent essayer d’appliquer une version de l’application sur un client Windows, générant ainsi un conflit.
+Vous pouvez configurer une application MSI mobile connue avec mise à jour automatique pour ignorer le processus de vérification de version. 
+
+Certaines applications basées sur un programme d’installation MSI sont automatiquement mises à jour par le développeur de l’application. Pour ces applications MSI mises à jour automatiquement, vous pouvez configurer le paramètre **Ignorer la version de l’application** dans le volet **Informations sur l’application**. Quand vous changez ce paramètre en lui affectant la valeur **Oui**, Microsoft Intune n’applique pas la version de l’application installée sur le client Windows. 
+
+Cette fonctionnalité est utile pour éviter d’introduire une condition de concurrence. Par exemple, une condition de concurrence peut se produire quand l’application est automatiquement mise à jour par le développeur et en même temps par Intune. Tous deux tentent d’appliquer une version de l’application sur un client Windows, ce qui crée un conflit.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- L’application que vous avez créée s’affiche dans la liste des applications. Vous pouvez maintenant l’affecter aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
+- L’application que vous avez créée apparaît dans la liste des applications. Vous pouvez à présent l’affecter aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
 
-- Découvrez plus d’informations sur les façons dont vous pouvez surveiller les propriétés et l’affectation de votre application. Pour plus d’informations, consultez [Guide pratique pour surveiller les affectations et les informations d’applications](apps-monitor.md).
+- Découvrez plus d’informations sur les façons dont vous pouvez surveiller les propriétés et l’affectation de votre application. Consultez [Guide pratique pour surveiller les affectations et les informations d’applications](apps-monitor.md).
 
-- Découvrez plus d’informations sur le contexte de votre application dans Intune. Pour plus d’informations, consultez [Vue d’ensemble des cycles de vie des appareils et des applications](introduction-device-app-lifecycles.md).
+- Découvrez plus d’informations sur le contexte de votre application dans Intune. Consultez [Vue d’ensemble des cycles de vie des appareils et des applications](introduction-device-app-lifecycles.md).

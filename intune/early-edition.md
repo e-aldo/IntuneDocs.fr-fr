@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6ca8108924c6c062da0d0ef56ab5b68635dd9ca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b003fde011fd3a727c7c7a163fedb1dae6779425
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---april-2018"></a>Édition préliminaire pour Microsoft Intune - Avril 2018
 
@@ -39,6 +39,16 @@ Cette page est mise à jour périodiquement. Consultez-la régulièrement pour s
 ## <a name="intune-in-the-azure-portal"></a>Intune dans le portail Azure
 
 <!-- 1804 start -->
+
+### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>Afficher l’ID d’appelant dans un profil personnel - Android for Work <!--1098984 -->
+Quand vous utilisez un profil personnel sur un appareil, les utilisateurs finaux ne voient pas forcément les détails relatifs à l’ID d’appelant d’un contact professionnel. 
+
+Avec cette mise à jour, il existe un nouveau paramètre dans **Android for Work** > **Restrictions sur l’appareil** > **Paramètres du profil professionnel** :
+- Afficher l’ID d’appelant du contact professionnel dans le profil personnel
+
+Quand ce paramètre est activé (non configuré), les détails de l’ID d’appelant du contact professionnel sont affichés dans le profil personnel. Quand ce paramètre est désactivé, le numéro d’appelant du contact professionnel ne s’affiche pas dans le profil personnel. 
+
+S’applique aux appareils avec profil professionnel Android pour le système d’exploitation Android v6.0 et les versions ultérieures
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802--"></a>Nouveaux paramètres Windows Defender Credential Guard ajoutés aux paramètres Endpoint Protection <!--1102252 --><!--from 1802-->
 
@@ -113,6 +123,9 @@ Actuellement, vous pouvez attribuer des profils de déploiement AutoPilot à des
 ### <a name="play-sounds-on-ios-when-in-lost-mode----1629303---"></a>Lire les sons sur iOS en mode Perdu <!-- 1629303 -->
 Quand les appareils iOS supervisés sont en [mode Perdu](device-lost-mode.md) MDM (Mobile Device Management), vous pouvez lire un son (**Appareils** > **Tous les appareils** > sélectionnez un appareil iOS > **Vue d’ensemble** > **Plus**). La lecture du son se poursuit jusqu’à ce que l’appareil soit retiré du mode Perdu ou qu’un utilisateur désactive le son sur l’appareil. S’applique aux appareils iOS 9.3 et ultérieur.
 
+### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Intune réinstalle les applications nécessaires qui sont désinstallées par les utilisateurs <!-- 1947010 -->
+Si un utilisateur final désinstalle une application obligatoire, Intune la réinstalle automatiquement en moins de 24 heures au lieu d’attendre le cycle de réévaluation de 7 jours.
+
 ### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Utiliser un nom d’objet personnalisé sur le certificat SCEP <!-- 2064190 -->
 Vous pourrez utiliser le nom courant **OnPremisesSamAccountName** dans un objet personnalisé sur un profil de certificat SCEP. Par exemple, vous pouvez utiliser `CN={OnPremisesSamAccountName})`.
 
@@ -158,7 +171,7 @@ Les nouveaux profils VPN créés pour Cisco AnyConnect pour iOS fonctionneront a
 > [!NOTE]
 > Cette modification ne concerne qu’iOS. Il continuera de n’y avoir qu’une seule option Cisco AnyConnect pour Android, Android for Work et macOS.
 
-#### <a name="more-information"></a>Autres informations
+#### <a name="more-information"></a>Plus d’informations
 
 Vous devez créer un nouveau profil VPN Cisco AnyConnect pour iOS afin de prendre en charge la nouvelle application Cisco AnyConnect car celle-ci et l’application Cisco Legacy AnyConnect sont des applications distinctes. Si vous gérez le client AnyConnect dans votre environnement, vous devez également déployer la nouvelle application Cisco AnyConnect. Pour effectuer une mise à niveau, vous devez aussi supprimer votre profil VPN Cisco Legacy AnyConnect et l’application Cisco Legacy AnyConnect.
 
