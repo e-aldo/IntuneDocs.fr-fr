@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Préparer les applications métier aux stratégies de protection des applications
 
@@ -70,8 +70,8 @@ Pour en savoir plus sur le SDK, consultez sa [présentation](app-sdk.md). Pour c
 
 |**SDK d’application Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Oui : utilisez les [liaisons Xamarin du SDK d’application Intune](app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md).|
-|**Android**| Oui : utilisez les [liaisons Xamarin du SDK d’application Intune](app-sdk-xamarin.md).|Oui : utilisez le [plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md).|
+|**iOS**|Oui : utilisez les [liaisons Xamarin du SDK d’application Intune](app-sdk-xamarin.md).|Non|
+|**Android**| Oui : utilisez les [liaisons Xamarin du SDK d’application Intune](app-sdk-xamarin.md).|Non|
 
 ## <a name="feature-comparison"></a>Comparaison des fonctionnalités
 Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK et pour l’outil de création de package de restrictions d’application.
@@ -79,7 +79,7 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 > [!NOTE]
 > Vous pouvez utiliser l’outil de création de package de restrictions d’application avec Intune autonome ou Intune avec Configuration Manager.
 
-|                                                         Fonctionnalité                                                          | Kit SDK d’application | Outil de création de package de restrictions d’application |
+|                                                         Composant                                                          | Kit SDK d’application | Outil de création de package de restrictions d’application |
 |--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
 |                              Afficher le contenu web uniquement dans Managed Browser                              |    X    |         X         |
 |                                        Empêcher les sauvegardes Android, iTunes ou iCloud                                        |    X    |         X         |
