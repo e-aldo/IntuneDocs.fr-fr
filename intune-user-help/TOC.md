@@ -149,6 +149,6 @@
 #### [J’ai besoin d’activer le contrôle de compte d’utilisateur](you-need-to-enable-uac-windows.md)
 #### [J’ai besoin de mettre à jour Windows](you-need-to-update-os-build-version-windows.md)
 #### [J’ai besoin d’activer Windows Defender](turn-on-defender-windows.md)
-
+## [Verrouiller à distance un appareil à partir de l’application Portail d’entreprise pour Windows](remote-lock-your-device-cp-app.md) 
 ## [Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
 ### [Verrouiller son appareil à distance](remote-lock-your-device-cpwebsite.md)
