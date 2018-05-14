@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 10502f82d94246f7a70af6b88c0704a4daa0372b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Ajouter et affecter des applications Mobile Threat Defense (MTD) avec Intune
 
@@ -53,7 +53,7 @@ Pour les appareils iOS, vous avez besoin de [Microsoft Authenticator](https://do
 
 #### <a name="microsoft-authenticator-app-for-ios"></a>Application Microsoft Authenticator pour iOS
 
-- Consultez les instructions relatives à [l’ajout d’applications de l’App Store iOS à Microsoft Intune](store-apps-ios.md). Utilisez cette [URL d’App Store Microsoft Authenticator](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) à **l’étape 5** dans la section **Configurer les informations sur l’application**.
+- Consultez les instructions relatives à [l’ajout d’applications de l’App Store iOS à Microsoft Intune](store-apps-ios.md). Utilisez cette [URL du magasin de l’application ;icrosoft Authenticator](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) à **l’étape 12** dans la section **Configurer les informations sur l’application**.
 
 ### <a name="lookout"></a>Lookout
 
@@ -62,7 +62,7 @@ Pour les appareils iOS, vous avez besoin de [Microsoft Authenticator](https://do
 
 #### <a name="ios"></a>iOS
 
-- Consultez les instructions relatives à [l’ajout d’applications de l’App Store iOS à Microsoft Intune](store-apps-ios.md). Utilisez cette [URL d’App Store iOS Lookout for Work](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) à **l’étape 5** dans la section **Configurer les informations sur l’application**.
+- Consultez les instructions relatives à [l’ajout d’applications de l’App Store iOS à Microsoft Intune](store-apps-ios.md). Utilisez cette [URL du magasin de l’application iOS Lookout for Work](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) à **l’étape 12** dans la section **Configurer les informations sur l’application**.
 
 #### <a name="lookout-for-work-app-outside-the-apple-store"></a>Application Lookout for Work en dehors de l’Apple Store
 
@@ -91,15 +91,15 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 
 - Chargez le fichier .ipa resigné comme décrit dans la rubrique [Ajouter des applications métier iOS avec Intune](lob-apps-ios.md). Vous devez aussi définir la version de système d’exploitation minimale sur iOS version 8.0 ou ultérieure.
 
-### <a name="skycure"></a>Skycure
+### <a name="symantec-endpoint-protection-mobile-sep-mobile"></a>Symantec Endpoint Protection Mobile (SEP Mobile)
 
 #### <a name="android"></a>Android
 
-- Consultez les instructions relatives à [l’ajout d’applications de l’App Store Android à Microsoft Intune](store-apps-android.md). Utilisez cette [URL d’App Store Skycure](https://play.google.com/store/apps/details?id=com.skycure.skycure) à **l’étape 7**.
+- Consultez les instructions relatives à [l’ajout d’applications de l’App Store Android à Microsoft Intune](store-apps-android.md). À l’**étape 7**, utilisez cette [URL du magasin de l’application SEP Mobile](https://play.google.com/store/apps/details?id=com.skycure.skycure).  Pour **système d’exploitation Minimum**, sélectionnez **Android 4.0 (Ice Cream Sandwich)**.
 
 #### <a name="ios"></a>iOS
 
-- Consultez les instructions relatives à [l’ajout d’applications de l’App Store iOS à Microsoft Intune](store-apps-ios.md). Utilisez cette [URL d’App Store Skycure](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) à **l’étape 5** dans la section **Configurer les informations sur l’application**.
+- Consultez les instructions relatives à [l’ajout d’applications de l’App Store iOS à Microsoft Intune](store-apps-ios.md). À l’**étape 12**, utilisez cette [URL du magasin de l’application SEP Mobile](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) dans la section **Configurer des informations sur l’application**.
 
 ### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
@@ -109,7 +109,7 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 
 #### <a name="ios"></a>iOS
 
-- Contactez [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) pour obtenir l’application iOS. Consultez les instructions pour [ajouter des applications iOS à Microsoft Intune](store-apps-ios.md), puis utilisez l’URL de l’Apple Store à l**’étape 5** dans la section **Configurer les informations de l’application**.
+- Contactez [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) pour obtenir l’application iOS. Consultez les instructions d’[ajout des applications du magasin iOS à Microsoft Intune](store-apps-ios.md), puis utilisez l’URL de l’Apple Store à l**’étape 12** dans la section **Configurer les informations sur l’application**.
 
 ### <a name="zimperium"></a>Zimperium
 
@@ -119,7 +119,7 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 
 #### <a name="ios"></a>iOS
 
-- Consultez les instructions relatives à [l’ajout d’applications de l’App Store iOS à Microsoft Intune](store-apps-ios.md). Utilisez cette [URL d’App Store Zimperium](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) à **l’étape 5** dans la section **Configurer les informations sur l’application**.
+- Consultez les instructions relatives à [l’ajout d’applications de l’App Store iOS à Microsoft Intune](store-apps-ios.md). Utilisez cette [URL du magasin de l’application Store Zimperium](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) à **l’étape 12** dans la section **Configurer les informations sur l’application**.
 
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>Pour associer l’application MTD à une stratégie de configuration d’application iOS
 
@@ -127,31 +127,24 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 
 - Créez la stratégie de configuration d’application iOS comme décrit dans la rubrique [Utilisation de la stratégie de configuration d’application iOS](app-configuration-policies-use-ios.md).
 
-### <a name="for-skycure"></a>Pour Skycure
+### <a name="for-sep-mobile"></a>Pour SEP Mobile
 
--   Utilisez le même compte Azure AD configuré précédemment dans la [console de gestion Skycure](https://aad.skycure.com), qui doit être le même compte utilisé pour vous connecter au portail classique Intune.
+-   Utilisez le même compte Azure AD configuré précédemment dans la [console de gestion Symantec Endpoint Protection](https://aad.skycure.com), qui doit être le même compte utilisé pour vous connecter au portail classique Intune.
 
 -   Vous devez **télécharger** le fichier de stratégie de configuration d’applications iOS : 
-    -   Accédez à la [console de gestion Skycure](https://aad.skycure.com) et connectez-vous avec vos informations d’identification d’administrateur.
+    -   Accédez à la [console de gestion Symantec Endpoint Protection](https://aad.skycure.com) et connectez-vous avec vos informations d’identification d’administrateur.
 
-    -   Accédez à **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection**, choisissez **Microsoft Intune**, puis enregistrez votre sélection.
+    -   Accédez à **Paramètres**et, sous **intégrations**, choisissez **Intune**. Choisissez Sélection d’intégration EMM**. Choisissez **Microsoft**, puis enregistrez votre sélection.
 
-    -   Cliquez sur le lien **Integration setup files** et enregistrez le fichier \*.zip généré. Le fichier .zip contient le fichier **skycure\_configuration.plist**, qui sera utilisé pour créer la stratégie de configuration des applications iOS dans Intune.
+    -   Cliquez sur le lien **Fichiers d’installation de l’intégration** et enregistrez le fichier \*.zip généré. Le fichier .zip contient le fichier * **.plist** qui sera utilisé pour créer la stratégie de configuration des applications iOS dans Intune.
 
-    -   Consultez les instructions [d’utilisation de stratégies de configuration d’application Microsoft Intune pour iOS](app-configuration-policies-use-ios.md) pour ajouter la stratégie de configuration d’application iOS Skycure.
+    -   Consultez les instructions [d’utilisation de stratégies de configuration d’application Microsoft Intune pour iOS](app-configuration-policies-use-ios.md) pour ajouter la stratégie de configuration d’application SEP Mobile iOS.
 
-    - À l’**étape 8**, utilisez l’option **Entrer des données XML**, copiez le contenu à partir du fichier **skycure_configuration.plist** et collez son contenu dans le corps de la stratégie de configuration.
+    - À l’**étape 8**, utilisez l’option **Entrer des données XML**, copiez le contenu à partir du fichier ***.plist** et collez son contenu dans le corps de la stratégie de configuration.
 
-Vous pouvez également copier le contenu de **skycure_configuration.plist** à partir de cet emplacement :
+> [!NOTE]
+> Si vous ne parvenez pas à récupérer les fichiers, contactez [Support d’entreprise Symantec Endpoint Protection Mobile](https://support.symantec.com/en_US/contact-support.html).
 
-```
-<dict>
-    <key>MdmType</key>
-    <string>Intune</string>
-    <key>UserEmail</key>
-    <string>{{userprincipalname}}</string>
-</dict>
-```
 ### <a name="for-check-point-sandblast-mobile"></a>Pour Check Point SandBlast Mobile
 
 - Consultez les instructions [d’utilisation de stratégies de configuration d’application Microsoft Intune pour iOS](app-configuration-policies-use-ios.md) pour ajouter la stratégie de configuration d’application iOS Check Point SandBlast Mobile.

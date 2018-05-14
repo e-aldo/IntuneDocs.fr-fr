@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/07/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,30 +17,34 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa294e5df63106f949da94aec766c04839e0171f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 52431d900ee9abe71458b8b22d8a0946f22ce583
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Envoyer les erreurs aux bonnes personnes pour votre appareil macOS géré
 
-Si vous recevez des erreurs sur votre appareil macOS pendant que vous utilisez l’application Portail d’entreprise, vous pouvez envoyer des informations pour aider le support technique de votre entreprise à résoudre le problème.
+Des erreurs inexpliquées se produisent parfois dans l’application Portail d'entreprise. Lorsque cela se produit, vous pouvez envoyer les détails au support technique de votre entreprise. Ces détails fournissent le contexte nécessaire pour résoudre le problème pour vous.
 
 ## <a name="send-errors-to-your-company-support"></a>Envoyer les erreurs au support technique de votre entreprise
 
- Vous pouvez envoyer les informations d’erreur au support technique de votre entreprise de différentes manières :
+Pour envoyer des détails concernant une erreur dans le Portail d'entreprise :
 
--   Dans les messages d’alerte d’erreur, cliquez sur **Rapport**.
+-   Dans le message d’erreur que vous recevez, cliquez sur **Rapportapport**.
 
--   Dans le menu **Aide** de l’application Portail d’entreprise, cliquez sur **Enregistrer le rapport de Diagnostic**. Choisissez un emplacement où enregistrer le fichier. Vous pouvez charger ce fichier ou l’envoyer par e-mail au support technique de votre entreprise.
+-   Cliquez sur le menu **Aide** > **Enregistrer un rapport de diagnostic**. Choisissez un emplacement où enregistrer le fichier. Envoyez ensuite ce fichier par courrier électronique au support technique de votre entreprise, ou téléchargez-le.
 
-- Si votre application de messagerie est déjà configurée, vous pouvez également envoyer le rapport de diagnostic en accédant à **Aide** > **Enregistrer le rapport de Diagnostic**.
+-   Si votre application de messagerie est configurée, vous pouvez envoyer le rapport de diagnostic en accédant à **Aide** > **Enregistrer le rapport de Diagnostic**. Une fois que les journaux sont téléchargés, cliquez sur **Détails de messagerie**.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Envoyer les erreurs aux développeurs du portail d’entreprise pour les appareils macOS
 
-L’application Portail d’entreprise peut parfois se comporter de manière inattendue. Il s’agit de problèmes dont les développeurs d’applications veulent être informés, car cela peut nous aider à améliorer l’application et votre expérience, ainsi qu’à empêcher que ce comportement étrange se reproduise. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _rapport de diagnostic_.
+L’application Portail d’entreprise peut parfois se fermer inopinément. Les développeurs souhaitent être informés en cas de comportement inattendu de leurs applications. Ils se servent des détails des erreurs pour trouver leur cause première et empêcher qu’elles se reproduisent. Ces erreurs sont détaillées sur votre appareil dans un document spécial appelé _journal de diagnostic_. L’équipe du portail d’entreprise a besoin des journaux spécifiques au portail d’entreprise pour diagnostiquer le problème.
 
-Si vous avez besoin d’envoyer des rapports de diagnostic à l’équipe Microsoft qui développe l’application Portail d’entreprise, vous devez fournir certaines informations afin d’essayer de diagnostiquer la cause racine. Au lieu de les envoyer à l’équipe de support de votre entreprise, utilisez <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">ce modèle d’e-mail</a> pour les envoyer à Microsoft.
+Pour envoyer des journaux à Microsoft :
+
+1.  Ouvrez l'application Portail d'entreprise.
+2.  Cliquez sur le menu **Aide** > **Envoyer un rapport de diagnostic**.  Une fois que les journaux sont chargés, vous recevez un ID d’incident. Copiez et enregistrez cet ID.
+3.  Utilisez <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">ce modèle</a> pour écrire à Microsoft.
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -1,25 +1,25 @@
 ---
 title: Activer le connecteur Mobile Threat Defense dans Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Activez le connecteur entre votre partenaire Mobile Threat Defense (MTD) et Microsoft Intune.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ca0b8082e0fccc5ee4c97e281d546ba4a75d813
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 8fec1477cf5f5f7fd6db113c8b87b6eb4068101d
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Activer le connecteur Mobile Threat Defense dans Intune
 
@@ -32,7 +32,7 @@ Pendant l’installation de Mobile Threat Defense (MTD), vous avez configuré un
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous avec vos informations d’identification Intune. Une fois correctement connecté, le **tableau de bord Azure** apparaît.
 
-2. Dans le **tableau de bord Azure**, choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de zone de texte.
+2. Dans le **tableau de bord Azure**, choisissez **Tous les services** dans le menu de gauche, puis tapez **Intune** dans le filtre de la zone de texte.
 
 3. Choisissez **Intune**. Le **tableau de bord Intune** s’ouvre.
 
@@ -58,7 +58,7 @@ Vous pouvez décider des options de MTD à activer en fonction des besoins de vo
 <br></br>
 - **Bloquer les versions de système d’exploitation non prises en charge** : bloquez si l’appareil exécute un système d’exploitation inférieur à la valeur de version minimale prise en charge.
 
-- **Nombre de jours avant de considérer le partenaire non réactif** : le nombre de jours d’inactivité avant qu’Intune considère le partenaire non réactif car la connexion est perdue. Intune ignore l’état de conformité pour les partenaires MTD non réactifs.
+- **Nombre de jours avant de considérer que le partenaire n’est pas réactif** : le nombre de jours d’inactivité avant qu’Intune ne considère le partenaire non réactif en raison de la perte de connexion. Intune ignore l’état de conformité pour les partenaires MTD non réactifs.
 
 > [!IMPORTANT] 
 > Vous devez ajouter et affecter les applications MTD avant de créer les règles de conformité des appareils et de stratégie d’accès conditionnel. Cela garantit que l’application MTD est prête et mise à la disposition des utilisateurs finaux qui souhaitent l’installer pour pouvoir accéder à leur e-mail ou à d’autres ressources de l’entreprise.
