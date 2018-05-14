@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour ajouter des applications web à Microsoft Intune
+title: Ajouter des applications web à Microsoft Intune
 titleSuffix: ''
 description: Découvrez comment ajouter des applications web à Microsoft Intune.
 keywords: ''
@@ -15,47 +15,49 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45253e061039198aee4aa49b2bf879a1b9929e35
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 58d04de3c4f77a5599bc5a13f2fe1e382654bd73
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="how-to-add-web-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications web à Microsoft Intune
+# <a name="add-web-apps-to-microsoft-intune"></a>Ajouter des applications web à Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune prend en charge divers types d’applications, y compris les applications web. Une application web est une application client-serveur. Le serveur fournit l’application web, qui englobe l’interface utilisateur, le contenu et les fonctionnalités. De plus, les plateformes d’hébergement web modernes offrent généralement, entre autres avantages, la sécurité et l’équilibrage de charge. Une application web est gérée séparément sur le web. Vous utilisez Microsoft Intune pour pointer vers ce type d’application. Vous affectez également les groupes d’utilisateurs qui peuvent accéder à cette application. 
+Intune prend en charge divers types d’applications, notamment les applications web. Une application web est une application client-serveur. Le serveur fournit l’application web, qui englobe l’interface utilisateur, le contenu et les fonctionnalités. De plus, les plateformes d’hébergement web modernes offrent généralement, entre autres avantages, la sécurité et l’équilibrage de charge. Une application web est gérée séparément sur le web. Vous utilisez Microsoft Intune pour pointer vers ce type d’application. Vous affectez également les groupes d’utilisateurs qui peuvent accéder à cette application. 
 
 Avant de pouvoir gérer et attribuer une application pour vos utilisateurs, ajoutez cette application à Intune. Intune crée un raccourci vers l’application web sur l’écran d’accueil de l’appareil de l’utilisateur.
 
 > [!Note]
 > Les applications web ne sont pas prises en charge sur les appareils Android for Work et macOS.
 
-Procédez comme suit pour ajouter une application à Intune comme un raccourci vers une application sur le web :
+## <a name="add-a-web-app-to-intune"></a>Ajouter une application web à Intune
+Pour ajouter une application à Intune comme raccourci vers une application sur le web, effectuez les étapes suivantes :
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
-3. Dans le volet **Microsoft Intune**, sélectionnez **Applications mobiles**.
-4. Dans le volet **Applications mobiles**, sélectionnez **Applications**.
-5. Au-dessus de la liste des applications, sélectionnez **Ajouter**. Le volet **Ajouter une application** s’affiche.
-6. Dans le volet **Ajouter une application**, sélectionnez le type **Lien web** dans la liste déroulante **Type d’application**.
-7. Sélectionnez l’option **Configurer** pour afficher le volet **Informations sur l’application**.
+2. Sélectionnez **Tous les services** > **Intune**.  
+    Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, sélectionnez **Applications mobiles**.
+4. Dans le volet de la charge de travail **Applications mobiles**, sous **Gérer**, sélectionnez **Applications**.
+5. Dans le volet **Applications**, sélectionnez **Ajouter**.
+6. Dans le volet **Ajouter une application**, dans la liste déroulante **Type d’application**, sélectionnez le type **Lien web**.
+7. Sélectionnez **Configurer**.
 8. Dans le volet **Informations sur l’application**, ajoutez les informations suivantes :
-    - **Nom** : entrez le nom de l’application tel qu’il sera affiché dans le portail d’entreprise.
-    - **Description :** entrez la description de l’application. Ce libellé s'affiche dans le portail d'entreprise pour les utilisateurs finaux.
-    - **Éditeur :** entrez le nom de l’éditeur de cette application.
-    - **URL de l’application** : entrez l’URL du site web qui héberge l’application que vous souhaitez affecter.
-    - **Catégorie** : (facultatif) sélectionnez une ou plusieurs des catégories d’applications intégrées ou que vous avez créées. Cette sélection permet aux utilisateurs de trouver aisément l'application lorsqu'ils parcourront le portail d'entreprise.
-    - **Afficher comme application en une sur le portail d’entreprise** : met en valeur l’application sur la page principale du portail d’entreprise lorsque les utilisateurs cherchent des applications.
-    - **Exiger l’ouverture de ce lien dans Managed Browser** : quand vous affectez un lien vers un site web ou une application web aux utilisateurs, ils peuvent l’ouvrir dans Intune Managed Browser. Ce navigateur doit être installé sur leur appareil.
-    - **Logo** : chargez un logo associé à l’application. Il s’agit du logo affiché avec l’application quand les utilisateurs naviguent dans le portail d’entreprise.
-9. Lorsque vous avez terminé, dans le volet **Ajouter des informations**, sélectionnez **Ok**.
-10. Puis, dans le volet **Ajouter une application**, sélectionnez **Ajouter**.
+    - **Nom** : entrez le nom de l’application tel qu’il apparaîtra dans le portail d’entreprise.
+    - **Description :** entrez la description de l’application. Cette description est fournie aux utilisateurs dans le portail d’entreprise.
+    - **Éditeur** : entrez le nom de l’éditeur de cette application.
+    - **URL de l’application** : entrez l’URL du site web qui héberge l’application que vous souhaitez affecter.
+    - **Catégorie** : si vous le souhaitez, sélectionnez une ou plusieurs des catégories d’applications intégrées ou sélectionnez une catégorie que vous avez créée. Les catégories permettent aux utilisateurs de trouver facilement l’application quand ils parcourent le portail d’entreprise.
+    - **Proposer cette application dans le portail d’entreprise** : sélectionnez cette option pour afficher la suite d’applications dans la page principale du portail d’entreprise quand les utilisateurs cherchent des applications.
+    - **Exiger l’ouverture de ce lien dans Managed Browser** : sélectionnez cette option pour affecter aux utilisateurs un lien vers un site web ou une application web qu’ils peuvent ouvrir dans Intune Managed Browser. Ce navigateur doit être installé sur leur appareil.
+    - **Logo** : chargez une icône qui sera associée à l’application. Cette icône s’affiche avec l’application quand les utilisateurs parcourent le portail d’entreprise.
+9. Sélectionnez **OK**.
+10. Dans le volet **Ajouter une application**, sélectionnez **Ajouter**.
 
 > [!Note]
 > Les utilisateurs doivent ajouter le widget Intune à leur écran d’accueil pour afficher les applications web qui ont été affectées à des appareils Android.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- L’application que vous avez créée s’affiche dans la liste des applications, où vous pouvez l’affecter aux groupes de votre choix. Pour plus d’aide, consultez [Guide pratique pour attribuer des applications à des groupes](apps-deploy.md).
+L’application créée s’affiche dans la liste des applications, où vous pouvez l’affecter aux groupes de votre choix. Pour obtenir de l’aide, consultez [Affecter des applications à des groupes](apps-deploy.md). 

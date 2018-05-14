@@ -125,6 +125,7 @@
 #### [Inscrire votre appareils Windows 10 via « Accès scolaire ou professionnel »](enroll-your-w10-device-access-work-or-school.md)
 #### [Inscrire votre appareil Windows 8.1 ou Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
 #### [Inscrire votre appareil Windows Phone 8.1](enroll-your-wp81-windows.md)
+### [Installer des applications à partir de l’application Portail d’entreprise pour Windows](install-apps-cpapp-windows.md)
 ### [Réinitialiser votre appareil](reset-erase-your-device-cpwebsite.md)
 ### [Chiffrer votre appareil](encrypt-your-device-windows.md)
 ### [Définir ou modifier votre mot de passe](set-or-change-your-password-windows.md)

@@ -6,7 +6,7 @@ keywords: Entrepôt de données Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 185cf1061ff4d577fd14af59bbe5fbc38365c3d1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c73b745915f1dcb32269059907b1cec1078d4b39
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="reference-for-devices-entities"></a>Référence pour les entités d’appareils
 
@@ -48,7 +48,7 @@ L’entité **DeviceTypes** représente le type d’appareil référencé par d�
 
 | deviceTypeID  | Nom | Description |
 |---------|------------|--------|
-| 0 |Desktop (Expérience utilisateur) |Appareil Windows Desktop |
+| 0 |Bureau |Appareil Windows Desktop |
 | 1 |WindowsRT |Appareil Windows RT |
 | 2 |WinMO6 |Appareil Windows Mobile 6.0 |
 | 3 |Nokia |Appareil Nokia |
@@ -222,7 +222,7 @@ L’entité **ManagementAgentTypes** représente les agents utilisés pour gére
 | 8 |ConfigManagerClient | L’appareil est géré par l’agent System Center Configuration Manager |
 | 16 |Unknown | Type d’agent de gestion inconnu |
 
-## <a name="devices"></a>Périphériques
+## <a name="devices"></a>Appareils
 
 L’entité **Devices** répertorie tous les appareils inscrits à la gestion et leurs propriétés correspondantes.
 
@@ -266,6 +266,7 @@ L’entité **Devices** répertorie tous les appareils inscrits à la gestion et
 | LastPolicyUpdateUtc | Heure de la dernière mise à jour de la stratégie sur l’appareil. |
 | LastExchangeStatusUtc | Heure de la dernière synchronisation de l’appareil avec Exchange. |
 | IsDeleted | Affectez la valeur True si l’appareil n’est plus géré par Intune. Préserve le dernier état connu. |
+| AndroidSecurityPatchLevel |Date du correctif de sécurité le plus récent sur l’appareil. |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
@@ -339,7 +340,7 @@ L’entité **MdmDeviceInventoryHistories** contient des instantanés quotidiens
 | OSManufacturer |Fabricant du système d’exploitation. |
 | OSProductSuite |Suite de produits du système d’exploitation. |
 | OSProductType |Type de produit du système d’exploitation. |
-| Paramètres régionaux |Paramètres régionaux du système d’exploitation. |
+| Locale |Paramètres régionaux du système d’exploitation. |
 | PhysicalMemoryCapacity |Capacité de mémoire physique (en octets). |
 | PhysicalMemoryRemovable |Mémoire amovible physique (en octets). |
 | SystemEnclosureChassisTypesInnerText |Définit le type de châssis du système pour cet appareil. Les nombres indiquent les valeurs suivantes :  <br>0 ou Vide = Inconnu   <br>1 = Ordinateur de bureau   <br>2 = Ordinateur portable  <br>3 = Station de travail  <br>4 = Serveur d’entreprise  <br>100 = Téléphone  <br>101 = Tablette  <br>102/103 = Autre type inconnu d’appareil mobile |
@@ -383,7 +384,7 @@ L’entité **MdmDeviceInventoryHistories** contient des instantanés quotidiens
 | RemovableStorageTotal |Stockage amovible total (en octets) |
 | DeviceMemoryDeviceCapacity |Capacité mémoire de l’appareil |
 | DeviceMemoryAvailableDeviceCapacity |Capacité mémoire de l’appareil disponible |
-| DeviceOSVersion |Version du système d'exploitation |
+| DeviceOSVersion |Version de système d'exploitation |
 | DeviceOSPlatform |Plateforme du système d’exploitation |
 | DeviceOSLanguage |Langue du système d’exploitation |
 | PasswordMaxAttemptsBeforeWipe |Nombre maximum de tentatives de saisie du mot de passe avant la réinitialisation de l’appareil |

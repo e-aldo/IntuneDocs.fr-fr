@@ -15,11 +15,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b34963761e9700d6cb742cb90979be30d5ae6b3e
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: bb54772010ef71e7d4bd2252f3886e9a3dd37ef1
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Présentation du Kit SDK d’application Intune
 Le Kit de développement logiciel (SDK) d’application Intune, disponible pour iOS et Android, permet d'appliquer des stratégies de protection des applications Intune sur votre application. Il s’efforce de minimiser la quantité de modifications du code pour les développeurs d’applications. Vous pouvez constater qu’il est possible d’activer la plupart des fonctionnalités du SDK sans changer le comportement de votre application. Pour une meilleure expérience utilisateur et administrateur, vous pouvez utiliser les API pour personnaliser le comportement de votre application pour les fonctionnalités nécessitant sa participation.
@@ -64,7 +64,7 @@ Cette fonctionnalité multi-identité permet de résoudre le problème de protec
 ### <a name="app-protection-without-device-enrollment"></a>Protection des applications sans inscription de l’appareil
 
 >[!IMPORTANT]
->La protection d’applications Intune sans inscription d’appareil est disponible avec les outils de wrapping d’applications Intune, le kit SDK d’application Intune pour Android, le kit SDK d’application Intune pour iOS, les liaisons Xamarin du kit SDK d’application Intune et le plugin Cordova du kit SDK d’application Intune.
+>La protection d’applications Intune sans inscription d’appareil est disponible avec les outils de wrapping d’applications Intune, le SDK d’application Intune pour Android, le SDK d’application Intune pour iOS et les liaisons Xamarin du SDK d’application Intune.
 
 De nombreux utilisateurs dotés d’appareils personnels souhaitent accéder aux données d’entreprise sans inscrire leur appareil personnel auprès d'un fournisseur de gestion des appareils mobiles (MDM). Étant donné que l’inscription MDM nécessite un contrôle global de l’appareil, les utilisateurs hésitent souvent à donner ce contrôle de leur appareil personnel à leur entreprise.
 

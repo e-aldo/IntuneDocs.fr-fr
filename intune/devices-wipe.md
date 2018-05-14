@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
@@ -58,7 +58,9 @@ Si l’appareil est allumé et connecté, la propagation de l’action **Réinit
 
 ## <a name="remove-company-data"></a>Supprimer les données d’entreprise
 
-L’action **Supprimer les données d’entreprise** supprime les paramètres, les profils de messagerie et les données de l’application gérée (le cas échéant) qui ont été affectés à l’aide d’Intune. **Supprimer les données d’entreprise** conserve les données personnelles de l’utilisateur sur l’appareil. L’appareil n’est plus géré par Intune. 
+L’action **Supprimer les données d’entreprise** supprime les paramètres, les profils de messagerie et les données de l’application gérée (le cas échéant) qui ont été affectés à l’aide d’Intune. L’appareil n’est plus géré par Intune. Cela se produit la prochaine fois que l’appareil se connecte et reçoit l’action **Supprimer les données d’entreprise** à distance.
+
+**Supprimer les données d’entreprise** conserve les données personnelles de l’utilisateur sur l’appareil.  
 
 Les tableaux suivants décrivent la nature des données supprimées et l’effet de l’action **Supprimer les données d’entreprise** sur les données qui restent sur l’appareil après la suppression des données d’entreprise.
 
@@ -123,13 +125,19 @@ La suppression des données d’entreprise d’un appareil Android for Work supp
 
 ### <a name="remove-company-data"></a>Supprimer les données d’entreprise
 
-1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Sélectionnez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans le volet **Appareils**, sélectionnez **Tous les appareils**.
-4. Sélectionnez le nom de l’appareil dont vous souhaitez supprimer les données d’entreprise.
-5. Dans le volet qui affiche le nom de l’appareil, sélectionnez **Supprimer les données d’entreprise**. Pour confirmer, sélectionnez **Oui**.
+1. Connectez-vous à [Intune dans le portail Azure](https://aka.ms/intuneportal).
+2. Dans le volet **Appareils**, sélectionnez **Tous les appareils**.
+3. Sélectionnez le nom de l’appareil dont vous souhaitez supprimer les données d’entreprise.
+4. Dans le volet qui affiche le nom de l’appareil, sélectionnez **Supprimer les données d’entreprise**. Pour confirmer, sélectionnez **Oui**.
 
 Si l’appareil est allumé et connecté, la propagation de l’action **Supprimer les données d’entreprise** prend moins de 15 minutes, quel que soit le type de l’appareil.
+
+## <a name="delete-devices-from-the-intune-portal"></a>Supprimer des appareils à partir du portail Intune
+
+Pour supprimer des appareils à partir du portail Intune, vous pouvez accéder au volet de l’appareil spécifique. La prochaine fois que l’appareil se connecte, toutes les données d’entreprise qu’il contient seront supprimées.
+
+1. Connectez-vous à [Intune dans le portail Azure](https://aka.ms/intuneportal).
+2. Choisissez **Appareils** > **Tous les appareils** > choisissez les appareils à supprimer > **Supprimer**.
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Supprimer des appareils du portail Azure Active Directory
 

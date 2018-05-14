@@ -1,29 +1,29 @@
 ---
 title: Installer des applications Office 365 sur des appareils avec Intune
-titlesuffix: 
-description: "Découvrez comment utiliser Microsoft Intune pour faciliter l’installation d’applications Office 365 sur des appareils Windows 10."
-keywords: 
+titlesuffix: ''
+description: Découvrez comment utiliser Microsoft Intune pour faciliter l’installation d’applications Office 365 sur des appareils Windows 10.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: da02a71d3801d0e00362617dd5d0cc76ffdd4722
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Comment assigner des applications Office 365 à des appareils Windows 10 avec Microsoft Intune
+# <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Assigner des applications Office 365 à des appareils Windows 10 à l’aide de Microsoft Intune
 
-Ce type d’application vous permet d’assigner facilement des applications Office 365 à des appareils que vous gérez exécutant Windows 10. Vous pouvez également installer des applications pour le client de bureau Microsoft Project Online et Microsoft Visio Pro pour Office 365 si vous disposez des licences appropriées. Les applications souhaitées apparaissent sous la forme d’une entrée unique dans la liste des applications de la console Intune.
+Ce type d’application vous permet d’assigner facilement des applications Office 365 à des appareils que vous gérez exécutant Windows 10. Vous pouvez également installer des applications pour le client de bureau Microsoft Project Online et Microsoft Visio Pro pour Office 365 si vous disposez des licences appropriées. Les applications souhaitées sont affichées sous la forme d’une entrée unique dans la liste des applications de la console Intune.
 
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -33,58 +33,60 @@ Ce type d’application vous permet d’assigner facilement des applications Off
 
 - Les appareils sur lesquels vous déployez ces applications doivent exécuter Windows 10 Creators Update ou ultérieur.
 - Intune prend uniquement en charge l’ajout d’applications Office provenant de la suite Office 365.
-- Si des applications Office sont ouvertes au moment où Intune installe la suite d’applications, l’installation risque d’échouer et les utilisateurs finaux risquent de perdre les données des fichiers non enregistrés.
-- Cette méthode d’installation n’est pas prise en charge sur les appareils Windows 10, Windows Famille, Windows Collaboration, Windows Holographique et Windows Holographic for Business.
+- Si des applications Office sont ouvertes au moment où Intune installe la suite d’applications, l’installation risque d’échouer et les utilisateurs risquent de perdre les données des fichiers non enregistrés.
+- Cette méthode d’installation n’est pas prise en charge sur les appareils Windows 10 S, Windows Famille, Windows Collaboration, Windows Holographique ou Windows Holographic for Business.
 - Intune ne prend pas en charge l’installation d’applications de bureau Office 365 à partir du Microsoft Store (appelées applications Office Centennial) sur un appareil sur lequel vous avez déjà déployé des applications Office 365 avec Intune. Si vous installez cette configuration, cela peut entraîner une perte ou une altération des données.
-- Plusieurs affectations d’applications obligatoires ou disponibles ne s’additionnent pas. La dernière affectation d’applications remplace les affectations d’applications préexistantes installées. Par exemple, si le premier ensemble d’applications Office contient Word, mais que ce n’est pas le cas du dernier ensemble, Word est désinstallé. Cela ne s’applique pas aux applications Visio ou Project.
+- Plusieurs affectations d’applications obligatoires ou disponibles ne s’additionnent pas. La dernière affectation d’applications remplace les affectations d’applications préexistantes installées. Par exemple, si le premier ensemble d’applications Office contient Word, mais que ce n’est pas le cas du dernier ensemble, Word est désinstallé. Cette condition ne s’applique pas aux applications Visio ou Project.
 
 
 ## <a name="get-started"></a>Prise en main
 
-1.  Connectez-vous au [portail Azure](https://portal.azure.com).
-2.  Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Monitoring + Gestion**.
-3.  Dans le panneau **Intune**, choisissez **Applications mobiles**.
-4.  Dans la charge de travail **Applications mobiles**, choisissez **Applications** dans la section **Gérer**.
-5.  Au-dessus de la liste des applications, choisissez **Ajouter**.
-6.  Dans la liste **Type d’application** sur le panneau **Ajouter des applications**, sélectionnez **Windows 10** sous la **Suite Office 365**.
-    Vous pouvez à présent configurer la suite d’applications.
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
+2. Sélectionnez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le volet **Intune**, sélectionnez **Applications mobiles**.
+4. Dans le volet de la charge de travail **Applications mobiles**, sous **Gérer**, sélectionnez **Applications**.
+5. Sélectionnez **Ajouter**.
+6. Dans le volet **Ajouter des applications**, dans la liste **Type d’application**, sous **Office 365 Office**, sélectionnez **Windows 10**.
+
+Vous pouvez à présent configurer la suite d’applications.
 
 ## <a name="configure-the-app-suite"></a>Configurer la suite d’applications
 
-Dans cette étape, choisissez les applications Office à affecter aux appareils.
+Sélectionnez les applications Office à affecter aux appareils.
 
-1.  Dans le panneau **Ajouter une application**, choisissez **Configurer la suite d’applications**.
-2.  Dans le panneau **Configurer la suite d’applications**, choisissez les applications Office standard à affecter aux appareils. Vous pouvez également installer des applications pour Microsoft Project Online Desktop Client et Microsoft Visio Pro pour Office 365 si vous disposez des licences appropriées.
-3.  Une fois terminé, cliquez sur **OK**.
+1. Dans le volet **Ajouter une application**, sélectionnez **Configurer la suite d’applications**.
+2. Dans le volet **Configurer la suite d’applications**, sélectionnez les applications Office standard à affecter aux appareils.  
+    Vous pouvez également installer des applications pour Microsoft Project Online Desktop Client et Microsoft Visio Pro pour Office 365, si vous disposez des licences appropriées.
+3. Sélectionnez **OK**.
 
 >[!IMPORTANT]
 > Une fois la suite d’applications créée, vous ne pouvez plus modifier ses propriétés. Pour configurer des propriétés différentes, supprimez la suite d’applications et créez-en une autre.
 
 ## <a name="configure-app-information"></a>Configurer les informations de l’application
 
-Dans cette étape, vous devez fournir des informations sur la suite d’applications. Ces informations vous permettent d’identifier la suite d’applications dans Intune. Elles aident aussi les utilisateurs à la trouver dans l’application Portail d’entreprise.
+Dans cette étape, indiquez des informations sur la suite d’applications. Ces informations vous permettent d’identifier la suite d’applications dans Intune. Elles aident aussi les utilisateurs à trouver la suite d’applications dans le portail d’entreprise.
 
-1.  Dans le panneau **Ajouter une application**, choisissez **Informations sur la suite d’applications**.
-2.  Dans le panneau **Informations sur la suite d’applications**, indiquez les informations suivantes :
+1. Dans le volet **Ajouter une application**, sélectionnez **Informations sur la suite d’applications**.
+2. Dans le volet **Informations sur la suite d’applications**, procédez comme suit :
     - **Nom de la suite** : entrez le nom de la suite d’applications tel qu’il apparaît dans le portail d’entreprise. Vérifiez que chaque nom de suite que vous utilisez est unique. Si un même nom de suite d’applications est utilisé deux fois, une seule application est proposée aux utilisateurs du portail d’entreprise.
     - **Description de la suite** : entrez la description de la suite d’applications. Vous pouvez par exemple répertorier les applications que vous avez choisies d’inclure.
     - **Éditeur :** entrez le nom de l’éditeur de l’application.
-    - **Catégorie** : si vous le souhaitez, sélectionnez une ou plusieurs des catégories d’applications intégrées ou que vous avez créées. Ceci permet de faciliter la recherche de la suite d’applications pour les utilisateurs qui naviguent dans le portail d’entreprise.
-    - **Proposer cette application dans le portail d’entreprise** : met en avant la suite d’applications dans la page principale du portail d’entreprise quand les utilisateurs cherchent des applications.
-    - **URL d’informations** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations sur cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    - **URL de confidentialité** : si vous le souhaitez, saisissez l’URL d’un site Web qui contient des informations de confidentialité pour cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    - **Développeur** : si vous le souhaitez, saisissez le nom du développeur de l’application.
-    - **Propriétaire** : si vous le souhaitez, saisissez un nom pour le propriétaire de cette application, par exemple, **Département des ressources humaines**.
-    - **Notes** : saisissez les éventuelles notes que vous souhaitez associer à cette application.
+    - **Catégorie** : si vous le souhaitez, sélectionnez une ou plusieurs des catégories d’applications intégrées ou que vous avez créées. Ce paramètre permet de faciliter la recherche de la suite d’applications pour les utilisateurs qui naviguent dans le portail d’entreprise.
+    - **Proposer cette application dans le portail d’entreprise** : sélectionnez cette option pour afficher la suite d’applications dans la page principale du portail d’entreprise quand les utilisateurs cherchent des applications.
+    - **URL d’information** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations sur cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
+    - **URL de déclaration de confidentialité** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations de confidentialité relatives à cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
+    - **Développeur** : si vous le souhaitez, entrez le nom du développeur de l’application.
+    - **Propriétaire** : si vous le souhaitez, entrez le nom du propriétaire de cette application (par exemple *Service des ressources humaines*).
+    - **Remarques** : entrez les remarques à associer à cette application.
     - **Logo** : chargez une icône qui s’affiche avec l’application lorsque les utilisateurs parcourent le portail d’entreprise.
-3.  Une fois terminé, cliquez sur **OK**.
+3. Sélectionnez **OK**.
 
 ## <a name="configure-app-settings"></a>Configurer les paramètres de l’application
 
 Dans cette étape, configurez les options d’installation de la suite d’applications. Les paramètres s’appliquent à toutes les applications que vous avez ajoutées à la suite.
 
-1.  Dans le panneau **Ajouter une application**, choisissez **Paramètres de la suite d’applications**.
-2.  Dans le panneau **Paramètres de la suite d’applications**, indiquez les informations suivantes :
+1. Dans le volet **Ajouter une application**, sélectionnez **Paramètres de la suite d’applications**.
+2. Dans le volet **Paramètres de la suite d’applications**, procédez comme suit :
     - **Version d’Office** : choisissez si vous souhaitez affecter la version 32 bits ou 64 bits d’Office. Vous pouvez installer la version 32 bits sur des appareils 32 bits et 64 bits, mais vous ne pouvez installer la version 64 bits que sur des appareils 64 bits.
     - **Canal de mise à jour** : choisissez le mode de mise à jour d’Office sur les appareils. Pour plus d’informations sur les différents canaux de mise à jour, consultez [Vue d’ensemble des canaux de mise à jour pour Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Choisissez parmi :
         - **Tous les mois**
@@ -92,21 +94,21 @@ Dans cette étape, configurez les options d’installation de la suite d’appli
         - **Semestriel**
         - **Semestriel (ciblé)**
     - **Accepter automatiquement le contrat de licence utilisateur final de l’application** : sélectionnez cette option si les utilisateurs finaux ne sont pas tenus d’accepter le contrat de licence. Intune accepte alors automatiquement le contrat.
-    - **Utiliser l’activation d’ordinateurs partagés** : l’activation d’ordinateurs partagés est utilisée quand plusieurs utilisateurs partagent un ordinateur. Pour plus d’informations, consultez Vue d’ensemble de l’activation d’ordinateurs partagés pour Office 365.
-    - **Langues** : Office s’installe automatiquement dans toute langue prise en charge installée avec Windows sur l’appareil de l’utilisateur final. Sélectionnez cette option pour installer des langues supplémentaires avec la suite d’applications.
+    - **Utiliser l’activation d’ordinateurs partagés** : sélectionnez cette option quand plusieurs utilisateurs partagent un ordinateur. Pour plus d’informations, consultez Vue d’ensemble de l’activation d’ordinateurs partagés pour Office 365.
+    - **Langues** : Office est automatiquement installé dans toute langue prise en charge installée avec Windows sur l’appareil de l’utilisateur final. Sélectionnez cette option pour installer des langues supplémentaires avec la suite d’applications.
 
 >[!IMPORTANT]
 > Une fois la suite d’applications créée, vous ne pouvez plus modifier ses propriétés. Pour configurer des propriétés différentes, supprimez la suite d’applications et créez-en une autre.
 
 ## <a name="finish-up"></a>Terminer
 
-Quand vous avez terminé, dans le panneau **Ajouter une application**, choisissez **Ajouter**. L’application que vous avez créée s’affiche dans la liste des applications.
+Lorsque vous avez terminé, dans le volet **Ajouter une application**, sélectionnez **Ajouter**. L’application que vous avez créée s’affiche dans la liste des applications.
 
-## <a name="error-codes-when-installing-the-app-suite"></a>Codes d’erreur durant l’installation de la suite d’applications
+## <a name="errors-during-installation-of-the-app-suite"></a>Erreurs durant l’installation de la suite d’applications
 
-Le tableau suivant répertorie les codes d’erreur fréquemment rencontrés et leur signification.
+Les tableaux suivants répertorient les codes d’erreur fréquemment rencontrés et leur signification.
 
-### <a name="status-for-office-csp"></a>État pour Office CSP :
+### <a name="status-for-office-csp"></a>État pour Office CSP
 
 ||||
 |-|-|-|
@@ -116,9 +118,9 @@ Le tableau suivant répertorie les codes d’erreur fréquemment rencontrés et 
 |Code d’erreur de CertVerifyCertificateChainPolicy|-|Échec de la vérification de certification pour l’outil Déploiement d’Office téléchargé|    
 |997|WIP|En cours d'installation|
 |0|Après l’installation|Installation réussie|    
-|1603 (ERROR_INSTALL_FAILURE)|-|Échec de la vérification des prérequis, par exemple :<br>- SxS (tentative d’installation alors que la version MSI 2016 est installée)<br>- non-concordance des versions<br>- etc.|     
-|0x8000ffff (E_UNEXPECTED)|-|Tentative de désinstallation alors qu’aucune installation Office « Démarrer en un clic » n’est présente sur l’ordinateur.|    
-|17002|-|Échec de l’exécution du scénario (installation). Raisons possibles :<br>- Installation annulée par l’utilisateur<br>- Installation annulée par une autre installation<br>- Espace insuffisant durant l’installation<br>- ID de langue inconnu|
+|1603 (ERROR_INSTALL_FAILURE)|-|Échec de la vérification des prérequis, par exemple :<ul><li>SxS (tentative d’installation alors que la version MSI 2016 est installée)</li><li>Non-concordance des versions</li><li>Autres</li></ul>|  
+|0x8000ffff (E_UNEXPECTED)|-|Tentative de désinstallation alors qu’aucune installation Office « Démarrer en un clic » n’est présente sur l’ordinateur|     
+|17002|-|Échec de l’exécution du scénario (installation). Raisons possibles :<ul><li>Installation annulée par l’utilisateur</li><li>Installation annulée par une autre installation</li><li>Espace disque insuffisant durant l’installation</li><li>ID de langue inconnu</li></ul>|
 |17004|-|Références SKU inconnues|   
 
 
@@ -138,4 +140,4 @@ Le tableau suivant répertorie les codes d’erreur fréquemment rencontrés et 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Vous pouvez désormais assigner les applications à des groupes que vous choisissez, consultez [Comment assigner des applications à des groupes](/intune-azure/manage-apps/deploy-apps).
+- Pour assigner les applications aux groupes que vous choisissez, consultez [Assigner des applications à des groupes](/intune-azure/manage-apps/deploy-apps).

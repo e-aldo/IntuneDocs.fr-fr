@@ -1,7 +1,7 @@
 ---
-title: Guide pratique pour affecter des applications à des groupes dans Microsoft Intune
+title: Attribuer des applications à des groupes dans Microsoft Intune
 titlesuffix: ''
-description: Une fois que vous avez ajouté une application à Microsoft Intune, vous pouvez l’affecter à des groupes d’utilisateurs ou d’appareils.
+description: Apprenez à attribuer une application Intune à des groupes d’utilisateurs ou d’appareils.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,72 +15,75 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 99eb2c70994fcb2b6ed116530f4a82d8db7bcb9b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Guide pratique pour attribuer des applications à des groupes avec Microsoft Intune
+# <a name="assign-apps-to-groups-with-microsoft-intune"></a>Attribuer des applications à des groupes avec Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Une fois que vous avez ajouté une application à Microsoft Intune, vous pouvez l’assigner à des utilisateurs et des appareils.
+Une fois que vous avez ajouté une application à Microsoft Intune, vous pouvez l’attribuer à des utilisateurs et des appareils.
 
-Les applications peuvent être affectées aux appareils, qu’ils soient gérés par Intune ou non. Utilisez le tableau suivant pour vous aider à comprendre les différentes options pour attribuer des applications aux utilisateurs et aux appareils :
+Vous pouvez attribuer une application à un appareil, que celui-ci soit managé par Intune ou pas. 
+
+Le tableau suivant répertorie les différentes options pour attribuer des applications à des utilisateurs et des appareils :
 
 ||||
 |-|-|-|-|
-|&nbsp;|Appareils inscrits avec Intune|Appareils non inscrits avec Intune|
+|&nbsp;|**Appareils inscrits avec Intune**|**Appareils non inscrits avec Intune**|
 |Attribuer aux utilisateurs|Oui|Oui|
 |Attribuer aux appareils|Oui|Non|
-|Attribuer des applications encapsulées ou incorporer le SDK Intune (pour les stratégies de protection d’application)|Oui|Oui|
+|Attribuer des applications encapsulées ou des applications incorporant le SDK Intune (pour les stratégies de protection d’application)|Oui|Oui|
 |Attribuer des applications en tant qu’applications disponibles|Oui|Oui|
 |Attribuer des applications en tant qu’applications requises|Oui|Non|
 |Désinstallation d’applications|Oui|Non|
 |Recevoir des mises à jour de l’application d’Intune|Oui|Non|
 |Les utilisateurs finaux installent les applications disponibles à partir de l’application Portail d’entreprise|Oui|Non|
-|Les utilisateurs finaux installent les applications disponibles à partir du portail d’entreprise web|Oui|Oui|
+|Les utilisateurs finaux installent les applications disponibles à partir du Portail d’entreprise web|Oui|Oui|
 
 > [!NOTE]
-> Actuellement, vous pouvez affecter des applications iOS et Android (applications métier ou achetées dans un Store) pour les appareils qui ne sont pas inscrits avec Intune.<br></br><br></br>
-> Pour recevoir des mises à jour d’applications sur des appareils qui ne sont pas inscrits auprès d’Intune, les utilisateurs des appareils doivent accéder à leur portail d’entreprise et installer manuellement les mises à jour des applications.
+> Actuellement, vous pouvez attribuer des applications iOS et Android (applications métier ou achetées dans un Store) pour les appareils qui ne sont pas inscrits avec Intune.
+>
+> Pour recevoir des mises à jour d’applications sur des appareils qui ne sont pas inscrits auprès d’Intune, les utilisateurs des appareils doivent accéder à leur Portail d’entreprise et installer manuellement les mises à jour des applications.
 
-## <a name="how-to-assign-an-app"></a>Comment affecter une application
+## <a name="to-assign-an-app"></a>Pour attribuer une application
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
-2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Dans le panneau **Intune**, choisissez **Applications mobiles**.
-4. Dans la charge de travail **Applications mobiles**, choisissez **Applications** dans la section **Gérer**.
-5. Dans la liste du panneau d’applications, cliquez sur l’application que vous souhaitez affecter.
-6. Dans le panneau **Vue d’ensemble**, choisissez **Attributions** à partir de la section **Gérer**.
-7. Choisissez **Ajouter un groupe** pour afficher le panneau **Ajouter un groupe** lié à l’application.
-8. Pour chaque application spécifique, choisissez un **type d’attribution** pour l’application depuis :
+2. Sélectionnez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
+3. Dans le menu **Intune**, sélectionnez **Applications mobiles**.
+4. Dans la section **Gérer** du menu, sélectionnez **Applications**.
+5. Dans le volet **Applications**, sélectionnez l’application que vous souhaitez attribuer.
+6. Dans la section **Gérer** du menu, sélectionnez **Affectations**.
+7. Sélectionnez **Ajouter un groupe** pour ouvrir le volet **Ajouter un groupe** lié à l’application.
+8. Pour l’application spécifique, sélectionnez un **type d’affectation** :
    - **Disponible pour les appareils inscrits** : les utilisateurs installent l’application à partir de l’application ou du site web Portail d’entreprise.
-   - **Disponible avec ou sans inscription** : affectez cette application à des groupes d’utilisateurs dont les appareils ne sont pas inscrits avec Intune. Notez que le type **Application Android for Work** ne prend pas en charge cette option. 
+   - **Disponible avec ou sans inscription** : attribuez cette application à des groupes d’utilisateurs dont les appareils ne sont pas inscrits avec Intune. Le type **Application Android for Work** ne prend pas en charge cette option. 
    - **Requis** : l’application est installée sur les appareils dans les groupes sélectionnés.
    - **Désinstaller** : l’application est désinstallée des appareils dans les groupes sélectionnés.
 
      > [!NOTE]
      > **Pour les applications iOS uniquement** : si vous avez créé un profil VPN iOS qui contient des paramètres VPN par application, vous pouvez le sélectionner sous **VPN**. Quand l’application est exécutée, la connexion VPN est ouverte. Pour plus d’informations, consultez [Paramètres VPN pour les appareils iOS](vpn-settings-ios.md).
 
-9. Sélectionnez **Groupes inclus** pour choisir les groupes d’utilisateurs qui seront assignés par cette attribution d’applications.
-10. Cliquez sur **Sélectionnez** une fois que vous avez sélectionné un ou plusieurs groupes à inclure.
-11. Cliquez sur **OK** sur le panneau **Assigner** pour terminer la sélection du groupe inclus.
-12. Cliquez sur **Exclure des groupes** si vous choisissez d’exclure des groupes d’utilisateurs d’un impact par cette attribution d’applications.
-13. Si vous avez choisi d’exclure des groupes, cliquez sur **Sélectionnez** sur le panneau **Sélectionner des groupes**.
-14. Cliquez sur **OK** dans le panneau **Ajouter un groupe**.
-15. Cliquez sur **Enregistrer** sur le panneau **Attributions** des applications pour enregistrer vos attributions.
+9. Sélectionnez **Groupes inclus** pour choisir les groupes d’utilisateurs concernés par cette attribution d’application.
+10. Cliquez sur **Sélectionner** une fois que vous avez sélectionné un ou plusieurs groupes à inclure.
+11. Dans le volet **Attribuer**, sélectionnez **OK** pour terminer la sélection des groupes inclus.
+12. Cliquez sur **Exclure des groupes** si vous voulez exclure des groupes d’utilisateurs d’un impact par cette attribution d’applications.
+13. Si vous avez choisi d’exclure des groupes, dans **Sélectionner des groupes**, choisissez **Sélectionner**.
+14. Dans le volet **Ajouter un groupe**, sélectionnez **OK**.
+15. Dans le volet **Affectations** de l’application, sélectionnez **Enregistrer**.
 
-L’application est maintenant affectée aux groupes que vous avez sélectionnés. Pour en savoir plus sur l’inclusion et l’exclusion des attributions d’applications, consultez [Inclure et exclure des attributions d’applications](apps-inc-exl-assignments.md).
+L’application est maintenant attribuée aux groupes que vous avez sélectionnés. Pour en savoir plus sur l’inclusion et l’exclusion des attributions d’applications, consultez [Inclure et exclure des attributions d’applications](apps-inc-exl-assignments.md).
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Résolution des conflits entre les intentions d’application
 
-Parfois, la même application est affectée à plusieurs groupes, mais avec des intentions différentes. Dans ces cas-là, utilisez le tableau ci-dessous pour comprendre l’intention résultante.
+Parfois, la même application est attribuée à plusieurs groupes, mais avec des intentions différentes. Les informations contenues dans le tableau suivant peuvent vous aider à comprendre l’intention qui en résulte lorsque cela se produit :
 
 ||||
 |-|-|-|
-|Intention du groupe 1|Intention du groupe 2|Intention résultante|
+|**Intention du groupe 1**|**Intention du groupe 2**|**Intention résultante**|
 |Utilisateur obligatoire|Utilisateur disponible|Obligatoire et disponible|
 |Utilisateur obligatoire|Utilisateur non disponible|Obligatoire|
 |Utilisateur obligatoire|Désinstallation utilisateur|Obligatoire|
@@ -90,7 +93,7 @@ Parfois, la même application est affectée à plusieurs groupes, mais avec des 
 |Utilisateur obligatoire|Appareil obligatoire|Toutes deux existent, la passerelle traite Obligatoire
 |Utilisateur obligatoire|Désinstallation appareil|Toutes deux existent, la passerelle résout Obligatoire
 |Utilisateur disponible|Appareil obligatoire|Toutes deux existent, la passerelle résout Obligatoire (Obligatoire et Disponible)
-|Utilisateur disponible|Désinstallation appareil|Toutes deux existent, la passerelle résout Disponible.<br>L’application apparaît dans le portail d’entreprise.<br>Dans le cas où l’application est déjà installée (en tant qu’application obligatoire avec intention précédente), elle est désinstallée.<br>Mais si l’utilisateur clique sur Installer dans le portail d’entreprise, l’application est installée et l’intention de désinstallation n’est pas honorée.|
+|Utilisateur disponible|Désinstallation appareil|Toutes deux existent, la passerelle résout Disponible.<br><br>L’application apparaît dans le Portail d’entreprise.<br><br>Si l’application est déjà installée (en tant qu’application obligatoire avec intention précédente), elle est désinstallée.<br><br>Si l’utilisateur sélectionne **Installer à partir du Portail d’entreprise**, l’application est installée et l’intention de désinstallation n’est pas honorée.|
 |Utilisateur non disponible|Appareil obligatoire|Obligatoire|
 |Utilisateur non disponible|Désinstallation appareil|Désinstaller|
 |Désinstallation utilisateur|Appareil obligatoire|Toutes deux existent, la passerelle résout Obligatoire|
@@ -99,9 +102,9 @@ Parfois, la même application est affectée à plusieurs groupes, mais avec des 
 |Utilisateur obligatoire et disponible|Utilisateur disponible|Obligatoire et disponible|
 |Utilisateur obligatoire et disponible|Désinstallation utilisateur|Obligatoire et disponible|
 |Utilisateur obligatoire et disponible|Utilisateur non disponible|Obligatoire et disponible|
-|Utilisateur obligatoire et disponible|Appareil obligatoire|Toutes deux existent Obligatoire et disponible
+|Utilisateur obligatoire et disponible|Appareil obligatoire|Toutes deux existent, Obligatoire et Disponible
 |Utilisateur obligatoire et disponible|Appareil non disponible|Obligatoire et disponible|
-|Utilisateur obligatoire et disponible|Désinstallation appareil|Toutes deux existent, la passerelle résout Obligatoire. Obligatoire et disponible
+|Utilisateur obligatoire et disponible|Désinstallation appareil|Toutes deux existent, la passerelle résout Obligatoire (Obligatoire et Disponible)
 |Utilisateur non disponible|Appareil non disponible|Non disponible|
 |Utilisateur disponible|Appareil non disponible|Disponible|
 |Utilisateur obligatoire|Appareil non disponible|Obligatoire|
@@ -111,11 +114,11 @@ Parfois, la même application est affectée à plusieurs groupes, mais avec des 
 |Utilisateur disponible sans inscription|Utilisateur disponible|Disponible|
 |Utilisateur disponible sans inscription|Appareil obligatoire|Obligatoire et disponible sans inscription|
 |Utilisateur disponible sans inscription|Appareil non disponible|Disponible sans inscription|
-|Utilisateur disponible sans inscription|Désinstallation appareil|Désinstaller et disponible sans inscription.<br>Si l’utilisateur n’a pas installé l’application à partir du portail d’entreprise, la désinstallation est honorée.<br>Si l’utilisateur installe l’application à partir du portail d’entreprise, l’installation est prioritaire par rapport à la désinstallation.|
+|Utilisateur disponible sans inscription|Désinstallation appareil|Désinstaller et disponible sans inscription.<br><br>Si l’utilisateur n’a pas installé l’application à partir du Portail d’entreprise, la désinstallation est honorée.<br><br>Si l’utilisateur installe l’application à partir du Portail d’entreprise, l’installation est prioritaire par rapport à la désinstallation.|
 
->[!NOTE]
->En ce qui concerne les applications du magasin iOS managées uniquement, une fois ajoutées à Microsoft Intune et assignées comme **Obligatoire**, elles sont automatiquement créées avec les intentions **Obligatoire** et **Disponible**.
+> [!NOTE]
+> En ce qui concerne les applications du magasin iOS managées uniquement, une fois ajoutées à Microsoft Intune et assignées comme **Obligatoire**, elles sont automatiquement créées avec les intentions **Obligatoire** et **Disponible**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Consultez la page [Guide pratique pour surveiller des applications](apps-monitor.md) pour plus d’informations pour vous aider à contrôler les affectations de l’application.
+Pour en savoir plus sur le monitoring des affectations d’applications, consultez [Comment surveiller des applications](apps-monitor.md).

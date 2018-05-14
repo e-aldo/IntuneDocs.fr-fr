@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0fcd4b04541593f41abb35be6558be2375a0131
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Prise en main du Kit de développement logiciel (SDK) d’applications Microsoft Intune
 
@@ -67,10 +67,9 @@ Les SDK d’application Intune pour iOS et Android natifs sont hébergés sur un
 * [SDK d’application Intune pour iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK d’application Intune pour Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Si votre application est une application Xamarin ou Cordova, utilisez les variantes SDK suivantes :
+Si votre application est une application Xamarin, utilisez cette variante du SDK :
 
 * [Liaisons Xamarin du SDK d’application Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Plug-in Cordova du SDK d’application Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Nous vous recommandons de créer un compte GitHub que vous pouvez utiliser pour créer des copies et faire des extractions depuis nos référentiels. GitHub permet aux développeurs de communiquer avec notre équipe produit, de faire part de problèmes et de recevoir des réponses rapides, de consulter les notes de publication et de fournir des commentaires à Microsoft. Pour toute question sur Intune App SDK GitHub, contactez msintuneappsdk@microsoft.com.
 
@@ -81,8 +80,6 @@ Vous aurez besoin d'un des guides de développement suivants pour intégrer le S
 * **[Guide du Kit de développement logiciel (SDK) d’applications Intune pour les développeurs iOS](app-sdk-ios.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application iOS native avec le SDK d’application Intune.
 
 * **[Guide du Kit de développement logiciel (SDK) d’applications Intune pour les développeurs Android](app-sdk-android.md)** : ce document vous guide tout au long des étapes à suivre pour activer votre application Android native avec le SDK d’application Intune.
-
-* **[Guide du plug-in Cordova du SDK d’application Intune](app-sdk-cordova.md)**  : ce document vous aide à générer des applications iOS et Android avec Cordova pour les stratégies de protection des applications Intune.
 
 * **[Guide des liaisons Xamarin du SDK d’application Intune](app-sdk-xamarin.md)** : ce document vous aide à générer des applications iOS et Android avec Xamarin pour les stratégies de protection des applications Intune.
 

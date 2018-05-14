@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="email-logs-to-your-company-support"></a>Envoyer des journaux au support technique de votre entreprise par e-mail
 
 Vous pouvez parfois rencontrer une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android. Lorsque cela se produit, vous pouvez envoyer les détails de l’erreur au support technique de votre entreprise. Ces détails fournissent le contexte nécessaire pour résoudre le problème pour vous.  
 
-Ils sont conservés sur votre appareil dans un document spécifique appelé _journal de diagnostic_. Lorsque vous chargez les journaux sur l’application Portail d’entreprise, ceux-ci sont tout d’abord envoyés aux développeurs de Microsoft qui travaillent sur l’application. Ils utilisent les journaux pour améliorer les fonctionnalités de l’application et éviter de nouvelles erreurs. Un ID d’incident pour votre erreur spécifique vous est alors fourni pour le partager avec la personne du support de votre entreprise.  
+Ils sont conservés sur votre appareil dans un document spécifique appelé _journal de diagnostic_. Lorsque vous chargez les journaux sur l’application Portail d’entreprise, ceux-ci sont tout d’abord envoyés aux développeurs de Microsoft qui travaillent sur l’application. Ils utilisent les journaux pour améliorer les fonctionnalités de l’application et éviter de nouvelles erreurs. Un ID d’incident pour votre erreur spécifique vous est alors fourni pour le partager avec la personne du support de votre entreprise (à utiliser dans les cas de support Microsoft).
 
 > [!Note]
 > Pour que le support de votre entreprise trouve plus facilement la cause du problème, activez la _journalisation détaillée_. La journalisation détaillée enregistre tous les détails d’une erreur et les ajoute dans le rapport. Découvrez comment [activer la journalisation détaillée ici](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  

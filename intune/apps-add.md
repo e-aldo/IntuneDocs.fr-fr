@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Ajouter des applications à Microsoft Intune
 
@@ -155,6 +155,16 @@ Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sé
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Applications automatiquement ajoutées par Intune
 
 Intune contenait auparavant un nombre d’applications intégrées que vous pouviez affecter rapidement. Après examen des commentaires des clients d’Intune, nous avons décidé de supprimer cette liste. Les applications intégrées ne sont donc plus affichées. Toutefois, si vous avez déjà affecté des applications intégrées, celles-ci restent visibles dans la liste des applications. Vous pouvez continuer à affecter les applications en fonction de vos besoins.
+
+## <a name="installing-updating-or-removing-required-apps"></a>Installation, mise à jour ou suppression d’applications obligatoires
+
+Intune réinstalle, met à jour ou supprime automatiquement une application obligatoire en moins de 24 heures au lieu d’attendre le cycle de réévaluation de 7 jours.
+
+Intune réinstalle, met à jour ou supprime automatiquement une application obligatoire dans les cas suivants :
+- Si un utilisateur final désinstalle une application dont l’installation est exigée sur son appareil, Intune réinstalle automatiquement l’application une fois ce délai écoulé.
+- En cas d’échec de l’installation d’une application obligatoire ou si cette dernière, pour une raison quelconque, est absente de l’appareil, Intune évalue la conformité et réinstalle l’application une fois ce délai écoulé.  
+- Un administrateur met une application à la disposition d’un groupe d’utilisateurs, et un utilisateur final l’installe à partir du Portail d’entreprise sur l’appareil. L’administrateur fait ensuite passer l’application de la version v1 à la version v2. Une fois ce délai écoulé, Intune met à jour l’application si une version précédente de celle-ci est encore présente sur l’appareil.
+- Si l’administrateur déploie une intention de désinstallation et que la désinstallation de l’application, présente sur l’appareil, échoue, Intune évalue la conformité et désinstalle l’application une fois ce délai écoulé.   
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remove-your-windows-device-from-intune"></a>Supprimer votre appareil Windows d’Intune
 
@@ -61,7 +61,7 @@ Si votre appareil Windows est inscrit à Intune, mais que vous ne voulez plus l�
 
 Il existe deux types de données que stocke les le portail d’entreprise sur votre appareil Windows :
 
--   **Journaux de diagnostic** : les données standard de l’activité de l’application que Microsoft collecte, comme la durée pendant laquelle l’application reste ouverte ou si elle a planté, sont automatiquement effacées quand vous supprimez l’appareil du portail d’entreprise.
+-   **Journaux de diagnostic** : les données standard de l’activité de l’application que Microsoft collecte, comme la durée pendant laquelle l’application reste ouverte ou si elle a planté, sont automatiquement effacées quand l’application Portail d’entreprise est désinstallée.
 -   **Cache d’application** : stockage de certains fichiers de prise en charge nécessaires au fonctionnement de l’application, comme les icônes et les paramètres.
 
 Vous devez effectuer quelques étapes pour supprimer totalement ces informations.

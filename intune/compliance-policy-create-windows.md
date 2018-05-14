@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Windows dans Intune
 
@@ -121,11 +121,11 @@ Pour plus d’informations sur le fonctionnement du service HAS, consultez [Heal
 
 ### <a name="device-properties"></a>Propriétés des appareils
 
-- **Version minimale du système d’exploitation** : entrez la valeur minimale autorisée, au format numérique major.minor.build.CU. Le numéro build.CU doit correspondre à la version retournée par la commande `ver` ou `winver`.
+- **Version minimale du système d’exploitation** : entrez la version minimale autorisée au format numérique majeure.mineure.build.révision. La valeur build.révision doit correspondre à la version retournée par la commande `ver` ou `winver`.
 
   Si un appareil a une version antérieure à la version de système d’exploitation spécifiée, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
-- **Version maximale du système d’exploitation** : entrez la valeur maximale autorisée, au format numérique major.minor.build.CU. Le numéro build.CU doit correspondre à la version retournée par la commande `ver` ou `winver`.
+- **Version maximale du système d’exploitation** : entrez la valeur maximale autorisée au format numérique major.minor.build.révision. La valeur build.révision doit correspondre à la version retournée par la commande `ver` ou `winver`.
 
   Quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 

@@ -1,25 +1,25 @@
 ---
-title: "Créer une stratégie de conformité des appareils MTD avec Microsoft Intune"
-titlesuffix: 
-description: "Créez une stratégie de conformité des appareils Intune qui utilise les niveaux de menace MTD partenaires afin de déterminer si un appareil mobile peut accéder aux ressources de l’entreprise."
-keywords: 
+title: Créer une stratégie de conformité des appareils MTD avec Microsoft Intune
+titlesuffix: ''
+description: Créez une stratégie de conformité des appareils Intune qui utilise les niveaux de menace MTD partenaires afin de déterminer si un appareil mobile peut accéder aux ressources de l’entreprise.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Créer une stratégie de conformité des appareils Mobile Threat Defense (MTD) avec Intune
 
@@ -36,7 +36,7 @@ Conditions préalables pour la stratégie de conformité de l’appareil avec MT
 
 -   Configurer l’intégration de MTD avec Intune
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>Pour créer une stratégie de conformité de l’appareil MTD
+## <a name="to-create-an-mtd-device-compliance-policy"></a>Pour créer une stratégie de conformité de l’appareil MTD
 
 1.  Accédez au [portail Azure](https://portal.azure.com/) et connectez-vous avec vos informations d’identification Intune.
 
@@ -65,7 +65,7 @@ Conditions préalables pour la stratégie de conformité de l’appareil avec MT
 > [!IMPORTANT]
 > Si vous créez des stratégies d’accès conditionnel pour Office 365 ou d’autres services, l’évaluation de la conformité de l’appareil est effectuée et les appareils non conformes ne peuvent pas accéder aux ressources d’entreprise tant que la menace n’est pas résolue sur l’appareil.
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>Pour affecter une stratégie de conformité de l’appareil MTD
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>Pour affecter une stratégie de conformité de l’appareil MTD
 
 Pour affecter une stratégie de conformité de l’appareil à des utilisateurs, choisissez une stratégie que vous avez déjà configurée. Vous trouverez les stratégies existantes dans le volet **Conformité de l’appareil – stratégies**.
 

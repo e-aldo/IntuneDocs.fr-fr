@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
-ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
+ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problèmes connus dans Microsoft Intune
 
@@ -46,6 +46,14 @@ Lorsque vous migrez depuis Intune vers le portail Azure, un nouveau groupe nomm�
 Vous ne pouvez pas voir les informations d’état des stratégies qui ont été migrées à partir du portail classique Azure dans le portail Azure. Toutefois, vous pouvez continuer à afficher des rapports pour ces stratégies dans le portail classique. Pour afficher les informations d’état pour les stratégies de configuration migrées, recréez-les dans le portail Azure.
 
 ## <a name="apps"></a>Applications
+
+
+### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Affichage de plusieurs invites d’installation pour certaines applications VPP
+Il est possible que vous receviez plusieurs invites d’installation pour certaines applications VPP déjà installées sur les appareils d’utilisateurs finaux. Ce problème se produit si l’option **Mises à jour automatiques des applications** est **activée** pour le jeton VPP que vous avez chargé sur Intune dans le portail Azure.    
+
+Pour contourner ce problème, vous pouvez désactiver l’option **Mises à jour automatiques des applications** pour le jeton VPP. Pour cela, dans le portail Azure, ouvrez Microsoft Intune. Dans Intune, sélectionnez **Applications mobiles** > **Jetons VPP iOS**. Ensuite, sélectionnez le jeton VPP qui a déployé l’application concernée et sélectionnez **Modifier** > **Mises à jour automatiques des applications** > **Désactivé** > **Enregistrer**. Vous pouvez également arrêter le déploiement de l’application concernée comme application VPP, ce qui entraîne l’arrêt des invites.    
+
+Il s’agit d’un problème connu dans la version actuelle. Un correctif sera bientôt publié pour résoudre ce problème. Une fois ce correctif implémenté, vos utilisateurs ne recevront plus plusieurs invites leur demandant d’installer une application.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Applications iOS achetées en volume disponibles uniquement dans la langue du client Intune par défaut
 Les applications iOS achetées en volume sont affichées et peuvent être affectées uniquement pour le même code de pays/région que votre compte Intune. Intune synchronise uniquement les applications ayant les mêmes paramètres régionaux iTunes que le code de pays/région du compte de client Intune. Par exemple, si vous achetez une application disponible uniquement dans un Store américain alors que votre compte Intune est allemand, Intune n’affiche pas cette application.

@@ -5,7 +5,7 @@ description: Créer et déployer une stratégie de protection des applications P
 keywords: ''
 author: msmimart
 ms.author: mimart
-manager: doubeby
+manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
 ms.prod: ''
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7273a29eea9cd9b55e998302de2bc57d26d34e04
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f08dde25de5962eaaa11487a367b2895c6c047d4
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Créer et déployer une stratégie de protection d’application Protection des informations Windows (WIP) avec Intune
 
@@ -33,7 +33,7 @@ Vous devez comprendre certains concepts lors de l’ajout d’une stratégie WIP
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Liste des applications autorisées et exemptes
 
--   **Applications autorisées** : il s’agit des applications qui doivent se conformer à cette stratégie.
+-   **Applications protégées** : il s’agit des applications qui doivent adhérer à cette stratégie.
 
 -   **Applications exemptes** Ces applications sont exemptes de cette stratégie et peuvent accéder aux données d’entreprise sans restrictions.
 
@@ -63,7 +63,7 @@ Une fois Intune configuré dans votre organisation, vous pouvez créer une strat
 2. Choisissez **Tous les services** > **Intune**.
 3. Sélectionnez **Applications mobiles** dans le panneau **Microsoft Intune**.
 4. Sélectionnez **Stratégies de protection des applications**  sur le panneau **Applications mobiles**.
-5. Cliquez sur **Ajouter une stratégie** pour afficher le panneau **Ajouter une stratégie**.
+5. Sélectionnez **Ajouter une stratégie** pour afficher le panneau **Ajouter une stratégie**.
 6. Ajoutez les valeurs suivantes :
     - **Nom :** tapez un nom (obligatoire) pour votre nouvelle stratégie.
     - **Description :** (facultatif) entrez une description.
@@ -71,7 +71,7 @@ Une fois Intune configuré dans votre organisation, vous pouvez créer une strat
     - **État d’inscription :** choisissez **Sans inscription** en tant qu’état d’inscription de votre stratégie.
 7.  Choisissez **Créer**. La stratégie est créée et apparaît dans le tableau du panneau **Stratégies de protection des applications**.
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Pour ajouter les applications recommandées à votre liste d’applications autorisées
+## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Pour ajouter les applications recommandées à votre liste d’applications protégées
 
 1. Sélectionnez **Applications mobiles** dans le panneau **Microsoft Intune**.
 2. Sélectionnez **Stratégies de protection des applications**  sur le panneau **Applications mobiles**.
@@ -82,7 +82,7 @@ Une fois Intune configuré dans votre organisation, vous pouvez créer une strat
 7. Cliquez sur **OK**. Le panneau **Applications protégées** est mis à jour et affiche toutes les applications sélectionnées.
 8. Cliquez sur **Save**.
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Ajouter une application du Store à votre liste d’applications autorisées
+## <a name="add-a-store-app-to-your-protected-apps-list"></a>Ajouter une application de Store à votre liste d’applications protégées
 
 **Pour ajouter une application du Windows Store**
 1. Sélectionnez **Applications mobiles** dans le panneau **Microsoft Intune**.
@@ -95,7 +95,7 @@ Une fois Intune configuré dans votre organisation, vous pouvez créer une strat
 9. Cliquez sur **OK**. Le panneau **Applications protégées** est mis à jour et affiche toutes les applications sélectionnées.
 10. Cliquez sur **Save**.
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Ajouter une application de bureau à votre liste d’applications autorisées
+## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Ajouter une application de bureau à votre liste d’applications protégées
 
 **Pour ajouter une application de bureau**
 1. Sélectionnez **Applications mobiles** dans le panneau **Microsoft Intune**.
@@ -118,7 +118,7 @@ WIP Learning est un rapport qui vous permet de surveiller vos applications WIP e
 <!-- 1631908 -->
 En plus de l’affichage des informations sur les applications WIP, vous pouvez consulter un récapitulatif des appareils qui partagent des données de travail avec des sites web. Ces informations vous permettront d’identifier les sites web à ajouter aux stratégies WIP des utilisateurs et des groupes. Le résumé montre les URL du site Web accessibles par des applications compatibles WIP.
 
-Quand vous utilisez des applications WIP et des applications inconnues de WIP, nous vous recommandons de commencer par **Silencieux** ou **Autoriser les substitutions** quand vous vérifiez sur un petit groupe que vous avez les bonnes applications dans votre liste d’applications autorisées. Une fois cela fait, vous pouvez passer sur votre stratégie d’application finale, **Bloquer**.
+Quand vous utilisez des applications WIP et des applications inconnues de WIP, nous vous recommandons de commencer par **Silencieux** ou **Autoriser les substitutions** quand vous vérifiez sur un petit groupe que vous avez les bonnes applications dans votre liste d’applications protégées. Une fois cela fait, vous pouvez passer sur votre stratégie d’application finale, **Bloquer**.
 
 ### <a name="what-are-the-protection-modes"></a>Quels sont les modes de protection ?
 
