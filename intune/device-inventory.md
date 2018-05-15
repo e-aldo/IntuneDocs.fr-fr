@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a40b855d1dbaeece1dc91648866285c0a01fb338
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="see-device-details-in-intune"></a>Consultez les détails de l’appareil dans Intune
 
@@ -46,6 +46,16 @@ Cet article vous explique comment afficher tous les appareils, ainsi que leurs p
    - **Configuration de l’appareil** permet d’afficher toutes les stratégies de configuration affectées à l’appareil, et de déterminer si la stratégie a réussi ou non.
 
 Intune collecte une liste des applications uniquement sur les appareils appartenant à l’entreprise. Les applications ne sont pas vérifiées sur les appareils personnels. Pour les PC Windows 10, seules les applications modernes sont répertoriées pour les appareils appartenant à l’entreprise. Intune ne collecte pas d’informations concernant les applications Win32 sur l’appareil. En fonction de l’opérateur utilisé par les appareils, toutes les applications peuvent ne pas être collectées.
+
+|Plate-forme|Pour les appareils personnels|Pour les appareils d’entreprise|  
+|--------------|---------------------------------|--------------------------------|  
+|Windows 10 (sans client Configuration Manager)|Uniquement les applications gérées|Uniquement les applications gérées|
+|Windows 8.1 (sans client Configuration Manager)|Uniquement les applications gérées|Uniquement les applications gérées|  
+|Windows Phone 8|Uniquement les applications gérées|Uniquement les applications gérées|  
+|Windows RT|Uniquement les applications gérées|Uniquement les applications gérées|  
+|iOS|Uniquement les applications gérées|Toutes les applications installées sur l’appareil|
+|macOS|Toutes les applications installées sur l’appareil|Toutes les applications installées sur l’appareil|  
+|Android|Uniquement les applications gérées|Toutes les applications installées sur l’appareil|  
 
 ## <a name="next-steps"></a>Étapes suivantes
 Consultez ce que vous pouvez faire d’autre pour [gérer vos appareils](device-management.md) avec Intune.

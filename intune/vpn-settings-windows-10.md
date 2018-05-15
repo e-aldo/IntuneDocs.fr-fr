@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Paramètres VPN de Windows 10 dans Intune
 
@@ -99,17 +99,10 @@ Pour plus d’informations sur la création de code XML EAP personnalisé, consu
 
 ## <a name="apps-and-traffic-rules"></a>Règles de trafic et d’application
 
-<<<<<<< HEAD
 - **Associer des TEC ou des applications à ce VPN** : activez cette option si vous souhaitez que seules certaines applications utilisent la connexion VPN. Les options disponibles sont les suivantes :
 
   - **Associer un TEC à cette connexion** : entrez un **domaine TEC pour cette connexion**
   - **Associer des applications à cette connexion** : vous pouvez **Limiter la connexion VPN à ces applications**, puis ajoutez des **Applications associées**. Les applications que vous entrez automatiquement utilisent la connexion VPN. Le type d'application détermine l'identificateur de l'application. Pour une application universelle, entrez le nom de famille du package. Pour une application de bureau, indiquez le chemin de l’application.
-=======
-**Limiter la connexion VPN à ces applications** : activez cette option si vous souhaitez que seules certaines applications utilisent la connexion VPN.
-
-**Applications associées** : entrez une liste d’applications qui utilisent automatiquement la connexion VPN. Le type d'application détermine l'identificateur de l'application. Pour une application universelle, entrez le nom de famille du package. Pour une application de bureau, indiquez le chemin de l’application.
->>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
-
   >[!IMPORTANT]
   >Nous vous recommandons de sécuriser toutes les listes d’applications créées pour des VPN par application. Si un utilisateur non autorisé modifie cette liste et que vous l’importez dans la liste d’applications du VPN par application, vous autorisez alors potentiellement un accès VPN à des applications qui ne doivent pas y avoir accès. Pour sécuriser les listes d’applications, vous avez la possibilité d’utiliser une liste de contrôle d’accès (liste ACL).
 
