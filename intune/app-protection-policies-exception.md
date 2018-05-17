@@ -15,24 +15,22 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
+ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Comment créer des exceptions à la stratégie de transfert de données de la Gestion des applications mobiles Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-En tant qu’administrateur, vous pouvez créer des exceptions à la stratégie de transfert de données de la Gestion des applications mobiles Intune. Une exception vous permet de choisir spécifiquement quelles applications non gérées peuvent transférer des données vers et depuis des applications gérées. Les applications non gérées que vous avez incluses dans la liste d’exceptions doivent être approuvées par le département informatique. 
+En tant qu’administrateur, vous pouvez créer des exceptions à la stratégie de transfert de données de la Gestion des applications mobiles Intune. Une exception vous permet de choisir spécifiquement quelles applications non gérées peuvent transférer des données vers et depuis des applications gérées. Les applications non gérées que vous incluez dans la liste d’exceptions doivent être approuvées par le département informatique. 
 
 >[!WARNING] 
 > Vous êtes responsable des modifications apportées à la stratégie des exceptions de transfert de données. Les ajouts à cette stratégie autorisent les applications non gérées (les applications qui ne sont pas gérées par Intune) à accéder aux données protégées par les applications gérées. Cet accès à des données protégées peut entraîner des fuites de sécurité des données. Ajoutez seulement des exceptions de transfert de données pour les applications que votre organisation doit utiliser, mais qui ne prennent pas en charge les stratégies de protection d’application Intune. Ajoutez des exceptions seulement pour les applications dont vous ne considérez pas qu’elles représentent des risques de fuite de données.
 
-Cette fonctionnalité s’applique quand vous créez une stratégie de protection d’application Intune avec le transfert de données défini sur **Applications gérées uniquement**. À part les exceptions que vous créez, quand votre stratégie de transfert de données est définie sur **Applications gérées uniquement**, le transfert reste limité aux applications gérées par Intune. Vous pouvez créer les restrictions à l’aide de protocoles (iOS) ou de packages (Android).
-
-Vous pouvez configurer cette fonctionnalité pour activer les exceptions à la stratégie de protection d’application de la Gestion des applications mobiles Intune **Limiter le transfert de données**. Cette stratégie est nécessaire seulement si vous voulez autoriser le transfert de données vers une application qui ne prend pas en charge les stratégies de protection d’application Intune. Cette stratégie permet aux applications gérées par Intune avec les paramètres pour le transfert de données définis sur **Applications gérées uniquement**  d’appeler des applications non gérées basées sur un protocole d’URL (iOS) ou sur un nom de package (Android). Intune ajoute des applications natives essentielles à la liste par défaut des exceptions. 
+Dans une stratégie de protection d’application Intune, si vous affectez la valeur **Applications gérées par la stratégie** à **Autoriser l’application à transférer des données vers d’autres applications**, cela signifie que l’application peut transférer des données uniquement aux applications qui sont gérées par Intune. Si vous avez besoin d’autoriser le transfert de données vers des applications spécifiques qui ne prennent pas en charge les stratégies de protection d’application Intune, vous pouvez créer des exceptions à cette stratégie à l’aide de **Sélectionner les applications à exempter**. Les exemptions permettent aux applications gérées par Intune d’appeler des applications non gérées en fonction du protocole d’URL (iOS) ou du nom du package (Android). Par défaut, Intune ajoute des applications natives essentielles à cette liste d’exceptions. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Exceptions du transfert des données iOS
 Pour une stratégie ciblant iOS, vous pouvez configurer des exceptions de transfert de données par protocole d’URL. Pour ajouter une exception, consultez la documentation fournie par le développeur de l’application pour rechercher des informations sur les protocoles d’URL pris en charge. Pour plus d’informations sur les exceptions de transfert de données iOS, consultez [Paramètres de stratégie de protection d’application iOS - Exemptions du transfert de données](app-protection-policy-settings-ios.md#data-transfer-exemptions).

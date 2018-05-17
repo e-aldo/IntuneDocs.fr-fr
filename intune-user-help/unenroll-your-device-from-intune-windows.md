@@ -1,11 +1,11 @@
 ---
-title: Supprimer votre appareil Windows d’Intune | Microsoft Docs
+title: Supprimer votre appareil Windows d’Intune
 description: Explique comment supprimer un appareil Windows d’Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,61 +17,68 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
+ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/09/2018
 ---
-# <a name="remove-your-windows-device-from-intune"></a>Supprimer votre appareil Windows d’Intune
+# <a name="remove-your-windows-device-from-intune-management"></a>Supprimer votre appareil Windows de la gestion Intune
 
-Si votre appareil Windows est inscrit à Intune, mais que vous ne voulez plus l’utiliser pour accéder à l’e-mail, aux applications ou à d’autres ressources professionnelles ou scolaires, vous devez le supprimer de la gestion. Une fois que vous aurez supprimé votre appareil d'Intune, vous ne pourrez plus accéder à ces ressources. Pour plus d’informations sur ce qui se passe lors de la suppression de votre appareil de la gestion, consultez [Que se passe-t-il quand vous désinscrivez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Supprimez un appareil Windows inscrit auprès d’Intune quand vous ne devez ou ne voulez plus :  
+* Utiliser votre appareil dans un cadre professionnel ou scolaire. 
+* Accéder à vos e-mails, applications ou autres ressources professionnelles ou scolaires.
+
+Une fois que vous l’aurez supprimé, vous ne pourrez plus accéder aux ressources professionnelles ou scolaires à partir de l’appareil. Les appareils Windows pouvant être supprimés d’Intune sont les suivants :  
+* Appareils Windows 10 
+* Ordinateurs Windows 8.1
+* Appareils mobiles WIndows 8.1
+ 
+Pour plus d’informations sur ce qui se passe quand vous supprimez votre appareil de la gestion Intune, consultez [Que se passe-t-il quand vous supprimez votre appareil d’Intune ?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
 ## <a name="remove-your-windows-10-device"></a>Supprimer votre appareil Windows 10
+Pour supprimer un appareil Windows 10 d’Intune, effectuez les étapes suivantes.
 
-1.  Dans votre liste d'applications, appuyez sur l'application **Portail d'entreprise** .
+### <a name="via-the-company-portal-app"></a>Par le biais de l’application Portail d’entreprise
 
-2.  Connectez-vous en utilisant vos informations d'identification professionnelles ou scolaires.
+1. Ouvrez l'application Portail d'entreprise.
+2. Connectez-vous en utilisant vos informations d'identification professionnelles ou scolaires.
+3. Dans **Mes appareils**, sélectionnez l’appareil que vous voulez supprimer.
+4. En haut à droite de la page d’application, sélectionnez l’icône **Voir plus**.
+5. Sélectionnez **Supprimer**. 
+6. Pour confirmer la suppression de l’appareil, sélectionnez **Supprimer l’appareil**.
 
-3.  Dans **Mes appareils**, sélectionnez l'appareil que vous voulez désinscrire.
-
-4.  Appuyez sur **Supprimer** &gt; **Supprimer**.
+### <a name="via-device-settings-app"></a>Par le biais de l’application Paramètres de l’appareil
+1. Ouvrez l’application Paramètres. 
+2. Accédez à **Comptes** > **Accès scolaire ou professionnel**.
+3. Sélectionnez le compte connecté que vous souhaitez supprimer > **Déconnecter**.
+4. Pour confirmer la suppression de l’appareil, sélectionnez **Oui**.
 
 ## <a name="remove-your-windows-81-computer"></a>Supprimer votre ordinateur Windows 8.1
+Pour supprimer un ordinateur Windows 8.1 d’Intune, effectuez les étapes suivantes.
 
-1.  Accédez à **Paramètres du PC** &gt; **Réseau** &gt; **Espace de travail**.
-
+1.  Accédez à **Paramètres du PC** > **Réseau** > **Espace de travail**.
 2.  Sous **Jonction d’espace de travail**, sélectionnez **Quitter**.
-
 3.  Sous **Activer la gestion des appareils**, sélectionnez **Désactiver**.
-
 4.  Dans la fenêtre contextuelle qui s’ouvre, sélectionnez **Désactiver**.
 
-## <a name="remove-your-windows-phone-81-mobile-device"></a>Supprimer votre appareil mobile Windows Phone 8.1
+## <a name="remove-your-windows-81-mobile-device"></a>Supprimer votre appareil mobile Windows 8.1
+Pour supprimer un appareil mobile Windows 8.1 d’Intune, effectuez les étapes suivantes.
 
-1.  Accédez à **Paramètres** &gt; **Espace de travail**.
-
+1.  Accédez à **Paramètres** > **Espace de travail**.
 2.  Appuyez sur le compte Espace de travail que vous voulez désinscrire.
-
 3.  Appuyez sur **Supprimer** dans le bas de l’écran.
-
-4.  Dans la boîte de dialogue **Supprimer le compte**, appuyez sur **Supprimer**.
-
+4.  Dans la boîte de dialogue **Supprimer le compte**, appuyez sur **Supprimer**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Suppression de vos informations personnelles après la suppression du portail d’entreprise
-
 Il existe deux types de données que stocke les le portail d’entreprise sur votre appareil Windows :
 
--   **Journaux de diagnostic** : les données standard de l’activité de l’application que Microsoft collecte, comme la durée pendant laquelle l’application reste ouverte ou si elle a planté, sont automatiquement effacées quand l’application Portail d’entreprise est désinstallée.
--   **Cache d’application** : stockage de certains fichiers de prise en charge nécessaires au fonctionnement de l’application, comme les icônes et les paramètres.
+-   **Journaux de diagnostic** : les données standard d’activité de l’application que Microsoft collecte sont effacées automatiquement quand vous supprimez l’appareil du portail d’entreprise. Les données d’activité de l’application portent par exemple sur la durée pendant laquelle l’application a été ouverte, ou sur d’éventuels plantages.
+-   **Cache d’application** : fichiers de prise en charge nécessaires au fonctionnement de l’application, comme les icônes et les paramètres.
 
 Vous devez effectuer quelques étapes pour supprimer totalement ces informations.
 
-### <a name="uninstall-the-company-portal"></a>Désinstaller le portail d’entreprise  
+1. Désinstallez le portail d’entreprise. La [Désinstallation de l’application Portail d’entreprise](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) supprime certaines des données de l’application stockées sur votre appareil.  
 
-La [Désinstallation de l’application Portail d’entreprise](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) supprime certaines des données de l’application stockées sur votre appareil.  
-
-### <a name="reset-the-company-portal"></a>Réinitialiser le portail d’entreprise
-
-Vous pouvez réinitialiser le reste des données d’application du portail d’entreprise en réinitialisant l’application dans Paramètres. Ouvrez **Paramètres** > **Applications et fonctionnalités** > **Portail d’entreprise** > **Options avancées**  >  **Réinitialiser**.
+2. Réinitialisez le portail d’entreprise pour réinitialiser les données d’application stockées. Ouvrez l’application **Paramètres**, sélectionnez > **Applications** > **Portail d’entreprise** > **Options avancées** > **Réinitialiser**. 
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

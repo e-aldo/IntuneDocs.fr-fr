@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Android dans Intune
 
@@ -96,16 +96,16 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 
 - **Exiger un mot de passe pour déverrouiller les appareils mobiles** : permet d’**obliger** les utilisateurs à entrer un mot de passe pour pouvoir accéder à leur appareil.
 - **Longueur minimale du mot de passe** : entrez le nombre minimal de chiffres ou de caractères du mot de passe de l’utilisateur.
-- **Type de mot de passe obligatoire** : choisissez si un mot de passe doit comportement uniquement des caractères numériques, ou s’il doit comporter un mélange de chiffres et d’autres caractères. Choisissez parmi :
+- **Type de mot de passe obligatoire** : choisissez si un mot de passe doit comporter uniquement des caractères numériques, ou s’il doit comporter un mélange de chiffres et d’autres caractères. Choisissez parmi :
   - **Paramètre par défaut de l’appareil**
   - **Sécurité biométrique faible**
   - **Au moins numérique**
-  - **Chiffres complexes**
+  - **Chiffres complexes** : les chiffres répétés ou consécutifs (tels que « 1111 » ou « 1234 ») ne sont pas autorisés.
   - **Au moins alphabétique**
   - **Au moins alphanumérique**
   - **Au moins alphanumérique avec des symboles**
 - **Nombre maximal de minutes d’inactivité avant demande du mot de passe** : entrez la durée d’inactivité après laquelle l’utilisateur doit rentrer son mot de passe.
-- **Expiration du mot de passe (jours)**  : sélectionnez le nombre de jours avant l’expiration du mot de passe de l’utilisateur et l’obligation d’en créer un autre.
+- **Expiration du mot de passe (jours)**  : sélectionnez le nombre de jours avant que le mot de passe n’expire et que l’utilisateur ne doive en créer un autre.
 - **Nombre de mots de passe précédents avant d’autoriser leur réutilisation** : entrez le nombre de mots de passe récents qui ne peuvent pas être réutilisés. Utilisez ce paramètre pour empêcher l’utilisateur de créer des mots de passe déjà utilisés.
 
 ### <a name="encryption"></a>Chiffrement

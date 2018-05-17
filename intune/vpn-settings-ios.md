@@ -1,6 +1,6 @@
 ---
 title: Paramètres VPN pour les appareils iOS dans Microsoft Intune - Azure | Microsoft Docs
-description: Voir les paramètres de configuration de réseau privé virtuel (VPN) disponibles, notamment les détails de la connexion, les méthodes d’authentification et la tunnelisation fractionnée, dans les paramètres de base ; les paramètres VPN personnalisés avec l’identificateur et les paires clé/valeur ; les paramètres VPN par application qui incluent des URL Safari et des réseaux VPN à la demande avec SSID ou domaines de recherche DNS ; et les paramètres de proxy pour inclure un script de configuration, une adresse IP ou de nom de domaine complet et le port TCP dans Microsoft Intune sur les appareils exécutant iOS.
+description: Voir les paramètres de configuration de réseau privé virtuel (VPN) disponibles, notamment les détails de la connexion, les méthodes d’authentification et la tunnelisation fractionnée, dans les paramètres de base ; les paramètres VPN personnalisés avec l’identificateur et les paires clé-valeur ; les paramètres VPN par application qui incluent des URL Safari et des réseaux VPN à la demande avec SSID ou domaines de recherche DNS ; et les paramètres de proxy pour inclure un script de configuration, une adresse IP ou de nom de domaine complet et le port TCP dans Microsoft Intune sur les appareils exécutant iOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: eb87d75512d9f04abac9db256d0d968bb85116ef
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Configurer les paramètres VPN dans Microsoft Intune pour les appareils exécutant iOS
 
@@ -31,8 +31,12 @@ Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivan
 - **Nom de connexion** : entrez un nom pour cette connexion. Les utilisateurs finaux voient ce nom quand ils recherchent dans leur appareil une liste de connexions VPN disponibles.
 - **Adresse IP ou nom de domaine complet** : entrez l’adresse IP ou le nom de domaine complet (FQDN) du serveur VPN auquel les appareils se connectent. Par exemple, entrez **192.168.1.1** ou **vpn.contoso.com**.
 - **Méthode d’authentification** : choisissez la façon dont les appareils s’authentifient auprès du serveur VPN à partir de :
-  - **Certificats** : sous **Certificat d’authentification**, choisissez un profil de certificat SCEP ou PKCS existant pour authentifier la connexion. [Configurer les certificats](certificates-configure.md) fournit quelques conseils sur les profils de certificat.
+  - **Certificats** : sous **Certificat d’authentification**, sélectionnez un profil de certificat SCEP ou PKCS existant pour authentifier la connexion. [Configurer les certificats](certificates-configure.md) fournit quelques conseils sur les profils de certificat.
   - **Nom d’utilisateur et mot de passe** : les utilisateurs finaux doivent entrer un nom d’utilisateur et un mot de passe pour se connecter au serveur VPN.
+
+    > [!NOTE]
+    > Si le nom d’utilisateur et le mot de passe sont utilisés comme méthode d’authentification pour les VPN IPsec Cisco, ils doivent fournir le SharedSecret par le biais d’un profil Apple Configurator personnalisé.
+  
 - **Type de connexion** : sélectionnez le type de connexion VPN dans la liste de fournisseurs suivante :
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**

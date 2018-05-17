@@ -14,11 +14,11 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Android for Work dans Intune
 
@@ -91,7 +91,7 @@ Si votre entreprise utilise des profils professionnels Android, vous pouvez acti
 
 - **Exiger un mot de passe pour déverrouiller les appareils mobiles** : permet d’**obliger** les utilisateurs à entrer un mot de passe pour pouvoir accéder à leur appareil.
 - **Longueur minimale du mot de passe** : entrez le nombre minimal de chiffres ou de caractères du mot de passe de l’utilisateur.
-- **Type de mot de passe obligatoire** : choisissez si un mot de passe doit comportement uniquement des caractères numériques, ou s’il doit comporter un mélange de chiffres et d’autres caractères. Choisissez parmi :
+- **Type de mot de passe obligatoire** : choisissez si un mot de passe doit avoir uniquement des caractères numériques ou un mélange de chiffres et d’autres caractères. Choisissez parmi :
   - **Paramètre par défaut de l’appareil**
   - **Sécurité biométrique faible**
   - **Au moins numérique**

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Supprimer des appareils en réinitialisant les paramètres d’usine ou en supprimant les données d’entreprise
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Vous pouvez supprimer d’Intune les appareils dont vous n’avez plus besoin, qui ont été réaffectés ou qui ont disparu. Pour cela, vous pouvez utiliser l’action **Supprimer les données d’entreprise** ou **Réinitialisation aux paramètres d’usine**. Les utilisateurs peuvent également émettre une commande à distance à partir de l’application Portail d’entreprise Intune sur les appareils personnels inscrits dans Intune.
+Avec les actions **Supprimer les données d’entreprise** et **Réinitialisation aux paramètres d’usine**, vous pouvez supprimer d’Intune les appareils dont vous n’avez plus besoin, qui ont été réaffectés ou qui ont disparu. Les utilisateurs peuvent également émettre une commande à distance à partir de l’application Portail d’entreprise Intune sur les appareils personnels inscrits dans Intune.
 
 > [!NOTE]
 > Avant de supprimer un utilisateur d’Azure Active Directory (Azure AD), utilisez l’action **Réinitialisation aux paramètres d’usine** ou **Supprimer les données d’entreprise** pour tous les appareils qui sont associés à cet utilisateur. Si vous supprimez d’Azure Active Directory des utilisateurs avec des appareils gérés, Intune ne peut plus émettre de commande de réinitialisation aux paramètres d’usine ou de suppression des données d’entreprise pour ces appareils.
 
 ## <a name="factory-reset"></a>Réinitialisation des paramètres d’usine
 
-L’action **Réinitialisation aux paramètres d’usine** rétablit les paramètres d’usine d’un appareil. Une réinitialisation aux paramètres d’usine restaure tous les paramètres et données utilisateur et d’entreprise. L’appareil n’est plus géré par Intune. La réinitialisation aux paramètres d’usine est utile pour réinitialiser un appareil avant de le donner à un nouvel utilisateur ou en cas de perte ou de vol de l’appareil. Faites attention lors de la sélection de la **Réinitialisation aux paramètres d’usine**. Les données sur l’appareil ne peuvent pas être récupérées.
+L’action **Réinitialisation aux paramètres d’usine** rétablit les paramètres d’usine d’un appareil. Les données utilisateur sont conservées ou réinitialisées selon que vous avez coché ou non la case **Conserver le compte d’utilisateur et l’état d’inscription**.
+
+|Action Réinitialisation aux paramètres d’usine|**Conserver le compte d’utilisateur et l’état d’inscription**|Supprimé de la gestion Intune|Description|
+|:-------------:|:------------:|:------------:|------------|
+|**Réinitialisation aux paramètres d’usine**| Désactivée | Oui | Efface tous les comptes d’utilisateur, les données, les stratégies de gestion des appareils mobiles et les paramètres. Réinitialise le système d’exploitation à son état et ses paramètres par défaut.|
+|**Réinitialisation aux paramètres d’usine**| Activée | Non | Réinitialise toutes les stratégies de gestion des appareils mobiles. Conserve les données et les comptes d’utilisateur. Réinitialise les paramètres utilisateur par défaut. Réinitialise le système d’exploitation à son état et ses paramètres par défaut.|
+
+L’option **Conserver le compte d’utilisateur et l’état d’inscription** est disponible uniquement pour Windows 10 version 1709 ou ultérieure.
+
+Les stratégies MDM seront réappliquées lors de la prochaine connexion de l’appareil à Intune.
+
+La réinitialisation aux paramètres d’usine est utile pour réinitialiser un appareil avant de le donner à un nouvel utilisateur ou en cas de perte ou de vol de l’appareil. Faites attention lors de la sélection de la **Réinitialisation aux paramètres d’usine**. Les données sur l’appareil ne peuvent pas être récupérées.
 
 ### <a name="factory-reset-a-device"></a>Réinitialiser un appareil aux paramètres d’usine
 

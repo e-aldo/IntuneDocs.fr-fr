@@ -5,129 +5,138 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/19/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ms.assetid: ''
 searchScope:
 - User help
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Synchroniser votre appareil Windows manuellement
 
-Parfois, une tentative d’installation d’une application sur votre appareil Windows peut durer plus longtemps que prévu. Dans ce cas, vous pouvez tenter de synchroniser manuellement votre appareil Windows. La synchronisation peut accélérer l’installation.
+Quand la vitesse d’installation des applications est loin d’être idéale, lancez une synchronisation manuelle de l’appareil. Les synchronisations manuelles forcent votre appareil à se connecter à Intune pour obtenir les dernières mises à jour et communications. La vitesse d’installation peut augmenter une fois la synchronisation de l’appareil terminée.
 
-> [!Note]
-> L’installation d’applications peut prendre du temps si vous êtes sur un réseau avec des vitesses plus lentes ou des quantités plus élevées d’appareils téléchargeant du contenu en même temps.
+Intune prend en charge la synchronisation manuelle à partir de l’application Portail d’entreprise et de l’application Paramètres de l’appareil. 
 
-Les versions suivantes de Windows peuvent être synchronisées manuellement. Malheureusement, si votre appareil utilise une autre version de Windows, vous ne pouvez pas lancer une synchronisation manuelle.
+La fonctionnalité de l’application Portail d’entreprise est prise en charge sur les appareils Windows 10 exécutant Creators Update (1703) ou version ultérieure. 
+* [Synchroniser à partir de l’application Portail d’entreprise](#Sync-from-Company-Portal-app-for-Windows)  
 
-* [Synchronisation de Windows 10 Desktop](#windows-10-desktop)
-* [Synchronisation de Windows 10 Mobile](#windows-10-mobile)
-* [Synchronisation de Windows Phone 8.1](#windows-phone-81)
+Tous les appareils Windows peuvent être synchronisés à partir de l’application Paramètres de l’appareil, notamment :
 
-## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Comme il existe plusieurs versions de Windows 10, il y a deux procédures. Pour connaître la procédure à exécuter, examinez les captures d’écran, puis suivez les étapes qui ressemblent à ce que vous voyez sur votre appareil.
+* [Windows 10 Desktop](#windows-10-desktop)  
+* [Microsoft HoloLens](#microsoft-hololens)   
+* [Windows 10 Mobile](#windows-10-mobile)  
+* [Windows Phone 8.1](#windows-phone-81)    
 
-1. Choisissez le bouton **Démarrer**, puis choisissez **Paramètres**.
+## <a name="sync-from-company-portal-app-for-windows"></a>Synchroniser à partir de l’application Portail d’entreprise pour Windows
+Effectuez les étapes suivantes pour synchroniser manuellement n’importe quel appareil Windows 10 exécutant Creators Update (1703) ou version ultérieure.
 
-    ![Bouton Démarrer](./media/win10pc-sync-1-start-button.png)
+1.  Ouvrez l'application Portail d'entreprise sur votre appareil.
 
-2. Dans la page **Paramètres**, choisissez **Comptes**.
+2.  Sélectionnez **Paramètres** > **Synchroniser**.
 
-    ![Choix de Comptes dans la page Paramètres](./media/win10pc-sync-2-settings-accounts.png)
+    ![Capture d’écran de la page d’accueil de l’application Portail d’entreprise avec Paramètres mis en surbrillance](./media/RS1_homePage_settings_04.png)  
+    
+    ![Capture d’écran de la page de paramètres de l’application Portail d’entreprise avec Synchroniser mis en surbrillance](./media/RS1_settingspage_sync05.png)    
 
-3. Examinez les deux écrans suivants et déterminez celui qui ressemble à celui qui s’affiche sur votre appareil. Suivez les étapes correspondant à l’écran qui s’affiche sur votre appareil.
+## <a name="sync-from-settings-app"></a>Synchroniser à partir de l’application Paramètres 
+Effectuez ces étapes pour synchroniser manuellement vos appareils Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ou Windows Phone 8.1 à partir de l’application Paramètres.
 
-    Si cet écran s’affiche, qui indique « Accès Professionnel ou Scolaire », suivez les instructions indiquées dans la section [Étapes à suivre si vous voyez Accès scolaire ou professionnel](#steps-to-follow-if-you-see-access-work-or-school).
+### <a name="windows-10-desktop"></a>Windows 10 Desktop
+1. Sur votre appareil, sélectionnez **Démarrer** > **Paramètres**.
 
-    ![Étapes de synchronisation à suivre si vous voyez Accès Professionnel ou Scolaire](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. Sélectionnez **Comptes**.
 
-    Si vous voyez cet écran, qui indique « Accès professionnel », consultez les [étapes à suivre si vous voyez Accès professionnel](#steps-to-follow-if-you-see-work-access).
+    ![Choix de Comptes dans la page Paramètres](./media/win10pc-sync-2-settings-accounts.png)  
+
+3. Il existe plusieurs versions de Windows 10 pour les ordinateurs de bureau. Comparez votre écran aux captures d’écran ci-dessous pour déterminer l’ensemble des étapes à suivre. 
+
+    * Si votre écran indique **Accès professionnel ou scolaire**, passez aux étapes décrites dans [Accès professionnel ou scolaire](#access-work-or-school).
+
+    ![Option Accès professionnel ou scolaire dans l’application Paramètres](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+
+    * Si votre écran indique **Accès professionnel**, passez aux étapes décrites dans [Accès professionnel](#work-access).  
 
     ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png)
 
-### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Étapes à suivre si vous voyez Accès scolaire ou professionnel
+#### <a name="access-work-or-school-steps"></a>Étapes pour l’accès professionnel ou scolaire
 
-1. Dans la page **Comptes**, choisissez **Accès Professionnel ou Scolaire**.
+1. Cliquez sur **Accès professionnel ou scolaire**.
 
-    ![Choisir Accès Professionnel ou Scolaire](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![Capture d’écran montrant l’option Accès professionnel ou scolaire](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-2. Choisissez votre compte professionnel ou scolaire. Selon la configuration effectuée par le support technique de votre entreprise, vous pouvez voir deux comptes similaires à l’exemple ci-dessous. Un compte est accompagné d’un porte-documents, l’autre du logo Microsoft.
-
-   - Si vous voyez le compte avec le porte-documents, sélectionnez-le, puis recherchez un bouton **Info** sous celui-ci.
-   - Si vous voyez uniquement le compte avec le logo Microsoft, sélectionnez le compte, puis recherchez un bouton **Info** sous celui-ci.
+2. Sélectionnez le compte en regard duquel figure une icône de porte-documents. Si vous ne voyez pas ce compte, votre entreprise a peut-être configuré vos paramètres d’une autre manière. Dans ce cas, cliquez sur le compte en regard duquel figure un logo Microsoft.
 
      ![Choisissez votre nom de compte en regard du porte-documents ou du logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
 
-3. Choisissez le bouton **Info**. Une boîte de dialogue s’ouvre, similaire à l’exemple ci-dessous.
+3. Cliquez sur **Informations**. 
 
-    ![Choisissez votre nom de compte en regard du porte-documents ou du logo Microsoft](./media/win10pc-rs1-sync-button.png)
+4. Cliquez sur **Synchroniser**. 
 
-4. Choisissez le bouton **Synchroniser**. Votre appareil est synchronisé avec Intune.
+#### <a name="work-access-steps"></a>Étapes pour l’accès professionnel
 
-### <a name="steps-to-follow-if-you-see-work-access"></a>Étapes à suivre si vous voyez Accès professionnel
-
-1. Dans la page **Comptes**, choisissez **Accès professionnel**.
+1.  Cliquez sur **Accès professionnel**.
 
     ![Choix d’accès professionnel comme type de compte](./media/win10pc-sync-3-work-access.png)
 
-2. Dans la section **Inscription à la gestion des appareils**, choisissez le nom de votre entreprise.
+2. Sous **Inscription à la gestion des appareils**, sélectionnez le nom de votre société.
 
-    ![Choix du nom de l’entreprise pour la gestion des appareils](./media/win10pc-sync-4-tap-com-name.png)
+    ![Choix du nom de la société pour la gestion des appareils](./media/win10pc-sync-4-tap-com-name.png)
 
-3. Choisissez le bouton **Synchroniser**.
+3. Cliquez sur **Synchroniser**. Le bouton reste désactivé tant que la synchronisation n’est pas terminée.
 
-    ![Choix du bouton Synchroniser](./media/win10pc-sync-5-tap-sync.png)
+    ![Choix du bouton Synchroniser](./media/win10pc-sync-5-tap-sync.png)  
 
-   Le bouton est grisé jusqu’à ce que la synchronisation se termine.
 
 ### <a name="windows-10-mobile"></a>Windows 10 Mobile
-Pour synchroniser manuellement votre appareil mobile Windows 10 pour accélérer l’installation d’une application :
 
-   1. Accédez à **Toutes les applications** > **Paramètres** > **Comptes**.
+   1. Sur votre appareil, accédez à **Toutes les applications** > **Paramètres** > **Comptes**.
 
        ![Choix de Comptes dans l’écran Paramètres](./media/win10m-sync-1-settings-accounts.png)
 
-   2. Choisissez **Accès professionnel**.
+   2. Sélectionnez **Accès professionnel**.
 
        ![Choix d’accès professionnel comme type de compte](./media/win10m-sync-2-work-access.png)
 
-   3. Sous **Inscription à la gestion des appareils**, choisissez le nom de votre entreprise.
+   3. Sous **Inscription à la gestion des appareils**, sélectionnez le nom de votre société.
 
-       ![Choix du nom de l’entreprise pour la gestion des appareils](./media/win10m-sync-3-tap-comp-name.png)
+       ![Choix du nom de la société pour la gestion des appareils](./media/win10m-sync-3-tap-comp-name.png)
 
-   4. Choisissez l’icône **Synchroniser**.
+   4. Sélectionnez l’icône **Synchroniser**. Le bouton reste désactivé tant que la synchronisation n’est pas terminée.
 
-       ![Choix de l’icône Synchroniser](./media/win10m-sync-4-tap-sync.png)
+       ![Choix de l’icône Synchroniser](./media/win10m-sync-4-tap-sync.png)  
+### <a name="microsoft-hololens"></a>Microsoft HoloLens  
+Ces instructions s’appliquent aux appareils HoloLens exécutant la Mise à jour anniversaire Windows 10 (également appelée RS1). 
+1.  Ouvrez l’application Paramètres sur votre appareil.  
 
-       Le message « Nous synchronisons votre compte » apparaît en haut de l’écran. Le bouton **Synchroniser** est grisé tant que la synchronisation n’est pas terminée sur votre appareil.
+2.  Sélectionnez **Comptes** > **Accès professionnel**.  
+    ![Capture d’écran de l’application Paramètres HoloLens avec lien Comptes mis en surbrillance](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-## <a name="windows-phone-81"></a>Windows Phone 8.1
-Pour synchroniser manuellement votre appareil Windows Phone 8.1 pour accélérer l’installation d’une application :
+3.  Sélectionnez votre compte connecté > **Synchroniser**. ![Capture d’écran de l’application Paramètres HoloLens avec bouton Synchroniser mis en surbrillance](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+
+### <a name="windows-phone-81"></a>Windows Phone 8.1
 
 1. Accédez à **Toutes les applications** > **Paramètres** > **espace de travail**.
 
     ![Liste des paramètres](./media/wp81-1-sync-settings-workplace.png)
 
-2. Choisissez le nom de votre société.
+2. Sélectionnez le nom de votre société.
 
     ![Choix du nom de la société pour le compte de l’espace de travail](./media/wp81-2-sync-tap-compname.png)
 
-3. Choisissez l’icône **Synchroniser**.
+3. Sélectionnez l’icône **Synchroniser**.
 
     ![Choix de l’icône Synchroniser](./media/wp81-3-sync-tap-sync-button.png)
-
-   Le message « Nous synchronisons votre compte » apparaît en haut de l’écran jusqu’à la fin de la synchronisation de votre appareil.
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

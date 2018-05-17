@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Envoyer des journaux au support technique de votre entreprise à partir de l’application Portail d’entreprise pour Windows 10
 
 Si vous recevez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Windows 10, vous pouvez aider le support technique de votre entreprise à résoudre le problème en lui envoyant des informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
+
+> [!Note]       
+> Le portail d’entreprise pour Windows 10 envoie les journaux d’application directement à Microsoft quand l’utilisateur lance le flux de travail pour obtenir de l’aide sur un problème. Cela facilite le dépannage et la résolution des problèmes portés à l’attention de Microsoft.
 
 1. Ouvrez l’application **Portail d’entreprise**.
 2. Sélectionnez la roue dentée **Paramètres**, puis **Envoyer des journaux**.
