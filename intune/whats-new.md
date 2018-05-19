@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: e677e15d1e4ee688a826683ecd1d8d68620d2796
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Nouveautés de Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,18 @@ Découvrez les nouveautés hebdomadaires dans Microsoft Intune. Vous pouvez ég
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-may-7-2018"></a>Semaine du 7 mai 2018
+
+### <a name="app-management"></a>Gestion d'applications
+
+#### <a name="samsung-knox-mobile-enrollment-support---1112863--"></a>Prise en charge de Samsung Knox Mobile Enrollment <!--1112863-->
+
+Quand vous utilisez Intune avec Samsung Knox Mobile Enrollment (KME), vous pouvez inscrire un grand nombre d’appareils Android appartenant à l’entreprise. Les utilisateurs sur des réseaux Wi-Fi ou mobiles peuvent s’inscrire en quelques clics quand ils allument leurs appareils pour la première fois. En cas d’utilisation de l’application Knox Deployment App, les appareils peuvent être inscrits à l’aide de Bluetooth ou NFC. Pour plus d’informations, consultez [Inscrire automatiquement des appareils Android à l’aide de Knox Mobile Enrollment de Samsung](android-samsung-knox-mobile-enroll.md).
+
+#### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>Demande d’aide dans le portail d’entreprise pour Windows 10 <!-- 1874137 -->
+
+Le portail d’entreprise pour Windows 10 envoie maintenant les journaux d’application directement à Microsoft quand l’utilisateur lance le flux de travail pour obtenir de l’aide sur un problème. Cela facilite le dépannage et la résolution des problèmes portés à l’attention de Microsoft.
 
 ## <a name="week-of-april-23-2018"></a>Semaine du 23 avril 2018
 
@@ -173,9 +185,9 @@ Nous avons publié des conseils pour aider les administrateurs informatiques à 
 Les vignettes ont été mises à jour pour être plus accessibles aux utilisateurs malvoyants et proposer un meilleur rendu pour les outils de lecture d’écran.
 
 #### <a name="send-diagnostic-reports-in-company-portal-app-for-macos----2216677---"></a>Envoyer des rapports de diagnostic dans l’application Portail d’entreprise pour macOS <!-- 2216677 -->
-L’application Portail d’entreprise pour les appareils macOS est mise à jour pour améliorer la façon dont les utilisateurs signalent les erreurs relatives à Intune. À partir de l’application Portail d’entreprise, vos employés peuvent :
+L’application Portail d’entreprise pour les appareils macOS est mise à jour pour améliorer la façon dont les utilisateurs signalent les erreurs relatives à Intune. À partir de l’application Portail d’entreprise, vos collaborateurs peuvent :
 
-- Charger des rapports de diagnostic directement remis à l’équipe de développement Microsoft.
+- Charger des rapports de diagnostic directement pour l’équipe de développement Microsoft.
 - Envoyer par e-mail un ID d’incident à l’équipe de support informatique de votre entreprise.
 
 Pour plus d’informations, consultez [Envoyer les erreurs pour macOS](/intune-user-help/send-errors-macos).
@@ -369,12 +381,21 @@ Pour plus d’informations sur la création de canaux de déploiement dans Intun
 
 #### <a name="company-portal-enrollment-improved----1874230-eeready--"></a>Inscription par le biais de l’application Portail d’entreprise améliorée <!-- 1874230 eeready-->
 Les utilisateurs qui inscrivent un appareil à l’aide du Portail d’entreprise sur Windows 10 (build 1703) et versions ultérieures peuvent désormais effectuer la première étape de l’inscription sans quitter l’application.
-
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens et Surface Hub apparaissent désormais dans les listes d’appareils <!--1725868 -->
 Nous avons ajouté la prise en charge de l’affichage des appareils HoloLens et Surface Hub inscrits auprès d’Intune dans l’application Portail d’entreprise pour Android.
 
 #### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>Catégories de livres personnalisées pour les livres électroniques achetés dans le cadre d’un VPP (programme d’achat en volume) <!-- 1488911 -->
-Vous pouvez créer des catégories de livres électroniques personnalisées, puis leur affecter des livres électroniques achetés en volume. Les utilisateurs finaux pourront ensuite voir les nouvelles catégories de livres électroniques et les livres affectés à ces catégories. Pour plus d’informations, consultez [Gérer les applications et les livres achetés en volume avec Microsoft Intune](vpp-apps.md).
+Vous pouvez créer des catégories de livres électroniques personnalisées, puis leur affecter des livres électroniques achetés en volume. Les utilisateurs finaux pourront ensuite voir les nouvelles catégories de livres électroniques et les livres affectés à ces catégories. Pour plus d’informations, consultez [Gérer les applications et les livres achetés en volume avec Microsoft Intune](vpp-apps.md).  
+
+#### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>Changements de prise en charge de l’option d’envoi de commentaires dans l’application Portail d’entreprise pour Windows <!-- 2070166 -->
+À compter du 30 avril 2018, l’option **Envoyer des commentaires** dans l’application Portail d’entreprise pour Windows fonctionne uniquement sur les appareils qui exécutent la Mise à jour anniversaire Windows 10 (1607) et versions ultérieures. L’option d’envoi de commentaires n’est plus prise en charge lors de l’utilisation de l’application Portail d’entreprise pour Windows avec :  
+- Windows 10, version 1507  
+- Windows 10, version 1511  
+- Windows Phone 8.1 
+
+Si votre appareil exécute Windows 10 RS1 ou ultérieur, téléchargez la dernière version de l’application Portail d’entreprise Windows à partir du Store. Si vous exécutez une version non prise en charge, continuez à envoyer des commentaires par le biais des canaux suivants : 
+- L’application Hub de commentaires sur Windows 10
+- L’adresse e-mail WinCPfeedback@microsoft.com  
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Nouveaux paramètres Windows Defender Application Guard <!-- 1631890 -->
 
@@ -1110,23 +1131,6 @@ Cette modification affecte à la fois les clients autonomes Intune et les client
 Mettez Intune en favori à la place du panneau du service Protection d’application Intune et veillez à vous familiariser avec le workflow de stratégie de protection d’application dans le panneau Application mobile dans Intune. Pendant une courte période, nous assurerons la redirection puis nous supprimerons le panneau Protection d’application. N’oubliez pas que toutes les stratégies de protection d’application sont déjà hors service dans Intune et que vous pouvez modifier les stratégies d’accès conditionnel en suivant la documentation ici : [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
 
 **Informations supplémentaires** : [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
-
-### <a name="plan-for-change-windows-company-portal-send-feedback-option-may-no-longer-work"></a>Modification planifiée : l’option d’envoi de commentaires du Portail d’entreprise Windows risque de ne plus fonctionner  
-L’application Portail d’entreprise Windows dispose d’une option **Envoyer des commentaires**, qui permet aux utilisateurs d’adresser à Microsoft des commentaires sur l’application. À partir du 30 avril 2018, cette option continuera d’être prise en charge uniquement sur l’application Portail d’entreprise Windows 10 exécutée sur Windows 10 1607 (Mise à jour anniversaire) et les versions ultérieures.  
-
-#### <a name="how-does-this-affect-me"></a>Comment cela m’affecte-t-il ?  
-Si l’application Portail d’entreprise Windows n’est pas installée pour les utilisateurs finaux, ignorez ce message. Si l’un de vos utilisateurs finaux dispose de l’application Portail d’entreprise, notez qu’à partir du 30 avril, le bouton **Envoyer des commentaires** ne fonctionnera plus pour l’application dans les scénarios suivants :  
-- Application Portail d’entreprise Windows 10 utilisée dans les versions Windows 10 1507 et 1511  
-- Application Portail d’entreprise Windows Phone 8.1  
-
-Pour les appareils impactés, l’option **Envoyer des commentaires** ne fonctionnera pas, même après plusieurs tentatives. Pour envoyer des commentaires à Microsoft sur l’expérience utilisateur relative à ces plateformes, consultez les autres canaux de commentaires listés ci-dessous.  
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Que dois-je faire pour me préparer à cette modification ?  
-Informez vos utilisateurs de ce changement et mettez à jour les conseils d’aide qui leur sont destinés, si nécessaire. Informez les utilisateurs finaux sur Windows Phone 8.1, Windows 10 1507 et Windows 10 1511 à l’aide du Portail d’entreprise qu’ils disposent de deux autres canaux de commentaires. Ils peuvent :  
-- Utiliser l’application Hub de commentaires sur Windows 10
-- Envoyer un e-mail à WinCPfeedback@microsoft.com  
-
-Demandez aux utilisateurs finaux sur Windows 10 RS1 ou version ultérieure d’effectuer une mise à jour vers la dernière version du Portail d’entreprise Windows disponible dans le Store.
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Modification prévue : modification de la prise en charge du plug-in Cordova dans le SDK de l’application Microsoft Intune
 Intune met fin au support du [plug-in Cordova du SDK de l’application Microsoft Intune](app-sdk-cordova.md) le 1er mai 2018. Nous vous recommandons d’utiliser l’outil de création de package de restrictions d’application Intune à la place, pour préparer vos applications basées sur Cordova afin qu’elles soient gérables et disponibles dans Intune. À la prise d’effet de ce changement, le SDK de l’application Microsoft Intune pour le plug-in Cordova ne sera plus tenu à jour et ne recevra pas de mises à jour. Les développeurs d’applications ne pourront pas utiliser ce plug-in. Intune prévoit de continuer la prise en charge des applications créées avec Cordova. Toutefois, toutes les applications créées avec le SDK de l’application Microsoft Intune pour le plug-in Cordova auront des fonctionnalités réduites dans Intune. Une fois traitées avec l’outil de création de package de restrictions d’application Intune, les applications peuvent être déployées pour les utilisateurs finaux de façon habituelle. Pour les applications Android basées sur Cordova publiées dans Google Play Store :
