@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Guide pratique de gestion et affectation des stratégies de protection des applications
 
@@ -127,7 +127,7 @@ Dans de nombreuses organisations, il est courant d’autoriser les utilisateurs 
 Pour créer ces stratégies, accédez à **Applications mobiles** > **Stratégies de protection d’application** dans la console Intune, puis cliquez sur **Add a policy** (Ajouter une stratégie). Vous pouvez également modifier une stratégie de protection d’application existante. Si vous souhaitez que la stratégie de protection d’application s’applique à la fois aux appareils gérés et aux appareils non gérés, vérifiez que l’option **Cibler sur tous les types d’application** est définie sur **Oui** (valeur par défaut). Si vous souhaitez effectuer une affectation précise en fonction de l’état de la gestion, définissez l’option **Cibler sur tous les types d’application** sur **Non**. 
 
 > [!NOTE]
-> Pour plus d’informations sur la prise en charge iOS des stratégies de protection d’application basées sur l’état de la gestion des appareils, consultez [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---) (Ciblage des stratégies de protection MAM en fonction de l’état de la gestion).
+> Pour plus d’informations sur la prise en charge iOS des stratégies de protection d’application basées sur l’état de la gestion des appareils, consultez [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state-) (Ciblage des stratégies de protection MAM en fonction de l’état de la gestion).
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 Pour afficher la liste complète des paramètres de stratégie pour iOS et Android, sélectionnez l’un des liens suivants :

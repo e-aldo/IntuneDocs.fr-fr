@@ -1,25 +1,25 @@
 ---
-title: "Créer un rapport à partir du flux OData avec Power BI"
+title: Créer un rapport à partir du flux OData avec Power BI
 titlesuffix: Microsoft Intune
-description: "Créez une visualisation treemap à l’aide de Power BI Desktop avec un filtre interactif à partir de l’API d’entrepôt de données Intune."
-keywords: "Entrepôt de données Intune"
+description: Créez une visualisation treemap à l’aide de Power BI Desktop avec un filtre interactif à partir de l’API d’entrepôt de données Intune.
+keywords: Entrepôt de données Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 12725f567cf84d1d7e9110da747470984bc28c01
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Créer un rapport à partir du flux OData avec Power BI
 

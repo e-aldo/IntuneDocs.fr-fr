@@ -15,11 +15,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurer l’inscription d’appareils Windows
 
@@ -31,7 +31,6 @@ En tant qu’administrateur Intune, vous pouvez simplifier l’inscription de pl
 - [Activer l’inscription automatique](#enable-windows-10-automatic-enrollment) (Azure AD Premium est nécessaire)
 - [Inscription CNAME](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Activer l’inscription en bloc](windows-bulk-enroll.md) (Azure AD Premium et le Concepteur de configuration Windows sont nécessaires)
-- [Ajouter un message personnalisé](windows-enrollment-status.md) pour accueillir vos utilisateurs lors de l’inscription et afficher la progression des paramètres de stratégie à mesure qu’ils sont appliqués
 
 Deux facteurs déterminent la manière dont vous pouvez simplifier l’inscription des appareils Windows :
 

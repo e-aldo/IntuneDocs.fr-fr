@@ -16,10 +16,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Conditions préalables à la gestion d’appareils mobiles dans Intune
 
@@ -81,19 +81,19 @@ La personnalisation du Portail d’entreprise permet de fournir une expérience 
 Le nom de l’entreprise s’affiche comme titre du Portail d’entreprise. Les informations de contact et les détails sont présentés aux utilisateurs dans l’écran Contacter le service informatique du Portail d’entreprise. La déclaration de confidentialité s’affiche lorsqu’un utilisateur clique sur le lien correspondant.
 
 
-|          Nom du champ           | Longueur maximale |                                                                                       Autres informations                                                                                        |
+|          Nom du champ           | Longueur maximale |                                                                                       Plus d’informations                                                                                        |
 |-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Nom de la société          |     40     |                Ce nom s’affiche comme titre du Portail d’entreprise. <strong>Remarque</strong> : Seuls des caractères alphanumériques peuvent être utilisés. Ce champ n’accepte pas les caractères spéciaux.                |
 |  Nom du contact du service informatique   |     40     |                                                                Ce nom s’affiche dans la page <strong>Contacter le service informatique</strong>.                                                                |
 |  Numéro de téléphone du service informatique   |     20     |                                                           Ce numéro s’affiche dans la page <strong>Contacter le service informatique</strong>.                                                           |
 |  Adresse de messagerie du service informatique  |     40     |             Cette adresse s’affiche dans la page <strong>Contacter le service informatique</strong>. Vous devez entrer une adresse e-mail valide au format <strong>alias@domainname.com</strong>.              |
-|    Informations complémentaires     |    120     |                                                            Ces informations s'affichent sur la page <strong>Contacter l’administrateur</strong>.                                                             |
+|    Informations supplémentaires     |    120     |                                                            Ces informations s'affichent sur la page <strong>Contacter l’administrateur</strong>.                                                             |
 | URL de la déclaration de confidentialité de l'entreprise |     79     | Vous pouvez spécifier la déclaration de confidentialité de votre entreprise qui s’affiche lorsque les utilisateurs cliquent sur les liens de confidentialité à partir du Portail d’entreprise. Vous devez entrer une URL valide au format https://www.contoso.com. |
 
 ### <a name="support-contacts"></a>Contacts du support
 Les utilisateurs peuvent voir le lien du site web de support dans le Portail d’entreprise et l’utiliser pour accéder au support en ligne.
 
-|Nom du champ|Longueur maximale|Autres informations|
+|Nom du champ|Longueur maximale|Plus d’informations|
     |----------|------------------------|----------------|
     |URL du site Web de support technique|150|Si vous avez un site web de support technique auquel vous aimeriez que les utilisateurs accèdent, spécifiez cette URL ici. Elle doit être au format https://www.contoso.com. Si vous ne spécifiez aucune URL, rien ne s’affiche pour le site web de support technique dans la page **Contacter le service informatique** du Portail d’entreprise.|
     |Nom du site web|40|Il s'agit du nom convivial qui s'affiche pour l'URL permettant d'accéder au site Web de support technique. Si vous spécifiez l’URL d’un site web de support technique sans aucun nom convivial, **Accéder au site web du service informatique** apparaît dans la page **Contacter le service informatique** du Portail d’entreprise.|
@@ -103,7 +103,7 @@ Les utilisateurs peuvent voir le lien du site web de support dans le Portail d�
 
 Vous pouvez personnaliser votre Portail d’entreprise avec le logo et le nom de votre entreprise, un thème chromatique et un arrière-plan.
 
-|Nom du champ|Autres informations|
+|Nom du champ|Plus d’informations|
     |----------|----------------|
     |Couleur de thème|Sélectionnez une couleur de thème à appliquer au Portail d’entreprise.|
     |Inclure le logo de l'entreprise|Lorsque vous activez cette option, vous pouvez télécharger le logo de votre entreprise pour qu’il apparaisse sur le Portail de celle-ci. Vous pouvez télécharger deux logos : un qui s’affiche quand l’arrière-plan du Portail d’entreprise est blanc, et un autre qui s’affiche quand l’arrière-plan du Portail d’entreprise utilise la couleur de thème que vous avez sélectionnée. Chaque logo doit être un fichier .png ou .jpg et avoir une résolution maximale de 400 x 100 pixels et une taille inférieure ou égale à 750 Ko.|
