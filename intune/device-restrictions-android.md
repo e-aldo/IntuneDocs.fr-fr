@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Paramètres de restriction de Microsoft Intune pour les appareils Android et Samsung Knox Standard 
 
@@ -47,6 +47,10 @@ Cet article décrit tous les paramètres des restrictions d’appareils de Micro
 ## <a name="password"></a>Mot de passe
 
 - **Mot de passe** - L’utilisateur final doit entrer un mot de passe pour accéder à l’appareil. |Yes|Yes|
+
+    > [!NOTE]
+    > Les appareils Samsung Knox demandent automatiquement un code PIN à 4 chiffres lors de l’inscription à MDM. Les appareils Android natifs peuvent demander automatiquement un code PIN pour devenir conforme à l’accès conditionnel.
+
 - **Longueur minimale du mot de passe** - Entrez la longueur minimale du mot de passe qu’un utilisateur doit configurer (entre 4 et 16 caractères).
 - **Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil** - Spécifie le nombre de minutes d’inactivité avant verrouillage automatique de l’appareil.
 - **Nombre d'échecs de connexion avant réinitialisation de l'appareil** - Spécifie le nombre d’échecs de connexion à autoriser avant réinitialisation de l’appareil.
@@ -55,7 +59,7 @@ Cet article décrit tous les paramètres des restrictions d’appareils de Micro
     - **Paramètre par défaut de l’appareil**
     - **Sécurité biométrique faible**
     - **Au moins numérique**
-    - **Chiffres complexes** - Les chiffres répétés ou consécutifs tels que « 1111 » ou « 1234 » ne sont pas autorisés<sup>1</sup>
+    - **Chiffres complexes** : les chiffres répétés ou consécutifs (comme « 1111 » ou « 1234 ») ne sont pas autorisés.<sup>1</sup>
     - **Au moins alphabétique**
     - **Au moins alphanumérique**
     - **Au moins alphanumérique avec des symboles**
@@ -63,6 +67,9 @@ Cet article décrit tous les paramètres des restrictions d’appareils de Micro
 - **Déverrouillage par empreinte digitale (Samsung Knox uniquement)** - Permet l’utilisation d’une empreinte digitale pour déverrouiller les appareils pris en charge.
 - **Smart Lock et autres agents de confiance** - Vous permet de contrôler la fonctionnalité Smart Lock sur les appareils Android compatibles (Samsung Knox Standard 5.0 et modèles ultérieurs). Cette fonctionnalité du téléphone, parfois appelée agents de confiance, vous permet de désactiver ou de contourner le mot de passe de l’écran de verrouillage de l’appareil si celui-ci se trouve à un emplacement approuvé. Par exemple, cela peut servir lorsque l’appareil est connecté à un appareil Bluetooth spécifique ou quand il se trouve à proximité d’une balise NFC. Vous pouvez utiliser ce paramètre pour empêcher les utilisateurs de configurer Smart Lock.
 - **Chiffrement** - Exige que les fichiers soient chiffrés sur l’appareil.
+
+    > [!NOTE]
+    > Si une stratégie de chiffrement est appliquée, les appareils Samsung Knox demandent aux utilisateurs de définir un mot de passe complexe de 6 caractères comme code secret de l’appareil.
 
 <sup>1</sup> avant d’affecter ce paramètre sur les appareils, veillez à mettre à jour de l’application portail d’entreprise vers la dernière version sur ces appareils.
 

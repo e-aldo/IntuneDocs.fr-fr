@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,21 +17,21 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Supprimer votre appareil du portail d’entreprise
 
-Si vous ne souhaitez plus que votre appareil soit géré par votre entreprise ou organisation, vous pouvez le supprimer du portail d’entreprise à l’aide du [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog). Le site web du portail d’entreprise est une page web qui vous permet de gérer les ordinateurs et appareils que vous avez inscrits pour être gérés par votre service informatique. Si vous supprimez votre appareil, il ne sera plus répertorié dans le portail d’entreprise et vous risquez de perdre également l’accès aux données, aux applications et à la messagerie de l’entreprise ou de l’établissement scolaire.
+Si vous ne voulez plus que votre appareil soit géré par votre entreprise ou votre organisation, vous pouvez le supprimer du portail d’entreprise via le [site web Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog). Si vous supprimez votre appareil, il n’apparaîtra plus dans le portail d’entreprise. Vous pouvez également perdre l’accès aux données, aux applications et à la messagerie de votre organisation.
 
 Pour supprimer votre appareil :
 
 1. Sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog), cliquez sur le bouton de __menu__ ![Petite image du bouton de menu, représentant trois barres horizontales empilées les unes sur les autres.](/Intune/whats-new/media/CP_hamburger_menu.png), puis sélectionnez __Mes appareils__.
 
-   ![Image du site web Portail d’entreprise avec un menu latéral développé sur le côté gauche de l’écran, contenant les boutons Accueil, Toutes les applications, Mes appareils, Support technique et Déconnexion.](/media/iwp-expanded-sidebar.png)
+   ![Image du site web Portail d’entreprise avec un menu latéral développé sur le côté gauche de l’écran, contenant les boutons Accueil, Toutes les applications, Mes appareils, Support technique et Déconnexion.](/media/iwp-expanded-sidebar.png)
 
 2. Dans la page __Mes appareils__, sélectionnez le nom de l’appareil à supprimer.
 

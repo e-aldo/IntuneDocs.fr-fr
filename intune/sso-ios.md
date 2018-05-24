@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurer Microsoft Intune pour l’authentification unique des appareils iOS
 
@@ -65,7 +65,7 @@ Les sections suivantes fournissent plus d’informations sur chacun des champs d
 
    Vous avez également la possibilité de remplacer le domaine par le texte que vous tapez dans la zone de texte **Domaine**.
 
-   Par exemple, la société Contoso peut avoir plusieurs sous-régions telles qu’Amérique du Nord, Europe et Asie. Elle peut souhaiter que les utilisateurs en Asie utilisent la charge utile d’authentification unique et que l’application exige le nom d’utilisateur principal au format *username@asia.contoso.com*. Dans ce cas, si vous sélectionnez **Nom d’utilisateur principal**, par défaut le domaine pour chaque utilisateur est extrait d’AAD et peut être simplement *contoso.com*. Si vous le souhaitez, vous pouvez créer spécialement cette charge utile pour les utilisateurs en Asie, et remplacer le domaine par la valeur *asia.contoso.com*. Maintenant, le nom d’utilisateur principal de l’utilisateur final devient *username@asia.contoso.com*, et non *username@contoso.com*.
+   Par exemple, la société Contoso peut avoir plusieurs sous-régions telles qu’Amérique du Nord, Europe et Asie. Elle peut souhaiter que les utilisateurs en Asie utilisent la charge utile d’authentification unique et que l’application exige le nom d’utilisateur principal au format *username@asia.contoso.com*. Dans ce cas, si vous sélectionnez **Nom d’utilisateur principal**, par défaut, le domaine pour chaque utilisateur est extrait d’AAD et peut être simplement *contoso.com*. Si vous le souhaitez, vous pouvez créer spécialement cette charge utile pour les utilisateurs en Asie, et remplacer le domaine par la valeur *asia.contoso.com*. Maintenant, le nom d’utilisateur principal de l’utilisateur final devient *username@asia.contoso.com*, et non *username@contoso.com*.
 
 - Si vous sélectionnez **ID d’appareil**, Intune sélectionne automatiquement l’ID d’appareil Intune.
 

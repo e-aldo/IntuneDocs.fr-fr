@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Utiliser un profil d’appareil personnalisé pour créer un profil Wi-Fi avec une clé prépartagée - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Les clés prépartagées (PSK) servent généralement à authentifier les utilis
 - Pour Android, vous pouvez également utiliser le [Générateur PSK Android](http://intunepskgenerator.johnathonb.com/).
 - Vous pouvez ajouter plusieurs réseaux et plusieurs clés en ajoutant davantage de paramètres OMA-URI.
 - Pour iOS, utilisez l’outil Apple Configurator sur une station Mac pour installer le profil. Ou, utilisez [Générateur de configuration Mobile PSK iOS](http://intunepskgenerator.johnathonb.com/).
+- PSK nécessite une chaîne de 64 chiffres hexadécimaux ou une phrase secrète de 8 à 63 caractères ASCII imprimables. Certains caractères, comme l’astérisque (*) ne sont pas pris en charge.
 
 ## <a name="create-a-custom-profile"></a>Créer un profil personnalisé
 Vous pouvez créer un profil personnalisé avec une clé prépartagée pour Android, Windows ou un profil Wi-Fi basé sur EAP. Pour créer le profil en utilisant le portail Azure, consultez [Créer des paramètres d’appareils personnalisés](custom-settings-configure.md). Lorsque vous créez le profil de l’appareil, choisissez **Personnalisé** pour votre plateforme d’appareils. Ne sélectionnez pas le profil Wi-Fi. Lorsque vous choisissez personnalisé, veillez à : 
@@ -42,16 +43,16 @@ Vous pouvez créer un profil personnalisé avec une clé prépartagée pour Andr
 1. entrer un nom et la description du profil.
 2. Ajoutez un nouveau paramètre OMA-URI avec les propriétés suivantes : 
 
-   a. Entrez un nom pour ce paramètre de réseau Wi-Fi
+   a. Entrez un nom pour ce paramètre de réseau Wi-Fi.
 
-   b. (Facultatif) Entrez une description du paramètre OMA-URI ou laissez-le vide
+   b. (Facultatif) Entrez une description du paramètre OMA-URI ou laissez-le vide.
 
-   c. Définissez le **Type de données** sur **Chaîne**
+   c. Définissez le **Type de données** sur **Chaîne**.
 
    d. **OMA-URI** :
 
-   - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Pour Android** : ./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **Pour Windows** : ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > Veillez à inclure le point au début.

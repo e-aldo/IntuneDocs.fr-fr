@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Supprimer votre appareil Windows de la gestion Intune
 
@@ -72,13 +72,13 @@ Pour supprimer un appareil mobile Windows 8.1 d’Intune, effectuez les étapes
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Suppression de vos informations personnelles après la suppression du portail d’entreprise
 Il existe deux types de données que stocke les le portail d’entreprise sur votre appareil Windows :
 
--   **Journaux de diagnostic** : les données standard d’activité de l’application que Microsoft collecte sont effacées automatiquement quand vous supprimez l’appareil du portail d’entreprise. Les données d’activité de l’application portent par exemple sur la durée pendant laquelle l’application a été ouverte, ou sur d’éventuels plantages.
+-   **Journaux de diagnostic** : données d’activité d’application standard collectées par Microsoft. Elles sont automatiquement effacées quand vous désinstallez l’application Portail d’entreprise. Les données d’activité de l’application portent par exemple sur la durée pendant laquelle l’application a été ouverte, ou sur d’éventuels plantages.
 -   **Cache d’application** : fichiers de prise en charge nécessaires au fonctionnement de l’application, comme les icônes et les paramètres.
 
-Vous devez effectuer quelques étapes pour supprimer totalement ces informations.
+Pour supprimer les journaux et le cache stockés, effectuez une des actions suivantes :
 
-1. Désinstallez le portail d’entreprise. La [Désinstallation de l’application Portail d’entreprise](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) supprime certaines des données de l’application stockées sur votre appareil.  
+* [Désinstallez l’application Portail d’entreprise](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs). 
 
-2. Réinitialisez le portail d’entreprise pour réinitialiser les données d’application stockées. Ouvrez l’application **Paramètres**, sélectionnez > **Applications** > **Portail d’entreprise** > **Options avancées** > **Réinitialiser**. 
+* Réinitialisez l’application Portail d’entreprise. Ouvrez l’application **Paramètres** et sélectionnez > **Applications** > **Portail d’entreprise** > **Options avancées** > **Réinitialiser**. 
 
 Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).

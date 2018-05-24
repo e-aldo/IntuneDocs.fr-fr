@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscrire des appareils avec un compte de gestionnaire d’inscription d’appareil
 
@@ -73,9 +73,9 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
 
 ## <a name="permissions-for-dem"></a>Autorisations pour DEM
 
-Les rôles d’administrateur de service Intune ou global d’Azure AD sont requis pour effectuer les tâches d’inscription à la gestion de l’inscription des appareils (DEM). Ces rôles sont également requis pour afficher tous les utilisateurs DEM même si les autorisations RBAC sont répertoriées et disponibles sous le rôle Utilisateur personnalisé. Un utilisateur sans rôle d’administrateur de service Intune ou global affecté mais disposant des autorisations en lecture pour le rôle Gestionnaires d’inscription d’appareil peut voir uniquement les utilisateurs DEM qu’il a créés. La prise en charge des rôles RBAC pour ces fonctionnalités sera annoncée ultérieurement.
+Les rôles d’administrateur de service Intune ou global d’Azure AD sont nécessaires pour effectuer les tâches liées à l’inscription DEM dans le portail d’administration. Ces rôles sont également requis pour afficher tous les utilisateurs DEM même si les autorisations RBAC sont répertoriées et disponibles sous le rôle Utilisateur personnalisé. Un utilisateur sans le rôle Administrateur global ou Administrateur du service Intune, mais disposant des autorisations en lecture pour le rôle Gestionnaires d’inscription d’appareil, peut voir seulement les utilisateurs DEM qu’il a créés. La prise en charge des rôles RBAC pour ces fonctionnalités sera annoncée ultérieurement.
 
-Si un utilisateur n’a pas le rôle d’administrateur de service Intune ou global affecté à ceux-ci, mais dispose des autorisations en lecture pour le rôle Gestionnaires d’inscription des appareils, il pourra uniquement voir les utilisateurs DEM qu’il a créés.
+Si un utilisateur n’a pas le rôle Administrateur global ou Administrateur du service Intune, mais qu’il dispose des autorisations en lecture pour le rôle Gestionnaires d’inscription des appareils, il peut voir seulement les utilisateurs DEM qu’il a créés.
 
 ## <a name="remove-a-device-enrollment-manager"></a>Supprimer un gestionnaire d’inscription d’appareil
 

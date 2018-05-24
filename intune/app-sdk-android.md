@@ -1,11 +1,11 @@
 ---
 title: Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 description: Le SDK d’application Microsoft Intune pour Android vous permet d’incorporer la gestion des applications mobiles Intune à votre application Android.
-keywords: Kit de développement logiciel
+keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/02/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3f8dd2e63702a7eff3b1808628a25df9618da1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
@@ -32,21 +32,14 @@ Le kit SDK d’application Microsoft Intune pour Android vous permet d’incorp
 
 Le SDK d’application Intune se compose des fichiers suivants :  
 
-* **Microsoft.Intune.MAM.SDK.aar** : composants du SDK, à l’exception des fichiers JAR Support.V4 et Support.V7. Si votre système de génération prend en charge les fichiers AAR, ce fichier peut être utilisé à la place des composants individuels.
+* **Microsoft.Intune.MAM.SDK.aar** : composants du SDK, à l’exception des fichiers JAR Support.V4 et Support.V7.
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar** : interfaces nécessaires pour prendre en charge la gestion des applications mobiles dans les applications qui utilisent la bibliothèque de prise en charge v4 Android. Les applications nécessitant cette prise en charge doivent référencer directement le fichier JAR.
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar** : interfaces nécessaires pour prendre en charge la gestion des applications mobiles dans les applications qui utilisent la bibliothèque de prise en charge v7 Android. Les applications nécessitant cette prise en charge doivent référencer directement le fichier JAR.
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar** : Ce fichier jar contient des stubs pour les classes système Android qui sont présentes uniquement sur les appareils récents, mais qui sont référencées par des méthodes dans MAMActivity. Les appareils récents ignorent ces classes stub. Ce fichier jar n’est nécessaire que si votre application effectue une réflexion sur des classes dérivant de MAMActivity. La plupart des applications n’ont pas besoin de l’inclure. Si vous utilisez ce fichier jar, veillez à exclure toutes ses classes de ProGuard. Elles se trouvent toutes sous le package racine « android ».
-* **proguard.txt** : contient des règles ProGuard qui doivent être appliquées en cas de génération avec ProGuard.
 * **CHANGELOG.txt** : contient un historique des modifications apportées dans chaque version du SDK.
 * **THIRDPARTYNOTICES.TXT** : avis d’attribution qui reconnaît que le code tiers et/ou OSS sera compilé dans votre application.
 
-Si votre système de génération ne prend pas en charge les fichiers AAR, vous pouvez utiliser les fichiers suivants à la place de Microsoft.Intune.MAM.SDK.aar.
-* **Microsoft.Intune.MAM.SDK.jar** : interfaces nécessaires pour prendre en charge la gestion des applications mobiles, ainsi que l’interopérabilité avec l’application Portail d’entreprise Intune. Les applications doivent spécifier ce fichier en tant que référence de bibliothèque Android.
-* **Répertoire res** : ressources (telles que des chaînes) sur lesquelles repose le SDK.
-* **AndroidManifest.xml** : points d’entrée et exigences de la bibliothèque.
-
-
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Le SDK de l’application Intune est un projet Android compilé. Ainsi, il est en grande partie non affecté par la version d’Android utilisée par l’application pour ses versions d’API (minimale ou cible). Le SDK prend en charge l’API Android de la version 19 (Android 4.4+) à la version 26 (Android 8.0).
 
@@ -63,21 +56,19 @@ Pour la protection des applications sans inscription des appareils, l’utilisat
 
 ### <a name="build-integration"></a>Intégration de build
 
-Le SDK d’application Intune pour Android est une bibliothèque Android standard sans dépendances externes. **Microsoft.Intune.MAM.SDK.jar** contient les interfaces nécessaires pour l’activation d’une stratégie de protection des applications et le code nécessaire pour interagir avec l’application Portail d’entreprise Microsoft Intune.
+Le SDK d’application Intune pour Android est une bibliothèque Android standard sans dépendances externes. **Microsoft.Intune.MAM.SDK.aar** contient les interfaces nécessaires pour l’activation d’une stratégie de protection des applications et le code nécessaire pour interagir avec l’application Portail d’entreprise Microsoft Intune.
 
-Vous devez spécifier **Microsoft.Intune.MAM.SDK.jar** en tant que référence de bibliothèque Android. Pour ce faire, ouvrez votre projet d’application dans Android Studio et accédez à **File > New > New module** et sélectionnez **Import .JAR/.AAR Package**. Sélectionnez notre package d’archive Android Microsoft.Intune.MAM.SDK.aar.
+Vous devez spécifier **Microsoft.Intune.MAM.SDK.aar** comme référence de bibliothèque Android. Pour ce faire, ouvrez votre projet d’application dans Android Studio et accédez à **File > New > New module** et sélectionnez **Import .JAR/.AAR Package**. Sélectionnez ensuite notre package d’archive Android Microsoft.Intune.MAM.SDK.aar pour créer un module pour notre .AAR. Cliquez avec le bouton droit sur le ou les modules contenant le code de votre application et accédez à **Paramètres du module** > **Onglet Dépendances** > **Icône +** > **Dépendance du module** > Sélectionnez le module AAR SDK MAM que vous venez de créer > **OK**. Ceci garantit que votre module est compilé avec le SDK MAM quand vous générez votre projet.
 
 En outre, **Microsoft.Intune.MAM.SDK.Support.v4** et **Microsoft.Intune.MAM.SDK.Support.v7** contiennent respectivement des variantes Intune de `android.support.v4` et `android.support.v7`. Ils ne sont pas intégrés à Microsoft.Intune.MAM.SDK.aar, pour le cas où une application ne souhaiterait pas inclure les bibliothèques de prise en charge. Il s’agit de fichiers JAR standard plutôt que de projets de bibliothèque Android.
 
 #### <a name="proguard"></a>ProGuard
 
-Si [ProGuard](http://proguard.sourceforge.net/) (ou tout autre mécanisme de réduction/obscurcissement) est utilisé comme étape de génération, les classes du SDK Intune doivent être exclues. Pour ProGuard, vous pouvez pour cela inclure les règles à partir du fichier proguard.txt distribué avec le SDK.
+Si [ProGuard](http://proguard.sourceforge.net/) (ou tout autre mécanisme de réduction/obscurcissement) est utilisé comme étape de génération, les classes du SDK Intune doivent être exclues. Quand vous incluez le .aar dans votre build, nos règles sont automatiquement intégrées dans l’étape ProGuard et les fichiers de classe nécessaires sont conservés. 
 
 La bibliothèque d’authentification ADAL (Azure Active Directory Authentication Library) peut avoir ses propres restrictions ProGuard. Si votre application intègre la bibliothèque ADAL, vous devez suivre la documentation ADAL concernant ces restrictions.
 
 ### <a name="entry-points"></a>Points d’entrée
-
-La bibliothèque d’authentification Azure Active Directory ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) exige ces autorisations pour effectuer l’authentification répartie. Si ces autorisations ne sont pas accordées à l’application ou qu’elles sont révoquées par l’utilisateur, les flux d’authentification qui requièrent le service broker (l’application Portail d’entreprise) sont désactivés.
 
 Le SDK d’application Intune nécessite la modification du code source d’une application pour permettre l’activation des stratégies de protection des applications Intune. Pour cela, vous devez remplacer les classes de base Android par des classes de base Intune équivalentes, dont les noms portent le préfixe **MAM**. Les classes du SDK résident entre la classe de base Android et la propre version dérivée de cette classe de l’application. Si vous prenez l’exemple d’une activité, vous vous retrouvez avec une hiérarchie d’héritage qui ressemble à ceci : `Activity` > `MAMActivity` > `AppSpecificActivity`.
 
@@ -102,6 +93,7 @@ Les classes de base Android doivent être remplacées par leurs équivalents MAM
 | android.app.IntentService | MAMIntentService |
 | android.app.LauncherActivity | MAMLauncherActivity |
 | android.app.ListActivity | MAMListActivity |
+| android.app.ListFragment | MAMListFragment |
 | android.app.NativeActivity | MAMNativeActivity |
 | android.app.PendingIntent | MAMPendingIntent (consultez [Intention en attente](#pendingintent)) |
 | android.app.Service | MAMService |
@@ -118,13 +110,14 @@ Les classes de base Android doivent être remplacées par leurs équivalents MAM
 | android.media.MediaMetadataRetriever | MAMMediaMetadataRetriever |
 | android.provider.DocumentsProvider | MAMDocumentsProvider |
 | android.preference.PreferenceActivity | MAMPreferenceActivity |
+| android.support.multidex.MultiDexApplication | MAMMultiDexApplication |
 
 > [!NOTE]
 > Même si votre application n’a pas besoin de sa propre classe `Application` dérivée, [consultez `MAMApplication` ci-dessous](#mamapplication).
 
 ### <a name="microsoftintunemamsdksupportv4jar"></a>Microsoft.Intune.MAM.SDK.Support.v4.jar :
 
-| Classe Android (MAM Intune) | Classe de remplacement (SDK de l’application Intune) |
+| Classe Android | Classe de remplacement (SDK de l’application Intune) |
 |--|--|
 | android.support.v4.app.DialogFragment | MAMDialogFragment
 | android.support.v4.app.FragmentActivity | MAMFragmentActivity
@@ -132,6 +125,7 @@ Les classes de base Android doivent être remplacées par leurs équivalents MAM
 | android.support.v4.app.JobIntentService | MAMJobIntentService
 | android.support.v4.app.TaskStackBuilder | MAMTaskStackBuilder
 | android.support.v4.content.FileProvider | MAMFileProvider
+| android.support.v4.content.WakefulBroadcastReceiver | MAMWakefulBroadcastReceiver
 
 ### <a name="microsoftintunemamsdksupportv7jar"></a>Microsoft.Intune.MAM.SDK.Support.v7.jar :
 
@@ -140,19 +134,16 @@ Les classes de base Android doivent être remplacées par leurs équivalents MAM
 |android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 
 ### <a name="renamed-methods"></a>Méthodes renommées
-
-
 Dans de nombreux cas, une méthode disponible dans la classe Android a été marquée comme finale dans la classe de remplacement MAM. Dans ce cas, la classe de remplacement MAM fournit une méthode portant un nom similaire (généralement avec le suffixe `MAM`) que vous devez remplacer. Par exemple, quand vous dérivez de `MAMActivity` au lieu de remplacer `onCreate()` et d’appeler `super.onCreate()`, `Activity` doit remplacer `onMAMCreate()` et appeler `super.onMAMCreate()`. Le compilateur Java doit appliquer les restrictions finales pour éviter que la méthode d’origine ne soit remplacée accidentellement à la place de l’équivalent MAM.
 
 ### <a name="mamapplication"></a>MAMApplication
-En raison des contraintes liées au SDK MAM, vous **devez** créer une sous-classe de `com.microsoft.intune.mam.client.app.MAMApplication` et la définir comme le nom de la classe `Application` utilisée dans votre manifeste. `MAMApplication` est abstrait et nécessite une substitution pour `byte[] getADALSecretKey`. Pour plus d’informations sur la façon d’implémenter cette fonction, consultez le Javadoc correspondant.
+Si votre application crée une sous-classe de `android.app.Application`, vous **devez** créer à la place une sous-classe de `com.microsoft.intune.mam.client.app.MAMApplication`. Si votre application ne crée pas de sous-classe de `android.app.Application`, vous **devez** définir `"com.microsoft.intune.mam.client.app.MAMApplication"` comme attribut `"android:name"` dans la balise `<application>` de votre fichier AndroidManifest.xml.
 ### <a name="pendingintent"></a>PendingIntent
 Au lieu de `PendingIntent.get*`, vous devez utiliser la méthode `MAMPendingIntent.get*`. Après cela, vous pouvez utiliser la classe `PendingIntent` résultante comme d’habitude.
 
 ### <a name="manifest-replacements"></a>Remplacements de manifeste
 Notez qu’il peut être nécessaire d’effectuer certains des remplacements de classe ci-dessus dans le manifeste, ainsi que dans le code Java. À noter en particulier :
 * Les références de manifeste à `android.support.v4.content.FileProvider` doivent être remplacées par `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider`.
-* Si votre application n’a pas besoin de sa propre classe Application dérivée, `com.microsoft.intune.mam.client.app.MAMApplication` doit avoir comme valeur le nom de la classe Application utilisée dans le manifeste.
 
 ## <a name="sdk-permissions"></a>Autorisations du SDK
 
@@ -329,7 +320,7 @@ Pour déterminer si la stratégie est appliquée, effectuez l’appel suivant :
 ```java
 MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
-``````
+```
 
 … où `service` est l’un des SaveLocations suivants :
 
@@ -341,7 +332,6 @@ SaveLocation service, String username);
 La méthode précédente permettant de déterminer si la stratégie d’un utilisateur l’autorisait à enregistrer des données à différents emplacements était `getIsSaveToPersonalAllowed()` dans la même classe **AppPolicy**. Cette fonction est maintenant **dépréciée** et ne doit pas être utilisée. L’appel suivant équivaut à `getIsSaveToPersonalAllowed()` :
 
 ```java
-
 MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
@@ -365,7 +355,7 @@ public void onCreate() {
       new ToastNotificationReceiver(),
       MAMNotificationType.WIPE_USER_DATA);
   }
-``````
+```
 
 ### <a name="mamnotificationreceiver"></a>MAMNotificationReceiver
 
@@ -406,7 +396,7 @@ Les notifications suivantes sont envoyées à l’application et certaines d’e
 
 * **WIPE_USER_DATA** : cette notification est envoyée dans une classe `MAMUserNotification`. Quand cette notification est reçue, l’application est censée supprimer toutes les données associées à l’identité « d’entreprise » passée avec le `MAMUserNotification`. Cette notification est actuellement envoyée lors de l’annulation de l’inscription APP-WE. Le nom principal de l’utilisateur est généralement spécifié au cours du processus d’inscription. Si vous vous inscrivez à cette notification, votre application doit s’assurer que toutes les données de l’utilisateur ont été supprimées. Si vous ne vous inscrivez pas à cette notification, le comportement de réinitialisation sélective par défaut est adopté.
 
-* **WIPE_USER_AUXILIARY_DATA** : les applications peuvent s’inscrire à cette notification si elles souhaitent que le SDK d’application Intune adopte le comportement de réinitialisation sélective par défaut, tout en ayant la possibilité de supprimer des données auxiliaires au moment de la réinitialisation.
+* **WIPE_USER_AUXILIARY_DATA** : les applications peuvent s’inscrire à cette notification si elles souhaitent que le SDK d’application Intune adopte le comportement de réinitialisation sélective par défaut, tout en ayant la possibilité de supprimer des données auxiliaires au moment de la réinitialisation. Cette notification n’est pas disponible pour les applications à identité unique : elle est envoyée seulement aux applications à plusieurs identités.
 
 * **REFRESH_POLICY** : cette notification est envoyée dans un `MAMUserNotification`. Quand cette notification est reçue, toute stratégie Intune mise en cache doit être invalidée et mise à jour. C’est généralement le SDK qui s’en charge ; toutefois, cette tâche peut revenir à l’application si la stratégie est utilisée de façon permanente.
 
@@ -442,7 +432,9 @@ Pour configurer votre application et mettre en œuvre une authentification appro
 
 ### <a name="adal-metadata"></a>Métadonnées de la bibliothèque ADAL
 
-* **Authority** est l’autorité AAD actuelle en cours d’utilisation. Si elle est présente, vous devez utiliser votre propre environnement où les comptes AAD ont été configurés. Si cette valeur est omise, une valeur par défaut Intune est utilisée.
+* **Authority** est l’autorité AAD utilisée. Si cette valeur est absente, l’environnement public AAD est utilisé.
+> [!NOTE]
+> Ne définissez pas ce champ si votre application prend en charge le cloud souverain.
 
 * **ClientID** est l’ID client AAD à utiliser. Vous devez utiliser l’ID client de votre propre application si elle est inscrite auprès d’Azure AD. Si cette valeur est omise, une valeur par défaut Intune est utilisée.
 
@@ -455,34 +447,47 @@ Pour configurer votre application et mettre en œuvre une authentification appro
 
 ### <a name="common-adal-configurations"></a>Configurations ADAL courantes
 
-Vous trouverez ci-dessous quelques approches courantes pour la configuration d’une application avec la bibliothèque ADAL. Recherchez la configuration de votre application et assurez-vous d’affecter les valeurs nécessaires aux paramètres de métadonnées de la bibliothèque ADAL (décrits ci-dessus).
+Vous trouverez ci-dessous quelques approches courantes pour la configuration d’une application avec la bibliothèque ADAL. Recherchez la configuration de votre application et assurez-vous d’affecter les valeurs nécessaires aux paramètres de métadonnées de la bibliothèque ADAL (décrits ci-dessus). Dans tous les cas, l’autorité peut être spécifiée si vous le souhaitez pour les environnements non définis par défaut ; elle est cependant généralement inutile.
 
 1. **L’application n’intègre pas la bibliothèque ADAL :**
 
-    | Paramètre ADAL requis | Value |
-    |--|--|
-    | Authority | Environnement souhaité dans lequel les comptes AAD ont été configurés |
-    | SkipBroker | True |
+Vous n’avez besoin de configurer aucune autre valeur du manifeste.
 
 2. **L’application intègre la bibliothèque ADAL :**
 
-    |Paramètre ADAL requis| Value |
+    |Paramètre ADAL requis| Valeur |
     |--|--|
-    | Authority | Environnement souhaité dans lequel les comptes AAD ont été configurés |
     | ClientID | ID client de l’application (généré par Azure AD quand l’application est inscrite) |
-    | NonBrokerRedirectURI | URI de redirection valide pour l’application, ou `urn:ietf:wg:oauth:2.0:oob` par défaut. <br><br> Veillez à configurer la valeur comme URI de redirection acceptable pour l’ID client de votre application.
     | SkipBroker | False |
 
+Authority et NonBrokerRedirectURI peuvent être spécifiés si nécessaire.
+
+L’équipe Intune SDK demande l’ID d’application de votre application (ID de client). Vous le trouverez dans le [portail Azure](https://portal.azure.com/), sous **Toutes les applications**, dans la colonne **ID d’application**. Pour plus d’informations sur l’inscription d’une application avec AAD, consultez [cette page](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications). Vous pouvez contacter l’équipe Intune SDK à l’adresse e-mail msintuneappsdk@microsoft.com.
+
+Consultez aussi les exigences pour [l’accès conditionnel](#conditional-access) ci-dessous.
 
 3. **L’application intègre la bibliothèque ADAL, mais ne prend pas en charge l’authentification répartie ou l’authentification unique à l’échelle de l’appareil :**
 
-    |Paramètre ADAL requis| Value |
+    |Paramètre ADAL requis| Valeur |
     |--|--|
-    | Authority | Environnement souhaité dans lequel les comptes AAD ont été configurés |
     | ClientID | ID client de l’application (généré par Azure AD quand l’application est inscrite) |
-    | NonBrokerRedirectURI | URI de redirection valide pour l’application, ou `urn:ietf:wg:oauth:2.0:oob` par défaut. <br><br> Veillez à configurer la valeur comme URI de redirection acceptable pour l’ID client de votre application.
     | SkipBroker | **True** |
 
+Authority et NonBrokerRedirectURI peuvent être spécifiés si nécessaire.
+
+### <a name="conditional-access"></a>Accès conditionnel
+L’accès conditionnel est une [fonctionnalité](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer) d’Azure Active Directory qui peut être utilisée pour contrôler l’accès aux ressources AAD.  [Les administrateurs Intune peuvent définir des règles d’accès conditionnel](https://docs.microsoft.com/en-us/intune/conditional-access) qui permettent l’accès à des ressources seulement à partir d’appareils ou d’applications qui sont gérés par Intune. Pour garantir que votre application est en mesure d’accéder à des ressources quand c’est approprié, il est nécessaire de suivre les étapes ci-dessous. Si votre application n’acquiert aucun jeton d’accès AAD ou accède seulement à des ressources qui ne peuvent pas être protégées par l’accès conditionnel, vous pouvez ignorer ces étapes.
+
+1. Suivez les [instructions d’intégration de la bibliothèque d’authentification Active Directory(ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
+   Consultez en particulier l’étape 11 pour l’utilisation du service Broker
+2. [Inscrire votre application auprès d’Azure Active Directory] (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration)) 
+   L’URI de redirection se trouve dans les instructions d’intégration d’ADAL ci-dessus.
+3. Définissez les paramètres des métadonnées du manifeste selon les indications de [Configurations ADAL courantes](#common-adal-configurations), élément 2, ci-dessus.
+4. Testez si tout est configuré correctement en activant [l’accès conditionnel basé sur les appareils](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use) dans le [portail Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) et en vérifiant
+    - que le fait de vous connecter à votre application déclenche une invite d’installation et d’inscription du portail d’entreprise Intune,
+    - et qu’après l’inscription, la connexion à votre application s’effectue correctement.
+5. Une fois que votre application a intégré le SDK d’application Intune, contactez msintuneappsdk@microsoft.com pour la faire ajouter à la liste des applications approuvées pour [l’accès conditionnel basé sur l’application](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
+6. Une fois que votre application a été ajoutée à la liste approuvée, validez en [configurant l’accès conditionnel basé sur l’application](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) et en vérifiant que la connexion à votre application s’effectue correctement.
 ## <a name="app-protection-policy-without-device-enrollment"></a>Stratégie de protection des applications sans inscription des appareils
 
 ### <a name="overview"></a>Vue d’ensemble
@@ -499,12 +504,12 @@ L’application peut également interroger le SDK d’application Intune pour co
 
 L’application doit fournir un rappel pour obtenir le jeton d’accès approprié à partir de la bibliothèque ADAL pour le compte du SDK. Il est supposé que l’application utilise déjà la bibliothèque ADAL pour l’authentification utilisateur et pour obtenir ses propres jetons d’accès.
 
-Quand l’application supprime complètement un compte, elle doit annuler l’inscription de ce compte pour indiquer qu’elle ne doit plus appliquer de stratégie pour cet utilisateur. Si l’utilisateur a été inscrit dans le service GAM, son inscription sera annulée et l’application sera réinitialisée.
+Quand l’application supprime complètement un compte, elle doit annuler l’inscription de ce compte pour indiquer qu’elle ne doit plus appliquer de stratégie pour cet utilisateur. Si l’utilisateur a été inscrit dans le service MAM, son inscription sera annulée et l’application sera réinitialisée.
 
 
 ### <a name="overview-of-app-requirements"></a>Vue d’ensemble des exigences d’application
 
-Pour implémenter l’intégration APP-WE, votre application doit inscrire le compte d’utilisateur avec le SDK GAM :
+Pour implémenter l’intégration APP-WE, votre application doit inscrire le compte d’utilisateur avec le SDK MAM :
 
 1. L’application _doit_ implémenter et inscrire une instance de l’interface `MAMServiceAuthenticationCallback`. L’instance de rappel doit être inscrite dès que possible dans le cycle de vie de l’application (en général, dans la méthode `onMAMCreate()` de la classe d’application).
 
@@ -557,6 +562,7 @@ public interface MAMEnrollmentManager {
 
     //Registration methods
     void registerAccountForMAM(String upn, String aadId, String tenantId);
+  void registerAccountForMAM(String upn, String aadId, String tenantId, String authority);
     void unregisterAccountForMAM(String upn);
     Result getRegisteredAccountStatus(String upn);
 }
@@ -590,17 +596,55 @@ Cette section décrit les méthodes d’API d’inscription de compte dans `MAME
 
 ```java
 void registerAccountForMAM(String upn, String aadId, String tenantId);
+void registerAccountForMAM(String upn, String aadId, String tenantId, String authority);
 void unregisterAccountForMAM(String upn);
 Result getRegisteredAccountStatus(String upn);
 ```
 
-1. Pour inscrire un compte pour la gestion, l’application doit appeler `registerAccountForMAM()`. Un compte d’utilisateur est identifié à la fois par son UPN et par son ID utilisateur AAD. L’ID de locataire est également nécessaire pour associer les données d’inscription au locataire AAD de l’utilisateur. Le SDK peut tenter d’inscrire l’application pour l’utilisateur donné dans le service GAM. Si l’inscription échoue, il réessaiera périodiquement d’effectuer l’inscription jusqu’à ce que le compte soit désinscrit. La période de nouvelle tentative est généralement de 12 et 24 heures. Le SDK fournit l’état des tentatives d’inscription de manière asynchrone par l’intermédiaire de notifications.
+1. Pour inscrire un compte pour la gestion, l’application doit appeler `registerAccountForMAM()`. Un compte d’utilisateur est identifié à la fois par son UPN et par son ID utilisateur AAD. L’ID de locataire est également nécessaire pour associer les données d’inscription au locataire AAD de l’utilisateur. L’autorisation de l’utilisateur peut également être fournie pour permettre l’inscription à des clouds souverains spécifiques. Pour plus d’informations, consultez [Inscription à des clouds souverains](#sovereign-cloud-registration).  Le SDK peut tenter d’inscrire l’application pour l’utilisateur donné dans le service MAM. Si l’inscription échoue, il réessaiera périodiquement d’effectuer l’inscription jusqu’à ce que le compte soit désinscrit. La période de nouvelle tentative est généralement de 12 et 24 heures. Le SDK fournit l’état des tentatives d’inscription de manière asynchrone par l’intermédiaire de notifications.
 
 2. Étant donné que l’authentification AAD est requise, le meilleur moment pour inscrire le compte d’utilisateur est une fois que l’utilisateur s’est connecté à l’application et a été authentifié avec succès à l’aide de la bibliothèque ADAL.
     * L’ID AAD et l’ID de locataire de l’utilisateur sont retournés à partir de l’appel d’authentification ADAL dans le cadre de l’objet [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android). L’ID de locataire provient de la méthode `AuthenticationResult.getTenantID()`.
     * Les informations sur l’utilisateur se trouvent dans un sous-objet de type `UserInfo` provenant de `AuthenticationResult.getUserInfo()`, et l’ID utilisateur AAD est récupéré à partir de cet objet en appelant `UserInfo.getUserId()`.
 
 3. Pour désinscrire un compte de la gestion Intune, l’application doit appeler `unregisterAccountForMAM()`. Si le compte a été inscrit avec succès et qu’il est géré, le SDK annulera l’inscription du compte et réinitialisera ses données. Les nouvelles tentatives d’inscription périodiques pour le compte seront arrêtées. Le SDK fournit l’état des demandes d’annulation d’inscription de manière asynchrone par l’intermédiaire de notifications.
+
+### <a name="sovereign-cloud-registration"></a>Inscription à des cloud souverains
+
+Les applications qui [prennent en charge les clouds souverains](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) **doivent** fournir une valeur pour `authority` à `registerAccountForMAM()`.  Vous pouvez l’obtenir en fournissant `instance_aware=true` dans acquireToken extraQueryParameters de la version [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) d’ADAL, suivi de l’appel de `getAuthority()` sur AuthenticationCallback AuthenticationResult.
+
+```
+mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
+        new AuthenticationCallback<AuthenticationResult>() {
+            @Override
+            public void onError(final Exception exc) {
+                // authentication failed
+            }
+
+            @Override
+            public void onSuccess(final AuthenticationResult result) {
+                mAuthority = result.getAuthority();
+                // handle other parts of the result
+            }
+        });
+```
+
+> [!NOTE]
+> Ne définissez pas l’autorité de métadonnées du fichier AndroidManifest.xml.
+<br/>
+```
+<meta-data
+    android:name="com.microsoft.intune.mam.aad.Authority"
+    android:value="https://AAD authority/" />
+```
+
+> [!NOTE]
+> Vérifiez que l’autorité est correctement définie dans votre méthode `MAMServiceAuthenticationCallback::acquireToken()`.
+
+
+#### <a name="currently-supported-sovereign-clouds"></a>Clouds souverains actuellement pris en charge
+
+1. Arlington
 
 ### <a name="important-implementation-notes"></a>Remarques importantes concernant l’implémentation
 
@@ -612,6 +656,7 @@ Result getRegisteredAccountStatus(String upn);
 
 * Le `MAMServiceAuthenticationCallback` inscrit de l’application est également appelé pour acquérir un jeton pour les archivages d’actualisation de stratégie de protection des applications périodiques. Si l’application est incapable de fournir un jeton demandé, elle ne reçoit pas de notification, mais elle doit essayer d’acquérir un jeton et d’appeler `updateToken()` le plus rapidement possible afin d’accélérer le processus d’archivage. Si aucun jeton n’est fourni, le rappel est quand même appelé à la prochaine tentative d’archivage.
 
+* La prise en charge des clouds souverains nécessite la spécification de l’autorité.
 #### <a name="registration"></a>Inscription
 
 * Par souci pratique, les méthodes d’inscription sont idempotent. Par exemple, `registerAccountForMAM()` inscrit un compte et tente d’inscrire l’application uniquement si le compte n’est pas encore inscrit, et `unregisterAccountForMAM()` annule l’inscription d’un compte uniquement s’il est actuellement inscrit. Les appels suivants étant non-opérationnels, il n’y a aucun risque à appeler ces méthodes plusieurs fois. En outre, la correspondance entre les appels à ces méthodes et les notifications de résultats n’est pas garantie : autrement dit, si `registerAccountForMAM` est appelé pour une identité déjà inscrite, la notification peut ne pas être envoyée à nouveau pour cette identité. Il est possible que des notifications envoyées ne correspondent à aucun appel à ces méthodes, car le SDK peut tenter d’effectuer périodiquement des inscriptions en arrière-plan, et des annulations d’inscription peuvent être déclenchées par des demandes de réinitialisation envoyées par le service Intune.
@@ -622,15 +667,15 @@ Result getRegisteredAccountStatus(String upn);
 
 ### <a name="result-and-status-codes"></a>Codes de résultat et d’état
 
-Quand un compte est inscrit initialement, il commence à l’état `PENDING`, ce qui indique que la tentative initiale d’inscription au service GAM est incomplète. Une fois la tentative d’inscription terminée, une notification est envoyée avec l’un des codes de résultat mentionnés dans le tableau ci-dessous. De plus, la méthode `getRegisteredAccountStatus()` retourne l’état du compte pour que l’application puisse toujours déterminer si l’accès au contenu d’entreprise est bloqué pour cet utilisateur. Si la tentative d’inscription échoue, l’état du compte peut changer au fil du temps à mesure que le SDK retente l’inscription en arrière-plan.
+Quand un compte est inscrit initialement, il commence à l’état `PENDING`, ce qui indique que la tentative initiale d’inscription au service MAM est incomplète. Une fois la tentative d’inscription terminée, une notification est envoyée avec l’un des codes de résultat mentionnés dans le tableau ci-dessous. De plus, la méthode `getRegisteredAccountStatus()` retourne l’état du compte pour que l’application puisse toujours déterminer si l’accès au contenu d’entreprise est bloqué pour cet utilisateur. Si la tentative d’inscription échoue, l’état du compte peut changer au fil du temps à mesure que le SDK retente l’inscription en arrière-plan.
 
 |Code de résultat | Explication |
 | -- | -- |
 |AUTHORIZATION_NEEDED | Ce résultat indique qu’aucun jeton n’a été fourni par l’instance `MAMServiceAuthenticationCallback` inscrite de l’application, ou que le jeton fourni n’était pas valide.  L’application doit acquérir un jeton valide et appeler `updateToken()` si possible. |
-| NOT_LICENSED | L’utilisateur ne dispose pas de licence pour Intune, ou la tentative de contact du service GAM Intune a échoué.  L’application doit continuer dans un état non géré (normal) et l’utilisateur ne doit pas être bloqué.  Les inscriptions seront retentées régulièrement dans le cas où l’utilisateur obtiendrait une licence ultérieurement. |
+| NOT_LICENSED | L’utilisateur ne dispose pas de licence pour Intune, ou la tentative de contact du service MAM Intune a échoué.  L’application doit continuer dans un état non géré (normal) et l’utilisateur ne doit pas être bloqué.  Les inscriptions seront retentées régulièrement dans le cas où l’utilisateur obtiendrait une licence ultérieurement. |
 | ENROLLMENT_SUCCEEDED | La tentative d’inscription a réussi, ou l’utilisateur est déjà inscrit.  En cas de réussite de l’inscription, une notification d’actualisation de la stratégie est envoyée avant cette notification.  L’accès aux données d’entreprise doit être autorisé. |
 | ENROLLMENT_FAILED | La tentative d’inscription a échoué.  Les journaux de l’appareil contiennent des informations supplémentaires.  L’application ne doit pas autoriser l’accès aux données d’entreprise dans cet état, car il a été précédemment déterminé que l’utilisateur disposait d’une licence pour Intune.|
-| WRONG_USER | Un seul utilisateur par appareil peut inscrire une application auprès du service GAM.  Pour que l’application puisse s’inscrire en tant qu’autre utilisateur, toutes les applications inscrites doivent d’abord être désinscrites.  Dans le cas contraire, cette application doit s’inscrire en tant qu’utilisateur principal.  Cette vérification est effectuée après la vérification de la licence. L’accès aux données d’entreprise doit donc être interdit à l’utilisateur jusqu’à ce que l’application soit correctement inscrite.|
+| WRONG_USER | Un seul utilisateur par appareil peut inscrire une application auprès du service MAM.  Pour que l’application puisse s’inscrire en tant qu’autre utilisateur, toutes les applications inscrites doivent d’abord être désinscrites.  Dans le cas contraire, cette application doit s’inscrire en tant qu’utilisateur principal.  Cette vérification est effectuée après la vérification de la licence. L’accès aux données d’entreprise doit donc être interdit à l’utilisateur jusqu’à ce que l’application soit correctement inscrite.|
 | UNENROLLMENT_SUCCEEDED | L’annulation de l’inscription a réussi.|
 | UNENROLLMENT_FAILED | La demande d’annulation de l’inscription a échoué.  Les journaux de l’appareil contiennent des informations supplémentaires. |
 | PENDING | La tentative d’inscription initiale de l’utilisateur est en cours.  L’application peut bloquer l’accès aux données d’entreprise jusqu’à ce que le résultat de l’inscription soit connu, mais cela n’est pas obligatoire. |
@@ -641,7 +686,7 @@ Quand un compte est inscrit initialement, il commence à l’état `PENDING`, ce
 
 Si le résultat `COMPANY_PORTAL_REQUIRED` est reçu, le SDK bloque les activités qui utilisent l’identité pour laquelle l’inscription a été demandée. Il fait en sorte que ces activités affichent une invite de téléchargement du portail d’entreprise. Si vous souhaitez éviter ce comportement dans votre application, les activités peuvent implémenter `MAMActivity.onMAMCompanyPortalRequired`.
 
-Cette méthode est appelée avant que le SDK affiche son interface utilisateur de blocage par défaut. Si l’application change l’identité d’activité ou annule l’inscription de l’utilisateur qui a tenté d’effectuer l’inscription, le SDK ne bloque pas l’activité. Dans ce cas, c’est à l’application d’éviter toute fuite de données d’entreprise.
+Cette méthode est appelée avant que le SDK affiche son interface utilisateur de blocage par défaut. Si l’application change l’identité d’activité ou annule l’inscription de l’utilisateur qui a tenté d’effectuer l’inscription, le SDK ne bloque pas l’activité. Dans ce cas, c’est à l’application d’éviter toute fuite de données d’entreprise. Notez que seules les applications à plusieurs identités (présentées plus loin) ont la possibilité de changer l’identité de l’activité.
 
 ### <a name="notifications"></a>Notifications
 
@@ -653,7 +698,7 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 }
 ```
 
-La méthode `getEnrollmentResult()` retourne le résultat de la demande d’inscription.  Étant donné que `MAMEnrollmentNotification` étend `MAMUserNotification`, l’identité de l’utilisateur pour lequel l’inscription a été tentée est également disponible. L’application doit implémenter l’interface `MAMNotificationReceiver` pour recevoir ces notifications, détaillées dans la section [S’inscrire aux notifications à partir du SDK](#Register-for-notifications-from-the-SDK).
+La méthode `getEnrollmentResult()` retourne le résultat de la demande d’inscription.  Étant donné que `MAMEnrollmentNotification` étend `MAMUserNotification`, l’identité de l’utilisateur pour lequel l’inscription a été tentée est également disponible. L’application doit implémenter l’interface `MAMNotificationReceiver` pour recevoir ces notifications, détaillées dans la section [S’inscrire aux notifications à partir du SDK](#register-for-notifications-from-the-sdk).
 
 L’état du compte d’utilisateur inscrit peut changer lors de la réception d’une notification d’inscription, mais il ne changera pas dans certains cas (par exemple, si une notification `AUTHORIZATION_NEEDED` est reçue après un résultat plus explicite tel que `WRONG_USER`, le résultat le plus explicite est conservé comme état du compte).
 
@@ -670,10 +715,11 @@ Toutefois, par défaut l’attribut `android:allowBackup` est défini sur true, 
 
 Intune vous permet d’utiliser toutes les [fonctionnalités de sauvegarde automatique](https://developer.android.com/guide/topics/data/autobackup.html) disponibles à partir d’Android, y compris la possibilité de définir des règles personnalisées en XML, mais vous devez suivre les étapes ci-dessous pour sécuriser vos données :
 
-1. Si votre application n’utilise **pas** son propre BackupAgent personnalisé, utilisez le MAMBackupAgent par défaut pour permettre l’exécution de sauvegardes complètes automatiques conformes aux stratégies Intune. Dans ce cas, vous pouvez ignorer l’attribut de manifeste `android:fullBackupOnly`, car il ne s’applique pas à notre agent de sauvegarde. Placez le code suivant dans le manifeste d’application :
+1. Si votre application n’utilise **pas** son propre BackupAgent personnalisé, utilisez le MAMBackupAgent par défaut pour permettre l’exécution de sauvegardes complètes automatiques conformes aux stratégies Intune. Placez le code suivant dans le manifeste d’application :
 
     ```xml
-   android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
+    android:fullBackupOnly="true"
+    android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
 
 
@@ -714,13 +760,13 @@ L’option [Sauvegarde de clé/valeur](https://developer.android.com/guide/topic
 
 ### <a name="backupagenthelper"></a>BackupAgentHelper
 
-BackupAgentHelper est plus simple à implémenter que BackupAgent tant sur le plan des fonctionnalités Android natives que de l’intégration de la gestion des applications mobiles Intune. BackupAgentHelper permet au développeur d’inscrire des fichiers entiers et des préférences partagées auprès de **FileBackupHelper** ou de **SharedPreferencesBackupHelper** (respectivement), qui sont ensuite ajoutés à BackupAgentHelper au moment de la création. Suivez les étapes ci-dessous pour utiliser un BackupAgentHelper avec GAM Intune :
+BackupAgentHelper est plus simple à implémenter que BackupAgent tant sur le plan des fonctionnalités Android natives que de l’intégration de la gestion des applications mobiles Intune. BackupAgentHelper permet au développeur d’inscrire des fichiers entiers et des préférences partagées auprès de **FileBackupHelper** ou de **SharedPreferencesBackupHelper** (respectivement), qui sont ensuite ajoutés à BackupAgentHelper au moment de la création. Suivez les étapes ci-dessous pour utiliser un BackupAgentHelper avec MAM Intune :
 
 1. Pour utiliser la sauvegarde de plusieurs identités avec un BackupAgentHelper, suivez le guide Android d’[extension de BackupAgentHelper](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgentHelper).
 
-2. Faites en sorte que votre classe étende l’équivalent GAM de BackupAgentHelper, FileBackupHelper et SharedPreferencesBackupHelper.
+2. Faites en sorte que votre classe étende l’équivalent MAM de BackupAgentHelper, FileBackupHelper et SharedPreferencesBackupHelper.
 
-|Classe Android | Équivalent GAM |
+|Classe Android | Équivalent MAM |
 |--|--|
 |BackupAgentHelper |MAMBackupAgentHelper |
 |FileBackupHelper | MAMFileBackupHelper
@@ -732,7 +778,7 @@ Le respect de ces recommandations est garant du succès de la sauvegarde et de l
 
 Un BackupAgent vous permet d’être beaucoup plus explicite quant aux données à sauvegarder. Dans la mesure où le développeur a la responsabilité de l’implémentation, d’autres étapes sont requises pour assurer la protection appropriée des données Intune. Étant donné que l’essentiel du travail incombe au développeur, c’est-à-dire vous, l’intégration d’Intune est un peu plus complexe.
 
-**Intégrer GAM :**
+**Intégrer MAM :**
 
 1. Veuillez lire attentivement le guide Android de [Sauvegarde de clé/valeur](https://developer.android.com/guide/topics/data/keyvaluebackup.html), et spécifiquement [Extension de BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent), pour être sûr que votre implémentation de BackupAgent respecte les recommandations Android.
 
@@ -748,18 +794,18 @@ Un BackupAgent vous permet d’être beaucoup plus explicite quant aux données 
 
 Le guide de sauvegarde des données spécifie un algorithme général pour la restauration des données de votre application et fournit un exemple de code dans la section [Extension de BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent). Pour que la restauration de plusieurs identités réussisse, vous devez suivre la structure générale fournie dans cet exemple de code, en accordant une attention particulière à ce qui suit :
 
-1.  Vous devez utiliser une boucle `while(data.readNextHeader())`* pour parcourir les entités de sauvegarde.
+1. Vous devez utiliser une boucle `while(data.readNextHeader())`* pour parcourir les entités de sauvegarde.
 
-2.  Vous devez appeler `data.skipEntityData()`* si `data.getKey()`* ne correspond pas à la clé que vous avez écrite dans `onBackup`. Sans cette étape, vos restaurations peuvent échouer.
+2. Vous devez appeler `data.skipEntityData()`* si `data.getKey()`* ne correspond pas à la clé que vous avez écrite dans `onBackup`. Sans cette étape, vos restaurations peuvent échouer.
 
-3.  Éviter de retourner tout en consommant des entités de sauvegarde dans la construction `while(data.readNextHeader())`*, car les entités que nous écrivons automatiquement seront perdues.
+3. Éviter de retourner tout en consommant des entités de sauvegarde dans la construction `while(data.readNextHeader())`*, car les entités que nous écrivons automatiquement seront perdues.
 
 * Où `data` est le nom de variable locale pour le **BackupDataInput** passé à votre application lors de la restauration.
 
 ## <a name="multi-identity-optional"></a>Multi-identité (facultatif)
 
 ### <a name="overview"></a>Vue d’ensemble
-Par défaut, le SDK d’application Intune applique une stratégie à l’application dans son ensemble. La multi-identité est une fonctionnalité de protection des applications Intune qui peut être activée pour permettre d’appliquer la stratégie à un niveau par identité. Ceci nécessite une participation nettement accrue de l’application par rapport à d’autres fonctionnalités de protection des applications.
+Par défaut, le SDK d’application Intune applique une stratégie à l’application comme un tout. La multi-identité est une fonctionnalité de protection des applications Intune qui peut être activée pour permettre d’appliquer la stratégie à un niveau par identité. Ceci nécessite une participation nettement accrue de l’application par rapport à d’autres fonctionnalités de protection des applications.
 
 L’application *doit* informer le SDK du moment où elle va changer l’identité active. Dans certains cas, le SDK notifie aussi l’application du moment où un changement d’identité est nécessaire. Toutefois, dans la plupart des cas, la gestion des applications mobiles n’a pas connaissance des données affichées dans l’interface utilisateur ou utilisées sur un thread à un moment donné. Elle s’appuie donc sur l’application pour définir l’identité appropriée afin d’éviter la fuite de données. Dans les sections suivants, certains scénarios nécessitant une action de l’application sont appelés.
 
@@ -837,7 +883,7 @@ Toutes les méthodes utilisées pour définir l’identité transmettent les val
 | Valeur renvoyée | Scénario |
 |--|--|
 | SUCCEEDED | Le changement d’identité a réussi. |
-| NOT_ALLOWED | Le changement d’identité n’est pas autorisé. Le changement d’identité n’est pas autorisé. Cela se produit si l’identité de l’interface utilisateur (contexte) fait l’objet d’une tentative de définition alors qu’une identité différente est définie sur le thread actuel. |
+| NOT_ALLOWED  | Le changement d’identité n’est pas autorisé. Cela se produit si l’identité de l’interface utilisateur (contexte) fait l’objet d’une tentative de définition alors qu’une identité différente est définie sur le thread actuel. |
 | CANCELLED | L’utilisateur a annulé le changement d’identité, généralement en appuyant sur le bouton Précédent dans une invite de code PIN ou d’authentification. |
 | FAILED | Le changement d’identité a échoué pour une raison non précisée.|
 
@@ -874,7 +920,7 @@ Outre la possibilité pour l’application de définir l’identité, l’identi
 
 #### <a name="examples"></a>Exemples
 
-  1. Si une activité est lancée à partir d’un `Intent` envoyé par une autre application GAM, l’identité de l’activité est définie en fonction de l’identité effective dans l’autre application au point où le `Intent` a été envoyé.
+  1. Si une activité est lancée à partir d’un `Intent` envoyé par une autre application MAM, l’identité de l’activité est définie en fonction de l’identité effective dans l’autre application au point où le `Intent` a été envoyé.
 
   2.  Pour les services, l’identité du thread est définie de la même façon pendant la durée d’un appel `onStart` ou `onBind`. Les appels dans `Binder` retournés par `onBind` définissent également temporairement l’identité du thread.
 
@@ -965,17 +1011,16 @@ Pour utiliser `MAMAsyncTask`, héritez simplement de cette tâche, et non d’As
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+### <a name="file-protection"></a>Protection des fichiers
 
-  ### <a name="file-protection"></a>Protection des fichiers
-
-  Chaque fichier se voit associer une identité au moment de la création, en fonction de l’identité de thread et de processus. Cette identité est utilisée pour le chiffrement de fichier et la réinitialisation sélective. Seuls les fichiers dont l’identité est gérée et a une stratégie qui exige le chiffrement sont chiffrés. La réinitialisation sélective par défaut du SDK réinitialise uniquement les fichiers associés à l’identité gérée pour laquelle une réinitialisation a été demandée. L’application peut interroger ou changer l’identité d’un fichier à l’aide de la classe `MAMFileProtectionManager`.
+Chaque fichier se voit associer une identité au moment de la création, en fonction de l’identité de thread et de processus. Cette identité est utilisée pour le chiffrement de fichier et la réinitialisation sélective. Seuls les fichiers dont l’identité est gérée et a une stratégie qui exige le chiffrement sont chiffrés. La réinitialisation sélective par défaut du SDK réinitialise uniquement les fichiers associés à l’identité gérée pour laquelle une réinitialisation a été demandée. L’application peut interroger ou changer l’identité d’un fichier à l’aide de la classe `MAMFileProtectionManager`.
 
   ```java
     public final class MAMFileProtectionManager {
-    /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the 
-           file, and will tag the file for future protection changes.
 
+        /**
+         * Protect a file. This will synchronously trigger whatever protection is required for the 
+         * file, and will tag the file for future protection changes.
          *
          * @param identity
          *            Identity to set.
@@ -986,40 +1031,50 @@ Pour utiliser `MAMAsyncTask`, héritez simplement de cette tâche, et non d’As
          */
         public static void protect(final File file, final String identity) throws IOException;
 
-        /**
-        * Protect a file obtained from a content provider. This is intended to be used for
-        * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
-        * It may also be used with descriptors referring to private files owned by this app.
-        * It is not intended to be used for files owned by other apps and such usage will fail. If
-        * creating a new file via a content provider exposed by another MAM-integrated app, the new
-        * file identity will automatically be set correctly if the ContentResolver in use was
-        * obtained via a Context with an identity or if the thread identity is set.
-        *
-        * This will synchronously trigger whatever protection is required for the file, and will tag
-        * the file for future protection changes. If an identity is set on a directory, it is set
-        * recursively on all files and subdirectories. If MAM is operating in offline mode, this
-        * method will silently do nothing.
-        *
-        * @param identity
-        *       Identity to set.
-        * @param file
-        *       File to protect.
-        *
-        * @throws IOException
-        *       If the file cannot be protected.
-
-        */
+       /**
+         * Protect a file obtained from a content provider. This is intended to be used for
+         * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+         * It may also be used with descriptors referring to private files owned by this app.
+         * It is not intended to be used for files owned by other apps and such usage will fail. If
+         * creating a new file via a content provider exposed by another MAM-integrated app, the new
+         * file identity will automatically be set correctly if the ContentResolver in use was
+         * obtained via a Context with an identity or if the thread identity is set.
+         *
+         * This will synchronously trigger whatever protection is required for the file, and will tag
+         * the file for future protection changes. If an identity is set on a directory, it is set
+         * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+         * method will silently do nothing.
+         *
+         * @param identity
+         *            Identity to set.
+         * @param file
+         *            File to protect.
+         *
+         * @throws IOException
+         *             If the file cannot be protected.
+         */
         public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
-        /**
-         * Get the protection info on a file.
-         *
-         * @param file
-         *            File or directory to get information on.
-         * @return File protection info, or null if there is no protection info.
-         * @throws IOException
-         *             If the file cannot be read or opened.
-         */
+       /**
+        * Get the protection info on a file.
+        *
+        * @param file
+        *            File or directory to get information on.
+        * @return File protection info, or null if there is no protection info.
+        * @throws IOException
+        *             If the file cannot be read or opened.
+        */
+        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
+
+       /**
+        * Get the protection info on a file.
+        *
+        * @param file
+        *            File or directory to get information on.
+        * @return File protection info, or null if there is no protection info.
+        * @throws IOException
+        *             If the file cannot be read or opened.
+        */
         public static MAMFileProtectionInfo getProtectionInfo(final ParcelFileDescriptor file) throws IOException;
 
     }
@@ -1040,13 +1095,13 @@ Voici un exemple de flux :
     * Si le résultat signalé est un échec, l’application n’affiche pas le document.
   * L’application s’ouvre et affiche le fichier.
 
-## <a name="offline-scenarios"></a>Scénarios hors connexion
+#### <a name="offline-scenarios"></a>Scénarios hors connexion
 
 Le balisage de l’identité d’un fichier est sensible au mode hors connexion. Les points suivants doivent être pris en compte :
 
   * Si le portail d’entreprise n’est pas installé, les fichiers ne peuvent pas faire l’objet d’un balisage d’identité.
 
-  * Si le portail d’entreprise est installé, mais que l’application n’a pas de stratégie GAM Intune, les fichiers ne peuvent pas faire l’objet d’un balisage d’identité de façon fiable.
+  * Si le portail d’entreprise est installé, mais que l’application n’a pas de stratégie MAM Intune, les fichiers ne peuvent pas faire l’objet d’un balisage d’identité de façon fiable.
 
   * Quand le balisage d’identité des fichiers devient disponible, tous les fichiers déjà créés sont traités comme personnels/non gérés (appartenant à l’identité à chaîne vide), sauf si l’application a été installée en tant qu’application gérée à identité unique, auquel cas ils sont considérés comme appartenant à l’utilisateur inscrit.
 
@@ -1159,9 +1214,10 @@ Si l’application fournit des données d’entreprise autres qu’un **ParcelFi
 
 ### <a name="selective-wipe"></a>Réinitialisation sélective
 
-Si une application s’inscrit à la notification `WIPE_USER_DATA`, elle ne bénéficie plus du comportement de réinitialisation sélective par défaut du SDK. Pour les applications prenant en charge plusieurs identités, cette perte peut être d’autant plus importante, car la réinitialisation sélective GAM par défaut réinitialise uniquement les fichiers dont l’identité est ciblée par une réinitialisation.
+Si une application à plusieurs identités a été inscrite à la notification `WIPE_USER_DATA`, elle est responsable de la suppression de toutes les données de l’utilisateur qui est réinitialisé, notamment tous les fichiers qui ont été étiquetés avec l’identité comme appartenant à cet utilisateur. Si l’application supprime les données utilisateur d’un fichier mais que les autres données doivent être conservées dans le fichier, elle *doit* changer l’identité du fichier (via `MAMFileProtectionManager.protect` pour un utilisateur personnel ou pour l’identité vide). Si une stratégie de chiffrement est utilisée, tous les fichiers restants appartenant à l’utilisateur à réinitialiser ne sont pas déchiffrés et deviennent inaccessibles par l’application après la réinitialisation.
 
-Si une application prenant en charge plusieurs identités souhaite que la réinitialisation sélective GAM par défaut soit effectuée _**et**_ souhaite effectuer ses propres actions de réinitialisation, elle doit s’inscrire pour les notifications `WIPE_USER_AUXILIARY_DATA`. Cette notification sera envoyée par le SDK juste avant d’effectuer la réinitialisation sélective par défaut GAM. Une application ne doit jamais s’inscrire à la fois pour WIPE_USER_DATA et WIPE_USER_AUXILIARY_DATA.
+Une application s’inscrivant à la notification `WIPE_USER_DATA` ne bénéficie plus du comportement de réinitialisation sélective par défaut du SDK. Pour les applications prenant en charge plusieurs identités, cette perte peut être d’autant plus importante, car la réinitialisation sélective MAM par défaut réinitialise uniquement les fichiers dont l’identité est ciblée par une réinitialisation. Si une application prenant en charge plusieurs identités souhaite que la réinitialisation sélective MAM par défaut soit effectuée _**et**_ souhaite effectuer ses propres actions de réinitialisation, elle doit s’inscrire pour les notifications `WIPE_USER_AUXILIARY_DATA`. Cette notification sera envoyée par le SDK juste avant d’effectuer la réinitialisation sélective par défaut MAM. Une application ne doit jamais s’inscrire à la fois pour WIPE_USER_DATA et WIPE_USER_AUXILIARY_DATA.
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Activation de la configuration ciblée de gestion des applications mobiles pour vos applications Android (facultatif)
 Vous pouvez configurer les paires clé-valeur spécifiques à une application dans la console Intune. Ces paires clé-valeur, qui ne sont pas du tout interprétées par Intune, sont simplement passées à l’application. Les applications qui souhaitent recevoir une telle configuration peuvent utiliser les classes `MAMAppConfigManager` et `MAMAppConfig`. Si plusieurs stratégies ciblent la même application, plusieurs valeurs en conflit peuvent être disponibles pour la même clé.
@@ -1310,11 +1366,11 @@ Pour plus d’informations sur la création d’une stratégie de configuration 
 
 ## <a name="style-customization-optional"></a>Personnalisation du style (facultatif)
 
-Les vues générées par le SDK GAM peuvent être personnalisées afin d’avoir une apparence visuelle plus proche de l’application dans laquelle elles sont intégrées. Vous pouvez personnaliser les couleurs principale, secondaire et d’arrière-plan, ainsi que la taille du logo de l’application. Cette personnalisation du style est facultative, et les valeurs par défaut sont utilisées si aucun style personnalisé n’est configuré.
+Les vues générées par le SDK MAM peuvent être personnalisées afin d’avoir une apparence visuelle plus proche de l’application dans laquelle elles sont intégrées. Vous pouvez personnaliser les couleurs principale, secondaire et d’arrière-plan, ainsi que la taille du logo de l’application. Cette personnalisation du style est facultative, et les valeurs par défaut sont utilisées si aucun style personnalisé n’est configuré.
 
 
 ### <a name="how-to-customize"></a>Comment personnaliser
-Pour que les modifications de style s’appliquent aux vues GAM Intune, vous devez d’abord créer un fichier XML de substitution de style. Vous devez placer ce fichier dans le répertoire « /res/xml » de votre application et vous pouvez le nommer comme vous le souhaitez. Voici un exemple du format que doit avoir ce fichier.
+Pour que les modifications de style s’appliquent aux vues MAM Intune, vous devez d’abord créer un fichier XML de substitution de style. Vous devez placer ce fichier dans le répertoire « /res/xml » de votre application et vous pouvez le nommer comme vous le souhaitez. Voici un exemple du format que doit avoir ce fichier.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1368,7 +1424,7 @@ Ces instructions sont spécifiques à toutes les applications Android et Xamarin
    > [!NOTE] 
    > Il doit s’agir de la seule intégration MAM-WE dans l’application. Si d’autres tentatives sont effectuées pour appeler des API MAMEnrollmentManager, des conflits peuvent se produire.
 
-4. Activez la stratégie GAM requise en insérant la valeur suivante dans le manifeste : ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+4. Activez la stratégie MAM requise en insérant la valeur suivante dans le manifeste : ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > Cela oblige l’utilisateur à télécharger l’application Portail d’entreprise sur l’appareil et à effectuer le flux d’inscription par défaut avant utilisation.
 
@@ -1403,13 +1459,17 @@ Pour les grandes bases de code qui s’exécutent sans [ProGuard](http://proguar
 
 ### <a name="reflection-limitations"></a>Limitations de la réflexion
 Certaines classes de base MAM (MAMActivity, MAMDocumentsProvider, etc.) contiennent des méthodes (basées sur les classes de base Android d’origine) qui utilisent des types de paramètre ou de retour uniquement présents au-delà de certains niveaux d’API. Pour cette raison, il n’est pas toujours possible d’utiliser la réflexion pour énumérer toutes les méthodes des composants d’une application. Cette restriction n’est pas limitée à MAM. Elle s’applique également si l’application a elle-même implémenté ces méthodes à partir des classes de base Android.
+### <a name="roboelectric"></a>Robolectric
+Le test du comportement du SDK MAM sous Robolectric n’est pas pris en charge. L’exécution du SDK MAM sous Robolectric présente des problèmes connus, dus à des comportements présents sous Robolectric qui ne simulent pas avec exactitude ces comportements sur des appareils réels ou des émulateurs.
+
+Si vous devez tester votre application sous Robolectric, la solution de contournement recommandée consiste à déplacer la logique de classe de votre application dans un helper et à générer votre fichier .apk de tests unitaires avec une classe d’application qui n’hérite pas de MAMApplication.
 ## <a name="expectations-of-the-sdk-consumer"></a>Attentes du consommateur de SDK
 
 Le SDK Intune respecte le contrat fourni par l’API Android, bien que des conditions d’échec puissent être déclenchées plus fréquemment à la suite de l’application de stratégies. Ces meilleures pratiques pour Android réduisent la probabilité d’un échec :
 
 * Il est fort probable que les fonctions du SDK Android susceptibles de retourner null sont déjà null.  Pour réduire les problèmes, assurez-vous que les vérifications null sont placées au bon endroit.
 
-* Les fonctionnalités qui peuvent faire l’objet d’une vérification doivent être vérifiées par l’intermédiaire de leurs API de substitution GAM.
+* Les fonctionnalités qui peuvent faire l’objet d’une vérification doivent être vérifiées par l’intermédiaire de leurs API de substitution MAM.
 
 * Les appels des fonctions dérivées doivent être acheminés aux versions de leurs superclasses.
 

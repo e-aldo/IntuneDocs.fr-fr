@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3212d1a3d3454542dd9d34409fc788558f2d7eed
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-android-devices"></a>Inscrire des appareils Android
 
@@ -29,7 +29,7 @@ En votre qualité d’administrateur Intune, vous pouvez gérer des appareils An
 
 Les appareils qui exécutent Samsung Knox Standard sont pris en charge pour la gestion des utilisateurs multiples par Intune. Cela signifie que les utilisateurs finaux peuvent se connecter et se déconnecter d’un appareil avec leurs informations d’identification Azure AD. L’appareil est géré de manière centralisée, qu’il soit en cours d’utilisation ou non. Quand les utilisateurs se connectent, ils ont accès aux applications et les éventuelles stratégies sont appliquées à ces applications. Quand les utilisateurs se déconnectent, toutes les données d’application sont effacées.
 
-## <a name="prerequisite"></a>Composant requis
+## <a name="prerequisite"></a>Prérequis
 
 Pour préparer la gestion des appareils mobiles, vous devez définir l’autorité de gestion des appareils mobiles (MDM) sur **Microsoft Intune**. Consultez la page [Configurer l’autorité MDM](mdm-authority-set.md) pour obtenir des instructions. Cet élément ne se définit qu’une seule fois, quand vous configurez pour la première fois Intune pour la gestion des appareils mobiles.
 
@@ -58,7 +58,8 @@ Pour plus d’informations, consultez [Données envoyées par Intune à Google](
 Si vous ne l’avez pas déjà fait, préparez la gestion des appareils mobiles en définissant **Microsoft Intune** comme [autorité de gestion des appareils mobiles](mdm-authority-set.md).
 2. **Configurer une liaison Android for Work**<br>
     
-   a. Connectez-vous à [Intune dans le portail Azure](https://aka.ms/intuneportal), sélectionnez **Inscription de l’appareil** > **Inscription Android** > **Google Play géré**.
+   a. Connectez-vous à [Intune dans le portail Azure](https://aka.ms/intuneportal), sélectionnez **Inscription de l’appareil** > **Inscription Android** > **Google Play géré**.  Si vous utilisez un rôle d’administrateur Intune personnalisé, l’accès à ceci nécessite des autorisations de lecture et de mise à jour pour l’organisation.
+   
    ![Écran d’inscription d’Android for Work](./media/android-work-bind.png)
 
    b. Sélectionnez **J’accepte** pour autoriser Microsoft à [envoyer des informations d’utilisateur et d’appareil à Google](data-intune-sends-to-google.md). 

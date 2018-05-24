@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Réinitialiser ou supprimer un code secret de l’appareil dans Intune
 
@@ -47,7 +47,7 @@ Pour créer un nouveau code secret pour un appareil, utilisez l’action **Suppr
 
 ## <a name="resetting-android-for-work-passcodes"></a>Réinitialisation des codes secrets Android for Work
 
-Les appareils Android for Work pris en charge reçoivent un nouveau mot de passe de déverrouillage d’appareil ou une vérification du profil managé pour l’utilisateur final. Pour les appareils Android 7.0 ou version ultérieure avec des profils professionnels, les utilisateurs finaux reçoivent des notifications qui les invitent à activer leur jeton de réinitialisation de code secret juste après l’inscription. La notification s’affiche si un mot de passe de profil professionnel est imposé et défini. Une fois le code secret entré, la notification disparaît.
+Les appareils Android for Work pris en charge reçoivent un nouveau mot de passe de déverrouillage de profil géré ou sont soumis à une vérification du profil géré pour l’utilisateur final. Pour les appareils Android 7.0 ou version ultérieure avec des profils professionnels, les utilisateurs finaux reçoivent des notifications qui les invitent à activer leur jeton de réinitialisation de code secret juste après l’inscription. La notification s’affiche si un mot de passe de profil professionnel est imposé et défini. Une fois le code secret entré, la notification disparaît.
 
 ## <a name="resetting-ios-passcodes"></a>Réinitialisation des codes secrets iOS
 

@@ -6,18 +6,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 5/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0912ec4fdc77b51903b4febd54f9d16972b867a8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: fe791dce88878fdbde7c62e59452a53ac08ef06b
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>Paramètres de profil de messagerie dans Microsoft Intune pour les appareils exécutant iOS 
 
@@ -35,8 +35,7 @@ Cet article répertorie les paramètres de profil de messagerie que vous pouvez 
     - Si vous avez sélectionné **Certificats**, sélectionnez un profil de certificat SCEP ou PKCS client que vous avez créé précédemment et qui sert à authentifier la connexion Exchange.
 - **SSL** : utilisez la communication SSL (Secure Sockets Layer) pour envoyer et recevoir des e-mails, et communiquer avec le serveur Exchange.
 - **S/MIME** : envoyez des e-mails en utilisant la signature S/MIME.
-    - Si vous avez sélectionné **Certificats**, sélectionnez un profil de certificat SCEP ou PKCS client que vous avez créé précédemment et qui sert à authentifier la connexion Exchange.
-    - Si vous choisissez un certificat SCEP, vérifiez qu’un certificat PFX (Personal Information Exchange) valide est installé sur l’appareil.
+    - Si vous avez sélectionné **Certificat**, sélectionnez un profil de certificat PKCS que vous avez créé précédemment pour authentifier la connexion Exchange.
 - **Nombre d’e-mails à synchroniser** : sélectionnez le nombre de jours de courrier électronique à synchroniser ou sélectionnez **Illimité** pour synchroniser tous les messages disponibles.
 - **Autoriser le déplacement des messages vers d’autres comptes de messagerie** : cette option permet aux utilisateurs de déplacer les e-mails entre les différents comptes configurés sur l’appareil.
 - **Autoriser l’envoi de courrier électronique à partir d’applications tierces** : autorisez l’utilisateur à sélectionner ce profil en tant que compte par défaut pour l’envoi d’e-mails et autorisez les applications tierces à ouvrir les e-mails dans l’application de messagerie native, par exemple pour y joindre des fichiers.

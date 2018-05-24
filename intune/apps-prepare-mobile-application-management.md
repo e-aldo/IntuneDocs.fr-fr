@@ -1,12 +1,11 @@
 ---
-title: Préparer les applications métier aux stratégies de protection des applications
-titlesuffix: Microsoft Intune
-description: Utilisez l’outil de wrapping d’applications et le SDK d’application pour permettre à vos applications métiers personnalisées d’utiliser des stratégies de protection d’application dans Microsoft Intune.
+title: Décider comment préparer les applications pour la gestion des applications mobiles avec Microsoft Intune
+description: Cette rubrique présente des informations pour vous aider à déterminer quand utiliser l’outil de création de package de restrictions d’application et le SDK d’application pour permettre à vos applications métier personnalisées d’utiliser les stratégies de gestion d’applications mobiles.
 keywords: ''
-author: Erikre
+author: erikre
 ms.author: erikre
-manager: dougeby
-ms.date: 05/07/2018
+manager: angrobe
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Préparer les applications métier aux stratégies de protection des applications
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Vous pouvez configurer vos applications pour utiliser des stratégies de protection des applications à l’aide de l’outil de création de package de restrictions d’application Intune ou du SDK d’application Intune. Utilisez ces informations pour en savoir plus sur ces deux méthodes et quand les utiliser.
 
@@ -34,7 +33,6 @@ Vous n’avez pas besoin du code source pour utiliser l’outil, mais vous avez 
 
 L’outil de création de package de restrictions d’application ne prend **pas** en charge les applications de l’Apple App Store ou du Google Play Store. Il ne prend pas non plus en charge certaines fonctionnalités qui nécessitent une intégration de développement (consultez le tableau comparatif des fonctionnalités suivant).
 
-
 Pour plus d’informations sur l’outil de création de package de restrictions d’application pour les stratégies de protection des applications sur des appareils qui ne sont pas inscrits dans Intune, consultez [Protéger les données et applications métier sur des appareils non inscrits dans Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Raisons d’utiliser l’outil de création de package de restrictions d’application
@@ -44,7 +42,6 @@ Pour plus d’informations sur l’outil de création de package de restrictions
 * Vous n’avez pas accès au code source de l’application
 * Vous n’avez pas développé l’application
 * Votre application a une authentification utilisateur minimale
-
 
 ### <a name="supported-app-development-platforms"></a>Plateformes de développement d’applications prises en charge
 
@@ -79,35 +76,43 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 > [!NOTE]
 > Vous pouvez utiliser l’outil de création de package de restrictions d’application avec Intune autonome ou Intune avec Configuration Manager.
 
-|                                                         Composant                                                          | Kit SDK d’application | Outil de création de package de restrictions d’application |
-|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
-|                              Afficher le contenu web uniquement dans Managed Browser                              |    X    |         X         |
-|                                        Empêcher les sauvegardes Android, iTunes ou iCloud                                        |    X    |         X         |
-|                                         Autoriser l'application à transférer des données vers d'autres applications                                         |    X    |         X         |
-|                                        Autoriser l'application à recevoir des données d'autres applications                                         |    X    |         X         |
-|                                      Restreindre les opérations Couper, Copier et Coller avec d’autres applications                                       |    X    |         X         |
-|                                              Demander un code confidentiel simple pour l'accès                                               |    X    |         X         |
-|                                         Remplacer le code confidentiel intégré de l’application par le code confidentiel Intune                                         |    X    |                   |
-|                                     Spécifier le nombre de tentatives avant réinitialisation du code confidentiel                                      |    X    |         X         |
-|                                             Autoriser une empreinte digitale à la place du code confidentiel                                             |    X    |         X         |
-|                                         Exiger des informations d'identification d'entreprise pour l'accès                                         |    X    |         X         |
-|                             Bloquer l’exécution des applications gérées sur les appareils jailbroken ou rootés                              |    X    |         X         |
-|                                                     Chiffrer les données de l'application                                                     |    X    |         X         |
-|                           Revérifier les spécifications requises pour l’accès après un nombre de minutes spécifié                            |    X    |         X         |
-|                                             Spécifier la période de grâce hors connexion                                             |    X    |         X         |
-|                                           Bloquer la capture d’écran (Android uniquement)                                            |    X    |         X         |
-|                                        Prise en charge de GAM sans inscription de l’appareil                                         |    X    |         X         |
-|                                                        Réinitialisation complète                                                         |    X    |         X         |
-| Réinitialisation sélective <br></br><strong>Remarque :</strong> pour iOS, quand le profil de gestion est supprimé, l’application est également supprimée. |    X    |                   |
-|                                                    Empêcher « Enregistrer sous »                                                     |    X    |                   |
-|                                            Configuration d'application ciblée                                            |    X    |                   |
-|                                                Prise en charge des identités multiples                                                |    X    |                   |
-|                                                    Style personnalisable                                                    |    X    |                   |
+|Composant|Kit SDK d’application|Outil de création de package de restrictions d’application|
+|-----------|---------------------|-----------|
+|Afficher le contenu web uniquement dans Managed Browser|X|X|
+|Empêcher les sauvegardes Android, iTunes ou iCloud|X|X|
+|Autoriser l'application à transférer des données vers d'autres applications|X|X|
+|Autoriser l'application à recevoir des données d'autres applications|X|X|
+|Restreindre les opérations Couper, Copier et Coller avec d’autres applications|X|X|
+|Demander un code confidentiel simple pour l'accès|X|X|
+|Remplacer le code confidentiel intégré de l’application par le code confidentiel Intune|X||
+|Spécifier le nombre de tentatives avant réinitialisation du code confidentiel|X|X|
+|Autoriser une empreinte digitale à la place du code confidentiel|X|X|
+|Autoriser la reconnaissance faciale à la place du code PIN (iOS uniquement)|X|X|
+|Exiger des informations d'identification d'entreprise pour l'accès|X|X|
+|Bloquer l’exécution des applications gérées sur les appareils jailbreakés ou rootés|X|X|
+|Chiffrer les données de l'application|X|X|
+|Revérifier les spécifications requises pour l’accès après un nombre de minutes spécifié|X|X|
+|Spécifier la période de grâce hors connexion|X|X|
+|Bloquer la capture d’écran (Android uniquement)|X|X|
+|Prise en charge de GAM sans inscription de l’appareil|X|X|
+|Réinitialisation complète|X|X|
+|Réinitialisation sélective <br></br>**Remarque :** pour iOS, quand le profil de gestion est supprimé, l’application est également supprimée.|X||
+|Empêcher « Enregistrer sous »|X||
+|Configuration d'application ciblée|X||
+|Prise en charge des identités multiples|X||
+|Style personnalisable |X|||
+|Connexions VPN d’application à la demande avec Citrix mVPN|X|X| 
+|Désactiver la synchronisation des contacts|X|X|
+|Désactiver l’impression|X|X|
+|Exiger une version minimale de l’application|X|X|
+|Exiger une version minimale du système d’exploitation (iOS et Android)|X|X|
+|Exiger une version minimale du correctif de sécurité Android (Android uniquement)|X|X|
+|Exiger une version minimale du SDK Intune pour iOS (iOS uniquement)|X|X|
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur les stratégies de protection des applications et Intune, consultez les rubriques suivantes :
 
-  -  [Outil de création de package de restrictions d’application Android](app-wrapper-prepare-android.md)</br>
+  - [Outil de création de package de restrictions d’application Android](app-wrapper-prepare-android.md)</br>
   - [Outil de création de package de restrictions d’application iOS](app-wrapper-prepare-ios.md)</br>
   - [Utiliser le SDK pour activer des applications pour la gestion des applications mobiles](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
