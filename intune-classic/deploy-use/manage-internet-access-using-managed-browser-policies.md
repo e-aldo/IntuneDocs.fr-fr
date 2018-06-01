@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1722defcb29c9cd5a15c68e01114f4ffb80e3859
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34456365"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gérer l'accès à Internet à l'aide de stratégies Managed Browser avec Microsoft Intune
 
@@ -61,7 +62,7 @@ Intune Managed Browser prend en charge l’ouverture de contenu web des [parte
     - **Description**. Indiquez une description générale de la stratégie Managed Browser et d'autres informations pertinentes pour mieux la localiser.
     - **Activer une liste verte ou une liste rouge pour limiter les URL que Managed Browser peut ouvrir**. Sélectionnez l’une des options suivantes :
         - **Autoriser Managed Browser à ouvrir uniquement les URL ci-dessous (liste autorisée)**. Spécifiez une liste des URL que Managed Browser peut ouvrir.
-        - **Empêcher Managed Browser d(ouvrir les URL ci-dessous (liste bloquée)**. Spécifiez une liste des URL dont Managed Browser doit empêcher l’ouverture.
+        - **Empêcher Managed Browser d'ouvrir les URL ci-dessous (liste bloquée)**. Spécifiez une liste des URL dont Managed Browser doit empêcher l’ouverture.
 **Remarque** : Vous ne pouvez pas inclure des URL autorisées et bloquées dans la même stratégie Managed Browser.
 Pour plus d’informations sur les formats d’URL que vous pouvez spécifier, consultez **Format des URL autorisées et des URL bloquées** dans cette rubrique.
 
@@ -113,16 +114,16 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
 - Utilisez le tableau suivant pour en savoir plus sur les modèles autorisés que vous pouvez utiliser pour spécifier des URL :
 
-|                  URL                  |                     Détails                      |                                                Correspond à                                                |                                Ne correspond pas à                                 |
+|                  Adresse URL                  |                     Détails                      |                                                Correspond à                                                |                                Ne correspond pas à                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              Correspond à une page unique               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              Correspond à une page unique               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42> ;     | Correspond à toutes les URL commençant par www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|        http://www.contoso.com         |              Correspond à une page unique               |                                            <www.contoso.com>                                           |  host.contoso.com<br /><br /><www.contoso.com/images><br /><br />contoso.com/   |
+|          http://contoso.com           |              Correspond à une page unique               |                                             contoso.com/                                              | host.contoso.com<br /><br /><www.contoso.com/images><br /><br /><www.contoso.com>  |
+|    <http://www.contoso.com/&#42> ;     | Correspond à toutes les URL commençant par www.contoso.com  |      <www.contoso.com> <br /><br /><www.contoso.com/images><br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
 |    http://&#42;.contoso.com/&#42;     |     Correspond à tous les sous-domaines sous contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             Correspond à un dossier unique              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|     http://www.contoso.com/images     |             Correspond à un dossier unique              |                                        <www.contoso.com/images>                                         |                          <www.contoso.com/images/dogs>                          |
 |       http://www.contoso.com:80       |  Correspond à une page unique, via l’utilisation d’un numéro de port   |                                       http://www.contoso.com:80                                       |                                                                               |
 |        https://www.contoso.com        |          Correspond à une page unique sécurisée           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42> ; |    Correspond à un dossier unique et à tous ses sous-dossiers    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+| <http://www.contoso.com/images/&#42> ; |    Correspond à un dossier unique et à tous ses sous-dossiers    |                 <www.contoso.com/images/dogs><br /><br /><www.contoso.com/images/cats>                   |                            <www.contoso.com/videos>                             |
 
 - Voici quelques exemples d’entrées que vous ne pouvez pas spécifier :
 
@@ -130,11 +131,11 @@ Utilisez les informations suivantes pour en savoir plus sur les formats et les c
 
   - &#42;.contoso/&#42;
 
-  - www.contoso.com/&#42;images
+  - <www.contoso.com/>&#42;images
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - <www.contoso.com/>&#42;images&#42;pigs
 
-  - www.contoso.com/page&#42;
+  - <www.contoso.com/page>&#42;
 
   - Adresses IP
 

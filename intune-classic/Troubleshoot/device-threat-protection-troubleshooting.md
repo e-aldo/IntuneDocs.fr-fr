@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 643ac4c96297ffc24d9460546fe183d2a1316654
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6262fee0051827794c49ebe10361b1a3b280b140
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34470795"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Résoudre les problèmes d’intégration de Lookout avec Intune
 
@@ -36,7 +37,7 @@ Lookout MTP autorise uniquement les utilisateurs d’un groupe Azure AD configur
 
 * E-mail : enterprisesupport@lookout.com
 * En vous connectant à la [console MTP](http://aad.lookout.com) et en accédant au module **Support**
-* Accédez à https://enterprise.support.lookout.com/hc/requests et effectuez une demande de support technique.
+* Accédez à <https://enterprise.support.lookout.com/hc/requests> et effectuez une demande de support technique.
 
 ## <a name="unable-to-sign-in"></a>Connexion impossible
 L’erreur suivante se produit si l’administrateur général Azure AD n’a pas accepté l’installation initiale de Lookout.
@@ -81,7 +82,7 @@ Vous pouvez également accéder au module **Appareils** dans la [console Lookout
 Si le nouvel utilisateur est membre d’un groupe d’inscription Lookout MTP, l’appareil s’affiche une fois qu’Azure AD l’a associé au nouvel utilisateur.
 
 ## <a name="compliance-remediation-workflows"></a>Étapes de la correction de conformité
-- [Vous êtes invité à installer Lookout for Work sur votre appareil Android]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+- [Vous êtes invité à installer Lookout for Work sur votre appareil Android](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 - [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil Android](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [Vous devez résoudre une menace que Lookout for Work a détectée sur votre appareil iOS](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
