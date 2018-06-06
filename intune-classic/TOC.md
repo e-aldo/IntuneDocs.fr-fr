@@ -5,9 +5,9 @@
 ## [Scénarios courants](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
 
-# [Démarrer](get-started/get-started.md)
+# [Bien démarrer](get-started/get-started.md)
 ## [Configurer Intune](/intune/setup-steps?toc=/intune-classic/toc.json)
-### Conditions préalables
+### Prérequis
 #### [Appareils pris en charge](/intune/supported-devices-browsers?toc=/intune-classic/toc.json)
 #### [Utilisation du réseau](/intune/network-bandwidth-use?toc=/intune-classic/toc.json)
 ### [Se connecter à Intune](/intune/account-sign-up?toc=/intune-classic/toc.json)
@@ -17,7 +17,6 @@
 ### [Organiser les utilisateurs et les appareils](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Déployer des stratégies et des applications](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Personnaliser le portail d’entreprise](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [Inscrire des appareils](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Tâches de post-configuration](get-started/post-configuration-tasks.md)
 ## Étapes suivantes
 ### [Éviter les fuites de données d’entreprise à partir d’applications mobiles Office 365](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [Restaurer des appareils iOS gérés](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Paramètres Android et Samsung KNOX](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Utiliser une stratégie personnalisée pour créer un profil Wi-Fi avec une clé prépartagée](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [Utiliser une stratégie personnalisée pour créer un profil VPN par application pour les appareils Android](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [Utiliser des stratégies personnalisées pour autoriser et bloquer des applications pour les appareils Samsung KNOX](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Paramètres Android for Work](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Paramètres Windows 8 et Windows 8.1](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [Mettre des appareils hors service](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [Ajouter des applications](deploy-use/add-apps.md)
-### [Ajouter des applications pour les appareils inscrits](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Chargement indépendant d'applications Windows](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [Déployer des applications](deploy-use/deploy-apps.md)
-### [Déployer des applications sur des appareils et des PC](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [Déployer des applications sur des appareils Android for Work](deploy-use/android-for-work-apps.md)
-### [Surveillance des applications](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [Gérer les applications achetées en volume](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [Gérer les applications iOS achetées en volume](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [Gérer les applications Windows achetées en volume](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## Configurer des applications
 ### [Mettre à jour des applications](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [Utiliser des applications avec l’accès conditionnel basé sur les applications](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [Bloquer les applications sans ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Protéger l’accès à des réseaux (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Protéger l’accès en fonction du risque évalué pour l’appareil, le réseau et l’application](deploy-use/mobile-threat-defense.md)
 #### [Connecteur de protection contre les menaces mobiles pour Lookout](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [Valider des stratégies de protection des applications](deploy-use/validate-mobile-application-management.md)
 #### [Surveiller la conformité des stratégies de protection d’applications](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [Gérer les transferts de données entre applications iOS](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [Console d’administration Intune pour les stratégies de gestion des applications mobiles](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Préparer des applications métier pour la gestion des applications mobiles](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## Mettre des applications et des données hors service
 ### [Utiliser la réinitialisation sélective ou complète](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [Mettre hors service des applications](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Réinitialiser les données d’applications d’entreprise managées](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Modifier votre autorité de gestion des appareils mobiles](deploy-use/change-mdm-authority.md)
@@ -238,7 +225,7 @@
 ## [Plug-in Cordova du SDK d’application Intune](/intune/app-sdk-cordova?toc=/intune-classic/toc.json)
 ## [Composant Xamarin du SDK d’application Intune](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
-# [Résoudre les problèmes](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
+# [Dépannage](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [Guide pratique pour obtenir un support technique](/intune/get-support?toc=/intune-classic/toc.json)
 ## [Surveiller Intune à l’aide de rapports](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Résoudre les problèmes liés à Endpoint Protection](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)

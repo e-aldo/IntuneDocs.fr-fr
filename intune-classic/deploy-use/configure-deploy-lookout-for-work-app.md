@@ -14,11 +14,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d997e9db7aa2af4e598d47ab3c9a678e889632e8
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569389"
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Configurer et déployer l’application Lookout for Work
 
@@ -85,11 +86,11 @@ Cet article explique comment configurer et déployer l’application Lookout for
 
    Choisissez l’option **Installation requise** pour exiger que l’application Lookout soit installée sur l’appareil de l’utilisateur.
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Que se passe-t-il quand l’application déployée est ouverte sur l’appareil ?
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Quand l’utilisateur ouvre l’application Lookout for Work sur l’appareil, il est invité à activer l’application et à choisir l’option Se connecter avec Azure Active Directory. Une procédure pas à pas pour l’utilisateur final est décrite dans les rubriques suivantes :
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Que se passe-t-il quand l’application déployée est ouverte sur l’appareil ? 
+Quand l’utilisateur ouvre l’application Lookout for Work sur l’appareil, il est invité à activer l’application et à choisir l’option Se connecter avec Azure Active Directory. Une procédure pas à pas pour l’utilisateur final est décrite dans les rubriques suivantes :
 
 * [Vous êtes invité à installer Lookout for Work sur votre appareil Android](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-
+    
 * [Vous devez résoudre une menace détectée par Lookout for Work sur votre appareil Android](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Étapes suivantes
