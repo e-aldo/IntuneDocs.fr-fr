@@ -53,7 +53,7 @@
       href: data-outside-protect.md
     - name: Éviter les fuites de données sur les appareils non gérés
       href: data-leak-prevention.md
-    - name: Comparer MDM et GAM
+    - name: Comparer MDM et MAM
       href: byod-technology-decisions.md
 - name: Concepts
   items:
@@ -330,7 +330,7 @@
         - name: Configurer des fonctionnalités d’appareil
           href: device-features-configure.md
           items:
-            - name: AirPrint pour iOS et Mac OS
+            - name: AirPrint pour iOS et MacOS
               href: air-print-settings-ios-macos.md
             - name: AirPlay pour iOS
               href: airplay-settings-ios.md
@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: "Windows\_10"
               href: endpoint-protection-windows-10.md
+        - name: Configurer les paramètres kiosque
+          href: kiosk-settings.md
         - name: Configurer les paramètres de courrier
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 et Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Éducation
+          items:
+            - name: Appareils partagés iOS
+              href: education-settings-configure-ios-shared.md
+            - name: "Windows\_10"
+              href: education-settings-configure.md
         - name: "Configurer les paramètres de mise à niveau Windows\_10"
           href: edition-upgrade-configure-windows-10.md
-        - name: Configurer les paramètres de Windows 10 Éducation
-          href: education-settings-configure.md
-        - name: Configurer les appareils partagés d’iOS Éducation
-          href: education-settings-configure-ios-shared.md
         - name: Configurer des stratégies de mise à jour d’iOS
           href: software-updates-ios.md
         - name: Configurer des certificats
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Créer une stratégie Windows
           href: compliance-policy-create-windows.md
+        - name: Stratégie basée sur l’emplacement
+          href: use-network-locations.md
         - name: Évaluer la stratégie
           href: policy-evaluate.md
         - name: Actions en cas de non-conformité
@@ -722,7 +728,7 @@
               href: reports-ref-devices.md
             - name: Informations de référence sur l’entité d’extension de la gestion Intune
               href: reports-ref-intunemanagementextension.md
-            - name: Informations de référence sur les entités de gestion des applications mobiles (GAM)
+            - name: Informations de référence sur les entités de gestion des applications mobiles (MAM)
               href: reports-ref-mobile-app-management.md
             - name: Informations de référence sur les entités de stratégie
               href: reports-ref-policy.md

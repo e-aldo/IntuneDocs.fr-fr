@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3ceaaa1cce79483c446342b12d9918bb6beac42
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 356997859942443ace0749ece8954bf609f9d91e
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703296"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Réinitialiser le code secret sur des appareils Windows à l’aide d’Intune
 
@@ -25,10 +26,10 @@ Vous pouvez réinitialiser le code secret pour des appareils Windows. La fonctio
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge
 
-- Windows 10 Creators Update et versions ultérieures (joint à Azure AD)
+- Windows 10 Mobile exécutant Creators Update et les versions ultérieures (joint à Azure AD).
 
 Les plateformes suivantes ne sont **pas** prises en charge :
-- Windows Phone
+- Windows
 - iOS
 - macOS
 - Android

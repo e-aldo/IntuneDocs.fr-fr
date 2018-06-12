@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744990"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Ajouter des applications à Microsoft Intune
 
@@ -40,7 +41,7 @@ Intune prend en charge un large éventail de types d’applications. Les options
 | Applications intégrées    | Intune installe l’application sur l’appareil.  | Les mises à jour de l’application sont automatiques.  |
 | Applications sur le web (lien Web) | Intune crée un raccourci vers l’application web sur l’écran d’accueil de l’appareil.  | Les mises à jour de l’application sont automatiques.    |
 
-### <a name="specific-app-type-details"></a>Détails sur les type spécifiques d’application
+### <a name="specific-app-type-details"></a>Détails sur les types spécifiques d’application
  
 Le tableau suivant répertorie les types d’applications spécifiques et la façon dont vous pouvez les ajouter dans le panneau Intune **Ajouter une application** :
 
@@ -153,6 +154,9 @@ Lorsque vous ajoutez une application à Intune, vous avez la possibilité de sé
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Applications automatiquement ajoutées par Intune
 
 Intune contenait auparavant un nombre d’applications intégrées que vous pouviez affecter rapidement. Après examen des commentaires des clients d’Intune, nous avons décidé de supprimer cette liste. Les applications intégrées ne sont donc plus affichées. Toutefois, si vous avez déjà affecté des applications intégrées, celles-ci restent visibles dans la liste des applications. Vous pouvez continuer à affecter les applications en fonction de vos besoins.
+
+> [!NOTE]
+> Pour une application obligatoire qui n’est pas une application métier, Intune tente de l’installer en envoyant une commande d’installation chaque fois que l’appareil s’enregistre. En effet, l’application n’est pas détectée et son état d’installation n’est pas *Installation en attente*.
 
 ## <a name="installing-updating-or-removing-required-apps"></a>Installation, mise à jour ou suppression d’applications obligatoires
 

@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703279"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application
 
@@ -39,7 +40,7 @@ Si l’appareil est **inscrit pour la gestion dans Intune**, l’utilisateur voi
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Utilisation d’applications avec prise en charge de plusieurs identités
 
-Les stratégies de protection d’application n’entrent en vigueur qu’au moment où un utilisateur tente d’accéder à des données professionnelles.  Vous pouvez constater des comportements différents si l’utilisateur accède à l’application pour une utilisation personnelle. 
+Les stratégies de protection d’application entrent en vigueur uniquement quand un utilisateur tente d’accéder à des données professionnelles. Vous pouvez constater un comportement différent si l’utilisateur tente d’accéder à l’application pour une utilisation personnelle. Les stratégies ne s’appliquent pas non plus à un nouveau contenu qui n’est pas encore enregistré. Un contenu nouveau est considéré comme informations de l’entreprise uniquement après avoir été enregistré dans un emplacement d’entreprise, comme SharePoint ou OneDrive Entreprise.
 
 Pour les applications qui prennent en charge plusieurs identités, Intune applique uniquement les stratégies de protection d’application si un utilisateur accède à des données professionnelles.  Par exemple, un utilisateur peut recevoir une invite lui demandant d’entrer un code PIN.  Dans **l’application Outlook**, une invite s’affiche quand un utilisateur lance l’application. Dans **l’application OneDrive**, une invite s’affiche quand un utilisateur tape le compte professionnel.  Dans Microsoft **Word**, **PowerPoint** et **Excel**, une invite s’affiche quand un utilisateur accède à des documents d’entreprise sur OneDrive.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gestion des comptes d’utilisateur sur l’appareil

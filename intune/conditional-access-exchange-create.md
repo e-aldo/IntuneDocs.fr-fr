@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744769"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Créer une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité
 
@@ -37,9 +38,9 @@ Avant de configurer l’accès conditionnel, vérifiez les éléments suivants :
 - Vous devez utiliser le [connecteur Exchange Active Sync sur site](exchange-connector-install.md) qui connecte Intune à Exchange sur site.
 
     >[!IMPORTANT]
-    >Le connecteur Exchange local est propre à votre client Intune et ne peut pas être utilisé avec un autre client. Vous devez également vérifier que le connecteur Exchange de votre client est installé **sur un seul ordinateur**.
+    >Le connecteur Exchange local est propre à votre client Intune et ne peut pas être utilisé avec un autre client. Intune prend désormais en charge plusieurs connecteurs Exchange locaux par abonnement. Si vous avez plusieurs organisations Exchange locales, vous pouvez configurer un connecteur distinct pour chacune d’elles.
 
-- Vous pouvez installer le connecteur sur n’importe quel ordinateur, tant que celui-ci peut communiquer avec le serveur Exchange.
+- Vous pouvez installer le connecteur d’une organisation Exchange locale sur n’importe quelle machine, tant que celle-ci peut communiquer avec le serveur Exchange.
 
 - Le connecteur prend en charge l’**Environnement CAS Exchange**. Techniquement, vous pouvez installer directement le connecteur sur le serveur CAS Exchange si vous le souhaitez, mais cette opération est déconseillée car elle augmente la charge sur le serveur. Quand vous configurez le connecteur, vous devez faire en sorte qu’il communique avec l’un des serveurs CAS Exchange.
 
@@ -49,7 +50,7 @@ Avant de configurer l’accès conditionnel, vérifiez les éléments suivants :
     - Être **inscrit** auprès d’Intune ou avoir un PC joint à un domaine.
     - Être **inscrit dans Azure Active Directory**. En outre, l’ID Exchange ActiveSync du client doit être inscrit auprès d’Azure Active Directory.
 <br></br>
-- Le service AAD DRS est activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service ADFS Device Registration Service ne voient pas les appareils inscrits dans leur annuaire Active Directory local. **Cela ne s’applique pas aux PC Windows ni aux appareils Windows Phone**.
+- Le service Azure AD Device Registration Service (DRS) est activé automatiquement pour les clients Intune et Office 365. Les clients qui ont déjà déployé le service ADFS Device Registration Service ne voient pas les appareils inscrits dans leur annuaire Active Directory local. **Cela ne s’applique pas aux PC Windows ni aux appareils Windows Phone**.
 
 - **Conforme** aux stratégies de conformité d’appareil déployées sur cet appareil.
 
@@ -89,11 +90,11 @@ L'application native **Courrier** sur Windows 8.1 et les versions ultérieures (
 1. Dans le volet **Accès à Exchange sur site**, choisissez **Oui** pour activer le contrôle d’accès Exchange sur site.
 
     > [!NOTE]
-    > Si vous n’avez pas configuré le connecteur Exchange Active Sync sur site, cette option est désactivée.  Vous devez tout d’abord installer et configurer ce connecteur avant d’activer l’accès conditionnel pour Exchange sur site. Pour plus de détails, consultez la rubrique [Installer le connecteur Exchange local de Microsoft Intune](exchange-connector-install.md)
+    > Si vous n’avez pas configuré de connecteur Exchange Active Sync local, cette option est désactivée.  Vous devez tout d’abord installer et configurer au moins un connecteur avant d’activer l’accès conditionnel pour Exchange local. Pour plus de détails, consultez la rubrique [Installer le connecteur Exchange local de Microsoft Intune](exchange-connector-install.md)
 
 1. Sous **Affectation**, choisissez **Groupes inclus**.  Utilisez le groupe d’utilisateurs de sécurité auquel appliquer l'accès conditionnel. Dans ce cas, les utilisateurs doivent inscrire leurs appareils auprès d’Intune et se conformer aux profils de conformité.
 
-1. Si vous voulez exclure des groupes d’utilisateurs spécifiques, vous pouvez le faire en choisissant **Groupes exclus** et en sélectionnant un groupe d’utilisateurs exempté de l’inscription de l'appareil et de la conformité.
+1. Si vous voulez exclure des groupes d’utilisateurs spécifiques, vous pouvez le faire en choisissant **Groupes exclus**, puis en sélectionnant un groupe d’utilisateurs exempté de l’inscription et de la conformité des appareils.
 
 1. Sous **Paramètres**, choisissez **Notifications utilisateur** pour modifier l'e-mail par défaut. Ce message est envoyé aux utilisateurs si leur appareil n’est pas conforme alors qu'ils souhaitent accéder à Exchange sur site. Le modèle de message utilise le langage de balisage.  Vous voyez également un aperçu du message en cours de frappe.
     > [!TIP]

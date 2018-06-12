@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/26/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744905"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Windows dans Intune
 
@@ -111,21 +112,20 @@ Les PC Windows 8.1 retournent la version **3**. Si la règle de la version du sy
 - **Exiger BitLocker** : quand BitLocker est activé, l’appareil peut protéger les données stockées sur le disque contre tout accès non autorisé au moment de la désactivation ou de la mise en veille prolongée du système. Le Chiffrement de lecteur BitLocker Windows chiffre toutes les données stockées sur le volume de système d’exploitation Windows. BitLocker utilise le module de plateforme sécurisée (TPM) pour protéger le système d’exploitation Windows et les données utilisateur. Il permet également de protéger l’ordinateur contre les tentatives de falsification, même si celui-ci est laissé sans surveillance, perdu ou volé. Si l’ordinateur est équipé d’un module de plateforme sécurisée compatible, BitLocker utilise ce module pour verrouiller les clés de chiffrement qui protègent les données. Ainsi, les clés ne sont accessibles qu’une fois que le module de plateforme sécurisée a vérifié l’état de l’ordinateur.
 - **Exiger l’activation du démarrage sécurisé sur l’appareil** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état approuvé basé sur les paramètres d’usine. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie la signature avant de laisser la machine démarrer. Si des fichiers ont été falsifiés et que leur signature a été rompue, le système ne démarre pas.
 - **Exiger l’intégrité du code** : l’intégrité du code est une fonctionnalité qui valide l’intégrité d’un fichier de pilote ou d’un fichier système, chaque fois qu’il est chargé en mémoire. L’intégrité du code détecte si un fichier système ou un pilote non signé est chargé dans le noyau. Cette fonctionnalité détecte également si un fichier système a été modifié par un logiciel malveillant exécuté par un compte d’utilisateur ayant des privilèges d’administrateur.
-- **Exiger que l’appareil se situe au niveau de menace d’appareil ou en dessous** : utilisez ce paramètre pour considérer l’évaluation des risques de vos services Threat Defense comme une condition de conformité. Choisissez le niveau de menace maximal autorisé :
-  - **Sécurisé** : cette option est la plus sécurisée, car l’appareil ne doit présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
-  - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
-  - **Moyen** : l’appareil est jugé conforme si les menaces présentes sur celui-ci sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
-  - **Élevé** : cette option est la moins sécurisée, elle autorise tous les niveaux de menace. Elle peut s’avérer utile si vous utilisez cette solution uniquement à des fins de création de rapports.
 
 Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
 ### <a name="device-properties"></a>Propriétés des appareils
 
-- **Version minimale du système d’exploitation** : entrez la version minimale autorisée au format numérique majeure.mineure.build.révision. La valeur build.révision doit correspondre à la version retournée par la commande `ver` ou `winver`.
+- **Version minimale du système d’exploitation** : entrez la version minimale autorisée, au format numérique **major.minor.build.CU**. Pour obtenir la valeur correcte, ouvrez une invite de commandes, puis tapez `ver`. La commande `ver` retourne la version au format suivant :
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   Si un appareil a une version antérieure à la version de système d’exploitation spécifiée, il est signalé comme non conforme. Un lien avec des informations sur la mise à niveau s’affiche. L’utilisateur final peut choisir de mettre à niveau son appareil, après quoi il pourra accéder aux ressources de l’entreprise.
 
-- **Version maximale du système d’exploitation** : entrez la valeur maximale autorisée au format numérique major.minor.build.révision. La valeur build.révision doit correspondre à la version retournée par la commande `ver` ou `winver`.
+- **Version maximale du système d’exploitation** : entrez la valeur maximale autorisée, au format numérique **major.minor.build.revision**. Pour obtenir la valeur correcte, ouvrez une invite de commandes, puis tapez `ver`. La commande `ver` retourne la version au format suivant :
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   Quand un appareil utilise une version du système d’exploitation ultérieure à celle spécifiée dans la règle, accès aux ressources de l’entreprise est bloqué et l’utilisateur est invité à contacter son administrateur. Jusqu’à ce qu’il y ait une modification de la règle pour autoriser la version du système d’exploitation, cet appareil ne peut pas être utilisé pour accéder aux ressources de l’entreprise.
 
@@ -161,9 +161,17 @@ Pour plus d’informations sur le fonctionnement du service HAS, consultez [Heal
 - **Nombre de mots de passe précédents avant d’autoriser leur réutilisation** : entrez le nombre d’anciens mots de passe qui ne peuvent pas être réutilisés.
 - **Exiger un mot de passe quand l’appareil sort d’un état d’inactivité (Mobile et Holographic)**  : permet de forcer les utilisateurs à entrer le mot de passe chaque fois que l’appareil sort d’un état d’inactivité.
 
-### <a name="encryption"></a>Chiffrement
+#### <a name="encryption"></a>Chiffrement
 
 - **Chiffrement du stockage de données sur l’appareil** : choisissez **Exiger** pour chiffrer le stockage des données sur vos appareils.
+
+### <a name="windows-defender-atp"></a>Windows Defender ATP
+
+- **Exiger que l’appareil se situe au niveau du score de risque machine ou en dessous** : utilisez ce paramètre pour considérer l’évaluation des risques de vos services Threat Defense comme une condition de conformité. Choisissez le niveau de menace maximal autorisé :
+  - **Sans risque** : cette option est la plus sécurisée, puisque l’appareil ne peut présenter aucune menace. Si des menaces d’un autre niveau sont détectées sur l’appareil, celui-ci est évalué comme non conforme.
+  - **Faible** : l’appareil est évalué comme conforme uniquement si les menaces détectées sont de niveau faible. La présence de menaces de niveau supérieur rend l’appareil non conforme.
+  - **Moyen** : l’appareil est jugé conforme si les menaces présentes sur celui-ci sont de niveau faible ou moyen. La présence de menaces de niveau élevé rend l’appareil non conforme.
+  - **Élevé** : cette option est la moins sécurisée, elle autorise tous les niveaux de menace. Elle peut s’avérer utile si vous utilisez cette solution uniquement à des fins de création de rapports.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744599"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Créer des profils VPN dans Intune
 
@@ -39,20 +40,21 @@ Vous pouvez utiliser des stratégies de configuration personnalisées Intune afi
 
 Vous pouvez créer des profils VPN à l’aide des types de connexions suivants :
 
-|Type de connexion|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Type de connexion|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Oui|Oui|Oui|Oui|Oui|Oui|
-|Cisco (IPSec)|Non|Oui|Non|Non|Non|Non|
-|Citrix|Oui|Oui|Non|Non|Non|Oui|
-|Client F5 Microsoft Edge|Oui|Oui|Oui|Oui|Oui|Oui|
-|SonicWall Mobile Connect|Oui|Oui|Oui|Oui|Oui|Oui|
+|Automatique|Non|Non|Non|Non|Non|Oui|
 |Check Point Capsule VPN|Oui|Oui|Oui|Oui|Oui|Oui|
 |Cisco AnyConnect|Oui|Oui|Oui|Non|Non|Non|
-|Automatique|Non|Non|Non|Non|Non|Oui|
+|SonicWall Mobile Connect|Oui|Oui|Oui|Oui|Oui|Oui|
+|Client F5 Microsoft Edge|Oui|Oui|Oui|Oui|Oui|Oui|
+|Palo Alto Networks GlobalProtect|Non|Oui|Non|Non|Non|Oui|
+|Pulse Secure|Oui|Oui|Oui|Oui|Oui|Oui|
+|Cisco (IPSec)|Non|Oui|Non|Non|Non|Non|
+|Citrix|Oui (Android uniquement)|Oui|Non|Non|Non|Oui|
 |IKEv2|Non|Non|Non|Non|Non|Oui|
 |L2TP|Non|Non|Non|Non|Non|Oui|
 |PPTP|Non|Non|Non|Non|Non|Oui|
-|Personnalisé|Non|Oui|Oui|Non|Non|Non|
+|VPN personnalisé|Non|Oui|Oui|Non|Non|Non|
 
 > [!IMPORTANT]
 > Avant de pouvoir utiliser les profils VPN affectés à un appareil, vous devez installer l’application VPN applicable pour le profil. Vous pouvez utiliser les informations de l’article [Qu’est-ce que la gestion des applications dans Microsoft Intune ?](app-management.md) pour vous aider à affecter l’application avec Intune.  
@@ -69,7 +71,7 @@ Découvrez comment créer des profils VPN personnalisés à l’aide des paramè
   - **Android**
   - **Android for Work**
   - **iOS**
-  - **MacOS**
+  - **macOS**
   - **Windows Phone 8.1**
   - **Windows 8.1 et versions ultérieures**
   - **Windows 10 et versions ultérieures**

@@ -5,18 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 5/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: c8751572ec2c072504b2442cb7e76496e969e0a2
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744888"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gérer les mises à jour logicielles dans Intune
 
@@ -166,6 +167,12 @@ Vous pouvez suspendre la réception des mises à jour qualité ou de fonctionnal
 > [!IMPORTANT]
 > Quand vous exécutez une commande de suspension, les appareils la reçoivent à leur prochaine connexion au service. Il se peut qu’ils installent une mise à jour planifiée avant d’effectuer la vérification auprès du service.
 > En outre, si un appareil cible est désactivé lorsque vous émettez la commande de suspension, lorsque vous l’allumez, il peut télécharger et installer les mises à jour planifiées avant d’effectuer les vérifications avec Intune.
+
+### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Désinstaller la dernière version à partir de mises à jour logicielles Windows 10 
+Si vous détectez un problème important sur vos machines Windows 10, vous pouvez choisir de désinstaller (restaurer) la dernière mise à jour des fonctionnalités ou la dernière mise à jour qualité. La désinstallation d’une mise à jour des fonctionnalités ou d’une mise à jour qualité est disponible uniquement pour le canal de maintenance sur lequel se trouve l’appareil. La désinstallation déclenche une stratégie pour restaurer la mise à jour précédente sur vos machines Windows 10. Pour les mises à jour des fonctionnalités en particulier, vous pouvez limiter de 2 à 60 jours la durée pendant laquelle une désinstallation de la version la plus récente peut être appliquée. Pour définir des options de désinstallation de mise à jour logicielle, sélectionnez **Mises à jour logicielles** dans le panneau **Microsoft Intune** dans le portail Azure. Sélectionnez ensuite **Anneaux de mise à jour Windows 10** dans le panneau **Mises à jour logicielles**. Vous pouvez alors choisir l’option **Désinstaller** dans la section **Vue d’ensemble**.
+
+> [!NOTE]
+> Sur les machines Windows 10, après la restauration réussie de la mise à jour qualité, les utilisateurs finaux peuvent toujours voir cette mise à jour en sélectionnant **Paramètres Windows** > **Mises à jour** >  **Historique des mises à jour**.
 
 ## <a name="windows-holographic-for-business-support"></a>Prise en charge de Windows Holographic for Business
 

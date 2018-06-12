@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744701"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Android dans Intune
 
@@ -122,6 +123,17 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 - **Intégrité du runtime de l’application Portail d’entreprise** : vérifie si l’environnement de runtime par défaut de l’application Portail d’entreprise est installé, s’il est correctement signé, s’il n’est pas en mode de débogage et s’il est installé à partir d’une source connue.
 - **Bloquer le débogage USB sur l’appareil** (Android 4.2 ou version ultérieure) : choisissez d’empêcher les appareils d’utiliser la fonctionnalité de débogage USB.
 - **Niveau minimal du correctif de sécurité** (Android 6.0 ou version ultérieure) : sélectionnez le niveau le plus ancien possible pour le correctif de sécurité d’un appareil. Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. Vous devez entrer la date au format `YYYY-MM-DD`.
+
+## <a name="locations"></a>Emplacements
+
+Dans votre stratégie, faites votre choix parmi les emplacements existants. Vous n’avez pas encore d’emplacement ? L’article [Utiliser des emplacements (délimitation du réseau) dans Intune](use-network-locations.md) fournit quelques conseils.
+
+1. Choisissez **Sélectionner les emplacements**.
+2. Dans la liste, vérifiez votre emplacement, puis choisissez **Sélectionner**.
+3. **Enregistrez** la stratégie.
+4. Sélectionnez **Actions en cas de non-conformité**. L’action par défaut marque immédiatement l’appareil comme étant non conforme. Cette action s’applique quand vous sélectionnez au moins un emplacement, et si l’appareil n’est pas connecté aux emplacements sélectionnés.
+
+  Vous pouvez changer cette action pour mettre à jour la planification quand l’appareil est marqué comme non conforme, par exemple après un jour. Vous pouvez également configurer une deuxième action qui envoie un e-mail à l’utilisateur quand l’appareil n’est plus conforme à vos emplacements.
 
 ## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
 

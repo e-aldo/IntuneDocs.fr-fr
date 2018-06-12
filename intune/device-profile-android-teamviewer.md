@@ -1,23 +1,24 @@
 ---
-title: "Administrer à distance des appareils dans Microsoft Intune - Azure | Microsoft Docs"
-description: "Afficher les rôles nécessaires pour utiliser TeamViewer, découvrir comment installer le connecteur TeamViewer et obtenir des instructions pas à pas pour administrer à distance des appareils à l’aide de Microsoft Intune dans le portail Azure"
-keywords: 
+title: Administrer à distance des appareils dans Microsoft Intune - Azure | Microsoft Docs
+description: Afficher les rôles nécessaires pour utiliser TeamViewer, découvrir comment installer le connecteur TeamViewer et obtenir des instructions pas à pas pour administrer à distance des appareils à l’aide de Microsoft Intune dans le portail Azure
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64f6dd6bf787a6f590655f03ac8f04312836e0b5
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744633"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Utiliser TeamViewer pour administrer à distance des appareils Intune
 
@@ -25,7 +26,7 @@ Il est possible d’administrer à distance des appareils gérés par Intune à 
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Utilisez un appareil pris en charge. Les appareils Android et Windows gérés par Intune prennent en charge l’administration à distance. TeamViewer peut ne pas prendre en charge Windows Holographique (HoloLens), Windows Collaboration (Surface Hub) ou Windows 10 S. Pour obtenir les dernières informations sur la prise en charge, visitez [TeamViewer](https://www.teamviewer.com).
+- Utilisez un appareil pris en charge. Les appareils Android, Windows, iOS et macOS gérés par Intune prennent en charge l’administration à distance. TeamViewer peut ne pas prendre en charge Windows Holographique (HoloLens), Windows Collaboration (Surface Hub) ou Windows 10 S. Pour obtenir les dernières informations sur la prise en charge, visitez [TeamViewer](https://www.teamviewer.com).
 
 - L’administrateur Intune dans le portail Azure doit avoir les [rôles Intune](role-based-access-control.md) suivants :  
 

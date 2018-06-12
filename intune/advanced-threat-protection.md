@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744667"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Activer Windows Defender ATP avec accès conditionnel dans Intune
 
@@ -51,19 +52,19 @@ Pour utiliser ATP avec Intune, les éléments suivants doivent être configurés
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
-3. Sélectionnez **Conformité de l’appareil** > **Windows Defender ATP** > **Ouvrir la console d’administration Windows Defender Advanced Threat Protection**.
+3. Sélectionnez **Conformité de l’appareil** > **Windows Defender ATP** > **Ouvrir le Centre de sécurité Windows Defender**.
 
-    ![Texte de remplacement](./media/atp-device-compliance-open-windows-defender.png)
+    ![Sélectionner l’option pour ouvrir le Centre de sécurité Windows Defender](./media/atp-device-compliance-open-windows-defender.png)
 
 4. Dans le **Centre de sécurité Windows Defender** :
     1. Sélectionnez **Paramètres** > **Fonctionnalités avancées**.
     2. Pour **Connexion Microsoft Intune**, choisissez **Activé** :
 
-        ![Texte de remplacement](./media/atp-security-center-intune-toggle.png)
+        ![Activer la connexion à Intune](./media/atp-security-center-intune-toggle.png)
 
     3. Sélectionnez **Enregistrer les préférences**.
 
-5. Revenez à Intune, **Conformité de l’appareil** > **Windows Defender ATP**. Définissez **Connecter les appareils Windows 10.0.15063+ à Windows Defender Advanced Threat Protection** avec la valeur **Activé**.
+5. Revenez à Intune, **Conformité de l’appareil** > **Windows Defender ATP**. Définissez **Connecter les appareils Windows versions 10.0.15063 et ultérieures à Windows Defender ATP** sur **Activé**.
 6. Sélectionnez **Enregistrer**.
 
 En général, cette tâche ne doit être effectuée qu’une seule fois. Si ATP est déjà activé dans votre ressource Intune, il est donc inutile de la répéter.
@@ -115,9 +116,9 @@ La stratégie de conformité détermine un niveau acceptable de risque sur un ap
 2. Sélectionnez **Conformité de l’appareil** > **Stratégies** > **Créer une stratégie**.
 3. Entrez un **Nom** et une **Description**.
 4. Dans **Plateforme**, sélectionnez **Windows 10 et ultérieur**.
-5. Dans les paramètres **Intégrité de l’appareil**, définissez **Exiger que l’appareil se situe au niveau de menace d’appareil ou en dessous** au niveau de votre choix :
+5. Dans les paramètres **Windows Defender ATP**, définissez **Exiger que l’appareil se situe au niveau du score de risque machine ou en dessous** sur le niveau de votre choix :
 
-  - **Sécurisé** : ce niveau est le plus sûr. Si l’appareil fait l’objet de menaces, il ne peut pas accéder aux ressources de l’entreprise. Si des menaces sont détectées, l’appareil est évalué comme non conforme.
+  - **Sans risque** : ce niveau est le plus sûr. Si l’appareil fait l’objet de menaces, il ne peut pas accéder aux ressources de l’entreprise. Si des menaces sont détectées, l’appareil est évalué comme non conforme.
   - **Faible** : l’appareil est conforme seulement si les menaces détectées sont de niveau faible. Les appareils avec des niveaux de menace moyen ou élevé ne sont pas conformes.
   - **Moyen** : l’appareil est conforme si les menaces détectées sont de niveau faible ou moyen. Si des menaces de niveau élevé sont détectées, l’appareil est considéré comme non conforme.
   - **Élevé** : ce niveau est le moins sécurisé et permet tous les niveaux de menace. Les appareils dont le niveau de menace est élevé, moyen ou faible sont donc considérés comme conformes.

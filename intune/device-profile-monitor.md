@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c2eb08db58940ed575b3dea011395edd6711fc
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744786"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Suivre les profils d’appareil dans Microsoft Intune
 
@@ -41,19 +42,27 @@ Une fois le profil d’appareil créé, Intune fournit des graphiques. Ces graph
 1. Sélectionnez un profil existant. Par exemple, sélectionnez un profil macOS.
 2. Sélectionnez l’onglet **Vue d’ensemble**.
 
-    Le graphique montre le nombre d’appareils attribués au profil d’appareil spécifique. Par exemple, si le profil d’appareil de la configuration s’applique aux appareils macOS, le graphique indique le nombre des appareils macOS.
+    Le graphique du haut montre le nombre d’appareils attribués au profil d’appareil spécifique. Par exemple, si le profil d’appareil de la configuration s’applique aux appareils macOS, le graphique indique le nombre des appareils macOS.
 
     Il indique également le nombre d’appareils pour d’autres plateformes ayant le même profil d’appareil. Par exemple, il affiche le nombre d’appareils non macOS.
 
     ![Afficher le nombre d’appareils attribués au profil d’appareil](./media/device-configuration-profile-graphical-chart.png)
 
-3. Sélectionnez le cercle dans le graphique. **État de l’appareil** s’ouvre.
+    Le graphique du bas montre le nombre d’utilisateurs attribués au profil d’appareil spécifique. Par exemple, si le profil d’appareil de la configuration s’applique aux utilisateurs macOS, le graphique indique le nombre d’utilisateurs macOS.
+
+3. Sélectionnez le cercle dans le graphique du haut. **État de l’appareil** s’ouvre.
 
     Les appareils attribués au profil sont répertoriés et il est indiqué si le profil est déployé avec succès. Notez également que seuls les appareils avec la plateforme spécifique sont répertoriés (par exemple, macOS).
 
-    Fermez les informations sur l’état de l’appareil.
+    Fermez les informations**État de l’appareil**.
 
-4. Dans les propriétés du profil (**Profils** > sélectionnez un profil spécifique), vous pouvez également modifier les propriétés existantes :
+4. Sélectionnez le cercle dans le graphique du bas. **État de l’utilisateur** s’ouvre. 
+
+    Les utilisateurs attribués au profil sont répertoriés et les informations indiquent si le profil est déployé avec succès. Notez également que seuls les utilisateurs avec la plateforme spécifique sont répertoriés (par exemple, macOS).
+
+    Fermez les informations **État de l’utilisateur**.
+
+5. De retour dans la liste **Profils**, sélectionnez un profil spécifique. Vous pouvez également changer les propriétés existantes :
   - **Propriétés** : modifiez le nom, ou mettez à jour les paramètres existants.
   - **Affectations** : incluez ou excluez des appareils que la stratégie doit appliquer. Choisissez **Groupes sélectionnés** pour choisir des groupes spécifiques.
   - **État de l’appareil** : les appareils attribués au profil sont répertoriés et il est indiqué si le profil est déployé avec succès. Vous pouvez sélectionner un appareil spécifique pour obtenir davantage d’informations, notamment les applications installées.

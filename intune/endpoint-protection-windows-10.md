@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744939"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Paramètres Endpoint Protection pour Windows 10 (et versions ultérieures) dans Intune
 
@@ -300,15 +301,21 @@ Utilisez ces options pour configurer les paramètres de sécurité locale sur le
 
 - **Minutes d’inactivité de l’écran de veille avant que l’économiseur d’écran s’active** : définit le nombre maximal de minutes d’inactivité sur l’écran de connexion du bureau interactif avant l’apparition de l’économiseur d’écran.
 - **Nécessiter CTRL+ALT+DEL pour ouvrir une session** : oblige l’utilisateur à appuyer sur CTRL+ALT+SUPPR pour pouvoir ouvrir une session.
-- **Comportement en cas de suppression de la carte à puce** : détermine ce qui se passe quand la carte à puce d’un utilisateur connecté est retirée du lecteur de carte à puce.
-Les [options LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) fournissent plus de détails.
+- **Comportement en cas de suppression de la carte à puce** : détermine ce qui se passe quand la carte à puce d’un utilisateur connecté est retirée du lecteur de carte à puce. Les options disponibles sont les suivantes :
+
+  - **Verrouiller la station de travail** : la station de travail est verrouillée quand la carte à puce est retirée. Cette option permet aux utilisateurs de quitter les lieux, d’emporter leur carte à puce et de conserver une session protégée.
+  - **Forcer la fermeture de session** : l’utilisateur est automatiquement déconnecté quand la carte à puce est retirée.
+  - **Déconnecter en cas de session Terminal Server** : le retrait de la carte à puce déconnecte la session sans déconnecter l’utilisateur. Cette option permet à l’utilisateur d’insérer la carte à puce et de reprendre la session ultérieurement, ou sur un autre ordinateur équipé d’un lecteur de carte à puce, sans avoir à se reconnecter. Si la session est locale, cette stratégie fonctionne comme l’option Verrouiller la station de travail.
+
+    Les [options LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) fournissent plus de détails.
 
 #### <a name="display"></a>Afficher
 
 - **Informations utilisateur sur l’écran de verrouillage** : configure les informations de l’utilisateur qui apparaissent lorsque la session est verrouillée. Si cette option n’est pas configurée, le nom d’utilisateur, le domaine et le nom d’utilisateur complet sont affichés.
+  - **Non configurée** : nom d’utilisateur, domaine et nom d’utilisateur complet
+  - **Nom d’affichage de l’utilisateur, domaine et nom d’utilisateur**
   - **Nom d'affichage de l'utilisateur uniquement**
   - **Ne pas afficher les informations utilisateur**
-  - **Non configurée** : nom d’utilisateur, domaine et nom d’utilisateur complet
 - **Masquer le dernier utilisateur connecté** : ne pas afficher le nom d’utilisateur de la dernière personne connectée à cet appareil.
 - **Masquer le nom d’utilisateur lors de la connexion** : ne pas afficher le nom d’utilisateur de la personne connectée à cet appareil une fois les informations d’identification entrées, avant l’affichage du bureau de l’appareil.
 - **Titre du message de connexion** : définit le titre du message pour les utilisateurs essayant de se connecter.
@@ -316,13 +323,13 @@ Les [options LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-ma
 
 ### <a name="network-access-and-security"></a>Accès réseau et sécurité
 
-- **Accès anonyme aux canaux nommés et aux partages** : restreint l’accès anonyme aux paramètres Partager et Canal nommé. S’applique aux paramètres accessibles de manière anonyme.
-- **Énumération anonyme des comptes SAM** : permet aux utilisateurs anonymes d’énumérer les comptes SAM. Windows autorise les utilisateurs anonymes à énumérer les noms des comptes de domaine et les partages réseau.
-- **Énumération anonyme des comptes SAM et des partages** : permet de bloquer l’énumération anonyme des comptes SAM et des partages. Windows autorise les utilisateurs anonymes à énumérer les noms des comptes de domaine et les partages réseau.
-- **Valeur de hachage LAN Manager stockée lors du changement de mot de passe** : à la prochaine modification du mot de passe, choisissez si la valeur de hachage LAN Manager (LM) est stockée pour le nouveau mot de passe. Elle n’est pas stockée par défaut.
-- **Demandes d’authentification PKU2U** : permet de bloquer les demandes d’authentification PKU2U vers cet appareil afin d’utiliser des identités en ligne.
-- **Restreindre les connexions RPC distantes à SAM** : modifie la chaîne SDDL (Security Descriptor Definition Language) par défaut pour autoriser ou empêcher les utilisateurs et groupes d’effectuer des appels à distance au SAM.
-- **Descripteur de sécurité**
+- **Accès anonyme aux canaux nommés et aux partages** : **Non configuré** (valeur par défaut) restreint l’accès anonyme aux paramètres de partage et de canal nommé. S’applique aux paramètres accessibles de manière anonyme.
+- **Énumération anonyme des comptes SAM** : **Autoriser** les utilisateurs anonymes à énumérer les comptes SAM. Windows autorise les utilisateurs anonymes à énumérer les noms des comptes de domaine et les partages réseau.
+- **Énumération anonyme des comptes SAM** : **Non configuré** (valeur par défaut) signifie que des utilisateurs anonymes peuvent énumérer les noms des comptes de domaine et des partages réseau. Pour empêcher l’énumération anonyme des comptes et partages SAM, définissez cette option sur **Bloquer**.
+- **Valeur de hachage LAN Manager stockée lors du changement de mot de passe** : lors du prochain changement du mot de passe, choisissez d’**Autoriser** LAN Manager (LM) à stocker la valeur de hachage du nouveau mot de passe. Quand la valeur définie est **Non configuré** (valeur par défaut), la valeur de hachage n’est pas stockée.
+- **Demandes d’authentification PKU2U** : **Bloquer** les demandes d’authentification PKU2U auprès de l’appareil afin d’utiliser des identités en ligne. **Non configuré** (valeur par défaut) autorise ces demandes.
+- **Restreindre les connexions RPC distantes à SAM** : **Autoriser** la chaîne SDDL (Security Descriptor Definition Language) par défaut à empêcher les utilisateurs et groupes d’effectuer des appels à distance au SAM. **Non configuré** (valeur par défaut) permet à la chaîne SDDL (Security Descriptor Definition Language) d’autoriser les utilisateurs et groupes à effectuer des appels à distance au SAM.
+  - **Descripteur de sécurité**
 
 ### <a name="recovery-console-and-shutdown"></a>Console de récupération et arrêt
 
@@ -359,13 +366,13 @@ Les [options LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-ma
 
 ### <a name="microsoft-network-client"></a>Client réseau Microsoft
 
-- **Communications signées numériquement (lorsque le serveur l'accepte)** : détermine si le client SMB tente de négocier la signature de paquet SMB. Lorsque cette option est activée (valeur par défaut), le client réseau Microsoft demande au serveur d’effectuer la signature de paquet SMB lors de la configuration de la session. Si la signature de paquet a été activée sur le serveur, la signature de paquet est négociée. Si cette stratégie est désactivée, le client SMB ne négocie jamais la signature de paquet SMB.
+- **Communications signées numériquement (lorsque le serveur l'accepte)** : détermine si le client SMB tente de négocier la signature de paquet SMB. Quand cette option est activée (Non configuré), le client réseau Microsoft demande au serveur d’effectuer la signature de paquet SMB lors de la configuration de la session. Si la signature de paquet est activée sur le serveur, la signature de paquet est négociée. Si cette stratégie est désactivée, le client SMB ne négocie jamais la signature de paquet SMB.
 - **Envoyer un mot de passe non chiffré aux serveurs SMB tiers** : lorsque cette option est activée, le redirecteur Server Message Block (SMB) est autorisé à envoyer des mots de passe en clair aux serveurs SMB non-Microsoft qui ne prennent pas en charge le chiffrement de mot de passe lors de l’authentification.
 
 ### <a name="microsoft-network-server"></a>Serveur réseau Microsoft
 
-- **Communications signées numériquement (lorsque le client l'accepte)** : détermine si le serveur SMB négocie la signature de paquet SMB avec les clients qui en font la demande. Lorsque cette option est activée, le serveur réseau Microsoft négocie la signature de paquet SMB comme demandé par le client. Autrement dit, si la signature de paquet a été activée sur le client, la signature de paquet est négociée. Si cette stratégie est désactivée (par défaut), le client SMB ne négocie jamais la signature de paquet SMB.
-- **Communications signées numériquement (toujours)** : détermine si la signature de paquet est requise par le composant serveur SMB. Lorsque cette option est activée, le serveur réseau Microsoft ne communique pas avec un client réseau Microsoft, sauf si le client accepte d’effectuer la signature de paquet SMB. Lorsque cette option est désactivée (par défaut), la signature de paquet SMB est négociée entre le client et le serveur.
+- **Communications signées numériquement (lorsque le client l'accepte)** : détermine si le serveur SMB négocie la signature de paquet SMB avec les clients qui en font la demande. Lorsque cette option est activée, le serveur réseau Microsoft négocie la signature de paquet SMB comme demandé par le client. Autrement dit, si la signature de paquet a été activée sur le client, la signature de paquet est négociée. Quand l’option a la valeur **Non configuré** ou est désactivée, le client SMB ne négocie jamais la signature de paquet SMB.
+- **Communications signées numériquement (toujours)** : détermine si la signature de paquet est requise par le composant serveur SMB. Lorsque cette option est activée, le serveur réseau Microsoft ne communique pas avec un client réseau Microsoft, sauf si le client accepte d’effectuer la signature de paquet SMB. Quand la valeur **Non configuré** est désactivée (valeur par défaut), la signature de paquet SMB est négociée entre le client et le serveur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
