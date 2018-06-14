@@ -53,7 +53,7 @@
       href: data-outside-protect.md
     - name: Éviter les fuites de données sur les appareils non gérés
       href: data-leak-prevention.md
-    - name: Comparer MDM et MAM
+    - name: Comparer MDM et GAM
       href: byod-technology-decisions.md
 - name: Concepts
   items:
@@ -270,6 +270,8 @@
           items:
             - name: Onglets Inclure et Exclure
               href: apps-inc-exl-assignments.md
+            - name: Déploiement d’applications Windows 10
+              href: apps-windows-10-app-deploy.md
         - name: Surveiller les applications
           href: apps-monitor.md
         - name: Configurer des applications
@@ -330,7 +332,7 @@
         - name: Configurer des fonctionnalités d’appareil
           href: device-features-configure.md
           items:
-            - name: AirPrint pour iOS et MacOS
+            - name: AirPrint pour iOS et Mac OS
               href: air-print-settings-ios-macos.md
             - name: AirPlay pour iOS
               href: airplay-settings-ios.md
@@ -644,6 +646,8 @@
       items:
         - name: Aider les utilisateurs à résoudre les problèmes
           href: help-desk-operators.md
+        - name: Résoudre les problèmes d'accès aux ressources d'entreprise
+          href: troubleshoot-company-resource-access-problems.md
         - name: Journaux d’audit pour les activités Intune
           href: monitor-audit-logs.md
         - name: Consulter les journaux de protection d’application
@@ -693,7 +697,9 @@
           href: app-wrapper-prepare-android.md
         - name: SDK d’application Intune pour Android
           href: app-sdk-android.md
-        - name: Composant Xamarin du kit SDK d’application Intune
+        - name: Plug-in Cordova du kit SDK d’application Intune
+          href: app-sdk-cordova.md
+        - name: Liaisons Xamarin du SDK d’application Intune
           href: app-sdk-xamarin.md
     - name: Utiliser l’entrepôt de données Intune
       href: reports-nav-create-intune-reports.md
@@ -728,7 +734,7 @@
               href: reports-ref-devices.md
             - name: Informations de référence sur l’entité d’extension de la gestion Intune
               href: reports-ref-intunemanagementextension.md
-            - name: Informations de référence sur les entités de gestion des applications mobiles (MAM)
+            - name: Informations de référence sur les entités de gestion des applications mobiles (GAM)
               href: reports-ref-mobile-app-management.md
             - name: Informations de référence sur les entités de stratégie
               href: reports-ref-policy.md

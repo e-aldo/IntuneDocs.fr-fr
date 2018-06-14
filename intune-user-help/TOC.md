@@ -137,6 +137,7 @@
 ### [Synchroniser votre appareil manuellement](sync-your-device-manually-windows.md)
 
 ### [Résolution des problèmes courants avec Windows](troubleshoot-your-device-windows.md)
+### [Résoudre des restrictions de point d’accès](resolve-access-point-restrictions.md)
 #### [Mon appareil Windows 10 ne s’inscrit pas](troubleshoot-your-windows-10-device-windows.md)
 #### [Mise à jour de votre appareil Windows](you-need-to-update-your-windows-device.md)
 #### [Envoyer des journaux à partir de l’application Portail d’entreprise](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [Supprimer votre appareil](remove-your-device-cpwebsite.md)
 ### [Réinitialiser le code d’accès de l’appareil](reset-your-passcode-cpwebsite.md)
 ### [Réinitialiser et effacer votre appareil](reset-erase-your-device-cpwebsite.md)
-### [Synchroniser votre appareil manuellement](sync-your-device-manually-cpwebsite.md)
