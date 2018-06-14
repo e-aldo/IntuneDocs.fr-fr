@@ -39,7 +39,7 @@ ms.locfileid: "34744650"
        - **Android**
        - **Android for Work**
        - **iOS**
-       - **macOS**
+       - **MacOS**
        - **Windows Phone 8.1**
        - **Windows 8.1 et versions ultérieures**
        - **Windows 10 et versions ultérieures**
@@ -51,7 +51,7 @@ ms.locfileid: "34744650"
        -  [Restrictions relatives aux appareils](device-restrictions-configure.md)
        -  [Endpoint Protection](endpoint-protection-configure.md)
        -  [Kiosque](kiosk-settings.md)
-       -  [E-mail](email-settings-configure.md)
+       -  [Courrier électronique](email-settings-configure.md)
        -  [VPN](vpn-settings-configure.md)
        -  [Wi-Fi](wi-fi-settings-configure.md)
        -  Éducation pour [Windows 10](education-settings-configure.md) et [iOS](wi-fi-settings-ios.md)

@@ -41,7 +41,7 @@ Intune prend en charge un large éventail de types d’applications. Les options
 | Applications intégrées    | Intune installe l’application sur l’appareil.  | Les mises à jour de l’application sont automatiques.  |
 | Applications sur le web (lien Web) | Intune crée un raccourci vers l’application web sur l’écran d’accueil de l’appareil.  | Les mises à jour de l’application sont automatiques.    |
 
-### <a name="specific-app-type-details"></a>Détails sur les types spécifiques d’application
+### <a name="specific-app-type-details"></a>Détails sur les type spécifiques d’application
  
 Le tableau suivant répertorie les types d’applications spécifiques et la façon dont vous pouvez les ajouter dans le panneau Intune **Ajouter une application** :
 

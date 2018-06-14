@@ -71,7 +71,7 @@ Découvrez comment créer des profils VPN personnalisés à l’aide des paramè
   - **Android**
   - **Android for Work**
   - **iOS**
-  - **macOS**
+  - **MacOS**
   - **Windows Phone 8.1**
   - **Windows 8.1 et versions ultérieures**
   - **Windows 10 et versions ultérieures**

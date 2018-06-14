@@ -48,7 +48,7 @@ Le menu [Créer des profils d’appareil](device-profile-create.md) fournit des 
 
 ## <a name="device-features---ios-and-macos"></a>Fonctionnalités de l’appareil - iOS et macOS
 
-Le profil [Fonctionnalités de l’appareil](device-features-configure.md) contrôle les fonctionnalités sur les appareils iOS et macOS comme AirPrint, les notifications et les configurations d’appareils partagées.
+Le profil [Fonctionnalités de l’appareil](device-features-configure.md) contrôle les fonctionnalités sur les appareils iOS et MacOS comme AirPrint, les notifications et les configurations d’appareils partagées.
 
 Cette fonctionnalité prend en charge :
 - iOS 
