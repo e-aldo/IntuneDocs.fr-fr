@@ -189,6 +189,10 @@
               href: apple-configurator-enroll-ios.md
         - name: Configurer l’inscription macOS
           href: macos-enroll.md
+        - name: Installer le logiciel client Intune sur des PC Windows
+          href: install-the-windows-pc-client-with-microsoft-intune.md
+        - name: Résoudre les problèmes d’inscription d’appareils
+          href: troubleshoot-device-enrollment-in-intune.md
     - name: Gérer des unités
       href: device-management.md
       items:
@@ -259,6 +263,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Applications métier Windows
                   href: lob-apps-windows.md
+                - name: Charger une version test d'applications métier Windows
+                  href: app-sideload-windows.md
                 - name: Applications métier macOS
                   href: lob-apps-macos.md
             - name: Applications web
@@ -678,8 +684,6 @@
               href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
-        - name: Charger des applications métier Windows de façon indépendante
-          href: app-sideload-windows.md
 - name: Guide pour développeurs
   items:
     - name: Protéger des applications avec le kit SDK d’application Intune
