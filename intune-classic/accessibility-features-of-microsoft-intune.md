@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013056"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Fonctionnalités d'accessibilité de Microsoft Intune
 Outre les fonctionnalités d’accessibilité et les outils de Microsoft Windows, les fonctionnalités suivantes rendent Microsoft Intune plus accessible aux personnes en situation de handicap : Utilisation des raccourcis clavier

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014127"
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Authentification multifacteur pour les inscriptions d’appareils Intune
 

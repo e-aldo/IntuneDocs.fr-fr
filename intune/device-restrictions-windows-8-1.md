@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31832998"
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Paramètres de restriction d’appareil Windows 8.1 et ultérieur dans Microsoft Intune
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31033298"
 ---
 # <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Gérer les conditions générales de votre entreprise pour l’accès utilisateur
 

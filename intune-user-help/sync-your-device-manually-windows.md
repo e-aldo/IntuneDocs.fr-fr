@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "34048017"
 ---
 # <a name="sync-your-windows-device-manually"></a>Synchroniser votre appareil Windows manuellement
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33927319"
 ---
 # <a name="install-apps-on-your-device"></a>Installer des applications sur votre appareil
 Installez des applications sur votre appareil à partir de l’application Portail d’entreprise pour Windows.

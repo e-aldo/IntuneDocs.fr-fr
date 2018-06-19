@@ -19,6 +19,7 @@ ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/20/2018
+ms.locfileid: "29999064"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Ressources supplémentaires pour la planification de votre déploiement Intune
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754618"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Envoyer les journaux aux développeurs du portail d’entreprise pour les appareils iOS
 

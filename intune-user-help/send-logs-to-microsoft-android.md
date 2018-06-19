@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020008"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Envoyer les journaux aux développeurs du portail d’entreprise pour les appareils Android
 

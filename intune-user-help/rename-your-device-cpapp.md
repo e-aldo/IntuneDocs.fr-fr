@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915826"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Renommer un appareil à partir de l’application Portail d’entreprise pour Windows
 Renommez un appareil afin de faciliter son identification. L’application Portail d’entreprise pour Windows vous permet de renommer les appareils Android, iOS et Windows connectés. 

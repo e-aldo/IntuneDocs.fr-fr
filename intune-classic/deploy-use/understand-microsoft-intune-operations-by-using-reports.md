@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023680"
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Présentation des opérations Microsoft Intune à l’aide de rapports
 

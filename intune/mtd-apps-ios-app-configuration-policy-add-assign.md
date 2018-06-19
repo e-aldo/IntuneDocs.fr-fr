@@ -20,6 +20,7 @@ ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32046381"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Ajouter et affecter des applications Mobile Threat Defense (MTD) avec Intune
 
@@ -109,7 +110,7 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 
 #### <a name="ios"></a>iOS
 
-- Contactez [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) pour obtenir l’application iOS. Consultez les instructions d’[ajout des applications du magasin iOS à Microsoft Intune](store-apps-ios.md), puis utilisez l’URL de l’Apple Store à l**’étape 12** dans la section **Configurer les informations sur l’application**.
+- Contactez [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) pour obtenir l’application iOS. Consultez les instructions d’[ajout des applications du magasin iOS à Microsoft Intune](store-apps-ios.md), puis utilisez l’URL de l’Apple Store à l **’étape 12** dans la section **Configurer les informations sur l’application**.
 
 ### <a name="zimperium"></a>Zimperium
 

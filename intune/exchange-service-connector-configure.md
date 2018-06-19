@@ -20,6 +20,7 @@ ms.sourcegitcommit: 71497f0215fc8bed454ac318b0548b1281a8fe0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33914153"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurer le connecteur de service Exchange pour Intune et Exchange Online
 

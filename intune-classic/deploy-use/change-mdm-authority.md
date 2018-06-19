@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31028059"
 ---
 # <a name="change-the-mdm-authority"></a>Changer l’autorité MDM
 À compter de Configuration Manager version 1610, vous pouvez changer votre autorité MDM sans avoir à contacter le Support Microsoft, et sans devoir désinscrire puis réinscrire vos appareils gérés existants. Cette rubrique décrit la procédure pour changer un locataire Microsoft Intune existant configuré à partir d’Intune et avec **Microsoft Intune** (version autonome) comme autorité MDM pour **Configuration Manager** (MDM hybride), sans devoir désinscrire puis réinscrire vos appareils gérés existants.
