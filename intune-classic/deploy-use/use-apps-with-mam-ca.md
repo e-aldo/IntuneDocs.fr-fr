@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018479"
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>Ce qui se passe quand une application est utilisée dans le cadre de l’accès conditionnel basé sur les applications
 

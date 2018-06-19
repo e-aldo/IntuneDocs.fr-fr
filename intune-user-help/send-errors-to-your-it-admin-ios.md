@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327702"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Envoyer des erreurs au support technique de votre entreprise en cas de problèmes avec un appareil iOS
 Vous pouvez parfois rencontrer une erreur pendant l’utilisation de l’application Portail d’entreprise sur votre appareil iOS. Lorsque cela se produit, vous pouvez envoyer les détails de l’erreur au support technique de votre entreprise. Ces détails fournissent le contexte nécessaire pour résoudre le problème pour vous.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/16/2018
+ms.locfileid: "29925979"
 ---
 # <a name="special-migration-considerations"></a>Facteurs de migration spécifiques à prendre en compte
 

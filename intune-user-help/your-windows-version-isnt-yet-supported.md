@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018071"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>La version du système d’exploitation Windows de votre appareil n’est pas encore prise en charge
 

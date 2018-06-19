@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755485"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil Windows à l’aide du Portail d’entreprise ?
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021510"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Surveiller les stratégies de protection des applications avec Microsoft Intune
 Vous pouvez surveiller l’état de conformité des stratégies de protection des applications que vous avez appliquées aux utilisateurs. Vous pouvez trouver des informations sur les utilisateurs concernés par les stratégies de protection des applications, l’état de conformité et tous les problèmes que vos utilisateurs pourraient rencontrer.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030524"
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Guide de référence des stratégies de configuration de Microsoft Intune
 

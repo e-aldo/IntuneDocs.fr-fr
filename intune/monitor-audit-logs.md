@@ -16,6 +16,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29962444"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Journaux d’audit pour les activités Intune
 Les journaux d’audit vous indiquent les activités qui génèrent un changement dans Microsoft Intune. Les actions Créer, Mettre à jour (modifier), Supprimer et Affecter, ou les tâches à distance, génèrent des événements d’audit que vous pouvez consulter. Vous pouvez consulter les journaux d’audit pour la plupart des charges de travail Intune. L’audit est activé par défaut pour tous les clients et il ne peut pas être désactivé. L’enregistrement des événements d’audit a commencé avec la version de fonctionnalités de décembre 2017 ; les événements antérieurs ne sont pas disponibles.

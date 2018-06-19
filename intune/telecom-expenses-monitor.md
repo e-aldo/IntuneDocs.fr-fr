@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31834082"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurer un service de gestion des dépenses en télécommunications dans Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

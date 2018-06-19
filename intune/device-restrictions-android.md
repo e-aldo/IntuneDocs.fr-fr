@@ -19,6 +19,7 @@ ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190654"
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Paramètres de restriction de Microsoft Intune pour les appareils Android et Samsung Knox Standard 
 

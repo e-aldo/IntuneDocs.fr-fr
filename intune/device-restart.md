@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31829314"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Redémarrer à distance des appareils avec Intune
 

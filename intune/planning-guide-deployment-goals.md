@@ -1,16 +1,16 @@
 ---
-title: "Déterminer les objectifs et les défis liés au déploiement"
+title: Déterminer les objectifs et les défis liés au déploiement
 titlesuffix: Microsoft Intune
-description: "Cet article permet de déterminer les objectifs et les défis liés au déploiement dans le cadre d'une implémentation de cloud Microsoft Intune uniquement."
-keywords: 
+description: Cet article permet de déterminer les objectifs et les défis liés au déploiement dans le cadre d'une implémentation de cloud Microsoft Intune uniquement.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29961460"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Déterminer les objectifs et les défis liés au déploiement
 

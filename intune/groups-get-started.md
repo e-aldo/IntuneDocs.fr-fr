@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31832525"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Groupes classiques Microsoft Intune dans le portail Azure
 

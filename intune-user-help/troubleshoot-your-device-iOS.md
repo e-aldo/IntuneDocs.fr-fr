@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755264"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Résoudre les problèmes courants avec votre appareil iOS
 

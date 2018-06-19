@@ -22,6 +22,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831795"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrire votre appareil macOS dans Intune avec l’application Portail d’entreprise
 

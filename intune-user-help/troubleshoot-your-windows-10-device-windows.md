@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018173"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Résolution de problèmes liés à l’inscription de votre appareil Windows 10
 Si vous avez suivi les étapes présentées dans la rubrique [Inscrire un appareil Windows 10 Mobile ou Windows 10 Desktop dans Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mais que vous ne pouvez pas toujours accéder à vos e-mails et fichiers professionnels ou scolaires, essayez les étapes de dépannage suivantes.

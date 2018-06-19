@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020620"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Déconnecter l’utilisateur actuel sur les appareils iOS gérés par Intune
 

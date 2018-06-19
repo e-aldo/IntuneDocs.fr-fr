@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755434"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>Installer Lookout for Work sur votre appareil iOS
 

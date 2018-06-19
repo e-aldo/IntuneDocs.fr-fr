@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014858"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Vous recevez une erreur lors de l’utilisation de l’application Portail d’entreprise
 

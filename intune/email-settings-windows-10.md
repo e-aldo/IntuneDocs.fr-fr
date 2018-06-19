@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831156"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>Paramètres de profil de messagerie dans Microsoft Intune pour les appareils exécutant Windows 10
 
