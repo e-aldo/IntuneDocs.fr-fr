@@ -135,6 +135,7 @@
 ### [Que se passe-t-il si vous réinitialisez votre appareil ?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Désactiver la collecte de données d’utilisation Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Synchroniser votre appareil manuellement](sync-your-device-manually-windows.md)
+### [Verrouiller les appareils à distance à partir de votre appareil Windows 10](remote-lock-your-device-cp-app.md) 
 
 ### [Résolution des problèmes courants avec Windows](troubleshoot-your-device-windows.md)
 ### [Résoudre des restrictions de point d’accès](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [J’ai besoin d’activer le contrôle de compte d’utilisateur](you-need-to-enable-uac-windows.md)
 #### [J’ai besoin de mettre à jour Windows](you-need-to-update-os-build-version-windows.md)
 #### [J’ai besoin d’activer Windows Defender](turn-on-defender-windows.md)
-## [Verrouiller à distance un appareil à partir de l’application Portail d’entreprise pour Windows](remote-lock-your-device-cp-app.md) 
+
 ## [Utilisation du site web Portail d’entreprise Intune](using-the-intune-company-portal-website.md)
 ### [Verrouiller son appareil à distance](remote-lock-your-device-cpwebsite.md)
 ### [Renommer votre appareil](rename-your-device-cpwebsite.md)
