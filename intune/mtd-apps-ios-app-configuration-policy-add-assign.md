@@ -135,7 +135,7 @@ Activez l’authentification Azure Active Directory pour les utilisateurs iOS de
 -   Vous devez **télécharger** le fichier de stratégie de configuration d’applications iOS : 
     -   Accédez à la [console de gestion Symantec Endpoint Protection](https://aad.skycure.com) et connectez-vous avec vos informations d’identification d’administrateur.
 
-    -   Accédez à **Paramètres**et, sous **intégrations**, choisissez **Intune**. Choisissez Sélection d’intégration EMM**. Choisissez **Microsoft**, puis enregistrez votre sélection.
+    -   Accédez à **Paramètres**et, sous **intégrations**, choisissez **Intune**. Choisissez **Sélection d’intégration EMM**. Choisissez **Microsoft**, puis enregistrez votre sélection.
 
     -   Cliquez sur le lien **Fichiers d’installation de l’intégration** et enregistrez le fichier \*.zip généré. Le fichier .zip contient le fichier * **.plist** qui sera utilisé pour créer la stratégie de configuration des applications iOS dans Intune.
 
