@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca19c189a48e8173232cfe6fde9e33eb6fb1090
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762227"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Utilisation du site web Portail d’entreprise Intune
 Le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) est une page web qui permet aux utilisateurs finaux de gérer les ordinateurs et appareils qu’ils ont inscrits dans Intune.
@@ -37,8 +38,6 @@ Voici les tâches que les utilisateurs peuvent effectuer à partir du site web P
 -   [Réinitialiser le code d’accès de l’appareil](reset-your-passcode-cpwebsite.md)
 
 -   [Verrouiller un appareil à distance](remote-lock-your-device-cpwebsite.md)
-
--   [Synchroniser votre appareil manuellement pour accélérer l’installation des applications](sync-your-device-manually-cpwebsite.md)
 
 -   Rechercher les informations de contact du support technique de l’entreprise, si vous les avez configurées
 

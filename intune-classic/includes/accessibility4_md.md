@@ -1,1 +1,1 @@
-Service clientèle pour les personnes souffrant de troubles auditifs
+Service client pour les personnes atteintes de handicaps auditifs

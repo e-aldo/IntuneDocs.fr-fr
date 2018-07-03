@@ -14,12 +14,12 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e479ae9e3cd2caf6b893cb75f9af8fde2340f0c
+ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023034"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37133984"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Ce qui se passe quand votre application Android est gérée par des stratégies de protection d'application
 
@@ -72,9 +72,9 @@ Les types de fichiers suivants sont pris en charge :
 * **Documents :** PDF, PPDF
 
 
-|**pfile**|**text**|
-|----|----|
-|Pfile est un format « wrapper » générique pour les fichiers protégés qui encapsulent du contenu chiffré ainsi que des licences Azure Information Protection. Il peut être utilisé pour protéger tout type de fichier.|Les fichiers texte, notamment XML, CSV, et ainsi de suite, peuvent être ouverts pour être affichés dans l’application même quand ils sont protégés. Types de fichiers : .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml.|
+|**pfile**|
+|----|
+|Pfile est un format « wrapper » générique pour les fichiers protégés qui encapsulent du contenu chiffré ainsi que des licences Azure Information Protection. Il peut être utilisé pour protéger tout type de fichier.|
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Ce qui se passe quand votre application iOS est gérée par des stratégies de protection d'application](end-user-mam-apps-ios.md)

@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34547486"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Supprimer votre appareil iOS d’Intune
 
@@ -59,6 +60,8 @@ Pour supprimer votre appareil d’Intune, suivez ces étapes ou regardez cette v
   -   Les profils de messagerie d'entreprise sont supprimés de l'appareil.
 
   -   Les appareils configurés pour la messagerie uniquement n’apparaissent plus dans l’application ou le site web Portail d’entreprise.
+  
+  -   Les applications sont désinstallées. Les données des applications de l'entreprise sont supprimées.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Suppression des données collectées par l’application Portail d’entreprise
 

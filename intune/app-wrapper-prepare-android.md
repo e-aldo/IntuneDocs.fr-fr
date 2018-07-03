@@ -14,11 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d27648d4d5033f2c2e849b31d19403600692b4f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "35679442"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications Android pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
@@ -124,9 +125,7 @@ Voici quelques bonnes pratiques de réencapsulation :
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Réutilisation de certificats de signature et inclusion d’applications dans un wrapper
 Android exige que toutes les applications soient signées par un certificat valide pour être installées sur des appareils Android.
 
-Les applications incluses dans un wrapper peuvent être signées au cours du processus d’inclusion dans un wrapper ou *après* celui-ci à l’aide de vos outils de signature existants (toutes les informations de signature figurant dans l’application avant l’inclusion dans un wrapper sont ignorées).
- 
-Si possible, les informations de signature utilisées pendant le processus de génération doivent être réutilisées durant l’inclusion dans un wrapper. Dans certaines organisations, il peut être nécessaire de contacter la personne qui détient les informations du magasin de clés (c’est-à-dire l’équipe de génération des applications). 
+Les applications incluses dans un wrapper peuvent être signées au cours du processus d’inclusion dans un wrapper ou *après* celui-ci à l’aide de vos outils de signature existants (toutes les informations de signature figurant dans l’application avant l’inclusion dans un wrapper sont ignorées). Si possible, les informations de signature utilisées pendant le processus de génération doivent être réutilisées durant l’inclusion dans un wrapper. Dans certaines organisations, il peut être nécessaire de contacter la personne qui détient les informations du magasin de clés (c’est-à-dire l’équipe de génération des applications). 
 
 Si le certificat de signature précédent ne peut pas être utilisé ou que l’application n’a pas encore été déployée, vous pouvez créer un certificat de signature en suivant les instructions du [Guide du développeur Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
