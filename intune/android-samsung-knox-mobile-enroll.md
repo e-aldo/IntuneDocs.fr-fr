@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88cb733c688019b2fc5455a0184e968d91e77806
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
+ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915809"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964706"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrire automatiquement des appareils Android à l’aide de Knox Mobile Enrollment de Samsung
 
@@ -60,7 +60,7 @@ Une fois votre société inscrite, vous pouvez créer votre profil de gestion de
 | Champs de profil de gestion des appareils mobiles| Nécessaire ? | Valeurs |
 |-------------------|-----------|-------|
 |MDM Server URI     | Non        |Laissez ce champ vide.
-|Profile Name       | Oui       |Entrez le nom de profil de votre choix.
+|Nom du profil       | Oui       |Entrez le nom de profil de votre choix.
 |description        | Non        |Entrez une description du profil.
 |MDM Agent APK      | Oui       |https://aka.ms/intune_kme
 |Skip Setup wizard  | Non        |Choisissez cette option pour ignorer les invites de configuration d’appareil standard pour le compte de l’utilisateur final.
@@ -120,6 +120,8 @@ Encore besoin d’aide ? Consultez le [Guide de l’utilisateur de Knox Mobile 
 - **Mode de propriétaire de l’appareil Google :** l’inscription en mode Google Device Owner de l’appareil à l’aide de KME n’est pas prise en charge dans cette préversion. Ce scénario est en cours d’étude.
 
 - **Le champ « Password » est ignoré :** si le champ **password** est renseigné dans **Device details** (Détails de l’appareil) dans le portail Knox, il est ignoré par l’application Portail d’entreprise Intune. L’utilisateur final doit entrer un mot de passe sur l’appareil pour terminer l’inscription de l’appareil.
+
+- **Inscription d’entreprise Android** : KME ne prend pas en charge l’inscription d’entreprise Android.
 
 ## <a name="getting-support"></a>Obtenir de l’aide
 Découvrez [comment obtenir une assistance technique pour Samsung KME](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).

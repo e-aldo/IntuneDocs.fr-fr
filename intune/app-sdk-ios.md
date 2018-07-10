@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/18/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 2effa1d63be57c938a4e5763090bce8f20f48192
+ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042797"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guide du Kit SDK d’application Microsoft Intune pour les développeurs iOS
 
@@ -84,7 +85,7 @@ Pour activer le SDK des applications Intune, effectuez les étapes suivantes :
    > [!NOTE]
    > Si vous utilisez l’infrastructure, vous devez éliminer manuellement les architectures de simulateur de l’infrastructure universelle avant de soumettre votre application à l’App Store. Pour plus d’informations, consultez [Soumettre votre application à l’App Store](#Submit-your-app-to-the-App-Store).
 
-2. **Option 2** : créez un lien vers la bibliothèque `libIntuneMAM.a`. Faites glisser la bibliothèque `libIntuneMAM.a` sur la liste **Infrastructures et bibliothèques liées** de la cible du projet.
+   **Option 2** : créez un lien vers la bibliothèque `libIntuneMAM.a`. Faites glisser la bibliothèque `libIntuneMAM.a` sur la liste **Infrastructures et bibliothèques liées** de la cible du projet.
 
     ![SDK d’application Intune pour iOS : infrastructures et bibliothèques liées](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -99,7 +100,7 @@ Pour activer le SDK des applications Intune, effectuez les étapes suivantes :
 
      ![SDK d’application Intune pour iOS : copier les ressources de groupe](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-     Ajoutez ces infrastructures iOS au projet :  
+2. Ajoutez ces infrastructures iOS au projet :  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -152,6 +153,9 @@ Pour activer le SDK des applications Intune, effectuez les étapes suivantes :
    |- o |  (Facultatif) `<Path to the output plist>` |
 
 Si le paramètre '-o' n’est pas spécifié, le fichier d’entrée sera modifié sur place. L’outil est idempotent et doit être réexécuté chaque fois que des modifications ont été apportées au fichier Info.plist ou aux droits de l’application. Vous devez également télécharger et exécuter la dernière version de cet outil en cas de mise à jour du Kit SDK Intune, au cas où les exigences de configuration du fichier Info.plist ont été modifiées dans la dernière version.
+
+> [!NOTE]
+> Si votre application n’utilise pas déjà FaceID, vérifiez que la clé info.plist `NSFaceIDUsageDescription` est configurée avec un message par défaut. Cela est obligatoire pour permettre à iOS d’informer l’utilisateur de la façon dont l’application a l’intention d’utiliser FaceID. Un paramètre de stratégie de protection des applications Intune permet que FaceID soit utilisé comme méthode d’accès aux applications quand il est configuré par l’administrateur informatique.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurer Azure Active Directory Authentication Library (ADAL)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744990"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263402"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Ajouter des applications à Microsoft Intune
 
@@ -56,8 +56,8 @@ Le tableau suivant répertorie les types d’applications spécifiques et la fa�
 | Applications Office 365 pour macOS | Application de store (Office 365) | Sélectionnez **macOS** sous la **Suite Office 365** comme **type d’application**, puis sélectionnez la suite d’applications Office 365. |
 | Applications métier Android | Application métier | Sélectionnez l’application **Métier** comme **type d’application**, sélectionnez le **fichier Package d’application**, puis entrez un fichier d’installation Android avec l’extension **.apk**.  |
 | Applications métier iOS | Application métier | Sélectionnez l’application **Métier** comme **type d’application**, sélectionnez le **fichier Package d’application**, puis entrez un fichier d’installation iOS avec l’extension **.ipa**.  |
-| Applications métier Windows Phone | Application métier | Sélectionnez l’application **Métier** comme **type d’application**, sélectionnez le **fichier Package d’application**, puis entrez un fichier d’installation iOS avec l’extension **.xap**.  |
-| Applications métier Windows | Application métier | Sélectionnez l’application **Métier** comme type d’application, sélectionnez le **fichier Package d’application**, puis entrez un fichier d’installation iOS avec l’extension **.msi**, **.appx** ou **.appxbundle**. |
+| Applications métier Windows Phone | Application métier | Sélectionnez l’application **Métier** comme **Type d’application**, sélectionnez le **fichier de package d’application**, puis entrez un fichier d’installation Windows Phone avec l’extension **.xap**.  |
+| Applications métier Windows | Application métier | Sélectionnez l’application **Métier** comme type d’application, sélectionnez le **fichier de package d’application**, puis entrez un fichier d’installation Windows avec l’extension **.msi**, **.appx** ou **.appxbundle**. |
 | Application iOS intégrée  | Application intégrée | Sélectionnez **Application intégrée** comme **type d’application**, puis sélectionnez l’application intégrée dans la liste des applications fournies.  |
 | Application Android intégrée  | Application intégrée | Sélectionnez **Application intégrée** comme **type d’application**, puis sélectionnez l’application intégrée dans la liste des applications fournies.  |
 | Applications web  | Application web  | Sélectionnez **Lien web** comme **type d’application**, puis entrez une URL valide pointant vers l’application web.  |

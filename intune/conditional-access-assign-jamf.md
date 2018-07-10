@@ -1,25 +1,26 @@
 ---
-title: "Stratégie de conformité d’appareil pour les appareils Jamf"
+title: Stratégie de conformité d’appareil pour les appareils Jamf
 titlesuffix: Microsoft Intune
-description: "Utilisez des stratégies de conformité Microsoft Intune avec l’accès conditionnel Azure Active Directory pour permettre de sécuriser les appareils gérés par Jamf."
-keywords: 
+description: Utilisez des stratégies de conformité Microsoft Intune avec l’accès conditionnel Azure Active Directory pour permettre de sécuriser les appareils gérés par Jamf.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482333"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Appliquer la conformité sur les Mac gérés par Jamf Pro
 
@@ -34,6 +35,9 @@ Vous pouvez utiliser Azure Active Directory et les stratégies d’accès condit
 
 1. Ouvrez Microsoft Azure, puis accédez à **Intune** > **Conformité de l’appareil** > **Stratégies**. Vous pouvez créer des stratégies pour macOS, y compris sélectionner une série d’actions (par exemple, l’envoi d’avertissements par e-mail) aux utilisateurs et groupes non conformes.
 2. Recherchez les groupes désirés et appliquez-leur les stratégies.
+
+> [!Note]
+> Intune exige le chiffrement de disque complet pour être conforme.
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Déployer l’application Portail d’entreprise pour macOS dans Jamf Pro
 

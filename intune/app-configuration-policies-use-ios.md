@@ -3,10 +3,10 @@ title: Ajouter des stratégies de configuration d’applications pour les appare
 titlesuffix: Microsoft Intune
 description: Apprenez à utiliser les stratégies de configuration d’applications pour fournir des données de configuration à une application iOS quand elle est exécutée.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232231"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Ajouter des stratégies de configuration d’applications pour les appareils iOS gérés | Microsoft Docs
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Utilisez des stratégies de configuration d’applications dans Microsoft Intune pour fournir des paramètres quand les utilisateurs exécutent une application iOS. Vous n’affectez pas ces stratégies directement sur les appareils et utilisateurs. Vous associez plutôt une stratégie à une application que vous affectez ensuite. Les paramètres de stratégie sont utilisés quand l’application les vérifie, en général, à sa première exécution.
+Utilisez des stratégies de configuration des applications dans Microsoft Intune afin de fournir des paramètres de configuration personnalisés pour une application iOS. Ces paramètres de configuration permettent la personnalisation d’une application en fonction des indications des fournisseurs. Vous devez obtenir ces paramètres de configuration (les clés et les valeurs) auprès du fournisseur de l’application. Pour configurer l’application, vous spécifiez les paramètres sous forme de clés et de valeurs, ou en tant que fichier XML contenant les clés et les valeurs. Vous n’affectez pas ces stratégies de configuration directement aux appareils et aux utilisateurs. Au lieu de cela, vous associez une stratégie de configuration à une application, puis vous affectez l’application. Les paramètres de stratégie de configuration sont utilisés quand l’application les recherche, en général lors de sa première exécution.
 
-Vous pouvez attribuer une stratégie de configuration d’application à un groupe d’utilisateurs et d’appareils à l’aide d’une combinaison d’affectations d’inclusion et d’exclusion. Dès que vous ajoutez une stratégie de configuration d’application, vous pouvez définir les affectations de la stratégie de configuration d’application. Quand vous définissez les affectations de la stratégie, vous pouvez choisir d’inclure et d’exclure les groupes d’utilisateurs auxquels la stratégie s’applique. Quand vous choisissez d’inclure un ou plusieurs groupes, vous pouvez choisir de sélectionner des groupes spécifiques à inclure ou sélectionner des groupes intégrés. Les groupes intégrés sont notamment **Tous les utilisateurs**, **Tous les appareils** et **Tous les utilisateurs + Tous les appareils**. 
+Dès que vous ajoutez une stratégie de configuration d’application, vous pouvez définir les affectations de la stratégie de configuration d’application. Quand vous définissez les affectations de la stratégie, vous pouvez choisir d’inclure et d’exclure les groupes d’utilisateurs auxquels la stratégie s’applique. Quand vous choisissez d’inclure un ou plusieurs groupes, vous pouvez choisir de sélectionner des groupes spécifiques à inclure ou sélectionner des groupes intégrés. Les groupes intégrés sont notamment **Tous les utilisateurs**, **Tous les appareils** et **Tous les utilisateurs + Tous les appareils**. 
 
 >[!NOTE]
 >Intune fournit des groupes **Tous les utilisateurs** et **Tous les appareils** précréés dans la console avec des optimisations intégrées pour votre commodité. Nous vous recommandons vivement d’utiliser ces groupes pour cibler tous les utilisateurs et tous les appareils au lieu de créer vous-même des groupes « Tous les utilisateurs » ou « Tous les appareils ».
 
-Une fois que vous avez sélectionné les groupes inclus pour votre stratégie de configuration d’application, vous pouvez aussi choisir les groupes spécifiques à exclure.
+Une fois que vous avez sélectionné les groupes inclus pour votre stratégie de configuration d’application, vous pouvez aussi choisir les groupes spécifiques à exclure. Pour plus d’informations, consultez [Inclure et exclure des affectations d’applications dans Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
 > Ce type de stratégie est disponible uniquement pour les appareils exécutant iOS 8.0 ou version ultérieure. Elle prend en charge les types d’installation d’application suivants :
@@ -49,18 +50,16 @@ Une fois que vous avez sélectionné les groupes inclus pour votre stratégie de
 3. Choisissez la charge de travail **Applications mobiles**.
 4. Choisissez **Stratégies de configuration des applications** dans le groupe **Gérer**, puis choisissez **Ajouter**.
 5. Définissez les détails suivants :
-    - **Nom**<br>
-      Nom du profil qui s’affiche dans le portail Azure.
-    - **Description**<br>
-      Description du profil qui s’affiche dans le portail Azure.
-    - **Type d’inscription de l’appareil**<br>
-      Choisissez **Appareils gérés**.
+    - **Nom** : nom du profil qui s’affiche dans le portail Azure.
+    - **Description** : description du profil qui s’affiche dans le portail Azure.
+    - **Type d’inscription de l’appareil** : choisissez **Appareils gérés**.
 6. Sélectionnez **iOS** comme **Plateforme**.
 7.  Choisissez **Application associée**. Ensuite, dans le volet **Application associée**, choisissez l’application gérée à laquelle vous souhaitez appliquer la configuration, puis sélectionnez **OK**.
 8.  Dans le volet **Ajouter une stratégie de configuration**, choisissez **Paramètres de configuration**.
-9. Sélectionnez **Format des paramètres de configuration**. Sélectionnez l’un des paramètres suivants :
-    - **[Utiliser le concepteur de configuration](#use-configuration-designer)**
-    - **[Entrer des données XML](#enter-xml-data)**
+9. Sélectionnez **Format des paramètres de configuration**. Sélectionnez une des options suivantes pour ajouter des informations XML :
+    - **Utiliser le concepteur de configuration**
+    - **Entrer des données XML**<br></br>
+    Pour plus d’informations sur l’utilisation du concepteur de configuration, consultez [Utiliser le concepteur de configuration](#use-configuration-designer). Pour plus d’informations sur l’entrée de données XML, consultez [Entrer des données XML](#enter-xml-data). 
 10. Après avoir ajouté vos informations XML, choisissez **OK**, puis **Ajouter** pour ajouter la stratégie de configuration. Le volet de vue d’ensemble de la stratégie de configuration s’affiche.
 11. Sélectionnez **Affectations** pour afficher les options d’inclusion et d’exclusion. 
 
@@ -76,21 +75,18 @@ Une fois que vous avez sélectionné les groupes inclus pour votre stratégie de
 
     >[!NOTE]
     >Quand vous ajoutez un groupe, si un autre groupe a déjà été inclus pour un type d’affectation donnée, il est présélectionné et ne peut pas être affecté à un autre type d’affectation d’inclusion. Par conséquent, ce groupe déjà utilisé ne peut pas être sélectionné comme groupe à exclure.
-16. Cliquez sur **Enregistrer**.
+16. Cliquez sur **Save**.
 
 ## <a name="use-configuration-designer"></a>Utiliser le concepteur de configuration
 
-Vous pouvez utiliser le concepteur de configuration pour les applications sur les appareils qui sont inscrits ou non inscrits dans Intune. Le concepteur vous permet de configurer des valeurs et des clés de configuration spécifiques. Vous devez également spécifier le type de données pour chaque valeur. Les paramètres sont automatiquement fournis aux applications lors de leur installation.
+Microsoft Intune fournit des paramètres de configuration qui sont uniques pour une application. Vous pouvez utiliser le concepteur de configuration pour les applications sur les appareils qui sont inscrits ou non dans Intune. Le concepteur vous permet de configurer des clés et des valeurs de configuration spécifiques qui vous aident à créer le code XML sous-jacent. Vous devez également spécifier le type de données pour chaque valeur. Ces paramètres sont fournis automatiquement aux applications lors de leur installation.
 
 ### <a name="add-a-setting"></a>Ajouter un paramètre
 
 1. Pour chaque clé et valeur de la configuration, définissez les éléments suivants :
-   - **Clé de configuration**<br>
-     Clé qui identifie de façon unique la configuration des paramètres spécifique.
-   - **Type de valeur**<br>
-     Type de données de la valeur de configuration. Les types incluent Integer, Real, String ou Boolean.
-   - **Valeur de configuration**<br>
-     Valeur de la configuration.
+   - **Clé de configuration** : clé qui identifie de façon univoque la configuration spécifique du paramètre.
+   - **Type de valeur** : type de données de la valeur de configuration. Les types incluent Integer, Real, String ou Boolean.
+   - **Valeur de configuration** : valeur pour la configuration.
 2. Choisissez **OK** pour définir vos paramètres de configuration.
 
 ### <a name="delete-a-setting"></a>Supprimer un paramètre
@@ -165,4 +161,4 @@ De plus, Intune prend en charge les types de jetons suivants dans la liste de pr
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Continuez à [affecter](apps-deploy.md) et à [surveiller](apps-monitor.md) l’application comme d’habitude.
+Continuez à [affecter](apps-deploy.md) et à [surveiller](apps-monitor.md) l’application.

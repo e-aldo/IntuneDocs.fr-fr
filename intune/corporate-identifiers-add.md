@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f8517e9a9dd698e875214fe363d8e1246129b96a
+ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030883"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37042709"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifier les appareils comme appartenant à l’entreprise
 
@@ -68,6 +68,7 @@ Dans un éditeur de texte, ce fichier .csv s'affiche comme suit :
 > Certains appareils Android ont plusieurs numéros IMEI. Intune ne lit qu’un seul numéro IMEI par appareil inscrit. Si vous importez un numéro IMEI, mais qu’il ne s’agit pas du numéro IMEI inventorié par Intune, l’appareil est classé comme appareil personnel plutôt que comme appareil d’entreprise. Si vous importez plusieurs numéros IMEI pour un appareil, les numéros non inventoriés présentent l’état d’inscription **Inconnu**.<br>
 >Notez également que les numéros de série Android ne sont pas nécessairement uniques ou présents. Vérifiez auprès du fournisseur de votre appareil si le numéro de série est un ID d’appareil fiable.
 >Les numéros de série signalés à Intune par l’appareil peuvent ne pas correspondre à l’ID affiché dans les menus Paramètres/À propos d’Android de l’appareil. Vérifiez le type de numéro de série signalé par le fabricant de l’appareil.
+>Si vous tentez de charger un fichier avec des numéros de série contenant des points (.), le chargement échoue. Les numéros de série comportant des points ne sont pas pris en charge.
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>Ajouter une liste .csv d’identificateurs d’entreprise
 
@@ -87,7 +88,7 @@ Les appareils importés ne sont pas nécessairement inscrits. Les appareils peuv
 2. Sélectionnez les identificateurs d’appareil que vous voulez supprimer, puis choisissez **Supprimer**.
 3. Confirmez la suppression.
 
-La suppression d’un identificateur d’entreprise pour un appareil inscrit ne change pas la propriété de l’appareil. Pour modifier la propriété d’un appareil, allez à **Appareils**, sélectionnez l’appareil, choisissez **Propriétés** et modifiez **Propriété des appareil**.
+La suppression d’un identificateur d’entreprise pour un appareil inscrit ne change pas la propriété de l’appareil. Pour modifier la propriété d’un appareil, allez à **Appareils**, sélectionnez l’appareil, choisissez **Propriétés** et modifiez **Propriété des appareils**.
 
 ### <a name="imei-specifications"></a>Spécifications IMEI
 Pour obtenir des spécifications détaillées sur les IMEI (International Mobile Equipment Identifiers), consultez [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).

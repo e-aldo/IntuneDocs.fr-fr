@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: cc378a4f484852d84943b4d1094b71df5b7a530d
+ms.sourcegitcommit: 006fa8dd4d605e2873fba6e3a965ef794d6f3764
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744939"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945478"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Paramètres Endpoint Protection pour Windows 10 (et versions ultérieures) dans Intune
 
@@ -29,36 +29,51 @@ Le profil Endpoint Protection vous permet de contrôler les fonctionnalités de 
 
 Utilisez les informations de cet article pour créer des profils Endpoint Protection. Pour configurer l’antivirus Windows Defender, consultez[Restrictions d’appareil Windows 10](device-restrictions-windows-10.md#windows-defender-antivirus). 
 
-> [!NOTE]
-> Ces paramètres ne sont pas pris en charge dans les éditions Famille et Professionnel de Windows 10.
-
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
 
-Lors de l'utilisation de Microsoft Edge, Windows Defender Application Guard protège votre environnement des sites qui n'ont pas été définis comme approuvés par votre organisation. Quand des utilisateurs visitent des sites qui ne figurent pas dans la liste des limites de votre réseau isolé, les sites sont ouverts dans une session de navigation virtuelle dans Hyper-V. Les sites approuvés sont définis par une limite réseau, qui peut être configurée dans Configuration de l'appareil. 
+Pris en charge sur les éditions de Windows 10 suivantes :
+
+- Entreprise 
+- Professionnel
+
+Lors de l’utilisation de Microsoft Edge, Windows Defender Application Guard protège votre environnement des sites qui ne sont pas approuvés par votre organisation. Quand des utilisateurs visitent des sites qui ne figurent pas dans la liste des limites de votre réseau isolé, les sites sont ouverts dans une session de navigation virtuelle Hyper-V. Les sites approuvés sont définis par une limite réseau, qui peut être configurée dans Configuration de l'appareil.
 
 Application Guard est uniquement disponible pour les appareils Windows 10 (64 bits). L’utilisation de ce profil permet d’installer un composant Win32 pour activer Application Guard.
 
-- **Application Guard** : ouvrez des sites non approuvés dans un conteneur de navigation virtualisé Hyper-V.
+- **Application Guard** : **Activer** pour activer cette fonctionnalité, ce qui ouvre des sites non approuvés dans un conteneur de navigation virtualisé Hyper-V. **Non configuré** (valeur par défaut) signifie que n’importe quel site (approuvé et non approuvé) s’ouvre sur l’appareil.
 - **Comportement du Presse-papiers** : choisissez les actions de copier-coller autorisées entre le PC local et le navigateur virtuel Application Guard.
-- **Contenu externe sur les sites de l’entreprise** : bloquez le chargement du contenu des sites web non approuvés.
-- **Imprimer à partir du navigateur virtuel** : autorisez l’impression en PDF et en XPS ainsi que les imprimantes locales et/ou réseau à imprimer du contenu à partir du navigateur virtuel.
-- **Collecter les journaux** : collectez les journaux des événements qui se produisent dans une session de navigation Application Guard.
-- **Conserver les données du navigateur générées par l’utilisateur** : enregistrez les données utilisateur (par exemple les mots de passe, les favoris et les cookies) qui sont créées au cours d’une session de navigation virtuelle Application Guard.
-- **Accélération graphique** : accélérez le chargement des graphiques des sites web quand vous travaillez dans la session de navigation virtuelle Application Guard. Les sites web se chargent plus vite si vous activez l’accès à une unité de traitement graphique virtuelle.
-- **Télécharger les fichiers sur le système de fichiers hôte** : autorisez les utilisateurs à télécharger des fichiers à partir du navigateur virtualisé sur le système d’exploitation hôte.
+- **Contenu externe sur les sites d’entreprise** : **Bloquer** le chargement du contenu des sites web non approuvés. **Non configuré** (valeur par défaut) signifie que les sites autres que les sites d’entreprise peuvent s’ouvrir sur l’appareil.
+- **Imprimer à partir du navigateur virtuel** : **Autoriser** pour autoriser l’impression en PDF et en XPS, ainsi que les imprimantes locales et/ou réseau à imprimer du contenu à partir du navigateur virtuel. **Non configuré** (valeur par défaut) désactive toutes les fonctionnalités d’impression.
+- **Collecter les journaux** : **Autoriser** pour collecter les journaux des événements qui se produisent dans une session de navigation Application Guard. **Non configuré** (valeur par défaut) ne collecte aucun journal dans la session de navigation.
+- **Conserver les données du navigateur générées par l’utilisateur** : **Autoriser** enregistre les données utilisateur (comme les mots de passe, les favoris et les cookies) qui sont créées au cours d’une session de navigation virtuelle Application Guard. **Non configuré** (valeur par défaut) ignore les données et les fichiers téléchargés par l’utilisateur lors du redémarrage de l’appareil ou quand un utilisateur se déconnecte.
+- **Accélération graphique** : **Activer** pour charger des sites web utilisant beaucoup de graphiques et aux performances vidéo plus rapides en obtenant l’accès à une unité de traitement graphique virtuelle. **Non configuré** (valeur par défaut) utilise le processeur de l’appareil pour les graphiques. Il n’utilise pas l’unité de traitement graphique virtuelle.
+- **Télécharger les fichiers sur le système de fichiers hôte** : **Activer** pour que les utilisateurs téléchargent des fichiers à partir du navigateur virtualisé sur le système d’exploitation hôte. **Non configuré** (valeur par défaut) conserve les fichiers en local sur l’appareil et n’en télécharge pas sur le système de fichiers hôte.
 
 ## <a name="windows-defender-firewall"></a>Pare-feu Windows Defender
+
+Pris en charge sur les éditions de Windows 10 suivantes :
+- Accueil
+- Professionnel
+- Professionnel
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
 
 ### <a name="global-settings"></a>Paramètres globaux
 
 Ces paramètres s’appliquent à tous les types de réseaux.
 
-- **Protocole FTP** : bloquez le protocole FTP avec état.
-- **Durée d’inactivité des associations de sécurité avant suppression** : les associations de sécurité sont supprimées si aucun trafic réseau n’est visible pendant *n* secondes.
-- **Codage des clés prépartagées** : codez les clés prépartagées avec UTF-8.
-- **Exemptions IPsec** : configurez un trafic spécifique pour qu’il soit exempté d’IPsec, notamment **Codes type ICMP IPv6 de découverte de voisin**, **ICMP**, **Codes type ICMP IPv6 de découverte de routeur** et **Trafic DHCP IPv4 et IPv6**.
-- **Vérification de la liste de révocation de certificats** : définissez une valeur pour le mode d’application de la vérification de la liste de révocation de certificats, notamment **Désactiver la vérification de la liste de révocation de certificats**, **Échec de vérification de la liste de révocation de certificats sur le certificat révoqué uniquement** et **Échec de vérification de la liste de révocation de certificats pour toute erreur rencontrée**.
-- **Associer le jeu d’authentification de façon opportuniste par module de génération de clés** : définissez des modules de génération de clés pour ignorer l’intégralité du jeu d’authentification si les suites d’authentification ne sont pas toutes prises en charge dans ce jeu.
+- **Protocole FTP** : **Bloquer** pour désactiver le protocole FTP avec état. Quand **Non configuré** (valeur par défaut) est sélectionné, le pare-feu fait FTP avec état, le filtrage pour autoriser les connexions secondaires.
+- **Durée d’inactivité des associations de sécurité avant suppression** : les associations de sécurité sont supprimées si aucun trafic réseau n’est visible pendant *n* secondes. Entrez une durée d’inactivité, en secondes.
+- **Codage des clés prépartagées** : **Activer** pour utiliser le codage des clés prépartagées avec UTF-8. **Non configuré** (valeur par défaut) utilise la valeur du magasin local.
+- **Exemptions IPsec** : configurez un trafic spécifique pour être exempté d’IPsec, notamment :
+  - **Codes type ICMP IPv6 de découverte de voisin**
+  - **ICMP**
+  - **Codes type ICMP IPv6 de découverte de routeur**
+  - **Trafic réseau DHCP IPv4 et IPv6**
+- **Vérification de la liste de révocation de certificats** : déterminez comment la vérification de la liste de révocation de certificats est appliquée, notamment **Désactiver la vérification de la liste de révocation de certificats**, **Échec de vérification de la liste de révocation de certificats sur le certificat révoqué uniquement** et **Échec de vérification de la liste de révocation de certificats pour toute erreur rencontrée**.
+- **Associer le jeu d’authentification de façon opportuniste par module de génération de clés** : **Activer** pour OBLIGER les modules de génération de clés à ignorer uniquement les suites d’authentification qu’ils ne prennent pas en charge. Quand ce paramètre a la valeur**Non configuré**, les modules de génération de clés DOIVENT ignorer la totalité du jeu d’authentification s’ils ne prennent pas en charge toutes les suites de l’authentification spécifiées dans le jeu.
 - **Mise en file d’attente des paquets** : indiquez comment la mise à l’échelle des logiciels côté réception est activée pour la réception chiffrée et efface le texte pour le scénario de passerelle du tunnel IPsec. Ce paramètre garantit la préservation de l’ordre des paquets.
 
 ### <a name="network-settings"></a>Paramètres du réseau
@@ -67,68 +82,104 @@ Ces paramètres s’appliquent à des types de réseaux spécifiques, notamment 
 
 #### <a name="general-settings"></a>Paramètres généraux :
 
-- **Pare-feu Windows Defender** : activez ce paramètre pour bloquer le trafic réseau.
-- **Mode furtif** : empêchez le Pare-feu de fonctionner en mode furtif. Le blocage du mode furtif vous permet de bloquer également **Exemption de paquets sécurisés IPsec**.
-- **Protégé** : l’activation de ce paramètre et du paramètre de pare-feu bloque tout le trafic entrant.
-- **Réponses en monodiffusion au trafic en multidiffusion** : bloquez les réponses en monodiffusion au trafic en multidiffusion. En règle générale, vous ne souhaitez pas recevoir des réponses en monodiffusion à des messages de multidiffusion ou de diffusion. Ces réponses peuvent indiquer une attaque par déni de service ou un attaquant qui tente de sonder un ordinateur actif connu.
-- **Notifications entrantes** : empêchez l’affichage des notifications pour les utilisateurs lors du blocage d’une application pour écouter sur un port.
-- **Action par défaut pour les connexions entrantes** : configurez l’action par défaut que le pare-feu effectue sur les connexions entrantes.
+- **Pare-feu Windows Defender** : **Activer** pour activer le pare-feu et les fonctions de sécurité avancées. **Non configuré** (valeur par défaut) autorise tout le trafic réseau, quels que soit les autres paramètres de stratégie.
+- **Mode furtif** : **Bloquer** le fonctionnement du pare-feu en mode furtif. Le blocage du mode furtif vous permet de bloquer également **Exemption de paquets sécurisés IPsec**. **Non configuré** (valeur par défaut) fait fonctionner le pare-feu en mode furtif, ce qui permet d’empêcher les réponses aux demandes de détection.
+- **Protégé** : **Bloquer** désactive cette fonctionnalité. **Non configuré** (valeur par défaut) active ce paramètre. Quand ce paramètre et le pare-feu Windows Defender sont activés, tout le trafic entrant est bloqué, quels que soit les autres paramètres de stratégie.
+- **Réponses en monodiffusion au trafic en multidiffusion** : quand ce paramètre a la valeur **Bloquer**, elle désactive les réponses en monodiffusion au trafic en multidiffusion. En règle générale, vous ne souhaitez pas recevoir des réponses en monodiffusion à des messages de multidiffusion ou de diffusion. Ces réponses peuvent indiquer une attaque par déni de service ou un attaquant qui tente de sonder un ordinateur actif connu. **Non configuré** (valeur par défaut) active ce paramètre.
+- **Notifications entrantes** : quand ce paramètre a la valeur **Bloquer**, il masque les notifications pour les utilisateurs lors du blocage d’une application pour écouter sur un port. **Non configuré** (valeur par défaut) active ce paramètre et peut afficher une notification aux utilisateurs lors du blocage d’une application pour écouter sur un port.
+- **Action par défaut pour les connexions entrantes** : quand ce paramètre a la valeur **Bloquer**, l’action de pare-feu par défaut n’est pas exécutée sur les connexions entrantes. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), l’action de pare-feu par défaut est exécutée sur les connexions entrantes.
 
 #### <a name="rule-merging"></a>Fusion des règles
 
-- **Règles de Pare-feu Windows Defender d’application autorisées du magasin local** : appliquez des règles de pare-feu autorisées dans le magasin local à reconnaître et à appliquer.
-- **Règles de Pare-feu Windows Defender de port globales du magasin local** : appliquez des règles de pare-feu de port globales dans le magasin local à reconnaître et à appliquer.
-- **Règles de Pare-feu Windows Defender du magasin local** : appliquez des règles de pare-feu globales dans le magasin local à reconnaître et à appliquer.
-- **Règles IPsec du magasin local** : appliquez les règles de sécurité de connexion du magasin local, quelles que soient les versions des règles de sécurité de schéma ou de connexion.
+- **Règles de pare-feu Windows Defender d’application autorisées du magasin local** : **Activer** pour appliquer des règles de pare-feu du magasin local à reconnaître et à appliquer. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les règles de pare-feu d’applications autorisées du magasin local sont ignorées et non appliquées.
+- **Règles de pare-feu Windows Defender de port globales du magasin local** : **Activer** pour appliquer des règles de pare-feu de port globales du magasin local à reconnaître et à appliquer. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les règles de pare-feu de port globales du magasin local sont ignorées et non appliquées.
+- **Règles de pare-feu Windows Defender du magasin local** : **Activer** pour appliquer des règles de pare-feu du magasin local à reconnaître et à appliquer. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les règles de pare-feu du magasin local sont ignorées et non appliquées.
+- **Règles IPsec du magasin local** : **Activer** pour appliquer les règles de sécurité de connexion du magasin local, quelles que soient les versions des règles de sécurité de connexion ou du schéma. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les règles de sécurité de connexion du magasin local sont ignorées et ne sont pas appliquées, quelles que soient la version du schéma et la version des règles de sécurité de connexion.
 
 ## <a name="windows-defender-smartscreen-settings"></a>Paramètres Windows Defender SmartScreen
 
-- **SmartScreen pour les applications et fichiers** : activez Windows SmartScreen pour l’exécution de fichiers et d’applications.
-- **Exécution des fichiers non vérifiée** : empêche l’utilisateur final d’exécuter des fichiers qui n’ont pas été vérifiés par Windows SmartScreen.
+Pris en charge sur les éditions de Windows 10 sur lesquelles Edge est installé :
+- Accueil
+- Professionnel
+- Professionnel
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
+
+**Paramètres** :
+
+- **SmartScreen pour les applications et fichiers** : **Activer** Windows SmartScreen pour l’exécution de fichiers et d’applications. SmartScreen est un composant cloud anti-hameçonnage et anti-programme malveillant. **Non configuré** (valeur par défaut) désactive SmartScreen.
+- **Exécution de fichiers non vérifiés** : **Bloquer**  permet d’empêcher les utilisateurs finaux d’exécuter des fichiers qui n’ont pas été vérifiés par Windows SmartScreen. **Non configuré** (valeur par défaut) désactive cette fonctionnalité et permet aux utilisateurs finaux d’exécuter des fichiers qui n’ont pas été vérifiés.
 
 ## <a name="windows-encryption"></a>Chiffrement Windows
 
 ### <a name="windows-settings"></a>Paramètres Windows
 
-Les deux paramètres suivants s’appliquent à toutes les versions de Windows 10 :
+Pris en charge sur les éditions de Windows 10 suivantes :
 
-- **Chiffrer les appareils** : si ce paramètre est activé, les utilisateurs sont invités à activer le chiffrement de l’appareil. Ils sont aussi invités à confirmer que le chiffrement d’un autre fournisseur n’a pas été activé. Si le chiffrement Windows est activé alors qu’une autre méthode de chiffrement est active, l’appareil peut devenir instable.
-- **Chiffrer la carte de stockage** : activez ce paramètre pour chiffrer toutes les cartes de stockage amovibles utilisées par l’appareil.
+- Professionnel
+- Professionnel
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
 
+**Paramètres** :
+
+- **Chiffrer les appareils** : **Exiger** pour demander aux utilisateurs d’activer le chiffrement des appareils. En fonction de l’édition de Windows et de la configuration du système, les utilisateurs peuvent être invités à :  
+  - Vérifier que le chiffrement d’un autre fournisseur n’est pas activé
+  - Être amenés à désactiver le chiffrement de lecteur Bitlocker, puis à réactiver Bitlocker
+    
+    Si le chiffrement Windows est activé alors qu’une autre méthode de chiffrement est active, l’appareil peut devenir instable. 
+- **Chiffrer la carte de stockage (mobile uniquement)** : **Exiger** le chiffrement de toutes les cartes de stockage amovibles utilisées par l’appareil. **Non configuré** (valeur par défaut) n’exige pas le chiffrement des cartes de stockage et n’invite pas l’utilisateur à l’activer. Ce paramètre s’applique uniquement aux appareils mobiles Windows 10.
 
 ### <a name="bitlocker-base-settings"></a>Paramètres de base BitLocker
 
-Les paramètres de base correspondent aux paramètres BitLocker universels pour tous les types de lecteurs de données. Les paramètres de stratégie de groupe BitLocker permettent de gérer les options de configuration ou les tâches de chiffrement de lecteur modifiables par l’utilisateur final pour tous les types de lecteurs de données.
+Pris en charge sur les éditions de Windows 10 suivantes :
 
-- **Avertissement pour tout autre chiffrement de disque** : désactivez l’invite d’avertissement pour tout autre chiffrement de disque sur les ordinateurs des utilisateurs finaux.
-- **Configurer les méthodes de chiffrement** : activez ce paramètre pour configurer des algorithmes de chiffrement pour le système d’exploitation, les données et les lecteurs amovibles.
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
+
+Les paramètres de base correspondent aux paramètres BitLocker universels pour tous les types de lecteurs de données. Ces paramètres permettent de gérer les options de configuration ou les tâches de chiffrement de lecteur modifiables par l’utilisateur final pour tous les types de lecteurs de données.
+
+- **Avertissement pour tout autre chiffrement de disque** : sélectionnez **Bloquer** pour désactiver l’invite d’avertissement si un autre service de chiffrement de disque se trouve sur l’appareil. **Non configuré** (valeur par défaut) permet l’affichage de l’avertissement.
+- **Configurer les méthodes de chiffrement** : **Activer** ce paramètre pour configurer des algorithmes de chiffrement pour le système d’exploitation, les données et les lecteurs amovibles. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), BitLocker utilise XTS-AES 128 bits comme méthode de chiffrement par défaut, ou utilise la méthode de chiffrement spécifiée par tout script d’installation.
   - **Chiffrement pour les lecteurs du système d’exploitation** : choisissez la méthode de chiffrement pour les lecteurs de système d’exploitation. Nous vous recommandons d’utiliser l’algorithme AES-XTS.
   - **Chiffrement pour les lecteurs de données fixes** : choisissez la méthode de chiffrement pour les lecteurs de données fixes (intégrés). Nous vous recommandons d’utiliser l’algorithme AES-XTS.
   - **Chiffrement pour les lecteurs de données amovibles** : choisissez la méthode de chiffrement pour les lecteurs de données amovibles. Si le lecteur amovible est utilisé avec des appareils qui n’exécutent pas Windows 10, nous vous recommandons d’utiliser l’algorithme AES-CBC.
 
 ### <a name="bitlocker-os-drive-settings"></a>Paramètres de lecteur du système d’exploitation BitLocker
+Pris en charge sur les éditions de Windows 10 suivantes :
+
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
 
 Ces paramètres s’appliquent spécifiquement aux lecteurs de données de système d’exploitation.
 
-- **Authentification supplémentaire au démarrage** : indiquez les conditions d’authentification pour le démarrage de l’ordinateur, notamment l’utilisation du Module de plateforme sécurisée (TPM).
-  - **BitLocker avec puce TPM non compatible**
+- **Authentification supplémentaire au démarrage** : sélectionnez **Exiger** pour configurer les conditions d’authentification pour le démarrage de l’ordinateur, notamment l’utilisation du module de plateforme sécurisée (TPM). Sélectionnez **Non configuré** (valeur par défaut) pour configurer uniquement les options de base sur les appareils dotés d’un module TPM.
+  - **BitLocker avec puce TPM non compatible** : **Bloquer** (désactiver) à l’aide de BitLocker quand un appareil ne dispose pas d’une puce TPM compatible. Quand ce paramètre a la valeur **Non configuré**, les utilisateurs peuvent utiliser BitLocker sans puce TPM compatible. BitLocker peut exiger un mot de passe ou une clé de démarrage.
   - **Démarrage du module TPM compatible** : indiquez si la puce TPM est autorisée, non autorisée ou obligatoire.
-  - **Code PIN de démarrage du module TPM compatible** : indiquez si l’utilisation d’un code PIN de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
-  - **Clé de démarrage du module TPM compatible** : indiquez si l’utilisation d’une clé de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
-  - **Code PIN et clé de démarrage du module TPM compatible** : indiquez si l’utilisation d’un code PIN et d’une clé de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire.
-- **Longueur minimale du code PIN** : activez ce paramètre pour configurer une longueur minimale pour le code PIN de démarrage de TPM.
+  - **Code PIN de démarrage du module TPM compatible** : indiquez si l’utilisation d’un code PIN de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire. L’activation d’un code confidentiel de démarrage nécessite une intervention de l’utilisateur final. 
+  - **Clé de démarrage du module TPM compatible** : indiquez si l’utilisation d’une clé de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire. L’activation d’une clé de démarrage nécessite une intervention de l’utilisateur final. 
+  - **Code PIN et clé de démarrage du module TPM compatible** : indiquez si l’utilisation d’un code PIN et d’une clé de démarrage avec la puce TPM est autorisée, non autorisée ou obligatoire. L’activation d’une clé de démarrage et d’un code confidentiel de démarrage nécessite une intervention de l’utilisateur final.
+- **Longueur minimale du code PIN** : **Activer** ce paramètre pour configurer une longueur minimale pour le code PIN de démarrage de TPM. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les utilisateurs peuvent configurer un code confidentiel de démarrage d’une longueur comprise entre 6 et 20 chiffres.
   - **Nombre minimal de caractères** : entrez le nombre de caractères obligatoires pour le code PIN de démarrage (**4**-**20**).
-- **Récupération du lecteur du système d’exploitation** : activez ce paramètre pour contrôler comment les lecteurs du système d’exploitation protégés par BitLocker sont récupérés quand les informations de démarrage nécessaires ne sont pas disponibles.
-  - **Agent de récupération de données basé sur les certificats** : activez ce paramètre si vous souhaitez que les agents de récupération de données puissent être utilisés avec les lecteurs du système d’exploitation protégés par BitLocker.
+- **Récupération du lecteur du système d’exploitation** : **Activer** ce paramètre pour contrôler la façon dont les lecteurs de système d’exploitation protégés par BitLocker sont récupérés quand les informations de démarrage nécessaires ne sont pas disponibles. Quand la valeur de ce paramètre **Non configuré** (valeur par défaut), les options de récupération par défaut sont prises en charge pour la récupération BitLocker. Par défaut, un agent de récupération de données (DRA) est autorisé. Les options de récupération sont spécifiées par l’utilisateur, notamment le mot de passe de récupération et la clé de récupération, et les informations de récupération ne sont pas sauvegardées dans AD DS.
+  - **Agent de récupération de données basé sur les certificats** : quand ce paramètre a la valeur **Bloquer**, vous ne pouvez pas utiliser l’agent de récupération de données avec des lecteurs de système d’exploitation protégés par BitLocker. Définissez la valeur **Non configuré** (valeur par défaut) pour activer ce paramètre, ce qui permet d’utiliser des agents de récupération de données avec les lecteurs de système d’exploitation protégés par BitLocker.
   - **Création d’un mot de passe de récupération par l’utilisateur** : indiquez si les utilisateurs sont autorisés, non autorisés ou contraints à générer un mot de passe de récupération de 48 chiffres.
   - **Création d’une clé de récupération par l’utilisateur** : indiquez si les utilisateurs sont autorisés, non autorisés ou contraints à générer une clé de récupération de 256 bits.
-  - **Options de récupération dans l’Assistant Installation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs de voir ou de changer les options de récupération quand ils activent BitLocker.
-  - **Enregistrer les informations de récupération BitLocker dans AD DS** : active le stockage des informations de récupération BitLocker dans Active Directory.
-  - **Informations de récupération BitLocker stockées dans AD DS** : configurez les parties des informations de récupération BitLocker qui sont stockées dans Active Directory. Choisissez parmi :
+  - **Options de récupération dans l’Assistant Installation de BitLocker** : définissez ce paramètre sur **Bloquer** pour que les utilisateurs ne puissent pas voir ni changer les options de récupération. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les utilisateurs peuvent voir et changer les options de récupération quand ils activent BitLocker.
+  - **Enregistrer les informations de récupération BitLocker dans AD DS** : **Activer** pour stocker les informations de récupération BitLocker dans Azure Active Directory (AAD). Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les informations de récupération ne sont pas stockées dans AAD.
+  - **Informations de récupération BitLocker stockées dans AD DS** : configurez les parties des informations de récupération BitLocker qui sont stockées dans Azure AD. Choisissez parmi :
     - **Sauvegarder les mots de passe et les jeux de clés de récupération**
     - **Sauvegarder les mots de passe de récupération uniquement**
-  - **Stocker les informations de récupération dans AD DS avant l’activation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs d’activer BitLocker, sauf si l’appareil est joint au domaine et que les informations de récupération BitLocker sont correctement stockées dans Active Directory.
-- **Message et URL de récupération préalables au démarrage** : activez ce paramètre pour configurer le message et l’URL qui s’affichent sur l’écran de récupération de clé préalable au démarrage.
+  - **Stocker les informations de récupération dans AD DS avant l’activation de BitLocker** : **Exiger** la définition de ce paramètre pour empêcher les utilisateurs d’activer BitLocker, sauf si les informations de récupération BitLocker sont correctement stockées dans Azure Active Directory. **Non configuré** (valeur par défaut) permet aux utilisateurs d’activer BitLocker, même si les informations de récupération ne sont pas correctement stockées dans Azure Active Directory.
+- **Message et URL de récupération préalables au démarrage** : **Activer** ce paramètre pour configurer le message et l’URL qui s’affichent sur l’écran de récupération de clé préalable au démarrage. **Non configuré** (valeur par défaut) désactive cette fonctionnalité.
   - **Message de récupération préalable au démarrage** : configurez la façon dont le message de récupération préalable au démarrage est présenté aux utilisateurs. Choisissez parmi :
     - **Utiliser le message et l’URL de récupération par défaut**
     - **Utiliser un message et une URL de récupération vides**
@@ -137,24 +188,52 @@ Ces paramètres s’appliquent spécifiquement aux lecteurs de données de syst�
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>Paramètres BitLocker des lecteurs de données fixes
 
-- **Accès en écriture à un lecteur de données fixe non protégé par BitLocker** : si ce paramètre est activé, la protection BitLocker doit être activée sur tous les lecteurs de données fixes, ou intégrés, pour qu’ils soient accessibles en écriture.
-- **Récupération d’un lecteur fixe** : activez ce paramètre pour contrôler comment les lecteurs fixes protégés par BitLocker sont récupérés quand les informations de démarrage nécessaires ne sont pas disponibles.
-  - **Agent de récupération de données** : activez ce paramètre si vous souhaitez que les agents de récupération de données soient utilisés avec les lecteurs fixes protégés par BitLocker.
+Pris en charge sur les éditions de Windows 10 suivantes :
+
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
+
+**Paramètres** :
+
+- **Accès en écriture à un lecteur de données fixe non protégé par BitLocker** : définissez la valeur **Bloquer** pour octroyer l’accès en lecture seule aux lecteurs de données qui ne sont protégés par BitLocker. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les lecteurs de données qui ne sont pas protégés par BitLocker bénéficient d’un accès en lecture et écriture.
+- **Récupération d’un lecteur fixe** : **Activer** ce paramètre pour contrôler la façon dont les lecteurs fixes protégés par BitLocker sont récupérés quand les informations de démarrage nécessaires ne sont pas disponibles. **Non configuré** (valeur par défaut) désactive cette fonctionnalité.
+  - **Agent de récupération de données** : **Bloquer** l’utilisation de l’agent de récupération de données avec l’Éditeur de stratégie des lecteurs fixes protégés par BitLocker. **Non configuré** (valeur par défaut) permet d’utiliser des agents de récupération de données avec des lecteurs fixes protégés par BitLocker.
   - **Création d’un mot de passe de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer un mot de passe de récupération de 48 chiffres.  
   - **Création d’une clé de récupération par l’utilisateur** : configurez si les utilisateurs sont autorisés, non autorisés ou contraints à générer une clé de récupération de 256 bits.
-  - **Options de récupération dans l’Assistant Installation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs de voir ou de changer les options de récupération quand ils activent BitLocker.
-  - **Enregistrer les informations de récupération BitLocker dans AD DS** : active le stockage des informations de récupération BitLocker dans Active Directory.
-  - **Informations de récupération BitLocker dans AD DS** : configurez les parties des informations de récupération BitLocker qui sont stockées dans Active Directory. Choisissez parmi :
+  - **Options de récupération dans l’Assistant Installation de BitLocker** : définissez ce paramètre sur **Bloquer** pour que les utilisateurs ne puissent pas voir ni changer les options de récupération. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les utilisateurs peuvent voir et changer les options de récupération quand ils activent BitLocker.
+  - **Enregistrer les informations de récupération BitLocker dans AD DS** : **Activer** pour stocker les informations de récupération BitLocker dans Azure Active Directory (AAD). Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les informations de récupération ne sont pas stockées dans AAD.
+  - **Informations de récupération BitLocker dans AD DS** : configurez les parties des informations de récupération BitLocker qui sont stockées dans Azure Active Directory. Choisissez parmi :
     - **Sauvegarder les mots de passe et les jeux de clés de récupération**
     - **Sauvegarder les mots de passe de récupération uniquement**
-  - **Stocker les informations de récupération dans AD DS avant l’activation de BitLocker** : activez ce paramètre pour empêcher les utilisateurs d’activer BitLocker, sauf si l’appareil est joint au domaine et que les informations de récupération BitLocker ont été correctement stockées dans Active Directory.
+  - **Stocker les informations de récupération dans AD DS avant l’activation de BitLocker** : **Exiger** la définition de ce paramètre pour empêcher les utilisateurs d’activer BitLocker, sauf si les informations de récupération BitLocker sont correctement stockées dans Azure Active Directory. **Non configuré** (valeur par défaut) permet aux utilisateurs d’activer BitLocker, même si les informations de récupération ne sont pas correctement stockées dans Azure Active Directory.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Paramètres BitLocker des lecteurs de données amovibles
 
-- **Accès en écriture à un lecteur de données amovible non protégé par BitLocker** : spécifiez si le chiffrement BitLocker est obligatoire pour les lecteurs de stockage amovibles.
-  - **Accès en écriture aux appareils configurés dans une autre organisation** : spécifiez si les lecteurs de données amovibles qui appartiennent à une autre organisation sont accessibles en écriture.
+Pris en charge sur les éditions de Windows 10 suivantes :
+
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
+
+**Paramètres** :
+
+- **Accès en écriture à un lecteur de données amovibles non protégé par BitLocker** : définissez la valeur **Bloquer** pour octroyer l’accès en lecture seule aux lecteurs de données qui ne sont protégés par BitLocker. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les lecteurs de données qui ne sont pas protégés par BitLocker bénéficient d’un accès en lecture et écriture.
+  - **Accès en écriture aux appareils configurés dans une autre organisation** : la valeur **Bloquer** autorise l’accès en écriture pour les appareils configurés dans une autre organisation. **Non configuré** (valeur par défaut) refuse l’accès en écriture.
 
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard
+
+Pris en charge sur les éditions de Windows 10 suivantes :
+
+- Accueil
+- Professionnel
+- Professionnel
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
 
 Utilisez [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) pour gérer et réduire la surface d’attaque des applications utilisées par vos employés.
 
@@ -162,7 +241,7 @@ Utilisez [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/thr
 
 - **Marquer le vol des informations d’identification du sous-système de l’autorité de sécurité locale Windows**
 
-Cette fonctionnalité contribue à [empêcher les actions et les applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) généralement utilisées par les programmes malveillants pour infecter les ordinateurs.
+  Cette fonctionnalité contribue à [empêcher les actions et les applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) généralement utilisées par les programmes malveillants pour infecter les ordinateurs.
 
 #### <a name="rules-to-prevent-office-macro-threats"></a>Règles pour empêcher les menaces sur les macros Office
 
@@ -211,34 +290,53 @@ Bloquez les connexions sortantes de toutes les applications aux adresses IP/doma
 
 ### <a name="exploit-protection"></a>Exploit Protection
 
-Bloquez les **modifications par l’utilisateur de l’interface d’Exploit Protection** en chargeant un fichier XML qui vous permet de configurer des restrictions au niveau de la mémoire, du flux de contrôle et des stratégies. Les paramètres du fichier XML permettent de protéger une application contre les attaques.
-
-Pour activer Exploit Protection, créez un fichier XML représentant les paramètres d’atténuation du système et des applications de votre choix. Pour cela, utilisez l’une des deux méthodes suivantes :
+Pour activer Exploit Protection, créez un fichier XML qui inclut les paramètres d’atténuation du système et des applications souhaités. Deux options sont disponibles :
 
  1. PowerShell : utilisez une ou plusieurs des applets de commande PowerShell (Get-ProcessMitigation, Set-ProcessMitigation et ConvertTo-ProcessMitigationPolicy). Les applets de commande permettent de configurer les paramètres d’atténuation et de les exporter sous forme d’une représentation XML.
 
  2. Interface utilisateur du Centre de sécurité Windows Defender : dans le Centre de sécurité Windows Defender, cliquez sur Contrôle des applications et du navigateur, puis faites défiler l’écran vers le bas jusqu’à Exploit Protection. Utilisez d’abord les onglets Paramètres système et Paramètres du programme pour configurer les paramètres d’atténuation. Recherchez ensuite le lien Exporter les paramètres en bas de l’écran pour les exporter sous forme d’une représentation XML.
 
+Bloquez les **modifications par l’utilisateur de l’interface d’Exploit Protection** en chargeant un fichier XML qui vous permet de configurer des restrictions au niveau de la mémoire, du flux de contrôle et des stratégies. Les paramètres du fichier XML permettent de protéger une application contre les attaques. **Non configuré** (valeur par défaut) ne transmet pas une configuration personnalisée. 
+
 ## <a name="windows-defender-application-control"></a>Contrôle d’application Windows Defender
 
-Utilisez **Stratégies d’intégrité du code de contrôle des applications** pour choisir d’autres applications devant être auditées ou dont l’exécution peut être approuvée par le contrôle d’application Windows Defender. L’exécution des composants Windows et de toutes les applications du Windows Store est automatiquement approuvée.
+Pris en charge sur les éditions de Windows 10 suivantes :
+
+**Gestion des appareils mobiles (MDM)** : 
+- Professionnel
+- Professionnel
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
+
+**Gestion des stratégies de groupe** : 
+- Enterprise
+
+Utilisez **Stratégies d’intégrité du code de contrôle des applications** pour choisir d’autres applications qui sont auditées ou dont l’exécution est approuvée par le contrôle d’application Windows Defender. L’exécution des composants Windows et de toutes les applications du Windows Store est automatiquement approuvée.
 
 Les applications ne sont pas bloquées quand elles s’exécutent en mode **Auditer uniquement**. Le mode **Auditer uniquement** enregistre tous les événements dans les journaux du client local.
 
 Une fois activé, le contrôle d’application peut être désactivé uniquement en changeant le mode **Appliquer** en **Auditer uniquement**. Quand vous changez le mode **Appliquer** en **Non configuré**, le contrôle d’application continue à s’appliquer sur les appareils attribués.
 
 ## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard
+
+Pris en charge sur les éditions de Windows 10 suivantes :
+
+- Enterprise
+
 Windows Defender Credential Guard protège contre le vol d’informations d’identification. Il isole les clés secrètes afin que seuls les logiciels système privilégiés puissent y accéder.
 
 Les paramètres **Credential Guard** incluent :
 
-- **Désactivé** : désactive Credential Guard à distance s’il a été préalablement activé avec l’option **Activé sans verrouillage UEFI**.
-- **Activé avec le verrouillage UEFI** : garantit que Credential Guard ne peut pas être désactivé à distance en utilisant une clé de Registre ou une stratégie de groupe.
+- **Désactiver** : désactive Credential Guard à distance s’il a été préalablement activé avec l’option **Activé sans verrouillage UEFI**.
+
+- **Activer avec le verrouillage UEFI** : Credential Guard ne peut pas être désactivé à distance à l’aide d’une clé de Registre ou d’une stratégie de groupe.
 
     > [!NOTE]
     > Si vous utilisez ce paramètre et souhaitez ultérieurement désactiver Credential Guard, vous devez définir la stratégie de groupe sur **Désactivé**. Vous devez également effacer physiquement les informations de configuration UEFI sur chaque ordinateur. Tant que la configuration UEFI persiste, Credential Guard est activé.
 
-- **Activé sans verrouillage UEFI** : permet de désactiver Credential Guard à distance à l’aide d’une stratégie de groupe. Les appareils utilisant ce paramètre doivent exécuter Windows 10 (version 1511) et versions ultérieures.
+- **Activer sans verrouillage UEFI** : permet de désactiver Credential Guard à distance à l’aide d’une stratégie de groupe. Les appareils utilisant ce paramètre doivent exécuter Windows 10 (version 1511) et versions ultérieures.
 
 Lorsque vous activez Credential Guard, les fonctionnalités requises suivantes sont également activées :
 
@@ -247,11 +345,21 @@ Lorsque vous activez Credential Guard, les fonctionnalités requises suivantes s
 
 ## <a name="windows-defender-security-center"></a>Centre de sécurité Windows Defender
 
-L’application Centre de sécurité Windows Defender fonctionne comme une application ou un processus distinct de chacune des fonctionnalités individuelles. Elle affiche des notifications dans le centre de notifications. Elle agit comme un collecteur de données ou emplacement unique pour afficher l’état et configurer chacune des fonctionnalités. Vous trouverez plus d’informations dans la documentation [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center).
+Pris en charge sur les éditions de Windows 10 suivantes :
+
+- Accueil
+- Professionnel
+- Professionnel
+- Enterprise
+- Éducation
+- Mobile
+- Mobile Entreprise
+
+Le Centre de sécurité Windows Defender fonctionne comme une application ou un processus distinct de chacune des fonctionnalités individuelles. Elle affiche des notifications dans le centre de notifications. Elle agit comme un collecteur de données ou emplacement unique pour afficher l’état et configurer chacune des fonctionnalités. Vous trouverez plus d’informations dans la documentation [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
 #### <a name="windows-defender-security-center-app-and-notifications"></a>Application Centre de sécurité Windows Defender et notifications
 
-Empêchez l’utilisateur final d’accéder aux différentes zones de l’application Centre de sécurité Windows Defender. Masquez une section pour bloquer également les notifications associées.
+Empêchez l’utilisateur final d’accéder aux différentes zones de l’application Centre de sécurité Windows Defender. Le masquage d’une section bloque également les notifications associées.
 
 - **Protection contre les virus et menaces**
 - **Performances des appareils et intégrité**
@@ -262,7 +370,7 @@ Empêchez l’utilisateur final d’accéder aux différentes zones de l’appli
 
 #### <a name="it-contact-information"></a>Informations de contact du service informatique
 
-Indiquez les informations de contact du service informatique à afficher dans l’application Centre de sécurité Windows Defender et ses notifications. Vous avez le choix entre **Afficher dans l’application et dans les notifications**, **Afficher uniquement dans l’application**, **Afficher uniquement dans les notifications** ou **Ne pas afficher**. Vous devez entrer le **nom de l’organisation du service informatique** et au moins l’une des options de contact suivantes :
+Indiquez les informations de contact du service informatique à afficher dans l’application Centre de sécurité Windows Defender et ses notifications. Vous avez le choix entre **Afficher dans l’application et dans les notifications**, **Afficher uniquement dans l’application**, **Afficher uniquement dans les notifications** ou **Ne pas afficher**. Entrez le **nom de l’organisation du service informatique** et au moins l’une des options de contact suivantes :
 
 - **Numéro de téléphone ou ID Skype du service informatique**
 - **Adresse e-mail du service informatique**
@@ -270,56 +378,65 @@ Indiquez les informations de contact du service informatique à afficher dans l�
 
 ## <a name="local-device-security-options"></a>Option de sécurité de l’appareil local
 
+Pris en charge sur les éditions de Windows 10 suivantes :
+ 
+- Accueil
+- Professionnel
+- Professionnel
+- Enterprise
+- Éducation
+
 Utilisez ces options pour configurer les paramètres de sécurité locale sur les appareils Windows 10.
 
 ### <a name="accounts"></a>Comptes
 
-- **Ajouter de nouveaux comptes Microsoft** : empêche les utilisateurs d’ajouter de nouveaux comptes Microsoft sur cet ordinateur.
-- **Connexion à distance sans mot de passe** : permet à des comptes locaux qui ne sont pas protégés par un mot de passe de se connecter à partir d’autres emplacements que l’unité physique.
+- **Ajouter de nouveaux comptes Microsoft** : définissez la valeur **Bloquer** pour empêcher les utilisateurs d’ajouter de nouveaux comptes Microsoft sur cet appareil. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les utilisateurs peuvent utiliser des comptes Microsoft sur l’appareil.
+- **Connexion à distance sans mot de passe** : **Activer** permet à des comptes locaux avec des mots de passe vides pour se connecter à l’aide du clavier de l’appareil. **Non configuré** (valeur par défaut) autorise les comptes locaux avec des mots de passe vides à se connecter à partir d’emplacements autres que l’appareil physique.
 
 #### <a name="admin"></a>Administrateur
 
-- **Compte administrateur local** : détermine si le compte administrateur local est activé ou désactivé.
+- **Compte Administrateur local** : définissez la valeur **Activé** pour autoriser le compte d’administrateur local. Définissez la valeur **Non configuré** (valeur par défaut) pour désactiver le compte d’administrateur local.
 - **Renommer un compte Administrateur** : définit un autre nom de compte à associer à l’identificateur de sécurité (SID) pour le compte administrateur.
 
 #### <a name="guest"></a>Invité
 
-- **Compte Invité** : détermine si le compte Invité est activé ou désactivé.
+- **Compte invité** : définissez la valeur **Activé** pour autoriser le compte Invité local. Définissez la valeur **Non configuré** (valeur par défaut) pour désactiver le compte Invité local.
 - **Renommer le compte Invité** : définit un autre nom de compte à associer à l’identificateur de sécurité (SID) pour le compte Invité.
 
 ### <a name="devices"></a>Appareils
 
-- **Autoriser le retrait sans ouverture de session préalable** : empêche un ordinateur portable d’être retiré sans se connecter.
-- **Installer des pilotes d’imprimante pour les imprimantes partagées** : autorise uniquement les administrateurs à installer des pilotes d’imprimante lors de la connexion à une imprimante partagée.
-- **Autoriser l’accès au CD-ROM uniquement aux utilisateurs ayant ouvert une session localement** : ce paramètre autorise uniquement l’utilisateur connecté de manière interactive à accéder au CD-ROM
+- **Retirer l’appareil de la station d’accueil sans ouverture de session** : définissez la valeur **Bloquer** pour permettre aux utilisateurs d’appuyer sur le bouton d’éjection physique d’un appareil portable placé sur une station d’accueil afin de retirer l’appareil de manière sécurisée. **Non configuré** (valeur par défaut) oblige l’utilisateur à se connecter à l’appareil et à être autorisé à retirer l’appareil.
+- **Installer des pilotes d’imprimante pour les imprimantes partagées** : quand ce paramètre a la valeur **Activé**, n’importe quel utilisateur peut installer un pilote d’imprimante lors de la connexion à une imprimante partagée. Quand **Non configuré** (valeur par défaut) est défini, seuls les administrateurs peuvent installer un pilote lors de la connexion à une imprimante partagée.
+- **Autoriser l’accès au CD-ROM uniquement aux utilisateurs ayant ouvert une session localement** : quand ce paramètre a la valeur **Activé**, seul l’utilisateur connecté de manière interactive peut utiliser le CD-ROM. Si cette stratégie est activée et qu’aucun utilisateur n’est connecté de façon interactive, le CD-ROM est accessible sur le réseau. Quand la valeur définie est **Non configuré** (valeur par défaut), tout le monde a accès au CD-ROM.
 - **Permettre le formatage et l’éjection des médias amovibles** : définit les personnes autorisées à formater et à éjecter un support NTFS amovible :
   - **Non configuré**
+  - **Administrateurs**
   - **Administrateurs et utilisateurs avec pouvoir**
   - **Administrateurs et utilisateurs interactifs**
 
 ### <a name="interactive-logon"></a>Ouverture de session interactive
 
-- **Minutes d’inactivité de l’écran de veille avant que l’économiseur d’écran s’active** : définit le nombre maximal de minutes d’inactivité sur l’écran de connexion du bureau interactif avant l’apparition de l’économiseur d’écran.
-- **Nécessiter CTRL+ALT+DEL pour ouvrir une session** : oblige l’utilisateur à appuyer sur CTRL+ALT+SUPPR pour pouvoir ouvrir une session.
+- **Minutes d’inactivité de l’écran de veille avant que l’économiseur d’écran s’active** : entrez le nombre maximal de minutes d’inactivité sur l’écran de connexion du bureau interactif avant l’apparition de l’économiseur d’écran.
+- **Nécessiter CTRL+ALT+DEL pour ouvrir une session** : définissez la valeur **Activer** afin que les utilisateurs n’aient pas à appuyer sur CTRL+ALT+SUPPR pour se connecter. Définissez la valeur **Non configuré** (valeur par défaut) pour obliger les utilisateurs à appuyer sur CTRL+ALT+SUPPR avant de se connecter à Windows.
 - **Comportement en cas de suppression de la carte à puce** : détermine ce qui se passe quand la carte à puce d’un utilisateur connecté est retirée du lecteur de carte à puce. Les options disponibles sont les suivantes :
 
   - **Verrouiller la station de travail** : la station de travail est verrouillée quand la carte à puce est retirée. Cette option permet aux utilisateurs de quitter les lieux, d’emporter leur carte à puce et de conserver une session protégée.
   - **Forcer la fermeture de session** : l’utilisateur est automatiquement déconnecté quand la carte à puce est retirée.
-  - **Déconnecter en cas de session Terminal Server** : le retrait de la carte à puce déconnecte la session sans déconnecter l’utilisateur. Cette option permet à l’utilisateur d’insérer la carte à puce et de reprendre la session ultérieurement, ou sur un autre ordinateur équipé d’un lecteur de carte à puce, sans avoir à se reconnecter. Si la session est locale, cette stratégie fonctionne comme l’option Verrouiller la station de travail.
+  - **Déconnecter en cas de session des services Bureau à distance** : le retrait de la carte à puce déconnecte la session sans déconnecter l’utilisateur. Cette option permet à l’utilisateur d’insérer la carte à puce et de reprendre la session ultérieurement, ou sur un autre ordinateur équipé d’un lecteur de carte à puce, sans avoir à se reconnecter. Si la session est locale, cette stratégie fonctionne comme l’option Verrouiller la station de travail.
 
     Les [options LocalPoliciesSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) fournissent plus de détails.
 
 #### <a name="display"></a>Afficher
 
 - **Informations utilisateur sur l’écran de verrouillage** : configure les informations de l’utilisateur qui apparaissent lorsque la session est verrouillée. Si cette option n’est pas configurée, le nom d’utilisateur, le domaine et le nom d’utilisateur complet sont affichés.
-  - **Non configurée** : nom d’utilisateur, domaine et nom d’utilisateur complet
+  - **Non configuré**
   - **Nom d’affichage de l’utilisateur, domaine et nom d’utilisateur**
   - **Nom d'affichage de l'utilisateur uniquement**
   - **Ne pas afficher les informations utilisateur**
-- **Masquer le dernier utilisateur connecté** : ne pas afficher le nom d’utilisateur de la dernière personne connectée à cet appareil.
-- **Masquer le nom d’utilisateur lors de la connexion** : ne pas afficher le nom d’utilisateur de la personne connectée à cet appareil une fois les informations d’identification entrées, avant l’affichage du bureau de l’appareil.
-- **Titre du message de connexion** : définit le titre du message pour les utilisateurs essayant de se connecter.
-- **Texte du message de connexion** : définit le texte du message pour les utilisateurs essayant de se connecter.
+- **Masquer le dernier utilisateur connecté** : **Activer** masque le nom d’utilisateur. **Non configuré** (valeur par défaut) affiche le nom d’utilisateur.
+- **Masquer le nom d’utilisateur lors de la connexion** : **Activer** masque le nom d’utilisateur. **Non configuré** (valeur par défaut) affiche le nom d’utilisateur.
+- **Titre du message de connexion** : définissez le titre du message pour les utilisateurs se connectant.
+- **Texte du message de connexion** : définissez le texte du message pour les utilisateurs se connectant.
 
 ### <a name="network-access-and-security"></a>Accès réseau et sécurité
 
@@ -333,14 +450,14 @@ Utilisez ces options pour configurer les paramètres de sécurité locale sur le
 
 ### <a name="recovery-console-and-shutdown"></a>Console de récupération et arrêt
 
-- **Effacer le fichier d’échange de mémoire virtuelle lors de l'arrêt** : efface le fichier d’échange de mémoire virtuelle lorsque l’appareil est mis hors tension.
-- **Arrêt sans ouverture de session** : désactive la possibilité d’arrêter l’ordinateur à partir de l’écran d’ouverture de session Windows. Dans ce cas, les utilisateurs doivent pouvoir ouvrir une session sur l’ordinateur et avant d’arrêter le système.
+- **Effacer le fichier d’échange de mémoire virtuelle lors de l’arrêt** : définissez la valeur **Activer** pour effacer le fichier d’échange de mémoire virtuelle quand l’appareil est mis hors tension. La valeur **Non configuré** n’efface pas la mémoire virtuelle.
+- **Arrêt sans ouverture de session** : **Bloquer** masque l’option d’arrêt sur l’écran d’ouverture de session Windows. Les utilisateurs doivent se connecter à l’appareil, puis l’arrêter. **Non configuré** (valeur par défaut) permet aux utilisateurs d’arrêter l’appareil à partir de l’écran d’ouverture de session Windows.
 
 ### <a name="user-account-control"></a>Contrôle de compte d'utilisateur
 
-- **Intégrité UIA dans emplacement sécurisé** : permet aux applications provenant d’emplacements non sécurisés dans le système de fichiers de s’exécuter avec un niveau d’intégrité UIAccess.
-- **Virtualiser les erreurs d’écriture de fichiers et de registre dans des emplacements définis par utilisateur** : détermine si les erreurs d’écriture d’application sont redirigées vers des emplacements définis pour le système de fichiers et le Registre. Ou entraîne l’échec de l’application.
-- **Élever uniquement les fichiers exécutables signés et validés** : applique la validation du chemin de certification PKI pour un fichier exécutable donné avant qu’il soit autorisé à s’exécuter.
+- **Intégrité UIA sans emplacement sécurisé** : quand ce paramètre est défini sur **Activer**, les applications se trouvant dans un emplacement sécurisé dans le système de fichiers s’exécutent uniquement avec l’intégrité UIAccess. **Non configuré** (valeur par défaut) permet aux applications à s’exécuter avec l’intégrité UIAccess, même si elles ne se trouvent pas dans un emplacement sécurisé dans le système de fichiers.
+- **Virtualiser les échecs d’écritures de fichiers et de Registre dans des emplacements définis par utilisateur** : quand ce paramètre a la valeur **Bloquer**, les échecs d’écriture d’application sont redirigés au moment de l’exécution vers des emplacements définis pour le système de fichiers et le Registre. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), les applications qui écrivent des données dans des emplacements protégés échouent.
+- **Élever uniquement les fichiers exécutables signés et validés** : définissez la valeur **Activé** pour appliquer la validation du chemin de certification PKI d’un fichier exécutable avant qu’il puisse s’exécuter. Définissez la valeur **Non configuré** (valeur par défaut) pour ne pas appliquer de validation de chemin de certificat PKI avant qu’un fichier exécutable puisse s’exécuter.
 
 #### <a name="uia-elevation-prompt-behavior-settings"></a>Paramètres de comportement de l’invite d’élévation UIA
 
@@ -355,24 +472,24 @@ Utilisez ces options pour configurer les paramètres de sécurité locale sur le
   - **Refuser automatiquement les demandes d’élévation de privilèges**
   - **Demande d’informations d’identification sur le bureau sécurisé**
   - **Non configuré** : invite demandant les informations d'identification
-- **Acheminer les invites d’élévation vers le bureau de l’utilisateur interactif** : autorise toutes les demandes d’élévation à accéder au bureau de l’utilisateur interactif plutôt qu’au bureau sécurisé. Les paramètres de stratégie de comportement d’invite pour les administrateurs et les utilisateurs standard sont employés.
-- **Elevated prompt for app installations** : les installations d’applications nécessitant des privilèges élevés nécessiteront l’identification de l’administrateur.
-- **Invite d’élévation UIA sans bureau sécurisé** : autorise les applications UIAccess à demander l’élévation sans utiliser le bureau sécurisé.
+- **Acheminer les invites d’élévation vers le bureau de l’utilisateur interactif** : **Activer** pour que toutes les demandes d’élévation passent au bureau de l’utilisateur interactif, et non pas au bureau sécurisé. Tous les paramètres de stratégie de comportement d’invite pour les administrateurs et les utilisateurs standard sont utilisés. **Non configuré** (valeur par défaut) force toutes les demandes d’élévation à passer au bureau sécurisé, quels que soient les paramètres de stratégie de comportement d’invite pour les administrateurs et les utilisateurs standard.
+- **Invite avec élévation de privilèges pour les installations d’application** : quand la valeur définie est **Bloquer**, les packages d’installation d’application ne sont pas détectés ou ne font pas l’objet d’une demande d’élévation. Quand ce paramètre a la valeur **Non configuré** (valeur par défaut), l’utilisateur est invité à entrer un nom d’utilisateur et un mot de base d’administration quand un package d’installation d’application nécessite une élévation de privilège.
+- **Invite d’élévation UIA sans bureau sécurisé** : **Activer** pour autoriser les applications UIAccess à demander l’élévation sans utiliser le bureau sécurisé. Quand la valeur est **Non configuré** (valeur par défaut), les invites d’élévation utilisent un bureau sécurisé.
 
 #### <a name="admin-approval-mode-settings"></a>Paramètres du mode d’approbation Administrateur
 
-- **Mode d'approbation Administrateur pour l’administrateur intégré**  : indique si le compte administrateur intégré utilise le mode d’approbation Administrateur ou exécute toutes les applications avec des privilèges d’administrateur complets.
-- **Exécuter tous les administrateurs en mode d'approbation Administrateur** : définit si le mode d’approbation Administrateur et tous les paramètres de la stratégie UAC sont activés.
+- **Mode d’approbation Administrateur pour l’administrateur intégré** : **Activé** permet au compte Administrateur intégré d’utiliser le mode d’approbation Administrateur. Une invite d’approbation est présentée à l’utilisateur pour toute opération nécessitant une élévation de privilège. **Non configuré** (valeur par défaut) exécute toutes les applications avec des privilèges d’administrateur complets.
+- **Exécuter tous les administrateurs en mode d’approbation Administrateur** : définissez la valeur **Bloquer** pour désactiver le mode d’approbation Administrateur et tous les paramètres de stratégie UAC associés. **Non configuré** (valeur par défaut) active le mode d’approbation Administrateur.
 
 ### <a name="microsoft-network-client"></a>Client réseau Microsoft
 
-- **Communications signées numériquement (lorsque le serveur l'accepte)** : détermine si le client SMB tente de négocier la signature de paquet SMB. Quand cette option est activée (Non configuré), le client réseau Microsoft demande au serveur d’effectuer la signature de paquet SMB lors de la configuration de la session. Si la signature de paquet est activée sur le serveur, la signature de paquet est négociée. Si cette stratégie est désactivée, le client SMB ne négocie jamais la signature de paquet SMB.
-- **Envoyer un mot de passe non chiffré aux serveurs SMB tiers** : lorsque cette option est activée, le redirecteur Server Message Block (SMB) est autorisé à envoyer des mots de passe en clair aux serveurs SMB non-Microsoft qui ne prennent pas en charge le chiffrement de mot de passe lors de l’authentification.
+- **Signer numériquement les communications (si le serveur accepte)** : détermine si le client SMB négocie la signature de paquet SMB. Quand ce paramètre a la valeur **Non configuré** ou est activé (par défaut), le client réseau Microsoft demande au serveur d’exécuter la signature de paquet SMB lors de la configuration de la session. Si la signature de paquet est activée sur le serveur, la signature de paquet est négociée. Si la valeur définie est **Désactiver**, le client SMB ne négocie jamais la signature de paquet SMB.
+- **Envoyer un mot de passe non chiffré aux serveurs SMB tiers** : quand ce paramètre a la valeur **Activer**, le redirecteur Server Message Block (SMB) peut envoyer des mots de passe en clair aux serveurs SMB non-Microsoft qui ne prennent pas en charge le chiffrement de mot de passe lors de l’authentification. Quand la valeur définie est **Non configuré** (valeur par défaut), les mots de passe sont chiffrés.
 
 ### <a name="microsoft-network-server"></a>Serveur réseau Microsoft
 
-- **Communications signées numériquement (lorsque le client l'accepte)** : détermine si le serveur SMB négocie la signature de paquet SMB avec les clients qui en font la demande. Lorsque cette option est activée, le serveur réseau Microsoft négocie la signature de paquet SMB comme demandé par le client. Autrement dit, si la signature de paquet a été activée sur le client, la signature de paquet est négociée. Quand l’option a la valeur **Non configuré** ou est désactivée, le client SMB ne négocie jamais la signature de paquet SMB.
-- **Communications signées numériquement (toujours)** : détermine si la signature de paquet est requise par le composant serveur SMB. Lorsque cette option est activée, le serveur réseau Microsoft ne communique pas avec un client réseau Microsoft, sauf si le client accepte d’effectuer la signature de paquet SMB. Quand la valeur **Non configuré** est désactivée (valeur par défaut), la signature de paquet SMB est négociée entre le client et le serveur.
+- **Communications signées numériquement (lorsque le client l'accepte)** : détermine si le serveur SMB négocie la signature de paquet SMB avec les clients qui en font la demande. Quand ce paramètre a la valeur **Activer**, le serveur réseau Microsoft négocie la signature de paquet SMB comme demandé par le client. Autrement dit, si la signature de paquet a été activée sur le client, la signature de paquet est négociée. Quand l’option a la valeur **Non configuré** ou est désactivée, le client SMB ne négocie jamais la signature de paquet SMB.
+- **Communications signées numériquement (toujours)** : détermine si la signature de paquet est requise par le composant serveur SMB. Quand ce paramètre a la valeur **Activer**, le serveur réseau Microsoft ne communique avec un client réseau Microsoft que si ce client accepte la signature de paquet SMB. Quand ce paramètre a la valeur **Non configuré** ou est désactivé (par défaut), la signature de paquet SMB est négociée entre le client et le serveur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

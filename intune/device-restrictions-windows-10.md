@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803837"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Paramètres de restriction des appareils pour Windows 10 (et versions ultérieures) dans Intune
 Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 10.
@@ -249,7 +250,9 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
   La mise à l'échelle DPI GDI permet aux applications sans prise en charge DPI de bénéficier d'une prise en charge DPI par moniteur. Spécifiez les applications héritées dont la mise à l'échelle DPI GDI a été activée. Si la mise à l'échelle DPI GDI est configurée pour s'activer et se désactiver sur une application, la mise à l'échelle est désactivée pour l'application.
 
-## <a name="kiosk-preview"></a>Kiosk (préversion)
+## <a name="kiosk-preview---obsolete"></a>Plein écran (préversion) - Obsolète
+
+Ces paramètres sont déplacés et ils seront supprimés dans une prochaine version. Pour utiliser les nouveaux paramètres, consultez [Paramètres de plein écran dans Windows 10 et ultérieur](kiosk-settings.md).
 
 Un appareil plein écran exécute généralement une application ou un ensemble spécifique d’applications. Les utilisateurs ne peuvent pas accéder aux fonctionnalités ou fonctions sur l’appareil en dehors de toutes les applications plein écran.
 
@@ -262,9 +265,12 @@ Un appareil plein écran exécute généralement une application ou un ensemble 
 #### <a name="single-app-kiosks"></a>Applications uniques plein écran
 entrez les paramètres suivants :
 
-- **Compte d’utilisateur** : entrez le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran. Pour les comptes liés à des domaines Azure AD, entrez le compte en utilisant le format `domain\username@tenant.org`. 
+- **Compte d’utilisateur** : entrez le compte d’utilisateur local (pour l’appareil), un compte de domaine AD ou une connexion de compte Azure AD associée à l’application plein écran.
+  - Compte local : entrez-le sous la forme `devicename\accountname`, `.\accountname` ou `accountname`
+  - Compte de domaine : entrez-le sous la forme `domain\accountname`
+  - Compte Azure AD : entrez-le sous la forme `AzureAD\emailaddress`. Veillez à entrer « AzureAD », car c’est un nom de domaine fixe. Faites-le suivre de l’adresse e-mail d’Azure AD. Par exemple, entrez `AzureAD\user@contoso.onmicrosoft.com`.
 
-    Pour les appareils plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode plein écran, utilisez le format `AzureAD\user@contoso.com`.
+    Pour les appareils plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Si vous utilisez un compte Azure AD pour le mode plein écran, veillez à entrer `AzureAD\user@yourorganization.com`.
 
 - **Identifiant AUMID de l’application** : entrez l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
 

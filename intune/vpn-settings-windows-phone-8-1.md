@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291442"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configurer les paramètres VPN dans Microsoft Intune pour les appareils exécutant Windows Phone 8.1
 
@@ -56,7 +57,7 @@ Selon les paramètres que vous choisissez, toutes les valeurs de la liste suivan
 - **Rôle** (Pulse Secure uniquement) : spécifiez le nom du rôle d'utilisateur qui a accès à cette connexion. Un rôle d’utilisateur définit des options et des paramètres personnels, et active ou désactive certaines fonctionnalités d’accès.
 - **Domaine** (Pusle Secure uniquement) : spécifiez le nom du domaine d'authentification que vous souhaitez utiliser. Un domaine d’authentification est un regroupement de ressources d’authentification qu’utilise le type de connexion Pulse Secure.
 
-- **Liste de recherche de suffixes DNS** - **Ajouter** un ou plusieurs suffixes DNS. Chaque suffixe DNS que vous spécifiez est recherché lors de la connexion à un site web en utilisant un nom court. Par exemple, si vous spécifiez les suffixes DNS **domain1.contoso.com** et **domain2.contoso.com** et que vous visitez l’URL **http://mywebsite**, les URL **http://mywebsite.domain1.contoso.com** et **http://mywebsite.domain2.contoso.com font l’objet d’une recherche**.
+- **Liste de recherche de suffixes DNS** - **Ajouter** un ou plusieurs suffixes DNS. Chaque suffixe DNS que vous spécifiez est recherché lors de la connexion à un site web en utilisant un nom court. Par exemple, si vous spécifiez les suffixes DNS **domain1.contoso.com** et **domain2.contoso.com** et que vous visitez l’URL `http://mywebsite`, la recherche est effectuée dans les URL `http://mywebsite.domain1.contoso.com` et `http://mywebsite.domain2.contoso.com`.
 
 - **XML personnalisé** : spécifiez des commandes XML personnalisées qui configurent la connexion VPN.
 

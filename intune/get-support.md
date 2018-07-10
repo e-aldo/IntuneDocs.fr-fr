@@ -15,11 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843138"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Comment obtenir un support technique pour Microsoft Intune
 
@@ -33,7 +34,8 @@ Microsoft fournit un support technique global, en avant-vente, pour la facturati
 ## <a name="create-an-online-support-ticket"></a>Créer un ticket de support en ligne
 
 En tant qu’administrateur informatique, vous pouvez créer un ticket de support à partir du portail Azure en effectuant les étapes suivantes :
-
+>[!NOTE]
+>Vous devez être administrateur de service Intune ou administrateur général pour créer un ticket de support en ligne. Pour plus d’informations, consultez [Affectation de rôles d’administrateur](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 1. Ouvrez une session dans le portail Azure (<https://portal.azure.com>) avec vos informations d’identification d’administrateur Intune, choisissez l’icône <strong>?</strong> en haut à droite du portail, puis sélectionnez <strong>Aide + support</strong> pour accéder à la page [Aide + support Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
     ![Capture d’écran du lien d’aide et support dans le portail Azure, avec le lien Aide + support mis en surbrillance](./media/azure-get-support.png)

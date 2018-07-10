@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803820"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Paramètres de restriction des appareils iOS de Microsoft Intune
 
@@ -97,7 +98,7 @@ Vous pouvez activer le mode supervisé iOS seulement pendant l’installation in
     -   **Type de mot de passe requis** : spécifiez le type de mot de passe requis, par exemple des caractères numériques uniquement, ou des caractères alphanumériques.
     -   **Nombre de caractères non alphanumériques dans le mot de passe** : spécifie le nombre de caractères de symbole (comme **#** ou **@**) devant être inclus dans le mot de passe.
     -   **Longueur minimale du mot de passe** : spécifie le nombre minimal de caractères à inclure dans le mot de passe.
-    -   **Nombre d'échecs de connexion avant réinitialisation de l'appareil** : spécifie le nombre de tentatives de connexion ayant échoué que le paramètre système autorise avant d’effacer le contenu de l’appareil.
+    -   **Nombre d’échecs de connexion avant réinitialisation de l’appareil** : spécifie le nombre de tentatives d’entrée de mots de passe incorrects différents avant que ce paramètre déclenche l’effacement du contenu de l’appareil.
     -   **Nombre maximal de minutes après verrouillage de l’écran avant de demander un mot de passe**<sup>1</sup> : spécifiez la durée pendant laquelle l’appareil peut rester inactif avant que l’utilisateur doive entrer à nouveau son mot de passe.
     -   **Nombre maximal de minutes d’inactivité avant verrouillage de l’écran**<sup>1</sup> : spécifiez le nombre de minutes avant que l’écran de l’appareil s’éteigne.
     -   **Expiration du mot de passe (jours)** : spécifie le nombre de jours avant que l’utilisateur ne doive modifier le mot de passe de l’appareil.

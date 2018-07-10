@@ -2,10 +2,10 @@
 title: RBAC avec Microsoft Intune
 description: Découvrez comment le contrôle d’accès en fonction du rôle (RBAC) vous permet de contrôler qui peut effectuer des actions et apporter des modifications dans Microsoft Intune.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474562"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Contrôle d’accès en fonction du rôle (RBAC) avec Microsoft Intune
 
@@ -26,7 +27,7 @@ Le RBAC permet de contrôler qui peut effectuer diverses tâches Intune au sein 
 
 - **Définition de rôle** : le nom d’un rôle, les ressources qu’il gère et les autorisations accordées pour chaque ressource.
 - **Membres** : les groupes d’utilisateurs à qui sont accordées les autorisations.
-- **Étendue** : les groupes d’utilisateurs ou d’appareils que les membres peuvent cibler pour déployer une application ou une stratégie, ou effectuer des tâches à distance.
+- **Étendue**: les groupes d’utilisateurs ou d’appareils que les membres peuvent gérer.
 - **Affectation** : lorsque la définition, les membres et l'étendue ont été configurés, le rôle est affecté.
 
 ![Exemple de RBAC Intune](./media/intune-rbac-1.PNG)
@@ -59,7 +60,8 @@ Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à de
 - **Opérateur du support technique** : effectue des tâches à distance sur les utilisateurs et les appareils, et peut attribuer des applications ou des stratégies aux utilisateurs ou aux appareils.
 - **Gestionnaire de stratégie et de profils** : gère la stratégie de conformité, les profils de configuration, l’inscription auprès d’Apple et les identificateurs d’appareils d’entreprise.
 - **Opérateur en lecture seule** : affiche des informations sur les utilisateurs, les appareils, l’inscription, la configuration et les applications. Il ne peut pas apporter de modifications à Intune.
-- **Gestionnaire d’applications** : gère les applications mobiles et gérées, et peut lire les informations sur les appareils.
+- **Gestionnaire d’applications**: gère les applications mobiles et gérées, peut lire les informations de l’appareil et peut afficher les profils de configuration de l’appareil.
+- **Administrateur de rôles Intune**: gère les rôles Intune personnalisés et ajoute des affectations pour les rôles Intune intégrés. C’est le seul rôle Intune qui peut affecter des autorisations aux administrateurs.
 - **Administrateur scolaire** : gère des appareils Windows 10 dans [Intune pour l’Éducation](introduction-intune-education.md) et peut effectuer les actions suivantes : 
 
 |Autorisation|Opération|
@@ -78,18 +80,20 @@ Les rôles suivants sont intégrés dans Intune ; vous pouvez les affecter à de
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Dans le volet **Intune**, choisissez **Rôles Intune**, puis **Tous les rôles**.
-4. Dans **Rôles Intune - Tous les rôles**, choisissez le rôle intégré que vous souhaitez affecter.
+1. Dans **Rôles Intune - Tous les rôles**, choisissez le rôle intégré que vous souhaitez affecter.
 
-5. Dans le volet <*nom du rôle*> - **Vue d’ensemble**, choisissez **Attributions** > **Attribuer**.
+2. Dans le volet <*nom_rôle*> - **Vue d’ensemble**, choisissez **Gérer**, puis **Affectations**.
 
     > [!NOTE]
     > Il n’est pas possible de supprimer ou de modifier les rôles intégrés.
 
-6. Dans le volet **Attributions de rôle**, entrez un **Nom de l’attribution** et éventuellement une **Description de l’attribution**, puis choisissez les éléments suivants :
+3. Dans le volet de rôle personnalisé, choisissez **Affecter**.
+
+4. Dans le volet **Attributions de rôle**, entrez un **Nom** et éventuellement une **Description** pour l’attribution, puis choisissez les éléments suivants :
     - **Membres** : sélectionnez un groupe qui contient l’utilisateur auquel vous souhaitez accorder les autorisations.
-    - **Étendue** : sélectionnez un groupe contenant les utilisateurs que le membre ci-dessus sera autorisé à gérer. Vous pouvez également choisir de définir l’étendue sur **Tous les utilisateurs**, **Tous les appareils** ou **Tous les utilisateurs et appareils**.
+    - **Étendue** : sélectionnez un groupe contenant les utilisateurs que le membre ci-dessus sera autorisé à gérer.
 <br></br>
-7. Une fois terminé, cliquez sur **OK**. La nouvelle affectation s’affiche dans la liste des affectations.
+5. Une fois terminé, cliquez sur **OK**. La nouvelle affectation s’affiche dans la liste des affectations.
 
 ### <a name="intune-rbac-table"></a>Tableau RBAC d’Intune
 
@@ -126,13 +130,13 @@ Vous pouvez créer un rôle personnalisé qui inclut toutes les autorisations re
 
 1. Dans **Rôles Intune - Tous les rôles**, choisissez le rôle personnalisé que vous souhaitez affecter.
 
-2. Dans le volet <*nom du rôle*> - **Vue d’ensemble**, choisissez **Attributions**. Dans ce volet, vous pouvez aussi modifier ou supprimer des rôles existants.
+2. Dans le volet <*nom_rôle*> - **Vue d’ensemble**, choisissez **Gérer**, puis **Affectations**. Dans ce volet, vous pouvez aussi modifier ou supprimer des rôles existants.
 
 3. Dans le volet de rôle personnalisé, choisissez **Affecter**.
 
 4. Dans le volet **Attributions de rôle**, entrez un **Nom** et éventuellement une **Description** pour l’attribution, puis choisissez les éléments suivants :
     - **Membres** : sélectionnez un groupe qui contient l’utilisateur auquel vous souhaitez accorder les autorisations.
-    - **Étendue** : sélectionnez un groupe contenant les utilisateurs que le membre ci-dessus sera autorisé à gérer. Vous pouvez également choisir de définir l’étendue sur **Tous les utilisateurs**, **Tous les appareils** ou **Tous les utilisateurs et appareils**.
+    - **Étendue** : sélectionnez un groupe contenant les utilisateurs que le membre ci-dessus sera autorisé à gérer.
 <br></br>
 5. Une fois terminé, cliquez sur **OK**. La nouvelle affectation s’affiche dans la liste des affectations.
 
@@ -143,5 +147,3 @@ Vous pouvez créer un rôle personnalisé qui inclut toutes les autorisations re
 ## <a name="see-also"></a>Voir aussi
 
 [Affecter des rôles avec Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
-
-

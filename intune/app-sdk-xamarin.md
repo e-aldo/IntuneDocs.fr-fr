@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 03/19/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9f81761e7e24393471f44da4cf619f017e9bbd
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f8f5e397c314088c7b26edba486f9cbaf9718096
+ms.sourcegitcommit: 1eddded65ae9e442dd3bebd16b9428af76a67f34
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35250942"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Liaisons Xamarin du kit SDK d’application Microsoft Intune
 
@@ -73,6 +74,9 @@ Consultez les [termes du contrat de licence](https://github.com/msintuneappsdk/i
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+      
+> [!NOTE] 
+> Il n’existe pas de remappeur pour iOS. L’intégration dans une application Xamarin.Forms doit être la même que pour un projet Xamarin.iOS normal. 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Activation de stratégies de protection des applications Intune dans votre application mobile Android
 
@@ -102,6 +106,7 @@ Consultez les [termes du contrat de licence](https://github.com/msintuneappsdk/i
 
 > [!NOTE]
 > Étant donné que cette opération réécrit une dépendance que Visual Studio utilise pour la saisie semi-automatique Intellisense, vous devrez peut-être redémarrer Visual Studio après la première exécution du remappeur pour qu’Intellisense reconnaisse correctement les changements. 
+
 
 ## <a name="support"></a>Prise en charge
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34444912"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Localiser des appareils iOS perdus ou volés avec Intune
 
@@ -45,7 +46,7 @@ Cette fonctionnalité n’est pas prise en charge pour les systèmes suivants 
     ![Capture d’écran de localisation de l’appareil à l’aide d’Intune dans Azure](./media/locate-device.png)
 
 >[!NOTE]
->Pour des raisons de confidentialité, le degré de zoom sur le plan est limité.
+>Pour des raisons de confidentialité, le degré de zoom sur la carte est limité à un rayon de 300 mètres.
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Activer l’alerte sonore sur un appareil iOS en mode de perte
 
@@ -58,7 +59,7 @@ Le son est émis jusqu’à ce que l’utilisateur désactive le son sur l’app
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Informations de sécurité et de confidentialité pour les actions Mode Perdu et Localiser l’appareil
 - Aucune information sur l’emplacement de l’appareil n’est envoyée à Intune tant que vous n’activez pas cette action.
-- Quand vous utilisez l’action Localiser l’appareil, les coordonnées de latitude et de longitude de l’appareil sont envoyées à Intune et affichées dans le portail Azure.
+- Quand vous utilisez l’action Localiser l’appareil, les coordonnées de latitude et de longitude de l’appareil peuvent être récupérées avec l’API Graph.
 - Les données sont stockées pendant 24 heures avant d’être supprimées. Vous ne pouvez pas supprimer manuellement les données d’emplacement.
 - Les données d’emplacement sont chiffrées aussi bien pendant leur stockage que leur transmission.
 - Quand vous configurez le mode Perdu, vous pouvez personnaliser un message qui s’affiche sur l’écran de verrouillage. Afin d’aider la personne qui trouve l’appareil, veillez à inclure dans le message des détails spécifiques pour retourner l’appareil perdu.

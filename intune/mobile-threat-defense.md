@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d840bf62682621e4ec3848538a96066c0fd228fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
+ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046262"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123399"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Qu’est-ce que l’intégration Mobile Threat Defense avec Intune ?
 
@@ -41,10 +41,12 @@ Par exemple, si une application Mobile Threat Defense connectée signale au four
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Quelles sont les données collectées par Intune pour Mobile Threat Defense ?
 
-Intune collecte les informations d’inventaire des applications sur les appareils personnels et de l’entreprise et les met à disposition des fournisseurs MTD (Mobile Thread Defense), comme Lookout for Work. Vous pouvez collecter un inventaire des applications auprès des utilisateurs d’appareils iOS 11+.
+Si cette option est activée, Intune collecte les informations d’inventaire des applications sur les appareils personnels et de l’entreprise, et les met à disposition des fournisseurs MTD (Mobile Threat Defense), comme Lookout for Work. Vous pouvez collecter un inventaire des applications auprès des utilisateurs d’appareils iOS.
+
+Ce service est basé sur un abonnement : aucune information d’inventaire des applications n’est partagée par défaut. Un administrateur Intune doit activer la synchronisation des applications pour les appareils iOS dans les paramètres de service avant que des informations d’inventaire des applications soient partagées.
 
 **Inventaire des applications**  
-Les inventaires à partir des appareils personnels et d’entreprise iOS 11 sont envoyés à votre fournisseur de service de détection des menaces mobiles. Les données de l’inventaire des applications comprennent les informations suivantes :
+Si vous activez la synchronisation des applications pour les appareils iOS, les inventaires à partir des appareils iOS personnels et d’entreprise sont envoyés à votre fournisseur de service de détection des menaces mobiles(MDT). Les données de l’inventaire des applications comprennent les informations suivantes :
 
  - ID de l’application
  - Version de l’application
@@ -52,8 +54,8 @@ Les inventaires à partir des appareils personnels et d’entreprise iOS 11 sont
  - Nom de l’application
  - Taille du bundle d’applications
  - Taille dynamique de l’application
- - Application validée ou non
- - Application gérée ou non
+ - Validation, ou non, de l’application
+ - Gestion, ou non, de l’application
 
 ## <a name="sample-scenarios"></a>Exemples de scénario
 
@@ -76,3 +78,4 @@ Découvrez comment protéger l’accès aux ressources d’entreprise en fonctio
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)
