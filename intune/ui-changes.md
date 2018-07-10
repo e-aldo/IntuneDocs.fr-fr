@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032589"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232934"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Où se trouve ma fonctionnalité Intune dans Azure ?
-Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Nous avons donc créé ce guide de référence pour ceux d’entre vous qui connaissent parfaitement Intune dans le portail classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune dans le portail Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
+Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Ce guide de référence est destiné à ceux d’entre vous qui connaissent parfaitement Intune dans le portail classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune dans le portail Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
 ## <a name="quick-reference-guide"></a>Guide de référence rapide
 
-|Fonctionnalité |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
+|Composant |Chemin dans le portail classique|Chemin dans Intune dans le portail Azure|
 |------------|---------------|---------------|
 |Programme d’inscription des appareils [iOS uniquement]|Administration > Gestion des appareils mobiles > iOS > Programme d’inscription des appareils|[Inscription de l’appareil > Inscription Apple > Jeton du programme d’inscription](#where-did-apple-dep-go) |
 |Programme d’inscription des appareils [iOS uniquement]| Administrateur > Gestion des appareils mobiles > iOS et Mac OS X > Programme d’inscription des appareils |[Inscription de l’appareil > Inscription Apple > Numéros de série du programme d’inscription](#where-did-apple-dep-go) |
@@ -45,27 +45,37 @@ Paramètres du portail d'entreprise|Admin > Portail d’entreprise|**Gérer** > 
 Intune dans le portail Azure utilise [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) pour gérer les groupes.
 
 ## <a name="where-did-enrollment-rules-go"></a>Où sont passées les règles d’inscription ?
-Dans le portail classique, vous pouviez définir des règles régissant l’inscription MDM des appareils Windows et macOS mobiles et récents :
+Dans le portail classique, vous pouviez définir des règles régissant l’inscription MDM des appareils mobiles et des appareils macOS et Windows modernes.
 
 ![Image des règles d’inscription des appareils mobiles classiques](./media/01-classic-rules.png)
 
-Ces règles s’appliquaient à tous les utilisateurs de votre compte Intune sans exception. Dans le portail Azure, ces règles apparaissent désormais dans deux types de stratégies distincts : les restrictions de type d’appareil et les restrictions de limite d’appareils :
+Ces règles s’appliquaient à tous les utilisateurs de votre compte Intune sans exception. Dans le portail Azure, ces règles apparaissent désormais dans deux types de stratégies distincts : les restrictions de type d’appareil et les restrictions de limite d’appareils.
 
 ![Image des restrictions d’inscription d’appareils mobiles Azure](./media/02-azure-enroll-restrictions.png)
 
-La restriction de limite d’appareils par défaut correspond à la limite d’inscription d’appareils dans le portail classique :
+La restriction de limite d’appareils par défaut correspond à la limite d’inscription d’appareils dans le portail classique.
 
 ![Image des restrictions de limite d’appareils Azure](./media/03-azure-device-limit.png)
 
-La restriction de type d’appareils par défaut correspond aux restrictions de plateforme dans le portail classique :
+La restriction de type d’appareil par défaut correspond aux restrictions de plateforme dans le portail classique.
 
 ![Image des restrictions de type d’appareils Azure](./media/04-azure-platform-restrictions.png)
 
-La capacité à autoriser ou à bloquer les appareils personnels est désormais gérée sous les configurations de plateforme de restriction de type d’appareils :
+La capacité à autoriser ou à bloquer les appareils personnels est désormais gérée sous les configurations de plateforme de restriction de type d’appareil.
 
 ![Image des paramètres de blocage des appareils personnels Azure](./media/05-azure-personal-block.png)
 
 Les nouvelles fonctionnalités de restriction sont ajoutées uniquement au portail Azure.
+
+## <a name="where-did-my-conditional-access-policies-go"></a>Où se trouvent mes stratégies d’accès conditionnel ?
+Une fois que votre locataire migre vers le portail Azure, ses stratégies d’accès conditionnel continuent d’être appliquées. Toutefois, vous ne pouvez pas les afficher ou les modifier à partir d’Intune dans le portail Azure.
+
+Si vous voulez afficher des stratégies d’accès conditionnel et leur apporter des modifications à partir du portail Azure, vous devez supprimer les anciennes stratégies du portail classique. Recréez-les ensuite dans le portail Azure. Pour plus d’informations sur la migration de stratégies d’accès conditionnel, consultez [Migrer des stratégies classiques dans le portail Azure](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration). 
+
+## <a name="where-did-my-compliance-policies-go"></a>Où se trouvent mes stratégies de conformité ?
+Une fois que votre locataire migre vers le portail Azure, ses stratégies de conformité continuent d’être appliquées. Toutefois, vous ne pouvez pas les afficher ou les modifier à partir d’Intune dans le portail Azure.
+
+Si vous voulez afficher des stratégies de conformité et leur apporter des modifications à partir du portail Azure, vous devez supprimer les anciennes stratégies du portail classique. Recréez-les ensuite dans le portail Azure. Pour en savoir plus sur les stratégies de conformité des appareils, consultez [Bien démarrer avec les stratégies de conformité des appareils dans Intune](https://docs.microsoft.com/en-us/intune/known-issues#compliance). 
 
 ## <a name="where-did-apple-dep-go"></a>Où est passé le programme Apple DEP ?
 Dans le portail classique, vous pouviez configurer Intune pour l’intégrer au programme DEP (Programme d’inscription des appareils) d’Apple et demander manuellement la synchronisation avec le service d’Apple :
