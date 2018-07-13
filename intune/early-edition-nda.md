@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0500194f5afaba11f37b84bbdf606e6167632a71
-ms.sourcegitcommit: afa2e84d5cadf5542ecabc26e61dc71919992a22
+ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340176"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906020"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Édition préliminaire pour Microsoft Intune - Juillet 2018
 
@@ -42,7 +42,15 @@ Cette page est mise à jour périodiquement. Consultez-la régulièrement pour s
 <!-- 1807 start -->
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Réinitialiser les codes secrets des appareils à partir de l’application Portail d’entreprise pour Windows 10 <!-- 2101282 --> 
-Vos employés seront bientôt en mesure de réinitialiser le code PIN ou le code secret de leur appareil directement de l’application Portail d’entreprise pour Windows 10. Cette fonctionnalité sera disponible sur les appareils locaux et distants gérés par Intune qui prennent en charge les réinitialisations de codes secrets. Selon le type d’appareil, les demandes pour un appareil distant supprimeront le code secret actuel de l’appareil ou créeront un code secret temporaire. Les utilisateurs qui demanderont une réinitialisation pour un appareil local seront redirigés vers l’application des paramètres de l’appareil.
+Vos employés seront bientôt en mesure de réinitialiser le code PIN ou le code secret de leur appareil directement de l’application Portail d’entreprise pour Windows 10. Cette fonctionnalité sera disponible sur les appareils locaux et distants gérés par Intune qui prennent en charge les réinitialisations de codes secrets. Selon le type d’appareil, les demandes pour un appareil distant supprimeront le code secret actuel de l’appareil ou créeront un code secret temporaire. Les utilisateurs qui demanderont une réinitialisation pour un appareil local seront redirigés vers l’application des paramètres de l’appareil.  
+
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows----2317227---"></a>Nouvelles expériences d’exploration dans l’application Portail d’entreprise pour Windows <!-- 2317227 -->  
+Quand vous parcourez les applications dans l’application Portail d’entreprise pour Windows, ou y en recherchez, vous pouvez basculer entre la vue **Vignettes** existante et la nouvelle vue **Détails**. La nouvelle vue répertorie les détails des applications, tels que le nom, l’éditeur, la date de publication et l’état d’installation.  
+
+La page **Applications** introduit une vue **Installée** qui vous permet de voir les détails concernant les installations d’application terminées et en cours. Vous souhaitez partager des commentaires ou des réflexions sur les nouvelles modifications ? Envoyez-nous vos commentaires dans l’application Portail d’entreprise.
+
+### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>Amélioration de l’expérience de l’application Portail d’entreprise pour les utilisateurs du gestionnaire d’inscription d’appareil <!-- 675800 -->
+Quand un gestionnaire d’inscription d’appareil se connecte à l’application Portail d’entreprise pour Windows, l’application affiche uniquement l’appareil en cours d’exécution actuel du gestionnaire. Cette amélioration permet de réduire les délais d’attente qui se produisaient auparavant quand l’application essayait de charger tous les appareils inscrits par le gestionnaire d’inscription d’appareil.  
 
 ### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>Utiliser S/MIME pour chiffrer et signer les appareils d’un utilisateur  <!-- 1333642 -->
 Une prochaine mise à jour va inclure le chiffrement S/MIME des e-mails à l’aide d’un nouveau profil de certificat importé (**Configuration de l’appareil** > **Profils** > **Créer un profil** > sélectionner la plateforme > **Certificat importé PKCS** type de profil). Dans Intune, vous pouvez importer des certificats au format PFX. Intune peut alors émettre ces mêmes certificats à plusieurs appareils inscrits par un seul utilisateur. Cela comprend également :
@@ -119,33 +127,6 @@ S’applique à Windows 10 et versions ultérieures.
 
 <!-- 1806 start -->
 
-### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a>Affichage des profils de configuration d’appareil en conflit <!-- 1556983 -->
-Dans **Configuration de l’appareil**, vous voyez une liste des profils existants. Avec cette mise à jour, une nouvelle colonne qui fournit des détails sur les profils en conflit a été ajoutée. Vous pouvez sélectionner une ligne en conflit pour voir le paramètre et le profil en conflit. 
-
-Découvrez-en plus sur les [profils de configuration d’appareil](device-profiles.md).
-
-### <a name="corporate-owned-single-use-cosu-support-for-android-devices----1630973---"></a>Prise en charge des appareils Android COSU (corporate-owned, single use)<!-- 1630973 -->
-
-Intune prend en charge les appareils Android hautement gérés, verrouillés et de style kiosque. Cela permet aux administrateurs de verrouiller davantage l’utilisation d’un appareil à une seule application ou à un petit ensemble d’applications, et empêche les utilisateurs d’activer d’autres applications ou d’effectuer d’autres actions sur l’appareil.
-
-### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>Prise en charge de macOS pour le Programme d’inscription des appareils Apple <!-- 747651 -->
-
-Intune prend en charge l’inscription d’appareils macOS dans le Programme d’inscription des appareils (DEP) Apple. Pour cela :
-
-1. Sur deploy.apple.com, affectez les numéros de série macOS à un serveur MDM.
-2. Importez les numéros de série dans Intune.
-3. Créez un profil de programme d’inscription propre aux appareils macOS.
-
-### <a name="google-name-changes-for-android-for-work-and-play-for-work---842873---"></a>Changement des noms Google pour Android for Work et Play for Work <!--842873 -->
-Intune met à jour la terminologie « Android for Work » pour refléter les changements apportés à la personnalisation de Google.  Les termes « Android for Work » et « Play for Work » ne sont plus utilisés. Une terminologie différente sera utilisée en fonction du contexte :
-
-- « Android Enterprise » fait référence à la pile de gestion Android moderne globale.
-- « Profil professionnel » ou « Propriétaire du profil » fait référence à des appareils BYOD gérés avec des profils professionnels.
-- « Google Play géré » fait référence à l’App Store Google.
-
-### <a name="monitor-ios--app-configuration-status-per-device----880037-eeready-eestaged---"></a>Surveiller l’état de configuration d’applications iOS par appareil <!-- 880037 eeready eestaged -->
-
-En tant qu’administrateur Microsoft Intune, vous pouvez surveiller l’état de configuration d’applications iOS pour chaque appareil géré. À partir de **Microsoft Intune** dans le portail Azure, sélectionnez **Appareils** > **Tous les appareils**. Dans la liste des appareils gérés, sélectionnez un appareil spécifique pour afficher le panneau correspondant. Dans le panneau de l’appareil, sélectionnez **Configuration de l’application**.  
 
 ### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>Les claviers tiers peuvent être bloqués par des paramètres APP sur iOS <!-- 1248481 -->
 Sur les appareils iOS, les administrateurs Intune peuvent bloquer l’utilisation de claviers tiers lors de l’accès à des données d’entreprise dans des applications protégées par une stratégie. Quand la stratégie de protection d’application (APP, Application Protection Policy) est configurée pour bloquer les claviers tiers, l’utilisateur de l’appareil reçoit un message la première fois qu’il interagit avec des données d’entreprise en utilisant un clavier tiers. Toutes les options autres que celles du clavier natif sont bloquées et les utilisateurs d’appareils ne les voient pas. La boîte de message ne s’affiche qu’une seule fois aux utilisateurs. 
@@ -158,32 +139,15 @@ Quand vous créez une stratégie de conformité macOS (**Conformité de l’appa
 
 S’applique à : macOS 10.12 et versions ultérieures
 
-### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>Utiliser SamAccountName comme nom d’utilisateur de compte pour les profils de messagerie <!-- 1500307 -->
-
-Vous pouvez utiliser le **SamAccountName** local comme nom d’utilisateur de compte pour les profils de messagerie pour Android, iOS et Windows 10. Vous pouvez également obtenir le domaine à partir de l’attribut `domain` ou `ntdomain` dans Azure Active Directory (Azure AD). Il est également possible d’entrer un domaine statique personnalisé.
-
-Pour utiliser cette fonctionnalité, vous devez synchroniser l’attribut `sAMAccountName` de votre environnement Active Directory local avec Azure AD.
-
-S’applique à : Android, iOS et Windows 10 et versions ultérieures
-
 ### <a name="require-non-biometric-passcode-on-app-launch-and-timeout----1506985---"></a>Exiger un code secret non biométrique au lancement de l’application et après un délai d’expiration <!-- 1506985 -->
 
 En exigeant un code secret non biométrique au lancement de l’application et après un délai d’expiration spécifié par l’administrateur, Intune offre une sécurité renforcée pour les applications compatibles avec la gestion des applications mobiles (MAM) en limitant l’utilisation de l’identification biométrique pour l’accès aux données d’entreprise. Les paramètres affectent les utilisateurs qui s’appuient sur Touch ID (iOS), Face ID (iOS), Android Biométrique ou d’autres méthodes d’authentification biométriques à venir pour accéder à leurs applications compatibles APP/MAM. Ces paramètres permettent aux administrateurs Intune d’avoir un contrôle plus précis sur l’accès utilisateur, en supprimant les cas où un appareil avec plusieurs empreintes digitales ou d’autres méthodes d’accès biométriques peut révéler des données d’entreprise à un utilisateur inapproprié. Dans le portail Azure, ouvrez **Microsoft Intune**. Sélectionnez **Applications mobiles** > **Stratégies de protection des applications** > **Ajouter une stratégie** > **Paramètres**. Recherchez la section **Accès** pour des paramètres spécifiques.
 
-### <a name="selective-wipe-of-organizations-app-data----1507030---"></a>Réinitialisation sélective des données d’application de l’organisation <!-- 1507030 -->
-Les administrateurs peuvent configurer une réinitialisation sélective des données de l’organisation comme une nouvelle action quand les conditions des paramètres d’accès APP (stratégies de protection d’application) ne sont pas remplies.  Cette fonctionnalité permet aux administrateurs de protéger et de supprimer automatiquement des données d’entreprise sensibles dans des applications en fonction de critères préconfigurés.
-
-### <a name="revoking-an-ios-app-purchased-through-vpp----1777384---"></a>Révocation d’une application iOS achetée par le biais d’un programme VPP <!-- 1777384 -->
-En tant qu’administrateur Microsoft Intune, vous pouvez révoquer la licence pour une application iOS sélectionnée achetée via le programme d’achat en volume (VPP). Vous pouvez notifier les utilisateurs quand une application ne leur est plus affectée. La révocation d’une licence d’application ne désinstalle pas l’application VPP de l’appareil. Pour désinstaller une application VPP, vous devez remplacer l’action d’attribution par **Désinstaller**. Le nombre de licences récupérées est répercutée dans le nœud **Applications sous licence** dans la charge de travail **Application** d’Intune. Pour plus d’informations sur les applications VPP iOS, consultez [Guide pratique pour gérer les applications iOS achetées par le biais d’un programme d’achat en volume avec Microsoft Intune](vpp-apps-ios.md).
-
 ### <a name="office-365-pro-plus-language-packs----1833450---"></a>Modules linguistiques Office 365 Pro Plus <!-- 1833450 -->
 En tant qu’administrateur Intune, vous pouvez déployer des langues supplémentaires pour les applications Office 365 Pro Plus gérées par le biais d’Intune. La liste des langues disponibles inclut le **Type** du module linguistique (principal, partiel et de vérification). Dans le portail Azure, sélectionnez **Microsoft Intune** > **Applications mobiles** > **Applications** > **Ajouter**. Dans la liste **Type d’application** du panneau **Ajouter une application**, sélectionnez **Windows 10** sous la **Suite Office 365**. Sélectionnez **Langues** dans le panneau **Paramètres de la suite d’applications**.
 
-### <a name="revoke-ios-vpp-app-license----1863797---"></a>Révoquer une licence d’application VPP iOS <!-- 1863797 -->
-En tant qu’administrateur, vous pouvez récupérer une licence d’application VPP iOS attribuée à un utilisateur ou un appareil. Désinstaller une application VPP iOS vous permet également de récupérer la licence de l’application. Vous pouvez ensuite choisir d’attribuer la licence de l’application à un autre utilisateur ou appareil. Pour plus d’informations sur les licences d’application VPP iOS, consultez [Gérer les applications iOS achetées en volume dans Microsoft Intune](vpp-apps-ios.md).
-
 ### <a name="preview-a-new-user-experience-update-for-the-company-portal-website---2000968---"></a>Aperçu d’une nouvelle mise à jour de l’expérience utilisateur du site web Portail d’entreprise<!--2000968 -->
-En nous basant sur les commentaires que nous ont envoyés des clients, nous ajoutons de nouvelles fonctionnalités au site web Portail d’entreprise/Catalogue d’applications iOS. Vous allez constater une nette amélioration des fonctionnalités existantes et de la facilité d’utilisation dans vos appareils Android, iOS et Windows. Les différentes zones du site, telles que les détails de l’appareil, les commentaires et le support, ainsi que la vue d’ensemble de l’appareil, vont bénéficier d’une nouvelle présentation interactive et moderne. Vous verrez également :
+En nous basant sur les commentaires que nous ont envoyés des clients, nous ajoutons de nouvelles fonctionnalités au site web Portail d’entreprise/Catalogue d’applications iOS. Vous allez constater une nette amélioration des fonctionnalités existantes et de la facilité d’utilisation dans vos appareils Android, iOS et Windows. Les différentes zones du site, telles que les détails de l’appareil, les commentaires et le support, ainsi que la vue d’ensemble de l’appareil, vont bénéficier d’une nouvelle présentation interactive et moderne. Vous découvrirez également les points suivants :
 
 - Flux de travail simplifiés sur toutes les plateformes d’appareils
 - Flux d’identification et d’inscription des appareils améliorés
@@ -195,45 +159,11 @@ En nous basant sur les commentaires que nous ont envoyés des clients, nous ajou
 
 La mise à jour est actuellement en préversion. Vous pouvez vous inscrire pour accéder à la préversion http://aka.ms/webcpflighting
 
-### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>Mises à jour pour les messages de non-conformité dans l’application Portail d’entreprise <!-- 1832222 -->
-Nous révisons les messages que les utilisateurs d’appareils voient quand un appareil est hors conformité. Les messages conserveront leur sens d’origine, mais ils seront formulés dans un style plus convivial et avec moins de jargon technique. Nous actualisons également les liens vers la documentation et les étapes de correction pour qu’ils soient à jour.  
-
-Voici un exemple d’amélioration de message, avec le texte avant et après modification :  
-
-Avant : *Cet appareil n’a pas contacté le service Intune dans l’intervalle de temps spécifié par votre administrateur informatique. Pour résoudre ce problème, ouvrez l’application Portail d’entreprise sur votre appareil et cliquez sur le bouton Vérifier la conformité.*  
-
-Après : *Votre appareil ne s’est pas connecté à votre organisation depuis un certain temps. Pour rétablir la connexion, ouvrez l’application Portail d’entreprise sur votre appareil, puis appuyez sur Vérifier les paramètres de votre appareil*.  
 
 ### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>Modifier vos déploiements d’applications Office 365 Pro Plus <!-- 2150145 -->
 En tant qu’administrateur Microsoft Intune, vous avez une plus grande capacité de modification de vos déploiements d’applications Office 365 Pro Plus. Dans le portail Azure, sélectionnez **Microsoft Intune** > **Applications mobiles** > **Applications**. Dans la liste des applications, sélectionnez votre suite Office 365 Pro Plus.  
 
-### <a name="per-row-review-of-duplicate-corporate-device-identifiers-uploaded----2203794---"></a>Consultation par ligne des identificateurs d’appareil d’entreprise en double chargés <!-- 2203794 -->
-Lors du chargement d’ID d’appareils d’entreprise, Intune fournit une liste de tous les doublons et vous donne la possibilité de remplacer ou de conserver les informations existantes. Le rapport s’affiche s’il existe des doublons après avoir choisi **Inscription de l’appareil** > **Identificateurs d’appareil d’entreprise** > **Ajouter des identificateurs**. 
-
-### <a name="manually-add-corporate-device-identifiers----2203803---"></a>Ajouter manuellement des identificateurs d’appareil d’entreprise <!-- 2203803 -->
-Vous pouvez ajouter manuellement des ID d’appareil d’entreprise. Dans **Inscription de l’appareil** > **Identificateurs d’appareils d’entreprise** > **Ajouter**.
-
-### <a name="new-status-for-devices-in-device-compliance----2308882---"></a>Nouveaux états pour les appareils dans la conformité des appareils <!-- 2308882 -->
-Dans **Conformité de l’appareil** > **Stratégies** > Sélectionner une stratégie > **Vue d’ensemble**, les nouveaux états suivants ont été ajoutés :
-- réussi
-- erreur
-- conflit
-- en attente
-- non applicable
-
-Une image indiquant le nombre d’appareils d’une autre plateforme est également affichée. Par exemple, si vous regardez un profil iOS, la nouvelle vignette indique le nombre d’appareils non iOS qui sont également attribués à ce profil. 
-
-### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>La conformité de l’appareil prend en charge les solutions antivirus tierces <!-- 2325484 -->
-Quand vous créez une stratégie de conformité des appareils (**Conformité de l’appareil** > **Stratégies** > **Créer une stratégie** > **Plateforme : Windows 10 et versions ultérieures** > **Paramètres** > **Sécurité du système**), il existe de nouvelles options **Sécurité de l’appareil** : 
-- **Antivirus** : quand la valeur définie est **Exiger**, vous pouvez vérifier la conformité en utilisant des solutions antivirus inscrites auprès du Centre de sécurité Windows, comme Symantec. 
-- **Logiciel anti-espion** : quand la valeur définie est **Exiger**, vous pouvez vérifier la conformité en utilisant des solutions de logiciel anti-espion inscrites auprès du Centre de sécurité Windows, comme Symantec. 
-
-S’applique à : Windows 10 et versions ultérieures 
-
 <!-- 1805 start -->
-
-### <a name="improved-troubleshooting-for-app-installation----928990---"></a>Amélioration de la résolution des problèmes d’installation des applications <!-- 928990 -->
-Sur les appareils gérés par MDM Microsoft Intune, les installations d’applications peuvent parfois échouer. Quand ces installations d’applications échouent, il peut être difficile de comprendre la raison de l’échec ou de résoudre le problème. Nous publions une préversion publique de nos fonctionnalités de résolution des problèmes d’application. Vous remarquerez sous chaque appareil un nouveau nœud appelé **Applications gérées**. Il liste les applications qui ont été distribuées via MDM Intune. À l’intérieur du nœud figure une liste d’états d’installations d’applications. Si vous sélectionnez une application, vous verrez la vue de résolution des problèmes de cette application spécifique. Dans la vue de résolution des problèmes, vous verrez le cycle de vie de bout en bout de l’application, par exemple quand l’application a été créée, modifiée, ciblée et remise à un appareil. De plus, si l’installation de l’application a échoué, vous verrez le code d’erreur et un message utile sur la cause de l’erreur.
 
 ### <a name="require-non-biometric-passcode-on-cold-app-launch-and-timeout----1506985---"></a>Exiger un code secret non biométrique au lancement à froid de l’application et après un délai d’expiration <!-- 1506985 --> 
 
@@ -248,13 +178,6 @@ L’utilisateur ne peut pas accéder à l’application cible si les conditions 
 
 Sur les appareils de l’utilisateur final, le client Intune effectuerait une action sur la base d’une mise en correspondance simple des chaînes spécifiées dans le panneau Intune pour les stratégies de protection d’application. Cela dépend entièrement de la valeur signalée par l’appareil. Par conséquent, il est conseillé à l’administrateur informatique de vérifier que le comportement prévu est exact. Pour ce faire, vous pouvez tester ce paramètre en ciblant différents fabricants d’appareils et modèles sur un petit groupe d’utilisateurs. Dans Microsoft Intune, sélectionnez **Applications mobiles** > **Stratégies de protection des applications** pour afficher et ajouter des stratégies de protection des applications. Pour plus d’informations sur les stratégies de protection d’application, consultez [Que sont les stratégies de protection des applications](app-protection-policy.md).
 
-### <a name="access-actions-for-app-protection-policies----1483510-eeready---"></a>Actions d’accès pour les stratégies de protection des applications <!-- 1483510 EEready -->
-Vous pourrez bientôt configurer des stratégies de protection des applications afin de réinitialiser explicitement, de bloquer ou d’avertir les appareils non conformes. La nouvelle action *Réinitialiser* supprime d’un appareil les données d’entreprise de votre société. Si une réinitialisation se produit, l’utilisateur de l’appareil est informé de la raison de la réinitialisation et des étapes de correction. Pour certains paramètres, comme la version minimale du système d’exploitation, vous pourrez appliquer plusieurs actions telles que le blocage et la réinitialisation. Ces actions sont déclenchées quand l’application est lancée.
-
-<!-- 1804 start -->
-
-### <a name="rules-for-removing-devices----1609459---"></a>Règles de suppression des appareils <!-- 1609459 -->
-De nouvelles règles seront disponibles pour vous permettre de supprimer automatiquement les appareils qui n’ont fait l’objet d’aucun archivage pendant un nombre de jours défini par vous-même. Pour voir la nouvelle règle, accédez au volet **Intune**, sélectionnez **Appareils**, puis sélectionnez **Règles de suppression d’appareil**.
 
 <!-- 1803 start -->
 

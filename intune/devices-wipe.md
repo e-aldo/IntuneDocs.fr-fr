@@ -1,6 +1,6 @@
 ---
 title: Supprimer des données d’entreprise sur des appareils à l’aide de Microsoft Intune - Azure | Microsoft Docs
-description: Découvrez comment supprimer des données d’entreprise sur un appareil ou effectuer une réinitialisation aux paramètres d’usine sur un appareil Android, Android for work, iOS, macOS ou Windows à l’aide de Microsoft Intune. Découvrez également comment supprimer un appareil d’Azure Active Directory.
+description: Découvrez comment supprimer des données d’entreprise sur un appareil ou effectuer une réinitialisation aux paramètres d’usine sur un appareil Android, avec profil professionnel Android, iOS, macOS ou Windows à l’aide de Microsoft Intune. Découvrez également comment supprimer un appareil d’Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091725"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906054"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Supprimer des appareils en réinitialisant les paramètres d’usine, en supprimant les données d’entreprise ou en désinscrivant manuellement l’appareil
 
@@ -31,12 +31,12 @@ Avec les actions **Supprimer les données d’entreprise** et **Réinitialisatio
 
 ## <a name="factory-reset"></a>Réinitialisation des paramètres d’usine
 
-L’action **Réinitialisation aux paramètres d’usine** rétablit les paramètres d’usine d’un appareil. Les données utilisateur sont conservées ou réinitialisées selon que vous avez coché ou non la case **Conserver le compte d’utilisateur et l’état d’inscription**.
+L’action **Réinitialisation aux paramètres d’usine** rétablit les paramètres d’usine d’un appareil. Les données utilisateur sont conservées si vous avez coché la case **Conserver le compte d’utilisateur et l’état d’inscription**. Sinon, le lecteur est effacé de manière sécurisée.
 
 |Action Réinitialisation aux paramètres d’usine|**Conserver le compte d’utilisateur et l’état d’inscription**|Supprimé de la gestion Intune|Description|
 |:-------------:|:------------:|:------------:|------------|
 |**Réinitialisation aux paramètres d’usine**| Désactivée | Oui | Efface tous les comptes d’utilisateur, les données, les stratégies de gestion des appareils mobiles et les paramètres. Réinitialise le système d’exploitation à son état et ses paramètres par défaut.|
-|**Réinitialisation aux paramètres d’usine**| Activée | Non | Réinitialise toutes les stratégies de gestion des appareils mobiles. Conserve les données et les comptes d’utilisateur. Réinitialise les paramètres utilisateur par défaut. Réinitialise le système d’exploitation à son état et ses paramètres par défaut.|
+|**Réinitialisation aux paramètres d’usine**| Désactivée | Non | Réinitialise toutes les stratégies de gestion des appareils mobiles. Conserve les données et les comptes d’utilisateur. Réinitialise les paramètres utilisateur par défaut. Réinitialise le système d’exploitation à son état et ses paramètres par défaut.|
 
 L’option **Conserver le compte d’utilisateur et l’état d’inscription** est disponible uniquement pour Windows 10 version 1709 ou ultérieure.
 
@@ -108,9 +108,13 @@ Les tableaux suivants décrivent la nature des données supprimées et l’effet
 |Disjonction d’Azure AD|L’enregistrement Azure AD est supprimé.|L’enregistrement Azure AD est supprimé.|
 |Contacts |Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.|Les contacts synchronisés avec le carnet d’adresses natif directement à partir de l’application sont supprimés. Les contacts synchronisés à partir du carnet d’adresses natif vers une autre source externe ne peuvent pas être supprimés. <br /> <br />Actuellement, seule l’application Outlook est prise en charge.
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Profil professionnel Android
 
-La suppression des données d’entreprise d’un appareil Android for Work supprime l’ensemble des données, applications et paramètres dans le profil professionnel de l’appareil. L’appareil est retiré de la gestion avec Intune. La réinitialisation aux paramètres d’usine n’est pas prise en charge pour Android for Work.
+La suppression des données d’entreprise d’un appareil avec profil professionnel Android supprime l’ensemble des données, applications et paramètres dans le profil professionnel de l’appareil. L’appareil est retiré de la gestion avec Intune. La réinitialisation aux paramètres d’usine n’est pas prise en charge pour les profils professionnels Android.
+
+### <a name="android-enterprise-kiosk-devices"></a>Appareils kiosque Android entreprise
+
+Vous pouvez uniquement réinitialiser aux paramètres d’usine les appareils kiosque Android. Vous ne pouvez pas supprimer de données des appareils kiosque Android.
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ Pour supprimer des appareils à partir du portail Intune, vous pouvez accéder a
 
 1. Connectez-vous à [Intune dans le portail Azure](https://aka.ms/intuneportal).
 2. Choisissez **Appareils** > **Tous les appareils** > choisissez les appareils à supprimer > **Supprimer**.
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>Supprimer automatiquement des appareils avec des règles de nettoyage
+Vous pouvez configurer Intune pour supprimer automatiquement les appareils qui semblent inactifs, obsolètes ou non réactifs. Ces règles de nettoyage surveillent en continu votre parc d’appareils afin que les enregistrements les concernant restent à jour. Les appareils supprimés de cette façon sont enlevés de la gestion Intune.
+1. Connectez-vous à [Intune dans le portail Azure](https://aka.ms/intuneportal).
+2. Choisissez **Appareils** > **Règles de nettoyage d’appareil** > **Oui**.
+3. Dans la zone **Supprimer les appareils que vous n’avez pas enregistrés depuis ce nombre de jours**, entrez un nombre compris entre 90 et 270.
+4. Choisissez **Enregistrer**.
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Supprimer des appareils du portail Azure Active Directory
 

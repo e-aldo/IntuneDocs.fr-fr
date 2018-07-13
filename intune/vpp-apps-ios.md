@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547401"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905969"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Guide pratique pour gérer les applications iOS achetées par le biais d’un programme d’achat en volume avec Microsoft Intune
 
@@ -135,8 +135,7 @@ L’utilisateur final reçoit des invites concernant l’installation d’applic
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Révocation des licences d’application et suppression des jetons 
 
-<!-- 820863 -->  
-Pour un appareil donné qui a une ou plusieurs applications du Programme d’achat en volume (VPP) iOS, vous pouvez révoquer pour l’appareil toutes les licences d’application associées basées sur l’appareil. La révocation d’une licence d’application ne désinstalle pas l’application VPP de l’appareil. Pour désinstaller une application VPP et récupérer une licence, vous devez modifier le type d’affectation de l’application VPP en **Désinstaller**. Si vous supprimez une application qui a été affectée à un utilisateur, Intune récupère la licence de l’utilisateur ou de l’appareil, et désinstalle l’application de l’appareil.
+Vous pouvez révoquer toutes les licences d’application VPP (programme d’achat en volume) iOS associées, en fonction d’un appareil, d’un utilisateur ou d’une application donnés. Vous pouvez notifier les utilisateurs quand une application ne leur est plus affectée. La révocation d’une licence d’application ne désinstalle pas l’application VPP de l’appareil. Pour désinstaller une application VPP et récupérer une licence d’application affectée à un utilisateur ou à un appareil, vous devez définir l’action d’affectation sur **Désinstaller**. Quand vous supprimez une application qui a été affectée à un utilisateur, Intune récupère la licence de l’utilisateur ou de l’appareil, et désinstalle l’application de l’appareil. Le nombre de licences récupérées est répercutée dans le nœud **Applications sous licence** dans la charge de travail **Application** d’Intune. Une fois une application VPP désinstallée et la licence d’application récupérée, vous pouvez choisir d’affecter la licence d’application à un autre utilisateur ou appareil. 
 
 >[!NOTE]
 >Intune récupère toutes les licences utilisateur d’applications VPP iOS quand un employé quitte l’entreprise et ne fait plus partie des groupes AAD.

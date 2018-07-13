@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232934"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905374"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Où se trouve ma fonctionnalité Intune dans Azure ?
 Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour organiser certaines tâches de manière plus logique. Toutefois, ces améliorations nécessitent de se familiariser avec la nouvelle organisation. Ce guide de référence est destiné à ceux d’entre vous qui connaissent parfaitement Intune dans le portail classique et qui se demandent comment effectuer certaines tâches spécifiques dans Intune dans le portail Azure. Si cet article ne couvre pas l’une des fonctionnalités que vous recherchez, laissez-nous un commentaire à la fin de l’article pour que nous puissions le mettre à jour.
@@ -36,7 +36,7 @@ Lors du transfert d’Intune vers le portail Azure, nous en avons profité pour 
 |Groupes par IMEI (toutes les plateformes)| Groupes > Tous les appareils > Appareils d’entreprise préinscrits > Par IMEI (Toutes les plateformes) | [Inscription de l’appareil > Identificateurs d’appareil d’entreprise](#by-imei-all-platforms)|
 | Profil d’inscription des appareils d’entreprise| Stratégie > Inscription des appareils d’entreprise | [Inscription de l’appareil > Inscription Apple > Profils du programme d’inscription](#where-did-corporate-pre-enrolled-devices-go) |
 | Profil d’inscription des appareils d’entreprise | Stratégie > Inscription des appareils d’entreprise | [Inscription de l’appareil > Inscription Apple > Profils AC](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Administrateur > Gestion des appareils mobiles > Android for Work | Inscription de l’appareil > Inscription Android for Work |
+| Android for Work | Administrateur > Gestion des appareils mobiles > Android for Work | Inscription de l’appareil > Inscription Android |
 | Conditions générales | Stratégie > Conditions générales | Inscription de l’appareil > Conditions générales |
 Paramètres du portail d'entreprise|Admin > Portail d’entreprise|**Gérer** > Applications mobiles<br> **Configuration** > Personnalisation du portail d’entreprise
 

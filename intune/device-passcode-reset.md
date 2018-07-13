@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964723"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905153"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Réinitialiser ou supprimer un code secret de l’appareil dans Intune
 
@@ -30,6 +30,7 @@ Pour créer un nouveau code secret pour un appareil, utilisez l’action **Suppr
 
 - Appareils Android inscrits avec un profil professionnel, version 8.0 et ultérieure
 - Appareils Android version 6.0 ou antérieure
+- Appareils kiosque Android entreprise
 - iOS 
      
 ## <a name="unsupported-platforms"></a>Plateformes non prises en charge
@@ -46,9 +47,9 @@ Pour créer un nouveau code secret pour un appareil, utilisez l’action **Suppr
 3. Sélectionnez **Appareils**, puis **Tous les appareils**.
 4. Dans la liste des appareils que vous gérez, sélectionnez un appareil et choisissez **... Plus**. Ensuite, choisissez l’action à distance **Supprimer le code secret**.
 
-## <a name="resetting-android-for-work-passcodes"></a>Réinitialisation des codes secrets Android for Work
+## <a name="resetting-android-work-profile-passcodes"></a>Réinitialisation des codes secrets pour les profils professionnels Android
 
-Les appareils Android for Work pris en charge reçoivent un nouveau mot de passe de déverrouillage de profil géré ou sont soumis à une vérification du profil géré pour l’utilisateur final. Pour les appareils sous Android 8.0 ou ultérieur avec des profils professionnels, les utilisateurs finaux reçoivent des notifications qui les invitent à activer leur jeton de réinitialisation de code secret juste après l’inscription. La notification s’affiche si un mot de passe de profil professionnel est imposé et défini. Une fois le code secret entré, la notification disparaît.
+Les appareils de profil professionnel Android pris en charge reçoivent un nouveau mot de passe de déverrouillage de profil géré ou sont soumis à une vérification du profil géré pour l’utilisateur final. Pour les appareils avec profil professionnel Android 8.0, les utilisateurs finaux sont invités à activer leur code secret de réinitialisation une fois l’inscription terminée. La notification s’affiche si un mot de passe de profil professionnel est imposé et défini. Une fois le code secret entré, la notification disparaît.
 
 ## <a name="resetting-ios-passcodes"></a>Réinitialisation des codes secrets iOS
 

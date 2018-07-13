@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 6/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232968"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905357"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Surveiller les stratégies de conformité d’appareils Intune
 
@@ -158,9 +158,27 @@ Ce rapport vous permet d’afficher, en fonction du paramètre de conformité ch
 
 Quand vous cliquez sur la vignette Définition de la conformité, puis sur l’un des paramètres de stratégie de conformité d’appareil, vous pouvez afficher l’**état de conformité**, l’**alias de messagerie de l’utilisateur**, le **modèle d’appareil** et l’**emplacement** de chaque appareil ciblé par le paramètre de stratégie de conformité d’appareil.
 
+## <a name="view-status-of-device-policies"></a>Voir l’état des stratégies d’appareil
+
+Vous pouvez vérifier les différents états de vos stratégies, par plateforme. Par exemple, vous avez une stratégie de conformité macOS. Vous souhaitez voir les appareils qui sont impactés par cette stratégie et savoir s’il existe des conflits ou des échecs.
+
+Cette fonctionnalité est incluse dans le rapport d’état des appareils :
+
+1. Sélectionnez **Conformité de l’appareil** > **Stratégies**. La liste des stratégies apparaît, dont la plateforme, si la stratégie est affectée.
+2. Sélectionnez une stratégie, puis choisissez **Vue d’ensemble**. Dans cette vue, l’affectation de stratégie inclut les états suivants :
+
+  - Réussi
+  - Erreur
+  - Conflit
+  - En attente
+  - Non applicable
+
+3. Pour voir les détails sur les appareils utilisant cette stratégie, sélectionnez un des états. Par exemple, sélectionnez **Réussi**. La fenêtre suivante montre les détails propres aux appareils, notamment leur nom et l’état du déploiement.
+
 ## <a name="how-intune-resolves-policy-conflicts"></a>Résolution des conflits de stratégie par Intune
 Des conflits de stratégie peuvent se produire quand plusieurs stratégies Intune sont appliquées à un appareil. Si les paramètres de stratégie se chevauchent, Intune résout les conflits en appliquant les règles suivantes :
 
 - Si les paramètres en conflit proviennent d’une stratégie de configuration Intune et d’une stratégie de conformité, les paramètres de la stratégie de conformité sont prioritaires sur ceux de la stratégie de configuration. Cela est valable même si les paramètres de la stratégie de configuration sont plus sécurisés.
 
 - Si vous avez déployé plusieurs stratégies de conformité, Intune utilise la plus sécurisée d’entre elles.
+

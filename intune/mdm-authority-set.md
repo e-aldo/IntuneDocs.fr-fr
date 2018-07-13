@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232916"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906037"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Définir l’autorité de gestion des appareils mobiles
 
@@ -41,9 +41,11 @@ Les configurations possibles sont les suivantes :
 
 ## <a name="set-mdm-authority-to-intune"></a>Définir l'autorité MDM sur Intune
 
+Si vous n’avez pas encore défini l’autorité MDM, suivez les étapes ci-dessous. Pour changer d’autorité MDM, consultez la section [Changer d’autorité MDM](#prepare-to-change-the-mdm-authority-to-configuration-manager) ci-dessous.
+
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
-3. Sélectionnez la bannière orange pour ouvrir le paramètre **Autorité de gestion des appareils mobiles**.
+3. Sélectionnez la bannière orange pour ouvrir le paramètre **Autorité de gestion des appareils mobiles**. La bannière orange s’affiche seulement si vous n’avez pas encore défini l’autorité MDM.
 4. Sous **Autorité de gestion des appareils mobiles**, choisissez votre autorité de gestion des appareils mobiles parmi les options suivantes :
    - **Autorité MDM Intune**
    - **Autorité MDM Configuration Manager**
@@ -57,7 +59,7 @@ Les configurations possibles sont les suivantes :
 Quand la gestion des appareils Android ou Apple est activée, Intune envoie des informations relatives aux appareils et aux utilisateurs pour s’intégrer à ces services tiers et gérer leurs appareils respectifs.
 
 Voici quelques-uns des scénarios dans lesquels une fenêtre de consentement de partage des données s’affiche :
-- Vous activez Android for Work.
+- Vous activez les profils professionnels Android.
 - Vous activez et chargez des certificats Push MDM Apple.
 - Vous activez l’un des services Apple, notamment le Programme d’inscription des appareils (DEP), School Manager et le Programme d’achat en volume (VPP).
 
