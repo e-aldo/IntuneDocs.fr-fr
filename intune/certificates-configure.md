@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771803"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905204"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurer un profil de certificat pour vos appareils dans Microsoft Intune
 
@@ -43,7 +43,7 @@ Chacun de ces types de certificats a ses propres prérequis et exigences en mati
     - iOS 8.0 et versions ultérieures
     - macOS 10.11 et ultérieur
     - Android 4.0 et versions ultérieures
-    - Android for Work
+    - Profil professionnel Android
     - Windows 8.1 et versions ultérieures
     - Windows Phone 8.1 et versions ultérieures
     - Windows 10 et versions ultérieures
@@ -52,7 +52,7 @@ Chacun de ces types de certificats a ses propres prérequis et exigences en mati
 
    - iOS 8.0 et versions ultérieures
    - Android 4.0 et versions ultérieures
-   - Android for Work
+   - Profil professionnel Android
    - Windows 10 (Desktop et Mobile) et versions ultérieures
 
    Vous pouvez uniquement utiliser un profil de certificat **SCEP** pour les appareils exécutant les plateformes suivantes :
@@ -95,7 +95,7 @@ Vous devez créer un profil de certificat approuvé pour pouvoir créer un profi
 5. Dans la liste déroulante **Plateforme**, sélectionnez la plateforme d’appareil pour ce certificat approuvé. Actuellement, vous pouvez choisir une des plateformes suivantes pour les paramètres de certificat :
 
     - **Android**
-    - **Android for Work**
+    - **Android Entreprise**
     - **iOS**
     - **MacOS**
     - **Windows Phone 8.1**

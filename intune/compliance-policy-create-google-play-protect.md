@@ -15,12 +15,12 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e99671c6c82a7652ba3489d5cc217dfedac72788
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 346e69b56d9ee690e2bc3f3970e47d6d25ddcff7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835365"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905170"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Création d’une stratégie de conformité pour activer Google Play Protect
 
@@ -49,9 +49,9 @@ La stratégie de conformité nécessitant ces paramètres peut ensuite être cib
  - **Analyse des menaces sur les applications**  
    La fonctionnalité **Vérifier les applications** Android doit être activée.
     > [!Note]  
-    > Sur la plateforme Android héritée, cette fonctionnalité constitue un paramètre de conformité. Intune ne peut que vérifier si ce paramètre est activé au niveau de l’appareil. Sur les appareils avec des profils professionnels, précédemment désignés sous l’appellation Android for Work, ce paramètre correspond à un paramètre de la stratégie de configuration. Ceci permet aux administrateurs d’activer le paramètre pour un appareil.
+    > Sur la plateforme Android héritée, cette fonctionnalité constitue un paramètre de conformité. Intune ne peut que vérifier si ce paramètre est activé au niveau de l’appareil. Sur les appareils avec des profils professionnels Android, ce paramètre correspond à un paramètre de stratégie de configuration. Ceci permet aux administrateurs d’activer le paramètre pour un appareil.
 
-    Si votre entreprise utilise des profils professionnels Android, vous pouvez activer **Analyse des menaces sur les applications** pour vos appareils inscrits. Établissez un profil d’appareil et demandez le paramètre de sécurité système. Pour plus d’informations, consultez [Paramètres de restriction des appareils Android for Work dans Microsoft Intune](device-restrictions-android-for-work.md).
+    Si votre entreprise utilise des profils professionnels Android, vous pouvez activer **Analyse des menaces sur les applications** pour vos appareils inscrits. Établissez un profil d’appareil et demandez le paramètre de sécurité système. Pour plus d’informations, consultez [Paramètres de restriction des appareils avec profil professionnel Android dans Microsoft Intune](device-restrictions-android-for-work.md).
 
  - **Attestation d’appareil SafetyNet**  
    Définissez le niveau d’intégrité d’attestation d’appareil SafetyNet qui doit être respecté. Les niveaux incluent **Non configuré**, **Vérifier l’intégrité de base** et **Vérifier l’intégrité de base et les appareils certifiés**.

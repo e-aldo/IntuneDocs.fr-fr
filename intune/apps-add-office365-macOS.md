@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223609"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869494"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Affecter Office 365 à des appareils macOS avec Microsoft Intune
 
-Le type *Application du Windows Store* vous permet d’affecter facilement des applications Office 365 à des appareils macOS. En utilisant ce type d’application, vous pouvez installer Word, Excel, PowerPoint, Outlook et OneNote. Ces applications bénéficient également de Microsoft AutoUpdate (MAU) qui garantit que les applications sont sécurisées et à jour. Les applications souhaitées sont affichées sous la forme d’une application unique dans la liste des applications de la console Intune.
+Ce type d’application vous permet d’affecter facilement des applications Office 365 2016 à des appareils macOS. En utilisant ce type d’application, vous pouvez installer Word, Excel, PowerPoint, Outlook et OneNote. Ces applications bénéficient également de Microsoft AutoUpdate (MAU) qui garantit que les applications sont sécurisées et à jour. Les applications souhaitées sont affichées sous la forme d’une application unique dans la liste des applications de la console Intune.
 
 
 ## <a name="before-you-start"></a>Avant de commencer
@@ -70,7 +70,7 @@ Dans cette étape, configurez les affectations de la suite d’applications.
 2. Dans le volet **Office 365**, sélectionnez **Affectations**.
 3. Pour ajouter un groupe qui utilisera la suite d’applications, sélectionnez **Ajouter un groupe**.  
     Le volet **Ajouter un groupe** s’affiche.
-4. Affectez la valeur **Obligatoire** à **Type d’affectation**.
+4. Affectez la valeur **Obligatoire** ou **Disponible** à **Type d’affectation**.
 5. Affectez la suite aux groupes que vous sélectionnez. Pour plus d’informations, consultez [Affecter des applications à des groupes avec Microsoft Intune](apps-deploy.md).
 
     >[!Note]

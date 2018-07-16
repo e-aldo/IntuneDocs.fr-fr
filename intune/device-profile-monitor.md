@@ -1,11 +1,11 @@
 ---
 title: Voir les profils d’appareil avec Microsoft Intune - Azure | Microsoft Docs
-description: Affichez et gérez les informations de profil de configuration d’appareil dans Microsoft Intune et consultez le graphique du nombre d’appareils attribués à un profil afin de savoir quels appareils ont des profils attribués ou déployés.
+description: Affichez et gérez les informations détaillées des profils de configuration d’appareil dans Microsoft Intune, consultez un graphique du nombre d’appareils attribués à un profil, et découvrez quels appareils ont des profils attribués ou déployés. Vous pouvez aussi résoudre les problèmes des profils qui ont des paramètres en conflit.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744786"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905918"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Suivre les profils d’appareil dans Microsoft Intune
 
@@ -33,7 +33,7 @@ Intune inclut certaines fonctionnalités dans le portail Azure pour faciliter le
 2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
 3. Sélectionnez **Configuration de l’appareil** > **Profils**.
 
-Tous vos profils existants sont répertoriés et incluent des informations comme la plateforme, et si le profil est attribué à des appareils.
+Tous vos profils existants sont répertoriés et incluent des informations détaillées, comme la plateforme et si le profil est attribué à des appareils.
 
 ## <a name="view-details-on-a-profile"></a>Afficher les détails d’un profil
 
@@ -68,6 +68,16 @@ Une fois le profil d’appareil créé, Intune fournit des graphiques. Ces graph
   - **État de l’appareil** : les appareils attribués au profil sont répertoriés et il est indiqué si le profil est déployé avec succès. Vous pouvez sélectionner un appareil spécifique pour obtenir davantage d’informations, notamment les applications installées.
   - **État de l’utilisateur** : répertorie les noms d’utilisateur avec des appareils concernés par ce profil, et indique si le profil est déployé avec succès. Vous pouvez sélectionner un utilisateur spécifique pour obtenir davantage d’informations.
   - **État par paramètre** : filtre la sortie en affichant les paramètres individuels au sein du profil, et indique si le paramètre est correctement appliqué.
+
+## <a name="view-conflicts"></a>Visualiser les conflits
+
+Dans **Appareils** > **Tous les appareils**, vous pouvez voir les paramètres qui provoquent un conflit. Quand il existe un conflit, vous voyez également tous les profils de configuration qui contiennent ce paramètre. Les administrateurs peuvent utiliser cette fonctionnalité pour résoudre et corriger les éventuelles incohérences dans les profils.
+
+1. Dans Intune, sélectionnez **Appareils** > **Tous les appareils** > sélectionnez un appareil existant dans la liste. Un utilisateur final peut obtenir le nom de l’appareil à partir de son application Portail d’entreprise.
+2. Sélectionnez **Configuration de l’appareil**. Toutes les stratégies de configuration qui s’appliquent à l’appareil sont listées.
+3. Sélectionnez la stratégie. Ceci vous montre tous les paramètres de cette stratégie qui s’appliquent à l’appareil. Si un appareil a un état **Conflit**, sélectionnez cette ligne. Dans la nouvelle fenêtre, vous voyez tous les profils et les noms des profils qui ont le paramètre à l’origine du conflit.
+
+Maintenant que vous savez quel paramètre provoque un conflit et quelles stratégies incluent ce paramètre, il doit être plus facile de résoudre le conflit. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Attribuer des profils d’utilisateur et d’appareil](device-profile-assign.md)  

@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026327"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905816"
 ---
 # <a name="set-enrollment-restrictions"></a>Définir des restrictions d’inscription
 
@@ -39,14 +39,14 @@ Parmi les restrictions d’inscription spécifiques que vous pouvez créer, cito
 - Nombre maximal d’appareils inscrits
 - Plateformes d’appareils qui peuvent s’inscrire :
   - Android.
-  - Android for Work
+  - Profil professionnel Android.
   - iOS.
   - macOS
   - Windows.
-- Version du système d’exploitation des plateformes pour iOS, Android, Android for Work et Windows. (Seules les versions de Windows 10 peuvent être utilisées. Laissez ce champ vide si Windows 8.1 est autorisé.)
+- Version du système d’exploitation des plateformes pour iOS, Android, Profil professionnel Android et Windows. (Seules les versions de Windows 10 peuvent être utilisées. Laissez ce champ vide si Windows 8.1 est autorisé.)
   - Version minimale
   - Version maximale
-- Restreindre les appareils personnels (iOS, Android, Android for Work, macOS uniquement)
+- Restreindre les appareils personnels (iOS, Android, Profil professionnel Android, macOS uniquement).
 
 ## <a name="default-restrictions"></a>Restrictions par défaut
 
@@ -78,7 +78,7 @@ Pour changer les paramètres d’une restriction de type d’appareil, effectuez
 5. Sous le nom de la restriction (**Tous les utilisateurs** pour la restriction par défaut), sélectionnez **Plateformes**. Choisissez **Autoriser** ou **Bloquer** pour chaque plateforme répertoriée.
 6. Sélectionnez **Enregistrer**.
 7. Sous le nom de la restriction (**Tous les utilisateurs** pour la restriction par défaut), sélectionnez **Configurations de plateforme**. Ensuite, sélectionnez les **Versions** minimale et maximale pour les plateformes répertoriées. Les versions prises en charge incluent les suivantes :
-    - Android et Android for Work prennent en charge major.minor.rev.build.
+    - Profil professionnel Android prend en charge majeur.mineur.révision.build.
     - iOS prend en charge major.minor.rev.
     - Windows prend en charge major.minor.rev.build pour Windows 10 uniquement.
   Les versions du système d’exploitation ne s’appliquent pas aux appareils Apple inscrits par le biais du Programme d’inscription des appareils, d’Apple School Manager ou de l’application Apple Configurator.
@@ -88,9 +88,9 @@ Pour changer les paramètres d’une restriction de type d’appareil, effectuez
 
 
 >[!NOTE]
->- Si vous bloquez l’inscription des appareils Android personnels, les appareils Android for Work personnels peuvent quand même être inscrits.
->- Par défaut, les paramètres de vos appareils Android for Work sont identiques à ceux de vos appareils Android. Ce ne sera plus le cas une fois que vous aurez modifié vos paramètres Android for Work.
->- Si vous bloquez l’inscription Android for Work personnelle, seuls les appareils Android d’entreprise peuvent s’inscrire en tant qu’Android for Work.
+>- Si vous bloquez l’inscription des appareils Android personnels, les appareils avec profil professionnel Android personnels peuvent quand même être inscrits.
+>- Par défaut, les paramètres de vos appareils avec profil professionnel Android sont identiques à ceux de vos appareils Android. Ce ne sera plus le cas une fois que vous aurez modifié vos paramètres de profil professionnel Android.
+>- Si vous bloquez l’inscription du profil professionnel Android personnel, seuls les appareils Android d’entreprise peuvent s’inscrire en tant que profil professionnel Android.
 
 ## <a name="set-device-limit-restrictions"></a>Définition des restrictions de limite d'appareil
 

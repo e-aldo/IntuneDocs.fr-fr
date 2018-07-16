@@ -1,27 +1,20 @@
----
-title: Avantages du SDK d’application Intune
-titlesuffix: Microsoft Intune
-description: Le Kit SDK d’application Intune est disponible pour les plateformes iOS et Android. Il permet d’utiliser les fonctionnalités de gestion des applications mobiles avec Microsoft Intune.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-ms.reviewer: aanavath
-ms.suite: ems
+--
+# <a name="required-metadata"></a>métadonnées requises
+
+title: Avantages du SDK d’application Intune titlesuffix: Microsoft Intune description: Le SDK d’application Intune est disponible pour les plateformes iOS et Android. Il permet d’utiliser les fonctionnalités de gestion des applications mobiles avec Microsoft Intune.
+keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+
+# <a name="optional-metadata"></a>métadonnées facultatives
+
+#<a name="robots"></a>ROBOTS :
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang :
+ms.reviewer: aanavath ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm :
 ms.custom: intune-classic
-ms.openlocfilehash: 33e1cb6953891fa6d62841d10bc8011768938ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223575"
+
 ---
+
 # <a name="intune-app-sdk-overview"></a>Présentation du Kit SDK d’application Intune
 Le Kit de développement logiciel (SDK) d’application Intune, disponible pour iOS et Android, permet d'appliquer des stratégies de protection des applications Intune sur votre application. Il s’efforce de minimiser la quantité de modifications du code pour les développeurs d’applications. Vous pouvez constater qu’il est possible d’activer la plupart des fonctionnalités du SDK sans changer le comportement de votre application. Pour une meilleure expérience utilisateur et administrateur, vous pouvez utiliser les API pour personnaliser le comportement de votre application pour les fonctionnalités nécessitant sa participation.
 
@@ -70,3 +63,8 @@ Cette fonctionnalité multi-identité permet de résoudre le problème de protec
 De nombreux utilisateurs dotés d’appareils personnels souhaitent accéder aux données d’entreprise sans inscrire leur appareil personnel auprès d'un fournisseur de gestion des appareils mobiles (MDM). Étant donné que l’inscription MDM nécessite un contrôle global de l’appareil, les utilisateurs hésitent souvent à donner ce contrôle de leur appareil personnel à leur entreprise.
 
 La protection d'applications sans inscription d’appareil permet au service Microsoft Intune de déployer une stratégie de protection des applications directement sur une application, sans s’appuyer sur un canal de gestion des appareils pour déployer la stratégie.
+
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Connexions VPN d’application à la demande avec Citrix mVPN 
+Vous pouvez gérer des appareils et des applications en combinant Citrix XenMobile MDX avec Microsoft Intune. Cette combinaison signifie que vous pouvez gérer des applications à l’aide d’une stratégie de protection des applications Intune tout en utilisant la technologie mVPN de Citrix. L’intégration avec Citrix est disponible pour le SDK d’application Intune pour iOS et Android, et avec Intune App Wrapping Tool pour iOS et Android (avec l’indicateur -citrix).
+ 
+Pour en savoir plus sur Citrix MDX, consultez [À propos du MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [Encapsulation des applications mobiles iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) et [Encapsulation d’applications mobiles Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html).

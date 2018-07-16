@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45ab6434245c0dd412b2e9d23e394f72871a459a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829762"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905136"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Verrouiller à distance des appareils avec Intune
 
@@ -31,12 +31,14 @@ L’action d’appareil **Verrouillage à distance** verrouille l’appareil. Po
 Le **verrouillage à distance** est pris en charge pour les plateformes suivantes :
 
 - Android
+- Appareils kiosque Android Entreprise
+- Appareils avec profil professionnel Android Entreprise
 - iOS
 - macOS
 - Windows 10 Mobile
 - Windows Phone 8.1 et versions ultérieures
 
-Le **verrouillage à distance** n’est *pas* pris en charge pour :
+Le **verrouillage à distance** n’est pas pris en charge pour :
 - Windows 10 Desktop
 
 > [!NOTE]

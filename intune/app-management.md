@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d11de1e20f46fb6e13d6d3ef5c9f4a9ee0f98c1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223779"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906105"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Qu’est-ce que la gestion des applications Microsoft Intune ?
 
@@ -114,8 +114,8 @@ Pour plus d’informations sur cette section, consultez [Surveiller les applicat
 - **Personnalisation du portail d’entreprise** : personnalisez le portail d’entreprise pour lui donner une image proche de votre société. Pour plus d'informations, voir :
     - [Configuration du portail d’entreprise](company-portal-app.md).
 - **Catégories d’applications** : ajoutez, épinglez et supprimez des noms de catégories d’application.
-- **Android for Work** : approuvez et synchronisez les applications que vous avez approuvées pour votre entreprise. Pour plus d'informations, voir :
-    - [Applications Android for Work](apps-add-android-for-work.md).
+- **Profil professionnel Android** : approuvez et synchronisez les applications que vous avez approuvées pour votre entreprise. Pour plus d'informations, voir :
+    - [Applications de profil professionnel Android](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>Aide et support
 - **Aide et support** : résolvez des problèmes, demandez du support ou affichez l’état d’Intune. Pour plus d'informations, voir :

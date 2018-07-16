@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744769"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905527"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Créer une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité
 
@@ -44,7 +44,7 @@ Avant de configurer l’accès conditionnel, vérifiez les éléments suivants :
 
 - Le connecteur prend en charge l’**Environnement CAS Exchange**. Techniquement, vous pouvez installer directement le connecteur sur le serveur CAS Exchange si vous le souhaitez, mais cette opération est déconseillée car elle augmente la charge sur le serveur. Quand vous configurez le connecteur, vous devez faire en sorte qu’il communique avec l’un des serveurs CAS Exchange.
 
-- Vous devez configurer **Exchange ActiveSync** avec l’authentification par certificat ou la saisie des informations d’identification de l’utilisateur.
+- Vous devez configurer **Exchange ActiveSync** avec l’authentification par certificat ou via les informations d’identification entrées par l’utilisateur.
 
 - Une fois les stratégies d’accès conditionnel configurées et ciblées sur un utilisateur, l’**appareil** dont l’utilisateur se sert pour se connecter à sa messagerie doit :
     - Être **inscrit** auprès d’Intune ou avoir un PC joint à un domaine.
@@ -54,7 +54,7 @@ Avant de configurer l’accès conditionnel, vérifiez les éléments suivants :
 
 - **Conforme** aux stratégies de conformité d’appareil déployées sur cet appareil.
 
-- Si l'appareil ne répond pas aux paramètres d’accès conditionnel, l’utilisateur reçoit l’un des messages suivants quand il tente de se connecter :
+- Si l’appareil ne répond pas aux paramètres d’accès conditionnel, l’utilisateur reçoit un des messages suivants quand il tente de se connecter :
     - Si l’appareil n’est pas inscrit auprès d’Intune ou qu’il n’est pas inscrit dans Azure Active Directory, l’utilisateur reçoit un message contenant des instructions pour installer l’application Portail d’entreprise, inscrire l’appareil et activer la messagerie. Ce processus associe également l’ID Exchange ActiveSync de l’appareil à l’enregistrement de l’appareil dans Azure Active Directory.
     - Si l’appareil n’est pas conforme, l’utilisateur reçoit un message le dirigeant vers le site web ou l’application Portail d’entreprise Intune, où il peut trouver des informations sur le problème et des solutions pour y remédier.
 
@@ -63,7 +63,7 @@ Avant de configurer l’accès conditionnel, vérifiez les éléments suivants :
 - Windows Phone 8.1 et versions ultérieures
 - Application de messagerie native sur iOS.
 - Clients de messagerie EAS, comme Gmail sur Android 4 ou ultérieur.
-- Clients de messagerie EAS sur les **appareils Android for Work :** seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils Android for Work. Pour que l’accès conditionnel fonctionne avec Android for Work, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work et également déployer ces applications comme installation obligatoire.
+- Clients de messagerie EAS sur les **appareils avec profil professionnel Android :** seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils avec profil professionnel Android. Pour que l’accès conditionnel fonctionne avec les profils professionnels Android, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work, et également déployer ces applications comme installation obligatoire.
 
 > [!NOTE]
 > L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge. 

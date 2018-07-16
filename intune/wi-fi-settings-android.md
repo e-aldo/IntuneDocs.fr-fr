@@ -1,42 +1,47 @@
 ---
 title: Configurer les paramètres Wi-Fi dans Microsoft Intune pour les appareils exécutant Android
 titleSuffix: ''
-description: Découvrez les paramètres de configuration Wi-Fi Intune sur les appareils exécutant Android et Android for Work.
+description: Découvrez les paramètres de configuration Wi-Fi Intune sur les appareils exécutant Android.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831059"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905663"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Configurer les paramètres Wi-Fi dans Microsoft Intune pour les appareils exécutant Android et Android for Work  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>Configurer les paramètres Wi-Fi dans Microsoft Intune pour les appareils exécutant Android, pour les profils professionnels Android et pour les appareils Android en mode kiosque
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Cet article décrit les paramètres Wi-Fi que vous pouvez configurer dans Microsoft Intune pour les appareils exécutant Android et Android for Work.
+Cet article décrit les paramètres Wi-Fi que vous pouvez configurer dans Microsoft Intune pour les appareils exécutant Android et Profils professionnels Android.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Paramètres Wi-Fi pour les profils de base et d’entreprise
 
-Les paramètres Wi-Fi suivants sont disponibles pour les appareils Android et Android for Work :
+Les paramètres Wi-Fi suivants sont disponibles pour les appareils Android et avec profil professionnel Android :
 
 - **Nom du réseau** : saisissez un nom pour cette connexion Wi-Fi. Il s’agit du nom que voient les utilisateurs quand ils parcourent la liste des connexions disponibles sur leurs appareils.
 - **SSID** : identificateur SSID. Il s’agit du nom réel du réseau sans fil auquel les appareils se connectent. Toutefois, les utilisateurs voient uniquement le nom de réseau que vous avez configuré quand ils choisissent la connexion.
 - **Se connecter automatiquement** : l’appareil se connecte chaque fois qu’il se trouve dans la portée de ce réseau.
 - **Réseau masqué** : empêche ce réseau de s’afficher dans la liste des réseaux disponibles sur l’appareil.
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>Paramètres Wi-Fi disponibles pour les profils de kiosque Entreprise
+- **Type de Wi-Fi** : ces paramètres de type de Wi-Fi sont disponibles seulement quand vous choisissez **Type de profil** > **Propriétaire de l’appareil uniquement** > **Wi-Fi**.
+    - **Ouvrir (pas d’authentification)**
+    - **Clé WEP prépartagée** : vous devez fournir le mot de passe dans la zone **Clé prépartagée**.
+    - **Clé WPA prépartagée** : vous devez fournir le mot de passe dans la zone **Clé prépartagée**.
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Paramètres Wi-Fi pour les profils d’entreprise uniquement
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>Paramètres Wi-Fi uniquement pour les versions antérieures d’Android et les profils professionnels Android
 
 - **Type EAP** : choisissez le type de protocole EAP (Extensible Authentication Protocol) utilisé pour authentifier les connexions sans fil sécurisées :
     - **EAP-TLS**

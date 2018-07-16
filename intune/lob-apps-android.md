@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22470356c921eea17e4d2b3d57f796fe51568ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224481"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905034"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Ajouter une application métier Android à Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.locfileid: "34224481"
 Une application métier est une application que vous ajoutez à Intune à partir d’un fichier d’installation d’application. En règle générale, ce genre d’application est écrite en interne. Intune installe l’application métier sur l’appareil de l’utilisateur. 
 
 > [!Note]
-> Pour plus d’informations sur les applications métier du Google Play for Work Store, consultez [Utilisation d’une application métier du Google Play for Work Store](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store). 
+> Pour plus d’informations sur les applications métier du store Google Play géré, consultez [Utilisation d’une application métier du store Google Play géré](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store). 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Étape 1 : Spécifier le fichier d’installation du logiciel
 

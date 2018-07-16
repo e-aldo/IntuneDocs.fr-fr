@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 06/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909199"
 ---
 # <a name="what-is-device-enrollment"></a>Qu’est-ce que l’inscription d’appareils ?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -26,6 +27,8 @@ ms.lasthandoff: 04/16/2018
 Intune vous permet de gérer les appareils et les applications des membres de votre personnel, et comment ils accèdent aux données de votre entreprise. Pour utiliser cette gestion des appareils mobiles (MDM), les appareils doivent d’abord être inscrits auprès du service Intune. Quand un appareil est inscrit, il reçoit un certificat MDM. Ce certificat est utilisé pour communiquer avec le service Intune.
 
 Comme vous pouvez le voir dans les tableaux suivants, il existe plusieurs méthodes pour inscrire les appareils des membres de votre personnel. Chaque méthode dépend de la propriété de l’appareil (personnel ou d’entreprise), du type d’appareil (iOS, Windows, Android) et des exigences de gestion (réinitialisations, affinité, verrouillage).
+
+Par défaut, les appareils de toutes les plateformes peuvent être inscrits dans Intune. Cependant, vous pouvez [limiter les appareils par plateforme](enrollment-restrictions-set.md#set-device-type-restrictions).
 
 ## <a name="ios-enrollment-methods"></a>Méthodes d’inscription iOS
 
@@ -61,17 +64,17 @@ Comme vous pouvez le voir dans les tableaux suivants, il existe plusieurs métho
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Non|   Oui |   Non | [Plus d’informations](./android-enroll.md)|
 |**[GESTIONNAIRE D’INSCRIPTION D’APPAREIL](#device-enrollment-manager)**| Non |Non |Non  |[Plus d’informations](./device-enrollment-manager-enroll.md)|
-|**Android for Work**| Non | Oui | Non| [Plus d’informations](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**Profils professionnels Android**| Non | Oui | Non| [Plus d’informations](./android-work-profile-enroll.md) |
 
 
 ## <a name="bring-your-own-device"></a>(Apportez votre propre appareil)
 Les appareils BYOD incluent les téléphones, les tablettes et les PC personnels. Les utilisateurs installent et exécutent l’application Portail d’entreprise pour inscrire des appareils BYOD. Ce programme permet aux utilisateurs d’accéder aux ressources de l’entreprise, comme la messagerie électronique.
 
 ## <a name="corporate-owned-device"></a>Appareil d’entreprise
-Les appareils d’entreprise incluent les téléphones, les tablettes et les PC appartenant à l’organisation et distribués aux employés. L’inscription des appareils d’entreprise prend en charge des scénarios comme l’inscription automatique, les appareils partagés ou les exigences d’inscription pré-autorisée. Une méthode courante pour inscrire des appareils d’entreprise est l’utilisation du gestionnaire de l’inscription d’appareil par un administrateur ou un responsable. Vous pouvez inscrire des appareils iOS directement via les outils du Programme d’inscription des appareils fournis par Apple. Les appareils avec un numéro IMEI peuvent également être identifiés et référencés comme appartenant à l’entreprise.
+Les [appareils de l’entreprise](corporate-identifiers-add.md) incluent les téléphones, les tablettes et les PC appartenant à l’organisation et distribués aux employés. L’inscription des appareils d’entreprise prend en charge des scénarios comme l’inscription automatique, les appareils partagés ou les exigences d’inscription pré-autorisée. Une méthode courante pour inscrire des appareils d’entreprise est l’utilisation du gestionnaire de l’inscription d’appareil par un administrateur ou un responsable. Vous pouvez inscrire des appareils iOS directement via les outils du Programme d’inscription des appareils fournis par Apple. Les appareils avec un numéro IMEI peuvent également être identifiés et référencés comme appartenant à l’entreprise.
 
 ### <a name="device-enrollment-manager"></a>Gestionnaire d'inscription d'appareils
-Le gestionnaire d’inscription d’appareil est un compte d’utilisateur spécial permettant d’inscrire et de gérer plusieurs appareils d’entreprise. Les responsables peuvent installer le Portail d’entreprise et inscrire de nombreux appareils sans utilisateur. En savoir plus sur le [gestionnaire d’inscription d’appareil](./device-enrollment-manager-enroll.md).
+Le gestionnaire d’inscription d’appareil est un compte d’utilisateur spécial permettant d’inscrire et de gérer plusieurs appareils d’entreprise. Les responsables peuvent installer le Portail d’entreprise et inscrire de nombreux appareils sans utilisateur. Ces types d’appareils sont adaptés par exemple aux applications utilitaires ou de point de vente, mais ne conviennent pas pour les utilisateurs qui doivent accéder à la messagerie ou à des ressources de l’entreprise. En savoir plus sur le [gestionnaire d’inscription d’appareil](./device-enrollment-manager-enroll.md). 
 
 ### <a name="apple-device-enrollment-program"></a>Programme d'inscription d'appareils Apple
 Le programme d’inscription d’appareils Apple (ou DEP) vous permet de créer et déployer une stratégie « à distance » sur des appareils iOS achetés et gérés avec DEP. L’appareil est inscrit quand l’utilisateur le démarre pour la première fois et exécute l’Assistant d’installation iOS. Cette méthode prend en charge le mode iOS supervisé, qui permet la configuration d’un appareil avec des fonctionnalités spécifiques.
@@ -84,7 +87,7 @@ Pour en savoir plus sur l’inscription DEP iOS :
 ### <a name="usb-sa"></a>USB-SA
 Les administrateurs utilisent Apple Configurator, via un port USB, pour préparer manuellement chaque appareil d’entreprise à l’inscription à l’aide de l’Assistant Configuration. Ils créent un profil d’inscription et l’exportent vers Apple Configurator. Lorsque les utilisateurs reçoivent leurs appareils, ils sont invités à exécuter l’Assistant Configuration pour inscrire leurs appareils. Cette méthode prend en charge le mode **iOS supervisé**, qui active les fonctionnalités suivantes :
   - Inscription verrouillée
-  - Mode plein écran et autres configurations et restrictions avancées
+  - Mode kiosque et autres configurations et restrictions avancées
 
 Découvrez l’inscription d’Apple Configurator iOS avec l’Assistant Configuration :
 

@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832304"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905325"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Guide pratique pour configurer des paramètres Wi-Fi dans Microsoft Intune
 
@@ -37,7 +37,7 @@ Par exemple, vous installez un nouveau réseau Wi-Fi nommé Contoso Wi-Fi et sou
 Les profils Wi-Fi prennent en charge les plateformes suivantes :
 
 - Android 4 et versions ultérieures
-- Android for Work
+- Profils professionnels Android
 - iOS 8.0 et versions ultérieures
 - macOS (Mac OS X 10.11 et ultérieur)
 
@@ -55,7 +55,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 4. Dans le volet **Créer un profil** , saisissez un **Nom** et la **Description** du profil Wi-Fi.
 5. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres Wi-Fi. Actuellement, vous pouvez choisir une des plateformes suivantes pour les paramètres Wi-Fi :
     - **Android**
-    - **Android for Work**
+    - **Android Entreprise**
     - **iOS**
     - **MacOS**
     - **Windows Phone 8.1**
@@ -69,7 +69,7 @@ Utilisez les informations de cette rubrique pour apprendre les notions de base s
 
    Le profil **Importation Wi-Fi** (pour Windows 8.1 et versions ultérieures) vous permet d’importer des paramètres Wi-Fi dans un fichier XML que vous avez exporté à partir d’un autre appareil.
 1. Selon la plateforme que vous choisissez, les paramètres que vous pouvez configurer diffèrent. Accédez à l’une des rubriques suivantes pour obtenir les paramètres détaillés pour chaque plateforme :
-    - [Paramètres Android et Android for Work](wi-fi-settings-android.md)
+    - [Paramètres d’Android et de profil professionnel Android](wi-fi-settings-android.md)
     - [Paramètres iOS](wi-fi-settings-ios.md)
     - [Paramètres macOS](wi-fi-settings-macos.md)
     - [Paramètres Windows 8.1 et version ultérieures](wi-fi-settings-import-windows-8-1.md) (y compris Windows Holographic for Business)

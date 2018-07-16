@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223405"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869370"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Assigner des applications Office 365 à des appareils Windows 10 à l’aide de Microsoft Intune
 
@@ -47,7 +47,7 @@ Ce type d’application vous permet d’assigner facilement des applications Off
 3. Dans le volet **Intune**, sélectionnez **Applications mobiles**.
 4. Dans le volet de la charge de travail **Applications mobiles**, sous **Gérer**, sélectionnez **Applications**.
 5. Sélectionnez **Ajouter**.
-6. Dans le volet **Ajouter des applications**, dans la liste **Type d’application**, sous **Office 365 Office**, sélectionnez **Windows 10**.
+6. Dans le volet **Ajouter des applications**, dans la liste **Type d’application**, sous **Suite Office 365**, sélectionnez **Windows 10**.
 
 Vous pouvez à présent configurer la suite d’applications.
 
@@ -71,15 +71,15 @@ Dans cette étape, indiquez des informations sur la suite d’applications. Ces 
 2. Dans le volet **Informations sur la suite d’applications**, procédez comme suit :
     - **Nom de la suite** : entrez le nom de la suite d’applications tel qu’il apparaît dans le portail d’entreprise. Vérifiez que chaque nom de suite que vous utilisez est unique. Si un même nom de suite d’applications est utilisé deux fois, une seule application est proposée aux utilisateurs du portail d’entreprise.
     - **Description de la suite** : entrez la description de la suite d’applications. Vous pouvez par exemple répertorier les applications que vous avez choisies d’inclure.
-    - **Éditeur :** entrez le nom de l’éditeur de l’application.
+    - **Éditeur** : Microsoft apparaît comme éditeur.
     - **Catégorie** : si vous le souhaitez, sélectionnez une ou plusieurs des catégories d’applications intégrées ou que vous avez créées. Ce paramètre permet de faciliter la recherche de la suite d’applications pour les utilisateurs qui naviguent dans le portail d’entreprise.
     - **Proposer cette application dans le portail d’entreprise** : sélectionnez cette option pour afficher la suite d’applications dans la page principale du portail d’entreprise quand les utilisateurs cherchent des applications.
     - **URL d’information** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations sur cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
     - **URL de déclaration de confidentialité** : si vous le souhaitez, entrez l’URL d’un site web qui contient des informations de confidentialité relatives à cette application. Cette URL est présentée aux utilisateurs du portail d’entreprise.
-    - **Développeur** : si vous le souhaitez, entrez le nom du développeur de l’application.
-    - **Propriétaire** : si vous le souhaitez, entrez le nom du propriétaire de cette application (par exemple *Service des ressources humaines*).
+    - **Développeur** : Microsoft apparaît comme développeur.
+    - **Propriétaire** : Microsoft apparaît comme propriétaire.
     - **Remarques** : entrez les remarques à associer à cette application.
-    - **Logo** : chargez une icône qui s’affiche avec l’application lorsque les utilisateurs parcourent le portail d’entreprise.
+    - **Logo** : le logo Office 365 est affiché avec l’application quand les utilisateurs naviguent dans le portail d’entreprise.
 3. Sélectionnez **OK**.
 
 ## <a name="configure-app-settings"></a>Configurer les paramètres de l’application

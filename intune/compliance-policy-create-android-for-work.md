@@ -1,6 +1,6 @@
 ---
-title: Créer une stratégie de conformité Android for Work dans Microsoft Intune - Azure | Microsoft Docs
-description: Créez ou configurez une stratégie de conformité des appareils Microsoft Intune pour les appareils Android for Work. Choisissez d’autoriser les appareils jailbreakés, définissez le niveau de menace acceptable, vérifiez la présence de Google Play, entrez la version minimale et maximale du système d’exploitation, choisissez vos exigences de mot de passe et autorisez le chargement indépendant des applications.
+title: Créer une stratégie de conformité de profil professionnel Android dans Microsoft Intune - Azure | Microsoft Docs
+description: Créez ou configurez une stratégie de conformité des appareils Microsoft Intune pour les appareils avec profil professionnel Android. Choisissez d’autoriser les appareils jailbreakés, définissez le niveau de menace acceptable, vérifiez la présence de Google Play, entrez la version minimale et maximale du système d’exploitation, choisissez vos exigences de mot de passe et autorisez le chargement indépendant des applications.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047983"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905085"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Android for Work dans Intune
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils avec profil professionnel Android dans Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Une stratégie de conformité des appareils Intune pour Android for Work spécifie les règles et les paramètres que ces appareils doivent respecter pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec un accès conditionnel pour autoriser ou bloquer l’accès aux ressources de l’entreprise. Vous pouvez également obtenir des rapports sur les appareils, et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité des appareils pour différentes plateformes dans le portail Azure Intune. Pour en savoir plus sur les stratégies de conformité et sur les prérequis, consultez [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
+Une stratégie de conformité des appareils Intune pour les appareils avec profil professionnel Android spécifie les règles et les paramètres que ces appareils doivent respecter pour être considérés comme conformes. Vous pouvez utiliser ces stratégies avec un accès conditionnel pour autoriser ou bloquer l’accès aux ressources de l’entreprise. Vous pouvez également obtenir des rapports sur les appareils, et prendre des mesures en cas de non-conformité. Vous créez des stratégies de conformité des appareils pour différentes plateformes dans le portail Azure Intune. Pour en savoir plus sur les stratégies de conformité et sur les prérequis, consultez [Bien démarrer avec la conformité des appareils](device-compliance-get-started.md).
 
 La table suivante décrit la façon dont les paramètres non conformes sont gérés quand une stratégie de conformité est utilisée avec une stratégie d’accès conditionnel.
 
 --------------------------
 
-|**paramètre de stratégie**| **Android for Work** |
+|**paramètre de stratégie**| **Profil professionnel Android** |
 | --- | --- |
 | **Configuration d’un code confidentiel ou mot de passe** |  En quarantaine |
 | **Chiffrement de l’appareil** |  En quarantaine |
@@ -51,7 +51,7 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 ## <a name="create-a-device-compliance-policy"></a>Créer une stratégie de conformité des appareils
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Pour l’option **Plateforme**, sélectionnez **Android for Work**. Choisissez **Paramètres Configurer**, puis entrez les paramètres nécessaires pour les options **Intégrité de l’appareil**, **Propriétés de l’appareil** et **Sécurité du système**. Une fois que vous avez fini, sélectionnez **OK**, puis **Créer**.
+5. Pour **Plateforme**, sélectionnez **Android Entreprise**. Choisissez **Paramètres Configurer**, puis entrez les paramètres nécessaires pour les options **Intégrité de l’appareil**, **Propriétés de l’appareil** et **Sécurité du système**. Une fois que vous avez fini, sélectionnez **OK**, puis **Créer**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ La table suivante décrit la façon dont les paramètres non conformes sont gér
 
 #### <a name="threat-scan-on-apps"></a>Analyse des menaces sur les applications
 
-Sur les appareils dotés de profils professionnels (Android for Work), le paramètre **Analyse des menaces sur les applications** correspond à un paramètre de stratégie de configuration. Les administrateurs peuvent activer le paramètre pour un appareil.
+Sur les appareils avec des profils professionnels Android, le paramètre **Analyse des menaces sur les applications** correspond à un paramètre de stratégie de configuration. Les administrateurs peuvent activer le paramètre pour un appareil.
 
-Si votre entreprise utilise des profils professionnels Android, vous pouvez activer **Analyse des menaces sur les applications** pour vos appareils inscrits. Établissez un profil d’appareil et demandez le paramètre de sécurité système. Pour plus d’informations sur les profils d’appareils, consultez [Paramètres de restriction des appareils Android for Work dans Intune](device-restrictions-android-for-work.md).
+Si votre entreprise utilise des profils professionnels Android, vous pouvez activer **Analyse des menaces sur les applications** pour vos appareils inscrits. Établissez un profil d’appareil et demandez le paramètre de sécurité système. Pour plus d’informations, consultez [Paramètres de restriction des appareils professionnels dans Intune](device-restrictions-android-for-work.md).
 
 ## <a name="device-property-settings"></a>Paramètres de propriétés d’appareils
 
@@ -106,13 +106,13 @@ Si votre entreprise utilise des profils professionnels Android, vous pouvez acti
 
 ### <a name="encryption"></a>Chiffrement
 
-- **Exiger le chiffrement sur l’appareil mobile** : vous n’êtes pas obligé de configurer ce paramètre parce que les appareils Android for Work appliquent le chiffrement.
+- **Exiger le chiffrement sur l’appareil mobile** : vous n’avez pas à configurer ce paramètre, car les appareils avec profil professionnel Android appliquent le chiffrement.
 
 ### <a name="device-security"></a>Sécurité du périphérique
 
-- **Bloquer les applications provenant de sources inconnues** : vous n’avez pas à configurer ce paramètre, car les appareils Android for Work bloquent toujours les installations à partir de sources inconnues.
+- **Bloquer les applications provenant de sources inconnues** : vous n’avez pas à configurer ce paramètre, car les appareils avec profil professionnel Android bloquent toujours les installations à partir de sources inconnues.
 - **Intégrité du runtime de l’application Portail d’entreprise** : vérifie si l’environnement de runtime par défaut de l’application Portail d’entreprise est installé, s’il est correctement signé, s’il n’est pas en mode de débogage et s’il est installé à partir d’une source connue.
-- **Bloquer le débogage USB sur l’appareil** : vous n’avez pas à configurer ce paramètre, car le débogage USB est déjà désactivé sur les appareils Android for Work.
+- **Bloquer le débogage USB sur l’appareil** : vous n’avez pas à configurer ce paramètre, car le débogage USB est déjà désactivé sur les appareils avec profil professionnel Android.
 - **Niveau minimal du correctif de sécurité** : sélectionnez le niveau le plus ancien possible pour le correctif de sécurité d’un appareil. Les appareils qui ne sont pas au moins à ce niveau de correctif sont non conformes. Vous devez entrer la date au format `YYYY-MM-DD`.
 
 ## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs

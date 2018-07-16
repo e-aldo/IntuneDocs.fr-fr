@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744599"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905102"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Créer des profils VPN dans Intune
 
@@ -27,7 +27,7 @@ Les réseaux privés virtuels (ou VPN) donnent à vos utilisateurs un accès dis
 
 Par exemple, supposons que vous voulez approvisionner tous les appareils iOS en fonction des paramètres nécessaires pour se connecter à un partage de fichiers sur le réseau d’entreprise. Vous créez un profil VPN contenant les paramètres de connexion au réseau d’entreprise. Vous affectez ensuite ce profil à tous les utilisateurs disposant d’appareils iOS. Les utilisateurs voient la connexion VPN dans la liste des réseaux disponibles et peuvent se connecter avec un minimum d’effort.
 
-Vous pouvez utiliser des stratégies de configuration personnalisées Intune afin de créer des profils VPN pour les plateformes suivantes :
+Vous pouvez utiliser des stratégies de configuration personnalisées Intune afin de créer des profils VPN pour les plateformes suivantes :
 
 * Android 4 et versions ultérieures
 * Appareils inscrits qui exécutent Windows 8.1 et versions ultérieures
@@ -40,7 +40,7 @@ Vous pouvez utiliser des stratégies de configuration personnalisées Intune afi
 
 Vous pouvez créer des profils VPN à l’aide des types de connexions suivants :
 
-|Type de connexion|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Type de connexion|Android<br>Profils professionnels Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automatique|Non|Non|Non|Non|Non|Oui|
 |Check Point Capsule VPN|Oui|Oui|Oui|Oui|Oui|Oui|
@@ -68,21 +68,21 @@ Découvrez comment créer des profils VPN personnalisés à l’aide des paramè
 3. Sélectionnez **Configuration de l’appareil** > **Profils** > **Créer un profil**.
 4. Entrez un **Nom** et une **Description** pour le profil VPN.
 5. À partir de la liste déroulante **Plateforme**, sélectionnez la plateforme de l’appareil auquel vous souhaitez appliquer les paramètres VPN. Actuellement, vous pouvez choisir l’une des plateformes suivantes pour les paramètres VPN :
-  - **Android**
-  - **Android for Work**
-  - **iOS**
-  - **MacOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 et versions ultérieures**
-  - **Windows 10 et versions ultérieures**
+   - **Android**
+   - **Android Entreprise**
+   - **iOS**
+   - **MacOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 et versions ultérieures**
+   - **Windows 10 et versions ultérieures**
 6. Dans la liste déroulante **Type de profil**, choisissez **VPN**.
 7. Selon la plateforme que vous choisissez, les paramètres que vous pouvez configurer diffèrent. Accédez à l’une des rubriques suivantes pour obtenir les paramètres détaillés pour chaque plateforme :
-  - [Paramètres Android et Android for Work](vpn-settings-android.md)
-  - [Paramètres iOS](vpn-settings-ios.md)
-  - [Paramètres macOS](vpn-settings-macos.md)
-  - [Paramètres Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
-  - [Paramètres Windows 8.1](vpn-settings-windows-8-1.md)
-  - [Paramètres Windows 10](vpn-settings-windows-10.md) (y compris Windows Holographic for Business)
+   - [Paramètres d’Android et de profil professionnel Android](vpn-settings-android.md)
+   - [Paramètres iOS](vpn-settings-ios.md)
+   - [Paramètres macOS](vpn-settings-macos.md)
+   - [Paramètres Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
+   - [Paramètres Windows 8.1](vpn-settings-windows-8-1.md)
+   - [Paramètres Windows 10](vpn-settings-windows-10.md) (y compris Windows Holographic for Business)
 8. Une fois que vous avez fini, il ne vous reste plus qu’à **Créer** votre profil
 
 Le profil est créé et apparaît dans la liste des profils. Pour affecter ce profil à des groupes, consultez [Affecter des profils d’appareil](device-profile-assign.md).

@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216324"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905221"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscrire des appareils avec un compte de gestionnaire d’inscription d’appareil
 
@@ -35,7 +35,7 @@ Les utilisateurs doivent exister dans le [portail Azure](https://portal.azure.co
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Exemple d’un scénario faisant intervenir un gestionnaire d’inscription d’appareil
 
-Un restaurant souhaite fournir 50 tablettes à son personnel de service et des moniteurs de commande à son personnel de cuisine. Les employés n’ont jamais besoin d’accéder aux données de l’entreprise ou de se connecter comme utilisateurs. L’administrateur Intune crée un compte de gestionnaire d’inscription des appareils et ajoute un superviseur de restaurant au compte DEM. Le superviseur a maintenant des fonctionnalités DEM. Le superviseur peut désormais inscrire les 50 tablettes en utilisant les informations d’identification du gestionnaire d’inscription d’appareil.
+Un restaurant souhaite fournir 50 tablettes à son personnel de service et des moniteurs de commande à son personnel de cuisine. Les employés n’ont jamais besoin d’accéder aux données de l’entreprise ou de se connecter comme utilisateurs. L’administrateur Intune crée un compte de gestionnaire d’inscription des appareils pour le superviseur du restaurant.  Ce compte est distinct du compte principal du superviseur et il est utilisé seulement pour l’inscription des appareils partagés auprès d’Intune. Le superviseur peut désormais inscrire les 50 tablettes en utilisant les informations d’identification du gestionnaire d’inscription d’appareil.
 
 Seuls les utilisateurs existant dans le [portail Azure](https://portal.azure.com) peuvent être gestionnaires d’inscription d’appareil. Le gestionnaire d’inscription d’appareil ne peut pas être administrateur Intune.
 
@@ -54,7 +54,7 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
   - Seul l’appareil local s’affiche dans l’application Portail d’entreprise ou le site web.
   - Les utilisateurs ne peuvent pas utiliser les applications du programme d’achat en volume (VPP) Apple avec des licences utilisateur en raison des critères des identifiants Apple par utilisateur pour la gestion des applications.
   - (iOS uniquement) Si vous utilisez le gestionnaire d’inscription d’appareil pour inscrire des appareils iOS, vous ne pouvez pas utiliser Apple Configurator, Apple School Manager (ASM) ou le programme d’inscription des appareils Apple pour inscrire des appareils.
-  - (Android uniquement) Il existe une limite quant à la quantité d’appareils Android for Work qui peuvent être inscrits avec un seul compte DEM. Vous pouvez inscrire un maximum de 10 appareils de profil professionnel Android par compte DEM. Cette limitation ne s’applique pas à l’inscription Android héritée.
+  - (Android uniquement) Il existe une limite quant à la quantité d’appareils avec profil professionnel Android qui peuvent être inscrits avec un même compte DEM. Vous pouvez inscrire un maximum de 10 appareils de profil professionnel Android par compte DEM. Cette limitation ne s’applique pas à l’inscription Android héritée.
   - Les appareils peuvent installer des applications VPP s’ils ont des licences d’appareil.
   - Chaque appareil nécessite une licence d’appareil. Apprenez-en davantage sur les [licences utilisateur et d’appareil](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 

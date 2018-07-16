@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 3c8bc523f2796f8af7cb4801cdb13a60b7e2eb5d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32017955"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905731"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatiser l’envoi d’un e-mail et ajouter des actions pour les appareils non conformes - Intune
 
@@ -39,7 +39,7 @@ Il existe deux types d’actions :
 - Pour définir des actions en cas de non-conformité, vous devez avoir au moins une stratégie de conformité de l’appareil. Pour créer une stratégie de conformité de l’appareil, consultez les plateformes suivantes :
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Profils professionnels Android](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [MacOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

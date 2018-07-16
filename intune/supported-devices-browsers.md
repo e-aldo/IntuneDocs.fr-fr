@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033368"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434264"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Navigateurs et systèmes d’exploitation pris en charge
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033368"
 
 Avant de configurer Microsoft Intune, passez en revue les systèmes d’exploitation et les navigateurs pris en charge.
 
-Pour obtenir de l’aide sur l’installation d’Intune sur votre appareil, consultez [Utiliser des appareils gérés pour réaliser vos tâches](/intune-user-help/company-portal-frequently-asked-questions). Vous devez également vous familiariser avec [l’utilisation de la bande passante réseau Intune](network-bandwidth-use.md) ([portail classique](/intune-classic/get-started/network-bandwidth-use)).
+Pour obtenir de l’aide sur l’installation d’Intune sur votre appareil, consultez [Utilisation d’appareils gérés pour réaliser vos tâches](/intune-user-help/company-portal-frequently-asked-questions) et [Utilisation de la bande passante réseau Intune](network-bandwidth-use.md) ([portail Classic](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Systèmes d’exploitation pris en charge Intune
 
@@ -38,12 +38,12 @@ Vous pouvez gérer des appareils qui exécutent les systèmes d’exploitation s
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Appareils Samsung Knox Standard pris en charge
 
-L’application Portail d’entreprise tente l’activation de Samsung Knox lors de l’inscription à MDM si l’appareil figure dans la [liste des appareils Knox pris en charge](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Ceci permet d’éviter les erreurs d’activation de Knox qui empêchent l’inscription à MDM. Les appareils qui ne prennent pas en charge l’activation de Samsung Knox s’inscrivent en tant qu’appareils Android standard. Un appareil Samsung peut avoir des numéros de modèles qui prennent en charge Knox, alors que d’autres ne le prennent pas en charge. Vérifiez la compatibilité de Knox auprès du revendeur de votre appareil avant d’acheter et de déployer des appareils Samsung.
+Pour éviter les erreurs d’activation Knox qui empêchent l’inscription MDM, l’application Portail d’entreprise tente l’activation de Samsung Knox lors de l’inscription à MDM uniquement si l’appareil figure dans la [liste des appareils Knox pris en charge](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Les appareils qui ne prennent pas en charge l’activation de Samsung Knox s’inscrivent en tant qu’appareils Android standard. Un appareil Samsung peut avoir des numéros de modèles qui prennent en charge Knox, alors que d’autres ne le prennent pas en charge. Vérifiez la compatibilité de Knox auprès du revendeur de votre appareil avant d’acheter et de déployer des appareils Samsung.
 
 > [!NOTE]
 > L’inscription des appareils Samsung Knox peut vous obliger à [activer l’accès aux serveurs de Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
-La liste suivante contient les modèles d’appareils Samsung qui ne prennent pas en charge Knox et qui sont inscrits en tant qu’appareils Android natifs par l’application Portail d’entreprise pour Android :
+Les modèles d’appareils Samsung figurant dans la liste suivante ne prennent pas en charge Knox. Ils sont inscrits comme appareils Android natifs par l’application Portail d’entreprise pour Android :
 
 | **Nom de l’appareil** | **Numéro de modèle de l’appareil** |
 | --- | --- |
@@ -103,7 +103,7 @@ Les navigateurs suivants sont pris en charge pour ces portails :
 - Microsoft Internet Explorer 11
 - Safari (dernière version, Mac uniquement)
 - Chrome (dernière version)
-- Mozilla Firefox avec Silverlight activé [En savoir plus (versions antérieures à 52)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (dernière version)
 
 
 

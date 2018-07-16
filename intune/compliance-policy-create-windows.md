@@ -1,23 +1,23 @@
 ---
 title: Créer une stratégie de conformité de l’appareil Windows dans Microsoft Intune - Azure | Microsoft Docs
-description: Créez ou configurez une stratégie de conformité des appareils Microsoft Intune pour Windows Phone 8.1, Windows 8.1 et versions ultérieures, ainsi que Windows 10 et versions ultérieures. Vérifiez la conformité des versions minimale et maximale du système d’exploitation, définissez des restrictions et des longueurs pour les mots de passe, imposez BitLocker, définissez le niveau de menace acceptable et activez le chiffrement du stockage de données, notamment pour Surface Hub et Windows Holographic for Business.
+description: Créez ou configurez une stratégie de conformité des appareils Microsoft Intune pour Windows Phone 8.1, Windows 8.1 et versions ultérieures, ainsi que Windows 10 et versions ultérieures. Vérifiez la conformité des versions minimale et maximale du système d’exploitation, définissez des restrictions et des longueurs pour les mots de passe, imposez BitLocker, vérifier les solutions antivirus tierces, définissez le niveau de menace acceptable et activez le chiffrement du stockage de données, notamment pour Surface Hub et Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744905"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909335"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils Windows dans Intune
 
@@ -113,7 +113,9 @@ Les PC Windows 8.1 retournent la version **3**. Si la règle de la version du sy
 - **Exiger l’activation du démarrage sécurisé sur l’appareil** : quand le démarrage sécurisé est activé, le système est obligé de démarrer dans un état approuvé basé sur les paramètres d’usine. De plus, quand le démarrage sécurisé est activé, les principaux composants utilisés pour démarrer l’ordinateur doivent avoir des signatures de chiffrement appropriées qui sont approuvées par l’organisation ayant fabriqué l’appareil. Le microprogramme UEFI vérifie la signature avant de laisser la machine démarrer. Si des fichiers ont été falsifiés et que leur signature a été rompue, le système ne démarre pas.
 - **Exiger l’intégrité du code** : l’intégrité du code est une fonctionnalité qui valide l’intégrité d’un fichier de pilote ou d’un fichier système, chaque fois qu’il est chargé en mémoire. L’intégrité du code détecte si un fichier système ou un pilote non signé est chargé dans le noyau. Cette fonctionnalité détecte également si un fichier système a été modifié par un logiciel malveillant exécuté par un compte d’utilisateur ayant des privilèges d’administrateur.
 
-Pour plus d’informations sur le fonctionnement du service HAS, consultez [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
+Pour plus d’informations sur le fonctionnement du service HAS, consultez [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
+
+Pour configurer Windows Defender ATP (Advanced Threat Protection) comme service de défense contre les menaces, consultez [Activer Windows Defender ATP avec l’accès conditionnel](advanced-threat-protection.md).
 
 ### <a name="device-properties"></a>Propriétés des appareils
 
@@ -164,6 +166,11 @@ Pour plus d’informations sur le fonctionnement du service HAS, consultez [Heal
 #### <a name="encryption"></a>Chiffrement
 
 - **Chiffrement du stockage de données sur l’appareil** : choisissez **Exiger** pour chiffrer le stockage des données sur vos appareils.
+
+#### <a name="device-security"></a>Sécurité du périphérique
+
+- **Antivirus** : quand la valeur définie est **Exiger**, vous pouvez vérifier la conformité en utilisant des solutions antivirus inscrites auprès du Centre de sécurité Windows, comme Symantec et Windows Defender. Quand la valeur est **Non configuré**, Intune ne vérifie pas les solutions antivirus installées sur l’appareil.
+- **Logiciel anti-espion** : quand la valeur définie est **Exiger**, vous pouvez vérifier la conformité en utilisant des solutions de logiciel anti-espion inscrites auprès du Centre de sécurité Windows, comme Symantec et Windows Defender. Quand la valeur est **Non configuré**, Intune ne vérifie pas les solutions de logiciel anti-espion installées sur l’appareil.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
