@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905986"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028726"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Ajouter des applications à Microsoft Intune
 
@@ -51,7 +51,7 @@ Le tableau suivant répertorie les types d’applications spécifiques et la fa�
 | Applications de l’App Store iOS  | Application de store  | Sélectionnez **iOS** comme **type d’application**, recherchez l’application, puis sélectionnez l’application dans Intune. |
 | Application du Windows Phone 8.1 Store  | Application de store  | Sélectionnez **Windows Phone 8.1** comme **type d’application**, puis entrez l’URL du Microsoft Store de l’application. |
 | Applications Microsoft Store  | Application de store  | Sélectionnez **Windows** comme **type d’application**, puis entrez l’URL du Microsoft Store de l’application. |
-| Applications professionnelles Android | Application de store  | Recherchez et approuvez l’application avec profil professionnel Android à partir du Managed Google Play Store.  |
+| Applications de profil professionnel Android | Application de store  | Recherchez et approuvez l’application avec profil professionnel Android à partir du Managed Google Play Store.  |
 | Applications Office 365 pour Windows 10  | Application de store (Office 365) | Sélectionnez **Windows 10** sous la **Suite Office 365** comme **type d’application**, puis sélectionnez l’application Office 365 à installer.  |
 | Applications Office 365 pour macOS | Application de store (Office 365) | Sélectionnez **macOS** sous la **Suite Office 365** comme **type d’application**, puis sélectionnez la suite d’applications Office 365. |
 | Applications métier Android | Application métier | Sélectionnez l’application **Métier** comme **type d’application**, sélectionnez le **fichier Package d’application**, puis entrez un fichier d’installation Android avec l’extension **.apk**.  |

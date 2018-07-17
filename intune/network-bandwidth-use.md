@@ -16,11 +16,11 @@ ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029401"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225355"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Configuration requise pour le réseau Intune et bande passante
 
@@ -76,9 +76,9 @@ Pour en savoir plus sur BITS et les ordinateurs Windows, consultez [Background I
 ### <a name="use-branchcache-on-computers"></a>Utiliser BranchCache sur les ordinateurs
 Les clients Intune peuvent utiliser BranchCache pour réduire le trafic WAN. Les systèmes d’exploitation suivants prennent en charge BranchCache :
 
-- Windows 7
+- Windows 7
 - Windows 8.0
-- Windows 8.1
+- Windows 8.1
 - Windows 10
 
 Pour utiliser BranchCache, il doit être activé sur l’ordinateur client et ce dernier doit être configuré pour le **mode cache distribué**.
@@ -163,7 +163,7 @@ Les tableaux suivants répertorient les ports et services auxquels le client Int
 
 ### <a name="apple-device-network-information"></a>Informations réseau de l’appareil Apple
 
-|         Hostname         |                                        URL (adresse IP/sous-réseau)                                        |  Protocol  |     Port     |                          Appareil                           |
+|         Hostname         |                                        URL (adresse IP/sous-réseau)                                        |  Protocole  |     Port     |                          Appareil                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
 |      Console d'administration       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS et macOS                    |
 |      Console d'administration       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS et macOS                    |

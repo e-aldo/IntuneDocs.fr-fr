@@ -15,11 +15,11 @@ ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34285090"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225186"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Préparer les applications métier aux stratégies de protection des applications
 
@@ -90,7 +90,7 @@ Ce tableau répertorie les paramètres que vous pouvez utiliser pour le Kit SDK 
 |Autoriser une empreinte digitale à la place du code confidentiel|X|X|
 |Autoriser la reconnaissance faciale à la place du code PIN (iOS uniquement)|X|X|
 |Exiger des informations d'identification d'entreprise pour l'accès|X|X|
-|Bloquer l’exécution des applications gérées sur les appareils jailbreakés ou rootés|X|X|
+|Bloquer l’exécution des applications gérées sur les appareils jailbroken ou rootés|X|X|
 |Chiffrer les données de l'application|X|X|
 |Revérifier les spécifications requises pour l’accès après un nombre de minutes spécifié|X|X|
 |Spécifier la période de grâce hors connexion|X|X|

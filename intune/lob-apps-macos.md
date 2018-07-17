@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f2d06c879343a0f9701a8531c5543b961d792f
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906003"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993715"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Guide pratique pour ajouter des applications métier macOS à Microsoft Intune
 
@@ -32,8 +32,6 @@ Utilisez les informations contenues dans cet article pour ajouter des applicatio
 >Bien que les utilisateurs d’appareils macOS puissent supprimer certaines applications macOS intégrées, telles que Stocks et Maps, vous ne pouvez pas vous servir d’Intune pour redéployer ces applications. Si des utilisateurs finaux suppriment ces applications, ils doivent se rendre sur l’App Store et les réinstaller manuellement.
 >
 >Seuls les fichiers *.pkg* peuvent être utilisés pour charger des applications métier macOS à Microsoft Intune. La conversion d’autres formats, tels que *.dmg* vers *.pkg*, n’est pas prise en charge.
-
-Microsoft Intune permet aux applications métier macOS d’être déployées en mode **Obligatoire** ou **Disponible avec inscription**. Pour les utilisateurs finaux, les applications peuvent être déployées en mode **Disponible** à l’aide du Portail d’entreprise pour macOS ou du [site web Portail d’entreprise](https://portal.manage.microsoft.com).
 
 ## <a name="step-1---pre-process-your-software-setup-file"></a>Étape 1 : prétraiter votre fichier d’installation du logiciel
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905068"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225440"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Bien démarrer avec les stratégies de conformité des appareils dans Intune
 
@@ -88,7 +88,7 @@ Les conditions suivantes régissent l’utilisation des stratégies de conformit
 
 Quand un appareil est inscrit dans Intune, le processus d’inscription Azure AD démarre, puis met à jour les attributs de l’appareil dans Azure AD. Une information clé est l’état de conformité de l’appareil. Cet état de conformité est utilisé par les stratégies d’accès conditionnel pour bloquer ou autoriser l’accès à l’e-mail et à d’autres ressources de l’entreprise.
 
-Le [processus d’inscription AD Azure](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) fournit plus d’informations.
+Le [processus d’inscription AD Azure](https://docs.microsoft.com/azure/active-directory/device-management-introduction) fournit plus d’informations.
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>Affecter un état de profil de configuration d’appareil résultant
 
