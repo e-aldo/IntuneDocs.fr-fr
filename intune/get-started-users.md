@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021548"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949473"
 ---
 # <a name="get-started-managing-users"></a>Bien démarrer avec la gestion des utilisateurs
 
@@ -31,8 +31,10 @@ Prenez en compte toutes les personnes de votre organisation. Toutes les personne
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Choisissez **Tous les services** > **Intune**. Intune se trouve dans la section **Surveillance + Gestion**.
 3. Une fois que vous avez ouvert le volet **Microsoft Intune**, sélectionnez **Utilisateurs**. Dans la page **Tous les utilisateurs**, sélectionnez **+ Nouvel utilisateur**.
-4. Entrez les détails de l’utilisateur, tels que le **Nom** et le **Nom d’utilisateur**. La partie nom de domaine du nom d’utilisateur doit être le nom de domaine par défaut initial « contoso.onmicrosoft.com » ou un nom de domaine vérifié et non fédéré tel que « contoso.com ».
-5. Sous **Groupes**, choisissez le groupe de test auquel ajouter l’utilisateur.
+4. Entrez les détails de l’utilisateur, tels que le **Nom** et le **Nom d’utilisateur**. La partie du nom de domaine du nom d’utilisateur doit être l’un des domaines suivants :
+    - le nom de domaine par défaut initial (« contoso.onmicrosoft.com ») ;
+    - ou un nom de domaine vérifié non fédéré (comme « contoso.com »).
+5. Sous **Groupes**, choisissez [un groupe](get-started-groups.md) auquel ajouter l’utilisateur.
 6. Enregistrez le mot de passe d’utilisateur généré automatiquement afin de pouvoir l’utiliser pour vous connecter à un appareil de test. Vous devez donner ce mot de passe aux utilisateurs pour qu’ils puissent le remplacer par un mot de passe normal et facile à mémoriser.
 7. Dans le volet **Utilisateur**, sélectionnez **Créer**.
 

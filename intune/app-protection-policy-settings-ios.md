@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
-ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
+ms.openlocfilehash: 65827fe280535aa48d1d44eda9fd8482002c2c3b
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36882526"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028760"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Paramètres de stratégie de protection d’application iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,7 +75,7 @@ La stratégie de protection des applications Intune peut autoriser le transfert 
 | **Exiger une version minimale du Kit SDK de stratégie de protection d’application Intune** | Choisissez **Oui** pour exiger une version minimale du Kit SDK de stratégie de protection d’application Intune sur l’application à utiliser. L’accès de l’utilisateur est bloqué si la version du Kit SDK de stratégie de protection d’application Intune de l’application ne répond pas à la condition. <br> <br> Pour en savoir plus sur le Kit SDK de stratégie de protection d’application Intune, consultez [Présentation du Kit SDK d’application Intune](app-sdk.md). <br><br> Ce format de paramètre de stratégie prend en charge major.minor, major.minor.build, major.minor.build.revision. <br><br> **Remarque :** L’application doit obligatoirement avoir le SDK Intune version 7.0.1 ou ultérieure. | Non |
 
 > [!NOTE]
-> Pour en savoir plus sur comment plusieurs paramètres de protection de l’application Intune configurés dans la section Accès pour le même ensemble d’applications et d’utilisateurs fonctionnent sur iOS, consultez [Forum aux questions sur la gestion des applications mobiles Intune](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios).
+> Pour en savoir plus sur la façon dont plusieurs paramètres de protection d’application Intune configurés dans la section Accès pour le même ensemble d’applications et d’utilisateurs fonctionnent sur iOS, consultez [Forum aux questions sur la gestion des applications mobiles Intune](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios) et [Réinitialisation sélective des données à l’aide d’actions d’accès de stratégie de protection des applications dans Intune](app-protection-policies-access-actions.md).
 
 ##  <a name="add-ins-for-outlook-app"></a>Compléments d’application Outlook
 

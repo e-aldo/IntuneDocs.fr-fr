@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7c961be9789309fdea57d1a97073c4292b20149
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906071"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039384"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Mises à jour de l’interface utilisateur pour les applications utilisateur final Intune
 Découvrez les mises à jour apportées à l’interface utilisateur des applications présentées aux utilisateurs finaux dans cette version de Microsoft Intune. Comprendre ces mises à jour peut vous aider dans vos communications avec les utilisateurs et dans la mise à jour de la documentation personnalisée que vous avez créée pour accompagner votre déploiement. Cela peut aussi vous être utile pour mieux résoudre les problèmes auxquels font face vos utilisateurs s’ils font appel au support technique à l’aide du Portail d’entreprise.
@@ -29,7 +29,7 @@ Découvrez les mises à jour apportées à l’interface utilisateur des applica
 
 ## <a name="week-of-april-23-2018"></a>Semaine du 23 avril 2018
 #### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Affichage de navigation mis à jour dans l’application Portail d’entreprise pour Windows 10 <!-- 1195010 -->
-L’application Portail d’entreprise Intune pour Windows 10 a été mise à jour avec l’[affichage de navigation de Fluent Design System](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). Le long de l’application, vous remarquerez une liste verticale statique de toutes les pages de niveau supérieur. Cliquez sur n’importe quel lien pour afficher des pages et passer de l’une à l’autre rapidement. Il s’agit de la première d’une série de mises à jour que vous verrez dans le cadre de nos efforts constants pour créer une expérience plus adaptive, empathique et familière dans Intune. 
+L’application Portail d’entreprise Intune pour Windows 10 a été mise à jour avec l’[affichage de navigation de Fluent Design System](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Le long de l’application, vous remarquerez une liste verticale statique de toutes les pages de niveau supérieur. Cliquez sur n’importe quel lien pour afficher des pages et passer de l’une à l’autre rapidement. Il s’agit de la première d’une série de mises à jour que vous verrez dans le cadre de nos efforts constants pour créer une expérience plus adaptive, empathique et familière dans Intune. 
 
 ![Capture d’écran du tableau de bord de l’application Portail d’entreprise indiquant la vue de navigation Fluent](./media/1804_WindowsCP_Fluent_01.png)
 
@@ -199,9 +199,9 @@ L’accès conditionnel avec Intune prend en charge une authentification plus s�
 
 
 
-### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Les boîtes de dialogue Gestion des applications mobiles (MAM) Intune auront une interface modernisée <!-- 1199015 -->
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune auront une interface modernisée <!-- 1199015 -->
 
-Les boîtes de dialogue Gestion des applications mobiles (MAM) Intune seront mises à jour pour afficher une apparence plus actuelle. Ces boîtes de dialogue fonctionneront de la même façon qu’avec le précédent style.
+Les boîtes de dialogue Gestion des applications mobiles (GAM) Intune seront mises à jour pour afficher une apparence plus actuelle. Ces boîtes de dialogue fonctionneront de la même façon qu’avec le précédent style.
 
 **Expérience précédente**
 
@@ -429,7 +429,7 @@ Voici les moyens envisagés pour améliorer l’expérience utilisateur en metta
 
 ### <a name="ui-iwp"></a>Nouvelle mise à jour de l’expérience utilisateur pour le site web Portail d’entreprise <!--2000968-->
 
-Nous avons introduit une nouvelle expérience dans le site web Portail d’entreprise en avril, avec des mises à jour de l’interface utilisateur, des workflows simplifiés et des améliorations apportées à l’accessibilité. Cette nouvelle expérience inclut des améliorations demandées par les clients comme le partage d’applications et l’amélioration des performances globales pour plus de convivialité.
+Nous avons introduit une nouvelle expérience du site web Portail d’entreprise en août, avec des mises à jour de l’interface utilisateur, des workflows simplifiés et des améliorations apportées à l’accessibilité. Cette nouvelle expérience inclut des améliorations demandées par les clients comme le partage d’applications et l’amélioration des performances globales pour plus de convivialité.
 
 Nous avons ajouté de nouvelles fonctionnalités en nous basant sur les commentaires que nous ont envoyés des clients comme vous, afin d’améliorer considérablement les fonctionnalités existantes et leur mode d’utilisation :
 

@@ -15,19 +15,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 41f4a724a8450584a62629194e1a179372ec4b8e
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: a22aafdca8c049367d4c88d27a07a7c1825a01e3
+ms.sourcegitcommit: e6e93419f46e8647d4661eeca09eb1e2e460ad2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310553"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966916"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gérer des PC Windows en tant qu’ordinateurs via le logiciel client Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Vous pouvez utiliser Microsoft Intune pour gérer les PC Windows en tant qu’[appareils mobiles avec la gestion des appareils mobiles (MDM)](windows-enroll.md) ou en tant qu’ordinateurs avec le logiciel client Intune, comme décrit ci-dessous. Toutefois, Microsoft recommande aux clients d’[utiliser la solution de gestion MDM](windows-enroll.md) dans la mesure du possible.
+> Vous pouvez utiliser Microsoft Intune pour gérer les PC Windows comme [appareils mobiles avec la gestion des appareils mobiles (MDM)](windows-enroll.md) ou comme ordinateurs avec le logiciel client Intune, comme décrit ci-dessous. Cependant, Microsoft recommande aux clients [d’utiliser la solution de gestion MDM](windows-enroll.md) quand c’est possible.
 
 Intune fournit une solution complète aux organisations pour gérer les appareils mobiles. Intune peut gérer les PC Windows en tant qu’appareils mobiles en utilisant les fonctionnalités de gestion des appareils modernes intégrées au système d’exploitation Windows 10. Pour répondre aux besoins en matière de gestion de votre organisation, Intune peut également gérer les PC Windows en tant qu’ordinateurs via le logiciel client Intune. Cette méthode de gestion utilise des fonctionnalités de gestion des ordinateurs traditionnelles dans le système d’exploitation Windows hérité.
 
@@ -53,7 +53,7 @@ Intune prend en charge la gestion de 7 000 PC Windows au maximum en tant qu’
 
 |Condition requise|Plus d’informations|
 |---------------|--------------------|
-|Système d'exploitation | Appareil Windows exécutant Windows Vista ou ultérieur. </br></br>**Les éditions familiales ne sont pas prises en charge.**|
+|Système d'exploitation | Appareil Windows exécutant Windows 7 SP1 ou ultérieur. </br></br>**Les éditions familiales ne sont pas prises en charge.**|
 |Autorisations administratives|Le compte qui installe le logiciel client doit disposer des autorisations d’administrateur local sur cet ordinateur.|
 |Windows Installer 3.1|Le PC doit disposer de Windows Installer 3.1 au minimum.<br /><br />Pour afficher la version de Windows Installer sur un PC :<br /><br />  Sur le PC, cliquez avec le bouton droit sur **%windir%\System32\msiexec.exe**, puis cliquez sur **Propriétés**.<br /><br />Vous pouvez télécharger la dernière version de Windows Installer à partir de [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) sur le site web Microsoft Developer Network.|
 |Supprimer les logiciels clients incompatibles|Avant d’installer le logiciel client Intune, désinstallez tout logiciel client Configuration Manager, Operations Manager, Operations Management Suite et Service Manager du PC.|

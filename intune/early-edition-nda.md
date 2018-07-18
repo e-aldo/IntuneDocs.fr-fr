@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906020"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949490"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Édition préliminaire pour Microsoft Intune - Juillet 2018
 
@@ -40,6 +40,9 @@ Cette page est mise à jour périodiquement. Consultez-la régulièrement pour s
 ## <a name="intune-in-the-azure-portal"></a>Intune dans le portail Azure
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Nouvelles opportunités de synchronisation dans l’application Portail d’entreprise pour Windows <!-- 2683177 -->
+L’application Portail d’entreprise pour Windows ajoute une action de synchronisation d’appareils à la barre des tâches Windows et aux listes de raccourcis du menu Démarrer. Cliquez sur l’un de ces éléments pour synchroniser rapidement vos appareils et accéder aux ressources d’entreprise.  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Réinitialiser les codes secrets des appareils à partir de l’application Portail d’entreprise pour Windows 10 <!-- 2101282 --> 
 Vos employés seront bientôt en mesure de réinitialiser le code PIN ou le code secret de leur appareil directement de l’application Portail d’entreprise pour Windows 10. Cette fonctionnalité sera disponible sur les appareils locaux et distants gérés par Intune qui prennent en charge les réinitialisations de codes secrets. Selon le type d’appareil, les demandes pour un appareil distant supprimeront le code secret actuel de l’appareil ou créeront un code secret temporaire. Les utilisateurs qui demanderont une réinitialisation pour un appareil local seront redirigés vers l’application des paramètres de l’appareil.  
