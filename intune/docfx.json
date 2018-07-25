@@ -30,6 +30,7 @@
     "overwrite": [],
     "externalReference": [],
 "globalMetadata": {
+      "bilingual_type": "hover over",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
       "product_feedback_displaytext" : "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
