@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015606"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117852"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Envoyer des journaux au support technique de votre entreprise via un câble USB
 
@@ -35,7 +35,7 @@ Si vous recevez une erreur pendant que vous utilisez l’application Portail d�
 
 2. Connectez votre appareil à votre ordinateur avec le câble USB. Il s’agit généralement du câble utilisé pour charger votre périphérique dans une prise murale.
 
-3. Sur l’ordinateur, recherchez un répertoire portant le nom de votre appareil. Dans ce répertoire, recherchez <strong>Appareil Android\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>.
+3. Sur l’ordinateur, recherchez un répertoire portant le nom de votre appareil. Dans ce répertoire, recherchez <strong>Appareil Android\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>.
 
 4. Sélectionnez les fichiers et joignez-les à un e-mail. Envoyez cet e-mail au support technique de votre entreprise.
 

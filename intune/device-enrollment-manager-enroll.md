@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905221"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203218"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscrire des appareils avec un compte de gestionnaire d’inscription d’appareil
 
@@ -56,7 +56,7 @@ Les appareils inscrits avec un compte de gestionnaire d’inscription d’appare
   - (iOS uniquement) Si vous utilisez le gestionnaire d’inscription d’appareil pour inscrire des appareils iOS, vous ne pouvez pas utiliser Apple Configurator, Apple School Manager (ASM) ou le programme d’inscription des appareils Apple pour inscrire des appareils.
   - (Android uniquement) Il existe une limite quant à la quantité d’appareils avec profil professionnel Android qui peuvent être inscrits avec un même compte DEM. Vous pouvez inscrire un maximum de 10 appareils de profil professionnel Android par compte DEM. Cette limitation ne s’applique pas à l’inscription Android héritée.
   - Les appareils peuvent installer des applications VPP s’ils ont des licences d’appareil.
-  - Chaque appareil nécessite une licence d’appareil. Apprenez-en davantage sur les [licences utilisateur et d’appareil](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
+  - Vous n’avez pas besoin d’une licence d’appareil Intune pour utiliser DEM. Apprenez-en davantage sur les [licences utilisateur et d’appareil](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]

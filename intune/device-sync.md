@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833363"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117869"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Synchroniser des appareils pour obtenir les stratégies et les actions les plus récentes avec Intune
 
@@ -43,6 +43,7 @@ L’action d’appareil **Synchroniser** force l’appareil sélectionné à s�
 4. Dans la liste des appareils que vous gérez, sélectionnez un appareil, sélectionnez **Plus**, puis **Synchroniser**.
 5. Pour confirmer, sélectionnez **Oui**.
 
+Pour voir l’état de l’action de synchronisation, choisissez **Appareils** > **Actions de l’appareil**.
 
 ## <a name="retryable-error-codes"></a>Codes d’erreur renouvelable
 
@@ -65,4 +66,5 @@ Quand un administrateur exécute l’action d’appareil **Synchroniser**, les a
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Pour voir l’état de l’action de synchronisation, sélectionnez **Actions de l’appareil**. 
+Vous pouvez [consulter les informations](device-inventory.md) de l’appareil.
+ 

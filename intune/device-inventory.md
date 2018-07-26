@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051604"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117920"
 ---
 # <a name="see-device-details-in-intune"></a>Consultez les détails de l’appareil dans Intune
 
@@ -34,7 +34,7 @@ Cet article vous explique comment afficher tous les appareils, ainsi que leurs p
 2. Sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
 3. Sélectionnez **Appareils** > **Tous les appareils** > sélectionnez l’un des appareils listés pour afficher les détails correspondants :
 
-   - **Vue d’ensemble** permet d’afficher le nom de l’appareil et de lister certaines de ses propriétés clés, notamment s’il s’agit d’un appareil BYOD (« Apportez votre propre appareil »), la date/heure de son enregistrement, etc. Sélectionnez **Plus** pour effectuer d’autres actions :
+   - **Vue d’ensemble** permet d’afficher le nom de l’appareil et de lister certaines de ses propriétés clés, notamment s’il s’agit d’un appareil BYOD (« Apportez votre propre appareil »), la date/heure de son enregistrement, etc. Sélectionnez **Plus** pour :
      - Supprimer les données d’entreprise
      - Supprimer l’appareil
      - Verrouiller l’appareil à distance
@@ -57,6 +57,49 @@ Intune collecte une liste des applications uniquement sur les appareils apparten
 |iOS|Uniquement les applications gérées|Toutes les applications installées sur l’appareil|
 |macOS|Toutes les applications installées sur l’appareil|Toutes les applications installées sur l’appareil|  
 |Android|Uniquement les applications gérées|Toutes les applications installées sur l’appareil|  
+
+## <a name="hardware-device-details"></a>Informations sur les appareils matériels
+
+### <a name="windows-and-ios-device-details"></a>Informations sur les appareils Windows et iOS :
+|Détail|Description|  
+|--------------|----------------------|  
+|Nom|Nom de l’appareil|
+|Nom de la gestion|Nom de l’appareil utilisé uniquement dans la console. Si vous changez ce nom, celui-ci ne change pas sur l’appareil.|
+|UDID|Identificateur unique de l’appareil|
+|ID d’appareil Intune|GUID qui identifie de façon unique l’appareil|
+|Numéro de série|Numéro de série de l’appareil attribué par le fabricant|
+|Appareil partagé|Si l’option **Oui** est sélectionnée, l’appareil est partagé par plusieurs utilisateurs.|
+|Inscription approuvée par l’utilisateur|Si l’option **Oui** est sélectionnée, l’appareil dispose d’une inscription approuvée par l’utilisateur, qui permet aux administrateurs de gérer certains paramètres de sécurité.|
+|Système d'exploitation|Système d’exploitation utilisé sur l’appareil.|
+|Version du système d'exploitation|Version du système d’exploitation de l’appareil.|
+|Langue du système d’exploitation|Langue définie dans le système d’exploitation de l’appareil|
+|Espace de stockage total|Espace de stockage total sur l’appareil (en Go).|
+|Espace de stockage libre|Espace de stockage non utilisé sur l’appareil (en Go)|
+
+
+### <a name="windows-ios-and-macos-device-details"></a>Informations sur les appareils Windows, iOS et macOS
+|Détail|Description|  
+|--------------|----------------------|  
+|IMEI|IMEI (International Mobile Equipment Identity) de l’appareil|
+|MEID|MEID (Mobile Equipment Identifier) de l’appareil|
+|Fabricant|Fabricant de l’appareil|
+|Modèle|Modèle de l’appareil|
+|Numéro de téléphone|Numéro de téléphone attribué à l’appareil.|
+|Opérateur de l’abonné|Opérateur sans fil de l’appareil|
+|Technologie mobile|Système radio utilisé par l’appareil|
+|Adresse MAC du réseau Wi-Fi|Adresse MAC de l’appareil|
+|ICCID|Identifiant ICCID, qui correspond au numéro d’identification unique d’une carte SIM|
+|Date d’inscription|Date et heure de l’inscription de l’appareil dans Intune|
+|Dernier contact|Date et heure de dernière connexion de l’appareil à Intune|
+|Code de contournement du verrou d’activation|Code qui peut être utilisé pour contourner le verrou d’activation|
+|Inscrit à AAD|Si l’option **Oui** est sélectionnée, l’appareil est inscrit auprès d’Azure Active Directory.|
+|Compatibilité|État de conformité de l’appareil.|
+|Avec activation d’EAS|Si l’option **Oui** est sélectionnée, l’appareil est synchronisé avec une boîte aux lettres Exchange.|
+|ID d’activation EAS|Identificateur Exchange ActiveSync de l’appareil|
+|Supervisé|Si l’option **Oui** est sélectionnée, les administrateurs ont un meilleur contrôle sur l’appareil.|
+|Chiffré|Si l’option **Oui** est sélectionnée, les données stockées sur l’appareil sont chiffrées.|
+
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Consultez ce que vous pouvez faire d’autre pour [gérer vos appareils](device-management.md) avec Intune.

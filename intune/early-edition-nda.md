@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: 3aed8fcefd640e5b7df46fe1ef8cd1c973a68044
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949490"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212135"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Édition préliminaire pour Microsoft Intune - Juillet 2018
 
@@ -79,8 +79,8 @@ Pour créer le profil, ouvrez **Configuration de l’appareil** > **Profils** > 
 
 S’applique à Windows 10 et versions ultérieures.
 
-###  <a name="windows-line-of-business-lob-apps-file-extension-rename----1884873---"></a>Renommage des extensions de fichier des applications métier Windows <!-- 1884873 -->
-Les extensions de fichier des applications métier Windows *.appx* et *.appxbundle* vont être renommées *.msix* et *.msixbundle*. Vous pouvez ajouter une application dans Microsoft Intune en sélectionnant **Applications mobiles** > **Applications** > **Ajouter**. Le volet **Ajouter une application** s’affiche et vous permet de sélectionner le **Type d’application**. Pour les applications métier Windows, sélectionnez **Métier** comme type d’application, sélectionnez **Fichier de package d’application**, puis entrez un fichier d’installation avec l’extension appropriée.
+###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Extensions de fichier des applications métier Windows <!-- 1884873 -->
+Les extensions de fichier des applications métier Windows sont désormais *.msi*, *.appx*, *.appxbundle*, *.msix* et *.msixbundle*. Vous pouvez ajouter une application dans Microsoft Intune en sélectionnant **Applications mobiles** > **Applications** > **Ajouter**. Le volet **Ajouter une application** s’affiche et vous permet de sélectionner le **Type d’application**. Pour les applications métier Windows, sélectionnez **Métier** comme type d’application, sélectionnez **Fichier de package d’application**, puis entrez un fichier d’installation avec l’extension appropriée.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Ajout automatique du package de configuration de Windows Defender ATP au profil de configuration <!-- 2144658 -->
 Actuellement, quand vous utilisez des appareils [ATP (Advanced Threat Protection) et d’intégration](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) dans Intune, vous téléchargez un package de configuration et vous l’ajoutez à votre profil de configuration. Dans une prochaine mise à jour, Intune prendra automatiquement le package dans le Centre de sécurité Windows Defender et l’ajoutera à votre profil.
