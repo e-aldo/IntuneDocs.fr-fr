@@ -15,24 +15,24 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909131"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212033"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurer l’inscription d’appareils kiosque d’entreprise Android
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android prend en charge les appareils kiosque avec son ensemble de solutions COSU (Corporate-Owned, Single-Use). Ces appareils sont destinés à un usage unique, tel que la signalisation numérique, l’impression de ticket ou la gestion des stocks, pour n’en nommer que quelques-uns. Les administrateurs verrouillent l’utilisation d’un appareil pour un ensemble limité d’applications et de liens web. Les utilisateurs ne peuvent pas non plus ajouter d’autres applications ou effectuer d’autres actions sur l’appareil.
+Android prend en charge les appareils kiosque avec son ensemble de solutions appartenant à l’entreprise et à usage unique. Ces appareils sont destinés à un usage unique, tel que la signalisation numérique, l’impression de ticket ou la gestion des stocks, pour n’en nommer que quelques-uns. Les administrateurs verrouillent l’utilisation d’un appareil pour un ensemble limité d’applications et de liens web. Les utilisateurs ne peuvent pas non plus ajouter d’autres applications ou effectuer d’autres actions sur l’appareil.
 
 Intune vous aide à déployer des applications et des paramètres sur des appareils kiosque Android. Pour plus d’informations sur Android Entreprise, consultez [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Les appareils que vous gérez de cette façon sont inscrits dans Intune sans compte d’utilisateur et ne sont associés à aucun utilisateur final. Ils ne sont pas conçus pour les applications à usage personnel, ni pour celles qui exigent un grand nombre de données de compte propres à l’utilisateur, comme Outlook ou Gmail.
 
-## <a name="device-requirements"></a>Exigences relatives aux appareils
+## <a name="device-requirements"></a>Exigences relatives aux périphériques
 
 Les appareils doivent respecter les conditions requises suivantes pour être gérés en tant qu’appareils kiosque d’entreprise Android :
 
