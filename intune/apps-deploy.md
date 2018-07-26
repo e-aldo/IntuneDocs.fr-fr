@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6ffd31e35637cf722fc2af486be4bd9101c1db
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993749"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164567"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Attribuer des applications à des groupes avec Microsoft Intune
 
@@ -89,21 +89,21 @@ Parfois, la même application est attribuée à plusieurs groupes, mais avec des
 |Utilisateur disponible|Utilisateur non disponible|Non disponible|
 |Utilisateur disponible|Désinstallation utilisateur|Désinstaller|
 |Utilisateur non disponible|Désinstallation utilisateur|Désinstaller
-|Utilisateur obligatoire|Appareil obligatoire|Toutes deux existent, la passerelle traite Obligatoire
-|Utilisateur obligatoire|Désinstallation appareil|Toutes deux existent, la passerelle résout Obligatoire
-|Utilisateur disponible|Appareil obligatoire|Toutes deux existent, la passerelle résout Obligatoire (Obligatoire et Disponible)
-|Utilisateur disponible|Désinstallation appareil|Toutes deux existent, la passerelle résout Disponible.<br><br>L’application apparaît dans le Portail d’entreprise.<br><br>Si l’application est déjà installée (en tant qu’application obligatoire avec intention précédente), elle est désinstallée.<br><br>Si l’utilisateur sélectionne **Installer à partir du Portail d’entreprise**, l’application est installée et l’intention de désinstallation n’est pas honorée.|
+|Utilisateur obligatoire|Appareil obligatoire|Toutes deux existent, Intune traite Obligatoire
+|Utilisateur obligatoire|Désinstallation appareil|Toutes deux existent, Intune résout Obligatoire
+|Utilisateur disponible|Appareil obligatoire|Toutes deux existent, Intune résout Obligatoire (Obligatoire et Disponible)
+|Utilisateur disponible|Désinstallation appareil|Toutes deux existent, Intune résout Disponible.<br><br>L’application apparaît dans le Portail d’entreprise.<br><br>Si l’application est déjà installée (en tant qu’application obligatoire avec intention précédente), elle est désinstallée.<br><br>Si l’utilisateur sélectionne **Installer à partir du Portail d’entreprise**, l’application est installée et l’intention de désinstallation n’est pas honorée.|
 |Utilisateur non disponible|Appareil obligatoire|Obligatoire|
 |Utilisateur non disponible|Désinstallation appareil|Désinstaller|
-|Désinstallation utilisateur|Appareil obligatoire|Toutes deux existent, la passerelle résout Obligatoire|
-|Désinstallation utilisateur|Désinstallation appareil|Toutes deux existent, la passerelle résout Désinstallation|
+|Désinstallation utilisateur|Appareil obligatoire|Toutes deux existent, Intune résout Obligatoire|
+|Désinstallation utilisateur|Désinstallation appareil|Toutes deux existent, Intune résout Désinstaller|
 |Appareil obligatoire|Désinstallation appareil|Obligatoire|
 |Utilisateur obligatoire et disponible|Utilisateur disponible|Obligatoire et disponible|
 |Utilisateur obligatoire et disponible|Désinstallation utilisateur|Obligatoire et disponible|
 |Utilisateur obligatoire et disponible|Utilisateur non disponible|Obligatoire et disponible|
 |Utilisateur obligatoire et disponible|Appareil obligatoire|Toutes deux existent, Obligatoire et Disponible
 |Utilisateur obligatoire et disponible|Appareil non disponible|Obligatoire et disponible|
-|Utilisateur obligatoire et disponible|Désinstallation appareil|Toutes deux existent, la passerelle résout Obligatoire (Obligatoire et Disponible)
+|Utilisateur obligatoire et disponible|Désinstallation appareil|Toutes deux existent, Intune résout Obligatoire (Obligatoire et Disponible)
 |Utilisateur non disponible|Appareil non disponible|Non disponible|
 |Utilisateur disponible|Appareil non disponible|Disponible|
 |Utilisateur obligatoire|Appareil non disponible|Obligatoire|
