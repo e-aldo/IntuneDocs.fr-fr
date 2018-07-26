@@ -182,8 +182,8 @@ Vous pouvez également cliquer sur **Importer** pour remplir la liste à partir 
 
 Dans la liste des applications affichées ou masquées, vous pouvez configurer une des listes suivantes (nécessite des appareils supervisés tournant sous iOS 9.3 ou version ultérieure).
 
-Liste **Applications masquées** : spécifiez une liste d’applications masquée aux utilisateurs. Les utilisateurs ne peuvent pas afficher ou lancer ces applications.
-Liste **Applications visibles** : spécifiez une liste d’applications que les utilisateurs peuvent voir et lancer. Aucune autre application ne peut être affichée ou lancée.
+- Liste **Applications masquées** : spécifiez une liste d’applications masquée aux utilisateurs. Les utilisateurs ne peuvent pas afficher ou lancer ces applications.
+- Liste **Applications visibles** : spécifiez une liste d’applications que les utilisateurs peuvent voir et lancer. Aucune autre application ne peut être affichée ou lancée.
 
 Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de votre choix, éventuellement l'éditeur de l'application, et l'URL de l'application dans l’App Store.
 
