@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a231adf4e1f5687bc88c8c9b15241d3f89e711d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905329"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321167"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>Paramètres de profil de messagerie pour les appareils iOS - Intune
 
@@ -44,13 +44,13 @@ Utilisez les paramètres de profil de messagerie pour configurer vos appareils e
 - **Attribut d’adresse e-mail d’AAD** : choisissez comment l’adresse e-mail de l’utilisateur est générée. Sélectionnez **Nom d’utilisateur principal** (`user1@contoso.com` ou `user1`) pour utiliser le nom principal complet comme adresse e-mail, ou **Adresse SMTP principale** (`user1@contoso.com`) pour utiliser l’adresse SMTP principale pour vous connecter à Exchange.
 - **Méthode d’authentification** : sélectionnez **Nom d’utilisateur et mot de passe** ou **Certificats** comme méthode d’authentification utilisée par le profil de messagerie. L’authentification multifacteur Azure n’est pas prise en charge.
   - Si vous avez sélectionné **Certificats**, sélectionnez un profil de certificat SCEP ou PKCS client que vous avez créé précédemment et qui sert à authentifier la connexion Exchange.
-- **SSL** : utilisez une communication SSL (Secure Sockets Layer) pour envoyer et recevoir des e-mails, et communiquer avec le serveur Exchange.
-- **S/MIME** : envoyez les sortants en utilisant la signature S/MIME.
-  - Si vous avez sélectionné **Certificat**, sélectionnez un profil de certificat PKCS que vous avez créé précédemment pour authentifier la connexion Exchange.
-- **Nombre d’e-mails à synchroniser** : sélectionnez le nombre de jours de messagerie à synchroniser. Vous pouvez aussi sélectionner **Illimité** pour synchroniser tous les messages disponibles.
-- **Autoriser le déplacement des messages vers d’autres comptes de messagerie** : permet aux utilisateurs de déplacer des e-mails entre les différents comptes configurés sur leur appareil.
-- **Autoriser l’envoi d’e-mails à partir d’applications tierces** : autorisez l’utilisateur à sélectionner ce profil comme compte par défaut pour l’envoi d’e-mails, et autorisez les applications tierces à ouvrir les e-mails dans l’application de messagerie native, par exemple pour y joindre des fichiers.
-- **Synchroniser les adresses de messagerie récemment utilisées** : permet aux utilisateurs de synchroniser la liste des adresses de messagerie qui ont été récemment utilisées sur l’appareil avec le serveur.
+- **SSL** : sélectionnez **Activer** pour utiliser une communication SSL (Secure Sockets Layer) afin d’envoyer et de recevoir des e-mails, et de communiquer avec le serveur Exchange.
+- **S/MIME** : sélectionnez **Activer S/MIME** pour envoyer des e-mails à l’aide de la signature S/MIME. Quand cette option est activée, vous pouvez également chiffrer les e-mails destinés aux destinataires qui peuvent recevoir du courrier électronique chiffré, et déchiffrer les e-mails reçus.
+  - Si vous avez sélectionné **Certificat**, sélectionnez un profil de certificat PKCS que vous avez créé précédemment pour authentifier la connexion Exchange et/ou chiffrer les échanges d’e-mails.
+- **Nombre d’e-mails à synchroniser** : sélectionnez le nombre de jours d’e-mails à synchroniser. Vous pouvez aussi sélectionner **Illimité** pour synchroniser tous les messages disponibles.
+- **Autoriser le déplacement des messages vers d’autres comptes de messagerie** : sélectionnez **Activer** pour permettre aux utilisateurs de déplacer des e-mails entre les différents comptes configurés sur leur appareil.
+- **Autoriser l’envoi d’e-mails à partir d’applications tierces** : sélectionnez **Activer** pour autoriser l’utilisateur à sélectionner ce profil comme compte par défaut pour l’envoi d’e-mails, et autoriser les applications tierces à ouvrir les e-mails dans l’application de messagerie native, par exemple pour y joindre des fichiers.
+- **Synchroniser les adresses de messagerie récemment utilisées** : sélectionnez **Activer** pour permettre aux utilisateurs de synchroniser la liste des adresses e-mail qui ont été récemment utilisées sur l’appareil avec le serveur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Configurer les paramètres de messagerie dans Intune](email-settings-configure.md)
