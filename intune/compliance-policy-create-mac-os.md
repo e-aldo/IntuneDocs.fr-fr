@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442574"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321439"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Ajouter une stratégie de conformité des appareils pour les appareils macOS avec Intune
 
@@ -83,6 +83,13 @@ Le tableau suivant décrit la gestion des paramètres non conformes quand une st
 ### <a name="encryption"></a>Chiffrement
 
 - **Chiffrement du stockage de données sur l’appareil** : choisissez **Exiger** pour chiffrer le stockage des données sur vos appareils.
+
+### <a name="device-security"></a>Sécurité du périphérique
+Le Pare-feu protège les appareils contre tout accès réseau non autorisé. Vous pouvez utiliser le Pare-feu afin de contrôler les connexions pour chaque application. 
+
+- **Pare-feu** : sélectionnez **Activer** pour protéger les appareils contre tout accès non autorisé. L’activation de cette fonctionnalité vous permet de gérer les connexions Internet entrantes et d’utiliser le mode furtif. L’option **Non configuré** (par défaut) laisse le Pare-feu désactivé, et le trafic réseau est autorisé (non bloqué).
+- **Connexions entrantes** : choisissez de **Bloquer** toutes les connexions réseau entrantes, à l’exception de celles nécessaires aux services Internet de base, par exemple DHCP, Bonjour et IPsec. Ce paramètre bloque également tous les services de partage, y compris le partage d’écran, l’accès à distance, le partage de musique iTunes, etc. L’option **Non configuré** (par défaut) autorise les connexions entrantes et les services de partage. 
+- **Mode furtif** : sélectionnez l’option **Activer** pour empêcher l’appareil de répondre aux demandes de sondage, qui peuvent provenir d’utilisateurs malveillants. Quand cette option est activée, l’appareil continue de répondre aux requêtes entrantes des applications autorisées. L’option **Non configuré** (par défaut) laisse le mode furtif désactivé.
 
 ## <a name="assign-user-groups"></a>Affectation de groupes d’utilisateurs
 

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803837"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321218"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Paramètres de restriction des appareils pour Windows 10 (et versions ultérieures) dans Intune
 Cet article décrit tous les paramètres des restrictions d’appareils de Microsoft Intune que vous pouvez configurer pour les appareils exécutant Windows 10.
@@ -252,7 +252,7 @@ Vous pouvez ajouter des applications qui doivent avoir un comportement de confid
 
 ## <a name="kiosk-preview---obsolete"></a>Plein écran (préversion) - Obsolète
 
-Ces paramètres sont déplacés et ils seront supprimés dans une prochaine version. Pour utiliser les nouveaux paramètres, consultez [Paramètres de plein écran dans Windows 10 et ultérieur](kiosk-settings.md).
+Ces paramètres sont en lecture seule et ne peuvent pas être modifiés. Pour configure le mode Plein écran, consultez [Paramètres Kiosque dans Windows 10 et versions ultérieures](kiosk-settings.md).
 
 Un appareil plein écran exécute généralement une application ou un ensemble spécifique d’applications. Les utilisateurs ne peuvent pas accéder aux fonctionnalités ou fonctions sur l’appareil en dehors de toutes les applications plein écran.
 

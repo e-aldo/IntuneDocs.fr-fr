@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905748"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268870"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Ajouter des stratégies de configuration d’applications pour les appareils Android gérés
 
@@ -40,7 +40,7 @@ Utilisez des stratégies de configuration des applications dans Microsoft Intune
     - **Description** : description du profil qui s’affiche dans le portail Azure.
     - **Type d’inscription de l’appareil** : choisissez **Appareils gérés**.
 6. Sélectionnez **Android** comme **Plateforme**.
-7. Sélectionnez **Application associée** pour choisir l’application pour laquelle vous souhaitez définir une stratégie de configuration d’applications. Sélectionnez parmi la liste d’applications avec profil professionnel Android que vous avez approuvées et synchronisées avec Intune.
+7. Sélectionnez **Application associée** pour choisir l’application pour laquelle vous souhaitez définir une stratégie de configuration d’applications. Sélectionnez-la dans la liste d’applications avec profil professionnel Android que vous avez approuvées et synchronisées avec Intune.
 8. Sélectionnez **Autorisations**. Vous pouvez définir des configurations à l’aide de :
     - [Concepteur de configuration](#Use-the-configuration-designer)
     - [Éditeur JSON](#Enter-the-JSON-editor)

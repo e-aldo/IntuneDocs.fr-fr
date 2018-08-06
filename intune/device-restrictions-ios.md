@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803820"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321490"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Paramètres de restriction des appareils iOS de Microsoft Intune
 
@@ -259,54 +259,8 @@ Une fois que vous spécifiez le nom de chaque application et l’ID d’ensemble
 - **Importer** : importez un fichier .csv contenant une liste de noms d’application et leurs ID d’ensemble associés.
 - **Exporter** : exportez les noms d’application et les ID d’ensemble associés que vous avez configurés dans un fichier .csv.
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Référence à un ID d’ensemble pour les applications iOS intégrées
-
-Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées parmi les plus courantes. Pour rechercher l’ID d’ensemble d’autres applications, contactez votre éditeur de logiciels.
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>Plein écran (supervisé uniquement)
--   **Application s’exécutant en mode Plein écran** : choisissez **Application gérée** pour sélectionner une application que vous avez ajoutée à Intune, ou **Application de Store** pour spécifier l’URL d’une application dans le Store. Aucune autre application ne pourra s'exécuter sur l'appareil. Pour obtenir de l’aide, consultez la section « Comment spécifier des URL d’App Stores » de la présente rubrique.
+-   **Application gérée qui s’exécute en mode plein écran** : choisissez **Application gérée** pour sélectionner une application que vous avez ajoutée à Intune, **Application de Store** pour spécifier l’URL d’une application dans le Store, ou **Application intégrée** pour spécifier l’ID d’offre groupée de l’application intégrée. Pour plus d’informations, consultez [Référence à un ID d’ensemble pour les applications iOS intégrées](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) et [Comment spécifier l’URL vers une application dans l’App Store](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1).
     -   **Assistance tactile** : active ou désactive le paramètre d’accessibilité **Assistance tactile**, qui permet à l’utilisateur d’effectuer des mouvements à l’écran pouvant être difficiles à effectuer.
     -   **Inverser les couleurs** - Active ou désactive le paramètre d’accessibilité Inverser les couleurs qui ajuste l’affichage pour aider les utilisateurs ayant des troubles visuels.
     -   **Audio mono** : active ou désactive le paramètre d’accessibilité Audio mono.
@@ -327,6 +281,51 @@ Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées
 >[!NOTE]
 > Avant de pouvoir configurer un appareil iOS pour le mode plein écran, vous devez utiliser l’outil Apple Configurator ou le Programme d’inscription des appareils Apple pour mettre l’appareil en mode supervisé. Pour en savoir plus sur l’outil Apple Configurator, consultez votre documentation Apple.
 >Si l’application iOS que vous spécifiez est installée après l’attribution du profil, l’appareil ne bascule en mode plein écran qu’après son redémarrage.
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Référence à un ID d’ensemble pour les applications iOS intégrées
+
+Cette liste affiche l’ID d’ensemble de quelques applications iOS intégrées parmi les plus courantes. Pour rechercher l’ID d’ensemble d’autres applications, contactez votre éditeur de logiciels.
+
+| ID d’offre groupée                   | Nom de l’application     | Éditeur |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | Calculatrice   | Apple     |
+| com.apple.mobilecal         | Calendrier     | Apple     |
+| com.apple.camera            | Appareil photo       | Apple     |
+| com.apple.mobiletimer       | Horloge        | Apple     |
+| com.apple.compass           | Boussole      | Apple     |
+| com.apple.MobileAddressBook | Contacts     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | Trouver des amis | Apple     |
+| com.apple.mobileme.fmip1    | Trouver un iPhone  | Apple     |
+| com.apple.gamecenter        | Centre de jeux  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Intégrité       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | Messages     | Apple     |
+| com.apple.Music             | Musique        | Apple     |
+| com.apple.news              | Actualités         | Apple     |
+| com.apple.mobilenotes       | Remarques        | Apple     |
+| com.apple.Numbers           | Nombres      | Apple     |
+| com.apple.Pages             | Pages        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Photo       | Apple     |
+| com.apple.podcasts          | Podcasts     | Apple     |
+| com.apple.reminders         | Rappels    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | Paramètres     | Apple     |
+| com.apple.stocks            | Bourse       | Apple     |
+| com.apple.tips              | Conseils         | Apple     |
+| com.apple.videos            | Vidéos       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Portefeuille       | Apple     |
+| com.apple.Bridge            | Regardez        | Apple     |
+| com.apple.weather           | Météo      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Supervisé (en mode supervisé uniquement)** : spécifier si le navigateur Safari peut être utilisé sur l’appareil.

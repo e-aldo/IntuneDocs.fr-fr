@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224933"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254533"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Préparer des applications iOS pour les stratégies de protection des applications avec l’outil de création de package de restrictions d’application Intune
 
@@ -339,7 +339,7 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des *droits* da
 
     b.  Activez les fonctionnalités appropriées. Pour obtenir des informations détaillées sur chaque fonctionnalité et pour savoir comment déterminer les valeurs correctes, consultez [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) dans la bibliothèque du développeur iOS.
 
-    c.  Notez les ID que vous avez créés pendant le processus.
+    c.  Notez les ID que vous avez créés pendant le processus. Il peuvent également être appelés valeurs `AppIdentifierPrefix`.
 
     d.  Générer et signez votre application à encapsuler.
 
@@ -349,7 +349,7 @@ Avant d’encapsuler votre application, vous pouvez lui accorder des *droits* da
 
     b.  Créez un profil de configuration pour votre application. Pour obtenir des instructions, consultez la page [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Comment obtenir la configuration requise pour Intune App Wrapping Tool for iOS).
 
-    c.  Dans votre profil de configuration, activez les mêmes droits que ceux que vous avez dans votre application. Vous devez fournir les mêmes ID que ceux que vous avez spécifiés pendant le développement de votre application.
+    c.  Dans votre profil de configuration, activez les mêmes droits que ceux que vous avez dans votre application. Vous devez fournir les mêmes ID (valeurs `AppIdentifierPrefix`) que ceux que vous avez spécifiés pendant le développement de votre application. 
 
     d.  Terminez l’Assistant de configuration de profil, puis téléchargez votre fichier.
 

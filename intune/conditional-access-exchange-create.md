@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905527"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323240"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Créer une stratégie d’accès conditionnel pour Exchange sur site et Exchange Online Dedicated hérité
 
@@ -63,7 +63,7 @@ Avant de configurer l’accès conditionnel, vérifiez les éléments suivants :
 - Windows Phone 8.1 et versions ultérieures
 - Application de messagerie native sur iOS.
 - Clients de messagerie EAS, comme Gmail sur Android 4 ou ultérieur.
-- Clients de messagerie EAS sur les **appareils avec profil professionnel Android :** seules les applications **Gmail** et **Nine Work** dans le **profil professionnel** sont prises en charge sur les appareils avec profil professionnel Android. Pour que l’accès conditionnel fonctionne avec les profils professionnels Android, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work, et également déployer ces applications comme installation obligatoire.
+- Clients de messagerie EAS sur les **appareils avec profil professionnel Android :** seules les applications **Gmail** et **Nine Work for Android Enterprise** dans le **profil professionnel** sont prises en charge sur les appareils avec profil professionnel Android. Pour que l’accès conditionnel fonctionne avec les profils professionnels Android, vous devez déployer un profil de messagerie pour l’application Gmail ou Nine Work for Android Enterprise, et également déployer ces applications comme installation obligatoire.
 
 > [!NOTE]
 > L’application Microsoft Outlook pour Android et iOS n’est pas prise en charge. 

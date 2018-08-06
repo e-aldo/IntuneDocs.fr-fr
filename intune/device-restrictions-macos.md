@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69ea07e8d0a5d4a54abe7d1e592b3930d4e82354
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 26d5af15086e422685c7c58c5b8a7d351f9eb854
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830214"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321388"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Paramètres de restriction d’appareil macOS dans Microsoft Intune
 
@@ -50,5 +50,5 @@ Pour configurer la liste, cliquez sur **Ajouter**, puis spécifiez un nom de vot
 
 ### <a name="unmarked-email-domains"></a>Domaines d’e-mail non marqués
 
-Dans le champ **URL de domaine d’e-mail**, ajoutez une ou plusieurs URL à la liste. Quand les utilisateurs reçoivent un e-mail provenant d’un domaine autre que ceux que vous avez configurés, l’e-mail est marqué comme non approuvé dans l’application Mail iOS.
+Dans le champ **URL de domaine d’e-mail**, ajoutez une ou plusieurs URL à la liste. Quand les utilisateurs reçoivent un e-mail provenant d’un domaine autre que ceux que vous avez configurés, l’e-mail est marqué comme non approuvé dans l’application MacOS Mail.
 

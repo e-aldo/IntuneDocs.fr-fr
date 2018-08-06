@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869370"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321473"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Assigner des applications Office 365 à des appareils Windows 10 à l’aide de Microsoft Intune
 
@@ -60,9 +60,6 @@ Sélectionnez les applications Office à affecter aux appareils.
     Vous pouvez également installer des applications pour Microsoft Project Online Desktop Client et Microsoft Visio Pro pour Office 365, si vous disposez des licences appropriées.
 3. Sélectionnez **OK**.
 
->[!IMPORTANT]
-> Une fois la suite d’applications créée, vous ne pouvez plus modifier ses propriétés. Pour configurer des propriétés différentes, supprimez la suite d’applications et créez-en une autre.
-
 ## <a name="configure-app-information"></a>Configurer les informations de l’application
 
 Dans cette étape, indiquez des informations sur la suite d’applications. Ces informations vous permettent d’identifier la suite d’applications dans Intune. Elles aident aussi les utilisateurs à trouver la suite d’applications dans le portail d’entreprise.
@@ -95,11 +92,8 @@ Dans cette étape, configurez les options d’installation de la suite d’appli
         - **Semestriel**
         - **Semestriel (ciblé)**
     - **Accepter automatiquement le contrat de licence utilisateur final de l’application** : sélectionnez cette option si les utilisateurs finaux ne sont pas tenus d’accepter le contrat de licence. Intune accepte alors automatiquement le contrat.
-    - **Utiliser l’activation d’ordinateurs partagés** : sélectionnez cette option quand plusieurs utilisateurs partagent un ordinateur. Pour plus d’informations, consultez Vue d’ensemble de l’activation d’ordinateurs partagés pour Office 365.
+    - **Utiliser l’activation d’ordinateurs partagés** : sélectionnez cette option quand plusieurs utilisateurs partagent un ordinateur. Pour plus d’informations, consultez [Vue d’ensemble de l’activation d’ordinateurs partagés pour Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Langues** : Office est automatiquement installé dans toute langue prise en charge installée avec Windows sur l’appareil de l’utilisateur final. Sélectionnez cette option pour installer des langues supplémentaires avec la suite d’applications.
-
->[!IMPORTANT]
-> Une fois la suite d’applications créée, vous ne pouvez plus modifier ses propriétés. Pour configurer des propriétés différentes, supprimez la suite d’applications et créez-en une autre.
 
 ## <a name="finish-up"></a>Terminer
 
@@ -120,7 +114,7 @@ Les tableaux suivants répertorient les codes d’erreur fréquemment rencontré
 |997|WIP|En cours d'installation|
 |0|Après l’installation|Installation réussie|    
 |1603 (ERROR_INSTALL_FAILURE)|-|Échec de la vérification des prérequis, par exemple :<ul><li>SxS (tentative d’installation alors que la version MSI 2016 est installée)</li><li>Non-concordance des versions</li><li>Autres</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|Tentative de désinstallation alors qu’aucune installation Office « Démarrer en un clic » n’est présente sur l’ordinateur|     
+|0x8000ffff (E_UNEXPECTED)|-|Tentative de désinstallation alors qu’aucune installation Office « Démarrer en un clic » n’est présente sur l’ordinateur|     
 |17002|-|Échec de l’exécution du scénario (installation). Raisons possibles :<ul><li>Installation annulée par l’utilisateur</li><li>Installation annulée par une autre installation</li><li>Espace disque insuffisant durant l’installation</li><li>ID de langue inconnu</li></ul>|
 |17004|-|Références SKU inconnues|   
 
@@ -130,14 +124,14 @@ Les tableaux suivants répertorient les codes d’erreur fréquemment rencontré
 |||||
 |-|-|-|-|
 |Scénario|Code de retour|Interface utilisateur du service|Remarque|
-|Tentative de désinstallation en l’absence d’une installation Office « Démarrer en un clic »|-2147418113, 0x8000ffff ou 2147549183|Code d’erreur : 30088-1008<br>Code d’erreur : 30125-1011 (404)|Outil Déploiement d’Office|
+|Tentative de désinstallation en l’absence d’une installation Office « Démarrer en un clic »|-2147418113, 0x8000ffff ou 2147549183|Code d’erreur : 30088-1008<br>Code d’erreur : 30125-1011 (404)|Outil Déploiement d’Office|
 |Installation alors qu’une version MSI est installée|1603|-|Outil Déploiement d’Office|
-|Installation annulée par l’utilisateur ou par une autre installation|17002|-|Office « Démarrer en un clic »|
+|Installation annulée par l’utilisateur ou par une autre installation|17002|-|Démarrer en un clic|
 |Tentative de désinstallation d’une version 64 bits sur un appareil sur lequel la version 32 bits est installée.|1603|-|Code de retour de l’outil Déploiement d’Office|
-|Tentative d’installation d’une référence SKU inconnue (il ne s’agit pas d’un cas d’usage légitime pour Office CSP puisque seules des références SKU valides doivent être passées)|17004|-|Office « Démarrer en un clic »|
-|Espace insuffisant|17002|-|Office « Démarrer en un clic »|
-|Échec du démarrage du client Office « Démarrer en un clic » (inattendu)|17000|-|Office « Démarrer en un clic »|
-|Échec de la mise en file d’attente du scénario par le client Office « Démarrer en un clic » (inattendu)|17001|-|Office « Démarrer en un clic »|
+|Tentative d’installation d’une référence SKU inconnue (il ne s’agit pas d’un cas d’usage légitime pour Office CSP puisque seules des références SKU valides doivent être passées)|17004|-|Démarrer en un clic|
+|Espace insuffisant|17002|-|Démarrer en un clic|
+|Échec du démarrage du client Office « Démarrer en un clic » (inattendu)|17000|-|Démarrer en un clic|
+|Échec de la mise en file d’attente du scénario par le client Office « Démarrer en un clic » (inattendu)|17001|-|Démarrer en un clic|
 
 ## <a name="next-steps"></a>Étapes suivantes
 

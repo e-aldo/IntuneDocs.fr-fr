@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321674"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Paramètres de restriction d’appareil pour Windows Holographic for Business dans Intune
 
@@ -68,26 +69,28 @@ Les paramètres de restriction d’appareil suivants sont pris en charge sur les
 
 - **Modification de l’heure système** - Empêche l’utilisateur final de modifier la date et l’heure de l’appareil.
 
-## <a name="kiosk"></a>Kiosque
+## <a name="kiosk---obsolete"></a>Plein écran - obsolète
 
-Un kiosque exécute généralement une application spécifique. Les utilisateurs ne peuvent pas accéder aux fonctionnalités ou fonctions sur l’appareil en dehors de l’application du kiosque.
+Ces paramètres sont en lecture seule et ne peuvent pas être modifiés. Pour configurer le mode Plein écran, consultez [Paramètres kiosque](kiosk-settings.md#windows-holographic-for-business).
 
-- **Mode kiosque** : Identifie le type de mode kiosque pris en charge par la stratégie. Les options sont les suivantes :
+Un appareil plein écran exécute généralement une application spécifique. Les utilisateurs ne peuvent pas accéder aux fonctionnalités ou fonctions sur l’appareil en dehors de l’application plein écran.
 
-  - **Non configuré** (par défaut) : la stratégie n’active pas de mode kiosque. 
-  - **Kiosque à application unique** : le profil autorise l’appareil à exécuter une seule application. Quand l’utilisateur se connecte, une application spécifique démarre. En outre, ce mode empêche l’utilisateur d’ouvrir de nouvelles applications ou de basculer vers une autre application.
-  - **Kiosque multi-application** : le profil autorise l’appareil à exécuter plusieurs applications. Seules les applications que vous ajoutez sont disponibles pour l’utilisateur. L’avantage d’un kiosque multi-application ou d’un appareil à usage fixe est que l’utilisateur n’accède qu’aux applications dont il a besoin. Celles dont il n’a pas besoin sont retirées de sa vue. 
+- **Mode plein écran** : Identifie le type de mode plein écran pris en charge par la stratégie. Les options sont les suivantes :
+
+  - **Non configuré** (par défaut) : la stratégie n’active pas de mode plein écran. 
+  - **Application unique plein écran** : le profil autorise l’appareil à exécuter une seule application. Quand l’utilisateur se connecte, une application spécifique démarre. En outre, ce mode empêche l’utilisateur d’ouvrir de nouvelles applications ou de basculer vers une autre application.
+  - **Applications multiples plein écran** : le profil autorise l’appareil à exécuter plusieurs applications. Seules les applications que vous ajoutez sont disponibles pour l’utilisateur. L’avantage d’un kiosque multi-application ou d’un appareil à usage fixe est que l’utilisateur n’accède qu’aux applications dont il a besoin. Celles dont il n’a pas besoin sont retirées de sa vue. 
   
     Quand vous ajoutez des applications en vue de proposer une expérience de kiosque multi-application, vous ajoutez également un fichier de disposition du menu Démarrer. Le [fichier de disposition du menu Démarrer](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) inclut un exemple de code XML qui peut être utilisé dans Intune. 
 
-#### <a name="single-app-kiosks"></a>Kiosques multi-applications
-Entrez les paramètres suivants :
+#### <a name="single-app-kiosks"></a>Applications uniques plein écran
+entrez les paramètres suivants :
 
-- **Compte d’utilisateur** : entrez le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application de kiosque. Pour les comptes liés à des domaines Azure AD, entrez le compte en utilisant le format `domain\username@tenant.org`. 
+- **Compte d’utilisateur** : entrez le compte d’utilisateur local (pour l’appareil) ou la connexion au compte Azure Active Directory associé à l’application plein écran. Pour les comptes liés à des domaines Azure AD, entrez le compte en utilisant le format `domain\username@tenant.org`. 
 
-    Pour les kiosques dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode kiosque, utilisez le format `AzureAD\user@contoso.com`.
+    Pour les appareils plein écran dans des environnements publics où l’ouverture de session automatique est activée, un type d’utilisateur avec les privilèges minimum (par exemple, le compte d’utilisateur standard local) doit être utilisé. Pour configurer un compte Azure Active Directory (AD) pour le mode plein écran, utilisez le format `AzureAD\user@contoso.com`.
 
-- **Identifiant AUMID de l’application** : entrez l’identifiant AUMID de l’application de kiosque. Pour plus d’informations, consultez [Rechercher l’identifiant AUMID d’une application installée](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+- **Identifiant AUMID de l’application** : entrez l’identifiant AUMID de l’application plein écran. Pour plus d’informations, consultez [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Rechercher l’identifiant AUMID d’une application installée).
 
 ## <a name="reporting-and-telemetry"></a>Création de rapports et les données de télémétrie
 

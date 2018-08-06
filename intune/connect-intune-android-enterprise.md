@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909080"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279421"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Connecter votre compte Intune à votre compte professionnel Android
 
@@ -51,7 +51,7 @@ Pour prendre en charge les appareils avec profil professionnel Android et les ap
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Déconnecter votre compte d’administration professionnel Android
 
-Vous pouvez désactiver l’inscription et la gestion d’entreprise Android. Un clic sur **Se déconnecter** dans la console d’administration Intune annule l’inscription de tous les appareils avec profil professionnel Android et tous les appareils kiosque inscrits. Cela supprime également la relation entre le compte professionnel Android et Intune.
+Vous pouvez désactiver l’inscription et la gestion d’entreprise Android. Pour ce faire, vous devez d’abord mettre hors service les appareils avec profil professionnel Android inscrits. Ensuite, choisissez **Se déconnecter** dans la console d’administration Intune pour annuler l’inscription de tous les appareils avec profil professionnel Android et tous les appareils kiosque inscrits. Cela supprime également la relation entre le compte professionnel Android et Intune.
 
 1. En tant qu’administrateur Intune, dans le [portail Azure](https://portal.azure.com), choisissez **Tous les services** > **Surveillance + Gestion** > **Intune**.
 2. Choisissez **Inscription de l’appareil** > **Inscription Android** > **Google Play géré** > **Se déconnecter**.

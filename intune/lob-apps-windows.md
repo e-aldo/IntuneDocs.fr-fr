@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f907272f74886612eba9b5b28118f298caa2f36d
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223903"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321116"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Ajouter une application métier Windows à Microsoft Intune
 
@@ -40,7 +40,11 @@ Une application métier est une application que vous ajoutez à partir d’un fi
 ## <a name="step-2-configure-the-app-package-file"></a>Étape 2 : Configurer le fichier de package d’application
 
 1. Dans le volet **Ajouter une application**, sélectionnez **Fichier de package d’application**.
-2. Dans le volet **Fichier de package d’application**, sélectionnez le bouton Parcourir. Sélectionnez ensuite un fichier d’installation Windows ayant l’extension **.msi**, **.appx** ou **.appxbundle**.
+2. Dans le volet **Fichier de package d’application**, sélectionnez le bouton Parcourir. Ensuite, sélectionnez un fichier d’installation Windows ayant l’extension **.msi**, **.appx**, **.appxbundle**, **.msix** ou **. msixbundle**.
+
+    > [!NOTE]
+    > Les extensions de fichier des applications Windows sont **.msi**, **.appx**, **.appxbundle**, **.msix** et **.msixbundle**.  
+
 3. Une fois que vous avez fini, sélectionnez **OK**.
 
 

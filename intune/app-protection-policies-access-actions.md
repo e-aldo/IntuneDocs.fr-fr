@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138694"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254482"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Réinitialisation sélective des données à l’aide d’actions d’accès de stratégie de protection des applications dans Intune
 
@@ -44,7 +44,7 @@ Vous pouvez choisir explicitement de réinitialiser les données d’entreprise 
 8. Sélectionnez l’**Action** à effectuer si les utilisateurs ne remplissent pas les critères. Dans certains cas, vous pouvez configurer plusieurs actions pour un même paramètre. Pour plus d’informations, consultez [Guide pratique pour créer et affecter des stratégies de protection des applications](app-protection-policies.md).
 
 >[!NOTE]
-> Pour utiliser le paramètre **Modèle(s) d’appareil**, entrez une liste d’identificateurs de modèle séparés par des points-virgules. 
+> Pour utiliser le paramètre **Modèle(s) d’appareil ou Fabricant(s) d’appareil**, entrez une liste d’identificateurs de modèle séparés par des points-virgules. Évitez les espaces dans les listes de plusieurs valeurs. Ces valeurs ne respectent pas la casse. 
 
 ## <a name="policy-settings"></a>Paramètres de stratégie 
 
@@ -83,7 +83,10 @@ Pour Android, vous pouvez configurer des actions pour les paramètres suivants �
 -  Fabricant(s) d’appareil
 
 Pour utiliser le paramètre **Fabricant(s) d’appareil**, entrez une liste de fabricants Android séparés par des points-virgules. Le fabricant d’un appareil Android se trouve sous les paramètres de l’appareil.<br>
-Exemple d’entrée : *Fabricant A; Fabricant B; Google* 
+Exemple d’entrée : *Fabricant A; Fabricant B* 
+
+>[!NOTE]
+> Voici quelques fabricants courants signalés par des appareils utilisant Intune, et pouvant être utilisés comme entrée : Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 Sur les appareils de l’utilisateur final, le client Intune effectuerait une action sur la base d’une mise en correspondance simple des chaînes de modèle d’appareil spécifiées dans Intune pour les stratégies de protection d’application. La mise en correspondance dépend entièrement de ce que signale l’appareil. En tant qu’administrateur informatique, vous êtes encouragé à vérifier que le comportement souhaité se produit. Pour cela, testez ce paramètre sur une variété de modèles et de fabricants d’appareils en ciblant un petit groupe d’utilisateurs. La valeur par défaut est **Non configuré**.<br>
 Effectuez l’une des actions suivantes : 

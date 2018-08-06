@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028726"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321286"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Ajouter des applications à Microsoft Intune
 
@@ -57,7 +57,7 @@ Le tableau suivant répertorie les types d’applications spécifiques et la fa�
 | Applications métier Android | Application métier | Sélectionnez l’application **Métier** comme **type d’application**, sélectionnez le **fichier Package d’application**, puis entrez un fichier d’installation Android avec l’extension **.apk**.  |
 | Applications métier iOS | Application métier | Sélectionnez l’application **Métier** comme **type d’application**, sélectionnez le **fichier Package d’application**, puis entrez un fichier d’installation iOS avec l’extension **.ipa**.  |
 | Applications métier Windows Phone | Application métier | Sélectionnez l’application **Métier** comme **Type d’application**, sélectionnez le **fichier de package d’application**, puis entrez un fichier d’installation Windows Phone avec l’extension **.xap**.  |
-| Applications métier Windows | Application métier | Sélectionnez l’application **Métier** comme type d’application, sélectionnez le **fichier de package d’application**, puis entrez un fichier d’installation Windows avec l’extension **.msi**, **.appx** ou **.appxbundle**. |
+| Applications métier Windows | Application métier | Sélectionnez l’application **Métier** comme type d’application, sélectionnez le **fichier de package d’application**, puis entrez un fichier d’installation Windows avec l’extension **.msi**, **.appx**, **.appxbundle**, **.msix** ou **.msixbundle**. |
 | Application iOS intégrée  | Application intégrée | Sélectionnez **Application intégrée** comme **type d’application**, puis sélectionnez l’application intégrée dans la liste des applications fournies.  |
 | Application Android intégrée  | Application intégrée | Sélectionnez **Application intégrée** comme **type d’application**, puis sélectionnez l’application intégrée dans la liste des applications fournies.  |
 | Applications web  | Application web  | Sélectionnez **Lien web** comme **type d’application**, puis entrez une URL valide pointant vers l’application web.  |
@@ -119,6 +119,9 @@ En plus des applications Web, des applications de store et des applications mét
 - **Programme d’achat en volume Apple pour les entreprises (iOS et MacOS)** : l’App Store iOS vous permet d’acheter plusieurs licences d’une application que vous voulez exécuter dans votre entreprise. Le fait d’acheter plusieurs copies aide à gérer efficacement les applications de l’entreprise. Pour plus d’informations, consultez [Gérer les applications iOS achetées en volume](vpp-apps-ios.md).
 - **Profil professionnel Android** : la façon dont vous affectez des applications à des appareils de profil professionnel Android diffère de celle dont vous les affectez à des appareils Android standard. Toutes les applications que vous installez pour des profils professionnels Android proviennent du Managed Google Play Store. Vous vous connectez au store, recherchez les applications souhaitées et les approuvez. L’application apparaît ensuite dans le nœud **Applications sous licence** du portail Azure, et vous pouvez gérer l’affectation de l’application de la même façon que pour toute autre application.
 - **Microsoft Store pour Entreprises (Windows 10)** : le Microsoft Store pour Entreprises vous permet de rechercher et d’acheter des applications pour votre organisation, individuellement ou en volume. En connectant le store à Microsoft Intune, vous pouvez gérer les applications achetées en volume dans le portail Azure. Pour plus d’informations, consultez [Gérer des applications à partir du Microsoft Store pour Entreprises](windows-store-for-business.md).
+
+    > [!NOTE]
+    > Les extensions de fichier des applications Windows sont **.msi**, **.appx**, **.appxbundle**, **.msix** et **.msixbundle**.  
 
 ## <a name="before-you-add-apps"></a>Avant d'ajouter des applications
 Avant de commencer à ajouter et affecter des applications, tenez compte des points suivants :

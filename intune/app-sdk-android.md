@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449868"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254397"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guide du Kit SDK de l’application Microsoft Intune pour les développeurs Android
 
@@ -414,7 +414,7 @@ Tout d’abord, lisez les instructions d’intégration de la bibliothèque ADAL
 
 Le SDK s’appuie sur la bibliothèque [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) pour ses scénarios d’[authentification](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) et de lancement conditionnel, ce qui nécessite que les applications soient configurées avec [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Les valeurs de configuration sont communiquées au SDK par le biais de métadonnées AndroidManifest.
 
-Pour configurer votre application et mettre en œuvre une authentification appropriée, ajoutez le code suivant au nœud de l’application dans AndroidManifest.xml. Certaines de ces configurations sont uniquement nécessaires si votre application utilise la bibliothèque ADAL pour l’authentification en général. Dans ce cas, vous avez besoin des valeurs spécifiques que votre application utilise pour s’inscrire auprès d’AAD. De cette façon, l’utilisateur final n’est pas invité à s’authentifier à deux reprises quand AAD détecte deux valeurs d’inscription distinctes : l’une provenant de l’application et l’autre du SDK.
+Pour configurer votre application et mettre en œuvre une authentification approprié, ajoutez le code suivant au nœud de l’application dans AndroidManifest.xml. Certaines de ces configurations sont uniquement nécessaires si votre application utilise la bibliothèque ADAL pour l’authentification en général. Dans ce cas, vous avez besoin des valeurs spécifiques que votre application utilise pour s’inscrire auprès d’AAD. De cette façon, l’utilisateur final n’est pas invité à s’authentifier à deux reprises quand AAD détecte deux valeurs d’inscription distinctes : l’une provenant de l’application et l’autre du SDK.
 
 ```xml
 <meta-data
@@ -463,7 +463,20 @@ Vous n’avez besoin de configurer aucune autre valeur du manifeste.
 
 Authority et NonBrokerRedirectURI peuvent être spécifiés si nécessaire.
 
-L’équipe Intune SDK demande l’ID d’application de votre application (ID de client). Pour le trouver, utilisez le [portail Azure](https://portal.azure.com/), sous **Toutes les applications**, dans la colonne **ID d’application**. Pour plus d’informations sur l’inscription d’une application avec Azure AD, consultez [cette page](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications). Vous pouvez contacter l’équipe Intune SDK à l’adresse e-mail msintuneappsdk@microsoft.com.
+Inscrivez votre application auprès d’Azure AD en effectuant les étapes suivantes.
+
+Dans le portail Azure :
+1.  Accédez au panneau **Azure Active Directory**.
+2.  Sélectionnez la configuration d’**Inscription d’application** pour l’application.
+3.  Dans **Paramètres**, sous l’en-tête **Accès d’API**, sélectionnez **Autorisation requise**. 
+4.  Cliquez sur **+ Ajouter**.
+5.  Cliquez sur **Sélectionner une API**. 
+6.  Dans la zone de recherche, entrez **Gestion des applications mobiles Microsoft**.
+7.  Sélectionnez **Gestion des applications mobiles Microsoft** dans la liste des API et cliquez sur Sélectionner.
+8.  Sélectionnez **Lire et écrire les données de gestion d’application de l’utilisateur**.
+9.  Cliquez sur **Terminé**.
+
+Pour plus d’informations sur l’inscription d’une application avec Azure AD, consultez [cette page](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications). 
 
 Consultez aussi les exigences pour [l’accès conditionnel](#conditional-access) ci-dessous.
 
@@ -668,7 +681,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 * La prise en charge des clouds souverains nécessite la spécification de l’autorité.
 #### <a name="registration"></a>Inscription
 
-* Par souci pratique, les méthodes d’inscription sont idempotentes. Par exemple, `registerAccountForMAM()` inscrit un compte et tente d’inscrire l’application uniquement si le compte n’est pas encore inscrit, et `unregisterAccountForMAM()` annule l’inscription d’un compte uniquement s’il est actuellement inscrit. Les appels suivants étant non-opérationnels, il n’y a aucun risque à appeler ces méthodes plusieurs fois. En outre, la correspondance entre les appels à ces méthodes et les notifications de résultats n’est pas garantie : autrement dit, si `registerAccountForMAM` est appelé pour une identité déjà inscrite, la notification peut ne pas être envoyée à nouveau pour cette identité. Il est possible que des notifications envoyées ne correspondent à aucun appel à ces méthodes, car le SDK peut tenter d’effectuer périodiquement des inscriptions en arrière-plan, et des annulations d’inscription peuvent être déclenchées par des demandes de réinitialisation envoyées par le service Intune.
+* Par souci pratique, les méthodes d’inscription sont idempotent. Par exemple, `registerAccountForMAM()` inscrit un compte et tente d’inscrire l’application uniquement si le compte n’est pas encore inscrit, et `unregisterAccountForMAM()` annule l’inscription d’un compte uniquement s’il est actuellement inscrit. Les appels suivants étant non-opérationnels, il n’y a aucun risque à appeler ces méthodes plusieurs fois. En outre, la correspondance entre les appels à ces méthodes et les notifications de résultats n’est pas garantie : autrement dit, si `registerAccountForMAM` est appelé pour une identité déjà inscrite, la notification peut ne pas être envoyée à nouveau pour cette identité. Il est possible que des notifications envoyées ne correspondent à aucun appel à ces méthodes, car le SDK peut tenter d’effectuer périodiquement des inscriptions en arrière-plan, et des annulations d’inscription peuvent être déclenchées par des demandes de réinitialisation envoyées par le service Intune.
 
 * Les méthodes d’inscription peuvent être appelées pour un nombre quelconque d’identités différentes, mais à l’heure actuelle un seul compte d’utilisateur peut être inscrit. Si plusieurs comptes d’utilisateur disposant d’une licence Intune et ciblés par la stratégie de protection des applications sont inscrits simultanément (ou presque), il n’existe aucun moyen de savoir lequel l’emportera.
 
@@ -816,7 +829,7 @@ Le guide de sauvegarde des données spécifie un algorithme général pour la re
 ### <a name="overview"></a>Vue d’ensemble
 Par défaut, le SDK d’application Intune applique une stratégie à l’application comme un tout. La multi-identité est une fonctionnalité de protection des applications Intune qui peut être activée pour permettre d’appliquer la stratégie à un niveau par identité. Ceci nécessite une participation nettement accrue de l’application par rapport à d’autres fonctionnalités de protection des applications.
 
-L’application *doit* informer le SDK du moment où elle va changer l’identité active. Dans certains cas, le SDK notifie aussi l’application du moment où un changement d’identité est nécessaire. Toutefois, dans la plupart des cas, la gestion des applications mobiles n’a pas connaissance des données affichées dans l’interface utilisateur ou utilisées sur un thread à un moment donné. Elle s’appuie donc sur l’application pour définir l’identité appropriée afin d’éviter la fuite de données. Dans les sections suivantes, certains scénarios nécessitant une action de l’application sont appelés.
+L’application *doit* informer le SDK du moment où elle va changer l’identité active. Dans certains cas, le SDK notifie aussi l’application du moment où un changement d’identité est nécessaire. Toutefois, dans la plupart des cas, la gestion des applications mobiles n’a pas connaissance des données affichées dans l’interface utilisateur ou utilisées sur un thread à un moment donné. Elle s’appuie donc sur l’application pour définir l’identité appropriée afin d’éviter la fuite de données. Dans les sections suivants, certains scénarios nécessitant une action de l’application sont appelés.
 
 > [!NOTE]
 >  Toute participation incorrecte de l’application peut entraîner des fuites de données et d’autres problèmes de sécurité.
@@ -1418,7 +1431,7 @@ Vous trouverez ci-dessous des conseils afin d’exiger une invite utilisateur au
 > Les avantages de **l’inscription par défaut** incluent une méthode simplifiée d’obtention de stratégie à partir du service APP-WE pour une application sur l’appareil.
 
 ### <a name="general-requirements"></a>Conditions générales requises
-* L’équipe du kit SDK Intune nécessite l’ID de votre application. Vous pouvez le localiser par le biais du [portail Azure](https://portal.azure.com/), sous **Toutes les applications**, dans la colonne **ID d’application**. Pour contacter l’équipe du kit SDK Intune, envoyez un e-mail à l’adresse msintuneappsdk@microsoft.com.
+* Vérifiez que votre application est inscrite auprès du service de gestion des applications mobiles Intune en suivant les étapes indiquées dans [Configurations ADAL courantes 2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations).
 
 ### <a name="working-with-the-intune-sdk"></a>Utilisation du kit SDK Intune
 Ces instructions sont spécifiques à tous les développeurs d’applications Android et Xamarin qui souhaitent exiger des stratégies de protection des applications Intune pour utiliser des applications sur l’appareil d’un utilisateur final.

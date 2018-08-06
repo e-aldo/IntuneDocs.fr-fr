@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225440"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268904"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Bien démarrer avec les stratégies de conformité des appareils dans Intune
 
@@ -167,7 +167,7 @@ Les **paramètres de stratégie de conformité** (portail Azure > Conformité de
   L’activation de ce paramètre nécessite que les appareils :
   - Activent les services de localisation au niveau du système d’exploitation
   - Autorisent le portail d’entreprise à utiliser les services de localisation
-  - Évaluent et signalent leur état jailbreak à Intune au moins une fois toutes les 72 heures. Sinon, l’appareil est marqué comme non conforme.
+  - Évaluent et signalent leur état jailbreak à Intune au moins une fois toutes les 72 heures. Sinon, l’appareil est marqué comme non conforme. L’évaluation est déclenchée soit par l’ouverture de l’application Portail d’entreprise, soit par le déplacement physique de l’appareil d’au moins 500 mètres.
 
 - **Période de validité de l’état de conformité (jours)** : entrez la période pendant laquelle les appareils signalent l’état de toutes les stratégies de conformité reçues. Les appareils qui ne retournent pas l’état au cours de cette période sont considérés comme non conformes. La valeur par défaut est de 30 jours.
 
