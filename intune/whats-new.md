@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321558"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362056"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Nouveautés de Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1123,6 +1123,16 @@ Vous pouvez spécifier les applications refusées dans Intune. Si une applicatio
 
 
 ## <a name="notices"></a>Remarques
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Modification prévue : changement du mot de passe à la prochaine authentification ajouté dans Intune<!-- 1873216 -->
+Dans la version de septembre du service, Intune envisage d’intégrer le paramètre Apple de **changement de mot de passe à la prochaine authentification** récemment publié pour les appareils exécutant les versions macOS 10.13 et ultérieures. Avant ce paramètre, les fournisseurs MDM ne pouvaient pas vérifier que le code secret de l’appareil avait été changé pour être conforme. Les stratégies de configuration et de conformité d’Intune vérifient uniquement que le mot de passe d’un appareil est marqué comme conforme la prochaine fois qu’il est changé. Lors de l’ajout de cette nouvelle fonctionnalité Apple, vos utilisateurs macOS reçoivent une demande de mise à jour de leur mot de passe, même si celui-ci est conforme.
+
+#### <a name="how-does-this-affect-me"></a>Comment cela m’affecte-t-il ?
+Cela a un impact sur les environnements avec une stratégie d’appareil macOS utilisant Intune ou une gestion MDM hybride. Maintenant qu’Apple dispose de ce paramètre de **changement de mot de passe à la prochaine authentification**, Intune peut forcer les utilisateurs à mettre à jour leur mot de passe quand une stratégie de mot de passe est envoyée. Si vous bloquez les ressources de l’entreprise tant que l’appareil n’est pas marqué conforme, vos utilisateurs finaux peuvent se voir refuser l’accès aux ressources de l’entreprise, telles que la messagerie ou les sites SharePoint, tant qu’ils ne réinitialisent pas leur mot de passe. À l’avenir, toutes les mises à jour des stratégies de configuration et de conformité des mots de passe vont forcer les utilisateurs ciblés à mettre à jour leurs mots de passe.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Que dois-je faire pour me préparer à cette modification ?
+Prévenez votre support technique. Si vous ne souhaitez pas appliquer cette stratégie d’appareil macOS, nous vous recommandons d’annuler l’attribution ou de supprimer votre stratégie macOS existante. Une recherche parmi les clients suppose que la plupart d’entre eux ne sont pas affectés par cette modification. La plupart des utilisateurs finaux mettent à jour leur mot de passe après avoir reçu une demande d’inscription avec un mot de passe ou de réinitialisation de leur mot de passe pour rester conformes.
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Changement planifié : Intune est appelé à prendre en charge iOS versions 10 et ultérieures en septembre <!-- 2454656 -->
 En septembre, Apple est censé publier iOS 12. Peu après la publication, nous ferons en sorte que l’inscription à Intune, le Portail d’entreprise et le navigateur géré prennent en charge iOS versions 10 et ultérieures.  

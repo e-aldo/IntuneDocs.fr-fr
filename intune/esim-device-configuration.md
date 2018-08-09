@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336048"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400281"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurer des profils de téléphonie mobile eSIM dans Intune - préversion publique
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336048"
 
 ## <a name="introduction"></a>Introduction
 
-eSIM est une puce SIM intégrée qui vous permet de vous connecter à Internet par le biais d’une connexion de données cellulaires sur un appareil compatible avec eSIM, tel que la [LTE Surface Pro](https://www.microsoft.com/surface/business/surface-pro). Avec une eSIM, il n’est pas nécessaire de vous procurer une carte SIM auprès de votre opérateur mobile, et vous pouvez basculer rapidement entre divers opérateurs mobiles et forfaits de données.
+eSIM est une puce SIM intégrée qui vous permet de vous connecter à Internet par le biais d’une connexion de données cellulaires sur un appareil compatible avec eSIM, tel que la [LTE Surface Pro](https://www.microsoft.com/surface/business/surface-pro). Avec une eSIM, il n’est pas nécessaire de vous procurer une carte SIM auprès de votre opérateur mobile. En tant que voyageur dans le monde entier, vous pouvez aussi basculer entre divers opérateurs mobiles et forfaits de données pour rester toujours connecté.
 
 Par exemple, imaginez que vous avez un forfait de données cellulaires pour le travail, et un autre forfait avec un autre opérateur mobile pour votre usage personnel. En déplacement, vous pouvez accéder à Internet en recherchant les opérateurs de téléphonie mobile avec des forfaits de données dans la région.
 

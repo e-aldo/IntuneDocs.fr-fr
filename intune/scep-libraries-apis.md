@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321666"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575047"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Utiliser des API pour ajouter des autorités de certification tierces pour SCEP à Intune
 
@@ -41,11 +41,18 @@ Certaines tâches de développement utilisent également une bibliothèque open 
 - Le certificat racine approuvé de l’autorité de certification
 - Les attributs de certificats, et bien plus encore
 
-Le profil SCEP est affecté aux appareils inscrits auprès d’Intune, et ceux-ci sont configurés avec ces paramètres. Un mot de passe SCEP généré de manière dynamique est créé par Intune, puis affecté à l’appareil.
+Le profil SCEP est affecté aux appareils inscrits auprès d’Intune, et ceux-ci sont configurés avec ces paramètres. Un mot de passe de stimulation SCEP généré de manière dynamique est créé par Intune, puis affecté à l’appareil.
 
-Ce mot de passe contient des détails sur les paramètres attendus dans la demande de signature de certificat envoyée par l’appareil au serveur SCEP. Le mot de passe inclut également le délai d’expiration de la demande. Intune chiffre les informations, signe l’objet blob chiffré, puis empaquète ces détails dans le mot de passe SCEP.
+Cette stimulation contient :
 
-Les appareils contactant le serveur SCEP pour demander un certificat donnent ensuite ce mot de passe SCEP. Ce mot de passe doit passer la phase de validation pour que le serveur SCEP émette un certificat à l’appareil. Quand un mot de passe SCEP est validé, les vérifications suivantes se produisent :
+- le mot de passe de stimulation généré de manière dynamique ;
+- les détails sur les paramètres attendus dans la demande de signature de certificat envoyée par l’appareil au serveur SCEP ;
+- l’heure d’expiration de la stimulation.
+
+Intune chiffre ces informations, signe l’objet blob chiffré, puis empaquète ces détails dans le mot de passe de stimulation SCEP.
+
+Les appareils contactant le serveur SCEP pour demander un certificat donnent ensuite ce mot de passe de stimulation SCEP. Le serveur SCEP envoie la demande de signature de certificat et le mot de passe de stimulation SCEP chiffré à Intune pour validation.  Ce mot de passe de stimulation et la demande de signature de certificat doivent réussir la phase de validation afin que le serveur SCEP émette un certificat pour l’appareil. Quand une stimulation SCEP est validée, les vérifications suivantes se produisent :
+
 
 - Validation de la signature de l’objet blob chiffré
 - Validation du fait que la demande n’a pas expiré

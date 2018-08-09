@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321694"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481119"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Paramètres kiosque pour Windows 10 (et versions ultérieures) dans Intune
 
@@ -25,9 +25,18 @@ Les profils kiosque servent à configurer les appareils Windows 10 pour exécut
 
 ## <a name="kiosk-settings"></a>Paramètres kiosque
 
-1. Sélectionnez **Ajouter** pour créer un environnement kiosque.
-2. Entrez un **Nom de configuration kiosque** pour votre kiosque. Ce nom identifie un groupe d’applications, la disposition de ces applications dans le menu de démarrage et les utilisateurs affectés à cette configuration kiosque.
-3. Sélectionnez le **mode kiosque**. **Mode kiosque** : Identifie le type de mode kiosque pris en charge par la stratégie. Les options sont les suivantes :
+1. Dans le [Portail Azure](https://portal.azure.com), sélectionnez **Tous les services**, filtrez sur **Intune**, puis sélectionnez **Microsoft Intune**.
+2. Sélectionnez **Configuration de l’appareil** > **Profils** > **Créer un profil**.
+3. Entrez les propriétés suivantes :
+
+   - **Nom** : attribuez un nom descriptif au nouveau profil.
+   - **Description :** entrez une description pour le profil. Ceci est facultatif, mais recommandé.
+   - **Plateforme** : sélectionnez **Windows 10 et ultérieur**
+   - **Type de profil** : sélectionnez **Kiosque (préversion)**
+   
+4. Sélectionnez **Kiosque** > **Ajouter**.
+5. Entrez un **Nom de configuration kiosque** pour votre kiosque. Ce nom identifie un groupe d’applications, la disposition de ces applications dans le menu de démarrage et les utilisateurs affectés à cette configuration kiosque.
+6. Sélectionnez le **mode kiosque**. **Mode kiosque** : identifie le type de mode kiosque pris en charge par la stratégie. Les options sont les suivantes :
 
     - **Non configuré** (par défaut) : La stratégie n’active pas de mode kiosque.
     - **Kiosque avec une seule application en plein écran**: Le profil permet à l’appareil de s’exécuter comme un seul compte d’utilisateur et le verrouille sur une seule application de plateforme Windows universelle (UWP). De cette façon, quand l’utilisateur se connecte, une application spécifique démarre. Ce mode empêche également l’utilisateur d’ouvrir de nouvelles applications ou de basculer vers une autre application.

@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905816"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501147"
 ---
 # <a name="set-enrollment-restrictions"></a>Définir des restrictions d’inscription
 
@@ -77,7 +77,7 @@ Pour changer les paramètres d’une restriction de type d’appareil, effectuez
 4. Sous **Restrictions de type d’appareil**, choisissez la restriction à définir.
 5. Sous le nom de la restriction (**Tous les utilisateurs** pour la restriction par défaut), sélectionnez **Plateformes**. Choisissez **Autoriser** ou **Bloquer** pour chaque plateforme répertoriée.
 6. Sélectionnez **Enregistrer**.
-7. Sous le nom de la restriction (**Tous les utilisateurs** pour la restriction par défaut), sélectionnez **Configurations de plateforme**. Ensuite, sélectionnez les **Versions** minimale et maximale pour les plateformes répertoriées. Les versions prises en charge incluent les suivantes :
+7. Sous le nom de la restriction (**Tous les utilisateurs** pour la restriction par défaut), sélectionnez **Configurations de plateforme**. Ensuite, sélectionnez les **Versions** minimale et maximale pour les plateformes répertoriées. Les formats de version pris en charge sont notamment :
     - Profil professionnel Android prend en charge majeur.mineur.révision.build.
     - iOS prend en charge major.minor.rev.
     - Windows prend en charge major.minor.rev.build pour Windows 10 uniquement.

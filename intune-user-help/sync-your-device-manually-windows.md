@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236053"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362022"
 ---
 # <a name="sync-your-windows-device-manually"></a>Synchroniser votre appareil Windows manuellement
 
 Quand la vitesse d’installation des applications est loin d’être idéale, lancez une synchronisation manuelle de l’appareil. Les synchronisations manuelles forcent votre appareil à se connecter à Intune pour obtenir les dernières mises à jour et communications. La vitesse d’installation peut augmenter une fois la synchronisation de l’appareil terminée.
 
-Intune prend en charge la synchronisation manuelle à partir de l’application Portail d’entreprise et de l’application Paramètres de l’appareil. 
+Intune prend en charge la synchronisation manuelle à partir de l’application Portail d’entreprise, de la barre des tâches du Bureau ou du menu Démarrer et de l’application Paramètres de l’appareil. 
 
 La fonctionnalité de l’application Portail d’entreprise est prise en charge sur les appareils Windows 10 exécutant Creators Update (1703) ou version ultérieure. 
 * [Synchroniser à partir de l’application Portail d’entreprise](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Effectuez les étapes suivantes pour synchroniser manuellement n’importe quel 
     
     ![Capture d’écran de la page de paramètres de l’application Portail d’entreprise avec Synchroniser mis en surbrillance](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>Synchroniser à partir du menu Démarrer ou de la barre des tâches de l’appareil   
+
+Vous pouvez également accéder au contrôle de synchronisation en dehors de l’application, à partir du Bureau de votre appareil. Cette méthode est utile si l’application est épinglée directement à la barre des tâches ou au menu Démarrer et que vous voulez une synchronisation rapide.  
+
+1. Recherchez l’icône de l’application Portail d’entreprise dans votre barre des tâches ou menu Démarrer.  
+2. Cliquez avec le bouton droit sur l’icône de l’application pour afficher son menu (également appelé liste de raccourcis).  
+
+    ![Capture d’écran de la barre des tâches Windows sur le Bureau d’un appareil. L’utilisateur a cliqué sur l’icône de l’application Portail d’entreprise pour afficher un menu avec les options « Épingler à la barre des tâches » et « Fermer la fenêtre », et l’action « Synchroniser cet appareil ».](./media/sync-device-from-start-menu-1807.png)  
+
+3. Sélectionnez **Synchroniser cet appareil**. L’application Portail d’entreprise s’ouvre à la page **Paramètres** et lance la synchronisation.  
+
 ## <a name="sync-from-settings-app"></a>Synchroniser à partir de l’application Paramètres 
-Effectuez ces étapes pour synchroniser manuellement vos appareils Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ou Windows Phone 8.1 à partir de l’application Paramètres.
+Effectuez ces étapes pour synchroniser manuellement vos appareils Microsoft HoloLens, Windows 10 Desktop, Windows 10 Mobile ou Windows Phone 8.1 à partir de l’application Paramètres.  
 
 ### <a name="windows-10-desktop"></a>Windows 10 Desktop
 1. Sur votre appareil, sélectionnez **Démarrer** > **Paramètres**.
