@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575081"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001908"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Édition préliminaire pour Microsoft Intune - Août 2018
 
@@ -75,7 +75,7 @@ Pour créer une balise d’étendue, choisissez **Rôles Intune** > **Étendue (
 Pour ajouter une balise d’étendue à une attribution de rôle, choisissez **Rôles Intune** > **Tous les rôles** > **Gestionnaire de stratégies et de profils** > **Attributions** > **Étendue (balises)**.
 Pour ajouter une balise d’étendue à un profil de configuration, choisissez **Configuration de l’appareil** > **Profils** > choisissez un profil > **Propriétés** > **Étendue (balises)**.
 
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Affecter un utilisateur et un nom convivial à un appareil AutoPilot <!--1346521 -->
+### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Affecter un utilisateur et un nom convivial à un appareil Autopilot <!--1346521 -->
 Une prochaine préversion publique permettra aux administrateurs d’affecter un utilisateur à un seul appareil Autopilot.  Les administrateurs pourront également donner des noms conviviaux pour accueillir l’utilisateur lors de la configuration de leur appareil avec Autopilot.
 
 S’applique à : Windows Insider 1809 ou ultérieur (dans la préversion).
@@ -99,30 +99,29 @@ Pour voir cette fonctionnalité, choisissez **Inscription de l’appareil** > **
 L’activation de cette restriction n’a aucun effet sur les appareils déjà inscrits.
 Une fois qu’une restriction est activée, Intune vérifie que chaque nouvelle demande d’inscription Windows a été autorisée comme inscription d’entreprise. Les méthodes suivantes sont qualifiées comme étant autorisées en tant qu’inscription d’entreprise :
 - L’utilisateur qui s’inscrit utilise un [compte de gestionnaire d’inscription d’appareil]( device-enrollment-manager-enroll.md).
-
-- L’appareil s’inscrit via [Windows AutoPilot](enrollment-autopilot.md).
+- L’appareil s’inscrit via [Windows Autopilot](enrollment-autopilot.md).
 - Le numéro IMEI de l’appareil est listé dans **Inscription de l’appareil** > **[Identificateurs d’appareil d’entreprise]( corporate-identifiers-add.md)**).
 - L’appareil s’inscrit via un [package de provisionnement en bloc](windows-bulk-enroll.md).
 - L’appareil s’inscrit via [l’inscription automatique à partir de SCCM pour la cogestion](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
-Les inscriptions non autorisées seront bloquées.
-Les inscriptions suivantes sont marquées comme étant d’entreprise par Intune mais, dans la mesure où elles n’offrent pas le contrôle par appareil d’administrateur Intune, elles seront bloquées :
+
+Les inscriptions non autorisées seront bloquées. Les inscriptions suivantes sont marquées comme étant d’entreprise par Intune mais, dans la mesure où elles n’offrent pas le contrôle par appareil d’administrateur Intune, elles seront bloquées :
 - [Inscription automatique à MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) avec [jonction Azure Active Directory lors de la configuration de Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
 - [Inscription automatique à MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) avec [jonction Azure Active Directory à partir du programme d’installation de Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+
 Les méthodes d’inscription personnelle suivantes seront également bloquées :
 - [Inscription automatique à MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) avec [Ajouter un compte professionnel à partir de Paramètres Windows](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
-
 - Option [Inscription à MDM uniquement]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) à partir de Paramètres Windows.
 
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Spécifier des modèles de nom d’ordinateur dans un profil AutoPilot <!--1849855-->
-Vous serez en mesure de spécifier un modèle de nom d’ordinateur pour générer et définir le [nom de l’ordinateur](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) lors de l’inscription AutoPilot. Vous aurez besoin de le spécifier dans le profil AutoPilot situé dans **Inscription de l’appareil** > **Inscription Windows** > **Service Windows AutoPilot Deployment** > **Profils**. Seuls les caractères alphanumériques et les traits d’union peuvent être utilisés.
+### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Spécifier des modèles de nom d’ordinateur dans un profil Autopilot <!--1849855-->
+Vous serez en mesure de spécifier un modèle de nom d’ordinateur pour générer et définir le [nom de l’ordinateur](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) lors de l’inscription Autopilot. Vous aurez besoin de le spécifier dans le profil Autopilot situé dans **Inscription de l’appareil** > **Inscription Windows** > **Service Windows Autopilot Deployment** > **Profils**. Seuls les caractères alphanumériques et les traits d’union peuvent être utilisés.
 S’applique à : Windows Insider 1809 ou ultérieur (dans la préversion).
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>Le numéro de version et le numéro de build d’iOS sont affichés <!-- 1892471 -->
 Dans **Conformité de l’appareil** > **Conformité de l’appareil**, la version du système d’exploitation iOS s’affiche. Dans une prochaine mise à jour, le numéro de build sera également affiché.
 Quand des mises à jour de sécurité sont publiées, Apple laisse généralement le numéro de version tel quel, mais met à jour le numéro de build. En affichant le numéro de build, vous pouvez vérifier facilement si une mise à jour des vulnérabilités est installée.
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Pour les profils Windows AutoPilot, masquer les options de changement de compte dans la page de connexion de l’entreprise et la page d’erreur de domaine <!--1901669 -->
-Une préversion publique contiendra de nouvelles options de profil Windows AutoPilot pour que les administrateurs puissent masquer les options de changement de compte dans la page de connexion de l’entreprise et la page d’erreur de domaine. Pour masquer ces options, il est nécessaire de configurer la marque de société dans Azure Active Directory. S’applique à : Windows Insider 1809 ou version ultérieure (dans la préversion).
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Pour les profils Windows Autopilot, masquer les options de changement de compte dans la page de connexion de l’entreprise et la page d’erreur de domaine <!--1901669 -->
+Une préversion publique contiendra de nouvelles options de profil Windows Autopilot pour que les administrateurs puissent masquer les options de changement de compte dans la page de connexion de l’entreprise et la page d’erreur de domaine. Pour masquer ces options, il est nécessaire de configurer la marque de société dans Azure Active Directory. S’applique à : Windows Insider 1809 ou version ultérieure (dans la préversion).
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>Différer le moment où les mises à jour logicielles iOS sont affichées sur l’appareil <!-- 1949583 -->
 Dans Intune > **Mises à jour logicielles** > **Mettre à jour les stratégies pour iOS**, vous pouvez configurer les jours et heures où vous ne souhaitez pas que les appareils installent des mises à jour. Dans une prochaine mise à jour, vous serez en mesure de différer le moment où une mise à jour logicielle est visiblement indiquée sur l’appareil, entre 1 et 90 jours. 
@@ -167,6 +166,13 @@ S'applique à :
 Les stratégies de conformité créées dans le portail Azure Classic seront dépréciées.  Dans ce cas, vous pouvez consulter et supprimer les stratégies existantes, mais vous ne pouvez pas les mettre à jour. Vous pouvez exporter les stratégies en tant que fichier de valeurs séparées par des virgules (fichier .csv). Ensuite, utilisez les détails dans le fichier pour recréer ces stratégies dans le portail Intune Azure.
 > [!IMPORTANT]
 > Quand le portail Azure Classic sera mis hors service, vous ne pourrez pas accéder à vos stratégies ni même les voir. Par conséquent, veillez à les exporter et à les recréer dans le portail Azure avant la mise hors service du portail Azure Classic.
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>Modifier la terminologie pour « mettre hors service » et « réinitialiser » <!-- 2175759 -->
+Pour être cohérent avec l’API Graph, l’interface et la documentation utilisateur Intune change les termes suivants :
+- **Supprimer les données d’entreprise** est remplacé par **mettre hors service**
+- **Réinitialisation d’usine** est remplacé par **réinitialiser**
+
+
 
 <!-- 1807 start -->
 
