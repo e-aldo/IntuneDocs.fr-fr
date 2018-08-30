@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212033"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903141"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurer l’inscription d’appareils kiosque d’entreprise Android
 
@@ -56,7 +56,7 @@ Vous devez créer un profil d’inscription afin de pouvoir inscrire vos apparei
 1. Accédez au [portail Intune](https://portal.azure.com) et choisissez **Inscription de l’appareil** > **Inscription Android** > **Inscriptions d’appareils en mode kiosque et tâche**.
 2. Choisissez **Créer** et remplissez les champs requis.
     - **Nom** : tapez un nom que vous utiliserez lors de l’affectation du profil au groupe d’appareils dynamique.
-    - **Date d’expiration du jeton** : date à laquelle le jeton expire. Google applique un maximum de 30 jours.
+    - **Date d’expiration du jeton** : date à laquelle le jeton expire. Google applique un maximum de 90 jours.
 3. Sélectionnez **Créer** pour enregistrer le profil.
 
 ### <a name="create-a-device-group"></a>Créer un groupe d'appareils
@@ -110,7 +110,7 @@ Pour les appareils Android 5.1 et ultérieur qui prennent en charge NFC, vous p
 
 ### <a name="enroll-by-using-a-token"></a>Inscrire à l’aide d’un jeton
 
-Pour les appareils Android 6 et ultérieur, vous pouvez utiliser le jeton pour inscrire l’appareil.
+Pour les appareils Android 6 et ultérieur, vous pouvez utiliser le jeton pour inscrire l’appareil. Android 6.1 et versions ultérieures peuvent également tirer profit de l’analyse de code QR quand la méthode d’inscription **aft#setup** est utilisée.
 
 1. Allumez votre appareil réinitialisé aux paramètres d’usine.
 2. Sur l’écran de **Bienvenue**, sélectionnez votre langue.
@@ -125,6 +125,9 @@ Pour les appareils Android 6 et ultérieur, vous pouvez utiliser le jeton pour 
 ### <a name="enroll-by-using-a-qr-code"></a>Inscrire à l’aide d’un code QR
 
 Sur les appareils Android 7 et ultérieur, vous pouvez scanner le code QR à partir du profil d’inscription pour inscrire l’appareil.
+
+> [!Note]
+> Le zoom du navigateur peut empêcher les appareils d’analyser le code QR. L’augmentation du zoom du navigateur résout le problème.
 
 1. Pour lancer une lecture de code QR sur l’appareil Android, appuyez plusieurs fois sur le premier écran visible après une réinitialisation.
 2. Pour les appareils Android 7 et 8, vous serez invité à installer un lecteur de code QR. Les appareils Android 9 et ultérieur ont déjà un lecteur de code QR installé.

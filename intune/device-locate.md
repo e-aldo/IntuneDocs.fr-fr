@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: dc5d9f47a8d950c6c5de9f362bd618d1724055f4
+ms.sourcegitcommit: 3e3e2af98dd92f7ba710f393841cfdb3dbcc4867
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444912"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42912149"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Localiser des appareils iOS perdus ou volés avec Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Pour obtenir l’emplacement d’un appareil iOS perdu ou volé sur une carte, utilisez l’action **Localiser l’appareil**. L’appareil doit être un appareil iOS appartenant à l’entreprise, inscrit dans le cadre du programme d’inscription des appareils et être en mode Supervisé. Avant d’utiliser cette action, veillez à ce que l’appareil soit en [mode Perdu](device-lost-mode.md).
+Pour obtenir l’emplacement d’un appareil iOS perdu ou volé sur une carte, utilisez l’action **Localiser l’appareil**. L’appareil doit être en mode supervisé. Avant d’utiliser cette action, veillez à ce que l’appareil soit en [mode Perdu](device-lost-mode.md).
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge
 
