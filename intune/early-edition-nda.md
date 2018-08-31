@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/06/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: e24414d28b8adeae7dfbedb606ca1a7d21497a3f
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001908"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43093195"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Édition préliminaire pour Microsoft Intune - Août 2018
 
@@ -172,7 +172,8 @@ Pour être cohérent avec l’API Graph, l’interface et la documentation utili
 - **Supprimer les données d’entreprise** est remplacé par **mettre hors service**
 - **Réinitialisation d’usine** est remplacé par **réinitialiser**
 
-
+### <a name="delete-jamf-devices----2653306---"></a>Supprimer des appareils Jamf <!-- 2653306 -->
+Pour supprimer des appareils gérés par JAMF, accédez à **Appareils** > choisissez l’appareil Jamf > **Supprimer**.
 
 <!-- 1807 start -->
 
@@ -189,12 +190,6 @@ La page **Applications** introduit une vue **Installée** qui vous permet de voi
 
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>Amélioration de l’expérience de l’application Portail d’entreprise pour les utilisateurs du gestionnaire d’inscription d’appareil <!-- 675800 -->
 Quand un gestionnaire d’inscription d’appareil se connecte à l’application Portail d’entreprise pour Windows, l’application affiche uniquement l’appareil en cours d’exécution actuel du gestionnaire. Cette amélioration permet de réduire les délais d’attente qui se produisaient auparavant quand l’application essayait de charger tous les appareils inscrits par le gestionnaire d’inscription d’appareil.  
-
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Utilisation de licences d’appareil VPP pour préprovisionner le portail d’entreprise lors d’une inscription DEP <!-- 1608345 -->
-Vous allez pouvoir utiliser des licences d’appareil du programme VPP (Volume Purchase Program) pour préprovisionner le portail d’entreprise pendant les inscriptions DEP (Device Enrollment Program). Pour ce faire, lorsque vous créez ou modifiez un profil d’inscription, spécifiez le jeton VPP que vous souhaitez utiliser pour installer le portail d’entreprise. Assurez-vous que votre jeton n’expire pas et que vous avez suffisamment de licences pour l’application Portail d’entreprise. Si le jeton arrive à expiration ou s’il manque des licences, Intune pousse le Portail d’entreprise de l’App Store à la place (un identifiant Apple vous sera demandé).
-
-###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Extensions de fichier des applications métier Windows <!-- 1884873 -->
-Les extensions de fichier des applications métier Windows sont désormais *.msi*, *.appx*, *.appxbundle*, *.msix* et *.msixbundle*. Vous pouvez ajouter une application dans Microsoft Intune en sélectionnant **Applications mobiles** > **Applications** > **Ajouter**. Le volet **Ajouter une application** s’affiche et vous permet de sélectionner le **Type d’application**. Pour les applications métier Windows, sélectionnez **Métier** comme type d’application, sélectionnez **Fichier de package d’application**, puis entrez un fichier d’installation avec l’extension appropriée.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Ajout automatique du package de configuration de Windows Defender ATP au profil de configuration <!-- 2144658 -->
 Actuellement, quand vous utilisez des appareils [ATP (Advanced Threat Protection) et d’intégration](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) dans Intune, vous téléchargez un package de configuration et vous l’ajoutez à votre profil de configuration. Dans une prochaine mise à jour, Intune prendra automatiquement le package dans le Centre de sécurité Windows Defender et l’ajoutera à votre profil.

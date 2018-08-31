@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909063"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255085"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Configurer l’inscription des appareils avec profil professionnel Android
 
@@ -34,7 +34,7 @@ Pour configurer la gestion des profils professionnels Android, effectuez les ét
 2. Spécifiez les paramètres d’inscription de profil professionnel Android. Les profils professionnels Android sont [pris en charge uniquement sur certains appareils Android](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Tout appareil qui prend en charge les profils professionnels Android prend également en charge la gestion Android conventionnelle. Intune vous permet de spécifier la façon dont les appareils qui prennent en charge les profils professionnels Android doivent être gérés dans [Restrictions d’inscription](enrollment-restrictions-set.md).
     - **Bloquer (défini par défaut)**  : Tous les appareils Android, notamment ceux qui prennent en charge les profils professionnels Android, sont inscrits comme des appareils Android conventionnels.
     - **Autoriser** : Tous les appareils qui prennent en charge les profils professionnels Android sont inscrits comme des appareils avec profil professionnel Android. Tout appareil Android qui ne prend pas en charge les profils professionnels Android est inscrit comme appareil Android conventionnel.
-3. [Indiquez à vos utilisateurs comment inscrire leurs appareils](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [Indiquez à vos utilisateurs comment inscrire leurs appareils](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Si vous voulez inscrire des appareils dans des profils professionnels Android, mais que ces appareils étaient auparavant inscrits comme appareils Android ordinaires, vous devez d’abord les désinscrire, puis les réinscrire.

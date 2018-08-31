@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6ba08a89417222e9741a69cdf899a4889794b67
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: 2991aa947a693d2eb71a355047ed266838dd92a4
+ms.sourcegitcommit: be67f8293b47cc08a46d328a44a50a7ab67c2052
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926993"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251661"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Comment gérer les transferts de données entre applications iOS dans Microsoft Intune
 ## <a name="manage-ios-apps"></a>Gérer les applications iOS
@@ -70,7 +70,7 @@ Le paramètre UPN d’utilisateur **doit être configuré** pour les appareils g
 
 |Fournisseur de gestion des appareils mobiles tiers| Clé Configuration | Type de valeur | Valeur Configuration|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | Chaîne | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | Chaîne | {{UserPrincipalName}}|
 |VMware AirWatch| IntuneMAMUPN | Chaîne | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Chaîne | ${userUPN} **ou** ${userEmailAddress} |
 |ManageEngine Mobile Device Manager | IntuneMAMUPN | Chaîne | %upn% |
