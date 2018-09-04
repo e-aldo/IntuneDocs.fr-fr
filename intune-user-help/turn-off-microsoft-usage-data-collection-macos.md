@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 64a3a4710b8841dcc80c159d0622735fdd862e7a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 604c08e771548b9cd071ae87ba9cdcb3f9bb2d3a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031666"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147466"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Guide pratique pour désactiver la collecte de données Microsoft
 
@@ -30,4 +30,4 @@ Microsoft collecte automatiquement certaines données sur nos produits et servic
 
 Si vous souhaitez désactiver la collecte des données d’utilisation sur votre appareil macOS, ouvrez l’application Portail d’entreprise, puis sélectionnez le menu **Portail d’entreprise**. Ouvrez **Préférences** et, sous **Envoyer des données d’utilisation à Microsoft**, décochez la case **Autoriser Microsoft à collecter des informations**.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

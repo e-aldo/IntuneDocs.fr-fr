@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 738cc313eca4c98e7cdee3dfe40f705630244a9f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 443234bea9623ccbf5ac916d179a8fe202a392dd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015742"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147776"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Installation d’Office 365 sur votre appareil Windows 10
 
@@ -32,4 +32,4 @@ Vous pouvez installer la suite Office sur votre appareil Windows 10 de plusieurs
 
 Quand votre entreprise rend Office disponible, vous devez installer une seule version d’Office. Si vous essayez d’en installer deux, vous supprimez celle que vous avez installée en premier.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

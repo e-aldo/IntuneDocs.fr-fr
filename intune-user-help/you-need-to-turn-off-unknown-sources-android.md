@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 5f2d1359d82b00357a037ef5f96f95ae55cf8ab6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fccc0e34f0aa4466359fef5ef0ef91326c5829
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016133"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150359"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Vous devez désactiver les sources inconnues
 
@@ -30,4 +30,4 @@ Si le message « L’installation à partir de sources inconnues doit être dé
 
 Une fois que vous désactivez **Sources inconnues**, plusieurs minutes peuvent être nécessaires avant que vous puissiez continuer à utiliser votre appareil Android pour accéder aux données d’une entreprise ou d’un établissement scolaire.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

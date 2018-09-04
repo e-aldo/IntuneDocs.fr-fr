@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755230"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150664"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Utiliser des appareils gérés pour réaliser vos tâches
 Microsoft Intune est un logiciel qui permet aux organisations de gérer des appareils (tels que des smartphones, des tablettes et des PC), des applications et d’autres ressources d’entreprise telles que des e-mails. Cela permet aux employés d’accéder à leurs informations de travail à partir de pratiquement n’importe où sur presque n’importe quel appareil tout en contribuant à sécuriser les données d’entreprise.
@@ -36,7 +36,7 @@ Le service de support technique de votre entreprise peut consulter les informati
 Vous pouvez obtenir le portail d’entreprise de deux façons différentes :
 
 - En installant l’application Portail d’entreprise sur votre appareil. Vous obtenez généralement l’application Portail d’entreprise en accédant à l’App Store sur votre appareil, mais le support technique de votre entreprise peut également l’installer pour vous.
-- En accédant au [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) que le support technique de votre entreprise a configuré.
+- En accédant au [site web du portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980) que le support technique de votre entreprise a configuré.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Quelle est la différence entre l’application et le site web ?
 Il existe quelques différences mineures entre l’application Portail d’entreprise et le site web Portail d’entreprise, mais les deux permettent d’effectuer presque toutes les mêmes tâches . Exemples de tâche que vous pouvez effectuer :
@@ -102,4 +102,4 @@ Microsoft vous recommande d’essayer de commencer par voir si vous pouvez réso
 - [Résoudre les problèmes courants rencontrés avec votre appareil macOS](troubleshoot-your-device-macos.md)
 - [Résoudre les problèmes courants rencontrés avec votre appareil Windows](troubleshoot-your-device-windows.md)
 
-Vous pouvez publier un commentaire ci-dessous pour demander de l’aide. Toutefois, comme chaque organisation a des exigences différentes, nous ne pouvons pas toujours répondre à vos questions. Vous obtiendrez probablement la réponse la plus adaptée et la plus rapide en contactant le support technique de votre entreprise pour lui demander de l’aide. Ses informations de contact sont normalement disponibles sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Vous pouvez publier un commentaire ci-dessous pour demander de l’aide. Toutefois, comme chaque organisation a des exigences différentes, nous ne pouvons pas toujours répondre à vos questions. Vous obtiendrez probablement la réponse la plus adaptée et la plus rapide en contactant le support technique de votre entreprise pour lui demander de l’aide. Ses informations de contact sont normalement disponibles sur le [site web Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

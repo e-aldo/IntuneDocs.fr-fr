@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 99431a9720ab0f97f869ea12496912391cce2179
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 32a6ff69bc848bbd0a2174ab4b60de905498d6fa
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019719"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150073"
 ---
 # <a name="you-need-to-enable-secure-boot"></a>Vous devez activer le démarrage sécurisé
 
@@ -32,4 +32,4 @@ L’activation du démarrage sécurisé est une tâche avancée. Si vous utilise
 
 Si vous utilisez un PC, vous pouvez contacter le support technique de votre entreprise ou consulter la section « Pour réactiver le démarrage sécurisé » dans la page [Désactiver le démarrage sécurisé](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) pour essayer d’activer vous-même le démarrage sécurisé.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

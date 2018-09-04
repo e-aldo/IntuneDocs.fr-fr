@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6011e46a3176d55f35310292b55f4786d131f269
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219827"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150919"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Votre mot de passe ne répond pas aux exigences du support technique de votre entreprise
 
@@ -33,7 +33,7 @@ Pour découvrir comment définir votre code PIN ou mot de passe, cliquez sur le 
 - [Définir ou modifier votre mot de passe d’appareil Windows](set-or-change-your-password-windows.md)
 
 > [!NOTE]
-> Si vous avez des difficultés à déterminer comment rendre votre mot de passe conforme aux exigences définies par le support technique de votre entreprise, contactez ce service. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+> Si vous avez des difficultés à déterminer comment rendre votre mot de passe conforme aux exigences définies par le support technique de votre entreprise, contactez ce service. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 ## <a name="pin-or-password-issue-descriptions"></a>Descriptions des problèmes liés au code PIN ou au mot de passe
 

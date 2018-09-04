@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 434ed86a92956944a2c432f9f9d9c8822f043559
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d33cadab2c9ae7b44c72eff66f761c842105fc6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014637"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148537"
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Comment reconnecter un appareil iOS endommagé
 
 Le support technique de votre entreprise a détecté que vous utilisez un appareil jailbreaké. « Jailbreaké » signifie que l’appareil a été modifié pour autoriser un accès illimité à certains fichiers critiques, ce qui peut compromettre la sécurité et constituer une menace pour les ressources de votre entreprise. 
 
-Dans ce cas, votre appareil ne pourra plus accéder aux ressources de l’entreprise, et vous devrez probablement le réinitialiser aux paramètres d’usine. Nous vous recommandons de contacter le support de votre entreprise pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Dans ce cas, votre appareil ne pourra plus accéder aux ressources de l’entreprise, et vous devrez probablement le réinitialiser aux paramètres d’usine. Nous vous recommandons de contacter le support de votre entreprise pour obtenir de l’aide. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

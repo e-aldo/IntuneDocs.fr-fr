@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 061a372c38090d74adddbfbce34505be987448e9
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 773b78b32e919b120ac8908b0b69c5514cbdadb2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755332"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148759"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Installer Mobile Threat Defense sur votre appareil iOS
 
@@ -46,4 +46,4 @@ Mobile Threat Defense est un moyen pour les entreprises de garantir la protectio
 
 ## <a name="if-the-installation-doesnt-work"></a>Si l’installation ne fonctionne pas
 
-Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

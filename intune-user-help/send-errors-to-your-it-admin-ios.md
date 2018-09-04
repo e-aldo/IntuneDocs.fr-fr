@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ddf075828ca9b9a7d8030a88a2d7f58efbc0e980
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327702"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150120"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Envoyer des erreurs au support technique de votre entreprise en cas de problèmes avec un appareil iOS
 Vous pouvez parfois rencontrer une erreur pendant l’utilisation de l’application Portail d’entreprise sur votre appareil iOS. Lorsque cela se produit, vous pouvez envoyer les détails de l’erreur au support technique de votre entreprise. Ces détails fournissent le contexte nécessaire pour résoudre le problème pour vous.
@@ -37,4 +37,4 @@ Si vous recevez des erreurs sur votre appareil iOS pendant que vous utilisez l�
 
 -   Sur l’application du portail d’entreprise, secouez votre appareil, puis appuyez sur **Envoyer un rapport de diagnostic** dès que l’alerte de diagnostic apparaît. Si l’alerte n’apparaît pas quand vous secouez l’appareil, ouvrez **Paramètres** > **Portail d’entreprise**, puis vérifiez que l’option **Secouer** est activée.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

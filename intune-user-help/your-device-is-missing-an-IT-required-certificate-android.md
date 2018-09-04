@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b12dcafa4ff7d45dd1d41c0311a2658b08acf12e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 19128e9de06239fb82266654fe038b4be9ce7d41
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019855"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149779"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Un certificat exigé par le support technique de votre entreprise est manquant sur votre appareil Android
 
@@ -37,9 +37,9 @@ Pour résoudre ce problème et obtenir le certificat nécessaire, vous devez sui
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Identifier le certificat manquant en le recherchant sur votre ordinateur professionnel ou scolaire
 
-1. Ouvrez Internet Explorer sur votre PC. Si vous n’avez pas de PC utilisable pour cette action, contactez le support technique de votre entreprise. Pour obtenir les coordonnées du support technique de votre entreprise, consultez le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+1. Ouvrez Internet Explorer sur votre PC. Si vous n’avez pas de PC utilisable pour cette action, contactez le support technique de votre entreprise. Pour obtenir les coordonnées du support technique de votre entreprise, consultez le [site web du portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).
 
-2. Accédez au site web [Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog), puis connectez-vous à l’aide de vos informations d’identification professionnelles ou scolaires.
+2. Accédez au site web [Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980), puis connectez-vous à l’aide de vos informations d’identification professionnelles ou scolaires.
 
 3. À l’extrême droite de la barre d’adresse du navigateur, choisissez le symbole qui ressemble à un verrou, comme illustré dans la capture d’écran suivante.
 
@@ -71,4 +71,4 @@ Pour résoudre ce problème et obtenir le certificat nécessaire, vous devez sui
 
 7. Rouvrez l’application Portail d’entreprise. Vous devriez pouvoir vous connecter à l’application Portail d’entreprise. Si vous avez besoin d’aide, contactez le support technique de votre entreprise.
 
-Si un message « Certificat manquant » semblable à celui indiqué précédemment s’affiche alors que vous avez déjà suivi la procédure, il manque probablement un autre certificat. Vous devez demander au support technique de votre entreprise de vous aider à l’installer. Contactez le support technique de votre entreprise pour obtenir de l’aide sur les informations de contact disponibles sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Si un message « Certificat manquant » semblable à celui indiqué précédemment s’affiche alors que vous avez déjà suivi la procédure, il manque probablement un autre certificat. Vous devez demander au support technique de votre entreprise de vous aider à l’installer. Contactez le support technique de votre entreprise pour obtenir de l’aide sur les informations de contact disponibles sur le [site web du portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

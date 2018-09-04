@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51ef4e1e89c54587535f3ede7e8f406f54763bc9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 88caf56a2483690f9130818191b04f412a7ed641
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015062"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146835"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Vérifier la conformité de votre appareil Android
 
@@ -32,4 +32,4 @@ Si votre appareil n’a pas été vérifié dans Intune depuis longtemps, vous n
 
 2. Appuyez sur **Vérifier la conformité**.
 
-Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demandez au support technique de votre entreprise de le faire pour vous. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Si vous ne parvenez pas à réinitialiser votre appareil perdu ou volé, demandez au support technique de votre entreprise de le faire pour vous. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117852"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150305"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Envoyer des journaux au support technique de votre entreprise via un câble USB
 
 Si vous recevez une erreur pendant que vous utilisez l’application Portail d’entreprise sur votre appareil Android, vous pouvez aider le support technique de votre entreprise à résoudre le problème en lui envoyant des informations par e-mail. Ces informations sont conservées sur votre appareil dans un document spécifique appelé _journal de diagnostic_.
 
 > [!Note]
-> Avant de commencer, vérifiez que vous disposez de l’adresse e-mail du support technique de votre entreprise. Vous la trouverez sur le [site web Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) ou dans votre application Portail d’entreprise.
+> Avant de commencer, vérifiez que vous disposez de l’adresse e-mail du support technique de votre entreprise. Vous la trouverez sur le [site web Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980) ou dans votre application Portail d’entreprise.
 
 1. Dans l’écran de l’erreur, appuyez sur **Envoyer des informations**. Quand vous voyez un message vous demandant la méthode que vous souhaitez utiliser pour envoyer les journaux, choisissez l’option qui enregistre les fichiers sur votre appareil.
 
@@ -39,4 +39,4 @@ Si vous recevez une erreur pendant que vous utilisez l’application Portail d�
 
 4. Sélectionnez les fichiers et joignez-les à un e-mail. Envoyez cet e-mail au support technique de votre entreprise.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

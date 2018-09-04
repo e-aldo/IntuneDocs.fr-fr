@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a268602833d9164d33a8d86c1b4c6d4485e2abe8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d649a05527f8c273c71b9e2b791d5959a937e43b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021351"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148893"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Que se passe-t-il si vous installez l’application Portail d’entreprise et inscrivez votre appareil Windows 10 dans Intune ?
 
@@ -54,4 +54,4 @@ Lorsque vous ajoutez un ordinateur :
 
 -   Le support technique de votre entreprise peut appliquer des stratégies sur l’ordinateur. Par exemple, il peut vous être demandé de définir un mot de passe ou un code confidentiel sur l’ordinateur. Le support technique de votre entreprise peut également limiter le nombre de tentatives de saisie d’un mot de passe, et bloquer l’ordinateur ou supprimer toutes les données du disque dur si vous dépassez le nombre maximal autorisé.
 
-Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

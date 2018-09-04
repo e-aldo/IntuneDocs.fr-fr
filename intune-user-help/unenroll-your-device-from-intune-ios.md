@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547486"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148795"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Supprimer votre appareil iOS d’Intune
 
@@ -74,4 +74,4 @@ Il existe trois emplacements où le portail d’entreprise stocke des données l
 -   **Keychain** : votre appareil stocke vos mots de passe et autres informations utilisées pour les connexions dans votre Keychain. Les applications Microsoft partagent vos informations de connexion avec toutes les applications développées par Microsoft présentes sur votre appareil, notamment Microsoft Outlook et Microsoft Authenticator. Comme avec Apple analytics, ces informations peuvent être supprimées seulement en réinitialisant votre appareil aux paramètres d’usine. Cette opération efface toutes vos informations personnelles de votre appareil. Pour ce faire, ouvrez **Réglages** > **Général** > **Réinitialiser** > **Effacer contenu et réglages**.
 
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

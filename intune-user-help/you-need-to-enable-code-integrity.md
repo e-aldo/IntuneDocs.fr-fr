@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6a106220a2a51eeed7850ac967594818981afca4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7e63a8578779d6930c2691066cd784a18126b4a2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014943"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150182"
 ---
 # <a name="you-need-to-enable-code-integrity"></a>Vous devez activer l’intégrité du Code
 
@@ -35,4 +35,4 @@ L’intégrité du code est automatiquement activée lorsque votre système util
 
 Si vous vous sentez prêt à continuer, consultez la section « Pour réactiver le démarrage sécurisé » dans la page [Désactivation du démarrage sécurisé](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) afin d’essayer d’activer vous-même le démarrage sécurisé.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

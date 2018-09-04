@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e1671c919c530108f8ff4e951f7e13c5d75a623b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 06442f7ab943ed5f96990496b00060e67c122675
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017884"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146461"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>Installer Mobile Threat Defense sur votre appareil Android
 
@@ -33,4 +33,4 @@ Avant de vous permettre d’accéder à vos ressources de travail, votre entrepr
 
 **Si l’installation ne fonctionne pas**
 
-Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Les installations peuvent parfois échouer en raison de problèmes techniques hors de votre contrôle. Si cela se produit, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

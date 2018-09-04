@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec853bce004c70b1a833218f2ef9f4c14d6bb2b7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1cf4b5eb051775a289e727ec6bc03c5af8734b6f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032078"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147246"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Vous devez identifier votre appareil au moment de l’inscrire
 
@@ -32,4 +32,4 @@ Si vous essayez d’inscrire votre appareil macOS dans Intune et qu’un message
 2. Cliquez sur **Continuer**.
 3. Entrez les quatre derniers caractères du numéro de série de votre appareil pour qu’Intune vérifie que votre appareil est inscrit. Pour rechercher votre numéro de série, consultez [Comment trouver le numéro de série sur mon appareil ?](how-do-i-find-the-serial-number-on-my-device-macos.md).
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

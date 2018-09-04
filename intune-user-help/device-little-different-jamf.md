@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751745"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147075"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Réalisation d’actions sur un appareil macOS géré par Jamf
 
@@ -34,4 +34,4 @@ __Que faire si vous recevez un message d’erreur « AccountNotOnboarded » ou �
 
 Si vous avez ouvert l’application Portail d’entreprise et que vous recevez un message « AccountNotOnboarded », vous devez quitter l’application Portail d’entreprise et accéder à **Applications** > **Libre-service**. Votre entreprise a configuré une stratégie d’inscription des appareils, et vous devez l’installer. Cliquez sur la stratégie pour l’installer, puis rouvrez le portail d’entreprise.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Vous trouverez ses coordonnées sur le [site web du portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

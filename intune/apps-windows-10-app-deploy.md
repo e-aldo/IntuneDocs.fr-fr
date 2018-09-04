@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0bffb0ab4003cc02ceddcd0199b951113ff1e4fd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321671"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347430"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Déploiement d’applications Windows 10 à l’aide de Microsoft Intune 
 
 Microsoft Intune prend en charge une variété de types d’applications et de scénarios de déploiement sur les appareils Windows 10. Une fois que vous avez ajouté une application à Intune, vous pouvez l’attribuer à des utilisateurs et des appareils. Les informations suivantes fournissent plus de détails concernant les scénarios Windows 10 pris en charge. Elles fournissent également des détails importants à noter lors du déploiement d’applications sur Windows. 
 
-Les applications métier et Microsoft Store pour Entreprises sont les types d’applications pris en charge sur les appareils Windows 10. Les extensions de fichier des applications Windows sont **.msi**, **.appx**, **.appxbundle**, **.msix** et **.msixbundle**.  
+Les applications métier et Microsoft Store pour Entreprises sont les types d’applications pris en charge sur les appareils Windows 10.
 
 > [!Note]
 > La mise à jour de Windows 10 minimale nécessaire pour déployer des applications dans le contexte d’appareil est celle du [23 mai 2018 — KB4100403 (build du système d’exploitation 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).

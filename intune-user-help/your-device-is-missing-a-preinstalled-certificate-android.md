@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50864d3af4383a95c037868a9f9b9a61e1eb8172
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d51b141b09090119f7c9711ffd56d6b382f6e3dc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019311"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147949"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Un certificat qui est généralement installé sur votre téléphone est absent de votre appareil Android.
 
@@ -44,9 +44,9 @@ Vous pouvez résoudre ce problème en obtenant le certificat exigé depuis la [p
 
 5. Fermez votre navigateur et l’application Portail d’entreprise.
 
-6. Rouvrez l’application Portail d’entreprise. Vous devriez pouvoir vous connecter à l’application Portail d’entreprise. Si vous ne pouvez toujours pas utiliser l’application Portail d’entreprise, contactez le support technique de votre entreprise à l’aide des informations fournies sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog) pour obtenir des instructions.
+6. Rouvrez l’application Portail d’entreprise. Vous devriez pouvoir vous connecter à l’application Portail d’entreprise. Si vous ne pouvez toujours pas utiliser l’application Portail d’entreprise, contactez le support technique de votre entreprise à l’aide des informations fournies sur le [site web du portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980) pour obtenir des instructions.
 
 >[!NOTE]
 > Si l’installation de ce certificat ne résout pas le problème, et que vous voyez un message différent indiquant un certificat manquant, vous devez prendre des mesures supplémentaires pour [installer le certificat manquant](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: da965c9309e7140b5ce0cd95960ee7a9d4ac804f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db5e2e19f746e3916f5edf7719fb71e4fb7d37d0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754312"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146604"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>La limite du nombre d’appareils que vous pouvez inscrire a été atteinte
 
@@ -33,4 +33,4 @@ Chaque entreprise définit une limite du nombre d’appareils que chaque personn
 2. Supprimez un de vos appareils à partir du [portail MyApps](https://myapps.microsoft.com) et sélectionnez **Profil** dans le coin supérieur droit de la page. 
 3. Contactez le support technique de votre entreprise pour voir s’il est possible d’augmenter le nombre d’appareils que vous êtes autorisé à inscrire.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481187"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148776"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Supprimer votre appareil Windows de la gestion Intune
 
@@ -82,4 +82,4 @@ Pour supprimer les journaux et le cache stockés, effectuez une des actions suiv
 
 * Réinitialisez l’application Portail d’entreprise. Ouvrez l’application **Paramètres** et sélectionnez > **Applications** > **Portail d’entreprise** > **Options avancées** > **Réinitialiser**. 
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

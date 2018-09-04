@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 663da92e11befeae1f65467e887870a52640cbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 33b6199c25e9e36b65dfe2ca819640fa614e68b6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020569"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148221"
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Outlook ne synchronise pas l’e-mail géré quand l’optimisation de la batterie pour Android est activée
 
 > [!IMPORTANT]
-> Ce problème est documenté ici, car nous recevons à ce sujet un nombre croissant de messages de clients. Si ce problème persiste après avoir suivi ces étapes, demandez de l’aide au [support technique de votre entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+> Ce problème est documenté ici, car nous recevons à ce sujet un nombre croissant de messages de clients. Si ce problème persiste après avoir suivi ces étapes, demandez de l’aide au [support technique de votre entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 En inscrivant votre appareil dans Intune, vous pouvez accéder aux ressources de l’entreprise. L’une des ressources les plus courantes est l’accès à l’e-mail. Dans le cas des appareils Android, nous avons constaté que l’accès à l’e-mail via Outlook pouvait être contrarié quand l’optimisation de la batterie était activée. Or, cette fonctionnalité peut être activée automatiquement pour optimiser l’autonomie de votre appareil. Cette intention louable est toutefois contrariée par le fait qu’elle tente d’interrompre le téléchargement automatique du courrier électronique.
 
@@ -75,4 +75,4 @@ Un autre moyen de trouver ces paramètres est d’effectuer une recherche dans l
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

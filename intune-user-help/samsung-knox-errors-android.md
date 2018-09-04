@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751439"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150883"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Résoudre les problèmes courants rencontrés avec votre appareil Samsung Knox
 
@@ -51,4 +51,4 @@ Le message peut ressembler à ceci :
 |---|---|
 |**Erreur d’activation Samsung Knox** : la licence Samsung Knox n’a pas pu être activée. Le mode d’économie d’énergie est peut-être activé. Désactivez le mode d’économie d’énergie dans les paramètres de l’appareil puis réessayez. |Les paramètres d’alimentation de votre appareil ne permettent pas d’utiliser les ressources de votre entreprise. En savoir plus sur la [configuration du mode d’économie d’énergie](power-saving-mode-android.md).|
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

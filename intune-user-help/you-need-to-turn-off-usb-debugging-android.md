@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 2f1b71513ad5e22f62c783ac8d305acb9eac4cca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c377c2a4e9640443eb38a85b2e1806c9d9e64a82
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021776"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147191"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>Vous devez désactiver le débogage USB
 
@@ -30,4 +30,4 @@ Vous pouvez désactiver le débogage USB en accédant à **Paramètres** > **Opt
 
 Une fois que vous désactivez **Débogage USB**, patientez quelques minutes, puis vous devriez être en mesure d’utiliser votre appareil Android pour accéder aux données d’une entreprise ou d’un établissement scolaire comme d’habitude.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).
