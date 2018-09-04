@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 69a7855dc2df9f74fb529c405cbf02a32cfdea1e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4006f5784115a063eee80c817dc9b99c99dec827
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017952"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149685"
 ---
 # <a name="update-your-windows-10-device"></a>Mettre à jour votre appareil Windows 10
 
@@ -34,4 +34,4 @@ Votre entreprise ou établissement scolaire souhaite s’assurer que les apparei
 
 Si votre version de Windows est plus récente que celle prise en charge par votre entreprise, vous devez [essayer des étapes différentes pour résoudre le problème](your-windows-version-isnt-yet-supported.md)
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses informations de contact, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

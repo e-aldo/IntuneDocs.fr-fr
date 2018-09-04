@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751677"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149644"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Résoudre les problèmes courants rencontrés avec votre appareil Windows
 
-Parfois, des problèmes peuvent se produire avec votre appareil Windows et peuvent être corrigés. Voici quelques problèmes courants dont nous avons connaissance et que vous pouvez d’abord essayer de résoudre vous-même. Pour les problèmes plus complexes, nous vous recommandons de contacter le support technique de votre entreprise via leurs informations de contact sur le [site web du portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Parfois, des problèmes peuvent se produire avec votre appareil Windows et peuvent être corrigés. Voici quelques problèmes courants dont nous avons connaissance et que vous pouvez d’abord essayer de résoudre vous-même. Pour les problèmes plus complexes, nous vous recommandons de contacter le support technique de votre entreprise via leurs informations de contact sur le [site web du portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [Mon appareil Windows 10 ne s’inscrit pas](troubleshoot-your-windows-10-device-windows.md)
 - [Je dois mettre à jour mon appareil Windows](you-need-to-update-your-windows-device.md)

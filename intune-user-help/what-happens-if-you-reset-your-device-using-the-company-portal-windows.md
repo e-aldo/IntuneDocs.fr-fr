@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755485"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149121"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Que se passe-t-il si vous réinitialisez votre appareil Windows à l’aide du Portail d’entreprise ?
 
@@ -34,4 +34,4 @@ Quand vous utilisez l’application Portail d’entreprise ou le [site web Porta
 |Votre appareil peut accéder uniquement à la messagerie de l'entreprise|**Windows Phone 8.1**<br />Votre appareil n’apparaît plus dans le portail d’entreprise, et votre compte de messagerie d’entreprise et les messages non enregistrés sont supprimés.<br /><br />**Windows 7 ou Windows Vista**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 7 ou version antérieure utilisé pour le courrier électronique uniquement.<br /><br />**Windows 8.1 et Windows 8**<br />Votre appareil n’apparaît plus dans le portail d’entreprise, et votre compte de messagerie d’entreprise et les messages non enregistrés sont supprimés.|
 |PC et ordinateurs portables|**Windows 8.1 et Windows 8**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 8 ou Windows 8.1 sauf s’il est utilisé pour le courrier électronique uniquement.<br /><br />**Windows 7 ou Windows Vista**<br />Vous ne pouvez pas réinitialiser un ordinateur exécutant Windows 7 ou une version antérieure.|
 
-Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Si vous avez des questions, contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

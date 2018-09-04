@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fb2f225d47d1589e7bccbafc4a23f3cecec12897
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2bd36a0327472f24a3a99b7975e736c9fa5385eb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018768"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149061"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Sécuriser votre appareil avec le mot de passe approprié
 
@@ -46,4 +46,4 @@ Si votre appareil Windows n’est pas conforme à la stratégie de mot de passe 
 3. Entrez votre nouveau mot de passe dans la zone **Nouveau mot de passe**, puis entrez-le de nouveau dans la zone **Confirmez le mot de passe**.
 4. Choisissez **terminé**.
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

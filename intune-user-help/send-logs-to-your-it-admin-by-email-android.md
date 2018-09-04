@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327685"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149598"
 ---
 # <a name="email-logs-to-your-company-support"></a>Envoyer des journaux au support technique de votre entreprise par e-mail
 
@@ -45,4 +45,4 @@ Pour envoyer des journaux au support technique de votre entreprise par e-mail :
 3.  Appuyez sur **Envoyer un e-mail et charger les journaux**.
 4.  Une fois le chargement terminé, appuyez sur votre application de messagerie. Un e-mail s’ouvre avec l’ID d’incident prérenseigné dans le champ d’objet. Dans le corps de l’e-mail, décrivez le problème rencontré.  
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dacadd92ebb29bb2295d94aebb7922bb62226e2f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020008"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149394"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Envoyer les journaux aux développeurs du portail d’entreprise pour les appareils Android
 
@@ -46,4 +46,4 @@ Pour envoyer des journaux à Microsoft :
 
 Pour contacter directement l’équipe Portail d’entreprise pour Android, envoyez un e-mail à <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
-Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://portal.manage.microsoft.com#HelpDeskDialog).
+Encore besoin d’aide ? Contactez le support technique de votre entreprise. Pour obtenir ses coordonnées, consultez le [site web du Portail d’entreprise](https://go.microsoft.com/fwlink/?linkid=2010980).
